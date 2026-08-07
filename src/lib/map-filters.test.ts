@@ -1,17 +1,27 @@
 import { describe, it, expect } from "vitest";
 import {
+  buildCategoryFilter,
+  buildSelectionFilter,
   buildYearFilters,
   shouldShowFuture,
   computeMinYear,
   computeMaxYear,
+  fullSelection,
   HARD_MIN_YEAR,
+  isCategoryActive,
+  isStatusActive,
   parseYearParam,
   parseCategoriesParam,
+  parseSelectionParam,
+  selectionCategories,
   serializeMapParams,
+  setCategoryStatuses,
+  toggleCategory,
+  toggleStatus,
 } from "./map-filters";
 
 describe("buildYearFilters", () => {
-  const cats = new Set(["highway", "railway"] as const);
+  const cats = fullSelection(["highway", "railway"]);
   const NOW = 2026;
   const filters = buildYearFilters(2010, cats, NOW);
 
@@ -24,6 +34,7 @@ describe("buildYearFilters", () => {
   it("restricts every filter to the given categories", () => {
     const json = JSON.stringify(filters);
     expect(json).toContain('"highway","railway"');
+    expect(json).not.toContain('"bridge"');
   });
 
   it("opened filter requires opened <= year", () => {
@@ -160,7 +171,7 @@ describe("parseCategoriesParam", () => {
 });
 
 describe("serializeMapParams", () => {
-  const allCats = new Set(["highway", "railway", "bridge", "tunnel"] as const);
+  const allCats = fullSelection();
 
   it("is empty at default state", () => {
     expect(serializeMapParams(2026, allCats, null, 2026)).toBe("");
@@ -171,7 +182,7 @@ describe("serializeMapParams", () => {
   it("includes sorted categories when a subset is active", () => {
     const qs = serializeMapParams(
       2026,
-      new Set(["railway", "highway"] as const),
+      fullSelection(["railway", "highway"]),
       null,
       2026,
     );
@@ -188,9 +199,202 @@ describe("serializeMapParams", () => {
     expect(serializeMapParams(2026, allCats, null, 2026)).toBe("");
   });
   it("round-trips through the parsers", () => {
-    const qs = serializeMapParams(2005, new Set(["bridge"] as const), null, 2026);
+    const qs = serializeMapParams(2005, fullSelection(["bridge"]), null, 2026);
     const params = new URLSearchParams(qs);
     expect(parseYearParam(params.get("year"), 1970, 2031, 2026)).toBe(2005);
     expect([...parseCategoriesParam(params.get("cat"))]).toEqual(["bridge"]);
+  });
+});
+
+describe("category/status selection", () => {
+  it("defaults to every category with every mapped status", () => {
+    const sel = fullSelection();
+    expect(sel.size).toBe(4);
+    expect([...sel.get("railway")!].sort()).toEqual([
+      "opened",
+      "planned",
+      "tendered",
+      "under_construction",
+    ]);
+  });
+
+  it("toggles a whole category off and back on with all statuses", () => {
+    let sel = toggleCategory(fullSelection(), "railway");
+    expect(isCategoryActive(sel, "railway")).toBe(false);
+    expect(selectionCategories(sel).has("railway")).toBe(false);
+    sel = toggleCategory(sel, "railway");
+    expect(sel.get("railway")!.size).toBe(4);
+  });
+
+  it("toggles a single status without touching other categories", () => {
+    const sel = toggleStatus(fullSelection(), "railway", "tendered");
+    expect(isStatusActive(sel, "railway", "tendered")).toBe(false);
+    expect(isStatusActive(sel, "railway", "opened")).toBe(true);
+    expect(isStatusActive(sel, "highway", "tendered")).toBe(true);
+  });
+
+  it("switches the category off when its last status is removed", () => {
+    let sel = fullSelection(["bridge"]);
+    for (const s of ["opened", "under_construction", "tendered"] as const) {
+      sel = toggleStatus(sel, "bridge", s);
+    }
+    expect(isCategoryActive(sel, "bridge")).toBe(true);
+    sel = toggleStatus(sel, "bridge", "planned");
+    expect(isCategoryActive(sel, "bridge")).toBe(false);
+  });
+
+  it("does not mutate the selection it is given", () => {
+    const sel = fullSelection();
+    toggleStatus(sel, "railway", "tendered");
+    toggleCategory(sel, "railway");
+    expect(sel.get("railway")!.size).toBe(4);
+  });
+
+  it("sets or clears every status of a category at once", () => {
+    const cleared = setCategoryStatuses(fullSelection(), "tunnel", []);
+    expect(isCategoryActive(cleared, "tunnel")).toBe(false);
+    const only = setCategoryStatuses(cleared, "tunnel", ["opened"]);
+    expect([...only.get("tunnel")!]).toEqual(["opened"]);
+  });
+});
+
+describe("buildSelectionFilter", () => {
+  it("uses a plain category check when all statuses are shown", () => {
+    expect(JSON.stringify(buildSelectionFilter(fullSelection(["highway"])))).toBe(
+      JSON.stringify(["any", ["==", ["get", "category"], "highway"]]),
+    );
+  });
+
+  it("adds a status check only for the narrowed category", () => {
+    const sel = toggleStatus(fullSelection(["highway", "railway"]), "railway", "tendered");
+    const json = JSON.stringify(buildSelectionFilter(sel));
+    expect(json).toContain('["==",["get","category"],"highway"]');
+    expect(json).toContain(
+      '["in",["get","status"],["literal",["opened","under_construction","planned"]]]',
+    );
+    expect(json).not.toContain("tendered");
+  });
+
+  it("lists the categories still showing a given status", () => {
+    const sel = toggleStatus(fullSelection(), "railway", "under_construction");
+    expect(JSON.stringify(buildCategoryFilter(sel, "under_construction"))).toBe(
+      JSON.stringify([
+        "in",
+        ["get", "category"],
+        ["literal", ["highway", "bridge", "tunnel"]],
+      ]),
+    );
+    expect(JSON.stringify(buildCategoryFilter(sel, "opened"))).toContain('"railway"');
+  });
+
+  it("matches nothing when every category is hidden", () => {
+    const empty = buildSelectionFilter(new Map());
+    expect(JSON.stringify(empty)).toBe(
+      JSON.stringify(["in", ["get", "category"], ["literal", []]]),
+    );
+  });
+
+  it("only the not-yet-started layer matches on declared status", () => {
+    const sel = toggleStatus(fullSelection(["railway"]), "railway", "tendered");
+    const f = buildYearFilters(2026, sel, 2026);
+    expect(JSON.stringify(f.future)).toContain('["get","status"]');
+    expect(JSON.stringify(f.opened)).not.toContain('["get","status"]');
+    expect(JSON.stringify(f.underConstruction)).not.toContain('["get","status"]');
+  });
+});
+
+describe("parseSelectionParam", () => {
+  it("gives every category all statuses without params", () => {
+    const sel = parseSelectionParam(null, null);
+    expect(sel.size).toBe(4);
+    expect(sel.get("bridge")!.size).toBe(4);
+  });
+
+  it("narrows one category's statuses", () => {
+    const sel = parseSelectionParam(null, "railway:opened.planned");
+    expect([...sel.get("railway")!]).toEqual(["opened", "planned"]);
+    expect(sel.get("highway")!.size).toBe(4);
+  });
+
+  it("ignores entries for categories that are hidden anyway", () => {
+    const sel = parseSelectionParam("highway", "railway:opened");
+    expect(sel.has("railway")).toBe(false);
+    expect(sel.get("highway")!.size).toBe(4);
+  });
+
+  it("ignores unknown categories, unknown statuses and empty lists", () => {
+    expect(parseSelectionParam(null, "spaceship:opened").size).toBe(4);
+    const sel = parseSelectionParam(null, "railway:warp_drive.opened");
+    expect([...sel.get("railway")!]).toEqual(["opened"]);
+    expect(parseSelectionParam(null, "railway:warp_drive").get("railway")!.size).toBe(4);
+    expect(parseSelectionParam(null, "railway:").get("railway")!.size).toBe(4);
+  });
+});
+
+describe("serializeMapParams with status subsets", () => {
+  it("omits ?st= when every category shows every status", () => {
+    expect(serializeMapParams(2026, fullSelection(), null, 2026)).toBe("");
+  });
+
+  it("writes only the narrowed categories, in MAP_STATUSES order", () => {
+    const sel = toggleStatus(fullSelection(), "railway", "tendered");
+    const params = new URLSearchParams(serializeMapParams(2026, sel, null, 2026));
+    expect(params.get("cat")).toBe(null);
+    expect(params.get("st")).toBe("railway:opened.under_construction.planned");
+  });
+
+  it("round-trips a mixed selection", () => {
+    const sel = toggleStatus(
+      toggleCategory(fullSelection(), "tunnel"),
+      "railway",
+      "tendered",
+    );
+    const params = new URLSearchParams(
+      serializeMapParams(2005, sel, "lot-1", 2026),
+    );
+    const back = parseSelectionParam(params.get("cat"), params.get("st"));
+    expect(selectionCategories(back)).toEqual(selectionCategories(sel));
+    expect([...back.get("railway")!]).toEqual([...sel.get("railway")!]);
+    expect(back.has("tunnel")).toBe(false);
+  });
+});
+
+describe("status is evaluated at the viewed year", () => {
+  const NOW = 2026;
+
+  it("unticking 'opened' hides the opened layer but keeps building sites", () => {
+    const sel = toggleStatus(fullSelection(["highway"]), "highway", "opened");
+    const f = buildYearFilters(2010, sel, NOW);
+    // opened layer: no categories left to draw
+    expect(JSON.stringify(f.opened)).toContain('["literal",[]]');
+    // under-construction layer: highways still drawn
+    expect(JSON.stringify(f.underConstruction)).toContain('["literal",["highway"]]');
+  });
+
+  it("unticking 'under construction' hides only building sites", () => {
+    const sel = toggleStatus(fullSelection(["railway"]), "railway", "under_construction");
+    const f = buildYearFilters(2010, sel, NOW);
+    expect(JSON.stringify(f.opened)).toContain('["literal",["railway"]]');
+    expect(JSON.stringify(f.underConstruction)).toContain('["literal",[]]');
+  });
+
+  it("judges a lot by the year, not by the status it carries today", () => {
+    // A lot that is "opened" today is a building site in 2010; it is the
+    // under-construction checkbox that governs it there, and the year layers
+    // never look at the declared status at all.
+    const sel = fullSelection(["highway"]);
+    const f = buildYearFilters(2010, sel, NOW);
+    expect(JSON.stringify(f.underConstruction)).not.toContain('["get","status"]');
+    expect(JSON.stringify(f.underConstruction)).toContain(
+      '["<=",["get","constructionStart"],2010]',
+    );
+  });
+
+  it("keeps every layer empty when a category is switched off entirely", () => {
+    const sel = toggleCategory(fullSelection(), "tunnel");
+    const f = buildYearFilters(2026, sel, NOW);
+    for (const filter of [f.opened, f.underConstruction, f.future]) {
+      expect(JSON.stringify(filter)).not.toContain('"tunnel"');
+    }
   });
 });

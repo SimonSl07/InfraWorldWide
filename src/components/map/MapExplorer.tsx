@@ -4,15 +4,16 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import type { FeatureCollection } from "geojson";
-import type { Category, Project } from "@/lib/schema";
+import type { Project } from "@/lib/schema";
 import { MAP_STATUSES } from "@/lib/map-style";
 import {
   computeMaxYear,
   computeMinYear,
   HARD_MIN_YEAR,
-  parseCategoriesParam,
+  parseSelectionParam,
   parseYearParam,
   serializeMapParams,
+  type CategoryStatusSelection,
 } from "@/lib/map-filters";
 import {
   DEFAULT_SPEED_INDEX,
@@ -21,34 +22,8 @@ import {
 import InfraMap, { type LotFeatureProps } from "./InfraMap";
 import TimeSlider from "./TimeSlider";
 import CategoryToggle from "./CategoryToggle";
+import LegendLine from "./LegendLine";
 import ProjectPanel from "./ProjectPanel";
-
-/** Legend line samples, matching the map's line styles. */
-const LEGEND_SVG: Record<string, { dash?: string; opacity?: number }> = {
-  opened: {},
-  under_construction: { dash: "8 6" },
-  tendered: { dash: "2 5", opacity: 0.7 },
-  planned: { dash: "2 5", opacity: 0.7 },
-};
-
-function LegendLine({ status }: { status: string }) {
-  const s = LEGEND_SVG[status] ?? {};
-  return (
-    <svg width="30" height="6" aria-hidden="true">
-      <line
-        x1="1"
-        y1="3"
-        x2="29"
-        y2="3"
-        stroke="#262626"
-        strokeWidth="3.5"
-        strokeLinecap="butt"
-        strokeDasharray={s.dash}
-        opacity={s.opacity ?? 1}
-      />
-    </svg>
-  );
-}
 
 export default function MapExplorer() {
   const t = useTranslations();
@@ -67,8 +42,8 @@ export default function MapExplorer() {
       ? raw
       : DEFAULT_SPEED_INDEX;
   });
-  const [activeCategories, setActiveCategories] = useState<Set<Category>>(() =>
-    parseCategoriesParam(searchParams.get("cat")),
+  const [selection, setSelection] = useState<CategoryStatusSelection>(() =>
+    parseSelectionParam(searchParams.get("cat"), searchParams.get("st")),
   );
   const [selected, setSelected] = useState<LotFeatureProps | null>(null);
   // Captured at mount: the URL-sync effect below rewrites the query string
@@ -123,7 +98,7 @@ export default function MapExplorer() {
   useEffect(() => {
     const qs = serializeMapParams(
       year,
-      activeCategories,
+      selection,
       selected?.lotId ?? null,
       nowYear,
       speedIndex,
@@ -134,7 +109,7 @@ export default function MapExplorer() {
       "",
       `${window.location.pathname}${qs ? `?${qs}` : ""}`,
     );
-  }, [year, activeCategories, selected, nowYear, speedIndex]);
+  }, [year, selection, selected, nowYear, speedIndex]);
 
   const selectedProject = useMemo(
     () => projects.find((p) => p.id === selected?.projectId),
@@ -158,14 +133,14 @@ export default function MapExplorer() {
       <InfraMap
         geojson={geojson}
         year={year}
-        activeCategories={activeCategories}
+        selection={selection}
         selectedLotId={selected?.lotId ?? null}
         onSelectLot={setSelected}
       />
 
       {/* top-left: category filters */}
       <div className="absolute top-4 left-4 z-10">
-        <CategoryToggle active={activeCategories} onChange={setActiveCategories} />
+        <CategoryToggle selection={selection} onChange={setSelection} />
       </div>
 
       {/* bottom-center: time slider */}
