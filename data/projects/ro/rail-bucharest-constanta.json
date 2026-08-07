@@ -1,0 +1,55 @@
+{
+  "id": "ro-rail-bucharest-constanta",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "Bucharest – Constanța railway (CFR Line 800) upgrade",
+    "ro": "Modernizarea liniei CF București – Constanța (magistrala CFR 800)"
+  },
+  "description": {
+    "en": "Upgrade of CFR's main line between Bucharest and the Black Sea port of Constanța, via Ciulnița, Fetești and Medgidia. Since July 2014 passenger trains run at up to 160 km/h and freight trains at up to 120 km/h on most of the route; the fastest trains cover the 225 km between Bucharest and Constanța in under two hours.",
+    "ro": "Modernizarea magistralei CFR dintre București și portul Constanța la Marea Neagră, prin Ciulnița, Fetești și Medgidia. Din iulie 2014 trenurile de călători circulă cu până la 160 km/h, iar cele de marfă cu până la 120 km/h pe cea mai mare parte a traseului; cele mai rapide trenuri parcurg cei 225 km dintre București și Constanța în mai puțin de două ore."
+  },
+  "lots": [
+    {
+      "id": "bucuresti-constanta",
+      "name": {
+        "en": "Bucharest – Constanța",
+        "ro": "București – Constanța"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-07",
+        "constructionStart": "2007"
+      },
+      "lengthKm": 225,
+      "geometryRef": "bucuresti-constanta",
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU co-financed upgrade of the Bucharest–Constanța line (TEN-T Rhine–Danube Corridor)",
+            "ro": "Modernizare cofinanțată de Uniunea Europeană a liniei București–Constanța (Coridorul TEN-T Rin–Dunăre)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contract": {
+        "noticeReference": "Line 800 upgrade to 160 km/h for passenger and 120 km/h for freight traffic, completed by July 2014",
+        "noticeUrl": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_800"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Căile Ferate Române Line 800 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_800"
+    },
+    {
+      "title": "Premieră absolută în România: Un tren circulă cu 160 km/h pe oră! — Capital",
+      "url": "http://www.capital.ro/premiera-absoluta-in-romania-un-tren-circula-cu-160-km-h-pe-ora.html"
+    }
+  ]
+}

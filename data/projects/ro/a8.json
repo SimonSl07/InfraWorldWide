@@ -1,0 +1,271 @@
+{
+  "id": "ro-a8",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "A8 Târgu Mureș–Iași–Ungheni Motorway (Unirii)",
+    "ro": "Autostrada A8 Târgu Mureș–Iași–Ungheni (Unirii)"
+  },
+  "description": {
+    "en": "Planned and partially under-construction motorway (~304 km) crossing the Eastern Carpathians to connect the historical regions of Moldavia and Transylvania, directly linking Târgu Mureș (A3) with Iași and continuing to the Moldovan border at Ungheni (Prut crossing towards Chișinău). Also known as the Union Motorway (Autostrada Unirii) or East–West Motorway, it is part of the TEN-T Core Network. As of May 2026, eleven sections (~260 km) are under design and construction — the first contract (Leghin–Târgu Neamț) was signed in September 2023 — while the last two sections (Târgu Frumos–Lețcani and Iași–Ungheni, ~44 km) are tendered.",
+    "ro": "Autostradă planificată și parțial în construcție (~304 km) care traversează Carpații Orientali pentru a lega regiunile istorice Moldova și Transilvania, conectând direct Târgu Mureș (A3) cu Iași și continuând până la frontiera cu Republica Moldova la Ungheni (trecere peste Prut spre Chișinău). Cunoscută și ca Autostrada Unirii sau Autostrada Est-Vest, face parte din rețeaua centrală TEN-T. În mai 2026, unsprezece secțiuni (~260 km) erau în proiectare și execuție — primul contract (Leghin–Târgu Neamț) a fost semnat în septembrie 2023 — iar ultimele două secțiuni (Târgu Frumos–Lețcani și Iași–Ungheni, ~44 km) erau în licitație."
+  },
+  "lots": [
+    {
+      "id": "targu-mures-ditrau",
+      "name": {
+        "en": "Târgu Mureș – Ditrău (sections 1A–1D)",
+        "ro": "Târgu Mureș – Ditrău (secțiunile 1A–1D)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-02-16",
+        "constructionStart": "2024-02",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 92.2,
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 24,
+        "noticeReference": "Section 1A Târgu Mureș–Miercurea Nirajului, contract signed 16 February 2024 (Nurol)",
+        "noticeUrl": "https://www.economica.net/autostrada-unirii-a8-a-fost-semnat-contractul-pentru-sectiunea-i-tg-mures-miercurea-nirajului_723019.html"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU) — the Târgu Mureș–Miercurea Nirajului mountain-end lot carries an EU-imposed 2026 deadline",
+            "ro": "PNRR (Next Generation EU) — lotul de capăt montan Târgu Mureș–Miercurea Nirajului are termen 2026, impus de Uniunea Europeană"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nurol",
+          "role": "builder"
+        },
+        {
+          "name": "Özaltın",
+          "role": "builder"
+        },
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "targu-mures-ditrau",
+      "cost": {
+        "estimated": {
+          "amount": 4070,
+          "currency": "EUR",
+          "year": 2023
+        }
+      }
+    },
+    {
+      "id": "ditrau-motca",
+      "name": {
+        "en": "Ditrău – Moțca (DN2) (sections 2A–2C, 3)",
+        "ro": "Ditrău – Moțca (DN2) (secțiunile 2A–2C, 3)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-09",
+        "constructionStart": "2023-09"
+      },
+      "lengthKm": 118.8,
+      "cost": {
+        "estimated": {
+          "amount": 1560,
+          "currency": "RON",
+          "year": 2023
+        }
+      },
+      "contract": {
+        "designMonths": 14,
+        "executionMonths": 40,
+        "value": {
+          "amount": 1560,
+          "currency": "RON",
+          "year": 2023
+        },
+        "noticeReference": "Ditrău–Grințieș (section 2A) contract, SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB; Leghin–Târgu Neamț signed September 2023 at RON 1.56bn (≈€313M), 6 months design + 24 months execution",
+        "noticeUrl": "https://www.economica.net/autostrada-unirii-a8-38_820501.html"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "ditrau-motca"
+    },
+    {
+      "id": "motca-targu-frumos",
+      "name": {
+        "en": "Moțca – Târgu Frumos (incl. A7 junction)",
+        "ro": "Moțca – Târgu Frumos (incl. nodul A7)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-09",
+        "constructionStart": "2025",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 31.5,
+      "cost": {
+        "estimated": {
+          "amount": 313,
+          "currency": "EUR",
+          "year": 2023
+        }
+      },
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 24,
+        "value": {
+          "amount": 313,
+          "currency": "EUR",
+          "year": 2023
+        },
+        "noticeReference": "Leghin–Târgu Neamț contract signed September 2023 with Spedition UMB, RON 1.56bn (≈€313M), 6 months design + 24 months execution; estimated opening 2026",
+        "noticeUrl": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-26545138-primul-contract-semnat-autostrada-unirii.htm"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU) — the Leghin–Târgu Neamț–Moțca mountain-end lot carries an EU-imposed 2026 deadline",
+            "ro": "PNRR (Next Generation EU) — lotul de capăt montan Leghin–Târgu Neamț–Moțca are termen 2026, impus de Uniunea Europeană"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "motca-targu-frumos"
+    },
+    {
+      "id": "targu-frumos-letcani",
+      "name": {
+        "en": "Târgu Frumos – Lețcani (sector 2)",
+        "ro": "Târgu Frumos – Lețcani (sectorul 2)"
+      },
+      "status": "tendered",
+      "lengthKm": 28.6,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "geometryRef": "targu-frumos-letcani",
+      "contract": {
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)",
+        "noticeReference": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
+      }
+    },
+    {
+      "id": "letcani-iasi",
+      "name": {
+        "en": "Lețcani – Iași (sector 3)",
+        "ro": "Lețcani – Iași (sectorul 3)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2024"
+      },
+      "lengthKm": 17.7,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "FCC Construcción",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "letcani-iasi",
+      "contract": {
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)",
+        "noticeReference": "Lețcani–Iași (sector 3, 17.7 km) execution contract with FCC Construcción"
+      }
+    },
+    {
+      "id": "iasi-ungheni",
+      "name": {
+        "en": "Iași – Ungheni (Moldova border, sector 4)",
+        "ro": "Iași – Ungheni (frontiera cu Republica Moldova, sectorul 4)"
+      },
+      "status": "tendered",
+      "lengthKm": 15.47,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The Ungheni road bridge over the Prut is to be financed from EU grants and the state budget",
+            "ro": "Podul rutier de la Ungheni peste Prut urmează a fi finanțat din fonduri europene nerambursabile și din bugetul de stat"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "geometryRef": "iasi-ungheni",
+      "contract": {
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)",
+        "noticeReference": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — A8 motorway (Romania)",
+      "url": "https://en.wikipedia.org/wiki/A8_motorway_(Romania)"
+    },
+    {
+      "title": "Wikipedia (ro) — Autostrada A8 (România)",
+      "url": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

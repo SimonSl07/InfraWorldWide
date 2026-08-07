@@ -1,0 +1,64 @@
+{
+  "id": "ro-braila-bridge",
+  "country": "ro",
+  "category": "bridge",
+  "name": {
+    "en": "Brăila Bridge",
+    "ro": "Podul de la Brăila"
+  },
+  "description": {
+    "en": "Suspension bridge over the Danube at Brăila, the longest in Romania and third longest in the EU by main span (1,120 m). Connects Brăila to the opposite bank towards Tulcea, ending the dependence on ferry crossings.",
+    "ro": "Pod suspendat peste Dunăre la Brăila, cel mai lung din România și al treilea din UE ca deschidere principală (1.120 m). Leagă Brăila de malul opus spre Tulcea, eliminând dependența de bac."
+  },
+  "lots": [
+    {
+      "id": "main-bridge",
+      "name": {
+        "en": "Main bridge and access roads",
+        "ro": "Podul propriu-zis și drumurile de acces"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018",
+        "opened": "2023-07-06"
+      },
+      "lengthKm": 1.975,
+      "cost": {
+        "actual": {
+          "amount": 500,
+          "currency": "EUR",
+          "year": 2023
+        }
+      },
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Webuild (Astaldi)",
+          "role": "builder"
+        },
+        {
+          "name": "IHI Infrastructure Systems",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "main-bridge",
+      "contract": {
+        "noticeReference": "Suspension bridge over the Danube; built by Webuild (Astaldi) with IHI Infrastructure Systems, EU and national budget financed",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Br%C4%83ila_Bridge"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Brăila Bridge",
+      "url": "https://en.wikipedia.org/wiki/Br%C4%83ila_Bridge"
+    }
+  ]
+}

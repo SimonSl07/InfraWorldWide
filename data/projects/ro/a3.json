@@ -1,0 +1,132 @@
+{
+  "id": "ro-a3",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "A3 Bucharest–Brașov Motorway",
+    "ro": "Autostrada A3 București–Brașov"
+  },
+  "description": {
+    "en": "Motorway linking Bucharest to Brașov via Ploiești and the Prahova Valley, part of the planned Bucharest–Borș (Hungarian border) route. The Bucharest–Ploiești section (62 km) opened in July 2012. The Ploiești–Comarnic section (48.6 km) is still in pre-feasibility, while the difficult Comarnic–Brașov mountain section (58 km) has seen its concession and PPP tenders repeatedly cancelled; only the Râșnov–Cristian segment (6.3 km) is in service.",
+    "ro": "Autostrada care leagă Bucureștiul de Brașov prin Ploiești și Valea Prahovei, parte a traseului planificat București–Borș (frontiera cu Ungaria). Secțiunea București–Ploiești (62 km) a fost deschisă în iulie 2012. Secțiunea Ploiești–Comarnic (48,6 km) este încă în faza de prefezabilitate, iar dificila secțiune montană Comarnic–Brașov (58 km) a avut licitațiile de concesiune și PPP anulate în mod repetat; doar tronsonul Râșnov–Cristian (6,3 km) este în funcțiune."
+  },
+  "lots": [
+    {
+      "id": "bucharest-ploiesti",
+      "name": {
+        "en": "Bucharest – Ploiești",
+        "ro": "București – Ploiești"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-02-21",
+        "constructionStart": "2007-03-15",
+        "opened": "2012-07-19"
+      },
+      "lengthKm": 62,
+      "contract": {
+        "executionMonths": 18,
+        "guaranteeMonths": 36,
+        "noticeReference": "CNADNR tender of 21 February 2007 (7 bidders); notice to proceed 16 May 2008, works began 26 May 2008; 18-month construction term, 36-month guarantee — actual opening slipped to July 2012",
+        "noticeUrl": "http://www.cnadnr.ro/proiect.php?id=39"
+      },
+      "cost": {
+        "estimated": {
+          "amount": 450,
+          "currency": "EUR",
+          "year": 2012
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Impresa Pizzarotti & C.",
+          "role": "builder"
+        },
+        {
+          "name": "Tirrena Scavi",
+          "role": "builder"
+        },
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        },
+        {
+          "name": "Pa&Co Internațional",
+          "role": "builder"
+        },
+        {
+          "name": "EuroConstruct Trading '98",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "bucharest-ploiesti"
+    },
+    {
+      "id": "comarnic-brasov",
+      "name": {
+        "en": "Comarnic – Brașov",
+        "ro": "Comarnic – Brașov"
+      },
+      "status": "tendered",
+      "dates": {
+        "announced": "2008",
+        "tenderAwarded": "2017-10",
+        "constructionStart": "2017-10-17"
+      },
+      "lengthKm": 58,
+      "cost": {
+        "estimated": {
+          "amount": 1360,
+          "currency": "EUR",
+          "year": 2018
+        }
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Tendered as a concession in 2013 (Vinci–Strabag–Aktor, cancelled 2015) and again as a public-private partnership in 2018 (cancelled 2020). The Comarnic South–North segment (5.2 km) was re-tendered in August 2020; the Râșnov–Cristian segment (6.3 km) opened in December 2020.",
+            "ro": "Licitat ca concesiune în 2013 (Vinci–Strabag–Aktor, anulată în 2015) și din nou ca parteneriat public-privat în 2018 (anulat în 2020). Tronsonul Comarnic Sud–Nord (5,2 km) a fost relicitat în august 2020; tronsonul Râșnov–Cristian (6,3 km) a fost deschis în decembrie 2020."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "After the PPP attempts failed, the government turned to EU Operational Programmes; EU financing was secured in 2017 for the Râșnov–Cristian portion (contract October 2017, two-year execution term).",
+            "ro": "După eșecul tentativelor de PPP, Guvernul s-a reorientat către Programele Operaționale ale Uniunii Europene; finanțarea europeană a fost obținută în 2017 pentru porțiunea Râșnov–Cristian (contract în octombrie 2017, termen de execuție de doi ani)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alpenside (Râșnov–Cristian)",
+          "role": "builder"
+        },
+        {
+          "name": "Specialist Consulting (Râșnov–Cristian)",
+          "role": "designer"
+        }
+      ],
+      "geometryRef": "comarnic-brasov"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — A3 motorway (Romania)",
+      "url": "https://en.wikipedia.org/wiki/A3_motorway_(Romania)"
+    },
+    {
+      "title": "Wikipedia (ro) — Autostrada A3 (România)",
+      "url": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "ro-new-europe-bridge",
+  "country": "ro",
+  "category": "bridge",
+  "name": {
+    "en": "New Europe Bridge (Vidin–Calafat)",
+    "ro": "Podul Noua Europă (Calafat–Vidin)"
+  },
+  "description": {
+    "en": "Extradosed road-rail bridge over the Danube between Calafat (Romania) and Vidin (Bulgaria), also known as Danube Bridge 2. The second bridge on the shared Romanian–Bulgarian section of the Danube, it carries four road lanes, one railway track and a bicycle/pedestrian path, and is part of Pan-European Corridor IV and European route E79. Built by the Spanish company FCC Construcción.",
+    "ro": "Pod extradosat rutier și feroviar peste Dunăre, între Calafat (România) și Vidin (Bulgaria), cunoscut și ca Dunăv Most 2. Al doilea pod pe sectorul româno-bulgar al Dunării, are patru benzi rutiere, o linie de cale ferată și o pistă pentru biciclete/pietoni, făcând parte din Coridorul Paneuropean IV și din drumul european E79. Construit de compania spaniolă FCC Construcción."
+  },
+  "lots": [
+    {
+      "id": "main-bridge",
+      "name": {
+        "en": "Main bridge",
+        "ro": "Podul propriu-zis"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-05-13",
+        "opened": "2013-06-14"
+      },
+      "lengthKm": 1.971,
+      "cost": {
+        "estimated": {
+          "amount": 99,
+          "currency": "EUR",
+          "year": 2000
+        },
+        "actual": {
+          "amount": 226,
+          "currency": "EUR",
+          "year": 2012
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed through the EU ISPA pre-accession instrument; design study financed by the PHARE programme",
+            "ro": "Cofinanțat prin instrumentul UE de preaderare ISPA; studiul de proiectare finanțat prin programul PHARE"
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "European Investment Bank credit loan of €50 million granted in December 2000",
+            "ro": "Credit de 50 de milioane de euro acordat de Banca Europeană de Investiții în decembrie 2000"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "FCC Construcción",
+          "role": "builder"
+        },
+        {
+          "name": "Fernández Casado",
+          "role": "designer"
+        }
+      ],
+      "geometryRef": "main-bridge",
+      "contract": {
+        "noticeReference": "Combined road-rail bridge Vidin–Calafat; builder FCC Construcción, designer Fernández Casado; ISPA/PHARE support plus a €50M EIB credit (December 2000)",
+        "noticeUrl": "https://en.wikipedia.org/wiki/New_Europe_Bridge"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — New Europe Bridge",
+      "url": "https://en.wikipedia.org/wiki/New_Europe_Bridge"
+    }
+  ]
+}

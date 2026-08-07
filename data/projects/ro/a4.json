@@ -1,0 +1,178 @@
+{
+  "id": "ro-a4",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "A4 motorway (Constanța bypass)",
+    "ro": "Autostrada A4 (Varianta de ocolire Constanța)"
+  },
+  "description": {
+    "en": "Motorway serving as a bypass of Constanța, running 22 km between Ovidiu and the Port of Constanța and connecting with the A2 motorway via an interchange southwest of the city. Opened in stages between 2011 and 2013, it includes a bridge over the Danube–Black Sea Canal giving direct access to the port's southern terminal. It is planned to be extended south to about 60 km, along the Black Sea coast past Mangalia to the Bulgarian border, as part of an extension of Pan-European Corridor IV towards Varna.",
+    "ro": "Autostradă care servește drept variantă de ocolire a municipiului Constanța, pe o lungime de 22 km între Ovidiu și Portul Constanța, cu legătură la autostrada A2 printr-un nod rutier la sud-vest de oraș. Deschisă etapizat între 2011 și 2013, include un pod peste Canalul Dunăre–Marea Neagră care asigură accesul direct la terminalul sudic al portului. Este planificată prelungirea ei spre sud până la circa 60 km, de-a lungul litoralului, dincolo de Mangalia, până la granița cu Bulgaria, ca parte a extinderii Coridorului pan-european IV spre Varna."
+  },
+  "lots": [
+    {
+      "id": "ovidiu-dn3",
+      "name": {
+        "en": "Ovidiu – DN3 interchange",
+        "ro": "Ovidiu – nodul rutier DN3"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-09",
+        "opened": "2012-07-19",
+        "constructionStart": "2010"
+      },
+      "lengthKm": 11,
+      "funding": [
+        {
+          "source": "national_budget"
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund, awarded by the European Commission at the end of 2014",
+            "ro": "Fondul de Coeziune, alocat de Comisia Europeană la sfârșitul anului 2014"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        },
+        {
+          "name": "FCC Construction",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "ovidiu-dn3",
+      "contract": {
+        "noticeReference": "Constanța bypass: tender awarded September 2008 to the Astaldi–FCC Construcción joint venture; EU Cohesion Fund support awarded end-2014",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A4_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "dn3-constanta-west",
+      "name": {
+        "en": "DN3 interchange – Constanța West (A2 interchange)",
+        "ro": "Nodul rutier DN3 – Constanța Vest (nodul cu A2)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-09",
+        "opened": "2011-09-30",
+        "constructionStart": "2010"
+      },
+      "lengthKm": 3,
+      "funding": [
+        {
+          "source": "national_budget"
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund, awarded by the European Commission at the end of 2014",
+            "ro": "Fondul de Coeziune, alocat de Comisia Europeană la sfârșitul anului 2014"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        },
+        {
+          "name": "FCC Construction",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "dn3-constanta-west",
+      "contract": {
+        "noticeReference": "Constanța bypass: tender awarded September 2008 to the Astaldi–FCC Construcción joint venture; EU Cohesion Fund support awarded end-2014",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A4_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "constanta-west-lazu",
+      "name": {
+        "en": "Constanța West (A2 interchange) – Lazu",
+        "ro": "Constanța Vest (nodul cu A2) – Lazu"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-09",
+        "opened": "2011-07-29",
+        "constructionStart": "2010"
+      },
+      "lengthKm": 5,
+      "funding": [
+        {
+          "source": "national_budget"
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund, awarded by the European Commission at the end of 2014",
+            "ro": "Fondul de Coeziune, alocat de Comisia Europeană la sfârșitul anului 2014"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        },
+        {
+          "name": "FCC Construction",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "constanta-west-lazu",
+      "contract": {
+        "noticeReference": "Constanța bypass: tender awarded September 2008 to the Astaldi–FCC Construcción joint venture; EU Cohesion Fund support awarded end-2014",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A4_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "lazu-port",
+      "name": {
+        "en": "Lazu – Port of Constanța",
+        "ro": "Lazu – Portul Constanța"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-07",
+        "opened": "2013-07-12"
+      },
+      "lengthKm": 2,
+      "funding": [
+        {
+          "source": "national_budget"
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund, awarded by the European Commission at the end of 2014",
+            "ro": "Fondul de Coeziune, alocat de Comisia Europeană la sfârșitul anului 2014"
+          }
+        }
+      ],
+      "geometryRef": "lazu-port",
+      "contract": {
+        "noticeReference": "Constanța bypass: tender awarded September 2008 to the Astaldi–FCC Construcción joint venture; EU Cohesion Fund support awarded end-2014",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A4_motorway_(Romania)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — A4 motorway (Romania)",
+      "url": "https://en.wikipedia.org/wiki/A4_motorway_(Romania)"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}
