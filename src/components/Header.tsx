@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import FeedbackDialog from "./FeedbackDialog";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default async function Header() {
@@ -18,6 +19,7 @@ export default async function Header() {
           <Link href="/projects" className="hover:text-neutral-900">
             {t("nav.projects")}
           </Link>
+          <FeedbackDialog />
         </nav>
         <div className="ml-auto">
           <LanguageSwitcher />
