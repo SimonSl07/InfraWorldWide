@@ -1,0 +1,80 @@
+{
+  "id": "ro-dex16",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "DEx16 Oradea Bypass Expressway",
+    "ro": "Drumul expres DEx16 (Centura Oradea)"
+  },
+  "description": {
+    "en": "Expressway linking the Oradea bypass at Sântandrei with the A3 Transylvania Motorway at Biharia, in north-western Romania. CNAIR counts 11.636 km as expressway; the full connection built under the same contract is about 19 km, the remainder being a 2×2 national road with a median separator. Designed and built by Strabag under a July 2021 contract worth 545.9 million lei excluding VAT with a 30-month schedule (6 months design, 24 months execution), it opened in March 2024 and includes 3 interchanges, 3 bridges, 6 overpasses and 2 underpasses.",
+    "ro": "Drum expres care leagă centura Oradea, la Sântandrei, de Autostrada Transilvania A3 la Biharia, în nord-vestul României. CNAIR contabilizează 11,636 km ca drum expres; legătura completă realizată prin același contract are circa 19 km, restul fiind drum național 2×2 cu separator median. Proiectat și executat de Strabag printr-un contract din iulie 2021 de 545,9 milioane lei fără TVA, cu durată de 30 de luni (6 luni proiectare, 24 de luni execuție), a fost deschis în martie 2024 și cuprinde 3 noduri rutiere, 3 poduri, 6 pasaje superioare și 2 pasaje inferioare."
+  },
+  "lots": [
+    {
+      "id": "biharia-oradea",
+      "name": {
+        "en": "Biharia (A3) – Oradea bypass",
+        "ro": "Biharia (A3) – Centura Oradea"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-07",
+        "constructionStart": "2022",
+        "opened": "2024-03"
+      },
+      "lengthKm": 11.636,
+      "cost": {
+        "estimated": {
+          "amount": 545.9,
+          "currency": "RON",
+          "year": 2021
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "biharia-oradea",
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 24,
+        "value": {
+          "amount": 545.9,
+          "currency": "RON",
+          "year": 2021
+        },
+        "noticeReference": "Design-and-build contract signed with Strabag in July 2021, 545.9 million lei excluding VAT, 30 months in total; opened to traffic in March 2024",
+        "noticeUrl": "https://www.digi24.ro/stiri/economie/un-nou-drum-expres-a-fost-inaugurat-in-romania-dex16-are-19-kilometri-si-a-fost-construit-in-30-de-luni-2739635"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Digi24 — Un nou drum expres a fost inaugurat în România. DEx16 are 19 kilometri și a fost construit în 30 de luni",
+      "url": "https://www.digi24.ro/stiri/economie/un-nou-drum-expres-a-fost-inaugurat-in-romania-dex16-are-19-kilometri-si-a-fost-construit-in-30-de-luni-2739635"
+    },
+    {
+      "title": "Wikipedia — Highways in Romania (expressway table, CNAIR figures)",
+      "url": "https://en.wikipedia.org/wiki/Highways_in_Romania"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}
