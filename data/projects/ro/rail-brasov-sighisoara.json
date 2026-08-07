@@ -1,0 +1,190 @@
+{
+  "id": "ro-rail-brasov-sighisoara",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "Brașov – Sighișoara railway rehabilitation (Corridor IV)",
+    "ro": "Reabilitarea liniei CF Brașov – Sighișoara (Coridorul IV)"
+  },
+  "description": {
+    "en": "Rehabilitation of the Brașov–Sighișoara section of the Brașov–Simeria main line, the missing link of the Rhine–Danube (Pan-European IV) rail corridor, for 160 km/h passenger and 120 km/h freight traffic. The work is contracted in three subsections to the RailWorks consortium (Alstom, Aktor, Arcada, Euro Construct Trading '98): subsections 1 and 3 (Brașov–Apața and Cața–Sighișoara, 84 km together) under one RON 3.44 billion contract, and subsection 2 (Apața–Cața) under a RON 2.86 billion contract that shortens the winding Olt valley alignment from 43.95 km to 28.2 km through the Ormeniș and Homorod tunnels — at roughly 7 km and 5 km, they will be by far the longest railway tunnels in Romania. Four tunnel boring machines entered the Racoș mountains in 2024–2025. Contractual completion is October 2026 for the tunnelled middle subsection and April 2027 for the end subsections; the government approved a €630 million EIB loan for the project.",
+    "ro": "Reabilitarea secțiunii Brașov–Sighișoara din magistrala Brașov–Simeria, veriga lipsă a coridorului feroviar Rin–Dunăre (IV pan-european), pentru viteze de 160 km/h la trenurile de călători și 120 km/h la marfă. Lucrările sunt contractate pe trei subsecțiuni cu asocierea RailWorks (Alstom, Aktor, Arcada, Euro Construct Trading '98): subsecțiunile 1 și 3 (Brașov–Apața și Cața–Sighișoara, 84 km împreună) printr-un contract de 3,44 miliarde lei, iar subsecțiunea 2 (Apața–Cața) printr-un contract de 2,86 miliarde lei care scurtează traseul sinuos din valea Oltului de la 43,95 km la 28,2 km prin tunelurile Ormeniș și Homorod — cu circa 7 km și 5 km, de departe cele mai lungi tuneluri feroviare din România. Patru scuturi de forat au intrat în munții din zona Racoș în 2024–2025. Termenele contractuale sunt octombrie 2026 pentru subsecțiunea cu tuneluri și aprilie 2027 pentru subsecțiunile de capăt; Guvernul a aprobat un împrumut BEI de 630 de milioane de euro pentru proiect."
+  },
+  "lots": [
+    {
+      "id": "s1-brasov-apata",
+      "name": {
+        "en": "Subsection 1: Brașov – Apața",
+        "ro": "Subsecțiunea 1: Brașov – Apața"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-03",
+        "expectedOpening": "2027-04"
+      },
+      "lengthKm": 40.9,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility (82%)",
+            "ro": "Mecanismul pentru Interconectarea Europei (82%)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (18%)",
+            "ro": "Bugetul de stat (18%)"
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "€630 million European Investment Bank loan approved for the Brașov–Sighișoara line",
+            "ro": "Împrumut de 630 de milioane de euro de la BEI pentru linia Brașov–Sighișoara"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "s1-brasov-apata",
+      "contract": {
+        "executionMonths": 48,
+        "guaranteeMonths": 60,
+        "value": {
+          "amount": 3437.45,
+          "currency": "RON",
+          "year": 2020
+        },
+        "noticeReference": "Subsections 1 and 3 were awarded together in March 2020 to RailWorks: 84 km in total for RON 3,437,453,580.88 excluding VAT, 48 months of execution plus 60 months of guarantee. The per-subsection split shown here is measured from OpenStreetMap geometry",
+        "noticeUrl": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-brasov-simeria-componenta-a-coridorului-rin-dunare-pentru-circulatia-trenurilor-cu-viteza-maxima-de-160-km-h-sectiunea-brasov-sighisoara-subsectiunile/"
+      }
+    },
+    {
+      "id": "s2-apata-cata",
+      "name": {
+        "en": "Subsection 2: Apața – Cața",
+        "ro": "Subsecțiunea 2: Apața – Cața"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-09",
+        "expectedOpening": "2026-10"
+      },
+      "lengthKm": 28.2,
+      "cost": {
+        "estimated": {
+          "amount": 2860,
+          "currency": "RON",
+          "year": 2020
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility (82%)",
+            "ro": "Mecanismul pentru Interconectarea Europei (82%)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (18%)",
+            "ro": "Bugetul de stat (18%)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "s2-apata-cata",
+      "contract": {
+        "value": {
+          "amount": 2860,
+          "currency": "RON",
+          "year": 2020
+        },
+        "noticeReference": "Awarded September 2020 for RON 2.86 billion (€585.53 million), four-year duration; the new alignment through the Ormeniș and Homorod tunnels shortens the subsection from 43.95 km to 28.2 km. Geometry shown here follows the existing line",
+        "noticeUrl": "https://www.railwaypro.com/wp/romania-signs-a-new-modernisation-contract-on-rhine-danube-corridor/"
+      }
+    },
+    {
+      "id": "s3-cata-sighisoara",
+      "name": {
+        "en": "Subsection 3: Cața – Sighișoara",
+        "ro": "Subsecțiunea 3: Cața – Sighișoara"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-03",
+        "expectedOpening": "2027-04"
+      },
+      "lengthKm": 43.6,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility (82%)",
+            "ro": "Mecanismul pentru Interconectarea Europei (82%)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (18%)",
+            "ro": "Bugetul de stat (18%)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "s3-cata-sighisoara",
+      "contract": {
+        "executionMonths": 48,
+        "guaranteeMonths": 60,
+        "value": {
+          "amount": 3437.45,
+          "currency": "RON",
+          "year": 2020
+        },
+        "noticeReference": "Part of the same RON 3.44 billion contract as subsection 1 (84 km together, 48 months of execution plus 60 months of guarantee). The per-subsection split shown here is measured from OpenStreetMap geometry",
+        "noticeUrl": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-brasov-simeria-componenta-a-coridorului-rin-dunare-pentru-circulatia-trenurilor-cu-viteza-maxima-de-160-km-h-sectiunea-brasov-sighisoara-subsectiunile/"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "CFR SA — Brașov–Sighișoara, subsecțiunile 1, 2 și 3",
+      "url": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-brasov-simeria-componenta-a-coridorului-rin-dunare-pentru-circulatia-trenurilor-cu-viteza-maxima-de-160-km-h-sectiunea-brasov-sighisoara-subsectiunile/"
+    },
+    {
+      "title": "Railway PRO — Contract signed to modernise a new section on Sighișoara–Brașov line",
+      "url": "https://www.railwaypro.com/wp/romania-signs-a-new-modernisation-contract-on-rhine-danube-corridor/"
+    },
+    {
+      "title": "Tunnels & Tunnelling — AKTOR enters Racoș mountains using four TBMs on new railway",
+      "url": "https://www.tunnelsandtunnelling.com/news/aktor-enters-racos-mountains-using-four-tbms-on-new-railway/"
+    },
+    {
+      "title": "Club Feroviar — BEI dă 630 de milioane de euro pentru calea ferată Brașov–Sighișoara",
+      "url": "https://clubferoviar.ro/bei-calea-ferata-brasov-sighisoara/"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry of CFR line 300, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

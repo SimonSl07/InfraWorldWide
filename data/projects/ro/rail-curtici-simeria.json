@@ -1,0 +1,159 @@
+{
+  "id": "ro-rail-curtici-simeria",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "Frontieră – Curtici – Simeria railway rehabilitation (Corridor IV)",
+    "ro": "Reabilitarea liniei CF Frontieră – Curtici – Simeria (Coridorul IV)"
+  },
+  "description": {
+    "en": "Rehabilitation of the double-track main line from the Hungarian border at Curtici through Arad and Radna to Simeria, the western part of the Romanian branch of Pan-European Corridor IV, for 160 km/h passenger and 120 km/h freight traffic with ERTMS/ETCS Level 2 signalling. Section 1 (border–Curtici–Arad–km 614, 41.185 km) was completed in 2016; sections 2 (km 614–Gurasada) and 3 (Gurasada–Simeria) received RON 9.5 billion (about €2 billion) of financing — 75% from the Cohesion Fund — and are still in execution, aiming to cut the Arad–Simeria journey from 146 to 74 minutes.",
+    "ro": "Reabilitarea magistralei duble de la granița cu Ungaria, de la Curtici prin Arad și Radna până la Simeria, partea vestică a ramurii românești a Coridorului IV pan-european, pentru viteze de 160 km/h la trenurile de călători și 120 km/h la marfă, cu semnalizare ERTMS/ETCS nivel 2. Tronsonul 1 (frontieră–Curtici–Arad–km 614, 41,185 km) a fost finalizat în 2016; tronsoanele 2 (km 614–Gurasada) și 3 (Gurasada–Simeria) au primit o finanțare de 9,5 miliarde lei (circa 2 miliarde de euro), 75% din Fondul de Coeziune, și sunt încă în execuție, urmărind reducerea timpului de parcurs Arad–Simeria de la 146 la 74 de minute."
+  },
+  "lots": [
+    {
+      "id": "t1-frontiera-arad",
+      "name": {
+        "en": "Section 1: Border – Curtici – Arad – km 614",
+        "ro": "Tronsonul 1: Frontieră – Curtici – Arad – km 614"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-02-15",
+        "constructionStart": "2012",
+        "opened": "2016"
+      },
+      "lengthKm": 41.185,
+      "cost": {
+        "estimated": {
+          "amount": 1080,
+          "currency": "RON",
+          "year": 2012
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund",
+            "ro": "Fondul de Coeziune"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alstom Transport – Swietelsky – Astaldi – Euro Construct Trading '98 – Dafora",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "t1-frontiera-arad",
+      "contract": {
+        "value": {
+          "amount": 1080,
+          "currency": "RON",
+          "year": 2012
+        },
+        "noticeReference": "Contract signed on 15 February 2012 for the 41.185 km double-track section; execution ran into delays and finished around January 2016, when the new traffic-control system entered service",
+        "noticeUrl": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-frontiera-curtici-simeria-tronson-1/"
+      }
+    },
+    {
+      "id": "t2-km614-gurasada",
+      "name": {
+        "en": "Section 2: km 614 – Gurasada",
+        "ro": "Tronsonul 2: km 614 – Gurasada"
+      },
+      "status": "under_construction",
+      "lengthKm": 100,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund (75% of eligible costs of sections 2 and 3)",
+            "ro": "Fondul de Coeziune (75% din costurile eligibile ale tronsoanelor 2 și 3)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Webuild (Astaldi) — subsections 2A and 2B",
+          "role": "builder"
+        },
+        {
+          "name": "Alstom — Ilteu – Gurasada signalling and electrification",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "t2-km614-gurasada",
+      "contract": {
+        "noticeReference": "Split into subsections (2A, 2B — about 80 km with 11 stations, 30 bridges and one tunnel — and Cap Y Bârzava – Cap Y Ilteu); sections 2 and 3 together were financed with RON 9.5 billion (~€2bn), RON 6bn from the Cohesion Fund",
+        "noticeUrl": "https://www.railwaypro.com/wp/romania-km-614-gurasada-gurasada-simeria-rail-sections-receive-eur-2-billion-financing/"
+      }
+    },
+    {
+      "id": "t3-gurasada-simeria",
+      "name": {
+        "en": "Section 3: Gurasada – Simeria",
+        "ro": "Tronsonul 3: Gurasada – Simeria"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2017-08-31",
+        "constructionStart": "2018",
+        "expectedOpening": "2026-11"
+      },
+      "lengthKm": 41,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund",
+            "ro": "Fondul de Coeziune"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "FCC – Astaldi – Convensa",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "t3-gurasada-simeria",
+      "contract": {
+        "noticeReference": "Contract signed with the FCC–Astaldi–Convensa consortium on 31 August 2017 for 41 km of line, 17 bridges, 27 culverts, 4 overpasses, 3 underpasses and 4 stations; works started in early 2018, originally due in 2021, now expected in November 2026",
+        "noticeUrl": "https://www.hillintl.com/project/gurasada-simeria-railway-section/"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "CFR SA — Reabilitarea liniei de cale ferată Frontieră – Curtici – Simeria (Tronson 1)",
+      "url": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-frontiera-curtici-simeria-tronson-1/"
+    },
+    {
+      "title": "Railway PRO — Km 614–Gurasada and Gurasada–Simeria rail sections receive EUR 2 billion financing",
+      "url": "https://www.railwaypro.com/wp/romania-km-614-gurasada-gurasada-simeria-rail-sections-receive-eur-2-billion-financing/"
+    },
+    {
+      "title": "Hill International — Gurasada–Simeria railway section",
+      "url": "https://www.hillintl.com/project/gurasada-simeria-railway-section/"
+    },
+    {
+      "title": "Webuild — Frontiera–Curtici–Simeria railway line",
+      "url": "https://www.webuildgroup.com/en/projects/railways-underground/frontiera-curtici-simeria-railway-line/"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry of CFR line 200, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

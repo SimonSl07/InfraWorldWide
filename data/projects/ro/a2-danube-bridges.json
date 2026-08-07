@@ -1,0 +1,99 @@
+{
+  "id": "ro-a2-danube-bridges",
+  "country": "ro",
+  "category": "bridge",
+  "name": {
+    "en": "Fetești–Cernavodă bridges (A2 / CFR line 800)",
+    "ro": "Podurile Fetești–Cernavodă (A2 / magistrala CFR 800)"
+  },
+  "description": {
+    "en": "Pair of combined road-and-rail bridges carrying the A2 motorway and the double-track Bucharest–Constanța railway over the Borcea branch and the Danube between Fetești and Cernavodă, built alongside Anghel Saligny's 1895 crossing. Designed by IPTANA București under engineer Vasile Cănuță and built by CCCF București, they were inaugurated on 21 November 1987 together with the first, 17 km section of the A2. More than 300 structural cracks found in 2014 forced a long closure; the rehabilitation was accepted on 12 July 2018. The Cernavodă bridge carries the only remaining toll on the Romanian motorway network.",
+    "ro": "Pereche de poduri mixte rutiere și feroviare care susțin autostrada A2 și magistrala CFR 800 București–Constanța peste brațul Borcea și peste Dunăre, între Fetești și Cernavodă, construite alături de traversarea lui Anghel Saligny din 1895. Proiectate de IPTANA București, sub conducerea inginerului Vasile Cănuță, și executate de CCCF București, au fost inaugurate pe 21 noiembrie 1987, odată cu primul tronson de 17 km al A2. Peste 300 de fisuri structurale descoperite în 2014 au impus o închidere îndelungată; reabilitarea a fost recepționată pe 12 iulie 2018. Podul de la Cernavodă susține singura taxă de pod rămasă pe rețeaua de autostrăzi din România."
+  },
+  "lots": [
+    {
+      "id": "borcea-bridge",
+      "name": {
+        "en": "Borcea branch bridge (Fetești)",
+        "ro": "Podul peste brațul Borcea (Fetești)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1976",
+        "opened": "1987-05"
+      },
+      "lengthKm": 0.9825,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "IPTANA București (eng. Vasile Cănuță)",
+          "role": "designer"
+        },
+        {
+          "name": "CCCF București",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "borcea-bridge",
+      "contract": {
+        "noticeReference": "982.5 m road deck (972 m for the railway); opened in May 1987 and officially inaugurated with the Cernavodă bridge on 21 November 1987. Rehabilitated after the 2014 crack findings, final acceptance 12 July 2018 (Arcada Company, Metabet CF, Railway Construction Company)",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Podul_de_la_Fete%C8%99ti"
+      }
+    },
+    {
+      "id": "cernavoda-bridge",
+      "name": {
+        "en": "Danube bridge at Cernavodă",
+        "ro": "Podul peste Dunăre de la Cernavodă"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1980",
+        "opened": "1987-11-21"
+      },
+      "lengthKm": 1.63891,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "IPTANA București (eng. Vasile Cănuță)",
+          "role": "designer"
+        },
+        {
+          "name": "CCCF București",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "cernavoda-bridge",
+      "contract": {
+        "noticeReference": "1,638.91 m over 21 spans, main span 190 m flanked by two 140 m spans, deck 32.5 m wide; in service from October 1987, inaugurated 21 November 1987, rehabilitated by July 2018",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Podul_peste_Dun%C4%83re_de_la_Cernavod%C4%83"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (ro) — Podul de la Fetești",
+      "url": "https://ro.wikipedia.org/wiki/Podul_de_la_Fete%C8%99ti"
+    },
+    {
+      "title": "Wikipedia (ro) — Podul peste Dunăre de la Cernavodă",
+      "url": "https://ro.wikipedia.org/wiki/Podul_peste_Dun%C4%83re_de_la_Cernavod%C4%83"
+    },
+    {
+      "title": "CNAIR — Reabilitarea podului peste brațul Borcea (km 149+680) și a podului de la Cernavodă (km 157+600)",
+      "url": "https://www.cnadnr.ro/ro/proiecte/reabilitarea-podului-peste-bra%C8%9Bul-borcea-situat-pe-autostrada-a2-la-km-149680-reabilitarea"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}
