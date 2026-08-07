@@ -1,11 +1,103 @@
 import type { FilterSpecification } from "maplibre-gl";
-import type { Category } from "./schema";
-import { ALL_CATEGORIES } from "./map-style";
+import type { Category, Status } from "./schema";
+import { ALL_CATEGORIES, MAP_STATUSES } from "./map-style";
 
 /**
  * Pure map-state logic, kept separate from React components so it can be
  * unit-tested. All functions return MapLibre style expressions.
  */
+
+/**
+ * Which lot statuses are shown, per category. A category missing from the
+ * map is hidden entirely; a category present with a subset of statuses shows
+ * only those (e.g. railways without the tendered ones). An empty status set
+ * is equivalent to the category being absent.
+ *
+ * Statuses are matched against a lot's status *at the year being viewed*,
+ * not the status it carries today: scrubbing to 2010 with only "under
+ * construction" ticked shows what was a building site in 2010. Lots that
+ * hadn't started yet by then have no historical status to derive, so there
+ * the declared one (tendered/planned) is used.
+ */
+export type CategoryStatusSelection = ReadonlyMap<Category, ReadonlySet<Status>>;
+
+/** Statuses ordered as in MAP_STATUSES, for stable URLs and menus. */
+function orderStatuses(statuses: ReadonlySet<Status>): Status[] {
+  return MAP_STATUSES.filter((s) => statuses.has(s));
+}
+
+/** Every given category with all of its statuses shown (the default). */
+export function fullSelection(
+  categories: Iterable<Category> = ALL_CATEGORIES,
+): CategoryStatusSelection {
+  return new Map([...categories].map((c) => [c, new Set(MAP_STATUSES)]));
+}
+
+/** Categories with at least one visible status. */
+export function selectionCategories(
+  selection: CategoryStatusSelection,
+): Set<Category> {
+  return new Set(
+    [...selection.entries()].filter(([, s]) => s.size > 0).map(([c]) => c),
+  );
+}
+
+export function isCategoryActive(
+  selection: CategoryStatusSelection,
+  category: Category,
+): boolean {
+  return (selection.get(category)?.size ?? 0) > 0;
+}
+
+export function isStatusActive(
+  selection: CategoryStatusSelection,
+  category: Category,
+  status: Status,
+): boolean {
+  return selection.get(category)?.has(status) ?? false;
+}
+
+/** Toggle a whole category: off, or back on with all statuses restored. */
+export function toggleCategory(
+  selection: CategoryStatusSelection,
+  category: Category,
+): CategoryStatusSelection {
+  const next = new Map(selection);
+  if (isCategoryActive(selection, category)) next.delete(category);
+  else next.set(category, new Set(MAP_STATUSES));
+  return next;
+}
+
+/**
+ * Toggle one status within a category. Removing the last visible status
+ * switches the category off, so the pill and the menu never disagree.
+ */
+export function toggleStatus(
+  selection: CategoryStatusSelection,
+  category: Category,
+  status: Status,
+): CategoryStatusSelection {
+  const next = new Map(selection);
+  const current = new Set(selection.get(category) ?? []);
+  if (current.has(status)) current.delete(status);
+  else current.add(status);
+  if (current.size === 0) next.delete(category);
+  else next.set(category, current);
+  return next;
+}
+
+/** Show or hide every status of one category at once. */
+export function setCategoryStatuses(
+  selection: CategoryStatusSelection,
+  category: Category,
+  statuses: Iterable<Status>,
+): CategoryStatusSelection {
+  const next = new Map(selection);
+  const set = new Set(statuses);
+  if (set.size === 0) next.delete(category);
+  else next.set(category, set);
+  return next;
+}
 
 export interface YearFilters {
   /** Lots opened at or before the year. */
@@ -16,16 +108,62 @@ export interface YearFilters {
   future: FilterSpecification;
 }
 
-export function buildYearFilters(
-  year: number,
-  categories: ReadonlySet<Category>,
-  nowYear: number,
-): YearFilters {
-  const inCategory = [
+/**
+ * Categories whose menu still has `status` ticked. Used for the layers whose
+ * status is implied by the year — a feature drawn in the "opened" layer is
+ * opened at that year whatever its declared status says.
+ */
+export function buildCategoryFilter(
+  selection: CategoryStatusSelection,
+  status: Status,
+): FilterSpecification {
+  const categories = [...selection.entries()]
+    .filter(([, statuses]) => statuses.has(status))
+    .map(([category]) => category);
+  return [
     "in",
     ["get", "category"],
-    ["literal", [...categories]],
+    ["literal", categories],
   ] as unknown as FilterSpecification;
+}
+
+/**
+ * Category + declared-status membership as one expression: a feature passes
+ * when its category is shown and its status is among those kept for that
+ * category. Used for the not-yet-started layer, where the lot's own status
+ * (tendered/planned) is the only status there is.
+ */
+export function buildSelectionFilter(
+  selection: CategoryStatusSelection,
+): FilterSpecification {
+  const clauses = [...selection.entries()]
+    .filter(([, statuses]) => statuses.size > 0)
+    .map(([category, statuses]) =>
+      statuses.size === MAP_STATUSES.length
+        ? ["==", ["get", "category"], category]
+        : [
+            "all",
+            ["==", ["get", "category"], category],
+            ["in", ["get", "status"], ["literal", orderStatuses(statuses)]],
+          ],
+    );
+  // Nothing selected: an empty category list matches no feature.
+  if (clauses.length === 0) {
+    return ["in", ["get", "category"], ["literal", []]] as unknown as FilterSpecification;
+  }
+  return ["any", ...clauses] as unknown as FilterSpecification;
+}
+
+export function buildYearFilters(
+  year: number,
+  selection: CategoryStatusSelection,
+  nowYear: number,
+): YearFilters {
+  // Each layer answers to the checkbox for the status it represents at the
+  // viewed year; the not-yet-started layer falls back to declared status.
+  const openedCategories = buildCategoryFilter(selection, "opened");
+  const buildingCategories = buildCategoryFilter(selection, "under_construction");
+  const notStartedSelection = buildSelectionFilter(selection);
 
   // "Effectively opened" at the selected year: actually opened — or, when
   // viewing the future, past its expected opening date.
@@ -49,13 +187,13 @@ export function buildYearFilters(
 
   const opened = [
     "all",
-    inCategory,
+    openedCategories,
     effectivelyOpened,
   ] as unknown as FilterSpecification;
 
   const underConstruction = [
     "all",
-    inCategory,
+    buildingCategories,
     ["!=", ["get", "constructionStart"], null],
     ["<=", ["get", "constructionStart"], year],
     ["!", effectivelyOpened],
@@ -63,7 +201,7 @@ export function buildYearFilters(
 
   const future = [
     "all",
-    inCategory,
+    notStartedSelection,
     ["!", effectivelyOpened],
     [
       "any",
@@ -138,10 +276,36 @@ export function parseCategoriesParam(raw: string | null): Set<Category> {
   return valid.length > 0 ? new Set(valid) : new Set(ALL_CATEGORIES);
 }
 
+/**
+ * Parse a ?st=railway:opened.planned,bridge:opened param into per-category
+ * status subsets, layered on the categories from ?cat=. Entries for hidden
+ * categories, unknown categories/statuses and empty subsets are ignored, so
+ * a mangled param degrades to "show everything in those categories".
+ */
+export function parseSelectionParam(
+  categoriesRaw: string | null,
+  statusesRaw: string | null,
+): CategoryStatusSelection {
+  const selection = new Map(fullSelection(parseCategoriesParam(categoriesRaw)));
+  if (!statusesRaw) return selection;
+
+  for (const entry of statusesRaw.split(",")) {
+    const [category, list] = entry.split(":");
+    if (!selection.has(category as Category) || !list) continue;
+    const statuses = list
+      .split(".")
+      .filter((s): s is Status => (MAP_STATUSES as string[]).includes(s));
+    if (statuses.length > 0) {
+      selection.set(category as Category, new Set(statuses));
+    }
+  }
+  return selection;
+}
+
 /** Serialize map state back to a query string (empty string when default). */
 export function serializeMapParams(
   year: number,
-  categories: ReadonlySet<Category>,
+  selection: CategoryStatusSelection,
   selectedLotId: string | null,
   defaultYear: number,
   speedIndex?: number,
@@ -149,9 +313,15 @@ export function serializeMapParams(
 ): string {
   const params = new URLSearchParams();
   if (year !== defaultYear) params.set("year", String(year));
+  const categories = selectionCategories(selection);
   if (categories.size !== ALL_CATEGORIES.length) {
     params.set("cat", [...categories].sort().join(","));
   }
+  const partial = [...selection.entries()]
+    .filter(([, s]) => s.size > 0 && s.size !== MAP_STATUSES.length)
+    .map(([c, s]) => `${c}:${orderStatuses(s).join(".")}`)
+    .sort();
+  if (partial.length > 0) params.set("st", partial.join(","));
   if (selectedLotId) params.set("sel", selectedLotId);
   if (
     speedIndex !== undefined &&
