@@ -1,0 +1,58 @@
+{
+  "id": "ro-giurgiu-ruse-bridge",
+  "country": "ro",
+  "category": "bridge",
+  "name": {
+    "en": "Giurgiu–Ruse Friendship Bridge (Danube Bridge)",
+    "ro": "Podul Prieteniei Giurgiu–Ruse (Podul de la Giurgiu)"
+  },
+  "description": {
+    "en": "Steel truss bridge over the Danube between Giurgiu (Romania) and Ruse (Bulgaria), opened in 1954 as the Friendship Bridge with aid from the Soviet Union. A double-deck road-rail bridge, it was the only bridge over the Danube shared by Romania and Bulgaria until the New Europe Bridge opened in 2013.",
+    "ro": "Pod metalic cu grinzi cu zăbrele peste Dunăre, între Giurgiu (România) și Ruse (Bulgaria), deschis în 1954 sub numele de Podul Prieteniei, cu sprijinul Uniunii Sovietice. Pod mixt rutier și feroviar pe două nivele, a fost singurul pod peste Dunăre dintre România și Bulgaria până la deschiderea Podului Noua Europă în 2013."
+  },
+  "lots": [
+    {
+      "id": "main-bridge",
+      "name": {
+        "en": "Main bridge",
+        "ro": "Podul propriu-zis"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1952",
+        "opened": "1954-06-20"
+      },
+      "lengthKm": 2.224,
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "Constructed with aid from the Soviet Union",
+            "ro": "Construit cu sprijinul Uniunii Sovietice"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "V. Andreev",
+          "role": "designer"
+        },
+        {
+          "name": "N. Rudomazin",
+          "role": "designer"
+        }
+      ],
+      "geometryRef": "main-bridge",
+      "contract": {
+        "noticeReference": "Double-deck road-rail bridge designed by Soviet engineers V. Andreev and N. Rudomazin, built 1952–1954 with Soviet aid",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Danube_Bridge"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Danube Bridge",
+      "url": "https://en.wikipedia.org/wiki/Danube_Bridge"
+    }
+  ]
+}

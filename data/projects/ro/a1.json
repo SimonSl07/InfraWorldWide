@@ -1,0 +1,571 @@
+{
+  "id": "ro-a1",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "A1 Bucharest–Nădlac Motorway",
+    "ro": "Autostrada A1 București–Nădlac"
+  },
+  "description": {
+    "en": "Romania's main east–west motorway, from Bucharest through Pitești, Sibiu, Deva, Timișoara and Arad to the Hungarian border at Nădlac (Pan-European Corridor IV). The Bucharest–Pitești section (1972) was Romania's first motorway; the last gap, through the Carpathians between Pitești and Sibiu, is under construction.",
+    "ro": "Principala autostradă est-vest a României, de la București prin Pitești, Sibiu, Deva, Timișoara și Arad până la granița cu Ungaria la Nădlac (Coridorul Pan-European IV). Tronsonul București–Pitești (1972) a fost prima autostradă a României; ultimul gol, prin Carpați între Pitești și Sibiu, este în construcție."
+  },
+  "lots": [
+    {
+      "id": "bucharest-pitesti",
+      "name": {
+        "en": "Bucharest – Pitești",
+        "ro": "București – Pitești"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1967-02-04",
+        "opened": "1972-09-11"
+      },
+      "lengthKm": 95.9,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "geometryRef": "bucharest-pitesti",
+      "contract": {
+        "noticeReference": "Romania's first motorway, built 1967–1972 and financed from the state budget; fully rehabilitated later (a 1997 FAT consortium contract for €27M over 22 months)",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A1_(Rom%C3%A2nia)"
+      }
+    },
+    {
+      "id": "pitesti-sibiu-lot5",
+      "name": {
+        "en": "Pitești – Curtea de Argeș (lot 5)",
+        "ro": "Pitești – Curtea de Argeș (lotul 5)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-05",
+        "opened": "2025-06-11",
+        "constructionStart": "2020"
+      },
+      "lengthKm": 30.34,
+      "cost": {
+        "estimated": {
+          "amount": 356,
+          "currency": "EUR",
+          "year": 2020
+        }
+      },
+      "contract": {
+        "value": {
+          "amount": 356,
+          "currency": "EUR",
+          "year": 2020
+        },
+        "noticeReference": "First 16 km (Pitești–Curtea de Argeș) inaugurated December 2024, eight months ahead of the contractual term",
+        "noticeUrl": "https://www.romania-insider.com/romania-opens-highway-segment-sibiu-pitesti-december-2024"
+      },
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "pitesti-sibiu-lot5"
+    },
+    {
+      "id": "pitesti-sibiu-lots234",
+      "name": {
+        "en": "Curtea de Argeș – Boița (lots 2–4)",
+        "ro": "Curtea de Argeș – Boița (loturile 2–4)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022",
+        "constructionStart": "2022",
+        "expectedOpening": "2031"
+      },
+      "lengthKm": 78,
+      "contract": {
+        "noticeReference": "Lots 2–4 (Curtea de Argeș–Boița) under separate execution contracts: lot 2 Mapa–Cengiz, lot 3 Webuild, lot 4 Porr — the Carpathian crossing. Staged completion per OpenStreetMap construction tagging: section D 2027, lot 3 (Tunel Poiana, Polanta) 2028, lot 2 Boița–Cornet (Tunel Lazaret 1/2, Robești, Câineni, Boița 1/2, Balota) 2031 — so the full stretch is in service only from 2031",
+        "noticeUrl": "https://www.openstreetmap.org/relation/2790155"
+      },
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Porr (lot 4)",
+          "role": "builder"
+        },
+        {
+          "name": "Mapa – Cengiz (JV, lot 2)",
+          "role": "builder"
+        },
+        {
+          "name": "Webuild (lot 3)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "pitesti-sibiu-lots234"
+    },
+    {
+      "id": "pitesti-sibiu-lot1",
+      "name": {
+        "en": "Boița – Sibiu (lot 1)",
+        "ro": "Boița – Sibiu (lotul 1)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-04",
+        "constructionStart": "2019",
+        "opened": "2022-12-15"
+      },
+      "lengthKm": 13.1,
+      "cost": {
+        "estimated": {
+          "amount": 128.7,
+          "currency": "EUR",
+          "year": 2019
+        }
+      },
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Porr",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "pitesti-sibiu-lot1",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "sibiu-bypass",
+      "name": {
+        "en": "Sibiu bypass",
+        "ro": "Centura Sibiu"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-05",
+        "constructionStart": "2008-07",
+        "opened": "2010-12-01"
+      },
+      "lengthKm": 17.5,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Geiger – Max Bögl – Comtram (JV)",
+          "role": "builder"
+        },
+        {
+          "name": "Vectra Service",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "sibiu-bypass",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "orastie-sibiu",
+      "name": {
+        "en": "Orăștie – Sibiu",
+        "ro": "Orăștie – Sibiu"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-05",
+        "constructionStart": "2011-10",
+        "opened": "2014-11-14"
+      },
+      "lengthKm": 82,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Salini Impregilo (lot 3)",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag (lot 1)",
+          "role": "builder"
+        },
+        {
+          "name": "Straco Grup – Studio Corona (JV, lot 2)",
+          "role": "builder"
+        },
+        {
+          "name": "Astaldi (lot 4)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "orastie-sibiu",
+      "contract": {
+        "noticeReference": "Orăștie–Sibiu received close to €370M in EU funds for the whole section (four lots: Strabag, Straco Grup–Studio Corona, Salini Impregilo, Astaldi); lot 3 was closed for repairs 2015–2016",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A1_(Rom%C3%A2nia)"
+      },
+      "cost": {
+        "estimated": {
+          "amount": 370,
+          "currency": "EUR",
+          "year": 2014
+        }
+      }
+    },
+    {
+      "id": "simeria-orastie",
+      "name": {
+        "en": "Simeria – Orăștie",
+        "ro": "Simeria – Orăștie"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-11",
+        "constructionStart": "2011-04",
+        "opened": "2013-05-30"
+      },
+      "lengthKm": 17.4,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "ISPA pre-accession funds",
+            "ro": "Fonduri ISPA de preaderare"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Straco Grup",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "simeria-orastie",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "deva-simeria",
+      "name": {
+        "en": "Deva – Simeria",
+        "ro": "Deva – Simeria"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-11",
+        "constructionStart": "2011-04",
+        "opened": "2012-12-21"
+      },
+      "lengthKm": 15.4,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "ISPA pre-accession funds",
+            "ro": "Fonduri ISPA de preaderare"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Straco Grup",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "deva-simeria",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "lugoj-deva-lots34",
+      "name": {
+        "en": "Lugoj – Deva (lots 3–4)",
+        "ro": "Lugoj – Deva (loturile 3–4)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013",
+        "opened": "2019-12-23",
+        "constructionStart": "2014"
+      },
+      "lengthKm": 43.13,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB – Tehnostrade (JV, lot 4)",
+          "role": "builder"
+        },
+        {
+          "name": "Comsa (JV, lot 3)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "lugoj-deva-lots34",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "lugoj-deva-lot2",
+      "name": {
+        "en": "Lugoj – Deva (lot 2)",
+        "ro": "Lugoj – Deva (lotul 2)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-10",
+        "opened": "2017-03-06",
+        "constructionStart": "2014"
+      },
+      "lengthKm": 28.2,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Salini Impregilo – Secol (JV)",
+          "role": "builder"
+        },
+        {
+          "name": "Spedition UMB (remaining tunnels section, 2022)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "lugoj-deva-lot2",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "lugoj-deva-lot1",
+      "name": {
+        "en": "Lugoj – Deva (lot 1)",
+        "ro": "Lugoj – Deva (lotul 1)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-05",
+        "constructionStart": "2011-10",
+        "opened": "2015-12-23"
+      },
+      "lengthKm": 27.5,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Tirrena Scavi – Condotte – Cossi (JV)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "lugoj-deva-lot1",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "timisoara-lugoj",
+      "name": {
+        "en": "Timișoara – Lugoj",
+        "ro": "Timișoara – Lugoj"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-12",
+        "opened": "2015-12-23",
+        "constructionStart": "2014"
+      },
+      "lengthKm": 35.1,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB (lot 1 / Timișoara bypass)",
+          "role": "builder"
+        },
+        {
+          "name": "Tirrena Scavi – Condotte (JV, lot 2)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "timisoara-lugoj",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "arad-timisoara",
+      "name": {
+        "en": "Arad – Timișoara",
+        "ro": "Arad – Timișoara"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-12",
+        "opened": "2011-12-17",
+        "constructionStart": "2009"
+      },
+      "lengthKm": 44.5,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "FCC Construcción – Astaldi (JV)",
+          "role": "builder"
+        },
+        {
+          "name": "FCC Construcción – Porr (JV, Arad bypass)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "arad-timisoara",
+      "contract": {
+        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    },
+    {
+      "id": "nadlac-arad",
+      "name": {
+        "en": "Nădlac – Arad (Hungarian border)",
+        "ro": "Nădlac – Arad (granița cu Ungaria)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-12",
+        "constructionStart": "2011-10",
+        "opened": "2015-07-11"
+      },
+      "lengthKm": 38.8,
+      "funding": [
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi – Max Bögl (JV)",
+          "role": "builder"
+        },
+        {
+          "name": "Romstrade (contract terminated 2012)",
+          "role": "builder"
+        },
+        {
+          "name": "Alpine (contract terminated 2013)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "nadlac-arad",
+      "contract": {
+        "noticeReference": "Nădlac–Arad tendered together with Timișoara–Lugoj and Lugoj–Dumbrava; lot 1 and part of lot 2 opened December 2014, the remainder plus the junction with the Hungarian M43 in July 2015",
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — A1 motorway (Romania)",
+      "url": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
+    },
+    {
+      "title": "130km.ro — Autostrada A1 București–Nădlac (lot status tracking)",
+      "url": "https://www.130km.ro/a1.html"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry and construction dates, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

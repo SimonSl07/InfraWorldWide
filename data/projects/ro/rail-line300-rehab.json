@@ -1,0 +1,118 @@
+{
+  "id": "ro-rail-line300-rehab",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "CFR Line 300 rehabilitation, Rhine–Danube Corridor (Câmpina–Predeal and Coșlariu–Sighișoara)",
+    "ro": "Reabilitarea magistralei CFR 300 pe Coridorul Rin–Dunăre (Câmpina–Predeal și Coșlariu–Sighișoara)"
+  },
+  "description": {
+    "en": "Rehabilitation of two sections of CFR Line 300, part of the TEN-T Rhine–Danube Corridor, for speeds of up to 160 km/h. The 48 km Câmpina–Predeal mountain section was upgraded in 2007–2011 with ISPA co-funding, cutting Bucharest–Brașov journey times to 2 h 40 min. The nearly 100 km Coșlariu–Sighișoara section was rebuilt in 2012–2018 with a new alignment, bridges and tunnels — including the 969 m Daneș Tunnel, the longest railway tunnel built in Romania after 1989.",
+    "ro": "Reabilitarea a două secțiuni ale magistralei CFR 300, parte a Coridorului TEN-T Rin–Dunăre, pentru viteze de până la 160 km/h. Secțiunea de munte Câmpina–Predeal, de 48 km, a fost modernizată în 2007–2011 cu cofinanțare ISPA, reducând timpul de călătorie București–Brașov la 2 ore și 40 de minute. Secțiunea Coșlariu–Sighișoara, de aproape 100 km, a fost reconstruită în 2012–2018 pe un traseu nou, cu poduri și tuneluri — inclusiv tunelul Daneș de 969 m, cel mai lung tunel feroviar construit în România după 1989."
+  },
+  "lots": [
+    {
+      "id": "campina-predeal",
+      "name": {
+        "en": "Câmpina – Predeal",
+        "ro": "Câmpina – Predeal"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007",
+        "opened": "2011-12"
+      },
+      "lengthKm": 48,
+      "cost": {
+        "actual": {
+          "amount": 313.4,
+          "currency": "EUR",
+          "year": 2011
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "About €200M co-funded through the ISPA programme (75% EU, 25% Romanian government).",
+            "ro": "Circa 200 milioane EUR cofinantați prin programul ISPA (75% UE, 25% Guvernul României)."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "geometryRef": "campina-predeal",
+      "contract": {
+        "noticeReference": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel",
+        "noticeUrl": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_300"
+      }
+    },
+    {
+      "id": "coslariu-sighisoara",
+      "name": {
+        "en": "Coșlariu – Sighișoara",
+        "ro": "Coșlariu – Sighișoara"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012",
+        "constructionStart": "2012",
+        "opened": "2018"
+      },
+      "lengthKm": 100,
+      "cost": {
+        "estimated": {
+          "amount": 187,
+          "currency": "EUR",
+          "year": 2012
+        }
+      },
+      "contractors": [
+        {
+          "name": "FCC Construcción",
+          "role": "builder"
+        },
+        {
+          "name": "Alpine Bau",
+          "role": "builder"
+        },
+        {
+          "name": "Azvi",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "coslariu-sighisoara",
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "TEN-T Rhine–Danube Corridor upgrade, EU co-financed",
+            "ro": "Modernizare pe Coridorul TEN-T Rin–Dunăre, cofinanțată de Uniunea Europeană"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contract": {
+        "noticeReference": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel",
+        "noticeUrl": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_300"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Căile Ferate Române Line 300 — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_300"
+    },
+    {
+      "title": "Romania to complete a new Corridor IV rail section this year — Railway PRO",
+      "url": "https://www.railwaypro.com/wp/romania-to-complete-a-new-corridor-iv-rail-section-this-year/"
+    },
+    {
+      "title": "Lucrare publică din România, premiată de UE — Adevărul",
+      "url": "http://adevarul.ro/news/societate/lucrare-publica-romania-premiata-ue-1_50ad18d47c42d5a6638ea0d8/index.html"
+    }
+  ]
+}

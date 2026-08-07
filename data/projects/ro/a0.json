@@ -1,0 +1,195 @@
+{
+  "id": "ro-a0",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "A0 Bucharest Ring Motorway",
+    "ro": "Autostrada A0 Centura București"
+  },
+  "description": {
+    "en": "Outer motorway ring around Bucharest (~101 km when complete), serving as a second beltway beyond the existing Bucharest Ring Road and linking the A1, A2 and A3 motorways. It is split into a southern and a northern half-ring. The southern half-ring (51.3 km) was completed in stages between December 2023 and July 2025 and is fully operational. On the northern half-ring, the DN1–A3–DN2 section opened in November 2023 and December 2024, while the remaining western (A1–DN1) and eastern (DN2–A2) lots are under construction.",
+    "ro": "Inel exterior de autostradă în jurul Bucureștiului (~101 km la finalizare), care servește ca a doua centură a Capitalei, dincolo de actuala Centură a Bucureștiului, și leagă autostrăzile A1, A2 și A3. Este împărțită într-un seminel sudic și unul nordic. Seminelul sudic (51,3 km) a fost finalizat etapizat între decembrie 2023 și iulie 2025 și este complet operațional. Pe seminelul nordic, secțiunea DN1–A3–DN2 a fost deschisă în noiembrie 2023 și decembrie 2024, iar loturile rămase din vest (A1–DN1) și din est (DN2–A2) sunt în construcție."
+  },
+  "lots": [
+    {
+      "id": "south-ring",
+      "name": {
+        "en": "South half-ring: A1 – A2",
+        "ro": "Seminel sudic: A1 – A2"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "2012-12",
+        "tenderAwarded": "2019-03-09",
+        "constructionStart": "2019",
+        "opened": "2025-07"
+      },
+      "lengthKm": 51.3,
+      "cost": {
+        "estimated": {
+          "amount": 580,
+          "currency": "EUR",
+          "year": 2017
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Found eligible for EU funding after 2016 traffic studies (no EU financing was sought under the 2014 General Transport Master Plan)",
+            "ro": "Declarată eligibilă pentru finanțare europeană după studiile de trafic din 2016 (Master Planul General de Transport din 2014 nu prevedea finanțare europeană)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alsim Alarko (south lots 1–2)",
+          "role": "builder"
+        },
+        {
+          "name": "Aktor (south lot 3)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "south-ring",
+      "contract": {
+        "value": {
+          "amount": 580,
+          "currency": "EUR",
+          "year": 2017
+        },
+        "noticeReference": "South ring tendered July 2017: 52 km, €580M, completion estimated after 2022; execution contracts signed with Alsim Alarko (lots 1–2, March 2019) and Aktor (lot 3, April 2019)",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
+      }
+    },
+    {
+      "id": "north-ring-east",
+      "name": {
+        "en": "North half-ring: A2 – DN2",
+        "ro": "Seminel nordic: A2 – DN2"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 14,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "CCECC (north lot 3, Afumați–Pantelimon)",
+          "role": "builder"
+        },
+        {
+          "name": "Spedition UMB (north lot 4, Pantelimon–Manolache)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "north-ring-east",
+      "contract": {
+        "noticeReference": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies — OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 3 (Afumați–Pantelimon) and Lot 4 (Pantelimon–Manolache) construction ways",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
+      }
+    },
+    {
+      "id": "north-ring-dn1-dn2",
+      "name": {
+        "en": "North half-ring: DN2 – DN1 (via A3)",
+        "ro": "Seminel nordic: DN2 – DN1 (prin A3)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2021-11",
+        "opened": "2024-12"
+      },
+      "lengthKm": 17.5,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB (north lot 2, Corbeanca–Afumați)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "north-ring-dn1-dn2",
+      "contract": {
+        "noticeReference": "North ring lot 2 (Corbeanca–Afumați, 19 km): Spedition UMB entered site November 2021, building permit issued July 2022",
+        "noticeUrl": "https://economedia.ro/autostrada-de-centura-bucuresti-nord-umb-a-primit-autorizatia-de-construire-pentru-lotul-2-19-km-la-7-luni-de-la-intrarea-in-teren.html"
+      }
+    },
+    {
+      "id": "north-ring-west",
+      "name": {
+        "en": "North half-ring: DN1 – A1 (via Buftea)",
+        "ro": "Seminel nordic: DN1 – A1 (prin Buftea)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 18,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Impresa Pizzarotti – Retter (north lot 1, Bâcu–Corbeanca)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "north-ring-west",
+      "contract": {
+        "noticeReference": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies — OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 1 (Bâcu–Corbeanca) construction ways",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Bucharest Ring Motorway",
+      "url": "https://en.wikipedia.org/wiki/Bucharest_Ring_Motorway"
+    },
+    {
+      "title": "Wikipedia (ro) — Autostrada A0 (România)",
+      "url": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "id": "ro-a7",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "A7 Motorway (Moldavia Motorway)",
+    "ro": "Autostrada A7 (Autostrada Moldovei)"
+  },
+  "description": {
+    "en": "Partially built motorway that will link Ploiești (A3) to the Ukrainian border at Siret via Buzău, Focșani, Bacău, Roman, Pașcani and Suceava, partly along Pan-European Corridor IX. As of December 2025, 211.9 km are open (Dumbrava–Adjud and the Bacău bypass), 185.3 km are under construction (Adjud–Suceava) and the 56.1 km Suceava–Siret section is tendered, out of 453.3 km planned. The Pașcani–Siret section is to be co-financed from EU funds, while Ploiești–Pașcani is to be financed through the Romanian PNRR (Next Generation EU).",
+    "ro": "Autostradă parțial construită care va lega Ploieștiul (A3) de frontiera cu Ucraina la Siret, prin Buzău, Focșani, Bacău, Roman, Pașcani și Suceava, parțial pe traseul Coridorului Paneuropean IX. În decembrie 2025 erau deschiși 211,9 km (Dumbrava–Adjud și Centura Bacău), 185,3 km erau în construcție (Adjud–Suceava), iar secțiunea Suceava–Siret de 56,1 km era în licitație, din totalul de 453,3 km planificați. Secțiunea Pașcani–Siret urmează a fi cofinanțată din fonduri europene, iar Ploiești–Pașcani prin PNRR (Next Generation EU)."
+  },
+  "lots": [
+    {
+      "id": "dumbrava-mizil",
+      "name": {
+        "en": "Dumbrava (A3) – Mizil (Ploiești–Buzău lot 1)",
+        "ro": "Dumbrava (A3) – Mizil (lotul 1 Ploiești – Buzău)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-06-16",
+        "constructionStart": "2022",
+        "opened": "2024-12-23"
+      },
+      "lengthKm": 21.0,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Impresa Pizzarotti",
+          "role": "builder"
+        },
+        {
+          "name": "Retter",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "dumbrava-mizil",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "mizil-pietroasele",
+      "name": {
+        "en": "Mizil – Pietroasele (Ploiești–Buzău lot 2)",
+        "ro": "Mizil – Pietroasele (lotul 2 Ploiești – Buzău)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-06-07",
+        "constructionStart": "2022",
+        "opened": "2025-10"
+      },
+      "lengthKm": 28.3,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Coni",
+          "role": "builder"
+        },
+        {
+          "name": "Trace",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "mizil-pietroasele",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "pietroasele-buzau",
+      "name": {
+        "en": "Pietroasele – Buzău",
+        "ro": "Pietroasele – Buzău"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022",
+        "constructionStart": "2022",
+        "opened": "2025-11"
+      },
+      "lengthKm": 12.7,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nurol",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "pietroasele-buzau",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "buzau-bypass",
+      "name": {
+        "en": "Buzău bypass",
+        "ro": "Centura Buzău"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-09-06",
+        "constructionStart": "2022",
+        "opened": "2025-07"
+      },
+      "lengthKm": 4.6,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "SA&PE",
+          "role": "builder"
+        },
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "buzau-bypass",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "buzau-ramnicu-sarat",
+      "name": {
+        "en": "Buzău – Râmnicu Sărat",
+        "ro": "Buzău – Râmnicu Sărat"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2022",
+        "opened": "2024-11-21"
+      },
+      "lengthKm": 30.8,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "buzau-ramnicu-sarat",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "ramnicu-sarat-mandresti",
+      "name": {
+        "en": "Râmnicu Sărat – Mândrești-Munteni",
+        "ro": "Râmnicu Sărat – Mândrești-Munteni"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2022",
+        "opened": "2024-12-20"
+      },
+      "lengthKm": 36.1,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "ramnicu-sarat-mandresti",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "focsani-bypass",
+      "name": {
+        "en": "Focșani bypass (Buzău–Focșani lot 4)",
+        "ro": "Centura Focșani (lotul 4 Buzău – Focșani)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-09-06",
+        "constructionStart": "2022",
+        "opened": "2024-11-07"
+      },
+      "lengthKm": 10.94,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "SA&PE",
+          "role": "builder"
+        },
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "focsani-bypass",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "focsani-domnesti",
+      "name": {
+        "en": "Focșani – Domnești-Târg (Focșani–Bacău lot 1)",
+        "ro": "Focșani – Domnești-Târg (lotul 1 Focșani – Bacău)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-12",
+        "constructionStart": "2023",
+        "opened": "2025-12"
+      },
+      "lengthKm": 35.6,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "focsani-domnesti",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "domnesti-adjud",
+      "name": {
+        "en": "Domnești-Târg – Adjud",
+        "ro": "Domnești-Târg – Adjud"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-12",
+        "constructionStart": "2023",
+        "opened": "2025-12-13"
+      },
+      "lengthKm": 15.6,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "domnesti-adjud",
+      "contract": {
+        "noticeReference": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "bacau-bypass",
+      "name": {
+        "en": "Bacău bypass",
+        "ro": "Centura Bacău"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2016-05-30",
+        "tenderAwarded": "2018-12-22",
+        "opened": "2020-12-02"
+      },
+      "lengthKm": 16.269,
+      "cost": {
+        "estimated": {
+          "amount": 142,
+          "currency": "EUR",
+          "year": 2018
+        }
+      },
+      "contract": {
+        "executionMonths": 36,
+        "guaranteeMonths": 84,
+        "value": {
+          "amount": 142,
+          "currency": "EUR",
+          "year": 2018
+        },
+        "noticeReference": "CNAIR contract signed 22 December 2018 with Spedition UMB–Tehnostrade: €142M, 36 months for construction, 7-year guarantee (opened 2 years ahead of term)",
+        "noticeUrl": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-22880993-cnair-semnat-contractul-pentru-varianta-ocolitoare-municipiului-bacau-142-milioane-euro-36-luni-pentru-constructie-7-ani-garantie.htm"
+      },
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "bacau-bypass"
+    },
+    {
+      "id": "adjud-bacau-sud",
+      "name": {
+        "en": "Adjud – Bacău Sud",
+        "ro": "Adjud – Bacău Sud"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-12",
+        "constructionStart": "2023",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 45.9,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "adjud-bacau-sud",
+      "contract": {
+        "noticeReference": "Focșani–Bacău lots 2–3 (Domnești-Târg–Răcăciuni, Răcăciuni–Bacău Sud) awarded November 2022 and signed December 2022 with Spedition UMB; PNRR-funded, instrument deadline 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "bacau-roman",
+      "name": {
+        "en": "Bacău – Roman (Bacău–Pașcani lot 1)",
+        "ro": "Bacău – Roman (lotul 1 Bacău – Pașcani)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-12",
+        "constructionStart": "2023",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 30.3,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "bacau-roman",
+      "contract": {
+        "noticeReference": "Bacău–Pașcani lot 1 (Săucești–Trifești, 30.3 km) awarded December 2022 to Spedition UMB; PNRR-funded, instrument deadline 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "roman-sabaoani",
+      "name": {
+        "en": "Roman – Săbăoani (Bacău–Pașcani lot 2)",
+        "ro": "Roman – Săbăoani (lotul 2 Bacău – Pașcani)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-12",
+        "constructionStart": "2023",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 18.9,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "roman-sabaoani",
+      "contract": {
+        "noticeReference": "Bacău–Pașcani lot 2 (Trifești–Gherăești, 18.99 km) awarded December 2022 to Spedition UMB; PNRR-funded, instrument deadline 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "sabaoani-pascani",
+      "name": {
+        "en": "Săbăoani – Pașcani (Bacău–Pașcani lot 3)",
+        "ro": "Săbăoani – Pașcani (lotul 3 Bacău – Pașcani)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-12",
+        "constructionStart": "2023",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 28.09,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "sabaoani-pascani",
+      "contract": {
+        "noticeReference": "Bacău–Pașcani lot 3 (Mircești–Pașcani, 28.09 km) awarded December 2022 to Spedition UMB; PNRR-funded, instrument deadline 2026",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+      }
+    },
+    {
+      "id": "pascani-suceava",
+      "name": {
+        "en": "Pașcani – Suceava",
+        "ro": "Pașcani – Suceava"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023"
+      },
+      "lengthKm": 61.97,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Pașcani–Siret section to be co-financed through EU funds",
+            "ro": "Secțiunea Pașcani–Siret urmează a fi cofinanțată din fonduri europene"
+          }
+        }
+      ],
+      "geometryRef": "pascani-suceava"
+    },
+    {
+      "id": "suceava-siret",
+      "name": {
+        "en": "Suceava – Siret (Ukrainian border)",
+        "ro": "Suceava – Siret (frontiera cu Ucraina)"
+      },
+      "status": "tendered",
+      "lengthKm": 56.16,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Pașcani–Siret section to be co-financed through EU funds; north of Milișăuți (Rădăuți) the road is planned as an expressway to the border",
+            "ro": "Secțiunea Pașcani–Siret urmează a fi cofinanțată din fonduri europene; la nord de Milișăuți (Rădăuți) drumul este planificat ca drum expres până la frontieră"
+          }
+        }
+      ],
+      "geometryRef": "suceava-siret"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — A7 motorway (Romania)",
+      "url": "https://en.wikipedia.org/wiki/A7_motorway_(Romania)"
+    },
+    {
+      "title": "Wikipedia (ro) — Autostrada A7 (România)",
+      "url": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}
