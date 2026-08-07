@@ -80,6 +80,17 @@ describe("buildYearFilters", () => {
   });
 });
 
+describe("shouldShowFuture", () => {
+  it("hides not-yet-started lots when viewing the past", () => {
+    expect(shouldShowFuture(2005, 2026)).toBe(false);
+    expect(shouldShowFuture(2025, 2026)).toBe(false);
+  });
+  it("shows them at the present year and beyond", () => {
+    expect(shouldShowFuture(2026, 2026)).toBe(true);
+    expect(shouldShowFuture(2032, 2026)).toBe(true);
+  });
+});
+
 describe("computeMaxYear", () => {
   it("is nowYear + 5 without expected openings", () => {
     expect(computeMaxYear([], 2026)).toBe(2031);
