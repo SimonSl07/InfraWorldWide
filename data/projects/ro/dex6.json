@@ -1,0 +1,77 @@
+{
+  "id": "ro-dex6",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "DEx6 Danube Expressway (Brăila – Galați)",
+    "ro": "Drumul expres DEx6 „Dunărea” (Brăila – Galați)"
+  },
+  "description": {
+    "en": "Expressway between the two Lower Danube cities of Brăila and Galați (Smârdan), 19.205 km in total, replacing the two-lane DN22B. Around 12.3 km were in execution by Spedition UMB under a contract worth 371 million lei, with the remainder still to be contracted; opening was scheduled for 2026. Together with the Brăila suspension bridge and the planned Focșani–Brăila expressway it forms the road backbone of the Lower Danube metropolitan area.",
+    "ro": "Drum expres între orașele dunărene Brăila și Galați (Smârdan), lung de 19,205 km în total, care înlocuiește DN22B cu două benzi. Circa 12,3 km erau în execuție cu Spedition UMB, printr-un contract de 371 de milioane de lei, restul urmând a fi contractat; deschiderea era programată pentru 2026. Împreună cu podul suspendat de la Brăila și cu viitorul drum expres Focșani–Brăila formează coloana vertebrală rutieră a zonei metropolitane a Dunării de Jos."
+  },
+  "lots": [
+    {
+      "id": "braila-galati",
+      "name": {
+        "en": "Brăila – Galați (Smârdan)",
+        "ro": "Brăila – Galați (Smârdan)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2021",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 12.28,
+      "cost": {
+        "estimated": {
+          "amount": 371,
+          "currency": "RON",
+          "year": 2021
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "braila-galati",
+      "contract": {
+        "value": {
+          "amount": 371,
+          "currency": "RON",
+          "year": 2021
+        },
+        "noticeReference": "Of the 19.205 km of DEx6, 12.28 km were under construction and 6.925 km still to be contracted; built by Spedition UMB for 371 million lei, scheduled to open in 2026",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Gala%C8%9Bi%E2%80%93Br%C4%83ila_Expressway"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Galați–Brăila Expressway",
+      "url": "https://en.wikipedia.org/wiki/Gala%C8%9Bi%E2%80%93Br%C4%83ila_Expressway"
+    },
+    {
+      "title": "Wikipedia — Highways in Romania (expressway table, CNAIR figures)",
+      "url": "https://en.wikipedia.org/wiki/Highways_in_Romania"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

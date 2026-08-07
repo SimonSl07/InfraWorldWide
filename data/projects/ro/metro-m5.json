@@ -1,0 +1,104 @@
+{
+  "id": "ro-metro-m5",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "Bucharest Metro Line M5 (Drumul Taberei)",
+    "ro": "Magistrala 5 de metrou București (Drumul Taberei)"
+  },
+  "description": {
+    "en": "Newest line of the Bucharest Metro, serving the dense Drumul Taberei district which had waited decades for a rail link. The first phase runs 6.9 km from Râul Doamnei to Eroilor with 10 stations, including the Valea Ialomiței branch towards the depot; construction started in April 2011 and, after repeated delays, the line opened on 15 September 2020 at an expected cost of €708.6 million with EU support. Phase II would extend the line east from Eroilor under the city centre to Iancului, and a third phase on to Pantelimon on the M1.",
+    "ro": "Cea mai nouă magistrală a metroului bucureștean, care deservește cartierul dens Drumul Taberei, ce a așteptat decenii o legătură pe șină. Prima etapă are 6,9 km, de la Râul Doamnei la Eroilor, cu 10 stații, inclusiv ramura Valea Ialomiței spre depou; construcția a început în aprilie 2011 și, după amânări repetate, linia a fost deschisă pe 15 septembrie 2020, la un cost estimat de 708,6 milioane de euro, cu sprijin european. Etapa a II-a ar prelungi linia spre est, de la Eroilor pe sub centrul orașului până la Iancului, iar o a treia etapă până la Pantelimon, pe M1."
+  },
+  "lots": [
+    {
+      "id": "phase1-raul-doamnei-eroilor",
+      "name": {
+        "en": "Phase I: Râul Doamnei – Eroilor (with the Valea Ialomiței branch)",
+        "ro": "Etapa I: Râul Doamnei – Eroilor (cu ramura Valea Ialomiței)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-04",
+        "opened": "2020-09-15"
+      },
+      "lengthKm": 6.9,
+      "cost": {
+        "estimated": {
+          "amount": 708.6,
+          "currency": "EUR",
+          "year": 2011
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "European Commission co-financing (Extension of Bucharest Metro Line 5)",
+            "ro": "Cofinanțare a Comisiei Europene (extinderea magistralei 5 de metrou)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi – FCC – AB Construct – Delta ACM",
+          "role": "builder"
+        },
+        {
+          "name": "Max Bögl (Romancierilor – Valea Ialomiței section)",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "phase1-raul-doamnei-eroilor",
+      "contract": {
+        "noticeReference": "10 stations over 6.9 km; construction from April 2011, opened 15 September 2020, expected cost €708.6 million",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
+      }
+    },
+    {
+      "id": "phase2-eroilor-iancului",
+      "name": {
+        "en": "Phase II: Eroilor – Universitate – Iancului",
+        "ro": "Etapa a II-a: Eroilor – Universitate – Iancului"
+      },
+      "status": "planned",
+      "lengthKm": 5.4,
+      "geometryRef": "phase2-eroilor-iancului",
+      "contract": {
+        "noticeReference": "Six new stations under the city centre between Eroilor and Iancului; no construction contract awarded, Metrorex estimates quoted an opening around 2025 that has not been met",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
+      }
+    },
+    {
+      "id": "phase3-iancului-pantelimon",
+      "name": {
+        "en": "Phase III: Iancului – Pantelimon",
+        "ro": "Etapa a III-a: Iancului – Pantelimon"
+      },
+      "status": "planned",
+      "lengthKm": 3.8,
+      "geometryRef": "phase3-iancului-pantelimon",
+      "contract": {
+        "noticeReference": "Six stations along Șoseaua Iancului to the M1 station at Pantelimon; on hold, estimated for 2032",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Bucharest Metro Line M5",
+      "url": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
+    },
+    {
+      "title": "European Commission — Extension of Bucharest Metro Line 5",
+      "url": "https://ec.europa.eu/regional_policy/en/projects/major/romania/extension-of-bucharest-metro-line-5"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry of the opened section, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}
