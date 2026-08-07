@@ -10,7 +10,11 @@ import type {
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Category } from "@/lib/schema";
 import { CATEGORY_COLORS, OPENFREEMAP_STYLE } from "@/lib/map-style";
-import { buildYearFilters, shouldShowFuture } from "@/lib/map-filters";
+import {
+  buildYearFilters,
+  shouldShowFuture,
+  type CategoryStatusSelection,
+} from "@/lib/map-filters";
 import { nearestFeature } from "@/lib/geo";
 
 export interface LotFeatureProps {
@@ -28,7 +32,7 @@ export interface LotFeatureProps {
 interface InfraMapProps {
   geojson: FeatureCollection;
   year: number;
-  activeCategories: Set<Category>;
+  selection: CategoryStatusSelection;
   selectedLotId: string | null;
   onSelectLot: (props: LotFeatureProps | null) => void;
 }
@@ -48,7 +52,7 @@ const HIT_WIDTH = 30;
 export default function InfraMap({
   geojson,
   year,
-  activeCategories,
+  selection,
   selectedLotId,
   onSelectLot,
 }: InfraMapProps) {
@@ -68,8 +72,8 @@ export default function InfraMap({
   );
 
   const filters = useMemo(
-    () => buildYearFilters(year, activeCategories, nowYear),
-    [year, activeCategories, nowYear],
+    () => buildYearFilters(year, selection, nowYear),
+    [year, selection, nowYear],
   );
 
   const showFuture = shouldShowFuture(year, nowYear);
