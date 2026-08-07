@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import type { FeatureCollection } from "geojson";
 import type { Category, Project } from "@/lib/schema";
-import { ALL_CATEGORIES, MAP_STATUSES } from "@/lib/map-style";
+import { MAP_STATUSES } from "@/lib/map-style";
 import {
   computeMaxYear,
   computeMinYear,
