@@ -1,0 +1,199 @@
+{
+  "id": "bg-a1-trakia",
+  "country": "bg",
+  "category": "highway",
+  "name": {
+    "en": "A1 Trakia Motorway"
+  },
+  "description": {
+    "en": "Bulgaria's major north-south highway connecting Sofia to the Black Sea port of Burgas, spanning 360 km. Completed over 40 years from initial construction in 1973 to full opening on 15 July 2013. The route passes through key cities including Plovdiv, Stara Zagora, Yambol, and Karnobat."
+  },
+  "lots": [
+    {
+      "id": "sofia-novi-han",
+      "name": {
+        "en": "Sofia – Novi Han"
+      },
+      "status": "opened",
+      "lengthKm": 10,
+      "geometryRef": "sofia-novi-han",
+      "dates": {
+        "constructionStart": "1973",
+        "opened": "1978"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "novi-han-plovdiv",
+      "name": {
+        "en": "Novi Han – Plovdiv"
+      },
+      "status": "opened",
+      "lengthKm": 56,
+      "geometryRef": "novi-han-plovdiv",
+      "dates": {
+        "opened": "1984"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "plovdiv-orizovo",
+      "name": {
+        "en": "Plovdiv – Orizovo"
+      },
+      "status": "opened",
+      "lengthKm": 32,
+      "geometryRef": "plovdiv-orizovo",
+      "dates": {
+        "opened": "1995-11-17"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "orizovo-stara-zagora",
+      "name": {
+        "en": "Orizovo – Stara Zagora"
+      },
+      "status": "opened",
+      "lengthKm": 38.6,
+      "geometryRef": "orizovo-stara-zagora",
+      "dates": {
+        "constructionStart": "2006",
+        "opened": "2007-10-05"
+      },
+      "cost": {
+        "actual": {
+          "amount": 198.16,
+          "currency": "BGN",
+          "year": 2006
+        }
+      },
+      "contract": {
+        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+      }
+    },
+    {
+      "id": "stara-zagora-nova-zagora",
+      "name": {
+        "en": "Stara Zagora – Nova Zagora"
+      },
+      "status": "opened",
+      "lengthKm": 31.8,
+      "geometryRef": "stara-zagora-nova-zagora",
+      "dates": {
+        "tenderAwarded": "2010-04-23",
+        "constructionStart": "2010-04-23",
+        "opened": "2012-07-01"
+      },
+      "contract": {
+        "value": {
+          "amount": 137.868,
+          "currency": "BGN",
+          "year": 2010
+        },
+        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+      },
+      "contractors": [
+        {
+          "name": "Trace Group Hold",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "nova-zagora-yambol",
+      "name": {
+        "en": "Nova Zagora – Yambol"
+      },
+      "status": "opened",
+      "lengthKm": 35.7,
+      "geometryRef": "nova-zagora-yambol",
+      "dates": {
+        "tenderAwarded": "2010-07-14",
+        "constructionStart": "2010-08-02",
+        "opened": "2012-07-12"
+      },
+      "contract": {
+        "value": {
+          "amount": 133.97,
+          "currency": "BGN",
+          "year": 2010
+        },
+        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+      },
+      "contractors": [
+        {
+          "name": "Actor",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "yambol-karnobat",
+      "name": {
+        "en": "Yambol – Karnobat"
+      },
+      "status": "opened",
+      "lengthKm": 49.1,
+      "geometryRef": "yambol-karnobat",
+      "dates": {
+        "tenderAwarded": "2010-08-31",
+        "constructionStart": "2010-09-03",
+        "opened": "2013-07-15"
+      },
+      "contract": {
+        "value": {
+          "amount": 209.646,
+          "currency": "BGN",
+          "year": 2010
+        },
+        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+      },
+      "contractors": [
+        {
+          "name": "Trakia IV consortium",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "karnobat-burgas",
+      "name": {
+        "en": "Karnobat – Burgas"
+      },
+      "status": "opened",
+      "lengthKm": 35.3,
+      "geometryRef": "karnobat-burgas",
+      "dates": {
+        "constructionStart": "2005",
+        "opened": "2006-11-02"
+      },
+      "cost": {
+        "actual": {
+          "amount": 150.266,
+          "currency": "BGN",
+          "year": 2005
+        }
+      },
+      "contract": {
+        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — A1 motorway (Bulgaria)",
+      "url": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
+    },
+    {
+      "title": "Bulgarian Wikipedia — Автомагистрала Тракия",
+      "url": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+    }
+  ]
+}
