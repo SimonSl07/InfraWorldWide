@@ -99,12 +99,12 @@ export function setCategoryStatuses(
   return next;
 }
 
-export interface YearFilters {
-  /** Lots opened at or before the year. */
+export interface MonthFilters {
+  /** Lots opened on or before the month. */
   opened: FilterSpecification;
-  /** Lots whose construction started but hadn't opened yet at the year. */
+  /** Lots whose construction started but hadn't opened yet in the month. */
   underConstruction: FilterSpecification;
-  /** Lots not yet started at the year (only rendered at "present"). */
+  /** Lots not yet started in the month (only rendered at "present"). */
   future: FilterSpecification;
 }
 
@@ -154,36 +154,42 @@ export function buildSelectionFilter(
   return ["any", ...clauses] as unknown as FilterSpecification;
 }
 
-export function buildYearFilters(
-  year: number,
+/**
+ * Layer filters for one month of the timeline.
+ *
+ * `month` and `nowMonth` are absolute month indices (year*12 + month-1), so
+ * a lot appears on the first of the month it opened and not a day earlier.
+ */
+export function buildMonthFilters(
+  month: number,
   selection: CategoryStatusSelection,
-  nowYear: number,
-): YearFilters {
-  // Each layer answers to the checkbox for the status it represents at the
-  // viewed year; the not-yet-started layer falls back to declared status.
+  nowMonth: number,
+): MonthFilters {
+  // Each layer answers to the checkbox for the status it represents in the
+  // viewed month; the not-yet-started layer falls back to declared status.
   const openedCategories = buildCategoryFilter(selection, "opened");
   const buildingCategories = buildCategoryFilter(selection, "under_construction");
   const notStartedSelection = buildSelectionFilter(selection);
 
-  // "Effectively opened" at the selected year: actually opened — or, when
-  // viewing the future, past its expected opening date.
-  const openedByYear = [
+  // "Effectively opened" in the selected month: actually opened — or, when
+  // viewing the future, past its expected opening month.
+  const openedByMonth = [
     "all",
-    ["!=", ["get", "opened"], null],
-    ["<=", ["get", "opened"], year],
+    ["!=", ["get", "openedMonth"], null],
+    ["<=", ["get", "openedMonth"], month],
   ] as unknown as FilterSpecification;
   const effectivelyOpened =
-    year > nowYear
+    month > nowMonth
       ? ([
           "any",
-          openedByYear,
+          openedByMonth,
           [
             "all",
-            ["!=", ["get", "expectedOpening"], null],
-            ["<=", ["get", "expectedOpening"], year],
+            ["!=", ["get", "expectedOpeningMonth"], null],
+            ["<=", ["get", "expectedOpeningMonth"], month],
           ],
         ] as unknown as FilterSpecification)
-      : openedByYear;
+      : openedByMonth;
 
   const opened = [
     "all",
@@ -194,8 +200,8 @@ export function buildYearFilters(
   const underConstruction = [
     "all",
     buildingCategories,
-    ["!=", ["get", "constructionStart"], null],
-    ["<=", ["get", "constructionStart"], year],
+    ["!=", ["get", "constructionStartMonth"], null],
+    ["<=", ["get", "constructionStartMonth"], month],
     ["!", effectivelyOpened],
   ] as unknown as FilterSpecification;
 
@@ -205,8 +211,8 @@ export function buildYearFilters(
     ["!", effectivelyOpened],
     [
       "any",
-      ["==", ["get", "constructionStart"], null],
-      [">", ["get", "constructionStart"], year],
+      ["==", ["get", "constructionStartMonth"], null],
+      [">", ["get", "constructionStartMonth"], month],
     ],
   ] as unknown as FilterSpecification;
 
@@ -214,57 +220,83 @@ export function buildYearFilters(
 }
 
 /** "Future" (not yet started) lots only make sense at the present view. */
-export function shouldShowFuture(year: number, nowYear: number): boolean {
-  return year >= nowYear;
+export function shouldShowFuture(month: number, nowMonth: number): boolean {
+  return month >= nowMonth;
 }
 
 export const HARD_MIN_YEAR = 1850;
+export const HARD_MIN_MONTH = HARD_MIN_YEAR * 12;
+
+/** Absolute month index for a year and 1-based month. */
+export function toMonthIndex(year: number, month = 1): number {
+  return year * 12 + (month - 1);
+}
+
+/** Split a month index back into a year and 1-based month. */
+export function fromMonthIndex(index: number): { year: number; month: number } {
+  const year = Math.floor(index / 12);
+  return { year, month: index - year * 12 + 1 };
+}
 
 /**
- * Slider upper bound: at least nowYear + 5, but far enough to cover the
- * latest expected opening in the data (so future completion is reachable).
+ * Slider upper bound: at least five years out, and far enough to cover the
+ * latest expected opening in the data so future completion is reachable.
  */
-export function computeMaxYear(
+export function computeMaxMonth(
   features: ReadonlyArray<{ properties?: Record<string, unknown> | null }>,
-  nowYear: number,
+  nowMonth: number,
 ): number {
-  let max = nowYear + 5;
+  let max = nowMonth + 5 * 12;
   for (const f of features) {
-    const v = f.properties?.expectedOpening;
+    const v = f.properties?.expectedOpeningMonth;
     if (typeof v === "number" && v > max) max = v;
   }
   return max;
 }
 
 /**
- * Slider lower bound from the data: 5 years before the earliest known
- * date, clamped to [HARD_MIN_YEAR, 1970] so sparse datasets still get a
- * sensible default.
+ * Slider lower bound from the data: five years before the earliest known
+ * date, clamped so sparse datasets still start no later than January 1970.
  */
-export function computeMinYear(
+export function computeMinMonth(
   features: ReadonlyArray<{ properties?: Record<string, unknown> | null }>,
 ): number {
   let min = Infinity;
   for (const f of features) {
-    for (const key of ["opened", "constructionStart"] as const) {
+    for (const key of ["openedMonth", "constructionStartMonth"] as const) {
       const v = f.properties?.[key];
       if (typeof v === "number" && v < min) min = v;
     }
   }
-  if (!Number.isFinite(min)) return 1970;
-  return Math.max(HARD_MIN_YEAR, Math.min(1970, min - 5));
+  if (!Number.isFinite(min)) return toMonthIndex(1970);
+  return Math.max(HARD_MIN_MONTH, Math.min(toMonthIndex(1970), min - 5 * 12));
 }
 
-/** Parse a ?year= param, clamped to [min, max]; falls back to `fallback`. */
-export function parseYearParam(
+/**
+ * Parse a ?t=YYYY-MM param to a month index, clamped to [min, max].
+ * A bare ?t=YYYY is accepted and resolves to that January.
+ */
+export function parseMonthParam(
   raw: string | null,
   min: number,
   max: number,
   fallback: number,
 ): number {
-  const y = Number(raw);
-  if (!Number.isInteger(y) || y < min || y > max) return fallback;
-  return y;
+  if (!raw) return fallback;
+  const m = raw.match(/^(\d{4})(?:-(\d{1,2}))?$/);
+  if (!m) return fallback;
+  const year = Number(m[1]);
+  const month = m[2] === undefined ? 1 : Number(m[2]);
+  if (month < 1 || month > 12) return fallback;
+  const index = toMonthIndex(year, month);
+  if (index < min || index > max) return fallback;
+  return index;
+}
+
+/** Month index as the "YYYY-MM" used in URLs. */
+export function formatMonthParam(index: number): string {
+  const { year, month } = fromMonthIndex(index);
+  return `${year}-${String(month).padStart(2, "0")}`;
 }
 
 /** Parse a ?cat=highway,railway param; empty/invalid → all categories. */
@@ -304,15 +336,15 @@ export function parseSelectionParam(
 
 /** Serialize map state back to a query string (empty string when default). */
 export function serializeMapParams(
-  year: number,
+  month: number,
   selection: CategoryStatusSelection,
   selectedLotId: string | null,
-  defaultYear: number,
+  defaultMonth: number,
   speedIndex?: number,
   defaultSpeedIndex?: number,
 ): string {
   const params = new URLSearchParams();
-  if (year !== defaultYear) params.set("year", String(year));
+  if (month !== defaultMonth) params.set("t", formatMonthParam(month));
   const categories = selectionCategories(selection);
   if (categories.size !== ALL_CATEGORIES.length) {
     params.set("cat", [...categories].sort().join(","));

@@ -11,7 +11,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { dateYear, projectGeoPath, type Project } from "../src/lib/schema";
-import { expectedOpeningYear } from "../src/lib/contract";
+import {
+  expectedOpeningMonth,
+  expectedOpeningYear,
+  monthIndex,
+} from "../src/lib/contract";
 import { lineMidpoint } from "../src/lib/geo";
 import { validateAll } from "./validate-data";
 
@@ -22,7 +26,7 @@ interface GeoFeature {
 }
 
 const root = process.cwd();
-const projects = validateAll(root);
+const { projects, deflators, contractors } = validateAll(root);
 
 const outDir = path.join(root, "public/data");
 fs.rmSync(outDir, { recursive: true, force: true });
@@ -32,6 +36,16 @@ fs.mkdirSync(path.join(outDir, "geo"), { recursive: true });
 fs.writeFileSync(
   path.join(outDir, "projects.json"),
   JSON.stringify({ generated: "build", projects }, null, 2),
+);
+
+// Reference tables for the delivery-performance rankings.
+fs.writeFileSync(
+  path.join(outDir, "deflators.json"),
+  JSON.stringify(deflators, null, 2),
+);
+fs.writeFileSync(
+  path.join(outDir, "contractors.json"),
+  JSON.stringify(contractors, null, 2),
 );
 
 // Per-country geometry with flattened lot properties.
@@ -66,12 +80,16 @@ for (const [country, countryProjects] of byCountry) {
         category: project.category,
         status: lot.status,
         lengthKm: lot.lengthKm,
-        // Numeric years for MapLibre filter expressions; null when unknown.
-        opened: lot.dates?.opened ? dateYear(lot.dates.opened) : null,
-        constructionStart: lot.dates?.constructionStart
-          ? dateYear(lot.dates.constructionStart)
-          : null,
+        // Absolute month indices (year*12 + month-1) for MapLibre filter
+        // expressions — the timeline steps one calendar month at a time.
+        // Named *Month so a stale year-based artifact cannot be misread as
+        // months. Null when unknown; a year-only date resolves to January.
+        openedMonth: monthIndex(lot.dates?.opened) ?? null,
+        constructionStartMonth: monthIndex(lot.dates?.constructionStart) ?? null,
         // Explicitly sourced date, else derived from the contract duration.
+        expectedOpeningMonth: expectedOpeningMonth(lot),
+        // Years kept alongside for anything reading coarse dates.
+        opened: lot.dates?.opened ? dateYear(lot.dates.opened) : null,
         expectedOpening: expectedOpeningYear(lot),
         /** Whether expectedOpening is derived rather than directly sourced. */
         expectedOpeningDerived: !lot.dates?.expectedOpening

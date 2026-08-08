@@ -1,0 +1,87 @@
+{
+  "note": "Canonical contractor identities for by-contractor rankings. src/lib/contractors.ts first normalizes a raw contractor string (cut a trailing ' — ' scope note, strip a trailing parenthetical, fold case and diacritics to a slug) and then looks it up here. Entries are only needed where normalization alone would split or merge firms incorrectly — everything else resolves heuristically. An entry with `members` is a joint venture: a lot is credited to the JV *and* to each member. Aliases are matched against the raw string, the em-dash-cut string and the parenthetical-stripped string, in that order, so `Webuild (Astaldi)` resolves to Astaldi before the parenthetical is discarded.",
+  "contractors": [
+    {
+      "id": "astaldi",
+      "name": "Astaldi",
+      "aliases": ["Astaldi SpA", "Webuild (Astaldi)"],
+      "note": "Webuild acquired a majority stake in Astaldi in 2020; Astaldi continues as a subsidiary, so contracts awarded to Astaldi stay under Astaldi rather than folding into Webuild."
+    },
+    {
+      "id": "webuild",
+      "name": "Webuild",
+      "aliases": ["Salini Impregilo"],
+      "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020 — same legal entity, so the two names are merged."
+    },
+    {
+      "id": "fcc-construccion",
+      "name": "FCC Construcción",
+      "aliases": ["FCC Construction", "FCC Construcción SA", "FCC"]
+    },
+    {
+      "id": "porr",
+      "name": "Porr",
+      "aliases": ["Porr Bau", "Porr Construct"]
+    },
+    {
+      "id": "euro-construct-trading-98",
+      "name": "Euro Construct Trading '98",
+      "aliases": ["Euroconstruct Trading '98", "EuroConstruct Trading '98"]
+    },
+    {
+      "id": "condotte",
+      "name": "Società Italiana per Condotte d'Acqua",
+      "aliases": ["Societa Italiana per Condotte D'Acqua", "Condotte"]
+    },
+    {
+      "id": "alpine-bau",
+      "name": "Alpine Bau",
+      "aliases": ["Alpine"]
+    },
+    {
+      "id": "impresa-pizzarotti",
+      "name": "Impresa Pizzarotti",
+      "aliases": ["Impresa Pizzarotti & C."]
+    },
+    {
+      "id": "alstom",
+      "name": "Alstom",
+      "aliases": ["Alstom Transport"]
+    },
+    {
+      "id": "arcada-company",
+      "name": "Arcada Company",
+      "aliases": ["Arcada"]
+    },
+    {
+      "id": "sa-pe-construct",
+      "name": "SA&PE Construct",
+      "aliases": ["SA&PE"]
+    },
+    {
+      "id": "cccf-bucuresti",
+      "name": "CCCF București",
+      "aliases": ["CCCF"]
+    },
+    {
+      "id": "cossi-construzioni",
+      "name": "Cossi Construzioni",
+      "aliases": ["Cossi"]
+    },
+    {
+      "id": "railworks",
+      "name": "RailWorks",
+      "members": [
+        "alstom",
+        "aktor",
+        "arcada-company",
+        "euro-construct-trading-98"
+      ],
+      "aliases": [
+        "RailWorks (Alstom – Aktor – Arcada – Euro Construct Trading '98)",
+        "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)"
+      ],
+      "note": "Consortium for the Brașov–Simeria rail rehabilitation. Listed with two spellings in the source data; the parenthetical is the member list rather than a scope note, so both raw strings are aliased explicitly."
+    }
+  ]
+}

@@ -1,8 +1,16 @@
-/** Time-slider playback speeds, in years advanced per second. */
-export const SPEED_STEPS = [0.5, 1, 2, 4, 8, 16] as const;
+/**
+ * Time-slider playback.
+ *
+ * The timeline advances one calendar month at a time, always landing on the
+ * first of the month: after 1 July 2015 the next point in time is 1 August
+ * 2015. Speeds are expressed in months advanced per second.
+ */
 
-/** Default: one year per second. */
-export const DEFAULT_SPEED_INDEX = 1;
+/** Playback speeds, in months advanced per second. */
+export const SPEED_STEPS = [1, 2, 3, 6, 12, 24, 48] as const;
+
+/** Default: 12 months per second — a year of network growth every second. */
+export const DEFAULT_SPEED_INDEX = 4;
 
 /** Speed for a slider index, clamped to the available steps. */
 export function speedFromIndex(index: number): number {
@@ -10,15 +18,33 @@ export function speedFromIndex(index: number): number {
   return SPEED_STEPS[i];
 }
 
-/** Tick delay for a playback speed (years per second). */
-export function intervalMsForSpeed(yearsPerSecond: number): number {
-  const safe = yearsPerSecond > 0 ? yearsPerSecond : SPEED_STEPS[DEFAULT_SPEED_INDEX];
-  return Math.round(1000 / safe);
+/** Never tick faster than this — beyond it the map cannot keep up anyway. */
+const MAX_TICKS_PER_SECOND = 20;
+
+export interface PlaybackTick {
+  /** Months to advance on each tick. */
+  stepMonths: number;
+  /** Delay between ticks, in milliseconds. */
+  intervalMs: number;
 }
 
-/** Compact label for a speed, e.g. "0.5" / "2" / "16". */
-export function formatSpeed(yearsPerSecond: number): string {
-  return Number.isInteger(yearsPerSecond)
-    ? String(yearsPerSecond)
-    : yearsPerSecond.toFixed(1);
+/**
+ * Timer shape for a speed.
+ *
+ * At the slower speeds this is one month per tick. Faster than
+ * MAX_TICKS_PER_SECOND it advances several months per tick instead of
+ * firing a timer every few milliseconds, which browsers throttle and which
+ * would re-render the map faster than it can paint. The product of step and
+ * rate always equals the requested months per second.
+ */
+export function playbackTick(monthsPerSecond: number): PlaybackTick {
+  const mps =
+    monthsPerSecond > 0 ? monthsPerSecond : SPEED_STEPS[DEFAULT_SPEED_INDEX];
+  const stepMonths = Math.max(1, Math.ceil(mps / MAX_TICKS_PER_SECOND));
+  return { stepMonths, intervalMs: Math.round((1000 * stepMonths) / mps) };
+}
+
+/** Compact label for a speed, e.g. "1" / "12" / "48". */
+export function formatSpeed(monthsPerSecond: number): string {
+  return String(monthsPerSecond);
 }
