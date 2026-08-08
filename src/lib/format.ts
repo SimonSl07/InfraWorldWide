@@ -17,6 +17,29 @@ export function formatMoney(m: Money): string {
   return `${symbol}${value}`;
 }
 
+/** Absolute month index (see contract.monthIndex) → "Jan 2021". */
+export function formatMonth(monthIdx: number, locale: string): string {
+  const year = Math.floor(monthIdx / 12);
+  const month = monthIdx - year * 12;
+  return new Intl.DateTimeFormat(locale, {
+    year: "numeric",
+    month: "short",
+    timeZone: "UTC",
+  }).format(new Date(Date.UTC(year, month, 1)));
+}
+
+/** Signed percentage with one decimal: "+38.3%", "−10.0%". */
+export function formatPercent(value: number): string {
+  const sign = value > 0 ? "+" : value < 0 ? "−" : "";
+  return `${sign}${Math.abs(value).toFixed(1)}%`;
+}
+
+/** Signed month count with a localized unit: "+46 mo", "−4 luni". */
+export function formatMonths(value: number, unit = "mo"): string {
+  const sign = value > 0 ? "+" : value < 0 ? "−" : "";
+  return `${sign}${Math.abs(value)} ${unit}`;
+}
+
 /** "2012-07-19" → "Jul 2012" style short date, year-only stays "2012". */
 export function formatDate(date: string, locale: string): string {
   const [y, m, d] = date.split("-").map(Number);
