@@ -133,6 +133,50 @@ export const projectSchema = z.object({
 });
 export type Project = z.infer<typeof projectSchema>;
 
+/**
+ * Price-index series used to express costs from different price years in
+ * comparable real terms, keyed by ISO currency code. `index` maps a year to
+ * the index level for that currency's reference area; the series only needs
+ * to be internally consistent, so any index (HICP, a construction cost
+ * index) can be substituted as long as the shape holds.
+ */
+export const deflatorSeriesSchema = z.object({
+  /** Reference area the series is measured for, e.g. "EA", "RO". */
+  geo: z.string().min(1),
+  label: localizedStringSchema,
+  /** Year → index level. Years outside the series are not deflatable. */
+  index: z.record(z.string().regex(/^\d{4}$/), z.number().positive()),
+});
+export type DeflatorSeries = z.infer<typeof deflatorSeriesSchema>;
+
+export const deflatorTableSchema = z.object({
+  /** Year the index is normalised to (documentation only — ratios are used). */
+  baseYear: z.number().int().min(1900).max(2100),
+  note: z.string().min(1),
+  sources: z.array(sourceSchema).min(1),
+  series: z.record(z.string().length(3), deflatorSeriesSchema),
+});
+export type DeflatorTable = z.infer<typeof deflatorTableSchema>;
+
+/**
+ * A canonical contractor. `members` marks the entry as a joint venture whose
+ * work is credited both to the JV and to each member firm.
+ */
+export const contractorEntrySchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(1),
+  aliases: z.array(z.string().min(1)).optional(),
+  members: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(2).optional(),
+  note: z.string().min(1).optional(),
+});
+export type ContractorEntry = z.infer<typeof contractorEntrySchema>;
+
+export const contractorRegistrySchema = z.object({
+  note: z.string().min(1),
+  contractors: z.array(contractorEntrySchema),
+});
+export type ContractorRegistry = z.infer<typeof contractorRegistrySchema>;
+
 /** Extract the year from a date string ("2012", "2012-06", "2012-06-15" → 2012). */
 export function dateYear(date: string): number {
   return parseInt(date.slice(0, 4), 10);

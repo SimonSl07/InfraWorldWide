@@ -18,7 +18,7 @@ export default async function MapPage({ params }: PageProps<"/[lang]/map">) {
 
   return (
     <Suspense>
-      <MapExplorer />
+      <MapExplorer locale={lang} />
     </Suspense>
   );
 }

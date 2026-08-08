@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest";
 import {
+  contractBaseline,
   contractMonths,
+  monthIndex,
   projectedCompletionYear,
   expectedOpeningYear,
 } from "./contract";
@@ -105,6 +107,66 @@ describe("expectedOpeningYear", () => {
       expectedOpeningYear(
         lot({ status: "cancelled", contract: { totalMonths: 24 }, dates: { constructionStart: "2020" } }),
       ),
+    ).toBeNull();
+  });
+});
+
+describe("contractBaseline", () => {
+  it("measures execution only from a construction start", () => {
+    expect(
+      contractBaseline(
+        lot({
+          dates: { constructionStart: "2022-01" },
+          contract: { designMonths: 6, executionMonths: 24 },
+        }),
+      ),
+    ).toEqual({ month: monthIndex("2024-01"), anchor: "constructionStart", months: 24 });
+  });
+
+  it("measures the full contracted clock from an award", () => {
+    expect(
+      contractBaseline(
+        lot({
+          dates: { tenderAwarded: "2021-07" },
+          contract: { designMonths: 6, executionMonths: 24 },
+        }),
+      ),
+    ).toEqual({ month: monthIndex("2024-01"), anchor: "tenderAwarded", months: 30 });
+  });
+
+  it("agrees on the deadline whichever anchor the data supports", () => {
+    // DEx16: signed Jul 2021, 6 design + 24 execution, construction from
+    // Jan 2022. Both routes must land on Jan 2024 — the old code added all
+    // 30 months to the construction start and produced Jul 2024.
+    const fromStart = contractBaseline(
+      lot({
+        dates: { constructionStart: "2022" },
+        contract: { designMonths: 6, executionMonths: 24 },
+      }),
+    );
+    const fromAward = contractBaseline(
+      lot({
+        dates: { tenderAwarded: "2021-07" },
+        contract: { designMonths: 6, executionMonths: 24 },
+      }),
+    );
+    expect(fromStart!.month).toBe(fromAward!.month);
+    expect(fromStart!.month).toBe(monthIndex("2024-01"));
+  });
+
+  it("falls back to a lone total hung on the construction start", () => {
+    expect(
+      contractBaseline(
+        lot({ dates: { constructionStart: "2020" }, contract: { totalMonths: 18 } }),
+      ),
+    ).toEqual({ month: monthIndex("2021-07"), anchor: "constructionStart", months: 18 });
+  });
+
+  it("returns null without a contract or without any anchor date", () => {
+    expect(contractBaseline(lot({ dates: { constructionStart: "2020" } }))).toBeNull();
+    expect(contractBaseline(lot({ contract: { executionMonths: 24 } }))).toBeNull();
+    expect(
+      contractBaseline(lot({ dates: { opened: "2020" }, contract: { guaranteeMonths: 60 } })),
     ).toBeNull();
   });
 });

@@ -5,29 +5,34 @@ import { useTranslations } from "next-intl";
 import {
   SPEED_STEPS,
   formatSpeed,
-  intervalMsForSpeed,
+  playbackTick,
   speedFromIndex,
 } from "@/lib/playback";
+import { fromMonthIndex } from "@/lib/map-filters";
+import { formatMonth } from "@/lib/format";
 
 interface TimeSliderProps {
-  year: number;
+  /** Absolute month index (year*12 + month-1). */
+  month: number;
   min: number;
   max: number;
   playing: boolean;
+  locale: string;
   /** Index into SPEED_STEPS. */
   speedIndex: number;
-  onYearChange: (year: number) => void;
+  onMonthChange: (month: number) => void;
   onPlayingChange: (playing: boolean) => void;
   onSpeedIndexChange: (index: number) => void;
 }
 
 export default function TimeSlider({
-  year,
+  month,
   min,
   max,
   playing,
+  locale,
   speedIndex,
-  onYearChange,
+  onMonthChange,
   onPlayingChange,
   onSpeedIndexChange,
 }: TimeSliderProps) {
@@ -40,13 +45,19 @@ export default function TimeSlider({
       if (intervalRef.current) clearInterval(intervalRef.current);
       return;
     }
+    const { stepMonths, intervalMs } = playbackTick(speed);
     intervalRef.current = setInterval(() => {
-      onYearChange(year >= max ? min : year + 1);
-    }, intervalMsForSpeed(speed));
+      // Land exactly on `max` before wrapping, so the last month is never
+      // skipped by a multi-month step.
+      onMonthChange(month >= max ? min : Math.min(max, month + stepMonths));
+    }, intervalMs);
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [playing, year, min, max, speed, onYearChange]);
+  }, [playing, month, min, max, speed, onMonthChange]);
+
+  const label = formatMonth(month, locale);
+  const bound = (i: number) => String(fromMonthIndex(i).year);
 
   return (
     <div className="flex items-center gap-3 bg-white/95 backdrop-blur rounded-xl shadow-lg px-4 py-3 border border-neutral-200">
@@ -63,22 +74,24 @@ export default function TimeSlider({
           type="range"
           min={min}
           max={max}
-          value={year}
-          onChange={(e) => onYearChange(Number(e.target.value))}
+          step={1}
+          value={month}
+          onChange={(e) => onMonthChange(Number(e.target.value))}
           className="w-40 sm:w-64 md:w-96 accent-neutral-900"
-          aria-label={t("year")}
+          aria-label={t("month")}
+          aria-valuetext={label}
         />
         <div className="flex justify-between text-[10px] text-neutral-400">
-          <span>{min}</span>
-          <span>{max}</span>
+          <span>{bound(min)}</span>
+          <span>{bound(max)}</span>
         </div>
       </div>
 
-      <div className="text-2xl font-bold tabular-nums w-20 text-center shrink-0">
-        {year}
+      <div className="text-lg font-bold tabular-nums w-28 text-center shrink-0">
+        {label}
       </div>
 
-      {/* playback speed */}
+      {/* playback speed, in months advanced per second */}
       <div className="flex flex-col gap-1 shrink-0 border-l border-neutral-200 pl-3">
         <input
           type="range"

@@ -1,5 +1,12 @@
 import { describe, it, expect } from "vitest";
-import { formatMoney, formatDate } from "./format";
+import {
+  formatMoney,
+  formatDate,
+  formatMonth,
+  formatMonths,
+  formatPercent,
+} from "./format";
+import { monthIndex } from "./contract";
 
 describe("formatMoney", () => {
   it("formats millions with currency symbols", () => {
@@ -24,5 +31,39 @@ describe("formatDate", () => {
   });
   it("formats full dates", () => {
     expect(formatDate("2012-07-19", "en")).toBe("Jul 19, 2012");
+  });
+});
+
+describe("formatMonth", () => {
+  it("renders an absolute month index", () => {
+    expect(formatMonth(monthIndex("2021-01")!, "en")).toBe("Jan 2021");
+    expect(formatMonth(monthIndex("2026-08")!, "en")).toBe("Aug 2026");
+  });
+  it("round-trips a year-only date to January", () => {
+    expect(formatMonth(monthIndex("1999")!, "en")).toBe("Jan 1999");
+  });
+});
+
+describe("formatPercent", () => {
+  it("signs overruns and underruns", () => {
+    expect(formatPercent(38.309)).toBe("+38.3%");
+    expect(formatPercent(-10)).toBe("−10.0%");
+  });
+  it("leaves zero unsigned", () => {
+    expect(formatPercent(0)).toBe("0.0%");
+  });
+});
+
+describe("formatMonths", () => {
+  it("signs slips", () => {
+    expect(formatMonths(46)).toBe("+46 mo");
+    expect(formatMonths(-4)).toBe("−4 mo");
+  });
+  it("leaves zero unsigned", () => {
+    expect(formatMonths(0)).toBe("0 mo");
+  });
+  it("takes a localized unit", () => {
+    expect(formatMonths(46, "luni")).toBe("+46 luni");
+    expect(formatMonths(-4, "luni")).toBe("−4 luni");
   });
 });

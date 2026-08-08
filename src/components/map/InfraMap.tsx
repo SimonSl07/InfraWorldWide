@@ -11,7 +11,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import type { Category } from "@/lib/schema";
 import { CATEGORY_COLORS, OPENFREEMAP_STYLE } from "@/lib/map-style";
 import {
-  buildYearFilters,
+  buildMonthFilters,
   shouldShowFuture,
   type CategoryStatusSelection,
 } from "@/lib/map-filters";
@@ -31,7 +31,8 @@ export interface LotFeatureProps {
 
 interface InfraMapProps {
   geojson: FeatureCollection;
-  year: number;
+  /** Absolute month index (year*12 + month-1). */
+  month: number;
   selection: CategoryStatusSelection;
   selectedLotId: string | null;
   onSelectLot: (props: LotFeatureProps | null) => void;
@@ -51,14 +52,15 @@ const HIT_WIDTH = 30;
 
 export default function InfraMap({
   geojson,
-  year,
+  month,
   selection,
   selectedLotId,
   onSelectLot,
 }: InfraMapProps) {
   const [cursor, setCursor] = useState<string>("grab");
 
-  const nowYear = new Date().getFullYear();
+  const nowDate = new Date();
+  const nowMonth = nowDate.getFullYear() * 12 + nowDate.getMonth();
 
   const colorExpr = useMemo(
     () =>
@@ -72,13 +74,13 @@ export default function InfraMap({
   );
 
   const filters = useMemo(
-    () => buildYearFilters(year, selection, nowYear),
-    [year, selection, nowYear],
+    () => buildMonthFilters(month, selection, nowMonth),
+    [month, selection, nowMonth],
   );
 
-  const showFuture = shouldShowFuture(year, nowYear);
+  const showFuture = shouldShowFuture(month, nowMonth);
 
-  // Point-marker variants of the year filters (bridges/tunnels get midpoint
+  // Point-marker variants of the month filters (bridges/tunnels get midpoint
   // markers in the data build so they're visible at country zoom).
   const pointFilters = useMemo(() => {
     const markerOnly = [

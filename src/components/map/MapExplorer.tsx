@@ -7,12 +7,13 @@ import type { FeatureCollection } from "geojson";
 import type { Project } from "@/lib/schema";
 import { MAP_STATUSES } from "@/lib/map-style";
 import {
-  computeMaxYear,
-  computeMinYear,
-  HARD_MIN_YEAR,
+  computeMaxMonth,
+  computeMinMonth,
+  HARD_MIN_MONTH,
   parseSelectionParam,
-  parseYearParam,
+  parseMonthParam,
   serializeMapParams,
+  toMonthIndex,
   type CategoryStatusSelection,
 } from "@/lib/map-filters";
 import {
@@ -25,19 +26,26 @@ import CategoryToggle from "./CategoryToggle";
 import LegendLine from "./LegendLine";
 import ProjectPanel from "./ProjectPanel";
 
-export default function MapExplorer() {
+export default function MapExplorer({ locale }: { locale: string }) {
   const t = useTranslations();
   const searchParams = useSearchParams();
-  const nowYear = new Date().getFullYear();
+  const now = new Date();
+  // The timeline steps whole months and always lands on the 1st.
+  const nowMonth = toMonthIndex(now.getFullYear(), now.getMonth() + 1);
   // Generous URL-parse ceiling; the slider's actual max follows the data.
-  const maxYearParam = nowYear + 15;
+  const maxMonthParam = nowMonth + 15 * 12;
 
-  const [year, setYear] = useState(() =>
-    parseYearParam(searchParams.get("year"), HARD_MIN_YEAR, maxYearParam, nowYear),
+  const [month, setMonth] = useState(() =>
+    parseMonthParam(searchParams.get("t"), HARD_MIN_MONTH, maxMonthParam, nowMonth),
   );
   const [playing, setPlaying] = useState(false);
   const [speedIndex, setSpeedIndex] = useState(() => {
-    const raw = Number(searchParams.get("speed"));
+    // Guard the null first: Number(null) is 0, which is a valid index, so
+    // a missing ?speed= would silently select the slowest speed instead of
+    // the default.
+    const param = searchParams.get("speed");
+    if (param === null) return DEFAULT_SPEED_INDEX;
+    const raw = Number(param);
     return Number.isInteger(raw) && raw >= 0 && raw < SPEED_STEPS.length
       ? raw
       : DEFAULT_SPEED_INDEX;
@@ -97,10 +105,10 @@ export default function MapExplorer() {
   // Keep the URL shareable without triggering Next.js navigation.
   useEffect(() => {
     const qs = serializeMapParams(
-      year,
+      month,
       selection,
       selected?.lotId ?? null,
-      nowYear,
+      nowMonth,
       speedIndex,
       DEFAULT_SPEED_INDEX,
     );
@@ -109,7 +117,7 @@ export default function MapExplorer() {
       "",
       `${window.location.pathname}${qs ? `?${qs}` : ""}`,
     );
-  }, [year, selection, selected, nowYear, speedIndex]);
+  }, [month, selection, selected, nowMonth, speedIndex]);
 
   const selectedProject = useMemo(
     () => projects.find((p) => p.id === selected?.projectId),
@@ -117,22 +125,22 @@ export default function MapExplorer() {
   );
 
   // Slider bounds follow the data (bridges from 1895; expected openings).
-  const minYear = useMemo(() => computeMinYear(geojson.features), [geojson]);
-  const maxYear = useMemo(
-    () => computeMaxYear(geojson.features, nowYear),
-    [geojson, nowYear],
+  const minMonth = useMemo(() => computeMinMonth(geojson.features), [geojson]);
+  const maxMonth = useMemo(
+    () => computeMaxMonth(geojson.features, nowMonth),
+    [geojson, nowMonth],
   );  const selectedLot = useMemo(
     () => selectedProject?.lots.find((l) => l.id === selected?.lotId),
     [selectedProject, selected],
   );
 
-  const handleYearChange = useCallback((y: number) => setYear(y), []);
+  const handleMonthChange = useCallback((m: number) => setMonth(m), []);
 
   return (
     <div className="relative h-[calc(100vh-3.5rem)]">
       <InfraMap
         geojson={geojson}
-        year={year}
+        month={month}
         selection={selection}
         selectedLotId={selected?.lotId ?? null}
         onSelectLot={setSelected}
@@ -146,12 +154,13 @@ export default function MapExplorer() {
       {/* bottom-center: time slider */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10">
         <TimeSlider
-          year={year}
-          min={minYear}
-          max={maxYear}
+          month={month}
+          min={minMonth}
+          max={maxMonth}
           playing={playing}
+          locale={locale}
           speedIndex={speedIndex}
-          onYearChange={handleYearChange}
+          onMonthChange={handleMonthChange}
           onPlayingChange={setPlaying}
           onSpeedIndexChange={setSpeedIndex}
         />

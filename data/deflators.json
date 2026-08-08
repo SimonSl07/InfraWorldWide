@@ -1,0 +1,90 @@
+{
+  "baseYear": 2015,
+  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes — src/lib/deflator.ts consumes any table in this shape.",
+  "sources": [
+    {
+      "title": "Eurostat — HICP annual data (average index and rate of change) [prc_hicp_aind]",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table"
+    }
+  ],
+  "series": {
+    "EUR": {
+      "geo": "EA",
+      "label": {
+        "en": "Euro area",
+        "ro": "Zona euro"
+      },
+      "index": {
+        "1996": 71.74,
+        "1997": 72.87,
+        "1998": 73.67,
+        "1999": 74.48,
+        "2000": 76.05,
+        "2001": 77.83,
+        "2002": 79.58,
+        "2003": 81.24,
+        "2004": 82.98,
+        "2005": 84.79,
+        "2006": 86.64,
+        "2007": 88.49,
+        "2008": 91.38,
+        "2009": 91.65,
+        "2010": 93.14,
+        "2011": 95.66,
+        "2012": 98.05,
+        "2013": 99.38,
+        "2014": 99.81,
+        "2015": 100,
+        "2016": 100.23,
+        "2017": 101.78,
+        "2018": 103.56,
+        "2019": 104.8,
+        "2020": 105.06,
+        "2021": 107.78,
+        "2022": 116.82,
+        "2023": 123.15,
+        "2024": 126.07,
+        "2025": 128.75
+      }
+    },
+    "RON": {
+      "geo": "RO",
+      "label": {
+        "en": "Romania",
+        "ro": "România"
+      },
+      "index": {
+        "1996": 3.25,
+        "1997": 8.29,
+        "1998": 13.19,
+        "1999": 19.23,
+        "2000": 28.01,
+        "2001": 37.66,
+        "2002": 46.14,
+        "2003": 53.18,
+        "2004": 59.51,
+        "2005": 64.9,
+        "2006": 69.19,
+        "2007": 72.58,
+        "2008": 78.33,
+        "2009": 82.7,
+        "2010": 87.73,
+        "2011": 92.84,
+        "2012": 95.98,
+        "2013": 99.04,
+        "2014": 100.41,
+        "2015": 100,
+        "2016": 98.93,
+        "2017": 100,
+        "2018": 104.08,
+        "2019": 108.15,
+        "2020": 110.67,
+        "2021": 115.21,
+        "2022": 129.06,
+        "2023": 141.64,
+        "2024": 149.91,
+        "2025": 160.06
+      }
+    }
+  }
+}
