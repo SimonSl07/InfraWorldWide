@@ -1,0 +1,173 @@
+{
+  "id": "bg-a3-struma",
+  "country": "bg",
+  "category": "highway",
+  "name": {
+    "en": "A3 Struma Motorway"
+  },
+  "description": {
+    "en": "A 172.8 km motorway in southwestern Bulgaria connecting Sofia to the Greece border at Kulata on Pan-European Corridor IV (European route E-79). The project comprises multiple construction lots completed between 2013 and 2024, with the Kresna Gorge bypass (Lot 3.2) under construction as of 2026. Route: Sofia–Pernik–Blagoevgrad–Kresna–Kulata."
+  },
+  "lots": [
+    {
+      "id": "dolna-dikanya-dupnitsa",
+      "name": {
+        "en": "Dolna Dikanya – Dupnitsa"
+      },
+      "status": "opened",
+      "lengthKm": 14.2,
+      "geometryRef": "dolna-dikanya-dupnitsa",
+      "dates": {
+        "constructionStart": "2011-09",
+        "opened": "2013-07"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "dupnitsa-blagoevgrad",
+      "name": {
+        "en": "Dupnitsa – Blagoevgrad"
+      },
+      "status": "opened",
+      "lengthKm": 33.9,
+      "geometryRef": "dupnitsa-blagoevgrad",
+      "dates": {
+        "constructionStart": "2013-02",
+        "opened": "2015-10"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "blagoevgrad-krupnik",
+      "name": {
+        "en": "Blagoevgrad – Krupnik"
+      },
+      "status": "opened",
+      "lengthKm": 12.6,
+      "geometryRef": "blagoevgrad-krupnik",
+      "dates": {
+        "constructionStart": "2017-08",
+        "opened": "2024-02-17"
+      },
+      "cost": {
+        "estimated": {
+          "amount": 186,
+          "currency": "BGN",
+          "year": 2017
+        },
+        "actual": {
+          "amount": 400,
+          "currency": "BGN",
+          "year": 2024
+        }
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "krupnik-kresna-bypass",
+      "name": {
+        "en": "Krupnik – Kresna (Kresna Gorge Bypass)"
+      },
+      "status": "under_construction",
+      "lengthKm": 15,
+      "geometryRef": "krupnik-kresna-bypass",
+      "dates": {
+        "constructionStart": "2026-02",
+        "expectedOpening": "2029-12"
+      },
+      "cost": {
+        "estimated": {
+          "amount": 570,
+          "currency": "BGN",
+          "year": 2026
+        }
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "kresna-sandanski",
+      "name": {
+        "en": "Kresna – Sandanski"
+      },
+      "status": "opened",
+      "lengthKm": 17.9,
+      "geometryRef": "kresna-sandanski",
+      "dates": {
+        "tenderAwarded": "2015-09-25",
+        "opened": "2018-12-17"
+      },
+      "cost": {
+        "actual": {
+          "amount": 281,
+          "currency": "BGN",
+          "year": 2018
+        }
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+      }
+    },
+    {
+      "id": "sandanski-kulata",
+      "name": {
+        "en": "Sandanski – Kulata"
+      },
+      "status": "opened",
+      "lengthKm": 40.5,
+      "geometryRef": "sandanski-kulata",
+      "dates": {
+        "constructionStart": "2012-04",
+        "opened": "2015-08"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — A3 motorway (Bulgaria)",
+      "url": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+    },
+    {
+      "title": "Wikipedia — Pernik, Bulgaria",
+      "url": "https://en.wikipedia.org/wiki/Pernik"
+    },
+    {
+      "title": "Wikipedia — Dupnitsa, Bulgaria",
+      "url": "https://en.wikipedia.org/wiki/Dupnitsa"
+    },
+    {
+      "title": "Wikipedia — Blagoevgrad, Bulgaria",
+      "url": "https://en.wikipedia.org/wiki/Blagoevgrad"
+    },
+    {
+      "title": "Wikipedia — Krupnik, Blagoevgrad Province",
+      "url": "https://en.wikipedia.org/wiki/Krupnik,_Blagoevgrad_Province"
+    },
+    {
+      "title": "Wikipedia — Kresna, Bulgaria",
+      "url": "https://en.wikipedia.org/wiki/Kresna"
+    },
+    {
+      "title": "Wikipedia — Sandanski, Bulgaria",
+      "url": "https://en.wikipedia.org/wiki/Sandanski"
+    },
+    {
+      "title": "Wikipedia — Kulata, Bulgaria",
+      "url": "https://en.wikipedia.org/wiki/Kulata"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

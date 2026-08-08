@@ -1,0 +1,67 @@
+{
+  "id": "bg-a6-europe",
+  "country": "bg",
+  "category": "highway",
+  "name": {
+    "en": "A6 Europe Motorway"
+  },
+  "description": {
+    "en": "The A6 Europe Motorway (formerly Kalotina motorway, renamed in 2018) connects Sofia, Bulgaria to Serbia at the Kalotina border crossing, spanning approximately 63 kilometers. Part of European route E80 and Pan-European Corridor X, facilitating cross-border trade. The project comprises multiple sections: Kalotina-Dragoman under contract to Strabag (tender awarded September 2017), Dragoman-Slivnitsa completed by GBS-Infrastructure (opened November 2020), and associated bypass infrastructure including the Sofia Northern Bypass (opened April 2016)."
+  },
+  "lots": [
+    {
+      "id": "kalotina-dragoman",
+      "name": {
+        "en": "Kalotina – Dragoman"
+      },
+      "status": "under_construction",
+      "lengthKm": 13.046,
+      "geometryRef": "kalotina-dragoman",
+      "dates": {
+        "tenderAwarded": "2017-09-13"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/Europe_motorway"
+      },
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "dragoman-slivnitsa",
+      "name": {
+        "en": "Dragoman – Slivnitsa"
+      },
+      "status": "opened",
+      "lengthKm": 17,
+      "geometryRef": "dragoman-slivnitsa",
+      "dates": {
+        "tenderAwarded": "2017-09-13",
+        "constructionStart": "2019-05",
+        "opened": "2020-11"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/Europe_motorway"
+      },
+      "contractors": [
+        {
+          "name": "GBS-Infrastructure",
+          "role": "builder"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Europe motorway",
+      "url": "https://en.wikipedia.org/wiki/Europe_motorway"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

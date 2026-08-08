@@ -1,0 +1,71 @@
+{
+  "id": "bg-a4-maritsa",
+  "country": "bg",
+  "category": "highway",
+  "name": {
+    "en": "A4 Maritsa Motorway"
+  },
+  "description": {
+    "en": "The Maritsa motorway (A4) is a 117 km route in southern Bulgaria connecting the Trakia motorway (A1) near Chirpan to the Turkish border at Kapitan Andreevo. It is part of Pan-European Corridor IV and European route E80. The motorway was completed in phases between October 2010 and October 2015, with EU co-funding for the western sections (Chirpan–Haskovo, Haskovo–Harmanli) and national financing for the eastern sections."
+  },
+  "lots": [
+    {
+      "id": "chirpan-haskovo",
+      "name": {
+        "en": "Chirpan – Haskovo"
+      },
+      "status": "opened",
+      "lengthKm": 43,
+      "geometryRef": "chirpan-haskovo",
+      "dates": {
+        "opened": "2015-10-29"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/Maritsa_motorway"
+      }
+    },
+    {
+      "id": "haskovo-harmanli",
+      "name": {
+        "en": "Haskovo – Harmanli"
+      },
+      "status": "opened",
+      "lengthKm": 34,
+      "geometryRef": "haskovo-harmanli",
+      "dates": {
+        "constructionStart": "2011-07",
+        "opened": "2015-05-28"
+      },
+      "contract": {
+        "executionMonths": 46,
+        "totalMonths": 46,
+        "noticeUrl": "https://en.wikipedia.org/wiki/Maritsa_motorway"
+      }
+    },
+    {
+      "id": "harmanli-lyubimets",
+      "name": {
+        "en": "Harmanli – Lyubimets"
+      },
+      "status": "opened",
+      "lengthKm": 31,
+      "geometryRef": "harmanli-lyubimets",
+      "dates": {
+        "opened": "2010-10"
+      },
+      "contract": {
+        "noticeUrl": "https://en.wikipedia.org/wiki/Maritsa_motorway"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Maritsa motorway",
+      "url": "https://en.wikipedia.org/wiki/Maritsa_motorway"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}
