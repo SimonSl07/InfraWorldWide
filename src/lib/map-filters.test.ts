@@ -1,4 +1,5 @@
 import { describe, it, expect } from "vitest";
+import { featureFilter } from "@maplibre/maplibre-gl-style-spec";
 import {
   buildCategoryFilter,
   buildSelectionFilter,
@@ -108,6 +109,58 @@ describe("buildMonthFilters", () => {
     const openedJson = JSON.stringify(buildMonthFilters(earlier, cats, NOW).opened);
     expect(openedJson).toContain(`["<=",["get","expectedOpeningMonth"],${earlier}]`);
     expect(openedJson).not.toContain(`["<=",["get","expectedOpeningMonth"],${later}]`);
+  });
+});
+
+/**
+ * Lots old enough that no construction start could be sourced must simply
+ * appear the month they opened — never as a "planned" road beforehand. 19 of
+ * the lots in the data have `opened` and no `constructionStart`, so this is the
+ * normal case for historic motorway sections, not an edge case.
+ */
+describe("a lot with an opening date but no construction start", () => {
+  const cats = fullSelection();
+  const NOW = toMonthIndex(2026, 8);
+  const OPENED = toMonthIndex(1984, 1);
+  const historic = {
+    type: 2 as const,
+    properties: {
+      category: "highway",
+      status: "opened",
+      openedMonth: OPENED,
+      constructionStartMonth: null,
+    },
+  };
+  const matches = (spec: unknown, feature: unknown) =>
+    featureFilter(spec as never).filter({ zoom: 6 } as never, feature as never);
+
+  it("is on no layer at all before it opened", () => {
+    const f = buildMonthFilters(toMonthIndex(1980, 1), cats, NOW);
+    expect(matches(f.opened, historic)).toBe(false);
+    expect(matches(f.underConstruction, historic)).toBe(false);
+    expect(matches(f.future, historic)).toBe(false);
+  });
+
+  it("appears as opened from the month it opened", () => {
+    for (const month of [OPENED, toMonthIndex(1990, 1), NOW]) {
+      const f = buildMonthFilters(month, cats, NOW);
+      expect(matches(f.opened, historic)).toBe(true);
+      expect(matches(f.future, historic)).toBe(false);
+    }
+  });
+
+  it("still shows a genuinely planned lot, which has neither date", () => {
+    const planned = {
+      type: 2 as const,
+      properties: {
+        category: "railway",
+        status: "planned",
+        openedMonth: null,
+        constructionStartMonth: null,
+      },
+    };
+    const f = buildMonthFilters(NOW, cats, NOW);
+    expect(matches(f.future, planned)).toBe(true);
   });
 });
 

@@ -205,14 +205,29 @@ export function buildMonthFilters(
     ["!", effectivelyOpened],
   ] as unknown as FilterSpecification;
 
+  // A missing construction start means two different things. For a lot we know
+  // opened, it is simply unrecorded history — common for motorway sections old
+  // enough that no start date was ever published — and the lot must appear the
+  // month it opened, never as a planned road for the decades before. Only when
+  // neither date is known is the lot genuinely not yet started.
   const future = [
     "all",
     notStartedSelection,
     ["!", effectivelyOpened],
     [
       "any",
-      ["==", ["get", "constructionStartMonth"], null],
-      [">", ["get", "constructionStartMonth"], month],
+      [
+        "all",
+        ["==", ["get", "constructionStartMonth"], null],
+        ["==", ["get", "openedMonth"], null],
+      ],
+      // The null check has to gate the comparison: ">" raises on a null
+      // operand rather than returning false.
+      [
+        "all",
+        ["!=", ["get", "constructionStartMonth"], null],
+        [">", ["get", "constructionStartMonth"], month],
+      ],
     ],
   ] as unknown as FilterSpecification;
 
