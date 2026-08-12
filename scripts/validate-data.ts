@@ -9,10 +9,13 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   contractorRegistrySchema,
+  countryGeoPath,
+  countryTableSchema,
   deflatorTableSchema,
   projectSchema,
   projectGeoPath,
   type ContractorRegistry,
+  type CountryTable,
   type DeflatorTable,
   type Project,
 } from "../src/lib/schema";
@@ -94,6 +97,60 @@ function checkContractors(
   }
 }
 
+/**
+ * Countries must line up in three places: the projects, the reference table
+ * and the outline polygons. A country with projects but no outline is
+ * unclickable on the map; one with an outline but no reference row renders a
+ * panel with blank densities. Both directions are checked so neither can
+ * drift silently when a country is added.
+ */
+function checkCountries(
+  table: CountryTable | null,
+  projects: Project[],
+  root: string,
+  errors: string[],
+) {
+  const used = [...new Set(projects.map((p) => p.country))].sort();
+
+  for (const country of used) {
+    if (table && !table.countries[country]) {
+      errors.push(
+        `data/countries.json: no entry for "${country}", which has projects`,
+      );
+    }
+    const rel = countryGeoPath(country);
+    const file = path.join(root, rel);
+    if (!fs.existsSync(file)) {
+      errors.push(
+        `${rel}: missing outline for "${country}" — run scripts/fetch-country-outlines.ts`,
+      );
+      continue;
+    }
+    let geo: { features?: Array<{ geometry?: { type?: string } | null }> };
+    try {
+      geo = JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch (e) {
+      errors.push(`${rel}: invalid GeoJSON — ${(e as Error).message}`);
+      continue;
+    }
+    const polygons = (geo.features ?? []).filter(
+      (f) =>
+        f.geometry?.type === "Polygon" || f.geometry?.type === "MultiPolygon",
+    );
+    if (polygons.length === 0) {
+      errors.push(`${rel}: no Polygon/MultiPolygon feature`);
+    }
+  }
+
+  for (const country of Object.keys(table?.countries ?? {})) {
+    if (!used.includes(country)) {
+      errors.push(
+        `data/countries.json: entry "${country}" has no projects — remove it or add its projects`,
+      );
+    }
+  }
+}
+
 function* walk(dir: string): Generator<string> {
   if (!fs.existsSync(dir)) return;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -107,6 +164,7 @@ export interface ValidationResult {
   projects: Project[];
   deflators: DeflatorTable | null;
   contractors: ContractorRegistry | null;
+  countries: CountryTable | null;
   errors: string[];
 }
 
@@ -133,6 +191,13 @@ export function collectErrors(root: string): ValidationResult {
   if (contractors) {
     checkContractors(contractors, "data/contractors.json", errors);
   }
+
+  const countries = readReferenceFile<CountryTable>(
+    root,
+    "data/countries.json",
+    countryTableSchema,
+    errors,
+  );
 
   for (const file of walk(projectsDir)) {
     const rel = path.relative(root, file);
@@ -227,27 +292,31 @@ export function collectErrors(root: string): ValidationResult {
     projects.push(project);
   }
 
-  return { projects, deflators, contractors, errors };
+  checkCountries(countries, projects, root, errors);
+
+  return { projects, deflators, contractors, countries, errors };
 }
 
 export interface ValidatedData {
   projects: Project[];
   deflators: DeflatorTable;
   contractors: ContractorRegistry;
+  countries: CountryTable;
 }
 
 export function validateAll(root: string): ValidatedData {
-  const { projects, deflators, contractors, errors } = collectErrors(root);
-  if (errors.length > 0 || !deflators || !contractors) {
+  const { projects, deflators, contractors, countries, errors } =
+    collectErrors(root);
+  if (errors.length > 0 || !deflators || !contractors || !countries) {
     console.error(`Data validation failed with ${errors.length} error(s):`);
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
   }
 
   console.log(
-    `✓ ${projects.length} project(s), ${Object.keys(deflators.series).length} deflator series, ${contractors.contractors.length} contractor entries validated`,
+    `✓ ${projects.length} project(s), ${Object.keys(deflators.series).length} deflator series, ${contractors.contractors.length} contractor entries, ${Object.keys(countries.countries).length} countries validated`,
   );
-  return { projects, deflators, contractors };
+  return { projects, deflators, contractors, countries };
 }
 
 if (process.argv[1] && process.argv[1].endsWith("validate-data.ts")) {

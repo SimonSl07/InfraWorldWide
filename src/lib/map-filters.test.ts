@@ -13,6 +13,8 @@ import {
   isStatusActive,
   parseMonthParam,
   parseCategoriesParam,
+  parseCompareParam,
+  parseCountryParam,
   parseSelectionParam,
   selectionCategories,
   serializeMapParams,
@@ -268,42 +270,92 @@ describe("parseCategoriesParam", () => {
 
 describe("serializeMapParams", () => {
   const allCats = fullSelection();
+  const NOW = toMonthIndex(2026, 8);
 
   it("is empty at default state", () => {
-    expect(serializeMapParams(toMonthIndex(2026, 8), allCats, null, toMonthIndex(2026, 8))).toBe("");
+    expect(
+      serializeMapParams({
+        month: NOW,
+        selection: allCats,
+        defaultMonth: NOW,
+      }),
+    ).toBe("");
   });
   it("includes the month as YYYY-MM when not default", () => {
     expect(
-      serializeMapParams(toMonthIndex(2005, 3), allCats, null, toMonthIndex(2026, 8)),
+      serializeMapParams({
+        month: toMonthIndex(2005, 3),
+        selection: allCats,
+        defaultMonth: NOW,
+      }),
     ).toBe("t=2005-03");
   });
   it("includes sorted categories when a subset is active", () => {
-    const qs = serializeMapParams(
-      toMonthIndex(2026, 8),
-      fullSelection(["railway", "highway"]),
-      null,
-      toMonthIndex(2026, 8),
-    );
+    const qs = serializeMapParams({
+      month: NOW,
+      selection: fullSelection(["railway", "highway"]),
+      defaultMonth: NOW,
+    });
     expect(qs).toBe("cat=highway%2Crailway");
   });
   it("includes selection", () => {
-    expect(serializeMapParams(toMonthIndex(2026, 8), allCats, "lot-1", toMonthIndex(2026, 8))).toBe("sel=lot-1");
+    expect(
+      serializeMapParams({
+        month: NOW,
+        selection: allCats,
+        selectedLotId: "lot-1",
+        defaultMonth: NOW,
+      }),
+    ).toBe("sel=lot-1");
+  });
+  it("includes a selected country", () => {
+    expect(
+      serializeMapParams({
+        month: NOW,
+        selection: allCats,
+        selectedCountry: "ro",
+        defaultMonth: NOW,
+      }),
+    ).toBe("c=ro");
+  });
+  // The two selections share the panel, so they can never both be live —
+  // writing both would produce a link that restores an impossible state.
+  it("prefers the lot when a country is somehow also set", () => {
+    expect(
+      serializeMapParams({
+        month: NOW,
+        selection: allCats,
+        selectedLotId: "lot-1",
+        selectedCountry: "ro",
+        defaultMonth: NOW,
+      }),
+    ).toBe("sel=lot-1");
   });
   it("includes the playback speed only when it differs from the default", () => {
-    const now = toMonthIndex(2026, 8);
-    expect(serializeMapParams(now, allCats, null, now, 1, 1)).toBe("");
-    expect(serializeMapParams(now, allCats, null, now, 4, 1)).toBe("speed=4");
+    const base = { month: NOW, selection: allCats, defaultMonth: NOW };
+    expect(
+      serializeMapParams({ ...base, speedIndex: 1, defaultSpeedIndex: 1 }),
+    ).toBe("");
+    expect(
+      serializeMapParams({ ...base, speedIndex: 4, defaultSpeedIndex: 1 }),
+    ).toBe("speed=4");
   });
   it("omits speed when not provided", () => {
-    expect(serializeMapParams(toMonthIndex(2026, 8), allCats, null, toMonthIndex(2026, 8))).toBe("");
+    expect(
+      serializeMapParams({
+        month: NOW,
+        selection: allCats,
+        defaultMonth: NOW,
+      }),
+    ).toBe("");
   });
   it("round-trips through the parsers", () => {
-    const qs = serializeMapParams(
-      toMonthIndex(2005, 3),
-      fullSelection(["bridge"]),
-      null,
-      toMonthIndex(2026, 8),
-    );
+    const qs = serializeMapParams({
+      month: toMonthIndex(2005, 3),
+      selection: fullSelection(["bridge"]),
+      selectedCountry: "bg",
+      defaultMonth: NOW,
+    });
     const params = new URLSearchParams(qs);
     expect(
       parseMonthParam(
@@ -314,6 +366,49 @@ describe("serializeMapParams", () => {
       ),
     ).toBe(toMonthIndex(2005, 3));
     expect([...parseCategoriesParam(params.get("cat"))]).toEqual(["bridge"]);
+    expect(parseCountryParam(params.get("c"))).toBe("bg");
+  });
+});
+
+describe("parseCompareParam", () => {
+  const known = ["ro", "bg", "rs"];
+
+  it("keeps the order given in the link", () => {
+    expect(parseCompareParam("rs,ro", known, 3)).toEqual(["rs", "ro"]);
+  });
+
+  it("is empty for a missing or blank param", () => {
+    expect(parseCompareParam(null, known, 3)).toEqual([]);
+    expect(parseCompareParam("", known, 3)).toEqual([]);
+  });
+
+  it("tolerates whitespace and case", () => {
+    expect(parseCompareParam(" RO , bg ", known, 3)).toEqual(["ro", "bg"]);
+  });
+
+  it("drops codes with no data rather than rendering an empty column", () => {
+    expect(parseCompareParam("ro,xx,bg", known, 3)).toEqual(["ro", "bg"]);
+  });
+
+  it("collapses duplicates", () => {
+    expect(parseCompareParam("ro,ro,bg", known, 3)).toEqual(["ro", "bg"]);
+  });
+
+  it("caps a hand-edited link at the maximum", () => {
+    expect(parseCompareParam("ro,bg,rs", known, 2)).toEqual(["ro", "bg"]);
+  });
+});
+
+describe("parseCountryParam", () => {
+  it("accepts a two-letter code in any case", () => {
+    expect(parseCountryParam("ro")).toBe("ro");
+    expect(parseCountryParam("RO")).toBe("ro");
+  });
+
+  it("rejects anything else", () => {
+    for (const raw of [null, "", "rou", "r", "r1", "ro,bg"]) {
+      expect(parseCountryParam(raw)).toBeNull();
+    }
   });
 });
 
@@ -444,12 +539,24 @@ describe("parseSelectionParam", () => {
 
 describe("serializeMapParams with status subsets", () => {
   it("omits ?st= when every category shows every status", () => {
-    expect(serializeMapParams(toMonthIndex(2026, 8), fullSelection(), null, toMonthIndex(2026, 8))).toBe("");
+    expect(
+      serializeMapParams({
+        month: toMonthIndex(2026, 8),
+        selection: fullSelection(),
+        defaultMonth: toMonthIndex(2026, 8),
+      }),
+    ).toBe("");
   });
 
   it("writes only the narrowed categories, in MAP_STATUSES order", () => {
     const sel = toggleStatus(fullSelection(), "railway", "tendered");
-    const params = new URLSearchParams(serializeMapParams(toMonthIndex(2026, 8), sel, null, toMonthIndex(2026, 8)));
+    const params = new URLSearchParams(
+      serializeMapParams({
+        month: toMonthIndex(2026, 8),
+        selection: sel,
+        defaultMonth: toMonthIndex(2026, 8),
+      }),
+    );
     expect(params.get("cat")).toBe(null);
     expect(params.get("st")).toBe("railway:opened.under_construction.planned");
   });
@@ -461,7 +568,12 @@ describe("serializeMapParams with status subsets", () => {
       "tendered",
     );
     const params = new URLSearchParams(
-      serializeMapParams(2005, sel, "lot-1", toMonthIndex(2026, 8)),
+      serializeMapParams({
+        month: 2005,
+        selection: sel,
+        selectedLotId: "lot-1",
+        defaultMonth: toMonthIndex(2026, 8),
+      }),
     );
     const back = parseSelectionParam(params.get("cat"), params.get("st"));
     expect(selectionCategories(back)).toEqual(selectionCategories(sel));

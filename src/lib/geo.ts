@@ -25,16 +25,15 @@ function* positions(geometry: GeoJSON.Geometry): Generator<Position> {
   }
 }
 
-/** Bounding box of a feature collection; null when empty. */
-export function geojsonBounds(fc: FeatureCollection): BBox | null {
+/** Bounding box of any number of geometries; null when none has coordinates. */
+function boundsOf(geometries: Iterable<GeoJSON.Geometry>): BBox | null {
   let minLng = Infinity,
     minLat = Infinity,
     maxLng = -Infinity,
     maxLat = -Infinity;
   let found = false;
-  for (const feature of fc.features) {
-    if (!feature.geometry) continue;
-    for (const [lng, lat] of positions(feature.geometry)) {
+  for (const geometry of geometries) {
+    for (const [lng, lat] of positions(geometry)) {
       found = true;
       if (lng < minLng) minLng = lng;
       if (lat < minLat) minLat = lat;
@@ -43,6 +42,20 @@ export function geojsonBounds(fc: FeatureCollection): BBox | null {
     }
   }
   return found ? [minLng, minLat, maxLng, maxLat] : null;
+}
+
+/** Bounding box of a single geometry; null when it has no coordinates. */
+export function geometryBounds(
+  geometry: GeoJSON.Geometry | null | undefined,
+): BBox | null {
+  return geometry ? boundsOf([geometry]) : null;
+}
+
+/** Bounding box of a feature collection; null when empty. */
+export function geojsonBounds(fc: FeatureCollection): BBox | null {
+  return boundsOf(
+    fc.features.flatMap((f) => (f.geometry ? [f.geometry] : [])),
+  );
 }
 
 /** Features belonging to one project. */

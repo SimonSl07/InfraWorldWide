@@ -1,6 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { ContractorRegistry, DeflatorTable, Project } from "./schema";
+import type {
+  ContractorRegistry,
+  CountryTable,
+  DeflatorTable,
+  Project,
+} from "./schema";
 
 /** Server-side readers for the build-time data artifacts in public/data. */
 
@@ -21,6 +26,11 @@ export function getDeflators(): DeflatorTable {
 /** Canonical contractor identities used by the by-contractor rankings. */
 export function getContractors(): ContractorRegistry {
   return readArtifact<ContractorRegistry>("contractors.json");
+}
+
+/** Area and population per country, used for the density figures. */
+export function getCountryTable(): CountryTable {
+  return readArtifact<CountryTable>("countries.json");
 }
 
 export function getProject(id: string): Project | undefined {
