@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
+  formatKm,
   formatMoney,
   formatDate,
   formatMonth,
@@ -41,6 +42,17 @@ describe("formatMonth", () => {
   });
   it("round-trips a year-only date to January", () => {
     expect(formatMonth(monthIndex("1999")!, "en")).toBe("Jan 1999");
+  });
+});
+
+describe("formatKm", () => {
+  it("rounds to whole kilometres and groups thousands", () => {
+    expect(formatKm(1141.6, "en")).toBe("1,142 km");
+    expect(formatKm(0.4, "en")).toBe("0 km");
+  });
+
+  it("groups by locale", () => {
+    expect(formatKm(1142, "ro")).toBe("1.142 km");
   });
 });
 

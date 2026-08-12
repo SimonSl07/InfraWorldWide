@@ -10,6 +10,7 @@ import {
   computeMaxMonth,
   computeMinMonth,
   HARD_MIN_MONTH,
+  parseCountryParam,
   parseSelectionParam,
   parseMonthParam,
   serializeMapParams,
@@ -20,11 +21,15 @@ import {
   DEFAULT_SPEED_INDEX,
   SPEED_STEPS,
 } from "@/lib/playback";
+import { rankCountries, findCountry } from "@/lib/country-stats";
+import { openedKmByDecade } from "@/lib/country-growth";
+import type { CountryTable } from "@/lib/schema";
 import InfraMap, { type LotFeatureProps } from "./InfraMap";
 import TimeSlider from "./TimeSlider";
 import CategoryToggle from "./CategoryToggle";
 import LegendLine from "./LegendLine";
 import ProjectPanel from "./ProjectPanel";
+import CountryPanel from "./CountryPanel";
 
 export default function MapExplorer({ locale }: { locale: string }) {
   const t = useTranslations();
@@ -54,6 +59,9 @@ export default function MapExplorer({ locale }: { locale: string }) {
     parseSelectionParam(searchParams.get("cat"), searchParams.get("st")),
   );
   const [selected, setSelected] = useState<LotFeatureProps | null>(null);
+  const [selectedCountry, setSelectedCountry] = useState<string | null>(() =>
+    parseCountryParam(searchParams.get("c")),
+  );
   // Captured at mount: the URL-sync effect below rewrites the query string
   // before the async data load finishes, which would otherwise drop ?sel=.
   const [initialSelId] = useState(() => searchParams.get("sel"));
@@ -62,7 +70,12 @@ export default function MapExplorer({ locale }: { locale: string }) {
     type: "FeatureCollection",
     features: [],
   });
+  const [countryOutlines, setCountryOutlines] = useState<FeatureCollection>({
+    type: "FeatureCollection",
+    features: [],
+  });
   const [projects, setProjects] = useState<Project[]>([]);
+  const [countryTable, setCountryTable] = useState<CountryTable | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -78,6 +91,12 @@ export default function MapExplorer({ locale }: { locale: string }) {
       const idx = (await fetch("/data/projects.json").then((r) =>
         r.json(),
       )) as { projects: Project[] };
+      const outlines = (await fetch("/data/geo/countries.geojson").then((r) =>
+        r.json(),
+      )) as FeatureCollection;
+      const table = (await fetch("/data/countries.json").then((r) =>
+        r.json(),
+      )) as CountryTable;
       if (cancelled) return;
       const merged: FeatureCollection = {
         type: "FeatureCollection",
@@ -85,6 +104,19 @@ export default function MapExplorer({ locale }: { locale: string }) {
       };
       setGeojson(merged);
       setProjects(idx.projects);
+      setCountryOutlines(outlines);
+      setCountryTable(table);
+
+      // A ?c= code that is not in the data has nothing to select: the panel
+      // would never mount, so there would be no × to press, while every lot
+      // on the map stayed dimmed against a country that isn't there. Drop it
+      // now that we know which countries actually exist.
+      setSelectedCountry((current) =>
+        current &&
+        !outlines.features.some((f) => f.properties?.country === current)
+          ? null
+          : current,
+      );
 
       // Restore a shared ?sel= link once geometry is available.
       if (initialSelId) {
@@ -93,6 +125,9 @@ export default function MapExplorer({ locale }: { locale: string }) {
         );
         if (feature?.properties) {
           setSelected(feature.properties as unknown as LotFeatureProps);
+          // A link carrying both ?sel= and ?c= must not open both panels
+          // into the same corner. The lot wins, as it does in the URL.
+          setSelectedCountry(null);
         }
       }
     }
@@ -104,25 +139,58 @@ export default function MapExplorer({ locale }: { locale: string }) {
 
   // Keep the URL shareable without triggering Next.js navigation.
   useEffect(() => {
-    const qs = serializeMapParams(
+    const qs = serializeMapParams({
       month,
       selection,
-      selected?.lotId ?? null,
-      nowMonth,
+      selectedLotId: selected?.lotId ?? null,
+      selectedCountry,
+      defaultMonth: nowMonth,
       speedIndex,
-      DEFAULT_SPEED_INDEX,
-    );
+      defaultSpeedIndex: DEFAULT_SPEED_INDEX,
+    });
     window.history.replaceState(
       null,
       "",
       `${window.location.pathname}${qs ? `?${qs}` : ""}`,
     );
-  }, [month, selection, selected, nowMonth, speedIndex]);
+  }, [month, selection, selected, selectedCountry, nowMonth, speedIndex]);
 
   const selectedProject = useMemo(
     () => projects.find((p) => p.id === selected?.projectId),
     [projects, selected],
   );
+
+  // Recomputed as the timeline moves: the panel reports the map's state in
+  // the viewed month, ranks included.
+  const ranked = useMemo(
+    () =>
+      countryTable
+        ? rankCountries(projects, countryTable.countries, month, nowMonth)
+        : [],
+    [projects, countryTable, month, nowMonth],
+  );
+  const selectedCountryStats = useMemo(
+    () => (selectedCountry ? findCountry(ranked, selectedCountry) : null),
+    [ranked, selectedCountry],
+  );
+  // Growth is history, not a function of the viewed month, so it is keyed
+  // only on the country.
+  const selectedCountryGrowth = useMemo(
+    () =>
+      selectedCountry ? openedKmByDecade(projects, selectedCountry) : [],
+    [projects, selectedCountry],
+  );
+
+  // One selection at a time — both panels occupy the same corner.
+  const handleSelectLot = useCallback((props: LotFeatureProps | null) => {
+    setSelected(props);
+    if (props) setSelectedCountry(null);
+  }, []);
+
+  const handleSelectCountry = useCallback((code: string | null) => {
+    setSelectedCountry(code);
+    if (code) setSelected(null);
+  }, []);
 
   // Slider bounds follow the data (bridges from 1895; expected openings).
   const minMonth = useMemo(() => computeMinMonth(geojson.features), [geojson]);
@@ -140,10 +208,13 @@ export default function MapExplorer({ locale }: { locale: string }) {
     <div className="relative h-[calc(100vh-3.5rem)]">
       <InfraMap
         geojson={geojson}
+        countries={countryOutlines}
         month={month}
         selection={selection}
         selectedLotId={selected?.lotId ?? null}
-        onSelectLot={setSelected}
+        selectedCountry={selectedCountry}
+        onSelectLot={handleSelectLot}
+        onSelectCountry={handleSelectCountry}
       />
 
       {/* top-left: category filters */}
@@ -185,6 +256,16 @@ export default function MapExplorer({ locale }: { locale: string }) {
           project={selectedProject}
           lot={selectedLot}
           onClose={() => setSelected(null)}
+        />
+      )}
+
+      {/* right: selected country panel (never both — see handleSelectLot) */}
+      {selectedCountryStats && (
+        <CountryPanel
+          country={selectedCountryStats}
+          growth={selectedCountryGrowth}
+          month={month}
+          onClose={() => setSelectedCountry(null)}
         />
       )}
     </div>

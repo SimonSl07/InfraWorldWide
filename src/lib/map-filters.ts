@@ -349,15 +349,57 @@ export function parseSelectionParam(
   return selection;
 }
 
+/** Parse a ?c=ro param; anything that is not a two-letter code is ignored. */
+export function parseCountryParam(raw: string | null): string | null {
+  if (!raw) return null;
+  const code = raw.toLowerCase();
+  return /^[a-z]{2}$/.test(code) ? code : null;
+}
+
+/**
+ * Parse a ?compare=ro,bg param for the country comparison.
+ *
+ * A shared link is untrusted input: codes not in `known` are dropped rather
+ * than rendering an empty column, duplicates collapse rather than comparing
+ * a country with itself, and the list is capped so a hand-edited URL cannot
+ * push the table off the page.
+ */
+export function parseCompareParam(
+  raw: string | null,
+  known: Iterable<string>,
+  max: number,
+): string[] {
+  const available = new Set(known);
+  const codes = (raw ?? "")
+    .split(",")
+    .map((c) => c.trim().toLowerCase())
+    .filter((c) => available.has(c));
+  return [...new Set(codes)].slice(0, max);
+}
+
+/** Everything the map's query string can carry. */
+export interface MapParams {
+  month: number;
+  selection: CategoryStatusSelection;
+  /** The month the URL omits, i.e. what the map opens on. */
+  defaultMonth: number;
+  selectedLotId?: string | null;
+  /** ISO 3166-1 alpha-2, lowercase. */
+  selectedCountry?: string | null;
+  speedIndex?: number;
+  defaultSpeedIndex?: number;
+}
+
 /** Serialize map state back to a query string (empty string when default). */
-export function serializeMapParams(
-  month: number,
-  selection: CategoryStatusSelection,
-  selectedLotId: string | null,
-  defaultMonth: number,
-  speedIndex?: number,
-  defaultSpeedIndex?: number,
-): string {
+export function serializeMapParams({
+  month,
+  selection,
+  defaultMonth,
+  selectedLotId,
+  selectedCountry,
+  speedIndex,
+  defaultSpeedIndex,
+}: MapParams): string {
   const params = new URLSearchParams();
   if (month !== defaultMonth) params.set("t", formatMonthParam(month));
   const categories = selectionCategories(selection);
@@ -370,6 +412,9 @@ export function serializeMapParams(
     .sort();
   if (partial.length > 0) params.set("st", partial.join(","));
   if (selectedLotId) params.set("sel", selectedLotId);
+  // A lot and a country are never selected at once — they share the panel —
+  // so the two params cannot both appear.
+  else if (selectedCountry) params.set("c", selectedCountry);
   if (
     speedIndex !== undefined &&
     defaultSpeedIndex !== undefined &&

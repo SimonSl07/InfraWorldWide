@@ -108,4 +108,55 @@ describe("message catalogues", () => {
     const missing = required.filter((k) => !enFlat.has(k) || !roFlat.has(k));
     expect(missing).toEqual([]);
   });
+
+  it("covers every key the country panel and pages need", () => {
+    const required = [
+      "panelKicker",
+      "asOf",
+      "close",
+      "emptyMonth",
+      "building",
+      "planned",
+      "plannedTitle",
+      "totalOpened",
+      "underConstruction",
+      "projects",
+      "decade",
+      "lots",
+      "perArea",
+      "perCapita",
+      "rankHelp",
+      "densityBasis",
+      "growthSparkline",
+      "seeMore",
+      "metric",
+      "indexTitle",
+      "indexIntro",
+      "compareTitle",
+      "compareIntro",
+      "compareHint",
+      "clearCompare",
+      "backToCountries",
+      "metaDescription",
+      "byCategory",
+      "growthTitle",
+      "growthPeak",
+      "growthEmpty",
+      "mapTitle",
+      "deliveryTitle",
+      "deliveryIntro",
+      "deliveryEmpty",
+      "worstSlips",
+      "worstOverruns",
+      "noOverrunData",
+      "projectsTitle",
+      "projectSourcesNote",
+      "viewOnMap",
+    ]
+      .map((k) => `country.${k}`)
+      .concat("nav.countries");
+
+    const missing = required.filter((k) => !enFlat.has(k) || !roFlat.has(k));
+    expect(missing).toEqual([]);
+  });
 });

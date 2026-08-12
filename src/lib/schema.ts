@@ -159,6 +159,34 @@ export const deflatorTableSchema = z.object({
 export type DeflatorTable = z.infer<typeof deflatorTableSchema>;
 
 /**
+ * Per-country reference figures, used only to normalise infrastructure
+ * length into densities. Country *names* are deliberately absent: they come
+ * from Intl.DisplayNames, so adding a locale never means editing this file.
+ */
+export const countryRefSchema = z.object({
+  /** Total territory area in km². */
+  areaKm2: z.number().positive(),
+  population: z.number().int().positive(),
+  /** Date the population figure refers to, e.g. "2026-01". */
+  populationDate: dateStringSchema,
+  /**
+   * Caveat shown next to the country's density figures. Localized, because
+   * it is prose rendered to the reader — unlike a source title, which is the
+   * published name of a document and is not translated.
+   */
+  note: localizedStringSchema.optional(),
+  sources: z.array(sourceSchema).min(1),
+});
+export type CountryRef = z.infer<typeof countryRefSchema>;
+
+export const countryTableSchema = z.object({
+  note: z.string().min(1),
+  /** Keyed by ISO 3166-1 alpha-2, lowercase — as on Project.country. */
+  countries: z.record(z.string().length(2), countryRefSchema),
+});
+export type CountryTable = z.infer<typeof countryTableSchema>;
+
+/**
  * A canonical contractor. `members` marks the entry as a joint venture whose
  * work is credited both to the JV and to each member firm.
  */
@@ -185,4 +213,9 @@ export function dateYear(date: string): number {
 /** Path of a project's GeoJSON file relative to the repo root. */
 export function projectGeoPath(project: Project): string {
   return `data/geo/${project.country}/${project.id.slice(3)}.geojson`;
+}
+
+/** Path of a country's outline polygon relative to the repo root. */
+export function countryGeoPath(country: string): string {
+  return `data/geo/countries/${country}.geojson`;
 }

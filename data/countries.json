@@ -1,0 +1,54 @@
+{
+  "note": "Per-country area and population, used only to normalise infrastructure length (km per 1,000 km², km per million people) so that countries of very different size stay comparable. Area comes from the CIA World Factbook and population from Eurostat — one source each, applied to every country, because a density ranking built from mixed methodologies ranks the methodologies rather than the countries. Eurostat publishes no area figure for Serbia, which is why the Factbook is used for area throughout rather than Eurostat for the EU members and something else for the rest. Both sources exclude Kosovo from Serbia, matching the Natural Earth outline in data/geo/countries/rs.geojson. The Factbook was retired in February 2026 and cia.gov no longer serves the country pages — nor do Wayback snapshots of them, which captured only the page shell because the figures were loaded client-side. The areas are therefore cited to factbook.json, the public-domain machine-readable conversion of the final (2025) edition, which is where these values were actually read and which still resolves.",
+  "countries": {
+    "bg": {
+      "areaKm2": 110879,
+      "population": 6423207,
+      "populationDate": "2026-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition) — Bulgaria, Geography: Area (total 110,879 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/bu.json"
+        },
+        {
+          "title": "Eurostat — Population change, demographic balance and crude rates at national level [demo_gind], population on 1 January",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table"
+        }
+      ]
+    },
+    "ro": {
+      "areaKm2": 238391,
+      "population": 19041322,
+      "populationDate": "2026-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition) — Romania, Geography: Area (total 238,391 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/ro.json"
+        },
+        {
+          "title": "Eurostat — Population change, demographic balance and crude rates at national level [demo_gind], population on 1 January",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table"
+        }
+      ]
+    },
+    "rs": {
+      "areaKm2": 77474,
+      "population": 6532019,
+      "populationDate": "2026-01",
+      "note": {
+        "en": "Excludes Kosovo, as do both sources and the country outline. Serbia's own statistical office reports 88,499 km² including Kosovo and Metohija, and 77,589 km² excluding it; the figures are not interchangeable, so the whole table stays on the excluding-Kosovo basis.",
+        "ro": "Exclude Kosovo, la fel ca ambele surse și conturul țării. Institutul de statistică al Serbiei raportează 88.499 km² incluzând Kosovo și Metohia și 77.589 km² fără; cifrele nu sunt interschimbabile, așa că întregul tabel rămâne pe baza care exclude Kosovo."
+      },
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition) — Serbia, Geography: Area (total 77,474 sq km, Kosovo listed separately at 10,887 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/ri.json"
+        },
+        {
+          "title": "Eurostat — Population change, demographic balance and crude rates at national level [demo_gind], population on 1 January",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table"
+        }
+      ]
+    }
+  }
+}
