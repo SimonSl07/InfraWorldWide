@@ -2,71 +2,133 @@
   "note": "Canonical contractor identities for by-contractor rankings. src/lib/contractors.ts first normalizes a raw contractor string (cut a trailing ' — ' scope note, strip a trailing parenthetical, fold case and diacritics to a slug) and then looks it up here. Entries are only needed where normalization alone would split or merge firms incorrectly — everything else resolves heuristically. An entry with `members` is a joint venture: a lot is credited to the JV *and* to each member. Aliases are matched against the raw string, the em-dash-cut string and the parenthetical-stripped string, in that order, so `Webuild (Astaldi)` resolves to Astaldi before the parenthetical is discarded.",
   "contractors": [
     {
-      "id": "astaldi",
-      "name": "Astaldi",
-      "aliases": ["Astaldi SpA", "Webuild (Astaldi)"],
-      "note": "Webuild acquired a majority stake in Astaldi in 2020; Astaldi continues as a subsidiary, so contracts awarded to Astaldi stay under Astaldi rather than folding into Webuild."
-    },
-    {
-      "id": "webuild",
-      "name": "Webuild",
-      "aliases": ["Salini Impregilo"],
-      "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020 — same legal entity, so the two names are merged."
-    },
-    {
-      "id": "fcc-construccion",
-      "name": "FCC Construcción",
-      "aliases": ["FCC Construction", "FCC Construcción SA", "FCC"]
-    },
-    {
-      "id": "porr",
-      "name": "Porr",
-      "aliases": ["Porr Bau", "Porr Construct"]
-    },
-    {
-      "id": "euro-construct-trading-98",
-      "name": "Euro Construct Trading '98",
-      "aliases": ["Euroconstruct Trading '98", "EuroConstruct Trading '98"]
-    },
-    {
-      "id": "condotte",
-      "name": "Società Italiana per Condotte d'Acqua",
-      "aliases": ["Societa Italiana per Condotte D'Acqua", "Condotte"]
-    },
-    {
       "id": "alpine-bau",
       "name": "Alpine Bau",
-      "aliases": ["Alpine"]
-    },
-    {
-      "id": "impresa-pizzarotti",
-      "name": "Impresa Pizzarotti",
-      "aliases": ["Impresa Pizzarotti & C."]
+      "aliases": [
+        "Alpine"
+      ]
     },
     {
       "id": "alstom",
       "name": "Alstom",
-      "aliases": ["Alstom Transport"]
+      "aliases": [
+        "Alstom Transport"
+      ]
     },
     {
       "id": "arcada-company",
       "name": "Arcada Company",
-      "aliases": ["Arcada"]
+      "aliases": [
+        "Arcada"
+      ]
     },
     {
-      "id": "sa-pe-construct",
-      "name": "SA&PE Construct",
-      "aliases": ["SA&PE"]
+      "id": "astaldi",
+      "name": "Astaldi",
+      "aliases": [
+        "Astaldi SpA",
+        "Webuild (Astaldi)"
+      ],
+      "note": "Webuild acquired a majority stake in Astaldi in 2020; Astaldi continues as a subsidiary, so contracts awarded to Astaldi stay under Astaldi rather than folding into Webuild."
+    },
+    {
+      "id": "bechtel",
+      "name": "Bechtel",
+      "aliases": [
+        "Bechtel Corporation"
+      ]
+    },
+    {
+      "id": "bechtel-enka",
+      "name": "Bechtel–ENKA JV",
+      "aliases": [
+        "Bechtel ENKA UK Limited JV",
+        "Bechtel ENKA design-build team"
+      ],
+      "members": [
+        "bechtel",
+        "enka"
+      ],
+      "note": "Design-build joint venture for Serbia's A5 Morava Corridor; work is credited to the JV and to Bechtel and ENKA individually."
+    },
+    {
+      "id": "cccc",
+      "name": "China Communications Construction Company Ltd.",
+      "aliases": [
+        "China Communications Construction Company"
+      ]
     },
     {
       "id": "cccf-bucuresti",
       "name": "CCCF București",
-      "aliases": ["CCCF"]
+      "aliases": [
+        "CCCF"
+      ]
+    },
+    {
+      "id": "china-railway-international",
+      "name": "China Railway International Co. Ltd.",
+      "aliases": [
+        "CRIC"
+      ]
+    },
+    {
+      "id": "cip",
+      "name": "Saobraćajni institut CIP"
+    },
+    {
+      "id": "condotte",
+      "name": "Società Italiana per Condotte d'Acqua",
+      "aliases": [
+        "Societa Italiana per Condotte D'Acqua",
+        "Condotte"
+      ]
     },
     {
       "id": "cossi-construzioni",
       "name": "Cossi Construzioni",
-      "aliases": ["Cossi"]
+      "aliases": [
+        "Cossi"
+      ]
+    },
+    {
+      "id": "enka",
+      "name": "ENKA",
+      "aliases": [
+        "ENKA İnşaat ve Sanayi A.Ş."
+      ]
+    },
+    {
+      "id": "euro-construct-trading-98",
+      "name": "Euro Construct Trading '98",
+      "aliases": [
+        "Euroconstruct Trading '98",
+        "EuroConstruct Trading '98"
+      ]
+    },
+    {
+      "id": "fcc-construccion",
+      "name": "FCC Construcción",
+      "aliases": [
+        "FCC Construction",
+        "FCC Construcción SA",
+        "FCC"
+      ]
+    },
+    {
+      "id": "impresa-pizzarotti",
+      "name": "Impresa Pizzarotti",
+      "aliases": [
+        "Impresa Pizzarotti & C."
+      ]
+    },
+    {
+      "id": "porr",
+      "name": "Porr",
+      "aliases": [
+        "Porr Bau",
+        "Porr Construct"
+      ]
     },
     {
       "id": "railworks",
@@ -82,6 +144,33 @@
         "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)"
       ],
       "note": "Consortium for the Brașov–Simeria rail rehabilitation. Listed with two spellings in the source data; the parenthetical is the member list rather than a scope note, so both raw strings are aliased explicitly."
+    },
+    {
+      "id": "rzd-international",
+      "name": "RZD International",
+      "note": "Serbian rail modernisation arm of Russian Railways."
+    },
+    {
+      "id": "sa-pe-construct",
+      "name": "SA&PE Construct",
+      "aliases": [
+        "SA&PE"
+      ]
+    },
+    {
+      "id": "shandong-hi-speed",
+      "name": "Shandong Hi-Speed Group Co., Ltd.",
+      "aliases": [
+        "Shandong High-Speed Group"
+      ]
+    },
+    {
+      "id": "webuild",
+      "name": "Webuild",
+      "aliases": [
+        "Salini Impregilo"
+      ],
+      "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020 — same legal entity, so the two names are merged."
     }
   ]
 }

@@ -1,0 +1,171 @@
+{
+  "id": "rs-beograd-subotica",
+  "country": "rs",
+  "category": "railway",
+  "name": {
+    "en": "Belgrade – Novi Sad – Subotica High-Speed Railway"
+  },
+  "description": {
+    "en": "Reconstruction of the Belgrade–Subotica–Kelebija line for 200 km/h operation, the Serbian half of the Belgrade–Budapest corridor. Belgrade Centre–Novi Sad opened in March 2022 and the remainder to Subotica in October 2025. The Belgrade Centre–Stara Pazova leg runs on Serbian mainline 101 and the rest on mainline 105. The Chinese-financed legs were contracted in US dollars; the published estimate for Novi Sad–Subotica carries no price year, so it is omitted rather than assigned one. No cost is recorded for Stara Pazova–Novi Sad either: the only figure found for it, EUR 91.9 million, is implausibly low for a 40 km section carrying the Čortanovci tunnel and the Danube viaduct, and could not be corroborated. Mapped geometry for the northern lot stops at Subotica station rather than the Kelebija border."
+  },
+  "lots": [
+    {
+      "id": "beograd-centar-stara-pazova",
+      "name": {
+        "en": "Belgrade Centre – Stara Pazova"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-11",
+        "constructionStart": "2018-06",
+        "opened": "2022-03"
+      },
+      "lengthKm": 34.5,
+      "cost": {
+        "estimated": {
+          "amount": 367.44,
+          "currency": "USD",
+          "year": 2016
+        }
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Export–Import Bank of China."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Railway International Co. Ltd.",
+          "role": "builder"
+        },
+        {
+          "name": "China Communications Construction Company Ltd.",
+          "role": "builder"
+        },
+        {
+          "name": "CIP",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "executionMonths": 36,
+        "totalMonths": 36,
+        "value": {
+          "amount": 350.1,
+          "currency": "USD",
+          "year": 2016
+        },
+        "noticeUrl": "https://www.mgsi.gov.rs/sites/default/files/Investicioni%20Plan%20MGSI%20septembar%202019%20ENG%20tekst%20.pdf"
+      },
+      "geometryRef": "beograd-centar-stara-pazova"
+    },
+    {
+      "id": "stara-pazova-novi-sad",
+      "name": {
+        "en": "Stara Pazova – Novi Sad"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-03",
+        "opened": "2022-03"
+      },
+      "lengthKm": 40.4,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Government of the Russian Federation."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "RZD International",
+          "role": "builder"
+        },
+        {
+          "name": "CIP",
+          "role": "designer"
+        }
+      ],
+      "geometryRef": "stara-pazova-novi-sad"
+    },
+    {
+      "id": "novi-sad-subotica",
+      "name": {
+        "en": "Novi Sad – Subotica – Kelebija border"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2022-07",
+        "opened": "2025-10"
+      },
+      "lengthKm": 108.1,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Export–Import Bank of China."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Railway International Co. Ltd.",
+          "role": "builder"
+        },
+        {
+          "name": "China Communications Construction Company Ltd.",
+          "role": "builder"
+        },
+        {
+          "name": "CIP",
+          "role": "designer"
+        }
+      ],
+      "geometryRef": "novi-sad-subotica"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ministry of Construction, Transport and Infrastructure — Hungarian–Serbian railway: reconstruction and modernisation, Belgrade–Novi Sad",
+      "url": "https://www.mgsi.gov.rs/en/projekti/hungarian-serbian-railways-project-reconstruction-and-modernization-belgrade-novi-sad"
+    },
+    {
+      "title": "Ministry of Construction, Transport and Infrastructure — Investment Plan, September 2019",
+      "url": "https://www.mgsi.gov.rs/sites/default/files/Investicioni%20Plan%20MGSI%20septembar%202019%20ENG%20tekst%20.pdf"
+    },
+    {
+      "title": "Railway PRO — Officials inaugurate Belgrade–Novi Sad line",
+      "url": "https://www.railwaypro.com/wp/officials-inaugurate-belgrade-novi-sad-line/"
+    },
+    {
+      "title": "Wikipedia — Budapest–Belgrade railway",
+      "url": "https://en.wikipedia.org/wiki/Budapest%E2%80%93Belgrade_railway"
+    },
+    {
+      "title": "OpenStreetMap — relation 9299833, Магистрална пруга 105",
+      "url": "https://www.openstreetmap.org/relation/9299833"
+    },
+    {
+      "title": "OpenStreetMap — relation 7826011, Магистрална пруга 101",
+      "url": "https://www.openstreetmap.org/relation/7826011"
+    },
+    {
+      "title": "OpenStreetMap contributors — route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}

@@ -1,10 +1,14 @@
 {
   "baseYear": 2015,
-  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes — src/lib/deflator.ts consumes any table in this shape.",
+  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes — src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017 — a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated.",
   "sources": [
     {
       "title": "Eurostat — HICP annual data (average index and rate of change) [prc_hicp_aind]",
       "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table"
+    },
+    {
+      "title": "U.S. Bureau of Labor Statistics — Consumer Price Index for All Urban Consumers: All Items in U.S. City Average [CPIAUCNS], via FRED",
+      "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
     }
   ],
   "series": {
@@ -84,6 +88,74 @@
         "2023": 141.64,
         "2024": 149.91,
         "2025": 160.06
+      }
+    },
+    "RSD": {
+      "geo": "RS",
+      "label": {
+        "en": "Serbia",
+        "ro": "Serbia"
+      },
+      "index": {
+        "2006": 55.1,
+        "2007": 58.3,
+        "2008": 65.2,
+        "2009": 70.5,
+        "2010": 74.9,
+        "2011": 83.3,
+        "2012": 89.4,
+        "2013": 96.3,
+        "2014": 98.5,
+        "2015": 100.0,
+        "2016": 101.3,
+        "2017": 104.7,
+        "2018": 106.8,
+        "2019": 108.8,
+        "2020": 110.7,
+        "2021": 115.2,
+        "2022": 128.7,
+        "2023": 144.2,
+        "2024": 151.1,
+        "2025": 157.3
+      }
+    },
+    "USD": {
+      "geo": "US",
+      "label": {
+        "en": "United States",
+        "ro": "Statele Unite"
+      },
+      "index": {
+        "1996": 66.18,
+        "1997": 67.72,
+        "1998": 68.77,
+        "1999": 70.28,
+        "2000": 72.65,
+        "2001": 74.71,
+        "2002": 75.89,
+        "2003": 77.61,
+        "2004": 79.69,
+        "2005": 82.4,
+        "2006": 85.05,
+        "2007": 87.48,
+        "2008": 90.84,
+        "2009": 90.52,
+        "2010": 92.0,
+        "2011": 94.9,
+        "2012": 96.87,
+        "2013": 98.29,
+        "2014": 99.88,
+        "2015": 100.0,
+        "2016": 101.26,
+        "2017": 103.42,
+        "2018": 105.94,
+        "2019": 107.86,
+        "2020": 109.2,
+        "2021": 114.33,
+        "2022": 123.47,
+        "2023": 128.56,
+        "2024": 132.35,
+        "2025": 135.83
       }
     }
   }
