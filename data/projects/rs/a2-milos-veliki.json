@@ -1,0 +1,142 @@
+{
+  "id": "rs-a2-milos-veliki",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "A2 Miloš Veliki Motorway (Belgrade – Preljina)"
+  },
+  "description": {
+    "en": "The A2 «Miloš Veliki» motorway on European route E763, running south-west from Belgrade at Surčin through Obrenovac, Ub, Lajkovac and Ljig to Preljina near Čačak. Opened section by section between 2014 and 2019. Section lengths are the figures published by JP Putevi Srbije rather than measured off the mapped alignment; the Lajkovac–Ljig contract boundary sits about 3 km from the Ljig interchange used to cut the geometry, though the Lajkovac–Preljina total agrees to within 600 m. The motorway continues beyond Preljina toward Požega via Pakovraće and Lučani, and the planned Požega–Boljare extension; neither is recorded here for want of sourced opening dates."
+  },
+  "lots": [
+    {
+      "id": "surcin-obrenovac",
+      "name": {
+        "en": "Surčin – Obrenovac"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2017-05",
+        "opened": "2019-12"
+      },
+      "lengthKm": 17.6,
+      "cost": {
+        "estimated": {
+          "amount": 233.67,
+          "currency": "USD",
+          "year": 2017
+        }
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Export–Import Bank of China, 85% of the contract value."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Republic of Serbia, 15%."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Communications Construction Company Ltd.",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "surcin-obrenovac"
+    },
+    {
+      "id": "obrenovac-ub",
+      "name": {
+        "en": "Obrenovac – Ub"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014",
+        "opened": "2019"
+      },
+      "lengthKm": 26.23,
+      "cost": {
+        "estimated": {
+          "amount": 73,
+          "currency": "EUR",
+          "year": 2014
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Shandong Hi-Speed Group Co., Ltd.",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "obrenovac-ub"
+    },
+    {
+      "id": "ub-lajkovac",
+      "name": {
+        "en": "Ub – Lajkovac"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014"
+      },
+      "lengthKm": 12.49,
+      "geometryRef": "ub-lajkovac"
+    },
+    {
+      "id": "lajkovac-ljig",
+      "name": {
+        "en": "Lajkovac – Ljig"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016"
+      },
+      "lengthKm": 23.98,
+      "geometryRef": "lajkovac-ljig"
+    },
+    {
+      "id": "ljig-preljina",
+      "name": {
+        "en": "Ljig – Preljina"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016"
+      },
+      "lengthKm": 40.3,
+      "geometryRef": "ljig-preljina"
+    }
+  ],
+  "sources": [
+    {
+      "title": "JP Putevi Srbije — Auto-put „Miloš Veliki“ pušten u saobraćaj (section lengths)",
+      "url": "https://putevi-srbije.rs/index.php/sr/korporativne-vesti/arhiva-korporativnih-vesti-2019/19-08-19-autoput-milos-veliki-pusten-u-saobracaj"
+    },
+    {
+      "title": "Ministry of Construction, Transport and Infrastructure — Construction of E-763 highway, Surčin–Obrenovac section",
+      "url": "https://www.mgsi.gov.rs/en/projekti/construction-e-763-highway-section-surcin-obrenovac"
+    },
+    {
+      "title": "Wikipedia — A2 motorway (Serbia)",
+      "url": "https://en.wikipedia.org/wiki/A2_motorway_(Serbia)"
+    },
+    {
+      "title": "OpenStreetMap — relation 6697754, Милош Велики (ref A2)",
+      "url": "https://www.openstreetmap.org/relation/6697754"
+    },
+    {
+      "title": "OpenStreetMap contributors — route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/"
+    }
+  ]
+}
