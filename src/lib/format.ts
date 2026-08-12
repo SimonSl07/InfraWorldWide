@@ -28,6 +28,14 @@ export function formatMonth(monthIdx: number, locale: string): string {
   }).format(new Date(Date.UTC(year, month, 1)));
 }
 
+/**
+ * Network length as whole kilometres: "1,142 km". Fractions of a kilometre
+ * are below the precision the source data supports, so they are not shown.
+ */
+export function formatKm(km: number, locale: string): string {
+  return `${Math.round(km).toLocaleString(locale)} km`;
+}
+
 /** Signed percentage with one decimal: "+38.3%", "−10.0%". */
 export function formatPercent(value: number): string {
   const sign = value > 0 ? "+" : value < 0 ? "−" : "";

@@ -5,18 +5,26 @@
  *   public/data/geo/<country>.geojson — one FeatureCollection per country with
  *                                       lot metadata flattened onto each feature
  *                                       so MapLibre can style/filter without joins.
+ *   public/data/geo/countries.geojson — country outlines used as the map's
+ *                                       click targets, with a precomputed bbox
+ *                                       so selecting one can fit the camera.
  *
  * Runs validation first; fails the build on invalid data.
  */
 import fs from "node:fs";
 import path from "node:path";
-import { dateYear, projectGeoPath, type Project } from "../src/lib/schema";
+import {
+  countryGeoPath,
+  dateYear,
+  projectGeoPath,
+  type Project,
+} from "../src/lib/schema";
 import {
   expectedOpeningMonth,
   expectedOpeningYear,
   monthIndex,
 } from "../src/lib/contract";
-import { lineMidpoint } from "../src/lib/geo";
+import { geometryBounds, lineMidpoint } from "../src/lib/geo";
 import { validateAll } from "./validate-data";
 
 interface GeoFeature {
@@ -26,7 +34,7 @@ interface GeoFeature {
 }
 
 const root = process.cwd();
-const { projects, deflators, contractors } = validateAll(root);
+const { projects, deflators, contractors, countries } = validateAll(root);
 
 const outDir = path.join(root, "public/data");
 fs.rmSync(outDir, { recursive: true, force: true });
@@ -46,6 +54,10 @@ fs.writeFileSync(
 fs.writeFileSync(
   path.join(outDir, "contractors.json"),
   JSON.stringify(contractors, null, 2),
+);
+fs.writeFileSync(
+  path.join(outDir, "countries.json"),
+  JSON.stringify(countries, null, 2),
 );
 
 // Per-country geometry with flattened lot properties.
@@ -77,6 +89,9 @@ for (const [country, countryProjects] of byCountry) {
         projectId: project.id,
         projectName: project.name.en,
         lotName: lot.name.en,
+        // Drives the "dim everything outside the selected country" paint
+        // expression, which cannot reach back into projects.json.
+        country: project.country,
         category: project.category,
         status: lot.status,
         lengthKm: lot.lengthKm,
@@ -128,6 +143,30 @@ for (const [country, countryProjects] of byCountry) {
   );
 }
 
+// Country outlines merged into one file: they are small, always all needed
+// at once, and a single request beats one per country.
+const outlineFeatures: GeoFeature[] = [];
+for (const country of [...byCountry.keys()].sort()) {
+  const outline: { features?: GeoFeature[] } = JSON.parse(
+    fs.readFileSync(path.join(root, countryGeoPath(country)), "utf8"),
+  );
+  for (const feature of outline.features ?? []) {
+    const bbox = geometryBounds(feature.geometry as GeoJSON.Geometry);
+    if (!bbox) continue; // already reported by validation
+    outlineFeatures.push({
+      type: "Feature",
+      geometry: feature.geometry,
+      // bbox is baked in so selecting a country can fit the camera without
+      // walking thousands of coordinates in the browser.
+      properties: { country, bbox },
+    });
+  }
+}
+fs.writeFileSync(
+  path.join(outDir, "geo", "countries.geojson"),
+  JSON.stringify({ type: "FeatureCollection", features: outlineFeatures }),
+);
+
 // Manifest so the map knows which country files to fetch.
 fs.writeFileSync(
   path.join(outDir, "geo", "manifest.json"),
@@ -135,5 +174,5 @@ fs.writeFileSync(
 );
 
 console.log(
-  `✓ built public/data: ${projects.length} project(s), ${featureCount} feature(s), ${byCountry.size} country file(s)`,
+  `✓ built public/data: ${projects.length} project(s), ${featureCount} feature(s), ${byCountry.size} country file(s), ${outlineFeatures.length} outline(s)`,
 );

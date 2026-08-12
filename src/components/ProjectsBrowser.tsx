@@ -16,11 +16,22 @@ const STATUS_BADGE: Record<Status, string> = {
   cancelled: "bg-red-100 text-red-700",
 };
 
-export default function ProjectsBrowser({ projects }: { projects: Project[] }) {
+export default function ProjectsBrowser({
+  projects,
+  lockedCountry,
+}: {
+  projects: Project[];
+  /**
+   * Fixes the browser to one country and drops the country picker — used on
+   * a country page, where the list is already that country's and a picker
+   * offering to switch away would be a dead control.
+   */
+  lockedCountry?: string;
+}) {
   const t = useTranslations();
   const locale = useLocale();
   const [query, setQuery] = useState("");
-  const [country, setCountry] = useState<string | null>(null);
+  const [country, setCountry] = useState<string | null>(lockedCountry ?? null);
   const [category, setCategory] = useState<Category | null>(null);
   const [status, setStatus] = useState<Status | null>(null);
 
@@ -54,18 +65,20 @@ export default function ProjectsBrowser({ projects }: { projects: Project[] }) {
           placeholder={t("projects.search")}
           className="rounded-lg border border-neutral-300 px-3 py-1.5 text-sm min-w-48"
         />
-        <select
-          value={country ?? ""}
-          onChange={(e) => setCountry(e.target.value || null)}
-          className={selectClass}
-        >
-          <option value="">{t("projects.allCountries")}</option>
-          {countries.map((c) => (
-            <option key={c} value={c}>
-              {countryNames.of(c.toUpperCase())}
-            </option>
-          ))}
-        </select>
+        {!lockedCountry && (
+          <select
+            value={country ?? ""}
+            onChange={(e) => setCountry(e.target.value || null)}
+            className={selectClass}
+          >
+            <option value="">{t("projects.allCountries")}</option>
+            {countries.map((c) => (
+              <option key={c} value={c}>
+                {countryNames.of(c.toUpperCase())}
+              </option>
+            ))}
+          </select>
+        )}
         <select
           value={category ?? ""}
           onChange={(e) => setCategory((e.target.value || null) as Category | null)}
