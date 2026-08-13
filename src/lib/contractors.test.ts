@@ -58,12 +58,20 @@ describe("contractorSlug", () => {
 });
 
 describe("stripScopeNote", () => {
-  it("cuts an em-dash scope note but keeps en-dash members", () => {
+  it("cuts a colon scope note but keeps en-dash members", () => {
     expect(
-      stripScopeNote("Alstom — Ilteu – Gurasada signalling and electrification"),
+      stripScopeNote("Alstom: Ilteu – Gurasada signalling and electrification"),
     ).toBe("Alstom");
     expect(stripScopeNote("Astaldi – Max Bögl (JV)")).toBe(
       "Astaldi – Max Bögl (JV)",
+    );
+  });
+
+  /** The scope note's own text may contain en dashes; only the first colon
+   *  separates, so a section name survives being cut off wholesale. */
+  it("cuts at the first colon only", () => {
+    expect(stripScopeNote("Webuild (Astaldi): subsections 2A and 2B")).toBe(
+      "Webuild (Astaldi)",
     );
   });
 });
@@ -113,7 +121,7 @@ describe("splitJointVenture", () => {
 describe("normalizeContractorName", () => {
   it("applies both cleanups", () => {
     expect(
-      normalizeContractorName("Webuild (Astaldi) — subsections 2A and 2B"),
+      normalizeContractorName("Webuild (Astaldi): subsections 2A and 2B"),
     ).toBe("Webuild");
   });
 });
@@ -137,7 +145,7 @@ describe("createContractorResolver", () => {
   it("matches a curated alias before stripping its parenthetical", () => {
     // Would otherwise resolve to "webuild".
     expect(ids("Webuild (Astaldi)")).toEqual(["astaldi"]);
-    expect(ids("Webuild (Astaldi) — subsections 2A and 2B")).toEqual(["astaldi"]);
+    expect(ids("Webuild (Astaldi): subsections 2A and 2B")).toEqual(["astaldi"]);
     // A bare Webuild lot still belongs to Webuild.
     expect(ids("Webuild (lot 3)")).toEqual(["webuild"]);
   });
@@ -186,7 +194,7 @@ describe("createContractorResolver", () => {
   });
 
   it("does not split a scope note into fake members", () => {
-    expect(ids("Alstom — Ilteu – Gurasada signalling and electrification")).toEqual(
+    expect(ids("Alstom: Ilteu – Gurasada signalling and electrification")).toEqual(
       ["alstom"],
     );
   });

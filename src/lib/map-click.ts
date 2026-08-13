@@ -27,6 +27,10 @@ function isLot(feature: Feature): boolean {
  * road, so resolving by topmost layer or by proximity alone would make the
  * roads unclickable. Among overlapping lots the nearest to the click point
  * wins, since their hit areas are 30px wide and routinely overlap.
+ *
+ * Cities are absent from this decision on purpose. Their markers are DOM
+ * elements rather than map layers, so a click on one is handled by the
+ * marker itself and never reaches the map.
  */
 export function resolveMapClick(
   features: Feature[],
@@ -46,6 +50,21 @@ export function resolveMapClick(
   }
 
   return { kind: "none" };
+}
+
+/**
+ * The next selection after a click.
+ *
+ * Clicking the already-selected thing clears it, which on the city map is
+ * the only comfortable way to reset: two metro lines can leave very little
+ * empty space to click between them.
+ */
+export function toggleSelection(
+  current: string | null,
+  clicked: string | null,
+): string | null {
+  if (clicked === null) return null;
+  return clicked === current ? null : clicked;
 }
 
 /** The country under the pointer, for the hover tint. Null over a road or sea. */

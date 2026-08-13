@@ -141,27 +141,27 @@ export default async function ProjectPage({
                     {lot.lengthKm} km
                   </td>
                   <td className="py-3 pr-4 text-neutral-600">
-                    {dateParts.length > 0 ? dateParts.join(" · ") : "—"}
+                    {dateParts.length > 0 ? dateParts.join(" · ") : "–"}
                   </td>
                   <td className="py-3 pr-4 text-neutral-600">
-                    {costParts.length > 0 ? costParts.join(" · ") : "—"}
+                    {costParts.length > 0 ? costParts.join(" · ") : "–"}
                   </td>
                   <td className="py-3 pr-4 text-neutral-600">
                     {lot.funding && lot.funding.length > 0
                       ? lot.funding
                           .map((f) => t(`funding.${f.source}`))
                           .join(", ")
-                      : "—"}
+                      : "–"}
                   </td>
                   <td className="py-3 pr-4 text-neutral-600">
                     {lot.contractors && lot.contractors.length > 0
                       ? lot.contractors.map((c) => c.name).join(", ")
-                      : "—"}
+                      : "–"}
                   </td>
                   <td className="py-3 text-neutral-600">
                     {lot.contract ? (
                       <>
-                        {contractSummaryParts(lot.contract, t).join(" · ") || "—"}
+                        {contractSummaryParts(lot.contract, t).join(" · ") || "–"}
                         {lot.contract.noticeReference && (
                           <div className="mt-1 text-xs text-neutral-500">
                             {lot.contract.noticeUrl ? (
@@ -180,7 +180,7 @@ export default async function ProjectPage({
                         )}
                       </>
                     ) : (
-                      "—"
+                      "–"
                     )}
                   </td>
                 </tr>

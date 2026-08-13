@@ -1,0 +1,110 @@
+{
+  "id": "ro-metro-m2",
+  "country": "ro",
+  "city": "ro-bucharest",
+  "category": "railway",
+  "name": {
+    "en": "Bucharest Metro Line M2 (Pipera – Tudor Arghezi)",
+    "ro": "Magistrala 2 de metrou București (Pipera – Tudor Arghezi)"
+  },
+  "description": {
+    "en": "The north to south line through the centre of Bucharest, and the busiest on the network with 52.5 million passengers in 2023. It opened in two steps, Piața Unirii to Depoul I.M.G.B. in January 1986 and Piața Unirii to Pipera in October 1987, with Piața Romană inserted in 1988 after having been dropped from the plan. Metrorex records 20.28 km and 15 stations. The one later addition is the surface extension to Tudor Arghezi, opened on 15 November 2023.",
+    "ro": "Magistrala nord-sud care traversează centrul Bucureștiului, cea mai încărcată din rețea, cu 52,5 milioane de călători în 2023. A fost deschisă în două etape, Piața Unirii – Depoul I.M.G.B. în ianuarie 1986 și Piața Unirii – Pipera în octombrie 1987, iar stația Piața Romană, scoasă din proiect, a fost adăugată în 1988. Metrorex indică 20,28 km și 15 stații. Singura completare ulterioară este prelungirea la suprafață până la Tudor Arghezi, dată în folosință pe 15 noiembrie 2023."
+  },
+  "lots": [
+    {
+      "id": "piata-unirii-imgb",
+      "name": {
+        "en": "Section I: Piața Unirii 2 – Depoul I.M.G.B.",
+        "ro": "Tronsonul I: Piața Unirii 2 – Depoul I.M.G.B."
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1986-01-24"
+      },
+      "lengthKm": 9.96,
+      "geometryRef": "piata-unirii-imgb",
+      "contract": {
+        "noticeReference": "9.96 km and 6 stations from Piața Unirii south to the I.M.G.B. works and the new depot, now Berceni. Tineretului was added on 6 April 1986 and Constantin Brâncoveanu on 5 December 1988; I.M.G.B. and Depoul I.M.G.B. were renamed Dimitrie Leonida and Berceni in 2009",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    },
+    {
+      "id": "piata-unirii-pipera",
+      "name": {
+        "en": "Section II: Piața Unirii 2 – Pipera",
+        "ro": "Tronsonul al II-lea: Piața Unirii 2 – Pipera"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1987-10-24"
+      },
+      "lengthKm": 8.72,
+      "geometryRef": "piata-unirii-pipera",
+      "contract": {
+        "noticeReference": "8.72 km and 5 stations north to the Pipera platform, giving the line its present shape. Piața Romană was cancelled after works had started and opened as an infill station on 28 November 1988, which is why its platforms are narrow and its pillars massive. The English article dates this section 25 October 1987",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    },
+    {
+      "id": "berceni-tudor-arghezi",
+      "name": {
+        "en": "Berceni – Tudor Arghezi",
+        "ro": "Berceni – Tudor Arghezi"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-04",
+        "constructionStart": "2021-01",
+        "opened": "2023-11-15"
+      },
+      "lengthKm": 1.6,
+      "contractors": [
+        {
+          "name": "Somet – TIAB – UTI – Construcții Erbașu",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "berceni-tudor-arghezi",
+      "contract": {
+        "noticeReference": "1.6 km and one station towards the southern ring road, approved in January 2020 and contracted by the Sector 4 city hall in April 2020. Built at grade, so Berceni and Tudor Arghezi are the only two surface stations on the network. Until 8 May 2024 trains ran to it as a shuttle from Berceni, because the signalling was not finished",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M2"
+      }
+    },
+    {
+      "id": "tudor-arghezi-berceni-ilfov",
+      "name": {
+        "en": "Tudor Arghezi – Berceni (Ilfov)",
+        "ro": "Tudor Arghezi – Berceni (Ilfov)"
+      },
+      "status": "planned",
+      "dates": {
+        "announced": "2022-11"
+      },
+      "lengthKm": 3,
+      "geometryRef": "tudor-arghezi-berceni-ilfov",
+      "contract": {
+        "noticeReference": "3 km and 3 stations beyond the city boundary into Berceni commune, Ilfov county, under a protocol signed at the end of 2021. Only the length and the number of stations are published, from the pre-feasibility study completed in November 2022; the alignment drawn here is indicative",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Metroul din București",
+      "url": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+    },
+    {
+      "title": "Wikipedia: Bucharest Metro Line M2",
+      "url": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M2"
+    },
+    {
+      "title": "UrbanRail.Net: Bucharest Metro",
+      "url": "https://www.urbanrail.net/eu/ro/buc/bucurest.htm"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry of the opened sections, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

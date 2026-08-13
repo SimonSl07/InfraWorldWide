@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Map,
+  Marker,
   Source,
   Layer,
   type MapMouseEvent,
@@ -45,17 +46,31 @@ export interface LotFeatureProps {
   constructionStart: number | null;
 }
 
+/** Properties on a city marker feature, as written by the data build. */
+export interface CityMarkerProps {
+  city: string;
+  country: string;
+  name: string;
+  projects: number;
+  lots: number;
+  km: number;
+}
+
 interface InfraMapProps {
   geojson: FeatureCollection;
   /** Country outlines used as click targets; empty until they load. */
   countries: FeatureCollection;
+  /** City markers; empty until they load. */
+  cities: FeatureCollection;
   /** Absolute month index (year*12 + month-1). */
   month: number;
   selection: CategoryStatusSelection;
   selectedLotId: string | null;
   selectedCountry: string | null;
+  selectedCity: string | null;
   onSelectLot: (props: LotFeatureProps | null) => void;
   onSelectCountry: (code: string | null) => void;
+  onSelectCity: (key: string | null) => void;
 }
 
 /** Layer ids that answer clicks, most specific first. */
@@ -78,12 +93,15 @@ const HIT_WIDTH = 30;
 export default function InfraMap({
   geojson,
   countries,
+  cities,
   month,
   selection,
   selectedLotId,
   selectedCountry,
+  selectedCity,
   onSelectLot,
   onSelectCountry,
+  onSelectCity,
 }: InfraMapProps) {
   const [cursor, setCursor] = useState<string>("grab");
   const [hovered, setHovered] = useState<string | null>(null);
@@ -132,12 +150,15 @@ export default function InfraMap({
     };
   }, [filters]);
 
-  /** The two selections are mutually exclusive — they share the panel. */
+  /** The selections are mutually exclusive — they share the panel. */
   function handleClick(e: MapMouseEvent) {
     const hit = resolveMapClick((e.features ?? []) as Feature[], [
       e.lngLat.lng,
       e.lngLat.lat,
     ]);
+    // City markers are DOM elements that stop propagation, so a click
+    // reaching here is never a city.
+    onSelectCity(null);
     switch (hit.kind) {
       case "lot":
         onSelectCountry(null);
@@ -200,6 +221,48 @@ export default function InfraMap({
         setHovered(null);
       }}
     >
+      {/* Cities are DOM markers rather than a map layer: they need a label
+          at every zoom (which would otherwise mean depending on the
+          basemap's glyph fonts) and they need to be real buttons. The
+          click handler stops propagation so the map's own onClick, which
+          would clear the selection, never runs. */}
+      {cities.features.map((feature) => {
+        const props = feature.properties as unknown as CityMarkerProps;
+        if (feature.geometry.type !== "Point") return null;
+        const [longitude, latitude] = feature.geometry.coordinates;
+        const active = selectedCity === props.city;
+        return (
+          <Marker
+            key={props.city}
+            longitude={longitude}
+            latitude={latitude}
+            anchor="bottom"
+            onClick={(e) => {
+              e.originalEvent.stopPropagation();
+              onSelectCity(active ? null : props.city);
+            }}
+          >
+            <button
+              type="button"
+              aria-pressed={active}
+              className={`flex cursor-pointer items-center gap-1.5 rounded-full border px-2 py-1 text-xs font-medium shadow-sm transition-colors ${
+                active
+                  ? "border-neutral-900 bg-neutral-900 text-white"
+                  : "border-neutral-300 bg-white/95 text-neutral-700 hover:border-neutral-900"
+              }`}
+            >
+              <span
+                aria-hidden
+                className={`inline-block h-1.5 w-1.5 rounded-full ${
+                  active ? "bg-white" : "bg-neutral-900"
+                }`}
+              />
+              {props.name}
+            </button>
+          </Marker>
+        );
+      })}
+
       {/* Mounted first so the outlines sit beneath every infrastructure
           layer — they are a click target and a backdrop, not a feature. */}
       <Source id="countries" type="geojson" data={countries}>

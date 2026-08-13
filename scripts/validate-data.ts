@@ -8,15 +8,19 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  cityTableSchema,
   contractorRegistrySchema,
   countryGeoPath,
   countryTableSchema,
   deflatorTableSchema,
+  fxTableSchema,
   projectSchema,
   projectGeoPath,
+  type CityTable,
   type ContractorRegistry,
   type CountryTable,
   type DeflatorTable,
+  type FxTable,
   type Project,
 } from "../src/lib/schema";
 import { contractorSlug } from "../src/lib/contractors";
@@ -151,6 +155,124 @@ function checkCountries(
   }
 }
 
+/**
+ * Cities must line up with the projects placed in them, in both directions.
+ * A project pointing at a city that does not exist would vanish from the
+ * main map without appearing anywhere else; a city with no projects renders
+ * an empty page. Both are silent failures, so both are errors here.
+ */
+function checkCities(
+  table: CityTable | null,
+  projects: Project[],
+  errors: string[],
+) {
+  const used = [
+    ...new Set(
+      projects.map((p) => p.city).filter((c): c is string => c !== undefined),
+    ),
+  ].sort();
+
+  for (const key of used) {
+    const city = table?.cities[key];
+    if (table && !city) {
+      errors.push(
+        `data/cities.json: no entry for "${key}", which has projects`,
+      );
+      continue;
+    }
+    // The city's country has to agree with the projects placed in it, or
+    // the city page would list roads from somewhere else.
+    for (const project of projects.filter((p) => p.city === key)) {
+      if (city && project.country !== city.country) {
+        errors.push(
+          `${project.id}: city "${key}" is in "${city.country}" but the project is in "${project.country}"`,
+        );
+      }
+    }
+  }
+
+  for (const key of Object.keys(table?.cities ?? {})) {
+    if (!used.includes(key)) {
+      errors.push(
+        `data/cities.json: entry "${key}" has no projects — remove it or add its projects`,
+      );
+    }
+  }
+}
+
+/**
+ * A lot's `sharedWith` must name a real project that could actually own the
+ * track. A dangling or self-referential pointer would silently subtract the
+ * lot from every network total while nothing else counted it, which reads as
+ * a shorter network rather than as an error.
+ */
+function checkSharedTrack(projects: Project[], errors: string[]) {
+  const byId = new Map(projects.map((p) => [p.id, p]));
+
+  for (const project of projects) {
+    for (const lot of project.lots) {
+      const target = lot.sharedWith;
+      if (target === undefined) continue;
+
+      if (target === project.id) {
+        errors.push(
+          `${project.id}: lot "${lot.id}" is sharedWith its own project`,
+        );
+        continue;
+      }
+      const owner = byId.get(target);
+      if (!owner) {
+        errors.push(
+          `${project.id}: lot "${lot.id}" is sharedWith "${target}", which does not exist`,
+        );
+        continue;
+      }
+      // Track cannot be shared across a border, and a shared city lot whose
+      // owner sits on the main map would vanish from both views.
+      if (owner.country !== project.country) {
+        errors.push(
+          `${project.id}: lot "${lot.id}" is sharedWith "${target}" in a different country`,
+        );
+      }
+      if (owner.city !== project.city) {
+        errors.push(
+          `${project.id}: lot "${lot.id}" is sharedWith "${target}", which is in a different city`,
+        );
+      }
+    }
+  }
+}
+
+/** Every currency a cost is recorded in must be convertible, or the cost
+ *  tables silently drop it. Warns via an error so new data cannot slip in
+ *  a currency the FX table has never heard of. */
+function checkFxCoverage(
+  table: FxTable | null,
+  projects: Project[],
+  errors: string[],
+) {
+  if (!table) return;
+  const missing = new Set<string>();
+  for (const project of projects) {
+    for (const lot of project.lots) {
+      for (const money of [
+        lot.cost?.estimated,
+        lot.cost?.actual,
+        lot.contract?.value,
+      ]) {
+        if (!money) continue;
+        if (money.currency === table.base) continue;
+        if (!table.rates[money.currency]) missing.add(money.currency);
+      }
+    }
+  }
+  for (const currency of [...missing].sort()) {
+    errors.push(
+      `data/fx.json: no rates for "${currency}", which costs are recorded in`,
+    );
+  }
+}
+
 function* walk(dir: string): Generator<string> {
   if (!fs.existsSync(dir)) return;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -165,6 +287,8 @@ export interface ValidationResult {
   deflators: DeflatorTable | null;
   contractors: ContractorRegistry | null;
   countries: CountryTable | null;
+  fx: FxTable | null;
+  cities: CityTable | null;
   errors: string[];
 }
 
@@ -196,6 +320,20 @@ export function collectErrors(root: string): ValidationResult {
     root,
     "data/countries.json",
     countryTableSchema,
+    errors,
+  );
+
+  const fx = readReferenceFile<FxTable>(
+    root,
+    "data/fx.json",
+    fxTableSchema,
+    errors,
+  );
+
+  const cities = readReferenceFile<CityTable>(
+    root,
+    "data/cities.json",
+    cityTableSchema,
     errors,
   );
 
@@ -293,8 +431,11 @@ export function collectErrors(root: string): ValidationResult {
   }
 
   checkCountries(countries, projects, root, errors);
+  checkCities(cities, projects, errors);
+  checkSharedTrack(projects, errors);
+  checkFxCoverage(fx, projects, errors);
 
-  return { projects, deflators, contractors, countries, errors };
+  return { projects, deflators, contractors, countries, fx, cities, errors };
 }
 
 export interface ValidatedData {
@@ -302,21 +443,30 @@ export interface ValidatedData {
   deflators: DeflatorTable;
   contractors: ContractorRegistry;
   countries: CountryTable;
+  fx: FxTable;
+  cities: CityTable;
 }
 
 export function validateAll(root: string): ValidatedData {
-  const { projects, deflators, contractors, countries, errors } =
+  const { projects, deflators, contractors, countries, fx, cities, errors } =
     collectErrors(root);
-  if (errors.length > 0 || !deflators || !contractors || !countries) {
+  if (
+    errors.length > 0 ||
+    !deflators ||
+    !contractors ||
+    !countries ||
+    !fx ||
+    !cities
+  ) {
     console.error(`Data validation failed with ${errors.length} error(s):`);
     for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
   }
 
   console.log(
-    `✓ ${projects.length} project(s), ${Object.keys(deflators.series).length} deflator series, ${contractors.contractors.length} contractor entries, ${Object.keys(countries.countries).length} countries validated`,
+    `✓ ${projects.length} project(s), ${Object.keys(deflators.series).length} deflator series, ${Object.keys(fx.rates).length} fx series, ${contractors.contractors.length} contractor entries, ${Object.keys(countries.countries).length} countries, ${Object.keys(cities.cities).length} cities validated`,
   );
-  return { projects, deflators, contractors, countries };
+  return { projects, deflators, contractors, countries, fx, cities };
 }
 
 if (process.argv[1] && process.argv[1].endsWith("validate-data.ts")) {

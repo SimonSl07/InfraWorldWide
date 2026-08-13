@@ -1,17 +1,55 @@
 {
   "baseYear": 2015,
-  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes — src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017 — a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated.",
+  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes, since src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017. That is a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated.",
   "sources": [
     {
-      "title": "Eurostat — HICP annual data (average index and rate of change) [prc_hicp_aind]",
+      "title": "Eurostat: HICP annual data (average index and rate of change) [prc_hicp_aind]",
       "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table"
     },
     {
-      "title": "U.S. Bureau of Labor Statistics — Consumer Price Index for All Urban Consumers: All Items in U.S. City Average [CPIAUCNS], via FRED",
+      "title": "U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers: All Items in U.S. City Average [CPIAUCNS], via FRED",
       "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
     }
   ],
   "series": {
+    "BGN": {
+      "geo": "BG",
+      "label": {
+        "en": "Bulgaria",
+        "ro": "Bulgaria"
+      },
+      "index": {
+        "1997": 40.27,
+        "1998": 47.79,
+        "1999": 49.02,
+        "2000": 54.08,
+        "2001": 58.06,
+        "2002": 61.44,
+        "2003": 62.88,
+        "2004": 66.75,
+        "2005": 70.78,
+        "2006": 76.02,
+        "2007": 81.78,
+        "2008": 91.55,
+        "2009": 93.81,
+        "2010": 96.66,
+        "2011": 99.94,
+        "2012": 102.33,
+        "2013": 102.72,
+        "2014": 101.08,
+        "2015": 100,
+        "2016": 98.68,
+        "2017": 99.85,
+        "2018": 102.48,
+        "2019": 104.99,
+        "2020": 106.27,
+        "2021": 109.3,
+        "2022": 123.52,
+        "2023": 134.15,
+        "2024": 137.63,
+        "2025": 142.5
+      }
+    },
     "EUR": {
       "geo": "EA",
       "label": {

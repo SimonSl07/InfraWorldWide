@@ -48,7 +48,14 @@ describe("formatMonth", () => {
 describe("formatKm", () => {
   it("rounds to whole kilometres and groups thousands", () => {
     expect(formatKm(1141.6, "en")).toBe("1,142 km");
-    expect(formatKm(0.4, "en")).toBe("0 km");
+    expect(formatKm(1.92, "en")).toBe("2 km");
+  });
+
+  /** A 360 m bridge is a real row in the tables; "0 km" would be a lie. */
+  it("keeps a decimal below one kilometre", () => {
+    expect(formatKm(0.36, "en")).toBe("0.4 km");
+    expect(formatKm(0.94, "en")).toBe("0.9 km");
+    expect(formatKm(0, "en")).toBe("0 km");
   });
 
   it("groups by locale", () => {

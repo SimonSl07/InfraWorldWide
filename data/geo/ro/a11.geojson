@@ -44,7 +44,7 @@
     {
       "type": "Feature",
       "properties": {
-        "geometryRef": "arad-oradea",
+        "geometryRef": "chisineu-cris-arad",
         "_source": "schematic"
       },
       "geometry": {
@@ -61,11 +61,43 @@
           [
             21.48,
             46.55
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geometryRef": "salonta-chisineu-cris",
+        "_source": "schematic"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            21.48,
+            46.55
           ],
           [
             21.6,
             46.72
           ],
+          [
+            21.66,
+            46.8
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "geometryRef": "oradea-salonta",
+        "_source": "schematic"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
           [
             21.66,
             46.8

@@ -23,13 +23,17 @@ import {
 } from "@/lib/playback";
 import { rankCountries, findCountry } from "@/lib/country-stats";
 import { openedKmByDecade } from "@/lib/country-growth";
-import type { CountryTable } from "@/lib/schema";
-import InfraMap, { type LotFeatureProps } from "./InfraMap";
+import type { CityTable, CountryTable } from "@/lib/schema";
+import InfraMap, {
+  type CityMarkerProps,
+  type LotFeatureProps,
+} from "./InfraMap";
 import TimeSlider from "./TimeSlider";
 import CategoryToggle from "./CategoryToggle";
 import LegendLine from "./LegendLine";
 import ProjectPanel from "./ProjectPanel";
 import CountryPanel from "./CountryPanel";
+import CityPanel from "./CityPanel";
 
 export default function MapExplorer({ locale }: { locale: string }) {
   const t = useTranslations();
@@ -62,6 +66,7 @@ export default function MapExplorer({ locale }: { locale: string }) {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(() =>
     parseCountryParam(searchParams.get("c")),
   );
+  const [selectedCity, setSelectedCity] = useState<string | null>(null);
   // Captured at mount: the URL-sync effect below rewrites the query string
   // before the async data load finishes, which would otherwise drop ?sel=.
   const [initialSelId] = useState(() => searchParams.get("sel"));
@@ -74,8 +79,13 @@ export default function MapExplorer({ locale }: { locale: string }) {
     type: "FeatureCollection",
     features: [],
   });
+  const [cityMarkers, setCityMarkers] = useState<FeatureCollection>({
+    type: "FeatureCollection",
+    features: [],
+  });
   const [projects, setProjects] = useState<Project[]>([]);
   const [countryTable, setCountryTable] = useState<CountryTable | null>(null);
+  const [cityTable, setCityTable] = useState<CityTable | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -97,6 +107,12 @@ export default function MapExplorer({ locale }: { locale: string }) {
       const table = (await fetch("/data/countries.json").then((r) =>
         r.json(),
       )) as CountryTable;
+      const cityPoints = (await fetch("/data/geo/cities.geojson").then((r) =>
+        r.json(),
+      )) as FeatureCollection;
+      const cityRefs = (await fetch("/data/cities.json").then((r) =>
+        r.json(),
+      )) as CityTable;
       if (cancelled) return;
       const merged: FeatureCollection = {
         type: "FeatureCollection",
@@ -106,6 +122,8 @@ export default function MapExplorer({ locale }: { locale: string }) {
       setProjects(idx.projects);
       setCountryOutlines(outlines);
       setCountryTable(table);
+      setCityMarkers(cityPoints);
+      setCityTable(cityRefs);
 
       // A ?c= code that is not in the data has nothing to select: the panel
       // would never mount, so there would be no × to press, while every lot
@@ -181,16 +199,41 @@ export default function MapExplorer({ locale }: { locale: string }) {
     [projects, selectedCountry],
   );
 
-  // One selection at a time — both panels occupy the same corner.
+  // One selection at a time — all three panels occupy the same corner.
   const handleSelectLot = useCallback((props: LotFeatureProps | null) => {
     setSelected(props);
-    if (props) setSelectedCountry(null);
+    if (props) {
+      setSelectedCountry(null);
+      setSelectedCity(null);
+    }
   }, []);
 
   const handleSelectCountry = useCallback((code: string | null) => {
     setSelectedCountry(code);
-    if (code) setSelected(null);
+    if (code) {
+      setSelected(null);
+      setSelectedCity(null);
+    }
   }, []);
+
+  const handleSelectCity = useCallback((key: string | null) => {
+    setSelectedCity(key);
+    if (key) {
+      setSelected(null);
+      setSelectedCountry(null);
+    }
+  }, []);
+
+  const selectedCityRef = useMemo(
+    () => (selectedCity ? cityTable?.cities[selectedCity] ?? null : null),
+    [cityTable, selectedCity],
+  );
+  const selectedCityMarker = useMemo(() => {
+    const feature = cityMarkers.features.find(
+      (f) => f.properties?.city === selectedCity,
+    );
+    return (feature?.properties as unknown as CityMarkerProps) ?? null;
+  }, [cityMarkers, selectedCity]);
 
   // Slider bounds follow the data (bridges from 1895; expected openings).
   const minMonth = useMemo(() => computeMinMonth(geojson.features), [geojson]);
@@ -209,12 +252,15 @@ export default function MapExplorer({ locale }: { locale: string }) {
       <InfraMap
         geojson={geojson}
         countries={countryOutlines}
+        cities={cityMarkers}
         month={month}
         selection={selection}
         selectedLotId={selected?.lotId ?? null}
         selectedCountry={selectedCountry}
+        selectedCity={selectedCity}
         onSelectLot={handleSelectLot}
         onSelectCountry={handleSelectCountry}
+        onSelectCity={handleSelectCity}
       />
 
       {/* top-left: category filters */}
@@ -259,13 +305,24 @@ export default function MapExplorer({ locale }: { locale: string }) {
         />
       )}
 
-      {/* right: selected country panel (never both — see handleSelectLot) */}
+      {/* right: selected country panel (never two at once — see the
+          handleSelect* callbacks, which clear the other two) */}
       {selectedCountryStats && (
         <CountryPanel
           country={selectedCountryStats}
           growth={selectedCountryGrowth}
           month={month}
           onClose={() => setSelectedCountry(null)}
+        />
+      )}
+
+      {/* right: selected city panel */}
+      {selectedCity && selectedCityRef && (
+        <CityPanel
+          cityKey={selectedCity}
+          city={selectedCityRef}
+          marker={selectedCityMarker}
+          onClose={() => setSelectedCity(null)}
         />
       )}
     </div>

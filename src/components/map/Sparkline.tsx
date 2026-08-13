@@ -35,7 +35,7 @@ export default function Sparkline({
           // Nonzero decades keep a visible floor so a small one still reads
           // as "something happened here".
           style={{ height: b.km === 0 ? 0 : `${Math.max(6, (b.km / max) * 100)}%` }}
-          title={`${t("country.decade", { decade: String(b.decade) })} — ${formatKm(b.km, locale)}`}
+          title={`${t("country.decade", { decade: String(b.decade) })}: ${formatKm(b.km, locale)}`}
         />
       ))}
     </div>
