@@ -31,8 +31,16 @@ export function formatMonth(monthIdx: number, locale: string): string {
 /**
  * Network length as whole kilometres: "1,142 km". Fractions of a kilometre
  * are below the precision the source data supports, so they are not shown.
+ *
+ * The exception is a length under 1 km, which keeps one decimal. Urban
+ * bridges and infill sections are genuinely a few hundred metres long, and
+ * rounding those to "0 km" states something false about a row that is right
+ * there on the page.
  */
 export function formatKm(km: number, locale: string): string {
+  if (km > 0 && km < 1) {
+    return `${km.toLocaleString(locale, { maximumFractionDigits: 1 })} km`;
+  }
   return `${Math.round(km).toLocaleString(locale)} km`;
 }
 

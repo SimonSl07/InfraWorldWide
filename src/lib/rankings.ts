@@ -12,7 +12,14 @@ import {
   type OverrunOptions,
 } from "./overrun";
 import { computeSlip, type Slip } from "./slip";
-import type { Category, LocalizedString, Project, Status } from "./schema";
+import { monthIndex } from "./contract";
+import type {
+  Category,
+  LocalizedString,
+  Money,
+  Project,
+  Status,
+} from "./schema";
 
 /**
  * Delivery-performance rankings: which lots ran over budget or late, and
@@ -33,11 +40,33 @@ export interface LotMetric {
   category: Category;
   status: Status;
   lengthKm: number;
+  /**
+   * Project that owns this track when it is shared with another line, else
+   * null. Such a lot is excluded from every total that spans projects.
+   */
+  sharedWith: string | null;
+  /** Absolute month index the lot opened, null while it has not. */
+  openedMonth: number | null;
   /** Null on a basis whose inputs are missing or incomparable. */
   overrun: Record<OverrunBasis, Overrun | null>;
+  /**
+   * Cost figures exactly as recorded, each in its own currency and price
+   * year. The cost tables restate these; the overrun figures above are a
+   * different question and are computed separately.
+   */
+  costs: Record<CostBasis, Money | null>;
   slip: Slip | null;
   contractors: AttributedContractor[];
 }
+
+/**
+ * Where a cost figure came from, most authoritative first. "award" is the
+ * signed contract value, which is a firmer number than a pre-tender
+ * estimate but is not what was ultimately paid.
+ */
+export type CostBasis = "actual" | "award" | "estimate";
+
+export const COST_BASES: CostBasis[] = ["actual", "award", "estimate"];
 
 export interface MetricsOptions extends OverrunOptions {
   resolve: ContractorResolver;
@@ -64,9 +93,17 @@ export function collectLotMetrics(
         category: project.category,
         status: lot.status,
         lengthKm: lot.lengthKm,
+        /** Project owning this track, when it is shared with another line. */
+        sharedWith: lot.sharedWith ?? null,
+        openedMonth: monthIndex(lot.dates?.opened) ?? null,
         overrun: {
           estimate: overruns.estimate.ok ? overruns.estimate.overrun : null,
           award: overruns.award.ok ? overruns.award.overrun : null,
+        },
+        costs: {
+          actual: lot.cost?.actual ?? null,
+          award: lot.contract?.value ?? null,
+          estimate: lot.cost?.estimated ?? null,
         },
         slip: computeSlip(lot, opts.nowMonth),
         contractors: attributeLotContractors(
@@ -317,10 +354,16 @@ export function rankByContractor(metrics: LotMetric[]): GroupRanking[] {
   );
 }
 
-/** Aggregates lots by country. Labels are ISO codes; the UI localizes them. */
+/**
+ * Aggregates lots by country. Labels are ISO codes; the UI localizes them.
+ *
+ * Shared track is dropped: this is a total across projects, so a tunnel two
+ * metro lines run through would otherwise add its length twice.
+ */
 export function rankByCountry(metrics: LotMetric[]): GroupRanking[] {
   const groups = new Map<string, LotMetric[]>();
   for (const metric of metrics) {
+    if (metric.sharedWith !== null) continue;
     const members = groups.get(metric.country) ?? [];
     members.push(metric);
     groups.set(metric.country, members);

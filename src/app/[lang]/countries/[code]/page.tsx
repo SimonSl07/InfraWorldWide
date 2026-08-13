@@ -149,7 +149,7 @@ export default async function CountryPage({
       />
       <span>
         <span className="text-neutral-500">{name(m.projectName)}</span>
-        <span className="text-neutral-400"> — </span>
+        <span className="text-neutral-400"> / </span>
         <span className="font-medium">{name(m.lotName)}</span>
       </span>
     </Link>
@@ -332,7 +332,7 @@ export default async function CountryPage({
                 </dt>
                 <dd className="mt-1 text-xl font-bold tabular-nums">
                   {league.slip.median === null
-                    ? "—"
+                    ? "–"
                     : formatMonths(league.slip.median, t("rankings.unitMonths"))}
                   <span className="ml-1 text-xs font-normal text-neutral-400">
                     n={league.slip.n}
@@ -345,7 +345,7 @@ export default async function CountryPage({
                 </dt>
                 <dd className="mt-1 text-xl font-bold tabular-nums">
                   {league.onTimeShare === null
-                    ? "—"
+                    ? "–"
                     : `${Math.round(league.onTimeShare * 100)}%`}
                 </dd>
               </div>
@@ -355,7 +355,7 @@ export default async function CountryPage({
                 </dt>
                 <dd className="mt-1 text-xl font-bold tabular-nums">
                   {league.overrun.estimate.median === null
-                    ? "—"
+                    ? "–"
                     : formatPercent(league.overrun.estimate.median)}
                   <span className="ml-1 text-xs font-normal text-neutral-400">
                     n={league.overrun.estimate.n}
@@ -378,7 +378,7 @@ export default async function CountryPage({
                   {t("country.worstSlips")}
                 </h3>
                 {worstSlips(countryMetrics, { limit: TOP_N }).length === 0 ? (
-                  <p className="mt-2 text-sm text-neutral-400">—</p>
+                  <p className="mt-2 text-sm text-neutral-400">–</p>
                 ) : (
                   <ul className="mt-2 space-y-1.5 text-sm">
                     {worstSlips(countryMetrics, { limit: TOP_N }).map((e) => (
@@ -455,7 +455,7 @@ export default async function CountryPage({
                 {title}
               </h3>
               {items.length === 0 ? (
-                <p className="mt-2 text-sm text-neutral-400">—</p>
+                <p className="mt-2 text-sm text-neutral-400">–</p>
               ) : (
                 <ul className="mt-2 space-y-1.5">
                   {items.slice(0, 10).map((o) => (
@@ -472,7 +472,7 @@ export default async function CountryPage({
                           style={{ backgroundColor: CATEGORY_COLORS[o.category] }}
                         />
                         <span className="min-w-0 truncate">
-                          {name(o.projectName)} — {name(o.lotName)}
+                          {name(o.projectName)} / {name(o.lotName)}
                         </span>
                         <span className="shrink-0 text-neutral-400">
                           {formatKm(o.lengthKm, lang)}

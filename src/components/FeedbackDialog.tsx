@@ -17,7 +17,18 @@ type Status = "idle" | "sending" | "sent" | "error";
 
 const PHOTO_MB = MAX_PHOTO_BYTES / (1024 * 1024);
 
-export default function FeedbackDialog() {
+/**
+ * `triggerClassName` lets the About page open the same dialog from a proper
+ * button rather than a nav link. The default is the header's styling, so
+ * existing callers need no change.
+ */
+export default function FeedbackDialog({
+  triggerClassName = "hover:text-neutral-900",
+  triggerLabel,
+}: {
+  triggerClassName?: string;
+  triggerLabel?: string;
+} = {}) {
   const t = useTranslations("feedback");
   const locale = useLocale();
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -108,9 +119,9 @@ export default function FeedbackDialog() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="hover:text-neutral-900"
+        className={triggerClassName}
       >
-        {t("nav")}
+        {triggerLabel ?? t("nav")}
       </button>
 
       <dialog

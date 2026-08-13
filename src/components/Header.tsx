@@ -25,6 +25,9 @@ export default async function Header() {
           <Link href="/rankings" className="hover:text-neutral-900">
             {t("nav.rankings")}
           </Link>
+          <Link href="/about" className="hover:text-neutral-900">
+            {t("nav.about")}
+          </Link>
           <FeedbackDialog />
         </nav>
         <div className="ml-auto">

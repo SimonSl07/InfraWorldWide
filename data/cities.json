@@ -1,0 +1,77 @@
+{
+  "note": "Reference figures for the cities that anchor the map camera and give project costs a local denominator. gdpPerCapita.amount is a PER-PERSON figure in whole currency units, not in MILLIONS like cost.amount elsewhere in this repo. Population is the city proper as counted in the 2021 census round, taken from each country's own statistical institute; the reference dates differ (Romania censused on 1 December 2021, Bulgaria on 7 September 2021) because the censuses do, and neither figure is a current estimate. GDP per capita is Eurostat's NUTS 3 figure in euro per inhabitant at current market prices for 2023, the latest year that is final for both cities. 2024 is published but flagged provisional for Bucharest, and pairing a provisional year against a final one would compare the vintages rather than the cities. The values are nominal euro, not PPS, so they are not adjusted for the large price-level difference between the two countries and overstate the real gap. A NUTS 3 region is not always the city proper: it is exactly the municipality for Bucharest but wider than the town for Sofia, so read each city's note before dividing anything by these numbers.",
+  "cities": {
+    "ro-bucharest": {
+      "country": "ro",
+      "name": {
+        "en": "Bucharest",
+        "ro": "București"
+      },
+      "population": 1716961,
+      "populationDate": "2021-12",
+      "gdpPerCapita": {
+        "amount": 48900,
+        "currency": "EUR",
+        "year": 2023
+      },
+      "center": [26.1025, 44.4268],
+      "link": "https://www.pmb.ro/",
+      "note": {
+        "en": "Population is the city proper (Municipiul București, the six sectors) as counted in the definitive results of the 2021 census, reference date 1 December 2021. The Bucharest–Ilfov metropolitan region is much larger and is not what this number covers. GDP per capita is for NUTS 3 region RO321 Bucureşti, whose boundary is exactly the municipality, so the population and the GDP figure describe the same territory.",
+        "ro": "Populația este a orașului propriu-zis (Municipiul București, cele șase sectoare), așa cum a fost numărată în rezultatele definitive ale recensământului din 2021, cu data de referință 1 decembrie 2021. Regiunea metropolitană București–Ilfov este mult mai mare și nu este acoperită de această cifră. PIB-ul pe locuitor este pentru regiunea NUTS 3 RO321 București, al cărei contur coincide exact cu municipiul, așa că populația și PIB-ul descriu același teritoriu."
+      },
+      "sources": [
+        {
+          "title": "Institutul Național de Statistică: Recensământul Populației și Locuințelor 2021, rezultate definitive (index of published tables)",
+          "url": "https://www.recensamantromania.ro/rezultate-rpl-2021/rezultate-definitive/"
+        },
+        {
+          "title": "RPL 2021, Tabel 1.5.1: Populația rezidentă după domiciliu, pe sexe, județe și medii de rezidență, la 1 decembrie 2021 (Municipiul București, ambele sexe: 1.716.961)",
+          "url": "https://www.recensamantromania.ro/wp-content/uploads/2023/06/Tabel-1.05_1.05.1.xlsx"
+        },
+        {
+          "title": "Eurostat: Gross domestic product (GDP) at current market prices by NUTS 3 region [nama_10r_3gdp], unit EUR_HAB, geo RO321 Bucureşti, 2023",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table"
+        }
+      ]
+    },
+    "bg-sofia": {
+      "country": "bg",
+      "name": {
+        "en": "Sofia",
+        "ro": "Sofia"
+      },
+      "population": 1183400,
+      "populationDate": "2021-09",
+      "gdpPerCapita": {
+        "amount": 31500,
+        "currency": "EUR",
+        "year": 2023
+      },
+      "center": [23.3219, 42.6977],
+      "link": "https://www.sofia.bg/",
+      "note": {
+        "en": "Population is the town of Sofia itself (settlement code EKATTE 68134), 1,183,400 at the census of 7 September 2021, in the settlement breakdown revised on 21 November 2022. GDP per capita is for NUTS 3 region BG411 Sofia (stolitsa), which is Stolichna municipality: the town plus three smaller towns and 34 villages, 1,274,290 people at the same census. The GDP figure is therefore spread over about 8% more people than the population field counts, so unlike Bucharest the two are not a matched pair.",
+        "ro": "Populația este a orașului Sofia propriu-zis (cod de localitate EKATTE 68134), 1.183.400 la recensământul din 7 septembrie 2021, conform defalcării pe localități revizuite la 21 noiembrie 2022. PIB-ul pe locuitor este pentru regiunea NUTS 3 BG411 Sofia (stolitsa), adică municipalitatea Stolichna: orașul plus alte trei orașe mai mici și 34 de sate, 1.274.290 de locuitori la același recensământ. Prin urmare, PIB-ul este raportat la circa 8% mai mulți locuitori decât indică câmpul de populație, așa că, spre deosebire de București, cele două cifre nu formează o pereche potrivită."
+      },
+      "sources": [
+        {
+          "title": "National Statistical Institute of Bulgaria: Census 2021 Results (index of published tables)",
+          "url": "https://www.nsi.bg/en/statistical-data/151/1349"
+        },
+        {
+          "title": "Census 2021, Census2021_Population_EN.xlsx: Population by statistical regions, districts, municipalities, settlements, sex and age as of 7 September 2021 (town of Sofia, EKATTE 68134: 1,183,400)",
+          "url": "https://www.nsi.bg/en/file/download/fa75bec50cab7c5df4b26bfd422feb885cb03fa3"
+        },
+        {
+          "title": "National Statistical Institute of Bulgaria: Population as of September 7, 2021, final data (press release; district of Sofia (stolitsa): 1,274,290)",
+          "url": "https://www.nsi.bg/sites/default/files/files/pressreleases/Census2021_population_en.pdf"
+        },
+        {
+          "title": "Eurostat: Gross domestic product (GDP) at current market prices by NUTS 3 region [nama_10r_3gdp], unit EUR_HAB, geo BG411 Sofia (stolitsa), 2023",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table"
+        }
+      ]
+    }
+  }
+}

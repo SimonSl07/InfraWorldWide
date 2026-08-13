@@ -112,3 +112,83 @@ export function countryOutlineWidth(
 ): ExpressionSpecification {
   return ["case", isCountry(selected), 2, 1] as unknown as ExpressionSpecification;
 }
+
+/* ── City view paint ──────────────────────────────────────────────────── */
+
+/** Matches one project. Never matches when none is selected. */
+function isProject(id: string | null): ExpressionSpecification {
+  // "" is a safe sentinel: no feature carries an empty project id.
+  return ["==", ["get", "projectId"], id ?? ""] as ExpressionSpecification;
+}
+
+/**
+ * A layer's opacity on the city map, faded for every line except the
+ * selected one. Same idea as dimByCountry, keyed on the project instead, so
+ * picking a metro line pushes the other lines back without hiding them.
+ */
+export function dimByProject(
+  full: number,
+  selected: string | null,
+): number | ExpressionSpecification {
+  if (selected === null) return full;
+  return [
+    "case",
+    isProject(selected),
+    full,
+    full * DIMMED,
+  ] as unknown as ExpressionSpecification;
+}
+
+/** Filter selecting one project's features, for the highlight layer. */
+export function projectFilter(id: string): ExpressionSpecification {
+  return isProject(id);
+}
+
+/* ── Country picker paint (the comparison map) ────────────────────────── */
+
+/** Matches any of several countries. Never matches on an empty list. */
+function inCountries(codes: string[]): ExpressionSpecification {
+  return [
+    "in",
+    ["get", "country"],
+    ["literal", codes],
+  ] as unknown as ExpressionSpecification;
+}
+
+/**
+ * Fill for the picker map: picked countries are solid, the one under the
+ * cursor is tinted, the rest stay faintly visible so they read as
+ * clickable. As with the main map the floor is above zero, because
+ * MapLibre does not hit-test a fully transparent fill.
+ */
+export function pickedFillOpacity(
+  picked: string[],
+  hovered: string | null,
+): ExpressionSpecification {
+  return [
+    "case",
+    inCountries(picked),
+    0.55,
+    isCountry(hovered),
+    0.25,
+    0.08,
+  ] as unknown as ExpressionSpecification;
+}
+
+export function pickedFillColor(picked: string[]): ExpressionSpecification {
+  return [
+    "case",
+    inCountries(picked),
+    "#0f172a",
+    "#64748b",
+  ] as unknown as ExpressionSpecification;
+}
+
+export function pickedOutlineWidth(picked: string[]): ExpressionSpecification {
+  return [
+    "case",
+    inCountries(picked),
+    2,
+    0.75,
+  ] as unknown as ExpressionSpecification;
+}

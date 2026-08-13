@@ -80,6 +80,21 @@ describe("openedKmByDecade", () => {
     expect(buckets[0].km).toBe(10);
   });
 
+  /** A tunnel two metro lines run through opened once, not twice. */
+  it("counts shared track once", () => {
+    const shared = [
+      project("bg", "railway", [
+        { dates: { opened: "2010-01" }, lengthKm: 14 },
+      ]),
+      project("bg", "railway", [
+        { dates: { opened: "2010-01" }, lengthKm: 14, sharedWith: "bg-x" },
+      ]),
+    ];
+    const buckets = openedKmByDecade(shared, "bg");
+    expect(buckets).toHaveLength(1);
+    expect(buckets[0].km).toBe(14);
+  });
+
   it("returns nothing for a country with no dated openings", () => {
     expect(openedKmByDecade(projects, "xx")).toEqual([]);
   });

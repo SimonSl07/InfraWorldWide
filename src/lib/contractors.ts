@@ -1,3 +1,4 @@
+import { foldText } from "./text";
 import type {
   Contractor,
   ContractorEntry,
@@ -32,28 +33,9 @@ export interface AttributedContractor extends ResolvedContractor {
   role: Contractor["role"];
 }
 
-/** Letters that have no decomposed form, so NFD alone will not fold them. */
-const LETTER_FOLDS: Record<string, string> = {
-  ø: "o",
-  Ø: "o",
-  ł: "l",
-  Ł: "l",
-  đ: "d",
-  Đ: "d",
-  ß: "ss",
-  æ: "ae",
-  Æ: "ae",
-  œ: "oe",
-  Œ: "oe",
-};
-
 /** "Max Bögl" → "max-bogl", "SA&PE Construct" → "sa-pe-construct". */
 export function contractorSlug(name: string): string {
-  return name
-    .replace(/[øØłŁđĐßæÆœŒ]/g, (c) => LETTER_FOLDS[c] ?? c)
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
+  return foldText(name)
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
@@ -67,12 +49,16 @@ function deslug(id: string): string {
 }
 
 /**
- * Drops an em-dash scope note: "Alstom — Ilteu – Gurasada signalling" is
- * Alstom, working on a named section. Only the em dash (—) marks a note; the
- * en dash (–) separates joint-venture members and must survive.
+ * Drops a scope note after a colon: "Alstom: Ilteu – Gurasada signalling" is
+ * Alstom, working on a named section. Only the colon marks a note; the en
+ * dash (–) separates joint-venture members and must survive.
+ *
+ * The separator used to be an em dash, which reached the reader unchanged on
+ * the project page. No contractor name in the dataset contains a colon, so
+ * this is unambiguous.
  */
 export function stripScopeNote(name: string): string {
-  const cut = name.indexOf("—");
+  const cut = name.indexOf(":");
   return (cut === -1 ? name : name.slice(0, cut)).trim();
 }
 

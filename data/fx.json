@@ -1,0 +1,157 @@
+{
+  "base": "EUR",
+  "note": "Annual average euro foreign exchange reference rates, expressed as units of national currency per 1 EUR, so a cost recorded in RON, BGN, USD or RSD is divided by the rate for its own year to reach euro of that same year. That is all this table licenses: it makes nominal amounts comparable across currencies, not across time (pair it with data/deflators.json for real terms). An annual average also smears intra-year movement, so a contract signed on a single date was not struck at this rate. These are market reference rates, not purchasing-power parities; converting a Romanian and a German cost at them compares money exchanged, not construction bought. EUR is the base and is deliberately absent rather than carried as a self-rate of 1. The Romanian series is published by the ECB on the post-redenomination RON basis for every year, including those before the July 2005 cut of four zeroes (10,000 ROL = 1 RON), so 1999 reads 1.6345 RON/EUR rather than 16,345 ROL/EUR; no conversion was applied here. The Bulgarian lev has been held to the euro by a currency board, and Bulgaria adopted the euro on 1 January 2026 at 1.95583 BGN, making 2025 the last full lev year. The published averages are not all identical to that parity: the ECB reference rate is a market quote disseminated to four decimals, so 2000-2004 sit a few ten-thousandths below parity and only 2005 onward is a flat 1.9558 every year. BGN also has no 1999 figure and its 2000 figure averages July-December only, because the ECB began quoting the lev in July 2000. The ECB publishes no reference rate for the Serbian dinar, so RSD is taken from Eurostat's equivalent annual-average table; it starts in 2001 because 1999 and January-November 2000 are a frozen administered rate of exactly 11.735 dinars per euro, unified with the market rate only in December 2000, and those years are omitted rather than offered as rates at which anything could have been converted.",
+  "sources": [
+    {
+      "title": "European Central Bank Data Portal: Euro foreign exchange reference rates, annual averages [EXR, A.<CUR>.EUR.SP00.A]",
+      "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD+RON+BGN.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2025"
+    },
+    {
+      "title": "Eurostat: Euro/ECU exchange rates, annual data [ert_bil_eur_a], statinfo=AVG; source for RSD and cross-check for RON and USD",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ert_bil_eur_a?format=JSON&currency=RSD&statinfo=AVG&unit=NAC&sinceTimePeriod=1999"
+    },
+    {
+      "title": "Council Regulation (EU) 2025/1409 amending Regulation (EC) No 2866/98: irrevocable conversion rate of 1,95583 Bulgarian lev to the euro from 1 January 2026",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32025R1409"
+    }
+  ],
+  "rates": {
+    "BGN": {
+      "label": {
+        "en": "Bulgarian lev",
+        "ro": "Levă bulgărească"
+      },
+      "perEur": {
+        "2000": 1.9477,
+        "2001": 1.9482,
+        "2002": 1.9492,
+        "2003": 1.949,
+        "2004": 1.9533,
+        "2005": 1.9558,
+        "2006": 1.9558,
+        "2007": 1.9558,
+        "2008": 1.9558,
+        "2009": 1.9558,
+        "2010": 1.9558,
+        "2011": 1.9558,
+        "2012": 1.9558,
+        "2013": 1.9558,
+        "2014": 1.9558,
+        "2015": 1.9558,
+        "2016": 1.9558,
+        "2017": 1.9558,
+        "2018": 1.9558,
+        "2019": 1.9558,
+        "2020": 1.9558,
+        "2021": 1.9558,
+        "2022": 1.9558,
+        "2023": 1.9558,
+        "2024": 1.9558,
+        "2025": 1.9558
+      }
+    },
+    "RON": {
+      "label": {
+        "en": "Romanian leu",
+        "ro": "Leu românesc"
+      },
+      "perEur": {
+        "1999": 1.6345,
+        "2000": 1.9922,
+        "2001": 2.6004,
+        "2002": 3.127,
+        "2003": 3.7551,
+        "2004": 4.051,
+        "2005": 3.6209,
+        "2006": 3.5258,
+        "2007": 3.3353,
+        "2008": 3.6826,
+        "2009": 4.2399,
+        "2010": 4.2122,
+        "2011": 4.2391,
+        "2012": 4.4593,
+        "2013": 4.419,
+        "2014": 4.4437,
+        "2015": 4.4454,
+        "2016": 4.4904,
+        "2017": 4.5688,
+        "2018": 4.654,
+        "2019": 4.7453,
+        "2020": 4.8383,
+        "2021": 4.9215,
+        "2022": 4.9313,
+        "2023": 4.9467,
+        "2024": 4.9746,
+        "2025": 5.0424
+      }
+    },
+    "RSD": {
+      "label": {
+        "en": "Serbian dinar",
+        "ro": "Dinar sârbesc"
+      },
+      "perEur": {
+        "2001": 59.463,
+        "2002": 60.694,
+        "2003": 65.117,
+        "2004": 72.6937,
+        "2005": 82.9904,
+        "2006": 84.1101,
+        "2007": 79.964,
+        "2008": 81.4405,
+        "2009": 93.9517,
+        "2010": 103.0431,
+        "2011": 101.9502,
+        "2012": 113.1277,
+        "2013": 113.1369,
+        "2014": 117.306,
+        "2015": 120.7328,
+        "2016": 123.1179,
+        "2017": 121.3367,
+        "2018": 118.2716,
+        "2019": 117.8524,
+        "2020": 117.5777,
+        "2021": 117.5733,
+        "2022": 117.4588,
+        "2023": 117.2513,
+        "2024": 117.0851,
+        "2025": 117.2026
+      }
+    },
+    "USD": {
+      "label": {
+        "en": "US dollar",
+        "ro": "Dolar american"
+      },
+      "perEur": {
+        "1999": 1.0658,
+        "2000": 0.9236,
+        "2001": 0.8956,
+        "2002": 0.9456,
+        "2003": 1.1312,
+        "2004": 1.2439,
+        "2005": 1.2441,
+        "2006": 1.2556,
+        "2007": 1.3705,
+        "2008": 1.4708,
+        "2009": 1.3948,
+        "2010": 1.3257,
+        "2011": 1.392,
+        "2012": 1.2848,
+        "2013": 1.3281,
+        "2014": 1.3285,
+        "2015": 1.1095,
+        "2016": 1.1069,
+        "2017": 1.1297,
+        "2018": 1.181,
+        "2019": 1.1195,
+        "2020": 1.1422,
+        "2021": 1.1827,
+        "2022": 1.053,
+        "2023": 1.0813,
+        "2024": 1.0824,
+        "2025": 1.13
+      }
+    }
+  }
+}

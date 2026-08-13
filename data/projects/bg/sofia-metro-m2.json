@@ -1,0 +1,136 @@
+{
+  "id": "bg-sofia-metro-m2",
+  "country": "bg",
+  "city": "bg-sofia",
+  "category": "railway",
+  "name": {
+    "en": "Sofia Metro Line M2 (Obelya – Vitosha)",
+    "ro": "Magistrala M2 a metroului din Sofia (Obelya – Vitosha)"
+  },
+  "description": {
+    "en": "The blue line, Sofia's second metro diameter, running 11.7 km with 13 stations from the Obelya estate in the north-west through Nadezhda, the Central Railway Station and the National Palace of Culture to Lozenets and Hladilnika in the south. It was built as the first two EU-funded stages of the metro: a 6.4 km central section with seven stations, partly bored by TBM, and a 4.16 km northern section with four stations, both opened together on 31 August 2012. A 1.3 km extension to Vitosha followed on 20 July 2016. Trains run through at Obelya onto line M4 towards Sofia Airport; the two lines will be separated once the infill station Pancho Vladigerov opens.",
+    "ro": "Linia albastră, al doilea diametru al metroului din Sofia, cu 11,7 km și 13 stații, de la cartierul Obelya, în nord-vest, prin Nadezhda, Gara Centrală și Palatul Național al Culturii, până la Lozenets și Hladilnika, în sud. A fost construită ca primele două etape ale metroului finanțate de UE: un tronson central de 6,4 km cu șapte stații, executat parțial cu scut de tunel, și un tronson nordic de 4,16 km cu patru stații, deschise împreună pe 31 august 2012. O prelungire de 1,3 km până la Vitosha a urmat pe 20 iulie 2016. Trenurile continuă la Obelya pe magistrala M4 spre Aeroportul Sofia; cele două linii vor fi separate după deschiderea stației intermediare Pancho Vladigerov."
+  },
+  "lots": [
+    {
+      "id": "obelya-nadezhda-overpass",
+      "name": {
+        "en": "Stage II, Lot 1: Obelya – Nadezhda – Nadezhda Overpass",
+        "ro": "Etapa a II-a, Lotul 1: Obelya – Nadezhda – Pasajul Nadezhda"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-02",
+        "opened": "2012-08-31"
+      },
+      "lengthKm": 4.16,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Cohesion Fund grant of €200 million for the second construction stage, shared with the M4 section from Mladost 1 to Tsarigradsko shose",
+            "ro": "Grant din Fondul de coeziune de 200 de milioane de euro pentru etapa a doua de construcție, comun cu tronsonul M4 de la Mladost 1 la Tsarigradsko shose"
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "20% local co-financing by Sofia Municipality from a European Investment Bank loan",
+            "ro": "Cofinanțare locală de 20% de către Municipiul Sofia, dintr-un împrumut al Băncii Europene de Investiții"
+          }
+        }
+      ],
+      "geometryRef": "obelya-nadezhda-overpass",
+      "contract": {
+        "noticeReference": "Lot 1 of the second construction stage: 4.16 km (1.3 km on viaduct, 2.86 km underground) and four stations (Lomsko shose, Beli Dunav, Nadezhda and Han Kubrat) linking the Obelya depot with the Nadezhda overpass. Built 2009–2012 and accepted by the State Acceptance Commission in August 2012",
+        "noticeUrl": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-2"
+      }
+    },
+    {
+      "id": "nadezhda-overpass-james-bourchier",
+      "name": {
+        "en": "Stage I: Nadezhda Overpass – Central Railway Station – NDK – James Bourchier",
+        "ro": "Etapa I: Pasajul Nadezhda – Gara Centrală – NDK – James Bourchier"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-12",
+        "opened": "2012-08-31"
+      },
+      "lengthKm": 6.4,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "ERDF grant of €157 million under Priority Axis 3 of OP Transport 2007–2013",
+            "ro": "Grant FEDR de 157 de milioane de euro, Axa prioritară 3 a PO Transport 2007–2013"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Sofia Municipality co-financed 25% of the stage value",
+            "ro": "Municipiul Sofia a cofinanțat 25% din valoarea etapei"
+          }
+        }
+      ],
+      "geometryRef": "nadezhda-overpass-james-bourchier",
+      "contract": {
+        "noticeReference": "First construction stage: 6.4 km and seven stations from the Nadezhda overpass via the Central Railway Station and St Nedelya Square to Cherni vrah Blvd, including a 3.8 km double-track TBM drive of 8.43 m internal diameter serving four stations. Works ran from December 2008 to the opening on 31 August 2012, with final acceptance in October 2012",
+        "noticeUrl": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-1"
+      }
+    },
+    {
+      "id": "james-bourchier-vitosha",
+      "name": {
+        "en": "James Bourchier – Vitosha",
+        "ro": "James Bourchier – Vitosha"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014-08",
+        "opened": "2016-07-20"
+      },
+      "lengthKm": 1.3,
+      "cost": {
+        "actual": {
+          "amount": 21.9,
+          "currency": "EUR",
+          "year": 2014
+        }
+      },
+      "geometryRef": "james-bourchier-vitosha",
+      "contract": {
+        "value": {
+          "amount": 21.9,
+          "currency": "EUR",
+          "year": 2014
+        },
+        "noticeReference": "1.3 km southward extension with the single station Vitosha at Hladilnika, valued at €21.9 million and built between August 2014 and July 2016",
+        "noticeUrl": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-3"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Sofia Metro",
+      "url": "https://en.wikipedia.org/wiki/Sofia_Metro"
+    },
+    {
+      "title": "Metropoliten Sofia: First stage of the metro extension (OP Transport)",
+      "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-1"
+    },
+    {
+      "title": "Metropoliten Sofia: Second stage of the metro extension (OP Transport)",
+      "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-2"
+    },
+    {
+      "title": "Metropoliten Sofia: Third stage of the metro extension (OP Transport)",
+      "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-3"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

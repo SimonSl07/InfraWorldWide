@@ -48,7 +48,7 @@ export default function CountryGrowthChart({
           <div
             key={bucket.decade}
             className="group flex h-full flex-1 flex-col justify-end"
-            title={`${decadeLabel(bucket.decade)} — ${formatKm(bucket.km, locale)}`}
+            title={`${decadeLabel(bucket.decade)}: ${formatKm(bucket.km, locale)}`}
           >
             <div
               className="flex w-full flex-col-reverse justify-start"
@@ -64,7 +64,7 @@ export default function CountryGrowthChart({
                       height: `${(km / bucket.km) * 100}%`,
                       backgroundColor: CATEGORY_COLORS[category],
                     }}
-                    title={`${decadeLabel(bucket.decade)} · ${categoryLabel(category)} — ${formatKm(km, locale)}`}
+                    title={`${decadeLabel(bucket.decade)} · ${categoryLabel(category)}: ${formatKm(km, locale)}`}
                   />
                 );
               })}

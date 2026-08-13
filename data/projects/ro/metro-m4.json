@@ -1,0 +1,131 @@
+{
+  "id": "ro-metro-m4",
+  "country": "ro",
+  "city": "ro-bucharest",
+  "category": "railway",
+  "name": {
+    "en": "Bucharest Metro Line M4 (Gara de Nord 2 – Străulești)",
+    "ro": "Magistrala 4 de metrou București (Gara de Nord 2 – Străulești)"
+  },
+  "description": {
+    "en": "The shortest line of the Bucharest Metro, running north-west from Gara de Nord 2 along Calea Griviței and Bucureștii Noi to Străulești. Construction started in September 1989 and stopped after the revolution, so the first section opened only on 1 March 2000, followed by Parc Bazilescu in 2011 and Străulești in 2017, all financed with European Investment Bank loans. Metrorex records 7.44 km and 8 stations in operation. The section from Gara de Nord 2 to 1 Mai will also carry line M6 to the airport, and an 11 km southern extension to Gara Progresul went to tender in April 2024.",
+    "ro": "Cea mai scurtă magistrală a metroului bucureștean, care merge spre nord-vest de la Gara de Nord 2, pe Calea Griviței și Bucureștii Noi, până la Străulești. Construcția a început în septembrie 1989 și s-a oprit după revoluție, astfel că primul tronson a fost deschis abia pe 1 martie 2000, urmat de Parc Bazilescu în 2011 și Străulești în 2017, toate finanțate din împrumuturi de la Banca Europeană de Investiții. Metrorex indică 7,44 km și 8 stații în funcțiune. Tronsonul Gara de Nord 2 – 1 Mai va fi parcurs și de magistrala M6 spre aeroport, iar prelungirea de 11 km spre sud, până la Gara Progresul, a fost scoasă la licitație în aprilie 2024."
+  },
+  "lots": [
+    {
+      "id": "gara-de-nord-1-mai",
+      "name": {
+        "en": "Section I: Gara de Nord 2 – 1 Mai",
+        "ro": "Tronsonul I: Gara de Nord 2 – 1 Mai"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1989-09",
+        "opened": "2000-03-01"
+      },
+      "lengthKm": 3.6,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "European Investment Bank loan",
+            "ro": "Împrumut de la Banca Europeană de Investiții"
+          }
+        }
+      ],
+      "geometryRef": "gara-de-nord-1-mai",
+      "contract": {
+        "noticeReference": "3.6 km and 4 stations, the first line begun under the communist government and finished after it. Tunnelling reached as far as today's Parc Bazilescu before works were abandoned and restarted in the 1990s. Basarab 2 is a four-track station with the M1 tracks between the M4 tracks. Ziarul Financiar reported the investment at €220 million; no price year is published for a spend running from 1989 to 2000, so no cost is recorded. Line M6 will share this section",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    },
+    {
+      "id": "1-mai-parc-bazilescu",
+      "name": {
+        "en": "1 Mai – Jiului – Parc Bazilescu",
+        "ro": "1 Mai – Jiului – Parc Bazilescu"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-07-01"
+      },
+      "lengthKm": 2.62,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "European Investment Bank loan",
+            "ro": "Împrumut de la Banca Europeană de Investiții"
+          }
+        }
+      ],
+      "geometryRef": "1-mai-parc-bazilescu",
+      "contract": {
+        "noticeReference": "2.62 km and 2 stations, Jiului and Parc Bazilescu. Parc Bazilescu was not in the original plan and was built to bring the section into service sooner",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    },
+    {
+      "id": "parc-bazilescu-straulesti",
+      "name": {
+        "en": "Parc Bazilescu – Străulești",
+        "ro": "Parc Bazilescu – Străulești"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013",
+        "opened": "2017-03-31"
+      },
+      "lengthKm": 2.1,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "European Investment Bank loan",
+            "ro": "Împrumut de la Banca Europeană de Investiții"
+          }
+        }
+      ],
+      "geometryRef": "parc-bazilescu-straulesti",
+      "contract": {
+        "noticeReference": "2.1 km and 2 stations, Laminorului and Străulești, together with the Străulești depot and an interchange with the surface network. Works started in 2013, tunnelling was finished on 3 September 2015 and the stations opened on 31 March 2017. The English article gives this section as 1.89 km and the M4 article as 1.6 km",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    },
+    {
+      "id": "gara-de-nord-gara-progresul",
+      "name": {
+        "en": "Southern extension: Gara de Nord – Gara Progresul",
+        "ro": "Prelungirea spre sud: Gara de Nord – Gara Progresul"
+      },
+      "status": "tendered",
+      "dates": {
+        "announced": "2024-04"
+      },
+      "lengthKm": 11,
+      "geometryRef": "gara-de-nord-gara-progresul",
+      "contract": {
+        "noticeReference": "About 11 km and 14 new stations south from Gara de Nord along Berzei, Vasile Pârvan, Hașdeu, Izvor, 13 Septembrie, Tudor Vladimirescu, Șoseaua Viilor and Șoseaua Giurgiului to Gara Progresul, where a depot is planned. Route from the revised feasibility study presented in November 2020; the tender was launched on 26 April 2024. The English article gives the planned length as 10.6 km. The alignment drawn here follows those streets and is indicative",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Metroul din București",
+      "url": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+    },
+    {
+      "title": "Wikipedia: Bucharest Metro Line M4",
+      "url": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M4"
+    },
+    {
+      "title": "UrbanRail.Net: Bucharest Metro",
+      "url": "https://www.urbanrail.net/eu/ro/buc/bucurest.htm"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry of the opened sections, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

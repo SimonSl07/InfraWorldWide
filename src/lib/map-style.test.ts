@@ -12,6 +12,11 @@ import {
   countryOutlineOpacity,
   countryOutlineWidth,
   dimByCountry,
+  dimByProject,
+  projectFilter,
+  pickedFillColor,
+  pickedFillOpacity,
+  pickedOutlineWidth,
 } from "./map-style";
 
 /**
@@ -108,6 +113,82 @@ describe("country layer paint", () => {
       ["interpolate", ["linear"], ["zoom"], 4, 0.35, 8, 0],
     ];
     expect(validate(nested, "line-opacity")).toMatch(/interpolate/);
+  });
+});
+
+describe("city view paint", () => {
+  it("is the plain value when no project is selected", () => {
+    expect(dimByProject(0.95, null)).toBe(0.95);
+  });
+
+  it("keeps the selected line at full strength and fades the rest", () => {
+    expect(dimByProject(0.9, "ro-metro-m5")).toEqual([
+      "case",
+      ["==", ["get", "projectId"], "ro-metro-m5"],
+      0.9,
+      0.9 * DIMMED,
+    ]);
+  });
+
+  it("builds valid opacity expressions", () => {
+    for (const selected of [null, "ro-metro-m5"]) {
+      for (const full of [0.6, 0.8, 0.95, 1]) {
+        expect(validate(dimByProject(full, selected), "line-opacity")).toBeNull();
+      }
+      expect(
+        validate(
+          dimByProject(0.95, selected),
+          "circle-opacity",
+          "paint_circle",
+        ),
+      ).toBeNull();
+    }
+  });
+
+  it("builds a filter matching one project", () => {
+    expect(projectFilter("ro-metro-m6")).toEqual([
+      "==",
+      ["get", "projectId"],
+      "ro-metro-m6",
+    ]);
+  });
+});
+
+describe("country picker paint", () => {
+  const PICKS: string[][] = [[], ["ro"], ["ro", "bg", "rs"]];
+
+  it("builds valid fill expressions for any selection", () => {
+    for (const picked of PICKS) {
+      for (const hovered of SELECTIONS) {
+        expect(
+          validate(
+            pickedFillOpacity(picked, hovered),
+            "fill-opacity",
+            "paint_fill",
+          ),
+        ).toBeNull();
+      }
+      expect(
+        validate(pickedFillColor(picked), "fill-color", "paint_fill"),
+      ).toBeNull();
+      expect(validate(pickedOutlineWidth(picked), "line-width")).toBeNull();
+    }
+  });
+
+  it("keeps unpicked countries clickable", () => {
+    // Same reason as the main map: a zero-opacity fill is not hit-tested,
+    // and the whole point of this map is clicking the countries.
+    const expression = pickedFillOpacity([], null);
+    expect(expression[expression.length - 1]).toBeGreaterThan(0);
+  });
+
+  it("matches every picked country, not just the first", () => {
+    const expression = pickedFillOpacity(["ro", "bg"], null);
+    expect(expression[1]).toEqual([
+      "in",
+      ["get", "country"],
+      ["literal", ["ro", "bg"]],
+    ]);
   });
 });
 
