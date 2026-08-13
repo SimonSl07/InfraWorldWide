@@ -29,3 +29,20 @@ InfraWorldWide — a static Next.js app mapping world infrastructure projects (h
 - Geometry is ODbL (OSM-derived) — attribution in footer + project sources is mandatory.
 - Locale routes live under `src/app/[lang]`; navigation must use `@/i18n/navigation` (not next/link) so locale prefixes are kept.
 - Avoid `useSearchParams` outside Suspense boundaries (it forces CSR bailout and breaks SSG of the whole page).
+- A project with a `city` key is excluded from the main map and appears only on that city's page. City work is invisible at country zoom and buries the motorway network under it.
+- A lot with `sharedWith` is track another project already owns (two metro lines through-running one tunnel). It counts toward its own line's length and is excluded from **every total that spans projects**. This is how operators report it: Sofia's four lines sum to 66.5 km against a 55.0 km system, and Bucharest breaks out M3's "8.67 km (M1 shared section)". Add the filter to any new aggregate.
+- Costs are compared by deflating within the currency **first**, then converting to euro at that year's rate. Converting first mixes inflation and currency movement. Either step may refuse; a figure that cannot be restated is shown as recorded and dropped from rankings, never guessed.
+
+## Writing style (user-facing text)
+
+Applies to `messages/*.json`, page copy, and every `description` / `note` field in `data/`.
+
+- **No em dashes (—, U+2014).** Use a full stop, comma, colon or brackets instead.
+- **En dashes (–, U+2013) are correct and must be preserved** in ranges and route names: `Sebeș–Turda`, `Râul Doamnei – Eroilor`, `2013–2016`. They are part of the name; changing one corrupts it.
+- Short and factual over long and padded. Cut any sentence carrying no figure, date, name or caveat.
+- Avoid the AI register: "serves as", "plays a crucial role", "boasts", "stands as a testament", triads of adjectives, sentences restating their own first clause.
+- Don't editorialise about whether a project is good or late unless a recorded fact says so.
+
+## MapLibre paint expressions
+
+Only **one** zoom-dependent `interpolate` per expression, and it must be **outermost**. Nesting one inside a `case` type-checks fine and makes MapLibre silently drop the entire layer, with no error. Build such expressions in `src/lib/map-style.ts` and validate them in `map-style.test.ts` against the real style spec (`createPropertyExpression`), which is the only thing that catches this.

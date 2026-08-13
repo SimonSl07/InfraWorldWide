@@ -102,6 +102,19 @@ export const lotSchema = z
     funding: z.array(fundingSchema).optional(),
     contractors: z.array(contractorSchema).optional(),
     contract: contractSchema.optional(),
+    /**
+     * Set when this lot's physical track is already a lot of another
+     * project, naming the project that owns it.
+     *
+     * Two metro lines that through-run the same tunnel each list it, because
+     * each line really is that long. A network total must still count the
+     * track once, which is how the operators report it: Sofia's four lines
+     * sum to 66.5 km against a 55.0 km system, and Bucharest breaks out
+     * M3's "8.67 km (M1 shared section)" for exactly this reason. So a
+     * shared lot counts toward its own project's length and is excluded from
+     * every total that spans projects.
+     */
+    sharedWith: z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/).optional(),
     /** Key of a feature's properties.geometryRef in the project's GeoJSON file. */
     geometryRef: z.string().min(1),
   })
@@ -125,6 +138,13 @@ export const projectSchema = z.object({
   id: z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/),
   /** ISO 3166-1 alpha-2, lowercase. */
   country: z.string().length(2),
+  /**
+   * City this project belongs to, keyed into data/cities.json. Setting it
+   * moves the project off the main map entirely and onto that city's own
+   * view: a metro line drawn at country zoom is a smudge that buries the
+   * motorway network under it.
+   */
+  city: z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/).optional(),
   category: categorySchema,
   name: localizedStringSchema,
   description: localizedStringSchema,
@@ -187,6 +207,85 @@ export const countryTableSchema = z.object({
 export type CountryTable = z.infer<typeof countryTableSchema>;
 
 /**
+ * Annual average exchange rates, used to put costs recorded in different
+ * currencies on one axis. Separate from the deflator table because they
+ * answer different questions: the deflator moves money through time within
+ * a currency, this moves it across currencies within a year.
+ */
+export const fxSeriesSchema = z.object({
+  label: localizedStringSchema,
+  /** Year → units of this currency per 1 EUR. */
+  perEur: z.record(z.string().regex(/^\d{4}$/), z.number().positive()),
+});
+export type FxSeries = z.infer<typeof fxSeriesSchema>;
+
+export const fxTableSchema = z
+  .object({
+    /** Currency every rate is quoted against. */
+    base: z.string().length(3),
+    note: z.string().min(1),
+    sources: z.array(sourceSchema).min(1),
+    rates: z.record(z.string().length(3), fxSeriesSchema),
+  })
+  .superRefine((table, ctx) => {
+    // The rate field is literally named perEur, so a non-euro base would be
+    // a silent lie about what the numbers mean.
+    if (table.base !== "EUR") {
+      ctx.addIssue({ code: "custom", message: 'fx base must be "EUR"' });
+    }
+    if (table.rates[table.base]) {
+      ctx.addIssue({
+        code: "custom",
+        message: `fx rates must not contain the base currency "${table.base}"`,
+      });
+    }
+  });
+export type FxTable = z.infer<typeof fxTableSchema>;
+
+/**
+ * Per-person money. Deliberately not `moneySchema`, whose amount is in
+ * MILLIONS — GDP per capita is in whole units and mixing the two would be a
+ * six-order-of-magnitude error that still validates.
+ */
+export const perCapitaMoneySchema = z.object({
+  amount: z.number().positive(),
+  currency: z.string().length(3),
+  year: z.number().int().min(1900).max(2100),
+});
+
+/**
+ * A city with its own view: metro lines, urban bridges and the like, which
+ * are invisible at country zoom and would otherwise clutter the main map.
+ */
+export const citySchema = z.object({
+  /** ISO 3166-1 alpha-2, lowercase — must match the projects placed here. */
+  country: z.string().length(2),
+  name: localizedStringSchema,
+  population: z.number().int().positive(),
+  /** When the population figure was measured, e.g. "2021-12". */
+  populationDate: dateStringSchema,
+  gdpPerCapita: perCapitaMoneySchema.optional(),
+  /** [longitude, latitude] of the city centre, for the map camera. */
+  center: z.tuple([
+    z.number().min(-180).max(180),
+    z.number().min(-90).max(90),
+  ]),
+  /** Best public page about the city. */
+  link: z.url().optional(),
+  /** Caveat shown with the figures. Localized: it is prose for the reader. */
+  note: localizedStringSchema.optional(),
+  sources: z.array(sourceSchema).min(1),
+});
+export type City = z.infer<typeof citySchema>;
+
+export const cityTableSchema = z.object({
+  note: z.string().min(1),
+  /** Keyed by "<country>-<slug>", as referenced by Project.city. */
+  cities: z.record(z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/), citySchema),
+});
+export type CityTable = z.infer<typeof cityTableSchema>;
+
+/**
  * A canonical contractor. `members` marks the entry as a joint venture whose
  * work is credited both to the JV and to each member firm.
  */
@@ -204,6 +303,17 @@ export const contractorRegistrySchema = z.object({
   contractors: z.array(contractorEntrySchema),
 });
 export type ContractorRegistry = z.infer<typeof contractorRegistrySchema>;
+
+/**
+ * Whether a lot's track is already counted under another project.
+ *
+ * The one predicate every cross-project total has to apply. Counting a
+ * through-run tunnel once per line inflates a city's network by the length
+ * of the shared section.
+ */
+export function isSharedTrack(lot: Lot): boolean {
+  return lot.sharedWith !== undefined;
+}
 
 /** Extract the year from a date string ("2012", "2012-06", "2012-06-15" → 2012). */
 export function dateYear(date: string): number {

@@ -1,0 +1,98 @@
+{
+  "id": "ro-metro-m3",
+  "country": "ro",
+  "city": "ro-bucharest",
+  "category": "railway",
+  "name": {
+    "en": "Bucharest Metro Line M3 (Preciziei – Anghel Saligny)",
+    "ro": "Magistrala 3 de metrou București (Preciziei – Anghel Saligny)"
+  },
+  "description": {
+    "en": "The east to west line of the Bucharest Metro, made of two branches that own no track between them. The western branch from Eroilor to Industriilor, now Preciziei, opened on 19 August 1983 as a branch of M1; the eastern branch from Nicolae Grigorescu to Anghel Saligny was started in 1988, abandoned in 1996 with the tunnels flooded, restarted in 2004 and opened in November 2008. The two ran as separate shuttles until 4 July 2009, when they were joined over the M1 tracks between Eroilor and Nicolae Grigorescu. Metrorex therefore gives the line as 13.53 km plus 8.67 km shared with M1.",
+    "ro": "Magistrala est-vest a metroului bucureștean, formată din două ramuri între care nu deține linie proprie. Ramura de vest, Eroilor – Industriilor (azi Preciziei), a fost deschisă pe 19 august 1983 ca derivație a magistralei 1; ramura de est, Nicolae Grigorescu – Anghel Saligny, a fost începută în 1988, abandonată în 1996 cu tunelurile inundate, reluată în 2004 și dată în folosință în noiembrie 2008. Cele două au funcționat ca navete separate până pe 4 iulie 2009, când au fost unite pe liniile M1 dintre Eroilor și Nicolae Grigorescu. Metrorex indică de aceea 13,53 km plus 8,67 km în comun cu M1."
+  },
+  "lots": [
+    {
+      "id": "eroilor-industriilor",
+      "name": {
+        "en": "Western branch: Eroilor – Industriilor (Preciziei)",
+        "ro": "Ramura de vest: Eroilor – Industriilor (Preciziei)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1983-08-19"
+      },
+      "lengthKm": 8.63,
+      "geometryRef": "eroilor-industriilor",
+      "contract": {
+        "noticeReference": "8.63 km and 4 stations west from Eroilor to the Industriilor works and depot, planned in 1974 as a branch of the first line and opened on 19 August 1983. Gorjului was added later, its westbound platform in August 1994 and its eastbound platform in 1998. Industriilor and Armata Poporului were renamed Preciziei and Lujerului in 2009",
+        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+      }
+    },
+    {
+      "id": "eroilor-nicolae-grigorescu-shared",
+      "name": {
+        "en": "Eroilor – Nicolae Grigorescu (shared with M1)",
+        "ro": "Eroilor – Nicolae Grigorescu (comună cu M1)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-07-04"
+      },
+      "lengthKm": 8.67,
+      "sharedWith": "ro-metro-m1",
+      "geometryRef": "eroilor-nicolae-grigorescu-shared",
+      "contract": {
+        "noticeReference": "M3 trains use the M1 tracks over the 8.67 km and 7 stations between Eroilor and Nicolae Grigorescu, which opened in 1979 and 1981 as part of M1. Through running started on 4 July 2009 and joined the line's two shuttles; Metrorex lists the section separately as 8.67 km (M1)",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro"
+      }
+    },
+    {
+      "id": "nicolae-grigorescu-anghel-saligny",
+      "name": {
+        "en": "Eastern branch: Nicolae Grigorescu 2 – Anghel Saligny",
+        "ro": "Ramura de est: Nicolae Grigorescu 2 – Anghel Saligny"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1988",
+        "opened": "2008-11-20"
+      },
+      "lengthKm": 4.75,
+      "cost": {
+        "actual": {
+          "amount": 145,
+          "currency": "EUR",
+          "year": 2008
+        }
+      },
+      "geometryRef": "nicolae-grigorescu-anghel-saligny",
+      "contract": {
+        "noticeReference": "4.75 km and 4 stations east to Linia de Centură, renamed Anghel Saligny in 2009. Works began in 1988, stopped in 1996 with the tunnels flooded and resumed in 2004; the section opened as a shuttle. Ziarul Financiar reported the investment at €145 million, with no price year stated, recorded here at 2008 prices. The Romanian article dates the opening 19 November 2008 and the English article and UrbanRail 20 November",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M3"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Metroul din București",
+      "url": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
+    },
+    {
+      "title": "Wikipedia: Bucharest Metro Line M3",
+      "url": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M3"
+    },
+    {
+      "title": "Wikipedia: Bucharest Metro (line lengths, Metrorex activity report 2018)",
+      "url": "https://en.wikipedia.org/wiki/Bucharest_Metro"
+    },
+    {
+      "title": "UrbanRail.Net: Bucharest Metro",
+      "url": "https://www.urbanrail.net/eu/ro/buc/bucurest.htm"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

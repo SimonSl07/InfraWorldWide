@@ -33,7 +33,7 @@ function OpeningList({
         {title}
       </h3>
       {openings.length === 0 ? (
-        <p className="mt-2 text-sm text-neutral-400">—</p>
+        <p className="mt-2 text-sm text-neutral-400">–</p>
       ) : (
         <ul className="mt-2 space-y-1.5">
           {openings.slice(0, 10).map((o) => (
@@ -50,7 +50,7 @@ function OpeningList({
                   style={{ backgroundColor: CATEGORY_COLORS[o.category] }}
                 />
                 <span className="min-w-0 truncate">
-                  {name(o.projectName)} — {name(o.lotName)}
+                  {name(o.projectName)} / {name(o.lotName)}
                 </span>
                 <span className="text-neutral-400 shrink-0">{o.lengthKm} km</span>
               </Link>

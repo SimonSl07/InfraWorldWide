@@ -77,6 +77,16 @@ export function computeSlip(lot: Lot, nowMonth: number): Slip | null {
 
   const forecast = monthIndex(lot.dates?.expectedOpening);
 
+  // A lot cannot be forecast to open before the contract that builds it was
+  // awarded. When it is, the record contradicts itself and any slip derived
+  // from it is fiction: A8 Moțca–Târgu Frumos carries tenderAwarded 2026-04
+  // against expectedOpening 2026 and reported 42 months EARLY while still
+  // under construction, which then dragged down its country's and its
+  // builder's medians. Refuse, as this module does everywhere else it cannot
+  // support a claim.
+  const anchorMonth = baseline.month - baseline.months;
+  if (forecast !== null && forecast < anchorMonth) return null;
+
   if (forecast === null) {
     // No announced date: the only evidence of slip is the calendar itself.
     if (nowMonth <= plannedMonth) return null;

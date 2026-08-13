@@ -206,6 +206,40 @@ describe("summarizeCountries", () => {
     }),
   ];
 
+  /**
+   * Two metro lines through-running one tunnel each list it, because each
+   * line really is that long, but the network is not. Operators publish it
+   * the same way: Sofia's four lines sum to 66.5 km against a 55.0 km
+   * system, and Bucharest breaks out M3's "8.67 km (M1 shared section)".
+   */
+  it("counts track shared between two lines once", () => {
+    const shared = [
+      project({
+        id: "bg-m1",
+        country: "bg",
+        category: "railway",
+        lots: [lot("tunnel", { dates: { opened: "2010-01" }, lengthKm: 14 })],
+      }),
+      project({
+        id: "bg-m4",
+        country: "bg",
+        category: "railway",
+        lots: [
+          lot("own", { dates: { opened: "2015-01" }, lengthKm: 9 }),
+          lot("through-run", {
+            dates: { opened: "2010-01" },
+            lengthKm: 14,
+            sharedWith: "bg-m1",
+          }),
+        ],
+      }),
+    ];
+    const [bg] = summarizeCountries(shared, NOW, NOW);
+    // 14 + 9, not 14 + 9 + 14.
+    expect(bg.total.openedKm).toBe(23);
+    expect(bg.byCategory.railway.lots).toBe(2);
+  });
+
   it("splits length by category and state at the viewed month", () => {
     const [bg, ro] = summarizeCountries(projects, NOW, NOW);
     expect(bg.code).toBe("bg");

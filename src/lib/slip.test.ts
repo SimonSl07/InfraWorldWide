@@ -277,6 +277,39 @@ describe("computeSlip — no claim possible", () => {
       ),
     ).toBeNull();
   });
+
+  /**
+   * Taken from a real record: A8 Moțca–Târgu Frumos carries tenderAwarded
+   * 2026-04 against expectedOpening 2026. A lot cannot open before the
+   * contract that builds it was awarded, and treating the pair as real
+   * reported the lot 42 months EARLY while it was still under construction,
+   * which then pulled down its country's and its builder's medians.
+   */
+  it("returns null when the expected opening precedes the award", () => {
+    expect(
+      computeSlip(
+        lot({
+          status: "under_construction",
+          dates: { tenderAwarded: "2026-04", expectedOpening: "2026-01" },
+          contract: { designMonths: 10, executionMonths: 36 },
+        }),
+        at("2026-08"),
+      ),
+    ).toBeNull();
+  });
+
+  it("still measures an expected opening that follows the award", () => {
+    const slip = computeSlip(
+      lot({
+        status: "under_construction",
+        dates: { tenderAwarded: "2020-01", expectedOpening: "2026-01" },
+        contract: { designMonths: 10, executionMonths: 36 },
+      }),
+      at("2024-01"),
+    );
+    expect(slip).not.toBeNull();
+    expect(slip!.anchor).toBe("tenderAwarded");
+  });
 });
 
 describe("currentMonth", () => {

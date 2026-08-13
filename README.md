@@ -43,11 +43,36 @@ Data lives in the repo, curated by hand (facts from cited public sources):
 ```
 data/projects/<country>/<project>.json   # metadata: lots, dates, costs, funding, contractors, sources
 data/geo/<country>/<project>.geojson     # geometry: one feature per lot, properties.geometryRef
+data/geo/countries/<cc>.geojson          # country outline, the map's click target
+data/countries.json                      # area + population, for the density figures
+data/cities.json                         # cities that get their own view
+data/deflators.json                      # price indices, to compare costs across years
+data/fx.json                             # annual average exchange rates, to compare across currencies
+data/contractors.json                    # canonical contractor identities and aliases
 ```
 
 A **Project** (e.g. "A1 motorway") has **Lots** — sections with their own status, dates, cost, contractors. A lot's `geometryRef` joins it to a GeoJSON feature. `npm run data:validate` enforces the schema (zod), requires `dates.opened` for opened lots, sources for every project, and a matching geometry feature for every lot. The same checks run in `npm test` (`scripts/data-integrity.test.ts`).
 
-Amounts in `cost` are in **millions** of the currency unit (`{"amount": 500, "currency": "EUR"}` = €500M).
+Amounts in `cost` are in **millions** of the currency unit (`{"amount": 500, "currency": "EUR"}` = €500M). The one exception is `gdpPerCapita` in `data/cities.json`, which is a per-person figure in **whole** units.
+
+### Cities
+
+A project may carry a `city` key (`"city": "ro-bucharest"`) pointing into `data/cities.json`. Setting it **moves the project off the main map entirely** and onto that city's own page at `/[lang]/cities/<key>`: a metro line drawn at country zoom is a few pixels of noise sitting on top of the motorway network. The build writes those projects to `public/data/geo/cities/<key>.geojson` instead of the country file, plus a `cities.geojson` of one point per city that the map renders as a clickable marker. Validation checks both directions, so a project cannot point at a city that does not exist and a city cannot sit there with no projects.
+
+### Shared track
+
+Two metro lines that through-run the same tunnel each list it, because each line really is that long. The lot on the borrowing line carries `"sharedWith": "<owning project id>"`, which keeps it in that line's own length and drops it from every total spanning projects: city and country network km, the growth chart, the by-country league, and the opened-sections table.
+
+That is how operators publish it. Sofia's four lines sum to 66.5 km against a 55.0 km system; Bucharest's infobox breaks out M3's "8.67 km (M1 shared section)" so the 80.1 km network total stays right. Validation checks the pointer resolves to a real project in the same country and city.
+
+### Comparing costs
+
+Two reference tables put costs on one axis, and the order they are applied matters:
+
+1. `data/deflators.json` restates a figure into a common **price year**, within its own currency.
+2. `data/fx.json` then converts it to euro at **that year's** annual average rate.
+
+Converting first would apply a rate from one year to prices from another, mixing inflation and currency movement into one unattributable number. Either step may refuse (a currency with no published rates, a price year outside the series); the cost then shows as recorded but drops out of any ranking rather than being sorted against figures that mean something different. `src/lib/performance.test.ts` pins the ordering.
 
 ### Contract terms and expected openings
 
@@ -87,6 +112,9 @@ Full notice XML (with `VAL_ESTIMATED_TOTAL`) is at `https://ted.europa.eu/en/not
 | **Natural Earth** 1:50m admin-0 | **Public domain — no attribution required** | Country outlines: the map's click targets and dimming mask | In use via `scripts/fetch-country-outlines.ts`. Borders are generalised, so they drift from the OSM basemap above ~z8 — the rendered outline fades out before that shows |
 | **CIA World Factbook** (via [factbook.json](https://github.com/factbook/factbook.json)) | Public domain | Country area, on one methodology worldwide | In use for `data/countries.json`. **Retired February 2026** — cia.gov no longer serves country pages, and Wayback captured only the page shell, so cite the factbook.json conversion of the final 2025 edition |
 | **Eurostat** (`demo_gind`) | Free reuse (2011/833/EU) | Population on 1 January, incl. enlargement countries like Serbia | In use for `data/countries.json`. Publishes **no area figure for Serbia**, which is why area comes from the Factbook throughout |
+| **Eurostat** (`nama_10r_3gdp`) | Free reuse (2011/833/EU) | GDP per inhabitant by NUTS 3 region | In use for `data/cities.json`. A NUTS 3 region is not always the city: `RO321` is exactly the Bucharest municipality, but `BG411` is Stolichna municipality, ~8% more people than Sofia town. Watch out for `BG412`, which is the rural Sofia *Province*, not the city |
+| **Eurostat** (`prc_hicp_aind`, `INX_A_AVG`) | Free reuse (2011/833/EU) | HICP annual average index, 2015 = 100 | In use for `data/deflators.json`, all five series |
+| **ECB** euro reference rates (`EXR/A.<CUR>.EUR.SP00.A`) | Free reuse with attribution | Annual average exchange rates against the euro | In use for `data/fx.json`. Publishes **no RSD series** (404), so the dinar comes from Eurostat `ert_bil_eur_a` instead; the two agree to 4 dp on every year for RON and USD, which is how that substitution was checked. RON is published already redenominated, so pre-2005 years need **no** ROL conversion |
 | **TED** (`api.ted.europa.eu`) | Free reuse (EU Commission decision 2011/833/EU) | Contract durations/values — **eForms notices only (≈2024+)** | Useful for future awards, near-useless for 2018–23 Romanian motorways |
 | `e-licitatie.ro` | — | National procurement | No open API (404) |
 | `opentender.eu` | — | Procurement analytics | Blocks automated requests (403) |

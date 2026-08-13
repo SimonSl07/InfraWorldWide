@@ -1,4 +1,4 @@
-import { dateYear } from "./schema";
+import { dateYear, isSharedTrack } from "./schema";
 import { ALL_CATEGORIES } from "./map-style";
 import type { Category, Project } from "./schema";
 
@@ -58,6 +58,8 @@ export function openedKmByDecade(
     if (country && project.country !== country) continue;
     for (const lot of project.lots) {
       if (lot.status === "cancelled" || !lot.dates?.opened) continue;
+      // Shared track already counted under the line that owns it.
+      if (isSharedTrack(lot)) continue;
       const b = bucket(decadeOf(dateYear(lot.dates.opened)));
       b.byCategory[project.category] += lot.lengthKm;
       b.km += lot.lengthKm;

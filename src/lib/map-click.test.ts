@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import type { Feature } from "geojson";
-import { hoveredCountry, resolveMapClick } from "./map-click";
+import { hoveredCountry, resolveMapClick, toggleSelection } from "./map-click";
 
 function lot(id: string, coords: [number, number][]): Feature {
   return {
@@ -74,6 +74,23 @@ describe("resolveMapClick", () => {
       geometry: { type: "Point", coordinates: [25, 45] },
     };
     expect(resolveMapClick([stray], point)).toEqual({ kind: "none" });
+  });
+});
+
+describe("toggleSelection", () => {
+  it("selects a new thing", () => {
+    expect(toggleSelection(null, "ro-metro-m5")).toBe("ro-metro-m5");
+    expect(toggleSelection("ro-metro-m6", "ro-metro-m5")).toBe("ro-metro-m5");
+  });
+
+  /** Two metro lines can leave almost no empty map to click between them. */
+  it("clears when the selected thing is clicked again", () => {
+    expect(toggleSelection("ro-metro-m5", "ro-metro-m5")).toBeNull();
+  });
+
+  it("clears on a click that hit nothing", () => {
+    expect(toggleSelection("ro-metro-m5", null)).toBeNull();
+    expect(toggleSelection(null, null)).toBeNull();
   });
 });
 

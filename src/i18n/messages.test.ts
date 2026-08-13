@@ -60,50 +60,121 @@ describe("message catalogues", () => {
     expect(mismatched).toEqual([]);
   });
 
-  it("covers every key the rankings page needs", () => {
-    // Guards the page built in this feature: these are read through t() at
-    // render time, so a typo only surfaces in the browser otherwise.
+  it("covers every key the performance page needs", () => {
+    // Guards the page: these are read through t() at render time, so a typo
+    // only surfaces in the browser otherwise.
+    const required = [
+      ...[
+        "title",
+        "intro",
+        "asOf",
+        "priceYear",
+        "coverage",
+        "coverageGap",
+        "byContractorTitle",
+        "byCountryTitle",
+        "thSection",
+        "thCountry",
+        "thKm",
+        "thOpened",
+        "thSlip",
+        "thFirm",
+        "thLots",
+        "thMedianSlip",
+        "thMedianOverrun",
+        "thOnTime",
+        "unitMonths",
+        "emptySlip",
+        "emptyGroup",
+        "methodologyTitle",
+        "methodologyCosts",
+        "methodologySchedule",
+        "methodologySource",
+      ].map((k) => `rankings.${k}`),
+      ...["sortHint", "showing", "previous", "next", "page"].map(
+        (k) => `table.${k}`,
+      ),
+      ...[
+        "thCategory",
+        "thRecorded",
+        "thComparable",
+        "thPerKm",
+        "thProject",
+        "thCovered",
+        "covered",
+        "basis.actual",
+        "basis.award",
+        "basis.estimate",
+        "scope.section",
+        "scope.project",
+        "openedTitle",
+        "openedHelp",
+        "costTitle",
+        "costHelp",
+        "contractorHelp",
+        "countryHelp",
+        "emptyCost",
+        "orderOpened",
+        "orderCost",
+        "orderGroup",
+      ].map((k) => `performance.${k}`),
+    ];
+
+    const missing = required.filter((k) => !enFlat.has(k) || !roFlat.has(k));
+    expect(missing).toEqual([]);
+  });
+
+  it("covers every key the city panel and pages need", () => {
+    const required = [
+      "panelKicker",
+      "population",
+      "gdpPerCapita",
+      "networkSummary",
+      "notOnMainMap",
+      "seeMore",
+      "officialSite",
+      "backToMap",
+      "metaDescription",
+      "intro",
+      "openedKm",
+      "acrossProjects",
+      "lotsCount",
+      "mapTitle",
+      "mapIntro",
+      "projectsTitle",
+      "openedOfTotal",
+      "sourcesTitle",
+      "selected",
+      "clearSelection",
+      "selectHint",
+    ].map((k) => `city.${k}`);
+
+    const missing = required.filter((k) => !enFlat.has(k) || !roFlat.has(k));
+    expect(missing).toEqual([]);
+  });
+
+  it("covers every key the about page needs", () => {
     const required = [
       "title",
-      "intro",
-      "asOf",
-      "priceYear",
-      "coverage",
-      "coverageGap",
-      "overrunTitle",
-      "basisEstimate",
-      "basisEstimateHelp",
-      "basisAward",
-      "basisAwardHelp",
-      "slipTitle",
-      "slipIntro",
-      "slipDelivered",
-      "slipInProgress",
-      "slipInProgressHelp",
-      "bestTitle",
-      "bestIntro",
-      "bestSlipTitle",
-      "bestOverrunTitle",
-      "byContractorTitle",
-      "byContractorIntro",
-      "byCountryTitle",
-      "leagueNote",
-      "unitMonths",
-      "contractMonths",
-      "refOpened",
-      "refExpectedOpening",
-      "refNow",
-      "emptyOverrunEstimate",
-      "emptyOverrunAward",
-      "emptySlip",
-      "emptyGroup",
-      "emptyOnTime",
-      "emptyUnderBudget",
-      "methodologyTitle",
-      "methodologyCosts",
-      "methodologySchedule",
-      "methodologySource",
-    ].map((k) => `rankings.${k}`);
+      "lead",
+      "dataTitle",
+      "dataBody",
+      "dataSources",
+      "helpTitle",
+      "helpBody",
+      "helpReport",
+      "helpReportCta",
+      "helpData",
+      "helpRepoCta",
+      "helpSpread",
+      "builderTitle",
+      "builderBody",
+      "startTitle",
+      "startMap",
+      "startPerformance",
+    ]
+      .map((k) => `about.${k}`)
+      .concat("nav.about");
 
     const missing = required.filter((k) => !enFlat.has(k) || !roFlat.has(k));
     expect(missing).toEqual([]);
@@ -136,6 +207,13 @@ describe("message catalogues", () => {
       "compareIntro",
       "compareHint",
       "clearCompare",
+      "searchLabel",
+      "searchPlaceholder",
+      "searchEmpty",
+      "pickOnMap",
+      "removeFromCompare",
+      "leads",
+      "leadNote",
       "backToCountries",
       "metaDescription",
       "byCategory",

@@ -1,0 +1,146 @@
+{
+  "id": "bg-sofia-metro-m1",
+  "country": "bg",
+  "city": "bg-sofia",
+  "category": "railway",
+  "name": {
+    "en": "Sofia Metro Line M1 (Slivnitsa – Business Park Sofia)",
+    "ro": "Magistrala M1 a metroului din Sofia (Slivnitsa – Business Park Sofia)"
+  },
+  "description": {
+    "en": "The red line and the first to be built on the Sofia Metro, the only metro system in Bulgaria. Its first 6.5 km with five stations, from Slivnitsa through the Lyulin housing estates to Konstantin Velichkov, opened on 28 January 1998; Opalchenska followed in 1999 and Serdika, under St Nedelya Square, in 2000, taking the system to 8.1 km. Sections begun in 2005 and 2006 carried the line east under the city centre to Mladost 1 in 2009, and a 2.7 km extension reached Business Park Sofia in May 2015, bringing the line to 17.6 km and 16 stations. Between Slivnitsa and Mladost 1 it shares its tunnels with line M4, which branches away to Sofia Airport; a westward extension beyond Lyulin is in planning but has not been contracted.",
+    "ro": "Linia roșie și prima construită din metroul din Sofia, singurul metrou din Bulgaria. Primii 6,5 km cu cinci stații, de la Slivnitsa, prin cartierele Lyulin, până la Konstantin Velichkov, au fost deschiși pe 28 ianuarie 1998; Opalchenska a urmat în 1999, iar Serdika, sub Piața Sf. Nedelya, în 2000, aducând rețeaua la 8,1 km. Tronsoanele începute în 2005 și 2006 au dus linia spre est, pe sub centrul orașului, până la Mladost 1 în 2009, iar o prelungire de 2,7 km a ajuns la Business Park Sofia în mai 2015, aducând linia la 17,6 km și 16 stații. Între Slivnitsa și Mladost 1 împarte tunelurile cu magistrala M4, care se ramifică spre Aeroportul Sofia; o prelungire spre vest, dincolo de Lyulin, este în faza de planificare, dar nu a fost contractată."
+  },
+  "lots": [
+    {
+      "id": "slivnitsa-konstantin-velichkov",
+      "name": {
+        "en": "Stage I: Slivnitsa – Konstantin Velichkov",
+        "ro": "Etapa I: Slivnitsa – Konstantin Velichkov"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1998-01-28"
+      },
+      "lengthKm": 6.5,
+      "geometryRef": "slivnitsa-konstantin-velichkov",
+      "contract": {
+        "noticeReference": "First section of the Sofia Metro: 6.5 km and five stations from Slivnitsa Blvd through the Lyulin housing estates to Konstantin Velichkov Blvd, inaugurated 28 January 1998",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Sofia_Metro"
+      }
+    },
+    {
+      "id": "konstantin-velichkov-serdika",
+      "name": {
+        "en": "Konstantin Velichkov – Serdika (Opalchenska, Serdika)",
+        "ro": "Konstantin Velichkov – Serdika (Opalchenska, Serdika)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2000-10-31"
+      },
+      "lengthKm": 1.6,
+      "geometryRef": "konstantin-velichkov-serdika",
+      "contract": {
+        "noticeReference": "Opalchenska entered service on 17 September 1999 and Serdika, on St Nedelya Square, on 31 October 2000, extending the operating system to 8.1 km. The two station openings were not costed separately in the published sources",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Sofia_Metro"
+      }
+    },
+    {
+      "id": "serdika-joliot-curie",
+      "name": {
+        "en": "Serdika – Frédéric Joliot-Curie",
+        "ro": "Serdika – Frédéric Joliot-Curie"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005",
+        "opened": "2009-09-07"
+      },
+      "lengthKm": 4.8,
+      "geometryRef": "serdika-joliot-curie",
+      "contract": {
+        "noticeReference": "4.8 km of tunnel and three stations from St Nedelya Square to the Interped World Trade Centre in Izgrev, started in 2005. Vasil Levski Stadium and Frédéric Joliot-Curie opened on 8 May 2009; the remaining Serdika – Vasil Levski Stadium link followed on 7 September 2009, when the section was in service over its full length",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Sofia_Metro"
+      }
+    },
+    {
+      "id": "joliot-curie-mladost-1",
+      "name": {
+        "en": "Frédéric Joliot-Curie – Mladost 1",
+        "ro": "Frédéric Joliot-Curie – Mladost 1"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006",
+        "opened": "2009-05-08"
+      },
+      "lengthKm": 3.2,
+      "geometryRef": "joliot-curie-mladost-1",
+      "contract": {
+        "noticeReference": "3.2 km of tunnel and three stations (G. M. Dimitrov, Musagenitsa, Mladost 1) linking Izgrev with the Mladost 1 housing estate, started in 2006 and opened on 8 May 2009, at first as an isolated segment",
+        "noticeUrl": "https://en.wikipedia.org/wiki/Sofia_Metro"
+      }
+    },
+    {
+      "id": "mladost-1-business-park",
+      "name": {
+        "en": "Mladost 1 – Business Park Sofia",
+        "ro": "Mladost 1 – Business Park Sofia"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-04-25",
+        "opened": "2015-05-08"
+      },
+      "lengthKm": 2.7,
+      "cost": {
+        "actual": {
+          "amount": 43.85,
+          "currency": "EUR",
+          "year": 2013
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "OP Transport 2007–2013, Priority Axis 3: ERDF grant of €93 million towards the €110 million third construction stage, which also covered the M4 airport extension",
+            "ro": "PO Transport 2007–2013, Axa prioritară 3: grant FEDR de 93 de milioane de euro pentru etapa a treia de construcție, de 110 milioane de euro, care a acoperit și prelungirea M4 spre aeroport"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "geometryRef": "mladost-1-business-park",
+      "contract": {
+        "value": {
+          "amount": 43.85,
+          "currency": "EUR",
+          "year": 2013
+        },
+        "noticeReference": "Lot 2 of the third construction stage: 2.7 km and three underground stations (Aleksandar Malinov, Akad. Aleksandar Teodorov-Balan, Business Park) from Mladost 1 to Business Park Sofia in Mladost 4. Works began 25 April 2013 and the section opened 8 May 2015; the construction contract was €43,852,320 excluding VAT",
+        "noticeUrl": "https://www.novinite.com/articles/168384/Subway+Extension+to+Business+Park+Sofia+Opens"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Sofia Metro",
+      "url": "https://en.wikipedia.org/wiki/Sofia_Metro"
+    },
+    {
+      "title": "Metropoliten Sofia: Third stage of the metro extension (OP Transport)",
+      "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-3"
+    },
+    {
+      "title": "Novinite: Subway Extension to Business Park Sofia Opens",
+      "url": "https://www.novinite.com/articles/168384/Subway+Extension+to+Business+Park+Sofia+Opens"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}

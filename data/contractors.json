@@ -1,5 +1,5 @@
 {
-  "note": "Canonical contractor identities for by-contractor rankings. src/lib/contractors.ts first normalizes a raw contractor string (cut a trailing ' — ' scope note, strip a trailing parenthetical, fold case and diacritics to a slug) and then looks it up here. Entries are only needed where normalization alone would split or merge firms incorrectly — everything else resolves heuristically. An entry with `members` is a joint venture: a lot is credited to the JV *and* to each member. Aliases are matched against the raw string, the em-dash-cut string and the parenthetical-stripped string, in that order, so `Webuild (Astaldi)` resolves to Astaldi before the parenthetical is discarded.",
+  "note": "Canonical contractor identities for by-contractor rankings. src/lib/contractors.ts first normalizes a raw contractor string (cut a trailing em-dash scope note, strip a trailing parenthetical, fold case and diacritics to a slug) and then looks it up here. Entries are only needed where normalization alone would split or merge firms incorrectly; everything else resolves heuristically. An entry with `members` is a joint venture: a lot is credited to the JV *and* to each member. Aliases are matched against the raw string, the em-dash-cut string and the parenthetical-stripped string, in that order, so `Webuild (Astaldi)` resolves to Astaldi before the parenthetical is discarded.",
   "contractors": [
     {
       "id": "alpine-bau",
@@ -170,7 +170,7 @@
       "aliases": [
         "Salini Impregilo"
       ],
-      "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020 — same legal entity, so the two names are merged."
+      "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020. Same legal entity, so the two names are merged."
     }
   ]
 }
