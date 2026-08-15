@@ -1,0 +1,17 @@
+{
+  "note": "Gaps that have been researched to a dead end. scripts/report-gaps.ts hides these unless run with --include-known, so a settled question is not re-opened every week. An entry is a Gap id (country/project/lot/code, a whole segment may be a star meaning any) plus the reason and the date the finding was settled. Delete an entry the moment a new source makes it wrong: the report lists patterns that no longer match anything, so a stale entry does not sit here silently.",
+  "entries": [
+    {
+      "id": "rs/*/*/project-no-actual",
+      "reason": "Serbian outturn costs are unobtainable. PayedAmount is null on every public row of the procurement portal (jnportal.ujn.gov.rs, register /api/searchgrid/VContractRegisterPublic/get), and motorway and railway construction runs under intergovernmental agreements ratified by law that are exempt from the Public Procurement Act, so those contracts never enter the portal at all. The state audit office (DRI) reports are procurement-regularity audits and carry no section outturn figures either.",
+      "settledOn": "2026-08-12",
+      "source": "https://jnportal.ujn.gov.rs/"
+    },
+    {
+      "id": "rs/*/*/opened-no-actual",
+      "reason": "Same dead end as rs/*/*/project-no-actual: no Serbian section has a published outturn cost, so an opened Serbian lot cannot be given one and contributes nothing to the overrun rankings. Expected, not an omission.",
+      "settledOn": "2026-08-12",
+      "source": "https://jnportal.ujn.gov.rs/"
+    }
+  ]
+}
