@@ -65,6 +65,7 @@ function metric(over: Partial<LotMetric> = {}): LotMetric {
     status: "opened",
     lengthKm: 10,
     sharedWith: null,
+    partOf: null,
     openedMonth: 2020 * 12,
     overrun: { estimate: null, award: null },
     costs: { actual: null, award: null, estimate: null },
@@ -131,6 +132,24 @@ describe("toComparable", () => {
 
   it("refuses a price year outside the deflator series", () => {
     expect(toComparable(money(100, "EUR", 1990), options)).toBeNull();
+  });
+
+  it("refuses a figure recorded without a price year", () => {
+    expect(
+      toComparable({ amount: 100, currency: "EUR" }, options),
+    ).toBeNull();
+  });
+
+  it("refuses a programme figure even though it could be restated", () => {
+    // The tables would happily deflate and convert this. It is still one
+    // number for a whole corridor, so it is not a cost per kilometre of
+    // anything and must not be ranked as one.
+    expect(
+      toComparable(
+        { amount: 745, currency: "EUR", year: 2023, scope: "programme" },
+        options,
+      ),
+    ).toBeNull();
   });
 });
 
@@ -311,5 +330,16 @@ describe("openedLots", () => {
       metric({ lotId: "through-run", sharedWith: "bg-sofia-metro-m1" }),
     ]);
     expect(list.map((m) => m.lotId)).toEqual(["own"]);
+  });
+
+  it("drops a structure inside a section another project measures", () => {
+    // The Poiana tunnel is bored inside an A1 section whose own length
+    // already contains it, so listing both puts the same kilometres in the
+    // table twice.
+    const list = openedLots([
+      metric({ lotId: "a1-section" }),
+      metric({ lotId: "poiana-tunnel", partOf: "ro-a1" }),
+    ]);
+    expect(list.map((m) => m.lotId)).toEqual(["a1-section"]);
   });
 });

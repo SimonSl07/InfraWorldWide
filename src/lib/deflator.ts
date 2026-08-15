@@ -10,7 +10,11 @@ import type { DeflatorTable, Money } from "./schema";
  */
 
 /** Why a value could not be expressed in target-year prices. */
-export type DeflateFailure = "unknown_currency" | "year_out_of_range";
+export type DeflateFailure =
+  | "unknown_currency"
+  | "year_out_of_range"
+  /** The figure never carried a price year, so there is nothing to move. */
+  | "missing_price_year";
 
 export type DeflateResult =
   | { ok: true; money: Money }
@@ -29,6 +33,13 @@ export type Deflator = (money: Money, targetYear: number) => DeflateResult;
 /** Builds a Deflator from an index table keyed by currency. */
 export function createDeflator(table: DeflatorTable): Deflator {
   return (money, targetYear) => {
+    // Checked before the lookup: `String(undefined)` is a key that happens
+    // never to be in the index, so a figure with no price year used to be
+    // refused for the right outcome under the wrong reason.
+    if (money.year === undefined) {
+      return { ok: false, reason: "missing_price_year" };
+    }
+
     const series = table.series[money.currency];
     if (!series) return { ok: false, reason: "unknown_currency" };
 

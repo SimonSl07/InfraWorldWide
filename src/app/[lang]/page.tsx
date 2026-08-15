@@ -2,6 +2,26 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getProjects } from "@/lib/data";
 import { computeStats } from "@/lib/stats";
+import { pageMetadata } from "@/lib/page-metadata";
+import { formatNumber } from "@/lib/format";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const t = await getTranslations({ locale: lang });
+  // No title: the layout's default is the site name, which is what the home
+  // page should be called. The description is the hero's, which says what is
+  // actually here rather than repeating the tagline.
+  return pageMetadata({
+    locale: lang,
+    path: "/",
+    description: t("home.subtitle"),
+    siteName: t("site.name"),
+  });
+}
 
 export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -10,11 +30,16 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
   const stats = computeStats(getProjects(), new Date().getFullYear());
 
+  const km = (value: number) => `${formatNumber(Math.round(value), lang)} km`;
+
   const statItems = [
-    { value: stats.projectCount, label: t("statsProjects") },
-    { value: `${Math.round(stats.openedKm).toLocaleString(lang)} km`, label: t("statsOpenedKm") },
-    { value: `${Math.round(stats.recentOpenedKm).toLocaleString(lang)} km`, label: t("statsRecentKm") },
-    { value: `${Math.round(stats.underConstructionKm).toLocaleString(lang)} km`, label: t("statsUnderConstructionKm") },
+    { value: formatNumber(stats.projectCount, lang), label: t("statsProjects") },
+    { value: km(stats.openedKm), label: t("statsOpenedKm") },
+    { value: km(stats.recentOpenedKm), label: t("statsRecentKm") },
+    {
+      value: km(stats.underConstructionKm),
+      label: t("statsUnderConstructionKm"),
+    },
   ];
 
   return (
@@ -22,17 +47,17 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <h1 className="text-4xl sm:text-6xl font-bold tracking-tight max-w-3xl">
         {t("hero")}
       </h1>
-      <p className="mt-6 text-lg text-neutral-600 max-w-xl">{t("subtitle")}</p>
+      <p className="mt-6 text-lg text-ink-soft max-w-xl">{t("subtitle")}</p>
       <div className="mt-10 flex gap-4">
         <Link
           href="/map"
-          className="rounded-full bg-neutral-900 text-white px-6 py-3 text-sm font-medium hover:bg-neutral-700"
+          className="rounded-full bg-inverse text-on-inverse px-6 py-3 text-sm font-medium hover:bg-inverse-soft"
         >
           {t("cta")}
         </Link>
         <Link
           href="/projects"
-          className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-medium hover:border-neutral-900"
+          className="rounded-full border border-line-strong px-6 py-3 text-sm font-medium hover:border-inverse"
         >
           {t("browseProjects")}
         </Link>
@@ -40,7 +65,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <dl className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8">
         {statItems.map((s) => (
           <div key={s.label}>
-            <dt className="text-sm text-neutral-500">{s.label}</dt>
+            <dt className="text-sm text-ink-muted">{s.label}</dt>
             <dd className="mt-1 text-3xl font-bold tabular-nums">{s.value}</dd>
           </div>
         ))}

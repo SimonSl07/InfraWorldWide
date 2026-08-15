@@ -1,4 +1,7 @@
-import type { ExpressionSpecification } from "maplibre-gl";
+import type {
+  ExpressionSpecification,
+  FilterSpecification,
+} from "maplibre-gl";
 import type { Category, Status } from "./schema";
 
 export const CATEGORY_COLORS: Record<Category, string> = {
@@ -190,5 +193,93 @@ export function pickedOutlineWidth(picked: string[]): ExpressionSpecification {
     inCountries(picked),
     2,
     0.75,
+  ] as unknown as ExpressionSpecification;
+}
+
+/* ── Category paint ───────────────────────────────────────────────────── */
+
+/**
+ * Colour a feature by its category.
+ *
+ * Four components used to rebuild this same "match" inline, which is exactly
+ * what AGENTS.md says not to do: an expression built in a component is never
+ * seen by the spec validation in map-style.test.ts, and a malformed one
+ * silently drops the whole layer with no error.
+ */
+export function categoryColorExpr(
+  fallback = "#666666",
+  /**
+   * Resolved hex per category. Defaults to the light palette. MapLibre paint
+   * values never see a CSS custom property, so a themed map has to pass the
+   * dark palette in explicitly; see `mapColorsFor` in map-theme.ts.
+   */
+  colors: Record<Category, string> = CATEGORY_COLORS,
+): ExpressionSpecification {
+  return [
+    "match",
+    ["get", "category"],
+    ...ALL_CATEGORIES.flatMap((category) => [category, colors[category]]),
+    fallback,
+  ] as unknown as ExpressionSpecification;
+}
+
+/**
+ * Dash pattern per status, so status is legible without colour.
+ *
+ * Solid for what exists, progressively broken for what does not. This is the
+ * only non-colour status cue on the map, which matters because the palette
+ * puts railway green next to bridge amber, a deuteranopia confusion pair.
+ */
+export const STATUS_DASHES: Record<string, number[] | undefined> = {
+  opened: undefined,
+  under_construction: [2, 1.5],
+  tendered: [1, 1.5],
+  planned: [0.5, 2],
+};
+
+/* ── Lot vocabulary shared by the mini-maps ───────────────────────────── */
+
+/** Lots already carrying traffic. */
+export const OPENED_FILTER = [
+  "==",
+  ["get", "status"],
+  "opened",
+] as unknown as FilterSpecification;
+
+/** Everything else, including a status the map has no dash for. */
+export const UNOPENED_FILTER = [
+  "!=",
+  ["get", "status"],
+  "opened",
+] as unknown as FilterSpecification;
+
+/** Bridges and tunnels get a midpoint marker in the data build. */
+export const MARKER_FILTER = [
+  "==",
+  ["get", "marker"],
+  true,
+] as unknown as FilterSpecification;
+
+/**
+ * Dash pattern per status, for the layer drawing everything not yet open.
+ *
+ * `line-dasharray` is data-driven in MapLibre 5, so one layer carries all
+ * three unopened statuses instead of needing one layer each. Opened lots are
+ * drawn by a separate solid layer, which is why "opened" is absent here: its
+ * entry in STATUS_DASHES is undefined and an expression cannot return that.
+ *
+ * There is no zoom term, so this composes with the zoom interpolation on
+ * line-width without breaking the one-interpolate-outermost rule.
+ */
+export function statusDashExpr(): ExpressionSpecification {
+  const stops = MAP_STATUSES.flatMap((status) => {
+    const dash = STATUS_DASHES[status];
+    return dash ? [status, ["literal", dash]] : [];
+  });
+  return [
+    "match",
+    ["get", "status"],
+    ...stops,
+    ["literal", [2, 2]],
   ] as unknown as ExpressionSpecification;
 }

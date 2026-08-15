@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import DataTable, { type Column } from "@/components/DataTable";
-import { CATEGORY_COLORS } from "@/lib/map-style";
+import { categoryVar } from "@/lib/map-theme";
 import { createCountryNamer, flagEmoji } from "@/lib/country-names";
 import { formatKm, formatMonth, formatMonths, formatPercent } from "@/lib/format";
 import type { Category } from "@/lib/schema";
@@ -41,7 +41,9 @@ export interface CostRowData {
   category: Category;
   lengthKm: number;
   basis: CostBasis;
-  recorded: { amount: number; currency: string; year: number };
+  // The price year is optional: a sourced figure whose year the source never
+  // states is still recorded, and is shown without one.
+  recorded: { amount: number; currency: string; year?: number };
   comparable: number | null;
   perKm: number | null;
 }
@@ -93,11 +95,11 @@ function Tone({
   value: number | null;
   children: React.ReactNode;
 }) {
-  if (value === null) return <span className="text-neutral-400">{"–"}</span>;
+  if (value === null) return <span className="text-ink-faint">{"–"}</span>;
   return (
     <span
       className={
-        value > 0 ? "text-red-700" : value < 0 ? "text-emerald-700" : ""
+        value > 0 ? "text-bad" : value < 0 ? "text-good" : ""
       }
     >
       {children}
@@ -106,7 +108,7 @@ function Tone({
 }
 
 function Sample({ n }: { n: number }) {
-  return <span className="ml-1 text-xs text-neutral-400">n={n}</span>;
+  return <span className="ml-1 text-xs text-ink-faint">n={n}</span>;
 }
 
 export default function PerformanceTables({
@@ -125,7 +127,7 @@ export default function PerformanceTables({
 
   const money = (amount: number | null) =>
     amount === null ? (
-      <span className="text-neutral-400">{"–"}</span>
+      <span className="text-ink-faint">{"–"}</span>
     ) : (
       `${amount.toLocaleString(locale, { maximumFractionDigits: amount < 100 ? 1 : 0 })}`
     );
@@ -143,13 +145,13 @@ export default function PerformanceTables({
       <span
         aria-hidden
         className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
-        style={{ backgroundColor: CATEGORY_COLORS[row.category] }}
+        style={{ backgroundColor: categoryVar(row.category) }}
       />
       <span>
-        <span className="text-neutral-500">{row.projectName}</span>
+        <span className="text-ink-muted">{row.projectName}</span>
         {row.lotName && (
           <>
-            <span className="text-neutral-400"> / </span>
+            <span className="text-ink-faint"> / </span>
             <span className="font-medium">{row.lotName}</span>
           </>
         )}
@@ -172,6 +174,9 @@ export default function PerformanceTables({
     {
       id: "section",
       header: t("rankings.thSection"),
+      // Names the row, so a screen reader reads "Sebeș–Turda, slip, +14 mo"
+      // rather than a bare number with no subject.
+      rowHeader: true,
       sortValue: (r) => `${r.projectName} ${r.lotName}`,
       cell: sectionCell,
     },
@@ -188,7 +193,7 @@ export default function PerformanceTables({
       // group the plural `category.*` labels name.
       sortValue: (r) => t(`categorySingular.${r.category}`),
       cell: (r) => (
-        <span className="text-neutral-600">
+        <span className="text-ink-soft">
           {t(`categorySingular.${r.category}`)}
         </span>
       ),
@@ -216,7 +221,7 @@ export default function PerformanceTables({
         <Tone value={r.slipMonths}>
           <span className="font-semibold">
             {r.slipMonths !== null &&
-              formatMonths(r.slipMonths, t("rankings.unitMonths"))}
+              formatMonths(r.slipMonths, t("rankings.unitMonths"), locale)}
           </span>
         </Tone>
       ),
@@ -226,7 +231,7 @@ export default function PerformanceTables({
   /* ── 2. Costs ───────────────────────────────────────────────────────── */
 
   const basisTag = (basis: CostBasis) => (
-    <span className="ml-1.5 rounded bg-neutral-100 px-1 py-0.5 text-[10px] uppercase tracking-wide text-neutral-500">
+    <span className="ml-1.5 rounded bg-surface-raised px-1 py-0.5 text-[10px] uppercase tracking-wide text-ink-muted">
       {t(`performance.basis.${basis}`)}
     </span>
   );
@@ -235,6 +240,7 @@ export default function PerformanceTables({
     {
       id: "section",
       header: t("rankings.thSection"),
+      rowHeader: true,
       sortValue: (r) => `${r.projectName} ${r.lotName}`,
       cell: sectionCell,
     },
@@ -263,9 +269,11 @@ export default function PerformanceTables({
             maximumFractionDigits: 0,
           })}{" "}
           {r.recorded.currency}
-          <span className="ml-1 text-xs text-neutral-400">
-            {r.recorded.year}
-          </span>
+          {r.recorded.year !== undefined && (
+            <span className="ml-1 text-xs text-ink-faint">
+              {r.recorded.year}
+            </span>
+          )}
           {basisTag(r.basis)}
         </span>
       ),
@@ -295,6 +303,7 @@ export default function PerformanceTables({
     {
       id: "project",
       header: t("performance.thProject"),
+      rowHeader: true,
       sortValue: (r) => r.projectName,
       cell: sectionCell,
     },
@@ -317,7 +326,7 @@ export default function PerformanceTables({
       numeric: true,
       sortValue: (r) => (r.totalLots > 0 ? r.costedLots / r.totalLots : null),
       cell: (r) => (
-        <span className={r.complete ? "" : "text-amber-700"}>
+        <span className={r.complete ? "" : "text-warn"}>
           {t("performance.covered", {
             costed: r.costedLots,
             total: r.totalLots,
@@ -346,18 +355,37 @@ export default function PerformanceTables({
 
   /* ── 3 & 4. Groups ──────────────────────────────────────────────────── */
 
-  const groupColumns = (firstHeader: string): Column<GroupRow>[] => [
+  /**
+   * `links` says where the first column points. It is explicit rather than
+   * inferred from the row, because a firm and a country are two different
+   * destinations and a row that guessed wrong would send readers to a page
+   * that does not exist.
+   */
+  const groupColumns = (
+    firstHeader: string,
+    links: "country" | "contractor",
+  ): Column<GroupRow>[] => [
     {
       id: "label",
       header: firstHeader,
+      rowHeader: true,
       sortValue: (r) => r.label,
       cell: (r) =>
-        r.countryCode ? (
+        links === "country" && r.countryCode ? (
           <Link
             href={`/countries/${r.countryCode}`}
             className="font-medium hover:underline underline-offset-2"
           >
             {countryCell(r.countryCode)}
+          </Link>
+        ) : links === "contractor" ? (
+          // GroupRow.key is the firm's profile id, so the league row is a
+          // link to that firm's own page rather than dead text.
+          <Link
+            href={`/contractors/${r.key}`}
+            className="font-medium hover:underline underline-offset-2"
+          >
+            {r.label}
           </Link>
         ) : (
           <span className="font-medium">{r.label}</span>
@@ -386,7 +414,7 @@ export default function PerformanceTables({
         <>
           <Tone value={r.medianSlip}>
             {r.medianSlip !== null &&
-              formatMonths(r.medianSlip, t("rankings.unitMonths"))}
+              formatMonths(r.medianSlip, t("rankings.unitMonths"), locale)}
           </Tone>
           {r.medianSlip !== null && <Sample n={r.slipN} />}
         </>
@@ -399,7 +427,7 @@ export default function PerformanceTables({
       sortValue: (r) => r.onTimeShare,
       cell: (r) =>
         r.onTimeShare === null ? (
-          <span className="text-neutral-400">{"–"}</span>
+          <span className="text-ink-faint">{"–"}</span>
         ) : (
           `${Math.round(r.onTimeShare * 100)}%`
         ),
@@ -412,7 +440,7 @@ export default function PerformanceTables({
       cell: (r) => (
         <>
           <Tone value={r.medianOverrun}>
-            {r.medianOverrun !== null && formatPercent(r.medianOverrun)}
+            {r.medianOverrun !== null && formatPercent(r.medianOverrun, locale)}
           </Tone>
           {r.medianOverrun !== null && <Sample n={r.overrunN} />}
         </>
@@ -423,7 +451,7 @@ export default function PerformanceTables({
   const heading = (title: string, help: string) => (
     <>
       <h2 className="text-lg font-semibold">{title}</h2>
-      <p className="mt-1 max-w-3xl text-sm text-neutral-500">{help}</p>
+      <p className="mt-1 max-w-3xl text-sm text-ink-muted">{help}</p>
     </>
   );
 
@@ -437,12 +465,13 @@ export default function PerformanceTables({
           rowKey={(r) => r.key}
           emptyMessage={t("rankings.emptySlip")}
           footnote={t("performance.orderOpened")}
+          caption={t("performance.openedTitle")}
         />
       </section>
 
       <section className="mt-12">
         {heading(t("performance.costTitle"), t("performance.costHelp"))}
-        <div className="mt-3 inline-flex rounded-lg border border-neutral-300 p-0.5 text-sm">
+        <div className="mt-3 inline-flex rounded-lg border border-line-strong p-0.5 text-sm">
           {(["section", "project"] as const).map((scope) => (
             <button
               key={scope}
@@ -451,8 +480,8 @@ export default function PerformanceTables({
               aria-pressed={costScope === scope}
               className={`rounded-md px-3 py-1 transition-colors ${
                 costScope === scope
-                  ? "bg-neutral-900 text-white"
-                  : "text-neutral-600 hover:text-neutral-900"
+                  ? "bg-inverse text-on-inverse"
+                  : "text-ink-soft hover:text-ink"
               }`}
             >
               {t(`performance.scope.${scope}`)}
@@ -467,6 +496,7 @@ export default function PerformanceTables({
             rowKey={(r) => r.key}
             emptyMessage={t("performance.emptyCost")}
             footnote={t("performance.orderCost")}
+            caption={t("performance.captionCostSection")}
           />
         ) : (
           <DataTable
@@ -476,6 +506,7 @@ export default function PerformanceTables({
             rowKey={(r) => r.key}
             emptyMessage={t("performance.emptyCost")}
             footnote={t("performance.orderCost")}
+            caption={t("performance.captionCostProject")}
           />
         )}
       </section>
@@ -486,22 +517,34 @@ export default function PerformanceTables({
           t("performance.contractorHelp"),
         )}
         <DataTable
-          columns={groupColumns(t("rankings.thFirm"))}
+          columns={groupColumns(t("rankings.thFirm"), "contractor")}
           rows={contractorRows}
           rowKey={(r) => r.key}
           emptyMessage={t("rankings.emptyGroup")}
           footnote={t("performance.orderGroup")}
+          caption={t("rankings.byContractorTitle")}
         />
+        {/* The league ranks firms that clear a minimum; the index carries
+            every one of them, including those with a single section. */}
+        <p className="mt-2 text-sm">
+          <Link
+            href="/contractors"
+            className="text-ink-muted underline underline-offset-2 hover:text-ink"
+          >
+            {t("rankings.allContractors")} →
+          </Link>
+        </p>
       </section>
 
       <section className="mt-12">
         {heading(t("rankings.byCountryTitle"), t("performance.countryHelp"))}
         <DataTable
-          columns={groupColumns(t("rankings.thCountry"))}
+          columns={groupColumns(t("rankings.thCountry"), "country")}
           rows={countryRows}
           rowKey={(r) => r.key}
           emptyMessage={t("rankings.emptyGroup")}
           footnote={t("performance.orderGroup")}
+          caption={t("rankings.byCountryTitle")}
         />
       </section>
     </>

@@ -11,11 +11,17 @@ import {
   HARD_MIN_MONTH,
   isCategoryActive,
   isStatusActive,
+  formatLotRef,
+  formatViewParam,
+  parseLotRef,
+  resolveLotRef,
   parseMonthParam,
   parseCategoriesParam,
+  parseCityParam,
   parseCompareParam,
   parseCountryParam,
   parseSelectionParam,
+  parseViewParam,
   selectionCategories,
   serializeMapParams,
   setCategoryStatuses,
@@ -303,10 +309,10 @@ describe("serializeMapParams", () => {
       serializeMapParams({
         month: NOW,
         selection: allCats,
-        selectedLotId: "lot-1",
+        selectedLot: { projectId: "ro-a1", lotId: "lot-1" },
         defaultMonth: NOW,
       }),
-    ).toBe("sel=lot-1");
+    ).toBe("sel=ro-a1.lot-1");
   });
   it("includes a selected country", () => {
     expect(
@@ -325,11 +331,11 @@ describe("serializeMapParams", () => {
       serializeMapParams({
         month: NOW,
         selection: allCats,
-        selectedLotId: "lot-1",
+        selectedLot: { projectId: "ro-a1", lotId: "lot-1" },
         selectedCountry: "ro",
         defaultMonth: NOW,
       }),
-    ).toBe("sel=lot-1");
+    ).toBe("sel=ro-a1.lot-1");
   });
   it("includes the playback speed only when it differs from the default", () => {
     const base = { month: NOW, selection: allCats, defaultMonth: NOW };
@@ -571,7 +577,7 @@ describe("serializeMapParams with status subsets", () => {
       serializeMapParams({
         month: 2005,
         selection: sel,
-        selectedLotId: "lot-1",
+        selectedLot: { projectId: "ro-a1", lotId: "lot-1" },
         defaultMonth: toMonthIndex(2026, 8),
       }),
     );
@@ -579,6 +585,257 @@ describe("serializeMapParams with status subsets", () => {
     expect(selectionCategories(back)).toEqual(selectionCategories(sel));
     expect([...back.get("railway")!]).toEqual([...sel.get("railway")!]);
     expect(back.has("tunnel")).toBe(false);
+  });
+});
+
+describe("camera and city in the permalink", () => {
+  const allCats = fullSelection();
+  const NOW = toMonthIndex(2026, 8);
+  const base = { month: NOW, selection: allCats, defaultMonth: NOW };
+  const HOME = { longitude: 24.97, latitude: 45.9, zoom: 5.6 };
+
+  it("omits the camera when it still matches the opening view", () => {
+    expect(serializeMapParams({ ...base, view: HOME, defaultView: HOME })).toBe(
+      "",
+    );
+  });
+
+  it("writes the camera as lng,lat,zoom once it has moved", () => {
+    const qs = serializeMapParams({
+      ...base,
+      view: { longitude: 26.1025, latitude: 44.4268, zoom: 12.5 },
+      defaultView: HOME,
+    });
+    expect(new URLSearchParams(qs).get("v")).toBe("26.1025,44.4268,12.5");
+  });
+
+  it("rounds the camera rather than serializing float noise", () => {
+    const qs = serializeMapParams({
+      ...base,
+      view: {
+        longitude: 26.102546789012,
+        latitude: 44.426777123456,
+        zoom: 12.503999,
+      },
+      defaultView: HOME,
+    });
+    expect(new URLSearchParams(qs).get("v")).toBe("26.10255,44.42678,12.5");
+  });
+
+  it("treats a sub-precision nudge as no movement at all", () => {
+    // Panning by a millimetre must not make every URL differ.
+    expect(
+      serializeMapParams({
+        ...base,
+        view: { longitude: 24.9700001, latitude: 45.9000001, zoom: 5.6000001 },
+        defaultView: HOME,
+      }),
+    ).toBe("");
+  });
+
+  it("writes a selected city", () => {
+    expect(
+      serializeMapParams({ ...base, selectedCity: "ro-bucharest" }),
+    ).toBe("city=ro-bucharest");
+  });
+
+  it("never writes two selections at once", () => {
+    // All three share one panel, so the URL must carry one at most.
+    const qs = serializeMapParams({
+      ...base,
+      selectedLot: { projectId: "ro-a1", lotId: "lot-1" },
+      selectedCountry: "ro",
+      selectedCity: "ro-bucharest",
+    });
+    const params = new URLSearchParams(qs);
+    expect(params.get("sel")).toBe("ro-a1.lot-1");
+    expect(params.get("c")).toBeNull();
+    expect(params.get("city")).toBeNull();
+  });
+
+  it("prefers a country over a city when both are somehow set", () => {
+    const params = new URLSearchParams(
+      serializeMapParams({
+        ...base,
+        selectedCountry: "ro",
+        selectedCity: "ro-bucharest",
+      }),
+    );
+    expect(params.get("c")).toBe("ro");
+    expect(params.get("city")).toBeNull();
+  });
+});
+
+describe("basemap and comparison in the permalink", () => {
+  const NOW = toMonthIndex(2026, 8);
+  const base = { month: NOW, selection: fullSelection(), defaultMonth: NOW };
+
+  it("writes the basemap only when one is chosen", () => {
+    expect(serializeMapParams({ ...base, basemap: null })).toBe("");
+    expect(serializeMapParams({ ...base, basemap: "dark" })).toBe("bm=dark");
+  });
+
+  it("writes the comparison baseline as a month", () => {
+    const qs = serializeMapParams({
+      ...base,
+      compareFrom: toMonthIndex(2015, 1),
+    });
+    expect(new URLSearchParams(qs).get("cmp")).toBe("2015-01");
+  });
+
+  it("leaves the comparison out when it is off", () => {
+    expect(serializeMapParams({ ...base, compareFrom: null })).toBe("");
+  });
+
+  it("round-trips a shared comparison link", () => {
+    const from = toMonthIndex(2015, 1);
+    const qs = serializeMapParams({ ...base, compareFrom: from, basemap: "dark" });
+    const params = new URLSearchParams(qs);
+    expect(
+      parseMonthParam(params.get("cmp"), HARD_MIN_MONTH, NOW + 120, NOW),
+    ).toBe(from);
+    expect(params.get("bm")).toBe("dark");
+  });
+});
+
+describe("parseViewParam", () => {
+  it("round-trips what the serializer writes", () => {
+    const view = { longitude: 26.1025, latitude: 44.4268, zoom: 12.5 };
+    expect(parseViewParam(formatViewParam(view))).toEqual(view);
+  });
+
+  it("returns null for anything malformed", () => {
+    for (const raw of [
+      null,
+      "",
+      "26.1",
+      "26.1,44.4",
+      "a,b,c",
+      "26.1,44.4,12.5,7",
+      "26.1;44.4;12.5",
+    ]) {
+      expect(parseViewParam(raw)).toBeNull();
+    }
+  });
+
+  it("rejects coordinates and zooms outside the possible range", () => {
+    // A shared link is untrusted input: an out-of-range camera throws
+    // inside MapLibre rather than degrading.
+    expect(parseViewParam("181,44.4,12")).toBeNull();
+    expect(parseViewParam("26.1,91,12")).toBeNull();
+    expect(parseViewParam("26.1,44.4,-1")).toBeNull();
+    expect(parseViewParam("26.1,44.4,25")).toBeNull();
+    expect(parseViewParam("NaN,44.4,12")).toBeNull();
+  });
+
+  it("accepts the extremes of the valid range", () => {
+    expect(parseViewParam("-180,-90,0")).toEqual({
+      longitude: -180,
+      latitude: -90,
+      zoom: 0,
+    });
+    expect(parseViewParam("180,90,24")).toEqual({
+      longitude: 180,
+      latitude: 90,
+      zoom: 24,
+    });
+  });
+});
+
+describe("lot references in ?sel=", () => {
+  // Lot ids are unique within a project, not globally: "main-bridge" is a
+  // lot of ro-braila-bridge, ro-giurgiu-ruse-bridge and ro-new-europe-bridge.
+  const bridges = [
+    { projectId: "ro-braila-bridge", lotId: "main-bridge" },
+    { projectId: "ro-giurgiu-ruse-bridge", lotId: "main-bridge" },
+    { projectId: "ro-new-europe-bridge", lotId: "main-bridge" },
+    { projectId: "ro-a1", lotId: "sebes-turda" },
+  ];
+
+  it("qualifies the lot with its project", () => {
+    expect(
+      formatLotRef({ projectId: "ro-braila-bridge", lotId: "main-bridge" }),
+    ).toBe("ro-braila-bridge.main-bridge");
+  });
+
+  it("survives the URL without percent-encoding", () => {
+    const qs = serializeMapParams({
+      month: toMonthIndex(2026, 8),
+      selection: fullSelection(),
+      defaultMonth: toMonthIndex(2026, 8),
+      selectedLot: { projectId: "ro-braila-bridge", lotId: "main-bridge" },
+    });
+    expect(qs).toBe("sel=ro-braila-bridge.main-bridge");
+  });
+
+  it("parses a qualified reference", () => {
+    expect(parseLotRef("ro-braila-bridge.main-bridge")).toEqual({
+      projectId: "ro-braila-bridge",
+      lotId: "main-bridge",
+    });
+  });
+
+  it("parses a legacy bare lot id as unqualified", () => {
+    expect(parseLotRef("main-bridge")).toEqual({
+      projectId: null,
+      lotId: "main-bridge",
+    });
+  });
+
+  it("rejects junk", () => {
+    for (const raw of [null, "", "a.b.c", ".", "x."]) {
+      expect(parseLotRef(raw)).toBeNull();
+    }
+  });
+
+  it("resolves a qualified reference to exactly that lot", () => {
+    const ref = parseLotRef("ro-giurgiu-ruse-bridge.main-bridge");
+    expect(resolveLotRef(bridges, ref)?.projectId).toBe(
+      "ro-giurgiu-ruse-bridge",
+    );
+  });
+
+  it("still resolves a legacy id that is unambiguous", () => {
+    const ref = parseLotRef("sebes-turda");
+    expect(resolveLotRef(bridges, ref)?.projectId).toBe("ro-a1");
+  });
+
+  it("refuses a legacy id shared by several projects", () => {
+    // Selecting the first match is the bug: two of the three bridges opened
+    // the wrong one. Selecting nothing is wrong in a way the user can see.
+    expect(resolveLotRef(bridges, parseLotRef("main-bridge"))).toBeNull();
+  });
+
+  it("resolves nothing for a lot that is not there", () => {
+    expect(resolveLotRef(bridges, parseLotRef("ro-a1.nope"))).toBeNull();
+    expect(resolveLotRef(bridges, null)).toBeNull();
+  });
+
+  it("round-trips through the query string", () => {
+    const lot = { projectId: "ro-new-europe-bridge", lotId: "main-bridge" };
+    const qs = serializeMapParams({
+      month: toMonthIndex(2026, 8),
+      selection: fullSelection(),
+      defaultMonth: toMonthIndex(2026, 8),
+      selectedLot: lot,
+    });
+    const raw = new URLSearchParams(qs).get("sel");
+    expect(resolveLotRef(bridges, parseLotRef(raw))).toMatchObject(lot);
+  });
+});
+
+describe("parseCityParam", () => {
+  it("accepts a key in the data", () => {
+    const known = ["ro-bucharest", "bg-sofia"];
+    expect(parseCityParam("ro-bucharest", known)).toBe("ro-bucharest");
+  });
+
+  it("drops a key that is not in the data", () => {
+    // Same reasoning as parseCompareParam: the panel would never mount, so
+    // there would be no way to clear it.
+    expect(parseCityParam("xx-atlantis", ["ro-bucharest"])).toBeNull();
+    expect(parseCityParam(null, ["ro-bucharest"])).toBeNull();
+    expect(parseCityParam("", ["ro-bucharest"])).toBeNull();
   });
 });
 

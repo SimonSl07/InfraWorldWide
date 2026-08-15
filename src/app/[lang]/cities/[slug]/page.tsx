@@ -5,17 +5,17 @@ import { getCityKeys, getCityProjects, getCityTable } from "@/lib/data";
 import { countryName, flagEmoji } from "@/lib/country-names";
 import { currentMonth } from "@/lib/slip";
 import { lotMonths, lotStateAt } from "@/lib/country-stats";
-import { formatDate, formatKm } from "@/lib/format";
+import { formatDate, formatKm, formatNumber } from "@/lib/format";
+import { createLocalizer, localized } from "@/lib/localized";
+import { pageMetadata } from "@/lib/page-metadata";
+import { breadcrumbList, jsonLdScript } from "@/lib/structured-data";
+import { siteUrl } from "@/lib/seo";
 import CityView, { type CityProjectCard } from "@/components/city/CityView";
-import { isSharedTrack, type City, type LocalizedString } from "@/lib/schema";
+import { countsTowardNetwork, type City } from "@/lib/schema";
 
 export function generateStaticParams() {
   // Locales are enumerated by the parent [lang] layout.
   return getCityKeys().map((slug) => ({ slug }));
-}
-
-function localized(value: LocalizedString, lang: string): string {
-  return lang === "ro" && value.ro ? value.ro : value.en;
 }
 
 export async function generateMetadata({
@@ -26,12 +26,15 @@ export async function generateMetadata({
   const { lang, slug } = await params;
   const city: City | undefined = getCityTable().cities[slug];
   if (!city) return {};
-  const t = await getTranslations({ locale: lang, namespace: "city" });
+  const t = await getTranslations({ locale: lang });
   const name = localized(city.name, lang);
-  return {
+  return pageMetadata({
+    locale: lang,
+    path: `/cities/${slug}`,
     title: name,
-    description: t("metaDescription", { city: name }),
-  };
+    description: t("city.metaDescription", { city: name }),
+    siteName: t("site.name"),
+  });
 }
 
 function Figure({
@@ -44,10 +47,10 @@ function Figure({
   note?: string;
 }) {
   return (
-    <div className="rounded-xl border border-neutral-200 p-4">
-      <div className="text-xs text-neutral-500">{label}</div>
+    <div className="rounded-xl border border-line p-4">
+      <div className="text-xs text-ink-muted">{label}</div>
       <div className="mt-1 text-2xl font-bold tabular-nums">{value}</div>
-      {note && <div className="mt-0.5 text-xs text-neutral-400">{note}</div>}
+      {note && <div className="mt-0.5 text-xs text-ink-faint">{note}</div>}
     </div>
   );
 }
@@ -76,7 +79,7 @@ export default async function CityPage({
   );
   // The headline figures are a network total, so a tunnel two lines run
   // through counts once. Each line's own length below still includes it.
-  const networkLots = lots.filter((l) => !isSharedTrack(l.lot));
+  const networkLots = lots.filter((l) => countsTowardNetwork(l.lot));
   const openedKm = networkLots
     .filter((l) => l.state === "opened")
     .reduce((sum, l) => sum + l.lot.lengthKm, 0);
@@ -84,8 +87,19 @@ export default async function CityPage({
     .filter((l) => l.state === "under_construction")
     .reduce((sum, l) => sum + l.lot.lengthKm, 0);
 
-  const name = localized(city.name, lang);
-  const note = city.note ? localized(city.note, lang) : null;
+  const text = createLocalizer(lang);
+  const name = text(city.name);
+  const note = city.note ? text(city.note) : null;
+
+  const breadcrumbs = breadcrumbList({
+    baseUrl: siteUrl(process.env),
+    locale: lang,
+    items: [
+      { name: t("site.name"), path: "/" },
+      { name: t("city.indexTitle"), path: "/cities" },
+      { name, path: `/cities/${slug}` },
+    ],
+  });
 
   // Localized and totalled here, so the client component ships plain data
   // and does no locale formatting of its own. A line's own length includes
@@ -95,8 +109,8 @@ export default async function CityPage({
     const opened = projectLots.filter((l) => l.state === "opened");
     return {
       id: project.id,
-      name: localized(project.name, lang),
-      description: localized(project.description, lang),
+      name: text(project.name),
+      description: text(project.description),
       category: project.category,
       openedKm: formatKm(
         opened.reduce((s, l) => s + l.lot.lengthKm, 0),
@@ -112,16 +126,20 @@ export default async function CityPage({
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbs) }}
+      />
       <Link
         href="/map"
-        className="text-sm text-neutral-500 hover:text-neutral-900"
+        className="text-sm text-ink-muted hover:text-ink"
       >
         {t("city.backToMap")}
       </Link>
 
       <div className="mt-2 flex flex-wrap items-baseline gap-3">
         <h1 className="text-3xl font-bold">{name}</h1>
-        <span className="text-neutral-500">
+        <span className="text-ink-muted">
           <span aria-hidden className="mr-1.5">
             {flagEmoji(city.country)}
           </span>
@@ -133,14 +151,14 @@ export default async function CityPage({
           </Link>
         </span>
       </div>
-      <p className="mt-2 max-w-3xl text-neutral-600">
+      <p className="mt-2 max-w-3xl text-ink-soft">
         {t("city.intro", { city: name })}
       </p>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Figure
           label={t("city.population")}
-          value={city.population.toLocaleString(lang)}
+          value={formatNumber(city.population, lang)}
           note={formatDate(city.populationDate, lang)}
         />
         {city.gdpPerCapita && (
@@ -169,8 +187,8 @@ export default async function CityPage({
       {/* Map and list share a selection, so they are one client component. */}
       <CityView cityKey={slug} projects={cards} />
 
-      <section className="mt-10 max-w-3xl text-sm text-neutral-500">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+      <section className="mt-10 max-w-3xl text-sm text-ink-muted">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-muted">
           {t("city.sourcesTitle")}
         </h2>
         {note && <p className="mt-2">{note}</p>}
@@ -182,7 +200,7 @@ export default async function CityPage({
                 href={source.url}
                 target="_blank"
                 rel="noreferrer"
-                className="underline underline-offset-2 hover:text-neutral-900"
+                className="underline underline-offset-2 hover:text-ink"
               >
                 {source.title}
               </a>
@@ -196,7 +214,7 @@ export default async function CityPage({
               href={city.link}
               target="_blank"
               rel="noreferrer"
-              className="underline underline-offset-2 hover:text-neutral-900"
+              className="underline underline-offset-2 hover:text-ink"
             >
               {t("city.officialSite")}
             </a>
