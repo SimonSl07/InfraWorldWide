@@ -1,0 +1,107 @@
+{
+  "baseYear": 2015,
+  "note": "Annual construction cost index (Eurostat sts_copi_a, indic_bt COST, unit I15), 2015 = 100. An alternative price basis to the consumer-price table in deflators.json, and a closer fit for civil works: construction input costs rose far faster than consumer prices in 2021-23, so a real-terms overrun spanning that window is overstated by HICP. Two limits are deliberate and neither is patched over. The published series is for residential building work (CPA F41001), because Eurostat publishes no separate civil-engineering cost index for these countries, so it tracks the same labour and materials as a motorway but not the same mix. And it covers only BGN, EUR and RON: Eurostat returns no values at all for Serbia, and there is no US series in this collection, so a cost in RSD or USD cannot be restated on this basis and drops out of any ranking that uses it rather than being converted on a series that does not exist.",
+  "sources": [
+    {
+      "title": "Eurostat: Construction cost (input prices) index, annual data [sts_copi_a]",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/sts_copi_a/default/table"
+    }
+  ],
+  "series": {
+    "BGN": {
+      "geo": "BG",
+      "label": {
+        "en": "Bulgaria",
+        "ro": "Bulgaria"
+      },
+      "index": {
+        "2003": 64.3,
+        "2004": 66.2,
+        "2005": 71.7,
+        "2006": 76,
+        "2007": 81,
+        "2008": 91.1,
+        "2009": 97.9,
+        "2010": 96.6,
+        "2011": 97.2,
+        "2012": 96.6,
+        "2013": 98,
+        "2014": 98.7,
+        "2015": 100,
+        "2016": 100.8,
+        "2017": 103.6,
+        "2018": 106.6,
+        "2019": 112.6,
+        "2020": 115.2,
+        "2021": 128.2,
+        "2022": 196.4,
+        "2023": 228.2
+      }
+    },
+    "EUR": {
+      "geo": "EA20",
+      "label": {
+        "en": "Euro area",
+        "ro": "Zona euro"
+      },
+      "index": {
+        "2000": 72.7,
+        "2001": 74,
+        "2002": 75.6,
+        "2003": 77,
+        "2004": 79.5,
+        "2005": 81.7,
+        "2006": 84.5,
+        "2007": 87.9,
+        "2008": 91.4,
+        "2009": 91.8,
+        "2010": 93.5,
+        "2011": 96.5,
+        "2012": 98.2,
+        "2013": 98.8,
+        "2014": 99.3,
+        "2015": 100,
+        "2016": 100.7,
+        "2017": 103,
+        "2018": 105.7,
+        "2019": 107.4,
+        "2020": 108.6,
+        "2021": 115.4,
+        "2022": 129.7
+      }
+    },
+    "RON": {
+      "geo": "RO",
+      "label": {
+        "en": "Romania",
+        "ro": "România"
+      },
+      "index": {
+        "2000": 20.6,
+        "2001": 28.8,
+        "2002": 35.2,
+        "2003": 43.3,
+        "2004": 54.2,
+        "2005": 62.1,
+        "2006": 68.9,
+        "2007": 75.8,
+        "2008": 88.1,
+        "2009": 89.5,
+        "2010": 91.2,
+        "2011": 99.4,
+        "2012": 105.8,
+        "2013": 101.2,
+        "2014": 100.7,
+        "2015": 100,
+        "2016": 100.8,
+        "2017": 108.7,
+        "2018": 121.4,
+        "2019": 133.3,
+        "2020": 135.9,
+        "2021": 148.5,
+        "2022": 180,
+        "2023": 209.3
+      }
+    }
+  }
+}

@@ -10,6 +10,10 @@
     "en": "Rehabilitation of the double-track main line from the Hungarian border at Curtici through Arad and Radna to Simeria, the western part of the Romanian branch of Pan-European Corridor IV, for 160 km/h passenger and 120 km/h freight traffic with ERTMS/ETCS Level 2 signalling. Section 1 (border–Curtici–Arad–km 614, 41.185 km) was completed in 2016. Sections 2 (km 614–Gurasada) and 3 (Gurasada–Simeria) received RON 9.5 billion (about €2 billion) of financing, 75% of it from the Cohesion Fund, and are still in execution; they aim to cut the Arad–Simeria journey from 146 to 74 minutes.",
     "ro": "Reabilitarea magistralei duble de la granița cu Ungaria, de la Curtici prin Arad și Radna până la Simeria, partea vestică a ramurii românești a Coridorului IV pan-european, pentru viteze de 160 km/h la trenurile de călători și 120 km/h la marfă, cu semnalizare ERTMS/ETCS nivel 2. Tronsonul 1 (frontieră–Curtici–Arad–km 614, 41,185 km) a fost finalizat în 2016. Tronsoanele 2 (km 614–Gurasada) și 3 (Gurasada–Simeria) au primit o finanțare de 9,5 miliarde lei (circa 2 miliarde de euro), 75% din Fondul de Coeziune, și sunt încă în execuție; timpul de parcurs Arad–Simeria ar urma să scadă de la 146 la 74 de minute."
   },
+  "corridors": [
+    "pan-european-iv"
+  ],
+  "operator": "ro-cfr",
   "lots": [
     {
       "id": "t1-frontiera-arad",
@@ -31,9 +35,15 @@
           "year": 2012
         }
       },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Cohesion Fund",
             "ro": "Fondul de Coeziune"
@@ -49,17 +59,23 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "t1-frontiera-arad",
       "contract": {
         "value": {
           "amount": 1080,
           "currency": "RON",
           "year": 2012
         },
-        "noticeReference": "Contract signed on 15 February 2012 for the 41.185 km double-track section; execution ran into delays and finished around January 2016, when the new traffic-control system entered service",
-        "noticeUrl": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-frontiera-curtici-simeria-tronson-1/",
         "executionMonths": 27
-      }
+      },
+      "note": {
+        "en": "Contract signed on 15 February 2012 for the 41.185 km double-track section; execution ran into delays and finished around January 2016, when the new traffic-control system entered service"
+      },
+      "sourceRefs": [
+        "romania-insider-com-t1-frontiera-arad",
+        "zf-ro-t1-frontiera-arad",
+        "cfr-ro"
+      ],
+      "geometryRef": "t1-frontiera-arad"
     },
     {
       "id": "t2-km614-gurasada",
@@ -69,9 +85,15 @@
       },
       "status": "under_construction",
       "lengthKm": 100,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Cohesion Fund (75% of eligible costs of sections 2 and 3)",
             "ro": "Fondul de Coeziune (75% din costurile eligibile ale tronsoanelor 2 și 3)"
@@ -91,11 +113,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "t2-km614-gurasada",
-      "contract": {
-        "noticeReference": "Split into subsections 2A and 2B (about 80 km with 11 stations, 30 bridges and one tunnel) and Cap Y Bârzava – Cap Y Ilteu; sections 2 and 3 together were financed with RON 9.5 billion (~€2bn), RON 6bn from the Cohesion Fund",
-        "noticeUrl": "https://www.railwaypro.com/wp/romania-km-614-gurasada-gurasada-simeria-rail-sections-receive-eur-2-billion-financing/"
-      }
+      "note": {
+        "en": "Split into subsections 2A and 2B (about 80 km with 11 stations, 30 bridges and one tunnel) and Cap Y Bârzava – Cap Y Ilteu; sections 2 and 3 together were financed with RON 9.5 billion (~€2bn), RON 6bn from the Cohesion Fund"
+      },
+      "sourceRefs": [
+        "railwaypro-com"
+      ],
+      "geometryRef": "t2-km614-gurasada"
     },
     {
       "id": "t3-gurasada-simeria",
@@ -110,9 +134,15 @@
         "expectedOpening": "2026-11"
       },
       "lengthKm": 41,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Cohesion Fund",
             "ro": "Fondul de Coeziune"
@@ -128,23 +158,28 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "t3-gurasada-simeria",
-      "contract": {
-        "noticeReference": "Contract signed with the FCC–Astaldi–Convensa consortium on 31 August 2017 for 41 km of line, 17 bridges, 27 culverts, 4 overpasses, 3 underpasses and 4 stations; works started in early 2018, originally due in 2021, now expected in November 2026",
-        "noticeUrl": "https://www.hillintl.com/project/gurasada-simeria-railway-section/"
-      }
+      "note": {
+        "en": "Contract signed with the FCC–Astaldi–Convensa consortium on 31 August 2017 for 41 km of line, 17 bridges, 27 culverts, 4 overpasses, 3 underpasses and 4 stations; works started in early 2018, originally due in 2021, now expected in November 2026"
+      },
+      "sourceRefs": [
+        "hillintl-com"
+      ],
+      "geometryRef": "t3-gurasada-simeria"
     }
   ],
   "sources": [
     {
+      "id": "cfr-ro",
       "title": "CFR SA: Reabilitarea liniei de cale ferată Frontieră – Curtici – Simeria (Tronson 1)",
       "url": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-frontiera-curtici-simeria-tronson-1/"
     },
     {
+      "id": "railwaypro-com",
       "title": "Railway PRO: Km 614–Gurasada and Gurasada–Simeria rail sections receive EUR 2 billion financing",
       "url": "https://www.railwaypro.com/wp/romania-km-614-gurasada-gurasada-simeria-rail-sections-receive-eur-2-billion-financing/"
     },
     {
+      "id": "hillintl-com",
       "title": "Hill International: Gurasada–Simeria railway section",
       "url": "https://www.hillintl.com/project/gurasada-simeria-railway-section/"
     },
@@ -157,11 +192,13 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "romania-insider.com: t1-frontiera-arad",
+      "id": "romania-insider-com-t1-frontiera-arad",
+      "title": "romania-insider.com",
       "url": "https://www.romania-insider.com/five-company-consortium-wins-eur-248-mln-contract-for-curtici-arad-railway-segment-in-romania"
     },
     {
-      "title": "zf.ro: t1-frontiera-arad",
+      "id": "zf-ro-t1-frontiera-arad",
+      "title": "zf.ro",
       "url": "https://www.zf.ro/business-construct/lucrarile-de-modernizare-a-garii-arad-receptionate-partial-dupa-investitii-de-334-milioane-de-lei-14915527"
     }
   ]

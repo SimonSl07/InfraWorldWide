@@ -42,15 +42,18 @@
           "role": "designer"
         }
       ],
-      "geometryRef": "main-bridge",
-      "contract": {
-        "noticeReference": "Double-deck road-rail bridge designed by Soviet engineers V. Andreev and N. Rudomazin, built 1952–1954 with Soviet aid",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Danube_Bridge"
-      }
+      "note": {
+        "en": "Double-deck road-rail bridge designed by Soviet engineers V. Andreev and N. Rudomazin, built 1952–1954 with Soviet aid"
+      },
+      "sourceRefs": [
+        "wikipedia-danube-bridge"
+      ],
+      "geometryRef": "main-bridge"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-danube-bridge",
       "title": "Wikipedia: Danube Bridge",
       "url": "https://en.wikipedia.org/wiki/Danube_Bridge"
     }

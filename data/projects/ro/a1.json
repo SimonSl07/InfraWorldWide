@@ -10,6 +10,9 @@
     "en": "Romania's main east–west motorway, from Bucharest through Pitești, Sibiu, Deva, Timișoara and Arad to the Hungarian border at Nădlac (Pan-European Corridor IV). The Bucharest–Pitești section (1972) was Romania's first motorway; the last gap, through the Carpathians between Pitești and Sibiu, is under construction.",
     "ro": "Principala autostradă est-vest a României, de la București prin Pitești, Sibiu, Deva, Timișoara și Arad până la granița cu Ungaria la Nădlac (Coridorul Pan-European IV). Tronsonul București–Pitești (1972) a fost prima autostradă a României; ultimul gol, prin Carpați între Pitești și Sibiu, este în construcție."
   },
+  "corridors": [
+    "pan-european-iv"
+  ],
   "lots": [
     {
       "id": "bucharest-pitesti",
@@ -28,11 +31,13 @@
           "source": "national_budget"
         }
       ],
+      "note": {
+        "en": "Romania's first motorway, built 1967–1972 and financed from the state budget; fully rehabilitated later (a 1997 FAT consortium contract for €27M over 22 months)"
+      },
       "geometryRef": "bucharest-pitesti",
-      "contract": {
-        "noticeReference": "Romania's first motorway, built 1967–1972 and financed from the state budget; fully rehabilitated later (a 1997 FAT consortium contract for €27M over 22 months)",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A1_(Rom%C3%A2nia)"
-      }
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a1-rom-nia"
+      ]
     },
     {
       "id": "pitesti-sibiu-lot5",
@@ -54,16 +59,6 @@
           "year": 2020
         }
       },
-      "contract": {
-        "value": {
-          "amount": 356,
-          "currency": "EUR",
-          "year": 2020
-        },
-        "noticeReference": "First 16 km (Pitești–Curtea de Argeș) inaugurated December 2024, eight months ahead of the contractual term",
-        "noticeUrl": "https://www.romania-insider.com/romania-opens-highway-segment-sibiu-pitesti-december-2024",
-        "executionMonths": 48
-      },
       "funding": [
         {
           "source": "EU"
@@ -78,7 +73,30 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "pitesti-sibiu-lot5"
+      "contract": {
+        "value": {
+          "amount": 356,
+          "currency": "EUR",
+          "year": 2020
+        },
+        "executionMonths": 48
+      },
+      "note": {
+        "en": "First 16 km (Pitești–Curtea de Argeș) inaugurated December 2024, eight months ahead of the contractual term"
+      },
+      "sources": [
+        {
+          "title": "romania-insider.com",
+          "url": "https://www.romania-insider.com/romania-opens-highway-segment-sibiu-pitesti-december-2024"
+        }
+      ],
+      "sourceRefs": [
+        "hotnews-ro-pitesti-sibiu-lot5"
+      ],
+      "geometryRef": "pitesti-sibiu-lot5",
+      "profile": {
+        "terrain": "mountain"
+      }
     },
     {
       "id": "pitesti-sibiu-lots234",
@@ -93,10 +111,6 @@
         "expectedOpening": "2031"
       },
       "lengthKm": 78,
-      "contract": {
-        "noticeReference": "Lots 2–4 (Curtea de Argeș–Boița), the Carpathian crossing, under separate execution contracts: lot 2 Mapa–Cengiz, lot 3 Webuild, lot 4 Porr. Staged completion per OpenStreetMap construction tagging: section D 2027, lot 3 (Tunel Poiana, Polanta) 2028, lot 2 Boița–Cornet (Tunel Lazaret 1/2, Robești, Câineni, Boița 1/2, Balota) 2031, so the full stretch is in service only from 2031",
-        "noticeUrl": "https://www.openstreetmap.org/relation/2790155"
-      },
       "funding": [
         {
           "source": "EU"
@@ -119,7 +133,19 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "pitesti-sibiu-lots234"
+      "note": {
+        "en": "Lots 2–4 (Curtea de Argeș–Boița), the Carpathian crossing, under separate execution contracts: lot 2 Mapa–Cengiz, lot 3 Webuild, lot 4 Porr. Staged completion per OpenStreetMap construction tagging: section D 2027, lot 3 (Tunel Poiana, Polanta) 2028, lot 2 Boița–Cornet (Tunel Lazaret 1/2, Robești, Câineni, Boița 1/2, Balota) 2031, so the full stretch is in service only from 2031"
+      },
+      "sources": [
+        {
+          "title": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/relation/2790155"
+        }
+      ],
+      "geometryRef": "pitesti-sibiu-lots234",
+      "profile": {
+        "terrain": "mountain"
+      }
     },
     {
       "id": "pitesti-sibiu-lot1",
@@ -155,11 +181,18 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "pitesti-sibiu-lot1",
       "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)",
         "executionMonths": 36
+      },
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "pitesti-sibiu-lot1",
+      "profile": {
+        "terrain": "mountain"
       }
     },
     {
@@ -193,11 +226,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "sibiu-bypass",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "sibiu-bypass"
     },
     {
       "id": "orastie-sibiu",
@@ -212,6 +247,13 @@
         "opened": "2014-11-14"
       },
       "lengthKm": 82,
+      "cost": {
+        "estimated": {
+          "amount": 370,
+          "currency": "EUR",
+          "year": 2014
+        }
+      },
       "funding": [
         {
           "source": "EU"
@@ -238,18 +280,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "orastie-sibiu",
-      "contract": {
-        "noticeReference": "Orăștie–Sibiu received close to €370M in EU funds for the whole section (four lots: Strabag, Straco Grup–Studio Corona, Salini Impregilo, Astaldi); lot 3 was closed for repairs 2015–2016",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A1_(Rom%C3%A2nia)"
+      "note": {
+        "en": "Orăștie–Sibiu received close to €370M in EU funds for the whole section (four lots: Strabag, Straco Grup–Studio Corona, Salini Impregilo, Astaldi); lot 3 was closed for repairs 2015–2016"
       },
-      "cost": {
-        "estimated": {
-          "amount": 370,
-          "currency": "EUR",
-          "year": 2014
-        }
-      }
+      "geometryRef": "orastie-sibiu",
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a1-rom-nia"
+      ]
     },
     {
       "id": "simeria-orastie",
@@ -267,6 +304,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-ispa",
           "detail": {
             "en": "ISPA pre-accession funds",
             "ro": "Fonduri ISPA de preaderare"
@@ -286,11 +324,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "simeria-orastie",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "simeria-orastie"
     },
     {
       "id": "deva-simeria",
@@ -308,6 +348,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-ispa",
           "detail": {
             "en": "ISPA pre-accession funds",
             "ro": "Fonduri ISPA de preaderare"
@@ -327,11 +368,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "deva-simeria",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "deva-simeria"
     },
     {
       "id": "lugoj-deva-lots34",
@@ -364,11 +407,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lugoj-deva-lots34",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "lugoj-deva-lots34"
     },
     {
       "id": "lugoj-deva-lot2",
@@ -401,11 +446,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lugoj-deva-lot2",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "lugoj-deva-lot2"
     },
     {
       "id": "lugoj-deva-lot1",
@@ -434,11 +481,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lugoj-deva-lot1",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "lugoj-deva-lot1"
     },
     {
       "id": "timisoara-lugoj",
@@ -471,11 +520,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "timisoara-lugoj",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "timisoara-lugoj"
     },
     {
       "id": "arad-timisoara",
@@ -508,11 +559,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "arad-timisoara",
-      "contract": {
-        "noticeReference": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "arad-timisoara"
     },
     {
       "id": "nadlac-arad",
@@ -548,15 +601,18 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "nadlac-arad",
-      "contract": {
-        "noticeReference": "Nădlac–Arad tendered together with Timișoara–Lugoj and Lugoj–Dumbrava; lot 1 and part of lot 2 opened December 2014, the remainder plus the junction with the Hungarian M43 in July 2015",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Nădlac–Arad tendered together with Timișoara–Lugoj and Lugoj–Dumbrava; lot 1 and part of lot 2 opened December 2014, the remainder plus the junction with the Hungarian M43 in July 2015"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "nadlac-arad"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-a1-motorway-romania",
       "title": "Wikipedia: A1 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
     },
@@ -569,8 +625,14 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "hotnews.ro: pitesti-sibiu-lot5",
+      "id": "hotnews-ro-pitesti-sibiu-lot5",
+      "title": "hotnews.ro",
       "url": "https://hotnews.ro/contract-semnat-pentru-autostrada-sibiu-pitesti-356-milioane-de-euro-pentru-30-de-kilometri-de-la-pitesti-la-curtea-de-arges-259275"
+    },
+    {
+      "id": "wikipedia-ro-autostrada-a1-rom-nia",
+      "title": "Wikipedia (ro): Autostrada A1 (România)",
+      "url": "https://ro.wikipedia.org/wiki/Autostrada_A1_(Rom%C3%A2nia)"
     }
   ]
 }

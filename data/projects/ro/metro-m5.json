@@ -11,6 +11,8 @@
     "en": "Newest line of the Bucharest Metro, serving the dense Drumul Taberei district. The first phase runs 6.9 km from Râul Doamnei to Eroilor with 10 stations, including the Valea Ialomiței branch towards the depot; construction started in April 2011 and, after repeated delays, the line opened on 15 September 2020 at an expected cost of €708.6 million with EU support. Phase II would extend the line east from Eroilor under the city centre to Iancului, and a third phase on to Pantelimon on the M1.",
     "ro": "Cea mai nouă magistrală a metroului bucureștean, care deservește cartierul dens Drumul Taberei. Prima etapă are 6,9 km, de la Râul Doamnei la Eroilor, cu 10 stații, inclusiv ramura Valea Ialomiței spre depou; construcția a început în aprilie 2011 și, după amânări repetate, linia a fost deschisă pe 15 septembrie 2020, la un cost estimat de 708,6 milioane de euro, cu sprijin european. Etapa a II-a ar prelungi linia spre est, de la Eroilor pe sub centrul orașului până la Iancului, iar o a treia etapă până la Pantelimon, pe M1."
   },
+  "operator": "ro-metrorex",
+  "stationCount": 10,
   "lots": [
     {
       "id": "phase1-raul-doamnei-eroilor",
@@ -53,11 +55,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "phase1-raul-doamnei-eroilor",
-      "contract": {
-        "noticeReference": "10 stations over 6.9 km; construction from April 2011, opened 15 September 2020, expected cost €708.6 million",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
-      }
+      "note": {
+        "en": "10 stations over 6.9 km; construction from April 2011, opened 15 September 2020, expected cost €708.6 million"
+      },
+      "sourceRefs": [
+        "wikipedia-bucharest-metro-line-m5"
+      ],
+      "geometryRef": "phase1-raul-doamnei-eroilor"
     },
     {
       "id": "phase2-eroilor-iancului",
@@ -67,11 +71,13 @@
       },
       "status": "planned",
       "lengthKm": 5.4,
-      "geometryRef": "phase2-eroilor-iancului",
-      "contract": {
-        "noticeReference": "Six new stations under the city centre between Eroilor and Iancului; no construction contract awarded, Metrorex estimates quoted an opening around 2025 that has not been met",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
-      }
+      "note": {
+        "en": "Six new stations under the city centre between Eroilor and Iancului; no construction contract awarded, Metrorex estimates quoted an opening around 2025 that has not been met"
+      },
+      "sourceRefs": [
+        "wikipedia-bucharest-metro-line-m5"
+      ],
+      "geometryRef": "phase2-eroilor-iancului"
     },
     {
       "id": "phase3-iancului-pantelimon",
@@ -81,21 +87,25 @@
       },
       "status": "planned",
       "lengthKm": 3.8,
-      "geometryRef": "phase3-iancului-pantelimon",
-      "contract": {
-        "noticeReference": "Six stations along Șoseaua Iancului to the M1 station at Pantelimon; on hold, estimated for 2032",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
-      }
+      "note": {
+        "en": "Six stations along Șoseaua Iancului to the M1 station at Pantelimon; on hold, estimated for 2032"
+      },
+      "sourceRefs": [
+        "wikipedia-bucharest-metro-line-m5"
+      ],
+      "geometryRef": "phase3-iancului-pantelimon"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-bucharest-metro-line-m5",
       "title": "Wikipedia: Bucharest Metro Line M5",
       "url": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M5"
     },
     {
-      "title": "European Commission: Extension of Bucharest Metro Line 5",
-      "url": "https://ec.europa.eu/regional_policy/en/projects/major/romania/extension-of-bucharest-metro-line-5"
+      "title": "European Commission: Extension to Bucharest metro to improve links with western districts of the city",
+      "url": "https://ec.europa.eu/regional_policy/projects/projects-database/extension-to-bucharest-metro-to-improve-links-with-western-districts-of-the-city_en",
+      "retrievedOn": "2026-08-14"
     },
     {
       "title": "OpenStreetMap contributors (geometry of the opened section, ODbL)",

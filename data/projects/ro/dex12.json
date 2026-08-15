@@ -42,17 +42,22 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "craiova-bals",
       "contract": {
-        "noticeReference": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021",
-        "noticeUrl": "https://en.wikipedia.org/wiki/DEx12_expressway",
         "value": {
           "amount": 358.18,
           "currency": "RON",
           "year": 2018
         },
         "executionMonths": 24
-      }
+      },
+      "note": {
+        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021"
+      },
+      "sourceRefs": [
+        "hotnews-ro-bals-slatina",
+        "wikipedia-dex12-expressway"
+      ],
+      "geometryRef": "craiova-bals"
     },
     {
       "id": "bals-slatina",
@@ -85,17 +90,22 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "bals-slatina",
       "contract": {
-        "noticeReference": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021",
-        "noticeUrl": "https://en.wikipedia.org/wiki/DEx12_expressway",
         "value": {
           "amount": 661.45,
           "currency": "RON",
           "year": 2018
         },
         "executionMonths": 24
-      }
+      },
+      "note": {
+        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021"
+      },
+      "sourceRefs": [
+        "hotnews-ro-bals-slatina",
+        "wikipedia-dex12-expressway"
+      ],
+      "geometryRef": "bals-slatina"
     },
     {
       "id": "slatina-bypass",
@@ -128,17 +138,22 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "slatina-bypass",
       "contract": {
-        "noticeReference": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021",
-        "noticeUrl": "https://en.wikipedia.org/wiki/DEx12_expressway",
         "value": {
           "amount": 792.19,
           "currency": "RON",
           "year": 2018
         },
         "executionMonths": 24
-      }
+      },
+      "note": {
+        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021"
+      },
+      "sourceRefs": [
+        "hotnews-ro-bals-slatina",
+        "wikipedia-dex12-expressway"
+      ],
+      "geometryRef": "slatina-bypass"
     },
     {
       "id": "slatina-colonesti",
@@ -153,13 +168,13 @@
         "opened": "2023-12-23"
       },
       "lengthKm": 31.88,
-      "contractors": [
-        {
-          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
-          "role": "builder"
+      "cost": {
+        "estimated": {
+          "amount": 999.41,
+          "currency": "RON",
+          "year": 2019
         }
-      ],
-      "geometryRef": "slatina-colonesti",
+      },
       "funding": [
         {
           "source": "EU",
@@ -172,9 +187,13 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
+          "role": "builder"
+        }
+      ],
       "contract": {
-        "noticeReference": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021",
-        "noticeUrl": "https://en.wikipedia.org/wiki/DEx12_expressway",
         "value": {
           "amount": 670.72,
           "currency": "RON",
@@ -183,13 +202,15 @@
         "executionMonths": 24,
         "totalMonths": 36
       },
-      "cost": {
-        "estimated": {
-          "amount": 999.41,
-          "currency": "RON",
-          "year": 2019
-        }
-      }
+      "note": {
+        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021"
+      },
+      "sourceRefs": [
+        "zf-ro-slatina-colonesti",
+        "economica-net-slatina-colonesti",
+        "wikipedia-dex12-expressway"
+      ],
+      "geometryRef": "slatina-colonesti"
     },
     {
       "id": "colonesti-albota",
@@ -204,13 +225,6 @@
         "opened": "2024-11-28"
       },
       "lengthKm": 20.1,
-      "contractors": [
-        {
-          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
-          "role": "builder"
-        }
-      ],
-      "geometryRef": "colonesti-albota",
       "funding": [
         {
           "source": "EU",
@@ -223,10 +237,19 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021",
-        "noticeUrl": "https://en.wikipedia.org/wiki/DEx12_expressway"
-      }
+      "contractors": [
+        {
+          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021"
+      },
+      "sourceRefs": [
+        "wikipedia-dex12-expressway"
+      ],
+      "geometryRef": "colonesti-albota"
     },
     {
       "id": "albota-pitesti",
@@ -241,13 +264,6 @@
         "opened": "2025-07-31"
       },
       "lengthKm": 11.2,
-      "contractors": [
-        {
-          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
-          "role": "builder"
-        }
-      ],
-      "geometryRef": "albota-pitesti",
       "funding": [
         {
           "source": "EU",
@@ -260,14 +276,24 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021",
-        "noticeUrl": "https://en.wikipedia.org/wiki/DEx12_expressway"
-      }
+      "contractors": [
+        {
+          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021"
+      },
+      "sourceRefs": [
+        "wikipedia-dex12-expressway"
+      ],
+      "geometryRef": "albota-pitesti"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-dex12-expressway",
       "title": "Wikipedia: DEx12 expressway",
       "url": "https://en.wikipedia.org/wiki/DEx12_expressway"
     },
@@ -276,15 +302,18 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "hotnews.ro: bals-slatina, craiova-bals, slatina-bypass",
+      "id": "hotnews-ro-bals-slatina",
+      "title": "hotnews.ro",
       "url": "https://hotnews.ro/stiri-infrastructura_articole-22846495-harta-interactiv-drumul-expres-craiova-pitesti-fost-semnate-contractele-pentru-constructia-57-pentru-circa-385-milioane-euro-unde-trece-viitoarea-sosea.htm"
     },
     {
-      "title": "zf.ro: slatina-colonesti",
+      "id": "zf-ro-slatina-colonesti",
+      "title": "zf.ro",
       "url": "https://www.zf.ro/auto/cnair-a-semnat-contractele-pentru-ultimele-doua-tronsoane-ale-19546572"
     },
     {
-      "title": "economica.net: slatina-colonesti",
+      "id": "economica-net-slatina-colonesti",
+      "title": "economica.net",
       "url": "https://www.economica.net/autostrada-ford-cnair-a-relansat-la-licitatie-tronsonul-3-din-drumul-expres-craiova-pitesti-pentru-999-milioane-de-lei_174461.html"
     }
   ]

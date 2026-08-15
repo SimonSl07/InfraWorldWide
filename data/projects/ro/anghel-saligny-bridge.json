@@ -29,21 +29,28 @@
           "role": "designer"
         }
       ],
-      "geometryRef": "bridge-complex",
       "contract": {
-        "noticeReference": "Railway bridge complex over the Danube designed by Anghel Saligny, built 1890–1895; longest bridge in Europe at completion",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Anghel_Saligny_Bridge",
         "executionMonths": 60
-      }
+      },
+      "note": {
+        "en": "Railway bridge complex over the Danube designed by Anghel Saligny, built 1890–1895; longest bridge in Europe at completion"
+      },
+      "sourceRefs": [
+        "icr-ro-bridge-complex",
+        "wikipedia-anghel-saligny-bridge"
+      ],
+      "geometryRef": "bridge-complex"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-anghel-saligny-bridge",
       "title": "Wikipedia: Anghel Saligny Bridge",
       "url": "https://en.wikipedia.org/wiki/Anghel_Saligny_Bridge"
     },
     {
-      "title": "icr.ro: bridge-complex",
+      "id": "icr-ro-bridge-complex",
+      "title": "icr.ro",
       "url": "https://www.icr.ro/pagini/septembrie-podul-carol-i-podul-anghel-saligny"
     }
   ]

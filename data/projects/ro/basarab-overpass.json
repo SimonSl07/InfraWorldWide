@@ -55,16 +55,22 @@
           "role": "designer"
         }
       ],
-      "geometryRef": "overpass",
       "contract": {
-        "noticeReference": "Built 2006–2011 by Astaldi and FCC Construcción for about €255 million; officially inaugurated 17 June 2011 and opened to traffic on 19 June 2011",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Basarab_Overpass",
         "executionMonths": 28
-      }
+      },
+      "note": {
+        "en": "Built 2006–2011 by Astaldi and FCC Construcción for about €255 million; officially inaugurated 17 June 2011 and opened to traffic on 19 June 2011"
+      },
+      "sourceRefs": [
+        "cotidianul-ro-overpass",
+        "wikipedia-basarab-overpass"
+      ],
+      "geometryRef": "overpass"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-basarab-overpass",
       "title": "Wikipedia: Basarab Overpass",
       "url": "https://en.wikipedia.org/wiki/Basarab_Overpass"
     },
@@ -73,7 +79,8 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "cotidianul.ro: overpass",
+      "id": "cotidianul-ro-overpass",
+      "title": "cotidianul.ro",
       "url": "https://www.cotidianul.ro/cat-costa-de-fapt-pasajul-basarab/"
     }
   ]

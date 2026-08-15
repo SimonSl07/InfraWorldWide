@@ -1,4 +1,9 @@
-import { dateYear, type Project } from "./schema";
+import {
+  dateYear,
+  isPartOfAnother,
+  isSharedTrack,
+  type Project,
+} from "./schema";
 
 /** Headline statistics for the landing page — pure, unit-tested. */
 export interface ProjectStats {
@@ -12,6 +17,32 @@ export interface ProjectStats {
   underConstructionKm: number;
 }
 
+/**
+ * Earliest and latest year the data says anything about, counting expected
+ * openings so the range covers what is scheduled as well as what is built.
+ * Falls back to the current year when nothing is dated.
+ */
+export function dataYearRange(
+  projects: Project[],
+  fallbackYear = new Date().getFullYear(),
+): { first: number; last: number } {
+  const years: number[] = [];
+  for (const p of projects) {
+    for (const lot of p.lots) {
+      for (const date of [
+        lot.dates?.announced,
+        lot.dates?.constructionStart,
+        lot.dates?.opened,
+        lot.dates?.expectedOpening,
+      ]) {
+        if (date) years.push(dateYear(date));
+      }
+    }
+  }
+  if (years.length === 0) return { first: fallbackYear, last: fallbackYear };
+  return { first: Math.min(...years), last: Math.max(...years) };
+}
+
 export function computeStats(
   projects: Project[],
   nowYear: number,
@@ -23,6 +54,11 @@ export function computeStats(
 
   for (const p of projects) {
     for (const lot of p.lots) {
+      // These headline figures span projects, so anything another project
+      // already counts must not be added twice: track a line only borrows
+      // (sharedWith), and a structure recorded separately but sitting inside
+      // a section its parent already measures (partOf). See AGENTS.md.
+      if (isSharedTrack(lot) || isPartOfAnother(lot)) continue;
       if (lot.status === "opened" && lot.dates?.opened) {
         openedKm += lot.lengthKm;
         if (dateYear(lot.dates.opened) >= nowYear - recentYears) {

@@ -58,6 +58,39 @@ export function geojsonBounds(fc: FeatureCollection): BBox | null {
   );
 }
 
+const EARTH_RADIUS_KM = 6371.0088;
+
+/** Great-circle distance between two [lng, lat] positions, in km. */
+function haversine(a: Position, b: Position): number {
+  const toRad = Math.PI / 180;
+  const lat1 = a[1] * toRad;
+  const lat2 = b[1] * toRad;
+  const dLat = lat2 - lat1;
+  const dLng = (b[0] - a[0]) * toRad;
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
+  return 2 * EARTH_RADIUS_KM * Math.asin(Math.min(1, Math.sqrt(h)));
+}
+
+/** Total length of a line in km; 0 for anything that is not a line. */
+export function lineLength(
+  geometry: GeoJSON.Geometry | null | undefined,
+): number {
+  if (!geometry) return 0;
+  const parts: Position[][] =
+    geometry.type === "LineString"
+      ? [geometry.coordinates]
+      : geometry.type === "MultiLineString"
+        ? geometry.coordinates
+        : [];
+  let km = 0;
+  for (const part of parts) {
+    for (let i = 1; i < part.length; i++) km += haversine(part[i - 1], part[i]);
+  }
+  return km;
+}
+
 /** Features belonging to one project. */
 export function featuresForProject(
   fc: FeatureCollection,
