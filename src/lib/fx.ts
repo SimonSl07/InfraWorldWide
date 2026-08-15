@@ -18,7 +18,11 @@ import type { FxTable, Money } from "./schema";
  * the ranking instead of guessing a rate.
  */
 
-export type ConvertFailure = "unknown_currency" | "year_out_of_range";
+export type ConvertFailure =
+  | "unknown_currency"
+  | "year_out_of_range"
+  /** No price year, so there is no year whose rate could apply. */
+  | "missing_price_year";
 
 export type ConvertResult =
   | { ok: true; money: Money }
@@ -32,6 +36,14 @@ export type Converter = (money: Money) => ConvertResult;
  */
 export function createConverter(table: FxTable): Converter {
   return (money) => {
+    // Before the base-currency shortcut: a figure with no price year cannot
+    // be put on the common axis whatever currency it is in, and letting the
+    // euro leg through would make that depend on which currency it happened
+    // to be recorded in.
+    if (money.year === undefined) {
+      return { ok: false, reason: "missing_price_year" };
+    }
+
     // Already in the base currency: nothing to convert, and demanding a
     // self-rate would fail every euro cost in the dataset.
     if (money.currency === table.base) return { ok: true, money };
