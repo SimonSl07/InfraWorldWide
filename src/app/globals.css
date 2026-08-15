@@ -1,6 +1,300 @@
 @import "tailwindcss";
 
+/*
+ * Theme tokens.
+ *
+ * Dark mode is done token-first: the palette is named once here and every
+ * component consumes the names, so there is no `dark:` variant anywhere in
+ * the component tree and no way for one to be forgotten. `@theme inline`
+ * makes each utility emit `var(--ink)` rather than a copied literal, which is
+ * what lets the same class react to a theme change at runtime.
+ *
+ * The trigger is the operating system preference, with no toggle. That buys:
+ * no inline blocking script, no flash of the wrong theme, no hydration
+ * mismatch, no persisted state, and every page stays statically generated.
+ * The cost is that a reader cannot override their OS, which matters most when
+ * printing or projecting. The `[data-theme]` selectors below are already
+ * wired for both directions, so adding a toggle later is a script plus a
+ * control and no palette work at all.
+ *
+ * Light values are exactly the literals the components used before, so light
+ * mode renders unchanged.
+ */
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Grounds, from the page up to a raised chip. */
+  --color-surface: var(--surface);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-raised: var(--surface-raised);
+
+  /* Text, strongest to decorative. */
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+
+  /* Rules and hairlines. */
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-line-strong: var(--line-strong);
+
+  /* A block that reverses the ground: primary buttons, active pills. */
+  --color-inverse: var(--inverse);
+  --color-inverse-soft: var(--inverse-soft);
+  --color-on-inverse: var(--on-inverse);
+
+  /* Meaning, not decoration: over budget, on budget, caveat, reference. */
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+
+  /* Category identity, shared by the map lines and the UI swatches. */
+  --color-cat-highway: var(--cat-highway);
+  --color-cat-railway: var(--cat-railway);
+  --color-cat-bridge: var(--cat-bridge);
+  --color-cat-tunnel: var(--cat-tunnel);
+
+  --color-focus: var(--focus);
+}
+
+/*
+ * Light. Every value here is the literal the components carried before this
+ * file existed, so nothing about light mode moved.
+ */
+:root {
+  color-scheme: light;
+
+  --surface: #ffffff;
+  --surface-sunken: #fafafa; /* neutral-50 */
+  --surface-raised: #f5f5f5; /* neutral-100 */
+
+  --ink: #171717; /* neutral-900 */
+  --ink-soft: #525252; /* neutral-600 */
+  --ink-muted: #737373; /* neutral-500 */
+  --ink-faint: #a3a3a3; /* neutral-400, decorative only */
+
+  --line: #e5e5e5; /* neutral-200 */
+  --line-soft: #f5f5f5; /* neutral-100 */
+  --line-strong: #d4d4d4; /* neutral-300 */
+
+  --inverse: #171717; /* neutral-900 */
+  --inverse-soft: #404040; /* neutral-700 */
+  --on-inverse: #ffffff;
+
+  --bad: #b91c1c; /* red-700 */
+  --bad-soft: #fee2e2; /* red-100 */
+  --good: #047857; /* emerald-700 */
+  --good-soft: #dcfce7; /* green-100 */
+  --warn: #b45309; /* amber-700 */
+  --warn-soft: #fef3c7; /* amber-100 */
+  --info: #1e40af; /* blue-800 */
+  --info-soft: #dbeafe; /* blue-100 */
+
+  --cat-highway: #2563eb; /* blue-600 */
+  --cat-railway: #16a34a; /* green-600 */
+  --cat-bridge: #d97706; /* amber-600 */
+  --cat-tunnel: #7c3aed; /* violet-600 */
+
+  --focus: #171717;
+}
+
+/*
+ * Dark. Not an inversion of the light ramp: each value was picked to clear
+ * 4.5:1 against the ground it sits on, which an inversion does not give you.
+ * Against --surface #131315: ink 17.4:1, ink-soft 12.4:1, ink-muted 7.3:1,
+ * and even ink-faint 5.1:1, so the decorative tier passes too.
+ *
+ * The category hues move up a step. blue-600 and violet-600 are only 3.1:1
+ * and 2.8:1 on this ground, so the 400-level hues are used instead, for the
+ * map lines as much as for the legend swatches.
+ *
+ * The MapLibre canvas cannot follow any of this: paint properties are values
+ * handed to a WebGL renderer, so they never see a custom property and never
+ * re-evaluate on a media query. `src/lib/map-theme.ts` mirrors the two rows
+ * that matter (the category hues and the line casing) as resolved hex, and
+ * `usePrefersDark` feeds it. Change a category hue here and change it there.
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --surface: #131315;
+    --surface-sunken: #0c0c0e;
+    --surface-raised: #1c1c20;
+
+    --ink: #f4f4f5;
+    --ink-soft: #d4d4d8;
+    --ink-muted: #a1a1aa;
+    --ink-faint: #85858e;
+
+    --line: #2b2b31;
+    --line-soft: #1f1f24;
+    --line-strong: #3f3f46;
+
+    --inverse: #f4f4f5;
+    --inverse-soft: #d4d4d8;
+    --on-inverse: #131315;
+
+    --bad: #fca5a5; /* red-300 */
+    --bad-soft: #3f1d1d;
+    --good: #6ee7b7; /* emerald-300 */
+    --good-soft: #123528;
+    --warn: #fcd34d; /* amber-300 */
+    --warn-soft: #3a2c10;
+    --info: #93c5fd; /* blue-300 */
+    --info-soft: #16253f;
+
+    --cat-highway: #60a5fa; /* blue-400 */
+    --cat-railway: #4ade80; /* green-400 */
+    --cat-bridge: #fbbf24; /* amber-400 */
+    --cat-tunnel: #a78bfa; /* violet-400 */
+
+    --focus: #f4f4f5;
+  }
+}
+
+/*
+ * Explicit overrides, unused today. They exist so that adding a toggle is a
+ * script that sets one attribute, rather than a second pass over the palette.
+ */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --surface: #131315;
+  --surface-sunken: #0c0c0e;
+  --surface-raised: #1c1c20;
+
+  --ink: #f4f4f5;
+  --ink-soft: #d4d4d8;
+  --ink-muted: #a1a1aa;
+  --ink-faint: #85858e;
+
+  --line: #2b2b31;
+  --line-soft: #1f1f24;
+  --line-strong: #3f3f46;
+
+  --inverse: #f4f4f5;
+  --inverse-soft: #d4d4d8;
+  --on-inverse: #131315;
+
+  --bad: #fca5a5;
+  --bad-soft: #3f1d1d;
+  --good: #6ee7b7;
+  --good-soft: #123528;
+  --warn: #fcd34d;
+  --warn-soft: #3a2c10;
+  --info: #93c5fd;
+  --info-soft: #16253f;
+
+  --cat-highway: #60a5fa;
+  --cat-railway: #4ade80;
+  --cat-bridge: #fbbf24;
+  --cat-tunnel: #a78bfa;
+
+  --focus: #f4f4f5;
+}
+
+/*
+ * A visible focus ring everywhere, including for the two inputs that used to
+ * set `outline-none` and replace it with nothing. The colour is a token
+ * because a near-black ring is invisible on a dark ground.
+ */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Printing a country or project page should give the tables and the prose,
+ * not a sticky header, an empty map canvas and pagination controls.
+ */
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  /* A map is a live canvas; on paper it is a grey rectangle. */
+  .maplibregl-map {
+    display: none !important;
+  }
+
+  /*
+   * Paper is white whatever the screen is doing. Resetting the tokens rather
+   * than only `body` means every token-coloured element on the page follows,
+   * so a dark-mode reader does not print light grey text on white.
+   */
+  :root,
+  :root[data-theme="dark"] {
+    color-scheme: light;
+
+    --surface: #ffffff;
+    --surface-sunken: #ffffff;
+    --surface-raised: #ffffff;
+    --ink: #000000;
+    --ink-soft: #1a1a1a;
+    --ink-muted: #333333;
+    --ink-faint: #555555;
+    --line: #999999;
+    --line-soft: #cccccc;
+    --line-strong: #666666;
+    --inverse: #000000;
+    --inverse-soft: #333333;
+    --on-inverse: #ffffff;
+    --bad: #7f1d1d;
+    --bad-soft: #ffffff;
+    --good: #064e3b;
+    --good-soft: #ffffff;
+    --warn: #78350f;
+    --warn-soft: #ffffff;
+    --info: #1e3a8a;
+    --info-soft: #ffffff;
+    --cat-highway: #1d4ed8;
+    --cat-railway: #15803d;
+    --cat-bridge: #b45309;
+    --cat-tunnel: #6d28d9;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  /* Tables are the reason to print these pages, so let them break sanely. */
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    word-break: break-all;
+  }
 }

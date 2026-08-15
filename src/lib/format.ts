@@ -4,16 +4,48 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   EUR: "€",
   USD: "$",
   RON: "lei ",
+  BGN: "лв",
+  RSD: "дин.",
   GBP: "£",
 };
 
-/** Format a Money value (amount is in millions): "€500M", "€1.2B". */
-export function formatMoney(m: Money): string {
+/**
+ * Magnitude words per locale. English writes "€1.8B" closed up; Romanian
+ * abbreviates the word and spaces it, "€1,8 mld.".
+ */
+const MAGNITUDES: Record<string, { million: string; billion: string; space: boolean }> = {
+  en: { million: "M", billion: "B", space: false },
+  ro: { million: "mil.", billion: "mld.", space: true },
+};
+
+/** Group and round a number the way the reader's locale writes it. */
+export function formatNumber(
+  value: number,
+  locale: string,
+  fractionDigits = 0,
+): string {
+  return value.toLocaleString(locale, {
+    minimumFractionDigits: fractionDigits,
+    maximumFractionDigits: fractionDigits,
+  });
+}
+
+/**
+ * Format a Money value (amount is in millions): "€500M", "€1.2B", "€1,8 mld.".
+ *
+ * The locale is optional so existing call sites keep working, but passing it
+ * matters: `toFixed()` writes 1.8 where Romanian requires 1,8.
+ */
+export function formatMoney(m: Money, locale = "en"): string {
   const symbol = CURRENCY_SYMBOLS[m.currency] ?? `${m.currency} `;
+  const words = MAGNITUDES[locale] ?? MAGNITUDES.en;
+  const gap = words.space ? " " : "";
+
   const value =
     m.amount >= 1000
-      ? `${(m.amount / 1000).toFixed(m.amount % 1000 === 0 ? 0 : 1)}B`
-      : `${m.amount}M`;
+      ? `${formatNumber(m.amount / 1000, locale, m.amount % 1000 === 0 ? 0 : 1)}${gap}${words.billion}`
+      : `${formatNumber(m.amount, locale, Number.isInteger(m.amount) ? 0 : 1)}${gap}${words.million}`;
+
   return `${symbol}${value}`;
 }
 
@@ -44,16 +76,16 @@ export function formatKm(km: number, locale: string): string {
   return `${Math.round(km).toLocaleString(locale)} km`;
 }
 
-/** Signed percentage with one decimal: "+38.3%", "−10.0%". */
-export function formatPercent(value: number): string {
+/** Signed percentage with one decimal: "+38.3%", "−10.0%", "+38,3%". */
+export function formatPercent(value: number, locale = "en"): string {
   const sign = value > 0 ? "+" : value < 0 ? "−" : "";
-  return `${sign}${Math.abs(value).toFixed(1)}%`;
+  return `${sign}${formatNumber(Math.abs(value), locale, 1)}%`;
 }
 
 /** Signed month count with a localized unit: "+46 mo", "−4 luni". */
-export function formatMonths(value: number, unit = "mo"): string {
+export function formatMonths(value: number, unit = "mo", locale = "en"): string {
   const sign = value > 0 ? "+" : value < 0 ? "−" : "";
-  return `${sign}${Math.abs(value)} ${unit}`;
+  return `${sign}${formatNumber(Math.abs(value), locale)} ${unit}`;
 }
 
 /** "2012-07-19" → "Jul 2012" style short date, year-only stays "2012". */
