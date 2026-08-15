@@ -10,6 +10,9 @@
     "en": "Extradosed road-rail bridge over the Danube between Calafat (Romania) and Vidin (Bulgaria), also known as Danube Bridge 2. The second bridge on the shared Romanian–Bulgarian section of the Danube, it carries four road lanes, one railway track and a bicycle/pedestrian path, and is part of Pan-European Corridor IV and European route E79. Built by the Spanish company FCC Construcción.",
     "ro": "Pod extradosat rutier și feroviar peste Dunăre, între Calafat (România) și Vidin (Bulgaria), cunoscut și ca Dunăv Most 2. Al doilea pod pe sectorul româno-bulgar al Dunării, are patru benzi rutiere, o linie de cale ferată și o pistă pentru biciclete/pietoni, făcând parte din Coridorul Paneuropean IV și din drumul european E79. Construit de compania spaniolă FCC Construcción."
   },
+  "corridors": [
+    "pan-european-iv"
+  ],
   "lots": [
     {
       "id": "main-bridge",
@@ -39,6 +42,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-ispa",
           "detail": {
             "en": "Co-financed through the EU ISPA pre-accession instrument; design study financed by the PHARE programme",
             "ro": "Cofinanțat prin instrumentul UE de preaderare ISPA; studiul de proiectare finanțat prin programul PHARE"
@@ -46,6 +50,12 @@
         },
         {
           "source": "loan",
+          "programme": "eib-loan",
+          "amount": {
+            "amount": 50,
+            "currency": "EUR",
+            "year": 2000
+          },
           "detail": {
             "en": "European Investment Bank credit loan of €50 million granted in December 2000",
             "ro": "Credit de 50 de milioane de euro acordat de Banca Europeană de Investiții în decembrie 2000"
@@ -62,30 +72,39 @@
           "role": "designer"
         }
       ],
-      "geometryRef": "main-bridge",
       "contract": {
-        "noticeReference": "Combined road-rail bridge Vidin–Calafat; builder FCC Construcción, designer Fernández Casado; ISPA/PHARE support plus a €50M EIB credit (December 2000)",
-        "noticeUrl": "https://en.wikipedia.org/wiki/New_Europe_Bridge",
         "totalMonths": 38,
         "value": {
           "amount": 99.955948,
           "currency": "EUR",
           "year": 2007
         }
-      }
+      },
+      "note": {
+        "en": "Combined road-rail bridge Vidin–Calafat; builder FCC Construcción, designer Fernández Casado; ISPA/PHARE support plus a €50M EIB credit (December 2000)"
+      },
+      "sourceRefs": [
+        "bta-bg-main-bridge",
+        "web-archive-org-main-bridge",
+        "wikipedia-new-europe-bridge"
+      ],
+      "geometryRef": "main-bridge"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-new-europe-bridge",
       "title": "Wikipedia: New Europe Bridge",
       "url": "https://en.wikipedia.org/wiki/New_Europe_Bridge"
     },
     {
-      "title": "bta.bg: main-bridge (dates.tenderAwarded)",
+      "id": "bta-bg-main-bridge",
+      "title": "bta.bg (dates.tenderAwarded)",
       "url": "https://www.bta.bg/bg/news/212492-Dunav-most-2-pri-Vidin-Kalafat-istoriya-na-poveche-ot-vek"
     },
     {
-      "title": "web.archive.org: main-bridge (cost.actual)",
+      "id": "web-archive-org-main-bridge",
+      "title": "web.archive.org (cost.actual)",
       "url": "https://web.archive.org/web/20131205223928/http://www.focus-news.net/news/0000/00/00/1794388/"
     }
   ]

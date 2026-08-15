@@ -8,6 +8,9 @@
   "description": {
     "en": "Approximately 63 km from Sofia to the Serbian border at Kalotina, on European route E80 and Pan-European Corridor X. It was called the Kalotina motorway until it was renamed in 2018. Dragoman–Slivnitsa was built by GBS-Infrastructure and opened in November 2020; Kalotina–Dragoman went to Strabag in a tender awarded in September 2017. The associated Sofia Northern Bypass opened in April 2016."
   },
+  "corridors": [
+    "pan-european-x"
+  ],
   "lots": [
     {
       "id": "kalotina-dragoman",
@@ -15,20 +18,20 @@
         "en": "Kalotina – Dragoman"
       },
       "status": "under_construction",
-      "lengthKm": 13.046,
-      "geometryRef": "kalotina-dragoman",
       "dates": {
         "tenderAwarded": "2017-09-13"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Europe_motorway"
-      },
+      "lengthKm": 13.046,
       "contractors": [
         {
           "name": "Strabag",
           "role": "builder"
         }
-      ]
+      ],
+      "sourceRefs": [
+        "wikipedia-europe-motorway"
+      ],
+      "geometryRef": "kalotina-dragoman"
     },
     {
       "id": "dragoman-slivnitsa",
@@ -36,26 +39,27 @@
         "en": "Dragoman – Slivnitsa"
       },
       "status": "opened",
-      "lengthKm": 17,
-      "geometryRef": "dragoman-slivnitsa",
       "dates": {
         "tenderAwarded": "2017-09-13",
         "constructionStart": "2019-05",
         "opened": "2020-11"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Europe_motorway"
-      },
+      "lengthKm": 17,
       "contractors": [
         {
           "name": "GBS-Infrastructure",
           "role": "builder"
         }
-      ]
+      ],
+      "sourceRefs": [
+        "wikipedia-europe-motorway"
+      ],
+      "geometryRef": "dragoman-slivnitsa"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-europe-motorway",
       "title": "Wikipedia: Europe motorway",
       "url": "https://en.wikipedia.org/wiki/Europe_motorway"
     },

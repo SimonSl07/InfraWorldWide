@@ -8,6 +8,9 @@
   "description": {
     "en": "A 117 km motorway in southern Bulgaria linking the Trakia motorway (A1) near Chirpan to the Turkish border at Kapitan Andreevo, on Pan-European Corridor IV and European route E80. It opened in phases between October 2010 and October 2015. The western sections, Chirpan–Haskovo and Haskovo–Harmanli, were co-funded by the EU; the eastern sections were financed nationally."
   },
+  "corridors": [
+    "pan-european-iv"
+  ],
   "lots": [
     {
       "id": "chirpan-haskovo",
@@ -15,14 +18,14 @@
         "en": "Chirpan – Haskovo"
       },
       "status": "opened",
-      "lengthKm": 43,
-      "geometryRef": "chirpan-haskovo",
       "dates": {
         "opened": "2015-10-29"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Maritsa_motorway"
-      }
+      "lengthKm": 43,
+      "sourceRefs": [
+        "wikipedia-maritsa-motorway"
+      ],
+      "geometryRef": "chirpan-haskovo"
     },
     {
       "id": "haskovo-harmanli",
@@ -30,17 +33,19 @@
         "en": "Haskovo – Harmanli"
       },
       "status": "opened",
-      "lengthKm": 34,
-      "geometryRef": "haskovo-harmanli",
       "dates": {
         "constructionStart": "2011-07",
         "opened": "2015-05-28"
       },
+      "lengthKm": 34,
       "contract": {
         "executionMonths": 46,
-        "totalMonths": 46,
-        "noticeUrl": "https://en.wikipedia.org/wiki/Maritsa_motorway"
-      }
+        "totalMonths": 46
+      },
+      "sourceRefs": [
+        "wikipedia-maritsa-motorway"
+      ],
+      "geometryRef": "haskovo-harmanli"
     },
     {
       "id": "harmanli-lyubimets",
@@ -48,24 +53,26 @@
         "en": "Harmanli – Lyubimets"
       },
       "status": "opened",
-      "lengthKm": 31,
-      "geometryRef": "harmanli-lyubimets",
       "dates": {
         "opened": "2010-10"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Maritsa_motorway"
-      }
+      "lengthKm": 31,
+      "sourceRefs": [
+        "wikipedia-maritsa-motorway"
+      ],
+      "geometryRef": "harmanli-lyubimets"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-maritsa-motorway",
       "title": "Wikipedia: Maritsa motorway",
       "url": "https://en.wikipedia.org/wiki/Maritsa_motorway"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
-      "url": "https://www.openstreetmap.org/copyright"
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-08-14"
     }
   ]
 }

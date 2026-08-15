@@ -11,6 +11,8 @@
     "en": "The yellow line, 23.0 km with 20 stations, from the Obelya estate across the city to Terminal 2 of Vasil Levski Sofia Airport. For most of its length it has no tunnels of its own: between Slivnitsa and Mladost 1 it uses the line M1 tunnels built between 1998 and 2009. It is a branch in its own right only at the ends, in the 1.8 km Obelya spur opened in April 2003 and the eastern extensions to Tsarigradsko shose (2012) and the airport (2 April 2015). Trains through-run at Obelya onto line M2; until 26 August 2020 the airport service was signed as part of M2, and it was renumbered M4 in preparation for the infill station Pancho Vladigerov, which will physically separate the two lines and let them keep independent timetables. Since 19 July 2025 M4 has terminated at Slivnitsa while that station is built.",
     "ro": "Linia galbenă, cu 23,0 km și 20 de stații, de la cartierul Obelya, prin oraș, până la Terminalul 2 al Aeroportului Vasil Levski din Sofia. Pe cea mai mare parte a traseului nu are tuneluri proprii: între Slivnitsa și Mladost 1 folosește tunelurile magistralei M1, construite între 1998 și 2009. Are traseu propriu doar la capete: pintenul de 1,8 km spre Obelya, deschis în aprilie 2003, și prelungirile estice până la Tsarigradsko shose (2012) și la aeroport (2 aprilie 2015). Trenurile continuă la Obelya pe magistrala M2; până pe 26 august 2020, serviciul spre aeroport era marcat ca parte din M2 și a fost renumerotat M4 în vederea construirii stației intermediare Pancho Vladigerov, care va separa fizic cele două linii și le va permite orare independente. De la 19 iulie 2025, M4 are capătul la Slivnitsa, cât timp se construiește acea stație."
   },
+  "operator": "bg-sofia-metropoliten",
+  "stationCount": 20,
   "lots": [
     {
       "id": "obelya-slivnitsa",
@@ -23,11 +25,13 @@
         "opened": "2003-04-20"
       },
       "lengthKm": 1.8,
-      "geometryRef": "obelya-slivnitsa",
-      "contract": {
-        "noticeReference": "1.8 km branch from Slivnitsa to the Obelya housing estate and depot, built as an extension of line 1 and opened on 20 April 2003. The infill station Pancho Vladigerov is under construction on this section; M4 has terminated at Slivnitsa since 19 July 2025",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Sofia_Metro"
-      }
+      "note": {
+        "en": "1.8 km branch from Slivnitsa to the Obelya housing estate and depot, built as an extension of line 1 and opened on 20 April 2003. The infill station Pancho Vladigerov is under construction on this section; M4 has terminated at Slivnitsa since 19 July 2025"
+      },
+      "sourceRefs": [
+        "wikipedia-sofia-metro"
+      ],
+      "geometryRef": "obelya-slivnitsa"
     },
     {
       "id": "slivnitsa-mladost-1-shared",
@@ -40,12 +44,14 @@
         "opened": "2009-09-07"
       },
       "lengthKm": 14.2,
-      "geometryRef": "slivnitsa-mladost-1-shared",
+      "note": {
+        "en": "M4 trains use the line M1 tunnels between Slivnitsa and Mladost 1, opened in four steps between 28 January 1998 and 7 September 2009. No length is published for the shared section on its own; 14.2 km is measured from the OpenStreetMap centreline and is consistent with the published 23.0 km line total"
+      },
+      "sourceRefs": [
+        "wikipedia-sofia-metro"
+      ],
       "sharedWith": "bg-sofia-metro-m1",
-      "contract": {
-        "noticeReference": "M4 trains use the line M1 tunnels between Slivnitsa and Mladost 1, opened in four steps between 28 January 1998 and 7 September 2009. No length is published for the shared section on its own; 14.2 km is measured from the OpenStreetMap centreline and is consistent with the published 23.0 km line total",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Sofia_Metro"
-      }
+      "geometryRef": "slivnitsa-mladost-1-shared"
     },
     {
       "id": "mladost-1-tsarigradsko-shose",
@@ -62,6 +68,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Cohesion Fund grant of €200 million for the second construction stage, shared with the M2 section from Obelya to the Nadezhda overpass",
             "ro": "Grant din Fondul de coeziune de 200 de milioane de euro pentru etapa a doua de construcție, comun cu tronsonul M2 de la Obelya la pasajul Nadezhda"
@@ -69,17 +76,21 @@
         },
         {
           "source": "loan",
+          "programme": "eib-loan",
+          "coFinancingRate": 0.2,
           "detail": {
             "en": "20% local co-financing by Sofia Municipality from a European Investment Bank loan",
             "ro": "Cofinanțare locală de 20% de către Municipiul Sofia, dintr-un împrumut al Băncii Europene de Investiții"
           }
         }
       ],
-      "geometryRef": "mladost-1-tsarigradsko-shose",
-      "contract": {
-        "noticeReference": "Lot 2 of the second construction stage: 2.5 km and two underground stations, Mladost 3 and Inter Expo Center – Tsarigradsko shose. Works began 15 February 2009 and the section opened 25 April 2012",
-        "noticeUrl": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-2"
-      }
+      "note": {
+        "en": "Lot 2 of the second construction stage: 2.5 km and two underground stations, Mladost 3 and Inter Expo Center – Tsarigradsko shose. Works began 15 February 2009 and the section opened 25 April 2012"
+      },
+      "sourceRefs": [
+        "metropolitan-bg"
+      ],
+      "geometryRef": "mladost-1-tsarigradsko-shose"
     },
     {
       "id": "tsarigradsko-shose-sofia-airport",
@@ -103,6 +114,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-erdf",
           "detail": {
             "en": "OP Transport 2007–2013, Priority Axis 3: ERDF grant of €93 million towards the €110 million third construction stage, which also covered the M1 extension to Business Park Sofia",
             "ro": "PO Transport 2007–2013, Axa prioritară 3: grant FEDR de 93 de milioane de euro pentru etapa a treia de construcție, de 110 milioane de euro, care a acoperit și prelungirea M1 până la Business Park Sofia"
@@ -112,24 +124,30 @@
           "source": "national_budget"
         }
       ],
-      "geometryRef": "tsarigradsko-shose-sofia-airport",
       "contract": {
         "value": {
           "amount": 69.92,
           "currency": "EUR",
           "year": 2013
-        },
-        "noticeReference": "Lot 1 of the third construction stage: 5 km and four stations (Druzhba, Iskarsko shose, Sofiyska Sveta Gora, Sofia Airport), two underground and two on the surface, reaching the Terminal 2 departures gate. Started 2013 and opened 2 April 2015; the construction contract was €69,923,066 excluding VAT",
-        "noticeUrl": "https://www.novinite.com/articles/167648/Subway+Trains+to+Sofia+Airport+Start+Running+at+1+pm+on+April+2"
-      }
+        }
+      },
+      "note": {
+        "en": "Lot 1 of the third construction stage: 5 km and four stations (Druzhba, Iskarsko shose, Sofiyska Sveta Gora, Sofia Airport), two underground and two on the surface, reaching the Terminal 2 departures gate. Started 2013 and opened 2 April 2015; the construction contract was €69,923,066 excluding VAT"
+      },
+      "sourceRefs": [
+        "novinite-com"
+      ],
+      "geometryRef": "tsarigradsko-shose-sofia-airport"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-sofia-metro",
       "title": "Wikipedia: Sofia Metro",
       "url": "https://en.wikipedia.org/wiki/Sofia_Metro"
     },
     {
+      "id": "metropolitan-bg",
       "title": "Metropoliten Sofia: Second stage of the metro extension (OP Transport)",
       "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-2"
     },
@@ -138,6 +156,7 @@
       "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-3"
     },
     {
+      "id": "novinite-com",
       "title": "Novinite: Subway Trains to Sofia Airport Start Running at 1 pm on April 2",
       "url": "https://www.novinite.com/articles/167648/Subway+Trains+to+Sofia+Airport+Start+Running+at+1+pm+on+April+2"
     },

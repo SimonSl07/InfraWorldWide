@@ -10,6 +10,9 @@
     "en": "Partially built motorway planned to link Bucharest with the Banat region across the south of the country, on the route Lugoj – Drobeta-Turnu Severin – Craiova – Calafat (towards the New Europe Bridge to Bulgaria), as part of the southern branch of Pan-European Corridor IV. Only 11.4 km are open, between the A1 interchange near Balinț and Lugoj (December 2013, built under the A1 Lugoj–Deva contract). The rest of the ~260 km planned has been in pre-feasibility since October 2012 as the \"South Motorway\" (Autostrada Sudului), with the route not yet fixed; a junction with the Pitești–Craiova Expressway is planned near Craiova.",
     "ro": "Autostradă parțial construită, planificată să lege Bucureștiul de regiunea Banat prin sudul țării, pe traseul Lugoj – Drobeta-Turnu Severin – Craiova – Calafat (spre Podul Noua Europă către Bulgaria), ca parte a ramurii sudice a Coridorului Pan-European IV. Sunt deschiși doar 11,4 km, între nodul cu autostrada A1 de la Balinț și Lugoj (decembrie 2013, construiți în cadrul contractului A1 Lugoj–Deva). Restul celor ~260 km planificați se află în faza de prefezabilitate din octombrie 2012, ca „Autostrada Sudului”, traseul nefiind încă stabilit; un nod cu Drumul Expres Pitești–Craiova este planificat în apropiere de Craiova."
   },
+  "corridors": [
+    "pan-european-iv"
+  ],
   "lots": [
     {
       "id": "balint-lugoj",
@@ -47,11 +50,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "balint-lugoj",
-      "contract": {
-        "noticeReference": "Built under the EU-financed A1 Lugoj–Deva lot 1 contract (Tirrena Scavi–Condotte–Cossi JV, awarded May 2011)",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Built under the EU-financed A1 Lugoj–Deva lot 1 contract (Tirrena Scavi–Condotte–Cossi JV, awarded May 2011)"
+      },
+      "sourceRefs": [
+        "wikipedia-a1-motorway-romania"
+      ],
+      "geometryRef": "balint-lugoj"
     },
     {
       "id": "lugoj-calafat",
@@ -73,11 +78,13 @@
           }
         }
       ],
-      "geometryRef": "lugoj-calafat",
-      "contract": {
-        "noticeReference": "A6 \"South Motorway\": 2021 law mandated execution within four years from 1 January 2021, financed from the state budget via the Ministry of Transport; route still in pre-feasibility",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A6_(Rom%C3%A2nia)"
-      }
+      "note": {
+        "en": "A6 \"South Motorway\": 2021 law mandated execution within four years from 1 January 2021, financed from the state budget via the Ministry of Transport; route still in pre-feasibility"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a6-rom-nia"
+      ],
+      "geometryRef": "lugoj-calafat"
     }
   ],
   "sources": [
@@ -86,10 +93,12 @@
       "url": "https://en.wikipedia.org/wiki/A6_motorway_(Romania)"
     },
     {
+      "id": "wikipedia-a1-motorway-romania",
       "title": "Wikipedia: A1 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A1_motorway_(Romania)"
     },
     {
+      "id": "wikipedia-ro-autostrada-a6-rom-nia",
       "title": "Wikipedia (ro): Autostrada A6 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A6_(Rom%C3%A2nia)"
     },

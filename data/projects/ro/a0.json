@@ -54,16 +54,20 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "south-ring",
       "contract": {
         "value": {
           "amount": 580,
           "currency": "EUR",
           "year": 2017
-        },
-        "noticeReference": "South ring tendered July 2017: 52 km, €580M, completion estimated after 2022; execution contracts signed with Alsim Alarko (lots 1–2, March 2019) and Aktor (lot 3, April 2019)",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
-      }
+        }
+      },
+      "note": {
+        "en": "South ring tendered July 2017: 52 km, €580M, completion estimated after 2022; execution contracts signed with Alsim Alarko (lots 1–2, March 2019) and Aktor (lot 3, April 2019)"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a0-rom-nia"
+      ],
+      "geometryRef": "south-ring"
     },
     {
       "id": "north-ring-east",
@@ -99,11 +103,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "north-ring-east",
-      "contract": {
-        "noticeReference": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 3 (Afumați–Pantelimon) and Lot 4 (Pantelimon–Manolache) construction ways",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
-      }
+      "note": {
+        "en": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 3 (Afumați–Pantelimon) and Lot 4 (Pantelimon–Manolache) construction ways"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a0-rom-nia"
+      ],
+      "geometryRef": "north-ring-east"
     },
     {
       "id": "north-ring-dn1-dn2",
@@ -135,17 +141,28 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "north-ring-dn1-dn2",
       "contract": {
-        "noticeReference": "North ring lot 2 (Corbeanca–Afumați, 19 km): Spedition UMB entered site November 2021, building permit issued July 2022",
-        "noticeUrl": "https://economedia.ro/autostrada-de-centura-bucuresti-nord-umb-a-primit-autorizatia-de-construire-pentru-lotul-2-19-km-la-7-luni-de-la-intrarea-in-teren.html",
         "value": {
           "amount": 831.92,
           "currency": "RON",
           "year": 2021
         },
         "executionMonths": 22
-      }
+      },
+      "note": {
+        "en": "North ring lot 2 (Corbeanca–Afumați, 19 km): Spedition UMB entered site November 2021, building permit issued July 2022"
+      },
+      "sources": [
+        {
+          "title": "economedia.ro",
+          "url": "https://economedia.ro/autostrada-de-centura-bucuresti-nord-umb-a-primit-autorizatia-de-construire-pentru-lotul-2-19-km-la-7-luni-de-la-intrarea-in-teren.html"
+        }
+      ],
+      "sourceRefs": [
+        "digi24-ro-north-ring-dn1-dn2",
+        "profit-ro-north-ring-dn1-dn2"
+      ],
+      "geometryRef": "north-ring-dn1-dn2"
     },
     {
       "id": "north-ring-west",
@@ -177,11 +194,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "north-ring-west",
-      "contract": {
-        "noticeReference": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 1 (Bâcu–Corbeanca) construction ways",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
-      }
+      "note": {
+        "en": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 1 (Bâcu–Corbeanca) construction ways"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a0-rom-nia"
+      ],
+      "geometryRef": "north-ring-west"
     }
   ],
   "sources": [
@@ -190,6 +209,7 @@
       "url": "https://en.wikipedia.org/wiki/Bucharest_Ring_Motorway"
     },
     {
+      "id": "wikipedia-ro-autostrada-a0-rom-nia",
       "title": "Wikipedia (ro): Autostrada A0 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A0_(Rom%C3%A2nia)"
     },
@@ -198,11 +218,13 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "digi24.ro: north-ring-dn1-dn2",
+      "id": "digi24-ro-north-ring-dn1-dn2",
+      "title": "digi24.ro",
       "url": "https://www.digi24.ro/stiri/economie/transporturi/grindeanu-lotul-2-al-autostrazii-a0-nord-va-fi-dat-din-circulatie-inainte-de-1-decembrie-2583367"
     },
     {
-      "title": "profit.ro: north-ring-dn1-dn2",
+      "id": "profit-ro-north-ring-dn1-dn2",
+      "title": "profit.ro",
       "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/contractul-pentru-a0-nord-lot-2-a-fost-semnat-20181349"
     }
   ]

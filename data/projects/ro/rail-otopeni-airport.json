@@ -11,6 +11,7 @@
     "en": "Rail link connecting Bucharest's main station, Gara de Nord, with Henri Coandă International Airport at Otopeni, opened in December 2020. The roughly 3 km new connection, including a 1.5 km viaduct over the DN1 national road, ends at a station in front of the airport's Arrivals terminal. Trains operated by CFR Călători and Transferoviar Călători run 24 hours a day, roughly every 40 minutes, with a journey time of about 20–25 minutes.",
     "ro": "Legătură feroviară între Gara de Nord din București și Aeroportul Internațional Henri Coandă din Otopeni, deschisă în decembrie 2020. Noua conexiune de aproximativ 3 km, care include un viaduct de 1,5 km peste drumul național DN1, se termină la o stație în fața terminalului Sosiri al aeroportului. Trenurile operate de CFR Călători și Transferoviar Călători circulă non-stop, aproximativ la fiecare 40 de minute, cu un timp de călătorie de circa 20–25 de minute."
   },
+  "operator": "ro-cfr",
   "lots": [
     {
       "id": "gara-de-nord-aeroport",
@@ -24,6 +25,18 @@
         "opened": "2020-12"
       },
       "lengthKm": 3,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds (Large Infrastructure Operational Programme)",
+            "ro": "Fonduri europene (Programul Operațional Infrastructură Mare)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
       "contractors": [
         {
           "name": "Arcada Company",
@@ -38,24 +51,18 @@
           "role": "designer"
         }
       ],
-      "geometryRef": "gara-de-nord-aeroport",
-      "funding": [
-        {
-          "source": "EU",
-          "detail": {
-            "en": "EU funds (Large Infrastructure Operational Programme)",
-            "ro": "Fonduri europene (Programul Operațional Infrastructură Mare)"
-          }
-        },
-        {
-          "source": "national_budget"
-        }
-      ],
       "contract": {
-        "noticeReference": "Gara de Nord–Henri Coandă Airport link: ~3 km incl. a 1.5 km viaduct over DN1; builder Arcada Company, designers ISPCF and DB Engineering & Consulting",
-        "noticeUrl": "https://railway-news.com/rail-link-to-romanias-busiest-airport-completed/",
         "executionMonths": 12
-      }
+      },
+      "note": {
+        "en": "Gara de Nord–Henri Coandă Airport link: ~3 km incl. a 1.5 km viaduct over DN1; builder Arcada Company, designers ISPCF and DB Engineering & Consulting"
+      },
+      "sourceRefs": [
+        "hotnews-ro-gara-de-nord-aeroport",
+        "zf-ro-gara-de-nord-aeroport",
+        "railway-news-com"
+      ],
+      "geometryRef": "gara-de-nord-aeroport"
     }
   ],
   "sources": [
@@ -64,16 +71,24 @@
       "url": "https://www.romania-insider.com/short-guide-bucharest-airport-railway-link"
     },
     {
+      "id": "railway-news-com",
       "title": "Railway News: Rail Link to Romania's Busiest Airport Completed",
       "url": "https://railway-news.com/rail-link-to-romanias-busiest-airport-completed/"
     },
     {
-      "title": "hotnews.ro: gara-de-nord-aeroport",
+      "id": "hotnews-ro-gara-de-nord-aeroport",
+      "title": "hotnews.ro",
       "url": "https://hotnews.ro/stiri-infrastructura_articole-22847016-trenul-gara-nord-aeroport-otopeni-cfr-publicat-licitatia-valoare-totala-aproape-500-milioane-lei.htm"
     },
     {
-      "title": "zf.ro: gara-de-nord-aeroport",
+      "id": "zf-ro-gara-de-nord-aeroport",
+      "title": "zf.ro",
       "url": "https://www.zf.ro/business-construct/incep-sa-se-miste-lucrurile-arcada-company-din-galati-si-o-firma-germana-au-inceput-constructia-caii-ferate-dintre-gara-de-nord-si-aeroportul-otopeni-18404892"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-08-14"
     }
   ]
 }

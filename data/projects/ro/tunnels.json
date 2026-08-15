@@ -23,15 +23,21 @@
         "opened": "1974-09-20"
       },
       "lengthKm": 0.884,
+      "profile": {
+        "tunnelKm": 0.884,
+        "terrain": "mountain"
+      },
       "funding": [
         {
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Romania's highest road tunnel at ~2,040 m altitude, on the Transfăgărășan mountain road built by the Romanian Army 1970–1974 on Nicolae Ceaușescu's orders; the longest road tunnel in Romania until the Meseș tunnel",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Transf%C4%83g%C4%83r%C4%83%C8%99an"
+      "note": {
+        "en": "Romania's highest road tunnel at ~2,040 m altitude, on the Transfăgărășan mountain road built by the Romanian Army 1970–1974 on Nicolae Ceaușescu's orders; the longest road tunnel in Romania until the Meseș tunnel"
       },
+      "sourceRefs": [
+        "wikipedia-transf-g-r-an"
+      ],
       "geometryRef": "balea"
     },
     {
@@ -45,15 +51,21 @@
         "opened": "1968"
       },
       "lengthKm": 0.149,
+      "profile": {
+        "tunnelKm": 0.149,
+        "terrain": "mountain"
+      },
       "funding": [
         {
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Road tunnel on DN12C through the Bicaz gorge, alongside the older parallel bore (Tunelul Vechi)",
-        "noticeUrl": "https://www.openstreetmap.org/copyright"
+      "note": {
+        "en": "Road tunnel on DN12C through the Bicaz gorge, alongside the older parallel bore (Tunelul Vechi)"
       },
+      "sourceRefs": [
+        "openstreetmap"
+      ],
       "geometryRef": "tunelul-nou"
     },
     {
@@ -68,6 +80,10 @@
         "expectedOpening": "2032"
       },
       "lengthKm": 2.734,
+      "profile": {
+        "tunnelKm": 2.734,
+        "terrain": "mountain"
+      },
       "funding": [
         {
           "source": "EU",
@@ -80,10 +96,16 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Twin-bore tunnel under the Meseș mountains on the A3 Nușfalău–Zimbor section; it will be the longest road tunnel in Romania when complete. OpenStreetMap tags opening_date=2032",
-        "noticeUrl": "https://www.openstreetmap.org/relation/2790155"
+      "note": {
+        "en": "Twin-bore tunnel under the Meseș mountains on the A3 Nușfalău–Zimbor section; it will be the longest road tunnel in Romania when complete. OpenStreetMap tags opening_date=2032"
       },
+      "sources": [
+        {
+          "title": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/relation/2790155"
+        }
+      ],
+      "partOf": "ro-a3-transylvania",
       "geometryRef": "meses"
     },
     {
@@ -98,6 +120,9 @@
         "expectedOpening": "2028"
       },
       "lengthKm": 1.701,
+      "profile": {
+        "tunnelKm": 1.701
+      },
       "funding": [
         {
           "source": "EU",
@@ -110,10 +135,13 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "On A1 Pitești–Sibiu lot 3 (Webuild); OpenStreetMap tags opening_date=2028 on this lot",
-        "noticeUrl": "https://www.openstreetmap.org/copyright"
+      "note": {
+        "en": "On A1 Pitești–Sibiu lot 3 (Webuild); OpenStreetMap tags opening_date=2028 on this lot"
       },
+      "sourceRefs": [
+        "openstreetmap"
+      ],
+      "partOf": "ro-a1",
       "geometryRef": "poiana"
     },
     {
@@ -128,6 +156,9 @@
         "expectedOpening": "2031"
       },
       "lengthKm": 1.578,
+      "profile": {
+        "tunnelKm": 1.578
+      },
       "funding": [
         {
           "source": "EU",
@@ -140,10 +171,13 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "On A1 Pitești–Sibiu lot 2, Boița–Cornet (Mapa–Cengiz); OpenStreetMap tags opening_date=2031 on this lot",
-        "noticeUrl": "https://www.openstreetmap.org/copyright"
+      "note": {
+        "en": "On A1 Pitești–Sibiu lot 2, Boița–Cornet (Mapa–Cengiz); OpenStreetMap tags opening_date=2031 on this lot"
       },
+      "sourceRefs": [
+        "openstreetmap"
+      ],
+      "partOf": "ro-a1",
       "geometryRef": "caineni"
     },
     {
@@ -158,6 +192,9 @@
         "expectedOpening": "2031"
       },
       "lengthKm": 1.063,
+      "profile": {
+        "tunnelKm": 1.063
+      },
       "funding": [
         {
           "source": "EU",
@@ -170,10 +207,13 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Twin bores (Lazaret 1 and 2) on A1 Pitești–Sibiu lot 2, Boița–Cornet; OpenStreetMap tags opening_date=2031",
-        "noticeUrl": "https://www.openstreetmap.org/copyright"
+      "note": {
+        "en": "Twin bores (Lazaret 1 and 2) on A1 Pitești–Sibiu lot 2, Boița–Cornet; OpenStreetMap tags opening_date=2031"
       },
+      "sourceRefs": [
+        "openstreetmap"
+      ],
+      "partOf": "ro-a1",
       "geometryRef": "lazaret"
     },
     {
@@ -188,6 +228,10 @@
         "expectedOpening": "2031"
       },
       "lengthKm": 0.905,
+      "profile": {
+        "tunnelKm": 0.905,
+        "terrain": "mountain"
+      },
       "funding": [
         {
           "source": "EU",
@@ -200,10 +244,13 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "On A1 Pitești–Sibiu lot 2, Boița–Cornet, in the Olt valley defile; OpenStreetMap tags opening_date=2031",
-        "noticeUrl": "https://www.openstreetmap.org/copyright"
+      "note": {
+        "en": "On A1 Pitești–Sibiu lot 2, Boița–Cornet, in the Olt valley defile; OpenStreetMap tags opening_date=2031"
       },
+      "sourceRefs": [
+        "openstreetmap"
+      ],
+      "partOf": "ro-a1",
       "geometryRef": "robesti"
     },
     {
@@ -218,6 +265,9 @@
         "expectedOpening": "2031"
       },
       "lengthKm": 0.447,
+      "profile": {
+        "tunnelKm": 0.447
+      },
       "funding": [
         {
           "source": "EU",
@@ -230,10 +280,13 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "On A1 Pitești–Sibiu lot 2, Boița–Cornet; OpenStreetMap tags opening_date=2031",
-        "noticeUrl": "https://www.openstreetmap.org/copyright"
+      "note": {
+        "en": "On A1 Pitești–Sibiu lot 2, Boița–Cornet; OpenStreetMap tags opening_date=2031"
       },
+      "sourceRefs": [
+        "openstreetmap"
+      ],
+      "partOf": "ro-a1",
       "geometryRef": "balota"
     },
     {
@@ -248,6 +301,9 @@
         "expectedOpening": "2031"
       },
       "lengthKm": 0.256,
+      "profile": {
+        "tunnelKm": 0.256
+      },
       "funding": [
         {
           "source": "EU",
@@ -260,10 +316,13 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Twin bores (Boița 1 and 2) at the northern end of A1 Pitești–Sibiu lot 2; OpenStreetMap tags opening_date=2031",
-        "noticeUrl": "https://www.openstreetmap.org/copyright"
+      "note": {
+        "en": "Twin bores (Boița 1 and 2) at the northern end of A1 Pitești–Sibiu lot 2; OpenStreetMap tags opening_date=2031"
       },
+      "sourceRefs": [
+        "openstreetmap"
+      ],
+      "partOf": "ro-a1",
       "geometryRef": "boita"
     },
     {
@@ -277,9 +336,14 @@
         "constructionStart": "2023-09"
       },
       "lengthKm": 0.941,
+      "profile": {
+        "tunnelKm": 0.941,
+        "terrain": "mountain"
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "ro-pnrr",
           "detail": {
             "en": "PNRR (Next Generation EU)",
             "ro": "PNRR (Next Generation EU)"
@@ -289,10 +353,13 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "On the A8 Ditrău–Moțca mountain section (SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB), crossing the Eastern Carpathians",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)"
+      "note": {
+        "en": "On the A8 Ditrău–Moțca mountain section (SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB), crossing the Eastern Carpathians"
       },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a8-rom-nia"
+      ],
+      "partOf": "ro-a8",
       "geometryRef": "petru-voda"
     },
     {
@@ -306,9 +373,13 @@
         "constructionStart": "2023-09"
       },
       "lengthKm": 0.376,
+      "profile": {
+        "tunnelKm": 0.376
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "ro-pnrr",
           "detail": {
             "en": "PNRR (Next Generation EU)",
             "ro": "PNRR (Next Generation EU)"
@@ -318,15 +389,19 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "On the A8 Moțca–Târgu Frumos section approaching Iași",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)"
+      "note": {
+        "en": "On the A8 Moțca–Târgu Frumos section approaching Iași"
       },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a8-rom-nia"
+      ],
+      "partOf": "ro-a8",
       "geometryRef": "boureni"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-transf-g-r-an",
       "title": "Wikipedia: Transfăgărășan",
       "url": "https://en.wikipedia.org/wiki/Transf%C4%83g%C4%83r%C4%83%C8%99an"
     },
@@ -335,10 +410,12 @@
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A1_(Rom%C3%A2nia)"
     },
     {
+      "id": "wikipedia-ro-autostrada-a8-rom-nia",
       "title": "Wikipedia (ro): Autostrada A8 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)"
     },
     {
+      "id": "openstreetmap",
       "title": "OpenStreetMap contributors (geometry, lengths and construction dates, ODbL)",
       "url": "https://www.openstreetmap.org/copyright"
     }

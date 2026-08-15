@@ -10,6 +10,10 @@
     "en": "Rehabilitation of two sections of CFR Line 300, part of the TEN-T Rhine–Danube Corridor, for speeds of up to 160 km/h. The 48 km Câmpina–Predeal mountain section was upgraded in 2007–2011 with ISPA co-funding, cutting Bucharest–Brașov journey times to 2 h 40 min. The nearly 100 km Coșlariu–Sighișoara section was rebuilt in 2012–2018 on a new alignment with new bridges and tunnels, among them the 969 m Daneș Tunnel, the longest railway tunnel built in Romania after 1989.",
     "ro": "Reabilitarea a două secțiuni ale magistralei CFR 300, parte a Coridorului TEN-T Rin–Dunăre, pentru viteze de până la 160 km/h. Secțiunea de munte Câmpina–Predeal, de 48 km, a fost modernizată în 2007–2011 cu cofinanțare ISPA, reducând timpul de călătorie București–Brașov la 2 ore și 40 de minute. Secțiunea Coșlariu–Sighișoara, de aproape 100 km, a fost reconstruită în 2012–2018 pe un traseu nou, cu poduri și tuneluri noi, între care tunelul Daneș de 969 m, cel mai lung tunel feroviar construit în România după 1989."
   },
+  "corridors": [
+    "ten-t-rhine-danube"
+  ],
+  "operator": "ro-cfr",
   "lots": [
     {
       "id": "campina-predeal",
@@ -35,9 +39,16 @@
           "year": 2003
         }
       },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "terrain": "mountain"
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-ispa",
+          "coFinancingRate": 0.75,
           "detail": {
             "en": "About €200M co-funded through the ISPA programme (75% EU, 25% Romanian government).",
             "ro": "Circa 200 de milioane EUR cofinanțați prin programul ISPA (75% UE, 25% Guvernul României)."
@@ -47,11 +58,14 @@
           "source": "national_budget"
         }
       ],
-      "geometryRef": "campina-predeal",
-      "contract": {
-        "noticeReference": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel",
-        "noticeUrl": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_300"
-      }
+      "note": {
+        "en": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel"
+      },
+      "sourceRefs": [
+        "eur-lex-europa-eu-campina-predeal",
+        "wikipedia-c-ile-ferate-rom-ne-line-300"
+      ],
+      "geometryRef": "campina-predeal"
     },
     {
       "id": "coslariu-sighisoara",
@@ -73,6 +87,22 @@
           "year": 2012
         }
       },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "TEN-T Rhine–Danube Corridor upgrade, EU co-financed",
+            "ro": "Modernizare pe Coridorul TEN-T Rin–Dunăre, cofinanțată de Uniunea Europeană"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
       "contractors": [
         {
           "name": "FCC Construcción",
@@ -87,32 +117,26 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "coslariu-sighisoara",
-      "funding": [
-        {
-          "source": "EU",
-          "detail": {
-            "en": "TEN-T Rhine–Danube Corridor upgrade, EU co-financed",
-            "ro": "Modernizare pe Coridorul TEN-T Rin–Dunăre, cofinanțată de Uniunea Europeană"
-          }
-        },
-        {
-          "source": "national_budget"
-        }
-      ],
       "contract": {
-        "noticeReference": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel",
-        "noticeUrl": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_300",
         "value": {
           "amount": 2342,
           "currency": "RON",
           "year": 2012
         }
-      }
+      },
+      "note": {
+        "en": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel"
+      },
+      "sourceRefs": [
+        "hotnews-ro-coslariu-sighisoara",
+        "wikipedia-c-ile-ferate-rom-ne-line-300"
+      ],
+      "geometryRef": "coslariu-sighisoara"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-c-ile-ferate-rom-ne-line-300",
       "title": "Wikipedia: Căile Ferate Române Line 300",
       "url": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_300"
     },
@@ -125,11 +149,13 @@
       "url": "http://adevarul.ro/news/societate/lucrare-publica-romania-premiata-ue-1_50ad18d47c42d5a6638ea0d8/index.html"
     },
     {
-      "title": "hotnews.ro: coslariu-sighisoara",
+      "id": "hotnews-ro-coslariu-sighisoara",
+      "title": "hotnews.ro",
       "url": "https://hotnews.ro/stiri-infrastructura_proiecte-19213119-coridorul-feroviar-intre-frontiera-curtici-sighisoara-tinta-160-costul-3-miliarde-euro.htm"
     },
     {
-      "title": "eur-lex.europa.eu: campina-predeal",
+      "id": "eur-lex-europa-eu-campina-predeal",
+      "title": "eur-lex.europa.eu",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52004DC0735"
     }
   ]

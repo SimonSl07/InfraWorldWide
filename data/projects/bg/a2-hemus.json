@@ -15,14 +15,14 @@
         "en": "Sofia – Yana"
       },
       "status": "opened",
-      "lengthKm": 8.46,
-      "geometryRef": "sofia-yana",
       "dates": {
         "opened": "2013-08"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 8.46,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "sofia-yana"
     },
     {
       "id": "yana-potop",
@@ -30,15 +30,15 @@
         "en": "Yana – Potop"
       },
       "status": "opened",
-      "lengthKm": 13.3,
-      "geometryRef": "yana-potop",
       "dates": {
         "constructionStart": "1984",
         "opened": "1999-12-05"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 13.3,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "yana-potop"
     },
     {
       "id": "potop-botevgrad",
@@ -46,15 +46,15 @@
         "en": "Potop – Botevgrad"
       },
       "status": "opened",
-      "lengthKm": 25.3,
-      "geometryRef": "potop-botevgrad",
       "dates": {
         "constructionStart": "1984",
         "opened": "1999-12-05"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 25.3,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "potop-botevgrad"
     },
     {
       "id": "botevgrad-pravets",
@@ -62,15 +62,15 @@
         "en": "Botevgrad – Pravets"
       },
       "status": "opened",
-      "lengthKm": 5.7,
-      "geometryRef": "botevgrad-pravets",
       "dates": {
         "constructionStart": "1984",
         "opened": "1999-12-05"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 5.7,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "botevgrad-pravets"
     },
     {
       "id": "pravets-yablanitsa",
@@ -78,15 +78,15 @@
         "en": "Pravets – Yablanitsa"
       },
       "status": "opened",
-      "lengthKm": 21.9,
-      "geometryRef": "pravets-yablanitsa",
       "dates": {
         "constructionStart": "1984",
         "opened": "1999-12-05"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 21.9,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "pravets-yablanitsa"
     },
     {
       "id": "yablanitsa-boaza",
@@ -94,14 +94,14 @@
         "en": "Yablanitsa – Boaza"
       },
       "status": "opened",
-      "lengthKm": 9.3,
-      "geometryRef": "yablanitsa-boaza",
       "dates": {
         "opened": "2019-10"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 9.3,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "yablanitsa-boaza"
     },
     {
       "id": "boaza-dermantsi",
@@ -109,14 +109,14 @@
         "en": "Boaza – Dermantsi"
       },
       "status": "opened",
-      "lengthKm": 10,
-      "geometryRef": "boaza-dermantsi",
       "dates": {
         "opened": "2025-10"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 10,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "boaza-dermantsi"
     },
     {
       "id": "dermantsi-ugarchin",
@@ -124,14 +124,14 @@
         "en": "Dermantsi – Ugarchin"
       },
       "status": "opened",
-      "lengthKm": 5,
-      "geometryRef": "dermantsi-ugarchin",
       "dates": {
         "opened": "2025-12-13"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 5,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "dermantsi-ugarchin"
     },
     {
       "id": "belokopitovo-buhovtsi",
@@ -139,24 +139,26 @@
         "en": "Belokopitovo – Buhovtsi"
       },
       "status": "opened",
-      "lengthKm": 16.3,
-      "geometryRef": "belokopitovo-buhovtsi",
       "dates": {
         "opened": "2022-10"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Hemus_motorway"
-      }
+      "lengthKm": 16.3,
+      "sourceRefs": [
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "belokopitovo-buhovtsi"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-hemus-motorway",
       "title": "Wikipedia: Hemus motorway",
       "url": "https://en.wikipedia.org/wiki/Hemus_motorway"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
-      "url": "https://www.openstreetmap.org/copyright"
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-08-14"
     }
   ]
 }

@@ -10,6 +10,7 @@
     "en": "Partially built route in north-western Romania between Arad and Oradea, part of the proposed Via Carpathia corridor. Only the 3.5 km Arad Bypass (Centura Arad) is open, between the A1 Arad West interchange and DN7 (Arad North); it opened as part of the A1 in December 2011 on one carriageway and June 2012 on both, and was renumbered A11 in July 2015. The Arad–Oradea link is being built to expressway standard as DEx16 rather than as a motorway: 2×2 lanes over about 120 km in three lots, Oradea–Salonta 33.7 km, Salonta–Chișineu-Criș 39.7 km and Chișineu-Criș–Arad 47.07 km, with a further 18 km of connector roads. The three execution contracts were signed in May 2025, September 2025 and January 2026, each allowing 24 months for the works, which had not started by mid-2026. The link from the Oradea bypass to the A3 at Biharia opened in March 2024.",
     "ro": "Traseu parțial construit în nord-vestul României, între Arad și Oradea, parte a coridorului propus Via Carpathia. Este deschisă doar Centura Arad, de 3,5 km, între nodul A1 Arad Vest și DN7 (Arad Nord); a fost dată în trafic ca parte a A1 în decembrie 2011 pe un singur fir și în iunie 2012 pe ambele fire, iar în iulie 2015 a fost renumerotată A11. Legătura Arad–Oradea se construiește la standard de drum expres, ca DEx16, nu de autostradă: 2×2 benzi pe circa 120 km, în trei loturi, Oradea–Salonta 33,7 km, Salonta–Chișineu-Criș 39,7 km și Chișineu-Criș–Arad 47,07 km, plus încă 18 km de drumuri de legătură. Cele trei contracte de execuție au fost semnate în mai 2025, septembrie 2025 și ianuarie 2026, fiecare cu 24 de luni pentru lucrări, care nu începuseră la mijlocul anului 2026. Legătura dintre centura Oradea și A3, la Biharia, a fost deschisă în martie 2024."
   },
+  "operator": "ro-cnair",
   "lots": [
     {
       "id": "arad-bypass",
@@ -35,11 +36,13 @@
           "source": "national_budget"
         }
       ],
-      "geometryRef": "arad-bypass",
-      "contract": {
-        "noticeReference": "Built as part of the A1 Arad Bypass contract; opened December 2011 on one carriageway and June 2012 on both, renumbered A11 in July 2015",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A11_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Built as part of the A1 Arad Bypass contract; opened December 2011 on one carriageway and June 2012 on both, renumbered A11 in July 2015"
+      },
+      "sourceRefs": [
+        "wikipedia-a11-motorway-romania"
+      ],
+      "geometryRef": "arad-bypass"
     },
     {
       "id": "chisineu-cris-arad",
@@ -77,17 +80,21 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "chisineu-cris-arad",
       "contract": {
         "executionMonths": 24,
         "value": {
           "amount": 2850,
           "currency": "RON",
           "year": 2026
-        },
-        "noticeReference": "Execution contract signed 29 January 2026 with Nurol İnsaat ve Ticaret, 2.85 billion lei excluding VAT, 24 months from the order to commence. Includes a 2.9 km link road to the Arad West industrial zone",
-        "noticeUrl": "https://www.cjbihor.ro/s-a-semnat-contractul-pentru-lotul-3-al-drumului-expres-arad-oradea/"
-      }
+        }
+      },
+      "note": {
+        "en": "Execution contract signed 29 January 2026 with Nurol İnsaat ve Ticaret, 2.85 billion lei excluding VAT, 24 months from the order to commence. Includes a 2.9 km link road to the Arad West industrial zone"
+      },
+      "sourceRefs": [
+        "cjbihor-ro"
+      ],
+      "geometryRef": "chisineu-cris-arad"
     },
     {
       "id": "salonta-chisineu-cris",
@@ -129,17 +136,21 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "salonta-chisineu-cris",
       "contract": {
         "executionMonths": 24,
         "value": {
           "amount": 2760,
           "currency": "RON",
           "year": 2025
-        },
-        "noticeReference": "Execution contract signed 12 September 2025 with Onur Taahhut Tasimacilik Insaat Ticaret ve Sanayi and Straco Holding, 2.76 billion lei excluding VAT, 24 months. Includes a 10 km link road to the Hungarian border at Salonta and a 1,091 m bridge over the Crișul Alb",
-        "noticeUrl": "https://www.capital.ro/cnair-a-semnat-contractul-pentru-lotul-2-al-drumului-expres-arad-oradea-un-nou-pas-important-pentru-dezvoltarea-infrastructurii.html"
-      }
+        }
+      },
+      "note": {
+        "en": "Execution contract signed 12 September 2025 with Onur Taahhut Tasimacilik Insaat Ticaret ve Sanayi and Straco Holding, 2.76 billion lei excluding VAT, 24 months. Includes a 10 km link road to the Hungarian border at Salonta and a 1,091 m bridge over the Crișul Alb"
+      },
+      "sourceRefs": [
+        "capital-ro"
+      ],
+      "geometryRef": "salonta-chisineu-cris"
     },
     {
       "id": "oradea-salonta",
@@ -181,17 +192,21 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "oradea-salonta",
       "contract": {
         "executionMonths": 24,
         "value": {
           "amount": 2320,
           "currency": "RON",
           "year": 2025
-        },
-        "noticeReference": "Execution contract signed 15 May 2025 with Precon Transilvania and Automagistral Pivden, 2.32 billion lei excluding VAT, 24 months. Includes a 5.3 km link road to DN79 at Salonta",
-        "noticeUrl": "https://oradea.ro/stiri/a-fost-semnat-contractul-pentru-executia-drumului-expres-oradea-salonta/"
-      }
+        }
+      },
+      "note": {
+        "en": "Execution contract signed 15 May 2025 with Precon Transilvania and Automagistral Pivden, 2.32 billion lei excluding VAT, 24 months. Includes a 5.3 km link road to DN79 at Salonta"
+      },
+      "sourceRefs": [
+        "oradea-ro"
+      ],
+      "geometryRef": "oradea-salonta"
     },
     {
       "id": "oradea-connector",
@@ -205,16 +220,19 @@
         "opened": "2024-03"
       },
       "lengthKm": 11.636,
+      "note": {
+        "en": "Built as DEx16 under a July 2021 design-and-build contract with Strabag; opened to traffic in March 2024. The same road is recorded in full as project ro-dex16, which owns it"
+      },
+      "sourceRefs": [
+        "digi24-oradea-connector"
+      ],
       "sharedWith": "ro-dex16",
-      "geometryRef": "oradea-connector",
-      "contract": {
-        "noticeReference": "Built as DEx16 under a July 2021 design-and-build contract with Strabag; opened to traffic in March 2024. The same road is recorded in full as project ro-dex16, which owns it",
-        "noticeUrl": "https://www.digi24.ro/stiri/economie/un-nou-drum-expres-a-fost-inaugurat-in-romania-dex16-are-19-kilometri-si-a-fost-construit-in-30-de-luni-2739635"
-      }
+      "geometryRef": "oradea-connector"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-a11-motorway-romania",
       "title": "Wikipedia: A11 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A11_motorway_(Romania)"
     },
@@ -223,6 +241,7 @@
       "url": "https://ro.wikipedia.org/wiki/Drumul_expres_Arad%E2%80%93Oradea"
     },
     {
+      "id": "cjbihor-ro",
       "title": "Consiliul Județean Bihor: S-a semnat contractul pentru lotul 3 al Drumului Expres Arad – Oradea (29 January 2026)",
       "url": "https://www.cjbihor.ro/s-a-semnat-contractul-pentru-lotul-3-al-drumului-expres-arad-oradea/"
     },
@@ -231,6 +250,7 @@
       "url": "https://www.mediafax.ro/economic/moment-important-toti-cei-120-de-km-ai-drumului-expres-arad-oradea-acoperiti-de-contracte-23678444"
     },
     {
+      "id": "oradea-ro",
       "title": "Oradea.ro: A fost semnat contractul pentru execuția Drumului Expres Oradea – Salonta (15 May 2025)",
       "url": "https://oradea.ro/stiri/a-fost-semnat-contractul-pentru-executia-drumului-expres-oradea-salonta/"
     },
@@ -239,6 +259,7 @@
       "url": "https://www.130km.ro/a11.html"
     },
     {
+      "id": "capital-ro",
       "title": "Capital: CNAIR a semnat contractul pentru lotul 2 al Drumului Expres Arad – Oradea (12 September 2025)",
       "url": "https://www.capital.ro/cnair-a-semnat-contractul-pentru-lotul-2-al-drumului-expres-arad-oradea-un-nou-pas-important-pentru-dezvoltarea-infrastructurii.html"
     },
@@ -247,7 +268,8 @@
       "url": "https://hotnews.ro/drum-expres-de-la-oradea-la-arad-contract-semnat-pentru-ultimul-lot-care-nu-avea-constructor-care-este-termenul-de-finalizare-harta-2160835"
     },
     {
-      "title": "Digi24: DEx16 Oradea bypass – A3 opened March 2024 (oradea-connector)",
+      "id": "digi24-oradea-connector",
+      "title": "Digi24: DEx16 Oradea bypass – A3 opened March 2024",
       "url": "https://www.digi24.ro/stiri/economie/un-nou-drum-expres-a-fost-inaugurat-in-romania-dex16-are-19-kilometri-si-a-fost-construit-in-30-de-luni-2739635"
     },
     {

@@ -10,6 +10,7 @@
     "en": "Upgrade of CFR's main line between Bucharest and the Black Sea port of Constanța, via Ciulnița, Fetești and Medgidia. Since July 2014 passenger trains run at up to 160 km/h and freight trains at up to 120 km/h on most of the route; the fastest trains cover the 225 km between Bucharest and Constanța in under two hours.",
     "ro": "Modernizarea magistralei CFR dintre București și portul Constanța la Marea Neagră, prin Ciulnița, Fetești și Medgidia. Din iulie 2014 trenurile de călători circulă cu până la 160 km/h, iar cele de marfă cu până la 120 km/h pe cea mai mare parte a traseului; cele mai rapide trenuri parcurg cei 225 km dintre București și Constanța în mai puțin de două ore."
   },
+  "operator": "ro-cfr",
   "lots": [
     {
       "id": "bucuresti-constanta",
@@ -23,7 +24,10 @@
         "constructionStart": "2007"
       },
       "lengthKm": 225,
-      "geometryRef": "bucuresti-constanta",
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
       "funding": [
         {
           "source": "EU",
@@ -36,14 +40,18 @@
           "source": "national_budget"
         }
       ],
-      "contract": {
-        "noticeReference": "Line 800 upgrade to 160 km/h for passenger and 120 km/h for freight traffic, completed by July 2014",
-        "noticeUrl": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_800"
-      }
+      "note": {
+        "en": "Line 800 upgrade to 160 km/h for passenger and 120 km/h for freight traffic, completed by July 2014"
+      },
+      "sourceRefs": [
+        "wikipedia-c-ile-ferate-rom-ne-line-800"
+      ],
+      "geometryRef": "bucuresti-constanta"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-c-ile-ferate-rom-ne-line-800",
       "title": "Wikipedia: Căile Ferate Române Line 800",
       "url": "https://en.wikipedia.org/wiki/C%C4%83ile_Ferate_Rom%C3%A2ne_Line_800"
     },
