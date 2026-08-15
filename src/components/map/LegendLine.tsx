@@ -1,14 +1,23 @@
 /** Line samples matching the map's per-status line styles. */
-const LEGEND_SVG: Record<string, { dash?: string; opacity?: number }> = {
+const LEGEND_SVG: Record<
+  string,
+  { dash?: string; opacity?: number; hatched?: boolean }
+> = {
   opened: {},
   under_construction: { dash: "8 6" },
   tendered: { dash: "2 5", opacity: 0.7 },
   planned: { dash: "2 5", opacity: 0.7 },
+  /**
+   * Not a status: a section drawn as open only because its opening was
+   * projected from the contract, never published. The map marks those with
+   * the same hatching, so the legend has to show it.
+   */
+  derived: { hatched: true },
 };
 
 export default function LegendLine({
   status,
-  color = "#262626",
+  color = "var(--ink)",
 }: {
   status: string;
   color?: string;
@@ -27,6 +36,18 @@ export default function LegendLine({
         strokeDasharray={s.dash}
         opacity={s.opacity ?? 1}
       />
+      {s.hatched && (
+        <line
+          x1="1"
+          y1="3"
+          x2="29"
+          y2="3"
+          stroke="var(--surface)"
+          strokeWidth="3.5"
+          strokeLinecap="butt"
+          strokeDasharray="2 3"
+        />
+      )}
     </svg>
   );
 }
