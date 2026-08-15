@@ -1,7 +1,7 @@
 import { expectedOpeningMonth, monthIndex } from "./contract";
 import { shouldShowFuture } from "./map-filters";
 import { ALL_CATEGORIES } from "./map-style";
-import { isSharedTrack } from "./schema";
+import { countsTowardNetwork } from "./schema";
 import type { Category, CountryRef, Lot, Project } from "./schema";
 
 /**
@@ -152,7 +152,7 @@ export function summarizeCountries(
       if (lot.status === "cancelled") continue;
       // Track shared with another line is already counted there. This is a
       // network total, and the operators publish it the same way.
-      if (isSharedTrack(lot)) continue;
+      if (!countsTowardNetwork(lot)) continue;
       const state = lotStateAt(lotMonths(lot), month, nowMonth);
       if (state === "unknown") continue;
       if (state === "planned" && !countPlanned) continue;
