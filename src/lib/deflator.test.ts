@@ -66,6 +66,14 @@ describe("createDeflator", () => {
     expect(r).toEqual({ ok: false, reason: "unknown_currency" });
   });
 
+  it("reports a missing price year for what it is", () => {
+    // A figure whose source never stated a price year used to fail as
+    // "year_out_of_range" via a lookup for the string "undefined", which
+    // reads as a gap in the index rather than a gap in the data.
+    const r = deflate({ amount: 100, currency: "EUR" }, 2025);
+    expect(r).toEqual({ ok: false, reason: "missing_price_year" });
+  });
+
   it("reports a year outside the series rather than extrapolating", () => {
     expect(deflate({ amount: 10, currency: "EUR", year: 1980 }, 2021)).toEqual({
       ok: false,
