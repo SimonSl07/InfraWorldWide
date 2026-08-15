@@ -7,6 +7,10 @@ import {
   ALL_CATEGORIES,
   CATEGORY_COLORS,
   DIMMED,
+  MAP_STATUSES,
+  STATUS_DASHES,
+  categoryColorExpr,
+  statusDashExpr,
   countryFillOpacity,
   countryOutlineColor,
   countryOutlineOpacity,
@@ -196,6 +200,72 @@ describe("category colours", () => {
   it("covers every category", () => {
     for (const category of ALL_CATEGORIES) {
       expect(CATEGORY_COLORS[category]).toMatch(/^#[0-9a-f]{6}$/);
+    }
+  });
+
+  it("builds a paint expression the spec accepts", () => {
+    expect(validate(categoryColorExpr(), "line-color")).toBeNull();
+    expect(validate(categoryColorExpr(), "circle-color", "paint_circle")).toBeNull();
+  });
+
+  it("maps every category to its own colour, with a fallback", () => {
+    const expression = categoryColorExpr("#000000") as unknown as unknown[];
+    for (const category of ALL_CATEGORIES) {
+      const at = expression.indexOf(category);
+      expect(at).toBeGreaterThan(0);
+      expect(expression[at + 1]).toBe(CATEGORY_COLORS[category]);
+    }
+    // A feature with an unknown category still draws rather than vanishing.
+    expect(expression[expression.length - 1]).toBe("#000000");
+  });
+});
+
+describe("map statuses", () => {
+  /**
+   * Cancelled lots are deliberately not drawn. Nothing asserted that before,
+   * so adding "cancelled" to this list would have quietly put abandoned
+   * procurements on the map as if they were real road.
+   */
+  it("excludes cancelled", () => {
+    expect(MAP_STATUSES).not.toContain("cancelled");
+    expect(MAP_STATUSES).toEqual([
+      "opened",
+      "under_construction",
+      "tendered",
+      "planned",
+    ]);
+  });
+
+  it("builds a dash expression the spec accepts", () => {
+    // Built inline in a component at first, where nothing validated it. A
+    // malformed dasharray drops the whole layer with no error.
+    expect(validate(statusDashExpr(), "line-dasharray")).toBeNull();
+  });
+
+  it("keeps the dash expression free of a zoom term", () => {
+    // It has to compose with the zoom interpolate already on line-width;
+    // a second zoom-dependent interpolate in one layer is the trap.
+    expect(JSON.stringify(statusDashExpr())).not.toContain("zoom");
+  });
+
+  it("gives a dash to every unopened status and falls back for anything else", () => {
+    const expression = statusDashExpr() as unknown as unknown[];
+    for (const status of MAP_STATUSES.filter((s) => s !== "opened")) {
+      const at = expression.indexOf(status);
+      expect(at).toBeGreaterThan(0);
+      expect(expression[at + 1]).toEqual(["literal", STATUS_DASHES[status]]);
+    }
+    // "opened" is drawn solid by its own layer, so it must not appear here.
+    expect(expression).not.toContain("opened");
+  });
+
+  it("gives every drawn status a dash signature, and only 'opened' is solid", () => {
+    for (const status of MAP_STATUSES) {
+      expect(status in STATUS_DASHES).toBe(true);
+    }
+    expect(STATUS_DASHES.opened).toBeUndefined();
+    for (const status of MAP_STATUSES.filter((s) => s !== "opened")) {
+      expect(STATUS_DASHES[status]?.length).toBeGreaterThan(0);
     }
   });
 });

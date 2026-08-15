@@ -2,7 +2,11 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { ALL_CATEGORIES, CATEGORY_COLORS } from "@/lib/map-style";
+import {
+  ALL_CATEGORIES,
+} from "@/lib/map-style";
+import { categoryVar } from "@/lib/map-theme";
+import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
 import { formatKm, formatMonth } from "@/lib/format";
 import type { Rank, RankedCountry } from "@/lib/country-stats";
@@ -27,10 +31,10 @@ function RankChip({ rank, label }: { rank: Rank | null; label: string }) {
   return (
     <span
       title={label}
-      className="ml-2 shrink-0 rounded-full bg-neutral-100 px-1.5 py-0.5 text-[10px] font-semibold tabular-nums text-neutral-600"
+      className="ml-2 shrink-0 rounded-full bg-surface-raised px-1.5 py-0.5 text-[10px] font-semibold tabular-nums text-ink-soft"
     >
       #{rank.position}
-      <span className="text-neutral-400"> / {rank.of}</span>
+      <span className="text-ink-faint"> / {rank.of}</span>
     </span>
   );
 }
@@ -56,31 +60,25 @@ export default function CountryPanel({
     .sort((a, b) => b.totals.openedKm - a.totals.openedKm);
 
   return (
-    <aside className="absolute top-4 right-4 z-10 w-80 max-w-[calc(100%-2rem)] overflow-y-auto rounded-xl border border-neutral-200 bg-white/95 p-4 shadow-lg backdrop-blur max-h-[calc(100%-2rem)]">
-      <div className="flex items-start justify-between gap-2">
-        <div>
-          <div className="text-[10px] font-semibold uppercase tracking-wide text-neutral-400">
-            {t("country.panelKicker")}
-          </div>
-          <h3 className="flex items-center gap-2 text-lg font-bold leading-tight">
-            <span aria-hidden>{flagEmoji(code)}</span>
-            {countryName(code, locale)}
-          </h3>
-          <div className="text-xs text-neutral-500">
-            {t("country.asOf", { month: formatMonth(month, locale) })}
-          </div>
+    <MapPanel onClose={onClose} labelledBy="map-panel-country-heading">
+      <div className="pr-8">
+        <div className="text-[10px] font-semibold uppercase tracking-wide text-ink-muted">
+          {t("country.panelKicker")}
         </div>
-        <button
-          onClick={onClose}
-          aria-label={t("country.close")}
-          className="text-lg leading-none text-neutral-400 hover:text-neutral-900"
+        <h3
+          id="map-panel-country-heading"
+          className="flex items-center gap-2 text-lg font-bold leading-tight"
         >
-          ×
-        </button>
+          <span aria-hidden>{flagEmoji(code)}</span>
+          {countryName(code, locale)}
+        </h3>
+        <div className="text-xs text-ink-muted">
+          {t("country.asOf", { month: formatMonth(month, locale) })}
+        </div>
       </div>
 
       {categories.length === 0 ? (
-        <p className="mt-4 rounded-md bg-neutral-50 px-3 py-2 text-sm text-neutral-500">
+        <p className="mt-4 rounded-md bg-surface-sunken px-3 py-2 text-sm text-ink-muted">
           {t("country.emptyMonth")}
         </p>
       ) : (
@@ -91,7 +89,7 @@ export default function CountryPanel({
                 <dt className="flex min-w-0 items-baseline gap-2">
                   <span
                     className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
-                    style={{ backgroundColor: CATEGORY_COLORS[category] }}
+                    style={{ backgroundColor: categoryVar(category) }}
                   />
                   <span className="truncate">{t(`category.${category}`)}</span>
                 </dt>
@@ -108,7 +106,7 @@ export default function CountryPanel({
               {/* summarizeCountries already zeroes planned km when viewing
                   the past, matching the map — no extra guard needed here. */}
               {(totals.underConstructionKm > 0 || totals.plannedKm > 0) && (
-                <div className="mt-0.5 flex justify-end gap-3 pr-1 text-[11px] text-neutral-500">
+                <div className="mt-0.5 flex justify-end gap-3 pr-1 text-[11px] text-ink-muted">
                   {totals.underConstructionKm > 0 && (
                     <span>
                       {t("country.building")}{" "}
@@ -132,9 +130,9 @@ export default function CountryPanel({
         </dl>
       )}
 
-      <div className="mt-4 border-t border-neutral-100 pt-3 text-sm">
+      <div className="mt-4 border-t border-line-soft pt-3 text-sm">
         <div className="flex items-baseline justify-between gap-2">
-          <span className="text-neutral-500">{t("country.totalOpened")}</span>
+          <span className="text-ink-muted">{t("country.totalOpened")}</span>
           <span className="flex items-baseline">
             <span className="font-semibold tabular-nums">
               {formatKm(summary.total.openedKm, locale)}
@@ -145,7 +143,7 @@ export default function CountryPanel({
 
         {country.kmPerArea !== null && (
           <div className="mt-1 flex items-baseline justify-between gap-2">
-            <span className="text-neutral-500">{t("country.perArea")}</span>
+            <span className="text-ink-muted">{t("country.perArea")}</span>
             <span className="flex items-baseline">
               <span className="tabular-nums">
                 {country.kmPerArea.toFixed(1)}
@@ -156,7 +154,7 @@ export default function CountryPanel({
         )}
         {country.kmPerCapita !== null && (
           <div className="mt-1 flex items-baseline justify-between gap-2">
-            <span className="text-neutral-500">{t("country.perCapita")}</span>
+            <span className="text-ink-muted">{t("country.perCapita")}</span>
             <span className="flex items-baseline">
               <span className="tabular-nums">
                 {country.kmPerCapita.toFixed(1)}
@@ -167,18 +165,18 @@ export default function CountryPanel({
         )}
 
         <div className="mt-1 flex items-baseline justify-between gap-2">
-          <span className="text-neutral-500">{t("country.projects")}</span>
+          <span className="text-ink-muted">{t("country.projects")}</span>
           <span className="tabular-nums">{summary.projects}</span>
         </div>
       </div>
 
       {growth.length > 1 && (
-        <div className="mt-4 border-t border-neutral-100 pt-3">
-          <div className="text-[10px] font-semibold uppercase tracking-wide text-neutral-400">
+        <div className="mt-4 border-t border-line-soft pt-3">
+          <div className="text-[10px] font-semibold uppercase tracking-wide text-ink-faint">
             {t("country.growthSparkline")}
           </div>
           <Sparkline buckets={growth} className="mt-1.5" />
-          <div className="mt-1 flex justify-between text-[10px] tabular-nums text-neutral-400">
+          <div className="mt-1 flex justify-between text-[10px] tabular-nums text-ink-faint">
             {/* Romanian says "anii 1990", not "1990s" — the suffix is a
                 translated string, not something to concatenate here. */}
             <span>
@@ -194,17 +192,17 @@ export default function CountryPanel({
       )}
 
       {ref?.note && (
-        <p className="mt-3 text-[11px] leading-snug text-neutral-400">
+        <p className="mt-3 text-[11px] leading-snug text-ink-faint">
           {locale === "ro" && ref.note.ro ? ref.note.ro : ref.note.en}
         </p>
       )}
 
       <Link
         href={`/countries/${code}`}
-        className="mt-4 inline-block text-sm font-medium text-neutral-900 underline underline-offset-2 hover:text-neutral-600"
+        className="mt-4 inline-block text-sm font-medium text-ink underline underline-offset-2 hover:text-ink-soft"
       >
         {t("country.seeMore")} →
       </Link>
-    </aside>
+    </MapPanel>
   );
 }

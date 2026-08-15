@@ -3,7 +3,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { Category } from "@/lib/schema";
-import { ALL_CATEGORIES, CATEGORY_COLORS, MAP_STATUSES } from "@/lib/map-style";
+import {
+  ALL_CATEGORIES,
+  MAP_STATUSES,
+} from "@/lib/map-style";
+import { categoryVar } from "@/lib/map-theme";
 import {
   isCategoryActive,
   isStatusActive,
@@ -110,8 +114,8 @@ export default function CategoryToggle({
             <div
               className={`flex items-center rounded-full border text-xs font-medium transition-colors ${
                 active
-                  ? "border-neutral-900 bg-white text-neutral-900"
-                  : "border-neutral-200 bg-white/70 text-neutral-400"
+                  ? "border-inverse bg-surface text-ink"
+                  : "border-line bg-surface/70 text-ink-faint"
               }`}
             >
               <button
@@ -122,12 +126,12 @@ export default function CategoryToggle({
                 <span
                   className="inline-block w-4 h-1 rounded-full"
                   style={{
-                    backgroundColor: active ? CATEGORY_COLORS[cat] : "#d4d4d4",
+                    backgroundColor: active ? categoryVar(cat) : "var(--line-strong)",
                   }}
                 />
                 {t(`category.${cat}`)}
                 {partial && (
-                  <span className="text-[10px] font-normal text-neutral-500 tabular-nums">
+                  <span className="text-[10px] font-normal text-ink-muted tabular-nums">
                     {shown}/{MAP_STATUSES.length}
                   </span>
                 )}
@@ -144,7 +148,7 @@ export default function CategoryToggle({
                 aria-haspopup="true"
                 aria-expanded={open}
                 aria-label={t("map.statusMenu", { category: t(`category.${cat}`) })}
-                className="border-l border-neutral-200/80 px-1.5 py-1.5 text-neutral-400 hover:text-neutral-900"
+                className="border-l border-line/80 px-1.5 py-1.5 text-ink-faint hover:text-ink"
               >
                 <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true">
                   <path
@@ -169,37 +173,37 @@ export default function CategoryToggle({
                 })}
                 className="absolute left-0 top-full z-20 w-56 pt-1"
               >
-                <div className="rounded-xl border border-neutral-200 bg-white p-2 shadow-lg">
-                  <div className="px-1 pb-1 text-[10px] font-semibold uppercase text-neutral-400">
+                <div className="rounded-xl border border-line bg-surface p-2 shadow-lg">
+                  <div className="px-1 pb-1 text-[10px] font-semibold uppercase text-ink-faint">
                     {t("map.filterByStatus")}
                   </div>
                   {MAP_STATUSES.map((status) => (
                     <label
                       key={status}
-                      className="flex cursor-pointer items-center gap-2 rounded-lg px-1 py-1 text-xs text-neutral-700 hover:bg-neutral-50"
+                      className="flex cursor-pointer items-center gap-2 rounded-lg px-1 py-1 text-xs text-ink-soft hover:bg-surface-sunken"
                     >
                       <input
                         type="checkbox"
                         checked={isStatusActive(selection, cat, status)}
                         onChange={() => onChange(toggleStatus(selection, cat, status))}
-                        className="accent-neutral-900"
+                        className="accent-inverse"
                       />
-                      <LegendLine status={status} color={CATEGORY_COLORS[cat]} />
+                      <LegendLine status={status} color={categoryVar(cat)} />
                       {t(`status.${status}`)}
                     </label>
                   ))}
-                  <div className="mt-1 flex gap-3 border-t border-neutral-100 px-1 pt-1.5">
+                  <div className="mt-1 flex gap-3 border-t border-line-soft px-1 pt-1.5">
                     <button
                       onClick={() =>
                         onChange(setCategoryStatuses(selection, cat, MAP_STATUSES))
                       }
-                      className="text-[11px] text-neutral-500 hover:text-neutral-900"
+                      className="text-[11px] text-ink-muted hover:text-ink"
                     >
                       {t("map.showAll")}
                     </button>
                     <button
                       onClick={() => onChange(setCategoryStatuses(selection, cat, []))}
-                      className="text-[11px] text-neutral-500 hover:text-neutral-900"
+                      className="text-[11px] text-ink-muted hover:text-ink"
                     >
                       {t("map.showNone")}
                     </button>
