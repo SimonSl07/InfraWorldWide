@@ -15,15 +15,15 @@
         "en": "Sofia – Novi Han"
       },
       "status": "opened",
-      "lengthKm": 10,
-      "geometryRef": "sofia-novi-han",
       "dates": {
         "constructionStart": "1973",
         "opened": "1978"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
-      }
+      "lengthKm": 10,
+      "sourceRefs": [
+        "wikipedia-a1-motorway-bulgaria"
+      ],
+      "geometryRef": "sofia-novi-han"
     },
     {
       "id": "novi-han-plovdiv",
@@ -31,14 +31,14 @@
         "en": "Novi Han – Plovdiv"
       },
       "status": "opened",
-      "lengthKm": 56,
-      "geometryRef": "novi-han-plovdiv",
       "dates": {
         "opened": "1984"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
-      }
+      "lengthKm": 56,
+      "sourceRefs": [
+        "wikipedia-a1-motorway-bulgaria"
+      ],
+      "geometryRef": "novi-han-plovdiv"
     },
     {
       "id": "plovdiv-orizovo",
@@ -46,14 +46,14 @@
         "en": "Plovdiv – Orizovo"
       },
       "status": "opened",
-      "lengthKm": 32,
-      "geometryRef": "plovdiv-orizovo",
       "dates": {
         "opened": "1995-11-17"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
-      }
+      "lengthKm": 32,
+      "sourceRefs": [
+        "wikipedia-a1-motorway-bulgaria"
+      ],
+      "geometryRef": "plovdiv-orizovo"
     },
     {
       "id": "orizovo-stara-zagora",
@@ -61,12 +61,11 @@
         "en": "Orizovo – Stara Zagora"
       },
       "status": "opened",
-      "lengthKm": 38.6,
-      "geometryRef": "orizovo-stara-zagora",
       "dates": {
         "constructionStart": "2006",
         "opened": "2007-10-05"
       },
+      "lengthKm": 38.6,
       "cost": {
         "actual": {
           "amount": 198.16,
@@ -74,9 +73,10 @@
           "year": 2006
         }
       },
-      "contract": {
-        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
-      }
+      "sourceRefs": [
+        "wikipedia-bg"
+      ],
+      "geometryRef": "orizovo-stara-zagora"
     },
     {
       "id": "stara-zagora-nova-zagora",
@@ -84,27 +84,29 @@
         "en": "Stara Zagora – Nova Zagora"
       },
       "status": "opened",
-      "lengthKm": 31.8,
-      "geometryRef": "stara-zagora-nova-zagora",
       "dates": {
         "tenderAwarded": "2010-04-23",
         "constructionStart": "2010-04-23",
         "opened": "2012-07-01"
       },
-      "contract": {
-        "value": {
-          "amount": 137.868,
-          "currency": "BGN",
-          "year": 2010
-        },
-        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
-      },
+      "lengthKm": 31.8,
       "contractors": [
         {
           "name": "Trace Group Hold",
           "role": "builder"
         }
-      ]
+      ],
+      "contract": {
+        "value": {
+          "amount": 137.868,
+          "currency": "BGN",
+          "year": 2010
+        }
+      },
+      "sourceRefs": [
+        "wikipedia-bg"
+      ],
+      "geometryRef": "stara-zagora-nova-zagora"
     },
     {
       "id": "nova-zagora-yambol",
@@ -112,27 +114,29 @@
         "en": "Nova Zagora – Yambol"
       },
       "status": "opened",
-      "lengthKm": 35.7,
-      "geometryRef": "nova-zagora-yambol",
       "dates": {
         "tenderAwarded": "2010-07-14",
         "constructionStart": "2010-08-02",
         "opened": "2012-07-12"
       },
-      "contract": {
-        "value": {
-          "amount": 133.97,
-          "currency": "BGN",
-          "year": 2010
-        },
-        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
-      },
+      "lengthKm": 35.7,
       "contractors": [
         {
           "name": "Actor",
           "role": "builder"
         }
-      ]
+      ],
+      "contract": {
+        "value": {
+          "amount": 133.97,
+          "currency": "BGN",
+          "year": 2010
+        }
+      },
+      "sourceRefs": [
+        "wikipedia-bg"
+      ],
+      "geometryRef": "nova-zagora-yambol"
     },
     {
       "id": "yambol-karnobat",
@@ -140,27 +144,29 @@
         "en": "Yambol – Karnobat"
       },
       "status": "opened",
-      "lengthKm": 49.1,
-      "geometryRef": "yambol-karnobat",
       "dates": {
         "tenderAwarded": "2010-08-31",
         "constructionStart": "2010-09-03",
         "opened": "2013-07-15"
       },
-      "contract": {
-        "value": {
-          "amount": 209.646,
-          "currency": "BGN",
-          "year": 2010
-        },
-        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
-      },
+      "lengthKm": 49.1,
       "contractors": [
         {
           "name": "Trakia IV consortium",
           "role": "builder"
         }
-      ]
+      ],
+      "contract": {
+        "value": {
+          "amount": 209.646,
+          "currency": "BGN",
+          "year": 2010
+        }
+      },
+      "sourceRefs": [
+        "wikipedia-bg"
+      ],
+      "geometryRef": "yambol-karnobat"
     },
     {
       "id": "karnobat-burgas",
@@ -168,12 +174,11 @@
         "en": "Karnobat – Burgas"
       },
       "status": "opened",
-      "lengthKm": 35.3,
-      "geometryRef": "karnobat-burgas",
       "dates": {
         "constructionStart": "2005",
         "opened": "2006-11-02"
       },
+      "lengthKm": 35.3,
       "cost": {
         "actual": {
           "amount": 150.266,
@@ -181,19 +186,27 @@
           "year": 2005
         }
       },
-      "contract": {
-        "noticeUrl": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
-      }
+      "sourceRefs": [
+        "wikipedia-bg"
+      ],
+      "geometryRef": "karnobat-burgas"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-a1-motorway-bulgaria",
       "title": "Wikipedia: A1 motorway (Bulgaria)",
       "url": "https://en.wikipedia.org/wiki/A1_motorway_(Bulgaria)"
     },
     {
+      "id": "wikipedia-bg",
       "title": "Bulgarian Wikipedia: Автомагистрала Тракия",
       "url": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-08-14"
     }
   ]
 }

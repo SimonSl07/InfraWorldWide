@@ -48,7 +48,6 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "focsani-braila",
       "contract": {
         "designMonths": 6,
         "executionMonths": 36,
@@ -57,15 +56,28 @@
           "currency": "RON",
           "year": 2025
         },
-        "noticeReference": "Design-and-build contract worth 4.29 billion lei; CNIR issued the start order on 14 November 2025 and the design stage began on 2 December 2025. Financed through the Transport Programme 2021–2027",
-        "noticeUrl": "https://www.cnir.ro/start-pentru-drumul-expres-focsani-braila/",
         "totalMonths": 42,
         "guaranteeMonths": 60
+      },
+      "note": {
+        "en": "Design-and-build contract worth 4.29 billion lei; CNIR issued the start order on 14 November 2025 and the design stage began on 2 December 2025. Financed through the Transport Programme 2021–2027"
+      },
+      "sourceRefs": [
+        "economica-net-focsani-braila",
+        "economica-net-focsani-braila-2",
+        "agerpres-ro-focsani-braila",
+        "bursa-ro-focsani-braila",
+        "cnir-ro"
+      ],
+      "geometryRef": "focsani-braila",
+      "profile": {
+        "terrain": "plain"
       }
     }
   ],
   "sources": [
     {
+      "id": "cnir-ro",
       "title": "CNIR: Start pentru Drumul Expres Focșani–Brăila",
       "url": "https://www.cnir.ro/start-pentru-drumul-expres-focsani-braila/"
     },
@@ -82,19 +94,23 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "economica.net: focsani-braila (dates.tenderAwarded)",
+      "id": "economica-net-focsani-braila",
+      "title": "economica.net (dates.tenderAwarded)",
       "url": "https://www.economica.net/drumul-expres-focsani-braila-4_875462.html"
     },
     {
-      "title": "economica.net: focsani-braila (cost.estimated)",
+      "id": "economica-net-focsani-braila-2",
+      "title": "economica.net (cost.estimated)",
       "url": "https://www.economica.net/drumul-expres-braila-focsani-2_773804.html"
     },
     {
-      "title": "agerpres.ro: focsani-braila (contract.totalMonths)",
+      "id": "agerpres-ro-focsani-braila",
+      "title": "agerpres.ro (contract.totalMonths)",
       "url": "https://agerpres.ro/economic/2025/10/29/cnir-a-semnat-contracte-de-peste-10-miliarde-lei-pentru-autostrada-a8-si-drumul-expres-focsani---bra--1498134"
     },
     {
-      "title": "bursa.ro: focsani-braila (contract.guaranteeMonths)",
+      "id": "bursa-ro-focsani-braila",
+      "title": "bursa.ro (contract.guaranteeMonths)",
       "url": "https://www.bursa.ro/cnir-a-semnat-contractul-de-supervizare-a-lucrarilor-pentru-drumul-expres-focsani-braila-42565952"
     }
   ]

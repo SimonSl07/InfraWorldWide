@@ -10,6 +10,9 @@
     "en": "Motorway of about 304 km, partly under construction, crossing the Eastern Carpathians to link Transylvania with Moldavia: from Târgu Mureș (A3) to Iași, then on to the Moldovan border at Ungheni (Prut crossing towards Chișinău). Also known as the Union Motorway (Autostrada Unirii) or East–West Motorway, it is part of the TEN-T Core Network. As of May 2026, eleven sections (~260 km) are under design and construction, the first contract (Leghin–Târgu Neamț) signed in September 2023; the last two sections (Târgu Frumos–Lețcani and Iași–Ungheni, ~44 km) are tendered.",
     "ro": "Autostradă de circa 304 km, parțial în construcție, care traversează Carpații Orientali pentru a lega Transilvania de Moldova: de la Târgu Mureș (A3) la Iași și mai departe până la frontiera cu Republica Moldova la Ungheni (trecerea Prutului spre Chișinău). Cunoscută și ca Autostrada Unirii sau Autostrada Est-Vest, face parte din rețeaua centrală TEN-T. În mai 2026, unsprezece secțiuni (~260 km) erau în proiectare și execuție, primul contract (Leghin–Târgu Neamț) fiind semnat în septembrie 2023; ultimele două secțiuni (Târgu Frumos–Lețcani și Iași–Ungheni, ~44 km) erau în licitație."
   },
+  "corridors": [
+    "ten-t-core"
+  ],
   "lots": [
     {
       "id": "targu-mures-ditrau",
@@ -24,15 +27,17 @@
         "expectedOpening": "2030"
       },
       "lengthKm": 92.2,
-      "contract": {
-        "designMonths": 6,
-        "executionMonths": 24,
-        "noticeReference": "Section 1A Târgu Mureș–Miercurea Nirajului, contract signed 16 February 2024 (Nurol)",
-        "noticeUrl": "https://www.economica.net/autostrada-unirii-a8-a-fost-semnat-contractul-pentru-sectiunea-i-tg-mures-miercurea-nirajului_723019.html"
+      "cost": {
+        "estimated": {
+          "amount": 4070,
+          "currency": "EUR",
+          "year": 2023
+        }
       },
       "funding": [
         {
           "source": "EU",
+          "programme": "ro-pnrr",
           "detail": {
             "en": "PNRR (Next Generation EU): the Târgu Mureș–Miercurea Nirajului mountain-end lot carries an EU-imposed 2026 deadline",
             "ro": "PNRR (Next Generation EU): lotul de capăt montan Târgu Mureș–Miercurea Nirajului are termen 2026, impus de Uniunea Europeană"
@@ -56,14 +61,24 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "targu-mures-ditrau",
-      "cost": {
-        "estimated": {
-          "amount": 4070,
-          "currency": "EUR",
-          "year": 2023
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 24
+      },
+      "note": {
+        "en": "Section 1A Târgu Mureș–Miercurea Nirajului, contract signed 16 February 2024 (Nurol)"
+      },
+      "sources": [
+        {
+          "title": "economica.net",
+          "url": "https://www.economica.net/autostrada-unirii-a8-a-fost-semnat-contractul-pentru-sectiunea-i-tg-mures-miercurea-nirajului_723019.html"
         }
-      }
+      ],
+      "sourceRefs": [
+        "jurnalul-ro-targu-mures-ditrau",
+        "punctul-ro-targu-mures-ditrau"
+      ],
+      "geometryRef": "targu-mures-ditrau"
     },
     {
       "id": "ditrau-motca",
@@ -84,20 +99,10 @@
           "year": 2023
         }
       },
-      "contract": {
-        "designMonths": 14,
-        "executionMonths": 40,
-        "value": {
-          "amount": 1560,
-          "currency": "RON",
-          "year": 2023
-        },
-        "noticeReference": "Ditrău–Grințieș (section 2A) contract, SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB; Leghin–Târgu Neamț signed September 2023 at RON 1.56bn (≈€313M), 6 months design + 24 months execution",
-        "noticeUrl": "https://www.economica.net/autostrada-unirii-a8-38_820501.html"
-      },
       "funding": [
         {
           "source": "EU",
+          "programme": "ro-pnrr",
           "detail": {
             "en": "PNRR (Next Generation EU)",
             "ro": "PNRR (Next Generation EU)"
@@ -113,7 +118,28 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "ditrau-motca"
+      "contract": {
+        "designMonths": 14,
+        "executionMonths": 40,
+        "value": {
+          "amount": 1560,
+          "currency": "RON",
+          "year": 2023
+        }
+      },
+      "note": {
+        "en": "Ditrău–Grințieș (section 2A) contract, SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB; Leghin–Târgu Neamț signed September 2023 at RON 1.56bn (≈€313M), 6 months design + 24 months execution"
+      },
+      "sources": [
+        {
+          "title": "economica.net",
+          "url": "https://www.economica.net/autostrada-unirii-a8-38_820501.html"
+        }
+      ],
+      "geometryRef": "ditrau-motca",
+      "profile": {
+        "terrain": "mountain"
+      }
     },
     {
       "id": "motca-targu-frumos",
@@ -133,18 +159,6 @@
           "year": 2026
         }
       },
-      "contract": {
-        "designMonths": 10,
-        "executionMonths": 36,
-        "value": {
-          "amount": 4870,
-          "currency": "RON",
-          "year": 2026
-        },
-        "noticeReference": "Tronson 1 Moțca–Târgu Frumos (27 km): CNIR designated the SA&PE Construct (leader) – Tehnostrade – Spedition UMB – Euro-Asfalt association on 24 April 2026 and signed the design-and-execution contract on 28 May 2026, RON 4.87bn excluding VAT, 46 months of which 10 for design and 36 for execution. Design runs from the CNIR start order of 24 August 2026, with works due from June 2027. A priority 5.5 km segment linking the A8 to DN2 and the A7 is contracted for 12 months. Danlin XXL had won the original October 2025 award at RON 4.76bn; it was overturned on appeal and the offers re-evaluated.",
-        "noticeUrl": "https://economedia.ro/autostrada-unirii-a8-cnir-a-semnat-cu-umb-contractul-pentru-tronsonul-1-targu-neamt-targu-frumos-finantat-prin-safe.html",
-        "totalMonths": 46
-      },
       "funding": [
         {
           "source": "EU",
@@ -162,6 +176,27 @@
           "name": "SA&PE Construct – Tehnostrade – Spedition UMB – Euro Asfalt",
           "role": "builder"
         }
+      ],
+      "contract": {
+        "designMonths": 10,
+        "executionMonths": 36,
+        "value": {
+          "amount": 4870,
+          "currency": "RON",
+          "year": 2026
+        },
+        "totalMonths": 46
+      },
+      "note": {
+        "en": "Tronson 1 Moțca–Târgu Frumos (27 km): CNIR designated the SA&PE Construct (leader) – Tehnostrade – Spedition UMB – Euro-Asfalt association on 24 April 2026 and signed the design-and-execution contract on 28 May 2026, RON 4.87bn excluding VAT, 46 months of which 10 for design and 36 for execution. Design runs from the CNIR start order of 24 August 2026, with works due from June 2027. A priority 5.5 km segment linking the A8 to DN2 and the A7 is contracted for 12 months. Danlin XXL had won the original October 2025 award at RON 4.76bn; it was overturned on appeal and the offers re-evaluated."
+      },
+      "sourceRefs": [
+        "bursa-ro-motca-targu-frumos",
+        "economedia-ro-motca-targu-frumos",
+        "hotnews-ro-motca-targu-frumos",
+        "apix-ro-motca-targu-frumos",
+        "ziare-com-motca-targu-frumos",
+        "stireadeiasi-ro-motca-targu-frumos"
       ],
       "geometryRef": "motca-targu-frumos"
     },
@@ -185,11 +220,13 @@
           "source": "national_budget"
         }
       ],
-      "geometryRef": "targu-frumos-letcani",
-      "contract": {
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)",
-        "noticeReference": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
-      }
+      "note": {
+        "en": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a8-rom-nia"
+      ],
+      "geometryRef": "targu-frumos-letcani"
     },
     {
       "id": "letcani-iasi",
@@ -220,11 +257,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "letcani-iasi",
-      "contract": {
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)",
-        "noticeReference": "Lețcani–Iași (sector 3, 17.7 km) execution contract with FCC Construcción"
-      }
+      "note": {
+        "en": "Lețcani–Iași (sector 3, 17.7 km) execution contract with FCC Construcción"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a8-rom-nia"
+      ],
+      "geometryRef": "letcani-iasi"
     },
     {
       "id": "iasi-ungheni",
@@ -246,11 +285,13 @@
           "source": "national_budget"
         }
       ],
-      "geometryRef": "iasi-ungheni",
-      "contract": {
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)",
-        "noticeReference": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
-      }
+      "note": {
+        "en": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a8-rom-nia"
+      ],
+      "geometryRef": "iasi-ungheni"
     }
   ],
   "sources": [
@@ -259,6 +300,7 @@
       "url": "https://en.wikipedia.org/wiki/A8_motorway_(Romania)"
     },
     {
+      "id": "wikipedia-ro-autostrada-a8-rom-nia",
       "title": "Wikipedia (ro): Autostrada A8 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A8_(Rom%C3%A2nia)"
     },
@@ -267,35 +309,43 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "jurnalul.ro: targu-mures-ditrau (dates.constructionStart)",
+      "id": "jurnalul-ro-targu-mures-ditrau",
+      "title": "jurnalul.ro (dates.constructionStart)",
       "url": "https://jurnalul.ro/bani-afaceri/economia/autostrada-a8-tg-mures-miercurea-nirajului-emisa-noua-autorizatie-construire-1022537.html"
     },
     {
-      "title": "punctul.ro: targu-mures-ditrau (dates.expectedOpening)",
+      "id": "punctul-ro-targu-mures-ditrau",
+      "title": "punctul.ro (dates.expectedOpening)",
       "url": "https://punctul.ro/stadiul-la-zi-a-lucrarilor-pe-toate-tronsoanele-autostrazii-unirii-a8-cand-vom-putea-circula-de-la-targu-mures-la-iasi-doar-pe-autostrada/"
     },
     {
-      "title": "bursa.ro: motca-targu-frumos (dates.tenderAwarded, CNIR designation of 24 April 2026)",
+      "id": "bursa-ro-motca-targu-frumos",
+      "title": "bursa.ro (dates.tenderAwarded, CNIR designation of 24 April 2026)",
       "url": "https://www.bursa.ro/cnir-a-desemnat-constructorul-pentru-ultimul-lot-al-tronsonului-targu-neamt8209iasi8209ungheni-din-autostrada-a8-contract-de-4-87-miliarde-lei-fara-tva-26269856"
     },
     {
-      "title": "economedia.ro: motca-targu-frumos (contract signature of 28 May 2026, value, contractors)",
+      "id": "economedia-ro-motca-targu-frumos",
+      "title": "economedia.ro (contract signature of 28 May 2026, value, contractors)",
       "url": "https://economedia.ro/autostrada-unirii-a8-cnir-a-semnat-cu-umb-contractul-pentru-tronsonul-1-targu-neamt-targu-frumos-finantat-prin-safe.html"
     },
     {
-      "title": "hotnews.ro: motca-targu-frumos (contract.designMonths, length, overturned October 2025 award)",
+      "id": "hotnews-ro-motca-targu-frumos",
+      "title": "hotnews.ro (contract.designMonths, length, overturned October 2025 award)",
       "url": "https://hotnews.ro/autostrada-unirii-a8-contract-de-aproape-un-miliard-de-euro-pentru-primul-tronson-spre-iasi-cine-sunt-constructorii-si-cand-va-fi-gata-2098607"
     },
     {
-      "title": "apix.ro: motca-targu-frumos (contract.executionMonths)",
+      "id": "apix-ro-motca-targu-frumos",
+      "title": "apix.ro (contract.executionMonths)",
       "url": "https://apix.ro/a-fost-semnat-contractul-pentru-executia-autostrazii-motca-targu-frumos/"
     },
     {
-      "title": "ziare.com: motca-targu-frumos (contract.totalMonths)",
+      "id": "ziare-com-motca-targu-frumos",
+      "title": "ziare.com (contract.totalMonths)",
       "url": "https://ziare.com/autostrazi/safe-autostrada-a8-2015350"
     },
     {
-      "title": "stireadeiasi.ro: motca-targu-frumos (CNIR start order, design from 24 August 2026, works from June 2027)",
+      "id": "stireadeiasi-ro-motca-targu-frumos",
+      "title": "stireadeiasi.ro (CNIR start order, design from 24 August 2026, works from June 2027)",
       "url": "https://www.stireadeiasi.ro/stiri-locale/autostrada-a8-leticani-iasi-motca-targu-frumos/"
     }
   ]

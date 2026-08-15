@@ -34,6 +34,7 @@
       "funding": [
         {
           "source": "EU",
+          "coFinancingRate": 0.85,
           "detail": {
             "en": "85% of the motorway's cost",
             "ro": "85% din costul autostrăzii"
@@ -41,6 +42,7 @@
         },
         {
           "source": "national_budget",
+          "coFinancingRate": 0.15,
           "detail": {
             "en": "15% of the motorway's cost",
             "ro": "15% din costul autostrăzii"
@@ -57,10 +59,7 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lot-1",
       "contract": {
-        "noticeReference": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A10_(Rom%C3%A2nia)",
         "value": {
           "amount": 541.7,
           "currency": "RON",
@@ -68,7 +67,15 @@
         },
         "executionMonths": 18,
         "totalMonths": 22
-      }
+      },
+      "note": {
+        "en": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget"
+      },
+      "sourceRefs": [
+        "zcj-ro-lot-1",
+        "wikipedia-ro-autostrada-a10-rom-nia"
+      ],
+      "geometryRef": "lot-1"
     },
     {
       "id": "lot-2",
@@ -93,6 +100,7 @@
       "funding": [
         {
           "source": "EU",
+          "coFinancingRate": 0.85,
           "detail": {
             "en": "85% of the motorway's cost",
             "ro": "85% din costul autostrăzii"
@@ -100,6 +108,7 @@
         },
         {
           "source": "national_budget",
+          "coFinancingRate": 0.15,
           "detail": {
             "en": "15% of the motorway's cost",
             "ro": "15% din costul autostrăzii"
@@ -116,11 +125,13 @@
           "role": "builder"
         }
       ],
+      "note": {
+        "en": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget"
+      },
       "geometryRef": "lot-2",
-      "contract": {
-        "noticeReference": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A10_(Rom%C3%A2nia)"
-      }
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a10-rom-nia"
+      ]
     },
     {
       "id": "lot-3",
@@ -145,6 +156,7 @@
       "funding": [
         {
           "source": "EU",
+          "coFinancingRate": 0.85,
           "detail": {
             "en": "85% of the motorway's cost",
             "ro": "85% din costul autostrăzii"
@@ -152,6 +164,7 @@
         },
         {
           "source": "national_budget",
+          "coFinancingRate": 0.15,
           "detail": {
             "en": "15% of the motorway's cost",
             "ro": "15% din costul autostrăzii"
@@ -168,10 +181,7 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lot-3",
       "contract": {
-        "noticeReference": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A10_(Rom%C3%A2nia)",
         "value": {
           "amount": 420.5,
           "currency": "RON",
@@ -179,7 +189,15 @@
         },
         "executionMonths": 18,
         "totalMonths": 22
-      }
+      },
+      "note": {
+        "en": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget"
+      },
+      "sourceRefs": [
+        "hotnews-ro-lot-3",
+        "wikipedia-ro-autostrada-a10-rom-nia"
+      ],
+      "geometryRef": "lot-3"
     },
     {
       "id": "lot-4",
@@ -204,6 +222,7 @@
       "funding": [
         {
           "source": "EU",
+          "coFinancingRate": 0.85,
           "detail": {
             "en": "85% of the motorway's cost",
             "ro": "85% din costul autostrăzii"
@@ -211,6 +230,7 @@
         },
         {
           "source": "national_budget",
+          "coFinancingRate": 0.15,
           "detail": {
             "en": "15% of the motorway's cost",
             "ro": "15% din costul autostrăzii"
@@ -227,10 +247,7 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lot-4",
       "contract": {
-        "noticeReference": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A10_(Rom%C3%A2nia)",
         "value": {
           "amount": 470,
           "currency": "RON",
@@ -238,7 +255,15 @@
         },
         "executionMonths": 18,
         "totalMonths": 22
-      }
+      },
+      "note": {
+        "en": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget"
+      },
+      "sourceRefs": [
+        "hotnews-ro-lot-3",
+        "wikipedia-ro-autostrada-a10-rom-nia"
+      ],
+      "geometryRef": "lot-4"
     }
   ],
   "sources": [
@@ -248,15 +273,23 @@
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
-      "url": "https://www.openstreetmap.org/copyright"
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-08-14"
     },
     {
-      "title": "zcj.ro: lot-1",
+      "id": "zcj-ro-lot-1",
+      "title": "zcj.ro",
       "url": "https://zcj.ro/economie/autostrada-sebes-turda-cnair-vine-cu-explicatii-detaliate-in-disputa-de-peste-340-de-milioane-de-lei-cu-pizzarotti--296123.html"
     },
     {
-      "title": "hotnews.ro: lot-3, lot-4",
+      "id": "hotnews-ro-lot-3",
+      "title": "hotnews.ro",
       "url": "https://hotnews.ro/autostrada-a10-sebes-turda-4-loturi-533547"
+    },
+    {
+      "id": "wikipedia-ro-autostrada-a10-rom-nia",
+      "title": "Wikipedia (ro): Autostrada A10 (România)",
+      "url": "https://ro.wikipedia.org/wiki/Autostrada_A10_(Rom%C3%A2nia)"
     }
   ]
 }

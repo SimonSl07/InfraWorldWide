@@ -8,6 +8,9 @@
   "description": {
     "en": "A coastal motorway of approximately 103 km between the Black Sea cities of Varna and Burgas, on Pan-European Corridor VIII, estimated to cost €307 million. As of 2016 only the first 10 km, Varna to Priseltsi, had been built; the remaining 93 km is still at the planning stage."
   },
+  "corridors": [
+    "pan-european-viii"
+  ],
   "lots": [
     {
       "id": "varna-priseltsi",
@@ -15,18 +18,19 @@
         "en": "Varna – Priseltsi"
       },
       "status": "opened",
-      "lengthKm": 10.7,
-      "geometryRef": "varna-priseltsi",
       "dates": {
         "opened": "2016"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/Cherno_More_motorway"
-      }
+      "lengthKm": 10.7,
+      "sourceRefs": [
+        "wikipedia-cherno-more-motorway"
+      ],
+      "geometryRef": "varna-priseltsi"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-cherno-more-motorway",
       "title": "Wikipedia: Cherno More motorway",
       "url": "https://en.wikipedia.org/wiki/Cherno_More_motorway"
     },

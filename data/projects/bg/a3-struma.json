@@ -8,6 +8,9 @@
   "description": {
     "en": "A 172.8 km motorway in southwestern Bulgaria running Sofia–Pernik–Blagoevgrad–Kresna–Kulata, from the capital to the Greek border on Pan-European Corridor IV (European route E-79). Its lots opened between 2013 and 2024; the Kresna Gorge bypass (Lot 3.2) was still under construction as of 2026."
   },
+  "corridors": [
+    "pan-european-iv"
+  ],
   "lots": [
     {
       "id": "dolna-dikanya-dupnitsa",
@@ -15,15 +18,15 @@
         "en": "Dolna Dikanya – Dupnitsa"
       },
       "status": "opened",
-      "lengthKm": 14.2,
-      "geometryRef": "dolna-dikanya-dupnitsa",
       "dates": {
         "constructionStart": "2011-09",
         "opened": "2013-07"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
-      }
+      "lengthKm": 14.2,
+      "sourceRefs": [
+        "wikipedia-a3-motorway-bulgaria"
+      ],
+      "geometryRef": "dolna-dikanya-dupnitsa"
     },
     {
       "id": "dupnitsa-blagoevgrad",
@@ -31,15 +34,15 @@
         "en": "Dupnitsa – Blagoevgrad"
       },
       "status": "opened",
-      "lengthKm": 33.9,
-      "geometryRef": "dupnitsa-blagoevgrad",
       "dates": {
         "constructionStart": "2013-02",
         "opened": "2015-10"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
-      }
+      "lengthKm": 33.9,
+      "sourceRefs": [
+        "wikipedia-a3-motorway-bulgaria"
+      ],
+      "geometryRef": "dupnitsa-blagoevgrad"
     },
     {
       "id": "blagoevgrad-krupnik",
@@ -47,12 +50,11 @@
         "en": "Blagoevgrad – Krupnik"
       },
       "status": "opened",
-      "lengthKm": 12.6,
-      "geometryRef": "blagoevgrad-krupnik",
       "dates": {
         "constructionStart": "2017-08",
         "opened": "2024-02-17"
       },
+      "lengthKm": 12.6,
       "cost": {
         "estimated": {
           "amount": 186,
@@ -65,9 +67,10 @@
           "year": 2024
         }
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
-      }
+      "sourceRefs": [
+        "wikipedia-a3-motorway-bulgaria"
+      ],
+      "geometryRef": "blagoevgrad-krupnik"
     },
     {
       "id": "krupnik-kresna-bypass",
@@ -75,12 +78,11 @@
         "en": "Krupnik – Kresna (Kresna Gorge Bypass)"
       },
       "status": "under_construction",
-      "lengthKm": 15,
-      "geometryRef": "krupnik-kresna-bypass",
       "dates": {
         "constructionStart": "2026-02",
         "expectedOpening": "2029-12"
       },
+      "lengthKm": 15,
       "cost": {
         "estimated": {
           "amount": 570,
@@ -88,8 +90,12 @@
           "year": 2026
         }
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
+      "sourceRefs": [
+        "wikipedia-a3-motorway-bulgaria"
+      ],
+      "geometryRef": "krupnik-kresna-bypass",
+      "profile": {
+        "terrain": "mountain"
       }
     },
     {
@@ -98,12 +104,11 @@
         "en": "Kresna – Sandanski"
       },
       "status": "opened",
-      "lengthKm": 17.9,
-      "geometryRef": "kresna-sandanski",
       "dates": {
         "tenderAwarded": "2015-09-25",
         "opened": "2018-12-17"
       },
+      "lengthKm": 17.9,
       "cost": {
         "actual": {
           "amount": 281,
@@ -111,9 +116,10 @@
           "year": 2018
         }
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
-      }
+      "sourceRefs": [
+        "wikipedia-a3-motorway-bulgaria"
+      ],
+      "geometryRef": "kresna-sandanski"
     },
     {
       "id": "sandanski-kulata",
@@ -121,19 +127,20 @@
         "en": "Sandanski – Kulata"
       },
       "status": "opened",
-      "lengthKm": 40.5,
-      "geometryRef": "sandanski-kulata",
       "dates": {
         "constructionStart": "2012-04",
         "opened": "2015-08"
       },
-      "contract": {
-        "noticeUrl": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
-      }
+      "lengthKm": 40.5,
+      "sourceRefs": [
+        "wikipedia-a3-motorway-bulgaria"
+      ],
+      "geometryRef": "sandanski-kulata"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-a3-motorway-bulgaria",
       "title": "Wikipedia: A3 motorway (Bulgaria)",
       "url": "https://en.wikipedia.org/wiki/A3_motorway_(Bulgaria)"
     },
@@ -167,7 +174,8 @@
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
-      "url": "https://www.openstreetmap.org/copyright"
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-08-14"
     }
   ]
 }

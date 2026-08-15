@@ -8,6 +8,9 @@
   "description": {
     "en": "Upgrade of Serbian mainline 102 between Belgrade and Niš to 200 km/h, backed by an EIB, EBRD and EU financing package reported at up to EUR 2.2 billion for the corridor as a whole. Only Stalać–Đunis, where a new double-track alignment is being built, is under construction; the rest is at planning stage with no construction-start or opening dates yet published, so none are recorded. Published subsection lengths disagree with each other: 83, 62 and 58 km for the three northern subsections against 48.3 km given for Paraćin–Trupale–Međurovo. Lengths here are therefore measured off the mapped existing alignment, cut at the stations that bound each subsection, and the geometry follows the line in use today rather than the new Stalać–Đunis alignment. The EUR 2.2 billion figure covers the whole programme and is not apportioned per subsection, so no per-lot cost is recorded."
   },
+  "corridors": [
+    "pan-european-x"
+  ],
   "lots": [
     {
       "id": "beograd-velika-plana",
@@ -16,9 +19,14 @@
       },
       "status": "planned",
       "lengthKm": 87.5,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200
+      },
       "funding": [
         {
           "source": "loan",
+          "programme": "ebrd-loan",
           "detail": {
             "en": "European Investment Bank and EBRD."
           }
@@ -42,9 +50,14 @@
       },
       "status": "planned",
       "lengthKm": 62.28,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200
+      },
       "funding": [
         {
           "source": "loan",
+          "programme": "ebrd-loan",
           "detail": {
             "en": "European Investment Bank and EBRD."
           }
@@ -68,9 +81,14 @@
       },
       "status": "planned",
       "lengthKm": 21.23,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200
+      },
       "funding": [
         {
           "source": "loan",
+          "programme": "ebrd-loan",
           "detail": {
             "en": "European Investment Bank and EBRD."
           }
@@ -94,9 +112,14 @@
       },
       "status": "under_construction",
       "lengthKm": 18.57,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200
+      },
       "funding": [
         {
           "source": "loan",
+          "programme": "ebrd-loan",
           "detail": {
             "en": "European Investment Bank and EBRD."
           }
@@ -120,9 +143,14 @@
       },
       "status": "planned",
       "lengthKm": 39.79,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200
+      },
       "funding": [
         {
           "source": "loan",
+          "programme": "ebrd-loan",
           "detail": {
             "en": "European Investment Bank and EBRD."
           }

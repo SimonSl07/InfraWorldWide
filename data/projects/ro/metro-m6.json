@@ -11,6 +11,7 @@
     "en": "Metro line under construction between Bucharest's main railway station, Gara de Nord, and Henri Coandă International Airport at Otopeni: about 17.8 km with 16 stations, four of them shared with line M4. Phase II (1 Mai–Tokyo, 6.6 km, 6 stations) started in December 2023 and phase III (Tokyo–Airport, 7.6 km, 6 stations) in March 2025, with completion expected by 2028. The estimated €1.2 billion cost is covered from the national budget, EU funds and a JICA (Japan International Cooperation Agency) loan. It will be the airport's second rail connection, after the Gara de Nord–Otopeni surface link that opened in 2020.",
     "ro": "Magistrală de metrou în construcție între Gara de Nord și Aeroportul Internațional Henri Coandă de la Otopeni: circa 17,8 km și 16 stații, dintre care patru comune cu magistrala M4. Etapa a II-a (1 Mai–Tokyo, 6,6 km, 6 stații) a început în decembrie 2023, iar etapa a III-a (Tokyo–Aeroport, 7,6 km, 6 stații) în martie 2025, finalizarea fiind așteptată până în 2028. Costul estimat de 1,2 miliarde de euro este acoperit din bugetul de stat, fonduri europene și un împrumut JICA (Agenția Japoneză de Cooperare Internațională). Va fi a doua legătură pe șină a aeroportului, după legătura feroviară de suprafață Gara de Nord–Otopeni, dată în folosință în 2020."
   },
+  "stationCount": 16,
   "lots": [
     {
       "id": "phase1-gara-de-nord-1-mai",
@@ -24,12 +25,14 @@
         "opened": "2000"
       },
       "lengthKm": 3.6,
+      "note": {
+        "en": "The four stations between Gara de Nord and 1 Mai were built from 1989 and opened in 2000 as part of line M4; M6 trains will share them"
+      },
+      "sourceRefs": [
+        "wikipedia-bucharest-metro-line-m6"
+      ],
       "sharedWith": "ro-metro-m4",
-      "geometryRef": "phase1-gara-de-nord-1-mai",
-      "contract": {
-        "noticeReference": "The four stations between Gara de Nord and 1 Mai were built from 1989 and opened in 2000 as part of line M4; M6 trains will share them",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M6"
-      }
+      "geometryRef": "phase1-gara-de-nord-1-mai"
     },
     {
       "id": "phase2-1mai-tokyo",
@@ -52,17 +55,20 @@
         },
         {
           "source": "loan",
+          "programme": "jica-loan",
           "detail": {
             "en": "JICA (Japan International Cooperation Agency) loan",
             "ro": "Împrumut JICA (Agenția Japoneză de Cooperare Internațională)"
           }
         }
       ],
-      "geometryRef": "phase2-1mai-tokyo",
-      "contract": {
-        "noticeReference": "Six new stations (Pajura, Expoziției, Piața Montreal, Gara Băneasa, Aeroportul Băneasa and others) on the 6.6 km between 1 Mai and Tokyo; works started December 2023, expected in service 2027. Total M6 cost estimated at €1.2 billion",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M6"
-      }
+      "note": {
+        "en": "Six new stations (Pajura, Expoziției, Piața Montreal, Gara Băneasa, Aeroportul Băneasa and others) on the 6.6 km between 1 Mai and Tokyo; works started December 2023, expected in service 2027. Total M6 cost estimated at €1.2 billion"
+      },
+      "sourceRefs": [
+        "wikipedia-bucharest-metro-line-m6"
+      ],
+      "geometryRef": "phase2-1mai-tokyo"
     },
     {
       "id": "phase3-tokyo-airport",
@@ -85,21 +91,25 @@
         },
         {
           "source": "loan",
+          "programme": "jica-loan",
           "detail": {
             "en": "JICA (Japan International Cooperation Agency) loan",
             "ro": "Împrumut JICA (Agenția Japoneză de Cooperare Internațională)"
           }
         }
       ],
-      "geometryRef": "phase3-tokyo-airport",
-      "contract": {
-        "noticeReference": "Six stations over 7.6 km from Tokyo to the airport terminal; works started March 2025, the whole line expected to be completed by 2028",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M6"
-      }
+      "note": {
+        "en": "Six stations over 7.6 km from Tokyo to the airport terminal; works started March 2025, the whole line expected to be completed by 2028"
+      },
+      "sourceRefs": [
+        "wikipedia-bucharest-metro-line-m6"
+      ],
+      "geometryRef": "phase3-tokyo-airport"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-bucharest-metro-line-m6",
       "title": "Wikipedia: Bucharest Metro Line M6",
       "url": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M6"
     }

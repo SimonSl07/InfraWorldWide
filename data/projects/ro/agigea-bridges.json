@@ -34,11 +34,13 @@
           "role": "designer"
         }
       ],
-      "geometryRef": "old-bridge",
-      "contract": {
-        "noticeReference": "290 m long, of which a 246.65 m cable-stayed structure with a 162.5 m main span over the navigable channel; built from 1980 with floating cranes and self-compacting concrete, inaugurated 19 June 1983 as Romania's first cable-stayed bridge on a national road (OpenStreetMap records the opening as 1984)",
-        "noticeUrl": "https://www.rador.ro/2024/06/19/podul-rutier-de-la-agigea-o-minune-inginereasca-a-romaniei/"
-      }
+      "note": {
+        "en": "290 m long, of which a 246.65 m cable-stayed structure with a 162.5 m main span over the navigable channel; built from 1980 with floating cranes and self-compacting concrete, inaugurated 19 June 1983 as Romania's first cable-stayed bridge on a national road (OpenStreetMap records the opening as 1984)"
+      },
+      "sourceRefs": [
+        "rador-ro"
+      ],
+      "geometryRef": "old-bridge"
     },
     {
       "id": "new-bridge",
@@ -69,24 +71,30 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "new-bridge",
       "contract": {
         "value": {
           "amount": 191.8,
           "currency": "RON",
           "year": 2015
-        },
-        "noticeReference": "Cable-stayed bridge 360 m long, 200 m central span, 17.4 m wide, at km 0+540 of the canal; the financing contract for the bridge and its access works to Constanța port was 191,797,112 lei. Inaugurated 19 October 2015 after a delay of nearly ten months, with press reporting that unrestricted traffic followed only later",
-        "noticeUrl": "https://adevarul.ro/stiri-locale/constanta/noul-pod-de-la-agigea-cel-mai-mare-pod-hobanat-1660249.html"
-      }
+        }
+      },
+      "note": {
+        "en": "Cable-stayed bridge 360 m long, 200 m central span, 17.4 m wide, at km 0+540 of the canal; the financing contract for the bridge and its access works to Constanța port was 191,797,112 lei. Inaugurated 19 October 2015 after a delay of nearly ten months, with press reporting that unrestricted traffic followed only later"
+      },
+      "sourceRefs": [
+        "adevarul-ro"
+      ],
+      "geometryRef": "new-bridge"
     }
   ],
   "sources": [
     {
+      "id": "rador-ro",
       "title": "Rador: Podul rutier de la Agigea, o minune inginerească a României",
       "url": "https://www.rador.ro/2024/06/19/podul-rutier-de-la-agigea-o-minune-inginereasca-a-romaniei/"
     },
     {
+      "id": "adevarul-ro",
       "title": "Adevărul: Noul pod de la Agigea, cel mai mare pod hobanat din România",
       "url": "https://adevarul.ro/stiri-locale/constanta/noul-pod-de-la-agigea-cel-mai-mare-pod-hobanat-1660249.html"
     },

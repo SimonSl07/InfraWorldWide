@@ -23,6 +23,13 @@
         "constructionStart": "2019-04-13"
       },
       "lengthKm": 5.35,
+      "cost": {
+        "estimated": {
+          "amount": 159.2,
+          "currency": "RON",
+          "year": 2018
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -42,8 +49,6 @@
         }
       ],
       "contract": {
-        "noticeReference": "First Romanian motorway completed in 2020: opened 4 September 2020, connecting directly to the Hungarian motorway network",
-        "noticeUrl": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-24268039-prima-autostrada-inaugurata-2020-granita-ungaria-biharia-bors.htm",
         "value": {
           "amount": 134.22,
           "currency": "RON",
@@ -51,14 +56,21 @@
         },
         "executionMonths": 15
       },
-      "geometryRef": "bors-biharia",
-      "cost": {
-        "estimated": {
-          "amount": 159.2,
-          "currency": "RON",
-          "year": 2018
+      "note": {
+        "en": "First Romanian motorway completed in 2020: opened 4 September 2020, connecting directly to the Hungarian motorway network"
+      },
+      "sources": [
+        {
+          "title": "monitorizari.hotnews.ro",
+          "url": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-24268039-prima-autostrada-inaugurata-2020-granita-ungaria-biharia-bors.htm"
         }
-      }
+      ],
+      "sourceRefs": [
+        "economica-net-bors-biharia",
+        "economica-net-bors-biharia-2",
+        "economica-net-bors-biharia-3"
+      ],
+      "geometryRef": "bors-biharia"
     },
     {
       "id": "biharia-suplacu",
@@ -71,6 +83,29 @@
         "constructionStart": "2018"
       },
       "lengthKm": 54.9,
+      "events": [
+        {
+          "kind": "contract_terminated",
+          "date": "2013",
+          "note": {
+            "en": "Bechtel design-build contract terminated."
+          },
+          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2013",
+          "note": {
+            "en": "Biharia–Chiribiș and Chiribiș–Suplacu de Barcău re-tendered with EU financing."
+          },
+          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018",
+          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        }
+      ],
       "funding": [
         {
           "source": "EU",
@@ -93,10 +128,12 @@
           "role": "builder"
         }
       ],
-      "contract": {
-        "noticeReference": "Biharia–Chiribiș (28.55 km) and Chiribiș–Suplacu de Barcău (26.35 km) re-tendered after the Bechtel termination; OpenStreetMap tags opening_date=2026 on subsection 3A lot 2",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
+      "note": {
+        "en": "Biharia–Chiribiș (28.55 km) and Chiribiș–Suplacu de Barcău (26.35 km) re-tendered after the Bechtel termination; OpenStreetMap tags opening_date=2026 on subsection 3A lot 2"
       },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
       "geometryRef": "biharia-suplacu"
     },
     {
@@ -110,6 +147,29 @@
         "opened": "2022"
       },
       "lengthKm": 13.55,
+      "events": [
+        {
+          "kind": "contract_terminated",
+          "date": "2013",
+          "note": {
+            "en": "Bechtel design-build contract terminated."
+          },
+          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2013",
+          "note": {
+            "en": "Re-tendered with EU financing."
+          },
+          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        },
+        {
+          "kind": "opened",
+          "date": "2022",
+          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        }
+      ],
       "funding": [
         {
           "source": "EU",
@@ -129,8 +189,6 @@
         }
       ],
       "contract": {
-        "noticeReference": "Section of the Transylvania motorway re-tendered with EU financing after the 2013 Bechtel termination",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)",
         "value": {
           "amount": 384.14,
           "currency": "RON",
@@ -139,6 +197,13 @@
         "executionMonths": 18,
         "totalMonths": 24
       },
+      "note": {
+        "en": "Section of the Transylvania motorway re-tendered with EU financing after the 2013 Bechtel termination"
+      },
+      "sourceRefs": [
+        "economica-net-suplacu-nusfalau",
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
       "geometryRef": "suplacu-nusfalau"
     },
     {
@@ -171,11 +236,19 @@
           "role": "builder"
         }
       ],
-      "contract": {
-        "noticeReference": "Last major gap of the Transylvania motorway, including the Meseș tunnel, Romania's longest road tunnel when complete. OpenStreetMap tags opening_date=2032 on Tunel Meseș and subsections 3B3/3B4/3B lot 3; the 31 km Nușfalău–Poarta Sălajului lot was still in tender at the technical-project stage",
-        "noticeUrl": "https://www.openstreetmap.org/relation/2790155"
+      "note": {
+        "en": "Last major gap of the Transylvania motorway, including the Meseș tunnel, Romania's longest road tunnel when complete. OpenStreetMap tags opening_date=2032 on Tunel Meseș and subsections 3B3/3B4/3B lot 3; the 31 km Nușfalău–Poarta Sălajului lot was still in tender at the technical-project stage"
       },
-      "geometryRef": "nusfalau-zimbor"
+      "sources": [
+        {
+          "title": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/relation/2790155"
+        }
+      ],
+      "geometryRef": "nusfalau-zimbor",
+      "profile": {
+        "terrain": "mountain"
+      }
     },
     {
       "id": "zimbor-nadaselu",
@@ -214,12 +287,23 @@
           "currency": "EUR",
           "year": 2016
         },
-        "noticeReference": "Nădășelu–Mihăiești (16.85 km) contracted May 2016 for €100M with an 18-month term; design was delayed because the feasibility study proved inadequate. OpenStreetMap tags opening_date=2026 on subsection 3B1 (Mihăiești–Zimbor) and the Nădășelu route deviation",
-        "noticeUrl": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-20927665-inca-16-8-din-autostrada-transilvania-intre-nadaselu-mihaiesti-fost-contractati-100-mil-euro-termen-18-luni.htm",
         "designMonths": 12,
         "executionMonths": 24,
         "guaranteeMonths": 60
       },
+      "note": {
+        "en": "Nădășelu–Mihăiești (16.85 km) contracted May 2016 for €100M with an 18-month term; design was delayed because the feasibility study proved inadequate. OpenStreetMap tags opening_date=2026 on subsection 3B1 (Mihăiești–Zimbor) and the Nădășelu route deviation"
+      },
+      "sources": [
+        {
+          "title": "monitorizari.hotnews.ro",
+          "url": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-20927665-inca-16-8-din-autostrada-transilvania-intre-nadaselu-mihaiesti-fost-contractati-100-mil-euro-termen-18-luni.htm"
+        }
+      ],
+      "sourceRefs": [
+        "monitorulcj-ro-zimbor-nadaselu",
+        "hotnews-ro-zimbor-nadaselu"
+      ],
       "geometryRef": "zimbor-nadaselu"
     },
     {
@@ -245,10 +329,12 @@
           "role": "builder"
         }
       ],
-      "contract": {
-        "noticeReference": "First 42 km of the Transylvania motorway, opened 1 December 2009; built under the 2003 Bechtel design-build-finance contract, whose ground-breaking was held at Chinteni (Cluj) on 16 June 2004. Bechtel delivered 52 of the contracted kilometres before termination in 2013",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
+      "note": {
+        "en": "First 42 km of the Transylvania motorway, opened 1 December 2009; built under the 2003 Bechtel design-build-finance contract, whose ground-breaking was held at Chinteni (Cluj) on 16 June 2004. Bechtel delivered 52 of the contracted kilometres before termination in 2013"
       },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
       "geometryRef": "gilau-turda"
     },
     {
@@ -273,10 +359,12 @@
           "role": "builder"
         }
       ],
-      "contract": {
-        "noticeReference": "Final 10–12 km delivered by Bechtel on the Câmpia Turzii–Gilău section, inaugurated 13 November 2010",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
+      "note": {
+        "en": "Final 10–12 km delivered by Bechtel on the Câmpia Turzii–Gilău section, inaugurated 13 November 2010"
       },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
       "geometryRef": "turda-campia-turzii"
     },
     {
@@ -312,15 +400,18 @@
           "role": "builder"
         }
       ],
-      "contract": {
-        "noticeReference": "Iernut–Ungheni was the first segment of this section opened, on 12 December 2018, after the Geiger and Strabag lots were finished; the Cluj-Napoca West (Gilău)–Nădășelu extension followed in 2018",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
+      "note": {
+        "en": "Iernut–Ungheni was the first segment of this section opened, on 12 December 2018, after the Geiger and Strabag lots were finished; the Cluj-Napoca West (Gilău)–Nădășelu extension followed in 2018"
       },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
       "geometryRef": "campia-turzii-targu-mures"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-ro-autostrada-a3-rom-nia",
       "title": "Wikipedia (ro): Autostrada A3 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
     },
@@ -333,27 +424,33 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "economica.net: bors-biharia",
+      "id": "economica-net-bors-biharia",
+      "title": "economica.net",
       "url": "https://www.economica.net/autostrada-transilvania-semnare-contract-biharia-bors_162476.html"
     },
     {
-      "title": "economica.net: bors-biharia",
+      "id": "economica-net-bors-biharia-2",
+      "title": "economica.net",
       "url": "https://www.economica.net/autostrada-transilvania-oradenii-de-la-trameco-au-castigat-contractele-pentru-doua-loturi-din-sectiunea-suplacu-de-barcau-bors_159218.html"
     },
     {
-      "title": "economica.net: bors-biharia",
+      "id": "economica-net-bors-biharia-3",
+      "title": "economica.net",
       "url": "https://www.economica.net/autostrada-transilvania-azi-se-deschide-mini-lotul-biharia-bors-de-la-granita-cu-ungaria_189531.html"
     },
     {
-      "title": "economica.net: suplacu-nusfalau",
+      "id": "economica-net-suplacu-nusfalau",
+      "title": "economica.net",
       "url": "https://www.economica.net/autostrada-transilvania-turcii-de-la-nurol-castigatori-nusfalau-suplacu-de-barcau_188914.html"
     },
     {
-      "title": "monitorulcj.ro: zimbor-nadaselu (dates.constructionStart)",
+      "id": "monitorulcj-ro-zimbor-nadaselu",
+      "title": "monitorulcj.ro (dates.constructionStart)",
       "url": "https://www.monitorulcj.ro/administratie/130488-a-fost-emisa-autorizatia-de-construire-pentru-viaductele-cheie-ale-autostrazii-transilvania"
     },
     {
-      "title": "hotnews.ro: zimbor-nadaselu (contract.totalMonths)",
+      "id": "hotnews-ro-zimbor-nadaselu",
+      "title": "hotnews.ro (contract.totalMonths)",
       "url": "https://hotnews.ro/stiri-infrastructura_articole-24301095-autostrada-transilvania-nadaselu-mihaiesti-zimbor-umb.htm"
     }
   ]
