@@ -1,0 +1,13 @@
+/**
+ * External URLs used in more than one place.
+ *
+ * The OpenStreetMap and ODbL links are not decoration: geometry here is
+ * OSM-derived, and the licence requires the attribution to point somewhere.
+ */
+export const EXTERNAL_LINKS = {
+  github: "https://github.com/SimonSl07",
+  repo: "https://github.com/SimonSl07/InfraWorldWide",
+  openStreetMap: "https://www.openstreetmap.org/copyright",
+  odbl: "https://opendatacommons.org/licenses/odbl/",
+  openFreeMap: "https://openfreemap.org/",
+} as const;
