@@ -8,6 +8,9 @@
   "description": {
     "en": "Modernisation and partial realignment of Serbian mainline 106 from Niš to the Bulgarian border at Dimitrovgrad, the Serbian leg of the Corridor X branch toward Sofia. Under construction with European Investment Bank and EU support. No construction-start or opening date could be sourced, so the lot carries none; sources disagree on the total, with EUR 502 million given as the project cost against EUR 268–276 million quoted for individual subprojects."
   },
+  "corridors": [
+    "pan-european-x"
+  ],
   "lots": [
     {
       "id": "nis-dimitrovgrad",
@@ -23,9 +26,19 @@
           "year": 2022
         }
       },
+      "profile": {
+        "works": "upgrade"
+      },
       "funding": [
         {
           "source": "loan",
+          "programme": "eib-loan",
+          "amount": {
+            "amount": 341,
+            "currency": "EUR",
+            "confidence": "estimated",
+            "note": "Proposed finance, as reported by the EIB."
+          },
           "detail": {
             "en": "European Investment Bank, proposed finance of about EUR 341 million."
           }

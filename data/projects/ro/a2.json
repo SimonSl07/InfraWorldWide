@@ -34,16 +34,21 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "bucharest-fundulea",
       "contract": {
-        "noticeReference": "Bucharest–Fetești sector built 2001–2007 in four sections; this one by the Romanian company Romis, surfaced with concrete slabs",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A2_motorway_(Romania)",
         "value": {
           "amount": 73.8,
           "currency": "EUR",
           "year": 2001
         }
-      }
+      },
+      "note": {
+        "en": "Bucharest–Fetești sector built 2001–2007 in four sections; this one by the Romanian company Romis, surfaced with concrete slabs"
+      },
+      "sourceRefs": [
+        "businesscover-ro-bucharest-fundulea",
+        "wikipedia-a2-motorway-romania"
+      ],
+      "geometryRef": "bucharest-fundulea"
     },
     {
       "id": "fundulea-lehliu",
@@ -68,16 +73,21 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "fundulea-lehliu",
       "contract": {
-        "noticeReference": "Bucharest–Fetești sector, section 2, built by the Turkish joint venture Yuksel–Makimsar–Ener",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A2_motorway_(Romania)",
         "value": {
           "amount": 87.068,
           "currency": "EUR",
           "year": 2001
         }
-      }
+      },
+      "note": {
+        "en": "Bucharest–Fetești sector, section 2, built by the Turkish joint venture Yuksel–Makimsar–Ener"
+      },
+      "sourceRefs": [
+        "businesscover-ro-bucharest-fundulea",
+        "wikipedia-a2-motorway-romania"
+      ],
+      "geometryRef": "fundulea-lehliu"
     },
     {
       "id": "lehliu-drajna",
@@ -102,16 +112,22 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lehliu-drajna",
       "contract": {
-        "noticeReference": "Bucharest–Fetești sector, section 3, built by the French company Colas",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A2_motorway_(Romania)",
         "value": {
           "amount": 116.826,
           "currency": "EUR",
           "year": 2001
         }
-      }
+      },
+      "note": {
+        "en": "Bucharest–Fetești sector, section 3, built by the French company Colas"
+      },
+      "sourceRefs": [
+        "businesscover-ro-bucharest-fundulea",
+        "ro-wikipedia-org-lehliu-drajna",
+        "wikipedia-a2-motorway-romania"
+      ],
+      "geometryRef": "lehliu-drajna"
     },
     {
       "id": "drajna-fetesti",
@@ -128,6 +144,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-ispa",
           "detail": {
             "en": "ISPA pre-accession funds",
             "ro": "Fonduri ISPA de preaderare"
@@ -143,10 +160,7 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "drajna-fetesti",
       "contract": {
-        "noticeReference": "Bucharest–Fetești sector, section 4, built by the Astaldi–Max Bögl–CCCF joint venture with ISPA pre-accession support",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A2_motorway_(Romania)",
         "value": {
           "amount": 64.549,
           "currency": "EUR",
@@ -154,7 +168,15 @@
         },
         "executionMonths": 18,
         "totalMonths": 24
-      }
+      },
+      "note": {
+        "en": "Bucharest–Fetești sector, section 4, built by the Astaldi–Max Bögl–CCCF joint venture with ISPA pre-accession support"
+      },
+      "sourceRefs": [
+        "businesscover-ro-bucharest-fundulea",
+        "wikipedia-a2-motorway-romania"
+      ],
+      "geometryRef": "drajna-fetesti"
     },
     {
       "id": "fetesti-cernavoda",
@@ -173,11 +195,13 @@
           "source": "national_budget"
         }
       ],
-      "geometryRef": "fetesti-cernavoda",
-      "contract": {
-        "noticeReference": "Oldest section: the Cernavodă bridge complex over the Danube, opened 21 November 1987; closed September 2006 for complete rebuilding and reopened 2007",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A2_motorway_(Romania)"
-      }
+      "note": {
+        "en": "Oldest section: the Cernavodă bridge complex over the Danube, opened 21 November 1987; closed September 2006 for complete rebuilding and reopened 2007"
+      },
+      "sourceRefs": [
+        "wikipedia-a2-motorway-romania"
+      ],
+      "geometryRef": "fetesti-cernavoda"
     },
     {
       "id": "cernavoda-medgidia",
@@ -194,6 +218,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Cohesion Fund / European Commission: €70.81M of the €413.95M Cernavodă–Constanța cost",
             "ro": "Fondul de Coeziune / Comisia Europeană: 70,81 milioane € din costul de 413,95 milioane € al secțiunii Cernavodă–Constanța"
@@ -201,6 +226,7 @@
         },
         {
           "source": "loan",
+          "programme": "eib-loan",
           "detail": {
             "en": "European Investment Bank: €250M of the €413.95M Cernavodă–Constanța cost",
             "ro": "Banca Europeană de Investiții: 250 milioane € din costul de 413,95 milioane € al secțiunii Cernavodă–Constanța"
@@ -220,10 +246,7 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "cernavoda-medgidia",
       "contract": {
-        "noticeReference": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A2_(Rom%C3%A2nia)#Costuri",
         "value": {
           "amount": 498.8,
           "currency": "RON",
@@ -231,7 +254,15 @@
         },
         "executionMonths": 12,
         "totalMonths": 15
-      }
+      },
+      "note": {
+        "en": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state"
+      },
+      "sourceRefs": [
+        "mediafax-ro-cernavoda-medgidia",
+        "wikipedia-ro-autostrada-a2-rom-nia-costuri"
+      ],
+      "geometryRef": "cernavoda-medgidia"
     },
     {
       "id": "medgidia-murfatlar",
@@ -248,6 +279,7 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Cohesion Fund / European Commission: €70.81M of the €413.95M Cernavodă–Constanța cost",
             "ro": "Fondul de Coeziune / Comisia Europeană: 70,81 milioane € din costul de 413,95 milioane € al secțiunii Cernavodă–Constanța"
@@ -255,6 +287,7 @@
         },
         {
           "source": "loan",
+          "programme": "eib-loan",
           "detail": {
             "en": "European Investment Bank: €250M of the €413.95M Cernavodă–Constanța cost",
             "ro": "Banca Europeană de Investiții: 250 milioane € din costul de 413,95 milioane € al secțiunii Cernavodă–Constanța"
@@ -270,13 +303,18 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "medgidia-murfatlar",
       "contract": {
-        "noticeReference": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A2_(Rom%C3%A2nia)#Costuri",
         "executionMonths": 18,
         "totalMonths": 24
-      }
+      },
+      "note": {
+        "en": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state"
+      },
+      "sourceRefs": [
+        "businesscover-ro-bucharest-fundulea",
+        "wikipedia-ro-autostrada-a2-rom-nia-costuri"
+      ],
+      "geometryRef": "medgidia-murfatlar"
     },
     {
       "id": "murfatlar-constanta",
@@ -290,9 +328,17 @@
         "opened": "2011-09-30"
       },
       "lengthKm": 21,
+      "cost": {
+        "actual": {
+          "amount": 109,
+          "currency": "EUR",
+          "year": 2011
+        }
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Cohesion Fund / European Commission: €70.81M of the €413.95M Cernavodă–Constanța cost",
             "ro": "Fondul de Coeziune / Comisia Europeană: 70,81 milioane € din costul de 413,95 milioane € al secțiunii Cernavodă–Constanța"
@@ -300,6 +346,7 @@
         },
         {
           "source": "loan",
+          "programme": "eib-loan",
           "detail": {
             "en": "European Investment Bank: €250M of the €413.95M Cernavodă–Constanța cost",
             "ro": "Banca Europeană de Investiții: 250 milioane € din costul de 413,95 milioane € al secțiunii Cernavodă–Constanța"
@@ -315,42 +362,50 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "murfatlar-constanta",
       "contract": {
-        "noticeReference": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A2_(Rom%C3%A2nia)#Costuri",
         "executionMonths": 18,
         "totalMonths": 24
       },
-      "cost": {
-        "actual": {
-          "amount": 109,
-          "currency": "EUR",
-          "year": 2011
-        }
-      }
+      "note": {
+        "en": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state"
+      },
+      "sourceRefs": [
+        "businesscover-ro-bucharest-fundulea",
+        "wikipedia-ro-autostrada-a2-rom-nia-costuri"
+      ],
+      "geometryRef": "murfatlar-constanta"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-a2-motorway-romania",
       "title": "Wikipedia: A2 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A2_motorway_(Romania)"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
-      "url": "https://www.openstreetmap.org/copyright"
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-08-14"
     },
     {
-      "title": "businesscover.ro: bucharest-fundulea, drajna-fetesti, fundulea-lehliu, lehliu-drajna, medgidia-murfatlar, murfatlar-constanta",
+      "id": "businesscover-ro-bucharest-fundulea",
+      "title": "businesscover.ro",
       "url": "https://www.businesscover.ro/autostrazile-romaniei-toate-informatiile-pe-care-trebuie-sa-le-stiti/"
     },
     {
-      "title": "ro.wikipedia.org: lehliu-drajna",
+      "id": "ro-wikipedia-org-lehliu-drajna",
+      "title": "ro.wikipedia.org",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A2_(Rom%C3%A2nia)"
     },
     {
-      "title": "mediafax.ro: cernavoda-medgidia",
+      "id": "mediafax-ro-cernavoda-medgidia",
+      "title": "mediafax.ro",
       "url": "https://www.mediafax.ro/economic/cnadnr-si-astaldi-max-boegl-au-semnat-contractul-pentru-tronsonul-de-autostrada-cernavoda-medgidia-8780738"
+    },
+    {
+      "id": "wikipedia-ro-autostrada-a2-rom-nia-costuri",
+      "title": "Wikipedia (ro): Autostrada A2 (România)#Costuri",
+      "url": "https://ro.wikipedia.org/wiki/Autostrada_A2_(Rom%C3%A2nia)#Costuri"
     }
   ]
 }

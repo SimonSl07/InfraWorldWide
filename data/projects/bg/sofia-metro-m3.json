@@ -11,6 +11,7 @@
     "en": "The green line, Sofia's third metro diameter, linking Ovcha Kupel and Gorna Banya in the south-west with the city centre and the Hadzhi Dimitar and Levski estates in the north-east. Unlike the older lines it uses 1,500 V overhead catenary and driverless Siemens trains behind platform screen doors. The 7.8 km central stage with eight stations opened on 26 August 2020 and a 3.8 km western stage with four stations followed on 24 April 2021, at a combined cost of about €500 million with EU grants covering roughly four fifths. A 3 km, three-station extension under Gen. Vladimir Vazov Blvd to the Levski estate, built from March 2022 with Recovery and Resilience Facility money, is complete and due to carry passengers from 14 August 2026. A six-station branch through Slatina, numbered M6, splits east of Orlov Most and is still under construction.",
     "ro": "Linia verde, al treilea diametru al metroului din Sofia, care leagă Ovcha Kupel și Gorna Banya, în sud-vest, de centrul orașului și de cartierele Hadzhi Dimitar și Levski, în nord-est. Spre deosebire de liniile mai vechi, folosește catenară de 1.500 V și trenuri Siemens fără mecanic, cu uși de peron. Etapa centrală de 7,8 km, cu opt stații, a fost deschisă pe 26 august 2020, iar o etapă vestică de 3,8 km, cu patru stații, a urmat pe 24 aprilie 2021, la un cost combinat de circa 500 de milioane de euro, din care granturile europene au acoperit aproximativ patru cincimi. O prelungire de 3 km, cu trei stații, pe sub bulevardul Gen. Vladimir Vazov, spre cartierul Levski, construită din martie 2022 cu bani din Mecanismul de redresare și reziliență, este finalizată și urmează să preia călători de la 14 august 2026. O ramură cu șase stații prin Slatina, numerotată M6, se desprinde la est de Orlov Most și este încă în construcție."
   },
+  "operator": "bg-sofia-metropoliten",
   "lots": [
     {
       "id": "stage1-hadzhi-dimitar-krasno-selo",
@@ -34,6 +35,10 @@
       "funding": [
         {
           "source": "EU",
+          "amount": {
+            "amount": 321.8,
+            "currency": "EUR"
+          },
           "detail": {
             "en": "Grant of €321.8 million from OP Transport and Transport Infrastructure 2014–2020",
             "ro": "Grant de 321,8 milioane de euro din PO Transport și Infrastructură de Transport 2014–2020"
@@ -41,6 +46,10 @@
         },
         {
           "source": "national_budget",
+          "amount": {
+            "amount": 76.4,
+            "currency": "EUR"
+          },
           "detail": {
             "en": "Sofia Municipality co-financing of €76.4 million",
             "ro": "Cofinanțare a Municipiului Sofia de 76,4 milioane de euro"
@@ -53,16 +62,20 @@
           "role": "designer"
         }
       ],
-      "geometryRef": "stage1-hadzhi-dimitar-krasno-selo",
       "contract": {
         "value": {
           "amount": 398.2,
           "currency": "EUR",
           "year": 2016
-        },
-        "noticeReference": "First stage of line 3: 7.8 km and eight stations from Hadzhi Dimitar via Orlov Most and the National Palace of Culture to Krasno Selo, built 2016–2020 at €398.2 million excluding VAT, including the depot and 20 trains. Opened 26 August 2020",
-        "noticeUrl": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/line-3-sofia-metro"
-      }
+        }
+      },
+      "note": {
+        "en": "First stage of line 3: 7.8 km and eight stations from Hadzhi Dimitar via Orlov Most and the National Palace of Culture to Krasno Selo, built 2016–2020 at €398.2 million excluding VAT, including the depot and 20 trains. Opened 26 August 2020"
+      },
+      "sourceRefs": [
+        "metropolitan-bg"
+      ],
+      "geometryRef": "stage1-hadzhi-dimitar-krasno-selo"
     },
     {
       "id": "stage2-krasno-selo-gorna-banya",
@@ -86,6 +99,10 @@
       "funding": [
         {
           "source": "EU",
+          "amount": {
+            "amount": 68.5,
+            "currency": "EUR"
+          },
           "detail": {
             "en": "Grant of €68.5 million from OP Transport and Transport Infrastructure 2014–2020",
             "ro": "Grant de 68,5 milioane de euro din PO Transport și Infrastructură de Transport 2014–2020"
@@ -93,22 +110,30 @@
         },
         {
           "source": "national_budget",
+          "amount": {
+            "amount": 33.4,
+            "currency": "EUR"
+          },
           "detail": {
             "en": "Sofia Municipality co-financing of €33.4 million",
             "ro": "Cofinanțare a Municipiului Sofia de 33,4 milioane de euro"
           }
         }
       ],
-      "geometryRef": "stage2-krasno-selo-gorna-banya",
       "contract": {
         "value": {
           "amount": 101.9,
           "currency": "EUR",
           "year": 2017
-        },
-        "noticeReference": "Second stage of line 3: 3.8 km and four stations (Ovcha Kupel, Moesia, Ovcha Kupel II, Gorna Banya) with an interchange to the national railway, started 30 May 2017 at €101.9 million excluding VAT and opened 24 April 2021",
-        "noticeUrl": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/line-3-sofia-metro"
-      }
+        }
+      },
+      "note": {
+        "en": "Second stage of line 3: 3.8 km and four stations (Ovcha Kupel, Moesia, Ovcha Kupel II, Gorna Banya) with an interchange to the national railway, started 30 May 2017 at €101.9 million excluding VAT and opened 24 April 2021"
+      },
+      "sourceRefs": [
+        "metropolitan-bg"
+      ],
+      "geometryRef": "stage2-krasno-selo-gorna-banya"
     },
     {
       "id": "stage3-hadzhi-dimitar-levski",
@@ -125,17 +150,20 @@
       "funding": [
         {
           "source": "EU",
+          "programme": "bg-nrrp",
           "detail": {
             "en": "Bulgaria's Recovery and Resilience Plan, Transport Connectivity pillar",
             "ro": "Planul național de redresare și reziliență al Bulgariei, pilonul Conectivitate în transport"
           }
         }
       ],
-      "geometryRef": "stage3-hadzhi-dimitar-levski",
-      "contract": {
-        "noticeReference": "Lot 1 of the line 3 extension: 3 km and three stations (Georgi Asparuhov Stadium, Vitinya and Gen. Vladimir Vazov) under Gen. Vladimir Vazov Blvd, with a 100-space park-and-ride. Works began at the end of March 2022; Metropoliten announced that the section would carry passengers from noon on Friday 14 August 2026. No construction cost has been published for this lot",
-        "noticeUrl": "https://dnes.dir.bg/obshtestvo/obyaviha-koga-otvaryat-za-patnitsi-trite-novi-metrostantsii-v-sofiya"
-      }
+      "note": {
+        "en": "Lot 1 of the line 3 extension: 3 km and three stations (Georgi Asparuhov Stadium, Vitinya and Gen. Vladimir Vazov) under Gen. Vladimir Vazov Blvd, with a 100-space park-and-ride. Works began at the end of March 2022; Metropoliten announced that the section would carry passengers from noon on Friday 14 August 2026. No construction cost has been published for this lot"
+      },
+      "sourceRefs": [
+        "dnes-dir-bg"
+      ],
+      "geometryRef": "stage3-hadzhi-dimitar-levski"
     }
   ],
   "sources": [
@@ -144,6 +172,7 @@
       "url": "https://en.wikipedia.org/wiki/Sofia_Metro"
     },
     {
+      "id": "metropolitan-bg",
       "title": "Metropoliten Sofia: Line 3 of Sofia Metro",
       "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/line-3-sofia-metro"
     },
@@ -156,6 +185,7 @@
       "url": "https://www.railwaygazette.com/infrastructure/2020/08/28/third-line-of-sofia-metro-opened/"
     },
     {
+      "id": "dnes-dir-bg",
       "title": "Dir.bg: Opening date announced for the three new Sofia metro stations",
       "url": "https://dnes.dir.bg/obshtestvo/obyaviha-koga-otvaryat-za-patnitsi-trite-novi-metrostantsii-v-sofiya"
     },

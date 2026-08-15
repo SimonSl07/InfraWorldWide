@@ -1,5 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { geojsonBounds, featuresForProject, nearestFeature, distanceToFeature } from "./geo";
+import {
+  geojsonBounds,
+  featuresForProject,
+  nearestFeature,
+  distanceToFeature,
+  lineLength,
+} from "./geo";
 import type { FeatureCollection } from "geojson";
 
 const fc: FeatureCollection = {
@@ -38,6 +44,91 @@ describe("featuresForProject", () => {
     const features = featuresForProject(fc, "ro-a1");
     expect(features).toHaveLength(1);
     expect(features[0].geometry.type).toBe("LineString");
+  });
+});
+
+describe("lineLength", () => {
+  it("measures one degree of latitude as ~111.19 km", () => {
+    expect(
+      lineLength({
+        type: "LineString",
+        coordinates: [
+          [25, 44],
+          [25, 45],
+        ],
+      }),
+    ).toBeCloseTo(111.19, 1);
+  });
+
+  it("sums the parts of a MultiLineString", () => {
+    expect(
+      lineLength({
+        type: "MultiLineString",
+        coordinates: [
+          [
+            [25, 44],
+            [25, 45],
+          ],
+          [
+            [26, 44],
+            [26, 44.5],
+          ],
+        ],
+      }),
+    ).toBeCloseTo(111.19 * 1.5, 1);
+  });
+
+  it("sums every segment of a multi-vertex line", () => {
+    expect(
+      lineLength({
+        type: "LineString",
+        coordinates: [
+          [25, 44],
+          [25, 44.5],
+          [25, 45],
+        ],
+      }),
+    ).toBeCloseTo(111.19, 1);
+  });
+
+  it("shortens a degree of longitude by the cosine of the latitude", () => {
+    // 1° of longitude at 45°N is ~78.6 km, not ~111 km: a planar
+    // hypot() on degrees would report the same number at every latitude.
+    expect(
+      lineLength({
+        type: "LineString",
+        coordinates: [
+          [25, 45],
+          [26, 45],
+        ],
+      }),
+    ).toBeCloseTo(78.6, 0);
+  });
+
+  it("returns 0 for a degenerate single-position line", () => {
+    expect(
+      lineLength({ type: "LineString", coordinates: [[25, 44]] }),
+    ).toBe(0);
+  });
+
+  it("returns 0 for an empty line and for non-line geometries", () => {
+    expect(lineLength({ type: "LineString", coordinates: [] })).toBe(0);
+    expect(lineLength({ type: "Point", coordinates: [25, 44] })).toBe(0);
+    expect(
+      lineLength({
+        type: "Polygon",
+        coordinates: [
+          [
+            [25, 44],
+            [26, 44],
+            [26, 45],
+            [25, 44],
+          ],
+        ],
+      }),
+    ).toBe(0);
+    expect(lineLength(null)).toBe(0);
+    expect(lineLength(undefined)).toBe(0);
   });
 });
 

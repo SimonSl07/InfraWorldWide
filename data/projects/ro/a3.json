@@ -10,6 +10,7 @@
     "en": "Motorway linking Bucharest to Brașov via Ploiești and the Prahova Valley, part of the planned Bucharest–Borș (Hungarian border) route. The Bucharest–Ploiești section (62 km) opened in July 2012. The Ploiești–Comarnic section (48.6 km) is still in pre-feasibility, while the difficult Comarnic–Brașov mountain section (58 km) has seen its concession and PPP tenders repeatedly cancelled; only the Râșnov–Cristian segment (6.3 km) is in service.",
     "ro": "Autostrada care leagă Bucureștiul de Brașov prin Ploiești și Valea Prahovei, parte a traseului planificat București–Borș (frontiera cu Ungaria). Secțiunea București–Ploiești (62 km) a fost deschisă în iulie 2012. Secțiunea Ploiești–Comarnic (48,6 km) este încă în faza de prefezabilitate, iar dificila secțiune montană Comarnic–Brașov (58 km) a avut licitațiile de concesiune și PPP anulate în mod repetat; doar tronsonul Râșnov–Cristian (6,3 km) este în funcțiune."
   },
+  "operator": "ro-cnair",
   "lots": [
     {
       "id": "bucharest-ploiesti",
@@ -24,12 +25,6 @@
         "opened": "2012-07-19"
       },
       "lengthKm": 62,
-      "contract": {
-        "executionMonths": 18,
-        "guaranteeMonths": 36,
-        "noticeReference": "CNADNR tender of 21 February 2007 (7 bidders); notice to proceed 16 May 2008, works began 26 May 2008; 18-month construction term, 36-month guarantee. Actual opening slipped to July 2012",
-        "noticeUrl": "http://www.cnadnr.ro/proiect.php?id=39"
-      },
       "cost": {
         "estimated": {
           "amount": 450,
@@ -64,6 +59,19 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "executionMonths": 18,
+        "guaranteeMonths": 36
+      },
+      "note": {
+        "en": "CNADNR tender of 21 February 2007 (7 bidders); notice to proceed 16 May 2008, works began 26 May 2008; 18-month construction term, 36-month guarantee. Actual opening slipped to July 2012"
+      },
+      "sources": [
+        {
+          "title": "cnadnr.ro",
+          "url": "http://www.cnadnr.ro/proiect.php?id=39"
+        }
+      ],
       "geometryRef": "bucharest-ploiesti"
     },
     {
@@ -74,26 +82,124 @@
       },
       "status": "tendered",
       "dates": {
-        "announced": "2008",
-        "tenderAwarded": "2017-10",
-        "constructionStart": "2017-10-17"
+        "announced": "2008"
       },
-      "lengthKm": 58,
+      "lengthKm": 51.7,
       "cost": {
         "estimated": {
           "amount": 1360,
           "currency": "EUR",
-          "year": 2018
+          "year": 2018,
+          "scope": "programme",
+          "confidence": "estimated",
+          "note": "The October 2018 public-private partnership estimate covers Ploiești–Comarnic–Brașov, about 100 km, so it spans well beyond this section. Recorded as a programme figure and kept out of per-section rankings for that reason."
         }
       },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2008",
+          "sourceRef": "wikipedia-a3"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2013",
+          "note": {
+            "en": "Tendered as a concession; Vinci–Strabag–Aktor selected."
+          },
+          "sourceRef": "wikipedia-a3"
+        },
+        {
+          "kind": "tender_cancelled",
+          "date": "2015",
+          "note": {
+            "en": "Concession tender cancelled."
+          },
+          "sourceRef": "wikipedia-a3"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2018",
+          "note": {
+            "en": "Re-tendered as a public-private partnership."
+          },
+          "sourceRef": "wikipedia-a3"
+        },
+        {
+          "kind": "tender_cancelled",
+          "date": "2020",
+          "note": {
+            "en": "PPP tender cancelled."
+          },
+          "sourceRef": "wikipedia-a3"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2020-08",
+          "note": {
+            "en": "Comarnic South–North segment (5.2 km) re-tendered."
+          },
+          "sourceRef": "wikipedia-a3"
+        }
+      ],
       "funding": [
         {
           "source": "ppp",
           "detail": {
-            "en": "Tendered as a concession in 2013 (Vinci–Strabag–Aktor, cancelled 2015) and again as a public-private partnership in 2018 (cancelled 2020). The Comarnic South–North segment (5.2 km) was re-tendered in August 2020; the Râșnov–Cristian segment (6.3 km) opened in December 2020.",
-            "ro": "Licitat ca concesiune în 2013 (Vinci–Strabag–Aktor, anulată în 2015) și din nou ca parteneriat public-privat în 2018 (anulat în 2020). Tronsonul Comarnic Sud–Nord (5,2 km) a fost relicitat în august 2020; tronsonul Râșnov–Cristian (6,3 km) a fost deschis în decembrie 2020."
+            "en": "Tendered as a concession in 2013 (Vinci–Strabag–Aktor, cancelled 2015) and again as a public-private partnership in 2018 (cancelled 2020). The Comarnic South–North segment (5.2 km) was re-tendered in August 2020.",
+            "ro": "Licitat ca concesiune în 2013 (Vinci–Strabag–Aktor, anulată în 2015) și din nou ca parteneriat public-privat în 2018 (anulat în 2020). Tronsonul Comarnic Sud–Nord (5,2 km) a fost relicitat în august 2020."
           }
+        }
+      ],
+      "sourceRefs": [
+        "wikipedia-a3",
+        "wikipedia-a3-ro"
+      ],
+      "geometryRef": "comarnic-brasov",
+      "profile": {
+        "terrain": "mountain"
+      }
+    },
+    {
+      "id": "rasnov-cristian",
+      "name": {
+        "en": "Râșnov – Cristian",
+        "ro": "Râșnov – Cristian"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10",
+        "constructionStart": "2017-10-17",
+        "opened": "2020-12"
+      },
+      "lengthKm": 6.3,
+      "profile": {
+        "terrain": "mountain"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-10",
+          "note": {
+            "en": "EU-financed contract awarded after the PPP attempts failed."
+          },
+          "sourceRef": "wikipedia-a3"
         },
+        {
+          "kind": "construction_start",
+          "date": "2017-10-17",
+          "sourceRef": "wikipedia-a3"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12",
+          "sourceRef": "wikipedia-a3"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24
+      },
+      "funding": [
         {
           "source": "EU",
           "detail": {
@@ -104,23 +210,32 @@
       ],
       "contractors": [
         {
-          "name": "Alpenside (Râșnov–Cristian)",
+          "name": "Alpenside",
           "role": "builder"
         },
         {
-          "name": "Specialist Consulting (Râșnov–Cristian)",
+          "name": "Specialist Consulting",
           "role": "designer"
         }
       ],
-      "geometryRef": "comarnic-brasov"
+      "note": {
+        "en": "The only section of the Comarnic–Brașov mountain crossing in service. Recorded as its own lot because the map draws a lot as one status, and 6.3 km of open motorway was being drawn as tendered."
+      },
+      "sourceRefs": [
+        "wikipedia-a3",
+        "wikipedia-a3-ro"
+      ],
+      "geometryRef": "rasnov-cristian"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-a3",
       "title": "Wikipedia: A3 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A3_motorway_(Romania)"
     },
     {
+      "id": "wikipedia-a3-ro",
       "title": "Wikipedia (ro): Autostrada A3 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
     },

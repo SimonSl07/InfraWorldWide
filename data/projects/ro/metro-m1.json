@@ -11,6 +11,8 @@
     "en": "The oldest line of the Bucharest Metro, handed over on 16 November 1979 between Semănătoarea (now Petrache Poenaru) and Timpuri Noi. Five further sections opened by 1989 closed it into a loop around the city centre, and a single-track spur from Republica to Pantelimon followed in 1991. Metrorex records the line as 31.01 km with 22 stations. Since 4 July 2009 the 8.67 km between Eroilor and Nicolae Grigorescu have carried line M3 as well.",
     "ro": "Cea mai veche magistrală a metroului bucureștean, dată în folosință pe 16 noiembrie 1979 între Semănătoarea (azi Petrache Poenaru) și Timpuri Noi. Alte cinci tronsoane deschise până în 1989 au închis traseul într-un inel în jurul centrului, iar în 1991 s-a adăugat racordul cu cale simplă Republica – Pantelimon. Metrorex indică 31,01 km și 22 de stații. De la 4 iulie 2009, cei 8,67 km dintre Eroilor și Nicolae Grigorescu sunt parcurși și de magistrala M3."
   },
+  "operator": "ro-metrorex",
+  "stationCount": 22,
   "lots": [
     {
       "id": "semanatoarea-timpuri-noi",
@@ -24,11 +26,13 @@
         "opened": "1979-11-16"
       },
       "lengthKm": 8.63,
-      "geometryRef": "semanatoarea-timpuri-noi",
-      "contract": {
-        "noticeReference": "First section of the network: 8.63 km and 6 stations along the Dâmbovița, from the Semănătoarea works to Timpuri Noi, with the depot at Ciurel. Works on the metro began in 1975, the first train ran for passengers on 19 November 1979 and the formal inauguration followed on 19 December 1979",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
-      }
+      "note": {
+        "en": "First section of the network: 8.63 km and 6 stations along the Dâmbovița, from the Semănătoarea works to Timpuri Noi, with the depot at Ciurel. Works on the metro began in 1975, the first train ran for passengers on 19 November 1979 and the formal inauguration followed on 19 December 1979"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-metroul-din-bucure-ti"
+      ],
+      "geometryRef": "semanatoarea-timpuri-noi"
     },
     {
       "id": "timpuri-noi-republica",
@@ -41,11 +45,13 @@
         "opened": "1981-12-28"
       },
       "lengthKm": 10.1,
-      "geometryRef": "timpuri-noi-republica",
-      "contract": {
-        "noticeReference": "Eastern extension of 10.1 km and 6 stations to the Republica works, opened on 28 December 1981. Nicolae Grigorescu was named Leontin Sălăjan until 1990 and Costin Georgian was named Muncii until 1992",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
-      }
+      "note": {
+        "en": "Eastern extension of 10.1 km and 6 stations to the Republica works, opened on 28 December 1981. Nicolae Grigorescu was named Leontin Sălăjan until 1990 and Costin Georgian was named Muncii until 1992"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-metroul-din-bucure-ti"
+      ],
+      "geometryRef": "timpuri-noi-republica"
     },
     {
       "id": "semanatoarea-crangasi",
@@ -58,11 +64,13 @@
         "opened": "1984-12-22"
       },
       "lengthKm": 0.97,
-      "geometryRef": "semanatoarea-crangasi",
-      "contract": {
-        "noticeReference": "0.97 km and one station, the first piece of the northern arc that would close the loop. Planned in 1974 as a branch from Semănătoarea to Podul Grant, a station later replaced by Crângași",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
-      }
+      "note": {
+        "en": "0.97 km and one station, the first piece of the northern arc that would close the loop. Planned in 1974 as a branch from Semănătoarea to Podul Grant, a station later replaced by Crângași"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-metroul-din-bucure-ti"
+      ],
+      "geometryRef": "semanatoarea-crangasi"
     },
     {
       "id": "crangasi-gara-de-nord",
@@ -75,11 +83,13 @@
         "opened": "1987-12-24"
       },
       "lengthKm": 2.83,
-      "geometryRef": "crangasi-gara-de-nord",
-      "contract": {
-        "noticeReference": "2.83 km and one station to the main railway station. Basarab was added as an infill station on 26 August 1992 and is the interchange with line M4, because Gara de Nord 1 and Gara de Nord 2 are separate stations outside the paid area",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
-      }
+      "note": {
+        "en": "2.83 km and one station to the main railway station. Basarab was added as an infill station on 26 August 1992 and is the interchange with line M4, because Gara de Nord 1 and Gara de Nord 2 are separate stations outside the paid area"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-metroul-din-bucure-ti"
+      ],
+      "geometryRef": "crangasi-gara-de-nord"
     },
     {
       "id": "gara-de-nord-dristor",
@@ -92,11 +102,13 @@
         "opened": "1989-08-17"
       },
       "lengthKm": 7.8,
-      "geometryRef": "gara-de-nord-dristor",
-      "contract": {
-        "noticeReference": "7.8 km and 6 stations across the north and east of the centre, closing the loop at Dristor 2. Opened as line M3 and the last metro investment of the communist government; it was later renumbered into M1, and the Eroilor – Preciziei branch took the M3 number instead",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
-      }
+      "note": {
+        "en": "7.8 km and 6 stations across the north and east of the centre, closing the loop at Dristor 2. Opened as line M3 and the last metro investment of the communist government; it was later renumbered into M1, and the Eroilor – Preciziei branch took the M3 number instead"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-metroul-din-bucure-ti"
+      ],
+      "geometryRef": "gara-de-nord-dristor"
     },
     {
       "id": "republica-pantelimon",
@@ -109,15 +121,18 @@
         "opened": "1991-07-07"
       },
       "lengthKm": 1.43,
-      "geometryRef": "republica-pantelimon",
-      "contract": {
-        "noticeReference": "1.43 km spur to the depot with a single station, named Antilopa until 1992. It is single track with one usable platform, so only about one train in three runs beyond Republica. Dated 7 July 1991 by the newspaper Tineretul Liber; Metrorex's own history gives May 1991 and its 2014 activity report January 1990",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
-      }
+      "note": {
+        "en": "1.43 km spur to the depot with a single station, named Antilopa until 1992. It is single track with one usable platform, so only about one train in three runs beyond Republica. Dated 7 July 1991 by the newspaper Tineretul Liber; Metrorex's own history gives May 1991 and its 2014 activity report January 1990"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-metroul-din-bucure-ti"
+      ],
+      "geometryRef": "republica-pantelimon"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-ro-metroul-din-bucure-ti",
       "title": "Wikipedia: Metroul din București",
       "url": "https://ro.wikipedia.org/wiki/Metroul_din_Bucure%C8%99ti"
     },

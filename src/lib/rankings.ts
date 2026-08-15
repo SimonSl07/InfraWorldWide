@@ -13,6 +13,7 @@ import {
 } from "./overrun";
 import { computeSlip, type Slip } from "./slip";
 import { monthIndex } from "./contract";
+import { countsTowardNetwork, lotActualCost, lotEstimatedCost } from "./schema";
 import type {
   Category,
   LocalizedString,
@@ -42,9 +43,15 @@ export interface LotMetric {
   lengthKm: number;
   /**
    * Project that owns this track when it is shared with another line, else
-   * null. Such a lot is excluded from every total that spans projects.
+   * null.
    */
   sharedWith: string | null;
+  /**
+   * Project whose section physically contains this lot's works, else null.
+   * A tunnel bored inside an A1 section is real work with its own contract,
+   * and its kilometres are already inside that section's.
+   */
+  partOf: string | null;
   /** Absolute month index the lot opened, null while it has not. */
   openedMonth: number | null;
   /** Null on a basis whose inputs are missing or incomparable. */
@@ -95,15 +102,20 @@ export function collectLotMetrics(
         lengthKm: lot.lengthKm,
         /** Project owning this track, when it is shared with another line. */
         sharedWith: lot.sharedWith ?? null,
+        /** Project whose own section already contains these works. */
+        partOf: lot.partOf ?? null,
         openedMonth: monthIndex(lot.dates?.opened) ?? null,
         overrun: {
           estimate: overruns.estimate.ok ? overruns.estimate.overrun : null,
           award: overruns.award.ok ? overruns.award.overrun : null,
         },
+        // As recorded, including figures no comparison will accept: the cost
+        // table shows them and marks them uncomparable, which is the point.
+        // `toComparable` is what decides what may be ranked.
         costs: {
-          actual: lot.cost?.actual ?? null,
+          actual: lotActualCost(lot),
           award: lot.contract?.value ?? null,
-          estimate: lot.cost?.estimated ?? null,
+          estimate: lotEstimatedCost(lot),
         },
         slip: computeSlip(lot, opts.nowMonth),
         contractors: attributeLotContractors(
@@ -115,6 +127,37 @@ export function collectLotMetrics(
     }
   }
   return out;
+}
+
+/**
+ * Whether a measured lot may enter a total that spans projects.
+ *
+ * `countsTowardNetwork` in its metric form. There are two ways a lot's works
+ * are already counted somewhere else, shared track and containment, and
+ * there will probably be a third, so every aggregate asks the one question
+ * by name rather than remembering one rule and forgetting the other.
+ *
+ * A lot's own project still counts it in full: this is only about sums that
+ * cross project boundaries.
+ */
+export function metricCountsTowardNetwork(
+  metric: Pick<LotMetric, "sharedWith" | "partOf">,
+): boolean {
+  return countsTowardNetwork({
+    sharedWith: metric.sharedWith ?? undefined,
+    partOf: metric.partOf ?? undefined,
+  });
+}
+
+/**
+ * The metrics a cross-project total may sum.
+ *
+ * Both the cost and the kilometres of an excluded lot go, never one without
+ * the other: dropping a tunnel's length while keeping its cost would inflate
+ * every cost-per-kilometre figure it touches.
+ */
+export function crossProjectMetrics(metrics: LotMetric[]): LotMetric[] {
+  return metrics.filter(metricCountsTowardNetwork);
 }
 
 /** How much of the dataset each metric could actually be computed for. */
@@ -330,6 +373,10 @@ function summarize(
  * A lot counts toward every firm credited with it, so joint-venture work
  * appears under each partner. Firms are returned by default; pass
  * `includeJointVentures` through `collectLotMetrics` to rank pairings too.
+ *
+ * The km column is a total across projects, so it drops lots already
+ * counted elsewhere. It had no such filter at all, which credited a firm
+ * with both a tunnel and the section containing it.
  */
 export function rankByContractor(metrics: LotMetric[]): GroupRanking[] {
   const groups = new Map<
@@ -337,7 +384,7 @@ export function rankByContractor(metrics: LotMetric[]): GroupRanking[] {
     { label: string; kind: ContractorKind; members: LotMetric[] }
   >();
 
-  for (const metric of metrics) {
+  for (const metric of crossProjectMetrics(metrics)) {
     for (const contractor of metric.contractors) {
       const group = groups.get(contractor.id) ?? {
         label: contractor.name,
@@ -357,13 +404,14 @@ export function rankByContractor(metrics: LotMetric[]): GroupRanking[] {
 /**
  * Aggregates lots by country. Labels are ISO codes; the UI localizes them.
  *
- * Shared track is dropped: this is a total across projects, so a tunnel two
- * metro lines run through would otherwise add its length twice.
+ * Lots already counted elsewhere are dropped: this is a total across
+ * projects, so a tunnel two metro lines run through, or one bored inside an
+ * A1 section that measures its own length, would add its kilometres twice.
  */
 export function rankByCountry(metrics: LotMetric[]): GroupRanking[] {
   const groups = new Map<string, LotMetric[]>();
   for (const metric of metrics) {
-    if (metric.sharedWith !== null) continue;
+    if (!metricCountsTowardNetwork(metric)) continue;
     const members = groups.get(metric.country) ?? [];
     members.push(metric);
     groups.set(metric.country, members);

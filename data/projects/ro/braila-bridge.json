@@ -48,22 +48,29 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "main-bridge",
       "contract": {
-        "noticeReference": "Suspension bridge over the Danube; built by Webuild (Astaldi) with IHI Infrastructure Systems, EU and national budget financed",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Br%C4%83ila_Bridge",
         "executionMonths": 36,
         "totalMonths": 48
-      }
+      },
+      "note": {
+        "en": "Suspension bridge over the Danube; built by Webuild (Astaldi) with IHI Infrastructure Systems, EU and national budget financed"
+      },
+      "sourceRefs": [
+        "romania-insider-com-main-bridge",
+        "wikipedia-br-ila-bridge"
+      ],
+      "geometryRef": "main-bridge"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-br-ila-bridge",
       "title": "Wikipedia: Brăila Bridge",
       "url": "https://en.wikipedia.org/wiki/Br%C4%83ila_Bridge"
     },
     {
-      "title": "romania-insider.com: main-bridge",
+      "id": "romania-insider-com-main-bridge",
+      "title": "romania-insider.com",
       "url": "https://www.romania-insider.com/italian-japanese-consortium-danube-bridge"
     }
   ]

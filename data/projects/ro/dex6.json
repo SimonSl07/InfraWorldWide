@@ -10,6 +10,7 @@
     "en": "Expressway between the two Lower Danube cities of Brăila and Galați (Smârdan), 19.205 km in total, replacing the two-lane DN22B. Around 12.3 km were in execution by Spedition UMB under a contract worth 371 million lei, with the remainder still to be contracted; opening was scheduled for 2026.",
     "ro": "Drum expres între orașele dunărene Brăila și Galați (Smârdan), lung de 19,205 km în total, care înlocuiește DN22B cu două benzi. Circa 12,3 km erau în execuție cu Spedition UMB, printr-un contract de 371 de milioane de lei, restul urmând a fi contractat; deschiderea era programată pentru 2026."
   },
+  "operator": "ro-cnair",
   "lots": [
     {
       "id": "braila-galati",
@@ -48,20 +49,25 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "braila-galati",
       "contract": {
         "value": {
           "amount": 371,
           "currency": "RON",
           "year": 2021
-        },
-        "noticeReference": "Of the 19.205 km of DEx6, 12.28 km were under construction and 6.925 km still to be contracted; built by Spedition UMB for 371 million lei, scheduled to open in 2026",
-        "noticeUrl": "https://en.wikipedia.org/wiki/Gala%C8%9Bi%E2%80%93Br%C4%83ila_Expressway"
-      }
+        }
+      },
+      "note": {
+        "en": "Of the 19.205 km of DEx6, 12.28 km were under construction and 6.925 km still to be contracted; built by Spedition UMB for 371 million lei, scheduled to open in 2026"
+      },
+      "sourceRefs": [
+        "wikipedia-gala-i-br-ila-expressway"
+      ],
+      "geometryRef": "braila-galati"
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-gala-i-br-ila-expressway",
       "title": "Wikipedia: Galați–Brăila Expressway",
       "url": "https://en.wikipedia.org/wiki/Gala%C8%9Bi%E2%80%93Br%C4%83ila_Expressway"
     },

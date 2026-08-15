@@ -10,6 +10,10 @@
     "en": "EU-funded rehabilitation of the main railway between Cluj-Napoca and the Hungarian border at Episcopia Bihor, upgrading speeds and capacity on the Transylvanian corridor.",
     "ro": "Reabilitarea cu fonduri europene a magistralei feroviare dintre Cluj-Napoca și granița cu Ungaria la Episcopia Bihor, pentru viteze și capacitate mai mari pe coridorul transilvănean."
   },
+  "corridors": [
+    "ten-t-rhine-danube"
+  ],
+  "operator": "ro-cfr",
   "lots": [
     {
       "id": "cluj-oradea",
@@ -22,6 +26,9 @@
         "constructionStart": "2022"
       },
       "lengthKm": 166,
+      "profile": {
+        "works": "rehabilitation"
+      },
       "funding": [
         {
           "source": "EU"
@@ -30,15 +37,18 @@
           "source": "national_budget"
         }
       ],
-      "geometryRef": "cluj-oradea",
-      "contract": {
-        "noticeReference": "EU-funded rehabilitation of the Cluj-Napoca–Oradea–Episcopia Bihor main line (TEN-T Rhine–Danube Corridor)",
-        "noticeUrl": "https://www.cfr.ro"
-      }
+      "note": {
+        "en": "EU-funded rehabilitation of the Cluj-Napoca–Oradea–Episcopia Bihor main line (TEN-T Rhine–Danube Corridor)"
+      },
+      "sourceRefs": [
+        "cfr-ro"
+      ],
+      "geometryRef": "cluj-oradea"
     }
   ],
   "sources": [
     {
+      "id": "cfr-ro",
       "title": "CFR Infrastructură: projects",
       "url": "https://www.cfr.ro"
     }

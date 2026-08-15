@@ -10,6 +10,11 @@
     "en": "Rehabilitation of the Brașov–Sighișoara section of the Brașov–Simeria main line, the missing link of the Rhine–Danube (Pan-European IV) rail corridor, for 160 km/h passenger and 120 km/h freight traffic. The work is contracted in three subsections to the RailWorks consortium (Alstom, Aktor, Arcada, Euro Construct Trading '98). Subsections 1 and 3, Brașov–Apața and Cața–Sighișoara, total 84 km under a single RON 3.44 billion contract. Subsection 2, Apața–Cața, has a RON 2.86 billion contract that shortens the winding Olt valley alignment from 43.95 km to 28.2 km through the Ormeniș and Homorod tunnels; at roughly 7 km and 5 km these will be by far the longest railway tunnels in Romania, and four tunnel boring machines entered the Racoș mountains in 2024–2025. Contractual completion is October 2026 for the tunnelled middle subsection and April 2027 for the end subsections; the government approved a €630 million EIB loan for the project.",
     "ro": "Reabilitarea secțiunii Brașov–Sighișoara din magistrala Brașov–Simeria, veriga lipsă a coridorului feroviar Rin–Dunăre (IV pan-european), pentru viteze de 160 km/h la trenurile de călători și 120 km/h la marfă. Lucrările sunt contractate pe trei subsecțiuni cu asocierea RailWorks (Alstom, Aktor, Arcada, Euro Construct Trading '98). Subsecțiunile 1 și 3, Brașov–Apața și Cața–Sighișoara, însumează 84 km printr-un singur contract de 3,44 miliarde lei. Subsecțiunea 2, Apața–Cața, are un contract de 2,86 miliarde lei care scurtează traseul sinuos din valea Oltului de la 43,95 km la 28,2 km prin tunelurile Ormeniș și Homorod; cu circa 7 km și 5 km, acestea vor fi de departe cele mai lungi tuneluri feroviare din România, iar patru scuturi de forat au intrat în munții din zona Racoș în 2024–2025. Termenele contractuale sunt octombrie 2026 pentru subsecțiunea cu tuneluri și aprilie 2027 pentru subsecțiunile de capăt; Guvernul a aprobat un împrumut BEI de 630 de milioane de euro pentru proiect."
   },
+  "corridors": [
+    "pan-european-iv",
+    "ten-t-rhine-danube"
+  ],
+  "operator": "ro-cfr",
   "lots": [
     {
       "id": "s1-brasov-apata",
@@ -23,9 +28,14 @@
         "expectedOpening": "2027-04"
       },
       "lengthKm": 40.9,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160
+      },
       "funding": [
         {
           "source": "EU",
+          "coFinancingRate": 0.82,
           "detail": {
             "en": "Connecting Europe Facility (82%)",
             "ro": "Mecanismul pentru Interconectarea Europei (82%)"
@@ -33,6 +43,7 @@
         },
         {
           "source": "national_budget",
+          "coFinancingRate": 0.18,
           "detail": {
             "en": "State budget (18%)",
             "ro": "Bugetul de stat (18%)"
@@ -40,6 +51,7 @@
         },
         {
           "source": "loan",
+          "programme": "eib-loan",
           "detail": {
             "en": "€630 million European Investment Bank loan approved for the Brașov–Sighișoara line",
             "ro": "Împrumut de 630 de milioane de euro de la BEI pentru linia Brașov–Sighișoara"
@@ -52,7 +64,6 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "s1-brasov-apata",
       "contract": {
         "executionMonths": 48,
         "guaranteeMonths": 60,
@@ -60,10 +71,15 @@
           "amount": 3437.45,
           "currency": "RON",
           "year": 2020
-        },
-        "noticeReference": "Subsections 1 and 3 were awarded together in March 2020 to RailWorks: 84 km in total for RON 3,437,453,580.88 excluding VAT, 48 months of execution plus 60 months of guarantee. The per-subsection split shown here is measured from OpenStreetMap geometry",
-        "noticeUrl": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-brasov-simeria-componenta-a-coridorului-rin-dunare-pentru-circulatia-trenurilor-cu-viteza-maxima-de-160-km-h-sectiunea-brasov-sighisoara-subsectiunile/"
-      }
+        }
+      },
+      "note": {
+        "en": "Subsections 1 and 3 were awarded together in March 2020 to RailWorks: 84 km in total for RON 3,437,453,580.88 excluding VAT, 48 months of execution plus 60 months of guarantee. The per-subsection split shown here is measured from OpenStreetMap geometry"
+      },
+      "sourceRefs": [
+        "cfr-ro"
+      ],
+      "geometryRef": "s1-brasov-apata"
     },
     {
       "id": "s2-apata-cata",
@@ -84,9 +100,14 @@
           "year": 2020
         }
       },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160
+      },
       "funding": [
         {
           "source": "EU",
+          "coFinancingRate": 0.82,
           "detail": {
             "en": "Connecting Europe Facility (82%)",
             "ro": "Mecanismul pentru Interconectarea Europei (82%)"
@@ -94,6 +115,7 @@
         },
         {
           "source": "national_budget",
+          "coFinancingRate": 0.18,
           "detail": {
             "en": "State budget (18%)",
             "ro": "Bugetul de stat (18%)"
@@ -106,16 +128,20 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "s2-apata-cata",
       "contract": {
         "value": {
           "amount": 2860,
           "currency": "RON",
           "year": 2020
-        },
-        "noticeReference": "Awarded September 2020 for RON 2.86 billion (€585.53 million), four-year duration; the new alignment through the Ormeniș and Homorod tunnels shortens the subsection from 43.95 km to 28.2 km. Geometry shown here follows the existing line",
-        "noticeUrl": "https://www.railwaypro.com/wp/romania-signs-a-new-modernisation-contract-on-rhine-danube-corridor/"
-      }
+        }
+      },
+      "note": {
+        "en": "Awarded September 2020 for RON 2.86 billion (€585.53 million), four-year duration; the new alignment through the Ormeniș and Homorod tunnels shortens the subsection from 43.95 km to 28.2 km. Geometry shown here follows the existing line"
+      },
+      "sourceRefs": [
+        "railwaypro-com"
+      ],
+      "geometryRef": "s2-apata-cata"
     },
     {
       "id": "s3-cata-sighisoara",
@@ -130,9 +156,14 @@
         "constructionStart": "2020-04"
       },
       "lengthKm": 43.6,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160
+      },
       "funding": [
         {
           "source": "EU",
+          "coFinancingRate": 0.82,
           "detail": {
             "en": "Connecting Europe Facility (82%)",
             "ro": "Mecanismul pentru Interconectarea Europei (82%)"
@@ -140,6 +171,7 @@
         },
         {
           "source": "national_budget",
+          "coFinancingRate": 0.18,
           "detail": {
             "en": "State budget (18%)",
             "ro": "Bugetul de stat (18%)"
@@ -152,7 +184,6 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "s3-cata-sighisoara",
       "contract": {
         "executionMonths": 48,
         "guaranteeMonths": 60,
@@ -161,18 +192,27 @@
           "currency": "RON",
           "year": 2020
         },
-        "noticeReference": "Part of the same RON 3.44 billion contract as subsection 1 (84 km together, 48 months of execution plus 60 months of guarantee). The per-subsection split shown here is measured from OpenStreetMap geometry",
-        "noticeUrl": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-brasov-simeria-componenta-a-coridorului-rin-dunare-pentru-circulatia-trenurilor-cu-viteza-maxima-de-160-km-h-sectiunea-brasov-sighisoara-subsectiunile/",
         "totalMonths": 108
-      }
+      },
+      "note": {
+        "en": "Part of the same RON 3.44 billion contract as subsection 1 (84 km together, 48 months of execution plus 60 months of guarantee). The per-subsection split shown here is measured from OpenStreetMap geometry"
+      },
+      "sourceRefs": [
+        "cfr-ro-s3-cata-sighisoara",
+        "cfr-ro-s3-cata-sighisoara-2",
+        "cfr-ro"
+      ],
+      "geometryRef": "s3-cata-sighisoara"
     }
   ],
   "sources": [
     {
+      "id": "cfr-ro",
       "title": "CFR SA: Brașov–Sighișoara, subsecțiunile 1, 2 și 3",
       "url": "https://cfr.ro/reabilitarea-liniei-de-cale-ferata-brasov-simeria-componenta-a-coridorului-rin-dunare-pentru-circulatia-trenurilor-cu-viteza-maxima-de-160-km-h-sectiunea-brasov-sighisoara-subsectiunile/"
     },
     {
+      "id": "railwaypro-com",
       "title": "Railway PRO: Contract signed to modernise a new section on Sighișoara–Brașov line",
       "url": "https://www.railwaypro.com/wp/romania-signs-a-new-modernisation-contract-on-rhine-danube-corridor/"
     },
@@ -189,11 +229,13 @@
       "url": "https://www.openstreetmap.org/copyright"
     },
     {
-      "title": "cfr.ro: s3-cata-sighisoara (dates.expectedOpening)",
+      "id": "cfr-ro-s3-cata-sighisoara",
+      "title": "cfr.ro (dates.expectedOpening)",
       "url": "https://cfr.ro/wp-content/uploads/2026/07/Stadiu-implementare-Brasov-Sighisoara.pdf"
     },
     {
-      "title": "cfr.ro: s3-cata-sighisoara (dates.constructionStart)",
+      "id": "cfr-ro-s3-cata-sighisoara-2",
+      "title": "cfr.ro (dates.constructionStart)",
       "url": "https://cfr.ro/wp-content/uploads/2026/01/Bv-Sighisoara-S1si-S3-Prezentare.pdf"
     }
   ]

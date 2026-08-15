@@ -10,6 +10,9 @@
     "en": "Planned 281 km motorway across the Eastern Carpathians linking the A1 at Boița (Sibiu) with the A7 Moldavia Motorway at Răcăciuni (Bacău), via Făgăraș, Brașov, Sfântu Gheorghe, Târgu Secuiesc and the Oituz pass. The project is split into three sections: the 68 km Boița–Făgăraș section is under construction on all four lots, contracted in 2023–2024 to the Turkish builder Makyol; the 46 km Făgăraș–Brașov and the 162 km Brașov–Bacău sections are still in feasibility-study and design stage. Originally numbered A5, it was renamed A13 after being merged with the Sibiu–Făgăraș–Brașov project. After a 2025 route revision around the Hărman military testing range, roughly 12 km of tunnels are proposed on the mountain section.",
     "ro": "Autostradă planificată de 281 km peste Carpații Orientali, care va lega A1 la Boița (Sibiu) de Autostrada Moldovei A7 la Răcăciuni (Bacău), prin Făgăraș, Brașov, Sfântu Gheorghe, Târgu Secuiesc și Pasul Oituz. Proiectul este împărțit în trei tronsoane: tronsonul Boița–Făgăraș, de 68 km, este în execuție pe toate cele patru loturi, contractate în 2023–2024 cu antreprenorul turc Makyol; tronsoanele Făgăraș–Brașov (46 km) și Brașov–Bacău (162 km) sunt în faza de studiu de fezabilitate și proiectare. Inițial numerotată A5, a primit denumirea A13 după fuziunea cu proiectul Sibiu–Făgăraș–Brașov. După revizuirea traseului din 2025 în jurul poligonului militar de la Hărman, pe tronsonul montan sunt propuși circa 12 km de tuneluri."
   },
+  "corridors": [
+    "ten-t-core"
+  ],
   "lots": [
     {
       "id": "lot1-boita-marsa",
@@ -37,11 +40,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lot1-boita-marsa",
-      "contract": {
-        "noticeReference": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023–2024 after the feasibility study (December 2021) and technical design (January 2022) were approved",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A13_(Rom%C3%A2nia)"
-      }
+      "note": {
+        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023–2024 after the feasibility study (December 2021) and technical design (January 2022) were approved"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a13-rom-nia"
+      ],
+      "geometryRef": "lot1-boita-marsa"
     },
     {
       "id": "lot2-marsa-arpasu",
@@ -69,11 +74,13 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lot2-marsa-arpasu",
-      "contract": {
-        "noticeReference": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023–2024",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A13_(Rom%C3%A2nia)"
-      }
+      "note": {
+        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023–2024"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a13-rom-nia"
+      ],
+      "geometryRef": "lot2-marsa-arpasu"
     },
     {
       "id": "lot3-arpasu-sambata",
@@ -104,12 +111,16 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lot3-arpasu-sambata",
       "contract": {
-        "totalMonths": 48,
-        "noticeReference": "Design-and-build contract signed with Makyol on 20 September 2023, 48 months total duration",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A13_motorway_(Romania)"
-      }
+        "totalMonths": 48
+      },
+      "note": {
+        "en": "Design-and-build contract signed with Makyol on 20 September 2023, 48 months total duration"
+      },
+      "sourceRefs": [
+        "wikipedia-a13-motorway-romania"
+      ],
+      "geometryRef": "lot3-arpasu-sambata"
     },
     {
       "id": "lot4-sambata-fagaras",
@@ -140,12 +151,16 @@
           "role": "builder"
         }
       ],
-      "geometryRef": "lot4-sambata-fagaras",
       "contract": {
-        "totalMonths": 48,
-        "noticeReference": "Design-and-build contract signed with Makyol on 5 May 2023, 48 months total duration",
-        "noticeUrl": "https://en.wikipedia.org/wiki/A13_motorway_(Romania)"
-      }
+        "totalMonths": 48
+      },
+      "note": {
+        "en": "Design-and-build contract signed with Makyol on 5 May 2023, 48 months total duration"
+      },
+      "sourceRefs": [
+        "wikipedia-a13-motorway-romania"
+      ],
+      "geometryRef": "lot4-sambata-fagaras"
     },
     {
       "id": "fagaras-brasov",
@@ -155,11 +170,13 @@
       },
       "status": "planned",
       "lengthKm": 46,
-      "geometryRef": "fagaras-brasov",
-      "contract": {
-        "noticeReference": "Feasibility study and technical design tendered by CNAIR in 2024 and awarded to Search Corporation; the section will link the Sibiu–Făgăraș motorway to the Brașov metropolitan bypass and the A3",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A13_(Rom%C3%A2nia)"
-      }
+      "note": {
+        "en": "Feasibility study and technical design tendered by CNAIR in 2024 and awarded to Search Corporation; the section will link the Sibiu–Făgăraș motorway to the Brașov metropolitan bypass and the A3"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a13-rom-nia"
+      ],
+      "geometryRef": "fagaras-brasov"
     },
     {
       "id": "brasov-racaciuni",
@@ -169,19 +186,26 @@
       },
       "status": "planned",
       "lengthKm": 162,
+      "note": {
+        "en": "Feasibility study contract signed in 2024 with Consitrans S.R.L. under CNIR; crosses the Eastern Carpathians via the Oituz pass, with geotechnical drilling of over 10,000 linear metres carried out in 2025 and roughly 12 km of tunnels proposed"
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a13-rom-nia"
+      ],
       "geometryRef": "brasov-racaciuni",
-      "contract": {
-        "noticeReference": "Feasibility study contract signed in 2024 with Consitrans S.R.L. under CNIR; crosses the Eastern Carpathians via the Oituz pass, with geotechnical drilling of over 10,000 linear metres carried out in 2025 and roughly 12 km of tunnels proposed",
-        "noticeUrl": "https://ro.wikipedia.org/wiki/Autostrada_A13_(Rom%C3%A2nia)"
+      "profile": {
+        "terrain": "mountain"
       }
     }
   ],
   "sources": [
     {
+      "id": "wikipedia-ro-autostrada-a13-rom-nia",
       "title": "Wikipedia (ro): Autostrada A13 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A13_(Rom%C3%A2nia)"
     },
     {
+      "id": "wikipedia-a13-motorway-romania",
       "title": "Wikipedia: A13 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A13_motorway_(Romania)"
     },
