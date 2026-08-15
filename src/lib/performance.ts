@@ -2,10 +2,12 @@ import type { Deflator } from "./deflator";
 import type { Converter } from "./fx";
 import {
   COST_BASES,
+  crossProjectMetrics,
   type CostBasis,
   type GroupRanking,
   type LotMetric,
 } from "./rankings";
+import { isComparableMoney } from "./schema";
 import type { LocalizedString, Money } from "./schema";
 
 /**
@@ -52,11 +54,20 @@ export function bestCost(metric: LotMetric): { basis: CostBasis; money: Money } 
   return null;
 }
 
-/** Restates one recorded figure onto the common axis. */
+/**
+ * Restates one recorded figure onto the common axis.
+ *
+ * The predicate gates entry rather than being left to the tables: a figure
+ * with no price year fails the deflator anyway, but a programme-scope figure
+ * restates perfectly well and would land in the per-kilometre ranking as a
+ * corridor total. Refusing here keeps it visible as recorded and out of every
+ * comparison.
+ */
 export function toComparable(
   money: Money,
   { deflate, convert, priceYear }: CostOptions,
 ): Money | null {
+  if (!isComparableMoney(money)) return null;
   const real = deflate(money, priceYear);
   if (!real.ok) return null;
   const converted = convert(real.money);
@@ -175,18 +186,14 @@ export function projectCostRows(
 /**
  * Lots that have opened, newest first. The base list for the slip table.
  *
- * Shared track is dropped: the table lists sections across every project, so
- * a tunnel two metro lines run through would appear twice as the same
- * physical stretch of railway.
+ * A lot already counted elsewhere is dropped: the table lists sections
+ * across every project, so a tunnel two metro lines run through, or one
+ * bored inside an A1 section that measures its own length, would appear
+ * twice as the same physical stretch of line.
  */
 export function openedLots(metrics: LotMetric[]): LotMetric[] {
-  return metrics
-    .filter(
-      (m) =>
-        m.status === "opened" &&
-        m.openedMonth !== null &&
-        m.sharedWith === null,
-    )
+  return crossProjectMetrics(metrics)
+    .filter((m) => m.status === "opened" && m.openedMonth !== null)
     .sort((a, b) => b.openedMonth! - a.openedMonth!);
 }
 
