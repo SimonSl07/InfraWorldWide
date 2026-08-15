@@ -6,6 +6,7 @@ import {
   validatePhoto,
 } from "@/lib/feedback";
 import { createRateLimiter } from "@/lib/rate-limit";
+import { resolveClientKey } from "@/lib/client-key";
 
 /**
  * Feedback intake.
@@ -16,18 +17,41 @@ import { createRateLimiter } from "@/lib/rate-limit";
  * file; the dialog, its strings and its tests stay put.
  *
  * With no FEEDBACK_WEBHOOK_URL set the submission is logged and reported as
- * undelivered, so the form works end to end in local development.
+ * undelivered, so the form works end to end in local development. On a live
+ * deployment that same state is a misconfiguration, not a mode: accepting a
+ * report into a console log loses it, so production refuses instead.
  */
 
-const limiter = createRateLimiter({ limit: 5, windowMs: 10 * 60 * 1000 });
+const WINDOW_MS = 10 * 60 * 1000;
 
-function clientKey(request: Request): string {
-  const forwarded = request.headers.get("x-forwarded-for");
-  return forwarded?.split(",")[0]?.trim() || "unknown";
+/** Per-address allowance. */
+const perClient = createRateLimiter({ limit: 5, windowMs: WINDOW_MS });
+
+/**
+ * Callers we cannot tell apart, because the host set no address header. They
+ * share one allowance by necessity, so it is loose enough that a missing
+ * header does not disable the form for everyone while still bounding a flood.
+ */
+const anonymous = createRateLimiter({ limit: 60, windowMs: WINDOW_MS });
+
+/** How long to wait on the delivery target before giving up. */
+const WEBHOOK_TIMEOUT_MS = 5000;
+
+function withinRateLimit(request: Request, now: number): boolean {
+  const { key, trusted } = resolveClientKey(request.headers);
+
+  // An untrusted key comes from `x-forwarded-for`, which anything reaching
+  // this handler unproxied can set per request. Giving each forged value its
+  // own allowance is the same as having none, so untrusted callers share the
+  // anonymous bucket: a rotating header then spends one budget rather than
+  // minting a fresh one, while a genuine proxied caller behind a platform
+  // header keeps its own.
+  if (key === null || !trusted) return anonymous.check("anonymous", now);
+  return perClient.check(key, now);
 }
 
 export async function POST(request: Request) {
-  if (!limiter.check(clientKey(request), Date.now())) {
+  if (!withinRateLimit(request, Date.now())) {
     return NextResponse.json({ error: "rate_limited" }, { status: 429 });
   }
 
@@ -86,7 +110,11 @@ export async function POST(request: Request) {
 
   const webhookUrl = process.env.FEEDBACK_WEBHOOK_URL;
   if (!webhookUrl) {
-    console.info(`[feedback] no FEEDBACK_WEBHOOK_URL set — logging instead:\n${content}`);
+    if (process.env.NODE_ENV === "production") {
+      console.error("[feedback] FEEDBACK_WEBHOOK_URL is not set; refusing the report");
+      return NextResponse.json({ error: "not_configured" }, { status: 503 });
+    }
+    console.info(`[feedback] no FEEDBACK_WEBHOOK_URL set, logging instead:\n${content}`);
     return NextResponse.json({ ok: true, delivered: false });
   }
 
@@ -98,7 +126,13 @@ export async function POST(request: Request) {
   if (photo) payload.set("files[0]", photo, photo.name);
 
   try {
-    const res = await fetch(webhookUrl, { method: "POST", body: payload });
+    // Without a deadline a hanging target pins the function until the platform
+    // kills it, and the reporter watches a spinner for the whole time.
+    const res = await fetch(webhookUrl, {
+      method: "POST",
+      body: payload,
+      signal: AbortSignal.timeout(WEBHOOK_TIMEOUT_MS),
+    });
     if (!res.ok) {
       console.error(
         `[feedback] webhook responded ${res.status}: ${await res.text()}`,
