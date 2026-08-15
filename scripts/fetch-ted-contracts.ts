@@ -15,9 +15,14 @@
  *
  * TED data is published by the EU under a permissive reuse policy; keep the
  * publication number so any figure can be traced back to its notice.
+ *
+ * --diff compares the harvest against the committed --out file and writes
+ * nothing; --check does the same and exits 1 when they differ, so a scheduled
+ * job can raise a pull request instead of overwriting a reviewed harvest.
  */
 import fs from "node:fs";
 import path from "node:path";
+import { diffRecords, formatDiff, hasChanges } from "../src/lib/record-diff";
 
 const ENDPOINT = "https://api.ted.europa.eu/v3/notices/search";
 
@@ -33,9 +38,17 @@ const DEFAULT_CPV = [
   "45234110", // mainline rail
 ];
 
+/**
+ * TED rejects an unknown field name outright, so every name here is valid.
+ * Valid is not the same as populated: `contract-duration-period-lot` was
+ * requested here for a long time and is never filled in on any notice, which
+ * is why this harvest reported zero durations on notices that plainly have
+ * one. The field that carries it is `duration-period-value-lot`.
+ */
 const FIELDS = [
   "publication-number",
   "publication-date",
+  "notice-type",
   "notice-title",
   "title-lot",
   "buyer-name",
@@ -45,7 +58,7 @@ const FIELDS = [
   "total-value-cur",
   "result-value-lot",
   "result-value-cur-lot",
-  "contract-duration-period-lot",
+  "duration-period-value-lot",
   "duration-period-unit-lot",
   "contract-conclusion-date",
   "place-of-performance-city-lot",
@@ -91,6 +104,8 @@ function firstNumber(v: unknown): number | null {
 export interface TedAward {
   publicationNumber: string;
   publicationDate: string;
+  /** can-standard, can-modif, cn-standard, corr. Only awards carry a winner. */
+  noticeType: string;
   conclusionDate: string;
   title: string;
   lotTitles: string;
@@ -130,12 +145,34 @@ async function search(body: unknown, attempt = 0): Promise<TedPage> {
   return res.json();
 }
 
+/** Awards already committed to `file`, or none when it does not exist yet. */
+function readCommitted(file: string): TedAward[] {
+  if (!fs.existsSync(file)) return [];
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, "utf8")) as { awards?: TedAward[] };
+    return parsed.awards ?? [];
+  } catch {
+    return [];
+  }
+}
+
+/** Publication number is TED's own primary key, so it is the diff key too. */
+function byPublicationNumber(awards: TedAward[]): Record<string, TedAward> {
+  const out: Record<string, TedAward> = {};
+  for (const award of awards) {
+    if (award.publicationNumber) out[award.publicationNumber] = award;
+  }
+  return out;
+}
+
 async function main() {
   const country = (arg("--country") ?? "").toUpperCase();
+  const diffOnly = process.argv.includes("--diff");
+  const check = process.argv.includes("--check");
   const out = arg("--out");
   if (!country || !out) {
     console.error(
-      "usage: fetch-ted-contracts.ts --country BG --out data/ted/bg.json [--from 2008] [--cpv a,b] [--max 2000]",
+      "usage: fetch-ted-contracts.ts --country BG --out data/ted/bg.json [--from 2008] [--cpv a,b] [--max 2000] [--diff|--check]",
     );
     process.exit(1);
   }
@@ -175,6 +212,7 @@ async function main() {
       awards.push({
         publicationNumber: pub,
         publicationDate: String(text(n["publication-date"])).slice(0, 10),
+        noticeType: text(n["notice-type"]),
         conclusionDate: String(text(n["contract-conclusion-date"])).slice(0, 10),
         title: text(n["notice-title"]),
         lotTitles: text(n["title-lot"]).slice(0, 600),
@@ -182,7 +220,7 @@ async function main() {
         winners: text(n["winner-name"] ?? n["organisation-name-tenderer"]),
         value: firstNumber(n["total-value"] ?? n["result-value-lot"]),
         currency: text(n["total-value-cur"] ?? n["result-value-cur-lot"]),
-        durationValue: firstNumber(n["contract-duration-period-lot"]),
+        durationValue: firstNumber(n["duration-period-value-lot"]),
         durationUnit: text(n["duration-period-unit-lot"]),
         cities: text(n["place-of-performance-city-lot"]).slice(0, 300),
         cpv: text(n["classification-cpv"]).slice(0, 120),
@@ -197,6 +235,22 @@ async function main() {
   const withValue = awards.filter((a) => a.value !== null).length;
   const withDuration = awards.filter((a) => a.durationValue !== null).length;
   const withWinner = awards.filter((a) => a.winners).length;
+
+  if (diffOnly || check) {
+    const diff = diffRecords(byPublicationNumber(readCommitted(out)), byPublicationNumber(awards));
+    console.log(
+      formatDiff(diff, {
+        label: "award notice",
+        summaryFields: ["publicationDate", "title", "winners", "value"],
+        maxValueChars: 90,
+      }),
+    );
+    if (check && hasChanges(diff)) {
+      console.log(`TED differs from ${out}. Rerun without --check to rewrite it.`);
+      process.exit(1);
+    }
+    return;
+  }
 
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(

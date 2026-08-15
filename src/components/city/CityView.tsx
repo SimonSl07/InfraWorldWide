@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import CityMiniMap from "@/components/map/CityMiniMap";
-import { CATEGORY_COLORS } from "@/lib/map-style";
+import { categoryVar } from "@/lib/map-theme";
 import type { Category } from "@/lib/schema";
 
 /** One project's card, already localized and totalled by the page. */
@@ -60,7 +60,7 @@ export default function CityView({
     <>
       <section className="mt-10">
         <h2 className="text-lg font-semibold">{t("city.mapTitle")}</h2>
-        <p className="mt-1 max-w-3xl text-sm text-neutral-500">
+        <p className="mt-1 max-w-3xl text-sm text-ink-muted">
           {t("city.mapIntro")}
         </p>
 
@@ -75,19 +75,19 @@ export default function CityView({
         <div className="mt-2 flex min-h-6 items-center gap-3 text-sm">
           {selectedName ? (
             <>
-              <span className="text-neutral-600">
+              <span className="text-ink-soft">
                 {t("city.selected", { project: selectedName })}
               </span>
               <button
                 type="button"
                 onClick={() => handleSelect(null)}
-                className="text-neutral-500 underline underline-offset-2 hover:text-neutral-900"
+                className="text-ink-muted underline underline-offset-2 hover:text-ink"
               >
                 {t("city.clearSelection")}
               </button>
             </>
           ) : (
-            <span className="text-neutral-400">{t("city.selectHint")}</span>
+            <span className="text-ink-faint">{t("city.selectHint")}</span>
           )}
         </div>
       </section>
@@ -110,8 +110,8 @@ export default function CityView({
                   href={`/projects/${project.id}`}
                   className={`block h-full rounded-xl border p-5 transition-colors ${
                     on
-                      ? "border-neutral-900 bg-amber-50 ring-2 ring-amber-300"
-                      : "border-neutral-200 hover:border-neutral-900"
+                      ? "border-inverse bg-warn-soft ring-2 ring-amber-300"
+                      : "border-line hover:border-inverse"
                   }`}
                 >
                   <div className="flex items-baseline gap-2">
@@ -119,15 +119,15 @@ export default function CityView({
                       aria-hidden
                       className="inline-block h-1.5 w-4 shrink-0 rounded-full"
                       style={{
-                        backgroundColor: CATEGORY_COLORS[project.category],
+                        backgroundColor: categoryVar(project.category),
                       }}
                     />
                     <span className="font-semibold">{project.name}</span>
                   </div>
-                  <p className="mt-2 line-clamp-3 text-sm text-neutral-600">
+                  <p className="mt-2 line-clamp-3 text-sm text-ink-soft">
                     {project.description}
                   </p>
-                  <div className="mt-3 text-sm tabular-nums text-neutral-500">
+                  <div className="mt-3 text-sm tabular-nums text-ink-muted">
                     {t("city.openedOfTotal", {
                       opened: project.openedKm,
                       total: project.totalKm,

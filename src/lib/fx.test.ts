@@ -62,6 +62,15 @@ describe("createConverter", () => {
     });
   });
 
+  it("refuses a figure that carries no price year", () => {
+    // There is no "the rate" for a figure with no year, and the euro leg
+    // must not pass one through untouched either.
+    expect(convert({ amount: 100, currency: "RON" })).toEqual({
+      ok: false,
+      reason: "missing_price_year",
+    });
+  });
+
   it("refuses a year outside the series rather than guessing", () => {
     expect(convert(money(100, "RON", 1994))).toEqual({
       ok: false,

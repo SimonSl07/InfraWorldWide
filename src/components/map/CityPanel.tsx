@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
 import { formatDate, formatKm } from "@/lib/format";
 import type { City } from "@/lib/schema";
@@ -26,11 +27,11 @@ function Figure({
 }) {
   return (
     <div>
-      <div className="text-xs text-neutral-500">{label}</div>
+      <div className="text-xs text-ink-muted">{label}</div>
       <div className="text-lg font-bold tabular-nums">
         {value}
         {note && (
-          <span className="ml-1.5 text-xs font-normal text-neutral-400">
+          <span className="ml-1.5 text-xs font-normal text-ink-faint">
             {note}
           </span>
         )}
@@ -59,27 +60,20 @@ export default function CityPanel({
   const note = locale === "ro" && city.note?.ro ? city.note.ro : city.note?.en;
 
   return (
-    <aside className="absolute top-4 right-4 z-10 w-80 max-w-[calc(100%-2rem)] overflow-y-auto rounded-xl border border-neutral-200 bg-white/95 p-4 shadow-lg backdrop-blur max-h-[calc(100%-2rem)]">
-      <div className="flex items-start justify-between gap-2">
-        <div>
-          <div className="text-[10px] font-semibold uppercase tracking-wide text-neutral-400">
-            {t("city.panelKicker")}
-          </div>
-          <h2 className="text-xl font-bold leading-tight">{name}</h2>
-          <div className="mt-0.5 text-xs text-neutral-500">
-            <span aria-hidden className="mr-1">
-              {flagEmoji(city.country)}
-            </span>
-            {countryName(city.country, locale)}
-          </div>
+    <MapPanel onClose={onClose} labelledBy="map-panel-city-heading">
+      <div className="pr-8">
+        <div className="text-[10px] font-semibold uppercase tracking-wide text-ink-muted">
+          {t("city.panelKicker")}
         </div>
-        <button
-          onClick={onClose}
-          aria-label={t("country.close")}
-          className="shrink-0 rounded-full px-2 py-1 text-neutral-400 hover:bg-neutral-100 hover:text-neutral-900"
-        >
-          ×
-        </button>
+        <h2 id="map-panel-city-heading" className="text-xl font-bold leading-tight">
+          {name}
+        </h2>
+        <div className="mt-0.5 text-xs text-ink-muted">
+          <span aria-hidden className="mr-1">
+            {flagEmoji(city.country)}
+          </span>
+          {countryName(city.country, locale)}
+        </div>
       </div>
 
       <div className="mt-4 grid grid-cols-2 gap-3">
@@ -102,7 +96,7 @@ export default function CityPanel({
       </div>
 
       {marker && (
-        <div className="mt-4 rounded-lg bg-neutral-50 px-3 py-2 text-sm text-neutral-600">
+        <div className="mt-4 rounded-lg bg-surface-sunken px-3 py-2 text-sm text-ink-soft">
           {t("city.networkSummary", {
             projects: marker.projects,
             lots: marker.lots,
@@ -111,10 +105,10 @@ export default function CityPanel({
         </div>
       )}
 
-      <p className="mt-3 text-xs text-neutral-500">{t("city.notOnMainMap")}</p>
+      <p className="mt-3 text-xs text-ink-muted">{t("city.notOnMainMap")}</p>
 
       {note && (
-        <p className="mt-3 border-t border-neutral-100 pt-3 text-xs text-neutral-400">
+        <p className="mt-3 border-t border-line-soft pt-3 text-xs text-ink-faint">
           {note}
         </p>
       )}
@@ -122,7 +116,7 @@ export default function CityPanel({
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <Link
           href={`/cities/${cityKey}`}
-          className="rounded-lg bg-neutral-900 px-3 py-2 text-sm font-medium text-white hover:bg-neutral-700"
+          className="rounded-lg bg-inverse px-3 py-2 text-sm font-medium text-on-inverse hover:bg-inverse-soft"
         >
           {t("city.seeMore")}
         </Link>
@@ -131,12 +125,12 @@ export default function CityPanel({
             href={city.link}
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-neutral-500 underline underline-offset-2 hover:text-neutral-900"
+            className="text-sm text-ink-muted underline underline-offset-2 hover:text-ink"
           >
             {t("city.officialSite")}
           </a>
         )}
       </div>
-    </aside>
+    </MapPanel>
   );
 }

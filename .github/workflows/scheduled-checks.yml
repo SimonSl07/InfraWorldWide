@@ -1,0 +1,129 @@
+name: Scheduled data checks
+
+# Three things rot without anyone touching the repo: a cited source goes 404,
+# OpenStreetMap gains or changes a date tag, and a lot quietly misses the
+# opening date recorded for it. None of them is a reason to fail a build, so
+# this job never gates anything. It collects the three reports into one issue
+# and updates that issue only when the content actually changes, which keeps
+# the notification meaningful.
+
+on:
+  schedule:
+    # Mondays, 06:17 UTC. Off the hour, because everything is scheduled on it.
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: scheduled-data-checks
+  cancel-in-progress: false
+
+jobs:
+  checks:
+    name: Gap report, link check, OSM date diff
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Prepare
+        run: mkdir -p reports
+
+      # Never fails: every row is a research task, not a defect.
+      - name: Gap report
+        run: |
+          npx tsx scripts/report-gaps.ts --summary > reports/gaps.txt 2>&1 || true
+          npx tsx scripts/report-gaps.ts --format csv > reports/gaps.csv 2>&1 || true
+        env:
+          NODE_OPTIONS: --no-warnings
+
+      # Around 190 requests over the public internet, so this is here rather
+      # than in npm test. A flaky host must not turn into a red weekly run.
+      - name: Link check
+        run: npx tsx scripts/check-links.ts > reports/links.txt 2>&1 || true
+
+      # Compares OSM date tags against the committed snapshot. With no snapshot
+      # yet it says so and stops, which is also worth reading once.
+      - name: OSM date diff
+        run: |
+          for country in ro bg rs; do
+            echo "## $country"
+            npx tsx scripts/fetch-osm-dates.ts --country "$country" --diff 2>&1 || true
+          done > reports/osm.txt
+
+      - name: Assemble the report
+        id: report
+        run: |
+          {
+            echo "Weekly check of the curated data. Nothing here fails a build."
+            echo
+            echo "## Data gaps"
+            echo
+            echo '```'
+            cat reports/gaps.txt
+            echo '```'
+            echo
+            echo "## Cited sources"
+            echo
+            echo '```'
+            tail -c 4000 reports/links.txt
+            echo '```'
+            echo
+            echo "## OpenStreetMap date tags"
+            echo
+            echo '```'
+            tail -c 4000 reports/osm.txt
+            echo '```'
+            echo
+            echo "Regenerate locally with \`npm run data:gaps\`, \`npm run data:links\` and \`npx tsx scripts/fetch-osm-dates.ts --country ro --diff\`."
+          } > body.md
+          # Fingerprint the content, so an unchanged week updates nothing.
+          FINGERPRINT=$(sha256sum body.md | cut -c1-16)
+          echo "" >> body.md
+          echo "<!-- fingerprint: $FINGERPRINT -->" >> body.md
+          echo "fingerprint=$FINGERPRINT" >> "$GITHUB_OUTPUT"
+          cat body.md >> "$GITHUB_STEP_SUMMARY"
+
+      # The full gap CSV is too long for an issue body but is the thing anyone
+      # picking up a research task actually wants.
+      - name: Keep the full reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-reports
+          path: reports/
+          retention-days: 90
+
+      - name: Open or update the tracking issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TITLE: "Weekly data check: gaps, dead links, OSM dates"
+          LABEL: data-watch
+          FINGERPRINT: ${{ steps.report.outputs.fingerprint }}
+        run: |
+          gh label create "$LABEL" \
+            --description "Automated weekly data checks" --color 0e8a16 2>/dev/null || true
+
+          NUMBER=$(gh issue list --label "$LABEL" --state open --limit 1 --json number --jq '.[0].number // empty')
+
+          if [ -z "$NUMBER" ]; then
+            gh issue create --title "$TITLE" --label "$LABEL" --body-file body.md
+            exit 0
+          fi
+
+          if gh issue view "$NUMBER" --json body --jq .body | grep -q "fingerprint: $FINGERPRINT"; then
+            echo "Issue #$NUMBER already carries this exact report. Leaving it alone."
+            exit 0
+          fi
+
+          gh issue edit "$NUMBER" --body-file body.md
+          gh issue comment "$NUMBER" \
+            --body "The weekly checks changed. Updated the issue body from run ${{ github.run_id }}."

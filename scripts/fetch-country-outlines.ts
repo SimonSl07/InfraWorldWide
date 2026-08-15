@@ -15,10 +15,18 @@
  * Usage:
  *   tsx scripts/fetch-country-outlines.ts            # countries with projects
  *   tsx scripts/fetch-country-outlines.ts ro bg rs   # explicit list
+ *   tsx scripts/fetch-country-outlines.ts --diff     # compare, write nothing
+ *   tsx scripts/fetch-country-outlines.ts --check    # exit 1 if anything moved
+ *
+ * --diff and --check exist so a scheduled job can notice Natural Earth
+ * redrawing a border and raise a pull request, instead of a rerun silently
+ * replacing reviewed geometry.
  */
+import crypto from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { diffRecords, formatDiff, hasChanges } from "../src/lib/record-diff";
 import { collectErrors } from "./validate-data";
 
 const SOURCE_URL =
@@ -116,8 +124,75 @@ async function loadSource(): Promise<{ features: NeFeature[] }> {
   return JSON.parse(text);
 }
 
+/** Outline as one flat, comparable record. */
+type OutlineRecord = Record<string, unknown> & {
+  name: string;
+  source: string;
+  geometry: string;
+  parts: number;
+  positions: number;
+  bbox: string;
+  digest: string;
+};
+
+/**
+ * Reduces an outline to something a diff can print. Coordinates themselves are
+ * useless in a log, so the shape is summarised and the full geometry is
+ * fingerprinted: a single moved vertex changes the digest and nothing else.
+ */
+function outlineRecord(collection: {
+  features?: Array<{
+    properties?: Record<string, unknown> | null;
+    geometry?: { type?: string; coordinates?: unknown } | null;
+  }>;
+}): OutlineRecord | null {
+  const feature = collection.features?.[0];
+  if (!feature?.geometry) return null;
+  const rings: Ring[] =
+    feature.geometry.type === "Polygon"
+      ? (feature.geometry.coordinates as Ring[])
+      : (feature.geometry.coordinates as Ring[][]).flat();
+
+  let west = Infinity, south = Infinity, east = -Infinity, north = -Infinity;
+  let positions = 0;
+  for (const ring of rings) {
+    for (const [lng, lat] of ring) {
+      positions++;
+      west = Math.min(west, lng);
+      east = Math.max(east, lng);
+      south = Math.min(south, lat);
+      north = Math.max(north, lat);
+    }
+  }
+
+  return {
+    name: String(feature.properties?.name ?? ""),
+    source: String(feature.properties?.source ?? ""),
+    geometry: String(feature.geometry.type ?? ""),
+    parts: rings.length,
+    positions,
+    bbox: [west, south, east, north].map((n) => n.toFixed(3)).join(","),
+    digest: crypto
+      .createHash("sha1")
+      .update(JSON.stringify(feature.geometry))
+      .digest("hex")
+      .slice(0, 12),
+  };
+}
+
+function readOutline(file: string): OutlineRecord | null {
+  if (!fs.existsSync(file)) return null;
+  try {
+    return outlineRecord(JSON.parse(fs.readFileSync(file, "utf8")));
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   const root = process.cwd();
+  const diffOnly = process.argv.includes("--diff");
+  const check = process.argv.includes("--check");
   const explicit = process.argv.slice(2).filter((a) => !a.startsWith("-"));
   const wanted =
     explicit.length > 0
@@ -139,9 +214,12 @@ async function main() {
   }
 
   const outDir = path.join(root, "data/geo/countries");
-  fs.mkdirSync(outDir, { recursive: true });
+  if (!diffOnly && !check) fs.mkdirSync(outDir, { recursive: true });
 
   const missing: string[] = [];
+  const committed: Record<string, OutlineRecord> = {};
+  const fetched: Record<string, OutlineRecord> = {};
+
   for (const code of wanted) {
     const feature = byCode.get(code);
     if (!feature) {
@@ -163,9 +241,38 @@ async function main() {
       ],
     };
     const file = path.join(outDir, `${code}.geojson`);
+
+    if (diffOnly || check) {
+      const before = readOutline(file);
+      if (before) committed[code] = before;
+      const after = outlineRecord(out);
+      if (after) fetched[code] = after;
+      continue;
+    }
+
     fs.writeFileSync(file, JSON.stringify(out));
     const kb = Math.round(fs.statSync(file).size / 1024);
     console.log(`✓ ${path.relative(root, file)} (${kb} KB)`);
+  }
+
+  if (diffOnly || check) {
+    const diff = diffRecords(committed, fetched);
+    console.log(
+      formatDiff(diff, {
+        label: "country outline",
+        summaryFields: ["name", "positions", "digest"],
+      }),
+    );
+    if (missing.length > 0) {
+      console.log(`! no Natural Earth feature for: ${missing.join(", ")}`);
+    }
+    if (check && (hasChanges(diff) || missing.length > 0)) {
+      console.log(
+        "Natural Earth differs from data/geo/countries. Rerun without --check to rewrite, and review the geometry before committing.",
+      );
+      process.exit(1);
+    }
+    return;
   }
 
   if (missing.length > 0) {

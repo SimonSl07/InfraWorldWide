@@ -155,6 +155,34 @@ export function buildSelectionFilter(
 }
 
 /**
+ * "Effectively opened" in a given month: actually opened, or, when looking
+ * past today, already past its expected opening.
+ *
+ * Exported because the year-over-year diff has to draw exactly the lots its
+ * readout counts, and two hand-written copies of this rule would drift.
+ */
+export function effectivelyOpenedFilter(
+  month: number,
+  nowMonth: number,
+): FilterSpecification {
+  const openedByMonth = [
+    "all",
+    ["!=", ["get", "openedMonth"], null],
+    ["<=", ["get", "openedMonth"], month],
+  ] as unknown as FilterSpecification;
+  if (month <= nowMonth) return openedByMonth;
+  return [
+    "any",
+    openedByMonth,
+    [
+      "all",
+      ["!=", ["get", "expectedOpeningMonth"], null],
+      ["<=", ["get", "expectedOpeningMonth"], month],
+    ],
+  ] as unknown as FilterSpecification;
+}
+
+/**
  * Layer filters for one month of the timeline.
  *
  * `month` and `nowMonth` are absolute month indices (year*12 + month-1), so
@@ -171,25 +199,7 @@ export function buildMonthFilters(
   const buildingCategories = buildCategoryFilter(selection, "under_construction");
   const notStartedSelection = buildSelectionFilter(selection);
 
-  // "Effectively opened" in the selected month: actually opened — or, when
-  // viewing the future, past its expected opening month.
-  const openedByMonth = [
-    "all",
-    ["!=", ["get", "openedMonth"], null],
-    ["<=", ["get", "openedMonth"], month],
-  ] as unknown as FilterSpecification;
-  const effectivelyOpened =
-    month > nowMonth
-      ? ([
-          "any",
-          openedByMonth,
-          [
-            "all",
-            ["!=", ["get", "expectedOpeningMonth"], null],
-            ["<=", ["get", "expectedOpeningMonth"], month],
-          ],
-        ] as unknown as FilterSpecification)
-      : openedByMonth;
+  const effectivelyOpened = effectivelyOpenedFilter(month, nowMonth);
 
   const opened = [
     "all",
@@ -357,6 +367,132 @@ export function parseCountryParam(raw: string | null): string | null {
 }
 
 /**
+ * Parse a ?city=ro-bucharest param against the cities that exist.
+ *
+ * Checked against the data for the same reason as ?c=: a city that is not
+ * there never mounts its panel, so there would be no way to clear it.
+ */
+export function parseCityParam(
+  raw: string | null,
+  known: Iterable<string>,
+): string | null {
+  if (!raw) return null;
+  const key = raw.toLowerCase();
+  return new Set(known).has(key) ? key : null;
+}
+
+/* ── Lot references ───────────────────────────────────────────────────── */
+
+/**
+ * A lot id is unique inside its project, not across the dataset: three
+ * different Danube crossings each own a lot called "main-bridge". A bare id
+ * in ?sel= therefore names up to three features, and resolving it by taking
+ * the first match opened the wrong bridge for two of them.
+ */
+export interface LotRef {
+  /** Null for a legacy bare id, which names a lot without saying whose. */
+  projectId: string | null;
+  lotId: string;
+}
+
+/** Separator chosen because URLSearchParams leaves "." unencoded. */
+const LOT_REF_SEPARATOR = ".";
+
+/** A lot reference as it appears in ?sel=. */
+export function formatLotRef(ref: {
+  projectId: string;
+  lotId: string;
+}): string {
+  return `${ref.projectId}${LOT_REF_SEPARATOR}${ref.lotId}`;
+}
+
+/**
+ * Parse a ?sel= value. Accepts both the qualified form and the bare lot id
+ * older links carry, which resolveLotRef then refuses if it is ambiguous.
+ */
+export function parseLotRef(raw: string | null): LotRef | null {
+  if (!raw) return null;
+  const parts = raw.split(LOT_REF_SEPARATOR);
+  if (parts.some((p) => p.length === 0)) return null;
+  if (parts.length === 1) return { projectId: null, lotId: parts[0] };
+  if (parts.length === 2) return { projectId: parts[0], lotId: parts[1] };
+  return null;
+}
+
+/**
+ * The single lot a reference names, or null.
+ *
+ * An unqualified reference resolves only when exactly one lot carries the
+ * id. Where several do, nothing is selected: a link that opens no panel is
+ * a visible failure, while a link that opens the wrong bridge is not.
+ */
+export function resolveLotRef<T extends { projectId: string; lotId: string }>(
+  candidates: readonly T[],
+  ref: LotRef | null,
+): T | null {
+  if (!ref) return null;
+  if (ref.projectId !== null) {
+    return (
+      candidates.find(
+        (c) => c.projectId === ref.projectId && c.lotId === ref.lotId,
+      ) ?? null
+    );
+  }
+  const matches = candidates.filter((c) => c.lotId === ref.lotId);
+  return matches.length === 1 ? matches[0] : null;
+}
+
+/* ── Camera ───────────────────────────────────────────────────────────── */
+
+/** Where the map is looking. */
+export interface MapView {
+  longitude: number;
+  latitude: number;
+  zoom: number;
+}
+
+/**
+ * Decimals kept in the URL. Five on a coordinate is about a metre, which is
+ * finer than anyone can aim a camera; two on the zoom is below one visible
+ * step. Rounding also stops a pan of a millimetre from rewriting the URL.
+ */
+const VIEW_COORD_DP = 5;
+const VIEW_ZOOM_DP = 2;
+
+function round(value: number, decimals: number): number {
+  const factor = 10 ** decimals;
+  return Math.round(value * factor) / factor;
+}
+
+/** The camera as it appears in ?v=, rounded. */
+export function formatViewParam(view: MapView): string {
+  return [
+    round(view.longitude, VIEW_COORD_DP),
+    round(view.latitude, VIEW_COORD_DP),
+    round(view.zoom, VIEW_ZOOM_DP),
+  ].join(",");
+}
+
+/**
+ * Parse a ?v=lng,lat,zoom param.
+ *
+ * A shared link is untrusted input, and unlike a bad ?cat= an impossible
+ * camera does not degrade: MapLibre raises on a latitude outside ±90 and a
+ * zoom outside its range, taking the whole page down. Out of range is null.
+ */
+export function parseViewParam(raw: string | null): MapView | null {
+  if (!raw) return null;
+  const parts = raw.split(",");
+  if (parts.length !== 3) return null;
+  const [longitude, latitude, zoom] = parts.map(Number);
+  if (![longitude, latitude, zoom].every(Number.isFinite)) return null;
+  if (longitude < -180 || longitude > 180) return null;
+  if (latitude < -90 || latitude > 90) return null;
+  if (zoom < 0 || zoom > 24) return null;
+  return { longitude, latitude, zoom };
+}
+
+/**
  * Parse a ?compare=ro,bg param for the country comparison.
  *
  * A shared link is untrusted input: codes not in `known` are dropped rather
@@ -383,11 +519,22 @@ export interface MapParams {
   selection: CategoryStatusSelection;
   /** The month the URL omits, i.e. what the map opens on. */
   defaultMonth: number;
-  selectedLotId?: string | null;
+  /** Qualified with its project, because lot ids repeat across projects. */
+  selectedLot?: { projectId: string; lotId: string } | null;
   /** ISO 3166-1 alpha-2, lowercase. */
   selectedCountry?: string | null;
+  /** Key into data/cities.json, e.g. "ro-bucharest". */
+  selectedCity?: string | null;
   speedIndex?: number;
   defaultSpeedIndex?: number;
+  /** Where the camera is now. */
+  view?: MapView | null;
+  /** The camera the map opens on, which the URL leaves out. */
+  defaultView?: MapView | null;
+  /** Basemap id, already normalised to null when it is the default. */
+  basemap?: string | null;
+  /** Baseline month of the before/after comparison; null when it is off. */
+  compareFrom?: number | null;
 }
 
 /** Serialize map state back to a query string (empty string when default). */
@@ -395,10 +542,15 @@ export function serializeMapParams({
   month,
   selection,
   defaultMonth,
-  selectedLotId,
+  selectedLot,
   selectedCountry,
+  selectedCity,
   speedIndex,
   defaultSpeedIndex,
+  view,
+  defaultView,
+  basemap,
+  compareFrom,
 }: MapParams): string {
   const params = new URLSearchParams();
   if (month !== defaultMonth) params.set("t", formatMonthParam(month));
@@ -411,10 +563,26 @@ export function serializeMapParams({
     .map(([c, s]) => `${c}:${orderStatuses(s).join(".")}`)
     .sort();
   if (partial.length > 0) params.set("st", partial.join(","));
-  if (selectedLotId) params.set("sel", selectedLotId);
-  // A lot and a country are never selected at once — they share the panel —
-  // so the two params cannot both appear.
+  // A lot, a country and a city are never selected at once (they share the
+  // panel), so at most one of these params can appear.
+  if (selectedLot) params.set("sel", formatLotRef(selectedLot));
   else if (selectedCountry) params.set("c", selectedCountry);
+  else if (selectedCity) params.set("city", selectedCity);
+  // Without the camera, a link to one interchange reopened on the whole of
+  // Romania. Compared after rounding, so a nudge below URL precision is not
+  // movement.
+  if (view) {
+    const encoded = formatViewParam(view);
+    if (!defaultView || encoded !== formatViewParam(defaultView)) {
+      params.set("v", encoded);
+    }
+  }
+  if (basemap) params.set("bm", basemap);
+  // The comparison is the shareable part of the before/after view: without
+  // it a link opens the wipe on a default baseline nobody chose.
+  if (compareFrom !== undefined && compareFrom !== null) {
+    params.set("cmp", formatMonthParam(compareFrom));
+  }
   if (
     speedIndex !== undefined &&
     defaultSpeedIndex !== undefined &&

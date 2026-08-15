@@ -26,12 +26,12 @@ export default function Sparkline({
 
   return (
     <div
-      className={`flex h-8 items-end gap-px border-b border-neutral-200 ${className}`}
+      className={`flex h-8 items-end gap-px border-b border-line ${className}`}
     >
       {buckets.map((b) => (
         <div
           key={b.decade}
-          className="flex-1 rounded-t-sm bg-neutral-700"
+          className="flex-1 rounded-t-sm bg-inverse-soft"
           // Nonzero decades keep a visible floor so a small one still reads
           // as "something happened here".
           style={{ height: b.km === 0 ? 0 : `${Math.max(6, (b.km / max) * 100)}%` }}

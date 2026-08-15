@@ -11,6 +11,7 @@ import { createContractorResolver } from "@/lib/contractors";
 import { currentMonth } from "@/lib/slip";
 import {
   collectLotMetrics,
+  crossProjectMetrics,
   coverage,
   rankByContractor,
   rankByCountry,
@@ -25,13 +26,14 @@ import {
   projectCostRows,
 } from "@/lib/performance";
 import { formatMonth } from "@/lib/format";
+import { createLocalizer } from "@/lib/localized";
+import { pageMetadata } from "@/lib/page-metadata";
 import PerformanceTables, {
   type CostRowData,
   type GroupRow,
   type ProjectCostRowData,
   type SlipRow,
 } from "@/components/performance/PerformanceTables";
-import type { LocalizedString } from "@/lib/schema";
 
 /** A firm needs a track record, not one anecdote, to be ranked against others. */
 const MIN_CONTRACTOR_LOTS = 2;
@@ -42,8 +44,14 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const t = await getTranslations({ locale: lang, namespace: "rankings" });
-  return { title: t("title"), description: t("intro") };
+  const t = await getTranslations({ locale: lang });
+  return pageMetadata({
+    locale: lang,
+    path: "/rankings",
+    title: t("rankings.title"),
+    description: t("rankings.intro"),
+    siteName: t("site.name"),
+  });
 }
 
 export default async function RankingsPage({
@@ -53,7 +61,7 @@ export default async function RankingsPage({
   setRequestLocale(lang);
   const t = await getTranslations("rankings");
 
-  const name = (s: LocalizedString) => (lang === "ro" && s.ro ? s.ro : s.en);
+  const name = createLocalizer(lang);
 
   const projects = getProjects();
   const deflators = getDeflators();
@@ -63,9 +71,13 @@ export default async function RankingsPage({
   const priceYear = commonLatestYear(deflators) ?? deflators.baseYear;
   const nowMonth = currentMonth(new Date());
   const deflate = createDeflator(deflators);
+  const convert = createConverter(fx);
 
   const metrics = collectLotMetrics(projects, {
     deflate,
+    // Lets an overrun be measured when the estimate and the outturn were
+    // recorded in different currencies, which the comparison used to refuse.
+    convert,
     priceYear,
     resolve: createContractorResolver(getContractors()),
     nowMonth,
@@ -73,11 +85,23 @@ export default async function RankingsPage({
 
   const costOptions = {
     deflate,
-    convert: createConverter(fx),
+    convert,
     priceYear,
   };
 
   const cov = coverage(metrics);
+
+  /**
+   * Every table on this page ranks sections against each other across the
+   * whole dataset, so lots whose works another project already measures are
+   * dropped: a tunnel bored inside an A1 section, or track two metro lines
+   * both run on. Cost and kilometres leave together, never one without the
+   * other, or the cost per kilometre of everything around them shifts.
+   *
+   * The group rankings apply the same rule internally; this is the list the
+   * per-section tables are built from.
+   */
+  const crossProject = crossProjectMetrics(metrics);
 
   /* ── Serialize into plain rows for the client tables ─────────────────── */
 
@@ -97,7 +121,7 @@ export default async function RankingsPage({
   }));
 
   const costRows: CostRowData[] = orderDescNullsLast(
-    lotCostRows(metrics, costOptions),
+    lotCostRows(crossProject, costOptions),
     (r) => r.perKm,
   ).map((r) => ({
     key: lotKey(r.metric),
@@ -114,7 +138,7 @@ export default async function RankingsPage({
   }));
 
   const projectRows: ProjectCostRowData[] = orderDescNullsLast(
-    projectCostRows(metrics, costOptions),
+    projectCostRows(crossProject, costOptions),
     (r) => r.perKm,
   ).map((r) => ({
     key: r.projectId,
@@ -156,9 +180,9 @@ export default async function RankingsPage({
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
       <h1 className="text-3xl font-bold">{t("title")}</h1>
-      <p className="mt-2 max-w-3xl text-neutral-600">{t("intro")}</p>
+      <p className="mt-2 max-w-3xl text-ink-soft">{t("intro")}</p>
 
-      <div className="mt-4 max-w-3xl rounded-md border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-600">
+      <div className="mt-4 max-w-3xl rounded-md border border-line bg-surface-sunken px-4 py-3 text-sm text-ink-soft">
         <p>
           {t("coverage", {
             lots: cov.lots,
@@ -168,8 +192,8 @@ export default async function RankingsPage({
             ongoingSlip: cov.slip.ongoing,
           })}
         </p>
-        <p className="mt-2 text-neutral-500">{t("coverageGap")}</p>
-        <p className="mt-2 text-xs text-neutral-400">
+        <p className="mt-2 text-ink-muted">{t("coverageGap")}</p>
+        <p className="mt-2 text-xs text-ink-faint">
           {t("priceYear", { year: priceYear })}{" "}
           {t("asOf", { month: formatMonth(nowMonth, lang) })}
         </p>
@@ -187,10 +211,10 @@ export default async function RankingsPage({
 
       <section className="mt-12">
         <h2 className="text-lg font-semibold">{t("methodologyTitle")}</h2>
-        <div className="mt-4 max-w-3xl space-y-3 text-sm text-neutral-600">
+        <div className="mt-4 max-w-3xl space-y-3 text-sm text-ink-soft">
           <p>{t("methodologyCosts")}</p>
           <p>{t("methodologySchedule")}</p>
-          <p className="text-neutral-500">
+          <p className="text-ink-muted">
             {t("methodologySource")}:{" "}
             {[...deflators.sources, ...fx.sources].map((s, i) => (
               <span key={s.url}>
@@ -199,7 +223,7 @@ export default async function RankingsPage({
                   href={s.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="underline underline-offset-2 hover:text-neutral-900"
+                  className="underline underline-offset-2 hover:text-ink"
                 >
                   {s.title}
                 </a>

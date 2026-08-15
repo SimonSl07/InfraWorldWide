@@ -34,7 +34,27 @@ Open http://localhost:3000 (redirects to /en).
 | `npm test` | Vitest unit + data-integrity tests |
 | `npm run data:validate` | validate `data/projects/**` against the zod schema + geometry cross-checks |
 | `npm run data:build` | validate, then emit `public/data/*.json` (gitignored build artifacts) |
+| `npm run data:schema` | regenerate `schema/*.schema.json` from `src/lib/schema.ts` (CI fails if these drift) |
+| `npm run data:gaps` | what the data is still missing, as a table, CSV or JSON |
+| `npm run data:links` | check every cited URL still resolves |
+| `npm run data:indices` | refetch the price indices and exchange rates, and diff them |
 | `npx tsx scripts/fetch-osm-geometry.ts …` | bootstrap route geometry from OpenStreetMap (see below) |
+
+Contributing a project or a country: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
+### Editor validation
+
+`npm run data:schema` writes JSON Schemas to `schema/`. Point a data file at one with a `$schema` key and an editor with JSON language support validates it as you type, including the enums:
+
+```json
+{
+  "$schema": "../../../schema/project.schema.json",
+  "id": "ro-a7",
+  "country": "ro"
+}
+```
+
+CI regenerates the schemas and fails on a diff, so a change to `src/lib/schema.ts` that skips this step is caught rather than leaving editors checking contributions against a stale shape.
 
 ## Data model
 
@@ -74,6 +94,8 @@ Two reference tables put costs on one axis, and the order they are applied matte
 
 Converting first would apply a rate from one year to prices from another, mixing inflation and currency movement into one unattributable number. Either step may refuse (a currency with no published rates, a price year outside the series); the cost then shows as recorded but drops out of any ranking rather than being sorted against figures that mean something different. `src/lib/performance.test.ts` pins the ordering.
 
+`data/deflators-construction.json` is a second, alternative price basis: Eurostat's construction cost index rather than consumer prices. It is the closer fit for civil works and the difference is not academic. 1000 RON of 2013 restated into 2022 prices is 1303 on HICP and **1779** on the construction basis, because construction input costs ran far ahead of consumer prices in 2021-23, so a real-terms overrun spanning that window is understated by the consumer-price table. It buys that at the price of coverage: **BGN, EUR and RON only** (Eurostat returns zeroes for Serbia and publishes no US series), it stops at 2022/2023 where HICP reaches 2025, and the published series is residential building work because no civil-engineering index exists for these countries. Both tables have the same shape, so `src/lib/deflator.ts` consumes either.
+
 ### Contract terms and expected openings
 
 A lot may carry a `contract` block recording the public award: `designMonths`, `executionMonths`, `totalMonths`, `guaranteeMonths`, `value`, plus `noticeReference` and `noticeUrl` linking the award notice or the report documenting it.
@@ -110,12 +132,13 @@ Full notice XML (with `VAL_ESTIMATED_TOTAL`) is at `https://ted.europa.eu/en/not
 | **Romanian Wikipedia** | CC BY-SA | Per-lot contractors, contract months, award dates, cost breakdowns — consistently richer than English | **Primary for facts** (cite the article) |
 | **Wikidata** (SPARQL) | **CC0 — no restrictions** | Route-level length, inception year | Reusable but very sparse: no costs, no per-lot data |
 | **Natural Earth** 1:50m admin-0 | **Public domain — no attribution required** | Country outlines: the map's click targets and dimming mask | In use via `scripts/fetch-country-outlines.ts`. Borders are generalised, so they drift from the OSM basemap above ~z8 — the rendered outline fades out before that shows |
-| **CIA World Factbook** (via [factbook.json](https://github.com/factbook/factbook.json)) | Public domain | Country area, on one methodology worldwide | In use for `data/countries.json`. **Retired February 2026** — cia.gov no longer serves country pages, and Wayback captured only the page shell, so cite the factbook.json conversion of the final 2025 edition |
+| **CIA World Factbook** (via [factbook.json](https://github.com/factbook/factbook.json)) | Public domain | Country area, on one methodology worldwide | In use for `data/countries.json`. **Retired February 2026**, so country area now has **no live source**: cia.gov no longer serves country pages and Wayback captured only the page shell. `factbook.json` still carries the final 2025 edition and is what to cite. A new country's area comes from there or from its own statistics office, and the two are not on one methodology |
 | **Eurostat** (`demo_gind`) | Free reuse (2011/833/EU) | Population on 1 January, incl. enlargement countries like Serbia | In use for `data/countries.json`. Publishes **no area figure for Serbia**, which is why area comes from the Factbook throughout |
 | **Eurostat** (`nama_10r_3gdp`) | Free reuse (2011/833/EU) | GDP per inhabitant by NUTS 3 region | In use for `data/cities.json`. A NUTS 3 region is not always the city: `RO321` is exactly the Bucharest municipality, but `BG411` is Stolichna municipality, ~8% more people than Sofia town. Watch out for `BG412`, which is the rural Sofia *Province*, not the city |
-| **Eurostat** (`prc_hicp_aind`, `INX_A_AVG`) | Free reuse (2011/833/EU) | HICP annual average index, 2015 = 100 | In use for `data/deflators.json`, all five series |
+| **Eurostat** (`prc_hicp_aind`, `INX_A_AVG`) | Free reuse (2011/833/EU) | HICP annual average index, 2015 = 100 | In use for `data/deflators.json`, all five series. Eurostat marks this dataset **discontinued in favour of `prc_hicp_ainr`**; it still updates, but that is where `scripts/refresh-indices.ts` will have to point. Also carries a **US** series, which is *not* the one in use: it is an HICP and the committed USD series is the BLS CPI-U, 106.80 against 109.2 for 2020, so the two must never be spliced |
+| **Eurostat** (`sts_copi_a`, `COST`, `I15`) | Free reuse (2011/833/EU) | Construction cost index, 2015 = 100: a second price basis for civil works | In use for `data/deflators-construction.json`. It matters: 1000 RON of 2013 restated into 2022 prices is 1303 on HICP and **1779** on this basis, because construction input costs ran far ahead of consumer prices in 2021-23. Two deliberate limits. The published series is **residential building work (CPA F41001)**, since Eurostat publishes no civil-engineering cost index for these countries. It covers **BGN, EUR and RON only**: Eurostat returns zeroes for Serbia and there is no US series. It also stops at 2022/2023 where HICP reaches 2025 |
 | **ECB** euro reference rates (`EXR/A.<CUR>.EUR.SP00.A`) | Free reuse with attribution | Annual average exchange rates against the euro | In use for `data/fx.json`. Publishes **no RSD series** (404), so the dinar comes from Eurostat `ert_bil_eur_a` instead; the two agree to 4 dp on every year for RON and USD, which is how that substitution was checked. RON is published already redenominated, so pre-2005 years need **no** ROL conversion |
-| **TED** (`api.ted.europa.eu`) | Free reuse (EU Commission decision 2011/833/EU) | Contract durations/values — **eForms notices only (≈2024+)** | Useful for future awards, near-useless for 2018–23 Romanian motorways |
+| **TED** (`api.ted.europa.eu`) | Free reuse (EU Commission decision 2011/833/EU) | Contract durations, values and winners — **eForms notices only (2024+)** | Harvest with `scripts/fetch-ted-contracts.ts`, match with `scripts/match-ted-lots.ts`. The eForms cutover is a cliff, not a slope: of 900 Romanian notices from 2024 on, **893 carry a duration and 835 a winner**, while all 1200 from 2018-2022 carry neither and are titled only `Romania-Iași: Bridge renewal construction work`, with no project name to match on. Bulgaria's whole 2018-2022 harvest is the same, so it matches nothing at all |
 | `e-licitatie.ro` | — | National procurement | No open API (404) |
 | `opentender.eu` | — | Procurement analytics | Blocks automated requests (403) |
 | `data.gov.ro` | Open | Romanian government data | No CNAIR procurement dataset |
@@ -136,7 +159,7 @@ npx tsx scripts/fetch-osm-geometry.ts \
   --section fetesti-cernavoda:27.36,44.38:27.99,44.34
 ```
 
-Fetches ways for the route from Overpass (with mirror failover/retries), then slices one feature per `--section` (`ref:fromLng,fromLat:toLng,toLat`) via **chainage projection** (`scripts/route-projection.ts`): vertices are projected onto a reference polyline built from the section endpoints, binned by distance along the route, and averaged — this collapses dual carriageways into a clean forward-only centerline and avoids zigzag slicing bugs. Give sections in route order; add `--via lng,lat` for big bends between section endpoints and `--max-lateral` (default 0.5°) to exclude strays. `--also-construction` includes `highway=construction` ways; `--dry-run` inspects without writing; `--highway trunk` works for non-motorway routes; `--cache file` / `--from-cache file` saves raw ways so you can iterate on waypoints offline (Overpass is often busy).
+Fetches ways for the route from Overpass (with mirror failover/retries), then slices one feature per `--section` (`ref:fromLng,fromLat:toLng,toLat`) via **chainage projection** (`scripts/route-projection.ts`): vertices are projected onto a reference polyline built from the section endpoints, binned by distance along the route, and averaged — this collapses dual carriageways into a clean forward-only centerline and avoids zigzag slicing bugs. Give sections in route order; add `--via lng,lat` for big bends between section endpoints and `--max-lateral` (default 0.5°) to exclude strays. **Bulgarian motorways are tagged `ref="A 3"` with a space**, so `--ref A3` returns zero ways there and `--ref "A 3"` is what works; Romanian refs have no space. A run that fetches nothing is almost always this rather than a bad bounding box. `--also-construction` includes `highway=construction` ways; `--dry-run` inspects without writing; `--highway trunk` works for non-motorway routes; `--cache file` / `--from-cache file` saves raw ways so you can iterate on waypoints offline (Overpass is often busy).
 
 OSM-derived geometry is **ODbL-licensed**: keep "© OpenStreetMap contributors" attribution (see the site footer) and add the OSM source entry to the project's `sources`.
 
@@ -147,10 +170,128 @@ OSM-derived geometry is **ODbL-licensed**: keep "© OpenStreetMap contributors" 
 3. Write `data/projects/<cc>/<slug>.json` with `en` (and ideally `ro`) strings and `sources`.
 4. `npm run data:validate && npm test`.
 
+### Adding a country
+
+The research is the work. A country is dozens of projects, each needing dates, lengths, costs and contractors from cited sources, and none of that can be generated. What *can* be stated in advance is the fixed cost of entry: which reference series have to exist before a single cost in that country can be compared with the rest.
+
+**Order of operations.** Reference tables first, because a project whose costs cannot be restated is half a project:
+
+1. **Deflator series** in `data/deflators.json`, keyed by currency, from Eurostat `prc_hicp_aind`. Skip for a euro country, which already has one.
+2. **FX series** in `data/fx.json`, from the ECB where it publishes the currency, otherwise Eurostat `ert_bil_eur_a`. Skip for a euro country.
+3. **Country row** in `data/countries.json`: population from Eurostat `demo_gind`, area from `factbook.json` (see the source table: the Factbook is retired, so area has no live source).
+4. **Outline**: `npx tsx scripts/fetch-country-outlines.ts <cc>`.
+5. Then the projects, and `npm run data:validate` will tell you what is missing.
+
+**Cost of entry, checked against the live endpoints on 2026-08-14** rather than assumed:
+
+| Country | Deflator | FX | Cost of entry |
+| --- | --- | --- | --- |
+| Greece, Slovenia, Slovakia | euro | euro | **None.** HICP runs 1996-2025 for each. Greece looks the strongest first move: dense Wikipedia coverage, and `GRC` is already in the ISO3 map in `fetch-ted-contracts.ts` |
+| Croatia | euro, but see below | ECB `HRK` 2000-2022 | **One FX series.** Croatia joined the euro in 2023, so a cost from before that is in kuna and needs the HRK rate; the ECB publishes it for exactly 2000-2022 |
+| Montenegro | HICP **2015-2025 only** | euro | **None**, but nothing before 2015 can be restated. Montenegro uses the euro without being in the euro area |
+| Hungary, Poland, Czechia | HICP 1996-2025 | ECB `HUF`/`PLN`/`CZK` 1999-2025 | **One deflator + one FX series each.** Both published, both complete |
+| North Macedonia | HICP **2005-2025** | Eurostat `MKD` 1999-2025 | One of each. The ECB publishes no denar rate, so FX comes from `ert_bil_eur_a`, the same substitution already documented for the dinar |
+| Albania | HICP **2016-2025 only** | Eurostat `ALL` 1999-2025 | One of each, but a ten-year index is a real limit: most of Albania's motorway building predates it |
+| **Bosnia and Herzegovina** | **none published** | Eurostat `BAM` 1999-2025 | **Blocked.** `prc_hicp_aind` returns an empty dataset for `geo=BA`, so a Bosnian cost could be converted to euro but never restated into another year's prices. It would show as recorded and drop out of every ranking, exactly like Serbia's outturn costs do today |
+
+Two caveats that apply to the euro countries above and are not visible from the table:
+
+- **The deflator table is keyed by currency, not by country**, so every euro cost is restated on the euro-area index. Greece is where that stops being a rounding error: Greek prices *fell* 2.5% from 2013 to 2016 while euro-area prices rose 0.9%, and over 2010-2025 the two indices diverge by 11.8% (Greece ×1.2365, euro area ×1.3823). A Greek 2010 cost restated to 2025 on the euro-area index is overstated by that much. Adding Greece properly means either accepting the error and saying so, or keying the series by country as well as currency, which is a schema change.
+- **Croatia needs an HRK deflator too**, not just the FX series: a 2013 kuna cost has to be restated within kuna before it is converted. Croatia's HICP (`geo=HR`, 1998-2025) is one series covering both currency eras, so it is one fetch, filed under `HRK`.
+
+Everything in that table came from two requests, and both are worth repeating before committing to a country, since coverage changes:
+
+```bash
+curl -s "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_aind?format=JSON&unit=INX_A_AVG&coicop=CP00&sinceTimePeriod=1996&geo=MK&geo=AL&geo=BA"
+curl -s "https://data-api.ecb.europa.eu/service/data/EXR/A.HRK+HUF+PLN.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2026"
+```
+
+## Keeping the data honest
+
+Five scripts that report rather than gate. None of them runs in `npm test` (they all touch the network, except the gap report), and none of them writes without being asked.
+
+| Command | What it does |
+| --- | --- |
+| `npx tsx scripts/report-gaps.ts` | Lists what the data is missing: costs, dates, contractors, funding, Romanian strings, price years outside the reference tables, implausible cost-per-km figures, expected openings that have passed |
+| `npx tsx scripts/check-links.ts` | Requests every URL cited in `data/projects/**` and reports the dead ones |
+| `npx tsx scripts/refresh-indices.ts` | Refetches `data/deflators.json` and `data/fx.json` from Eurostat and the ECB, and diffs them against what is committed |
+| `npx tsx scripts/fetch-osm-dates.ts --country ro --diff` | Compares OSM date tags against the last snapshot taken |
+| `npx tsx scripts/match-ted-lots.ts --awards data/ted/ro.json` | Matches a TED harvest to lots and emits a review CSV |
+
+`.github/workflows/scheduled-checks.yml` runs the first, second and fourth weekly and keeps a single issue up to date. It never fails a run: it opens or edits one issue, and skips even that when the report is identical to last week's.
+
+### Gap report
+
+```bash
+npx tsx scripts/report-gaps.ts                          # table, worst first
+npx tsx scripts/report-gaps.ts --summary                # counts per rule
+npx tsx scripts/report-gaps.ts --format csv > gaps.csv  # the old data-gaps.csv columns, plus an id
+npx tsx scripts/report-gaps.ts --format json --priority high
+npx tsx scripts/report-gaps.ts --include-known          # settled dead ends too
+```
+
+`--priority` is a floor: `--priority medium` reports medium and high. The exit code is 0 whatever it finds, since every row is a research task and not a defect; only a malformed command line exits 2. The rules are pure functions in `src/lib/gaps.ts`, unit-tested there, and the script is a thin CLI over them.
+
+Cost-per-km sanity bands are per category, in millions of euro per km of the cost's own price year. A railway project with a `city` key is banded as a metro: tunnelled urban metro runs 20 to 250 M EUR/km where a mainline rehabilitation runs 2 to 10, and one band for both would flag every mainline section.
+
+**`data/known-gaps.json`** holds gaps researched to a dead end, each with an id, a reason and the date it was settled. The report hides them and prints a count; `--include-known` shows them. An id is `<country>/<project>/<lot>/<code>`, where a whole segment may be `*`, so `rs/*/*/opened-no-actual` covers every Serbian lot at once. That entry exists because Serbian outturn costs are genuinely unobtainable: `PayedAmount` is null on every public row of the procurement portal, and motorway and rail contracts run under intergovernmental agreements exempt from the Public Procurement Act, so they never enter it. Patterns that stop matching anything are reported, so a stale entry cannot sit there suppressing a gap that has since reappeared.
+
+### Diffing a fetch against what is committed
+
+`fetch-country-outlines.ts`, `fetch-ted-contracts.ts` and `fetch-osm-dates.ts` each take `--diff` (print added, removed and changed records, write nothing) and `--check` (the same, exiting 1 on any difference). A scheduled job can then raise a pull request instead of overwriting reviewed data.
+
+```bash
+npx tsx scripts/fetch-country-outlines.ts --check          # has Natural Earth moved a border?
+npx tsx scripts/fetch-ted-contracts.ts --country BG --out data/ted/bg.json --diff
+npx tsx scripts/fetch-osm-dates.ts --country ro --write    # snapshot the current tags
+npx tsx scripts/fetch-osm-dates.ts --country ro --check    # has a mapper changed one since?
+```
+
+Country outlines are compared by shape summary and a geometry digest, not coordinate by coordinate. TED awards are keyed on the publication number. OSM dates are keyed on route, tag and value, and need a snapshot in `data/osm-dates/<cc>.json` first; that snapshot is a record of what OSM said, not data the site reads, and dates still get reviewed against a second source before they land in `data/projects`.
+
+### Matching TED notices to lots
+
+```bash
+npx tsx scripts/fetch-ted-contracts.ts --country RO --out data/ted/ro.json --from 2024
+npx tsx scripts/match-ted-lots.ts --awards data/ted/ro.json --format table --min high
+npx tsx scripts/match-ted-lots.ts --awards data/ted/ro.json > ted-review.csv
+```
+
+The harvester's header has always called matching "a separate, reviewable step"; this is it. It emits candidates with a confidence, the place names behind the match and the fields the notice would fill in, and **writes nothing to `data/projects`**. A wrong match puts a cited figure on the wrong road, and nothing downstream would catch it.
+
+Matching works on place names, because a notice title carries the same toponyms as a lot name: "AUTOSTRADA PLOIESTI-BUZAU LOT 1 Dumbrava-Mizil" against a lot called "Dumbrava (A3) – Mizil". Three things keep that honest:
+
+- **Names are weighted by how many lots use them.** Lot names carry their corridor in brackets ("Poiana tunnel (A1 Pitești–Sibiu lot 3)"), so unweighted, every notice about the corridor outranks the one about the lot.
+- **`high` requires a name no other lot uses.** Otherwise an A3 award reading "Autostrăzii Brașov – Târgu Mureș – Cluj – Oradea" comes back as a confident match for the A8 lot "Târgu Mureș – Ditrău", a different motorway.
+- **The CPV label in the title gates the category.** Every TED title is `<country> – <CPV label> – <national title>`, and that label is the one part in English on every notice. It is what separates "Construction work for highways, roads" from "Road-repair works" on a corridor where both name the same towns, and it rejects a railway notice offered to a motorway lot.
+
+**Expect little, and only from 2024 on.** The eForms cutover is a cliff, not a slope. Of 900 Romanian notices published from 2024, 893 carry a contract duration and 835 a winner. All 1200 harvested from 2018-2022 carry neither, and are titled only `Romania-Iași: Bridge renewal construction work`. The project is not named anywhere in the notice, so there is nothing to match on and no matcher can fix it. Bulgaria's entire 2018-2022 harvest is the same shape and matches nothing at all. This is why the contract terms in `data/projects` come from press and CNAIR reports.
+
+Durations need the same care. Nearly half the notices state a number with no unit and a few state days, so `contractedMonths` passes an unstated unit through flagged uncertain and **refuses days outright** rather than dividing by thirty: a duration is the input to every slip figure.
+
+### Refreshing the price indices and exchange rates
+
+```bash
+npx tsx scripts/refresh-indices.ts            # dry run: prints the diff
+npx tsx scripts/refresh-indices.ts --write    # applies it, then run npm run data:validate
+npx tsx scripts/refresh-indices.ts --only fx
+```
+
+Both files carry their query URLs in their own `sources` blocks, and this script issues exactly those: Eurostat `prc_hicp_aind` (`INX_A_AVG`, `CP00`) per reference area for the deflators, ECB `EXR/A.<CUR>.EUR.SP00.A` for the rates, and Eurostat `ert_bil_eur_a` for RSD, which the ECB does not publish. Values are rounded to the precision each table is kept at (2 decimals for the indices, 4 for the rates) before comparison, so a refetch does not churn the files.
+
+Two things it refuses to do, both of which a naive refetch would get wrong:
+
+- **The USD deflator is not refetched.** The committed series is the US CPI-U from BLS rebased to 2015 = 100. Eurostat does publish a US HICP, but it is a different index (106.80 against 109.2 for 2020), and splicing one onto the other would corrupt every dollar comparison.
+- **Deliberately absent years stay absent.** The dinar's 1999 and 2000 rates are a frozen administered 11.735 RSD/EUR, not a rate anything could be converted at, and were excluded on purpose; the script drops them again and says so.
+
+An annual average only exists once the year is over, so nothing can produce a 2026 figure during 2026. The costs priced in 2026 stay unrestatable until early 2027 whatever this script does, which is what the gap report's `no-deflator` and `no-fx` rows are recording. Note also that Eurostat marks `prc_hicp_aind` discontinued in favour of `prc_hicp_ainr`; the series still updates, but that replacement is where this will have to point eventually.
+
 ## Testing
 
 Vitest covers the pure logic (`src/lib/*.test.ts`: schema rules, map filters, URL params, formatting, stats, timeline, filtering, geo helpers), the geo algorithms (`scripts/fetch-osm-geometry.test.ts`), and a data-integrity test that re-validates all committed seed data. CI should run `npm test && npm run build`.
 
 ## Deployment
 
-Static-friendly Next.js build; deploy to Vercel with no configuration (`prebuild` regenerates `public/data`). Map tiles come from OpenFreeMap (free, no API key) — swap `OPENFREEMAP_STYLE` in `src/lib/map-style.ts` to change basemaps.
+**This needs a server runtime.** It is not a static export: `src/middleware.ts` rewrites locale-prefixed routes and `src/app/api/feedback/route.ts` is a request handler, so `output: "export"` fails the build. Pages are still statically generated (SSG) and the data is baked in at build time; what cannot be dropped is the Node runtime in front of them.
+
+Deploy to Vercel with no configuration (`prebuild` regenerates `public/data`). Any host that runs the Next.js Node server works the same way. Map tiles come from OpenFreeMap (free, no API key) — swap `OPENFREEMAP_STYLE` in `src/lib/map-style.ts` to change basemaps.
