@@ -286,6 +286,42 @@ describe("rankByCountry", () => {
   it("has no contractor kind", () => {
     expect(group("ro").kind).toBeUndefined();
   });
+
+  it("drops lots another project already measures", () => {
+    // Both markers mean the same thing for a total spanning projects: the
+    // kilometres are already inside another project's figures. Counting
+    // them again is the 38 km the homepage used to overstate.
+    const extra = collectLotMetrics(
+      [
+        {
+          ...projects[0],
+          id: "ro-tunnels",
+          lots: [
+            {
+              id: "poiana",
+              name: { en: "Poiana tunnel" },
+              status: "under_construction",
+              lengthKm: 1.7,
+              geometryRef: "poiana",
+              partOf: "ro-a1",
+            },
+            {
+              id: "through-run",
+              name: { en: "Shared tunnel" },
+              status: "under_construction",
+              lengthKm: 8.67,
+              geometryRef: "through-run",
+              sharedWith: "ro-metro-m1",
+            },
+          ],
+        },
+      ],
+      opts,
+    );
+    const ro = rankByCountry([...metrics, ...extra]).find((g) => g.key === "ro")!;
+    expect(ro.lots).toBe(2);
+    expect(ro.km).toBe(30);
+  });
 });
 
 describe("sortGroups", () => {
