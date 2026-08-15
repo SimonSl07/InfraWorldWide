@@ -23,12 +23,41 @@ jobs:
       - name: Validate data
         run: npm run data:validate
 
+      # Seconds, and it catches what would otherwise only surface at the very
+      # end of a full build.
+      - name: Typecheck
+        run: npm run typecheck
+
       - name: Test
         run: npm test
 
       - name: Lint
         run: npm run lint
 
+      # Without this every run is a cold build.
+      - name: Restore Next.js build cache
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-next-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('src/**', 'data/**', 'scripts/**') }}
+          restore-keys: |
+            ${{ runner.os }}-next-${{ hashFiles('**/package-lock.json') }}-
+
       # Runs data:build via prebuild, so this also covers the build pipeline.
       - name: Build
         run: npm run build
+
+      # The committed JSON Schemas are generated from src/lib/schema.ts. If a
+      # schema change lands without regenerating them, editors validate
+      # contributions against a stale shape.
+      - name: JSON Schema is up to date
+        run: |
+          npm run data:schema
+          # --porcelain, not `git diff`: a regenerated file that is new rather
+          # than changed is untracked, and `git diff` does not see untracked
+          # files, so the check would pass while the output was stale.
+          if [ -n "$(git status --porcelain schema/)" ]; then
+            echo "schema/ is stale or incomplete. Run: npm run data:schema"
+            git status --porcelain schema/
+            exit 1
+          fi
