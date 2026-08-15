@@ -23,7 +23,7 @@ const PHOTO_MB = MAX_PHOTO_BYTES / (1024 * 1024);
  * existing callers need no change.
  */
 export default function FeedbackDialog({
-  triggerClassName = "hover:text-neutral-900",
+  triggerClassName = "hover:text-ink",
   triggerLabel,
 }: {
   triggerClassName?: string;
@@ -110,9 +110,11 @@ export default function FeedbackDialog({
     }
   }
 
+  // A border colour change is not a focus indicator. The ring comes from the
+  // :focus-visible rule in globals.css, so nothing suppresses it here.
   const fieldClass =
-    "w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm focus:border-neutral-900 focus:outline-none";
-  const labelClass = "block text-sm font-medium text-neutral-800";
+    "w-full rounded-lg border border-line-strong bg-surface px-3 py-2 text-sm focus:border-inverse";
+  const labelClass = "block text-sm font-medium text-ink";
 
   return (
     <>
@@ -131,7 +133,7 @@ export default function FeedbackDialog({
           if (e.target === dialogRef.current) close();
         }}
         aria-labelledby="feedback-title"
-        className="m-auto w-[min(32rem,calc(100vw-2rem))] rounded-2xl p-0 text-neutral-900 backdrop:bg-neutral-900/40 backdrop:backdrop-blur-sm"
+        className="m-auto w-[min(32rem,calc(100vw-2rem))] rounded-2xl p-0 text-ink backdrop:bg-black/50 backdrop:backdrop-blur-sm"
       >
         {/* Wrapper keeps padding off the dialog itself, so the backdrop click
             test above only ever matches the true backdrop. */}
@@ -141,13 +143,13 @@ export default function FeedbackDialog({
               <h2 id="feedback-title" className="text-lg font-semibold">
                 {t("title")}
               </h2>
-              <p className="mt-1 text-sm text-neutral-500">{t("description")}</p>
+              <p className="mt-1 text-sm text-ink-muted">{t("description")}</p>
             </div>
             <button
               type="button"
               onClick={close}
               aria-label={t("close")}
-              className="-mr-2 -mt-1 rounded-lg px-2 py-1 text-xl leading-none text-neutral-400 hover:bg-neutral-100 hover:text-neutral-900"
+              className="-mr-2 -mt-1 rounded-lg px-2 py-1 text-xl leading-none text-ink-faint hover:bg-surface-raised hover:text-ink"
             >
               ×
             </button>
@@ -156,11 +158,11 @@ export default function FeedbackDialog({
           {status === "sent" ? (
             <div className="mt-6">
               <p className="font-medium">{t("successTitle")}</p>
-              <p className="mt-1 text-sm text-neutral-600">{t("successBody")}</p>
+              <p className="mt-1 text-sm text-ink-soft">{t("successBody")}</p>
               <button
                 type="button"
                 onClick={close}
-                className="mt-6 w-full rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-700"
+                className="mt-6 w-full rounded-lg bg-inverse px-4 py-2 text-sm font-medium text-on-inverse hover:bg-inverse-soft"
               >
                 {t("close")}
               </button>
@@ -204,7 +206,7 @@ export default function FeedbackDialog({
                   placeholder={t("emailPlaceholder")}
                   className={`${fieldClass} mt-1.5`}
                 />
-                <p className="mt-1 text-xs text-neutral-500">{t("emailHint")}</p>
+                <p className="mt-1 text-xs text-ink-muted">{t("emailHint")}</p>
               </div>
 
               <div>
@@ -226,7 +228,7 @@ export default function FeedbackDialog({
               <div>
                 <label htmlFor="feedback-photo" className={labelClass}>
                   {t("photoLabel")}{" "}
-                  <span className="font-normal text-neutral-500">
+                  <span className="font-normal text-ink-muted">
                     ({t("optional")})
                   </span>
                 </label>
@@ -236,16 +238,19 @@ export default function FeedbackDialog({
                   type="file"
                   accept={ALLOWED_PHOTO_TYPES.join(",")}
                   onChange={handlePhotoChange}
-                  className="mt-1.5 block w-full text-sm text-neutral-600 file:mr-3 file:rounded-lg file:border-0 file:bg-neutral-100 file:px-3 file:py-2 file:text-sm file:font-medium hover:file:bg-neutral-200"
+                  className="mt-1.5 block w-full text-sm text-ink-soft file:mr-3 file:rounded-lg file:border-0 file:bg-surface-raised file:px-3 file:py-2 file:text-sm file:font-medium hover:file:bg-line"
                 />
                 {photoError ? (
-                  <p className="mt-1.5 text-xs text-red-600">
+                  // Announced, not just coloured: the rejection happens after
+                  // the file dialog closes, so nothing else tells a screen
+                  // reader the attachment was dropped.
+                  <p role="alert" className="mt-1.5 text-xs text-bad">
                     {photoError === "size"
                       ? t("errorPhotoSize", { size: PHOTO_MB })
                       : t("errorPhotoType")}
                   </p>
                 ) : (
-                  <p className="mt-1.5 text-xs text-neutral-500">
+                  <p className="mt-1.5 text-xs text-ink-muted">
                     {t("photoHint", { size: PHOTO_MB })}
                   </p>
                 )}
@@ -257,9 +262,9 @@ export default function FeedbackDialog({
                     <img
                       src={photo.url}
                       alt={photo.file.name}
-                      className="h-16 w-16 rounded-lg border border-neutral-200 object-cover"
+                      className="h-16 w-16 rounded-lg border border-line object-cover"
                     />
-                    <span className="min-w-0 flex-1 truncate text-xs text-neutral-500">
+                    <span className="min-w-0 flex-1 truncate text-xs text-ink-muted">
                       {photo.file.name}
                     </span>
                   </div>
@@ -278,7 +283,7 @@ export default function FeedbackDialog({
               />
 
               {status === "error" && (
-                <p role="alert" className="text-sm text-red-600">
+                <p role="alert" className="text-sm text-bad">
                   {t("errorGeneric")}
                 </p>
               )}
@@ -287,14 +292,14 @@ export default function FeedbackDialog({
                 <button
                   type="button"
                   onClick={close}
-                  className="rounded-lg px-4 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-100"
+                  className="rounded-lg px-4 py-2 text-sm font-medium text-ink-soft hover:bg-surface-raised"
                 >
                   {t("cancel")}
                 </button>
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-700 disabled:opacity-50"
+                  className="rounded-lg bg-inverse px-4 py-2 text-sm font-medium text-on-inverse hover:bg-inverse-soft disabled:opacity-50"
                 >
                   {status === "sending" ? t("sending") : t("submit")}
                 </button>

@@ -9,6 +9,7 @@ import { formatMoney } from "./format";
 export function contractSummaryParts(
   contract: Contract,
   t: (key: string, values?: Record<string, string | number>) => string,
+  locale = "en",
 ): string[] {
   const parts: string[] = [];
   if (contract.designMonths) {
@@ -28,7 +29,9 @@ export function contractSummaryParts(
     );
   }
   if (contract.value) {
-    parts.push(`${t("project.contractValue")} ${formatMoney(contract.value)}`);
+    parts.push(
+      `${t("project.contractValue")} ${formatMoney(contract.value, locale)}`,
+    );
   }
   return parts;
 }

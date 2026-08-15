@@ -37,39 +37,51 @@ export default function TimeSlider({
   onSpeedIndexChange,
 }: TimeSliderProps) {
   const t = useTranslations("map");
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const speed = speedFromIndex(speedIndex);
 
+  // The tick reads the current month and callback through refs so neither is
+  // an effect dependency. Listing `month` tore the interval down and rebuilt
+  // it on every advance, degenerating into a drifting chain of timeouts.
+  // The refs are written in an effect, not during render.
+  const monthRef = useRef(month);
+  const onMonthChangeRef = useRef(onMonthChange);
+
   useEffect(() => {
-    if (!playing) {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-      return;
-    }
+    monthRef.current = month;
+    onMonthChangeRef.current = onMonthChange;
+  }, [month, onMonthChange]);
+
+  useEffect(() => {
+    if (!playing) return;
+
     const { stepMonths, intervalMs } = playbackTick(speed);
-    intervalRef.current = setInterval(() => {
+    const id = setInterval(() => {
+      const current = monthRef.current;
       // Land exactly on `max` before wrapping, so the last month is never
       // skipped by a multi-month step.
-      onMonthChange(month >= max ? min : Math.min(max, month + stepMonths));
+      onMonthChangeRef.current(
+        current >= max ? min : Math.min(max, current + stepMonths),
+      );
     }, intervalMs);
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [playing, month, min, max, speed, onMonthChange]);
+    return () => clearInterval(id);
+  }, [playing, min, max, speed]);
 
   const label = formatMonth(month, locale);
   const bound = (i: number) => String(fromMonthIndex(i).year);
 
   return (
-    <div className="flex items-center gap-3 bg-white/95 backdrop-blur rounded-xl shadow-lg px-4 py-3 border border-neutral-200">
+    // Below `sm` the speed control drops to a second line rather than pushing
+    // the whole bar past the viewport, which is what clipped it on a phone.
+    <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 bg-surface/95 backdrop-blur rounded-xl shadow-lg px-3 py-3 sm:px-4 border border-line">
       <button
         onClick={() => onPlayingChange(!playing)}
         aria-label={playing ? t("pause") : t("play")}
-        className="w-9 h-9 flex items-center justify-center rounded-full bg-neutral-900 text-white hover:bg-neutral-700 shrink-0"
+        className="w-11 h-11 sm:w-9 sm:h-9 flex items-center justify-center rounded-full bg-inverse text-on-inverse hover:bg-inverse-soft shrink-0"
       >
         {playing ? "⏸" : "▶"}
       </button>
 
-      <div className="flex flex-col gap-1 min-w-0">
+      <div className="flex flex-col gap-1 min-w-0 flex-1 sm:flex-none">
         <input
           type="range"
           min={min}
@@ -77,22 +89,22 @@ export default function TimeSlider({
           step={1}
           value={month}
           onChange={(e) => onMonthChange(Number(e.target.value))}
-          className="w-40 sm:w-64 md:w-96 accent-neutral-900"
+          className="w-full sm:w-64 md:w-96 accent-inverse"
           aria-label={t("month")}
           aria-valuetext={label}
         />
-        <div className="flex justify-between text-[10px] text-neutral-400">
+        <div className="flex justify-between text-[10px] text-ink-muted">
           <span>{bound(min)}</span>
           <span>{bound(max)}</span>
         </div>
       </div>
 
-      <div className="text-lg font-bold tabular-nums w-28 text-center shrink-0">
+      <div className="text-base sm:text-lg font-bold tabular-nums w-24 sm:w-28 text-center shrink-0">
         {label}
       </div>
 
       {/* playback speed, in months advanced per second */}
-      <div className="flex flex-col gap-1 shrink-0 border-l border-neutral-200 pl-3">
+      <div className="flex flex-col gap-1 shrink-0 sm:border-l sm:border-line sm:pl-3">
         <input
           type="range"
           min={0}
@@ -100,11 +112,11 @@ export default function TimeSlider({
           step={1}
           value={speedIndex}
           onChange={(e) => onSpeedIndexChange(Number(e.target.value))}
-          className="w-20 sm:w-24 accent-neutral-900"
+          className="w-20 sm:w-24 accent-inverse"
           aria-label={t("speed")}
           title={t("speedValue", { speed: formatSpeed(speed) })}
         />
-        <div className="text-[10px] text-neutral-500 text-center tabular-nums">
+        <div className="text-[10px] text-ink-muted text-center tabular-nums">
           {t("speedValue", { speed: formatSpeed(speed) })}
         </div>
       </div>
