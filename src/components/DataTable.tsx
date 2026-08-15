@@ -20,6 +20,12 @@ export interface Column<T> {
   sortValue?: (row: T) => SortValue;
   /** Right-aligns and tabular-numbers the column. */
   numeric?: boolean;
+  /**
+   * Renders this column's cells as `<th scope="row">`. Set it on the column
+   * that names the row, so a screen reader announces "Sebeș–Turda, slip, +14
+   * mo" instead of reading a bare number with no subject.
+   */
+  rowHeader?: boolean;
   cell: (row: T) => React.ReactNode;
 }
 
@@ -31,18 +37,24 @@ interface DataTableProps<T> {
   emptyMessage: string;
   /** Shown under the table to explain what the default ordering means. */
   footnote?: string;
+  /**
+   * Accessible name for the table, rendered as a visually hidden `<caption>`.
+   * Also names the scroll region, which is what makes the horizontal overflow
+   * reachable by keyboard.
+   */
+  caption?: string;
 }
 
 function SortArrow({ direction }: { direction: "asc" | "desc" | null }) {
   if (direction === null) {
     return (
-      <span aria-hidden className="text-neutral-300 group-hover:text-neutral-400">
+      <span aria-hidden className="text-ink-faint group-hover:text-ink-soft">
         ↕
       </span>
     );
   }
   return (
-    <span aria-hidden className="text-neutral-900">
+    <span aria-hidden className="text-ink">
       {direction === "desc" ? "↓" : "↑"}
     </span>
   );
@@ -66,6 +78,7 @@ export default function DataTable<T>({
   perPage = 10,
   emptyMessage,
   footnote,
+  caption,
 }: DataTableProps<T>) {
   const t = useTranslations("table");
   const locale = useLocale();
@@ -92,7 +105,7 @@ export default function DataTable<T>({
 
   if (rows.length === 0) {
     return (
-      <p className="mt-2 max-w-3xl rounded-md bg-neutral-50 px-3 py-2 text-sm text-neutral-500">
+      <p className="mt-2 max-w-3xl rounded-md bg-surface-sunken px-3 py-2 text-sm text-ink-muted">
         {emptyMessage}
       </p>
     );
@@ -100,16 +113,25 @@ export default function DataTable<T>({
 
   return (
     <div className="mt-2">
-      <div className="overflow-x-auto">
+      {/* tabIndex makes the overflow scrollable without a mouse: the columns
+          past the right edge were unreachable by keyboard. */}
+      <div
+        className="overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+        tabIndex={0}
+        role={caption ? "region" : undefined}
+        aria-label={caption}
+      >
         <table className="w-full min-w-max text-sm">
+          {caption && <caption className="sr-only">{caption}</caption>}
           <thead>
-            <tr className="border-b border-neutral-200 text-xs uppercase tracking-wide text-neutral-500">
+            <tr className="border-b border-line text-xs uppercase tracking-wide text-ink-muted">
               {columns.map((column) => {
                 const active = sort?.columnId === column.id;
                 const direction = active ? sort.direction : null;
                 return (
                   <th
                     key={column.id}
+                    scope="col"
                     aria-sort={
                       active
                         ? direction === "desc"
@@ -130,9 +152,9 @@ export default function DataTable<T>({
                         // which is just the bare column name and does not say
                         // what pressing it does.
                         aria-label={`${column.header}: ${t("sortHint")}`}
-                        className={`group inline-flex items-center gap-1 uppercase tracking-wide hover:text-neutral-900 ${
+                        className={`group inline-flex items-center gap-1 uppercase tracking-wide hover:text-ink ${
                           column.numeric ? "flex-row-reverse" : ""
-                        } ${active ? "text-neutral-900" : ""}`}
+                        } ${active ? "text-ink" : ""}`}
                       >
                         <SortArrow direction={direction} />
                         {column.header}
@@ -145,26 +167,34 @@ export default function DataTable<T>({
               })}
             </tr>
           </thead>
-          <tbody className="divide-y divide-neutral-100">
+          <tbody className="divide-y divide-line-soft">
             {visible.map((row) => (
               <tr key={rowKey(row)}>
-                {columns.map((column) => (
-                  <td
-                    key={column.id}
-                    className={`py-2 pr-4 ${
-                      column.numeric ? "text-right tabular-nums" : ""
-                    }`}
-                  >
-                    {column.cell(row)}
-                  </td>
-                ))}
+                {columns.map((column) => {
+                  const className = `py-2 pr-4 ${
+                    column.numeric ? "text-right tabular-nums" : ""
+                  }`;
+                  return column.rowHeader ? (
+                    <th
+                      key={column.id}
+                      scope="row"
+                      className={`${className} font-normal text-left`}
+                    >
+                      {column.cell(row)}
+                    </th>
+                  ) : (
+                    <td key={column.id} className={className}>
+                      {column.cell(row)}
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-neutral-500">
+      <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-ink-muted">
         <span className="tabular-nums">
           {t("showing", {
             from: bounds.from,
@@ -178,7 +208,7 @@ export default function DataTable<T>({
               type="button"
               onClick={() => setPage(safePage - 1)}
               disabled={safePage === 0}
-              className="rounded-md border border-neutral-300 px-2 py-1 text-xs hover:border-neutral-900 hover:text-neutral-900 disabled:border-neutral-200 disabled:text-neutral-300"
+              className="min-h-[24px] rounded-md border border-line-strong px-3 py-1 text-xs hover:border-inverse hover:text-ink disabled:border-line disabled:text-ink-faint"
             >
               {t("previous")}
             </button>
@@ -189,7 +219,7 @@ export default function DataTable<T>({
               type="button"
               onClick={() => setPage(safePage + 1)}
               disabled={safePage >= pages - 1}
-              className="rounded-md border border-neutral-300 px-2 py-1 text-xs hover:border-neutral-900 hover:text-neutral-900 disabled:border-neutral-200 disabled:text-neutral-300"
+              className="min-h-[24px] rounded-md border border-line-strong px-3 py-1 text-xs hover:border-inverse hover:text-ink disabled:border-line disabled:text-ink-faint"
             >
               {t("next")}
             </button>
@@ -198,7 +228,7 @@ export default function DataTable<T>({
       </div>
 
       {footnote && sort === null && (
-        <p className="mt-2 max-w-3xl text-xs text-neutral-400">{footnote}</p>
+        <p className="mt-2 max-w-3xl text-xs text-ink-muted">{footnote}</p>
       )}
     </div>
   );

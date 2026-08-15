@@ -5,6 +5,7 @@ import {
   formatDate,
   formatMonth,
   formatMonths,
+  formatNumber,
   formatPercent,
 } from "./format";
 import { monthIndex } from "./contract";
@@ -20,6 +21,27 @@ describe("formatMoney", () => {
   });
   it("falls back to the currency code for unknown currencies", () => {
     expect(formatMoney({ amount: 10, currency: "CHF", year: 2020 })).toBe("CHF 10M");
+  });
+
+  /** Nine cost figures in the dataset are in BGN. */
+  it("knows the currencies the dataset actually uses", () => {
+    expect(formatMoney({ amount: 500, currency: "BGN", year: 2020 })).toBe("лв500M");
+    expect(formatMoney({ amount: 90, currency: "RSD", year: 2020 })).toBe("дин.90M");
+  });
+
+  it("uses the locale's decimal separator and magnitude words", () => {
+    expect(formatMoney({ amount: 1800, currency: "EUR", year: 2023 }, "ro")).toBe(
+      "€1,8 mld.",
+    );
+    expect(formatMoney({ amount: 500, currency: "RON", year: 2012 }, "ro")).toBe(
+      "lei 500 mil.",
+    );
+  });
+
+  it("groups thousands of millions by locale", () => {
+    expect(formatMoney({ amount: 4870, currency: "RON", year: 2026 }, "en")).toBe(
+      "lei 4.9B",
+    );
   });
 });
 
@@ -71,6 +93,12 @@ describe("formatPercent", () => {
   it("leaves zero unsigned", () => {
     expect(formatPercent(0)).toBe("0.0%");
   });
+
+  /** Romanian writes 38,3 and not 38.3, so toFixed() was wrong for /ro. */
+  it("uses the locale's decimal separator", () => {
+    expect(formatPercent(38.309, "ro")).toBe("+38,3%");
+    expect(formatPercent(-10, "ro")).toBe("−10,0%");
+  });
 });
 
 describe("formatMonths", () => {
@@ -84,5 +112,22 @@ describe("formatMonths", () => {
   it("takes a localized unit", () => {
     expect(formatMonths(46, "luni")).toBe("+46 luni");
     expect(formatMonths(-4, "luni")).toBe("−4 luni");
+  });
+
+  it("groups large month counts by locale", () => {
+    expect(formatMonths(1200, "mo", "en")).toBe("+1,200 mo");
+    expect(formatMonths(1200, "luni", "ro")).toBe("+1.200 luni");
+  });
+});
+
+describe("formatNumber", () => {
+  it("groups by locale", () => {
+    expect(formatNumber(1234567, "en")).toBe("1,234,567");
+    expect(formatNumber(1234567, "ro")).toBe("1.234.567");
+  });
+
+  it("takes a fraction-digit count", () => {
+    expect(formatNumber(12.345, "en", 1)).toBe("12.3");
+    expect(formatNumber(12.345, "ro", 1)).toBe("12,3");
   });
 });
