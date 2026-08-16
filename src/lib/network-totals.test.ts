@@ -11,11 +11,16 @@ import {
 import { buildContractorDirectory } from "./contractor-directory";
 import { projectTotals } from "./project-summary";
 import { openedBetween } from "./map-delta";
-import type { LotEntry } from "./lot-list";
+import { cityMarkerProperties, lotFeatureProperties } from "./map-features";
 import { createDeflator } from "./deflator";
 import { createContractorResolver } from "./contractors";
 import { countsTowardNetwork } from "./schema";
-import type { ContractorRegistry, DeflatorTable, Project } from "./schema";
+import type {
+  City,
+  ContractorRegistry,
+  DeflatorTable,
+  Project,
+} from "./schema";
 
 const deflators: DeflatorTable = {
   baseYear: 2015,
@@ -178,47 +183,51 @@ describe("every total that spans projects applies it", () => {
    * `Project`: MapLibre cannot reach into projects.json, so it sums the
    * flattened feature properties instead. That is exactly how it came to
    * apply `sharedWith` and not `partOf` — the build emitted only the first,
-   * so the rule could not be applied even in principle. Both markers travel
-   * onto the feature now, and `scripts/data-integrity.test.ts` pins that.
+   * so the rule could not be applied even in principle.
+   *
+   * Which is why the features here come from `lotFeatureProperties` rather
+   * than being written out by hand. Hand-written ones would carry both
+   * markers whatever the build does, and this test would keep passing
+   * through a repeat of the original bug.
    */
   it("openedBetween: the map's before/after readout", () => {
-    const feature = (
-      id: string,
-      lengthKm: number,
-      extra: Partial<LotEntry> = {},
-    ): LotEntry =>
-      ({
-        lotId: id,
-        projectId: "ro-a1",
-        projectName: "A1",
-        lotName: id,
-        country: "ro",
-        category: "highway",
-        status: "opened",
-        lengthKm,
-        openedMonth: 2015 * 12,
-        constructionStartMonth: null,
-        expectedOpeningMonth: null,
-        opened: 2015,
-        expectedOpening: null,
-        expectedOpeningDerived: false,
-        ...extra,
-      }) as LotEntry;
-
-    const delta = openedBetween(
-      [
-        feature("real", REAL_KM),
-        feature("borrowed", SHARED_KM, { sharedWith: "ro-metro-m1" }),
-        feature("inside", PART_KM, { partOf: "ro-a1" }),
-      ],
-      { from: 2010 * 12, to: 2026 * 12, nowMonth: 2026 * 12 },
+    const features = fixture().flatMap((p) =>
+      p.lots.map((lot) => lotFeatureProperties(p, lot)),
     );
+    const delta = openedBetween(features, {
+      from: 2010 * 12,
+      to: 2026 * 12,
+      nowMonth: 2026 * 12,
+    });
     expect(delta.km).toBe(REAL_KM);
     // All three are real openings and stay in the list; only the total drops
     // the two, and says out loud how much it dropped.
     expect(delta.count).toBe(3);
     // Rounded to one decimal, as every kilometre figure on the panel is.
     expect(delta.alsoCountedKm).toBeCloseTo(SHARED_KM + PART_KM, 1);
+  });
+
+  /**
+   * The city marker's `km` is the other total the data build computes, and
+   * for a long time the only one with no case here: it lived as an inline
+   * expression at the script's module scope, where nothing could import it.
+   */
+  it("cityMarkerProperties: the km on a city's map marker", () => {
+    const projects = fixture().map((p) => ({ ...p, city: "ro-bucharest" }));
+    const marker = cityMarkerProperties(
+      "ro-bucharest",
+      {
+        country: "ro",
+        name: { en: "Bucharest" },
+        center: [26.1, 44.43],
+      } as City,
+      projects,
+      null,
+    );
+    expect(marker.km).toBe(REAL_KM);
+    // The lot count is not a network total: it says how many rows the city
+    // page lists, and it lists all of them.
+    expect(marker.lots).toBe(3);
   });
 
   it("buildContractorDirectory: the contractor profile pages", () => {

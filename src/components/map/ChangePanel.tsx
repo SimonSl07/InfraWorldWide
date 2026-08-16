@@ -104,7 +104,7 @@ export default function ChangePanel({
           already counts, the other is a forecast rather than a record. */}
       {delta.alsoCountedKm > 0 && (
         <p className="mt-1 text-[11px] text-ink-faint">
-          {t("map.changeShared", { km: formatKm(delta.alsoCountedKm, locale) })}
+          {t("map.changeAlsoCounted", { km: formatKm(delta.alsoCountedKm, locale) })}
         </p>
       )}
       {ahead && delta.projectedKm > 0 && (

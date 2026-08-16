@@ -41,6 +41,11 @@ export default async function DataPage({
     project: manifest?.projects[0],
   });
   const odbl = odblEndpoints(endpoints);
+  // Computed once for both branches of the stamp below. The empty string is
+  // unreachable: the block that reads it only renders when manifest is set.
+  const buildDate = manifest
+    ? formatDate(manifest.generated.slice(0, 10), lang)
+    : "";
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
@@ -58,12 +63,10 @@ export default async function DataPage({
                 and the rest of the stamp is still worth printing. */}
             {manifest.commit
               ? t("dataPage.buildStamp", {
-                  date: formatDate(manifest.generated.slice(0, 10), lang),
+                  date: buildDate,
                   commit: manifest.commit.slice(0, 7),
                 })
-              : t("dataPage.buildStampNoCommit", {
-                  date: formatDate(manifest.generated.slice(0, 10), lang),
-                })}
+              : t("dataPage.buildStampNoCommit", { date: buildDate })}
           </p>
           <p className="mt-1 text-ink-muted">
             {t("dataPage.buildContents", {
