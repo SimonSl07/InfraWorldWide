@@ -132,21 +132,31 @@ export function odblEndpoints(endpoints: DataEndpoint[]): DataEndpoint[] {
 export interface BuildStamp {
   /** ISO 8601 timestamp written by the data build. */
   generated: string;
-  commit: string;
+  /**
+   * Null where the build could not ask git: a source tarball, or a container
+   * image without the .git directory. `buildStamp()` in build-data.ts writes
+   * null there deliberately and says it is not a build failure, so rejecting
+   * the stamp over it threw away a manifest that was otherwise complete, and
+   * with it every example link on /data.
+   */
+  commit: string | null;
 }
 
 /**
  * The stamp off an artifact, or null when it carries none.
  *
- * Null rather than a partial record: a page printing "generated undefined"
- * is worse than one that leaves the line out.
+ * The timestamp is what makes a stamp a stamp, so a missing or empty one is
+ * still nothing. Null rather than a partial record: a page printing
+ * "generated undefined" is worse than one that leaves the line out.
  */
 export function parseBuildStamp(value: unknown): BuildStamp | null {
   if (typeof value !== "object" || value === null) return null;
   const { generated, commit } = value as Record<string, unknown>;
   if (typeof generated !== "string" || generated.length === 0) return null;
-  if (typeof commit !== "string" || commit.length === 0) return null;
-  return { generated, commit };
+  return {
+    generated,
+    commit: typeof commit === "string" && commit.length > 0 ? commit : null,
+  };
 }
 
 /** The geo manifest as written by the data build. */

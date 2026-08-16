@@ -35,19 +35,14 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   countryGeoPath,
-  dateYear,
   deflatorTableSchema,
   countsTowardNetwork,
   projectGeoPath,
   type Project,
 } from "../src/lib/schema";
-import {
-  expectedOpeningMonth,
-  expectedOpeningYear,
-  monthIndex,
-} from "../src/lib/contract";
 import { geometryBounds, lineMidpoint, type BBox } from "../src/lib/geo";
 import { roundGeometry } from "../src/lib/round-coords";
+import { lotFeatureProperties } from "../src/lib/map-features";
 import type {
   CityMarkerProperties,
   CountryOutlineProperties,
@@ -183,40 +178,10 @@ function buildProjectFeatures(project: Project): GeoFeature[] {
   for (const lot of project.lots) {
     const feature = byRef.get(lot.geometryRef);
     if (!feature) continue; // already reported by validation
-    // Annotated, not inferred: the map reads these back through a cast, so
-    // this declaration is the only thing that can catch a drift between what
-    // is written here and what the client expects.
-    const props: LotFeatureProperties = {
-      lotId: lot.id,
-      projectId: project.id,
-      projectName: project.name.en,
-      lotName: lot.name.en,
-      // Drives the "dim everything outside the selected country" paint
-      // expression, which cannot reach back into projects.json.
-      country: project.country,
-      ...(project.city ? { city: project.city } : {}),
-      category: project.category,
-      status: lot.status,
-      lengthKm: lot.lengthKm,
-      // Track this line shares with another. The geometry is drawn under
-      // both lines, which is correct for a route, but anything totalling
-      // length across projects has to ignore it.
-      ...(lot.sharedWith ? { sharedWith: lot.sharedWith } : {}),
-      // Absolute month indices (year*12 + month-1) for MapLibre filter
-      // expressions — the timeline steps one calendar month at a time.
-      // Named *Month so a stale year-based artifact cannot be misread as
-      // months. Null when unknown; a year-only date resolves to January.
-      openedMonth: monthIndex(lot.dates?.opened) ?? null,
-      constructionStartMonth: monthIndex(lot.dates?.constructionStart) ?? null,
-      // Explicitly sourced date, else derived from the contract duration.
-      expectedOpeningMonth: expectedOpeningMonth(lot),
-      // Years kept alongside for anything reading coarse dates.
-      opened: lot.dates?.opened ? dateYear(lot.dates.opened) : null,
-      expectedOpening: expectedOpeningYear(lot),
-      /** Whether expectedOpening is derived rather than directly sourced. */
-      expectedOpeningDerived: !lot.dates?.expectedOpening
-        && expectedOpeningYear(lot) !== null,
-    };
+    // Built in src/lib/map-features.ts, beside the type the client reads
+    // these back through, so what is written and what is expected are one
+    // declaration and a test can hold them to it.
+    const props = lotFeatureProperties(project, lot);
     // Rounded once, here, so every collection this feature lands in
     // (country, city, per-project) carries the same trimmed geometry.
     const geometry = roundGeometry(feature.geometry);

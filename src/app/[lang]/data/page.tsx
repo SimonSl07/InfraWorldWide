@@ -53,10 +53,17 @@ export default async function DataPage({
             {t("dataPage.buildTitle")}
           </p>
           <p className="mt-1">
-            {t("dataPage.buildStamp", {
-              date: formatDate(manifest.generated.slice(0, 10), lang),
-              commit: manifest.commit.slice(0, 7),
-            })}
+            {/* A build from a source tarball, or from an image without the
+                .git directory, has no commit to name. That is not a failure
+                and the rest of the stamp is still worth printing. */}
+            {manifest.commit
+              ? t("dataPage.buildStamp", {
+                  date: formatDate(manifest.generated.slice(0, 10), lang),
+                  commit: manifest.commit.slice(0, 7),
+                })
+              : t("dataPage.buildStampNoCommit", {
+                  date: formatDate(manifest.generated.slice(0, 10), lang),
+                })}
           </p>
           <p className="mt-1 text-ink-muted">
             {t("dataPage.buildContents", {

@@ -100,11 +100,11 @@ export default function ChangePanel({
         })}
       </p>
 
-      {/* Both caveats are load-bearing: one is double-counted track, the
-          other is a forecast rather than a record. */}
-      {delta.sharedKm > 0 && (
+      {/* Both caveats are load-bearing: one is kilometres another project
+          already counts, the other is a forecast rather than a record. */}
+      {delta.alsoCountedKm > 0 && (
         <p className="mt-1 text-[11px] text-ink-faint">
-          {t("map.changeShared", { km: formatKm(delta.sharedKm, locale) })}
+          {t("map.changeShared", { km: formatKm(delta.alsoCountedKm, locale) })}
         </p>
       )}
       {ahead && delta.projectedKm > 0 && (

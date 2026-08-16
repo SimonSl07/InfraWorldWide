@@ -23,6 +23,39 @@ describe("formatMoney", () => {
     expect(formatMoney({ amount: 10, currency: "CHF", year: 2020 })).toBe("CHF 10M");
   });
 
+  /**
+   * A sourced figure is shown as recorded. A fixed one decimal turned 26
+   * committed amounts into numbers no source states: lot 5 of bg-a1-trakia
+   * was awarded at 133.97M BGN and read as "лв134.0M", which is a rounder
+   * claim than the award notice makes.
+   */
+  it("keeps the decimals the figure was recorded with", () => {
+    const bgn = (amount: number) =>
+      formatMoney({ amount, currency: "BGN", year: 2015 });
+    expect(bgn(133.97)).toBe("лв133.97M");
+    expect(bgn(137.868)).toBe("лв137.868M");
+    expect(bgn(198.16)).toBe("лв198.16M");
+    // An amount that really is whole gains no decimal point.
+    expect(bgn(200)).toBe("лв200M");
+  });
+
+  it("does not print float noise as precision", () => {
+    // 1.7 the long way round. Three decimals is the cap, so an amount that
+    // needs more is rounded rather than spilling sixteen digits.
+    expect(formatMoney({ amount: 0.8 + 0.9, currency: "EUR", year: 2020 })).toBe(
+      "€1.7M",
+    );
+    expect(formatMoney({ amount: 12.34567, currency: "EUR", year: 2020 })).toBe(
+      "€12.346M",
+    );
+  });
+
+  it("separates the recorded decimals the way the locale does", () => {
+    expect(formatMoney({ amount: 133.97, currency: "BGN", year: 2015 }, "ro")).toBe(
+      "лв133,97 mil.",
+    );
+  });
+
   /** Nine cost figures in the dataset are in BGN. */
   it("knows the currencies the dataset actually uses", () => {
     expect(formatMoney({ amount: 500, currency: "BGN", year: 2020 })).toBe("лв500M");
