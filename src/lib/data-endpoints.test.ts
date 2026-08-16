@@ -79,12 +79,32 @@ describe("parseBuildStamp", () => {
     ).toEqual({ generated: "2026-08-13T23:40:19.603Z", commit: "a6965a6" });
   });
 
+  /**
+   * `buildStamp()` in build-data.ts writes `commit: null` when git is not
+   * available (a source tarball, an image without .git) and documents that
+   * as not a build failure. Rejecting the stamp over it discarded the whole
+   * manifest, which also emptied every example link on /data.
+   */
+  it("accepts a stamp with no commit, which the build writes on purpose", () => {
+    const generated = "2026-08-13T23:40:19.603Z";
+    expect(parseBuildStamp({ generated, commit: null })).toEqual({
+      generated,
+      commit: null,
+    });
+    expect(parseBuildStamp({ generated })).toEqual({ generated, commit: null });
+    expect(parseBuildStamp({ generated, commit: "" })).toEqual({
+      generated,
+      commit: null,
+    });
+  });
+
   it("refuses anything that is not a stamped artifact", () => {
     // A page that printed "undefined" as the build date would be worse than
-    // one that omits the line.
+    // one that omits the line. The date is what makes a stamp a stamp.
     expect(parseBuildStamp(null)).toBeNull();
     expect(parseBuildStamp({})).toBeNull();
-    expect(parseBuildStamp({ generated: "2026-08-13T23:40:19.603Z" })).toBeNull();
+    expect(parseBuildStamp({ commit: "a6965a6" })).toBeNull();
     expect(parseBuildStamp({ generated: 1, commit: "a" })).toBeNull();
+    expect(parseBuildStamp({ generated: "", commit: "a" })).toBeNull();
   });
 });

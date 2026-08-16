@@ -518,7 +518,10 @@ export default async function ProjectPage({
                     {isOnMainMap(project, lot) && (
                       <div className="mt-1">
                         <Link
-                          href={mapLotHref(lot.id)}
+                          href={mapLotHref({
+                            projectId: project.id,
+                            lotId: lot.id,
+                          })}
                           aria-label={t("project.showOnMapLabel", {
                             lot: name(lot.name),
                           })}

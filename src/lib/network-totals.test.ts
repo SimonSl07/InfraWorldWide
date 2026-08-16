@@ -10,6 +10,8 @@ import {
 } from "./rankings";
 import { buildContractorDirectory } from "./contractor-directory";
 import { projectTotals } from "./project-summary";
+import { openedBetween } from "./map-delta";
+import type { LotEntry } from "./lot-list";
 import { createDeflator } from "./deflator";
 import { createContractorResolver } from "./contractors";
 import { countsTowardNetwork } from "./schema";
@@ -169,6 +171,54 @@ describe("every total that spans projects applies it", () => {
     // three must still only carry the one that counts.
     const [group] = rankByContractor(metrics());
     expect(group.km).toBe(REAL_KM);
+  });
+
+  /**
+   * The map's change readout is the one aggregate that does not run on
+   * `Project`: MapLibre cannot reach into projects.json, so it sums the
+   * flattened feature properties instead. That is exactly how it came to
+   * apply `sharedWith` and not `partOf` — the build emitted only the first,
+   * so the rule could not be applied even in principle. Both markers travel
+   * onto the feature now, and `scripts/data-integrity.test.ts` pins that.
+   */
+  it("openedBetween: the map's before/after readout", () => {
+    const feature = (
+      id: string,
+      lengthKm: number,
+      extra: Partial<LotEntry> = {},
+    ): LotEntry =>
+      ({
+        lotId: id,
+        projectId: "ro-a1",
+        projectName: "A1",
+        lotName: id,
+        country: "ro",
+        category: "highway",
+        status: "opened",
+        lengthKm,
+        openedMonth: 2015 * 12,
+        constructionStartMonth: null,
+        expectedOpeningMonth: null,
+        opened: 2015,
+        expectedOpening: null,
+        expectedOpeningDerived: false,
+        ...extra,
+      }) as LotEntry;
+
+    const delta = openedBetween(
+      [
+        feature("real", REAL_KM),
+        feature("borrowed", SHARED_KM, { sharedWith: "ro-metro-m1" }),
+        feature("inside", PART_KM, { partOf: "ro-a1" }),
+      ],
+      { from: 2010 * 12, to: 2026 * 12, nowMonth: 2026 * 12 },
+    );
+    expect(delta.km).toBe(REAL_KM);
+    // All three are real openings and stay in the list; only the total drops
+    // the two, and says out loud how much it dropped.
+    expect(delta.count).toBe(3);
+    // Rounded to one decimal, as every kilometre figure on the panel is.
+    expect(delta.alsoCountedKm).toBeCloseTo(SHARED_KM + PART_KM, 1);
   });
 
   it("buildContractorDirectory: the contractor profile pages", () => {
