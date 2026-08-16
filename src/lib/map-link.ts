@@ -1,4 +1,4 @@
-import { formatLotRef } from "./map-filters";
+import { formatLotRef, type QualifiedLotRef } from "./map-filters";
 import { MAP_STATUSES } from "./map-style";
 import type { Lot, Project } from "./schema";
 
@@ -15,10 +15,7 @@ import type { Lot, Project } from "./schema";
  * wrong bridge, so a bare link for any of those three opened the map with
  * no panel at all. `formatLotRef` is the one place the format is written.
  */
-export function mapLotHref(ref: {
-  projectId: string;
-  lotId: string;
-}): string {
+export function mapLotHref(ref: QualifiedLotRef): string {
   return `/map?sel=${encodeURIComponent(formatLotRef(ref))}`;
 }
 

@@ -24,7 +24,7 @@ function project(over: Partial<Project> = {}): Project {
     lots: [],
     sources: [{ title: "S", url: "https://example.com" }],
     ...over,
-  } as Project;
+  };
 }
 
 function lot(over: Partial<Lot> = {}): Lot {
@@ -36,7 +36,7 @@ function lot(over: Partial<Lot> = {}): Lot {
     lengthKm: 17.1,
     geometryRef: "sebes-turda",
     ...over,
-  } as Lot;
+  };
 }
 
 describe("lotFeatureProperties", () => {
