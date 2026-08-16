@@ -759,6 +759,23 @@ export function isPartOfAnother(lot: { partOf?: string }): boolean {
 }
 
 /**
+ * The markers saying another project already counts a lot's kilometres.
+ *
+ * Named, and exported, so the set exists in one place. Anything that carries
+ * a lot across a boundary has to carry these with it: `LotFeatureProperties`
+ * extends this rather than restating the fields, so the flattening the data
+ * build does cannot emit one marker and forget the other. That omission is
+ * exactly how the map's change readout came to add the A1, A3 and A8 tunnels
+ * on top of the sections containing them.
+ */
+export interface NetworkExclusion {
+  /** Track another line owns; see `isSharedTrack`. */
+  sharedWith?: string;
+  /** Works inside a section its parent measures; see `isPartOfAnother`. */
+  partOf?: string;
+}
+
+/**
  * The single predicate every total that spans projects must apply.
  *
  * There are now two independent ways a lot's kilometres are already counted
@@ -770,10 +787,7 @@ export function isPartOfAnother(lot: { partOf?: string }): boolean {
  * A lot's own project always counts it in full. This is only about sums that
  * cross project boundaries.
  */
-export function countsTowardNetwork(lot: {
-  sharedWith?: string;
-  partOf?: string;
-}): boolean {
+export function countsTowardNetwork(lot: NetworkExclusion): boolean {
   return !isSharedTrack(lot) && !isPartOfAnother(lot);
 }
 

@@ -395,14 +395,21 @@ export interface LotRef {
   lotId: string;
 }
 
+/**
+ * A reference that names its project, which is the only kind that always
+ * resolves. Every producer of a `?sel=` link takes this, so the shape is
+ * stated once rather than inline at each of them.
+ */
+export interface QualifiedLotRef {
+  projectId: string;
+  lotId: string;
+}
+
 /** Separator chosen because URLSearchParams leaves "." unencoded. */
 const LOT_REF_SEPARATOR = ".";
 
 /** A lot reference as it appears in ?sel=. */
-export function formatLotRef(ref: {
-  projectId: string;
-  lotId: string;
-}): string {
+export function formatLotRef(ref: QualifiedLotRef): string {
   return `${ref.projectId}${LOT_REF_SEPARATOR}${ref.lotId}`;
 }
 
@@ -426,7 +433,7 @@ export function parseLotRef(raw: string | null): LotRef | null {
  * id. Where several do, nothing is selected: a link that opens no panel is
  * a visible failure, while a link that opens the wrong bridge is not.
  */
-export function resolveLotRef<T extends { projectId: string; lotId: string }>(
+export function resolveLotRef<T extends QualifiedLotRef>(
   candidates: readonly T[],
   ref: LotRef | null,
 ): T | null {
