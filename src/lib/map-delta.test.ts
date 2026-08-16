@@ -86,28 +86,24 @@ describe("openedBetween", () => {
     lengthKm: 6.7,
   });
 
-  it("leaves shared track out of the kilometres but keeps it in the list", () => {
-    const d = openedBetween(
-      [a, shared],
-      window(toMonthIndex(2020, 1), toMonthIndex(2024, 1)),
-    );
-    expect(d.km).toBe(20);
-    expect(d.alsoCountedKm).toBe(8.7); // rounded like every other figure here
-    expect(d.count).toBe(2);
-  });
-
-  it("leaves a contained structure out too, on the same basis", () => {
-    // A tunnel bored inside an A1 section: the section already measures its
-    // length, so adding it here counts the same kilometres twice. This one
-    // shipped wrong, because `partOf` was never written onto the feature.
-    const d = openedBetween(
-      [a, contained],
-      window(toMonthIndex(2020, 1), toMonthIndex(2024, 1)),
-    );
-    expect(d.km).toBe(20);
-    expect(d.alsoCountedKm).toBe(6.7);
-    expect(d.count).toBe(2);
-  });
+  // `shared` is track another line owns. `contained` is a tunnel bored
+  // inside an A1 section that already measures its length. The second is the
+  // one that shipped wrong, because `partOf` never reached the feature.
+  it.each([
+    ["shared track", shared, 8.7], // rounded like every other figure here
+    ["a contained structure", contained, 6.7],
+  ])(
+    "leaves %s out of the kilometres but keeps it in the list",
+    (_name, excluded, alsoCountedKm) => {
+      const d = openedBetween(
+        [a, excluded as LotEntry],
+        window(toMonthIndex(2020, 1), toMonthIndex(2024, 1)),
+      );
+      expect(d.km).toBe(20);
+      expect(d.alsoCountedKm).toBe(alsoCountedKm);
+      expect(d.count).toBe(2);
+    },
+  );
 
   it("holds both kinds back from one figure", () => {
     const d = openedBetween(

@@ -1,5 +1,14 @@
-import { dateYear, type Category, type Lot, type Project } from "./schema";
-import { expectedOpeningMonth, expectedOpeningYear, monthIndex } from "./contract";
+import {
+  countsTowardNetwork,
+  dateYear,
+  type Category,
+  type City,
+  type Lot,
+  type NetworkExclusion,
+  type Project,
+} from "./schema";
+import { expectedOpeningYear } from "./contract";
+import { lotMonths } from "./country-stats";
 import type { BBox } from "./geo";
 
 /**
@@ -20,8 +29,16 @@ import type { BBox } from "./geo";
  * being able to notice.
  */
 
-/** Properties the build writes onto every lot feature. */
-export interface LotFeatureProperties {
+/**
+ * Properties the build writes onto every lot feature.
+ *
+ * Extends `NetworkExclusion` rather than restating `sharedWith`/`partOf`:
+ * both markers have to travel onto the feature, because a total computed
+ * client-side from the GeoJSON has no way back to projects.json and would
+ * otherwise apply only the one it can see. Deriving the pair means a third
+ * marker arrives here by itself. See `countsTowardNetwork` and AGENTS.md.
+ */
+export interface LotFeatureProperties extends NetworkExclusion {
   lotId: string;
   projectId: string;
   /** English name; the map draws one label set regardless of UI locale. */
@@ -35,19 +52,12 @@ export interface LotFeatureProperties {
   status: string;
   lengthKm: number;
   /**
-   * The two markers saying another project already counts these kilometres:
-   * `sharedWith` is track another line owns, `partOf` is works inside a
-   * section its parent already measures. Both have to travel onto the
-   * feature, because a total computed client-side from the GeoJSON has no
-   * way back to projects.json and would otherwise apply only the one it can
-   * see. See `countsTowardNetwork` in schema.ts and AGENTS.md.
+   * Absolute month indices (year*12 + month-1), null when unknown. The same
+   * three `lotMonths` produces, so the map and the state rules read one
+   * definition of what dates a lot has.
    */
-  sharedWith?: string;
-  partOf?: string;
-  /** Absolute month indices (year*12 + month-1). Null when unknown. */
   openedMonth: number | null;
   constructionStartMonth: number | null;
-  /** Sourced date if there is one, else derived from the contract duration. */
   expectedOpeningMonth: number | null;
   /** Years, kept alongside the month indices for coarse reads. */
   opened: number | null;
@@ -85,22 +95,17 @@ export function lotFeatureProperties(
     category: project.category,
     status: lot.status,
     lengthKm: lot.lengthKm,
-    // The two ways another project already counts these kilometres. The
-    // geometry is drawn either way, which is correct for a route, but
-    // anything totalling length across projects has to ignore both, so both
-    // have to be here. Emitting only `sharedWith` is what let the map's
-    // change readout add the A1, A3 and A8 tunnels on top of the sections
-    // that contain them. See `countsTowardNetwork` in schema.ts.
+    // The geometry is drawn either way, which is correct for a route, but
+    // anything totalling length across projects has to ignore both markers,
+    // so both have to be here. Emitting only `sharedWith` is what let the
+    // map's change readout add the A1, A3 and A8 tunnels on top of the
+    // sections that contain them.
     ...(lot.sharedWith ? { sharedWith: lot.sharedWith } : {}),
     ...(lot.partOf ? { partOf: lot.partOf } : {}),
-    // Absolute month indices (year*12 + month-1) for MapLibre filter
-    // expressions: the timeline steps one calendar month at a time. Named
-    // *Month so a stale year-based artifact cannot be misread as months.
-    // Null when unknown; a year-only date resolves to January.
-    openedMonth: monthIndex(lot.dates?.opened) ?? null,
-    constructionStartMonth: monthIndex(lot.dates?.constructionStart) ?? null,
-    // Explicitly sourced date, else derived from the contract duration.
-    expectedOpeningMonth: expectedOpeningMonth(lot),
+    // The same three the state rules use: one definition of what dates a lot
+    // has, rather than a copy that can drift. The timeline steps one calendar
+    // month at a time, and a year-only date resolves to January.
+    ...lotMonths(lot),
     // Years kept alongside for anything reading coarse dates.
     opened: lot.dates?.opened ? dateYear(lot.dates.opened) : null,
     expectedOpening: expectedOpeningYear(lot),
@@ -127,10 +132,49 @@ export interface CityMarkerProperties {
   name: string;
   projects: number;
   lots: number;
+  /**
+   * Network length, so a total across the city's projects: it applies
+   * `countsTowardNetwork`. Without that the marker said Sofia was 68.76 km
+   * while the city page said 54.56, the two metro lines through-running one
+   * tunnel being counted twice.
+   */
   km: number;
   /**
    * Box around the city's actual project geometry, not a radius around the
    * centre point, so opening a city frames its network.
    */
   bbox?: BBox;
+}
+
+/**
+ * One city marker's properties.
+ *
+ * Here rather than inline in the build for the same reason as
+ * `lotFeatureProperties`: `km` is a total that spans projects, AGENTS.md
+ * requires every such total to answer to `countsTowardNetwork` in
+ * `network-totals.test.ts`, and an expression at a script's module scope
+ * cannot be imported to answer to anything.
+ */
+export function cityMarkerProperties(
+  key: string,
+  city: City,
+  cityProjects: Project[],
+  bbox: BBox | null,
+): CityMarkerProperties {
+  return {
+    city: key,
+    country: city.country,
+    name: city.name.en,
+    projects: cityProjects.length,
+    lots: cityProjects.reduce((sum, p) => sum + p.lots.length, 0),
+    km: cityProjects.reduce(
+      (sum, p) =>
+        sum +
+        p.lots
+          .filter(countsTowardNetwork)
+          .reduce((s, l) => s + l.lengthKm, 0),
+      0,
+    ),
+    ...(bbox ? { bbox } : {}),
+  };
 }

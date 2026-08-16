@@ -36,17 +36,20 @@ import path from "node:path";
 import {
   countryGeoPath,
   deflatorTableSchema,
-  countsTowardNetwork,
   projectGeoPath,
   type Project,
 } from "../src/lib/schema";
 import { geometryBounds, lineMidpoint, type BBox } from "../src/lib/geo";
 import { roundGeometry } from "../src/lib/round-coords";
-import { lotFeatureProperties } from "../src/lib/map-features";
-import type {
-  CityMarkerProperties,
-  CountryOutlineProperties,
-  LotFeatureProperties,
+// Annotated against the reader's own type: the producer emitting a null
+// commit while the parser demanded a string is the bug this pairs up.
+import type { BuildStamp } from "../src/lib/data-endpoints";
+import {
+  cityMarkerProperties,
+  lotFeatureProperties,
+  type CityMarkerProperties,
+  type CountryOutlineProperties,
+  type LotFeatureProperties,
 } from "../src/lib/map-features";
 import { validateAll } from "./validate-data";
 
@@ -123,7 +126,7 @@ function writeArtifact(relative: string, value: unknown): void {
  * `commit` is null wherever git is not available (a tarball, a build image
  * without the .git directory); that is not a build failure.
  */
-function buildStamp(): { generated: string; commit: string | null } {
+function buildStamp(): BuildStamp {
   let commit: string | null = null;
   try {
     commit = execFileSync("git", ["rev-parse", "HEAD"], {
@@ -293,29 +296,10 @@ for (const key of cityKeys) {
   // project geometry so the city view frames the network rather than an
   // arbitrary radius around a point.
   const bbox = collectionBounds(features);
-  const markerProps: CityMarkerProperties = {
-    city: key,
-    country: city.country,
-    name: city.name.en,
-    projects: cityProjects.length,
-    lots: cityProjects.reduce((sum, p) => sum + p.lots.length, 0),
-    // A network total spans projects, so a tunnel two lines run through is
-    // counted once. Without the filter the marker and the city panel said
-    // Sofia was 68.76 km while the city page said 54.56 km.
-    km: cityProjects.reduce(
-      (sum, p) =>
-        sum +
-        p.lots
-          .filter(countsTowardNetwork)
-          .reduce((s, l) => s + l.lengthKm, 0),
-      0,
-    ),
-    ...(bbox ? { bbox } : {}),
-  };
   cityMarkers.push({
     type: "Feature",
     geometry: { type: "Point", coordinates: city.center },
-    properties: markerProps,
+    properties: cityMarkerProperties(key, city, cityProjects, bbox),
   });
 }
 

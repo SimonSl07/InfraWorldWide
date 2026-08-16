@@ -18,43 +18,38 @@ const MAGNITUDES: Record<string, { million: string; billion: string; space: bool
   ro: { million: "mil.", billion: "mld.", space: true },
 };
 
-/** Group and round a number the way the reader's locale writes it. */
+/**
+ * Group and round a number the way the reader's locale writes it.
+ *
+ * `fractionDigits` fixes the width. Pass `maxFractionDigits` as well to let
+ * the figure decide instead: trailing zeros are dropped, so a value carrying
+ * two decimals prints two and a whole number prints none.
+ */
 export function formatNumber(
   value: number,
   locale: string,
   fractionDigits = 0,
+  maxFractionDigits = fractionDigits,
 ): string {
   return value.toLocaleString(locale, {
     minimumFractionDigits: fractionDigits,
-    maximumFractionDigits: fractionDigits,
+    maximumFractionDigits: maxFractionDigits,
   });
 }
 
 /**
- * Decimals a number is actually written with, up to `max`.
+ * Decimals a money figure may print at each scale.
  *
- * A sourced figure is shown as recorded, so the precision comes from the
- * figure rather than from a constant: 133.97 is a contract value read off an
- * award notice, and printing it as 134.0 states a round number the source
- * never gave. Capped because a float that arrives as 1.7000000000000002 is
- * arithmetic noise, not precision.
- */
-function decimalsOf(value: number, max: number): number {
-  if (Number.isInteger(value)) return 0;
-  for (let places = 1; places < max; places++) {
-    const factor = 10 ** places;
-    if (Math.abs(Math.round(value * factor) - value * factor) < 1e-9) {
-      return places;
-    }
-  }
-  return max;
-}
-
-/**
- * Most decimals printed for an amount written in millions. Three is what the
- * data carries: contract values are recorded to the thousand.
+ * Millions keep what the source recorded, up to the thousandth the data is
+ * written to: an award of 133.97M is a figure off a notice, and printing it
+ * as 134.0M states a round number nobody published. Billions stay at one,
+ * because choosing to write an amount in units of a thousand million is
+ * itself a rounding. Five committed figures do lose precision to that
+ * choice, all RON contract values (ro-a7 at 1468.55M prints "lei 1.5B"),
+ * so it is a presentation decision rather than a free one.
  */
 const MILLION_DECIMALS = 3;
+const BILLION_DECIMALS = 1;
 
 /**
  * Format a Money value (amount is in millions): "€500M", "€1.2B", "€1,8 mld.".
@@ -72,15 +67,12 @@ export function formatMoney(m: Money, locale = "en"): string {
   const words = MAGNITUDES[locale] ?? MAGNITUDES.en;
   const gap = words.space ? " " : "";
 
-  const value =
-    m.amount >= 1000
-      ? // Billions stay at one decimal. Writing an amount in units of a
-        // thousand million is already a rounding, so there is no recorded
-        // precision here to preserve.
-        `${formatNumber(m.amount / 1000, locale, m.amount % 1000 === 0 ? 0 : 1)}${gap}${words.billion}`
-      : `${formatNumber(m.amount, locale, decimalsOf(m.amount, MILLION_DECIMALS))}${gap}${words.million}`;
+  const billions = m.amount >= 1000;
+  const shown = billions ? m.amount / 1000 : m.amount;
+  const word = billions ? words.billion : words.million;
+  const cap = billions ? BILLION_DECIMALS : MILLION_DECIMALS;
 
-  return `${symbol}${value}`;
+  return `${symbol}${formatNumber(shown, locale, 0, cap)}${gap}${word}`;
 }
 
 /** Absolute month index (see contract.monthIndex) → "Jan 2021". */
