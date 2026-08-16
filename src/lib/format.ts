@@ -31,10 +31,41 @@ export function formatNumber(
 }
 
 /**
+ * Decimals a number is actually written with, up to `max`.
+ *
+ * A sourced figure is shown as recorded, so the precision comes from the
+ * figure rather than from a constant: 133.97 is a contract value read off an
+ * award notice, and printing it as 134.0 states a round number the source
+ * never gave. Capped because a float that arrives as 1.7000000000000002 is
+ * arithmetic noise, not precision.
+ */
+function decimalsOf(value: number, max: number): number {
+  if (Number.isInteger(value)) return 0;
+  for (let places = 1; places < max; places++) {
+    const factor = 10 ** places;
+    if (Math.abs(Math.round(value * factor) - value * factor) < 1e-9) {
+      return places;
+    }
+  }
+  return max;
+}
+
+/**
+ * Most decimals printed for an amount written in millions. Three is what the
+ * data carries: contract values are recorded to the thousand.
+ */
+const MILLION_DECIMALS = 3;
+
+/**
  * Format a Money value (amount is in millions): "€500M", "€1.2B", "€1,8 mld.".
  *
  * The locale is optional so existing call sites keep working, but passing it
  * matters: `toFixed()` writes 1.8 where Romanian requires 1,8.
+ *
+ * Decimals follow the amount rather than a fixed width. Rounding everything
+ * to one place turned 26 committed figures into numbers no source states,
+ * `лв133.97M` reading as `лв134.0M`, which is precisely what this project
+ * says not to do with a sourced figure.
  */
 export function formatMoney(m: Money, locale = "en"): string {
   const symbol = CURRENCY_SYMBOLS[m.currency] ?? `${m.currency} `;
@@ -43,8 +74,11 @@ export function formatMoney(m: Money, locale = "en"): string {
 
   const value =
     m.amount >= 1000
-      ? `${formatNumber(m.amount / 1000, locale, m.amount % 1000 === 0 ? 0 : 1)}${gap}${words.billion}`
-      : `${formatNumber(m.amount, locale, Number.isInteger(m.amount) ? 0 : 1)}${gap}${words.million}`;
+      ? // Billions stay at one decimal. Writing an amount in units of a
+        // thousand million is already a rounding, so there is no recorded
+        // precision here to preserve.
+        `${formatNumber(m.amount / 1000, locale, m.amount % 1000 === 0 ? 0 : 1)}${gap}${words.billion}`
+      : `${formatNumber(m.amount, locale, decimalsOf(m.amount, MILLION_DECIMALS))}${gap}${words.million}`;
 
   return `${symbol}${value}`;
 }

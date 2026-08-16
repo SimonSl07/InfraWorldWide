@@ -1,5 +1,6 @@
 import type { FilterSpecification } from "maplibre-gl";
 import { effectivelyOpenedFilter } from "./map-filters";
+import { countsTowardNetwork } from "./schema";
 import type { LotEntry } from "./lot-list";
 
 /**
@@ -20,16 +21,24 @@ export interface DeltaWindow {
 }
 
 export interface Delta {
-  /** Every lot that became open inside the window, shared track included. */
+  /**
+   * Every lot that became open inside the window, including the ones whose
+   * kilometres another project already counts: they are real openings and
+   * belong in the list, they just must not be added to the total.
+   */
   lots: LotEntry[];
   /**
-   * Kilometres, with shared track left out. AGENTS.md: a lot with
-   * `sharedWith` is track another project already owns, and is excluded
-   * from every total that spans projects. This is one of those totals.
+   * Kilometres, with anything another project already counts left out. This
+   * is a total across every project on the map, so it answers to
+   * `countsTowardNetwork`: both `sharedWith` (track another line owns) and
+   * `partOf` (works inside a section its parent already measures). See
+   * AGENTS.md. Applying only the first added the eleven A1/A3/A8 tunnels on
+   * top of the sections containing them, as soon as the slider passed their
+   * expected opening.
    */
   km: number;
-  /** The shared kilometres held back from `km`, reported separately. */
-  sharedKm: number;
+  /** The kilometres held back from `km`, reported separately. */
+  alsoCountedKm: number;
   /** How much of `km` rests on a projected date rather than a published one. */
   projectedKm: number;
   count: number;
@@ -56,7 +65,7 @@ export function openedBetween(
 ): Delta {
   const found: LotEntry[] = [];
   let km = 0;
-  let sharedKm = 0;
+  let alsoCountedKm = 0;
   let projectedKm = 0;
 
   if (to > from) {
@@ -64,8 +73,8 @@ export function openedBetween(
       if (!isOpenAt(lot, to, nowMonth)) continue;
       if (isOpenAt(lot, from, nowMonth)) continue;
       found.push(lot);
-      if (lot.sharedWith) {
-        sharedKm += lot.lengthKm;
+      if (!countsTowardNetwork(lot)) {
+        alsoCountedKm += lot.lengthKm;
         continue;
       }
       km += lot.lengthKm;
@@ -78,7 +87,7 @@ export function openedBetween(
   return {
     lots: found,
     km: round(km),
-    sharedKm: round(sharedKm),
+    alsoCountedKm: round(alsoCountedKm),
     projectedKm: round(projectedKm),
     count: found.length,
   };

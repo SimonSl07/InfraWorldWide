@@ -68,24 +68,78 @@ describe("openedBetween", () => {
     ).toBe(0);
   });
 
+  // AGENTS.md: there are two ways another project already counts a lot's
+  // kilometres, and every total that spans projects has to apply both. This
+  // is one of those totals, so it gets a case for each.
+  const shared = lot({
+    lotId: "shared",
+    projectId: "ro-metro-m3",
+    sharedWith: "ro-metro-m1",
+    openedMonth: toMonthIndex(2022, 1),
+    lengthKm: 8.67,
+  });
+  const contained = lot({
+    lotId: "contained",
+    projectId: "ro-tunnels",
+    partOf: "ro-a1",
+    openedMonth: toMonthIndex(2022, 6),
+    lengthKm: 6.7,
+  });
+
   it("leaves shared track out of the kilometres but keeps it in the list", () => {
-    // AGENTS.md: a lot with sharedWith is track another project already
-    // owns, and is excluded from every total that spans projects. This is
-    // one of those totals.
-    const shared = lot({
-      lotId: "shared",
-      projectId: "ro-metro-m3",
-      sharedWith: "ro-metro-m1",
-      openedMonth: toMonthIndex(2022, 1),
-      lengthKm: 8.67,
-    });
     const d = openedBetween(
       [a, shared],
       window(toMonthIndex(2020, 1), toMonthIndex(2024, 1)),
     );
     expect(d.km).toBe(20);
-    expect(d.sharedKm).toBe(8.7); // rounded like every other figure here
+    expect(d.alsoCountedKm).toBe(8.7); // rounded like every other figure here
     expect(d.count).toBe(2);
+  });
+
+  it("leaves a contained structure out too, on the same basis", () => {
+    // A tunnel bored inside an A1 section: the section already measures its
+    // length, so adding it here counts the same kilometres twice. This one
+    // shipped wrong, because `partOf` was never written onto the feature.
+    const d = openedBetween(
+      [a, contained],
+      window(toMonthIndex(2020, 1), toMonthIndex(2024, 1)),
+    );
+    expect(d.km).toBe(20);
+    expect(d.alsoCountedKm).toBe(6.7);
+    expect(d.count).toBe(2);
+  });
+
+  it("holds both kinds back from one figure", () => {
+    const d = openedBetween(
+      [a, shared, contained],
+      window(toMonthIndex(2020, 1), toMonthIndex(2024, 1)),
+    );
+    expect(d.km).toBe(20);
+    expect(d.alsoCountedKm).toBe(15.4);
+  });
+
+  it("applies the rule to a projected opening as well", () => {
+    // How the bug actually reached a reader: no partOf lot has an opened
+    // date, but twelve have an expectedOpening, so scrubbing past it made
+    // them "effectively opened" and added them to the total.
+    const projectedTunnel = lot({
+      lotId: "ormenis",
+      projectId: "ro-rail-tunnels",
+      partOf: "ro-rail-brasov-sighisoara",
+      status: "under_construction",
+      constructionStartMonth: toMonthIndex(2023, 1),
+      expectedOpeningMonth: toMonthIndex(2026, 10),
+      lengthKm: 6.7,
+    });
+    const ahead = openedBetween(
+      [projectedTunnel],
+      window(NOW, toMonthIndex(2027, 1)),
+    );
+    expect(ahead.count).toBe(1);
+    expect(ahead.km).toBe(0);
+    expect(ahead.alsoCountedKm).toBe(6.7);
+    // And it is not counted as projected either: projectedKm qualifies `km`.
+    expect(ahead.projectedKm).toBe(0);
   });
 
   it("counts a projected opening only past the present", () => {

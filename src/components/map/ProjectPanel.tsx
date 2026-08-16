@@ -179,7 +179,7 @@ export default function ProjectPanel({ project, lot, onClose }: ProjectPanelProp
             this is the same link in a form that can be copied or opened in a
             new tab without reading it out of the URL. */}
         <Link
-          href={mapLotHref(lot.id)}
+          href={mapLotHref({ projectId: project.id, lotId: lot.id })}
           className="text-xs text-ink-muted underline underline-offset-2 hover:text-ink"
         >
           {t("map.linkToSection")}
