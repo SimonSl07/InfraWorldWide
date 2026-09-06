@@ -79,7 +79,9 @@ export default function SiteNav({
         ))}
       </nav>
 
-      <div className="ml-auto hidden md:flex items-center gap-4">{children}</div>
+      <div className="ml-auto hidden md:flex items-center gap-4">
+        {children}
+      </div>
 
       <button
         ref={buttonRef}

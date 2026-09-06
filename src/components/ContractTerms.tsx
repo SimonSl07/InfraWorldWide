@@ -30,7 +30,9 @@ export default function ContractTerms({
     <div className="mt-3 text-sm">
       <div className="text-ink-muted">{t("project.contract")}</div>
       {parts.length > 0 && <div className="mt-0.5">{parts.join(" · ")}</div>}
-      {note && <p className="mt-1 text-xs leading-snug text-ink-muted">{note}</p>}
+      {note && (
+        <p className="mt-1 text-xs leading-snug text-ink-muted">{note}</p>
+      )}
     </div>
   );
 }

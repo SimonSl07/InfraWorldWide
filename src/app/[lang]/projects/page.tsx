@@ -88,7 +88,11 @@ export default async function ProjectsPage({
       <section className="mt-8">
         <h2 className="text-lg font-semibold">{t("openings")}</h2>
         <div className="mt-4 grid gap-8 sm:grid-cols-2">
-          <OpeningList title={t("pastOpenings")} openings={past} locale={lang} />
+          <OpeningList
+            title={t("pastOpenings")}
+            openings={past}
+            locale={lang}
+          />
           <OpeningList
             title={t("scheduledOpenings")}
             openings={scheduled}

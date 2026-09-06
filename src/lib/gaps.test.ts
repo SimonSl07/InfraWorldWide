@@ -38,7 +38,10 @@ const fx: FxTable = {
   note: "test",
   sources: [{ title: "t", url: "https://example.org/" }],
   rates: {
-    RON: { label: { en: "Romanian leu" }, perEur: { "2015": 4.5, "2016": 4.5 } },
+    RON: {
+      label: { en: "Romanian leu" },
+      perEur: { "2015": 4.5, "2016": 4.5 },
+    },
   },
 };
 
@@ -94,7 +97,9 @@ describe("findGaps", () => {
   });
 
   it("always emits one coverage row per deflator and fx series", () => {
-    const gaps = findGaps(scan([project()])).filter((g) => g.priority === "info");
+    const gaps = findGaps(scan([project()])).filter(
+      (g) => g.priority === "info",
+    );
     expect(gaps.map((g) => g.project).sort()).toEqual([
       "deflator:EUR",
       "deflator:RON",
@@ -109,7 +114,9 @@ describe("findGaps", () => {
 
 describe("cost gaps", () => {
   it("flags a lot with no cost at all, with length and status in the detail", () => {
-    const gaps = findGaps(scan([project({ lots: [lot("l1", { cost: undefined })] })]));
+    const gaps = findGaps(
+      scan([project({ lots: [lot("l1", { cost: undefined })] })]),
+    );
     const gap = gaps.find((g) => g.id.endsWith("no-cost"))!;
     expect(gap.priority).toBe("high");
     expect(gap.field).toBe("cost");
@@ -121,7 +128,9 @@ describe("cost gaps", () => {
 
   it("flags an opened lot that has an estimate but no outturn", () => {
     const gaps = findGaps(
-      scan([project({ lots: [lot("l1", { cost: { estimated: money(100) } })] })]),
+      scan([
+        project({ lots: [lot("l1", { cost: { estimated: money(100) } })] }),
+      ]),
     );
     const gap = gaps.find((g) => g.id.endsWith("opened-no-actual"))!;
     expect(gap.priority).toBe("high");
@@ -176,9 +185,9 @@ describe("reference-table coverage", () => {
 
   it("does not ask fx for a cost already in the base currency", () => {
     const cost = { estimated: money(570, "EUR", 2026) };
-    expect(codes(scan([project({ lots: [lot("l1", { cost })] })]))).not.toContain(
-      "no-fx",
-    );
+    expect(
+      codes(scan([project({ lots: [lot("l1", { cost })] })])),
+    ).not.toContain("no-fx");
   });
 
   it("flags a figure with no price year, and asks the tables nothing", () => {
@@ -187,7 +196,9 @@ describe("reference-table coverage", () => {
     const gap = gaps.find((g) => g.id.endsWith("no-price-year"))!;
     expect(gap.priority).toBe("high");
     expect(gap.detail).toBe("1162.81M USD");
-    expect(codes(scan([project({ lots: [lot("l1", { cost })] })]))).not.toContain("no-fx");
+    expect(
+      codes(scan([project({ lots: [lot("l1", { cost })] })])),
+    ).not.toContain("no-fx");
   });
 
   it("names the scope in the detail when the figure carries one", () => {
@@ -254,13 +265,23 @@ describe("cost per km", () => {
 
   it("converts to euro before comparing, and skips what it cannot convert", () => {
     const convertible = project({
-      lots: [lot("l1", { lengthKm: 10, cost: { estimated: money(900, "RON", 2016) } })],
+      lots: [
+        lot("l1", {
+          lengthKm: 10,
+          cost: { estimated: money(900, "RON", 2016) },
+        }),
+      ],
     });
     // 900M RON / 4.5 = 200M EUR over 10 km = 20 M EUR/km, inside the band.
     expect(codes(scan([convertible]))).not.toContain("cost-per-km-high");
 
     const unconvertible = project({
-      lots: [lot("l1", { lengthKm: 10, cost: { estimated: money(900, "RON", 2026) } })],
+      lots: [
+        lot("l1", {
+          lengthKm: 10,
+          cost: { estimated: money(900, "RON", 2026) },
+        }),
+      ],
     });
     expect(codes(scan([unconvertible]))).not.toContain("cost-per-km-high");
   });
@@ -292,7 +313,11 @@ describe("cost per km", () => {
         project({
           lots: [
             lot("l1", {
-              dates: { opened: "2020", constructionStart: "2013", tenderAwarded: "2012" },
+              dates: {
+                opened: "2020",
+                constructionStart: "2013",
+                tenderAwarded: "2012",
+              },
               cost: { estimated: money(100), actual: money(110, "EUR", 2016) },
             }),
           ],
@@ -310,11 +335,15 @@ describe("date gaps", () => {
     const gaps = findGaps(
       scan([
         project({
-          lots: [lot("l1", { dates: { opened: "1984", tenderAwarded: "1980" } })],
+          lots: [
+            lot("l1", { dates: { opened: "1984", tenderAwarded: "1980" } }),
+          ],
         }),
       ]),
     );
-    const gap = gaps.find((g) => g.id.endsWith("opened-no-construction-start"))!;
+    const gap = gaps.find((g) =>
+      g.id.endsWith("opened-no-construction-start"),
+    )!;
     expect(gap.priority).toBe("high");
     expect(gap.detail).toBe("opened 1984");
   });
@@ -327,9 +356,13 @@ describe("date gaps", () => {
         }),
       ]),
     );
-    const start = gaps.find((g) => g.id.endsWith("building-no-construction-start"))!;
+    const start = gaps.find((g) =>
+      g.id.endsWith("building-no-construction-start"),
+    )!;
     expect(start.priority).toBe("high");
-    const opening = gaps.find((g) => g.id.endsWith("building-no-expected-opening"))!;
+    const opening = gaps.find((g) =>
+      g.id.endsWith("building-no-expected-opening"),
+    )!;
     expect(opening.priority).toBe("medium");
     expect(opening.detail).toBe("start ?");
   });
@@ -339,18 +372,31 @@ describe("date gaps", () => {
       scan([
         project({
           lots: [
-            lot("l1", { status: "under_construction", dates: { constructionStart: "2023-09" } }),
+            lot("l1", {
+              status: "under_construction",
+              dates: { constructionStart: "2023-09" },
+            }),
           ],
         }),
       ]),
     );
-    const gap = gaps.find((g) => g.id.endsWith("building-no-expected-opening"))!;
+    const gap = gaps.find((g) =>
+      g.id.endsWith("building-no-expected-opening"),
+    )!;
     expect(gap.detail).toBe("start 2023-09");
   });
 
   it("flags an opened lot with no tender award date", () => {
     const gaps = findGaps(
-      scan([project({ lots: [lot("l1", { dates: { opened: "2012-06", constructionStart: "2010" } })] })]),
+      scan([
+        project({
+          lots: [
+            lot("l1", {
+              dates: { opened: "2012-06", constructionStart: "2010" },
+            }),
+          ],
+        }),
+      ]),
     );
     const gap = gaps.find((g) => g.id.endsWith("no-tender-award"))!;
     expect(gap.priority).toBe("low");
@@ -368,20 +414,28 @@ describe("date gaps", () => {
         }),
       ]),
     );
-    expect(gaps.find((g) => g.id === "ro/ro-a1/l1/no-schedule-date")!.issue).toBe(
-      "planned lot has no announced or expected date",
-    );
-    expect(gaps.find((g) => g.id === "ro/ro-a1/l2/no-schedule-date")!.issue).toBe(
-      "tendered lot has no announced or expected date",
-    );
+    expect(
+      gaps.find((g) => g.id === "ro/ro-a1/l1/no-schedule-date")!.issue,
+    ).toBe("planned lot has no announced or expected date");
+    expect(
+      gaps.find((g) => g.id === "ro/ro-a1/l2/no-schedule-date")!.issue,
+    ).toBe("tendered lot has no announced or expected date");
   });
 });
 
 describe("overdue expected openings", () => {
-  const overdue = (expectedOpening: string, today: string, status: Status = "under_construction") =>
+  const overdue = (
+    expectedOpening: string,
+    today: string,
+    status: Status = "under_construction",
+  ) =>
     codes(
       scan(
-        [project({ lots: [lot("l1", { status, dates: { expectedOpening } })] })],
+        [
+          project({
+            lots: [lot("l1", { status, dates: { expectedOpening } })],
+          }),
+        ],
         today,
       ),
     ).includes("overdue-expected-opening");
@@ -414,7 +468,10 @@ describe("overdue expected openings", () => {
             lots: [
               lot("l1", {
                 status: "under_construction",
-                dates: { constructionStart: "2018", expectedOpening: "2024-06" },
+                dates: {
+                  constructionStart: "2018",
+                  expectedOpening: "2024-06",
+                },
               }),
             ],
           }),
@@ -425,7 +482,9 @@ describe("overdue expected openings", () => {
     const gap = gaps.find((g) => g.id.endsWith("overdue-expected-opening"))!;
     expect(gap.priority).toBe("high");
     expect(gap.field).toBe("dates.expectedOpening");
-    expect(gap.detail).toBe("expected 2024-06, 26 months ago, still under_construction");
+    expect(gap.detail).toBe(
+      "expected 2024-06, 26 months ago, still under_construction",
+    );
   });
 });
 
@@ -443,7 +502,9 @@ describe("attribution gaps", () => {
     const gaps = findGaps(
       scan([
         project({
-          lots: [lot("l1", { contractors: [], funding: undefined, lengthKm: 3.5 })],
+          lots: [
+            lot("l1", { contractors: [], funding: undefined, lengthKm: 3.5 }),
+          ],
         }),
       ]),
     );
@@ -465,22 +526,29 @@ describe("attribution gaps", () => {
               status: "tendered",
               contract: { noticeReference: "award report" },
             }),
-            lot("l3", { status: "under_construction", contract: { executionMonths: 20 } }),
-            lot("l4", { status: "under_construction", contract: { value: money(50) } }),
+            lot("l3", {
+              status: "under_construction",
+              contract: { executionMonths: 20 },
+            }),
+            lot("l4", {
+              status: "under_construction",
+              contract: { value: money(50) },
+            }),
             lot("l5", { status: "opened", contract: undefined }),
           ],
         }),
       ]),
     );
-    expect(gaps.filter((g) => g.id.endsWith("no-contract-terms")).map((g) => g.lot)).toEqual([
-      "l1",
-      "l2",
-    ]);
+    expect(
+      gaps.filter((g) => g.id.endsWith("no-contract-terms")).map((g) => g.lot),
+    ).toEqual(["l1", "l2"]);
   });
 
   it("flags a project resting on a single source", () => {
     const gaps = findGaps(
-      scan([project({ sources: [{ title: "only", url: "https://example.org/1" }] })]),
+      scan([
+        project({ sources: [{ title: "only", url: "https://example.org/1" }] }),
+      ]),
     );
     const gap = gaps.find((g) => g.id.endsWith("single-source"))!;
     expect(gap.priority).toBe("medium");
@@ -500,7 +568,9 @@ describe("attribution gaps", () => {
     expect(gaps.find((g) => g.id.endsWith("name-ro-missing"))!.issue).toBe(
       "missing Romanian name",
     );
-    expect(gaps.find((g) => g.id.endsWith("description-ro-missing"))!.priority).toBe("low");
+    expect(
+      gaps.find((g) => g.id.endsWith("description-ro-missing"))!.priority,
+    ).toBe("low");
     expect(gaps.find((g) => g.id.endsWith("lot-name-ro-missing"))!.issue).toBe(
       "missing Romanian lot name",
     );

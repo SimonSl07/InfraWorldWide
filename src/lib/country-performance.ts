@@ -1,9 +1,5 @@
 import { lotCostRows, type CostOptions } from "./performance";
-import {
-  crossProjectMetrics,
-  rankByCountry,
-  type LotMetric,
-} from "./rankings";
+import { crossProjectMetrics, rankByCountry, type LotMetric } from "./rankings";
 
 /**
  * A country's delivery record as one row: how late it runs, how often it

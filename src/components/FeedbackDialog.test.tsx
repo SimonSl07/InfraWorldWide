@@ -20,7 +20,9 @@ const { default: FeedbackDialog } = await import("./FeedbackDialog");
 
 // jsdom implements <dialog> but not showModal/close.
 beforeEach(() => {
-  HTMLDialogElement.prototype.showModal = function showModal(this: HTMLDialogElement) {
+  HTMLDialogElement.prototype.showModal = function showModal(
+    this: HTMLDialogElement,
+  ) {
     this.open = true;
   };
   HTMLDialogElement.prototype.close = function close(this: HTMLDialogElement) {
@@ -76,7 +78,10 @@ describe("FeedbackDialog", () => {
     await user.click(screen.getByRole("button", { name: "submit" }));
 
     await waitFor(() => expect(fetchMock).toHaveBeenCalledOnce());
-    const [, init] = fetchMock.mock.calls[0] as unknown as [string, RequestInit];
+    const [, init] = fetchMock.mock.calls[0] as unknown as [
+      string,
+      RequestInit,
+    ];
     const body = init.body as FormData;
     expect(body.get("locale")).toBe("ro");
     expect(body.get("pageUrl")).toBe(window.location.href);
@@ -169,7 +174,10 @@ describe("FeedbackDialog", () => {
 
     await user.click(screen.getByRole("button", { name: "submit" }));
     await waitFor(() => expect(fetchMock).toHaveBeenCalledOnce());
-    const [, init] = fetchMock.mock.calls[0] as unknown as [string, RequestInit];
+    const [, init] = fetchMock.mock.calls[0] as unknown as [
+      string,
+      RequestInit,
+    ];
     expect((init.body as FormData).get("photo")).toBeInstanceOf(File);
   });
 });

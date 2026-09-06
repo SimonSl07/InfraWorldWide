@@ -356,7 +356,9 @@ function summarize(
     km: members.reduce((sum, m) => sum + m.lengthKm, 0),
     overrun: {
       estimate: stat(
-        members.flatMap((m) => (m.overrun.estimate ? [m.overrun.estimate.pct] : [])),
+        members.flatMap((m) =>
+          m.overrun.estimate ? [m.overrun.estimate.pct] : [],
+        ),
       ),
       award: stat(
         members.flatMap((m) => (m.overrun.award ? [m.overrun.award.pct] : [])),
@@ -438,7 +440,9 @@ export interface GroupSortOptions {
 
 function statFor(group: GroupRanking, metric: GroupMetric): GroupStat {
   if (metric === "slip") return group.slip;
-  return metric === "overrunEstimate" ? group.overrun.estimate : group.overrun.award;
+  return metric === "overrunEstimate"
+    ? group.overrun.estimate
+    : group.overrun.award;
 }
 
 /**

@@ -1,6 +1,4 @@
-import {
-  ALL_CATEGORIES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import { formatKm } from "@/lib/format";
 import type { DecadeBucket } from "@/lib/country-growth";
@@ -63,7 +61,9 @@ export default function CountryGrowthChart({
               <span className="bg-surface pr-1">{formatKm(max, locale)}</span>
             </div>
             <div className="absolute inset-x-0 top-1/2 border-t border-dashed border-line">
-              <span className="bg-surface pr-1">{formatKm(max / 2, locale)}</span>
+              <span className="bg-surface pr-1">
+                {formatKm(max / 2, locale)}
+              </span>
             </div>
           </div>
         )}
@@ -72,33 +72,33 @@ export default function CountryGrowthChart({
           aria-label={title}
           className={`flex items-end border-b border-line ${compact ? "h-12 gap-px" : "h-56 gap-2"}`}
         >
-        {buckets.map((bucket) => (
-          <div
-            key={bucket.decade}
-            className="group flex h-full flex-1 flex-col justify-end"
-            title={`${decadeLabel(bucket.decade)}: ${formatKm(bucket.km, locale)}`}
-          >
+          {buckets.map((bucket) => (
             <div
-              className="flex w-full flex-col-reverse justify-start"
-              style={{ height: `${(bucket.km / max) * 100}%` }}
+              key={bucket.decade}
+              className="group flex h-full flex-1 flex-col justify-end"
+              title={`${decadeLabel(bucket.decade)}: ${formatKm(bucket.km, locale)}`}
             >
-              {present.map((category) => {
-                const km = bucket.byCategory[category];
-                if (km <= 0) return null;
-                return (
-                  <div
-                    key={category}
-                    style={{
-                      height: `${(km / bucket.km) * 100}%`,
-                      backgroundColor: categoryVar(category),
-                    }}
-                    title={`${decadeLabel(bucket.decade)} · ${categoryLabel(category)}: ${formatKm(km, locale)}`}
-                  />
-                );
-              })}
+              <div
+                className="flex w-full flex-col-reverse justify-start"
+                style={{ height: `${(bucket.km / max) * 100}%` }}
+              >
+                {present.map((category) => {
+                  const km = bucket.byCategory[category];
+                  if (km <= 0) return null;
+                  return (
+                    <div
+                      key={category}
+                      style={{
+                        height: `${(km / bucket.km) * 100}%`,
+                        backgroundColor: categoryVar(category),
+                      }}
+                      title={`${decadeLabel(bucket.decade)} · ${categoryLabel(category)}: ${formatKm(km, locale)}`}
+                    />
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
         </div>
       </div>
 

@@ -15,7 +15,10 @@ const table: CorridorTable = {
   corridors: {
     "ten-t-rhine-danube": {
       scheme: "ten-t",
-      name: { en: "TEN-T Rhine–Danube Corridor", ro: "Coridorul TEN-T Rin–Dunăre" },
+      name: {
+        en: "TEN-T Rhine–Danube Corridor",
+        ro: "Coridorul TEN-T Rin–Dunăre",
+      },
       route: "Strasbourg – Vienna – Budapest – Arad – Brașov – Constanța",
       sources: [{ title: "EC", url: "https://example.org/tent" }],
     },
@@ -60,21 +63,31 @@ function project(
   } as Project;
 }
 
-const roA1 = project("ro-a1", ["pan-european-iv"], [
-  lot({ status: "opened", lengthKm: 40, dates: { opened: "2015" } }),
-  lot({
-    status: "under_construction",
-    lengthKm: 20,
-    dates: { constructionStart: "2024-01" },
-  }),
-]);
-const bgA3 = project("bg-a3", ["pan-european-iv"], [
-  lot({ status: "opened", lengthKm: 30, dates: { opened: "2019" } }),
-  lot({ status: "planned", lengthKm: 15 }),
-]);
-const rsX = project("rs-x", ["pan-european-x"], [
-  lot({ status: "opened", lengthKm: 25, dates: { opened: "2018" } }),
-]);
+const roA1 = project(
+  "ro-a1",
+  ["pan-european-iv"],
+  [
+    lot({ status: "opened", lengthKm: 40, dates: { opened: "2015" } }),
+    lot({
+      status: "under_construction",
+      lengthKm: 20,
+      dates: { constructionStart: "2024-01" },
+    }),
+  ],
+);
+const bgA3 = project(
+  "bg-a3",
+  ["pan-european-iv"],
+  [
+    lot({ status: "opened", lengthKm: 30, dates: { opened: "2019" } }),
+    lot({ status: "planned", lengthKm: 15 }),
+  ],
+);
+const rsX = project(
+  "rs-x",
+  ["pan-european-x"],
+  [lot({ status: "opened", lengthKm: 25, dates: { opened: "2018" } })],
+);
 const unlisted = project("ro-a2", undefined, [
   lot({ status: "opened", lengthKm: 50, dates: { opened: "2012" } }),
 ]);
@@ -116,9 +129,9 @@ describe("listCorridors", () => {
 
 describe("corridorProjects", () => {
   it("returns the projects that claim the corridor", () => {
-    expect(corridorProjects(projects, "pan-european-iv").map((p) => p.id)).toEqual(
-      ["ro-a1", "bg-a3"],
-    );
+    expect(
+      corridorProjects(projects, "pan-european-iv").map((p) => p.id),
+    ).toEqual(["ro-a1", "bg-a3"]);
   });
 
   it("is empty for a corridor nothing claims", () => {
@@ -158,22 +171,28 @@ describe("corridorSummary", () => {
     // governs every other cross-project total governs this one.
     const withShared = [
       ...projects,
-      project("ro-a1-alt", ["pan-european-iv"], [
-        lot({
-          status: "opened",
-          lengthKm: 8,
-          dates: { opened: "2015" },
-          sharedWith: "ro-a1",
-        }),
-        lot({
-          status: "opened",
-          lengthKm: 3,
-          dates: { opened: "2015" },
-          partOf: "ro-a1",
-        }),
-      ]),
+      project(
+        "ro-a1-alt",
+        ["pan-european-iv"],
+        [
+          lot({
+            status: "opened",
+            lengthKm: 8,
+            dates: { opened: "2015" },
+            sharedWith: "ro-a1",
+          }),
+          lot({
+            status: "opened",
+            lengthKm: 3,
+            dates: { opened: "2015" },
+            partOf: "ro-a1",
+          }),
+        ],
+      ),
     ];
-    expect(corridorSummary(withShared, "pan-european-iv", NOW).openedKm).toBe(70);
+    expect(corridorSummary(withShared, "pan-european-iv", NOW).openedKm).toBe(
+      70,
+    );
   });
 });
 
@@ -181,7 +200,11 @@ describe("corridorsOfProject", () => {
   it("resolves a project's corridor keys, most recent scheme first", () => {
     // A project in both schemes shows TEN-T first: it is the designation the
     // money runs on today, and the historic one reads as context after it.
-    const both = project("ro-rail", ["pan-european-iv", "ten-t-rhine-danube"], []);
+    const both = project(
+      "ro-rail",
+      ["pan-european-iv", "ten-t-rhine-danube"],
+      [],
+    );
     expect(corridorsOfProject(both, table).map((c) => c.id)).toEqual([
       "ten-t-rhine-danube",
       "pan-european-iv",

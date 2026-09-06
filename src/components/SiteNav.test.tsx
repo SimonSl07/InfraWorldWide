@@ -52,10 +52,9 @@ describe("SiteNav", () => {
   it("renders every item in the inline navigation", () => {
     renderNav();
     for (const item of items) {
-      expect(screen.getAllByRole("link", { name: item.label })[0]).toHaveAttribute(
-        "href",
-        item.href,
-      );
+      expect(
+        screen.getAllByRole("link", { name: item.label })[0],
+      ).toHaveAttribute("href", item.href);
     }
   });
 
@@ -85,9 +84,9 @@ describe("SiteNav", () => {
     pathname.current = "/countries-foo";
     renderNav();
     expect(
-      screen.queryAllByRole("link").filter(
-        (el) => el.getAttribute("aria-current") === "page",
-      ),
+      screen
+        .queryAllByRole("link")
+        .filter((el) => el.getAttribute("aria-current") === "page"),
     ).toHaveLength(0);
   });
 

@@ -69,8 +69,16 @@ describe("computeOverrun — estimate basis", () => {
   it("keeps the figures as recorded alongside the restated ones", () => {
     const r = computeOverrun(overspent, "estimate", opts);
     if (!r.ok) throw new Error("expected ok");
-    expect(r.overrun.baseline).toEqual({ amount: 1000, currency: "EUR", year: 2013 });
-    expect(r.overrun.actual).toEqual({ amount: 1500, currency: "EUR", year: 2021 });
+    expect(r.overrun.baseline).toEqual({
+      amount: 1000,
+      currency: "EUR",
+      year: 2013,
+    });
+    expect(r.overrun.actual).toEqual({
+      amount: 1500,
+      currency: "EUR",
+      year: 2021,
+    });
   });
 
   it("flags when no restatement was needed", () => {
@@ -163,7 +171,9 @@ describe("computeOverrun — refusals", () => {
   it("refuses without an actual", () => {
     expect(
       computeOverrun(
-        lot({ cost: { estimated: { amount: 500, currency: "EUR", year: 2021 } } }),
+        lot({
+          cost: { estimated: { amount: 500, currency: "EUR", year: 2021 } },
+        }),
         "estimate",
         opts,
       ),
@@ -271,7 +281,10 @@ describe("computeOverruns", () => {
       }),
       opts,
     );
-    expect(isOverrun(both.estimate) && both.estimate.overrun.pct).toBeCloseTo(20, 6);
+    expect(isOverrun(both.estimate) && both.estimate.overrun.pct).toBeCloseTo(
+      20,
+      6,
+    );
     expect(isOverrun(both.award) && both.award.overrun.pct).toBeCloseTo(50, 6);
   });
 
@@ -309,7 +322,7 @@ describe("computeOverrun — across currencies", () => {
     rates: {
       RON: {
         label: { en: "Romanian leu" },
-        perEur: { "2013": 4.4190, "2021": 4.9215, "2025": 5.0 },
+        perEur: { "2013": 4.419, "2021": 4.9215, "2025": 5.0 },
       },
     },
   };
@@ -408,7 +421,10 @@ describe("computeOverrun — across currencies", () => {
         actual: { amount: 1500, currency: "EUR", year: 2021 },
       },
     });
-    const result = computeOverrun(sameCurrency, "estimate", { ...opts, convert });
+    const result = computeOverrun(sameCurrency, "estimate", {
+      ...opts,
+      convert,
+    });
     expect(result.ok).toBe(true);
     if (!result.ok) return;
     expect(result.overrun.nominalPct).toBeCloseTo(50, 5);

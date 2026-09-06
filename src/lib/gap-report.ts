@@ -20,7 +20,10 @@ export const knownGapSchema = z.object({
    */
   id: z
     .string()
-    .regex(/^[^/]+\/[^/]+\/[^/]+\/[^/]+$/, "expected <country>/<project>/<lot>/<code>"),
+    .regex(
+      /^[^/]+\/[^/]+\/[^/]+\/[^/]+$/,
+      "expected <country>/<project>/<lot>/<code>",
+    ),
   /** Why it is settled. Long enough that nobody has to ask again. */
   reason: z.string().min(20),
   /** Date the dead end was established, YYYY-MM-DD. */
@@ -84,7 +87,10 @@ export function partitionKnown(gaps: Gap[], known: KnownGap[]): Partitioned {
 }
 
 /** Gaps at least as severe as `priority`; everything when it is undefined. */
-export function atLeastPriority(gaps: Gap[], priority: GapPriority | undefined): Gap[] {
+export function atLeastPriority(
+  gaps: Gap[],
+  priority: GapPriority | undefined,
+): Gap[] {
   if (!priority) return gaps;
   const limit = priorityRank(priority);
   return gaps.filter((gap) => priorityRank(gap.priority) <= limit);
@@ -172,7 +178,9 @@ export function toTable(gaps: Gap[]): string {
         .join("  ")
         .trimEnd(),
     );
-    blocks.push(`${priority.toUpperCase()} (${rows.length})\n${lines.map((l) => `  ${l}`).join("\n")}`);
+    blocks.push(
+      `${priority.toUpperCase()} (${rows.length})\n${lines.map((l) => `  ${l}`).join("\n")}`,
+    );
   }
   return blocks.join("\n\n");
 }
@@ -201,6 +209,7 @@ export function summarise(gaps: Gap[]): SummaryRow[] {
     }
   }
   return [...buckets.values()].sort(
-    (a, b) => b.count - a.count || priorityRank(a.priority) - priorityRank(b.priority),
+    (a, b) =>
+      b.count - a.count || priorityRank(a.priority) - priorityRank(b.priority),
   );
 }

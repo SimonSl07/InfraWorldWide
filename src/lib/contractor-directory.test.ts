@@ -149,8 +149,9 @@ describe("buildContractorDirectory", () => {
       "lot-3",
       "tunnel-inside-lot-1",
     ]);
-    expect(findContractorProfile(profiles, "max-bogl")!.built.map((m) => m.lotId))
-      .toEqual(["lot-2"]);
+    expect(
+      findContractorProfile(profiles, "max-bogl")!.built.map((m) => m.lotId),
+    ).toEqual(["lot-2"]);
   });
 
   it("names the joint ventures a firm was credited through", () => {
@@ -195,9 +196,9 @@ describe("buildContractorDirectory", () => {
   });
 
   it("carries the same delivery record rankByContractor reports", () => {
-    const group = rankByContractor(
-      collectLotMetrics(projects, options),
-    ).find((g) => g.key === "astaldi")!;
+    const group = rankByContractor(collectLotMetrics(projects, options)).find(
+      (g) => g.key === "astaldi",
+    )!;
     expect(astaldi.ranking).toEqual(group);
     // Not `built.length`: the league counts the lots that count toward the
     // network, and this firm also built a tunnel inside a section another

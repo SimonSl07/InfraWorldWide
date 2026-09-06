@@ -116,9 +116,7 @@ export function dataEndpoints(samples: EndpointSamples): DataEndpoint[] {
     const value = samples[sample];
     return {
       ...endpoint,
-      example: value
-        ? endpoint.path.replace(`{${sample}}`, value)
-        : null,
+      example: value ? endpoint.path.replace(`{${sample}}`, value) : null,
     };
   });
 }
@@ -179,7 +177,9 @@ export function readGeoManifest(): GeoManifest | null {
   if (!stamp) return null;
   const { countries, cities, projects } = parsed as Record<string, unknown>;
   const list = (value: unknown): string[] =>
-    Array.isArray(value) ? value.filter((v): v is string => typeof v === "string") : [];
+    Array.isArray(value)
+      ? value.filter((v): v is string => typeof v === "string")
+      : [];
   return {
     ...stamp,
     countries: list(countries),

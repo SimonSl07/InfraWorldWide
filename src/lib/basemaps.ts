@@ -31,9 +31,24 @@ const STYLE_HOST = "https://tiles.openfreemap.org/styles";
 
 export const BASEMAPS: Basemap[] = [
   // The default is the existing constant itself, not a copy of its text.
-  { id: "positron", url: OPENFREEMAP_STYLE, labelKey: "basemap.positron", dark: false },
-  { id: "liberty", url: `${STYLE_HOST}/liberty`, labelKey: "basemap.liberty", dark: false },
-  { id: "dark", url: `${STYLE_HOST}/dark`, labelKey: "basemap.dark", dark: true },
+  {
+    id: "positron",
+    url: OPENFREEMAP_STYLE,
+    labelKey: "basemap.positron",
+    dark: false,
+  },
+  {
+    id: "liberty",
+    url: `${STYLE_HOST}/liberty`,
+    labelKey: "basemap.liberty",
+    dark: false,
+  },
+  {
+    id: "dark",
+    url: `${STYLE_HOST}/dark`,
+    labelKey: "basemap.dark",
+    dark: true,
+  },
 ];
 
 /** The style the map has always opened on. */

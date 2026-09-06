@@ -18,7 +18,9 @@ const elements: Array<{ tags?: Record<string, string> }> = [
     },
   },
   { tags: { ref: "A7", "construction:opening_date": "2027" } },
-  { tags: { ref: "A2", name: "Autostrada Soarelui", start_date: "2012-11-24" } },
+  {
+    tags: { ref: "A2", name: "Autostrada Soarelui", start_date: "2012-11-24" },
+  },
   { tags: { name: "unnumbered", start_date: "1999" } },
   { tags: { ref: "A3" } },
   {},
@@ -46,7 +48,9 @@ describe("dateRecords", () => {
   });
 
   it("keeps a nameless way, with an empty name list", () => {
-    expect(dateRecords(elements)["A7|construction:opening_date=2027"].names).toBe("");
+    expect(
+      dateRecords(elements)["A7|construction:opening_date=2027"].names,
+    ).toBe("");
   });
 
   it("ignores ways carrying no date tag at all", () => {

@@ -49,7 +49,13 @@ describe("resolveMapClick", () => {
    */
   it("prefers a lot over the country beneath it", () => {
     const result = resolveMapClick(
-      [outline("ro"), lot("l1", [[25, 45], [26, 45]])],
+      [
+        outline("ro"),
+        lot("l1", [
+          [25, 45],
+          [26, 45],
+        ]),
+      ],
       point,
     );
     expect(result).toEqual({ kind: "lot", feature: expect.anything() });
@@ -59,8 +65,14 @@ describe("resolveMapClick", () => {
   });
 
   it("picks the nearest lot when hit areas overlap", () => {
-    const near = lot("near", [[25, 45.01], [26, 45.01]]);
-    const far = lot("far", [[25, 45.4], [26, 45.4]]);
+    const near = lot("near", [
+      [25, 45.01],
+      [26, 45.01],
+    ]);
+    const far = lot("far", [
+      [25, 45.4],
+      [26, 45.4],
+    ]);
     const result = resolveMapClick([outline("ro"), far, near], point);
     expect(
       result.kind === "lot" ? result.feature.properties!.lotId : null,
@@ -108,6 +120,13 @@ describe("hoveredCountry", () => {
    * the country — the tint tracks the fill the pointer is actually over.
    */
   it("is null when only a lot is under the pointer", () => {
-    expect(hoveredCountry([lot("l1", [[25, 45], [26, 45]])])).toBeNull();
+    expect(
+      hoveredCountry([
+        lot("l1", [
+          [25, 45],
+          [26, 45],
+        ]),
+      ]),
+    ).toBeNull();
   });
 });

@@ -11,7 +11,8 @@ import {
 const valid = {
   reason: "map_error",
   email: "reporter@example.com",
-  message: "The A7 Buzău lot is shown as opened but it is still under construction.",
+  message:
+    "The A7 Buzău lot is shown as opened but it is still under construction.",
 };
 
 describe("feedbackSchema", () => {
@@ -44,18 +45,20 @@ describe("feedbackSchema", () => {
   });
 
   it("rejects a malformed email", () => {
-    expect(feedbackSchema.safeParse({ ...valid, email: "not-an-email" }).success).toBe(
-      false,
-    );
+    expect(
+      feedbackSchema.safeParse({ ...valid, email: "not-an-email" }).success,
+    ).toBe(false);
   });
 
   it("rejects a message that is too short or too long", () => {
-    expect(feedbackSchema.safeParse({ ...valid, message: "typo" }).success).toBe(
-      false,
-    );
     expect(
-      feedbackSchema.safeParse({ ...valid, message: "x".repeat(MAX_MESSAGE_LENGTH + 1) })
-        .success,
+      feedbackSchema.safeParse({ ...valid, message: "typo" }).success,
+    ).toBe(false);
+    expect(
+      feedbackSchema.safeParse({
+        ...valid,
+        message: "x".repeat(MAX_MESSAGE_LENGTH + 1),
+      }).success,
     ).toBe(false);
   });
 
@@ -66,9 +69,9 @@ describe("feedbackSchema", () => {
     });
     expect(parsed.data?.message).toBe(valid.message);
     // Whitespace alone must not pass the minimum.
-    expect(feedbackSchema.safeParse({ ...valid, message: " ".repeat(50) }).success).toBe(
-      false,
-    );
+    expect(
+      feedbackSchema.safeParse({ ...valid, message: " ".repeat(50) }).success,
+    ).toBe(false);
   });
 });
 
@@ -83,10 +86,12 @@ describe("validatePhoto", () => {
   });
 
   it("rejects an oversized image", () => {
-    expect(validatePhoto({ type: "image/png", size: MAX_PHOTO_BYTES + 1 })).toBe(
-      "size",
-    );
-    expect(validatePhoto({ type: "image/png", size: MAX_PHOTO_BYTES })).toBeNull();
+    expect(
+      validatePhoto({ type: "image/png", size: MAX_PHOTO_BYTES + 1 }),
+    ).toBe("size");
+    expect(
+      validatePhoto({ type: "image/png", size: MAX_PHOTO_BYTES }),
+    ).toBeNull();
   });
 
   it("checks type before size", () => {

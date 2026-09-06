@@ -33,7 +33,10 @@ export interface ProjectTotals {
   alsoCountedElsewhereKm: number;
 }
 
-export function projectTotals(project: Project, nowMonth: number): ProjectTotals {
+export function projectTotals(
+  project: Project,
+  nowMonth: number,
+): ProjectTotals {
   const totals: ProjectTotals = {
     lots: project.lots.length,
     totalKm: 0,
@@ -44,7 +47,8 @@ export function projectTotals(project: Project, nowMonth: number): ProjectTotals
 
   for (const lot of project.lots) {
     totals.totalKm += lot.lengthKm;
-    if (!countsTowardNetwork(lot)) totals.alsoCountedElsewhereKm += lot.lengthKm;
+    if (!countsTowardNetwork(lot))
+      totals.alsoCountedElsewhereKm += lot.lengthKm;
 
     const state = lotStateAt(lotMonths(lot), nowMonth, nowMonth);
     if (state === "opened") totals.openedKm += lot.lengthKm;

@@ -86,7 +86,9 @@ function loadKnownGaps(root: string): KnownGap[] {
   if (!fs.existsSync(file)) return [];
   const parsed = knownGapsSchema.safeParse(readJson(file));
   if (!parsed.success) {
-    console.warn("! data/known-gaps.json does not match its schema; ignoring it");
+    console.warn(
+      "! data/known-gaps.json does not match its schema; ignoring it",
+    );
     for (const issue of parsed.error.issues) {
       console.warn(`  ${issue.path.join(".")}: ${issue.message}`);
     }
@@ -104,7 +106,9 @@ function main() {
   }
   const priority = arg("--priority") as GapPriority | undefined;
   if (priority && !PRIORITIES.includes(priority)) {
-    console.error(`unknown --priority "${priority}" (expected ${PRIORITIES.join(", ")})`);
+    console.error(
+      `unknown --priority "${priority}" (expected ${PRIORITIES.join(", ")})`,
+    );
     process.exit(2);
   }
 
@@ -112,7 +116,9 @@ function main() {
   const deflators = deflatorTableSchema.parse(
     readJson(path.join(root, "data/deflators.json")),
   ) as DeflatorTable;
-  const fx = fxTableSchema.parse(readJson(path.join(root, "data/fx.json"))) as FxTable;
+  const fx = fxTableSchema.parse(
+    readJson(path.join(root, "data/fx.json")),
+  ) as FxTable;
 
   const today = (arg("--today") ?? new Date().toISOString()).slice(0, 7);
   const all = findGaps({ projects, deflators, fx, today });
@@ -138,7 +144,10 @@ function main() {
       toJson({
         generatedAt: today,
         gaps,
-        suppressed: suppressed.map((s) => ({ gap: s.gap, reason: s.known.reason })),
+        suppressed: suppressed.map((s) => ({
+          gap: s.gap,
+          reason: s.known.reason,
+        })),
       }),
     );
   } else {

@@ -1,5 +1,8 @@
 import { describe, it, expect } from "vitest";
-import { createPropertyExpression, latest } from "@maplibre/maplibre-gl-style-spec";
+import {
+  createPropertyExpression,
+  latest,
+} from "@maplibre/maplibre-gl-style-spec";
 import {
   FUTURE_DASH,
   PROJECTED_HATCH_DASH,
@@ -46,7 +49,11 @@ describe("line-dasharray patterns", () => {
   it("carries no zoom term, so it composes with a width interpolate", () => {
     // Only one zoom-dependent interpolate is allowed per expression and it
     // has to be outermost; the width ramp is already that one.
-    for (const value of [UNDER_CONSTRUCTION_DASH, FUTURE_DASH, PROJECTED_HATCH_DASH]) {
+    for (const value of [
+      UNDER_CONSTRUCTION_DASH,
+      FUTURE_DASH,
+      PROJECTED_HATCH_DASH,
+    ]) {
       expect(JSON.stringify(value)).not.toContain("zoom");
     }
   });

@@ -96,17 +96,7 @@ export default function CompareMap({
     () => ({
       casing: {
         "line-color": theme.casing,
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          4,
-          4,
-          8,
-          7,
-          12,
-          11,
-        ],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 4, 8, 7, 12, 11],
         "line-opacity": 0.7,
       },
       line: {

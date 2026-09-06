@@ -1,7 +1,11 @@
 import { describe, it, expect } from "vitest";
 import { featureFilter } from "@maplibre/maplibre-gl-style-spec";
 import { toMonthIndex } from "./map-filters";
-import { newlyOpenedFilter, openedBetween, type DeltaWindow } from "./map-delta";
+import {
+  newlyOpenedFilter,
+  openedBetween,
+  type DeltaWindow,
+} from "./map-delta";
 import type { LotEntry } from "./lot-list";
 
 const NOW = toMonthIndex(2026, 8);
@@ -27,9 +31,21 @@ function lot(props: Partial<LotEntry>): LotEntry {
 }
 
 describe("openedBetween", () => {
-  const a = lot({ lotId: "a", openedMonth: toMonthIndex(2021, 6), lengthKm: 20 });
-  const b = lot({ lotId: "b", openedMonth: toMonthIndex(2023, 3), lengthKm: 18 });
-  const old = lot({ lotId: "old", openedMonth: toMonthIndex(2010, 1), lengthKm: 99 });
+  const a = lot({
+    lotId: "a",
+    openedMonth: toMonthIndex(2021, 6),
+    lengthKm: 20,
+  });
+  const b = lot({
+    lotId: "b",
+    openedMonth: toMonthIndex(2023, 3),
+    lengthKm: 18,
+  });
+  const old = lot({
+    lotId: "old",
+    openedMonth: toMonthIndex(2010, 1),
+    lengthKm: 99,
+  });
   const never = lot({ lotId: "never", status: "planned" });
 
   const window = (from: number, to: number): DeltaWindow => ({
@@ -147,7 +163,9 @@ describe("openedBetween", () => {
       expectedOpeningDerived: true,
       lengthKm: 12,
     });
-    expect(openedBetween([projected], window(toMonthIndex(2024, 1), NOW)).count).toBe(0);
+    expect(
+      openedBetween([projected], window(toMonthIndex(2024, 1), NOW)).count,
+    ).toBe(0);
     const ahead = openedBetween(
       [projected],
       window(NOW, toMonthIndex(2029, 1)),
@@ -159,8 +177,16 @@ describe("openedBetween", () => {
   });
 
   it("rounds the kilometres to one decimal", () => {
-    const x = lot({ lotId: "x", openedMonth: toMonthIndex(2021, 1), lengthKm: 1.05 });
-    const y = lot({ lotId: "y", openedMonth: toMonthIndex(2021, 2), lengthKm: 2.26 });
+    const x = lot({
+      lotId: "x",
+      openedMonth: toMonthIndex(2021, 1),
+      lengthKm: 1.05,
+    });
+    const y = lot({
+      lotId: "y",
+      openedMonth: toMonthIndex(2021, 2),
+      lengthKm: 2.26,
+    });
     const d = openedBetween([x, y], window(toMonthIndex(2020, 1), NOW));
     expect(d.km).toBe(3.3);
   });
@@ -170,10 +196,13 @@ describe("newlyOpenedFilter", () => {
   // The highlight layer has to agree with the readout, or the map shows a
   // different set of roads from the one the number counts.
   const matches = (spec: unknown, props: LotEntry) =>
-    featureFilter(spec as never).filter({ zoom: 6 } as never, {
-      type: 2,
-      properties: props,
-    } as never);
+    featureFilter(spec as never).filter(
+      { zoom: 6 } as never,
+      {
+        type: 2,
+        properties: props,
+      } as never,
+    );
 
   const cases = [
     lot({ lotId: "a", openedMonth: toMonthIndex(2021, 6) }),
@@ -196,7 +225,9 @@ describe("newlyOpenedFilter", () => {
   it("selects exactly the lots the readout counts", () => {
     let hits = 0;
     for (const w of windows) {
-      const expected = new Set(openedBetween(cases, w).lots.map((l) => l.lotId));
+      const expected = new Set(
+        openedBetween(cases, w).lots.map((l) => l.lotId),
+      );
       const filter = newlyOpenedFilter(w);
       for (const props of cases) {
         const drawn = matches(filter, props);

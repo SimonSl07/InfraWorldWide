@@ -23,11 +23,7 @@ import type { Category, CountryRef, Lot, Project } from "./schema";
  * have been a building site — so it is counted nowhere rather than counted
  * wrongly.
  */
-export type LotState =
-  | "opened"
-  | "under_construction"
-  | "planned"
-  | "unknown";
+export type LotState = "opened" | "under_construction" | "planned" | "unknown";
 
 export interface LotMonths {
   openedMonth: number | null;
@@ -260,7 +256,10 @@ export function rankCountries(
     summaries.map((s) => ({ code: s.code, value: s.total.openedKm })),
   );
   const buildingRank = rankOn(
-    summaries.map((s) => ({ code: s.code, value: s.total.underConstructionKm })),
+    summaries.map((s) => ({
+      code: s.code,
+      value: s.total.underConstructionKm,
+    })),
   );
   const areaRank = rankOn(
     summaries.map((s) => ({ code: s.code, value: kmPerArea(s) })),

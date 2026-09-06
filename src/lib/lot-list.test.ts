@@ -83,10 +83,13 @@ describe("isLotVisible agrees with the MapLibre filters", () => {
   // Two implementations of one rule drift. This pins the plain-TS predicate
   // the keyboard list uses against the expressions the map actually renders.
   const matches = (spec: unknown, props: LotEntry) =>
-    featureFilter(spec as never).filter({ zoom: 6 } as never, {
-      type: 2,
-      properties: props,
-    } as never);
+    featureFilter(spec as never).filter(
+      { zoom: 6 } as never,
+      {
+        type: 2,
+        properties: props,
+      } as never,
+    );
 
   const cases: LotEntry[] = [
     lot({ openedMonth: toMonthIndex(1975, 1) }),
@@ -173,7 +176,11 @@ describe("visibleLots", () => {
 
   it("drops the midpoint marker duplicates the build emits", () => {
     // Bridges and tunnels get a second Point feature with the same props.
-    const props = lot({ lotId: "bridge-1", category: "bridge", openedMonth: 0 });
+    const props = lot({
+      lotId: "bridge-1",
+      category: "bridge",
+      openedMonth: 0,
+    });
     const features = [feature(props), feature({ ...props, marker: true })];
     expect(visibleLots(features, fullSelection(), NOW, NOW)).toHaveLength(1);
   });
@@ -182,7 +189,11 @@ describe("visibleLots", () => {
 describe("searchLots", () => {
   const entries = [
     lot({ lotId: "1", projectName: "A1 motorway", lotName: "Sebeș–Turda" }),
-    lot({ lotId: "2", projectName: "A3 Transylvania", lotName: "Câmpia Turzii" }),
+    lot({
+      lotId: "2",
+      projectName: "A3 Transylvania",
+      lotName: "Câmpia Turzii",
+    }),
     lot({
       lotId: "3",
       projectName: "Bucharest Metro Line M2",

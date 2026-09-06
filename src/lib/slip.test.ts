@@ -126,7 +126,10 @@ describe("computeSlip — completed lots", () => {
       }),
       at("2026-08"),
     );
-    expect(s).toMatchObject({ anchor: "constructionStart", baselineMonths: 24 });
+    expect(s).toMatchObject({
+      anchor: "constructionStart",
+      baselineMonths: 24,
+    });
   });
 
   it("falls back to the award date when construction start is unknown", () => {
@@ -237,7 +240,10 @@ describe("computeSlip — no claim possible", () => {
   it("returns null without a contract block", () => {
     expect(
       computeSlip(
-        lot({ status: "opened", dates: { constructionStart: "2019-01", opened: "2022-01" } }),
+        lot({
+          status: "opened",
+          dates: { constructionStart: "2019-01", opened: "2022-01" },
+        }),
         at("2026-08"),
       ),
     ).toBeNull();
@@ -259,7 +265,11 @@ describe("computeSlip — no claim possible", () => {
   it("returns null without an anchor date", () => {
     expect(
       computeSlip(
-        lot({ status: "opened", dates: { opened: "2022-01" }, contract: { executionMonths: 24 } }),
+        lot({
+          status: "opened",
+          dates: { opened: "2022-01" },
+          contract: { executionMonths: 24 },
+        }),
         at("2026-08"),
       ),
     ).toBeNull();

@@ -99,7 +99,12 @@ describe("classifyLink", () => {
 
 describe("formatLinkReport", () => {
   const results: LinkResult[] = [
-    { url: "https://ok.example/", usedBy: ["ro-a1"], status: 200, verdict: "ok" },
+    {
+      url: "https://ok.example/",
+      usedBy: ["ro-a1"],
+      status: 200,
+      verdict: "ok",
+    },
     {
       url: "https://gone.example/",
       usedBy: ["ro-a2", "ro-a3"],
@@ -116,13 +121,17 @@ describe("formatLinkReport", () => {
 
   it("leads with the dead links and names what cites them", () => {
     const text = formatLinkReport(results);
-    expect(text.indexOf("gone.example")).toBeLessThan(text.indexOf("blocked.example"));
+    expect(text.indexOf("gone.example")).toBeLessThan(
+      text.indexOf("blocked.example"),
+    );
     expect(text).toContain("ro-a2, ro-a3");
     expect(text).toContain("404");
   });
 
   it("counts each verdict", () => {
-    expect(formatLinkReport(results)).toContain("1 dead, 1 blocked, 0 unknown, 1 ok, 3 checked");
+    expect(formatLinkReport(results)).toContain(
+      "1 dead, 1 blocked, 0 unknown, 1 ok, 3 checked",
+    );
   });
 
   it("does not list the links that answered", () => {

@@ -49,7 +49,8 @@ export interface DiffOptions {
 /** Structural equality, deep enough for the shallow records used here. */
 function same(a: unknown, b: unknown): boolean {
   if (a === b) return true;
-  if (a === null || b === null || a === undefined || b === undefined) return false;
+  if (a === null || b === null || a === undefined || b === undefined)
+    return false;
   if (typeof a !== "object" || typeof b !== "object") return false;
   return JSON.stringify(a) === JSON.stringify(b);
 }
@@ -60,7 +61,12 @@ export function diffRecords<T extends Rec>(
   options: DiffOptions = {},
 ): RecordDiff<T> {
   const ignore = new Set(options.ignore ?? []);
-  const diff: RecordDiff<T> = { added: [], removed: [], changed: [], unchanged: 0 };
+  const diff: RecordDiff<T> = {
+    added: [],
+    removed: [],
+    changed: [],
+    unchanged: 0,
+  };
 
   for (const key of Object.keys(next).sort()) {
     const before = prev[key];
@@ -69,7 +75,9 @@ export function diffRecords<T extends Rec>(
       continue;
     }
     const after = next[key];
-    const changed = [...new Set([...Object.keys(before), ...Object.keys(after)])]
+    const changed = [
+      ...new Set([...Object.keys(before), ...Object.keys(after)]),
+    ]
       .filter((f) => !ignore.has(f))
       .filter((f) => !same(fields(before)[f], fields(after)[f]))
       .sort();
@@ -142,7 +150,11 @@ export function formatDiff<T extends Rec>(
   return lines.join("\n");
 }
 
-function summary<T extends Rec>(record: T, options: FormatOptions, max: number): string {
+function summary<T extends Rec>(
+  record: T,
+  options: FormatOptions,
+  max: number,
+): string {
   const parts = (options.summaryFields ?? [])
     .filter((f) => fields(record)[f] !== undefined)
     .map((f) => `${f}=${show(fields(record)[f], max)}`);

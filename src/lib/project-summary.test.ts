@@ -92,7 +92,9 @@ describe("projectTotals", () => {
     // An old section with an opening date and no recorded start is open, and
     // a section whose stated status lags its dates must not contradict the map.
     const totals = projectTotals(
-      project([lot({ status: "planned", lengthKm: 12, dates: { opened: "1999" } })]),
+      project([
+        lot({ status: "planned", lengthKm: 12, dates: { opened: "1999" } }),
+      ]),
       NOW,
     );
     expect(totals.openedKm).toBe(12);
@@ -141,7 +143,10 @@ describe("fundingBreakdown", () => {
         }),
       ]),
     );
-    expect(rows[0].details).toEqual([{ en: "CEF, 85%" }, { en: "Cohesion Fund" }]);
+    expect(rows[0].details).toEqual([
+      { en: "CEF, 85%" },
+      { en: "Cohesion Fund" },
+    ]);
   });
 
   it("is empty when no section records a funding source", () => {

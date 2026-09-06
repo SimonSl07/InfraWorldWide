@@ -51,7 +51,9 @@ afterEach(() => {
 describe("POST /api/feedback", () => {
   it("rejects a malformed submission with 400 and the failing fields", async () => {
     const POST = await loadRoute();
-    const res = await POST(post(submission({ email: "not-an-email" }), IDENTIFIED));
+    const res = await POST(
+      post(submission({ email: "not-an-email" }), IDENTIFIED),
+    );
 
     expect(res.status).toBe(400);
     const body = await res.json();
@@ -64,7 +66,10 @@ describe("POST /api/feedback", () => {
     const res = await POST(post(submission({ website: "spam" }), IDENTIFIED));
 
     expect(res.status).toBe(200);
-    await expect(res.json()).resolves.toMatchObject({ ok: true, delivered: false });
+    await expect(res.json()).resolves.toMatchObject({
+      ok: true,
+      delivered: false,
+    });
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
@@ -85,7 +90,9 @@ describe("POST /api/feedback", () => {
     const POST = await loadRoute();
 
     for (let i = 0; i < 5; i++) {
-      await POST(post(submission(), { "x-vercel-forwarded-for": "203.0.113.7" }));
+      await POST(
+        post(submission(), { "x-vercel-forwarded-for": "203.0.113.7" }),
+      );
     }
     const other = await POST(
       post(submission(), { "x-vercel-forwarded-for": "203.0.113.8" }),
@@ -111,7 +118,10 @@ describe("POST /api/feedback", () => {
     const res = await POST(post(submission(), IDENTIFIED));
 
     expect(res.status).toBe(200);
-    await expect(res.json()).resolves.toMatchObject({ ok: true, delivered: true });
+    await expect(res.json()).resolves.toMatchObject({
+      ok: true,
+      delivered: true,
+    });
     expect(fetchMock).toHaveBeenCalledOnce();
     const [url, init] = fetchMock.mock.calls[0] as [string, RequestInit];
     expect(url).toBe("https://hooks.example.com/abc");
@@ -125,7 +135,9 @@ describe("POST /api/feedback", () => {
     const res = await POST(post(submission(), IDENTIFIED));
 
     expect(res.status).toBe(502);
-    await expect(res.json()).resolves.toMatchObject({ error: "delivery_failed" });
+    await expect(res.json()).resolves.toMatchObject({
+      error: "delivery_failed",
+    });
   });
 
   it("returns 502 when the webhook request throws", async () => {
@@ -142,7 +154,10 @@ describe("POST /api/feedback", () => {
     const res = await POST(post(submission(), IDENTIFIED));
 
     expect(res.status).toBe(200);
-    await expect(res.json()).resolves.toMatchObject({ ok: true, delivered: false });
+    await expect(res.json()).resolves.toMatchObject({
+      ok: true,
+      delivered: false,
+    });
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
@@ -155,7 +170,9 @@ describe("POST /api/feedback", () => {
     const res = await POST(post(submission(), IDENTIFIED));
 
     expect(res.status).toBe(503);
-    await expect(res.json()).resolves.toMatchObject({ error: "not_configured" });
+    await expect(res.json()).resolves.toMatchObject({
+      error: "not_configured",
+    });
   });
 
   it("rejects a photo of the wrong type", async () => {
@@ -200,15 +217,23 @@ describe("POST /api/feedback", () => {
     const POST = await loadRoute();
 
     for (let i = 0; i < 5; i++) {
-      await POST(post(submission(), { "x-vercel-forwarded-for": "203.0.113.7" }));
+      await POST(
+        post(submission(), { "x-vercel-forwarded-for": "203.0.113.7" }),
+      );
     }
     expect(
-      (await POST(post(submission(), { "x-vercel-forwarded-for": "203.0.113.7" })))
-        .status,
+      (
+        await POST(
+          post(submission(), { "x-vercel-forwarded-for": "203.0.113.7" }),
+        )
+      ).status,
     ).toBe(429);
     expect(
-      (await POST(post(submission(), { "x-vercel-forwarded-for": "203.0.113.8" })))
-        .status,
+      (
+        await POST(
+          post(submission(), { "x-vercel-forwarded-for": "203.0.113.8" }),
+        )
+      ).status,
     ).toBe(200);
   });
 });
