@@ -32,9 +32,7 @@ export const MAPLIBRE_STRING_KEYS: Record<string, string> = {
  * both locales, and the imperial ids never render because the scale bar is
  * mounted in metric.
  */
-export function mapLocale(
-  t: (key: string) => string,
-): Record<string, string> {
+export function mapLocale(t: (key: string) => string): Record<string, string> {
   return Object.fromEntries(
     Object.entries(MAPLIBRE_STRING_KEYS).map(([id, key]) => [id, t(key)]),
   );

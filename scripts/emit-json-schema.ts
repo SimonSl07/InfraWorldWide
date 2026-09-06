@@ -27,14 +27,46 @@ import {
 const OUT_DIR = path.join(process.cwd(), "schema");
 
 const TARGETS = [
-  { file: "project.schema.json", schema: projectSchema, title: "InfraWorldWide project" },
-  { file: "countries.schema.json", schema: countryTableSchema, title: "InfraWorldWide country table" },
-  { file: "cities.schema.json", schema: cityTableSchema, title: "InfraWorldWide city table" },
-  { file: "deflators.schema.json", schema: deflatorTableSchema, title: "InfraWorldWide deflator table" },
-  { file: "fx.schema.json", schema: fxTableSchema, title: "InfraWorldWide FX table" },
-  { file: "corridors.schema.json", schema: corridorTableSchema, title: "InfraWorldWide corridor table" },
-  { file: "programmes.schema.json", schema: programmeTableSchema, title: "InfraWorldWide funding programme table" },
-  { file: "operators.schema.json", schema: operatorTableSchema, title: "InfraWorldWide operator table" },
+  {
+    file: "project.schema.json",
+    schema: projectSchema,
+    title: "InfraWorldWide project",
+  },
+  {
+    file: "countries.schema.json",
+    schema: countryTableSchema,
+    title: "InfraWorldWide country table",
+  },
+  {
+    file: "cities.schema.json",
+    schema: cityTableSchema,
+    title: "InfraWorldWide city table",
+  },
+  {
+    file: "deflators.schema.json",
+    schema: deflatorTableSchema,
+    title: "InfraWorldWide deflator table",
+  },
+  {
+    file: "fx.schema.json",
+    schema: fxTableSchema,
+    title: "InfraWorldWide FX table",
+  },
+  {
+    file: "corridors.schema.json",
+    schema: corridorTableSchema,
+    title: "InfraWorldWide corridor table",
+  },
+  {
+    file: "programmes.schema.json",
+    schema: programmeTableSchema,
+    title: "InfraWorldWide funding programme table",
+  },
+  {
+    file: "operators.schema.json",
+    schema: operatorTableSchema,
+    title: "InfraWorldWide operator table",
+  },
 ] as const;
 
 function main() {

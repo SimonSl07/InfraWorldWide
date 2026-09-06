@@ -4,12 +4,18 @@ import { getOpenings } from "./timeline";
 
 function lot(
   id: string,
-  dates?: { opened?: string; expectedOpening?: string; constructionStart?: string },
+  dates?: {
+    opened?: string;
+    expectedOpening?: string;
+    constructionStart?: string;
+  },
 ) {
   return {
     id,
     name: { en: `Lot ${id}` },
-    status: dates?.opened ? ("opened" as const) : ("under_construction" as const),
+    status: dates?.opened
+      ? ("opened" as const)
+      : ("under_construction" as const),
     dates,
     lengthKm: 10,
     geometryRef: id,

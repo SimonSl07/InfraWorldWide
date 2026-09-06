@@ -64,7 +64,7 @@ describe("buildOpeningsFeed", () => {
 
   it("is a well-formed RSS channel", () => {
     expect(xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')).toBe(true);
-    expect(xml).toContain("<rss version=\"2.0\"");
+    expect(xml).toContain('<rss version="2.0"');
     expect((xml.match(/<item>/g) ?? []).length).toBe(2);
   });
 
@@ -73,7 +73,7 @@ describe("buildOpeningsFeed", () => {
   });
 
   it("gives each item a stable guid", () => {
-    expect(xml).toContain("<guid isPermaLink=\"false\">ro-a1/sebes-turda</guid>");
+    expect(xml).toContain('<guid isPermaLink="false">ro-a1/sebes-turda</guid>');
   });
 
   it("escapes text that would otherwise break the document", () => {

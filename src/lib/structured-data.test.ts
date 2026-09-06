@@ -1,5 +1,9 @@
 import { describe, it, expect } from "vitest";
-import { breadcrumbList, datasetJsonLd, websiteJsonLd } from "./structured-data";
+import {
+  breadcrumbList,
+  datasetJsonLd,
+  websiteJsonLd,
+} from "./structured-data";
 
 const BASE = "https://infraworldwide.example";
 
@@ -30,7 +34,11 @@ describe("datasetJsonLd", () => {
 
   it("names the countries as spatial coverage", () => {
     const spatial = dataset.spatialCoverage as { name: string }[];
-    expect(spatial.map((s) => s.name)).toEqual(["Romania", "Bulgaria", "Serbia"]);
+    expect(spatial.map((s) => s.name)).toEqual([
+      "Romania",
+      "Bulgaria",
+      "Serbia",
+    ]);
   });
 
   it("points at the machine-readable artifacts", () => {

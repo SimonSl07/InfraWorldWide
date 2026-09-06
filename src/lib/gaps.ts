@@ -190,7 +190,11 @@ export function findGaps(input: GapScanInput): Gap[] {
 function projectGaps(project: Project): GapDraft[] {
   const out: GapDraft[] = [];
   const where = projectFile(project);
-  const base = { country: project.country, project: project.id, whereToLook: where };
+  const base = {
+    country: project.country,
+    project: project.id,
+    whereToLook: where,
+  };
 
   // No outturn anywhere means the whole project is invisible to the delivery
   // rankings, which is worth one row rather than one per lot.
@@ -376,7 +380,8 @@ function lotGaps(
         priority: "low",
         field: "cost.actual.year",
         code: "price-year-far-from-opening",
-        issue: "outturn price year far from opening year (check which year the figure is in)",
+        issue:
+          "outturn price year far from opening year (check which year the figure is in)",
         detail: `price year ${pricedIn}, opened ${openedYear}`,
       });
     }
@@ -405,13 +410,17 @@ function lotGaps(
       continue;
     }
 
-    if (input.deflators.series[money.currency]?.index[String(money.year)] === undefined) {
+    if (
+      input.deflators.series[money.currency]?.index[String(money.year)] ===
+      undefined
+    ) {
       out.push({
         ...base,
         priority: "high",
         field,
         code: `no-deflator`,
-        issue: "price year/currency not in deflators.json (cost cannot be restated)",
+        issue:
+          "price year/currency not in deflators.json (cost cannot be restated)",
         detail: formatMoney(money),
         whereToLook: "data/deflators.json",
       });
@@ -425,7 +434,8 @@ function lotGaps(
         priority: "high",
         field,
         code: `no-fx`,
-        issue: "currency/year missing from fx.json (cost cannot be shown in EUR)",
+        issue:
+          "currency/year missing from fx.json (cost cannot be shown in EUR)",
         detail: formatMoney(money),
         whereToLook: "data/fx.json",
       });
@@ -453,7 +463,8 @@ function lotGaps(
           priority: "medium",
           field,
           code: "cost-per-km-high",
-          issue: "cost per km implausibly HIGH for category (may be a whole-programme figure)",
+          issue:
+            "cost per km implausibly HIGH for category (may be a whole-programme figure)",
           detail,
         });
       } else if (perKm < band.minPerKm) {
@@ -462,7 +473,8 @@ function lotGaps(
           priority: "medium",
           field,
           code: "cost-per-km-low",
-          issue: "cost per km implausibly LOW for category (may be a partial figure or a units error)",
+          issue:
+            "cost per km implausibly LOW for category (may be a partial figure or a units error)",
           detail,
         });
       }
@@ -496,7 +508,10 @@ function lotGaps(
   const hasTerms =
     lot.contract !== undefined &&
     (contractMonths(lot.contract) !== null || lot.contract.value !== undefined);
-  if (!hasTerms && (lot.status === "tendered" || lot.status === "under_construction")) {
+  if (
+    !hasTerms &&
+    (lot.status === "tendered" || lot.status === "under_construction")
+  ) {
     out.push({
       ...base,
       priority: "low",
@@ -534,7 +549,11 @@ function toEuro(money: Money, fx: FxTable): number | null {
  * field records exactly that, so the check defers to it.
  */
 function bandApplies(money: Money): boolean {
-  return money.scope === undefined || money.scope === "works" || money.scope === "total";
+  return (
+    money.scope === undefined ||
+    money.scope === "works" ||
+    money.scope === "total"
+  );
 }
 
 /**
@@ -546,7 +565,9 @@ function coverageGaps(input: GapScanInput): GapDraft[] {
   const out: GapDraft[] = [];
 
   for (const [currency, series] of Object.entries(input.deflators.series)) {
-    const years = Object.keys(series.index).map(Number).sort((a, b) => a - b);
+    const years = Object.keys(series.index)
+      .map(Number)
+      .sort((a, b) => a - b);
     if (years.length === 0) continue;
     out.push({
       priority: "info",
@@ -561,7 +582,9 @@ function coverageGaps(input: GapScanInput): GapDraft[] {
   }
 
   for (const [currency, series] of Object.entries(input.fx.rates)) {
-    const years = Object.keys(series.perEur).map(Number).sort((a, b) => a - b);
+    const years = Object.keys(series.perEur)
+      .map(Number)
+      .sort((a, b) => a - b);
     if (years.length === 0) continue;
     out.push({
       priority: "info",

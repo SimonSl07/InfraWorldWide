@@ -46,7 +46,9 @@ function* walk(dir: string): Generator<string> {
 function loadProjects(root: string, country: string | undefined): Project[] {
   const projects: Project[] = [];
   for (const file of walk(path.join(root, "data/projects"))) {
-    const parsed = projectSchema.safeParse(JSON.parse(fs.readFileSync(file, "utf8")));
+    const parsed = projectSchema.safeParse(
+      JSON.parse(fs.readFileSync(file, "utf8")),
+    );
     if (!parsed.success) continue;
     if (country && parsed.data.country !== country) continue;
     projects.push(parsed.data);
@@ -59,7 +61,9 @@ function loadProjects(root: string, country: string | undefined): Project[] {
  * is wanted. Plenty of servers answer HEAD with 405 or 403 while serving GET
  * fine, so anything that is not a clean answer is retried as a GET.
  */
-async function probe(url: string): Promise<{ status: number | null; error?: string }> {
+async function probe(
+  url: string,
+): Promise<{ status: number | null; error?: string }> {
   for (const method of ["HEAD", "GET"] as const) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
@@ -70,13 +74,22 @@ async function probe(url: string): Promise<{ status: number | null; error?: stri
         signal: controller.signal,
         headers: { "User-Agent": USER_AGENT, Accept: "*/*" },
       });
-      if (method === "HEAD" && (res.status === 405 || res.status === 403 || res.status >= 500)) {
+      if (
+        method === "HEAD" &&
+        (res.status === 405 || res.status === 403 || res.status >= 500)
+      ) {
         continue;
       }
       return { status: res.status };
     } catch (e) {
       if (method === "GET") {
-        return { status: null, error: (e as Error).name === "AbortError" ? "timeout" : (e as Error).message };
+        return {
+          status: null,
+          error:
+            (e as Error).name === "AbortError"
+              ? "timeout"
+              : (e as Error).message,
+        };
       }
     } finally {
       clearTimeout(timer);
@@ -106,7 +119,10 @@ async function main() {
   results.sort((a, b) => a.url.localeCompare(b.url));
   console.log(`\n${formatLinkReport(results)}`);
 
-  if (process.argv.includes("--fail-on-dead") && results.some((r) => r.verdict === "dead")) {
+  if (
+    process.argv.includes("--fail-on-dead") &&
+    results.some((r) => r.verdict === "dead")
+  ) {
     process.exit(1);
   }
 }

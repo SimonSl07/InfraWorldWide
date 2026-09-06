@@ -87,15 +87,15 @@ One more that is easy to miss: a project with a `city` key is off the main map a
 
 None of them run in `npm test`, and none write without being asked.
 
-| Script | Writes? |
-| --- | --- |
-| `report-gaps.ts` | No. Exit code is always 0: a gap is a task, not a defect |
-| `check-links.ts` | No |
-| `refresh-indices.ts` | Only with `--write`, and it refuses to invent values |
-| `fetch-osm-dates.ts` | Only with `--write`, to a snapshot it never reads back into the site |
-| `fetch-country-outlines.ts` | Yes, but `--diff` and `--check` compare instead |
-| `fetch-ted-contracts.ts` | Yes, to its `--out` file; `--diff` and `--check` compare instead |
-| `match-ted-lots.ts` | No. It emits candidates for a person to accept |
+| Script                      | Writes?                                                              |
+| --------------------------- | -------------------------------------------------------------------- |
+| `report-gaps.ts`            | No. Exit code is always 0: a gap is a task, not a defect             |
+| `check-links.ts`            | No                                                                   |
+| `refresh-indices.ts`        | Only with `--write`, and it refuses to invent values                 |
+| `fetch-osm-dates.ts`        | Only with `--write`, to a snapshot it never reads back into the site |
+| `fetch-country-outlines.ts` | Yes, but `--diff` and `--check` compare instead                      |
+| `fetch-ted-contracts.ts`    | Yes, to its `--out` file; `--diff` and `--check` compare instead     |
+| `match-ted-lots.ts`         | No. It emits candidates for a person to accept                       |
 
 `.github/workflows/scheduled-checks.yml` runs the gap report, the link check and the OSM date diff weekly, and keeps one issue up to date. It never fails a run.
 

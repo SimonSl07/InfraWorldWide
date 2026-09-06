@@ -48,7 +48,10 @@ export function collectSourceUrls(projects: Project[]): SourceLink[] {
  */
 export type LinkVerdict = "ok" | "dead" | "blocked" | "unknown";
 
-export function classifyLink(response: { status: number | null; error?: string }): LinkVerdict {
+export function classifyLink(response: {
+  status: number | null;
+  error?: string;
+}): LinkVerdict {
   const status = response.status;
   if (status === null) return "unknown";
   if (status >= 200 && status < 400) return "ok";
@@ -74,14 +77,16 @@ export function formatLinkReport(results: LinkResult[]): string {
     if (rows.length === 0) continue;
     lines.push(`${verdict.toUpperCase()} (${rows.length})`);
     for (const row of rows) {
-      const reason = row.status !== null ? String(row.status) : (row.error ?? "no response");
+      const reason =
+        row.status !== null ? String(row.status) : (row.error ?? "no response");
       lines.push(`  ${reason}  ${row.url}`);
       lines.push(`        cited by ${row.usedBy.join(", ")}`);
     }
     lines.push("");
   }
 
-  const count = (verdict: LinkVerdict) => results.filter((r) => r.verdict === verdict).length;
+  const count = (verdict: LinkVerdict) =>
+    results.filter((r) => r.verdict === verdict).length;
   lines.push(
     `${count("dead")} dead, ${count("blocked")} blocked, ${count("unknown")} unknown, ${count("ok")} ok, ${results.length} checked`,
   );

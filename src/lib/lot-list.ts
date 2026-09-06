@@ -30,11 +30,7 @@ export type LotEntry = LotFeatureProperties;
 /** Which of the map's three line layers a lot belongs in, if any. */
 export type LotState = "opened" | "under_construction" | "future";
 
-function isOpenedBy(
-  lot: LotEntry,
-  month: number,
-  nowMonth: number,
-): boolean {
+function isOpenedBy(lot: LotEntry, month: number, nowMonth: number): boolean {
   if (lot.openedMonth !== null && lot.openedMonth <= month) return true;
   // Looking into the future, an expected opening counts as an opening.
   return (
@@ -82,7 +78,8 @@ export function isLotVisible(
   if (state === null) return false;
   // The opened and under-construction layers answer to the checkbox for the
   // status they represent in the viewed month, whatever the lot declares.
-  if (state === "opened") return isStatusActive(selection, lot.category, "opened");
+  if (state === "opened")
+    return isStatusActive(selection, lot.category, "opened");
   if (state === "under_construction") {
     return isStatusActive(selection, lot.category, "under_construction");
   }

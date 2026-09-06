@@ -36,25 +36,38 @@ interface JsonStat {
  * dimension in these queries is pinned to a single value by the query itself,
  * so nothing has to be summed or chosen.
  */
-export function parseJsonStat(json: unknown, dimension: string): Record<string, YearValues> {
+export function parseJsonStat(
+  json: unknown,
+  dimension: string,
+): Record<string, YearValues> {
   const cube = json as JsonStat;
   const id = cube.id;
   const size = cube.size;
-  if (!Array.isArray(id) || !Array.isArray(size) || !cube.dimension || !cube.value) {
-    throw new Error("not a JSON-stat 2.0 response (no id, size, dimension or value)");
+  if (
+    !Array.isArray(id) ||
+    !Array.isArray(size) ||
+    !cube.dimension ||
+    !cube.value
+  ) {
+    throw new Error(
+      "not a JSON-stat 2.0 response (no id, size, dimension or value)",
+    );
   }
 
   const targetAxis = id.indexOf(dimension);
   const timeAxis = id.indexOf("time");
   if (targetAxis < 0) {
-    throw new Error(`response has no "${dimension}" dimension (has ${id.join(", ")})`);
+    throw new Error(
+      `response has no "${dimension}" dimension (has ${id.join(", ")})`,
+    );
   }
   if (timeAxis < 0) throw new Error('response has no "time" dimension');
 
   const categories = (axis: number): string[] => {
     const index = cube.dimension![id[axis]]?.category?.index ?? {};
     const names: string[] = [];
-    for (const [name, position] of Object.entries(index)) names[position] = name;
+    for (const [name, position] of Object.entries(index))
+      names[position] = name;
     return names;
   };
   const targets = categories(targetAxis);
@@ -128,7 +141,9 @@ export function parseEcbCsv(text: string): Record<string, YearValues> {
   const periodAt = header.indexOf("TIME_PERIOD");
   const valueAt = header.indexOf("OBS_VALUE");
   if (currencyAt < 0 || periodAt < 0 || valueAt < 0) {
-    throw new Error("ECB response has no CURRENCY, TIME_PERIOD and OBS_VALUE columns");
+    throw new Error(
+      "ECB response has no CURRENCY, TIME_PERIOD and OBS_VALUE columns",
+    );
   }
 
   const out: Record<string, YearValues> = {};
@@ -171,7 +186,9 @@ export function diffSeries(
   fetched: YearValues,
   tolerance = 1e-9,
 ): SeriesChange[] {
-  const years = [...new Set([...Object.keys(committed), ...Object.keys(fetched)])].sort();
+  const years = [
+    ...new Set([...Object.keys(committed), ...Object.keys(fetched)]),
+  ].sort();
   const changes: SeriesChange[] = [];
   for (const year of years) {
     const before = committed[year];
@@ -192,12 +209,17 @@ export function diffSeries(
 }
 
 /** The changes to one series, or an empty string when there are none. */
-export function formatSeriesDiff(name: string, changes: SeriesChange[]): string {
+export function formatSeriesDiff(
+  name: string,
+  changes: SeriesChange[],
+): string {
   if (changes.length === 0) return "";
   const lines = [`${name}: ${changes.length} change(s)`];
   for (const change of changes) {
-    if (change.kind === "added") lines.push(`  + ${change.year}: ${change.after}`);
-    else if (change.kind === "removed") lines.push(`  - ${change.year}: ${change.before}`);
+    if (change.kind === "added")
+      lines.push(`  + ${change.year}: ${change.after}`);
+    else if (change.kind === "removed")
+      lines.push(`  - ${change.year}: ${change.before}`);
     else lines.push(`  ~ ${change.year}: ${change.before} -> ${change.after}`);
   }
   return lines.join("\n");

@@ -62,7 +62,10 @@ export default function CountryMiniMap({ country }: { country: string }) {
             id="country-lots-opened"
             type="line"
             filter={OPENED_FILTER}
-            paint={{ "line-color": categoryColorExpr(undefined, theme.category), "line-width": 2.5 }}
+            paint={{
+              "line-color": categoryColorExpr(undefined, theme.category),
+              "line-width": 2.5,
+            }}
             layout={{ "line-cap": "round" }}
           />
           {/* Bridges and tunnels are too short to see at country zoom. */}

@@ -70,7 +70,11 @@ export function relatedProjects(
       candidate.country === project.country &&
       candidate.category === project.category
     ) {
-      byKind.push({ project: candidate, reason: "country_category", shared: [] });
+      byKind.push({
+        project: candidate,
+        reason: "country_category",
+        shared: [],
+      });
     }
   }
 
