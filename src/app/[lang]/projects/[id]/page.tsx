@@ -11,39 +11,20 @@ import { formatDate, formatKm, formatMoney, formatNumber } from "@/lib/format";
 import { categoryVar } from "@/lib/map-theme";
 import { Link } from "@/i18n/navigation";
 import ProjectMiniMap from "@/components/map/ProjectMiniMap";
-import { contractSummaryParts } from "@/lib/contract";
+import { LotsTable } from "@/components/project/LotsTable";
+import { MoneyLine } from "@/components/project/MoneyLine";
+import { SourceEntry } from "@/components/project/SourceEntry";
 import { currentMonth } from "@/lib/slip";
 import { projectCostRows } from "@/lib/performance";
-import {
-  constructionProgress,
-  lotMilestones,
-  type Milestone,
-} from "@/lib/lot-timeline";
 import { fundingBreakdown, projectTotals } from "@/lib/project-summary";
-import { lotCitations, numberSources } from "@/lib/lot-sources";
+import { numberSources } from "@/lib/lot-sources";
 import { relatedProjects } from "@/lib/related-projects";
 import { createLocalizer, localized } from "@/lib/localized";
 import { corridorsOfProject } from "@/lib/corridors";
 import { pageMetadata } from "@/lib/page-metadata";
 import { breadcrumbList, jsonLdScript } from "@/lib/structured-data";
 import { siteUrl } from "@/lib/seo";
-import { isOnMainMap, mapLotHref } from "@/lib/map-link";
-import {
-  isSharedTrack,
-  lotActualCost,
-  lotEstimatedCost,
-  type Money,
-  type Source,
-  type Status,
-} from "@/lib/schema";
-
-const STATUS_BADGE: Record<Status, string> = {
-  opened: "bg-good-soft text-good",
-  under_construction: "bg-warn-soft text-warn",
-  tendered: "bg-info-soft text-info",
-  planned: "bg-surface-raised text-ink-soft",
-  cancelled: "bg-bad-soft text-bad",
-};
+import { isSharedTrack } from "@/lib/schema";
 
 export function generateStaticParams() {
   // Locales are enumerated by the parent [lang] layout.
@@ -124,183 +105,6 @@ export default async function ProjectPage({
   /* ── Citations ───────────────────────────────────────────────────────── */
 
   const sourceNumbers = numberSources(project.sources);
-
-  const Citations = ({ lot }: { lot: (typeof project.lots)[number] }) => {
-    const citations = lotCitations(lot, project.sources);
-    if (
-      citations.refs.length === 0 &&
-      citations.own.length === 0 &&
-      citations.unresolved.length === 0
-    ) {
-      return null;
-    }
-    return (
-      <div
-        className="mt-1 flex flex-wrap items-center gap-1 text-xs font-normal"
-        aria-label={t("project.lotSourcesLabel", { lot: name(lot.name) })}
-        role="group"
-      >
-        {citations.refs.map((source) => {
-          const number = sourceNumbers.get(source.url)!;
-          return (
-            <a
-              key={source.url}
-              href={`#source-${number}`}
-              aria-label={t("project.citationLabel", {
-                number,
-                title: source.title,
-              })}
-              className="rounded bg-surface-raised px-1.5 py-0.5 tabular-nums text-ink-muted hover:text-ink"
-            >
-              {number}
-            </a>
-          );
-        })}
-        {citations.own.map((source) => (
-          <a
-            key={source.url}
-            href={source.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded bg-surface-raised px-1.5 py-0.5 text-ink-muted underline underline-offset-2 hover:text-ink"
-          >
-            {source.title}
-          </a>
-        ))}
-        {/* A reference resolving to nothing is a data fault, and saying so is
-            better than rendering a section that looks uncited. */}
-        {citations.unresolved.map((ref) => (
-          <span
-            key={ref}
-            title={t("project.sourceMissing")}
-            className="rounded bg-bad-soft px-1.5 py-0.5 text-bad"
-          >
-            {ref}
-          </span>
-        ))}
-      </div>
-    );
-  };
-
-  /* ── Milestones ──────────────────────────────────────────────────────── */
-
-  const milestoneLabel = (milestone: Milestone) => {
-    if (milestone.date !== null) return formatDate(milestone.date, lang);
-    // Derived: a contract implies a month, not a day, and stating one would
-    // claim a precision no source published.
-    return `≈${Math.floor(milestone.month / 12)}`;
-  };
-
-  const Timeline = ({ milestones }: { milestones: Milestone[] }) => {
-    if (milestones.length === 0) return <>{"–"}</>;
-    return (
-      <ol className="space-y-1">
-        {milestones.map((milestone) => (
-          <li
-            key={`${milestone.kind}-${milestone.month}`}
-            className="flex items-baseline gap-1.5 whitespace-nowrap"
-          >
-            <span
-              aria-hidden
-              className={`inline-block h-1.5 w-1.5 shrink-0 translate-y-[-1px] rounded-full ${
-                milestone.future
-                  ? "border border-line-strong"
-                  : "bg-ink-faint"
-              }`}
-            />
-            <span className="tabular-nums">{milestoneLabel(milestone)}</span>
-            <span
-              className={milestone.future ? "text-ink-faint" : "text-ink-soft"}
-            >
-              {t(`project.${milestone.kind}`)}
-            </span>
-            {milestone.derived && (
-              <span
-                className="rounded bg-surface-raised px-1 py-0.5 text-[10px] uppercase tracking-wide text-ink-muted"
-                title={t("project.expectedOpeningDerived")}
-              >
-                {t("project.expectedOpeningDerived")}
-              </span>
-            )}
-          </li>
-        ))}
-      </ol>
-    );
-  };
-
-  /**
-   * One recorded cost figure, with everything the source qualified it with.
-   *
-   * The price year is optional, so it is only printed when there is one: a
-   * blank pair of brackets, or worse a year that is not the source's, would
-   * change what the figure claims. Scope and confidence are shown when they
-   * are not the plain case, because a whole-programme total sitting in a
-   * per-section column is exactly the figure that gets misread.
-   */
-  const moneyTag = (text: string) => (
-    <span className="ml-1.5 rounded bg-surface-raised px-1 py-0.5 text-[10px] uppercase tracking-wide text-ink-muted">
-      {text}
-    </span>
-  );
-
-  const moneyLine = (money: Money) => (
-    <>
-      {formatMoney(money, lang)}
-      {money.year !== undefined && (
-        <span className="ml-1 text-xs text-ink-faint">({money.year})</span>
-      )}
-      {money.scope &&
-        money.scope !== "total" &&
-        moneyTag(t(`project.moneyScope.${money.scope}`))}
-      {money.confidence &&
-        money.confidence !== "reported" &&
-        moneyTag(t(`project.moneyConfidence.${money.confidence}`))}
-      {money.note && (
-        <span className="block max-w-xs text-xs leading-snug text-ink-muted">
-          {money.note}
-        </span>
-      )}
-    </>
-  );
-
-  const costLine = (label: string, money: Money) => (
-    <li key={label}>
-      <span className="font-medium text-ink-soft">{label}</span>{" "}
-      {moneyLine(money)}
-    </li>
-  );
-
-  const SourceEntry = ({ source, number }: { source: Source; number: number }) => (
-    <li id={`source-${number}`} className="scroll-mt-24">
-      <a
-        href={source.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="underline underline-offset-2 hover:text-ink"
-      >
-        {source.title}
-      </a>
-      {(source.retrievedOn || source.archiveUrl) && (
-        <span className="ml-2 text-xs text-ink-faint">
-          {source.retrievedOn &&
-            t("project.sourceRetrieved", {
-              date: formatDate(source.retrievedOn, lang),
-            })}
-          {source.retrievedOn && source.archiveUrl && " · "}
-          {source.archiveUrl && (
-            <a
-              href={source.archiveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-ink"
-            >
-              {t("project.sourceArchive")}
-            </a>
-          )}
-        </span>
-      )}
-    </li>
-  );
 
   const headline = [
     { label: t("project.totalLength"), value: formatKm(totals.totalKm, lang) },
@@ -402,224 +206,25 @@ export default async function ProjectPage({
             {t("project.projectCostTitle")}
           </div>
           <div className="mt-1 text-lg font-semibold tabular-nums">
-            {moneyLine(project.cost)}
+            <MoneyLine money={project.cost} locale={lang} t={t} />
           </div>
         </div>
       )}
 
       <div className="mt-6">
-        <ProjectMiniMap
-          country={project.country}
-          projectId={project.id}
-          category={project.category}
-        />
+        <ProjectMiniMap projectId={project.id} category={project.category} />
       </div>
 
       <h2 className="mt-10 text-xl font-semibold">{t("project.lots")}</h2>
-      <div
-        className="mt-4 overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
-        tabIndex={0}
-        role="region"
-        aria-label={t("project.lotsTableLabel", { project: name(project.name) })}
-      >
-        <table className="w-full text-sm border-collapse">
-          <caption className="sr-only">
-            {t("project.lotsTableLabel", { project: name(project.name) })}
-          </caption>
-          <thead>
-            <tr className="text-left text-ink-muted border-b border-line">
-              <th scope="col" className="py-2 pr-4 font-medium">
-                {t("project.lots")}
-              </th>
-              <th scope="col" className="py-2 pr-4 font-medium">
-                {t("project.status")}
-              </th>
-              <th scope="col" className="py-2 pr-4 font-medium">
-                {t("project.length")}
-              </th>
-              <th scope="col" className="py-2 pr-4 font-medium">
-                {t("project.dates")}
-              </th>
-              <th scope="col" className="py-2 pr-4 font-medium">
-                {t("project.cost")}
-              </th>
-              <th scope="col" className="py-2 pr-4 font-medium">
-                {t("project.funding")}
-              </th>
-              <th scope="col" className="py-2 pr-4 font-medium">
-                {t("project.contractors")}
-              </th>
-              <th scope="col" className="py-2 font-medium">
-                {t("project.contract")}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {project.lots.map((lot) => {
-              const estimated = lotEstimatedCost(lot);
-              const actual = lotActualCost(lot);
-              const costLines = [
-                estimated ? costLine(t("project.estimated"), estimated) : null,
-                actual ? costLine(t("project.actual"), actual) : null,
-              ].filter((line) => line !== null);
-              const progress = constructionProgress(lot, nowMonth);
-              return (
-                <tr
-                  key={lot.id}
-                  className="border-b border-line-soft align-top"
-                >
-                  {/* The section names the row, so it is a header cell. */}
-                  <th
-                    scope="row"
-                    className="py-3 pr-4 text-left align-top font-medium"
-                  >
-                    {name(lot.name)}
-                    {lot.sharedWith && (
-                      <div
-                        className="mt-1 text-xs font-normal text-ink-muted"
-                        title={t("project.sharedTrackNote")}
-                      >
-                        <span className="rounded-full bg-surface-raised px-2 py-0.5 text-[11px] font-medium text-ink-soft">
-                          {t("project.sharedTrack")}
-                        </span>{" "}
-                        {t("project.sharedTrackWith", {
-                          project: ownerName(lot.sharedWith),
-                        })}
-                      </div>
-                    )}
-                    {/* Prose about the section. 160 lots carry one, and until
-                        the migration it sat in `contract.noticeReference`
-                        where nothing rendered it. */}
-                    {lot.note && (
-                      <p className="mt-1 max-w-xs text-xs font-normal leading-snug text-ink-muted">
-                        {name(lot.note)}
-                      </p>
-                    )}
-                    <Citations lot={lot} />
-                    {isOnMainMap(project, lot) && (
-                      <div className="mt-1">
-                        <Link
-                          href={mapLotHref({
-                            projectId: project.id,
-                            lotId: lot.id,
-                          })}
-                          aria-label={t("project.showOnMapLabel", {
-                            lot: name(lot.name),
-                          })}
-                          className="text-xs font-normal text-ink-muted underline underline-offset-2 hover:text-ink"
-                        >
-                          {t("project.showOnMap")} →
-                        </Link>
-                      </div>
-                    )}
-                  </th>
-                  <td className="py-3 pr-4">
-                    <span
-                      className={`rounded-full px-2 py-0.5 text-xs font-medium whitespace-nowrap ${STATUS_BADGE[lot.status]}`}
-                    >
-                      {t(`status.${lot.status}`)}
-                    </span>
-                    {progress && (
-                      <div className="mt-2 w-32">
-                        {/* The bar is decoration: the figures under it say the
-                            same thing in words. */}
-                        <div
-                          aria-hidden
-                          className="h-1.5 overflow-hidden rounded-full bg-line"
-                        >
-                          <div
-                            className={`h-full rounded-full ${
-                              progress.overdueMonths > 0
-                                ? "bg-bad"
-                                : "bg-warn"
-                            }`}
-                            style={{
-                              width: `${Math.min(100, progress.ratio * 100)}%`,
-                            }}
-                          />
-                        </div>
-                        <div className="mt-1 text-[11px] tabular-nums text-ink-muted">
-                          {t("project.progressLabel", {
-                            elapsed: progress.elapsedMonths,
-                            contracted: progress.contractedMonths,
-                          })}
-                        </div>
-                        {progress.overdueMonths > 0 && (
-                          <div className="text-[11px] font-medium text-bad">
-                            {t("project.progressOverdue", {
-                              months: progress.overdueMonths,
-                            })}
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </td>
-                  <td className="py-3 pr-4 whitespace-nowrap tabular-nums">
-                    {formatKm(lot.lengthKm, lang)}
-                  </td>
-                  <td className="py-3 pr-4 text-ink-soft">
-                    <Timeline milestones={lotMilestones(lot, nowMonth)} />
-                  </td>
-                  <td className="py-3 pr-4 text-ink-soft">
-                    {costLines.length > 0 ? (
-                      <ul className="space-y-1">{costLines}</ul>
-                    ) : (
-                      "–"
-                    )}
-                  </td>
-                  <td className="py-3 pr-4 text-ink-soft">
-                    {lot.funding && lot.funding.length > 0 ? (
-                      <ul className="space-y-1">
-                        {lot.funding.map((f, i) => (
-                          <li key={`${f.source}-${i}`}>
-                            <span className="font-medium text-ink-soft">
-                              {t(`funding.${f.source}`)}
-                            </span>
-                            {/* Some details run to a full paragraph of
-                                financing arrangements; without a bound they
-                                stretch the whole table. */}
-                            {f.detail && (
-                              <span className="block max-w-xs text-xs leading-snug text-ink-muted">
-                                {name(f.detail)}
-                              </span>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      "–"
-                    )}
-                  </td>
-                  <td className="py-3 pr-4 text-ink-soft">
-                    {lot.contractors && lot.contractors.length > 0 ? (
-                      <ul className="space-y-1">
-                        {lot.contractors.map((c, i) => (
-                          <li key={`${c.name}-${i}`}>
-                            {c.name}
-                            {c.role && (
-                              <span className="ml-1.5 rounded-full bg-surface-raised px-2 py-0.5 text-[11px] text-ink-soft whitespace-nowrap">
-                                {t(`contractorRole.${c.role}`)}
-                              </span>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      "–"
-                    )}
-                  </td>
-                  <td className="py-3 text-ink-soft">
-                    {lot.contract
-                      ? contractSummaryParts(lot.contract, t, lang).join(" · ") ||
-                        "–"
-                      : "–"}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+      <LotsTable
+        project={project}
+        nowMonth={nowMonth}
+        sourceNumbers={sourceNumbers}
+        ownerName={ownerName}
+        name={name}
+        t={t}
+        locale={lang}
+      />
 
       {(hasSharedTrack || hasContractorRoles) && (
         <div className="mt-3 max-w-3xl space-y-1 text-xs text-ink-muted">
@@ -733,6 +338,8 @@ export default async function ProjectPage({
             key={source.url}
             source={source}
             number={sourceNumbers.get(source.url)!}
+            t={t}
+            locale={lang}
           />
         ))}
       </ol>

@@ -3,24 +3,17 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import type { FeatureCollection } from "geojson";
-import type { CityTable } from "@/lib/schema";
 import { currentMonth } from "@/lib/contract";
 import {
   computeMaxMonth,
   computeMinMonth,
   HARD_MIN_MONTH,
-  parseCityParam,
-  parseCountryParam,
-  parseLotRef,
   parseSelectionParam,
   parseMonthParam,
   parseSpeedParam,
   parseViewParam,
-  resolveLotRef,
   serializeMapParams,
   type CategoryStatusSelection,
-  type LotRef,
   type MapView,
 } from "@/lib/map-filters";
 import { visibleLots, type LotEntry } from "@/lib/lot-list";
@@ -35,14 +28,9 @@ import {
   DEFAULT_SPEED_INDEX,
   SPEED_STEPS,
 } from "@/lib/playback";
-import { rankCountries, findCountry } from "@/lib/country-stats";
-import { openedKmByDecade } from "@/lib/country-growth";
 import { useMapArtifacts } from "./useMapArtifacts";
-import InfraMap, {
-  DEFAULT_VIEW,
-  type CityMarkerProps,
-  type LotFeatureProps,
-} from "./InfraMap";
+import { useMapSelection } from "./useMapSelection";
+import InfraMap, { DEFAULT_VIEW } from "./InfraMap";
 import TimeSlider from "./TimeSlider";
 import CategoryToggle from "./CategoryToggle";
 import MapLegend from "./MapLegend";
@@ -53,32 +41,6 @@ import BasemapToggle from "./BasemapToggle";
 import ProjectPanel from "./ProjectPanel";
 import CountryPanel from "./CountryPanel";
 import CityPanel from "./CityPanel";
-
-/**
- * What a shared link selects once the data it names has loaded: the lot in
- * ?sel=, else the city in ?city=. Decided as one because the panels share
- * a corner: a link carrying both must not open both, and the lot wins, as
- * it does in the URL.
- */
-function restoredSelection(
-  geojson: FeatureCollection,
-  cityTable: CityTable | null,
-  selRef: LotRef | null,
-  cityParam: string | null,
-): { lot: LotFeatureProps | null; city: string | null } {
-  const candidates = geojson.features
-    .map((f) => f.properties as unknown as LotFeatureProps | null)
-    .filter((p): p is LotFeatureProps => !!p?.lotId && p.marker !== true);
-  // Lot ids repeat across projects: three Danube crossings each own a
-  // lot called "main-bridge". An unqualified id that names more than
-  // one of them selects none, rather than silently the first.
-  const lot = resolveLotRef(candidates, selRef);
-  if (lot) return { lot, city: null };
-  return {
-    lot: null,
-    city: parseCityParam(cityParam, Object.keys(cityTable?.cities ?? {})),
-  };
-}
 
 export default function MapExplorer({
   locale,
@@ -114,15 +76,6 @@ export default function MapExplorer({
   const [selection, setSelection] = useState<CategoryStatusSelection>(() =>
     parseSelectionParam(searchParams.get("cat"), searchParams.get("st")),
   );
-  const [selected, setSelected] = useState<LotFeatureProps | null>(null);
-  const [selectedCountry, setSelectedCountry] = useState<string | null>(() =>
-    parseCountryParam(searchParams.get("c")),
-  );
-  const [selectedCity, setSelectedCity] = useState<string | null>(null);
-  // Captured at mount: the URL-sync effect below rewrites the query string
-  // before the async data load finishes, which would otherwise drop these.
-  const [initialSelRef] = useState(() => parseLotRef(searchParams.get("sel")));
-  const [initialCity] = useState(() => searchParams.get("city"));
   // The camera is read once. react-map-gl only looks at initialViewState on
   // mount, and every later move comes back through onViewChange.
   const [initialView] = useState(() => parseViewParam(searchParams.get("v")));
@@ -155,52 +108,37 @@ export default function MapExplorer({
   );
 
   const artifacts = useMapArtifacts();
-  const {
-    geojson,
-    countryOutlines,
-    cityMarkers,
-    projects,
-    countryTable,
-    cityTable,
-  } = artifacts.data;
+  const { geojson, countryOutlines, cityMarkers } = artifacts.data;
 
-  // The parts of a shared link that cannot be read until the data is here.
-  // Once, after the first successful load: the retry button only exists
-  // while a load has failed, and re-running this on a later load would undo
-  // whatever the reader had selected since. Nothing is clickable before the
-  // data lands, so setting a null here is setting what is already there.
-  const restored = useRef(false);
-  useEffect(() => {
-    if (!artifacts.loaded || restored.current) return;
-    restored.current = true;
-    const { lot, city } = restoredSelection(
-      geojson,
-      cityTable,
-      initialSelRef,
-      initialCity,
-    );
-    setSelected(lot);
-    setSelectedCity(city);
-    // A ?c= code that is not in the data has nothing to select: the panel
-    // would never mount, so there would be no × to press, while every lot
-    // on the map stayed dimmed against a country that isn't there. Drop it
-    // now that we know which countries actually exist; the lot wins over a
-    // known one, as above.
-    setSelectedCountry((current) =>
-      current &&
-      !lot &&
-      countryOutlines.features.some((f) => f.properties?.country === current)
-        ? current
-        : null,
-    );
-  }, [
-    artifacts.loaded,
-    geojson,
-    countryOutlines,
-    cityTable,
-    initialSelRef,
-    initialCity,
-  ]);
+  // One lot, one country or one city, never two at once, plus the part of
+  // a shared link that cannot be read until the data is here. The hook
+  // reads the parameters at mount: the URL-sync effect below rewrites the
+  // query string before the load finishes, which would otherwise drop them.
+  const {
+    selected,
+    selectedCountry,
+    selectedCity,
+    selectedProject,
+    selectedLot,
+    selectedCountryStats,
+    selectedCountryGrowth,
+    selectedCityRef,
+    selectedCityMarker,
+    handleSelectLot,
+    handleSelectCountry,
+    handleSelectCity,
+    setSelected,
+    setSelectedCountry,
+    setSelectedCity,
+  } = useMapSelection(
+    {
+      sel: searchParams.get("sel"),
+      city: searchParams.get("city"),
+      c: searchParams.get("c"),
+    },
+    artifacts,
+    { month, nowMonth },
+  );
 
   // Keep the URL shareable without triggering Next.js navigation.
   useEffect(() => {
@@ -246,77 +184,11 @@ export default function MapExplorer({
     };
   }, []);
 
-  const selectedProject = useMemo(
-    () => projects.find((p) => p.id === selected?.projectId),
-    [projects, selected],
-  );
-
-  // Recomputed as the timeline moves: the panel reports the map's state in
-  // the viewed month, ranks included.
-  const ranked = useMemo(
-    () =>
-      countryTable
-        ? rankCountries(projects, countryTable.countries, month, nowMonth)
-        : [],
-    [projects, countryTable, month, nowMonth],
-  );
-  const selectedCountryStats = useMemo(
-    () => (selectedCountry ? findCountry(ranked, selectedCountry) : null),
-    [ranked, selectedCountry],
-  );
-  // Growth is history, not a function of the viewed month, so it is keyed
-  // only on the country.
-  const selectedCountryGrowth = useMemo(
-    () =>
-      selectedCountry ? openedKmByDecade(projects, selectedCountry) : [],
-    [projects, selectedCountry],
-  );
-
-  // One selection at a time — all three panels occupy the same corner.
-  const handleSelectLot = useCallback((props: LotFeatureProps | null) => {
-    setSelected(props);
-    if (props) {
-      setSelectedCountry(null);
-      setSelectedCity(null);
-    }
-  }, []);
-
-  const handleSelectCountry = useCallback((code: string | null) => {
-    setSelectedCountry(code);
-    if (code) {
-      setSelected(null);
-      setSelectedCity(null);
-    }
-  }, []);
-
-  const handleSelectCity = useCallback((key: string | null) => {
-    setSelectedCity(key);
-    if (key) {
-      setSelected(null);
-      setSelectedCountry(null);
-    }
-  }, []);
-
-  const selectedCityRef = useMemo(
-    () => (selectedCity ? cityTable?.cities[selectedCity] ?? null : null),
-    [cityTable, selectedCity],
-  );
-  const selectedCityMarker = useMemo(() => {
-    const feature = cityMarkers.features.find(
-      (f) => f.properties?.city === selectedCity,
-    );
-    return (feature?.properties as unknown as CityMarkerProps) ?? null;
-  }, [cityMarkers, selectedCity]);
-
   // Slider bounds follow the data (bridges from 1895; expected openings).
   const minMonth = useMemo(() => computeMinMonth(geojson.features), [geojson]);
   const maxMonth = useMemo(
     () => computeMaxMonth(geojson.features, nowMonth),
     [geojson, nowMonth],
-  );
-  const selectedLot = useMemo(
-    () => selectedProject?.lots.find((l) => l.id === selected?.lotId),
-    [selectedProject, selected],
   );
 
   const handleMonthChange = useCallback((m: number) => setMonth(m), []);

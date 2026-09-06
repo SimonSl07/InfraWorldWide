@@ -3,7 +3,6 @@ import {
   attributeLotContractors,
   contractorSlug,
   createContractorResolver,
-  normalizeContractorName,
   splitJointVenture,
   stripParenthetical,
   stripScopeNote,
@@ -115,14 +114,6 @@ describe("splitJointVenture", () => {
     expect(splitJointVenture("Impresa Pizzarotti & C.")).toEqual([
       "Impresa Pizzarotti & C.",
     ]);
-  });
-});
-
-describe("normalizeContractorName", () => {
-  it("applies both cleanups", () => {
-    expect(
-      normalizeContractorName("Webuild (Astaldi): subsections 2A and 2B"),
-    ).toBe("Webuild");
   });
 });
 

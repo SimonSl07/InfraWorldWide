@@ -26,16 +26,6 @@ export interface ProjectsParams {
   sort: ProjectSort;
 }
 
-export function emptyProjectsParams(): ProjectsParams {
-  return {
-    query: "",
-    country: null,
-    category: null,
-    status: null,
-    sort: DEFAULT_PROJECT_SORT,
-  };
-}
-
 export function parseProjectsParams(
   search: string,
   options: {

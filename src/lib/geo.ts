@@ -91,14 +91,6 @@ export function lineLength(
   return km;
 }
 
-/** Features belonging to one project. */
-export function featuresForProject(
-  fc: FeatureCollection,
-  projectId: string,
-): Feature[] {
-  return fc.features.filter((f) => f.properties?.projectId === projectId);
-}
-
 /** Middle vertex of a line by vertex count (fine for short bridge lines). */
 export function lineMidpoint(coords: Position[]): Position | null {
   if (coords.length === 0) return null;

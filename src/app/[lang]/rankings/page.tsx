@@ -24,6 +24,7 @@ import {
 import { formatMonth } from "@/lib/format";
 import { createLocalizer } from "@/lib/localized";
 import { pageMetadata } from "@/lib/page-metadata";
+import { ExternalLink } from "@/components/ui/ExternalLink";
 import PerformanceTables, {
   type CostRowData,
   type GroupRow,
@@ -197,14 +198,12 @@ export default async function RankingsPage({
             {[...deflators.sources, ...fx.sources].map((s, i) => (
               <span key={s.url}>
                 {i > 0 && ", "}
-                <a
+                <ExternalLink
                   href={s.url}
-                  target="_blank"
-                  rel="noreferrer"
                   className="underline underline-offset-2 hover:text-ink"
                 >
                   {s.title}
-                </a>
+                </ExternalLink>
               </span>
             ))}
             .

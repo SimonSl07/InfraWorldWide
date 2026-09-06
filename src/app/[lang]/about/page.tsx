@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import FeedbackDialog from "@/components/FeedbackDialog";
+import { ExternalLink } from "@/components/ui/ExternalLink";
 import { getCountries, getProjects } from "@/lib/data";
 import { EXTERNAL_LINKS } from "@/lib/links";
 import { pageMetadata } from "@/lib/page-metadata";
@@ -24,19 +25,6 @@ export async function generateMetadata({
     description: t("about.lead"),
     siteName: t("site.name"),
   });
-}
-
-function External({ href, children }: { href: string; children: string }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      className="underline underline-offset-2 hover:text-ink"
-    >
-      {children}
-    </a>
-  );
 }
 
 export default async function AboutPage({
@@ -89,7 +77,13 @@ export default async function AboutPage({
               2.
             </span>
             <span>
-              {t("helpData")} <External href={REPO}>{t("helpRepoCta")}</External>
+              {t("helpData")}{" "}
+              <ExternalLink
+                href={REPO}
+                className="underline underline-offset-2 hover:text-ink"
+              >
+                {t("helpRepoCta")}
+              </ExternalLink>
             </span>
           </li>
           <li className="flex gap-3">
@@ -105,22 +99,18 @@ export default async function AboutPage({
         <h2 className="text-lg font-semibold">{t("builderTitle")}</h2>
         <p className="mt-2 text-ink-soft">{t("builderBody")}</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <a
+          <ExternalLink
             href={LINKEDIN}
-            target="_blank"
-            rel="noreferrer"
             className="rounded-lg border border-line-strong px-4 py-2 text-sm font-medium transition-colors hover:border-inverse"
           >
             LinkedIn
-          </a>
-          <a
+          </ExternalLink>
+          <ExternalLink
             href={GITHUB}
-            target="_blank"
-            rel="noreferrer"
             className="rounded-lg border border-line-strong px-4 py-2 text-sm font-medium transition-colors hover:border-inverse"
           >
             GitHub
-          </a>
+          </ExternalLink>
         </div>
       </section>
 

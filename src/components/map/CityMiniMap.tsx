@@ -108,7 +108,7 @@ export default function CityMiniMap({
               type="line"
               filter={projectFilter(selectedProjectId) as FilterSpecification}
               paint={{
-                "line-color": "#facc15", // yellow-400
+                "line-color": theme.selectedHighlight,
                 "line-width": ["interpolate", ["linear"], ["zoom"], 9, 9, 14, 20],
                 "line-opacity": 0.55,
               }}

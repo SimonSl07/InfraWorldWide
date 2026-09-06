@@ -19,6 +19,7 @@ import {
 import { textMatches } from "@/lib/text";
 import { leadersBy, type LeadDirection } from "@/lib/compare-direction";
 import CountryPickerMap from "@/components/CountryPickerMap";
+import { RankBadge } from "@/components/ui/RankBadge";
 import type { Rank, RankedCountry } from "@/lib/country-stats";
 import {
   findCountryPerformance,
@@ -90,12 +91,15 @@ export default function CountryCompare({
     .map((code) => countries.find((c) => c.summary.code === code))
     .filter((c): c is RankedCountry => c !== undefined);
 
-  const rankBadge = (rank: Rank | null) =>
-    rank ? (
-      <span className="ml-2 rounded-full bg-surface-raised px-1.5 py-0.5 text-[10px] font-semibold tabular-nums text-ink-muted">
-        #{rank.position}
-      </span>
-    ) : null;
+  // Position only: every column in a row is ranked out of the same field,
+  // so "/ 5" three times across would say nothing new.
+  const rankBadge = (rank: Rank | null) => (
+    <RankBadge
+      rank={rank}
+      compact
+      className="px-1.5 py-0.5 text-[10px] text-ink-muted"
+    />
+  );
 
   const perf = (c: RankedCountry) =>
     findCountryPerformance(performance, c.summary.code);
