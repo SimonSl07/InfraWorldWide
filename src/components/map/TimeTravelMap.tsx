@@ -14,8 +14,8 @@ import {
   computeMinMonth,
   fullSelection,
   shouldShowFuture,
-  toMonthIndex,
 } from "@/lib/map-filters";
+import { currentMonth } from "@/lib/contract";
 import {
   ALL_CATEGORIES,
   MARKER_FILTER,
@@ -151,10 +151,7 @@ export default function TimeTravelMap({
 
   // Read once: "now" must not drift between renders, or the filters and the
   // slider bounds would disagree the moment a month ticks over.
-  const [nowMonth] = useState(() => {
-    const now = new Date();
-    return toMonthIndex(now.getFullYear(), now.getMonth() + 1);
-  });
+  const [nowMonth] = useState(() => currentMonth());
 
   // The playback state lives here, above the frame, so the map remounting on
   // its fitted bounds does not throw the viewer back to the present.

@@ -59,6 +59,20 @@ export function monthIndex(date: string | undefined): number | null {
 }
 
 /**
+ * Absolute month index for "now", on the scale `monthIndex` uses.
+ *
+ * Read in UTC, deliberately. The pages are rendered on a server whose clock
+ * is UTC while the map runs in the reader's browser, and for the hours
+ * either side of a month boundary a local reading would put the two a
+ * month apart: the map drawing a lot as open while the panel beside it
+ * still said "next month". One definition, one clock, so every "has this
+ * happened yet" comparison in the app agrees.
+ */
+export function currentMonth(now: Date = new Date()): number {
+  return now.getUTCFullYear() * 12 + now.getUTCMonth();
+}
+
+/**
  * Projected completion as an absolute month index: start date plus the
  * contracted duration. Null when either side is unknown.
  */

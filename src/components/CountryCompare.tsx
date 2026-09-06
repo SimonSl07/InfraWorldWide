@@ -304,6 +304,7 @@ export default function CountryCompare({
               return (
                 <li key={code}>
                   <button
+                    type="button"
                     onClick={() => toggle(code)}
                     disabled={!on && full}
                     aria-pressed={on}
@@ -347,6 +348,7 @@ export default function CountryCompare({
 
       {selected.length > 0 && (
         <button
+          type="button"
           onClick={() => setSelected([])}
           className="mt-3 text-sm text-ink-muted hover:text-ink"
         >
@@ -390,6 +392,7 @@ export default function CountryCompare({
                         {nameOf(c.summary.code)}
                       </Link>
                       <button
+                        type="button"
                         onClick={() => toggle(c.summary.code)}
                         aria-label={t("country.removeFromCompare", {
                           country: nameOf(c.summary.code),

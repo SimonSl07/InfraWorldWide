@@ -9,6 +9,7 @@ import { categoryVar } from "@/lib/map-theme";
 import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
 import { formatKm, formatMonth } from "@/lib/format";
+import { localized } from "@/lib/localized";
 import type { Rank, RankedCountry } from "@/lib/country-stats";
 import type { DecadeBucket } from "@/lib/country-growth";
 import Sparkline from "./Sparkline";
@@ -193,7 +194,7 @@ export default function CountryPanel({
 
       {ref?.note && (
         <p className="mt-3 text-[11px] leading-snug text-ink-faint">
-          {locale === "ro" && ref.note.ro ? ref.note.ro : ref.note.en}
+          {localized(ref.note, locale)}
         </p>
       )}
 

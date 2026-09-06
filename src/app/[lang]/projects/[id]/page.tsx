@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import {
-  getContractors,
+  getAnalysisContext,
   getCorridorTable,
-  getDeflators,
-  getFxTable,
+  getLotMetrics,
   getProject,
   getProjects,
 } from "@/lib/data";
@@ -14,10 +13,6 @@ import { Link } from "@/i18n/navigation";
 import ProjectMiniMap from "@/components/map/ProjectMiniMap";
 import { contractSummaryParts } from "@/lib/contract";
 import { currentMonth } from "@/lib/slip";
-import { commonLatestYear, createDeflator } from "@/lib/deflator";
-import { createConverter } from "@/lib/fx";
-import { createContractorResolver } from "@/lib/contractors";
-import { collectLotMetrics } from "@/lib/rankings";
 import { projectCostRows } from "@/lib/performance";
 import {
   constructionProgress,
@@ -116,24 +111,10 @@ export default async function ProjectPage({
 
   /* ── Cost on the same axis the performance pages use ─────────────────── */
 
-  const deflators = getDeflators();
-  const fx = getFxTable();
-  const priceYear = commonLatestYear(deflators) ?? deflators.baseYear;
-  const costOptions = {
-    deflate: createDeflator(deflators),
-    convert: createConverter(fx),
-    priceYear,
-  };
-  const resolve = createContractorResolver(getContractors());
+  const { costOptions, priceYear, resolve } = getAnalysisContext(nowMonth);
   const costRow =
     projectCostRows(
-      collectLotMetrics([project], {
-        deflate: costOptions.deflate,
-        convert: costOptions.convert,
-        priceYear,
-        resolve,
-        nowMonth,
-      }),
+      getLotMetrics(nowMonth).filter((m) => m.projectId === project.id),
       costOptions,
     )[0] ?? null;
 

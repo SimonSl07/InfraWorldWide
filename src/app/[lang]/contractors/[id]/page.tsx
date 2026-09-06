@@ -132,7 +132,7 @@ export default async function ContractorPage({
       {!profile.registered && (
         <div className="mt-4 max-w-3xl rounded-md border border-warn bg-warn-soft px-4 py-3 text-sm text-warn">
           <p className="font-semibold">{t("contractors.registryGapTitle")}</p>
-          <p className="mt-1">{t("contractors.unregisteredBadge")}.</p>
+          <p className="mt-1">{t("contractors.unregisteredBadge")}</p>
         </div>
       )}
 

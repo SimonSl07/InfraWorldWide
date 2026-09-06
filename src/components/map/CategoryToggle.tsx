@@ -119,6 +119,7 @@ export default function CategoryToggle({
               }`}
             >
               <button
+                type="button"
                 onClick={() => onChange(toggleCategory(selection, cat))}
                 aria-pressed={active}
                 className="flex items-center gap-1.5 py-1.5 pl-3 pr-2"
@@ -137,6 +138,7 @@ export default function CategoryToggle({
                 )}
               </button>
               <button
+                type="button"
                 onClick={() => {
                   cancelTimers();
                   if (open) close();
@@ -194,6 +196,7 @@ export default function CategoryToggle({
                   ))}
                   <div className="mt-1 flex gap-3 border-t border-line-soft px-1 pt-1.5">
                     <button
+                      type="button"
                       onClick={() =>
                         onChange(setCategoryStatuses(selection, cat, MAP_STATUSES))
                       }
@@ -202,6 +205,7 @@ export default function CategoryToggle({
                       {t("map.showAll")}
                     </button>
                     <button
+                      type="button"
                       onClick={() => onChange(setCategoryStatuses(selection, cat, []))}
                       className="text-[11px] text-ink-muted hover:text-ink"
                     >

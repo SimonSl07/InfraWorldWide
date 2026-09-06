@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
 import { formatDate, formatKm } from "@/lib/format";
+import { localized } from "@/lib/localized";
 import type { City } from "@/lib/schema";
 import type { CityMarkerProps } from "./InfraMap";
 
@@ -56,8 +57,8 @@ export default function CityPanel({
 }: CityPanelProps) {
   const t = useTranslations();
   const locale = useLocale();
-  const name = locale === "ro" && city.name.ro ? city.name.ro : city.name.en;
-  const note = locale === "ro" && city.note?.ro ? city.note.ro : city.note?.en;
+  const name = localized(city.name, locale);
+  const note = city.note ? localized(city.note, locale) : undefined;
 
   return (
     <MapPanel onClose={onClose} labelledBy="map-panel-city-heading">
