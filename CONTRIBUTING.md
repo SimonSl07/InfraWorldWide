@@ -103,5 +103,5 @@ None of them run in `npm test`, and none write without being asked.
 
 - One project, one country or one fix per pull request.
 - Say where each new figure came from. A link in the PR body is enough; the citation itself belongs in the data file.
-- `npm test`, `npm run lint` and `npx tsc --noEmit` all pass.
+- `npm test`, `npm run lint`, `npm run typecheck` and `npm run format:check` all pass. `npm run format` fixes the last one.
 - If you changed anything under `src/lib`, `scripts` or `data`, run `npm test` again after rebasing: the data-integrity test (`src/lib/validation/data-integrity.test.ts`) re-validates every committed file and catches cross-file breakage that a unit test cannot.

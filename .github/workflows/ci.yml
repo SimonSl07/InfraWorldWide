@@ -34,6 +34,11 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      # Checked, not applied: a red run here means `npm run format` was not
+      # run before pushing.
+      - name: Format
+        run: npm run format:check
+
       # Without this every run is a cold build.
       - name: Restore Next.js build cache
         uses: actions/cache@v4

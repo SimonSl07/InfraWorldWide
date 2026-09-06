@@ -6,7 +6,7 @@
 
 - [ ] `npm run data:validate` passes
 - [ ] `npm test` passes
-- [ ] `npm run lint` and `npm run typecheck` pass
+- [ ] `npm run lint`, `npm run typecheck` and `npm run format:check` pass
 
 ## If this touches `data/`
 
