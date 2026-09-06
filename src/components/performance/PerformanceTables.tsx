@@ -7,7 +7,12 @@ import DataTable, { type Column } from "@/components/DataTable";
 import { CountryLabel } from "@/components/ui/CountryLabel";
 import { SectionLink } from "@/components/ui/SectionLink";
 import { createCountryNamer } from "@/lib/country-names";
-import { formatKm, formatMonth, formatMonths, formatPercent } from "@/lib/format";
+import {
+  formatKm,
+  formatMonth,
+  formatMonths,
+  formatPercent,
+} from "@/lib/format";
 import type { Category } from "@/lib/schema";
 import type { CostBasis } from "@/lib/rankings";
 
@@ -98,11 +103,7 @@ function Tone({
 }) {
   if (value === null) return <span className="text-ink-faint">{"–"}</span>;
   return (
-    <span
-      className={
-        value > 0 ? "text-bad" : value < 0 ? "text-good" : ""
-      }
-    >
+    <span className={value > 0 ? "text-bad" : value < 0 ? "text-good" : ""}>
       {children}
     </span>
   );
@@ -281,9 +282,7 @@ export default function PerformanceTables({
       header: t("performance.thPerKm", { currency: baseCurrency }),
       numeric: true,
       sortValue: (r) => r.perKm,
-      cell: (r) => (
-        <span className="font-semibold">{money(r.perKm)}</span>
-      ),
+      cell: (r) => <span className="font-semibold">{money(r.perKm)}</span>,
     },
   ];
 

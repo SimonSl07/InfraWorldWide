@@ -51,7 +51,11 @@ export function readReferenceFile<T>(
   return parsed.data;
 }
 
-export function checkDeflators(table: DeflatorTable, rel: string, errors: string[]) {
+export function checkDeflators(
+  table: DeflatorTable,
+  rel: string,
+  errors: string[],
+) {
   for (const [currency, series] of Object.entries(table.series)) {
     if (Object.keys(series.index).length === 0) {
       errors.push(`${rel}: series "${currency}" has no index values`);
@@ -78,7 +82,9 @@ export function checkContractors(
     ids.add(entry.id);
 
     if (entry.members?.includes(entry.id)) {
-      errors.push(`${rel}: joint venture "${entry.id}" lists itself as a member`);
+      errors.push(
+        `${rel}: joint venture "${entry.id}" lists itself as a member`,
+      );
     }
 
     for (const key of [entry.name, ...(entry.aliases ?? [])]) {
@@ -287,13 +293,27 @@ export function checkReferenceKeys(
   }
 
   for (const [table, entries, used] of [
-    ["data/corridors.json", Object.keys(corridors?.corridors ?? {}), usedCorridors],
-    ["data/programmes.json", Object.keys(programmes?.programmes ?? {}), usedProgrammes],
-    ["data/operators.json", Object.keys(operators?.operators ?? {}), usedOperators],
+    [
+      "data/corridors.json",
+      Object.keys(corridors?.corridors ?? {}),
+      usedCorridors,
+    ],
+    [
+      "data/programmes.json",
+      Object.keys(programmes?.programmes ?? {}),
+      usedProgrammes,
+    ],
+    [
+      "data/operators.json",
+      Object.keys(operators?.operators ?? {}),
+      usedOperators,
+    ],
   ] as const) {
     for (const key of entries) {
       if (!used.has(key)) {
-        errors.push(`${table}: entry "${key}" is used by no project; remove it or assign it`);
+        errors.push(
+          `${table}: entry "${key}" is used by no project; remove it or assign it`,
+        );
       }
     }
   }

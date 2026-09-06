@@ -76,7 +76,9 @@ describe("LotSearchPanel", () => {
 
   it("lists every visible lot once opened", async () => {
     renderPanel();
-    await userEvent.click(screen.getByRole("button", { name: /country\.lots/ }));
+    await userEvent.click(
+      screen.getByRole("button", { name: /country\.lots/ }),
+    );
     expect(rows()).toHaveLength(3);
   });
 
@@ -153,7 +155,9 @@ describe("LotSearchPanel", () => {
     // A background change alone is not a focus indicator: the ring has to be
     // visible in both themes, so the rows carry the same outline as DataTable.
     renderPanel();
-    await userEvent.click(screen.getByRole("button", { name: /country\.lots/ }));
+    await userEvent.click(
+      screen.getByRole("button", { name: /country\.lots/ }),
+    );
     expect(rows()[0].className).toContain("focus-visible:outline");
   });
 
@@ -166,7 +170,9 @@ describe("LotSearchPanel", () => {
         locale="en"
       />,
     );
-    await userEvent.click(screen.getByRole("button", { name: /country\.lots/ }));
+    await userEvent.click(
+      screen.getByRole("button", { name: /country\.lots/ }),
+    );
     const current = rows().filter(
       (r) => r.getAttribute("aria-current") === "true",
     );

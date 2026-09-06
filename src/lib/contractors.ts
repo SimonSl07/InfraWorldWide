@@ -1,9 +1,5 @@
 import { foldText } from "./text";
-import type {
-  Contractor,
-  ContractorEntry,
-  ContractorRegistry,
-} from "./schema";
+import type { Contractor, ContractorEntry, ContractorRegistry } from "./schema";
 
 /**
  * Resolving contractor strings to stable identities.

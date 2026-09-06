@@ -22,14 +22,26 @@ export function* moneyOf(
   for (const lot of project.lots) {
     const at = `${project.id}: lot "${lot.id}"`;
     if (lot.cost?.estimated) {
-      yield { where: `${at} cost.estimated`, money: lot.cost.estimated, lengthKm: lot.lengthKm };
+      yield {
+        where: `${at} cost.estimated`,
+        money: lot.cost.estimated,
+        lengthKm: lot.lengthKm,
+      };
     }
     if (lot.cost?.actual) {
-      yield { where: `${at} cost.actual`, money: lot.cost.actual, lengthKm: lot.lengthKm };
+      yield {
+        where: `${at} cost.actual`,
+        money: lot.cost.actual,
+        lengthKm: lot.lengthKm,
+      };
     }
     const revisions = lot.cost?.revisions ?? [];
     for (let i = 0; i < revisions.length; i++) {
-      yield { where: `${at} cost.revisions[${i}]`, money: revisions[i].money, lengthKm: lot.lengthKm };
+      yield {
+        where: `${at} cost.revisions[${i}]`,
+        money: revisions[i].money,
+        lengthKm: lot.lengthKm,
+      };
     }
     if (lot.contract?.value) {
       yield { where: `${at} contract.value`, money: lot.contract.value };
@@ -78,8 +90,12 @@ export function checkPriceCoverage(
       }
       const year = String(money.year);
       const missing: string[] = [];
-      if (!deflators.series[money.currency]?.index[year]) missing.push("deflator");
-      if (money.currency !== fx.base && !fx.rates[money.currency]?.perEur[year]) {
+      if (!deflators.series[money.currency]?.index[year])
+        missing.push("deflator");
+      if (
+        money.currency !== fx.base &&
+        !fx.rates[money.currency]?.perEur[year]
+      ) {
         missing.push("fx");
       }
       if (missing.length > 0) {
@@ -154,7 +170,9 @@ export function checkCostRevisions(projects: Project[]): GeometryReport {
 
   for (const project of projects) {
     const ids = new Set(
-      project.sources.map((s) => s.id).filter((id): id is string => Boolean(id)),
+      project.sources
+        .map((s) => s.id)
+        .filter((id): id is string => Boolean(id)),
     );
     for (const lot of project.lots) {
       const revisions = lot.cost?.revisions ?? [];
@@ -173,7 +191,10 @@ export function checkCostRevisions(projects: Project[]): GeometryReport {
         const chain = revisions.filter((r) => r.kind === kind);
         if (!flat || chain.length === 0) continue;
         const newest = chain.reduce((a, b) => (b.date > a.date ? b : a)).money;
-        if (newest.amount !== flat.amount || newest.currency !== flat.currency) {
+        if (
+          newest.amount !== flat.amount ||
+          newest.currency !== flat.currency
+        ) {
           warnings.push(
             `${project.id}: lot "${lot.id}" cost.${field} (${flat.amount} ${flat.currency}) disagrees with the newest "${kind}" revision (${newest.amount} ${newest.currency})`,
           );

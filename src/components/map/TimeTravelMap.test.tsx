@@ -293,9 +293,9 @@ describe("TimeTravelMap paint", () => {
     for (const element of layers()) {
       const id = element.getAttribute("data-layer-id");
       const type = element.getAttribute("data-layer-type");
-      const paint = JSON.parse(element.getAttribute("data-paint") ?? "null") as
-        | Record<string, unknown>
-        | null;
+      const paint = JSON.parse(
+        element.getAttribute("data-paint") ?? "null",
+      ) as Record<string, unknown> | null;
       if (!paint) continue;
       for (const [property, value] of Object.entries(paint)) {
         const message = validate(value, property, `paint_${type}`);
@@ -308,9 +308,9 @@ describe("TimeTravelMap paint", () => {
   it("keeps the zoom interpolation outermost in every width ramp", () => {
     mount();
     for (const element of layers()) {
-      const paint = JSON.parse(element.getAttribute("data-paint") ?? "null") as
-        | Record<string, unknown>
-        | null;
+      const paint = JSON.parse(
+        element.getAttribute("data-paint") ?? "null",
+      ) as Record<string, unknown> | null;
       for (const value of Object.values(paint ?? {})) {
         const encoded = JSON.stringify(value);
         if (!encoded.includes('"interpolate"')) continue;

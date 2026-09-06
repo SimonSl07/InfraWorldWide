@@ -24,10 +24,7 @@ import {
   parseBasemapParam,
 } from "@/lib/basemaps";
 import { geometryBounds, type BBox } from "@/lib/geo";
-import {
-  DEFAULT_SPEED_INDEX,
-  SPEED_STEPS,
-} from "@/lib/playback";
+import { DEFAULT_SPEED_INDEX, SPEED_STEPS } from "@/lib/playback";
 import { useMapArtifacts } from "./useMapArtifacts";
 import { useMapSelection } from "./useMapSelection";
 import InfraMap, { DEFAULT_VIEW } from "./InfraMap";
@@ -63,7 +60,12 @@ export default function MapExplorer({
   const maxMonthParam = nowMonth + 15 * 12;
 
   const [month, setMonth] = useState(() =>
-    parseMonthParam(searchParams.get("t"), HARD_MIN_MONTH, maxMonthParam, nowMonth),
+    parseMonthParam(
+      searchParams.get("t"),
+      HARD_MIN_MONTH,
+      maxMonthParam,
+      nowMonth,
+    ),
   );
   const [playing, setPlaying] = useState(false);
   const [speedIndex, setSpeedIndex] = useState(() =>
@@ -81,7 +83,9 @@ export default function MapExplorer({
   const [initialView] = useState(() => parseViewParam(searchParams.get("v")));
   const [view, setView] = useState<MapView | null>(initialView);
   /** Camera target for a search hit; the nonce is what re-fires it. */
-  const [focus, setFocus] = useState<{ bbox: BBox; nonce: number } | null>(null);
+  const [focus, setFocus] = useState<{ bbox: BBox; nonce: number } | null>(
+    null,
+  );
   const [copied, setCopied] = useState(false);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [basemapId, setBasemapId] = useState(
@@ -294,26 +298,26 @@ export default function MapExplorer({
           lots={allLots}
         />
       ) : (
-      <InfraMap
-        geojson={geojson}
-        countries={countryOutlines}
-        cities={cityMarkers}
-        month={month}
-        nowMonth={nowMonth}
-        selection={selection}
-        selectedLotId={selected?.lotId ?? null}
-        selectedCountry={selectedCountry}
-        selectedCity={selectedCity}
-        onSelectLot={handleSelectLot}
-        onSelectCountry={handleSelectCountry}
-        onSelectCity={handleSelectCity}
-        locale={locale}
-        initialView={initialView}
-        onViewChange={handleViewChange}
-        focus={focus}
-        newlyOpened={newlyOpened}
-        mapStyle={basemapUrl(basemapId)}
-      />
+        <InfraMap
+          geojson={geojson}
+          countries={countryOutlines}
+          cities={cityMarkers}
+          month={month}
+          nowMonth={nowMonth}
+          selection={selection}
+          selectedLotId={selected?.lotId ?? null}
+          selectedCountry={selectedCountry}
+          selectedCity={selectedCity}
+          onSelectLot={handleSelectLot}
+          onSelectCountry={handleSelectCountry}
+          onSelectCity={handleSelectCity}
+          locale={locale}
+          initialView={initialView}
+          onViewChange={handleViewChange}
+          focus={focus}
+          newlyOpened={newlyOpened}
+          mapStyle={basemapUrl(basemapId)}
+        />
       )}
 
       {/* A cold load used to show a bare basemap with no explanation. */}
@@ -331,9 +335,7 @@ export default function MapExplorer({
             role="alert"
             className="max-w-sm rounded-xl border border-line bg-surface px-5 py-4 text-center shadow-lg"
           >
-            <p className="text-sm font-medium text-ink">
-              {t("map.loadError")}
-            </p>
+            <p className="text-sm font-medium text-ink">{t("map.loadError")}</p>
             <p className="mt-1 text-xs break-words text-ink-muted">
               {artifacts.error}
             </p>

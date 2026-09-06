@@ -25,8 +25,7 @@ export type ConvertFailure =
   | "missing_price_year";
 
 export type ConvertResult =
-  | { ok: true; money: Money }
-  | { ok: false; reason: ConvertFailure };
+  { ok: true; money: Money } | { ok: false; reason: ConvertFailure };
 
 export type Converter = (money: Money) => ConvertResult;
 

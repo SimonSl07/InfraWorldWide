@@ -68,8 +68,14 @@ export function useMapSelection(
   /** The viewed month and the present, which the country figures follow. */
   { month, nowMonth }: { month: number; nowMonth: number },
 ) {
-  const { geojson, countryOutlines, cityMarkers, projects, countryTable, cityTable } =
-    artifacts.data;
+  const {
+    geojson,
+    countryOutlines,
+    cityMarkers,
+    projects,
+    countryTable,
+    cityTable,
+  } = artifacts.data;
 
   const [selected, setSelected] = useState<LotEntry | null>(null);
   const [selectedCountry, setSelectedCountry] = useState<string | null>(() =>
@@ -166,13 +172,12 @@ export function useMapSelection(
   // Growth is history, not a function of the viewed month, so it is keyed
   // only on the country.
   const selectedCountryGrowth = useMemo(
-    () =>
-      selectedCountry ? openedKmByDecade(projects, selectedCountry) : [],
+    () => (selectedCountry ? openedKmByDecade(projects, selectedCountry) : []),
     [projects, selectedCountry],
   );
 
   const selectedCityRef = useMemo(
-    () => (selectedCity ? cityTable?.cities[selectedCity] ?? null : null),
+    () => (selectedCity ? (cityTable?.cities[selectedCity] ?? null) : null),
     [cityTable, selectedCity],
   );
   const selectedCityMarker = useMemo(() => {

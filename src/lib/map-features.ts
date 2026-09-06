@@ -170,9 +170,7 @@ export function cityMarkerProperties(
     km: cityProjects.reduce(
       (sum, p) =>
         sum +
-        p.lots
-          .filter(countsTowardNetwork)
-          .reduce((s, l) => s + l.lengthKm, 0),
+        p.lots.filter(countsTowardNetwork).reduce((s, l) => s + l.lengthKm, 0),
       0,
     ),
     ...(bbox ? { bbox } : {}),

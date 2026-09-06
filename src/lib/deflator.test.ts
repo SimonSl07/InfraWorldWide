@@ -1,9 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {
-  createDeflator,
-  commonLatestYear,
-  latestYear,
-} from "./deflator";
+import { createDeflator, commonLatestYear, latestYear } from "./deflator";
 import type { DeflatorTable } from "./schema";
 
 const table: DeflatorTable = {

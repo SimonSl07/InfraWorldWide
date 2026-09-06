@@ -19,7 +19,10 @@ import { ALL_CATEGORIES, MAP_STATUSES } from "./map-style";
  * hadn't started yet by then have no historical status to derive, so there
  * the declared one (tendered/planned) is used.
  */
-export type CategoryStatusSelection = ReadonlyMap<Category, ReadonlySet<Status>>;
+export type CategoryStatusSelection = ReadonlyMap<
+  Category,
+  ReadonlySet<Status>
+>;
 
 /** Statuses ordered as in MAP_STATUSES, for stable URLs and menus. */
 function orderStatuses(statuses: ReadonlySet<Status>): Status[] {
@@ -149,7 +152,11 @@ export function buildSelectionFilter(
     );
   // Nothing selected: an empty category list matches no feature.
   if (clauses.length === 0) {
-    return ["in", ["get", "category"], ["literal", []]] as unknown as FilterSpecification;
+    return [
+      "in",
+      ["get", "category"],
+      ["literal", []],
+    ] as unknown as FilterSpecification;
   }
   return ["any", ...clauses] as unknown as FilterSpecification;
 }
@@ -196,7 +203,10 @@ export function buildMonthFilters(
   // Each layer answers to the checkbox for the status it represents in the
   // viewed month; the not-yet-started layer falls back to declared status.
   const openedCategories = buildCategoryFilter(selection, "opened");
-  const buildingCategories = buildCategoryFilter(selection, "under_construction");
+  const buildingCategories = buildCategoryFilter(
+    selection,
+    "under_construction",
+  );
   const notStartedSelection = buildSelectionFilter(selection);
 
   const effectivelyOpened = effectivelyOpenedFilter(month, nowMonth);

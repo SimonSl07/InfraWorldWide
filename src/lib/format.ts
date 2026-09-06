@@ -13,7 +13,10 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
  * Magnitude words per locale. English writes "€1.8B" closed up; Romanian
  * abbreviates the word and spaces it, "€1,8 mld.".
  */
-const MAGNITUDES: Record<string, { million: string; billion: string; space: boolean }> = {
+const MAGNITUDES: Record<
+  string,
+  { million: string; billion: string; space: boolean }
+> = {
   en: { million: "M", billion: "B", space: false },
   ro: { million: "mil.", billion: "mld.", space: true },
 };
@@ -54,15 +57,16 @@ const BILLION_DECIMALS = 1;
 /**
  * Format a Money value (amount is in millions): "€500M", "€1.2B", "€1,8 mld.".
  *
- * The locale is optional so existing call sites keep working, but passing it
- * matters: `toFixed()` writes 1.8 where Romanian requires 1,8.
+ * The locale is required. It used to default to English, and a call site
+ * that forgot it compiled and printed 1.8 on the Romanian tree, where the
+ * reader expects 1,8; four pages did exactly that.
  *
  * Decimals follow the amount rather than a fixed width. Rounding everything
  * to one place turned 26 committed figures into numbers no source states,
  * `лв133.97M` reading as `лв134.0M`, which is precisely what this project
  * says not to do with a sourced figure.
  */
-export function formatMoney(m: Money, locale = "en"): string {
+export function formatMoney(m: Money, locale: string): string {
   const symbol = CURRENCY_SYMBOLS[m.currency] ?? `${m.currency} `;
   const words = MAGNITUDES[locale] ?? MAGNITUDES.en;
   const gap = words.space ? " " : "";
@@ -103,13 +107,17 @@ export function formatKm(km: number, locale: string): string {
 }
 
 /** Signed percentage with one decimal: "+38.3%", "−10.0%", "+38,3%". */
-export function formatPercent(value: number, locale = "en"): string {
+export function formatPercent(value: number, locale: string): string {
   const sign = value > 0 ? "+" : value < 0 ? "−" : "";
   return `${sign}${formatNumber(Math.abs(value), locale, 1)}%`;
 }
 
 /** Signed month count with a localized unit: "+46 mo", "−4 luni". */
-export function formatMonths(value: number, unit = "mo", locale = "en"): string {
+export function formatMonths(
+  value: number,
+  unit: string,
+  locale: string,
+): string {
   const sign = value > 0 ? "+" : value < 0 ? "−" : "";
   return `${sign}${formatNumber(Math.abs(value), locale)} ${unit}`;
 }

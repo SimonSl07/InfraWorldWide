@@ -9,7 +9,7 @@ import { formatMoney } from "./format";
 export function contractSummaryParts(
   contract: Contract,
   t: (key: string, values?: Record<string, string | number>) => string,
-  locale = "en",
+  locale: string,
 ): string[] {
   const parts: string[] = [];
   if (contract.designMonths) {

@@ -2,10 +2,7 @@
 import { describe, it, expect } from "vitest";
 import { act, renderHook } from "@testing-library/react";
 import type { Feature } from "geojson";
-import {
-  cityMarkerProperties,
-  lotFeatureProperties,
-} from "@/lib/map-features";
+import { cityMarkerProperties, lotFeatureProperties } from "@/lib/map-features";
 import type { City, Lot, Project } from "@/lib/schema";
 import type { MapArtifacts } from "./useMapArtifacts";
 import { useMapSelection, type SelectionParams } from "./useMapSelection";
@@ -98,7 +95,12 @@ function artifacts(loaded = true): { data: MapArtifacts; loaded: boolean } {
         features: [
           {
             type: "Feature",
-            properties: cityMarkerProperties("ro-bucharest", bucharest, [], null),
+            properties: cityMarkerProperties(
+              "ro-bucharest",
+              bucharest,
+              [],
+              null,
+            ),
             geometry: { type: "Point", coordinates: bucharest.center },
           },
         ],
@@ -119,9 +121,13 @@ function props(params: Partial<SelectionParams>, state = artifacts()) {
   };
 }
 
-function renderSelection(params: Partial<SelectionParams>, state = artifacts()) {
+function renderSelection(
+  params: Partial<SelectionParams>,
+  state = artifacts(),
+) {
   return renderHook(
-    (p: ReturnType<typeof props>) => useMapSelection(p.params, p.artifacts, MONTHS),
+    (p: ReturnType<typeof props>) =>
+      useMapSelection(p.params, p.artifacts, MONTHS),
     { initialProps: props(params, state) },
   );
 }
@@ -163,10 +169,14 @@ describe("useMapSelection", () => {
   });
 
   it("keeps a ?c= country that has an outline and drops one that does not", () => {
-    expect(renderSelection({ c: "ro" }).result.current.selectedCountry).toBe("ro");
+    expect(renderSelection({ c: "ro" }).result.current.selectedCountry).toBe(
+      "ro",
+    );
     // With no outline there is no panel, so there would be no × to press
     // while every lot stayed dimmed against a country that isn't there.
-    expect(renderSelection({ c: "bg" }).result.current.selectedCountry).toBeNull();
+    expect(
+      renderSelection({ c: "bg" }).result.current.selectedCountry,
+    ).toBeNull();
   });
 
   it("dims the ?c= country from the first frame, then checks it against the data", () => {
@@ -202,7 +212,9 @@ describe("useMapSelection", () => {
 
   it("holds one selection at a time", () => {
     const { result } = renderSelection({});
-    act(() => result.current.handleSelectLot(lotFeatureProperties(a1, a1.lots[0])));
+    act(() =>
+      result.current.handleSelectLot(lotFeatureProperties(a1, a1.lots[0])),
+    );
     act(() => result.current.handleSelectCountry("ro"));
     expect(result.current.selected).toBeNull();
     expect(result.current.selectedCountry).toBe("ro");

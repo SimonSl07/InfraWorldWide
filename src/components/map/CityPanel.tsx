@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
-import { formatDate, formatKm } from "@/lib/format";
+import { formatDate, formatKm, formatNumber } from "@/lib/format";
 import { localized } from "@/lib/localized";
 import type { City } from "@/lib/schema";
 import type { CityMarkerProperties } from "@/lib/map-features";
@@ -44,7 +44,10 @@ export default function CityPanel({
         <div className="text-[10px] font-semibold uppercase tracking-wide text-ink-muted">
           {t("city.panelKicker")}
         </div>
-        <h2 id="map-panel-city-heading" className="text-xl font-bold leading-tight">
+        <h2
+          id="map-panel-city-heading"
+          className="text-xl font-bold leading-tight"
+        >
           {name}
         </h2>
         <div className="mt-0.5 text-xs text-ink-muted">
@@ -59,7 +62,7 @@ export default function CityPanel({
         <Figure
           variant="compact"
           label={t("city.population")}
-          value={city.population.toLocaleString(locale)}
+          value={formatNumber(city.population, locale)}
           note={`(${formatDate(city.populationDate, locale)})`}
         />
         {city.gdpPerCapita && (

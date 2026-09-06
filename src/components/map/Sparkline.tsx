@@ -42,7 +42,9 @@ export default function Sparkline({
             className="flex-1 rounded-t-sm bg-inverse-soft"
             // Nonzero decades keep a visible floor so a small one still reads
             // as "something happened here".
-            style={{ height: b.km === 0 ? 0 : `${Math.max(6, (b.km / max) * 100)}%` }}
+            style={{
+              height: b.km === 0 ? 0 : `${Math.max(6, (b.km / max) * 100)}%`,
+            }}
             title={label(b)}
           />
         ))}

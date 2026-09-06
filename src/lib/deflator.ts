@@ -17,8 +17,7 @@ export type DeflateFailure =
   | "missing_price_year";
 
 export type DeflateResult =
-  | { ok: true; money: Money }
-  | { ok: false; reason: DeflateFailure };
+  { ok: true; money: Money } | { ok: false; reason: DeflateFailure };
 
 /**
  * Restates a Money value in `targetYear` prices, keeping its currency.

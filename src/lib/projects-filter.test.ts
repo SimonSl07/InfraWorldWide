@@ -62,10 +62,14 @@ describe("filterProjects", () => {
 
   it("filters by text query (case-insensitive, name match)", () => {
     expect(
-      filterProjects(projects, { ...noFilters, query: "brăila" }).map((p) => p.id),
+      filterProjects(projects, { ...noFilters, query: "brăila" }).map(
+        (p) => p.id,
+      ),
     ).toEqual(["ro-bridge"]);
     expect(
-      filterProjects(projects, { ...noFilters, query: "BRIDGE" }).map((p) => p.id),
+      filterProjects(projects, { ...noFilters, query: "BRIDGE" }).map(
+        (p) => p.id,
+      ),
     ).toEqual(["ro-bridge"]);
   });
 
@@ -79,7 +83,9 @@ describe("filterProjects", () => {
       name: { en: "Bridge", de: "Brücke" },
     });
     expect(
-      filterProjects([bridge], { ...noFilters, query: "brücke" }).map((p) => p.id),
+      filterProjects([bridge], { ...noFilters, query: "brücke" }).map(
+        (p) => p.id,
+      ),
     ).toEqual(["de-bridge"]);
 
     // Same for a section name.
@@ -98,7 +104,9 @@ describe("filterProjects", () => {
 
   it("filters by country", () => {
     expect(
-      filterProjects(projects, { ...noFilters, country: "de" }).map((p) => p.id),
+      filterProjects(projects, { ...noFilters, country: "de" }).map(
+        (p) => p.id,
+      ),
     ).toEqual(["de-rail"]);
   });
 
@@ -112,9 +120,10 @@ describe("filterProjects", () => {
 
   it("filters by status when any lot matches", () => {
     expect(
-      filterProjects(projects, { ...noFilters, status: "under_construction" }).map(
-        (p) => p.id,
-      ),
+      filterProjects(projects, {
+        ...noFilters,
+        status: "under_construction",
+      }).map((p) => p.id),
     ).toEqual(["de-rail"]);
     expect(
       filterProjects(projects, { ...noFilters, status: "opened" }),
@@ -123,9 +132,11 @@ describe("filterProjects", () => {
 
   it("combines filters", () => {
     expect(
-      filterProjects(projects, { ...noFilters, country: "ro", category: "bridge" }).map(
-        (p) => p.id,
-      ),
+      filterProjects(projects, {
+        ...noFilters,
+        country: "ro",
+        category: "bridge",
+      }).map((p) => p.id),
     ).toEqual(["ro-bridge"]);
     expect(
       filterProjects(projects, { ...noFilters, country: "ro", query: "zzz" }),

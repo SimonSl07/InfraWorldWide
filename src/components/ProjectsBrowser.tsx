@@ -5,10 +5,9 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Category, Project, Status } from "@/lib/schema";
 import { filterProjects } from "@/lib/projects-filter";
-import {
-  ALL_CATEGORIES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
+import { formatKm } from "@/lib/format";
 import { statusSchema } from "@/lib/schema";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { createCountryNamer } from "@/lib/country-names";
@@ -219,7 +218,10 @@ export default function ProjectsBrowser({
       </div>
 
       {/* How many rows the filters left, which the grid alone never said. */}
-      <p aria-live="polite" className="mt-3 text-sm tabular-nums text-ink-muted">
+      <p
+        aria-live="polite"
+        className="mt-3 text-sm tabular-nums text-ink-muted"
+      >
         {t("projects.count", { count: visible.length })}
       </p>
 
@@ -259,7 +261,7 @@ export default function ProjectsBrowser({
                       />
                     ))}
                     <span className="text-xs text-ink-muted ml-auto">
-                      {totalKm.toLocaleString(locale)} km
+                      {formatKm(totalKm, locale)}
                     </span>
                   </div>
                 </Link>

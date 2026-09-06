@@ -99,7 +99,10 @@ export default async function ProjectPage({
       costOptions,
     )[0] ?? null;
 
-  const related = relatedProjects(project, getProjects(), { resolve, limit: 6 });
+  const related = relatedProjects(project, getProjects(), {
+    resolve,
+    limit: 6,
+  });
   const corridors = corridorsOfProject(project, getCorridorTable());
 
   /* ── Citations ───────────────────────────────────────────────────────── */
@@ -108,7 +111,10 @@ export default async function ProjectPage({
 
   const headline = [
     { label: t("project.totalLength"), value: formatKm(totals.totalKm, lang) },
-    { label: t("project.openedLength"), value: formatKm(totals.openedKm, lang) },
+    {
+      label: t("project.openedLength"),
+      value: formatKm(totals.openedKm, lang),
+    },
     ...(totals.underConstructionKm > 0
       ? [
           {
@@ -128,10 +134,7 @@ export default async function ProjectPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbs) }}
       />
-      <Link
-        href="/projects"
-        className="text-sm text-ink-muted hover:text-ink"
-      >
+      <Link href="/projects" className="text-sm text-ink-muted hover:text-ink">
         ← {t("project.backToProjects")}
       </Link>
 
@@ -310,7 +313,9 @@ export default async function ProjectPage({
 
       {corridors.length > 0 && (
         <section className="mt-10">
-          <h2 className="text-xl font-semibold">{t("project.corridorsTitle")}</h2>
+          <h2 className="text-xl font-semibold">
+            {t("project.corridorsTitle")}
+          </h2>
           <p className="mt-1 max-w-3xl text-sm text-ink-muted">
             {t("project.corridorsNote")}
           </p>

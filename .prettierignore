@@ -1,0 +1,14 @@
+# Build output and dependencies
+.next
+node_modules
+coverage
+out
+public/data
+next-env.d.ts
+package-lock.json
+
+# Generated from src/lib/schema.ts by npm run data:schema
+schema
+
+# Curated data, hand-formatted; a formatter would churn every file
+data

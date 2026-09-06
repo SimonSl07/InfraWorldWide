@@ -7,7 +7,9 @@ import type { ContractorRegistry, Project } from "../schema";
 import type { GeoFeature, GeometryReport } from "./geometry";
 
 /** Reads a project's geometry file, or null when it cannot be read. */
-export type GeoReader = (project: Project) => { features?: GeoFeature[] } | null;
+export type GeoReader = (
+  project: Project,
+) => { features?: GeoFeature[] } | null;
 
 /**
  * Source obligations.
@@ -108,7 +110,10 @@ export function checkLotContractors(
           (r) => r.kind === "firm" && !known.has(r.id),
         );
         if (misses.length > 0) {
-          unresolved.set(contractor.name, (unresolved.get(contractor.name) ?? 0) + 1);
+          unresolved.set(
+            contractor.name,
+            (unresolved.get(contractor.name) ?? 0) + 1,
+          );
         }
       }
     }

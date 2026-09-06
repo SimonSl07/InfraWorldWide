@@ -1,7 +1,4 @@
-import type {
-  ExpressionSpecification,
-  FilterSpecification,
-} from "maplibre-gl";
+import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import type { Category, Status } from "./schema";
 import { LIGHT_MAP, type MapTheme } from "./map-theme";
 
@@ -115,7 +112,12 @@ export function countryOutlineColor(
 export function countryOutlineWidth(
   selected: string | null,
 ): ExpressionSpecification {
-  return ["case", isCountry(selected), 2, 1] as unknown as ExpressionSpecification;
+  return [
+    "case",
+    isCountry(selected),
+    2,
+    1,
+  ] as unknown as ExpressionSpecification;
 }
 
 /* ── City view paint ──────────────────────────────────────────────────── */
