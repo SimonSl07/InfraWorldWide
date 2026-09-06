@@ -72,36 +72,6 @@ export function currentMonth(now: Date = new Date()): number {
   return now.getUTCFullYear() * 12 + now.getUTCMonth();
 }
 
-/**
- * Projected completion as an absolute month index: start date plus the
- * contracted duration. Null when either side is unknown.
- */
-export function projectedCompletionMonth(
-  startDate: string | undefined,
-  contract: Contract | undefined,
-): number | null {
-  if (!contract) return null;
-  const months = contractMonths(contract);
-  if (months === null) return null;
-  const start = monthIndex(startDate);
-  if (start === null) return null;
-  return start + months;
-}
-
-/**
- * Projected completion year from a start date plus the contracted duration
- * ("YYYY", "YYYY-MM" or "YYYY-MM-DD" + N months). Returns null when either
- * side is unknown. This is a *derived estimate* — `dates.expectedOpening`
- * always wins when a source states one explicitly.
- */
-export function projectedCompletionYear(
-  startDate: string | undefined,
-  contract: Contract | undefined,
-): number | null {
-  const month = projectedCompletionMonth(startDate, contract);
-  return month === null ? null : Math.floor(month / 12);
-}
-
 /** Which recorded date a contract-derived deadline is counted from. */
 export type ContractAnchor = "constructionStart" | "tenderAwarded";
 

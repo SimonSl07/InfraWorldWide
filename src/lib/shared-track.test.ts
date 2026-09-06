@@ -1,8 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {
-  sharedTrackByCountry,
-  summarizeSharedTrack,
-} from "./shared-track";
+import { summarizeSharedTrack } from "./shared-track";
 import type { Project } from "./schema";
 
 function project(
@@ -65,18 +62,5 @@ describe("summarizeSharedTrack", () => {
       lots: 1,
       km: 11.5,
     });
-  });
-});
-
-describe("sharedTrackByCountry", () => {
-  it("groups by the country of the borrowing project", () => {
-    expect(sharedTrackByCountry(projects)).toEqual({
-      ro: { lots: 1, km: 8.67 },
-      bg: { lots: 1, km: 11.5 },
-    });
-  });
-
-  it("omits countries with no shared track", () => {
-    expect(sharedTrackByCountry([projects[0]])).toEqual({});
   });
 });

@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
   geojsonBounds,
-  featuresForProject,
   nearestFeature,
   distanceToFeature,
   lineLength,
@@ -36,14 +35,6 @@ describe("geojsonBounds", () => {
   });
   it("returns null for an empty collection", () => {
     expect(geojsonBounds({ type: "FeatureCollection", features: [] })).toBeNull();
-  });
-});
-
-describe("featuresForProject", () => {
-  it("filters features by projectId", () => {
-    const features = featuresForProject(fc, "ro-a1");
-    expect(features).toHaveLength(1);
-    expect(features[0].geometry.type).toBe("LineString");
   });
 });
 

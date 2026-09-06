@@ -1,8 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 
 /**
- * The artifact readers had no tests at all, including the city-exclusion rule
- * that decides what the main map shows.
+ * The artifact readers had no tests at all.
  *
  * The module memoizes each artifact, so every case re-imports it against a
  * fresh stubbed filesystem.
@@ -113,17 +112,6 @@ describe("getProjects", () => {
   });
 });
 
-describe("getMapProjects", () => {
-  it("excludes anything scoped to a city", () => {
-    // A metro line at country zoom is a few pixels on top of the motorway
-    // network, so city work lives on the city's page instead.
-    expect(data.getMapProjects().map((p) => p.id)).toEqual([
-      "ro-a1",
-      "bg-a1-trakia",
-    ]);
-  });
-});
-
 describe("getCityProjects", () => {
   it("returns only that city's projects", () => {
     expect(data.getCityProjects("bg-sofia").map((p) => p.id)).toEqual([
@@ -160,15 +148,5 @@ describe("getProject", () => {
 
   it("returns undefined for an unknown id", () => {
     expect(data.getProject("xx-nope")).toBeUndefined();
-  });
-});
-
-describe("getCity", () => {
-  it("resolves a city key", () => {
-    expect(data.getCity("bg-sofia")?.name.en).toBe("Sofia");
-  });
-
-  it("returns undefined for an unknown key", () => {
-    expect(data.getCity("ro-cluj")).toBeUndefined();
   });
 });

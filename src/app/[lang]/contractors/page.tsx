@@ -6,9 +6,10 @@ import {
   unregisteredFirms,
   type ContractorProfile,
 } from "@/lib/contractor-directory";
-import { countryName, flagEmoji } from "@/lib/country-names";
+import { countryName } from "@/lib/country-names";
 import { formatKm, formatMonths, formatPercent } from "@/lib/format";
 import { pageMetadata } from "@/lib/page-metadata";
+import { CountryLabel } from "@/components/ui/CountryLabel";
 import { loadContractorProfiles } from "./profiles";
 
 export async function generateMetadata({
@@ -76,10 +77,13 @@ export default async function ContractorsPage({
   const countriesCell = (profile: ContractorProfile) => (
     <span className="text-ink-soft">
       {profile.countries.map((code) => (
-        <span key={code} title={countryName(code, lang)} className="mr-1">
-          <span aria-hidden>{flagEmoji(code)}</span>
-          <span className="sr-only">{countryName(code, lang)}</span>
-        </span>
+        <CountryLabel
+          key={code}
+          code={code}
+          name={countryName(code, lang)}
+          srOnlyName
+          className="mr-1"
+        />
       ))}
     </span>
   );

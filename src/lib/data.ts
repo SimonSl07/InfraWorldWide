@@ -86,24 +86,8 @@ export function getProject(id: string): Project | undefined {
   return getProjects().find((p) => p.id === id);
 }
 
-/** One city by the key `Project.city` references, or undefined. */
-export function getCity(key: string) {
-  return getCityTable().cities[key];
-}
-
 export function getCountries(): string[] {
   return [...new Set(getProjects().map((p) => p.country))].sort();
-}
-
-/**
- * Projects shown on the main map: everything not scoped to a city.
- *
- * The main map is a country-scale view. A metro line drawn at that zoom is
- * a few pixels of noise sitting on top of the motorway network, so city
- * work lives on the city's own page instead.
- */
-export function getMapProjects(): Project[] {
-  return getProjects().filter((p) => !p.city);
 }
 
 /** Projects belonging to one city. */

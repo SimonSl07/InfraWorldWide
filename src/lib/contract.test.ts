@@ -4,7 +4,6 @@ import {
   contractMonths,
   currentMonth,
   monthIndex,
-  projectedCompletionYear,
   expectedOpeningYear,
 } from "./contract";
 import type { Lot } from "./schema";
@@ -20,31 +19,6 @@ describe("contractMonths", () => {
   it("returns null when no duration is known", () => {
     expect(contractMonths({})).toBeNull();
     expect(contractMonths({ guaranteeMonths: 84 })).toBeNull();
-  });
-});
-
-describe("projectedCompletionYear", () => {
-  it("adds contracted months to a year-month start", () => {
-    // Feb 2024 + 30 months = Aug 2026
-    expect(
-      projectedCompletionYear("2024-02", { designMonths: 6, executionMonths: 24 }),
-    ).toBe(2026);
-  });
-  it("treats a year-only start as January", () => {
-    // Jan 2023 + 54 months = Jul 2027
-    expect(
-      projectedCompletionYear("2023", { designMonths: 14, executionMonths: 40 }),
-    ).toBe(2027);
-  });
-  it("handles full dates", () => {
-    expect(
-      projectedCompletionYear("2023-09-15", { totalMonths: 36 }),
-    ).toBe(2026);
-  });
-  it("returns null on missing inputs", () => {
-    expect(projectedCompletionYear(undefined, { totalMonths: 12 })).toBeNull();
-    expect(projectedCompletionYear("2024-02", undefined)).toBeNull();
-    expect(projectedCompletionYear("2024-02", {})).toBeNull();
   });
 });
 

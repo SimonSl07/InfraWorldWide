@@ -22,6 +22,10 @@ import {
   pickedFillOpacity,
   pickedOutlineWidth,
 } from "./map-style";
+import { DARK_MAP, LIGHT_MAP } from "./map-theme";
+
+/** Every palette a themed expression can be handed. */
+const THEMES = [LIGHT_MAP, DARK_MAP];
 
 /**
  * MapLibre validates paint expressions at runtime and silently drops the
@@ -103,7 +107,11 @@ describe("country layer paint", () => {
   it("builds valid outline expressions", () => {
     for (const selected of SELECTIONS) {
       expect(validate(countryOutlineOpacity(selected), "line-opacity")).toBeNull();
-      expect(validate(countryOutlineColor(selected), "line-color")).toBeNull();
+      for (const theme of THEMES) {
+        expect(
+          validate(countryOutlineColor(selected, theme), "line-color"),
+        ).toBeNull();
+      }
       expect(validate(countryOutlineWidth(selected), "line-width")).toBeNull();
     }
   });
@@ -172,9 +180,11 @@ describe("country picker paint", () => {
           ),
         ).toBeNull();
       }
-      expect(
-        validate(pickedFillColor(picked), "fill-color", "paint_fill"),
-      ).toBeNull();
+      for (const theme of THEMES) {
+        expect(
+          validate(pickedFillColor(picked, theme), "fill-color", "paint_fill"),
+        ).toBeNull();
+      }
       expect(validate(pickedOutlineWidth(picked), "line-width")).toBeNull();
     }
   });
@@ -267,5 +277,19 @@ describe("map statuses", () => {
     for (const status of MAP_STATUSES.filter((s) => s !== "opened")) {
       expect(STATUS_DASHES[status]?.length).toBeGreaterThan(0);
     }
+  });
+});
+
+describe("themed colours", () => {
+  it("draws the outline and the picker in the palette it is handed", () => {
+    // The light values are the defaults, so a caller that passes nothing
+    // draws exactly what it drew before the theme existed.
+    expect(countryOutlineColor("ro")).toContain(LIGHT_MAP.countryOutline);
+    expect(countryOutlineColor("ro", DARK_MAP)).toContain(DARK_MAP.countryOutline);
+    expect(countryOutlineColor("ro", DARK_MAP)).toContain(
+      DARK_MAP.countryOutlineMuted,
+    );
+    expect(pickedFillColor(["ro"], DARK_MAP)).toContain(DARK_MAP.pickerPicked);
+    expect(pickedFillColor(["ro"], DARK_MAP)).toContain(DARK_MAP.pickerUnpicked);
   });
 });

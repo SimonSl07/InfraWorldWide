@@ -4,8 +4,9 @@ import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import DataTable, { type Column } from "@/components/DataTable";
-import { categoryVar } from "@/lib/map-theme";
-import { createCountryNamer, flagEmoji } from "@/lib/country-names";
+import { CountryLabel } from "@/components/ui/CountryLabel";
+import { SectionLink } from "@/components/ui/SectionLink";
+import { createCountryNamer } from "@/lib/country-names";
 import { formatKm, formatMonth, formatMonths, formatPercent } from "@/lib/format";
 import type { Category } from "@/lib/schema";
 import type { CostBasis } from "@/lib/rankings";
@@ -138,34 +139,21 @@ export default function PerformanceTables({
     lotName?: string;
     category: Category;
   }) => (
-    <Link
-      href={`/projects/${row.projectId}`}
-      className="flex items-baseline gap-2 hover:underline underline-offset-2"
-    >
-      <span
-        aria-hidden
-        className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
-        style={{ backgroundColor: categoryVar(row.category) }}
-      />
-      <span>
-        <span className="text-ink-muted">{row.projectName}</span>
-        {row.lotName && (
-          <>
-            <span className="text-ink-faint"> / </span>
-            <span className="font-medium">{row.lotName}</span>
-          </>
-        )}
-      </span>
-    </Link>
+    <SectionLink
+      projectId={row.projectId}
+      projectName={row.projectName}
+      lotName={row.lotName}
+      category={row.category}
+    />
   );
 
   const countryCell = (code: string) => (
-    <span className="whitespace-nowrap">
-      <span aria-hidden className="mr-1.5">
-        {flagEmoji(code)}
-      </span>
-      {nameOf(code)}
-    </span>
+    <CountryLabel
+      code={code}
+      name={nameOf(code)}
+      className="whitespace-nowrap"
+      flagClassName="mr-1.5"
+    />
   );
 
   /* ── 1. Opened sections ─────────────────────────────────────────────── */

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { EXTERNAL_LINKS } from "@/lib/links";
+import { ExternalLink } from "@/components/ui/ExternalLink";
 
 /**
  * Attribution, and the links it needs to be worth anything.
@@ -49,15 +50,13 @@ export default async function Footer() {
             </Link>
           ))}
           {external.map((link) => (
-            <a
+            <ExternalLink
               key={link.href}
               href={link.href}
-              target="_blank"
-              rel="noreferrer"
               className="underline underline-offset-2 hover:text-ink"
             >
               {link.label}
-            </a>
+            </ExternalLink>
           ))}
         </nav>
       </div>

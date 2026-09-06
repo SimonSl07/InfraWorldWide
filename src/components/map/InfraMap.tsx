@@ -50,18 +50,6 @@ import {
 import { hoveredCountry, resolveMapClick } from "@/lib/map-click";
 import type { BBox } from "@/lib/geo";
 
-/**
- * Everything the data build flattens onto a lot feature. Shared with the
- * keyboard list so the map and the list cannot disagree about a lot.
- */
-export type LotFeatureProps = LotEntry;
-
-/**
- * Properties on a city marker feature, as written by the data build.
- * Re-exported under the old name because CityPanel imports it from here.
- */
-export type CityMarkerProps = CityMarkerProperties;
-
 /** Where the map opens when no ?v= says otherwise. */
 export const DEFAULT_VIEW: MapView = {
   longitude: 24.97,
@@ -86,7 +74,7 @@ interface InfraMapProps {
   selectedLotId: string | null;
   selectedCountry: string | null;
   selectedCity: string | null;
-  onSelectLot: (props: LotFeatureProps | null) => void;
+  onSelectLot: (props: LotEntry | null) => void;
   onSelectCountry: (code: string | null) => void;
   onSelectCity: (key: string | null) => void;
   /** UI locale, for MapLibre's own strings and the km figures. */
@@ -191,7 +179,7 @@ export default function InfraMap({
    * every layer on each event is exactly what the map cannot afford.
    */
   const [hoveredLot, setHoveredLot] = useState<{
-    props: LotFeatureProps;
+    props: LotEntry;
     longitude: number;
     latitude: number;
   } | null>(null);
@@ -321,7 +309,7 @@ export default function InfraMap({
       // under nothing, over everything: it answers "what changed", so it
       // has to win against the network it sits on.
       newlyOpened: {
-        "line-color": "#ec4899", // pink-500, used nowhere else on the map
+        "line-color": theme.newlyOpened,
         "line-width": [
           "interpolate",
           ["linear"],
@@ -337,7 +325,7 @@ export default function InfraMap({
         "line-blur": 1,
       },
       selected: {
-        "line-color": "#facc15", // yellow-400 highlight
+        "line-color": theme.selectedHighlight,
         "line-width": ["interpolate", ["linear"], ["zoom"], 4, 5, 8, 9, 12, 14] as unknown as ExpressionSpecification,
         "line-opacity": 0.5,
       },
@@ -350,16 +338,16 @@ export default function InfraMap({
   const countryPaints = useMemo(
     () => ({
       fill: {
-        "fill-color": "#0f172a",
+        "fill-color": theme.countryFill,
         "fill-opacity": countryFillOpacity(selectedCountry, hovered),
       },
       outline: {
-        "line-color": countryOutlineColor(selectedCountry),
+        "line-color": countryOutlineColor(selectedCountry, theme),
         "line-width": countryOutlineWidth(selectedCountry),
         "line-opacity": countryOutlineOpacity(selectedCountry),
       },
     }),
-    [selectedCountry, hovered],
+    [selectedCountry, hovered, theme],
   );
 
   const selectedFilter = useMemo(
@@ -387,7 +375,7 @@ export default function InfraMap({
       switch (hit.kind) {
         case "lot":
           onSelectCountry(null);
-          onSelectLot(hit.feature.properties as unknown as LotFeatureProps);
+          onSelectLot(hit.feature.properties as unknown as LotEntry);
           return;
         case "country":
           onSelectLot(null);
@@ -407,7 +395,7 @@ export default function InfraMap({
     const hit = resolveMapClick(features, [e.lngLat.lng, e.lngLat.lat]);
 
     if (hit.kind === "lot") {
-      const props = hit.feature.properties as unknown as LotFeatureProps;
+      const props = hit.feature.properties as unknown as LotEntry;
       setHovered(null);
       // Only when the lot itself changes: tracing one road must not rebuild
       // the tooltip on every pixel.
@@ -551,7 +539,7 @@ export default function InfraMap({
           click handler stops propagation so the map's own onClick, which
           would clear the selection, never runs. */}
       {cities.features.map((feature) => {
-        const props = feature.properties as unknown as CityMarkerProps;
+        const props = feature.properties as unknown as CityMarkerProperties;
         if (feature.geometry.type !== "Point") return null;
         const [longitude, latitude] = feature.geometry.coordinates;
         const active = selectedCity === props.city;

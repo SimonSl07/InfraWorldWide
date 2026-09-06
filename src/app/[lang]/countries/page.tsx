@@ -33,6 +33,28 @@ export async function generateMetadata({
   });
 }
 
+/**
+ * Reserves the picker's footprint while CountryCompare hydrates: a search
+ * box over a list on the left, the picker map on the right. Without it the
+ * comparison block popped in after the static HTML and moved everything
+ * below it.
+ */
+function CompareFallback() {
+  return (
+    <div aria-hidden className="grid gap-4 sm:grid-cols-2">
+      <div>
+        <div className="h-4 w-16 rounded bg-surface-raised" />
+        <div className="mt-1 h-10 rounded-lg border border-line-strong bg-surface-sunken" />
+        <div className="mt-2 h-48 rounded-lg bg-surface-sunken" />
+      </div>
+      <div>
+        <div className="h-4 w-24 rounded bg-surface-raised" />
+        <div className="mt-1 h-64 rounded-xl border border-line bg-surface-sunken" />
+      </div>
+    </div>
+  );
+}
+
 export default async function CountriesPage({
   params,
 }: PageProps<"/[lang]/countries">) {
@@ -144,7 +166,7 @@ export default async function CountriesPage({
         {/* CountryCompare reads ?compare= with useSearchParams; without this
             boundary the whole page would fall back to client rendering. */}
         <div className="mt-6">
-          <Suspense>
+          <Suspense fallback={<CompareFallback />}>
             <CountryCompare
               countries={ranked}
               performance={performance}

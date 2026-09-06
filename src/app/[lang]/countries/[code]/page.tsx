@@ -19,7 +19,7 @@ import {
   type SlipEntry,
 } from "@/lib/rankings";
 import { summarizeSharedTrack } from "@/lib/shared-track";
-import { findCountry, rankCountries, type Rank } from "@/lib/country-stats";
+import { findCountry, rankCountries } from "@/lib/country-stats";
 import { openedKmByDecade, peakDecade } from "@/lib/country-growth";
 import { countryName, flagEmoji } from "@/lib/country-names";
 import { getOpenings } from "@/lib/timeline";
@@ -42,6 +42,9 @@ import {
 import { categoryVar } from "@/lib/map-theme";
 import type { Category } from "@/lib/schema";
 import CountryGrowthChart from "@/components/CountryGrowthChart";
+import { ExternalLink } from "@/components/ui/ExternalLink";
+import { RankBadge } from "@/components/ui/RankBadge";
+import { SectionLink } from "@/components/ui/SectionLink";
 import TimeTravelMap from "@/components/map/TimeTravelMap";
 import ProjectsBrowser from "@/components/ProjectsBrowser";
 
@@ -134,17 +137,6 @@ function PerfList({
   );
 }
 
-/** "#2 / 5" — see the note on RankChip in CountryPanel. */
-function RankBadge({ rank }: { rank: Rank | null }) {
-  if (!rank) return null;
-  return (
-    <span className="ml-2 rounded-full bg-surface-raised px-2 py-0.5 text-xs font-semibold tabular-nums text-ink-soft">
-      #{rank.position}
-      <span className="text-ink-faint"> / {rank.of}</span>
-    </span>
-  );
-}
-
 export default async function CountryPage({
   params,
 }: PageProps<"/[lang]/countries/[code]">) {
@@ -197,20 +189,12 @@ export default async function CountryPage({
   });
 
   const sectionLabel = (m: LotMetric) => (
-    <Link
-      href={`/projects/${m.projectId}`}
-      className="flex items-baseline gap-2 hover:underline underline-offset-2"
-    >
-      <span
-        className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
-        style={{ backgroundColor: categoryVar(m.category) }}
-      />
-      <span>
-        <span className="text-ink-muted">{name(m.projectName)}</span>
-        <span className="text-ink-faint"> / </span>
-        <span className="font-medium">{name(m.lotName)}</span>
-      </span>
-    </Link>
+    <SectionLink
+      projectId={m.projectId}
+      projectName={name(m.projectName)}
+      lotName={name(m.lotName)}
+      category={m.category}
+    />
   );
 
   const slipRows = (entries: SlipEntry[]) =>
@@ -575,14 +559,12 @@ export default async function CountryPage({
           <ul className="space-y-1 text-sm text-ink-soft">
             {ref.sources.map((s) => (
               <li key={s.url}>
-                <a
+                <ExternalLink
                   href={s.url}
-                  target="_blank"
-                  rel="noreferrer"
                   className="underline underline-offset-2 hover:text-ink"
                 >
                   {s.title}
-                </a>
+                </ExternalLink>
               </li>
             ))}
           </ul>

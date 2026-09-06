@@ -7,38 +7,16 @@ import { countryName, flagEmoji } from "@/lib/country-names";
 import { formatDate, formatKm } from "@/lib/format";
 import { localized } from "@/lib/localized";
 import type { City } from "@/lib/schema";
-import type { CityMarkerProps } from "./InfraMap";
+import type { CityMarkerProperties } from "@/lib/map-features";
+import { ExternalLink } from "@/components/ui/ExternalLink";
+import { Figure } from "@/components/ui/Figure";
 
 interface CityPanelProps {
   cityKey: string;
   city: City;
   /** Counts from the map marker, so the panel and the marker agree. */
-  marker: CityMarkerProps | null;
+  marker: CityMarkerProperties | null;
   onClose: () => void;
-}
-
-function Figure({
-  label,
-  value,
-  note,
-}: {
-  label: string;
-  value: string;
-  note?: string;
-}) {
-  return (
-    <div>
-      <div className="text-xs text-ink-muted">{label}</div>
-      <div className="text-lg font-bold tabular-nums">
-        {value}
-        {note && (
-          <span className="ml-1.5 text-xs font-normal text-ink-faint">
-            {note}
-          </span>
-        )}
-      </div>
-    </div>
-  );
 }
 
 /**
@@ -79,12 +57,14 @@ export default function CityPanel({
 
       <div className="mt-4 grid grid-cols-2 gap-3">
         <Figure
+          variant="compact"
           label={t("city.population")}
           value={city.population.toLocaleString(locale)}
           note={`(${formatDate(city.populationDate, locale)})`}
         />
         {city.gdpPerCapita && (
           <Figure
+            variant="compact"
             label={t("city.gdpPerCapita")}
             value={city.gdpPerCapita.amount.toLocaleString(locale, {
               style: "currency",
@@ -122,14 +102,12 @@ export default function CityPanel({
           {t("city.seeMore")}
         </Link>
         {city.link && (
-          <a
+          <ExternalLink
             href={city.link}
-            target="_blank"
-            rel="noreferrer"
             className="text-sm text-ink-muted underline underline-offset-2 hover:text-ink"
           >
             {t("city.officialSite")}
-          </a>
+          </ExternalLink>
         )}
       </div>
     </MapPanel>

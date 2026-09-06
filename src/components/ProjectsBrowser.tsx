@@ -10,6 +10,7 @@ import {
 } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import { statusSchema } from "@/lib/schema";
+import { StatusBadge } from "@/components/ui/StatusBadge";
 import { createCountryNamer } from "@/lib/country-names";
 import { createLocalizer } from "@/lib/localized";
 import {
@@ -22,14 +23,6 @@ import {
   sortProjects,
   type ProjectSort,
 } from "@/lib/projects-sort";
-
-const STATUS_BADGE: Record<Status, string> = {
-  opened: "bg-good-soft text-good",
-  under_construction: "bg-warn-soft text-warn",
-  tendered: "bg-info-soft text-info",
-  planned: "bg-surface-raised text-ink-soft",
-  cancelled: "bg-bad-soft text-bad",
-};
 
 /**
  * The query string as an external store.
@@ -258,12 +251,12 @@ export default function ProjectsBrowser({
                   </h3>
                   <div className="mt-2 flex flex-wrap items-center gap-1.5">
                     {statuses.map((s) => (
-                      <span
+                      <StatusBadge
                         key={s}
-                        className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${STATUS_BADGE[s]}`}
-                      >
-                        {t(`status.${s}`)}
-                      </span>
+                        status={s}
+                        label={t(`status.${s}`)}
+                        className="text-[11px]"
+                      />
                     ))}
                     <span className="text-xs text-ink-muted ml-auto">
                       {totalKm.toLocaleString(locale)} km

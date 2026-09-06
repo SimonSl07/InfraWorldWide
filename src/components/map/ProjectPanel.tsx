@@ -2,22 +2,16 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { Lot, Project, Status } from "@/lib/schema";
-import { formatDate, formatMoney } from "@/lib/format";
+import type { Lot, Project } from "@/lib/schema";
+import { formatDate, formatKm } from "@/lib/format";
 import { createLocalizer } from "@/lib/localized";
 import MapPanel from "./MapPanel";
 import { categoryVar } from "@/lib/map-theme";
 import { expectedOpeningYear } from "@/lib/contract";
 import { mapLotHref } from "@/lib/map-link";
 import ContractTerms from "@/components/ContractTerms";
-
-const STATUS_BADGE: Record<Status, string> = {
-  opened: "bg-good-soft text-good",
-  under_construction: "bg-warn-soft text-warn",
-  tendered: "bg-info-soft text-info",
-  planned: "bg-surface-raised text-ink-soft",
-  cancelled: "bg-bad-soft text-bad",
-};
+import { StatusBadge } from "@/components/ui/StatusBadge";
+import { MoneyLine } from "@/components/project/MoneyLine";
 
 interface ProjectPanelProps {
   project: Project;
@@ -63,14 +57,8 @@ export default function ProjectPanel({ project, lot, onClose }: ProjectPanelProp
       </div>
 
       <div className="mt-3 flex items-center gap-2 text-sm">
-        <span
-          className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS_BADGE[lot.status]}`}
-        >
-          {t(`status.${lot.status}`)}
-        </span>
-        <span className="text-ink-soft">
-          {lot.lengthKm} km
-        </span>
+        <StatusBadge status={lot.status} label={t(`status.${lot.status}`)} />
+        <span className="text-ink-soft">{formatKm(lot.lengthKm, locale)}</span>
       </div>
 
       {/* The panel cannot name the owning line: it is handed one project, and
@@ -114,7 +102,7 @@ export default function ProjectPanel({ project, lot, onClose }: ProjectPanelProp
               <div className="flex justify-between">
                 <span>{t("project.estimated")}</span>
                 <span className="font-medium">
-                  {formatMoney(lot.cost.estimated)} ({lot.cost.estimated.year})
+                  <MoneyLine money={lot.cost.estimated} locale={locale} t={t} />
                 </span>
               </div>
             )}
@@ -122,7 +110,7 @@ export default function ProjectPanel({ project, lot, onClose }: ProjectPanelProp
               <div className="flex justify-between">
                 <span>{t("project.actual")}</span>
                 <span className="font-medium">
-                  {formatMoney(lot.cost.actual)} ({lot.cost.actual.year})
+                  <MoneyLine money={lot.cost.actual} locale={locale} t={t} />
                 </span>
               </div>
             )}

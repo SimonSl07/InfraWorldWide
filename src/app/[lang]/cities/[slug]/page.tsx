@@ -11,6 +11,8 @@ import { pageMetadata } from "@/lib/page-metadata";
 import { breadcrumbList, jsonLdScript } from "@/lib/structured-data";
 import { siteUrl } from "@/lib/seo";
 import CityView, { type CityProjectCard } from "@/components/city/CityView";
+import { ExternalLink } from "@/components/ui/ExternalLink";
+import { Figure } from "@/components/ui/Figure";
 import { countsTowardNetwork, type City } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -35,24 +37,6 @@ export async function generateMetadata({
     description: t("city.metaDescription", { city: name }),
     siteName: t("site.name"),
   });
-}
-
-function Figure({
-  label,
-  value,
-  note,
-}: {
-  label: string;
-  value: string;
-  note?: string;
-}) {
-  return (
-    <div className="rounded-xl border border-line p-4">
-      <div className="text-xs text-ink-muted">{label}</div>
-      <div className="mt-1 text-2xl font-bold tabular-nums">{value}</div>
-      {note && <div className="mt-0.5 text-xs text-ink-faint">{note}</div>}
-    </div>
-  );
 }
 
 export default async function CityPage({
@@ -196,28 +180,24 @@ export default async function CityPage({
           {city.sources.map((source, i) => (
             <span key={source.url}>
               {i > 0 && ", "}
-              <a
+              <ExternalLink
                 href={source.url}
-                target="_blank"
-                rel="noreferrer"
                 className="underline underline-offset-2 hover:text-ink"
               >
                 {source.title}
-              </a>
+              </ExternalLink>
             </span>
           ))}
           .
         </p>
         {city.link && (
           <p className="mt-2">
-            <a
+            <ExternalLink
               href={city.link}
-              target="_blank"
-              rel="noreferrer"
               className="underline underline-offset-2 hover:text-ink"
             >
               {t("city.officialSite")}
-            </a>
+            </ExternalLink>
           </p>
         )}
       </section>

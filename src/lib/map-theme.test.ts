@@ -59,3 +59,31 @@ describe("mapColorsFor", () => {
     expect(Object.keys(DARK_MAP).sort()).toEqual(Object.keys(LIGHT_MAP).sort());
   });
 });
+
+describe("country, picker and highlight inks", () => {
+  const inks = [
+    "countryFill",
+    "countryOutline",
+    "countryOutlineMuted",
+    "pickerPicked",
+    "pickerUnpicked",
+    "pickerOutline",
+    "selectedHighlight",
+    "newlyOpened",
+  ] as const;
+
+  it("sets every ink in both themes", () => {
+    for (const ink of inks) {
+      expect(LIGHT_MAP[ink]).toMatch(/^#[0-9a-f]{6}$/);
+      expect(DARK_MAP[ink]).toMatch(/^#[0-9a-f]{6}$/);
+    }
+  });
+
+  it("changes every ink for the dark basemap", () => {
+    // slate-900 at 8% over a near-black basemap is no tint at all, which
+    // is how the selected country came to be invisible in dark mode.
+    for (const ink of inks) {
+      expect(DARK_MAP[ink]).not.toBe(LIGHT_MAP[ink]);
+    }
+  });
+});
