@@ -98,10 +98,7 @@ export function LotsTable({
             ].filter((line) => line !== null);
             const progress = constructionProgress(lot, nowMonth);
             return (
-              <tr
-                key={lot.id}
-                className="border-b border-line-soft align-top"
-              >
+              <tr key={lot.id} className="border-b border-line-soft align-top">
                 {/* The section names the row, so it is a header cell. */}
                 <th
                   scope="row"
@@ -252,8 +249,9 @@ export function LotsTable({
                 </td>
                 <td className="py-3 text-ink-soft">
                   {lot.contract
-                    ? contractSummaryParts(lot.contract, t, locale).join(" · ") ||
-                      "–"
+                    ? contractSummaryParts(lot.contract, t, locale).join(
+                        " · ",
+                      ) || "–"
                     : "–"}
                 </td>
               </tr>

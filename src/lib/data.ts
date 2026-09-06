@@ -1,6 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
-import { createAnalysisContext, type AnalysisContext } from "./analysis-context";
+import {
+  createAnalysisContext,
+  type AnalysisContext,
+} from "./analysis-context";
 import {
   buildContractorDirectory,
   type ContractorProfile,

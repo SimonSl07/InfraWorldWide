@@ -38,7 +38,9 @@ describe("StatusBadge", () => {
   });
 
   it("lets the call site set the type size instead of stacking two", () => {
-    render(<StatusBadge status="opened" label="Open" className="text-[11px]" />);
+    render(
+      <StatusBadge status="opened" label="Open" className="text-[11px]" />,
+    );
     const pill = screen.getByText("Open");
     expect(pill).toHaveClass("text-[11px]");
     expect(pill).not.toHaveClass("text-xs");
@@ -72,7 +74,12 @@ describe("Figure", () => {
 
   it("keeps the note inline when compact", () => {
     render(
-      <Figure label="Population" value="1,800,000" note="(2021)" variant="compact" />,
+      <Figure
+        label="Population"
+        value="1,800,000"
+        note="(2021)"
+        variant="compact"
+      />,
     );
     expect(screen.getByText("(2021)").tagName).toBe("SPAN");
   });
@@ -94,7 +101,9 @@ describe("SectionLink", () => {
   });
 
   it("omits the separator for a whole-project row", () => {
-    render(<SectionLink projectId="ro-a1" projectName="A1" category="highway" />);
+    render(
+      <SectionLink projectId="ro-a1" projectName="A1" category="highway" />,
+    );
     expect(screen.getByRole("link").textContent).toBe("A1");
   });
 });

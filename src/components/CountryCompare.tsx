@@ -4,9 +4,7 @@ import { Fragment, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import {
-  ALL_CATEGORIES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import { createCountryNamer, flagEmoji } from "@/lib/country-names";
 import { parseCompareParam } from "@/lib/map-filters";
@@ -111,9 +109,7 @@ export default function CountryCompare({
   const withSample = (value: React.ReactNode, n: number) => (
     <>
       {value}
-      <span className="ml-1 text-[10px] font-normal text-ink-faint">
-        n={n}
-      </span>
+      <span className="ml-1 text-[10px] font-normal text-ink-faint">n={n}</span>
     </>
   );
 
@@ -377,11 +373,15 @@ export default function CountryCompare({
             <caption className="sr-only">{t("country.compareTitle")}</caption>
             <thead>
               <tr className="border-b border-line">
-                <th scope="col" className="py-2 pr-4 text-left text-xs font-medium uppercase tracking-wide text-ink-muted">
+                <th
+                  scope="col"
+                  className="py-2 pr-4 text-left text-xs font-medium uppercase tracking-wide text-ink-muted"
+                >
                   {t("country.metric")}
                 </th>
                 {compared.map((c) => (
-                  <th scope="col"
+                  <th
+                    scope="col"
                     key={c.summary.code}
                     className="py-2 pl-4 text-right font-semibold"
                   >
@@ -432,48 +432,48 @@ export default function CountryCompare({
                       </tr>
                     )}
                     <tr>
-                    {/* The metric names the row, so it is a header cell: a
+                      {/* The metric names the row, so it is a header cell: a
                         screen reader reads "km per million people, 38,3". */}
-                    <th
-                      scope="row"
-                      className="py-2 pr-4 text-left font-normal"
-                    >
-                      <span className="flex items-baseline gap-2">
-                        {row.color && (
-                          <span
-                            className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
-                            style={{ backgroundColor: row.color }}
-                          />
-                        )}
-                        <span className="text-ink-soft">{row.label}</span>
-                      </span>
-                    </th>
-                    {compared.map((c, i) => {
-                      const leading = lead.includes(i);
-                      return (
-                        <td
-                          key={c.summary.code}
-                          className={`py-2 pl-4 text-right tabular-nums ${
-                            leading
-                              ? "bg-good-soft/80 font-semibold text-good"
-                              : ""
-                          }`}
-                        >
-                          {/* Weight and colour both change, so the mark does
+                      <th
+                        scope="row"
+                        className="py-2 pr-4 text-left font-normal"
+                      >
+                        <span className="flex items-baseline gap-2">
+                          {row.color && (
+                            <span
+                              className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
+                              style={{ backgroundColor: row.color }}
+                            />
+                          )}
+                          <span className="text-ink-soft">{row.label}</span>
+                        </span>
+                      </th>
+                      {compared.map((c, i) => {
+                        const leading = lead.includes(i);
+                        return (
+                          <td
+                            key={c.summary.code}
+                            className={`py-2 pl-4 text-right tabular-nums ${
+                              leading
+                                ? "bg-good-soft/80 font-semibold text-good"
+                                : ""
+                            }`}
+                          >
+                            {/* Weight and colour both change, so the mark does
                               not rest on colour alone, and the label spells
                               it out for a screen reader. */}
-                          {leading && (
-                            <span className="sr-only">
-                              {direction === "lowest"
-                                ? t("country.leadsLow")
-                                : t("country.leads")}
-                              :{" "}
-                            </span>
-                          )}
-                          {row.value(c)}
-                        </td>
-                      );
-                    })}
+                            {leading && (
+                              <span className="sr-only">
+                                {direction === "lowest"
+                                  ? t("country.leadsLow")
+                                  : t("country.leads")}
+                                :{" "}
+                              </span>
+                            )}
+                            {row.value(c)}
+                          </td>
+                        );
+                      })}
                     </tr>
                   </Fragment>
                 );

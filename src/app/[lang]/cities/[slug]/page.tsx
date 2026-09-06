@@ -114,10 +114,7 @@ export default async function CityPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbs) }}
       />
-      <Link
-        href="/map"
-        className="text-sm text-ink-muted hover:text-ink"
-      >
+      <Link href="/map" className="text-sm text-ink-muted hover:text-ink">
         {t("city.backToMap")}
       </Link>
 

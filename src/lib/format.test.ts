@@ -12,15 +12,25 @@ import { monthIndex } from "./contract";
 
 describe("formatMoney", () => {
   it("formats millions with currency symbols", () => {
-    expect(formatMoney({ amount: 500, currency: "EUR", year: 2012 })).toBe("€500M");
-    expect(formatMoney({ amount: 42, currency: "USD", year: 2020 })).toBe("$42M");
+    expect(
+      formatMoney({ amount: 500, currency: "EUR", year: 2012 }, "en"),
+    ).toBe("€500M");
+    expect(formatMoney({ amount: 42, currency: "USD", year: 2020 }, "en")).toBe(
+      "$42M",
+    );
   });
   it("rolls up to billions", () => {
-    expect(formatMoney({ amount: 1800, currency: "EUR", year: 2023 })).toBe("€1.8B");
-    expect(formatMoney({ amount: 2000, currency: "EUR", year: 2023 })).toBe("€2B");
+    expect(
+      formatMoney({ amount: 1800, currency: "EUR", year: 2023 }, "en"),
+    ).toBe("€1.8B");
+    expect(
+      formatMoney({ amount: 2000, currency: "EUR", year: 2023 }, "en"),
+    ).toBe("€2B");
   });
   it("falls back to the currency code for unknown currencies", () => {
-    expect(formatMoney({ amount: 10, currency: "CHF", year: 2020 })).toBe("CHF 10M");
+    expect(formatMoney({ amount: 10, currency: "CHF", year: 2020 }, "en")).toBe(
+      "CHF 10M",
+    );
   });
 
   /**
@@ -31,7 +41,7 @@ describe("formatMoney", () => {
    */
   it("keeps the decimals the figure was recorded with", () => {
     const bgn = (amount: number) =>
-      formatMoney({ amount, currency: "BGN", year: 2015 });
+      formatMoney({ amount, currency: "BGN", year: 2015 }, "en");
     expect(bgn(133.97)).toBe("лв133.97M");
     expect(bgn(137.868)).toBe("лв137.868M");
     expect(bgn(198.16)).toBe("лв198.16M");
@@ -42,39 +52,43 @@ describe("formatMoney", () => {
   it("does not print float noise as precision", () => {
     // 1.7 the long way round. Three decimals is the cap, so an amount that
     // needs more is rounded rather than spilling sixteen digits.
-    expect(formatMoney({ amount: 0.8 + 0.9, currency: "EUR", year: 2020 })).toBe(
-      "€1.7M",
-    );
-    expect(formatMoney({ amount: 12.34567, currency: "EUR", year: 2020 })).toBe(
-      "€12.346M",
-    );
+    expect(
+      formatMoney({ amount: 0.8 + 0.9, currency: "EUR", year: 2020 }, "en"),
+    ).toBe("€1.7M");
+    expect(
+      formatMoney({ amount: 12.34567, currency: "EUR", year: 2020 }, "en"),
+    ).toBe("€12.346M");
   });
 
   it("separates the recorded decimals the way the locale does", () => {
-    expect(formatMoney({ amount: 133.97, currency: "BGN", year: 2015 }, "ro")).toBe(
-      "лв133,97 mil.",
-    );
+    expect(
+      formatMoney({ amount: 133.97, currency: "BGN", year: 2015 }, "ro"),
+    ).toBe("лв133,97 mil.");
   });
 
   /** Nine cost figures in the dataset are in BGN. */
   it("knows the currencies the dataset actually uses", () => {
-    expect(formatMoney({ amount: 500, currency: "BGN", year: 2020 })).toBe("лв500M");
-    expect(formatMoney({ amount: 90, currency: "RSD", year: 2020 })).toBe("дин.90M");
+    expect(
+      formatMoney({ amount: 500, currency: "BGN", year: 2020 }, "en"),
+    ).toBe("лв500M");
+    expect(formatMoney({ amount: 90, currency: "RSD", year: 2020 }, "en")).toBe(
+      "дин.90M",
+    );
   });
 
   it("uses the locale's decimal separator and magnitude words", () => {
-    expect(formatMoney({ amount: 1800, currency: "EUR", year: 2023 }, "ro")).toBe(
-      "€1,8 mld.",
-    );
-    expect(formatMoney({ amount: 500, currency: "RON", year: 2012 }, "ro")).toBe(
-      "lei 500 mil.",
-    );
+    expect(
+      formatMoney({ amount: 1800, currency: "EUR", year: 2023 }, "ro"),
+    ).toBe("€1,8 mld.");
+    expect(
+      formatMoney({ amount: 500, currency: "RON", year: 2012 }, "ro"),
+    ).toBe("lei 500 mil.");
   });
 
   it("groups thousands of millions by locale", () => {
-    expect(formatMoney({ amount: 4870, currency: "RON", year: 2026 }, "en")).toBe(
-      "lei 4.9B",
-    );
+    expect(
+      formatMoney({ amount: 4870, currency: "RON", year: 2026 }, "en"),
+    ).toBe("lei 4.9B");
   });
 });
 
@@ -120,11 +134,11 @@ describe("formatKm", () => {
 
 describe("formatPercent", () => {
   it("signs overruns and underruns", () => {
-    expect(formatPercent(38.309)).toBe("+38.3%");
-    expect(formatPercent(-10)).toBe("−10.0%");
+    expect(formatPercent(38.309, "en")).toBe("+38.3%");
+    expect(formatPercent(-10, "en")).toBe("−10.0%");
   });
   it("leaves zero unsigned", () => {
-    expect(formatPercent(0)).toBe("0.0%");
+    expect(formatPercent(0, "en")).toBe("0.0%");
   });
 
   /** Romanian writes 38,3 and not 38.3, so toFixed() was wrong for /ro. */
@@ -136,15 +150,15 @@ describe("formatPercent", () => {
 
 describe("formatMonths", () => {
   it("signs slips", () => {
-    expect(formatMonths(46)).toBe("+46 mo");
-    expect(formatMonths(-4)).toBe("−4 mo");
+    expect(formatMonths(46, "mo", "en")).toBe("+46 mo");
+    expect(formatMonths(-4, "mo", "en")).toBe("−4 mo");
   });
   it("leaves zero unsigned", () => {
-    expect(formatMonths(0)).toBe("0 mo");
+    expect(formatMonths(0, "mo", "en")).toBe("0 mo");
   });
   it("takes a localized unit", () => {
-    expect(formatMonths(46, "luni")).toBe("+46 luni");
-    expect(formatMonths(-4, "luni")).toBe("−4 luni");
+    expect(formatMonths(46, "luni", "en")).toBe("+46 luni");
+    expect(formatMonths(-4, "luni", "en")).toBe("−4 luni");
   });
 
   it("groups large month counts by locale", () => {

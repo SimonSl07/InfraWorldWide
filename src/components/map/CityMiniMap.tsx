@@ -109,7 +109,15 @@ export default function CityMiniMap({
               filter={projectFilter(selectedProjectId) as FilterSpecification}
               paint={{
                 "line-color": theme.selectedHighlight,
-                "line-width": ["interpolate", ["linear"], ["zoom"], 9, 9, 14, 20],
+                "line-width": [
+                  "interpolate",
+                  ["linear"],
+                  ["zoom"],
+                  9,
+                  9,
+                  14,
+                  20,
+                ],
                 "line-opacity": 0.55,
               }}
               layout={{ "line-cap": "round" }}
@@ -157,7 +165,15 @@ export default function CityMiniMap({
             filter={MARKER_FILTER}
             paint={{
               "circle-color": categoryColorExpr(undefined, theme.category),
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 4, 14, 8],
+              "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                9,
+                4,
+                14,
+                8,
+              ],
               "circle-stroke-color": theme.markerStroke,
               "circle-stroke-width": 1.5,
               "circle-opacity": dim(0.95),

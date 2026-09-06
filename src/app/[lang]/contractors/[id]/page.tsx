@@ -86,7 +86,7 @@ export default async function ContractorPage({
       value:
         ranking?.slip.median === undefined || ranking?.slip.median === null
           ? "–"
-          : formatMonths(ranking.slip.median, t("rankings.unitMonths")),
+          : formatMonths(ranking.slip.median, t("rankings.unitMonths"), lang),
       tone:
         ranking?.slip.median != null
           ? ranking.slip.median > 0
@@ -100,7 +100,7 @@ export default async function ContractorPage({
         ranking?.overrun.estimate.median === undefined ||
         ranking?.overrun.estimate.median === null
           ? "–"
-          : formatPercent(ranking.overrun.estimate.median),
+          : formatPercent(ranking.overrun.estimate.median, lang),
     },
   ];
 
@@ -237,6 +237,7 @@ export default async function ContractorPage({
                           {formatMonths(
                             metric.slip.slipMonths,
                             t("rankings.unitMonths"),
+                            lang,
                           )}
                         </span>
                       )}

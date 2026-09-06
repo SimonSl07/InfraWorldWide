@@ -82,9 +82,7 @@ export default async function CountriesPage({
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
       <h1 className="text-3xl font-bold">{t("country.indexTitle")}</h1>
-      <p className="mt-2 max-w-3xl text-ink-soft">
-        {t("country.indexIntro")}
-      </p>
+      <p className="mt-2 max-w-3xl text-ink-soft">{t("country.indexIntro")}</p>
 
       <div
         className="mt-6 overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
@@ -96,8 +94,12 @@ export default async function CountriesPage({
           <caption className="sr-only">{t("country.indexIntro")}</caption>
           <thead>
             <tr className="border-b border-line text-left text-xs font-medium uppercase tracking-wide text-ink-muted">
-              <th scope="col" className="py-2 pr-3 font-medium">{t("country.thRank")}</th>
-              <th scope="col" className="py-2 pr-4 font-medium">{t("country.thCountry")}</th>
+              <th scope="col" className="py-2 pr-3 font-medium">
+                {t("country.thRank")}
+              </th>
+              <th scope="col" className="py-2 pr-4 font-medium">
+                {t("country.thCountry")}
+              </th>
               <th scope="col" className="py-2 pl-4 text-right font-medium">
                 {t("country.totalOpened")}
               </th>

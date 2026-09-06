@@ -82,7 +82,8 @@ export default async function CitiesPage({
                 {formatKm(openedKm, lang)}
               </p>
               <p className="text-xs text-ink-muted">
-                {t("city.openedKm")} · {t("city.projectsCount", { count: projects })}
+                {t("city.openedKm")} ·{" "}
+                {t("city.projectsCount", { count: projects })}
               </p>
             </Link>
           </li>

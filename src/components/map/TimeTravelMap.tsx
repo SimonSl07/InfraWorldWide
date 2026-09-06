@@ -4,10 +4,7 @@ import { useMemo, useState } from "react";
 import { Source, Layer } from "react-map-gl/maplibre";
 import { useTranslations } from "next-intl";
 import type { FeatureCollection } from "geojson";
-import type {
-  ExpressionSpecification,
-  FilterSpecification,
-} from "maplibre-gl";
+import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import {
   buildMonthFilters,
   computeMaxMonth,
@@ -229,7 +226,10 @@ function TimeTravelScene({
   );
   const showFuture = shouldShowFuture(month, nowMonth);
 
-  const minMonth = useMemo(() => computeMinMonth(data.features), [data.features]);
+  const minMonth = useMemo(
+    () => computeMinMonth(data.features),
+    [data.features],
+  );
   const maxMonth = useMemo(
     () => computeMaxMonth(data.features, nowMonth),
     [data.features, nowMonth],

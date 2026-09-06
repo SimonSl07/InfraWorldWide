@@ -3,10 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { Category } from "@/lib/schema";
-import {
-  ALL_CATEGORIES,
-  MAP_STATUSES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES, MAP_STATUSES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import {
   isCategoryActive,
@@ -127,7 +124,9 @@ export default function CategoryToggle({
                 <span
                   className="inline-block w-4 h-1 rounded-full"
                   style={{
-                    backgroundColor: active ? categoryVar(cat) : "var(--line-strong)",
+                    backgroundColor: active
+                      ? categoryVar(cat)
+                      : "var(--line-strong)",
                   }}
                 />
                 {t(`category.${cat}`)}
@@ -149,7 +148,9 @@ export default function CategoryToggle({
                 }}
                 aria-haspopup="true"
                 aria-expanded={open}
-                aria-label={t("map.statusMenu", { category: t(`category.${cat}`) })}
+                aria-label={t("map.statusMenu", {
+                  category: t(`category.${cat}`),
+                })}
                 className="border-l border-line/80 px-1.5 py-1.5 text-ink-faint hover:text-ink"
               >
                 <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true">
@@ -187,7 +188,9 @@ export default function CategoryToggle({
                       <input
                         type="checkbox"
                         checked={isStatusActive(selection, cat, status)}
-                        onChange={() => onChange(toggleStatus(selection, cat, status))}
+                        onChange={() =>
+                          onChange(toggleStatus(selection, cat, status))
+                        }
                         className="accent-inverse"
                       />
                       <LegendLine status={status} color={categoryVar(cat)} />
@@ -198,7 +201,9 @@ export default function CategoryToggle({
                     <button
                       type="button"
                       onClick={() =>
-                        onChange(setCategoryStatuses(selection, cat, MAP_STATUSES))
+                        onChange(
+                          setCategoryStatuses(selection, cat, MAP_STATUSES),
+                        )
                       }
                       className="text-[11px] text-ink-muted hover:text-ink"
                     >
@@ -206,7 +211,9 @@ export default function CategoryToggle({
                     </button>
                     <button
                       type="button"
-                      onClick={() => onChange(setCategoryStatuses(selection, cat, []))}
+                      onClick={() =>
+                        onChange(setCategoryStatuses(selection, cat, []))
+                      }
                       className="text-[11px] text-ink-muted hover:text-ink"
                     >
                       {t("map.showNone")}

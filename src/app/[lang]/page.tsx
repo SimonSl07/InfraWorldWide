@@ -37,7 +37,10 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   const km = (value: number) => `${formatNumber(Math.round(value), lang)} km`;
 
   const statItems = [
-    { value: formatNumber(stats.projectCount, lang), label: t("statsProjects") },
+    {
+      value: formatNumber(stats.projectCount, lang),
+      label: t("statsProjects"),
+    },
     { value: km(stats.openedKm), label: t("statsOpenedKm") },
     {
       value: km(stats.recentOpenedKm),

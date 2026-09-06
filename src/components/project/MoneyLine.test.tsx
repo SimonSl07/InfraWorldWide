@@ -14,7 +14,11 @@ const t = (key: string) => key;
 describe("MoneyLine", () => {
   it("prints the price year in brackets when the source gave one", () => {
     const { container } = render(
-      <MoneyLine money={{ amount: 500, currency: "EUR", year: 2019 }} locale="en" t={t} />,
+      <MoneyLine
+        money={{ amount: 500, currency: "EUR", year: 2019 }}
+        locale="en"
+        t={t}
+      />,
     );
     expect(container).toHaveTextContent("€500M");
     expect(container).toHaveTextContent("(2019)");

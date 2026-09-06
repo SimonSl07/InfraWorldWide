@@ -1,6 +1,13 @@
 "use client";
 
-import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useTranslations } from "next-intl";
 import { searchLots, type LotEntry } from "@/lib/lot-list";
 import { formatKm } from "@/lib/format";
@@ -140,7 +147,10 @@ export default function LotSearchPanel({
         <div className="border-t border-line-soft">
           {/* Announced on its own so a screen reader hears the count change
               as the query narrows, without the list being read out again. */}
-          <p aria-live="polite" className="px-3 py-1 text-[11px] text-ink-muted">
+          <p
+            aria-live="polite"
+            className="px-3 py-1 text-[11px] text-ink-muted"
+          >
             {results.length === 0
               ? t("map.searchEmpty")
               : t("map.searchShowing", {
@@ -162,7 +172,9 @@ export default function LotSearchPanel({
                     data-lot-row
                     aria-current={active ? "true" : undefined}
                     onClick={() => onSelect(lot)}
-                    onKeyDown={(e) => moveFocus(e, items().indexOf(e.currentTarget))}
+                    onKeyDown={(e) =>
+                      moveFocus(e, items().indexOf(e.currentTarget))
+                    }
                     className={`flex w-full cursor-pointer items-start gap-2 px-3 py-1.5 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus ${
                       active ? "bg-surface-raised" : ""
                     }`}

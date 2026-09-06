@@ -39,13 +39,17 @@ export function checkStatusDates(
       const d = lot.dates;
 
       if (lot.status === "planned" && d?.opened) {
-        errors.push(`${at} has status "planned" but has dates.opened (${d.opened})`);
+        errors.push(
+          `${at} has status "planned" but has dates.opened (${d.opened})`,
+        );
       }
       if (d?.opened && hasElapsed(today, d.opened)) {
         errors.push(`${at} opened (${d.opened}) is in the future`);
       }
       if (lot.status === "under_construction" && !d?.constructionStart) {
-        warnings.push(`${at} is under_construction with no dates.constructionStart`);
+        warnings.push(
+          `${at} is under_construction with no dates.constructionStart`,
+        );
       }
       if (lot.status === "tendered" && !d?.tenderAwarded) {
         warnings.push(`${at} is tendered with no dates.tenderAwarded`);
@@ -79,7 +83,9 @@ export function checkEvents(projects: Project[]): GeometryReport {
 
   for (const project of projects) {
     const ids = new Set(
-      project.sources.map((s) => s.id).filter((id): id is string => Boolean(id)),
+      project.sources
+        .map((s) => s.id)
+        .filter((id): id is string => Boolean(id)),
     );
     for (const lot of project.lots) {
       const events = lot.events ?? [];
@@ -103,7 +109,10 @@ export function checkEvents(projects: Project[]): GeometryReport {
         (d): d is string => typeof d === "string",
       );
       const latestRecorded = recordedDates.sort().at(-1);
-      const latestEvent = events.map((e) => e.date).sort().at(-1)!;
+      const latestEvent = events
+        .map((e) => e.date)
+        .sort()
+        .at(-1)!;
 
       if (latestRecorded !== undefined && latestEvent < latestRecorded) {
         warnings.push(

@@ -73,9 +73,7 @@ interface SourceFeature {
 interface GeoFeature {
   type: "Feature";
   properties:
-    | LotFeatureProperties
-    | CityMarkerProperties
-    | CountryOutlineProperties;
+    LotFeatureProperties | CityMarkerProperties | CountryOutlineProperties;
   geometry: unknown;
 }
 
@@ -102,7 +100,10 @@ function main(): void {
    */
   const constructionDeflators = deflatorTableSchema.parse(
     JSON.parse(
-      fs.readFileSync(path.join(root, "data/deflators-construction.json"), "utf8"),
+      fs.readFileSync(
+        path.join(root, "data/deflators-construction.json"),
+        "utf8",
+      ),
     ),
   );
 

@@ -16,10 +16,7 @@ import {
 } from "react-map-gl/maplibre";
 import type { FeatureCollection, Feature } from "geojson";
 import { useTranslations } from "next-intl";
-import type {
-  ExpressionSpecification,
-  FilterSpecification,
-} from "maplibre-gl";
+import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import {
   categoryColorExpr,
@@ -257,7 +254,17 @@ export default function InfraMap({
       },
       casing: {
         "line-color": theme.casing,
-        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 4, 8, 7, 12, 11] as unknown as ExpressionSpecification,
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          4,
+          4,
+          8,
+          7,
+          12,
+          11,
+        ] as unknown as ExpressionSpecification,
         "line-opacity": dim(0.7),
       },
       opened: {
@@ -274,13 +281,33 @@ export default function InfraMap({
       },
       underConstruction: {
         "line-color": colorExpr,
-        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 2.5, 8, 5, 12, 9] as unknown as ExpressionSpecification,
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          4,
+          2.5,
+          8,
+          5,
+          12,
+          9,
+        ] as unknown as ExpressionSpecification,
         "line-dasharray": UNDER_CONSTRUCTION_DASH,
         "line-opacity": dim(1),
       },
       future: {
         "line-color": colorExpr,
-        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 2, 8, 4, 12, 7] as unknown as ExpressionSpecification,
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          4,
+          2,
+          8,
+          4,
+          12,
+          7,
+        ] as unknown as ExpressionSpecification,
         "line-dasharray": FUTURE_DASH,
         "line-opacity": dim(0.55),
       },
@@ -326,7 +353,17 @@ export default function InfraMap({
       },
       selected: {
         "line-color": theme.selectedHighlight,
-        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 5, 8, 9, 12, 14] as unknown as ExpressionSpecification,
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          4,
+          5,
+          8,
+          9,
+          12,
+          14,
+        ] as unknown as ExpressionSpecification,
         "line-opacity": 0.5,
       },
     }),

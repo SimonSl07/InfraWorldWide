@@ -29,7 +29,11 @@ import {
 import { checkProjectGeometry, type GeoFeature } from "./geometry";
 import { checkEvents, checkStatusDates } from "./history";
 import { checkEmDashes, checkLocaleKeys, knownLocales, walk } from "./locale";
-import { checkCostPerKm, checkCostRevisions, checkPriceCoverage } from "./money";
+import {
+  checkCostPerKm,
+  checkCostRevisions,
+  checkPriceCoverage,
+} from "./money";
 import {
   checkCities,
   checkContractors,
@@ -41,7 +45,11 @@ import {
   checkSharedTrack,
   readReferenceFile,
 } from "./references";
-import { checkLotContractors, checkSourceQuality, type GeoReader } from "./sources";
+import {
+  checkLotContractors,
+  checkSourceQuality,
+  type GeoReader,
+} from "./sources";
 
 export interface ValidationResult {
   projects: Project[];
@@ -260,7 +268,11 @@ export function collectErrors(
     const rel = path.relative(root, file).split(path.sep).join("/");
     try {
       errors.push(
-        ...checkLocaleKeys(JSON.parse(fs.readFileSync(file, "utf8")), rel, locales),
+        ...checkLocaleKeys(
+          JSON.parse(fs.readFileSync(file, "utf8")),
+          rel,
+          locales,
+        ),
       );
     } catch {
       // A parse failure is already reported by whichever check owns the file.

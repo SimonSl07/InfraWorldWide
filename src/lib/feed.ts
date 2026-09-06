@@ -23,9 +23,7 @@ export function escapeXml(value: string): string {
 /** Partial ISO date to an RFC 822 timestamp, widening to the first day. */
 export function rfc822(date: string): string {
   const [year, month, day] = date.split("-").map(Number);
-  return new Date(
-    Date.UTC(year, (month ?? 1) - 1, day ?? 1),
-  ).toUTCString();
+  return new Date(Date.UTC(year, (month ?? 1) - 1, day ?? 1)).toUTCString();
 }
 
 export function buildOpeningsFeed(options: {

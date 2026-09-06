@@ -2,13 +2,11 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import {
-  ALL_CATEGORIES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
-import { formatKm, formatMonth } from "@/lib/format";
+import { formatKm, formatMonth, formatNumber } from "@/lib/format";
 import { localized } from "@/lib/localized";
 import type { Rank, RankedCountry } from "@/lib/country-stats";
 import type { DecadeBucket } from "@/lib/country-growth";
@@ -136,7 +134,7 @@ export default function CountryPanel({
             <span className="text-ink-muted">{t("country.perArea")}</span>
             <span className="flex items-baseline">
               <span className="tabular-nums">
-                {country.kmPerArea.toFixed(1)}
+                {formatNumber(country.kmPerArea, locale, 1)}
               </span>
               {rankChip(ranks.kmPerArea)}
             </span>
@@ -147,7 +145,7 @@ export default function CountryPanel({
             <span className="text-ink-muted">{t("country.perCapita")}</span>
             <span className="flex items-baseline">
               <span className="tabular-nums">
-                {country.kmPerCapita.toFixed(1)}
+                {formatNumber(country.kmPerCapita, locale, 1)}
               </span>
               {rankChip(ranks.kmPerCapita)}
             </span>

@@ -257,7 +257,9 @@ const fx = {
 describe("checkPriceCoverage", () => {
   it("passes a figure whose currency and year both have coverage", () => {
     const p = projectStub([
-      lotStub({ cost: { actual: { amount: 10, currency: "RON", year: 2020 } } }),
+      lotStub({
+        cost: { actual: { amount: 10, currency: "RON", year: 2020 } },
+      }),
     ]);
     expect(checkPriceCoverage(deflators, fx, [p])).toEqual({
       errors: [],
@@ -267,7 +269,9 @@ describe("checkPriceCoverage", () => {
 
   it("warns when the price year is outside the published series", () => {
     const p = projectStub([
-      lotStub({ cost: { actual: { amount: 10, currency: "RON", year: 2026 } } }),
+      lotStub({
+        cost: { actual: { amount: 10, currency: "RON", year: 2026 } },
+      }),
     ]);
     const w = checkPriceCoverage(deflators, fx, [p]).warnings;
     expect(w.join(" ")).toContain("2026");
@@ -327,7 +331,11 @@ describe("checkFxCoverage", () => {
 
   it("passes the base currency and one with rates", () => {
     const p = projectStub(
-      [lotStub({ cost: { actual: { amount: 10, currency: "RON", year: 2020 } } })],
+      [
+        lotStub({
+          cost: { actual: { amount: 10, currency: "RON", year: 2020 } },
+        }),
+      ],
       { cost: { amount: 100, currency: "EUR", year: 2020 } },
     );
     expect(check(p)).toEqual([]);
@@ -337,7 +345,10 @@ describe("checkFxCoverage", () => {
     const p = projectStub([
       lotStub({
         funding: [
-          { source: "loan", amount: { amount: 5, currency: "CHF", year: 2020 } },
+          {
+            source: "loan",
+            amount: { amount: 5, currency: "CHF", year: 2020 },
+          },
         ],
       }),
     ]);
@@ -438,7 +449,10 @@ describe("checkCostPerKm", () => {
       lotStub({
         lengthKm: 20,
         funding: [
-          { source: "EU", amount: { amount: 200000, currency: "EUR", year: 2020 } },
+          {
+            source: "EU",
+            amount: { amount: 200000, currency: "EUR", year: 2020 },
+          },
         ],
       }),
     ]);
@@ -529,9 +543,10 @@ describe("checkReferenceKeys", () => {
     },
   };
 
-  const used = projectStub([
-    lotStub({ funding: [{ source: "EU", programme: "ro-pnrr" }] }),
-  ], { corridors: ["pan-european-iv"], operator: "ro-cnair" });
+  const used = projectStub(
+    [lotStub({ funding: [{ source: "EU", programme: "ro-pnrr" }] })],
+    { corridors: ["pan-european-iv"], operator: "ro-cnair" },
+  );
 
   it("passes when every key resolves and every entry is used", () => {
     expect(
@@ -540,11 +555,16 @@ describe("checkReferenceKeys", () => {
   });
 
   it("errors on a key that resolves to nothing", () => {
-    const bad = projectStub([lotStub({ funding: [{ source: "EU", programme: "nope" }] })], {
-      corridors: ["ghost"],
-      operator: "who",
-    });
-    const e = checkReferenceKeys(corridors, programmes, operators, [bad]).errors;
+    const bad = projectStub(
+      [lotStub({ funding: [{ source: "EU", programme: "nope" }] })],
+      {
+        corridors: ["ghost"],
+        operator: "who",
+      },
+    );
+    const e = checkReferenceKeys(corridors, programmes, operators, [
+      bad,
+    ]).errors;
     expect(e.join(" ")).toContain("ghost");
     expect(e.join(" ")).toContain("who");
     expect(e.join(" ")).toContain("nope");
@@ -571,7 +591,9 @@ describe("checkPartOf", () => {
   });
 
   it("rejects a dangling or self pointer", () => {
-    const dangling = projectStub([lotStub({ partOf: "ro-ghost" })], { id: "ro-x" });
+    const dangling = projectStub([lotStub({ partOf: "ro-ghost" })], {
+      id: "ro-x",
+    });
     expect(checkPartOf([dangling]).errors[0]).toContain("ro-ghost");
     const self = projectStub([lotStub({ partOf: "ro-x" })], { id: "ro-x" });
     expect(checkPartOf([self]).errors[0]).toContain("its own project");
@@ -579,7 +601,9 @@ describe("checkPartOf", () => {
 
   it("rejects a chain, which would make the exclusion rule ambiguous", () => {
     const mid = projectStub([lotStub({ partOf: "ro-a1" })], { id: "ro-mid" });
-    const leaf = projectStub([lotStub({ partOf: "ro-mid" })], { id: "ro-leaf" });
+    const leaf = projectStub([lotStub({ partOf: "ro-mid" })], {
+      id: "ro-leaf",
+    });
     expect(checkPartOf([parent, mid, leaf]).errors[0]).toContain(
       "itself part of another project",
     );
@@ -590,7 +614,9 @@ describe("checkPartOf", () => {
       id: "bg-x",
       country: "bg",
     });
-    expect(checkPartOf([parent, child]).errors[0]).toContain("different country");
+    expect(checkPartOf([parent, child]).errors[0]).toContain(
+      "different country",
+    );
   });
 });
 
@@ -770,7 +796,11 @@ describe("checkProjectGeometry", () => {
   it("rejects a single-position LineString", () => {
     const { errors } = checkProjectGeometry(
       project,
-      { features: [feature("a", { type: "LineString", coordinates: [[25, 44]] })] },
+      {
+        features: [
+          feature("a", { type: "LineString", coordinates: [[25, 44]] }),
+        ],
+      },
       "geo.geojson",
     );
     expect(errors).toHaveLength(1);
@@ -853,7 +883,9 @@ describe("checkProjectGeometry", () => {
       { features: [feature("a", oneDegree), feature("ghost", oneDegree)] },
       "geo.geojson",
     );
-    expect(errors).toContain('geo.geojson: feature "ghost" matches no lot in xx-test');
+    expect(errors).toContain(
+      'geo.geojson: feature "ghost" matches no lot in xx-test',
+    );
   });
 
   it("still reports a missing geometryRef", () => {

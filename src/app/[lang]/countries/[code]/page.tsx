@@ -36,9 +36,7 @@ import { createLocalizer } from "@/lib/localized";
 import { pageMetadata } from "@/lib/page-metadata";
 import { breadcrumbList, jsonLdScript } from "@/lib/structured-data";
 import { siteUrl } from "@/lib/seo";
-import {
-  ALL_CATEGORIES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import type { Category } from "@/lib/schema";
 import CountryGrowthChart from "@/components/CountryGrowthChart";
@@ -264,10 +262,7 @@ export default async function CountryPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbs) }}
       />
-      <Link
-        href="/countries"
-        className="text-sm text-ink-muted hover:text-ink"
-      >
+      <Link href="/countries" className="text-sm text-ink-muted hover:text-ink">
         ← {t("country.backToCountries")}
       </Link>
 
@@ -335,10 +330,7 @@ export default async function CountryPage({
       <Section title={t("country.byCategory")}>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map(({ category, totals, rank }) => (
-            <div
-              key={category}
-              className="rounded-xl border border-line p-4"
-            >
+            <div key={category} className="rounded-xl border border-line p-4">
               <div
                 className="text-[10px] font-semibold uppercase tracking-wide"
                 style={{ color: categoryVar(category) }}

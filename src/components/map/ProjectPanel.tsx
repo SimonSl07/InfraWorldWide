@@ -19,7 +19,11 @@ interface ProjectPanelProps {
   onClose: () => void;
 }
 
-export default function ProjectPanel({ project, lot, onClose }: ProjectPanelProps) {
+export default function ProjectPanel({
+  project,
+  lot,
+  onClose,
+}: ProjectPanelProps) {
   const t = useTranslations();
   const locale = useLocale();
   const name = createLocalizer(locale);
@@ -27,7 +31,10 @@ export default function ProjectPanel({ project, lot, onClose }: ProjectPanelProp
   const dateRows: Array<{ label: string; value?: string }> = [
     { label: t("project.announced"), value: lot.dates?.announced },
     { label: t("project.tenderAwarded"), value: lot.dates?.tenderAwarded },
-    { label: t("project.constructionStart"), value: lot.dates?.constructionStart },
+    {
+      label: t("project.constructionStart"),
+      value: lot.dates?.constructionStart,
+    },
     { label: t("project.opened"), value: lot.dates?.opened },
     {
       label: t("project.expectedOpening"),
