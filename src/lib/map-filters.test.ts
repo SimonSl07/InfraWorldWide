@@ -20,6 +20,7 @@ import {
   parseCityParam,
   parseCompareParam,
   parseCountryParam,
+  parseSpeedParam,
   parseSelectionParam,
   parseViewParam,
   selectionCategories,
@@ -877,5 +878,30 @@ describe("status is evaluated at the viewed year", () => {
     for (const filter of [f.opened, f.underConstruction, f.future]) {
       expect(JSON.stringify(filter)).not.toContain('"tunnel"');
     }
+  });
+});
+
+describe("parseSpeedParam", () => {
+  const STEPS = 4;
+  const DEFAULT = 1;
+
+  it("accepts an index into the steps", () => {
+    expect(parseSpeedParam("2", STEPS, DEFAULT)).toBe(2);
+    expect(parseSpeedParam("0", STEPS, DEFAULT)).toBe(0);
+    expect(parseSpeedParam("3", STEPS, DEFAULT)).toBe(3);
+  });
+
+  it("falls back when the param is missing", () => {
+    // Number(null) and Number("") are both 0, a valid index: without the
+    // explicit checks a link with no ?speed= opened on the slowest speed.
+    expect(parseSpeedParam(null, STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("", STEPS, DEFAULT)).toBe(DEFAULT);
+  });
+
+  it("falls back on anything that is not an index into the steps", () => {
+    expect(parseSpeedParam("1.5", STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("-1", STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("4", STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("fast", STEPS, DEFAULT)).toBe(DEFAULT);
   });
 });

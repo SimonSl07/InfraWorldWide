@@ -74,11 +74,29 @@ export default function TimeSlider({
     // the whole bar past the viewport, which is what clipped it on a phone.
     <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 bg-surface/95 backdrop-blur rounded-xl shadow-lg px-3 py-3 sm:px-4 border border-line">
       <button
+        type="button"
         onClick={() => onPlayingChange(!playing)}
         aria-label={playing ? t("pause") : t("play")}
         className="w-11 h-11 sm:w-9 sm:h-9 flex items-center justify-center rounded-full bg-inverse text-on-inverse hover:bg-inverse-soft shrink-0"
       >
-        {playing ? "⏸" : "▶"}
+        {/* Drawn, not typed: the play and pause characters render as emoji
+            on some platforms and as text glyphs on others. */}
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          {playing ? (
+            <>
+              <rect x="3" y="2.5" width="3.5" height="11" rx="0.75" />
+              <rect x="9.5" y="2.5" width="3.5" height="11" rx="0.75" />
+            </>
+          ) : (
+            <path d="M4.5 2.5v11l9-5.5z" />
+          )}
+        </svg>
       </button>
 
       <div className="flex flex-col gap-1 min-w-0 flex-1 sm:flex-none">

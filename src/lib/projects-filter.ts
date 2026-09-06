@@ -21,10 +21,11 @@ export function filterProjects(
       return false;
     }
     if (q) {
+      // Every locale key the data carries, not a named pair: a third
+      // locale is searchable the day its field lands in the JSON.
       const haystack = [
-        p.name.en,
-        p.name.ro ?? "",
-        ...p.lots.flatMap((l) => [l.name.en, l.name.ro ?? ""]),
+        ...Object.values(p.name),
+        ...p.lots.flatMap((l) => Object.values(l.name)),
       ]
         .join("\n")
         .toLowerCase();

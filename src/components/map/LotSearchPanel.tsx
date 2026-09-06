@@ -122,7 +122,7 @@ export default function LotSearchPanel({
           // aria-controls only: aria-expanded belongs to the toggle below,
           // and a plain textbox may not carry it without combobox semantics.
           aria-controls={listId}
-          className="w-full rounded-lg border border-line px-2.5 py-1.5 text-sm text-ink placeholder:text-ink-faint focus:border-inverse focus:outline-none"
+          className="w-full rounded-lg border border-line px-2.5 py-1.5 text-sm text-ink placeholder:text-ink-faint focus:border-inverse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
         />
 
         <button
@@ -163,7 +163,7 @@ export default function LotSearchPanel({
                     aria-current={active ? "true" : undefined}
                     onClick={() => onSelect(lot)}
                     onKeyDown={(e) => moveFocus(e, items().indexOf(e.currentTarget))}
-                    className={`flex w-full cursor-pointer items-start gap-2 px-3 py-1.5 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus:outline-none ${
+                    className={`flex w-full cursor-pointer items-start gap-2 px-3 py-1.5 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus ${
                       active ? "bg-surface-raised" : ""
                     }`}
                   >

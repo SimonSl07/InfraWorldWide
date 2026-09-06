@@ -24,20 +24,34 @@ export default function Sparkline({
   const max = Math.max(...buckets.map((b) => b.km), 0);
   if (max <= 0) return null;
 
+  const label = (b: DecadeBucket) =>
+    `${t("country.decade", { decade: String(b.decade) })}: ${formatKm(b.km, locale)}`;
+
   return (
-    <div
-      className={`flex h-8 items-end gap-px border-b border-line ${className}`}
-    >
-      {buckets.map((b) => (
-        <div
-          key={b.decade}
-          className="flex-1 rounded-t-sm bg-inverse-soft"
-          // Nonzero decades keep a visible floor so a small one still reads
-          // as "something happened here".
-          style={{ height: b.km === 0 ? 0 : `${Math.max(6, (b.km / max) * 100)}%` }}
-          title={`${t("country.decade", { decade: String(b.decade) })}: ${formatKm(b.km, locale)}`}
-        />
-      ))}
-    </div>
+    <>
+      {/* The bars are decoration for a sighted mouse user; the list below
+          carries the same figures for touch and assistive tech, which never
+          see a title attribute. */}
+      <div
+        aria-hidden
+        className={`flex h-8 items-end gap-px border-b border-line ${className}`}
+      >
+        {buckets.map((b) => (
+          <div
+            key={b.decade}
+            className="flex-1 rounded-t-sm bg-inverse-soft"
+            // Nonzero decades keep a visible floor so a small one still reads
+            // as "something happened here".
+            style={{ height: b.km === 0 ? 0 : `${Math.max(6, (b.km / max) * 100)}%` }}
+            title={label(b)}
+          />
+        ))}
+      </div>
+      <ul className="sr-only">
+        {buckets.map((b) => (
+          <li key={b.decade}>{label(b)}</li>
+        ))}
+      </ul>
+    </>
   );
 }

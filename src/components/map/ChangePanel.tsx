@@ -134,7 +134,7 @@ export default function ChangePanel({
                 <button
                   type="button"
                   onClick={() => onSelect(lot)}
-                  className="flex w-full cursor-pointer items-start gap-2 rounded px-1 py-1 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus:outline-none"
+                  className="flex w-full cursor-pointer items-start gap-2 rounded px-1 py-1 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus"
                 >
                   <span className="mt-0.5">
                     <CategoryGlyph category={lot.category} />

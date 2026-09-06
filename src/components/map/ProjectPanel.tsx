@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Lot, Project, Status } from "@/lib/schema";
 import { formatDate, formatMoney } from "@/lib/format";
+import { createLocalizer } from "@/lib/localized";
 import MapPanel from "./MapPanel";
 import { categoryVar } from "@/lib/map-theme";
 import { expectedOpeningYear } from "@/lib/contract";
@@ -27,8 +28,7 @@ interface ProjectPanelProps {
 export default function ProjectPanel({ project, lot, onClose }: ProjectPanelProps) {
   const t = useTranslations();
   const locale = useLocale();
-  const name = (s: { en: string; ro?: string }) =>
-    locale === "ro" && s.ro ? s.ro : s.en;
+  const name = createLocalizer(locale);
 
   const dateRows: Array<{ label: string; value?: string }> = [
     { label: t("project.announced"), value: lot.dates?.announced },

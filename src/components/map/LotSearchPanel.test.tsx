@@ -149,6 +149,14 @@ describe("LotSearchPanel", () => {
     expect(onSelect.mock.calls[0][0].lotId).toBe("a");
   });
 
+  it("shows keyboard focus on a row with an outline, not only a tint", async () => {
+    // A background change alone is not a focus indicator: the ring has to be
+    // visible in both themes, so the rows carry the same outline as DataTable.
+    renderPanel();
+    await userEvent.click(screen.getByRole("button", { name: /country\.lots/ }));
+    expect(rows()[0].className).toContain("focus-visible:outline");
+  });
+
   it("marks the selected row for assistive technology", async () => {
     render(
       <LotSearchPanel

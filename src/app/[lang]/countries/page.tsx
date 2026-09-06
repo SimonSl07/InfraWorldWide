@@ -2,18 +2,14 @@ import { Suspense } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
-  getContractors,
+  getAnalysisContext,
   getCountryTable,
-  getDeflators,
   getFxTable,
+  getLotMetrics,
   getProjects,
 } from "@/lib/data";
-import { commonLatestYear, createDeflator } from "@/lib/deflator";
-import { createConverter } from "@/lib/fx";
-import { createContractorResolver } from "@/lib/contractors";
 import { currentMonth } from "@/lib/slip";
 import { rankCountries } from "@/lib/country-stats";
-import { collectLotMetrics } from "@/lib/rankings";
 import { countryPerformance } from "@/lib/country-performance";
 import { summarizeSharedTrack } from "@/lib/shared-track";
 import { countryName, flagEmoji } from "@/lib/country-names";
@@ -55,19 +51,9 @@ export default async function CountriesPage({
 
   // Delivery figures on exactly the basis /rankings uses, so the comparison
   // table cannot disagree with the performance page about a country.
-  const deflators = getDeflators();
-  const priceYear = commonLatestYear(deflators) ?? deflators.baseYear;
-  const deflate = createDeflator(deflators);
-  const fx = getFxTable();
-  const performance = countryPerformance(
-    collectLotMetrics(projects, {
-      deflate,
-      priceYear,
-      resolve: createContractorResolver(getContractors()),
-      nowMonth,
-    }),
-    { deflate, convert: createConverter(fx), priceYear },
-  );
+  const { costOptions, priceYear } = getAnalysisContext(nowMonth);
+  const performance = countryPerformance(getLotMetrics(nowMonth), costOptions);
+  const baseCurrency = getFxTable().base;
 
   const shared = summarizeSharedTrack(projects);
 
@@ -163,7 +149,7 @@ export default async function CountriesPage({
               countries={ranked}
               performance={performance}
               priceYear={priceYear}
-              baseCurrency={fx.base}
+              baseCurrency={baseCurrency}
             />
           </Suspense>
         </div>

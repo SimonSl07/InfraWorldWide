@@ -146,7 +146,8 @@ const expected = (month: number) =>
 beforeEach(() => {
   scene.data = collection();
   vi.useFakeTimers({ toFake: ["Date"] });
-  vi.setSystemTime(new Date(2026, 7, 14));
+  // UTC, because that is the clock currentMonth reads.
+  vi.setSystemTime(new Date(Date.UTC(2026, 7, 14)));
 });
 
 afterEach(() => {

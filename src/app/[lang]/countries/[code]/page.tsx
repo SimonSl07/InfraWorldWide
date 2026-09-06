@@ -2,17 +2,13 @@ import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
-  getContractors,
   getCountries,
   getCountryTable,
-  getDeflators,
+  getLotMetrics,
   getProjects,
 } from "@/lib/data";
-import { commonLatestYear, createDeflator } from "@/lib/deflator";
-import { createContractorResolver } from "@/lib/contractors";
 import { currentMonth } from "@/lib/slip";
 import {
-  collectLotMetrics,
   deliveredOnTime,
   rankByCountry,
   underBudget,
@@ -180,14 +176,7 @@ export default async function CountryPage({
 
   // Delivery performance, on the same basis as /rankings so the two pages
   // cannot disagree about the same lot.
-  const deflators = getDeflators();
-  const priceYear = commonLatestYear(deflators) ?? deflators.baseYear;
-  const metrics = collectLotMetrics(projects, {
-    deflate: createDeflator(deflators),
-    priceYear,
-    resolve: createContractorResolver(getContractors()),
-    nowMonth,
-  });
+  const metrics = getLotMetrics(nowMonth);
   const countryMetrics = metrics.filter((m) => m.country === code);
   const league = rankByCountry(metrics).find((g) => g.key === code) ?? null;
 

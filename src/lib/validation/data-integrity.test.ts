@@ -13,14 +13,15 @@ import {
   checkCostRevisions,
   checkEvents,
   checkLocaleKeys,
-} from "./validate-data";
-import { hasContractTerms } from "../src/lib/schema";
+  checkFxCoverage,
+} from "./index";
+import { hasContractTerms } from "../schema";
 import type {
   ContractorRegistry,
   DeflatorTable,
   FxTable,
   Project,
-} from "../src/lib/schema";
+} from "../schema";
 
 /**
  * Integration test: every project file committed under data/projects must
@@ -289,6 +290,68 @@ describe("checkPriceCoverage", () => {
     });
     expect(checkPriceCoverage(deflators, fx, [p]).warnings).toEqual([]);
   });
+
+  /** A revision used to slip past this; only the flat fields were walked. */
+  it("warns about a revision priced in a year the tables do not reach", () => {
+    const p = projectStub([
+      lotStub({
+        cost: {
+          revisions: [
+            {
+              kind: "award",
+              date: "2026-03",
+              money: { amount: 10, currency: "RON", year: 2026 },
+            },
+          ],
+        },
+      }),
+    ]);
+    const w = checkPriceCoverage(deflators, fx, [p]).warnings;
+    expect(w).toHaveLength(1);
+    expect(w[0]).toContain("cost.revisions[0]");
+    expect(w[0]).toContain("cannot be restated");
+  });
+});
+
+/**
+ * The currency-level check walks the same `moneyOf` as the price-year one,
+ * so a project cost, a revision or a funding share cannot arrive in a
+ * currency the table has never heard of while the lot costs are held to it.
+ */
+describe("checkFxCoverage", () => {
+  const check = (p: Project) => {
+    const errors: string[] = [];
+    checkFxCoverage(fx, [p], errors);
+    return errors;
+  };
+
+  it("passes the base currency and one with rates", () => {
+    const p = projectStub(
+      [lotStub({ cost: { actual: { amount: 10, currency: "RON", year: 2020 } } })],
+      { cost: { amount: 100, currency: "EUR", year: 2020 } },
+    );
+    expect(check(p)).toEqual([]);
+  });
+
+  it("errors on a funding share in a currency the fx table lacks", () => {
+    const p = projectStub([
+      lotStub({
+        funding: [
+          { source: "loan", amount: { amount: 5, currency: "CHF", year: 2020 } },
+        ],
+      }),
+    ]);
+    expect(check(p)).toEqual([
+      'data/fx.json: no rates for "CHF", which costs are recorded in',
+    ]);
+  });
+
+  it("errors on a project cost in a currency the fx table lacks", () => {
+    const p = projectStub([lotStub()], {
+      cost: { amount: 100, currency: "GBP", year: 2020 },
+    });
+    expect(check(p).join(" ")).toContain('"GBP"');
+  });
 });
 
 const registry = {
@@ -346,6 +409,39 @@ describe("checkCostPerKm", () => {
       ],
       { category: "bridge" },
     );
+    expect(checkCostPerKm(fx, [p]).warnings).toEqual([]);
+  });
+
+  it("holds a revision to the band, since it prices the same section", () => {
+    const p = projectStub([
+      lotStub({
+        lengthKm: 20,
+        cost: {
+          revisions: [
+            {
+              kind: "award",
+              date: "2020",
+              money: { amount: 200000, currency: "EUR", year: 2020 },
+            },
+          ],
+        },
+      }),
+    ]);
+    const w = checkCostPerKm(fx, [p]).warnings;
+    expect(w).toHaveLength(1);
+    expect(w[0]).toContain("cost.revisions[0]");
+  });
+
+  /** A co-financing share is a slice of who pays, not the section's cost. */
+  it("never judges a funding share per km", () => {
+    const p = projectStub([
+      lotStub({
+        lengthKm: 20,
+        funding: [
+          { source: "EU", amount: { amount: 200000, currency: "EUR", year: 2020 } },
+        ],
+      }),
+    ]);
     expect(checkCostPerKm(fx, [p]).warnings).toEqual([]);
   });
 });

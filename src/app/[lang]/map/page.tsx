@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import MapExplorer from "@/components/map/MapExplorer";
+import { pageMetadata } from "@/lib/page-metadata";
 
 export async function generateMetadata({
   params,
@@ -8,8 +9,14 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const t = await getTranslations({ locale: lang, namespace: "map" });
-  return { title: t("title") };
+  const t = await getTranslations({ locale: lang });
+  return pageMetadata({
+    locale: lang,
+    path: "/map",
+    title: t("map.title"),
+    description: t("map.metaDescription"),
+    siteName: t("site.name"),
+  });
 }
 
 export default async function MapPage({ params }: PageProps<"/[lang]/map">) {

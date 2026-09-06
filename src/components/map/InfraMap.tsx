@@ -77,6 +77,11 @@ interface InfraMapProps {
   cities: FeatureCollection;
   /** Absolute month index (year*12 + month-1). */
   month: number;
+  /**
+   * The present month, on the same scale. Read once by the owner so the map
+   * and the panels beside it cannot straddle a month boundary.
+   */
+  nowMonth: number;
   selection: CategoryStatusSelection;
   selectedLotId: string | null;
   selectedCountry: string | null;
@@ -162,6 +167,7 @@ export default function InfraMap({
   countries,
   cities,
   month,
+  nowMonth,
   selection,
   selectedLotId,
   selectedCountry,
@@ -190,9 +196,6 @@ export default function InfraMap({
     latitude: number;
   } | null>(null);
   const mapRef = useRef<MapRef | null>(null);
-
-  const nowDate = new Date();
-  const nowMonth = nowDate.getFullYear() * 12 + nowDate.getMonth();
 
   // MapLibre paint values never see a CSS custom property, so unlike the
   // rest of the app the canvas has to be told which palette to draw with.

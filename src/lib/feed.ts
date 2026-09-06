@@ -1,5 +1,5 @@
 import type { Opening } from "./timeline";
-import type { LocalizedString } from "./schema";
+import { localized } from "./localized";
 import { absoluteUrl, localePath } from "./seo";
 
 /**
@@ -26,10 +26,6 @@ export function rfc822(date: string): string {
   return new Date(
     Date.UTC(year, (month ?? 1) - 1, day ?? 1),
   ).toUTCString();
-}
-
-function localized(value: LocalizedString, locale: string): string {
-  return locale === "ro" && value.ro ? value.ro : value.en;
 }
 
 export function buildOpeningsFeed(options: {

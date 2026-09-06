@@ -27,7 +27,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { diffRecords, formatDiff, hasChanges } from "../src/lib/record-diff";
-import { collectErrors } from "./validate-data";
+import { collectErrors } from "../src/lib/validation";
 
 const SOURCE_URL =
   "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson";

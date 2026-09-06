@@ -71,7 +71,7 @@ data/fx.json                             # annual average exchange rates, to com
 data/contractors.json                    # canonical contractor identities and aliases
 ```
 
-A **Project** (e.g. "A1 motorway") has **Lots** — sections with their own status, dates, cost, contractors. A lot's `geometryRef` joins it to a GeoJSON feature. `npm run data:validate` enforces the schema (zod), requires `dates.opened` for opened lots, sources for every project, and a matching geometry feature for every lot. The same checks run in `npm test` (`scripts/data-integrity.test.ts`).
+A **Project** (e.g. "A1 motorway") has **Lots** — sections with their own status, dates, cost, contractors. A lot's `geometryRef` joins it to a GeoJSON feature. `npm run data:validate` enforces the schema (zod), requires `dates.opened` for opened lots, sources for every project, and a matching geometry feature for every lot. The same checks run in `npm test` (`src/lib/validation/data-integrity.test.ts`).
 
 Amounts in `cost` are in **millions** of the currency unit (`{"amount": 500, "currency": "EUR"}` = €500M). The one exception is `gdpPerCapita` in `data/cities.json`, which is a per-person figure in **whole** units.
 
@@ -288,10 +288,10 @@ An annual average only exists once the year is over, so nothing can produce a 20
 
 ## Testing
 
-Vitest covers the pure logic (`src/lib/*.test.ts`: schema rules, map filters, URL params, formatting, stats, timeline, filtering, geo helpers), the geo algorithms (`scripts/fetch-osm-geometry.test.ts`), and a data-integrity test that re-validates all committed seed data. CI should run `npm test && npm run build`.
+Vitest covers the pure logic (`src/lib/*.test.ts`: schema rules, map filters, URL params, formatting, stats, timeline, filtering, geo helpers), the validators (`src/lib/validation/*.ts`), the geo algorithms (`scripts/fetch-osm-geometry.test.ts`), and a data-integrity test (`src/lib/validation/data-integrity.test.ts`) that re-validates all committed seed data. CI should run `npm test && npm run build`.
 
 ## Deployment
 
-**This needs a server runtime.** It is not a static export: `src/middleware.ts` rewrites locale-prefixed routes and `src/app/api/feedback/route.ts` is a request handler, so `output: "export"` fails the build. Pages are still statically generated (SSG) and the data is baked in at build time; what cannot be dropped is the Node runtime in front of them.
+**This needs a server runtime.** It is not a static export: `src/proxy.ts` rewrites locale-prefixed routes and `src/app/api/feedback/route.ts` is a request handler, so `output: "export"` fails the build. Pages are still statically generated (SSG) and the data is baked in at build time; what cannot be dropped is the Node runtime in front of them.
 
 Deploy to Vercel with no configuration (`prebuild` regenerates `public/data`). Any host that runs the Next.js Node server works the same way. Map tiles come from OpenFreeMap (free, no API key) — swap `OPENFREEMAP_STYLE` in `src/lib/map-style.ts` to change basemaps.
