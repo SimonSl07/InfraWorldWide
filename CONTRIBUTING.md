@@ -104,4 +104,5 @@ None of them run in `npm test`, and none write without being asked.
 - One project, one country or one fix per pull request.
 - Say where each new figure came from. A link in the PR body is enough; the citation itself belongs in the data file.
 - `npm test`, `npm run lint`, `npm run typecheck` and `npm run format:check` all pass. `npm run format` fixes the last one.
+- If you add or update a dependency, regenerate the lockfile with the npm that CI runs: `npx npm@10.9.4 install --package-lock-only`. npm 11 (Node 24) leaves out a nested `@swc/helpers` that npm 10 (Node 22) insists on, and `npm ci` then refuses the file. This has broken CI twice.
 - If you changed anything under `src/lib`, `scripts` or `data`, run `npm test` again after rebasing: the data-integrity test (`src/lib/validation/data-integrity.test.ts`) re-validates every committed file and catches cross-file breakage that a unit test cannot.
