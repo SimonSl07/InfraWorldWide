@@ -301,4 +301,23 @@ Vitest covers the pure logic (`src/lib/*.test.ts`: schema rules, map filters, UR
 
 **This needs a server runtime.** It is not a static export: `src/proxy.ts` rewrites locale-prefixed routes and `src/app/api/feedback/route.ts` is a request handler, so `output: "export"` fails the build. Pages are still statically generated (SSG) and the data is baked in at build time; what cannot be dropped is the Node runtime in front of them.
 
-Deploy to Vercel with no configuration (`prebuild` regenerates `public/data`). Any host that runs the Next.js Node server works the same way. Map tiles come from OpenFreeMap (free, no API key) — swap `OPENFREEMAP_STYLE` in `src/lib/map-style.ts` to change basemaps.
+The production site runs on Vercel (Hobby). Any host that runs the Next.js Node server works the same way; nothing at runtime depends on Vercel. Map tiles come from OpenFreeMap (free, no API key): swap `OPENFREEMAP_STYLE` in `src/lib/map-style.ts` to change basemaps.
+
+### Vercel
+
+Import the GitHub repository at [vercel.com/new](https://vercel.com/new); the framework is detected and `npm run build` runs `prebuild`, which regenerates `public/data`. The repository carries the settings that matter:
+
+- `vercel.json` pins the install command to `npm ci` (the lockfile is exact, see `CONTRIBUTING.md`) and the function region to `fra1` (Frankfurt). `src/proxy.ts` runs on every HTML request, so the region decides the round trip for readers in Romania, Bulgaria and Serbia; the default is in the US.
+- `package.json` `engines.node` selects Node 22, the version CI builds with. Node 24 ships npm 11, which writes the lockfile in a form npm 10 rejects (see `CONTRIBUTING.md`); one npm on every machine that touches it avoids that.
+- Every dynamic segment sets `dynamicParams = false`: an unknown project, country, city or contractor id is a 404 from the static set, never an on-demand render.
+
+Environment variables, set in the project's settings for Production (and Preview if you want previews to match):
+
+| Variable               | Purpose                                                                                                                                                                                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin, e.g. `https://example.org`, no trailing slash. Read at build time by `src/lib/seo.ts` for canonicals, hreflang, the sitemap and robots. Without it Vercel's production URL is used, which is fine until a custom domain exists. |
+| `FEEDBACK_WEBHOOK_URL` | Where `/api/feedback` forwards submissions. Production answers 503 without it.                                                                                                                                                                    |
+
+Custom domain: add it under Domains in the project settings and point DNS at Vercel (A record for the apex, CNAME for `www`), then set `NEXT_PUBLIC_SITE_URL` to it and redeploy so the baked-in URLs change. Register the domain with a registrar independent of the host; DNS is the only part of a move that is not a redeploy.
+
+Moving elsewhere: `next start` is the reference runtime, so a container needs only `output: "standalone"` in `next.config.ts` and a Dockerfile, plus the two variables above. `NEXT_PUBLIC_SITE_URL` is inlined at build, so it must be a build argument, not a runtime setting.
