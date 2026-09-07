@@ -107,6 +107,8 @@ export default function MapExplorer({
     );
   });
   const [highlightNew, setHighlightNew] = useState(false);
+  // Only read below `sm`, where the filter stack is a disclosure.
+  const [controlsOpen, setControlsOpen] = useState(false);
   const [comparing, setComparing] = useState(
     () => searchParams.get("cmp") !== null,
   );
@@ -351,40 +353,69 @@ export default function MapExplorer({
       )}
 
       {/* top-left: category filters, then the searchable list of what is
-          drawn. The list is the only route to a road without a mouse. */}
-      <div className="absolute top-4 left-4 z-10 flex max-h-[calc(100%-2rem)] flex-col gap-2">
-        <CategoryToggle selection={selection} onChange={setSelection} />
-        <div className="min-h-0 overflow-y-auto">
-          {/* No point listing what is on the map while the wipe is showing
+          drawn. The list is the only route to a road without a mouse.
+
+          Below `sm` the whole stack hides behind one button, as the legend
+          does. Three cards 288px wide on a 393px screen left the map a
+          margin to look at, and they ran under the buttons on the right. */}
+      <div className="absolute top-4 right-16 left-4 z-10 flex max-h-[calc(100%-8rem)] flex-col gap-2 sm:right-auto sm:max-h-[calc(100%-2rem)]">
+        <button
+          type="button"
+          onClick={() => setControlsOpen((v) => !v)}
+          aria-expanded={controlsOpen}
+          aria-controls="map-controls"
+          className="w-max cursor-pointer rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur sm:hidden"
+        >
+          {controlsOpen ? t("map.hideFilters") : t("map.showFilters")}
+        </button>
+        <div
+          id="map-controls"
+          className={`${
+            controlsOpen ? "flex" : "hidden"
+          } min-h-0 flex-col gap-2 sm:flex`}
+        >
+          <CategoryToggle selection={selection} onChange={setSelection} />
+          <div className="min-h-0 overflow-y-auto">
+            {/* No point listing what is on the map while the wipe is showing
               two maps; the baseline control below stays, because it is what
               sets the year on the left of the handle. */}
-          {!comparing && (
-            <LotSearchPanel
-              lots={listedLots}
-              selectedLotId={selected?.lotId ?? null}
-              onSelect={handleSelectFromList}
-              locale={locale}
-            />
-          )}
-          <div className="mt-2">
-            <ChangePanel
-              lots={allLots}
-              month={month}
-              nowMonth={nowMonth}
-              baselineYears={baselineYears}
-              onBaselineYearsChange={setBaselineYears}
-              highlight={highlightNew}
-              onHighlightChange={setHighlightNew}
-              onSelect={handleSelectFromList}
-              locale={locale}
-            />
+            {!comparing && (
+              <LotSearchPanel
+                lots={listedLots}
+                selectedLotId={selected?.lotId ?? null}
+                onSelect={handleSelectFromList}
+                locale={locale}
+              />
+            )}
+            <div className="mt-2">
+              <ChangePanel
+                lots={allLots}
+                month={month}
+                nowMonth={nowMonth}
+                baselineYears={baselineYears}
+                onBaselineYearsChange={setBaselineYears}
+                highlight={highlightNew}
+                onHighlightChange={setHighlightNew}
+                onSelect={handleSelectFromList}
+                locale={locale}
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* top-right, clear of MapLibre's own controls */}
-      <div className="absolute top-4 right-4 z-10 mr-11 flex flex-col items-end gap-2">
-        <div className="flex gap-2">
+      {/* top-right, clear of MapLibre's own controls. The two buttons stack
+          below `sm`: side by side they are wider than the half of a phone
+          screen left over once the filters button has its share. And they
+          stand down entirely while the filters are open, because one overlay
+          at a time is the only way three cards and three buttons fit on a
+          393px screen without landing on each other. */}
+      <div
+        className={`absolute top-4 right-4 z-10 mr-11 ${
+          controlsOpen ? "hidden" : "flex"
+        } flex-col items-end gap-2 sm:flex`}
+      >
+        <div className="flex flex-col items-end gap-2 sm:flex-row">
           <button
             type="button"
             onClick={() => setComparing((v) => !v)}
@@ -408,8 +439,10 @@ export default function MapExplorer({
         <BasemapToggle value={basemapId} onChange={setBasemapId} />
       </div>
 
-      {/* bottom-center: time slider */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10">
+      {/* bottom-center: time slider. Lifted clear of the legend button and
+          the basemap attribution on a phone, where all three landed on the
+          same 40px of screen. */}
+      <div className="absolute bottom-20 left-4 right-4 z-10 flex justify-center sm:bottom-6 sm:left-1/2 sm:right-auto sm:block sm:w-max sm:-translate-x-1/2">
         <TimeSlider
           month={month}
           min={minMonth}
@@ -425,7 +458,7 @@ export default function MapExplorer({
 
       {/* bottom-left: legend. Reachable on a phone now, where category used
           to be hue with nothing to read it against. */}
-      <div className="absolute bottom-6 left-4 z-10">
+      <div className="absolute bottom-10 left-4 z-10 sm:bottom-6">
         <MapLegend showDerivedNote />
       </div>
 

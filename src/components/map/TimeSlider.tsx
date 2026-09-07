@@ -99,7 +99,10 @@ export default function TimeSlider({
         </svg>
       </button>
 
-      <div className="flex flex-col gap-1 min-w-0 flex-1 sm:flex-none">
+      {/* Its own full-width line below `sm`. Sharing the line left it about
+          90px wide on a phone, which butted the two year bounds together into
+          one unreadable number: 1885 and 2032 rendered as "18852032". */}
+      <div className="order-last basis-full flex flex-col gap-1 min-w-0 sm:order-none sm:basis-auto">
         <input
           type="range"
           min={min}
@@ -111,7 +114,7 @@ export default function TimeSlider({
           aria-label={t("month")}
           aria-valuetext={label}
         />
-        <div className="flex justify-between text-[10px] text-ink-muted">
+        <div className="flex justify-between gap-3 text-[10px] text-ink-muted">
           <span>{bound(min)}</span>
           <span>{bound(max)}</span>
         </div>
