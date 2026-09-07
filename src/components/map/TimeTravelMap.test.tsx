@@ -146,7 +146,8 @@ const expected = (month: number) =>
 beforeEach(() => {
   scene.data = collection();
   vi.useFakeTimers({ toFake: ["Date"] });
-  vi.setSystemTime(new Date(2026, 7, 14));
+  // UTC, because that is the clock currentMonth reads.
+  vi.setSystemTime(new Date(Date.UTC(2026, 7, 14)));
 });
 
 afterEach(() => {
@@ -292,9 +293,9 @@ describe("TimeTravelMap paint", () => {
     for (const element of layers()) {
       const id = element.getAttribute("data-layer-id");
       const type = element.getAttribute("data-layer-type");
-      const paint = JSON.parse(element.getAttribute("data-paint") ?? "null") as
-        | Record<string, unknown>
-        | null;
+      const paint = JSON.parse(
+        element.getAttribute("data-paint") ?? "null",
+      ) as Record<string, unknown> | null;
       if (!paint) continue;
       for (const [property, value] of Object.entries(paint)) {
         const message = validate(value, property, `paint_${type}`);
@@ -307,9 +308,9 @@ describe("TimeTravelMap paint", () => {
   it("keeps the zoom interpolation outermost in every width ramp", () => {
     mount();
     for (const element of layers()) {
-      const paint = JSON.parse(element.getAttribute("data-paint") ?? "null") as
-        | Record<string, unknown>
-        | null;
+      const paint = JSON.parse(
+        element.getAttribute("data-paint") ?? "null",
+      ) as Record<string, unknown> | null;
       for (const value of Object.values(paint ?? {})) {
         const encoded = JSON.stringify(value);
         if (!encoded.includes('"interpolate"')) continue;

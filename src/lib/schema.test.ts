@@ -101,8 +101,10 @@ describe("lotSchema date rules", () => {
         .success,
     ).toBe(true);
     expect(
-      lotSchema.safeParse({ ...base, dates: { constructionStart: "March 2022" } })
-        .success,
+      lotSchema.safeParse({
+        ...base,
+        dates: { constructionStart: "March 2022" },
+      }).success,
     ).toBe(false);
   });
 });
@@ -127,7 +129,8 @@ describe("contractSchema", () => {
 
   it("rejects a block that only holds a notice reference or url", () => {
     expect(
-      contractSchema.safeParse({ noticeReference: "a long prose note" }).success,
+      contractSchema.safeParse({ noticeReference: "a long prose note" })
+        .success,
     ).toBe(false);
     expect(
       contractSchema.safeParse({ noticeUrl: "https://example.com/a" }).success,
@@ -183,9 +186,12 @@ describe("sourceSchema", () => {
   });
 
   it("rejects a malformed id or retrieval date", () => {
-    expect(sourceSchema.safeParse({ ...base, id: "Bad Id" }).success).toBe(false);
+    expect(sourceSchema.safeParse({ ...base, id: "Bad Id" }).success).toBe(
+      false,
+    );
     expect(
-      sourceSchema.safeParse({ ...base, retrievedOn: "14 August 2026" }).success,
+      sourceSchema.safeParse({ ...base, retrievedOn: "14 August 2026" })
+        .success,
     ).toBe(false);
   });
 });
@@ -257,8 +263,12 @@ describe("localizedStringSchema", () => {
 
   it("accepts any additional locale key, not just ro", () => {
     expect(
-      localizedStringSchema.safeParse({ en: "x", ro: "y", bg: "z", "ro-MD": "w" })
-        .success,
+      localizedStringSchema.safeParse({
+        en: "x",
+        ro: "y",
+        bg: "z",
+        "ro-MD": "w",
+      }).success,
     ).toBe(true);
   });
 
@@ -334,8 +344,10 @@ describe("reference tables for corridors, programmes and operators", () => {
       sources: [{ title: "T", url: "https://example.com/a" }],
     };
     expect(
-      operatorTableSchema.safeParse({ note: "n", operators: { "ro-cnair": entry } })
-        .success,
+      operatorTableSchema.safeParse({
+        note: "n",
+        operators: { "ro-cnair": entry },
+      }).success,
     ).toBe(true);
     expect(
       operatorTableSchema.safeParse({
@@ -503,7 +515,10 @@ describe("cost revisions", () => {
         ...lot,
         cost: {
           revisions: [
-            { kind: "outturn", money: { amount: 1, currency: "EUR", year: 2020 } },
+            {
+              kind: "outturn",
+              money: { amount: 1, currency: "EUR", year: 2020 },
+            },
           ],
         },
       }).success,

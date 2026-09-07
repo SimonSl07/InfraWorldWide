@@ -42,10 +42,36 @@ export interface TedNotice {
  * signs and Wikipedia use, so it lands on the same spelling as the data.
  */
 const CYRILLIC: Record<string, string> = {
-  а: "a", б: "b", в: "v", г: "g", д: "d", е: "e", ж: "zh", з: "z",
-  и: "i", й: "y", к: "k", л: "l", м: "m", н: "n", о: "o", п: "p",
-  р: "r", с: "s", т: "t", у: "u", ф: "f", х: "h", ц: "ts", ч: "ch",
-  ш: "sh", щ: "sht", ъ: "a", ь: "y", ю: "yu", я: "ya",
+  а: "a",
+  б: "b",
+  в: "v",
+  г: "g",
+  д: "d",
+  е: "e",
+  ж: "zh",
+  з: "z",
+  и: "i",
+  й: "y",
+  к: "k",
+  л: "l",
+  м: "m",
+  н: "n",
+  о: "o",
+  п: "p",
+  р: "r",
+  с: "s",
+  т: "t",
+  у: "u",
+  ф: "f",
+  х: "h",
+  ц: "ts",
+  ч: "ch",
+  ш: "sh",
+  щ: "sht",
+  ъ: "a",
+  ь: "y",
+  ю: "yu",
+  я: "ya",
 };
 
 /**
@@ -59,15 +85,17 @@ export function normaliseText(text: string): string {
   for (const ch of lower) {
     out += CYRILLIC[ch] ?? ch;
   }
-  return out
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    // Romanian ș/ț often arrive as the Turkish-comma variants, which do not
-    // decompose to s and t.
-    .replace(/[şŝ]/g, "s")
-    .replace(/[ţ]/g, "t")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
+  return (
+    out
+      .normalize("NFD")
+      .replace(/[̀-ͯ]/g, "")
+      // Romanian ș/ț often arrive as the Turkish-comma variants, which do not
+      // decompose to s and t.
+      .replace(/[şŝ]/g, "s")
+      .replace(/[ţ]/g, "t")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim()
+  );
 }
 
 /**
@@ -75,19 +103,100 @@ export function normaliseText(text: string): string {
  * a place name ("de Jos"), and the words every notice title contains.
  */
 const FILLER = new Set([
-  "lot", "lotul", "loturi", "sectiunea", "sectiune", "sectiunile", "section",
-  "sections", "sector", "sectorul", "tronson", "tronsonul", "etapa", "faza",
-  "phase", "stage", "km", "de", "din", "la", "si", "and", "the", "a", "pe",
-  "cu", "in", "incl", "inclusiv", "jos", "sus", "mare", "mic", "nord", "sud",
-  "est", "vest", "north", "south", "east", "west", "bypass", "centura",
-  "varianta", "ocolitoare", "junction", "nod", "nodul", "border", "frontiera",
-  "autostrada", "autostrazii", "drum", "drumul", "expres", "highway", "road",
-  "roads", "motorway", "railway", "rail", "cale", "ferata", "linia", "linie",
-  "metrou", "metro", "pod", "podul", "bridge", "tunel", "tunelul", "tunnel",
-  "construction", "works", "work", "lucrari", "executie", "proiectare",
-  "romania", "bulgaria", "serbia", "for", "of", "to", "modernizarea",
-  "reabilitare", "reabilitarea", "magistrala", "avtomagistrala", "uchastak",
-  "obiectivul", "investitii", "obiectiv",
+  "lot",
+  "lotul",
+  "loturi",
+  "sectiunea",
+  "sectiune",
+  "sectiunile",
+  "section",
+  "sections",
+  "sector",
+  "sectorul",
+  "tronson",
+  "tronsonul",
+  "etapa",
+  "faza",
+  "phase",
+  "stage",
+  "km",
+  "de",
+  "din",
+  "la",
+  "si",
+  "and",
+  "the",
+  "a",
+  "pe",
+  "cu",
+  "in",
+  "incl",
+  "inclusiv",
+  "jos",
+  "sus",
+  "mare",
+  "mic",
+  "nord",
+  "sud",
+  "est",
+  "vest",
+  "north",
+  "south",
+  "east",
+  "west",
+  "bypass",
+  "centura",
+  "varianta",
+  "ocolitoare",
+  "junction",
+  "nod",
+  "nodul",
+  "border",
+  "frontiera",
+  "autostrada",
+  "autostrazii",
+  "drum",
+  "drumul",
+  "expres",
+  "highway",
+  "road",
+  "roads",
+  "motorway",
+  "railway",
+  "rail",
+  "cale",
+  "ferata",
+  "linia",
+  "linie",
+  "metrou",
+  "metro",
+  "pod",
+  "podul",
+  "bridge",
+  "tunel",
+  "tunelul",
+  "tunnel",
+  "construction",
+  "works",
+  "work",
+  "lucrari",
+  "executie",
+  "proiectare",
+  "romania",
+  "bulgaria",
+  "serbia",
+  "for",
+  "of",
+  "to",
+  "modernizarea",
+  "reabilitare",
+  "reabilitarea",
+  "magistrala",
+  "avtomagistrala",
+  "uchastak",
+  "obiectivul",
+  "investitii",
+  "obiectiv",
 ]);
 
 /** Distinctive place-name tokens, in first-seen order, deduplicated. */
@@ -119,9 +228,20 @@ export function routeRefs(text: string): string[] {
 
 /** Titles that are upkeep rather than construction, however they name a road. */
 const MAINTENANCE = [
-  "intretinere", "acord cadru", "acord-cadru", "reparatii", "estetica",
-  "deszapezire", "marcaje", "mentenanta", "revizie", "maintenance",
-  "framework", "snow", "curatenie", "semnalizare",
+  "intretinere",
+  "acord cadru",
+  "acord-cadru",
+  "reparatii",
+  "estetica",
+  "deszapezire",
+  "marcaje",
+  "mentenanta",
+  "revizie",
+  "maintenance",
+  "framework",
+  "snow",
+  "curatenie",
+  "semnalizare",
 ];
 
 /**
@@ -136,7 +256,8 @@ const MAINTENANCE = [
  * "structure" covers bridges, viaducts and tunnels, which sit on both road and
  * rail projects and so cannot rule either out.
  */
-export type NoticeCategory = "road" | "rail" | "structure" | "maintenance" | "other";
+export type NoticeCategory =
+  "road" | "rail" | "structure" | "maintenance" | "other";
 
 export function noticeCategory(title: string): NoticeCategory {
   const segments = title.split(/\s+[–-]\s+/);
@@ -144,7 +265,8 @@ export function noticeCategory(title: string): NoticeCategory {
   const label = segments[1].toLowerCase();
 
   // Upkeep first: "Bridge renewal construction work" is renewal, not a bridge.
-  if (/maintenance|repair|renewal|snow|cleaning|resurfacing/.test(label)) return "maintenance";
+  if (/maintenance|repair|renewal|snow|cleaning|resurfacing/.test(label))
+    return "maintenance";
   if (/bridge|viaduct|tunnel|overpass/.test(label)) return "structure";
   if (/rail|tram|metro|underground/.test(label)) return "rail";
   if (/highway|motorway|road|carriageway/.test(label)) return "road";
@@ -157,7 +279,12 @@ function categoryConflict(
   project: Project["category"],
 ): string | null {
   const wantsRail = project === "railway";
-  if (notice === "rail" && !wantsRail && project !== "tunnel" && project !== "bridge") {
+  if (
+    notice === "rail" &&
+    !wantsRail &&
+    project !== "tunnel" &&
+    project !== "bridge"
+  ) {
     return `railway notice against a ${project} project`;
   }
   if (notice === "road" && wantsRail) {
@@ -196,7 +323,9 @@ export function tokenWeights(projects: Project[]): Map<string, number> {
  * renames, so it is read alongside the names rather than instead of them.
  */
 function lotTokens(lot: Lot): string[] {
-  return placeTokens(`${lot.id.replace(/-/g, " ")} ${lot.name.en} ${lot.name.ro ?? ""}`);
+  return placeTokens(
+    `${lot.id.replace(/-/g, " ")} ${lot.name.en} ${lot.name.ro ?? ""}`,
+  );
 }
 
 export interface MatchScore {
@@ -239,14 +368,22 @@ export function scoreNotice(
 
   const wanted = lotTokens(lot);
   if (wanted.length === 0) {
-    return { score: 0, confidence: "none", matched: [], reasons: ["lot has no place names"] };
+    return {
+      score: 0,
+      confidence: "none",
+      matched: [],
+      reasons: ["lot has no place names"],
+    };
   }
 
   const matched = wanted.filter((token) => haystackTokens.has(token));
   const reasons: string[] = [];
   const weigh = (token: string) => weights?.get(token) ?? 1;
   const total = wanted.reduce((sum, token) => sum + weigh(token), 0);
-  let score = total > 0 ? matched.reduce((sum, token) => sum + weigh(token), 0) / total : 0;
+  let score =
+    total > 0
+      ? matched.reduce((sum, token) => sum + weigh(token), 0) / total
+      : 0;
 
   const projectRefs = new Set([
     ...routeRefs(project.id.slice(3).replace(/-/g, " ")),
@@ -262,7 +399,8 @@ export function scoreNotice(
   // A notice published years from the recorded award is usually a different
   // procurement for the same stretch of road.
   const published = year(notice.publicationDate);
-  const awarded = year(lot.dates?.tenderAwarded) ?? year(lot.dates?.constructionStart);
+  const awarded =
+    year(lot.dates?.tenderAwarded) ?? year(lot.dates?.constructionStart);
   if (published !== null && awarded !== null) {
     const gap = Math.abs(published - awarded);
     if (gap <= 2) {
@@ -274,19 +412,26 @@ export function scoreNotice(
     }
   }
 
-  if (category === "maintenance" || MAINTENANCE.some((word) => haystack.includes(word))) {
+  if (
+    category === "maintenance" ||
+    MAINTENANCE.some((word) => haystack.includes(word))
+  ) {
     score *= 0.3;
     reasons.push("maintenance or framework notice");
   }
 
   // One shared name is a coincidence unless the road number agrees too.
-  const strongEnough = matched.length >= 2 || (matched.length === 1 && sharedRef !== undefined);
+  const strongEnough =
+    matched.length >= 2 || (matched.length === 1 && sharedRef !== undefined);
   if (matched.length === 0 || !strongEnough) {
     return {
       score: matched.length === 0 ? 0 : Math.min(score, 0.25),
       confidence: "none",
       matched,
-      reasons: matched.length === 0 ? ["no shared place name"] : ["only one shared place name"],
+      reasons:
+        matched.length === 0
+          ? ["no shared place name"]
+          : ["only one shared place name"],
     };
   }
 
@@ -313,7 +458,13 @@ export function scoreNotice(
   const capped = ownsAName ? score : Math.min(score, 0.74);
 
   const confidence: MatchConfidence =
-    capped >= 0.75 ? "high" : capped >= 0.5 ? "medium" : capped >= 0.3 ? "low" : "none";
+    capped >= 0.75
+      ? "high"
+      : capped >= 0.5
+        ? "medium"
+        : capped >= 0.3
+          ? "low"
+          : "none";
   return { score: Number(score.toFixed(3)), confidence, matched, reasons };
 }
 
@@ -351,7 +502,8 @@ export function wouldAdd(notice: TedNotice, lot: Lot): string[] {
   if (contractedMonths(notice) && contractMonths(lot.contract ?? {}) === null) {
     out.push("contract.executionMonths");
   }
-  if (notice.conclusionDate && !lot.dates?.tenderAwarded) out.push("dates.tenderAwarded");
+  if (notice.conclusionDate && !lot.dates?.tenderAwarded)
+    out.push("dates.tenderAwarded");
   if (notice.winners && !lot.contractors?.length) out.push("contractors");
   return out;
 }
@@ -381,7 +533,12 @@ export interface MatchOptions {
   minConfidence?: Exclude<MatchConfidence, "none">;
 }
 
-const RANK: Record<MatchConfidence, number> = { high: 3, medium: 2, low: 1, none: 0 };
+const RANK: Record<MatchConfidence, number> = {
+  high: 3,
+  medium: 2,
+  low: 1,
+  none: 0,
+};
 
 /** Every plausible notice-to-lot pairing, as review rows. */
 export function matchNotices(
@@ -413,7 +570,9 @@ export function matchNotices(
           reasons: result.reasons.join("; "),
           wouldAdd: wouldAdd(notice, lot),
           noticeValue:
-            notice.value === null ? "" : `${notice.value} ${notice.currency ?? ""}`.trim(),
+            notice.value === null
+              ? ""
+              : `${notice.value} ${notice.currency ?? ""}`.trim(),
           noticeDuration: duration
             ? `${duration.months} months${duration.certain ? "" : " (unit unstated)"}`
             : "",

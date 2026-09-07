@@ -1,9 +1,5 @@
 import { foldText } from "./text";
-import type {
-  Contractor,
-  ContractorEntry,
-  ContractorRegistry,
-} from "./schema";
+import type { Contractor, ContractorEntry, ContractorRegistry } from "./schema";
 
 /**
  * Resolving contractor strings to stable identities.
@@ -87,11 +83,6 @@ export function splitJointVenture(name: string): string[] {
     .split(/\s+–\s+|\s+\/\s+/)
     .map((p) => p.trim())
     .filter((p) => p.length > 0);
-}
-
-/** Cleaned display form of a raw contractor string. */
-export function normalizeContractorName(raw: string): string {
-  return stripParenthetical(stripScopeNote(raw));
 }
 
 export type ContractorResolver = (raw: string) => ResolvedContractor[];

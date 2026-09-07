@@ -32,7 +32,13 @@ describe("csvCell", () => {
 
 describe("toCsv", () => {
   it("writes the header then one line per row", () => {
-    const csv = toCsv(["id", "lots"], [["astaldi", 3], ["umb", 11]]);
+    const csv = toCsv(
+      ["id", "lots"],
+      [
+        ["astaldi", 3],
+        ["umb", 11],
+      ],
+    );
     expect(csv).toBe("id,lots\nastaldi,3\numb,11\n");
   });
 

@@ -3,7 +3,6 @@ import {
   attributeLotContractors,
   contractorSlug,
   createContractorResolver,
-  normalizeContractorName,
   splitJointVenture,
   stripParenthetical,
   stripScopeNote,
@@ -13,7 +12,11 @@ import type { ContractorRegistry } from "./schema";
 const registry: ContractorRegistry = {
   note: "test",
   contractors: [
-    { id: "astaldi", name: "Astaldi", aliases: ["Astaldi SpA", "Webuild (Astaldi)"] },
+    {
+      id: "astaldi",
+      name: "Astaldi",
+      aliases: ["Astaldi SpA", "Webuild (Astaldi)"],
+    },
     { id: "webuild", name: "Webuild", aliases: ["Salini Impregilo"] },
     {
       id: "fcc-construccion",
@@ -85,7 +88,9 @@ describe("stripParenthetical", () => {
       "Alpine",
     );
     expect(
-      stripParenthetical("Tirrena Scavi (contract cancelled at 58.26% progress)"),
+      stripParenthetical(
+        "Tirrena Scavi (contract cancelled at 58.26% progress)",
+      ),
     ).toBe("Tirrena Scavi");
   });
 
@@ -118,14 +123,6 @@ describe("splitJointVenture", () => {
   });
 });
 
-describe("normalizeContractorName", () => {
-  it("applies both cleanups", () => {
-    expect(
-      normalizeContractorName("Webuild (Astaldi): subsections 2A and 2B"),
-    ).toBe("Webuild");
-  });
-});
-
 describe("createContractorResolver", () => {
   it("collapses spelling and suffix variants onto one firm", () => {
     expect(ids("FCC Construcción")).toEqual(["fcc-construccion"]);
@@ -145,7 +142,9 @@ describe("createContractorResolver", () => {
   it("matches a curated alias before stripping its parenthetical", () => {
     // Would otherwise resolve to "webuild".
     expect(ids("Webuild (Astaldi)")).toEqual(["astaldi"]);
-    expect(ids("Webuild (Astaldi): subsections 2A and 2B")).toEqual(["astaldi"]);
+    expect(ids("Webuild (Astaldi): subsections 2A and 2B")).toEqual([
+      "astaldi",
+    ]);
     // A bare Webuild lot still belongs to Webuild.
     expect(ids("Webuild (lot 3)")).toEqual(["webuild"]);
   });
@@ -194,9 +193,9 @@ describe("createContractorResolver", () => {
   });
 
   it("does not split a scope note into fake members", () => {
-    expect(ids("Alstom: Ilteu – Gurasada signalling and electrification")).toEqual(
-      ["alstom"],
-    );
+    expect(
+      ids("Alstom: Ilteu – Gurasada signalling and electrification"),
+    ).toEqual(["alstom"]);
   });
 
   it("does not split place names inside a parenthetical", () => {
@@ -229,7 +228,9 @@ describe("attributeLotContractors", () => {
 
   it("treats an unlabelled contractor as a builder", () => {
     const out = attributeLotContractors([{ name: "Strabag" }], resolve);
-    expect(out).toEqual([{ id: "strabag", name: "Strabag", kind: "firm", role: "builder" }]);
+    expect(out).toEqual([
+      { id: "strabag", name: "Strabag", kind: "firm", role: "builder" },
+    ]);
   });
 
   it("can credit designers when asked", () => {

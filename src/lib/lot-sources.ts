@@ -36,7 +36,9 @@ export function lotCitations(lot: Lot, projectSources: Source[]): LotCitations {
 
   // Project order, not the order the refs were written in: the list on the
   // page is numbered, and citations have to read in the same sequence.
-  const refs = projectSources.filter((s) => s.id !== undefined && wanted.has(s.id));
+  const refs = projectSources.filter(
+    (s) => s.id !== undefined && wanted.has(s.id),
+  );
   const unresolved = [...wanted].filter((id) => !byId.has(id));
 
   const citedUrls = new Set([

@@ -1,15 +1,13 @@
-import type {
-  ExpressionSpecification,
-  FilterSpecification,
-} from "maplibre-gl";
+import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import type { Category, Status } from "./schema";
+import { LIGHT_MAP, type MapTheme } from "./map-theme";
 
-export const CATEGORY_COLORS: Record<Category, string> = {
-  highway: "#2563eb", // blue-600
-  railway: "#16a34a", // green-600
-  bridge: "#d97706", // amber-600
-  tunnel: "#7c3aed", // violet-600
-};
+/**
+ * The light palette's category hues: the default wherever nothing passes a
+ * theme, and the only palette the Open Graph image, rendered once for every
+ * reader, can be drawn with.
+ */
+export const CATEGORY_COLORS = LIGHT_MAP.category;
 
 export const ALL_CATEGORIES = Object.keys(CATEGORY_COLORS) as Category[];
 
@@ -101,19 +99,25 @@ export function countryOutlineOpacity(
 
 export function countryOutlineColor(
   selected: string | null,
+  theme: MapTheme = LIGHT_MAP,
 ): ExpressionSpecification {
   return [
     "case",
     isCountry(selected),
-    "#0f172a",
-    "#94a3b8",
+    theme.countryOutline,
+    theme.countryOutlineMuted,
   ] as unknown as ExpressionSpecification;
 }
 
 export function countryOutlineWidth(
   selected: string | null,
 ): ExpressionSpecification {
-  return ["case", isCountry(selected), 2, 1] as unknown as ExpressionSpecification;
+  return [
+    "case",
+    isCountry(selected),
+    2,
+    1,
+  ] as unknown as ExpressionSpecification;
 }
 
 /* ── City view paint ──────────────────────────────────────────────────── */
@@ -178,12 +182,15 @@ export function pickedFillOpacity(
   ] as unknown as ExpressionSpecification;
 }
 
-export function pickedFillColor(picked: string[]): ExpressionSpecification {
+export function pickedFillColor(
+  picked: string[],
+  theme: MapTheme = LIGHT_MAP,
+): ExpressionSpecification {
   return [
     "case",
     inCountries(picked),
-    "#0f172a",
-    "#64748b",
+    theme.pickerPicked,
+    theme.pickerUnpicked,
   ] as unknown as ExpressionSpecification;
 }
 

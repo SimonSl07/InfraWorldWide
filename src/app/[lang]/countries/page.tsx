@@ -2,18 +2,14 @@ import { Suspense } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
-  getContractors,
+  getAnalysisContext,
   getCountryTable,
-  getDeflators,
   getFxTable,
+  getLotMetrics,
   getProjects,
 } from "@/lib/data";
-import { commonLatestYear, createDeflator } from "@/lib/deflator";
-import { createConverter } from "@/lib/fx";
-import { createContractorResolver } from "@/lib/contractors";
 import { currentMonth } from "@/lib/slip";
 import { rankCountries } from "@/lib/country-stats";
-import { collectLotMetrics } from "@/lib/rankings";
 import { countryPerformance } from "@/lib/country-performance";
 import { summarizeSharedTrack } from "@/lib/shared-track";
 import { countryName, flagEmoji } from "@/lib/country-names";
@@ -37,6 +33,28 @@ export async function generateMetadata({
   });
 }
 
+/**
+ * Reserves the picker's footprint while CountryCompare hydrates: a search
+ * box over a list on the left, the picker map on the right. Without it the
+ * comparison block popped in after the static HTML and moved everything
+ * below it.
+ */
+function CompareFallback() {
+  return (
+    <div aria-hidden className="grid gap-4 sm:grid-cols-2">
+      <div>
+        <div className="h-4 w-16 rounded bg-surface-raised" />
+        <div className="mt-1 h-10 rounded-lg border border-line-strong bg-surface-sunken" />
+        <div className="mt-2 h-48 rounded-lg bg-surface-sunken" />
+      </div>
+      <div>
+        <div className="h-4 w-24 rounded bg-surface-raised" />
+        <div className="mt-1 h-64 rounded-xl border border-line bg-surface-sunken" />
+      </div>
+    </div>
+  );
+}
+
 export default async function CountriesPage({
   params,
 }: PageProps<"/[lang]/countries">) {
@@ -55,28 +73,16 @@ export default async function CountriesPage({
 
   // Delivery figures on exactly the basis /rankings uses, so the comparison
   // table cannot disagree with the performance page about a country.
-  const deflators = getDeflators();
-  const priceYear = commonLatestYear(deflators) ?? deflators.baseYear;
-  const deflate = createDeflator(deflators);
-  const fx = getFxTable();
-  const performance = countryPerformance(
-    collectLotMetrics(projects, {
-      deflate,
-      priceYear,
-      resolve: createContractorResolver(getContractors()),
-      nowMonth,
-    }),
-    { deflate, convert: createConverter(fx), priceYear },
-  );
+  const { costOptions, priceYear } = getAnalysisContext(nowMonth);
+  const performance = countryPerformance(getLotMetrics(nowMonth), costOptions);
+  const baseCurrency = getFxTable().base;
 
   const shared = summarizeSharedTrack(projects);
 
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
       <h1 className="text-3xl font-bold">{t("country.indexTitle")}</h1>
-      <p className="mt-2 max-w-3xl text-ink-soft">
-        {t("country.indexIntro")}
-      </p>
+      <p className="mt-2 max-w-3xl text-ink-soft">{t("country.indexIntro")}</p>
 
       <div
         className="mt-6 overflow-x-auto focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
@@ -88,8 +94,12 @@ export default async function CountriesPage({
           <caption className="sr-only">{t("country.indexIntro")}</caption>
           <thead>
             <tr className="border-b border-line text-left text-xs font-medium uppercase tracking-wide text-ink-muted">
-              <th scope="col" className="py-2 pr-3 font-medium">{t("country.thRank")}</th>
-              <th scope="col" className="py-2 pr-4 font-medium">{t("country.thCountry")}</th>
+              <th scope="col" className="py-2 pr-3 font-medium">
+                {t("country.thRank")}
+              </th>
+              <th scope="col" className="py-2 pr-4 font-medium">
+                {t("country.thCountry")}
+              </th>
               <th scope="col" className="py-2 pl-4 text-right font-medium">
                 {t("country.totalOpened")}
               </th>
@@ -158,12 +168,12 @@ export default async function CountriesPage({
         {/* CountryCompare reads ?compare= with useSearchParams; without this
             boundary the whole page would fall back to client rendering. */}
         <div className="mt-6">
-          <Suspense>
+          <Suspense fallback={<CompareFallback />}>
             <CountryCompare
               countries={ranked}
               performance={performance}
               priceYear={priceYear}
-              baseCurrency={fx.base}
+              baseCurrency={baseCurrency}
             />
           </Suspense>
         </div>

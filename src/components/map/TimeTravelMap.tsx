@@ -4,18 +4,15 @@ import { useMemo, useState } from "react";
 import { Source, Layer } from "react-map-gl/maplibre";
 import { useTranslations } from "next-intl";
 import type { FeatureCollection } from "geojson";
-import type {
-  ExpressionSpecification,
-  FilterSpecification,
-} from "maplibre-gl";
+import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import {
   buildMonthFilters,
   computeMaxMonth,
   computeMinMonth,
   fullSelection,
   shouldShowFuture,
-  toMonthIndex,
 } from "@/lib/map-filters";
+import { currentMonth } from "@/lib/contract";
 import {
   ALL_CATEGORIES,
   MARKER_FILTER,
@@ -151,10 +148,7 @@ export default function TimeTravelMap({
 
   // Read once: "now" must not drift between renders, or the filters and the
   // slider bounds would disagree the moment a month ticks over.
-  const [nowMonth] = useState(() => {
-    const now = new Date();
-    return toMonthIndex(now.getFullYear(), now.getMonth() + 1);
-  });
+  const [nowMonth] = useState(() => currentMonth());
 
   // The playback state lives here, above the frame, so the map remounting on
   // its fitted bounds does not throw the viewer back to the present.
@@ -232,7 +226,10 @@ function TimeTravelScene({
   );
   const showFuture = shouldShowFuture(month, nowMonth);
 
-  const minMonth = useMemo(() => computeMinMonth(data.features), [data.features]);
+  const minMonth = useMemo(
+    () => computeMinMonth(data.features),
+    [data.features],
+  );
   const maxMonth = useMemo(
     () => computeMaxMonth(data.features, nowMonth),
     [data.features, nowMonth],

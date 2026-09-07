@@ -13,7 +13,11 @@ import { loadContractorProfiles } from "./[lang]/contractors/profiles";
  */
 
 /** Locale-independent paths, roughly in order of importance. */
-function paths(): { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] {
+function paths(): {
+  path: string;
+  priority: number;
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+}[] {
   const staticPaths = [
     { path: "/", priority: 1, changeFrequency: "weekly" as const },
     { path: "/map", priority: 0.9, changeFrequency: "weekly" as const },

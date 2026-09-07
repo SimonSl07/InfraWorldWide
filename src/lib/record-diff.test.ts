@@ -36,10 +36,16 @@ describe("diffRecords", () => {
 
   it("compares nested values structurally, not by reference", () => {
     const withArray = { id: "a", parts: [1, 2, 3] };
-    expect(hasChanges(diffRecords({ a: withArray }, { a: { id: "a", parts: [1, 2, 3] } }))).toBe(
-      false,
-    );
-    expect(hasChanges(diffRecords({ a: withArray }, { a: { id: "a", parts: [1, 2] } }))).toBe(true);
+    expect(
+      hasChanges(
+        diffRecords({ a: withArray }, { a: { id: "a", parts: [1, 2, 3] } }),
+      ),
+    ).toBe(false);
+    expect(
+      hasChanges(
+        diffRecords({ a: withArray }, { a: { id: "a", parts: [1, 2] } }),
+      ),
+    ).toBe(true);
   });
 
   it("ignores fields the caller says are noise", () => {
@@ -81,15 +87,20 @@ describe("formatDiff", () => {
 
   it("truncates a long value rather than dumping a whole geometry", () => {
     const long = { id: "a", blob: "x".repeat(500) };
-    const text = formatDiff(diffRecords({ a: { id: "a", blob: "y" } }, { a: long }), {
-      label: "records",
-      maxValueChars: 20,
-    });
+    const text = formatDiff(
+      diffRecords({ a: { id: "a", blob: "y" } }, { a: long }),
+      {
+        label: "records",
+        maxValueChars: 20,
+      },
+    );
     expect(text).toMatch(/x{20}\.\.\./);
     expect(text).not.toMatch(/x{40}/);
   });
 
   it("uses no em dash", () => {
-    expect(formatDiff(diffRecords({ a }, { b }), { label: "records" })).not.toContain("—");
+    expect(
+      formatDiff(diffRecords({ a }, { b }), { label: "records" }),
+    ).not.toContain("—");
   });
 });

@@ -5,11 +5,9 @@ import { countryName, flagEmoji } from "@/lib/country-names";
 import { currentMonth } from "@/lib/slip";
 import { lotMonths, lotStateAt } from "@/lib/country-stats";
 import { formatKm } from "@/lib/format";
-import { countsTowardNetwork, type LocalizedString } from "@/lib/schema";
-
-function localized(value: LocalizedString, lang: string): string {
-  return lang === "ro" && value.ro ? value.ro : value.en;
-}
+import { countsTowardNetwork } from "@/lib/schema";
+import { localized } from "@/lib/localized";
+import { pageMetadata } from "@/lib/page-metadata";
 
 export async function generateMetadata({
   params,
@@ -17,8 +15,14 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const t = await getTranslations({ locale: lang, namespace: "city" });
-  return { title: t("indexTitle"), description: t("indexIntro") };
+  const t = await getTranslations({ locale: lang });
+  return pageMetadata({
+    locale: lang,
+    path: "/cities",
+    title: t("city.indexTitle"),
+    description: t("city.indexIntro"),
+    siteName: t("site.name"),
+  });
 }
 
 export default async function CitiesPage({
@@ -78,7 +82,8 @@ export default async function CitiesPage({
                 {formatKm(openedKm, lang)}
               </p>
               <p className="text-xs text-ink-muted">
-                {t("city.openedKm")} · {t("city.projectsCount", { count: projects })}
+                {t("city.openedKm")} ·{" "}
+                {t("city.projectsCount", { count: projects })}
               </p>
             </Link>
           </li>

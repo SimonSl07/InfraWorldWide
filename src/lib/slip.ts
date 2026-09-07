@@ -111,7 +111,6 @@ export function computeSlip(lot: Lot, nowMonth: number): Slip | null {
   };
 }
 
-/** Absolute month index for "now", from a Date. */
-export function currentMonth(now: Date): number {
-  return now.getUTCFullYear() * 12 + now.getUTCMonth();
-}
+// The definition lives beside monthIndex, where the month scale is set; the
+// pages that measure slip keep importing it from here.
+export { currentMonth } from "./contract";

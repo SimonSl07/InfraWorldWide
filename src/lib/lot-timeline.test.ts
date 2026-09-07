@@ -177,7 +177,10 @@ describe("constructionProgress", () => {
 
   it("has nothing to say without contract terms", () => {
     expect(
-      constructionProgress(lot({ dates: { constructionStart: "2024-01" } }), NOW),
+      constructionProgress(
+        lot({ dates: { constructionStart: "2024-01" } }),
+        NOW,
+      ),
     ).toBeNull();
   });
 

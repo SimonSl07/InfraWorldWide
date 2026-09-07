@@ -58,20 +58,17 @@ describe("sortProjects", () => {
   });
 
   it("breaks a tie by name, so the order never wobbles between renders", () => {
-    const tied = sortProjects(
-      [rows[1], rows[2]],
-      "length",
-      { keyOf, locale: "en" },
-    );
+    const tied = sortProjects([rows[1], rows[2]], "length", {
+      keyOf,
+      locale: "en",
+    });
     expect(ids(tied)).toEqual(["ro-a1", "bg-a2"]);
   });
 
   it("groups by country, then by name inside it", () => {
-    expect(ids(sortProjects(rows, "country", { keyOf, locale: "en" }))).toEqual([
-      "bg-a2",
-      "ro-a1",
-      "ro-a3",
-    ]);
+    expect(ids(sortProjects(rows, "country", { keyOf, locale: "en" }))).toEqual(
+      ["bg-a2", "ro-a1", "ro-a3"],
+    );
   });
 
   it("leaves the input array alone", () => {

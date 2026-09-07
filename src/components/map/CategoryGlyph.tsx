@@ -59,7 +59,14 @@ export default function CategoryGlyph({
       )}
       {category === "bridge" && (
         <>
-          <line x1="1" y1="5" x2="29" y2="5" stroke={stroke} strokeWidth="3.5" />
+          <line
+            x1="1"
+            y1="5"
+            x2="29"
+            y2="5"
+            stroke={stroke}
+            strokeWidth="3.5"
+          />
           {[9, 21].map((x) => (
             <line
               key={x}

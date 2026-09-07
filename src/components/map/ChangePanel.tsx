@@ -55,7 +55,11 @@ export default function ChangePanel({
   const recent = useMemo(
     () =>
       [...delta.lots]
-        .sort((a, b) => (b.openedMonth ?? b.expectedOpeningMonth ?? 0) - (a.openedMonth ?? a.expectedOpeningMonth ?? 0))
+        .sort(
+          (a, b) =>
+            (b.openedMonth ?? b.expectedOpeningMonth ?? 0) -
+            (a.openedMonth ?? a.expectedOpeningMonth ?? 0),
+        )
         .slice(0, 8),
     [delta],
   );
@@ -104,7 +108,9 @@ export default function ChangePanel({
           already counts, the other is a forecast rather than a record. */}
       {delta.alsoCountedKm > 0 && (
         <p className="mt-1 text-[11px] text-ink-faint">
-          {t("map.changeAlsoCounted", { km: formatKm(delta.alsoCountedKm, locale) })}
+          {t("map.changeAlsoCounted", {
+            km: formatKm(delta.alsoCountedKm, locale),
+          })}
         </p>
       )}
       {ahead && delta.projectedKm > 0 && (
@@ -134,7 +140,7 @@ export default function ChangePanel({
                 <button
                   type="button"
                   onClick={() => onSelect(lot)}
-                  className="flex w-full cursor-pointer items-start gap-2 rounded px-1 py-1 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus:outline-none"
+                  className="flex w-full cursor-pointer items-start gap-2 rounded px-1 py-1 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus"
                 >
                   <span className="mt-0.5">
                     <CategoryGlyph category={lot.category} />

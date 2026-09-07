@@ -45,7 +45,9 @@ function* walk(dir: string): Generator<string> {
 function loadProjects(root: string, country: string | undefined): Project[] {
   const projects: Project[] = [];
   for (const file of walk(path.join(root, "data/projects"))) {
-    const parsed = projectSchema.safeParse(JSON.parse(fs.readFileSync(file, "utf8")));
+    const parsed = projectSchema.safeParse(
+      JSON.parse(fs.readFileSync(file, "utf8")),
+    );
     if (!parsed.success) continue;
     if (country && parsed.data.country !== country) continue;
     projects.push(parsed.data);
@@ -97,17 +99,20 @@ function main() {
     awards?: TedNotice[];
   };
   const notices = harvest.awards ?? [];
-  const country = (arg("--country") ?? harvest.country ?? "").toLowerCase() || undefined;
+  const country =
+    (arg("--country") ?? harvest.country ?? "").toLowerCase() || undefined;
   const projects = loadProjects(root, country);
 
   const rows = matchNotices(notices, projects, {
     maxPerNotice: Number(arg("--max-per-notice", "3")),
-    minConfidence: (arg("--min", "low") as Exclude<MatchConfidence, "none">) ?? "low",
+    minConfidence:
+      (arg("--min", "low") as Exclude<MatchConfidence, "none">) ?? "low",
   });
 
   if (arg("--format", "csv") === "table") {
     const counts: Record<string, number> = {};
-    for (const row of rows) counts[row.confidence] = (counts[row.confidence] ?? 0) + 1;
+    for (const row of rows)
+      counts[row.confidence] = (counts[row.confidence] ?? 0) + 1;
     for (const row of rows) {
       console.log(
         `${row.confidence.padEnd(6)} ${String(row.score).padEnd(6)} ${`${row.project}/${row.lot}`.padEnd(44)} ${row.publicationNumber.padEnd(12)} ${row.wouldAdd.join(" ") || "(nothing new)"}`,
@@ -123,12 +128,15 @@ function main() {
     console.log(
       `${new Set(rows.map((r) => r.publicationNumber)).size} of ${notices.length} notices matched something.`,
     );
-    console.log("Every row needs a human. Nothing here is written to data/projects.");
+    console.log(
+      "Every row needs a human. Nothing here is written to data/projects.",
+    );
     return;
   }
 
   const lines = [COLUMNS.join(",")];
-  for (const row of rows) lines.push(COLUMNS.map((c) => csvCell(row[c])).join(","));
+  for (const row of rows)
+    lines.push(COLUMNS.map((c) => csvCell(row[c])).join(","));
   process.stdout.write(`${lines.join("\n")}\n`);
 }
 

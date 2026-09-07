@@ -9,6 +9,8 @@ import {
   pickedOutlineWidth,
 } from "@/lib/map-style";
 import { hoveredCountry } from "@/lib/map-click";
+import { mapColorsFor } from "@/lib/map-theme";
+import { usePrefersDark } from "./map/useColorScheme";
 import StaticGeoMap from "./map/StaticGeoMap";
 
 const FILL_LAYER = "picker-fill";
@@ -32,6 +34,10 @@ export default function CountryPickerMap({
   disabled?: boolean;
 }) {
   const [hovered, setHovered] = useState<string | null>(null);
+  // MapLibre paint values cannot read a CSS custom property, so the
+  // canvas is told which palette to draw with.
+  const prefersDark = usePrefersDark();
+  const theme = mapColorsFor(prefersDark);
 
   function handleClick(e: MapMouseEvent) {
     const code = hoveredCountry((e.features ?? []) as Feature[]);
@@ -64,7 +70,7 @@ export default function CountryPickerMap({
             id={FILL_LAYER}
             type="fill"
             paint={{
-              "fill-color": pickedFillColor(picked),
+              "fill-color": pickedFillColor(picked, theme),
               "fill-opacity": pickedFillOpacity(picked, hovered),
             }}
           />
@@ -72,7 +78,7 @@ export default function CountryPickerMap({
             id="picker-outline"
             type="line"
             paint={{
-              "line-color": "#0f172a",
+              "line-color": theme.pickerOutline,
               "line-width": pickedOutlineWidth(picked),
               "line-opacity": 0.6,
             }}

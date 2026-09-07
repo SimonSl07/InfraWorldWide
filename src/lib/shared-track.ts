@@ -36,22 +36,3 @@ export function summarizeSharedTrack(projects: Project[]): SharedTrackTotal {
   }
   return total;
 }
-
-/**
- * The same totals per country, keyed by the country of the line that borrows
- * the track. Validation already requires both lines to sit in one country.
- */
-export function sharedTrackByCountry(
-  projects: Project[],
-): Record<string, SharedTrackTotal> {
-  const out: Record<string, SharedTrackTotal> = {};
-  for (const project of projects) {
-    const total = summarizeSharedTrack([project]);
-    if (total.lots === 0) continue;
-    const current = out[project.country] ?? empty();
-    current.lots += total.lots;
-    current.km += total.km;
-    out[project.country] = current;
-  }
-  return out;
-}

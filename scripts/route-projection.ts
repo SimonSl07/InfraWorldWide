@@ -53,7 +53,10 @@ export function chainageOf(p: LngLat, ref: Reference): number {
     const t =
       lenSq === 0
         ? 0
-        : Math.max(0, Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / lenSq));
+        : Math.max(
+            0,
+            Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / lenSq),
+          );
     const proj: LngLat = [a[0] + t * dx, a[1] + t * dy];
     const d = dist(p, proj);
     if (d < bestD) {
@@ -75,7 +78,10 @@ function lateralOf(p: LngLat, ref: Reference): number {
     const t =
       lenSq === 0
         ? 0
-        : Math.max(0, Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / lenSq));
+        : Math.max(
+            0,
+            Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / lenSq),
+          );
     bestD = Math.min(bestD, dist(p, [a[0] + t * dx, a[1] + t * dy]));
   }
   return bestD;

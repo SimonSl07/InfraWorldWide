@@ -6,9 +6,10 @@ import {
   unregisteredFirms,
   type ContractorProfile,
 } from "@/lib/contractor-directory";
-import { countryName, flagEmoji } from "@/lib/country-names";
+import { countryName } from "@/lib/country-names";
 import { formatKm, formatMonths, formatPercent } from "@/lib/format";
 import { pageMetadata } from "@/lib/page-metadata";
+import { CountryLabel } from "@/components/ui/CountryLabel";
 import { loadContractorProfiles } from "./profiles";
 
 export async function generateMetadata({
@@ -76,10 +77,13 @@ export default async function ContractorsPage({
   const countriesCell = (profile: ContractorProfile) => (
     <span className="text-ink-soft">
       {profile.countries.map((code) => (
-        <span key={code} title={countryName(code, lang)} className="mr-1">
-          <span aria-hidden>{flagEmoji(code)}</span>
-          <span className="sr-only">{countryName(code, lang)}</span>
-        </span>
+        <CountryLabel
+          key={code}
+          code={code}
+          name={countryName(code, lang)}
+          srOnlyName
+          className="mr-1"
+        />
       ))}
     </span>
   );
@@ -87,9 +91,7 @@ export default async function ContractorsPage({
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8">
       <h1 className="text-3xl font-bold">{t("contractors.title")}</h1>
-      <p className="mt-2 max-w-3xl text-ink-soft">
-        {t("contractors.intro")}
-      </p>
+      <p className="mt-2 max-w-3xl text-ink-soft">{t("contractors.intro")}</p>
 
       <div className="mt-4 max-w-3xl space-y-2 rounded-md border border-line bg-surface-sunken px-4 py-3 text-sm text-ink-soft">
         <p>{t("contractors.builderOnly")}</p>
@@ -127,19 +129,34 @@ export default async function ContractorsPage({
                     <th scope="col" className="py-2 pr-4 font-medium">
                       {t("contractors.thFirm")}
                     </th>
-                    <th scope="col" className="py-2 pl-4 text-right font-medium">
+                    <th
+                      scope="col"
+                      className="py-2 pl-4 text-right font-medium"
+                    >
                       {t("rankings.thLots")}
                     </th>
-                    <th scope="col" className="py-2 pl-4 text-right font-medium">
+                    <th
+                      scope="col"
+                      className="py-2 pl-4 text-right font-medium"
+                    >
                       {t("rankings.thKm")}
                     </th>
-                    <th scope="col" className="py-2 pl-4 text-right font-medium">
+                    <th
+                      scope="col"
+                      className="py-2 pl-4 text-right font-medium"
+                    >
                       {t("rankings.thMedianSlip")}
                     </th>
-                    <th scope="col" className="py-2 pl-4 text-right font-medium">
+                    <th
+                      scope="col"
+                      className="py-2 pl-4 text-right font-medium"
+                    >
                       {t("rankings.thOnTime")}
                     </th>
-                    <th scope="col" className="py-2 pl-4 text-right font-medium">
+                    <th
+                      scope="col"
+                      className="py-2 pl-4 text-right font-medium"
+                    >
                       {t("rankings.thMedianOverrun")}
                     </th>
                   </tr>
@@ -164,6 +181,7 @@ export default async function ContractorsPage({
                             {formatMonths(
                               group.slip.median,
                               t("rankings.unitMonths"),
+                              lang,
                             )}
                           </span>
                         )}
@@ -179,7 +197,7 @@ export default async function ContractorsPage({
                       <td className="py-2 pl-4 text-right tabular-nums text-ink-soft">
                         {group.overrun.estimate.median === null
                           ? "–"
-                          : formatPercent(group.overrun.estimate.median)}
+                          : formatPercent(group.overrun.estimate.median, lang)}
                         <span className="ml-1 text-[10px] text-ink-faint">
                           n={group.overrun.estimate.n}
                         </span>
@@ -212,10 +230,16 @@ export default async function ContractorsPage({
                     <th scope="col" className="py-2 pr-4 font-medium">
                       {t("contractors.thFirm")}
                     </th>
-                    <th scope="col" className="py-2 pl-4 text-right font-medium">
+                    <th
+                      scope="col"
+                      className="py-2 pl-4 text-right font-medium"
+                    >
                       {t("rankings.thLots")}
                     </th>
-                    <th scope="col" className="py-2 pl-4 text-right font-medium">
+                    <th
+                      scope="col"
+                      className="py-2 pl-4 text-right font-medium"
+                    >
                       {t("rankings.thKm")}
                     </th>
                     <th scope="col" className="py-2 pl-4 text-left font-medium">

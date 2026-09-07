@@ -42,8 +42,16 @@ describe("centerline", () => {
     // Two parallel carriageways at y=+0.01 and y=-0.01, given as separate
     // strands in arbitrary order (like OSM ways).
     const vertices: LngLat[] = [
-      [0, 0.01], [1, 0.01], [2, 0.01], [3, 0.01], [4, 0.01],
-      [4, -0.01], [3, -0.01], [2, -0.01], [1, -0.01], [0, -0.01],
+      [0, 0.01],
+      [1, 0.01],
+      [2, 0.01],
+      [3, 0.01],
+      [4, 0.01],
+      [4, -0.01],
+      [3, -0.01],
+      [2, -0.01],
+      [1, -0.01],
+      [0, -0.01],
     ];
     const line = centerline(vertices, ref, 0.005);
     // ordered by chainage, averaged to y≈0
@@ -59,8 +67,14 @@ describe("centerline", () => {
   it("handles out-and-back zigzag strands without doubling back", () => {
     // A corrupted stitch: forward along the route, then jumps back.
     const vertices: LngLat[] = [
-      [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], // forward
-      [4, 0.002], [2, 0.002], [0, 0.002], // back along 2nd carriageway
+      [0, 0],
+      [1, 0],
+      [2, 0],
+      [3, 0],
+      [4, 0], // forward
+      [4, 0.002],
+      [2, 0.002],
+      [0, 0.002], // back along 2nd carriageway
     ];
     const line = centerline(vertices, ref, 0.005);
     expect(line[0][0]).toBeCloseTo(0, 1);
@@ -72,7 +86,8 @@ describe("centerline", () => {
 
   it("drops vertices too far from the reference (ramps, stray ways)", () => {
     const vertices: LngLat[] = [
-      [1, 0], [2, 0],
+      [1, 0],
+      [2, 0],
       [2, 1.5], // 1.5° off-route — excluded by lateral threshold
     ];
     const line = centerline(vertices, ref, 0.005);
@@ -112,19 +127,31 @@ describe("insertVias", () => {
 describe("sliceByChainage", () => {
   it("returns the middle portion between two waypoints", () => {
     const line: LngLat[] = [
-      [0, 0], [1, 0], [2, 0], [3, 0], [4, 0],
+      [0, 0],
+      [1, 0],
+      [2, 0],
+      [3, 0],
+      [4, 0],
     ];
     const out = sliceByChainage(line, ref, [0.9, 0.3], [3.1, -0.2]);
     expect(out).toEqual([
-      [1, 0], [2, 0], [3, 0],
+      [1, 0],
+      [2, 0],
+      [3, 0],
     ]);
   });
   it("works with reversed endpoints", () => {
     const line: LngLat[] = [
-      [0, 0], [1, 0], [2, 0], [3, 0], [4, 0],
+      [0, 0],
+      [1, 0],
+      [2, 0],
+      [3, 0],
+      [4, 0],
     ];
     expect(sliceByChainage(line, ref, [3.1, 0], [0.9, 0])).toEqual([
-      [1, 0], [2, 0], [3, 0],
+      [1, 0],
+      [2, 0],
+      [3, 0],
     ]);
   });
 });

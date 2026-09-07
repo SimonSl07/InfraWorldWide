@@ -6,16 +6,17 @@ import {
   findContractorProfile,
 } from "@/lib/contractor-directory";
 import type { LotMetric } from "@/lib/rankings";
-import { countryName, flagEmoji } from "@/lib/country-names";
+import { countryName } from "@/lib/country-names";
 import {
   formatKm,
   formatMonth,
   formatMonths,
   formatPercent,
 } from "@/lib/format";
-import { categoryVar } from "@/lib/map-theme";
 import { createLocalizer } from "@/lib/localized";
 import { pageMetadata } from "@/lib/page-metadata";
+import { CountryLabel } from "@/components/ui/CountryLabel";
+import { SectionLink } from "@/components/ui/SectionLink";
 import { loadContractorProfiles } from "../profiles";
 
 export function generateStaticParams() {
@@ -55,29 +56,20 @@ export default async function ContractorPage({
   const ranking = profile.ranking;
 
   const sectionLink = (metric: LotMetric) => (
-    <Link
-      href={`/projects/${metric.projectId}`}
-      className="flex items-baseline gap-2 hover:underline underline-offset-2"
-    >
-      <span
-        className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
-        style={{ backgroundColor: categoryVar(metric.category) }}
-      />
-      <span>
-        <span className="text-ink-muted">{name(metric.projectName)}</span>
-        <span className="text-ink-faint"> / </span>
-        <span className="font-medium">{name(metric.lotName)}</span>
-      </span>
-    </Link>
+    <SectionLink
+      projectId={metric.projectId}
+      projectName={name(metric.projectName)}
+      lotName={name(metric.lotName)}
+      category={metric.category}
+    />
   );
 
   const countryCell = (code: string) => (
-    <span className="whitespace-nowrap text-ink-soft">
-      <span aria-hidden className="mr-1">
-        {flagEmoji(code)}
-      </span>
-      {countryName(code, lang)}
-    </span>
+    <CountryLabel
+      code={code}
+      name={countryName(code, lang)}
+      className="whitespace-nowrap text-ink-soft"
+    />
   );
 
   const headline = [
@@ -94,7 +86,7 @@ export default async function ContractorPage({
       value:
         ranking?.slip.median === undefined || ranking?.slip.median === null
           ? "–"
-          : formatMonths(ranking.slip.median, t("rankings.unitMonths")),
+          : formatMonths(ranking.slip.median, t("rankings.unitMonths"), lang),
       tone:
         ranking?.slip.median != null
           ? ranking.slip.median > 0
@@ -108,7 +100,7 @@ export default async function ContractorPage({
         ranking?.overrun.estimate.median === undefined ||
         ranking?.overrun.estimate.median === null
           ? "–"
-          : formatPercent(ranking.overrun.estimate.median),
+          : formatPercent(ranking.overrun.estimate.median, lang),
     },
   ];
 
@@ -132,7 +124,7 @@ export default async function ContractorPage({
       {!profile.registered && (
         <div className="mt-4 max-w-3xl rounded-md border border-warn bg-warn-soft px-4 py-3 text-sm text-warn">
           <p className="font-semibold">{t("contractors.registryGapTitle")}</p>
-          <p className="mt-1">{t("contractors.unregisteredBadge")}.</p>
+          <p className="mt-1">{t("contractors.unregisteredBadge")}</p>
         </div>
       )}
 
@@ -245,6 +237,7 @@ export default async function ContractorPage({
                           {formatMonths(
                             metric.slip.slipMonths,
                             t("rankings.unitMonths"),
+                            lang,
                           )}
                         </span>
                       )}

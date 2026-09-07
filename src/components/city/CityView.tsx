@@ -110,7 +110,7 @@ export default function CityView({
                   href={`/projects/${project.id}`}
                   className={`block h-full rounded-xl border p-5 transition-colors ${
                     on
-                      ? "border-inverse bg-warn-soft ring-2 ring-amber-300"
+                      ? "border-inverse bg-warn-soft ring-2 ring-warn"
                       : "border-line hover:border-inverse"
                   }`}
                 >

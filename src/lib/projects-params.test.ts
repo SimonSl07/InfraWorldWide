@@ -1,11 +1,19 @@
 import { describe, it, expect } from "vitest";
 import {
-  emptyProjectsParams,
   parseProjectsParams,
   serializeProjectsParams,
+  type ProjectsParams,
 } from "./projects-params";
 
 const COUNTRIES = ["ro", "bg", "rs"];
+/** What a bare URL parses to: nothing filtered, the default sort. */
+const EMPTY: ProjectsParams = {
+  query: "",
+  country: null,
+  category: null,
+  status: null,
+  sort: "name",
+};
 const parse = (search: string, lockedCountry?: string) =>
   parseProjectsParams(search, { countries: COUNTRIES, lockedCountry });
 
@@ -21,7 +29,7 @@ describe("parseProjectsParams", () => {
   });
 
   it("returns the empty state for a bare URL", () => {
-    expect(parse("")).toEqual(emptyProjectsParams());
+    expect(parse("")).toEqual(EMPTY);
   });
 
   it("drops a country that is not in the data", () => {
@@ -51,23 +59,23 @@ describe("serializeProjectsParams", () => {
   it("writes only what differs from the empty state", () => {
     expect(
       serializeProjectsParams({
-        ...emptyProjectsParams(),
+        ...EMPTY,
         category: "railway",
       }),
     ).toBe("cat=railway");
   });
 
   it("writes nothing when no filter is set", () => {
-    expect(serializeProjectsParams(emptyProjectsParams())).toBe("");
+    expect(serializeProjectsParams(EMPTY)).toBe("");
   });
 
   it("leaves the default sort out of the URL", () => {
-    const state = { ...emptyProjectsParams(), sort: "name" as const };
+    const state = { ...EMPTY, sort: "name" as const };
     expect(serializeProjectsParams(state)).toBe("");
   });
 
   it("omits the country the page already fixes", () => {
-    const state = { ...emptyProjectsParams(), country: "ro" };
+    const state = { ...EMPTY, country: "ro" };
     expect(serializeProjectsParams(state, { lockedCountry: "ro" })).toBe("");
   });
 

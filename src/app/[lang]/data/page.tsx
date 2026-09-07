@@ -7,6 +7,7 @@ import {
 import { EXTERNAL_LINKS } from "@/lib/links";
 import { formatDate } from "@/lib/format";
 import { pageMetadata } from "@/lib/page-metadata";
+import { ExternalLink } from "@/components/ui/ExternalLink";
 
 /** Where the generated JSON Schema files live in the repository. */
 const SCHEMA_DIR = `${EXTERNAL_LINKS.repo}/blob/main/schema`;
@@ -127,14 +128,12 @@ export default async function DataPage({
                   </td>
                   <td className="py-3 text-ink-soft">
                     {endpoint.schema ? (
-                      <a
+                      <ExternalLink
                         href={`${SCHEMA_DIR}/${endpoint.schema}`}
-                        target="_blank"
-                        rel="noreferrer"
                         className="whitespace-nowrap underline underline-offset-2 hover:text-ink"
                       >
                         {endpoint.schema}
-                      </a>
+                      </ExternalLink>
                     ) : (
                       <span className="text-ink-faint">
                         {t("dataPage.schemaNone")}
@@ -194,23 +193,19 @@ export default async function DataPage({
             ))}
           </ul>
           <p>
-            <a
+            <ExternalLink
               href={EXTERNAL_LINKS.openStreetMap}
-              target="_blank"
-              rel="noreferrer"
               className="underline underline-offset-2 hover:text-ink"
             >
               {t("dataPage.licenceAttribution")}
-            </a>
+            </ExternalLink>
             {" · "}
-            <a
+            <ExternalLink
               href={EXTERNAL_LINKS.odbl}
-              target="_blank"
-              rel="noreferrer"
               className="underline underline-offset-2 hover:text-ink"
             >
               ODbL
-            </a>
+            </ExternalLink>
           </p>
           <p className="text-ink-muted">{t("dataPage.licenceTables")}</p>
         </div>

@@ -111,10 +111,14 @@ export async function POST(request: Request) {
   const webhookUrl = process.env.FEEDBACK_WEBHOOK_URL;
   if (!webhookUrl) {
     if (process.env.NODE_ENV === "production") {
-      console.error("[feedback] FEEDBACK_WEBHOOK_URL is not set; refusing the report");
+      console.error(
+        "[feedback] FEEDBACK_WEBHOOK_URL is not set; refusing the report",
+      );
       return NextResponse.json({ error: "not_configured" }, { status: 503 });
     }
-    console.info(`[feedback] no FEEDBACK_WEBHOOK_URL set, logging instead:\n${content}`);
+    console.info(
+      `[feedback] no FEEDBACK_WEBHOOK_URL set, logging instead:\n${content}`,
+    );
     return NextResponse.json({ ok: true, delivered: false });
   }
 

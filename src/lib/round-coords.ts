@@ -53,5 +53,8 @@ export function roundGeometry<T>(
     };
   }
   if (source.coordinates === undefined) return geometry;
-  return { ...geometry, coordinates: roundNested(source.coordinates, decimals) };
+  return {
+    ...geometry,
+    coordinates: roundNested(source.coordinates, decimals),
+  };
 }

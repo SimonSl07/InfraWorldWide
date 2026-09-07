@@ -13,11 +13,6 @@ import MapLegend from "./MapLegend";
 import StaticGeoMap from "./StaticGeoMap";
 
 interface ProjectMiniMapProps {
-  /**
-   * Accepted for callers that still pass it. The geometry now comes from
-   * the project's own file, so the country is no longer needed to find it.
-   */
-  country?: string;
   projectId: string;
   category: Category;
 }

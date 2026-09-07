@@ -43,10 +43,16 @@ export function dataYearRange(
   return { first: Math.min(...years), last: Math.max(...years) };
 }
 
+/**
+ * Window for "opened recently", in years. The homepage prints this same
+ * constant in the caption, so the figure and its label cannot drift apart.
+ */
+export const RECENT_YEARS = 20;
+
 export function computeStats(
   projects: Project[],
   nowYear: number,
-  recentYears = 20,
+  recentYears = RECENT_YEARS,
 ): ProjectStats {
   let openedKm = 0;
   let recentOpenedKm = 0;

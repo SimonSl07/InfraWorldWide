@@ -1,5 +1,8 @@
 import { describe, it, expect } from "vitest";
-import { countryPerformance, findCountryPerformance } from "./country-performance";
+import {
+  countryPerformance,
+  findCountryPerformance,
+} from "./country-performance";
 import { collectLotMetrics } from "./rankings";
 import { createContractorResolver } from "./contractors";
 import { createDeflator } from "./deflator";

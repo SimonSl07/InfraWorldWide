@@ -19,15 +19,28 @@ const HICP_SAMPLE = {
   label: "HICP - annual data (average index and rate of change) (1996-2025)",
   source: "ESTAT",
   updated: "2026-02-06T23:00:00+0100",
-  value: { "0": 134.15, "1": 137.63, "2": 142.5, "3": 144.2, "4": 151.1, "5": 157.3 },
+  value: {
+    "0": 134.15,
+    "1": 137.63,
+    "2": 142.5,
+    "3": 144.2,
+    "4": 151.1,
+    "5": 157.3,
+  },
   status: { "3": "d", "4": "d", "5": "d" },
   id: ["freq", "unit", "coicop", "geo", "time"],
   size: [1, 1, 1, 2, 3],
   dimension: {
-    freq: { label: "Time frequency", category: { index: { A: 0 }, label: { A: "Annual" } } },
+    freq: {
+      label: "Time frequency",
+      category: { index: { A: 0 }, label: { A: "Annual" } },
+    },
     unit: {
       label: "Unit of measure",
-      category: { index: { INX_A_AVG: 0 }, label: { INX_A_AVG: "Annual average index" } },
+      category: {
+        index: { INX_A_AVG: 0 },
+        label: { INX_A_AVG: "Annual average index" },
+      },
     },
     coicop: {
       label: "Classification of individual consumption by purpose (COICOP)",
@@ -35,7 +48,10 @@ const HICP_SAMPLE = {
     },
     geo: {
       label: "Geopolitical entity (reporting)",
-      category: { index: { BG: 0, RS: 1 }, label: { BG: "Bulgaria", RS: "Serbia" } },
+      category: {
+        index: { BG: 0, RS: 1 },
+        label: { BG: "Bulgaria", RS: "Serbia" },
+      },
     },
     time: {
       label: "Time",
@@ -81,7 +97,11 @@ describe("parseJsonStat", () => {
   it("reads a series per category of the chosen dimension", () => {
     const series = parseJsonStat(HICP_SAMPLE, "geo");
     expect(Object.keys(series).sort()).toEqual(["BG", "RS"]);
-    expect(series.BG).toEqual({ "2023": 134.15, "2024": 137.63, "2025": 142.5 });
+    expect(series.BG).toEqual({
+      "2023": 134.15,
+      "2024": 137.63,
+      "2025": 142.5,
+    });
     expect(series.RS).toEqual({ "2023": 144.2, "2024": 151.1, "2025": 157.3 });
   });
 
@@ -111,11 +131,17 @@ describe("parseEcbCsv", () => {
   it("does not split a quoted field containing commas", () => {
     // TITLE_COMPL holds "…, 2:15 pm (C.E.T.)". Splitting naively shifts every
     // later column and silently reads the wrong one.
-    expect(parseEcbCsv(ECB_SAMPLE).BGN["2001"]).toBeCloseTo(1.9481913385827, 10);
+    expect(parseEcbCsv(ECB_SAMPLE).BGN["2001"]).toBeCloseTo(
+      1.9481913385827,
+      10,
+    );
   });
 
   it("ignores rows that are not annual observations", () => {
-    const monthly = ECB_SAMPLE.replace(",A,BGN,EUR,SP00,A,2000,", ",M,BGN,EUR,SP00,A,2000-01,");
+    const monthly = ECB_SAMPLE.replace(
+      ",A,BGN,EUR,SP00,A,2000,",
+      ",M,BGN,EUR,SP00,A,2000-01,",
+    );
     expect(parseEcbCsv(monthly).BGN["2000"]).toBeUndefined();
   });
 
@@ -126,7 +152,9 @@ describe("parseEcbCsv", () => {
 
 describe("roundSeries", () => {
   it("rounds to the precision the committed tables are kept at", () => {
-    expect(roundSeries({ "2000": 1.9477448275862, "2025": 1.1299831372549 }, 4)).toEqual({
+    expect(
+      roundSeries({ "2000": 1.9477448275862, "2025": 1.1299831372549 }, 4),
+    ).toEqual({
       "2000": 1.9477,
       "2025": 1.13,
     });
@@ -152,14 +180,19 @@ describe("diffSeries", () => {
   });
 
   it("ignores float noise, but not a revision at the published precision", () => {
-    expect(diffSeries({ "2024": 1.0824 }, { "2024": 1.0824 + 1e-13 })).toEqual([]);
+    expect(diffSeries({ "2024": 1.0824 }, { "2024": 1.0824 + 1e-13 })).toEqual(
+      [],
+    );
     expect(diffSeries({ "2024": 1.0824 }, { "2024": 1.0825 })).toHaveLength(1);
   });
 });
 
 describe("formatSeriesDiff", () => {
   it("prints one line per change under the series name", () => {
-    const text = formatSeriesDiff("USD", diffSeries({ "2024": 1.08 }, { "2025": 1.13 }));
+    const text = formatSeriesDiff(
+      "USD",
+      diffSeries({ "2024": 1.08 }, { "2025": 1.13 }),
+    );
     expect(text).toContain("USD");
     expect(text).toContain("+ 2025: 1.13");
     expect(text).toContain("- 2024: 1.08");

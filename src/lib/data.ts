@@ -1,5 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
+import {
+  createAnalysisContext,
+  type AnalysisContext,
+} from "./analysis-context";
+import {
+  buildContractorDirectory,
+  type ContractorProfile,
+} from "./contractor-directory";
+import { collectLotMetrics, type LotMetric } from "./rankings";
 import type {
   CityTable,
   ContractorRegistry,
@@ -80,24 +89,8 @@ export function getProject(id: string): Project | undefined {
   return getProjects().find((p) => p.id === id);
 }
 
-/** One city by the key `Project.city` references, or undefined. */
-export function getCity(key: string) {
-  return getCityTable().cities[key];
-}
-
 export function getCountries(): string[] {
   return [...new Set(getProjects().map((p) => p.country))].sort();
-}
-
-/**
- * Projects shown on the main map: everything not scoped to a city.
- *
- * The main map is a country-scale view. A metro line drawn at that zoom is
- * a few pixels of noise sitting on top of the motorway network, so city
- * work lives on the city's own page instead.
- */
-export function getMapProjects(): Project[] {
-  return getProjects().filter((p) => !p.city);
 }
 
 /** Projects belonging to one city. */
@@ -133,4 +126,68 @@ export function getProgrammeTable(): ProgrammeTable {
 
 export function getOperatorTable(): OperatorTable {
   return readArtifact<OperatorTable>("operators.json");
+}
+
+/**
+ * The derived analysis, memoized the way the artifacts above are.
+ *
+ * A full static build renders every project, country and contractor page in
+ * two locales, and each render used to rebuild the deflator, the converter,
+ * the resolver and every lot's metrics from scratch. The contractor pages
+ * did it three times per profile (params, metadata, page) for about a
+ * hundred profiles. The inputs are the artifacts, which never change while
+ * the process lives, and "now" as a month index, which is the only thing
+ * that can differ between calls. So the month is the key, and outside a build
+ * that straddles midnight on the first there is one entry.
+ */
+const analyses = new Map<number, AnalysisContext>();
+const lotMetrics = new Map<number, LotMetric[]>();
+const contractorProfiles = new Map<number, ContractorProfile[]>();
+
+function memoByMonth<T>(
+  cache: Map<number, T>,
+  nowMonth: number,
+  build: () => T,
+): T {
+  const cached = cache.get(nowMonth);
+  if (cached !== undefined) return cached;
+  const built = build();
+  cache.set(nowMonth, built);
+  return built;
+}
+
+/** The one price basis every page compares costs on. */
+export function getAnalysisContext(nowMonth: number): AnalysisContext {
+  return memoByMonth(analyses, nowMonth, () =>
+    createAnalysisContext({
+      deflators: getDeflators(),
+      fx: getFxTable(),
+      contractors: getContractors(),
+      nowMonth,
+    }),
+  );
+}
+
+/**
+ * Every lot's measured outcomes, on that basis. Callers filter this rather
+ * than collecting metrics for a subset: a project page and the rankings must
+ * show the same figure for the same lot.
+ */
+export function getLotMetrics(nowMonth: number): LotMetric[] {
+  return memoByMonth(lotMetrics, nowMonth, () =>
+    collectLotMetrics(
+      getProjects(),
+      getAnalysisContext(nowMonth).metricsOptions,
+    ),
+  );
+}
+
+/** One profile per firm named anywhere in the data, on the same basis. */
+export function getContractorProfiles(nowMonth: number): ContractorProfile[] {
+  return memoByMonth(contractorProfiles, nowMonth, () =>
+    buildContractorDirectory(getProjects(), {
+      ...getAnalysisContext(nowMonth).metricsOptions,
+      registry: getContractors(),
+    }),
+  );
 }

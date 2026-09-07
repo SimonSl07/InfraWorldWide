@@ -53,9 +53,7 @@ export function geometryBounds(
 
 /** Bounding box of a feature collection; null when empty. */
 export function geojsonBounds(fc: FeatureCollection): BBox | null {
-  return boundsOf(
-    fc.features.flatMap((f) => (f.geometry ? [f.geometry] : [])),
-  );
+  return boundsOf(fc.features.flatMap((f) => (f.geometry ? [f.geometry] : [])));
 }
 
 const EARTH_RADIUS_KM = 6371.0088;
@@ -91,14 +89,6 @@ export function lineLength(
   return km;
 }
 
-/** Features belonging to one project. */
-export function featuresForProject(
-  fc: FeatureCollection,
-  projectId: string,
-): Feature[] {
-  return fc.features.filter((f) => f.properties?.projectId === projectId);
-}
-
 /** Middle vertex of a line by vertex count (fine for short bridge lines). */
 export function lineMidpoint(coords: Position[]): Position | null {
   if (coords.length === 0) return null;
@@ -113,7 +103,10 @@ function pointToSegment(p: Position, a: Position, b: Position): number {
   const t =
     lenSq === 0
       ? 0
-      : Math.max(0, Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / lenSq));
+      : Math.max(
+          0,
+          Math.min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / lenSq),
+        );
   return Math.hypot(p[0] - (a[0] + t * dx), p[1] - (a[1] + t * dy));
 }
 
@@ -124,7 +117,8 @@ export function distanceToFeature(p: Position, feature: Feature): number {
   let prev: Position | null = null;
   for (const pos of positions(feature.geometry)) {
     if (prev) min = Math.min(min, pointToSegment(p, prev, pos));
-    else if (feature.geometry.type === "Point") min = Math.min(min, Math.hypot(p[0] - pos[0], p[1] - pos[1]));
+    else if (feature.geometry.type === "Point")
+      min = Math.min(min, Math.hypot(p[0] - pos[0], p[1] - pos[1]));
     prev = pos;
   }
   return min;

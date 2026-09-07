@@ -28,7 +28,12 @@ export const localizedStringSchema = z
   .catchall(z.string().min(1));
 export type LocalizedString = z.infer<typeof localizedStringSchema>;
 
-export const categorySchema = z.enum(["highway", "railway", "bridge", "tunnel"]);
+export const categorySchema = z.enum([
+  "highway",
+  "railway",
+  "bridge",
+  "tunnel",
+]);
 export type Category = z.infer<typeof categorySchema>;
 
 export const statusSchema = z.enum([
@@ -108,7 +113,10 @@ export const fundingSchema = z.object({
    * carries conditions and deadlines (PNRR, ISPA, a MIGA guarantee) was
    * only ever named in `detail` prose, where nothing could aggregate it.
    */
-  programme: z.string().regex(/^[a-z0-9-]+$/).optional(),
+  programme: z
+    .string()
+    .regex(/^[a-z0-9-]+$/)
+    .optional(),
   /** Share of the cost this source carries, as a fraction: 0.85 = 85%. */
   coFinancingRate: z.number().min(0).max(1).optional(),
   /** The amount this source contributes, when a figure is published. */
@@ -189,7 +197,10 @@ export const sourceSchema = z.object({
    * the relation into the title, which is what "hotnews.ro: bacau-bypass
    * (contract.totalMonths)" was doing.
    */
-  id: z.string().regex(/^[a-z0-9-]+$/).optional(),
+  id: z
+    .string()
+    .regex(/^[a-z0-9-]+$/)
+    .optional(),
   title: z.string().min(1),
   url: z.url(),
   /**
@@ -361,7 +372,10 @@ export const lotSchema = z
      * shared lot counts toward its own project's length and is excluded from
      * every total that spans projects.
      */
-    sharedWith: z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/).optional(),
+    sharedWith: z
+      .string()
+      .regex(/^[a-z]{2}-[a-z0-9-]+$/)
+      .optional(),
     /**
      * The project whose section physically contains this lot's works.
      *
@@ -378,7 +392,10 @@ export const lotSchema = z
      * its own project and must be dropped from every total that spans
      * projects, or its length and cost are counted twice.
      */
-    partOf: z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/).optional(),
+    partOf: z
+      .string()
+      .regex(/^[a-z]{2}-[a-z0-9-]+$/)
+      .optional(),
     /**
      * Prose about this lot: what the section is, how its boundaries were
      * drawn, history a date field cannot hold. Localized, because it is
@@ -447,9 +464,7 @@ function newestRevision(
  * An explicit `cost.estimated` still wins: it is what the existing data
  * carries, and back-compat is the whole reason both forms exist.
  */
-export function lotEstimatedCost(lot: {
-  cost?: LotCost;
-}): Money | null {
+export function lotEstimatedCost(lot: { cost?: LotCost }): Money | null {
   return lot.cost?.estimated ?? newestRevision(lot.cost, "estimate");
 }
 
@@ -462,7 +477,6 @@ export function lotActualCost(lot: { cost?: LotCost }): Money | null {
   return lot.cost?.actual ?? newestRevision(lot.cost, "outturn");
 }
 
-
 export const projectSchema = z.object({
   /** "<country>-<slug>", e.g. "ro-a3". */
   id: z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/),
@@ -474,7 +488,10 @@ export const projectSchema = z.object({
    * view: a metro line drawn at country zoom is a smudge that buries the
    * motorway network under it.
    */
-  city: z.string().regex(/^[a-z]{2}-[a-z0-9-]+$/).optional(),
+  city: z
+    .string()
+    .regex(/^[a-z]{2}-[a-z0-9-]+$/)
+    .optional(),
   category: categorySchema,
   name: localizedStringSchema,
   description: localizedStringSchema,
@@ -487,7 +504,10 @@ export const projectSchema = z.object({
    */
   corridors: z.array(z.string().regex(/^[a-z0-9-]+$/)).optional(),
   /** Procuring authority, keyed into data/operators.json. */
-  operator: z.string().regex(/^[a-z0-9-]+$/).optional(),
+  operator: z
+    .string()
+    .regex(/^[a-z0-9-]+$/)
+    .optional(),
   /**
    * Stations on the line as a whole, which is the figure the sources give.
    * Deliberately not on the lot: every metro description publishes a line
@@ -627,10 +647,7 @@ export const citySchema = z.object({
   populationDate: dateStringSchema,
   gdpPerCapita: perCapitaMoneySchema.optional(),
   /** [longitude, latitude] of the city centre, for the map camera. */
-  center: z.tuple([
-    z.number().min(-180).max(180),
-    z.number().min(-90).max(90),
-  ]),
+  center: z.tuple([z.number().min(-180).max(180), z.number().min(-90).max(90)]),
   /** Best public page about the city. */
   link: z.url().optional(),
   /** Caveat shown with the figures. Localized: it is prose for the reader. */
@@ -654,7 +671,10 @@ export const contractorEntrySchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(1),
   aliases: z.array(z.string().min(1)).optional(),
-  members: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(2).optional(),
+  members: z
+    .array(z.string().regex(/^[a-z0-9-]+$/))
+    .min(2)
+    .optional(),
   note: z.string().min(1).optional(),
 });
 export type ContractorEntry = z.infer<typeof contractorEntrySchema>;

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { baseOnlyConverter, coveredYears, createConverter } from "./fx";
+import { createConverter } from "./fx";
 import type { FxTable, Money } from "./schema";
 
 const table: FxTable = {
@@ -76,23 +76,5 @@ describe("createConverter", () => {
       ok: false,
       reason: "year_out_of_range",
     });
-  });
-});
-
-describe("baseOnlyConverter", () => {
-  it("passes the base currency and refuses everything else", () => {
-    const convert = baseOnlyConverter("EUR");
-    expect(convert(money(10, "EUR", 2020)).ok).toBe(true);
-    expect(convert(money(10, "RON", 2020)).ok).toBe(false);
-  });
-});
-
-describe("coveredYears", () => {
-  it("lists a currency's years ascending", () => {
-    expect(coveredYears(table, "RON")).toEqual([2015, 2023]);
-  });
-
-  it("is empty for an unknown currency", () => {
-    expect(coveredYears(table, "HUF")).toEqual([]);
   });
 });
