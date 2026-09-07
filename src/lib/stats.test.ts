@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { computeStats, dataYearRange } from "./stats";
+import { computeStats, dataYearRange, summarizeContents } from "./stats";
 import type { Project } from "./schema";
 
 const projects = [
@@ -166,5 +166,60 @@ describe("dataYearRange", () => {
 
   it("falls back when nothing is dated", () => {
     expect(dataYearRange([], 2026)).toEqual({ first: 2026, last: 2026 });
+  });
+});
+
+describe("summarizeContents", () => {
+  it("counts sections, projects per category and cited sources", () => {
+    const withRail = [
+      ...projects,
+      {
+        id: "bg-rail",
+        country: "bg",
+        category: "railway",
+        name: { en: "Rail" },
+        description: { en: "" },
+        lots: [
+          {
+            id: "l1",
+            name: { en: "L1" },
+            status: "planned",
+            lengthKm: 10,
+            geometryRef: "l1",
+            sources: [{ title: "Lot source", url: "https://example.com/lot" }],
+          },
+        ],
+        sources: [
+          { title: "A", url: "https://example.com/a" },
+          { title: "B", url: "https://example.com/b" },
+        ],
+      },
+    ] as Project[];
+    expect(summarizeContents(withRail)).toEqual({
+      sectionCount: 5,
+      byCategory: [
+        { category: "highway", count: 1 },
+        { category: "railway", count: 1 },
+      ],
+      sourceCount: 4,
+    });
+  });
+
+  it("lists categories in schema order and leaves out empty ones", () => {
+    const tunnelFirst = [
+      { ...projects[0], id: "t", category: "tunnel" },
+      projects[0],
+    ] as Project[];
+    expect(
+      summarizeContents(tunnelFirst).byCategory.map((c) => c.category),
+    ).toEqual(["highway", "tunnel"]);
+  });
+
+  it("handles empty input", () => {
+    expect(summarizeContents([])).toEqual({
+      sectionCount: 0,
+      byCategory: [],
+      sourceCount: 0,
+    });
   });
 });
