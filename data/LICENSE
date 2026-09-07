@@ -12,11 +12,14 @@ or impose conditions on material that carries none.
 
     data/geo/ro/**, data/geo/bg/**, data/geo/rs/**
 
-and, in a build, the files those become:
+and, in a build, the files those become. Named, not templated: two other
+files sit in the same directory and are not OpenStreetMap data.
 
-    public/data/geo/{country}.geojson
-    public/data/geo/cities/{city}.geojson
-    public/data/geo/projects/{project}.geojson
+    public/data/geo/ro.geojson
+    public/data/geo/bg.geojson
+    public/data/geo/rs.geojson
+    public/data/geo/cities/*.geojson
+    public/data/geo/projects/*.geojson
 
 These lines are stitched from OpenStreetMap route relations by
 scripts/fetch-osm-geometry.ts. That makes them a Derivative Database of
@@ -50,10 +53,11 @@ them separate is why the ODbL obligation above stays confined to the routes.
 
     data/projects/**
     data/*.json
-    and the tables the build compiles from them under public/data/
+    and everything else the build writes under public/data/, which is the
+    compiled tables, geo/cities.geojson and geo/manifest.json
 
-Copyright (c) 2026 Simon Slănină and the InfraWorldWide contributors, licensed
-CC BY 4.0. Full text in LICENSE-CC-BY-4.0.txt, or at
+Copyright (c) 2026 Simon Slănină and the InfraWorldWide contributors,
+licensed CC BY 4.0. Full text in LICENSE-CC-BY-4.0.txt, or at
 https://creativecommons.org/licenses/by/4.0/
 
 Use it for anything, including commercially, as long as you credit the source
@@ -88,5 +92,7 @@ translated from one. Contributors are held to the same rule; see
 Scope in time
 -------------
 
-I am the sole author of this dataset, so these terms apply to every revision
-in the repository's history, not only to the current one.
+The dataset has had one author to date, so these terms apply to every
+revision in the repository's history and not only to the current one. A
+later contributor keeps the copyright in what they add and offers it under
+the same terms; see ../CONTRIBUTING.md.

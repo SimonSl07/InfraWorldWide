@@ -111,4 +111,4 @@ None of them run in `npm test`, and none write without being asked.
 
 Two licences, split by what the file is. Code is MIT, in `LICENSE`. Data is covered by `data/LICENSE`, which maps each path to its terms: OpenStreetMap geometry is ODbL because it has to be, the Natural Earth outlines are public domain, and everything curated here is CC BY 4.0. `data/ATTRIBUTION.md` lists every source and the credit it asks for.
 
-Opening a pull request means offering your contribution under those same terms, the code as MIT and the data as CC BY 4.0. You keep the copyright in what you wrote. Nothing else is signed, and there is no contributor agreement to sign.
+Opening a pull request means offering your contribution under whichever of those terms covers the path you touched: code as MIT, geometry as ODbL, everything else in `data/` as CC BY 4.0. You keep the copyright in what you wrote. Nothing else is signed, and there is no contributor agreement to sign.

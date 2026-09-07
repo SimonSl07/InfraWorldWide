@@ -10,7 +10,7 @@ export const EXTERNAL_LINKS = {
   github: "https://github.com/SimonSl07",
   repo: "https://github.com/SimonSl07/InfraWorldWide",
   openStreetMap: "https://www.openstreetmap.org/copyright",
-  odbl: "https://opendatacommons.org/licenses/odbl/",
+  odbl: "https://opendatacommons.org/licenses/odbl/1-0/",
   ccBy: "https://creativecommons.org/licenses/by/4.0/",
   openFreeMap: "https://openfreemap.org/",
 } as const;

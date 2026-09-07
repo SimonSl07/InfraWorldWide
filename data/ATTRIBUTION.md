@@ -18,6 +18,10 @@ licence covers which path.
 | Wikipedia, English, Romanian and Bulgarian | CC BY-SA 4.0                    | Facts only: dates, lengths, contractors, cost breakdowns                  |
 | Road and rail operators, ministries, development banks | Their own site terms | Contract awards, openings, funding decisions, cited per project           |
 | Press                               | Their own site terms                   | Award and opening reports, cited per project                              |
+| EUR-Lex and other Commission sites  | Reuse authorised with acknowledgement, Decision 2011/833/EU | The euro conversion rate fixed by Council Regulation, and corridor and funding decisions cited per project |
+| Development banks and lenders       | Their own site terms                   | Loan and guarantee decisions: EIB, EBRD, MIGA, JICA, cited per project     |
+| Contractor and consultant sites     | Their own site terms                   | Award and completion announcements from the firms themselves, cited per project |
+| Enthusiast references, urbanrail.net | All rights reserved, cited not copied | Metro line and station histories, used for facts and linked, never reproduced |
 | OpenFreeMap and OpenMapTiles        | ODbL for the underlying OSM data       | The basemap the site renders. Not part of this dataset                    |
 
 ## The notices
