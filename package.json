@@ -23,7 +23,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "data:news": "tsx scripts/fetch-news.ts"
   },
   "dependencies": {
     "maplibre-gl": "^5.24.0",
