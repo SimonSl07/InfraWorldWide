@@ -1,4 +1,8 @@
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { describe, it, expect } from "vitest";
+import { GENERATED_DIRS, checkEmDashes } from "./locale";
 import {
   collectErrors,
   checkProjectGeometry,
@@ -118,6 +122,40 @@ describe("seed data integrity", () => {
   it("has no em dash anywhere under data/ or messages/", () => {
     const { errors } = collectErrors(process.cwd(), { today: "2026-08-14" });
     expect(errors.filter((e) => e.includes("em dash"))).toEqual([]);
+  });
+
+  /**
+   * These walks read the disk, not the index, so a checkout that has run a
+   * harvester once looked different from a clean one: a news state file is
+   * headlines, a TED snapshot is notice titles, and both carry em dashes
+   * that every committed data file is forbidden. `npm test` failed on a
+   * working tree whose only sin was running the tool.
+   */
+  it("ignores the directories a harvester writes and nobody commits", () => {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), "iww-walk-"));
+    try {
+      fs.mkdirSync(path.join(root, "messages"), { recursive: true });
+      fs.writeFileSync(path.join(root, "messages", "en.json"), "{}");
+      for (const dir of GENERATED_DIRS) {
+        fs.mkdirSync(path.join(root, "data", dir), { recursive: true });
+        fs.writeFileSync(
+          path.join(root, "data", dir, "state.json"),
+          JSON.stringify({ title: "Adjud — Bacau opened" }),
+        );
+      }
+      expect(checkEmDashes(root, ["data", "messages"])).toEqual([]);
+
+      // The same file one directory over is still caught, so this skips a
+      // named list rather than switching the check off.
+      fs.mkdirSync(path.join(root, "data", "projects"), { recursive: true });
+      fs.writeFileSync(
+        path.join(root, "data", "projects", "x.json"),
+        JSON.stringify({ title: "Adjud — Bacau opened" }),
+      );
+      expect(checkEmDashes(root, ["data", "messages"])).toHaveLength(1);
+    } finally {
+      fs.rmSync(root, { recursive: true, force: true });
+    }
   });
 
   /**

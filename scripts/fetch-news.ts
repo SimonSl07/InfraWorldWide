@@ -3,13 +3,13 @@
  * article the projects cite, and writes a digest for a person to read:
  *
  *   npx tsx scripts/fetch-news.ts                                    # to stdout
- *   npx tsx scripts/fetch-news.ts --state data/news/seen.json --out reports/news.md
+ *   npx tsx scripts/fetch-news.ts --state .news/seen.json --out reports/news.md
  *   npx tsx scripts/fetch-news.ts --window 14 --retain 90
  *
  * The state file remembers which URLs a run has seen, so a feed's archive is
  * not reported as news every day; it is a record of what the feeds carried,
- * not site data, and lives outside the repo (data/news/ is gitignored; the
- * workflow keeps it in the Actions cache). The digest is a rolling window,
+ * not site data, and lives in .news/ rather than under data/. The workflow
+ * keeps it in the Actions cache. The digest is a rolling window,
  * so a reader who opens the issue once a week sees the week.
  *
  * Report, not a writer. Every line names the section it probably concerns
@@ -83,21 +83,31 @@ async function fetchFeed(url: string): Promise<FeedItem[]> {
   const res = await fetch(url, {
     headers: {
       "User-Agent": USER_AGENT,
-      Accept:
-        "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+      // Explicitly what `fetch` would send anyway, because the polite
+      // version cost real sources: clubferoviar.ro and proinfrastructura.ro
+      // answer 415 to any Accept that names a media type, including
+      // `application/rss+xml, */*`. `parseFeed` sniffs the body to decide
+      // what arrived, so naming types bought nothing.
+      Accept: "*/*",
     },
     signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const items = parseFeed(await res.text());
-  if (items.length === 0) throw new Error("no items parsed");
+  // The content type goes in the message because the usual cause is a host
+  // answering 200 with an HTML challenge page rather than the feed, and
+  // "no items parsed" alone does not say which of those happened.
+  if (items.length === 0) {
+    const type = res.headers.get("content-type")?.split(";")[0] ?? "no type";
+    throw new Error(`no items parsed (${type})`);
+  }
   return items;
 }
 
 async function main(): Promise<void> {
   const root = process.cwd();
   const today = new Date().toISOString().slice(0, 10);
-  const stateFile = arg("--state", path.join(root, "data/news/seen.json"));
+  const stateFile = arg("--state", path.join(root, ".news/seen.json"));
   const outFile = arg("--out", "");
   const windowDays = Number(arg("--window", "14"));
   const retainDays = Number(arg("--retain", "90"));
