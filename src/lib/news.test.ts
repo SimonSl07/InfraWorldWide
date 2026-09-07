@@ -4,10 +4,10 @@ import { describe, expect, it } from "vitest";
 import type { LocalizedString, Project } from "./schema";
 import { normaliseText, serbianLatin, tokenWeights } from "./ted-match";
 import {
+  EMPTY_STATE,
   daysBefore,
   decodeEntities,
   editSummary,
-  EMPTY_STATE,
   feedText,
   formatDigest,
   hasInfrastructureKeyword,
@@ -16,11 +16,12 @@ import {
   mergeState,
   newsSourcesSchema,
   parseFeed,
+  searchText,
   suggestEventKind,
-  wikipediaWatches,
-  windowItems,
   type DigestEntry,
   type StoredItem,
+  wikipediaWatches,
+  windowItems,
 } from "./news";
 
 /**
@@ -117,6 +118,7 @@ const PROJECTS: Project[] = [
     ["https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"],
   ),
   project("ro-a1", [{ id: "sibiu-pitesti", en: "Sibiu – Pitești" }], []),
+  project("rs-a5", [{ id: "pojate-krusevac", en: "Pojate – Kruševac" }], []),
 ];
 
 const WEIGHTS = tokenWeights(PROJECTS);
@@ -272,6 +274,22 @@ describe("matchItem", () => {
         (c) => c.projectId,
       ),
     ).toEqual(["ro-a1"]);
+  });
+
+  it("reaches a Serbian lot from a Cyrillic headline", () => {
+    // The whole point of the Serbian romanisation: the ministry publishes in
+    // Cyrillic and the sections are recorded in Latin.
+    const cyrillic = item("Радови на деоници Појате – Крушевац");
+    expect(
+      matchItem(cyrillic, PROJECTS, WEIGHTS, { country: "rs" }).map(
+        (c) => c.lotId,
+      ),
+    ).toContain("pojate-krusevac");
+    // Without the romanisation it reaches nothing, which is what the four
+    // Serbian feeds did before this.
+    expect(matchItem(cyrillic, PROJECTS, WEIGHTS, { country: "bg" })).toEqual(
+      [],
+    );
   });
 
   it("matches nothing for news about something else", () => {
@@ -494,7 +512,7 @@ describe("formatDigest", () => {
     expect(digest).toContain("## Cited Wikipedia articles edited");
     expect(digest).toContain("- 2026-09-07 · [Istoric](");
     expect(digest).toContain(
-      "Other infrastructure news, no section matched (1)",
+      "Other infrastructure news, no confident section match (1)",
     );
     expect(digest).toContain("- cnadnr.ro: HTTP 503");
     // The writing rule holds for generated prose too.
@@ -516,27 +534,55 @@ describe("formatDigest", () => {
 
 describe("serbianLatin", () => {
   // The Bulgarian map in ted-match gives "po ate" for Појате and
-  // "krushevats" for Крушевац, so the four Serbian official feeds could
-  // never reach a lot recorded as "Kruševac East".
+  // "krushevats" for Крушевац, so the Serbian official feeds could never
+  // reach a lot recorded as "Kruševac East".
   it("gives the Latin the Serbian data is written in", () => {
-    const pairs: Array<[string, string]> = [
-      ["Појате", "Pojate"],
-      ["Крушевац", "Kruševac"],
-      ["Обреновац", "Obrenovac"],
-      ["Сурчин", "Surčin"],
-      ["Ниш", "Niš"],
-      ["Ђердап", "Đerdap"],
-      ["Љубовија", "Ljubovija"],
-    ];
-    for (const [cyrillic, latin] of pairs) {
-      expect(normaliseText(serbianLatin(cyrillic))).toBe(normaliseText(latin));
-    }
+    // Asserted on the raw output, not through normaliseText: that folds both
+    // sides and would pass for a letter the map dropped entirely.
+    expect(serbianLatin("Појате")).toBe("pojate");
+    expect(serbianLatin("Крушевац")).toBe("kruševac");
+    expect(serbianLatin("Сурчин")).toBe("surčin");
+    expect(serbianLatin("Љубовија")).toBe("ljubovija");
+    expect(serbianLatin("Џеп")).toBe("džep");
+  });
+
+  it("writes đ as dj, which is how the data spells the same place twice", () => {
+    // The Corridor X lot is named "Đunis" and has the id "djunis". Neither
+    // reached the other before: normaliseText does not decompose đ, so it
+    // fell out and left "unis".
+    expect(serbianLatin("Ђунис")).toBe("djunis");
+    expect(normaliseText("Đunis")).toBe("djunis");
+    expect(normaliseText("djunis")).toBe("djunis");
+    expect(normaliseText(serbianLatin("Ђунис"))).toBe("djunis");
   });
 
   it("returns nothing for text that holds no Cyrillic", () => {
     // The caller appends the result, so "" is what leaves every Romanian and
     // English item scoring exactly as it did before.
     expect(serbianLatin("Autostrada A7 Adjud - Bacau")).toBe("");
+  });
+});
+
+describe("searchText", () => {
+  const feedItem = (title: string) => item(title);
+
+  it("adds the romanisation for a Serbian source and nothing else", () => {
+    const cyrillic = feedItem("Отворен за саобраћај Сурчин – Обреновац");
+    expect(searchText(cyrillic, "rs")).toContain("surčin");
+    // Bulgarian is Cyrillic too and has its own romanisation already. Adding
+    // the Serbian one would spell every Bulgarian place name a second, wrong
+    // way.
+    expect(searchText(cyrillic, "bg")).not.toContain("surčin");
+    const latin = feedItem("Autostrada A7 Adjud - Bacau");
+    expect(searchText(latin, "ro")).toBe("Autostrada A7 Adjud - Bacau ");
+  });
+
+  it("is what the event guess reads, or a Serbian opening is invisible", () => {
+    // "otvoren za saobracaj" is in EVENT_PHRASES verbatim, and the Cyrillic
+    // form reaches it only through the romanisation.
+    const opened = feedItem("Отворен за саобраћај деоница Сурчин – Обреновац");
+    expect(suggestEventKind(searchText(opened, "rs"))).toBe("opened");
+    expect(suggestEventKind(searchText(opened, "bg"))).toBeNull();
   });
 });
 

@@ -52,9 +52,16 @@ export interface TedNotice {
  * genuinely differ and one table cannot serve both, so this is a second one,
  * used only where the source is Serbian.
  *
- * Diacritics are emitted rather than folded away: `normaliseText` strips
- * them from both sides, and `đ` is a letter it does not decompose, so
- * emitting `đ` is what matches data that spells it that way.
+ * Diacritics are emitted rather than folded away, because `normaliseText`
+ * strips them from both sides. `ђ` is the exception and becomes `dj`: it is
+ * a letter, not a decomposable accent, and the data spells it both ways,
+ * `Đunis` in the name and `djunis` in the id of the same lot. `normaliseText`
+ * now folds `đ` to `dj` as well, so the name, the id and the Cyrillic all
+ * arrive at one token.
+ *
+ * Applied only where the source is Serbian. Bulgarian is Cyrillic too, and
+ * romanising it by these rules produces a second, wrong spelling of every
+ * place name in the text.
  */
 const SERBIAN_CYRILLIC: Record<string, string> = {
   а: "a",
@@ -62,7 +69,7 @@ const SERBIAN_CYRILLIC: Record<string, string> = {
   в: "v",
   г: "g",
   д: "d",
-  ђ: "đ",
+  ђ: "dj",
   е: "e",
   ж: "ž",
   з: "z",
@@ -158,6 +165,10 @@ export function normaliseText(text: string): string {
       // decompose to s and t.
       .replace(/[şŝ]/g, "s")
       .replace(/[ţ]/g, "t")
+      // A letter rather than an accent, so NFD leaves it and the class below
+      // would delete it: "Đunis" became "unis" while the same lot's id,
+      // "djunis", stayed itself, and the two never met.
+      .replace(/đ/g, "dj")
       .replace(/[^a-z0-9]+/g, " ")
       .trim()
   );

@@ -327,6 +327,26 @@ const RANK: Record<MatchConfidence, number> = {
  * "A1" names a motorway in each of the three and a Romanian paper means the
  * Romanian one.
  */
+/**
+ * The text every judgement about an item is made on.
+ *
+ * For a Serbian source the Latin romanisation rides along with the original,
+ * because Serbian sections are recorded in Latin ("Kruševac East") while the
+ * official feeds publish in Cyrillic. Scoring, the relevance filter and the
+ * event-kind guess all have to see the same string: reading "Отворен за
+ * саобраћај" without it yields no vocabulary and no suggested event, even
+ * where the phrase is in the table verbatim.
+ *
+ * Serbian only. Bulgarian is Cyrillic as well and has its own romanisation
+ * in `normaliseText`; applying the Serbian rules to it invents a second,
+ * wrong spelling of every place name.
+ */
+export function searchText(item: FeedItem, country?: string): string {
+  const raw = `${item.title} ${item.summary}`;
+  if (country !== "rs") return raw;
+  return `${raw} ${serbianLatin(raw)}`.trimEnd();
+}
+
 export function matchItem(
   item: FeedItem,
   projects: Project[],
@@ -334,13 +354,7 @@ export function matchItem(
   options: { limit?: number; country?: string } = {},
 ): LotCandidate[] {
   const { limit = 3, country } = options;
-  // The Serbian Latin form rides along with the original. Serbian sections
-  // are recorded in Latin ("Kruševac East") and the four Serbian official
-  // feeds publish in Cyrillic, so without this they match nothing at all.
-  // `serbianLatin` returns "" for text holding no Cyrillic, which is every
-  // Romanian and English item, so nothing else changes.
-  const raw = `${item.title} ${item.summary}`;
-  const text = `${raw} ${serbianLatin(raw)}`.trimEnd();
+  const text = searchText(item, country);
   const notice = {
     publicationNumber: item.url,
     publicationDate: "",
@@ -405,9 +419,10 @@ export function matchItem(
 export function isRelevant(
   item: FeedItem,
   focus: NewsSource["focus"],
+  country?: string,
 ): boolean {
   if (focus === "infrastructure") return true;
-  return hasInfrastructureKeyword(`${item.title} ${item.summary}`);
+  return hasInfrastructureKeyword(searchText(item, country));
 }
 
 /* ── Event kind ───────────────────────────────────────────────────────── */
@@ -730,7 +745,7 @@ export function formatDigest(input: DigestInput): string {
     sections.push(
       [
         "<details>",
-        `<summary>Other infrastructure news, no section matched (${unmatched.length})</summary>`,
+        `<summary>Other infrastructure news, no confident section match (${unmatched.length})</summary>`,
         "",
         ...unmatched.map(line),
         "",

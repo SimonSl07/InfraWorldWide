@@ -30,6 +30,7 @@ import {
   mergeState,
   newsSourcesSchema,
   parseFeed,
+  searchText,
   suggestEventKind,
   wikipediaWatches,
   windowItems,
@@ -187,7 +188,7 @@ async function main(): Promise<void> {
       });
       continue;
     }
-    if (!isRelevant(item, origin.focus)) continue;
+    if (!isRelevant(item, origin.focus, origin.country)) continue;
     const candidates = matchItem(item, projects, weights, {
       country: origin.country,
     });
@@ -195,7 +196,7 @@ async function main(): Promise<void> {
       item,
       sourceName: origin.name,
       candidates,
-      suggested: suggestEventKind(`${item.title} ${item.summary}`),
+      suggested: suggestEventKind(searchText(item, origin.country)),
     });
   }
 
