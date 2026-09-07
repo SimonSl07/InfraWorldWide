@@ -213,7 +213,12 @@ export default function CompareMap({
           style={{ width: "100%", height: "100%" }}
           mapStyle={styleUrl}
           locale={maplibreLocale}
-          attributionControl={false}
+          // Both panes carry it. The top pane is clipped to one side of the
+          // handle but is drawn over the whole frame, so with attribution on
+          // the bottom pane alone the credit disappears behind an opaque
+          // canvas as soon as the handle moves past it. Clipping means only
+          // one of the two is ever visible.
+          attributionControl={{ compact: true }}
           onMove={() => sync(afterRef.current, beforeRef.current)}
         >
           {pane("after")}

@@ -123,6 +123,37 @@ function main(): void {
     fs.writeFileSync(path.join(outDir, relative), JSON.stringify(value));
   }
 
+  // ODbL 4.2: a database conveyed publicly carries its licence or a link to
+  // it. These files are served at /data, so the notice has to travel with
+  // them and not only sit in the repository nobody fetching JSON will open.
+  fs.writeFileSync(
+    path.join(outDir, "LICENSE.txt"),
+    [
+      "InfraWorldWide data: terms by path",
+      "",
+      "geo/{country}.geojson, geo/cities/*.geojson, geo/projects/*.geojson",
+      "  Route geometry derived from OpenStreetMap. Open Database License",
+      "  (ODbL) 1.0: https://opendatacommons.org/licenses/odbl/1-0/",
+      "  Credit any work you make from it with:",
+      "    (c) OpenStreetMap contributors, ODbL",
+      "  Publishing altered geometry means publishing it under ODbL too.",
+      "",
+      "geo/countries.geojson",
+      "  Natural Earth 1:50m admin-0. Public domain, no conditions.",
+      "",
+      "Everything else",
+      "  Curated records and reference tables, CC BY 4.0:",
+      "  https://creativecommons.org/licenses/by/4.0/",
+      "  Credit: Data from InfraWorldWide (https://infraworldwide.com),",
+      "  CC BY 4.0. Say if you changed it.",
+      "",
+      "Individual figures come from public sources named in each record.",
+      "Full terms and the credit each source asks for:",
+      "https://github.com/SimonSl07/InfraWorldWide/blob/main/data/LICENSE",
+      "",
+    ].join("\n"),
+  );
+
   /**
    * When these artifacts were built, and from what.
    *

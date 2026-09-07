@@ -32,7 +32,7 @@ Two things that are **not** open tasks:
 
 ## Adding or editing project data
 
-1. **Find the sources first.** Romanian-language Wikipedia is consistently richer than English for per-lot contractors, contract months and award dates. Then national road authority reports, then trade press. Every project needs `sources`, and a project resting on one source is flagged.
+1. **Find the sources first.** Romanian-language Wikipedia is consistently richer than English for per-lot contractors, contract months and award dates. Take the figures, never the sentences: Wikipedia is CC BY-SA, which covers an article's wording and arrangement but not the facts in it, so a translated or closely reworded clause would drag a licence into this repository that does not belong here. Then national road authority reports, then trade press. Every project needs `sources`, and a project resting on one source is flagged.
 2. **Write the file** at `data/projects/<cc>/<slug>.json`. Add a `$schema` key pointing at `schema/project.schema.json` and your editor will validate as you type.
 3. **Geometry** comes from OpenStreetMap via `scripts/fetch-osm-geometry.ts` (see the README). It is ODbL, so the OSM attribution in the footer and an OSM entry in the project's `sources` are both mandatory.
 4. **Validate**: `npm run data:validate && npm test`.
@@ -106,3 +106,9 @@ None of them run in `npm test`, and none write without being asked.
 - `npm test`, `npm run lint`, `npm run typecheck` and `npm run format:check` all pass. `npm run format` fixes the last one.
 - If you add or update a dependency, regenerate the lockfile with the npm that CI runs: `npx npm@10.9.4 install --package-lock-only`. npm 11 (Node 24) leaves out a nested `@swc/helpers` that npm 10 (Node 22) insists on, and `npm ci` then refuses the file. This has broken CI twice.
 - If you changed anything under `src/lib`, `scripts` or `data`, run `npm test` again after rebasing: the data-integrity test (`src/lib/validation/data-integrity.test.ts`) re-validates every committed file and catches cross-file breakage that a unit test cannot.
+
+## Licensing
+
+Two licences, split by what the file is. Code is MIT, in `LICENSE`. Data is covered by `data/LICENSE`, which maps each path to its terms: OpenStreetMap geometry is ODbL because it has to be, the Natural Earth outlines are public domain, and everything curated here is CC BY 4.0. `data/ATTRIBUTION.md` lists every source and the credit it asks for.
+
+Opening a pull request means offering your contribution under those same terms, the code as MIT and the data as CC BY 4.0. You keep the copyright in what you wrote. Nothing else is signed, and there is no contributor agreement to sign.

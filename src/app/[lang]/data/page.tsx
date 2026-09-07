@@ -207,7 +207,16 @@ export default async function DataPage({
               ODbL
             </ExternalLink>
           </p>
-          <p className="text-ink-muted">{t("dataPage.licenceTables")}</p>
+          <p>
+            {t("dataPage.licenceTables")}{" "}
+            <ExternalLink
+              href={EXTERNAL_LINKS.ccBy}
+              className="underline underline-offset-2 hover:text-ink"
+            >
+              CC BY 4.0
+            </ExternalLink>
+          </p>
+          <p className="text-ink-muted">{t("dataPage.licenceSources")}</p>
         </div>
       </section>
 

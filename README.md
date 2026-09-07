@@ -318,6 +318,26 @@ Environment variables, set in the project's settings for Production (and Preview
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin, e.g. `https://example.org`, no trailing slash. Read at build time by `src/lib/seo.ts` for canonicals, hreflang, the sitemap and robots. Without it Vercel's production URL is used, which is fine until a custom domain exists. |
 | `FEEDBACK_WEBHOOK_URL` | Where `/api/feedback` forwards submissions. Production answers 503 without it.                                                                                                                                                                    |
 
-Custom domain: add it under Domains in the project settings and point DNS at Vercel (A record for the apex, CNAME for `www`), then set `NEXT_PUBLIC_SITE_URL` to it and redeploy so the baked-in URLs change. Register the domain with a registrar independent of the host; DNS is the only part of a move that is not a redeploy.
+Custom domain: add it under Domains in the project settings, then point DNS at the target Vercel gives you, which is now a per-project CNAME for both the apex and `www` (Cloudflare flattens the apex record itself; on a registrar that will not, use the A record Vercel offers instead). Set `NEXT_PUBLIC_SITE_URL` to the domain and redeploy so the baked-in URLs change. Register the domain with a registrar independent of the host; DNS is the only part of a move that is not a redeploy.
 
 Moving elsewhere: `next start` is the reference runtime, so a container needs only `output: "standalone"` in `next.config.ts` and a Dockerfile, plus the two variables above. `NEXT_PUBLIC_SITE_URL` is inlined at build, so it must be a build argument, not a runtime setting.
+
+## Licensing
+
+Two licences, because the repository holds two different things.
+
+**Code** is MIT: `src`, `scripts`, the configuration, everything that runs. See `LICENSE`.
+
+**Data** is not one licence, because the files have three origins and flattening them would either give away rights that are not mine or impose conditions on material that carries none. `data/LICENSE` maps each path to its terms:
+
+| Path                              | Terms         | Why                                                                                                  |
+| --------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| `data/geo/{ro,bg,rs}/**`          | ODbL 1.0      | Stitched from OpenStreetMap route relations, so OSM's share-alike carries over and I cannot relax it |
+| `data/geo/countries/*.geojson`    | Public domain | Natural Earth 1:50m admin-0                                                                          |
+| `data/projects/**`, `data/*.json` | CC BY 4.0     | My compilation and my writing: not OSM-derived, so nothing forces share-alike on it                  |
+
+CC BY 4.0 rather than ODbL for the curated half is deliberate. It grants the two rights that actually exist over a collection of facts, copyright in the descriptions and the European sui generis database right in the compilation, it asks for the credit that is the point of publishing this, and it stays compatible with the reuse terms of the public bodies whose figures are in the tables. ODbL's share-alike would have added a condition I cannot enforce over facts anyway, and would have sat badly with sources whose own licences forbid adding restrictions.
+
+What none of it covers: the figures themselves. A date, a length or a contract value is a fact, and anyone may restate it. `data/ATTRIBUTION.md` names every source and the credit it asks for; each file repeats its own in a `sources` block.
+
+I am the sole author, so these terms apply to every revision in the history, not only the current one.

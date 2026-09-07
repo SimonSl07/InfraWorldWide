@@ -1,0 +1,92 @@
+InfraWorldWide dataset: terms by path
+=====================================
+
+The code in this repository is MIT; see ../LICENSE. This file covers the data.
+Three sets of terms apply, because the files have three different origins, and
+mixing them under one licence would either give away rights that are not mine
+or impose conditions on material that carries none.
+
+
+1. Route geometry: Open Database License (ODbL) 1.0
+---------------------------------------------------
+
+    data/geo/ro/**, data/geo/bg/**, data/geo/rs/**
+
+and, in a build, the files those become:
+
+    public/data/geo/{country}.geojson
+    public/data/geo/cities/{city}.geojson
+    public/data/geo/projects/{project}.geojson
+
+These lines are stitched from OpenStreetMap route relations by
+scripts/fetch-osm-geometry.ts. That makes them a Derivative Database of
+OpenStreetMap, so OpenStreetMap's licence carries over and I cannot relax it.
+Full text in LICENSE-ODbL-1.0.txt, or at
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Reusing the geometry means two things. Any work you make from it, a map image
+or a page, must carry a notice that a reader can find:
+
+    © OpenStreetMap contributors, ODbL
+
+And publishing an altered version of the geometry itself means publishing it
+under ODbL too, in a form somebody can take away and use.
+
+
+2. Country outlines: public domain
+----------------------------------
+
+    data/geo/countries/*.geojson
+    public/data/geo/countries.geojson
+
+Natural Earth 1:50m admin-0, which is public domain. No conditions and no
+attribution required, though the courtesy is welcome. These are the map's
+click targets and dimming mask, and they are not OpenStreetMap data: keeping
+them separate is why the ODbL obligation above stays confined to the routes.
+
+
+3. Everything else: Creative Commons Attribution 4.0 International
+-------------------------------------------------------------------
+
+    data/projects/**
+    data/*.json
+    and the tables the build compiles from them under public/data/
+
+Copyright (c) 2026 Simon Slănină and the InfraWorldWide contributors, licensed
+CC BY 4.0. Full text in LICENSE-CC-BY-4.0.txt, or at
+https://creativecommons.org/licenses/by/4.0/
+
+Use it for anything, including commercially, as long as you credit the source
+and say if you changed it. A credit that works:
+
+    Data from InfraWorldWide (https://infraworldwide.com), CC BY 4.0
+
+CC BY 4.0 is chosen rather than ODbL here because these records are not
+derived from OpenStreetMap, so nothing forces share-alike on them, and because
+it grants the two rights that actually exist over a curated collection of
+facts: copyright in the descriptions and notes, and the European sui generis
+database right in the compilation. Individual facts are owned by nobody. A
+date, a length or a contract value can be restated by anyone without asking.
+
+
+What is not mine to license
+---------------------------
+
+Figures inside these files were transcribed from public sources, and each file
+names its own in a `sources` block. Those sources keep their own terms, which
+are listed with the notice each one asks for in ATTRIBUTION.md. The CC BY
+grant above covers my compilation and my writing, not the underlying material
+of a third party.
+
+Descriptions and notes are written from the facts a source states, not copied
+from it. Wikipedia articles are CC BY-SA, which covers their wording and
+structure but not the figures in them, and no sentence here is lifted or
+translated from one. Contributors are held to the same rule; see
+../CONTRIBUTING.md.
+
+
+Scope in time
+-------------
+
+I am the sole author of this dataset, so these terms apply to every revision
+in the repository's history, not only to the current one.
