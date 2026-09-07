@@ -4,6 +4,7 @@ import {
   normaliseText,
   routeRefs,
   scoreNotice,
+  serbianLatin,
   type MatchConfidence,
 } from "./ted-match";
 
@@ -333,7 +334,13 @@ export function matchItem(
   options: { limit?: number; country?: string } = {},
 ): LotCandidate[] {
   const { limit = 3, country } = options;
-  const text = `${item.title} ${item.summary}`;
+  // The Serbian Latin form rides along with the original. Serbian sections
+  // are recorded in Latin ("Kruševac East") and the four Serbian official
+  // feeds publish in Cyrillic, so without this they match nothing at all.
+  // `serbianLatin` returns "" for text holding no Cyrillic, which is every
+  // Romanian and English item, so nothing else changes.
+  const raw = `${item.title} ${item.summary}`;
+  const text = `${raw} ${serbianLatin(raw)}`.trimEnd();
   const notice = {
     publicationNumber: item.url,
     publicationDate: "",
@@ -650,15 +657,34 @@ export function formatDigest(input: DigestInput): string {
   const hidden = entries.length - shown.length;
 
   const sections: string[] = [];
-  const bestLot = (e: DigestEntry) => e.candidates[0]?.lotId ?? null;
+  const best = (e: DigestEntry) => e.candidates[0];
+  /**
+   * A section is named at the top of the digest only when the match is worth
+   * a person's attention. A low-confidence lot match is one shared place
+   * name, and a live run put an explosion in Augsburg under the Sofia metro
+   * and a locomotive fire under a Danube bridge. Those belong in the fold
+   * with the rest of the day's reading, not in the list a reader is meant to
+   * act on. Medium and high are what a toponym match earns when it is the
+   * road the article is actually about.
+   */
+  const headlined = (e: DigestEntry) => {
+    const top = best(e);
+    return (
+      top?.lotId != null &&
+      (top.confidence === "high" || top.confidence === "medium")
+    );
+  };
 
   const wikipedia = shown.filter((e) => e.wikipediaProject !== undefined);
   const news = shown.filter((e) => e.wikipediaProject === undefined);
-  const matched = news.filter((e) => bestLot(e) !== null);
+  const matched = news.filter(headlined);
   const routeOnly = news.filter(
-    (e) => bestLot(e) === null && e.candidates.length > 0,
+    (e) => !headlined(e) && best(e)?.lotId == null && e.candidates.length > 0,
   );
-  const unmatched = news.filter((e) => e.candidates.length === 0);
+  const unmatched = news.filter(
+    (e) =>
+      !headlined(e) && (e.candidates.length === 0 || best(e)?.lotId != null),
+  );
 
   sections.push(
     `Infrastructure news from the last ${windowDays} days, matched to the sections in \`data/projects\`. A report for a person: nothing here is written to the data. Each match is a guess from shared place names; read the article before recording anything, and cite it with the date you read it.`,

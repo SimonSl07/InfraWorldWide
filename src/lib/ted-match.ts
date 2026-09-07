@@ -41,6 +41,71 @@ export interface TedNotice {
  * (Дупница = Dupnitsa). Streamlined BGN/PCGN, which is what Bulgarian road
  * signs and Wikipedia use, so it lands on the same spelling as the data.
  */
+/**
+ * Serbian Cyrillic to Serbian Latin, which is what the Serbian data is
+ * written in.
+ *
+ * The map below it is Bulgarian: `ш` becomes `sh`, `ц` becomes `ts`, and `ј`
+ * is not in it at all. Applied to Serbian that produces "po ate" for Појате
+ * and "krushevats" for Крушевац, so an article from the Serbian ministry
+ * could never match a lot called "Kruševac East". The two conventions
+ * genuinely differ and one table cannot serve both, so this is a second one,
+ * used only where the source is Serbian.
+ *
+ * Diacritics are emitted rather than folded away: `normaliseText` strips
+ * them from both sides, and `đ` is a letter it does not decompose, so
+ * emitting `đ` is what matches data that spells it that way.
+ */
+const SERBIAN_CYRILLIC: Record<string, string> = {
+  а: "a",
+  б: "b",
+  в: "v",
+  г: "g",
+  д: "d",
+  ђ: "đ",
+  е: "e",
+  ж: "ž",
+  з: "z",
+  и: "i",
+  ј: "j",
+  к: "k",
+  л: "l",
+  љ: "lj",
+  м: "m",
+  н: "n",
+  њ: "nj",
+  о: "o",
+  п: "p",
+  р: "r",
+  с: "s",
+  т: "t",
+  ћ: "ć",
+  у: "u",
+  ф: "f",
+  х: "h",
+  ц: "c",
+  ч: "č",
+  џ: "dž",
+  ш: "š",
+};
+
+/**
+ * The Serbian Latin form of a text, or "" when it holds no Cyrillic.
+ *
+ * Returning "" for Latin input is the point: the caller appends the result,
+ * and appending nothing leaves every existing match exactly as it was.
+ */
+export function serbianLatin(text: string): string {
+  let hasCyrillic = false;
+  let out = "";
+  for (const ch of text.toLowerCase()) {
+    const mapped = SERBIAN_CYRILLIC[ch];
+    if (mapped !== undefined) hasCyrillic = true;
+    out += mapped ?? ch;
+  }
+  return hasCyrillic ? out : "";
+}
+
 const CYRILLIC: Record<string, string> = {
   а: "a",
   б: "b",

@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import type { LocalizedString, Project } from "./schema";
-import { tokenWeights } from "./ted-match";
+import { normaliseText, serbianLatin, tokenWeights } from "./ted-match";
 import {
   daysBefore,
   decodeEntities,
@@ -404,6 +404,40 @@ describe("formatDigest", () => {
     ...extra,
   });
 
+  it("headlines a section only when the match is medium or better", () => {
+    // A live run put an explosion in Augsburg under the Sofia metro and a
+    // locomotive fire under a Danube bridge, both on one shared place name.
+    // Low belongs in the fold with the rest of the day's reading.
+    const cand = (confidence: "high" | "medium" | "low") => [
+      {
+        projectId: "ro-a7",
+        lotId: "adjud-bacau",
+        confidence,
+        score: 1,
+        matched: ["adjud"],
+      },
+    ];
+    const digest = formatDigest({
+      entries: [
+        entry("Opened Adjud", cand("high")),
+        entry("Awarded Adjud", cand("medium")),
+        entry("Explosion in Augsburg", cand("low")),
+      ],
+      failures: [],
+      sources: 9,
+      windowDays: 14,
+    });
+    const headline = digest.slice(
+      digest.indexOf("## Matched to a section"),
+      digest.indexOf("<details>"),
+    );
+    expect(headline).toContain("Opened Adjud");
+    expect(headline).toContain("Awarded Adjud");
+    expect(headline).not.toContain("Augsburg");
+    expect(digest).toContain("Other infrastructure news");
+    expect(digest.slice(digest.indexOf("<details>"))).toContain("Augsburg");
+  });
+
   it("says so when the window is empty, in bytes that do not change by day", () => {
     const input = { entries: [], failures: [], sources: 9, windowDays: 14 };
     const digest = formatDigest(input);
@@ -477,6 +511,32 @@ describe("formatDigest", () => {
       maxEntries: 3,
     });
     expect(digest).toContain("2 more entries not listed.");
+  });
+});
+
+describe("serbianLatin", () => {
+  // The Bulgarian map in ted-match gives "po ate" for Појате and
+  // "krushevats" for Крушевац, so the four Serbian official feeds could
+  // never reach a lot recorded as "Kruševac East".
+  it("gives the Latin the Serbian data is written in", () => {
+    const pairs: Array<[string, string]> = [
+      ["Појате", "Pojate"],
+      ["Крушевац", "Kruševac"],
+      ["Обреновац", "Obrenovac"],
+      ["Сурчин", "Surčin"],
+      ["Ниш", "Niš"],
+      ["Ђердап", "Đerdap"],
+      ["Љубовија", "Ljubovija"],
+    ];
+    for (const [cyrillic, latin] of pairs) {
+      expect(normaliseText(serbianLatin(cyrillic))).toBe(normaliseText(latin));
+    }
+  });
+
+  it("returns nothing for text that holds no Cyrillic", () => {
+    // The caller appends the result, so "" is what leaves every Romanian and
+    // English item scoring exactly as it did before.
+    expect(serbianLatin("Autostrada A7 Adjud - Bacau")).toBe("");
   });
 });
 
