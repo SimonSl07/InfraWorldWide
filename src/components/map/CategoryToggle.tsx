@@ -119,7 +119,7 @@ export default function CategoryToggle({
                 type="button"
                 onClick={() => onChange(toggleCategory(selection, cat))}
                 aria-pressed={active}
-                className="flex items-center gap-1.5 py-1.5 pl-3 pr-2"
+                className="flex items-center gap-1.5 py-1.5 pl-3 pr-2 pointer-coarse:min-h-11"
               >
                 <span
                   className="inline-block w-4 h-1 rounded-full"
@@ -151,7 +151,7 @@ export default function CategoryToggle({
                 aria-label={t("map.statusMenu", {
                   category: t(`category.${cat}`),
                 })}
-                className="border-l border-line/80 px-1.5 py-1.5 text-ink-faint hover:text-ink"
+                className="flex items-center self-stretch border-l border-line/80 px-1.5 py-1.5 text-ink-faint pointer-coarse:min-h-11 pointer-coarse:px-4 hover:text-ink"
               >
                 <svg width="9" height="6" viewBox="0 0 9 6" aria-hidden="true">
                   <path

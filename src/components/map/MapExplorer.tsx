@@ -369,7 +369,7 @@ export default function MapExplorer({
           onClick={() => setControlsOpen((v) => !v)}
           aria-expanded={controlsOpen}
           aria-controls="map-controls"
-          className="w-max cursor-pointer rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur sm:hidden"
+          className="inline-flex w-max cursor-pointer items-center rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur pointer-coarse:min-h-11 sm:hidden"
         >
           {controlsOpen ? t("map.hideFilters") : t("map.showFilters")}
         </button>
@@ -425,7 +425,7 @@ export default function MapExplorer({
             type="button"
             onClick={() => setComparing((v) => !v)}
             aria-pressed={comparing}
-            className={`cursor-pointer rounded-full border px-3 py-1.5 text-xs font-medium shadow backdrop-blur ${
+            className={`inline-flex cursor-pointer items-center rounded-full border px-3 py-1.5 text-xs font-medium shadow backdrop-blur pointer-coarse:min-h-11 ${
               comparing
                 ? "border-inverse bg-inverse text-on-inverse"
                 : "border-line bg-surface/95 text-ink-soft hover:border-inverse hover:text-ink"
@@ -436,7 +436,7 @@ export default function MapExplorer({
           <button
             type="button"
             onClick={handleCopyLink}
-            className="cursor-pointer rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur hover:border-inverse hover:text-ink"
+            className="inline-flex cursor-pointer items-center rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur pointer-coarse:min-h-11 hover:border-inverse hover:text-ink"
           >
             {copied ? t("map.linkCopied") : t("map.copyLink")}
           </button>

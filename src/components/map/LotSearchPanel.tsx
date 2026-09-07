@@ -129,7 +129,7 @@ export default function LotSearchPanel({
           // aria-controls only: aria-expanded belongs to the toggle below,
           // and a plain textbox may not carry it without combobox semantics.
           aria-controls={listId}
-          className="w-full rounded-lg border border-line px-2.5 py-1.5 text-sm text-ink placeholder:text-ink-faint focus:border-inverse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+          className="w-full rounded-lg border border-line px-2.5 py-1.5 text-sm text-ink placeholder:text-ink-faint pointer-coarse:min-h-11 focus:border-inverse focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
         />
 
         <button
@@ -137,7 +137,7 @@ export default function LotSearchPanel({
           onClick={() => setOpen((v) => !v)}
           aria-expanded={listOpen}
           aria-controls={listId}
-          className="mt-1.5 w-full cursor-pointer text-left text-[11px] text-ink-muted hover:text-ink"
+          className="mt-1.5 flex w-full cursor-pointer items-center text-left text-[11px] text-ink-muted pointer-coarse:min-h-11 hover:text-ink"
         >
           {t("country.lots", { count: lots.length })}
         </button>
@@ -175,7 +175,7 @@ export default function LotSearchPanel({
                     onKeyDown={(e) =>
                       moveFocus(e, items().indexOf(e.currentTarget))
                     }
-                    className={`flex w-full cursor-pointer items-start gap-2 px-3 py-1.5 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus ${
+                    className={`flex w-full cursor-pointer items-start gap-2 px-3 py-1.5 text-left text-xs pointer-coarse:min-h-11 pointer-coarse:items-center hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus ${
                       active ? "bg-surface-raised" : ""
                     }`}
                   >

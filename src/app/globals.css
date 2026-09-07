@@ -223,6 +223,25 @@
 }
 
 /*
+ * MapLibre's own controls are 29px square: the zoom pair, the compass, full
+ * screen and geolocate. That is comfortable under a mouse and small under a
+ * finger, and on a phone they are the map's main chrome. Keyed to the
+ * pointer rather than the viewport, because what is too small here is the
+ * finger and not the screen.
+ */
+@media (pointer: coarse) {
+  /*
+   * Two classes on purpose. MapLibre's own rule is `.maplibregl-ctrl-group
+   * button` and its stylesheet is imported by the map component, so at equal
+   * specificity theirs lands later and wins.
+   */
+  .maplibregl-ctrl.maplibregl-ctrl-group button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/*
  * Printing a country or project page should give the tables and the prose,
  * not a sticky header, an empty map canvas and pagination controls.
  */

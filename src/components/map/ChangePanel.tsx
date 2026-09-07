@@ -85,7 +85,7 @@ export default function ChangePanel({
         // Only while the panel exists: a reference to an id that is not in
         // the document is invalid, and some readers then announce nothing.
         aria-controls={open ? "map-change-panel" : undefined}
-        className="flex cursor-pointer items-baseline gap-2 rounded-full border border-line bg-surface/95 px-3 py-1.5 shadow backdrop-blur hover:border-inverse"
+        className="flex cursor-pointer items-baseline gap-2 rounded-full border border-line bg-surface/95 px-3 py-1.5 shadow backdrop-blur pointer-coarse:min-h-11 pointer-coarse:items-center hover:border-inverse"
       >
         <span className="text-[10px] font-semibold uppercase text-ink-faint">
           {t("map.changeTitle")}
@@ -122,7 +122,7 @@ export default function ChangePanel({
                   type="button"
                   onClick={() => onBaselineYearsChange(years)}
                   aria-pressed={years === baselineYears}
-                  className={`cursor-pointer rounded px-1.5 py-0.5 text-[11px] tabular-nums ${
+                  className={`inline-flex cursor-pointer items-center justify-center rounded px-1.5 py-0.5 text-[11px] tabular-nums pointer-coarse:min-h-11 pointer-coarse:min-w-11 ${
                     years === baselineYears
                       ? "bg-inverse text-on-inverse"
                       : "text-ink-muted hover:text-ink"
@@ -161,12 +161,12 @@ export default function ChangePanel({
             </p>
           )}
 
-          <label className="mt-2 flex cursor-pointer items-center gap-2 border-t border-line-soft pt-2 text-xs text-ink-soft">
+          <label className="mt-2 flex cursor-pointer items-center gap-2 border-t border-line-soft pt-2 text-xs text-ink-soft pointer-coarse:min-h-11">
             <input
               type="checkbox"
               checked={highlight}
               onChange={(e) => onHighlightChange(e.target.checked)}
-              className="accent-inverse"
+              className="accent-inverse pointer-coarse:size-5"
             />
             {t("map.highlightNew")}
           </label>
@@ -180,7 +180,7 @@ export default function ChangePanel({
                     <button
                       type="button"
                       onClick={() => onSelect(lot)}
-                      className="flex w-full cursor-pointer items-start gap-2 rounded px-1 py-1 text-left text-xs hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus"
+                      className="flex w-full cursor-pointer items-start gap-2 rounded px-1 py-1 text-left text-xs pointer-coarse:min-h-11 pointer-coarse:items-center hover:bg-surface-sunken focus:bg-surface-raised focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus"
                     >
                       <span className="mt-0.5">
                         <CategoryGlyph category={lot.category} />
