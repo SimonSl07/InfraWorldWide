@@ -6,18 +6,33 @@
 import type { DeflatorTable, FxTable, Money, Project } from "../schema";
 import type { GeometryReport } from "./geometry";
 
-/**
- * Every money figure recorded anywhere on a project, with a label.
- *
- * `lengthKm` travels with the figures that price a section, so the per-km
- * check can read them. A funding share is a slice of whoever pays, not the
- * cost of the section, so it carries none and never enters that check.
- */
-export function* moneyOf(
-  project: Project,
-): Generator<{ where: string; money: Money; lengthKm?: number }> {
+/** One money figure as recorded on a project, and where it sits. */
+export interface RecordedMoney {
+  where: string;
+  money: Money;
+  /**
+   * The section's length, carried only by figures that price the whole
+   * section, so the per-km check can read them. A funding share is a slice of
+   * whoever pays, an addendum is what one variation order added, and a
+   * contract value is read on its own terms: none of those is the price of
+   * the section, so none carries a length.
+   */
+  lengthKm?: number;
+  /**
+   * Whether the figure reaches the cost tables and rankings. A lot's
+   * estimate, outturn, revisions and contract value do, so a currency the fx
+   * table cannot convert would silently drop them from every comparison. A
+   * funding share and a project-level total are shown as recorded and never
+   * converted; for those an unknown currency is a coverage gap to warn about,
+   * not a defect.
+   */
+  ranked: boolean;
+}
+
+/** Every money figure recorded anywhere on a project. */
+export function* moneyOf(project: Project): Generator<RecordedMoney> {
   if (project.cost) {
-    yield { where: `${project.id}: cost`, money: project.cost };
+    yield { where: `${project.id}: cost`, money: project.cost, ranked: false };
   }
   for (const lot of project.lots) {
     const at = `${project.id}: lot "${lot.id}"`;
@@ -26,6 +41,7 @@ export function* moneyOf(
         where: `${at} cost.estimated`,
         money: lot.cost.estimated,
         lengthKm: lot.lengthKm,
+        ranked: true,
       };
     }
     if (lot.cost?.actual) {
@@ -33,24 +49,36 @@ export function* moneyOf(
         where: `${at} cost.actual`,
         money: lot.cost.actual,
         lengthKm: lot.lengthKm,
+        ranked: true,
       };
     }
     const revisions = lot.cost?.revisions ?? [];
     for (let i = 0; i < revisions.length; i++) {
+      const revision = revisions[i];
       yield {
         where: `${at} cost.revisions[${i}]`,
-        money: revisions[i].money,
-        lengthKm: lot.lengthKm,
+        money: revision.money,
+        // An addendum records the increment, not the new total.
+        ...(revision.kind === "addendum" ? {} : { lengthKm: lot.lengthKm }),
+        ranked: true,
       };
     }
     if (lot.contract?.value) {
-      yield { where: `${at} contract.value`, money: lot.contract.value };
+      yield {
+        where: `${at} contract.value`,
+        money: lot.contract.value,
+        ranked: true,
+      };
     }
     const funding = lot.funding ?? [];
     for (let i = 0; i < funding.length; i++) {
       const amount = funding[i].amount;
       if (amount) {
-        yield { where: `${at} funding[${i}].amount`, money: amount };
+        yield {
+          where: `${at} funding[${i}].amount`,
+          money: amount,
+          ranked: false,
+        };
       }
     }
   }
