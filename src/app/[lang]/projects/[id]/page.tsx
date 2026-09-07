@@ -26,6 +26,10 @@ import { breadcrumbList, jsonLdScript } from "@/lib/structured-data";
 import { siteUrl } from "@/lib/seo";
 import { isSharedTrack } from "@/lib/schema";
 
+// Every project is prerendered; an unknown id is a 404, not an on-demand
+// render that would read public/data from disk on a serverless host.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   // Locales are enumerated by the parent [lang] layout.
   return getProjects().map((p) => ({ id: p.id }));
