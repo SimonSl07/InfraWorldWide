@@ -11,6 +11,7 @@ import {
   programmeTableSchema,
   projectSchema,
 } from "../src/lib/schema";
+import { newsSourcesSchema } from "../src/lib/news";
 
 /**
  * Publish the zod schemas as JSON Schema, for editors.
@@ -66,6 +67,11 @@ const TARGETS = [
     file: "operators.schema.json",
     schema: operatorTableSchema,
     title: "InfraWorldWide operator table",
+  },
+  {
+    file: "news-sources.schema.json",
+    schema: newsSourcesSchema,
+    title: "InfraWorldWide news source list",
   },
 ] as const;
 

@@ -38,6 +38,7 @@ Open http://localhost:3000 (redirects to /en).
 | `npm run data:gaps`                       | what the data is still missing, as a table, CSV or JSON                              |
 | `npm run data:links`                      | check every cited URL still resolves                                                 |
 | `npm run data:indices`                    | refetch the price indices and exchange rates, and diff them                          |
+| `npm run data:news`                       | fetch the news feeds and the cited Wikipedia histories, and write the digest         |
 | `npx tsx scripts/fetch-osm-geometry.ts …` | bootstrap route geometry from OpenStreetMap (see below)                              |
 
 Contributing a project or a country: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
@@ -219,6 +220,12 @@ Five scripts that report rather than gate. None of them runs in `npm test` (they
 | `npx tsx scripts/match-ted-lots.ts --awards data/ted/ro.json` | Matches a TED harvest to lots and emits a review CSV                                                                                                                                                |
 
 `.github/workflows/scheduled-checks.yml` runs the first, second and fourth weekly and keeps a single issue up to date. It never fails a run: it opens or edits one issue, and skips even that when the report is identical to last week's.
+
+### News digest
+
+`npm run data:news` reads the feeds in `data/news-sources.json` and the edit history of every Wikipedia article a project cites, matches each item to a section by the place names it shares (the TED matcher's weighting, through `src/lib/news.ts`), notes the event kind the wording suggests, and writes a Markdown digest of the last 14 days. `.github/workflows/news-digest.yml` runs it daily and keeps one issue (label `news-digest`) current, editing it only when the digest changed. The seen-state that makes "since the last run" possible lives in the Actions cache, or locally in the gitignored `data/news/`.
+
+It is a report, like every harvester here. A match is a guess from shared toponyms and a suggested kind is a phrase match; nothing is written to `data/`. Read the article, then record the fact with the URL and the date you read it. Only feeds are read: a site without RSS or Atom is not scraped, which is why Bulgaria and Serbia are covered through Wikipedia histories alone for now (see the note in `data/news-sources.json` for what was tried).
 
 ### Gap report
 
