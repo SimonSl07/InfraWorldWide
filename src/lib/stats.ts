@@ -1,7 +1,9 @@
 import {
+  categorySchema,
   dateYear,
   isPartOfAnother,
   isSharedTrack,
+  type Category,
   type Project,
 } from "./schema";
 
@@ -82,5 +84,37 @@ export function computeStats(
     openedKm,
     recentOpenedKm,
     underConstructionKm,
+  };
+}
+
+/**
+ * What the dataset holds, for the About page. These count records, not
+ * kilometres, so `countsTowardNetwork` does not apply: a shared-track lot is
+ * still a section somebody curated and cited.
+ */
+export interface ContentsSummary {
+  sectionCount: number;
+  /** Projects per category in schema order; categories with none are left out. */
+  byCategory: Array<{ category: Category; count: number }>;
+  /** Cited sources on projects and on their lots. */
+  sourceCount: number;
+}
+
+export function summarizeContents(projects: Project[]): ContentsSummary {
+  let sectionCount = 0;
+  let sourceCount = 0;
+  const perCategory = new Map<Category, number>();
+  for (const p of projects) {
+    sectionCount += p.lots.length;
+    sourceCount += p.sources.length;
+    perCategory.set(p.category, (perCategory.get(p.category) ?? 0) + 1);
+    for (const lot of p.lots) sourceCount += lot.sources?.length ?? 0;
+  }
+  return {
+    sectionCount,
+    byCategory: categorySchema.options
+      .filter((c) => perCategory.has(c))
+      .map((c) => ({ category: c, count: perCategory.get(c) ?? 0 })),
+    sourceCount,
   };
 }
