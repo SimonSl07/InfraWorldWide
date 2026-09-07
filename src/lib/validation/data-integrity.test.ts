@@ -319,8 +319,9 @@ describe("checkPriceCoverage", () => {
 
 /**
  * The currency-level check walks the same `moneyOf` as the price-year one,
- * so a project cost, a revision or a funding share cannot arrive in a
- * currency the table has never heard of while the lot costs are held to it.
+ * so a revision is held to it like a flat lot cost. Figures nothing converts,
+ * a funding share or a project-level total, stay in the warning tier: an
+ * unknown currency there is a coverage gap, not a defect.
  */
 describe("checkFxCoverage", () => {
   const check = (p: Project) => {
@@ -341,7 +342,26 @@ describe("checkFxCoverage", () => {
     expect(check(p)).toEqual([]);
   });
 
-  it("errors on a funding share in a currency the fx table lacks", () => {
+  it("errors on a revision in a currency the fx table lacks", () => {
+    const p = projectStub([
+      lotStub({
+        cost: {
+          revisions: [
+            {
+              kind: "award",
+              date: "2020",
+              money: { amount: 5, currency: "CHF", year: 2020 },
+            },
+          ],
+        },
+      }),
+    ]);
+    expect(check(p)).toEqual([
+      'data/fx.json: no rates for "CHF", which costs are recorded in',
+    ]);
+  });
+
+  it("leaves a funding share in an unknown currency to the warning tier", () => {
     const p = projectStub([
       lotStub({
         funding: [
@@ -352,16 +372,19 @@ describe("checkFxCoverage", () => {
         ],
       }),
     ]);
-    expect(check(p)).toEqual([
-      'data/fx.json: no rates for "CHF", which costs are recorded in',
-    ]);
+    // Nothing converts a co-financing share, so the build must not fail on
+    // it; the price-coverage check still says the table does not reach it.
+    expect(check(p)).toEqual([]);
+    expect(checkPriceCoverage(deflators, fx, [p]).warnings.join(" ")).toContain(
+      "fx",
+    );
   });
 
-  it("errors on a project cost in a currency the fx table lacks", () => {
+  it("leaves a project-level total in an unknown currency to the warning tier", () => {
     const p = projectStub([lotStub()], {
       cost: { amount: 100, currency: "GBP", year: 2020 },
     });
-    expect(check(p).join(" ")).toContain('"GBP"');
+    expect(check(p)).toEqual([]);
   });
 });
 
@@ -441,6 +464,25 @@ describe("checkCostPerKm", () => {
     const w = checkCostPerKm(fx, [p]).warnings;
     expect(w).toHaveLength(1);
     expect(w[0]).toContain("cost.revisions[0]");
+  });
+
+  /** An addendum is what one variation order added, not the section's price. */
+  it("does not judge an addendum per km", () => {
+    const p = projectStub([
+      lotStub({
+        lengthKm: 30,
+        cost: {
+          revisions: [
+            {
+              kind: "addendum",
+              date: "2021",
+              money: { amount: 3, currency: "EUR", year: 2021 },
+            },
+          ],
+        },
+      }),
+    ]);
+    expect(checkCostPerKm(fx, [p]).warnings).toEqual([]);
   });
 
   /** A co-financing share is a slice of who pays, not the section's cost. */

@@ -369,11 +369,13 @@ export function checkPartOf(projects: Project[]): GeometryReport {
 }
 
 /**
- * Every currency a figure is recorded in must be convertible, or the cost
- * tables silently drop it. Warns via an error so new data cannot slip in a
- * currency the FX table has never heard of. Walks `moneyOf`, so a project
- * cost, a revision or a funding share is held to it the same as a lot cost:
- * the old hand-written loop over three lot fields let those three through.
+ * Every currency a ranked figure is recorded in must be convertible, or the
+ * cost tables silently drop it. Warns via an error so new data cannot slip in
+ * a currency the FX table has never heard of. Walks `moneyOf` rather than a
+ * hand-written list of lot fields, which is how revisions slipped past it.
+ * Figures nothing converts (a funding share, a project-level total, anything
+ * scoped `programme`) are left to the price-coverage warning: an unknown
+ * currency there is a gap in a reference table, not a defect in the data.
  */
 export function checkFxCoverage(
   table: FxTable | null,
@@ -383,7 +385,8 @@ export function checkFxCoverage(
   if (!table) return;
   const missing = new Set<string>();
   for (const project of projects) {
-    for (const { money } of moneyOf(project)) {
+    for (const { money, ranked } of moneyOf(project)) {
+      if (!ranked || money.scope === "programme") continue;
       if (money.currency === table.base) continue;
       if (!table.rates[money.currency]) missing.add(money.currency);
     }
