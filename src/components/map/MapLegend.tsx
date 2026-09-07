@@ -20,6 +20,8 @@ export default function MapLegend({
   categories = ALL_CATEGORIES,
   showStatuses = true,
   showDerivedNote = false,
+  open: openProp,
+  onOpenChange,
 }: {
   categories?: readonly Category[];
   /** Off for a map that draws a single status vocabulary. */
@@ -29,16 +31,31 @@ export default function MapLegend({
    * so only the main map should explain the hatching.
    */
   showDerivedNote?: boolean;
+  /**
+   * Lift the open state when the surrounding map has to know: the explorer
+   * hides the time slider while this is open, because below `sm` the panel
+   * is taller than the gap between them.
+   */
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }) {
   const t = useTranslations();
-  const [open, setOpen] = useState(false);
+  const [ownOpen, setOwnOpen] = useState(false);
+  const open = openProp ?? ownOpen;
+  const setOpen = (next: boolean) => {
+    setOwnOpen(next);
+    onOpenChange?.(next);
+  };
 
   return (
-    <div className="w-max">
+    // Column-reverse below `sm`: the box is anchored by its bottom edge, so
+    // with the panel after the button it grew upward and threw the button
+    // out from under the finger that had just pressed it.
+    <div className="flex w-max flex-col-reverse items-start sm:block">
       {/* Only below sm: above it the panel is permanently open. */}
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls="map-legend-panel"
         className="cursor-pointer rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur sm:hidden"
@@ -50,7 +67,7 @@ export default function MapLegend({
         id="map-legend-panel"
         className={`${
           open ? "block" : "hidden"
-        } mt-1 rounded-xl border border-line bg-surface/95 px-3 py-2 shadow backdrop-blur sm:mt-0 sm:block`}
+        } mb-1 rounded-xl border border-line bg-surface/95 px-3 py-2 shadow backdrop-blur sm:mb-0 sm:block`}
       >
         <div className="text-[10px] font-semibold uppercase text-ink-faint">
           {t("map.legendCategory")}
