@@ -23,9 +23,13 @@ describe("datasetJsonLd", () => {
     expect(dataset["@type"]).toBe("Dataset");
   });
 
-  it("states the licence, because the geometry is share-alike", () => {
+  it("states both licences, because the geometry is share-alike", () => {
     // ODbL is an obligation, not a nicety: it has to travel with the data.
-    expect(String(dataset.license)).toContain("odbl");
+    // CC BY covers everything that is not OSM-derived, and a reader who
+    // takes the dataset whole is bound by both.
+    const licences = String(dataset.license);
+    expect(licences).toContain("odbl");
+    expect(licences).toContain("creativecommons.org/licenses/by/4.0");
   });
 
   it("covers the years the data spans", () => {

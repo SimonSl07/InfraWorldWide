@@ -11,6 +11,7 @@ import { ExternalLink } from "@/components/ui/ExternalLink";
 
 /** Where the generated JSON Schema files live in the repository. */
 const SCHEMA_DIR = `${EXTERNAL_LINKS.repo}/blob/main/schema`;
+const ATTRIBUTION = `${EXTERNAL_LINKS.repo}/blob/main/data/ATTRIBUTION.md`;
 
 export async function generateMetadata({
   params,
@@ -207,7 +208,31 @@ export default async function DataPage({
               ODbL
             </ExternalLink>
           </p>
-          <p className="text-ink-muted">{t("dataPage.licenceTables")}</p>
+          <p>
+            {t("dataPage.licenceTables")}{" "}
+            <ExternalLink
+              href={EXTERNAL_LINKS.ccBy}
+              className="underline underline-offset-2 hover:text-ink"
+            >
+              CC BY 4.0
+            </ExternalLink>
+          </p>
+          <p className="text-ink-muted">
+            {t("dataPage.licenceSources")}{" "}
+            <ExternalLink
+              href={ATTRIBUTION}
+              className="underline underline-offset-2 hover:text-ink"
+            >
+              {t("dataPage.licenceAttributionList")}
+            </ExternalLink>
+            {" · "}
+            <a
+              href="/data/LICENSE.txt"
+              className="underline underline-offset-2 hover:text-ink"
+            >
+              /data/LICENSE.txt
+            </a>
+          </p>
         </div>
       </section>
 

@@ -33,8 +33,9 @@ export function datasetJsonLd(options: {
     name,
     description,
     url: absoluteUrl(baseUrl, localePath(locale, "/")),
-    // Geometry is OSM-derived and share-alike, so the licence travels with it.
-    license: EXTERNAL_LINKS.odbl,
+    // Two, and both have to travel: the geometry is OSM-derived and
+    // share-alike, everything curated here is CC BY. See data/LICENSE.
+    license: [EXTERNAL_LINKS.odbl, EXTERNAL_LINKS.ccBy],
     isAccessibleForFree: true,
     creator: { "@type": "Person", "@id": EXTERNAL_LINKS.github },
     temporalCoverage: `${firstYear}/${lastYear}`,
