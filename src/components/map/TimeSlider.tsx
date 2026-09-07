@@ -102,7 +102,7 @@ export default function TimeSlider({
       {/* Its own full-width line below `sm`. Sharing the line left it about
           90px wide on a phone, which butted the two year bounds together into
           one unreadable number: 1885 and 2032 rendered as "18852032". */}
-      <div className="order-last basis-full flex flex-col gap-1 min-w-0 sm:order-none sm:basis-auto">
+      <div className="order-last basis-full flex flex-col gap-1 min-w-0 sm:order-none sm:flex-none">
         <input
           type="range"
           min={min}

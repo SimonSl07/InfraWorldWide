@@ -82,7 +82,9 @@ export default function ChangePanel({
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        aria-controls="map-change-panel"
+        // Only while the panel exists: a reference to an id that is not in
+        // the document is invalid, and some readers then announce nothing.
+        aria-controls={open ? "map-change-panel" : undefined}
         className="flex cursor-pointer items-baseline gap-2 rounded-full border border-line bg-surface/95 px-3 py-1.5 shadow backdrop-blur hover:border-inverse"
       >
         <span className="text-[10px] font-semibold uppercase text-ink-faint">
@@ -91,11 +93,19 @@ export default function ChangePanel({
         <span className="text-xs font-semibold tabular-nums text-ink">
           {headline}
         </span>
+        {/* Highlighting draws an extra layer on the map. Closed, this button
+            is the only thing left to say why the map looks different. */}
+        {!open && highlight && (
+          <span className="flex items-center gap-1 text-[10px] text-ink-muted">
+            <span aria-hidden className="size-1.5 rounded-full bg-inverse" />
+            {t("map.highlightNew")}
+          </span>
+        )}
       </button>
 
-      {/* Rendered only when open, not hidden with a class: closed, this is a
-          heading, four buttons, a checkbox and up to eight links that no
-          reader asked for and every screen reader would still walk. */}
+      {/* Rendered only when open rather than hidden with a class: closed,
+          this is a heading, four buttons, a checkbox and up to eight links
+          that nothing on the screen refers to. */}
       {open && (
         <div
           id="map-change-panel"

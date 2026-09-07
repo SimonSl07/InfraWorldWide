@@ -41,7 +41,7 @@ function lot(props: Partial<LotEntry>): LotEntry {
   };
 }
 
-function panel(lots: LotEntry[] = [lot({})]) {
+function panel(lots: LotEntry[] = [lot({})], highlight = false) {
   return (
     <ChangePanel
       lots={lots}
@@ -49,7 +49,7 @@ function panel(lots: LotEntry[] = [lot({})]) {
       nowMonth={NOW}
       baselineYears={5}
       onBaselineYearsChange={() => {}}
-      highlight={false}
+      highlight={highlight}
       onHighlightChange={() => {}}
       onSelect={() => {}}
       locale="en"
@@ -84,6 +84,32 @@ describe("ChangePanel", () => {
     render(panel([lot({ openedMonth: NOW - 12 * 40, opened: 1985 })]));
     const toggle = screen.getByRole("button", { name: /map\.changeTitle/ });
     expect(toggle).toHaveTextContent("0 km");
-    expect(toggle).not.toHaveTextContent("+0 km");
+    // "+30 km" contains "0 km", so the sign is what the case is really about.
+    expect(toggle.textContent).not.toContain("+");
+  });
+
+  it("says on the closed button that highlighting is on", async () => {
+    // Highlighting draws a layer on the map. Closed, the button is the only
+    // thing left that can explain why the map looks different.
+    const user = userEvent.setup();
+    render(panel([lot({})], true));
+    const toggle = screen.getByRole("button", { name: /map\.changeTitle/ });
+    expect(toggle).toHaveTextContent("map.highlightNew");
+
+    // Open, the checkbox says it instead, and the button stops repeating it.
+    await user.click(toggle);
+    expect(screen.getByRole("checkbox")).toBeChecked();
+    expect(toggle).not.toHaveTextContent("map.highlightNew");
+  });
+
+  it("drops aria-controls while the panel it names is not rendered", async () => {
+    const user = userEvent.setup();
+    render(panel());
+    const toggle = screen.getByRole("button", { name: /map\.changeTitle/ });
+    expect(toggle).not.toHaveAttribute("aria-controls");
+
+    await user.click(toggle);
+    expect(toggle).toHaveAttribute("aria-controls", "map-change-panel");
+    expect(document.getElementById("map-change-panel")).toBeInTheDocument();
   });
 });

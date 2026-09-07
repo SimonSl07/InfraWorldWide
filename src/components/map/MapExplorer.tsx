@@ -107,8 +107,10 @@ export default function MapExplorer({
     );
   });
   const [highlightNew, setHighlightNew] = useState(false);
-  // Only read below `sm`, where the filter stack is a disclosure.
+  // Both only read below `sm`, where the overlays are disclosures and the
+  // screen fits one at a time.
   const [controlsOpen, setControlsOpen] = useState(false);
+  const [legendOpen, setLegendOpen] = useState(false);
   const [comparing, setComparing] = useState(
     () => searchParams.get("cmp") !== null,
   );
@@ -238,6 +240,9 @@ export default function MapExplorer({
   const handleSelectFromList = useCallback(
     (lot: LotEntry) => {
       handleSelectLot(lot);
+      // The project panel covers a phone screen whole. Leaving the filter
+      // stack open behind it means closing two things to get back to the map.
+      setControlsOpen(false);
       let bbox: BBox | null = null;
       for (const feature of geojson.features) {
         const props = feature.properties;
@@ -358,7 +363,7 @@ export default function MapExplorer({
           Below `sm` the whole stack hides behind one button, as the legend
           does. Three cards 288px wide on a 393px screen left the map a
           margin to look at, and they ran under the buttons on the right. */}
-      <div className="absolute top-4 right-16 left-4 z-10 flex max-h-[calc(100%-8rem)] flex-col gap-2 sm:right-auto sm:max-h-[calc(100%-2rem)]">
+      <div className="absolute top-4 right-16 left-4 z-10 flex max-h-[calc(100%-13rem)] flex-col gap-2 sm:right-auto sm:max-h-[calc(100%-2rem)]">
         <button
           type="button"
           onClick={() => setControlsOpen((v) => !v)}
@@ -377,8 +382,8 @@ export default function MapExplorer({
           <CategoryToggle selection={selection} onChange={setSelection} />
           <div className="min-h-0 overflow-y-auto">
             {/* No point listing what is on the map while the wipe is showing
-              two maps; the baseline control below stays, because it is what
-              sets the year on the left of the handle. */}
+              two maps; the baseline control below stays, one press away,
+              because it is what sets the year on the left of the handle. */}
             {!comparing && (
               <LotSearchPanel
                 lots={listedLots}
@@ -415,7 +420,7 @@ export default function MapExplorer({
           controlsOpen ? "hidden" : "flex"
         } flex-col items-end gap-2 sm:flex`}
       >
-        <div className="flex flex-col items-end gap-2 sm:flex-row">
+        <div className="flex flex-col items-end gap-2 sm:flex-row sm:items-stretch">
           <button
             type="button"
             onClick={() => setComparing((v) => !v)}
@@ -441,8 +446,13 @@ export default function MapExplorer({
 
       {/* bottom-center: time slider. Lifted clear of the legend button and
           the basemap attribution on a phone, where all three landed on the
-          same 40px of screen. */}
-      <div className="absolute bottom-20 left-4 right-4 z-10 flex justify-center sm:bottom-6 sm:left-1/2 sm:right-auto sm:block sm:w-max sm:-translate-x-1/2">
+          same 40px of screen, and it stands down entirely while the legend
+          is open: the open legend is taller than the gap above it. */}
+      <div
+        className={`absolute bottom-20 left-4 right-4 z-10 ${
+          legendOpen ? "hidden" : "flex"
+        } justify-center sm:bottom-6 sm:left-1/2 sm:right-auto sm:block sm:-translate-x-1/2`}
+      >
         <TimeSlider
           month={month}
           min={minMonth}
@@ -459,7 +469,11 @@ export default function MapExplorer({
       {/* bottom-left: legend. Reachable on a phone now, where category used
           to be hue with nothing to read it against. */}
       <div className="absolute bottom-10 left-4 z-10 sm:bottom-6">
-        <MapLegend showDerivedNote />
+        <MapLegend
+          showDerivedNote
+          open={legendOpen}
+          onOpenChange={setLegendOpen}
+        />
       </div>
 
       {/* right: selected lot panel */}
