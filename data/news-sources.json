@@ -1,0 +1,74 @@
+{
+  "$schema": "../schema/news-sources.schema.json",
+  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Checked 2026-09-07. Bulgaria and Serbia have no reachable feed yet (api.bg did not answer, koridorisrbije.rs serves HTML, putevi-srbije.rs and metropolitan.bg return 404), so those countries are covered only by the Wikipedia article histories the projects cite, which the script watches without needing an entry here. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole.",
+  "sources": [
+    {
+      "id": "hotnews",
+      "name": "HotNews",
+      "url": "https://hotnews.ro/rss",
+      "country": "ro",
+      "language": "ro",
+      "focus": "general"
+    },
+    {
+      "id": "economedia",
+      "name": "Economedia",
+      "url": "https://economedia.ro/feed",
+      "country": "ro",
+      "language": "ro",
+      "focus": "general",
+      "note": "Business daily with a regular infrastructure beat."
+    },
+    {
+      "id": "economica",
+      "name": "Economica.net",
+      "url": "https://www.economica.net/rss",
+      "country": "ro",
+      "language": "ro",
+      "focus": "general"
+    },
+    {
+      "id": "zf",
+      "name": "Ziarul Financiar",
+      "url": "https://www.zf.ro/rss",
+      "country": "ro",
+      "language": "ro",
+      "focus": "general"
+    },
+    {
+      "id": "g4media",
+      "name": "G4Media",
+      "url": "https://www.g4media.ro/feed",
+      "country": "ro",
+      "language": "ro",
+      "focus": "general"
+    },
+    {
+      "id": "profit",
+      "name": "Profit.ro",
+      "url": "https://www.profit.ro/rss",
+      "country": "ro",
+      "language": "ro",
+      "focus": "general",
+      "note": "Served with a text/html content type; the body is RSS 2.0."
+    },
+    {
+      "id": "clubferoviar",
+      "name": "Club Feroviar",
+      "url": "https://clubferoviar.ro/feed/",
+      "country": "ro",
+      "language": "ro",
+      "focus": "infrastructure",
+      "note": "Rail trade press: CFR, Metrorex, rolling stock and line works."
+    },
+    {
+      "id": "proinfrastructura",
+      "name": "Pro Infrastructura",
+      "url": "https://proinfrastructura.ro/feed/",
+      "country": "ro",
+      "language": "ro",
+      "focus": "infrastructure",
+      "note": "The association's own reporting on motorway and rail sections."
+    }
+  ]
+}

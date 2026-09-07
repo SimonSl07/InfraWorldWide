@@ -1,0 +1,91 @@
+name: News digest
+
+# What the infrastructure press and the cited Wikipedia articles said in the
+# last two weeks, matched to the sections in data/projects. A report for a
+# person: nothing here writes to data/, and a source outage is a line in the
+# digest, not a red run. One issue is kept current and edited only when the
+# digest actually changed, so the notification means something. The weekly
+# scheduled-checks.yml is the pattern; this runs daily because news does.
+
+on:
+  schedule:
+    # Daily, 05:17 UTC. Off the hour, because everything is scheduled on it.
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: news-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    name: Fetch feeds, update the digest issue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # The seen-state is what turns a feed into "since the last run". It is
+      # a record of what the feeds carried, not site data, so it lives in the
+      # Actions cache rather than the repo: a fresh key per run makes every
+      # run save it, and the prefix restores the most recent one.
+      - name: Restore the seen-state
+        uses: actions/cache@v4
+        with:
+          path: .news
+          key: news-state-${{ github.run_id }}
+          restore-keys: |
+            news-state-
+
+      # Exits 0 whatever the feeds do; a failed source is listed in the body.
+      - name: Fetch and match
+        run: |
+          mkdir -p .news reports
+          npx tsx scripts/fetch-news.ts --state .news/seen.json --out reports/news.md
+        env:
+          NODE_OPTIONS: --no-warnings
+
+      - name: Assemble the report
+        id: report
+        run: |
+          cp reports/news.md body.md
+          # Fingerprint the content, so an unchanged digest updates nothing.
+          FINGERPRINT=$(sha256sum body.md | cut -c1-16)
+          echo "" >> body.md
+          echo "<!-- fingerprint: $FINGERPRINT -->" >> body.md
+          echo "fingerprint=$FINGERPRINT" >> "$GITHUB_OUTPUT"
+          cat reports/news.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the digest issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TITLE: "Infrastructure news digest"
+          LABEL: news-digest
+          FINGERPRINT: ${{ steps.report.outputs.fingerprint }}
+        run: |
+          gh label create "$LABEL" \
+            --description "Daily digest of infrastructure news matched to sections" --color 1d76db 2>/dev/null || true
+
+          NUMBER=$(gh issue list --label "$LABEL" --state open --limit 1 --json number --jq '.[0].number // empty')
+
+          if [ -z "$NUMBER" ]; then
+            gh issue create --title "$TITLE" --label "$LABEL" --body-file body.md
+            exit 0
+          fi
+
+          if gh issue view "$NUMBER" --json body --jq .body | grep -q "fingerprint: $FINGERPRINT"; then
+            echo "Issue #$NUMBER already carries this exact digest. Leaving it alone."
+            exit 0
+          fi
+
+          gh issue edit "$NUMBER" --body-file body.md
