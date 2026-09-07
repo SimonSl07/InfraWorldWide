@@ -106,7 +106,11 @@ export function newlyOpenedFilter({
   nowMonth,
 }: DeltaWindow): FilterSpecification {
   if (to <= from) {
-    return ["==", ["get", "lotId"], "__never__"] as unknown as FilterSpecification;
+    return [
+      "==",
+      ["get", "lotId"],
+      "__never__",
+    ] as unknown as FilterSpecification;
   }
   return [
     "all",

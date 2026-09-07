@@ -23,10 +23,10 @@ import type { BBox } from "./geo";
  *
  * Both sides are annotated against these types so a drift fails tsc
  * instead of turning into an undefined at runtime. The flattening itself
- * lives here rather than in the script for the same reason: build-data.ts
- * does its work at module scope, so nothing can import it to check what it
- * emits, and `partOf` went missing from every feature without a single test
- * being able to notice.
+ * lives here rather than in the script so a test can hold it to the type
+ * it is read back through: `partOf` went missing from every feature while
+ * the flattening was an expression inside build-data.ts that nothing
+ * imported.
  */
 
 /**
@@ -152,8 +152,8 @@ export interface CityMarkerProperties {
  * Here rather than inline in the build for the same reason as
  * `lotFeatureProperties`: `km` is a total that spans projects, AGENTS.md
  * requires every such total to answer to `countsTowardNetwork` in
- * `network-totals.test.ts`, and an expression at a script's module scope
- * cannot be imported to answer to anything.
+ * `network-totals.test.ts`, and a pure function beside the type is what
+ * can answer there.
  */
 export function cityMarkerProperties(
   key: string,
@@ -170,9 +170,7 @@ export function cityMarkerProperties(
     km: cityProjects.reduce(
       (sum, p) =>
         sum +
-        p.lots
-          .filter(countsTowardNetwork)
-          .reduce((s, l) => s + l.lengthKm, 0),
+        p.lots.filter(countsTowardNetwork).reduce((s, l) => s + l.lengthKm, 0),
       0,
     ),
     ...(bbox ? { bbox } : {}),

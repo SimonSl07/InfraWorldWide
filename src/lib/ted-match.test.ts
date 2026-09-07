@@ -49,7 +49,11 @@ function project(over: Partial<Project> = {}): Project {
     category: "highway",
     name: { en: "A7 Motorway (Moldavia Motorway)" },
     description: { en: "d" },
-    lots: [lot("dumbrava-mizil", { name: { en: "Dumbrava (A3) – Mizil (Ploiești–Buzău lot 1)" } })],
+    lots: [
+      lot("dumbrava-mizil", {
+        name: { en: "Dumbrava (A3) – Mizil (Ploiești–Buzău lot 1)" },
+      }),
+    ],
     sources: [{ title: "s", url: "https://example.org/" }],
     ...over,
   };
@@ -103,7 +107,11 @@ describe("placeTokens", () => {
 
 describe("routeRefs", () => {
   it("finds motorway, express and national road references", () => {
-    expect(routeRefs("Autostrada A7 si DEx12 catre DN 2")).toEqual(["a7", "dex12", "dn2"]);
+    expect(routeRefs("Autostrada A7 si DEx12 catre DN 2")).toEqual([
+      "a7",
+      "dex12",
+      "dn2",
+    ]);
   });
 
   it("reads a Bulgarian ref written with a space", () => {
@@ -143,7 +151,9 @@ describe("scoreNotice", () => {
     });
     const result = scoreNotice(maintenance, p.lots[0], p);
     expect(result.reasons).toContain("maintenance or framework notice");
-    expect(result.score).toBeLessThan(scoreNotice(notice(), p.lots[0], p).score);
+    expect(result.score).toBeLessThan(
+      scoreNotice(notice(), p.lots[0], p).score,
+    );
   });
 
   it("rewards a route reference the title shares with the project", () => {
@@ -152,7 +162,11 @@ describe("scoreNotice", () => {
       p.lots[0],
       p,
     );
-    const withoutRef = scoreNotice(notice({ title: "Dumbrava Mizil" }), p.lots[0], p);
+    const withoutRef = scoreNotice(
+      notice({ title: "Dumbrava Mizil" }),
+      p.lots[0],
+      p,
+    );
     expect(withRef.score).toBeGreaterThan(withoutRef.score);
     expect(withRef.reasons).toContain("route ref a7");
   });
@@ -162,8 +176,16 @@ describe("scoreNotice", () => {
       name: { en: "Dumbrava – Mizil" },
       dates: { tenderAwarded: "2023-12" },
     });
-    const near = scoreNotice(notice({ publicationDate: "2024-01-15" }), dated, p);
-    const far = scoreNotice(notice({ publicationDate: "2015-01-15" }), dated, p);
+    const near = scoreNotice(
+      notice({ publicationDate: "2024-01-15" }),
+      dated,
+      p,
+    );
+    const far = scoreNotice(
+      notice({ publicationDate: "2015-01-15" }),
+      dated,
+      p,
+    );
     expect(near.score).toBeGreaterThan(far.score);
     expect(near.reasons).toContain("published near the recorded award");
   });
@@ -183,21 +205,39 @@ describe("noticeCategory", () => {
   // Every TED title is "<country> – <CPV label> – <national title>", and the
   // CPV label is the only part written in English on every notice.
   it("reads the CPV label out of the title", () => {
-    expect(noticeCategory("Romania – Construction work for highways, roads – X")).toBe("road");
-    expect(noticeCategory("Romania – Railway construction works – X")).toBe("rail");
-    expect(noticeCategory("Romania – Underground railway works – X")).toBe("rail");
-    expect(noticeCategory("Romania – Road bridge construction work – X")).toBe("structure");
-    expect(noticeCategory("Romania – Ring road construction work – X")).toBe("road");
+    expect(
+      noticeCategory("Romania – Construction work for highways, roads – X"),
+    ).toBe("road");
+    expect(noticeCategory("Romania – Railway construction works – X")).toBe(
+      "rail",
+    );
+    expect(noticeCategory("Romania – Underground railway works – X")).toBe(
+      "rail",
+    );
+    expect(noticeCategory("Romania – Road bridge construction work – X")).toBe(
+      "structure",
+    );
+    expect(noticeCategory("Romania – Ring road construction work – X")).toBe(
+      "road",
+    );
   });
 
   it("separates upkeep from construction", () => {
-    expect(noticeCategory("Romania – Highway maintenance work – X")).toBe("maintenance");
-    expect(noticeCategory("Romania – Road-repair works – X")).toBe("maintenance");
-    expect(noticeCategory("Romania – Bridge renewal construction work – X")).toBe("maintenance");
+    expect(noticeCategory("Romania – Highway maintenance work – X")).toBe(
+      "maintenance",
+    );
+    expect(noticeCategory("Romania – Road-repair works – X")).toBe(
+      "maintenance",
+    );
+    expect(
+      noticeCategory("Romania – Bridge renewal construction work – X"),
+    ).toBe("maintenance");
   });
 
   it("gives up rather than guessing", () => {
-    expect(noticeCategory("Romania – Building construction work – X")).toBe("other");
+    expect(noticeCategory("Romania – Building construction work – X")).toBe(
+      "other",
+    );
     expect(noticeCategory("no dashes at all")).toBe("other");
   });
 });
@@ -213,17 +253,24 @@ describe("scoreNotice category gate", () => {
 
   it("rejects a railway notice offered to a motorway lot", () => {
     const result = scoreNotice(
-      notice({ title: "Romania – Railway construction works – Dumbrava Mizil" }),
+      notice({
+        title: "Romania – Railway construction works – Dumbrava Mizil",
+      }),
       highway.lots[0],
       highway,
     );
     expect(result.confidence).toBe("none");
-    expect(result.reasons).toContain("railway notice against a highway project");
+    expect(result.reasons).toContain(
+      "railway notice against a highway project",
+    );
   });
 
   it("rejects a road notice offered to a railway lot", () => {
     const result = scoreNotice(
-      notice({ title: "Romania – Construction work for highways, roads – Dumbrava Mizil" }),
+      notice({
+        title:
+          "Romania – Construction work for highways, roads – Dumbrava Mizil",
+      }),
       railway.lots[0],
       railway,
     );
@@ -232,13 +279,19 @@ describe("scoreNotice category gate", () => {
 
   it("lets a bridge or tunnel notice stand against either", () => {
     const title = "Romania – Road bridge construction work – Dumbrava Mizil";
-    expect(scoreNotice(notice({ title }), highway.lots[0], highway).confidence).not.toBe("none");
-    expect(scoreNotice(notice({ title }), railway.lots[0], railway).confidence).not.toBe("none");
+    expect(
+      scoreNotice(notice({ title }), highway.lots[0], highway).confidence,
+    ).not.toBe("none");
+    expect(
+      scoreNotice(notice({ title }), railway.lots[0], railway).confidence,
+    ).not.toBe("none");
   });
 
   it("demotes an upkeep notice from its CPV label alone", () => {
     const result = scoreNotice(
-      notice({ title: "Romania – Road-repair works – Dumbrava Mizil Ploiesti Buzau" }),
+      notice({
+        title: "Romania – Road-repair works – Dumbrava Mizil Ploiesti Buzau",
+      }),
       highway.lots[0],
       highway,
     );
@@ -256,7 +309,9 @@ describe("token weighting", () => {
     name: { en: "Romanian road tunnels" },
     lots: [
       lot("poiana", { name: { en: "Poiana tunnel (A1 Pitești–Sibiu lot 3)" } }),
-      lot("caineni", { name: { en: "Câineni tunnel (A1 Pitești–Sibiu lot 2)" } }),
+      lot("caineni", {
+        name: { en: "Câineni tunnel (A1 Pitești–Sibiu lot 2)" },
+      }),
       lot("balota", { name: { en: "Balota tunnel (A1 Pitești–Sibiu lot 2)" } }),
     ],
   });
@@ -293,12 +348,18 @@ describe("token weighting", () => {
     const a8 = project({
       id: "ro-a8",
       name: { en: "A8 Motorway" },
-      lots: [lot("targu-mures-ditrau", { name: { en: "Târgu Mureș – Ditrău" } })],
+      lots: [
+        lot("targu-mures-ditrau", { name: { en: "Târgu Mureș – Ditrău" } }),
+      ],
     });
     const a3 = project({
       id: "ro-a3-transylvania",
       name: { en: "A3 Transylvania Motorway" },
-      lots: [lot("campia-turzii-targu-mures", { name: { en: "Câmpia Turzii – Târgu Mureș" } })],
+      lots: [
+        lot("campia-turzii-targu-mures", {
+          name: { en: "Câmpia Turzii – Târgu Mureș" },
+        }),
+      ],
     });
     const corridorAward = notice({
       title:
@@ -311,7 +372,8 @@ describe("token weighting", () => {
 
     // With the lot's own name present it can be high again.
     const named = notice({
-      title: "Romania – Construction work for highways, roads – Targu Mures - Ditrau sectiunea 1",
+      title:
+        "Romania – Construction work for highways, roads – Targu Mures - Ditrau sectiunea 1",
     });
     expect(scoreNotice(named, a8.lots[0], a8, weights).confidence).toBe("high");
   });
@@ -319,7 +381,9 @@ describe("token weighting", () => {
 
 describe("contractedMonths", () => {
   it("accepts a duration TED states in months", () => {
-    expect(contractedMonths({ durationValue: 48, durationUnit: "MONTH" })).toEqual({
+    expect(
+      contractedMonths({ durationValue: 48, durationUnit: "MONTH" }),
+    ).toEqual({
       months: 48,
       certain: true,
     });
@@ -334,23 +398,33 @@ describe("contractedMonths", () => {
   });
 
   it("refuses a duration in days rather than converting it", () => {
-    expect(contractedMonths({ durationValue: 1840, durationUnit: "DAY" })).toBeNull();
+    expect(
+      contractedMonths({ durationValue: 1840, durationUnit: "DAY" }),
+    ).toBeNull();
   });
 
   it("refuses a notice whose lots carry different units", () => {
     expect(
-      contractedMonths({ durationValue: 24, durationUnit: "MONTH | DAY | MONTH" }),
+      contractedMonths({
+        durationValue: 24,
+        durationUnit: "MONTH | DAY | MONTH",
+      }),
     ).toBeNull();
   });
 
   it("treats repeated identical units as one unit", () => {
     expect(
-      contractedMonths({ durationValue: 24, durationUnit: "MONTH | MONTH | MONTH" }),
+      contractedMonths({
+        durationValue: 24,
+        durationUnit: "MONTH | MONTH | MONTH",
+      }),
     ).toEqual({ months: 24, certain: true });
   });
 
   it("is null when there is no duration at all", () => {
-    expect(contractedMonths({ durationValue: null, durationUnit: "" })).toBeNull();
+    expect(
+      contractedMonths({ durationValue: null, durationUnit: "" }),
+    ).toBeNull();
   });
 });
 
@@ -368,7 +442,10 @@ describe("wouldAdd", () => {
   it("offers nothing when the lot is already complete", () => {
     const full = lot("dumbrava-mizil", {
       dates: { tenderAwarded: "2023-12" },
-      contract: { value: { amount: 1468, currency: "RON", year: 2022 }, executionMonths: 20 },
+      contract: {
+        value: { amount: 1468, currency: "RON", year: 2022 },
+        executionMonths: 20,
+      },
       contractors: [{ name: "Spedition UMB" }],
     });
     expect(wouldAdd(notice(), full)).toEqual([]);
@@ -376,9 +453,9 @@ describe("wouldAdd", () => {
 
   it("does not offer a duration it cannot express in months", () => {
     const bare = lot("dumbrava-mizil");
-    expect(wouldAdd(notice({ durationValue: 900, durationUnit: "DAY" }), bare)).not.toContain(
-      "contract.executionMonths",
-    );
+    expect(
+      wouldAdd(notice({ durationValue: 900, durationUnit: "DAY" }), bare),
+    ).not.toContain("contract.executionMonths");
   });
 });
 
@@ -399,7 +476,9 @@ describe("matchNotices", () => {
   });
 
   it("leaves out notices that match nothing", () => {
-    expect(matchNotices([notice({ title: "Snow clearing in Cluj county" })], [p])).toEqual([]);
+    expect(
+      matchNotices([notice({ title: "Snow clearing in Cluj county" })], [p]),
+    ).toEqual([]);
   });
 
   it("caps the candidates offered per notice", () => {

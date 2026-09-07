@@ -3,22 +3,16 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import type { FeatureCollection } from "geojson";
-import type { Project } from "@/lib/schema";
-import { fetchJson } from "@/lib/fetch-json";
+import { currentMonth } from "@/lib/contract";
 import {
   computeMaxMonth,
   computeMinMonth,
   HARD_MIN_MONTH,
-  parseCityParam,
-  parseCountryParam,
-  parseLotRef,
   parseSelectionParam,
   parseMonthParam,
+  parseSpeedParam,
   parseViewParam,
-  resolveLotRef,
   serializeMapParams,
-  toMonthIndex,
   type CategoryStatusSelection,
   type MapView,
 } from "@/lib/map-filters";
@@ -30,18 +24,10 @@ import {
   parseBasemapParam,
 } from "@/lib/basemaps";
 import { geometryBounds, type BBox } from "@/lib/geo";
-import {
-  DEFAULT_SPEED_INDEX,
-  SPEED_STEPS,
-} from "@/lib/playback";
-import { rankCountries, findCountry } from "@/lib/country-stats";
-import { openedKmByDecade } from "@/lib/country-growth";
-import type { CityTable, CountryTable } from "@/lib/schema";
-import InfraMap, {
-  DEFAULT_VIEW,
-  type CityMarkerProps,
-  type LotFeatureProps,
-} from "./InfraMap";
+import { DEFAULT_SPEED_INDEX, SPEED_STEPS } from "@/lib/playback";
+import { useMapArtifacts } from "./useMapArtifacts";
+import { useMapSelection } from "./useMapSelection";
+import InfraMap, { DEFAULT_VIEW } from "./InfraMap";
 import TimeSlider from "./TimeSlider";
 import CategoryToggle from "./CategoryToggle";
 import MapLegend from "./MapLegend";
@@ -66,45 +52,40 @@ export default function MapExplorer({
 }) {
   const t = useTranslations();
   const searchParams = useSearchParams();
-  const now = new Date();
-  // The timeline steps whole months and always lands on the 1st.
-  const nowMonth = toMonthIndex(now.getFullYear(), now.getMonth() + 1);
+  // The timeline steps whole months and always lands on the 1st. Read once,
+  // through the same UTC helper as the server pages, so the map and the
+  // panels beside it cannot straddle a month boundary.
+  const [nowMonth] = useState(() => currentMonth());
   // Generous URL-parse ceiling; the slider's actual max follows the data.
   const maxMonthParam = nowMonth + 15 * 12;
 
   const [month, setMonth] = useState(() =>
-    parseMonthParam(searchParams.get("t"), HARD_MIN_MONTH, maxMonthParam, nowMonth),
+    parseMonthParam(
+      searchParams.get("t"),
+      HARD_MIN_MONTH,
+      maxMonthParam,
+      nowMonth,
+    ),
   );
   const [playing, setPlaying] = useState(false);
-  const [speedIndex, setSpeedIndex] = useState(() => {
-    // Guard the null first: Number(null) is 0, which is a valid index, so
-    // a missing ?speed= would silently select the slowest speed instead of
-    // the default.
-    const param = searchParams.get("speed");
-    if (param === null) return DEFAULT_SPEED_INDEX;
-    const raw = Number(param);
-    return Number.isInteger(raw) && raw >= 0 && raw < SPEED_STEPS.length
-      ? raw
-      : DEFAULT_SPEED_INDEX;
-  });
+  const [speedIndex, setSpeedIndex] = useState(() =>
+    parseSpeedParam(
+      searchParams.get("speed"),
+      SPEED_STEPS.length,
+      DEFAULT_SPEED_INDEX,
+    ),
+  );
   const [selection, setSelection] = useState<CategoryStatusSelection>(() =>
     parseSelectionParam(searchParams.get("cat"), searchParams.get("st")),
   );
-  const [selected, setSelected] = useState<LotFeatureProps | null>(null);
-  const [selectedCountry, setSelectedCountry] = useState<string | null>(() =>
-    parseCountryParam(searchParams.get("c")),
-  );
-  const [selectedCity, setSelectedCity] = useState<string | null>(null);
-  // Captured at mount: the URL-sync effect below rewrites the query string
-  // before the async data load finishes, which would otherwise drop these.
-  const [initialSelRef] = useState(() => parseLotRef(searchParams.get("sel")));
-  const [initialCity] = useState(() => searchParams.get("city"));
   // The camera is read once. react-map-gl only looks at initialViewState on
   // mount, and every later move comes back through onViewChange.
   const [initialView] = useState(() => parseViewParam(searchParams.get("v")));
   const [view, setView] = useState<MapView | null>(initialView);
   /** Camera target for a search hit; the nonce is what re-fires it. */
-  const [focus, setFocus] = useState<{ bbox: BBox; nonce: number } | null>(null);
+  const [focus, setFocus] = useState<{ bbox: BBox; nonce: number } | null>(
+    null,
+  );
   const [copied, setCopied] = useState(false);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [basemapId, setBasemapId] = useState(
@@ -130,118 +111,38 @@ export default function MapExplorer({
     () => searchParams.get("cmp") !== null,
   );
 
-  const [geojson, setGeojson] = useState<FeatureCollection>({
-    type: "FeatureCollection",
-    features: [],
-  });
-  const [countryOutlines, setCountryOutlines] = useState<FeatureCollection>({
-    type: "FeatureCollection",
-    features: [],
-  });
-  const [cityMarkers, setCityMarkers] = useState<FeatureCollection>({
-    type: "FeatureCollection",
-    features: [],
-  });
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [countryTable, setCountryTable] = useState<CountryTable | null>(null);
-  const [cityTable, setCityTable] = useState<CityTable | null>(null);
-  /** Bumped by the retry button to re-run the load effect. */
-  const [reloadKey, setReloadKey] = useState(0);
-  // Tagged with the attempt it belongs to, so pressing retry puts the view
-  // back into its loading state without touching state during render.
-  const [outcome, setOutcome] = useState<{
-    key: number;
-    error: string | null;
-  } | null>(null);
-  const settled = outcome && outcome.key === reloadKey ? outcome : null;
-  const loading = settled === null;
-  const loadError = settled?.error ?? null;
+  const artifacts = useMapArtifacts();
+  const { geojson, countryOutlines, cityMarkers } = artifacts.data;
 
-  useEffect(() => {
-    let cancelled = false;
-    async function load() {
-      // The manifest names the country files, so it has to land first.
-      const manifest = await fetchJson<{ countries: string[] }>(
-        "/data/geo/manifest.json",
-      );
-      // Everything below is independent of everything else: awaiting them
-      // in turn cost one round trip each for no reason.
-      const [collections, idx, outlines, table, cityPoints, cityRefs] =
-        await Promise.all([
-          Promise.all(
-            manifest.countries.map((c) =>
-              fetchJson<FeatureCollection>(`/data/geo/${c}.geojson`),
-            ),
-          ),
-          fetchJson<{ projects: Project[] }>("/data/projects.json"),
-          fetchJson<FeatureCollection>("/data/geo/countries.geojson"),
-          fetchJson<CountryTable>("/data/countries.json"),
-          fetchJson<FeatureCollection>("/data/geo/cities.geojson"),
-          fetchJson<CityTable>("/data/cities.json"),
-        ]);
-      if (cancelled) return;
-      const merged: FeatureCollection = {
-        type: "FeatureCollection",
-        features: collections.flatMap((c) => c.features),
-      };
-      setGeojson(merged);
-      setProjects(idx.projects);
-      setCountryOutlines(outlines);
-      setCountryTable(table);
-      setCityMarkers(cityPoints);
-      setCityTable(cityRefs);
-
-      // A ?c= code that is not in the data has nothing to select: the panel
-      // would never mount, so there would be no × to press, while every lot
-      // on the map stayed dimmed against a country that isn't there. Drop it
-      // now that we know which countries actually exist.
-      setSelectedCountry((current) =>
-        current &&
-        !outlines.features.some((f) => f.properties?.country === current)
-          ? null
-          : current,
-      );
-
-      // Restore a shared ?city= link once the city table is available.
-      const city = parseCityParam(initialCity, Object.keys(cityRefs.cities));
-      if (city) setSelectedCity(city);
-
-      // Restore a shared ?sel= link once geometry is available.
-      if (initialSelRef) {
-        const candidates = merged.features
-          .map((f) => f.properties as unknown as LotFeatureProps | null)
-          .filter((p): p is LotFeatureProps => !!p?.lotId && p.marker !== true);
-        // Lot ids repeat across projects: three Danube crossings each own a
-        // lot called "main-bridge". An unqualified id that names more than
-        // one of them selects none, rather than silently the first.
-        const hit = resolveLotRef(candidates, initialSelRef);
-        if (hit) {
-          setSelected(hit);
-          // A link carrying both ?sel= and ?c= must not open both panels
-          // into the same corner. The lot wins, as it does in the URL.
-          setSelectedCountry(null);
-          setSelectedCity(null);
-        }
-      }
-    }
-    load()
-      .then(() => {
-        if (!cancelled) setOutcome({ key: reloadKey, error: null });
-      })
-      .catch((cause: unknown) => {
-        if (cancelled) return;
-        // Without this the map used to sit on an empty basemap forever:
-        // the only trace of a missing artifact was a console line.
-        console.error(cause);
-        setOutcome({
-          key: reloadKey,
-          error: cause instanceof Error ? cause.message : String(cause),
-        });
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [initialSelRef, initialCity, reloadKey]);
+  // One lot, one country or one city, never two at once, plus the part of
+  // a shared link that cannot be read until the data is here. The hook
+  // reads the parameters at mount: the URL-sync effect below rewrites the
+  // query string before the load finishes, which would otherwise drop them.
+  const {
+    selected,
+    selectedCountry,
+    selectedCity,
+    selectedProject,
+    selectedLot,
+    selectedCountryStats,
+    selectedCountryGrowth,
+    selectedCityRef,
+    selectedCityMarker,
+    handleSelectLot,
+    handleSelectCountry,
+    handleSelectCity,
+    setSelected,
+    setSelectedCountry,
+    setSelectedCity,
+  } = useMapSelection(
+    {
+      sel: searchParams.get("sel"),
+      city: searchParams.get("city"),
+      c: searchParams.get("c"),
+    },
+    artifacts,
+    { month, nowMonth },
+  );
 
   // Keep the URL shareable without triggering Next.js navigation.
   useEffect(() => {
@@ -287,76 +188,11 @@ export default function MapExplorer({
     };
   }, []);
 
-  const selectedProject = useMemo(
-    () => projects.find((p) => p.id === selected?.projectId),
-    [projects, selected],
-  );
-
-  // Recomputed as the timeline moves: the panel reports the map's state in
-  // the viewed month, ranks included.
-  const ranked = useMemo(
-    () =>
-      countryTable
-        ? rankCountries(projects, countryTable.countries, month, nowMonth)
-        : [],
-    [projects, countryTable, month, nowMonth],
-  );
-  const selectedCountryStats = useMemo(
-    () => (selectedCountry ? findCountry(ranked, selectedCountry) : null),
-    [ranked, selectedCountry],
-  );
-  // Growth is history, not a function of the viewed month, so it is keyed
-  // only on the country.
-  const selectedCountryGrowth = useMemo(
-    () =>
-      selectedCountry ? openedKmByDecade(projects, selectedCountry) : [],
-    [projects, selectedCountry],
-  );
-
-  // One selection at a time — all three panels occupy the same corner.
-  const handleSelectLot = useCallback((props: LotFeatureProps | null) => {
-    setSelected(props);
-    if (props) {
-      setSelectedCountry(null);
-      setSelectedCity(null);
-    }
-  }, []);
-
-  const handleSelectCountry = useCallback((code: string | null) => {
-    setSelectedCountry(code);
-    if (code) {
-      setSelected(null);
-      setSelectedCity(null);
-    }
-  }, []);
-
-  const handleSelectCity = useCallback((key: string | null) => {
-    setSelectedCity(key);
-    if (key) {
-      setSelected(null);
-      setSelectedCountry(null);
-    }
-  }, []);
-
-  const selectedCityRef = useMemo(
-    () => (selectedCity ? cityTable?.cities[selectedCity] ?? null : null),
-    [cityTable, selectedCity],
-  );
-  const selectedCityMarker = useMemo(() => {
-    const feature = cityMarkers.features.find(
-      (f) => f.properties?.city === selectedCity,
-    );
-    return (feature?.properties as unknown as CityMarkerProps) ?? null;
-  }, [cityMarkers, selectedCity]);
-
   // Slider bounds follow the data (bridges from 1895; expected openings).
   const minMonth = useMemo(() => computeMinMonth(geojson.features), [geojson]);
   const maxMonth = useMemo(
     () => computeMaxMonth(geojson.features, nowMonth),
     [geojson, nowMonth],
-  );  const selectedLot = useMemo(
-    () => selectedProject?.lots.find((l) => l.id === selected?.lotId),
-    [selectedProject, selected],
   );
 
   const handleMonthChange = useCallback((m: number) => setMonth(m), []);
@@ -462,29 +298,30 @@ export default function MapExplorer({
           lots={allLots}
         />
       ) : (
-      <InfraMap
-        geojson={geojson}
-        countries={countryOutlines}
-        cities={cityMarkers}
-        month={month}
-        selection={selection}
-        selectedLotId={selected?.lotId ?? null}
-        selectedCountry={selectedCountry}
-        selectedCity={selectedCity}
-        onSelectLot={handleSelectLot}
-        onSelectCountry={handleSelectCountry}
-        onSelectCity={handleSelectCity}
-        locale={locale}
-        initialView={initialView}
-        onViewChange={handleViewChange}
-        focus={focus}
-        newlyOpened={newlyOpened}
-        mapStyle={basemapUrl(basemapId)}
-      />
+        <InfraMap
+          geojson={geojson}
+          countries={countryOutlines}
+          cities={cityMarkers}
+          month={month}
+          nowMonth={nowMonth}
+          selection={selection}
+          selectedLotId={selected?.lotId ?? null}
+          selectedCountry={selectedCountry}
+          selectedCity={selectedCity}
+          onSelectLot={handleSelectLot}
+          onSelectCountry={handleSelectCountry}
+          onSelectCity={handleSelectCity}
+          locale={locale}
+          initialView={initialView}
+          onViewChange={handleViewChange}
+          focus={focus}
+          newlyOpened={newlyOpened}
+          mapStyle={basemapUrl(basemapId)}
+        />
       )}
 
       {/* A cold load used to show a bare basemap with no explanation. */}
-      {loading && (
+      {artifacts.loading && (
         <div className="pointer-events-none absolute inset-x-0 top-4 z-20 flex justify-center">
           <div className="rounded-full border border-line bg-surface/95 px-4 py-2 text-sm text-ink-soft shadow backdrop-blur">
             {t("map.loading")}
@@ -492,21 +329,19 @@ export default function MapExplorer({
         </div>
       )}
 
-      {loadError && (
+      {artifacts.error && (
         <div className="absolute inset-0 z-20 flex items-center justify-center bg-surface/70 p-4 backdrop-blur-xs">
           <div
             role="alert"
             className="max-w-sm rounded-xl border border-line bg-surface px-5 py-4 text-center shadow-lg"
           >
-            <p className="text-sm font-medium text-ink">
-              {t("map.loadError")}
-            </p>
+            <p className="text-sm font-medium text-ink">{t("map.loadError")}</p>
             <p className="mt-1 text-xs break-words text-ink-muted">
-              {loadError}
+              {artifacts.error}
             </p>
             <button
               type="button"
-              onClick={() => setReloadKey((k) => k + 1)}
+              onClick={artifacts.retry}
               className="mt-4 cursor-pointer rounded-lg bg-inverse px-3 py-1.5 text-sm font-medium text-on-inverse hover:bg-inverse-soft"
             >
               {t("map.loadRetry")}

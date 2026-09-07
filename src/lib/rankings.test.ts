@@ -146,14 +146,23 @@ describe("collectLotMetrics", () => {
   });
 
   it("computes slip for delivered and in-progress lots alike", () => {
-    expect(byLot("l1").slip).toMatchObject({ kind: "completed", slipMonths: 12 });
-    expect(byLot("l2").slip).toMatchObject({ kind: "completed", slipMonths: -6 });
+    expect(byLot("l1").slip).toMatchObject({
+      kind: "completed",
+      slipMonths: 12,
+    });
+    expect(byLot("l2").slip).toMatchObject({
+      kind: "completed",
+      slipMonths: -6,
+    });
     expect(byLot("l3").slip).toMatchObject({ kind: "ongoing", slipMonths: 67 });
   });
 
   it("credits builders only, resolving aliases and joint ventures", () => {
     expect(byLot("l1").contractors.map((c) => c.id)).toEqual(["astaldi"]);
-    expect(byLot("l3").contractors.map((c) => c.id)).toEqual(["astaldi", "strabag"]);
+    expect(byLot("l3").contractors.map((c) => c.id)).toEqual([
+      "astaldi",
+      "strabag",
+    ]);
   });
 });
 
@@ -169,10 +178,9 @@ describe("coverage", () => {
 
 describe("lot rankings", () => {
   it("orders worst overruns first", () => {
-    expect(worstOverruns(metrics, "estimate").map((e) => e.metric.lotId)).toEqual([
-      "l1",
-      "l2",
-    ]);
+    expect(
+      worstOverruns(metrics, "estimate").map((e) => e.metric.lotId),
+    ).toEqual(["l1", "l2"]);
   });
 
   it("orders best overruns first", () => {
@@ -182,7 +190,9 @@ describe("lot rankings", () => {
   });
 
   it("keeps the two bases separate", () => {
-    expect(worstOverruns(metrics, "award").map((e) => e.metric.lotId)).toEqual(["l1"]);
+    expect(worstOverruns(metrics, "award").map((e) => e.metric.lotId)).toEqual([
+      "l1",
+    ]);
   });
 
   it("honours a limit", () => {
@@ -198,10 +208,12 @@ describe("lot rankings", () => {
   });
 
   it("filters slips by kind", () => {
-    expect(worstSlips(metrics, { kind: "completed" }).map((e) => e.metric.lotId))
-      .toEqual(["l1", "l2"]);
-    expect(worstSlips(metrics, { kind: "ongoing" }).map((e) => e.metric.lotId))
-      .toEqual(["l3"]);
+    expect(
+      worstSlips(metrics, { kind: "completed" }).map((e) => e.metric.lotId),
+    ).toEqual(["l1", "l2"]);
+    expect(
+      worstSlips(metrics, { kind: "ongoing" }).map((e) => e.metric.lotId),
+    ).toEqual(["l3"]);
   });
 
   it("ranks best slips over delivered lots only", () => {
@@ -219,9 +231,9 @@ describe("lot rankings", () => {
   });
 
   it("lists only lots that actually came in at or under budget", () => {
-    expect(underBudget(metrics, "estimate").map((e) => e.metric.lotId)).toEqual([
-      "l2",
-    ]);
+    expect(underBudget(metrics, "estimate").map((e) => e.metric.lotId)).toEqual(
+      ["l2"],
+    );
     expect(underBudget(metrics, "award")).toEqual([]);
   });
 });
@@ -254,7 +266,12 @@ describe("rankByContractor", () => {
   it("summarizes overrun and slip per firm", () => {
     expect(group("astaldi").overrun.estimate).toMatchObject({ n: 1 });
     expect(group("astaldi").overrun.estimate.median).toBeCloseTo(50, 6);
-    expect(group("astaldi").slip).toMatchObject({ n: 2, median: 39.5, worst: 67, best: 12 });
+    expect(group("astaldi").slip).toMatchObject({
+      n: 2,
+      median: 39.5,
+      worst: 67,
+      best: 12,
+    });
   });
 
   it("reports the share of delivered lots that were on time", () => {
@@ -318,7 +335,9 @@ describe("rankByCountry", () => {
       ],
       opts,
     );
-    const ro = rankByCountry([...metrics, ...extra]).find((g) => g.key === "ro")!;
+    const ro = rankByCountry([...metrics, ...extra]).find(
+      (g) => g.key === "ro",
+    )!;
     expect(ro.lots).toBe(2);
     expect(ro.km).toBe(30);
   });
@@ -329,13 +348,17 @@ describe("sortGroups", () => {
 
   it("puts the worst median first", () => {
     expect(
-      sortGroups(groups, { metric: "slip", direction: "worst" }).map((g) => g.key),
+      sortGroups(groups, { metric: "slip", direction: "worst" }).map(
+        (g) => g.key,
+      ),
     ).toEqual(["astaldi", "strabag"]);
   });
 
   it("puts the best median first", () => {
     expect(
-      sortGroups(groups, { metric: "slip", direction: "best" }).map((g) => g.key),
+      sortGroups(groups, { metric: "slip", direction: "best" }).map(
+        (g) => g.key,
+      ),
     ).toEqual(["strabag", "astaldi"]);
   });
 
@@ -350,22 +373,38 @@ describe("sortGroups", () => {
 
   it("drops groups below the sample threshold", () => {
     expect(
-      sortGroups(groups, { metric: "overrunEstimate", direction: "worst", minLots: 2 }),
+      sortGroups(groups, {
+        metric: "overrunEstimate",
+        direction: "worst",
+        minLots: 2,
+      }),
     ).toEqual([]);
     expect(
-      sortGroups(groups, { metric: "slip", direction: "worst", minLots: 2 }).map(
-        (g) => g.key,
-      ),
+      sortGroups(groups, {
+        metric: "slip",
+        direction: "worst",
+        minLots: 2,
+      }).map((g) => g.key),
     ).toEqual(["astaldi", "strabag"]);
   });
 
   it("breaks ties on sample size", () => {
     const tied = [
-      { ...groups[0], key: "small", slip: { n: 1, median: 5, worst: 5, best: 5 } },
-      { ...groups[0], key: "large", slip: { n: 9, median: 5, worst: 5, best: 5 } },
+      {
+        ...groups[0],
+        key: "small",
+        slip: { n: 1, median: 5, worst: 5, best: 5 },
+      },
+      {
+        ...groups[0],
+        key: "large",
+        slip: { n: 9, median: 5, worst: 5, best: 5 },
+      },
     ];
     expect(
-      sortGroups(tied, { metric: "slip", direction: "worst" }).map((g) => g.key),
+      sortGroups(tied, { metric: "slip", direction: "worst" }).map(
+        (g) => g.key,
+      ),
     ).toEqual(["large", "small"]);
   });
 

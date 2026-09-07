@@ -28,9 +28,7 @@ export default function LocaleError({
       <p className="mt-3 text-ink-soft">{t("error.body")}</p>
       {/* The digest is the only handle on the server-side log line. */}
       {error.digest && (
-        <p className="mt-2 font-mono text-xs text-ink-faint">
-          {error.digest}
-        </p>
+        <p className="mt-2 font-mono text-xs text-ink-faint">{error.digest}</p>
       )}
       <div className="mt-8 flex items-center gap-3">
         <button

@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
   geojsonBounds,
-  featuresForProject,
   nearestFeature,
   distanceToFeature,
   lineLength,
@@ -35,15 +34,9 @@ describe("geojsonBounds", () => {
     expect(geojsonBounds(fc)).toEqual([25.5, 44.5, 27.0, 45.8]);
   });
   it("returns null for an empty collection", () => {
-    expect(geojsonBounds({ type: "FeatureCollection", features: [] })).toBeNull();
-  });
-});
-
-describe("featuresForProject", () => {
-  it("filters features by projectId", () => {
-    const features = featuresForProject(fc, "ro-a1");
-    expect(features).toHaveLength(1);
-    expect(features[0].geometry.type).toBe("LineString");
+    expect(
+      geojsonBounds({ type: "FeatureCollection", features: [] }),
+    ).toBeNull();
   });
 });
 
@@ -106,9 +99,7 @@ describe("lineLength", () => {
   });
 
   it("returns 0 for a degenerate single-position line", () => {
-    expect(
-      lineLength({ type: "LineString", coordinates: [[25, 44]] }),
-    ).toBe(0);
+    expect(lineLength({ type: "LineString", coordinates: [[25, 44]] })).toBe(0);
   });
 
   it("returns 0 for an empty line and for non-line geometries", () => {
@@ -158,8 +149,12 @@ describe("nearestFeature", () => {
 
   it("picks the geometrically closer line, not the first in the list", () => {
     // click nearer B even though A comes first in the hit list
-    expect(nearestFeature([lineA, lineB], [2, 0.008])?.properties?.lotId).toBe("b");
-    expect(nearestFeature([lineA, lineB], [2, 0.001])?.properties?.lotId).toBe("a");
+    expect(nearestFeature([lineA, lineB], [2, 0.008])?.properties?.lotId).toBe(
+      "b",
+    );
+    expect(nearestFeature([lineA, lineB], [2, 0.001])?.properties?.lotId).toBe(
+      "a",
+    );
   });
 
   it("measures distance to segments, not just vertices", () => {

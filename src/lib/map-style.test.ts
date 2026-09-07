@@ -22,6 +22,10 @@ import {
   pickedFillOpacity,
   pickedOutlineWidth,
 } from "./map-style";
+import { DARK_MAP, LIGHT_MAP } from "./map-theme";
+
+/** Every palette a themed expression can be handed. */
+const THEMES = [LIGHT_MAP, DARK_MAP];
 
 /**
  * MapLibre validates paint expressions at runtime and silently drops the
@@ -65,7 +69,9 @@ describe("dimByCountry", () => {
   it("builds a valid line-opacity expression", () => {
     for (const selected of SELECTIONS) {
       for (const full of [0.4, 0.55, 0.7, 0.95, 1]) {
-        expect(validate(dimByCountry(full, selected), "line-opacity")).toBeNull();
+        expect(
+          validate(dimByCountry(full, selected), "line-opacity"),
+        ).toBeNull();
       }
     }
   });
@@ -73,7 +79,11 @@ describe("dimByCountry", () => {
   it("builds a valid circle-opacity expression", () => {
     for (const selected of SELECTIONS) {
       expect(
-        validate(dimByCountry(0.95, selected), "circle-opacity", "paint_circle"),
+        validate(
+          dimByCountry(0.95, selected),
+          "circle-opacity",
+          "paint_circle",
+        ),
       ).toBeNull();
     }
   });
@@ -102,8 +112,14 @@ describe("country layer paint", () => {
 
   it("builds valid outline expressions", () => {
     for (const selected of SELECTIONS) {
-      expect(validate(countryOutlineOpacity(selected), "line-opacity")).toBeNull();
-      expect(validate(countryOutlineColor(selected), "line-color")).toBeNull();
+      expect(
+        validate(countryOutlineOpacity(selected), "line-opacity"),
+      ).toBeNull();
+      for (const theme of THEMES) {
+        expect(
+          validate(countryOutlineColor(selected, theme), "line-color"),
+        ).toBeNull();
+      }
       expect(validate(countryOutlineWidth(selected), "line-width")).toBeNull();
     }
   });
@@ -137,7 +153,9 @@ describe("city view paint", () => {
   it("builds valid opacity expressions", () => {
     for (const selected of [null, "ro-metro-m5"]) {
       for (const full of [0.6, 0.8, 0.95, 1]) {
-        expect(validate(dimByProject(full, selected), "line-opacity")).toBeNull();
+        expect(
+          validate(dimByProject(full, selected), "line-opacity"),
+        ).toBeNull();
       }
       expect(
         validate(
@@ -172,9 +190,11 @@ describe("country picker paint", () => {
           ),
         ).toBeNull();
       }
-      expect(
-        validate(pickedFillColor(picked), "fill-color", "paint_fill"),
-      ).toBeNull();
+      for (const theme of THEMES) {
+        expect(
+          validate(pickedFillColor(picked, theme), "fill-color", "paint_fill"),
+        ).toBeNull();
+      }
       expect(validate(pickedOutlineWidth(picked), "line-width")).toBeNull();
     }
   });
@@ -205,7 +225,9 @@ describe("category colours", () => {
 
   it("builds a paint expression the spec accepts", () => {
     expect(validate(categoryColorExpr(), "line-color")).toBeNull();
-    expect(validate(categoryColorExpr(), "circle-color", "paint_circle")).toBeNull();
+    expect(
+      validate(categoryColorExpr(), "circle-color", "paint_circle"),
+    ).toBeNull();
   });
 
   it("maps every category to its own colour, with a fallback", () => {
@@ -267,5 +289,23 @@ describe("map statuses", () => {
     for (const status of MAP_STATUSES.filter((s) => s !== "opened")) {
       expect(STATUS_DASHES[status]?.length).toBeGreaterThan(0);
     }
+  });
+});
+
+describe("themed colours", () => {
+  it("draws the outline and the picker in the palette it is handed", () => {
+    // The light values are the defaults, so a caller that passes nothing
+    // draws exactly what it drew before the theme existed.
+    expect(countryOutlineColor("ro")).toContain(LIGHT_MAP.countryOutline);
+    expect(countryOutlineColor("ro", DARK_MAP)).toContain(
+      DARK_MAP.countryOutline,
+    );
+    expect(countryOutlineColor("ro", DARK_MAP)).toContain(
+      DARK_MAP.countryOutlineMuted,
+    );
+    expect(pickedFillColor(["ro"], DARK_MAP)).toContain(DARK_MAP.pickerPicked);
+    expect(pickedFillColor(["ro"], DARK_MAP)).toContain(
+      DARK_MAP.pickerUnpicked,
+    );
   });
 });

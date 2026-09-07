@@ -81,14 +81,17 @@ describe("lotFeatureProperties", () => {
   it.each([
     ["sharedWith", { sharedWith: "ro-metro-m1" }],
     ["partOf", { partOf: "ro-a1" }],
-  ])("carries %s, so a client-side total can exclude the lot", (_name, marker) => {
-    const props = lotFeatureProperties(
-      project({ id: "ro-tunnels" }),
-      lot(marker),
-    );
-    expect(props).toMatchObject(marker);
-    expect(countsTowardNetwork(props)).toBe(false);
-  });
+  ])(
+    "carries %s, so a client-side total can exclude the lot",
+    (_name, marker) => {
+      const props = lotFeatureProperties(
+        project({ id: "ro-tunnels" }),
+        lot(marker),
+      );
+      expect(props).toMatchObject(marker);
+      expect(countsTowardNetwork(props)).toBe(false);
+    },
+  );
 
   it("lets an ordinary lot count", () => {
     expect(countsTowardNetwork(lotFeatureProperties(project(), lot()))).toBe(

@@ -1,7 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getProjects } from "@/lib/data";
-import { computeStats } from "@/lib/stats";
+import { computeStats, RECENT_YEARS } from "@/lib/stats";
 import { pageMetadata } from "@/lib/page-metadata";
 import { formatNumber } from "@/lib/format";
 
@@ -28,14 +28,24 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   setRequestLocale(lang);
   const t = await getTranslations("home");
 
-  const stats = computeStats(getProjects(), new Date().getFullYear());
+  const stats = computeStats(
+    getProjects(),
+    new Date().getFullYear(),
+    RECENT_YEARS,
+  );
 
   const km = (value: number) => `${formatNumber(Math.round(value), lang)} km`;
 
   const statItems = [
-    { value: formatNumber(stats.projectCount, lang), label: t("statsProjects") },
+    {
+      value: formatNumber(stats.projectCount, lang),
+      label: t("statsProjects"),
+    },
     { value: km(stats.openedKm), label: t("statsOpenedKm") },
-    { value: km(stats.recentOpenedKm), label: t("statsRecentKm") },
+    {
+      value: km(stats.recentOpenedKm),
+      label: t("statsRecentKm", { years: RECENT_YEARS }),
+    },
     {
       value: km(stats.underConstructionKm),
       label: t("statsUnderConstructionKm"),

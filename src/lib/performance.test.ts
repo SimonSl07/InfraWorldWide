@@ -135,9 +135,7 @@ describe("toComparable", () => {
   });
 
   it("refuses a figure recorded without a price year", () => {
-    expect(
-      toComparable({ amount: 100, currency: "EUR" }, options),
-    ).toBeNull();
+    expect(toComparable({ amount: 100, currency: "EUR" }, options)).toBeNull();
   });
 
   it("refuses a programme figure even though it could be restated", () => {
@@ -161,7 +159,16 @@ describe("lotCostRows", () => {
 
   it("computes cost per kilometre from the comparable figure", () => {
     const rows = lotCostRows(
-      [metric({ lengthKm: 20, costs: { actual: money(500, "EUR", 2023), award: null, estimate: null } })],
+      [
+        metric({
+          lengthKm: 20,
+          costs: {
+            actual: money(500, "EUR", 2023),
+            award: null,
+            estimate: null,
+          },
+        }),
+      ],
       options,
     );
     expect(rows[0].perKm).toBeCloseTo(25, 6);
@@ -169,7 +176,15 @@ describe("lotCostRows", () => {
 
   it("keeps the recorded figure but nulls perKm when not comparable", () => {
     const rows = lotCostRows(
-      [metric({ costs: { actual: money(500, "BGN", 2023), award: null, estimate: null } })],
+      [
+        metric({
+          costs: {
+            actual: money(500, "BGN", 2023),
+            award: null,
+            estimate: null,
+          },
+        }),
+      ],
       options,
     );
     expect(rows[0].cost.recorded.currency).toBe("BGN");
@@ -181,7 +196,12 @@ describe("lotCostRows", () => {
     // lengthKm is schema-positive, but the guard is cheap and an Infinity
     // here would sort to the top of the table.
     const rows = lotCostRows(
-      [metric({ lengthKm: 0, costs: { actual: money(5, "EUR", 2023), award: null, estimate: null } })],
+      [
+        metric({
+          lengthKm: 0,
+          costs: { actual: money(5, "EUR", 2023), award: null, estimate: null },
+        }),
+      ],
       options,
     );
     expect(rows[0].perKm).toBeNull();
@@ -194,8 +214,16 @@ describe("projectCostRows", () => {
   it("sums comparable lot costs into one project total", () => {
     const rows = projectCostRows(
       [
-        metric({ lotId: "a", lengthKm: 10, costs: { actual: eur(100), award: null, estimate: null } }),
-        metric({ lotId: "b", lengthKm: 30, costs: { actual: eur(200), award: null, estimate: null } }),
+        metric({
+          lotId: "a",
+          lengthKm: 10,
+          costs: { actual: eur(100), award: null, estimate: null },
+        }),
+        metric({
+          lotId: "b",
+          lengthKm: 30,
+          costs: { actual: eur(200), award: null, estimate: null },
+        }),
       ],
       options,
     );
@@ -209,7 +237,11 @@ describe("projectCostRows", () => {
   it("reports a partial total rather than pretending it is whole", () => {
     const rows = projectCostRows(
       [
-        metric({ lotId: "a", lengthKm: 10, costs: { actual: eur(100), award: null, estimate: null } }),
+        metric({
+          lotId: "a",
+          lengthKm: 10,
+          costs: { actual: eur(100), award: null, estimate: null },
+        }),
         metric({ lotId: "b", lengthKm: 30 }),
       ],
       options,
@@ -225,7 +257,15 @@ describe("projectCostRows", () => {
 
   it("gives a null total when no lot could be restated", () => {
     const rows = projectCostRows(
-      [metric({ costs: { actual: money(100, "BGN", 2023), award: null, estimate: null } })],
+      [
+        metric({
+          costs: {
+            actual: money(100, "BGN", 2023),
+            award: null,
+            estimate: null,
+          },
+        }),
+      ],
       options,
     );
     expect(rows[0].total).toBeNull();
@@ -236,8 +276,16 @@ describe("projectCostRows", () => {
   it("groups lots by project", () => {
     const rows = projectCostRows(
       [
-        metric({ projectId: "ro-a1", lotId: "a", costs: { actual: eur(1), award: null, estimate: null } }),
-        metric({ projectId: "ro-a3", lotId: "b", costs: { actual: eur(2), award: null, estimate: null } }),
+        metric({
+          projectId: "ro-a1",
+          lotId: "a",
+          costs: { actual: eur(1), award: null, estimate: null },
+        }),
+        metric({
+          projectId: "ro-a3",
+          lotId: "b",
+          costs: { actual: eur(2), award: null, estimate: null },
+        }),
       ],
       options,
     );
@@ -250,7 +298,10 @@ describe("orderDescNullsLast", () => {
 
   it("orders descending and parks nulls at the end", () => {
     expect(orderDescNullsLast(rows, (r) => r.v).map((r) => r.v)).toEqual([
-      10, 3, -2, null,
+      10,
+      3,
+      -2,
+      null,
     ]);
   });
 
@@ -316,7 +367,9 @@ describe("openedLots", () => {
   });
 
   it("drops an opened lot with no recorded month", () => {
-    expect(openedLots([metric({ status: "opened", openedMonth: null })])).toEqual([]);
+    expect(
+      openedLots([metric({ status: "opened", openedMonth: null })]),
+    ).toEqual([]);
   });
 
   /**

@@ -50,7 +50,10 @@ describe("lotCitations", () => {
   });
 
   it("keeps sources recorded on the lot itself", () => {
-    const own: Source = { title: "Award notice", url: "https://ted.europa.eu/1" };
+    const own: Source = {
+      title: "Award notice",
+      url: "https://ted.europa.eu/1",
+    };
     const citations = lotCitations(lot({ sources: [own] }), projectSources);
     expect(citations.own).toEqual([own]);
   });

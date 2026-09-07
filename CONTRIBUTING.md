@@ -87,15 +87,15 @@ One more that is easy to miss: a project with a `city` key is off the main map a
 
 None of them run in `npm test`, and none write without being asked.
 
-| Script | Writes? |
-| --- | --- |
-| `report-gaps.ts` | No. Exit code is always 0: a gap is a task, not a defect |
-| `check-links.ts` | No |
-| `refresh-indices.ts` | Only with `--write`, and it refuses to invent values |
-| `fetch-osm-dates.ts` | Only with `--write`, to a snapshot it never reads back into the site |
-| `fetch-country-outlines.ts` | Yes, but `--diff` and `--check` compare instead |
-| `fetch-ted-contracts.ts` | Yes, to its `--out` file; `--diff` and `--check` compare instead |
-| `match-ted-lots.ts` | No. It emits candidates for a person to accept |
+| Script                      | Writes?                                                              |
+| --------------------------- | -------------------------------------------------------------------- |
+| `report-gaps.ts`            | No. Exit code is always 0: a gap is a task, not a defect             |
+| `check-links.ts`            | No                                                                   |
+| `refresh-indices.ts`        | Only with `--write`, and it refuses to invent values                 |
+| `fetch-osm-dates.ts`        | Only with `--write`, to a snapshot it never reads back into the site |
+| `fetch-country-outlines.ts` | Yes, but `--diff` and `--check` compare instead                      |
+| `fetch-ted-contracts.ts`    | Yes, to its `--out` file; `--diff` and `--check` compare instead     |
+| `match-ted-lots.ts`         | No. It emits candidates for a person to accept                       |
 
 `.github/workflows/scheduled-checks.yml` runs the gap report, the link check and the OSM date diff weekly, and keeps one issue up to date. It never fails a run.
 
@@ -103,5 +103,6 @@ None of them run in `npm test`, and none write without being asked.
 
 - One project, one country or one fix per pull request.
 - Say where each new figure came from. A link in the PR body is enough; the citation itself belongs in the data file.
-- `npm test`, `npm run lint` and `npx tsc --noEmit` all pass.
-- If you changed anything under `src/lib`, `scripts` or `data`, run `npm test` again after rebasing: the data-integrity test re-validates every committed file and catches cross-file breakage that a unit test cannot.
+- `npm test`, `npm run lint`, `npm run typecheck` and `npm run format:check` all pass. `npm run format` fixes the last one.
+- If you add or update a dependency, regenerate the lockfile with the npm that CI runs: `npx npm@10.9.4 install --package-lock-only`. npm 11 (Node 24) leaves out a nested `@swc/helpers` that npm 10 (Node 22) insists on, and `npm ci` then refuses the file. This has broken CI twice.
+- If you changed anything under `src/lib`, `scripts` or `data`, run `npm test` again after rebasing: the data-integrity test (`src/lib/validation/data-integrity.test.ts`) re-validates every committed file and catches cross-file breakage that a unit test cannot.

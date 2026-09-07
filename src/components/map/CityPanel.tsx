@@ -4,40 +4,19 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
-import { formatDate, formatKm } from "@/lib/format";
+import { formatDate, formatKm, formatNumber } from "@/lib/format";
+import { localized } from "@/lib/localized";
 import type { City } from "@/lib/schema";
-import type { CityMarkerProps } from "./InfraMap";
+import type { CityMarkerProperties } from "@/lib/map-features";
+import { ExternalLink } from "@/components/ui/ExternalLink";
+import { Figure } from "@/components/ui/Figure";
 
 interface CityPanelProps {
   cityKey: string;
   city: City;
   /** Counts from the map marker, so the panel and the marker agree. */
-  marker: CityMarkerProps | null;
+  marker: CityMarkerProperties | null;
   onClose: () => void;
-}
-
-function Figure({
-  label,
-  value,
-  note,
-}: {
-  label: string;
-  value: string;
-  note?: string;
-}) {
-  return (
-    <div>
-      <div className="text-xs text-ink-muted">{label}</div>
-      <div className="text-lg font-bold tabular-nums">
-        {value}
-        {note && (
-          <span className="ml-1.5 text-xs font-normal text-ink-faint">
-            {note}
-          </span>
-        )}
-      </div>
-    </div>
-  );
 }
 
 /**
@@ -56,8 +35,8 @@ export default function CityPanel({
 }: CityPanelProps) {
   const t = useTranslations();
   const locale = useLocale();
-  const name = locale === "ro" && city.name.ro ? city.name.ro : city.name.en;
-  const note = locale === "ro" && city.note?.ro ? city.note.ro : city.note?.en;
+  const name = localized(city.name, locale);
+  const note = city.note ? localized(city.note, locale) : undefined;
 
   return (
     <MapPanel onClose={onClose} labelledBy="map-panel-city-heading">
@@ -65,7 +44,10 @@ export default function CityPanel({
         <div className="text-[10px] font-semibold uppercase tracking-wide text-ink-muted">
           {t("city.panelKicker")}
         </div>
-        <h2 id="map-panel-city-heading" className="text-xl font-bold leading-tight">
+        <h2
+          id="map-panel-city-heading"
+          className="text-xl font-bold leading-tight"
+        >
           {name}
         </h2>
         <div className="mt-0.5 text-xs text-ink-muted">
@@ -78,12 +60,14 @@ export default function CityPanel({
 
       <div className="mt-4 grid grid-cols-2 gap-3">
         <Figure
+          variant="compact"
           label={t("city.population")}
-          value={city.population.toLocaleString(locale)}
+          value={formatNumber(city.population, locale)}
           note={`(${formatDate(city.populationDate, locale)})`}
         />
         {city.gdpPerCapita && (
           <Figure
+            variant="compact"
             label={t("city.gdpPerCapita")}
             value={city.gdpPerCapita.amount.toLocaleString(locale, {
               style: "currency",
@@ -121,14 +105,12 @@ export default function CityPanel({
           {t("city.seeMore")}
         </Link>
         {city.link && (
-          <a
+          <ExternalLink
             href={city.link}
-            target="_blank"
-            rel="noreferrer"
             className="text-sm text-ink-muted underline underline-offset-2 hover:text-ink"
           >
             {t("city.officialSite")}
-          </a>
+          </ExternalLink>
         )}
       </div>
     </MapPanel>

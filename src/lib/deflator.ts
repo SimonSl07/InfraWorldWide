@@ -17,8 +17,7 @@ export type DeflateFailure =
   | "missing_price_year";
 
 export type DeflateResult =
-  | { ok: true; money: Money }
-  | { ok: false; reason: DeflateFailure };
+  { ok: true; money: Money } | { ok: false; reason: DeflateFailure };
 
 /**
  * Restates a Money value in `targetYear` prices, keeping its currency.
@@ -59,12 +58,6 @@ export function createDeflator(table: DeflatorTable): Deflator {
     };
   };
 }
-
-/** A Deflator that always fails — for callers that want nominal figures only. */
-export const nominalDeflator: Deflator = () => ({
-  ok: false,
-  reason: "year_out_of_range",
-});
 
 /** Latest year present in a currency's series, or null if it has none. */
 export function latestYear(

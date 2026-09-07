@@ -18,7 +18,12 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { buildReference, centerline, insertVias, sliceByChainage } from "./route-projection";
+import {
+  buildReference,
+  centerline,
+  insertVias,
+  sliceByChainage,
+} from "./route-projection";
 
 type LngLat = [number, number];
 
@@ -238,7 +243,9 @@ out geom;
       } catch (e) {
         lastError = e as Error;
         const wait = 2000 * (attempt + 1);
-        console.warn(`  ${url} failed (${lastError.message}); retrying in ${wait / 1000}s…`);
+        console.warn(
+          `  ${url} failed (${lastError.message}); retrying in ${wait / 1000}s…`,
+        );
         await new Promise((r) => setTimeout(r, wait));
       }
     }

@@ -1,16 +1,12 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import {
-  getContractors,
+  getAnalysisContext,
   getDeflators,
   getFxTable,
-  getProjects,
+  getLotMetrics,
 } from "@/lib/data";
-import { commonLatestYear, createDeflator } from "@/lib/deflator";
-import { createConverter } from "@/lib/fx";
-import { createContractorResolver } from "@/lib/contractors";
 import { currentMonth } from "@/lib/slip";
 import {
-  collectLotMetrics,
   crossProjectMetrics,
   coverage,
   rankByContractor,
@@ -28,6 +24,7 @@ import {
 import { formatMonth } from "@/lib/format";
 import { createLocalizer } from "@/lib/localized";
 import { pageMetadata } from "@/lib/page-metadata";
+import { ExternalLink } from "@/components/ui/ExternalLink";
 import PerformanceTables, {
   type CostRowData,
   type GroupRow,
@@ -63,31 +60,13 @@ export default async function RankingsPage({
 
   const name = createLocalizer(lang);
 
-  const projects = getProjects();
+  // Read here only for the sources list and the base currency; the price
+  // basis itself comes from the shared context.
   const deflators = getDeflators();
   const fx = getFxTable();
-  // Newest price year every currency covers, so cross-country figures stay
-  // mutually comparable.
-  const priceYear = commonLatestYear(deflators) ?? deflators.baseYear;
   const nowMonth = currentMonth(new Date());
-  const deflate = createDeflator(deflators);
-  const convert = createConverter(fx);
-
-  const metrics = collectLotMetrics(projects, {
-    deflate,
-    // Lets an overrun be measured when the estimate and the outturn were
-    // recorded in different currencies, which the comparison used to refuse.
-    convert,
-    priceYear,
-    resolve: createContractorResolver(getContractors()),
-    nowMonth,
-  });
-
-  const costOptions = {
-    deflate,
-    convert,
-    priceYear,
-  };
+  const { costOptions, priceYear } = getAnalysisContext(nowMonth);
+  const metrics = getLotMetrics(nowMonth);
 
   const cov = coverage(metrics);
 
@@ -219,14 +198,12 @@ export default async function RankingsPage({
             {[...deflators.sources, ...fx.sources].map((s, i) => (
               <span key={s.url}>
                 {i > 0 && ", "}
-                <a
+                <ExternalLink
                   href={s.url}
-                  target="_blank"
-                  rel="noreferrer"
                   className="underline underline-offset-2 hover:text-ink"
                 >
                   {s.title}
-                </a>
+                </ExternalLink>
               </span>
             ))}
             .

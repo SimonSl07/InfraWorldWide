@@ -75,7 +75,10 @@ describe("odblEndpoints", () => {
 describe("parseBuildStamp", () => {
   it("reads the generated timestamp and the commit", () => {
     expect(
-      parseBuildStamp({ generated: "2026-08-13T23:40:19.603Z", commit: "a6965a6" }),
+      parseBuildStamp({
+        generated: "2026-08-13T23:40:19.603Z",
+        commit: "a6965a6",
+      }),
     ).toEqual({ generated: "2026-08-13T23:40:19.603Z", commit: "a6965a6" });
   });
 

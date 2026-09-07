@@ -26,9 +26,9 @@ const project = (over: Partial<Project> = {}): Project => ({
 
 describe("mapLotHref", () => {
   it("uses the ?sel= parameter the map restores from", () => {
-    expect(
-      mapLotHref({ projectId: "ro-a2", lotId: "bucharest-fetesti" }),
-    ).toBe("/map?sel=ro-a2.bucharest-fetesti");
+    expect(mapLotHref({ projectId: "ro-a2", lotId: "bucharest-fetesti" })).toBe(
+      "/map?sel=ro-a2.bucharest-fetesti",
+    );
   });
 
   it("escapes anything that would break the query string", () => {

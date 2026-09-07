@@ -20,6 +20,7 @@ import {
   parseCityParam,
   parseCompareParam,
   parseCountryParam,
+  parseSpeedParam,
   parseSelectionParam,
   parseViewParam,
   selectionCategories,
@@ -70,7 +71,9 @@ describe("buildMonthFilters", () => {
     );
     // negation of the opened condition
     expect(ucJson).toContain('"!"');
-    expect(ucJson).toContain(`["<=",["get","openedMonth"],${toMonthIndex(2010, 1)}]`);
+    expect(ucJson).toContain(
+      `["<=",["get","openedMonth"],${toMonthIndex(2010, 1)}]`,
+    );
   });
 
   it("future filter excludes lots already started by that month", () => {
@@ -104,9 +107,13 @@ describe("buildMonthFilters", () => {
     const f = buildMonthFilters(future, cats, NOW);
     const openedJson = JSON.stringify(f.opened);
     expect(openedJson).toContain('"expectedOpeningMonth"');
-    expect(openedJson).toContain(`["<=",["get","expectedOpeningMonth"],${future}]`);
+    expect(openedJson).toContain(
+      `["<=",["get","expectedOpeningMonth"],${future}]`,
+    );
     // UC must NOT include lots whose expected opening has passed
-    expect(JSON.stringify(f.underConstruction)).toContain('"expectedOpeningMonth"');
+    expect(JSON.stringify(f.underConstruction)).toContain(
+      '"expectedOpeningMonth"',
+    );
     // future (planned) layer must also exclude effectively-opened lots
     expect(JSON.stringify(f.future)).toContain('"expectedOpeningMonth"');
   });
@@ -114,9 +121,15 @@ describe("buildMonthFilters", () => {
   it("does not treat expectedOpening as opened before it passes", () => {
     const earlier = toMonthIndex(2028, 5);
     const later = toMonthIndex(2030, 3);
-    const openedJson = JSON.stringify(buildMonthFilters(earlier, cats, NOW).opened);
-    expect(openedJson).toContain(`["<=",["get","expectedOpeningMonth"],${earlier}]`);
-    expect(openedJson).not.toContain(`["<=",["get","expectedOpeningMonth"],${later}]`);
+    const openedJson = JSON.stringify(
+      buildMonthFilters(earlier, cats, NOW).opened,
+    );
+    expect(openedJson).toContain(
+      `["<=",["get","expectedOpeningMonth"],${earlier}]`,
+    );
+    expect(openedJson).not.toContain(
+      `["<=",["get","expectedOpeningMonth"],${later}]`,
+    );
   });
 });
 
@@ -174,12 +187,20 @@ describe("a lot with an opening date but no construction start", () => {
 
 describe("shouldShowFuture", () => {
   it("hides not-yet-started lots when viewing the past", () => {
-    expect(shouldShowFuture(toMonthIndex(2005, 1), toMonthIndex(2026, 8))).toBe(false);
-    expect(shouldShowFuture(toMonthIndex(2026, 7), toMonthIndex(2026, 8))).toBe(false);
+    expect(shouldShowFuture(toMonthIndex(2005, 1), toMonthIndex(2026, 8))).toBe(
+      false,
+    );
+    expect(shouldShowFuture(toMonthIndex(2026, 7), toMonthIndex(2026, 8))).toBe(
+      false,
+    );
   });
   it("shows them in the present month and beyond", () => {
-    expect(shouldShowFuture(toMonthIndex(2026, 8), toMonthIndex(2026, 8))).toBe(true);
-    expect(shouldShowFuture(toMonthIndex(2032, 1), toMonthIndex(2026, 8))).toBe(true);
+    expect(shouldShowFuture(toMonthIndex(2026, 8), toMonthIndex(2026, 8))).toBe(
+      true,
+    );
+    expect(shouldShowFuture(toMonthIndex(2032, 1), toMonthIndex(2026, 8))).toBe(
+      true,
+    );
   });
 });
 
@@ -188,15 +209,22 @@ describe("computeMaxMonth", () => {
   it("is five years out without expected openings", () => {
     expect(computeMaxMonth([], NOW)).toBe(toMonthIndex(2031, 8));
     expect(
-      computeMaxMonth([{ properties: { openedMonth: toMonthIndex(2020, 3) } }], NOW),
+      computeMaxMonth(
+        [{ properties: { openedMonth: toMonthIndex(2020, 3) } }],
+        NOW,
+      ),
     ).toBe(toMonthIndex(2031, 8));
   });
   it("extends to the latest expected opening", () => {
-    const features = [{ properties: { expectedOpeningMonth: toMonthIndex(2035, 4) } }];
+    const features = [
+      { properties: { expectedOpeningMonth: toMonthIndex(2035, 4) } },
+    ];
     expect(computeMaxMonth(features, NOW)).toBe(toMonthIndex(2035, 4));
   });
   it("ignores expected openings inside the five-year window", () => {
-    const features = [{ properties: { expectedOpeningMonth: toMonthIndex(2028, 2) } }];
+    const features = [
+      { properties: { expectedOpeningMonth: toMonthIndex(2028, 2) } },
+    ];
     expect(computeMaxMonth(features, NOW)).toBe(toMonthIndex(2031, 8));
   });
 });
@@ -204,35 +232,56 @@ describe("computeMaxMonth", () => {
 describe("computeMinMonth", () => {
   it("is five years before the earliest feature date", () => {
     const features = [
-      { properties: { openedMonth: toMonthIndex(1895, 6), constructionStartMonth: null } },
-      { properties: { openedMonth: toMonthIndex(2012, 7), constructionStartMonth: toMonthIndex(2009, 1) } },
+      {
+        properties: {
+          openedMonth: toMonthIndex(1895, 6),
+          constructionStartMonth: null,
+        },
+      },
+      {
+        properties: {
+          openedMonth: toMonthIndex(2012, 7),
+          constructionStartMonth: toMonthIndex(2009, 1),
+        },
+      },
     ];
     expect(computeMinMonth(features)).toBe(toMonthIndex(1890, 6));
   });
   it("prefers the earliest of opened/constructionStart", () => {
     const features = [
-      { properties: { openedMonth: toMonthIndex(1972, 9), constructionStartMonth: toMonthIndex(1968, 4) } },
+      {
+        properties: {
+          openedMonth: toMonthIndex(1972, 9),
+          constructionStartMonth: toMonthIndex(1968, 4),
+        },
+      },
     ];
     expect(computeMinMonth(features)).toBe(toMonthIndex(1963, 4));
   });
   it("defaults to January 1970 when there are no dates", () => {
-    expect(computeMinMonth([{ properties: { openedMonth: null } }])).toBe(toMonthIndex(1970));
+    expect(computeMinMonth([{ properties: { openedMonth: null } }])).toBe(
+      toMonthIndex(1970),
+    );
     expect(computeMinMonth([])).toBe(toMonthIndex(1970));
   });
   it("never starts later than 1970 and never goes below the hard floor", () => {
-    expect(computeMinMonth([{ properties: { openedMonth: toMonthIndex(1990, 1) } }])).toBe(
-      toMonthIndex(1970),
-    );
-    expect(computeMinMonth([{ properties: { openedMonth: HARD_MIN_MONTH } }])).toBe(
-      HARD_MIN_MONTH,
-    );
+    expect(
+      computeMinMonth([{ properties: { openedMonth: toMonthIndex(1990, 1) } }]),
+    ).toBe(toMonthIndex(1970));
+    expect(
+      computeMinMonth([{ properties: { openedMonth: HARD_MIN_MONTH } }]),
+    ).toBe(HARD_MIN_MONTH);
   });
 });
 
 describe("parseMonthParam / formatMonthParam", () => {
-  const MIN = toMonthIndex(1970), MAX = toMonthIndex(2031, 12), FB = toMonthIndex(2026, 8);
+  const MIN = toMonthIndex(1970),
+    MAX = toMonthIndex(2031, 12),
+    FB = toMonthIndex(2026, 8);
   it("parses YYYY-MM", () => {
-    expect(parseMonthParam("2015-07", MIN, MAX, FB)).toBe(toMonthIndex(2015, 7));
+    expect(parseMonthParam("2015-07", MIN, MAX, FB)).toBe(
+      toMonthIndex(2015, 7),
+    );
     expect(parseMonthParam("2015-7", MIN, MAX, FB)).toBe(toMonthIndex(2015, 7));
   });
   it("accepts a bare year as that January", () => {
@@ -472,13 +521,17 @@ describe("category/status selection", () => {
 
 describe("buildSelectionFilter", () => {
   it("uses a plain category check when all statuses are shown", () => {
-    expect(JSON.stringify(buildSelectionFilter(fullSelection(["highway"])))).toBe(
-      JSON.stringify(["any", ["==", ["get", "category"], "highway"]]),
-    );
+    expect(
+      JSON.stringify(buildSelectionFilter(fullSelection(["highway"]))),
+    ).toBe(JSON.stringify(["any", ["==", ["get", "category"], "highway"]]));
   });
 
   it("adds a status check only for the narrowed category", () => {
-    const sel = toggleStatus(fullSelection(["highway", "railway"]), "railway", "tendered");
+    const sel = toggleStatus(
+      fullSelection(["highway", "railway"]),
+      "railway",
+      "tendered",
+    );
     const json = JSON.stringify(buildSelectionFilter(sel));
     expect(json).toContain('["==",["get","category"],"highway"]');
     expect(json).toContain(
@@ -496,7 +549,9 @@ describe("buildSelectionFilter", () => {
         ["literal", ["highway", "bridge", "tunnel"]],
       ]),
     );
-    expect(JSON.stringify(buildCategoryFilter(sel, "opened"))).toContain('"railway"');
+    expect(JSON.stringify(buildCategoryFilter(sel, "opened"))).toContain(
+      '"railway"',
+    );
   });
 
   it("matches nothing when every category is hidden", () => {
@@ -511,7 +566,9 @@ describe("buildSelectionFilter", () => {
     const f = buildMonthFilters(2026, sel, toMonthIndex(2026, 8));
     expect(JSON.stringify(f.future)).toContain('["get","status"]');
     expect(JSON.stringify(f.opened)).not.toContain('["get","status"]');
-    expect(JSON.stringify(f.underConstruction)).not.toContain('["get","status"]');
+    expect(JSON.stringify(f.underConstruction)).not.toContain(
+      '["get","status"]',
+    );
   });
 });
 
@@ -538,7 +595,9 @@ describe("parseSelectionParam", () => {
     expect(parseSelectionParam(null, "spaceship:opened").size).toBe(4);
     const sel = parseSelectionParam(null, "railway:warp_drive.opened");
     expect([...sel.get("railway")!]).toEqual(["opened"]);
-    expect(parseSelectionParam(null, "railway:warp_drive").get("railway")!.size).toBe(4);
+    expect(
+      parseSelectionParam(null, "railway:warp_drive").get("railway")!.size,
+    ).toBe(4);
     expect(parseSelectionParam(null, "railway:").get("railway")!.size).toBe(4);
   });
 });
@@ -634,9 +693,9 @@ describe("camera and city in the permalink", () => {
   });
 
   it("writes a selected city", () => {
-    expect(
-      serializeMapParams({ ...base, selectedCity: "ro-bucharest" }),
-    ).toBe("city=ro-bucharest");
+    expect(serializeMapParams({ ...base, selectedCity: "ro-bucharest" })).toBe(
+      "city=ro-bucharest",
+    );
   });
 
   it("never writes two selections at once", () => {
@@ -689,7 +748,11 @@ describe("basemap and comparison in the permalink", () => {
 
   it("round-trips a shared comparison link", () => {
     const from = toMonthIndex(2015, 1);
-    const qs = serializeMapParams({ ...base, compareFrom: from, basemap: "dark" });
+    const qs = serializeMapParams({
+      ...base,
+      compareFrom: from,
+      basemap: "dark",
+    });
     const params = new URLSearchParams(qs);
     expect(
       parseMonthParam(params.get("cmp"), HARD_MIN_MONTH, NOW + 120, NOW),
@@ -848,11 +911,17 @@ describe("status is evaluated at the viewed year", () => {
     // opened layer: no categories left to draw
     expect(JSON.stringify(f.opened)).toContain('["literal",[]]');
     // under-construction layer: highways still drawn
-    expect(JSON.stringify(f.underConstruction)).toContain('["literal",["highway"]]');
+    expect(JSON.stringify(f.underConstruction)).toContain(
+      '["literal",["highway"]]',
+    );
   });
 
   it("unticking 'under construction' hides only building sites", () => {
-    const sel = toggleStatus(fullSelection(["railway"]), "railway", "under_construction");
+    const sel = toggleStatus(
+      fullSelection(["railway"]),
+      "railway",
+      "under_construction",
+    );
     const f = buildMonthFilters(2010, sel, NOW);
     expect(JSON.stringify(f.opened)).toContain('["literal",["railway"]]');
     expect(JSON.stringify(f.underConstruction)).toContain('["literal",[]]');
@@ -865,7 +934,9 @@ describe("status is evaluated at the viewed year", () => {
     const sel = fullSelection(["highway"]);
     const viewed = toMonthIndex(2010, 1);
     const f = buildMonthFilters(viewed, sel, NOW);
-    expect(JSON.stringify(f.underConstruction)).not.toContain('["get","status"]');
+    expect(JSON.stringify(f.underConstruction)).not.toContain(
+      '["get","status"]',
+    );
     expect(JSON.stringify(f.underConstruction)).toContain(
       `["<=",["get","constructionStartMonth"],${viewed}]`,
     );
@@ -877,5 +948,30 @@ describe("status is evaluated at the viewed year", () => {
     for (const filter of [f.opened, f.underConstruction, f.future]) {
       expect(JSON.stringify(filter)).not.toContain('"tunnel"');
     }
+  });
+});
+
+describe("parseSpeedParam", () => {
+  const STEPS = 4;
+  const DEFAULT = 1;
+
+  it("accepts an index into the steps", () => {
+    expect(parseSpeedParam("2", STEPS, DEFAULT)).toBe(2);
+    expect(parseSpeedParam("0", STEPS, DEFAULT)).toBe(0);
+    expect(parseSpeedParam("3", STEPS, DEFAULT)).toBe(3);
+  });
+
+  it("falls back when the param is missing", () => {
+    // Number(null) and Number("") are both 0, a valid index: without the
+    // explicit checks a link with no ?speed= opened on the slowest speed.
+    expect(parseSpeedParam(null, STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("", STEPS, DEFAULT)).toBe(DEFAULT);
+  });
+
+  it("falls back on anything that is not an index into the steps", () => {
+    expect(parseSpeedParam("1.5", STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("-1", STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("4", STEPS, DEFAULT)).toBe(DEFAULT);
+    expect(parseSpeedParam("fast", STEPS, DEFAULT)).toBe(DEFAULT);
   });
 });

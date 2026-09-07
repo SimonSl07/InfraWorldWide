@@ -59,7 +59,9 @@ describe("lotStateAt", () => {
       openedMonth: toMonthIndex(2012, 1),
     });
     expect(lotStateAt(m, toMonthIndex(2007, 1), NOW)).toBe("planned");
-    expect(lotStateAt(m, toMonthIndex(2009, 1), NOW)).toBe("under_construction");
+    expect(lotStateAt(m, toMonthIndex(2009, 1), NOW)).toBe(
+      "under_construction",
+    );
     expect(lotStateAt(m, toMonthIndex(2012, 1), NOW)).toBe("opened");
   });
 
@@ -279,14 +281,12 @@ describe("summarizeCountries", () => {
     const withPlanned = [
       project({
         id: "ro-future",
-        lots: [lot("p", { status: "planned", lengthKm: 500, dates: undefined })],
+        lots: [
+          lot("p", { status: "planned", lengthKm: 500, dates: undefined }),
+        ],
       }),
     ];
-    const past = summarizeCountries(
-      withPlanned,
-      toMonthIndex(2005, 1),
-      NOW,
-    )[0];
+    const past = summarizeCountries(withPlanned, toMonthIndex(2005, 1), NOW)[0];
     expect(past.total.plannedKm).toBe(0);
     expect(past.projects).toBe(0);
 

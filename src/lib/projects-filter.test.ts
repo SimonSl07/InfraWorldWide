@@ -62,16 +62,51 @@ describe("filterProjects", () => {
 
   it("filters by text query (case-insensitive, name match)", () => {
     expect(
-      filterProjects(projects, { ...noFilters, query: "brăila" }).map((p) => p.id),
+      filterProjects(projects, { ...noFilters, query: "brăila" }).map(
+        (p) => p.id,
+      ),
     ).toEqual(["ro-bridge"]);
     expect(
-      filterProjects(projects, { ...noFilters, query: "BRIDGE" }).map((p) => p.id),
+      filterProjects(projects, { ...noFilters, query: "BRIDGE" }).map(
+        (p) => p.id,
+      ),
     ).toEqual(["ro-bridge"]);
+  });
+
+  it("matches through any locale key, not only en and ro", () => {
+    // The schema admits any locale key, so the search reads every value
+    // rather than a named pair; here only the German name matches.
+    const bridge = makeProject({
+      id: "de-bridge",
+      country: "de",
+      category: "bridge",
+      name: { en: "Bridge", de: "Brücke" },
+    });
+    expect(
+      filterProjects([bridge], { ...noFilters, query: "brücke" }).map(
+        (p) => p.id,
+      ),
+    ).toEqual(["de-bridge"]);
+
+    // Same for a section name.
+    const rail = makeProject({
+      id: "de-rail-lot",
+      lots: [
+        { ...projects[2].lots[0], name: { en: "Lot 1", de: "Abschnitt 1" } },
+      ],
+    });
+    expect(
+      filterProjects([rail], { ...noFilters, query: "abschnitt" }).map(
+        (p) => p.id,
+      ),
+    ).toEqual(["de-rail-lot"]);
   });
 
   it("filters by country", () => {
     expect(
-      filterProjects(projects, { ...noFilters, country: "de" }).map((p) => p.id),
+      filterProjects(projects, { ...noFilters, country: "de" }).map(
+        (p) => p.id,
+      ),
     ).toEqual(["de-rail"]);
   });
 
@@ -85,9 +120,10 @@ describe("filterProjects", () => {
 
   it("filters by status when any lot matches", () => {
     expect(
-      filterProjects(projects, { ...noFilters, status: "under_construction" }).map(
-        (p) => p.id,
-      ),
+      filterProjects(projects, {
+        ...noFilters,
+        status: "under_construction",
+      }).map((p) => p.id),
     ).toEqual(["de-rail"]);
     expect(
       filterProjects(projects, { ...noFilters, status: "opened" }),
@@ -96,9 +132,11 @@ describe("filterProjects", () => {
 
   it("combines filters", () => {
     expect(
-      filterProjects(projects, { ...noFilters, country: "ro", category: "bridge" }).map(
-        (p) => p.id,
-      ),
+      filterProjects(projects, {
+        ...noFilters,
+        country: "ro",
+        category: "bridge",
+      }).map((p) => p.id),
     ).toEqual(["ro-bridge"]);
     expect(
       filterProjects(projects, { ...noFilters, country: "ro", query: "zzz" }),

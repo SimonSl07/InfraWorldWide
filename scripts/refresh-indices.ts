@@ -49,7 +49,8 @@ import {
   type YearValues,
 } from "../src/lib/index-sources";
 
-const EUROSTAT = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data";
+const EUROSTAT =
+  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data";
 const ECB = "https://data-api.ecb.europa.eu/service/data";
 
 /** Eurostat reference area per deflator currency, or why it is not refetched. */
@@ -61,8 +62,7 @@ const DEFLATOR_GEO: Record<string, string> = {
 };
 
 const NOT_REFETCHED: Record<string, string> = {
-  USD:
-    "US CPI-U (BLS via FRED) rebased to 2015 = 100. Eurostat's US HICP is a different index and must not be spliced onto it.",
+  USD: "US CPI-U (BLS via FRED) rebased to 2015 = 100. Eurostat's US HICP is a different index and must not be spliced onto it.",
 };
 
 /** Currencies the ECB quotes. RSD is not one of them. */
@@ -94,7 +94,10 @@ function arg(name: string): string | undefined {
 
 async function get(url: string, accept: string): Promise<string> {
   const res = await fetch(url, {
-    headers: { Accept: accept, "User-Agent": "InfraWorldWide-data-refresh/0.1" },
+    headers: {
+      Accept: accept,
+      "User-Agent": "InfraWorldWide-data-refresh/0.1",
+    },
   });
   if (!res.ok) {
     throw new Error(`${res.status} ${res.statusText} for ${url}`);
@@ -137,9 +140,7 @@ function applyExclusions(name: string, fetched: YearValues): YearValues {
     }
   }
   if (dropped.length > 0) {
-    console.log(
-      `  ${name}: keeping ${dropped.join(", ")} out, ${rule.why}`,
-    );
+    console.log(`  ${name}: keeping ${dropped.join(", ")} out, ${rule.why}`);
   }
   return kept;
 }
@@ -157,7 +158,10 @@ async function refreshDeflators(root: string): Promise<SeriesResult[]> {
     `&sinceTimePeriod=1996&${geos.map((g) => `geo=${g}`).join("&")}`;
 
   console.log(`Eurostat prc_hicp_aind: ${geos.join(", ")}`);
-  const byGeo = parseJsonStat(JSON.parse(await get(url, "application/json")), "geo");
+  const byGeo = parseJsonStat(
+    JSON.parse(await get(url, "application/json")),
+    "geo",
+  );
 
   const results: SeriesResult[] = [];
   for (const [currency, series] of Object.entries(table.series)) {
@@ -191,7 +195,10 @@ async function refreshDeflators(root: string): Promise<SeriesResult[]> {
   return results;
 }
 
-async function refreshFx(root: string, endYear: number): Promise<SeriesResult[]> {
+async function refreshFx(
+  root: string,
+  endYear: number,
+): Promise<SeriesResult[]> {
   const file = path.join(root, "data/fx.json");
   const { data, eol } = readWithStyle(file);
   const table = fxTableSchema.parse(data) as FxTable;
@@ -210,8 +217,13 @@ async function refreshFx(root: string, endYear: number): Promise<SeriesResult[]>
   // Eurostat as the substitute rather than treating the gap as an outage.
   if (wanted.includes("RSD")) {
     const url = `${EUROSTAT}/ert_bil_eur_a?format=JSON&currency=RSD&statinfo=AVG&unit=NAC&sinceTimePeriod=1999`;
-    console.log("Eurostat ert_bil_eur_a: RSD (the ECB publishes no dinar rate)");
-    const byCurrency = parseJsonStat(JSON.parse(await get(url, "application/json")), "currency");
+    console.log(
+      "Eurostat ert_bil_eur_a: RSD (the ECB publishes no dinar rate)",
+    );
+    const byCurrency = parseJsonStat(
+      JSON.parse(await get(url, "application/json")),
+      "currency",
+    );
     Object.assign(fetched, byCurrency);
   }
 
@@ -222,7 +234,10 @@ async function refreshFx(root: string, endYear: number): Promise<SeriesResult[]>
       console.log(`  ${currency}: no rows returned`);
       continue;
     }
-    const next = applyExclusions(`fx:${currency}`, roundSeries(raw, FX_DECIMALS));
+    const next = applyExclusions(
+      `fx:${currency}`,
+      roundSeries(raw, FX_DECIMALS),
+    );
     const changes = diffSeries(series.perEur, next);
     results.push({ name: `fx:${currency}`, changes, fetched: next });
     console.log(
@@ -249,7 +264,11 @@ async function main() {
     console.error(`unknown --only "${only}" (expected deflators or fx)`);
     process.exit(2);
   }
-  console.log(write ? "Refreshing reference tables." : "Dry run. Nothing is written without --write.\n");
+  console.log(
+    write
+      ? "Refreshing reference tables."
+      : "Dry run. Nothing is written without --write.\n",
+  );
 
   const results: SeriesResult[] = [];
   const failures: string[] = [];
@@ -278,7 +297,9 @@ async function main() {
       console.log(formatSeriesDiff(result.name, result.changes));
     }
     if (!write) {
-      console.log("\nRerun with --write to apply, then run npm run data:validate.");
+      console.log(
+        "\nRerun with --write to apply, then run npm run data:validate.",
+      );
     }
   }
 

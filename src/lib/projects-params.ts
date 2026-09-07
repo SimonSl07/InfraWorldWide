@@ -26,16 +26,6 @@ export interface ProjectsParams {
   sort: ProjectSort;
 }
 
-export function emptyProjectsParams(): ProjectsParams {
-  return {
-    query: "",
-    country: null,
-    category: null,
-    status: null,
-    sort: DEFAULT_PROJECT_SORT,
-  };
-}
-
 export function parseProjectsParams(
   search: string,
   options: {
@@ -64,7 +54,9 @@ export function parseProjectsParams(
     category: (ALL_CATEGORIES as readonly string[]).includes(rawCategory ?? "")
       ? (rawCategory as Category)
       : null,
-    status: (statusSchema.options as readonly string[]).includes(rawStatus ?? "")
+    status: (statusSchema.options as readonly string[]).includes(
+      rawStatus ?? "",
+    )
       ? (rawStatus as Status)
       : null,
     sort: parseProjectSort(params.get("sort")),

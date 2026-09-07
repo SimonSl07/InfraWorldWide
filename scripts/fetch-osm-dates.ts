@@ -72,7 +72,9 @@ async function overpass(query: string): Promise<OverpassElement[]> {
     } catch (e) {
       lastError = e as Error;
       const wait = 2000 * (attempt + 1);
-      console.warn(`  ${url} failed (${lastError.message}); retrying in ${wait / 1000}s…`);
+      console.warn(
+        `  ${url} failed (${lastError.message}); retrying in ${wait / 1000}s…`,
+      );
       await new Promise((r) => setTimeout(r, wait));
     }
   }
@@ -93,7 +95,9 @@ export interface OsmDateRecord {
   names: string;
 }
 
-export function dateRecords(elements: OverpassElement[]): Record<string, OsmDateRecord> {
+export function dateRecords(
+  elements: OverpassElement[],
+): Record<string, OsmDateRecord> {
   const out: Record<string, OsmDateRecord> = {};
   const names = new Map<string, Set<string>>();
 
@@ -118,9 +122,17 @@ export function dateRecords(elements: OverpassElement[]): Record<string, OsmDate
   return out;
 }
 
-function snapshotPath(root: string, country: string, ref: string | undefined): string {
+function snapshotPath(
+  root: string,
+  country: string,
+  ref: string | undefined,
+): string {
   const suffix = ref ? `-${ref.toLowerCase()}` : "";
-  return path.join(root, "data/osm-dates", `${country.toLowerCase()}${suffix}.json`);
+  return path.join(
+    root,
+    "data/osm-dates",
+    `${country.toLowerCase()}${suffix}.json`,
+  );
 }
 
 function readSnapshot(file: string): Record<string, OsmDateRecord> | null {
@@ -156,7 +168,9 @@ area["ISO3166-1"="${country}"][admin_level=2]->.a;
 out tags;
 `;
 
-  console.log(`Fetching OSM date tags for ${country}${ref ? ` ref=${ref}` : ""}…`);
+  console.log(
+    `Fetching OSM date tags for ${country}${ref ? ` ref=${ref}` : ""}…`,
+  );
   const elements = await overpass(query);
   console.log(`  ${elements.length} way(s) carrying a date tag`);
 
@@ -177,7 +191,10 @@ out tags;
     }
     const diff = diffRecords(before, records);
     console.log(
-      formatDiff(diff, { label: "OSM date tag", summaryFields: ["ways", "names"] }),
+      formatDiff(diff, {
+        label: "OSM date tag",
+        summaryFields: ["ways", "names"],
+      }),
     );
     console.log(attribution);
     if (check && hasChanges(diff)) {
@@ -204,7 +221,9 @@ out tags;
         2,
       )}\n`,
     );
-    console.log(`Wrote ${Object.keys(records).length} row(s) to ${path.relative(root, file)}`);
+    console.log(
+      `Wrote ${Object.keys(records).length} row(s) to ${path.relative(root, file)}`,
+    );
     console.log(attribution);
     return;
   }
@@ -216,11 +235,17 @@ out tags;
   }
   for (const routeRef of [...byRef.keys()].sort()) {
     console.log(`\n${routeRef}`);
-    const rows = byRef.get(routeRef)!.sort((a, b) =>
-      `${a.tag}=${a.value}`.localeCompare(`${b.tag}=${b.value}`),
-    );
+    const rows = byRef
+      .get(routeRef)!
+      .sort((a, b) =>
+        `${a.tag}=${a.value}`.localeCompare(`${b.tag}=${b.value}`),
+      );
     for (const row of rows) {
-      const names = row.names.split(", ").filter(Boolean).slice(0, 4).join(", ");
+      const names = row.names
+        .split(", ")
+        .filter(Boolean)
+        .slice(0, 4)
+        .join(", ");
       console.log(`  ${row.tag}=${row.value}${names ? `  : ${names}` : ""}`);
     }
   }

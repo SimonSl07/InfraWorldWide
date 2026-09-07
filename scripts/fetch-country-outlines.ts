@@ -27,7 +27,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { diffRecords, formatDiff, hasChanges } from "../src/lib/record-diff";
-import { collectErrors } from "./validate-data";
+import { collectErrors } from "../src/lib/validation";
 
 const SOURCE_URL =
   "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson";
@@ -153,7 +153,10 @@ function outlineRecord(collection: {
       ? (feature.geometry.coordinates as Ring[])
       : (feature.geometry.coordinates as Ring[][]).flat();
 
-  let west = Infinity, south = Infinity, east = -Infinity, north = -Infinity;
+  let west = Infinity,
+    south = Infinity,
+    east = -Infinity,
+    north = -Infinity;
   let positions = 0;
   for (const ring of rings) {
     for (const [lng, lat] of ring) {
@@ -197,9 +200,7 @@ async function main() {
   const wanted =
     explicit.length > 0
       ? explicit.map((c) => c.toLowerCase())
-      : [
-          ...new Set(collectErrors(root).projects.map((p) => p.country)),
-        ].sort();
+      : [...new Set(collectErrors(root).projects.map((p) => p.country))].sort();
 
   if (wanted.length === 0) {
     console.error("no countries requested and no projects found");

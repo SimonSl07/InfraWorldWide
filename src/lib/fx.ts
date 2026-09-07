@@ -25,8 +25,7 @@ export type ConvertFailure =
   | "missing_price_year";
 
 export type ConvertResult =
-  | { ok: true; money: Money }
-  | { ok: false; reason: ConvertFailure };
+  { ok: true; money: Money } | { ok: false; reason: ConvertFailure };
 
 export type Converter = (money: Money) => ConvertResult;
 
@@ -63,21 +62,4 @@ export function createConverter(table: FxTable): Converter {
       },
     };
   };
-}
-
-/** A converter that only passes base-currency amounts through. */
-export function baseOnlyConverter(base: string): Converter {
-  return (money) =>
-    money.currency === base
-      ? { ok: true, money }
-      : { ok: false, reason: "unknown_currency" };
-}
-
-/** Years a currency can be converted for, ascending. Empty when unknown. */
-export function coveredYears(table: FxTable, currency: string): number[] {
-  const series = table.rates[currency];
-  if (!series) return [];
-  return Object.keys(series.perEur)
-    .map(Number)
-    .sort((a, b) => a - b);
 }

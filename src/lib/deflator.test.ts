@@ -1,10 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {
-  createDeflator,
-  commonLatestYear,
-  latestYear,
-  nominalDeflator,
-} from "./deflator";
+import { createDeflator, commonLatestYear, latestYear } from "./deflator";
 import type { DeflatorTable } from "./schema";
 
 const table: DeflatorTable = {
@@ -93,13 +88,6 @@ describe("createDeflator", () => {
     expect(back.ok).toBe(true);
     if (!back.ok) return;
     expect(back.money.amount).toBeCloseTo(750, 8);
-  });
-});
-
-describe("nominalDeflator", () => {
-  it("never deflates", () => {
-    expect(nominalDeflator({ amount: 1, currency: "EUR", year: 2013 }, 2025).ok)
-      .toBe(false);
   });
 });
 

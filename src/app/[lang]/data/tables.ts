@@ -1,14 +1,6 @@
-import {
-  getContractors,
-  getDeflators,
-  getFxTable,
-  getProjects,
-} from "@/lib/data";
-import { commonLatestYear, createDeflator } from "@/lib/deflator";
-import { createConverter } from "@/lib/fx";
-import { createContractorResolver } from "@/lib/contractors";
+import { getLotMetrics } from "@/lib/data";
 import { currentMonth } from "@/lib/slip";
-import { collectLotMetrics, rankByCountry } from "@/lib/rankings";
+import { rankByCountry } from "@/lib/rankings";
 import { orderByMedianSlip } from "@/lib/performance";
 import { contractorLeagueCsv, countryLeagueCsv } from "@/lib/league-csv";
 import { loadContractorProfiles } from "../contractors/profiles";
@@ -25,15 +17,7 @@ export function contractorsCsv(): string {
 }
 
 export function countriesCsv(): string {
-  const deflators = getDeflators();
-  const deflate = createDeflator(deflators);
-  const metrics = collectLotMetrics(getProjects(), {
-    deflate,
-    convert: createConverter(getFxTable()),
-    priceYear: commonLatestYear(deflators) ?? deflators.baseYear,
-    resolve: createContractorResolver(getContractors()),
-    nowMonth: currentMonth(new Date()),
-  });
+  const metrics = getLotMetrics(currentMonth(new Date()));
   return countryLeagueCsv(orderByMedianSlip(rankByCountry(metrics)));
 }
 

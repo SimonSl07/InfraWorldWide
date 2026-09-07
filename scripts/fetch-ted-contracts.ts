@@ -72,11 +72,33 @@ function arg(flag: string, fallback?: string): string | undefined {
 
 /** ISO-2 to the ISO-3 code TED expects for place of performance. */
 const ISO3: Record<string, string> = {
-  BG: "BGR", RO: "ROU", HU: "HUN", PL: "POL", HR: "HRV", GR: "GRC",
-  SK: "SVK", CZ: "CZE", SI: "SVN", AT: "AUT", DE: "DEU", FR: "FRA",
-  IT: "ITA", ES: "ESP", PT: "PRT", NL: "NLD", BE: "BEL", LU: "LUX",
-  DK: "DNK", SE: "SWE", FI: "FIN", EE: "EST", LV: "LVA", LT: "LTU",
-  IE: "IRL", CY: "CYP", MT: "MLT",
+  BG: "BGR",
+  RO: "ROU",
+  HU: "HUN",
+  PL: "POL",
+  HR: "HRV",
+  GR: "GRC",
+  SK: "SVK",
+  CZ: "CZE",
+  SI: "SVN",
+  AT: "AUT",
+  DE: "DEU",
+  FR: "FRA",
+  IT: "ITA",
+  ES: "ESP",
+  PT: "PRT",
+  NL: "NLD",
+  BE: "BEL",
+  LU: "LUX",
+  DK: "DNK",
+  SE: "SWE",
+  FI: "FIN",
+  EE: "EST",
+  LV: "LVA",
+  LT: "LTU",
+  IE: "IRL",
+  CY: "CYP",
+  MT: "MLT",
 };
 
 /** TED returns multilingual objects; prefer English, else the first value. */
@@ -135,13 +157,15 @@ async function search(body: unknown, attempt = 0): Promise<TedPage> {
     body: JSON.stringify(body),
   });
   if (res.status === 429 || res.status >= 500) {
-    if (attempt >= 5) throw new Error(`TED ${res.status} after ${attempt} retries`);
+    if (attempt >= 5)
+      throw new Error(`TED ${res.status} after ${attempt} retries`);
     const wait = 2000 * (attempt + 1);
     console.log(`  TED ${res.status}; retrying in ${wait / 1000}s…`);
     await new Promise((r) => setTimeout(r, wait));
     return search(body, attempt + 1);
   }
-  if (!res.ok) throw new Error(`TED ${res.status}: ${(await res.text()).slice(0, 300)}`);
+  if (!res.ok)
+    throw new Error(`TED ${res.status}: ${(await res.text()).slice(0, 300)}`);
   return res.json();
 }
 
@@ -149,7 +173,9 @@ async function search(body: unknown, attempt = 0): Promise<TedPage> {
 function readCommitted(file: string): TedAward[] {
   if (!fs.existsSync(file)) return [];
   try {
-    const parsed = JSON.parse(fs.readFileSync(file, "utf8")) as { awards?: TedAward[] };
+    const parsed = JSON.parse(fs.readFileSync(file, "utf8")) as {
+      awards?: TedAward[];
+    };
     return parsed.awards ?? [];
   } catch {
     return [];
@@ -178,11 +204,16 @@ async function main() {
   }
   const iso3 = ISO3[country];
   if (!iso3) {
-    console.error(`${country} is not an EU member state — TED has no notices for it.`);
+    console.error(
+      `${country} is not an EU member state — TED has no notices for it.`,
+    );
     process.exit(1);
   }
 
-  const cpv = (arg("--cpv") ?? DEFAULT_CPV.join(",")).split(",").map((s) => s.trim()).filter(Boolean);
+  const cpv = (arg("--cpv") ?? DEFAULT_CPV.join(","))
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
   const from = arg("--from");
   const max = Number(arg("--max", "2000"));
   const limit = 100;
@@ -195,14 +226,22 @@ async function main() {
   if (from) clauses.push(`(publication-date >= ${from}0101)`);
   const query = clauses.join(" AND ");
 
-  console.log(`TED harvest: ${country} (${iso3}), ${cpv.length} CPV codes${from ? `, from ${from}` : ""}`);
+  console.log(
+    `TED harvest: ${country} (${iso3}), ${cpv.length} CPV codes${from ? `, from ${from}` : ""}`,
+  );
 
   const awards: TedAward[] = [];
   let page = 1;
   let total = 0;
 
   while (awards.length < max) {
-    const json = await search({ query, fields: FIELDS, page, limit, scope: "ALL" });
+    const json = await search({
+      query,
+      fields: FIELDS,
+      page,
+      limit,
+      scope: "ALL",
+    });
     total = json.totalNoticeCount ?? json.total ?? 0;
     const notices = json.notices ?? [];
     if (notices.length === 0) break;
@@ -213,7 +252,10 @@ async function main() {
         publicationNumber: pub,
         publicationDate: String(text(n["publication-date"])).slice(0, 10),
         noticeType: text(n["notice-type"]),
-        conclusionDate: String(text(n["contract-conclusion-date"])).slice(0, 10),
+        conclusionDate: String(text(n["contract-conclusion-date"])).slice(
+          0,
+          10,
+        ),
         title: text(n["notice-title"]),
         lotTitles: text(n["title-lot"]).slice(0, 600),
         buyer: text(n["buyer-name"]),
@@ -227,7 +269,9 @@ async function main() {
         url: pub ? `https://ted.europa.eu/en/notice/-/detail/${pub}` : "",
       });
     }
-    console.log(`  page ${page}: +${notices.length} (${awards.length}/${Math.min(total, max)})`);
+    console.log(
+      `  page ${page}: +${notices.length} (${awards.length}/${Math.min(total, max)})`,
+    );
     if (awards.length >= total) break;
     page++;
   }
@@ -237,7 +281,10 @@ async function main() {
   const withWinner = awards.filter((a) => a.winners).length;
 
   if (diffOnly || check) {
-    const diff = diffRecords(byPublicationNumber(readCommitted(out)), byPublicationNumber(awards));
+    const diff = diffRecords(
+      byPublicationNumber(readCommitted(out)),
+      byPublicationNumber(awards),
+    );
     console.log(
       formatDiff(diff, {
         label: "award notice",
@@ -246,7 +293,9 @@ async function main() {
       }),
     );
     if (check && hasChanges(diff)) {
-      console.log(`TED differs from ${out}. Rerun without --check to rewrite it.`);
+      console.log(
+        `TED differs from ${out}. Rerun without --check to rewrite it.`,
+      );
       process.exit(1);
     }
     return;
@@ -256,7 +305,15 @@ async function main() {
   fs.writeFileSync(
     out,
     JSON.stringify(
-      { country, iso3, cpv, from: from ?? null, totalMatching: total, harvested: awards.length, awards },
+      {
+        country,
+        iso3,
+        cpv,
+        from: from ?? null,
+        totalMatching: total,
+        harvested: awards.length,
+        awards,
+      },
       null,
       2,
     ),

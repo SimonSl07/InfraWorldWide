@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest";
 import {
   contractBaseline,
   contractMonths,
+  currentMonth,
   monthIndex,
-  projectedCompletionYear,
   expectedOpeningYear,
 } from "./contract";
 import type { Lot } from "./schema";
@@ -19,31 +19,6 @@ describe("contractMonths", () => {
   it("returns null when no duration is known", () => {
     expect(contractMonths({})).toBeNull();
     expect(contractMonths({ guaranteeMonths: 84 })).toBeNull();
-  });
-});
-
-describe("projectedCompletionYear", () => {
-  it("adds contracted months to a year-month start", () => {
-    // Feb 2024 + 30 months = Aug 2026
-    expect(
-      projectedCompletionYear("2024-02", { designMonths: 6, executionMonths: 24 }),
-    ).toBe(2026);
-  });
-  it("treats a year-only start as January", () => {
-    // Jan 2023 + 54 months = Jul 2027
-    expect(
-      projectedCompletionYear("2023", { designMonths: 14, executionMonths: 40 }),
-    ).toBe(2027);
-  });
-  it("handles full dates", () => {
-    expect(
-      projectedCompletionYear("2023-09-15", { totalMonths: 36 }),
-    ).toBe(2026);
-  });
-  it("returns null on missing inputs", () => {
-    expect(projectedCompletionYear(undefined, { totalMonths: 12 })).toBeNull();
-    expect(projectedCompletionYear("2024-02", undefined)).toBeNull();
-    expect(projectedCompletionYear("2024-02", {})).toBeNull();
   });
 });
 
@@ -105,7 +80,11 @@ describe("expectedOpeningYear", () => {
     ).toBeNull();
     expect(
       expectedOpeningYear(
-        lot({ status: "cancelled", contract: { totalMonths: 24 }, dates: { constructionStart: "2020" } }),
+        lot({
+          status: "cancelled",
+          contract: { totalMonths: 24 },
+          dates: { constructionStart: "2020" },
+        }),
       ),
     ).toBeNull();
   });
@@ -120,7 +99,11 @@ describe("contractBaseline", () => {
           contract: { designMonths: 6, executionMonths: 24 },
         }),
       ),
-    ).toEqual({ month: monthIndex("2024-01"), anchor: "constructionStart", months: 24 });
+    ).toEqual({
+      month: monthIndex("2024-01"),
+      anchor: "constructionStart",
+      months: 24,
+    });
   });
 
   it("measures the full contracted clock from an award", () => {
@@ -131,7 +114,11 @@ describe("contractBaseline", () => {
           contract: { designMonths: 6, executionMonths: 24 },
         }),
       ),
-    ).toEqual({ month: monthIndex("2024-01"), anchor: "tenderAwarded", months: 30 });
+    ).toEqual({
+      month: monthIndex("2024-01"),
+      anchor: "tenderAwarded",
+      months: 30,
+    });
   });
 
   it("agrees on the deadline whichever anchor the data supports", () => {
@@ -157,16 +144,50 @@ describe("contractBaseline", () => {
   it("falls back to a lone total hung on the construction start", () => {
     expect(
       contractBaseline(
-        lot({ dates: { constructionStart: "2020" }, contract: { totalMonths: 18 } }),
+        lot({
+          dates: { constructionStart: "2020" },
+          contract: { totalMonths: 18 },
+        }),
       ),
-    ).toEqual({ month: monthIndex("2021-07"), anchor: "constructionStart", months: 18 });
+    ).toEqual({
+      month: monthIndex("2021-07"),
+      anchor: "constructionStart",
+      months: 18,
+    });
   });
 
   it("returns null without a contract or without any anchor date", () => {
-    expect(contractBaseline(lot({ dates: { constructionStart: "2020" } }))).toBeNull();
-    expect(contractBaseline(lot({ contract: { executionMonths: 24 } }))).toBeNull();
     expect(
-      contractBaseline(lot({ dates: { opened: "2020" }, contract: { guaranteeMonths: 60 } })),
+      contractBaseline(lot({ dates: { constructionStart: "2020" } })),
     ).toBeNull();
+    expect(
+      contractBaseline(lot({ contract: { executionMonths: 24 } })),
+    ).toBeNull();
+    expect(
+      contractBaseline(
+        lot({ dates: { opened: "2020" }, contract: { guaranteeMonths: 60 } }),
+      ),
+    ).toBeNull();
+  });
+});
+
+describe("currentMonth", () => {
+  it("counts months on the same scale as monthIndex", () => {
+    const lastMinuteOfJanuary = new Date(Date.UTC(2026, 0, 31, 23, 59));
+    expect(currentMonth(lastMinuteOfJanuary)).toBe(2026 * 12);
+    expect(currentMonth(lastMinuteOfJanuary)).toBe(monthIndex("2026-01"));
+  });
+
+  it("reads the UTC month, not the local one", () => {
+    // 23:30 on 31 January in New York is 04:30 on 1 February in UTC. Both
+    // the server pages and the map take February, whatever zone the browser
+    // is in, so the panel beside the map cannot be a month behind it.
+    expect(currentMonth(new Date("2026-01-31T23:30:00-05:00"))).toBe(
+      2026 * 12 + 1,
+    );
+  });
+
+  it("reads the clock when no date is given", () => {
+    expect(Number.isInteger(currentMonth())).toBe(true);
   });
 });

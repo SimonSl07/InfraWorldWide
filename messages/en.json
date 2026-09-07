@@ -29,11 +29,12 @@
     "browseProjects": "Browse projects",
     "statsProjects": "Projects tracked",
     "statsOpenedKm": "Kilometres opened",
-    "statsRecentKm": "Opened in the last 20 years",
+    "statsRecentKm": "Opened in the last {years} years",
     "statsUnderConstructionKm": "Under construction"
   },
   "map": {
     "title": "Infrastructure map",
+    "metaDescription": "Highways, railways, bridges and tunnels on one map, with a year slider from the first opening to the last scheduled one.",
     "loading": "Loading map data…",
     "loadError": "The map data could not be loaded.",
     "loadRetry": "Try again",
@@ -484,6 +485,11 @@
     "positron": "Light",
     "liberty": "Detailed",
     "dark": "Dark"
+  },
+  "og": {
+    "km": "km",
+    "projects": "projects",
+    "countries": "countries"
   },
   "embed": {
     "openFull": "Open the full map"

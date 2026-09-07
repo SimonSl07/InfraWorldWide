@@ -13,14 +13,15 @@ import {
   checkCostRevisions,
   checkEvents,
   checkLocaleKeys,
-} from "./validate-data";
-import { hasContractTerms } from "../src/lib/schema";
+  checkFxCoverage,
+} from "./index";
+import { hasContractTerms } from "../schema";
 import type {
   ContractorRegistry,
   DeflatorTable,
   FxTable,
   Project,
-} from "../src/lib/schema";
+} from "../schema";
 
 /**
  * Integration test: every project file committed under data/projects must
@@ -256,7 +257,9 @@ const fx = {
 describe("checkPriceCoverage", () => {
   it("passes a figure whose currency and year both have coverage", () => {
     const p = projectStub([
-      lotStub({ cost: { actual: { amount: 10, currency: "RON", year: 2020 } } }),
+      lotStub({
+        cost: { actual: { amount: 10, currency: "RON", year: 2020 } },
+      }),
     ]);
     expect(checkPriceCoverage(deflators, fx, [p])).toEqual({
       errors: [],
@@ -266,7 +269,9 @@ describe("checkPriceCoverage", () => {
 
   it("warns when the price year is outside the published series", () => {
     const p = projectStub([
-      lotStub({ cost: { actual: { amount: 10, currency: "RON", year: 2026 } } }),
+      lotStub({
+        cost: { actual: { amount: 10, currency: "RON", year: 2026 } },
+      }),
     ]);
     const w = checkPriceCoverage(deflators, fx, [p]).warnings;
     expect(w.join(" ")).toContain("2026");
@@ -288,6 +293,98 @@ describe("checkPriceCoverage", () => {
       cost: { amount: 745, currency: "EUR", scope: "programme" },
     });
     expect(checkPriceCoverage(deflators, fx, [p]).warnings).toEqual([]);
+  });
+
+  /** A revision used to slip past this; only the flat fields were walked. */
+  it("warns about a revision priced in a year the tables do not reach", () => {
+    const p = projectStub([
+      lotStub({
+        cost: {
+          revisions: [
+            {
+              kind: "award",
+              date: "2026-03",
+              money: { amount: 10, currency: "RON", year: 2026 },
+            },
+          ],
+        },
+      }),
+    ]);
+    const w = checkPriceCoverage(deflators, fx, [p]).warnings;
+    expect(w).toHaveLength(1);
+    expect(w[0]).toContain("cost.revisions[0]");
+    expect(w[0]).toContain("cannot be restated");
+  });
+});
+
+/**
+ * The currency-level check walks the same `moneyOf` as the price-year one,
+ * so a revision is held to it like a flat lot cost. Figures nothing converts,
+ * a funding share or a project-level total, stay in the warning tier: an
+ * unknown currency there is a coverage gap, not a defect.
+ */
+describe("checkFxCoverage", () => {
+  const check = (p: Project) => {
+    const errors: string[] = [];
+    checkFxCoverage(fx, [p], errors);
+    return errors;
+  };
+
+  it("passes the base currency and one with rates", () => {
+    const p = projectStub(
+      [
+        lotStub({
+          cost: { actual: { amount: 10, currency: "RON", year: 2020 } },
+        }),
+      ],
+      { cost: { amount: 100, currency: "EUR", year: 2020 } },
+    );
+    expect(check(p)).toEqual([]);
+  });
+
+  it("errors on a revision in a currency the fx table lacks", () => {
+    const p = projectStub([
+      lotStub({
+        cost: {
+          revisions: [
+            {
+              kind: "award",
+              date: "2020",
+              money: { amount: 5, currency: "CHF", year: 2020 },
+            },
+          ],
+        },
+      }),
+    ]);
+    expect(check(p)).toEqual([
+      'data/fx.json: no rates for "CHF", which costs are recorded in',
+    ]);
+  });
+
+  it("leaves a funding share in an unknown currency to the warning tier", () => {
+    const p = projectStub([
+      lotStub({
+        funding: [
+          {
+            source: "loan",
+            amount: { amount: 5, currency: "CHF", year: 2020 },
+          },
+        ],
+      }),
+    ]);
+    // Nothing converts a co-financing share, so the build must not fail on
+    // it; the price-coverage check still says the table does not reach it.
+    expect(check(p)).toEqual([]);
+    expect(checkPriceCoverage(deflators, fx, [p]).warnings.join(" ")).toContain(
+      "fx",
+    );
+  });
+
+  it("leaves a project-level total in an unknown currency to the warning tier", () => {
+    const p = projectStub([lotStub()], {
+      cost: { amount: 100, currency: "GBP", year: 2020 },
+    });
+    expect(check(p)).toEqual([]);
   });
 });
 
@@ -346,6 +443,61 @@ describe("checkCostPerKm", () => {
       ],
       { category: "bridge" },
     );
+    expect(checkCostPerKm(fx, [p]).warnings).toEqual([]);
+  });
+
+  it("holds a revision to the band, since it prices the same section", () => {
+    const p = projectStub([
+      lotStub({
+        lengthKm: 20,
+        cost: {
+          revisions: [
+            {
+              kind: "award",
+              date: "2020",
+              money: { amount: 200000, currency: "EUR", year: 2020 },
+            },
+          ],
+        },
+      }),
+    ]);
+    const w = checkCostPerKm(fx, [p]).warnings;
+    expect(w).toHaveLength(1);
+    expect(w[0]).toContain("cost.revisions[0]");
+  });
+
+  /** An addendum is what one variation order added, not the section's price. */
+  it("does not judge an addendum per km", () => {
+    const p = projectStub([
+      lotStub({
+        lengthKm: 30,
+        cost: {
+          revisions: [
+            {
+              kind: "addendum",
+              date: "2021",
+              money: { amount: 3, currency: "EUR", year: 2021 },
+            },
+          ],
+        },
+      }),
+    ]);
+    expect(checkCostPerKm(fx, [p]).warnings).toEqual([]);
+  });
+
+  /** A co-financing share is a slice of who pays, not the section's cost. */
+  it("never judges a funding share per km", () => {
+    const p = projectStub([
+      lotStub({
+        lengthKm: 20,
+        funding: [
+          {
+            source: "EU",
+            amount: { amount: 200000, currency: "EUR", year: 2020 },
+          },
+        ],
+      }),
+    ]);
     expect(checkCostPerKm(fx, [p]).warnings).toEqual([]);
   });
 });
@@ -433,9 +585,10 @@ describe("checkReferenceKeys", () => {
     },
   };
 
-  const used = projectStub([
-    lotStub({ funding: [{ source: "EU", programme: "ro-pnrr" }] }),
-  ], { corridors: ["pan-european-iv"], operator: "ro-cnair" });
+  const used = projectStub(
+    [lotStub({ funding: [{ source: "EU", programme: "ro-pnrr" }] })],
+    { corridors: ["pan-european-iv"], operator: "ro-cnair" },
+  );
 
   it("passes when every key resolves and every entry is used", () => {
     expect(
@@ -444,11 +597,16 @@ describe("checkReferenceKeys", () => {
   });
 
   it("errors on a key that resolves to nothing", () => {
-    const bad = projectStub([lotStub({ funding: [{ source: "EU", programme: "nope" }] })], {
-      corridors: ["ghost"],
-      operator: "who",
-    });
-    const e = checkReferenceKeys(corridors, programmes, operators, [bad]).errors;
+    const bad = projectStub(
+      [lotStub({ funding: [{ source: "EU", programme: "nope" }] })],
+      {
+        corridors: ["ghost"],
+        operator: "who",
+      },
+    );
+    const e = checkReferenceKeys(corridors, programmes, operators, [
+      bad,
+    ]).errors;
     expect(e.join(" ")).toContain("ghost");
     expect(e.join(" ")).toContain("who");
     expect(e.join(" ")).toContain("nope");
@@ -475,7 +633,9 @@ describe("checkPartOf", () => {
   });
 
   it("rejects a dangling or self pointer", () => {
-    const dangling = projectStub([lotStub({ partOf: "ro-ghost" })], { id: "ro-x" });
+    const dangling = projectStub([lotStub({ partOf: "ro-ghost" })], {
+      id: "ro-x",
+    });
     expect(checkPartOf([dangling]).errors[0]).toContain("ro-ghost");
     const self = projectStub([lotStub({ partOf: "ro-x" })], { id: "ro-x" });
     expect(checkPartOf([self]).errors[0]).toContain("its own project");
@@ -483,7 +643,9 @@ describe("checkPartOf", () => {
 
   it("rejects a chain, which would make the exclusion rule ambiguous", () => {
     const mid = projectStub([lotStub({ partOf: "ro-a1" })], { id: "ro-mid" });
-    const leaf = projectStub([lotStub({ partOf: "ro-mid" })], { id: "ro-leaf" });
+    const leaf = projectStub([lotStub({ partOf: "ro-mid" })], {
+      id: "ro-leaf",
+    });
     expect(checkPartOf([parent, mid, leaf]).errors[0]).toContain(
       "itself part of another project",
     );
@@ -494,7 +656,9 @@ describe("checkPartOf", () => {
       id: "bg-x",
       country: "bg",
     });
-    expect(checkPartOf([parent, child]).errors[0]).toContain("different country");
+    expect(checkPartOf([parent, child]).errors[0]).toContain(
+      "different country",
+    );
   });
 });
 
@@ -674,7 +838,11 @@ describe("checkProjectGeometry", () => {
   it("rejects a single-position LineString", () => {
     const { errors } = checkProjectGeometry(
       project,
-      { features: [feature("a", { type: "LineString", coordinates: [[25, 44]] })] },
+      {
+        features: [
+          feature("a", { type: "LineString", coordinates: [[25, 44]] }),
+        ],
+      },
       "geo.geojson",
     );
     expect(errors).toHaveLength(1);
@@ -757,7 +925,9 @@ describe("checkProjectGeometry", () => {
       { features: [feature("a", oneDegree), feature("ghost", oneDegree)] },
       "geo.geojson",
     );
-    expect(errors).toContain('geo.geojson: feature "ghost" matches no lot in xx-test');
+    expect(errors).toContain(
+      'geo.geojson: feature "ghost" matches no lot in xx-test',
+    );
   });
 
   it("still reports a missing geometryRef", () => {

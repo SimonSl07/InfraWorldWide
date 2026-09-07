@@ -2,17 +2,13 @@ import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
-  getContractors,
   getCountries,
   getCountryTable,
-  getDeflators,
+  getLotMetrics,
   getProjects,
 } from "@/lib/data";
-import { commonLatestYear, createDeflator } from "@/lib/deflator";
-import { createContractorResolver } from "@/lib/contractors";
 import { currentMonth } from "@/lib/slip";
 import {
-  collectLotMetrics,
   deliveredOnTime,
   rankByCountry,
   underBudget,
@@ -23,7 +19,7 @@ import {
   type SlipEntry,
 } from "@/lib/rankings";
 import { summarizeSharedTrack } from "@/lib/shared-track";
-import { findCountry, rankCountries, type Rank } from "@/lib/country-stats";
+import { findCountry, rankCountries } from "@/lib/country-stats";
 import { openedKmByDecade, peakDecade } from "@/lib/country-growth";
 import { countryName, flagEmoji } from "@/lib/country-names";
 import { getOpenings } from "@/lib/timeline";
@@ -40,12 +36,13 @@ import { createLocalizer } from "@/lib/localized";
 import { pageMetadata } from "@/lib/page-metadata";
 import { breadcrumbList, jsonLdScript } from "@/lib/structured-data";
 import { siteUrl } from "@/lib/seo";
-import {
-  ALL_CATEGORIES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import type { Category } from "@/lib/schema";
 import CountryGrowthChart from "@/components/CountryGrowthChart";
+import { ExternalLink } from "@/components/ui/ExternalLink";
+import { RankBadge } from "@/components/ui/RankBadge";
+import { SectionLink } from "@/components/ui/SectionLink";
 import TimeTravelMap from "@/components/map/TimeTravelMap";
 import ProjectsBrowser from "@/components/ProjectsBrowser";
 
@@ -138,17 +135,6 @@ function PerfList({
   );
 }
 
-/** "#2 / 5" — see the note on RankChip in CountryPanel. */
-function RankBadge({ rank }: { rank: Rank | null }) {
-  if (!rank) return null;
-  return (
-    <span className="ml-2 rounded-full bg-surface-raised px-2 py-0.5 text-xs font-semibold tabular-nums text-ink-soft">
-      #{rank.position}
-      <span className="text-ink-faint"> / {rank.of}</span>
-    </span>
-  );
-}
-
 export default async function CountryPage({
   params,
 }: PageProps<"/[lang]/countries/[code]">) {
@@ -180,14 +166,7 @@ export default async function CountryPage({
 
   // Delivery performance, on the same basis as /rankings so the two pages
   // cannot disagree about the same lot.
-  const deflators = getDeflators();
-  const priceYear = commonLatestYear(deflators) ?? deflators.baseYear;
-  const metrics = collectLotMetrics(projects, {
-    deflate: createDeflator(deflators),
-    priceYear,
-    resolve: createContractorResolver(getContractors()),
-    nowMonth,
-  });
+  const metrics = getLotMetrics(nowMonth);
   const countryMetrics = metrics.filter((m) => m.country === code);
   const league = rankByCountry(metrics).find((g) => g.key === code) ?? null;
 
@@ -208,20 +187,12 @@ export default async function CountryPage({
   });
 
   const sectionLabel = (m: LotMetric) => (
-    <Link
-      href={`/projects/${m.projectId}`}
-      className="flex items-baseline gap-2 hover:underline underline-offset-2"
-    >
-      <span
-        className="inline-block h-1 w-3 shrink-0 translate-y-[-2px] rounded-full"
-        style={{ backgroundColor: categoryVar(m.category) }}
-      />
-      <span>
-        <span className="text-ink-muted">{name(m.projectName)}</span>
-        <span className="text-ink-faint"> / </span>
-        <span className="font-medium">{name(m.lotName)}</span>
-      </span>
-    </Link>
+    <SectionLink
+      projectId={m.projectId}
+      projectName={name(m.projectName)}
+      lotName={name(m.lotName)}
+      category={m.category}
+    />
   );
 
   const slipRows = (entries: SlipEntry[]) =>
@@ -291,10 +262,7 @@ export default async function CountryPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbs) }}
       />
-      <Link
-        href="/countries"
-        className="text-sm text-ink-muted hover:text-ink"
-      >
+      <Link href="/countries" className="text-sm text-ink-muted hover:text-ink">
         ← {t("country.backToCountries")}
       </Link>
 
@@ -362,10 +330,7 @@ export default async function CountryPage({
       <Section title={t("country.byCategory")}>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map(({ category, totals, rank }) => (
-            <div
-              key={category}
-              className="rounded-xl border border-line p-4"
-            >
+            <div key={category} className="rounded-xl border border-line p-4">
               <div
                 className="text-[10px] font-semibold uppercase tracking-wide"
                 style={{ color: categoryVar(category) }}
@@ -586,14 +551,12 @@ export default async function CountryPage({
           <ul className="space-y-1 text-sm text-ink-soft">
             {ref.sources.map((s) => (
               <li key={s.url}>
-                <a
+                <ExternalLink
                   href={s.url}
-                  target="_blank"
-                  rel="noreferrer"
                   className="underline underline-offset-2 hover:text-ink"
                 >
                   {s.title}
-                </a>
+                </ExternalLink>
               </li>
             ))}
           </ul>

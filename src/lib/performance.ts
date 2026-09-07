@@ -46,7 +46,9 @@ export interface ComparableCost {
  * The best cost figure a lot has, preferring what was actually paid over
  * what was signed over what was guessed. Null when it has none.
  */
-export function bestCost(metric: LotMetric): { basis: CostBasis; money: Money } | null {
+export function bestCost(
+  metric: LotMetric,
+): { basis: CostBasis; money: Money } | null {
   for (const basis of COST_BASES) {
     const money = metric.costs[basis];
     if (money) return { basis, money };
@@ -161,9 +163,7 @@ export function projectCostRows(
 
     const first = lots[0];
     const total: Money | null =
-      currency !== null
-        ? { amount, currency, year: options.priceYear }
-        : null;
+      currency !== null ? { amount, currency, year: options.priceYear } : null;
 
     rows.push({
       projectId,

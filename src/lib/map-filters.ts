@@ -19,7 +19,10 @@ import { ALL_CATEGORIES, MAP_STATUSES } from "./map-style";
  * hadn't started yet by then have no historical status to derive, so there
  * the declared one (tendered/planned) is used.
  */
-export type CategoryStatusSelection = ReadonlyMap<Category, ReadonlySet<Status>>;
+export type CategoryStatusSelection = ReadonlyMap<
+  Category,
+  ReadonlySet<Status>
+>;
 
 /** Statuses ordered as in MAP_STATUSES, for stable URLs and menus. */
 function orderStatuses(statuses: ReadonlySet<Status>): Status[] {
@@ -149,7 +152,11 @@ export function buildSelectionFilter(
     );
   // Nothing selected: an empty category list matches no feature.
   if (clauses.length === 0) {
-    return ["in", ["get", "category"], ["literal", []]] as unknown as FilterSpecification;
+    return [
+      "in",
+      ["get", "category"],
+      ["literal", []],
+    ] as unknown as FilterSpecification;
   }
   return ["any", ...clauses] as unknown as FilterSpecification;
 }
@@ -196,7 +203,10 @@ export function buildMonthFilters(
   // Each layer answers to the checkbox for the status it represents in the
   // viewed month; the not-yet-started layer falls back to declared status.
   const openedCategories = buildCategoryFilter(selection, "opened");
-  const buildingCategories = buildCategoryFilter(selection, "under_construction");
+  const buildingCategories = buildCategoryFilter(
+    selection,
+    "under_construction",
+  );
   const notStartedSelection = buildSelectionFilter(selection);
 
   const effectivelyOpened = effectivelyOpenedFilter(month, nowMonth);
@@ -379,6 +389,26 @@ export function parseCityParam(
   if (!raw) return null;
   const key = raw.toLowerCase();
   return new Set(known).has(key) ? key : null;
+}
+
+/**
+ * Parse a ?speed= param, an index into the playback steps.
+ *
+ * The missing cases are checked before anything is turned into a number:
+ * Number(null) and Number("") are both 0, which is a valid index, so a link
+ * without ?speed= used to open on the slowest speed instead of the default.
+ * Anything that is not an integer inside [0, stepCount) is the fallback.
+ */
+export function parseSpeedParam(
+  raw: string | null,
+  stepCount: number,
+  fallback: number,
+): number {
+  if (raw === null || raw === "") return fallback;
+  const index = Number(raw);
+  return Number.isInteger(index) && index >= 0 && index < stepCount
+    ? index
+    : fallback;
 }
 
 /* ── Lot references ───────────────────────────────────────────────────── */

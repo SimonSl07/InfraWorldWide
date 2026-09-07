@@ -28,23 +28,41 @@ function gap(over: Partial<Gap> = {}): Gap {
 
 describe("matchesKnownGap", () => {
   it("matches an exact id", () => {
-    expect(matchesKnownGap("ro/ro-a1/l1/no-cost", "ro/ro-a1/l1/no-cost")).toBe(true);
-    expect(matchesKnownGap("ro/ro-a1/l2/no-cost", "ro/ro-a1/l1/no-cost")).toBe(false);
+    expect(matchesKnownGap("ro/ro-a1/l1/no-cost", "ro/ro-a1/l1/no-cost")).toBe(
+      true,
+    );
+    expect(matchesKnownGap("ro/ro-a1/l2/no-cost", "ro/ro-a1/l1/no-cost")).toBe(
+      false,
+    );
   });
 
   it("matches a wildcard in any segment", () => {
-    expect(matchesKnownGap("rs/rs-a5/vrba/opened-no-actual", "rs/*/*/opened-no-actual")).toBe(true);
-    expect(matchesKnownGap("ro/ro-a1/l1/opened-no-actual", "rs/*/*/opened-no-actual")).toBe(false);
+    expect(
+      matchesKnownGap(
+        "rs/rs-a5/vrba/opened-no-actual",
+        "rs/*/*/opened-no-actual",
+      ),
+    ).toBe(true);
+    expect(
+      matchesKnownGap(
+        "ro/ro-a1/l1/opened-no-actual",
+        "rs/*/*/opened-no-actual",
+      ),
+    ).toBe(false);
     expect(matchesKnownGap("rs/rs-a5/vrba/no-cost", "rs/rs-a5/*/*")).toBe(true);
   });
 
   it("does not let a wildcard span segments", () => {
-    expect(matchesKnownGap("rs/rs-a5/vrba/no-cost", "rs/*/no-cost")).toBe(false);
+    expect(matchesKnownGap("rs/rs-a5/vrba/no-cost", "rs/*/no-cost")).toBe(
+      false,
+    );
     expect(matchesKnownGap("rs/rs-a5/vrba/no-cost", "*")).toBe(false);
   });
 
   it("treats a pattern as literal text, not a regular expression", () => {
-    expect(matchesKnownGap("rs/rs-a5/vrba/no-cost", "rs/rs.a5/vrba/no-cost")).toBe(false);
+    expect(
+      matchesKnownGap("rs/rs-a5/vrba/no-cost", "rs/rs.a5/vrba/no-cost"),
+    ).toBe(false);
   });
 });
 
@@ -116,8 +134,16 @@ describe("toJson", () => {
     const parsed = JSON.parse(
       toJson({
         generatedAt: "2026-08-14",
-        gaps: [gap(), gap({ priority: "low", id: "ro/ro-a1/l2/no-tender-award" })],
-        suppressed: [{ gap: gap({ id: "rs/rs-a5/-/project-no-actual" }), reason: "settled" }],
+        gaps: [
+          gap(),
+          gap({ priority: "low", id: "ro/ro-a1/l2/no-tender-award" }),
+        ],
+        suppressed: [
+          {
+            gap: gap({ id: "rs/rs-a5/-/project-no-actual" }),
+            reason: "settled",
+          },
+        ],
       }),
     );
     expect(parsed.generatedAt).toBe("2026-08-14");
@@ -150,7 +176,11 @@ describe("summarise", () => {
     const rows = summarise([
       gap(),
       gap({ id: "ro/ro-a1/l2/no-cost" }),
-      gap({ priority: "low", field: "name.ro", issue: "missing Romanian lot name" }),
+      gap({
+        priority: "low",
+        field: "name.ro",
+        issue: "missing Romanian lot name",
+      }),
     ]);
     expect(rows[0]).toEqual({
       priority: "high",

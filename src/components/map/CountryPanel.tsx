@@ -2,16 +2,16 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import {
-  ALL_CATEGORIES,
-} from "@/lib/map-style";
+import { ALL_CATEGORIES } from "@/lib/map-style";
 import { categoryVar } from "@/lib/map-theme";
 import MapPanel from "./MapPanel";
 import { countryName, flagEmoji } from "@/lib/country-names";
-import { formatKm, formatMonth } from "@/lib/format";
+import { formatKm, formatMonth, formatNumber } from "@/lib/format";
+import { localized } from "@/lib/localized";
 import type { Rank, RankedCountry } from "@/lib/country-stats";
 import type { DecadeBucket } from "@/lib/country-growth";
 import Sparkline from "./Sparkline";
+import { RankBadge } from "@/components/ui/RankBadge";
 
 interface CountryPanelProps {
   country: RankedCountry;
@@ -19,24 +19,6 @@ interface CountryPanelProps {
   /** Month being viewed, so the figures can say what they are "as of". */
   month: number;
   onClose: () => void;
-}
-
-/**
- * A league position, shown as "#2 / 5" rather than a bare "#2": a first
- * place among three countries is worth less than among thirty, and hiding
- * the field size would flatter every early dataset.
- */
-function RankChip({ rank, label }: { rank: Rank | null; label: string }) {
-  if (!rank) return null;
-  return (
-    <span
-      title={label}
-      className="ml-2 shrink-0 rounded-full bg-surface-raised px-1.5 py-0.5 text-[10px] font-semibold tabular-nums text-ink-soft"
-    >
-      #{rank.position}
-      <span className="text-ink-faint"> / {rank.of}</span>
-    </span>
-  );
 }
 
 export default function CountryPanel({
@@ -49,6 +31,15 @@ export default function CountryPanel({
   const locale = useLocale();
   const { summary, ranks, ref } = country;
   const code = summary.code;
+
+  // The panel's figures are set small, so the chips beside them are too.
+  const rankChip = (rank: Rank | null) => (
+    <RankBadge
+      rank={rank}
+      title={t("country.rankHelp")}
+      className="shrink-0 px-1.5 py-0.5 text-[10px] text-ink-soft"
+    />
+  );
 
   // Categories the country actually has something in, longest first — a row
   // of zeroes says nothing and pushes the useful rows off the panel.
@@ -97,10 +88,7 @@ export default function CountryPanel({
                   <span className="font-semibold tabular-nums">
                     {formatKm(totals.openedKm, locale)}
                   </span>
-                  <RankChip
-                    rank={ranks.openedKm[category]}
-                    label={t("country.rankHelp")}
-                  />
+                  {rankChip(ranks.openedKm[category])}
                 </dd>
               </div>
               {/* summarizeCountries already zeroes planned km when viewing
@@ -137,7 +125,7 @@ export default function CountryPanel({
             <span className="font-semibold tabular-nums">
               {formatKm(summary.total.openedKm, locale)}
             </span>
-            <RankChip rank={ranks.openedKm.all} label={t("country.rankHelp")} />
+            {rankChip(ranks.openedKm.all)}
           </span>
         </div>
 
@@ -146,9 +134,9 @@ export default function CountryPanel({
             <span className="text-ink-muted">{t("country.perArea")}</span>
             <span className="flex items-baseline">
               <span className="tabular-nums">
-                {country.kmPerArea.toFixed(1)}
+                {formatNumber(country.kmPerArea, locale, 1)}
               </span>
-              <RankChip rank={ranks.kmPerArea} label={t("country.rankHelp")} />
+              {rankChip(ranks.kmPerArea)}
             </span>
           </div>
         )}
@@ -157,9 +145,9 @@ export default function CountryPanel({
             <span className="text-ink-muted">{t("country.perCapita")}</span>
             <span className="flex items-baseline">
               <span className="tabular-nums">
-                {country.kmPerCapita.toFixed(1)}
+                {formatNumber(country.kmPerCapita, locale, 1)}
               </span>
-              <RankChip rank={ranks.kmPerCapita} label={t("country.rankHelp")} />
+              {rankChip(ranks.kmPerCapita)}
             </span>
           </div>
         )}
@@ -193,7 +181,7 @@ export default function CountryPanel({
 
       {ref?.note && (
         <p className="mt-3 text-[11px] leading-snug text-ink-faint">
-          {locale === "ro" && ref.note.ro ? ref.note.ro : ref.note.en}
+          {localized(ref.note, locale)}
         </p>
       )}
 
