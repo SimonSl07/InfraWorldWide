@@ -31,7 +31,7 @@ export default function BasemapToggle({
           type="button"
           onClick={() => onChange(map.id)}
           aria-pressed={map.id === value}
-          className={`cursor-pointer px-2.5 py-1 text-[11px] font-medium transition-colors ${
+          className={`cursor-pointer px-2.5 py-1 text-[11px] font-medium transition-colors pointer-coarse:min-h-11 pointer-coarse:px-4 ${
             map.id === value
               ? "bg-inverse text-on-inverse"
               : "text-ink-soft hover:text-ink"

@@ -110,7 +110,7 @@ export default function TimeSlider({
           step={1}
           value={month}
           onChange={(e) => onMonthChange(Number(e.target.value))}
-          className="w-full sm:w-64 md:w-96 accent-inverse"
+          className="w-full accent-inverse pointer-coarse:h-11 sm:w-64 md:w-96"
           aria-label={t("month")}
           aria-valuetext={label}
         />
@@ -133,7 +133,7 @@ export default function TimeSlider({
           step={1}
           value={speedIndex}
           onChange={(e) => onSpeedIndexChange(Number(e.target.value))}
-          className="w-20 sm:w-24 accent-inverse"
+          className="w-20 accent-inverse pointer-coarse:h-11 sm:w-24"
           aria-label={t("speed")}
           title={t("speedValue", { speed: formatSpeed(speed) })}
         />

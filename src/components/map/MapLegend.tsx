@@ -58,7 +58,7 @@ export default function MapLegend({
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls="map-legend-panel"
-        className="cursor-pointer rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur sm:hidden"
+        className="inline-flex cursor-pointer items-center rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs font-medium text-ink-soft shadow backdrop-blur pointer-coarse:min-h-11 sm:hidden"
       >
         {open ? t("map.hideLegend") : t("map.showLegend")}
       </button>
