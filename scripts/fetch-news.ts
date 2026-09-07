@@ -8,10 +8,8 @@
  *
  * The state file remembers which URLs a run has seen, so a feed's archive is
  * not reported as news every day; it is a record of what the feeds carried,
- * not site data, and lives outside data/ entirely: the validators walk that
- * directory on disk, and a state file full of headlines fails the em-dash
- * check that every data file answers to. The workflow keeps it in the
- * Actions cache. The digest is a rolling window,
+ * not site data, and lives in .news/ rather than under data/. The workflow
+ * keeps it in the Actions cache. The digest is a rolling window,
  * so a reader who opens the issue once a week sees the week.
  *
  * Report, not a writer. Every line names the section it probably concerns
@@ -85,19 +83,24 @@ async function fetchFeed(url: string): Promise<FeedItem[]> {
   const res = await fetch(url, {
     headers: {
       "User-Agent": USER_AGENT,
-      // `*/*` and nothing narrower. Naming the feed types is the polite
-      // thing to do and is what clubferoviar.ro and proinfrastructura.ro
-      // answer 415 to: both return 200 for `*/*` and 415 for any Accept that
-      // names a type, including `application/rss+xml, */*`. Sniffing the
-      // body is what decides whether a response is a feed anyway, so the
-      // header was buying nothing and costing a hard failure.
+      // Explicitly what `fetch` would send anyway, because the polite
+      // version cost real sources: clubferoviar.ro and proinfrastructura.ro
+      // answer 415 to any Accept that names a media type, including
+      // `application/rss+xml, */*`. `parseFeed` sniffs the body to decide
+      // what arrived, so naming types bought nothing.
       Accept: "*/*",
     },
     signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const items = parseFeed(await res.text());
-  if (items.length === 0) throw new Error("no items parsed");
+  // The content type goes in the message because the usual cause is a host
+  // answering 200 with an HTML challenge page rather than the feed, and
+  // "no items parsed" alone does not say which of those happened.
+  if (items.length === 0) {
+    const type = res.headers.get("content-type")?.split(";")[0] ?? "no type";
+    throw new Error(`no items parsed (${type})`);
+  }
   return items;
 }
 

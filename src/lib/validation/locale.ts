@@ -82,12 +82,27 @@ export function checkEmDashes(root: string, dirs: string[]): string[] {
   return errors;
 }
 
-/** Every .json file under a directory, recursively. */
+/**
+ * Directories under `data/` that a harvester writes and nobody commits.
+ *
+ * They are gitignored, but these walks read the disk rather than the index,
+ * so a checkout that has run a script once looks different from a clean one.
+ * A news state file is a list of headlines and carries em dashes; a TED
+ * snapshot carries notice titles. Both failed the checks that every
+ * committed data file answers to, on a working tree whose only sin was
+ * running the tool. Naming them here fixes it once for all three rather
+ * than moving each harvester's output somewhere else in turn.
+ */
+export const GENERATED_DIRS: readonly string[] = ["news", "osm-dates", "ted"];
+
+/** Every committed .json file under a directory, recursively. */
 export function* walk(dir: string): Generator<string> {
   if (!fs.existsSync(dir)) return;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) yield* walk(full);
-    else if (entry.name.endsWith(".json")) yield full;
+    if (entry.isDirectory()) {
+      if (GENERATED_DIRS.includes(entry.name)) continue;
+      yield* walk(full);
+    } else if (entry.name.endsWith(".json")) yield full;
   }
 }
