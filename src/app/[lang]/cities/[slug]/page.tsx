@@ -15,6 +15,10 @@ import { ExternalLink } from "@/components/ui/ExternalLink";
 import { Figure } from "@/components/ui/Figure";
 import { countsTowardNetwork, type City } from "@/lib/schema";
 
+// Every city is prerendered; an unknown id is a 404, not an on-demand
+// render that would read public/data from disk on a serverless host.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   // Locales are enumerated by the parent [lang] layout.
   return getCityKeys().map((slug) => ({ slug }));
