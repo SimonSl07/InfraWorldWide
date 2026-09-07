@@ -83,8 +83,13 @@ async function fetchFeed(url: string): Promise<FeedItem[]> {
   const res = await fetch(url, {
     headers: {
       "User-Agent": USER_AGENT,
-      Accept:
-        "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+      // `*/*` and nothing narrower. Naming the feed types is the polite
+      // thing to do and is what clubferoviar.ro and proinfrastructura.ro
+      // answer 415 to: both return 200 for `*/*` and 415 for any Accept that
+      // names a type, including `application/rss+xml, */*`. Sniffing the
+      // body is what decides whether a response is a feed anyway, so the
+      // header was buying nothing and costing a hard failure.
+      Accept: "*/*",
     },
     signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
   });
