@@ -4,6 +4,7 @@ import {
   normaliseText,
   routeRefs,
   scoreNotice,
+  serbianLatin,
   type MatchConfidence,
 } from "./ted-match";
 
@@ -326,6 +327,26 @@ const RANK: Record<MatchConfidence, number> = {
  * "A1" names a motorway in each of the three and a Romanian paper means the
  * Romanian one.
  */
+/**
+ * The text every judgement about an item is made on.
+ *
+ * For a Serbian source the Latin romanisation rides along with the original,
+ * because Serbian sections are recorded in Latin ("Kruševac East") while the
+ * official feeds publish in Cyrillic. Scoring, the relevance filter and the
+ * event-kind guess all have to see the same string: reading "Отворен за
+ * саобраћај" without it yields no vocabulary and no suggested event, even
+ * where the phrase is in the table verbatim.
+ *
+ * Serbian only. Bulgarian is Cyrillic as well and has its own romanisation
+ * in `normaliseText`; applying the Serbian rules to it invents a second,
+ * wrong spelling of every place name.
+ */
+export function searchText(item: FeedItem, country?: string): string {
+  const raw = `${item.title} ${item.summary}`;
+  if (country !== "rs") return raw;
+  return `${raw} ${serbianLatin(raw)}`.trimEnd();
+}
+
 export function matchItem(
   item: FeedItem,
   projects: Project[],
@@ -333,7 +354,7 @@ export function matchItem(
   options: { limit?: number; country?: string } = {},
 ): LotCandidate[] {
   const { limit = 3, country } = options;
-  const text = `${item.title} ${item.summary}`;
+  const text = searchText(item, country);
   const notice = {
     publicationNumber: item.url,
     publicationDate: "",
@@ -398,9 +419,10 @@ export function matchItem(
 export function isRelevant(
   item: FeedItem,
   focus: NewsSource["focus"],
+  country?: string,
 ): boolean {
   if (focus === "infrastructure") return true;
-  return hasInfrastructureKeyword(`${item.title} ${item.summary}`);
+  return hasInfrastructureKeyword(searchText(item, country));
 }
 
 /* ── Event kind ───────────────────────────────────────────────────────── */
@@ -650,15 +672,34 @@ export function formatDigest(input: DigestInput): string {
   const hidden = entries.length - shown.length;
 
   const sections: string[] = [];
-  const bestLot = (e: DigestEntry) => e.candidates[0]?.lotId ?? null;
+  const best = (e: DigestEntry) => e.candidates[0];
+  /**
+   * A section is named at the top of the digest only when the match is worth
+   * a person's attention. A low-confidence lot match is one shared place
+   * name, and a live run put an explosion in Augsburg under the Sofia metro
+   * and a locomotive fire under a Danube bridge. Those belong in the fold
+   * with the rest of the day's reading, not in the list a reader is meant to
+   * act on. Medium and high are what a toponym match earns when it is the
+   * road the article is actually about.
+   */
+  const headlined = (e: DigestEntry) => {
+    const top = best(e);
+    return (
+      top?.lotId != null &&
+      (top.confidence === "high" || top.confidence === "medium")
+    );
+  };
 
   const wikipedia = shown.filter((e) => e.wikipediaProject !== undefined);
   const news = shown.filter((e) => e.wikipediaProject === undefined);
-  const matched = news.filter((e) => bestLot(e) !== null);
+  const matched = news.filter(headlined);
   const routeOnly = news.filter(
-    (e) => bestLot(e) === null && e.candidates.length > 0,
+    (e) => !headlined(e) && best(e)?.lotId == null && e.candidates.length > 0,
   );
-  const unmatched = news.filter((e) => e.candidates.length === 0);
+  const unmatched = news.filter(
+    (e) =>
+      !headlined(e) && (e.candidates.length === 0 || best(e)?.lotId != null),
+  );
 
   sections.push(
     `Infrastructure news from the last ${windowDays} days, matched to the sections in \`data/projects\`. A report for a person: nothing here is written to the data. Each match is a guess from shared place names; read the article before recording anything, and cite it with the date you read it.`,
@@ -704,7 +745,7 @@ export function formatDigest(input: DigestInput): string {
     sections.push(
       [
         "<details>",
-        `<summary>Other infrastructure news, no section matched (${unmatched.length})</summary>`,
+        `<summary>Other infrastructure news, no confident section match (${unmatched.length})</summary>`,
         "",
         ...unmatched.map(line),
         "",

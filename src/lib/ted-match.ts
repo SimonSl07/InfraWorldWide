@@ -41,6 +41,78 @@ export interface TedNotice {
  * (Дупница = Dupnitsa). Streamlined BGN/PCGN, which is what Bulgarian road
  * signs and Wikipedia use, so it lands on the same spelling as the data.
  */
+/**
+ * Serbian Cyrillic to Serbian Latin, which is what the Serbian data is
+ * written in.
+ *
+ * The map below it is Bulgarian: `ш` becomes `sh`, `ц` becomes `ts`, and `ј`
+ * is not in it at all. Applied to Serbian that produces "po ate" for Појате
+ * and "krushevats" for Крушевац, so an article from the Serbian ministry
+ * could never match a lot called "Kruševac East". The two conventions
+ * genuinely differ and one table cannot serve both, so this is a second one,
+ * used only where the source is Serbian.
+ *
+ * Diacritics are emitted rather than folded away, because `normaliseText`
+ * strips them from both sides. `ђ` is the exception and becomes `dj`: it is
+ * a letter, not a decomposable accent, and the data spells it both ways,
+ * `Đunis` in the name and `djunis` in the id of the same lot. `normaliseText`
+ * now folds `đ` to `dj` as well, so the name, the id and the Cyrillic all
+ * arrive at one token.
+ *
+ * Applied only where the source is Serbian. Bulgarian is Cyrillic too, and
+ * romanising it by these rules produces a second, wrong spelling of every
+ * place name in the text.
+ */
+const SERBIAN_CYRILLIC: Record<string, string> = {
+  а: "a",
+  б: "b",
+  в: "v",
+  г: "g",
+  д: "d",
+  ђ: "dj",
+  е: "e",
+  ж: "ž",
+  з: "z",
+  и: "i",
+  ј: "j",
+  к: "k",
+  л: "l",
+  љ: "lj",
+  м: "m",
+  н: "n",
+  њ: "nj",
+  о: "o",
+  п: "p",
+  р: "r",
+  с: "s",
+  т: "t",
+  ћ: "ć",
+  у: "u",
+  ф: "f",
+  х: "h",
+  ц: "c",
+  ч: "č",
+  џ: "dž",
+  ш: "š",
+};
+
+/**
+ * The Serbian Latin form of a text, or "" when it holds no Cyrillic.
+ *
+ * Returning "" for Latin input is the point: the caller appends the result,
+ * and appending nothing leaves every existing match exactly as it was.
+ */
+export function serbianLatin(text: string): string {
+  let hasCyrillic = false;
+  let out = "";
+  for (const ch of text.toLowerCase()) {
+    const mapped = SERBIAN_CYRILLIC[ch];
+    if (mapped !== undefined) hasCyrillic = true;
+    out += mapped ?? ch;
+  }
+  return hasCyrillic ? out : "";
+}
+
 const CYRILLIC: Record<string, string> = {
   а: "a",
   б: "b",
@@ -93,6 +165,10 @@ export function normaliseText(text: string): string {
       // decompose to s and t.
       .replace(/[şŝ]/g, "s")
       .replace(/[ţ]/g, "t")
+      // A letter rather than an accent, so NFD leaves it and the class below
+      // would delete it: "Đunis" became "unis" while the same lot's id,
+      // "djunis", stayed itself, and the two never met.
+      .replace(/đ/g, "dj")
       .replace(/[^a-z0-9]+/g, " ")
       .trim()
   );

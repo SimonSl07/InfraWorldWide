@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/news-sources.schema.json",
-  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Checked 2026-09-07. Bulgaria and Serbia have no reachable feed yet (api.bg did not answer, koridorisrbije.rs serves HTML, putevi-srbije.rs and metropolitan.bg return 404), so those countries are covered only by the Wikipedia article histories the projects cite, which the script watches without needing an entry here. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole.",
+  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Every entry was fetched and parsed on 2026-09-07, and each one twice, by whoever added it and by a second pass that checked what the items are actually about. cnadnr.ro, mt.ro, cnir.ro, metrorex.ro, gov.ro and Bulgaria's api.bg time out from outside their own country, though cfr.ro does not, so a Romanian state host is not automatically unreachable. cnair.ro is not CNAIR but a squatted domain serving a single 2016 post. clubferoviar.ro and proinfrastructura.ro were dropped: both now answer any non-browser client with a JavaScript challenge, on every feed path tried. srbijavoz.rs was dropped because its pubDate values are transliterated into Cyrillic and no parser reads them. The EIB project pipeline was dropped because the host's robots.txt asks clients not to fetch feeds. koridorisrbije.rs is an empty Angular shell, so the corridors are covered through mgsi and putevi-srbije instead. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole, which is why an international title is filed as general. Wikipedia article histories are watched from the projects' own sources and need no entry here.",
   "sources": [
     {
       "id": "hotnews",
@@ -53,22 +53,85 @@
       "note": "Served with a text/html content type; the body is RSS 2.0."
     },
     {
-      "id": "clubferoviar",
-      "name": "Club Feroviar",
-      "url": "https://clubferoviar.ro/feed/",
+      "id": "cfr",
+      "name": "CFR SA",
+      "url": "https://cfr.ro/feed/",
       "country": "ro",
       "language": "ro",
       "focus": "infrastructure",
-      "note": "Rail trade press: CFR, Metrorex, rolling stock and line works."
+      "note": "The national rail infrastructure manager. Line closures, restorations and works notices, same day."
     },
     {
-      "id": "proinfrastructura",
-      "name": "Pro Infrastructura",
-      "url": "https://proinfrastructura.ro/feed/",
-      "country": "ro",
-      "language": "ro",
+      "id": "mgsi",
+      "name": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+      "url": "https://www.mgsi.gov.rs/rss.xml",
+      "country": "rs",
+      "language": "sr",
       "focus": "infrastructure",
-      "note": "The association's own reporting on motorway and rail sections."
+      "note": "The Serbian construction and transport ministry. Cyrillic, which the matcher transliterates before scoring."
+    },
+    {
+      "id": "putevi-srbije",
+      "name": "JP Putevi Srbije",
+      "url": "https://www.putevi-srbije.rs/index.php/vesti-korporativne-2?format=feed&type=rss",
+      "country": "rs",
+      "language": "sr",
+      "focus": "infrastructure",
+      "note": "The roads authority. A Joomla category feed, which is why the site looked feedless: the plain URL serves HTML."
+    },
+    {
+      "id": "infrazs",
+      "name": "Infrastruktura železnice Srbije",
+      "url": "https://infrazs.rs/feed/",
+      "country": "rs",
+      "language": "sr",
+      "focus": "infrastructure",
+      "note": "The rail infrastructure manager. Carries tender notices for the Belgrade to Niš high speed line."
+    },
+    {
+      "id": "metropolitan-sofia",
+      "name": "Metropolitan Sofia",
+      "url": "https://www.metropolitan.bg/speczialni/rss.xml",
+      "country": "bg",
+      "language": "bg",
+      "focus": "infrastructure",
+      "note": "Sofia Metro, the operator that opens the stations. The feed is linked from the homepage; the catalogue previously recorded this host as a 404, which was simply wrong."
+    },
+    {
+      "id": "cinea",
+      "name": "CINEA",
+      "url": "https://cinea.ec.europa.eu/node/2/rss_en",
+      "country": "eu",
+      "language": "en",
+      "focus": "general",
+      "note": "The agency that awards Connecting Europe Facility money, where a cross border project is named before it is built. Filed as general: 20 of its 30 current items are the LIFE environment programme and none names these three countries, so it earns its place on the rare transport award rather than on volume."
+    },
+    {
+      "id": "dg-move",
+      "name": "European Commission, Mobility and Transport",
+      "url": "https://transport.ec.europa.eu/node/2/rss_en",
+      "country": "eu",
+      "language": "en",
+      "focus": "general",
+      "note": "Corridor policy and funding decisions. Filed as general: mostly aviation, maritime and passenger rights, with about five items in thirty touching road or rail."
+    },
+    {
+      "id": "railwaypro",
+      "name": "Railway PRO",
+      "url": "https://www.railwaypro.com/wp/feed/",
+      "country": "ro",
+      "language": "en",
+      "focus": "general",
+      "note": "Published in Romania, written in English, covers all three countries. Filed as general: one of its thirty current items names any of them, so the vocabulary filter earns its keep here."
+    },
+    {
+      "id": "railway-gazette",
+      "name": "Railway Gazette International",
+      "url": "https://www.railwaygazette.com/feed/",
+      "country": "eu",
+      "language": "en",
+      "focus": "general",
+      "note": "International rail trade press. Filed as general for the same reason: none of its twelve current items concerns these three countries. Its terms permit reference use and forbid training."
     }
   ]
 }
