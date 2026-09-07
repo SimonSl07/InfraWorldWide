@@ -19,6 +19,10 @@ import { CountryLabel } from "@/components/ui/CountryLabel";
 import { SectionLink } from "@/components/ui/SectionLink";
 import { loadContractorProfiles } from "../profiles";
 
+// Every contractor is prerendered; an unknown id is a 404, not an on-demand
+// render that would read public/data from disk on a serverless host.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   // Locales are enumerated by the parent [lang] layout.
   return loadContractorProfiles().map((p) => ({ id: p.id }));
