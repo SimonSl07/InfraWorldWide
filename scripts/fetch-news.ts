@@ -3,13 +3,15 @@
  * article the projects cite, and writes a digest for a person to read:
  *
  *   npx tsx scripts/fetch-news.ts                                    # to stdout
- *   npx tsx scripts/fetch-news.ts --state data/news/seen.json --out reports/news.md
+ *   npx tsx scripts/fetch-news.ts --state .news/seen.json --out reports/news.md
  *   npx tsx scripts/fetch-news.ts --window 14 --retain 90
  *
  * The state file remembers which URLs a run has seen, so a feed's archive is
  * not reported as news every day; it is a record of what the feeds carried,
- * not site data, and lives outside the repo (data/news/ is gitignored; the
- * workflow keeps it in the Actions cache). The digest is a rolling window,
+ * not site data, and lives outside data/ entirely: the validators walk that
+ * directory on disk, and a state file full of headlines fails the em-dash
+ * check that every data file answers to. The workflow keeps it in the
+ * Actions cache. The digest is a rolling window,
  * so a reader who opens the issue once a week sees the week.
  *
  * Report, not a writer. Every line names the section it probably concerns
@@ -102,7 +104,7 @@ async function fetchFeed(url: string): Promise<FeedItem[]> {
 async function main(): Promise<void> {
   const root = process.cwd();
   const today = new Date().toISOString().slice(0, 10);
-  const stateFile = arg("--state", path.join(root, "data/news/seen.json"));
+  const stateFile = arg("--state", path.join(root, ".news/seen.json"));
   const outFile = arg("--out", "");
   const windowDays = Number(arg("--window", "14"));
   const retainDays = Number(arg("--retain", "90"));
