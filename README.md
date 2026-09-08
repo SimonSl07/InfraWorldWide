@@ -221,7 +221,7 @@ Five scripts that report rather than gate. None of them runs in `npm test` (they
 
 `.github/workflows/scheduled-checks.yml` runs the first, second and fourth weekly and keeps a single issue up to date. It never fails a run: it opens or edits one issue, and skips even that when the report is identical to last week's.
 
-### News digest
+### Morning cycle: news digest and gap diff
 
 `npm run data:news` reads the feeds in `data/news-sources.json` and the edit history of every Wikipedia article a project cites, matches each item to a section by the place names it shares (the TED matcher's weighting, through `src/lib/news.ts`), notes the event kind the wording suggests, and writes a Markdown digest of the last 14 days.
 
