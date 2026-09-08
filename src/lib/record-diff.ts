@@ -106,6 +106,12 @@ export interface FormatOptions {
   maxValueChars?: number;
   /** Fields printed after the key on an added or removed line. */
   summaryFields?: string[];
+  /**
+   * What the diff is against, for the no-change line. The default suits the
+   * fetch scripts, which compare against a committed snapshot; the gap report
+   * compares against a cached record of its own last run.
+   */
+  baseline?: string;
 }
 
 function show(value: unknown, max: number): string {
@@ -125,7 +131,7 @@ export function formatDiff<T extends Rec>(
 ): string {
   const max = options.maxValueChars ?? 120;
   if (!hasChanges(diff)) {
-    return `No change: ${diff.unchanged} ${options.label}(s) identical to what is committed.`;
+    return `No change: ${diff.unchanged} ${options.label}(s) identical to ${options.baseline ?? "what is committed"}.`;
   }
 
   const lines: string[] = [];

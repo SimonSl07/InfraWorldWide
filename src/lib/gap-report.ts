@@ -213,3 +213,25 @@ export function summarise(gaps: Gap[]): SummaryRow[] {
       b.count - a.count || priorityRank(a.priority) - priorityRank(b.priority),
   );
 }
+
+/* ── Diffing one run against the last ─────────────────────────────── */
+
+/**
+ * The key a gap is diffed under.
+ *
+ * Gap.id is not unique, which is the trap here: a lot whose cost.estimated
+ * and contract.value are both priced in a currency-year the deflators miss
+ * produces two rows with one id and two fields. Four of the 699 rows are
+ * such a pair today. Keying on the id alone drops one of each and then
+ * reports it as appearing and vanishing as the map order shifts.
+ */
+export function gapKey(gap: Gap): string {
+  return `${gap.id}|${gap.field}`;
+}
+
+/** Gaps keyed for `diffRecords`, which compares two records key by key. */
+export function gapsByKey(gaps: Gap[]): Record<string, Gap> {
+  const byKey: Record<string, Gap> = {};
+  for (const gap of gaps) byKey[gapKey(gap)] = gap;
+  return byKey;
+}

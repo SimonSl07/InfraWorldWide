@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
+import { diffRecords } from "./record-diff";
 import {
   atLeastPriority,
+  gapKey,
+  gapsByKey,
   knownGapsSchema,
   matchesKnownGap,
   partitionKnown,
@@ -230,5 +233,55 @@ describe("knownGapsSchema", () => {
         entries: [{ id: "rs/*", reason: "r", settledOn: "2026-08-12" }],
       }).success,
     ).toBe(false);
+  });
+});
+
+describe("gapsByKey", () => {
+  it("keeps both rows when one lot has the same gap code on two fields", () => {
+    // ro-a11 and ro-a8 really do carry this pair: one RON 2026 figure in
+    // cost.estimated and the same one in contract.value.
+    const estimate = gap({
+      id: "ro/ro-a11/chisineu-cris-arad/no-deflator",
+      field: "cost.estimated",
+    });
+    const contract = gap({
+      id: "ro/ro-a11/chisineu-cris-arad/no-deflator",
+      field: "contract.value",
+    });
+
+    const byKey = gapsByKey([estimate, contract]);
+
+    expect(Object.keys(byKey)).toHaveLength(2);
+    expect(byKey[gapKey(estimate)]).toBe(estimate);
+    expect(byKey[gapKey(contract)]).toBe(contract);
+  });
+
+  it("reports a gap that appeared and one that was filled", () => {
+    const standing = gap({ id: "ro/ro-a1/l1/no-cost", field: "cost" });
+    const filled = gap({ id: "ro/ro-a1/l2/no-cost", field: "cost" });
+    const appeared = gap({
+      id: "bg/bg-a1/l9/no-actual",
+      field: "cost.actual",
+      detail: "opened 2026-08-14",
+    });
+
+    const diff = diffRecords(
+      gapsByKey([standing, filled]),
+      gapsByKey([standing, appeared]),
+    );
+
+    expect(diff.added.map((a) => a.key)).toEqual([gapKey(appeared)]);
+    expect(diff.removed.map((r) => r.key)).toEqual([gapKey(filled)]);
+    expect(diff.unchanged).toBe(1);
+  });
+
+  it("notices a gap whose detail moved without its key changing", () => {
+    const before = gap({ detail: "35.7 km, opened" });
+    const after = gap({ detail: "36.2 km, opened" });
+
+    const diff = diffRecords(gapsByKey([before]), gapsByKey([after]));
+
+    expect(diff.changed).toHaveLength(1);
+    expect(diff.changed[0].fields).toEqual(["detail"]);
   });
 });
