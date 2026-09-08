@@ -223,7 +223,14 @@ Five scripts that report rather than gate. None of them runs in `npm test` (they
 
 ### News digest
 
-`npm run data:news` reads the feeds in `data/news-sources.json` and the edit history of every Wikipedia article a project cites, matches each item to a section by the place names it shares (the TED matcher's weighting, through `src/lib/news.ts`), notes the event kind the wording suggests, and writes a Markdown digest of the last 14 days. `.github/workflows/news-digest.yml` runs it daily and keeps one issue (label `news-digest`) current, editing it only when the digest changed. The seen-state that makes "since the last run" possible lives in the Actions cache, or locally in the gitignored `.news/`. The validators walk `data/` on disk rather than through git, so they skip the three directories a harvester writes and nobody commits (`data/news`, `data/ted`, `data/osm-dates`); running any of those tools leaves `npm test` passing.
+`npm run data:news` reads the feeds in `data/news-sources.json` and the edit history of every Wikipedia article a project cites, matches each item to a section by the place names it shares (the TED matcher's weighting, through `src/lib/news.ts`), notes the event kind the wording suggests, and writes a Markdown digest of the last 14 days.
+
+`.github/workflows/news-digest.yml` is the morning cycle. It runs both halves daily at 05:17 UTC and keeps one issue (label `morning-cycle`) current, editing it only when the content changed:
+
+1. the news digest above, over 15 curated feeds and one history feed per cited Wikipedia article, 91 in total;
+2. `npm run data:gaps -- --priority high --diff .gaps/high.json --write`, which reports the high-priority gaps that appeared or were filled since yesterday rather than the standing list. A gap that has just appeared is usually the interesting one: a lot that opened last night has no outturn cost yet.
+
+Both halves keep their state in the Actions cache, or locally in the gitignored `.news/` and `.gaps/`. Neither can fail the run: a dead feed is a line in the digest, and every gap is a research task rather than a defect. The validators walk `data/` on disk rather than through git, so they skip the three directories a harvester writes and nobody commits (`data/news`, `data/ted`, `data/osm-dates`); running any of those tools leaves `npm test` passing.
 
 It is a report, like every harvester here. A match is a guess from shared toponyms and a suggested kind is a phrase match; nothing is written to `data/`. Read the article, then record the fact with the URL and the date you read it. Only feeds are read: a site without RSS or Atom is not scraped, which is why Bulgaria and Serbia are covered through Wikipedia histories alone for now (see the note in `data/news-sources.json` for what was tried).
 

@@ -104,3 +104,13 @@ describe("formatDiff", () => {
     ).not.toContain("—");
   });
 });
+
+describe("formatDiff baseline", () => {
+  it("names a different baseline when the comparison is not against the repo", () => {
+    const diff = diffRecords({ a: { v: 1 } }, { a: { v: 1 } });
+
+    expect(
+      formatDiff(diff, { label: "gap", baseline: "the run of 2026-09" }),
+    ).toBe("No change: 1 gap(s) identical to the run of 2026-09.");
+  });
+});

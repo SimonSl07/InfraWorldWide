@@ -1,11 +1,19 @@
-name: News digest
+name: Morning cycle
 
-# What the infrastructure press and the cited Wikipedia articles said in the
-# last two weeks, matched to the sections in data/projects. A report for a
-# person: nothing here writes to data/, and a source outage is a line in the
-# digest, not a red run. One issue is kept current and edited only when the
-# digest actually changed, so the notification means something. The weekly
-# scheduled-checks.yml is the pattern; this runs daily because news does.
+# The two things worth reading before touching the data, in one issue:
+#
+#   1. What the infrastructure press and the cited Wikipedia articles said in
+#      the last two weeks, matched to the sections in data/projects.
+#   2. Which high-priority data gaps appeared or were filled since yesterday.
+#
+# A report for a person: nothing here writes to data/, and a source outage is
+# a line in the digest, not a red run. One issue is kept current and edited
+# only when the content actually changed, so the notification means something.
+#
+# The gap report is a diff, not the standing list. All 699 rows barely move
+# day to day and the weekly scheduled-checks.yml already carries them in full.
+# What is worth a morning is a gap that has just appeared, which is what an
+# opening or a new lot produces, or one somebody has closed.
 
 on:
   schedule:
@@ -35,14 +43,18 @@ jobs:
 
       - run: npm ci
 
-      # The seen-state is what turns a feed into "since the last run". It is
-      # a record of what the feeds carried, not site data, so it lives in the
-      # Actions cache rather than the repo: a fresh key per run makes every
-      # run save it, and the prefix restores the most recent one.
-      - name: Restore the seen-state
+      # Both state directories record what the last run already reported, not
+      # anything about the projects, so they live in the Actions cache rather
+      # than the repo: a fresh key per run makes every run save them, and the
+      # prefix restores the most recent one. .news is the feeds' seen-state,
+      # which is what turns a feed into "since the last run"; .gaps is the
+      # gap report's snapshot, which is what makes its diff possible.
+      - name: Restore the state from the last run
         uses: actions/cache@v4
         with:
-          path: .news
+          path: |
+            .news
+            .gaps
           key: news-state-${{ github.run_id }}
           restore-keys: |
             news-state-
@@ -55,26 +67,47 @@ jobs:
         env:
           NODE_OPTIONS: --no-warnings
 
+      # Never fails: every row is a research task, not a defect. On the first
+      # run there is no snapshot, so this records the baseline and says so.
+      - name: Gap diff
+        run: |
+          mkdir -p .gaps
+          npx tsx scripts/report-gaps.ts \
+            --priority high --diff .gaps/high.json --write \
+            > reports/gaps.txt 2>&1 || true
+        env:
+          NODE_OPTIONS: --no-warnings
+
       - name: Assemble the report
         id: report
         run: |
-          cp reports/news.md body.md
+          {
+            cat reports/news.md
+            echo
+            echo "## Data gaps"
+            echo
+            echo '```'
+            cat reports/gaps.txt
+            echo '```'
+            echo
+            echo "High-priority gaps only, and only what moved. The standing list of all four tiers is in the weekly data-watch issue; locally it is \`npm run data:gaps -- --priority high\`."
+          } > body.md
           # Fingerprint the content, so an unchanged digest updates nothing.
           FINGERPRINT=$(sha256sum body.md | cut -c1-16)
           echo "" >> body.md
           echo "<!-- fingerprint: $FINGERPRINT -->" >> body.md
           echo "fingerprint=$FINGERPRINT" >> "$GITHUB_OUTPUT"
-          cat reports/news.md >> "$GITHUB_STEP_SUMMARY"
+          cat body.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Open or update the digest issue
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TITLE: "Infrastructure news digest"
-          LABEL: news-digest
+          TITLE: "Morning cycle: infrastructure news and data gaps"
+          LABEL: morning-cycle
           FINGERPRINT: ${{ steps.report.outputs.fingerprint }}
         run: |
           gh label create "$LABEL" \
-            --description "Daily digest of infrastructure news matched to sections" --color 1d76db 2>/dev/null || true
+            --description "Daily news digest matched to sections, plus the high-priority gap diff" --color 1d76db 2>/dev/null || true
 
           NUMBER=$(gh issue list --label "$LABEL" --state open --limit 1 --json number --jq '.[0].number // empty')
 

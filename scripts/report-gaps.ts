@@ -6,6 +6,7 @@
  *   npx tsx scripts/report-gaps.ts --format json --priority high
  *   npx tsx scripts/report-gaps.ts --include-known       # settled dead ends too
  *   npx tsx scripts/report-gaps.ts --summary             # counts per rule only
+ *   npx tsx scripts/report-gaps.ts --priority high --diff .gaps/high.json --write
  *
  * This replaces a hand-run spreadsheet (data-gaps.csv) that nothing could
  * regenerate. The rules live in src/lib/gaps.ts and are unit-tested there;
@@ -13,7 +14,9 @@
  *
  * Every row is a research task, not a defect, so the exit code is always 0.
  * Nothing here fails a build. Use --priority high in a scheduled job and read
- * the diff instead.
+ * the diff instead: --diff names a snapshot of what the last run listed and
+ * prints what has appeared, been filled or been reworded since, and --write
+ * moves the snapshot on. The daily news-digest workflow runs exactly that.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -25,9 +28,11 @@ import {
   type FxTable,
   type Project,
 } from "../src/lib/schema";
-import { findGaps, type GapPriority } from "../src/lib/gaps";
+import { findGaps, type Gap, type GapPriority } from "../src/lib/gaps";
+import { diffRecords, formatDiff } from "../src/lib/record-diff";
 import {
   atLeastPriority,
+  gapsByKey,
   knownGapsSchema,
   partitionKnown,
   summarise,
@@ -81,6 +86,47 @@ function loadProjects(root: string): Project[] {
   return projects.sort((a, b) => a.id.localeCompare(b.id));
 }
 
+/**
+ * What the last run listed. Kept out of data/, where the validators walk, and
+ * out of git: it records what has already been reported, not anything about
+ * the projects. The workflow keeps it in the Actions cache, like .news.
+ */
+interface GapSnapshot {
+  note: string;
+  generatedAt: string;
+  /** The --priority the snapshot was taken at, so a diff cannot mix tiers. */
+  priority: GapPriority | "all";
+  records: Record<string, Gap>;
+}
+
+function readSnapshot(file: string): GapSnapshot | null {
+  if (!fs.existsSync(file)) return null;
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, "utf8")) as GapSnapshot;
+    return parsed.records ? parsed : null;
+  } catch {
+    // A corrupt snapshot costs one run's diff, which is recoverable.
+    // Refusing to report is not.
+    return null;
+  }
+}
+
+function writeSnapshot(
+  file: string,
+  records: Record<string, Gap>,
+  priority: GapPriority | "all",
+  generatedAt: string,
+): void {
+  const snapshot: GapSnapshot = {
+    note: "What the last gap report listed, so the next one can say what moved. Not site data.",
+    generatedAt,
+    priority,
+    records,
+  };
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, `${JSON.stringify(snapshot, null, 2)}\n`);
+}
+
 function loadKnownGaps(root: string): KnownGap[] {
   const file = path.join(root, "data/known-gaps.json");
   if (!fs.existsSync(file)) return [];
@@ -126,6 +172,52 @@ function main() {
   const known = flag("--include-known") ? [] : loadKnownGaps(root);
   const { open, suppressed, stale } = partitionKnown(all, known);
   const gaps = atLeastPriority(open, priority);
+
+  const diffFile = arg("--diff");
+  if (diffFile) {
+    const file = path.resolve(root, diffFile);
+    const tier: GapPriority | "all" = priority ?? "all";
+    const records = gapsByKey(gaps);
+    const before = readSnapshot(file);
+    const writing = flag("--write");
+    const rel = path.relative(root, file);
+    // Only --write moves the snapshot, so neither message below may claim a
+    // baseline was recorded when it was not.
+    const baseline = writing
+      ? "Recording this run as the baseline."
+      : `Pass --write to record this run as the baseline (${gaps.length} ${tier} gap(s)).`;
+
+    if (!before) {
+      console.log(
+        `No snapshot at ${rel}, so there is nothing to diff against yet. ${baseline}`,
+      );
+    } else if (before.priority !== tier) {
+      // Diffing a high-only run against an all-tiers snapshot would report
+      // every medium and low gap as filled, which is the opposite of true.
+      console.log(
+        `Snapshot ${rel} was taken at priority "${before.priority}" and this run is "${tier}". Skipping the diff: it would read as hundreds of gaps closing. ${baseline}`,
+      );
+    } else {
+      console.log(
+        formatDiff(diffRecords(before.records, records), {
+          label: `${tier} gap`,
+          summaryFields: ["priority", "field", "issue", "detail"],
+          baseline: `the run of ${before.generatedAt}`,
+        }),
+      );
+    }
+
+    // The OSM snapshot waits for a person to approve it, because curated
+    // dates are downstream of it. Nothing is downstream of this one, so a
+    // scheduled job advances it in the same pass.
+    if (writing) {
+      writeSnapshot(file, records, tier, today);
+      console.log(
+        `\nSnapshot updated: ${gaps.length} ${tier} gap(s) at ${rel}.`,
+      );
+    }
+    return;
+  }
 
   if (flag("--summary")) {
     for (const row of summarise(gaps)) {
