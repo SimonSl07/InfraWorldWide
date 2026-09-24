@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { render, screen, act } from "@testing-library/react";
+import { render, screen, act, fireEvent } from "@testing-library/react";
 
 /**
  * Covers the playback timer, which used to list `month` as an effect
@@ -114,5 +114,54 @@ describe("TimeSlider", () => {
   it("switches the label while playing", () => {
     setup({ playing: true });
     expect(screen.getByRole("button", { name: "pause" })).toBeInTheDocument();
+  });
+});
+
+describe("TimeSlider comparing", () => {
+  // Two dates, two timelines, one card. The second date used to be a pair
+  // of steppers out on the map, away from the one control a reader looks
+  // at to change a date.
+  it("shows a track for each pane, both over the whole range", () => {
+    setup({ compare: { beforeMonth: 23_800, onBeforeMonthChange: vi.fn() } });
+    const tracks = screen.getAllByRole("slider");
+    // Two months plus the playback speed.
+    expect(tracks).toHaveLength(3);
+    for (const track of tracks.slice(0, 2)) {
+      expect(track).toHaveAttribute("min", "23640");
+      expect(track).toHaveAttribute("max", "24360");
+    }
+  });
+
+  it("drives the left pane from the left track alone", () => {
+    const onBeforeMonthChange = vi.fn();
+    const { onMonthChange } = setup({
+      compare: { beforeMonth: 23_800, onBeforeMonthChange },
+    });
+    const before = screen.getByLabelText("compareBeforeMonth");
+    fireEvent.change(before, { target: { value: "23700" } });
+    expect(onBeforeMonthChange).toHaveBeenCalledWith(23_700);
+    expect(onMonthChange).not.toHaveBeenCalled();
+  });
+
+  it("leaves playback on the right pane, which is the viewed month", () => {
+    vi.useFakeTimers();
+    const onBeforeMonthChange = vi.fn();
+    const { onMonthChange } = setup({
+      playing: true,
+      compare: { beforeMonth: 23_800, onBeforeMonthChange },
+    });
+    act(() => void vi.advanceTimersByTime(2_000));
+    expect(onMonthChange).toHaveBeenCalled();
+    expect(onBeforeMonthChange).not.toHaveBeenCalled();
+  });
+
+  it("carries the summary of the two dates, which had nowhere else to go", () => {
+    setup({
+      note: "2,076 km opened between 2015 and 2028",
+      compare: { beforeMonth: 23_800, onBeforeMonthChange: vi.fn() },
+    });
+    expect(
+      screen.getByText("2,076 km opened between 2015 and 2028"),
+    ).toBeInTheDocument();
   });
 });

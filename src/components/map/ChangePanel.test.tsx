@@ -47,7 +47,7 @@ function panel(lots: LotEntry[] = [lot({})], highlight = false) {
       lots={lots}
       month={NOW}
       nowMonth={NOW}
-      baselineYears={5}
+      baselineMonth={NOW - 5 * 12}
       onBaselineYearsChange={() => {}}
       highlight={highlight}
       onHighlightChange={() => {}}

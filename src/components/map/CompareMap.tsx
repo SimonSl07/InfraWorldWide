@@ -15,11 +15,9 @@ import {
   type CategoryStatusSelection,
   type MapView,
 } from "@/lib/map-filters";
-import { openedBetween } from "@/lib/map-delta";
-import type { LotEntry } from "@/lib/lot-list";
 import { mapLocale } from "@/lib/map-locale";
 import { basemapUrl } from "@/lib/basemaps";
-import { formatKm } from "@/lib/format";
+import { formatMonth } from "@/lib/format";
 import { clampSwipe, swipeClipPath, swipeFromPointer } from "@/lib/swipe";
 
 /**
@@ -33,6 +31,13 @@ import { clampSwipe, swipeClipPath, swipeFromPointer } from "@/lib/swipe";
  *
  * Both panes render the same source with different month filters, and the
  * cameras are locked together, so it is one map showing two dates.
+ *
+ * Each date is centred over the pane it belongs to, which is the whole of
+ * that pane and not a corner of it: the corners are taken, and the left
+ * chip was painted under the category filters at every screen size. They
+ * are labels, not controls. What sets them is a timeline each, in the
+ * slider card at the bottom, where the one timeline the map has always had
+ * is the obvious place to look for a second.
  */
 export default function CompareMap({
   geojson,
@@ -43,7 +48,6 @@ export default function CompareMap({
   locale,
   basemapId,
   initialView,
-  lots,
 }: {
   geojson: FeatureCollection;
   beforeMonth: number;
@@ -53,8 +57,6 @@ export default function CompareMap({
   locale: string;
   basemapId: string;
   initialView: MapView;
-  /** Every lot, for the readout under the handle. */
-  lots: LotEntry[];
 }) {
   // MapLibre paint values cannot read a CSS custom property, so the
   // canvas is told which palette to draw with.
@@ -85,11 +87,6 @@ export default function CompareMap({
   const afterFilters = useMemo(
     () => buildMonthFilters(afterMonth, selection, nowMonth),
     [afterMonth, selection, nowMonth],
-  );
-
-  const delta = useMemo(
-    () => openedBetween(lots, { from: beforeMonth, to: afterMonth, nowMonth }),
-    [lots, beforeMonth, afterMonth, nowMonth],
   );
 
   const paints = useMemo(
@@ -225,13 +222,30 @@ export default function CompareMap({
         </Map>
       </div>
 
-      {/* Year labels, pinned to the side each pane occupies. */}
-      <div className="pointer-events-none absolute top-3 left-3 rounded-full bg-inverse/85 px-2.5 py-1 text-xs font-semibold text-on-inverse tabular-nums">
-        {label(beforeMonth)}
-      </div>
-      <div className="pointer-events-none absolute top-3 right-3 rounded-full bg-inverse/85 px-2.5 py-1 text-xs font-semibold text-on-inverse tabular-nums">
-        {label(afterMonth)}
-      </div>
+      {/* A date over the middle of each pane. Clamped so a chip stays on
+          the frame when the wipe is pushed to an edge, and set below the
+          band the filters and the basemap buttons occupy, which is what
+          the old corner chips were lost under. */}
+      {(
+        [
+          ["before", beforeMonth, clampSwipe(position) / 2],
+          [
+            "after",
+            afterMonth,
+            clampSwipe(position) + (1 - clampSwipe(position)) / 2,
+          ],
+        ] as const
+      ).map(([which, at, centre]) => (
+        <div
+          key={which}
+          className="pointer-events-none absolute top-28 z-10 -translate-x-1/2 rounded-full bg-inverse/85 px-3 py-1 text-xs font-semibold text-on-inverse shadow tabular-nums"
+          style={{
+            left: `clamp(3.5rem, ${centre * 100}%, calc(100% - 3.5rem))`,
+          }}
+        >
+          {formatMonth(at, locale)}
+        </div>
+      ))}
 
       {/* The handle. A slider role, so it is draggable and also arrow-key
           operable: a swipe that only answers to a mouse would repeat the
@@ -275,15 +289,6 @@ export default function CompareMap({
             />
           </svg>
         </div>
-      </div>
-
-      {/* What the wipe is showing, in one line. */}
-      <div className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full border border-line bg-surface/95 px-3 py-1.5 text-xs text-ink-soft shadow backdrop-blur">
-        {t("map.compareSummary", {
-          km: formatKm(delta.km, locale),
-          before: label(beforeMonth),
-          after: label(afterMonth),
-        })}
       </div>
     </div>
   );
