@@ -418,8 +418,8 @@
     {
       "id": "lugoj-deva-lot2",
       "name": {
-        "en": "Lugoj – Deva (lot 2)",
-        "ro": "Lugoj – Deva (lotul 2)"
+        "en": "Dumbrava – Margina (Lugoj–Deva lot 2)",
+        "ro": "Dumbrava – Margina (lotul 2 Lugoj – Deva)"
       },
       "status": "opened",
       "dates": {
@@ -427,7 +427,7 @@
         "opened": "2017-03-06",
         "constructionStart": "2014"
       },
-      "lengthKm": 28.2,
+      "lengthKm": 15.243,
       "funding": [
         {
           "source": "EU"
@@ -440,19 +440,67 @@
         {
           "name": "Salini Impregilo – Secol (JV)",
           "role": "builder"
-        },
-        {
-          "name": "Spedition UMB (remaining tunnels section, 2022)",
-          "role": "builder"
         }
       ],
       "note": {
-        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+        "en": "The part of Lugoj–Deva lot 2 opened on 6 March 2017, bypassing Făget as far as Margina. The rest of the lot, east of Margina, was re-contracted in 2022 and is recorded separately as Margina – Holdea"
       },
       "sourceRefs": [
         "wikipedia-a1-motorway-romania"
       ],
       "geometryRef": "lugoj-deva-lot2"
+    },
+    {
+      "id": "margina-holdea",
+      "name": {
+        "en": "Margina – Holdea (Lugoj–Deva lot 2)",
+        "ro": "Margina – Holdea (lotul 2 Lugoj – Deva)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-10-14",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 13.16,
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "ro-pnrr",
+          "detail": {
+            "en": "PNRR (Next Generation EU)",
+            "ro": "PNRR (Next Generation EU)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB – Tehnostrade – SA&PE Construct – Euro-Asfalt",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 11,
+        "executionMonths": 34,
+        "guaranteeMonths": 120,
+        "value": {
+          "amount": 1826.85,
+          "currency": "RON",
+          "year": 2022
+        }
+      },
+      "note": {
+        "en": "The last gap in the A1 between Boița and Nădlac. The contract covers just over 13 km: the 4.03 km of Section D left unfinished east of Margina and the 9.13 km of Section E with the twin-bore bear tunnels, 2.13 km in total (DRDP Timișoara figures, January 2023). CNAIR and most reports quote only the 9.13 km. The start order for design was issued on 5 December 2022; tunnel boring began in March 2025 and both bores of Tunnel 2 (1,985 m and 1,825 m) were through by 18 September 2026, with physical progress past 75%. CNAIR's director general expects traffic in the first half of 2027"
+      },
+      "sourceRefs": [
+        "tribuna-margina-holdea-2027",
+        "profit-margina-holdea-breakthrough",
+        "stiridetimisoara-margina-holdea-contract",
+        "api-margina-holdea-2024"
+      ],
+      "geometryRef": "margina-holdea",
+      "profile": {
+        "tunnelKm": 2.13
+      }
     },
     {
       "id": "lugoj-deva-lot1",
@@ -619,6 +667,30 @@
     {
       "title": "130km.ro: Autostrada A1 București–Nădlac (lot status tracking)",
       "url": "https://www.130km.ro/a1.html"
+    },
+    {
+      "id": "tribuna-margina-holdea-2027",
+      "title": "Tribuna: Tunelurile sunt gata, dar autostrada mai așteaptă: A1 Margina – Holdea, finalizare estimată în 2027 (18 September 2026)",
+      "url": "https://tribunasnm.ro/2026/09/18/tunelurile-sunt-gata-dar-autostrada-mai-asteapta-a1-margina-holdea-finalizare-estimata-in-2027/",
+      "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "profit-margina-holdea-breakthrough",
+      "title": "Profit.ro: Tunelurile dintre Margina și Holdea (A1) au fost străpunse în totalitate (18 September 2026)",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/video-gata-cel-mai-lung-tunel-de-autostrada-construit-pana-acum-in-romania-tunelurile-dintre-margina-si-holdea-a1-au-fost-strapunse-in-totalitate-22753322",
+      "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "stiridetimisoara-margina-holdea-contract",
+      "title": "Știri de Timișoara: Când ar putea fi gata lotul Margina - Holdea de pe A1 (2 January 2023)",
+      "url": "https://stiridetimisoara.ro/cand-ar-putea-fi-gata-lotul-margina-holdea-de-pe-a1-termen-oficial-si-estimari-pro-infrastructura_48214.html",
+      "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "api-margina-holdea-2024",
+      "title": "Asociația Pro Infrastructura: Margina-Holdea, la sfârșit de 2027 în cel mai optimist scenariu (4 August 2024)",
+      "url": "https://proinfrastructura.ro/luari-de-pozitie/margina-holdea-la-sfarsit-de-2027-in-cel-mai-optimist-scenariu/",
+      "retrievedOn": "2026-09-24"
     },
     {
       "title": "OpenStreetMap contributors (geometry and construction dates, ODbL)",

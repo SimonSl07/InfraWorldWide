@@ -80,7 +80,8 @@
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2018"
+        "constructionStart": "2018",
+        "expectedOpening": "2026"
       },
       "lengthKm": 54.9,
       "events": [
@@ -129,10 +130,12 @@
         }
       ],
       "note": {
-        "en": "Biharia–Chiribiș (28.55 km) and Chiribiș–Suplacu de Barcău (26.35 km) re-tendered after the Bechtel termination; OpenStreetMap tags opening_date=2026 on subsection 3A lot 2"
+        "en": "Biharia–Chiribiș (28.55 km) and Chiribiș–Suplacu de Barcău (26.35 km) re-tendered after the Bechtel termination; OpenStreetMap tags opening_date=2026 on subsection 3A lot 2. Asociația Pro Infrastructura expects Suplacu de Barcău–Chiribiș (Erbașu, signed 24 November 2023) to open in November 2026 and gives Chiribiș–Biharia good chances for December; the Chiribiș–Biharia contract term is 20 May 2027"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a3-rom-nia"
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "economica-suplacu-chiribis-november",
+        "economedia-chiribis-biharia-dn19e"
       ],
       "geometryRef": "biharia-suplacu"
     },
@@ -207,17 +210,16 @@
       "geometryRef": "suplacu-nusfalau"
     },
     {
-      "id": "nusfalau-zimbor",
+      "id": "nusfalau-poarta-salajului",
       "name": {
-        "en": "Nușfalău – Zimbor (Meseș tunnel)",
-        "ro": "Nușfalău – Zimbor (tunelul Meseș)"
+        "en": "Nușfalău – Poarta Sălajului (Meseș tunnel)",
+        "ro": "Nușfalău – Poarta Sălajului (tunelul Meseș)"
       },
-      "status": "under_construction",
+      "status": "tendered",
       "dates": {
-        "constructionStart": "2022",
         "expectedOpening": "2032"
       },
-      "lengthKm": 43.24,
+      "lengthKm": 31,
       "funding": [
         {
           "source": "EU",
@@ -230,14 +232,8 @@
           "source": "national_budget"
         }
       ],
-      "contractors": [
-        {
-          "name": "Spedition UMB (Poarta Sălajului–Zimbor)",
-          "role": "builder"
-        }
-      ],
       "note": {
-        "en": "Last major gap of the Transylvania motorway, including the Meseș tunnel, Romania's longest road tunnel when complete. OpenStreetMap tags opening_date=2032 on Tunel Meseș and subsections 3B3/3B4/3B lot 3; the 31 km Nușfalău–Poarta Sălajului lot was still in tender at the technical-project stage"
+        "en": "Last major gap of the Transylvania motorway, including the Meseș tunnel, Romania's longest road tunnel when complete. In tender at the technical-project stage with no builder named (ro.wikipedia, September 2026). OpenStreetMap tags opening_date=2032 on Tunel Meseș and subsections 3B3, 3B4 and 3B lot 3"
       },
       "sources": [
         {
@@ -245,10 +241,52 @@
           "url": "https://www.openstreetmap.org/relation/2790155"
         }
       ],
-      "geometryRef": "nusfalau-zimbor",
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
+      "geometryRef": "nusfalau-poarta-salajului",
       "profile": {
         "terrain": "mountain"
       }
+    },
+    {
+      "id": "zimbor-poarta-salajului",
+      "name": {
+        "en": "Zimbor – Poarta Sălajului",
+        "ro": "Zimbor – Poarta Sălajului"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-07",
+        "constructionStart": "2022",
+        "opened": "2026-08-11"
+      },
+      "lengthKm": 12.24,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Programul Transport 2021-2027",
+            "ro": "Programul Transport 2021-2027"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Contracted with Spedition UMB in July 2020 for 12 months of design and 24 of execution, with the start order on 31 May 2021. Opened at 16:00 on 11 August 2026 between the Zimbor and Românași junctions, the first motorway opening of 2026 in Romania"
+      },
+      "sourceRefs": [
+        "monitorulcj-zimbor-poarta-salajului-opened"
+      ],
+      "geometryRef": "zimbor-poarta-salajului"
     },
     {
       "id": "zimbor-nadaselu",
@@ -259,7 +297,7 @@
       "status": "under_construction",
       "dates": {
         "constructionStart": "2021-04",
-        "expectedOpening": "2026"
+        "expectedOpening": "2026-12"
       },
       "lengthKm": 30.11,
       "funding": [
@@ -292,7 +330,7 @@
         "guaranteeMonths": 60
       },
       "note": {
-        "en": "Nădășelu–Mihăiești (16.85 km) contracted May 2016 for €100M with an 18-month term; design was delayed because the feasibility study proved inadequate. OpenStreetMap tags opening_date=2026 on subsection 3B1 (Mihăiești–Zimbor) and the Nădășelu route deviation"
+        "en": "Nădășelu–Mihăiești (16.85 km) contracted May 2016 for €100M with an 18-month term; design was delayed because the feasibility study proved inadequate. OpenStreetMap tags opening_date=2026 on subsection 3B1 (Mihăiești–Zimbor) and the Nădășelu route deviation. Prime Minister Ilie Bolojan said traffic should run without restrictions on the 40-plus km between Cluj and Zalău from 1 December 2026; the Ozaltin contract for the Nădășelu and Topa Mică route deviations runs to March 2027"
       },
       "sources": [
         {
@@ -302,7 +340,8 @@
       ],
       "sourceRefs": [
         "monitorulcj-ro-zimbor-nadaselu",
-        "hotnews-ro-zimbor-nadaselu"
+        "hotnews-ro-zimbor-nadaselu",
+        "profit-nadaselu-poarta-salajului"
       ],
       "geometryRef": "zimbor-nadaselu"
     },
@@ -418,6 +457,30 @@
     {
       "title": "Wikipedia: A3 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A3_motorway_(Romania)"
+    },
+    {
+      "id": "monitorulcj-zimbor-poarta-salajului-opened",
+      "title": "Monitorul de Cluj: A fost deschisă circulația rutieră pe secțiunea Zimbor – Poarta Sălajului (11 August 2026)",
+      "url": "https://www.monitorulcj.ro/actualitate/139596-autostrada-transilvania-a-fost-deschisa-circulatia-rutiera-pe-sectiunea-zimbor-poarta-salajului",
+      "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "profit-nadaselu-poarta-salajului",
+      "title": "Profit.ro: Șoferii vor circula pe toți cei 42 kilometri dintre Poarta Sălajului și Nădășelu (20 September 2026)",
+      "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/video-foto-soferii-vor-circula-pe-toti-cei-42-kilometri-dintre-poarta-salajului-si-nadaselu-spre-pe-autostrada-transilvania-pana-la-targu-mures-22762402",
+      "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "economica-suplacu-chiribis-november",
+      "title": "Economica.net: Un tronson de autostradă din România s-ar putea deschide în noiembrie (20 September 2026)",
+      "url": "https://www.economica.net/un-tronson-de-autostrada-din-romania-s-ar-putea-deschide-in-noiembrie-constructia-a-inceput-acum-20-de-ani_978152.html",
+      "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "economedia-chiribis-biharia-dn19e",
+      "title": "Economedia: A fost finalizată relocarea DN19E pe lotul 3C2 Chiribiș – Biharia (14 September 2026)",
+      "url": "https://economedia.ro/video-autostrada-transilvaniei-a-fost-finalizata-relocarea-dn19e-pe-lotul-3c2-chiribis-biharia-urmeaza-testele-pentru-redeschiderea-circulatiei.html",
+      "retrievedOn": "2026-09-24"
     },
     {
       "title": "OpenStreetMap contributors (geometry and construction dates, ODbL)",

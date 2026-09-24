@@ -169,12 +169,36 @@
         "ro": "Făgăraș – Brașov"
       },
       "status": "planned",
-      "lengthKm": 46,
+      "lengthKm": 49.75,
+      "cost": {
+        "estimated": {
+          "amount": 9351.78,
+          "currency": "RON",
+          "year": 2026,
+          "note": "Including VAT. Value of the investment in the technical-economic indicators approved by Government Decision on 24 September 2026."
+        },
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 9351.78,
+              "currency": "RON",
+              "year": 2026,
+              "note": "Including VAT."
+            },
+            "date": "2026-09-24",
+            "note": "Technical-economic indicators approved by Government Decision.",
+            "sourceRef": "monitorulexpres-brasov-fagaras-hg"
+          }
+        ]
+      },
       "note": {
-        "en": "Feasibility study and technical design tendered by CNAIR in 2024 and awarded to Search Corporation; the section will link the Sibiu–Făgăraș motorway to the Brașov metropolitan bypass and the A3"
+        "en": "Feasibility study and technical design tendered by CNAIR in 2024 and awarded to Search Corporation; the section will link the Sibiu–Făgăraș motorway to the Brașov metropolitan bypass and the A3. The Government approved the technical-economic indicators on 24 September 2026: 49.75 km, junctions at Codlea South, Codlea North and Șercaia, 36 months of works, funded from the Transport Programme and the state budget. The works tender is the next step"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a13-rom-nia"
+        "wikipedia-ro-autostrada-a13-rom-nia",
+        "monitorulexpres-brasov-fagaras-hg",
+        "economedia-brasov-fagaras-cost"
       ],
       "geometryRef": "fagaras-brasov"
     },
@@ -212,6 +236,18 @@
     {
       "title": "Economedia: Autostrada A13 Brașov–Bacău: traseul va fi deviat, 12 km de tuneluri propuși (8 July 2025)",
       "url": "https://economedia.ro/cnir-a-prezentat-autoritatilor-locale-varianta-de-traseu-actualizat-a-autostrazii-a13-brasov-bacau.html"
+    },
+    {
+      "id": "monitorulexpres-brasov-fagaras-hg",
+      "title": "Monitorul Expres: Guvernul a aprobat indicatorii tehnico-economici pentru Autostrada Brașov–Făgăraș (24 September 2026)",
+      "url": "https://www.monitorulexpres.ro/2026/09/24/guvernul-a-aprobat-indicatorii-tehnico-economici-pentru-autostrada-brasov-fagaras/",
+      "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "economedia-brasov-fagaras-cost",
+      "title": "Economedia: Autostrada Brașov – Făgăraș va costa 9,3 miliarde de lei și va avea aproximativ 50 de km (18 September 2026)",
+      "url": "https://economedia.ro/proiect-autostada-brasov-fagaras-va-costa-93-miliarde-de-lei-si-va-avea-aproximativ-50-de-km.html",
+      "retrievedOn": "2026-09-24"
     },
     {
       "title": "OpenStreetMap contributors (geometry of the Boița–Făgăraș alignment, ODbL)",
