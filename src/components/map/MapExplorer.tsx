@@ -103,8 +103,8 @@ export default function MapExplorer({
    * control drives both, so the number in the panel is the year on the left
    * of the handle.
    *
-   * Either an offset that follows the slider, or a year the reader named on
-   * the handle and that must stay put. `cmp` is read against the month in
+   * Either an offset that follows the slider, or a month the reader set on
+   * the left timeline and that must stay put. `cmp` is read against the month in
    * the same link: read against today instead, a link to a past date
    * reopened on a baseline nobody chose.
    */
@@ -218,8 +218,8 @@ export default function MapExplorer({
   const handleMonthChange = useCallback((m: number) => setMonth(m), []);
 
   /**
-   * A preset returns the baseline to following the slider; nudging the year
-   * on the handle names a year, and naming one has to survive scrubbing.
+   * A preset returns the baseline to following the slider; dragging the left
+   * timeline names a month, and naming one has to survive scrubbing.
    */
   const handleBaselineYears = useCallback(
     (years: number) => setBaseline({ years, pinned: null }),
@@ -253,23 +253,27 @@ export default function MapExplorer({
   /**
    * The one line that names both years and what lies between them. It sits
    * in the time slider card: as a pill of its own at the bottom of the map
-   * it was drawn underneath that card and never seen.
+   * it was drawn underneath that card and never seen. Only computed while
+   * comparing: it depends on the month, so playback would otherwise walk
+   * every lot on each tick for a line nobody sees.
    */
   const compareSummary = useMemo(
     () =>
-      t("map.compareSummary", {
-        km: formatKm(
-          openedBetween(allLots, {
-            from: beforeMonth,
-            to: month,
-            nowMonth,
-          }).km,
-          locale,
-        ),
-        before: String(fromMonthIndex(beforeMonth).year),
-        after: String(fromMonthIndex(month).year),
-      }),
-    [t, allLots, beforeMonth, month, nowMonth, locale],
+      comparing
+        ? t("map.compareSummary", {
+            km: formatKm(
+              openedBetween(allLots, {
+                from: beforeMonth,
+                to: month,
+                nowMonth,
+              }).km,
+              locale,
+            ),
+            before: String(fromMonthIndex(beforeMonth).year),
+            after: String(fromMonthIndex(month).year),
+          })
+        : undefined,
+    [comparing, t, allLots, beforeMonth, month, nowMonth, locale],
   );
 
   const newlyOpened = useMemo(

@@ -118,9 +118,8 @@ describe("TimeSlider", () => {
 });
 
 describe("TimeSlider comparing", () => {
-  // Two dates, two timelines, one card. The second date used to be a pair
-  // of steppers out on the map, away from the one control a reader looks
-  // at to change a date.
+  // Two dates, two timelines, one card: the second date sits beside the
+  // one control a reader already looks at to change a date.
   it("shows a track for each pane, both over the whole range", () => {
     setup({ compare: { beforeMonth: 23_800, onBeforeMonthChange: vi.fn() } });
     const tracks = screen.getAllByRole("slider");
