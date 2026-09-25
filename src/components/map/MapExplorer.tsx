@@ -7,6 +7,7 @@ import { currentMonth } from "@/lib/contract";
 import {
   computeMaxMonth,
   computeMinMonth,
+  fromMonthIndex,
   HARD_MIN_MONTH,
   parseSelectionParam,
   parseMonthParam,
@@ -17,7 +18,13 @@ import {
   type MapView,
 } from "@/lib/map-filters";
 import { visibleLots, type LotEntry } from "@/lib/lot-list";
-import { newlyOpenedFilter } from "@/lib/map-delta";
+import { newlyOpenedFilter, openedBetween } from "@/lib/map-delta";
+import {
+  baselineMonth as resolveBaseline,
+  readCompareBaseline,
+  type CompareBaseline,
+} from "@/lib/compare-years";
+import { formatKm } from "@/lib/format";
 import {
   DEFAULT_BASEMAP_ID,
   basemapUrl,
@@ -32,7 +39,7 @@ import TimeSlider from "./TimeSlider";
 import CategoryToggle from "./CategoryToggle";
 import MapLegend from "./MapLegend";
 import LotSearchPanel from "./LotSearchPanel";
-import ChangePanel, { BASELINE_YEARS } from "./ChangePanel";
+import ChangePanel from "./ChangePanel";
 import CompareMap from "./CompareMap";
 import BasemapToggle from "./BasemapToggle";
 import ProjectPanel from "./ProjectPanel";
@@ -92,20 +99,29 @@ export default function MapExplorer({
     () => parseBasemapParam(searchParams.get("bm")) ?? DEFAULT_BASEMAP_ID,
   );
   /**
-   * Years back from the viewed month that the change readout compares to,
-   * and the baseline the before/after wipe uses. One control drives both,
-   * so the number in the panel is the year on the left of the handle.
+   * The far side of the change readout and of the before/after wipe. One
+   * control drives both, so the number in the panel is the year on the left
+   * of the handle.
+   *
+   * Either an offset that follows the slider, or a month the reader set on
+   * the left timeline and that must stay put. `cmp` is read against the month in
+   * the same link: read against today instead, a link to a past date
+   * reopened on a baseline nobody chose.
    */
-  const [baselineYears, setBaselineYears] = useState<number>(() => {
+  const [baseline, setBaseline] = useState<CompareBaseline>(() => {
     const raw = searchParams.get("cmp");
-    if (!raw) return 5;
+    if (!raw) return { years: 5, pinned: null };
     const from = parseMonthParam(raw, HARD_MIN_MONTH, maxMonthParam, -1);
-    if (from === -1) return 5;
-    const years = Math.round((nowMonth - from) / 12);
-    return BASELINE_YEARS.reduce((best, y) =>
-      Math.abs(y - years) < Math.abs(best - years) ? y : best,
+    if (from === -1) return { years: 5, pinned: null };
+    const at = parseMonthParam(
+      searchParams.get("t"),
+      HARD_MIN_MONTH,
+      maxMonthParam,
+      nowMonth,
     );
+    return readCompareBaseline(from, at, 5);
   });
+  const beforeMonth = resolveBaseline(month, baseline);
   const [highlightNew, setHighlightNew] = useState(false);
   // Both only read below `sm`, where the overlays are disclosures and the
   // screen fits one at a time.
@@ -164,7 +180,7 @@ export default function MapExplorer({
       view,
       defaultView: DEFAULT_VIEW,
       basemap: basemapId === DEFAULT_BASEMAP_ID ? null : basemapId,
-      compareFrom: comparing ? month - baselineYears * 12 : null,
+      compareFrom: comparing ? beforeMonth : null,
     });
     window.history.replaceState(
       null,
@@ -182,7 +198,7 @@ export default function MapExplorer({
     view,
     basemapId,
     comparing,
-    baselineYears,
+    beforeMonth,
   ]);
 
   useEffect(() => {
@@ -200,6 +216,19 @@ export default function MapExplorer({
   );
 
   const handleMonthChange = useCallback((m: number) => setMonth(m), []);
+
+  /**
+   * A preset returns the baseline to following the slider; dragging the left
+   * timeline names a month, and naming one has to survive scrubbing.
+   */
+  const handleBaselineYears = useCallback(
+    (years: number) => setBaseline({ years, pinned: null }),
+    [],
+  );
+  const handleBeforeMonthChange = useCallback(
+    (m: number) => setBaseline((b) => ({ ...b, pinned: m })),
+    [],
+  );
 
   const handleViewChange = useCallback((next: MapView) => setView(next), []);
 
@@ -221,16 +250,38 @@ export default function MapExplorer({
     [geojson],
   );
 
+  /**
+   * The one line that names both years and what lies between them. It sits
+   * in the time slider card: as a pill of its own at the bottom of the map
+   * it was drawn underneath that card and never seen. Only computed while
+   * comparing: it depends on the month, so playback would otherwise walk
+   * every lot on each tick for a line nobody sees.
+   */
+  const compareSummary = useMemo(
+    () =>
+      comparing
+        ? t("map.compareSummary", {
+            km: formatKm(
+              openedBetween(allLots, {
+                from: beforeMonth,
+                to: month,
+                nowMonth,
+              }).km,
+              locale,
+            ),
+            before: String(fromMonthIndex(beforeMonth).year),
+            after: String(fromMonthIndex(month).year),
+          })
+        : undefined,
+    [comparing, t, allLots, beforeMonth, month, nowMonth, locale],
+  );
+
   const newlyOpened = useMemo(
     () =>
       highlightNew
-        ? newlyOpenedFilter({
-            from: month - baselineYears * 12,
-            to: month,
-            nowMonth,
-          })
+        ? newlyOpenedFilter({ from: beforeMonth, to: month, nowMonth })
         : null,
-    [highlightNew, month, baselineYears, nowMonth],
+    [highlightNew, month, beforeMonth, nowMonth],
   );
 
   /**
@@ -288,6 +339,9 @@ export default function MapExplorer({
     // the map ran taller than the visible area and put the time slider under
     // the collapsing URL bar.
     <div
+      // Marks the page as one the map owns end to end, which globals.css
+      // reads to stop the sticky header sliding over the map's controls.
+      data-fullbleed-map={fillParent ? undefined : ""}
       className={
         fillParent ? "relative h-full" : "relative h-[calc(100dvh-3.5rem)]"
       }
@@ -295,14 +349,13 @@ export default function MapExplorer({
       {comparing ? (
         <CompareMap
           geojson={geojson}
-          beforeMonth={month - baselineYears * 12}
+          beforeMonth={beforeMonth}
           afterMonth={month}
           nowMonth={nowMonth}
           selection={selection}
           locale={locale}
           basemapId={basemapId}
           initialView={view ?? initialView ?? DEFAULT_VIEW}
-          lots={allLots}
         />
       ) : (
         <InfraMap
@@ -397,8 +450,8 @@ export default function MapExplorer({
                 lots={allLots}
                 month={month}
                 nowMonth={nowMonth}
-                baselineYears={baselineYears}
-                onBaselineYearsChange={setBaselineYears}
+                baselineMonth={beforeMonth}
+                onBaselineYearsChange={handleBaselineYears}
                 highlight={highlightNew}
                 onHighlightChange={setHighlightNew}
                 onSelect={handleSelectFromList}
@@ -454,6 +507,15 @@ export default function MapExplorer({
         } justify-center sm:bottom-6 sm:left-1/2 sm:right-auto sm:block sm:-translate-x-1/2`}
       >
         <TimeSlider
+          note={comparing ? compareSummary : undefined}
+          compare={
+            comparing
+              ? {
+                  beforeMonth,
+                  onBeforeMonthChange: handleBeforeMonthChange,
+                }
+              : null
+          }
           month={month}
           min={minMonth}
           max={maxMonth}

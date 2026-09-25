@@ -11,7 +11,31 @@ import {
 import { fromMonthIndex } from "@/lib/map-filters";
 import { formatMonth } from "@/lib/format";
 
+/**
+ * The second timeline, shown only while the before/after wipe is on.
+ *
+ * A timeline each rather than one timeline and a year picker somewhere
+ * else: the map has always had exactly one of these and it is where a
+ * reader looks to change a date, so the second date belongs beside the
+ * first, on the same track and the same scale. Stacked, the gap between
+ * the two thumbs is the comparison, drawn to scale.
+ */
+export interface CompareTrack {
+  /** Month the left pane shows. */
+  beforeMonth: number;
+  onBeforeMonthChange: (month: number) => void;
+}
+
 interface TimeSliderProps {
+  /**
+   * One line under the controls, for what the map is showing that the
+   * slider itself cannot say. The before/after comparison puts its summary
+   * here: as a second pill at the bottom of the frame it sat underneath
+   * this card and was never visible.
+   */
+  note?: string;
+  /** Null unless the map is comparing two dates. */
+  compare?: CompareTrack | null;
   /** Absolute month index (year*12 + month-1). */
   month: number;
   min: number;
@@ -26,6 +50,8 @@ interface TimeSliderProps {
 }
 
 export default function TimeSlider({
+  note,
+  compare,
   month,
   min,
   max,
@@ -69,6 +95,38 @@ export default function TimeSlider({
   const label = formatMonth(month, locale);
   const bound = (i: number) => String(fromMonthIndex(i).year);
 
+  /**
+   * One timeline. Both tracks span the whole range rather than bounding
+   * each other, so the two thumbs sit on one scale and their distance
+   * apart means something; ordering is kept where the baseline is
+   * resolved instead.
+   */
+  const track = (
+    at: number,
+    onChange: (month: number) => void,
+    ariaLabel: string,
+    side: string | null,
+  ) => (
+    <div className="flex items-center gap-2">
+      {side && (
+        <span className="w-10 shrink-0 text-[10px] font-semibold uppercase text-ink-faint">
+          {side}
+        </span>
+      )}
+      <input
+        type="range"
+        min={min}
+        max={max}
+        step={1}
+        value={at}
+        onChange={(e) => onChange(Number(e.target.value))}
+        className="w-full accent-inverse pointer-coarse:h-11 sm:w-64 md:w-96"
+        aria-label={ariaLabel}
+        aria-valuetext={formatMonth(at, locale)}
+      />
+    </div>
+  );
+
   return (
     // Below `sm` the speed control drops to a second line rather than pushing
     // the whole bar past the viewport, which is what clipped it on a phone.
@@ -103,26 +161,41 @@ export default function TimeSlider({
           90px wide on a phone, which butted the two year bounds together into
           one unreadable number: 1885 and 2032 rendered as "18852032". */}
       <div className="order-last basis-full flex flex-col gap-1 min-w-0 sm:order-none sm:flex-none">
-        <input
-          type="range"
-          min={min}
-          max={max}
-          step={1}
-          value={month}
-          onChange={(e) => onMonthChange(Number(e.target.value))}
-          className="w-full accent-inverse pointer-coarse:h-11 sm:w-64 md:w-96"
-          aria-label={t("month")}
-          aria-valuetext={label}
-        />
-        <div className="flex justify-between gap-3 text-[10px] text-ink-muted">
+        {compare ? (
+          <>
+            {track(
+              compare.beforeMonth,
+              compare.onBeforeMonthChange,
+              t("compareBeforeMonth"),
+              t("compareLeftPane"),
+            )}
+            {track(
+              month,
+              onMonthChange,
+              t("compareAfterMonth"),
+              t("compareRightPane"),
+            )}
+          </>
+        ) : (
+          track(month, onMonthChange, t("month"), null)
+        )}
+        {/* Indented to sit under the tracks, clear of the side labels and
+            the month readouts flanking them. */}
+        <div
+          className={`flex justify-between gap-3 text-[10px] text-ink-muted ${
+            compare ? "pl-12" : ""
+          }`}
+        >
           <span>{bound(min)}</span>
           <span>{bound(max)}</span>
         </div>
       </div>
 
-      <div className="text-base sm:text-lg font-bold tabular-nums w-24 sm:w-28 text-center shrink-0">
-        {label}
-      </div>
+      {!compare && (
+        <div className="text-base sm:text-lg font-bold tabular-nums w-24 sm:w-28 text-center shrink-0">
+          {label}
+        </div>
+      )}
 
       {/* playback speed, in months advanced per second */}
       <div className="flex flex-col gap-1 shrink-0 sm:border-l sm:border-line sm:pl-3">
@@ -141,6 +214,12 @@ export default function TimeSlider({
           {t("speedValue", { speed: formatSpeed(speed) })}
         </div>
       </div>
+
+      {note && (
+        <p className="order-last basis-full border-t border-line-soft pt-2 text-center text-xs text-ink-soft">
+          {note}
+        </p>
+      )}
     </div>
   );
 }

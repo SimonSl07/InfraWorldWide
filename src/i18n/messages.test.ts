@@ -124,6 +124,33 @@ describe("message catalogues", () => {
     expect(missing).toEqual([]);
   });
 
+  // The map components mock next-intl in their own tests, so a key they
+  // ask for and the catalogue does not carry gets as far as the running
+  // app before anything notices.
+  it("covers every key the map time and compare controls need", () => {
+    const required = [
+      "month",
+      "speed",
+      "play",
+      "pause",
+      "compareToggle",
+      "compareHandle",
+      "compareHandleValue",
+      "compareSummary",
+      "compareBeforeMonth",
+      "compareAfterMonth",
+      "compareLeftPane",
+      "compareRightPane",
+      "changeTitle",
+      "baselineYears",
+      "changeSince",
+      "highlightNew",
+    ].map((k) => `map.${k}`);
+
+    const missing = required.filter((k) => !enFlat.has(k) || !roFlat.has(k));
+    expect(missing).toEqual([]);
+  });
+
   it("covers every key the city panel and pages need", () => {
     const required = [
       "panelKicker",

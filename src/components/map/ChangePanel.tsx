@@ -3,13 +3,11 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { fromMonthIndex } from "@/lib/map-filters";
+import { BASELINE_YEARS } from "@/lib/compare-years";
 import { openedBetween, type DeltaWindow } from "@/lib/map-delta";
 import type { LotEntry } from "@/lib/lot-list";
 import { formatKm, formatMonth } from "@/lib/format";
 import CategoryGlyph from "./CategoryGlyph";
-
-/** Baselines offered, in years before the viewed month. */
-export const BASELINE_YEARS = [1, 5, 10, 20] as const;
 
 /**
  * What has been built between two months.
@@ -24,12 +22,17 @@ export const BASELINE_YEARS = [1, 5, 10, 20] as const;
  * from the filters down to the slider, and it answers a question the reader
  * has to have thought of first. The figure stays on the button, so the
  * prompt to open it is the answer it would give.
+ *
+ * The offsets are presets, not the state: the baseline arrives as a month,
+ * because the before/after wipe lets the reader name a year directly and
+ * that year need not be a round number of years back. A preset reads as
+ * pressed when the baseline happens to sit exactly on it.
  */
 export default function ChangePanel({
   lots,
   month,
   nowMonth,
-  baselineYears,
+  baselineMonth,
   onBaselineYearsChange,
   highlight,
   onHighlightChange,
@@ -40,7 +43,9 @@ export default function ChangePanel({
   lots: LotEntry[];
   month: number;
   nowMonth: number;
-  baselineYears: number;
+  /** Month on the far side of the window, wherever it came from. */
+  baselineMonth: number;
+  /** Picking a preset also returns the baseline to following the slider. */
   onBaselineYearsChange: (years: number) => void;
   highlight: boolean;
   onHighlightChange: (on: boolean) => void;
@@ -51,8 +56,8 @@ export default function ChangePanel({
   const [open, setOpen] = useState(false);
 
   const window: DeltaWindow = useMemo(
-    () => ({ from: month - baselineYears * 12, to: month, nowMonth }),
-    [month, baselineYears, nowMonth],
+    () => ({ from: baselineMonth, to: month, nowMonth }),
+    [baselineMonth, month, nowMonth],
   );
   const delta = useMemo(() => openedBetween(lots, window), [lots, window]);
 
@@ -70,7 +75,6 @@ export default function ChangePanel({
     [delta],
   );
 
-  const baselineMonth = window.from;
   const { year: baselineYear } = fromMonthIndex(baselineMonth);
   const ahead = window.to > nowMonth;
 
@@ -116,21 +120,24 @@ export default function ChangePanel({
               {t("map.changeTitle")}
             </span>
             <div className="flex gap-1">
-              {BASELINE_YEARS.map((years) => (
-                <button
-                  key={years}
-                  type="button"
-                  onClick={() => onBaselineYearsChange(years)}
-                  aria-pressed={years === baselineYears}
-                  className={`inline-flex cursor-pointer items-center justify-center rounded px-1.5 py-0.5 text-[11px] tabular-nums pointer-coarse:min-h-11 pointer-coarse:min-w-11 ${
-                    years === baselineYears
-                      ? "bg-inverse text-on-inverse"
-                      : "text-ink-muted hover:text-ink"
-                  }`}
-                >
-                  {t("map.baselineYears", { years })}
-                </button>
-              ))}
+              {BASELINE_YEARS.map((years) => {
+                const pressed = baselineMonth === month - years * 12;
+                return (
+                  <button
+                    key={years}
+                    type="button"
+                    onClick={() => onBaselineYearsChange(years)}
+                    aria-pressed={pressed}
+                    className={`inline-flex cursor-pointer items-center justify-center rounded px-1.5 py-0.5 text-[11px] tabular-nums pointer-coarse:min-h-11 pointer-coarse:min-w-11 ${
+                      pressed
+                        ? "bg-inverse text-on-inverse"
+                        : "text-ink-muted hover:text-ink"
+                    }`}
+                  >
+                    {t("map.baselineYears", { years })}
+                  </button>
+                );
+              })}
             </div>
           </div>
 

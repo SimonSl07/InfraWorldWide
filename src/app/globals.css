@@ -317,3 +317,15 @@
     word-break: break-all;
   }
 }
+
+/*
+ * A full-bleed map takes the viewport minus the header, and the site
+ * footer below it makes the document taller than the viewport. Scrolling
+ * that last stretch then slid the sticky header over the map, which draws
+ * its filters and year controls a few pixels below its own top edge: the
+ * header cut them in half. The footer stays (the OSM attribution lives
+ * there); the header gives up its sticky position on these pages only.
+ */
+body:has([data-fullbleed-map]) > header {
+  position: static;
+}
