@@ -26,6 +26,15 @@
         "opened": "2012-08-31"
       },
       "lengthKm": 4.16,
+      "cost": {
+        "estimated": {
+          "amount": 130,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Approximate indicative value of the whole 4150 m section at tender, February 2010. VAT not stated."
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -45,11 +54,40 @@
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Балканстрой (Obelya – Lomsko shose, with Lomsko shose station)",
+          "role": "builder"
+        },
+        {
+          "name": "БКС - Център (Obelya – Lomsko shose, with Lomsko shose station)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение „Метро Билд” (Lomsko shose – Nadezhda, with Beli Dunav and Nadezhda stations and tunnels)",
+          "role": "builder"
+        },
+        {
+          "name": "Станилов (Han Kubrat station, tunnels and depot extension)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение \"ОБЕЛЯ У-БАН\" (track, contact rail and canopy)",
+          "role": "builder"
+        },
+        {
+          "name": "ИТА ИНЖЕНЕРИНГ (low-current and signalling systems)",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Lot 1 of the second construction stage: 4.16 km (1.3 km on viaduct, 2.86 km underground) and four stations (Lomsko shose, Beli Dunav, Nadezhda and Han Kubrat) linking the Obelya depot with the Nadezhda overpass. Built 2009–2012 and accepted by the State Acceptance Commission in August 2012"
       },
       "sourceRefs": [
-        "metropolitan-bg"
+        "metropolitan-bg",
+        "vestnikstroitel-2012-08-30",
+        "aop-00423-2011-0003",
+        "gradat-2010-02-21"
       ],
       "geometryRef": "obelya-nadezhda-overpass"
     },
@@ -61,10 +99,26 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2008-08-27",
         "constructionStart": "2008-12",
         "opened": "2012-08-31"
       },
       "lengthKm": 6.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 471.093,
+              "currency": "BGN",
+              "year": 2008,
+              "note": "Sum of the two contracts signed on 27 August 2008: 329.133 million leva (position 1, Doğuş) and 141.96 million leva (position 2, Metro Trace). The source does not state VAT."
+            },
+            "date": "2008-08-27",
+            "sourceRef": "stroitelstvo-2008-09-01"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -87,11 +141,35 @@
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Доуш Иншаат ве Тиджарет (position 1: Nadezhda overpass – Patriarh Evtimiy, TBM section)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение \"Метро Трейс\" (position 2: Patriarh Evtimiy – Cherni vrah)",
+          "role": "builder"
+        },
+        {
+          "name": "Геотехмин (James Bourchier station structures)",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 471.093,
+          "currency": "BGN",
+          "year": 2008,
+          "note": "Sum of the two contracts signed on 27 August 2008: 329.133 million leva (position 1, Doğuş) and 141.96 million leva (position 2, Metro Trace). The source does not state VAT."
+        }
+      },
       "note": {
         "en": "First construction stage: 6.4 km and seven stations from the Nadezhda overpass via the Central Railway Station and St Nedelya Square to Cherni vrah Blvd, including a 3.8 km double-track TBM drive of 8.43 m internal diameter serving four stations. Works ran from December 2008 to the opening on 31 August 2012, with final acceptance in October 2012"
       },
       "sourceRefs": [
-        "metropolitan-bg-2"
+        "metropolitan-bg-2",
+        "stroitelstvo-2008-09-01",
+        "vestnikstroitel-2012-08-30"
       ],
       "geometryRef": "nadezhda-overpass-james-bourchier"
     },
@@ -103,29 +181,82 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2014-03-06",
         "constructionStart": "2014-08",
         "opened": "2016-07-20"
       },
       "lengthKm": 1.3,
       "cost": {
         "actual": {
-          "amount": 21.9,
-          "currency": "EUR",
-          "year": 2014
-        }
+          "amount": 42.3392093,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Excluding VAT. Amount paid under contract 52/2014 at completion."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 42.34977724,
+              "currency": "BGN",
+              "year": 2014,
+              "note": "Excluding VAT. Initial value of contract 52/2014."
+            },
+            "date": "2014-03-06",
+            "sourceRef": "metropoliten-contract-52-2014"
+          },
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 42.3392093,
+              "currency": "BGN",
+              "scope": "works",
+              "note": "Excluding VAT. Amount paid under contract 52/2014 at completion."
+            },
+            "date": "2016-09-02",
+            "sourceRef": "metropoliten-completion-52-2014"
+          }
+        ]
       },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Operational Programme Transport, in two phases: phase 1 in the 2007–2013 programming period, phase 2 in 2014–2020",
+            "ro": "Programul Operațional Transport, în două etape: etapa 1 în perioada de programare 2007–2013, etapa 2 în 2014–2020"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Sofia Municipality provided advance financing within its co-financing of the section",
+            "ro": "Municipiul Sofia a asigurat prefinanțarea în cadrul cofinanțării tronsonului"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Обединение \"МЕТРО ЧЕРНИ ВРЪХ 2013\"",
+          "role": "builder"
+        }
+      ],
       "contract": {
+        "executionMonths": 22,
         "value": {
-          "amount": 21.9,
-          "currency": "EUR",
-          "year": 2014
+          "amount": 42.34977724,
+          "currency": "BGN",
+          "year": 2014,
+          "note": "Excluding VAT. Initial value of contract 52/2014."
         }
       },
       "note": {
-        "en": "1.3 km southward extension with the single station Vitosha at Hladilnika, valued at €21.9 million and built between August 2014 and July 2016"
+        "en": "1.3 km southward extension with the single station Vitosha at Hladilnika, valued at €21.9 million and built between August 2014 and July 2016. Built under contract 52/2014 by the consortium Metro Cherni Vrah 2013, whose members were Stanilov, GP Group and Metroprojekt Praha according to the contract completion notice.",
+        "ro": "Prelungire de 1,3 km spre sud cu o singură stație, Vitosha, la Hladilnika, evaluată la 21,9 milioane de euro și construită între august 2014 și iulie 2016. Executată prin contractul 52/2014 de asocierea Metro Cherni Vrah 2013, formată din Stanilov, GP Group și Metroprojekt Praha, potrivit anunțului de finalizare a contractului."
       },
       "sourceRefs": [
-        "metropolitan-bg-3"
+        "metropolitan-bg-3",
+        "metropoliten-contract-52-2014",
+        "metropoliten-completion-52-2014"
       ],
       "geometryRef": "james-bourchier-vitosha"
     }
@@ -149,6 +280,42 @@
       "id": "metropolitan-bg-3",
       "title": "Metropoliten Sofia: Third stage of the metro extension (OP Transport)",
       "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro/stage-3"
+    },
+    {
+      "id": "metropoliten-contract-52-2014",
+      "title": "Metropoliten buyer profile: contract 52/2014, MS James Bourchier – MS II-12",
+      "url": "https://metropolitan.nit.bg/prexodni-publikaczii/52/2014-uchastk-ot-ms-ii-11-do-ms-ii-12/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-completion-52-2014",
+      "title": "Metropoliten: contract completion notice, contract 52/2014 (16 September 2016)",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/782/%D0%9E%D0%B1%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B7%D0%B0_%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B2%D0%B0%D0%BD%D0%B5_%D0%BD%D0%B0_%D0%B4%D0%BE%D0%B3.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "stroitelstvo-2008-09-01",
+      "title": "Stroitelstvo Gradat: Contracts signed for the extension of the second metro diameter (issue 33, 1 September 2008)",
+      "url": "https://web.archive.org/web/20090130063110/http://www.stroitelstvo.info/show.php?storyid=544090",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "vestnikstroitel-2012-08-30",
+      "title": "Vestnik Stroitel: Nadezhda complex, a metro diameter away (30 August 2012)",
+      "url": "https://vestnikstroitel.bg/tema/47111_kompleks-nadezhda-na-metrodiametr-razstoyanie",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "aop-00423-2011-0003",
+      "title": "AOP: contract award notice 00423-2011-0003 (Metropoliten EAD)",
+      "url": "https://www.aop.bg/case2.php?doc_id=444174&mode=show_doc&newver=2",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "gradat-2010-02-21",
+      "title": "gradat.bg: Strong interest in the tender for the northern branch of the metro (21 February 2010)",
+      "url": "https://gradat.bg/news/2010/02/22/862003_goliam_interes_kum_turga_za_severniia_luch_na_metroto",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

@@ -19,13 +19,34 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2001",
         "constructionStart": "2001",
         "opened": "2004-06-04"
       },
       "lengthKm": 26.5,
+      "cost": {
+        "actual": {
+          "amount": 57.3,
+          "currency": "EUR",
+          "note": "Final value of works per Jurnalul Național (2009). No price year or VAT status stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 73.8,
+              "currency": "EUR",
+              "year": 2001
+            },
+            "date": "2001",
+            "sourceRef": "businesscover-ro-bucharest-fundulea"
+          }
+        ]
+      },
       "funding": [
         {
-          "source": "national_budget"
+          "source": "loan",
+          "programme": "eib-loan"
         }
       ],
       "contractors": [
@@ -46,7 +67,8 @@
       },
       "sourceRefs": [
         "businesscover-ro-bucharest-fundulea",
-        "wikipedia-a2-motorway-romania"
+        "wikipedia-a2-motorway-romania",
+        "jurnalul-autostrada-soarelui-2009"
       ],
       "geometryRef": "bucharest-fundulea"
     },
@@ -58,19 +80,44 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2001",
         "constructionStart": "2001",
         "opened": "2004-06-04"
       },
       "lengthKm": 29.2,
+      "cost": {
+        "actual": {
+          "amount": 87,
+          "currency": "EUR",
+          "note": "Amount paid per Jurnalul Național (2009). No price year or VAT status stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 87.068,
+              "currency": "EUR",
+              "year": 2001
+            },
+            "date": "2001",
+            "sourceRef": "businesscover-ro-bucharest-fundulea"
+          }
+        ]
+      },
       "funding": [
         {
-          "source": "national_budget"
+          "source": "loan",
+          "programme": "eib-loan"
         }
       ],
       "contractors": [
         {
-          "name": "Yuksel / Makimsar / Ener (JV)",
+          "name": "Yuksel / Makimsan / Ener (JV)",
           "role": "builder"
+        },
+        {
+          "name": "IPTANA SA",
+          "role": "designer"
         }
       ],
       "contract": {
@@ -81,11 +128,12 @@
         }
       },
       "note": {
-        "en": "Bucharest–Fetești sector, section 2, built by the Turkish joint venture Yuksel–Makimsar–Ener"
+        "en": "Bucharest–Fetești sector, section 2, built by the Turkish joint venture Yuksel–Makimsan–Ener"
       },
       "sourceRefs": [
         "businesscover-ro-bucharest-fundulea",
-        "wikipedia-a2-motorway-romania"
+        "wikipedia-a2-motorway-romania",
+        "jurnalul-autostrada-soarelui-2009"
       ],
       "geometryRef": "fundulea-lehliu"
     },
@@ -97,13 +145,34 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2001",
         "constructionStart": "2001",
         "opened": "2004-11-16"
       },
       "lengthKm": 42,
+      "cost": {
+        "actual": {
+          "amount": 93.7,
+          "currency": "EUR",
+          "note": "Final value per Jurnalul Național (2009). No price year or VAT status stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 116.826,
+              "currency": "EUR",
+              "year": 2001
+            },
+            "date": "2001",
+            "sourceRef": "businesscover-ro-bucharest-fundulea"
+          }
+        ]
+      },
       "funding": [
         {
-          "source": "national_budget"
+          "source": "loan",
+          "programme": "eib-loan"
         }
       ],
       "contractors": [
@@ -125,7 +194,8 @@
       "sourceRefs": [
         "businesscover-ro-bucharest-fundulea",
         "ro-wikipedia-org-lehliu-drajna",
-        "wikipedia-a2-motorway-romania"
+        "wikipedia-a2-motorway-romania",
+        "jurnalul-autostrada-soarelui-2009"
       ],
       "geometryRef": "lehliu-drajna"
     },
@@ -137,10 +207,30 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2001",
+        "tenderAwarded": "2003-12-09",
         "opened": "2007-05-01"
       },
       "lengthKm": 36.8,
+      "cost": {
+        "actual": {
+          "amount": 110,
+          "currency": "EUR",
+          "scope": "programme",
+          "note": "Approximate total value of works for the whole Drajna – Cernavodă sector (Drajna – Fetești and Fetești – Cernavodă), per Jurnalul Național (2009). No price year stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 64.549,
+              "currency": "EUR",
+              "year": 2003
+            },
+            "date": "2003-12-09",
+            "sourceRef": "businesscover-ro-bucharest-fundulea"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -148,10 +238,12 @@
           "detail": {
             "en": "ISPA pre-accession funds",
             "ro": "Fonduri ISPA de preaderare"
-          }
+          },
+          "coFinancingRate": 0.75
         },
         {
-          "source": "national_budget"
+          "source": "national_budget",
+          "coFinancingRate": 0.25
         }
       ],
       "contractors": [
@@ -166,15 +258,18 @@
           "currency": "EUR",
           "year": 2003
         },
+        "designMonths": 6,
         "executionMonths": 18,
-        "totalMonths": 24
+        "totalMonths": 24,
+        "guaranteeMonths": 48
       },
       "note": {
         "en": "Bucharest–Fetești sector, section 4, built by the Astaldi–Max Bögl–CCCF joint venture with ISPA pre-accession support"
       },
       "sourceRefs": [
         "businesscover-ro-bucharest-fundulea",
-        "wikipedia-a2-motorway-romania"
+        "wikipedia-a2-motorway-romania",
+        "jurnalul-autostrada-soarelui-2009"
       ],
       "geometryRef": "drajna-fetesti"
     },
@@ -215,6 +310,26 @@
         "opened": "2012-07-19"
       },
       "lengthKm": 20.5,
+      "cost": {
+        "estimated": {
+          "amount": 726.2,
+          "currency": "RON",
+          "note": "Excluding VAT. Initial estimated value of the re-tendered contract."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 498.8,
+              "currency": "RON",
+              "year": 2011,
+              "note": "Excluding VAT."
+            },
+            "date": "2011-09-21",
+            "sourceRef": "hotnews-cernavoda-medgidia-2011"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -238,7 +353,7 @@
       ],
       "contractors": [
         {
-          "name": "Astaldi",
+          "name": "Astaldi – Max Bögl (JV)",
           "role": "builder"
         },
         {
@@ -252,15 +367,19 @@
           "currency": "RON",
           "year": 2011
         },
+        "designMonths": 3,
         "executionMonths": 12,
-        "totalMonths": 15
+        "totalMonths": 15,
+        "guaranteeMonths": 48
       },
       "note": {
-        "en": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state"
+        "en": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state. Works began in 2009 under an earlier contract; the contract signed on 21 September 2011 re-awarded the remaining works."
       },
       "sourceRefs": [
         "mediafax-ro-cernavoda-medgidia",
-        "wikipedia-ro-autostrada-a2-rom-nia-costuri"
+        "wikipedia-ro-autostrada-a2-rom-nia-costuri",
+        "cnadnr-cernavoda-constanta-2013",
+        "hotnews-cernavoda-medgidia-2011"
       ],
       "geometryRef": "cernavoda-medgidia"
     },
@@ -272,10 +391,27 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2009",
+        "tenderAwarded": "2009-03-09",
+        "constructionStart": "2009-06-04",
         "opened": "2012-07-19"
       },
       "lengthKm": 16.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 596.054,
+              "currency": "RON",
+              "year": 2009,
+              "scope": "programme",
+              "note": "Whole Medgidia – Constanța design-and-build contract (30.82 km), covering Medgidia – Murfatlar and Murfatlar – Constanța. VAT status not stated. Ziarul Financiar (2010) reported €168M for the same contract."
+            },
+            "date": "2009-03-09",
+            "sourceRef": "businesscover-ro-bucharest-fundulea"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -304,15 +440,26 @@
         }
       ],
       "contract": {
+        "value": {
+          "amount": 596.054,
+          "currency": "RON",
+          "year": 2009,
+          "scope": "programme",
+          "note": "Whole Medgidia – Constanța design-and-build contract (30.82 km), covering Medgidia – Murfatlar and Murfatlar – Constanța. VAT status not stated. Ziarul Financiar (2010) reported €168M for the same contract."
+        },
+        "designMonths": 6,
         "executionMonths": 18,
-        "totalMonths": 24
+        "totalMonths": 24,
+        "guaranteeMonths": 48
       },
       "note": {
         "en": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state"
       },
       "sourceRefs": [
         "businesscover-ro-bucharest-fundulea",
-        "wikipedia-ro-autostrada-a2-rom-nia-costuri"
+        "wikipedia-ro-autostrada-a2-rom-nia-costuri",
+        "cnadnr-cernavoda-constanta-2013",
+        "newsweek-astaldi-despagubita"
       ],
       "geometryRef": "medgidia-murfatlar"
     },
@@ -324,16 +471,26 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2009",
+        "tenderAwarded": "2009-03-09",
+        "constructionStart": "2009-06-04",
         "opened": "2011-09-30"
       },
       "lengthKm": 21,
       "cost": {
-        "actual": {
-          "amount": 109,
-          "currency": "EUR",
-          "year": 2011
-        }
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 596.054,
+              "currency": "RON",
+              "year": 2009,
+              "scope": "programme",
+              "note": "Whole Medgidia – Constanța design-and-build contract (30.82 km), covering Medgidia – Murfatlar and Murfatlar – Constanța. VAT status not stated. Ziarul Financiar (2010) reported €168M for the same contract."
+            },
+            "date": "2009-03-09",
+            "sourceRef": "businesscover-ro-bucharest-fundulea"
+          }
+        ]
       },
       "funding": [
         {
@@ -363,15 +520,26 @@
         }
       ],
       "contract": {
+        "value": {
+          "amount": 596.054,
+          "currency": "RON",
+          "year": 2009,
+          "scope": "programme",
+          "note": "Whole Medgidia – Constanța design-and-build contract (30.82 km), covering Medgidia – Murfatlar and Murfatlar – Constanța. VAT status not stated. Ziarul Financiar (2010) reported €168M for the same contract."
+        },
+        "designMonths": 6,
         "executionMonths": 18,
-        "totalMonths": 24
+        "totalMonths": 24,
+        "guaranteeMonths": 48
       },
       "note": {
         "en": "Part of the Cernavodă–Constanța section, total cost €413.95M: €250M European Investment Bank loan, €70.81M European Commission, ~€90M Romanian state"
       },
       "sourceRefs": [
         "businesscover-ro-bucharest-fundulea",
-        "wikipedia-ro-autostrada-a2-rom-nia-costuri"
+        "wikipedia-ro-autostrada-a2-rom-nia-costuri",
+        "cnadnr-cernavoda-constanta-2013",
+        "newsweek-astaldi-despagubita"
       ],
       "geometryRef": "murfatlar-constanta"
     }
@@ -406,6 +574,30 @@
       "id": "wikipedia-ro-autostrada-a2-rom-nia-costuri",
       "title": "Wikipedia (ro): Autostrada A2 (România)#Costuri",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A2_(Rom%C3%A2nia)#Costuri"
+    },
+    {
+      "id": "jurnalul-autostrada-soarelui-2009",
+      "title": "Jurnalul Național: Autostrada Soarelui – zero kilometri în doi ani (2009-07-09)",
+      "url": "https://jurnalul.ro/special-jurnalul/autostrada-soarelui-zero-kilometri-in-doi-ani-514009.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnadnr-cernavoda-constanta-2013",
+      "title": "CNADNR: Construcția autostrăzii Cernavodă – Constanța (archived 2013)",
+      "url": "https://web.archive.org/web/20130822094321/http://cnadnr.ro/pagina.php?idg=118",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-cernavoda-medgidia-2011",
+      "title": "HotNews: CNADNR a semnat cu Astaldi contractul pentru tronsonul Cernavodă – Medgidia (2011-09-21)",
+      "url": "https://economie.hotnews.ro/stiri-companii-10191251-cnadnr-semnat-astaldi-contractul-pentru-realizarea-tronsonului-cernavoda-megidia.htm",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "newsweek-astaldi-despagubita",
+      "title": "Newsweek România: Astaldi despăgubită cu 265 milioane de lei",
+      "url": "https://newsweek.ro/economie/astaldi-despagubita-cu-265-milioane-de-lei",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

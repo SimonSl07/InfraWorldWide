@@ -84,11 +84,28 @@
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Обединение „Метро Младост”",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 39,
+        "value": {
+          "amount": 94,
+          "currency": "EUR",
+          "note": "Tender price for the section together with the park-and-ride garage at Tsarigradsko shose station."
+        }
+      },
       "note": {
-        "en": "Lot 2 of the second construction stage: 2.5 km and two underground stations, Mladost 3 and Inter Expo Center – Tsarigradsko shose. Works began 15 February 2009 and the section opened 25 April 2012"
+        "en": "Lot 2 of the second construction stage: 2.5 km and two underground stations, Mladost 3 and Inter Expo Center – Tsarigradsko shose. Works began 15 February 2009 and the section opened 25 April 2012. The 39-month contract for the section and the park-and-ride garage at Tsarigradsko shose was let at a tender price of €94 million (Investor.bg, June 2009). Built by the Metro Mladost consortium: PSI and Trace Sofia (both Trace Group Hold), Adval and Stroyinzhekt.",
+        "ro": "Lotul 2 al etapei a doua de construcție: 2,5 km și două stații subterane, Mladost 3 și Inter Expo Center – Tsarigradsko shose. Lucrările au început pe 15 februarie 2009, iar tronsonul s-a deschis pe 25 aprilie 2012. Contractul de 39 de luni pentru tronson și parcarea de transfer de la Tsarigradsko shose a fost atribuit la prețul de ofertă de 94 de milioane de euro (Investor.bg, iunie 2009). Constructor: asocierea Metro Mladost, formată din PSI și Trace Sofia (ambele din Trace Group Hold), Adval și Stroyinzhekt."
       },
       "sourceRefs": [
-        "metropolitan-bg"
+        "metropolitan-bg",
+        "investor-bg-2009-lot2",
+        "tracebg-metro-mladost"
       ],
       "geometryRef": "mladost-1-tsarigradsko-shose"
     },
@@ -105,11 +122,32 @@
       },
       "lengthKm": 5,
       "cost": {
-        "actual": {
-          "amount": 69.92,
+        "estimated": {
+          "amount": 130,
           "currency": "EUR",
-          "year": 2013
-        }
+          "scope": "total",
+          "note": "Indicative value under OP Transport, before bids were opened in February 2012."
+        },
+        "actual": {
+          "amount": 75,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "Investment at completion: about €16.5M (position I), €32.2M (II) and €25.46M (III)."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 136,
+              "currency": "BGN",
+              "year": 2012,
+              "note": "Sum of the three position contracts excluding VAT (23.5 + 63.6 + 48.95 million leva)."
+            },
+            "date": "2012",
+            "note": "Contracts in force from 1 November 2012.",
+            "sourceRef": "mediapool-2012-airport"
+          }
+        ]
       },
       "funding": [
         {
@@ -124,18 +162,37 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Обединение „Станилов – Метропроект” (position I, Tsarigradsko shose – Druzhba)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение „Метро Дружба” (position II, Druzhba – ul. Nedelcho Bonchev)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение „Метро Сифер” (position III, ul. Nedelcho Bonchev – Sofia Airport)",
+          "role": "builder"
+        }
+      ],
       "contract": {
         "value": {
-          "amount": 69.92,
-          "currency": "EUR",
-          "year": 2013
+          "amount": 136,
+          "currency": "BGN",
+          "year": 2012,
+          "note": "Sum of the three position contracts excluding VAT (23.5 + 63.6 + 48.95 million leva)."
         }
       },
       "note": {
-        "en": "Lot 1 of the third construction stage: 5 km and four stations (Druzhba, Iskarsko shose, Sofiyska Sveta Gora, Sofia Airport), two underground and two on the surface, reaching the Terminal 2 departures gate. Started 2013 and opened 2 April 2015; the construction contract was €69,923,066 excluding VAT"
+        "en": "Lot 1 of the third construction stage: 5 km and four stations (Druzhba, Iskarsko shose, Sofiyska Sveta Gora, Sofia Airport), two underground and two on the surface, reaching the Terminal 2 departures gate. Started 2013 and opened 2 April 2015; the three construction contracts, in force from 1 November 2012, totalled 136.05 million leva excluding VAT (23.5 + 63.6 + 48.95 million). At completion the investment was put at €75 million (Vestnik Stroitel, March 2015).",
+        "ro": "Lotul 1 al etapei a treia de construcție: 5 km și patru stații (Druzhba, Iskarsko shose, Sofiyska Sveta Gora, Aeroportul Sofia), două subterane și două la suprafață, până la poarta de plecări a Terminalului 2. Început în 2013 și deschis pe 2 aprilie 2015; cele trei contracte de construcție, în vigoare de la 1 noiembrie 2012, au totalizat 136,05 milioane de leva fără TVA (23,5 + 63,6 + 48,95 milioane). La finalizare, investiția a fost evaluată la 75 de milioane de euro (Vestnik Stroitel, martie 2015)."
       },
       "sourceRefs": [
-        "novinite-com"
+        "novinite-com",
+        "gradat-bg-2012-airport",
+        "vestnikstroitel-2015-airport",
+        "mediapool-2012-airport"
       ],
       "geometryRef": "tsarigradsko-shose-sofia-airport"
     }
@@ -159,6 +216,36 @@
       "id": "novinite-com",
       "title": "Novinite: Subway Trains to Sofia Airport Start Running at 1 pm on April 2",
       "url": "https://www.novinite.com/articles/167648/Subway+Trains+to+Sofia+Airport+Start+Running+at+1+pm+on+April+2"
+    },
+    {
+      "id": "investor-bg-2009-lot2",
+      "title": "Investor.bg: Construction of the Tsarigradsko shose metro station begins (30 June 2009)",
+      "url": "https://www.investor.bg/a/5-balgariya/82982-zapochva-stroitelstvoto-na-metrostantsiya-na-tsarigradsko-shose",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "tracebg-metro-mladost",
+      "title": "Trace Group Hold: Sofia metro extension, Mladost 1 – Tsarigradsko shose section",
+      "url": "https://www.tracebg.com/bg/%D0%B4%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D0%B8/%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D0%BD%D0%B8/%D1%80%D0%B0%D0%B7%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D1%82%D0%BE-%D0%B2-%D1%81%D0%BE%D1%84%D0%B8%D1%8F-%D1%83%D1%87%D0%B0%D1%81%D1%82%D1%8A%D0%BA-%D0%B6%D0%BA-%D0%BC%D0%BB%D0%B0%D0%B4%D0%BE%D1%81%D1%82-1-%D0%B1%D1%83%D0%BB-%D1%86%D0%B0%D1%80%D0%B8%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE-%D1%88%D0%BE%D1%81%D0%B5",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "gradat-bg-2012-airport",
+      "title": "Gradat.bg: The metro through Druzhba, in a tunnel under the slope and on a viaduct to the airport (30 January 2012)",
+      "url": "https://gradat.bg/bgprojects/2012/01/30/1755371_metroto_prez_drujba_v_tunel_pod_skata_na_estakada_kum",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "vestnikstroitel-2015-airport",
+      "title": "Vestnik Stroitel: The metro extension to the airport is completing successfully (26 March 2015)",
+      "url": "https://vestnikstroitel.bg/tema/106008_proektt-za-razshirenieto-na-metroto-do-letischeto-priklyuchva-uspeshno",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-2012-airport",
+      "title": "Mediapool: The metro reaches Sofia Airport in 2015 (21 November 2012)",
+      "url": "https://www.mediapool.bg/metroto-stiga-do-letishte-sofiya-prez-2015-g-news199794.html",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

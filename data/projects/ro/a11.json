@@ -20,13 +20,15 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2012-06",
-        "constructionStart": "2010"
+        "tenderAwarded": "2009-03-13",
+        "constructionStart": "2009-04-24",
+        "opened": "2012-06"
       },
       "lengthKm": 3.5,
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
           "detail": {
             "en": "Built as part of the EU-financed A1 Arad Bypass contract, renumbered A11 in July 2015",
             "ro": "Construită în cadrul contractului A1 Centura Arad, finanțat de Uniunea Europeană, renumerotată A11 în iulie 2015"
@@ -34,13 +36,24 @@
         },
         {
           "source": "national_budget"
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "FCC Construcción – PORR Bau (JV)",
+          "role": "builder"
         }
       ],
       "note": {
         "en": "Built as part of the A1 Arad Bypass contract; opened December 2011 on one carriageway and June 2012 on both, renumbered A11 in July 2015"
       },
       "sourceRefs": [
-        "wikipedia-a11-motorway-romania"
+        "wikipedia-a11-motorway-romania",
+        "autostrada-arad-timisoara-progres"
       ],
       "geometryRef": "arad-bypass"
     },
@@ -89,10 +102,12 @@
         }
       },
       "note": {
-        "en": "Execution contract signed 29 January 2026 with Nurol İnsaat ve Ticaret, 2.85 billion lei excluding VAT, 24 months from the order to commence. Includes a 2.9 km link road to the Arad West industrial zone"
+        "en": "Execution contract signed 29 January 2026 with Nurol İnsaat ve Ticaret, 2.85 billion lei excluding VAT, 24 months from the order to commence. Includes a 2.9 km link road to the Arad West industrial zone. HotNews estimated in January 2026 that the lot could realistically open in early 2028. That is a press estimate, not an official date",
+        "ro": "Contract de execuție semnat la 29 ianuarie 2026 cu Nurol İnsaat ve Ticaret, 2,85 miliarde lei fără TVA, 24 de luni de la ordinul de începere. Include un drum de legătură de 2,9 km către zona industrială Arad Vest. HotNews estima în ianuarie 2026 că lotul ar putea fi deschis, realist, la începutul lui 2028. Este o estimare de presă, nu un termen oficial"
       },
       "sourceRefs": [
-        "cjbihor-ro"
+        "cjbihor-ro",
+        "hotnews-ro-lot3"
       ],
       "geometryRef": "chisineu-cris-arad"
     },
@@ -216,15 +231,64 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2021-07-21",
         "constructionStart": "2022",
         "opened": "2024-03"
       },
       "lengthKm": 11.636,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 545.91,
+              "currency": "RON",
+              "year": 2021,
+              "note": "Excluding VAT. Covers the whole 18.96 km design-and-build contract, not only the expressway section."
+            },
+            "date": "2021-07-21",
+            "sourceRef": "economica-net-oradea-connector"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds, Programul Transport (SMIS 302503, Nușfalău–Biharia incl. the Oradea link)",
+            "ro": "Fonduri UE, Programul Transport (SMIS 302503, Nușfalău–Biharia inclusiv drumul de legătură la Oradea)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 545.91,
+          "currency": "RON",
+          "year": 2021,
+          "note": "Excluding VAT. Covers the whole 18.96 km design-and-build contract, not only the expressway section."
+        },
+        "designMonths": 6,
+        "executionMonths": 24,
+        "totalMonths": 30,
+        "guaranteeMonths": 84
+      },
       "note": {
-        "en": "Built as DEx16 under a July 2021 design-and-build contract with Strabag; opened to traffic in March 2024. The same road is recorded in full as project ro-dex16, which owns it"
+        "en": "Built as DEx16 under a July 2021 design-and-build contract with Strabag; opened to traffic in March 2024. The same road is recorded in full as project ro-dex16, which owns it. The contract covers an 18.96 km link, of which about 13 km is built to expressway profile and the rest as a four-lane national road",
+        "ro": "Construit ca DEx16 printr-un contract de proiectare și execuție semnat cu Strabag în iulie 2021; deschis circulației în martie 2024. Același drum este înregistrat integral în proiectul ro-dex16, care îl deține. Contractul acoperă o legătură de 18,96 km, din care circa 13 km sunt la profil de drum expres, iar restul la profil de drum național cu patru benzi"
       },
       "sourceRefs": [
-        "digi24-oradea-connector"
+        "digi24-oradea-connector",
+        "economica-net-oradea-connector",
+        "cnair-nusfalau-biharia"
       ],
       "sharedWith": "ro-dex16",
       "geometryRef": "oradea-connector"
@@ -264,6 +328,7 @@
       "url": "https://www.capital.ro/cnair-a-semnat-contractul-pentru-lotul-2-al-drumului-expres-arad-oradea-un-nou-pas-important-pentru-dezvoltarea-infrastructurii.html"
     },
     {
+      "id": "hotnews-ro-lot3",
       "title": "HotNews: Drum expres de la Oradea la Arad, contract semnat pentru ultimul lot (29 January 2026)",
       "url": "https://hotnews.ro/drum-expres-de-la-oradea-la-arad-contract-semnat-pentru-ultimul-lot-care-nu-avea-constructor-care-este-termenul-de-finalizare-harta-2160835"
     },
@@ -271,6 +336,26 @@
       "id": "digi24-oradea-connector",
       "title": "Digi24: DEx16 Oradea bypass – A3 opened March 2024",
       "url": "https://www.digi24.ro/stiri/economie/un-nou-drum-expres-a-fost-inaugurat-in-romania-dex16-are-19-kilometri-si-a-fost-construit-in-30-de-luni-2739635"
+    },
+    {
+      "id": "autostrada-arad-timisoara-progres",
+      "title": "CNADNR (POS-T project site): Autostrada Arad – Timișoara, inclusiv varianta de ocolire Arad, progresul lucrărilor",
+      "url": "http://www.autostrada-arad-timisoara.ro/progresul-lucrarilor",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20210307145216/http://www.autostrada-arad-timisoara.ro/progresul-lucrarilor"
+    },
+    {
+      "id": "economica-net-oradea-connector",
+      "title": "Economica.net: Legătura Oradea – A3, a fost semnat contractul pentru noul drum de 19 kilometri (21 July 2021)",
+      "url": "https://www.economica.net/legatura-oradea-a3-azi-s-a-semnat-contractul-pentru-noul-drum-de-19-kilometri-va-fi-gata-in-2023-drula_523100.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-nusfalau-biharia",
+      "title": "CNAIR: Autostrada Transilvania, secțiunea Nușfalău – Biharia, inclusiv drumul de legătură la Municipiul Oradea",
+      "url": "https://www.cnadnr.ro/ro/proiecte/autostrada-transilvania-sec%C8%9Biunea-nu%C8%99fal%C4%83u-biharia-inclusiv-drumul-de-leg%C4%83tur%C4%83-la",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/2025/https://www.cnadnr.ro/ro/proiecte/autostrada-transilvania-sec%C8%9Biunea-nu%C8%99fal%C4%83u-biharia-inclusiv-drumul-de-leg%C4%83tur%C4%83-la"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

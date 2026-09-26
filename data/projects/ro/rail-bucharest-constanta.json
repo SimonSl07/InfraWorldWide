@@ -21,7 +21,7 @@
       "status": "opened",
       "dates": {
         "opened": "2014-07",
-        "constructionStart": "2007"
+        "constructionStart": "2005"
       },
       "lengthKm": 225,
       "profile": {
@@ -34,17 +34,59 @@
           "detail": {
             "en": "EU co-financed upgrade of the Bucharest–Constanța line (TEN-T Rhine–Danube Corridor)",
             "ro": "Modernizare cofinanțată de Uniunea Europeană a liniei București–Constanța (Coridorul TEN-T Rin–Dunăre)"
+          },
+          "programme": "eu-ispa",
+          "amount": {
+            "amount": 231.7,
+            "currency": "EUR",
+            "note": "ISPA grant for București Băneasa – Fetești only, co-financed with 77.2 million EUR from the state budget."
           }
         },
         {
           "source": "national_budget"
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "JBIC (Japan Bank for International Cooperation) loan for București Nord – Băneasa and Fetești – Constanța",
+            "ro": "Împrumut JBIC (Banca Japoneză pentru Cooperare Internațională) pentru București Nord – Băneasa și Fetești – Constanța"
+          },
+          "amount": {
+            "amount": 183,
+            "currency": "EUR",
+            "note": "For București Nord – Băneasa and Fetești – Constanța only, out of 356.3 million EUR total financing for those sections."
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "DEXIA Kommunalkredit Bank AG credit for București Nord – Băneasa and Fetești – Constanța",
+            "ro": "Credit DEXIA Kommunalkredit Bank AG pentru București Nord – Băneasa și Fetești – Constanța"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi (Fundulea – Fetești)",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky (Cernavodă – Constanța, with Wiebe)",
+          "role": "builder"
+        },
+        {
+          "name": "Wiebe (Cernavodă – Constanța, with Swietelsky)",
+          "role": "builder"
         }
       ],
       "note": {
-        "en": "Line 800 upgrade to 160 km/h for passenger and 120 km/h for freight traffic, completed by July 2014"
+        "en": "Line 800 upgrade to 160 km/h for passenger and 120 km/h for freight traffic, completed by July 2014. CFR states the investment value in two parts: 451 million EUR for București Băneasa – Fetești (works 2005–2012, ISPA and state budget) and 433 million EUR for București Nord – București Băneasa and Fetești – Constanța (works 2006–2012, JBIC loan, DEXIA Kommunalkredit credit and state budget). CFR does not say whether VAT is included or whether these are final costs. Club Feroviar (2024) gives 356.3 million EUR of financing for București Nord – Băneasa and Fetești – Constanța.",
+        "ro": "Modernizarea magistralei 800 pentru 160 km/h la călători și 120 km/h la marfă, finalizată până în iulie 2014. CFR indică valoarea investiției în două părți: 451 milioane EUR pentru București Băneasa – Fetești (lucrări 2005–2012, ISPA și buget de stat) și 433 milioane EUR pentru București Nord – București Băneasa și Fetești – Constanța (lucrări 2006–2012, împrumut JBIC, credit DEXIA Kommunalkredit și buget de stat). CFR nu precizează dacă valorile includ TVA sau dacă sunt costuri finale. Club Feroviar (2024) indică o finanțare de 356,3 milioane EUR pentru București Nord – Băneasa și Fetești – Constanța."
       },
       "sourceRefs": [
-        "wikipedia-c-ile-ferate-rom-ne-line-800"
+        "wikipedia-c-ile-ferate-rom-ne-line-800",
+        "clubferoviar-cfr-modernised-km",
+        "clubferoviar-160-kmh-10-years"
       ],
       "geometryRef": "bucuresti-constanta"
     }
@@ -58,6 +100,19 @@
     {
       "title": "Capital: Premieră absolută în România: Un tren circulă cu 160 km/h pe oră!",
       "url": "http://www.capital.ro/premiera-absoluta-in-romania-un-tren-circula-cu-160-km-h-pe-ora.html"
+    },
+    {
+      "id": "clubferoviar-cfr-modernised-km",
+      "title": "Club Feroviar: EXCLUSIV. S-au modernizat mai mulți km de cale ferată cu fonduri preaderare decât postaderare (2024-10-31)",
+      "url": "https://clubferoviar.ro/kilometri-de-cale-ferata-modernizata-ue/",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20241112/https://clubferoviar.ro/kilometri-de-cale-ferata-modernizata-ue/"
+    },
+    {
+      "id": "clubferoviar-160-kmh-10-years",
+      "title": "Club Feroviar: FOTO. 10 ani de 160 km/oră pe București-Constanța. Locomotiva inaugurală, pe butuci (2024-07-04)",
+      "url": "https://clubferoviar.ro/10-ani-160-km-ora-pe-bucuresti-constanta/",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

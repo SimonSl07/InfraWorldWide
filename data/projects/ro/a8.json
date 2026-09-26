@@ -27,13 +27,6 @@
         "expectedOpening": "2030"
       },
       "lengthKm": 92.2,
-      "cost": {
-        "estimated": {
-          "amount": 4070,
-          "currency": "EUR",
-          "year": 2023
-        }
-      },
       "funding": [
         {
           "source": "EU",
@@ -92,20 +85,12 @@
         "constructionStart": "2023-09"
       },
       "lengthKm": 118.8,
-      "cost": {
-        "estimated": {
-          "amount": 1560,
-          "currency": "RON",
-          "year": 2023
-        }
-      },
       "funding": [
         {
           "source": "EU",
-          "programme": "ro-pnrr",
           "detail": {
-            "en": "PNRR (Next Generation EU)",
-            "ro": "PNRR (Next Generation EU)"
+            "en": "Transport Programme 2021-2027 (stated for Ditrău – Grințieș, section 2A)",
+            "ro": "Programul Transport 2021-2027 (declarat pentru Ditrău – Grințieș, secțiunea 2A)"
           }
         },
         {
@@ -120,21 +105,21 @@
       ],
       "contract": {
         "designMonths": 14,
-        "executionMonths": 40,
-        "value": {
-          "amount": 1560,
-          "currency": "RON",
-          "year": 2023
-        }
+        "executionMonths": 40
       },
       "note": {
-        "en": "Ditrău–Grințieș (section 2A) contract, SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB; Leghin–Târgu Neamț signed September 2023 at RON 1.56bn (≈€313M), 6 months design + 24 months execution"
+        "en": "Ditrău–Grințieș (section 2A) contract, SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB; Leghin–Târgu Neamț signed September 2023 at RON 1.56bn (≈€313M), 6 months design + 24 months execution. Outlook from Cătălin Urtoi (civic association), reported by punctul.ro on 15 July 2026: Vânători Neamț – Moțca (29.91 km, UMB, in execution) could open in 2026; Ditrău – Grințieș (38 km) works to finish in 2030; Pipirig – Vânători Neamț (19.3 km) not before 2031.",
+        "ro": "Contractul Ditrău–Grințieș (secțiunea 2A), SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB; Leghin–Târgu Neamț semnat în septembrie 2023 pentru 1,56 mld. lei (≈313 mil. €), 6 luni proiectare + 24 luni execuție. Estimări ale lui Cătălin Urtoi (asociație civică), preluate de punctul.ro pe 15 iulie 2026: Vânători Neamț – Moțca (29,91 km, UMB, în execuție) poate fi deschis în 2026; Ditrău – Grințieș (38 km), finalizare lucrări în 2030; Pipirig – Vânători Neamț (19,3 km), nu înainte de 2031."
       },
       "sources": [
         {
           "title": "economica.net",
           "url": "https://www.economica.net/autostrada-unirii-a8-38_820501.html"
         }
+      ],
+      "sourceRefs": [
+        "punctul-ro-targu-mures-ditrau",
+        "economica-net-ditrau-motca"
       ],
       "geometryRef": "ditrau-motca",
       "profile": {
@@ -147,7 +132,7 @@
         "en": "Moțca – Târgu Frumos (incl. A7 junction)",
         "ro": "Moțca – Târgu Frumos (incl. nodul A7)"
       },
-      "status": "under_construction",
+      "status": "tendered",
       "dates": {
         "tenderAwarded": "2026-04-24"
       },
@@ -208,23 +193,62 @@
       },
       "status": "tendered",
       "lengthKm": 28.6,
+      "cost": {
+        "estimated": {
+          "amount": 6500,
+          "currency": "RON",
+          "note": "Tender estimate at launch in February 2025 (ziare.com). ARENA Construcțiilor gives a range of 5.5–6.5 bn lei excluding VAT."
+        },
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 6500,
+              "currency": "RON",
+              "note": "Tender estimate at launch in February 2025 (ziare.com). ARENA Construcțiilor gives a range of 5.5–6.5 bn lei excluding VAT."
+            },
+            "date": "2025-02",
+            "sourceRef": "ziare-com-targu-frumos-letcani"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-02",
+          "note": {
+            "en": "Design-and-execution tender launched at an estimated RON 6.5bn; six offers received.",
+            "ro": "Licitație de proiectare și execuție lansată la o valoare estimată de 6,5 mld. lei; 6 oferte depuse."
+          },
+          "sourceRef": "ziare-com-targu-frumos-letcani"
+        }
+      ],
       "funding": [
         {
           "source": "EU",
           "detail": {
-            "en": "EU funds",
-            "ro": "Fonduri europene"
+            "en": "Transport Operational Programme (POT) and the EU defence fund SAFE",
+            "ro": "Programul Operațional Transport (POT) și fondul de apărare al UE (SAFE)"
           }
         },
         {
           "source": "national_budget"
         }
       ],
+      "contract": {
+        "designMonths": 10,
+        "executionMonths": 36,
+        "totalMonths": 46
+      },
       "note": {
-        "en": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
+        "en": "Tronson 2 Târgu Frumos – Lețcani, 28.6 km. The design-and-execution tender was launched in February 2025 at an estimated RON 6.5bn and drew six offers; ARENA Construcțiilor gives the estimate as RON 5.5–6.5bn excluding VAT. Tender terms: 46 months, 10 for design and 36 for execution; no contract is signed yet. Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget",
+        "ro": "Tronsonul 2 Târgu Frumos – Lețcani, 28,6 km. Licitația de proiectare și execuție a fost lansată în februarie 2025, la o valoare estimată de 6,5 mld. lei, și a atras 6 oferte; ARENA Construcțiilor dă estimarea ca 5,5–6,5 mld. lei fără TVA. Termene din licitație: 46 de luni, 10 pentru proiectare și 36 pentru execuție; contractul nu este încă semnat. Secțiune a A8 aflată în licitație; podul rutier de la Ungheni peste Prut urmează a fi finanțat din fonduri europene nerambursabile și din bugetul de stat"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a8-rom-nia"
+        "wikipedia-ro-autostrada-a8-rom-nia",
+        "ziare-com-targu-frumos-letcani",
+        "apix-ro-targu-frumos-letcani",
+        "arenaconstruct-ro-letcani-iasi"
       ],
       "geometryRef": "targu-frumos-letcani"
     },
@@ -234,17 +258,33 @@
         "en": "Lețcani – Iași (sector 3)",
         "ro": "Lețcani – Iași (sectorul 3)"
       },
-      "status": "under_construction",
+      "status": "tendered",
       "dates": {
-        "constructionStart": "2024"
+        "tenderAwarded": "2026-04-03"
       },
       "lengthKm": 17.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 3930,
+              "currency": "RON",
+              "year": 2026,
+              "note": "Excluding VAT. Design-and-execution contract."
+            },
+            "date": "2026-04-03",
+            "note": "CNIR designation of FCC Construcción.",
+            "sourceRef": "arenaconstruct-ro-letcani-iasi"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
           "detail": {
-            "en": "EU funds",
-            "ro": "Fonduri europene"
+            "en": "SAFE (Security Action for Europe), the EU programme for dual-use infrastructure",
+            "ro": "SAFE (Security Action for Europe), programul UE pentru infrastructură duală"
           }
         },
         {
@@ -257,11 +297,26 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 10,
+        "executionMonths": 36,
+        "totalMonths": 46,
+        "value": {
+          "amount": 3930,
+          "currency": "RON",
+          "year": 2026,
+          "note": "Excluding VAT. Design-and-execution contract."
+        }
+      },
       "note": {
-        "en": "Lețcani–Iași (sector 3, 17.7 km) execution contract with FCC Construcción"
+        "en": "Lețcani–Iași (sector 3, 17.7 km) execution contract with FCC Construcción. CNIR designated FCC Construcción for Tronson 3 Lețcani (DN28) – DN24 (Iași) on 3 April 2026 with a design-and-execution offer of RON 3.93bn excluding VAT, 25.7% below the minimum estimated value, over 46 months (10 design, 36 execution). The contract was signed about two weeks before 12 June 2026. Design runs from the CNIR start order of 24 August 2026, with works due from June 2027.",
+        "ro": "Lețcani–Iași (sectorul 3, 17,7 km), contract de execuție cu FCC Construcción. CNIR a desemnat FCC Construcción pentru Tronsonul 3 Lețcani (DN28) – DN24 (Iași) pe 3 aprilie 2026, cu o ofertă de proiectare și execuție de 3,93 mld. lei fără TVA, cu 25,7% sub valoarea minimă estimată, pe 46 de luni (10 proiectare, 36 execuție). Contractul a fost semnat cu circa două săptămâni înainte de 12 iunie 2026. Proiectarea începe prin ordinul CNIR din 24 august 2026, iar lucrările sunt programate din iunie 2027."
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a8-rom-nia"
+        "wikipedia-ro-autostrada-a8-rom-nia",
+        "arenaconstruct-ro-letcani-iasi",
+        "playtech-ro-letcani-iasi",
+        "stireadeiasi-ro-motca-targu-frumos"
       ],
       "geometryRef": "letcani-iasi"
     },
@@ -272,24 +327,88 @@
         "ro": "Iași – Ungheni (frontiera cu Republica Moldova, sectorul 4)"
       },
       "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-04-24"
+      },
       "lengthKm": 15.47,
+      "cost": {
+        "estimated": {
+          "amount": 4700,
+          "currency": "RON",
+          "note": "Excluding VAT. Tender estimate; the contract also covers the first kilometres of motorway in Moldova."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 3570,
+              "currency": "RON",
+              "year": 2026,
+              "note": "Excluding VAT. Design-and-execution contract; also covers the first kilometres of motorway in Moldova."
+            },
+            "date": "2026-04-24",
+            "note": "CNIR designation of the Itinera – Saipem – ICM association.",
+            "sourceRef": "adevarul-ro-iasi-ungheni"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-04-24",
+          "note": {
+            "en": "CNIR designated the Itinera – Saipem – ICM association.",
+            "ro": "CNIR a desemnat asocierea Itinera – Saipem – ICM."
+          },
+          "sourceRef": "adevarul-ro-iasi-ungheni"
+        },
+        {
+          "kind": "litigation",
+          "date": "2026-08-05",
+          "note": {
+            "en": "Bucharest Court of Appeal suspended execution of the contract until the case is decided (final). Next hearing 30 September 2026.",
+            "ro": "Curtea de Apel București a suspendat executarea contractului până la soluționarea cauzei (definitivă). Următorul termen: 30 septembrie 2026."
+          },
+          "sourceRef": "adevarul-ro-iasi-ungheni"
+        }
+      ],
       "funding": [
         {
           "source": "EU",
           "detail": {
-            "en": "The Ungheni road bridge over the Prut is to be financed from EU grants and the state budget",
-            "ro": "Podul rutier de la Ungheni peste Prut urmează a fi finanțat din fonduri europene nerambursabile și din bugetul de stat"
+            "en": "SAFE (Security Action for Europe): per CNIR, the only A8 section launched directly with SAFE financing. The Ungheni road bridge over the Prut is to be financed from EU grants and the state budget.",
+            "ro": "SAFE (Security Action for Europe): potrivit CNIR, singurul tronson al A8 lansat direct cu finanțare SAFE. Podul rutier de la Ungheni peste Prut urmează a fi finanțat din fonduri europene nerambursabile și din bugetul de stat."
           }
         },
         {
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Itinera S.P.A. – Saipem S.P.A. – ICM S.P.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 10,
+        "executionMonths": 36,
+        "value": {
+          "amount": 3570,
+          "currency": "RON",
+          "year": 2026,
+          "note": "Excluding VAT. Design-and-execution contract; also covers the first kilometres of motorway in Moldova."
+        }
+      },
       "note": {
-        "en": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget"
+        "en": "Tendered section of the A8; the Ungheni road bridge over the Prut is to be financed from EU grants and the state budget. Tronson 4 DN24 (Iași) – Vama Ungheni, 15.47 km; the contract also covers the first kilometres of motorway in Moldova. CNIR designated the Itinera – Saipem – ICM association on 24 April 2026 at RON 3.57bn excluding VAT, against a tender estimate of RON 4.7bn excluding VAT, and signed the design-and-execution contract on 2 July 2026. On 5 August 2026 the Bucharest Court of Appeal suspended execution of the contract until the case is decided (final ruling); the next hearing is on 30 September 2026. Terms are 10 months design and 36 months execution. A design start order dated 24 August 2026 was reported in July 2026, before the court suspension; whether it took effect is unclear.",
+        "ro": "Secțiune a A8 aflată în licitație; podul rutier de la Ungheni peste Prut urmează a fi finanțat din fonduri europene nerambursabile și din bugetul de stat. Tronsonul 4 DN24 (Iași) – Vama Ungheni, 15,47 km; contractul include și primii kilometri de autostradă din Republica Moldova. CNIR a desemnat asocierea Itinera – Saipem – ICM pe 24 aprilie 2026, cu 3,57 mld. lei fără TVA, față de o valoare estimată de 4,7 mld. lei fără TVA, și a semnat contractul de proiectare și execuție pe 2 iulie 2026. Pe 5 august 2026, Curtea de Apel București a suspendat executarea contractului până la soluționarea cauzei (definitiv); următorul termen este pe 30 septembrie 2026. Termenele sunt 10 luni proiectare și 36 luni execuție. Un ordin de începere a proiectării cu data de 24 august 2026 a fost anunțat în iulie 2026, înainte de suspendarea dispusă de instanță; nu este clar dacă a intrat în vigoare."
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a8-rom-nia"
+        "wikipedia-ro-autostrada-a8-rom-nia",
+        "adevarul-ro-iasi-ungheni",
+        "arenaconstruct-ro-letcani-iasi",
+        "punctul-ro-targu-mures-ditrau"
       ],
       "geometryRef": "iasi-ungheni"
     }
@@ -347,6 +466,42 @@
       "id": "stireadeiasi-ro-motca-targu-frumos",
       "title": "stireadeiasi.ro (CNIR start order, design from 24 August 2026, works from June 2027)",
       "url": "https://www.stireadeiasi.ro/stiri-locale/autostrada-a8-leticani-iasi-motca-targu-frumos/"
+    },
+    {
+      "id": "arenaconstruct-ro-letcani-iasi",
+      "title": "ARENA Construcțiilor: Autostrada A8, Letcani – Iasi: A fost ales constructorul cu o oferta mai mica cu un sfert decat valoarea minima estimata (2026-04-03)",
+      "url": "https://arenaconstruct.ro/autostrada-a8-letcani-iasi-a-fost-ales-constructorul-cu-o-oferta-mai-mica-cu-un-sfert-decat-valoarea-minima-estimata/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "playtech-ro-letcani-iasi",
+      "title": "playtech.ro: Ce lungime va avea Autostrada Târgu Neamț - Iași - Ungheni şi când va fi gata (2026-04-03)",
+      "url": "https://playtech.ro/2026/ce-lungime-va-avea-autostrada-targu-neamt-iasi-ungheni-si-cand-va-fi-gata-licitatia-castigata-de-un-constructor-spaniol/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "adevarul-ro-iasi-ungheni",
+      "title": "adevarul.ro: Blocaj major pentru Autostrada A8. Contractul tronsonului care iese din țară spre Republica Moldova, suspendat de instanță (2026-08-05)",
+      "url": "https://adevarul.ro/stiri-interne/evenimente/blocaj-major-pentru-autostrada-a8-contractul-2547973.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ziare-com-targu-frumos-letcani",
+      "title": "ziare.com: Contestații pe bandă rulantă pe segmentul ieșean al Autostrăzii Unirii (2026-04-21)",
+      "url": "https://ziare.com/infrastructura/autostrada-unirii-a8-contestatii-licitatii-tronson-targu-frumos-letcani-2026-2007877",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "apix-ro-targu-frumos-letcani",
+      "title": "apix.ro: Danlin XXL a câștigat licitația pentru autostrada Târgu Frumos – Lețcani: contract de un miliard de euro (2026-04-07)",
+      "url": "https://apix.ro/danlin-xxl-a-castigat-licitatia-pentru-autostrada-targu-frumos-letcani-contract-de-un-miliard-de-euro/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-net-ditrau-motca",
+      "title": "Economica.net: Autostrada Unirii A8 Tg Mureș – Tg Neamț. A fost semnat contractul cu UMB pentru cel mai lung lot, Ditrău – Grințieș (2025-03-20)",
+      "url": "https://www.economica.net/autostrada-unirii-a8-38_820501.html",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

@@ -19,17 +19,26 @@
       },
       "status": "opened",
       "dates": {
-        "tenderAwarded": "2013-12",
-        "constructionStart": "2015",
+        "tenderAwarded": "2014-11-14",
+        "constructionStart": "2014-12-02",
         "opened": "2020-12-03"
       },
       "lengthKm": 17,
       "cost": {
-        "estimated": {
-          "amount": 541.7,
-          "currency": "RON",
-          "year": 2013
-        }
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 541.73913721,
+              "currency": "RON",
+              "year": 2014,
+              "note": "Excluding VAT."
+            },
+            "date": "2014-11-14",
+            "note": "Design-and-build contract with Pizzarotti–Pomponio concluded 14 November 2014.",
+            "sourceRef": "zcj-ro-lot-1"
+          }
+        ]
       },
       "funding": [
         {
@@ -63,17 +72,20 @@
         "value": {
           "amount": 541.7,
           "currency": "RON",
-          "year": 2013
+          "year": 2014
         },
+        "designMonths": 4,
         "executionMonths": 18,
-        "totalMonths": 22
+        "totalMonths": 22,
+        "guaranteeMonths": 48
       },
       "note": {
         "en": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget"
       },
       "sourceRefs": [
         "zcj-ro-lot-1",
-        "wikipedia-ro-autostrada-a10-rom-nia"
+        "wikipedia-ro-autostrada-a10-rom-nia",
+        "cnair-sebes-turda-lot-1"
       ],
       "geometryRef": "lot-1"
     },
@@ -85,17 +97,26 @@
       },
       "status": "opened",
       "dates": {
-        "tenderAwarded": "2013-12",
+        "tenderAwarded": "2014-11-14",
         "constructionStart": "2015",
         "opened": "2021-11-30"
       },
       "lengthKm": 24.3,
       "cost": {
-        "estimated": {
-          "amount": 549.3,
-          "currency": "RON",
-          "year": 2013
-        }
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 549.33249362,
+              "currency": "RON",
+              "year": 2014,
+              "note": "Excluding VAT."
+            },
+            "date": "2014-11-14",
+            "note": "Contract no. 92/66187 signed 14 November 2014.",
+            "sourceRef": "cnair-sebes-turda-lot-2"
+          }
+        ]
       },
       "funding": [
         {
@@ -125,12 +146,25 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 549.33249362,
+          "currency": "RON",
+          "year": 2014,
+          "note": "Excluding VAT."
+        },
+        "designMonths": 4,
+        "executionMonths": 18,
+        "guaranteeMonths": 48
+      },
       "note": {
         "en": "Part of the A10 Sebeș–Turda motorway: €420M total, 85% EU funds / 15% state budget"
       },
       "geometryRef": "lot-2",
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a10-rom-nia"
+        "wikipedia-ro-autostrada-a10-rom-nia",
+        "cnair-sebes-turda-lot-2",
+        "cnair-contracte-2018"
       ]
     },
     {
@@ -266,6 +300,12 @@
       "geometryRef": "lot-4"
     }
   ],
+  "cost": {
+    "amount": 2098.370659,
+    "currency": "RON",
+    "scope": "programme",
+    "note": "Including VAT. Whole A10 project under POIM 2014–2020 (all four lots plus supervision, land and other costs), per financing contract addendum no. 5 of 24 June 2021 (CNAIR). A budget, not an outturn. An earlier POS-T budget (2014) was 621.5 million euro, per AM POST via HotNews."
+  },
   "sources": [
     {
       "title": "Wikipedia: A10 motorway (Romania)",
@@ -290,6 +330,30 @@
       "id": "wikipedia-ro-autostrada-a10-rom-nia",
       "title": "Wikipedia (ro): Autostrada A10 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A10_(Rom%C3%A2nia)"
+    },
+    {
+      "id": "cnair-a10-poim",
+      "title": "CNAIR: Autostrada Sebeș–Turda (POIM financing contract no. 144, MySMIS 118317)",
+      "url": "https://web.archive.org/web/2025/https://www.cnadnr.ro/ro/proiecte/autostrada-sebe%C8%99-turda-0",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-sebes-turda-lot-1",
+      "title": "CNAIR: Sebeș–Turda Lot 1",
+      "url": "https://web.archive.org/web/2024/https://www.cnadnr.ro/ro/proiecte/sebes-turda-lot-1",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-sebes-turda-lot-2",
+      "title": "CNAIR: Sebeș–Turda Lot 2",
+      "url": "https://web.archive.org/web/2024/https://www.cnadnr.ro/ro/proiecte/sebes-turda-lot-2",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-contracte-2018",
+      "title": "CNAIR: Situație centralizată contracte 2018 (la 30.11.2018)",
+      "url": "https://web.archive.org/web/2019/https://www.cnadnr.ro/sites/default/files/pagini-statice/Situatie%20centralizata%20contracte%202018%20la%2030.11.2018_0.pdf",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

@@ -20,8 +20,18 @@
         "opened": "1978"
       },
       "lengthKm": 10,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "All motorway construction in Bulgaria before 1990 was funded solely from the state budget.",
+            "ro": "Toată construcția de autostrăzi din Bulgaria înainte de 1990 a fost finanțată exclusiv de la bugetul de stat."
+          }
+        }
+      ],
       "sourceRefs": [
-        "wikipedia-a1-motorway-bulgaria"
+        "wikipedia-a1-motorway-bulgaria",
+        "mrrb-road-priorities-2020"
       ],
       "geometryRef": "sofia-novi-han"
     },
@@ -35,8 +45,18 @@
         "opened": "1984"
       },
       "lengthKm": 56,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "All motorway construction in Bulgaria before 1990 was funded solely from the state budget.",
+            "ro": "Toată construcția de autostrăzi din Bulgaria înainte de 1990 a fost finanțată exclusiv de la bugetul de stat."
+          }
+        }
+      ],
       "sourceRefs": [
-        "wikipedia-a1-motorway-bulgaria"
+        "wikipedia-a1-motorway-bulgaria",
+        "mrrb-road-priorities-2020"
       ],
       "geometryRef": "novi-han-plovdiv"
     },
@@ -47,11 +67,33 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "1988",
         "opened": "1995-11-17"
       },
       "lengthKm": 32,
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "coFinancingRate": 0.6,
+          "detail": {
+            "en": "EBRD financing agreement of 1993 under the Transit Roads I programme, which also covered rehabilitation of the main road network. Shares as stated by the Prime Minister at the opening; works began in 1988, before the agreement.",
+            "ro": "Acord de finanțare BERD din 1993, programul Transit Roads I, care a acoperit și reabilitarea rețelei rutiere principale. Cotele sunt cele declarate de premier la inaugurare; lucrările au început în 1988, înainte de acord."
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.4
+        }
+      ],
+      "note": {
+        "en": "Cost at opening: 700 million leva (pre-1999 BGL), per BTA, 1995.",
+        "ro": "Cost la inaugurare: 700 de milioane de leva (BGL, dinainte de 1999), conform BTA, 1995."
+      },
       "sourceRefs": [
-        "wikipedia-a1-motorway-bulgaria"
+        "wikipedia-a1-motorway-bulgaria",
+        "bta-1995-11-17",
+        "mrrb-road-priorities-2020"
       ],
       "geometryRef": "plovdiv-orizovo"
     },
@@ -62,7 +104,8 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2006",
+        "tenderAwarded": "2002",
+        "constructionStart": "2003",
         "opened": "2007-10-05"
       },
       "lengthKm": 38.6,
@@ -73,8 +116,37 @@
           "year": 2006
         }
       },
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "coFinancingRate": 0.5,
+          "detail": {
+            "en": "EIB loan, shared with Karnobat – Burgas.",
+            "ro": "Împrumut BEI, comun cu Karnobat – Burgas."
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.5
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PSI (RUNWAY-BG consortium leader)",
+          "role": "builder"
+        },
+        {
+          "name": "Мостстрой (RUNWAY-BG consortium)",
+          "role": "builder"
+        }
+      ],
       "sourceRefs": [
-        "wikipedia-bg"
+        "wikipedia-bg",
+        "econ-bg-2007-10-05",
+        "trace-lot-1",
+        "actualno-2007-11-27",
+        "mrrb-lot-5-opening"
       ],
       "geometryRef": "orizovo-stara-zagora"
     },
@@ -86,10 +158,23 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2010-04-23",
-        "constructionStart": "2010-04-23",
+        "constructionStart": "2010-06-09",
         "opened": "2012-07-01"
       },
       "lengthKm": 31.8,
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Operational Programme Transport 2007–2013, Priority Axis II, project Completion of Trakia Motorway Lots 2, 3 and 4. Project total after tendering: 524.48 million BGN for the three lots, of which 513.97 million BGN was OP Transport grant, 80% of it from the Cohesion Fund. No per-lot split published.",
+            "ro": "Programul Operațional Transport 2007–2013, Axa prioritară II, proiectul Finalizarea autostrăzii Trakia, loturile 2, 3 și 4. Valoare totală după licitații: 524,48 milioane BGN pentru cele trei loturi, din care 513,97 milioane BGN grant POT, 80% din Fondul de Coeziune. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
       "contractors": [
         {
           "name": "Trace Group Hold",
@@ -100,11 +185,14 @@
         "value": {
           "amount": 137.868,
           "currency": "BGN",
-          "year": 2010
+          "year": 2010,
+          "note": "Including VAT."
         }
       },
       "sourceRefs": [
-        "wikipedia-bg"
+        "wikipedia-bg",
+        "amtrakia-lots-2-4",
+        "amtrakia-lot-2"
       ],
       "geometryRef": "stara-zagora-nova-zagora"
     },
@@ -120,6 +208,19 @@
         "opened": "2012-07-12"
       },
       "lengthKm": 35.7,
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Operational Programme Transport 2007–2013, Priority Axis II, project Completion of Trakia Motorway Lots 2, 3 and 4. Project total after tendering: 524.48 million BGN for the three lots, of which 513.97 million BGN was OP Transport grant, 80% of it from the Cohesion Fund. No per-lot split published.",
+            "ro": "Programul Operațional Transport 2007–2013, Axa prioritară II, proiectul Finalizarea autostrăzii Trakia, loturile 2, 3 și 4. Valoare totală după licitații: 524,48 milioane BGN pentru cele trei loturi, din care 513,97 milioane BGN grant POT, 80% din Fondul de Coeziune. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
       "contractors": [
         {
           "name": "Actor",
@@ -130,11 +231,14 @@
         "value": {
           "amount": 133.97,
           "currency": "BGN",
-          "year": 2010
+          "year": 2010,
+          "note": "Including VAT."
         }
       },
       "sourceRefs": [
-        "wikipedia-bg"
+        "wikipedia-bg",
+        "amtrakia-lots-2-4",
+        "amtrakia-lot-3"
       ],
       "geometryRef": "nova-zagora-yambol"
     },
@@ -146,10 +250,23 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2010-08-31",
-        "constructionStart": "2010-09-03",
+        "constructionStart": "2010-10-06",
         "opened": "2013-07-15"
       },
       "lengthKm": 49.1,
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Operational Programme Transport 2007–2013, Priority Axis II, project Completion of Trakia Motorway Lots 2, 3 and 4. Project total after tendering: 524.48 million BGN for the three lots, of which 513.97 million BGN was OP Transport grant, 80% of it from the Cohesion Fund. No per-lot split published.",
+            "ro": "Programul Operațional Transport 2007–2013, Axa prioritară II, proiectul Finalizarea autostrăzii Trakia, loturile 2, 3 și 4. Valoare totală după licitații: 524,48 milioane BGN pentru cele trei loturi, din care 513,97 milioane BGN grant POT, 80% din Fondul de Coeziune. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
       "contractors": [
         {
           "name": "Trakia IV consortium",
@@ -160,11 +277,15 @@
         "value": {
           "amount": 209.646,
           "currency": "BGN",
-          "year": 2010
+          "year": 2010,
+          "note": "Including VAT."
         }
       },
       "sourceRefs": [
-        "wikipedia-bg"
+        "wikipedia-bg",
+        "amtrakia-lots-2-4",
+        "amtrakia-2013-07-15",
+        "amtrakia-lot-4"
       ],
       "geometryRef": "yambol-karnobat"
     },
@@ -175,7 +296,8 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2005",
+        "tenderAwarded": "2002",
+        "constructionStart": "2003-05",
         "opened": "2006-11-02"
       },
       "lengthKm": 35.3,
@@ -184,10 +306,58 @@
           "amount": 150.266,
           "currency": "BGN",
           "year": 2005
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 54,
+              "currency": "EUR",
+              "year": 2002
+            },
+            "date": "2002",
+            "sourceRef": "ti-bulgaria-2005"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan, shared with Orizovo – Stara Zagora. No per-lot split published.",
+            "ro": "Împrumut BEI, comun cu Orizovo – Stara Zagora. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dogus & Eko",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 30,
+        "value": {
+          "amount": 54,
+          "currency": "EUR",
+          "year": 2002
         }
       },
+      "note": {
+        "en": "Projected cost when works began: 45.8 million euro, VAT and price year not stated (Mediapool, 12 May 2003).",
+        "ro": "Cost estimat la începerea lucrărilor: 45,8 milioane de euro, fără TVA sau an de preț precizat (Mediapool, 12 mai 2003)."
+      },
       "sourceRefs": [
-        "wikipedia-bg"
+        "wikipedia-bg",
+        "mediapool-2003-05-12",
+        "mrrb-lot-5-opening",
+        "econ-bg-2007-10-05",
+        "actualno-2007-11-27",
+        "ti-bulgaria-2005"
       ],
       "geometryRef": "karnobat-burgas"
     }
@@ -202,6 +372,85 @@
       "id": "wikipedia-bg",
       "title": "Bulgarian Wikipedia: Автомагистрала Тракия",
       "url": "https://bg.wikipedia.org/wiki/Автомагистрала_Тракия"
+    },
+    {
+      "id": "bta-1995-11-17",
+      "title": "BTA: PM Videnov opens 32-km section of Trakia motorway (17 November 1995)",
+      "url": "http://www.hri.org/news/balkans/bta/1995/95-11-20.bta.html",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20160316004909/http://www.hri.org/news/balkans/bta/1995/95-11-20.bta.html"
+    },
+    {
+      "id": "mrrb-road-priorities-2020",
+      "title": "MRRB / Road Infrastructure Agency: Priorities for road infrastructure construction in Bulgaria to 2020 (draft strategy)",
+      "url": "https://www.mrrb.bg/static/media/ups/articles/attachments/fb1d2e59cd4a685b803af777c170651c.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "econ-bg-2007-10-05",
+      "title": "Econ.bg: Opening of a section of Trakia motorway (5 October 2007)",
+      "url": "https://econ.bg/_l.e_i.131089.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "trace-lot-1",
+      "title": "Trace Group Hold: Trakia Highway from Orizovo to Stara Zagora",
+      "url": "https://trace.bg/en/activities/highways-roads-and-streets/trakia-highway-orizovo-stara-zagora",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "actualno-2007-11-27",
+      "title": "Actualno.com, reprinted by Botevgrad.com: Пари газим, по дупки пътуваме (27 November 2007)",
+      "url": "https://botevgrad.com/news/1976/Pari-gazim-po-dupki-patuvame/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "amtrakia-lots-2-4",
+      "title": "Road Infrastructure Agency: Completion of Trakia Motorway Lots 2, 3 and 4, project description",
+      "url": "https://www.amtrakia.com/za+proekta/1/YVezIVKPcVK3MNaLUlKvItKDcRa7MNaDcdaLcRe7INef",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "amtrakia-lot-2",
+      "title": "Road Infrastructure Agency: Lot 2 Stara Zagora – Nova Zagora",
+      "url": "https://www.amtrakia.com/lot+2+-+stara+zagora+-+nova+zagora-za+proekta/1/YVezIVKPcVK3MNaLUlKvItKDcRa7MNaDcdaLcRe7INefMJaHcdaLIlenIN",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "amtrakia-lot-3",
+      "title": "Road Infrastructure Agency: Lot 3 Nova Zagora – Yambol",
+      "url": "https://www.amtrakia.com/lot+3+-+nova+zagora+-+jambol-za+proekta/1/YVezIVKPcVK3MNaLUlKvItKDcRa7MNaDcdaLcRe7INefMJaHcdaLIlenIJ",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "amtrakia-lot-4",
+      "title": "Road Infrastructure Agency: Lot 4 Yambol – Karnobat",
+      "url": "https://www.amtrakia.com/lot+4+-+jambol+-+karnobat-za+proekta/1/YVezIVKPcVK3MNaLUlKvItKDcRa7MNaDcdaLcRe7INefMJaHcdaLIlenIV",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "amtrakia-2013-07-15",
+      "title": "Road Infrastructure Agency: The construction of 115 km of Trakia Motorway under OP Transport is completed (15 July 2013)",
+      "url": "https://amtrakia.com/the+construction+of++115+km++of+%E2%80%9Ctrakia%E2%80%9D+motorway+under+op+%E2%80%9Ctransport%E2%80%9D+is+completed+-news/1/YVezIVKzcJOXMVinIJKfMFKXcherYZODYBeHMZePcxeXcpOHYBeHYpeXIxKvIp",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-2003-05-12",
+      "title": "Mediapool: Consortium of two Turkish firms starts construction of a Trakia motorway section (12 May 2003)",
+      "url": "https://www.mediapool.bg/konsortsium-ot-dve-turski-firmi-zapochva-stroitelstvoto-na-otsechka-ot-magistrala-trakiya-news37863.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mrrb-lot-5-opening",
+      "title": "MRRB: Lot 5 Karnobat – Burgas-Zapad junction of Trakia motorway opened",
+      "url": "https://www.mrrb.bg/bg/lot-5-karnobat-puten-vuzel-burgas-zapad-ot-magistrala-trakiya-e-pusnat-v-eksploataciya/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ti-bulgaria-2005",
+      "title": "Transparency International Bulgaria: Granting a Concession on Trakia Motorway, Interim Report (April 2005)",
+      "url": "https://transparency-bg.org/publications_files/publication_47_1.pdf",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

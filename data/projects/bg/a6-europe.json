@@ -6,7 +6,7 @@
     "en": "A6 Europe Motorway"
   },
   "description": {
-    "en": "Approximately 63 km from Sofia to the Serbian border at Kalotina, on European route E80 and Pan-European Corridor X. It was called the Kalotina motorway until it was renamed in 2018. Dragoman–Slivnitsa was built by GBS-Infrastructure and opened in November 2020; Kalotina–Dragoman went to Strabag in a tender awarded in September 2017. The associated Sofia Northern Bypass opened in April 2016."
+    "en": "Approximately 63 km from Sofia to the Serbian border at Kalotina, on European route E80 and Pan-European Corridor X. It was called the Kalotina motorway until it was renamed in 2018. Dragoman–Slivnitsa was built by GBS-Infrastructure and opened in November 2020; Kalotina–Dragoman went to the Strabag BPA consortium under a contract signed in November 2018 and opened in October 2023. The associated Sofia Northern Bypass opened in April 2016."
   },
   "corridors": [
     "pan-european-x"
@@ -17,19 +17,70 @@
       "name": {
         "en": "Kalotina – Dragoman"
       },
-      "status": "under_construction",
+      "status": "opened",
       "dates": {
-        "tenderAwarded": "2017-09-13"
+        "tenderAwarded": "2018-11-15",
+        "constructionStart": "2020-02",
+        "opened": "2023-10"
       },
-      "lengthKm": 13.046,
+      "lengthKm": 14.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 137.49188328,
+              "currency": "BGN",
+              "year": 2018,
+              "scope": "works",
+              "note": "Design-and-build contract, excluding VAT. 164.99 million including VAT."
+            },
+            "date": "2018-11-15",
+            "sourceRef": "24chasa-kalotina-dragoman-contract-2018"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility",
+            "ro": "Mecanismul pentru interconectarea Europei"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
       "contractors": [
         {
-          "name": "Strabag",
+          "name": "Strabag BPA (JV)",
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 4,
+        "totalMonths": 28,
+        "value": {
+          "amount": 137.49188328,
+          "currency": "BGN",
+          "year": 2018,
+          "scope": "works",
+          "note": "Design-and-build contract, excluding VAT. 164.99 million including VAT."
+        }
+      },
+      "note": {
+        "en": "Contract durations converted from days: 852 days total, 122 days design. The contract deadline was January 2022; the section opened to traffic in October 2023 with Act 16 still pending. The builder is the Strabag BPA consortium of Strabag EAD, Strabag Sp. z o.o. (Poland) and Bitumina GmbH-Bulgaria.",
+        "ro": "Durate contractuale convertite din zile: 852 de zile în total, 122 de zile proiectare. Termenul contractual era ianuarie 2022; secțiunea a fost deschisă circulației în octombrie 2023, cu Actul 16 încă în așteptare. Constructorul este consorțiul Strabag BPA, format din Strabag EAD, Strabag Sp. z o.o. (Polonia) și Bitumina GmbH-Bulgaria."
+      },
       "sourceRefs": [
-        "wikipedia-europe-motorway"
+        "wikipedia-europe-motorway",
+        "24chasa-kalotina-dragoman-contract-2018",
+        "mediapool-kalotina-contracts-2018",
+        "mediapool-gbs-contract-2018",
+        "mediapool-kalotina-dragoman-start-2020",
+        "mediapool-kalotina-dragoman-opened-2023",
+        "gradat-kalotina-dragoman-opened-2023"
       ],
       "geometryRef": "kalotina-dragoman"
     },
@@ -40,19 +91,72 @@
       },
       "status": "opened",
       "dates": {
-        "tenderAwarded": "2017-09-13",
+        "tenderAwarded": "2018-12",
         "constructionStart": "2019-05",
         "opened": "2020-11"
       },
       "lengthKm": 17,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 97.8,
+              "currency": "BGN",
+              "year": 2018,
+              "scope": "works",
+              "note": "Design-and-build contract, excluding VAT. 117.36 million including VAT."
+            },
+            "date": "2018-12",
+            "sourceRef": "mediapool-gbs-contract-2018"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund through OP Transport and Transport Infrastructure 2014–2020, project BG16M1OP001-2.001-0005 (km 15+500 to 48+903). Added after construction began.",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport și Infrastructură de Transport 2014–2020, proiectul BG16M1OP001-2.001-0005 (km 15+500 – 48+903). Adăugat după începerea lucrărilor."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget, which paid for construction at signing (2018)",
+            "ro": "Bugetul de stat, care a finanțat construcția la semnare (2018)"
+          }
+        }
+      ],
       "contractors": [
         {
           "name": "GBS-Infrastructure",
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 24,
+        "totalMonths": 30,
+        "value": {
+          "amount": 97.8,
+          "currency": "BGN",
+          "year": 2018,
+          "scope": "works",
+          "note": "Design-and-build contract, excluding VAT. 117.36 million including VAT."
+        }
+      },
+      "note": {
+        "en": "Contract durations converted from days: 910 days total, 180 days design, 730 days works. The contract deadline was May 2021, per the road agency (API).",
+        "ro": "Durate contractuale convertite din zile: 910 zile în total, 180 de zile proiectare, 730 de zile execuție. Termenul contractual era mai 2021, potrivit agenției de drumuri (API)."
+      },
       "sourceRefs": [
-        "wikipedia-europe-motorway"
+        "wikipedia-europe-motorway",
+        "mediapool-gbs-contract-2018",
+        "mediapool-dragoman-slivnitsa-opened-2020",
+        "mediapool-kalotina-contracts-2018",
+        "gradat-kalotina-dragoman-opened-2023"
       ],
       "geometryRef": "dragoman-slivnitsa"
     }
@@ -62,6 +166,48 @@
       "id": "wikipedia-europe-motorway",
       "title": "Wikipedia: Europe motorway",
       "url": "https://en.wikipedia.org/wiki/Europe_motorway"
+    },
+    {
+      "id": "24chasa-kalotina-dragoman-contract-2018",
+      "title": "24 часа: Подписаха договора за изграждането на път между „Калотина“ и Драгоман (2018-11-15)",
+      "url": "https://www.24chasa.bg/region/article/7153874",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-kalotina-contracts-2018",
+      "title": "Mediapool.bg: Подписани са договорите за скоростния път до Калотина (2018-11-15)",
+      "url": "https://www.mediapool.bg/podpisani-sa-dogovorite-za-skorostniya-pat-do-kalotina-news286322.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-gbs-contract-2018",
+      "title": "Mediapool.bg: \"ГБС Инфраструктурно строителство\" ще строи 17 км от новата магистрала \"Европа\" (2018-12-28)",
+      "url": "https://www.mediapool.bg/gbs-infrastrukturno-stroitelstvo-shte-stroi-17-km-ot-novata-magistrala-evropa-news288010.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-kalotina-dragoman-start-2020",
+      "title": "Mediapool.bg: Започна строежът на магистралния участък от ГКПП \"Калотина\" до Драгоман (2020-02-13)",
+      "url": "https://www.mediapool.bg/zapochna-stroezhat-na-magistralniya-uchastak-ot-gkpp-kalotina-do-dragoman-news303463.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-dragoman-slivnitsa-opened-2020",
+      "title": "Mediapool.bg: Първите 17 км от магистрала \"Европа\" между Драгоман и Сливница са готови (2020-11-10)",
+      "url": "https://www.mediapool.bg/parvite-17-km-ot-magistrala-evropa-mezhdu-dragoman-i-slivnitsa-sa-gotovi-news314279.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-kalotina-dragoman-opened-2023",
+      "title": "Mediapool.bg: Магистралата между Калотина и Драгоман най-после е готова (2023-10-11)",
+      "url": "https://www.mediapool.bg/magistralata-mezhdu-kalotina-i-dragoman-nai-posle-e-gotova-video-news352207.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "gradat-kalotina-dragoman-opened-2023",
+      "title": "gradat.bg: Отворена е за движение магистрала „Европа“ между Калотина и Драгоман (2023-10-16)",
+      "url": "https://gradat.bg/infrastruktura/otvorena-e-za-dvizhenie-magistrala-evropa-mezhdu-kalotina-i-dragoman",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

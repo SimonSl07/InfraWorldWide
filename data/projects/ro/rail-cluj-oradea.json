@@ -23,25 +23,96 @@
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2022"
+        "tenderAwarded": "2022-12",
+        "constructionStart": "2023-01",
+        "expectedOpening": "2029"
       },
       "lengthKm": 166,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 7680.7,
+              "currency": "RON",
+              "year": 2022,
+              "note": "Excluding VAT. Sum of the four design-and-build contracts (lot 1 1,611.48, lot 2 1,535.20, lot 3 2,117.17, lot 4 2,416.85 M lei), as reported by CFR in August 2026."
+            },
+            "date": "2022-12",
+            "note": "Four contracts signed 10 November to 30 December 2022.",
+            "sourceRef": "cfr-status-2026-08"
+          }
+        ]
+      },
       "profile": {
         "works": "rehabilitation"
       },
       "funding": [
         {
-          "source": "EU"
+          "source": "EU",
+          "detail": {
+            "en": "PNRR, Component 4 (Sustainable transport): stage I of the works",
+            "ro": "PNRR, Componenta 4 – Transport sustenabil: etapa I a lucrărilor"
+          },
+          "programme": "ro-pnrr",
+          "amount": {
+            "amount": 9360,
+            "currency": "RON",
+            "note": "Excluding VAT. PNRR financing of the four contracts as announced at signing, December 2022."
+          }
         },
         {
-          "source": "national_budget"
+          "source": "EU",
+          "detail": {
+            "en": "Programul Transport 2021-2027: stage II of the works",
+            "ro": "Programul Transport 2021-2027: etapa a II-a a lucrărilor"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Co-financing",
+            "ro": "Cofinanțare"
+          }
         }
       ],
+      "contractors": [
+        {
+          "name": "Alstom Transport – Arcada Company (Railworks, lot 1 Cluj-Napoca – Aghireș and lot 2 Aghireș – Poieni)",
+          "role": "builder"
+        },
+        {
+          "name": "FCC Construccion – Gülermak – CCN (lot 3, Poieni – Aleșd)",
+          "role": "builder"
+        },
+        {
+          "name": "Webuild – Impresa Pizzarotti – Salcef (lot 4, Aleșd – Hungarian border)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 36,
+        "totalMonths": 42,
+        "value": {
+          "amount": 7680.7,
+          "currency": "RON",
+          "year": 2022,
+          "note": "Excluding VAT. Sum of the four design-and-build contracts (lot 1 1,611.48, lot 2 1,535.20, lot 3 2,117.17, lot 4 2,416.85 M lei), as reported by CFR in August 2026."
+        }
+      },
       "note": {
-        "en": "EU-funded rehabilitation of the Cluj-Napoca–Oradea–Episcopia Bihor main line (TEN-T Rhine–Danube Corridor)"
+        "en": "EU-funded rehabilitation of the Cluj-Napoca–Oradea–Episcopia Bihor main line (TEN-T Rhine–Danube Corridor). Four design-and-build contracts: lot 1 Cluj-Napoca – Aghireș (30.411 km), lot 2 Aghireș – Poieni (36.530 km), lot 3 Poieni – Aleșd, lot 4 Aleșd – Hungarian border (46.744 km). CFR's August 2026 report gives the end of works as H2 2027 for lots 1 and 2, H2 2028 for lot 4 and H1 2029 for lot 3. In March 2026 Prime Minister Bolojan set 2028 as the target for finishing all four lots and reopening the line to trains.",
+        "ro": "Reabilitarea cu fonduri europene a magistralei Cluj-Napoca–Oradea–Episcopia Bihor (Coridorul TEN-T Rin–Dunăre). Patru contracte de proiectare și execuție: lotul 1 Cluj-Napoca – Aghireș (30,411 km), lotul 2 Aghireș – Poieni (36,530 km), lotul 3 Poieni – Aleșd, lotul 4 Aleșd – frontiera cu Ungaria (46,744 km). Raportul CFR din august 2026 estimează finalizarea lucrărilor în semestrul II 2027 pentru loturile 1 și 2, semestrul II 2028 pentru lotul 4 și semestrul I 2029 pentru lotul 3. În martie 2026, premierul Bolojan a stabilit ca țintă anul 2028 pentru finalizarea celor patru loturi și redeschiderea circulației trenurilor."
       },
       "sourceRefs": [
-        "cfr-ro"
+        "cfr-ro",
+        "cfr-status-2026-08",
+        "cfr-project-page",
+        "economica-contracts-signed-2022",
+        "hotnews-lot3-2022",
+        "economica-lot4-2022",
+        "economica-bolojan-2026-03"
       ],
       "geometryRef": "cluj-oradea"
     }
@@ -51,6 +122,42 @@
       "id": "cfr-ro",
       "title": "CFR Infrastructură: projects",
       "url": "https://www.cfr.ro"
+    },
+    {
+      "id": "cfr-status-2026-08",
+      "title": "CFR SA: Stadiul proiectelor de reabilitare/modernizare infrastructură feroviară, August 2026",
+      "url": "https://cfr.ro/wp-content/uploads/2026/09/Stadiu-proiecte-CFR-August-Septembrie-2026-1.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cfr-project-page",
+      "title": "CFR SA: Electrificarea și reabilitarea liniei de cale ferată Cluj-Napoca – Oradea – Episcopia Bihor",
+      "url": "https://cfr.ro/electrificarea-si-reabilitarea-liniei-de-cale-ferata-cluj-napoca-oradea-episcopia-bihor/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-contracts-signed-2022",
+      "title": "Economica.net: Calea ferată Cluj – Oradea: toate contractele pentru electrificarea liniei au fost semnate (2022-12-30)",
+      "url": "https://www.economica.net/calea-ferata-cluj-oradea-toate-contractele-pentru-electrificarea-liniei-au-fost-semnate-grindeanu_637682.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-lot3-2022",
+      "title": "HotNews.ro: CFR SA a semnat contractul de 2,1 miliarde lei pentru 53 de km de cale ferată din Transilvania (2022-11-10)",
+      "url": "https://hotnews.ro/cfr-sa-a-semnat-contractul-de-21-miliarde-lei-pentru-electrificarea-si-modernizarea-a-53-de-km-de-cale-ferata-din-transilvania-98005",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-lot4-2022",
+      "title": "Economica.net: Cluj – Oradea – Episcopia Bihor, semnat contractul pentru lotul de la graniță cu Webuild (2022-12-07)",
+      "url": "https://www.economica.net/calea-ferata-cluj-oradea-episcopia-bihor-a-fost-semnat-contractul-pentru-lotul-de-la-granita-cu-italienii-de-la-webuild_632625.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-bolojan-2026-03",
+      "title": "Economica.net: Bolojan le cere constructorilor lotului Poieni – Aleșd să accelereze ritmul lucrărilor (2026-03-13)",
+      "url": "https://www.economica.net/calea-ferata-cluj-oradea-6_922467.html",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

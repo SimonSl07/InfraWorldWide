@@ -27,12 +27,52 @@
         "opened": "2013-12"
       },
       "lengthKm": 11.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 681.040914,
+              "currency": "RON",
+              "year": 2011,
+              "scope": "programme",
+              "note": "Whole A1 Lugoj–Deva lot 1 design-and-build contract: 27.4 km of A1 (Lugoj–Dumbrava) plus the 11.4 km Balinț–Lugoj link road. Not split by section. Excluding VAT."
+            },
+            "date": "2011-05-20",
+            "note": "Contract signed 20 May 2011; covers the whole A1 Lugoj–Deva lot 1, not this link road alone.",
+            "sourceRef": "cnadnr-lugoj-deva-lot-1"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.85,
+          "amount": {
+            "amount": 578.884777,
+            "currency": "RON",
+            "year": 2011,
+            "scope": "programme",
+            "note": "Cohesion Fund share of the whole A1 Lugoj–Deva lot 1 contract. Excluding VAT."
+          },
           "detail": {
-            "en": "Built as part of the EU-financed A1 Lugoj–Deva lot 1 contract",
-            "ro": "Construit în cadrul contractului A1 Lugoj – Deva lotul 1, finanțat de Uniunea Europeană"
+            "en": "Built as part of the A1 Lugoj–Deva lot 1 contract, co-financed from the EU Cohesion Fund under POS Transport",
+            "ro": "Construit în cadrul contractului A1 Lugoj – Deva lotul 1, cofinanțat din Fondul de Coeziune al UE prin POS Transport"
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 102.156137,
+            "currency": "RON",
+            "year": 2011,
+            "scope": "programme",
+            "note": "State budget share of the whole A1 Lugoj–Deva lot 1 contract. Excluding VAT."
+          },
+          "detail": {
+            "en": "State budget share of the A1 Lugoj–Deva lot 1 contract",
+            "ro": "Cota de la bugetul de stat a contractului A1 Lugoj – Deva lotul 1"
           }
         }
       ],
@@ -50,11 +90,25 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 4,
+        "executionMonths": 18,
+        "guaranteeMonths": 48,
+        "value": {
+          "amount": 681.040914,
+          "currency": "RON",
+          "year": 2011,
+          "scope": "programme",
+          "note": "Whole A1 Lugoj–Deva lot 1 design-and-build contract: 27.4 km of A1 (Lugoj–Dumbrava) plus the 11.4 km Balinț–Lugoj link road. Not split by section. Excluding VAT."
+        }
+      },
       "note": {
-        "en": "Built under the EU-financed A1 Lugoj–Deva lot 1 contract (Tirrena Scavi–Condotte–Cossi JV, awarded May 2011)"
+        "en": "Built under the EU-financed A1 Lugoj–Deva lot 1 contract (Tirrena Scavi–Condotte–Cossi JV, signed 20 May 2011), which also covers 27.4 km of A1 between Lugoj and Dumbrava. The contract value is for the whole lot 1. The wider project was valued at 868.2 million lei excluding VAT, per CNADNR. Contract durations converted from days: 120 days design, 540 days works, 1,460 days guarantee.",
+        "ro": "Construit în cadrul contractului A1 Lugoj – Deva lotul 1, finanțat de UE (asocierea Tirrena Scavi–Condotte–Cossi, semnat la 20 mai 2011), care acoperă și 27,4 km de A1 între Lugoj și Dumbrava. Valoarea contractului este pentru întregul lot 1. Proiectul în ansamblu a fost evaluat la 868,2 milioane lei fără TVA, potrivit CNADNR. Duratele contractuale sunt convertite din zile: 120 de zile proiectare, 540 de zile execuție, 1.460 de zile garanție."
       },
       "sourceRefs": [
-        "wikipedia-a1-motorway-romania"
+        "wikipedia-a1-motorway-romania",
+        "cnadnr-lugoj-deva-lot-1"
       ],
       "geometryRef": "balint-lugoj"
     },
@@ -101,6 +155,13 @@
       "id": "wikipedia-ro-autostrada-a6-rom-nia",
       "title": "Wikipedia (ro): Autostrada A6 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A6_(Rom%C3%A2nia)"
+    },
+    {
+      "id": "cnadnr-lugoj-deva-lot-1",
+      "title": "CNADNR: Constructia Autostrazii LUGOJ-DEVA, sectorul Lugoj - Dumbrava km 0+000 – km 27+472 si Drumul de legatura in lungime de 11,4 km",
+      "url": "http://cnadnr.ro/pagina.php?idg=155",
+      "archiveUrl": "https://web.archive.org/web/20121006165729/http://cnadnr.ro/pagina.php?idg=155",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

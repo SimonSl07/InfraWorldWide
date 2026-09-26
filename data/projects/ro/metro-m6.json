@@ -42,31 +42,65 @@
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2023-12",
+        "tenderAwarded": "2022-03-08",
+        "constructionStart": "2023-12-15",
         "expectedOpening": "2027"
       },
       "lengthKm": 6.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1200.85,
+              "currency": "RON",
+              "year": 2022,
+              "scope": "works",
+              "note": "Design and execution of the resistance structure (structură de rezistență) only. Excluding VAT."
+            },
+            "date": "2022-03-08",
+            "note": "Contract signed by Metrorex for Lot 1.1: 1 Mai – Tokyo.",
+            "sourceRef": "clubferoviar-m6-lot-1-1"
+          }
+        ]
+      },
       "funding": [
         {
-          "source": "EU"
+          "source": "EU",
+          "detail": {
+            "en": "Large Infrastructure Operational Programme (POIM)",
+            "ro": "Programul Operațional Infrastructură Mare (POIM)"
+          }
         },
         {
           "source": "national_budget"
-        },
-        {
-          "source": "loan",
-          "programme": "jica-loan",
-          "detail": {
-            "en": "JICA (Japan International Cooperation Agency) loan",
-            "ro": "Împrumut JICA (Agenția Japoneză de Cooperare Internațională)"
-          }
         }
       ],
+      "contractors": [
+        {
+          "name": "Alsim Alarko Sanayi Tesisleri ve Ticaret A.S. – Makyol Insaat Sanayi Turizm ve Ticaret A.S. (structural works)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 48,
+        "value": {
+          "amount": 1200.85,
+          "currency": "RON",
+          "year": 2022,
+          "scope": "works",
+          "note": "Design and execution of the resistance structure (structură de rezistență) only. Excluding VAT."
+        }
+      },
       "note": {
         "en": "Six new stations (Pajura, Expoziției, Piața Montreal, Gara Băneasa, Aeroportul Băneasa and others) on the 6.6 km between 1 Mai and Tokyo; works started December 2023, expected in service 2027. Total M6 cost estimated at €1.2 billion"
       },
       "sourceRefs": [
-        "wikipedia-bucharest-metro-line-m6"
+        "wikipedia-bucharest-metro-line-m6",
+        "evz-m6-lot-1-1-signing",
+        "clubferoviar-m6-lot-1-1",
+        "metrorex-m6-construction-start-2023",
+        "metrorex-poim-m6"
       ],
       "geometryRef": "phase2-1mai-tokyo"
     },
@@ -78,14 +112,29 @@
       },
       "status": "under_construction",
       "dates": {
+        "tenderAwarded": "2023-05-02",
         "constructionStart": "2025-03",
         "expectedOpening": "2028"
       },
       "lengthKm": 7.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1278.415,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Design and execution of the resistance structure (structură de rezistență) only. Excluding VAT."
+            },
+            "date": "2023-05-02",
+            "note": "Contract signed by Metrorex for Lot 1.2: Tokyo – Aeroport Otopeni.",
+            "sourceRef": "metrorex-m6-lot-1-2-signing"
+          }
+        ]
+      },
       "funding": [
-        {
-          "source": "EU"
-        },
         {
           "source": "national_budget"
         },
@@ -93,16 +142,34 @@
           "source": "loan",
           "programme": "jica-loan",
           "detail": {
-            "en": "JICA (Japan International Cooperation Agency) loan",
-            "ro": "Împrumut JICA (Agenția Japoneză de Cooperare Internațională)"
+            "en": "JICA (Japan International Cooperation Agency) loan, agreement ROM-P5",
+            "ro": "Împrumut JICA (Agenția Japoneză de Cooperare Internațională), acordul ROM-P5"
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş. – Somet S.A. (structural works)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 48,
+        "value": {
+          "amount": 1278.415,
+          "currency": "RON",
+          "year": 2023,
+          "scope": "works",
+          "note": "Design and execution of the resistance structure (structură de rezistență) only. Excluding VAT."
+        }
+      },
       "note": {
         "en": "Six stations over 7.6 km from Tokyo to the airport terminal; works started March 2025, the whole line expected to be completed by 2028"
       },
       "sourceRefs": [
-        "wikipedia-bucharest-metro-line-m6"
+        "wikipedia-bucharest-metro-line-m6",
+        "metrorex-m6-lot-1-2-signing",
+        "profit-m6-jica-loan-2032"
       ],
       "geometryRef": "phase3-tokyo-airport"
     }
@@ -112,6 +179,46 @@
       "id": "wikipedia-bucharest-metro-line-m6",
       "title": "Wikipedia: Bucharest Metro Line M6",
       "url": "https://en.wikipedia.org/wiki/Bucharest_Metro_Line_M6"
+    },
+    {
+      "id": "evz-m6-lot-1-1-signing",
+      "title": "Evenimentul Zilei: Metrorex a semnat contractul de peste un miliard de lei pentru M6 (8 martie 2022)",
+      "url": "https://evz.ro/unda-verde-pentru-linia-de-metrou-spre-aeroportul-henri-coanda-metrorex-a-semnat-contractul-de-peste-un-miliard-de-lei.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "clubferoviar-m6-lot-1-1",
+      "title": "Club Feroviar: Metroul de Otopeni, doi ani de la semnarea contractului la eliberarea autorizației de construire (13 decembrie 2023)",
+      "url": "https://clubferoviar.ro/metroul-de-otopeni-doi-ani-de-la-semnarea-contractului-la-eliberarea-autorizatiei-de-construire/",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20250821014640/https://clubferoviar.ro/metroul-de-otopeni-doi-ani-de-la-semnarea-contractului-la-eliberarea-autorizatiei-de-construire/"
+    },
+    {
+      "id": "metrorex-m6-construction-start-2023",
+      "title": "Metrorex: S-a dat startul construirii Magistralei 6 de metrou (15 decembrie 2023)",
+      "url": "http://www.metrorex.ro/Resurse/Evenimente/15%20decembrie%202023%20-Startul%20Magistralei%206%20de%20metrou.pdf",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/2024/http://www.metrorex.ro/Resurse/Evenimente/15%20decembrie%202023%20-Startul%20Magistralei%206%20de%20metrou.pdf"
+    },
+    {
+      "id": "metrorex-poim-m6",
+      "title": "Metrorex: POIM M6 (communiqués list, archived 2026)",
+      "url": "https://www.metrorex.ro/poim-m6",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/2026/https://www.metrorex.ro/poim-m6"
+    },
+    {
+      "id": "metrorex-m6-lot-1-2-signing",
+      "title": "Metrorex: Semnarea contractului M6 Lotul 1.2: Tokyo – Aeroport Otopeni (2 mai 2023)",
+      "url": "http://www.metrorex.ro/Resurse/Evenimente/2%20mai%20%202023%20-Semnarea%20Contractului%20M6%20Lot%201.2.pdf",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20231217211355/http://www.metrorex.ro/Resurse/Evenimente/2%20mai%20%202023%20-Semnarea%20Contractului%20M6%20Lot%201.2.pdf"
+    },
+    {
+      "id": "profit-m6-jica-loan-2032",
+      "title": "Profit.ro: Guvernul extinde până în 2032 acordul de împrumut JICA pentru M6 (21 ianuarie 2022)",
+      "url": "https://www.profit.ro/insider/guvernul-extinde-pana-2032-acord-imprumut-japonia-magistrala-metrou-m6-statiile-tokyo-aeroport-henri-coanda-cheltuit-11-ani-8-5-milioane-euro-consultanta-20563253",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

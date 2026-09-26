@@ -17,6 +17,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2016-06-20",
         "constructionStart": "2017-05",
         "opened": "2019-12"
       },
@@ -50,6 +51,9 @@
           "role": "builder"
         }
       ],
+      "sourceRefs": [
+        "mgsi-surcin-obrenovac"
+      ],
       "geometryRef": "surcin-obrenovac"
     },
     {
@@ -65,14 +69,27 @@
       "lengthKm": 26.23,
       "cost": {
         "estimated": {
-          "amount": 73,
-          "currency": "EUR",
-          "year": 2014
+          "amount": 333.74754,
+          "currency": "USD",
+          "scope": "programme",
+          "note": "Ministry's estimated value for Obrenovac – Ub and Lajkovac – Ljig together, built under one commercial contract."
         }
       },
       "funding": [
         {
-          "source": "national_budget"
+          "source": "loan",
+          "detail": {
+            "en": "Export–Import Bank of China loan, USD 301 million, for Obrenovac – Ub and Lajkovac – Ljig together. 20 years including 5 years' grace, 2.5% fixed.",
+            "ro": "Împrumut de la Export–Import Bank of China, 301 milioane USD, pentru Obrenovac – Ub și Lajkovac – Ljig împreună. 20 de ani, inclusiv 5 ani de grație, dobândă fixă de 2,5%."
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.1,
+          "detail": {
+            "en": "Republic of Serbia, 10% participation.",
+            "ro": "Republica Serbia, participare de 10%."
+          }
         }
       ],
       "contractors": [
@@ -80,6 +97,10 @@
           "name": "Shandong Hi-Speed Group Co., Ltd.",
           "role": "builder"
         }
+      ],
+      "sourceRefs": [
+        "mgsi-obrenovac-ub-lajkovac-ljig",
+        "alo-kinezi-koridor-11"
       ],
       "geometryRef": "obrenovac-ub"
     },
@@ -90,9 +111,42 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2014"
+        "constructionStart": "2010-07-29",
+        "opened": "2019-08-18"
       },
       "lengthKm": 12.49,
+      "funding": [
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 73,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "Republic of Serbia budget, EUR 73 million.",
+            "ro": "Bugetul Republicii Serbia, 73 de milioane de euro."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Putevi Užice a.d.",
+          "role": "builder"
+        },
+        {
+          "name": "GP Planum a.d.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Preparatory works officially started on 29 July 2010. Main works were held up by unfinished expropriation (B92, October 2010). Works finished on 30 November 2014; the section opened to traffic on 18 August 2019 with the rest of the motorway.",
+        "ro": "Lucrările pregătitoare au început oficial pe 29 iulie 2010. Lucrările principale au fost întârziate de exproprieri nefinalizate (B92, octombrie 2010). Lucrările s-au încheiat pe 30 noiembrie 2014; secțiunea a fost deschisă circulației pe 18 august 2019, odată cu restul autostrăzii."
+      },
+      "sourceRefs": [
+        "autozona-ub-lajkovac",
+        "b92-ub-lajkovac-eksproprijacija",
+        "koridori-beograd-juzni-jadran"
+      ],
       "geometryRef": "ub-lajkovac"
     },
     {
@@ -102,9 +156,52 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2016"
+        "tenderAwarded": "2013-05",
+        "constructionStart": "2013-12-24",
+        "opened": "2019-08-18"
       },
       "lengthKm": 23.98,
+      "cost": {
+        "estimated": {
+          "amount": 333.74754,
+          "currency": "USD",
+          "scope": "programme",
+          "note": "Ministry's estimated value for Obrenovac – Ub and Lajkovac – Ljig together, built under one commercial contract. Alo! (December 2013) says the total includes Serbia's 10% share."
+        }
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Export–Import Bank of China loan, USD 301 million, for Obrenovac – Ub and Lajkovac – Ljig together. 20 years including 5 years' grace, 2.5% fixed.",
+            "ro": "Împrumut de la Export–Import Bank of China, 301 milioane USD, pentru Obrenovac – Ub și Lajkovac – Ljig împreună. 20 de ani, inclusiv 5 ani de grație, dobândă fixă de 2,5%."
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.1,
+          "detail": {
+            "en": "Republic of Serbia, 10% participation.",
+            "ro": "Republica Serbia, participare de 10%."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Shandong Hi-Speed Group Co., Ltd.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Commercial contract for the Obrenovac – Ljig sector signed in May 2013: 10 May per AutoZona, 13 May per the ministry, whose page prints the year as 2023. Preparatory works for the sector were officially started on 24 December 2013 at Dići, near Ljig.",
+        "ro": "Contractul comercial pentru sectorul Obrenovac – Ljig a fost semnat în mai 2013: pe 10 mai potrivit AutoZona, pe 13 mai potrivit ministerului, a cărui pagină indică anul 2023. Lucrările pregătitoare pentru sector au început oficial pe 24 decembrie 2013 la Dići, lângă Ljig."
+      },
+      "sourceRefs": [
+        "alo-kinezi-koridor-11",
+        "mgsi-obrenovac-ub-lajkovac-ljig",
+        "autozona-lajkovac-ljig",
+        "koridori-beograd-juzni-jadran"
+      ],
       "geometryRef": "lajkovac-ljig"
     },
     {
@@ -114,9 +211,42 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "2012-04-20",
         "opened": "2016"
       },
       "lengthKm": 40.3,
+      "cost": {
+        "estimated": {
+          "amount": 308,
+          "currency": "EUR",
+          "note": "Ministry's estimated investment value. Koridori Srbije gives the same figure as the value of works. It equals the Azerbaijani loan."
+        }
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "amount": {
+            "amount": 308,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "Government of Azerbaijan loan, EUR 308 million, 4% fixed, 15 years with 3 years' grace.",
+            "ro": "Împrumut al Guvernului Azerbaidjanului, 308 milioane de euro, dobândă fixă 4%, 15 ani cu 3 ani de grație."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "AzVirt",
+          "role": "builder"
+        }
+      ],
+      "sourceRefs": [
+        "autozona-ljig-preljina",
+        "mgsi-ljig-preljina",
+        "koridori-beograd-juzni-jadran",
+        "b92-azerbaijan-loan"
+      ],
       "geometryRef": "ljig-preljina"
     }
   ],
@@ -126,6 +256,7 @@
       "url": "https://putevi-srbije.rs/index.php/sr/korporativne-vesti/arhiva-korporativnih-vesti-2019/19-08-19-autoput-milos-veliki-pusten-u-saobracaj"
     },
     {
+      "id": "mgsi-surcin-obrenovac",
       "title": "Ministry of Construction, Transport and Infrastructure: Construction of E-763 highway, Surčin–Obrenovac section",
       "url": "https://www.mgsi.gov.rs/en/projekti/construction-e-763-highway-section-surcin-obrenovac"
     },
@@ -140,6 +271,63 @@
     {
       "title": "OpenStreetMap contributors: route geometry (ODbL)",
       "url": "https://www.openstreetmap.org/"
+    },
+    {
+      "id": "koridori-beograd-juzni-jadran",
+      "title": "Koridori Srbije: Beograd – Južni Jadran",
+      "url": "https://koridorisrbije.rs/beograd-juzni-jadran",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mgsi-obrenovac-ub-lajkovac-ljig",
+      "title": "MGSI: Izgradnja autoputa E-763, deonica: Obrenovac-Ub i Lajkovac-Ljig (2025-06-27)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-autoputa-e-763-deonica-obrenovac-ub-i-lajkovac-ljig",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "alo-kinezi-koridor-11",
+      "title": "Alo!: Kinezi se uključuju u gradnju Koridora 11 (2013-12-24)",
+      "url": "http://arhiva.alo.rs/vesti/aktuelno/kinezi-se-ukljucuju-u-gradnju-koridora-11/41232",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "autozona-ub-lajkovac",
+      "title": "AutoZona.rs: Ub - Lajkovac (Koridor 11 deonice)",
+      "url": "http://autozona.rs/koridor-11/deonice/ub-lajkovac",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20180203114951/http://autozona.rs:80/koridor-11/deonice/ub-lajkovac"
+    },
+    {
+      "id": "b92-ub-lajkovac-eksproprijacija",
+      "title": "B92: Ub-Lajkovac čeka eksproprijaciju (2010-10-22)",
+      "url": "http://www.b92.net/biz/vesti/srbija.php?yyyy=2010&mm=10&dd=22&nav_id=467120",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "autozona-lajkovac-ljig",
+      "title": "AutoZona.rs: Lajkovac - Ljig autoput",
+      "url": "http://autozona.rs/koridor-11/deonice/lajkovac-ljig",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20180808171853/http://autozona.rs/koridor-11/deonice/lajkovac-ljig"
+    },
+    {
+      "id": "autozona-ljig-preljina",
+      "title": "AutoZona.rs: Ljig - Preljina",
+      "url": "http://autozona.rs/koridor-11/deonice/ljig-preljina",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20170917104643/http://autozona.rs:80/koridor-11/deonice/ljig-preljina"
+    },
+    {
+      "id": "mgsi-ljig-preljina",
+      "title": "MGSI: Izgradnja autoputa E-763, deonica: Ljig-Preljina (2025-06-27)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-autoputa-e-763-deonica-ljig-preljina",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "b92-azerbaijan-loan",
+      "title": "B92: Azerbejdžan nam daje 308 mil. evra (2012-04-06)",
+      "url": "http://www.b92.net/biz/vesti/srbija.php?yyyy=2012&mm=04&dd=06&nav_id=598231",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

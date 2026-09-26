@@ -6,7 +6,7 @@
     "en": "Belgrade – Novi Sad – Subotica High-Speed Railway"
   },
   "description": {
-    "en": "Reconstruction of the Belgrade–Subotica–Kelebija line for 200 km/h operation, the Serbian half of the Belgrade–Budapest corridor. Belgrade Centre–Novi Sad opened in March 2022 and the remainder to Subotica in October 2025. The Belgrade Centre–Stara Pazova leg runs on Serbian mainline 101 and the rest on mainline 105. The Chinese-financed legs were contracted in US dollars; the published estimate for Novi Sad–Subotica carries no price year, so it is omitted rather than assigned one. No cost is recorded for Stara Pazova–Novi Sad either: the only figure found for it, EUR 91.9 million, is implausibly low for a 40 km section carrying the Čortanovci tunnel and the Danube viaduct, and could not be corroborated. Mapped geometry for the northern lot stops at Subotica station rather than the Kelebija border."
+    "en": "Reconstruction of the Belgrade–Subotica–Kelebija line for 200 km/h operation, the Serbian half of the Belgrade–Budapest corridor. Belgrade Centre–Novi Sad opened in March 2022 and the remainder to Subotica in October 2025. The Belgrade Centre–Stara Pazova leg runs on Serbian mainline 101 and the rest on mainline 105. The Chinese-financed legs were contracted in US dollars; the Novi Sad–Subotica commercial contract (USD 1,162.81 million) is recorded at its July 2018 signing year. No cost is recorded for Stara Pazova–Novi Sad: the only figure found for it, EUR 91.9 million, is implausibly low for a 40 km section carrying the Čortanovci tunnel and the Danube viaduct, and could not be corroborated. Mapped geometry for the northern lot stops at Subotica station rather than the Kelebija border."
   },
   "lots": [
     {
@@ -78,7 +78,8 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2018-03",
+        "tenderAwarded": "2016-07-15",
+        "constructionStart": "2017-09",
         "opened": "2022-03"
       },
       "lengthKm": 40.4,
@@ -107,6 +108,13 @@
           "role": "designer"
         }
       ],
+      "note": {
+        "en": "Contracted with RZD International in annexes: Annex 3.1 (tunnel of about 1.2 km and viaduct of about 3 km) signed 15 July 2016, works from September 2017; Annex 3.2 (double track) signed 21 November 2017, works from 16 March 2018; a contract covering electrical and signalling equipment signed January 2019.",
+        "ro": "Contractat cu RZD International prin anexe: Anexa 3.1 (un tunel de circa 1,2 km și un viaduct de circa 3 km) semnată la 15 iulie 2016, lucrări din septembrie 2017; Anexa 3.2 (cale dublă) semnată la 21 noiembrie 2017, lucrări din 16 martie 2018; un contract care include echipamentele de electrificare și semnalizare semnat în ianuarie 2019."
+      },
+      "sourceRefs": [
+        "mgsi-gov-rs"
+      ],
       "geometryRef": "stara-pazova-novi-sad"
     },
     {
@@ -116,10 +124,26 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2018-07",
         "constructionStart": "2022-07",
         "opened": "2025-10"
       },
       "lengthKm": 108.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1162.81,
+              "currency": "USD",
+              "year": 2018,
+              "note": "Commercial (design-build) contract total; VAT not stated."
+            },
+            "date": "2018-07",
+            "sourceRef": "mgsi-gov-rs"
+          }
+        ]
+      },
       "profile": {
         "works": "reconstruction",
         "maxSpeedKmh": 200
@@ -149,13 +173,32 @@
           "role": "designer"
         }
       ],
+      "contract": {
+        "executionMonths": 33,
+        "value": {
+          "amount": 1162.81,
+          "currency": "USD",
+          "year": 2018,
+          "note": "Commercial (design-build) contract total; VAT not stated."
+        }
+      },
+      "note": {
+        "en": "The 33-month works term was set in the September 2019 Investment Plan, counted from the contractor's introduction to works, then expected at the end of 2019. Works began in July 2022. The Export–Import Bank of China loan, signed on 25 April 2019, is USD 988.39 million (85% of the contract).",
+        "ro": "Termenul de execuție de 33 de luni, stabilit în Planul de investiții din septembrie 2019, se calcula de la predarea amplasamentului către antreprenor, estimată atunci la sfârșitul lui 2019. Lucrările au început în iulie 2022. Împrumutul Export–Import Bank of China, semnat la 25 aprilie 2019, este de 988,39 milioane USD (85% din contract)."
+      },
+      "sourceRefs": [
+        "mgsi-gov-rs",
+        "mgsi-hu-rs-railway"
+      ],
       "geometryRef": "novi-sad-subotica"
     }
   ],
   "sources": [
     {
+      "id": "mgsi-hu-rs-railway",
       "title": "Ministry of Construction, Transport and Infrastructure: Hungarian–Serbian railway: reconstruction and modernisation, Belgrade–Novi Sad",
-      "url": "https://www.mgsi.gov.rs/en/projekti/hungarian-serbian-railways-project-reconstruction-and-modernization-belgrade-novi-sad"
+      "url": "https://www.mgsi.gov.rs/en/projekti/hungarian-serbian-railways-project-reconstruction-and-modernization-belgrade-novi-sad",
+      "retrievedOn": "2026-09-25"
     },
     {
       "id": "mgsi-gov-rs",

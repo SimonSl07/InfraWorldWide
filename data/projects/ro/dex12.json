@@ -40,6 +40,10 @@
         {
           "name": "Tirrena Scavi (contract cancelled 21 December 2022 at 58.26% progress)",
           "role": "builder"
+        },
+        {
+          "name": "Ozaltin Insaat – Strade Bauunternehmung – Visio Construction Works (completion contract)",
+          "role": "builder"
         }
       ],
       "contract": {
@@ -51,11 +55,14 @@
         "executionMonths": 24
       },
       "note": {
-        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021"
+        "en": "Section of the Craiova–Pitești expressway (nicknamed \"Autostrada Ford\"); total route estimated at €1.66bn. Sections 1–2 awarded October 2018, sections 3–4 signed September 2020 / August 2021. After Tirrena Scavi's contract was terminated in December 2022, CNAIR awarded the remaining works to Ozaltin – Strade – Visio for 439.29 million lei, 18 months of works, start order issued September 2023.",
+        "ro": "Tronson al drumului expres Craiova–Pitești (supranumit „Autostrada Ford”); costul total al traseului este estimat la 1,66 miliarde €. Tronsoanele 1–2 au fost atribuite în octombrie 2018, tronsoanele 3–4 semnate în septembrie 2020 / august 2021. După rezilierea contractului Tirrena Scavi în decembrie 2022, CNAIR a atribuit lucrările rămase asocierii Ozaltin – Strade – Visio pentru 439,29 milioane lei, cu 18 luni de execuție și ordin de începere emis în septembrie 2023."
       },
       "sourceRefs": [
         "hotnews-ro-bals-slatina",
-        "wikipedia-dex12-expressway"
+        "wikipedia-dex12-expressway",
+        "economica-net-craiova-robanesti",
+        "hotnews-ro-dex12-ozaltin"
       ],
       "geometryRef": "craiova-bals"
     },
@@ -291,6 +298,12 @@
       "geometryRef": "albota-pitesti"
     }
   ],
+  "cost": {
+    "amount": 3100,
+    "currency": "RON",
+    "scope": "programme",
+    "note": "Construction cost of the whole 121 km route, excluding VAT, per CNAIR director general Cristian Pistol at the final opening, July 2025. Funded from non-reimbursable EU funds (POIM and Programul Transport). Not broken out per lot."
+  },
   "sources": [
     {
       "id": "wikipedia-dex12-expressway",
@@ -315,6 +328,24 @@
       "id": "economica-net-slatina-colonesti",
       "title": "economica.net",
       "url": "https://www.economica.net/autostrada-ford-cnair-a-relansat-la-licitatie-tronsonul-3-din-drumul-expres-craiova-pitesti-pentru-999-milioane-de-lei_174461.html"
+    },
+    {
+      "id": "economica-net-dex12-final-opening",
+      "title": "Economica.net: „Autostrada Ford” – DEx12: A fost deschisă circulația pe ultimii kilometri ai Drumului Expres Craiova – Pitești (31 July 2025)",
+      "url": "https://www.economica.net/video-autostrada-ford-dex12-a-fost-deschisa-circulatia-pe-ultimii-kilometri-ai-drumului-expres-craiova-pitesti_859874.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-net-craiova-robanesti",
+      "title": "Economica.net: Autostrada Ford DEx12, Tronsonul 1 Craiova – Robănești",
+      "url": "https://www.economica.net/autostrada-ford-dex12-3_791265.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-ro-dex12-ozaltin",
+      "title": "HotNews.ro: Se deschide circulația pe Drumul Expres 12: Încă un lot construit de UMB, gata de inaugurare (17 December 2023)",
+      "url": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-26758079-video-deschide-circulatia-drumul-expres-12-inca-lot-construit-umb-gata-inaugurare-cum-arata.htm",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

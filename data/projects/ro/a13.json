@@ -7,8 +7,8 @@
     "ro": "Autostrada A13 (Autostrada Carpatica)"
   },
   "description": {
-    "en": "Planned 281 km motorway across the Eastern Carpathians linking the A1 at Boița (Sibiu) with the A7 Moldavia Motorway at Răcăciuni (Bacău), via Făgăraș, Brașov, Sfântu Gheorghe, Târgu Secuiesc and the Oituz pass. The project is split into three sections: the 68 km Boița–Făgăraș section is under construction on all four lots, contracted in 2023–2024 to the Turkish builder Makyol; the 46 km Făgăraș–Brașov and the 162 km Brașov–Bacău sections are still in feasibility-study and design stage. Originally numbered A5, it was renamed A13 after being merged with the Sibiu–Făgăraș–Brașov project. After a 2025 route revision around the Hărman military testing range, roughly 12 km of tunnels are proposed on the mountain section.",
-    "ro": "Autostradă planificată de 281 km peste Carpații Orientali, care va lega A1 la Boița (Sibiu) de Autostrada Moldovei A7 la Răcăciuni (Bacău), prin Făgăraș, Brașov, Sfântu Gheorghe, Târgu Secuiesc și Pasul Oituz. Proiectul este împărțit în trei tronsoane: tronsonul Boița–Făgăraș, de 68 km, este în execuție pe toate cele patru loturi, contractate în 2023–2024 cu antreprenorul turc Makyol; tronsoanele Făgăraș–Brașov (46 km) și Brașov–Bacău (162 km) sunt în faza de studiu de fezabilitate și proiectare. Inițial numerotată A5, a primit denumirea A13 după fuziunea cu proiectul Sibiu–Făgăraș–Brașov. După revizuirea traseului din 2025 în jurul poligonului militar de la Hărman, pe tronsonul montan sunt propuși circa 12 km de tuneluri."
+    "en": "Planned 281 km motorway across the Eastern Carpathians linking the A1 at Boița (Sibiu) with the A7 Moldavia Motorway at Răcăciuni (Bacău), via Făgăraș, Brașov, Sfântu Gheorghe, Târgu Secuiesc and the Oituz pass. The project is split into three sections: the 68 km Boița–Făgăraș section is under construction on all four lots, contracted in 2023 to the Turkish builder Makyol; the 46 km Făgăraș–Brașov and the 162 km Brașov–Bacău sections are still in feasibility-study and design stage. Originally numbered A5, it was renamed A13 after being merged with the Sibiu–Făgăraș–Brașov project. After a 2025 route revision around the Hărman military testing range, roughly 12 km of tunnels are proposed on the mountain section.",
+    "ro": "Autostradă planificată de 281 km peste Carpații Orientali, care va lega A1 la Boița (Sibiu) de Autostrada Moldovei A7 la Răcăciuni (Bacău), prin Făgăraș, Brașov, Sfântu Gheorghe, Târgu Secuiesc și Pasul Oituz. Proiectul este împărțit în trei tronsoane: tronsonul Boița–Făgăraș, de 68 km, este în execuție pe toate cele patru loturi, contractate în 2023 cu antreprenorul turc Makyol; tronsoanele Făgăraș–Brașov (46 km) și Brașov–Bacău (162 km) sunt în faza de studiu de fezabilitate și proiectare. Inițial numerotată A5, a primit denumirea A13 după fuziunea cu proiectul Sibiu–Făgăraș–Brașov. După revizuirea traseului din 2025 în jurul poligonului militar de la Hărman, pe tronsonul montan sunt propuși circa 12 km de tuneluri."
   },
   "corridors": [
     "ten-t-core"
@@ -21,7 +21,29 @@
         "ro": "Lotul 1: Boița – Avrig – Mârșa"
       },
       "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-11-24",
+        "constructionStart": "2025-11-17",
+        "expectedOpening": "2028-11-16"
+      },
       "lengthKm": 14.25,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1890,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2023-11-24",
+            "note": "Design-and-build contract signed with Makyol.",
+            "sourceRef": "economica-a13-lots12-signing"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -36,15 +58,32 @@
       ],
       "contractors": [
         {
-          "name": "Makyol Insaat Sanayi ve Ticaret A.S.",
+          "name": "Makyol Insaat Sanayi Turizm ve Ticaret A.S.",
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 36,
+        "totalMonths": 48,
+        "value": {
+          "amount": 1890,
+          "currency": "RON",
+          "year": 2023,
+          "scope": "works",
+          "note": "Excluding VAT. Design-and-build contract value."
+        }
+      },
       "note": {
-        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023–2024 after the feasibility study (December 2021) and technical design (January 2022) were approved"
+        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023 after the feasibility study (December 2021) and technical design (January 2022) were approved",
+        "ro": "Contract de proiectare și execuție cu Makyol; cele patru loturi Boița–Făgăraș au fost semnate în 2023, după aprobarea studiului de fezabilitate (decembrie 2021) și a proiectului tehnic (ianuarie 2022)"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a13-rom-nia"
+        "wikipedia-ro-autostrada-a13-rom-nia",
+        "economica-a13-lots12-signing",
+        "economica-a13-lot1-minister",
+        "economedia-a13-api-progress",
+        "economica-a13-lot4-permit"
       ],
       "geometryRef": "lot1-boita-marsa"
     },
@@ -55,7 +94,28 @@
         "ro": "Lotul 2: Mârșa – Arpașu de Jos"
       },
       "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-11-24",
+        "constructionStart": "2025-05-07"
+      },
       "lengthKm": 19.92,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1540,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2023-11-24",
+            "note": "Design-and-build contract signed with Makyol.",
+            "sourceRef": "economica-a13-lots12-signing"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -70,15 +130,32 @@
       ],
       "contractors": [
         {
-          "name": "Makyol Insaat Sanayi ve Ticaret A.S.",
+          "name": "Makyol Insaat Sanayi Turizm ve Ticaret A.S.",
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 36,
+        "totalMonths": 48,
+        "value": {
+          "amount": 1540,
+          "currency": "RON",
+          "year": 2023,
+          "scope": "works",
+          "note": "Excluding VAT. Design-and-build contract value at signing. Later ministry summaries round it to 1.55 billion lei."
+        }
+      },
       "note": {
-        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023–2024"
+        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023. Asociația Pro Infrastructură reads the contractual completion deadline as July 2028 (Economedia, 23 September 2026); no official opening date has been announced.",
+        "ro": "Contract de proiectare și execuție cu Makyol; cele patru loturi Boița–Făgăraș au fost semnate în 2023. Asociația Pro Infrastructură estimează termenul contractual de finalizare în iulie 2028 (Economedia, 23 septembrie 2026); nu a fost anunțată o dată oficială de deschidere."
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a13-rom-nia"
+        "wikipedia-ro-autostrada-a13-rom-nia",
+        "economica-a13-lots12-signing",
+        "sibiuindependent-a13-lot2",
+        "economedia-a13-api-progress",
+        "economica-a13-lot4-permit"
       ],
       "geometryRef": "lot2-marsa-arpasu"
     },
@@ -90,9 +167,28 @@
       },
       "status": "under_construction",
       "dates": {
-        "tenderAwarded": "2023-09-20"
+        "tenderAwarded": "2023-08-16",
+        "constructionStart": "2024-12-02",
+        "expectedOpening": "2028-05-02"
       },
       "lengthKm": 17.61,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1770,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2023-08-16",
+            "note": "Design-and-build contract signed with Makyol.",
+            "sourceRef": "bizbrasov-a13-lot3-permit"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -107,18 +203,32 @@
       ],
       "contractors": [
         {
-          "name": "Makyol Insaat Sanayi ve Ticaret A.S.",
+          "name": "Makyol Insaat Sanayi Turizm ve Ticaret A.S.",
           "role": "builder"
         }
       ],
       "contract": {
-        "totalMonths": 48
+        "designMonths": 12,
+        "executionMonths": 36,
+        "totalMonths": 48,
+        "value": {
+          "amount": 1770,
+          "currency": "RON",
+          "year": 2023,
+          "scope": "works",
+          "note": "Excluding VAT. Design-and-build contract value."
+        }
       },
       "note": {
-        "en": "Design-and-build contract signed with Makyol on 20 September 2023, 48 months total duration"
+        "en": "Design-and-build contract signed with Makyol on 16 August 2023, 48 months total duration (12 design, 36 execution)",
+        "ro": "Contract de proiectare și execuție semnat cu Makyol pe 16 august 2023, durată totală de 48 de luni (12 proiectare, 36 execuție)"
       },
       "sourceRefs": [
-        "wikipedia-a13-motorway-romania"
+        "wikipedia-a13-motorway-romania",
+        "bizbrasov-a13-lot3-permit",
+        "economedia-a13-lot3-signing",
+        "economedia-a13-lot3-progress",
+        "economica-a13-lot4-permit"
       ],
       "geometryRef": "lot3-arpasu-sambata"
     },
@@ -130,9 +240,27 @@
       },
       "status": "under_construction",
       "dates": {
-        "tenderAwarded": "2023-05-05"
+        "tenderAwarded": "2023-05-05",
+        "constructionStart": "2025-07"
       },
       "lengthKm": 16.26,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1190,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT. Includes the 5.6 km link road to DN1."
+            },
+            "date": "2023-05-05",
+            "note": "Design-and-build contract awarded to the Makyol – Yapı Merkezi joint venture.",
+            "sourceRef": "bunaziuafagaras-a13-lot4-permit"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -147,18 +275,36 @@
       ],
       "contractors": [
         {
-          "name": "Makyol Insaat Sanayi ve Ticaret A.S.",
+          "name": "Makyol Insaat Sanayi Turizm ve Ticaret A.S.",
+          "role": "builder"
+        },
+        {
+          "name": "Yapi Merkezi Insaat ve Sanayi A.S.",
           "role": "builder"
         }
       ],
       "contract": {
-        "totalMonths": 48
+        "executionMonths": 36,
+        "totalMonths": 48,
+        "guaranteeMonths": 60,
+        "value": {
+          "amount": 1190,
+          "currency": "RON",
+          "year": 2023,
+          "scope": "works",
+          "note": "Excluding VAT. Design-and-build contract value, includes the 5.6 km link road to DN1."
+        }
       },
       "note": {
-        "en": "Design-and-build contract signed with Makyol on 5 May 2023, 48 months total duration"
+        "en": "Design-and-build contract awarded on 5 May 2023 and signed on 20 September 2023 with the Makyol – Yapı Merkezi joint venture, 48 months total duration. Asociația Pro Infrastructură reads the contractual completion deadline as September 2028 (Economedia, 23 September 2026); no official opening date has been announced.",
+        "ro": "Contract de proiectare și execuție atribuit pe 5 mai 2023 și semnat pe 20 septembrie 2023 cu asocierea Makyol – Yapı Merkezi, durată totală de 48 de luni. Asociația Pro Infrastructură estimează termenul contractual de finalizare în septembrie 2028 (Economedia, 23 septembrie 2026); nu a fost anunțată o dată oficială de deschidere."
       },
       "sourceRefs": [
-        "wikipedia-a13-motorway-romania"
+        "wikipedia-a13-motorway-romania",
+        "bunaziuafagaras-a13-lot4-permit",
+        "economica-a13-lot4-permit",
+        "agendaconstructiilor-a13-makyol",
+        "economedia-a13-api-progress"
       ],
       "geometryRef": "lot4-sambata-fagaras"
     },
@@ -192,13 +338,38 @@
           }
         ]
       },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Transport Programme 2021–2027 (EU funds)",
+            "ro": "Programul Transport 2021–2027 (fonduri europene)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Ministry of Transport budget",
+            "ro": "Bugetul Ministerului Transporturilor și Infrastructurii"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Search Corporation – Protelco – Like Consulting – Mega Muhendislik Musavirlik (JV)",
+          "role": "designer"
+        }
+      ],
       "note": {
-        "en": "Feasibility study and technical design tendered by CNAIR in 2024 and awarded to Search Corporation; the section will link the Sibiu–Făgăraș motorway to the Brașov metropolitan bypass and the A3. The Government approved the technical-economic indicators on 24 September 2026: 49.75 km, junctions at Codlea South, Codlea North and Șercaia, 36 months of works, funded from the Transport Programme and the state budget. The works tender is the next step"
+        "en": "Feasibility study and technical design contract signed in summer 2021 with the Search Corporation – Protelco – Like Consulting – Mega Muhendislik Musavirlik joint venture, for 18.17 million lei; the section will link the Sibiu–Făgăraș motorway to the Brașov metropolitan bypass and the A3. The Government approved the technical-economic indicators on 24 September 2026: 49.75 km, junctions at Codlea South, Codlea North and Șercaia, 36 months of works, funded from the Transport Programme and the state budget. The works tender is the next step. The Ministry of Transport's target is to start works in 2027 (state secretary Horațiu Cosma); no official opening date has been given",
+        "ro": "Contractul pentru studiul de fezabilitate și proiectul tehnic a fost semnat în vara anului 2021 cu asocierea Search Corporation – Protelco – Like Consulting – Mega Muhendislik Musavirlik, pentru 18,17 milioane de lei; tronsonul va lega autostrada Sibiu–Făgăraș de centura metropolitană a Brașovului și de A3. Guvernul a aprobat indicatorii tehnico-economici pe 24 septembrie 2026: 49,75 km, noduri rutiere la Codlea Sud, Codlea Nord și Șercaia, 36 de luni de execuție, finanțare din Programul Transport și de la bugetul de stat. Următorul pas este licitația pentru lucrări. Obiectivul Ministerului Transporturilor este începerea lucrărilor în 2027 (secretarul de stat Horațiu Cosma); nu a fost comunicată o dată oficială de deschidere."
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a13-rom-nia",
         "monitorulexpres-brasov-fagaras-hg",
-        "economedia-brasov-fagaras-cost"
+        "economedia-brasov-fagaras-cost",
+        "oradesibiu-brasov-fagaras-design",
+        "playtech-brasov-fagaras-hg"
       ],
       "geometryRef": "fagaras-brasov"
     },
@@ -210,11 +381,19 @@
       },
       "status": "planned",
       "lengthKm": 162,
+      "contractors": [
+        {
+          "name": "Consitrans",
+          "role": "designer"
+        }
+      ],
       "note": {
-        "en": "Feasibility study contract signed in 2024 with Consitrans S.R.L. under CNIR; crosses the Eastern Carpathians via the Oituz pass, with geotechnical drilling of over 10,000 linear metres carried out in 2025 and roughly 12 km of tunnels proposed"
+        "en": "Feasibility study contract signed by CNAIR with Consitrans on 21 June 2024 (81 million lei, 24 months from 26 September 2024), later transferred to CNIR; crosses the Eastern Carpathians via the Oituz pass, with geotechnical drilling of over 10,000 linear metres carried out in 2025 and roughly 12 km of tunnels proposed",
+        "ro": "Contractul pentru studiul de fezabilitate a fost semnat de CNAIR cu Consitrans pe 21 iunie 2024 (81 de milioane de lei, 24 de luni de la 26 septembrie 2024) și transferat ulterior la CNIR; traversează Carpații Orientali prin Pasul Oituz, cu foraje geotehnice de peste 10.000 de metri liniari efectuate în 2025 și circa 12 km de tuneluri propuși"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a13-rom-nia"
+        "wikipedia-ro-autostrada-a13-rom-nia",
+        "economedia-a13-consitrans-fs"
       ],
       "geometryRef": "brasov-racaciuni",
       "profile": {
@@ -248,6 +427,84 @@
       "title": "Economedia: Autostrada Brașov – Făgăraș va costa 9,3 miliarde de lei și va avea aproximativ 50 de km (18 September 2026)",
       "url": "https://economedia.ro/proiect-autostada-brasov-fagaras-va-costa-93-miliarde-de-lei-si-va-avea-aproximativ-50-de-km.html",
       "retrievedOn": "2026-09-24"
+    },
+    {
+      "id": "economica-a13-lots12-signing",
+      "title": "Economica.net: Autostrada Sibiu – Făgăraș: Până la finalul anului 2027 trebuie să fie puși în circulație toți cei 68 de kilometri – Grindeanu (24 November 2023)",
+      "url": "https://www.economica.net/autostrada-sibiu-fagaras-pana-la-finalul-anului-2027-trebuie-sa-fie-pusi-in-circulatie-toti-cei-68-de-kilometri-grindeanu_708496.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a13-lot1-minister",
+      "title": "Economica.net: Autostrada A13 Sibiu - Făgăraș: Când vor putea șoferii să circule pe toți cei 68 de kilometri construiți de turcii de la Makyol (28 March 2026)",
+      "url": "https://www.economica.net/autostrada-a13-sibiu-fagaras-20_927113.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "sibiuindependent-a13-lot2",
+      "title": "Sibiu Independent: Autostrada A13: Lotul 2 ajuns la 19.5%, termen 2028 (28 March 2026)",
+      "url": "https://sibiuindependent.ro/2026/03/28/autostrada-a13/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-a13-api-progress",
+      "title": "Economedia: Autostrada Sibiu – Făgăraș: Peste 1.000 de muncitori și peste 500 de utilaje pe tronsoanele dintre Boița și Arpașu de Jos (23 September 2026)",
+      "url": "https://economedia.ro/autostrada-sibiu-fagaras-peste-1-000-de-muncitori-si-peste-500-de-utilaje-pe-tronsoanele-dintre-boita-si-arpasu-de-jos.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "bizbrasov-a13-lot3-permit",
+      "title": "BizBrașov: Autostrada A13 Sibiu – Făgăraș. Ministerul Transporturilor a emis o autorizație parțială de construire pentru Lotul 3 (22 November 2024)",
+      "url": "https://www.bizbrasov.ro/2024/11/22/autostrada-a-13-sibiu-fagaras/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-a13-lot3-signing",
+      "title": "Economedia: Autostrada Sibiu – Făgăraș: S-a semnat contractul pentru proiectarea și execuția lotului 3 (16 August 2023)",
+      "url": "https://economedia.ro/autostrada-sibiu-fagaras-s-a-semnat-contractul-pentru-proiectarea-si-executia-lotului-3-grindeanu-anunta-ca-semneaza-cu-makyol-si-pe-lotul-4-fara-a-mai-astepta-decizia-cab.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-a13-lot3-progress",
+      "title": "Economedia: Autostrada Sibiu-Făgăraș: Lucrările pe lotul 3 au ajuns la un grad de execuție de 48% (3 September 2026)",
+      "url": "https://economedia.ro/autostrada-sibiu-fagaras-lucrarile-pe-lotul-3-au-ajuns-la-un-grad-de-executie-de-48.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "bunaziuafagaras-a13-lot4-permit",
+      "title": "Bună Ziua Făgăraș: A fost emisă autorizația de construire pentru Tronsonul 4 al Autostrăzii Sibiu – Făgăraș (4 July 2025)",
+      "url": "https://www.bunaziuafagaras.ro/a-fost-emisa-autorizatia-de-construire-pentru-tronsonul-4-al-autostrazii-sibiu-fagaras/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a13-lot4-permit",
+      "title": "Economica.net: Autostrada A13 Sibiu - Făgăraș: A fost emisă autorizație de construire pentru tronsonul 4 (4 July 2025)",
+      "url": "https://www.economica.net/autostrada-a13-sibiu-fagaras-6_851581.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "agendaconstructiilor-a13-makyol",
+      "title": "Agenda Construcțiilor: MAKYOL mărește ritmul de execuție pe cele 4 loturi din Autostrada A13 Sibiu-Făgăraș (16 June 2026)",
+      "url": "https://www.agendaconstructiilor.ro/stiri/infrastructura/makyol-mareste-ritmul-de-executie-pe-cele-4-loturi-din-autostrada-a13-sibiu-fagaras",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-a13-consitrans-fs",
+      "title": "Economedia: Autostrada Brașov - Bacău (A13): Consitrans a primit ordin pentru finalizarea Studiului de Fezabilitate pentru data de 26 septembrie (12 September 2024)",
+      "url": "https://economedia.ro/autostrada-brasov-bacau-a13-consitrans-a-primit-ordin-pentru-finalizarea-studiului-de-fezabilitate-pentru-data-de-26-septembrie.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "oradesibiu-brasov-fagaras-design",
+      "title": "Ora de Sibiu: Vești despre autostrada Brașov – Făgăraș: proiectarea aproape gata, urmează licitația (26 April 2026)",
+      "url": "https://www.oradesibiu.ro/2026/04/26/vesti-despre-autostrada-brasov-fagaras-proiectarea-aproape-gata-urmeaza-licitatia/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "playtech-brasov-fagaras-hg",
+      "title": "Playtech: Guvernul dă undă verde Autostrăzii Brașov - Făgăraș. Când ar putea circula primele mașini pe cei aproape 50 km (September 2026)",
+      "url": "https://playtech.ro/2026/guvernul-da-unda-verde-autostrazii-brasov-fagaras-cand-ar-putea-circula-primele-masini-pe-cei-aproape-50-km/",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry of the Boița–Făgăraș alignment, ODbL)",

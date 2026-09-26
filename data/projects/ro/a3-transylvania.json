@@ -19,6 +19,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2018-12-13",
         "opened": "2020-09-04",
         "constructionStart": "2019-04-13"
       },
@@ -28,7 +29,19 @@
           "amount": 159.2,
           "currency": "RON",
           "year": 2018
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 134.22,
+              "currency": "RON",
+              "year": 2018
+            },
+            "date": "2018-12-13",
+            "sourceRef": "economica-net-bors-biharia"
+          }
+        ]
       },
       "funding": [
         {
@@ -44,7 +57,7 @@
       ],
       "contractors": [
         {
-          "name": "Trameco",
+          "name": "Trameco – Vahostav SK – Drumuri Bihor – Drum Asfalt – East Water Drillings",
           "role": "builder"
         }
       ],
@@ -54,7 +67,9 @@
           "currency": "RON",
           "year": 2018
         },
-        "executionMonths": 15
+        "designMonths": 4,
+        "executionMonths": 15,
+        "totalMonths": 19
       },
       "note": {
         "en": "First Romanian motorway completed in 2020: opened 4 September 2020, connecting directly to the Hungarian motorway network"
@@ -94,17 +109,99 @@
           "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
         },
         {
-          "kind": "tender_launched",
-          "date": "2013",
+          "kind": "awarded",
+          "date": "2015",
           "note": {
-            "en": "Biharia–Chiribiș and Chiribiș–Suplacu de Barcău re-tendered with EU financing."
+            "en": "Suplacu de Barcău – Borș re-awarded to Corsan-Corviam.",
+            "ro": "Suplacu de Barcău – Borș recontractat cu Corsan-Corviam."
           },
-          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+          "sourceRef": "economedia-transilvania-telenovela"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2016",
+          "note": {
+            "en": "Corsan-Corviam contract, awarded 2015, terminated.",
+            "ro": "Contractul Corsan-Corviam, atribuit în 2015, reziliat."
+          },
+          "sourceRef": "economica-suplacu-chiribis-relaunched"
         },
         {
           "kind": "construction_start",
           "date": "2018",
           "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-06-12",
+          "note": {
+            "en": "Chiribiș – Biharia design-and-build contract signed with Trameco – Vahostav – Drumuri Bihor – Drum Asfalt – East Water Drillings: 326.51 million lei excl. VAT, 6 months design and 18 months execution.",
+            "ro": "Contractul de proiectare și execuție Chiribiș – Biharia semnat cu Trameco – Vahostav – Drumuri Bihor – Drum Asfalt – East Water Drillings: 326,51 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție."
+          },
+          "sourceRef": "economica-chiribis-biharia-signed-2020"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2022-05-12",
+          "note": {
+            "en": "CNAIR terminates the Trameco-led Chiribiș – Biharia contract: the technical design did not meet the contract.",
+            "ro": "CNAIR reziliază contractul Chiribiș – Biharia al asocierii conduse de Trameco: proiectul tehnic nu respecta prevederile contractuale."
+          },
+          "sourceRef": "economica-chiribis-biharia-terminated"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2022-08-16",
+          "note": {
+            "en": "Chiribiș – Biharia re-tendered: estimated 877.779 million lei excl. VAT, 6 months design and 18 months execution, Programul Transport 2021-2027.",
+            "ro": "Chiribiș – Biharia relicitat: valoare estimată 877,779 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție, Programul Transport 2021-2027."
+          },
+          "sourceRef": "economica-chiribis-biharia-tender-2022"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2023-01-06",
+          "note": {
+            "en": "Fourth tender for Suplacu de Barcău – Chiribiș: 937.53 million lei excl. VAT, 6 months design and 18 months execution.",
+            "ro": "A patra licitație pentru Suplacu de Barcău – Chiribiș: 937,53 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție."
+          },
+          "sourceRef": "economedia-suplacu-chiribis-fourth-tender"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-09-04",
+          "note": {
+            "en": "Construcții Erbașu designated winner for Suplacu de Barcău – Chiribiș (26.35 km): 884.123 million lei excl. VAT, 6 months design and 18 months execution.",
+            "ro": "Construcții Erbașu desemnat câștigător pentru Suplacu de Barcău – Chiribiș (26,35 km): 884,123 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție."
+          },
+          "sourceRef": "economedia-suplacu-chiribis-erbasu-winner"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-03-15",
+          "note": {
+            "en": "Chiribiș – Biharia contract signed with Precon Transilvania – Citadina 98: 785.21 million lei excl. VAT, 6 months design and 18 months execution, Programul Transport 2021-2027.",
+            "ro": "Contractul Chiribiș – Biharia semnat cu Precon Transilvania – Citadina 98: 785,21 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție, Programul Transport 2021-2027."
+          },
+          "sourceRef": "economica-chiribis-biharia-precon-signed"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-01-20",
+          "note": {
+            "en": "Works start order for Suplacu de Barcău – Chiribiș (Construcții Erbașu); contractual completion moved to the end of July 2026.",
+            "ro": "Ordinul de începere a lucrărilor pentru Suplacu de Barcău – Chiribiș (Construcții Erbașu); termenul contractual de finalizare actualizat la sfârșitul lui iulie 2026."
+          },
+          "sourceRef": "economedia-suplacu-chiribis-delay"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-07-24",
+          "note": {
+            "en": "Works start order for Chiribiș – Biharia, first 8.5 km; the 18-month execution period runs from this date.",
+            "ro": "Ordinul de începere a lucrărilor pentru Chiribiș – Biharia, primii 8,5 km; durata de execuție de 18 luni se calculează de la această dată."
+          },
+          "sourceRef": "economedia-chiribis-biharia-works-order"
         }
       ],
       "funding": [
@@ -121,7 +218,7 @@
       ],
       "contractors": [
         {
-          "name": "Precon / Citadina 98 (Biharia–Chiribiș)",
+          "name": "Precon Transilvania – Citadina 98 (Biharia–Chiribiș)",
           "role": "builder"
         },
         {
@@ -135,7 +232,17 @@
       "sourceRefs": [
         "wikipedia-ro-autostrada-a3-rom-nia",
         "economica-suplacu-chiribis-november",
-        "economedia-chiribis-biharia-dn19e"
+        "economedia-chiribis-biharia-dn19e",
+        "economedia-transilvania-telenovela",
+        "economica-suplacu-chiribis-relaunched",
+        "economica-chiribis-biharia-signed-2020",
+        "economica-chiribis-biharia-terminated",
+        "economica-chiribis-biharia-tender-2022",
+        "economedia-suplacu-chiribis-fourth-tender",
+        "economedia-suplacu-chiribis-erbasu-winner",
+        "economica-chiribis-biharia-precon-signed",
+        "economedia-suplacu-chiribis-delay",
+        "economedia-chiribis-biharia-works-order"
       ],
       "geometryRef": "biharia-suplacu"
     },
@@ -147,9 +254,37 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2022"
+        "tenderAwarded": "2020-09-05",
+        "opened": "2023-09-21"
       },
       "lengthKm": 13.55,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 384.14,
+              "currency": "RON",
+              "year": 2020,
+              "note": "Excluding VAT."
+            },
+            "date": "2020-09-05",
+            "sourceRef": "hotnews-suplacu-nusfalau-contract"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 457.49,
+              "currency": "RON",
+              "scope": "works",
+              "note": "Excluding VAT. Includes a 73.35 million lei price-adjustment reserve."
+            },
+            "date": "2022-11",
+            "note": "Revised contract price as reported from SEAP on 7 November 2022; amendment date not stated.",
+            "sourceRef": "monitorulcj-suplacu-nusfalau-price"
+          }
+        ]
+      },
       "events": [
         {
           "kind": "contract_terminated",
@@ -168,9 +303,18 @@
           "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
         },
         {
+          "kind": "awarded",
+          "date": "2020-09-05",
+          "note": {
+            "en": "Contract signed with Nurol.",
+            "ro": "Contract semnat cu Nurol."
+          },
+          "sourceRef": "hotnews-suplacu-nusfalau-contract"
+        },
+        {
           "kind": "opened",
-          "date": "2022",
-          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+          "date": "2023-09-21",
+          "sourceRef": "economedia-suplacu-nusfalau-opened"
         }
       ],
       "funding": [
@@ -197,15 +341,21 @@
           "currency": "RON",
           "year": 2020
         },
+        "designMonths": 6,
         "executionMonths": 18,
-        "totalMonths": 24
+        "totalMonths": 24,
+        "guaranteeMonths": 120
       },
       "note": {
-        "en": "Section of the Transylvania motorway re-tendered with EU financing after the 2013 Bechtel termination"
+        "en": "Section of the Transylvania motorway re-tendered with EU financing after the 2013 Bechtel termination. The contract was signed on Saturday 5 September 2020 (HotNews, the same day, citing CNAIR); later reports give 30 September 2020.",
+        "ro": "Tronson al autostrăzii Transilvania relicitat cu finanțare europeană după rezilierea contractului Bechtel din 2013. Contractul a fost semnat sâmbătă, 5 septembrie 2020 (HotNews, în aceeași zi, citând CNAIR); relatări ulterioare indică 30 septembrie 2020."
       },
       "sourceRefs": [
         "economica-net-suplacu-nusfalau",
-        "wikipedia-ro-autostrada-a3-rom-nia"
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "hotnews-suplacu-nusfalau-contract",
+        "monitorulcj-suplacu-nusfalau-price",
+        "economedia-suplacu-nusfalau-opened"
       ],
       "geometryRef": "suplacu-nusfalau"
     },
@@ -217,15 +367,32 @@
       },
       "status": "tendered",
       "dates": {
+        "tenderAwarded": "2025-04-10",
         "expectedOpening": "2032"
       },
-      "lengthKm": 31,
+      "lengthKm": 41,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 6620,
+              "currency": "RON",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2025-04-10",
+            "sourceRef": "g4media-poarta-salajului-nusfalau-contract"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
           "detail": {
-            "en": "EU funds",
-            "ro": "Fonduri europene"
+            "en": "Programul Transport 2021-2027",
+            "ro": "Programul Transport 2021-2027"
           }
         },
         {
@@ -233,7 +400,8 @@
         }
       ],
       "note": {
-        "en": "Last major gap of the Transylvania motorway, including the Meseș tunnel, Romania's longest road tunnel when complete. In tender at the technical-project stage with no builder named (ro.wikipedia, September 2026). OpenStreetMap tags opening_date=2032 on Tunel Meseș and subsections 3B3, 3B4 and 3B lot 3"
+        "en": "Last major gap of the Transylvania motorway, including the Meseș tunnel, Romania's longest road tunnel when complete. The design-and-build contract was signed on 10 April 2025 with Makyol – Ozaltin for 78 months (18 design, 60 execution). It covers 41 km in two parts, Poarta Sălajului – Zalău (15.14 km, with the Meseș tunnel) and Zalău – Nușfalău (25.86 km); ro.wikipedia gives 31 km. OpenStreetMap tags opening_date=2032 on Tunel Meseș and subsections 3B3, 3B4 and 3B lot 3",
+        "ro": "Ultimul gol major al autostrăzii Transilvania, cu tunelul Meseș, cel mai lung tunel rutier din România la finalizare. Contractul de proiectare și execuție a fost semnat la 10 aprilie 2025 cu Makyol – Ozaltin, pe 78 de luni (18 proiectare, 60 execuție). Acoperă 41 km în două părți, Poarta Sălajului – Zalău (15,14 km, cu tunelul Meseș) și Zalău – Nușfalău (25,86 km); ro.wikipedia indică 31 km. OpenStreetMap marchează opening_date=2032 pe Tunel Meseș și pe subsecțiunile 3B3, 3B4 și 3B lot 3"
       },
       "sources": [
         {
@@ -242,11 +410,34 @@
         }
       ],
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a3-rom-nia"
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "g4media-poarta-salajului-nusfalau-contract"
       ],
       "geometryRef": "nusfalau-poarta-salajului",
       "profile": {
         "terrain": "mountain"
+      },
+      "contractors": [
+        {
+          "name": "Makyol Insaat Sanayi Turizm VE Ticaret AS",
+          "role": "builder"
+        },
+        {
+          "name": "Ozaltin Insaat Ticaret VE Sanayi AS",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 6620,
+          "currency": "RON",
+          "year": 2025,
+          "scope": "works",
+          "note": "Excluding VAT. Design and build."
+        },
+        "designMonths": 18,
+        "executionMonths": 60,
+        "totalMonths": 78
       }
     },
     {
@@ -262,6 +453,34 @@
         "opened": "2026-08-11"
       },
       "lengthKm": 12.24,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 680.41,
+              "currency": "RON",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2020-07",
+            "sourceRef": "hotnews-zimbor-poarta-salajului-award"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 836.899,
+              "currency": "RON",
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2025-11",
+            "note": "Contract value as reported on 5 November 2025; amendment date not stated.",
+            "sourceRef": "economica-zimbor-poarta-salajului-90"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -276,15 +495,29 @@
       ],
       "contractors": [
         {
-          "name": "Spedition UMB",
+          "name": "SA&PE Construct – Spedition UMB – Tehnostrade",
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 680.41,
+          "currency": "RON",
+          "year": 2020,
+          "scope": "works",
+          "note": "Excluding VAT. Design and build."
+        },
+        "designMonths": 12,
+        "executionMonths": 24,
+        "totalMonths": 36
+      },
       "note": {
         "en": "Contracted with Spedition UMB in July 2020 for 12 months of design and 24 of execution, with the start order on 31 May 2021. Opened at 16:00 on 11 August 2026 between the Zimbor and Românași junctions, the first motorway opening of 2026 in Romania"
       },
       "sourceRefs": [
-        "monitorulcj-zimbor-poarta-salajului-opened"
+        "monitorulcj-zimbor-poarta-salajului-opened",
+        "hotnews-zimbor-poarta-salajului-award",
+        "economica-zimbor-poarta-salajului-90"
       ],
       "geometryRef": "zimbor-poarta-salajului"
     },
@@ -296,10 +529,27 @@
       },
       "status": "under_construction",
       "dates": {
+        "tenderAwarded": "2020-09-22",
         "constructionStart": "2021-04",
         "expectedOpening": "2026-12"
       },
       "lengthKm": 30.11,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1390.61,
+              "currency": "RON",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT. Design and build."
+            },
+            "date": "2020-09-22",
+            "sourceRef": "hotnews-ro-zimbor-nadaselu"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -314,23 +564,30 @@
       ],
       "contractors": [
         {
-          "name": "Spedition UMB",
+          "name": "Spedition UMB – Tehnostrade – Electromontaj",
+          "role": "builder"
+        },
+        {
+          "name": "Ozaltin – Ilgaz – Visio Construct (Nădășelu and Topa Mică route deviations)",
           "role": "builder"
         }
       ],
       "contract": {
         "totalMonths": 36,
         "value": {
-          "amount": 100,
-          "currency": "EUR",
-          "year": 2016
+          "amount": 1390.61,
+          "currency": "RON",
+          "year": 2020,
+          "scope": "works",
+          "note": "Excluding VAT. Design and build."
         },
         "designMonths": 12,
         "executionMonths": 24,
         "guaranteeMonths": 60
       },
       "note": {
-        "en": "Nădășelu–Mihăiești (16.85 km) contracted May 2016 for €100M with an 18-month term; design was delayed because the feasibility study proved inadequate. OpenStreetMap tags opening_date=2026 on subsection 3B1 (Mihăiești–Zimbor) and the Nădășelu route deviation. Prime Minister Ilie Bolojan said traffic should run without restrictions on the 40-plus km between Cluj and Zalău from 1 December 2026; the Ozaltin contract for the Nădășelu and Topa Mică route deviations runs to March 2027"
+        "en": "An earlier contract for Nădășelu–Mihăiești alone (16.85 km) was concluded in May 2016 for €100M with an 18-month term; design was delayed because the feasibility study proved inadequate. The current contract, for Nădășelu–Mihăiești and Mihăiești–Zimbor, was awarded to Spedition UMB – Tehnostrade – Electromontaj on 22 September 2020; Pro Infrastructura says it was signed in December 2020. OpenStreetMap tags opening_date=2026 on subsection 3B1 (Mihăiești–Zimbor) and the Nădășelu route deviation. Prime Minister Ilie Bolojan said traffic should run without restrictions on the 40-plus km between Cluj and Zalău from 1 December 2026; the Ozaltin contract for the Nădășelu and Topa Mică route deviations has an updated contract deadline of 1 February 2027",
+        "ro": "Un contract anterior, doar pentru Nădășelu–Mihăiești (16,85 km), a fost încheiat în mai 2016 pentru 100 mil. euro, cu termen de 18 luni; proiectarea a întârziat pentru că studiul de fezabilitate s-a dovedit inadecvat. Contractul actual, pentru Nădășelu–Mihăiești și Mihăiești–Zimbor, a fost atribuit asocierii Spedition UMB – Tehnostrade – Electromontaj la 22 septembrie 2020; Pro Infrastructura afirmă că a fost semnat în decembrie 2020. OpenStreetMap marchează opening_date=2026 pe subsecțiunea 3B1 (Mihăiești–Zimbor) și pe devierea de traseu de la Nădășelu. Premierul Ilie Bolojan a declarat că circulația ar trebui să se desfășoare fără restricții pe cei peste 40 km dintre Cluj și Zalău de la 1 decembrie 2026; contractul Ozaltin pentru devierile de traseu de la Nădășelu și Topa Mică are termenul contractual actualizat la 1 februarie 2027"
       },
       "sources": [
         {
@@ -341,7 +598,9 @@
       "sourceRefs": [
         "monitorulcj-ro-zimbor-nadaselu",
         "hotnews-ro-zimbor-nadaselu",
-        "profit-nadaselu-poarta-salajului"
+        "profit-nadaselu-poarta-salajului",
+        "monitorulcj-nadaselu-mihaiesti-deviations",
+        "monitorulcj-zimbor-poarta-salajului-opened"
       ],
       "geometryRef": "zimbor-nadaselu"
     },
@@ -353,6 +612,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2003",
         "constructionStart": "2004-06-16",
         "opened": "2009-12-01"
       },
@@ -372,7 +632,8 @@
         "en": "First 42 km of the Transylvania motorway, opened 1 December 2009; built under the 2003 Bechtel design-build-finance contract, whose ground-breaking was held at Chinteni (Cluj) on 16 June 2004. Bechtel delivered 52 of the contracted kilometres before termination in 2013"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a3-rom-nia"
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "capital-bechtel-opt-ani"
       ],
       "geometryRef": "gilau-turda"
     },
@@ -384,6 +645,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2003",
         "opened": "2010-11-13"
       },
       "lengthKm": 12,
@@ -402,7 +664,8 @@
         "en": "Final 10–12 km delivered by Bechtel on the Câmpia Turzii–Gilău section, inaugurated 13 November 2010"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a3-rom-nia"
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "capital-bechtel-opt-ani"
       ],
       "geometryRef": "turda-campia-turzii"
     },
@@ -414,7 +677,9 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2018-12-14"
+        "tenderAwarded": "2015-02-16",
+        "constructionStart": "2016-05",
+        "opened": "2018-12-12"
       },
       "lengthKm": 57,
       "funding": [
@@ -431,19 +696,29 @@
       ],
       "contractors": [
         {
-          "name": "Geiger",
+          "name": "Geiger Transilvania – Wilhelm Geiger (Ogra – Iernut)",
           "role": "builder"
         },
         {
-          "name": "Strabag",
+          "name": "Astaldi – Max Bögl – Astalrom – Consitrans (Iernut – Chețani)",
+          "role": "builder"
+        },
+        {
+          "name": "Straco Grup – Specialist Consulting – Total Road (Chețani – Câmpia Turzii)",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag – Straco (Ungheni – Ogra)",
           "role": "builder"
         }
       ],
       "note": {
-        "en": "Iernut–Ungheni was the first segment of this section opened, on 12 December 2018, after the Geiger and Strabag lots were finished; the Cluj-Napoca West (Gilău)–Nădășelu extension followed in 2018"
+        "en": "Iernut–Ungheni was the first segment of this section opened, on 12 December 2018, after the Geiger and Strabag lots were finished; the Cluj-Napoca West (Gilău)–Nădășelu extension followed in 2018. Built under five design-and-build contracts: the first (Ogra – Iernut, Geiger) was signed on 16 February 2015 and Iernut – Chețani on 6 April 2016. Works start orders for four lots were issued in May 2016; on the three Ogra – Câmpia Turzii lots, physical works waited for building permits into 2017.",
+        "ro": "Iernut–Ungheni a fost primul segment deschis din această secțiune, la 12 decembrie 2018, după finalizarea loturilor Geiger și Strabag; extinderea Cluj-Napoca Vest (Gilău)–Nădășelu a urmat în 2018. Construită prin cinci contracte de proiectare și execuție: primul (Ogra – Iernut, Geiger) a fost semnat la 16 februarie 2015, iar Iernut – Chețani la 6 aprilie 2016. Ordinele de începere a lucrărilor pentru patru loturi au fost emise în mai 2016; pe cele trei loturi Ogra – Câmpia Turzii, lucrările fizice au așteptat autorizațiile de construire până în 2017."
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a3-rom-nia"
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "hotnews-monitorizari-campia-turzii-targu-mures"
       ],
       "geometryRef": "campia-turzii-targu-mures"
     }
@@ -488,8 +763,9 @@
     },
     {
       "id": "economica-net-bors-biharia",
-      "title": "economica.net",
-      "url": "https://www.economica.net/autostrada-transilvania-semnare-contract-biharia-bors_162476.html"
+      "title": "Economica.net: Autostrada Transilvania ajunge la graniţa cu Ungaria. CNAIR a semnat contractul pentru proiectarea şi execuţia lotului dintre Biharia şi Borş (13 December 2018)",
+      "url": "https://www.economica.net/autostrada-transilvania-semnare-contract-biharia-bors_162476.html",
+      "retrievedOn": "2026-09-25"
     },
     {
       "id": "economica-net-bors-biharia-2",
@@ -513,8 +789,124 @@
     },
     {
       "id": "hotnews-ro-zimbor-nadaselu",
-      "title": "hotnews.ro (contract.totalMonths)",
-      "url": "https://hotnews.ro/stiri-infrastructura_articole-24301095-autostrada-transilvania-nadaselu-mihaiesti-zimbor-umb.htm"
+      "title": "HotNews: Autostrada Transilvania: Alți 30 de kilometri contractați. Constructorul este firma românească UMB (22 September 2020)",
+      "url": "https://hotnews.ro/autostrada-transilvania-alti-30-de-kilometri-contractati-constructorul-este-firma-romneasca-umb-236321",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-monitorizari-campia-turzii-targu-mures",
+      "title": "HotNews Monitorizări: Autostrada A3 Câmpia Turzii – Ogra – Tg. Mureș: de la afacerea Bechtel, la fondurile europene ce se pierd (22 June 2015, updated to December 2018)",
+      "url": "http://monitorizari.hotnews.ro/stiri-infrastructura_proiecte-20249457-autostrada-a3-campia-turzii-ogra-mures-afacerea-bechtel-fondurile-europene-pierd.htm",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "capital-bechtel-opt-ani",
+      "title": "Capital: Opt ani de Bechtel în România, autostrada dezamăgirii totale (2012, quoting the Court of Auditors)",
+      "url": "http://www.capital.ro/detalii-articole/stiri/opt-ani-de-bechtel-in-romania-autostrada-dezamagirii-totale-167853.html",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20120618041822/http://www.capital.ro/detalii-articole/stiri/opt-ani-de-bechtel-in-romania-autostrada-dezamagirii-totale-167853.html"
+    },
+    {
+      "id": "hotnews-suplacu-nusfalau-contract",
+      "title": "HotNews: Contractul pentru tronsonul de autostradă Nușfalău – Suplacu de Barcău, semnat cu turcii de la Nurol (5 September 2020)",
+      "url": "https://www.hotnews.ro/stiri-esential-24270122-contractul-pentru-tronsonul-autostrada-nusfalau-suplacu-barcau-semnat-turcii-nurol-cat-vor-costa-cei-13-5-kilometri.htm",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "monitorulcj-suplacu-nusfalau-price",
+      "title": "Monitorul de Cluj: Lucrările pe lotul Nușfalău-Suplacu de Barcău al A3, mai scumpe cu 73 de mil. lei (7 November 2022)",
+      "url": "https://www.monitorulcj.ro/stiri-din-transilvania/104183-lucrarile-pe-lotul-nusfalau-suplacu-de-barcau-al-a3-mai-scumpe-cu-73-de-mil-lei-lotul-finalizat-la-primavara",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-suplacu-nusfalau-opened",
+      "title": "Economedia: Prima inaugurare de autostradă din 2023: s-a deschis Lotul Suplacu de Barcău – Nușfalău de pe Autostrada Transilvania (21 September 2023)",
+      "url": "https://economedia.ro/prima-inaugurare-de-autostrada-din-2023-lotul-suplacu-de-barcau-nusfalau-de-pe-autostrada-transilvania-se-deschide-la-ora-13-00-romania-depaseste-borna-de-1000-kilometri-de-autostrada-si-drum-expre.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-zimbor-poarta-salajului-award",
+      "title": "HotNews: Contract semnat pentru un tronson din Autostrada Transilvania: UMB va construi 12 km între Zimbor și Poarta Sălajului (26 June 2020)",
+      "url": "https://hotnews.ro/contract-semnat-pentru-un-tronson-din-autostrada-transilvania-umb-va-construi-12-km-ntre-zimbor-si-poarta-salajului-pentru-circa-140-de-mil-euro-251021",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-zimbor-poarta-salajului-90",
+      "title": "Economica.net: Autostrada Transilvania: UMB a ajuns la un stadiu de 90% pe secțiunea Zimbor – Poarta Sălajului (5 November 2025)",
+      "url": "https://www.economica.net/autostrada-transilvania-umb-3_885804.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "monitorulcj-nadaselu-mihaiesti-deviations",
+      "title": "Monitorul de Cluj: Secțiunea Nădășelu – Mihăiești, progres de 78% în teren (7 July 2026)",
+      "url": "https://www.monitorulcj.ro/actualitate/138780-autostrada-transilvania-sectiunea-nadaselu-mihaiesti-progres-de-78-in-teren-lucrarile-la-viaductele-de-32-km-incheiate-pana-la-finalul-anului",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-transilvania-telenovela",
+      "title": "Economedia: Autostrada Transilvania: telenovela de 22 de ani și o inaugurare înainte de termen (21 September 2026)",
+      "url": "https://economedia.ro/video-autostrada-transilvania-telenovela-de-22-de-ani-si-o-inaugurare-inainte-de-termen-soferii-ar-putea-circula-in-decembrie-pe-inca-2855-kilometri-de-autostrada.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-suplacu-chiribis-relaunched",
+      "title": "Economica.net: Autostrada Transilvania: Secțiunea Suplacu de Barcău – Chiribiș, relansată la licitație (5 January 2023)",
+      "url": "https://www.economica.net/autostrada-transilvania-sectiunea-suplacu-de-barcau-chiribis-relansata-la-licitatie_638625.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-chiribis-biharia-signed-2020",
+      "title": "Economica.net: Autostrada Transilvania: S-a semnat contractul pentru lotul Chiribiș – Biharia (12 June 2020)",
+      "url": "https://www.economica.net/autostrada-transilvania-s-a-semnat-contractul-pentru-cei-30-de-kilometri-intre-chiribi-i-biharia_185813.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-chiribis-biharia-terminated",
+      "title": "Economica.net: Autostrada Transilvania: CNAIR a reziliat joi contractul pentru secțiunea Chiribiș – Biharia (12 May 2022)",
+      "url": "https://www.economica.net/autostrada-transilvania-cnair-a-reziliat-joi-contractul-pentru-sectiunea-chiribis-biharia-grindeanu_583157.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-chiribis-biharia-tender-2022",
+      "title": "Economica.net: CNAIR reia licitația pentru proiectarea și execuția lucrărilor de construcție a sectorului de autostradă Chiribiș – Biharia (16 August 2022)",
+      "url": "https://www.economica.net/cnair-reia-licitatia-pentru-proiectarea-si-executia-lucrarilor-de-constructie-a-sectorului-de-autostrada-chiribis-biharia_605963.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-suplacu-chiribis-fourth-tender",
+      "title": "Economedia: Autostrada Transilvania: CNAIR a anulat licitația din 2020 pentru lotul cu viaductul de la Suplacu de Barcău (4 April 2023)",
+      "url": "https://economedia.ro/autostrada-transilvania-cnair-a-anulat-licitatia-din-2020-pentru-lotul-cu-viaductul-de-la-suplacu-de-barcau-dar-mentine-suspendarea-licitatiei-a-patra-pe-care-a-lansat-o-in-ianuarie-pentru-acelas.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-suplacu-chiribis-erbasu-winner",
+      "title": "Economedia: Autostrada Transilvania, la a patra licitație pentru lotul cu viaductul Suplacu de Barcău: Erbașu, desemnat câștigător (4 September 2023)",
+      "url": "https://economedia.ro/autostrada-transilvania-la-a-patra-licitatie-pentru-finalizarea-lotului-cu-viaductul-suplacu-de-barcau-erbasu-desemnat-castigator-pentru-lotul-suplacu-de-barcau-chiribis-26-km.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-chiribis-biharia-precon-signed",
+      "title": "Economica.net: Autostrada Transilvania: A fost semnat contractul cu Precon pentru lotul Chiribiș – Biharia (15 March 2024)",
+      "url": "https://www.economica.net/autostrada-transilvania-a-fost-semnat-contractul-cu-precon-pentru-lotul-chiribis-biharia_732797.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-suplacu-chiribis-delay",
+      "title": "Economedia: Amânare pe Autostrada Transilvania: Lotul Chiribiș–Suplacu de Barcău nu va fi gata în iulie (14 July 2026)",
+      "url": "https://economedia.ro/amanare-pe-autostrada-transilvania-lotul-chiribis-suplacu-de-barcau-nu-va-fi-gata-in-iulie-api-estimeaza-deschiderea-la-final-de-septembrie.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-chiribis-biharia-works-order",
+      "title": "Economedia: Autostrada Transilvania. Start pentru lucrări pe lotul Chiribiș – Biharia (23 July 2025)",
+      "url": "https://economedia.ro/autostrada-transilvania-start-pentru-lucrari-pe-lotul-chiribis-biharia-cnir-a-emis-ordinul-de-incepere-a-lucrarilor.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "g4media-poarta-salajului-nusfalau-contract",
+      "title": "G4Media: A fost semnat contractul pentru realizarea ultimului tronson din autostrada Transilvania, între Poarta Sălajului și Nuşfalău (10 April 2025)",
+      "url": "https://www.g4media.ro/a-fost-semnat-contractul-pentru-realizarea-ultimului-tronson-din-autostrada-transilvania-intre-poarta-salajului-si-nusfalau-va-avea-o-lungime-de-41-de-kilometri-si-un-tunel-de-aproape-trei-kilometr.html",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

@@ -68,12 +68,14 @@
         "executionMonths": 27
       },
       "note": {
-        "en": "Contract signed on 15 February 2012 for the 41.185 km double-track section; execution ran into delays and finished around January 2016, when the new traffic-control system entered service"
+        "en": "Contract signed on 15 February 2012 for the 41.185 km double-track section; execution ran into delays and finished around January 2016, when the new traffic-control system entered service. CFR gives the investment value as €279 million including VAT, with works running 2012–2019 (Club Feroviar, October 2024). It is not described as a final cost.",
+        "ro": "Contract semnat la 15 februarie 2012 pentru tronsonul dublu de 41,185 km; execuția a întârziat și s-a încheiat în jurul lunii ianuarie 2016, când a intrat în funcțiune noul sistem de control al traficului. CFR indică o valoare a investiției de 279 de milioane de euro cu TVA și lucrări derulate în 2012–2019 (Club Feroviar, octombrie 2024). Cifra nu este prezentată drept cost final."
       },
       "sourceRefs": [
         "romania-insider-com-t1-frontiera-arad",
         "zf-ro-t1-frontiera-arad",
-        "cfr-ro"
+        "cfr-ro",
+        "clubferoviar-ro-2024"
       ],
       "geometryRef": "t1-frontiera-arad"
     },
@@ -84,7 +86,27 @@
         "ro": "Tronsonul 2: km 614 – Gurasada"
       },
       "status": "under_construction",
+      "dates": {
+        "constructionStart": "2017-07-27",
+        "expectedOpening": "2027-12"
+      },
       "lengthKm": 100,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 6374.18,
+              "currency": "RON",
+              "scope": "works",
+              "note": "Excluding VAT. Sum of the current values of works contracts 2a (2,065.59), 2b (2,295.12) and 2c (2,013.47) in CFR's August 2026 status report."
+            },
+            "date": "2026-08",
+            "note": "Current contract values as of the CFR August 2026 status report.",
+            "sourceRef": "cfr-ro-stadiu-2026-08"
+          }
+        ]
+      },
       "profile": {
         "works": "rehabilitation",
         "maxSpeedKmh": 160,
@@ -105,19 +127,21 @@
       ],
       "contractors": [
         {
-          "name": "Webuild (Astaldi): subsections 2A and 2B",
+          "name": "Webuild – FCC Construccion – Salcef – Hitachi Rail (subsections 2a km 614 – Bârzava and 2b Bârzava – Ilteu)",
           "role": "builder"
         },
         {
-          "name": "Alstom: Ilteu – Gurasada signalling and electrification",
+          "name": "AKTOR – Alstom Transport – Arcada Company (RailWorks) (subsection 2c Ilteu – Gurasada)",
           "role": "builder"
         }
       ],
       "note": {
-        "en": "Split into subsections 2A and 2B (about 80 km with 11 stations, 30 bridges and one tunnel) and Cap Y Bârzava – Cap Y Ilteu; sections 2 and 3 together were financed with RON 9.5 billion (~€2bn), RON 6bn from the Cohesion Fund"
+        "en": "Split into subsections 2A and 2B (about 80 km with 11 stations, 30 bridges and one tunnel) and Cap Y Bârzava – Cap Y Ilteu; sections 2 and 3 together were financed with RON 9.5 billion (~€2bn), RON 6bn from the Cohesion Fund. Per CFR's August 2026 status report the section is three works contracts: 2a km 614 – Bârzava (41.91 km, RON 2,065.59 million), 2b Bârzava – Ilteu (36.04 km, RON 2,295.12 million) and 2c Ilteu – Gurasada (22.34 km, RON 2,013.47 million), current values excluding VAT. 2a and 2b started on 27 July 2017 and are due in December 2026; 2c started on 4 December 2017 and is due in December 2027. The expected opening is the end of works on 2c.",
+        "ro": "Împărțit în subtronsoanele 2A și 2B (circa 80 km, cu 11 stații, 30 de poduri și un tunel) și Cap Y Bârzava – Cap Y Ilteu; tronsoanele 2 și 3 au primit împreună o finanțare de 9,5 miliarde lei (~2 mld. euro), din care 6 miliarde lei din Fondul de Coeziune. Conform raportului CFR din august 2026, tronsonul cuprinde trei contracte de lucrări: 2a km 614 – Bârzava (41,91 km, 2.065,59 milioane lei), 2b Bârzava – Ilteu (36,04 km, 2.295,12 milioane lei) și 2c Ilteu – Gurasada (22,34 km, 2.013,47 milioane lei), valori actuale fără TVA. 2a și 2b au început la 27 iulie 2017, cu termen decembrie 2026; 2c a început la 4 decembrie 2017, cu termen decembrie 2027. Data estimată de deschidere este finalizarea lucrărilor la 2c."
       },
       "sourceRefs": [
-        "railwaypro-com"
+        "railwaypro-com",
+        "cfr-ro-stadiu-2026-08"
       ],
       "geometryRef": "t2-km614-gurasada"
     },
@@ -134,6 +158,34 @@
         "expectedOpening": "2026-11"
       },
       "lengthKm": 41,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2636.52,
+              "currency": "RON",
+              "year": 2017,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2017-08-31",
+            "note": "Winning offer of FCC – Astaldi – Convensa, announced June 2016; contract signed 31 August 2017.",
+            "sourceRef": "economica-net-t3-award"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 3445.6,
+              "currency": "RON",
+              "scope": "works",
+              "note": "Excluding VAT. Current contract value in CFR's August 2026 status report."
+            },
+            "date": "2026-08",
+            "sourceRef": "cfr-ro-stadiu-2026-08"
+          }
+        ]
+      },
       "profile": {
         "works": "rehabilitation",
         "maxSpeedKmh": 160,
@@ -158,11 +210,24 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 2636.52,
+          "currency": "RON",
+          "year": 2017,
+          "note": "Excluding VAT."
+        },
+        "executionMonths": 36,
+        "guaranteeMonths": 24
+      },
       "note": {
-        "en": "Contract signed with the FCC–Astaldi–Convensa consortium on 31 August 2017 for 41 km of line, 17 bridges, 27 culverts, 4 overpasses, 3 underpasses and 4 stations; works started in early 2018, originally due in 2021, now expected in November 2026"
+        "en": "Contract signed with the FCC–Astaldi–Convensa consortium on 31 August 2017 for 41 km of line, 17 bridges, 27 culverts, 4 overpasses, 3 underpasses and 4 stations; works started in early 2018, originally due in 2021, now expected in November 2026. CFR's August 2026 status report gives a current contract value of RON 3,445.60 million excluding VAT, against RON 2,636.52 million at award. Funded through POIM 2014–2020 (phase I) and Programul Transport 2021–2027 (phase II). The 24-month guarantee is the defects notification period.",
+        "ro": "Contract semnat cu asocierea FCC–Astaldi–Convensa la 31 august 2017 pentru 41 km de linie, 17 poduri, 27 de podețe, 4 pasaje superioare, 3 pasaje inferioare și 4 stații; lucrările au început la începutul lui 2018, cu termen inițial 2021, acum estimat pentru noiembrie 2026. Raportul CFR din august 2026 indică o valoare actuală a contractului de 3.445,60 milioane lei fără TVA, față de 2.636,52 milioane lei la atribuire. Finanțat prin POIM 2014–2020 (faza I) și Programul Transport 2021–2027 (faza II). Garanția de 24 de luni este perioada de notificare a defecțiunilor."
       },
       "sourceRefs": [
-        "hillintl-com"
+        "hillintl-com",
+        "economica-net-t3-award",
+        "cfr-ro-stadiu-2026-08"
       ],
       "geometryRef": "t3-gurasada-simeria"
     }
@@ -200,6 +265,24 @@
       "id": "zf-ro-t1-frontiera-arad",
       "title": "zf.ro",
       "url": "https://www.zf.ro/business-construct/lucrarile-de-modernizare-a-garii-arad-receptionate-partial-dupa-investitii-de-334-milioane-de-lei-14915527"
+    },
+    {
+      "id": "clubferoviar-ro-2024",
+      "title": "Club Feroviar: S-au modernizat mai mulți km de cale ferată cu fonduri preaderare decât postaderare (2024-10-31)",
+      "url": "https://clubferoviar.ro/kilometri-de-cale-ferata-modernizata-ue/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cfr-ro-stadiu-2026-08",
+      "title": "CFR SA: Stadiul proiectelor de reabilitare/modernizare infrastructură feroviară, August 2026 (2026-09)",
+      "url": "https://cfr.ro/wp-content/uploads/2026/09/Stadiu-proiecte-CFR-August-Septembrie-2026-1.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-net-t3-award",
+      "title": "Economica.net: Asocierea FCC – Astaldi – Convensa va moderniza tronsonul de cale ferată Gurasada – Simeria pentru 2,63 miliarde lei (2016-06-24)",
+      "url": "https://www.economica.net/asocierea-fcc-astaldi-convensa-va-moderniza-tronsonul-de-cale-ferata-gurasada-simeria-pentru-2-63-miliarde-lei_121631.html",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

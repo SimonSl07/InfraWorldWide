@@ -8,8 +8,8 @@
     "ro": "Magistrala 5 de metrou București (Drumul Taberei)"
   },
   "description": {
-    "en": "Newest line of the Bucharest Metro, serving the dense Drumul Taberei district. The first phase runs 6.9 km from Râul Doamnei to Eroilor with 10 stations, including the Valea Ialomiței branch towards the depot; construction started in April 2011 and, after repeated delays, the line opened on 15 September 2020 at an expected cost of €708.6 million with EU support. Phase II would extend the line east from Eroilor under the city centre to Iancului, and a third phase on to Pantelimon on the M1.",
-    "ro": "Cea mai nouă magistrală a metroului bucureștean, care deservește cartierul dens Drumul Taberei. Prima etapă are 6,9 km, de la Râul Doamnei la Eroilor, cu 10 stații, inclusiv ramura Valea Ialomiței spre depou; construcția a început în aprilie 2011 și, după amânări repetate, linia a fost deschisă pe 15 septembrie 2020, la un cost estimat de 708,6 milioane de euro, cu sprijin european. Etapa a II-a ar prelungi linia spre est, de la Eroilor pe sub centrul orașului până la Iancului, iar o a treia etapă până la Pantelimon, pe M1."
+    "en": "Newest line of the Bucharest Metro, serving the dense Drumul Taberei district. The first phase runs 6.9 km from Râul Doamnei to Eroilor with 10 stations, including the Valea Ialomiței branch towards the depot; construction started in March 2011 and, after repeated delays, the line opened on 15 September 2020 at an expected cost of €708.6 million with EU support. Phase II would extend the line east from Eroilor under the city centre to Iancului, and a third phase on to Pantelimon on the M1.",
+    "ro": "Cea mai nouă magistrală a metroului bucureștean, care deservește cartierul dens Drumul Taberei. Prima etapă are 6,9 km, de la Râul Doamnei la Eroilor, cu 10 stații, inclusiv ramura Valea Ialomiței spre depou; construcția a început în martie 2011 și, după amânări repetate, linia a fost deschisă pe 15 septembrie 2020, la un cost estimat de 708,6 milioane de euro, cu sprijin european. Etapa a II-a ar prelungi linia spre est, de la Eroilor pe sub centrul orașului până la Iancului, iar o a treia etapă până la Pantelimon, pe M1."
   },
   "operator": "ro-metrorex",
   "stationCount": 10,
@@ -22,7 +22,8 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2011-04",
+        "tenderAwarded": "2011-03-14",
+        "constructionStart": "2011-03-26",
         "opened": "2020-09-15"
       },
       "lengthKm": 6.9,
@@ -31,7 +32,33 @@
           "amount": 708.6,
           "currency": "EUR",
           "year": 2011
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 987.9,
+              "currency": "RON",
+              "year": 2011,
+              "scope": "works",
+              "note": "Excluding VAT. Lot 1.1 only; Lot 1.2 (Max Bögl) 231.67 million lei excluding VAT, signed 15 April 2011."
+            },
+            "date": "2011-03-14",
+            "sourceRef": "hotnews-m5-timeline-2015"
+          },
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 3224,
+              "currency": "RON",
+              "scope": "total",
+              "note": "VAT and price year not stated. Includes Valea Ialomiței station and depot."
+            },
+            "date": "2019",
+            "note": "Project value approved by Government Decision HG 374/2019 ('aproape 3,224 miliarde de lei'). Eligible value about 2.3 billion lei (Agerpres).",
+            "sourceRef": "digi24-m5-opening-2020"
+          }
+        ]
       },
       "funding": [
         {
@@ -55,11 +82,25 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "executionMonths": 25,
+        "value": {
+          "amount": 987.9,
+          "currency": "RON",
+          "year": 2011,
+          "scope": "works",
+          "note": "Excluding VAT. Lot 1.1, Râul Doamnei – Eroilor 2/PS Operă (Astaldi – FCC – AB Construct – Delta ACM). Lot 1.2, the Valea Ialomiței branch and depot (Max Bögl), signed 15 April 2011 for 231.67 million lei excluding VAT."
+        }
+      },
       "note": {
-        "en": "10 stations over 6.9 km; construction from April 2011, opened 15 September 2020, expected cost €708.6 million"
+        "en": "10 stations over 6.9 km; construction from March 2011, opened 15 September 2020, expected cost €708.6 million",
+        "ro": "10 stații pe 6,9 km; construcție din martie 2011, deschisă pe 15 septembrie 2020, cost estimat 708,6 milioane de euro"
       },
       "sourceRefs": [
-        "wikipedia-bucharest-metro-line-m5"
+        "wikipedia-bucharest-metro-line-m5",
+        "digi24-m5-opening-2020",
+        "agerpres-m5-opening-2020",
+        "hotnews-m5-timeline-2015"
       ],
       "geometryRef": "phase1-raul-doamnei-eroilor"
     },
@@ -70,12 +111,45 @@
         "ro": "Etapa a II-a: Eroilor – Universitate – Iancului"
       },
       "status": "planned",
+      "dates": {
+        "expectedOpening": "2034"
+      },
       "lengthKm": 5.4,
+      "cost": {
+        "estimated": {
+          "amount": 2900,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Including VAT. Estimated value of the construction contract, before tender. State Secretary Scrioșteanu (Economedia, 2022) gave the same 2.9 billion lei with VAT as the project value."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Transport Operational Programme (POT 2021–2027), named by Metrorex as the funding source in 2023",
+            "ro": "Programul Operațional de Transport (POT 2021–2027), indicat de Metrorex ca sursă de finanțare în 2023"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "3TI Progetti Italia – Ingegneria Integrata SpA & SWS Engineering SpA & Coding Srl & METRANS Engineering SRL",
+          "role": "designer"
+        }
+      ],
       "note": {
-        "en": "Six new stations under the city centre between Eroilor and Iancului; no construction contract awarded, Metrorex estimates quoted an opening around 2025 that has not been met"
+        "en": "Six new stations under the city centre between Eroilor and Iancului; no construction contract awarded, Metrorex estimates quoted an opening around 2025 that has not been met. Design and technical assistance contract signed on 29 October 2021 with the 3TI Progetti Italia association: 39.66 million lei excluding VAT, 60 months, of which 24 months design. In February 2025 Metrorex estimated completion in 2034, subject to funding being secured",
+        "ro": "Șase stații noi sub centrul orașului, între Eroilor și Iancului; niciun contract de execuție atribuit, iar estimările Metrorex privind o deschidere în jurul anului 2025 nu au fost respectate. Contractul de proiectare și asistență tehnică a fost semnat pe 29 octombrie 2021 cu asocierea 3TI Progetti Italia: 39,66 milioane lei fără TVA, 60 de luni, din care 24 de luni proiectare. În februarie 2025, Metrorex estima finalizarea în 2034, sub rezerva asigurării finanțării"
       },
       "sourceRefs": [
-        "wikipedia-bucharest-metro-line-m5"
+        "wikipedia-bucharest-metro-line-m5",
+        "clubferoviar-m5-eroilor-iancului-2023",
+        "hotnews-m5-design-contract-2021",
+        "economica-m5-deadlines-2025"
       ],
       "geometryRef": "phase2-eroilor-iancului"
     },
@@ -88,10 +162,13 @@
       "status": "planned",
       "lengthKm": 3.8,
       "note": {
-        "en": "Six stations along Șoseaua Iancului to the M1 station at Pantelimon; on hold, estimated for 2032"
+        "en": "Six stations along Șoseaua Iancului to the M1 station at Pantelimon; on hold. In February 2025 Metrorex put completion after 2040, depending on progress on Phase II. A 2011 financing agreement with the EIB (EUR 465 million loan, plus EUR 827.96 million from the state budget) covered Universitate–Pantelimon and 30 trains; by 2016 only EUR 8.97 million had been spent, on design and ground surveys",
+        "ro": "Șase stații de-a lungul Șoselei Iancului, până la stația Pantelimon de pe M1; proiect suspendat. În februarie 2025, Metrorex estima finalizarea după 2040, în funcție de evoluția lucrărilor pe Etapa a II-a. Un contract de finanțare cu BEI din 2011 (credit de 465 milioane euro, plus 827,96 milioane euro de la bugetul de stat) acoperea tronsonul Universitate–Pantelimon și 30 de trenuri; până în 2016 se cheltuiseră doar 8,97 milioane euro, pe proiectare și expertizarea terenurilor"
       },
       "sourceRefs": [
-        "wikipedia-bucharest-metro-line-m5"
+        "wikipedia-bucharest-metro-line-m5",
+        "economica-m5-deadlines-2025",
+        "profit-m5-iancului-pantelimon-2016"
       ],
       "geometryRef": "phase3-iancului-pantelimon"
     }
@@ -110,6 +187,48 @@
     {
       "title": "OpenStreetMap contributors (geometry of the opened section, ODbL)",
       "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "digi24-m5-opening-2020",
+      "title": "Digi24: Metroul din Drumul Taberei, inaugurat de președintele Iohannis. Cum arată stațiile de pe magistrala 5 (15 September 2020)",
+      "url": "https://www.digi24.ro/stiri/economie/transporturi/astazi-se-deschide-magistrala-5-locuitorii-din-drumul-taberei-vor-circula-cu-metroul-dupa-5-ani-de-intarzieri-1368327",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "agerpres-m5-opening-2020",
+      "title": "Agerpres: Inaugurarea Magistralei 5 de metrou, Secţiunea Râul Doamnei - Eroilor (date generale) (15 September 2020)",
+      "url": "https://agerpres.ro/documentare/2020/09/15/inaugurarea-magistralei-5-de-metrou-sectiunea-raul-doamnei---eroilor-date-generale--573288",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-m5-timeline-2015",
+      "title": "HotNews.ro: Magistrala M5 de metrou Drumul Taberei – Eroilor 2 – In cati ani va fi aici statia ta de metrou? (19 February 2015)",
+      "url": "http://monitorizari.hotnews.ro/stiri-infrastructura_proiecte-19426756-magistrala-m5-metrou-drumul-taberei-eroilor-2-cati-ani-aici-statia-metrou.htm",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "clubferoviar-m5-eroilor-iancului-2023",
+      "title": "Club Feroviar: Licitația de execuție pentru Magistrala 5 de metrou Eroilor – Iancului, anul viitor (3 February 2023)",
+      "url": "https://clubferoviar.ro/cu-putin-noroc-licitatia-de-executie-pentru-magistrala-5-de-metrou-eroilor-iancului-anul-viitor/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-m5-design-contract-2021",
+      "title": "HotNews.ro: Magistrala de metrou M5: A fost semnat contractul de proiectare pentru secțiunea Eroilor - Universitate - Piața Iancului (29 October 2021)",
+      "url": "https://hotnews.ro/magistrala-de-metrou-m5-a-fost-semnat-contractul-de-proiectare-pentru-sectiunea-eroilor-universitate-piata-iancului-1554560",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-m5-deadlines-2025",
+      "title": "Economica.net: Magistrala 5. Când va ajunge metroul din Drumul Taberei la Universitate și Piața Iancului (16 February 2025)",
+      "url": "https://www.economica.net/magistrala-5-de-metrou_810603.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "profit-m5-iancului-pantelimon-2016",
+      "title": "Profit.ro: Proiectarea metroului Iancului-Pantelimon și expertizarea terenurilor au costat 9 mil. euro. Proiectarea Eroilor-Iancului, contractată până la finele anului (12 June 2016)",
+      "url": "https://www.profit.ro/stiri/politic/proiectarea-metroului-iancului-pantelimon-si-expertizarea-terenurilor-au-costat-9-mil-euro-proiectarea-eroilor-iancului-contractata-pana-la-finele-anului-15500593",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }
