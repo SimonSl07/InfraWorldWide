@@ -21,17 +21,11 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2015-09-28",
         "constructionStart": "2016",
         "opened": "2020-08-26"
       },
       "lengthKm": 7.8,
-      "cost": {
-        "actual": {
-          "amount": 398.2,
-          "currency": "EUR",
-          "year": 2016
-        }
-      },
       "funding": [
         {
           "source": "EU",
@@ -73,7 +67,8 @@
         "en": "First stage of line 3: 7.8 km and eight stations from Hadzhi Dimitar via Orlov Most and the National Palace of Culture to Krasno Selo, built 2016–2020 at €398.2 million excluding VAT, including the depot and 20 trains. Opened 26 August 2020"
       },
       "sourceRefs": [
-        "metropolitan-bg"
+        "metropolitan-bg",
+        "metropoliten-l3s1-contracts"
       ],
       "geometryRef": "stage1-hadzhi-dimitar-krasno-selo"
     },
@@ -85,16 +80,37 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2017-02-20",
         "constructionStart": "2017-05-30",
         "opened": "2021-04-24"
       },
       "lengthKm": 3.8,
       "cost": {
+        "estimated": {
+          "amount": 178,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Excluding VAT. Pre-tender estimate for the design-and-build works tender, both lots."
+        },
         "actual": {
           "amount": 101.9,
           "currency": "EUR",
           "year": 2017
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 176.108762,
+              "currency": "BGN",
+              "year": 2017,
+              "scope": "works",
+              "note": "Excluding VAT. Design-and-build contracts 56 (BGN 80,973,184.56) and 57 (BGN 95,135,577.00)."
+            },
+            "date": "2017-02-20",
+            "sourceRef": "metropoliten-l3s2-contracts"
+          }
+        ]
       },
       "funding": [
         {
@@ -120,18 +136,34 @@
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Обединение „МЕТРОБИЛД ЗАПАД“ (design and build, km 11+941 – 14+278)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение „ГОРНА БАНЯ“ (design and build, km 14+278 – 15+749)",
+          "role": "builder"
+        }
+      ],
       "contract": {
         "value": {
-          "amount": 101.9,
-          "currency": "EUR",
-          "year": 2017
+          "amount": 176.108762,
+          "currency": "BGN",
+          "year": 2017,
+          "scope": "works",
+          "note": "Excluding VAT. Design-and-build contracts 56 (BGN 80,973,184.56) and 57 (BGN 95,135,577.00)."
         }
       },
       "note": {
         "en": "Second stage of line 3: 3.8 km and four stations (Ovcha Kupel, Moesia, Ovcha Kupel II, Gorna Banya) with an interchange to the national railway, started 30 May 2017 at €101.9 million excluding VAT and opened 24 April 2021"
       },
       "sourceRefs": [
-        "metropolitan-bg"
+        "metropolitan-bg",
+        "metropoliten-l3s2-contracts",
+        "metropoliten-l3s2-contract-56",
+        "metropoliten-l3s2-contract-57",
+        "metropoliten-l3s2-notice-2744"
       ],
       "geometryRef": "stage2-krasno-selo-gorna-banya"
     },
@@ -143,10 +175,28 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2022-03",
+        "tenderAwarded": "2021-10-21",
+        "constructionStart": "2022-03-21",
         "opened": "2026-08-14"
       },
       "lengthKm": 3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 186.26144,
+              "currency": "BGN",
+              "year": 2021,
+              "scope": "works",
+              "note": "Excluding VAT. Sum of the three civil design-and-build contracts: BGN 62,999,984.54 (lot 1), 75,081,394.50 (lot 2) and 48,180,061.30 (lot 3). Excludes lot 4."
+            },
+            "date": "2021-11-15",
+            "note": "Date the last of the three civil contracts was signed (lots 2 and 3 on 21 October 2021, lot 1 on 15 November 2021).",
+            "sourceRef": "metropoliten-l3e3-contracts"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -157,12 +207,41 @@
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "ХСС - МОНОЛИТ СОФИЯ ДЗЗД (design and build, lot 1)",
+          "role": "builder"
+        },
+        {
+          "name": "Трейс Груп Холд АД (design and build, lot 2)",
+          "role": "builder"
+        },
+        {
+          "name": "Джи Пи Груп АД (design and build, lot 3)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 186.26144,
+          "currency": "BGN",
+          "year": 2021,
+          "scope": "works",
+          "note": "Excluding VAT. Sum of the three civil design-and-build contracts: BGN 62,999,984.54 (lot 1), 75,081,394.50 (lot 2) and 48,180,061.30 (lot 3). Excludes lot 4."
+        }
+      },
       "note": {
-        "en": "Lot 1 of the line 3 extension: 3 km and three stations (Georgi Asparuhov Stadium, Vitinya and Gen. Vladimir Vazov) under Gen. Vladimir Vazov Blvd, with a 100-space park-and-ride. Works began at the end of March 2022; the three stations opened to passengers after noon on Friday 14 August 2026, which Metropoliten reported the same afternoon from the opening ceremony. No construction cost has been published for this lot"
+        "en": "Lot 1 of the line 3 extension: 3 km and three stations (Georgi Asparuhov Stadium, Vitinya and Gen. Vladimir Vazov) under Gen. Vladimir Vazov Blvd, with a 100-space park-and-ride. Metropoliten let it as four contracts: lot 4 signed on 29 September 2021, civil design-and-build lots 2 and 3 on 21 October 2021 and lot 1 on 15 November 2021. The three civil contracts total BGN 186.3 million excluding VAT. Works began on 21 March 2022; the three stations opened to passengers after noon on Friday 14 August 2026, which Metropoliten reported the same afternoon from the opening ceremony. On opening day Gradat.bg put the investment at BGN 282,321,041 excluding VAT (about €144.3 million); no final settled cost has been published.",
+        "ro": "Lotul 1 al prelungirii liniei 3: 3 km și trei stații (Stadionul Georgi Asparuhov, Vitinya și Gen. Vladimir Vazov) pe sub bulevardul Gen. Vladimir Vazov, cu o parcare park-and-ride de 100 de locuri. Metropoliten l-a atribuit prin patru contracte: lotul 4 semnat pe 29 septembrie 2021, loturile 2 și 3 de proiectare și execuție a lucrărilor civile pe 21 octombrie 2021, iar lotul 1 pe 15 noiembrie 2021. Cele trei contracte de lucrări civile totalizează 186,3 milioane de leva fără TVA. Lucrările au început pe 21 martie 2022; cele trei stații au fost deschise pentru călători vineri, 14 august 2026, după-amiaza, după cum a anunțat Metropoliten în aceeași zi de la ceremonia de inaugurare. În ziua deschiderii, Gradat.bg a indicat o investiție de 282.321.041 de leva fără TVA (circa 144,3 milioane de euro); niciun cost final decontat nu a fost publicat."
       },
       "sourceRefs": [
         "dnes-dir-bg",
-        "metropolitan-opened-2026"
+        "metropolitan-opened-2026",
+        "metropoliten-l3e3-contracts",
+        "metropoliten-l3e3-award-op1",
+        "metropoliten-l3e3-award-op2-3",
+        "gradat-levski-2026",
+        "sofia-bg-levski-start-2022"
       ],
       "geometryRef": "stage3-hadzhi-dimitar-levski"
     }
@@ -199,6 +278,66 @@
       "title": "Metropoliten Sofia: three new line 3 stations were opened on Vladimir Vazov Blvd",
       "url": "https://www.metropolitan.bg/aktualno/n.-najdenov-v-uspeshnite-proekti-priemstvenostta-dava-profesionalni-rezultati.-novi-tri-metrostanczii-ot-liniya-3-na-metroto-byaxa-otkriti-po-bul.-„vladimir-vazov”",
       "retrievedOn": "2026-09-08"
+    },
+    {
+      "id": "metropoliten-l3s1-contracts",
+      "title": "Metropoliten: procurement 00423-2014-0004 (line 3, stage 1), contracts and agreements (14 October 2015)",
+      "url": "https://metropolitan.nit.bg/obshhestveni-porchki/treta-metroliniya-depobul.-botevgradsko-shose-bul.vl.vazov-zhk-ovcha-kupel,-prvi-etap/dogovori-i-sporazumeniya.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-l3s2-contracts",
+      "title": "Metropoliten: procurement 00423-2016-0008 (line 3, stage 2), contracts and agreements (6 March 2017)",
+      "url": "https://metropolitan.nit.bg/proczeduri-po-zop/treta-metroliniya-s-chetiri-metrostanczii/dogovori-i-sporazumeniya.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-l3s2-contract-56",
+      "title": "Metropoliten: contract 56, line 3 stage 2, lot 1, km 11+941.33 – 14+277.56 (20 February 2017)",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/1700/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_56_%D0%BE%D0%B1_%D0%BF%D0%BE%D0%B7_1.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-l3s2-contract-57",
+      "title": "Metropoliten: contract 57, line 3 stage 2, lot 2, km 14+277.56 – 15+749.00 (20 February 2017)",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/1700/%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_57_%D0%BE%D0%B1_%D0%BF%D0%BE%D0%B7_2.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-l3s2-notice-2744",
+      "title": "Metropoliten: contract notice 2744, line 3 stage 2 (6 July 2016)",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/1692/%D0%9E%D0%B1%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B8%D0%B7%D1%85%E2%84%96_2744_%D0%BE%D1%82_060716.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-l3e3-contracts",
+      "title": "Metropoliten: procurement 00423-2019-0030 (line 3, stage III), contracts and agreements (13 December 2021)",
+      "url": "https://metropolitan.nit.bg/2019/proczeduri-po-zop/proektirane-i-stroitelstvo-na-liniya-3,-etap-iii/dogovori-i-sporazumeniya.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-l3e3-award-op1",
+      "title": "Metropoliten: contract award notice M-4007, line 3 stage III, lot 1 (8 December 2021)",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/3458/%D0%9E%D0%B1%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B0%20%D0%BF%D0%BE%D1%80%D1%8A%D1%87%D0%BA%D0%B0%20%D0%B8%D0%B7%D1%85.%20%E2%84%96%20%D0%9C-4007%20%D0%BE%D1%82%2008.12.2021%20%D0%B3.%20-%20%D0%9E%D0%9F%201.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-l3e3-award-op2-3",
+      "title": "Metropoliten: contract award notice M-3851, line 3 stage III, lots 2 and 3 (19 November 2021)",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/3458/%D0%9E%D0%B1%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B7%D0%B0%20%D0%B2%D1%8A%D0%B7%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B0%20%D0%BF%D0%BE%D1%80%D1%8A%D1%87%D0%BA%D0%B0%20%D0%B8%D0%B7%D1%85.%20%E2%84%96%20%D0%9C-3851%20%D0%BE%D1%82%2019.11.2021%20%D0%B3.%20-%20%D0%9E%D0%9F%202%20%D0%B8%203.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "gradat-levski-2026",
+      "title": "Gradat.bg: The metro reached Levski G, three new line 3 stations now carry passengers (14 August 2026)",
+      "url": "https://gradat.bg/infrastruktura-i-gradska-sreda/metroto-stigna-do-levski-g-tri-novi-stancii-ot-liniya-3-veche",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "sofia-bg-levski-start-2022",
+      "title": "Sofia Municipality: Започна разширението на Третата линия на метрото към ж.к. „Левски” (21 March 2022)",
+      "url": "https://www.sofia.bg/w/zapocna-razsirenieto-na-tretata-linia-na-metroto-k-m-z-k-levski-",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

@@ -65,17 +65,89 @@
         "opened": "2023-11-15"
       },
       "lengthKm": 1.6,
+      "cost": {
+        "estimated": {
+          "amount": 146,
+          "currency": "RON",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Excluding VAT. Approximate estimate announced with the tender, September 2019."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 157.64,
+              "currency": "RON",
+              "year": 2020,
+              "note": "Design-and-build contract awarded by Sector 4 to Somet – TIAB – UTI – Construcții Erbașu. VAT treatment not stated."
+            },
+            "date": "2020-04",
+            "sourceRef": "economica-tudor-arghezi-2021"
+          },
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 214.89,
+              "currency": "RON",
+              "scope": "total",
+              "note": "Total value of the POIM financing contract, of which 179.97 million lei eligible. VAT treatment not stated."
+            },
+            "date": "2020-12",
+            "sourceRef": "economica-tudor-arghezi-2021"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 152.98,
+            "currency": "RON"
+          },
+          "detail": {
+            "en": "Cohesion Fund, 85% of the 179.97 million lei eligible value, through the Large Infrastructure Operational Programme (POIM) 2014–2020, Priority Axis 1.",
+            "ro": "Fondul de Coeziune, 85% din valoarea eligibilă de 179,97 milioane de lei, prin Programul Operațional Infrastructură Mare (POIM) 2014–2020, Axa prioritară 1."
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 26.99,
+            "currency": "RON"
+          },
+          "detail": {
+            "en": "15% of the eligible value, from the POIM managing authority's budget.",
+            "ro": "15% din valoarea eligibilă, din bugetul AM POIM."
+          }
+        }
+      ],
       "contractors": [
         {
           "name": "Somet – TIAB – UTI – Construcții Erbașu",
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 157.64,
+          "currency": "RON",
+          "year": 2020,
+          "note": "Design and build: technical design and execution of the station, track and systems. VAT treatment not stated."
+        },
+        "totalMonths": 24
+      },
       "note": {
-        "en": "1.6 km and one station towards the southern ring road, approved in January 2020 and contracted by the Sector 4 city hall in April 2020. Built at grade, so Berceni and Tudor Arghezi are the only two surface stations on the network. Until 8 May 2024 trains ran to it as a shuttle from Berceni, because the signalling was not finished"
+        "en": "1.6 km and one station towards the southern ring road, approved in January 2020 and contracted by the Sector 4 city hall in April 2020. Built at grade, so Berceni and Tudor Arghezi are the only two surface stations on the network. Until 8 May 2024 trains ran to it as a shuttle from Berceni, because the signalling was not finished. Tender notice (October 2019) gave 22 months, 4 design and 18 works; the signed contract runs 24 months. At opening, Sector 4 put the investment in the station and its 350-space park&ride at 50 million euro of EU grants.",
+        "ro": "1,6 km și o stație spre centura de sud, aprobate în ianuarie 2020 și contractate de Primăria Sectorului 4 în aprilie 2020. Construită la suprafață, astfel că Berceni și Tudor Arghezi sunt singurele două stații de suprafață din rețea. Până la 8 mai 2024 trenurile au circulat până aici în regim de navetă de la Berceni, deoarece semnalizarea nu era finalizată. Anunțul de licitație (octombrie 2019) prevedea 22 de luni, 4 de proiectare și 18 de execuție; contractul semnat are 24 de luni. La inaugurare, Sectorul 4 a indicat o investiție de 50 de milioane de euro din fonduri europene nerambursabile pentru stație și parcarea park&ride de 350 de locuri."
       },
       "sourceRefs": [
-        "wikipedia-bucharest-metro-line-m2"
+        "wikipedia-bucharest-metro-line-m2",
+        "economica-tudor-arghezi-2021",
+        "ps4-tudor-arghezi-tender-2019",
+        "ps4-tudor-arghezi-tender-terms-2019",
+        "ps4-tudor-arghezi-opening-2023"
       ],
       "geometryRef": "berceni-tudor-arghezi"
     },
@@ -113,6 +185,33 @@
     {
       "title": "UrbanRail.Net: Bucharest Metro",
       "url": "https://www.urbanrail.net/eu/ro/buc/bucurest.htm"
+    },
+    {
+      "id": "economica-tudor-arghezi-2021",
+      "title": "Economica.net: Metrorex: A fost finalizată linia către noua stație de metrou Tudor Arghezi (11 October 2021)",
+      "url": "https://www.economica.net/metrorex-a-fost-finalizata-linia-catre-noua-statie-de-metrou-tudor-arghezi-foto_536620.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ps4-tudor-arghezi-tender-2019",
+      "title": "Primăria Sectorului 4: Primăria Sectorului 4 scoate la licitație proiectul noii stații de metrou de pe Șoseaua Berceni (September 2019)",
+      "url": "http://ps4.ro/comunicate-de-presa/primaria-sectorului-4-scoate-la-licitatie-proiectul-noii-statii-de-metrou-de-pe-soseaua-berceni/",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20191120212122/http://ps4.ro:80/comunicate-de-presa/primaria-sectorului-4-scoate-la-licitatie-proiectul-noii-statii-de-metrou-de-pe-soseaua-berceni/"
+    },
+    {
+      "id": "ps4-tudor-arghezi-tender-terms-2019",
+      "title": "Primăria Sectorului 4: Proiectul noii stații de metrou de pe Șoseaua Berceni intră pe ultima sută de metri (2 October 2019)",
+      "url": "http://ps4.ro/comunicate-de-presa/proiectul-noii-statii-de-metrou-de-pe-soseaua-berceni-intra-pe-ultima-suta-de-metri/",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20191021043244/http://ps4.ro:80/comunicate-de-presa/proiectul-noii-statii-de-metrou-de-pe-soseaua-berceni-intra-pe-ultima-suta-de-metri/"
+    },
+    {
+      "id": "ps4-tudor-arghezi-opening-2023",
+      "title": "Primăria Sectorului 4: Sectorul 4 a dat în folosință stația de metrou Tudor Arghezi (15 November 2023)",
+      "url": "https://ps4.ro/comunicate-de-presa/sectorul-4-a-dat-in-folosinta-statia-de-metrou-tudor-arghezi/",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20240226005247/https://ps4.ro/comunicate-de-presa/sectorul-4-a-dat-in-folosinta-statia-de-metrou-tudor-arghezi/"
     },
     {
       "title": "OpenStreetMap contributors (geometry of the opened sections, ODbL)",

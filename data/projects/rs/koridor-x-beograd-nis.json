@@ -6,7 +6,8 @@
     "en": "Corridor X Railway Modernisation (Belgrade – Niš)"
   },
   "description": {
-    "en": "Upgrade of Serbian mainline 102 between Belgrade and Niš to 200 km/h, backed by an EIB, EBRD and EU financing package reported at up to EUR 2.2 billion for the corridor as a whole. Only Stalać–Đunis, where a new double-track alignment is being built, is under construction; the rest is at planning stage with no construction-start or opening dates yet published, so none are recorded. Published subsection lengths disagree with each other: 83, 62 and 58 km for the three northern subsections against 48.3 km given for Paraćin–Trupale–Međurovo. Lengths here are therefore measured off the mapped existing alignment, cut at the stations that bound each subsection, and the geometry follows the line in use today rather than the new Stalać–Đunis alignment. The EUR 2.2 billion figure covers the whole programme and is not apportioned per subsection, so no per-lot cost is recorded."
+    "en": "Upgrade of Serbian mainline 102 between Belgrade and Niš to 200 km/h, backed by an EIB, EBRD and EU financing package reported at up to EUR 2.2 billion for the corridor as a whole. Stalać–Đunis, where a new double-track alignment is to be built, was contracted on 27 November 2025, with works announced to start in March 2027. A prequalification call for one contract covering Paraćin–Stalać, Đunis–Trupale and Trupale–Međurovo opened on 4 August 2026. No construction start or opening date is recorded for any subsection. Published subsection lengths disagree with each other: 83, 62 and 58 km for the three northern subsections against 48.3 km given for Paraćin–Trupale–Međurovo. Lengths here are therefore measured off the mapped existing alignment, cut at the stations that bound each subsection, and the geometry follows the line in use today rather than the new Stalać–Đunis alignment. The EUR 2.2 billion figure covers the whole programme and is not apportioned per subsection; the only per-lot figure recorded is the Stalać–Đunis contract value.",
+    "ro": "Modernizarea magistralei feroviare sârbe 102 între Belgrad și Niš pentru 200 km/h, cu un pachet de finanțare BEI, BERD și UE raportat la până la 2,2 miliarde EUR pentru întregul coridor. Stalać–Đunis, unde urmează să fie construit un nou traseu dublu, a fost contractat la 27 noiembrie 2025, iar începerea lucrărilor a fost anunțată pentru martie 2027. Un apel de precalificare pentru un singur contract care acoperă Paraćin–Stalać, Đunis–Trupale și Trupale–Međurovo a fost deschis la 4 august 2026. Pentru niciun subsector nu este înregistrată o dată de începere a lucrărilor sau de deschidere. Lungimile publicate ale subsectoarelor nu concordă: 83, 62 și 58 km pentru cele trei subsectoare nordice, față de 48,3 km indicați pentru Paraćin–Trupale–Međurovo. De aceea, lungimile de aici sunt măsurate pe traseul existent cartografiat, tăiat la stațiile care delimitează fiecare subsector, iar geometria urmează linia folosită astăzi, nu noul traseu Stalać–Đunis. Cifra de 2,2 miliarde EUR acoperă întregul program și nu este defalcată pe subsectoare; singura cifră pe lot înregistrată este valoarea contractului Stalać–Đunis."
   },
   "corridors": [
     "pan-european-x"
@@ -79,12 +80,23 @@
       "name": {
         "en": "Paraćin – Stalać"
       },
-      "status": "planned",
+      "status": "tendered",
       "lengthKm": 21.23,
       "profile": {
         "works": "upgrade",
         "maxSpeedKmh": 200
       },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-08-04",
+          "note": {
+            "en": "Prequalification call (EIB rules) for one design-and-build contract covering Paraćin – Stalać, Đunis – Trupale and Trupale – Međurovo. Applications close 2 October 2026. Indicative contract start 15 November 2026, 48 months for the combined contract.",
+            "ro": "Apel de precalificare (reguli BEI) pentru un singur contract de proiectare și execuție care acoperă Paraćin – Stalać, Đunis – Trupale și Trupale – Međurovo. Termenul pentru candidaturi: 2 octombrie 2026. Începere orientativă a contractului: 15 noiembrie 2026, 48 de luni pentru întregul contract."
+          },
+          "sourceRef": "ted-538901-2026"
+        }
+      ],
       "funding": [
         {
           "source": "loan",
@@ -102,6 +114,9 @@
         {
           "source": "national_budget"
         }
+      ],
+      "sourceRefs": [
+        "ted-538901-2026"
       ],
       "geometryRef": "paracin-stalac"
     },
@@ -110,12 +125,42 @@
       "name": {
         "en": "Stalać – Đunis"
       },
-      "status": "under_construction",
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-11-27"
+      },
       "lengthKm": 18.57,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 348.90503928,
+              "currency": "EUR",
+              "year": 2025,
+              "scope": "works",
+              "note": "Design-and-build contract (FIDIC Yellow Book), design and works. Excludes Tunnel No. 4 (3,275 m), procured separately. VAT treatment not stated."
+            },
+            "date": "2025-11-27",
+            "sourceRef": "ted-846958-2025"
+          }
+        ]
+      },
       "profile": {
         "works": "upgrade",
-        "maxSpeedKmh": 200
+        "maxSpeedKmh": 160
       },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-11-27",
+          "note": {
+            "en": "Contract signed with the Gülermak – YSE joint venture.",
+            "ro": "Contract semnat cu asocierea Gülermak – YSE."
+          },
+          "sourceRef": "ted-846958-2025"
+        }
+      ],
       "funding": [
         {
           "source": "loan",
@@ -134,6 +179,33 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "GULERMAK AGIR SANAYI İNSAAT VE TAAHHUT A.S. & YSE Yapı Sanayi ve Ticaret A.S.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 68,
+        "value": {
+          "amount": 348.90503928,
+          "currency": "EUR",
+          "year": 2025,
+          "scope": "works",
+          "note": "Design-and-build contract (FIDIC Yellow Book), design and works. Excludes Tunnel No. 4 (3,275 m), procured separately. VAT treatment not stated."
+        },
+        "noticeReference": "846958-2025",
+        "noticeUrl": "https://ted.europa.eu/en/notice/-/detail/846958-2025"
+      },
+      "note": {
+        "en": "Works announced to start in March 2027 (President Vučić, reported by Infrastruktura železnice Srbije on 21 June 2026). The design-and-build contract excludes Tunnel No. 4 (3,275 m), procured separately; that 2021 tender (TED 384541-2021) was discontinued. Design speed 160 km/h for this subsection per the 2022 contract notice.",
+        "ro": "Începerea lucrărilor a fost anunțată pentru martie 2027 (președintele Vučić, potrivit Infrastruktura železnice Srbije, 21 iunie 2026). Contractul de proiectare și execuție nu include tunelul nr. 4 (3.275 m), licitat separat; acea licitație din 2021 (TED 384541-2021) a fost anulată. Viteza de proiectare pentru acest subsector este de 160 km/h, conform anunțului de participare din 2022."
+      },
+      "sourceRefs": [
+        "ted-846958-2025",
+        "ted-323154-2022",
+        "izs-2026-06-21-dispatch-centre"
+      ],
       "geometryRef": "stalac-djunis"
     },
     {
@@ -141,12 +213,23 @@
       "name": {
         "en": "Đunis – Trupale (Niš)"
       },
-      "status": "planned",
+      "status": "tendered",
       "lengthKm": 39.79,
       "profile": {
         "works": "upgrade",
         "maxSpeedKmh": 200
       },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-08-04",
+          "note": {
+            "en": "Prequalification call (EIB rules) for one design-and-build contract covering Paraćin – Stalać, Đunis – Trupale and Trupale – Međurovo. Applications close 2 October 2026. Indicative contract start 15 November 2026, 48 months for the combined contract.",
+            "ro": "Apel de precalificare (reguli BEI) pentru un singur contract de proiectare și execuție care acoperă Paraćin – Stalać, Đunis – Trupale și Trupale – Međurovo. Termenul pentru candidaturi: 2 octombrie 2026. Începere orientativă a contractului: 15 noiembrie 2026, 48 de luni pentru întregul contract."
+          },
+          "sourceRef": "ted-538901-2026"
+        }
+      ],
       "funding": [
         {
           "source": "loan",
@@ -164,6 +247,9 @@
         {
           "source": "national_budget"
         }
+      ],
+      "sourceRefs": [
+        "ted-538901-2026"
       ],
       "geometryRef": "djunis-trupale"
     }
@@ -188,6 +274,30 @@
     {
       "title": "OpenStreetMap contributors: route geometry (ODbL)",
       "url": "https://www.openstreetmap.org/"
+    },
+    {
+      "id": "ted-846958-2025",
+      "title": "TED: Contract award notice 846958-2025, Belgrade – Niš, section Stalać – Đunis, Lot 2 (19 December 2025)",
+      "url": "https://ted.europa.eu/en/notice/-/detail/846958-2025",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ted-323154-2022",
+      "title": "TED: Contract notice 323154-2022, design and works for the Belgrade – Niš section Stalać – Đunis (2022)",
+      "url": "https://ted.europa.eu/en/notice/-/detail/323154-2022",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "izs-2026-06-21-dispatch-centre",
+      "title": "Infrastruktura železnice Srbije: Predsednik Vučić obišao novoizgrađeni Jedinstveni dispečerski centar (21 June 2026)",
+      "url": "https://infrazs.rs/%d0%bf%d1%80%d0%b5%d0%b4%d1%81%d0%b5%d0%b4%d0%bd%d0%b8%d0%ba-%d0%b2%d1%83%d1%87%d0%b8%d1%9b-%d0%be%d0%b1%d0%b8%d1%88%d0%b0%d0%be-%d0%bd%d0%be%d0%b2%d0%be%d0%b8%d0%b7%d0%b3%d1%80%d0%b0%d1%92%d0%b5/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ted-538901-2026",
+      "title": "TED: Contract notice 538901-2026, Section 3 Paraćin – Trupale – Međurovo (design and build), Belgrade – Niš Railway Modernisation Project (4 August 2026)",
+      "url": "https://ted.europa.eu/en/notice/-/detail/538901-2026",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

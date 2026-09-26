@@ -87,12 +87,11 @@
       "lengthKm": 51.7,
       "cost": {
         "estimated": {
-          "amount": 1360,
+          "amount": 5600,
           "currency": "EUR",
-          "year": 2018,
           "scope": "programme",
           "confidence": "estimated",
-          "note": "The October 2018 public-private partnership estimate covers Ploiești–Comarnic–Brașov, about 100 km, so it spans well beyond this section. Recorded as a programme figure and kept out of per-section rankings for that reason."
+          "note": "CNIR multi-criteria route analysis estimate for Ploiești – Râșnov (112.74 km), about 5.6 billion euro (HotNews, 20 April 2026). Spans well beyond this section. No price year or VAT treatment stated; CNIR says the final value will be known when the feasibility study ends. Replaces the October 2018 PPP estimate of 1,360 million euro for Ploiești–Comarnic–Brașov (about 100 km)."
         }
       },
       "events": [
@@ -153,7 +152,8 @@
       ],
       "sourceRefs": [
         "wikipedia-a3",
-        "wikipedia-a3-ro"
+        "wikipedia-a3-ro",
+        "hotnews-ploiesti-brasov-2026"
       ],
       "geometryRef": "comarnic-brasov",
       "profile": {
@@ -168,22 +168,39 @@
       },
       "status": "opened",
       "dates": {
-        "tenderAwarded": "2017-10",
+        "tenderAwarded": "2017-10-02",
         "constructionStart": "2017-10-17",
         "opened": "2020-12"
       },
       "lengthKm": 6.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 118.0197018,
+              "currency": "RON",
+              "year": 2017,
+              "scope": "works",
+              "note": "Design-and-build price for Lot 2 Predeal – Cristian, km 162+300 – km 168+600, and connecting road. Excl. VAT, including 5% contingency (5.51 million lei)."
+            },
+            "date": "2017-10-02",
+            "note": "Contract signed 2 October 2017 (Mediafax). The minister gave the value as 118 million lei.",
+            "sourceRef": "economica-rasnov-cristian-award"
+          }
+        ]
+      },
       "profile": {
         "terrain": "mountain"
       },
       "events": [
         {
           "kind": "awarded",
-          "date": "2017-10",
+          "date": "2017-10-02",
           "note": {
             "en": "EU-financed contract awarded after the PPP attempts failed."
           },
-          "sourceRef": "wikipedia-a3"
+          "sourceRef": "mediafax-rasnov-cristian-contract"
         },
         {
           "kind": "construction_start",
@@ -197,14 +214,28 @@
         }
       ],
       "contract": {
-        "executionMonths": 24
+        "designMonths": 6,
+        "executionMonths": 18,
+        "totalMonths": 24,
+        "value": {
+          "amount": 118.0197018,
+          "currency": "RON",
+          "year": 2017,
+          "scope": "works",
+          "note": "Design-and-build price for Lot 2 Predeal – Cristian, km 162+300 – km 168+600, and connecting road. Excl. VAT, including 5% contingency (5.51 million lei)."
+        }
       },
       "funding": [
         {
           "source": "EU",
           "detail": {
-            "en": "After the PPP attempts failed, the government turned to EU Operational Programmes; EU financing was secured in 2017 for the Râșnov–Cristian portion (contract October 2017, two-year execution term).",
-            "ro": "După eșecul tentativelor de PPP, Guvernul s-a reorientat către Programele Operaționale ale Uniunii Europene; finanțarea europeană a fost obținută în 2017 pentru porțiunea Râșnov–Cristian (contract în octombrie 2017, termen de execuție de doi ani)."
+            "en": "After the PPP attempts failed, the government turned to EU Operational Programmes for the Râșnov–Cristian portion. Works contract signed October 2017 (24-month term); ERDF financing contract signed 20 May 2019.",
+            "ro": "După eșecul tentativelor de PPP, Guvernul s-a reorientat către Programele Operaționale ale Uniunii Europene pentru porțiunea Râșnov–Cristian. Contractul de lucrări a fost semnat în octombrie 2017 (termen de 24 de luni); contractul de finanțare FEDR a fost semnat pe 20 mai 2019."
+          },
+          "amount": {
+            "amount": 132.58940337,
+            "currency": "RON",
+            "note": "Non-refundable ERDF (FEDR) grant via the Intermediate Body for Transport, out of 155.99 million lei eligible. Financing contract signed 20 May 2019. Total project value in that contract 202.24 million lei, including VAT and 46.25 million lei of non-eligible costs. Covers Lot 2 Predeal – Cristian, km 162+300 – km 168+600, and the connecting road."
           }
         }
       ],
@@ -223,7 +254,10 @@
       },
       "sourceRefs": [
         "wikipedia-a3",
-        "wikipedia-a3-ro"
+        "wikipedia-a3-ro",
+        "economica-rasnov-cristian-award",
+        "mediafax-rasnov-cristian-contract",
+        "zf-rasnov-cristian-financing"
       ],
       "geometryRef": "rasnov-cristian"
     }
@@ -238,6 +272,30 @@
       "id": "wikipedia-a3-ro",
       "title": "Wikipedia (ro): Autostrada A3 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
+    },
+    {
+      "id": "economica-rasnov-cristian-award",
+      "title": "Economica.net: Autostrada Comarnic-Brașov, a fost desemnat în sfârșit un constructor pentru lotul Râșnov-Cristian (November 2016)",
+      "url": "https://www.economica.net/autostrada-comarnic-brasov--a-fost-desemnat-in-sfarsit-un-constructor-pentru-lotul-rasnov-cristian_129946.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediafax-rasnov-cristian-contract",
+      "title": "Mediafax: CNAIR a semnat contractul pentru Lotul 5 din Autostrada Comarnic-Brașov: 2,6 mil. euro/kilometru (2 October 2017)",
+      "url": "https://www.mediafax.ro/politic/cnair-a-semnat-contractul-pentru-lotul-5-din-autostrada-comarnic-brasov-2-6-mil-euro-kilometru-16751071",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "zf-rasnov-cristian-financing",
+      "title": "Ziarul Financiar: Contractul de finanțare pentru un sector al tronsonului Comarnic – Brașov a fost semnat (20 May 2019)",
+      "url": "https://www.zf.ro/auto/ministerul-transporturilor-contractul-de-finantare-pentru-un-sector-al-tronsonului-comarnic-brasov-a-fost-semnat-valoarea-totala-este-de-peste-200-milioane-euro-18136230",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-ploiesti-brasov-2026",
+      "title": "HotNews: A fost deblocat proiectul autostrăzii Ploiești-Brașov (20 April 2026)",
+      "url": "https://hotnews.ro/a-fost-deblocat-proiectul-autostrazii-ploiesti-brasov-dupa-lungi-negocieri-am-aprobat-care-este-orizontul-de-timp-pentru-finalizare-2223570",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

@@ -6,7 +6,8 @@
     "en": "A4 Maritsa Motorway"
   },
   "description": {
-    "en": "A 117 km motorway in southern Bulgaria linking the Trakia motorway (A1) near Chirpan to the Turkish border at Kapitan Andreevo, on Pan-European Corridor IV and European route E80. It opened in phases between October 2010 and October 2015. The western sections, Chirpan–Haskovo and Haskovo–Harmanli, were co-funded by the EU; the eastern sections were financed nationally."
+    "en": "A 117 km motorway in southern Bulgaria linking the Trakia motorway (A1) near Chirpan to the Turkish border at Kapitan Andreevo, on Pan-European Corridor IV and European route E80. It opened in phases between October 2010 and October 2015. A 16.66 km Harmanli – Lyubimets section had first opened on 16 May 2007, then closed for repair and reopened with Lyubimets – Svilengrad on 2 October 2010. The western sections, Chirpan–Haskovo and Haskovo–Harmanli, were co-funded by the EU; the eastern sections were financed nationally.",
+    "ro": "O autostradă de 117 km în sudul Bulgariei, care leagă autostrada Trakia (A1) de lângă Chirpan de granița cu Turcia la Kapitan Andreevo, pe Coridorul paneuropean IV și drumul european E80. S-a deschis în etape între octombrie 2010 și octombrie 2015. Un tronson de 16,66 km Harmanli – Lyubimets fusese deschis pe 16 mai 2007, apoi închis pentru reparații și redeschis împreună cu Lyubimets – Svilengrad pe 2 octombrie 2010. Tronsoanele vestice, Chirpan–Haskovo și Haskovo–Harmanli, au fost cofinanțate de UE; tronsoanele estice au fost finanțate din fonduri naționale."
   },
   "corridors": [
     "pan-european-iv"
@@ -34,31 +35,104 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2011-07",
+        "tenderAwarded": "2011-07-25",
+        "constructionStart": "2011-07-26",
         "opened": "2015-05-28"
       },
       "lengthKm": 34,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 122.137,
+              "currency": "BGN",
+              "year": 2011,
+              "scope": "works",
+              "note": "Excluding VAT. 146.5644 million leva including VAT."
+            },
+            "date": "2011-07-25",
+            "note": "Works contract signing date from the API Lot 2 page.",
+            "sourceRef": "api-maritsa-programme"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.8,
+          "detail": {
+            "en": "Cohesion Fund via OP Transport 2007–2013. The grant agreement for Lots 1 and 2 together is 313.80 million leva including VAT: 251.04 million from the Cohesion Fund, 62.76 million national co-financing.",
+            "ro": "Fondul de coeziune prin PO Transport 2007–2013. Contractul de finanțare pentru loturile 1 și 2 împreună este de 313,80 milioane de leva cu TVA: 251,04 milioane din Fondul de coeziune, 62,76 milioane cofinanțare națională."
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.2,
+          "detail": {
+            "en": "National co-financing.",
+            "ro": "Cofinanțare națională."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Сдружение “Марица Хайуей” (ПСТ Холд АД – ПООР БАУ ГМБХ)",
+          "role": "builder"
+        }
+      ],
       "contract": {
         "executionMonths": 46,
-        "totalMonths": 46
+        "totalMonths": 46,
+        "value": {
+          "amount": 122.137,
+          "currency": "BGN",
+          "year": 2011,
+          "scope": "works",
+          "note": "Excluding VAT. 146.5644 million leva including VAT."
+        }
       },
       "sourceRefs": [
-        "wikipedia-maritsa-motorway"
+        "wikipedia-maritsa-motorway",
+        "api-maritsa-lot-2",
+        "api-maritsa-programme"
       ],
       "geometryRef": "haskovo-harmanli"
     },
     {
       "id": "harmanli-lyubimets",
       "name": {
-        "en": "Harmanli – Lyubimets"
+        "en": "Harmanli – Svilengrad",
+        "ro": "Harmanli – Svilengrad"
       },
       "status": "opened",
       "dates": {
-        "opened": "2010-10"
+        "opened": "2010-10-02"
       },
       "lengthKm": 31,
+      "cost": {
+        "actual": {
+          "amount": 36,
+          "currency": "BGN",
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Works on the 31 km opened on 2 October 2010 (Harmanli – Lyubimets rehabilitation and new Lyubimets – Svilengrad). Excludes the earlier Harmanli – Lyubimets build, opened in May 2007 for about 65 million leva. VAT not stated."
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget, through the Road Infrastructure Agency, for the works opened in October 2010.",
+            "ro": "Bugetul de stat, prin Agenția pentru Infrastructură Rutieră, pentru lucrările deschise în octombrie 2010."
+          }
+        }
+      ],
       "sourceRefs": [
-        "wikipedia-maritsa-motorway"
+        "wikipedia-maritsa-motorway",
+        "dariknews-maritsa-2010",
+        "vestnik-stroitel-maritsa-2015"
       ],
       "geometryRef": "harmanli-lyubimets"
     }
@@ -68,6 +142,30 @@
       "id": "wikipedia-maritsa-motorway",
       "title": "Wikipedia: Maritsa motorway",
       "url": "https://en.wikipedia.org/wiki/Maritsa_motorway"
+    },
+    {
+      "id": "api-maritsa-lot-2",
+      "title": "Road Infrastructure Agency: AM Maritsa Lot 2 (archived 2014)",
+      "url": "https://web.archive.org/web/20140730100318/http://www.api.bg/index.php/bg/proekti/opt/izgrazhdane-na-am-marica-opt/am-marica-lot-2/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "api-maritsa-programme",
+      "title": "Road Infrastructure Agency: AM Maritsa, OP Transport project page (archived 2016)",
+      "url": "https://web.archive.org/web/20160305040305/http://www.api.bg/index.php/bg/proekti/opt/izgrazhdane-na-am-marica-opt",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "dariknews-maritsa-2010",
+      "title": "Darik News: Premier Boyko Borisov opens a section of the Maritsa motorway (2 October 2010)",
+      "url": "http://dariknews.bg/view_article.php?article_id=596014",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "vestnik-stroitel-maritsa-2015",
+      "title": "Vestnik Stroitel: Lot 2 of AM Maritsa, another successful OP Transport project (11 June 2015)",
+      "url": "https://vestnikstroitel.bg/tema/110080_lot-2-na-am-marica-poredniyat-uspeshen-proekt-po-opt",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

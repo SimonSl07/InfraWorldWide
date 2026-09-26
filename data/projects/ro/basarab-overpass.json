@@ -8,8 +8,8 @@
     "ro": "Pasajul Basarab, București"
   },
   "description": {
-    "en": "Road, tram and pedestrian overpass of 1,920 m closing the inner ring of Bucharest between Nicolae Titulescu Boulevard and Grozăvești Road. It crosses the Dâmbovița river and the throat of Gara de Nord. The cable-stayed section, designed by Javier Manterola and carried on two pylons of about 84 m with 60 cables, is 44.5 m wide, the widest cable-stayed bridge in Europe. Astaldi and FCC Construcción built it between November 2006 and June 2011 at a cost of about €255 million; it carries around 50,000 vehicles a day and Bucharest's only circular tram line.",
-    "ro": "Pasaj rutier, de tramvai și pietonal de 1.920 m care închide inelul central al Bucureștiului între Bulevardul Nicolae Titulescu și Șoseaua Grozăvești. Traversează râul Dâmbovița și gâtuitura Gării de Nord. Zona hobanată, proiectată de Javier Manterola și susținută de doi piloni de circa 84 m cu 60 de hobane, are 44,5 m lățime, fiind cel mai lat pod hobanat din Europa. Astaldi și FCC Construcción l-au construit între noiembrie 2006 și iunie 2011, la un cost de circa 255 de milioane de euro; este traversat zilnic de aproximativ 50.000 de vehicule și de singura linie circulară de tramvai a Bucureștiului."
+    "en": "Road, tram and pedestrian overpass of 1,920 m closing the inner ring of Bucharest between Nicolae Titulescu Boulevard and Grozăvești Road. It crosses the Dâmbovița river and the throat of Gara de Nord. The cable-stayed section, designed by Javier Manterola and carried on two pylons of about 84 m with 60 cables, is 44.5 m wide, the widest cable-stayed bridge in Europe. Astaldi and FCC Construcción built it between September 2006 and June 2011 at a cost of about €255 million; it carries around 50,000 vehicles a day and Bucharest's only circular tram line.",
+    "ro": "Pasaj rutier, de tramvai și pietonal de 1.920 m care închide inelul central al Bucureștiului între Bulevardul Nicolae Titulescu și Șoseaua Grozăvești. Traversează râul Dâmbovița și gâtuitura Gării de Nord. Zona hobanată, proiectată de Javier Manterola și susținută de doi piloni de circa 84 m cu 60 de hobane, are 44,5 m lățime, fiind cel mai lat pod hobanat din Europa. Astaldi și FCC Construcción l-au construit între septembrie 2006 și iunie 2011, la un cost de circa 255 de milioane de euro; este traversat zilnic de aproximativ 50.000 de vehicule și de singura linie circulară de tramvai a Bucureștiului."
   },
   "lots": [
     {
@@ -20,7 +20,7 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2006-11",
+        "constructionStart": "2006-09",
         "opened": "2011-06-19",
         "tenderAwarded": "2006-07-10"
       },
@@ -30,7 +30,20 @@
           "amount": 255,
           "currency": "EUR",
           "year": 2011
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 471.634475,
+              "currency": "RON",
+              "year": 2006,
+              "note": "Including VAT. Design and execution contract."
+            },
+            "date": "2006-07-10",
+            "sourceRef": "cotidianul-ro-overpass"
+          }
+        ]
       },
       "funding": [
         {
@@ -56,10 +69,17 @@
         }
       ],
       "contract": {
-        "executionMonths": 28
+        "executionMonths": 28,
+        "value": {
+          "amount": 471.634475,
+          "currency": "RON",
+          "year": 2006,
+          "note": "Including VAT. Design and execution contract."
+        }
       },
       "note": {
-        "en": "Built 2006–2011 by Astaldi and FCC Construcción for about €255 million; officially inaugurated 17 June 2011 and opened to traffic on 19 June 2011"
+        "en": "Built 2006–2011 by Astaldi and FCC Construcción for about €255 million; officially inaugurated 17 June 2011 and opened to traffic on 19 June 2011. The order to start works was issued in September 2006; after site setup, works effectively began in early 2007.",
+        "ro": "Construit în 2006–2011 de Astaldi și FCC Construcción pentru circa 255 de milioane de euro; inaugurat oficial pe 17 iunie 2011 și deschis circulației pe 19 iunie 2011. Ordinul de începere a lucrărilor a fost emis în septembrie 2006; după organizarea de șantier, lucrările au început efectiv la începutul lui 2007."
       },
       "sourceRefs": [
         "cotidianul-ro-overpass",
@@ -80,8 +100,9 @@
     },
     {
       "id": "cotidianul-ro-overpass",
-      "title": "cotidianul.ro",
-      "url": "https://www.cotidianul.ro/cat-costa-de-fapt-pasajul-basarab/"
+      "title": "cotidianul.ro (citing B365.ro): Cât costă, de fapt, Pasajul Basarab (2011-04-05)",
+      "url": "https://www.cotidianul.ro/cat-costa-de-fapt-pasajul-basarab/",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

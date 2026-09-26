@@ -16,11 +16,88 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2011-09-21",
+        "constructionStart": "2011-09-26",
         "opened": "2013-08"
       },
       "lengthKm": 8.46,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 38.34037134,
+              "currency": "BGN",
+              "year": 2011,
+              "scope": "works",
+              "note": "Including VAT."
+            },
+            "date": "2011-09-21",
+            "note": "Works contract РД-33-26.",
+            "sourceRef": "api-hemus-sofia-yana"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund, OP Transport 2007–2013 (grant contract ДОПТ 15 of 14 October 2011)",
+            "ro": "Fondul de coeziune, PO Transport 2007–2013 (contract de finanțare ДОПТ 15 din 14 octombrie 2011)"
+          },
+          "amount": {
+            "amount": 38.28513665,
+            "currency": "BGN",
+            "note": "Including VAT. Share of a grant contract worth 47,856,420.81 leva in total."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "National co-financing",
+            "ro": "Cofinanțare națională"
+          },
+          "amount": {
+            "amount": 9.57128416,
+            "currency": "BGN",
+            "note": "Including VAT."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „Хемус А2“",
+          "role": "builder"
+        },
+        {
+          "name": "Трейс Груп Холд АД",
+          "role": "builder"
+        },
+        {
+          "name": "Конструктор инженеринг АД",
+          "role": "builder"
+        },
+        {
+          "name": "СК-13 Пътстрой АД",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 22,
+        "value": {
+          "amount": 38.34037134,
+          "currency": "BGN",
+          "year": 2011,
+          "scope": "works",
+          "note": "Including VAT."
+        },
+        "noticeReference": "00044-2011-0048"
+      },
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "api-hemus-sofia-yana",
+        "trace-hemus-sofia-yana"
       ],
       "geometryRef": "sofia-yana"
     },
@@ -95,11 +172,76 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2017-07-19",
+        "constructionStart": "2018-03-27",
         "opened": "2019-10"
       },
       "lengthKm": 9.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 54.99,
+              "currency": "BGN",
+              "year": 2017,
+              "scope": "works",
+              "note": "Excluding VAT. Design and works."
+            },
+            "date": "2017-07-19",
+            "note": "Design-and-build contract РД-33-7.",
+            "sourceRef": "api-hemus-yablanitsa-boaza"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget",
+            "ro": "Bugetul de stat"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Консорциум „ХВП Ябланица“",
+          "role": "builder"
+        },
+        {
+          "name": "Хидрострой АД",
+          "role": "builder"
+        },
+        {
+          "name": "Водстрой 98 АД",
+          "role": "builder"
+        },
+        {
+          "name": "Пътстрой Бургас ЕООД",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 5,
+        "executionMonths": 24,
+        "totalMonths": 30,
+        "value": {
+          "amount": 54.99,
+          "currency": "BGN",
+          "year": 2017,
+          "scope": "works",
+          "note": "Excluding VAT. Design-and-build contract; 65,988,000 leva including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-and-build contract. Contract durations converted from days: 910 days total, 150 days design, 730 days works.",
+        "ro": "Contract de proiectare și execuție. Durate convertite din zile: 910 zile în total, 150 de zile proiectare, 730 de zile execuție."
+      },
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "api-hemus-yablanitsa-boaza",
+        "newsbg-hemus-yablanitsa-boaza-start",
+        "investor-hemus-yablanitsa-boaza-opening"
       ],
       "geometryRef": "yablanitsa-boaza"
     },
@@ -113,8 +255,18 @@
         "opened": "2025-10"
       },
       "lengthKm": 10,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget, for the whole Boaza – I-5 stretch",
+            "ro": "Bugetul de stat, pentru întregul tronson Boaza – I-5"
+          }
+        }
+      ],
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "utroruse-api-hemus-boaza-i5"
       ],
       "geometryRef": "boaza-dermantsi"
     },
@@ -128,8 +280,18 @@
         "opened": "2025-12-13"
       },
       "lengthKm": 5,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget, for the whole Boaza – I-5 stretch",
+            "ro": "Bugetul de stat, pentru întregul tronson Boaza – I-5"
+          }
+        }
+      ],
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "utroruse-api-hemus-boaza-i5"
       ],
       "geometryRef": "dermantsi-ugarchin"
     },
@@ -140,11 +302,78 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2017-09-29",
+        "constructionStart": "2018-08",
         "opened": "2022-10"
       },
       "lengthKm": 16.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 143.742,
+              "currency": "BGN",
+              "year": 2017,
+              "scope": "works",
+              "note": "Including VAT."
+            },
+            "date": "2017-09-29",
+            "note": "Signing date per Mediapool; value to the lev per gradat.bg.",
+            "sourceRef": "mediapool-hemus-belokopitovo-buhovtsi"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget",
+            "ro": "Bugetul de stat"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „Хемус 16320“",
+          "role": "builder"
+        },
+        {
+          "name": "Инфра Експерт ЕООД",
+          "role": "builder"
+        },
+        {
+          "name": "Пътинженерингстрой-Т ЕАД",
+          "role": "builder"
+        },
+        {
+          "name": "Автомагистрали - Черно Море АД",
+          "role": "builder"
+        },
+        {
+          "name": "Трансконсулт-22 ООД",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 30,
+        "value": {
+          "amount": 143.742,
+          "currency": "BGN",
+          "year": 2017,
+          "scope": "works",
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Contract duration converted from days: 910 calendar days.",
+        "ro": "Durata contractului convertită din zile: 910 zile calendaristice."
+      },
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "mediapool-hemus-belokopitovo-buhovtsi",
+        "gradat-hemus-belokopitovo-buhovtsi",
+        "investor-hemus-belokopitovo-buhovtsi"
       ],
       "geometryRef": "belokopitovo-buhovtsi"
     }
@@ -154,6 +383,62 @@
       "id": "wikipedia-hemus-motorway",
       "title": "Wikipedia: Hemus motorway",
       "url": "https://en.wikipedia.org/wiki/Hemus_motorway"
+    },
+    {
+      "id": "api-hemus-sofia-yana",
+      "title": "Агенция „Пътна инфраструктура“: АМ „Хемус“ СОП – гара „Яна“",
+      "url": "https://www.api.bg/bg/1606209547.html",
+      "archiveUrl": "https://web.archive.org/web/2024id_/https://www.api.bg/bg/1606209547.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "trace-hemus-sofia-yana",
+      "title": "Trace Group Hold: Доизграждане на АМ „Хемус“",
+      "url": "https://trace.bg/bg/%D0%B4%D0%B5%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D0%B8/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8-%D0%BF%D1%8A%D1%82%D0%B8%D1%89%D0%B0-%D0%B8-%D1%83%D0%BB%D0%B8%D1%86%D0%B8/%D0%B4%D0%BE%D0%B8%D0%B7%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B0%D0%BC-%D1%85%D0%B5%D0%BC%D1%83%D1%81",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "api-hemus-yablanitsa-boaza",
+      "title": "Агенция „Пътна инфраструктура“: АМ „Хемус“, участък от км 78+500 до км 87+800",
+      "url": "https://www.api.bg/bg/1606399708.html",
+      "archiveUrl": "https://web.archive.org/web/2024id_/https://www.api.bg/bg/1606399708.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "newsbg-hemus-yablanitsa-boaza-start",
+      "title": "News.bg: Първа копка на АМ „Хемус“ – отсечката Ябланица – Боаза (27 March 2018)",
+      "url": "https://news.bg/regions/parva-kopka-na-am-hemus-otsechkata-yablanitsa-boaza.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "investor-hemus-yablanitsa-boaza-opening",
+      "title": "Investor.bg: Откриха новия участък от АМ „Хемус“ между Ябланица и Боаза (11 October 2019)",
+      "url": "https://investor.bg/bylgariia/451/a/otkriha-noviia-uchastyk-ot-am-hemus-mejdu-iablanica-i-boaza-291038",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "mediapool-hemus-belokopitovo-buhovtsi",
+      "title": "Mediapool: Пускат магистрала „Хемус“ от Буховци до Белокопитово с 2.5 г. закъснение",
+      "url": "https://www.mediapool.bg/puskat-magistrala-hemus-ot-buhovtsi-do-belokopitovo-s-25-g-zakasnenie-video-news340939.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "gradat-hemus-belokopitovo-buhovtsi",
+      "title": "gradat.bg: Завършват предсрочно отсечката Белокопитово – Буховци на АМ „Хемус“",
+      "url": "https://gradat.bg/infrastruktura/zavrshvat-predsrochno-otsechkata-belokopitovo-buhovci-na-am-hemus",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "investor-hemus-belokopitovo-buhovtsi",
+      "title": "Investor.bg: Участъкът от магистрала „Хемус“ Белокопитово – Буховци е пуснат за движение",
+      "url": "https://www.investor.bg/a/523-transport-i-infrastruktura/362205-uchastakat-ot-magistrala-hemus-belokopitovo-buhovtsi-e-pusnat-za-dvizhenie",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "utroruse-api-hemus-boaza-i5",
+      "title": "Утро Русе (пресцентър на АПИ): На 23 април започва поетапното строителство на АМ „Хемус“ между Боаза и пътя Русе – Велико Търново",
+      "url": "https://utroruse.com/article/758486/",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

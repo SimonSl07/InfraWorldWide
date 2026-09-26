@@ -21,10 +21,32 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2019-06-21",
         "constructionStart": "2019-09-02",
         "opened": "2020-12"
       },
       "lengthKm": 3,
+      "cost": {
+        "estimated": {
+          "amount": 420.113085,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate excluding VAT: works 402.711085M RON (excluding contingencies) plus design 17.402M RON."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 398.16,
+              "currency": "RON",
+              "year": 2019,
+              "note": "Excluding VAT."
+            },
+            "date": "2019-06-21",
+            "sourceRef": "ted-306830-2019"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -52,7 +74,16 @@
         }
       ],
       "contract": {
-        "executionMonths": 12
+        "value": {
+          "amount": 398.16,
+          "currency": "RON",
+          "year": 2019,
+          "note": "Excluding VAT."
+        },
+        "designMonths": 2,
+        "executionMonths": 12,
+        "guaranteeMonths": 60,
+        "totalMonths": 74
       },
       "note": {
         "en": "Gara de Nord–Henri Coandă Airport link: ~3 km incl. a 1.5 km viaduct over DN1; builder Arcada Company, designers ISPCF and DB Engineering & Consulting"
@@ -60,7 +91,9 @@
       "sourceRefs": [
         "hotnews-ro-gara-de-nord-aeroport",
         "zf-ro-gara-de-nord-aeroport",
-        "railway-news-com"
+        "railway-news-com",
+        "ted-306830-2019",
+        "ted-408577-2025"
       ],
       "geometryRef": "gara-de-nord-aeroport"
     }
@@ -89,6 +122,18 @@
       "title": "OpenStreetMap contributors (geometry, ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-08-14"
+    },
+    {
+      "id": "ted-306830-2019",
+      "title": "TED 306830-2019: Contract award notice, Bucureşti Nord – Aeroport Internaţional Henri Coandă, Faza I",
+      "url": "https://ted.europa.eu/ro/notice/306830-2019/html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ted-408577-2025",
+      "title": "TED 408577-2025: Anunț de atribuire, Modernizarea liniei de cale ferată Bucureşti Nord – Aeroport Internaţional Henri Coandă, Faza I",
+      "url": "https://ted.europa.eu/ro/notice/408577-2025/html",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

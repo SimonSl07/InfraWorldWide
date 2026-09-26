@@ -32,11 +32,18 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "TCH (today Hidroconstrucția)",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Romania's highest road tunnel at ~2,040 m altitude, on the Transfăgărășan mountain road built by the Romanian Army 1970–1974 on Nicolae Ceaușescu's orders; the longest road tunnel in Romania until the Meseș tunnel"
       },
       "sourceRefs": [
-        "wikipedia-transf-g-r-an"
+        "wikipedia-transf-g-r-an",
+        "jurnalul-opt-ani-la-tunel"
       ],
       "geometryRef": "balea"
     },
@@ -48,7 +55,8 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "1968"
+        "tenderAwarded": "1991",
+        "opened": "2005-05"
       },
       "lengthKm": 0.149,
       "profile": {
@@ -60,11 +68,24 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "SC Tunele SA Brasov",
+          "role": "builder"
+        },
+        {
+          "name": "Institutul de Studii si Proiectari Cai Ferate Colectiv Tunele",
+          "role": "designer"
+        }
+      ],
       "note": {
-        "en": "Road tunnel on DN12C through the Bicaz gorge, alongside the older parallel bore (Tunelul Vechi)"
+        "en": "Road tunnel on DN12C through the Bicaz gorge, alongside the older parallel bore (Tunelul Vechi). Final works value: 76 billion old lei (ROL, before the 2005 redenomination), funded entirely from the state budget, per Ziarul de Iași, May 2005.",
+        "ro": "Tunel rutier pe DN12C prin Cheile Bicazului, paralel cu tubul mai vechi (Tunelul Vechi). Valoarea finală a lucrărilor: 76 de miliarde de lei vechi (ROL, înainte de denominarea din 2005), integral de la bugetul de stat, conform Ziarul de Iași, mai 2005."
       },
       "sourceRefs": [
-        "openstreetmap"
+        "openstreetmap",
+        "ziaruldeiasi-lacu-rosu-2005",
+        "tunele-lacu-rosu"
       ],
       "geometryRef": "tunelul-nou"
     },
@@ -74,9 +95,9 @@
         "en": "Meseș tunnel (A3)",
         "ro": "Tunelul Meseș (A3)"
       },
-      "status": "under_construction",
+      "status": "tendered",
       "dates": {
-        "constructionStart": "2022",
+        "tenderAwarded": "2025-04",
         "expectedOpening": "2032"
       },
       "lengthKm": 2.734,
@@ -96,6 +117,12 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Makyol Insaat Sanayi Turizm VE Ticaret AS – Ozaltin Insaat Ticaret VE Sanayi AS",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Twin-bore tunnel under the Meseș mountains on the A3 Nușfalău – Poarta Sălajului section; it will be the longest road tunnel in Romania when complete. OpenStreetMap tags opening_date=2032"
       },
@@ -104,6 +131,10 @@
           "title": "OpenStreetMap",
           "url": "https://www.openstreetmap.org/relation/2790155"
         }
+      ],
+      "sourceRefs": [
+        "economica-a3-meses-2025-04",
+        "economica-a3-meses-2026-07"
       ],
       "partOf": "ro-a3-transylvania",
       "geometryRef": "meses"
@@ -135,11 +166,18 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Webuild SPA – Tancrad",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "On A1 Pitești–Sibiu lot 3 (Webuild); OpenStreetMap tags opening_date=2028 on this lot"
       },
       "sourceRefs": [
-        "openstreetmap"
+        "openstreetmap",
+        "economica-a1-s3-2026-07"
       ],
       "partOf": "ro-a1",
       "geometryRef": "poiana"
@@ -244,11 +282,18 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Mapa – Cengiz",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "On A1 Pitești–Sibiu lot 2, Boița–Cornet, in the Olt valley defile; OpenStreetMap tags opening_date=2031"
       },
       "sourceRefs": [
-        "openstreetmap"
+        "openstreetmap",
+        "economica-a1-robesti-2026-07"
       ],
       "partOf": "ro-a1",
       "geometryRef": "robesti"
@@ -280,11 +325,18 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Mapa – Cengiz",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "On A1 Pitești–Sibiu lot 2, Boița–Cornet; OpenStreetMap tags opening_date=2031"
       },
       "sourceRefs": [
-        "openstreetmap"
+        "openstreetmap",
+        "economica-a1-balota-2026-09"
       ],
       "partOf": "ro-a1",
       "geometryRef": "balota"
@@ -297,7 +349,7 @@
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2022",
+        "constructionStart": "2026-02",
         "expectedOpening": "2031"
       },
       "lengthKm": 0.256,
@@ -316,11 +368,18 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Mapa – Cengiz",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Twin bores (Boița 1 and 2) at the northern end of A1 Pitești–Sibiu lot 2; OpenStreetMap tags opening_date=2031"
       },
       "sourceRefs": [
-        "openstreetmap"
+        "openstreetmap",
+        "oradesibiu-boita-1-2026-02"
       ],
       "partOf": "ro-a1",
       "geometryRef": "boita"
@@ -343,10 +402,9 @@
       "funding": [
         {
           "source": "EU",
-          "programme": "ro-pnrr",
           "detail": {
-            "en": "PNRR (Next Generation EU)",
-            "ro": "PNRR (Next Generation EU)"
+            "en": "Transport Programme 2021–2027",
+            "ro": "Programul Transport 2021–2027"
           }
         },
         {
@@ -357,7 +415,8 @@
         "en": "On the A8 Ditrău–Moțca mountain section (SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB), crossing the Eastern Carpathians"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a8-rom-nia"
+        "wikipedia-ro-autostrada-a8-rom-nia",
+        "hotnews-a8-2b-bids-2025-03"
       ],
       "partOf": "ro-a8",
       "geometryRef": "petru-voda"
@@ -379,21 +438,18 @@
       "funding": [
         {
           "source": "EU",
-          "programme": "ro-pnrr",
           "detail": {
-            "en": "PNRR (Next Generation EU)",
-            "ro": "PNRR (Next Generation EU)"
+            "en": "SAFE programme (EU)",
+            "ro": "Programul SAFE (UE)"
           }
-        },
-        {
-          "source": "national_budget"
         }
       ],
       "note": {
         "en": "On the A8 Moțca–Târgu Frumos section approaching Iași"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a8-rom-nia"
+        "wikipedia-ro-autostrada-a8-rom-nia",
+        "economedia-a8-t1-signing-2026-05"
       ],
       "partOf": "ro-a8",
       "geometryRef": "boureni"
@@ -418,6 +474,74 @@
       "id": "openstreetmap",
       "title": "OpenStreetMap contributors (geometry, lengths and construction dates, ODbL)",
       "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "jurnalul-opt-ani-la-tunel",
+      "title": "Jurnalul Național: Opt ani la tunel (2005-06-25)",
+      "url": "https://jurnalul.ro/campaniile-jurnalul/descoperirea-romaniei/opt-ani-la-tunel-42288.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "oradesibiu-boita-1-2026-02",
+      "title": "Ora de Sibiu: Autostrada A1 Sibiu–Pitești: Încep lucrările la Tunelul Boița 1 (2026-02-14)",
+      "url": "https://www.oradesibiu.ro/2026/02/14/autostrada-a1-sibiu-pitesti-incep-lucrarile-la-tunelul-boita-1-pe-cel-mai-dificil-tronson-montan-video/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a1-robesti-2026-07",
+      "title": "Economica.net: Autostrada A1 Sibiu - Pitești. A fost străpunsă prima galerie a tunelului Boița 1 (2026-07-20)",
+      "url": "https://www.economica.net/autostrada-a1-sibiu-pitesti-70_960811.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a1-balota-2026-09",
+      "title": "Economica.net: Autostrada A1 Sibiu – Pitești: Ce progrese au mai făcut turcii de la Mapa – Cengiz la tunelurile Balota și Robești (2026-09-25)",
+      "url": "https://www.economica.net/autostrada-a1-sibiu-pitesti-79_980000.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a3-meses-2025-04",
+      "title": "Economica.net: Autostrada Transilvania: CNAIR semnează joi cel mai mare contract din istoria sa, cel pentru Tunelul Meseș (2025-04-08)",
+      "url": "https://www.economica.net/autostrada-transilvania-meses-2_826385.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a3-meses-2026-07",
+      "title": "Economica.net: Autostrada A3 Transilvania. Tronsonul cu cel mai lung tunel ar putea avea autorizație de construire până la finalul anului (2026-07-30)",
+      "url": "https://www.economica.net/autostrada-a3-transilvania-20_963949.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a1-s3-2026-07",
+      "title": "Economica.net: Autostrada A1 Sibiu - Pitești. Lucrările la secțiunea 3 se apropie de 15% (2026-07-17)",
+      "url": "https://www.economica.net/autostrada-a1-sibiu-pitesti-69_960175.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ziaruldeiasi-lacu-rosu-2005",
+      "title": "Ziarul de Iași: Tunel sapat in stinca, inaugurat in Cheile Bicazului (2005-05-23)",
+      "url": "http://www.ziaruldeiasi.ro/local/roman/tunel-sapat-in-stinca-inaugurat-in-cheile-bicazului~ni3nmg",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/2017/http://www.ziaruldeiasi.ro/local/roman/tunel-sapat-in-stinca-inaugurat-in-cheile-bicazului~ni3nmg"
+    },
+    {
+      "id": "tunele-lacu-rosu",
+      "title": "S.C. Tunele S.A. Brașov: N 12 C Gheorgheni – Bicaz Tunel Lacu Rosu",
+      "url": "http://www.tunele.ro/ro/studii/lacurosu.php",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20160331071202/http://www.tunele.ro/ro/studii/lacurosu.php"
+    },
+    {
+      "id": "economedia-a8-t1-signing-2026-05",
+      "title": "Economedia: Autostrada Unirii A8: CNIR a semnat cu UMB contractul pentru tronsonul 1 Târgu Neamț – Târgu Frumos (2026-05-28)",
+      "url": "https://economedia.ro/autostrada-unirii-a8-cnir-a-semnat-cu-umb-contractul-pentru-tronsonul-1-targu-neamt-targu-frumos-finantat-prin-safe.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-a8-2b-bids-2025-03",
+      "title": "HotNews.ro: Cel mai scump tronson din Autostrada Unirii: UMB și o asociere din Turcia au depus oferte (2025-03-05)",
+      "url": "https://hotnews.ro/cel-mai-scump-tronson-din-autostrada-unirii-umb-si-o-asociere-din-turcia-au-depus-oferte-pentru-autostrada-de-44-de-milioane-de-euro-pe-kilometru-1917233",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

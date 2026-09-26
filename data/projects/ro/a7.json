@@ -28,6 +28,14 @@
         "opened": "2024-12-23"
       },
       "lengthKm": 21,
+      "cost": {
+        "estimated": {
+          "amount": 1655,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate range 1,655–1,952 million lei excluding VAT; lower bound recorded."
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -62,7 +70,8 @@
       "sourceRefs": [
         "rettergroup-com-dumbrava-mizil",
         "traficmedia-ro-dumbrava-mizil",
-        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin"
+        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
+        "agerpres-ploiesti-buzau-tender"
       ],
       "geometryRef": "dumbrava-mizil"
     },
@@ -79,6 +88,14 @@
         "opened": "2025-10-17"
       },
       "lengthKm": 28.35,
+      "cost": {
+        "estimated": {
+          "amount": 1475,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate range 1,475–1,741 million lei excluding VAT; lower bound recorded."
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -114,7 +131,8 @@
         "economica-net-mizil-pietroasele",
         "constructiv-ro-mizil-pietroasele",
         "economica-net-mizil-pietroasele-2",
-        "wikipedia-ro-autostrada-a7-rom-nia"
+        "wikipedia-ro-autostrada-a7-rom-nia",
+        "agerpres-ploiesti-buzau-tender"
       ],
       "geometryRef": "mizil-pietroasele"
     },
@@ -131,6 +149,14 @@
         "opened": "2025-11-27"
       },
       "lengthKm": 13.9,
+      "cost": {
+        "estimated": {
+          "amount": 1160,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate range 1,160–1,369 million lei excluding VAT; lower bound recorded."
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -161,7 +187,8 @@
       "sourceRefs": [
         "constructiv-ro-pietroasele-buzau",
         "agerpres-ro-pietroasele-buzau",
-        "wikipedia-ro-autostrada-a7-rom-nia"
+        "wikipedia-ro-autostrada-a7-rom-nia",
+        "agerpres-ploiesti-buzau-tender"
       ],
       "geometryRef": "pietroasele-buzau"
     },
@@ -178,6 +205,14 @@
         "opened": "2025-07"
       },
       "lengthKm": 4.6,
+      "cost": {
+        "estimated": {
+          "amount": 858.85,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate range 858.85–1,010 million lei excluding VAT; lower bound recorded."
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -216,7 +251,8 @@
       "sourceRefs": [
         "ziuacargo-ro-buzau-bypass",
         "hotnews-ro-buzau-bypass",
-        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin"
+        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
+        "economica-buzau-focsani-lots-1-4-tender"
       ],
       "geometryRef": "buzau-bypass"
     },
@@ -228,10 +264,25 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2022",
+        "tenderAwarded": "2023-01-12",
         "opened": "2024-11-21"
       },
       "lengthKm": 30.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1317.07355606,
+              "currency": "RON",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-01-12",
+            "sourceRef": "cnair-buzau-focsani-lots-2-3-contracts"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -246,13 +297,21 @@
         {
           "name": "Spedition UMB",
           "role": "builder"
+        },
+        {
+          "name": "SA&PE Construct",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
         }
       ],
       "contract": {
         "value": {
           "amount": 1317.07,
           "currency": "RON",
-          "year": 2022
+          "year": 2023
         },
         "executionMonths": 26
       },
@@ -261,7 +320,8 @@
       },
       "sourceRefs": [
         "hotnews-ro-buzau-bypass",
-        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin"
+        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
+        "cnair-buzau-focsani-lots-2-3-contracts"
       ],
       "geometryRef": "buzau-ramnicu-sarat"
     },
@@ -273,7 +333,7 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2022",
+        "tenderAwarded": "2023-01-12",
         "opened": "2024-12-20"
       },
       "lengthKm": 36.1,
@@ -291,6 +351,14 @@
         {
           "name": "Spedition UMB",
           "role": "builder"
+        },
+        {
+          "name": "SA&PE Construct",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
         }
       ],
       "contract": {
@@ -299,14 +367,17 @@
           "currency": "RON",
           "year": 2022
         },
-        "executionMonths": 26
+        "executionMonths": 26,
+        "guaranteeMonths": 120
       },
       "note": {
         "en": "Financed through the Romanian PNRR (Next Generation EU), an instrument running to 2026"
       },
       "sourceRefs": [
         "hotnews-ro-buzau-bypass",
-        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin"
+        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
+        "cnair-buzau-focsani-lots-2-3-contracts",
+        "campusbuzau-buzau-focsani-contracts"
       ],
       "geometryRef": "ramnicu-sarat-mandresti"
     },
@@ -323,6 +394,14 @@
         "opened": "2024-11-07"
       },
       "lengthKm": 10.94,
+      "cost": {
+        "estimated": {
+          "amount": 954.65,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate range 954.65–1,130 million lei excluding VAT; lower bound recorded."
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -360,7 +439,8 @@
       },
       "sourceRefs": [
         "ziuacargo-ro-buzau-bypass",
-        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin"
+        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
+        "economica-buzau-focsani-lots-1-4-tender"
       ],
       "geometryRef": "focsani-bypass"
     },
@@ -377,6 +457,14 @@
         "opened": "2025-12"
       },
       "lengthKm": 35.6,
+      "cost": {
+        "estimated": {
+          "amount": 2980.54110796,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate, excluding VAT."
+        }
+      },
       "funding": [
         {
           "source": "EU",
@@ -407,7 +495,8 @@
       "sourceRefs": [
         "stiridevrancea-ro-focsani-domnesti",
         "hotnews-ro-focsani-domnesti",
-        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin"
+        "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
+        "cnair-focsani-bacau-tender"
       ],
       "geometryRef": "focsani-domnesti"
     },
@@ -466,8 +555,35 @@
           "amount": 142,
           "currency": "EUR",
           "year": 2018
-        }
+        },
+        "revisions": [
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 968.63743763,
+              "currency": "RON",
+              "note": "Including VAT. Total value of EU financing contract 50/2019 for the project 'Varianta de ocolire Bacău' after addendum 1, non-eligible costs included. Covers the whole 30.8 km bypass scheme, link roads included, not only the 16.269 km motorway section."
+            },
+            "date": "2020-06-30",
+            "sourceRef": "cnair-bacau-bypass-financing"
+          }
+        ]
       },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund via the Large Infrastructure Operational Programme (POIM) 2014–2020, financing contract no. 50/26.11.2019, project code 120235",
+            "ro": "Fondul de Coeziune prin Programul Operațional Infrastructură Mare (POIM) 2014–2020, contract de finanțare nr. 50/26.11.2019, cod proiect 120235"
+          },
+          "amount": {
+            "amount": 689.43684861,
+            "currency": "RON",
+            "note": "EU Cohesion Fund contribution, 85% of eligible costs, per addendum 1 of 30 June 2020."
+          }
+        }
+      ],
       "contractors": [
         {
           "name": "Spedition UMB",
@@ -500,7 +616,8 @@
       ],
       "sourceRefs": [
         "web-archive-org-bacau-bypass",
-        "hotnews-ro-bacau-bypass"
+        "hotnews-ro-bacau-bypass",
+        "cnair-bacau-bypass-financing"
       ],
       "geometryRef": "bacau-bypass"
     },
@@ -556,6 +673,27 @@
         "expectedOpening": "2026"
       },
       "lengthKm": 30.3,
+      "cost": {
+        "estimated": {
+          "amount": 2041,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate, excluding VAT."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1638.32225022,
+              "currency": "RON",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-02-15",
+            "sourceRef": "cnair-bacau-pascani-contracts"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -570,15 +708,37 @@
         {
           "name": "Spedition UMB",
           "role": "builder"
+        },
+        {
+          "name": "SA&PE Construct",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 1638.32225022,
+          "currency": "RON",
+          "year": 2023,
+          "note": "Excluding VAT. Works contract."
+        },
+        "executionMonths": 30,
+        "guaranteeMonths": 120,
+        "totalMonths": 150
+      },
       "note": {
-        "en": "Bacău–Pașcani lot 1 (Săucești–Trifești, 30.3 km) awarded December 2022 to Spedition UMB; PNRR-funded. It missed the PNRR deadline of 31 August 2026 and moves to the Transport Programme from 2027; the ministry's stated aim is to open the A7 as far as Săbăoani by the end of 2026"
+        "en": "Bacău–Pașcani lot 1 (Săucești–Trifești, 30.3 km) awarded December 2022 to the Spedition UMB – SA&PE Construct – Tehnostrade association; PNRR-funded. It missed the PNRR deadline of 31 August 2026 and moves to the Transport Programme from 2027; the ministry's stated aim is to open the A7 as far as Săbăoani by the end of 2026"
       },
       "geometryRef": "bacau-roman",
       "sourceRefs": [
         "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
-        "hotnews-a7-adjud-bacau-opened"
+        "hotnews-a7-adjud-bacau-opened",
+        "cnair-bacau-pascani-contracts",
+        "economica-bacau-pascani-lot1-award",
+        "capital-bacau-pascani-contracts"
       ]
     },
     {
@@ -594,6 +754,27 @@
         "expectedOpening": "2026"
       },
       "lengthKm": 18.9,
+      "cost": {
+        "estimated": {
+          "amount": 1601.939812,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate, excluding VAT."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1277.947884,
+              "currency": "RON",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-02-15",
+            "sourceRef": "capital-bacau-pascani-contracts"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -608,15 +789,37 @@
         {
           "name": "Spedition UMB",
           "role": "builder"
+        },
+        {
+          "name": "SA&PE Construct",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 1277.947884,
+          "currency": "RON",
+          "year": 2023,
+          "note": "Excluding VAT. Works contract."
+        },
+        "executionMonths": 30,
+        "guaranteeMonths": 120,
+        "totalMonths": 150
+      },
       "note": {
-        "en": "Bacău–Pașcani lot 2 (Trifești–Gherăești, 18.99 km) awarded December 2022 to Spedition UMB; PNRR-funded. It missed the PNRR deadline of 31 August 2026 and moves to the Transport Programme from 2027; the ministry's stated aim is to open the A7 as far as Săbăoani by the end of 2026"
+        "en": "Bacău–Pașcani lot 2 (Trifești–Gherăești, 18.99 km) awarded December 2022 to the Spedition UMB – SA&PE Construct – Tehnostrade association; PNRR-funded. It missed the PNRR deadline of 31 August 2026 and moves to the Transport Programme from 2027; the ministry's stated aim is to open the A7 as far as Săbăoani by the end of 2026"
       },
       "geometryRef": "roman-sabaoani",
       "sourceRefs": [
         "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
-        "hotnews-a7-adjud-bacau-opened"
+        "hotnews-a7-adjud-bacau-opened",
+        "capital-bacau-pascani-contracts",
+        "cnair-bacau-pascani-contracts",
+        "hotnews-bacau-pascani-tender"
       ]
     },
     {
@@ -632,6 +835,27 @@
         "expectedOpening": "2027"
       },
       "lengthKm": 28.09,
+      "cost": {
+        "estimated": {
+          "amount": 2215.30986,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate, excluding VAT."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1765.928288,
+              "currency": "RON",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-02-15",
+            "sourceRef": "capital-bacau-pascani-contracts"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -646,15 +870,37 @@
         {
           "name": "Spedition UMB",
           "role": "builder"
+        },
+        {
+          "name": "SA&PE Construct",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 1765.928288,
+          "currency": "RON",
+          "year": 2023,
+          "note": "Excluding VAT. Works contract."
+        },
+        "executionMonths": 30,
+        "guaranteeMonths": 120,
+        "totalMonths": 150
+      },
       "note": {
-        "en": "Bacău–Pașcani lot 3 (Mircești–Pașcani, 28.09 km) awarded December 2022 to Spedition UMB; PNRR-funded. It missed the PNRR deadline of 31 August 2026; state secretary Horațiu Cosma said on that day that the lot would realistically run two to three months into 2027"
+        "en": "Bacău–Pașcani lot 3 (Mircești–Pașcani, 28.09 km) awarded December 2022 to the Spedition UMB – SA&PE Construct – Tehnostrade association; PNRR-funded. It missed the PNRR deadline of 31 August 2026; state secretary Horațiu Cosma said on that day that the lot would realistically run two to three months into 2027"
       },
       "geometryRef": "sabaoani-pascani",
       "sourceRefs": [
         "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
-        "hotnews-a7-adjud-bacau-opened"
+        "hotnews-a7-adjud-bacau-opened",
+        "capital-bacau-pascani-contracts",
+        "cnair-bacau-pascani-contracts",
+        "hotnews-bacau-pascani-tender"
       ]
     },
     {
@@ -663,19 +909,77 @@
         "en": "Pașcani – Suceava",
         "ro": "Pașcani – Suceava"
       },
-      "status": "under_construction",
+      "status": "tendered",
       "dates": {
-        "constructionStart": "2023"
+        "tenderAwarded": "2026-05-01",
+        "expectedOpening": "2029"
       },
       "lengthKm": 61.97,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 5931.38082943,
+              "currency": "RON",
+              "year": 2026,
+              "note": "Excluding VAT. Contract lots 1 and 2 combined."
+            },
+            "date": "2026-05-01",
+            "sourceRef": "cnair-pascani-suceava-contracts"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
           "detail": {
-            "en": "Pașcani–Siret section to be co-financed through EU funds",
-            "ro": "Secțiunea Pașcani–Siret urmează a fi cofinanțată din fonduri europene"
+            "en": "Transport Programme 2021–2027 (EU non-reimbursable funds) for now",
+            "ro": "Programul Transport 2021–2027 (fonduri europene nerambursabile) în prezent"
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Later to be financed through SAFE (Security Action for Europe), an EU long-term loan instrument",
+            "ro": "Ulterior finanțat prin instrumentul financiar SAFE (Acțiunea pentru Securitatea Europei), împrumut UE pe termen lung"
           }
         }
+      ],
+      "contractors": [
+        {
+          "name": "SA&PE Construct",
+          "role": "builder"
+        },
+        {
+          "name": "Spedition UMB",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 5931.38082943,
+          "currency": "RON",
+          "year": 2026,
+          "note": "Excluding VAT. Sum of contract lots 1 (3,068.40 million lei) and 2 (2,862.98 million lei)."
+        },
+        "designMonths": 6,
+        "executionMonths": 24,
+        "totalMonths": 30,
+        "guaranteeMonths": 120
+      },
+      "note": {
+        "en": "Design-and-build, signed 1 May 2026 as two contracts: lot 1 Pașcani–Roșcani and lot 2 Roșcani–Suceava (to km 61+970). Each runs 30 months (6 design, 24 works), both in parallel, with a 10-year works guarantee. No start of works had been reported by September 2026, so the lot is shown as tendered.",
+        "ro": "Proiectare și execuție, semnat la 1 mai 2026 în două contracte: lotul 1 Pașcani–Roșcani și lotul 2 Roșcani–Suceava (până la km 61+970). Fiecare durează 30 de luni (6 proiectare, 24 execuție), în paralel, cu garanție a lucrărilor de 10 ani. Până în septembrie 2026 nu fusese anunțată începerea lucrărilor, așa că lotul apare ca licitat."
+      },
+      "sourceRefs": [
+        "cnair-pascani-suceava-contracts",
+        "agendaconstructiilor-pascani-suceava-signing",
+        "economedia-suceava-siret-safe"
       ],
       "geometryRef": "pascani-suceava"
     },
@@ -687,14 +991,31 @@
       },
       "status": "tendered",
       "lengthKm": 56.16,
+      "cost": {
+        "estimated": {
+          "amount": 7400,
+          "currency": "RON",
+          "scope": "total",
+          "note": "Total investment in the technical-economic indicators approved by government decision on 26 March 2026: 'peste 7,4 miliarde lei'. VAT treatment not stated."
+        }
+      },
       "funding": [
         {
-          "source": "EU",
+          "source": "loan",
           "detail": {
-            "en": "Pașcani–Siret section to be co-financed through EU funds; north of Milișăuți (Rădăuți) the road is planned as an expressway to the border",
-            "ro": "Secțiunea Pașcani–Siret urmează a fi cofinanțată din fonduri europene; la nord de Milișăuți (Rădăuți) drumul este planificat ca drum expres până la frontieră"
+            "en": "SAFE (Security Action for Europe), an EU long-term loan instrument",
+            "ro": "SAFE (Acțiunea pentru Securitatea Europei), instrument UE de împrumuturi pe termen lung"
           }
         }
+      ],
+      "note": {
+        "en": "Libertatea's July 2026 motorway map, relaying 130km.ro, puts the Suceava–Siret opening in 2029. This is a press forecast, not an official date. North of Milișăuți (Rădăuți) the road is planned as an expressway to the border.",
+        "ro": "Harta autostrăzilor Libertatea din iulie 2026, preluată de la 130km.ro, plasează deschiderea Suceava–Siret în 2029. Este o estimare de presă, nu un termen oficial. La nord de Milișăuți (Rădăuți) drumul este planificat ca drum expres până la frontieră."
+      },
+      "sourceRefs": [
+        "agerpres-suceava-siret-hg",
+        "economedia-suceava-siret-safe",
+        "libertatea-harta-iulie-2026"
       ],
       "geometryRef": "suceava-siret"
     }
@@ -794,6 +1115,96 @@
       "id": "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
       "title": "Wikipedia (ro): Autostrada A7 (România)#Construcția finanțată prin PNRR",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A7_(Rom%C3%A2nia)#Construc%C8%9Bia_finan%C8%9Bat%C4%83_prin_PNRR"
+    },
+    {
+      "id": "cnair-pascani-suceava-contracts",
+      "title": "CNAIR: CNAIR a semnat contractele pentru proiectarea și construcția Autostrăzii Pașcani – Suceava (1 May 2026)",
+      "url": "https://www.cnadnr.ro/en/node/15609",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "agendaconstructiilor-pascani-suceava-signing",
+      "title": "Agenda Construcțiilor: UMB semnează pentru A7 Pașcani-Suceava (lot 1 și 2): 62 de km pentru 5,9 miliarde lei (6 May 2026)",
+      "url": "https://www.agendaconstructiilor.ro/stiri/infrastructura/umb-semneaza-pentru-a7-pascani-suceava-lot-1-si-2-62-de-km-pentru-5-9-miliarde-lei",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-suceava-siret-safe",
+      "title": "Economedia: Drumul Expres Suceava - Siret. Contestații respinse și pentru lotul 3 / Drumul va fi construit cu banii din programul european SAFE (4 June 2026)",
+      "url": "https://economedia.ro/drumul-expres-suceava-siret-contestatii-respinse-si-pentru-lotul-3-ultimul-fara-contract-semnat-drumul-va-fi-construit-cu-banii-din-programul-european-safe.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-bacau-pascani-contracts",
+      "title": "CNAIR: CNAIR a semnat contractele necesare construcției celor 3 loturi ale Autostrăzii Bacău – Pașcani, parte din A7 (15 February 2023)",
+      "url": "http://cnadnr.ro/ro/comunicare/comunicate-de-presa/interes-general/cnair-semnat-contractele-necesare-construc%C8%9Biei-celor",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-bacau-pascani-lot1-award",
+      "title": "Economica.net: Autostrada Bacău - Pașcani: E oficial! Umbrărescu a fost desemnat câștigător pe lotul 1 (22 December 2022)",
+      "url": "https://www.economica.net/autostrada-bacau-pascani-e-oficial-umbrarescu-a-fost-desemnat-castigator-pe-lotul-1_636456.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-buzau-focsani-lots-2-3-contracts",
+      "title": "CNAIR: S-au semnat contractele pentru construcția ultimelor două loturi ale autostrăzii Buzău – Focșani (12 January 2023)",
+      "url": "https://cnadnr.ro/en/node/11380",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "agerpres-ploiesti-buzau-tender",
+      "title": "Agerpres: Execuţia autostrăzii Ploieşti - Buzău, scoasă la licitaţie; valoarea maximă estimată depăşeşte 5 miliarde de lei (1 June 2021)",
+      "url": "https://agerpres.ro/economic-intern/2021/06/01/executia-autostrazii-ploiesti-buzau-scoasa-la-licitatie-valoarea-maxima-estimata-depaseste-5-miliarde-de-lei--723632",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-buzau-focsani-lots-1-4-tender",
+      "title": "Economica.net: Autostrada A7 Buzău - Focșani: A fost publicată prima licitație pentru loturile 1 și 4 (5 February 2022)",
+      "url": "https://www.economica.net/autostrada-buzau-focsani-a-fost-publicata-prima-licitatie-pentru-loturile-1-si-4_558449.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-focsani-bacau-tender",
+      "title": "CNAIR: Începe licitația și pentru construcția sectorului de autostrada Focșani – Bacău! (3 August 2022)",
+      "url": "https://www.cnadnr.ro/en/node/10880",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnair-bacau-bypass-financing",
+      "title": "CNAIR: Varianta de ocolire Bacău (Act Adițional nr.1 la Contractul de Finanțare nr. 50/26.11.2019)",
+      "url": "https://www.cnadnr.ro/en/node/8235",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "capital-bacau-pascani-contracts",
+      "title": "Capital: CNAIR a semnat contractele necesare construcţiei celor 3 loturi ale Autostrăzii Bacău – Paşcani (15 February 2023)",
+      "url": "https://www.capital.ro/cnair-a-semnat-contractele-necesare-constructiei-celor-3-loturi-ale-autostrazii-bacau-pascani.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-bacau-pascani-tender",
+      "title": "HotNews: Autostrada „Moldovei” A7: A fost scos la licitație un tronson de 77 km estimat la 1,2 mld euro (26 July 2022)",
+      "url": "https://hotnews.ro/autostrada-moldovei-a7-a-fost-scos-la-licitatie-un-tronson-de-77-km-estimat-la-12-mld-euro-116503",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "campusbuzau-buzau-focsani-contracts",
+      "title": "Campus TV Buzău: Autostrada Buzău – Focșani, acoperită de contracte. Tronsonul va fi construit de compania lui Umbrărescu (13 January 2023)",
+      "url": "https://www.campusbuzau.ro/video-autostrada-buzau-focsani-acoperita-de-contracte-tronsonul-va-fi-construit-de-compania-lui-umbrarescu/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "agerpres-suceava-siret-hg",
+      "title": "Agerpres: Șerban: A fost aprobată Hotărârea de Guvern privind indicatorii tehnico-economici pentru DEx Suceava-Siret (26 March 2026)",
+      "url": "https://agerpres.ro/economic/2026/03/26/serban-a-fost-aprobata-hotararea-de-guvern-privind-indicatorii-tehnico-economici-pentru-dex-suceava---1541376",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "libertatea-harta-iulie-2026",
+      "title": "Libertatea: Harta autostrăzilor și drumurilor expres din România în iulie 2026 (7 July 2026)",
+      "url": "https://www.libertatea.ro/stiri/harta-autostrazi-drumuri-expres-iulie-2026-proiecte-constructie-licitare-romania-5807884",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

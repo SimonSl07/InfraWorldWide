@@ -7,8 +7,8 @@
     "ro": "Reabilitarea liniei CF Brașov – Sighișoara (Coridorul IV)"
   },
   "description": {
-    "en": "Rehabilitation of the Brașov–Sighișoara section of the Brașov–Simeria main line, the missing link of the Rhine–Danube (Pan-European IV) rail corridor, for 160 km/h passenger and 120 km/h freight traffic. The work is contracted in three subsections to the RailWorks consortium (Alstom, Aktor, Arcada, Euro Construct Trading '98). Subsections 1 and 3, Brașov–Apața and Cața–Sighișoara, total 84 km under a single RON 3.44 billion contract. Subsection 2, Apața–Cața, has a RON 2.86 billion contract that shortens the winding Olt valley alignment from 43.95 km to 28.2 km through the Ormeniș and Homorod tunnels; at roughly 7 km and 5 km these will be by far the longest railway tunnels in Romania, and four tunnel boring machines entered the Racoș mountains in 2024–2025. Contractual completion is October 2026 for the tunnelled middle subsection and April 2027 for the end subsections; the government approved a €630 million EIB loan for the project.",
-    "ro": "Reabilitarea secțiunii Brașov–Sighișoara din magistrala Brașov–Simeria, veriga lipsă a coridorului feroviar Rin–Dunăre (IV pan-european), pentru viteze de 160 km/h la trenurile de călători și 120 km/h la marfă. Lucrările sunt contractate pe trei subsecțiuni cu asocierea RailWorks (Alstom, Aktor, Arcada, Euro Construct Trading '98). Subsecțiunile 1 și 3, Brașov–Apața și Cața–Sighișoara, însumează 84 km printr-un singur contract de 3,44 miliarde lei. Subsecțiunea 2, Apața–Cața, are un contract de 2,86 miliarde lei care scurtează traseul sinuos din valea Oltului de la 43,95 km la 28,2 km prin tunelurile Ormeniș și Homorod; cu circa 7 km și 5 km, acestea vor fi de departe cele mai lungi tuneluri feroviare din România, iar patru scuturi de forat au intrat în munții din zona Racoș în 2024–2025. Termenele contractuale sunt octombrie 2026 pentru subsecțiunea cu tuneluri și aprilie 2027 pentru subsecțiunile de capăt; Guvernul a aprobat un împrumut BEI de 630 de milioane de euro pentru proiect."
+    "en": "Rehabilitation of the Brașov–Sighișoara section of the Brașov–Simeria main line, the missing link of the Rhine–Danube (Pan-European IV) rail corridor, for 160 km/h passenger and 120 km/h freight traffic. The work is contracted in three subsections to the RailWorks consortium (Alstom, Aktor and Arcada, joined by Euro Construct Trading '98 on subsections 1 and 3). Subsections 1 and 3, Brașov–Apața and Cața–Sighișoara, total 84 km under a single RON 3.44 billion contract. Subsection 2, Apața–Cața, has a RON 2.86 billion contract that shortens the winding Olt valley alignment from 43.95 km to 28.2 km through the Ormeniș and Homorod tunnels; at roughly 7 km and 5 km these will be by far the longest railway tunnels in Romania, and four tunnel boring machines entered the Racoș mountains in 2024–2025. Contractual completion was October 2026 for the tunnelled middle subsection and April 2027 for the end subsections; CFR now estimates February 2028 and June 2028 respectively, and the government approved a €630 million EIB loan for the project.",
+    "ro": "Reabilitarea secțiunii Brașov–Sighișoara din magistrala Brașov–Simeria, veriga lipsă a coridorului feroviar Rin–Dunăre (IV pan-european), pentru viteze de 160 km/h la trenurile de călători și 120 km/h la marfă. Lucrările sunt contractate pe trei subsecțiuni cu asocierea RailWorks (Alstom, Aktor și Arcada, plus Euro Construct Trading '98 la subsecțiunile 1 și 3). Subsecțiunile 1 și 3, Brașov–Apața și Cața–Sighișoara, însumează 84 km printr-un singur contract de 3,44 miliarde lei. Subsecțiunea 2, Apața–Cața, are un contract de 2,86 miliarde lei care scurtează traseul sinuos din valea Oltului de la 43,95 km la 28,2 km prin tunelurile Ormeniș și Homorod; cu circa 7 km și 5 km, acestea vor fi de departe cele mai lungi tuneluri feroviare din România, iar patru scuturi de forat au intrat în munții din zona Racoș în 2024–2025. Termenele contractuale erau octombrie 2026 pentru subsecțiunea cu tuneluri și aprilie 2027 pentru subsecțiunile de capăt; CFR estimează acum februarie 2028, respectiv iunie 2028, iar Guvernul a aprobat un împrumut BEI de 630 de milioane de euro pentru proiect."
   },
   "corridors": [
     "pan-european-iv",
@@ -25,6 +25,7 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2020-03",
+        "constructionStart": "2020-04-16",
         "expectedOpening": "2027-04"
       },
       "lengthKm": 40.9,
@@ -77,7 +78,8 @@
         "en": "Subsections 1 and 3 were awarded together in March 2020 to RailWorks: 84 km in total for RON 3,437,453,580.88 excluding VAT, 48 months of execution plus 60 months of guarantee. The per-subsection split shown here is measured from OpenStreetMap geometry"
       },
       "sourceRefs": [
-        "cfr-ro"
+        "cfr-ro",
+        "cfr-ro-s3-cata-sighisoara-2"
       ],
       "geometryRef": "s1-brasov-apata"
     },
@@ -90,7 +92,8 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2020-09",
-        "expectedOpening": "2026-10"
+        "constructionStart": "2020-11-03",
+        "expectedOpening": "2028-02"
       },
       "lengthKm": 28.2,
       "cost": {
@@ -124,7 +127,7 @@
       ],
       "contractors": [
         {
-          "name": "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)",
+          "name": "RailWorks (Aktor – Alstom Transport – Arcada Company)",
           "role": "builder"
         }
       ],
@@ -136,10 +139,12 @@
         }
       },
       "note": {
-        "en": "Awarded September 2020 for RON 2.86 billion (€585.53 million), four-year duration; the new alignment through the Ormeniș and Homorod tunnels shortens the subsection from 43.95 km to 28.2 km. Geometry shown here follows the existing line"
+        "en": "Awarded September 2020 for RON 2.86 billion (€585.53 million), four-year duration; the new alignment through the Ormeniș and Homorod tunnels shortens the subsection from 43.95 km to 28.2 km. Geometry shown here follows the existing line. CFR gives the current contract value as RON 3,360.42 million excluding VAT (first half of 2026).",
+        "ro": "Atribuit în septembrie 2020 pentru 2,86 miliarde lei (585,53 milioane euro), cu durata de patru ani; noul traseu prin tunelurile Ormeniș și Homorod scurtează subsecțiunea de la 43,95 km la 28,2 km. Geometria afișată urmează linia existentă. CFR indică valoarea actuală a contractului: 3.360,42 milioane lei fără TVA (semestrul I 2026)."
       },
       "sourceRefs": [
-        "railwaypro-com"
+        "railwaypro-com",
+        "cfr-ro-s3-cata-sighisoara"
       ],
       "geometryRef": "s2-apata-cata"
     },
@@ -230,13 +235,15 @@
     },
     {
       "id": "cfr-ro-s3-cata-sighisoara",
-      "title": "cfr.ro (dates.expectedOpening)",
-      "url": "https://cfr.ro/wp-content/uploads/2026/07/Stadiu-implementare-Brasov-Sighisoara.pdf"
+      "title": "CFR SA: Stadiul proiectului Brașov – Sighișoara, semestrul I 2026 (2026-07)",
+      "url": "https://cfr.ro/wp-content/uploads/2026/07/Stadiu-implementare-Brasov-Sighisoara.pdf",
+      "retrievedOn": "2026-09-25"
     },
     {
       "id": "cfr-ro-s3-cata-sighisoara-2",
-      "title": "cfr.ro (dates.constructionStart)",
-      "url": "https://cfr.ro/wp-content/uploads/2026/01/Bv-Sighisoara-S1si-S3-Prezentare.pdf"
+      "title": "CFR SA: Brașov – Sighișoara, subsecțiunile 1 și 3, prezentare proiect (2026-01)",
+      "url": "https://cfr.ro/wp-content/uploads/2026/01/Bv-Sighisoara-S1si-S3-Prezentare.pdf",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

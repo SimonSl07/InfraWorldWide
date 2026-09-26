@@ -22,14 +22,27 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "1979",
         "opened": "1998-01-28"
       },
       "lengthKm": 6.5,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Built by the City of Sofia with its own funds, as part of the first seven stations (JBIC: \"self-secured funds\"). No amount published",
+            "ro": "Construit de municipalitatea Sofia din fonduri proprii, ca parte a primelor șapte stații (JBIC: „self-secured funds”). Nicio sumă publicată"
+          }
+        }
+      ],
       "note": {
-        "en": "First section of the Sofia Metro: 6.5 km and five stations from Slivnitsa Blvd through the Lyulin housing estates to Konstantin Velichkov Blvd, inaugurated 28 January 1998"
+        "en": "First section of the Sofia Metro: 6.5 km and five stations from Slivnitsa Blvd through the Lyulin housing estates to Konstantin Velichkov Blvd, inaugurated 28 January 1998. Station works began in 1979 at Vardar and the last, Konstantin Velichkov, in 1985; depot works began in 1978",
+        "ro": "Primul tronson al metroului din Sofia: 6,5 km și cinci stații de la bulevardul Slivnitsa, prin cartierele Lyulin, până la bulevardul Konstantin Velichkov, inaugurat pe 28 ianuarie 1998. Lucrările la stații au început în 1979 la Vardar, iar ultima, Konstantin Velichkov, în 1985; lucrările la depou au început în 1978"
       },
       "sourceRefs": [
-        "wikipedia-sofia-metro"
+        "wikipedia-sofia-metro",
+        "metropoliten-20-godini",
+        "jbic-2006-midterm-review"
       ],
       "geometryRef": "slivnitsa-konstantin-velichkov"
     },
@@ -44,11 +57,21 @@
         "opened": "2000-10-31"
       },
       "lengthKm": 1.6,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Built by the City of Sofia with its own funds, as part of the first seven stations (JBIC: \"self-secured funds\"). No amount published",
+            "ro": "Construit de municipalitatea Sofia din fonduri proprii, ca parte a primelor șapte stații (JBIC: „self-secured funds”). Nicio sumă publicată"
+          }
+        }
+      ],
       "note": {
         "en": "Opalchenska entered service on 17 September 1999 and Serdika, on St Nedelya Square, on 31 October 2000, extending the operating system to 8.1 km. The two station openings were not costed separately in the published sources"
       },
       "sourceRefs": [
-        "wikipedia-sofia-metro"
+        "wikipedia-sofia-metro",
+        "jbic-2006-midterm-review"
       ],
       "geometryRef": "konstantin-velichkov-serdika"
     },
@@ -64,11 +87,36 @@
         "opened": "2009-09-07"
       },
       "lengthKm": 4.8,
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "jica-loan",
+          "detail": {
+            "en": "JBIC ODA loan BG-P5 to Sofia Municipality, guaranteed by the Government of Bulgaria, signed February 2002: ¥12,894 million approved, ¥12,833 million disbursed. It financed the central 2.3 km with two stations",
+            "ro": "Împrumut ODA JBIC BG-P5 acordat municipalității Sofia, garantat de guvernul Bulgariei, semnat în februarie 2002: 12.894 de milioane de yeni aprobați, 12.833 de milioane de yeni plătiți. A finanțat tronsonul central de 2,3 km cu două stații"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The remaining 2.5 km with one station was financed locally",
+            "ro": "Restul de 2,5 km cu o stație a fost finanțat din surse locale"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Taisei Corporation (shield tunnel, Serdika – Vasil Levski Stadium)",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "4.8 km of tunnel and three stations from St Nedelya Square to the Interped World Trade Centre in Izgrev, started in 2005. Vasil Levski Stadium and Frédéric Joliot-Curie opened on 8 May 2009; the remaining Serdika – Vasil Levski Stadium link followed on 7 September 2009, when the section was in service over its full length"
       },
       "sourceRefs": [
-        "wikipedia-sofia-metro"
+        "wikipedia-sofia-metro",
+        "jica-2013-expost-evaluation",
+        "metropoliten-extension-history"
       ],
       "geometryRef": "serdika-joliot-curie"
     },
@@ -84,11 +132,21 @@
         "opened": "2009-05-08"
       },
       "lengthKm": 3.2,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Domestic funds, not the Japanese loan (JBIC: \"self-procured funds\" for the tenth to thirteenth stations). No amount published",
+            "ro": "Fonduri interne, nu împrumutul japonez (JBIC: „self-procured funds” pentru stațiile a zecea până la a treisprezecea). Nicio sumă publicată"
+          }
+        }
+      ],
       "note": {
         "en": "3.2 km of tunnel and three stations (G. M. Dimitrov, Musagenitsa, Mladost 1) linking Izgrev with the Mladost 1 housing estate, started in 2006 and opened on 8 May 2009, at first as an isolated segment"
       },
       "sourceRefs": [
-        "wikipedia-sofia-metro"
+        "wikipedia-sofia-metro",
+        "jbic-2006-midterm-review"
       ],
       "geometryRef": "joliot-curie-mladost-1"
     },
@@ -100,16 +158,40 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2013-03-28",
         "constructionStart": "2013-04-25",
         "opened": "2015-05-08"
       },
       "lengthKm": 2.7,
       "cost": {
         "actual": {
-          "amount": 43.85,
-          "currency": "EUR",
-          "year": 2013
-        }
+          "amount": 102.46627558,
+          "currency": "BGN",
+          "note": "Including VAT. Amounts paid under contracts 119/2013 (64,678,925.98 leva) and 114/2013 (37,787,349.60 leva), closed August and September 2015."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 85.38856298,
+              "currency": "BGN",
+              "year": 2013,
+              "note": "Excluding VAT. Sum of the initial values of contract 119/2013 (53,899,104.98 leva, signed 29 March 2013) and contract 114/2013 (31,489,458 leva, signed 28 March 2013)."
+            },
+            "date": "2013-03-29",
+            "sourceRef": "metropoliten-contract-119-2013"
+          },
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 102.46627558,
+              "currency": "BGN",
+              "note": "Including VAT. Amounts paid under contract 119/2013 (64,678,925.98 leva, closed 19 August 2015) and contract 114/2013 (37,787,349.60 leva, closed 9 September 2015), both fully performed at their initial values."
+            },
+            "date": "2015-09-09",
+            "sourceRef": "metropoliten-completion-114-2013"
+          }
+        ]
       },
       "funding": [
         {
@@ -124,18 +206,35 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Обединение \"МЕТРО БИЛД МЛАДОСТ\" (Mladost 1 – km 17+000)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение \"ГЕОМЕТРО Б.П.\" (km 17+000 – Business Park)",
+          "role": "builder"
+        }
+      ],
       "contract": {
+        "executionMonths": 24,
         "value": {
-          "amount": 43.85,
-          "currency": "EUR",
-          "year": 2013
+          "amount": 85.38856298,
+          "currency": "BGN",
+          "year": 2013,
+          "note": "Excluding VAT. Sum of contracts 119/2013 (53,899,104.98 leva) and 114/2013 (31,489,458 leva)."
         }
       },
       "note": {
-        "en": "Lot 2 of the third construction stage: 2.7 km and three underground stations (Aleksandar Malinov, Akad. Aleksandar Teodorov-Balan, Business Park) from Mladost 1 to Business Park Sofia in Mladost 4. Works began 25 April 2013 and the section opened 8 May 2015; the construction contract was €43,852,320 excluding VAT"
+        "en": "Lot 2 of the third construction stage: 2.7 km and three underground stations (Aleksandar Malinov, Akad. Aleksandar Teodorov-Balan, Business Park) from Mladost 1 to Business Park Sofia in Mladost 4. Works began 25 April 2013 and the section opened 8 May 2015; the two contracts totalled 85,388,562.98 leva excluding VAT. Built under two design-and-build contracts from an open procedure: 119/2013 (Mladost 1 – km 17+000) signed 29 March 2013 and 114/2013 (km 17+000 – Business Park) signed 28 March 2013, each for 24 months from the start of works",
+        "ro": "Tronsonul 2 al celei de-a treia etape de construcție: 2,7 km și trei stații subterane (Aleksandar Malinov, Akad. Aleksandar Teodorov-Balan, Business Park) de la Mladost 1 la Business Park Sofia, în Mladost 4. Lucrările au început pe 25 aprilie 2013, iar tronsonul a fost deschis pe 8 mai 2015; cele două contracte au totalizat 85.388.562,98 leva fără TVA. Construit prin două contracte de proiectare și execuție atribuite prin procedură deschisă: 119/2013 (Mladost 1 – km 17+000), semnat pe 29 martie 2013, și 114/2013 (km 17+000 – Business Park), semnat pe 28 martie 2013, fiecare pe 24 de luni de la începerea lucrărilor"
       },
       "sourceRefs": [
-        "novinite-com"
+        "novinite-com",
+        "metropoliten-contract-119-2013",
+        "metropoliten-contract-114-2013",
+        "metropoliten-completion-119-2013",
+        "metropoliten-completion-114-2013"
       ],
       "geometryRef": "mladost-1-business-park"
     }
@@ -154,6 +253,54 @@
       "id": "novinite-com",
       "title": "Novinite: Subway Extension to Business Park Sofia Opens",
       "url": "https://www.novinite.com/articles/168384/Subway+Extension+to+Business+Park+Sofia+Opens"
+    },
+    {
+      "id": "metropoliten-20-godini",
+      "title": "Metropoliten: 20 години метро в София (2018-01)",
+      "url": "https://www.metropolitan.bg/aktualno/20-godini-metro-sofiya",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "jbic-2006-midterm-review",
+      "title": "JBIC: ODA Loan Project Mid-Term Review 2006, Sofia Metro Extension Project (BG-P5) (2007)",
+      "url": "https://www2.jica.go.jp/en/evaluation/pdf/2006_BG-P5_2_f.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "jica-2013-expost-evaluation",
+      "title": "JICA: Ex-Post Evaluation of Japanese ODA Loan Project, Sofia Metro Extension Project (2014)",
+      "url": "https://www2.jica.go.jp/en/evaluation/pdf/2013_BG-P5_4_f.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-extension-history",
+      "title": "Metropoliten Sofia: History of metro extensions",
+      "url": "https://www.metropolitan.bg/en/op-transport-extension/istoriya-razvitie-metro",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-contract-119-2013",
+      "title": "Metropoliten buyer profile: Договор №119/2013, участък от МС13 до км 17+000",
+      "url": "https://metropolitan.nit.bg/prexodni-publikaczii/119/2013-ms13-do-ms16uchastk-ot-ms13-do-km17/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-contract-114-2013",
+      "title": "Metropoliten buyer profile: Договор №114/2013, участък от км 17 до МС16 (Бизнес парк)",
+      "url": "https://metropolitan.nit.bg/prexodni-publikaczii/118/2013-uchastk-ot-km16-do-ms16-%28biznes-park%29/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-completion-119-2013",
+      "title": "Metropoliten: Информация за приключване на договор № 119/29.03.2013",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/797/%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B7%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%B3.pdf",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-completion-114-2013",
+      "title": "Metropoliten: Информация за приключване на договор № 114/28.03.2013",
+      "url": "https://metropolitan.nit.bg/assets/resourcedocuments/791/%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC.%20%D0%B7%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B2.%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%B3..pdf",
+      "retrievedOn": "2026-09-25"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

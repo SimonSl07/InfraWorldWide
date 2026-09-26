@@ -31,12 +31,19 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "IPTANA",
+          "role": "designer"
+        }
+      ],
       "note": {
         "en": "Romania's first motorway, built 1967–1972 and financed from the state budget; fully rehabilitated later (a 1997 FAT consortium contract for €27M over 22 months)"
       },
       "geometryRef": "bucharest-pitesti",
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a1-rom-nia"
+        "wikipedia-ro-autostrada-a1-rom-nia",
+        "iptana-drumuri-history"
       ]
     },
     {
@@ -54,10 +61,23 @@
       "lengthKm": 30.34,
       "cost": {
         "estimated": {
-          "amount": 356,
-          "currency": "EUR",
-          "year": 2020
-        }
+          "amount": 1830,
+          "currency": "RON",
+          "note": "Estimated value before award, excluding VAT. Rounded in the source (1.83 billion lei)."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1710,
+              "currency": "RON",
+              "year": 2020,
+              "note": "Excluding VAT. Rounded in the source (1.71 billion lei); reported as 356M EUR at signing."
+            },
+            "date": "2020-05-11",
+            "sourceRef": "economica-pitesti-sibiu-lot5-contract"
+          }
+        ]
       },
       "funding": [
         {
@@ -79,10 +99,13 @@
           "currency": "EUR",
           "year": 2020
         },
-        "executionMonths": 48
+        "designMonths": 12,
+        "executionMonths": 48,
+        "guaranteeMonths": 120
       },
       "note": {
-        "en": "First 16 km (Pitești–Curtea de Argeș) inaugurated December 2024, eight months ahead of the contractual term"
+        "en": "First stage, about 15 km from Bascov (Pitești) to the Merișani junction, opened in December 2024, eight months ahead of the contractual term. The remaining 15 km or so to Curtea de Argeș opened in June 2025.",
+        "ro": "Prima etapă, circa 15 km de la Bascov (Pitești) la nodul rutier Merișani, a fost deschisă în decembrie 2024, cu opt luni înainte de termenul contractual. Restul de circa 15 km până la Curtea de Argeș a fost deschis în iunie 2025."
       },
       "sources": [
         {
@@ -91,7 +114,9 @@
         }
       ],
       "sourceRefs": [
-        "hotnews-ro-pitesti-sibiu-lot5"
+        "hotnews-ro-pitesti-sibiu-lot5",
+        "economica-pitesti-sibiu-lot5-contract",
+        "hotnews-a1-sibiu-pitesti-99"
       ],
       "geometryRef": "pitesti-sibiu-lot5",
       "profile": {
@@ -99,10 +124,64 @@
       }
     },
     {
+      "id": "pitesti-sibiu-lot4",
+      "name": {
+        "en": "Tigveni – Curtea de Argeș (section 4)",
+        "ro": "Tigveni – Curtea de Argeș (secțiunea 4)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-11",
+        "constructionStart": "2023",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 9.86,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1678.87,
+              "currency": "RON",
+              "year": 2021,
+              "note": "Excluding VAT."
+            },
+            "date": "2021-11",
+            "sourceRef": "hotnews-a1-sibiu-pitesti-99"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Porr Construct",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1678.87,
+          "currency": "RON",
+          "year": 2021,
+          "note": "Excluding VAT."
+        },
+        "designMonths": 16,
+        "executionMonths": 44
+      },
+      "note": {
+        "en": "Includes the Momaia tunnel (about 1.35 km), the first bored motorway tunnel in Romania. Works were at 99% in September 2026 and opening depends on the tunnel safety tests with ISU, planned for the end of September. CNAIR expects traffic by the end of 2026; the contract deadline is February 2027. HotNews gives March 2022 as the start of the contract (design came first) and autumn 2023 for the start of works.",
+        "ro": "Include tunelul Momaia (circa 1,35 km), primul tunel de autostradă forat din România. Lucrările erau la 99% în septembrie 2026, iar deschiderea depinde de testele de siguranță ale tunelului cu ISU, programate la sfârșitul lui septembrie. CNAIR estimează deschiderea circulației până la sfârșitul lui 2026; termenul contractual este februarie 2027. HotNews indică martie 2022 pentru începerea contractului (întâi proiectarea) și toamna lui 2023 pentru începerea lucrărilor."
+      },
+      "sourceRefs": [
+        "hotnews-a1-sibiu-pitesti-99",
+        "cotidianul-tigveni-curtea-de-arges-tests"
+      ],
+      "geometryRef": "pitesti-sibiu-lot4"
+    },
+    {
       "id": "pitesti-sibiu-lots234",
       "name": {
-        "en": "Curtea de Argeș – Boița (lots 2–4)",
-        "ro": "Curtea de Argeș – Boița (loturile 2–4)"
+        "en": "Tigveni – Boița (lots 2–3)",
+        "ro": "Tigveni – Boița (loturile 2–3)"
       },
       "status": "under_construction",
       "dates": {
@@ -110,7 +189,7 @@
         "constructionStart": "2022",
         "expectedOpening": "2031"
       },
-      "lengthKm": 78,
+      "lengthKm": 68.73,
       "funding": [
         {
           "source": "EU"
@@ -121,10 +200,6 @@
       ],
       "contractors": [
         {
-          "name": "Porr (lot 4)",
-          "role": "builder"
-        },
-        {
           "name": "Mapa – Cengiz (JV, lot 2)",
           "role": "builder"
         },
@@ -134,7 +209,7 @@
         }
       ],
       "note": {
-        "en": "Lots 2–4 (Curtea de Argeș–Boița), the Carpathian crossing, under separate execution contracts: lot 2 Mapa–Cengiz, lot 3 Webuild, lot 4 Porr. Staged completion per OpenStreetMap construction tagging: section D 2027, lot 3 (Tunel Poiana, Polanta) 2028, lot 2 Boița–Cornet (Tunel Lazaret 1/2, Robești, Câineni, Boița 1/2, Balota) 2031, so the full stretch is in service only from 2031"
+        "en": "Lots 2 and 3 (Tigveni – Boița), the Carpathian crossing, under separate execution contracts: lot 2 Mapa–Cengiz (Boița – Cornetu, 31.33 km), lot 3 Webuild (Cornetu – Tigveni, 37.4 km). Staged completion per OpenStreetMap construction tagging: lot 3 (Tunel Poiana, Polanta) 2028, lot 2 Boița–Cornet (Tunel Lazaret 1/2, Robești, Câineni, Boița 1/2, Balota) 2031, so the full stretch is in service only from 2031. Section 4, Tigveni – Curtea de Argeș, is recorded as its own lot."
       },
       "sources": [
         {
@@ -145,7 +220,10 @@
       "geometryRef": "pitesti-sibiu-lots234",
       "profile": {
         "terrain": "mountain"
-      }
+      },
+      "sourceRefs": [
+        "hotnews-a1-sibiu-pitesti-99"
+      ]
     },
     {
       "id": "pitesti-sibiu-lot1",
@@ -156,16 +234,24 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2019-04",
-        "constructionStart": "2019",
+        "constructionStart": "2020-03-30",
         "opened": "2022-12-15"
       },
       "lengthKm": 13.1,
       "cost": {
-        "estimated": {
-          "amount": 128.7,
-          "currency": "EUR",
-          "year": 2019
-        }
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 612.64786328,
+              "currency": "RON",
+              "year": 2019,
+              "note": "Excluding VAT. Contract signed with Porr Construct on 14 April 2019."
+            },
+            "date": "2019-04-14",
+            "sourceRef": "hotnews-pitesti-sibiu-lot1-start"
+          }
+        ]
       },
       "funding": [
         {
@@ -182,13 +268,22 @@
         }
       ],
       "contract": {
-        "executionMonths": 36
+        "designMonths": 12,
+        "executionMonths": 36,
+        "guaranteeMonths": 120,
+        "value": {
+          "amount": 612.64786328,
+          "currency": "RON",
+          "year": 2019,
+          "note": "Excluding VAT."
+        }
       },
       "note": {
         "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
       },
       "sourceRefs": [
-        "wikipedia-a1-motorway-romania"
+        "wikipedia-a1-motorway-romania",
+        "hotnews-pitesti-sibiu-lot1-start"
       ],
       "geometryRef": "pitesti-sibiu-lot1",
       "profile": {
@@ -208,6 +303,14 @@
         "opened": "2010-12-01"
       },
       "lengthKm": 17.5,
+      "cost": {
+        "actual": {
+          "amount": 76.57,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Works cost settled up to reception of the ISPA 2001 Sibiu bypass measure, per the Minister of Transport's answer to a parliamentary question (2011). Excludes the later compensation of 15.7M EUR and 0.52M EUR awarded to Todini. VAT not stated."
+        }
+      },
       "funding": [
         {
           "source": "EU"
@@ -230,7 +333,8 @@
         "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
       },
       "sourceRefs": [
-        "wikipedia-a1-motorway-romania"
+        "wikipedia-a1-motorway-romania",
+        "turnulsfatului-sibiu-bypass-cost"
       ],
       "geometryRef": "sibiu-bypass"
     },
@@ -252,7 +356,20 @@
           "amount": 370,
           "currency": "EUR",
           "year": 2014
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2064.39437444,
+              "currency": "RON",
+              "year": 2011,
+              "note": "Sum of four works contracts excluding VAT, signed 20 May 2011 (lot 3) and 7 June 2011 (lots 1, 2, 4)."
+            },
+            "date": "2011-06-07",
+            "sourceRef": "cnadnr-orastie-sibiu-funding"
+          }
+        ]
       },
       "funding": [
         {
@@ -280,12 +397,21 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 2064.39437444,
+          "currency": "RON",
+          "year": 2011,
+          "note": "Sum of four works contracts, excluding VAT: lot 1 Strabag 551.04M lei, lot 2 Straco Grup–Studio Corona 377.78M lei, lot 3 Salini Impregilo 604.79M lei, lot 4 Astaldi–Euro Construct Trading 98–Astalrom 530.78M lei."
+        }
+      },
       "note": {
         "en": "Orăștie–Sibiu received close to €370M in EU funds for the whole section (four lots: Strabag, Straco Grup–Studio Corona, Salini Impregilo, Astaldi); lot 3 was closed for repairs 2015–2016"
       },
       "geometryRef": "orastie-sibiu",
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a1-rom-nia"
+        "wikipedia-ro-autostrada-a1-rom-nia",
+        "cnadnr-orastie-sibiu-funding"
       ]
     },
     {
@@ -463,6 +589,21 @@
         "expectedOpening": "2027"
       },
       "lengthKm": 13.16,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1826.84563411,
+              "currency": "RON",
+              "year": 2022,
+              "note": "Excluding VAT."
+            },
+            "date": "2022-10-14",
+            "sourceRef": "ziare-margina-holdea-contract"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -497,7 +638,8 @@
         "profit-margina-holdea-breakthrough",
         "stiridetimisoara-margina-holdea-contract",
         "api-margina-holdea-2024",
-        "hotnews-margina-holdea-excavated"
+        "hotnews-margina-holdea-excavated",
+        "ziare-margina-holdea-contract"
       ],
       "geometryRef": "margina-holdea",
       "profile": {
@@ -517,6 +659,27 @@
         "opened": "2015-12-23"
       },
       "lengthKm": 27.5,
+      "cost": {
+        "estimated": {
+          "amount": 1118.840865,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimated value, design and build, km 0+000–27+400. VAT not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 681.04091398,
+              "currency": "RON",
+              "year": 2011,
+              "note": "Winning bid. VAT not stated."
+            },
+            "date": "2011-04",
+            "sourceRef": "hotnews-a1-tenders-2011"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU"
@@ -531,11 +694,22 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 681.04091398,
+          "currency": "RON",
+          "year": 2011,
+          "note": "Winning bid as announced on 12 April 2011. VAT not stated."
+        }
+      },
       "note": {
-        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
+        "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution. Financing contract 86/02.12.2011 (addendum 1): total 1,119.09M lei, eligible 901.29M lei, covering km 0+000–27+472 and an 11.43 km link road. Cohesion Fund 85%.",
+        "ro": "Tronson al autostrăzii A1 București–Nădlac (Coridorul Pan-European IV), cofinanțat din fonduri UE cu contribuție de la bugetul de stat. Contractul de finanțare 86/02.12.2011 (actul adițional 1): total 1.119,09 milioane lei, eligibil 901,29 milioane lei, pentru km 0+000–27+472 și un drum de legătură de 11,43 km. Fondul de Coeziune 85%."
       },
       "sourceRefs": [
-        "wikipedia-a1-motorway-romania"
+        "wikipedia-a1-motorway-romania",
+        "hotnews-a1-tenders-2011",
+        "cnadnr-lugoj-dumbrava-funding"
       ],
       "geometryRef": "lugoj-deva-lot1"
     },
@@ -552,6 +726,14 @@
         "constructionStart": "2014"
       },
       "lengthKm": 35.1,
+      "cost": {
+        "estimated": {
+          "amount": 1303.930842,
+          "currency": "RON",
+          "scope": "total",
+          "note": "Total project value per financing contract 126/29.10.2012: 26.625 km of motorway and the 9.5 km Timișoara bypass, including supervision and land. Eligible value 1,058.67M lei. VAT not stated."
+        }
+      },
       "funding": [
         {
           "source": "EU"
@@ -574,7 +756,8 @@
         "en": "Section of the A1 Bucharest–Nădlac motorway (Pan-European Corridor IV), EU co-financed with national budget contribution"
       },
       "sourceRefs": [
-        "wikipedia-a1-motorway-romania"
+        "wikipedia-a1-motorway-romania",
+        "cnadnr-timisoara-lugoj-funding"
       ],
       "geometryRef": "timisoara-lugoj"
     },
@@ -625,10 +808,19 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2011-10",
+        "tenderAwarded": "2011-04",
+        "constructionStart": "2011-06-20",
         "opened": "2015-07-11"
       },
       "lengthKm": 38.8,
+      "cost": {
+        "estimated": {
+          "amount": 1316.495976,
+          "currency": "RON",
+          "scope": "total",
+          "note": "Total project value per addendum 1 to financing contract 83/21.10.2011: 38.882 km of motorway plus a 5.911 km link road to DN7, including supervision and land. Eligible value 914.44M lei. VAT not stated."
+        }
+      },
       "funding": [
         {
           "source": "EU"
@@ -655,7 +847,10 @@
         "en": "Nădlac–Arad tendered together with Timișoara–Lugoj and Lugoj–Dumbrava; lot 1 and part of lot 2 opened December 2014, the remainder plus the junction with the Hungarian M43 in July 2015"
       },
       "sourceRefs": [
-        "wikipedia-a1-motorway-romania"
+        "wikipedia-a1-motorway-romania",
+        "hotnews-a1-tenders-2011",
+        "cnadnr-nadlac-arad-funding",
+        "cnadnr-nadlac-arad-lot2-factsheet"
       ],
       "geometryRef": "nadlac-arad"
     }
@@ -713,6 +908,90 @@
       "id": "wikipedia-ro-autostrada-a1-rom-nia",
       "title": "Wikipedia (ro): Autostrada A1 (România)",
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A1_(Rom%C3%A2nia)"
+    },
+    {
+      "id": "turnulsfatului-sibiu-bypass-cost",
+      "title": "Turnul Sfatului: Centura Sibiului, plătită de trei ori (19 January 2014)",
+      "url": "http://www.turnulsfatului.ro/2014/01/19/centura-sibiului-platita-de-trei-ori/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-a1-tenders-2011",
+      "title": "HotNews: Cum au fost \"impartite\" patru tronsoane de autostrada (12 April 2011)",
+      "url": "https://hotnews.ro/stiri-companii-8495454-vezi-cine-castigat-licitatiile-pentru-patru-tronsoane-autostrada.htm",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnadnr-orastie-sibiu-funding",
+      "title": "CNADNR: Construcție autostrăzii Orăștie - Sibiu (structural funds project page, archived)",
+      "url": "http://www.cnadnr.ro/pagina.php?idg=135",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20160326235749/http://www.cnadnr.ro/pagina.php?idg=135"
+    },
+    {
+      "id": "hotnews-pitesti-sibiu-lot1-start",
+      "title": "HotNews: Autostrada Sibiu - Pitești: A fost semnat ordinul de începere al lucrărilor pe Lotul 1 Sibiu - Boița (30 March 2020)",
+      "url": "https://hotnews.ro/harta-autostrada-sibiu-pitesti-a-fost-semnat-ordinul-de-ncepere-al-lucrarilor-pe-lotul-1-sibiu-boita-267365",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-pitesti-sibiu-lot5-contract",
+      "title": "Economica.net: Autostrada Sibiu - Pitești: S-a semnat contractul pentru secțiunea 5 Curtea de Argeș - Pitești (11 May 2020)",
+      "url": "https://www.economica.net/autostrada-sibiu-pitesti-s-a-semnat-contractul-pentru-sectiunea-5-curtea-de-arges-pitesti_184223.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-a1-sibiu-pitesti-99",
+      "title": "HotNews: O nouă autostradă și o premieră în România: „A ajuns la 99%” (17 September 2026)",
+      "url": "https://hotnews.ro/video-o-noua-autostrada-si-o-premiera-in-romania-a-ajuns-la-99-ce-mai-e-nevoie-pentru-deschiderea-circulatiei-2351871",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnadnr-timisoara-lugoj-funding",
+      "title": "CNADNR: Construcția autostrăzii Timișoara - Lugoj și variantei de ocolire Timișoara (structural funds project page, archived)",
+      "url": "http://www.cnadnr.ro/pagina.php?idg=151",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20160328015821/http://www.cnadnr.ro/pagina.php?idg=151"
+    },
+    {
+      "id": "iptana-drumuri-history",
+      "title": "IPTANA: Partea II, Drumuri și autostrăzi (company history, archived PDF)",
+      "url": "http://www.iptana.ro/romania/download/PARTEA%20II_Drumuri.pdf",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20200731200231/http://www.iptana.ro/romania/download/PARTEA%20II_Drumuri.pdf"
+    },
+    {
+      "id": "ziare-margina-holdea-contract",
+      "title": "Ziare.com: A fost semnat contractul pentru bucata lipsă din autostrada Lugoj-Deva (14 October 2022)",
+      "url": "https://ziare.com/autostrada-lugo-deva/a-fost-semnat-contractul-bucata-lipsa-autostrada-lugoj-deva-1766437",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "cnadnr-lugoj-dumbrava-funding",
+      "title": "CNADNR: Construcția Autostrăzii Lugoj-Deva, sectorul Lugoj - Dumbrava (archived)",
+      "url": "http://www.cnadnr.ro/pagina.php?idg=155",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20160321141418/http://www.cnadnr.ro/pagina.php?idg=155"
+    },
+    {
+      "id": "cnadnr-nadlac-arad-funding",
+      "title": "CNADNR: Construcție Autostrada Nădlac – Arad (structural funds project page, archived)",
+      "url": "http://www.cnadnr.ro/pagina.php?idg=134",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20160306232121/http://www.cnadnr.ro/pagina.php?idg=134"
+    },
+    {
+      "id": "cnadnr-nadlac-arad-lot2-factsheet",
+      "title": "CNADNR: Tronsonul Nadlac - Arad Lot 2 (fact sheet, archived 20 October 2017)",
+      "url": "http://cnadnr.ro/ro/proiecte/tronsonul-nadlac-arad-lot-2",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20171020164241/http://cnadnr.ro/ro/proiecte/tronsonul-nadlac-arad-lot-2"
+    },
+    {
+      "id": "cotidianul-tigveni-curtea-de-arges-tests",
+      "title": "Cotidianul: Ultimele teste pe A1. Când este programată inaugurarea tronsonului Tigveni – Curtea de Argeș (18 September 2026)",
+      "url": "https://www.cotidianul.ro/video-ultimele-teste-pe-a1-cand-este-programata-inaugurarea-tronsonului-tigveni-curtea-de-arges/",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

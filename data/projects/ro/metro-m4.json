@@ -8,8 +8,8 @@
     "ro": "Magistrala 4 de metrou București (Gara de Nord 2 – Străulești)"
   },
   "description": {
-    "en": "The shortest line of the Bucharest Metro, running north-west from Gara de Nord 2 along Calea Griviței and Bucureștii Noi to Străulești. Construction started in September 1989 and stopped after the revolution, so the first section opened only on 1 March 2000, followed by Parc Bazilescu in 2011 and Străulești in 2017, all financed with European Investment Bank loans. Metrorex records 7.44 km and 8 stations in operation. The section from Gara de Nord 2 to 1 Mai will also carry line M6 to the airport, and an 11 km southern extension to Gara Progresul went to tender in April 2024.",
-    "ro": "Cea mai scurtă magistrală a metroului bucureștean, care merge spre nord-vest de la Gara de Nord 2, pe Calea Griviței și Bucureștii Noi, până la Străulești. Construcția a început în septembrie 1989 și s-a oprit după revoluție, astfel că primul tronson a fost deschis abia pe 1 martie 2000, urmat de Parc Bazilescu în 2011 și Străulești în 2017, toate finanțate din împrumuturi de la Banca Europeană de Investiții. Metrorex indică 7,44 km și 8 stații în funcțiune. Tronsonul Gara de Nord 2 – 1 Mai va fi parcurs și de magistrala M6 spre aeroport, iar prelungirea de 11 km spre sud, până la Gara Progresul, a fost scoasă la licitație în aprilie 2024."
+    "en": "The shortest line of the Bucharest Metro, running north-west from Gara de Nord 2 along Calea Griviței and Bucureștii Noi to Străulești. Construction started in December 1989 and stopped after the revolution, so the first section opened only on 1 March 2000, followed by Parc Bazilescu in 2011, both financed with European Investment Bank loans, and Străulești in 2017, funded from the state budget. Metrorex records 7.44 km and 8 stations in operation. The section from Gara de Nord 2 to 1 Mai will also carry line M6 to the airport, and an 11 km southern extension to Gara Progresul went to tender in April 2024.",
+    "ro": "Cea mai scurtă magistrală a metroului bucureștean, care merge spre nord-vest de la Gara de Nord 2, pe Calea Griviței și Bucureștii Noi, până la Străulești. Construcția a început în decembrie 1989 și s-a oprit după revoluție, astfel că primul tronson a fost deschis abia pe 1 martie 2000, urmat de Parc Bazilescu în 2011, ambele finanțate din împrumuturi de la Banca Europeană de Investiții, și de Străulești în 2017, finanțat de la bugetul de stat. Metrorex indică 7,44 km și 8 stații în funcțiune. Tronsonul Gara de Nord 2 – 1 Mai va fi parcurs și de magistrala M6 spre aeroport, iar prelungirea de 11 km spre sud, până la Gara Progresul, a fost scoasă la licitație în aprilie 2024."
   },
   "operator": "ro-metrorex",
   "lots": [
@@ -21,7 +21,7 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "1989-09",
+        "constructionStart": "1989-12",
         "opened": "2000-03-01"
       },
       "lengthKm": 3.6,
@@ -39,7 +39,8 @@
         "en": "3.6 km and 4 stations, the first line begun under the communist government and finished after it. Tunnelling reached as far as today's Parc Bazilescu before works were abandoned and restarted in the 1990s. Basarab 2 is a four-track station with the M1 tracks between the M4 tracks. Ziarul Financiar reported the investment at €220 million; no price year is published for a spend running from 1989 to 2000, so no cost is recorded. Line M6 will share this section"
       },
       "sourceRefs": [
-        "wikipedia-ro-metroul-din-bucure-ti"
+        "wikipedia-ro-metroul-din-bucure-ti",
+        "metrorex-2007-m4-racorduri"
       ],
       "geometryRef": "gara-de-nord-1-mai"
     },
@@ -51,6 +52,7 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "1989",
         "opened": "2011-07-01"
       },
       "lengthKm": 2.62,
@@ -65,10 +67,13 @@
         }
       ],
       "note": {
-        "en": "2.62 km and 2 stations, Jiului and Parc Bazilescu. Parc Bazilescu was not in the original plan and was built to bring the section into service sooner"
+        "en": "2.62 km and 2 stations, Jiului and Parc Bazilescu. Parc Bazilescu was not in the original plan and was built to bring the section into service sooner. România liberă put the cost of the two stations at 300 million lei (about US$100 million), 200 million of it spent between 1990 and 2010 and the rest in the two years before opening. The sums are nominal across the 2005 redenomination, so no cost is recorded. Works on Racordul 2 (Gara de Nord – Laromet, 6.1 km, including Pajura, today's Jiului, and Bazilescu) began under Decree 303 of 7 December 1989, per Metrorex; România liberă gives 1988.",
+        "ro": "2,62 km și 2 stații, Jiului și Parc Bazilescu. Stația Parc Bazilescu nu era în planul inițial și a fost construită pentru a pune tronsonul în funcțiune mai devreme. România liberă a estimat costul celor două stații la 300 de milioane de lei (circa 100 de milioane de dolari), din care 200 de milioane cheltuite între 1990 și 2010, iar restul în ultimii doi ani înainte de deschidere. Sumele sunt nominale, peste denominarea din 2005, așa că nu este înregistrat un cost. Lucrările la Racordul 2 (Gara de Nord – Laromet, 6,1 km, inclusiv Pajura, actuala Jiului, și Bazilescu) au început în baza Decretului 303 din 7 decembrie 1989, potrivit Metrorex; România liberă indică 1988."
       },
       "sourceRefs": [
-        "wikipedia-ro-metroul-din-bucure-ti"
+        "wikipedia-ro-metroul-din-bucure-ti",
+        "romanialibera-2011-06-30-m4",
+        "metrorex-2007-m4-racorduri"
       ],
       "geometryRef": "1-mai-parc-bazilescu"
     },
@@ -80,25 +85,73 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2012-07-12",
         "constructionStart": "2013",
         "opened": "2017-03-31"
       },
       "lengthKm": 2.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 714.731097,
+              "currency": "RON",
+              "year": 2012,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2012-07-12",
+            "sourceRef": "metrorex-2012-07-12-contract"
+          }
+        ]
+      },
       "funding": [
         {
-          "source": "loan",
-          "programme": "eib-loan",
+          "source": "national_budget",
           "detail": {
-            "en": "European Investment Bank loan",
-            "ro": "Împrumut de la Banca Europeană de Investiții"
+            "en": "State budget allocations, as planned at contract signing (Metrorex, 2012)",
+            "ro": "Alocații de la bugetul de stat, prevăzute la semnarea contractului (Metrorex, 2012)"
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Astaldi S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "S.C. SOMET S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "S.C. TIAB S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "S.C. UTI Construction & Facility Management S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 30,
+        "value": {
+          "amount": 714.731097,
+          "currency": "RON",
+          "year": 2012,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
       "note": {
-        "en": "2.1 km and 2 stations, Laminorului and Străulești, together with the Străulești depot and an interchange with the surface network. Works started in 2013, tunnelling was finished on 3 September 2015 and the stations opened on 31 March 2017. The English article gives this section as 1.89 km and the M4 article as 1.6 km"
+        "en": "2.1 km and 2 stations, Laminorului and Străulești, together with the Străulești depot and an interchange with the surface network. Works started in 2013, tunnelling was finished on 3 September 2015 and the stations opened on 31 March 2017. The English article gives this section as 1.89 km and the M4 article as 1.6 km. Works contract signed on 12 July 2012 with a consortium led by Astaldi (with SOMET, TIAB and UTI), covering the tunnel, both stations, the Străulești depot, the multimodal terminal and park and ride. Economica.net gave the total project value as 1,115 million lei (€252.4 million), covering stations, tunnel, depot, intermodal terminal and park and ride, with no price year or VAT basis. At the opening the transport minister gave the project value as €241 million.",
+        "ro": "2,1 km și 2 stații, Laminorului și Străulești, împreună cu depoul Străulești și un nod de legătură cu transportul de suprafață. Lucrările au început în 2013, excavarea tunelului s-a încheiat pe 3 septembrie 2015, iar stațiile au fost deschise pe 31 martie 2017. Articolul din Wikipedia în engleză indică pentru acest tronson 1,89 km, iar articolul despre M4 1,6 km. Contractul de execuție a fost semnat pe 12 iulie 2012 cu o asociere condusă de Astaldi (cu SOMET, TIAB și UTI), pentru tunel, cele două stații, depoul Străulești, terminalul multimodal și parcarea park and ride. Economica.net a indicat valoarea totală a proiectului la 1,115 miliarde lei (252,4 milioane euro), pentru stații, tunel, depou, terminal intermodal și park and ride, fără an de referință al prețurilor sau precizări privind TVA. La inaugurare, ministrul transporturilor a indicat valoarea proiectului la 241 de milioane de euro."
       },
       "sourceRefs": [
-        "wikipedia-ro-metroul-din-bucure-ti"
+        "wikipedia-ro-metroul-din-bucure-ti",
+        "metrorex-2012-07-12-contract",
+        "economica-2017-03-30-straulesti",
+        "protv-2017-03-31-straulesti"
       ],
       "geometryRef": "parc-bazilescu-straulesti"
     },
@@ -110,14 +163,73 @@
       },
       "status": "tendered",
       "dates": {
-        "announced": "2024-04"
+        "announced": "2024-04",
+        "tenderAwarded": "2025-08"
       },
       "lengthKm": 11,
+      "cost": {
+        "estimated": {
+          "amount": 2000,
+          "currency": "EUR",
+          "confidence": "reported",
+          "note": "Rounded tender value for design and build of both sections; no VAT basis or price year stated."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Programul Transport 2021-2027, non-reimbursable EU funds; financing contract signed by Sector 4 on 4 June 2024",
+            "ro": "Programul Transport 2021-2027, fonduri europene nerambursabile; contract de finanțare semnat de Sectorul 4 pe 4 iunie 2024"
+          },
+          "amount": {
+            "amount": 2500,
+            "currency": "EUR",
+            "note": "Financing contract value."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dogus Insaat Ve Ticaret A.S. (Section I, Gara de Nord – Eroii Revoluției)",
+          "role": "builder"
+        },
+        {
+          "name": "Trace Group Hold (Section I, Gara de Nord – Eroii Revoluției)",
+          "role": "builder"
+        },
+        {
+          "name": "GP Group JSC (Section I, Gara de Nord – Eroii Revoluției)",
+          "role": "builder"
+        },
+        {
+          "name": "S.C. Construcții Erbașu S.A. (Section II, Eroii Revoluției – Gara Progresul)",
+          "role": "builder"
+        },
+        {
+          "name": "S.C. Concelex S.R.L. (Section II, Eroii Revoluției – Gara Progresul)",
+          "role": "builder"
+        },
+        {
+          "name": "S.C. Bog’Art S.R.L. (Section II, Eroii Revoluției – Gara Progresul)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 60
+      },
       "note": {
-        "en": "About 11 km and 14 new stations south from Gara de Nord along Berzei, Vasile Pârvan, Hașdeu, Izvor, 13 Septembrie, Tudor Vladimirescu, Șoseaua Viilor and Șoseaua Giurgiului to Gara Progresul, where a depot is planned. Route from the revised feasibility study presented in November 2020; the tender was launched on 26 April 2024. The English article gives the planned length as 10.6 km. The alignment drawn here follows those streets and is indicative"
+        "en": "About 11 km and 14 new stations south from Gara de Nord along Berzei, Vasile Pârvan, Hașdeu, Izvor, 13 Septembrie, Tudor Vladimirescu, Șoseaua Viilor and Șoseaua Giurgiului to Gara Progresul, where a depot is planned. Route from the revised feasibility study presented in November 2020; the tender was launched on 26 April 2024. The English article gives the planned length as 10.6 km. The alignment drawn here follows those streets and is indicative. Contracting authority: Sector 4 City Hall. Both design-and-build contracts were awarded in August 2025: Section I (Gara de Nord – Eroii Revoluției) to a consortium led by Dogus, Section II (Eroii Revoluției – Gara Progresul) to one led by Construcții Erbașu. The Section I contract was signed at the end of 2025 and its start order for design and execution was issued on 4 December 2025; physical works follow the design phase. Each contract runs 60 months, starting with a design phase given as 8 or 10 months depending on the release. By December 2025 Sector 4 gave the investment value as €3.5 billion (over 17 billion lei) of non-reimbursable EU funds.",
+        "ro": "Circa 11 km și 14 stații noi spre sud de la Gara de Nord, pe Berzei, Vasile Pârvan, Hașdeu, Izvor, 13 Septembrie, Tudor Vladimirescu, Șoseaua Viilor și Șoseaua Giurgiului, până la Gara Progresul, unde este prevăzut un depou. Traseul provine din studiul de fezabilitate revizuit prezentat în noiembrie 2020; licitația a fost lansată pe 26 aprilie 2024. Articolul din Wikipedia în engleză indică o lungime planificată de 10,6 km. Traseul desenat aici urmează aceste străzi și este orientativ. Autoritatea contractantă: Primăria Sectorului 4. Ambele contracte de proiectare și execuție au fost atribuite în august 2025: Secțiunea I (Gara de Nord – Eroii Revoluției) unei asocieri conduse de Dogus, Secțiunea II (Eroii Revoluției – Gara Progresul) uneia conduse de Construcții Erbașu. Contractul pentru Secțiunea I a fost semnat la finalul lui 2025, iar ordinul de începere a proiectării și execuției a fost emis pe 4 decembrie 2025; lucrările fizice urmează fazei de proiectare. Fiecare contract durează 60 de luni, începând cu o fază de proiectare de 8 sau 10 luni, în funcție de comunicat. În decembrie 2025, Sectorul 4 indica valoarea investiției la 3,5 miliarde de euro (peste 17 miliarde de lei), fonduri europene nerambursabile."
       },
       "sourceRefs": [
-        "wikipedia-ro-metroul-din-bucure-ti"
+        "wikipedia-ro-metroul-din-bucure-ti",
+        "ps4-2024-06-04-finantare",
+        "ps4-2025-12-04-ordin-incepere",
+        "economedia-2024-10-licitatie-m4",
+        "economedia-2025-08-30-atribuire",
+        "economedia-2025-11-27-sectiunea-1",
+        "ps4-2026-02-01-m4"
       ],
       "geometryRef": "gara-de-nord-gara-progresul"
     }
@@ -139,6 +251,75 @@
     {
       "title": "OpenStreetMap contributors (geometry of the opened sections, ODbL)",
       "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "id": "metrorex-2012-07-12-contract",
+      "title": "Metrorex: Semnarea contractului de executie a lucrarilor pentru extinderea retelei de metrou pe Tronsonul Parc Bazilescu – Laminorului – Lac Straulesti (12 July 2012)",
+      "url": "http://www.metrorex.ro/_read234-1",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20160811081256/http://www.metrorex.ro/_read234-1"
+    },
+    {
+      "id": "economica-2017-03-30-straulesti",
+      "title": "Economica.net: E oficial: Metrorex poate în sfârşit să inaugureze staţiile Străuleşti şi Laminorului (30 March 2017)",
+      "url": "http://www.economica.net/e-oficial-metrorex-poate-in-sfarsit-sa-inaugureze-statiile-straulesti-si-laminorului--isu-si-a-dat-acordul-pentru-deschiderea-circulatiei_135578.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "protv-2017-03-31-straulesti",
+      "title": "Știrile Pro TV: Statiile de metrou Laminorul si Straulesti se deschid oficial vineri (31 March 2017)",
+      "url": "http://stirileprotv.ro/stiri/actualitate/evenimentul-care-bucura-mii-de-bucuresteni-ce-statii-de-metrou-se-inaugureaza-astazi.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "romanialibera-2011-06-30-m4",
+      "title": "România liberă: EXCLUSIV. Cum arată două staţii de metrou din Bucureşti care au costat 100 de milioane de dolari (30 June 2011)",
+      "url": "http://www.romanialibera.ro/actualitate/bucuresti/exclusiv-cum-arata-doua-statii-de-metrou-din-bucuresti-care-au-costat-100-de-milioane-de-dolari-229839.html",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20110729045159/http://www.romanialibera.ro/actualitate/bucuresti/exclusiv-cum-arata-doua-statii-de-metrou-din-bucuresti-care-au-costat-100-de-milioane-de-dolari-229839.html"
+    },
+    {
+      "id": "metrorex-2007-m4-racorduri",
+      "title": "Metrorex: Extinderea retelei de metrou – Magistrala 4 Racorduri (archived 29 June 2007)",
+      "url": "http://www.metrorex.ro/a1.php",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20070629164558/http://www.metrorex.ro/a1.php"
+    },
+    {
+      "id": "ps4-2024-06-04-finantare",
+      "title": "Primăria Sectorului 4: E oficial! Vin banii pentru prelungirea Magistralei M4, contractul de finanțare în valoare de 2,5 miliarde de euro (4 June 2024)",
+      "url": "https://ps4.ro/comunicate-de-presa/e-oficial-vin-banii-pentru-prelungirea-magistralei-m4-primarul-sectorului-4-daniel-baluta-a-semnat-astazi-contractul-de-finantare-in-valoare-de-25-miliarde-de-euro/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ps4-2025-12-04-ordin-incepere",
+      "title": "Primăria Sectorului 4: Primarul Daniel Băluță a semnat ordinul de începere a lucrărilor de extindere a magistralei de metrou M4 (4 December 2025)",
+      "url": "https://ps4.ro/comunicate-de-presa/primarul-daniel-baluta-a-semnat-ordinul-de-incepere-a-lucrarilor-de-extindere-a-magistralei-de-metrou-m4/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-2024-10-licitatie-m4",
+      "title": "Economedia: Magistrala M4 Gara de Nord – Filaret – Gara Progresu, ofertele la contractul de 2 miliarde de euro se depun până marți, 8 octombrie (October 2024)",
+      "url": "https://economedia.ro/magistrala-m4-gara-de-nord-filaret-gara-progresu-ofertele-la-contractul-de-2-miliarde-de-euro-se-depun-pana-marti-8-octombrie.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-2025-08-30-atribuire",
+      "title": "Economedia: Metrou de la Gara de Nord la Gara Progresu, Primăria Sectorului 4 a ales constructorul pentru prima secțiune până la Eroii Revoluției (30 August 2025)",
+      "url": "https://economedia.ro/metrou-de-la-gara-de-nord-la-gara-progresu-primaria-sectorului-4-a-ales-constructorul-pentru-prima-sectiunea-pana-la-eroii-revolutiei-ce-se-intampla-cu-urmatoarele-6-statii.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-2025-11-27-sectiunea-1",
+      "title": "Economedia: Magistrala de metrou M4, o asociere turco-bulgară rămâne câștigătoare pentru prima secțiune din linia Gara de Nord – Gara Progresu (27 November 2025)",
+      "url": "https://economedia.ro/breaking-magistrala-de-metrou-m4-o-asociere-turco-bulgara-ramane-castigatoare-pentru-prima-sectiune-din-linia-gara-de-nord-gara-progresu-surse-contractul-ar-putea-fi-semnat-saptamana-vii.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ps4-2026-02-01-m4",
+      "title": "Primăria Sectorului 4: Extinderea Magistralei M4 de metrou, cel mai mare proiect de infrastructură din România derulat de o autoritate publică locală, intră în linie dreaptă (1 February 2026)",
+      "url": "https://ps4.ro/comunicate-de-presa/extinderea-magistralei-m4-de-metrou-cel-mai-mare-proiect-de-infrastructura-din-romania-derulat-de-o-autoritate-publica-locala-intra-in-linie-dreapta/",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }

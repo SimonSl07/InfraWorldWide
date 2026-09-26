@@ -19,12 +19,57 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2011-09",
+        "tenderAwarded": "2011-09-30",
+        "constructionStart": "2011-10-01",
         "opened": "2013-07"
       },
-      "lengthKm": 14.2,
+      "lengthKm": 16.78,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 70.2408,
+              "currency": "BGN",
+              "year": 2011,
+              "scope": "works",
+              "note": "Additional design and construction. Including VAT."
+            },
+            "date": "2011-09-30",
+            "sourceRef": "api-struma-lot-1"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund via Operational Programme Transport 2007–2013 (project Struma Motorway Lots 1, 2 and 4), with national co-financing",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport 2007–2013 (proiectul Autostrada Struma, loturile 1, 2 și 4), cu cofinanțare națională"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Консорциум „Струма – 1“ (Импреза АД, ГБС-Инфраструктурно строителство АД, Пътстрой-92 АД)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 23,
+        "value": {
+          "amount": 70.2408,
+          "currency": "BGN",
+          "year": 2011,
+          "scope": "works",
+          "note": "Additional design and construction. Including VAT."
+        }
+      },
       "sourceRefs": [
-        "wikipedia-a3-motorway-bulgaria"
+        "wikipedia-a3-motorway-bulgaria",
+        "api-struma-lot-1",
+        "api-struma-overview"
       ],
       "geometryRef": "dolna-dikanya-dupnitsa"
     },
@@ -35,12 +80,55 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2013-02",
+        "tenderAwarded": "2013-02-27",
         "opened": "2015-10"
       },
-      "lengthKm": 33.9,
+      "lengthKm": 37.48,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 358.722,
+              "currency": "BGN",
+              "year": 2013,
+              "scope": "works",
+              "note": "Technical design and construction; excludes land and supervision. Including VAT."
+            },
+            "date": "2013-02-27",
+            "sourceRef": "api-struma-lot-2"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund via Operational Programme Transport 2007–2013 (project Struma Motorway Lots 1, 2 and 4), with national co-financing",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport 2007–2013 (proiectul Autostrada Struma, loturile 1, 2 și 4), cu cofinanțare națională"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Консорциум „Струма-Лот 2“ (Импреза АД, ГБС Инфраструктурно строителство АД, Пътстрой-92 АД)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 22,
+        "value": {
+          "amount": 358.722,
+          "currency": "BGN",
+          "year": 2013,
+          "scope": "works",
+          "note": "Technical design and construction; excludes land and supervision. Including VAT."
+        }
+      },
       "sourceRefs": [
-        "wikipedia-a3-motorway-bulgaria"
+        "wikipedia-a3-motorway-bulgaria",
+        "api-struma-lot-2"
       ],
       "geometryRef": "dupnitsa-blagoevgrad"
     },
@@ -51,24 +139,70 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2015-12-30",
         "constructionStart": "2017-08",
         "opened": "2024-02-17"
       },
       "lengthKm": 12.6,
       "cost": {
-        "estimated": {
-          "amount": 186,
-          "currency": "BGN",
-          "year": 2017
-        },
         "actual": {
           "amount": 400,
           "currency": "BGN",
           "year": 2024
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 154.99999992,
+              "currency": "BGN",
+              "year": 2015,
+              "scope": "works",
+              "note": "Design and construction of the road sections, excluding VAT."
+            },
+            "date": "2015-12-30",
+            "sourceRef": "api-struma-lot-3-1"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund via Operational Programme Transport and Transport Infrastructure 2014–2020, Priority Axis 2 (project BG16M1OP001-2.001-0001, covering Struma Lot 3.1, Lot 3.3 and the Zheleznitsa tunnel), with national co-financing",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport și Infrastructură de Transport 2014–2020, Axa prioritară 2 (proiectul BG16M1OP001-2.001-0001, care cuprinde loturile 3.1 și 3.3 ale autostrăzii Struma și tunelul Zheleznitsa), cu cofinanțare națională"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „АМ Струма 3.1“ (Агромах ЕООД, АБ АД, Хидрострой АД, Пътища Пловдив Груп ЕООД, Пътища Пловдив АД, Алве Консулт ЕООД; road sections)",
+          "role": "builder"
+        },
+        {
+          "name": "Консорциум „АМ Струма тунел 2018“ (ДЖИ ПИ ГРУП АД, Глобал кънстръкшън ООД, ВИА План ЕООД; Zheleznitsa tunnel)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 42,
+        "value": {
+          "amount": 154.99999992,
+          "currency": "BGN",
+          "year": 2015,
+          "scope": "works",
+          "note": "Design and construction of the road sections, excluding VAT. The Zheleznitsa tunnel was a separate contract."
         }
       },
+      "note": {
+        "en": "Contract duration converted from days: 1280 days for design and construction of the road sections. The Zheleznitsa tunnel, between km 366 and km 370+400, was a separate contract worth 185.37 million leva excluding VAT (News.bg, 2019).",
+        "ro": "Durata contractului convertită din zile: 1280 de zile pentru proiectarea și construcția tronsoanelor de drum. Tunelul Zheleznitsa, între km 366 și km 370+400, a făcut obiectul unui contract separat, de 185,37 milioane de leva fără TVA (News.bg, 2019)."
+      },
       "sourceRefs": [
-        "wikipedia-a3-motorway-bulgaria"
+        "wikipedia-a3-motorway-bulgaria",
+        "api-struma-lot-3-1",
+        "news-bg-zheleznitsa-tunnel-2019"
       ],
       "geometryRef": "blagoevgrad-krupnik"
     },
@@ -79,19 +213,63 @@
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2026-02",
+        "tenderAwarded": "2023",
+        "constructionStart": "2025-11-27",
         "expectedOpening": "2029-12"
       },
-      "lengthKm": 15,
+      "lengthKm": 10.4,
       "cost": {
-        "estimated": {
-          "amount": 570,
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 475.19928027,
+              "currency": "BGN",
+              "year": 2023,
+              "scope": "works",
+              "note": "Design and construction, excluding VAT; winning bid at the 2020 award, contract signed 2023. Just over 570 million leva including VAT."
+            },
+            "date": "2023",
+            "sourceRef": "economic-bg-kresna-permit-2025"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget. In 2019 the government committed up to 741.07 million leva for the whole of Lot 3.2 Krupnik – Kresna, then planned for partial Cohesion Fund co-financing under Operational Programme Transport and Transport Infrastructure 2014–2020. The EU money was lost through delays (Ilinden Press, 2026).",
+            "ro": "Bugetul de stat. În 2019 guvernul s-a angajat să asigure până la 741,07 milioane de leva pentru întregul lot 3.2 Krupnik – Kresna, prevăzut atunci pentru cofinanțare parțială din Fondul de coeziune prin Programul Operațional Transport și Infrastructură de Transport 2014–2020. Fondurile UE s-au pierdut din cauza întârzierilor (Ilinden Press, 2026)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „АМ СТРУМА – 3.2.2.“ (ГБС-Инфраструктурно строителство АД, ЕПОС-Емпреза Португеза де Обрас Субтеранеас АД, Главболгарстрой Интернешънъл АД)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 51,
+        "value": {
+          "amount": 475.19928027,
           "currency": "BGN",
-          "year": 2026
+          "year": 2023,
+          "scope": "works",
+          "note": "Design and construction, excluding VAT; winning bid at the 2020 award, contract signed 2023. Just over 570 million leva including VAT."
         }
       },
+      "note": {
+        "en": "Contract duration converted from days: 1556 days.",
+        "ro": "Durata contractului convertită din zile: 1556 de zile."
+      },
       "sourceRefs": [
-        "wikipedia-a3-motorway-bulgaria"
+        "wikipedia-a3-motorway-bulgaria",
+        "ilindenpres-kresna-state-funding-2026",
+        "gradat-lot-3-2-state-budget-2019",
+        "gradat-struma-lot-3-2-2-award-2020",
+        "economic-bg-kresna-permit-2025",
+        "economic-bg-kresna-bypass-2026"
       ],
       "geometryRef": "krupnik-kresna-bypass",
       "profile": {
@@ -106,18 +284,68 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2015-09-25",
+        "constructionStart": "2016-08-30",
         "opened": "2018-12-17"
       },
-      "lengthKm": 17.9,
+      "lengthKm": 23.6,
       "cost": {
-        "actual": {
-          "amount": 281,
+        "estimated": {
+          "amount": 200,
           "currency": "BGN",
-          "year": 2018
+          "scope": "works",
+          "note": "Estimated value in the 2014 procurement notice for design and construction, excluding VAT."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 234.123012,
+              "currency": "BGN",
+              "year": 2015,
+              "scope": "works",
+              "note": "Design and construction, excluding VAT."
+            },
+            "date": "2015-09-25",
+            "sourceRef": "api-struma-lot-3-3"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund via Operational Programme Transport and Transport Infrastructure 2014–2020, Priority Axis 2 (project BG16M1OP001-2.001-0001, covering Struma Lot 3.1, Lot 3.3 and the Zheleznitsa tunnel), with national co-financing",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport și Infrastructură de Transport 2014–2020, Axa prioritară 2 (proiectul BG16M1OP001-2.001-0001, care cuprinde loturile 3.1 și 3.3 ale autostrăzii Struma și tunelul Zheleznitsa), cu cofinanțare națională"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Консорциум „Струма Лот 3.3“ (ГБС инфраструктурно строителство АД, Пътстрой 92 АД, Главболгарстрой АД, Геострой АД)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 42,
+        "value": {
+          "amount": 234.123012,
+          "currency": "BGN",
+          "year": 2015,
+          "scope": "works",
+          "note": "Design and construction, excluding VAT."
         }
       },
+      "note": {
+        "en": "Contract duration converted from days: 1280 days for design and construction.",
+        "ro": "Durata contractului convertită din zile: 1280 de zile pentru proiectare și construcție."
+      },
       "sourceRefs": [
-        "wikipedia-a3-motorway-bulgaria"
+        "wikipedia-a3-motorway-bulgaria",
+        "api-struma-lot-3-3",
+        "aop-struma-lot-3-3-notice",
+        "eufunds-struma-lot-3-3",
+        "nova-kresna-sandanski-opening-2018"
       ],
       "geometryRef": "kresna-sandanski"
     },
@@ -128,12 +356,56 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2012-03-19",
         "constructionStart": "2012-04",
         "opened": "2015-08"
       },
-      "lengthKm": 40.5,
+      "lengthKm": 14.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 67.176,
+              "currency": "BGN",
+              "year": 2012,
+              "scope": "works",
+              "note": "Works (СМР). Including VAT."
+            },
+            "date": "2012-03-19",
+            "sourceRef": "api-struma-lot-4"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund via Operational Programme Transport 2007–2013 (project Struma Motorway Lots 1, 2 and 4), with national co-financing",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport 2007–2013 (proiectul Autostrada Struma, loturile 1, 2 și 4), cu cofinanțare națională"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "АКТОР АСД",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 23,
+        "value": {
+          "amount": 67.176,
+          "currency": "BGN",
+          "year": 2012,
+          "scope": "works",
+          "note": "Works (СМР). Including VAT."
+        }
+      },
       "sourceRefs": [
-        "wikipedia-a3-motorway-bulgaria"
+        "wikipedia-a3-motorway-bulgaria",
+        "api-struma-lot-4"
       ],
       "geometryRef": "sandanski-kulata"
     }
@@ -176,6 +448,102 @@
       "title": "OpenStreetMap contributors (geometry, ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-08-14"
+    },
+    {
+      "id": "api-struma-lot-1",
+      "title": "API: АМ „Струма” Лот 1, участък „Долна Диканя – Дупница” (archived 2013-07-27)",
+      "url": "http://www.api.bg/index.php/bg/proekti/opt/am-struma-opt/am-struma-lot-1-uchastk-dolna-dikanya-dupnica",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20130727003153/http://www.api.bg/index.php/bg/proekti/opt/am-struma-opt/am-struma-lot-1-uchastk-dolna-dikanya-dupnica"
+    },
+    {
+      "id": "api-struma-overview",
+      "title": "API: АМ „Струма“ (project overview, archived 2014-01-08)",
+      "url": "http://www.api.bg/index.php/bg/proekti/opt/am-struma-opt/",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20140108175940/http://www.api.bg/index.php/bg/proekti/opt/am-struma-opt/"
+    },
+    {
+      "id": "api-struma-lot-2",
+      "title": "API: Автомагистрала „Струма“ ЛОТ 2, участък „Дупница – Благоевград” (archived 2023-03-10)",
+      "url": "https://api.bg/bg/1606223999.html",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20230310145315/https://api.bg/bg/1606223999.html"
+    },
+    {
+      "id": "api-struma-lot-3-1",
+      "title": "API: АМ \"Струма\" - лот 3.1 (archived 2023-03-10)",
+      "url": "https://api.bg/bg/1606314974.html",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20230310145335/https://api.bg/bg/1606314974.html"
+    },
+    {
+      "id": "news-bg-zheleznitsa-tunnel-2019",
+      "title": "News.bg: \"Джи Пи Груп\" строи тунел \"Железница\" на АМ \"Струма\" (2019-10-23)",
+      "url": "https://news.bg/economics/dzhi-pi-grup-stroi-tunel-zheleznitsa-na-am-struma.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "gradat-struma-lot-3-2-2-award-2020",
+      "title": "Gradat.bg: ДЗЗД „АМ СТРУМА – 3.2.2.“ с участието на ГБС ще изпълнява лот 3.2.2 от АМ \"Струма\" (2020-12-09)",
+      "url": "https://gradat.bg/infrastruktura/dzzd-am-struma-322-s-uchastieto-na-gbs-shche-izplnyava-lot-322-ot-am-struma",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economic-bg-kresna-permit-2025",
+      "title": "Economic.bg: Издадено е разрешение за строеж за „Струма“ през Кресна (2025-11-11)",
+      "url": "https://www.economic.bg/bg/a/view/zapochva-stroitelstvoto-na-obhoda-na-kresna",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economic-bg-kresna-bypass-2026",
+      "title": "Economic.bg: Започва същинското строителство на магистралата през Кресна в посока София (2026-07-08)",
+      "url": "https://www.economic.bg/bg/a/view/blizo-35-ot-obhoda-na-kresna-sa-gotovi-koga-zapochva-syshtinskoto-izgrajdaneto-na-struma-prez-defileto",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ilindenpres-kresna-state-funding-2026",
+      "title": "Илинден Прес: Държавата ще финансира изграждането на АМ Струма през Кресненското дефиле (2026-08-13)",
+      "url": "https://ilindenpres.bg/49243-durzhavata-she-finansira-izgrazhdaneto-na-am-struma-prez-kresnenskoto-defile/",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "gradat-lot-3-2-state-budget-2019",
+      "title": "Gradat.bg: Правителството отпуска 741 млн. лв. за строежа на Лот 3.2 Крупник – Кресна на АМ Струма (2019-08-07)",
+      "url": "https://gradat.bg/infrastruktura/pravitelstvoto-otpuska-741-mln-lv-za-stroezha-na-lot-32-krupnik-kresna-na-am-struma",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "api-struma-lot-3-3",
+      "title": "API: АМ \"Струма\" - лот 3.3 (archived 2023-03-10)",
+      "url": "https://api.bg/bg/1606310133.html",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20230310145336/https://api.bg/bg/1606310133.html"
+    },
+    {
+      "id": "aop-struma-lot-3-3-notice",
+      "title": "АОП: Обявление, проектиране и строителство на Лот 3.3 на АМ „Струма“ (2014, преписка 03461-2014-0006)",
+      "url": "https://www.aop.bg/case2.php?mode=show_doc&doc_id=617762&newver=2",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "eufunds-struma-lot-3-3",
+      "title": "eufunds.bg: Лот 3.3 Кресна – Сандански (2018-12-11)",
+      "url": "https://www.eufunds.bg/bg/optti/node/902",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "nova-kresna-sandanski-opening-2018",
+      "title": "NOVA: Откриват още 24 км от АМ „Струма“ между Кресна и Сандански (2018-12-16)",
+      "url": "https://nova.bg/news/view/2018/12/16/234980/%D0%BE%D1%82%D0%BA%D1%80%D0%B8%D0%B2%D0%B0%D1%82-%D0%BE%D1%89%D0%B5-24-%D0%BA%D0%BC-%D0%BE%D1%82-%D0%B0%D0%BC-%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%BA%D1%80%D0%B5%D1%81%D0%BD%D0%B0-%D0%B8-%D1%81%D0%B0%D0%BD%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%B8",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "api-struma-lot-4",
+      "title": "API: АМ „СТРУМА” ЛОТ 4, участък „Сандански – Кулата“ (archived 2024-12-28)",
+      "url": "https://api.bg/bg/1606223741.html",
+      "retrievedOn": "2026-09-25",
+      "archiveUrl": "https://web.archive.org/web/20241228011622/https://api.bg/bg/1606223741.html"
     }
   ]
 }

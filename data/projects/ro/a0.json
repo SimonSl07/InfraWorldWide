@@ -54,18 +54,13 @@
           "role": "builder"
         }
       ],
-      "contract": {
-        "value": {
-          "amount": 580,
-          "currency": "EUR",
-          "year": 2017
-        }
-      },
       "note": {
-        "en": "South ring tendered July 2017: 52 km, €580M, completion estimated after 2022; execution contracts signed with Alsim Alarko (lots 1–2, March 2019) and Aktor (lot 3, April 2019)"
+        "en": "South ring tendered July 2017: 52 km, €580M, completion estimated after 2022; execution contracts signed with Alsim Alarko for lot 2 (9 March 2019) and lot 1 (26 August 2019, including a 700 m sector of the north ring), and with Aktor for lot 3 (14 April 2019). Contract values: lot 1 830 million lei excl. VAT (about €177M), lot 2 about €162M, lot 3 about €180M; HotNews totals them at €519M.",
+        "ro": "Semiinelul sudic a fost scos la licitație în iulie 2017: 52 km, 580 mil. €, finalizare estimată după 2022; contractele de execuție au fost semnate cu Alsim Alarko pentru lotul 2 (9 martie 2019) și lotul 1 (26 august 2019, inclusiv un sector de 700 m din Centura Nord), iar cu Aktor pentru lotul 3 (14 aprilie 2019). Valorile contractelor: lotul 1 830 milioane lei fără TVA (circa 177 mil. €), lotul 2 circa 162 mil. €, lotul 3 circa 180 mil. €; HotNews le totalizează la 519 mil. €."
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a0-rom-nia"
+        "wikipedia-ro-autostrada-a0-rom-nia",
+        "hotnews-ro-a0-sud-2019-08"
       ],
       "geometryRef": "south-ring"
     },
@@ -78,7 +73,7 @@
       "status": "under_construction",
       "dates": {
         "constructionStart": "2023",
-        "expectedOpening": "2026"
+        "expectedOpening": "2026-10"
       },
       "lengthKm": 14,
       "funding": [
@@ -107,7 +102,8 @@
         "en": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 3 (Afumați–Pantelimon) and Lot 4 (Pantelimon–Manolache) construction ways"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a0-rom-nia"
+        "wikipedia-ro-autostrada-a0-rom-nia",
+        "economica-net-a0-nord-2026-09"
       ],
       "geometryRef": "north-ring-east"
     },
@@ -119,10 +115,25 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2021-05-12",
         "constructionStart": "2021-11",
         "opened": "2024-12"
       },
-      "lengthKm": 17.5,
+      "lengthKm": 19,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 831.92,
+              "currency": "RON",
+              "year": 2021
+            },
+            "date": "2021-05-12",
+            "sourceRef": "profit-ro-north-ring-dn1-dn2"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -139,6 +150,14 @@
         {
           "name": "Spedition UMB (north lot 2, Corbeanca–Afumați)",
           "role": "builder"
+        },
+        {
+          "name": "SA & PE Construct (north lot 2, association leader)",
+          "role": "builder"
+        },
+        {
+          "name": "Tehnostrade (north lot 2)",
+          "role": "builder"
         }
       ],
       "contract": {
@@ -147,6 +166,7 @@
           "currency": "RON",
           "year": 2021
         },
+        "designMonths": 12,
         "executionMonths": 22
       },
       "note": {
@@ -172,10 +192,24 @@
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2023",
+        "tenderAwarded": "2023-09",
         "expectedOpening": "2026"
       },
       "lengthKm": 18,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 815.08,
+              "currency": "RON",
+              "year": 2023
+            },
+            "date": "2023-09",
+            "sourceRef": "economedia-ro-a0-nord-2026-02"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -194,11 +228,23 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 815.08,
+          "currency": "RON",
+          "year": 2023
+        },
+        "designMonths": 12,
+        "executionMonths": 22,
+        "totalMonths": 34
+      },
       "note": {
         "en": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 1 (Bâcu–Corbeanca) construction ways"
       },
       "sourceRefs": [
-        "wikipedia-ro-autostrada-a0-rom-nia"
+        "wikipedia-ro-autostrada-a0-rom-nia",
+        "economedia-ro-a0-nord-2026-02",
+        "economedia-ro-a0-nord-lot-1-2025-01"
       ],
       "geometryRef": "north-ring-west"
     }
@@ -226,6 +272,30 @@
       "id": "profit-ro-north-ring-dn1-dn2",
       "title": "profit.ro",
       "url": "https://www.profit.ro/povesti-cu-profit/auto-transporturi/contractul-pentru-a0-nord-lot-2-a-fost-semnat-20181349"
+    },
+    {
+      "id": "economedia-ro-a0-nord-2026-02",
+      "title": "Economedia.ro: Autostrada Bucureștiului A0 Nord. Lotul 4 Pantelimon – Glina se apropie de finalizare, va face legătura cu Autostrada Soarelui (8 February 2026)",
+      "url": "https://economedia.ro/video-autostrada-bucurestiului-a0-nord-lotul-4-pantelimon-glina-se-apropie-de-finalizare-va-face-legatura-cu-autostrada-soarelui.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-ro-a0-nord-lot-1-2025-01",
+      "title": "Economedia.ro: Autostrada A0 București Nord: Pizzarotti-Retter a primit autorizație de construire completă pe Lotul 1 (29 January 2025)",
+      "url": "https://economedia.ro/autostrada-a0-bucuresti-nord-pizzarotti-retter-a-primit-autorizatie-de-construire-completa-pe-lotul-1-lucrarile-ar-putea-incepe-la-finalul-lui-februarie.html",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-ro-a0-sud-2019-08",
+      "title": "HotNews.ro: Autostrada de Centură Sud (A0) a Capitalei are acum constructori pe toată lungimea: ultimul tronson a fost semnat cu turcii de la Alsim Alarko pentru 177 mil. euro (26 August 2019)",
+      "url": "https://hotnews.ro/harta-interactiva-autostrada-de-centura-sud-a0-a-capitalei-are-acum-constructori-pe-toata-lungimea-ultimul-tronson-a-fost-semnat-cu-turcii-de-la-alsim-alarko-pentru-177-mil-euro-304509",
+      "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-net-a0-nord-2026-09",
+      "title": "Economica.net: Autostrada Bucureștiului A0: Ce lucrări mai trebuie executate la pasajul DN3, pentru ca lotul chinezilor să fie în trafic la finalul lunii viitoare (15 September 2026)",
+      "url": "https://www.economica.net/autostrada-bucurestiului-a0-137_976952.html",
+      "retrievedOn": "2026-09-25"
     }
   ]
 }
