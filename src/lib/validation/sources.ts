@@ -90,6 +90,11 @@ export function checkSourceQuality(
  * rank as two firms. Warning rather than error, because registering a firm
  * is a sourcing job of its own and 82 names are currently unregistered.
  * One line per distinct name, so each line is one registry entry to add.
+ *
+ * A name that resolves to no identity at all, or only to a bare number, is
+ * an error: the first is silently dropped from every ranking and the second
+ * ranks as a firm called "98". Both happened to every Cyrillic name before
+ * `contractorSlug` romanised it.
  */
 export function checkLotContractors(
   registry: ContractorRegistry | null,
@@ -106,7 +111,17 @@ export function checkLotContractors(
   for (const project of projects) {
     for (const lot of project.lots) {
       for (const contractor of lot.contractors ?? []) {
-        const misses = resolve(contractor.name).filter(
+        const resolved = resolve(contractor.name);
+        if (
+          resolved.length === 0 ||
+          resolved.some((r) => /^[0-9-]+$/.test(r.id))
+        ) {
+          errors.push(
+            `${project.id}: lot "${lot.id}" contractor "${contractor.name}" resolves to no usable identity`,
+          );
+          continue;
+        }
+        const misses = resolved.filter(
           (r) => r.kind === "firm" && !known.has(r.id),
         );
         if (misses.length > 0) {
