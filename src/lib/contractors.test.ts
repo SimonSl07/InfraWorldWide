@@ -58,6 +58,23 @@ describe("contractorSlug", () => {
   it("collapses Romanian comma-below and cedilla spellings together", () => {
     expect(contractorSlug("Bucureşti")).toBe(contractorSlug("București"));
   });
+
+  it("romanises Bulgarian Cyrillic instead of discarding it", () => {
+    // Every letter used to fall outside [a-z0-9] and vanish, so an
+    // all-Cyrillic name slugged to "" and "Водстрой 98 АД" to "98".
+    expect(contractorSlug("Трейс Груп Холд АД")).toBe("treys-grup-hold-ad");
+    expect(contractorSlug("Водстрой 98 АД")).toBe("vodstroy-98-ad");
+    expect(contractorSlug("Пътища Пловдив")).toBe("patishta-plovdiv");
+    expect(contractorSlug("Обединение „Метро Младост”")).toBe(
+      "obedinenie-metro-mladost",
+    );
+  });
+
+  it("romanises the letters only Serbian Cyrillic has", () => {
+    expect(contractorSlug("Енергопројект")).toBe("energoprojekt");
+    expect(contractorSlug("Ђорђевић Градња")).toBe("dordevic-gradnja");
+    expect(contractorSlug("Путеви Љубовија")).toBe("putevi-ljubovija");
+  });
 });
 
 describe("stripScopeNote", () => {
@@ -121,6 +138,20 @@ describe("splitJointVenture", () => {
       "Impresa Pizzarotti & C.",
     ]);
   });
+
+  it("never splits inside a quoted consortium name", () => {
+    // The dash is part of the name: splitting credited a firm called "1".
+    expect(splitJointVenture("Консорциум „Струма – 1“")).toEqual([
+      "Консорциум „Струма – 1“",
+    ]);
+    expect(
+      splitJointVenture('Обединение "Метро – Трейс" – Хидрострой'),
+    ).toEqual(['Обединение "Метро – Трейс"', "Хидрострой"]);
+    expect(splitJointVenture("«Alfa – Beta» – Gamma")).toEqual([
+      "«Alfa – Beta»",
+      "Gamma",
+    ]);
+  });
 });
 
 describe("createContractorResolver", () => {
@@ -147,6 +178,32 @@ describe("createContractorResolver", () => {
     ]);
     // A bare Webuild lot still belongs to Webuild.
     expect(ids("Webuild (lot 3)")).toEqual(["webuild"]);
+  });
+
+  it("credits an all-Cyrillic name instead of dropping it", () => {
+    expect(ids("Хидрострой АД")).toEqual(["hidrostroy-ad"]);
+  });
+
+  it("merges a Cyrillic alias onto the Latin firm", () => {
+    const withAlias = createContractorResolver({
+      note: "test",
+      contractors: [
+        {
+          id: "aktor",
+          name: "Aktor",
+          aliases: ["АКТОР АСД"],
+        },
+      ],
+    });
+    expect(withAlias("АКТОР АСД").map((r) => r.id)).toEqual(["aktor"]);
+    // With every Cyrillic name slugged to "", the alias used to capture
+    // any other Cyrillic firm as well.
+    expect(withAlias("Хидрострой АД").map((r) => r.id)).toEqual([
+      "hidrostroy-ad",
+    ]);
+    expect(withAlias("Aktor (south lot 3)").map((r) => r.id)).toEqual([
+      "aktor",
+    ]);
   });
 
   it("applies a corporate rename", () => {

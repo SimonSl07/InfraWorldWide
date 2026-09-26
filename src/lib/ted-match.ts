@@ -1,5 +1,6 @@
 import { contractMonths } from "./contract";
 import type { Lot, Project } from "./schema";
+import { BULGARIAN_CYRILLIC } from "./text";
 
 /**
  * Matching TED award notices to lots.
@@ -37,20 +38,15 @@ export interface TedNotice {
 }
 
 /**
- * Bulgarian Cyrillic to the romanisation the lot names already use
- * (Дупница = Dupnitsa). Streamlined BGN/PCGN, which is what Bulgarian road
- * signs and Wikipedia use, so it lands on the same spelling as the data.
- */
-/**
  * Serbian Cyrillic to Serbian Latin, which is what the Serbian data is
  * written in.
  *
- * The map below it is Bulgarian: `ш` becomes `sh`, `ц` becomes `ts`, and `ј`
- * is not in it at all. Applied to Serbian that produces "po ate" for Појате
- * and "krushevats" for Крушевац, so an article from the Serbian ministry
- * could never match a lot called "Kruševac East". The two conventions
- * genuinely differ and one table cannot serve both, so this is a second one,
- * used only where the source is Serbian.
+ * `BULGARIAN_CYRILLIC` in text.ts is Bulgarian: `ш` becomes `sh`, `ц`
+ * becomes `ts`, and `ј` is not in it at all. Applied to Serbian that produces
+ * "po ate" for Појате and "krushevats" for Крушевац, so an article from the
+ * Serbian ministry could never match a lot called "Kruševac East". The two
+ * conventions genuinely differ and one table cannot serve both, so this is a
+ * second one, used only where the source is Serbian.
  *
  * Diacritics are emitted rather than folded away, because `normaliseText`
  * strips them from both sides. `ђ` is the exception and becomes `dj`: it is
@@ -113,39 +109,6 @@ export function serbianLatin(text: string): string {
   return hasCyrillic ? out : "";
 }
 
-const CYRILLIC: Record<string, string> = {
-  а: "a",
-  б: "b",
-  в: "v",
-  г: "g",
-  д: "d",
-  е: "e",
-  ж: "zh",
-  з: "z",
-  и: "i",
-  й: "y",
-  к: "k",
-  л: "l",
-  м: "m",
-  н: "n",
-  о: "o",
-  п: "p",
-  р: "r",
-  с: "s",
-  т: "t",
-  у: "u",
-  ф: "f",
-  х: "h",
-  ц: "ts",
-  ч: "ch",
-  ш: "sh",
-  щ: "sht",
-  ъ: "a",
-  ь: "y",
-  ю: "yu",
-  я: "ya",
-};
-
 /**
  * Lowercased, unaccented, punctuation-free text. Latin diacritics fold to
  * their base letter through Unicode decomposition; Cyrillic has no such
@@ -155,7 +118,7 @@ export function normaliseText(text: string): string {
   const lower = text.toLowerCase();
   let out = "";
   for (const ch of lower) {
-    out += CYRILLIC[ch] ?? ch;
+    out += BULGARIAN_CYRILLIC[ch] ?? ch;
   }
   return (
     out

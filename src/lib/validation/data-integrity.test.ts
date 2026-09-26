@@ -448,6 +448,18 @@ describe("checkLotContractors", () => {
     expect(w).toHaveLength(1);
     expect(w[0]).toContain("Nobody Ltd");
   });
+
+  it("rejects a name that resolves to no identity or to a bare number", () => {
+    // "…" has no letter or digit, so it is dropped from every ranking; "98"
+    // is only a number, so it ranks as a firm called "98".
+    const p = projectStub([
+      lotStub({ contractors: [{ name: "…" }, { name: "98" }] }),
+    ]);
+    const { errors } = checkLotContractors(registry, [p]);
+    expect(errors).toHaveLength(2);
+    expect(errors[0]).toContain('"…"');
+    expect(errors[1]).toContain('"98"');
+  });
 });
 
 describe("checkCostPerKm", () => {

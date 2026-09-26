@@ -1,4 +1,4 @@
-import { foldText } from "./text";
+import { foldText, romaniseCyrillic } from "./text";
 import type { Contractor, ContractorEntry, ContractorRegistry } from "./schema";
 
 /**
@@ -29,9 +29,16 @@ export interface AttributedContractor extends ResolvedContractor {
   role: Contractor["role"];
 }
 
-/** "Max Bögl" → "max-bogl", "SA&PE Construct" → "sa-pe-construct". */
+/**
+ * "Max Bögl" → "max-bogl", "SA&PE Construct" → "sa-pe-construct",
+ * "Трейс Груп Холд АД" → "treys-grup-hold-ad".
+ *
+ * Cyrillic is romanised first. Without that every Cyrillic letter fell
+ * outside [a-z0-9]: an all-Cyrillic name slugged to "" and was dropped from
+ * every ranking, and "Водстрой 98 АД" ranked as a firm called "98".
+ */
 export function contractorSlug(name: string): string {
-  return foldText(name)
+  return foldText(romaniseCyrillic(name))
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
@@ -77,12 +84,36 @@ export function stripParenthetical(name: string): string {
  * Splits a joint venture into member names. Separators are a spaced en dash
  * and a spaced slash — never "&", which appears inside firm names
  * ("SA&PE Construct", "Impresa Pizzarotti & C.").
+ *
+ * A separator inside quotation marks is part of a name, not a split:
+ * Bulgarian consortia are named like Консорциум „Струма – 1“, and cutting
+ * there credited a firm called "1". „ and « open a quote, ” and » close
+ * one, and “ and " close an open quote or open a new one, because Bulgarian
+ * closes with “ where English opens with it.
  */
 export function splitJointVenture(name: string): string[] {
-  return name
-    .split(/\s+–\s+|\s+\/\s+/)
-    .map((p) => p.trim())
-    .filter((p) => p.length > 0);
+  const parts: string[] = [];
+  let depth = 0;
+  let start = 0;
+  let i = 0;
+  while (i < name.length) {
+    const ch = name[i];
+    if (ch === "„" || ch === "«") depth++;
+    else if (ch === "”" || ch === "»") depth = Math.max(0, depth - 1);
+    else if (ch === "“" || ch === '"') depth = depth > 0 ? depth - 1 : 1;
+    else if (depth === 0) {
+      const sep = /^\s+(?:–|\/)\s+/.exec(name.slice(i));
+      if (sep) {
+        parts.push(name.slice(start, i));
+        i += sep[0].length;
+        start = i;
+        continue;
+      }
+    }
+    i++;
+  }
+  parts.push(name.slice(start));
+  return parts.map((p) => p.trim()).filter((p) => p.length > 0);
 }
 
 export type ContractorResolver = (raw: string) => ResolvedContractor[];
