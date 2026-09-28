@@ -1,0 +1,448 @@
+{
+  "id": "gr-rail-athens-thessaloniki",
+  "country": "gr",
+  "category": "railway",
+  "name": {
+    "en": "Athens – Thessaloniki railway modernisation (PATHE)",
+    "ro": "Modernizarea căii ferate Atena – Salonic (PATHE)"
+  },
+  "description": {
+    "en": "Modernisation of the Piraeus – Platy main line, the Athens – Thessaloniki part of the Patras – Athens – Thessaloniki – Idomeni/Promachonas (PATHE/P) axis, into an electrified double track for 160–200 km/h. Works started in 1996 and are managed by ERGOSE, the OSE subsidiary set up that year. The largest section is the new 106 km Tithorea – Domokos line (about EUR 1.8 billion for the whole section), which replaced 122 km of mountain single track and runs through the Kallidromo and Othrys twin tunnels; its last part opened on 29 January 2019, completing double track from Athens to Thessaloniki. Also covered: the new Evangelismos – Leptokarya line through the Tempi area (2004), the rebuilding of Domokos – Krannon after storms Daniel and Elias in 2023, and the planned SKA – Oinoi upgrade. Line-wide contracts are not split into lots: electrification of Acharnes – Tithorea and Domokos – Thessaloniki (EUR 189.5 million; in service north of Domokos in 2007–2008, restored on Acharnes – Tithorea in 2017), upgrading of about 255 km of single-track equivalent between Oinoi – Tithorea, Domokos – Larissa and Aiginio – Thessaloniki (EUR 87.7 million, 2005–2010), and signalling contract 717 (TOMI – Alstom, EUR 41.3 million after discount, signed September 2014).",
+    "ro": "Modernizarea magistralei Pireu – Platy, partea Atena – Salonic a axei Patras – Atena – Salonic – Idomeni/Promachonas (PATHE/P), într-o linie dublă electrificată pentru 160–200 km/h. Lucrările au început în 1996 și sunt gestionate de ERGOSE, filiala OSE înființată în acel an. Cea mai mare secțiune este noua linie Tithorea – Domokos, de 106 km (circa 1,8 miliarde euro pentru întreaga secțiune), care a înlocuit 122 km de linie simplă de munte și trece prin tunelurile gemene Kallidromo și Othrys; ultima ei parte s-a deschis la 29 ianuarie 2019, completând linia dublă de la Atena la Salonic. Sunt incluse și noua linie Evangelismos – Leptokarya prin zona Tempi (2004), refacerea tronsonului Domokos – Krannon după furtunile Daniel și Elias din 2023 și modernizarea planificată SKA – Oinoi. Contractele pe toată linia nu sunt împărțite pe loturi: electrificarea Acharnes – Tithorea și Domokos – Salonic (189,5 milioane euro; în exploatare la nord de Domokos în 2007–2008, refăcută pe Acharnes – Tithorea în 2017), modernizarea a circa 255 km echivalent linie simplă pe Oinoi – Tithorea, Domokos – Larisa și Aiginio – Salonic (87,7 milioane euro, 2005–2010) și contractul de semnalizare 717 (TOMI – Alstom, 41,3 milioane euro după discount, semnat în septembrie 2014)."
+  },
+  "operator": "gr-ergose",
+  "lots": [
+    {
+      "id": "ska-oinoi",
+      "name": {
+        "en": "SKA – Oinoi upgrade",
+        "ro": "Modernizarea SKA – Oinoi"
+      },
+      "status": "planned",
+      "lengthKm": 52.25,
+      "cost": {
+        "estimated": {
+          "amount": 100,
+          "currency": "EUR",
+          "note": "ERGOSE estimated project cost; price year and VAT treatment not stated."
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2,
+        "electrified": true
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Operational Programme Transport Infrastructure, Environment and Sustainable Development 2014–2020, as named by ERGOSE",
+            "ro": "Programul Operațional Infrastructură de Transport, Mediu și Dezvoltare Durabilă 2014–2020, conform ERGOSE"
+          }
+        }
+      ],
+      "note": {
+        "en": "Upgrade of the existing line from the Acharnes Railway Centre (SKA) to Oinoi station: widening of the formation within the existing corridor, loading gauge to current standards, freight passing loops, a rebuilt Oinoi junction station and new stops at Kryoneri and Oinofyta. ERGOSE gives about 52 km and reports the project at design stage; its page is undated. The length recorded is the OSE Network Statement 2020 figure for the SKA – Oinoi route.",
+        "ro": "Modernizarea liniei existente de la Centrul Feroviar Acharnes (SKA) la stația Oinoi: lărgirea platformei în culoarul existent, gabarit conform normelor actuale, linii de depășire pentru marfă, reconstruirea stației nod Oinoi și halte noi la Kryoneri și Oinofyta. ERGOSE indică circa 52 km și arată proiectul în faza de proiectare; pagina nu este datată. Lungimea înregistrată este cifra OSE (Network Statement 2020) pentru ruta SKA – Oinoi."
+      },
+      "sourceRefs": [
+        "ergose-ska-oinoi",
+        "ose-network-statement-2020"
+      ],
+      "geometryRef": "ska-oinoi"
+    },
+    {
+      "id": "tithorea-lianokladi",
+      "name": {
+        "en": "Tithorea – Lianokladi (Kallidromo tunnel)",
+        "ro": "Tithorea – Lianokladi (tunelul Kallidromo)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997",
+        "opened": "2018-01-31"
+      },
+      "lengthKm": 55,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 9.04,
+        "maxSpeedKmh": 200,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1997",
+          "note": {
+            "en": "Start of construction of the Kallidromo tunnel.",
+            "ro": "Începerea construcției tunelului Kallidromo."
+          },
+          "sourceRef": "el-wikipedia-kallidromo"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-01-31",
+          "sourceRef": "ergose-pr-2018-02-05"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Tithorea – Domokos as a whole: OP Railways 1994–99, OP Railways, Airports and Urban Transport 2000–2006, OP Accessibility Improvement 2007–2013 and the Connecting Europe Facility 2014–2020",
+            "ro": "Tithorea – Domokos în ansamblu: PO Căi Ferate 1994–99, PO Căi Ferate, Aeroporturi și Transport Urban 2000–2006, PO Îmbunătățirea Accesibilității 2007–2013 și Mecanismul pentru Interconectarea Europei 2014–2020"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GEK TERNA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "New double track from Tithorea station east through the Kallidromo twin tunnel and across the Spercheios plain to Lianokladi station, with the new Molos station. ERGOSE gives each bore as 9,036 m; Greek Wikipedia gives 9,259 m and 9,262 m (km 169+608 to 178+878). GEK TERNA lists the Kallidromo tunnel among its projects, built in a joint venture whose partners it does not name. No length is published for this part alone: 55 km is the OSE length of the new Tithorea – Domokos line (107.33 km) less the 31 km and 21 km ERGOSE gives for the two later openings. ERGOSE puts the cost of the whole Tithorea – Domokos section at about EUR 1.8 billion, not split by part, and dates the start of construction of the section to 1997; the line was completed under contract no. 635, which covers the whole section.",
+        "ro": "Linie dublă nouă de la stația Tithorea spre est prin tunelul geamăn Kallidromo și peste câmpia Spercheios până la stația Lianokladi, cu noua stație Molos. ERGOSE indică 9.036 m pentru fiecare tub; Wikipedia în greacă indică 9.259 m și 9.262 m (km 169+608 – 178+878). GEK TERNA include tunelul Kallidromo între proiectele sale, construit într-o asociere ai cărei parteneri nu îi numește. Nu există o lungime publicată doar pentru această parte: 55 km reprezintă lungimea OSE a noii linii Tithorea – Domokos (107,33 km) minus cei 31 km și 21 km indicați de ERGOSE pentru cele două deschideri ulterioare. ERGOSE estimează costul întregii secțiuni Tithorea – Domokos la circa 1,8 miliarde euro, fără defalcare, și datează începerea construcției secțiunii în 1997; linia a fost finalizată prin contractul nr. 635, care acoperă întreaga secțiune."
+      },
+      "sourceRefs": [
+        "ergose-tithorea-domokos",
+        "ergose-pr-2018-02-05",
+        "ose-network-statement-2020",
+        "el-wikipedia-kallidromo",
+        "gekterna-kallidromo",
+        "ergose-pr-2018-12-24"
+      ],
+      "geometryRef": "tithorea-lianokladi"
+    },
+    {
+      "id": "lianokladi-aggeies",
+      "name": {
+        "en": "Lianokladi – Aggeies (Othrys tunnel)",
+        "ro": "Lianokladi – Aggeies (tunelul Othrys)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-01-07"
+      },
+      "lengthKm": 31,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 7.04,
+        "bridgeCount": 10,
+        "maxSpeedKmh": 200,
+        "electrified": true,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Tithorea – Domokos as a whole: OP Railways 1994–99, OP Railways, Airports and Urban Transport 2000–2006, OP Accessibility Improvement 2007–2013 and the Connecting Europe Facility 2014–2020",
+            "ro": "Tithorea – Domokos în ansamblu: PO Căi Ferate 1994–99, PO Căi Ferate, Aeroporturi și Transport Urban 2000–2006, PO Îmbunătățirea Accesibilității 2007–2013 și Mecanismul pentru Interconectarea Europei 2014–2020"
+          }
+        }
+      ],
+      "note": {
+        "en": "New double track from Lianokladi station through the Othrys twin tunnel to the Xyniada plain and the Aggeies stop, with the new Agios Stefanos (Xyniada) station listed by OSE; 10 railway bridges. Put into service on 7 January 2019. ERGOSE describes the tunnel as 7 km (its project page says 6,380 m per bore); Greek Wikipedia gives 7,036 m and 7,045 m (km 235+624 to 242+669) and dates the start of tunnel construction to 1998. ERGOSE's 1997 construction start is for the whole Tithorea – Domokos section, so none is recorded for this part. Cost is part of the roughly EUR 1.8 billion ERGOSE gives for the whole Tithorea – Domokos section.",
+        "ro": "Linie dublă nouă de la stația Lianokladi prin tunelul geamăn Othrys până în câmpia Xyniada și halta Aggeies, cu noua stație Agios Stefanos (Xyniada) din lista OSE; 10 poduri feroviare. Dată în exploatare la 7 ianuarie 2019. ERGOSE descrie tunelul ca având 7 km (pagina proiectului indică 6.380 m pe tub); Wikipedia în greacă indică 7.036 m și 7.045 m (km 235+624 – 242+669) și datează începerea construcției tunelului în 1998. Anul 1997 indicat de ERGOSE pentru începerea construcției privește întreaga secțiune Tithorea – Domokos, așa că pentru această parte nu este înregistrat. Costul face parte din cele circa 1,8 miliarde euro indicate de ERGOSE pentru întreaga secțiune Tithorea – Domokos."
+      },
+      "sourceRefs": [
+        "ergose-pr-2019-01-09",
+        "ergose-tithorea-domokos",
+        "el-wikipedia-othrys",
+        "ose-network-statement-2020"
+      ],
+      "geometryRef": "lianokladi-aggeies"
+    },
+    {
+      "id": "aggeies-domokos",
+      "name": {
+        "en": "Aggeies – Domokos",
+        "ro": "Aggeies – Domokos"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-01-29"
+      },
+      "lengthKm": 21,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 200,
+        "electrified": true,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Tithorea – Domokos as a whole: OP Railways 1994–99, OP Railways, Airports and Urban Transport 2000–2006, OP Accessibility Improvement 2007–2013 and the Connecting Europe Facility 2014–2020",
+            "ro": "Tithorea – Domokos în ansamblu: PO Căi Ferate 1994–99, PO Căi Ferate, Aeroporturi și Transport Urban 2000–2006, PO Îmbunătățirea Accesibilității 2007–2013 și Mecanismul pentru Interconectarea Europei 2014–2020"
+          }
+        }
+      ],
+      "note": {
+        "en": "Last missing part of the new Tithorea – Domokos line, from the Aggeies stop via the Thavmakos stop to Domokos station, crossing the SG26 steel arch bridge (404.80 m) at Ekkara. Opened on 29 January 2019 with diesel trains; ERGOSE planned electric operation of Lianokladi – Domokos by the end of February 2019. Cost is part of the roughly EUR 1.8 billion ERGOSE gives for the whole Tithorea – Domokos section; its 1997 construction start is also for the whole section, so none is recorded for this part.",
+        "ro": "Ultima parte lipsă a noii linii Tithorea – Domokos, de la halta Aggeies prin halta Thavmakos până la stația Domokos, peste podul în arc metalic SG26 (404,80 m) de la Ekkara. Deschisă la 29 ianuarie 2019 cu trenuri diesel; ERGOSE a planificat circulația electrică pe Lianokladi – Domokos până la sfârșitul lui februarie 2019. Costul face parte din cele circa 1,8 miliarde euro indicate de ERGOSE pentru întreaga secțiune Tithorea – Domokos; anul 1997 al începerii construcției privește tot întreaga secțiune, așa că pentru această parte nu este înregistrat."
+      },
+      "sourceRefs": [
+        "ergose-pr-2019-01-28",
+        "ergose-pr-2019-01-09",
+        "ergose-tithorea-domokos",
+        "ergose-pr-2016-11-29",
+        "ose-network-statement-2020"
+      ],
+      "geometryRef": "aggeies-domokos"
+    },
+    {
+      "id": "domokos-krannon",
+      "name": {
+        "en": "Domokos – Krannon (post-flood rebuild)",
+        "ro": "Domokos – Krannon (refacere după inundații)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-04-28"
+      },
+      "lengthKm": 40.24,
+      "cost": {
+        "estimated": {
+          "amount": 173.6,
+          "currency": "EUR",
+          "note": "Including VAT. Tender budget."
+        }
+      },
+      "profile": {
+        "works": "reconstruction",
+        "electrified": true,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "gr-rrf",
+          "detail": {
+            "en": "Recovery and Resilience Facility (Greece)",
+            "ro": "Mecanismul de Redresare și Reziliență (Grecia)"
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "NSRF (ESPA) 2021–2027",
+            "ro": "CSN (ESPA) 2021–2027"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "METKA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 15
+      },
+      "note": {
+        "en": "Rebuilding of the double track from the exit of Domokos station (km 288+600) to the entrance of Krannon station (km 328+840) after storms Daniel and Elias in 2023: formation and track, slope protection, drainage, and a temporary bypass of about 2.5 km. Tendered on 11 December 2024; contract signed 28 April 2025 for 15 months. A completion certificate was issued on 31 August 2026, but trains between Domokos and Larissa still ran on a single track in late September 2026 while work continued. Signalling, ETCS and electrification between Palaiofarsalos and Krannon are restored under a separate tender with a budget of EUR 37.2 million (including VAT). Length is the difference between the two chainages.",
+        "ro": "Refacerea liniei duble de la ieșirea din stația Domokos (km 288+600) până la intrarea în stația Krannon (km 328+840) după furtunile Daniel și Elias din 2023: platformă și cale, protecția taluzurilor, drenaj și o deviere provizorie de circa 2,5 km. Licitată la 11 decembrie 2024; contract semnat la 28 aprilie 2025, pe 15 luni. Un certificat de finalizare a fost emis la 31 august 2026, dar trenurile între Domokos și Larisa circulau încă pe o singură linie la sfârșitul lui septembrie 2026, cu lucrări în curs. Semnalizarea, ETCS și electrificarea între Palaiofarsalos și Krannon se refac printr-o licitație separată cu un buget de 37,2 milioane euro (cu TVA). Lungimea este diferența dintre cele două poziții kilometrice."
+      },
+      "sourceRefs": [
+        "ypodomes-domokos-larisa-2026",
+        "onlarissa-domokos-krannon-2026"
+      ],
+      "geometryRef": "domokos-krannon"
+    },
+    {
+      "id": "evangelismos-leptokarya",
+      "name": {
+        "en": "Evangelismos – Leptokarya (Tempi)",
+        "ro": "Evangelismos – Leptokarya (Tempi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996",
+        "opened": "2004"
+      },
+      "lengthKm": 35,
+      "cost": {
+        "actual": {
+          "amount": 470,
+          "currency": "EUR",
+          "note": "Project cost as given by ERGOSE for the completed project; price year and VAT treatment not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 8.3,
+        "bridgeCount": 21,
+        "maxSpeedKmh": 200,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996",
+          "sourceRef": "ergose-evangelismos-leptokarya"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2003-11-28",
+          "note": {
+            "en": "The line through the Vale of Tempe was abandoned in favour of a tunnel.",
+            "ro": "Linia prin valea Tempi a fost abandonată în favoarea unui tunel."
+          },
+          "sourceRef": "en-wikipedia-piraeus-platy"
+        },
+        {
+          "kind": "opened",
+          "date": "2004",
+          "note": {
+            "en": "Put into service with signalling; electrified in 2011.",
+            "ro": "Dată în exploatare cu semnalizare; electrificată în 2011."
+          },
+          "sourceRef": "ergose-evangelismos-leptokarya"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 1994–2000 and 2000–2006",
+            "ro": "Fondul de coeziune 1994–2000 și 2000–2006"
+          }
+        }
+      ],
+      "note": {
+        "en": "New double track of about 35 km from Evangelismos station to Leptokarya station, replacing the line through the Vale of Tempe and along the coast at Platamon. Slab track was used for the first time in Greece in the Tempi area. Two tunnels of about 8.3 km in total, 4 cut-and-cover sections of about 1 km, 21 railway bridges; stations at Rapsani, Neoi Poroi and Leptokarya and a stop at Evangelismos. By OSE chainage the two end stations are 41.7 km apart (km 369+000 and 410+700).",
+        "ro": "Linie dublă nouă de circa 35 km de la stația Evangelismos la stația Leptokarya, care înlocuiește linia prin valea Tempi și de-a lungul coastei la Platamon. În zona Tempi s-a folosit pentru prima dată în Grecia calea pe placă de beton. Două tuneluri de circa 8,3 km în total, 4 secțiuni cut-and-cover de circa 1 km, 21 de poduri feroviare; stații la Rapsani, Neoi Poroi și Leptokarya și o haltă la Evangelismos. După kilometrajul OSE, cele două stații de capăt sunt la 41,7 km distanță (km 369+000 și 410+700)."
+      },
+      "sourceRefs": [
+        "ergose-evangelismos-leptokarya",
+        "en-wikipedia-piraeus-platy",
+        "ose-network-statement-2020"
+      ],
+      "geometryRef": "evangelismos-leptokarya"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ergose-tithorea-domokos",
+      "title": "ERGOSE: Τιθορέα – Δομοκός (project page)",
+      "url": "https://www.ergose.gr/project/tithorea_domokos/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ergose-pr-2018-02-05",
+      "title": "ERGOSE: Παράδοση σύμφωνα με το χρονοδιάγραμμα της νέας σιδηροδρομικής γραμμής Τιθορέα-Λιανοκλάδι (press release, 2018-02-05)",
+      "url": "https://www.ergose.gr/deltio_typoy_20180502_tithorea_003/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ergose-pr-2016-11-29",
+      "title": "ERGOSE: Επίσκεψη στο έργο Τιθορέα-Δομοκός της ΕΡΓΟΣΕ (press release, 2016-11-29)",
+      "url": "https://www.ergose.gr/dt_20161129_visit_tithorea_domokos_042/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ergose-pr-2018-12-24",
+      "title": "ERGOSE: Διαδρομή στην σήραγγα Όθρυος (press release, 2018-12-24)",
+      "url": "https://www.ergose.gr/deltio-typoy-diadromi-stin-siragga-othryos/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ergose-pr-2019-01-09",
+      "title": "ERGOSE: Παράδοση νέου τμήματος γραμμής (Lianokladi – Aggeies, press release, 2019-01-09)",
+      "url": "https://www.ergose.gr/deltio-typoy-paradosi-neoy-tmimatos-grammis/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ergose-pr-2019-01-28",
+      "title": "ERGOSE: Ολοκληρώθηκε η γραμμή Αθήνα – Θεσσαλονίκη (press release, 2019-01-28)",
+      "url": "https://www.ergose.gr/deltio-typoy-28-01-19/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ergose-evangelismos-leptokarya",
+      "title": "ERGOSE: Ευαγγελισμός – Λεπτοκαρυά (project page)",
+      "url": "https://www.ergose.gr/project/evaggelismos_leptokaria/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ergose-ska-oinoi",
+      "title": "ERGOSE: Αναβάθμιση ΣΚΑ – Οινόη (project page)",
+      "url": "https://www.ergose.gr/project/anavathmisi_ska_oinoi/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "ERGOSE: Αναβάθμιση τμημάτων Οινόη – Τιθορέα και Δομοκός – Θεσσαλονίκη (project page)",
+      "url": "https://www.ergose.gr/project/anavathmish_tmimaton_oinoi_tithorea_kai_domokos_thessaloniki/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "ERGOSE: Ηλεκτροκίνηση γραμμής Αθήνα – Θεσσαλονίκη (project page)",
+      "url": "https://www.ergose.gr/project/ilektrokinisi_grammis_athina_thessaloniki/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "ERGOSE: Υπεγράφη η σύμβαση προϋπολογισμού 13,3 εκ. ευρώ για την ολοκλήρωση των έργων αναβάθμισης του άξονα Αθήνα – Θεσσαλονίκη – Προμαχώνας (contract 717, press release, 2021-03-30)",
+      "url": "https://www.ergose.gr/deltio-typoy-ypegrafi-i-symvasi-proypologismoy-133-ek-eyro-gia-tin-oloklirosi-ton-ergon-anavathmisis-toy-sidirodromikoy-axona-athina-thessaloniki-promachonas/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ose-network-statement-2020",
+      "title": "OSE: Network Statement 2020, Annexes (route lengths and station chainages, Piraeus – Athens – Platy)",
+      "url": "https://www.ose.gr/en/o-s-e/network?download=111:network-statement-2020-2-2-eng",
+      "retrievedOn": "2026-09-28",
+      "archiveUrl": "https://web.archive.org/web/20200625010258/https://www.ose.gr/en/o-s-e/network?download=111:network-statement-2020-2-2-eng"
+    },
+    {
+      "id": "el-wikipedia-kallidromo",
+      "title": "Wikipedia (Greek): Σήραγγα Καλλιδρόμου",
+      "url": "https://el.wikipedia.org/wiki/%CE%A3%CE%AE%CF%81%CE%B1%CE%B3%CE%B3%CE%B1_%CE%9A%CE%B1%CE%BB%CE%BB%CE%B9%CE%B4%CF%81%CF%8C%CE%BC%CE%BF%CF%85",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "el-wikipedia-othrys",
+      "title": "Wikipedia (Greek): Σήραγγα Όθρυος (σιδηροδρομική)",
+      "url": "https://el.wikipedia.org/wiki/%CE%A3%CE%AE%CF%81%CE%B1%CE%B3%CE%B3%CE%B1_%CE%8C%CE%B8%CF%81%CF%85%CE%BF%CF%82_%28%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CE%B4%CF%81%CE%BF%CE%BC%CE%B9%CE%BA%CE%AE%29",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "en-wikipedia-piraeus-platy",
+      "title": "Wikipedia: Piraeus–Platy railway",
+      "url": "https://en.wikipedia.org/wiki/Piraeus%E2%80%93Platy_railway",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "Wikipedia: P.A.Th.E./P.",
+      "url": "https://en.wikipedia.org/wiki/P.A.Th.E./P.",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "gekterna-kallidromo",
+      "title": "GEK TERNA: Σήραγγα Καλλιδρόμου (project page)",
+      "url": "https://www.gekterna.com/el/siranga-kallidromou/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-domokos-larisa-2026",
+      "title": "Ypodomes.com: Προς παράδοση τα έργα αποκατάστασης στο τμήμα Δομοκός-Λάρισα (2026-08-25)",
+      "url": "https://ypodomes.com/sidirodromos-pros-paradosi-ta-erga-apokatastasis-sto-tmima-domokos-larisa-poy-apokathista-ti-dipli-grammi-sto-athina-thessaloniki/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "onlarissa-domokos-krannon-2026",
+      "title": "onlarissa.gr: Βεβαίωση περαίωσης, αλλά τα τρένα κινούνται ακόμη σε μία γραμμή μέχρι τη Λάρισα (2026-09-25)",
+      "url": "https://www.onlarissa.gr/2026/09/25/vevaiosi-peraiosis-alla-ta-trena-kinountai-akomi-se-mia-grammi-mechri-ti-larisa-erotimata-gia-to-ergo-domokou-krannona/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-09-28"
+    }
+  ]
+}

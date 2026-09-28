@@ -1,6 +1,6 @@
 import { contractMonths } from "./contract";
 import type { Lot, Project } from "./schema";
-import { BULGARIAN_CYRILLIC } from "./text";
+import { BULGARIAN_CYRILLIC, romaniseGreek } from "./text";
 
 /**
  * Matching TED award notices to lots.
@@ -112,10 +112,12 @@ export function serbianLatin(text: string): string {
 /**
  * Lowercased, unaccented, punctuation-free text. Latin diacritics fold to
  * their base letter through Unicode decomposition; Cyrillic has no such
- * decomposition and is transliterated instead.
+ * decomposition and is transliterated instead. Greek is romanised too, since
+ * decomposition would only strip its accents and leave letters that the
+ * final [a-z0-9] filter then deletes wholesale.
  */
 export function normaliseText(text: string): string {
-  const lower = text.toLowerCase();
+  const lower = romaniseGreek(text.toLowerCase());
   let out = "";
   for (const ch of lower) {
     out += BULGARIAN_CYRILLIC[ch] ?? ch;

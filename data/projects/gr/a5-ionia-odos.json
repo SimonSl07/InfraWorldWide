@@ -1,0 +1,823 @@
+{
+  "id": "gr-a5-ionia-odos",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "A5 Ionia Odos (Antirrio – Ioannina)",
+    "ro": "A5 Ionia Odos (Antirrio – Ioannina)"
+  },
+  "description": {
+    "en": "Western Greece's north–south motorway, 196 km from Antirrio, at the northern end of the Rio–Antirrio Bridge, to the A2 Egnatia Odos at Pedini near Ioannina, by way of Missolonghi, Agrinio, Amfilochia and Arta. The state built the Arta bypass (2003 and 2011) and the Agrinio bypass (2009); the rest was built under a 30-year concession signed with Nea Odos on 19 December 2006. Works stopped in 2010 when lenders froze financing and resumed in April 2013 after the concession was renegotiated. The last section opened on 3 August 2017 and the motorway was inaugurated on 5 September 2017. An extension north to the Albanian border at Kakavia is under construction: Ioannina – Kalpaki (46.4 km) since 2026, with Kalpaki – Kakavia (23.11 km) held as a contract option. Section lengths are the rounded figures published for each opening; they sum to 200 km against the official 196 km.",
+    "ro": "Autostrada nord–sud a Greciei de Vest, 196 km de la Antirrio, capătul nordic al podului Rio–Antirrio, până la A2 Egnatia Odos la Pedini, lângă Ioannina, prin Missolonghi, Agrinio, Amfilochia și Arta. Statul a construit centura Artei (2003 și 2011) și centura orașului Agrinio (2009); restul a fost construit printr-o concesiune pe 30 de ani semnată cu Nea Odos la 19 decembrie 2006. Lucrările s-au oprit în 2010, când creditorii au înghețat finanțarea, și au reluat în aprilie 2013, după renegocierea concesiunii. Ultimul tronson s-a deschis la 3 august 2017, iar autostrada a fost inaugurată la 5 septembrie 2017. O prelungire spre nord, până la frontiera cu Albania la Kakavia, este în construcție: Ioannina – Kalpaki (46,4 km) din 2026, iar Kalpaki – Kakavia (23,11 km) este o opțiune a contractului. Lungimile tronsoanelor sunt cifrele rotunjite publicate la fiecare deschidere; însumate dau 200 km față de 196 km oficial."
+  },
+  "operator": "gr-ypome",
+  "cost": {
+    "amount": 1192,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Total project cost of the Ionia Odos concession in the original 2006 contract, nominal prices, including design and construction, financing costs and construction-period operation. The concession also covers upgrading and maintaining about 172.5 km of the A1 Athens – Skarfeia and the Schimatari – Chalkida branch, so this is not the cost of the 196 km alone. Financing: EUR 192 million equity, EUR 110 million debt, EUR 330 million Greek State and EU funds (EUR 509 million after the 2013 amendment) and EUR 560 million tolls collected during construction."
+  },
+  "lots": [
+    {
+      "id": "antirrio-klokova",
+      "name": {
+        "en": "Antirrio – Klokova Tunnel",
+        "ro": "Antirrio – Tunelul Klokova"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-12-19",
+        "constructionStart": "2008",
+        "opened": "2017-06-01"
+      },
+      "lengthKm": 6,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-12-19",
+          "note": {
+            "en": "Ionia Odos concession contract signed with Nea Odos.",
+            "ro": "Contractul de concesiune Ionia Odos semnat cu Nea Odos."
+          },
+          "sourceRef": "iht-2006-12-19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010",
+          "note": {
+            "en": "Lenders imposed a draw stop and construction ceased.",
+            "ro": "Creditorii au blocat tragerile din credite, iar construcția s-a oprit."
+          },
+          "sourceRef": "benefit-ionia-odos"
+        },
+        {
+          "kind": "resumed",
+          "date": "2013-04",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-06-01",
+          "sourceRef": "ypodomes-2017-06-01"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing for the whole Ionia Odos project: EUR 192 million equity, EUR 110 million debt and EUR 560 million tolls collected during construction, per the original contract.",
+            "ro": "Finanțarea concesiunii pentru întregul proiect Ionia Odos: 192 milioane EUR capital propriu, 110 milioane EUR datorie și 560 milioane EUR din taxe de drum încasate în timpul construcției, conform contractului inițial."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Greek State and EU Structural and Cohesion Funds of the 2007–2013 period, one combined figure for the whole concession: EUR 330 million in the original contract, EUR 509 million after the 2013 amendment.",
+            "ro": "Fonduri de la statul elen și fonduri structurale și de coeziune UE din perioada 2007–2013, o cifră comună pentru întreaga concesiune: 330 milioane EUR în contractul inițial, 509 milioane EUR după modificarea din 2013."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nea Odos",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Euroionia JV (Terna, Dragados, Ferrovial Agroman)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Runs from the Rio–Antirrio Bridge to the east portal of the Klokova tunnel, with the Antirrio interchange and the twin-tube Makyneia tunnel (600 m per Greek Wikipedia, 500 m per Ypodomes). Ypodomes gives the section as 6.5 km; it lagged behind because of unfinished expropriations, mainly around Riza. After the November 2013 amendment, Dragados and Ferrovial Agroman ceded their remaining construction share to Terna.",
+        "ro": "Merge de la podul Rio–Antirrio până la portalul estic al tunelului Klokova, cu nodul Antirrio și tunelul dublu Makyneia (600 m după Wikipedia în greacă, 500 m după Ypodomes). Ypodomes dă tronsonul ca 6,5 km; a rămas în urmă din cauza exproprierilor nefinalizate, mai ales în zona Riza. După modificarea din noiembrie 2013, Dragados și Ferrovial Agroman au cedat partea lor rămasă din construcție către Terna."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en",
+        "benefit-ionia-odos",
+        "iht-2006-12-19",
+        "neaodos-information",
+        "neaodos-construction-financing",
+        "ypodomes-2017-06-01"
+      ],
+      "geometryRef": "antirrio-klokova"
+    },
+    {
+      "id": "klokova-chaliki",
+      "name": {
+        "en": "Klokova Tunnel – Chaliki",
+        "ro": "Tunelul Klokova – Chaliki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-12-19",
+        "constructionStart": "2008",
+        "opened": "2017-04-12"
+      },
+      "lengthKm": 40,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-12-19",
+          "note": {
+            "en": "Ionia Odos concession contract signed with Nea Odos.",
+            "ro": "Contractul de concesiune Ionia Odos semnat cu Nea Odos."
+          },
+          "sourceRef": "iht-2006-12-19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010",
+          "note": {
+            "en": "Lenders imposed a draw stop and construction ceased.",
+            "ro": "Creditorii au blocat tragerile din credite, iar construcția s-a oprit."
+          },
+          "sourceRef": "benefit-ionia-odos"
+        },
+        {
+          "kind": "resumed",
+          "date": "2013-04",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-04-12",
+          "sourceRef": "wikipedia-el"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing for the whole Ionia Odos project: EUR 192 million equity, EUR 110 million debt and EUR 560 million tolls collected during construction, per the original contract.",
+            "ro": "Finanțarea concesiunii pentru întregul proiect Ionia Odos: 192 milioane EUR capital propriu, 110 milioane EUR datorie și 560 milioane EUR din taxe de drum încasate în timpul construcției, conform contractului inițial."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Greek State and EU Structural and Cohesion Funds of the 2007–2013 period, one combined figure for the whole concession: EUR 330 million in the original contract, EUR 509 million after the 2013 amendment.",
+            "ro": "Fonduri de la statul elen și fonduri structurale și de coeziune UE din perioada 2007–2013, o cifră comună pentru întreaga concesiune: 330 milioane EUR în contractul inițial, 509 milioane EUR după modificarea din 2013."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nea Odos",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Euroionia JV (Terna, Dragados, Ferrovial Agroman)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Runs from the Klokova tunnel to the Chaliki interchange at the southern end of the Agrinio bypass, past the Gavrolimni, Evinochori and Missolonghi interchanges and the Kalydona tunnel (900 m). The twin-tube Klokova tunnel (2,900 m) opened with this section; it was excavated from both ends from May 2015 and broken through on 28 June 2016. English Wikipedia gives this opening as 37 km, Klokova – Kefalovryso; the 40 km figure is the Greek article's.",
+        "ro": "Merge de la tunelul Klokova până la nodul Chaliki, capătul sudic al centurii orașului Agrinio, trecând de nodurile Gavrolimni, Evinochori și Missolonghi și de tunelul Kalydona (900 m). Tunelul dublu Klokova (2.900 m) s-a deschis odată cu acest tronson; a fost excavat din ambele capete din mai 2015 și străpuns la 28 iunie 2016. Wikipedia în engleză dă această deschidere ca 37 km, Klokova – Kefalovryso; cifra de 40 km este din articolul în greacă."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en",
+        "benefit-ionia-odos",
+        "iht-2006-12-19",
+        "neaodos-information",
+        "neaodos-construction-financing",
+        "ypodomes-2017-04-11"
+      ],
+      "geometryRef": "klokova-chaliki"
+    },
+    {
+      "id": "chaliki-kouvaras",
+      "name": {
+        "en": "Chaliki – Kouvaras (Agrinio bypass)",
+        "ro": "Chaliki – Kouvaras (centura orașului Agrinio)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-05-28"
+      },
+      "lengthKm": 34,
+      "note": {
+        "en": "Built by the state outside the concession and maintained by Nea Odos; no tolls are collected on it during the concession. Carries the Chaliki, Agios Ilias, Angelokastro, Rigani and Kouvaras interchanges and the 200 m Acheloos bridge. English Wikipedia and the BENEFIT case study give 33 km.",
+        "ro": "Construită de stat în afara concesiunii și întreținută de Nea Odos; pe durata concesiunii nu se percepe taxă de drum pe ea. Include nodurile Chaliki, Agios Ilias, Angelokastro, Rigani și Kouvaras și podul de 200 m peste Acheloos. Wikipedia în engleză și studiul de caz BENEFIT dau 33 km."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en",
+        "benefit-ionia-odos"
+      ],
+      "geometryRef": "chaliki-kouvaras"
+    },
+    {
+      "id": "kouvaras-amfilochia",
+      "name": {
+        "en": "Kouvaras – Amfilochia",
+        "ro": "Kouvaras – Amfilochia"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-12-19",
+        "constructionStart": "2008",
+        "opened": "2016-12-27"
+      },
+      "lengthKm": 25,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-12-19",
+          "note": {
+            "en": "Ionia Odos concession contract signed with Nea Odos.",
+            "ro": "Contractul de concesiune Ionia Odos semnat cu Nea Odos."
+          },
+          "sourceRef": "iht-2006-12-19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010",
+          "note": {
+            "en": "Lenders imposed a draw stop and construction ceased.",
+            "ro": "Creditorii au blocat tragerile din credite, iar construcția s-a oprit."
+          },
+          "sourceRef": "benefit-ionia-odos"
+        },
+        {
+          "kind": "resumed",
+          "date": "2013-04",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-27",
+          "sourceRef": "wikipedia-el"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing for the whole Ionia Odos project: EUR 192 million equity, EUR 110 million debt and EUR 560 million tolls collected during construction, per the original contract.",
+            "ro": "Finanțarea concesiunii pentru întregul proiect Ionia Odos: 192 milioane EUR capital propriu, 110 milioane EUR datorie și 560 milioane EUR din taxe de drum încasate în timpul construcției, conform contractului inițial."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Greek State and EU Structural and Cohesion Funds of the 2007–2013 period, one combined figure for the whole concession: EUR 330 million in the original contract, EUR 509 million after the 2013 amendment.",
+            "ro": "Fonduri de la statul elen și fonduri structurale și de coeziune UE din perioada 2007–2013, o cifră comună pentru întreaga concesiune: 330 milioane EUR în contractul inițial, 509 milioane EUR după modificarea din 2013."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nea Odos",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Euroionia JV (Terna, Dragados, Ferrovial Agroman)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The Amfilochia bypass, with the Amvrakia interchange (A52 to Aktio). Due by July 2016, it opened in December after landslides near the Amfilochia interchange.",
+        "ro": "Centura orașului Amfilochia, cu nodul Amvrakia (A52 spre Aktio). Prevăzută pentru iulie 2016, s-a deschis în decembrie, după alunecări de teren lângă nodul Amfilochia."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en",
+        "benefit-ionia-odos",
+        "iht-2006-12-19",
+        "neaodos-information",
+        "neaodos-construction-financing"
+      ],
+      "geometryRef": "kouvaras-amfilochia"
+    },
+    {
+      "id": "amfilochia-kompoti",
+      "name": {
+        "en": "Amfilochia – Kompoti",
+        "ro": "Amfilochia – Kompoti"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-12-19",
+        "constructionStart": "2008",
+        "opened": "2017-07-26"
+      },
+      "lengthKm": 28,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-12-19",
+          "note": {
+            "en": "Ionia Odos concession contract signed with Nea Odos.",
+            "ro": "Contractul de concesiune Ionia Odos semnat cu Nea Odos."
+          },
+          "sourceRef": "iht-2006-12-19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010",
+          "note": {
+            "en": "Lenders imposed a draw stop and construction ceased.",
+            "ro": "Creditorii au blocat tragerile din credite, iar construcția s-a oprit."
+          },
+          "sourceRef": "benefit-ionia-odos"
+        },
+        {
+          "kind": "resumed",
+          "date": "2013-04",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-07-26",
+          "sourceRef": "wikipedia-el"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing for the whole Ionia Odos project: EUR 192 million equity, EUR 110 million debt and EUR 560 million tolls collected during construction, per the original contract.",
+            "ro": "Finanțarea concesiunii pentru întregul proiect Ionia Odos: 192 milioane EUR capital propriu, 110 milioane EUR datorie și 560 milioane EUR din taxe de drum încasate în timpul construcției, conform contractului inițial."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Greek State and EU Structural and Cohesion Funds of the 2007–2013 period, one combined figure for the whole concession: EUR 330 million in the original contract, EUR 509 million after the 2013 amendment.",
+            "ro": "Fonduri de la statul elen și fonduri structurale și de coeziune UE din perioada 2007–2013, o cifră comună pentru întreaga concesiune: 330 milioane EUR în contractul inițial, 509 milioane EUR după modificarea din 2013."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nea Odos",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Euroionia JV (Terna, Dragados, Ferrovial Agroman)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Its opening made the motorway continuous from Antirrio to Perdika. The section includes the relocated Kompoti interchange, moved 3.5 km south of the old junction where the 2011 Arta bypass section began.",
+        "ro": "Deschiderea sa a făcut autostrada continuă de la Antirrio la Perdika. Tronsonul include nodul Kompoti mutat, la 3,5 km sud de vechea intersecție de unde începea tronsonul din 2011 al centurii Artei."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "benefit-ionia-odos",
+        "iht-2006-12-19",
+        "neaodos-information",
+        "neaodos-construction-financing"
+      ],
+      "geometryRef": "amfilochia-kompoti"
+    },
+    {
+      "id": "kompoti-arta",
+      "name": {
+        "en": "Kompoti – Arta",
+        "ro": "Kompoti – Arta"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-04"
+      },
+      "lengthKm": 8,
+      "note": {
+        "en": "Southern half of the Arta bypass, built by the Ministry of Environment, Physical Planning and Public Works (YPEHODE) and maintained by Nea Odos. It opened in April 2011 without the bridge of the Arta interchange (950 m), which opened on 22 November 2013.",
+        "ro": "Jumătatea sudică a centurii Artei, construită de Ministerul Mediului, Amenajării Teritoriului și Lucrărilor Publice (YPEHODE) și întreținută de Nea Odos. S-a deschis în aprilie 2011 fără podul nodului Arta (950 m), deschis la 22 noiembrie 2013."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en"
+      ],
+      "geometryRef": "kompoti-arta"
+    },
+    {
+      "id": "arta-filippiada",
+      "name": {
+        "en": "Arta – Filippiada",
+        "ro": "Arta – Filippiada"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003"
+      },
+      "lengthKm": 9,
+      "note": {
+        "en": "Northern half of the Arta bypass and the first part of the Ionia Odos to open, built by the ministry (YPEHODE) and maintained by Nea Odos. The Filippiada interchange was moved 1 km north when the motorway was completed.",
+        "ro": "Jumătatea nordică a centurii Artei și primul tronson al Ionia Odos deschis, construit de minister (YPEHODE) și întreținut de Nea Odos. Nodul Filippiada a fost mutat cu 1 km spre nord la finalizarea autostrăzii."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en"
+      ],
+      "geometryRef": "arta-filippiada"
+    },
+    {
+      "id": "filippiada-perdika",
+      "name": {
+        "en": "Filippiada – Perdika",
+        "ro": "Filippiada – Perdika"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-12-19",
+        "constructionStart": "2008",
+        "opened": "2017-02-22"
+      },
+      "lengthKm": 36,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-12-19",
+          "note": {
+            "en": "Ionia Odos concession contract signed with Nea Odos.",
+            "ro": "Contractul de concesiune Ionia Odos semnat cu Nea Odos."
+          },
+          "sourceRef": "iht-2006-12-19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010",
+          "note": {
+            "en": "Lenders imposed a draw stop and construction ceased.",
+            "ro": "Creditorii au blocat tragerile din credite, iar construcția s-a oprit."
+          },
+          "sourceRef": "benefit-ionia-odos"
+        },
+        {
+          "kind": "resumed",
+          "date": "2013-04",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-02-22",
+          "sourceRef": "wikipedia-el"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing for the whole Ionia Odos project: EUR 192 million equity, EUR 110 million debt and EUR 560 million tolls collected during construction, per the original contract.",
+            "ro": "Finanțarea concesiunii pentru întregul proiect Ionia Odos: 192 milioane EUR capital propriu, 110 milioane EUR datorie și 560 milioane EUR din taxe de drum încasate în timpul construcției, conform contractului inițial."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Greek State and EU Structural and Cohesion Funds of the 2007–2013 period, one combined figure for the whole concession: EUR 330 million in the original contract, EUR 509 million after the 2013 amendment.",
+            "ro": "Fonduri de la statul elen și fonduri structurale și de coeziune UE din perioada 2007–2013, o cifră comună pentru întreaga concesiune: 330 milioane EUR în contractul inițial, 509 milioane EUR după modificarea din 2013."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nea Odos",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Euroionia JV (Terna, Dragados, Ferrovial Agroman)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "New alignment with the Ammotopos, Gorgomylos and Terovo interchanges. Perdika was a temporary terminal until the link to the Egnatia Odos opened. English Wikipedia gives this opening as 37 km, Kampi (Filippiada interchange) – Avgo.",
+        "ro": "Traseu nou, cu nodurile Ammotopos, Gorgomylos și Terovo. Perdika a fost capăt provizoriu până la deschiderea legăturii cu Egnatia Odos. Wikipedia în engleză dă această deschidere ca 37 km, Kampi (nodul Filippiada) – Avgo."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en",
+        "benefit-ionia-odos",
+        "iht-2006-12-19",
+        "neaodos-information",
+        "neaodos-construction-financing"
+      ],
+      "geometryRef": "filippiada-perdika"
+    },
+    {
+      "id": "perdika-pedini",
+      "name": {
+        "en": "Perdika – Pedini (A2 Egnatia Odos)",
+        "ro": "Perdika – Pedini (A2 Egnatia Odos)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-12-19",
+        "constructionStart": "2008",
+        "opened": "2017-08-03"
+      },
+      "lengthKm": 14,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-12-19",
+          "note": {
+            "en": "Ionia Odos concession contract signed with Nea Odos.",
+            "ro": "Contractul de concesiune Ionia Odos semnat cu Nea Odos."
+          },
+          "sourceRef": "iht-2006-12-19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010",
+          "note": {
+            "en": "Lenders imposed a draw stop and construction ceased.",
+            "ro": "Creditorii au blocat tragerile din credite, iar construcția s-a oprit."
+          },
+          "sourceRef": "benefit-ionia-odos"
+        },
+        {
+          "kind": "resumed",
+          "date": "2013-04",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-08-03",
+          "sourceRef": "wikipedia-el"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing for the whole Ionia Odos project: EUR 192 million equity, EUR 110 million debt and EUR 560 million tolls collected during construction, per the original contract.",
+            "ro": "Finanțarea concesiunii pentru întregul proiect Ionia Odos: 192 milioane EUR capital propriu, 110 milioane EUR datorie și 560 milioane EUR din taxe de drum încasate în timpul construcției, conform contractului inițial."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Greek State and EU Structural and Cohesion Funds of the 2007–2013 period, one combined figure for the whole concession: EUR 330 million in the original contract, EUR 509 million after the 2013 amendment.",
+            "ro": "Fonduri de la statul elen și fonduri structurale și de coeziune UE din perioada 2007–2013, o cifră comună pentru întreaga concesiune: 330 milioane EUR în contractul inițial, 509 milioane EUR după modificarea din 2013."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Nea Odos",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Euroionia JV (Terna, Dragados, Ferrovial Agroman)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Includes the Avgo interchange and the 950 m Ampelia tunnel. Opened later than the section to the south because of delays in land expropriation. Ends at the Pedini interchange with the A2 Egnatia Odos, where the concession ends.",
+        "ro": "Include nodul Avgo și tunelul Ampelia de 950 m. Deschis mai târziu decât tronsonul dinspre sud din cauza întârzierilor la exproprieri. Se termină la nodul Pedini cu A2 Egnatia Odos, unde se încheie concesiunea."
+      },
+      "sourceRefs": [
+        "wikipedia-el",
+        "wikipedia-en",
+        "benefit-ionia-odos",
+        "iht-2006-12-19",
+        "neaodos-information",
+        "neaodos-construction-financing"
+      ],
+      "geometryRef": "perdika-pedini"
+    },
+    {
+      "id": "ioannina-kalpaki",
+      "name": {
+        "en": "Ioannina – Kalpaki",
+        "ro": "Ioannina – Kalpaki"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-12-18",
+        "constructionStart": "2026",
+        "expectedOpening": "2029-06"
+      },
+      "lengthKm": 46.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 193,
+              "currency": "EUR",
+              "year": 2024,
+              "note": "Winning bid without options, at a 17.5% discount. The source does not say whether VAT is included."
+            },
+            "date": "2024-12-18",
+            "note": "Contract signed on 18 December 2024 (Voria.gr); value as reported by Insider.gr on 4 December 2024.",
+            "sourceRef": "insider-2024-12-04"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 100
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Financed from the Partnership Agreement (ESPA) 2021–2027.",
+            "ro": "Finanțat din Acordul de parteneriat (ESPA) 2021–2027."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Entered in the 2024 Public Investment Programme by ministerial decision of 2 October 2024.",
+            "ro": "Inclus în Programul de investiții publice 2024 prin decizia ministerială din 2 octombrie 2024."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "AVAX",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 54,
+        "value": {
+          "amount": 193,
+          "currency": "EUR",
+          "year": 2024,
+          "note": "Winning bid without options, at a 17.5% discount. The source does not say whether VAT is included."
+        }
+      },
+      "note": {
+        "en": "Contracting authority: Ministry of Infrastructure and Transport. New alignment west of Ioannina, chainage km 4+800 to km 51+237.37, from the Ionia Odos – Egnatia Odos interchange (K0) where the concession ends to the Kalpaki interchange (K6), with the Kosmira – Asvestochori, Grammenochoria, Zitsa and Karyes interchanges. The Passaronas interchange (K3, km 21+940 – 23+441) is contract option 1. Its largest structure is a 560 m, 14-span bridge over the Egnatia Odos. Expected opening is the 54-month contract deadline of 18 June 2029. Voria.gr and Insider.gr report a budget of EUR 310 million including VAT but disagree on whether it includes the options.",
+        "ro": "Autoritate contractantă: Ministerul Infrastructurii și Transporturilor. Traseu nou la vest de Ioannina, kilometrajul 4+800 – 51+237,37, de la nodul Ionia Odos – Egnatia Odos (K0), unde se termină concesiunea, până la nodul Kalpaki (K6), cu nodurile Kosmira – Asvestochori, Grammenochoria, Zitsa și Karyes. Nodul Passaronas (K3, km 21+940 – 23+441) este opțiunea 1 a contractului. Cea mai mare structură este un pod de 560 m cu 14 deschideri peste Egnatia Odos. Deschiderea estimată este termenul contractual de 54 de luni, 18 iunie 2029. Voria.gr și Insider.gr raportează un buget de 310 milioane EUR cu TVA, dar nu concordă dacă acesta include opțiunile."
+      },
+      "sourceRefs": [
+        "voria-2024-12-18",
+        "insider-2024-12-04",
+        "ypodomes-2026-01-14",
+        "ypodomes-2026-04-17",
+        "wikipedia-en",
+        "wikipedia-el"
+      ],
+      "geometryRef": "ioannina-kalpaki"
+    },
+    {
+      "id": "kalpaki-kakavia",
+      "name": {
+        "en": "Kalpaki – Kakavia (Albanian border)",
+        "ro": "Kalpaki – Kakavia (frontiera cu Albania)"
+      },
+      "status": "planned",
+      "lengthKm": 23.11,
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Upgrade of the existing road to a 2+1 cross-section, chainage km 51+237.37 to km 74+349.66, from the Kalpaki interchange to the Kakavia border crossing, with interchanges at Doliana, Ravenia, Vissani, Delvinaki, Zavrocho, Ktismata and Kakavia. It is option 2 of the AVAX contract signed on 18 December 2024; options may be activated within 24 months of signature. Option 2 is budgeted at EUR 66 million including 24% VAT. The ministry put the environmental study to public consultation in April 2026; activation needs environmental approval and a ministerial decision.",
+        "ro": "Modernizarea drumului existent la profil 2+1, kilometrajul 51+237,37 – 74+349,66, de la nodul Kalpaki până la punctul de frontieră Kakavia, cu noduri la Doliana, Ravenia, Vissani, Delvinaki, Zavrocho, Ktismata și Kakavia. Este opțiunea 2 a contractului AVAX semnat la 18 decembrie 2024; opțiunile pot fi activate în 24 de luni de la semnare. Opțiunea 2 are un buget de 66 de milioane EUR cu TVA de 24%. Ministerul a supus studiul de mediu consultării publice în aprilie 2026; activarea necesită aviz de mediu și o decizie ministerială."
+      },
+      "sourceRefs": [
+        "ypodomes-2026-04-17",
+        "voria-2024-12-18",
+        "epiruspost-2024-12-18",
+        "ypodomes-2026-01-14"
+      ],
+      "geometryRef": "kalpaki-kakavia"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en",
+      "title": "Wikipedia: A5 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A5_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-el",
+      "title": "Greek Wikipedia: Ιόνια Οδός",
+      "url": "https://el.wikipedia.org/wiki/Ιόνια_Οδός",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "benefit-ionia-odos",
+      "title": "BENEFIT (EU Horizon 2020) wiki: Case Studies: Ionia Odos Motorway (after Nikolaidis and Roumboutsos, COST Action TU1001, 2013)",
+      "url": "http://www.benefit4transport.eu/wiki/index.php/Case_Studies:_Ionia_Odos_Motorway",
+      "retrievedOn": "2026-09-28",
+      "archiveUrl": "https://web.archive.org/web/20240525225937/http://www.benefit4transport.eu/wiki/index.php/Case_Studies:_Ionia_Odos_Motorway"
+    },
+    {
+      "id": "iht-2006-12-19",
+      "title": "International Herald Tribune (AP): Greece signs €1.4 billion deal for west coast highway (19 December 2006)",
+      "url": "http://www.iht.com/articles/ap/2006/12/19/europe/EU_GEN_Greece_Western_Highway.php",
+      "retrievedOn": "2026-09-28",
+      "archiveUrl": "https://web.archive.org/web/20080919075012/http://www.iht.com/articles/ap/2006/12/19/europe/EU_GEN_Greece_Western_Highway.php"
+    },
+    {
+      "id": "neaodos-construction-financing",
+      "title": "Nea Odos: Construction & Financing",
+      "url": "https://www.neaodos.gr/highways/construction-financing/?lang=en",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "neaodos-information",
+      "title": "Nea Odos: Project description (Ionia Odos, 196 km Antirrio – Ioannina)",
+      "url": "https://www.neaodos.gr/highways/information/?lang=en",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "insider-2024-12-04",
+      "title": "Insider.gr: «Ιωάννινα – Κακαβιά» – ΑΒΑΞ: Προς υπογραφή η σύμβαση 270 εκατ. για την επέκταση της Ιονίας Οδού (4 December 2024)",
+      "url": "https://www.insider.gr/oikonomia/345334/ioannina-kakabia-abax-pros-ypografi-i-symbasi-270-ekat-gia-tin-epektasi-tis-ionias",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "voria-2024-12-18",
+      "title": "Voria.gr: Υπεγράφη η σύμβαση για τον οδικό άξονα Ιωάννινα-Κακαβιά (18 December 2024)",
+      "url": "https://www.voria.gr/article/ypegrafi-i-symbasi-gia-ton-odiko-axona-ioannina-kakabia-pote-tha-einai-etoimo-ergo",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "epiruspost-2024-12-18",
+      "title": "EpirusPost: Ιωάννινα – Κακαβιά. Ο τρίιχνος δρόμος με τις δύο προαιρέσεις (18 December 2024)",
+      "url": "https://www.epiruspost.gr/ioannina-kakavia-o-triichnos-dromos-me/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2026-01-14",
+      "title": "Ypodomes.com: Ιόνια Οδός: ξεκινούν τα πρώτα έργα για την επέκταση Ιωάννινα – Κακαβιά (14 January 2026)",
+      "url": "https://ypodomes.com/xekinoyn-ta-prota-erga-sto-ioannina-kakavia-poio-tmima-afora-ti-ergasies-tha-ginoyn/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2026-04-17",
+      "title": "Ypodomes.com: Επέκταση Ιόνιας Οδού Ιωάννινα – Κακαβιά: προς ενεργοποίηση και το τμήμα Καλπάκι – Κακαβιά (17 April 2026)",
+      "url": "https://ypodomes.com/ionia-odos-epektasi-ioannina-kakavia-pros-energopoiisi-kai-to-tmima-kalpaki-kakavia-poy-provlepontai-anisopedoi-komvoi/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2017-04-11",
+      "title": "Ypodomes.com: Ιόνια Οδός: Εγκαινιάζεται το τμήμα Κλόκοβα-Κεφαλόβρυσο την Μεγάλη Τετάρτη (11 April 2017)",
+      "url": "http://www.ypodomes.com/index.php/autokinitodromoi/uperastikoi/ionia-odos/item/39956-ionia-odos-egkainiazetai-to-tmima-klokova-kefalovryso-tin-megali-tetarti",
+      "retrievedOn": "2026-09-28",
+      "archiveUrl": "https://web.archive.org/web/20180619113230/http://www.ypodomes.com/index.php/autokinitodromoi/uperastikoi/ionia-odos/item/39956-ionia-odos-egkainiazetai-to-tmima-klokova-kefalovryso-tin-megali-tetarti"
+    },
+    {
+      "id": "ypodomes-2017-06-01",
+      "title": "Ypodomes.com: Ιόνια Οδός: Παραδόθηκε στην κυκλοφορία το Αντίρριο-Κλόκοβα (1 June 2017)",
+      "url": "https://ypodomes.com/ionia-odos-paradothike-stin-kykloforia-to-antirrio-klokova/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-09-28"
+    }
+  ]
+}

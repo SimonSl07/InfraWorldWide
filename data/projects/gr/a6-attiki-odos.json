@@ -1,0 +1,795 @@
+{
+  "id": "gr-a6-attiki-odos",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "A6 Attiki Odos",
+    "ro": "Attiki Odos (A6)"
+  },
+  "description": {
+    "en": "Tolled motorway network forming the outer ring of Athens, 70 km in total according to the concessionaire: the A6 from the A8 at Elefsina past Stavros (Gerakas) to the Athens International Airport interchange and Markopoulo, the A62 Hymettus Ring, the A621 link between them and the A64 airport link. About 5 km of the Aigaleo ring (A65) also belongs to the concession and is not recorded here. Attiki Odos S.A. signed the concession on 23 May 1996 and construction began that month; a joint venture led by Aktor built it. The first 19 km, Gerakas – Airport, opened on 19 March 2001 together with the new airport, and the concessionaire dates completion of the main concession works to 24 June 2004. The motorway has three lanes and a hard shoulder per direction, with the Athens Suburban Railway in the median. Nea Attiki Odos, 90% owned by GEK Terna, replaced Attiki Odos S.A. as concessionaire on 6 October 2024. A6 lot lengths are measured on the OpenStreetMap alignment, whose kilometre posts start at 0 at Elefsina, except where the operator published a section length.",
+    "ro": "Rețea de autostrăzi cu taxă care formează inelul exterior al Atenei, 70 km în total potrivit concesionarului: A6 de la A8 la Elefsina, prin Stavros (Gerakas), până la nodul Aeroportului Internațional Atena și la Markopoulo, inelul Hymettus (A62), legătura A621 dintre ele și legătura A64 spre aeroport. Circa 5 km din inelul Aigaleo (A65) fac și ei parte din concesiune și nu sunt înregistrați aici. Attiki Odos S.A. a semnat concesiunea la 23 mai 1996, iar construcția a început în aceeași lună; a construit-o o asociere condusă de Aktor. Primii 19 km, Gerakas – Aeroport, s-au deschis la 19 martie 2001, odată cu noul aeroport, iar concesionarul datează finalizarea lucrărilor principale ale concesiunii la 24 iunie 2004. Autostrada are trei benzi și o bandă de urgență pe sens, cu trenul suburban al Atenei pe zona mediană. Nea Attiki Odos, deținută în proporție de 90% de GEK Terna, a înlocuit Attiki Odos S.A. ca concesionar la 6 octombrie 2024. Lungimile loturilor de pe A6 sunt măsurate pe traseul din OpenStreetMap, ale cărui borne kilometrice pornesc de la 0 la Elefsina, cu excepția tronsoanelor pentru care operatorul a publicat o lungime."
+  },
+  "cost": {
+    "amount": 1300,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Construction cost of the whole Attiki Odos as stated by the concessionaire (\"reached EUR 1.3 billion\"): 34% from the Greek State, with Community Support Framework resources, and 66% from Attiki Odos S.A. equity and loans from the EIB and commercial banks. Price year and VAT treatment not stated, and the source does not say whether the additional works built alongside (suburban rail and metro sections, Hymettus tunnels, flood protection) are included."
+  },
+  "lots": [
+    {
+      "id": "elefsina-metamorfosi",
+      "name": {
+        "en": "Elefsina – Metamorfosi",
+        "ro": "Elefsina – Metamorfosi"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2003-11"
+      },
+      "lengthKm": 23.1,
+      "profile": {
+        "lanes": 6,
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the A8 junction at Elefsina (km 0) to the A1 crossing at the Metamorfosi interchange (exit 8, about km 23.1). The concessionaire announced the opening of Elefsina – Metamorfosi in 2003; Wikipedia dates the opening of the western part to November 2003. Length measured on the OpenStreetMap alignment.",
+        "ro": "De la nodul cu A8 de la Elefsina (km 0) până la intersecția cu A1 din nodul Metamorfosi (ieșirea 8, circa km 23,1). Concesionarul a anunțat deschiderea tronsonului Elefsina – Metamorfosi în 2003; Wikipedia datează deschiderea părții de vest în noiembrie 2003. Lungime măsurată pe traseul din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-attiki-odos",
+        "wikipedia-en-a6",
+        "wikipedia-el-attiki-odos",
+        "aodos-history",
+        "aodos-stakeholders",
+        "aodos-project",
+        "aodos-2003-elefsina-metamorfosi",
+        "osm-a6"
+      ],
+      "geometryRef": "elefsina-metamorfosi"
+    },
+    {
+      "id": "metamorfosi-kymis",
+      "name": {
+        "en": "Metamorfosi – Kymis Avenue",
+        "ro": "Metamorfosi – Bulevardul Kymis"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2001"
+      },
+      "lengthKm": 3.3,
+      "profile": {
+        "lanes": 6,
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the A1 crossing at the Metamorfosi interchange (exit 8, about km 23.1) to the Kymis Avenue crossing (exit 10, about km 26.35). In spring 2002 the concessionaire reported this stretch as already in service for a year; it opened separately from the rest of the western A6. Length measured on the OpenStreetMap alignment.",
+        "ro": "De la intersecția cu A1 din nodul Metamorfosi (ieșirea 8, circa km 23,1) până la traversarea bulevardului Kymis (ieșirea 10, circa km 26,35). În primăvara lui 2002 concesionarul raporta porțiunea ca fiind în circulație de un an; s-a deschis separat de restul A6 de vest. Lungime măsurată pe traseul din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-el-attiki-odos",
+        "aodos-history",
+        "aodos-stakeholders",
+        "aodos-2002-progress",
+        "osm-a6"
+      ],
+      "geometryRef": "metamorfosi-kymis"
+    },
+    {
+      "id": "kymis-kifisias",
+      "name": {
+        "en": "Kymis Avenue – Kifisias Avenue",
+        "ro": "Bulevardul Kymis – Bulevardul Kifisias"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2003-11"
+      },
+      "lengthKm": 2,
+      "profile": {
+        "lanes": 6,
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the Kymis Avenue crossing (exit 10, about km 26.35) to the Kifisias Avenue crossing (exit 11, about km 28.4). No source dates this stretch on its own: the opening date is Wikipedia's for the western part, Elefsina – Kifisias Avenue, in November 2003. In May 2002 the concessionaire had planned it for the end of 2002. Length measured on the OpenStreetMap alignment.",
+        "ro": "De la traversarea bulevardului Kymis (ieșirea 10, circa km 26,35) până la traversarea bulevardului Kifisias (ieșirea 11, circa km 28,4). Nicio sursă nu datează separat această porțiune: data deschiderii este cea dată de Wikipedia pentru partea de vest, Elefsina – bulevardul Kifisias, în noiembrie 2003. În mai 2002 concesionarul o programase pentru sfârșitul lui 2002. Lungime măsurată pe traseul din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-attiki-odos",
+        "wikipedia-en-a6",
+        "wikipedia-el-attiki-odos",
+        "aodos-stakeholders",
+        "aodos-2002-progress",
+        "osm-a6"
+      ],
+      "geometryRef": "kymis-kifisias"
+    },
+    {
+      "id": "kifisias-gerakas",
+      "name": {
+        "en": "Kifisias Avenue – Gerakas",
+        "ro": "Bulevardul Kifisias – Gerakas"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2003"
+      },
+      "lengthKm": 5.8,
+      "profile": {
+        "lanes": 6,
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the Kifisias Avenue crossing (exit 11, about km 28.4) past the Pentelis Avenue (12) and Doukissis Plakentias (13) interchanges to the Gerakas road crossing near exit 14 (about km 34.1). English and Greek Wikipedia date the opening of Kifisias Avenue – Airport to early 2003; the concessionaire started tolling a newly opened section on 7 February 2003. The Pentelis Avenue entrance towards the airport opened on 2 September 2003. Length measured on the OpenStreetMap alignment.",
+        "ro": "De la traversarea bulevardului Kifisias (ieșirea 11, circa km 28,4), prin nodurile bulevardul Pentelis (12) și Doukissis Plakentias (13), până la traversarea drumului Gerakas de lângă ieșirea 14 (circa km 34,1). Wikipedia în engleză și în greacă datează deschiderea tronsonului bulevardul Kifisias – Aeroport la începutul lui 2003; concesionarul a început perceperea taxei pe un tronson nou deschis la 7 februarie 2003. Intrarea de pe bulevardul Pentelis spre aeroport s-a deschis la 2 septembrie 2003. Lungime măsurată pe traseul din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-attiki-odos",
+        "wikipedia-en-a6",
+        "wikipedia-el-attiki-odos",
+        "aodos-stakeholders",
+        "aodos-2003-tolls",
+        "aodos-2003-pentelis",
+        "osm-a6"
+      ],
+      "geometryRef": "kifisias-gerakas"
+    },
+    {
+      "id": "gerakas-airport",
+      "name": {
+        "en": "Gerakas – Athens Airport",
+        "ro": "Gerakas – Aeroportul Atena"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2001-03-19"
+      },
+      "lengthKm": 19,
+      "profile": {
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The first section, 19 km by the concessionaire's figure: the A6 from the Gerakas road crossing near exit 14 (about km 34.1) past Marathonos Avenue (15), Leontario (16), Kantza (17) and Paiania (18) to the Airport interchange (exit 20, where the A64 crosses at about km 47.7), then the A64 towards the airport as far as the northern limit of Attiki Odos (km 50.59 of its chainage), where the airport's area begins. It opened on 19 March 2001, nine days before the airport. Entry from Athens was by Gerakas road and Marathonos Avenue; at Kantza and Paiania only the exits worked at first.",
+        "ro": "Primul tronson, de 19 km după cifra concesionarului: A6 de la traversarea drumului Gerakas de lângă ieșirea 14 (circa km 34,1), prin bulevardul Marathonos (15), Leontario (16), Kantza (17) și Paiania (18), până la nodul Aeroport (ieșirea 20, unde A64 traversează la circa km 47,7), apoi A64 spre aeroport până la limita nordică a Attiki Odos (km 50,59 al kilometrajului său), unde începe zona aeroportului. S-a deschis la 19 martie 2001, cu nouă zile înaintea aeroportului. Intrarea dinspre Atena se făcea pe drumul Gerakas și pe bulevardul Marathonos; la Kantza și Paiania funcționau la început doar ieșirile."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a6",
+        "wikipedia-en-a64",
+        "wikipedia-el-attiki-odos",
+        "aodos-history",
+        "aodos-stakeholders",
+        "aodos-2001-tolls",
+        "aodos-2002-progress",
+        "osm-a6",
+        "osm-a64"
+      ],
+      "geometryRef": "gerakas-airport"
+    },
+    {
+      "id": "airport-interchange-markopoulo",
+      "name": {
+        "en": "Airport interchange – Markopoulo",
+        "ro": "Nodul Aeroport – Markopoulo"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2002-07-01"
+      },
+      "lengthKm": 1.2,
+      "profile": {
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The branches of the Airport interchange (exit 20) to and from Markopoulo and the Markopoulo half-interchange, opened on 1 July 2002: the A6 from the A64 crossing (about km 47.7) to its end on Markopoulo Avenue at Koropi (about km 48.9). Before this, traffic for Markopoulo went through the signalled junction with the Vari – Koropi road. Length measured on the OpenStreetMap alignment.",
+        "ro": "Bretelele nodului Aeroport (ieșirea 20) spre și dinspre Markopoulo și seminodul Markopoulo, deschise la 1 iulie 2002: A6 de la traversarea A64 (circa km 47,7) până la capătul său pe bulevardul Markopoulo, la Koropi (circa km 48,9). Înainte, traficul spre Markopoulo trecea prin intersecția semaforizată cu drumul Vari – Koropi. Lungime măsurată pe traseul din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "aodos-2002-markopoulo",
+        "osm-a6"
+      ],
+      "geometryRef": "airport-interchange-markopoulo"
+    },
+    {
+      "id": "a62-katechaki-glyka-nera",
+      "name": {
+        "en": "A62 Hymettus Ring: Katechaki – Glyka Nera",
+        "ro": "A62 Inelul Hymettus: Katechaki – Glyka Nera"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2003-09-03"
+      },
+      "lengthKm": 8.05,
+      "profile": {
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The Hymettus Ring (Western Peripheral Avenue of Hymettus, signed A64 until 2024) from the Katechaki interchange (Y1, km 0.00) past Papagou (Y2), Dimokritos (Y3) and Agia Paraskevi (Y4) to Glyka Nera (Y6, km 8.05). Length from the Nea Attiki Odos chainage as given by English Wikipedia. The concessionaire opened the Hymettus Ring on 3 September 2003; the stretch east of Glyka Nera had opened in July 2002. The Hymettus tunnels were added during construction after Council of State rulings.",
+        "ro": "Inelul Hymettus (Bulevardul Periferic de Vest al Hymettus, semnalizat A64 până în 2024) de la nodul Katechaki (Y1, km 0,00), prin Papagou (Y2), Dimokritos (Y3) și Agia Paraskevi (Y4), până la Glyka Nera (Y6, km 8,05). Lungime din kilometrajul Nea Attiki Odos, așa cum îl redă Wikipedia în engleză. Concesionarul a deschis inelul Hymettus la 3 septembrie 2003; porțiunea de la est de Glyka Nera se deschisese în iulie 2002. Tunelurile din Hymettus au fost adăugate în timpul construcției, după hotărâri ale Consiliului de Stat."
+      },
+      "sourceRefs": [
+        "wikipedia-en-attiki-odos",
+        "wikipedia-en-a62",
+        "wikipedia-el-attiki-odos",
+        "aodos-history",
+        "aodos-stakeholders",
+        "aodos-2003-hymettus",
+        "osm-a62"
+      ],
+      "geometryRef": "a62-katechaki-glyka-nera"
+    },
+    {
+      "id": "a62-glyka-nera-leontario",
+      "name": {
+        "en": "A62 Hymettus Ring: Glyka Nera – Leontario",
+        "ro": "A62 Inelul Hymettus: Glyka Nera – Leontario"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2002-07-01"
+      },
+      "lengthKm": 2.5,
+      "profile": {
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Glyka Nera – Rafina interchange section of the Hymettus Ring, 2.5 km, opened on 1 July 2002: from the Glyka Nera interchange on Lavriou Avenue (Y6, km 8.05) to the Leontario interchange with the A6 (Y7, km 9.83 to 10.47 on the Nea Attiki Odos chainage). The concessionaire called the A6 junction the Rafina interchange at the time.",
+        "ro": "Tronsonul Glyka Nera – nodul Rafina al inelului Hymettus, de 2,5 km, deschis la 1 iulie 2002: de la nodul Glyka Nera de pe bulevardul Lavriou (Y6, km 8,05) până la nodul Leontario cu A6 (Y7, km 9,83–10,47 în kilometrajul Nea Attiki Odos). Concesionarul numea atunci nodul cu A6 nodul Rafina."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a62",
+        "aodos-stakeholders",
+        "aodos-2002-glyka-nera",
+        "osm-a62"
+      ],
+      "geometryRef": "a62-glyka-nera-leontario"
+    },
+    {
+      "id": "a62-leontario-pallini",
+      "name": {
+        "en": "A62 Pallini bypass: Leontario – Pallini",
+        "ro": "A62 Varianta Pallini: Leontario – Pallini"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2004-08-05"
+      },
+      "lengthKm": 1.5,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Extension of the Hymettus Ring as a Pallini bypass, about 1.5 km, opened on 5 August 2004: from the Leontario interchange (Y7) to the Pallini interchange on Marathonos Avenue (Y8, km 11.70 on the Nea Attiki Odos chainage), giving traffic from Elefsina and the Hymettus Ring a route to Pallini, Pikermi and Rafina. The A62 east of Pallini to Agios Gerasimos (Y9) is not recorded, for lack of a sourced opening date.",
+        "ro": "Prelungirea inelului Hymettus ca variantă de ocolire a orașului Pallini, circa 1,5 km, deschisă la 5 august 2004: de la nodul Leontario (Y7) până la nodul Pallini de pe bulevardul Marathonos (Y8, km 11,70 în kilometrajul Nea Attiki Odos), oferind traficului dinspre Elefsina și inelul Hymettus o rută spre Pallini, Pikermi și Rafina. A62 la est de Pallini, până la Agios Gerasimos (Y9), nu este înregistrată, în lipsa unei date de deschidere din surse."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a62",
+        "aodos-stakeholders",
+        "aodos-2004-pallini",
+        "osm-a62"
+      ],
+      "geometryRef": "a62-leontario-pallini"
+    },
+    {
+      "id": "a621-agia-paraskevi-doukissis-plakentias",
+      "name": {
+        "en": "A621: Agia Paraskevi – Doukissis Plakentias",
+        "ro": "A621: Agia Paraskevi – Doukissis Plakentias"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1996-05-23",
+        "opened": "2004-04"
+      },
+      "lengthKm": 2.5,
+      "profile": {
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Attiki Odos concession: 66% of the EUR 1.3 billion construction cost from the concessionaire's equity and loans, for the network as a whole.",
+            "ro": "Concesiunea Attiki Odos: 66% din costul de construcție de 1,3 miliarde EUR din capitalul propriu și împrumuturile concesionarului, pentru întreaga rețea."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Part of the concessionaire's loans came from the European Investment Bank, the rest from commercial banks. Amount not stated.",
+            "ro": "O parte din împrumuturile concesionarului a venit de la Banca Europeană de Investiții, restul de la bănci comerciale. Suma nu este precizată."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Greek State contribution of 34% of the construction cost of the network as a whole, including Community Support Framework resources; the EU share is not stated.",
+            "ro": "Contribuția statului elen, de 34% din costul de construcție al întregii rețele, inclusiv resurse din Cadrul Comunitar de Sprijin; partea UE nu este precizată."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Attiki Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Attiki Odos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The A621 (signed A642 until 2024), the western link between the Hymettus Ring and the A6: from the Agia Paraskevi junction on the A62 (Y4) through the Panagouli tunnel to the A6 at the Doukissis Plakentias (13) and Pentelis Avenue (12) interchanges. Opened in April 2004; 2.5 km according to Greek Wikipedia, 2 km in the English article.",
+        "ro": "A621 (semnalizată A642 până în 2024), legătura de vest dintre inelul Hymettus și A6: de la nodul Agia Paraskevi de pe A62 (Y4), prin tunelul Panagouli, până la A6 în nodurile Doukissis Plakentias (13) și bulevardul Pentelis (12). Deschisă în aprilie 2004; 2,5 km după Wikipedia în greacă, 2 km în articolul în engleză."
+      },
+      "sourceRefs": [
+        "wikipedia-en-attiki-odos",
+        "wikipedia-en-a621",
+        "wikipedia-el-attiki-odos",
+        "aodos-stakeholders",
+        "osm-a621"
+      ],
+      "geometryRef": "a621-agia-paraskevi-doukissis-plakentias"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-attiki-odos",
+      "title": "Wikipedia: Attiki Odos",
+      "url": "https://en.wikipedia.org/wiki/Attiki_Odos",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-en-a6",
+      "title": "Wikipedia: A6 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A6_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-en-a62",
+      "title": "Wikipedia: A62 motorway (Greece) (exit list with Nea Attiki Odos chainage)",
+      "url": "https://en.wikipedia.org/wiki/A62_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-en-a64",
+      "title": "Wikipedia: A64 motorway (Greece) (exit list with Nea Attiki Odos chainage)",
+      "url": "https://en.wikipedia.org/wiki/A64_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-en-a621",
+      "title": "Wikipedia: A621 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A621_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-el-attiki-odos",
+      "title": "Greek Wikipedia: Αττική Οδός",
+      "url": "https://el.wikipedia.org/wiki/Αττική_Οδός",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-history",
+      "title": "Attiki Odos S.A.: Ιστορικά Στοιχεία & Ημερομηνίες Σταθμοί (history and milestone dates)",
+      "url": "https://www.aodos.gr/i-etaireia/istorika-stoiheia/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-stakeholders",
+      "title": "Attiki Odos S.A.: Οι φορείς του έργου (concessionaire, construction JV, cost and financing)",
+      "url": "https://www.aodos.gr/i-etaireia/oi-foreis-tou-ergou/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-project",
+      "title": "Attiki Odos S.A.: Το Έργο (70 km, sections, lanes)",
+      "url": "https://www.aodos.gr/i-etaireia/to-ergo/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2001-tolls",
+      "title": "Attiki Odos S.A.: Έναρξη Διοδίων (tolling of Gerakas – Airport, 19 km, 2001)",
+      "url": "https://www.aodos.gr/2001/arthro/enarksi_diodion-15431250/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2002-progress",
+      "title": "Attiki Odos S.A.: Πρόοδος Έργου – Παραδόσεις Τμημάτων (progress and section deliveries, May 2002)",
+      "url": "https://www.aodos.gr/2002/arthro/proodos_ergou_paradoseis_tmimaton-15431257/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2002-glyka-nera",
+      "title": "Attiki Odos S.A.: Παράδοση επιπλέον 3 χιλιομέτρων (Glyka Nera – Rafina interchange, 1 July 2002)",
+      "url": "https://www.aodos.gr/2002/arthro/paradosi_epipleon_3_xiliometron_nea_eisodos_gia_tin_attiki_odo-15431253/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2002-markopoulo",
+      "title": "Attiki Odos S.A.: Παράδοση επιπλέον κλάδων (Markopoulo branches of the Airport interchange, 1 July 2002)",
+      "url": "https://www.aodos.gr/2002/arthro/paradosi_epipleon_kladon_syndesi_me_notioanatoliki_attiki-15431254/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2003-tolls",
+      "title": "Attiki Odos S.A.: Αλλαγές στις τιμές διοδίων (tolling of a newly opened section from 7 February 2003)",
+      "url": "https://www.aodos.gr/2003/arthro/allages_stis_times_diodion_ekptotika_paketa-15431265/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2003-pentelis",
+      "title": "Attiki Odos S.A.: Άνοιγμα εισόδου Αττικής Οδού από Λεωφ. Πεντέλης (2 September 2003)",
+      "url": "https://www.aodos.gr/2003/arthro/anoigma_eisodou_attikis_odou_apo_leof_pentelis-15431263/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2003-hymettus",
+      "title": "Attiki Odos S.A.: Νέο Συνδρομητικό Πακέτο (Hymettus Ring opened 3 September 2003)",
+      "url": "https://www.aodos.gr/2003/arthro/neo_syndromitiko_paketo-15431261/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2003-elefsina-metamorfosi",
+      "title": "Attiki Odos S.A. press archive, 2003: Παράδοση στην κυκλοφορία του τμήματος Ελευσίνα – Μεταμόρφωση (title only)",
+      "url": "https://extranet.zentech.gr/v4.aodos/default.asp?catid=37333&subid=2&pubid=15431260",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "aodos-2004-pallini",
+      "title": "Attiki Odos S.A.: Επέκταση Περιφερειακής Υμηττού – Παράκαμψη Παλλήνης (5 August 2004)",
+      "url": "https://www.aodos.gr/2004/arthro/epektasi-perifereiakis-imittou-parakampsi-pallinis/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "Attiki Odos S.A.: Νέα εμπορική και τιμολογιακή πολιτική (last section delivered 24 June 2004)",
+      "url": "https://www.aodos.gr/2004/arthro/nea_emporiki_kai_timologiaki_politiki_apo_1i_septembriou-15431275/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "osm-a6",
+      "title": "OpenStreetMap: relation 363465, Αυτοκινητόδρομος Α6 (ref Α6, kilometre posts from Elefsina)",
+      "url": "https://www.openstreetmap.org/relation/363465",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "osm-a62",
+      "title": "OpenStreetMap: relation 364163, Αυτοκινητόδρομος Α62",
+      "url": "https://www.openstreetmap.org/relation/364163",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "osm-a621",
+      "title": "OpenStreetMap: relation 364236, Αυτοκινητόδρομος Α621",
+      "url": "https://www.openstreetmap.org/relation/364236",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "osm-a64",
+      "title": "OpenStreetMap: relation 5832223, Αυτοκινητόδρομος Α64 (Koropi – Airport)",
+      "url": "https://www.openstreetmap.org/relation/5832223",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-09-28"
+    }
+  ],
+  "lastVerified": "2026-09-28"
+}

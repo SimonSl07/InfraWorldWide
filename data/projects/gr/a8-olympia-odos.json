@@ -1,0 +1,551 @@
+{
+  "id": "gr-a8-olympia-odos",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "A8 Olympia Odos Motorway",
+    "ro": "Autostrada A8 Olympia Odos"
+  },
+  "description": {
+    "en": "Tolled motorway of 277 km from the Elefsina–Thiva interchange west of Athens to Corinth, Patras and Pyrgos, operated by the concessionaire Olympia Odos S.A. under a concession that took effect in 2008 and, after Patras – Pyrgos was added, runs to the end of 2044. The concession runs over four sections: Elefsina – Ancient Corinth (64 km, an existing motorway refurbished), Corinth – Patras (120 km, rebuilt to motorway standard on the old alignment and opened in stages from 2016 to April 2017), the Patras bypass (18 km, opened 2002) and Patras – Pyrgos (75 km, built from March 2022 and opened in 2025). The A8 number covers Elefsina – Rio; the Patras bypass and Patras – Pyrgos carry the A5 number but belong to the same concession. Lengths are the concessionaire's section figures, except where a lot note says otherwise.",
+    "ro": "Autostradă cu taxă de 277 km, de la nodul Elefsina–Theba, la vest de Atena, până la Corint, Patras și Pyrgos, operată de concesionarul Olympia Odos S.A. printr-o concesiune intrată în vigoare în 2008 care, după adăugarea tronsonului Patras – Pyrgos, durează până la sfârșitul lui 2044. Concesiunea cuprinde patru tronsoane: Elefsina – Corintul Antic (64 km, autostradă existentă, renovată), Corint – Patras (120 km, reconstruit la standard de autostradă pe vechiul traseu și deschis etapizat în 2016 – aprilie 2017), centura Patras (18 km, deschisă în 2002) și Patras – Pyrgos (75 km, construit din martie 2022 și deschis în 2025). Numărul A8 acoperă Elefsina – Rio; centura Patras și Patras – Pyrgos poartă numărul A5, dar fac parte din aceeași concesiune. Lungimile sunt cele declarate de concesionar pentru fiecare tronson, cu excepțiile menționate în notele loturilor."
+  },
+  "lots": [
+    {
+      "id": "elefsina-ancient-corinth",
+      "name": {
+        "en": "Elefsina – Ancient Corinth",
+        "ro": "Elefsina – Corintul Antic"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1995"
+      },
+      "lengthKm": 64,
+      "profile": {
+        "lanes": 6,
+        "tolled": true
+      },
+      "note": {
+        "en": "From the Elefsina–Thiva interchange to the Ancient Corinth interchange. National Road 8A, converted to a motorway from the mid-1980s; Greek Wikipedia dates completion to 1995, when only a stretch near Megara (km 44–48) still lacked a central reservation. The Kakia Skala realignment with five tunnels was built from 1999: the carriageway from Athens towards Corinth opened before summer 2004 and the Corinth to Athens carriageway on 30 June 2006. Refurbished by the concessionaire from 2008.",
+        "ro": "De la nodul Elefsina–Theba la nodul Corintul Antic. Drumul Național 8A, transformat în autostradă de la mijlocul anilor 1980; Wikipedia în greacă datează finalizarea în 1995, când doar o porțiune lângă Megara (km 44–48) nu avea încă separator central. Varianta Kakia Skala, cu cinci tuneluri, a fost construită din 1999: sensul spre Corint s-a deschis înainte de vara lui 2004, iar sensul Corint – Atena la 30 iunie 2006. Renovat de concesionar din 2008."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a8",
+        "wikipedia-el-a8",
+        "olympiaodos-design-construction"
+      ],
+      "geometryRef": "elefsina-ancient-corinth"
+    },
+    {
+      "id": "ancient-corinth-kiato",
+      "name": {
+        "en": "Ancient Corinth – Kiato",
+        "ro": "Corintul Antic – Kiato"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2016-09-02"
+      },
+      "lengthKm": 20,
+      "profile": {
+        "works": "upgrade",
+        "lanes": 4,
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Corinth – Patras as a whole, whose construction cost reached 1,487 million euro, was financed 38% from private funds (29% bank loans, 9% equity), 33% from EU funds, 23% from users' contribution and 6% from the Greek State. No per-lot split published.",
+            "ro": "Tronsonul Corint – Patras în ansamblu, al cărui cost de construcție a ajuns la 1.487 milioane de euro, a fost finanțat 38% din fonduri private (29% credite bancare, 9% capital propriu), 33% din fonduri UE, 23% din contribuția utilizatorilor și 6% de statul elen. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "EU"
+        },
+        {
+          "source": "other",
+          "detail": {
+            "en": "Users' contribution.",
+            "ro": "Contribuția utilizatorilor."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Olympia Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Apion Kleos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First completed section of the Corinth – Patras rebuild, with the Zevgolatio and Kiato interchanges. Works on Corinth – Patras began in 2008, stopped in 2010–2011 over financing and restarted in 2013 (Greek Wikipedia).",
+        "ro": "Primul tronson finalizat al reconstrucției Corint – Patras, cu nodurile Zevgolatio și Kiato. Lucrările pe Corint – Patras au început în 2008, s-au oprit în 2010–2011 din cauza finanțării și au fost reluate în 2013 (Wikipedia în greacă)."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a8",
+        "wikipedia-el-a8",
+        "ypodomes-2017-02-20",
+        "ypodomes-2017-04-11",
+        "olympiaodos-about",
+        "olympiaodos-design-construction",
+        "wikipedia-en-olympia-odos"
+      ],
+      "geometryRef": "ancient-corinth-kiato"
+    },
+    {
+      "id": "kiato-xylokastro",
+      "name": {
+        "en": "Kiato – Xylokastro",
+        "ro": "Kiato – Xylokastro"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2017-02"
+      },
+      "lengthKm": 14,
+      "profile": {
+        "works": "upgrade",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-el-a8"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2016-12-17",
+          "note": {
+            "en": "9 km of the section opened to traffic unofficially.",
+            "ro": "9 km din tronson au fost dați neoficial în circulație."
+          },
+          "sourceRef": "ypodomes-2017-02-20"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-02",
+          "note": {
+            "en": "A traffic notice published on 24 February 2017 reported a full motorway cross-section, two lanes and a hard shoulder each way, from the Ancient Corinth interchange to the Xylokastro interchange.",
+            "ro": "Un anunț de trafic publicat la 24 februarie 2017 indica profil complet de autostradă, două benzi și bandă de urgență pe sens, de la nodul Corintul Antic la nodul Xylokastro."
+          },
+          "sourceRef": "ypodomes-2017-02-24"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Corinth – Patras as a whole, whose construction cost reached 1,487 million euro, was financed 38% from private funds (29% bank loans, 9% equity), 33% from EU funds, 23% from users' contribution and 6% from the Greek State. No per-lot split published.",
+            "ro": "Tronsonul Corint – Patras în ansamblu, al cărui cost de construcție a ajuns la 1.487 milioane de euro, a fost finanțat 38% din fonduri private (29% credite bancare, 9% capital propriu), 33% din fonduri UE, 23% din contribuția utilizatorilor și 6% de statul elen. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "EU"
+        },
+        {
+          "source": "other",
+          "detail": {
+            "en": "Users' contribution.",
+            "ro": "Contribuția utilizatorilor."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Olympia Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Apion Kleos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the Kiato interchange to the Xylokastro interchange, 14 km with one interchange.",
+        "ro": "De la nodul Kiato la nodul Xylokastro, 14 km cu un nod."
+      },
+      "sourceRefs": [
+        "ypodomes-2017-02-20",
+        "ypodomes-2017-02-24",
+        "ypodomes-2017-04-11",
+        "wikipedia-el-a8",
+        "olympiaodos-about",
+        "wikipedia-en-olympia-odos"
+      ],
+      "geometryRef": "kiato-xylokastro"
+    },
+    {
+      "id": "xylokastro-rio",
+      "name": {
+        "en": "Xylokastro – Rio",
+        "ro": "Xylokastro – Rio"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2017-04-11"
+      },
+      "lengthKm": 86,
+      "profile": {
+        "works": "upgrade",
+        "lanes": 4,
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "wikipedia-el-a8"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2016-05",
+          "note": {
+            "en": "Twin tunnels of about 1,150 m in the Akrata – Aigeira area opened to traffic.",
+            "ro": "Tunelurile duble de circa 1.150 m din zona Akrata – Aigeira au fost date în circulație."
+          },
+          "sourceRef": "ypodomes-2017-02-20"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2016-09-02",
+          "note": {
+            "en": "Two new tunnels at Derveni (1,210 m in total) opened, on a new 2 km stretch.",
+            "ro": "Două tuneluri noi la Derveni (1.210 m în total) au fost deschise, pe un tronson nou de 2 km."
+          },
+          "sourceRef": "wikipedia-el-a8"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-04-11",
+          "note": {
+            "en": "Inaugurated by the Prime Minister at Panagopoula; the whole section from the Xylokastro interchange to the Rio interchange opened, except about 7 km at Kamari, Derveni, Arachovitika and part of the Rio interchange, due by August 2017.",
+            "ro": "Inaugurat de prim-ministru la Panagopoula; s-a deschis tot tronsonul de la nodul Xylokastro la nodul Rio, cu excepția a circa 7 km la Kamari, Derveni, Arachovitika și o parte din nodul Rio, programați până în august 2017."
+          },
+          "sourceRef": "ypodomes-2017-04-11"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Corinth – Patras as a whole, whose construction cost reached 1,487 million euro, was financed 38% from private funds (29% bank loans, 9% equity), 33% from EU funds, 23% from users' contribution and 6% from the Greek State. No per-lot split published.",
+            "ro": "Tronsonul Corint – Patras în ansamblu, al cărui cost de construcție a ajuns la 1.487 milioane de euro, a fost finanțat 38% din fonduri private (29% credite bancare, 9% capital propriu), 33% din fonduri UE, 23% din contribuția utilizatorilor și 6% de statul elen. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "EU"
+        },
+        {
+          "source": "other",
+          "detail": {
+            "en": "Users' contribution.",
+            "ro": "Contribuția utilizatorilor."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Olympia Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Apion Kleos Construction JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the Xylokastro interchange to the K1 interchange of the Patras bypass at Rio, where the A8 meets the A5. Length derived: the concessionaire's 120 km for Corinth – Patras less 20 km and 14 km for the two earlier sections; ypodomes.com gave about 90 km in February 2017. Includes the Panagopoula tunnel, 3,179 m towards Patras and 4,033 m towards Athens.",
+        "ro": "De la nodul Xylokastro la nodul K1 al centurii Patras, la Rio, unde A8 se întâlnește cu A5. Lungime calculată: cei 120 km declarați de concesionar pentru Corint – Patras minus 20 km și 14 km pentru cele două tronsoane anterioare; ypodomes.com indica circa 90 km în februarie 2017. Include tunelul Panagopoula, 3.179 m spre Patras și 4.033 m spre Atena."
+      },
+      "sourceRefs": [
+        "ypodomes-2017-02-20",
+        "ypodomes-2017-04-11",
+        "wikipedia-el-a8",
+        "olympiaodos-about",
+        "olympiaodos-design-construction",
+        "wikipedia-en-olympia-odos"
+      ],
+      "geometryRef": "xylokastro-rio"
+    },
+    {
+      "id": "patras-bypass",
+      "name": {
+        "en": "Patras bypass (Rio – Mintilogli)",
+        "ro": "Centura Patras (Rio – Mintilogli)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1982",
+        "opened": "2002-12-19"
+      },
+      "lengthKm": 18,
+      "profile": {
+        "lanes": 4
+      },
+      "note": {
+        "en": "From the first interchange (K1) at Rio to the last (K7) at Mintilogli. Works began in early 1982; a part inaugurated in 1993 had to be rebuilt over defects. Inaugurated by the Prime Minister on 19 December 2002 while link roads were still missing; Greek Wikipedia gives 2003 for completion. Carries the A5 number; refurbished by the Olympia Odos concessionaire from 2008.",
+        "ro": "De la primul nod (K1), la Rio, la ultimul (K7), la Mintilogli. Lucrările au început la începutul lui 1982; o parte inaugurată în 1993 a trebuit refăcută din cauza defectelor. Inaugurată de prim-ministru la 19 decembrie 2002, când încă lipseau drumuri de legătură; Wikipedia în greacă indică 2003 ca an al finalizării. Poartă numărul A5; renovată de concesionarul Olympia Odos din 2008."
+      },
+      "sourceRefs": [
+        "tanea-2002-11-01",
+        "rizospastis-2002-12-19",
+        "wikipedia-el-patras-bypass",
+        "olympiaodos-design-construction"
+      ],
+      "geometryRef": "patras-bypass"
+    },
+    {
+      "id": "mintilogli-kaminia",
+      "name": {
+        "en": "Mintilogli – Kaminia",
+        "ro": "Mintilogli – Kaminia"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2022-03",
+        "opened": "2025-12-04"
+      },
+      "lengthKm": 10,
+      "profile": {
+        "works": "upgrade",
+        "lanes": 4
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Patras – Pyrgos as a whole: during construction, 35% concessionaire funds (bank loans and equity) and 65% EU and Greek State, per the concessionaire. Co-financed by the NSRF (ESPA) 2014–2020 and 2021–2027 with 143 million euro and by national resources. No per-lot split published.",
+            "ro": "Patras – Pyrgos în ansamblu: pe durata construcției, 35% fonduri ale concesionarului (credite bancare și capital propriu) și 65% UE și statul elen, potrivit concesionarului. Cofinanțat din CSRN (ESPA) 2014–2020 și 2021–2027 cu 143 milioane de euro și din resurse naționale. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Olympia Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Apion Kleos Construction JV",
+          "role": "builder"
+        },
+        {
+          "name": "AVAX",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the Mintilogli semi-interchange (km 0+000) at the end of the Patras bypass to Kaminia, about km 10; sources also call it Mintilogli – Alissos (the Alissos semi-interchange is at km 12+725). Built by widening the existing national road under traffic, as part of AVAX's Mintilogli – Karaiika contract. Budget for all of Patras – Pyrgos: 295 million euro, and 385 million euro spent including supplementary works; the concessionaire gives a construction cost of 331 million euro. None is split per lot.",
+        "ro": "De la seminodul Mintilogli (km 0+000), la capătul centurii Patras, până la Kaminia, în jurul km 10; sursele îl numesc și Mintilogli – Alissos (seminodul Alissos este la km 12+725). Construit prin lărgirea drumului național existent, sub trafic, ca parte a contractului AVAX Mintilogli – Karaiika. Buget pentru tot Patras – Pyrgos: 295 milioane de euro, iar cheltuiala a ajuns la 385 milioane de euro cu lucrările suplimentare; concesionarul indică un cost de construcție de 331 milioane de euro. Niciuna nu este defalcată pe loturi."
+      },
+      "sourceRefs": [
+        "ypodomes-2025-07-31",
+        "ypodomes-2025-12-04",
+        "ypodomes-2026-01-07",
+        "olympiaodos-design-construction",
+        "olympiaodos-financing"
+      ],
+      "geometryRef": "mintilogli-kaminia"
+    },
+    {
+      "id": "kaminia-pyrgos",
+      "name": {
+        "en": "Kaminia – Pyrgos",
+        "ro": "Kaminia – Pyrgos"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2022-03",
+        "opened": "2025-08-01"
+      },
+      "lengthKm": 65,
+      "profile": {
+        "lanes": 4,
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Patras – Pyrgos as a whole: during construction, 35% concessionaire funds (bank loans and equity) and 65% EU and Greek State, per the concessionaire. Co-financed by the NSRF (ESPA) 2014–2020 and 2021–2027 with 143 million euro and by national resources. No per-lot split published.",
+            "ro": "Patras – Pyrgos în ansamblu: pe durata construcției, 35% fonduri ale concesionarului (credite bancare și capital propriu) și 65% UE și statul elen, potrivit concesionarului. Cofinanțat din CSRN (ESPA) 2014–2020 și 2021–2027 cu 143 milioane de euro și din resurse naționale. Nu există defalcare pe loturi."
+          }
+        },
+        {
+          "source": "EU"
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Olympia Odos S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Apion Kleos Construction JV",
+          "role": "builder"
+        },
+        {
+          "name": "AVAX",
+          "role": "builder"
+        },
+        {
+          "name": "Aktor",
+          "role": "builder"
+        },
+        {
+          "name": "TERNA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From Kaminia, about km 10, to the Pyrgos interchange (km 73+843), with the Kato Achaia, Varda, Kyllini, Gastouni and Amaliada interchanges. Mostly on a new alignment through the Ilida valley. Inaugurated on 31 July 2025 and open to traffic from noon on 1 August 2025. Works were split AVAX (Mintilogli – Karaiika), Aktor (Karaiika – Gastouni) and TERNA (Gastouni – Pyrgos). Costs are recorded only for Patras – Pyrgos as a whole; see Mintilogli – Kaminia.",
+        "ro": "De la Kaminia, în jurul km 10, până la nodul Pyrgos (km 73+843), cu nodurile Kato Achaia, Varda, Kyllini, Gastouni și Amaliada. În mare parte pe traseu nou, prin valea Ilida. Inaugurat la 31 iulie 2025 și deschis circulației de la prânzul zilei de 1 august 2025. Lucrările au fost împărțite între AVAX (Mintilogli – Karaiika), Aktor (Karaiika – Gastouni) și TERNA (Gastouni – Pyrgos). Costurile există doar pentru Patras – Pyrgos în ansamblu; vezi Mintilogli – Kaminia."
+      },
+      "sourceRefs": [
+        "ypodomes-2025-07-30",
+        "ypodomes-2025-07-31",
+        "ypodomes-2026-01-07",
+        "wikipedia-el-patras-pyrgos",
+        "olympiaodos-design-construction",
+        "olympiaodos-financing"
+      ],
+      "geometryRef": "kaminia-pyrgos"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-a8",
+      "title": "Wikipedia: A8 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A8_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-en-olympia-odos",
+      "title": "Wikipedia: Olympia Odos",
+      "url": "https://en.wikipedia.org/wiki/Olympia_Odos",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-el-a8",
+      "title": "Greek Wikipedia: Ολυμπία Οδός (Αυτοκινητόδρομος 8)",
+      "url": "https://el.wikipedia.org/wiki/Ολυμπία_Οδός",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-el-patras-pyrgos",
+      "title": "Greek Wikipedia: Αυτοκινητόδρομος Πάτρα - Πύργος - Τσακώνα",
+      "url": "https://el.wikipedia.org/wiki/Αυτοκινητόδρομος_Πάτρα_-_Πύργος_-_Τσακώνα",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-el-patras-bypass",
+      "title": "Greek Wikipedia: Περιμετρική Οδός Πατρών",
+      "url": "https://el.wikipedia.org/wiki/Περιμετρική_Οδός_Πατρών",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "olympiaodos-about",
+      "title": "Olympia Odos S.A.: About us (concessionaire, shareholders, Apion Kleos Construction JV)",
+      "url": "https://www.olympiaodos.gr/en/project/Poioi-eimaste/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "olympiaodos-design-construction",
+      "title": "Olympia Odos S.A.: Design & Construction (sections, lengths, Patras – Pyrgos chainages)",
+      "url": "https://www.olympiaodos.gr/en/project/Sxediasmos-Kataskeuh/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "olympiaodos-financing",
+      "title": "Olympia Odos S.A.: Financing",
+      "url": "https://www.olympiaodos.gr/en/project/Xrhmatodothsh/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2017-02-20",
+      "title": "ypodomes.com: Ολυμπία Οδός: Παραδίδεται το τμήμα μέχρι Ξυλόκαστρο και οι Σήραγγες Παναγοπούλας (20 February 2017)",
+      "url": "https://ypodomes.com/olympia-odos-paradidetai-to-tmima-mexri-ksylokastro-kai-oi-siragges-panagopoylas/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2017-02-24",
+      "title": "ypodomes.com: Ολυμπία Οδός: Οι κυκλοφοριακές ρυθμίσεις για το τριήμερο της Καθαράς Δευτέρας (24 February 2017)",
+      "url": "https://ypodomes.com/olympia-odos-oi-kykloforiakes-rythmiseis-gia-to-triimero-tis-katharas-defteras/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2017-04-11",
+      "title": "ypodomes.com: Σε λειτουργία η Ολυμπία Οδός, αυτοκινητόδρομος πλέον από Ελευσίνα μέχρι Πάτρα (11 April 2017)",
+      "url": "https://ypodomes.com/se-leitourgia-i-olympia-odos-aftokinitodromos-pleon-apo-elefsina-mexri-patra/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "tanea-2002-11-01",
+      "title": "Ta Nea: Έτοιμη η περιμετρική Πάτρας μετά είκοσι χρόνια! (1 November 2002)",
+      "url": "https://www.tanea.gr/2002/11/01/greece/etoimi-i-perimetriki-patras-meta-eikosi-xronia/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "rizospastis-2002-12-19",
+      "title": "Rizospastis: Φιέστα εγκαινίων της μισοτελειωμένης Περιμετρικής (19 December 2002)",
+      "url": "https://www.rizospastis.gr/story.do?id=1570141",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2025-07-30",
+      "title": "ypodomes.com: Ολυμπία Οδός: Σε λειτουργία από 1/8 τα 65 χλμ. από Καμίνια – Πύργο (30 July 2025)",
+      "url": "https://ypodomes.com/olympia-odos-se-leitoyrgia-apo-1-8-ta-65-chlm-apo-kaminia-pyrgo-toy-neoy-aytokinitodromoy-patra-pyrgos/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2025-07-31",
+      "title": "ypodomes.com: Ιστορική ημέρα για την Ηλεία: Παραδίδονται σήμερα 65 χιλιόμετρα του νέου αυτοκινητόδρομου Πάτρα – Πύργος (31 July 2025)",
+      "url": "https://ypodomes.com/istoriki-imera-gia-tin-ileia-paradidontai-simera-65-chiliometra-toy-aytokinitodromoy-patra-pyrgos-to-plires-20etes-istoriko-toy-ergoy/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2025-12-04",
+      "title": "ypodomes.com: Ολυμπία Οδός: παραδόθηκαν σήμερα από την AVAX τα τελευταία 10 χιλιόμετρα του άξονα Πάτρα – Πύργος (4 December 2025)",
+      "url": "https://ypodomes.com/i-avax-paredose-ta-teleytaia-10-chiliometra-toy-axona-patra-pyrgos/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2026-01-07",
+      "title": "ypodomes.com: ΕΡΓΟ ΤΗΣ ΧΡΟΝΙΑΣ 2025 ο αυτοκινητόδρομος Πάτρα – Πύργος (7 January 2026)",
+      "url": "https://ypodomes.com/ergo-tis-chronias-2025-o-aytokinitodromos-patra-pyrgos-ti-lene-oi-protagonistes/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-09-28"
+    }
+  ],
+  "lastVerified": "2026-09-28"
+}

@@ -1,6 +1,74 @@
 {
-  "note": "Reference figures for the cities that anchor the map camera and give project costs a local denominator. gdpPerCapita.amount is a PER-PERSON figure in whole currency units, not in MILLIONS like cost.amount elsewhere in this repo. Population is the city proper as counted in the 2021 census round, taken from each country's own statistical institute; the reference dates differ (Romania censused on 1 December 2021, Bulgaria on 7 September 2021) because the censuses do, and neither figure is a current estimate. GDP per capita is Eurostat's NUTS 3 figure in euro per inhabitant at current market prices for 2023, the latest year that is final for both cities. 2024 is published but flagged provisional for Bucharest, and pairing a provisional year against a final one would compare the vintages rather than the cities. The values are nominal euro, not PPS, so they are not adjusted for the large price-level difference between the two countries and overstate the real gap. A NUTS 3 region is not always the city proper: it is exactly the municipality for Bucharest but wider than the town for Sofia, so read each city's note before dividing anything by these numbers.",
+  "note": "Reference figures for the cities that anchor the map camera and give project costs a local denominator. gdpPerCapita.amount is a PER-PERSON figure in whole currency units, not in MILLIONS like cost.amount elsewhere in this repo. Population is the city proper as counted in the 2021 census round, taken from each country's own statistical institute; the reference dates differ (Romania censused on 1 December 2021, Bulgaria on 7 September 2021, Greece on 22 October 2021) because the censuses do, and none of the figures is a current estimate. GDP per capita is Eurostat's NUTS 3 figure in euro per inhabitant at current market prices for 2023, the latest year that is final for Bucharest and Sofia. 2024 is published but flagged provisional for Bucharest, and pairing a provisional year against a final one would compare the vintages rather than the cities. Greece cannot meet that rule: Eurostat flags every Greek NUTS 3 year it serves (2018 onwards) as provisional and has no 2024, so the Greek cities carry the same year, 2023, flagged provisional in their notes. The values are nominal euro, not PPS, so they are not adjusted for the large price-level differences between the countries and overstate the real gaps. A NUTS 3 region is not always the city proper: it is exactly the municipality for Bucharest but wider than the town for Sofia, Athens and Thessaloniki, so read each city's note before dividing anything by these numbers.",
   "cities": {
+    "gr-athens": {
+      "country": "gr",
+      "name": {
+        "en": "Athens",
+        "ro": "Atena"
+      },
+      "population": 643452,
+      "populationDate": "2021-10",
+      "gdpPerCapita": {
+        "amount": 42800,
+        "currency": "EUR",
+        "year": 2023
+      },
+      "center": [23.7348, 37.9755],
+      "link": "https://www.cityofathens.gr/",
+      "note": {
+        "en": "Population is the Municipality of Athens (Dimos Athinaion), 643,452 permanent residents at the 2021 census, reference date 22 October 2021. GDP per capita is for NUTS 3 region EL303 Kentrikos Tomeas Athinon, the Central Athens regional unit: the municipality plus seven neighbouring ones, 1,002,212 people at the same census. The GDP figure is therefore spread over about 56% more people than the population field counts. Eurostat flags the 2023 value as provisional.",
+        "ro": "Populația este a Municipiului Atena (Dimos Athinaion), 643.452 de locuitori permanenți la recensământul din 2021, cu data de referință 22 octombrie 2021. PIB-ul pe locuitor este pentru regiunea NUTS 3 EL303 Kentrikos Tomeas Athinon, unitatea regională Atena Centrală: municipiul plus alte șapte vecine, 1.002.212 locuitori la același recensământ. Prin urmare, PIB-ul este raportat la circa 56% mai mulți locuitori decât indică câmpul de populație. Eurostat marchează valoarea pentru 2023 ca provizorie."
+      },
+      "sources": [
+        {
+          "title": "Hellenic Statistical Authority (ELSTAT): 2021 Population-Housing Census, permanent population results (index of published tables)",
+          "url": "https://www.statistics.gr/en/2021-census-res-pop-results"
+        },
+        {
+          "title": "ELSTAT, 2021 census, MON_PLI_DHM_OIKISN_2021.xlsx: Permanent population by settlement (Dimos Athinaion: 643,452; Periferiaki Enotita Kentrikou Tomea Athinon: 1,002,212)",
+          "url": "https://www.statistics.gr/documents/20181/17286366/MON_PLI_DHM_OIKISN_2021.xlsx"
+        },
+        {
+          "title": "Eurostat: Gross domestic product (GDP) at current market prices by NUTS 3 region [nama_10r_3gdp], unit EUR_HAB, geo EL303 Kentrikos Tomeas Athinon, 2023 (provisional)",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table"
+        }
+      ]
+    },
+    "gr-thessaloniki": {
+      "country": "gr",
+      "name": {
+        "en": "Thessaloniki",
+        "ro": "Salonic"
+      },
+      "population": 319045,
+      "populationDate": "2021-10",
+      "gdpPerCapita": {
+        "amount": 18100,
+        "currency": "EUR",
+        "year": 2023
+      },
+      "center": [22.9444, 40.6401],
+      "link": "https://thessaloniki.gr/",
+      "note": {
+        "en": "Population is the Municipality of Thessaloniki (Dimos Thessalonikis), 319,045 permanent residents at the 2021 census, reference date 22 October 2021. GDP per capita is for NUTS 3 region EL522 Thessaloniki, the whole regional unit, 1,092,919 people at the same census, rural districts included. The GDP figure is therefore spread over about 3.4 times as many people as the population field counts. Eurostat flags the 2023 value as provisional.",
+        "ro": "Populația este a Municipiului Salonic (Dimos Thessalonikis), 319.045 de locuitori permanenți la recensământul din 2021, cu data de referință 22 octombrie 2021. PIB-ul pe locuitor este pentru regiunea NUTS 3 EL522 Thessaloniki, întreaga unitate regională, 1.092.919 locuitori la același recensământ, inclusiv zonele rurale. Prin urmare, PIB-ul este raportat la de circa 3,4 ori mai mulți locuitori decât indică câmpul de populație. Eurostat marchează valoarea pentru 2023 ca provizorie."
+      },
+      "sources": [
+        {
+          "title": "Hellenic Statistical Authority (ELSTAT): 2021 Population-Housing Census, permanent population results (index of published tables)",
+          "url": "https://www.statistics.gr/en/2021-census-res-pop-results"
+        },
+        {
+          "title": "ELSTAT, 2021 census, MON_PLI_DHM_OIKISN_2021.xlsx: Permanent population by settlement (Dimos Thessalonikis: 319,045; Periferiaki Enotita Thessalonikis: 1,092,919)",
+          "url": "https://www.statistics.gr/documents/20181/17286366/MON_PLI_DHM_OIKISN_2021.xlsx"
+        },
+        {
+          "title": "Eurostat: Gross domestic product (GDP) at current market prices by NUTS 3 region [nama_10r_3gdp], unit EUR_HAB, geo EL522 Thessaloniki, 2023 (provisional)",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table"
+        }
+      ]
+    },
     "ro-bucharest": {
       "country": "ro",
       "name": {

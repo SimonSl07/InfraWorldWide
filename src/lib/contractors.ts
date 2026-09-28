@@ -1,4 +1,4 @@
-import { foldText, romaniseCyrillic } from "./text";
+import { foldText, romaniseCyrillic, romaniseGreek } from "./text";
 import type { Contractor, ContractorEntry, ContractorRegistry } from "./schema";
 
 /**
@@ -31,14 +31,14 @@ export interface AttributedContractor extends ResolvedContractor {
 
 /**
  * "Max Bögl" → "max-bogl", "SA&PE Construct" → "sa-pe-construct",
- * "Трейс Груп Холд АД" → "treys-grup-hold-ad".
+ * "Трейс Груп Холд АД" → "treys-grup-hold-ad", "ΑΚΤΩΡ Α.Τ.Ε." → "aktor-a-t-e".
  *
- * Cyrillic is romanised first. Without that every Cyrillic letter fell
+ * Cyrillic and Greek are romanised first. Without that every such letter fell
  * outside [a-z0-9]: an all-Cyrillic name slugged to "" and was dropped from
  * every ranking, and "Водстрой 98 АД" ranked as a firm called "98".
  */
 export function contractorSlug(name: string): string {
-  return foldText(romaniseCyrillic(name))
+  return foldText(romaniseCyrillic(romaniseGreek(name)))
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }

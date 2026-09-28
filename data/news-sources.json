@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/news-sources.schema.json",
-  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Every entry was fetched and parsed on 2026-09-07, and each one twice, by whoever added it and by a second pass that checked what the items are actually about. cnadnr.ro, mt.ro, cnir.ro, metrorex.ro, gov.ro and Bulgaria's api.bg time out from outside their own country, though cfr.ro does not, so a Romanian state host is not automatically unreachable. cnair.ro is not CNAIR but a squatted domain serving a single 2016 post. clubferoviar.ro and proinfrastructura.ro were dropped: both now answer any non-browser client with a JavaScript challenge, on every feed path tried. srbijavoz.rs was dropped because its pubDate values are transliterated into Cyrillic and no parser reads them. The EIB project pipeline was dropped because the host's robots.txt asks clients not to fetch feeds. koridorisrbije.rs is an empty Angular shell, so the corridors are covered through mgsi and putevi-srbije instead. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole, which is why an international title is filed as general. Wikipedia article histories are watched from the projects' own sources and need no entry here.",
+  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Every entry was fetched and parsed on 2026-09-07, and each one twice, by whoever added it and by a second pass that checked what the items are actually about. cnadnr.ro, mt.ro, cnir.ro, metrorex.ro, gov.ro and Bulgaria's api.bg time out from outside their own country, though cfr.ro does not, so a Romanian state host is not automatically unreachable. cnair.ro is not CNAIR but a squatted domain serving a single 2016 post. clubferoviar.ro and proinfrastructura.ro were dropped: both now answer any non-browser client with a JavaScript challenge, on every feed path tried. srbijavoz.rs was dropped because its pubDate values are transliterated into Cyrillic and no parser reads them. The EIB project pipeline was dropped because the host's robots.txt asks clients not to fetch feeds. koridorisrbije.rs is an empty Angular shell, so the corridors are covered through mgsi and putevi-srbije instead. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole, which is why an international title is filed as general. Wikipedia article histories are watched from the projects' own sources and need no entry here. The three Greek entries were fetched and parsed with the digest's own client on 2026-09-28. ergose.gr has a working feed but was left out: its newest item was from January 2025.",
   "sources": [
     {
       "id": "hotnews",
@@ -96,6 +96,33 @@
       "language": "bg",
       "focus": "infrastructure",
       "note": "Sofia Metro, the operator that opens the stations. The feed is linked from the homepage; the catalogue previously recorded this host as a 404, which was simply wrong."
+    },
+    {
+      "id": "ypodomes",
+      "name": "Ypodomes.com",
+      "url": "https://ypodomes.com/feed/",
+      "country": "gr",
+      "language": "el",
+      "focus": "infrastructure",
+      "note": "Greek infrastructure trade site. Greek script, which the matcher romanises before scoring. The feed carries only its latest ten items, all from the same day when checked, so a digest that skips a day misses some."
+    },
+    {
+      "id": "egnatia-odos",
+      "name": "Egnatia Odos S.A.",
+      "url": "https://egnatia.eu/feed/",
+      "country": "gr",
+      "language": "el",
+      "focus": "infrastructure",
+      "note": "The Egnatia Odos motorway company. Low volume, mostly tenders and works notices: ten items spanning September 2025 to August 2026 when checked."
+    },
+    {
+      "id": "ekathimerini",
+      "name": "eKathimerini",
+      "url": "https://www.ekathimerini.com/infeeds/rss/nx-rss-feed.xml",
+      "country": "gr",
+      "language": "en",
+      "focus": "general",
+      "note": "English edition of Kathimerini. Filed as general: the feed is the whole paper, forty items a day."
     },
     {
       "id": "cinea",

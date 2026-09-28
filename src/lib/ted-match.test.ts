@@ -74,6 +74,30 @@ describe("normaliseText", () => {
     expect(normaliseText("Щипка")).toBe("shtipka");
   });
 
+  it("romanises Greek the way the data spells Greek places", () => {
+    // Greek feeds and TED titles are in Greek; every lot name here is Latin.
+    expect(normaliseText("Θεσσαλονίκη")).toBe("thessaloniki");
+    expect(normaliseText("Πάτρα – Πύργος")).toBe("patra pyrgos");
+    expect(normaliseText("ΕΓΝΑΤΙΑ ΟΔΟΣ")).toBe("egnatia odos");
+    expect(normaliseText("Ιωάννινα, Κόρινθος, Τρίπολη")).toBe(
+      "ioannina korinthos tripoli",
+    );
+    // ου is one vowel, and αυ/ευ turn into f before a voiceless consonant.
+    expect(normaliseText("Μουδανιά")).toBe("moudania");
+    expect(normaliseText("Ελευσίνα")).toBe("elefsina");
+    expect(normaliseText("Ευρώπη, Αύλακας")).toBe("evropi avlakas");
+    // μπ and ντ are b and d at the start of a word, mp and nt inside one.
+    expect(normaliseText("Μπράλος, Λαμπρινή, Κέντρο")).toBe(
+      "bralos lamprini kentro",
+    );
+    expect(normaliseText("Άγγελος")).toBe("angelos");
+  });
+
+  it("leaves Latin text exactly as it was", () => {
+    expect(normaliseText("Egnatia Odos, Ευ")).toBe("egnatia odos ef");
+    expect(normaliseText("Sebeș–Turda")).toBe("sebes turda");
+  });
+
   it("drops punctuation, chainage and case", () => {
     expect(normaliseText("LOT 1 Dumbrava-Mizil km 0+000 – km 21+000")).toBe(
       "lot 1 dumbrava mizil km 0 000 km 21 000",
