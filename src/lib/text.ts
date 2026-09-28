@@ -113,3 +113,103 @@ export function romaniseCyrillic(value: string): string {
   }
   return out;
 }
+
+/**
+ * Single Greek letters in the ELOT 743 romanisation that Greek road signs,
+ * operators and Wikipedia use (Θεσσαλονίκη = Thessaloniki, Πύργος = Pyrgos),
+ * so a Greek headline lands on the same spelling as the lot names. Accented
+ * forms are listed too, so tonos and diaeresis need no separate pass.
+ */
+const GREEK_LETTERS: Readonly<Record<string, string>> = {
+  α: "a",
+  ά: "a",
+  β: "v",
+  γ: "g",
+  δ: "d",
+  ε: "e",
+  έ: "e",
+  ζ: "z",
+  η: "i",
+  ή: "i",
+  θ: "th",
+  ι: "i",
+  ί: "i",
+  ϊ: "i",
+  ΐ: "i",
+  κ: "k",
+  λ: "l",
+  μ: "m",
+  ν: "n",
+  ξ: "x",
+  ο: "o",
+  ό: "o",
+  π: "p",
+  ρ: "r",
+  σ: "s",
+  ς: "s",
+  τ: "t",
+  υ: "y",
+  ύ: "y",
+  ϋ: "y",
+  ΰ: "y",
+  φ: "f",
+  χ: "ch",
+  ψ: "ps",
+  ω: "o",
+  ώ: "o",
+};
+
+/** αυ, ευ and ηυ are af/ef/if before these, and at the end of a word. */
+const GREEK_VOICELESS = new Set([
+  "θ",
+  "κ",
+  "ξ",
+  "π",
+  "σ",
+  "ς",
+  "τ",
+  "φ",
+  "χ",
+  "ψ",
+]);
+
+const GREEK_LETTER = /[Ͱ-Ͽ]/;
+
+/**
+ * Lowercase Latin for any Greek in `value`, by ELOT 743; text with no Greek
+ * letter comes back unchanged. The digraphs are what a letter table cannot
+ * do: ου is one vowel (Μουδανιά = Moudania), αυ/ευ turn voiceless before
+ * θ κ ξ π σ τ φ χ ψ (Ελευσίνα = Elefsina), and μπ/ντ are b/d only at the
+ * start of a word (Μπράλος = Bralos, Κέντρο = Kentro).
+ */
+export function romaniseGreek(value: string): string {
+  if (!GREEK_LETTER.test(value)) return value;
+  const text = value.toLowerCase();
+  let out = "";
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    const next = text[i + 1] ?? "";
+    const wordStart = i === 0 || !GREEK_LETTER.test(text[i - 1]);
+    if (ch === "ο" && (next === "υ" || next === "ύ")) {
+      out += "ou";
+      i++;
+    } else if ("αάεέηή".includes(ch) && (next === "υ" || next === "ύ")) {
+      const after = text[i + 2] ?? "";
+      const voiceless = GREEK_VOICELESS.has(after) || !GREEK_LETTER.test(after);
+      out += GREEK_LETTERS[ch] + (voiceless ? "f" : "v");
+      i++;
+    } else if (ch === "μ" && next === "π") {
+      out += wordStart ? "b" : "mp";
+      i++;
+    } else if (ch === "ν" && next === "τ") {
+      out += wordStart ? "d" : "nt";
+      i++;
+    } else if (ch === "γ" && next !== "" && "γξχ".includes(next)) {
+      // γγ = ng, γξ = nx, γχ = nch; γκ stays gk, as ELOT writes it.
+      out += "n";
+    } else {
+      out += GREEK_LETTERS[ch] ?? ch;
+    }
+  }
+  return out;
+}

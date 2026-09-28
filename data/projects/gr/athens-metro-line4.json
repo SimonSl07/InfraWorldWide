@@ -1,0 +1,192 @@
+{
+  "id": "gr-athens-metro-line4",
+  "country": "gr",
+  "city": "gr-athens",
+  "category": "railway",
+  "name": {
+    "en": "Athens Metro Line 4, Section A (Alsos Veikou – Goudi)",
+    "ro": "Linia 4 a metroului din Atena, secțiunea A (Alsos Veikou – Goudi)"
+  },
+  "description": {
+    "en": "First section of Athens Metro Line 4, a driverless line under construction from Alsos Veikou in Galatsi through Kypseli, Exarcheia and Kolonaki to Goudi in Zografou: 12.8 km with 15 underground stations, with interchanges to Line 2 at Akadimia and to Line 3 at Evangelismos. Attiko Metro (now Elliniko Metro) signed the design-and-build contract with AVAX, Ghella and Alstom on 22 June 2021 for €1,158 million excluding VAT, including 20 automated trains. The original deadline of 20 June 2029 was extended in February 2026 to 3 September 2032, a date the contractor disputes. It is the first of five planned sections of a 38.2 km, 35-station U-shaped line.",
+    "ro": "Prima secțiune a liniei 4 a metroului din Atena, o linie fără mecanic aflată în construcție de la Alsos Veikou, în Galatsi, prin Kypseli, Exarcheia și Kolonaki, până la Goudi, în Zografou: 12,8 km cu 15 stații subterane, cu legături cu linia 2 la Akadimia și cu linia 3 la Evangelismos. Attiko Metro (acum Elliniko Metro) a semnat contractul de proiectare și execuție cu AVAX, Ghella și Alstom pe 22 iunie 2021, pentru 1.158 de milioane de euro fără TVA, inclusiv 20 de trenuri automate. Termenul inițial, 20 iunie 2029, a fost prelungit în februarie 2026 până la 3 septembrie 2032, dată contestată de constructor. Este prima din cele cinci secțiuni planificate ale unei linii în formă de U de 38,2 km, cu 35 de stații."
+  },
+  "operator": "gr-elliniko-metro",
+  "stationCount": 15,
+  "lots": [
+    {
+      "id": "section-a-alsos-veikou-goudi",
+      "name": {
+        "en": "Section A: Alsos Veikou – Goudi",
+        "ro": "Secțiunea A: Alsos Veikou – Goudi"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-06-22",
+        "constructionStart": "2021",
+        "expectedOpening": "2032-09-03"
+      },
+      "lengthKm": 12.8,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 15
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1510,
+          "currency": "EUR",
+          "note": "Tender budget published by Attiko Metro when stage B tender documents were issued on 6 September 2018. The notice does not state whether VAT is included. Covers design, civil works, systems, 20 trains and maintenance."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1158,
+              "currency": "EUR",
+              "year": 2021,
+              "note": "Excluding VAT. Winning offer of AVAX – Ghella – Alstom (12.19% discount). Elliniko Metro rounds it to about €1.2 billion plus VAT."
+            },
+            "date": "2021-06-22",
+            "note": "Contract signed on 22 June 2021 (Elliniko Metro press release).",
+            "sourceRef": "ypodomes-signing-2021"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "amount": {
+            "amount": 730,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "30-year European Investment Bank loan of €730 million for Section A",
+            "ro": "Împrumut de 730 de milioane de euro pe 30 de ani de la Banca Europeană de Investiții pentru secțiunea A"
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed by the EU through Greece's NSRF 2014–2020 (ESPA)",
+            "ro": "Cofinanțat de UE prin Cadrul Strategic Național de Referință 2014–2020 al Greciei (ESPA)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "AVAX – Ghella – Alstom Transport",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 96,
+        "value": {
+          "amount": 1158,
+          "currency": "EUR",
+          "year": 2021,
+          "note": "Excluding VAT. Winning offer of AVAX – Ghella – Alstom (12.19% discount). Elliniko Metro rounds it to about €1.2 billion plus VAT."
+        },
+        "noticeReference": "CON-005/21 (KIMDIS ADAM 21SYMV008809402)"
+      },
+      "note": {
+        "en": "Contract duration converted from days: 2,920 days. Attiko Metro issued stage B tender documents on 6 September 2018 to three pre-selected consortia, with a €1,510 million budget and an 8-year build; bids were due on 15 March 2019. Financial offers were opened on 19 October 2020: AVAX – Ghella – Alstom bid €1,158 million excluding VAT and Aktor – Ansaldo – Hitachi €1,180 million. The contract, signed on 22 June 2021 (shares AVAX 47%, Ghella 25%, Alstom 28%), covers final and detailed design, civil works, electromechanical and railway systems, 20 driverless trains, maintenance, and a new control centre and train workshop at Sepolia depot. The tender specified about 10,307 m of twin-track tunnel bored by at least two TBMs, from shafts at Veikou and Katechaki, plus about 850 m of single-track tunnel. Archaeology and utility diversions were let separately to ERETVO on 29 March 2021 for €33.5 million, raised to €35.6 million in September 2023. TBM Athina left Katechaki in summer 2023 and reached Evangelismos on 12 February 2026 after about 5,118 m. TBM Niki left Alsos Veikou in 2024 and was halted on 8 May 2026, after passing under Kypseli square towards Dikastiria, when ground movement exceeded design predictions. In February 2026 Elliniko Metro moved the completion deadline from 20 June 2029 to 3 September 2032, against the contractor's proposed 13 February 2034, and demanded repayment of an early-completion premium; the contractor contests both. In April 2026 the Goudi and Evangelismos station sites had still not been handed over.",
+        "ro": "Durata contractului convertită din zile: 2.920 de zile. Attiko Metro a transmis documentația etapei B a licitației pe 6 septembrie 2018 către trei consorții preselectate, cu un buget de 1.510 milioane de euro și o durată de execuție de 8 ani; ofertele erau așteptate pe 15 martie 2019. Ofertele financiare au fost deschise pe 19 octombrie 2020: AVAX – Ghella – Alstom a oferit 1.158 de milioane de euro fără TVA, iar Aktor – Ansaldo – Hitachi 1.180 de milioane. Contractul, semnat pe 22 iunie 2021 (cote AVAX 47%, Ghella 25%, Alstom 28%), cuprinde proiectarea finală și de detaliu, lucrările civile, sistemele electromecanice și feroviare, 20 de trenuri fără mecanic, întreținerea, precum și un nou centru de control și un atelier de trenuri în depoul Sepolia. Licitația prevedea circa 10.307 m de tunel cu cale dublă, excavat de cel puțin două TBM-uri din puțurile de la Veikou și Katechaki, plus circa 850 m de tunel cu cale simplă. Lucrările arheologice și devierea rețelelor de utilități au fost atribuite separat firmei ERETVO pe 29 martie 2021, pentru 33,5 milioane de euro, sumă majorată la 35,6 milioane în septembrie 2023. TBM-ul Athina a pornit din Katechaki în vara lui 2023 și a ajuns la Evangelismos pe 12 februarie 2026, după circa 5.118 m. TBM-ul Niki a pornit din Alsos Veikou în 2024 și a fost oprit pe 8 mai 2026, după ce trecuse pe sub piața Kypseli spre Dikastiria, când deplasările terenului au depășit valorile din proiect. În februarie 2026, Elliniko Metro a mutat termenul de finalizare de la 20 iunie 2029 la 3 septembrie 2032, față de 13 februarie 2034 propus de constructor, și a cerut restituirea unei prime pentru finalizare anticipată; constructorul le contestă pe amândouă. În aprilie 2026, amplasamentele stațiilor Goudi și Evangelismos nu fuseseră încă predate."
+      },
+      "sourceRefs": [
+        "emetro-tender",
+        "emetro-line4-overview",
+        "emetro-signing-2021",
+        "ypodomes-offers-2020",
+        "ypodomes-signing-2021",
+        "ypodomes-deadline-2032",
+        "kathimerini-delay-2026",
+        "emetro-tbm-niki-2026",
+        "eib-line4-2022",
+        "wikipedia-el-line4",
+        "wikipedia-en-line4"
+      ],
+      "geometryRef": "section-a-alsos-veikou-goudi"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-line4",
+      "title": "Wikipedia: Line 4 (Athens Metro)",
+      "url": "https://en.wikipedia.org/wiki/Line_4_(Athens_Metro)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-el-line4",
+      "title": "Βικιπαίδεια: Γραμμή 4 (Μετρό Αθήνας)",
+      "url": "https://el.wikipedia.org/wiki/%CE%93%CF%81%CE%B1%CE%BC%CE%BC%CE%AE_4_(%CE%9C%CE%B5%CF%84%CF%81%CF%8C_%CE%91%CE%B8%CE%AE%CE%BD%CE%B1%CF%82)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "emetro-tender",
+      "title": "Elliniko Metro: Tendering, Line 4 Section A \"Alsos Veikou – Goudi\" facts sheet (budget €1,510,000,000.00, construction period 8 years)",
+      "url": "https://www.emetro.gr/?page_id=9298&lang=en",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "emetro-line4-overview",
+      "title": "Elliniko Metro: General description of Line 4 (Section A: Alsos Veikou – Goudi, 12.8 km long, with 15 stations)",
+      "url": "https://www.emetro.gr/?page_id=8633&lang=en",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "emetro-signing-2021",
+      "title": "Elliniko Metro: Υπεγράφη στις 22 Ιουνίου 2021 η σύμβαση έναρξης εργασιών για την κατασκευή της Γραμμής 4 (συμβατικό τίμημα περίπου 1,2 δισ. ευρώ συν ΦΠΑ, διάρκεια 8 χρόνια)",
+      "url": "https://www.emetro.gr/?p=17843",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-offers-2020",
+      "title": "Ypodomes.com: Η κοινοπραξία ΑΒΑΞ – Ghella – Alstom μειοδότησε για τη νέα Γραμμή 4 του Μετρό (19 October 2020)",
+      "url": "https://ypodomes.com/nea-grammi-4-metro-idou-o-meidotis-anoixan-oi-prosfores/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-signing-2021",
+      "title": "Ypodomes.com: Την Τρίτη 22 Ιουνίου υπογραφές για τη Γραμμή 4 του Μετρό της Αθήνας (\"1,158 ... ευρώ (ποσό χωρίς ΦΠΑ)\", 18 June 2021)",
+      "url": "https://ypodomes.com/ypografetai-i-kyria-symvasi-gia-ti-grammi-4-toy-metro-tis-athinas/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-deadline-2032",
+      "title": "Ypodomes.com: Μετρό Αθήνας: Για το 2032 μετατέθηκε η ολοκλήρωση της Γραμμής 4 (from 20/06/2029 to 03/09/2032, 2 April 2026)",
+      "url": "https://ypodomes.com/gia-to-2032-metatethike-i-oloklirosi-tis-grammis-4-toy-metro-athinas/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "kathimerini-delay-2026",
+      "title": "Kathimerini: Athens metro line 4 faces yet another delay (9 April 2026)",
+      "url": "https://www.ekathimerini.com/economy/1300526/athens-metro-line-4-faces-yet-another-delay/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "emetro-tbm-niki-2026",
+      "title": "Elliniko Metro: Γραμμή 4, ανακοίνωση για την αναστολή του TBM Νίκη από 08/05/26",
+      "url": "https://www.emetro.gr/?p=35799",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "eib-line4-2022",
+      "title": "European Investment Bank: New Athens metro line to ease commutes and cut emissions with €730 million EU bank loan (25 March 2022)",
+      "url": "https://www.eib.org/en/stories/new-athens-metro-line",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "Alstom: Alstom consortium selected for first section of Athens Metro Line 4 (5 November 2020)",
+      "url": "https://www.alstom.com/press-releases-news/2020/11/alstom-consortium-selected-first-section-athens-metro-line-4",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-09-28"
+    }
+  ],
+  "lastVerified": "2026-09-28"
+}

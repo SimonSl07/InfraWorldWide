@@ -2,11 +2,69 @@
   "note": "Canonical contractor identities for by-contractor rankings. src/lib/contractors.ts first normalizes a raw contractor string (cut a trailing em-dash scope note, strip a trailing parenthetical, fold case and diacritics to a slug) and then looks it up here. Entries are only needed where normalization alone would split or merge firms incorrectly; everything else resolves heuristically. An entry with `members` is a joint venture: a lot is credited to the JV *and* to each member. Aliases are matched against the raw string, the em-dash-cut string and the parenthetical-stripped string, in that order, so `Webuild (Astaldi)` resolves to Astaldi before the parenthetical is discarded.",
   "contractors": [
     {
+      "id": "aegean-motorway",
+      "name": "Aegean Motorway",
+      "aliases": [
+        "Aegean Motorway S.A.",
+        "Αυτοκινητόδρομος Αιγαίου"
+      ],
+      "note": "Concessionaire of the Maliakos – Kleidi section of the A1."
+    },
+    {
+      "id": "aegek",
+      "name": "AEGEK",
+      "aliases": [
+        "ΑΕΓΕΚ"
+      ]
+    },
+    {
+      "id": "aegek-impregilo-ansaldo-seli-ansaldobreda",
+      "name": "AEGEK – Impregilo – Ansaldo T.S.F. – SELI – AnsaldoBreda JV",
+      "members": [
+        "aegek",
+        "webuild",
+        "ansaldo-sts",
+        "seli",
+        "ansaldobreda"
+      ],
+      "note": "Original construction joint venture for the Thessaloniki metro base line. Aktor replaced AEGEK and SELI in it from 6 December 2017; the lot records that later line-up as Aktor ATE, not under this entry."
+    },
+    {
+      "id": "aegek-techniki-olympiaki-ekter-evropaiki-techniki",
+      "name": "AEGEK – Techniki Olympiaki – EKTER – Evropaiki Techniki JV",
+      "members": [
+        "aegek",
+        "techniki-olympiaki",
+        "ekter",
+        "evropaiki-techniki"
+      ]
+    },
+    {
       "id": "aktor",
       "name": "Aktor",
       "aliases": [
         "АКТОР АСД",
         "Aktor ATE"
+      ]
+    },
+    {
+      "id": "aktor-concessions",
+      "name": "Aktor Concessions",
+      "aliases": [
+        "AKTOR Concessions",
+        "Άκτωρ Παραχωρήσεις"
+      ],
+      "note": "Concession company, kept apart from the builder Aktor: it holds equity in concessionaires (Attiki Odos, Moreas) rather than building."
+    },
+    {
+      "id": "aktor-terna",
+      "name": "Aktor – Terna JV",
+      "aliases": [
+        "Aktor – Terna joint venture"
+      ],
+      "members": [
+        "aktor",
+        "terna"
       ]
     },
     {
@@ -24,6 +82,36 @@
       ]
     },
     {
+      "id": "ansaldo-sts",
+      "name": "Ansaldo STS",
+      "aliases": [
+        "Ansaldo T.S.F.",
+        "Ansaldo TSF",
+        "Ansaldo Trasporti Sistemi Ferroviari"
+      ],
+      "note": "Ansaldo Trasporti Sistemi Ferroviari became Ansaldo STS, which Hitachi later took over as Hitachi Rail STS."
+    },
+    {
+      "id": "ansaldobreda",
+      "name": "AnsaldoBreda",
+      "note": "Rolling-stock maker, later taken over by Hitachi as Hitachi Rail Italy. Kept apart from the signalling firm Ansaldo STS."
+    },
+    {
+      "id": "apion-kleos",
+      "name": "Apion Kleos Construction JV",
+      "aliases": [
+        "Apion Kleos",
+        "Κοινοπραξία Άπιον Κλέος"
+      ],
+      "members": [
+        "avax",
+        "aktor",
+        "terna",
+        "vinci-construction-grands-projets"
+      ],
+      "note": "Design-build joint venture for the Olympia Odos (Elefsina – Corinth – Patras – Pyrgos). Shares per the concessionaire: AVAX 35.695%, Aktor 35.695%, TERNA 28.600%, VINCI Construction Grands Projets 0.010%."
+    },
+    {
       "id": "arcada-company",
       "name": "Arcada Company",
       "aliases": [
@@ -38,6 +126,60 @@
         "Webuild (Astaldi)"
       ],
       "note": "Webuild acquired a majority stake in Astaldi in 2020; Astaldi continues as a subsidiary, so contracts awarded to Astaldi stay under Astaldi rather than folding into Webuild."
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "aliases": [
+        "Athena ATE",
+        "ΑΘΗΝΑ ΑΤΕ"
+      ]
+    },
+    {
+      "id": "attikat",
+      "name": "ATTIKAT",
+      "aliases": [
+        "ATTIKAT ATE",
+        "ΑΤΤΙΚΑΤ ΑΤΕ"
+      ]
+    },
+    {
+      "id": "attiki-odos",
+      "name": "Attiki Odos S.A.",
+      "aliases": [
+        "Αττική Οδός Α.Ε."
+      ],
+      "note": "Concessionaire of the Attiki Odos (A6, A62, A621). Shareholders per the operator: Aktor Concessions 65.75%, AVAX 24.19%, ETETH 10.02%, Egis Projects 0.04%."
+    },
+    {
+      "id": "attiki-odos-construction-jv",
+      "name": "Attiki Odos Construction JV",
+      "aliases": [
+        "Κοινοπραξία Αττική Οδός",
+        "Κ/Ξ Αττική Οδός"
+      ],
+      "note": "Construction joint venture for the Attiki Odos, led by Aktor. The operator names no other members, so it is not split and Aktor is not credited through it."
+    },
+    {
+      "id": "avax",
+      "name": "AVAX",
+      "aliases": [
+        "AVAX S.A.",
+        "J&P-Avax",
+        "J&P AVAX",
+        "ΑΒΑΞ"
+      ],
+      "note": "J&P-Avax is the firm's earlier name; contracts from before the rename appear under it."
+    },
+    {
+      "id": "avax-ghella-alstom",
+      "name": "AVAX – Ghella – Alstom Transport",
+      "members": [
+        "avax",
+        "ghella",
+        "alstom"
+      ],
+      "note": "Design-build joint venture for Athens metro Line 4, section A. Shares: AVAX 47%, Ghella 25%, Alstom 28%."
     },
     {
       "id": "bechtel",
@@ -100,6 +242,22 @@
       ]
     },
     {
+      "id": "diktaion-concessions",
+      "name": "Diktaion Concessions",
+      "note": "GEK TERNA's concession company for the Chania – Heraklion section of the Northern Crete Road (BOAK)."
+    },
+    {
+      "id": "dragados",
+      "name": "Dragados"
+    },
+    {
+      "id": "ekter",
+      "name": "EKTER",
+      "aliases": [
+        "ΕΚΤΕΡ"
+      ]
+    },
+    {
       "id": "enka",
       "name": "ENKA",
       "aliases": [
@@ -115,12 +273,75 @@
       ]
     },
     {
+      "id": "euroionia",
+      "name": "Euroionia JV",
+      "aliases": [
+        "Euroionia"
+      ],
+      "members": [
+        "terna",
+        "dragados",
+        "ferrovial"
+      ],
+      "note": "Design-build joint venture for the Ionia Odos (A5) under the Nea Odos concession."
+    },
+    {
+      "id": "evropaiki-techniki",
+      "name": "Evropaiki Techniki",
+      "aliases": [
+        "Ευρωπαϊκή Τεχνική"
+      ]
+    },
+    {
       "id": "fcc-construccion",
       "name": "FCC Construcción",
       "aliases": [
         "FCC Construction",
         "FCC Construcción SA",
         "FCC"
+      ]
+    },
+    {
+      "id": "ferrovial",
+      "name": "Ferrovial",
+      "aliases": [
+        "Ferrovial Agroman",
+        "Ferrovial Construcción"
+      ],
+      "note": "Ferrovial Agroman was the group's construction arm under that name."
+    },
+    {
+      "id": "gefyra",
+      "name": "Gefyra S.A.",
+      "aliases": [
+        "Gefyra SA",
+        "Γέφυρα Α.Ε."
+      ],
+      "note": "Concessionaire of the Rion–Antirion bridge, led by VINCI Concessions. Kept apart from the construction joint venture Kinopraxia Gefyra."
+    },
+    {
+      "id": "gek-terna",
+      "name": "GEK TERNA",
+      "aliases": [
+        "ΓΕΚ ΤΕΡΝΑ"
+      ],
+      "note": "Listed parent group of the builder TERNA. Kept apart from TERNA, as Astaldi is from Webuild: a contract a source gives to the group stays with the group."
+    },
+    {
+      "id": "gek-terna-aktor-concessions-intrakat",
+      "name": "GEK TERNA, AKTOR Concessions and INTRAKAT consortium",
+      "members": [
+        "gek-terna",
+        "aktor-concessions",
+        "intrakat"
+      ],
+      "note": "PPP consortium for the Hersonissos – Neapoli section of the Northern Crete Road (BOAK)."
+    },
+    {
+      "id": "ghella",
+      "name": "Ghella",
+      "aliases": [
+        "Ghella S.p.A."
       ]
     },
     {
@@ -140,11 +361,112 @@
       ]
     },
     {
+      "id": "intrakat",
+      "name": "INTRAKAT",
+      "aliases": [
+        "ΙΝΤΡΑΚΑΤ"
+      ],
+      "note": "Took over Aktor's construction business; later sources call the group AKTOR Group. Kept apart from Aktor because sources name the two separately on the same lot."
+    },
+    {
+      "id": "kentriki-odos",
+      "name": "Kentriki Odos",
+      "aliases": [
+        "Central Greece Motorway S.A.",
+        "Κεντρική Οδός",
+        "Αυτοκινητόδρομος Κεντρικής Ελλάδας Α.Ε. Παραχώρησης"
+      ],
+      "note": "Concessionaire of the Central Greece Motorway (E65)."
+    },
+    {
+      "id": "kinopraxia-gefyra",
+      "name": "Kinopraxia Gefyra",
+      "members": [
+        "vinci-construction-grands-projets",
+        "aktor",
+        "avax",
+        "athena",
+        "proodeftiki",
+        "pantechniki"
+      ],
+      "note": "Construction joint venture for the Rion–Antirion bridge. VINCI Construction Grands Projets held 53.00%, Aktor 15.48% and J&P-Avax 11.20%; the source table does not clearly assign the remaining shares among Athena, Proodeftiki and Pantechniki."
+    },
+    {
+      "id": "metka",
+      "name": "METKA",
+      "aliases": [
+        "ΜΕΤΚΑ"
+      ]
+    },
+    {
+      "id": "mochlos",
+      "name": "Mochlos",
+      "aliases": [
+        "ΜΟΧΛΟΣ"
+      ]
+    },
+    {
+      "id": "moreas",
+      "name": "Moreas S.A.",
+      "aliases": [
+        "Moreas",
+        "Μορέας Α.Ε."
+      ],
+      "note": "Concessionaire of the Moreas motorway (A7). Shareholders per the concessionaire: Aktor Concessions 71.67%, AVAX 15%, Intrakat 13.33%."
+    },
+    {
+      "id": "moreas-jv",
+      "name": "Moreas J/V",
+      "note": "Design-construction joint venture for the Moreas concession. The sources used do not name its members, so it is not split."
+    },
+    {
+      "id": "nea-egnatia-odos",
+      "name": "Nea Egnatia Odos",
+      "aliases": [
+        "New Egnatia Odos Concession",
+        "New Egnatia Odos",
+        "Νέα Εγνατία Οδός"
+      ],
+      "note": "Concessionaire of the Egnatia Odos and its perpendicular axes."
+    },
+    {
+      "id": "nea-odos",
+      "name": "Nea Odos",
+      "aliases": [
+        "Nea Odos S.A.",
+        "Νέα Οδός"
+      ],
+      "note": "Concessionaire of the Ionia Odos (A5), in the GEK TERNA group."
+    },
+    {
+      "id": "olympia-odos",
+      "name": "Olympia Odos S.A.",
+      "aliases": [
+        "Olympia Odos",
+        "Ολυμπία Οδός Α.Ε."
+      ],
+      "note": "Concessionaire of the Elefsina – Corinth – Patras – Pyrgos motorway."
+    },
+    {
+      "id": "pantechniki",
+      "name": "Pantechniki",
+      "aliases": [
+        "Παντεχνική"
+      ]
+    },
+    {
       "id": "porr",
       "name": "Porr",
       "aliases": [
         "Porr Bau",
         "Porr Construct"
+      ]
+    },
+    {
+      "id": "proodeftiki",
+      "name": "Proodeftiki",
+      "aliases": [
+        "Προοδευτική"
       ]
     },
     {
@@ -175,10 +497,48 @@
       ]
     },
     {
+      "id": "seli",
+      "name": "SELI",
+      "aliases": [
+        "S.E.L.I."
+      ]
+    },
+    {
       "id": "shandong-hi-speed",
       "name": "Shandong Hi-Speed Group Co., Ltd.",
       "aliases": [
         "Shandong High-Speed Group"
+      ]
+    },
+    {
+      "id": "techniki-olympiaki",
+      "name": "Techniki Olympiaki",
+      "aliases": [
+        "Τεχνική Ολυμπιακή"
+      ]
+    },
+    {
+      "id": "terga",
+      "name": "TERGA",
+      "aliases": [
+        "TERGA ATE"
+      ]
+    },
+    {
+      "id": "terna",
+      "name": "TERNA",
+      "aliases": [
+        "TERNA S.A.",
+        "ΤΕΡΝΑ"
+      ],
+      "note": "Construction company of the GEK TERNA group. The group has its own entry, gek-terna."
+    },
+    {
+      "id": "terna-alpine",
+      "name": "TERNA – ALPINE J/V",
+      "members": [
+        "terna",
+        "alpine-bau"
       ]
     },
     {
@@ -190,10 +550,15 @@
       ]
     },
     {
+      "id": "vinci-construction-grands-projets",
+      "name": "VINCI Construction Grands Projets"
+    },
+    {
       "id": "webuild",
       "name": "Webuild",
       "aliases": [
-        "Salini Impregilo"
+        "Salini Impregilo",
+        "Impregilo"
       ],
       "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020. Same legal entity, so the two names are merged."
     }

@@ -1,0 +1,744 @@
+{
+  "id": "gr-a7-moreas",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "A7 Moreas Motorway (Corinth – Tripoli – Kalamata) and A71 Lefktro – Sparti",
+    "ro": "Autostrada A7 Moreas (Corint – Tripoli – Kalamata) și A71 Lefktro – Sparti"
+  },
+  "description": {
+    "en": "Motorway in the Peloponnese from the A8 (Olympia Odos) near Corinth by way of Tripoli to Kalamata, with the A71 branch from Lefktro to Sparti. The existing 82 km Corinth – Tripoli road was upgraded, and the new sections south of Tripoli built, under a 30-year concession signed with Moreas S.A. on 31 January 2007 and running from 3 March 2008 to 3 March 2038. Paradeisia – Tsakona and the Tsakona arch bridge were built by the Greek state outside the concession. The last section opened on 23 December 2016. The concessionaire gives 159 km for Corinth – Kalamata and 46 km for the branch. Lots follow the opening stages; on concession-built lots, construction start 2008 is the project's start, not a date per section.",
+    "ro": "Autostradă în Peloponez, de la A8 (Olympia Odos) lângă Corint, prin Tripoli, până la Kalamata, cu ramura A71 de la Lefktro la Sparti. Drumul existent Corint – Tripoli, de 82 km, a fost modernizat, iar tronsoanele noi de la sud de Tripoli au fost construite, printr-o concesiune pe 30 de ani semnată cu Moreas S.A. la 31 ianuarie 2007, valabilă între 3 martie 2008 și 3 martie 2038. Paradeisia – Tsakona și podul în arc de la Tsakona au fost construite de statul elen, în afara concesiunii. Ultimul tronson s-a deschis la 23 decembrie 2016. Concesionarul indică 159 km pentru Corint – Kalamata și 46 km pentru ramură. Loturile urmează etapele de deschidere; la loturile construite prin concesiune, începerea lucrărilor în 2008 este începutul proiectului, nu o dată pe tronson."
+  },
+  "operator": "gr-ypome",
+  "lots": [
+    {
+      "id": "korinthos-tripoli-notia",
+      "name": {
+        "en": "Corinth (Moreas interchange, A8) – Tripoli South",
+        "ro": "Corint (nodul Moreas, A8) – Tripoli Sud"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1991"
+      },
+      "lengthKm": 82.5,
+      "profile": {
+        "works": "upgrade"
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Upgrade to motorway standard under the Moreas concession: second bore of the Artemisio tunnel, new twin tunnels at Sterna and Neochori, and upgrading of the existing Artemisio bore. Funding of the original road is not recorded here.",
+            "ro": "Modernizare la standard de autostradă prin concesiunea Moreas: al doilea tub al tunelului Artemisio, tuneluri gemene noi la Sterna și Neochori și modernizarea tubului existent Artemisio. Finanțarea drumului inițial nu este înregistrată aici."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        },
+        {
+          "name": "TERGA ATE",
+          "role": "builder"
+        },
+        {
+          "name": "ATTIKAT ATE",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened in 1991 as the New National Road Corinth – Tripoli, 82.5 km, through the Artemisio tunnel, in several stages and later upgrades during the 1990s (Greek Wikipedia). English Wikipedia gives construction 1984–1990 and formal inclusion in the road network in 1992. Other sources give 82.6 km (capital.gr, 2009) and 82 km (European Commission, 2014) for Corinth – Tripoli. TERGA built the Nestani – Tripoli section (km 0+000 to 18+672, under construction in October 1976, 420 million drachmas design budget) and ATTIKAT the Valanidia – Artemisio section near Nemea (Greek Wikipedia). Moreas J/V carried out the concession upgrade: the second Artemisio bore (about 1,400 m) opened on 12 August 2009, the Neochori tunnels in May – June 2010 and the Sterna tunnels in August 2010.",
+        "ro": "Deschis în 1991 ca Noul Drum Național Corint – Tripoli, 82,5 km, prin tunelul Artemisio, în mai multe etape, cu modernizări ulterioare în anii 1990 (Wikipedia în greacă). Wikipedia în engleză indică construcția în 1984–1990 și includerea oficială în rețeaua rutieră în 1992. Alte surse indică 82,6 km (capital.gr, 2009) și 82 km (Comisia Europeană, 2014) pentru Corint – Tripoli. TERGA a construit tronsonul Nestani – Tripoli (km 0+000 – 18+672, în construcție în octombrie 1976, buget de proiectare de 420 de milioane de drahme), iar ATTIKAT tronsonul Valanidia – Artemisio de lângă Nemea (Wikipedia în greacă). Moreas J/V a executat modernizarea din concesiune: al doilea tub Artemisio (circa 1.400 m) s-a deschis la 12 august 2009, tunelurile Neochori în mai – iunie 2010, iar tunelurile Sterna în august 2010."
+      },
+      "sourceRefs": [
+        "wikipedia-el-a7",
+        "wikipedia-en-a7",
+        "capital-2009-08-12",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "korinthos-tripoli-notia"
+    },
+    {
+      "id": "tripoli-notia-athinaio",
+      "name": {
+        "en": "Tripoli South – Athinaio",
+        "ro": "Tripoli Sud – Athinaio"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-01-31",
+        "constructionStart": "2008",
+        "opened": "2010-11-03"
+      },
+      "lengthKm": 12.5,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing plan for the whole project (European Commission, 2014): State grant EUR 342 million plus the toll revenue of the Corinth – Tripoli section, concessionaire EUR 105 million, bank loans EUR 524 million. The concessionaire states that about 30% of the construction budget comes from public and community funds.",
+            "ro": "Planul de finanțare al concesiunii pentru întregul proiect (Comisia Europeană, 2014): grant de stat de 342 de milioane EUR plus veniturile din taxare ale tronsonului Corint – Tripoli, concesionarul 105 milioane EUR, împrumuturi bancare 524 de milioane EUR. Concesionarul arată că circa 30% din bugetul de construcție provine din fonduri publice și comunitare."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2007–2013, Operational Programme Accessibility Improvement, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul de Coeziune 2007–2013, Programul Operațional Îmbunătățirea Accesibilității, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund 2000–2006, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul European de Dezvoltare Regională 2000–2006, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan of EUR 150 million within the bank loans of the original financing plan for the whole project. Lenders cut their construction loans by EUR 40 million in the 2014 reset.",
+            "ro": "Împrumut BEI de 150 de milioane EUR, parte din împrumuturile bancare ale planului inițial de finanțare pentru întregul proiect. Creditorii au redus împrumuturile pentru construcție cu 40 de milioane EUR la restructurarea din 2014."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Includes the Kalogeriko tunnel. Date and length from Greek Wikipedia, which cites energia.gr (5 November 2010); the article itself could not be retrieved.",
+        "ro": "Include tunelul Kalogeriko. Data și lungimea provin din Wikipedia în greacă, care citează energia.gr (5 noiembrie 2010); articolul nu a putut fi consultat."
+      },
+      "sourceRefs": [
+        "wikipedia-el-a7",
+        "capital-2009-08-12",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "tripoli-notia-athinaio"
+    },
+    {
+      "id": "athinaio-lefktro",
+      "name": {
+        "en": "Athinaio – Lefktro",
+        "ro": "Athinaio – Lefktro"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-01-31",
+        "constructionStart": "2008",
+        "opened": "2010-03-30"
+      },
+      "lengthKm": 15,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing plan for the whole project (European Commission, 2014): State grant EUR 342 million plus the toll revenue of the Corinth – Tripoli section, concessionaire EUR 105 million, bank loans EUR 524 million. The concessionaire states that about 30% of the construction budget comes from public and community funds.",
+            "ro": "Planul de finanțare al concesiunii pentru întregul proiect (Comisia Europeană, 2014): grant de stat de 342 de milioane EUR plus veniturile din taxare ale tronsonului Corint – Tripoli, concesionarul 105 milioane EUR, împrumuturi bancare 524 de milioane EUR. Concesionarul arată că circa 30% din bugetul de construcție provine din fonduri publice și comunitare."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2007–2013, Operational Programme Accessibility Improvement, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul de Coeziune 2007–2013, Programul Operațional Îmbunătățirea Accesibilității, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund 2000–2006, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul European de Dezvoltare Regională 2000–2006, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan of EUR 150 million within the bank loans of the original financing plan for the whole project. Lenders cut their construction loans by EUR 40 million in the 2014 reset.",
+            "ro": "Împrumut BEI de 150 de milioane EUR, parte din împrumuturile bancare ale planului inițial de finanțare pentru întregul proiect. Creditorii au redus împrumuturile pentru construcție cu 40 de milioane EUR la restructurarea din 2014."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Bypasses the bends at Megalopoli. Includes the twin Rapsommatis tunnels (1,360 m each, as reported at the opening) and a 244 m bridge over the Alfeios. Length 15 km as reported at the opening (kpylos, 31 March 2010); Greek Wikipedia gives 14 km.",
+        "ro": "Ocolește serpentinele de la Megalopoli. Include tunelurile gemene Rapsommatis (câte 1.360 m, conform relatărilor de la deschidere) și un pod de 244 m peste Alfeios. Lungimea de 15 km este cea raportată la deschidere (kpylos, 31 martie 2010); Wikipedia în greacă indică 14 km."
+      },
+      "sourceRefs": [
+        "kpylos-2010-03-31",
+        "wikipedia-el-a7",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "athinaio-lefktro"
+    },
+    {
+      "id": "lefktro-paradeisia",
+      "name": {
+        "en": "Lefktro – Paradeisia",
+        "ro": "Lefktro – Paradeisia"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-01-31",
+        "constructionStart": "2008",
+        "opened": "2010-12-08"
+      },
+      "lengthKm": 5,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing plan for the whole project (European Commission, 2014): State grant EUR 342 million plus the toll revenue of the Corinth – Tripoli section, concessionaire EUR 105 million, bank loans EUR 524 million. The concessionaire states that about 30% of the construction budget comes from public and community funds.",
+            "ro": "Planul de finanțare al concesiunii pentru întregul proiect (Comisia Europeană, 2014): grant de stat de 342 de milioane EUR plus veniturile din taxare ale tronsonului Corint – Tripoli, concesionarul 105 milioane EUR, împrumuturi bancare 524 de milioane EUR. Concesionarul arată că circa 30% din bugetul de construcție provine din fonduri publice și comunitare."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2007–2013, Operational Programme Accessibility Improvement, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul de Coeziune 2007–2013, Programul Operațional Îmbunătățirea Accesibilității, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund 2000–2006, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul European de Dezvoltare Regională 2000–2006, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan of EUR 150 million within the bank loans of the original financing plan for the whole project. Lenders cut their construction loans by EUR 40 million in the 2014 reset.",
+            "ro": "Împrumut BEI de 150 de milioane EUR, parte din împrumuturile bancare ale planului inițial de finanțare pentru întregul proiect. Creditorii au redus împrumuturile pentru construcție cu 40 de milioane EUR la restructurarea din 2014."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Date and length from Greek Wikipedia, which cites arcadiaportal.gr (8 December 2010); the article itself could not be retrieved.",
+        "ro": "Data și lungimea provin din Wikipedia în greacă, care citează arcadiaportal.gr (8 decembrie 2010); articolul nu a putut fi consultat."
+      },
+      "sourceRefs": [
+        "wikipedia-el-a7",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "lefktro-paradeisia"
+    },
+    {
+      "id": "paradeisia-tsakona",
+      "name": {
+        "en": "Paradeisia – Tsakona",
+        "ro": "Paradeisia – Tsakona"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1990",
+        "opened": "2012-12-22"
+      },
+      "lengthKm": 11.5,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Built by the Peloponnese Region; the landslide repair and reconstruction were designed and funded by the Ministry of Infrastructure, outside the concession.",
+            "ro": "Construit de Regiunea Peloponez; remedierea alunecării de teren și reconstrucția au fost proiectate și finanțate de Ministerul Infrastructurii, în afara concesiunii."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "TERNA – ALPINE J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Construction by the Peloponnese Region began at the start of 1990 and the road first opened in spring 2000. The Tsakona landslide of February 2003 (about 6 million m³) closed it, and traffic used the old Megalopoli – Kalamata road until the rebuilt section opened on 22 December 2012 with a short diversion at the site of the Tsakona arch bridge, which is a separate lot. The rebuild includes a 500 m viaduct, two 160 m bridges and two cut-and-cover structures. Length 11.5 km as reported at the opening (2012) and by the ministry (2016); Greek Wikipedia gives 11 km, excluding the Tsakona bridge. The deputy minister thanked the TERNA – ALPINE joint venture at the opening.",
+        "ro": "Construcția de către Regiunea Peloponez a început la începutul lui 1990, iar drumul s-a deschis prima dată în primăvara lui 2000. Alunecarea de teren de la Tsakona din februarie 2003 (circa 6 milioane m³) l-a închis, iar traficul a folosit vechiul drum Megalopoli – Kalamata până la deschiderea tronsonului reconstruit, la 22 decembrie 2012, cu o scurtă deviere în dreptul podului în arc de la Tsakona, care este un lot separat. Reconstrucția include un viaduct de 500 m, două poduri de câte 160 m și două structuri tip cut-and-cover. Lungime de 11,5 km conform relatărilor de la deschidere (2012) și ministerului (2016); Wikipedia în greacă indică 11 km, fără podul Tsakona. Ministrul adjunct a mulțumit asocierii TERNA – ALPINE la deschidere."
+      },
+      "sourceRefs": [
+        "tanea-2012-12-22",
+        "capital-2016-01-27",
+        "kpylos-2010-03-31",
+        "wikipedia-el-a7"
+      ],
+      "geometryRef": "paradeisia-tsakona"
+    },
+    {
+      "id": "tsakona-bridge",
+      "name": {
+        "en": "Tsakona arch bridge (T4)",
+        "ro": "Podul în arc Tsakona (T4)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-01-27"
+      },
+      "lengthKm": 0.39,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Designed and funded by the Ministry of Infrastructure, outside the concession.",
+            "ro": "Proiectat și finanțat de Ministerul Infrastructurii, în afara concesiunii."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GEK TERNA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Composite arch bridge over the Tsakona landslide on the Messinia – Arcadia boundary, inside the Paradeisia – Tsakona section. 390 m at the opening; the ministry's description gives 400 m. Reported budget EUR 22.85 million; whether this is the contract value or includes VAT is not stated.",
+        "ro": "Pod compozit în arc peste alunecarea de teren de la Tsakona, la limita dintre Messinia și Arcadia, în interiorul tronsonului Paradeisia – Tsakona. 390 m la deschidere; descrierea ministerului indică 400 m. Buget raportat de 22,85 milioane EUR; nu se precizează dacă este valoarea contractului sau dacă include TVA."
+      },
+      "sourceRefs": [
+        "capital-2016-01-27",
+        "tanea-2012-12-22",
+        "wikipedia-el-a7"
+      ],
+      "geometryRef": "tsakona-bridge"
+    },
+    {
+      "id": "tsakona-thouria",
+      "name": {
+        "en": "Tsakona – Thouria",
+        "ro": "Tsakona – Thouria"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-01-31",
+        "constructionStart": "2008",
+        "opened": "2012-07-23"
+      },
+      "lengthKm": 22,
+      "profile": {
+        "lanes": 4
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing plan for the whole project (European Commission, 2014): State grant EUR 342 million plus the toll revenue of the Corinth – Tripoli section, concessionaire EUR 105 million, bank loans EUR 524 million. The concessionaire states that about 30% of the construction budget comes from public and community funds.",
+            "ro": "Planul de finanțare al concesiunii pentru întregul proiect (Comisia Europeană, 2014): grant de stat de 342 de milioane EUR plus veniturile din taxare ale tronsonului Corint – Tripoli, concesionarul 105 milioane EUR, împrumuturi bancare 524 de milioane EUR. Concesionarul arată că circa 30% din bugetul de construcție provine din fonduri publice și comunitare."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2007–2013, Operational Programme Accessibility Improvement, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul de Coeziune 2007–2013, Programul Operațional Îmbunătățirea Accesibilității, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund 2000–2006, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul European de Dezvoltare Regională 2000–2006, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan of EUR 150 million within the bank loans of the original financing plan for the whole project. Lenders cut their construction loans by EUR 40 million in the 2014 reset.",
+            "ro": "Împrumut BEI de 150 de milioane EUR, parte din împrumuturile bancare ale planului inițial de finanțare pentru întregul proiect. Creditorii au redus împrumuturile pentru construcție cu 40 de milioane EUR la restructurarea din 2014."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "About 22 km with two lanes plus an emergency lane per direction, a 250 m cut-and-cover between Skala and Tsoukaleika, a 200 m viaduct at Skala and three interchanges. The short stretch from Tsakona to the Kyparissia interchange opened with Paradeisia – Tsakona on 22 December 2012.",
+        "ro": "Circa 22 km, cu două benzi plus bandă de urgență pe sens, un tunel cut-and-cover de 250 m între Skala și Tsoukaleika, un viaduct de 200 m la Skala și trei noduri rutiere. Porțiunea scurtă de la Tsakona la nodul Kyparissia s-a deschis împreună cu Paradeisia – Tsakona, la 22 decembrie 2012."
+      },
+      "sourceRefs": [
+        "newsbeast-2012-07-23",
+        "tanea-2012-12-22",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "tsakona-thouria"
+    },
+    {
+      "id": "thouria-kalamata",
+      "name": {
+        "en": "Thouria/Messini – Kalamata",
+        "ro": "Thouria/Messini – Kalamata"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-01-31",
+        "constructionStart": "2008",
+        "opened": "2016-11-19"
+      },
+      "lengthKm": 7.5,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing plan for the whole project (European Commission, 2014): State grant EUR 342 million plus the toll revenue of the Corinth – Tripoli section, concessionaire EUR 105 million, bank loans EUR 524 million. The concessionaire states that about 30% of the construction budget comes from public and community funds.",
+            "ro": "Planul de finanțare al concesiunii pentru întregul proiect (Comisia Europeană, 2014): grant de stat de 342 de milioane EUR plus veniturile din taxare ale tronsonului Corint – Tripoli, concesionarul 105 milioane EUR, împrumuturi bancare 524 de milioane EUR. Concesionarul arată că circa 30% din bugetul de construcție provine din fonduri publice și comunitare."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2007–2013, Operational Programme Accessibility Improvement, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul de Coeziune 2007–2013, Programul Operațional Îmbunătățirea Accesibilității, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund 2000–2006, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul European de Dezvoltare Regională 2000–2006, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan of EUR 150 million within the bank loans of the original financing plan for the whole project. Lenders cut their construction loans by EUR 40 million in the 2014 reset.",
+            "ro": "Împrumut BEI de 150 de milioane EUR, parte din împrumuturile bancare ale planului inițial de finanțare pentru întregul proiect. Creditorii au redus împrumuturile pentru construcție cu 40 de milioane EUR la restructurarea din 2014."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First part of the Kalamata perimeter road, from the Thouria/Messini interchange to the Kalamata interchange. The whole perimeter road is given as 11 km (2016) or 11.5 km (2012).",
+        "ro": "Prima parte a șoselei de centură a orașului Kalamata, de la nodul Thouria/Messini la nodul Kalamata. Întreaga centură este indicată ca având 11 km (2016) sau 11,5 km (2012)."
+      },
+      "sourceRefs": [
+        "sportfm-2016-11-22",
+        "metaforespress-2016-12-23",
+        "newsbeast-2012-07-23",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "thouria-kalamata"
+    },
+    {
+      "id": "kalamata-sparti-roundabout",
+      "name": {
+        "en": "Kalamata interchange – Sparti roundabout",
+        "ro": "Nodul Kalamata – sensul giratoriu Sparti"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-01-31",
+        "constructionStart": "2008",
+        "opened": "2016-12-23"
+      },
+      "lengthKm": 3,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing plan for the whole project (European Commission, 2014): State grant EUR 342 million plus the toll revenue of the Corinth – Tripoli section, concessionaire EUR 105 million, bank loans EUR 524 million. The concessionaire states that about 30% of the construction budget comes from public and community funds.",
+            "ro": "Planul de finanțare al concesiunii pentru întregul proiect (Comisia Europeană, 2014): grant de stat de 342 de milioane EUR plus veniturile din taxare ale tronsonului Corint – Tripoli, concesionarul 105 milioane EUR, împrumuturi bancare 524 de milioane EUR. Concesionarul arată că circa 30% din bugetul de construcție provine din fonduri publice și comunitare."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2007–2013, Operational Programme Accessibility Improvement, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul de Coeziune 2007–2013, Programul Operațional Îmbunătățirea Accesibilității, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund 2000–2006, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul European de Dezvoltare Regională 2000–2006, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan of EUR 150 million within the bank loans of the original financing plan for the whole project. Lenders cut their construction loans by EUR 40 million in the 2014 reset.",
+            "ro": "Împrumut BEI de 150 de milioane EUR, parte din împrumuturile bancare ale planului inițial de finanțare pentru întregul proiect. Creditorii au redus împrumuturile pentru construcție cu 40 de milioane EUR la restructurarea din 2014."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Last 3 km of the Kalamata perimeter road, opened by the Prime Minister on 23 December 2016, completing the motorway. The source does not name the endpoints; they are taken as the Kalamata interchange, where the section opened on 19 November 2016 ends, and the Sparti roundabout at the end of the motorway, with the 360 m Nedon bridge between them.",
+        "ro": "Ultimii 3 km ai centurii orașului Kalamata, deschiși de prim-ministru la 23 decembrie 2016, odată cu finalizarea autostrăzii. Sursa nu numește capetele; ele sunt considerate nodul Kalamata, unde se termină tronsonul deschis la 19 noiembrie 2016, și sensul giratoriu Sparti de la capătul autostrăzii, cu podul Nedon de 360 m între ele."
+      },
+      "sourceRefs": [
+        "metaforespress-2016-12-23",
+        "wikipedia-el-a7",
+        "newsbeast-2012-07-23",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "kalamata-sparti-roundabout"
+    },
+    {
+      "id": "lefktro-sparti",
+      "name": {
+        "en": "A71 Lefktro – Sparti",
+        "ro": "A71 Lefktro – Sparti"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-01-31",
+        "constructionStart": "2008",
+        "opened": "2016-04-18"
+      },
+      "lengthKm": 46,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Concession financing plan for the whole project (European Commission, 2014): State grant EUR 342 million plus the toll revenue of the Corinth – Tripoli section, concessionaire EUR 105 million, bank loans EUR 524 million. The concessionaire states that about 30% of the construction budget comes from public and community funds.",
+            "ro": "Planul de finanțare al concesiunii pentru întregul proiect (Comisia Europeană, 2014): grant de stat de 342 de milioane EUR plus veniturile din taxare ale tronsonului Corint – Tripoli, concesionarul 105 milioane EUR, împrumuturi bancare 524 de milioane EUR. Concesionarul arată că circa 30% din bugetul de construcție provine din fonduri publice și comunitare."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2007–2013, Operational Programme Accessibility Improvement, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul de Coeziune 2007–2013, Programul Operațional Îmbunătățirea Accesibilității, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund 2000–2006, as shown in the concessionaire's funding notice for the whole project.",
+            "ro": "Fondul European de Dezvoltare Regională 2000–2006, conform mențiunii de finanțare a concesionarului pentru întregul proiect."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "EIB loan of EUR 150 million within the bank loans of the original financing plan for the whole project. Lenders cut their construction loans by EUR 40 million in the 2014 reset.",
+            "ro": "Împrumut BEI de 150 de milioane EUR, parte din împrumuturile bancare ale planului inițial de finanțare pentru întregul proiect. Creditorii au redus împrumuturile pentru construcție cu 40 de milioane EUR la restructurarea din 2014."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Moreas S.A.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Moreas J/V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Branch from the Lefktro interchange on the A7 near Megalopoli to an interchange at Sparti, with two lanes per direction and no hard shoulder, interchanges at Longanikos and Pellana, and two 315 m bridges over the Evrotas and a 275 m bridge over the Voutikiotis. Opened two months before the contractual completion deadline. Length 46 km per the concessionaire and ypodomes.gr; the ministry and the European Commission (2014) give 47 km. English Wikipedia also gives 46 km, and its junction list ends at km 45.41.",
+        "ro": "Ramură de la nodul Lefktro de pe A7, lângă Megalopoli, până la un nod la Sparti, cu două benzi pe sens fără bandă de urgență, noduri la Longanikos și Pellana, două poduri de câte 315 m peste Evrotas și un pod de 275 m peste Voutikiotis. Deschisă cu două luni înainte de termenul contractual de finalizare. Lungime de 46 km conform concesionarului și ypodomes.gr; ministerul și Comisia Europeană (2014) indică 47 km. Wikipedia în engleză indică tot 46 km, iar lista sa de noduri se termină la km 45,41."
+      },
+      "sourceRefs": [
+        "ypodomes-2016-04-18",
+        "taxydromos-2016-04-18",
+        "moreas-project",
+        "wikipedia-en-a71",
+        "ec-sa39224",
+        "moreas-company"
+      ],
+      "geometryRef": "lefktro-sparti"
+    }
+  ],
+  "cost": {
+    "amount": 844,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Total construction cost of the concession (upgrade of Corinth – Tripoli, new Tripoli – Kalamata and Lefktro – Sparti) as reported at completion (metaforespress, 23 December 2016). The state-built Paradeisia – Tsakona section and Tsakona bridge were outside the concession. The concessionaire gives the construction budget as about EUR 1 billion. Price year and VAT treatment not stated."
+  },
+  "sources": [
+    {
+      "id": "wikipedia-en-a7",
+      "title": "Wikipedia: A7 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A7_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-en-a71",
+      "title": "Wikipedia: A71 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A71_motorway_(Greece)",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "wikipedia-el-a7",
+      "title": "Greek Wikipedia: Αυτοκινητόδρομος Κεντρικής Πελοποννήσου",
+      "url": "https://el.wikipedia.org/wiki/Αυτοκινητόδρομος_Κεντρικής_Πελοποννήσου",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "moreas-project",
+      "title": "Moreas S.A.: The project and its construction",
+      "url": "https://www.moreas.com.gr/the-project?lang=en",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "moreas-company",
+      "title": "Moreas S.A.: The Company (entities diagram: Moreas J/V design-construction; EU Cohesion Fund 2007–2013 and ERDF 2000–2006 funding notice)",
+      "url": "https://www.moreas.com.gr/i-etaireia?lang=en",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ec-sa39224",
+      "title": "European Commission: State aid SA.39224 (2014/N), Greece: Reset of Greek Motorway concession projects, Moreas Motorway (27 October 2014)",
+      "url": "https://ec.europa.eu/competition/state_aid/cases/253892/253892_1604696_118_2.pdf",
+      "retrievedOn": "2026-09-28",
+      "archiveUrl": "https://web.archive.org/web/20191128210429/https://ec.europa.eu/competition/state_aid/cases/253892/253892_1604696_118_2.pdf"
+    },
+    {
+      "id": "capital-2009-08-12",
+      "title": "Capital.gr: Στην κυκλοφορία η σήραγγα Αρτεμισίου (12 August 2009)",
+      "url": "https://www.capital.gr/oikonomia/793564/stin-kukloforia-i-siragga-artemisiou/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "kpylos-2010-03-31",
+      "title": "Pylos blog: Παρελθόν αποτελούν οι στροφές της Μεγαλόπολης (31 March 2010)",
+      "url": "https://kpylos.blogspot.com/2010/03/blog-post_3042.html",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "newsbeast-2012-07-23",
+      "title": "Newsbeast: Παραδόθηκε τμήμα του αυτοκινητόδρομου Τρίπολη-Καλαμάτα (23 July 2012)",
+      "url": "https://www.newsbeast.gr/greece/arthro/387810/paradothike-tmima-tou-autokinitodromou-tripoli-kalamata",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "tanea-2012-12-22",
+      "title": "Ta Nea: Δόθηκε στην κυκλοφορία το τμήμα της ΕΟ Τρίπολης-Καλαμάτας στην Τσακώνα (22 December 2012)",
+      "url": "https://www.tanea.gr/2012/12/22/greece/dothike-stin-kykloforia-to-tmima-tis-eo-tripolis-kalamatas-stin-tsakwna/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "capital-2016-01-27",
+      "title": "Capital.gr: Παραδόθηκε στην κυκλοφορία η τοξωτή γέφυρα Τσακώνας (27 January 2016)",
+      "url": "https://www.capital.gr/epixeiriseis/3099198/paradothike-stin-kukloforia-i-toxoti-gefura-tsakonas/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ypodomes-2016-04-18",
+      "title": "Ypodomes.com: Παραδόθηκε στην κυκλοφορία o αυτοκινητόδρομος Λεύκτρο-Σπάρτη (18 April 2016)",
+      "url": "http://www.ypodomes.com/index.php/autokinitodromoi/uperastikoi/autokinitodromos-moreas/item/34540-paradothike-stin-kykloforia-o-aftokinitodromos-leyktro-sparti",
+      "retrievedOn": "2026-09-28",
+      "archiveUrl": "https://web.archive.org/web/20160419200605/http://www.ypodomes.com/index.php/autokinitodromoi/uperastikoi/autokinitodromos-moreas/item/34540-paradothike-stin-kykloforia-o-aftokinitodromos-leyktro-sparti"
+    },
+    {
+      "id": "taxydromos-2016-04-18",
+      "title": "Taxydromos: Σε δύο ώρες η διαδρομή Αθήνα – Σπάρτη: Παραδόθηκε ο αυτοκινητόδρομος (18 April 2016)",
+      "url": "https://www.taxydromos.gr/ellada/24434/se-dyo-ores-i-diadromi-athina-sparti-paradothike-o-aytokinitodromos/",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "sportfm-2016-11-22",
+      "title": "Sport-FM: Σε κυκλοφορία το νέο τμήμα Θουρία – Καλαμάτα (22 November 2016)",
+      "url": "https://www.sport-fm.gr/article/se-kukloforia-to-neo-tmima-thouria-%E2%80%93-kalamata/3243785",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "metaforespress-2016-12-23",
+      "title": "Metaforespress: Παραδίδεται κατά 100% ο πρώτος αυτοκινητόδρομος, ο «Μορέας» (23 December 2016)",
+      "url": "https://www.metaforespress.gr/autokinitodromoi/%CF%80%CE%B1%CF%81%CE%B1%CE%B4%CE%AF%CE%B4%CE%B5%CF%84%CE%B1%CE%B9-%CE%BA%CE%B1%CF%84%CE%AC-100-%CE%BF-%CF%80%CF%81%CF%8E%CF%84%CE%BF%CF%82-%CE%B1%CF%85%CF%84%CE%BF%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CF%8C/",
+      "retrievedOn": "2026-09-28",
+      "archiveUrl": "https://web.archive.org/web/20190826103741/https://www.metaforespress.gr/autokinitodromoi/%CF%80%CE%B1%CF%81%CE%B1%CE%B4%CE%AF%CE%B4%CE%B5%CF%84%CE%B1%CE%B9-%CE%BA%CE%B1%CF%84%CE%AC-100-%CE%BF-%CF%80%CF%81%CF%8E%CF%84%CE%BF%CF%82-%CE%B1%CF%85%CF%84%CE%BF%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CF%8C/"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-09-28"
+    }
+  ],
+  "lastVerified": "2026-09-28"
+}

@@ -75,6 +75,12 @@ describe("contractorSlug", () => {
     expect(contractorSlug("Ђорђевић Градња")).toBe("dordevic-gradnja");
     expect(contractorSlug("Путеви Љубовија")).toBe("putevi-ljubovija");
   });
+
+  it("romanises Greek instead of discarding it", () => {
+    expect(contractorSlug("ΑΚΤΩΡ Α.Τ.Ε.")).toBe("aktor-a-t-e");
+    expect(contractorSlug("ΤΕΡΝΑ")).toBe(contractorSlug("Terna"));
+    expect(contractorSlug("Μυτιληναίος")).toBe("mytilinaios");
+  });
 });
 
 describe("stripScopeNote", () => {
