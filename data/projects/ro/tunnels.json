@@ -209,11 +209,18 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Mapa – Cengiz",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "On A1 Pitești–Sibiu lot 2, Boița–Cornet (Mapa–Cengiz); OpenStreetMap tags opening_date=2031 on this lot"
       },
       "sourceRefs": [
-        "openstreetmap"
+        "openstreetmap",
+        "economica-a1-s2-2025-10"
       ],
       "partOf": "ro-a1",
       "geometryRef": "caineni"
@@ -245,11 +252,18 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Mapa – Cengiz",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Twin bores (Lazaret 1 and 2) on A1 Pitești–Sibiu lot 2, Boița–Cornet; OpenStreetMap tags opening_date=2031"
       },
       "sourceRefs": [
-        "openstreetmap"
+        "openstreetmap",
+        "agerpres-robesti-2026-02"
       ],
       "partOf": "ro-a1",
       "geometryRef": "lazaret"
@@ -411,12 +425,19 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "SA&PE Construct – Euro-Asfalt – Tehnostrade – Spedition UMB",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "On the A8 Ditrău–Moțca mountain section (SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB), crossing the Eastern Carpathians"
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a8-rom-nia",
-        "hotnews-a8-2b-bids-2025-03"
+        "hotnews-a8-2b-bids-2025-03",
+        "monitorulderoman-a8-2b-contract"
       ],
       "partOf": "ro-a8",
       "geometryRef": "petru-voda"
@@ -429,7 +450,8 @@
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2023-09"
+        "constructionStart": "2023-09",
+        "expectedOpening": "2030"
       },
       "lengthKm": 0.376,
       "profile": {
@@ -442,6 +464,12 @@
             "en": "SAFE programme (EU)",
             "ro": "Programul SAFE (UE)"
           }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "SA&PE Construct – Tehnostrade – Spedition UMB – Euro-Asfalt",
+          "role": "builder"
         }
       ],
       "note": {
@@ -542,6 +570,27 @@
       "title": "HotNews.ro: Cel mai scump tronson din Autostrada Unirii: UMB și o asociere din Turcia au depus oferte (2025-03-05)",
       "url": "https://hotnews.ro/cel-mai-scump-tronson-din-autostrada-unirii-umb-si-o-asociere-din-turcia-au-depus-oferte-pentru-autostrada-de-44-de-milioane-de-euro-pe-kilometru-1917233",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-a1-s2-2025-10",
+      "title": "Economica.net: VIDEO Autostrada A1 Sibiu – Pitești: Au început lucrările propriu-zise la tunelul Robești, primul din secțiunea montană Boița – Cornetu (2025-10-08)",
+      "url": "https://www.economica.net/autostrada-a1-sibiu-pitesti-tunel-5_877973.html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Economica.net"
+    },
+    {
+      "id": "agerpres-robesti-2026-02",
+      "title": "AGERPRES: REPORTAJ/Vâlcea: Tunelul Robești, primul realizat prin dinamitare de pe segmentele de autostradă care trec prin județ (2026-02-07)",
+      "url": "https://agerpres.ro/2026/02/07/reportaj-valcea-tunelul-robesti---primul-realizat-prin-dinamitare-de-pe-segmentele-de-autostrada-car--1525819",
+      "retrievedOn": "2026-09-28",
+      "publisher": "AGERPRES"
+    },
+    {
+      "id": "monitorulderoman-a8-2b-contract",
+      "title": "Monitorul de Roman: Încă un pas pentru A8, contract semnat pentru lotul 2B Grințieș-Pipirig",
+      "url": "https://www.monitorulderoman.ro/inca-un-pas-pentru-a8-contract-semnat-pentru-lotul-2b-grinties-pipirig/",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Monitorul de Roman"
     }
   ]
 }

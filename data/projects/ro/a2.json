@@ -208,6 +208,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2003-12-09",
+        "constructionStart": "2004",
         "opened": "2007-05-01"
       },
       "lengthKm": 36.8,
@@ -269,7 +270,8 @@
       "sourceRefs": [
         "businesscover-ro-bucharest-fundulea",
         "wikipedia-a2-motorway-romania",
-        "jurnalul-autostrada-soarelui-2009"
+        "jurnalul-autostrada-soarelui-2009",
+        "hotnews-drajna-fetesti-2007"
       ],
       "geometryRef": "drajna-fetesti"
     },
@@ -290,11 +292,23 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "IPTANA SA",
+          "role": "designer"
+        },
+        {
+          "name": "Astaldi / Max Bögl / CCCF (JV) (rehabilitation)",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Oldest section: the Cernavodă bridge complex over the Danube, opened 21 November 1987; closed September 2006 for complete rebuilding and reopened 2007"
       },
       "sourceRefs": [
-        "wikipedia-a2-motorway-romania"
+        "wikipedia-a2-motorway-romania",
+        "businesscover-ro-bucharest-fundulea",
+        "cnadnr-ispa-sections-4-5-2013"
       ],
       "geometryRef": "fetesti-cernavoda"
     },
@@ -306,6 +320,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2009-03",
         "constructionStart": "2009",
         "opened": "2012-07-19"
       },
@@ -379,7 +394,8 @@
         "mediafax-ro-cernavoda-medgidia",
         "wikipedia-ro-autostrada-a2-rom-nia-costuri",
         "cnadnr-cernavoda-constanta-2013",
-        "hotnews-cernavoda-medgidia-2011"
+        "hotnews-cernavoda-medgidia-2011",
+        "hotnews-cernavoda-medgidia-colas-2011"
       ],
       "geometryRef": "cernavoda-medgidia"
     },
@@ -598,6 +614,28 @@
       "title": "Newsweek România: Astaldi despăgubită cu 265 milioane de lei",
       "url": "https://newsweek.ro/economie/astaldi-despagubita-cu-265-milioane-de-lei",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-cernavoda-medgidia-colas-2011",
+      "title": "HotNews: CNADNR a lăsat tronsonul de autostradă Cernavodă-Medgidia fără constructor (2011-04-11)",
+      "url": "https://economie.hotnews.ro/stiri-companii-8492324-cnadnr-reziliat-contractul-firma-colas-care-ocupa-constructia-tronsonului-cernavoda-medgidia.htm",
+      "archiveUrl": "https://web.archive.org/web/20110412202319/https://economie.hotnews.ro/stiri-companii-8492324-cnadnr-reziliat-contractul-firma-colas-care-ocupa-constructia-tronsonului-cernavoda-medgidia.htm",
+      "publisher": "HotNews.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "hotnews-drajna-fetesti-2007",
+      "title": "HotNews: Tronsonul Drajna-Fetesti al Autostrazii Soarelui, finalizat de 1 Mai (2007-04-30)",
+      "url": "https://www.hotnews.ro/stiri-presa_regionala_arhiva-1706851-tronsonul-drajna-fetesti-autostrazii-soarelui-finalizat-1-mai.htm",
+      "publisher": "HotNews.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "cnadnr-ispa-sections-4-5-2013",
+      "title": "CNADNR: Proiecte ISPA, secțiunile 4 și 5 ale autostrăzii București – Constanța (archived 2013)",
+      "url": "https://web.archive.org/web/20130815123054/http://cnadnr.ro/pagina.php?idg=107",
+      "publisher": "CNADNR",
+      "retrievedOn": "2026-09-28"
     }
   ]
 }

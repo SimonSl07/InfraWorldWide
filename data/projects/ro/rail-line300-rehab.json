@@ -23,6 +23,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2007-05-24",
         "constructionStart": "2007",
         "opened": "2011-12"
       },
@@ -58,12 +59,58 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Porr Bau",
+          "role": "builder"
+        },
+        {
+          "name": "Arcada Company",
+          "role": "builder"
+        },
+        {
+          "name": "Construcții Feroviare",
+          "role": "builder"
+        },
+        {
+          "name": "Vega '93",
+          "role": "builder"
+        },
+        {
+          "name": "Franz Kassecker",
+          "role": "builder"
+        },
+        {
+          "name": "Bilfinger Berger",
+          "role": "builder"
+        },
+        {
+          "name": "Colas Rail",
+          "role": "builder"
+        },
+        {
+          "name": "ISAF",
+          "role": "builder"
+        },
+        {
+          "name": "Ansaldo STS",
+          "role": "builder"
+        },
+        {
+          "name": "ISPCF",
+          "role": "designer"
+        }
+      ],
       "note": {
-        "en": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel"
+        "en": "Line 300 rehabilitation on the TEN-T Rhine–Danube Corridor: Câmpina–Predeal 2007–2011 (ISPA, 75% EU / 25% government), Coșlariu–Sighișoara 2012–2018 to 160 km/h incl. the 969 m Daneș tunnel. Câmpina – Predeal ran as six works contracts: Lot 1 track and earthworks (Porr Bau, awarded 24 May 2007), Lots 2.1–2.3 culverts and bridges (2008), Lot 3 catenary (awarded 2007 to Spie Rail, later Colas Rail, with ISAF) and Lot 4 signalling (Ansaldo STS with ISAF); ISPCF designed all lots. The tender award date is the Lot 1 contract.",
+        "ro": "Reabilitarea magistralei 300 pe Coridorul TEN-T Rin–Dunăre: Câmpina–Predeal 2007–2011 (ISPA, 75% UE / 25% Guvern), Coșlariu–Sighișoara 2012–2018 la 160 km/h, inclusiv tunelul Daneș de 969 m. Câmpina – Predeal a fost realizată prin șase contracte de lucrări: Lotul 1 cale și terasamente (Porr Bau, atribuit la 24 mai 2007), Loturile 2.1–2.3 podețe și poduri (2008), Lotul 3 linia de contact (atribuit în 2007 către Spie Rail, ulterior Colas Rail, cu ISAF) și Lotul 4 centralizare și semnalizare (Ansaldo STS cu ISAF); ISPCF a proiectat toate loturile. Data atribuirii este cea a contractului pentru Lotul 1."
       },
       "sourceRefs": [
         "eur-lex-europa-eu-campina-predeal",
-        "wikipedia-c-ile-ferate-rom-ne-line-300"
+        "wikipedia-c-ile-ferate-rom-ne-line-300",
+        "cfr-ispa-campina-predeal",
+        "cfr-ispa-press-2011",
+        "cfr-ispa-press-archive"
       ],
       "geometryRef": "campina-predeal"
     },
@@ -157,6 +204,27 @@
       "id": "eur-lex-europa-eu-campina-predeal",
       "title": "eur-lex.europa.eu",
       "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52004DC0735"
+    },
+    {
+      "id": "cfr-ispa-campina-predeal",
+      "title": "CFR: Măsura ISPA 2003/RO/P/PT/007 – Reabilitarea liniei de cale ferată București – Brașov, secțiunea Câmpina – Predeal",
+      "url": "https://cfr.ro/wp-content/uploads/2013/10/files_proiecte_ISPA_007-Site.pdf",
+      "publisher": "CNCF CFR SA",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "cfr-ispa-press-2011",
+      "title": "CFR: Arhivă comunicate ISPA 2011",
+      "url": "https://cfr.ro/wp-content/uploads/2013/11/files_pdf_ArhivaComunicateISPA2011.pdf",
+      "publisher": "CNCF CFR SA",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "cfr-ispa-press-archive",
+      "title": "CFR: Arhivă comunicate de presă ISPA",
+      "url": "https://cfr.ro/wp-content/uploads/2013/11/files_pdf_ISPA-Comunicate-de-presa-ARHIVA.pdf",
+      "publisher": "CNCF CFR SA",
+      "retrievedOn": "2026-09-28"
     }
   ]
 }

@@ -50,6 +50,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2010-06",
         "opened": "2015-10-19"
       },
       "lengthKm": 0.36,
@@ -58,7 +59,21 @@
           "amount": 191.8,
           "currency": "RON",
           "year": 2015
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 81.62,
+              "currency": "RON",
+              "year": 2010,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2010-06",
+            "sourceRef": "ziuaconstanta-ro"
+          }
+        ]
       },
       "funding": [
         {
@@ -82,7 +97,8 @@
         "en": "Cable-stayed bridge 360 m long, 200 m central span, 17.4 m wide, at km 0+540 of the canal; the financing contract for the bridge and its access works to Constanța port was 191,797,112 lei. Inaugurated 19 October 2015 after a delay of nearly ten months, with press reporting that unrestricted traffic followed only later"
       },
       "sourceRefs": [
-        "adevarul-ro"
+        "adevarul-ro",
+        "ziuaconstanta-ro"
       ],
       "geometryRef": "new-bridge"
     }
@@ -97,6 +113,13 @@
       "id": "adevarul-ro",
       "title": "Adevărul: Noul pod de la Agigea, cel mai mare pod hobanat din România",
       "url": "https://adevarul.ro/stiri-locale/constanta/noul-pod-de-la-agigea-cel-mai-mare-pod-hobanat-1660249.html"
+    },
+    {
+      "id": "ziuaconstanta-ro",
+      "title": "ZIUA de Constanța: 18 octombrie, prima adunare a creditorilor: Firma care a construit noul pod de la Agigea, Apolodor Com Impex, nu scapă de faliment",
+      "url": "https://www.ziuaconstanta.ro/stiri/actualitate/18-octombrie-prima-adunare-a-creditorilor-firma-care-a-construit-noul-pod-de-la-agigea-apolodor-com-impex-nu-563588.html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "ZIUA de Constanța"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

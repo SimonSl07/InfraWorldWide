@@ -26,6 +26,22 @@
         "opened": "2020-08-26"
       },
       "lengthKm": 7.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 412.4832512,
+              "currency": "BGN",
+              "year": 2015,
+              "scope": "works",
+              "note": "Excluding VAT. Sum of the four design-and-build contracts 301–304 for the underground section km 4+950 – 11+966.34: BGN 47,774,281.88 (lot 1), 93,895,303.21 (lot 2), 75,582,112.20 (lot 3) and 195,231,553.91 (lot 4, TBM tunnel). Excludes the depot, trains and systems."
+            },
+            "date": "2015-09-28",
+            "sourceRef": "ted-2015-354296"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -54,6 +70,22 @@
         {
           "name": "Metroprojekt Praha",
           "role": "designer"
+        },
+        {
+          "name": "Обединение „Метро-3-2014“ ДЗЗД (design and build, lot 1)",
+          "role": "builder"
+        },
+        {
+          "name": "ДЗЗД Обединение „Метро Билд Център“ (design and build, lot 2)",
+          "role": "builder"
+        },
+        {
+          "name": "Обединение „Метро Строителство“ (design and build, lot 3)",
+          "role": "builder"
+        },
+        {
+          "name": "Граждански дружество „ДВУ“ (design and build, lot 4, TBM tunnel)",
+          "role": "builder"
         }
       ],
       "contract": {
@@ -68,7 +100,8 @@
       },
       "sourceRefs": [
         "metropolitan-bg",
-        "metropoliten-l3s1-contracts"
+        "metropoliten-l3s1-contracts",
+        "ted-2015-354296"
       ],
       "geometryRef": "stage1-hadzhi-dimitar-krasno-selo"
     },
@@ -284,6 +317,13 @@
       "title": "Metropoliten: procurement 00423-2014-0004 (line 3, stage 1), contracts and agreements (14 October 2015)",
       "url": "https://metropolitan.nit.bg/obshhestveni-porchki/treta-metroliniya-depobul.-botevgradsko-shose-bul.vl.vazov-zhk-ovcha-kupel,-prvi-etap/dogovori-i-sporazumeniya.html",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "ted-2015-354296",
+      "title": "TED: contract award notice 2015/S 196-354296, line 3 stage 1 design and build (9 October 2015)",
+      "url": "https://ted.europa.eu/bg/notice/354296-2015/xml",
+      "publisher": "Publications Office of the EU (TED)",
+      "retrievedOn": "2026-09-28"
     },
     {
       "id": "metropoliten-l3s2-contracts",

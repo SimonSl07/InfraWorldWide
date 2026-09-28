@@ -226,6 +226,11 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 18,
+        "totalMonths": 24
+      },
       "note": {
         "en": "Biharia–Chiribiș (28.55 km) and Chiribiș–Suplacu de Barcău (26.35 km) re-tendered after the Bechtel termination; OpenStreetMap tags opening_date=2026 on subsection 3A lot 2. Asociația Pro Infrastructura expects Suplacu de Barcău–Chiribiș (Erbașu, signed 24 November 2023) to open in November 2026 and gives Chiribiș–Biharia good chances for December; the Chiribiș–Biharia contract term is 20 May 2027"
       },
@@ -255,6 +260,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2020-09-05",
+        "constructionStart": "2021-08",
         "opened": "2023-09-21"
       },
       "lengthKm": 13.55,
@@ -355,7 +361,8 @@
         "wikipedia-ro-autostrada-a3-rom-nia",
         "hotnews-suplacu-nusfalau-contract",
         "monitorulcj-suplacu-nusfalau-price",
-        "economedia-suplacu-nusfalau-opened"
+        "economedia-suplacu-nusfalau-opened",
+        "economedia-suplacu-nusfalau-works"
       ],
       "geometryRef": "suplacu-nusfalau"
     },
@@ -372,6 +379,12 @@
       },
       "lengthKm": 41,
       "cost": {
+        "estimated": {
+          "amount": 7480,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Estimated value of the design-and-build tender relaunched in February 2023, excluding VAT."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -411,7 +424,8 @@
       ],
       "sourceRefs": [
         "wikipedia-ro-autostrada-a3-rom-nia",
-        "g4media-poarta-salajului-nusfalau-contract"
+        "g4media-poarta-salajului-nusfalau-contract",
+        "monitorulcj-poarta-salajului-nusfalau-tender"
       ],
       "geometryRef": "nusfalau-poarta-salajului",
       "profile": {
@@ -713,12 +727,13 @@
         }
       ],
       "note": {
-        "en": "Iernut–Ungheni was the first segment of this section opened, on 12 December 2018, after the Geiger and Strabag lots were finished; the Cluj-Napoca West (Gilău)–Nădășelu extension followed in 2018. Built under five design-and-build contracts: the first (Ogra – Iernut, Geiger) was signed on 16 February 2015 and Iernut – Chețani on 6 April 2016. Works start orders for four lots were issued in May 2016; on the three Ogra – Câmpia Turzii lots, physical works waited for building permits into 2017.",
-        "ro": "Iernut–Ungheni a fost primul segment deschis din această secțiune, la 12 decembrie 2018, după finalizarea loturilor Geiger și Strabag; extinderea Cluj-Napoca Vest (Gilău)–Nădășelu a urmat în 2018. Construită prin cinci contracte de proiectare și execuție: primul (Ogra – Iernut, Geiger) a fost semnat la 16 februarie 2015, iar Iernut – Chețani la 6 aprilie 2016. Ordinele de începere a lucrărilor pentru patru loturi au fost emise în mai 2016; pe cele trei loturi Ogra – Câmpia Turzii, lucrările fizice au așteptat autorizațiile de construire până în 2017."
+        "en": "Iernut–Ungheni was the first segment of this section opened, on 12 December 2018, after the Geiger and Strabag lots were finished; the Cluj-Napoca West (Gilău)–Nădășelu extension followed in 2018. Built under five design-and-build contracts: the first (Ogra – Iernut, Geiger) was signed on 16 February 2015 and Iernut – Chețani on 6 April 2016. Works start orders for four lots were issued in May 2016; on the three Ogra – Câmpia Turzii lots, physical works waited for building permits into 2017. Contract values excluding VAT (Wikipedia): Ungheni – Ogra (Strabag – Straco) 251.3 million lei, Ogra – Iernut (Geiger) 55.8 million lei, Iernut – Chețani (Astaldi – Max Bögl) 379.7 million lei and Chețani – Câmpia Turzii (Straco – Specialist Consulting – Total Road) 279.7 million lei. HotNews gives 438 million lei for Iernut – Chețani, VAT basis not stated.",
+        "ro": "Iernut–Ungheni a fost primul segment deschis din această secțiune, la 12 decembrie 2018, după finalizarea loturilor Geiger și Strabag; extinderea Cluj-Napoca Vest (Gilău)–Nădășelu a urmat în 2018. Construită prin cinci contracte de proiectare și execuție: primul (Ogra – Iernut, Geiger) a fost semnat la 16 februarie 2015, iar Iernut – Chețani la 6 aprilie 2016. Ordinele de începere a lucrărilor pentru patru loturi au fost emise în mai 2016; pe cele trei loturi Ogra – Câmpia Turzii, lucrările fizice au așteptat autorizațiile de construire până în 2017. Valori contractuale fără TVA (Wikipedia): Ungheni – Ogra (Strabag – Straco) 251,3 milioane lei, Ogra – Iernut (Geiger) 55,8 milioane lei, Iernut – Chețani (Astaldi – Max Bögl) 379,7 milioane lei și Chețani – Câmpia Turzii (Straco – Specialist Consulting – Total Road) 279,7 milioane lei. HotNews indică 438 milioane lei pentru Iernut – Chețani, fără a preciza baza TVA."
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a3-rom-nia",
-        "hotnews-monitorizari-campia-turzii-targu-mures"
+        "hotnews-monitorizari-campia-turzii-targu-mures",
+        "wikipedia-en-a3-motorway-romania"
       ],
       "geometryRef": "campia-turzii-targu-mures"
     }
@@ -730,6 +745,7 @@
       "url": "https://ro.wikipedia.org/wiki/Autostrada_A3_(Rom%C3%A2nia)"
     },
     {
+      "id": "wikipedia-en-a3-motorway-romania",
       "title": "Wikipedia: A3 motorway (Romania)",
       "url": "https://en.wikipedia.org/wiki/A3_motorway_(Romania)"
     },
@@ -907,6 +923,20 @@
       "title": "G4Media: A fost semnat contractul pentru realizarea ultimului tronson din autostrada Transilvania, între Poarta Sălajului și Nuşfalău (10 April 2025)",
       "url": "https://www.g4media.ro/a-fost-semnat-contractul-pentru-realizarea-ultimului-tronson-din-autostrada-transilvania-intre-poarta-salajului-si-nusfalau-va-avea-o-lungime-de-41-de-kilometri-si-un-tunel-de-aproape-trei-kilometr.html",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-suplacu-nusfalau-works",
+      "title": "Economedia: Autostrada Transilvania: Nurol asfaltează pe lotul Suplacu de Barcău – Nușfalău. După un an de la primele lucrări, șantierul a ajuns la 34% (29 August 2022)",
+      "url": "https://economedia.ro/video-autostrada-transilvania-nurol-asfalteaza-pe-lotul-suplacu-de-barcau-nusfalau-dupa-un-an-de-la-primele-lucrari-santierul-a-ajuns-la-34.html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Economedia"
+    },
+    {
+      "id": "monitorulcj-poarta-salajului-nusfalau-tender",
+      "title": "Monitorul de Cluj: Autostrada Transilvania. Licitație amânată pentru secțiunea de 41 km dintre Poarta Sălajului și Nușfalău (1 August 2024)",
+      "url": "https://www.monitorulcj.ro/economie/121956-autostrada-transilvania-licitatie-amanata-pentru-sectiunea-de-41-km-dintre-poarta-salajulu-si-nusfalau",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Monitorul de Cluj"
     }
   ]
 }

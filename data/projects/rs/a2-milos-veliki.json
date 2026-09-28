@@ -3,17 +3,20 @@
   "country": "rs",
   "category": "highway",
   "name": {
-    "en": "A2 Miloš Veliki Motorway (Belgrade – Preljina)"
+    "en": "A2 Miloš Veliki Motorway (Belgrade – Preljina)",
+    "ro": "Autostrada A2 Miloš Veliki (Belgrad – Preljina)"
   },
   "description": {
-    "en": "The A2 «Miloš Veliki» motorway on European route E763, running south-west from Belgrade at Surčin through Obrenovac, Ub, Lajkovac and Ljig to Preljina near Čačak, opened section by section between 2014 and 2019. Section lengths here are the figures published by JP Putevi Srbije rather than measurements off the mapped alignment: the Lajkovac–Ljig contract boundary sits about 3 km from the Ljig interchange used to cut the geometry, though the Lajkovac–Preljina total agrees to within 600 m. The motorway continues beyond Preljina toward Požega via Pakovraće and Lučani, and on to the planned Požega–Boljare extension; neither is recorded here for want of sourced opening dates."
+    "en": "The A2 «Miloš Veliki» motorway on European route E763, running south-west from Belgrade at Surčin through Obrenovac, Ub, Lajkovac and Ljig to Preljina near Čačak, opened section by section between 2014 and 2019. Section lengths here are the figures published by JP Putevi Srbije rather than measurements off the mapped alignment: the Lajkovac–Ljig contract boundary sits about 3 km from the Ljig interchange used to cut the geometry, though the Lajkovac–Preljina total agrees to within 600 m. The motorway continues beyond Preljina toward Požega via Pakovraće and Lučani, and on to the planned Požega–Boljare extension; neither is recorded here for want of sourced opening dates.",
+    "ro": "Autostrada A2 «Miloš Veliki», pe drumul european E763, pornește spre sud-vest din Belgrad, de la Surčin, prin Obrenovac, Ub, Lajkovac și Ljig, până la Preljina, lângă Čačak, și a fost deschisă pe secțiuni între 2014 și 2019. Lungimile secțiunilor sunt cele publicate de JP Putevi Srbije, nu măsurători pe traseul cartografiat: limita contractului Lajkovac–Ljig se află la circa 3 km de nodul Ljig folosit pentru tăierea geometriei, deși totalul Lajkovac–Preljina concordă cu o diferență de sub 600 m. Autostrada continuă dincolo de Preljina spre Požega, prin Pakovraće și Lučani, și mai departe pe prelungirea planificată Požega–Boljare; niciuna nu este înregistrată aici, în lipsa unor date de deschidere din surse."
   },
   "operator": "rs-putevi-srbije",
   "lots": [
     {
       "id": "surcin-obrenovac",
       "name": {
-        "en": "Surčin – Obrenovac"
+        "en": "Surčin – Obrenovac",
+        "ro": "Surčin – Obrenovac"
       },
       "status": "opened",
       "dates": {
@@ -59,10 +62,12 @@
     {
       "id": "obrenovac-ub",
       "name": {
-        "en": "Obrenovac – Ub"
+        "en": "Obrenovac – Ub",
+        "ro": "Obrenovac – Ub"
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2013-05",
         "constructionStart": "2014",
         "opened": "2019"
       },
@@ -100,21 +105,39 @@
       ],
       "sourceRefs": [
         "mgsi-obrenovac-ub-lajkovac-ljig",
-        "alo-kinezi-koridor-11"
+        "alo-kinezi-koridor-11",
+        "autozona-lajkovac-ljig"
       ],
       "geometryRef": "obrenovac-ub"
     },
     {
       "id": "ub-lajkovac",
       "name": {
-        "en": "Ub – Lajkovac"
+        "en": "Ub – Lajkovac",
+        "ro": "Ub – Lajkovac"
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2010-07-02",
         "constructionStart": "2010-07-29",
         "opened": "2019-08-18"
       },
       "lengthKm": 12.49,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 7333,
+              "currency": "RSD",
+              "year": 2010,
+              "note": "Consortium's bid at contract signing. VAT treatment not stated."
+            },
+            "date": "2010-07-02",
+            "sourceRef": "b92-ub-lajkovac-ugovor"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "national_budget",
@@ -138,6 +161,15 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "totalMonths": 16,
+        "value": {
+          "amount": 7333,
+          "currency": "RSD",
+          "year": 2010,
+          "note": "Consortium's bid at contract signing. VAT treatment not stated."
+        }
+      },
       "note": {
         "en": "Preparatory works officially started on 29 July 2010. Main works were held up by unfinished expropriation (B92, October 2010). Works finished on 30 November 2014; the section opened to traffic on 18 August 2019 with the rest of the motorway.",
         "ro": "Lucrările pregătitoare au început oficial pe 29 iulie 2010. Lucrările principale au fost întârziate de exproprieri nefinalizate (B92, octombrie 2010). Lucrările s-au încheiat pe 30 noiembrie 2014; secțiunea a fost deschisă circulației pe 18 august 2019, odată cu restul autostrăzii."
@@ -145,14 +177,16 @@
       "sourceRefs": [
         "autozona-ub-lajkovac",
         "b92-ub-lajkovac-eksproprijacija",
-        "koridori-beograd-juzni-jadran"
+        "koridori-beograd-juzni-jadran",
+        "b92-ub-lajkovac-ugovor"
       ],
       "geometryRef": "ub-lajkovac"
     },
     {
       "id": "lajkovac-ljig",
       "name": {
-        "en": "Lajkovac – Ljig"
+        "en": "Lajkovac – Ljig",
+        "ro": "Lajkovac – Ljig"
       },
       "status": "opened",
       "dates": {
@@ -207,7 +241,8 @@
     {
       "id": "ljig-preljina",
       "name": {
-        "en": "Ljig – Preljina"
+        "en": "Ljig – Preljina",
+        "ro": "Ljig – Preljina"
       },
       "status": "opened",
       "dates": {
@@ -328,6 +363,13 @@
       "title": "B92: Azerbejdžan nam daje 308 mil. evra (2012-04-06)",
       "url": "http://www.b92.net/biz/vesti/srbija.php?yyyy=2012&mm=04&dd=06&nav_id=598231",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "b92-ub-lajkovac-ugovor",
+      "title": "B92: Ugovor o izgradnji deonice autoputa (2010-07-02)",
+      "url": "https://www.b92.net/info/vesti/index.php?yyyy=2010&mm=07&dd=02&nav_category=9&nav_id=442814",
+      "retrievedOn": "2026-09-28",
+      "publisher": "B92 / Beta"
     }
   ]
 }

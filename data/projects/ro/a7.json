@@ -265,6 +265,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2023-01-12",
+        "constructionStart": "2023-02",
         "opened": "2024-11-21"
       },
       "lengthKm": 30.8,
@@ -321,7 +322,8 @@
       "sourceRefs": [
         "hotnews-ro-buzau-bypass",
         "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
-        "cnair-buzau-focsani-lots-2-3-contracts"
+        "cnair-buzau-focsani-lots-2-3-contracts",
+        "apix-a7-stadiul-lucrarilor-2024"
       ],
       "geometryRef": "buzau-ramnicu-sarat"
     },
@@ -334,9 +336,25 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2023-01-12",
+        "constructionStart": "2023-02",
         "opened": "2024-12-20"
       },
       "lengthKm": 36.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1469.39018297,
+              "currency": "RON",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-01-12",
+            "sourceRef": "cnair-buzau-focsani-lots-2-3-contracts"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -377,7 +395,8 @@
         "hotnews-ro-buzau-bypass",
         "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
         "cnair-buzau-focsani-lots-2-3-contracts",
-        "campusbuzau-buzau-focsani-contracts"
+        "campusbuzau-buzau-focsani-contracts",
+        "apix-a7-stadiul-lucrarilor-2024"
       ],
       "geometryRef": "ramnicu-sarat-mandresti"
     },
@@ -916,6 +935,12 @@
       },
       "lengthKm": 61.97,
       "cost": {
+        "estimated": {
+          "amount": 7790,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Pre-award estimated construction value for the whole 62 km Pașcani–Suceava sector (lots 1 and 2), excluding VAT, as reported when lot 1 was tendered in July 2024."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -979,7 +1004,8 @@
       "sourceRefs": [
         "cnair-pascani-suceava-contracts",
         "agendaconstructiilor-pascani-suceava-signing",
-        "economedia-suceava-siret-safe"
+        "economedia-suceava-siret-safe",
+        "economedia-pascani-suceava-lot1-tender"
       ],
       "geometryRef": "pascani-suceava"
     },
@@ -1006,6 +1032,20 @@
             "en": "SAFE (Security Action for Europe), an EU long-term loan instrument",
             "ro": "SAFE (Acțiunea pentru Securitatea Europei), instrument UE de împrumuturi pe termen lung"
           }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Far Foundation",
+          "role": "builder"
+        },
+        {
+          "name": "Automagistral Pivden",
+          "role": "builder"
+        },
+        {
+          "name": "Lincor Trans",
+          "role": "builder"
         }
       ],
       "note": {
@@ -1205,6 +1245,20 @@
       "title": "Libertatea: Harta autostrăzilor și drumurilor expres din România în iulie 2026 (7 July 2026)",
       "url": "https://www.libertatea.ro/stiri/harta-autostrazi-drumuri-expres-iulie-2026-proiecte-constructie-licitare-romania-5807884",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "apix-a7-stadiul-lucrarilor-2024",
+      "title": "APIX: Stadiul lucrărilor la fiecare segment din autostrada A7 Ploiești – Pașcani (24 October 2024)",
+      "url": "https://apix.ro/stadiul-lucrarilor-la-fiecare-segment-din-autostrada-a7-ploiesti-pascani/",
+      "publisher": "APIX.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "economedia-pascani-suceava-lot1-tender",
+      "title": "Economedia: Autostrada Pașcani – Suceava, lot 1: CNAIR scoate la licitație primii 33 km (18 July 2024)",
+      "url": "https://economedia.ro/autostrada-pascani-suceava-lot-1-cnair-scoate-la-licitatie-primii-33-km-valoare-totala-estimata-este-intre-388-43-miliarde-lei.html",
+      "publisher": "Economedia",
+      "retrievedOn": "2026-09-28"
     }
   ]
 }

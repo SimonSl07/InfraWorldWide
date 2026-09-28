@@ -94,6 +94,32 @@
       "cost": {
         "revisions": [
           {
+            "kind": "award",
+            "money": {
+              "amount": 3453.35,
+              "currency": "RON",
+              "year": 2017,
+              "scope": "works",
+              "note": "Excluding VAT. Contracts for subsections 2a and 2b, signed together."
+            },
+            "date": "2017-05-19",
+            "note": "Original value of the 2a and 2b works contracts at signing.",
+            "sourceRef": "capital-ro-2017-06-t2ab"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1498.98,
+              "currency": "RON",
+              "year": 2017,
+              "scope": "works",
+              "note": "Excluding VAT. Contract for subsection 2c Cap Y Ilteu – Gurasada."
+            },
+            "date": "2017-11",
+            "note": "Original value of the 2c works contract at signing.",
+            "sourceRef": "constructiv-ro-2017-11-t2c"
+          },
+          {
             "kind": "addendum",
             "money": {
               "amount": 6374.18,
@@ -135,13 +161,26 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 4952.33,
+          "currency": "RON",
+          "year": 2017,
+          "note": "Excluding VAT. Contracts 2a and 2b (RON 3,453.35 million, signed 19 May 2017) plus 2c (RON 1,498.98 million, signed November 2017)."
+        },
+        "executionMonths": 36
+      },
       "note": {
         "en": "Split into subsections 2A and 2B (about 80 km with 11 stations, 30 bridges and one tunnel) and Cap Y Bârzava – Cap Y Ilteu; sections 2 and 3 together were financed with RON 9.5 billion (~€2bn), RON 6bn from the Cohesion Fund. Per CFR's August 2026 status report the section is three works contracts: 2a km 614 – Bârzava (41.91 km, RON 2,065.59 million), 2b Bârzava – Ilteu (36.04 km, RON 2,295.12 million) and 2c Ilteu – Gurasada (22.34 km, RON 2,013.47 million), current values excluding VAT. 2a and 2b started on 27 July 2017 and are due in December 2026; 2c started on 4 December 2017 and is due in December 2027. The expected opening is the end of works on 2c.",
         "ro": "Împărțit în subtronsoanele 2A și 2B (circa 80 km, cu 11 stații, 30 de poduri și un tunel) și Cap Y Bârzava – Cap Y Ilteu; tronsoanele 2 și 3 au primit împreună o finanțare de 9,5 miliarde lei (~2 mld. euro), din care 6 miliarde lei din Fondul de Coeziune. Conform raportului CFR din august 2026, tronsonul cuprinde trei contracte de lucrări: 2a km 614 – Bârzava (41,91 km, 2.065,59 milioane lei), 2b Bârzava – Ilteu (36,04 km, 2.295,12 milioane lei) și 2c Ilteu – Gurasada (22,34 km, 2.013,47 milioane lei), valori actuale fără TVA. 2a și 2b au început la 27 iulie 2017, cu termen decembrie 2026; 2c a început la 4 decembrie 2017, cu termen decembrie 2027. Data estimată de deschidere este finalizarea lucrărilor la 2c."
       },
       "sourceRefs": [
         "railwaypro-com",
-        "cfr-ro-stadiu-2026-08"
+        "cfr-ro-stadiu-2026-08",
+        "capital-ro-2017-06-t2ab",
+        "capital-ro-2017-10-t2ab",
+        "constructiv-ro-2017-11-t2c",
+        "economica-net-2017-04-t2c"
       ],
       "geometryRef": "t2-km614-gurasada"
     },
@@ -283,6 +322,34 @@
       "title": "Economica.net: Asocierea FCC – Astaldi – Convensa va moderniza tronsonul de cale ferată Gurasada – Simeria pentru 2,63 miliarde lei (2016-06-24)",
       "url": "https://www.economica.net/asocierea-fcc-astaldi-convensa-va-moderniza-tronsonul-de-cale-ferata-gurasada-simeria-pentru-2-63-miliarde-lei_121631.html",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "capital-ro-2017-06-t2ab",
+      "title": "Capital.ro: Ministerul Transporturilor dă startul celor mai mari proiecte de pe calea ferată (2017-06-19)",
+      "url": "https://www.capital.ro/ministerul-transporturilor-da-startul-celor-mai-mari-proiecte.html",
+      "publisher": "Capital.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "capital-ro-2017-10-t2ab",
+      "title": "Capital.ro: Investiții de miliarde pe calea ferată (2017-10-16)",
+      "url": "https://www.capital.ro/investitii-de-miliarde-pe-calea-ferata.html",
+      "publisher": "Capital.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "constructiv-ro-2017-11-t2c",
+      "title": "Constructiv: Asocierea RailWorks va moderniza 22,3 km de cale ferată între Ilteu și Gurasada (2017-11-24)",
+      "url": "https://www.constructiv.ro/2017/11/asocierea-railworks-va-moderniza-223-km-de-cale-ferata-intre-ilteu-si-gurasada-cfr-plateste-15-miliarde-de-lei/",
+      "publisher": "Constructiv.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "economica-net-2017-04-t2c",
+      "title": "Economica.net: CFR SA atribuie un contract de 1,5 miliarde de lei asocierii Alstom – Aktor – Arcada Company (2017-04-21)",
+      "url": "https://www.economica.net/cfr-sa-atribuie-un-contract-de-1-5-miliarde-de-lei-asocierii-alstom-aktor-arcada-company_136650.html",
+      "publisher": "Economica.net",
+      "retrievedOn": "2026-09-28"
     }
   ]
 }
