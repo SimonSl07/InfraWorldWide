@@ -96,7 +96,8 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2023-11-24",
-        "constructionStart": "2025-05-07"
+        "constructionStart": "2025-05-07",
+        "expectedOpening": "2028"
       },
       "lengthKm": 19.92,
       "cost": {
@@ -147,13 +148,14 @@
         }
       },
       "note": {
-        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023. Asociația Pro Infrastructură reads the contractual completion deadline as July 2028 (Economedia, 23 September 2026); no official opening date has been announced.",
-        "ro": "Contract de proiectare și execuție cu Makyol; cele patru loturi Boița–Făgăraș au fost semnate în 2023. Asociația Pro Infrastructură estimează termenul contractual de finalizare în iulie 2028 (Economedia, 23 septembrie 2026); nu a fost anunțată o dată oficială de deschidere."
+        "en": "Design-and-build contract with Makyol; the four Boița–Făgăraș lots were signed in 2023. Asociația Pro Infrastructură reads the contractual completion deadline as July 2028 (Economedia, 23 September 2026). The Minister of Transport said in March 2026 that lots 2, 3 and 4 may open before 16 November 2028, when all four lots are to be completed and received together; no exact opening date has been given.",
+        "ro": "Contract de proiectare și execuție cu Makyol; cele patru loturi Boița–Făgăraș au fost semnate în 2023. Asociația Pro Infrastructură estimează termenul contractual de finalizare în iulie 2028 (Economedia, 23 septembrie 2026). Ministrul Transporturilor a declarat în martie 2026 că loturile 2, 3 și 4 pot fi deschise traficului înainte de 16 noiembrie 2028, dată până la care toate cele patru loturi urmează să fie finalizate și recepționate împreună; nu a fost comunicată o dată exactă de deschidere."
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a13-rom-nia",
         "economica-a13-lots12-signing",
         "sibiuindependent-a13-lot2",
+        "economica-a13-lot1-minister",
         "economedia-a13-api-progress",
         "economica-a13-lot4-permit"
       ],
@@ -241,7 +243,8 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2023-05-05",
-        "constructionStart": "2025-07"
+        "constructionStart": "2025-07",
+        "expectedOpening": "2028"
       },
       "lengthKm": 16.26,
       "cost": {
@@ -296,15 +299,16 @@
         }
       },
       "note": {
-        "en": "Design-and-build contract awarded on 5 May 2023 and signed on 20 September 2023 with the Makyol – Yapı Merkezi joint venture, 48 months total duration. Asociația Pro Infrastructură reads the contractual completion deadline as September 2028 (Economedia, 23 September 2026); no official opening date has been announced.",
-        "ro": "Contract de proiectare și execuție atribuit pe 5 mai 2023 și semnat pe 20 septembrie 2023 cu asocierea Makyol – Yapı Merkezi, durată totală de 48 de luni. Asociația Pro Infrastructură estimează termenul contractual de finalizare în septembrie 2028 (Economedia, 23 septembrie 2026); nu a fost anunțată o dată oficială de deschidere."
+        "en": "Design-and-build contract awarded on 5 May 2023 and signed on 20 September 2023 with the Makyol – Yapı Merkezi joint venture, 48 months total duration. Asociația Pro Infrastructură reads the contractual completion deadline as September 2028 (Economedia, 23 September 2026). The Minister of Transport said in March 2026 that lots 2, 3 and 4 may open before 16 November 2028, when all four lots are to be completed and received together; no exact opening date has been given.",
+        "ro": "Contract de proiectare și execuție atribuit pe 5 mai 2023 și semnat pe 20 septembrie 2023 cu asocierea Makyol – Yapı Merkezi, durată totală de 48 de luni. Asociația Pro Infrastructură estimează termenul contractual de finalizare în septembrie 2028 (Economedia, 23 septembrie 2026). Ministrul Transporturilor a declarat în martie 2026 că loturile 2, 3 și 4 pot fi deschise traficului înainte de 16 noiembrie 2028, dată până la care toate cele patru loturi urmează să fie finalizate și recepționate împreună; nu a fost comunicată o dată exactă de deschidere."
       },
       "sourceRefs": [
         "wikipedia-a13-motorway-romania",
         "bunaziuafagaras-a13-lot4-permit",
         "economica-a13-lot4-permit",
         "agendaconstructiilor-a13-makyol",
-        "economedia-a13-api-progress"
+        "economedia-a13-api-progress",
+        "economica-a13-lot1-minister"
       ],
       "geometryRef": "lot4-sambata-fagaras"
     },
@@ -381,6 +385,28 @@
       },
       "status": "planned",
       "lengthKm": 162,
+      "cost": {
+        "estimated": {
+          "amount": 2000,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Approximate. Works estimate in the terms of reference of the 2020 feasibility-study tender, for a route of about 172 km at the time. The source warns the cost could be much higher and will only be known after the feasibility study."
+        },
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 2000,
+              "currency": "EUR",
+              "scope": "works",
+              "note": "Approximate."
+            },
+            "date": "2020-03-06",
+            "note": "Works estimate in the terms of reference of the feasibility-study tender, for a route of about 172 km.",
+            "sourceRef": "bursa-a13-brasov-bacau-fs-tender"
+          }
+        ]
+      },
       "contractors": [
         {
           "name": "Consitrans",
@@ -393,7 +419,8 @@
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a13-rom-nia",
-        "economedia-a13-consitrans-fs"
+        "economedia-a13-consitrans-fs",
+        "bursa-a13-brasov-bacau-fs-tender"
       ],
       "geometryRef": "brasov-racaciuni",
       "profile": {
@@ -505,6 +532,13 @@
       "title": "Playtech: Guvernul dă undă verde Autostrăzii Brașov - Făgăraș. Când ar putea circula primele mașini pe cei aproape 50 km (September 2026)",
       "url": "https://playtech.ro/2026/guvernul-da-unda-verde-autostrazii-brasov-fagaras-cand-ar-putea-circula-primele-masini-pe-cei-aproape-50-km/",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "bursa-a13-brasov-bacau-fs-tender",
+      "title": "Bursa: Licitaţie atribuită pentru autostrada Braşov-Bacău (6 March 2020)",
+      "url": "https://www.bursa.ro/licitatie-atribuita-pentru-autostrada-brasov-bacau-02821935",
+      "publisher": "Bursa",
+      "retrievedOn": "2026-09-28"
     },
     {
       "title": "OpenStreetMap contributors (geometry of the Boița–Făgăraș alignment, ODbL)",

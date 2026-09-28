@@ -41,14 +41,41 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "1979",
         "opened": "2009-09-07"
       },
       "lengthKm": 14.2,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Slivnitsa – Serdika (the first seven stations) and the tenth to thirteenth stations, up to Mladost 1, were built by the City of Sofia with its own funds (JBIC: \"self-secured funds\", \"self-procured funds\"). No amount published",
+            "ro": "Slivnitsa – Serdika (primele șapte stații) și stațiile a zecea până la a treisprezecea, până la Mladost 1, au fost construite de municipalitatea Sofia din fonduri proprii (JBIC: „self-secured funds”, „self-procured funds”). Nicio sumă publicată"
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "jica-loan",
+          "detail": {
+            "en": "JBIC ODA loan BG-P5 to the City of Sofia, signed February 2002 (¥12,894 million), for the shield tunnel and stations from the seventh to the ninth station, Serdika – Vasil Levski Stadium",
+            "ro": "Împrumut ODA JBIC BG-P5 acordat municipalității Sofia, semnat în februarie 2002 (12.894 de milioane de yeni), pentru tunelul executat cu scut și stațiile de la a șaptea la a noua, Serdika – Stadion Vasil Levski"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Taisei Corporation (shield tunnel, Serdika – Vasil Levski Stadium)",
+          "role": "builder"
+        }
+      ],
       "note": {
-        "en": "M4 trains use the line M1 tunnels between Slivnitsa and Mladost 1, opened in four steps between 28 January 1998 and 7 September 2009. No length is published for the shared section on its own; 14.2 km is measured from the OpenStreetMap centreline and is consistent with the published 23.0 km line total"
+        "en": "M4 trains use the line M1 tunnels between Slivnitsa and Mladost 1, opened in four steps between 28 January 1998 and 7 September 2009. Works began in 1979 at Vardar, on the first stage; the rest of the section was built in stages up to 2009. No length is published for the shared section on its own; 14.2 km is measured from the OpenStreetMap centreline and is consistent with the published 23.0 km line total",
+        "ro": "Trenurile M4 folosesc tunelurile magistralei M1 între Slivnitsa și Mladost 1, deschise în patru etape între 28 ianuarie 1998 și 7 septembrie 2009. Lucrările au început în 1979 la Vardar, în prima etapă; restul tronsonului a fost construit în etape până în 2009. Nu este publicată o lungime separată pentru tronsonul comun; cei 14,2 km sunt măsurați pe axa din OpenStreetMap și sunt în concordanță cu totalul publicat de 23,0 km al liniei"
       },
       "sourceRefs": [
-        "wikipedia-sofia-metro"
+        "wikipedia-sofia-metro",
+        "metropoliten-20-godini",
+        "jbic-2006-midterm-review"
       ],
       "sharedWith": "bg-sofia-metro-m1",
       "geometryRef": "slivnitsa-mladost-1-shared"
@@ -246,6 +273,20 @@
       "title": "Mediapool: The metro reaches Sofia Airport in 2015 (21 November 2012)",
       "url": "https://www.mediapool.bg/metroto-stiga-do-letishte-sofiya-prez-2015-g-news199794.html",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-20-godini",
+      "title": "Metropoliten: 20 години метро в София (2018-01)",
+      "url": "https://www.metropolitan.bg/aktualno/20-godini-metro-sofiya",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Metropoliten EAD"
+    },
+    {
+      "id": "jbic-2006-midterm-review",
+      "title": "JBIC: ODA Loan Project Mid-Term Review 2006, Sofia Metro Extension Project (BG-P5) (2007)",
+      "url": "https://www2.jica.go.jp/en/evaluation/pdf/2006_BG-P5_2_f.pdf",
+      "retrievedOn": "2026-09-28",
+      "publisher": "JBIC / JICA"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

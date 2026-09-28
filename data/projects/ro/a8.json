@@ -27,6 +27,21 @@
         "expectedOpening": "2030"
       },
       "lengthKm": 92.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 11200,
+              "currency": "RON",
+              "note": "Sum of the four design-and-execution contracts 1A (2,460M lei excl. VAT, 2024), 1B (2,980M lei excl. VAT, 2025), 1C (4,940M lei, 2025) and 1D (820M lei, 2025). No price year: signings span 2024 and 2025."
+            },
+            "date": "2025-11-26",
+            "note": "Date of the last two signings (1C and 1D).",
+            "sourceRef": "hotnews-ro-a8-sections-2025-11"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -56,7 +71,12 @@
       ],
       "contract": {
         "designMonths": 6,
-        "executionMonths": 24
+        "executionMonths": 24,
+        "value": {
+          "amount": 11200,
+          "currency": "RON",
+          "note": "Sum of the four design-and-execution contracts: 1A Târgu Mureș – Miercurea Nirajului (Nurol, 2,460M lei excluding VAT, signed 16 February 2024), 1B Miercurea Nirajului – Sărățeni (Özaltın – Infravis, 2,980M lei excluding VAT, signed 29 May 2025), 1C Sărățeni – Joseni (SA&PE Construct – Tehnostrade – Spedition UMB – Euro Asfalt, 4,940M lei, signed 26 November 2025) and 1D Joseni – Ditrău (Danlin XXL – Groma Hold – Intertranscom Impex, 820M lei, signed 26 November 2025). No price year: the contracts were signed in 2024 and 2025. The sources do not state VAT for 1C and 1D."
+        }
       },
       "note": {
         "en": "Section 1A Târgu Mureș–Miercurea Nirajului, contract signed 16 February 2024 (Nurol)"
@@ -69,7 +89,10 @@
       ],
       "sourceRefs": [
         "jurnalul-ro-targu-mures-ditrau",
-        "punctul-ro-targu-mures-ditrau"
+        "punctul-ro-targu-mures-ditrau",
+        "hotnews-ro-a8-sections-2025-11",
+        "economica-net-targu-mures-miercurea-nirajului",
+        "hotnews-ro-a8-miercurea-nirajului-sarateni"
       ],
       "geometryRef": "targu-mures-ditrau"
     },
@@ -85,6 +108,21 @@
         "constructionStart": "2023-09"
       },
       "lengthKm": 118.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 16360,
+              "currency": "RON",
+              "note": "Sum of the four design-and-execution contracts 2A (6,140M lei excl. VAT, 2025), 2B (5,970M lei, 2025), 2C (2,690M lei, 2025) and 3 Leghin – Târgu Neamț (1,560M lei, 2023). No price year: signings span 2023 and 2025."
+            },
+            "date": "2025-10",
+            "note": "Date of the last signing (2B Grințieș – Pipirig).",
+            "sourceRef": "hotnews-ro-a8-sections-2025-11"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -105,7 +143,12 @@
       ],
       "contract": {
         "designMonths": 14,
-        "executionMonths": 40
+        "executionMonths": 40,
+        "value": {
+          "amount": 16360,
+          "currency": "RON",
+          "note": "Sum of the four design-and-execution contracts: 2A Ditrău – Grințieș (6,140M lei excluding VAT, signed 20 March 2025), 2B Grințieș – Pipirig (5,970M lei, signed end of October 2025), 2C Pipirig – Leghin (2,690M lei, signed January 2025) and 3 Leghin – Târgu Neamț (Moțca) (1,560M lei, signed 20 September 2023), all with SA&PE Construct – Spedition UMB – Tehnostrade associations. No price year: the contracts were signed in 2023 and 2025. The sources do not state VAT for 2B, 2C and 3."
+        }
       },
       "note": {
         "en": "Ditrău–Grințieș (section 2A) contract, SA&PE Construct–Tehnostrade–Euro Asfalt–Spedition UMB; Leghin–Târgu Neamț signed September 2023 at RON 1.56bn (≈€313M), 6 months design + 24 months execution. Outlook from Cătălin Urtoi (civic association), reported by punctul.ro on 15 July 2026: Vânători Neamț – Moțca (29.91 km, UMB, in execution) could open in 2026; Ditrău – Grințieș (38 km) works to finish in 2030; Pipirig – Vânători Neamț (19.3 km) not before 2031.",
@@ -119,7 +162,10 @@
       ],
       "sourceRefs": [
         "punctul-ro-targu-mures-ditrau",
-        "economica-net-ditrau-motca"
+        "economica-net-ditrau-motca",
+        "hotnews-ro-a8-sections-2025-11",
+        "economedia-ro-grinties-pipirig",
+        "hotnews-ro-a8-miercurea-nirajului-sarateni"
       ],
       "geometryRef": "ditrau-motca",
       "profile": {
@@ -134,7 +180,8 @@
       },
       "status": "tendered",
       "dates": {
-        "tenderAwarded": "2026-04-24"
+        "tenderAwarded": "2026-04-24",
+        "expectedOpening": "2030"
       },
       "lengthKm": 27,
       "cost": {
@@ -264,6 +311,11 @@
       },
       "lengthKm": 17.7,
       "cost": {
+        "estimated": {
+          "amount": 6240,
+          "currency": "RON",
+          "note": "Tender estimate as reported in November 2025, while bids were being evaluated. The winning offer (3,930M lei excluding VAT) was 25.7% below the minimum estimated value, so this is the upper end of the estimate. The source does not state VAT."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -316,7 +368,8 @@
         "wikipedia-ro-autostrada-a8-rom-nia",
         "arenaconstruct-ro-letcani-iasi",
         "playtech-ro-letcani-iasi",
-        "stireadeiasi-ro-motca-targu-frumos"
+        "stireadeiasi-ro-motca-targu-frumos",
+        "hotnews-ro-a8-sections-2025-11"
       ],
       "geometryRef": "letcani-iasi"
     },
@@ -502,6 +555,34 @@
       "title": "Economica.net: Autostrada Unirii A8 Tg Mureș – Tg Neamț. A fost semnat contractul cu UMB pentru cel mai lung lot, Ditrău – Grințieș (2025-03-20)",
       "url": "https://www.economica.net/autostrada-unirii-a8-38_820501.html",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "hotnews-ro-a8-sections-2025-11",
+      "title": "HotNews.ro: Autostrada „Unirii” A8: Două tronsoane de 47 kilometri din Transilvania, contractate cu peste 1,1 miliarde de euro (2025-11-26)",
+      "url": "https://hotnews.ro/autostrada-unirii-a8-doua-tronsoane-de-47-kilometri-din-transilvania-contractate-cu-peste-11-miliard-de-euro-cand-incep-lucrarile-2116732",
+      "publisher": "HotNews.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "economica-net-targu-mures-miercurea-nirajului",
+      "title": "Economica.net: Autostrada Unirii A8: A fost semnat contractul pentru secțiunea I Tg Mureș – Miercurea Nirajului (2024-02-16)",
+      "url": "https://www.economica.net/autostrada-unirii-a8-a-fost-semnat-contractul-pentru-sectiunea-i-tg-mures-miercurea-nirajului_725578.html",
+      "publisher": "Economica.net",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "hotnews-ro-a8-miercurea-nirajului-sarateni",
+      "title": "HotNews.ro: Autostrada Unirii, contract semnat cu un constructor din Turcia pentru încă un lot montan (2025-05-29)",
+      "url": "https://hotnews.ro/autostrada-unirii-contract-semnat-cu-un-constructor-din-turcia-pentru-inca-un-lot-montan-cand-va-fi-gata-1989435",
+      "publisher": "HotNews.ro",
+      "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "economedia-ro-grinties-pipirig",
+      "title": "Economedia.ro: Cel mai dificil lot al Autostrăzii Unirii A8, între Grințieș și Pipirig, a primit undă verde pentru proiectare (2025-11-17)",
+      "url": "https://economedia.ro/cel-mai-dificil-lot-al-autostrazii-unirii-a8-intre-grinties-si-pipirig-a-primit-unda-verde-pentru-proiectare-constructia-lotului-costa-aproape-6-miliarde-de-lei.html",
+      "publisher": "Economedia.ro",
+      "retrievedOn": "2026-09-28"
     }
   ]
 }

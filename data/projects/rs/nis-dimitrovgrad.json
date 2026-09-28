@@ -3,10 +3,12 @@
   "country": "rs",
   "category": "railway",
   "name": {
-    "en": "Niš – Dimitrovgrad Railway Modernisation"
+    "en": "Niš – Dimitrovgrad Railway Modernisation",
+    "ro": "Modernizarea căii ferate Niš – Dimitrovgrad"
   },
   "description": {
-    "en": "Modernisation and partial realignment of Serbian mainline 106 from Niš to the Bulgarian border at Dimitrovgrad, the Serbian leg of the Corridor X branch toward Sofia. Under construction with European Investment Bank and EU support. No construction-start or opening date could be sourced, so the lot carries none; sources disagree on the total, with EUR 502 million given as the project cost against EUR 268–276 million quoted for individual subprojects."
+    "en": "Modernisation and partial realignment of Serbian mainline 106 from Niš to the Bulgarian border at Dimitrovgrad, the Serbian leg of the Corridor X branch toward Sofia. Under construction with European Investment Bank and EU support. No construction-start or opening date could be sourced, so the lot carries none; sources disagree on the total, with EUR 502 million given as the project cost against EUR 268–276 million quoted for individual subprojects.",
+    "ro": "Modernizarea și rectificarea parțială a traseului magistralei feroviare sârbe 106 de la Niš până la granița cu Bulgaria la Dimitrovgrad, tronsonul sârb al ramurii Coridorului X spre Sofia. În construcție, cu sprijinul Băncii Europene de Investiții și al UE. Nu a putut fi identificată în surse nicio dată de începere a lucrărilor sau de deschidere, astfel că lotul nu are niciuna; sursele nu concordă asupra totalului: 502 milioane EUR sunt indicate drept costul proiectului, față de 268–276 milioane EUR citate pentru subproiecte individuale."
   },
   "corridors": [
     "pan-european-x"
@@ -15,7 +17,8 @@
     {
       "id": "nis-dimitrovgrad",
       "name": {
-        "en": "Niš – Dimitrovgrad"
+        "en": "Niš – Dimitrovgrad",
+        "ro": "Niš – Dimitrovgrad"
       },
       "status": "under_construction",
       "dates": {
@@ -53,13 +56,37 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Trace Group Hold",
+          "role": "builder"
+        },
+        {
+          "name": "Consorzio Armatori Ferroviari S.C.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Start Engineering JSC",
+          "role": "builder"
+        },
+        {
+          "name": "Ekstra Auto Transport",
+          "role": "builder"
+        },
+        {
+          "name": "China Road and Bridge Corporation",
+          "role": "builder"
+        }
+      ],
       "note": {
-        "en": "Pirot Plus Online (22 July 2026) reports a completion deadline of the end of 2027 for the project's four components. This is a press report of a works deadline, not an official opening date.",
-        "ro": "Pirot Plus Online (22 iulie 2026) indică drept termen de finalizare a celor patru componente ale proiectului sfârșitul anului 2027. Este un termen de execuție raportat de presă, nu o dată oficială de deschidere."
+        "en": "Pirot Plus Online (22 July 2026) reports a completion deadline of the end of 2027 for the project's four components. This is a press report of a works deadline, not an official opening date. Trace Group Hold leads the consortium building Sićevo – Dimitrovgrad (with Consorzio Armatori Ferroviari and Start Engineering). Ekstra Auto Transport and China Road and Bridge Corporation build the 22 km Niš bypass from Niš-Ranžirna to Sićevo.",
+        "ro": "Pirot Plus Online (22 iulie 2026) indică drept termen de finalizare a celor patru componente ale proiectului sfârșitul anului 2027. Este un termen de execuție raportat de presă, nu o dată oficială de deschidere. Trace Group Hold conduce consorțiul care construiește Sićevo – Dimitrovgrad (împreună cu Consorzio Armatori Ferroviari și Start Engineering). Ekstra Auto Transport și China Road and Bridge Corporation construiesc varianta de ocolire a orașului Niš, de 22 km, de la Niš-Ranžirna la Sićevo."
       },
       "sourceRefs": [
         "tanjug-works-start-2023",
-        "plusonline-deadline-2026"
+        "plusonline-deadline-2026",
+        "pirotskevesti-contractors-2023",
+        "politika-nis-bypass-2024"
       ],
       "geometryRef": "nis-dimitrovgrad"
     }
@@ -88,6 +115,20 @@
       "title": "Pirot Plus Online: Rekonstrukcija pruge Niš – Dimitrovgrad: Trejs žuri da nadoknadi izgubljeno (22 July 2026)",
       "url": "https://www.plusonline.rs/rekonstrukcija-pruge-ni-dimitrovgrad-trejs-uri-da-nadoknadi-izgubljeno-pruga-u-la-u-dolac-od-1-septembra-radovi-u-si-eva-koj-klisuri",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "pirotskevesti-contractors-2023",
+      "title": "Pirot vesti: Stara pruga od Niša Dimitrovgrada polako odlazi u istoriju! Koliko će koštati rekonstrukcija ove deonice, koji su rokovi? (15 November 2023)",
+      "url": "https://www.pirotskevesti.rs/stara-pruga-od-nisa-dimitrovgrada-polako-odlazi-u-istoriju-koliko-ce-kostati-rekonstrukcija-ove-deonice-koji-su-rokovi-saznajte-sve-detalje-ove-velike-investicije-republike-srbije/",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Pirot vesti"
+    },
+    {
+      "id": "politika-nis-bypass-2024",
+      "title": "Politika: Vučić prisustvovao početku gradnje železničke obilaznice oko Niša (6 July 2024)",
+      "url": "https://www.politika.rs/sr/clanak/621718/vucic-prisustvovao-pocetku-gradnje-zeleznicke-obilaznice-oko-nisa",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Politika"
     }
   ]
 }

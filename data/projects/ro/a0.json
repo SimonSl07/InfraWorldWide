@@ -76,6 +76,36 @@
         "expectedOpening": "2026-10"
       },
       "lengthKm": 14,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 312.63,
+              "currency": "RON",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT. North lot 4 (DN3 Cernica – A2, 4.47 km), SA&PE Construct – Spedition UMB – Tehnostrade."
+            },
+            "date": "2020-08",
+            "note": "North lot 4 contract, signed August 2020.",
+            "sourceRef": "economedia-ro-a0-nord-2026-02"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 397.996,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT. North lot 3 (DN2 Afumați – DN3 Cernica, 8.6 km), China Civil Engineering Construction Corporation: 397,996,117.63 lei."
+            },
+            "date": "2023-03",
+            "note": "North lot 3 contract, signed March 2023.",
+            "sourceRef": "economedia-ro-a0-nord-2026-02"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -98,12 +128,17 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 18
+      },
       "note": {
         "en": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. OpenStreetMap tags construction:opening_date=2026 on the A0 Nord Lot 3 (Afumați–Pantelimon) and Lot 4 (Pantelimon–Manolache) construction ways"
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a0-rom-nia",
-        "economica-net-a0-nord-2026-09"
+        "economica-net-a0-nord-2026-09",
+        "economedia-ro-a0-nord-2026-02"
       ],
       "geometryRef": "north-ring-east"
     },
@@ -193,6 +228,7 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2023-09",
+        "constructionStart": "2025-03",
         "expectedOpening": "2026"
       },
       "lengthKm": 18,
@@ -244,7 +280,8 @@
       "sourceRefs": [
         "wikipedia-ro-autostrada-a0-rom-nia",
         "economedia-ro-a0-nord-2026-02",
-        "economedia-ro-a0-nord-lot-1-2025-01"
+        "economedia-ro-a0-nord-lot-1-2025-01",
+        "economedia-ro-a0-nord-lot-1-2026-06"
       ],
       "geometryRef": "north-ring-west"
     }
@@ -296,6 +333,12 @@
       "title": "Economica.net: Autostrada Bucureștiului A0: Ce lucrări mai trebuie executate la pasajul DN3, pentru ca lotul chinezilor să fie în trafic la finalul lunii viitoare (15 September 2026)",
       "url": "https://www.economica.net/autostrada-bucurestiului-a0-137_976952.html",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economedia-ro-a0-nord-lot-1-2026-06",
+      "title": "Economedia.ro: Autostrada Bucureștiului A0 Nord. Grupul Retter: Lotul 1 al A0 Nord, între DN1A și DN1, va fi finalizat înainte de termenul contractual (25 June 2026)",
+      "url": "https://economedia.ro/video-autostrada-bucurestiului-a0-nord-grupul-retter-lotul-1-al-a0-nord-intre-dn1a-si-dn1-va-fi-finalizat-inainte-de-termenul-contractual-seful-cnair-cristian-pistol-a-spus-ca-intreg-lotul-v.html",
+      "retrievedOn": "2026-09-28"
     }
   ]
 }

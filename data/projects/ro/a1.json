@@ -137,6 +137,12 @@
       },
       "lengthKm": 9.86,
       "cost": {
+        "estimated": {
+          "amount": 2000,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Estimated value of the design-and-build tender launched in March 2019, excluding VAT. Rounded in the source (two billion lei)."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -151,6 +157,23 @@
           }
         ]
       },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund through the Large Infrastructure Operational Programme 2014–2020 (project 128749, covering sections 1, 4 and 5), 85% of eligible costs. HotNews (September 2026) names the Transport Programme 2021–2027 as the funding source.",
+            "ro": "Fondul de Coeziune prin Programul Operațional Infrastructura Mare 2014–2020 (proiectul 128749, pentru secțiunile 1, 4 și 5), 85% din cheltuielile eligibile. HotNews (septembrie 2026) indică Programul Transport 2021–2027 ca sursă de finanțare."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "15% own contribution to eligible costs; non-eligible costs including VAT on top.",
+            "ro": "Contribuție proprie de 15% din cheltuielile eligibile; cheltuielile neeligibile, inclusiv TVA, separat."
+          }
+        }
+      ],
       "contractors": [
         {
           "name": "Porr Construct",
@@ -173,7 +196,9 @@
       },
       "sourceRefs": [
         "hotnews-a1-sibiu-pitesti-99",
-        "cotidianul-tigveni-curtea-de-arges-tests"
+        "cotidianul-tigveni-curtea-de-arges-tests",
+        "economica-pitesti-sibiu-s4-tender",
+        "cnair-sibiu-pitesti-s145-funding"
       ],
       "geometryRef": "pitesti-sibiu-lot4"
     },
@@ -992,6 +1017,21 @@
       "title": "Cotidianul: Ultimele teste pe A1. Când este programată inaugurarea tronsonului Tigveni – Curtea de Argeș (18 September 2026)",
       "url": "https://www.cotidianul.ro/video-ultimele-teste-pe-a1-cand-este-programata-inaugurarea-tronsonului-tigveni-curtea-de-arges/",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "economica-pitesti-sibiu-s4-tender",
+      "title": "Economica.net: Autostrada Sibiu – Piteşti: CNAIR ar putea anunţa în noiembrie constructorul secţiunii 4, Tigveni – Curtea de Argeş (11 March 2019)",
+      "url": "https://www.economica.net/autostrada-sibiu-pitesti-cnair-ar-putea-anunta-in-noiembrie-constructorul-sectiunii-4-tigveni-curtea-de-arges_165916.html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Economica.net"
+    },
+    {
+      "id": "cnair-sibiu-pitesti-s145-funding",
+      "title": "CNAIR: Pregătirea proiectului de Autostradă Sibiu-Pitești și construcția Secțiunilor 1, 4 și 5 (project page, archived 15 September 2025)",
+      "url": "https://www.cnadnr.ro/ro/proiecte/autostrad%C4%83-sibiu-pite%C8%99ti-%C8%99i-construc%C8%9Bia-sec%C8%9Biunilor-1-4-si-5",
+      "retrievedOn": "2026-09-28",
+      "publisher": "CNAIR",
+      "archiveUrl": "https://web.archive.org/web/20250915010136/https://cnadnr.ro/ro/proiecte/autostrad%C4%83-sibiu-pite%C8%99ti-%C8%99i-construc%C8%9Bia-sec%C8%9Biunilor-1-4-si-5"
     }
   ]
 }

@@ -3,16 +3,19 @@
   "country": "bg",
   "category": "highway",
   "name": {
-    "en": "A1 Trakia Motorway"
+    "en": "A1 Trakia Motorway",
+    "ro": "Autostrada A1 Trakia"
   },
   "description": {
-    "en": "Bulgaria's main east–west motorway, 360 km from Sofia to the Black Sea port of Burgas by way of Plovdiv, Stara Zagora, Yambol and Karnobat. Construction began in 1973 and the last section opened on 15 July 2013, 40 years later."
+    "en": "Bulgaria's main east–west motorway, 360 km from Sofia to the Black Sea port of Burgas by way of Plovdiv, Stara Zagora, Yambol and Karnobat. Construction began in 1973 and the last section opened on 15 July 2013, 40 years later.",
+    "ro": "Principala autostradă est–vest a Bulgariei, 360 km de la Sofia la portul Burgas de la Marea Neagră, prin Plovdiv, Stara Zagora, Yambol și Karnobat. Construcția a început în 1973, iar ultimul tronson s-a deschis pe 15 iulie 2013, după 40 de ani."
   },
   "lots": [
     {
       "id": "sofia-novi-han",
       "name": {
-        "en": "Sofia – Novi Han"
+        "en": "Sofia – Novi Han",
+        "ro": "Sofia – Novi Han"
       },
       "status": "opened",
       "dates": {
@@ -38,7 +41,8 @@
     {
       "id": "novi-han-plovdiv",
       "name": {
-        "en": "Novi Han – Plovdiv"
+        "en": "Novi Han – Plovdiv",
+        "ro": "Novi Han – Plovdiv"
       },
       "status": "opened",
       "dates": {
@@ -68,7 +72,8 @@
     {
       "id": "plovdiv-orizovo",
       "name": {
-        "en": "Plovdiv – Orizovo"
+        "en": "Plovdiv – Orizovo",
+        "ro": "Plovdiv – Orizovo"
       },
       "status": "opened",
       "dates": {
@@ -105,7 +110,8 @@
     {
       "id": "orizovo-stara-zagora",
       "name": {
-        "en": "Orizovo – Stara Zagora"
+        "en": "Orizovo – Stara Zagora",
+        "ro": "Orizovo – Stara Zagora"
       },
       "status": "opened",
       "dates": {
@@ -119,7 +125,19 @@
           "amount": 198.16,
           "currency": "BGN",
           "year": 2006
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 46,
+              "currency": "EUR",
+              "year": 2002
+            },
+            "date": "2002",
+            "sourceRef": "ti-bulgaria-2005"
+          }
+        ]
       },
       "funding": [
         {
@@ -146,19 +164,28 @@
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 46,
+          "currency": "EUR",
+          "year": 2002
+        }
+      },
       "sourceRefs": [
         "wikipedia-bg",
         "econ-bg-2007-10-05",
         "trace-lot-1",
         "actualno-2007-11-27",
-        "mrrb-lot-5-opening"
+        "mrrb-lot-5-opening",
+        "ti-bulgaria-2005"
       ],
       "geometryRef": "orizovo-stara-zagora"
     },
     {
       "id": "stara-zagora-nova-zagora",
       "name": {
-        "en": "Stara Zagora – Nova Zagora"
+        "en": "Stara Zagora – Nova Zagora",
+        "ro": "Stara Zagora – Nova Zagora"
       },
       "status": "opened",
       "dates": {
@@ -167,6 +194,26 @@
         "opened": "2012-07-01"
       },
       "lengthKm": 31.8,
+      "cost": {
+        "estimated": {
+          "amount": 64,
+          "currency": "EUR",
+          "note": "Expected value for Lot 2 Stara Zagora – Nova Zagora (32.35 km) in the Phase II project plan published on the PHARE-funded portal stroitelstvo.bg, reproduced by Transparency International Bulgaria in 2005. VAT and price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 137.868,
+              "currency": "BGN",
+              "year": 2010,
+              "note": "Including VAT."
+            },
+            "date": "2010-04-23",
+            "sourceRef": "amtrakia-lot-2"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -197,14 +244,16 @@
       "sourceRefs": [
         "wikipedia-bg",
         "amtrakia-lots-2-4",
-        "amtrakia-lot-2"
+        "amtrakia-lot-2",
+        "ti-bulgaria-2005"
       ],
       "geometryRef": "stara-zagora-nova-zagora"
     },
     {
       "id": "nova-zagora-yambol",
       "name": {
-        "en": "Nova Zagora – Yambol"
+        "en": "Nova Zagora – Yambol",
+        "ro": "Nova Zagora – Yambol"
       },
       "status": "opened",
       "dates": {
@@ -213,6 +262,21 @@
         "opened": "2012-07-12"
       },
       "lengthKm": 35.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 111.645,
+              "currency": "BGN",
+              "year": 2010,
+              "note": "Excluding VAT. 133.97 million BGN including VAT."
+            },
+            "date": "2010-07-14",
+            "sourceRef": "investor-bg-2010-05-19"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -243,14 +307,16 @@
       "sourceRefs": [
         "wikipedia-bg",
         "amtrakia-lots-2-4",
-        "amtrakia-lot-3"
+        "amtrakia-lot-3",
+        "investor-bg-2010-05-19"
       ],
       "geometryRef": "nova-zagora-yambol"
     },
     {
       "id": "yambol-karnobat",
       "name": {
-        "en": "Yambol – Karnobat"
+        "en": "Yambol – Karnobat",
+        "ro": "Yambol – Karnobat"
       },
       "status": "opened",
       "dates": {
@@ -259,6 +325,21 @@
         "opened": "2013-07-15"
       },
       "lengthKm": 49.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 174.7056,
+              "currency": "BGN",
+              "year": 2010,
+              "note": "Excluding VAT. 209.65 million BGN including VAT."
+            },
+            "date": "2010-08-31",
+            "sourceRef": "stroitelstvo-2010-08-31"
+          }
+        ]
+      },
       "funding": [
         {
           "source": "EU",
@@ -290,14 +371,16 @@
         "wikipedia-bg",
         "amtrakia-lots-2-4",
         "amtrakia-2013-07-15",
-        "amtrakia-lot-4"
+        "amtrakia-lot-4",
+        "stroitelstvo-2010-08-31"
       ],
       "geometryRef": "yambol-karnobat"
     },
     {
       "id": "karnobat-burgas",
       "name": {
-        "en": "Karnobat – Burgas"
+        "en": "Karnobat – Burgas",
+        "ro": "Karnobat – Burgas"
       },
       "status": "opened",
       "dates": {
@@ -456,6 +539,21 @@
       "title": "Transparency International Bulgaria: Granting a Concession on Trakia Motorway, Interim Report (April 2005)",
       "url": "https://transparency-bg.org/publications_files/publication_47_1.pdf",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "investor-bg-2010-05-19",
+      "title": "Investor.bg: Гръцката Актор с най-ниска оферта за Лот 3 - 111,6 млн. лв. без ДДС (19 May 2010)",
+      "url": "https://www.investor.bg/a/339-novini-i-analizi/98321-gratskata-aktor-s-nay-niska-oferta-za-lot-3-1116-mln-lv-bez-dds",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Investor.bg"
+    },
+    {
+      "id": "stroitelstvo-2010-08-31",
+      "title": "Строителство.инфо: Лот 4 на магистрала Тракия вече има разрешение за строеж (31 August 2010)",
+      "url": "http://stroitelstvo.info/infrastructure/2010/08/31/953846_lot_4_na_magistrala_trakiia_veche_ima_razreshenie_za/",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Stroitelstvo.info",
+      "archiveUrl": "https://web.archive.org/web/20100903121626/http://stroitelstvo.info/infrastructure/2010/08/31/953846_lot_4_na_magistrala_trakiia_veche_ima_razreshenie_za/"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

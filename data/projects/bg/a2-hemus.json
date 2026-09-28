@@ -3,16 +3,19 @@
   "country": "bg",
   "category": "highway",
   "name": {
-    "en": "A2 Hemus Motorway"
+    "en": "A2 Hemus Motorway",
+    "ro": "Autostrada A2 Hemus"
   },
   "description": {
-    "en": "Motorway running 418 km from Sofia to the Black Sea port of Varna via Shumen, crossing the Balkan Mountains and carrying European routes E70, E83 and E772. Work began on 4 October 1974 and the first section opened in 1999. As of December 2025, 206 km are open in two disconnected stretches, Sofia to Ugarchin (approximately 103 km) and Buhovtsi to Varna (approximately 108 km); the roughly 208 km between Ugarchin and Buhovtsi are under construction or still in planning. The motorway is managed by the Bulgarian Roads Agency, successor to NCSIP."
+    "en": "Motorway running 418 km from Sofia to the Black Sea port of Varna via Shumen, crossing the Balkan Mountains and carrying European routes E70, E83 and E772. Work began on 4 October 1974 and the first section opened in 1999. As of December 2025, 206 km are open in two disconnected stretches, Sofia to Ugarchin (approximately 103 km) and Buhovtsi to Varna (approximately 108 km); the roughly 208 km between Ugarchin and Buhovtsi are under construction or still in planning. The motorway is managed by the Bulgarian Roads Agency, successor to NCSIP.",
+    "ro": "Autostradă de 418 km de la Sofia la portul Varna de la Marea Neagră, prin Shumen, care traversează Munții Balcani și preia drumurile europene E70, E83 și E772. Lucrările au început pe 4 octombrie 1974, iar primul tronson s-a deschis în 1999. În decembrie 2025, 206 km sunt deschiși în două tronsoane neconectate, de la Sofia la Ugarchin (aproximativ 103 km) și de la Buhovtsi la Varna (aproximativ 108 km); cei aproximativ 208 km dintre Ugarchin și Buhovtsi sunt în construcție sau încă în planificare. Autostrada este administrată de Agenția Bulgară de Drumuri, succesoarea NCSIP."
   },
   "lots": [
     {
       "id": "sofia-yana",
       "name": {
-        "en": "Sofia – Yana"
+        "en": "Sofia – Yana",
+        "ro": "Sofia – Yana"
       },
       "status": "opened",
       "dates": {
@@ -104,7 +107,8 @@
     {
       "id": "yana-potop",
       "name": {
-        "en": "Yana – Potop"
+        "en": "Yana – Potop",
+        "ro": "Yana – Potop"
       },
       "status": "opened",
       "dates": {
@@ -120,7 +124,8 @@
     {
       "id": "potop-botevgrad",
       "name": {
-        "en": "Potop – Botevgrad"
+        "en": "Potop – Botevgrad",
+        "ro": "Potop – Botevgrad"
       },
       "status": "opened",
       "dates": {
@@ -136,7 +141,8 @@
     {
       "id": "botevgrad-pravets",
       "name": {
-        "en": "Botevgrad – Pravets"
+        "en": "Botevgrad – Pravets",
+        "ro": "Botevgrad – Pravets"
       },
       "status": "opened",
       "dates": {
@@ -152,7 +158,8 @@
     {
       "id": "pravets-yablanitsa",
       "name": {
-        "en": "Pravets – Yablanitsa"
+        "en": "Pravets – Yablanitsa",
+        "ro": "Pravets – Yablanitsa"
       },
       "status": "opened",
       "dates": {
@@ -160,15 +167,36 @@
         "opened": "1999-12-05"
       },
       "lengthKm": 21.9,
+      "contractors": [
+        {
+          "name": "Мостстрой",
+          "role": "builder"
+        },
+        {
+          "name": "Хидрострой Тунели",
+          "role": "builder"
+        },
+        {
+          "name": "Пътстрой 92",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Partial contractor list. Мостстрой built the viaduct at km 56 (1986–1999).",
+        "ro": "Listă parțială de constructori. Мостстрой a construit viaductul de la km 56 (1986–1999)."
+      },
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "bvplus-hemus-pravets-yablanitsa-1999",
+        "wikipedia-bg-hemus-viaduct-km56"
       ],
       "geometryRef": "pravets-yablanitsa"
     },
     {
       "id": "yablanitsa-boaza",
       "name": {
-        "en": "Yablanitsa – Boaza"
+        "en": "Yablanitsa – Boaza",
+        "ro": "Yablanitsa – Boaza"
       },
       "status": "opened",
       "dates": {
@@ -248,10 +276,13 @@
     {
       "id": "boaza-dermantsi",
       "name": {
-        "en": "Boaza – Dermantsi"
+        "en": "Boaza – Dermantsi",
+        "ro": "Boaza – Dermantsi"
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2018-12-20",
+        "constructionStart": "2019-04-23",
         "opened": "2025-10"
       },
       "lengthKm": 10,
@@ -264,19 +295,34 @@
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Direct award to Avtomagistrali EAD under agreement Д-122 of 20 December 2018, covering km 87+800–222+000. Construction start is the official start of works on 23 April 2019, marked symbolically.",
+        "ro": "Atribuire directă către Avtomagistrali EAD prin acordul Д-122 din 20 decembrie 2018, pentru km 87+800–222+000. Începutul construcției este startul oficial al lucrărilor din 23 aprilie 2019, marcat simbolic."
+      },
       "sourceRefs": [
         "wikipedia-hemus-motorway",
-        "utroruse-api-hemus-boaza-i5"
+        "utroruse-api-hemus-boaza-i5",
+        "api-hemus-km87-222",
+        "gradat-hemus-boaza-dermantsi-2020",
+        "mrrb-hemus-boaza-i5-start"
       ],
       "geometryRef": "boaza-dermantsi"
     },
     {
       "id": "dermantsi-ugarchin",
       "name": {
-        "en": "Dermantsi – Ugarchin"
+        "en": "Dermantsi – Ugarchin",
+        "ro": "Dermantsi – Ugarchin"
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2018-12-20",
         "opened": "2025-12-13"
       },
       "lengthKm": 5,
@@ -289,16 +335,29 @@
           }
         }
       ],
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Direct award to Avtomagistrali EAD under agreement Д-122 of 20 December 2018, covering km 87+800–222+000.",
+        "ro": "Atribuire directă către Avtomagistrali EAD prin acordul Д-122 din 20 decembrie 2018, pentru km 87+800–222+000."
+      },
       "sourceRefs": [
         "wikipedia-hemus-motorway",
-        "utroruse-api-hemus-boaza-i5"
+        "utroruse-api-hemus-boaza-i5",
+        "api-hemus-km87-222",
+        "gradat-hemus-boaza-dermantsi-2020"
       ],
       "geometryRef": "dermantsi-ugarchin"
     },
     {
       "id": "belokopitovo-buhovtsi",
       "name": {
-        "en": "Belokopitovo – Buhovtsi"
+        "en": "Belokopitovo – Buhovtsi",
+        "ro": "Belokopitovo – Buhovtsi"
       },
       "status": "opened",
       "dates": {
@@ -439,6 +498,42 @@
       "title": "Утро Русе (пресцентър на АПИ): На 23 април започва поетапното строителство на АМ „Хемус“ между Боаза и пътя Русе – Велико Търново",
       "url": "https://utroruse.com/article/758486/",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "api-hemus-km87-222",
+      "title": "Агенция „Пътна инфраструктура“: Изграждане на АМ „Хемус“ от км 87+800 до км 222+000",
+      "url": "https://api.bg/bg/izgrazhdane-na-am-khemus-ot-km-87-800-do-km-222-000.html",
+      "archiveUrl": "https://web.archive.org/web/2025id_/https://api.bg/bg/izgrazhdane-na-am-khemus-ot-km-87-800-do-km-222-000.html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Агенция „Пътна инфраструктура“ (API)"
+    },
+    {
+      "id": "gradat-hemus-boaza-dermantsi-2020",
+      "title": "gradat.bg: Усилено се строи 16 км участък от Боаза до Дерманци на АМ „Хемус“ (17 April 2020)",
+      "url": "https://gradat.bg/infrastruktura/usileno-se-stroi-16-km-uchastk-ot-boaza-do-dermanci-na-am-hemus",
+      "retrievedOn": "2026-09-28",
+      "publisher": "gradat.bg"
+    },
+    {
+      "id": "mrrb-hemus-boaza-i5-start",
+      "title": "МРРБ: Започна поетапното строителство на АМ „Хемус“ между Боаза и пътя Русе – Велико Търново (23 April 2019)",
+      "url": "https://www.mrrb.bg/bg/zapochna-poetapnoto-stroitelstvo-na-am-hemus-mejdu-boaza-i-putya-ruse-veliko-turnovo/",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Министерство на регионалното развитие и благоустройството"
+    },
+    {
+      "id": "bvplus-hemus-pravets-yablanitsa-1999",
+      "title": "Ботевградски вести плюс, бр. 49 (6–11 декември 1999): Иван Костов откри участъка Правец – Ябланица на магистрала „Хемус“",
+      "url": "http://bvplus.declera.com/archive/old/archive49_99.htm",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Ботевградски вести плюс"
+    },
+    {
+      "id": "wikipedia-bg-hemus-viaduct-km56",
+      "title": "Уикипедия: Виадукт на километър 56 по АМ „Хемус“",
+      "url": "https://bg.wikipedia.org/wiki/%D0%92%D0%B8%D0%B0%D0%B4%D1%83%D0%BA%D1%82_%D0%BD%D0%B0_%D0%BA%D0%B8%D0%BB%D0%BE%D0%BC%D0%B5%D1%82%D1%8A%D1%80_56_%D0%BF%D0%BE_%D0%90%D0%9C_%E2%80%9E%D0%A5%D0%B5%D0%BC%D1%83%D1%81%E2%80%9C",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Wikipedia"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

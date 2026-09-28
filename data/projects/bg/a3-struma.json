@@ -3,10 +3,12 @@
   "country": "bg",
   "category": "highway",
   "name": {
-    "en": "A3 Struma Motorway"
+    "en": "A3 Struma Motorway",
+    "ro": "Autostrada A3 Struma"
   },
   "description": {
-    "en": "A 172.8 km motorway in southwestern Bulgaria running Sofia–Pernik–Blagoevgrad–Kresna–Kulata, from the capital to the Greek border on Pan-European Corridor IV (European route E-79). Its lots opened between 2013 and 2024; the Kresna Gorge bypass (Lot 3.2) was still under construction as of 2026."
+    "en": "A 172.8 km motorway in southwestern Bulgaria running Sofia–Pernik–Blagoevgrad–Kresna–Kulata, from the capital to the Greek border on Pan-European Corridor IV (European route E-79). Its lots opened between 2013 and 2024; the Kresna Gorge bypass (Lot 3.2) was still under construction as of 2026.",
+    "ro": "Autostradă de 172,8 km în sud-vestul Bulgariei, pe traseul Sofia–Pernik–Blagoevgrad–Kresna–Kulata, de la capitală până la frontiera cu Grecia, pe Coridorul paneuropean IV (drumul european E-79). Loturile sale au fost deschise între 2013 și 2024; varianta de ocolire a defileului Kresna (lotul 3.2) era încă în construcție în 2026."
   },
   "corridors": [
     "pan-european-iv"
@@ -15,7 +17,8 @@
     {
       "id": "dolna-dikanya-dupnitsa",
       "name": {
-        "en": "Dolna Dikanya – Dupnitsa"
+        "en": "Dolna Dikanya – Dupnitsa",
+        "ro": "Dolna Dikanya – Dupnitsa"
       },
       "status": "opened",
       "dates": {
@@ -25,6 +28,12 @@
       },
       "lengthKm": 16.78,
       "cost": {
+        "estimated": {
+          "amount": 100,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Estimated value in the March 2011 contract notice for additional design and construction, excluding VAT."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -69,22 +78,31 @@
       "sourceRefs": [
         "wikipedia-a3-motorway-bulgaria",
         "api-struma-lot-1",
-        "api-struma-overview"
+        "api-struma-overview",
+        "ted-2011-s49-080180"
       ],
       "geometryRef": "dolna-dikanya-dupnitsa"
     },
     {
       "id": "dupnitsa-blagoevgrad",
       "name": {
-        "en": "Dupnitsa – Blagoevgrad"
+        "en": "Dupnitsa – Blagoevgrad",
+        "ro": "Dupnitsa – Blagoevgrad"
       },
       "status": "opened",
       "dates": {
         "tenderAwarded": "2013-02-27",
+        "constructionStart": "2013-07-31",
         "opened": "2015-10"
       },
       "lengthKm": 37.48,
       "cost": {
+        "estimated": {
+          "amount": 200,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Estimated value in the February 2012 contract notice for design and construction, excluding VAT."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -128,14 +146,17 @@
       },
       "sourceRefs": [
         "wikipedia-a3-motorway-bulgaria",
-        "api-struma-lot-2"
+        "api-struma-lot-2",
+        "ted-2012-s41-066384",
+        "patstroy-struma-lot-2-first-sod-2013"
       ],
       "geometryRef": "dupnitsa-blagoevgrad"
     },
     {
       "id": "blagoevgrad-krupnik",
       "name": {
-        "en": "Blagoevgrad – Krupnik"
+        "en": "Blagoevgrad – Krupnik",
+        "ro": "Blagoevgrad – Krupnik"
       },
       "status": "opened",
       "dates": {
@@ -145,6 +166,12 @@
       },
       "lengthKm": 12.6,
       "cost": {
+        "estimated": {
+          "amount": 150,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Estimated value in the August 2014 procurement notice for design and construction of the road sections (12.6 km, without the Zheleznitsa tunnel), excluding VAT."
+        },
         "actual": {
           "amount": 400,
           "currency": "BGN",
@@ -202,14 +229,16 @@
       "sourceRefs": [
         "wikipedia-a3-motorway-bulgaria",
         "api-struma-lot-3-1",
-        "news-bg-zheleznitsa-tunnel-2019"
+        "news-bg-zheleznitsa-tunnel-2019",
+        "aop-struma-lot-3-1-notice"
       ],
       "geometryRef": "blagoevgrad-krupnik"
     },
     {
       "id": "krupnik-kresna-bypass",
       "name": {
-        "en": "Krupnik – Kresna (Kresna Gorge Bypass)"
+        "en": "Krupnik – Kresna (Kresna Gorge Bypass)",
+        "ro": "Krupnik – Kresna (varianta de ocolire a defileului Kresna)"
       },
       "status": "under_construction",
       "dates": {
@@ -279,7 +308,8 @@
     {
       "id": "kresna-sandanski",
       "name": {
-        "en": "Kresna – Sandanski"
+        "en": "Kresna – Sandanski",
+        "ro": "Kresna – Sandanski"
       },
       "status": "opened",
       "dates": {
@@ -352,7 +382,8 @@
     {
       "id": "sandanski-kulata",
       "name": {
-        "en": "Sandanski – Kulata"
+        "en": "Sandanski – Kulata",
+        "ro": "Sandanski – Kulata"
       },
       "status": "opened",
       "dates": {
@@ -362,6 +393,12 @@
       },
       "lengthKm": 14.7,
       "cost": {
+        "estimated": {
+          "amount": 86.05652,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Estimated value in the February 2011 prior information notice for additional design and construction, excluding VAT."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -405,7 +442,8 @@
       },
       "sourceRefs": [
         "wikipedia-a3-motorway-bulgaria",
-        "api-struma-lot-4"
+        "api-struma-lot-4",
+        "ted-2011-s43-070174"
       ],
       "geometryRef": "sandanski-kulata"
     }
@@ -544,6 +582,41 @@
       "url": "https://api.bg/bg/1606223741.html",
       "retrievedOn": "2026-09-25",
       "archiveUrl": "https://web.archive.org/web/20241228011622/https://api.bg/bg/1606223741.html"
+    },
+    {
+      "id": "ted-2011-s49-080180",
+      "title": "TED 2011/S 49-080180: Определяне на изпълнител за допълнително проектиране и строителството на обект „АМ Струма“ лот №1 Долна Диканя – Дупница от км 305+220 до км 322+000 (2011-03-11)",
+      "url": "https://ted.europa.eu/bg/notice/80180-2011/html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Official Journal of the EU (TED)"
+    },
+    {
+      "id": "patstroy-struma-lot-2-first-sod-2013",
+      "title": "Пътстрой-92: Започна строителството на Лот 2 от автомагистрала „Струма“ (2013-07-31)",
+      "url": "https://www.patstroy.com/novini/43-zapochna-stroitelstvoto-na-lot-2-ot-avtomagistrala-struma",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Пътстрой-92 АД"
+    },
+    {
+      "id": "ted-2012-s41-066384",
+      "title": "TED 2012/S 41-066384: Определяне на изпълнител за проектиране и строителството на обект: Автомагистрала „Струма“ лот 2, участък Дупница – Благоевград (2012-02-29)",
+      "url": "https://ted.europa.eu/bg/notice/66384-2012/html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Official Journal of the EU (TED)"
+    },
+    {
+      "id": "ted-2011-s43-070174",
+      "title": "TED 2011/S 43-070174: Обявление за предварителна информация, АМ „Струма“ лот 4, участък „Сандански – Кулата“ (2011-03-03)",
+      "url": "https://ted.europa.eu/bg/notice/70174-2011/html",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Official Journal of the EU (TED)"
+    },
+    {
+      "id": "aop-struma-lot-3-1-notice",
+      "title": "АОП: Обявление за поръчка, проектиране и строителство на Лот 3.1 на АМ „Струма“ (2014, преписка 03461-2014-0005)",
+      "url": "https://www.aop.bg/case2.php?mode=show_doc&doc_id=617759&newver=2",
+      "retrievedOn": "2026-09-28",
+      "publisher": "Агенция по обществени поръчки"
     }
   ]
 }
