@@ -79,6 +79,30 @@
       "cost": {
         "revisions": [
           {
+            "kind": "estimate",
+            "money": {
+              "amount": 466,
+              "currency": "RON",
+              "scope": "works",
+              "note": "Excluding VAT. North lot 3 (DN2 Afumați – DN3 Cernica, 8.6 km) only, design and build tender estimate."
+            },
+            "date": "2019-06-05",
+            "note": "CNAIR tender launch for north lots 1–3, 5 June 2019.",
+            "sourceRef": "ziuacargo-a0-nord-licitatie-2019-06"
+          },
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 314.663,
+              "currency": "RON",
+              "scope": "works",
+              "note": "North lot 4 (Cernica – A2, km 47+600 – km 52+070, 4.5 km) only: estimated contract value 314,662,587 lei. VAT treatment not stated in the source."
+            },
+            "date": "2020-03-04",
+            "note": "Lot 4 design and build tender published in SICAP on 4 March 2020.",
+            "sourceRef": "hotnews-ro-a0-nord-lot-4-2020-03"
+          },
+          {
             "kind": "award",
             "money": {
               "amount": 312.63,
@@ -141,7 +165,9 @@
         "economica-net-a0-nord-2026-09",
         "economedia-ro-a0-nord-2026-02",
         "mediafax-a0-nord-lot-4-2026-06",
-        "cineconstruieste-a0-nord-2026-08"
+        "cineconstruieste-a0-nord-2026-08",
+        "ziuacargo-a0-nord-licitatie-2019-06",
+        "hotnews-ro-a0-nord-lot-4-2020-03"
       ],
       "geometryRef": "north-ring-east"
     },
@@ -160,6 +186,18 @@
       "lengthKm": 19,
       "cost": {
         "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 880,
+              "currency": "RON",
+              "scope": "works",
+              "note": "Excluding VAT. North lot 2 (DN1 Corbeanca – DN2 Afumați, 19 km), design and build tender estimate."
+            },
+            "date": "2019-06-05",
+            "note": "CNAIR tender launch for north lots 1–3, 5 June 2019.",
+            "sourceRef": "ziuacargo-a0-nord-licitatie-2019-06"
+          },
           {
             "kind": "award",
             "money": {
@@ -218,7 +256,8 @@
       ],
       "sourceRefs": [
         "digi24-ro-north-ring-dn1-dn2",
-        "profit-ro-north-ring-dn1-dn2"
+        "profit-ro-north-ring-dn1-dn2",
+        "ziuacargo-a0-nord-licitatie-2019-06"
       ],
       "geometryRef": "north-ring-dn1-dn2"
     },
@@ -237,6 +276,18 @@
       "lengthKm": 18,
       "cost": {
         "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 842,
+              "currency": "RON",
+              "scope": "works",
+              "note": "Excluding VAT. North lot 1 (DJ601A Dragomirești Vale – Bâcu to DN1 Corbeanca, 17.5 km), design and build tender estimate."
+            },
+            "date": "2019-06-05",
+            "note": "CNAIR tender launch for north lots 1–3, 5 June 2019.",
+            "sourceRef": "ziuacargo-a0-nord-licitatie-2019-06"
+          },
           {
             "kind": "award",
             "money": {
@@ -284,7 +335,8 @@
         "wikipedia-ro-autostrada-a0-rom-nia",
         "economedia-ro-a0-nord-2026-02",
         "economedia-ro-a0-nord-lot-1-2025-01",
-        "economedia-ro-a0-nord-lot-1-2026-06"
+        "economedia-ro-a0-nord-lot-1-2026-06",
+        "ziuacargo-a0-nord-licitatie-2019-06"
       ],
       "geometryRef": "north-ring-west"
     }
@@ -356,6 +408,20 @@
       "url": "https://cineconstruieste.ro/doua-noi-loturi-de-pe-a0-nord-ar-urma-sa-fie-deschise-pana-in-octombrie/",
       "publisher": "Cine Construiește",
       "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "ziuacargo-a0-nord-licitatie-2019-06",
+      "title": "Ziua Cargo: Loturile 1, 2 și 3 ale Autostrăzii de Centura București Nord, la licitație (5 June 2019)",
+      "url": "https://www.ziuacargo.ro/cargo/actualitate/loturile-1-2-si-3-ale-autostrazii-de-centura-bucuresti-nord-la-licitatie-157945.html/",
+      "publisher": "Ziua Cargo",
+      "retrievedOn": "2026-10-01"
+    },
+    {
+      "id": "hotnews-ro-a0-nord-lot-4-2020-03",
+      "title": "HotNews.ro: Autostrada de Centură (A0) a Capitalei – Nord: Ultimul tronson, scos la licitație (4 March 2020)",
+      "url": "https://hotnews.ro/stiri-infrastructura_articole-23700905-autostrada-centura-a0-capitalei-nord-ultimul-tronson-scos-licitatie.htm",
+      "publisher": "HotNews.ro",
+      "retrievedOn": "2026-10-01"
     }
   ]
 }

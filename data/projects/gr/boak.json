@@ -88,12 +88,34 @@
         "expectedOpening": "2031"
       },
       "lengthKm": 157,
+      "contract": {
+        "totalMonths": 60,
+        "value": {
+          "amount": 1750,
+          "currency": "EUR",
+          "year": 2025,
+          "note": "Construction cost stated by GEK TERNA at signing of the concession contract. VAT not stated."
+        }
+      },
       "cost": {
         "estimated": {
           "amount": 1750,
           "currency": "EUR",
           "note": "Total budget for the 157 km Chania – Heraklion section, stated by the deputy minister on 21 April 2023 before binding bids. VAT and price year not stated."
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1750,
+              "currency": "EUR",
+              "year": 2025
+            },
+            "date": "2025-05-09",
+            "note": "Construction cost stated by GEK TERNA when the concession contract was signed. VAT not stated.",
+            "sourceRef": "ypodomes-2025-05-09-signing"
+          }
+        ]
       },
       "profile": {
         "lanes": 4,
@@ -318,6 +340,7 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2022-09-05",
+        "constructionStart": "2024-06",
         "expectedOpening": "2027-10-30"
       },
       "lengthKm": 14.5,
@@ -343,6 +366,15 @@
             "ro": "Contract semnat cu AKTOR, cel mai mic ofertant la deschiderea ofertelor din 22 februarie 2022."
           },
           "sourceRef": "ypodomes-2022-09-05"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-06",
+          "note": {
+            "en": "Excavation and blasting at km 193–195 of the existing road were reported.",
+            "ro": "Au fost raportate excavări și derocări cu explozibil la km 193–195 ai drumului existent."
+          },
+          "sourceRef": "ypodomes-2024-07-01"
         }
       ],
       "contract": {

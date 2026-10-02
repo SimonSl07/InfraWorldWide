@@ -92,13 +92,20 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Pantechniki",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Completed the Igoumenitsa – Ioannina stretch.",
         "ro": "A completat porțiunea Igoumenitsa – Ioannina."
       },
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "egnatia-contracts-2007-05"
       ],
       "geometryRef": "neochori-eleftherochori"
     },
@@ -228,13 +235,20 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Aktor",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Includes the twin-tube Dodoni tunnel, 3.3 km per bore.",
         "ro": "Include tunelul dublu Dodoni, de 3,3 km pe tub."
       },
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "aktor-dodoni-tunnels"
       ],
       "geometryRef": "dodoni-pedini"
     },
@@ -273,9 +287,20 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "TEB – Themeliodomi – Pantechniki JV",
+          "role": "builder"
+        },
+        {
+          "name": "Themeliodomi",
+          "role": "builder"
+        }
+      ],
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "egnatia-contracts-2004-02"
       ],
       "geometryRef": "pedini-ioannina"
     },
@@ -407,15 +432,22 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Aktor",
+          "role": "builder"
+        }
+      ],
       "note": {
-        "en": "Opened without the Peristeri bridge. That 900 m sub-section, from the Demati tunnel exit to bridge T9–T11, was finished last: its left carriageway opened on 10 May 2014, after which Egnatia Odos A.E. reported traffic running without restriction over the whole 670 km.",
-        "ro": "Deschis fără podul Peristeri. Acel subtronson de 900 m, de la ieșirea din tunelul Demati la podul T9–T11, a fost terminat ultimul: calea stângă a fost deschisă la 10 mai 2014, după care Egnatia Odos A.E. a anunțat circulație fără restricții pe toți cei 670 km."
+        "en": "Opened without the Peristeri bridge. That 900 m sub-section, from the Demati tunnel exit to bridge T9–T11, was finished last: its left carriageway opened on 10 May 2014, after which Egnatia Odos A.E. reported traffic running without restriction over the whole 670 km. Aktor built bridges T9–T11 (409 m and 365 m), which it gives as completed in 2010.",
+        "ro": "Deschis fără podul Peristeri. Acel subtronson de 900 m, de la ieșirea din tunelul Demati la podul T9–T11, a fost terminat ultimul: calea stângă a fost deschisă la 10 mai 2014, după care Egnatia Odos A.E. a anunțat circulație fără restricții pe toți cei 670 km. Aktor a construit podurile T9–T11 (409 m și 365 m), pe care le indică drept terminate în 2010."
       },
       "sourceRefs": [
         "wikipedia-el-egnatia",
         "egnatia-construction",
         "ypodomes-2014-05-16",
-        "capital-2009-01-13"
+        "capital-2009-01-13",
+        "aktor-arachthos-peristeri-bridges"
       ],
       "geometryRef": "arachthos-peristeri"
     },
@@ -430,6 +462,13 @@
         "opened": "2006-02-23"
       },
       "lengthKm": 9,
+      "cost": {
+        "actual": {
+          "amount": 265,
+          "currency": "EUR",
+          "note": "Including VAT. Construction cost of the section from the Peristeri interchange to the Metsovo interchange, stated by Egnatia Odos A.E. at its inauguration on 21 December 2005; price year not stated."
+        }
+      },
       "profile": {
         "lanes": 4
       },
@@ -454,9 +493,21 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Aktor – AVAX – ETETH JV",
+          "role": "builder"
+        },
+        {
+          "name": "Michaniki – AVAX – Athena – Mochlos JV",
+          "role": "builder"
+        }
+      ],
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "egnatia-contracts-2004-02",
+        "egnatia-press-2005-12-21"
       ],
       "geometryRef": "peristeri-metsovo"
     },
@@ -515,6 +566,8 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2005-04-18",
+        "constructionStart": "2005",
         "opened": "2009-05-30"
       },
       "lengthKm": 31,
@@ -533,6 +586,20 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "ATTIKAT",
+          "role": "builder"
+        },
+        {
+          "name": "Pantechniki – Aktor JV",
+          "role": "builder"
+        },
+        {
+          "name": "Ing. Nino Ferrari Impresa Costruzioni Generali – Consorzio Stabile Italimprese JV",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Last section of the main axis, opened at a ceremony on the Venetikos bridge near Grevena on 30 May 2009. In 2003 Panagia – Grevena was outside the funded programme and alternative financing was being studied.",
         "ro": "Ultimul tronson al axei principale, deschis la o ceremonie pe podul Venetikos, lângă Grevena, la 30 mai 2009. În 2003 Panagia – Grevena era în afara programului finanțat și se studiau surse alternative de finanțare."
@@ -541,7 +608,9 @@
         "wikipedia-el-egnatia",
         "egnatia-construction",
         "tovima-2009-06-07",
-        "tee-2003"
+        "tee-2003",
+        "egnatia-contracts-2007-05",
+        "attikat-erga"
       ],
       "geometryRef": "panagia-venetikos"
     },
@@ -608,13 +677,20 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "AEGEK",
+          "role": "builder"
+        }
+      ],
       "note": {
-        "en": "Includes the Taxiarchis tunnel.",
-        "ro": "Include tunelul Taxiarchis."
+        "en": "Includes the Taxiarchis tunnel. Contract 4.2.2 (Grevena – Kozani, ch. 6+000 – 19+000, 13 km, with a 2 x 280 m tunnel) was built by AEGEK from 09/1997 to 12/2001. The builder gives the contract value as 21,290 million drachma (EUR 62.48 million at 340.75 GRD per euro), without a signing date or VAT treatment.",
+        "ro": "Include tunelul Taxiarchis. Contractul 4.2.2 (Grevena – Kozani, km 6+000 – 19+000, 13 km, cu un tunel de 2 x 280 m) a fost executat de AEGEK între 09/1997 și 12/2001. Constructorul indică valoarea contractului ca 21.290 milioane de drahme (62,48 milioane EUR la 340,75 GRD/euro), fără dată de semnare sau regim TVA."
       },
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "aegek-grevena-siatista"
       ],
       "geometryRef": "grevena-east-siatista-east"
     },
@@ -626,6 +702,7 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "1996-09",
         "opened": "2000-07"
       },
       "lengthKm": 24,
@@ -644,9 +721,20 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "AEGEK",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "AEGEK built contract 4.2.4, 20 km of the Grevena – Kozani section, from 9/1996 to 02/2000; Greek Wikipedia cites it for this lot. The builder gives the contract value as 8,987.36 million drachma (EUR 26.38 million at 340.75 GRD per euro), without a signing date or VAT treatment.",
+        "ro": "AEGEK a executat contractul 4.2.4, 20 km din sectorul Grevena – Kozani, între 9/1996 și 02/2000; Wikipedia în greacă îl citează pentru acest tronson. Constructorul indică valoarea contractului ca 8.987,36 milioane de drahme (26,38 milioane EUR la 340,75 GRD/euro), fără dată de semnare sau regim TVA."
+      },
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "aegek-siatista-kozani"
       ],
       "geometryRef": "siatista-east-kozani"
     },
@@ -690,6 +778,7 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "1999",
         "opened": "2004-12-20"
       },
       "lengthKm": 26,
@@ -727,13 +816,25 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "ATTIKAT – K.I. Sarantopoulos – J&P (Hellas) – TEGK JV",
+          "role": "builder"
+        },
+        {
+          "name": "Aktor – Michaniki – Techniki Olympiaki – I.G. Korontzis JV",
+          "role": "builder"
+        }
+      ],
       "note": {
         "en": "Crosses the Vermio mountains between Western and Central Macedonia, with twin-tube tunnels of 7 km per bore and bridges of 1.4 km per carriageway.",
         "ro": "Traversează munții Vermio, între Macedonia de Vest și Macedonia Centrală, cu tuneluri duble de 7 km pe tub și poduri de 1,4 km pe cale."
       },
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "egnatia-contracts-2004-02",
+        "attikat-erga"
       ],
       "geometryRef": "polymylos-veria"
     },
@@ -981,6 +1082,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2003-12-17",
         "opened": "2006-09"
       },
       "lengthKm": 8,
@@ -1008,9 +1110,17 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "J&P-AVAX – Bioter JV",
+          "role": "builder"
+        }
+      ],
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "egnatia-contracts-2007-05",
+        "avax-nymfopetra-rentina"
       ],
       "geometryRef": "nymfopetra-megali-volvi"
     },
@@ -1068,6 +1178,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2003-12-17",
         "opened": "2006-09"
       },
       "lengthKm": 8,
@@ -1095,9 +1206,17 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "J&P-AVAX – Bioter JV",
+          "role": "builder"
+        }
+      ],
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "egnatia-contracts-2007-05",
+        "avax-nymfopetra-rentina"
       ],
       "geometryRef": "rentina-asprovalta"
     },
@@ -1136,9 +1255,24 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "AVAX",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 108,
+          "currency": "EUR",
+          "note": "Contract value as stated by the builder AVAX. The source gives no signing date and does not say whether VAT or price revisions are included. Contract period 1998–2004."
+        }
+      },
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "avax-asprovalta-strymonas",
+        "avax-asprovalta-strymonas-el"
       ],
       "geometryRef": "asprovalta-strymonas"
     },
@@ -1150,6 +1284,7 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2006-04",
         "opened": "2009-01-13"
       },
       "lengthKm": 41,
@@ -1181,14 +1316,22 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "AVAX",
+          "role": "builder"
+        }
+      ],
       "note": {
-        "en": "Runs 41 km on the inland alignment from the Strymonas river to the start of the Kavala bypass, replacing the coastal national road. Greek Wikipedia's table gives 9 km, the length of Arachthos – Chrysovitsa in the same 2009 announcement.",
-        "ro": "Are 41 km pe traseul interior, de la râul Strymonas până la începutul variantei Kavala, și înlocuiește drumul național de pe coastă. Tabelul din Wikipedia în greacă indică 9 km, lungimea tronsonului Arachthos – Chrysovitsa din același anunț din 2009."
+        "en": "Runs 41 km on the inland alignment from the Strymonas river to the start of the Kavala bypass, replacing the coastal national road. Greek Wikipedia's table gives 9 km, the length of Arachthos – Chrysovitsa in the same 2009 announcement. The minister said the contract was signed in April 2006. AVAX lists its contract on this section as 25 km, from the Strymonas interchange via Mousthenis to the exit of the Symvolo tunnel, worth EUR 56 million over 2006–2009, VAT treatment not stated.",
+        "ro": "Are 41 km pe traseul interior, de la râul Strymonas până la începutul variantei Kavala, și înlocuiește drumul național de pe coastă. Tabelul din Wikipedia în greacă indică 9 km, lungimea tronsonului Arachthos – Chrysovitsa din același anunț din 2009. Ministrul a declarat că contractul a fost semnat în aprilie 2006. AVAX indică propriul contract pe acest tronson ca 25 km, de la nodul Strymonas prin Mousthenis până la ieșirea din tunelul Symvolo, în valoare de 56 milioane EUR pentru 2006–2009, fără regim TVA declarat."
       },
       "sourceRefs": [
         "wikipedia-el-egnatia",
         "egnatia-construction",
-        "capital-2009-01-13"
+        "capital-2009-01-13",
+        "avax-strymonas-agios-andreas",
+        "avax-strymonas-agios-andreas-el"
       ],
       "geometryRef": "strymonas-agios-andreas"
     },
@@ -1427,9 +1570,20 @@
           "source": "national_budget"
         }
       ],
+      "contractors": [
+        {
+          "name": "Aktor – AVAX – ETETH JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Contract 14.2.2, the Xanthi bypass from the Vaniano to the Vafeika interchange with the Petrochori – Vaniano link road, was signed on 6 August 1998 and completed on 30 June 2002 by the Aktor – AVAX – ETETH JV, at a final cost of EUR 35.76 million, VAT treatment not stated. No figures were found for the rest of the lot.",
+        "ro": "Contractul 14.2.2, varianta de ocolire Xanthi de la nodul Vaniano la nodul Vafeika, cu drumul de legătură Petrochori – Vaniano, a fost semnat la 6 august 1998 și terminat la 30 iunie 2002 de asocierea Aktor – AVAX – ETETH, cu un cost final de 35,76 milioane EUR, fără regim TVA declarat. Nu s-au găsit cifre pentru restul tronsonului."
+      },
       "sourceRefs": [
         "wikipedia-el-egnatia",
-        "egnatia-construction"
+        "egnatia-construction",
+        "eteth-xanthi-bypass"
       ],
       "geometryRef": "vaniano-komotini-west"
     },
@@ -1687,6 +1841,110 @@
       "title": "capital.gr: Δόθηκαν στην κυκλοφορία 70 χλμ. της Εγνατίας Οδού (13 January 2009)",
       "url": "https://www.capital.gr/oikonomia/653857/dothikan-stin-kukloforia-70-xlm-tis-egnatias-odou/",
       "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "avax-asprovalta-strymonas",
+      "title": "AVAX: Egnatia National Highway, Section Asprovalta – Strimonas (project reference)",
+      "url": "https://avax.gr/en/ta-erga-mas/tmima-egnatias-asprovalta-strimonas/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AVAX S.A."
+    },
+    {
+      "id": "avax-asprovalta-strymonas-el",
+      "title": "AVAX: Τμήμα Εγνατίας Οδού Ασπροβάλτα-Στρυμώνας (project reference)",
+      "url": "https://avax.gr/ta-erga-mas/tmima-egnatias-asprovalta-strimonas/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AVAX S.A."
+    },
+    {
+      "id": "aktor-arachthos-peristeri-bridges",
+      "title": "AKTOR: Τμήμα Γεφυρών Άραχθος – Περιστέρι (project reference)",
+      "url": "https://aktor.gr/projects/tmima-gefyron-arachthos-peristeri/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AKTOR S.A."
+    },
+    {
+      "id": "aktor-dodoni-tunnels",
+      "title": "AKTOR: Σήραγγες Δωδώνης οδικές στον Αυτοκινητόδρομο 2 (Εγναντία Οδός, Ελλάδα) (project reference)",
+      "url": "https://aktor.gr/projects/siranges-dodonis-odikes-ston-aftokinitodromo-2-egnantia-odos-ellada/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AKTOR S.A."
+    },
+    {
+      "id": "aegek-grevena-siatista",
+      "title": "AEGEK: ΕΓΝΑΤΙΑ ΟΔΟΣ 4.2.2: Γρεβενά-Κοζάνη Χ.Θ. 6+000 - 19+000 (project sheet)",
+      "url": "http://www.aegek.gr/aegek11.asp",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AEGEK",
+      "archiveUrl": "https://web.archive.org/web/20050208221323/http://www.aegek.gr/aegek11.asp"
+    },
+    {
+      "id": "aegek-siatista-kozani",
+      "title": "AEGEK: Αυτοκινητόδρομος Εγνατία, Σύμβαση 4.2.4 (project sheet)",
+      "url": "http://www.aegek.gr/aegek08.asp",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AEGEK",
+      "archiveUrl": "https://web.archive.org/web/20050208220631/http://www.aegek.gr/aegek08.asp"
+    },
+    {
+      "id": "egnatia-contracts-2004-02",
+      "title": "Egnatia Odos A.E.: Τι κατασκευάζεται (contract list, February 2004)",
+      "url": "http://www.egnatia.gr/text/progress_underconmore_gr.html",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Egnatia Odos A.E.",
+      "archiveUrl": "https://web.archive.org/web/20040227061654/http://www.egnatia.gr:80/text/progress_underconmore_gr.html"
+    },
+    {
+      "id": "egnatia-contracts-2007-05",
+      "title": "Egnatia Odos A.E.: Τι κατασκευάζεται (contracts in progress, May 2007)",
+      "url": "http://www.egnatia.gr/flash/progress_underconmore_gr.html",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Egnatia Odos A.E.",
+      "archiveUrl": "https://web.archive.org/web/20070527212939/http://www.egnatia.gr:80/flash/progress_underconmore_gr.html"
+    },
+    {
+      "id": "egnatia-press-2005-12-21",
+      "title": "Egnatia Odos A.E. press release: inauguration of Peristeri – Metsovo (21 December 2005)",
+      "url": "http://www.egnatia.gr/flash/news_press75_gr.html",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Egnatia Odos A.E.",
+      "archiveUrl": "https://web.archive.org/web/20070607215412/http://www.egnatia.gr/flash/news_press75_gr.html"
+    },
+    {
+      "id": "avax-nymfopetra-rentina",
+      "title": "AVAX: Τμήμα Εγνατίας Νυμφόπετρα – Ρεντίνα (project reference)",
+      "url": "https://avax.gr/ta-erga-mas/tmina-egnatias-nimfopetra-rentina/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AVAX S.A."
+    },
+    {
+      "id": "attikat-erga",
+      "title": "ATTI-KAT: Έργα (project references)",
+      "url": "https://www.attikat.gr/erga/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "ATTI-KAT A.T.E."
+    },
+    {
+      "id": "avax-strymonas-agios-andreas",
+      "title": "AVAX: Egnatia National Highway, Section Strimonas – Agios Andreas (project reference)",
+      "url": "https://avax.gr/en/ta-erga-mas/tmima-egnatias-strimonas-agios-andreas/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AVAX S.A."
+    },
+    {
+      "id": "avax-strymonas-agios-andreas-el",
+      "title": "AVAX: Τμήμα Εγνατίας Οδού Στρυμώνας – Αγ. Ανδρέας (project reference)",
+      "url": "https://avax.gr/ta-erga-mas/tmima-egnatias-strimonas-agios-andreas/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "AVAX S.A."
+    },
+    {
+      "id": "eteth-xanthi-bypass",
+      "title": "ETETH: ΕΓΝΑΤΙΑ ΟΔΟΣ: τμήμα Παράκαμψης Ξάνθης-Α.Κ. Βανιάνου έως Α.Κ. Βαφέικων (14.2.2) (project reference)",
+      "url": "http://www.eteth.gr/index.php/el/m-rg-pdms42-el",
+      "retrievedOn": "2026-10-01",
+      "publisher": "ETETH S.A. (ATHENA group)",
+      "archiveUrl": "https://web.archive.org/web/20130105114404/http://www.eteth.gr/index.php/el/m-rg-pdms42-el"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
