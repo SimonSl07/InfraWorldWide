@@ -41,6 +41,19 @@
             "date": "2011-08-01",
             "note": "Works contract RD-33-16 signed 1 August 2011, from the API Lot 1 page.",
             "sourceRef": "api-maritsa-lot-1"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 42.786359,
+              "currency": "BGN",
+              "year": 2015,
+              "scope": "works",
+              "note": "Excluding VAT, from the price opening of 25 May 2015. 51.3436308 million leva including VAT. Separate additional works contract with Пътища Пловдив АД on Lot 1 Orizovo – Dimitrovgrad: stabilising embankment foundations, reinforcing cutting slopes and a drainage canal crossing at km 26+070."
+            },
+            "date": "2015",
+            "note": "Let by open procedure after cutting slopes slipped because of differences in the geological surveys and heavy rain. A separate contract with a different firm, not a variation of the CMC Ravenna contract. Price offers opened 25 May 2015; signing date not stated.",
+            "sourceRef": "api-maritsa-lot-1-additional-works-position"
           }
         ]
       },
@@ -67,9 +80,14 @@
         {
           "name": "Кооперативно дружество „Кооператива Муратори & Чементисти – Чи. Ем. Чи. Ди. Равенна“",
           "role": "builder"
+        },
+        {
+          "name": "Пътища Пловдив АД",
+          "role": "builder"
         }
       ],
       "contract": {
+        "totalMonths": 32,
         "value": {
           "amount": 133.129678,
           "currency": "BGN",
@@ -79,13 +97,16 @@
         }
       },
       "note": {
-        "en": "Dates, cost and contractor are for API Lot 1 Orizovo – Dimitrovgrad (km 5+000 – 36+400), built 2011–2015. The first 5 km from Orizovo had been built earlier.",
-        "ro": "Datele, costul și constructorul se referă la lotul 1 API Orizovo – Dimitrovgrad (km 5+000 – 36+400), construit în 2011–2015. Primii 5 km de la Orizovo fuseseră construiți anterior."
+        "en": "Dates, cost and contractor are for API Lot 1 Orizovo – Dimitrovgrad (km 5+000 – 36+400), built 2011–2015. The first 5 km from Orizovo had been built earlier. Contract duration stated as 31 months and 29 calendar days. Пътища Пловдив АД built only the additional slope-stabilisation and drainage works on Lot 1, under a separate contract.",
+        "ro": "Datele, costul și constructorul se referă la lotul 1 API Orizovo – Dimitrovgrad (km 5+000 – 36+400), construit în 2011–2015. Primii 5 km de la Orizovo fuseseră construiți anterior. Durata contractului declarată: 31 de luni și 29 de zile calendaristice. Пътища Пловдив АД a executat doar lucrările suplimentare de stabilizare a taluzurilor și de drenaj pe lotul 1, printr-un contract separat."
       },
       "sourceRefs": [
         "wikipedia-maritsa-motorway",
         "api-maritsa-lot-1",
-        "api-maritsa-programme"
+        "api-maritsa-programme",
+        "api-maritsa-lot-1-additional-works-position",
+        "api-maritsa-lot-1-additional-works-offers",
+        "api-maritsa-lot-1-2022"
       ],
       "geometryRef": "chirpan-haskovo"
     },
@@ -257,6 +278,27 @@
       "url": "https://bg.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%B8%D1%86%D0%B0_(%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B0)",
       "retrievedOn": "2026-09-28",
       "publisher": "Wikipedia (bg)"
+    },
+    {
+      "id": "api-maritsa-lot-1-additional-works-position",
+      "title": "Агенция „Пътна инфраструктура“: Позиция относно публикации в медиите за АМ „Марица“, лот 1 (27 April 2017, archived)",
+      "url": "https://web.archive.org/web/20170430071421/http://www.api.bg:80/index.php/bg/prescentar/novini/poziciya-na-api-otnosno-publikacii-v-mediite-za-am-marica-lot-1",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Агенция „Пътна инфраструктура“"
+    },
+    {
+      "id": "api-maritsa-lot-1-additional-works-offers",
+      "title": "Агенция „Пътна инфраструктура“: Отворени ценови оферти за допълнителни строителни работи на лот 1 на АМ „Марица“ (25 May 2015, archived)",
+      "url": "https://web.archive.org/web/20150923172851/http://www.api.bg/index.php/bg/prescentar/novini/2-sa-otvorenite-cenovi-oferti-za-doplnitelni-stroitelni-raboti-na-lot-1-na-am-marica/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Агенция „Пътна инфраструктура“"
+    },
+    {
+      "id": "api-maritsa-lot-1-2022",
+      "title": "Агенция „Пътна инфраструктура“: АМ „Марица“ лот 1 (archived 2022)",
+      "url": "https://web.archive.org/web/2022/https://api.bg/bg/1606222225.html",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Агенция „Пътна инфраструктура“"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
