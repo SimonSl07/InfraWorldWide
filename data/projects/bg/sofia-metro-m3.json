@@ -8,8 +8,8 @@
     "ro": "Magistrala M3 a metroului din Sofia (Gorna Banya – Levski)"
   },
   "description": {
-    "en": "The green line, Sofia's third metro diameter, linking Ovcha Kupel and Gorna Banya in the south-west with the city centre and the Hadzhi Dimitar and Levski estates in the north-east. Unlike the older lines it uses 1,500 V overhead catenary and driverless Siemens trains behind platform screen doors. The 7.8 km central stage with eight stations opened on 26 August 2020 and a 3.8 km western stage with four stations followed on 24 April 2021, at a combined cost of about €500 million with EU grants covering roughly four fifths. A 3 km, three-station extension under Gen. Vladimir Vazov Blvd to the Levski estate, built from March 2022 with Recovery and Resilience Facility money, is complete and due to carry passengers from 14 August 2026. A six-station branch through Slatina, numbered M6, splits east of Orlov Most and is still under construction.",
-    "ro": "Linia verde, al treilea diametru al metroului din Sofia, care leagă Ovcha Kupel și Gorna Banya, în sud-vest, de centrul orașului și de cartierele Hadzhi Dimitar și Levski, în nord-est. Spre deosebire de liniile mai vechi, folosește catenară de 1.500 V și trenuri Siemens fără mecanic, cu uși de peron. Etapa centrală de 7,8 km, cu opt stații, a fost deschisă pe 26 august 2020, iar o etapă vestică de 3,8 km, cu patru stații, a urmat pe 24 aprilie 2021, la un cost combinat de circa 500 de milioane de euro, din care granturile europene au acoperit aproximativ patru cincimi. O prelungire de 3 km, cu trei stații, pe sub bulevardul Gen. Vladimir Vazov, spre cartierul Levski, construită din martie 2022 cu bani din Mecanismul de redresare și reziliență, este finalizată și urmează să preia călători de la 14 august 2026. O ramură cu șase stații prin Slatina, numerotată M6, se desprinde la est de Orlov Most și este încă în construcție."
+    "en": "The green line, Sofia's third metro diameter, linking Ovcha Kupel and Gorna Banya in the south-west with the city centre and the Hadzhi Dimitar and Levski estates in the north-east. Unlike the older lines it uses 1,500 V overhead catenary and driverless Siemens trains behind platform screen doors. The 7.8 km central stage with eight stations opened on 26 August 2020 and a 3.8 km western stage with four stations followed on 24 April 2021, at a combined cost of about €500 million with EU grants covering roughly four fifths. A 3 km, three-station extension under Gen. Vladimir Vazov Blvd to the Levski estate, built from March 2022 with Recovery and Resilience Facility money, is complete and due to carry passengers from 14 August 2026. A 6 km, six-station branch through Slatina, numbered M6, splits east of Orlov Most and has been under construction since November 2023.",
+    "ro": "Linia verde, al treilea diametru al metroului din Sofia, care leagă Ovcha Kupel și Gorna Banya, în sud-vest, de centrul orașului și de cartierele Hadzhi Dimitar și Levski, în nord-est. Spre deosebire de liniile mai vechi, folosește catenară de 1.500 V și trenuri Siemens fără mecanic, cu uși de peron. Etapa centrală de 7,8 km, cu opt stații, a fost deschisă pe 26 august 2020, iar o etapă vestică de 3,8 km, cu patru stații, a urmat pe 24 aprilie 2021, la un cost combinat de circa 500 de milioane de euro, din care granturile europene au acoperit aproximativ patru cincimi. O prelungire de 3 km, cu trei stații, pe sub bulevardul Gen. Vladimir Vazov, spre cartierul Levski, construită din martie 2022 cu bani din Mecanismul de redresare și reziliență, este finalizată și urmează să preia călători de la 14 august 2026. O ramură de 6 km, cu șase stații, prin Slatina, numerotată M6, se desprinde la est de Orlov Most și este în construcție din noiembrie 2023."
   },
   "operator": "bg-sofia-metropoliten",
   "lots": [
@@ -277,6 +277,97 @@
         "sofia-bg-levski-start-2022"
       ],
       "geometryRef": "stage3-hadzhi-dimitar-levski"
+    },
+    {
+      "id": "slatina-branch-m6",
+      "name": {
+        "en": "Slatina branch (M6): Shipka St – Tsarigradsko shose",
+        "ro": "Ramura Slatina (M6): str. Shipka – bd. Tsarigradsko shose"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023-11-27"
+      },
+      "lengthKm": 6,
+      "cost": {
+        "estimated": {
+          "amount": 540,
+          "currency": "BGN",
+          "year": 2023,
+          "scope": "total",
+          "note": "Excluding VAT. Total project value Metropoliten gave at the construction start, covering the five contracts (lots 1–5, lot 5 Siemens Mobility). Not stated as the sum of the contract awards."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023-11-27",
+          "note": {
+            "en": "Construction formally started at the site by Arena Sofia on Asen Yordanov Blvd",
+            "ro": "Construcția a început oficial pe șantierul de lângă Arena Sofia, pe bd. Asen Yordanov"
+          },
+          "sourceRef": "metropoliten-slatina-start-2023"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 106.6,
+            "currency": "BGN",
+            "year": 2023
+          },
+          "detail": {
+            "en": "Cohesion Fund grant of BGN 106.6 million",
+            "ro": "Grant din Fondul de coeziune de 106,6 milioane de leva"
+          }
+        },
+        {
+          "source": "other",
+          "amount": {
+            "amount": 433.4,
+            "currency": "BGN",
+            "year": 2023
+          },
+          "detail": {
+            "en": "Co-financing and a European Investment Bank loan, BGN 433.4 million combined",
+            "ro": "Cofinanțare și un împrumut de la Banca Europeană de Investiții, în total 433,4 milioane de leva"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „Метро Шипка” (lot 1)",
+          "role": "builder"
+        },
+        {
+          "name": "ДЗЗД „Метро Слатина” (lot 2)",
+          "role": "builder"
+        },
+        {
+          "name": "ДЗЗД „Метробилд Изток” (lot 3)",
+          "role": "builder"
+        },
+        {
+          "name": "ДЗЗД ДВУ 21 (lot 4)",
+          "role": "builder"
+        },
+        {
+          "name": "„Сименс Мобилити” ЕООД (lot 5)"
+        }
+      ],
+      "contract": {
+        "totalMonths": 40
+      },
+      "note": {
+        "en": "Branch of line 3, numbered M6: 6 km and six underground stations from Shipka St, under the Military Academy park, through Geo Milev and Slatina and past Arena Sofia and Sofia Tech Park to Tsarigradsko shose. The tunnels are bored with a TBM that holds counter-pressure at the face. Construction formally began on 27 November 2023; the five contracts run 40 months, from 24 November 2023 to February 2027. Metropoliten put the project at BGN 540 million excluding VAT: BGN 106.6 million from the Cohesion Fund and BGN 433.4 million co-financing and an EIB loan. At the start it expected the section ready in early 2027.",
+        "ro": "Ramură a liniei 3, numerotată M6: 6 km și șase stații subterane de la str. Shipka, pe sub parcul Academiei Militare, prin Geo Milev și Slatina, pe lângă Arena Sofia și Sofia Tech Park, până la Tsarigradsko shose. Tunelurile se sapă cu un scut TBM cu contrapresiune la front. Construcția a început oficial pe 27 noiembrie 2023; cele cinci contracte durează 40 de luni, de la 24 noiembrie 2023 până în februarie 2027. Metropoliten a estimat proiectul la 540 de milioane de leva fără TVA: 106,6 milioane de leva din Fondul de coeziune și 433,4 milioane de leva cofinanțare și împrumut BEI. La început, se aștepta ca tronsonul să fie gata la începutul lui 2027."
+      },
+      "sourceRefs": [
+        "metropoliten-slatina-start-2023"
+      ],
+      "geometryRef": "slatina-branch-m6"
     }
   ],
   "sources": [
@@ -378,6 +469,13 @@
       "title": "Sofia Municipality: Започна разширението на Третата линия на метрото към ж.к. „Левски” (21 March 2022)",
       "url": "https://www.sofia.bg/w/zapocna-razsirenieto-na-tretata-linia-na-metroto-k-m-z-k-levski-",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "metropoliten-slatina-start-2023",
+      "title": "Metropoliten: Construction of six new metro stations through Slatina to Arena Sofia and Tsarigradsko shose has begun (27 November 2023)",
+      "url": "https://www.metropolitan.bg/aktualno/zapochna-stroitelstvoto-na-6-novi-metrostanczii-prez-%E2%80%9Eslatina%E2%80%9D-do-%E2%80%9Earena-sofiya%E2%80%9D-i-%E2%80%9Eczarigradsko-shose%E2%80%9D",
+      "publisher": "Metropoliten EAD",
+      "retrievedOn": "2026-10-02"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

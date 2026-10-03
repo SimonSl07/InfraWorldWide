@@ -293,6 +293,56 @@
         "infrazs-ppf9-deonica-3-paracin-trupale"
       ],
       "geometryRef": "djunis-trupale"
+    },
+    {
+      "id": "trupale-medjurovo",
+      "name": {
+        "en": "Trupale – Međurovo (Niš)",
+        "ro": "Trupale – Međurovo (Niš)"
+      },
+      "status": "tendered",
+      "lengthKm": 6.7,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-08-04",
+          "note": {
+            "en": "Prequalification call (EIB rules) for one design-and-build contract covering Paraćin – Stalać, Đunis – Trupale and Trupale – Međurovo. Applications close 2 October 2026. Indicative contract start 15 November 2026, 48 months for the combined contract.",
+            "ro": "Apel de precalificare (reguli BEI) pentru un singur contract de proiectare și execuție care acoperă Paraćin – Stalać, Đunis – Trupale și Trupale – Međurovo. Termenul pentru candidaturi: 2 octombrie 2026. Începere orientativă a contractului: 15 noiembrie 2026, 48 de luni pentru întregul contract."
+          },
+          "sourceRef": "ted-538901-2026"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "detail": {
+            "en": "European Investment Bank and EBRD."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU grant support via WBIF."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Reconstruction of the existing line, with new passenger platforms and an underpass at Niš Ranžirna station. 6.7 km per the August 2026 contract notice, the third subsection of the 65.2 km tender with Paraćin – Stalać and Đunis – Trupale. The line runs via Niš Ranžirna and bypasses Niš station; the mapped geometry measures 6.83 km.",
+        "ro": "Reconstrucția liniei existente, cu peroane noi pentru călători și un pasaj subteran în stația Niš Ranžirna. 6,7 km conform anunțului de participare din august 2026, al treilea subsector al licitației de 65,2 km, alături de Paraćin – Stalać și Đunis – Trupale. Linia trece prin Niš Ranžirna și ocolește stația Niš; geometria cartografiată măsoară 6,83 km."
+      },
+      "sourceRefs": [
+        "tvzonaplus-2026-08-04-tender-paracin-medjurovo",
+        "ted-538901-2026"
+      ],
+      "geometryRef": "trupale-medjurovo"
     }
   ],
   "sources": [
@@ -353,6 +403,13 @@
       "url": "https://arhiva.infrazs.rs/wp-content/uploads/2024/06/Netehnicki%20rezime%20za%20zeleznicku%20prugu%20Beograd-Nis-Deonica%203%20Paracin-Trupale.pdf",
       "publisher": "Infrastruktura železnice Srbije / PPF9",
       "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "tvzonaplus-2026-08-04-tender-paracin-medjurovo",
+      "title": "TV Zona Plus: Raspisan međunarodni tender za izvođača radova na deonici pruge između Beograda i Niša (4 August 2026)",
+      "url": "https://tvzonaplus.rs/raspisan-medjunarodni-tender-za-izvodjaca-radova-na-deonici-pruge-izmedju-beograda-i-nisa/",
+      "retrievedOn": "2026-10-02",
+      "publisher": "TV Zona Plus"
     }
   ]
 }

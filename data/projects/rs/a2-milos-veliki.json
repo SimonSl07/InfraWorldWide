@@ -3,12 +3,12 @@
   "country": "rs",
   "category": "highway",
   "name": {
-    "en": "A2 Miloš Veliki Motorway (Belgrade – Preljina)",
-    "ro": "Autostrada A2 Miloš Veliki (Belgrad – Preljina)"
+    "en": "A2 Miloš Veliki Motorway (Belgrade – Požega)",
+    "ro": "Autostrada A2 Miloš Veliki (Belgrad – Požega)"
   },
   "description": {
-    "en": "The A2 «Miloš Veliki» motorway on European route E763, running south-west from Belgrade at Surčin through Obrenovac, Ub, Lajkovac and Ljig to Preljina near Čačak, opened section by section between 2014 and 2019. Section lengths here are the figures published by JP Putevi Srbije rather than measurements off the mapped alignment: the Lajkovac–Ljig contract boundary sits about 3 km from the Ljig interchange used to cut the geometry, though the Lajkovac–Preljina total agrees to within 600 m. The motorway continues beyond Preljina toward Požega via Pakovraće and Lučani, and on to the planned Požega–Boljare extension; neither is recorded here for want of sourced opening dates.",
-    "ro": "Autostrada A2 «Miloš Veliki», pe drumul european E763, pornește spre sud-vest din Belgrad, de la Surčin, prin Obrenovac, Ub, Lajkovac și Ljig, până la Preljina, lângă Čačak, și a fost deschisă pe secțiuni între 2014 și 2019. Lungimile secțiunilor sunt cele publicate de JP Putevi Srbije, nu măsurători pe traseul cartografiat: limita contractului Lajkovac–Ljig se află la circa 3 km de nodul Ljig folosit pentru tăierea geometriei, deși totalul Lajkovac–Preljina concordă cu o diferență de sub 600 m. Autostrada continuă dincolo de Preljina spre Požega, prin Pakovraće și Lučani, și mai departe pe prelungirea planificată Požega–Boljare; niciuna nu este înregistrată aici, în lipsa unor date de deschidere din surse."
+    "en": "The A2 «Miloš Veliki» motorway on European route E763, running south-west from Belgrade at Surčin through Obrenovac, Ub, Lajkovac and Ljig to Preljina near Čačak, then west through Lučani to Požega, opened section by section between 2016 and 2025. Section lengths here are the figures published by JP Putevi Srbije and the ministry rather than measurements off the mapped alignment: the Lajkovac–Ljig contract boundary sits about 3 km from the Ljig interchange used to cut the geometry, though the Lajkovac–Preljina total agrees to within 600 m. The 7.9 km Novi Beograd – Surčin road that links the city to the motorway (opened 1 April 2023) is a state road designed for 80 km/h with at-grade junctions, so it is not recorded here. Nor is the Požega–Boljare extension to the Montenegrin border (about 107 km): a contract for design and works on Požega–Duga Poljana (75 km) was signed on 26 December 2021, but the ministry says works can be contracted only once design and financing are in place, and the route still awaits its spatial plan.",
+    "ro": "Autostrada A2 «Miloš Veliki», pe drumul european E763, pornește spre sud-vest din Belgrad, de la Surčin, prin Obrenovac, Ub, Lajkovac și Ljig, până la Preljina, lângă Čačak, apoi spre vest prin Lučani până la Požega, și a fost deschisă pe secțiuni între 2016 și 2025. Lungimile secțiunilor sunt cele publicate de JP Putevi Srbije și de minister, nu măsurători pe traseul cartografiat: limita contractului Lajkovac–Ljig se află la circa 3 km de nodul Ljig folosit pentru tăierea geometriei, deși totalul Lajkovac–Preljina concordă cu o diferență de sub 600 m. Drumul Novi Beograd – Surčin, de 7,9 km, care leagă orașul de autostradă (deschis la 1 aprilie 2023), este un drum național proiectat pentru 80 km/h, cu intersecții la nivel, deci nu este înregistrat aici. Nici prelungirea Požega–Boljare până la granița cu Muntenegru (circa 107 km): un contract de proiectare și execuție pentru Požega–Duga Poljana (75 km) a fost semnat la 26 decembrie 2021, dar ministerul spune că lucrările pot fi contractate doar după finalizarea proiectului și asigurarea finanțării, iar traseul își așteaptă încă planul de amenajare teritorială."
   },
   "operator": "rs-putevi-srbije",
   "lots": [
@@ -284,6 +284,112 @@
         "b92-azerbaijan-loan"
       ],
       "geometryRef": "ljig-preljina"
+    },
+    {
+      "id": "preljina-pakovrace",
+      "name": {
+        "en": "Preljina – Pakovraće",
+        "ro": "Preljina – Pakovraće"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-11-27",
+        "constructionStart": "2020-07",
+        "opened": "2022-01-30"
+      },
+      "lengthKm": 11.4,
+      "cost": {
+        "estimated": {
+          "amount": 675,
+          "currency": "USD",
+          "scope": "programme",
+          "note": "Ministry's investment value for the whole 30.9 km Preljina – Požega section, built under one commercial contract. Price year not stated."
+        }
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Loan from a Chinese bank, for Preljina – Požega as a whole.",
+            "ro": "Împrumut de la o bancă chineză, pentru întreaga secțiune Preljina – Požega."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Republic of Serbia budget.",
+            "ro": "Bugetul Republicii Serbia."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Communications Construction Company Ltd.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 30 January 2022 (ministry). Part of the 30.9 km Preljina – Požega commercial contract with CCCC, signed on 27 November 2017. The ministry dates the start of works to July 2020; Tanjug (July 2025) says the road was built from May 2019. Length 11.4 km per the ministry; the geometry, cut at the Preljina and Pakovraće interchanges, measures 12.5 km.",
+        "ro": "Deschisă la 30 ianuarie 2022 (minister). Face parte din contractul comercial cu CCCC pentru Preljina – Požega, de 30,9 km, semnat la 27 noiembrie 2017. Ministerul datează începerea lucrărilor în iulie 2020; Tanjug (iulie 2025) spune că drumul s-a construit din mai 2019. Lungime de 11,4 km potrivit ministerului; geometria, tăiată la nodurile Preljina și Pakovraće, măsoară 12,5 km."
+      },
+      "sourceRefs": [
+        "mgsi-preljina-pozega",
+        "tanjug-pakovrace-pozega"
+      ],
+      "geometryRef": "preljina-pakovrace"
+    },
+    {
+      "id": "pakovrace-pozega",
+      "name": {
+        "en": "Pakovraće – Požega",
+        "ro": "Pakovraće – Požega"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-11-27",
+        "constructionStart": "2020-07",
+        "opened": "2025-07-06"
+      },
+      "lengthKm": 19.56,
+      "cost": {
+        "estimated": {
+          "amount": 675,
+          "currency": "USD",
+          "scope": "programme",
+          "note": "Ministry's investment value for the whole 30.9 km Preljina – Požega section, built under one commercial contract. Price year not stated."
+        }
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Loan from a Chinese bank, for Preljina – Požega as a whole.",
+            "ro": "Împrumut de la o bancă chineză, pentru întreaga secțiune Preljina – Požega."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Republic of Serbia budget.",
+            "ro": "Bugetul Republicii Serbia."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Communications Construction Company Ltd.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened to traffic at 12:00 on 6 July 2025, the day after the official ceremony (JP Putevi Srbije, via Tanjug). Carries the Laz (2,840 m) and Munjino Brdo (2,755 m) tunnels, the longest road tunnels in Serbia, and ends at the Prilipac interchange near Požega. The ministry dates the start of works on Preljina – Požega to July 2020; Tanjug says this section was built from May 2019. Length 19.56 km per Tanjug, of 30.96 km for Preljina – Požega; the geometry, cut at the Pakovraće and Prilipac interchanges, measures 17.7 km.",
+        "ro": "Deschisă circulației la 6 iulie 2025, ora 12:00, a doua zi după ceremonia oficială (JP Putevi Srbije, via Tanjug). Include tunelurile Laz (2.840 m) și Munjino Brdo (2.755 m), cele mai lungi tuneluri rutiere din Serbia, și se termină la nodul Prilipac, lângă Požega. Ministerul datează începerea lucrărilor pe Preljina – Požega în iulie 2020; Tanjug spune că această secțiune s-a construit din mai 2019. Lungime de 19,56 km potrivit Tanjug, din 30,96 km pentru Preljina – Požega; geometria, tăiată la nodurile Pakovraće și Prilipac, măsoară 17,7 km."
+      },
+      "sourceRefs": [
+        "mgsi-preljina-pozega",
+        "tanjug-pakovrace-pozega"
+      ],
+      "geometryRef": "pakovrace-pozega"
     }
   ],
   "sources": [
@@ -378,6 +484,32 @@
       "url": "https://www.b92.net/biz/vesti/srbija.php?yyyy=2014&mm=12&dd=12&nav_id=935411",
       "retrievedOn": "2026-10-01",
       "publisher": "B92 / Tanjug"
+    },
+    {
+      "id": "mgsi-preljina-pozega",
+      "title": "MGSI: Izgradnja auto-puta E-763, deonica: Preljina-Požega (2025-06-19)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-auto-puta-e-763-deonica-preljina-pozega",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Ministry of Construction, Transport and Infrastructure"
+    },
+    {
+      "id": "tanjug-pakovrace-pozega",
+      "title": "Tanjug: Deonica auto-puta Pakovraće - Požega otvorena za saobraćaj (2025-07-06)",
+      "url": "https://www.tanjug.rs/ekonomija/srbija/175134/deonica-auto-puta-pakovrace-pozega-otvorena-za-saobracaj/vest",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Tanjug"
+    },
+    {
+      "title": "MGSI: Izgradnja auto-puta E-763 „Miloš Veliki“, deonica: Požega-Boljare (2025-06-18)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-auto-puta-e-763-milos-veliki-deonica-pozega-boljare",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Ministry of Construction, Transport and Infrastructure"
+    },
+    {
+      "title": "MGSI: Novi Beograd - Surčin (2025-06-19)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/novi-beograd-surcin",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Ministry of Construction, Transport and Infrastructure"
     }
   ]
 }
