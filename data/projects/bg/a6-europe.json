@@ -7,8 +7,8 @@
     "ro": "Autostrada A6 Europa"
   },
   "description": {
-    "en": "Approximately 63 km from Sofia to the Serbian border at Kalotina, on European route E80 and Pan-European Corridor X. It was called the Kalotina motorway until it was renamed in 2018. Dragoman–Slivnitsa was built by GBS-Infrastructure and opened in November 2020; Kalotina–Dragoman went to the Strabag BPA consortium under a contract signed in November 2018 and opened in October 2023. The associated Sofia Northern Bypass opened in April 2016.",
-    "ro": "Aproximativ 63 km de la Sofia până la granița cu Serbia la Kalotina, pe drumul european E80 și pe Coridorul paneuropean X. S-a numit autostrada Kalotina până la redenumirea din 2018. Dragoman–Slivnitsa a fost construită de GBS-Infrastructure și deschisă în noiembrie 2020; Kalotina–Dragoman a revenit consorțiului Strabag BPA printr-un contract semnat în noiembrie 2018 și a fost deschisă în octombrie 2023. Centura de nord a Sofiei, asociată proiectului, a fost deschisă în aprilie 2016."
+    "en": "Approximately 63 km from the Serbian border at Kalotina to Sofia, on European route E80 and Pan-European Corridor X. It was called the Kalotina motorway until a government decision of 27 December 2018 renamed it and added the Sofia Northern Speed Tangent, opened in April 2016, as its eastern end. Dragoman–Slivnitsa was built by GBS-Infrastructure and opened in November 2020; Kalotina–Dragoman went to the Strabag BPA consortium under a contract signed in November 2018 and opened in October 2023. The last section, Slivnitsa – Sofia Ring Road, opened on 14 September 2025.",
+    "ro": "Aproximativ 63 km de la granița cu Serbia la Kalotina până la Sofia, pe drumul european E80 și pe Coridorul paneuropean X. S-a numit autostrada Kalotina până când o hotărâre de guvern din 27 decembrie 2018 a redenumit-o și i-a adăugat, ca capăt estic, Tangenta rapidă de nord a Sofiei, deschisă în aprilie 2016. Dragoman–Slivnitsa a fost construită de GBS-Infrastructure și deschisă în noiembrie 2020; Kalotina–Dragoman a revenit consorțiului Strabag BPA printr-un contract semnat în noiembrie 2018 și a fost deschisă în octombrie 2023. Ultima secțiune, Slivnitsa – centura Sofiei, a fost deschisă pe 14 septembrie 2025."
   },
   "corridors": [
     "pan-european-x"
@@ -177,6 +177,178 @@
         "ted-dragoman-slivnitsa-modification-2021"
       ],
       "geometryRef": "dragoman-slivnitsa"
+    },
+    {
+      "id": "slivnitsa-sofia",
+      "name": {
+        "en": "Slivnitsa – Sofia",
+        "ro": "Slivnitsa – Sofia"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-12-22",
+        "constructionStart": "2023-05-12",
+        "opened": "2025-09-14"
+      },
+      "lengthKm": 16.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 222.466239,
+              "currency": "BGN",
+              "year": 2021,
+              "scope": "works",
+              "note": "Construction contract of 222,466,239 leva excluding VAT, signed 22 December 2021. The ministry gives 266,959,487.34 leva including VAT."
+            },
+            "date": "2021-12-22",
+            "sourceRef": "wikipedia-bg-europe-motorway"
+          }
+        ]
+      },
+      "profile": {
+        "designSpeedKmh": 110
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund through OP Transport and Transport Infrastructure 2014–2020, project BG16M1OP001-2.001-0005 (km 15+500 to 48+903). Moved to the Transport Connectivity 2021–2027 programme after delays.",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport și Infrastructură de Transport 2014–2020, proiectul BG16M1OP001-2.001-0005 (km 15+500 – 48+903). Mutat în programul Conectivitate în transport 2021–2027 după întârzieri."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Evropa-2022 (JV)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 22,
+        "value": {
+          "amount": 222.466239,
+          "currency": "BGN",
+          "year": 2021,
+          "scope": "works",
+          "note": "Construction contract of 222,466,239 leva excluding VAT, signed 22 December 2021. The ministry gives 266,959,487.34 leva including VAT."
+        }
+      },
+      "note": {
+        "en": "Agency extent km 32+447 to km 48+903, given by the ministry as 16.5 km. Bulgarian Wikipedia gives 16.16 km, to km 48+611.93 where the Northern Speed Tangent begins. Construction-only contract of 660 days with DZZD Evropa-2022 (GBS Infrastructure, Glavbolgarstroy International, Obonato Build). Works began on km 39+600 to 45+300, the only stretch with land acquired and a building permit.",
+        "ro": "Extinderea agenției: km 32+447 – km 48+903, dată de minister ca 16,5 km. Wikipedia în bulgară indică 16,16 km, până la km 48+611,93, unde începe Tangenta rapidă de nord. Contract numai de execuție, de 660 de zile, cu DZZD Evropa-2022 (GBS Infrastructure, Glavbolgarstroy International, Obonato Build). Lucrările au început pe km 39+600 – 45+300, singura porțiune cu terenuri expropriate și autorizație de construire."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-europe-motorway",
+        "mrrb-slivnitsa-sofia-start-2023",
+        "bta-evropa-full-opening-2025",
+        "economic-evropa-opened-2025"
+      ],
+      "geometryRef": "slivnitsa-sofia"
+    },
+    {
+      "id": "sofia-northern-speed-tangent",
+      "name": {
+        "en": "Sofia Northern Speed Tangent",
+        "ro": "Tangenta rapidă de nord a Sofiei"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-02-17",
+        "constructionStart": "2015-02-18",
+        "opened": "2016-04-28"
+      },
+      "lengthKm": 16.54,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 150,
+              "currency": "BGN",
+              "year": 2014,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Design-and-build contract, reported at signing as nearly 150 million excluding VAT; 180 million including VAT per infrastructure.bg."
+            },
+            "date": "2014-02-17",
+            "sourceRef": "stroitel-nst-contract-2014"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2015-02-18",
+          "sourceRef": "api-nst-start-2015"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2015-12-30",
+          "note": {
+            "en": "About 13 km opened in two parts: Botevgradsko shose – Lazar Mihaylov Blvd and Ring Road – Trebich road.",
+            "ro": "Circa 13 km deschiși în două părți: Botevgradsko shose – bd. Lazar Mihaylov și centură – drumul spre Trebich."
+          },
+          "sourceRef": "infrastructure-nst-13km-2015"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-04-28",
+          "note": {
+            "en": "The remaining 3 km, Trebich road – Lazar Mihaylov Blvd, opened.",
+            "ro": "Restul de 3 km, drumul spre Trebich – bd. Lazar Mihaylov, a fost deschis."
+          },
+          "sourceRef": "api-nst-opened-2016"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund through OP Regional Development 2007–2013, lot 70",
+            "ro": "Fondul european de dezvoltare regională prin Programul Operațional Dezvoltare Regională 2007–2013, lotul 70"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "HPVS-SST (JV)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 18,
+        "value": {
+          "amount": 150,
+          "currency": "BGN",
+          "year": 2014,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Design-and-build contract, reported at signing as nearly 150 million excluding VAT; 180 million including VAT per infrastructure.bg."
+        }
+      },
+      "note": {
+        "en": "Agency length 16.54 km (km 0+000 to 16+540), repeated as 16.5 km at the full opening. Bulgarian Wikipedia gives 15.1 km, after the direct link to the eastern arc of the Ring Road was dropped. Part of the A6 since the government decision of 27 December 2018. The builder is the HPVS-SST consortium of Hidrostroy, Patni Stroezhi Veliko Tarnovo, Patinzhenerinzhstroy, Patstroy Burgas and Vodstroy 98.",
+        "ro": "Lungimea agenției: 16,54 km (km 0+000 – 16+540), reluată ca 16,5 km la deschiderea completă. Wikipedia în bulgară indică 15,1 km, după renunțarea la legătura directă cu arcul estic al centurii. Face parte din A6 de la hotărârea de guvern din 27 decembrie 2018. Constructorul este consorțiul HPVS-SST, format din Hidrostroy, Patni Stroezhi Veliko Tarnovo, Patinzhenerinzhstroy, Patstroy Burgas și Vodstroy 98."
+      },
+      "sourceRefs": [
+        "wikipedia-europe-motorway",
+        "wikipedia-bg-northern-speed-tangent",
+        "stroitel-nst-contract-2014",
+        "api-nst-start-2015",
+        "infrastructure-nst-13km-2015",
+        "api-nst-opened-2016"
+      ],
+      "geometryRef": "sofia-northern-speed-tangent"
     }
   ],
   "sources": [
@@ -232,6 +404,74 @@
       "title": "TED 8911-2021 (Agentsiya Patna infrastruktura): Bulgaria-Sofia: Motorway construction works, modification of contract RD-33-17/21.12.2018, I-8 Kalotina – p.v. Hrabarsko km 15+500 – 32+447.20 (2021-01-11)",
       "url": "https://ted.europa.eu/en/notice/8911-2021/html",
       "retrievedOn": "2026-10-01"
+    },
+    {
+      "id": "wikipedia-bg-europe-motorway",
+      "title": "Уикипедия: Европа (автомагистрала)",
+      "url": "https://bg.wikipedia.org/wiki/Европа_(автомагистрала)",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Wikipedia"
+    },
+    {
+      "id": "mrrb-slivnitsa-sofia-start-2023",
+      "title": "МРРБ: На 12 май започва изграждането на последния участък от АМ „Европа“ между Сливница и София (2023-05-11)",
+      "url": "https://www.mrrb.bg/bg/na-12-maj-zapochva-izgrajdaneto-na-posledniya-uchastuk-ot-am-evropa-mejdu-slivnica-i-sofiya/",
+      "retrievedOn": "2026-10-02",
+      "archiveUrl": "https://web.archive.org/web/20230511133924/https://www.mrrb.bg/bg/na-12-maj-zapochva-izgrajdaneto-na-posledniya-uchastuk-ot-am-evropa-mejdu-slivnica-i-sofiya/",
+      "publisher": "Министерство на регионалното развитие и благоустройството"
+    },
+    {
+      "id": "bta-evropa-full-opening-2025",
+      "title": "БТА: Цялата магистрала \"Европа\" ще бъде пусната в неделя, съобщи регионалният министър Иван Иванов в парламента (2025-09-10)",
+      "url": "https://www.bta.bg/bg/news/economy/964116-tsyalata-magistrala-evropa-shte-bade-pusnata-v-nedelya-saobshti-regionalniyat",
+      "retrievedOn": "2026-10-02",
+      "publisher": "БТА"
+    },
+    {
+      "id": "economic-evropa-opened-2025",
+      "title": "Economic.bg: От София до Сърбия: Цялата магистрала „Европа“ вече е открита (2025-09-14)",
+      "url": "https://www.economic.bg/bg/a/view/ot-sofija-do-syrbija-cjalata-magistrala-evropa-veche-e-otkrita",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Economic.bg"
+    },
+    {
+      "id": "wikipedia-bg-northern-speed-tangent",
+      "title": "Уикипедия: Северна скоростна тангента",
+      "url": "https://bg.wikipedia.org/wiki/Северна_скоростна_тангента",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Wikipedia"
+    },
+    {
+      "id": "stroitel-nst-contract-2014",
+      "title": "Строител: Започва проектирането и строителството на Северната скоростна тангента (2014-02-17)",
+      "url": "http://vestnikstroitel.bg/news/79984_zapochva-proektiraneto-i-stroitelstvoto-na-severnata-skorostna-tangenta/",
+      "retrievedOn": "2026-10-02",
+      "archiveUrl": "https://web.archive.org/web/20160304101155/http://vestnikstroitel.bg/news/79984_zapochva-proektiraneto-i-stroitelstvoto-na-severnata-skorostna-tangenta/",
+      "publisher": "Вестник Строител"
+    },
+    {
+      "id": "api-nst-start-2015",
+      "title": "АПИ: Започва строителството на Северната скоростна тангента (2015-02-18)",
+      "url": "http://www.api.bg/index.php/bg/prescentar/novini/zapochva-stroitelstvoto-na-severnata-skorostna-tangenta/",
+      "retrievedOn": "2026-10-02",
+      "archiveUrl": "https://web.archive.org/web/20150218210950/http://www.api.bg/index.php/bg/prescentar/novini/zapochva-stroitelstvoto-na-severnata-skorostna-tangenta/",
+      "publisher": "Агенция „Пътна инфраструктура“"
+    },
+    {
+      "id": "infrastructure-nst-13km-2015",
+      "title": "Infrastructure.bg: Пуснаха движението по 13-километров участък от Северната скоростна тангента (2015-12-30)",
+      "url": "http://infrastructure.bg/show.php?storyid=2677709",
+      "retrievedOn": "2026-10-02",
+      "archiveUrl": "https://web.archive.org/web/20160126092014/http://infrastructure.bg/show.php?storyid=2677709",
+      "publisher": "Infrastructure.bg"
+    },
+    {
+      "id": "api-nst-opened-2016",
+      "title": "АПИ: Изцяло е пусната за движение Северната скоростна тангента (2016-04-28)",
+      "url": "http://www.api.bg/index.php/bg/prescentar/novini/izcyalo-e-pusnata-za-dvizhenie-severnata-skorostna-tangenta/",
+      "retrievedOn": "2026-10-02",
+      "archiveUrl": "https://web.archive.org/web/20181228084340/http://www.api.bg/index.php/bg/prescentar/novini/izcyalo-e-pusnata-za-dvizhenie-severnata-skorostna-tangenta/",
+      "publisher": "Агенция „Пътна инфраструктура“"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

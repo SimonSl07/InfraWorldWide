@@ -7,8 +7,8 @@
     "ro": "Reabilitarea liniei CF Cluj-Napoca – Oradea – Episcopia Bihor"
   },
   "description": {
-    "en": "EU-funded rehabilitation of the main railway between Cluj-Napoca and the Hungarian border at Episcopia Bihor, upgrading speeds and capacity on the Transylvanian corridor.",
-    "ro": "Reabilitarea cu fonduri europene a magistralei feroviare dintre Cluj-Napoca și granița cu Ungaria la Episcopia Bihor, pentru viteze și capacitate mai mari pe coridorul transilvănean."
+    "en": "EU-funded electrification and rehabilitation of the main railway between Cluj-Napoca, Oradea and the Hungarian border at Episcopia Bihor (166.2 km, TEN-T Rhine–Danube Corridor), let as four design-and-build lots. In March 2026 Prime Minister Bolojan set 2028 as the target for finishing all four lots.",
+    "ro": "Electrificarea și reabilitarea cu fonduri europene a magistralei feroviare dintre Cluj-Napoca, Oradea și granița cu Ungaria la Episcopia Bihor (166,2 km, Coridorul TEN-T Rin–Dunăre), contractată în patru loturi de proiectare și execuție. În martie 2026, premierul Bolojan a stabilit ca țintă anul 2028 pentru finalizarea celor patru loturi."
   },
   "corridors": [
     "ten-t-rhine-danube"
@@ -16,35 +16,35 @@
   "operator": "ro-cfr",
   "lots": [
     {
-      "id": "cluj-oradea",
+      "id": "l1-cluj-napoca-aghires",
       "name": {
-        "en": "Cluj-Napoca – Oradea",
-        "ro": "Cluj-Napoca – Oradea"
+        "en": "Lot 1: Cluj-Napoca – Aghireș",
+        "ro": "Lotul 1: Cluj-Napoca – Aghireș"
       },
       "status": "under_construction",
       "dates": {
-        "tenderAwarded": "2022-12",
-        "constructionStart": "2023-01",
-        "expectedOpening": "2029"
+        "tenderAwarded": "2022-12-30",
+        "constructionStart": "2023-01-30",
+        "expectedOpening": "2027"
       },
-      "lengthKm": 166,
+      "lengthKm": 30.411,
       "cost": {
         "estimated": {
-          "amount": 7565.6,
+          "amount": 1505.14,
           "currency": "RON",
-          "note": "Estimated value before award, excluding VAT. Sum of the four lots' estimated values in the tender (lot 1 1,505.14, lot 2 1,472.92, lot 3 2,168.60, lot 4 2,418.94 M lei), as published by CFR SA on 17 May 2022."
+          "note": "Estimated value before award, excluding VAT, as published by CFR SA on 17 May 2022."
         },
         "revisions": [
           {
             "kind": "award",
             "money": {
-              "amount": 7680.7,
+              "amount": 1611.48,
               "currency": "RON",
               "year": 2022,
-              "note": "Excluding VAT. Sum of the four design-and-build contracts (lot 1 1,611.48, lot 2 1,535.20, lot 3 2,117.17, lot 4 2,416.85 M lei), as reported by CFR in August 2026."
+              "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
             },
             "date": "2022-12",
-            "note": "Four contracts signed 10 November to 30 December 2022.",
+            "note": "Contract signed 2022-12-30.",
             "sourceRef": "cfr-status-2026-08"
           }
         ]
@@ -63,7 +63,8 @@
           "amount": {
             "amount": 9360,
             "currency": "RON",
-            "note": "Excluding VAT. PNRR financing of the four contracts as announced at signing, December 2022."
+            "scope": "programme",
+            "note": "Excluding VAT. PNRR financing of all four contracts (lots 1 to 4) as announced at signing, December 2022; not broken out per lot."
           }
         },
         {
@@ -83,15 +84,7 @@
       ],
       "contractors": [
         {
-          "name": "Alstom Transport – Arcada Company (Railworks, lot 1 Cluj-Napoca – Aghireș and lot 2 Aghireș – Poieni)",
-          "role": "builder"
-        },
-        {
-          "name": "FCC Construccion – Gülermak – CCN (lot 3, Poieni – Aleșd)",
-          "role": "builder"
-        },
-        {
-          "name": "Webuild – Impresa Pizzarotti – Salcef (lot 4, Aleșd – Hungarian border)",
+          "name": "Alstom Transport – Arcada Company (Asocierea Railworks)",
           "role": "builder"
         }
       ],
@@ -100,35 +93,336 @@
         "executionMonths": 36,
         "totalMonths": 42,
         "value": {
-          "amount": 7680.7,
+          "amount": 1611.48,
           "currency": "RON",
           "year": 2022,
-          "note": "Excluding VAT. Sum of the four design-and-build contracts (lot 1 1,611.48, lot 2 1,535.20, lot 3 2,117.17, lot 4 2,416.85 M lei), as reported by CFR in August 2026."
+          "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
         }
       },
       "note": {
-        "en": "EU-funded rehabilitation of the Cluj-Napoca–Oradea–Episcopia Bihor main line (TEN-T Rhine–Danube Corridor). Four design-and-build contracts: lot 1 Cluj-Napoca – Aghireș (30.411 km), lot 2 Aghireș – Poieni (36.530 km), lot 3 Poieni – Aleșd, lot 4 Aleșd – Hungarian border (46.744 km). CFR's August 2026 report gives the end of works as H2 2027 for lots 1 and 2, H2 2028 for lot 4 and H1 2029 for lot 3. In March 2026 Prime Minister Bolojan set 2028 as the target for finishing all four lots and reopening the line to trains.",
-        "ro": "Reabilitarea cu fonduri europene a magistralei Cluj-Napoca–Oradea–Episcopia Bihor (Coridorul TEN-T Rin–Dunăre). Patru contracte de proiectare și execuție: lotul 1 Cluj-Napoca – Aghireș (30,411 km), lotul 2 Aghireș – Poieni (36,530 km), lotul 3 Poieni – Aleșd, lotul 4 Aleșd – frontiera cu Ungaria (46,744 km). Raportul CFR din august 2026 estimează finalizarea lucrărilor în semestrul II 2027 pentru loturile 1 și 2, semestrul II 2028 pentru lotul 4 și semestrul I 2029 pentru lotul 3. În martie 2026, premierul Bolojan a stabilit ca țintă anul 2028 pentru finalizarea celor patru loturi și redeschiderea circulației trenurilor."
+        "en": "Contract signed 30 December 2022, works started 30 January 2023. CFR's August 2026 report puts physical progress at 75% and the end of works in H2 2027.",
+        "ro": "Contract semnat la 30 decembrie 2022, lucrări începute la 30 ianuarie 2023. Raportul CFR din august 2026 indică un stadiu fizic de 75% și finalizarea lucrărilor în semestrul II 2027."
       },
       "sourceRefs": [
-        "cfr-ro",
         "cfr-status-2026-08",
         "cfr-project-page",
+        "cfr-offers-2022-05",
+        "economica-contracts-signed-2022",
+        "economica-bolojan-2026-03",
+        "osm-line-300"
+      ],
+      "geometryRef": "l1-cluj-napoca-aghires"
+    },
+    {
+      "id": "l2-aghires-poieni",
+      "name": {
+        "en": "Lot 2: Aghireș – Poieni",
+        "ro": "Lotul 2: Aghireș – Poieni"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-12-21",
+        "constructionStart": "2023-01-25",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 36.53,
+      "cost": {
+        "estimated": {
+          "amount": 1472.92,
+          "currency": "RON",
+          "note": "Estimated value before award, excluding VAT, as published by CFR SA on 17 May 2022."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1535.2,
+              "currency": "RON",
+              "year": 2022,
+              "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
+            },
+            "date": "2022-12",
+            "note": "Contract signed 2022-12-21.",
+            "sourceRef": "cfr-status-2026-08"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR, Component 4 (Sustainable transport): stage I of the works",
+            "ro": "PNRR, Componenta 4 – Transport sustenabil: etapa I a lucrărilor"
+          },
+          "programme": "ro-pnrr",
+          "amount": {
+            "amount": 9360,
+            "currency": "RON",
+            "scope": "programme",
+            "note": "Excluding VAT. PNRR financing of all four contracts (lots 1 to 4) as announced at signing, December 2022; not broken out per lot."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Programul Transport 2021-2027: stage II of the works",
+            "ro": "Programul Transport 2021-2027: etapa a II-a a lucrărilor"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Co-financing",
+            "ro": "Cofinanțare"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alstom Transport – Arcada Company (Asocierea Railworks)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 36,
+        "totalMonths": 42,
+        "value": {
+          "amount": 1535.2,
+          "currency": "RON",
+          "year": 2022,
+          "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
+        }
+      },
+      "note": {
+        "en": "Contract signed 21 December 2022, works started 25 January 2023. CFR's August 2026 report puts physical progress at 76% and the end of works in H2 2027.",
+        "ro": "Contract semnat la 21 decembrie 2022, lucrări începute la 25 ianuarie 2023. Raportul CFR din august 2026 indică un stadiu fizic de 76% și finalizarea lucrărilor în semestrul II 2027."
+      },
+      "sourceRefs": [
+        "cfr-status-2026-08",
+        "cfr-project-page",
+        "cfr-offers-2022-05",
+        "economica-contracts-signed-2022",
+        "economica-lot2-2022",
+        "economica-bolojan-2026-03",
+        "osm-line-300"
+      ],
+      "geometryRef": "l2-aghires-poieni"
+    },
+    {
+      "id": "l3-poieni-alesd",
+      "name": {
+        "en": "Lot 3: Poieni – Aleșd",
+        "ro": "Lotul 3: Poieni – Aleșd"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-11-10",
+        "constructionStart": "2023-01-16",
+        "expectedOpening": "2029"
+      },
+      "lengthKm": 52.74,
+      "cost": {
+        "estimated": {
+          "amount": 2168.6,
+          "currency": "RON",
+          "note": "Estimated value before award, excluding VAT, as published by CFR SA on 17 May 2022."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2117.17,
+              "currency": "RON",
+              "year": 2022,
+              "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
+            },
+            "date": "2022-11",
+            "note": "Contract signed 2022-11-10.",
+            "sourceRef": "cfr-status-2026-08"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR, Component 4 (Sustainable transport): stage I of the works",
+            "ro": "PNRR, Componenta 4 – Transport sustenabil: etapa I a lucrărilor"
+          },
+          "programme": "ro-pnrr",
+          "amount": {
+            "amount": 9360,
+            "currency": "RON",
+            "scope": "programme",
+            "note": "Excluding VAT. PNRR financing of all four contracts (lots 1 to 4) as announced at signing, December 2022; not broken out per lot."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Programul Transport 2021-2027: stage II of the works",
+            "ro": "Programul Transport 2021-2027: etapa a II-a a lucrărilor"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Co-financing",
+            "ro": "Cofinanțare"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "FCC Construccion – Gülermak – CCN",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 36,
+        "totalMonths": 42,
+        "value": {
+          "amount": 2117.17,
+          "currency": "RON",
+          "year": 2022,
+          "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
+        }
+      },
+      "note": {
+        "en": "Contract signed 10 November 2022, works started 16 January 2023. Length 52.74 km per CFR's August 2026 report (53 km at signing). The report puts physical progress at 38.96% and the end of works in H1 2029, the latest of the four lots. In March 2026 Prime Minister Bolojan asked the builders to speed up and set 2028 as the target for all four lots.",
+        "ro": "Contract semnat la 10 noiembrie 2022, lucrări începute la 16 ianuarie 2023. Lungime 52,74 km conform raportului CFR din august 2026 (53 km la semnare). Raportul indică un stadiu fizic de 38,96% și finalizarea lucrărilor în semestrul I 2029, cel mai târziu dintre cele patru loturi. În martie 2026, premierul Bolojan le-a cerut constructorilor să accelereze și a stabilit ca țintă anul 2028 pentru toate cele patru loturi."
+      },
+      "sourceRefs": [
+        "cfr-status-2026-08",
+        "cfr-project-page",
+        "cfr-offers-2022-05",
         "economica-contracts-signed-2022",
         "hotnews-lot3-2022",
-        "economica-lot4-2022",
         "economica-bolojan-2026-03",
-        "cfr-offers-2022-05"
+        "osm-line-300"
       ],
-      "geometryRef": "cluj-oradea"
+      "geometryRef": "l3-poieni-alesd"
+    },
+    {
+      "id": "l4-alesd-border",
+      "name": {
+        "en": "Lot 4: Aleșd – Hungarian border (Episcopia Bihor)",
+        "ro": "Lotul 4: Aleșd – frontiera cu Ungaria (Episcopia Bihor)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-12-07",
+        "constructionStart": "2023-01-23",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 46.744,
+      "cost": {
+        "estimated": {
+          "amount": 2418.94,
+          "currency": "RON",
+          "note": "Estimated value before award, excluding VAT, as published by CFR SA on 17 May 2022."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2416.85,
+              "currency": "RON",
+              "year": 2022,
+              "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
+            },
+            "date": "2022-12",
+            "note": "Contract signed 2022-12-07.",
+            "sourceRef": "cfr-status-2026-08"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2026-03-31",
+          "note": {
+            "en": "Tileagd – Oșorhei halt, about 14 km of new track, reopened at 50 km/h until the works are complete.",
+            "ro": "Tileagd – halta Oșorhei, circa 14 km de cale nouă, redeschis cu 50 km/h până la finalizarea lucrărilor."
+          },
+          "sourceRef": "cfr-tileagd-osorhei-2026-03"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "PNRR, Component 4 (Sustainable transport): stage I of the works",
+            "ro": "PNRR, Componenta 4 – Transport sustenabil: etapa I a lucrărilor"
+          },
+          "programme": "ro-pnrr",
+          "amount": {
+            "amount": 9360,
+            "currency": "RON",
+            "scope": "programme",
+            "note": "Excluding VAT. PNRR financing of all four contracts (lots 1 to 4) as announced at signing, December 2022; not broken out per lot."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Programul Transport 2021-2027: stage II of the works",
+            "ro": "Programul Transport 2021-2027: etapa a II-a a lucrărilor"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Co-financing",
+            "ro": "Cofinanțare"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Webuild – Impresa Pizzarotti – Salcef",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 36,
+        "totalMonths": 42,
+        "value": {
+          "amount": 2416.85,
+          "currency": "RON",
+          "year": 2022,
+          "note": "Excluding VAT. Design-and-build contract value as reported by CFR in August 2026."
+        }
+      },
+      "note": {
+        "en": "Runs through Oradea to Episcopia Bihor and the Hungarian border. Contract signed 7 December 2022 (2,416.85 M lei excluding VAT, 42 months), works started 23 January 2023. About 14 km of new track between Tileagd and the Oșorhei halt reopened to trains on 31 March 2026 at 50 km/h, rising to 120 km/h and to 160 km/h once the whole project is finished; the catenary masts are in place but not yet electrified. CFR's August 2026 report puts physical progress at 59.29% and the end of works in H2 2028.",
+        "ro": "Trece prin Oradea până la Episcopia Bihor și frontiera cu Ungaria. Contract semnat la 7 decembrie 2022 (2.416,85 mil. lei fără TVA, 42 de luni), lucrări începute la 23 ianuarie 2023. Circa 14 km de cale ferată nou construită între Tileagd și halta Oșorhei au fost redeschiși circulației la 31 martie 2026, cu 50 km/h, urmând 120 km/h și 160 km/h după finalizarea integrală a proiectului; stâlpii liniei de contact sunt montați, dar linia nu este încă electrificată. Raportul CFR din august 2026 indică un stadiu fizic de 59,29% și finalizarea lucrărilor în semestrul II 2028."
+      },
+      "sourceRefs": [
+        "cfr-status-2026-08",
+        "cfr-project-page",
+        "cfr-offers-2022-05",
+        "economica-contracts-signed-2022",
+        "economica-lot4-2022",
+        "cfr-tileagd-osorhei-2026-03",
+        "osm-line-300"
+      ],
+      "geometryRef": "l4-alesd-border"
     }
   ],
   "sources": [
-    {
-      "id": "cfr-ro",
-      "title": "CFR Infrastructură: projects",
-      "url": "https://www.cfr.ro"
-    },
     {
       "id": "cfr-status-2026-08",
       "title": "CFR SA: Stadiul proiectelor de reabilitare/modernizare infrastructură feroviară, August 2026",
@@ -154,6 +448,13 @@
       "retrievedOn": "2026-09-25"
     },
     {
+      "id": "economica-lot2-2022",
+      "title": "Economica.net: Calea ferată Cluj – Oradea: CFR a semnat contractul pentru lotul 2 cu asocierea Arcada – Alstom (2022-12-21)",
+      "url": "https://www.economica.net/calea-ferata-cluj-oradea-cfr-a-semnat-contractul-pentru-lotul-2-cu-asocierea-arcada-alstom_636122.html",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Economica.net"
+    },
+    {
       "id": "economica-lot4-2022",
       "title": "Economica.net: Cluj – Oradea – Episcopia Bihor, semnat contractul pentru lotul de la graniță cu Webuild (2022-12-07)",
       "url": "https://www.economica.net/calea-ferata-cluj-oradea-episcopia-bihor-a-fost-semnat-contractul-pentru-lotul-de-la-granita-cu-italienii-de-la-webuild_632625.html",
@@ -171,6 +472,20 @@
       "url": "https://cfr.ro/17-mai-2022-cfr-sa-a-primit-19-oferte-pentru-electrificarea-si-reabilitarea-liniei-cf-cluj-napoca-oradea-episcopia-bihorfrontiera/",
       "retrievedOn": "2026-09-28",
       "publisher": "Compania Națională de Căi Ferate CFR SA"
+    },
+    {
+      "id": "cfr-tileagd-osorhei-2026-03",
+      "title": "CFR SA: Redeschiderea circulației feroviare pe tronsonul Tileagd – Oșorhei (2026-03-31)",
+      "url": "https://cfr.ro/redeschiderea-circulatiei-feroviare-pe-tronsonul-tileagd-osorhei-in-cadrul-proiectului-de-electrificare-si-reabilitare-cluj-napoca-oradea-episcopia-bihor/",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Compania Națională de Căi Ferate CFR SA"
+    },
+    {
+      "id": "osm-line-300",
+      "title": "OpenStreetMap contributors (geometry of CFR line 300, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-02",
+      "publisher": "OpenStreetMap"
     }
   ]
 }

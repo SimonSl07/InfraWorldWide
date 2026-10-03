@@ -7,30 +7,39 @@
     "ro": "Autostrada A0 Centura București"
   },
   "description": {
-    "en": "Outer motorway ring around Bucharest, about 101 km when complete, running beyond the existing Bucharest Ring Road and linking the A1, A2 and A3 motorways. The southern half-ring (51.3 km) was completed in stages between December 2023 and July 2025. On the northern half-ring, the DN1–A3–DN2 section opened in November 2023 and December 2024; the western (A1–DN1) and eastern (DN2–A2) lots are still under construction.",
-    "ro": "Inel exterior de autostradă în jurul Bucureștiului, circa 101 km la finalizare, dincolo de actuala Centură a Bucureștiului, care leagă autostrăzile A1, A2 și A3. Seminelul sudic (51,3 km) a fost finalizat etapizat între decembrie 2023 și iulie 2025. Pe seminelul nordic, secțiunea DN1–A3–DN2 a fost deschisă în noiembrie 2023 și decembrie 2024; loturile din vest (A1–DN1) și din est (DN2–A2) sunt încă în construcție."
+    "en": "Outer motorway ring around Bucharest, about 101 km when complete, running beyond the existing Bucharest Ring Road and linking the A1, A2 and A3 motorways. The southern half-ring (51.2 km) opened in stages between December 2023 and June 2025. On the northern half-ring, the DN1–A3–DN2 section opened in November 2023 and December 2024; the western (A1–DN1) and eastern (DN2–A2) lots are still under construction.",
+    "ro": "Inel exterior de autostradă în jurul Bucureștiului, circa 101 km la finalizare, dincolo de actuala Centură a Bucureștiului, care leagă autostrăzile A1, A2 și A3. Seminelul sudic (51,2 km) a fost deschis etapizat între decembrie 2023 și iunie 2025. Pe seminelul nordic, secțiunea DN1–A3–DN2 a fost deschisă în noiembrie 2023 și decembrie 2024; loturile din vest (A1–DN1) și din est (DN2–A2) sunt încă în construcție."
   },
   "lots": [
     {
-      "id": "south-ring",
+      "id": "south-a2-popesti-leordeni",
       "name": {
-        "en": "South half-ring: A1 – A2",
-        "ro": "Seminel sudic: A1 – A2"
+        "en": "South lot 1: A2 – Popești-Leordeni (DN4)",
+        "ro": "Lotul 1 Sud: A2 – Popești-Leordeni (DN4)"
       },
       "status": "opened",
       "dates": {
         "announced": "2012-12",
-        "tenderAwarded": "2019-03-09",
+        "tenderAwarded": "2019-08-26",
         "constructionStart": "2019",
-        "opened": "2025-07"
+        "opened": "2024-07"
       },
-      "lengthKm": 51.3,
+      "lengthKm": 10.93,
       "cost": {
-        "estimated": {
-          "amount": 580,
-          "currency": "EUR",
-          "year": 2017
-        }
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 830.68,
+              "currency": "RON",
+              "year": 2019,
+              "scope": "programme",
+              "note": "Excluding VAT: 830,679,662.15 lei. Whole south lot 1 contract (A2 – CF902 Jilava, 16.93 km), covering A2 – Popești-Leordeni and Popești-Leordeni – Jilava."
+            },
+            "date": "2019-08-26",
+            "sourceRef": "130km-a0"
+          }
+        ]
       },
       "funding": [
         {
@@ -46,23 +55,313 @@
       ],
       "contractors": [
         {
-          "name": "Alsim Alarko (south lots 1–2)",
+          "name": "Alsim Alarko (south lot 1)",
           "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 830.68,
+          "currency": "RON",
+          "year": 2019,
+          "scope": "programme",
+          "note": "Excluding VAT: 830,679,662.15 lei. Whole south lot 1 contract (A2 – CF902 Jilava, 16.93 km), covering A2 – Popești-Leordeni and Popești-Leordeni – Jilava."
         },
+        "designMonths": 12,
+        "executionMonths": 30,
+        "totalMonths": 42
+      },
+      "note": {
+        "en": "Eastern part of south lot 1 (A2 – CF902 Jilava, 16.93 km), whose contract also covers a 700 m sector of the north ring at the A2 junction (km 52+070 – 52+770). Opened in July 2024, three months after the lot's western 6.0 km (130km.ro). The 10.93 km is the lot's 16.93 km less those 6.0 km, so it includes the 700 m north-ring sector. Contract signed with Alsim Alarko on 26 August 2019. The July 2017 tender for the whole 52 km south ring was estimated at €580M (HotNews).",
+        "ro": "Partea estică a lotului 1 Sud (A2 – CF902 Jilava, 16,93 km), al cărui contract include și un sector de 700 m din Centura Nord la nodul cu A2 (km 52+070 – 52+770). Deschisă în iulie 2024, la trei luni după cei 6,0 km din vestul lotului (130km.ro). Cei 10,93 km sunt cei 16,93 km ai lotului minus acești 6,0 km, deci includ sectorul de 700 m din Centura Nord. Contract semnat cu Alsim Alarko pe 26 august 2019. Licitația din iulie 2017 pentru întregul semiinel sudic de 52 km era estimată la 580 mil. € (HotNews)."
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a0-rom-nia",
+        "hotnews-ro-a0-sud-2019-08",
+        "130km-a0"
+      ],
+      "geometryRef": "south-a2-popesti-leordeni"
+    },
+    {
+      "id": "south-popesti-leordeni-jilava",
+      "name": {
+        "en": "South lot 1: Popești-Leordeni (DN4) – Jilava (CF902)",
+        "ro": "Lotul 1 Sud: Popești-Leordeni (DN4) – Jilava (CF902)"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "2012-12",
+        "tenderAwarded": "2019-08-26",
+        "constructionStart": "2019",
+        "opened": "2024-04"
+      },
+      "lengthKm": 6.0,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 830.68,
+              "currency": "RON",
+              "year": 2019,
+              "scope": "programme",
+              "note": "Excluding VAT: 830,679,662.15 lei. Whole south lot 1 contract (A2 – CF902 Jilava, 16.93 km), covering A2 – Popești-Leordeni and Popești-Leordeni – Jilava."
+            },
+            "date": "2019-08-26",
+            "sourceRef": "130km-a0"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Found eligible for EU funding after 2016 traffic studies (no EU financing was sought under the 2014 General Transport Master Plan)",
+            "ro": "Declarată eligibilă pentru finanțare europeană după studiile de trafic din 2016 (Master Planul General de Transport din 2014 nu prevedea finanțare europeană)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alsim Alarko (south lot 1)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 830.68,
+          "currency": "RON",
+          "year": 2019,
+          "scope": "programme",
+          "note": "Excluding VAT: 830,679,662.15 lei. Whole south lot 1 contract (A2 – CF902 Jilava, 16.93 km), covering A2 – Popești-Leordeni and Popești-Leordeni – Jilava."
+        },
+        "designMonths": 12,
+        "executionMonths": 30,
+        "totalMonths": 42
+      },
+      "note": {
+        "en": "Western part of south lot 1, opened in April 2024 together with Jilava – DN5 of lot 2 (130km.ro). The rest of lot 1, to the A2, opened in July 2024. The July 2017 tender for the whole 52 km south ring was estimated at €580M (HotNews).",
+        "ro": "Partea vestică a lotului 1 Sud, deschisă în aprilie 2024 împreună cu sectorul Jilava – DN5 din lotul 2 (130km.ro). Restul lotului 1, până la A2, a fost deschis în iulie 2024. Licitația din iulie 2017 pentru întregul semiinel sudic de 52 km era estimată la 580 mil. € (HotNews)."
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a0-rom-nia",
+        "hotnews-ro-a0-sud-2019-08",
+        "130km-a0"
+      ],
+      "geometryRef": "south-popesti-leordeni-jilava"
+    },
+    {
+      "id": "south-jilava-dn5",
+      "name": {
+        "en": "South lot 2: Jilava (CF902) – DN5",
+        "ro": "Lotul 2 Sud: Jilava (CF902) – DN5"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "2012-12",
+        "tenderAwarded": "2019-03-09",
+        "constructionStart": "2019",
+        "opened": "2024-04"
+      },
+      "lengthKm": 6.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 750.85,
+              "currency": "RON",
+              "year": 2019,
+              "scope": "programme",
+              "note": "Excluding VAT: 750,849,942.12 lei. Whole south lot 2 contract (CF902 Jilava – DN6, 16.30 km), covering Jilava – DN5 and DN5 – DN6."
+            },
+            "date": "2019-03-09",
+            "sourceRef": "130km-a0"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Found eligible for EU funding after 2016 traffic studies (no EU financing was sought under the 2014 General Transport Master Plan)",
+            "ro": "Declarată eligibilă pentru finanțare europeană după studiile de trafic din 2016 (Master Planul General de Transport din 2014 nu prevedea finanțare europeană)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alsim Alarko (south lot 2)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 750.85,
+          "currency": "RON",
+          "year": 2019,
+          "scope": "programme",
+          "note": "Excluding VAT: 750,849,942.12 lei. Whole south lot 2 contract (CF902 Jilava – DN6, 16.30 km), covering Jilava – DN5 and DN5 – DN6."
+        },
+        "designMonths": 12,
+        "executionMonths": 30,
+        "totalMonths": 42
+      },
+      "note": {
+        "en": "Eastern part of south lot 2 (CF902 Jilava – DN6, 16.30 km), opened in April 2024, four months after DN5 – DN6 (130km.ro). Contract signed with Alsim Alarko on 9 March 2019. The July 2017 tender for the whole 52 km south ring was estimated at €580M (HotNews).",
+        "ro": "Partea estică a lotului 2 Sud (CF902 Jilava – DN6, 16,30 km), deschisă în aprilie 2024, la patru luni după sectorul DN5 – DN6 (130km.ro). Contract semnat cu Alsim Alarko pe 9 martie 2019. Licitația din iulie 2017 pentru întregul semiinel sudic de 52 km era estimată la 580 mil. € (HotNews)."
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a0-rom-nia",
+        "hotnews-ro-a0-sud-2019-08",
+        "130km-a0"
+      ],
+      "geometryRef": "south-jilava-dn5"
+    },
+    {
+      "id": "south-dn5-dn6",
+      "name": {
+        "en": "South lot 2: DN5 – DN6 (Bragadiru)",
+        "ro": "Lotul 2 Sud: DN5 – DN6 (Bragadiru)"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "2012-12",
+        "tenderAwarded": "2019-03-09",
+        "constructionStart": "2019",
+        "opened": "2023-12"
+      },
+      "lengthKm": 10.0,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 750.85,
+              "currency": "RON",
+              "year": 2019,
+              "scope": "programme",
+              "note": "Excluding VAT: 750,849,942.12 lei. Whole south lot 2 contract (CF902 Jilava – DN6, 16.30 km), covering Jilava – DN5 and DN5 – DN6."
+            },
+            "date": "2019-03-09",
+            "sourceRef": "130km-a0"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Found eligible for EU funding after 2016 traffic studies (no EU financing was sought under the 2014 General Transport Master Plan)",
+            "ro": "Declarată eligibilă pentru finanțare europeană după studiile de trafic din 2016 (Master Planul General de Transport din 2014 nu prevedea finanțare europeană)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alsim Alarko (south lot 2)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 750.85,
+          "currency": "RON",
+          "year": 2019,
+          "scope": "programme",
+          "note": "Excluding VAT: 750,849,942.12 lei. Whole south lot 2 contract (CF902 Jilava – DN6, 16.30 km), covering Jilava – DN5 and DN5 – DN6."
+        },
+        "designMonths": 12,
+        "executionMonths": 30,
+        "totalMonths": 42
+      },
+      "note": {
+        "en": "First section of the south ring to open, in December 2023 (130km.ro). The rest of lot 2, Jilava – DN5, followed in April 2024. The July 2017 tender for the whole 52 km south ring was estimated at €580M (HotNews).",
+        "ro": "Primul sector deschis din semiinelul sudic, în decembrie 2023 (130km.ro). Restul lotului 2, Jilava – DN5, a urmat în aprilie 2024. Licitația din iulie 2017 pentru întregul semiinel sudic de 52 km era estimată la 580 mil. € (HotNews)."
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a0-rom-nia",
+        "hotnews-ro-a0-sud-2019-08",
+        "130km-a0"
+      ],
+      "geometryRef": "south-dn5-dn6"
+    },
+    {
+      "id": "south-dn6-a1",
+      "name": {
+        "en": "South lot 3: DN6 (Bragadiru) – A1 – DJ601",
+        "ro": "Lotul 3 Sud: DN6 (Bragadiru) – A1 – DJ601"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "2012-12",
+        "tenderAwarded": "2019-04-14",
+        "constructionStart": "2019",
+        "opened": "2025-06"
+      },
+      "lengthKm": 17.965,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 853.422,
+              "currency": "RON",
+              "year": 2019,
+              "note": "Excluding VAT: 853,422,022.52 lei. South lot 3 contract (DN6 – A1/DJ601, 17.97 km)."
+            },
+            "date": "2019-04-14",
+            "sourceRef": "130km-a0"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Found eligible for EU funding after 2016 traffic studies (no EU financing was sought under the 2014 General Transport Master Plan)",
+            "ro": "Declarată eligibilă pentru finanțare europeană după studiile de trafic din 2016 (Master Planul General de Transport din 2014 nu prevedea finanțare europeană)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
         {
           "name": "Aktor (south lot 3)",
           "role": "builder"
         }
       ],
+      "contract": {
+        "value": {
+          "amount": 853.422,
+          "currency": "RON",
+          "year": 2019
+        },
+        "designMonths": 12,
+        "executionMonths": 30,
+        "totalMonths": 42
+      },
       "note": {
-        "en": "South ring tendered July 2017: 52 km, €580M, completion estimated after 2022; execution contracts signed with Alsim Alarko for lot 2 (9 March 2019) and lot 1 (26 August 2019, including a 700 m sector of the north ring), and with Aktor for lot 3 (14 April 2019). Contract values: lot 1 830 million lei excl. VAT (about €177M), lot 2 about €162M, lot 3 about €180M; HotNews totals them at €519M.",
-        "ro": "Semiinelul sudic a fost scos la licitație în iulie 2017: 52 km, 580 mil. €, finalizare estimată după 2022; contractele de execuție au fost semnate cu Alsim Alarko pentru lotul 2 (9 martie 2019) și lotul 1 (26 august 2019, inclusiv un sector de 700 m din Centura Nord), iar cu Aktor pentru lotul 3 (14 aprilie 2019). Valorile contractelor: lotul 1 830 milioane lei fără TVA (circa 177 mil. €), lotul 2 circa 162 mil. €, lotul 3 circa 180 mil. €; HotNews le totalizează la 519 mil. €."
+        "en": "Signed on 14 April 2019 with Aktor – Euroconstruct Trading; Aktor later took over the whole contract. Opened in June 2025, completing the south ring (130km.ro, ro.wikipedia). 130km.ro gives the length as 17.97 km. The July 2017 tender for the whole 52 km south ring was estimated at €580M (HotNews).",
+        "ro": "Semnat pe 14 aprilie 2019 cu asocierea Aktor – Euroconstruct Trading; Aktor a preluat ulterior integral contractul. Deschis în iunie 2025, completând semiinelul sudic (130km.ro, ro.wikipedia). 130km.ro dă lungimea de 17,97 km. Licitația din iulie 2017 pentru întregul semiinel sudic de 52 km era estimată la 580 mil. € (HotNews)."
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a0-rom-nia",
-        "hotnews-ro-a0-sud-2019-08"
+        "hotnews-ro-a0-sud-2019-08",
+        "130km-a0"
       ],
-      "geometryRef": "south-ring"
+      "geometryRef": "south-dn6-a1"
     },
     {
       "id": "north-ring-east",
@@ -157,8 +456,8 @@
         "executionMonths": 18
       },
       "note": {
-        "en": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. Lot 4 (Pantelimon – Glina, 4.47 km) reached 99% physical progress in June 2026 but cannot open before Lot 3, because without it Lot 4 has no outlet (Mediafax, 27 June 2026). For Lot 3 (Afumați – Pantelimon), CNAIR reported the contractor's commitment to open traffic on 10 October 2026, at about 94% progress (Cine Construiește, 29 August 2026).",
-        "ro": "Autostradă de centură a Bucureștiului, declarată eligibilă pentru finanțare europeană după studiile de trafic din 2016. Lotul 4 (Pantelimon – Glina, 4,47 km) a ajuns la un stadiu fizic de 99% în iunie 2026, dar nu poate fi deschis înaintea lotului 3, în lipsa căruia nu are descărcare (Mediafax, 27 iunie 2026). Pentru lotul 3 (Afumați – Pantelimon), CNAIR a transmis angajamentul constructorului de a deschide circulația pe 10 octombrie 2026, la un stadiu de circa 94% (Cine Construiește, 29 august 2026)."
+        "en": "Bucharest ring motorway, found eligible for EU financing after the 2016 traffic studies. Lot 4 (Pantelimon – Glina, 4.47 km) reached 99% physical progress in June 2026 but cannot open before Lot 3, because without it Lot 4 has no outlet (Mediafax, 27 June 2026). For Lot 3 (Afumați – Pantelimon), CNAIR reported the contractor's commitment to open traffic on 10 October 2026, at about 94% progress (Cine Construiește, 29 August 2026). 130km.ro records 2.3 km of lot 3 open since December 2024, next to north lot 2. It is not drawn separately: its extent is not published, and OpenStreetMap maps only about 0.4 km of lot 3 as open motorway.",
+        "ro": "Autostradă de centură a Bucureștiului, declarată eligibilă pentru finanțare europeană după studiile de trafic din 2016. Lotul 4 (Pantelimon – Glina, 4,47 km) a ajuns la un stadiu fizic de 99% în iunie 2026, dar nu poate fi deschis înaintea lotului 3, în lipsa căruia nu are descărcare (Mediafax, 27 iunie 2026). Pentru lotul 3 (Afumați – Pantelimon), CNAIR a transmis angajamentul constructorului de a deschide circulația pe 10 octombrie 2026, la un stadiu de circa 94% (Cine Construiește, 29 august 2026). 130km.ro consemnează 2,3 km din lotul 3 deschiși din decembrie 2024, lângă lotul 2 Nord. Porțiunea nu este desenată separat: extinderea ei nu este publicată, iar OpenStreetMap marchează ca autostradă deschisă doar circa 0,4 km din lotul 3."
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a0-rom-nia",
@@ -167,9 +466,22 @@
         "mediafax-a0-nord-lot-4-2026-06",
         "cineconstruieste-a0-nord-2026-08",
         "ziuacargo-a0-nord-licitatie-2019-06",
-        "hotnews-ro-a0-nord-lot-4-2020-03"
+        "hotnews-ro-a0-nord-lot-4-2020-03",
+        "130km-a0",
+        "130km-review-2026-q3"
       ],
-      "geometryRef": "north-ring-east"
+      "geometryRef": "north-ring-east",
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2024-12",
+          "note": {
+            "en": "2.3 km of north lot 3, next to north lot 2, opened in the same month as the A3 – DN2 stretch of lot 2.",
+            "ro": "2,3 km din lotul 3 Nord, lângă lotul 2 Nord, deschiși în aceeași lună cu sectorul A3 – DN2 al lotului 2."
+          },
+          "sourceRef": "130km-a0"
+        }
+      ]
     },
     {
       "id": "north-ring-dn1-dn2",
@@ -422,6 +734,20 @@
       "url": "https://hotnews.ro/stiri-infrastructura_articole-23700905-autostrada-centura-a0-capitalei-nord-ultimul-tronson-scos-licitatie.htm",
       "publisher": "HotNews.ro",
       "retrievedOn": "2026-10-01"
+    },
+    {
+      "id": "130km-a0",
+      "title": "130km.ro: Autostrada A0 Centura București (lots, contract prices and opening dates)",
+      "url": "https://www.130km.ro/a0.html",
+      "retrievedOn": "2026-10-02",
+      "publisher": "130km.ro"
+    },
+    {
+      "id": "130km-review-2026-q3",
+      "title": "130km.ro: Review autostrăzi și drumuri expres, trimestrul III 2026 (30 September 2026)",
+      "url": "https://www.130km.ro/articol85.html",
+      "retrievedOn": "2026-10-02",
+      "publisher": "130km.ro"
     }
   ]
 }
