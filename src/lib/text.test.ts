@@ -12,6 +12,16 @@ describe("foldText", () => {
     expect(foldText("Râul Doamnei")).toBe("raul doamnei");
   });
 
+  it("folds Slovak diacritics through NFD alone", () => {
+    expect(foldText("Diaľnica Žilina–Košice")).toBe("dialnica zilina–kosice");
+    expect(foldText("Ľubochňa, Čebrať, Štrba, Ružomberok, Trenčín")).toBe(
+      "lubochna, cebrat, strba, ruzomberok, trencin",
+    );
+    expect(foldText("Svrčinovec, Poľana, Hôrky, Ďurďošík, Kráľová")).toBe(
+      "svrcinovec, polana, horky, durdosik, kralova",
+    );
+  });
+
   it("folds letters NFD leaves alone", () => {
     expect(foldText("Łódź")).toBe("lodz");
     expect(foldText("Đorđe")).toBe("dorde");

@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/news-sources.schema.json",
-  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Every entry was fetched and parsed on 2026-09-07, and each one twice, by whoever added it and by a second pass that checked what the items are actually about. cnadnr.ro, mt.ro, cnir.ro, metrorex.ro, gov.ro and Bulgaria's api.bg time out from outside their own country, though cfr.ro does not, so a Romanian state host is not automatically unreachable. cnair.ro is not CNAIR but a squatted domain serving a single 2016 post. clubferoviar.ro and proinfrastructura.ro were dropped: both now answer any non-browser client with a JavaScript challenge, on every feed path tried. srbijavoz.rs was dropped because its pubDate values are transliterated into Cyrillic and no parser reads them. The EIB project pipeline was dropped because the host's robots.txt asks clients not to fetch feeds. koridorisrbije.rs is an empty Angular shell, so the corridors are covered through mgsi and putevi-srbije instead. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole, which is why an international title is filed as general. Wikipedia article histories are watched from the projects' own sources and need no entry here. The three Greek entries were fetched and parsed with the digest's own client on 2026-09-28. ergose.gr has a working feed but was left out: its newest item was from January 2025.",
+  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Every entry was fetched and parsed on 2026-09-07, and each one twice, by whoever added it and by a second pass that checked what the items are actually about. cnadnr.ro, mt.ro, cnir.ro, metrorex.ro, gov.ro and Bulgaria's api.bg time out from outside their own country, though cfr.ro does not, so a Romanian state host is not automatically unreachable. cnair.ro is not CNAIR but a squatted domain serving a single 2016 post. clubferoviar.ro and proinfrastructura.ro were dropped: both now answer any non-browser client with a JavaScript challenge, on every feed path tried. srbijavoz.rs was dropped because its pubDate values are transliterated into Cyrillic and no parser reads them. The EIB project pipeline was dropped because the host's robots.txt asks clients not to fetch feeds. koridorisrbije.rs is an empty Angular shell, so the corridors are covered through mgsi and putevi-srbije instead. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole, which is why an international title is filed as general. Wikipedia article histories are watched from the projects' own sources and need no entry here. The three Greek entries were fetched and parsed with the digest's own client on 2026-09-28. ergose.gr has a working feed but was left out: its newest item was from January 2025. The Slovak teraz-ekonomika entry was fetched and parsed with the digest's own client on 2026-10-05. ndsas.sk has an Atom feed but was left out: the site stamps items with their last edit, so hundreds of old articles would read as new.",
   "sources": [
     {
       "id": "hotnews",
@@ -123,6 +123,15 @@
       "language": "en",
       "focus": "general",
       "note": "English edition of Kathimerini. Filed as general: the feed is the whole paper, forty items a day."
+    },
+    {
+      "id": "teraz-ekonomika",
+      "name": "TASR (teraz.sk), Ekonomika",
+      "url": "https://www.teraz.sk/rss/ekonomika.rss",
+      "country": "sk",
+      "language": "sk",
+      "focus": "general",
+      "note": "Economy desk of the national news agency. Filed as general: fifteen items when checked, one on rail works and none on motorways, so the vocabulary filter earns its keep."
     },
     {
       "id": "cinea",

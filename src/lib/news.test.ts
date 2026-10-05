@@ -215,6 +215,12 @@ describe("hasInfrastructureKeyword", () => {
       true,
     );
     expect(hasInfrastructureKeyword("Otvoren autoput Miloš Veliki")).toBe(true);
+    expect(hasInfrastructureKeyword("Otvorili sme úsek diaľnice D3")).toBe(
+      true,
+    );
+    expect(
+      hasInfrastructureKeyword("Úsek rýchlostnej cesty R2 pri Zvolene"),
+    ).toBe(true);
     expect(hasInfrastructureKeyword("Controalele ANAF se înmulțesc")).toBe(
       false,
     );

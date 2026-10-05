@@ -288,6 +288,28 @@ const INFRA_TOKENS = new Set([
   "koridor",
   "pruga",
   "pruge",
+  // sk, diacritics folded (diaľnica -> dialnica)
+  "dialnica",
+  "dialnice",
+  "dialnicu",
+  "dialnici",
+  "dialnic",
+  "rychlostna",
+  "rychlostnej",
+  "rychlostnu",
+  "rychlostne",
+  "zeleznica",
+  "zeleznice",
+  "zeleznicu",
+  "zeleznicne",
+  "zeleznicny",
+  "zeleznicnej",
+  "obchvat",
+  "obchvatu",
+  "tunela",
+  "tunelu",
+  "mosta",
+  "mostu",
 ]);
 
 export function hasInfrastructureKeyword(text: string): boolean {
