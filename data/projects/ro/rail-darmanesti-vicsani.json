@@ -1,0 +1,128 @@
+{
+  "id": "ro-rail-darmanesti-vicsani",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "Dărmănești – Vicșani – border railway electrification",
+    "ro": "Electrificarea liniei CF Dărmănești – Vicșani – Frontieră"
+  },
+  "description": {
+    "en": "Electrification of the single-track line from Dărmănești to Vicșani, towards the Ukrainian border crossing at Vicșani – Vadul Siret, on the TEN-T Central route. It is stage 1 of the CFR rehabilitation of the Dărmănești – Vicșani – border line and is co-financed under the Connecting Europe Facility as part of the EU–Ukraine Solidarity Lanes.",
+    "ro": "Electrificarea liniei unice de la Dărmănești la Vicșani, spre punctul de trecere a frontierei cu Ucraina de la Vicșani – Vadu Siret, pe ruta TEN-T Central. Este etapa 1 a reabilitării liniei Dărmănești – Vicșani – Frontieră de către CFR și este cofinanțată prin Mecanismul de Interconectare Europeană, în cadrul liniilor de solidaritate UE–Ucraina."
+  },
+  "operator": "ro-cfr",
+  "lots": [
+    {
+      "id": "darmanesti-vicsani-electrification",
+      "name": {
+        "en": "Stage 1, lot 1: Dărmănești – Vicșani electrification",
+        "ro": "Etapa 1, lotul 1: electrificare Dărmănești – Vicșani"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-08-26",
+        "expectedOpening": "2027-11"
+      },
+      "lengthKm": 30.31,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 117.03,
+              "currency": "RON",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT. Design-and-build contract, RON 117,029,971.63."
+            },
+            "date": "2025-08-26",
+            "sourceRef": "cfr-ro-2025-08-26-darmanesti-vicsani"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": false,
+        "tracks": 1
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility 2021–2027, grant agreement 101122871 of 2 May 2023 (EU–Ukraine Solidarity Lanes, Vicșani – Vadul Siret rail border crossing)",
+            "ro": "Mecanismul de Interconectare Europeană 2021–2027, acord de grant 101122871 din 2 mai 2023 (liniile de solidaritate UE–Ucraina, trecerea feroviară Vicșani – Vadu Siret)"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "RailEC (Alstom Transport – A&S Turism Construct)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 117.03,
+          "currency": "RON",
+          "year": 2025,
+          "scope": "works",
+          "note": "Excluding VAT."
+        },
+        "executionMonths": 26
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-08-26",
+          "note": {
+            "en": "CFR signed the design-and-build contract with the RailEC association (Alstom Transport lead, A&S Turism Construct).",
+            "ro": "CFR a semnat contractul de proiectare și execuție cu Asocierea RailEC (Alstom Transport – lider, A&S Turism Construct)."
+          },
+          "sourceRef": "cfr-ro-2025-08-26-darmanesti-vicsani"
+        }
+      ],
+      "note": {
+        "en": "Electrification of the existing 30.31 km single-track line between Dărmănești and Vicșani, plus related track works. The 26-month contract period is 8 months of design and 18 months of works. CFR's August 2026 status report lists the contract with a start date of 15 September 2025, 0.00% physical progress and completion estimated for November 2027, and the report covers works and design phase together. No works start date is published, so the lot stays tendered. Lot 2, the rehabilitation of the rail bridge at km 0+522 (RON 41.999 million excluding VAT, signed 14 July 2026 with a EUROPAN PROD – CONFER GROUP – PRO AMI'S CONSULTING association), is not recorded as a separate lot because no length is published for it.",
+        "ro": "Electrificarea liniei unice existente de 30,31 km dintre Dărmănești și Vicșani, împreună cu lucrări conexe de cale ferată. Perioada contractului de 26 de luni cuprinde 8 luni de proiectare și 18 luni de execuție. Raportul CFR din august 2026 listează contractul cu data începerii 15 septembrie 2025, progres fizic de 0,00% și finalizare estimată în noiembrie 2027, iar raportul acoperă împreună faza de lucrări și cea de proiectare. Nu este publicată o dată de începere a lucrărilor, deci lotul rămâne în stadiul licitat. Lotul 2, reabilitarea podului feroviar de la km 0+522 (41,999 milioane lei fără TVA, semnat la 14 iulie 2026 cu o asociere EUROPAN PROD – CONFER GROUP – PRO AMI'S CONSULTING), nu este înregistrat ca lot separat, deoarece nu este publicată o lungime pentru el."
+      },
+      "sourceRefs": [
+        "cfr-ro-2025-08-26-darmanesti-vicsani",
+        "cfr-ro-stadiu-2026-08",
+        "cfr-ro-2026-07-14-pod-km-0522"
+      ],
+      "geometryRef": "darmanesti-vicsani-electrification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cfr-ro-2025-08-26-darmanesti-vicsani",
+      "title": "CFR SA: S-a semnat contractul de Reabilitare a liniei de cale ferată Dărmănești – Vicșani – Frontieră, Etapa 1, Electrificare, Lot 1 (2025-08-26)",
+      "url": "https://cfr.ro/wp-content/uploads/2025/09/26.08-CP-semnare-contract-Linii-de-solidaritate-Ucraina-ro-rev.pdf",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-stadiu-2026-08",
+      "title": "CFR SA: Stadiul proiectelor de reabilitare/modernizare infrastructură feroviară, August 2026 (2026-09)",
+      "url": "https://cfr.ro/wp-content/uploads/2026/09/Stadiu-proiecte-CFR-August-Septembrie-2026-1.pdf",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-2026-07-14-pod-km-0522",
+      "title": "CFR SA: CFR S.A. a semnat contractul pentru reabilitarea podului feroviar de la km 0+522, pe linia Dărmănești – Vicșani – Frontieră (2026-07-14)",
+      "url": "https://cfr.ro/bucuresti-14-iulie-2026-cfr-s-a-a-semnat-contractul-pentru-reabilitarea-podului-feroviar-de-la-km-0522-pe-linia-darmanesti-vicsani-frontiera/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry of CFR line 500, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

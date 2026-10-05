@@ -1,0 +1,89 @@
+{
+  "id": "ro-dex-oar-satu-mare",
+  "country": "ro",
+  "category": "highway",
+  "name": {
+    "en": "Oar – Satu Mare Expressway (Someș Expres)",
+    "ro": "Drumul expres Oar – Satu Mare (Someș Expres)"
+  },
+  "description": {
+    "en": "Expressway of 10.83 km between the Satu Mare ring road and the Hungarian border at Oar, where it meets the Hungarian M49. CNAIR signed the execution contract with Construcții Erbașu on 21 October 2025: 720.48 million lei excluding VAT, 24 months. The profile is 2×2 lanes with two junctions, two parking areas and a maintenance centre.",
+    "ro": "Drum expres de 10,83 km între centura Satu Mare și frontiera cu Ungaria la Oar, unde se leagă de autostrada maghiară M49. CNAIR a semnat contractul de execuție cu Construcții Erbașu la 21 octombrie 2025: 720,48 milioane lei fără TVA, 24 de luni. Profilul este 2×2 benzi, cu două noduri rutiere, două parcări și un centru de întreținere."
+  },
+  "operator": "ro-cnair",
+  "lots": [
+    {
+      "id": "oar-satu-mare",
+      "name": {
+        "en": "Oar (Hungarian border) – Satu Mare",
+        "ro": "Oar (frontiera cu Ungaria) – Satu Mare"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-10-21"
+      },
+      "lengthKm": 10.83,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 720.48,
+              "currency": "RON",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2025-10-21",
+            "sourceRef": "economedia-oar-satu-mare"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Transport Programme 2021–2027",
+            "ro": "Programul Transport 2021–2027"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Construcții Erbașu",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24,
+        "totalMonths": 24,
+        "value": {
+          "amount": 720.48,
+          "currency": "RON",
+          "year": 2025
+        }
+      },
+      "note": {
+        "en": "Execution contract (FIDIC Red) signed on 21 October 2025, 24 months. No works start order is sourced. OpenStreetMap maps the carriageways as under construction with Construcții Erbașu as builder; that is a mapper's tag, not a start date. The drawn line runs from the M49 end at the border to the DN19 end of the mapped works (about 11.9 km, 10% above the recorded length).",
+        "ro": "Contract de execuție (FIDIC Roșu) semnat la 21 octombrie 2025, 24 de luni. Nu există în surse un ordin de începere a lucrărilor. OpenStreetMap cartează carosabilele ca aflate în construcție, cu Construcții Erbașu ca antreprenor; este o etichetă a cartografilor, nu o dată de început. Linia desenată merge de la capătul M49 la frontieră până la capătul dinspre DN19 al lucrărilor cartate (circa 11,9 km, cu 10% peste lungimea înregistrată)."
+      },
+      "sourceRefs": [
+        "economedia-oar-satu-mare"
+      ],
+      "geometryRef": "oar-satu-mare"
+    }
+  ],
+  "sources": [
+    {
+      "id": "economedia-oar-satu-mare",
+      "title": "Economedia: Drumul Expres Oar-Satu Mare: S-a semnat contractul pentru construcția proiectului care va asigura inclusiv legătura cu frontiera dintre România și Ungaria",
+      "url": "https://economedia.ro/drumul-expres-oar-satu-mare-s-a-semnat-contractul-pentru-constructia-proiectului-care-va-asigura-inclusiv-legatura-cu-frontiera-dintre-romania-si-ungaria.html",
+      "publisher": "Economedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright"
+    }
+  ]
+}
