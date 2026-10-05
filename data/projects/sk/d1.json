@@ -1,0 +1,1962 @@
+{
+  "id": "sk-d1",
+  "country": "sk",
+  "category": "highway",
+  "name": {
+    "en": "D1 motorway (Bratislava – Žilina – Poprad – Prešov – Košice – Ukrainian border)",
+    "ro": "Autostrada D1 (Bratislava – Žilina – Poprad – Prešov – Košice – frontiera cu Ucraina)"
+  },
+  "description": {
+    "en": "Slovakia's main east–west motorway, planned at about 512 km from Bratislava to the Ukrainian border near Vyšné Nemecké. Construction began in 1972; sk.wikipedia counts 424.3 km in operation. Sections were opened one by one, many first as half profile and completed later. Only Turany – Hubová separates Bratislava from Košice; Hubová – Ivachnová opened on 5 October 2026. The 74 km east of Bidovce is still at EIA stage. Sections are listed by their sourced opening year where only the year is known; sections opened since 1998 are listed individually with their traffic opening dates. Pre-2009 costs are in SKK or Kčs and appear in notes only. Chainage starts at km 0 at the Bratislava-Pečňa interchange.",
+    "ro": "Principala autostradă est–vest a Slovaciei, planificată la circa 512 km de la Bratislava până la frontiera cu Ucraina, lângă Vyšné Nemecké. Construcția a început în 1972; sk.wikipedia numără 424,3 km în exploatare. Sectoarele au fost deschise pe rând, multe întâi cu profil parțial și completate ulterior. Doar Turany – Hubová separă Bratislava de Košice, iar Hubová – Ivachnová a fost deschis la 5 octombrie 2026. Cei 74 km de la est de Bidovce sunt încă în etapa EIA. Sectoarele sunt listate după anul de deschidere din surse acolo unde se cunoaște doar anul; cele deschise din 1998 sunt listate individual, cu datele deschiderii în trafic. Costurile dinainte de 2009 sunt în SKK sau Kčs și apar doar în note. Kilometrajul începe de la km 0 la nodul Bratislava-Pečňa."
+  },
+  "operator": "sk-nds",
+  "lots": [
+    {
+      "id": "bratislava-viedenska-pristavny-most",
+      "name": {
+        "en": "Bratislava Viedenská – Prístavný most",
+        "ro": "Bratislava Viedenská – Prístavný most"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003-03-20",
+        "opened": "2005-12-04"
+      },
+      "lengthKm": 3.2,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2003-03-20",
+          "sourceRef": "hd-2003"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-12-04",
+          "sourceRef": "hd-2005"
+        }
+      ],
+      "note": {
+        "en": "From the D1/D2 interchange at Pečňa through the Viedenská cesta exit to the Dolnozemská cesta and Panónska exits, mostly in the middle of Einsteinova street. Construction cost 1.908 billion SKK (prose only: SKK is not in the exchange-rate table). Historiadialnic.sk gives the length as 3.867 km; the recorded 3.2 km is from sk.wikipedia. The drawn line runs from the Viedenská exit to the Dolnozemská junction (3.45 km) and omits the Pečňa interchange ramps.",
+        "ro": "De la nodul D1/D2 de la Pečňa, prin ieșirea Viedenská cesta, până la ieșirile Dolnozemská cesta și Panónska, în mare parte pe axa străzii Einsteinova. Costul de construcție a fost de 1,908 miliarde SKK (doar în text: SKK nu figurează în tabelul de cursuri). Historiadialnic.sk dă lungimea de 3,867 km; cei 3,2 km înregistrați provin de la sk.wikipedia. Linia desenată merge de la ieșirea Viedenská la nodul Dolnozemská (3,45 km) și omite rampele nodului Pečňa."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2003",
+        "hd-2005",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "bratislava-viedenska-pristavny-most"
+    },
+    {
+      "id": "pristavny-most-mierova",
+      "name": {
+        "en": "Prístavný most – Mierová",
+        "ro": "Prístavný most – Mierová"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1977",
+        "opened": "1990"
+      },
+      "lengthKm": 5.6,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1977",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1983-12",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Left carriageway of the Prístavný most (Danube bridge) handed over for early use.",
+            "ro": "Calea de rulare stângă a Prístavného most (podul peste Dunăre) predată pentru utilizare anticipată."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1985",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Prístavný most – Prievoz (3.0 km) complete with the right carriageway.",
+            "ro": "Prístavný most – Prievoz (3,0 km) finalizat cu calea de rulare dreaptă."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1990",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Prievoz – Mierová (2.6 km), built from 1984.",
+            "ro": "Prievoz – Mierová (2,6 km), construit din 1984."
+          }
+        }
+      ],
+      "note": {
+        "en": "Two sections grouped by sourced opening year: Prístavný most – Prievoz (3.0 km, 1983 left half, 1985 right half; 1.085 billion Kčs) and Prievoz – Mierová (2.6 km, opened 1990 after six years of construction). Length is the sum of the two table lengths. The Prístavný most itself is 460.8 m, built April 1978 to December 1985. Exact opening days are not given in the sources used.",
+        "ro": "Două sectoare grupate după anul de deschidere indicat în surse: Prístavný most – Prievoz (3,0 km, jumătate stângă 1983, jumătate dreaptă 1985; 1,085 miliarde Kčs) și Prievoz – Mierová (2,6 km, deschis în 1990 după șase ani de lucrări). Lungimea este suma celor două lungimi din tabel. Prístavný most are 460,8 m și a fost construit din aprilie 1978 până în decembrie 1985. Zilele exacte ale deschiderii nu apar în sursele folosite."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "pristavny-most-mierova"
+    },
+    {
+      "id": "mierova-senecka-cesta",
+      "name": {
+        "en": "Bratislava Mierová – Senecká cesta (Vajnory)",
+        "ro": "Bratislava Mierová – Senecká cesta (Vajnory)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1999-06-15",
+        "opened": "2002-08-31"
+      },
+      "lengthKm": 5.5,
+      "profile": {
+        "viaductKm": 1.756
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1999-06-15",
+          "sourceRef": "hd-1999"
+        },
+        {
+          "kind": "opened",
+          "date": "2002-08-31",
+          "sourceRef": "hd-2002"
+        }
+      ],
+      "note": {
+        "en": "Three exits, the Zlaté Piesky rest area and the 1756 m Prievoz viaduct. Opened to traffic on 31 August 2002 and finally completed in December 2007. Construction cost 3.544 billion SKK (prose only).",
+        "ro": "Trei ieșiri, aria de odihnă Zlaté Piesky și viaductul Prievoz de 1756 m. Dat în circulație la 31 august 2002 și finalizat definitiv în decembrie 2007. Costul de construcție a fost de 3,544 miliarde SKK (doar în text)."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1999",
+        "hd-2002",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "mierova-senecka-cesta"
+    },
+    {
+      "id": "vajnory-horna-streda",
+      "name": {
+        "en": "Bratislava Vajnory – Horná Streda",
+        "ro": "Bratislava Vajnory – Horná Streda"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1972",
+        "opened": "1988"
+      },
+      "lengthKm": 77.8,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1972",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1975",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Bratislava Senecká cesta – Senec (13.0 km).",
+            "ro": "Bratislava Senecká cesta – Senec (13,0 km)."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1978",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Senec – Trnava (23.1 km).",
+            "ro": "Senec – Trnava (23,1 km)."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1982",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Trnava – Hlohovec (15.9 km).",
+            "ro": "Trnava – Hlohovec (15,9 km)."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1985-07",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Hlohovec – Piešťany (17.7 km), works from June 1980.",
+            "ro": "Hlohovec – Piešťany (17,7 km), lucrări din iunie 1980."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1988",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Piešťany – Horná Streda (8.1 km), built 1984–1988.",
+            "ro": "Piešťany – Horná Streda (8,1 km), construit în 1984–1988."
+          }
+        }
+      ],
+      "note": {
+        "en": "Five original sections grouped by sourced opening year: Senecká cesta – Senec 13.0 km (1975), Senec – Trnava 23.1 km (1978), Trnava – Hlohovec 15.9 km (1982), Hlohovec – Piešťany 17.7 km (July 1985) and Piešťany – Horná Streda 8.1 km (1988). Exact opening days are given in the sources only for Hlohovec – Piešťany (month). Until 1999 the Bratislava – Trenčín stretch was formally the D61. The current widening of the Bratislava Vajnory – Triblavina stretch is an upgrade of this road and is not recorded as a lot here.",
+        "ro": "Cinci sectoare inițiale grupate după anul de deschidere din surse: Senecká cesta – Senec 13,0 km (1975), Senec – Trnava 23,1 km (1978), Trnava – Hlohovec 15,9 km (1982), Hlohovec – Piešťany 17,7 km (iulie 1985) și Piešťany – Horná Streda 8,1 km (1988). Sursele dau ziua exactă doar la nivel de lună pentru Hlohovec – Piešťany. Până în 1999 tronsonul Bratislava – Trenčín a fost oficial D61. Lărgirea în curs a tronsonului Bratislava Vajnory – Triblavina este o modernizare a acestui drum și nu este înregistrată aici ca lot."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "vajnory-horna-streda"
+    },
+    {
+      "id": "horna-streda-chocholna",
+      "name": {
+        "en": "Horná Streda – Chocholná",
+        "ro": "Horná Streda – Chocholná"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996",
+        "opened": "2000-10-18"
+      },
+      "lengthKm": 27.5,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1998-09-10",
+          "sourceRef": "hd-1998",
+          "note": {
+            "en": "Half profile (one carriageway) of Horná Streda – Nové Mesto nad Váhom and Nové Mesto nad Váhom – Chocholná opened.",
+            "ro": "Profil parțial (o singură cale de rulare) pentru Horná Streda – Nové Mesto nad Váhom și Nové Mesto nad Váhom – Chocholná dat în circulație."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2000-10-18",
+          "sourceRef": "hd-2000",
+          "note": {
+            "en": "Full profile of Horná Streda – Nové Mesto nad Váhom; Nové Mesto nad Váhom – Chocholná completed during 2000 (second carriageway dated 1.8.2000 on historiadialnic.sk).",
+            "ro": "Profil complet pentru Horná Streda – Nové Mesto nad Váhom; Nové Mesto nad Váhom – Chocholná finalizat în cursul anului 2000 (a doua cale de rulare datată 1.8.2000 pe historiadialnic.sk)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Horná Streda – Nové Mesto nad Váhom (14.4 km) and Nové Mesto nad Váhom – Chocholná (13.1 km). Both opened as half profile on 10 September 1998 and were unaffected by the 1999 construction freeze. The 3.4 km stretch between the Lúka exit and the Hrádok rest area is built to serve as a reserve military airstrip.",
+        "ro": "Horná Streda – Nové Mesto nad Váhom (14,4 km) și Nové Mesto nad Váhom – Chocholná (13,1 km). Ambele au fost deschise cu profil parțial la 10 septembrie 1998 și nu au fost afectate de oprirea lucrărilor din 1999. Tronsonul de 3,4 km dintre ieșirea Lúka și aria de odihnă Hrádok este construit ca pistă militară de rezervă."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1998",
+        "hd-2000",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "horna-streda-chocholna"
+    },
+    {
+      "id": "chocholna-ladce",
+      "name": {
+        "en": "Chocholná – Ladce",
+        "ro": "Chocholná – Ladce"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1991-09",
+        "opened": "2000-11-09"
+      },
+      "lengthKm": 33.4,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1991-09",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1996",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Chocholná – Skala – Nemšová (17.9 km), the western bypass of Trenčín.",
+            "ro": "Chocholná – Skala – Nemšová (17,9 km), ocolitoarea vestică a Trenčínului."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1998",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Nemšová – Ladce (15.5 km) opened as half profile (December per the prose, September per historiadialnic.sk).",
+            "ro": "Nemšová – Ladce (15,5 km) dat în circulație cu profil parțial (decembrie conform textului, septembrie conform historiadialnic.sk)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2000-11-09",
+          "sourceRef": "hd-2000",
+          "note": {
+            "en": "Full profile of Nemšová – Ladce.",
+            "ro": "Profil complet pentru Nemšová – Ladce."
+          }
+        }
+      ],
+      "note": {
+        "en": "Chocholná – Skala 10.3 km (started September 1991), Skala – Nemšová 7.6 km (started 1994) and Nemšová – Ladce 15.5 km (started 1996). The Trenčín feeder (3.5 km) was handed over on 18 September 2002 and is not included. The date of the Nemšová – Ladce half-profile opening differs between sources, so only the year is recorded.",
+        "ro": "Chocholná – Skala 10,3 km (început în septembrie 1991), Skala – Nemšová 7,6 km (început în 1994) și Nemšová – Ladce 15,5 km (început în 1996). Racordul Trenčín (3,5 km) a fost predat la 18 septembrie 2002 și nu este inclus. Data deschiderii cu profil parțial pentru Nemšová – Ladce diferă între surse, deci se înregistrează doar anul."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1998",
+        "hd-2000",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "chocholna-ladce"
+    },
+    {
+      "id": "ladce-sverepec",
+      "name": {
+        "en": "Ladce – Sverepec",
+        "ro": "Ladce – Sverepec"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1998-01",
+        "opened": "2005-12-09"
+      },
+      "lengthKm": 11.3,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1998-01",
+          "sourceRef": "hd-1998"
+        },
+        {
+          "kind": "suspended",
+          "date": "1999",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Works stopped for lack of funds.",
+            "ro": "Lucrările au fost oprite din lipsă de fonduri."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2004-08-26",
+          "sourceRef": "hd-2004",
+          "note": {
+            "en": "Ladce – Beluša (1.9 km) opened in full profile (half profile from 24.7.2004).",
+            "ro": "Ladce – Beluša (1,9 km) dat în circulație cu profil complet (profil parțial din 24.7.2004)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2005-12-09",
+          "sourceRef": "hd-2005"
+        }
+      ],
+      "note": {
+        "en": "27 bridges, the longest being the 902 m Pružinka, and the Púchov feeder. The rest of the section opened on 9 December 2005 with a provisional connection to road I/61, removed when the next section to Vrtižer opened.",
+        "ro": "27 de poduri, cel mai lung fiind Pružinka, de 902 m, și racordul Púchov. Restul sectorului a fost deschis la 9 decembrie 2005, cu o legătură provizorie la drumul I/61, desființată la deschiderea sectorului următor până la Vrtižer."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1998",
+        "hd-2004",
+        "hd-2005",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "ladce-sverepec"
+    },
+    {
+      "id": "sverepec-vrtizer",
+      "name": {
+        "en": "Sverepec – Vrtižer",
+        "ro": "Sverepec – Vrtižer"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-12-13",
+        "opened": "2010-05-31"
+      },
+      "lengthKm": 9.8,
+      "profile": {
+        "viaductKm": 3.1385
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-12-13",
+          "sourceRef": "hd-2007",
+          "note": {
+            "en": "II. podúsek; the I. podúsek started on 17.7.2008.",
+            "ro": "Subsectorul II; subsectorul I a început la 17.7.2008."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2010-05-31",
+          "sourceRef": "hd-2010"
+        }
+      ],
+      "note": {
+        "en": "Includes the 1444 m viaduct above Považská Bystrica and the 1694.5 m viaduct along the Hričov canal. Historiadialnic.sk gives the two sub-sections as 4.9 km and 4.695 km; the recorded 9.8 km is from the sk.wikipedia section table.",
+        "ro": "Include viaductul de 1444 m deasupra orașului Považská Bystrica și viaductul de 1694,5 m de-a lungul canalului Hričov. Historiadialnic.sk dă cele două subsectoare ca 4,9 km și 4,695 km; cei 9,8 km înregistrați provin din tabelul de sectoare de pe sk.wikipedia."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2007",
+        "hd-2010",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "sverepec-vrtizer"
+    },
+    {
+      "id": "vrtizer-hricovske-podhradie",
+      "name": {
+        "en": "Vrtižer – Hričovské Podhradie",
+        "ro": "Vrtižer – Hričovské Podhradie"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1998-10",
+        "opened": "2007-06-29"
+      },
+      "lengthKm": 12.9,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1998-10",
+          "sourceRef": "hd-1998"
+        },
+        {
+          "kind": "suspended",
+          "date": "1999",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Works stopped for lack of funds.",
+            "ro": "Lucrările au fost oprite din lipsă de fonduri."
+          }
+        },
+        {
+          "kind": "resumed",
+          "date": "2004-07",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2007-01-12",
+          "sourceRef": "hd-2007",
+          "note": {
+            "en": "Right carriageway opened.",
+            "ro": "Calea de rulare dreaptă dată în circulație."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2007-06-29",
+          "sourceRef": "hd-2007",
+          "note": {
+            "en": "Full profile.",
+            "ro": "Profil complet."
+          }
+        }
+      ],
+      "note": {
+        "en": "Shortened from the original 13.5 km to end at the D1/D3 interchange at Hričovské Podhradie. Replaced the congested road I/61 between Považská Bystrica and Žilina; includes the Bytča exit.",
+        "ro": "Scurtat de la 13,5 km inițiali pentru a se opri la nodul D1/D3 de la Hričovské Podhradie. A înlocuit drumul I/61 aglomerat dintre Považská Bystrica și Žilina; include ieșirea Bytča."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1998",
+        "hd-2007",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "vrtizer-hricovske-podhradie"
+    },
+    {
+      "id": "hricovske-podhradie-lietavska-lucka",
+      "name": {
+        "en": "Hričovské Podhradie – Lietavská Lúčka",
+        "ro": "Hričovské Podhradie – Lietavská Lúčka"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-12-09",
+        "constructionStart": "2014-02-20",
+        "opened": "2021-01-29"
+      },
+      "lengthKm": 11.3,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-12-09",
+          "sourceRef": "wiki-tunel-ovciarsko",
+          "note": {
+            "en": "Contract to complete the Ovčiarsko tunnel signed (the 1996 pilot tunnel works had been left unfinished).",
+            "ro": "Contractul de finalizare a tunelului Ovčiarsko semnat (galeria pilot din 1996 rămăsese neterminată)."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2014-02-20",
+          "sourceRef": "hd-2014"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-01-29",
+          "sourceRef": "hd-2021"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Financed from the EU budget (sk.wikipedia). Programme not named in the source.",
+            "ro": "Finanțat din bugetul UE (sk.wikipedia). Programul nu este numit în sursă."
+          }
+        }
+      ],
+      "note": {
+        "en": "South bypass of Žilina with the Ovčiarsko tunnel (2360 m) and the Žilina tunnel. The contractual completion date was January 2018. Opened for vehicles up to 7.5 t only until the next section to Dubná Skala opened; the Lietavská Lúčka exit was built only to the extent needed for the opening. Length is from the sk.wikipedia table; historiadialnic.sk gives 11.32 km.",
+        "ro": "Ocolitoarea sudică a orașului Žilina, cu tunelul Ovčiarsko (2360 m) și tunelul Žilina. Termenul contractual de finalizare era ianuarie 2018. Deschis doar pentru vehicule de până la 7,5 t până la deschiderea sectorului următor spre Dubná Skala; ieșirea Lietavská Lúčka a fost construită doar în măsura necesară deschiderii. Lungimea provine din tabelul sk.wikipedia; historiadialnic.sk dă 11,32 km."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "wiki-tunel-ovciarsko",
+        "hd-2014",
+        "hd-2021",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "hricovske-podhradie-lietavska-lucka"
+    },
+    {
+      "id": "lietavska-lucka-dubna-skala",
+      "name": {
+        "en": "Lietavská Lúčka – Dubná Skala",
+        "ro": "Lietavská Lúčka – Dubná Skala"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-06-11",
+        "constructionStart": "2014-06-17",
+        "opened": "2025-12-22"
+      },
+      "lengthKm": 13.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 410,
+              "currency": "EUR",
+              "year": 2014,
+              "note": "Bid price of Dúha a.s. – Salini Impregilo S.p.A. as reported by sk.wikipedia; VAT basis not stated. Contract ended by agreement in March 2019."
+            },
+            "date": "2014-06-11",
+            "sourceRef": "wiki-tunel-visnove"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 255,
+              "currency": "EUR",
+              "year": 2021,
+              "note": "Skanska's price to complete the tunnel and the remaining unfinished part of the section, as reported by sk.wikipedia; VAT basis not stated."
+            },
+            "date": "2021-02",
+            "sourceRef": "wiki-tunel-visnove"
+          }
+        ]
+      },
+      "profile": {
+        "tunnelKm": 7.445
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-06-11",
+          "sourceRef": "wiki-tunel-visnove",
+          "note": {
+            "en": "Contract signed with Dúha a.s. – Salini Impregilo S.p.A.",
+            "ro": "Contract semnat cu Dúha a.s. – Salini Impregilo S.p.A."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2014-06-17",
+          "sourceRef": "hd-2014",
+          "note": {
+            "en": "Foundation stone laid in Žilina; tunnelling was officially started on 9.6.2015.",
+            "ro": "Piatra de temelie pusă în Žilina; excavarea tunelului a început oficial la 9.6.2015."
+          }
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-03",
+          "sourceRef": "wiki-tunel-visnove",
+          "note": {
+            "en": "NDS and the contractor agreed to end the contract after the subcontractors left the site in early 2019.",
+            "ro": "NDS și constructorul au convenit încetarea contractului după plecarea subcontractorilor de pe șantier la începutul lui 2019."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-02",
+          "sourceRef": "wiki-tunel-visnove",
+          "note": {
+            "en": "Skanska named winner of the tender to complete the tunnel and the section.",
+            "ro": "Skanska desemnată câștigătoare a licitației pentru finalizarea tunelului și a sectorului."
+          }
+        },
+        {
+          "kind": "resumed",
+          "date": "2021-05-10",
+          "sourceRef": "hd-2021"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-22",
+          "sourceRef": "cdb-vybrane-zmeny",
+          "note": {
+            "en": "Official opening of the Višňové tunnel and the section.",
+            "ro": "Deschiderea oficială a tunelului Višňové și a sectorului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dúha a.s. – Salini Impregilo S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Contains the 7445 m Višňové tunnel, the longest road tunnel in Slovakia. Dúha – Salini Impregilo built until work collapsed at the turn of 2018 and 2019; Skanska completed it. The CDB register gives the section as 13 km and the sk.wikipedia table as 13.5 km; historiadialnic.sk gives 13.51 km. The 2014 and 2021 contract figures are as reported by sk.wikipedia, whose VAT basis is not stated.",
+        "ro": "Conține tunelul Višňové de 7445 m, cel mai lung tunel rutier din Slovacia. Dúha – Salini Impregilo a construit până la prăbușirea lucrărilor la cumpăna dintre 2018 și 2019; Skanska l-a finalizat. Registrul CDB dă sectorul ca 13 km, iar tabelul sk.wikipedia ca 13,5 km; historiadialnic.sk dă 13,51 km. Cifrele contractelor din 2014 și 2021 sunt cele raportate de sk.wikipedia, fără precizarea TVA."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "wiki-tunel-visnove",
+        "cdb-vybrane-zmeny",
+        "hd-2014",
+        "hd-2021",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "lietavska-lucka-dubna-skala"
+    },
+    {
+      "id": "dubna-skala-turany",
+      "name": {
+        "en": "Dubná Skala – Turany",
+        "ro": "Dubná Skala – Turany"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-11-11",
+        "opened": "2015-07-10"
+      },
+      "lengthKm": 13.5,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2011-11-11",
+          "sourceRef": "hd-2011"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-07-10",
+          "sourceRef": "hd-2015"
+        }
+      ],
+      "note": {
+        "en": "Exits Dubná Skala and Ratkovo and the D1/R3 interchange at Martin, 28 bridges. The 1.652 km R3 feeder from Martin is listed separately in the sources (table: 13.5 km plus 3.3 km feeder) and is not part of this length. Historiadialnic.sk gives 16.41 km for the whole works and sk.wikipedia prose 16.5 km.",
+        "ro": "Ieșirile Dubná Skala și Ratkovo și nodul D1/R3 de la Martin, 28 de poduri. Racordul R3 dinspre Martin, de 1,652 km, este tratat separat în surse (tabel: 13,5 km plus 3,3 km racord) și nu face parte din această lungime. Historiadialnic.sk dă 16,41 km pentru întreaga lucrare, iar textul sk.wikipedia 16,5 km."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2011",
+        "hd-2015",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "dubna-skala-turany"
+    },
+    {
+      "id": "turany-hubova",
+      "name": {
+        "en": "Turany – Hubová",
+        "ro": "Turany – Hubová"
+      },
+      "status": "tendered",
+      "dates": {
+        "expectedOpening": "2034"
+      },
+      "lengthKm": 13.53,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-02-26",
+          "sourceRef": "wiki-harmonogram",
+          "note": {
+            "en": "Second tender for a contractor launched.",
+            "ro": "A doua licitație pentru constructor lansată."
+          }
+        }
+      ],
+      "note": {
+        "en": "NDS lists the section at the stage 'tender for the contractor' (13.53 km). The MDV schedule 2026–2036, as tabulated on sk.wikipedia, gives a start in 2027 and traffic opening in 2034. The route returned in 2017 to the 2002 design with the Korbeľka tunnel; the section also includes the Havran tunnel. An earlier tender launched in August 2024 was ordered cancelled by the procurement office ÚVO in December 2025 for technical deficiencies (sk.wikipedia).",
+        "ro": "NDS listează sectorul la etapa „licitație pentru constructor” (13,53 km). Programul MDV 2026–2036, așa cum apare în tabelul de pe sk.wikipedia, indică începerea în 2027 și deschiderea în 2034. Traseul a revenit în 2017 la proiectul din 2002 cu tunelul Korbeľka; sectorul include și tunelul Havran. O licitație anterioară, lansată în august 2024, a fost anulată prin dispoziția autorității de achiziții ÚVO în decembrie 2025, pentru deficiențe tehnice (sk.wikipedia)."
+      },
+      "sourceRefs": [
+        "nds-priprava-stavieb",
+        "wiki-harmonogram",
+        "wiki-d1-sk",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "turany-hubova"
+    },
+    {
+      "id": "hubova-ivachnova",
+      "name": {
+        "en": "Hubová – Ivachnová",
+        "ro": "Hubová – Ivachnová"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-12-20",
+        "opened": "2026-10-05"
+      },
+      "lengthKm": 14.92,
+      "profile": {
+        "tunnelKm": 3.6
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2013-12-20",
+          "sourceRef": "hd-2013"
+        },
+        {
+          "kind": "suspended",
+          "date": "2015",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Work on the most difficult part stopped early in 2015 after a landslide; the route was changed and the Čebrať tunnel lengthened from 2.0 km to 3.6 km.",
+            "ro": "Lucrările la partea cea mai dificilă au fost oprite la începutul lui 2015 din cauza unei alunecări de teren; traseul a fost modificat, iar tunelul Čebrať prelungit de la 2,0 km la 3,6 km."
+          }
+        },
+        {
+          "kind": "resumed",
+          "date": "2018-07-25",
+          "sourceRef": "nds-feed-hubova-resumed",
+          "note": {
+            "en": "Minister's order to resume work on the suspended parts, after the EIA final opinion became final.",
+            "ro": "Ordinul ministrului de reluare a lucrărilor în părțile suspendate, după ce avizul final EIA a devenit definitiv."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2026-10-05",
+          "sourceRef": "ta3-hubova-opened",
+          "note": {
+            "en": "Handed over for use at a ceremony at the eastern portal of the Čebrať tunnel; the first motorists were expected in the evening.",
+            "ro": "Predat în folosință la o ceremonie la portalul estic al tunelului Čebrať; primii șoferi erau așteptați seara."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds and the state budget (NDS project page).",
+            "ro": "Fonduri UE și buget de stat (pagina de proiect NDS)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "OHL ŽS, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Váhostav – SK, a.s.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 288.790981,
+          "currency": "EUR",
+          "note": "Accepted contract value excluding VAT, as published on the NDS project page."
+        }
+      },
+      "note": {
+        "en": "Ružomberok bypass with the 3.6 km Čebrať tunnel, between the Hubová and Ivachnová interchanges, 14.92 km. MDV and NDS announced on 17 September 2026 that traffic would start on the evening of 5 October 2026. TASR (via TA3) reported on 5 October 2026 that NDS handed the section over for use that day, and sk.wikipedia records it as opened on 5 October 2026; the NDS project page and the CDB register still showed it as upcoming when retrieved. The tunnel breakthrough was on 15 November 2022. sk.wikipedia dates the stop of work to early 2015; NDS dates the interruption to 2016.",
+        "ro": "Ocolitoarea orașului Ružomberok cu tunelul Čebrať de 3,6 km, între nodurile Hubová și Ivachnová, 14,92 km. MDV și NDS au anunțat la 17 septembrie 2026 că circulația va începe în seara zilei de 5 octombrie 2026. TASR (prin TA3) a relatat la 5 octombrie 2026 că NDS a predat sectorul în folosință în acea zi, iar sk.wikipedia îl înregistrează ca deschis la 5 octombrie 2026; pagina de proiect NDS și registrul CDB îl arătau încă ca viitor la momentul consultării. Străpungerea tunelului a avut loc la 15 noiembrie 2022. sk.wikipedia datează oprirea lucrărilor la începutul lui 2015; NDS datează întreruperea în 2016."
+      },
+      "sourceRefs": [
+        "nds-hubova-ivachnova",
+        "mdv-cebrat-opening",
+        "ta3-hubova-opened",
+        "cdb-vybrane-zmeny",
+        "wiki-d1-sk",
+        "wiki-harmonogram",
+        "hd-2013",
+        "nds-feed-hubova-resumed",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "hubova-ivachnova"
+    },
+    {
+      "id": "ivachnova-liptovsky-hradok",
+      "name": {
+        "en": "Ivachnová – Liptovský Hrádok",
+        "ro": "Ivachnová – Liptovský Hrádok"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1972-03",
+        "opened": "1983-12"
+      },
+      "lengthKm": 26.5,
+      "profile": {
+        "viaductKm": 1.035
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1972-03",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Liptovský Mikuláš – Liptovský Ján.",
+            "ro": "Liptovský Mikuláš – Liptovský Ján."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1976-07-01",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "First part of Liptovský Mikuláš – Liptovský Ján (6.4 km); the rest on 9.12.1976.",
+            "ro": "Prima parte din Liptovský Mikuláš – Liptovský Ján (6,4 km); restul la 9.12.1976."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1977-12",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Ivachnová – Liptovský Mikuláš (15 km), built January 1973 to December 1977.",
+            "ro": "Ivachnová – Liptovský Mikuláš (15 km), construit din ianuarie 1973 până în decembrie 1977."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1983-12",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Liptovský Ján – Liptovský Hrádok (5.1 km), built April 1975 to December 1983.",
+            "ro": "Liptovský Ján – Liptovský Hrádok (5,1 km), construit din aprilie 1975 până în decembrie 1983."
+          }
+        }
+      ],
+      "note": {
+        "en": "Three sections grouped by sourced opening: Ivachnová – Liptovský Mikuláš 15 km (241.3 million Kčs), Liptovský Mikuláš – Liptovský Ján 6.4 km (368 million Kčs) and Liptovský Ján – Liptovský Hrádok 5.1 km (502.7 million Kčs), with the 1035 m Podtureň viaduct, the longest road bridge in Slovakia. The Ivachnová – Liptovský Mikuláš section was built together with the Liptovská Mara reservoir and for decades began with a temporary connection to road I/18.",
+        "ro": "Trei sectoare grupate după deschiderea din surse: Ivachnová – Liptovský Mikuláš 15 km (241,3 milioane Kčs), Liptovský Mikuláš – Liptovský Ján 6,4 km (368 milioane Kčs) și Liptovský Ján – Liptovský Hrádok 5,1 km (502,7 milioane Kčs), cu viaductul Podtureň de 1035 m, cel mai lung pod rutier din Slovacia. Sectorul Ivachnová – Liptovský Mikuláš a fost construit odată cu lacul Liptovská Mara și zeci de ani a început cu o legătură provizorie la drumul I/18."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "ivachnova-liptovsky-hradok"
+    },
+    {
+      "id": "liptovsky-hradok-hybe",
+      "name": {
+        "en": "Liptovský Hrádok – Hybe",
+        "ro": "Liptovský Hrádok – Hybe"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1983-04",
+        "opened": "1990-10"
+      },
+      "lengthKm": 8.2,
+      "profile": {
+        "viaductKm": 0.5264
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1983-04",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1986-06",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Half profile (one carriageway) complete.",
+            "ro": "Profil parțial (o singură cale de rulare) finalizat."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1990-10",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Full profile, started April 1987.",
+            "ro": "Profil complet, început în aprilie 1987."
+          }
+        }
+      ],
+      "note": {
+        "en": "Built in two stages: half profile from April 1983 to June 1986, full profile from April 1987 to October 1990. Total cost 583.2 million Kčs. The cantilever-built Dovalovec bridge is 526.4 m long.",
+        "ro": "Construit în două etape: profil parțial din aprilie 1983 până în iunie 1986, profil complet din aprilie 1987 până în octombrie 1990. Cost total 583,2 milioane Kčs. Podul Dovalovec, construit în consolă, are 526,4 m."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "liptovsky-hradok-hybe"
+    },
+    {
+      "id": "hybe-vazec",
+      "name": {
+        "en": "Hybe – Važec",
+        "ro": "Hybe – Važec"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996-08",
+        "opened": "2000-11-16"
+      },
+      "lengthKm": 10.4,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996-08",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1998-09-13",
+          "sourceRef": "hd-1998",
+          "note": {
+            "en": "Half profile opened.",
+            "ro": "Profil parțial dat în circulație."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2000-11-16",
+          "sourceRef": "hd-2000",
+          "note": {
+            "en": "Full profile.",
+            "ro": "Profil complet."
+          }
+        }
+      ],
+      "note": {
+        "en": "Runs parallel to road I/18 and the railway along the Biely Váh. One exit (Východná) built at first, Hybe and Važec completed later; the Hybe exit was built as a half exit towards Bratislava. Finishing works continued to October 2007. Cost 3.461 billion SKK (prose only).",
+        "ro": "Merge paralel cu drumul I/18 și calea ferată de-a lungul Bielého Váh. Inițial a fost construită o singură ieșire (Východná), Hybe și Važec au fost finalizate ulterior; ieșirea Hybe a fost construită ca semi-ieșire spre Bratislava. Lucrările de finisare au continuat până în octombrie 2007. Cost 3,461 miliarde SKK (doar în text)."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1998",
+        "hd-2000",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "hybe-vazec"
+    },
+    {
+      "id": "vazec-mengusovce",
+      "name": {
+        "en": "Važec – Mengusovce",
+        "ro": "Važec – Mengusovce"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1998-08",
+        "opened": "2008-09-14"
+      },
+      "lengthKm": 12,
+      "profile": {
+        "tunnelKm": 0.25
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1998-08",
+          "sourceRef": "hd-1998"
+        },
+        {
+          "kind": "suspended",
+          "date": "1999",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Works stopped for lack of funds; partly resumed in 2003 and fully in 2004.",
+            "ro": "Lucrările au fost oprite din lipsă de fonduri; reluate parțial în 2003 și complet în 2004."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2007-12-11",
+          "sourceRef": "hd-2007",
+          "note": {
+            "en": "Section opened; the 7.706 km from Važec to the Lučivná tunnel in half profile only.",
+            "ro": "Sector dat în circulație; cei 7,706 km de la Važec până la tunelul Lučivná doar cu profil parțial."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2008-09-14",
+          "sourceRef": "hd-2008",
+          "note": {
+            "en": "Full profile throughout.",
+            "ro": "Profil complet pe toată lungimea."
+          }
+        }
+      ],
+      "note": {
+        "en": "23 bridges and the 250 m Lučivná tunnel; only the Štrba rest area was built. Includes Vlčia jama at 924 m above sea level, the highest point of the Slovak motorway network.",
+        "ro": "23 de poduri și tunelul Lučivná de 250 m; a fost construită doar aria de odihnă Štrba. Include Vlčia jama, la 924 m altitudine, cel mai înalt punct al rețelei de autostrăzi din Slovacia."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1998",
+        "hd-2007",
+        "hd-2008",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "vazec-mengusovce"
+    },
+    {
+      "id": "mengusovce-janovce",
+      "name": {
+        "en": "Mengusovce – Jánovce",
+        "ro": "Mengusovce – Jánovce"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-05-06",
+        "opened": "2009-12-05"
+      },
+      "lengthKm": 26.4,
+      "profile": {
+        "tunnelKm": 0.999
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-05-06",
+          "sourceRef": "hd-2005",
+          "note": {
+            "en": "II. and III. úsek (left half); the I. úsek started 10.4.2006.",
+            "ro": "Subsectoarele II și III (jumătatea stângă); subsectorul I a început la 10.4.2006."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2008-12-06",
+          "sourceRef": "hd-2008",
+          "note": {
+            "en": "II. úsek and the left half of III. úsek opened.",
+            "ro": "Subsectorul II și jumătatea stângă a subsectorului III dați în circulație."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2009-12-05",
+          "sourceRef": "hd-2009",
+          "note": {
+            "en": "I. úsek opened; the right half of III. úsek followed on 3.9.2009.",
+            "ro": "Subsectorul I dat în circulație; jumătatea dreaptă a subsectorului III a urmat la 3.9.2009."
+          }
+        }
+      ],
+      "note": {
+        "en": "Crosses the Poprad basin, with the 999 m Bôrik tunnel, passing Svit to the north and Batizovce to the south and ending north of Poprad at the exit towards road I/18 between Jánovce and Spišský Štvrtok. Built in three sub-sections between 2005 and 2009.",
+        "ro": "Traversează depresiunea Poprad, cu tunelul Bôrik de 999 m, trecând la nord de Svit și la sud de Batizovce și terminându-se la nord de Poprad, la ieșirea spre drumul I/18 dintre Jánovce și Spišský Štvrtok. Construit în trei subsectoare între 2005 și 2009."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2005",
+        "hd-2008",
+        "hd-2009",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "mengusovce-janovce"
+    },
+    {
+      "id": "janovce-jablonov",
+      "name": {
+        "en": "Jánovce – Jablonov",
+        "ro": "Jánovce – Jablonov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-06-20",
+        "opened": "2015-11-30"
+      },
+      "lengthKm": 19.2,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2011-06-20",
+          "sourceRef": "hd-2011",
+          "note": {
+            "en": "I. podúsek to the Levoča exit; contract signed 17.6.2011. The II. podúsek started on 25.6.2012.",
+            "ro": "Subsectorul I până la ieșirea Levoča; contract semnat la 17.6.2011. Subsectorul II a început la 25.6.2012."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2015-10-20",
+          "sourceRef": "hd-2015",
+          "note": {
+            "en": "I. podúsek (to the Levoča exit, 9 km) opened.",
+            "ro": "Subsectorul I (până la ieșirea Levoča, 9 km) dat în circulație."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2015-11-30",
+          "sourceRef": "hd-2015",
+          "note": {
+            "en": "II. podúsek (9.54 km).",
+            "ro": "Subsectorul II (9,54 km)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Split into two sub-sections for the tender, each procured separately, at the Levoča exit. The I. podúsek contract was signed on 17 June 2011 and works started on 20 June 2011 with a foundation-stone ceremony. On 2 November 2012 part of the deck of the eastern Iliašovce viaduct collapsed during concreting. Four workers died.",
+        "ro": "Împărțit în două subsectoare pentru licitație, fiecare achiziționat separat, la ieșirea Levoča. Contractul pentru subsectorul I a fost semnat la 17 iunie 2011, iar lucrările au început la 20 iunie 2011, cu ceremonia pietrei de temelie. La 2 noiembrie 2012 o parte din tablierul viaductului estic Iliašovce s-a prăbușit în timpul betonării. Patru muncitori au murit."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2011",
+        "hd-2015",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "janovce-jablonov"
+    },
+    {
+      "id": "jablonov-studenec",
+      "name": {
+        "en": "Jablonov – Studenec",
+        "ro": "Jablonov – Studenec"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-04-17",
+        "opened": "2012-12-14"
+      },
+      "lengthKm": 4.7,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-04-17",
+          "sourceRef": "hd-2009",
+          "note": {
+            "en": "Right carriageway; the left carriageway started on 18.11.2010.",
+            "ro": "Calea de rulare dreaptă; calea stângă a început la 18.11.2010."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2010-06-07",
+          "sourceRef": "hd-2010",
+          "note": {
+            "en": "Half profile (right carriageway) opened.",
+            "ro": "Profil parțial (calea de rulare dreaptă) dat în circulație."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2012-12-14",
+          "sourceRef": "hd-2012",
+          "note": {
+            "en": "Left carriageway.",
+            "ro": "Calea de rulare stângă."
+          }
+        }
+      ],
+      "note": {
+        "en": "Eight bridges with a combined length of 2520 m and the Jablonov exit onto road I/18. The right carriageway opened on 7 June 2010 and the left on 14 December 2012. Completing the second profile took 24 months and cost 34.217 million EUR excluding VAT (sk.wikipedia; not recorded as a cost field because it covers the completion, not the whole section). Length is 4.7 km in the section table and 4.6 km in the section prose. The Studenec end has no mapped junction and is placed 4.7 km after the Spišské Podhradie exit.",
+        "ro": "Opt poduri cu lungime totală de 2520 m și ieșirea Jablonov spre drumul I/18. Calea dreaptă a fost deschisă la 7 iunie 2010, iar cea stângă la 14 decembrie 2012. Finalizarea celui de-al doilea profil a durat 24 de luni și a costat 34,217 milioane EUR fără TVA (sk.wikipedia; nu este înregistrat ca cost, fiindcă acoperă finalizarea, nu întregul sector). Lungimea este de 4,7 km în tabelul de sectoare și de 4,6 km în textul sectorului. Capătul Studenec nu are nod cartografiat și este plasat la 4,7 km după ieșirea Spišské Podhradie."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2009",
+        "hd-2010",
+        "hd-2012",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "jablonov-studenec"
+    },
+    {
+      "id": "studenec-beharovce",
+      "name": {
+        "en": "Studenec – Beharovce",
+        "ro": "Studenec – Beharovce"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-04-02",
+        "opened": "2010-06-07"
+      },
+      "lengthKm": 3.4,
+      "cost": {
+        "actual": {
+          "amount": 22,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "As stated by sk.wikipedia ('22 miliónov eur'); VAT basis not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-04-02",
+          "sourceRef": "hd-2009",
+          "note": {
+            "en": "Full profile.",
+            "ro": "Profil complet."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2010-06-07",
+          "sourceRef": "hd-2010"
+        }
+      ],
+      "note": {
+        "en": "Section without exits at the foot of Spiš Castle, parallel to road I/18, with two bridge structures. The section table gives 3.4 km and the section prose 3.1 km.",
+        "ro": "Sector fără ieșiri, la poalele Castelului Spiš, paralel cu drumul I/18, cu două structuri de pod. Tabelul de sectoare dă 3,4 km, iar textul sectorului 3,1 km."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2009",
+        "hd-2010",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "studenec-beharovce"
+    },
+    {
+      "id": "beharovce-fricovce",
+      "name": {
+        "en": "Beharovce – Fričovce",
+        "ro": "Beharovce – Fričovce"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996-04-01",
+        "opened": "2003-06-29"
+      },
+      "lengthKm": 13.7,
+      "profile": {
+        "tunnelKm": 4.975
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996-04-01",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Foundation stone laid; tunnelling of the Branisko pilot tunnel began on 12.4.1996.",
+            "ro": "Piatra de temelie pusă; excavarea galeriei pilot a tunelului Branisko a început la 12.4.1996."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2001-09",
+          "sourceRef": "hd-2001",
+          "note": {
+            "en": "Široké bypass (0.8 km, half profile) opened.",
+            "ro": "Ocolitoarea Široké (0,8 km, profil parțial) dată în circulație."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2003-06-29",
+          "sourceRef": "hd-2003",
+          "note": {
+            "en": "Branisko tunnel (right tube), Fričovce bypass and the half-profile motorway to Beharovce opened.",
+            "ro": "Tunelul Branisko (tubul drept), ocolitoarea Fričovce și autostrada cu profil parțial până la Beharovce date în circulație."
+          }
+        }
+      ],
+      "note": {
+        "en": "Opened as half profile: one tube of the 4.975 km Branisko tunnel and one carriageway. Total cost 9.219 billion SKK (prose only). Construction was slowed by the financial problems of 1998 and 1999. NDS lists a second profile (Beharovce – Branisko, 7.30 km) at the feasibility-study stage; it is not recorded as a lot.",
+        "ro": "Deschis cu profil parțial: un tub al tunelului Branisko de 4,975 km și o singură cale de rulare. Cost total 9,219 miliarde SKK (doar în text). Lucrările au fost încetinite de problemele financiare din 1998 și 1999. NDS listează un al doilea profil (Beharovce – Branisko, 7,30 km) la etapa studiului de fezabilitate; nu este înregistrat ca lot."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-1998",
+        "hd-2001",
+        "hd-2003",
+        "nds-priprava-stavieb",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "beharovce-fricovce"
+    },
+    {
+      "id": "fricovce-svinia",
+      "name": {
+        "en": "Fričovce – Svinia",
+        "ro": "Fričovce – Svinia"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-11-24",
+        "opened": "2015-12-17"
+      },
+      "lengthKm": 10.9,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2011-11-24",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-12-17",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Handed over for use; planned for August 2015 but delayed by a landslide in spring 2015.",
+            "ro": "Predat în folosință; planificat pentru august 2015, dar întârziat de o alunecare de teren din primăvara 2015."
+          }
+        }
+      ],
+      "note": {
+        "en": "Replaced road I/18 between Svinia and Fričovce; section without exits. Historiadialnic.sk gives 11.217 km.",
+        "ro": "A înlocuit drumul I/18 dintre Svinia și Fričovce; sector fără ieșiri. Historiadialnic.sk dă 11,217 km."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2011",
+        "hd-2015",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "fricovce-svinia"
+    },
+    {
+      "id": "svinia-presov-zapad",
+      "name": {
+        "en": "Svinia – Prešov západ",
+        "ro": "Svinia – Prešov západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-12-01",
+        "opened": "2010-06-07"
+      },
+      "lengthKm": 6.8,
+      "cost": {
+        "actual": {
+          "amount": 96,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "As stated by sk.wikipedia ('96 mil. eur'); VAT basis not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-12-01",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-06-07",
+          "sourceRef": "hd-2010"
+        }
+      ],
+      "note": {
+        "en": "Five bridges with a combined length of 930 m and the Malý Šariš rest area. Of the Prešov západ interchange only one ramp, serving both directions, was built at first; the rest of that ramp was built from September 2016 to September 2017 (Skanska SK, 1.99 million EUR, as reported by sk.wikipedia). The interchange was fully completed only with the next section.",
+        "ro": "Cinci poduri cu lungime totală de 930 m și aria de odihnă Malý Šariš. Din nodul Prešov západ a fost construită inițial o singură rampă, pentru ambele sensuri; restul rampei a fost construit din septembrie 2016 până în septembrie 2017 (Skanska SK, 1,99 milioane EUR, conform sk.wikipedia). Nodul a fost finalizat complet abia odată cu sectorul următor."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2010",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "svinia-presov-zapad"
+    },
+    {
+      "id": "presov-zapad-presov-juh",
+      "name": {
+        "en": "Prešov západ – Prešov juh",
+        "ro": "Prešov západ – Prešov juh"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-04-06",
+        "constructionStart": "2017-05-30",
+        "opened": "2021-10-28"
+      },
+      "lengthKm": 7.8,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-06-04",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Tender notice published in the public procurement bulletin.",
+            "ro": "Anunțul de licitație publicat în buletinul achizițiilor publice."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-04-06",
+          "sourceRef": "wiki-tunel-presov",
+          "note": {
+            "en": "Construction contract signed.",
+            "ro": "Contractul de construcție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-05-30",
+          "sourceRef": "wiki-tunel-presov"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-10-28",
+          "sourceRef": "wiki-tunel-presov",
+          "note": {
+            "en": "Prešov tunnel handed over for permanent use.",
+            "ro": "Tunelul Prešov predat pentru utilizare definitivă."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia SK",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav Slovakia",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "South-west bypass of Prešov, built as a joint venture of the listed firms. The building permit was issued at the end of February 2015 and became final in June 2015. The tunnel breakthrough was on 13 June 2019. Historiadialnic.sk gives 7.87 km. The contract value is not recorded.",
+        "ro": "Ocolitoarea sud-vestică a orașului Prešov, construită de o asociere a firmelor enumerate. Autorizația de construire a fost emisă la sfârșitul lui februarie 2015 și a devenit definitivă în iunie 2015. Străpungerea tunelului a avut loc la 13 iunie 2019. Historiadialnic.sk dă 7,87 km. Valoarea contractului nu este înregistrată."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "wiki-tunel-presov",
+        "hd-2017",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "presov-zapad-presov-juh"
+    },
+    {
+      "id": "presov-juh-budimir",
+      "name": {
+        "en": "Prešov juh – Budimír",
+        "ro": "Prešov juh – Budimír"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978-04",
+        "opened": "1988-04"
+      },
+      "lengthKm": 19.7,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1978-04",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1982-11",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Prešov juh – Ličartovce (10.6 km), 325.9 million Kčs.",
+            "ro": "Prešov juh – Ličartovce (10,6 km), 325,9 milioane Kčs."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1988-04",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Ličartovce – Budimír (9.1 km), 475.6 million Kčs.",
+            "ro": "Ličartovce – Budimír (9,1 km), 475,6 milioane Kčs."
+          }
+        }
+      ],
+      "note": {
+        "en": "Two sections of the Prešov – Košice motorway, built in two stages from April 1978 to April 1988: Prešov juh – Ličartovce 10.6 km (opened November 1982) and Ličartovce – Budimír (Košice sever) 9.1 km (opened April 1988). Costs are in Kčs (prose only).",
+        "ro": "Două sectoare ale autostrăzii Prešov – Košice, construite în două etape din aprilie 1978 până în aprilie 1988: Prešov juh – Ličartovce 10,6 km (deschis în noiembrie 1982) și Ličartovce – Budimír (Košice sever) 9,1 km (deschis în aprilie 1988). Costurile sunt în Kčs (doar în text)."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "presov-juh-budimir"
+    },
+    {
+      "id": "budimir-bidovce",
+      "name": {
+        "en": "Budimír – Bidovce",
+        "ro": "Budimír – Bidovce"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-08-25",
+        "constructionStart": "2016-11-11",
+        "opened": "2019-12-16"
+      },
+      "lengthKm": 14.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 197.44,
+              "currency": "EUR",
+              "year": 2016,
+              "note": "Skanska SK price as stated by sk.wikipedia; VAT basis not stated."
+            },
+            "date": "2016-08-25",
+            "sourceRef": "wiki-d1-sk"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-06-04",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "awarded",
+          "date": "2016-08-25",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2016-11-11",
+          "sourceRef": "wiki-d1-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-16",
+          "sourceRef": "wiki-d1-sk",
+          "note": {
+            "en": "Section ceremonially opened.",
+            "ro": "Sector inaugurat festiv."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Skanska SK",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 197.44,
+          "currency": "EUR",
+          "year": 2016,
+          "note": "Skanska SK price as stated by sk.wikipedia; VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Part of the Košice bypass formed by the D1, R2 and R4; includes the D1/R2 interchange at Rozhanovce, eight bridges and a second feeder to Košice. The building permit was issued in April 2015 and the tender announced on 4 June 2015. Historiadialnic.sk dates the opening 16 December 2019 as well.",
+        "ro": "Parte a ocolitoarei Košice formate din D1, R2 și R4; include nodul D1/R2 de la Rozhanovce, opt poduri și un al doilea racord spre Košice. Autorizația de construire a fost emisă în aprilie 2015, iar licitația a fost anunțată la 4 iunie 2015. Historiadialnic.sk datează și ea deschiderea la 16 decembrie 2019."
+      },
+      "sourceRefs": [
+        "wiki-d1-sk",
+        "hd-2019",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "budimir-bidovce"
+    },
+    {
+      "id": "bidovce-michalovce",
+      "name": {
+        "en": "Bidovce – Michalovce",
+        "ro": "Bidovce – Michalovce"
+      },
+      "status": "planned",
+      "lengthKm": 42.83,
+      "note": {
+        "en": "Bidovce – Dargov 12.60 km, Dargov – Pozdišovce 18.18 km and Pozdišovce – Michalovce 12.05 km, all in the EIA process according to NDS (the NDS list labels the middle one 'Dargov – Michalovce'; the sk.wikipedia table gives Dargov – Pozdišovce 18.2 km, which matches). Length is the sum of the three NDS lengths. The MDV schedule 2026–2036 does not include these sections; sk.wikipedia notes earlier forecasts of 2030 for the start. A Dargov tunnel of about 4 km was under discussion. The route is the OSM proposed alignment (41.5 km drawn); the Michalovce end is placed in proportion to the NDS lengths.",
+        "ro": "Bidovce – Dargov 12,60 km, Dargov – Pozdišovce 18,18 km și Pozdišovce – Michalovce 12,05 km, toate în procedura EIA conform NDS (lista NDS numește sectorul din mijloc „Dargov – Michalovce”; tabelul sk.wikipedia dă Dargov – Pozdišovce 18,2 km, ceea ce corespunde). Lungimea este suma celor trei lungimi NDS. Programul MDV 2026–2036 nu include aceste sectoare; sk.wikipedia menționează prognoze anterioare de începere în 2030. Se discuta un tunel Dargov de circa 4 km. Traseul este cel propus în OSM (41,5 km desenați); capătul Michalovce este plasat proporțional cu lungimile NDS."
+      },
+      "sourceRefs": [
+        "nds-priprava-stavieb",
+        "wiki-d1-sk",
+        "wiki-harmonogram",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "bidovce-michalovce"
+    },
+    {
+      "id": "michalovce-sobrance",
+      "name": {
+        "en": "Michalovce – Sobrance",
+        "ro": "Michalovce – Sobrance"
+      },
+      "status": "planned",
+      "lengthKm": 15.81,
+      "note": {
+        "en": "In the EIA process according to NDS. The MDV schedule 2026–2036, as tabulated on sk.wikipedia, gives a start in 2032 and opening in 2035; the section has no building permit and no contractor. The route is the OSM proposed alignment; the Sobrance end is placed in proportion to the NDS lengths.",
+        "ro": "În procedura EIA conform NDS. Programul MDV 2026–2036, așa cum apare în tabelul de pe sk.wikipedia, indică începerea în 2032 și deschiderea în 2035; sectorul nu are autorizație de construire și nici constructor. Traseul este cel propus în OSM; capătul Sobrance este plasat proporțional cu lungimile NDS."
+      },
+      "sourceRefs": [
+        "nds-priprava-stavieb",
+        "wiki-harmonogram",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "michalovce-sobrance"
+    },
+    {
+      "id": "sobrance-statna-hranica",
+      "name": {
+        "en": "Sobrance – Záhor (štátna hranica SR/UA)",
+        "ro": "Sobrance – Záhor (frontiera SK/UA)"
+      },
+      "status": "planned",
+      "lengthKm": 15.48,
+      "note": {
+        "en": "Final section to the border with Ukraine near Vyšné Nemecké, in the EIA process according to NDS. It is not in the MDV schedule 2026–2036; sk.wikipedia states completion of the whole D1 no earlier than 2040.",
+        "ro": "Ultimul sector până la frontiera cu Ucraina, lângă Vyšné Nemecké, în procedura EIA conform NDS. Nu figurează în programul MDV 2026–2036; sk.wikipedia indică finalizarea întregii D1 cel mai devreme în 2040."
+      },
+      "sourceRefs": [
+        "nds-priprava-stavieb",
+        "wiki-d1-sk",
+        "wiki-harmonogram",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "sobrance-statna-hranica"
+    },
+    {
+      "id": "privadzac-lietavska-lucka-zilina-i-etapa",
+      "name": {
+        "en": "Privádzač Lietavská Lúčka – Žilina, I. etapa",
+        "ro": "Racord Lietavská Lúčka – Žilina, etapa I"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2026-02",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 3.812,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2026-02",
+          "sourceRef": "wiki-harmonogram"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds and the state budget (NDS project page).",
+            "ro": "Fonduri UE și buget de stat (pagina de proiect NDS)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 52.7407302,
+          "currency": "EUR",
+          "note": "Contracted price excluding VAT, as published on the NDS project page."
+        }
+      },
+      "note": {
+        "en": "Feeder road linking the D1 at Lietavská Lúčka with Žilina, the Žilina bypass and the Rajec valley; 5 bridges, 1820 m of retaining walls and nearly 800 m of noise barriers. It continues the II. etapa. Start 2/2026 and opening 2030 are from the MDV schedule as tabulated on sk.wikipedia. The feeder is not on the D1 itself and is included because NDS and the sources treat it as part of the D1 works.",
+        "ro": "Drum de legătură între D1 la Lietavská Lúčka și Žilina, ocolitoarea Žilinei și valea Rajec; 5 poduri, 1820 m de ziduri de sprijin și aproape 800 m de ecrane fonice. Continuă etapa II. Începerea în 2/2026 și deschiderea în 2030 provin din programul MDV, așa cum apare în tabelul de pe sk.wikipedia. Racordul nu se află pe D1 propriu-zisă și este inclus deoarece NDS și sursele îl tratează ca parte a lucrărilor D1."
+      },
+      "sourceRefs": [
+        "nds-feeder-i-etapa",
+        "wiki-harmonogram",
+        "osm-d1-relation",
+        "osm"
+      ],
+      "geometryRef": "privadzac-lietavska-lucka-zilina-i-etapa"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-d1-sk",
+      "title": "Wikipedia (sk): Diaľnica D1 (Slovensko), section table and 'Úseky diaľnice' prose",
+      "url": "https://sk.wikipedia.org/wiki/Dia%C4%BEnica_D1_(Slovensko)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wiki-harmonogram",
+      "title": "Wikipedia (sk): Harmonogram výstavby diaľnic a rýchlostných ciest na Slovensku (built from the MDV SR road schedule 2026–2036)",
+      "url": "https://sk.wikipedia.org/wiki/Harmonogram_v%C3%BDstavby_dia%C4%BEnic_a_r%C3%BDchlostn%C3%BDch_ciest_na_Slovensku",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-hubova-ivachnova",
+      "title": "NDS: D1 Hubová – Ivachnová (length 14 920 m, contractors, accepted contract value excluding VAT)",
+      "url": "https://ndsas.sk/stavby/vystavba/hubova-ivachnova",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-feeder-i-etapa",
+      "title": "NDS: D1 Diaľničný privádzač Lietavská Lúčka – Žilina, I. etapa (3812 m, Doprastav, contracted price excluding VAT)",
+      "url": "https://ndsas.sk/stavby/vystavba/d1-dialnicny-privadzac-lietavska-lucka-zilina-ietapa",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-priprava-stavieb",
+      "title": "NDS: Príprava stavieb (preparation stage and length of D1 Turany – Hubová and the eastern D1 sections)",
+      "url": "https://ndsas.sk/stavby/priprava-stavieb",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-feed-hubova-resumed",
+      "title": "NDS press: Výstavba úseku Hubová – Ivachnová sa môže naplno rozbehnúť, EIA nadobudla právoplatnosť (order to resume work, 25 July)",
+      "url": "https://ndsas.sk/press/spravy/vystavba-useku-hubova-ivachnova-sa-moze-naplno-rozbehnut-eia-nadobudla-pravoplatnost",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "mdv-cebrat-opening",
+      "title": "MDV SR press release 17.09.2026: Diaľničiari prezradili presný dátum otvorenia úseku D1 s tunelom Čebrať",
+      "url": "https://www.mindop.sk/media/tlacove-spravy/detail/dialniciari-prezradili-presny-datum-otvorenia-useku-d1-s-tunelom-cebrat",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ta3-hubova-opened",
+      "title": "TASR via TA3, 2026-10-05: Diaľničiari slávnostne otvorili úsek D1 Hubová – Ivachnová",
+      "url": "https://www.ta3.com/clanok/1075019/ruzomberok-sa-konecne-zbavi-casti-aut-ktore-nim-len-prechadzaju-otvoria-obchvat-aj-tunel-cebrat",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cdb-vybrane-zmeny",
+      "title": "Cestná databanka (SSC): Vybrané zmeny v cestnej sieti SR (D1 Hubová – Ivachnová to open 5.10.2026; D1 Lietavská Lúčka – Dubná Skala opened 22.12.2025)",
+      "url": "https://www.cdb.sk/sk/cestna-siet-SR/vybrane-zmeny-v-cestnej-sieti.alej",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wiki-tunel-visnove",
+      "title": "Wikipedia (sk): Tunel Višňové (contract, contractors, opening 22.12.2025)",
+      "url": "https://sk.wikipedia.org/wiki/Tunel_Vi%C5%A1%C5%88ov%C3%A9",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wiki-tunel-ovciarsko",
+      "title": "Wikipedia (sk): Tunel Ovčiarsko (contract signed 9.12.2013, works started 20.2.2014)",
+      "url": "https://sk.wikipedia.org/wiki/Tunel_Ov%C4%8Diarsko",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wiki-tunel-presov",
+      "title": "Wikipedia (sk): Tunel Prešov (contract 6.4.2017, works started 30.5.2017, opened 28.10.2021)",
+      "url": "https://sk.wikipedia.org/wiki/Tunel_Pre%C5%A1ov",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-d1-relation",
+      "title": "OpenStreetMap: relation 17053122, D1 motorway (Slovakia), with status sub-relations 37872, 12125212 and 12125211",
+      "url": "https://www.openstreetmap.org/relation/17053122",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-1998",
+      "title": "História diaľnic: História 1998 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1989-1998/historia-1998/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-1999",
+      "title": "História diaľnic: História 1999 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-1999/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2000",
+      "title": "História diaľnic: História 2000 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2000/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2001",
+      "title": "História diaľnic: História 2001 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2001/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2002",
+      "title": "História diaľnic: História 2002 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2002/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2003",
+      "title": "História diaľnic: História 2003 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2003/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2004",
+      "title": "História diaľnic: História 2004 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2004/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2005",
+      "title": "História diaľnic: História 2005 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2005/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2007",
+      "title": "História diaľnic: História 2007 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2007/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2008",
+      "title": "História diaľnic: História 2008 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2008/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2009",
+      "title": "História diaľnic: História 2009 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2009/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2010",
+      "title": "História diaľnic: História 2010 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2010/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2011",
+      "title": "História diaľnic: História 2011 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2011/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2012",
+      "title": "História diaľnic: História 2012 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2012/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2013",
+      "title": "História diaľnic: História 2013 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2013/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2014",
+      "title": "História diaľnic: História 2014 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2014/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2015",
+      "title": "História diaľnic: História 2015 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2015/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2017",
+      "title": "História diaľnic: História 2017 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2017/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2019",
+      "title": "História diaľnic: História 2019 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2019-2024/historia-2019/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2021",
+      "title": "História diaľnic: História 2021 (dated starts and openings of D1 sections)",
+      "url": "https://historiadialnic.sk/historia-2019-2024/historia-2021/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

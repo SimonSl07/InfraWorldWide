@@ -1,0 +1,884 @@
+{
+  "id": "sk-d3",
+  "country": "sk",
+  "category": "highway",
+  "name": {
+    "en": "D3 motorway (Hričovské Podhradie – Žilina – Čadca – Polish border)",
+    "ro": "Autostrada D3 (Hričovské Podhradie – Žilina – Čadca – frontiera cu Polonia)"
+  },
+  "description": {
+    "en": "Motorway from the D1 at Hričovské Podhradie past Žilina and Čadca to the Polish border at Skalité, where it meets the S1. sk.wikipedia gives its length as 59.1 km. About 40 km are open: the Žilina section in full profile, and the Čadca bypass and the section to the border in half profile (one carriageway). The 26 km between Žilina, Brodno and Čadca, Bukov are under construction since December 2025, for about EUR 890 million excluding VAT; the second carriageway of the Čadca bypass is built in the same programme and recorded on its open lot. The second carriageway from Svrčinovec to the border is planned after 2040. Costs from before 2009 are in SKK and appear in notes only. Lengths are the sourced section lengths, so they do not add up to the 59.1 km.",
+    "ro": "Autostradă de la D1 la Hričovské Podhradie, pe lângă Žilina și Čadca, până la frontiera cu Polonia la Skalité, unde se leagă la S1. sk.wikipedia indică lungimea de 59,1 km. Circa 40 km sunt în exploatare: sectorul Žilina în profil întreg, iar ocolitoarea Čadca și sectorul până la frontieră în profil parțial (o singură cale de rulare). Cei 26 km dintre Žilina, Brodno și Čadca, Bukov sunt în construcție din decembrie 2025, pentru circa 890 milioane EUR fără TVA; al doilea profil al ocolitoarei Čadca se construiește în același program și este înregistrat la sectorul în exploatare. A doua cale de rulare de la Svrčinovec până la frontieră este planificată după 2040. Costurile dinainte de 2009 sunt în SKK și apar doar în note. Lungimile sunt lungimile din surse ale sectoarelor, deci nu însumează 59,1 km."
+  },
+  "operator": "sk-nds",
+  "lots": [
+    {
+      "id": "hricovske-podhradie-zilina-strazov",
+      "name": {
+        "en": "Hričovské Podhradie – Žilina, Strážov",
+        "ro": "Hričovské Podhradie – Žilina, Strážov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-10-07",
+        "opened": "2008-06-06"
+      },
+      "lengthKm": 7.53,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-10-07",
+          "sourceRef": "hd-2005"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2007-01-12",
+          "sourceRef": "wiki-d3-sk",
+          "note": {
+            "en": "Left carriageway opened in part: 4 km per sk.wikipedia, 5.5 km per historiadialnic.sk.",
+            "ro": "Calea de rulare stângă deschisă parțial: 4 km conform sk.wikipedia, 5,5 km conform historiadialnic.sk."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2007-12-12",
+          "sourceRef": "hd-2007",
+          "note": {
+            "en": "Right carriageway (8.479 km) plus 1 km of the left carriageway.",
+            "ro": "Calea de rulare dreaptă (8,479 km) plus 1 km din cea stângă."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2008-06-06",
+          "sourceRef": "hd-2008",
+          "note": {
+            "en": "Remaining 1.979 km of the left carriageway; the section is complete in full profile.",
+            "ro": "Cei 1,979 km rămași din calea de rulare stângă; sectorul este complet în profil întreg."
+          }
+        }
+      ],
+      "note": {
+        "en": "Junction with the D1 at Hričovské Podhradie to the Žilina, Strážov exit, in full profile from the start. Lengths differ between sources: 7.53 km in the sk.wikipedia section text (which cites the road decision), 6.9 km in its table and 8.479 km on historiadialnic.sk. The recorded 7.53 km is the first; the drawn line is 8.2 km and includes the junction ramps. Construction cost 6 billion SKK (prose only: SKK is not in the exchange-rate table). The two sources also disagree on the 2007 stage: sk.wikipedia gives 4 km opened on 12 January 2007, historiadialnic.sk gives 5.5 km on that day and the right carriageway on 12 December 2007.",
+        "ro": "De la nodul cu D1 de la Hričovské Podhradie până la ieșirea Žilina, Strážov, în profil întreg încă de la început. Lungimile diferă între surse: 7,53 km în textul sk.wikipedia despre sector (care citează decizia rutieră), 6,9 km în tabelul său și 8,479 km pe historiadialnic.sk. Cei 7,53 km înregistrați provin din prima sursă; linia desenată are 8,2 km și include rampele nodului. Costul de construcție a fost de 6 miliarde SKK (doar în text: SKK nu figurează în tabelul de cursuri). Sursele diferă și asupra etapei din 2007: sk.wikipedia indică 4 km deschiși la 12 ianuarie 2007, iar historiadialnic.sk 5,5 km în acea zi și calea dreaptă la 12 decembrie 2007."
+      },
+      "sourceRefs": [
+        "wiki-d3-sk",
+        "hd-2005",
+        "hd-2007",
+        "hd-2008",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "hricovske-podhradie-zilina-strazov"
+    },
+    {
+      "id": "zilina-strazov-brodno",
+      "name": {
+        "en": "Žilina, Strážov – Žilina, Brodno (Považský Chlmec tunnel)",
+        "ro": "Žilina, Strážov – Žilina, Brodno (tunelul Považský Chlmec)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-05-26",
+        "constructionStart": "2014-06-17",
+        "opened": "2017-12-02"
+      },
+      "lengthKm": 4.25,
+      "profile": {
+        "viaductKm": 1.5,
+        "tunnelKm": 2.2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-05-26",
+          "sourceRef": "wiki-d3-sk",
+          "note": {
+            "en": "Construction contract signed.",
+            "ro": "Contract de execuție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2014-06-17",
+          "sourceRef": "hd-2014"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-02",
+          "sourceRef": "nds-pr-2017-12"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Phased project. Phase I: grant of EUR 74,548,579 from the Operational Programme Transport 2007–2013.",
+            "ro": "Proiect în faze. Faza I: grant de 74.548.579 EUR din Programul Operațional Transport 2007–2013."
+          },
+          "amount": {
+            "amount": 74.548579,
+            "currency": "EUR"
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Phase II: grant of EUR 165,299,615.29 from the Operational Programme Integrated Infrastructure 2014–2020.",
+            "ro": "Faza II: grant de 165.299.615,29 EUR din Programul Operațional Infrastructură Integrată 2014–2020."
+          },
+          "amount": {
+            "amount": 165.29961529,
+            "currency": "EUR"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia SK",
+          "role": "builder"
+        },
+        {
+          "name": "Hochtief CZ",
+          "role": "builder"
+        },
+        {
+          "name": "SMS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Western bypass of Žilina: a 1.5 km viaduct across the Hričov reservoir on 57 piers, then the 2.2 km twin-tube Považský Chlmec tunnel (2,249 m per sk.wikipedia), ending at the Žilina, Brodno exit, where it joins road I/11 temporarily. Built by an Eurovia SK, Hochtief CZ and SMS consortium. NDS and sk.wikipedia report that it was built for just under EUR 255 million (NDS: \"necelých 255 miliónov eur bez DPH\", excluding VAT, price year not stated), against an original NDS estimate of EUR 257.9 million (sk.wikipedia, VAT basis not stated). Neither figure is recorded as a money field. The drawn line is 4.5 km (7% over) because it starts at the Strážov exit.",
+        "ro": "Ocolitoarea vestică a orașului Žilina: un viaduct de 1,5 km peste lacul Hričov, pe 57 de piloni, apoi tunelul cu două tuburi Považský Chlmec de 2,2 km (2.249 m conform sk.wikipedia), care se termină la ieșirea Žilina, Brodno, unde se leagă provizoriu la drumul I/11. Construit de un consorțiu Eurovia SK, Hochtief CZ și SMS. NDS și sk.wikipedia indică un cost de construcție de puțin sub 255 milioane EUR (NDS: \"necelých 255 miliónov eur bez DPH\", fără TVA, anul prețurilor nespecificat), față de o estimare inițială a NDS de 257,9 milioane EUR (sk.wikipedia, baza TVA nespecificată). Niciuna dintre cifre nu este înregistrată ca sumă. Linia desenată are 4,5 km (cu 7% mai mult) deoarece începe la ieșirea Strážov."
+      },
+      "sourceRefs": [
+        "nds-pr-2017-12",
+        "wiki-d3-sk",
+        "hd-2014",
+        "hd-2017",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "zilina-strazov-brodno"
+    },
+    {
+      "id": "brodno-kysucke-nove-mesto",
+      "name": {
+        "en": "Žilina, Brodno – Kysucké Nové Mesto",
+        "ro": "Žilina, Brodno – Kysucké Nové Mesto"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-09-30",
+        "constructionStart": "2026-01"
+      },
+      "lengthKm": 11.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "date": "2024-11-26",
+            "sourceRef": "nds-pr-2024-11",
+            "money": {
+              "amount": 507.4,
+              "currency": "EUR",
+              "year": 2024,
+              "scope": "works",
+              "note": "Expected contract value at tender launch. Excluding VAT."
+            }
+          },
+          {
+            "kind": "award",
+            "date": "2025-09-30",
+            "sourceRef": "nds-d3-1",
+            "money": {
+              "amount": 398.728,
+              "currency": "EUR",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT."
+            }
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 398.728,
+          "currency": "EUR",
+          "year": 2025,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "profile": {
+        "bridgeCount": 16
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-11-26",
+          "sourceRef": "nds-pr-2024-11"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-09-30",
+          "sourceRef": "nds-pr-2025-09",
+          "note": {
+            "en": "Construction contracts for all three Kysuce sections signed.",
+            "ro": "Contractele de execuție pentru toate cele trei sectoare din Kysuce au fost semnate."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-01",
+          "sourceRef": "nds-pr-2026-02",
+          "note": {
+            "en": "Foundation stone ceremony in January 2026.",
+            "ro": "Ceremonia de punere a pietrei de temelie, în ianuarie 2026."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The three Kysuce sections together cost about EUR 890 million excluding VAT, of which 85% from EU funds and the rest from the state budget.",
+            "ro": "Cele trei sectoare din Kysuce costă împreună circa 890 milioane EUR fără TVA, din care 85% din fonduri UE, iar restul din bugetul de stat."
+          },
+          "coFinancingRate": 0.85
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Váhostav",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav DS",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the Žilina, Brodno junction along the Kysuca river and road I/11 to the south of Kysucký Lieskovec, 11.2 km in full profile with 16 bridges including an eco-duct, 18.5 km of noise walls and a relocation of I/11. Built by the Združenie D3 Brodno – KNM consortium. sk.wikipedia lists the opening as 2029; the EIA notice of April 2024 gave about three years of construction. OSM has no D3 ways for the first 1.7 km after Brodno, which is drawn as a straight line, and the end of the lot is cut at the sourced length of 11.2 km from the Brodno junction. The three Kysuce sections together cost about EUR 890 million excluding VAT, of which 85% from EU funds and the rest from the state budget.",
+        "ro": "De la nodul Žilina, Brodno de-a lungul râului Kysuca și a drumului I/11 până la sud de Kysucký Lieskovec, 11,2 km în profil întreg, cu 16 poduri inclusiv un ecoduct, 18,5 km de ziduri antifonice și o relocare a lui I/11. Construit de consorțiul Združenie D3 Brodno – KNM. sk.wikipedia indică deschiderea în 2029; anunțul EIA din aprilie 2024 vorbea de circa trei ani de lucrări. OSM nu are căi D3 pentru primii 1,7 km după Brodno, desenați ca linie dreaptă, iar capătul sectorului este tăiat la lungimea din sursă de 11,2 km de la nodul Brodno. Cele trei sectoare din Kysuce costă împreună circa 890 milioane EUR fără TVA, din care 85% din fonduri UE, iar restul din bugetul de stat."
+      },
+      "sourceRefs": [
+        "nds-d3-1",
+        "nds-pr-2024-11",
+        "nds-pr-2025-09",
+        "nds-pr-2026-02",
+        "nds-pr-2026-04",
+        "wiki-d3-sk",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "brodno-kysucke-nove-mesto"
+    },
+    {
+      "id": "kysucke-nove-mesto-oscadnica",
+      "name": {
+        "en": "Kysucké Nové Mesto – Oščadnica",
+        "ro": "Kysucké Nové Mesto – Oščadnica"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-09-30",
+        "constructionStart": "2026-02-26"
+      },
+      "lengthKm": 9.625,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "date": "2024-10-30",
+            "sourceRef": "nds-pr-2024-10",
+            "money": {
+              "amount": 307,
+              "currency": "EUR",
+              "year": 2024,
+              "scope": "works",
+              "note": "Expected contract value at tender launch. Excluding VAT."
+            }
+          },
+          {
+            "kind": "award",
+            "date": "2025-09-30",
+            "sourceRef": "nds-d3-2",
+            "money": {
+              "amount": 261.3,
+              "currency": "EUR",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT."
+            }
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 261.3,
+          "currency": "EUR",
+          "year": 2025,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "profile": {
+        "bridgeCount": 22
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-10-30",
+          "sourceRef": "nds-pr-2024-10"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-09-30",
+          "sourceRef": "nds-pr-2025-09",
+          "note": {
+            "en": "Construction contracts for all three Kysuce sections signed.",
+            "ro": "Contractele de execuție pentru toate cele trei sectoare din Kysuce au fost semnate."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-02-26",
+          "sourceRef": "nds-pr-2026-02",
+          "note": {
+            "en": "Site handed over to the contractor.",
+            "ro": "Șantierul a fost predat constructorului."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The three Kysuce sections together cost about EUR 890 million excluding VAT, of which 85% from EU funds and the rest from the state budget.",
+            "ro": "Cele trei sectoare din Kysuce costă împreună circa 890 milioane EUR fără TVA, din care 85% din fonduri UE, iar restul din bugetul de stat."
+          },
+          "coFinancingRate": 0.85
+        }
+      ],
+      "contractors": [
+        {
+          "name": "SKANSKA - SK",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Middle section through the Kysuca valley, bypassing Kysucký Lieskovec, Dunajov and Krásno nad Kysucou: 22 bridges, one interchange (Krásno nad Kysucou), a rest area, an 80 m wide eco-duct and more than 14 km of noise walls. The NDS page gives 9,625 m; sk.wikipedia and the schedule give 10.8 km. The start and end are cut by the sourced lengths of this and the previous lot, not at a junction. The three Kysuce sections together cost about EUR 890 million excluding VAT, of which 85% from EU funds and the rest from the state budget.",
+        "ro": "Sectorul de mijloc prin valea Kysuca, ocolind Kysucký Lieskovec, Dunajov și Krásno nad Kysucou: 22 de poduri, un nod (Krásno nad Kysucou), o zonă de odihnă, un ecoduct lat de 80 m și peste 14 km de ziduri antifonice. Pagina NDS indică 9.625 m; sk.wikipedia și programul indică 10,8 km. Începutul și sfârșitul sunt tăiate după lungimile din surse ale acestui sector și ale celui precedent, nu la un nod. Cele trei sectoare din Kysuce costă împreună circa 890 milioane EUR fără TVA, din care 85% din fonduri UE, iar restul din bugetul de stat."
+      },
+      "sourceRefs": [
+        "nds-d3-2",
+        "nds-pr-2024-10",
+        "nds-pr-2025-09",
+        "nds-pr-2026-02",
+        "nds-pr-2026-04",
+        "wiki-d3-sk",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "kysucke-nove-mesto-oscadnica"
+    },
+    {
+      "id": "oscadnica-cadca-bukov",
+      "name": {
+        "en": "Oščadnica – Čadca, Bukov (half profile, Horelica tunnel)",
+        "ro": "Oščadnica – Čadca, Bukov (profil parțial, tunelul Horelica)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996-04-25",
+        "opened": "2004-10-29"
+      },
+      "lengthKm": 4.8,
+      "profile": {
+        "tunnelKm": 0.6
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996-04-25",
+          "sourceRef": "wiki-d3-sk",
+          "note": {
+            "en": "Foundation stone of the Čadca bypass laid.",
+            "ro": "Piatra de temelie a ocolitoarei Čadca a fost pusă."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2004-10-29",
+          "sourceRef": "hd-2004",
+          "note": {
+            "en": "One carriageway (half profile) with the single-tube Horelica tunnel.",
+            "ro": "O singură cale de rulare (profil parțial), cu tunelul Horelica cu un singur tub."
+          }
+        }
+      ],
+      "note": {
+        "en": "Čadca bypass built as one carriageway with level junctions, including the 600 m single-tube Horelica tunnel (605 m per sk.wikipedia), opened as road I/11a. Length 4.8 km is the sk.wikipedia table value and matches historiadialnic.sk (3.44 km Oščadnica – Čadca plus 1.377 km of the Čadca bypass, both on 29 October 2004); the sk.wikipedia section text gives 5.971 km. NDS and historiadialnic.sk date the opening to 29 October 2004 (the tunnel ceremony); the sk.wikipedia section text says April 2005. Free of charge for cars up to 3.5 t. The lot stays opened while the second carriageway is built on the same corridor: a 5.3 km design-and-build contract (NDS, Združenie D3 Ošč-Ča of Váhostav, Metrostav DS and Duna Aszfalt) with a second Horelica tube of about 600 m, 21 bridges, a rest area and a motorway maintenance centre. The tender closed on 8 August 2025, the contract (EUR 230.4 million excluding VAT, signed 30 September 2025) is not recorded as a money field because it covers 5.3 km against the 4.8 km here, and the foundation stone was laid in December 2025. sk.wikipedia lists the second carriageway for 2030 and puts the section length at 4.8 km. It is the first of the three Kysuce sections to start; the three together cost about EUR 890 million excluding VAT, 85% from EU funds and the rest from the state budget. The drawn line is 5.3 km (10% over): it runs from the end of the Kysucké Nové Mesto – Oščadnica lot to the Čadca, Bukov junction so that the lots join.",
+        "ro": "Ocolitoarea Čadca construită cu o singură cale de rulare și intersecții la nivel, inclusiv tunelul Horelica cu un singur tub de 600 m (605 m conform sk.wikipedia), dată în folosință ca drum I/11a. Lungimea de 4,8 km este valoarea din tabelul sk.wikipedia și corespunde historiadialnic.sk (3,44 km Oščadnica – Čadca plus 1,377 km din ocolitoarea Čadca, ambele la 29 octombrie 2004); textul sk.wikipedia despre sector indică 5,971 km. NDS și historiadialnic.sk datează deschiderea la 29 octombrie 2004 (ceremonia tunelului); textul sk.wikipedia spune aprilie 2005. Gratuit pentru autoturisme până la 3,5 t. Sectorul rămâne în exploatare în timp ce a doua cale de rulare se construiește pe același coridor: un contract de proiectare și execuție de 5,3 km (NDS, Združenie D3 Ošč-Ča din Váhostav, Metrostav DS și Duna Aszfalt), cu al doilea tub Horelica de circa 600 m, 21 de poduri, o zonă de odihnă și un centru de întreținere a autostrăzii. Licitația s-a încheiat la 8 august 2025, contractul (230,4 milioane EUR fără TVA, semnat la 30 septembrie 2025) nu este înregistrat ca sumă, deoarece acoperă 5,3 km față de cei 4,8 km de aici, iar piatra de temelie a fost pusă în decembrie 2025. sk.wikipedia indică a doua cale de rulare pentru 2030 și lungimea sectorului de 4,8 km. Este primul dintre cele trei sectoare din Kysuce la care au început lucrările; cele trei costă împreună circa 890 milioane EUR fără TVA, 85% din fonduri UE, iar restul din bugetul de stat. Linia desenată are 5,3 km (cu 10% mai mult): merge de la capătul sectorului Kysucké Nové Mesto – Oščadnica până la nodul Čadca, Bukov, pentru ca sectoarele să se lege."
+      },
+      "sourceRefs": [
+        "wiki-d3-sk",
+        "hd-2004",
+        "nds-horelica-2019",
+        "nds-d3-3",
+        "nds-pr-2025-08",
+        "nds-pr-2025-09",
+        "nds-pr-2026-02",
+        "nds-pr-2026-04",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "oscadnica-cadca-bukov"
+    },
+    {
+      "id": "cadca-bukov-svrcinovec",
+      "name": {
+        "en": "Čadca, Bukov – Svrčinovec",
+        "ro": "Čadca, Bukov – Svrčinovec"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-11-23",
+        "constructionStart": "2017-01-24",
+        "opened": "2020-12-21"
+      },
+      "lengthKm": 5.673,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2016-11-23",
+            "sourceRef": "nds-pr-2020-12",
+            "money": {
+              "amount": 239,
+              "currency": "EUR",
+              "year": 2016,
+              "scope": "works",
+              "note": "Excluding VAT. Reported as 239 million (sk.wikipedia: over 239 million)."
+            }
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 239,
+          "currency": "EUR",
+          "year": 2016,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "profile": {
+        "bridgeCount": 19
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-11-23",
+          "sourceRef": "wiki-d3-sk",
+          "note": {
+            "en": "Construction contract signed.",
+            "ro": "Contract de execuție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-01-24",
+          "sourceRef": "nds-pr-2017-01",
+          "note": {
+            "en": "Foundation stone ceremony; NDS later dated the start of works to the end of 2016.",
+            "ro": "Ceremonia de punere a pietrei de temelie; NDS a datat ulterior începutul lucrărilor la sfârșitul lui 2016."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-21",
+          "sourceRef": "nds-pr-2020-12"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU co-financing. A Connecting Europe Facility contribution of EUR 74 million was approved in July 2016, as stated in the NDS release of 5 September 2017.",
+            "ro": "Cofinanțare UE. O contribuție din Mecanismul pentru Interconectarea Europei de 74 milioane EUR a fost aprobată în iulie 2016, conform comunicatului NDS din 5 septembrie 2017."
+          },
+          "amount": {
+            "amount": 74,
+            "currency": "EUR"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Porr",
+          "role": "builder"
+        },
+        {
+          "name": "Hochtief",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Six-kilometre Čadca bypass in full profile, 19 bridges (the longest 832 m) and two interchanges, ending at the Svrčinovec junction. The section starts at the Čadca, Bukov junction with the right carriageway, and part of the left carriageway was already open from 2004 (counted in the previous lot). The contract price was 239 million EUR excluding VAT; sk.wikipedia gives 42 million EUR per kilometre and an initial state plan of 199 million. Built by Strabag, Porr and Hochtief.",
+        "ro": "Ocolitoarea Čadca de șase kilometri în profil întreg, 19 poduri (cel mai lung de 832 m) și două noduri, care se termină la nodul Svrčinovec. Sectorul începe la nodul Čadca, Bukov cu calea dreaptă, iar o parte din calea stângă era deschisă încă din 2004 (numărată la sectorul precedent). Prețul contractului a fost de 239 milioane EUR fără TVA; sk.wikipedia indică 42 milioane EUR pe kilometru și un plan inițial al statului de 199 milioane. Construit de Strabag, Porr și Hochtief."
+      },
+      "sourceRefs": [
+        "nds-pr-2020-12",
+        "nds-pr-2017-01",
+        "nds-pr-2017-09",
+        "wiki-d3-sk",
+        "hd-2020",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "cadca-bukov-svrcinovec"
+    },
+    {
+      "id": "svrcinovec-skalite",
+      "name": {
+        "en": "Svrčinovec – Skalité (Svrčinovec and Poľana tunnels, Valy bridge)",
+        "ro": "Svrčinovec – Skalité (tunelurile Svrčinovec și Poľana, podul Valy)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-06-28",
+        "constructionStart": "2013-10-25",
+        "opened": "2017-06-10"
+      },
+      "lengthKm": 12.28,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2013-06-28",
+            "sourceRef": "wiki-d3-sk",
+            "money": {
+              "amount": 329.9,
+              "currency": "EUR",
+              "year": 2013,
+              "scope": "works",
+              "note": "Excluding VAT."
+            }
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 329.9,
+          "currency": "EUR",
+          "year": 2013,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "profile": {
+        "tunnelKm": 1.318
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-06-28",
+          "sourceRef": "wiki-d3-sk",
+          "note": {
+            "en": "Construction contract signed.",
+            "ro": "Contract de execuție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-10-25",
+          "sourceRef": "hd-2013",
+          "note": {
+            "en": "Site handed over; the foundation stone was laid on 30 October 2013.",
+            "ro": "Șantierul a fost predat; piatra de temelie a fost pusă la 30 octombrie 2013."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2017-06-10",
+          "sourceRef": "nds-pr-2017-06",
+          "note": {
+            "en": "Opened in half profile (one carriageway).",
+            "ro": "Deschis în profil parțial (o singură cale de rulare)."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU co-financing expected under the Operational Programme Integrated Infrastructure 2014–2020 (phase 2): the NDS release of 5 September 2017 says the European Commission should contribute EUR 130.8 million and Slovak sources EUR 23 million.",
+            "ro": "Cofinanțare UE preconizată prin Programul Operațional Infrastructură Integrată 2014–2020 (faza 2): comunicatul NDS din 5 septembrie 2017 spune că Comisia Europeană ar trebui să contribuie cu 130,8 milioane EUR, iar sursele slovace cu 23 milioane EUR."
+          },
+          "amount": {
+            "amount": 130.8,
+            "currency": "EUR"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Váhostav",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Half profile (one carriageway) from the Svrčinovec junction, with the R5 connection planned there, through the Svrčinovec and Poľana tunnels (1.3 km together per sk.wikipedia) and past the Valy bridge, 84 m high, to Skalité. Opened together with the Skalité – border lot on 10 June 2017; the two together are 15.46 km, cost just over 417 million EUR, and save 9 minutes against road I/11. Free of charge for cars up to 3.5 t. The second carriageway is planned after 2040 and is not recorded as a lot. The recorded 12.28 km is the historiadialnic.sk and sk.wikipedia length; the boundary with the next lot is cut by the sourced length of that lot (3.18 km) back from the border, so the drawn line is 11.7 km. The Skalité junction itself lies about 1.5 km nearer the border. The state expected a price of EUR 365.6 million before the tender (sk.wikipedia, VAT basis and price year not stated); the winning bid was EUR 329.9 million.",
+        "ro": "Profil parțial (o singură cale de rulare) de la nodul Svrčinovec, unde este planificată legătura cu R5, prin tunelurile Svrčinovec și Poľana (1,3 km împreună conform sk.wikipedia) și pe lângă podul Valy, înalt de 84 m, până la Skalité. Deschis împreună cu sectorul Skalité – frontieră la 10 iunie 2017; împreună au 15,46 km, costă puțin peste 417 milioane EUR și scurtează drumul cu 9 minute față de drumul I/11. Gratuit pentru autoturisme până la 3,5 t. A doua cale de rulare este planificată după 2040 și nu este înregistrată ca sector. Cei 12,28 km înregistrați sunt lungimea din historiadialnic.sk și sk.wikipedia; limita cu sectorul următor este tăiată după lungimea din sursă a acestuia (3,18 km) înapoi de la frontieră, deci linia desenată are 11,7 km. Nodul Skalité se află la circa 1,5 km mai aproape de frontieră. Statul a estimat înainte de licitație un preț de 365,6 milioane EUR (sk.wikipedia, baza TVA și anul prețurilor nespecificate); oferta câștigătoare a fost de 329,9 milioane EUR."
+      },
+      "sourceRefs": [
+        "wiki-d3-sk",
+        "hd-2013",
+        "hd-2014",
+        "hd-2017",
+        "nds-pr-2017-06",
+        "nds-pr-2017-09",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "svrcinovec-skalite"
+    },
+    {
+      "id": "skalite-border",
+      "name": {
+        "en": "Skalité – Polish border",
+        "ro": "Skalité – frontiera cu Polonia"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997",
+        "opened": "2017-06-10"
+      },
+      "lengthKm": 3.18,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1997",
+          "sourceRef": "wiki-d3-sk"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2007-11",
+          "sourceRef": "wiki-d3-sk",
+          "note": {
+            "en": "Short stretch around the former border crossing put into service.",
+            "ro": "Un tronson scurt în jurul fostului punct de trecere a frontierei a fost dat în folosință."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2017-06-10",
+          "sourceRef": "nds-pr-2017-06",
+          "note": {
+            "en": "Opened in half profile (one carriageway) with the Svrčinovec – Skalité lot.",
+            "ro": "Deschis în profil parțial (o singură cale de rulare), împreună cu sectorul Svrčinovec – Skalité."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Váhostav",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Last 3.18 km to the border with Poland, where the road continues as the Polish S1. Started in 1997 and stopped after 1998, so it stood unfinished for almost 20 years; the sk.wikipedia section text names Váhostav as the builder. Opened on 10 June 2017 with the Svrčinovec – Skalité lot, half profile only. Free of charge for cars up to 3.5 t. The second carriageway is planned after 2040 and is not recorded as a lot. The length is the historiadialnic.sk value (sk.wikipedia: 3.1 km).",
+        "ro": "Ultimii 3,18 km până la frontiera cu Polonia, unde drumul continuă ca S1 polonez. Început în 1997 și oprit după 1998, a rămas neterminat aproape 20 de ani; textul sk.wikipedia despre sector numește Váhostav drept constructor. Deschis la 10 iunie 2017 împreună cu sectorul Svrčinovec – Skalité, doar în profil parțial. Gratuit pentru autoturisme până la 3,5 t. A doua cale de rulare este planificată după 2040 și nu este înregistrată ca sector. Lungimea este valoarea din historiadialnic.sk (sk.wikipedia: 3,1 km)."
+      },
+      "sourceRefs": [
+        "wiki-d3-sk",
+        "hd-2017",
+        "nds-pr-2017-06",
+        "osm-d3-relation",
+        "osm"
+      ],
+      "geometryRef": "skalite-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-d3-sk",
+      "title": "Wikipedia (sk): Diaľnica D3 (Slovensko)",
+      "url": "https://sk.wikipedia.org/wiki/Dia%C4%BEnica_D3_(Slovensko)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-d3-1",
+      "title": "NDS: 1. úsek Žilina, Brodno – Kysucké Nové Mesto",
+      "url": "https://ndsas.sk/stavby/vystavba/1-usek-zilina-brodno-kysucke-nove-mesto",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-d3-2",
+      "title": "NDS: 2. úsek Kysucké Nové Mesto – Oščadnica",
+      "url": "https://ndsas.sk/stavby/vystavba/2-usek-kysucke-nove-mesto-oscadnica",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-d3-3",
+      "title": "NDS: 3. úsek Oščadnica – Čadca, Bukov, II. polprofil",
+      "url": "https://ndsas.sk/stavby/vystavba/3-usek-oscadnica-cadca-bukov-ii-polprofil",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2017-12",
+      "title": "NDS: Žilina dostala obchvat, otvorili sme úsek od Strážova po Brodno (2 December 2017)",
+      "url": "https://ndsas.sk/press/spravy/zilina-dostala-obchvat-otvorili-sme-usek-od-strazova-po-brodno",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2017-06",
+      "title": "NDS: Sprejazdnili sme prvý úsek kysuckej D3 (10 June 2017)",
+      "url": "https://ndsas.sk/press/spravy/sprejazdnili-sme-prvy-usek-kysuckej-d3",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2017-01",
+      "title": "NDS: Odštartovali sme výstavbu kysuckej diaľnice (24 January 2017)",
+      "url": "https://ndsas.sk/press/spravy/odstartovali-sme-vystavbu-kysuckej-dialnice",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2017-09",
+      "title": "NDS: NDS podpísala zmluvu o financovaní diaľnice D3 Svrčinovec – Skalité z eurofondov (5 September 2017)",
+      "url": "https://ndsas.sk/press/spravy/nds-podpisala-zmluvu-o-financovani-dialnice-d3-svrcinovec-skalite-z-eurofondov",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2020-12",
+      "title": "NDS: Okolo Čadce už iba po diaľnici (21 December 2020)",
+      "url": "https://ndsas.sk/press/spravy/okolo-cadce-uz-iba-po-dialnici",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-horelica-2019",
+      "title": "NDS: Tunel Horelica slúži motoristom 15 rokov (29 October 2019)",
+      "url": "https://ndsas.sk/press/spravy/tunel-horelica-sluzi-motoristom-15-rokov",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2024-10",
+      "title": "NDS: Druhý úsek kysuckej D3 ide do verejného obstarávania (30 October 2024)",
+      "url": "https://ndsas.sk/press/spravy/druhy-usek-kysuckej-d3-ide-do-verejneho-obstaravania",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2024-11",
+      "title": "NDS: Vyhlásený tender na výstavbu ďalšieho úseku kysuckej D3 (26 November 2024)",
+      "url": "https://ndsas.sk/press/spravy/vyhlaseny-tender-na-vystavbu-dalsieho-useku-kysuckej-d3",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2025-08",
+      "title": "NDS: Verejné obstarávanie D3 medzi Čadcou a Oščadnicou je ukončené (8 August 2025)",
+      "url": "https://ndsas.sk/press/spravy/verejne-obstaravanie-d3-medzi-cadcou-a-oscadnicou-je-ukoncene",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2025-09",
+      "title": "NDS: Zmluvy na úseky kysuckej D3 sú podpísané (30 September 2025)",
+      "url": "https://ndsas.sk/press/spravy/od-pripravy-k-realizacii-zmluvy-na-useky-kysuckej-d3-ky-su-podpisane",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2026-02",
+      "title": "NDS: Stavenisko diaľnice medzi Kysuckým Novým Mestom a Oščadnicou je odovzdané zhotoviteľovi (26 February 2026)",
+      "url": "https://ndsas.sk/press/spravy/stavenisko-dialnice-medzi-kysuckym-novym-mestom-a-oscadnicou-je-odovzdane-zhotovitelovi",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nds-pr-2026-04",
+      "title": "NDS: Kysuce sa menia: D3 je v plnom profile vo výstavbe (10 April 2026)",
+      "url": "https://ndsas.sk/press/spravy/kysuce-sa-menia-d3-je-v-plnom-profile-vo-vystavbe",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2004",
+      "title": "História diaľnic: História 2004 (dated openings of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2004/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2005",
+      "title": "História diaľnic: História 2005 (dated starts of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2005/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2007",
+      "title": "História diaľnic: História 2007 (dated openings of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2007/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2008",
+      "title": "História diaľnic: História 2008 (dated openings of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2008/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2013",
+      "title": "História diaľnic: História 2013 (dated starts of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2013/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2014",
+      "title": "História diaľnic: História 2014 (dated starts of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2014/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2017",
+      "title": "História diaľnic: História 2017 (dated openings of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2017/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hd-2020",
+      "title": "História diaľnic: História 2020 (dated openings of D3 sections)",
+      "url": "https://historiadialnic.sk/historia-2019-2024/historia-2020/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-d3-relation",
+      "title": "OpenStreetMap relations: D3 motorway in operation (375187), in construction (12125204), proposed (12125210)",
+      "url": "https://www.openstreetmap.org/relation/375187",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): D3 ways, via Overpass API",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}
