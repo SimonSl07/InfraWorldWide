@@ -1,0 +1,114 @@
+{
+  "id": "hr-svilaj-bridge",
+  "country": "hr",
+  "category": "bridge",
+  "name": {
+    "en": "Svilaj Bridge over the Sava (A5, Croatia – Bosnia and Herzegovina)",
+    "ro": "Podul Svilaj peste Sava (A5, Croația – Bosnia și Herțegovina)"
+  },
+  "description": {
+    "en": "Road bridge over the Sava between Croatia and Bosnia and Herzegovina on Pan-European Corridor Vc (E73). It is 660 m long and 29 m wide, with three lanes per direction and a pedestrian path, and links the Croatian A5 to the Bosnian motorway network. HAC reports works from September 2016 to July 2020 and the opening on 30 September 2021.",
+    "ro": "Pod rutier peste Sava între Croația și Bosnia și Herțegovina, pe coridorul paneuropean Vc (E73). Are 660 m lungime și 29 m lățime, cu trei benzi pe sens și o alee pietonală, și leagă A5 croată de rețeaua de autostrăzi a Bosniei. HAC indică lucrări din septembrie 2016 până în iulie 2020 și deschiderea la 30 septembrie 2021."
+  },
+  "corridors": [
+    "pan-european-vc"
+  ],
+  "operator": "hr-hac",
+  "lots": [
+    {
+      "id": "svilaj-bridge",
+      "name": {
+        "en": "Svilaj bridge over the Sava",
+        "ro": "Podul Svilaj peste Sava"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2016-09",
+        "opened": "2021-09-30"
+      },
+      "lengthKm": 0.66,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2016-09",
+          "sourceRef": "hac-svilaj-bridge"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-09-30",
+          "note": {
+            "en": "Opened to traffic. HAC says the A5 Beli Manastir – Osijek – Svilaj, 59 km in full profile with the border crossing, was then in service.",
+            "ro": "Deschis traficului. HAC spune că A5 Beli Manastir – Osijek – Svilaj, 59 km în profil complet cu punctul de frontieră, era atunci în exploatare."
+          },
+          "sourceRef": "hac-svilaj-bridge"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Croatian part financed through the Connecting Europe Facility (CEF), 57.97% according to HAC.",
+            "ro": "Partea croată finanțată prin Mecanismul pentru interconectarea Europei (CEF), 57,97% potrivit HAC."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Croatian part also financed by an EIB loan.",
+            "ro": "Partea croată este finanțată și printr-un credit BEI."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hering d.d. Široki Brijeg",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 22.30802234,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Excluding VAT. Contracted value of the works for the whole bridge, of which each state finances 50%."
+        }
+      },
+      "profile": {
+        "terrain": "plain",
+        "works": "greenfield",
+        "lanes": 6
+      },
+      "note": {
+        "en": "One structure across the state border, built jointly under an agreement between the Croatian Government and the Council of Ministers of Bosnia and Herzegovina; each state finances 50% of the contracted works, which HAC gives as EUR 22,308,022.34 excluding VAT. HAC does not say which party built which part, and names Hering d.d. Široki Brijeg as the contractor. Works ran from September 2016 to July 2020. The bridge opened on 30 September 2021, together with the A5 approach and the border crossing. Signing date of the contract is not given by HAC, so no award entry is recorded. Drawn geometry measures about 644 m against the 660 m HAC figure and includes the Bosnian half. The Croatian approach lot in the A5 project ends at the northern abutment.",
+        "ro": "O singură structură peste frontiera de stat, construită în comun în baza unui acord între Guvernul Croației și Consiliul de Miniștri al Bosniei și Herțegovinei; fiecare stat finanțează 50% din lucrările contractate, pe care HAC le indică la 22.308.022,34 EUR fără TVA. HAC nu spune care parte a construit care porțiune și numește ca antreprenor Hering d.d. Široki Brijeg. Lucrările s-au desfășurat din septembrie 2016 până în iulie 2020. Podul a fost deschis la 30 septembrie 2021, odată cu accesul A5 și punctul de trecere a frontierei. HAC nu indică data semnării contractului, deci nu se înregistrează o intrare de atribuire. Geometria trasată măsoară circa 644 m față de cei 660 m indicați de HAC și include jumătatea bosniacă. Lotul de acces croat din proiectul A5 se oprește la culeea nordică."
+      },
+      "sourceRefs": [
+        "hac-svilaj-bridge",
+        "osm-svilaj-bridge-ways"
+      ],
+      "geometryRef": "svilaj-bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hac-svilaj-bridge",
+      "title": "HAC: Izgradnja mosta Svilaj (660 m, 29 m wide, EUR 22,308,022.34 excl. VAT, Hering d.d. Široki Brijeg, works September 2016 – July 2020, opened 30 September 2021, 50% financed by each state, CEF 57.97% and EIB loan for the Croatian part)",
+      "url": "https://www.hac.hr/hr/o-nama/eu-projekti/instrument-za-povezivanje-europe-2014-2020/izgradnja-mosta-svilaj",
+      "publisher": "Hrvatske autoceste",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-svilaj-bridge-ways",
+      "title": "OpenStreetMap: bridge ways 707100679 and 968466394 (A5 / Most Svilaj over the Sava)",
+      "url": "https://www.openstreetmap.org/way/707100679",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

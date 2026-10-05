@@ -1,0 +1,401 @@
+{
+  "id": "hr-a5",
+  "country": "hr",
+  "category": "highway",
+  "name": {
+    "en": "A5 Slavonika (Hungarian border – Beli Manastir – Osijek – Đakovo – Sredanci – Svilaj)",
+    "ro": "Autostrada A5 Slavonika (granița cu Ungaria – Beli Manastir – Osijek – Đakovo – Sredanci – Svilaj)"
+  },
+  "description": {
+    "en": "Croatia's north–south motorway through Slavonia, on Pan-European Corridor Vc and the E73. HAC lists it as 88.6 km, from the Hungarian border at Branjin Vrh to the Bosnia and Herzegovina border at Svilaj, and lists the 660 m Sava bridge at Svilaj among its sections. It joins the A3 at the Sredanci interchange. The sections opened one by one: Sredanci – Đakovo in 2007, Đakovo – Osijek in 2009, Sredanci – Svilaj in 2015, Osijek – Beli Manastir in December 2022 and Beli Manastir – Hungarian border in October 2025, which HAC calls the completion of the motorway in full profile. The Svilaj bridge itself is not a lot here: the last lot ends at its northern abutment. Lengths are the section lengths published by HAC where it gives one; Sredanci – Svilaj is from the Croatian Wikipedia and the Svilaj approach is measured from the mapped alignment. Kuna amounts are given in the lot notes only.",
+    "ro": "Autostrada nord–sud a Croației prin Slavonia, pe coridorul paneuropean Vc și pe E73. HAC o listează cu 88,6 km, de la granița cu Ungaria la Branjin Vrh până la granița cu Bosnia și Herțegovina la Svilaj, și listează printre sectoare podul de 660 m peste Sava de la Svilaj. Se leagă de A3 la nodul Sredanci. Sectoarele au fost deschise pe rând: Sredanci – Đakovo în 2007, Đakovo – Osijek în 2009, Sredanci – Svilaj în 2015, Osijek – Beli Manastir în decembrie 2022 și Beli Manastir – granița cu Ungaria în octombrie 2025, pe care HAC o numește finalizarea autostrăzii în profil complet. Podul Svilaj nu este lot aici: ultimul lot se oprește la culeea sa nordică. Lungimile sunt cele publicate de HAC acolo unde există; Sredanci – Svilaj provine din Wikipedia croată, iar accesul la Svilaj este măsurat pe traseul cartografiat. Sumele în kuna apar doar în notele loturilor."
+  },
+  "corridors": [
+    "pan-european-vc"
+  ],
+  "operator": "hr-hac",
+  "lots": [
+    {
+      "id": "sredanci-djakovo",
+      "name": {
+        "en": "Sredanci – Đakovo",
+        "ro": "Sredanci – Đakovo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-11-09"
+      },
+      "lengthKm": 23,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-11-09",
+          "note": {
+            "en": "First section of the A5, opened to traffic.",
+            "ro": "Primul sector al A5, deschis traficului."
+          },
+          "sourceRef": "wikipedia-hr-a5"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "HAC gives 23.0 km for this section; the Croatian Wikipedia gives 21 km and the mapped alignment measures about 21.0 km between the A3 crossing and the Đakovo interchange. The English Wikipedia records the cost as 1.4 billion kuna (HRK), built in eighteen months by a consortium of Croatian construction companies, which are not named.",
+        "ro": "HAC indică 23,0 km pentru acest sector; Wikipedia croată indică 21 km, iar traseul cartografiat măsoară circa 21,0 km între traversarea A3 și nodul Đakovo. Wikipedia engleză consemnează costul la 1,4 miliarde de kuna (HRK), construit în optsprezece luni de un consorțiu de firme croate de construcții, care nu sunt numite."
+      },
+      "sourceRefs": [
+        "hac-news-a5-2022",
+        "wikipedia-hr-a5",
+        "wikipedia-en-a5",
+        "osm-relation-144787"
+      ],
+      "geometryRef": "sredanci-djakovo"
+    },
+    {
+      "id": "djakovo-osijek",
+      "name": {
+        "en": "Đakovo – Osijek",
+        "ro": "Đakovo – Osijek"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-04-17"
+      },
+      "lengthKm": 32.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-04-17",
+          "sourceRef": "wikipedia-hr-a5"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "The English Wikipedia records a cost of 2.13 billion kuna (HRK), with completion originally scheduled for December 2008 and the opening delayed by four months; toll collection on the A5 began with this opening.",
+        "ro": "Wikipedia engleză consemnează un cost de 2,13 miliarde de kuna (HRK); finalizarea era programată inițial pentru decembrie 2008, iar deschiderea a fost amânată cu patru luni; încasarea taxei pe A5 a început odată cu această deschidere."
+      },
+      "sourceRefs": [
+        "hac-news-a5-2022",
+        "wikipedia-hr-a5",
+        "wikipedia-en-a5",
+        "osm-relation-144787"
+      ],
+      "geometryRef": "djakovo-osijek"
+    },
+    {
+      "id": "sredanci-svilaj",
+      "name": {
+        "en": "Sredanci – Svilaj interchange",
+        "ro": "Sredanci – nodul Svilaj"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-03-02"
+      },
+      "lengthKm": 3.2,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-03-02",
+          "sourceRef": "wikipedia-hr-a5"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "From the A3 crossing at Sredanci to the Svilaj interchange. Length is from the Croatian Wikipedia (3.2 km); the mapped alignment measures about 2.9 km. HAC lists Sredanci to the Bosnia and Herzegovina border as 3.5 km, a figure that does not match the sum of this lot and the Svilaj approach lot as drawn.",
+        "ro": "De la traversarea A3 la Sredanci până la nodul Svilaj. Lungimea provine din Wikipedia croată (3,2 km); traseul cartografiat măsoară circa 2,9 km. HAC indică 3,5 km de la Sredanci la granița cu Bosnia și Herțegovina, o cifră care nu corespunde sumei dintre acest lot și lotul de acces Svilaj așa cum sunt trasate."
+      },
+      "sourceRefs": [
+        "wikipedia-hr-a5",
+        "hac-news-a5-2022",
+        "osm-relation-144787"
+      ],
+      "geometryRef": "sredanci-svilaj"
+    },
+    {
+      "id": "svilaj-bridge-approach",
+      "name": {
+        "en": "Svilaj interchange – Sava bridge approach",
+        "ro": "Nodul Svilaj – accesul la podul peste Sava"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-09-30"
+      },
+      "lengthKm": 1.64,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2021-09-30",
+          "note": {
+            "en": "Opened together with the Svilaj bridge and the border crossing.",
+            "ro": "Deschis odată cu podul Svilaj și punctul de trecere a frontierei."
+          },
+          "sourceRef": "hac-svilaj-bridge"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. The lot ends at the northern abutment of the 660 m Svilaj bridge over the Sava, which is not part of this lot. The Croatian Wikipedia gives 1.9 km for Svilaj – border and says the road was built to the border in 2015 but stayed closed until the bridge and the Bosnian border crossing were finished; HAC says the bridge opened on 30 September 2021.",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap. Lotul se oprește la culeea nordică a podului Svilaj de 660 m peste Sava, care nu face parte din acest lot. Wikipedia croată indică 1,9 km pentru Svilaj – frontieră și spune că drumul a fost construit până la frontieră în 2015, dar a rămas închis până la finalizarea podului și a punctului de frontieră bosniac; HAC spune că podul a fost deschis la 30 septembrie 2021."
+      },
+      "sourceRefs": [
+        "hac-svilaj-bridge",
+        "wikipedia-hr-a5",
+        "osm-relation-144787"
+      ],
+      "geometryRef": "svilaj-bridge-approach"
+    },
+    {
+      "id": "osijek-halasica",
+      "name": {
+        "en": "Osijek – Halasica bridge",
+        "ro": "Osijek – podul Halasica"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2012",
+        "opened": "2022-12-02"
+      },
+      "lengthKm": 7.1,
+      "cost": {
+        "actual": {
+          "amount": 126,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Total investment on this sub-section including the Drava bridge, as stated by HAC at the opening. Price year and VAT basis not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2012",
+          "note": {
+            "en": "Construction of the Drava bridge began in 2012 (Croatian Wikipedia).",
+            "ro": "Construcția podului peste Drava a început în 2012 (Wikipedia croată)."
+          },
+          "sourceRef": "wikipedia-hr-a5"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-02",
+          "sourceRef": "hac-news-a5-2022"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "Sub-section of Osijek – Beli Manastir (24.6 km in all). Includes the 2,507 m bridge over the Drava (the 3rd Guards Brigade Kune bridge). HAC says the works were finished in 2019 and the sub-section stayed closed until the northern sub-section was ready, so it opened with it on 2 December 2022. The mapped alignment measures about 7.9 km between the Osijek interchange and the Halasica bridge, against HAC's 7.1 km.",
+        "ro": "Subsector din Osijek – Beli Manastir (24,6 km în total). Include podul de 2.507 m peste Drava (podul Brigăzii a 3-a de Gardă Kune). HAC spune că lucrările au fost terminate în 2019, iar subsectorul a rămas închis până când subsectorul nordic a fost gata, deschizându-se odată cu acesta la 2 decembrie 2022. Traseul cartografiat măsoară circa 7,9 km între nodul Osijek și podul Halasica, față de 7,1 km indicați de HAC."
+      },
+      "sourceRefs": [
+        "hac-news-a5-2022",
+        "wikipedia-hr-a5",
+        "osm-relation-144787"
+      ],
+      "geometryRef": "osijek-halasica"
+    },
+    {
+      "id": "halasica-beli-manastir",
+      "name": {
+        "en": "Halasica bridge – Beli Manastir",
+        "ro": "Podul Halasica – Beli Manastir"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-08",
+        "opened": "2022-12-02"
+      },
+      "lengthKm": 17.5,
+      "cost": {
+        "actual": {
+          "amount": 80.4,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Total investment on this sub-section as stated by HAC at the opening. Price year and VAT basis not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-08",
+          "note": {
+            "en": "First phase: the Halasica bridge, overpasses and crossings.",
+            "ro": "Prima fază: podul Halasica, pasajele și trecerile."
+          },
+          "sourceRef": "hac-news-a5-2022"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-02",
+          "sourceRef": "hac-news-a5-2022"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Part of the project Croatia, completion of the motorway on Corridor Vc, worth EUR 107 million in total and financed by the EBRD (51%) and HBOR (49%). The EBRD loan was EUR 55 million at 1% over 15 years.",
+            "ro": "Parte din proiectul Croația, finalizarea autostrăzii pe coridorul Vc, în valoare totală de 107 milioane EUR, finanțat de BERD (51%) și HBOR (49%). Împrumutul BERD a fost de 55 milioane EUR, cu dobândă de 1% pe 15 ani."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Osijek-Koteks d.d.",
+          "role": "builder"
+        },
+        {
+          "name": "GP Krk d.d.",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "Sub-section of Osijek – Beli Manastir. The works contract for the alignment, signed on 28 April 2020 with a joint venture of Osijek-Koteks and GP Krk, was worth 443 million kuna (HRK) excluding VAT (the English Wikipedia gives the signing date; HAC gives the value and says the alignment works began in 2020, after the first phase of structures worth about 83 million kuna). Ten structures, the Beli Manastir interchange and the Sudaraš toll plaza are on the sub-section. The lot is cut 17.5 km from the Halasica bridge, the length HAC gives for the sub-section, which falls just north of the Beli Manastir interchange.",
+        "ro": "Subsector din Osijek – Beli Manastir. Contractul de lucrări pentru traseu, semnat la 28 aprilie 2020 cu o asociere Osijek-Koteks și GP Krk, a avut o valoare de 443 de milioane de kuna (HRK) fără TVA (Wikipedia engleză dă data semnării; HAC dă valoarea și spune că lucrările de traseu au început în 2020, după prima fază de structuri, de circa 83 de milioane de kuna). Pe subsector se află zece structuri, nodul Beli Manastir și bariera de taxare Sudaraš. Lotul este tăiat la 17,5 km de podul Halasica, lungimea indicată de HAC pentru subsector, care ajunge chiar la nord de nodul Beli Manastir."
+      },
+      "sourceRefs": [
+        "hac-news-a5-2022",
+        "wikipedia-en-a5",
+        "osm-relation-144787"
+      ],
+      "geometryRef": "halasica-beli-manastir"
+    },
+    {
+      "id": "beli-manastir-granica",
+      "name": {
+        "en": "Beli Manastir – Hungarian border",
+        "ro": "Beli Manastir – granița cu Ungaria"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2023-08",
+        "opened": "2025-10-07"
+      },
+      "lengthKm": 5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 45.9022,
+              "currency": "EUR",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-08",
+            "sourceRef": "hac-news-a5-2025"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 45.9022,
+          "currency": "EUR",
+          "year": 2023,
+          "note": "Excluding VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-08",
+          "sourceRef": "hac-news-a5-2025"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-10-07",
+          "note": {
+            "en": "Ceremony on 6 October 2025; open to traffic from 6:00 on 7 October.",
+            "ro": "Ceremonie la 6 octombrie 2025; deschis traficului de la ora 6:00 pe 7 octombrie."
+          },
+          "sourceRef": "hac-news-a5-2025"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Financed in full by the EBRD from the loan for the project Croatia, completion of the motorway on Corridor Vc.",
+            "ro": "Finanțat integral de BERD din împrumutul pentru proiectul Croația, finalizarea autostrăzii pe coridorul Vc."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Osijek-Koteks d.d.",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "Contract signed in August 2023 (45,902,212.90 EUR excluding VAT). The section has 8 structures, the longest the 318 m viaduct of the 135th Baranja Brigade HV over the railway and the Karašica. HAC calls it the construction-wise hardest part of the route. The lot is cut 5.0 km from the Hungarian border, just north of the Beli Manastir interchange.",
+        "ro": "Contract semnat în august 2023 (45.902.212,90 EUR fără TVA). Sectorul are 8 structuri, cea mai lungă fiind viaductul de 318 m al Brigăzii 135 Baranja HV peste calea ferată și Karašica. HAC îl numește cea mai dificilă parte a traseului din punct de vedere constructiv. Lotul este tăiat la 5,0 km de granița cu Ungaria, chiar la nord de nodul Beli Manastir."
+      },
+      "sourceRefs": [
+        "hac-news-a5-2025",
+        "wikipedia-hr-a5",
+        "osm-relation-144787"
+      ],
+      "geometryRef": "beli-manastir-granica"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hac-news-a5-2022",
+      "title": "HAC: Otvorena dionica Beli Manastir – Osijek na A5 (2 December 2022; sub-section lengths, EUR 126M and EUR 80.4M investment, HRK 443M works contract, EBRD/HBOR financing, A5 section lengths)",
+      "url": "https://www.hac.hr/hr/odnosi-s-javnoscu/novosti/otvorena-dionica-beli-manastir-osijek-na-a5",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hac-news-a5-2025",
+      "title": "HAC: Dionica Beli Manastir – granica Mađarske puštena u promet (7 October 2025; contract with Osijek Koteks, 45,902,212.90 EUR excluding VAT, EBRD financing)",
+      "url": "https://www.hac.hr/hr/odnosi-s-javnoscu/novosti/dionica-beli-manastir-granica-madarske-pustena-u-promet",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hac-svilaj-bridge",
+      "title": "HAC: Izgradnja mosta Svilaj (660 m bridge, works September 2016 – July 2020, opened 30 September 2021)",
+      "url": "https://www.hac.hr/hr/o-nama/eu-projekti/instrument-za-povezivanje-europe-2014-2020/izgradnja-mosta-svilaj",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-hr-a5",
+      "title": "Wikipedia (hr): Autocesta A5 (opening dates and section lengths)",
+      "url": "https://hr.wikipedia.org/wiki/Autocesta_A5",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-en-a5",
+      "title": "Wikipedia (en): A5 (Croatia) (history, kuna costs of the 2007 and 2009 sections, April 2020 contract date)",
+      "url": "https://en.wikipedia.org/wiki/A5_(Croatia)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-relation-144787",
+      "title": "OpenStreetMap: relation 144787, Autocesta A5 (ref A5)",
+      "url": "https://www.openstreetmap.org/relation/144787",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}
