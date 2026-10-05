@@ -1,0 +1,218 @@
+{
+  "id": "ro-cluj-metro",
+  "country": "ro",
+  "city": "ro-cluj",
+  "category": "railway",
+  "name": {
+    "en": "Cluj-Napoca Metro Line M1 (Florești – Cluj-Napoca)",
+    "ro": "Magistrala 1 de metrou Cluj-Napoca (Florești – Cluj-Napoca)"
+  },
+  "description": {
+    "en": "Driverless light metro under construction from Florești through Mănăștur and the centre of Cluj-Napoca to Piața Mărăști, where it splits into a Muncii branch and a Sopor branch with the depot: 21.03 km and 19 underground stations. One design-and-build contract with the Gülermak – Alstom – Arcada association was signed on 25 May 2023, with a term of 96 months. Construction was launched at a ceremony on 5 June 2024. The first stage (Sfânta Maria – Europa Unită, 9.16 km, 9 stations and the depot) was financed from the PNRR with an end date of August 2026; the mayor's target for the whole line is 2031.",
+    "ro": "Metrou ușor fără mecanic, în construcție de la Florești, prin Mănăștur și centrul Clujului, până la Piața Mărăști, unde se desparte într-o ramură Muncii și una Sopor, cu depoul: 21,03 km și 19 stații subterane. Contractul unic de proiectare și execuție cu asocierea Gülermak – Alstom – Arcada a fost semnat la 25 mai 2023, cu durata de 96 de luni. Lucrările au fost lansate printr-o ceremonie la 5 iunie 2024. Prima etapă (Sfânta Maria – Europa Unită, 9,16 km, 9 stații și depoul) a fost finanțată din PNRR, cu termen în august 2026; ținta primarului pentru întreaga linie este 2031."
+  },
+  "stationCount": 19,
+  "lots": [
+    {
+      "id": "m1-floresti-cluj-napoca",
+      "name": {
+        "en": "Line M1: Florești – Piața Mărăști – Sopor / Muncii",
+        "ro": "Magistrala 1: Florești – Piața Mărăști – Sopor / Muncii"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-05-25",
+        "constructionStart": "2024-06-05",
+        "expectedOpening": "2031"
+      },
+      "lengthKm": 21.03,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 19
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 10112.816,
+              "currency": "RON",
+              "scope": "total",
+              "note": "Technical and economic indicators for the whole line approved by the Government on 30 December 2021. The source does not state the price year."
+            },
+            "date": "2021-12-30",
+            "sourceRef": "infrapress-cluj-indicators-2021"
+          },
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 13700,
+              "currency": "RON",
+              "scope": "total",
+              "note": "Updated indicators for the whole line, including VAT. The source does not state the price year."
+            },
+            "date": "2022-10-12",
+            "sourceRef": "cursdeguvernare-cluj-financing-2022"
+          },
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 9064.456067,
+              "currency": "RON",
+              "scope": "total",
+              "note": "Excluding VAT. Estimated total value of the design-and-build works as stated by the Cluj-Napoca city hall (reported on the day the contract was signed): works 8,666.34 million RON and design, studies and technical assistance 398.11 million RON. The source does not call it the contract price and does not state the price year."
+            },
+            "date": "2023-05-25",
+            "note": "Estimated value published by the city hall for the contract signed on 25 May 2023 with the Gülermak – Alstom – Arcada association.",
+            "sourceRef": "hotnews-cluj-m1-contract-2023"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "ro-pnrr",
+          "detail": {
+            "en": "National Recovery and Resilience Plan: pays for the first stage (Sfânta Maria – Europa Unită, 9 stations and the depot)",
+            "ro": "Planul Național de Redresare și Reziliență: finanțează prima etapă (Sfânta Maria – Europa Unită, 9 stații și depoul)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Financing contract of 13.69 billion RON signed by the Ministry of Transport in December 2022, drawing on PNRR, other EU funds, the state budget and the budgets of Cluj-Napoca and Florești",
+            "ro": "Contract de finanțare de 13,69 miliarde de lei semnat de Ministerul Transporturilor în decembrie 2022, din fonduri PNRR, alte fonduri europene, bugetul de stat și bugetele Cluj-Napoca și Florești"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş. – Gülermak Spółka z o.o. – Alstom Transport S.A. – Arcada Company S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 84,
+        "totalMonths": 96
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-05-25",
+          "note": {
+            "en": "Design-and-build contract for Line M1 signed with the Gülermak – Alstom – Arcada association",
+            "ro": "Contractul de proiectare și execuție pentru Magistrala 1 semnat cu asocierea Gülermak – Alstom – Arcada"
+          },
+          "sourceRef": "hotnews-cluj-m1-contract-2023"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-06-05",
+          "note": {
+            "en": "Groundbreaking ceremony launching the construction works",
+            "ro": "Ceremonie de lansare a lucrărilor de construcție"
+          },
+          "sourceRef": "railwaypro-cluj-kicks-off"
+        }
+      ],
+      "note": {
+        "en": "Order to start the contract issued for 1 September 2023, opening the design phase. Construction works were launched at a ceremony on 5 June 2024. In May 2026 diaphragm walls were under way at Teilor station, and a 2026 report cited by local media put physical progress at about 1.24%. The first stage (Sfânta Maria – Europa Unită, 9.16 km) was due by the end of August 2026 under the PNRR; the second stage (Țara Moților – Sfânta Maria and Piața Mărăști – Muncii, 11.87 km) completes the line, with 2031 as the mayor's date for the whole metro. One contract covers the whole line, so it is recorded as one lot.",
+        "ro": "Ordinul de începere a contractului a fost emis pentru 1 septembrie 2023, deschizând faza de proiectare. Lucrările de construcție au fost lansate printr-o ceremonie la 5 iunie 2024. În mai 2026 se turnau pereți mulați la stația Teilor, iar un raport din 2026 citat de presa locală indica un progres fizic de circa 1,24%. Prima etapă (Sfânta Maria – Europa Unită, 9,16 km) trebuia încheiată până la sfârșitul lui august 2026 prin PNRR; a doua etapă (Țara Moților – Sfânta Maria și Piața Mărăști – Muncii, 11,87 km) completează linia, cu 2031 ca dată a primarului pentru întregul metrou. Un singur contract acoperă întreaga linie, deci este înregistrată ca un singur lot."
+      },
+      "sourceRefs": [
+        "hotnews-cluj-m1-contract-2023",
+        "cursdeguvernare-cluj-financing-2022",
+        "infrapress-cluj-indicators-2021",
+        "railwaypro-cluj-kicks-off",
+        "railwaygazette-cluj-groundbreaking-2024",
+        "monitorulcj-cluj-start-order-2023",
+        "zcj-cluj-start-order-2023",
+        "actualdecluj-teilor-2026",
+        "wikipedia-cluj-napoca-metro",
+        "wikipedia-ro-metroul-din-cluj",
+        "osm-cluj-metro"
+      ],
+      "geometryRef": "m1-floresti-cluj-napoca"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hotnews-cluj-m1-contract-2023",
+      "title": "HotNews: Prima linie de metrou din Cluj-Napoca: cine sunt constructorii, când va fi gata (25 mai 2023)",
+      "url": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-26288718-prima-linie-metrou-din-cluj-napoca-cine-sunt-constructorii-cand-gata-cum-deosebeste-metroul-din-bucuresti-contractul-semneaza-joi.htm",
+      "retrievedOn": "2026-10-05",
+      "publisher": "HotNews.ro"
+    },
+    {
+      "id": "cursdeguvernare-cluj-financing-2022",
+      "title": "Curs de Guvernare: Transporturile au semnat contractul de finanțare al metroului Cluj-Napoca: 13,69 mld. lei (December 2022)",
+      "url": "https://cursdeguvernare.ro/transporturile-au-semnat-contractul-de-finantare-al-metroului-cluj-napoca.html",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Curs de Guvernare"
+    },
+    {
+      "id": "infrapress-cluj-indicators-2021",
+      "title": "Infrapress: Undă verde pentru metroul din Cluj, Guvernul a aprobat indicatorii tehnico-economici (30 decembrie 2021)",
+      "url": "https://infrapress.ro/2021/12/30/unda-verde-pentru-metroul-din-cluj-guvernul-a-aprobat-indicatorii-tehnico-economici-pentru-proiect-investitia-depaseste-10-miliarde-de-lei/",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Infrapress"
+    },
+    {
+      "id": "railwaypro-cluj-kicks-off",
+      "title": "Railway PRO: Cluj-Napoca metro construction kicks off (6 June 2024)",
+      "url": "https://www.railwaypro.com/wp/cluj-napoca-metro-construction-kicks-off/",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Railway PRO"
+    },
+    {
+      "id": "railwaygazette-cluj-groundbreaking-2024",
+      "title": "Railway Gazette International: Cluj-Napoca breaks ground for first metro line (18 June 2024)",
+      "url": "https://www.railwaygazette.com/metros/cluj-napoca-breaks-ground-for-first-metro-line/66744.article",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Railway Gazette International"
+    },
+    {
+      "id": "monitorulcj-cluj-start-order-2023",
+      "title": "Monitorul de Cluj: Încep lucrările la metroul din Cluj, la 1 septembrie s-a dat ordinul de începere (1 septembrie 2023)",
+      "url": "https://www.monitorulcj.ro/administratie/112863-incep-lucrarile-la-metroul-din-cluj-la-1-septembrie-s-a-dat-ordinul-de-incepere-opt-ani-pentru-realizarea-proiectului",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Monitorul de Cluj"
+    },
+    {
+      "id": "zcj-cluj-start-order-2023",
+      "title": "Ziua de Cluj: 1 septembrie 2023, ZI ISTORICĂ: Încep lucrările la METROUL Clujului",
+      "url": "https://zcj.ro/administratie/1-septembrie-2023-zi-istorica-incep-lucrarile-la-metroul-clujului--252542.html",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Ziua de Cluj"
+    },
+    {
+      "id": "actualdecluj-teilor-2026",
+      "title": "Actual de Cluj: Au început lucrările la viitoarea stație Teilor din Florești, se execută pereții mulați (19 mai 2026)",
+      "url": "https://actualdecluj.ro/video-metroul-din-cluj-au-inceput-lucrarile-la-viitoarea-statie-teilor-din-floresti-se-executa-peretii-mulati-pentru-galeria-de-legatura/",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Actual de Cluj"
+    },
+    {
+      "id": "wikipedia-cluj-napoca-metro",
+      "title": "Wikipedia: Cluj-Napoca Metro",
+      "url": "https://en.wikipedia.org/wiki/Cluj-Napoca_Metro",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Wikipedia"
+    },
+    {
+      "id": "wikipedia-ro-metroul-din-cluj",
+      "title": "Wikipedia: Metroul din Cluj",
+      "url": "https://ro.wikipedia.org/wiki/Metroul_din_Cluj",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Wikipedia"
+    },
+    {
+      "id": "osm-cluj-metro",
+      "title": "OpenStreetMap contributors: Cluj-Napoca metro line M1 geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05",
+      "publisher": "OpenStreetMap"
+    }
+  ]
+}

@@ -395,8 +395,11 @@
       "id": "metka",
       "name": "METKA",
       "aliases": [
-        "ΜΕΤΚΑ"
-      ]
+        "ΜΕΤΚΑ",
+        "Mytilineos",
+        "Mytilineos S.A."
+      ],
+      "note": "METKA was absorbed into Mytilineos, so the two names are one firm here."
     },
     {
       "id": "mochlos",
@@ -546,7 +549,9 @@
       "name": "Trace Group Hold",
       "aliases": [
         "Трейс Груп Холд АД",
-        "Trace Group Hold AD"
+        "Trace Group Hold AD",
+        "Trace",
+        "TRACE ltd"
       ]
     },
     {
@@ -561,6 +566,338 @@
         "Impregilo"
       ],
       "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020. Same legal entity, so the two names are merged."
+    },
+    {
+      "id": "azvi",
+      "name": "AZVI",
+      "aliases": [
+        "AZVI SA",
+        "AZVI S.A."
+      ]
+    },
+    {
+      "id": "taddei",
+      "name": "Taddei",
+      "aliases": [
+        "TADDEI"
+      ]
+    },
+    {
+      "id": "azvi-taddei",
+      "name": "AZVI – Taddei JV",
+      "aliases": [
+        "AZVI SA – TADDEI JV"
+      ],
+      "members": [
+        "azvi",
+        "taddei"
+      ]
+    },
+    {
+      "id": "rubau",
+      "name": "Construcciones Rubau",
+      "aliases": [
+        "Rubau",
+        "Construcciones Rubau S.A."
+      ]
+    },
+    {
+      "id": "azvi-rubau",
+      "name": "AZVI – Construcciones Rubau JV",
+      "members": [
+        "azvi",
+        "rubau"
+      ]
+    },
+    {
+      "id": "mostovik",
+      "name": "Mostovik",
+      "aliases": [
+        "MOSTOVIK"
+      ]
+    },
+    {
+      "id": "trace-mostovik",
+      "name": "TRACE – MOSTOVIK",
+      "aliases": [
+        "TRACE ltd – MOSTOVIK"
+      ],
+      "members": [
+        "trace-group-hold",
+        "mostovik"
+      ]
+    },
+    {
+      "id": "integral-inzenjering",
+      "name": "Integral inženjering"
+    },
+    {
+      "id": "interkop-misar",
+      "name": "Interkop Misar"
+    },
+    {
+      "id": "prijedor-putevi",
+      "name": "Prijedor putevi"
+    },
+    {
+      "id": "integral-interkop-prijedor",
+      "name": "Integral inženjering – Interkop Misar – Prijedor putevi",
+      "members": [
+        "integral-inzenjering",
+        "interkop-misar",
+        "prijedor-putevi"
+      ]
+    },
+    {
+      "id": "powerchina",
+      "name": "PowerChina",
+      "aliases": [
+        "Power Construction Corporation of China, Limited",
+        "Power Construction Corporation of China"
+      ],
+      "note": "Power Construction Corporation of China, trading as PowerChina."
+    },
+    {
+      "id": "terna-mytilineos",
+      "name": "TERNA – Mytilineos JV",
+      "members": [
+        "terna",
+        "metka"
+      ]
+    },
+    {
+      "id": "aktor-terna-avax",
+      "name": "AKTOR – TERNA – J&P AVAX",
+      "aliases": [
+        "AKTOR – TERNA – J&P AVAX JV"
+      ],
+      "members": [
+        "aktor",
+        "terna",
+        "avax"
+      ]
+    },
+    {
+      "id": "intrakat-aktor-concessions",
+      "name": "INTRAKAT – AKTOR Concessions",
+      "members": [
+        "intrakat",
+        "aktor-concessions"
+      ],
+      "note": "Concessionaire of the Kalamata – Methoni motorway."
+    },
+    {
+      "id": "gulermak",
+      "name": "Gülermak",
+      "aliases": [
+        "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş.",
+        "Gülermak Spółka z o.o."
+      ]
+    },
+    {
+      "id": "gulermak-alstom-arcada",
+      "name": "Gülermak – Alstom – Arcada JV",
+      "aliases": [
+        "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş. – Gülermak Spółka z o.o. – Alstom Transport S.A. – Arcada Company S.A."
+      ],
+      "members": [
+        "gulermak",
+        "alstom",
+        "arcada-company"
+      ]
+    },
+    {
+      "id": "avtomagistrali-ead",
+      "name": "Avtomagistrali EAD",
+      "aliases": [
+        "Автомагистрали ЕАД",
+        "Автомагистрали"
+      ]
+    },
+    {
+      "id": "avtomagistrali-cherno-more",
+      "name": "Avtomagistrali – Cherno More AD",
+      "aliases": [
+        "Автомагистрали - Черно Море АД",
+        "Автомагистрали – Черно Море АД"
+      ]
+    },
+    {
+      "id": "infra-expert",
+      "name": "Infra Expert",
+      "aliases": [
+        "Инфра Експерт ЕООД"
+      ]
+    },
+    {
+      "id": "patinzheneringstroy-t",
+      "name": "Patinzheneringstroy-T",
+      "aliases": [
+        "Пътинженерингстрой-Т ЕАД"
+      ]
+    },
+    {
+      "id": "transkonsult-22",
+      "name": "Transkonsult-22",
+      "aliases": [
+        "Трансконсулт-22 ООД"
+      ]
+    },
+    {
+      "id": "dzzd-hemus-16320",
+      "name": "DZZD Hemus-16320",
+      "aliases": [
+        "ДЗЗД ХЕМУС-16320",
+        "ДЗЗД „Хемус 16320“"
+      ],
+      "members": [
+        "infra-expert",
+        "avtomagistrali-cherno-more",
+        "patinzheneringstroy-t",
+        "transkonsult-22"
+      ],
+      "note": "The Ruse – Byala design-and-build lot and the A2 Belokopitovo – Buhovtsi lot name the same consortium."
+    },
+    {
+      "id": "dzzd-am-ruse-tarnovo",
+      "name": "DZZD AM Ruse – Tarnovo",
+      "aliases": [
+        "ДЗЗД „АМ Русе – Търново“"
+      ]
+    },
+    {
+      "id": "pst-group",
+      "name": "PST Group",
+      "aliases": [
+        "ПСТ Груп ЕАД"
+      ]
+    },
+    {
+      "id": "nivel-stroy",
+      "name": "Nivel Stroy",
+      "aliases": [
+        "Нивел строй ЕООД"
+      ]
+    },
+    {
+      "id": "patinzhenering-m",
+      "name": "Patinzhenering-M",
+      "aliases": [
+        "Пътинженеринг-М АД"
+      ]
+    },
+    {
+      "id": "pst-vidin",
+      "name": "PST Vidin",
+      "aliases": [
+        "ПСТ Видин ЕООД"
+      ]
+    },
+    {
+      "id": "pst-sofia",
+      "name": "PST Sofia",
+      "aliases": [
+        "ПСТ София ЕООД"
+      ]
+    },
+    {
+      "id": "dzzd-severozapad-lot-1",
+      "name": "DZZD Severozapad Lot 1",
+      "aliases": [
+        "„Северозапад Лот 1“ ДЗЗД (ПСТ Груп ЕАД, Нивел строй ЕООД, Пътинженеринг-М АД, ПСТ Видин ЕООД, ПСТ София ЕООД)",
+        "„Северозапад Лот 1“ ДЗЗД"
+      ],
+      "members": [
+        "pst-group",
+        "nivel-stroy",
+        "patinzhenering-m",
+        "pst-vidin",
+        "pst-sofia"
+      ]
+    },
+    {
+      "id": "psi",
+      "name": "PSI",
+      "aliases": [
+        "Пи Ес Ай АД"
+      ]
+    },
+    {
+      "id": "dzzd-obhod-montana",
+      "name": "DZZD Obhod Montana",
+      "aliases": [
+        "ДЗЗД „Обход Монтана“"
+      ],
+      "members": [
+        "trace-group-hold",
+        "psi"
+      ]
+    },
+    {
+      "id": "evropeyski-patishta",
+      "name": "Evropeyski Patishta",
+      "aliases": [
+        "Европейски пътища АД"
+      ]
+    },
+    {
+      "id": "vodno-stroitelstvo-blagoevgrad",
+      "name": "Vodno Stroitelstvo – Blagoevgrad",
+      "aliases": [
+        "Водно строителство-Благоевград АД"
+      ]
+    },
+    {
+      "id": "vahostav-sk",
+      "name": "Vahostav-SK",
+      "aliases": [
+        "Вахостав-СК, а.с."
+      ]
+    },
+    {
+      "id": "dzzd-mb-lot-2-2019",
+      "name": "DZZD MB Lot 2-2019",
+      "aliases": [
+        "ДЗЗД „МБ ЛОТ 2-2019“"
+      ],
+      "members": [
+        "evropeyski-patishta",
+        "vodno-stroitelstvo-blagoevgrad",
+        "vahostav-sk"
+      ]
+    },
+    {
+      "id": "geostroy",
+      "name": "Geostroy",
+      "aliases": [
+        "Геострой АД"
+      ]
+    },
+    {
+      "id": "patstroy-92",
+      "name": "Patstroy-92",
+      "aliases": [
+        "Пътстрой 92",
+        "Пътстрой-92 АД"
+      ]
+    },
+    {
+      "id": "obedinenie-geopat-lot-1",
+      "name": "Obedinenie Geopat Lot 1",
+      "aliases": [
+        "Обединение „Геопът Лот 1“"
+      ],
+      "members": [
+        "geostroy",
+        "patstroy-92"
+      ]
+    },
+    {
+      "id": "transgeo",
+      "name": "Transgeo",
+      "aliases": [
+        "Трансгео ЕООД"
+      ]
     }
   ]
 }

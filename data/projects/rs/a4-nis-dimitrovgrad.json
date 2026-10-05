@@ -1,0 +1,395 @@
+{
+  "id": "rs-a4-nis-dimitrovgrad",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "A4 Niš – Dimitrovgrad (E80)",
+    "ro": "Autostrada A4 Niš – Dimitrovgrad (E80)"
+  },
+  "description": {
+    "en": "Serbia's 105 km motorway from the A1 at Trupale near Niš to the Gradina border crossing with Bulgaria, the eastern branch (Xc) of Pan-European Corridor X and part of E80. The first 3 km opened in 1992 and the Niš bypass in 2006; the remaining 86 km was built from 2010 by Koridori Srbije and opened in stages between 2017 and 9 November 2019, when Bancarevo – Crvena Reka completed the route. Lots follow the section names and lengths of the construction table on Serbian Wikipedia; the drawn centreline totals 103.67 km. No section cost is recorded: the Ekonomske Vesti report of the 2019 opening gives about EUR 476 million, but it is unclear whether that covers the Prosek – Crvena Reka section or the whole 86.9 km east branch. The railway between Niš and Dimitrovgrad is a separate project.",
+    "ro": "Autostrada Serbiei de 105 km de la A1 la Trupale, lângă Niš, până la punctul de frontieră Gradina cu Bulgaria, ramura estică (Xc) a Coridorului Paneuropean X și parte din E80. Primii 3 km au fost deschiși în 1992, iar ocolitoarea Niš în 2006; ceilalți 86 km au fost construiți din 2010 de Koridori Srbije și deschiși etapizat între 2017 și 9 noiembrie 2019, când Bancarevo – Crvena Reka a completat traseul. Loturile urmează denumirile și lungimile sectoarelor din tabelul de construcție de pe Wikipedia în sârbă; linia desenată însumează 103,67 km. Nu se înregistrează un cost pe sector: raportul Ekonomske Vesti despre deschiderea din 2019 indică circa 476 milioane EUR, dar nu este clar dacă acesta acoperă sectorul Prosek – Crvena Reka sau întreaga ramură estică de 86,9 km. Calea ferată Niš – Dimitrovgrad este un proiect separat."
+  },
+  "operator": "rs-koridori-srbije",
+  "corridors": [
+    "pan-european-x"
+  ],
+  "lots": [
+    {
+      "id": "trupale-komren",
+      "name": {
+        "en": "Trupale – Komren",
+        "ro": "Trupale – Komren"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1990",
+        "opened": "1992"
+      },
+      "lengthKm": 3,
+      "contractors": [
+        {
+          "name": "Novi Autoput Beograd",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First 3 km of the motorway, from the Trupale interchange with the A1 towards Niš. Built 1990–1992 and then paused by sanctions and the wars. The OpenStreetMap interchange Niš sever lies about 1.6 km from Trupale, so the cut at 3 km follows the published length.",
+        "ro": "Primii 3 km ai autostrăzii, de la nodul Trupale cu A1 spre Niš. Construiți în 1990–1992, apoi lucrările au fost oprite de sancțiuni și războaie. Nodul Niš sever din OpenStreetMap se află la circa 1,6 km de Trupale, așa că tăietura la 3 km urmează lungimea publicată."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "enwiki-a4"
+      ],
+      "geometryRef": "trupale-komren"
+    },
+    {
+      "id": "komren-prosek",
+      "name": {
+        "en": "Komren – Prosek (Niš bypass)",
+        "ro": "Komren – Prosek (ocolitoarea Niš)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997",
+        "opened": "2006"
+      },
+      "lengthKm": 15,
+      "contractors": [
+        {
+          "name": "PzP Niš",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Niš bypass. Serbian Wikipedia gives construction from 1997; English Wikipedia gives 1998. Published length 15 km; the drawn centreline measures 13.73 km because the cuts follow the published lengths of the neighbouring sections and the Malča interchange.",
+        "ro": "Ocolitoarea Niš. Wikipedia în sârbă dă începerea lucrărilor în 1997, cea în engleză în 1998. Lungime publicată 15 km; linia desenată măsoară 13,73 km, deoarece tăieturile urmează lungimile publicate ale sectoarelor vecine și nodul Malča."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "enwiki-a4"
+      ],
+      "geometryRef": "komren-prosek"
+    },
+    {
+      "id": "prosek-bancarevo",
+      "name": {
+        "en": "Prosek – Bancarevo",
+        "ro": "Prosek – Bancarevo"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2012-03-15",
+        "opened": "2019-11-09"
+      },
+      "lengthKm": 9.2,
+      "contractors": [
+        {
+          "name": "Terna",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Works were completed on 30 June 2017 but the section opened only with Bancarevo – Crvena Reka on 9 November 2019. The Prosek end is placed at the Malča interchange area, about 16.7 km from Trupale.",
+        "ro": "Lucrările au fost finalizate la 30 iunie 2017, dar sectorul a fost deschis abia odată cu Bancarevo – Crvena Reka, la 9 noiembrie 2019. Capătul Prosek este plasat în zona nodului Malča, la circa 16,7 km de Trupale."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "enwiki-a4",
+        "ekonomskevesti-2019"
+      ],
+      "geometryRef": "prosek-bancarevo"
+    },
+    {
+      "id": "bancarevo-crvena-reka",
+      "name": {
+        "en": "Bancarevo – Crvena Reka",
+        "ro": "Bancarevo – Crvena Reka"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2012-03-15",
+        "opened": "2019-11-09"
+      },
+      "lengthKm": 12.5,
+      "contractors": [
+        {
+          "name": "Aktor",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Includes the 0.8 km Bancarevo tunnel (Subterra, Czech Republic; construction works finished 9 June 2017, fully opened 2019). Last section to open, on 9 November 2019, completing the motorway from Niš to the Bulgarian border.",
+        "ro": "Include tunelul Bancarevo de 0,8 km (Subterra, Cehia; lucrările de construcție încheiate la 9 iunie 2017, deschis complet în 2019). Ultimul sector deschis, la 9 noiembrie 2019, ceea ce a completat autostrada de la Niš la granița cu Bulgaria."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "enwiki-a4",
+        "ekonomskevesti-2019"
+      ],
+      "geometryRef": "bancarevo-crvena-reka"
+    },
+    {
+      "id": "crvena-reka-ciflik",
+      "name": {
+        "en": "Crvena Reka – Čiflik",
+        "ro": "Crvena Reka – Čiflik"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-10-10",
+        "opened": "2017-07-13"
+      },
+      "lengthKm": 12.7,
+      "contractors": [
+        {
+          "name": "Aktor",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened 13 July 2017 together with Čiflik – Staničenje. English Wikipedia also gives 2011 as the start year.",
+        "ro": "Deschis la 13 iulie 2017 odată cu Čiflik – Staničenje. Wikipedia în engleză dă de asemenea anul 2011 pentru începerea lucrărilor."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "enwiki-a4"
+      ],
+      "geometryRef": "crvena-reka-ciflik"
+    },
+    {
+      "id": "ciflik-stanicenje",
+      "name": {
+        "en": "Čiflik – Staničenje",
+        "ro": "Čiflik – Staničenje"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-09",
+        "opened": "2017-07-13"
+      },
+      "lengthKm": 12.1,
+      "contractors": [
+        {
+          "name": "Rubau",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened 13 July 2017 together with Crvena Reka – Čiflik.",
+        "ro": "Deschis la 13 iulie 2017 odată cu Crvena Reka – Čiflik."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "enwiki-a4"
+      ],
+      "geometryRef": "ciflik-stanicenje"
+    },
+    {
+      "id": "stanicenje-pirot-istok",
+      "name": {
+        "en": "Staničenje – Pirot istok",
+        "ro": "Staničenje – Pirot istok"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-09",
+        "opened": "2019-11-09"
+      },
+      "lengthKm": 16.6,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2017-08-17",
+          "note": {
+            "en": "5.1 km from the Nišava 4 bridge to the Sarlah tunnel opened, first carriageway.",
+            "ro": "5,1 km de la podul Nišava 4 până la tunelul Sarlah deschiși, prima cale de rulare."
+          },
+          "sourceRef": "srwiki-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-07-26",
+          "note": {
+            "en": "Second carriageway of the 2 km between the Nišava 2 and Nišava 4 bridges opened (first carriageway on 25 June 2018).",
+            "ro": "A doua cale de rulare pe cei 2 km dintre podurile Nišava 2 și Nišava 4 deschisă (prima, la 25 iunie 2018)."
+          },
+          "sourceRef": "srwiki-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-11-09",
+          "note": {
+            "en": "Serbian Wikipedia's Corridor X article lists the section among those opened on 9 November 2019.",
+            "ro": "Articolul despre Coridorul X de pe Wikipedia în sârbă include sectorul printre cele deschise la 9 noiembrie 2019."
+          },
+          "sourceRef": "srwiki-koridor-x"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Aktor",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened in stages. The sub-section table of Serbian Wikipedia still lists a 0.6 km slope and overpass and a 1.2 km tunnel with two bridges as under construction, while its Corridor X article puts the opening of the whole section on 9 November 2019; the date recorded follows the latter.",
+        "ro": "Deschis etapizat. Tabelul subsectoarelor de pe Wikipedia în sârbă listează încă un taluz și un pasaj de 0,6 km și un tunel cu două poduri de 1,2 km ca fiind în construcție, în timp ce articolul despre Coridorul X plasează deschiderea întregului sector la 9 noiembrie 2019; data înregistrată urmează acest din urmă articol."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "srwiki-koridor-x"
+      ],
+      "geometryRef": "stanicenje-pirot-istok"
+    },
+    {
+      "id": "pirot-istok-dimitrovgrad",
+      "name": {
+        "en": "Pirot istok – Dimitrovgrad",
+        "ro": "Pirot istok – Dimitrovgrad"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-11-24",
+        "opened": "2017-09-16"
+      },
+      "lengthKm": 14.3,
+      "contractors": [
+        {
+          "name": "Alpine",
+          "role": "builder"
+        },
+        {
+          "name": "Trace",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Works were completed in November 2016 but the section could not open until its neighbours were finished. The drawn centreline measures 14.95 km, cut at the mapped Pirot-istok and Dimitrovgrad interchanges.",
+        "ro": "Lucrările au fost finalizate în noiembrie 2016, dar sectorul nu a putut fi deschis până la terminarea celor vecine. Linia desenată măsoară 14,95 km, tăiată la nodurile cartografiate Pirot-istok și Dimitrovgrad."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "enwiki-a4"
+      ],
+      "geometryRef": "pirot-istok-dimitrovgrad"
+    },
+    {
+      "id": "dimitrovgrad-obilaznica",
+      "name": {
+        "en": "Dimitrovgrad bypass",
+        "ro": "Ocolitoarea Dimitrovgrad"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-04-14",
+        "opened": "2018-06-25"
+      },
+      "lengthKm": 8.6,
+      "events": [
+        {
+          "kind": "contract_terminated",
+          "date": "2013",
+          "note": {
+            "en": "Contract with Alpine (Austria) terminated.",
+            "ro": "Contractul cu Alpine (Austria) reziliat."
+          },
+          "sourceRef": "srwiki-a4"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2015",
+          "note": {
+            "en": "Contract with Trace (Bulgaria) terminated; Aktor (Greece) completed the works.",
+            "ro": "Contractul cu Trace (Bulgaria) reziliat; Aktor (Grecia) a finalizat lucrările."
+          },
+          "sourceRef": "srwiki-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2017-09-16",
+          "note": {
+            "en": "First 6.8 km opened, from the start of the section to the Gradinje cut.",
+            "ro": "Primii 6,8 km deschiși, de la începutul sectorului până la debleul Gradinje."
+          },
+          "sourceRef": "srwiki-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-06-25",
+          "note": {
+            "en": "Last 0.6 km of the second carriageway opened.",
+            "ro": "Ultimii 0,6 km din a doua cale de rulare deschiși."
+          },
+          "sourceRef": "srwiki-a4"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alpine",
+          "role": "builder"
+        },
+        {
+          "name": "Trace",
+          "role": "builder"
+        },
+        {
+          "name": "Aktor",
+          "role": "builder"
+        },
+        {
+          "name": "Terna",
+          "role": "builder"
+        },
+        {
+          "name": "Elef",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Tunnels built by Terna, electromechanical equipment by Elef (Italy). Dates follow the construction table of Serbian Wikipedia; its Corridor X article puts the bypass among sections opened on 9 November 2019. The drawn centreline measures 8.89 km and ends at the Gradina border interchange.",
+        "ro": "Tunelurile au fost construite de Terna, echipamentele electromecanice de Elef (Italia). Datele urmează tabelul de construcție de pe Wikipedia în sârbă; articolul despre Coridorul X include ocolitoarea printre sectoarele deschise la 9 noiembrie 2019. Linia desenată măsoară 8,89 km și se încheie la nodul de frontieră Gradina."
+      },
+      "sourceRefs": [
+        "srwiki-a4",
+        "srwiki-koridor-x"
+      ],
+      "geometryRef": "dimitrovgrad-obilaznica"
+    }
+  ],
+  "sources": [
+    {
+      "id": "srwiki-a4",
+      "title": "Wikipedia (sr): Autoput A4 (Srbija), construction chronology table",
+      "url": "https://sr.wikipedia.org/sr-el/Autoput_A4_(Srbija)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "enwiki-a4",
+      "title": "Wikipedia: A4 motorway (Serbia)",
+      "url": "https://en.wikipedia.org/wiki/A4_motorway_(Serbia)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "srwiki-koridor-x",
+      "title": "Wikipedia (sr): Panevropski koridor X (branch Xc, sections opened 9.11.2019)",
+      "url": "https://sr.wikipedia.org/wiki/Panevropski_koridor_X",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ekonomskevesti-2019",
+      "title": "Ekonomske Vesti: Otvara se autoput Niš – Dimitrovgrad – bugarska granica (9 November 2019)",
+      "url": "http://ekonomskevesti.com/privreda/otvara-se-autoput-nis-dimitrovgrad-bugarska-granica-g/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: motorway ref A4 geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}
