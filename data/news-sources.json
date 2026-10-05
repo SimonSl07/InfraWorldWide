@@ -1,6 +1,6 @@
 {
   "$schema": "../schema/news-sources.schema.json",
-  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Every entry was fetched and parsed on 2026-09-07, and each one twice, by whoever added it and by a second pass that checked what the items are actually about. cnadnr.ro, mt.ro, cnir.ro, metrorex.ro, gov.ro and Bulgaria's api.bg time out from outside their own country, though cfr.ro does not, so a Romanian state host is not automatically unreachable. cnair.ro is not CNAIR but a squatted domain serving a single 2016 post. clubferoviar.ro and proinfrastructura.ro were dropped: both now answer any non-browser client with a JavaScript challenge, on every feed path tried. srbijavoz.rs was dropped because its pubDate values are transliterated into Cyrillic and no parser reads them. The EIB project pipeline was dropped because the host's robots.txt asks clients not to fetch feeds. koridorisrbije.rs is an empty Angular shell, so the corridors are covered through mgsi and putevi-srbije instead. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole, which is why an international title is filed as general. Wikipedia article histories are watched from the projects' own sources and need no entry here. The three Greek entries were fetched and parsed with the digest's own client on 2026-09-28. ergose.gr has a working feed but was left out: its newest item was from January 2025. The two Czech entries were fetched and parsed with the digest's own client on 2026-10-05. nku.cz/cz/rss.xml and sfdi.gov.cz/feed/ also parse (30 and 10 items) but were left out: the audit office feed is mostly accounting audits, vacancies and meeting notices with a transport audit only occasionally, and the SFDI feed carries funding rules and contract amendments, ten items spanning April to September 2026.",
+  "note": "Feeds the daily news digest reads (scripts/fetch-news.ts). RSS or Atom only: a site without a feed is not scraped. Every entry was fetched and parsed on 2026-09-07, and each one twice, by whoever added it and by a second pass that checked what the items are actually about. cnadnr.ro, mt.ro, cnir.ro, metrorex.ro, gov.ro and Bulgaria's api.bg time out from outside their own country, though cfr.ro does not, so a Romanian state host is not automatically unreachable. cnair.ro is not CNAIR but a squatted domain serving a single 2016 post. clubferoviar.ro and proinfrastructura.ro were dropped: both now answer any non-browser client with a JavaScript challenge, on every feed path tried. srbijavoz.rs was dropped because its pubDate values are transliterated into Cyrillic and no parser reads them. The EIB project pipeline was dropped because the host's robots.txt asks clients not to fetch feeds. koridorisrbije.rs is an empty Angular shell, so the corridors are covered through mgsi and putevi-srbije instead. A general feed is filtered to items that name a section or use infrastructure vocabulary; a trade feed is kept whole, which is why an international title is filed as general. Wikipedia article histories are watched from the projects' own sources and need no entry here. The three Greek entries were fetched and parsed with the digest's own client on 2026-09-28. ergose.gr has a working feed but was left out: its newest item was from January 2025. The Croatian feeds were fetched and parsed with the digest's own client on 2026-10-05. hzinfra.hr (HŽ Infrastruktura, https://www.hzinfra.hr/feed/) was left out: the feed is live and parses, but the host serves an incomplete certificate chain (no intermediate), so Node's default fetch fails with UNABLE_TO_VERIFY_LEAF_SIGNATURE and only succeeds with --use-system-ca; the digest would error on it every day. Recheck if the host fixes its chain. n1info.hr and tportal.hr parse but are whole-newsroom feeds with almost nothing on infrastructure in the sample, and one general Croatian feed is enough. The two Czech entries were fetched and parsed with the digest's own client on 2026-10-05. nku.cz/cz/rss.xml and sfdi.gov.cz/feed/ also parse (30 and 10 items) but were left out: the audit office feed is mostly accounting audits, vacancies and meeting notices with a transport audit only occasionally, and the SFDI feed carries funding rules and contract amendments, ten items spanning April to September 2026.",
   "sources": [
     {
       "id": "hotnews",
@@ -125,22 +125,13 @@
       "note": "English edition of Kathimerini. Filed as general: the feed is the whole paper, forty items a day."
     },
     {
-      "id": "zdopravy",
-      "name": "Zdopravy.cz",
-      "url": "https://zdopravy.cz/feed/",
-      "country": "cz",
-      "language": "cs",
-      "focus": "infrastructure",
-      "note": "Czech transport trade press covering roads, rail, trams and the Prague and Brno networks. Hundred items spanning about three days when checked, so a digest that skips a few days misses some. It also carries aviation and vehicle-industry items, which match no project."
-    },
-    {
-      "id": "ceske-dalnice",
-      "name": "České dálnice",
-      "url": "https://www.ceskedalnice.cz/feed/",
-      "country": "cz",
-      "language": "cs",
-      "focus": "infrastructure",
-      "note": "Czech motorway news site. Low volume, mostly openings and construction starts reported from ŘSD: ten items spanning December 2025 to October 2026 when checked."
+      "id": "poslovni-dnevnik",
+      "name": "Poslovni dnevnik",
+      "url": "https://www.poslovni.hr/feed",
+      "country": "hr",
+      "language": "hr",
+      "focus": "general",
+      "note": "Croatian business daily. Filed as general: twenty items a day from the whole paper, of which a few concern roads and rail (a new deadline for an expressway section to Koprivnica among the twenty checked)."
     },
     {
       "id": "cinea",
@@ -177,6 +168,24 @@
       "language": "en",
       "focus": "general",
       "note": "International rail trade press. Filed as general for the same reason: none of its twelve current items concerns these three countries. Its terms permit reference use and forbid training."
+    },
+    {
+      "id": "zdopravy",
+      "name": "Zdopravy.cz",
+      "url": "https://zdopravy.cz/feed/",
+      "country": "cz",
+      "language": "cs",
+      "focus": "infrastructure",
+      "note": "Czech transport trade press covering roads, rail, trams and the Prague and Brno networks. Hundred items spanning about three days when checked, so a digest that skips a few days misses some. It also carries aviation and vehicle-industry items, which match no project."
+    },
+    {
+      "id": "ceske-dalnice",
+      "name": "České dálnice",
+      "url": "https://www.ceskedalnice.cz/feed/",
+      "country": "cz",
+      "language": "cs",
+      "focus": "infrastructure",
+      "note": "Czech motorway news site. Low volume, mostly openings and construction starts reported from ŘSD: ten items spanning December 2025 to October 2026 when checked."
     }
   ]
 }

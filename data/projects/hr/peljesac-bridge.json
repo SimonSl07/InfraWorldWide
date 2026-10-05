@@ -1,0 +1,208 @@
+{
+  "id": "hr-peljesac-bridge",
+  "country": "hr",
+  "category": "bridge",
+  "name": {
+    "en": "Pelješac Bridge and access roads",
+    "ro": "Podul Pelješac și drumurile de acces"
+  },
+  "description": {
+    "en": "Cable-stayed bridge (2,404 m) over the Mali Ston Bay between Komarna on the mainland and the Pelješac peninsula, with 12.04 km of access roads and the 7.89 km Prapratno–Doli section of the Ston bypass. It joins the Dubrovnik–Neretva county to the rest of Croatia without crossing the Bosnian coast at Neum. Part of the EU-co-financed project Road connectivity with Southern Dalmatia (32.53 km of road in four phases). The 10.2 km Sparagovići/Zaradeže–Prapratno phase is not modelled as a lot because no opening date was found.",
+    "ro": "Pod hobanat (2.404 m) peste golful Mali Ston, între Komarna, pe continent, și peninsula Pelješac, cu 12,04 km de drumuri de acces și secțiunea Prapratno–Doli de 7,89 km a variantei ocolitoare Ston. Leagă județul Dubrovnik-Neretva de restul Croației fără a traversa coasta bosniacă de la Neum. Face parte din proiectul Conectivitate rutieră cu Dalmația de Sud, cofinanțat de UE (32,53 km de drum în patru faze). Faza Sparagovići/Zaradeže–Prapratno, de 10,2 km, nu este modelată ca lot, deoarece nu s-a găsit o dată de deschidere."
+  },
+  "operator": "hr-hc",
+  "lots": [
+    {
+      "id": "bridge",
+      "name": {
+        "en": "Pelješac Bridge (Komarna – Brijesta)",
+        "ro": "Podul Pelješac (Komarna – Brijesta)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-01-15",
+        "constructionStart": "2018-07-30",
+        "opened": "2022-07-26"
+      },
+      "lengthKm": 2.404,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-01-15",
+          "note": {
+            "en": "Hrvatske ceste decided that China Road and Bridge Corporation had won the tender.",
+            "ro": "Hrvatske ceste a decis că China Road and Bridge Corporation a câștigat licitația."
+          },
+          "sourceRef": "wikipedia-en-peljesac-bridge"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-07-30",
+          "sourceRef": "wikipedia-en-peljesac-bridge"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-07-26",
+          "sourceRef": "wikipedia-en-peljesac-bridge"
+        }
+      ],
+      "profile": {
+        "bridgeCount": 1
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "European Regional Development Fund, Operational Programme Competitiveness and Cohesion 2014–2020. The grant of HRK 2,733,225,710.49 (85% of eligible costs) covers all four phases of the project, not this lot alone. The European Commission announced EUR 357 million on 7 June 2017.",
+            "ro": "Fondul European de Dezvoltare Regională, Programul Operațional Competitivitate și Coeziune 2014–2020. Grantul de 2.733.225.710,49 HRK (85% din costurile eligibile) acoperă toate cele patru faze ale proiectului, nu doar acest lot. Comisia Europeană a anunțat 357 de milioane EUR la 7 iunie 2017."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Road and Bridge Corporation",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Cable-stayed bridge with 13 spans, 2,404 m long. China Road and Bridge Corporation bid about HRK 2.1 billion, against about HRK 2.6 billion each from Strabag and Astaldi/Içtaş (en.wikipedia); the signed contract value was not found. en.wikipedia gives a construction cost of EUR 420.3 million for the bridge, with no VAT basis or price year, so it is not recorded as a figure; Hrvatske ceste gives HRK 4,023,978,948.00 as the total value of the whole four-phase project. Hrvatske ceste's project page lists the bridge as 2.4 km. The contract was signed on 23 April 2018 (hr.wikipedia), and the 30 July 2018 construction start is from en.wikipedia. Buses, heavy trucks and vehicles with dangerous goods could use the bridge only after the Ston bypass opened on 19 April 2023.",
+        "ro": "Pod hobanat cu 13 deschideri, lung de 2.404 m. China Road and Bridge Corporation a oferit circa 2,1 miliarde HRK, față de circa 2,6 miliarde HRK fiecare Strabag și Astaldi/Içtaş (en.wikipedia); valoarea contractului semnat nu a fost găsită. en.wikipedia indică un cost de construcție de 420,3 milioane EUR pentru pod, fără bază TVA sau an de preț, deci nu este înregistrat ca cifră; Hrvatske ceste indică 4.023.978.948,00 HRK ca valoare totală a întregului proiect în patru faze. Pagina proiectului Hrvatske ceste indică podul cu 2,4 km. Contractul a fost semnat la 23 aprilie 2018 (hr.wikipedia), iar începerea lucrărilor la 30 iulie 2018 provine de pe en.wikipedia. Autobuzele, camioanele grele și vehiculele cu mărfuri periculoase au putut folosi podul abia după deschiderea variantei ocolitoare Ston la 19 aprilie 2023."
+      },
+      "sourceRefs": [
+        "hc-eu-project-south-dalmatia",
+        "wikipedia-en-peljesac-bridge",
+        "wikipedia-hr-peljeski-most",
+        "openstreetmap"
+      ],
+      "geometryRef": "bridge"
+    },
+    {
+      "id": "access-roads",
+      "name": {
+        "en": "Access roads Duboka – Sparagovići/Zaradeže",
+        "ro": "Drumuri de acces Duboka – Sparagovići/Zaradeže"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-07-26"
+      },
+      "lengthKm": 12.04,
+      "profile": {
+        "bridgeCount": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "Same grant as the bridge lot: it covers all four phases of the project.",
+            "ro": "Același grant ca la lotul podului: acoperă toate cele patru faze ale proiectului."
+          }
+        }
+      ],
+      "note": {
+        "en": "Hrvatske ceste lists the roads as 12.04 km: Duboka (D8) to the bridge 2.14 km on the mainland, and the bridge to Zaradeže 9.898 km on Pelješac with 2 tunnels, 1 viaduct and 2 bridges. The road opened together with the bridge (en.wikipedia). Drawn geometry runs from the Duboka junction on the D8 to the bridge (about 1.98 km measured) and from the bridge (about 9.82 km measured) along the OpenStreetMap centreline towards Ston. No construction start, award date or contract value for this lot was found. The opening is stated by en.wikipedia only; Jutarnji list reported on 27 July 2022 that works on a Pelješac access road were still having problems.",
+        "ro": "Hrvatske ceste indică drumurile cu 12,04 km: Duboka (D8) până la pod 2,14 km pe continent, și de la pod la Zaradeže 9,898 km pe Pelješac, cu 2 tuneluri, 1 viaduct și 2 poduri. Drumul s-a deschis odată cu podul (en.wikipedia). Geometria desenată merge de la nodul Duboka de pe D8 până la pod (circa 1,98 km măsurați) și de la pod (circa 9,82 km măsurați) pe axa din OpenStreetMap spre Ston. Nu s-au găsit data începerii lucrărilor, data atribuirii sau valoarea contractului pentru acest lot. Deschiderea este indicată doar de en.wikipedia; Jutarnji list a relatat la 27 iulie 2022 că lucrările la un drum de acces de pe Pelješac aveau încă probleme."
+      },
+      "sourceRefs": [
+        "hc-eu-project-south-dalmatia",
+        "wikipedia-en-peljesac-bridge",
+        "openstreetmap"
+      ],
+      "geometryRef": "access-roads"
+    },
+    {
+      "id": "ston-bypass",
+      "name": {
+        "en": "Ston bypass (Prapratno – Doli)",
+        "ro": "Varianta ocolitoare Ston (Prapratno – Doli)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2023-04-19"
+      },
+      "lengthKm": 7.89,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2023-04-19",
+          "sourceRef": "mmpi-ston-bypass"
+        }
+      ],
+      "profile": {
+        "tunnelKm": 2.585,
+        "bridgeCount": 1
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "Same grant as the bridge lot: it covers all four phases of the project.",
+            "ro": "Același grant ca la lotul podului: acoperă toate cele patru faze ale proiectului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Avax",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Second phase of the Ston bypass, from the Prapratno junction to the Doli junction: 7.89 km with 2 tunnels, 1 viaduct and 1 bridge (Hrvatske ceste); the Ministry of the Sea, Transport and Infrastructure gives 7.5 km. Polakovica tunnel 1,265 m and Supava tunnel 1,320 m, joined by the 485 m Ston Bridge (Croatia Week). Opened on Wednesday 19 April 2023. The Prime Minister described the bypass as valued at EUR 70 million (ministry, Croatia Week); this is not recorded as a cost because it is neither a contract nor a dated estimate. The ministry names Avax as main contractor 'uz Strabag' (with Strabag); the split of roles was not found.",
+        "ro": "A doua fază a variantei ocolitoare Ston, de la nodul Prapratno la nodul Doli: 7,89 km cu 2 tuneluri, 1 viaduct și 1 pod (Hrvatske ceste); Ministerul Mării, Transporturilor și Infrastructurii indică 7,5 km. Tunelul Polakovica de 1.265 m și tunelul Supava de 1.320 m, legate de podul Ston de 485 m (Croatia Week). Deschisă miercuri, 19 aprilie 2023. Prim-ministrul a descris varianta ca fiind în valoare de 70 milioane EUR (minister, Croatia Week); cifra nu este înregistrată drept cost, deoarece nu este nici contract, nici estimare datată. Ministerul numește Avax contractor principal „uz Strabag” (alături de Strabag); împărțirea rolurilor nu a fost găsită."
+      },
+      "sourceRefs": [
+        "hc-eu-project-south-dalmatia",
+        "mmpi-ston-bypass",
+        "croatiaweek-ston-bypass",
+        "openstreetmap"
+      ],
+      "geometryRef": "ston-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hc-eu-project-south-dalmatia",
+      "title": "Hrvatske ceste: Cestovna povezanost s južnom Dalmacijom (EU projekti, završeni projekti)",
+      "url": "https://hrvatske-ceste.hr/hr/eu-projekti/projekti/55",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-en-peljesac-bridge",
+      "title": "Wikipedia: Pelješac Bridge",
+      "url": "https://en.wikipedia.org/wiki/Pelje%C5%A1ac_Bridge",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-hr-peljeski-most",
+      "title": "Wikipedia (hr): Pelješki most",
+      "url": "https://hr.wikipedia.org/wiki/Pelje%C5%A1ki_most",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "mmpi-ston-bypass",
+      "title": "Ministarstvo mora, prometa i infrastrukture: Otvorenjem stonske obilaznice završeno cestovno povezivanje južne Dalmacije",
+      "url": "https://mmpi.gov.hr/vijesti-8/otvorenjem-stonske-obilaznice-zavrseno-cestovno-povezivanje-juzne-dalmacije/23930",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "croatiaweek-ston-bypass",
+      "title": "Croatia Week: Southern Dalmatia road connection is completed as Ston bypass opens (2023-04-20)",
+      "url": "https://www.croatiaweek.com/video-southern-dalmatia-road-connection-is-completed-as-ston-bypass-opens/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (ODbL): geometry via Overpass API",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

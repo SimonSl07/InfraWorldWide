@@ -1,0 +1,364 @@
+{
+  "id": "hr-istarski-ipsilon-full-profile",
+  "country": "hr",
+  "category": "highway",
+  "name": {
+    "en": "Istrian Y full-profile upgrade (A8 and A9)",
+    "ro": "Modernizarea Y-ului istrian la profil complet (A8 și A9)"
+  },
+  "description": {
+    "en": "Second carriageways and the second Učka tube added to the Istrian Y under the BINA-Istra concession: A9 Pula – Umag (2010–2011), A8 Kanfanar – Vranja (2011–2021), the Učka Tunnel second tube (2024), and the works still under way: the Učka Tunnel – Matulji full profile and the second Mirna bridge and Limska Draga viaduct on the A9. Every lot runs on road that the project hr-istarski-ipsilon already measures, so all are marked sharedWith and excluded from network totals. Costs are not recorded per lot: the sources give totals for several sections, some in kuna.",
+    "ro": "Carosabilele a doua și al doilea tub Učka adăugate Y-ului istrian în baza concesiunii BINA-Istra: A9 Pula – Umag (2010–2011), A8 Kanfanar – Vranja (2011–2021), al doilea tub al Tunelului Učka (2024) și lucrările în curs: profilul complet Tunelul Učka – Matulji, al doilea pod Mirna și viaductul Limska Draga pe A9. Fiecare lot se desfășoară pe un drum pe care proiectul hr-istarski-ipsilon îl măsoară deja, deci toate sunt marcate sharedWith și excluse din totalurile rețelei. Costurile nu sunt înregistrate pe lot: sursele dau totaluri pentru mai multe sectoare, unele în kuna."
+  },
+  "operator": "hr-bina-istra",
+  "lots": [
+    {
+      "id": "a8-kanfanar-rogovici-full-profile",
+      "name": {
+        "en": "A8 Kanfanar – Rogovići full profile (second carriageway)",
+        "ro": "A8 Kanfanar – Rogovići profil complet (a doua carosabil)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2011-10"
+      },
+      "lengthKm": 16.38,
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Second carriageway added to the two-lane road. Wikipedia: the upgrade of the route started in 2008 and the expansion of the first section, Kanfanar–Rogovići, was completed in October 2011. This section is still tolled separately. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith). Length measured from OpenStreetMap geometry.",
+        "ro": "A doua carosabil adăugată drumului cu două benzi. Wikipedia: modernizarea traseului a început în 2008, iar extinderea primului sector, Kanfanar–Rogovići, a fost finalizată în octombrie 2011. Acest sector rămâne taxat separat. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith). Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-kanfanar-rogovici-full-profile"
+    },
+    {
+      "id": "a8-rogovici-cerovlje-full-profile",
+      "name": {
+        "en": "A8 Rogovići – Cerovlje full profile (second carriageway)",
+        "ro": "A8 Rogovići – Cerovlje profil complet (a doua carosabil)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-11-15",
+        "opened": "2020-11"
+      },
+      "lengthKm": 12,
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Second carriageway, 12 km, opened to traffic in November 2020. Wikipedia gives the whole 28 km Rogovići – Učka Tunnel full-profile works as HRK 1.2 billion excluding VAT (kuna, not converted); started 15 November 2018 and built in three sub-phases. The drawn length is 10.4 km, 13% below the sourced figure. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "A doua carosabil, 12 km, dată în trafic în noiembrie 2020. Wikipedia dă lucrările de profil complet pe cei 28 km Rogovići – Tunelul Učka la 1,2 miliarde HRK fără TVA (kuna, neconvertit); începute la 15 noiembrie 2018 și executate în trei subfaze. Lungimea trasată este de 10,4 km, cu 13% sub cifra din sursă. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-rogovici-cerovlje-full-profile"
+    },
+    {
+      "id": "a8-cerovlje-vranja-full-profile",
+      "name": {
+        "en": "A8 Cerovlje – Lupoglav – Vranja full profile (second carriageway)",
+        "ro": "A8 Cerovlje – Lupoglav – Vranja profil complet (a doua carosabil)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-11-15",
+        "opened": "2021-07"
+      },
+      "lengthKm": 13,
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Cerovlje–Lupoglav and Lupoglav–Vranja, 13 km as stated by Wikipedia, opened to traffic in July 2021. Wikipedia gives the whole 28 km Rogovići – Učka Tunnel full-profile works as HRK 1.2 billion excluding VAT (kuna, not converted); started 15 November 2018 and built in three sub-phases. The road mapped in OpenStreetMap between Cerovlje and Vranja measures 16.8 km, 29% above the sourced figure, and the whole Rogovići–Vranja stretch about 27 km, close to the 28 km total for Rogovići – Učka Tunnel; the 13 km figure was left as sourced. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "Cerovlje–Lupoglav și Lupoglav–Vranja, 13 km conform Wikipedia, date în trafic în iulie 2021. Wikipedia dă lucrările de profil complet pe cei 28 km Rogovići – Tunelul Učka la 1,2 miliarde HRK fără TVA (kuna, neconvertit); începute la 15 noiembrie 2018 și executate în trei subfaze. Drumul cartografiat în OpenStreetMap între Cerovlje și Vranja măsoară 16,8 km, cu 29% peste cifra din sursă, iar tronsonul Rogovići–Vranja în total circa 27 km, aproape de totalul de 28 km pentru Rogovići – Tunelul Učka; cifra de 13 km a fost păstrată ca în sursă. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-cerovlje-vranja-full-profile"
+    },
+    {
+      "id": "a8-ucka-tunnel-second-tube",
+      "name": {
+        "en": "Učka Tunnel second tube",
+        "ro": "Tunelul Učka, al doilea tub"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2020-12-17",
+        "opened": "2024-09-13"
+      },
+      "lengthKm": 5.634,
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Second tube, 5,634 m. Excavation started on 17 December 2020, breakthrough was completed on 18 September 2023, and the tube opened to traffic on 13 September 2024, slightly later than planned. Wikipedia notes that the 2011 plan was a 2015 completion. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "Al doilea tub, 5634 m. Excavarea a început la 17 decembrie 2020, străpungerea s-a încheiat la 18 septembrie 2023, iar tubul a fost dat în trafic la 13 septembrie 2024, puțin mai târziu decât planificat. Wikipedia notează că planul din 2011 prevedea finalizarea în 2015. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "wp-ucka-tunnel",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-ucka-tunnel-second-tube"
+    },
+    {
+      "id": "a8-ucka-matulji-full-profile",
+      "name": {
+        "en": "A8 Učka Tunnel – Matulji full profile (second carriageway)",
+        "ro": "A8 Tunelul Učka – Matulji profil complet (a doua carosabil)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023-09",
+        "expectedOpening": "2027-03"
+      },
+      "lengthKm": 10.5,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Bina-Istra, the concessionaire, secured the funds for this works package and the two A9 structures through commercial bank loans.",
+            "ro": "Bina-Istra, concesionarul, a asigurat fondurile pentru acest pachet de lucrări și pentru cele două structuri de pe A9 prin credite bancare comerciale."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Bouygues",
+          "role": "builder"
+        }
+      ],
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "10.5 km from the Kvarner portal of the Učka Tunnel to the Matulji interchange, including the interchange; the 2023 amendment gives the second-lane stretch as almost 10.3 km. Wikipedia dates the start of the additional lanes to September 2023; the official start-of-works ceremony was held on 16 February 2024. On 17 July 2026 the minister said the first four kilometres would open within about ten days and the whole section in the first quarter of 2027; no opening is confirmed here. Value of the three projects together (Učka–Matulji full profile, Mirna bridge, Limska Draga viaduct) is about EUR 214 million per the concessionaire and press; the cited sources give no per-lot figure. Contract Amendment No. 7 of 10 May 2023 covered the same works at about EUR 200 million, with a 38-month duration from July 2023. The Matulji interchange rebuild is a EUR 17.7 million project per the minister. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "10,5 km de la portalul dinspre Kvarner al Tunelului Učka până la nodul Matulji, inclusiv nodul; actul adițional din 2023 dă tronsonul celei de-a doua benzi la aproape 10,3 km. Wikipedia datează începutul benzilor suplimentare în septembrie 2023; ceremonia oficială de începere a lucrărilor a avut loc la 16 februarie 2024. La 17 iulie 2026 ministrul a spus că primii patru kilometri vor fi deschiși în circa zece zile și întregul sector în primul trimestru din 2027; nicio deschidere nu este confirmată aici. Valoarea celor trei proiecte împreună (profil complet Učka–Matulji, podul Mirna, viaductul Limska Draga) este de circa 214 milioane EUR conform concesionarului și presei; sursele citate nu dau o cifră pe lot. Actul adițional nr. 7 din 10 mai 2023 a acoperit aceleași lucrări la circa 200 milioane EUR, cu durata de 38 de luni din iulie 2023. Refacerea nodului Matulji este un proiect de 17,7 milioane EUR conform ministrului. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "wp-highways",
+        "novilist-2024-02-16",
+        "novilist-2026-07-17",
+        "mmpi-2023-05-10",
+        "osm-a8",
+        "bina-istra-works-start"
+      ],
+      "geometryRef": "a8-ucka-matulji-full-profile"
+    },
+    {
+      "id": "a9-pula-kanfanar-full-profile",
+      "name": {
+        "en": "A9 Pula – Kanfanar full profile (second carriageway)",
+        "ro": "A9 Pula – Kanfanar profil complet (a doua carosabil)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-10-06",
+        "opened": "2010-06-20"
+      },
+      "lengthKm": 30,
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Wikipedia: upgrade to four lanes started on 6 October 2008; the Pula–Kanfanar section, approximately 30 km, was completed on 20 June 2010, and the ticket toll system was introduced on it. The mapped road measures 27.2 km. Source: total cost of the A9 upgrade was EUR 228 million (Wikipedia), for all the 2A-stage works, not for this section alone. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "Wikipedia: modernizarea la patru benzi a început la 6 octombrie 2008; sectorul Pula–Kanfanar, de aproximativ 30 km, a fost finalizat la 20 iunie 2010, iar pe el s-a introdus sistemul de taxare cu bilet. Drumul cartografiat măsoară 27,2 km. Sursa: costul total al modernizării A9 a fost de 228 milioane EUR (Wikipedia), pentru toate lucrările din etapa 2A, nu doar pentru acest sector. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-pula-kanfanar-full-profile"
+    },
+    {
+      "id": "a9-kanfanar-umag-full-profile",
+      "name": {
+        "en": "A9 Kanfanar – Umag full profile (second carriageway)",
+        "ro": "A9 Kanfanar – Umag profil complet (a doua carosabil)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-06-14"
+      },
+      "lengthKm": 50,
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Wikipedia: the 50 km section between the Kanfanar interchange and Umag was upgraded to four lanes by 14 June 2011, eight months ahead of schedule. The Mirna Bridge and the Limska Draga viaduct kept a single carriageway each; their second structures are separate lots. No start date is recorded: the 2008 start in the source refers to the whole upgrade. The mapped road measures 47.7 km. Source: total cost of the A9 upgrade was EUR 228 million (Wikipedia), for all the 2A-stage works, not for this section alone. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "Wikipedia: sectorul de 50 km dintre nodul Kanfanar și Umag a fost modernizat la patru benzi până la 14 iunie 2011, cu opt luni înainte de termen. Podul Mirna și viaductul Limska Draga au păstrat câte o singură carosabilă; a doua structură a fiecăruia este un lot separat. Nu se înregistrează o dată de început: startul din 2008 din sursă se referă la întreaga modernizare. Drumul cartografiat măsoară 47,7 km. Sursa: costul total al modernizării A9 a fost de 228 milioane EUR (Wikipedia), pentru toate lucrările din etapa 2A, nu doar pentru acest sector. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-kanfanar-umag-full-profile"
+    },
+    {
+      "id": "a9-mirna-bridge-second-carriageway",
+      "name": {
+        "en": "A9 Mirna Bridge second carriageway",
+        "ro": "A9 podul Mirna, a doua carosabilă"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2024-02",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 1.354,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Bina-Istra, the concessionaire, secured the funds for this works package and the two A9 structures through commercial bank loans.",
+            "ro": "Bina-Istra, concesionarul, a asigurat fondurile pentru acest pachet de lucrări și pentru cele două structuri de pe A9 prin credite bancare comerciale."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Bouygues",
+          "role": "builder"
+        }
+      ],
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Parallel structure beside the existing 1,354 m Mirna Bridge, completing four lanes. Construction started in February 2024. The 2023 contract amendment targeted completion in 2026; the press expected it by the end of 2026. Wikipedia's list of works gives 2.5 km for this item, which probably includes approaches; the bridge length is used. Value of the three projects together (Učka–Matulji full profile, Mirna bridge, Limska Draga viaduct) is about EUR 214 million per the concessionaire and press; the cited sources give no per-lot figure. Contract Amendment No. 7 of 10 May 2023 covered the same works at about EUR 200 million, with a 38-month duration from July 2023. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "Structură paralelă lângă podul Mirna existent, de 1354 m, care completează patru benzi. Construcția a început în februarie 2024. Actul adițional din 2023 a vizat finalizarea în 2026; presa a anticipat-o până la sfârșitul lui 2026. Lista de lucrări din Wikipedia dă 2,5 km pentru acest articol, probabil cu accesele; se folosește lungimea podului. Valoarea celor trei proiecte împreună (profil complet Učka–Matulji, podul Mirna, viaductul Limska Draga) este de circa 214 milioane EUR conform concesionarului și presei; sursele citate nu dau o cifră pe lot. Actul adițional nr. 7 din 10 mai 2023 a acoperit aceleași lucrări la circa 200 milioane EUR, cu durata de 38 de luni din iulie 2023. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "wp-highways",
+        "wp-a9",
+        "istrain-2026-09-26",
+        "mmpi-2023-05-10",
+        "novilist-2024-02-16",
+        "osm-a9",
+        "bina-istra-works-start"
+      ],
+      "geometryRef": "a9-mirna-bridge-second-carriageway"
+    },
+    {
+      "id": "a9-limska-draga-viaduct-second-carriageway",
+      "name": {
+        "en": "A9 Limska Draga viaduct second carriageway",
+        "ro": "A9 viaductul Limska Draga, a doua carosabilă"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2024-02",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 0.552,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Bina-Istra, the concessionaire, secured the funds for this works package and the two A9 structures through commercial bank loans.",
+            "ro": "Bina-Istra, concesionarul, a asigurat fondurile pentru acest pachet de lucrări și pentru cele două structuri de pe A9 prin credite bancare comerciale."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Bouygues",
+          "role": "builder"
+        }
+      ],
+      "sharedWith": "hr-istarski-ipsilon",
+      "note": {
+        "en": "Parallel 552 m viaduct, largest span 160 m. One lane was opened to traffic on 26 September 2026 under temporary regulation, with full opening expected within about ten days; that has not been confirmed, so the lot stays under construction. Value of the three projects together (Učka–Matulji full profile, Mirna bridge, Limska Draga viaduct) is about EUR 214 million per the concessionaire and press; the cited sources give no per-lot figure. Contract Amendment No. 7 of 10 May 2023 covered the same works at about EUR 200 million, with a 38-month duration from July 2023. Upgrade of an existing road: the original road stays in the network as its own lot, so this lot is excluded from network totals (sharedWith).",
+        "ro": "Viaduct paralel de 552 m, deschiderea maximă de 160 m. O bandă a fost dată în trafic la 26 septembrie 2026 sub regim temporar, cu deschidere completă așteptată în circa zece zile; aceasta nu este confirmată, deci lotul rămâne în construcție. Valoarea celor trei proiecte împreună (profil complet Učka–Matulji, podul Mirna, viaductul Limska Draga) este de circa 214 milioane EUR conform concesionarului și presei; sursele citate nu dau o cifră pe lot. Actul adițional nr. 7 din 10 mai 2023 a acoperit aceleași lucrări la circa 200 milioane EUR, cu durata de 38 de luni din iulie 2023. Modernizare a unui drum existent: drumul inițial rămâne în rețea ca lot separat, deci acest lot este exclus din totalurile rețelei (sharedWith)."
+      },
+      "sourceRefs": [
+        "istrain-2026-09-26",
+        "novilist-2024-02-16",
+        "mmpi-2023-05-10",
+        "osm-a9",
+        "bina-istra-works-start"
+      ],
+      "geometryRef": "a9-limska-draga-viaduct-second-carriageway"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wp-a8",
+      "title": "Wikipedia: A8 (Croatia)",
+      "url": "https://en.wikipedia.org/wiki/A8_(Croatia)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wp-a9",
+      "title": "Wikipedia: A9 (Croatia)",
+      "url": "https://en.wikipedia.org/wiki/A9_(Croatia)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wp-ucka-tunnel",
+      "title": "Wikipedia: Učka Tunnel",
+      "url": "https://en.wikipedia.org/wiki/U%C4%8Dka_Tunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wp-highways",
+      "title": "Wikipedia: Highways in Croatia (works under construction)",
+      "url": "https://en.wikipedia.org/wiki/Highways_in_Croatia",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "novilist-2024-02-16",
+      "title": "Novi list: Počela izgradnja punog profila autoceste od tunela Učka prema Matuljima (16 Feb 2024; 10.5 km, about EUR 214 million for three projects, Bouygues, bank loans)",
+      "url": "https://www.novilist.hr/novosti/hrvatska/pocela-izgradnja-punog-profila-autoceste-od-tunela-ucka-prema-matuljima/",
+      "publisher": "Novi list",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "novilist-2026-07-17",
+      "title": "Novi list: Butković, prva četiri kilometra od tunela Učka prema Matuljima u prometu za desetak dana (17 Jul 2026; section due Q1 2027)",
+      "url": "https://www.novilist.hr/novosti/butkovic-prva-cetiri-kilometra-od-tunela-ucka-prema-matuljima-u-prometu-za-desetak-dana/",
+      "publisher": "Novi list",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "mmpi-2023-05-10",
+      "title": "Ministry of the Sea, Transport and Infrastructure: Potpisan ugovor vezan uz nastavak projekta izgradnje Istarskog ipsilona (10 May 2023; Amendment No. 7, about EUR 200 million, 38 months)",
+      "url": "https://mmpi.gov.hr/vijesti-8/potpisan-ugovor-vezan-uz-nastavak-projekta-izgradnje-istarskog-ipsilona/23963",
+      "publisher": "Ministarstvo mora, prometa i infrastrukture",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "istrain-2026-09-26",
+      "title": "IstraIN: Nova traka preko Limske drage puštena u promet (26 Sep 2026; second Mirna bridge expected by end of year)",
+      "url": "https://istrain.hr/istrain/vijesti/6ab78413604a3/nova-traka-preko-limske-drage-pustena-u-promet-potpuno-otvaranje-za-koji-dan/vijest",
+      "publisher": "IstraIN",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "bina-istra-works-start",
+      "title": "BINA-Istra: Počeli radovi na dionici Istarskog ipsilona od tunela Učke do Matulja",
+      "url": "https://bina-istra.com/wip/poceli-radovi-na-dionici-istarskog-ipsilona-od-tunela-ucke-do-matulja",
+      "publisher": "BINA-Istra",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-a8",
+      "title": "OpenStreetMap: relation 145021, Autocesta A8 (ref A8)",
+      "url": "https://www.openstreetmap.org/relation/145021",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-a9",
+      "title": "OpenStreetMap: relation 145027, Autocesta A9 (ref A9)",
+      "url": "https://www.openstreetmap.org/relation/145027",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

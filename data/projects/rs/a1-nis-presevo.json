@@ -1,0 +1,325 @@
+{
+  "id": "rs-a1-nis-presevo",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "A1 Niš – Preševo (Corridor X south)",
+    "ro": "Autostrada A1 Niš – Preševo (Coridorul X sud)"
+  },
+  "description": {
+    "en": "The southern A1 (E75) from the Niš South interchange through Leskovac, the Grdelica Gorge, Vranje and Bujanovac to the North Macedonia border at Preševo. It opened in stages from the 1990s; the last sections, through the Grdelica Gorge, opened on 18 May 2019. Lots follow the section names used by JP Putevi Srbije. Lengths are the published section figures where one exists; the Niš South–Pečenjevce length is measured from OpenStreetMap. No cost is recorded: Serbian sources give contract values for the gorge works but no outturn for any section.",
+    "ro": "A1 sudică (E75) de la nodul Niš Sud, prin Leskovac, Defileul Grdelica, Vranje și Bujanovac, până la frontiera cu Macedonia de Nord la Preševo. A fost deschisă etapizat din anii 1990; ultimele sectoare, prin Defileul Grdelica, au fost deschise la 18 mai 2019. Loturile urmează denumirile de sectoare folosite de JP Putevi Srbije. Lungimile sunt cifrele publicate pentru sector acolo unde există; lungimea Niš Sud–Pečenjevce este măsurată din OpenStreetMap. Nu se înregistrează niciun cost: sursele sârbe oferă valori de contract pentru lucrările din defileu, dar nu un cost final pentru vreun sector."
+  },
+  "lots": [
+    {
+      "id": "nis-jug-pecenjevce",
+      "name": {
+        "en": "Niš South – Pečenjevce",
+        "ro": "Niš Sud – Pečenjevce"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1997"
+      },
+      "lengthKm": 28.06,
+      "note": {
+        "en": "The oldest part of the southern A1, opened in stages in the 1990s. English Wikipedia dates Niš–Batušinac to 1992 and Batušinac–Pečenjevce to 1997; Serbian Wikipedia gives Doljevac–Pečenjevce (12 km) as 1997. The sources disagree on the split, so the lot carries the last year, 1997. Length measured from OpenStreetMap geometry.",
+        "ro": "Cea mai veche parte a A1 sudice, deschisă etapizat în anii 1990. Wikipedia engleză datează Niš–Batušinac în 1992 și Batušinac–Pečenjevce în 1997; Wikipedia sârbă indică Doljevac–Pečenjevce (12 km) în 1997. Sursele nu concordă asupra împărțirii, așa că lotul poartă ultimul an, 1997. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "en-wikipedia-a1",
+        "sr-wikipedia-a1",
+        "osm-a1"
+      ],
+      "geometryRef": "nis-jug-pecenjevce"
+    },
+    {
+      "id": "pecenjevce-grabovnica",
+      "name": {
+        "en": "Pečenjevce – Grabovnica",
+        "ro": "Pečenjevce – Grabovnica"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005"
+      },
+      "lengthKm": 23,
+      "note": {
+        "en": "Opened in 2005 (year only in the source). Pečenjevce is the Leskovac Centre interchange; Grabovnica has no mapped interchange, so the cut is placed about 5.6 km before Grdelica.",
+        "ro": "Deschis în 2005 (sursa indică doar anul). Pečenjevce este nodul Leskovac Centru; Grabovnica nu are nod cartografiat, așa că tăietura este plasată la circa 5,6 km înainte de Grdelica."
+      },
+      "sourceRefs": [
+        "sr-wikipedia-a1",
+        "osm-a1"
+      ],
+      "geometryRef": "pecenjevce-grabovnica"
+    },
+    {
+      "id": "grabovnica-grdelica",
+      "name": {
+        "en": "Grabovnica – Grdelica",
+        "ro": "Grabovnica – Grdelica"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-04-11"
+      },
+      "lengthKm": 5.6,
+      "note": {
+        "en": "Ceremonially opened on 11 April 2016.",
+        "ro": "Deschis oficial la 11 aprilie 2016."
+      },
+      "sourceRefs": [
+        "bilten-13-15",
+        "sr-wikipedia-a1",
+        "osm-a1"
+      ],
+      "geometryRef": "grabovnica-grdelica"
+    },
+    {
+      "id": "grdelica-caricina-dolina",
+      "name": {
+        "en": "Grdelica – Caričina Dolina",
+        "ro": "Grdelica – Caričina Dolina"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-10",
+        "opened": "2019-05-18"
+      },
+      "lengthKm": 12,
+      "contractors": [
+        {
+          "name": "AZVI SA – TADDEI JV",
+          "role": "builder"
+        },
+        {
+          "name": "TRACE ltd – MOSTOVIK",
+          "role": "builder"
+        },
+        {
+          "name": "Consortium Alliance X",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Grdelica Gorge section with the Predejane tunnel. The ministry lists three works contracts here: Grdelica–Predejane tunnel (EUR 39.81 million, AZVI SA and TADDEI), Predejane tunnel–Caričina Dolina (EUR 37.51 million, TRACE and MOSTOVIK) and Predejane tunnel fit-out (EUR 15.24 million, Consortium Alliance X). Contract dates and VAT status are not stated, so no contract value is recorded. Gorge works began in October 2013. Caričina Dolina has no mapped interchange, so the cut divides the drawn gorge in the official 12 to 14.3 km proportion.",
+        "ro": "Sectorul din Defileul Grdelica cu tunelul Predejane. Ministerul listează aici trei contracte de lucrări: Grdelica–tunel Predejane (39,81 milioane EUR, AZVI SA și TADDEI), tunel Predejane–Caričina Dolina (37,51 milioane EUR, TRACE și MOSTOVIK) și echiparea tunelului Predejane (15,24 milioane EUR, Consortium Alliance X). Datele contractelor și tratamentul TVA nu sunt menționate, deci nu se înregistrează nicio valoare de contract. Lucrările în defileu au început în octombrie 2013. Caričina Dolina nu are nod cartografiat, așa că tăietura împarte defileul desenat în proporția oficială de 12 la 14,3 km."
+      },
+      "sourceRefs": [
+        "mgsi-grdelicka-klisura",
+        "rts-grdelicka-klisura",
+        "b92-grdelica-2019",
+        "sr-wikipedia-a1",
+        "osm-a1"
+      ],
+      "geometryRef": "grdelica-caricina-dolina"
+    },
+    {
+      "id": "caricina-dolina-vladicin-han",
+      "name": {
+        "en": "Caričina Dolina – Vladičin Han",
+        "ro": "Caričina Dolina – Vladičin Han"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-10",
+        "opened": "2019-05-18"
+      },
+      "lengthKm": 14.3,
+      "contractors": [
+        {
+          "name": "Consortium Alliance X",
+          "role": "builder"
+        },
+        {
+          "name": "Integral inženjering – Interkop Misar – Prijedor putevi",
+          "role": "builder"
+        },
+        {
+          "name": "AZVI – Construcciones Rubau JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Grdelica Gorge section with the Manajle tunnel (1,808 m) and the Vrla bridge. Ministry-listed contracts: Manajle tunnel fit-out (EUR 36.25 million, Consortium Alliance X), route and bridges Caričina Dolina–Manajle (EUR 53.64 million, Integral inženjering, Interkop Misar and Prijedor putevi) and Manajle tunnel–Vladičin Han (EUR 52.2 million contracted, AZVI and Construcciones Rubau). Contract dates and VAT status are not stated, so no contract value is recorded. Gorge works began in October 2013. Both gorge sections opened together on 18 May 2019.",
+        "ro": "Sectorul din Defileul Grdelica cu tunelul Manajle (1.808 m) și podul Vrla. Contracte listate de minister: echiparea tunelului Manajle (36,25 milioane EUR, Consortium Alliance X), traseu și poduri Caričina Dolina–Manajle (53,64 milioane EUR, Integral inženjering, Interkop Misar și Prijedor putevi) și tunel Manajle–Vladičin Han (52,2 milioane EUR contractate, AZVI și Construcciones Rubau). Datele contractelor și tratamentul TVA nu sunt menționate, deci nu se înregistrează nicio valoare de contract. Lucrările în defileu au început în octombrie 2013. Ambele sectoare din defileu au fost deschise împreună la 18 mai 2019."
+      },
+      "sourceRefs": [
+        "mgsi-grdelicka-klisura",
+        "rts-grdelicka-klisura",
+        "b92-grdelica-2019",
+        "sr-wikipedia-a1",
+        "osm-a1"
+      ],
+      "geometryRef": "caricina-dolina-vladicin-han"
+    },
+    {
+      "id": "vladicin-han-donji-neradovac",
+      "name": {
+        "en": "Vladičin Han – Donji Neradovac",
+        "ro": "Vladičin Han – Donji Neradovac"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-11-28"
+      },
+      "lengthKm": 26.2,
+      "note": {
+        "en": "Opened on 28 November 2016 according to JP Putevi Srbije (Bilten 13–15). Serbian Wikipedia gives 2015 and a length of 26.3 km for this section; the bulletin figures are used. Donji Neradovac is cut at the village, as the mapped interchange there is unnamed.",
+        "ro": "Deschis la 28 noiembrie 2016 potrivit JP Putevi Srbije (Bilten 13–15). Wikipedia sârbă indică 2015 și o lungime de 26,3 km pentru acest sector; se folosesc cifrele din buletin. Donji Neradovac este tăiat la sat, deoarece nodul cartografiat de acolo nu are nume."
+      },
+      "sourceRefs": [
+        "bilten-13-15",
+        "sr-wikipedia-a1",
+        "osm-a1"
+      ],
+      "geometryRef": "vladicin-han-donji-neradovac"
+    },
+    {
+      "id": "donji-neradovac-srpska-kuca",
+      "name": {
+        "en": "Donji Neradovac – Srpska Kuća",
+        "ro": "Donji Neradovac – Srpska Kuća"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013"
+      },
+      "lengthKm": 6,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Financed from the Serbian budget with financial assistance from the Greek government under the Greek Plan for the Economic Reconstruction of the Balkans.",
+            "ro": "Finanțat din bugetul Serbiei cu asistență financiară din partea guvernului grec, în cadrul Planului grec pentru reconstrucția economică a Balcanilor."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Aktor",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened in 2013 (year only in the source). Length 6 km per JP Putevi Srbije (Bilten 13–15); Serbian Wikipedia gives 8 km.",
+        "ro": "Deschis în 2013 (sursa indică doar anul). Lungime de 6 km potrivit JP Putevi Srbije (Bilten 13–15); Wikipedia sârbă indică 8 km."
+      },
+      "sourceRefs": [
+        "sr-wikipedia-a1",
+        "bilten-13-15",
+        "osm-a1"
+      ],
+      "geometryRef": "donji-neradovac-srpska-kuca"
+    },
+    {
+      "id": "srpska-kuca-levosoje",
+      "name": {
+        "en": "Srpska Kuća – Levosoje",
+        "ro": "Srpska Kuća – Levosoje"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2018-09"
+      },
+      "lengthKm": 10,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Financed from the Serbian budget (Bilten 13–15).",
+            "ro": "Finanțat din bugetul Serbiei (Bilten 13–15)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Full profile opened in September 2018, including the Bujanovac 1 interchange. Bilten 22–23 gives the day, 19 September, without a year; the year follows from the issue (it reports an event of 7 December 2018 as past), and Serbian Wikipedia has the section opened at the end of 2018. Srpska Kuća is the Bujanovac North interchange.",
+        "ro": "Profil complet deschis în septembrie 2018, inclusiv nodul Bujanovac 1. Bilten 22–23 indică ziua, 19 septembrie, fără an; anul rezultă din număr (raportează ca trecut un eveniment din 7 decembrie 2018), iar Wikipedia sârbă datează deschiderea sectorului la sfârșitul lui 2018. Srpska Kuća este nodul Bujanovac Nord."
+      },
+      "sourceRefs": [
+        "bilten-22-23",
+        "sr-wikipedia-a1",
+        "bilten-13-15",
+        "osm-a1"
+      ],
+      "geometryRef": "srpska-kuca-levosoje"
+    },
+    {
+      "id": "levosoje-presevo-granica",
+      "name": {
+        "en": "Levosoje – Preševo (border)",
+        "ro": "Levosoje – Preševo (frontieră)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009"
+      },
+      "lengthKm": 21,
+      "note": {
+        "en": "Built along the old trunk road. According to Serbian Wikipedia the first carriageway opened in 2009 and the second in 2013, and the section is 21.5 km; English Wikipedia gives 2013 for the section. The date here is the first carriageway. The length is the sum of the two bulletin sections Levosoje–Bukurevac (10.3 km) and Bukurevac–North Macedonia border (10.7 km).",
+        "ro": "Construit de-a lungul vechiului drum magistral. Potrivit Wikipedia sârbă, prima carosabil a fost deschisă în 2009 și a doua în 2013, iar sectorul are 21,5 km; Wikipedia engleză indică 2013 pentru sector. Data de aici este cea a primului carosabil. Lungimea este suma celor două sectoare din buletin: Levosoje–Bukurevac (10,3 km) și Bukurevac–frontiera cu Macedonia de Nord (10,7 km)."
+      },
+      "sourceRefs": [
+        "sr-wikipedia-a1",
+        "bilten-13-15",
+        "osm-a1"
+      ],
+      "geometryRef": "levosoje-presevo-granica"
+    }
+  ],
+  "corridors": [
+    "pan-european-x"
+  ],
+  "operator": "rs-putevi-srbije",
+  "sources": [
+    {
+      "id": "sr-wikipedia-a1",
+      "title": "Wikipedia (sr): Autoput A1 (Srbija), section Autoput Niš–Preševo",
+      "url": "https://sr.wikipedia.org/sr-el/Autoput_A1_(Srbija)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "en-wikipedia-a1",
+      "title": "Wikipedia (en): A1 motorway (Serbia), southern section",
+      "url": "https://en.wikipedia.org/wiki/A1_motorway_(Serbia)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "bilten-13-15",
+      "title": "JP Putevi Srbije: Bilten 13–15 (Grabovnica–Grdelica opened 11.04.2016; Donji Neradovac–Vladičin Han, 26.2 km, opened 28.11.2016; section lengths)",
+      "url": "https://www.putevi-srbije.rs/images/pdf/publikacije/bilten13-14-15.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "bilten-22-23",
+      "title": "JP Putevi Srbije: Bilten 22–23 (Srpska Kuća–Levosoje full profile opened on 19 September, year not stated in the article)",
+      "url": "https://www.putevi-srbije.rs/images/pdf/publikacije/bilten22-23.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "mgsi-grdelicka-klisura",
+      "title": "Ministry of Construction, Transport and Infrastructure: Koridor 10 – Grdelička klisura (six works contracts, contractors and values)",
+      "url": "https://www.mgsi.gov.rs/lat/infrastrukturna-gradilista/koridor-10-grdelicka-klisura",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rts-grdelicka-klisura",
+      "title": "RTS: Koridor 10 – kako je savladana Grdelička klisura (12.05.2019; works began October 2013)",
+      "url": "https://www.rts.rs/lat/vesti/drustvo/3518244/koridor-10--kako-je-savladana-grdelicka-klisura.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "b92-grdelica-2019",
+      "title": "B92 / Tanjug: Autoput kroz Grdelicu – simbol savladavanja prepreka (18.05.2019, hours before traffic opened)",
+      "url": "https://www.b92.net/biz/vesti/srbija.php?yyyy=2019&mm=05&dd=18&nav_id=1543934",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-a1",
+      "title": "OpenStreetMap contributors: motorway ways with ref A1 (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

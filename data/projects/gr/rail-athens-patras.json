@@ -1,0 +1,401 @@
+{
+  "id": "gr-rail-athens-patras",
+  "country": "gr",
+  "category": "railway",
+  "name": {
+    "en": "Athens Airport – SKA – Kiato – Patras railway",
+    "ro": "Calea ferată Aeroportul Atena – SKA – Kiato – Patras"
+  },
+  "description": {
+    "en": "New standard-gauge double track from Athens Airport through the Acharnes Railway Centre (SKA) and Corinth to Kiato and on along the Gulf of Corinth to Aigio and Patras, the Patras end of the PATHE axis. ERGOSE manages the works. Airport – SKA (about 32 km) was completed in 2004 and SKA – Kiato (about 105 km) was handed over in 2005 and 2007 and electrified in December 2010. Kiato – Rododafni (Aigio), about 71 km, was handed over on 22 June 2020 and runs on diesel traction while its electrification contract is in progress. West of Rododafni the infrastructure of the Panagopoula twin tunnel section was completed in 2022 and track, signalling and electrification are being installed; the Psathopyrgos – Patras (Bozaitika) infrastructure has been under construction since 2017. The Treis Gefyres – SKA stretch is recorded in the Athens – Thessaloniki project. Rio – Patras New Port is at study stage and is not a lot here. Electrification and systems contracts on track measured by another lot are described in that lot's note and not counted again.",
+    "ro": "Linie dublă nouă, cu ecartament standard, de la Aeroportul Atena prin Centrul Feroviar Acharnes (SKA) și Corint până la Kiato și mai departe pe malul Golfului Corint spre Aigio și Patras, capătul dinspre Patras al axei PATHE. Lucrările sunt gestionate de ERGOSE. Tronsonul Aeroport – SKA (circa 32 km) a fost finalizat în 2004, iar SKA – Kiato (circa 105 km) a fost predat în 2005 și 2007 și electrificat în decembrie 2010. Kiato – Rododafni (Aigio), de circa 71 km, a fost predat la 22 iunie 2020 și circulă cu tracțiune diesel, în timp ce contractul de electrificare este în desfășurare. La vest de Rododafni, infrastructura secțiunii cu tunelul geamăn Panagopoula a fost finalizată în 2022, iar calea, semnalizarea și electrificarea sunt în curs de instalare; infrastructura Psathopyrgos – Patras (Bozaitika) este în construcție din 2017. Tronsonul Treis Gefyres – SKA este înregistrat în proiectul Atena – Salonic. Rio – Noul Port Patras este în faza de studiu și nu este lot aici. Contractele de electrificare și sisteme pe linii măsurate de alt lot sunt descrise în nota acelui lot și nu sunt numărate a doua oară."
+  },
+  "operator": "gr-ergose",
+  "lots": [
+    {
+      "id": "airport-ska",
+      "name": {
+        "en": "Athens Airport – SKA",
+        "ro": "Aeroportul Atena – SKA"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2002",
+        "opened": "2004-07-30"
+      },
+      "lengthKm": 32,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 2,
+        "stationCount": 9
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2002",
+          "sourceRef": "ergose-airport-ska"
+        },
+        {
+          "kind": "opened",
+          "date": "2004-07-30",
+          "note": {
+            "en": "Completed 14 days before the opening ceremony of the Athens Olympic Games.",
+            "ro": "Finalizat cu 14 zile înainte de ceremonia de deschidere a Jocurilor Olimpice de la Atena."
+          },
+          "sourceRef": "el-wikipedia-athens-patras"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Operational Programme Railways, Airports and Urban Transport 2000–2006 (Third Community Support Framework)",
+            "ro": "Programul Operațional Căi Ferate, Aeroporturi și Transport Urban 2000–2006 (Al treilea cadru comunitar de sprijin)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "National resources",
+            "ro": "Resurse naționale"
+          }
+        }
+      ],
+      "note": {
+        "en": "New double track from the Acharnes Railway Centre (SKA) to Athens Airport at Spata, between the two carriageways of the Attiki Odos motorway, with signalling, remote control and electrification, as part of the Athens suburban railway. ERGOSE gives 32 km, funding of EUR 240 million from the Third Community Support Framework and EUR 60 million from national resources (no total cost is stated), design speed 140 km/h to Doukissis Plakentias and 160 km/h beyond, and nine stops (Metamorfosi, Irakleio, Nerantziotissa, Kifisias, Pentelis, Doukissis Plakentias, Pallini, Kantza, Koropi); Greek Wikipedia gives 33 km and dates the start of work to January 2002. The Doukissis Plakentias – Airport stretch is also used by Metro Line 3, a line not recorded in this dataset.",
+        "ro": "Linie dublă nouă de la Centrul Feroviar Acharnes (SKA) la Aeroportul Atena de la Spata, între cele două benzi ale autostrăzii Attiki Odos, cu semnalizare, telecomandă și electrificare, ca parte a trenului suburban al Atenei. ERGOSE indică 32 km, finanțare de 240 milioane euro din Al treilea cadru comunitar de sprijin și 60 milioane euro din resurse naționale (costul total nu este indicat), viteză de proiectare 140 km/h până la Doukissis Plakentias și 160 km/h dincolo de aceasta, și nouă halte (Metamorfosi, Irakleio, Nerantziotissa, Kifisias, Pentelis, Doukissis Plakentias, Pallini, Kantza, Koropi); Wikipedia în greacă indică 33 km și datează începutul lucrărilor în ianuarie 2002. Tronsonul Doukissis Plakentias – Aeroport este folosit și de Linia 3 de metrou, o linie care nu este înregistrată în acest set de date."
+      },
+      "sourceRefs": [
+        "ergose-airport-ska",
+        "el-wikipedia-athens-patras",
+        "en-wikipedia-athens-patras"
+      ],
+      "geometryRef": "airport-ska"
+    },
+    {
+      "id": "ska-kiato",
+      "name": {
+        "en": "SKA – Kiato",
+        "ro": "SKA – Kiato"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1998",
+        "opened": "2007"
+      },
+      "lengthKm": 105,
+      "cost": {
+        "estimated": {
+          "amount": 620,
+          "currency": "EUR",
+          "note": "Project cost as given by ERGOSE on a page that lists the project as completed; the page does not say whether this is a budget or the final cost. Price year and VAT treatment not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 8.26,
+        "bridgeCount": 21,
+        "maxSpeedKmh": 200,
+        "electrified": true,
+        "tracks": 2,
+        "stationCount": 11
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1998",
+          "sourceRef": "ergose-ska-kiato"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2005",
+          "note": {
+            "en": "SKA – Corinth handed over.",
+            "ro": "Tronsonul SKA – Corint predat."
+          },
+          "sourceRef": "ergose-ska-kiato"
+        },
+        {
+          "kind": "opened",
+          "date": "2007",
+          "note": {
+            "en": "Corinth – Kiato handed over; in full operation with electric traction from December 2010.",
+            "ro": "Tronsonul Corint – Kiato predat; în funcțiune completă cu tracțiune electrică din decembrie 2010."
+          },
+          "sourceRef": "ergose-ska-kiato"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 1994–1996 and 2000–2006 (infrastructure, track, signalling); OP Railways, Airports and Urban Transport 2000–2006 and OP Accessibility Improvement 2007–2013 (electrification); Regional Operational Programme Attica 2007–2013 (Zefyri stop)",
+            "ro": "Fondul de coeziune 1994–1996 și 2000–2006 (infrastructură, cale, semnalizare); PO Căi Ferate, Aeroporturi și Transport Urban 2000–2006 și PO Îmbunătățirea Accesibilității 2007–2013 (electrificare); Programul Operațional Regional Attica 2007–2013 (halta Zefyri)"
+          }
+        }
+      ],
+      "note": {
+        "en": "New double track from the Acharnes Railway Centre (SKA) to the new Kiato station, with ETCS signalling, telecommunications and electrification. ERGOSE lists 5 tunnels of about 8,264 m in total, 4 cut-and-cover sections of about 1,401 m, 21 railway bridges, 60 grade-separated crossings, 8 stations (Ano Liosia, Magoula, Nea Peramos, Megara, Kineta, Agioi Theodoroi, Corinth, Kiato) and 3 stops (Thriasio, Zevgolatio, and the new Zefyri stop, handed over to OSE in July 2017). Construction began in 1998, SKA – Corinth was handed over in 2005 and Corinth – Kiato in 2007; the line was in full operation with electric traction from December 2010. ERGOSE gives a design speed of 200 km/h beyond Thriasio and a travel time of 60 minutes, down from 110.",
+        "ro": "Linie dublă nouă de la Centrul Feroviar Acharnes (SKA) la noua stație Kiato, cu semnalizare ETCS, telecomunicații și electrificare. ERGOSE indică 5 tuneluri cu o lungime totală de circa 8.264 m, 4 secțiuni cut-and-cover de circa 1.401 m, 21 de poduri feroviare, 60 de pasaje denivelate, 8 stații (Ano Liosia, Magoula, Nea Peramos, Megara, Kineta, Agioi Theodoroi, Corint, Kiato) și 3 halte (Thriasio, Zevgolatio și noua haltă Zefyri, predată OSE în iulie 2017). Construcția a început în 1998, SKA – Corint a fost predat în 2005 și Corint – Kiato în 2007; linia a funcționat complet cu tracțiune electrică din decembrie 2010. ERGOSE indică o viteză de proiectare de 200 km/h după Thriasio și un timp de parcurs de 60 de minute, față de 110."
+      },
+      "sourceRefs": [
+        "ergose-ska-kiato",
+        "el-wikipedia-athens-patras",
+        "en-wikipedia-athens-patras"
+      ],
+      "geometryRef": "ska-kiato"
+    },
+    {
+      "id": "kiato-rododafni",
+      "name": {
+        "en": "Kiato – Rododafni (Aigio)",
+        "ro": "Kiato – Rododafni (Aigio)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006",
+        "opened": "2020-06-22"
+      },
+      "lengthKm": 71,
+      "cost": {
+        "estimated": {
+          "amount": 920,
+          "currency": "EUR",
+          "note": "Project cost as given by ERGOSE, whose page still lists the project as under construction with completion in 2019; price year and VAT treatment not stated. Excludes the separate electrification contract."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 11,
+        "bridgeCount": 18,
+        "maxSpeedKmh": 200,
+        "electrified": false,
+        "tracks": 2,
+        "stationCount": 9
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006",
+          "sourceRef": "ergose-kiato-rododafni"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-06-22",
+          "note": {
+            "en": "Handed over; trains run on diesel traction and change at Kiato.",
+            "ro": "Predat; trenurile circulă cu tracțiune diesel și se face schimb la Kiato."
+          },
+          "sourceRef": "el-wikipedia-athens-patras"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Kiato – Diakopto: Cohesion Fund 2000–2006 and national resources. Diakopto – Rododafni: ESPA (NSRF) 2007–2013 and 2014–2020 and national resources",
+            "ro": "Kiato – Diakopto: Fondul de coeziune 2000–2006 și resurse naționale. Diakopto – Rododafni: ESPA (CSN) 2007–2013 și 2014–2020 și resurse naționale"
+          }
+        }
+      ],
+      "note": {
+        "en": "New double track from the new Kiato station to Rododafni, beyond Aigio station, with ETCS level 1 signalling and telecommunications. ERGOSE lists 6 tunnels of about 11,000 m in total, 8 escape tunnels of 2,150 m, 13 cut-and-cover sections of 1,710 m, 18 railway bridges, 3 stations (Xylokastro, Akrata, Aigio) and 6 stops (Diminio, Lykoporia, Lygia, Platanos, Diakopto, Elikis); design speed 200 km/h for Kiato – Lykoporia and 150 km/h for Lykoporia – Rododafni. Construction began in 2006 and ERGOSE planned completion for 2019; Greek Wikipedia gives handover on 22 June 2020, and the Diminio stop opened in September 2020. Electrification of the 70.6 km is a separate ERGOSE contract (no. 1511), signed on 6 July 2022 with a TERNA – Mytilineos joint venture for EUR 54.82 million excluding VAT, with two traction substations at Xylokastro and Aigio; ERGOSE planned 2022–2025 and Greek Wikipedia gives a contract deadline extended on 11 December 2025 to 28 December 2026. It runs on track this lot already measures, so it is not a lot of its own.",
+        "ro": "Linie dublă nouă de la noua stație Kiato la Rododafni, dincolo de stația Aigio, cu semnalizare ETCS nivel 1 și telecomunicații. ERGOSE indică 6 tuneluri cu o lungime totală de circa 11.000 m, 8 tuneluri de evacuare de 2.150 m, 13 secțiuni cut-and-cover de 1.710 m, 18 poduri feroviare, 3 stații (Xylokastro, Akrata, Aigio) și 6 halte (Diminio, Lykoporia, Lygia, Platanos, Diakopto, Elikis); viteză de proiectare 200 km/h pe Kiato – Lykoporia și 150 km/h pe Lykoporia – Rododafni. Construcția a început în 2006, iar ERGOSE a planificat finalizarea în 2019; Wikipedia în greacă indică predarea la 22 iunie 2020, iar halta Diminio a fost deschisă în septembrie 2020. Electrificarea celor 70,6 km este un contract ERGOSE separat (nr. 1511), semnat la 6 iulie 2022 cu o asociere TERNA – Mytilineos pentru 54,82 milioane euro fără TVA, cu două substații de tracțiune la Xylokastro și Aigio; ERGOSE a planificat 2022–2025, iar Wikipedia în greacă indică un termen contractual prelungit la 11 decembrie 2025 până la 28 decembrie 2026. Se execută pe linia pe care acest lot o măsoară deja, deci nu este lot separat."
+      },
+      "sourceRefs": [
+        "ergose-kiato-rododafni",
+        "ergose-kiato-rododafni-electrification",
+        "ergose-contracts-register",
+        "el-wikipedia-athens-patras",
+        "en-wikipedia-athens-patras"
+      ],
+      "geometryRef": "kiato-rododafni"
+    },
+    {
+      "id": "rododafni-psathopyrgos",
+      "name": {
+        "en": "Rododafni – Psathopyrgos (Panagopoula tunnel)",
+        "ro": "Rododafni – Psathopyrgos (tunelul Panagopoula)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2013"
+      },
+      "lengthKm": 21.5,
+      "cost": {
+        "estimated": {
+          "amount": 315,
+          "currency": "EUR",
+          "note": "Project cost as given by ERGOSE on a page that lists the infrastructure contract as completed; the page does not say whether this is a budget or the final cost. Excludes track, signalling and electrification, which are in contract 1510. Price year and VAT treatment not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 4.8,
+        "bridgeCount": 3,
+        "maxSpeedKmh": 150,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2013",
+          "sourceRef": "ergose-rododafni-psathopyrgos"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility 2014–2020 from 1 January 2014; national resources before",
+            "ro": "Mecanismul pentru Interconectarea Europei 2014–2020 din 1 ianuarie 2014; resurse naționale anterior"
+          }
+        }
+      ],
+      "note": {
+        "en": "Infrastructure of the new double track from chainage km 91+500 to km 113+000 between Rododafni and Psathopyrgos, including the Panagopoula twin tunnel (two bores of about 4,800 m with cut-and-cover ends, cross-passages every 500 m and an intermediate access tunnel of about 500 m), 3 railway bridges and 27 grade-separated crossings. ERGOSE lists the infrastructure contract as completed in 2022 for EUR 315 million. The line is not yet in service: track, signalling, electrification and stations over 28.8 km from Rododafni to the cut-and-cover after the new Rio stop (this lot and the first part of Psathopyrgos – Patras) are in ERGOSE contract 1510, signed on 22 November 2022 with a TERNA – Mytilineos joint venture for EUR 125.76 million excluding VAT, planned for 2022–2025. Greek Wikipedia gives a contract deadline extended from 22 November 2025 to 1 December 2026 and estimates that the line will reach only Psathopyrgos by then; no opening date is recorded for this lot. The contract value is not recorded as this lot's cost because it also covers part of the next lot.",
+        "ro": "Infrastructura noii linii duble de la km 91+500 la km 113+000 între Rododafni și Psathopyrgos, inclusiv tunelul geamăn Panagopoula (două tuburi de circa 4.800 m cu capete cut-and-cover, galerii de legătură la fiecare 500 m și un tunel de acces intermediar de circa 500 m), 3 poduri feroviare și 27 de pasaje denivelate. ERGOSE indică contractul de infrastructură ca finalizat în 2022, pentru 315 milioane euro. Linia nu este încă în exploatare: calea, semnalizarea, electrificarea și stațiile pe 28,8 km de la Rododafni până la cut-and-cover după noua haltă Rio (acest lot și prima parte din Psathopyrgos – Patras) fac obiectul contractului ERGOSE 1510, semnat la 22 noiembrie 2022 cu o asociere TERNA – Mytilineos pentru 125,76 milioane euro fără TVA, planificat pentru 2022–2025. Wikipedia în greacă indică un termen contractual prelungit de la 22 noiembrie 2025 la 1 decembrie 2026 și estimează că până atunci linia va ajunge doar la Psathopyrgos; pentru acest lot nu este înregistrată nicio dată de deschidere. Valoarea contractului nu este înregistrată drept cost al acestui lot, deoarece acoperă și o parte din lotul următor."
+      },
+      "sourceRefs": [
+        "ergose-rododafni-psathopyrgos",
+        "ergose-rododafni-rio",
+        "ergose-contracts-register",
+        "el-wikipedia-athens-patras",
+        "en-wikipedia-athens-patras"
+      ],
+      "geometryRef": "rododafni-psathopyrgos"
+    },
+    {
+      "id": "psathopyrgos-patras",
+      "name": {
+        "en": "Psathopyrgos – Patras (Bozaitika)",
+        "ro": "Psathopyrgos – Patras (Bozaitika)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2017"
+      },
+      "lengthKm": 10.5,
+      "cost": {
+        "estimated": {
+          "amount": 117,
+          "currency": "EUR",
+          "note": "Estimated cost as given by ERGOSE for the infrastructure; price year and VAT treatment not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 4,
+        "maxSpeedKmh": 120,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2017",
+          "sourceRef": "ergose-psathopyrgos-patras"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility 2014–2020 and national resources",
+            "ro": "Mecanismul pentru Interconectarea Europei 2014–2020 și resurse naționale"
+          }
+        }
+      ],
+      "note": {
+        "en": "Infrastructure of the new double track from Psathopyrgos to the Bozaitika area near Patras: formation of about 10.5 km, 2 cut-and-cover sections of 1,018 m in total (Agios Vasileios 625.97 m and Rio 392.20 m), 10 grade-separated crossings and 4 railway bridges of 60 m in total, design speed 100–120 km/h. ERGOSE gives the start of construction as 2017, planned completion in 2020 and an estimated cost of EUR 117 million, and its page lists the work as under construction. Greek Wikipedia states that the infrastructure from Psathopyrgos to Rio was started in 2017 but never completed and expects delivery of this stretch in 2028 (statement without a citation). Track, signalling and electrification of the first part, up to the cut-and-cover after the Rio stop, are in contract 1510 (see the previous lot). The drawn line measures only the part carried in OpenStreetMap.",
+        "ro": "Infrastructura noii linii duble de la Psathopyrgos la zona Bozaitika de lângă Patras: platformă de circa 10,5 km, 2 secțiuni cut-and-cover cu o lungime totală de 1.018 m (Agios Vasileios 625,97 m și Rio 392,20 m), 10 pasaje denivelate și 4 poduri feroviare cu o lungime totală de 60 m, viteză de proiectare 100–120 km/h. ERGOSE indică începerea construcției în 2017, finalizarea planificată în 2020 și un cost estimat de 117 milioane euro, iar pagina sa arată lucrarea ca fiind în construcție. Wikipedia în greacă afirmă că infrastructura de la Psathopyrgos la Rio a fost începută în 2017, dar nu a fost niciodată finalizată, și estimează predarea acestui tronson în 2028 (afirmație fără citare). Calea, semnalizarea și electrificarea primei părți, până la cut-and-cover după halta Rio, fac obiectul contractului 1510 (vezi lotul anterior). Linia desenată măsoară doar partea existentă în OpenStreetMap."
+      },
+      "sourceRefs": [
+        "ergose-psathopyrgos-patras",
+        "ergose-rododafni-rio",
+        "el-wikipedia-athens-patras"
+      ],
+      "geometryRef": "psathopyrgos-patras"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ergose-airport-ska",
+      "title": "ERGOSE: ΣΚΑ – Αεροδρόμιο (project page)",
+      "url": "https://www.ergose.gr/project/ska-aerodromio/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ergose-ska-kiato",
+      "title": "ERGOSE: ΣΚΑ – Κιάτο (project page)",
+      "url": "https://www.ergose.gr/project/ska_kiato/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ergose-kiato-rododafni",
+      "title": "ERGOSE: Κιάτο – Ροδοδάφνη (Αίγιο) (Υποδομή, Επιδομή, Σηματοδότηση, Σταθμοί) (project page)",
+      "url": "https://www.ergose.gr/project/kiato_rododafni_aigio_ypodomi_epidomi_simatodotisi_stathmoi/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ergose-kiato-rododafni-electrification",
+      "title": "ERGOSE: Ηλεκτροκίνηση της νέας διπλής σιδηροδρομικής γραμμής στο τμήμα Κιάτο – Ροδοδάφνη (project page)",
+      "url": "https://www.ergose.gr/project/kiato_rododafni_ilektrokinisi/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ergose-rododafni-psathopyrgos",
+      "title": "ERGOSE: Ροδοδάφνη (Αίγιο) – Ψαθόπυργος (Σήραγγα Παναγοπούλας) (Υποδομή) (project page)",
+      "url": "https://www.ergose.gr/project/rododafni_aigio_psathopyrgos_siragga_panagopoulas_ypodomi/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ergose-rododafni-rio",
+      "title": "ERGOSE: Ροδοδάφνη – Ρίο (Επιδομή, Σηματοδότηση, Σταθμοί) (project page)",
+      "url": "https://www.ergose.gr/project/rododafni_patra_periohi_mpozaitika/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ergose-psathopyrgos-patras",
+      "title": "ERGOSE: Ψαθόπυργος – Πάτρα (περιοχή Μποζαΐτικα) (Υποδομή) (project page)",
+      "url": "https://www.ergose.gr/project/psathopyrgos_patra_periohi-mpozaitika_ypodomi/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ergose-contracts-register",
+      "title": "ERGOSE: Συμβάσεις Έργων (contracts register, contracts 1510 and 1511)",
+      "url": "https://www.ergose.gr/symvaseis/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "el-wikipedia-athens-patras",
+      "title": "Wikipedia (Greek): Σιδηροδρομική γραμμή Αεροδρομίου Αθηνών - Πάτρας",
+      "url": "https://el.wikipedia.org/wiki/%CE%A3%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CE%B4%CF%81%CE%BF%CE%BC%CE%B9%CE%BA%CE%AE_%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%AE_%CE%91%CE%B5%CF%81%CE%BF%CE%B4%CF%81%CE%BF%CE%BC%CE%AF%CE%BF%CF%85_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_-_%CE%A0%CE%AC%CF%84%CF%81%CE%B1%CF%82",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "en-wikipedia-athens-patras",
+      "title": "Wikipedia: Athens Airport–Patras railway",
+      "url": "https://en.wikipedia.org/wiki/Athens_Airport%E2%80%93Patras_railway",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

@@ -7,8 +7,8 @@
     "ro": "Autostrada A2 Hemus"
   },
   "description": {
-    "en": "Motorway running 418 km from Sofia to the Black Sea port of Varna via Shumen, crossing the Balkan Mountains and carrying European routes E70, E83 and E772. Work began on 4 October 1974 and the first section opened in 1999. As of December 2025, 206 km are open in two disconnected stretches, Sofia to Ugarchin (approximately 103 km) and Buhovtsi to Varna (approximately 108 km); the roughly 208 km between Ugarchin and Buhovtsi are under construction or still in planning. The motorway is managed by the Bulgarian Roads Agency, successor to NCSIP.",
-    "ro": "Autostradă de 418 km de la Sofia la portul Varna de la Marea Neagră, prin Shumen, care traversează Munții Balcani și preia drumurile europene E70, E83 și E772. Lucrările au început pe 4 octombrie 1974, iar primul tronson s-a deschis în 1999. În decembrie 2025, 206 km sunt deschiși în două tronsoane neconectate, de la Sofia la Ugarchin (aproximativ 103 km) și de la Buhovtsi la Varna (aproximativ 108 km); cei aproximativ 208 km dintre Ugarchin și Buhovtsi sunt în construcție sau încă în planificare. Autostrada este administrată de Agenția Bulgară de Drumuri, succesoarea NCSIP."
+    "en": "Motorway running 418 km from Sofia to the Black Sea port of Varna via Shumen, crossing the Balkan Mountains and carrying European routes E70, E83 and E772. Work began on 4 October 1974 and the first section, Varna – Devnya, opened in 1979. As of December 2025, 206 km are open in two disconnected stretches, Sofia to Ugarchin (approximately 103 km) and Buhovtsi to Varna (approximately 108 km); the roughly 208 km between Ugarchin and Buhovtsi are under construction or still in planning. The motorway is managed by the Bulgarian Roads Agency, successor to NCSIP.",
+    "ro": "Autostradă de 418 km de la Sofia la portul Varna de la Marea Neagră, prin Shumen, care traversează Munții Balcani și preia drumurile europene E70, E83 și E772. Lucrările au început pe 4 octombrie 1974, iar primul tronson, Varna – Devnya, s-a deschis în 1979. În decembrie 2025, 206 km sunt deschiși în două tronsoane neconectate, de la Sofia la Ugarchin (aproximativ 103 km) și de la Buhovtsi la Varna (aproximativ 108 km); cei aproximativ 208 km dintre Ugarchin și Buhovtsi sunt în construcție sau încă în planificare. Autostrada este administrată de Agenția Bulgară de Drumuri, succesoarea NCSIP."
   },
   "lots": [
     {
@@ -112,12 +112,16 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "1984",
-        "opened": "1999-12-05"
+        "opened": "1986"
       },
       "lengthKm": 13.3,
+      "note": {
+        "en": "Yana – Pravets (44.4 km in total) opened in 1986 according to Bulgarian Wikipedia. The 5 December 1999 opening was the Pravets bypass, in Pravets – Yablanitsa.",
+        "ro": "Yana – Pravets (44,4 km în total) s-a deschis în 1986, conform Wikipedia în bulgară. Deschiderea din 5 decembrie 1999 a fost ocolitoarea Pravets, în tronsonul Pravets – Yablanitsa."
+      },
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "wikipedia-bg-hemus-motorway"
       ],
       "geometryRef": "yana-potop"
     },
@@ -129,8 +133,7 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "1984",
-        "opened": "1999-12-05"
+        "opened": "1986"
       },
       "lengthKm": 25.3,
       "contractors": [
@@ -140,8 +143,8 @@
         }
       ],
       "note": {
-        "en": "Partial contractor list. Мостстрой built the Bebresh viaduct (km 38, completed 1985).",
-        "ro": "Listă parțială de constructori. Мостстрой a construit viaductul Bebresh (km 38, finalizat în 1985)."
+        "en": "Partial contractor list. Мостстрой built the Bebresh viaduct (km 38, completed 1985). Yana – Pravets (44.4 km in total) opened in 1986 according to Bulgarian Wikipedia. The 5 December 1999 opening was the Pravets bypass, in Pravets – Yablanitsa.",
+        "ro": "Listă parțială de constructori. Мостстрой a construit viaductul Bebresh (km 38, finalizat în 1985). Yana – Pravets (44,4 km în total) s-a deschis în 1986, conform Wikipedia în bulgară. Deschiderea din 5 decembrie 1999 a fost ocolitoarea Pravets, în tronsonul Pravets – Yablanitsa."
       },
       "sourceRefs": [
         "wikipedia-hemus-motorway",
@@ -158,12 +161,16 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "1984",
-        "opened": "1999-12-05"
+        "opened": "1986"
       },
       "lengthKm": 5.7,
+      "note": {
+        "en": "Yana – Pravets (44.4 km in total) opened in 1986 according to Bulgarian Wikipedia. The 5 December 1999 opening was the Pravets bypass, in Pravets – Yablanitsa.",
+        "ro": "Yana – Pravets (44,4 km în total) s-a deschis în 1986, conform Wikipedia în bulgară. Deschiderea din 5 decembrie 1999 a fost ocolitoarea Pravets, în tronsonul Pravets – Yablanitsa."
+      },
       "sourceRefs": [
-        "wikipedia-hemus-motorway"
+        "wikipedia-hemus-motorway",
+        "wikipedia-bg-hemus-motorway"
       ],
       "geometryRef": "botevgrad-pravets"
     },
@@ -366,6 +373,171 @@
       "geometryRef": "dermantsi-ugarchin"
     },
     {
+      "id": "dermantsi-kalenik",
+      "name": {
+        "en": "Dermantsi – Kalenik",
+        "ro": "Dermantsi – Kalenik"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2018-12-20"
+      },
+      "lengthKm": 19.1,
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Lot 2, km 103+150–122+260. Direct award to Avtomagistrali EAD under agreement Д-122 of 20 December 2018, covering km 87+800–222+000. Building permit РС-69 of 27 August 2020. Marked under construction on magistralahemus.bg, which gives 2028 as the expected opening.",
+        "ro": "Lotul 2, km 103+150–122+260. Atribuire directă către Avtomagistrali EAD prin acordul Д-122 din 20 decembrie 2018, pentru km 87+800–222+000. Autorizația de construire РС-69 din 27 august 2020. Marcat în construcție pe magistralahemus.bg, care indică 2028 drept deschidere estimată."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway",
+        "magistralahemus-progress",
+        "api-hemus-km87-222"
+      ],
+      "geometryRef": "dermantsi-kalenik"
+    },
+    {
+      "id": "kalenik-pleven",
+      "name": {
+        "en": "Kalenik – Pleven",
+        "ro": "Kalenik – Pleven"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2018-12-20"
+      },
+      "lengthKm": 17.1,
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Lot 3, km 122+260–139+340. Direct award to Avtomagistrali EAD under agreement Д-122 of 20 December 2018, covering km 87+800–222+000. Building permits РС-31 of 17 April 2019 and РС-30 of 1 June 2020. Marked under construction on magistralahemus.bg, which gives 2028 as the expected opening.",
+        "ro": "Lotul 3, km 122+260–139+340. Atribuire directă către Avtomagistrali EAD prin acordul Д-122 din 20 decembrie 2018, pentru km 87+800–222+000. Autorizațiile de construire РС-31 din 17 aprilie 2019 și РС-30 din 1 iunie 2020. Marcat în construcție pe magistralahemus.bg, care indică 2028 drept deschidere estimată."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway",
+        "magistralahemus-progress",
+        "api-hemus-km87-222"
+      ],
+      "geometryRef": "kalenik-pleven"
+    },
+    {
+      "id": "pleven-letnitsa",
+      "name": {
+        "en": "Pleven – Letnitsa",
+        "ro": "Pleven – Letnitsa"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2018-12-20"
+      },
+      "lengthKm": 28.2,
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Lot 4, km 139+340–167+572. Direct award to Avtomagistrali EAD under agreement Д-122 of 20 December 2018, covering km 87+800–222+000. Building permits РС-111 of 23 December 2025 (km 139+340–152+500) and РС-6 of 4 February 2025 (km 152+500–167+572). Marked under construction on magistralahemus.bg, which gives 2028 as the expected opening.",
+        "ro": "Lotul 4, km 139+340–167+572. Atribuire directă către Avtomagistrali EAD prin acordul Д-122 din 20 decembrie 2018, pentru km 87+800–222+000. Autorizațiile de construire РС-111 din 23 decembrie 2025 (km 139+340–152+500) și РС-6 din 4 februarie 2025 (km 152+500–167+572). Marcat în construcție pe magistralahemus.bg, care indică 2028 drept deschidere estimată."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway",
+        "magistralahemus-progress",
+        "api-hemus-km87-222"
+      ],
+      "geometryRef": "pleven-letnitsa"
+    },
+    {
+      "id": "letnitsa-pavlikeni",
+      "name": {
+        "en": "Letnitsa – Pavlikeni",
+        "ro": "Letnitsa – Pavlikeni"
+      },
+      "status": "planned",
+      "dates": {
+        "tenderAwarded": "2018-12-20"
+      },
+      "lengthKm": 23.2,
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Lot 5, km 167+572–190+771. Direct award to Avtomagistrali EAD under agreement Д-122 of 20 December 2018, covering km 87+800–222+000. Building permit РС-110 issued on 23 December 2025. magistralahemus.bg still shows the building-permit stage and gives 2028 as the expected opening.",
+        "ro": "Lotul 5, km 167+572–190+771. Atribuire directă către Avtomagistrali EAD prin acordul Д-122 din 20 decembrie 2018, pentru km 87+800–222+000. Autorizația de construire РС-110 emisă la 23 decembrie 2025. magistralahemus.bg indică încă etapa autorizației de construire și 2028 drept deschidere estimată."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway",
+        "magistralahemus-progress",
+        "api-hemus-km87-222"
+      ],
+      "geometryRef": "letnitsa-pavlikeni"
+    },
+    {
+      "id": "pavlikeni-polikraishte",
+      "name": {
+        "en": "Pavlikeni – Polikraishte",
+        "ro": "Pavlikeni – Polikraishte"
+      },
+      "status": "planned",
+      "dates": {},
+      "lengthKm": 32.7,
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Lot 6, km 190+771–223+426. Covered by the December 2018 direct award to Avtomagistrali EAD (km 87+800–222+000) and the 18 December 2019 direct contract for km 222+000–310+940. magistralahemus.bg shows the building-permit stage and gives 2028 as the expected opening. No permit is recorded.",
+        "ro": "Lotul 6, km 190+771–223+426. Acoperit de atribuirea directă din decembrie 2018 către Avtomagistrali EAD (km 87+800–222+000) și de contractul direct din 18 decembrie 2019 pentru km 222+000–310+940. magistralahemus.bg indică etapa autorizației de construire și 2028 drept deschidere estimată. Nicio autorizație nu este înregistrată."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway",
+        "magistralahemus-progress",
+        "api-hemus-km87-222"
+      ],
+      "geometryRef": "pavlikeni-polikraishte"
+    },
+    {
+      "id": "loznitsa-buhovtsi",
+      "name": {
+        "en": "Loznitsa – Buhovtsi",
+        "ro": "Loznitsa – Buhovtsi"
+      },
+      "status": "planned",
+      "dates": {
+        "tenderAwarded": "2019-12-18"
+      },
+      "lengthKm": 11.9,
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Lot 9, km 299+000–310+940. Direct contract with Avtomagistrali EAD of 18 December 2019 for km 222+000–310+940, value not disclosed. Building permit issued on 17 February 2026. magistralahemus.bg shows the building-permit stage and gives 2028 as the expected opening.",
+        "ro": "Lotul 9, km 299+000–310+940. Contract direct cu Avtomagistrali EAD din 18 decembrie 2019 pentru km 222+000–310+940, valoare nedezvăluită. Autorizația de construire emisă la 17 februarie 2026. magistralahemus.bg indică etapa autorizației de construire și 2028 drept deschidere estimată."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway",
+        "magistralahemus-progress"
+      ],
+      "geometryRef": "loznitsa-buhovtsi"
+    },
+    {
       "id": "belokopitovo-buhovtsi",
       "name": {
         "en": "Belokopitovo – Buhovtsi",
@@ -447,6 +619,109 @@
         "investor-hemus-belokopitovo-buhovtsi"
       ],
       "geometryRef": "belokopitovo-buhovtsi"
+    },
+    {
+      "id": "belokopitovo-panayot-volovo",
+      "name": {
+        "en": "Belokopitovo – Panayot Volovo",
+        "ro": "Belokopitovo – Panayot Volovo"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-08-29",
+        "opened": "2015-08-03"
+      },
+      "lengthKm": 4.898,
+      "note": {
+        "en": "Km 337+302–342+200, connecting road I-2 Ruse–Varna and road I-4 Koritna–Belokopitovo.",
+        "ro": "Km 337+302–342+200, cu legătură la drumurile I-2 Ruse–Varna și I-4 Koritna–Belokopitovo."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway"
+      ],
+      "geometryRef": "belokopitovo-panayot-volovo"
+    },
+    {
+      "id": "panayot-volovo-shumen",
+      "name": {
+        "en": "Panayot Volovo – Shumen",
+        "ro": "Panayot Volovo – Shumen"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-07",
+        "opened": "2013-07-25"
+      },
+      "lengthKm": 8,
+      "note": {
+        "en": "Section from the Makak quarter of Shumen to Panayot Volovo. Works began in July 2011 on 7.8 km valued at about 38 million leva, with a 14-month deadline.",
+        "ro": "Tronson de la cartierul Makak din Shumen până la Panayot Volovo. Lucrările au început în iulie 2011 pe 7,8 km, evaluați la circa 38 de milioane de leva, cu termen de 14 luni."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway"
+      ],
+      "geometryRef": "panayot-volovo-shumen"
+    },
+    {
+      "id": "shumen-kaspichan",
+      "name": {
+        "en": "Shumen – Kaspichan",
+        "ro": "Shumen – Kaspichan"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-12-30"
+      },
+      "lengthKm": 12.8,
+      "note": {
+        "en": "The section cost 77.6 million leva according to English Wikipedia; Bulgarian Wikipedia cites the government information service for 77.6 million leva invested.",
+        "ro": "Tronsonul a costat 77,6 milioane de leva conform Wikipedia în engleză; Wikipedia în bulgară citează serviciul de informare guvernamental pentru 77,6 milioane de leva investiți."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway",
+        "wikipedia-hemus-motorway"
+      ],
+      "geometryRef": "shumen-kaspichan"
+    },
+    {
+      "id": "devnya-mlada-gvardiya",
+      "name": {
+        "en": "Devnya – Mlada Gvardiya",
+        "ro": "Devnya – Mlada Gvardiya"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1983"
+      },
+      "lengthKm": 20.4,
+      "note": {
+        "en": "Begun in the 1970s. Opening year only; the source gives no month.",
+        "ro": "Început în anii 1970. Doar anul deschiderii; sursa nu indică luna."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway"
+      ],
+      "geometryRef": "devnya-mlada-gvardiya"
+    },
+    {
+      "id": "varna-devnya",
+      "name": {
+        "en": "Varna – Devnya",
+        "ro": "Varna – Devnya"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1979"
+      },
+      "lengthKm": 23.6,
+      "note": {
+        "en": "Opening year only; the source gives no month.",
+        "ro": "Doar anul deschiderii; sursa nu indică luna."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-hemus-motorway"
+      ],
+      "geometryRef": "varna-devnya"
     }
   ],
   "sources": [
@@ -560,6 +835,13 @@
       "url": "https://bg.wikipedia.org/wiki/%D0%A5%D0%B5%D0%BC%D1%83%D1%81_(%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B0)",
       "retrievedOn": "2026-10-01",
       "publisher": "Wikipedia"
+    },
+    {
+      "id": "magistralahemus-progress",
+      "title": "Магистрала Хемус: Напредък по лотове",
+      "url": "https://magistralahemus.bg/napredak/",
+      "retrievedOn": "2026-10-05",
+      "publisher": "magistralahemus.bg"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
