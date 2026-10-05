@@ -1,5 +1,5 @@
 {
-  "note": "Reference figures for the cities that anchor the map camera and give project costs a local denominator. gdpPerCapita.amount is a PER-PERSON figure in whole currency units, not in MILLIONS like cost.amount elsewhere in this repo. Population is the city proper as counted in the 2021 census round, taken from each country's own statistical institute; the reference dates differ (Romania censused on 1 December 2021, Bulgaria on 7 September 2021, Greece on 22 October 2021) because the censuses do, and none of the figures is a current estimate. GDP per capita is Eurostat's NUTS 3 figure in euro per inhabitant at current market prices for 2023, the latest year that is final for Bucharest and Sofia. 2024 is published but flagged provisional for Bucharest, and pairing a provisional year against a final one would compare the vintages rather than the cities. Greece cannot meet that rule: Eurostat flags every Greek NUTS 3 year it serves (2018 onwards) as provisional and has no 2024, so the Greek cities carry the same year, 2023, flagged provisional in their notes. The values are nominal euro, not PPS, so they are not adjusted for the large price-level differences between the countries and overstate the real gaps. A NUTS 3 region is not always the city proper: it is exactly the municipality for Bucharest but wider than the town for Sofia, Athens and Thessaloniki, so read each city's note before dividing anything by these numbers.",
+  "note": "Reference figures for the cities that anchor the map camera and give project costs a local denominator. gdpPerCapita.amount is a PER-PERSON figure in whole currency units, not in MILLIONS like cost.amount elsewhere in this repo. Population is the city proper as counted in the 2021 census round, taken from each country's own statistical institute; the reference dates differ (Romania censused on 1 December 2021, Bulgaria on 7 September 2021, Greece on 22 October 2021, Czechia on 26 March 2021) because the censuses do, and none of the figures is a current estimate. GDP per capita is Eurostat's NUTS 3 figure in euro per inhabitant at current market prices for 2023, the latest year that is final for Bucharest and Sofia. 2024 is published but flagged provisional for Bucharest, and pairing a provisional year against a final one would compare the vintages rather than the cities. The Czech census figures are the usual-resident counts from the Czech Statistical Office's open data. Greece cannot meet that rule: Eurostat flags every Greek NUTS 3 year it serves (2018 onwards) as provisional and has no 2024, so the Greek cities carry the same year, 2023, flagged provisional in their notes. The values are nominal euro, not PPS, so they are not adjusted for the large price-level differences between the countries and overstate the real gaps. A NUTS 3 region is not always the city proper: it is exactly the municipality for Bucharest and Prague but wider than the town for Sofia, Athens and Thessaloniki, so read each city's note before dividing anything by these numbers.",
   "cities": {
     "gr-athens": {
       "country": "gr",
@@ -14,7 +14,10 @@
         "currency": "EUR",
         "year": 2023
       },
-      "center": [23.7348, 37.9755],
+      "center": [
+        23.7348,
+        37.9755
+      ],
       "link": "https://www.cityofathens.gr/",
       "note": {
         "en": "Population is the Municipality of Athens (Dimos Athinaion), 643,452 permanent residents at the 2021 census, reference date 22 October 2021. GDP per capita is for NUTS 3 region EL303 Kentrikos Tomeas Athinon, the Central Athens regional unit: the municipality plus seven neighbouring ones, 1,002,212 people at the same census. The GDP figure is therefore spread over about 56% more people than the population field counts. Eurostat flags the 2023 value as provisional.",
@@ -48,7 +51,10 @@
         "currency": "EUR",
         "year": 2023
       },
-      "center": [22.9444, 40.6401],
+      "center": [
+        22.9444,
+        40.6401
+      ],
       "link": "https://thessaloniki.gr/",
       "note": {
         "en": "Population is the Municipality of Thessaloniki (Dimos Thessalonikis), 319,045 permanent residents at the 2021 census, reference date 22 October 2021. GDP per capita is for NUTS 3 region EL522 Thessaloniki, the whole regional unit, 1,092,919 people at the same census, rural districts included. The GDP figure is therefore spread over about 3.4 times as many people as the population field counts. Eurostat flags the 2023 value as provisional.",
@@ -82,7 +88,10 @@
         "currency": "EUR",
         "year": 2023
       },
-      "center": [26.1025, 44.4268],
+      "center": [
+        26.1025,
+        44.4268
+      ],
       "link": "https://www.pmb.ro/",
       "note": {
         "en": "Population is the city proper (Municipiul București, the six sectors) as counted in the definitive results of the 2021 census, reference date 1 December 2021. The Bucharest–Ilfov metropolitan region is much larger and is not what this number covers. GDP per capita is for NUTS 3 region RO321 Bucureşti, whose boundary is exactly the municipality, so the population and the GDP figure describe the same territory.",
@@ -116,7 +125,10 @@
         "currency": "EUR",
         "year": 2023
       },
-      "center": [23.3219, 42.6977],
+      "center": [
+        23.3219,
+        42.6977
+      ],
       "link": "https://www.sofia.bg/",
       "note": {
         "en": "Population is the town of Sofia itself (settlement code EKATTE 68134), 1,183,400 at the census of 7 September 2021, in the settlement breakdown revised on 21 November 2022. GDP per capita is for NUTS 3 region BG411 Sofia (stolitsa), which is Stolichna municipality: the town plus three smaller towns and 34 villages, 1,274,290 people at the same census. The GDP figure is therefore spread over about 8% more people than the population field counts, so unlike Bucharest the two are not a matched pair.",
@@ -137,6 +149,43 @@
         },
         {
           "title": "Eurostat: Gross domestic product (GDP) at current market prices by NUTS 3 region [nama_10r_3gdp], unit EUR_HAB, geo BG411 Sofia (stolitsa), 2023",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table"
+        }
+      ]
+    },
+    "cz-prague": {
+      "country": "cz",
+      "name": {
+        "en": "Prague",
+        "ro": "Praga"
+      },
+      "population": 1301432,
+      "populationDate": "2021-03",
+      "gdpPerCapita": {
+        "amount": 63500,
+        "currency": "EUR",
+        "year": 2023
+      },
+      "center": [
+        14.4208,
+        50.0875
+      ],
+      "link": "https://www.praha.eu/",
+      "note": {
+        "en": "Population is the capital city of Prague (Praha, municipality code 554782), 1,301,432 usual residents at the 2021 census, reference date 26 March 2021. GDP per capita is for NUTS 3 region CZ010 Hlavní město Praha, which is the same territory as the city: the Czech Statistical Office counts the same 1,301,432 for the region. The two figures are a matched pair. Eurostat flags no 2023 value as provisional.",
+        "ro": "Populația este a municipiului capitală Praga (Praha, cod de municipalitate 554782), 1.301.432 de locuitori cu reședința obișnuită la recensământul din 2021, cu data de referință 26 martie 2021. PIB-ul pe locuitor este pentru regiunea NUTS 3 CZ010 Hlavní město Praha, care coincide teritorial cu orașul: Oficiul Ceh de Statistică numără aceiași 1.301.432 de locuitori pentru regiune. Cele două cifre formează o pereche potrivită. Eurostat nu marchează valoarea pentru 2023 ca provizorie."
+      },
+      "sources": [
+        {
+          "title": "Czech Statistical Office: Census 2021 results, open data (index of published tables)",
+          "url": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data"
+        },
+        {
+          "title": "Czech Statistical Office: Census 2021 open data, sldb2021_pohlavi.csv, \"Počet obyvatel s obvyklým pobytem\" at 26 March 2021 (Praha: 1,301,432; Hlavní město Praha region: 1,301,432)",
+          "url": "https://csu.gov.cz/produkty/vysledky-scitani-2021-otevrena-data"
+        },
+        {
+          "title": "Eurostat: Gross domestic product (GDP) at current market prices by NUTS 3 region [nama_10r_3gdp], unit EUR_HAB, geo CZ010 Hlavní město Praha, 2023",
           "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table"
         }
       ]

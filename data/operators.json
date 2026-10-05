@@ -6,7 +6,9 @@
       "localName": "Compania Națională de Administrare a Infrastructurii Rutiere",
       "country": "ro",
       "role": "road_authority",
-      "aliases": ["CNADNR"],
+      "aliases": [
+        "CNADNR"
+      ],
       "note": {
         "en": "Renamed from CNADNR in 2016; awards and reports before that date appear under the old name."
       },
@@ -23,7 +25,9 @@
       "localName": "Compania Națională de Căi Ferate CFR",
       "country": "ro",
       "role": "rail_authority",
-      "aliases": ["CFR"],
+      "aliases": [
+        "CFR"
+      ],
       "sources": [
         {
           "title": "CFR",
@@ -49,7 +53,10 @@
       "localName": "Метрополитен ЕАД",
       "country": "bg",
       "role": "metro_operator",
-      "aliases": ["Metropolitan", "Metropoliten"],
+      "aliases": [
+        "Metropolitan",
+        "Metropoliten"
+      ],
       "sources": [
         {
           "title": "Metropoliten Sofia",
@@ -92,7 +99,11 @@
       "localName": "Υπουργείο Υποδομών και Μεταφορών",
       "country": "gr",
       "role": "road_authority",
-      "aliases": ["Ministry of Infrastructure", "YPEHODE", "ΥΠΕΧΩΔΕ"],
+      "aliases": [
+        "Ministry of Infrastructure",
+        "YPEHODE",
+        "ΥΠΕΧΩΔΕ"
+      ],
       "note": {
         "en": "Grantor of the motorway concessions and procuring authority for state-funded road works. Public works passed to it from the Ministry for the Environment, Physical Planning and Public Works (YPEHODE) on 7 October 2009, so works tendered before then appear under YPEHODE. Named Ministry of Infrastructure and Transport since November 2016."
       },
@@ -114,7 +125,9 @@
       "localName": "Εγνατία Οδός Α.Ε.",
       "country": "gr",
       "role": "project_company",
-      "aliases": ["Egnatia Odos A.E."],
+      "aliases": [
+        "Egnatia Odos A.E."
+      ],
       "note": {
         "en": "State company, overseen by the Ministry of Infrastructure and Transport, that built and managed the Egnatia motorway from Igoumenitsa to Kipoi and its perpendicular axes."
       },
@@ -131,7 +144,9 @@
       "localName": "ΕΡΓΑ ΟΣΕ Α.Ε.",
       "country": "gr",
       "role": "project_company",
-      "aliases": ["ERGA OSE"],
+      "aliases": [
+        "ERGA OSE"
+      ],
       "note": {
         "en": "Subsidiary of the Hellenic Railways Organisation (OSE), set up in 1996 to manage the works of OSE's investment programme."
       },
@@ -148,7 +163,10 @@
       "localName": "Ελληνικό Μετρό Α.Ε.",
       "country": "gr",
       "role": "project_company",
-      "aliases": ["Attiko Metro", "Αττικό Μετρό"],
+      "aliases": [
+        "Attiko Metro",
+        "Αττικό Μετρό"
+      ],
       "note": {
         "en": "State company that designs and builds the Athens and Thessaloniki metro networks. Formerly Attiko Metro; contracts from before the rename appear under the old name. It does not run the trains."
       },
@@ -157,6 +175,51 @@
           "title": "Elliniko Metro",
           "url": "https://www.emetro.gr/",
           "retrievedOn": "2026-09-28"
+        }
+      ]
+    },
+    "cz-rsd": {
+      "name": "ŘSD",
+      "localName": "Ředitelství silnic a dálnic s. p.",
+      "country": "cz",
+      "role": "road_authority",
+      "aliases": [
+        "Ředitelství silnic a dálnic",
+        "ŘSD ČR"
+      ],
+      "note": {
+        "en": "State enterprise that builds and manages motorways, expressways and class I roads in Czechia."
+      },
+      "sources": [
+        {
+          "title": "Ředitelství silnic a dálnic",
+          "url": "https://www.rsd.cz/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "cz-dpp": {
+      "name": "DPP",
+      "localName": "Dopravní podnik hl. m. Prahy, akciová společnost",
+      "country": "cz",
+      "role": "metro_operator",
+      "aliases": [
+        "Dopravní podnik hlavního města Prahy",
+        "Prague Public Transit Company"
+      ],
+      "note": {
+        "en": "Prague Public Transit Company, wholly owned by the City of Prague. It runs the Prague Metro, the tram and trolleybus networks and most urban bus services."
+      },
+      "sources": [
+        {
+          "title": "Dopravní podnik hl. m. Prahy",
+          "url": "https://www.dpp.cz/en",
+          "retrievedOn": "2026-10-05"
+        },
+        {
+          "title": "Wikipedia: Dopravní podnik hlavního města Prahy",
+          "url": "https://en.wikipedia.org/wiki/Dopravní_podnik_hlavního_města_Prahy",
+          "retrievedOn": "2026-10-05"
         }
       ]
     }
