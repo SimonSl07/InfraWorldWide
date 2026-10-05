@@ -56,6 +56,7 @@ const ECB = "https://data-api.ecb.europa.eu/service/data";
 /** Eurostat reference area per deflator currency, or why it is not refetched. */
 const DEFLATOR_GEO: Record<string, string> = {
   BGN: "BG",
+  CZK: "CZ",
   EUR: "EA",
   RON: "RO",
   RSD: "RS",
@@ -66,7 +67,7 @@ const NOT_REFETCHED: Record<string, string> = {
 };
 
 /** Currencies the ECB quotes. RSD is not one of them. */
-const ECB_CURRENCIES = ["BGN", "RON", "USD"];
+const ECB_CURRENCIES = ["BGN", "CZK", "RON", "USD"];
 
 /**
  * Years left out of a series on purpose, with the reason from the file's own

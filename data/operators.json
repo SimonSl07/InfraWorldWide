@@ -53,7 +53,9 @@
       "localName": "Агенция „Пътна инфраструктура“",
       "country": "bg",
       "role": "road_authority",
-      "aliases": ["API"],
+      "aliases": [
+        "API"
+      ],
       "sources": [
         {
           "title": "Road Infrastructure Agency",
@@ -256,6 +258,51 @@
         {
           "title": "BINA-Istra",
           "url": "https://www.bina-istra.com/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "cz-rsd": {
+      "name": "ŘSD",
+      "localName": "Ředitelství silnic a dálnic s. p.",
+      "country": "cz",
+      "role": "road_authority",
+      "aliases": [
+        "Ředitelství silnic a dálnic",
+        "ŘSD ČR"
+      ],
+      "note": {
+        "en": "State enterprise that builds and manages motorways, expressways and class I roads in Czechia."
+      },
+      "sources": [
+        {
+          "title": "Ředitelství silnic a dálnic",
+          "url": "https://www.rsd.cz/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "cz-dpp": {
+      "name": "DPP",
+      "localName": "Dopravní podnik hl. m. Prahy, akciová společnost",
+      "country": "cz",
+      "role": "metro_operator",
+      "aliases": [
+        "Dopravní podnik hlavního města Prahy",
+        "Prague Public Transit Company"
+      ],
+      "note": {
+        "en": "Prague Public Transit Company, wholly owned by the City of Prague. It runs the Prague Metro, the tram and trolleybus networks and most urban bus services."
+      },
+      "sources": [
+        {
+          "title": "Dopravní podnik hl. m. Prahy",
+          "url": "https://www.dpp.cz/en",
+          "retrievedOn": "2026-10-05"
+        },
+        {
+          "title": "Wikipedia: Dopravní podnik hlavního města Prahy",
+          "url": "https://en.wikipedia.org/wiki/Dopravní_podnik_hlavního_města_Prahy",
           "retrievedOn": "2026-10-05"
         }
       ]

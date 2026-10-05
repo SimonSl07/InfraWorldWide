@@ -1,0 +1,1598 @@
+{
+  "id": "cz-d35",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D35 motorway (Sedlice – Olomouc – Lipník nad Bečvou)",
+    "ro": "Autostrada D35 (Sedlice – Olomouc – Lipník nad Bečvou)"
+  },
+  "description": {
+    "en": "Czech motorway between Hradec Králové and Olomouc, built in sections since the 1970s and renumbered from R35 to D35 on 1 January 2016. Sections from Sedlice to Opatovec have opened one by one since 2009 (2021–2026 for most of them), with Džbánov – Litomyšl and Litomyšl – Janov under construction; the old Mohelnice – Olomouc road (1978–1986) and the Olomouc bypass to Lipník nad Bečvou (1997–2007, stage 2 of Křelov – Slavonín in 2025) are already open. The two Opatovec – Mohelnice sections, about 35 km, are being tendered as a PPP. The sections west of Sedlice towards Hořice and Úlibice and the planned modernisation of Mohelnice – Olomouc are not recorded here. The project-level figure is the NKÚ's 2023 audit result for Opatovice – Opatovec: the cost estimate rose from 31.1 billion CZK (strategy completion year 2021) to 31.2 billion (2023) and to about 38.7 billion with completion expected in 2027, six years after the original date.",
+    "ro": "Autostradă cehă între Hradec Králové și Olomouc, construită pe sectoare din anii 1970 și renumerotată din R35 în D35 la 1 ianuarie 2016. Sectoarele de la Sedlice la Opatovec s-au deschis pe rând din 2009 (2021–2026 pentru majoritatea), iar Džbánov – Litomyšl și Litomyšl – Janov sunt în construcție; vechiul drum Mohelnice – Olomouc (1978–1986) și ocolitoarea Olomoucului până la Lipník nad Bečvou (1997–2007, etapa 2 Křelov – Slavonín în 2025) sunt deja deschise. Cele două sectoare Opatovec – Mohelnice, de circa 35 km, sunt licitate ca PPP. Sectoarele de la vest de Sedlice spre Hořice și Úlibice și modernizarea planificată a drumului Mohelnice – Olomouc nu sunt înregistrate aici. Cifra la nivel de proiect este rezultatul auditului NKÚ din 2023 pentru Opatovice – Opatovec: estimarea costului a crescut de la 31,1 miliarde CZK (finalizare în 2021 conform strategiei) la 31,2 miliarde (2023) și la circa 38,7 miliarde, cu finalizare așteptată în 2027, la șase ani după data inițială."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "sedlice-opatovice",
+      "name": {
+        "en": "Sedlice – Opatovice nad Labem (R35)",
+        "ro": "Sedlice – Opatovice nad Labem (R35)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-11",
+        "opened": "2009-11-27"
+      },
+      "lengthKm": 4.19,
+      "contract": {
+        "value": {
+          "amount": 1413.93,
+          "currency": "CZK",
+          "year": 2006,
+          "note": "Contract price without tax, as stated in the leaflet. Signing date not stated; price year taken as the year works started."
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Skanska DS",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Built as the expressway R35 and renumbered D35 on 1 January 2016. The leaflet gives a main-route length of 4190 m and records the ceremonial opening on 27 November 2009. Skanska DS built stage I; Skanska DS and Metrostav built stage II. cs Wikipedia lists the Opatovice viaduct as completed in advance in 12/2015.",
+        "ro": "Construit ca drum expres R35 și renumerotat D35 la 1 ianuarie 2016. Pliantul indică o lungime a traseului principal de 4190 m și deschiderea festivă la 27 noiembrie 2009. Skanska DS a construit etapa I; Skanska DS și Metrostav au construit etapa II. cs Wikipedia indică viaductul Opatovice ca finalizat în avans, în 12/2015."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-sedlice-opatovice",
+        "wikipedia-cs-d35",
+        "osm-d35"
+      ],
+      "geometryRef": "sedlice-opatovice"
+    },
+    {
+      "id": "opatovice-casy",
+      "name": {
+        "en": "Opatovice nad Labem – Časy",
+        "ro": "Opatovice nad Labem – Časy"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-01-31",
+        "constructionStart": "2019-03-14",
+        "opened": "2021-12-15"
+      },
+      "lengthKm": 12.61,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2019-01-31",
+            "money": {
+              "amount": 3388.66,
+              "currency": "CZK",
+              "year": 2019,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-opatovice-casy"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_cancelled",
+          "date": "2018-05",
+          "note": {
+            "en": "ÚOHS cancelled the first tender for the builder.",
+            "ro": "ÚOHS a anulat prima licitație pentru constructor."
+          },
+          "sourceRef": "rsd-leaflet-opatovice-casy"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2018-08-22",
+          "note": {
+            "en": "ŘSD announced a new tender.",
+            "ro": "ŘSD a lansat o nouă licitație."
+          },
+          "sourceRef": "rsd-leaflet-opatovice-casy"
+        },
+        {
+          "kind": "awarded",
+          "date": "2019-01-31",
+          "note": {
+            "en": "Contract signed with Strabag, M-Silnice and SMP CZ.",
+            "ro": "Contract semnat cu Strabag, M-Silnice și SMP CZ."
+          },
+          "sourceRef": "rsd-leaflet-opatovice-casy"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-03-14",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-opatovice-casy"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-15",
+          "note": {
+            "en": "Ceremonial opening.",
+            "ro": "Deschiderea festivă."
+          },
+          "sourceRef": "rsd-leaflet-opatovice-casy"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 3388.66,
+          "currency": "CZK",
+          "year": 2019,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/62/leaflet/infoletak_d35-opatovice-casy.pdf"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds, as stated in the ŘSD leaflet. The programme and the amount are not stated.",
+            "ro": "Cofinanțat din fonduri UE, conform pliantului ŘSD. Programul și suma nu sunt precizate."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "M-Silnice",
+          "role": "builder"
+        },
+        {
+          "name": "SMP CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Sdružení CPP 2012 (Pragoprojekt, Pudis, AF-CityPlan)",
+          "role": "designer"
+        }
+      ],
+      "profile": {
+        "bridgeCount": 17,
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Includes the 1047 m viaduct over the Elbe floodplain at Opatovice nad Labem and the Rokytno and Časy junctions. Total length of the 17 bridges on the motorway: 2090 m.",
+        "ro": "Include viaductul de 1047 m peste zona inundabilă a Elbei la Opatovice nad Labem și nodurile Rokytno și Časy. Lungimea totală a celor 17 poduri de pe autostradă: 2090 m."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-opatovice-casy",
+        "osm-d35"
+      ],
+      "geometryRef": "opatovice-casy"
+    },
+    {
+      "id": "casy-ostrov",
+      "name": {
+        "en": "Časy – Ostrov",
+        "ro": "Časy – Ostrov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-12-04",
+        "opened": "2022-12-22"
+      },
+      "lengthKm": 14.7,
+      "contract": {
+        "value": {
+          "amount": 3231.98,
+          "currency": "CZK",
+          "year": 2018,
+          "note": "Excluding VAT. Signing date not stated; price year taken as the year works started."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-12-04",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-casy-ostrov"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-22",
+          "note": {
+            "en": "Section opened.",
+            "ro": "Sectorul a fost deschis."
+          },
+          "sourceRef": "rsd-leaflet-casy-ostrov"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds, as stated in the ŘSD leaflet. The programme and the amount are not stated.",
+            "ro": "Cofinanțat din fonduri UE, conform pliantului ŘSD. Programul și suma nu sunt precizate."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "bridgeCount": 16,
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Includes the Dašice and Ostrov junctions and the Dolní Roveň rest area. The leaflet states the contract price without VAT but not the signing date, so no award revision is recorded. The end of the section is a provisional connection to I/17 beyond the Ostrov junction.",
+        "ro": "Include nodurile Dašice și Ostrov și parcarea Dolní Roveň. Pliantul indică prețul contractului fără TVA, dar nu data semnării, deci nu se înregistrează o revizuire de atribuire. Capătul sectorului este o conectare provizorie la I/17, după nodul Ostrov."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-casy-ostrov",
+        "osm-d35"
+      ],
+      "geometryRef": "casy-ostrov"
+    },
+    {
+      "id": "ostrov-vysoke-myto",
+      "name": {
+        "en": "Ostrov – Vysoké Mýto",
+        "ro": "Ostrov – Vysoké Mýto"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2024-02-15",
+        "constructionStart": "2024-05-06",
+        "opened": "2026-08-21"
+      },
+      "lengthKm": 6.2,
+      "cost": {
+        "estimated": {
+          "amount": 2025.76,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2024-02-15",
+            "money": {
+              "amount": 1424.46,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-ostrov-vysoke-myto"
+          },
+          {
+            "kind": "revised_budget",
+            "date": "2026-08-24",
+            "money": {
+              "amount": 1460,
+              "currency": "CZK",
+              "note": "Excluding VAT. Price after valorisation, stated as 1.46 billion CZK."
+            },
+            "sourceRef": "dalnice-d35-ostrov-news"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1424.46,
+          "currency": "CZK",
+          "year": 2024,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/60/leaflet/infoletak_d35-ostrov-vysoke_myto.pdf"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-06",
+          "note": {
+            "en": "Builder tender launched; three bids received.",
+            "ro": "Licitația pentru constructor a fost lansată; au fost primite trei oferte."
+          },
+          "sourceRef": "rsd-leaflet-ostrov-vysoke-myto"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-02-15",
+          "note": {
+            "en": "Contract signed with Eurovia and M-Silnice.",
+            "ro": "Contract semnat cu Eurovia și M-Silnice."
+          },
+          "sourceRef": "rsd-leaflet-ostrov-vysoke-myto"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-05-06",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-ostrov-vysoke-myto"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-08-21",
+          "note": {
+            "en": "Opened without the Homole tunnel, with a provisional ramp to I/17 before the tunnel.",
+            "ro": "Deschis fără tunelul Homole, cu o rampă provizorie spre I/17 înainte de tunel."
+          },
+          "sourceRef": "ceskedalnice-ostrov-opening"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3), conform pliantului ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "M-Silnice",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "The 6.2 km section without the Homole tunnel, which is recorded as its own lot. The leaflet gives 7000 m including the 0.8 km tunnel. ŘSD opened it on 21 August 2026 (České dálnice, same day); the ŘSD news item is dated 24 August 2026.",
+        "ro": "Sectorul de 6,2 km fără tunelul Homole, înregistrat ca lot separat. Pliantul indică 7000 m inclusiv tunelul de 0,8 km. ŘSD l-a deschis la 21 august 2026 (České dálnice, în aceeași zi); știrea ŘSD este datată 24 august 2026."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-ostrov-vysoke-myto",
+        "dalnice-d35-ostrov-news",
+        "ceskedalnice-ostrov-opening",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "ostrov-vysoke-myto"
+    },
+    {
+      "id": "homole-tunnel",
+      "name": {
+        "en": "Homole tunnel",
+        "ro": "Tunelul Homole"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-04-09",
+        "constructionStart": "2024-05-06",
+        "expectedOpening": "2027-06"
+      },
+      "lengthKm": 0.795,
+      "cost": {
+        "estimated": {
+          "amount": 2461.77,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2024-04-09",
+            "money": {
+              "amount": 1754.43,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-homole"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1754.43,
+          "currency": "CZK",
+          "year": 2024,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/652/leaflet/infoletak_d35-ostrov-vys_myto-tunel-homole-A5.pdf"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-04-09",
+          "note": {
+            "en": "Contract signed with the Eurovia CZ, TuCon and Eurovia SK consortium.",
+            "ro": "Contract semnat cu consorțiul Eurovia CZ, TuCon și Eurovia SK."
+          },
+          "sourceRef": "rsd-leaflet-homole"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-05-06",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-homole"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3), conform pliantului ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CZ",
+          "role": "builder"
+        },
+        {
+          "name": "TuCon",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia SK",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "tunnelKm": 0.569,
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Two one-way tubes of 525 m (180 m cut-and-cover, 345 m mined) and 569 m (120 m cut-and-cover, 449 m mined); with the adjoining works the stavba is 795 m. profile.tunnelKm is the longer tube. Both tubes pass under I/17. Harder rock than the survey indicated delayed driving, and the leaflet gives opening at the end of June 2027. Built as a separate contract so that the rest of the section could open earlier. Not included in the 6.2 km of the Ostrov – Vysoké Mýto lot.",
+        "ro": "Două tuburi cu sens unic de 525 m (180 m săpătură deschisă, 345 m săpat) și 569 m (120 m săpătură deschisă, 449 m săpat); cu lucrările adiacente stavba are 795 m. profile.tunnelKm este tubul mai lung. Ambele tuburi trec pe sub I/17. Roca mai dură decât indica studiul a întârziat săparea, iar pliantul indică deschiderea la sfârșitul lui iunie 2027. Construit printr-un contract separat, pentru ca restul sectorului să poată fi deschis mai devreme. Nu este inclus în cei 6,2 km ai lotului Ostrov – Vysoké Mýto."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-homole",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "homole-tunnel"
+    },
+    {
+      "id": "vysoke-myto-dzbanov",
+      "name": {
+        "en": "Vysoké Mýto – Džbánov",
+        "ro": "Vysoké Mýto – Džbánov"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2023-07-13",
+        "constructionStart": "2023-11-16",
+        "opened": "2025-12-16"
+      },
+      "lengthKm": 5.95,
+      "cost": {
+        "estimated": {
+          "amount": 2524.04,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2023-07-13",
+            "money": {
+              "amount": 1829.52,
+              "currency": "CZK",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-vysoke-myto-dzbanov"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1829.52,
+          "currency": "CZK",
+          "year": 2023,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/59/leaflet/infoletak_d35-vys-myto-dzbanov.pdf"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-12-30",
+          "note": {
+            "en": "Builder tender launched; five bids received.",
+            "ro": "Licitația pentru constructor a fost lansată; au fost primite cinci oferte."
+          },
+          "sourceRef": "rsd-leaflet-vysoke-myto-dzbanov"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-07-13",
+          "note": {
+            "en": "Contract signed with Eurovia CS, M-Silnice and Stavby mostů.",
+            "ro": "Contract semnat cu Eurovia CS, M-Silnice și Stavby mostů."
+          },
+          "sourceRef": "rsd-leaflet-vysoke-myto-dzbanov"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-11-16",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-vysoke-myto-dzbanov"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-16",
+          "note": {
+            "en": "Ceremonial opening.",
+            "ro": "Deschiderea festivă."
+          },
+          "sourceRef": "rsd-leaflet-vysoke-myto-dzbanov"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3), conform pliantului ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        },
+        {
+          "name": "M-Silnice",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "bridgeCount": 6,
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Runs from the Vysoké Mýto-západ junction (km 39.250) to the Džbánov junction (km 44.440) and bypasses Vysoké Mýto to the west and south. The leaflet gives 5950 m.",
+        "ro": "Merge de la nodul Vysoké Mýto-západ (km 39,250) la nodul Džbánov (km 44,440) și ocolește Vysoké Mýto prin vest și sud. Pliantul indică 5950 m."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-vysoke-myto-dzbanov",
+        "osm-d35"
+      ],
+      "geometryRef": "vysoke-myto-dzbanov"
+    },
+    {
+      "id": "dzbanov-litomysl",
+      "name": {
+        "en": "Džbánov – Litomyšl",
+        "ro": "Džbánov – Litomyšl"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-03-04",
+        "constructionStart": "2024-04-08",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 7.59,
+      "cost": {
+        "estimated": {
+          "amount": 4518.19,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2024-03-04",
+            "money": {
+              "amount": 3423.66,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-dzbanov-litomysl"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 3423.66,
+          "currency": "CZK",
+          "year": 2024,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/58/leaflet/infoletak_d35-dzbanov-litomysl.pdf"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-04-21",
+          "note": {
+            "en": "Builder tender launched; four bids received.",
+            "ro": "Licitația pentru constructor a fost lansată; au fost primite patru oferte."
+          },
+          "sourceRef": "rsd-leaflet-dzbanov-litomysl"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-03-04",
+          "note": {
+            "en": "Contract signed with Budimex.",
+            "ro": "Contract semnat cu Budimex."
+          },
+          "sourceRef": "rsd-leaflet-dzbanov-litomysl"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-04-08",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-dzbanov-litomysl"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3), conform pliantului ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "bridgeCount": 7,
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Includes the Řídký junction (km 51.540), the 317 m bridge over I/35 and the Choceň–Litomyšl railway and the 419 m Končinský potok valley bridge. The dalnice-d35.cz site gives 2027 as the opening year; the director general of ŘSD said in August 2026 that ŘSD would like to open it in 2026. The leaflet gives 7589 m.",
+        "ro": "Include nodul Řídký (km 51,540), podul de 317 m peste I/35 și calea ferată Choceň–Litomyšl și podul de 419 m peste valea Končinský potok. Site-ul dalnice-d35.cz indică anul 2027 pentru deschidere; directorul general al ŘSD a spus în august 2026 că ŘSD ar dori să o deschidă în 2026. Pliantul indică 7589 m."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-dzbanov-litomysl",
+        "dalnice-d35-sections",
+        "dalnice-d35-ostrov-news",
+        "osm-d35"
+      ],
+      "geometryRef": "dzbanov-litomysl"
+    },
+    {
+      "id": "litomysl-janov",
+      "name": {
+        "en": "Litomyšl – Janov",
+        "ro": "Litomyšl – Janov"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-01-08",
+        "constructionStart": "2025-02-10",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 10.44,
+      "cost": {
+        "estimated": {
+          "amount": 4447.56,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2025-01-08",
+            "money": {
+              "amount": 2798.99,
+              "currency": "CZK",
+              "year": 2025,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-litomysl-janov"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 2798.99,
+          "currency": "CZK",
+          "year": 2025,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/57/leaflet/infoletak_d35-litomysl-janov.pdf"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-03-26",
+          "note": {
+            "en": "Builder tender launched; five bids received.",
+            "ro": "Licitația pentru constructor a fost lansată; au fost primite cinci oferte."
+          },
+          "sourceRef": "rsd-leaflet-litomysl-janov"
+        },
+        {
+          "kind": "litigation",
+          "date": "2024-12",
+          "note": {
+            "en": "The second-ranked bidder objected to the choice of the best bid, which delayed signing.",
+            "ro": "Ofertantul clasat al doilea a contestat alegerea celei mai bune oferte, ceea ce a întârziat semnarea."
+          },
+          "sourceRef": "rsd-leaflet-litomysl-janov"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-01-08",
+          "note": {
+            "en": "Contract signed with Strabag and Firesta–Fišer.",
+            "ro": "Contract semnat cu Strabag și Firesta–Fišer."
+          },
+          "sourceRef": "rsd-leaflet-litomysl-janov"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-02-10",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-litomysl-janov"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3), conform pliantului ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Firesta–Fišer",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Ends about 70 m beyond the Janov delta junction. The dalnice-d35.cz site gives 2027 as the opening year. The leaflet gives 10 440 m.",
+        "ro": "Se termină la circa 70 m după nodul în formă de deltă Janov. Site-ul dalnice-d35.cz indică anul 2027 pentru deschidere. Pliantul indică 10 440 m."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-litomysl-janov",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "litomysl-janov"
+    },
+    {
+      "id": "janov-opatovec",
+      "name": {
+        "en": "Janov – Opatovec",
+        "ro": "Janov – Opatovec"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2023-04-19",
+        "constructionStart": "2023-05-05",
+        "opened": "2025-12-18"
+      },
+      "lengthKm": 11.71,
+      "cost": {
+        "estimated": {
+          "amount": 3469.97,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2023-04-19",
+            "money": {
+              "amount": 2540.18,
+              "currency": "CZK",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-janov-opatovec"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 2540.18,
+          "currency": "CZK",
+          "year": 2023,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/56/leaflet/infoletak_d35-janov-opatovec.pdf"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-10",
+          "note": {
+            "en": "Builder tender launched; four bids received.",
+            "ro": "Licitația pentru constructor a fost lansată; au fost primite patru oferte."
+          },
+          "sourceRef": "rsd-leaflet-janov-opatovec"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-04-19",
+          "note": {
+            "en": "Contract signed with MI Roads and Doprastav.",
+            "ro": "Contract semnat cu MI Roads și Doprastav."
+          },
+          "sourceRef": "rsd-leaflet-janov-opatovec"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-05-05",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-janov-opatovec"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-18",
+          "note": {
+            "en": "Ceremonial opening.",
+            "ro": "Deschiderea festivă."
+          },
+          "sourceRef": "rsd-leaflet-janov-opatovec"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3), conform pliantului ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "MI Roads",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Runs beside the existing I/35 and ends beyond the Opatovec junction with I/35 and I/43. The planned Mikuleč junction was not built. A new railway bridge over the Česká Třebová – Brno line at km 73.9 was built in advance under a separate contract and is not part of the contract value recorded here. The leaflet gives 11 713 m.",
+        "ro": "Merge în paralel cu I/35 existent și se termină după nodul Opatovec cu I/35 și I/43. Nodul Mikuleč, planificat, nu a fost construit. Un pod feroviar nou peste linia Česká Třebová – Brno, la km 73,9, a fost construit în avans printr-un contract separat și nu face parte din valoarea contractului înregistrată aici. Pliantul indică 11 713 m."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-janov-opatovec",
+        "osm-d35"
+      ],
+      "geometryRef": "janov-opatovec"
+    },
+    {
+      "id": "opatovec-stare-mesto",
+      "name": {
+        "en": "Opatovec – Staré Město (PPP)",
+        "ro": "Opatovec – Staré Město (PPP)"
+      },
+      "status": "tendered",
+      "dates": {
+        "announced": "2022-08"
+      },
+      "lengthKm": 16.6,
+      "cost": {
+        "estimated": {
+          "amount": 17693.83,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet 'Předpokládaná cena stavby' including the I/35 Staré Město connection to D35; price year not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2022-08",
+          "note": {
+            "en": "Added to the government PPP project.",
+            "ro": "Inclus în proiectul guvernamental PPP."
+          },
+          "sourceRef": "rsd-leaflet-opatovec-stare-mesto"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2024-08",
+          "note": {
+            "en": "The Ministry of Transport launched the tender for a concessionaire; four consortia advanced to competitive dialogue.",
+            "ro": "Ministerul Transporturilor a lansat licitația pentru concesionar; patru consorții au trecut în dialogul competitiv."
+          },
+          "sourceRef": "rsd-leaflet-opatovec-stare-mesto"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Planned as a public–private partnership with a concessionaire, together with the adjoining section. Added to the government PPP project in August 2022.",
+            "ro": "Planificat ca parteneriat public-privat cu un concesionar, împreună cu sectorul învecinat. Inclus în proiectul guvernamental PPP în august 2022."
+          }
+        }
+      ],
+      "profile": {
+        "tunnelKm": 3.983,
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "Includes the 3983 m Dětřichov tunnel and a 2390 m feeder to I/35 at Staré Město. The leaflet (state as of 03/2026) expects the concession contract to be signed in the second half of 2026; the dalnice-d35.cz site gives construction as planned for 2026–2031. The two PPP sections (this one and Staré Město – Mohelnice) are about 35 km together.",
+        "ro": "Include tunelul Dětřichov de 3983 m și un racord de 2390 m la I/35 la Staré Město. Pliantul (stare la 03/2026) preconizează semnarea contractului de concesiune în a doua jumătate a lui 2026; site-ul dalnice-d35.cz indică construcția ca planificată pentru 2026–2031. Cele două sectoare PPP (acesta și Staré Město – Mohelnice) însumează circa 35 km."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-opatovec-stare-mesto",
+        "dalnice-d35-sections",
+        "nku-22-08",
+        "osm-d35"
+      ],
+      "geometryRef": "opatovec-stare-mesto"
+    },
+    {
+      "id": "stare-mesto-mohelnice",
+      "name": {
+        "en": "Staré Město – Mohelnice (PPP)",
+        "ro": "Staré Město – Mohelnice (PPP)"
+      },
+      "status": "tendered",
+      "dates": {
+        "announced": "2022-08"
+      },
+      "lengthKm": 18.23,
+      "cost": {
+        "estimated": {
+          "amount": 15946.6,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2022-08",
+          "note": {
+            "en": "Added to the government PPP project.",
+            "ro": "Inclus în proiectul guvernamental PPP."
+          },
+          "sourceRef": "rsd-leaflet-stare-mesto-mohelnice"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2024-08",
+          "note": {
+            "en": "The Ministry of Transport launched the tender for a concessionaire; in January 2026 three participants were asked for final bids.",
+            "ro": "Ministerul Transporturilor a lansat licitația pentru concesionar; în ianuarie 2026 trei participanți au fost invitați să depună oferte finale."
+          },
+          "sourceRef": "rsd-leaflet-stare-mesto-mohelnice"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Planned as a public–private partnership with a concessionaire, together with the adjoining section. Added to the government PPP project in August 2022.",
+            "ro": "Planificat ca parteneriat public-privat cu un concesionar, împreună cu sectorul învecinat. Inclus în proiectul guvernamental PPP în august 2022."
+          }
+        }
+      ],
+      "profile": {
+        "tunnelKm": 1.313,
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "The leaflet gives 18 230 m, of which 1330 m is reconstruction of the existing D35. Includes the 1313 m Maletín tunnel and the Maletín, Mohelnice-sever and Mohelnice-jih junctions. Ends where the 1978–1986 Mohelnice – Olomouc road begins.",
+        "ro": "Pliantul indică 18 230 m, din care 1330 m reprezintă reconstrucția D35 existent. Include tunelul Maletín de 1313 m și nodurile Maletín, Mohelnice-sever și Mohelnice-jih. Se termină unde începe drumul Mohelnice – Olomouc din 1978–1986."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-stare-mesto-mohelnice",
+        "dalnice-d35-sections",
+        "nku-22-08",
+        "osm-d35"
+      ],
+      "geometryRef": "stare-mesto-mohelnice"
+    },
+    {
+      "id": "mohelnice-lostice",
+      "name": {
+        "en": "Mohelnice – Loštice (Řimice bypass)",
+        "ro": "Mohelnice – Loštice (ocolirea Řimice)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1979"
+      },
+      "lengthKm": 5.4,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "One of the seven sections of the old Mohelnice – Olomouc road (category S 22.5/100), opened in 1979. Length and opening year are from the cs Wikipedia table; no ŘSD leaflet covers these sections individually. Opening dates are given by year only.",
+        "ro": "Unul dintre cele șapte sectoare ale vechiului drum Mohelnice – Olomouc (categoria S 22,5/100), deschis în 1979. Lungimea și anul deschiderii provin din tabelul cs Wikipedia; niciun pliant ŘSD nu acoperă individual aceste sectoare. Datele deschiderii sunt date doar pe ani."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "mohelnice-lostice"
+    },
+    {
+      "id": "rimice-mladec",
+      "name": {
+        "en": "Řimice – Mladeč",
+        "ro": "Řimice – Mladeč"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1983"
+      },
+      "lengthKm": 4.5,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "One of the seven sections of the old Mohelnice – Olomouc road (category S 22.5/100), opened in 1983. Length and opening year are from the cs Wikipedia table; no ŘSD leaflet covers these sections individually. Opening dates are given by year only.",
+        "ro": "Unul dintre cele șapte sectoare ale vechiului drum Mohelnice – Olomouc (categoria S 22,5/100), deschis în 1983. Lungimea și anul deschiderii provin din tabelul cs Wikipedia; niciun pliant ŘSD nu acoperă individual aceste sectoare. Datele deschiderii sunt date doar pe ani."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "rimice-mladec"
+    },
+    {
+      "id": "mladec-nasoburky",
+      "name": {
+        "en": "Mladeč – Nasobůrky",
+        "ro": "Mladeč – Nasobůrky"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1986"
+      },
+      "lengthKm": 3.2,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "One of the seven sections of the old Mohelnice – Olomouc road (category S 22.5/100), opened in 1986. Length and opening year are from the cs Wikipedia table; no ŘSD leaflet covers these sections individually. Opening dates are given by year only.",
+        "ro": "Unul dintre cele șapte sectoare ale vechiului drum Mohelnice – Olomouc (categoria S 22,5/100), deschis în 1986. Lungimea și anul deschiderii provin din tabelul cs Wikipedia; niciun pliant ŘSD nu acoperă individual aceste sectoare. Datele deschiderii sunt date doar pe ani."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "mladec-nasoburky"
+    },
+    {
+      "id": "nasoburky-uncovice",
+      "name": {
+        "en": "Nasobůrky – Unčovice",
+        "ro": "Nasobůrky – Unčovice"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1978"
+      },
+      "lengthKm": 4.9,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "One of the seven sections of the old Mohelnice – Olomouc road (category S 22.5/100), opened in 1978. Length and opening year are from the cs Wikipedia table; no ŘSD leaflet covers these sections individually. Opening dates are given by year only.",
+        "ro": "Unul dintre cele șapte sectoare ale vechiului drum Mohelnice – Olomouc (categoria S 22,5/100), deschis în 1978. Lungimea și anul deschiderii provin din tabelul cs Wikipedia; niciun pliant ŘSD nu acoperă individual aceste sectoare. Datele deschiderii sunt date doar pe ani."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "nasoburky-uncovice"
+    },
+    {
+      "id": "uncovice-prikazy",
+      "name": {
+        "en": "Unčovice – Příkazy",
+        "ro": "Unčovice – Příkazy"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1984"
+      },
+      "lengthKm": 2.7,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "One of the seven sections of the old Mohelnice – Olomouc road (category S 22.5/100), opened in 1984. Length and opening year are from the cs Wikipedia table; no ŘSD leaflet covers these sections individually. Opening dates are given by year only.",
+        "ro": "Unul dintre cele șapte sectoare ale vechiului drum Mohelnice – Olomouc (categoria S 22,5/100), deschis în 1984. Lungimea și anul deschiderii provin din tabelul cs Wikipedia; niciun pliant ŘSD nu acoperă individual aceste sectoare. Datele deschiderii sunt date doar pe ani."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "uncovice-prikazy"
+    },
+    {
+      "id": "prikazy-bypass",
+      "name": {
+        "en": "Příkazy bypass",
+        "ro": "Ocolirea Příkazy"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1985"
+      },
+      "lengthKm": 3,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "One of the seven sections of the old Mohelnice – Olomouc road (category S 22.5/100), opened in 1985. Length and opening year are from the cs Wikipedia table; no ŘSD leaflet covers these sections individually. Opening dates are given by year only.",
+        "ro": "Unul dintre cele șapte sectoare ale vechiului drum Mohelnice – Olomouc (categoria S 22,5/100), deschis în 1985. Lungimea și anul deschiderii provin din tabelul cs Wikipedia; niciun pliant ŘSD nu acoperă individual aceste sectoare. Datele deschiderii sunt date doar pe ani."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "prikazy-bypass"
+    },
+    {
+      "id": "prikazy-krelov",
+      "name": {
+        "en": "Příkazy – Křelov",
+        "ro": "Příkazy – Křelov"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1978"
+      },
+      "lengthKm": 2.5,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "One of the seven sections of the old Mohelnice – Olomouc road (category S 22.5/100), opened in 1978. Length and opening year are from the cs Wikipedia table; no ŘSD leaflet covers these sections individually. Opening dates are given by year only.",
+        "ro": "Unul dintre cele șapte sectoare ale vechiului drum Mohelnice – Olomouc (categoria S 22,5/100), deschis în 1978. Lungimea și anul deschiderii provin din tabelul cs Wikipedia; niciun pliant ŘSD nu acoperă individual aceste sectoare. Datele deschiderii sunt date doar pe ani."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "prikazy-krelov"
+    },
+    {
+      "id": "krelov-slavonin-2",
+      "name": {
+        "en": "Křelov – Slavonín, stage 2",
+        "ro": "Křelov – Slavonín, etapa 2"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2024-02-16",
+        "constructionStart": "2024-02-27",
+        "opened": "2025-11-20"
+      },
+      "lengthKm": 3.17,
+      "cost": {
+        "estimated": {
+          "amount": 1150,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure 'Předpokládaná cena stavby'; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2024-02-16",
+            "money": {
+              "amount": 838,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-krelov-slavonin-2"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 838,
+          "currency": "CZK",
+          "year": 2024,
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://apdos-v2.creativesound.cz/media/stavba/55/leaflet/infoletak_d35-krelov-slavonin-2et.pdf"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-07-11",
+          "note": {
+            "en": "Builder tender launched; eight bids received.",
+            "ro": "Licitația pentru constructor a fost lansată; au fost primite opt oferte."
+          },
+          "sourceRef": "rsd-leaflet-krelov-slavonin-2"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-02-16",
+          "note": {
+            "en": "Contract signed with Eurovia CS and M-Silnice.",
+            "ro": "Contract semnat cu Eurovia CS și M-Silnice."
+          },
+          "sourceRef": "rsd-leaflet-krelov-slavonin-2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-02-27",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-krelov-slavonin-2"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-11-20",
+          "note": {
+            "en": "Ceremonial opening, 158 days ahead of the original deadline after an August 2024 amendment.",
+            "ro": "Deschiderea festivă, cu 158 de zile înaintea termenului inițial, după un act adițional din august 2024."
+          },
+          "sourceRef": "rsd-leaflet-krelov-slavonin-2"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from the Connecting Europe Facility (CEF), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Mecanismul pentru interconectarea Europei (CEF), conform pliantului ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        },
+        {
+          "name": "M-Silnice",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "bridgeCount": 3,
+        "designSpeedKmh": 120
+      },
+      "note": {
+        "en": "Closes the gap in the western Olomouc bypass between the old Mohelnice – Olomouc road and stage 1. Until it opened, traffic went through the Severní spoj link. Includes the Křelov junction. The leaflet gives 3166 m. The ŘSD site lists the section at 3.2 km.",
+        "ro": "Închide golul din ocolitoarea vestică a Olomoucului dintre vechiul drum Mohelnice – Olomouc și etapa 1. Până la deschidere, traficul trecea prin legătura Severní spoj. Include nodul Křelov. Pliantul indică 3166 m. Site-ul ŘSD indică sectorul la 3,2 km."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-krelov-slavonin-2",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "krelov-slavonin-2"
+    },
+    {
+      "id": "krelov-slavonin-1",
+      "name": {
+        "en": "Křelov – Slavonín, stage 1",
+        "ro": "Křelov – Slavonín, etapa 1"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-10",
+        "opened": "2007-11"
+      },
+      "lengthKm": 2.75,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Length, start and opening dates (month and year) are from the cs Wikipedia table of D35 sections; no ŘSD leaflet for this section was read.",
+        "ro": "Lungimea și datele de început și deschidere (lună și an) provin din tabelul cs Wikipedia al sectoarelor D35; nu a fost citit niciun pliant ŘSD pentru acest sector."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "krelov-slavonin-1"
+    },
+    {
+      "id": "slavonin-praslavice",
+      "name": {
+        "en": "Slavonín – Přáslavice (Olomouc bypass)",
+        "ro": "Slavonín – Přáslavice (ocolirea Olomoucului)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1999-11",
+        "opened": "2003-10"
+      },
+      "lengthKm": 14.65,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Length, start and opening dates (month and year) are from the cs Wikipedia table of D35 sections; no ŘSD leaflet for this section was read.",
+        "ro": "Lungimea și datele de început și deschidere (lună și an) provin din tabelul cs Wikipedia al sectoarelor D35; nu a fost citit niciun pliant ŘSD pentru acest sector."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "slavonin-praslavice"
+    },
+    {
+      "id": "praslavice-velky-ujezd",
+      "name": {
+        "en": "Přáslavice – Velký Újezd",
+        "ro": "Přáslavice – Velký Újezd"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1993-12",
+        "opened": "1997-10"
+      },
+      "lengthKm": 8.05,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Length, start and opening dates (month and year) are from the cs Wikipedia table of D35 sections; no ŘSD leaflet for this section was read.",
+        "ro": "Lungimea și datele de început și deschidere (lună și an) provin din tabelul cs Wikipedia al sectoarelor D35; nu a fost citit niciun pliant ŘSD pentru acest sector."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "praslavice-velky-ujezd"
+    },
+    {
+      "id": "velky-ujezd-lipnik",
+      "name": {
+        "en": "Velký Újezd – Lipník nad Bečvou (D1)",
+        "ro": "Velký Újezd – Lipník nad Bečvou (D1)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996-10",
+        "opened": "1999-07"
+      },
+      "lengthKm": 7.35,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Length, start and opening dates (month and year) are from the cs Wikipedia table of D35 sections; no ŘSD leaflet for this section was read. The drawn OSM line from the Velký Újezd junction to where the D35 tagging ends at the D1 is 5.6 km, shorter than the recorded length.",
+        "ro": "Lungimea și datele de început și deschidere (lună și an) provin din tabelul cs Wikipedia al sectoarelor D35; nu a fost citit niciun pliant ŘSD pentru acest sector. Linia OSM trasată de la nodul Velký Újezd până unde se termină marcarea D35 la D1 are 5,6 km, mai puțin decât lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "wikipedia-cs-d35",
+        "dalnice-d35-sections",
+        "osm-d35"
+      ],
+      "geometryRef": "velky-ujezd-lipnik"
+    }
+  ],
+  "cost": {
+    "amount": 38700,
+    "currency": "CZK",
+    "scope": "programme",
+    "confidence": "estimated",
+    "note": "NKÚ audit 22/08 (13 November 2023): ŘSD's current estimate for the Opatovice – Opatovec stretch, about 38.7 billion CZK, against 31.1 and 31.2 billion in earlier strategies. VAT basis and price year not stated."
+  },
+  "sources": [
+    {
+      "id": "rsd-leaflet-sedlice-opatovice",
+      "title": "ŘSD infoleták: R35 Sedlice–Opatovice",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/722/leaflet/r35-sedlice-opatovice.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-opatovice-casy",
+      "title": "ŘSD infoleták: D35 Opatovice nad Labem–Časy (12/2021)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/62/leaflet/infoletak_d35-opatovice-casy.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-casy-ostrov",
+      "title": "ŘSD infoleták: D35 Časy–Ostrov",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/61/leaflet/infoletak_d35-casy-ostrov.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-ostrov-vysoke-myto",
+      "title": "ŘSD infoleták: D35 Ostrov–Vysoké Mýto (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/60/leaflet/infoletak_d35-ostrov-vysoke_myto.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-homole",
+      "title": "ŘSD infoleták: D35 Ostrov–Vysoké Mýto, tunel Homole (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/652/leaflet/infoletak_d35-ostrov-vys_myto-tunel-homole-A5.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-vysoke-myto-dzbanov",
+      "title": "ŘSD infoleták: D35 Vysoké Mýto–Džbánov (12/2025)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/59/leaflet/infoletak_d35-vys-myto-dzbanov.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-dzbanov-litomysl",
+      "title": "ŘSD infoleták: D35 Džbánov–Litomyšl (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/58/leaflet/infoletak_d35-dzbanov-litomysl.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-litomysl-janov",
+      "title": "ŘSD infoleták: D35 Litomyšl–Janov (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/57/leaflet/infoletak_d35-litomysl-janov.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-janov-opatovec",
+      "title": "ŘSD infoleták: D35 Janov–Opatovec (12/2025)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/56/leaflet/infoletak_d35-janov-opatovec.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-opatovec-stare-mesto",
+      "title": "ŘSD infoleták: D35 Opatovec–Staré Město (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/53/leaflet/infoletak_d35-opatovec-st_mesto.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-stare-mesto-mohelnice",
+      "title": "ŘSD infoleták: D35 Staré Město–Mohelnice (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/54/leaflet/infoletak_d35-stare-mesto-mohelnice.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-krelov-slavonin-2",
+      "title": "ŘSD infoleták: D35 Křelov–Slavonín, 2. etapa, stavba 3508.2 (11/2025)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/55/leaflet/infoletak_d35-krelov-slavonin-2et.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dalnice-d35-sections",
+      "title": "Dálnice D35: Úseky dálnice a novinky (ŘSD)",
+      "url": "https://www.dalnice-d35.cz",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dalnice-d35-ostrov-news",
+      "title": "ŘSD otevřelo další úsek D35 mezi Ostrovem a Vysokým Mýtem (24. 8. 2026)",
+      "url": "https://www.dalnice-d35.cz/novinky/z-tisku/rsd-otevrelo-dalsi-usek-d35-mezi-ostrovem-a-vysokym-mytem",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ceskedalnice-ostrov-opening",
+      "title": "České dálnice: ŘSD otevřelo nový úsek D35 u Vysokého Mýta (21. 8. 2026)",
+      "url": "https://www.ceskedalnice.cz/rsd-otevrelo-novy-usek-d35-u-vysokeho-myta/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nku-22-08",
+      "title": "NKÚ: Výstavba dvě stě deset kilometrů dlouhé dálnice D35 se zpožďuje a prodražuje (KA 22/08, 13. 11. 2023)",
+      "url": "https://www.nku.cz/cz/pro-media/tiskove-zpravy/vystavba-dve-ste-deset-kilometru-dlouhe-dalnice-d35-se-zpozduje-a-prodrazuje-id13536/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-cs-d35",
+      "title": "Wikipedie (cs): Dálnice D35",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D35",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-d35",
+      "title": "OpenStreetMap contributors: D35 motorway (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}
