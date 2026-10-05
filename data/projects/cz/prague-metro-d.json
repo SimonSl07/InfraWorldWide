@@ -1,0 +1,335 @@
+{
+  "id": "cz-prague-metro-d",
+  "country": "cz",
+  "city": "cz-prague",
+  "category": "railway",
+  "name": {
+    "en": "Prague Metro Line D (Náměstí Míru – Depo Písnice)",
+    "ro": "Linia D a metroului din Praga (Náměstí Míru – Depo Písnice)"
+  },
+  "description": {
+    "en": "Prague's fourth metro line, an automatic line planned from Náměstí Míru on Line A through Pankrác on Line C to Depo Písnice in the south: 10.6 km with 10 stations. DPP, the city transit company, splits it into I.D1a Pankrác – Olbrachtova (under construction since 21 April 2022), I.D1b Olbrachtova – Nové Dvory (contract signed on 7 April 2026 for CZK 29.99 billion excluding VAT, works started in June 2026), I.D2 Nové Dvory – Depo Písnice and I.D3 Pankrác – Náměstí Míru. DPP expects the first operable stretch, Pankrác – Nové Dvory with 5 stations, to open in the second half of 2032. Olbrachtova station is now called Ryšánka.",
+    "ro": "A patra linie de metrou a Pragăi, o linie automată planificată de la Náměstí Míru, pe linia A, prin Pankrác, pe linia C, până la Depo Písnice, în sud: 10,6 km cu 10 stații. DPP, compania de transport a orașului, o împarte în I.D1a Pankrác – Olbrachtova (în construcție din 21 aprilie 2022), I.D1b Olbrachtova – Nové Dvory (contract semnat pe 7 aprilie 2026 pentru 29,99 miliarde CZK fără TVA, lucrări începute în iunie 2026), I.D2 Nové Dvory – Depo Písnice și I.D3 Pankrác – Náměstí Míru. DPP preconizează deschiderea primului tronson operabil, Pankrác – Nové Dvory, cu 5 stații, în a doua jumătate a anului 2032. Stația Olbrachtova se numește acum Ryšánka."
+  },
+  "operator": "cz-dpp",
+  "stationCount": 10,
+  "lots": [
+    {
+      "id": "i-d1a-pankrac-olbrachtova",
+      "name": {
+        "en": "I.D1a Pankrác – Olbrachtova",
+        "ro": "I.D1a Pankrác – Olbrachtova"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-06",
+        "constructionStart": "2022-04-21",
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 0.98,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 2
+      },
+      "cost": {
+        "estimated": {
+          "amount": 10829,
+          "currency": "CZK",
+          "note": "Contracting authority's expected value, as reported by Zdopravy.cz. VAT basis not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 13750,
+              "currency": "CZK",
+              "year": 2021,
+              "note": "Lowest bid, CZK 13.75 billion in the DPP wording. VAT basis not stated."
+            },
+            "date": "2021-06",
+            "note": "Contract signed in June 2021 after the ÚOHS chairman rejected Eurovia's appeal on 28 June 2021.",
+            "sourceRef": "dpp-metro-d-preparation"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-06",
+          "sourceRef": "dpp-metro-d-preparation"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-04-21",
+          "sourceRef": "dpp-metro-d-schedule-page"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Subterra a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "HOCHTIEF CZ a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "HOCHTIEF Infrastructure GmbH",
+          "role": "builder"
+        },
+        {
+          "name": "Ed. Züblin AG",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 13750,
+          "currency": "CZK",
+          "year": 2021,
+          "note": "Lowest bid, CZK 13.75 billion in the DPP wording. VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Pankrác and Olbrachtova stations (the latter renamed Ryšánka) with the mined tunnel between them and a connecting tunnel to Line C. The whole section is mined with the New Austrian Tunnelling Method, apart from the vestibules. The five-company consortium led by Subterra won the tender on the lowest price; DPP gives the bid as CZK 13.75 billion and does not state VAT, and the expected value was CZK 10.829 billion. DPP states that I.D1a and I.D1b form one operating unit, with Pankrác – Nové Dvory expected to open in the second half of 2032. Length measured from OpenStreetMap geometry (station to station).",
+        "ro": "Stațiile Pankrác și Olbrachtova (a doua redenumită Ryšánka), cu tunelul minat dintre ele și un tunel de legătură spre linia C. Întreg tronsonul este minat cu Noua Metodă Austriacă de Tunelare, cu excepția vestibulelor. Consorțiul de cinci firme condus de Subterra a câștigat licitația cu cel mai mic preț; DPP indică oferta ca 13,75 miliarde CZK și nu precizează TVA, iar valoarea estimată era de 10,829 miliarde CZK. DPP precizează că I.D1a și I.D1b formează o singură unitate de exploatare, cu deschiderea Pankrác – Nové Dvory așteptată în a doua jumătate a anului 2032. Lungime măsurată din geometria OpenStreetMap (de la stație la stație)."
+      },
+      "sourceRefs": [
+        "dpp-metro-d-preparation",
+        "dpp-metro-d-split",
+        "dpp-metro-d-schedule-page",
+        "dpp-pr-d1b-start-2026",
+        "zdopravy-d1a-2021",
+        "cs-wikipedia-linka-d",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "i-d1a-pankrac-olbrachtova"
+    },
+    {
+      "id": "i-d1b-olbrachtova-nove-dvory",
+      "name": {
+        "en": "I.D1b Olbrachtova – Nové Dvory",
+        "ro": "I.D1b Olbrachtova – Nové Dvory"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2026-04-07",
+        "constructionStart": "2026-06",
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 3.05,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "cost": {
+        "estimated": {
+          "amount": 24630,
+          "currency": "CZK",
+          "note": "Expected price of the contract when the tender was launched on 30 May 2022, in the DPP wording. VAT basis not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 29990,
+              "currency": "CZK",
+              "year": 2026,
+              "note": "Excluding VAT. CZK 29.99 billion in the DPP wording."
+            },
+            "date": "2026-04-07",
+            "note": "Contract signed on 7 April 2026 (DPP press release).",
+            "sourceRef": "dpp-pr-d1b-contract-2026"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-05-30",
+          "sourceRef": "dpp-metro-d-preparation"
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-04-07",
+          "sourceRef": "dpp-pr-d1b-contract-2026"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-06",
+          "sourceRef": "dpp-pr-d1b-start-2026"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Subterra a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "HOCHTIEF CZ a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "HOCHTIEF Infrastructure GmbH",
+          "role": "builder"
+        },
+        {
+          "name": "BeMo Tunneling GmbH",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 72,
+        "value": {
+          "amount": 29990,
+          "currency": "CZK",
+          "year": 2026,
+          "note": "Excluding VAT. CZK 29.99 billion in the DPP wording."
+        }
+      },
+      "note": {
+        "en": "Nádraží Krč (surface, on a bridge), Nemocnice Krč (cut and cover) and Nové Dvory (mined) stations, with the running tunnels and the power system for Pankrác – Nové Dvory. DPP states a build time of 72 months on 13 sites; the two TBMs are launched from the Rezerva pit in Písnice, so the contract also covers running tunnels south of Nové Dvory under the future Libuš and Písnice stations, which lie in the I.D2 lot below. DPP lists 9,600 m of TBM drives, 2,600 m of mined tunnels and 102 m of cut-and-cover tunnels. The tender was launched on 30 May 2022 with an expected price of CZK 24.63 billion, and the signing was delayed by ÚOHS and court proceedings brought by unsuccessful bidders. DPP gave notice to proceed on signing; the ceremonial start was on 19 June 2026, and mining at Nové Dvory began on 18 September 2026. DPP expects Pankrác – Nové Dvory to open in the second half of 2032. Length measured from OpenStreetMap geometry (station to station).",
+        "ro": "Stațiile Nádraží Krč (de suprafață, pe un pod), Nemocnice Krč (executată în săpătură deschisă) și Nové Dvory (minată), cu tunelurile de linie și sistemul de alimentare pentru Pankrác – Nové Dvory. DPP indică o durată de execuție de 72 de luni pe 13 amplasamente; cele două TBM-uri pornesc din groapa Rezerva din Písnice, deci contractul cuprinde și tunelurile de linie la sud de Nové Dvory, pe sub viitoarele stații Libuš și Písnice, care aparțin lotului I.D2 de mai jos. DPP indică 9.600 m de săpături cu TBM, 2.600 m de tuneluri minate și 102 m de tuneluri în săpătură deschisă. Licitația a fost lansată pe 30 mai 2022, cu un preț estimat de 24,63 miliarde CZK, iar semnarea a fost întârziată de procedurile ÚOHS și de instanță inițiate de ofertanții respinși. DPP a dat ordinul de începere la semnare; startul festiv a fost pe 19 iunie 2026, iar săparea la Nové Dvory a început pe 18 septembrie 2026. DPP preconizează deschiderea Pankrác – Nové Dvory în a doua jumătate a anului 2032. Lungime măsurată din geometria OpenStreetMap (de la stație la stație)."
+      },
+      "sourceRefs": [
+        "dpp-pr-d1b-contract-2026",
+        "dpp-pr-d1b-start-2026",
+        "dpp-pr-d1b-mining-2026",
+        "dpp-metro-d-preparation",
+        "dpp-metro-d-split",
+        "cs-wikipedia-linka-d",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "i-d1b-olbrachtova-nove-dvory"
+    },
+    {
+      "id": "i-d2-nove-dvory-depo-pisnice",
+      "name": {
+        "en": "I.D2 Nové Dvory – Depo Písnice",
+        "ro": "I.D2 Nové Dvory – Depo Písnice"
+      },
+      "status": "planned",
+      "lengthKm": 3.8,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "note": {
+        "en": "Libuš, Písnice and Depo Písnice stations and the Písnice depot. The running tunnels between Nové Dvory and Písnice are bored under the I.D1b contract, so the stations and the depot are the remaining works. DPP launched the tender for Libuš station in early October 2026 with an expected value of CZK 3.755 billion excluding VAT and 54 months from site handover; the other stations and the depot have no contractor. cs.wikipedia, citing the 2026 plan, gives construction of Nové Dvory – Libuš from 2027, Libuš – Písnice from 2028 and Písnice – Depo Písnice from 2029, and opening Pankrác – Písnice in 2032 and Písnice – Depo Písnice in 2034. No single opening date applies to the lot, so none is recorded. Length measured from OpenStreetMap geometry (Nové Dvory station to Depo Písnice station).",
+        "ro": "Stațiile Libuš, Písnice și Depo Písnice și depoul Písnice. Tunelurile de linie dintre Nové Dvory și Písnice sunt săpate prin contractul I.D1b, deci lucrările rămase sunt stațiile și depoul. DPP a lansat licitația pentru stația Libuš la începutul lui octombrie 2026, cu o valoare estimată de 3,755 miliarde CZK fără TVA și 54 de luni de la predarea amplasamentului; celelalte stații și depoul nu au constructor. cs.wikipedia, citând planul din 2026, indică construcția Nové Dvory – Libuš din 2027, Libuš – Písnice din 2028 și Písnice – Depo Písnice din 2029, și deschiderea Pankrác – Písnice în 2032 și Písnice – Depo Písnice în 2034. Niciun termen unic de deschidere nu se aplică lotului, deci nu se înregistrează niciunul. Lungime măsurată din geometria OpenStreetMap (de la stația Nové Dvory la stația Depo Písnice)."
+      },
+      "sourceRefs": [
+        "dpp-pr-libus-tender-2026",
+        "dpp-metro-d-split",
+        "dpp-pr-d1b-start-2026",
+        "cs-wikipedia-linka-d",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "i-d2-nove-dvory-depo-pisnice"
+    },
+    {
+      "id": "i-d3-pankrac-namesti-miru",
+      "name": {
+        "en": "I.D3 Pankrác – Náměstí Míru",
+        "ro": "I.D3 Pankrác – Náměstí Míru"
+      },
+      "status": "planned",
+      "lengthKm": 2.76,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 2
+      },
+      "note": {
+        "en": "Nusle (working name Náměstí Bratří Synků) and Náměstí Míru stations, with the connection to Line A. cs.wikipedia, citing the 2026 plan, gives construction from 2029 and opening in 2036; DPP's own pages state no date for this stretch, so none is recorded. No tender has been launched and the city council decision of 2013 left this stretch undecided. The 10.6 km of the full line include this stretch. Length measured from OpenStreetMap geometry (from the Náměstí Míru station node to Pankrác).",
+        "ro": "Stațiile Nusle (denumire provizorie Náměstí Bratří Synků) și Náměstí Míru, cu legătura spre linia A. cs.wikipedia, citând planul din 2026, indică construcția din 2029 și deschiderea în 2036; paginile DPP nu indică nicio dată pentru acest tronson, deci nu se înregistrează niciuna. Nu a fost lansată nicio licitație, iar decizia consiliului orașului din 2013 a lăsat acest tronson nehotărât. Cei 10,6 km ai liniei întregi includ acest tronson. Lungime măsurată din geometria OpenStreetMap (de la nodul stației Náměstí Míru până la Pankrác)."
+      },
+      "sourceRefs": [
+        "dpp-metro-d-split",
+        "dpp-metro-d-schedule-page",
+        "cs-wikipedia-linka-d",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "i-d3-pankrac-namesti-miru"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dpp-pr-d1b-contract-2026",
+      "title": "DPP: Další úsek metra D Olbrachtova – Nové Dvory postaví sdružení vedené společností Subterra, DPP podepsal smlouvu se zhotovitelem (7 April 2026; cenu 29,99 miliard korun bez DPH)",
+      "url": "https://www.dpp.cz/spolecnost/pro-media/tiskove-zpravy/detail/278_3289-dalsi-usek-metra-d-olbrachtova-nove-dvory-postavi-sdruzeni-vedene-spolecnosti-subterra-dpp-podepsal-smlouvu-se-zhotovitelem",
+      "publisher": "Dopravní podnik hl. m. Prahy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dpp-pr-d1b-start-2026",
+      "title": "DPP: Začala stavba dalšího úseku metra D od stanice Olbrachtova na Nové Dvory (19 June 2026; stavba bude probíhat 72 měsíců, zprovoznění Pankrác – Nové Dvory ve druhé polovině roku 2032)",
+      "url": "https://www.dpp.cz/spolecnost/pro-media/tiskove-zpravy/detail/278_3368-zacala-stavba-dalsiho-useku-metra-d-od-stanice-olbrachtova-na-nove-dvory",
+      "publisher": "Dopravní podnik hl. m. Prahy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dpp-pr-d1b-mining-2026",
+      "title": "DPP: V Praze na Nových Dvorech začaly ražby dalšího úseku metra D (18 September 2026)",
+      "url": "https://www.dpp.cz/spolecnost/pro-media/tiskove-zpravy/detail/278_3458-v-praze-na-novych-dvorech-zacaly-razby-dalsiho-useku-metra-d",
+      "publisher": "Dopravní podnik hl. m. Prahy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dpp-pr-libus-tender-2026",
+      "title": "DPP: DPP vyhlašuje veřejnou zakázku na zhotovitele stanice metra D Libuš (2 October 2026; předpokládaná hodnota 3,755 miliard korun bez DPH)",
+      "url": "https://www.dpp.cz/spolecnost/pro-media/tiskove-zpravy/detail/278_3473-dpp-vyhlasuje-verejnou-zakazku-na-zhotovitele-stanice-metra-d-libus",
+      "publisher": "Dopravní podnik hl. m. Prahy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dpp-metro-d-preparation",
+      "title": "DPP Metro D: Stav přípravy, Výběr zhotovitelů (I.D1a: nejnižší cenu 13,75 miliard Kč; I.D1b: předpokládaná cena 24,63 miliard Kč)",
+      "url": "https://www.dpp.cz/metro-d/popis-projektu/stav-pripravy",
+      "publisher": "Dopravní podnik hl. m. Prahy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dpp-metro-d-split",
+      "title": "DPP Metro D: Členění projektu (I.D1a Pankrác – Olbrachtova, I.D1b Olbrachtova – Nové Dvory, I.D2 Nové Dvory – Depo Písnice, I.D3 Pankrác – Náměstí Míru)",
+      "url": "https://www.dpp.cz/metro-d/popis-projektu/cleneni-projektu",
+      "publisher": "Dopravní podnik hl. m. Prahy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "dpp-metro-d-schedule-page",
+      "title": "DPP Metro D: Harmonogram (Dne 21.4.2022 byla slavnostně zahájena stavba úseku I.D1a Pankrác - Olbrachtova); Orientační HMG přípravy a realizace k 8.4.2026",
+      "url": "https://www.dpp.cz/metro-d/popis-projektu/harmonogram",
+      "publisher": "Dopravní podnik hl. m. Prahy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "zdopravy-d1a-2021",
+      "title": "Zdopravy.cz: Podepsáno: První úsek metra postaví Subterra, Hochtief a Strabag za 13,75 miliardy (cena předpokládaná investorem 10,829 miliardy; trasa 10,6 km, 10 stanic)",
+      "url": "https://zdopravy.cz/podepsano-prvni-usek-metra-postavi-subterra-hochtief-a-strabag-za-1375-miliardy-85659/",
+      "publisher": "Zdopravy.cz",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cs-wikipedia-linka-d",
+      "title": "Wikipedie: Linka D (metro v Praze)",
+      "url": "https://cs.wikipedia.org/wiki/Linka_D_(metro_v_Praze)",
+      "publisher": "Wikipedie",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

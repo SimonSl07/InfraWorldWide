@@ -1,0 +1,305 @@
+{
+  "id": "hr-a1",
+  "country": "hr",
+  "category": "highway",
+  "name": {
+    "en": "A1 Motorway (Zagreb – Ploče)",
+    "ro": "Autostrada A1 (Zagreb – Ploče)"
+  },
+  "description": {
+    "en": "Croatia's longest motorway, running from the Lučko interchange at Zagreb through Karlovac, Zadar, Šibenik and Split to Ploče. The Zagreb–Karlovac section dates from 1972; construction resumed in 2000 and the Karlovac–Split link opened between 2001 and 2005, followed by Split–Šestanovac in 2007 and the sections to Ploče in 2008–2013. HAC reported 483.1 km in service after the last opening. Lots follow the opening chronology in English and Croatian Wikipedia. Where those articles name an interchange by an older name (Zadar 2, Pirovac, Vrpolje), the cut is at the interchange taken to correspond, as each lot note states. The Ploče–Dubrovnik extension, still unbuilt, is not modelled.",
+    "ro": "Cea mai lungă autostradă a Croației, de la nodul Lučko de lângă Zagreb prin Karlovac, Zadar, Šibenik și Split până la Ploče. Secțiunea Zagreb–Karlovac datează din 1972; lucrările au reînceput în 2000, legătura Karlovac–Split a fost deschisă între 2001 și 2005, urmată de Split–Šestanovac în 2007 și de sectoarele până la Ploče în 2008–2013. HAC a raportat 483,1 km în exploatare după ultima deschidere. Loturile urmează cronologia deschiderilor din Wikipedia în engleză și croată. Unde aceste articole numesc un nod printr-un nume mai vechi (Zadar 2, Pirovac, Vrpolje), tăietura este la nodul considerat corespunzător, așa cum arată nota fiecărui lot. Extinderea Ploče–Dubrovnik, încă nerealizată, nu este modelată."
+  },
+  "operator": "hr-hac",
+  "lots": [
+    {
+      "id": "zagreb-karlovac",
+      "name": {
+        "en": "Zagreb (Lučko) – Karlovac",
+        "ro": "Zagreb (Lučko) – Karlovac"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1972"
+      },
+      "lengthKm": 39.3,
+      "note": {
+        "en": "Built as the Zagreb–Karlovac section of the Zagreb–Rijeka motorway and later made part of the A1. English Wikipedia gives 39.3 km; the mapped alignment between the Lučko and Karlovac interchanges measures 38.97 km.",
+        "ro": "Construit ca secțiunea Zagreb–Karlovac a autostrăzii Zagreb–Rijeka și inclus ulterior în A1. Wikipedia în engleză indică 39,3 km; traseul cartografiat între nodurile Lučko și Karlovac măsoară 38,97 km."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia",
+        "wikipedia-hr-autocesta-a1"
+      ],
+      "geometryRef": "zagreb-karlovac"
+    },
+    {
+      "id": "karlovac-vukova-gorica",
+      "name": {
+        "en": "Karlovac – Vukova Gorica",
+        "ro": "Karlovac – Vukova Gorica"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2001"
+      },
+      "lengthKm": 16.78,
+      "note": {
+        "en": "Opened 2001 per English Wikipedia, which names Vukova Gorica as the end of this section; the cut is at the Vukova Gorica rest area. Includes the Novigrad interchange, opened in June 2012 on the existing road. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis în 2001 conform Wikipedia în engleză, care numește Vukova Gorica drept capătul sectorului; tăietura este la zona de odihnă Vukova Gorica. Include nodul Novigrad, deschis în iunie 2012 pe drumul existent. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "karlovac-vukova-gorica"
+    },
+    {
+      "id": "vukova-gorica-mala-kapela",
+      "name": {
+        "en": "Vukova Gorica – Mala Kapela tunnel",
+        "ro": "Vukova Gorica – tunelul Mala Kapela"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003"
+      },
+      "lengthKm": 47.09,
+      "note": {
+        "en": "Opened 2003 per English Wikipedia, one of the first sections not shared with the Zagreb–Rijeka motorway. Passes the Bosiljevo 1, Bosiljevo 2 (A6 junction) and Ogulin interchanges. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis în 2003 conform Wikipedia în engleză, printre primele sectoare necomune cu autostrada Zagreb–Rijeka. Trece prin nodurile Bosiljevo 1, Bosiljevo 2 (legătura cu A6) și Ogulin. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "vukova-gorica-mala-kapela"
+    },
+    {
+      "id": "mala-kapela-tunnel",
+      "name": {
+        "en": "Mala Kapela tunnel",
+        "ro": "Tunelul Mala Kapela"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005"
+      },
+      "lengthKm": 5.79,
+      "note": {
+        "en": "English Wikipedia: the tunnel itself opened in 2005, a year after the roads on both sides, and was first operated as a single tube with two-way traffic. Length is that of the OpenStreetMap way tagged Mala Kapela. It is a lot of the A1 itself, not a separate structure project. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia în engleză: tunelul propriu-zis a fost deschis în 2005, la un an după drumurile de la cele două capete, și a funcționat la început cu un singur tub, în sens dublu. Lungimea este cea a segmentului OpenStreetMap etichetat Mala Kapela. Este un lot al A1, nu un proiect separat de structură. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "mala-kapela-tunnel"
+    },
+    {
+      "id": "mala-kapela-gornja-ploca",
+      "name": {
+        "en": "Mala Kapela tunnel – Gornja Ploča",
+        "ro": "Tunelul Mala Kapela – Gornja Ploča"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004"
+      },
+      "lengthKm": 95.77,
+      "note": {
+        "en": "Opened 2004 per English Wikipedia. Passes the Brinje, Žuta Lokva (A7 junction), Otočac, Perušić and Gospić interchanges. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis în 2004 conform Wikipedia în engleză. Trece prin nodurile Brinje, Žuta Lokva (legătura cu A7), Otočac, Perušić și Gospić. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "mala-kapela-gornja-ploca"
+    },
+    {
+      "id": "gornja-ploca-zadar-istok",
+      "name": {
+        "en": "Gornja Ploča – Zadar East",
+        "ro": "Gornja Ploča – Zadar Est"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003"
+      },
+      "lengthKm": 58.12,
+      "note": {
+        "en": "English Wikipedia names this section Gornja Ploča–Zadar 2 and dates its opening to 2003; Zadar 2 is taken here to be the Zadar istok interchange. Includes the Sveti Rok tunnel, whose excavation began in 1993 per the same article, and the Maslenica Bridge. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia în engleză numește acest sector Gornja Ploča–Zadar 2 și îl datează în 2003; Zadar 2 este considerat aici nodul Zadar istok. Include tunelul Sveti Rok, a cărui excavare a început în 1993 conform aceluiași articol, și podul Maslenica. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "gornja-ploca-zadar-istok"
+    },
+    {
+      "id": "zadar-istok-vodice",
+      "name": {
+        "en": "Zadar East – Vodice",
+        "ro": "Zadar Est – Vodice"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004"
+      },
+      "lengthKm": 37.79,
+      "note": {
+        "en": "English Wikipedia dates Zadar 2–Pirovac to 2004. The Vodice exit, which serves Pirovac, is taken here as the Pirovac interchange. Passes the Benkovac interchange. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia în engleză datează Zadar 2–Pirovac în 2004. Ieșirea Vodice, care deservește Pirovac, este considerată aici nodul Pirovac. Trece prin nodul Benkovac. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "zadar-istok-vodice"
+    },
+    {
+      "id": "vodice-danilo",
+      "name": {
+        "en": "Vodice – Danilo",
+        "ro": "Vodice – Danilo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005"
+      },
+      "lengthKm": 33.36,
+      "note": {
+        "en": "English Wikipedia dates Pirovac–Vrpolje to 2005. The Danilo exit, which serves Vrpolje, is taken here as the Vrpolje interchange. Passes the Skradin and Šibenik interchanges; the Šibenik–Podi interchange was added in April 2024 per the same article. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia în engleză datează Pirovac–Vrpolje în 2005. Ieșirea Danilo, care deservește Vrpolje, este considerată aici nodul Vrpolje. Trece prin nodurile Skradin și Šibenik; nodul Šibenik–Podi a fost adăugat în aprilie 2024 conform aceluiași articol. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "vodice-danilo"
+    },
+    {
+      "id": "danilo-split",
+      "name": {
+        "en": "Danilo – Split (Dugopolje)",
+        "ro": "Danilo – Split (Dugopolje)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004"
+      },
+      "lengthKm": 44.6,
+      "note": {
+        "en": "English Wikipedia dates Vrpolje–Dugopolje to 2004; the A1 interchange at Dugopolje is signed Split. Passes the Prgomet and Vučevica interchanges. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia în engleză datează Vrpolje–Dugopolje în 2004; nodul A1 de la Dugopolje poartă denumirea Split. Trece prin nodurile Prgomet și Vučevica. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia"
+      ],
+      "geometryRef": "danilo-split"
+    },
+    {
+      "id": "split-sestanovac",
+      "name": {
+        "en": "Split (Dugopolje) – Šestanovac",
+        "ro": "Split (Dugopolje) – Šestanovac"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-06-27"
+      },
+      "lengthKm": 37,
+      "note": {
+        "en": "Croatian Wikipedia: 37 km, opened 27 June 2007, with 6 tunnels, 5 viaducts and a bridge over the Cetina. The mapped alignment measures 36.43 km. Passes the Bisko and Blato na Cetini interchanges.",
+        "ro": "Wikipedia în croată: 37 km, deschis la 27 iunie 2007, cu 6 tunele, 5 viaducte și un pod peste Cetina. Traseul cartografiat măsoară 36,43 km. Trece prin nodurile Bisko și Blato na Cetini."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia",
+        "wikipedia-hr-autocesta-a1"
+      ],
+      "geometryRef": "split-sestanovac"
+    },
+    {
+      "id": "sestanovac-ravca",
+      "name": {
+        "en": "Šestanovac – Ravča",
+        "ro": "Šestanovac – Ravča"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-12-22"
+      },
+      "lengthKm": 40,
+      "note": {
+        "en": "Croatian Wikipedia: 40 km, opened December 2008, worth about 1.66 billion kuna, with 47 structures (7 viaducts, 9 overpasses, 29 underpasses, 2 wildlife crossings). English Wikipedia gives 22 December 2008. Passes the Zagvozd interchange. The mapped alignment measures 40.49 km.",
+        "ro": "Wikipedia în croată: 40 km, deschis în decembrie 2008, în valoare de circa 1,66 miliarde kuna, cu 47 de structuri (7 viaducte, 9 pasaje superioare, 29 pasaje inferioare, 2 treceri pentru animale). Wikipedia în engleză indică 22 decembrie 2008. Trece prin nodul Zagvozd. Traseul cartografiat măsoară 40,49 km."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia",
+        "wikipedia-hr-autocesta-a1"
+      ],
+      "geometryRef": "sestanovac-ravca"
+    },
+    {
+      "id": "ravca-vrgorac",
+      "name": {
+        "en": "Ravča – Vrgorac",
+        "ro": "Ravča – Vrgorac"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-06-30"
+      },
+      "lengthKm": 9.8,
+      "note": {
+        "en": "Croatian Wikipedia: 9.8 km, opened 30 June 2011, with 5 viaducts, 4 overpasses, 1 tunnel and the Vrgorac interchange. The mapped alignment measures 10.45 km.",
+        "ro": "Wikipedia în croată: 9,8 km, deschis la 30 iunie 2011, cu 5 viaducte, 4 pasaje superioare, 1 tunel și nodul Vrgorac. Traseul cartografiat măsoară 10,45 km."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia",
+        "wikipedia-hr-autocesta-a1"
+      ],
+      "geometryRef": "ravca-vrgorac"
+    },
+    {
+      "id": "vrgorac-ploce-karamatici",
+      "name": {
+        "en": "Vrgorac – Ploče – Karamatići",
+        "ro": "Vrgorac – Ploče – Karamatići"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-12-20"
+      },
+      "lengthKm": 16,
+      "note": {
+        "en": "Croatian Wikipedia: opened 20 December 2013, 11 km from Vrgorac to the Ploče interchange and a further 5 km from the interchange towards the town of Ploče, joining the D8; 7 viaducts, 2 overpasses, 2 underpasses and 4 tunnels across both. Sourced length is 11 + 5 km; the mapped alignment measures 16.5 km. The A10 to the Bosnian border opened the same day. HAC stated the Zagreb–Split–Dubrovnik motorway then totalled 483.1 km.",
+        "ro": "Wikipedia în croată: deschis la 20 decembrie 2013, 11 km de la Vrgorac la nodul Ploče și încă 5 km de la nod spre orașul Ploče, cu racord la D8; 7 viaducte, 2 pasaje superioare, 2 pasaje inferioare și 4 tunele pe ambele. Lungimea din sursă este 11 + 5 km; traseul cartografiat măsoară 16,5 km. A10 spre granița cu Bosnia a fost deschisă în aceeași zi. HAC a indicat o lungime totală de 483,1 km pentru autostrada Zagreb–Split–Dubrovnik la acel moment."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a1-croatia",
+        "wikipedia-hr-autocesta-a1"
+      ],
+      "geometryRef": "vrgorac-ploce-karamatici"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-a1-croatia",
+      "title": "Wikipedia: A1 (Croatia)",
+      "url": "https://en.wikipedia.org/wiki/A1_(Croatia)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-hr-autocesta-a1",
+      "title": "Wikipedia (hr): Autocesta A1, Kronologija otvaranja dionica",
+      "url": "https://hr.wikipedia.org/wiki/Autocesta_A1",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap: relation 144793, Autocesta A1 (ref A1, network HR:Autoceste)",
+      "url": "https://www.openstreetmap.org/relation/144793",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

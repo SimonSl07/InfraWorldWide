@@ -1,0 +1,370 @@
+{
+  "id": "bg-vidin-montana",
+  "country": "bg",
+  "category": "highway",
+  "name": {
+    "en": "Vidin – Montana Motorway",
+    "ro": "Autostrada Vidin – Montana"
+  },
+  "description": {
+    "en": "A 95.43 km motorway in northwestern Bulgaria, from the junction with Danube Bridge 2 at Vidin to the Montana bypass, along the I-1 (E79) corridor. It is built in six lots. Makresh – Bela opened on 5 March 2024; Vidin – Makresh and Bela – Ruzhintsi are under construction, and the other three lots have been assigned to the state company Avtomagistrali EAD. As of 2025 the road has no official name or number.",
+    "ro": "Autostradă de 95,43 km în nord-vestul Bulgariei, de la legătura cu Podul Dunărea 2 de la Vidin până la centura Montanei, de-a lungul coridorului I-1 (E79). Este construită în șase loturi. Makresh – Bela a fost deschisă la 5 martie 2024; Vidin – Makresh și Bela – Ruzhintsi sunt în construcție, iar celelalte trei loturi au fost atribuite societății de stat Avtomagistrali EAD. În 2025 drumul nu avea nume sau număr oficial."
+  },
+  "operator": "bg-api",
+  "lots": [
+    {
+      "id": "vidin-makresh",
+      "name": {
+        "en": "Vidin – Makresh (Lot 1)",
+        "ro": "Vidin – Makresh (lotul 1)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2019-10-21"
+      },
+      "lengthKm": 29.643,
+      "cost": {
+        "estimated": {
+          "amount": 250.75,
+          "currency": "BGN",
+          "scope": "total",
+          "note": "Indicative value of the tender for design and construction, excluding VAT, not a ceiling.",
+          "year": 2019
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 298.03,
+              "currency": "BGN",
+              "year": 2019,
+              "scope": "total",
+              "note": "Design and construction, excluding VAT."
+            },
+            "date": "2019-10-21",
+            "sourceRef": "api-vidin-makresh"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget, under Council of Ministers Decree 258 of 10 October 2019 (Road Infrastructure Agency).",
+            "ro": "Buget de stat, prin Hotărârea Consiliului de Miniștri nr. 258 din 10 octombrie 2019 (Agenția pentru Infrastructură Rutieră)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "„Северозапад Лот 1“ ДЗЗД (ПСТ Груп ЕАД, Нивел строй ЕООД, Пътинженеринг-М АД, ПСТ Видин ЕООД, ПСТ София ЕООД)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 30,
+        "value": {
+          "amount": 298.03,
+          "currency": "BGN",
+          "year": 2019,
+          "scope": "total",
+          "note": "Design and construction, excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Km 3+757 (junction with Danube Bridge 2) to km 33+400 (Makresh junction). The first part, to km 8+870, follows the existing Vidin bypass, which is widened from G12 to G20; the rest is a new G28 alignment. Contract RD-33-13 signed on 21 October 2019 (30 months). The Road Infrastructure Agency page, archived 13 June 2024, lists the status as in execution, and the exit table on bg.wikipedia shows the section under construction.",
+        "ro": "De la km 3+757 (legătura cu Podul Dunărea 2) până la km 33+400 (nodul Makresh). Prima parte, până la km 8+870, urmează centura existentă a Vidinului, care este lărgită de la G12 la G20; restul este un traseu nou G28. Contractul RD-33-13 a fost semnat la 21 octombrie 2019 (30 de luni). Pagina Agenției pentru Infrastructură Rutieră, arhivată la 13 iunie 2024, indică starea ca fiind în execuție, iar tabelul de ieșiri de pe bg.wikipedia arată secțiunea în construcție."
+      },
+      "sourceRefs": [
+        "api-vidin-makresh",
+        "bgwiki-vidin-montana",
+        "openstreetmap"
+      ],
+      "geometryRef": "vidin-makresh"
+    },
+    {
+      "id": "makresh-bela",
+      "name": {
+        "en": "Makresh – Bela (Lot 2)",
+        "ro": "Makresh – Bela (lotul 2)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-10-02",
+        "opened": "2024-03-05"
+      },
+      "lengthKm": 13.6,
+      "cost": {
+        "estimated": {
+          "amount": 115.04,
+          "currency": "BGN",
+          "scope": "total",
+          "note": "Indicative value in the tender for design and construction, excluding VAT, not a ceiling. The procedure was terminated on 1 June 2020.",
+          "year": 2019
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget. Payment scheme: the full contract value is paid after the works are completed (bg.wikipedia).",
+            "ro": "Buget de stat. Schemă de plată: întreaga valoare a contractului se plătește după finalizarea lucrărilor (bg.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2024-03-05",
+          "note": {
+            "en": "Section opened to traffic.",
+            "ro": "Secțiunea a fost deschisă circulației."
+          },
+          "sourceRef": "bgwiki-vidin-montana"
+        }
+      ],
+      "note": {
+        "en": "Km 33+400 to km 47+000, with the Makresh and Bela junctions. The works tender was terminated on 1 June 2020 and construction was assigned directly to the state company Avtomagistrali EAD on 2 October 2020 (in-house procedure). Opened to traffic on 5 March 2024; the National Construction Control Directorate issued the use permit on 30 May 2024. The Road Infrastructure Agency lists the construction value with indexation as 341,270,419.19 BGN including VAT (archived 13 June 2024).",
+        "ro": "De la km 33+400 la km 47+000, cu nodurile Makresh și Bela. Licitația pentru lucrări a fost reziliată la 1 iunie 2020, iar construcția a fost atribuită direct societății de stat Avtomagistrali EAD la 2 octombrie 2020 (procedură in-house). Deschisă circulației la 5 martie 2024; Direcția Națională de Control în Construcții a emis autorizația de utilizare la 30 mai 2024. Agenția pentru Infrastructură Rutieră indică valoarea construcției cu indexare ca 341.270.419,19 BGN cu TVA (arhivat la 13 iunie 2024)."
+      },
+      "sourceRefs": [
+        "bgwiki-vidin-montana",
+        "api-makresh-montana",
+        "openstreetmap"
+      ],
+      "geometryRef": "makresh-bela"
+    },
+    {
+      "id": "bela-ruzhintsi",
+      "name": {
+        "en": "Bela – Ruzhintsi (Lot 3)",
+        "ro": "Bela – Ruzhintsi (lotul 3)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-10-02"
+      },
+      "lengthKm": 11.128,
+      "cost": {
+        "estimated": {
+          "amount": 94.14,
+          "currency": "BGN",
+          "scope": "total",
+          "note": "Forecast value in the tender for design and construction, excluding VAT, not a ceiling. The procedure was terminated on 23 July 2020.",
+          "year": 2019
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget. Payment scheme: the full contract value is paid after the works are completed (bg.wikipedia).",
+            "ro": "Buget de stat. Schemă de plată: întreaga valoare a contractului se plătește după finalizarea lucrărilor (bg.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "suspended",
+          "date": "2023-10-31",
+          "note": {
+            "en": "Act 10 recording the state of the works on suspension of construction.",
+            "ro": "Actul 10 privind starea lucrărilor la suspendarea construcției."
+          },
+          "sourceRef": "api-makresh-montana"
+        }
+      ],
+      "note": {
+        "en": "Km 47+000 to km 58+128 (Ruzhintsi junction). Construction was assigned directly to Avtomagistrali EAD on 2 October 2020. The Road Infrastructure Agency page (archived 13 June 2024) records an act of 31 October 2023 on the state of the works on suspension of construction. The supervision contract was ended and a new supervisor, Nadzor Sever DZZD, was contracted on 20 December 2024. The exit table on bg.wikipedia marks the section as partially in operation; no source states which part. The Agency lists the construction value with indexation as 210,074,286.41 BGN including VAT.",
+        "ro": "De la km 47+000 la km 58+128 (nodul Ruzhintsi). Construcția a fost atribuită direct către Avtomagistrali EAD la 2 octombrie 2020. Pagina Agenției pentru Infrastructură Rutieră (arhivată la 13 iunie 2024) consemnează un act din 31 octombrie 2023 privind starea lucrărilor la suspendarea construcției. Contractul de supervizare a fost încheiat, iar un nou supervizor, Nadzor Sever DZZD, a fost contractat la 20 decembrie 2024. Tabelul de ieșiri de pe bg.wikipedia marchează secțiunea ca parțial în exploatare; nicio sursă nu spune care parte. Agenția indică valoarea construcției cu indexare ca 210.074.286,41 BGN cu TVA."
+      },
+      "sourceRefs": [
+        "bgwiki-vidin-montana",
+        "api-makresh-montana",
+        "openstreetmap"
+      ],
+      "geometryRef": "bela-ruzhintsi"
+    },
+    {
+      "id": "ruzhintsi-belotintsi",
+      "name": {
+        "en": "Ruzhintsi – Belotintsi (Lot 4)",
+        "ro": "Ruzhintsi – Belotintsi (lotul 4)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2020-10-02"
+      },
+      "lengthKm": 15.392,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget. Payment scheme: the full contract value is paid after the works are completed (bg.wikipedia).",
+            "ro": "Buget de stat. Schemă de plată: întreaga valoare a contractului se plătește după finalizarea lucrărilor (bg.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 28,
+        "value": {
+          "amount": 246.89,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Including VAT. Construction value under the in-house contract with Avtomagistrali EAD.",
+          "year": 2020
+        }
+      },
+      "note": {
+        "en": "Km 58+128 to km 73+520 (Belotintsi junction), entirely east of the existing I-1 (E79). Assigned directly to Avtomagistrali EAD on 2 October 2020. Construction permit RS-40 of 7 June 2024 covers Ruzhintsi – Montana, and the construction site for the section was opened by protocol on 5 December 2024. No source seen records works under way. The contract term is 28 months after the site is opened. The value is the Road Infrastructure Agency figure for this section of the contract.",
+        "ro": "De la km 58+128 la km 73+520 (nodul Belotintsi), integral la est de drumul existent I-1 (E79). Atribuită direct către Avtomagistrali EAD la 2 octombrie 2020. Autorizația de construire RS-40 din 7 iunie 2024 acoperă Ruzhintsi – Montana, iar șantierul secțiunii a fost deschis prin protocol la 5 decembrie 2024. Nicio sursă consultată nu consemnează lucrări în desfășurare. Termenul contractului este de 28 de luni de la deschiderea șantierului. Valoarea este cifra Agenției pentru Infrastructură Rutieră pentru această secțiune a contractului."
+      },
+      "sourceRefs": [
+        "bgwiki-vidin-montana",
+        "api-makresh-montana",
+        "openstreetmap"
+      ],
+      "geometryRef": "ruzhintsi-belotintsi"
+    },
+    {
+      "id": "belotintsi-vinishte",
+      "name": {
+        "en": "Belotintsi – Vinishte (Lot 5)",
+        "ro": "Belotintsi – Vinishte (lotul 5)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2020-10-02"
+      },
+      "lengthKm": 11.98,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget. Payment scheme: the full contract value is paid after the works are completed (bg.wikipedia).",
+            "ro": "Buget de stat. Schemă de plată: întreaga valoare a contractului se plătește după finalizarea lucrărilor (bg.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 28,
+        "value": {
+          "amount": 146.83,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Including VAT. Construction value under the in-house contract with Avtomagistrali EAD.",
+          "year": 2020
+        }
+      },
+      "note": {
+        "en": "Km 73+520 to km 85+520 (Vinishte junction). Assigned directly to Avtomagistrali EAD on 2 October 2020. The contract term is 28 months after the site is opened. Permit RS-40 (7 June 2024) and the site protocol of 5 December 2024 cover Ruzhintsi – Montana. The exit table on bg.wikipedia shows the section as planned; the geometry drawn is the alignment mapped in OpenStreetMap.",
+        "ro": "De la km 73+520 la km 85+520 (nodul Vinishte). Atribuită direct către Avtomagistrali EAD la 2 octombrie 2020. Termenul contractului este de 28 de luni de la deschiderea șantierului. Autorizația RS-40 (7 iunie 2024) și protocolul de șantier din 5 decembrie 2024 acoperă Ruzhintsi – Montana. Tabelul de ieșiri de pe bg.wikipedia arată secțiunea ca planificată; geometria desenată este traseul cartografiat în OpenStreetMap."
+      },
+      "sourceRefs": [
+        "bgwiki-vidin-montana",
+        "api-makresh-montana",
+        "openstreetmap"
+      ],
+      "geometryRef": "belotintsi-vinishte"
+    },
+    {
+      "id": "vinishte-montana",
+      "name": {
+        "en": "Vinishte – Montana (Lot 6)",
+        "ro": "Vinishte – Montana (lotul 6)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2020-10-02"
+      },
+      "lengthKm": 13.693,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget. Payment scheme: the full contract value is paid after the works are completed (bg.wikipedia).",
+            "ro": "Buget de stat. Schemă de plată: întreaga valoare a contractului se plătește după finalizarea lucrărilor (bg.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Автомагистрали ЕАД",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 32,
+        "value": {
+          "amount": 189.66,
+          "currency": "BGN",
+          "scope": "works",
+          "note": "Including VAT. Construction value under the in-house contract with Avtomagistrali EAD.",
+          "year": 2020
+        }
+      },
+      "note": {
+        "en": "Km 85+520 to km 99+193, where it joins the Montana bypass; the lot also includes completing the bypass junction at km 102+753. Assigned directly to Avtomagistrali EAD on 2 October 2020. The contract term is 32 months after the site is opened. Permit RS-40 (7 June 2024) and the site protocol of 5 December 2024 cover Ruzhintsi – Montana. The Road Infrastructure Agency page (archived 13 June 2024) gives the status as design of the section. The exit table on bg.wikipedia shows it as planned; the geometry drawn is the alignment mapped in OpenStreetMap.",
+        "ro": "De la km 85+520 la km 99+193, unde se leagă de centura Montanei; lotul include și completarea nodului de pe centură la km 102+753. Atribuită direct către Avtomagistrali EAD la 2 octombrie 2020. Termenul contractului este de 32 de luni de la deschiderea șantierului. Autorizația RS-40 (7 iunie 2024) și protocolul de șantier din 5 decembrie 2024 acoperă Ruzhintsi – Montana. Pagina Agenției pentru Infrastructură Rutieră (arhivată la 13 iunie 2024) indică starea ca proiectare a secțiunii. Tabelul de ieșiri de pe bg.wikipedia o arată ca planificată; geometria desenată este traseul cartografiat în OpenStreetMap."
+      },
+      "sourceRefs": [
+        "bgwiki-vidin-montana",
+        "api-makresh-montana",
+        "openstreetmap"
+      ],
+      "geometryRef": "vinishte-montana"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bgwiki-vidin-montana",
+      "title": "Wikipedia (bg): Автомагистрала „Видин – Монтана“",
+      "url": "https://bg.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B0_%E2%80%9E%D0%92%D0%B8%D0%B4%D0%B8%D0%BD_%E2%80%93_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0%E2%80%9C",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "api-vidin-makresh",
+      "title": "API: Път I-1 Видин – пътен възел „Макреш“ (archived 2024-06-13)",
+      "url": "https://www.api.bg/bg/put-i-1-vidin-puten-vuzel-makresh.html",
+      "retrievedOn": "2026-10-05",
+      "archiveUrl": "https://web.archive.org/web/20240613061649/https://www.api.bg/bg/put-i-1-vidin-puten-vuzel-makresh.html"
+    },
+    {
+      "id": "api-makresh-montana",
+      "title": "API: Пътен възел „Макреш“ – обходен път на гр. Монтана (archived 2024-06-13)",
+      "url": "https://www.api.bg/bg/puten-vuzel-makresh-obkhoden-put-na-gr-montana-ot-km-33-400-do-km-102-600-km-99-193-kilometrazh-po-proekt.html",
+      "retrievedOn": "2026-10-05",
+      "archiveUrl": "https://web.archive.org/web/20240613070644/https://www.api.bg/bg/puten-vuzel-makresh-obkhoden-put-na-gr-montana-ot-km-33-400-do-km-102-600-km-99-193-kilometrazh-po-proekt.html"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

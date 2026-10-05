@@ -6,6 +6,7 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   RON: "lei ",
   BGN: "лв",
   RSD: "дин.",
+  CZK: "Kč",
   GBP: "£",
 };
 
