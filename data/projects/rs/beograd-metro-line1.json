@@ -1,0 +1,95 @@
+{
+  "id": "rs-beograd-metro-line1",
+  "country": "rs",
+  "city": "rs-belgrade",
+  "category": "railway",
+  "name": {
+    "en": "Belgrade Metro Line 1, Phase 1",
+    "ro": "Linia 1 a metroului din Belgrad, faza 1"
+  },
+  "description": {
+    "en": "First line of the Belgrade metro. The whole of Line 1 is 21.3 km with 21 stations and 13 evacuation and ventilation shafts, plus the Makiš depot. Phase 1 is 15.4 km with 15 stations: part on the surface or cut and cover, and tunnel from Bele Vode towards the centre, with about 11 km bored by two TBMs. The Ministry of Construction, Transport and Infrastructure splits the design-and-build work into seven contracts, five of them with Power Construction Corporation of China: Makiš depot, Lots 1 to 3 of phase 1 and phase 2. Lots 1 and 2 are under way, and the Lot 3 contract was signed on 18 September 2026.",
+    "ro": "Prima linie a metroului din Belgrad. Linia 1 în întregime măsoară 21,3 km, cu 21 de stații și 13 puțuri de evacuare și ventilație, plus depoul Makiš. Faza 1 are 15,4 km și 15 stații: o parte la suprafață sau în săpătură deschisă, iar de la Bele Vode spre centru în tunel, cu circa 11 km excavați de două TBM-uri. Ministerul Construcțiilor, Transporturilor și Infrastructurii împarte lucrările de proiectare și execuție în șapte contracte, cinci dintre ele cu Power Construction Corporation of China: depoul Makiš, loturile 1–3 ale fazei 1 și faza 2. Loturile 1 și 2 sunt în lucru, iar contractul pentru lotul 3 a fost semnat pe 18 septembrie 2026."
+  },
+  "stationCount": 21,
+  "lots": [
+    {
+      "id": "line-1-phase-1",
+      "name": {
+        "en": "Line 1, phase 1 (Lots 1 to 3)",
+        "ro": "Linia 1, faza 1 (loturile 1–3)"
+      },
+      "status": "under_construction",
+      "dates": {},
+      "lengthKm": 15.4,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 15
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Budget of the Republic of Serbia (MGSI project page)",
+            "ro": "Bugetul Republicii Serbia (pagina de proiect MGSI)"
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Commercial loan (MGSI project page, lender not named)",
+            "ro": "Credit comercial (pagina de proiect MGSI, creditorul nu este numit)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Power Construction Corporation of China, Limited",
+          "role": "builder"
+        },
+        {
+          "name": "Power Construction Corporation of China, Limited",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Phase 1 is let as three design-and-build lots to Power Construction Corporation of China, signed under an intergovernmental agreement between Serbia and China. The Lot 3 contract was signed on 18 September 2026, completing the construction contracting of phase 1. No per-lot length or section limits were found in the sources, so the three lots are one lot here. MGSI gives contract commencement dates of 10 January 2025 for Lots 1 and 2 and 12 January 2025 for the Makiš depot; these are contract dates, not recorded as a construction start. Contract values excluding VAT: depot EUR 210 million, Lot 1 EUR 20.34 million (design, works and preparation for TBM procurement), Lot 2 EUR 20 million; Lot 3 was not priced on the MGSI page. These are separate contracts, so none is recorded as a cost of this lot. The Makiš depot, which will run Lines 1 and 2, is not drawn and its length is not counted. Metro systems and trains are procured separately; MGSI lists Alstom for the phase 1 transport systems contract, which it expected to sign in the second quarter of 2025, and the Telegraf report says only that systems and trains have been contracted. Two TBMs left China in August 2026 for Belgrade, expected in Europe by October, to excavate about 11 km of tunnel. Phase 2 (the rest of Line 1, which MGSI expects to contract with Power Construction Corporation of China and Alstom) has no stated length or extent and is not modelled. Geometry is a single OpenStreetMap way tagged as Line 1 (railway=proposed, with a mapper's note that it is under construction and due 2030), 16.5 km as drawn against 15.4 km recorded, with the mapper's geometry source given as the bgmetro.rs phase 1 page. The recorded length is the sourced figure.",
+        "ro": "Faza 1 este atribuită în trei loturi de proiectare și execuție către Power Construction Corporation of China, în baza unui acord interguvernamental între Serbia și China. Contractul pentru lotul 3 a fost semnat pe 18 septembrie 2026, ceea ce încheie contractarea lucrărilor de construcție ale fazei 1. Sursele nu dau lungimi sau limite pe loturi, așa că cele trei loturi formează aici un singur lot. MGSI indică date de începere a contractelor de 10 ianuarie 2025 pentru loturile 1 și 2 și de 12 ianuarie 2025 pentru depoul Makiš; sunt date contractuale, nu sunt înregistrate ca început al construcției. Valorile contractelor fără TVA: depou 210 milioane EUR, lotul 1 20,34 milioane EUR (proiectare, lucrări și pregătirea achiziției TBM), lotul 2 20 de milioane EUR; lotul 3 nu avea preț pe pagina MGSI. Sunt contracte separate, deci niciuna nu este înregistrată drept cost al acestui lot. Depoul Makiš, care va deservi liniile 1 și 2, nu este desenat și lungimea lui nu este numărată. Sistemele de metrou și trenurile se achiziționează separat; MGSI indică Alstom pentru contractul de sisteme de transport al fazei 1, pe care îl aștepta în trimestrul al doilea din 2025, iar articolul Telegraf spune doar că sistemele și trenurile au fost contractate. Două TBM-uri au plecat din China în august 2026 spre Belgrad, așteptate în Europa până în octombrie, pentru excavarea a circa 11 km de tunel. Faza 2 (restul liniei 1, pe care MGSI se așteaptă să o contracteze cu Power Construction Corporation of China și Alstom) nu are lungime sau traseu declarat și nu este modelată. Geometria este o singură cale OpenStreetMap etichetată drept linia 1 (railway=proposed, cu nota cartografului că este în construcție și programată pentru 2030), 16,5 km desenați față de 15,4 km înregistrați, cu sursa geometriei indicată de cartograf ca pagina bgmetro.rs a fazei 1. Lungimea înregistrată este cifra din sursă."
+      },
+      "sourceRefs": [
+        "mgsi-line1",
+        "telegraf-2026-09-28",
+        "wikipedia-en-belgrade-metro",
+        "osm-line1-way"
+      ],
+      "geometryRef": "line-1-phase-1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mgsi-line1",
+      "title": "MGSI: Projektovanje i izgradnja Linije 1 metroa (project page, 19 June 2025)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/projektovanje-i-izgradnja-linije-1-metroa",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "telegraf-2026-09-28",
+      "title": "Telegraf Biznis: Beogradski metro više nije samo plan: „Krtice“ stižu, ugovori su potpisani, evo dokle su stigli radovi (28 September 2026)",
+      "url": "https://biznis.telegraf.rs/info-biz/4404595-beogradski-metro-vise-nije-samo-plan-krtice-stizu-ugovori-su-potpisani-evo-dokle-su-stigli-radovi",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-en-belgrade-metro",
+      "title": "Wikipedia: Belgrade Metro (planned Line 1, Železnik – Mirijevo, 21.3 km)",
+      "url": "https://en.wikipedia.org/wiki/Belgrade_Metro",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-line1-way",
+      "title": "OpenStreetMap contributors: way 1442686340, Linija 1 Beogradskog metroa (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1442686340",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

@@ -7,32 +7,91 @@
     "ro": "Autostrada A3 Struma"
   },
   "description": {
-    "en": "A 172.8 km motorway in southwestern Bulgaria running Sofia–Pernik–Blagoevgrad–Kresna–Kulata, from the capital to the Greek border on Pan-European Corridor IV (European route E-79). Its lots opened between 2013 and 2024; the Kresna Gorge bypass (Lot 3.2) was still under construction as of 2026.",
-    "ro": "Autostradă de 172,8 km în sud-vestul Bulgariei, pe traseul Sofia–Pernik–Blagoevgrad–Kresna–Kulata, de la capitală până la frontiera cu Grecia, pe Coridorul paneuropean IV (drumul european E-79). Loturile sale au fost deschise între 2013 și 2024; varianta de ocolire a defileului Kresna (lotul 3.2) era încă în construcție în 2026."
+    "en": "A 172.8 km motorway in southwestern Bulgaria running Sofia–Pernik–Blagoevgrad–Kresna–Kulata, from the capital to the Greek border on Pan-European Corridor IV (European route E-79). Its first section opened in 2007 and the latest in 2024. The former Lyulin motorway (Sofia – Daskalovo) became part of it in December 2018. Lot 3.2 through the Kresna Gorge was still unbuilt as of 2026: Lot 3.2.2 has been under construction since November 2025 and Lot 3.2.1 is contracted.",
+    "ro": "Autostradă de 172,8 km în sud-vestul Bulgariei, pe traseul Sofia–Pernik–Blagoevgrad–Kresna–Kulata, de la capitală până la frontiera cu Grecia, pe Coridorul paneuropean IV (drumul european E-79). Primul tronson a fost deschis în 2007, iar cel mai recent în 2024. Fosta autostradă Lyulin (Sofia – Daskalovo) a devenit parte a ei în decembrie 2018. Lotul 3.2 prin defileul Kresna nu era încă construit în 2026: lotul 3.2.2 este în construcție din noiembrie 2025, iar lotul 3.2.1 este contractat."
   },
   "corridors": [
     "pan-european-iv"
   ],
   "lots": [
     {
+      "id": "sofia-daskalovo",
+      "name": {
+        "en": "Sofia ring road – Daskalovo (former Lyulin motorway)",
+        "ro": "Centura Sofia – Daskalovo (fosta autostradă Lyulin)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-08-08",
+        "constructionStart": "2007-01-31",
+        "opened": "2011-05-15"
+      },
+      "lengthKm": 19.135,
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-ispa",
+          "detail": {
+            "en": "ISPA grant of EUR 135 million towards a total project value of EUR 185 million (Road Infrastructure Agency)",
+            "ro": "Grant ISPA de 135 milioane de euro, dintr-o valoare totală a proiectului de 185 milioane de euro (Agenția pentru Infrastructură Rutieră)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "„Мапа Дженгиз“ ДЗЗД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Built as the separate Lyulin motorway, 19.135 km from the Sofia ring road to the Daskalovo junction, with three tunnels (Malo Buchino, Lyulin, Golemo Buchino) and 26 bridges and viaducts. Contract signed 8 August 2006; officially opened 15 May 2011. A Council of Ministers decision of 27 December 2018 merged it into A3 Struma.",
+        "ro": "Construită ca autostrada separată Lyulin, 19,135 km de la centura Sofiei până la nodul Daskalovo, cu trei tuneluri (Malo Buchino, Lyulin, Golemo Buchino) și 26 de poduri și viaducte. Contract semnat la 8 august 2006; deschisă oficial la 15 mai 2011. O hotărâre a Consiliului de Miniștri din 27 decembrie 2018 a inclus-o în A3 Struma."
+      },
+      "sourceRefs": [
+        "bgwiki-lyulin-motorway",
+        "bgwiki-struma-motorway"
+      ],
+      "geometryRef": "sofia-daskalovo"
+    },
+    {
+      "id": "daskalovo-dolna-dikanya",
+      "name": {
+        "en": "Daskalovo – Dolna Dikanya (Lot 0)",
+        "ro": "Daskalovo – Dolna Dikanya (lotul 0)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-01-31"
+      },
+      "lengthKm": 17.77,
+      "note": {
+        "en": "Lot 0, km 287+450 to km 305+220. Open to traffic since 31 January 2007, but for years it had no use permit because the cadastral maps placed the road up to 20 m from where it was built. Its speed limit stayed at 90 km/h until the next section opened in July 2013.",
+        "ro": "Lotul 0, de la km 287+450 la km 305+220. Deschis circulației din 31 ianuarie 2007, dar ani la rând nu a avut autorizație de utilizare, deoarece hărțile cadastrale plasau drumul până la 20 m de locul unde a fost construit. Limita de viteză a rămas 90 km/h până la deschiderea tronsonului următor, în iulie 2013."
+      },
+      "sourceRefs": [
+        "bgwiki-struma-motorway"
+      ],
+      "geometryRef": "daskalovo-dolna-dikanya"
+    },
+    {
       "id": "dolna-dikanya-dupnitsa",
       "name": {
-        "en": "Dolna Dikanya – Dupnitsa",
-        "ro": "Dolna Dikanya – Dupnitsa"
+        "en": "Dolna Dikanya – Dupnitsa North",
+        "ro": "Dolna Dikanya – Dupnitsa Nord"
       },
       "status": "opened",
       "dates": {
         "tenderAwarded": "2011-09-30",
         "constructionStart": "2011-10-01",
-        "opened": "2013-07"
+        "opened": "2013-07-23"
       },
-      "lengthKm": 16.78,
+      "lengthKm": 13.98,
       "cost": {
         "estimated": {
           "amount": 100,
           "currency": "BGN",
-          "scope": "works",
-          "note": "Estimated value in the March 2011 contract notice for additional design and construction, excluding VAT."
+          "scope": "programme",
+          "note": "Estimated value in the March 2011 contract notice for additional design and construction, excluding VAT. Covers the whole 16.78 km Lot 1, including the 2.8 km opened in 2015."
         },
         "revisions": [
           {
@@ -41,8 +100,8 @@
               "amount": 70.2408,
               "currency": "BGN",
               "year": 2011,
-              "scope": "works",
-              "note": "Additional design and construction. Including VAT."
+              "scope": "programme",
+              "note": "Additional design and construction. Including VAT. Covers the whole 16.78 km Lot 1, including the 2.8 km opened in 2015."
             },
             "date": "2011-09-30",
             "sourceRef": "api-struma-lot-1"
@@ -71,17 +130,62 @@
           "amount": 70.2408,
           "currency": "BGN",
           "year": 2011,
-          "scope": "works",
-          "note": "Additional design and construction. Including VAT."
+          "scope": "programme",
+          "note": "Additional design and construction. Including VAT. Covers the whole 16.78 km Lot 1, including the 2.8 km opened in 2015."
         }
       },
       "sourceRefs": [
         "wikipedia-a3-motorway-bulgaria",
         "api-struma-lot-1",
         "api-struma-overview",
-        "ted-2011-s49-080180"
+        "ted-2011-s49-080180",
+        "bgwiki-struma-motorway"
       ],
-      "geometryRef": "dolna-dikanya-dupnitsa"
+      "geometryRef": "dolna-dikanya-dupnitsa",
+      "note": {
+        "en": "First part of Lot 1, which runs from km 305+220 to km 322+000 (16.78 km). 13.98 km, to the Dupnitsa North junction, opened on 23 July 2013; the last 2.8 km (km 319+200 to km 322+000) is a separate lot. The cost and contract cover all 16.78 km.",
+        "ro": "Prima parte a lotului 1, care se întinde de la km 305+220 la km 322+000 (16,78 km). 13,98 km, până la nodul Dupnitsa Nord, au fost deschiși la 23 iulie 2013; ultimii 2,8 km (km 319+200 – km 322+000) formează un lot separat. Costul și contractul acoperă toți cei 16,78 km."
+      }
+    },
+    {
+      "id": "dupnitsa-north-km-322",
+      "name": {
+        "en": "Dupnitsa North – km 322 (end of Lot 1)",
+        "ro": "Dupnitsa Nord – km 322 (finalul lotului 1)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-09-30",
+        "constructionStart": "2011-10-01",
+        "opened": "2015-10"
+      },
+      "lengthKm": 2.8,
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund via Operational Programme Transport 2007–2013 (project Struma Motorway Lots 1, 2 and 4), with national co-financing",
+            "ro": "Fondul de coeziune prin Programul Operațional Transport 2007–2013 (proiectul Autostrada Struma, loturile 1, 2 și 4), cu cofinanțare națională"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Консорциум „Струма – 1“ (Импреза АД, ГБС-Инфраструктурно строителство АД, Пътстрой-92 АД)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Last 2.8 km of Lot 1, km 319+200 to km 322+000, left out of the July 2013 opening and scheduled for October 2015. No separate opening date is published: when Lot 2 opened on 22 October 2015, the Road Infrastructure Agency listed all 16.78 km of Lot 1 as complete. Its cost is recorded on Dolna Dikanya – Dupnitsa North.",
+        "ro": "Ultimii 2,8 km ai lotului 1, de la km 319+200 la km 322+000, lăsați în afara deschiderii din iulie 2013 și programați pentru octombrie 2015. Nu este publicată o dată separată de deschidere: la deschiderea lotului 2, pe 22 octombrie 2015, Agenția pentru Infrastructură Rutieră a declarat finalizați toți cei 16,78 km ai lotului 1. Costul este înregistrat la Dolna Dikanya – Dupnitsa Nord."
+      },
+      "sourceRefs": [
+        "bgwiki-struma-motorway",
+        "api-struma-lot-1",
+        "autopress-struma-lot-2-opening-2015"
+      ],
+      "geometryRef": "dupnitsa-north-km-322"
     },
     {
       "id": "dupnitsa-blagoevgrad",
@@ -233,6 +337,65 @@
         "aop-struma-lot-3-1-notice"
       ],
       "geometryRef": "blagoevgrad-krupnik"
+    },
+    {
+      "id": "krupnik-kresna-lot-3-2-1",
+      "name": {
+        "en": "Krupnik – Kresna (Lot 3.2.1)",
+        "ro": "Krupnik – Kresna (lotul 3.2.1)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2023",
+        "expectedOpening": "2029"
+      },
+      "lengthKm": 13.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 306,
+              "currency": "EUR",
+              "year": 2023,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Design and construction, including VAT (\"almost EUR 306 million\", Economic.bg, 2026). Contractor selected in November 2019; contract signed in 2023."
+            },
+            "date": "2023",
+            "sourceRef": "economic-bg-kresna-bypass-2026"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "ДЗЗД „АПП ЛОТ 3.2.1“ (Грома Холд ЕООД, Европейски пътища АД, Водно строителство – Благоевград АД, Пътпроект ЕООД, Вахостав-СК а.с.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 306,
+          "currency": "EUR",
+          "year": 2023,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Design and construction, including VAT (\"almost EUR 306 million\", Economic.bg, 2026). Contractor selected in November 2019; contract signed in 2023."
+        }
+      },
+      "note": {
+        "en": "Lot 3.2.1, km 375+860 to km 389+100, mainly the left (Kulata – Sofia) carriageway, with the Simitli (211 m), Rakitna (1135 m) and Stara Kresna (1052 m) tunnels. The contractor was selected on 15 November 2019 and the contract signed in 2023. In July 2026 the technical design was accepted and the parcel plans and building permit were pending; works may start by the end of 2026. The government aims to finish all of Lot 3.2 by mid-2029.",
+        "ro": "Lotul 3.2.1, de la km 375+860 la km 389+100, în principal calea stângă (Kulata – Sofia), cu tunelurile Simitli (211 m), Rakitna (1135 m) și Stara Kresna (1052 m). Contractorul a fost desemnat la 15 noiembrie 2019, iar contractul a fost semnat în 2023. În iulie 2026 proiectul tehnic era aprobat, iar planurile parcelare și autorizația de construire erau în așteptare; lucrările pot începe până la sfârșitul lui 2026. Guvernul își propune finalizarea întregului lot 3.2 până la jumătatea lui 2029."
+      },
+      "sourceRefs": [
+        "bgwiki-struma-motorway",
+        "economic-bg-kresna-bypass-2026"
+      ],
+      "geometryRef": "krupnik-kresna-lot-3-2-1",
+      "profile": {
+        "terrain": "mountain",
+        "tunnelKm": 2.398
+      }
     },
     {
       "id": "krupnik-kresna-bypass",
@@ -617,6 +780,27 @@
       "url": "https://www.aop.bg/case2.php?mode=show_doc&doc_id=617759&newver=2",
       "retrievedOn": "2026-09-28",
       "publisher": "Агенция по обществени поръчки"
+    },
+    {
+      "id": "bgwiki-lyulin-motorway",
+      "title": "Уикипедия: Люлин (магистрала)",
+      "url": "https://bg.wikipedia.org/wiki/Люлин_(магистрала)",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Wikipedia"
+    },
+    {
+      "id": "bgwiki-struma-motorway",
+      "title": "Уикипедия: Струма (магистрала)",
+      "url": "https://bg.wikipedia.org/wiki/Струма_(магистрала)",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Wikipedia"
+    },
+    {
+      "id": "autopress-struma-lot-2-opening-2015",
+      "title": "Auto-press.net (from api.bg): Завърши изграждането на участъка Дупница – Благоевград от АМ „Струма“ (2015-10-23)",
+      "url": "https://auto-press.net/a:Завърши-изграждането-на-участъка-Дупница---Благоевград-от-АМ-Струма-",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Auto-press.net"
     }
   ]
 }

@@ -1,0 +1,78 @@
+{
+  "id": "rs-mihajlo-pupin-bridge",
+  "country": "rs",
+  "category": "bridge",
+  "city": "rs-belgrade",
+  "name": {
+    "en": "Mihajlo Pupin Bridge",
+    "ro": "Podul Mihajlo Pupin"
+  },
+  "description": {
+    "en": "Road bridge over the Danube in Belgrade, linking Zemun and Borča. Built by China Road and Bridge Corporation, opened on 18 December 2014.",
+    "ro": "Pod rutier peste Dunăre la Belgrad, între Zemun și Borča. Construit de China Road and Bridge Corporation, deschis la 18 decembrie 2014."
+  },
+  "lots": [
+    {
+      "id": "main-bridge",
+      "name": {
+        "en": "Zemun–Borča bridge",
+        "ro": "Podul Zemun–Borča"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011",
+        "opened": "2014-12-18"
+      },
+      "lengthKm": 1.507,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Exim Bank of China, 85%; Serbia and Belgrade, the remaining 15%.",
+            "ro": "Exim Bank of China, 85%; Serbia și Belgrad, restul de 15%."
+          },
+          "coFinancingRate": 0.85
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Road and Bridge Corporation",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Bridge length 1,507 m, longest span 172 m. Wikipedia gives €170 million for the bridge and €260 million for the whole project with access roads, without a contract value or price basis, so no cost is recorded. English Wikipedia gives October 2011 for the start and Serbian Wikipedia says the site opened in July 2011, so only the year is recorded. A precontract with the Chinese partners was signed in late 2009. The drawn OpenStreetMap line is 1.49 km.",
+        "ro": "Lungimea podului 1.507 m, cea mai mare deschidere 172 m. Wikipedia indică 170 milioane EUR pentru pod și 260 milioane EUR pentru întregul proiect cu drumurile de acces, fără valoarea contractului sau baza prețului, deci nu se înregistrează un cost. Wikipedia în engleză indică octombrie 2011 pentru început, iar cea în sârbă spune că șantierul a fost deschis în iulie 2011, deci se înregistrează doar anul. Un precontract cu partenerii chinezi a fost semnat la sfârșitul lui 2009. Linia desenată din OpenStreetMap are 1,49 km."
+      },
+      "sourceRefs": [
+        "wikipedia-mihajlo-pupin-bridge",
+        "wikipedia-sr-pupinov-most",
+        "osm-mihajlo-pupin-bridge"
+      ],
+      "geometryRef": "main-bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-mihajlo-pupin-bridge",
+      "title": "Wikipedia: Mihajlo Pupin Bridge",
+      "url": "https://en.wikipedia.org/wiki/Mihajlo_Pupin_Bridge",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-sr-pupinov-most",
+      "title": "Wikipedia (sr): Pupinov most",
+      "url": "https://sr.wikipedia.org/wiki/%D0%9F%D1%83%D0%BF%D0%B8%D0%BD%D0%BE%D0%B2_%D0%BC%D0%BE%D1%81%D1%82",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-mihajlo-pupin-bridge",
+      "title": "OpenStreetMap contributors: Пупинов мост (ODbL)",
+      "url": "https://www.openstreetmap.org/way/147150003",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

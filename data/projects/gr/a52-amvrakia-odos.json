@@ -1,0 +1,237 @@
+{
+  "id": "gr-a52-amvrakia-odos",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "A52 Amvrakia Odos (Aktio – Amvrakia)",
+    "ro": "A52 Amvrakia Odos (Aktio – Amvrakia)"
+  },
+  "description": {
+    "en": "Branch of the A5 Ionia Odos in Aetolia-Acarnania, 48.5 km with 2+2 lanes, from the Aktio area at the Aktio – Preveza underwater tunnel to the Amvrakia interchange of the A5 near Amfilochia, by way of Vonitsa and Loutraki. It bypasses Vonitsa and Amfilochia and replaces a 62 km road. Construction began in July 2009 under the ESPA 2007–2013 programme and was due by 2012, but stalled. Aktio – Vonitsa opened on 24 April 2019, the Amfilochia bypass in July 2022, and the whole road was handed to traffic on 31 January 2024. METKA (Mytilineos) built the 2020–2024 contract. The drawn lots cover 46.4 km: the short stretch near Aktio that was last to open is not mapped as A52 in OpenStreetMap and is not drawn.",
+    "ro": "Ramificație a A5 Ionia Odos în Aetolia-Acarnania, de 48,5 km cu 2+2 benzi, din zona Aktio, la tunelul submarin Aktio – Preveza, până la nodul Amvrakia al A5 lângă Amfilochia, prin Vonitsa și Loutraki. Ocolește Vonitsa și Amfilochia și înlocuiește un drum de 62 km. Construcția a început în iulie 2009 din programul ESPA 2007–2013 și trebuia terminată până în 2012, dar a stagnat. Aktio – Vonitsa s-a deschis la 24 aprilie 2019, centura Amfilochiei în iulie 2022, iar întregul drum a fost predat circulației la 31 ianuarie 2024. METKA (Mytilineos) a executat contractul din 2020–2024. Tronsoanele desenate însumează 46,4 km: sectorul scurt de lângă Aktio, deschis ultimul, nu este cartat ca A52 în OpenStreetMap și nu este desenat."
+  },
+  "operator": "gr-ypome",
+  "lots": [
+    {
+      "id": "aktio-vonitsa",
+      "name": {
+        "en": "Aktio – Vonitsa",
+        "ro": "Aktio – Vonitsa"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-07",
+        "opened": "2019-04-24"
+      },
+      "lengthKm": 15,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-07",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-04-24",
+          "sourceRef": "ypodomes-2019-04-24"
+        }
+      ],
+      "profile": {
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The project began with ESPA 2007–2013 funds and is financed from ESPA 2014–2020 through the operational programme Transport Infrastructure, Environment and Sustainable Development.",
+            "ro": "Proiectul a început cu fonduri ESPA 2007–2013 și este finanțat din ESPA 2014–2020, prin programul operațional Infrastructura de transport, mediu și dezvoltare durabilă."
+          }
+        }
+      ],
+      "note": {
+        "en": "First section to open, about ten years after construction began in July 2009. It starts about 1.5 km beyond the Aktio – Preveza underwater artery and ends near the Vonitsa (Palairos) interchange, completing half of the Vonitsa bypass. Ypodomes gave it as 15 km in 2019 and 14 km in 2022. The contractor of this earlier contract is not named in the sources found.",
+        "ro": "Primul tronson deschis, la circa zece ani după începerea construcției în iulie 2009. Începe la circa 1,5 km după artera submarină Aktio – Preveza și se termină lângă nodul Vonitsa (Palairos), completând jumătate din ocolitoarea Vonitsei. Ypodomes l-a dat ca 15 km în 2019 și 14 km în 2022. Constructorul acestui contract anterior nu este numit în sursele găsite."
+      },
+      "sourceRefs": [
+        "wikipedia-en",
+        "ypodomes-2019-04-24",
+        "ypodomes-2022-07-22"
+      ],
+      "geometryRef": "aktio-vonitsa"
+    },
+    {
+      "id": "vonitsa-loutraki",
+      "name": {
+        "en": "Vonitsa – Loutraki (Drymos)",
+        "ro": "Vonitsa – Loutraki (Drymos)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-07",
+        "opened": "2024-01-31"
+      },
+      "lengthKm": 14.5,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-07",
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020",
+          "note": {
+            "en": "Contract with METKA (Mytilineos) for the remaining works signed at the end of 2020.",
+            "ro": "Contract cu METKA (Mytilineos) pentru lucrările rămase, semnat la sfârșitul anului 2020."
+          },
+          "sourceRef": "ypodomes-2022-07-22"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-01-31",
+          "sourceRef": "ypodomes-2024-01-31"
+        }
+      ],
+      "profile": {
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The project began with ESPA 2007–2013 funds and is financed from ESPA 2014–2020 through the operational programme Transport Infrastructure, Environment and Sustainable Development.",
+            "ro": "Proiectul a început cu fonduri ESPA 2007–2013 și este finanțat din ESPA 2014–2020, prin programul operațional Infrastructura de transport, mediu și dezvoltare durabilă."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "METKA (Mytilineos)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 30
+      },
+      "note": {
+        "en": "Last section under construction in July 2022. Works at Drymos (km 27+000 to 27+850) held up the final handover into early 2024 because of ancient finds. The 30-month construction period is that of the whole end-2020 contract with the Ministry of Infrastructure and Transport, counted from signing. Ypodomes gives the budget of the whole Aktio – Amvrakia axis as EUR 160 million in 2024 and its initial cost as EUR 150 million in 2022. A small stretch near Aktio opened with this section and is not drawn. Length measured from OpenStreetMap geometry; the sources give no figure for this section.",
+        "ro": "Ultimul tronson în construcție în iulie 2022. Lucrările de la Drymos (km 27+000 – 27+850) au amânat predarea finală până la începutul lui 2024, din cauza descoperirilor arheologice. Perioada de execuție de 30 de luni este cea a întregului contract de la sfârșitul lui 2020 cu Ministerul Infrastructurii și Transporturilor, socotită de la semnare. Ypodomes dă bugetul întregii axe Aktio – Amvrakia ca 160 milioane EUR în 2024 și costul inițial ca 150 milioane EUR în 2022. Un sector scurt lângă Aktio s-a deschis odată cu acest tronson și nu este desenat. Lungime măsurată din geometria OpenStreetMap; sursele nu dau o cifră pentru acest tronson."
+      },
+      "sourceRefs": [
+        "wikipedia-en",
+        "ypodomes-2022-07-22",
+        "ypodomes-2023-12-01",
+        "ypodomes-2024-01-31"
+      ],
+      "geometryRef": "vonitsa-loutraki"
+    },
+    {
+      "id": "loutraki-amvrakia",
+      "name": {
+        "en": "Loutraki – Amvrakia (Amfilochia bypass)",
+        "ro": "Loutraki – Amvrakia (centura Amfilochiei)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2021",
+        "opened": "2022-07"
+      },
+      "lengthKm": 17,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020",
+          "note": {
+            "en": "Contract with METKA (Mytilineos) signed at the end of 2020.",
+            "ro": "Contract cu METKA (Mytilineos) semnat la sfârșitul anului 2020."
+          },
+          "sourceRef": "ypodomes-2022-07-22"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021",
+          "sourceRef": "ypodomes-2022-07-22"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-07",
+          "sourceRef": "ypodomes-2022-07-22"
+        }
+      ],
+      "profile": {
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The project began with ESPA 2007–2013 funds and is financed from ESPA 2014–2020 through the operational programme Transport Infrastructure, Environment and Sustainable Development.",
+            "ro": "Proiectul a început cu fonduri ESPA 2007–2013 și este finanțat din ESPA 2014–2020, prin programul operațional Infrastructura de transport, mediu și dezvoltare durabilă."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "METKA (Mytilineos)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 30
+      },
+      "note": {
+        "en": "Amfilochia bypass through mountainous terrain, from the Loutraki interchange to the Amvrakia interchange with the A5, cutting about 15 km from the route through Amfilochia and Drymos. The 30-month construction period is that of the whole end-2020 contract, counted from signing. Delivered five months ahead of the contract deadline; first site work began in early spring 2021. Ypodomes dates its report 22 July 2022, so the opening is recorded to the month. An option for a link of about 400 m to the Ionia Odos (EUR 6.35 million) was activated and completed. The drawn line ends where the A52 meets the A5 and does not overlap lot kouvaras-amfilochia of the A5.",
+        "ro": "Centura Amfilochiei prin teren muntos, de la nodul Loutraki până la nodul Amvrakia cu A5, care scurtează cu circa 15 km traseul prin Amfilochia și Drymos. Perioada de execuție de 30 de luni este cea a întregului contract de la sfârșitul lui 2020, socotită de la semnare. Predată cu cinci luni înaintea termenului contractual; primele lucrări au început la începutul primăverii 2021. Ypodomes datează relatarea 22 iulie 2022, deci deschiderea este înregistrată pe lună. O opțiune pentru o legătură de circa 400 m cu Ionia Odos (6,35 milioane EUR) a fost activată și finalizată. Linia desenată se termină unde A52 întâlnește A5 și nu se suprapune cu tronsonul kouvaras-amfilochia al A5."
+      },
+      "sourceRefs": [
+        "wikipedia-en",
+        "ypodomes-2022-07-22",
+        "ypodomes-2024-01-31"
+      ],
+      "geometryRef": "loutraki-amvrakia"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en",
+      "title": "Wikipedia: A52 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A52_motorway_(Greece)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ypodomes-2024-01-31",
+      "title": "Ypodomes.com: Αμβρακία Οδός – Το προφίλ του νέου αυτοκινητόδρομου που μειώνει το Αθήνα – Λευκάδα κατά 45 λεπτά (31 January 2024)",
+      "url": "https://ypodomes.com/amvrakia-odos-to-profil-toy-neoy-aytokinitodromoy-poy-meionei-to-athina-leykada-kata-45-lepta/",
+      "publisher": "Ypodomes.com",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ypodomes-2022-07-22",
+      "title": "Ypodomes.com: Άκτιο-Αμβρακία: Στην κυκλοφορία η Παράκαμψη Αμφιλοχίας – Κατά 20 λεπτά πιο σύντομη η διαδρομή (22 July 2022)",
+      "url": "https://ypodomes.com/aktio-amvrakia-stin-kykloforia-i-parakampsi-amfilochias-kata-20-lepta-pio-syntomi-i-diadromi/",
+      "publisher": "Ypodomes.com",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "ypodomes-2019-04-24",
+      "title": "Ypodomes.com: Αμβρακία Οδός: Στην κυκλοφορία το τμήμα Άκτιο-Βόνιτσα (24 April 2019)",
+      "url": "https://www.ypodomes.com/index.php/autokinitodromoi/uperastikoi/loipoi-autokinitodromoi/item/52621-amvrakia-odos-stin-kykloforia-to-tmima-aktio-vonitsa",
+      "publisher": "Ypodomes.com",
+      "retrievedOn": "2026-10-05",
+      "archiveUrl": "https://web.archive.org/web/20190430233827/https://www.ypodomes.com/index.php/autokinitodromoi/uperastikoi/loipoi-autokinitodromoi/item/52621-amvrakia-odos-stin-kykloforia-to-tmima-aktio-vonitsa"
+    },
+    {
+      "id": "ypodomes-2023-12-01",
+      "title": "Ypodomes.com: Western Greece's new Amvrakia Odos motorway will be completed in early 2024 (1 December 2023)",
+      "url": "https://ypodomes.com/western-greece-s-new-amvrakia-odos-motorway-will-be-completed-in-early-2024",
+      "publisher": "Ypodomes.com",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

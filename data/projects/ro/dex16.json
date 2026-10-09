@@ -30,7 +30,35 @@
           "amount": 545.9,
           "currency": "RON",
           "year": 2021
-        }
+        },
+        "revisions": [
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 671.469423,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT. Addendum 2 of 8 March 2023 added a price-adjustment reserve of 125.56 million lei under OUG 64/2022 to the 545.91 million lei award. A contract ceiling, not a final account."
+            },
+            "date": "2023-03-08",
+            "note": "Addendum 2: price-adjustment reserve under OUG 64/2022, +125,559,323 lei excluding VAT.",
+            "sourceRef": "ted-187294-2024"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 682.395314,
+              "currency": "RON",
+              "year": 2024,
+              "scope": "works",
+              "note": "Excluding VAT (consistent with the 671.47 million lei value before it). Addendum 5 of 7 June 2024 raised the price-adjustment reserve by 10.93 million lei. A contract ceiling, not a final account."
+            },
+            "date": "2024-06-07",
+            "note": "Addendum 5: price-adjustment reserve raised by 2% of the remaining contract value, +10,925,890.54 lei.",
+            "sourceRef": "ted-509617-2026"
+          }
+        ]
       },
       "funding": [
         {
@@ -67,7 +95,9 @@
       "sourceRefs": [
         "hotnews-ro-biharia-oradea",
         "economica-net-biharia-oradea",
-        "digi24-ro"
+        "digi24-ro",
+        "ted-187294-2024",
+        "ted-509617-2026"
       ],
       "geometryRef": "biharia-oradea"
     }
@@ -95,6 +125,20 @@
       "id": "economica-net-biharia-oradea",
       "title": "economica.net (contract.guaranteeMonths)",
       "url": "https://www.economica.net/legatura-oradea-a3-azi-s-a-semnat-contractul-pentru-noul-drum-de-19-kilometri-va-fi-gata-in-2023-drula_523100.html"
+    },
+    {
+      "id": "ted-187294-2024",
+      "title": "TED 187294-2024: Modificări aduse contractului, PROIECTARE SI EXECUTIE „Legatura Centura Oradea (Giratie Calea Sintandrei) - Autostrada A3 (Biharia)”",
+      "url": "https://ted.europa.eu/ro/notice/187294-2024/html",
+      "publisher": "CNAIR via TED (OJ S)",
+      "retrievedOn": "2026-10-01"
+    },
+    {
+      "id": "ted-509617-2026",
+      "title": "TED 509617-2026: Modificări aduse contractului, Legatura Centura Oradea (Giratie Calea Sintandrei) - Autostrada A3 (Biharia), addendum 5",
+      "url": "https://ted.europa.eu/ro/notice/509617-2026/html",
+      "publisher": "CNAIR via TED (OJ S)",
+      "retrievedOn": "2026-10-01"
     }
   ]
 }

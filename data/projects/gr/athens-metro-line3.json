@@ -1,0 +1,379 @@
+{
+  "id": "gr-athens-metro-line3",
+  "country": "gr",
+  "city": "gr-athens",
+  "category": "railway",
+  "name": {
+    "en": "Athens Metro Line 3 (Dimotiko Theatro – Doukissis Plakentias)",
+    "ro": "Linia 3 a metroului din Atena (Dimotiko Theatro – Doukissis Plakentias)"
+  },
+  "description": {
+    "en": "Athens Metro Line 3 runs 25.2 km from Dimotiko Theatro in Piraeus through Syntagma to Doukissis Plakentias in Chalandri. Trains continue about 21 km over the Athens Airport – SKA suburban railway (project gr-rail-athens-patras, lot airport-ska), which holds that track, with a through service to Athens Airport from 30 July 2004. Attiko Metro (now Elliniko Metro) began construction in November 1992 and opened the line in six stages: Syntagma – Ethniki Amyna on 28 January 2000, Syntagma – Monastiraki on 22 April 2003, Ethniki Amyna – Doukissis Plakentias on 28 July 2004, Monastiraki – Egaleo on 26 May 2007, Egaleo – Agia Marina on 14 December 2013, Agia Marina – Nikaia on 7 July 2020 and Nikaia – Dimotiko Theatro on 10 October 2022. The station count covers Line 3 own stations only; the four suburban stops (Pallini, Paiania–Kantza, Koropi, airport) are not counted.",
+    "ro": "Linia 3 a metroului din Atena măsoară 25,2 km, de la Dimotiko Theatro din Pireu, prin Syntagma, până la Doukissis Plakentias din Chalandri. Trenurile continuă aproximativ 21 km pe Calea Ferată Suburbană Aeroportul Atena – SKA (proiectul gr-rail-athens-patras, lotul airport-ska), care deține acel traseu, cu serviciu direct spre Aeroportul Atena din 30 iulie 2004. Attiko Metro (acum Elliniko Metro) a început construcția în noiembrie 1992 și a deschis linia în șase etape: Syntagma – Ethniki Amyna pe 28 ianuarie 2000, Syntagma – Monastiraki pe 22 aprilie 2003, Ethniki Amyna – Doukissis Plakentias pe 28 iulie 2004, Monastiraki – Egaleo pe 26 mai 2007, Egaleo – Agia Marina pe 14 decembrie 2013, Agia Marina – Nikaia pe 7 iulie 2020 și Nikaia – Dimotiko Theatro pe 10 octombrie 2022. Numărul de stații cuprinde doar stațiile proprii ale liniei 3; cele patru opriri suburbane (Pallini, Paiania–Kantza, Koropi, aeroport) nu sunt numărate."
+  },
+  "operator": "gr-elliniko-metro",
+  "stationCount": 23,
+  "lots": [
+    {
+      "id": "syntagma-ethniki-amyna",
+      "name": {
+        "en": "Syntagma – Ethniki Amyna",
+        "ro": "Syntagma – Ethniki Amyna"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1992-11",
+        "opened": "2000-01-28"
+      },
+      "lengthKm": 5.8,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 7
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1992-11",
+          "sourceRef": "emetro-line3"
+        },
+        {
+          "kind": "opened",
+          "date": "2000-01-28",
+          "sourceRef": "wikipedia-en-line3"
+        }
+      ],
+      "note": {
+        "en": "First section of Line 3, opened on 28 January 2000 together with Line 2. Elliniko Metro: construction of Line 3 began in November 1992 and the 7 first stations of the Syntagma – Ethniki Amyna section were handed over in January 2000. Length is the station-to-station distance in the Greek Wikipedia station table (Syntagma 14.2 km, Ethniki Amyna 20.0 km from Dimotiko Theatro). The 1991 base-project contract covered Lines 2 and 3 together and no per-line value is recorded here.",
+        "ro": "Primul tronson al liniei 3, deschis pe 28 ianuarie 2000 împreună cu linia 2. Elliniko Metro: construcția liniei 3 a început în noiembrie 1992, iar primele 7 stații ale tronsonului Syntagma – Ethniki Amyna au fost predate în ianuarie 2000. Lungimea este distanța dintre stații din tabelul de stații al Wikipedia în greacă (Syntagma 14,2 km, Ethniki Amyna 20,0 km de la Dimotiko Theatro). Contractul proiectului de bază din 1991 a cuprins liniile 2 și 3 laolaltă, iar aici nu este înregistrată nicio valoare pe linie."
+      },
+      "sourceRefs": [
+        "emetro-line3",
+        "wikipedia-en-line3",
+        "wikipedia-el-line3",
+        "wikipedia-en-athens-metro"
+      ],
+      "geometryRef": "syntagma-ethniki-amyna"
+    },
+    {
+      "id": "syntagma-monastiraki",
+      "name": {
+        "en": "Syntagma – Monastiraki",
+        "ro": "Syntagma – Monastiraki"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1992-11",
+        "opened": "2003-04-22"
+      },
+      "lengthKm": 0.9,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 1
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1992-11",
+          "sourceRef": "emetro-line3"
+        },
+        {
+          "kind": "opened",
+          "date": "2003-04-22",
+          "sourceRef": "emetro-line3"
+        }
+      ],
+      "note": {
+        "en": "Last section of the base project, opened on 22 April 2003 with one new station, Monastiraki. Elliniko Metro describes it as 1.4 km of tunnel and one station; the station-to-station distance in the Greek Wikipedia table is 0.9 km, which is recorded here, and the OpenStreetMap geometry measures 0.85 km between the stations. The delay came from the Church's objections to a route under Mitropoleos Street, after which the alignment moved to Ermou Street (Greek Wikipedia). Construction start is the November 1992 start of Line 3 as a whole (Elliniko Metro), reused here because the section was part of the base project.",
+        "ro": "Ultimul tronson al proiectului de bază, deschis pe 22 aprilie 2003, cu o stație nouă, Monastiraki. Elliniko Metro îl descrie ca 1,4 km de tunel și o stație; distanța dintre stații din tabelul Wikipedia în greacă este 0,9 km, valoare înregistrată aici, iar geometria OpenStreetMap măsoară 0,85 km între stații. Întârzierea a venit din obiecțiile Bisericii față de un traseu pe sub strada Mitropoleos, după care traseul a fost mutat pe strada Ermou (Wikipedia în greacă). Începutul construcției este cel din noiembrie 1992 pentru linia 3 în ansamblu (Elliniko Metro), reutilizat aici deoarece tronsonul făcea parte din proiectul de bază."
+      },
+      "sourceRefs": [
+        "emetro-line3",
+        "wikipedia-en-line3",
+        "wikipedia-el-line3",
+        "wikipedia-en-athens-metro"
+      ],
+      "geometryRef": "syntagma-monastiraki"
+    },
+    {
+      "id": "ethniki-amyna-doukissis-plakentias",
+      "name": {
+        "en": "Ethniki Amyna – Doukissis Plakentias",
+        "ro": "Ethniki Amyna – Doukissis Plakentias"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2000-12",
+        "opened": "2004-07-28"
+      },
+      "lengthKm": 5.2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 5
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2000-12",
+          "sourceRef": "wikipedia-en-athens-metro"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2004-07-24",
+          "note": {
+            "en": "Extension from Ethniki Amyna to Chalandri handed over.",
+            "ro": "Extensia de la Ethniki Amyna la Chalandri a fost predată."
+          },
+          "sourceRef": "wikipedia-el-line3"
+        },
+        {
+          "kind": "opened",
+          "date": "2004-07-28",
+          "note": {
+            "en": "Doukissis Plakentias station opened.",
+            "ro": "Stația Doukissis Plakentias a fost deschisă."
+          },
+          "sourceRef": "wikipedia-en-doukissis-plakentias"
+        }
+      ],
+      "note": {
+        "en": "Underground extension north-east from Ethniki Amyna with five stations: Holargos, Nomismatokopio, Agia Paraskevi, Chalandri and Doukissis Plakentias. The extension to Chalandri was handed over on 24 July 2004 and Doukissis Plakentias opened on 28 July 2004. Only Chalandri and Doukissis Plakentias opened in 2004: Nomismatokopio opened on 2 September 2009, Holargos on 23 July 2010 and Agia Paraskevi on 30 December 2010 (Greek Wikipedia). Elliniko Metro gives an underground route of 5.9 km up to Doukissis Plakentias station, where trains reach the surface; the station-to-station distance in the Greek Wikipedia table is 5.2 km and is recorded here. Construction start is the December 2000 date in the English Wikipedia history table, which lists it for the whole Ethniki Amyna – Airport extension.",
+        "ro": "Extensie subterană spre nord-est de la Ethniki Amyna, cu cinci stații: Holargos, Nomismatokopio, Agia Paraskevi, Chalandri și Doukissis Plakentias. Extensia până la Chalandri a fost predată pe 24 iulie 2004, iar Doukissis Plakentias a fost deschisă pe 28 iulie 2004. În 2004 s-au deschis doar Chalandri și Doukissis Plakentias: Nomismatokopio a fost deschisă pe 2 septembrie 2009, Holargos pe 23 iulie 2010 și Agia Paraskevi pe 30 decembrie 2010 (Wikipedia în greacă). Elliniko Metro indică un traseu subteran de 5,9 km până la stația Doukissis Plakentias, unde trenurile ies la suprafață; distanța dintre stații din tabelul Wikipedia în greacă este 5,2 km și este cea înregistrată aici. Începutul construcției este data decembrie 2000 din tabelul istoric Wikipedia în engleză, care o indică pentru întreaga extensie Ethniki Amyna – Aeroport."
+      },
+      "sourceRefs": [
+        "emetro-line3",
+        "wikipedia-en-line3",
+        "wikipedia-el-line3",
+        "wikipedia-en-athens-metro",
+        "wikipedia-en-doukissis-plakentias"
+      ],
+      "geometryRef": "ethniki-amyna-doukissis-plakentias"
+    },
+    {
+      "id": "monastiraki-egaleo",
+      "name": {
+        "en": "Monastiraki – Egaleo",
+        "ro": "Monastiraki – Egaleo"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2002-05",
+        "opened": "2007-05-26"
+      },
+      "lengthKm": 4.4,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2002-05",
+          "sourceRef": "wikipedia-en-athens-metro"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-05-26",
+          "sourceRef": "wikipedia-en-athens-metro"
+        }
+      ],
+      "note": {
+        "en": "Westward extension from Monastiraki with three new stations: Kerameikos, Eleonas and Egaleo. Construction of Kerameikos was suspended in 1998 and the station later relocated, because of an archaeological dispute (English Wikipedia). Length is the station-to-station distance in the Greek Wikipedia table (Monastiraki 13.3 km, Egaleo 8.9 km from Dimotiko Theatro).",
+        "ro": "Extensie spre vest de la Monastiraki, cu trei stații noi: Kerameikos, Eleonas și Egaleo. Construcția stației Kerameikos a fost suspendată în 1998, iar stația a fost ulterior mutată, din cauza unei dispute arheologice (Wikipedia în engleză). Lungimea este distanța dintre stații din tabelul Wikipedia în greacă (Monastiraki 13,3 km, Egaleo 8,9 km de la Dimotiko Theatro)."
+      },
+      "sourceRefs": [
+        "wikipedia-en-line3",
+        "wikipedia-el-line3",
+        "wikipedia-en-athens-metro"
+      ],
+      "geometryRef": "monastiraki-egaleo"
+    },
+    {
+      "id": "egaleo-agia-marina",
+      "name": {
+        "en": "Egaleo – Agia Marina",
+        "ro": "Egaleo – Agia Marina"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-12-14"
+      },
+      "lengthKm": 1.4,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 1
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2013-12-14",
+          "sourceRef": "wikipedia-en-line3"
+        }
+      ],
+      "note": {
+        "en": "One-station extension west of Egaleo, opened on 14 December 2013. The Greek Wikipedia gives 1.4 km. The English Wikipedia history table lists a January 2007 construction start shared with a Line 2 row, which is not recorded here.",
+        "ro": "Extensie cu o stație la vest de Egaleo, deschisă pe 14 decembrie 2013. Wikipedia în greacă indică 1,4 km. Tabelul istoric Wikipedia în engleză indică un început al construcției în ianuarie 2007, comun cu un rând al liniei 2, nerecordat aici."
+      },
+      "sourceRefs": [
+        "wikipedia-en-line3",
+        "wikipedia-el-line3",
+        "wikipedia-en-athens-metro"
+      ],
+      "geometryRef": "egaleo-agia-marina"
+    },
+    {
+      "id": "agia-marina-nikaia",
+      "name": {
+        "en": "Agia Marina – Nikaia",
+        "ro": "Agia Marina – Nikaia"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-03-01",
+        "constructionStart": "2012-07",
+        "opened": "2020-07-07"
+      },
+      "lengthKm": 4.3,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2012-03-01",
+          "note": {
+            "en": "Contract for the 7.6 km extension to Piraeus signed by Attiko Metro and the J&P-AVAX, Ghella and Alstom joint venture.",
+            "ro": "Contractul pentru extensia de 7,6 km spre Pireu a fost semnat de Attiko Metro și asocierea J&P-AVAX, Ghella și Alstom."
+          },
+          "sourceRef": "wikipedia-el-line3"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2012-07",
+          "sourceRef": "wikipedia-en-athens-metro"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-07-07",
+          "sourceRef": "wikipedia-en-line3"
+        }
+      ],
+      "note": {
+        "en": "First part of the Piraeus extension, opened on 7 July 2020 with Agia Varvara, Korydallos and Nikaia stations. The 7.6 km, six-station extension from Agia Marina to Dimotiko Theatro was contracted on 1 March 2012; the contract value is not stated on any page read, so no cost is recorded. Delays are attributed to underground caves along the tunnel, the tunnel's proximity to the sea at Piraeus port and COVID-19 (Greek Wikipedia). Length is the station-to-station distance in the Greek Wikipedia table (Agia Marina 7.5 km, Nikaia 3.2 km from Dimotiko Theatro).",
+        "ro": "Prima parte a extensiei spre Pireu, deschisă pe 7 iulie 2020, cu stațiile Agia Varvara, Korydallos și Nikaia. Extensia de 7,6 km cu șase stații de la Agia Marina la Dimotiko Theatro a fost contractată pe 1 martie 2012; valoarea contractului nu apare pe nicio pagină citită, deci nu este înregistrat niciun cost. Întârzierile sunt atribuite peșterilor subterane de-a lungul tunelului, apropierii tunelului de mare în portul Pireu și COVID-19 (Wikipedia în greacă). Lungimea este distanța dintre stații din tabelul Wikipedia în greacă (Agia Marina 7,5 km, Nikaia 3,2 km de la Dimotiko Theatro)."
+      },
+      "contractors": [
+        {
+          "name": "J&P-AVAX – Ghella – Alstom Transport",
+          "role": "builder"
+        }
+      ],
+      "sourceRefs": [
+        "wikipedia-en-line3",
+        "wikipedia-el-line3",
+        "wikipedia-en-athens-metro"
+      ],
+      "geometryRef": "agia-marina-nikaia"
+    },
+    {
+      "id": "nikaia-dimotiko-theatro",
+      "name": {
+        "en": "Nikaia – Dimotiko Theatro",
+        "ro": "Nikaia – Dimotiko Theatro"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-03-01",
+        "constructionStart": "2012-07",
+        "opened": "2022-10-10"
+      },
+      "lengthKm": 3.2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2012-03-01",
+          "note": {
+            "en": "Contract for the 7.6 km extension to Piraeus signed by Attiko Metro and the J&P-AVAX, Ghella and Alstom joint venture.",
+            "ro": "Contractul pentru extensia de 7,6 km spre Pireu a fost semnat de Attiko Metro și asocierea J&P-AVAX, Ghella și Alstom."
+          },
+          "sourceRef": "wikipedia-el-line3"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2012-07",
+          "sourceRef": "wikipedia-en-athens-metro"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-10-10",
+          "sourceRef": "wikipedia-en-line3"
+        }
+      ],
+      "note": {
+        "en": "Final part of the Piraeus extension, opened on 10 October 2022 with Maniatika, Piraeus and Dimotiko Theatro stations. The original plan had a further station, Evaggelistria, after Dimotiko Theatro; Attiko Metro cancelled it on 10 November 2008 after local objections (English Wikipedia). The contract value is not stated on any page read, so no cost is recorded. Length is the station-to-station distance in the Greek Wikipedia table (Nikaia 3.2 km from Dimotiko Theatro). Construction start is the July 2012 date in the English Wikipedia history table for the Agia Marina – Nikaia row, reused here because the extension was built under one contract.",
+        "ro": "Ultima parte a extensiei spre Pireu, deschisă pe 10 octombrie 2022, cu stațiile Maniatika, Piraeus și Dimotiko Theatro. Planul inițial prevedea încă o stație, Evaggelistria, după Dimotiko Theatro; Attiko Metro a anulat-o pe 10 noiembrie 2008 în urma obiecțiilor locale (Wikipedia în engleză). Valoarea contractului nu apare pe nicio pagină citită, deci nu este înregistrat niciun cost. Lungimea este distanța dintre stații din tabelul Wikipedia în greacă (Nikaia la 3,2 km de Dimotiko Theatro). Începutul construcției este data iulie 2012 din tabelul istoric Wikipedia în engleză pentru rândul Agia Marina – Nikaia, reutilizată aici deoarece extensia a fost construită printr-un singur contract."
+      },
+      "contractors": [
+        {
+          "name": "J&P-AVAX – Ghella – Alstom Transport",
+          "role": "builder"
+        }
+      ],
+      "sourceRefs": [
+        "wikipedia-en-line3",
+        "wikipedia-el-line3",
+        "wikipedia-en-athens-metro"
+      ],
+      "geometryRef": "nikaia-dimotiko-theatro"
+    }
+  ],
+  "sources": [
+    {
+      "id": "emetro-line3",
+      "title": "Elliniko Metro: Line 3 (\"The construction of Line 3 commenced in November 1992\"; Syntagma – Monastiraki \"1.4km of tunnel and one station\" commissioned April 2003; Ethniki Amyna – Doukissis Plakentias underground route of 5,9 km, then 20.7 km on the Suburban Railway network)",
+      "url": "https://www.emetro.gr/?page_id=4182&lang=en",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-en-line3",
+      "title": "Wikipedia: Line 3 (Athens Metro) (station opening table; \"a through service to the Airport leaves once every 36 minutes, and shares most of the extended route with the Athens Suburban Railway\")",
+      "url": "https://en.wikipedia.org/wiki/Line_3_(Athens_Metro)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-el-line3",
+      "title": "Βικιπαίδεια: Γραμμή 3 (Μετρό Αθήνας) (station distance table; \"Στις 24 Ιουλίου 2004 παραδόθηκε η επέκταση από τον σταθμό Εθνική Άμυνα μέχρι το Χαλάνδρι\")",
+      "url": "https://el.wikipedia.org/wiki/%CE%93%CF%81%CE%B1%CE%BC%CE%BC%CE%AE_3_(%CE%9C%CE%B5%CF%84%CF%81%CF%8C_%CE%91%CE%B8%CE%AE%CE%BD%CE%B1%CF%82)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-en-athens-metro",
+      "title": "Wikipedia: Athens Metro (history table of construction starts and openings by section)",
+      "url": "https://en.wikipedia.org/wiki/Athens_Metro",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-en-doukissis-plakentias",
+      "title": "Wikipedia: Doukissis Plakentias station (\"The metro station was opened on 28 July 2004\")",
+      "url": "https://en.wikipedia.org/wiki/Doukissis_Plakentias_station",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry, relation 445945 Μετρό Μ3: Δημοτικό Θέατρο → Αεροδρόμιο (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/445945",
+      "retrievedOn": "2026-10-09"
+    }
+  ],
+  "lastVerified": "2026-10-09"
+}

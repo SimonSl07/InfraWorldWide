@@ -7,8 +7,8 @@
     "ro": "Calea ferată de mare viteză Belgrad – Novi Sad – Subotica"
   },
   "description": {
-    "en": "Reconstruction of the Belgrade–Subotica–Kelebija line for 200 km/h operation, the Serbian half of the Belgrade–Budapest corridor. Belgrade Centre–Novi Sad opened in March 2022 and the remainder to Subotica in October 2025. The Belgrade Centre–Stara Pazova leg runs on Serbian mainline 101 and the rest on mainline 105. The Chinese-financed legs were contracted in US dollars; the Novi Sad–Subotica commercial contract (USD 1,162.81 million) is recorded at its July 2018 signing year. No cost is recorded for Stara Pazova–Novi Sad: the only figure found for it, EUR 91.9 million, is implausibly low for a 40 km section carrying the Čortanovci tunnel and the Danube viaduct, and could not be corroborated. Mapped geometry for the northern lot stops at Subotica station rather than the Kelebija border.",
-    "ro": "Reconstrucția liniei Belgrad–Subotica–Kelebija pentru circulația cu 200 km/h, jumătatea sârbă a coridorului Belgrad–Budapesta. Tronsonul Belgrad Centru–Novi Sad a fost deschis în martie 2022, iar restul până la Subotica în octombrie 2025. Tronsonul Belgrad Centru–Stara Pazova se află pe magistrala sârbă 101, iar restul pe magistrala 105. Tronsoanele finanțate de China au fost contractate în dolari americani; contractul comercial Novi Sad–Subotica (1.162,81 milioane USD) este înregistrat la anul semnării, iulie 2018. Pentru Stara Pazova–Novi Sad nu este înregistrat niciun cost: singura cifră găsită, 91,9 milioane EUR, este neplauzibil de mică pentru un tronson de 40 km care include tunelul Čortanovci și viaductul peste Dunăre și nu a putut fi coroborată. Geometria cartografiată a lotului nordic se oprește la gara Subotica, nu la frontiera de la Kelebija."
+    "en": "Reconstruction of the Belgrade–Subotica–Kelebija line for 200 km/h operation, the Serbian half of the Belgrade–Budapest corridor. Belgrade Centre–Novi Sad opened in March 2022 and the remainder to Subotica in October 2025. The Belgrade Centre–Stara Pazova leg runs on Serbian mainline 101 and the rest on mainline 105. The Chinese-financed legs were contracted in US dollars; the Novi Sad–Subotica commercial contract (USD 1,162.81 million) is recorded at its July 2018 signing year. No contract value is recorded for Stara Pazova–Novi Sad, which was contracted with RZD International in several annexes; the lot carries the EUR 614 million total investment stated by Infrastruktura železnice Srbije in August 2019, after all its contracts were signed. Mapped geometry for the northern lot stops at Subotica station rather than the Kelebija border.",
+    "ro": "Reconstrucția liniei Belgrad–Subotica–Kelebija pentru circulația cu 200 km/h, jumătatea sârbă a coridorului Belgrad–Budapesta. Tronsonul Belgrad Centru–Novi Sad a fost deschis în martie 2022, iar restul până la Subotica în octombrie 2025. Tronsonul Belgrad Centru–Stara Pazova se află pe magistrala sârbă 101, iar restul pe magistrala 105. Tronsoanele finanțate de China au fost contractate în dolari americani; contractul comercial Novi Sad–Subotica (1.162,81 milioane USD) este înregistrat la anul semnării, iulie 2018. Pentru Stara Pazova–Novi Sad, contractat cu RZD International prin mai multe anexe, nu este înregistrată o valoare de contract; lotul poartă investiția totală de 614 milioane EUR declarată de Infrastruktura železnice Srbije în august 2019, după semnarea tuturor contractelor sale. Geometria cartografiată a lotului nordic se oprește la gara Subotica, nu la frontiera de la Kelebija."
   },
   "lots": [
     {
@@ -87,6 +87,21 @@
         "opened": "2022-03"
       },
       "lengthKm": 40.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 614,
+              "currency": "EUR",
+              "note": "Total investment for the 40.4 km section as stated by the Infrastruktura železnice Srbije director; VAT and price year not stated."
+            },
+            "date": "2019-08-09",
+            "note": "Stated after Annexes 3.1 and 3.2 and the January 2019 electrical and signalling contract were signed, so it is a post-award budget for the whole lot, not a tender estimate or an outturn.",
+            "sourceRef": "izs-cortanovci-2019"
+          }
+        ]
+      },
       "profile": {
         "works": "reconstruction",
         "maxSpeedKmh": 200
@@ -117,7 +132,8 @@
         "ro": "Contractat cu RZD International prin anexe: Anexa 3.1 (un tunel de circa 1,2 km și un viaduct de circa 3 km) semnată la 15 iulie 2016, lucrări din septembrie 2017; Anexa 3.2 (cale dublă) semnată la 21 noiembrie 2017, lucrări din 16 martie 2018; un contract care include echipamentele de electrificare și semnalizare semnat în ianuarie 2019."
       },
       "sourceRefs": [
-        "mgsi-gov-rs"
+        "mgsi-gov-rs",
+        "izs-cortanovci-2019"
       ],
       "geometryRef": "stara-pazova-novi-sad"
     },
@@ -188,17 +204,31 @@
         }
       },
       "note": {
-        "en": "The 33-month works term was set in the September 2019 Investment Plan, counted from the contractor's introduction to works, then expected at the end of 2019. Works began in July 2022. The Export–Import Bank of China loan, signed on 25 April 2019, is USD 988.39 million (85% of the contract).",
-        "ro": "Termenul de execuție de 33 de luni, stabilit în Planul de investiții din septembrie 2019, se calcula de la predarea amplasamentului către antreprenor, estimată atunci la sfârșitul lui 2019. Lucrările au început în iulie 2022. Împrumutul Export–Import Bank of China, semnat la 25 aprilie 2019, este de 988,39 milioane USD (85% din contract)."
+        "en": "The 33-month works term was set in the September 2019 Investment Plan, counted from the contractor's introduction to works, then expected at the end of 2019. Works began in July 2022. The Export–Import Bank of China loan, signed on 25 April 2019, is USD 988.39 million (85% of the contract). Cross-border freight began on 27 February 2026, when a Rail Cargo Hungaria train of 20 tank wagons crossed the Serbian–Hungarian border and reached Subotica.",
+        "ro": "Termenul de execuție de 33 de luni, stabilit în Planul de investiții din septembrie 2019, se calcula de la predarea amplasamentului către antreprenor, estimată atunci la sfârșitul lui 2019. Lucrările au început în iulie 2022. Împrumutul Export–Import Bank of China, semnat la 25 aprilie 2019, este de 988,39 milioane USD (85% din contract). Traficul feroviar de marfă transfrontalier a început la 27 februarie 2026, când un tren Rail Cargo Hungaria cu 20 de vagoane-cisternă a trecut frontiera sârbo-ungară și a ajuns la Subotica."
       },
       "sourceRefs": [
         "mgsi-gov-rs",
-        "mgsi-hu-rs-railway"
+        "mgsi-hu-rs-railway",
+        "izs-freight-border-2026"
       ],
       "geometryRef": "novi-sad-subotica"
     }
   ],
   "sources": [
+    {
+      "id": "izs-freight-border-2026",
+      "title": "Infrastruktura železnice Srbije: Freight traffic established on the Belgrade – Budapest high-speed railway",
+      "url": "https://infrazs.rs/%d0%bd%d0%b0-%d0%b1%d1%80%d0%b7%d0%be%d1%98-%d0%bf%d1%80%d1%83%d0%b7%d0%b8-%d0%b1%d0%b5%d0%be%d0%b3%d1%80%d0%b0%d0%b4-%d0%b1%d1%83%d0%b4%d0%b8%d0%bc%d0%bf%d0%b5%d1%88%d1%82%d0%b0-%d1%83/",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Infrastruktura železnice Srbije"
+    },
+    {
+      "id": "izs-cortanovci-2019",
+      "title": "Infrastruktura železnice Srbije: President Vučić visits works on the Čortanovci viaduct, Stara Pazova – Novi Sad section",
+      "url": "https://arhiva.infrazs.rs/2019/08/predsednik-srbije-aleksandar-vucic-obisao-radove-na-izgradnji-vijadukta-cortanovci-na-deonici-brze-pruge-stara-pazova-novi-sad/",
+      "retrievedOn": "2026-10-01"
+    },
     {
       "id": "mgsi-hu-rs-railway",
       "title": "Ministry of Construction, Transport and Infrastructure: Hungarian–Serbian railway: reconstruction and modernisation, Belgrade–Novi Sad",

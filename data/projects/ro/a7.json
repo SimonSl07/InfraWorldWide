@@ -270,6 +270,12 @@
       },
       "lengthKm": 30.8,
       "cost": {
+        "estimated": {
+          "amount": 1640,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate range 1,640–1,940 million lei excluding VAT; lower bound recorded."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -323,7 +329,8 @@
         "hotnews-ro-buzau-bypass",
         "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
         "cnair-buzau-focsani-lots-2-3-contracts",
-        "apix-a7-stadiul-lucrarilor-2024"
+        "apix-a7-stadiul-lucrarilor-2024",
+        "economica-buzau-focsani-lots-2-3-tender"
       ],
       "geometryRef": "buzau-ramnicu-sarat"
     },
@@ -341,6 +348,12 @@
       },
       "lengthKm": 36.1,
       "cost": {
+        "estimated": {
+          "amount": 1830,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Tender estimate range 1,830–2,160 million lei excluding VAT; lower bound recorded."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -396,7 +409,8 @@
         "wikipedia-ro-autostrada-a7-rom-nia-construc-ia-finan-at-prin",
         "cnair-buzau-focsani-lots-2-3-contracts",
         "campusbuzau-buzau-focsani-contracts",
-        "apix-a7-stadiul-lucrarilor-2024"
+        "apix-a7-stadiul-lucrarilor-2024",
+        "economica-buzau-focsani-lots-2-3-tender"
       ],
       "geometryRef": "ramnicu-sarat-mandresti"
     },
@@ -1017,6 +1031,35 @@
       },
       "status": "tendered",
       "lengthKm": 56.16,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-01",
+          "note": {
+            "en": "Three construction tenders launched: lot 1 Suceava – Dărmănești (18.6 km), lot 2 Dărmănești – Bălcăuți (24.5 km), lot 3 Bălcăuți – Vama Siret (12.7 km).",
+            "ro": "Trei licitații de execuție lansate: lotul 1 Suceava – Dărmănești (18,6 km), lotul 2 Dărmănești – Bălcăuți (24,5 km), lotul 3 Bălcăuți – Vama Siret (12,7 km)."
+          },
+          "sourceRef": "130km-review-2026-q1"
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-05",
+          "note": {
+            "en": "Contracts for lots 1 and 2 signed with Far Foundation – Automagistral Pivden – Lincor Trans, with a suspensive clause: 2,090 million lei (lot 1) and 1,630 million lei (lot 2), excluding VAT. Lot 3 was not signed.",
+            "ro": "Contractele pentru loturile 1 și 2 semnate cu Far Foundation – Automagistral Pivden – Lincor Trans, cu clauză suspensivă: 2.090 milioane lei (lotul 1) și 1.630 milioane lei (lotul 2), fără TVA. Lotul 3 nu a fost semnat."
+          },
+          "sourceRef": "economedia-suceava-siret-award-annulled"
+        },
+        {
+          "kind": "litigation",
+          "date": "2026-09-18",
+          "note": {
+            "en": "The Bucharest Court of Appeal annulled the award of lots 1 and 2 and ordered CNAIR to re-evaluate the offers of Concelex, Construcții Erbașu and the Far Foundation association within 20 days.",
+            "ro": "Curtea de Apel București a anulat atribuirea loturilor 1 și 2 și a obligat CNAIR să reevalueze în 20 de zile ofertele Concelex, Construcții Erbașu și ale asocierii Far Foundation."
+          },
+          "sourceRef": "economedia-suceava-siret-award-annulled"
+        }
+      ],
       "cost": {
         "estimated": {
           "amount": 7400,
@@ -1049,13 +1092,17 @@
         }
       ],
       "note": {
-        "en": "Libertatea's July 2026 motorway map, relaying 130km.ro, puts the Suceava–Siret opening in 2029. This is a press forecast, not an official date. North of Milișăuți (Rădăuți) the road is planned as an expressway to the border.",
-        "ro": "Harta autostrăzilor Libertatea din iulie 2026, preluată de la 130km.ro, plasează deschiderea Suceava–Siret în 2029. Este o estimare de presă, nu un termen oficial. La nord de Milișăuți (Rădăuți) drumul este planificat ca drum expres până la frontieră."
+        "en": "Tendered in three lots totalling 55.7 km: Suceava – Dărmănești (18.6 km), Dărmănești – Bălcăuți (24.5 km) and Bălcăuți – Vama Siret (12.7 km). Lots 1 and 2 were signed in May 2026, but the court annulled their award on 18 September 2026 and the offers go back to evaluation; lot 3 is still in tender. The listed builders are the association that won all three lots before the ruling. Libertatea's July 2026 motorway map, relaying 130km.ro, puts the Suceava–Siret opening in 2029. This is a press forecast, not an official date. North of Milișăuți (Rădăuți) the road is planned as an expressway to the border.",
+        "ro": "Licitat în trei loturi însumând 55,7 km: Suceava – Dărmănești (18,6 km), Dărmănești – Bălcăuți (24,5 km) și Bălcăuți – Vama Siret (12,7 km). Loturile 1 și 2 au fost semnate în mai 2026, dar instanța le-a anulat atribuirea la 18 septembrie 2026, iar ofertele se reevaluează; lotul 3 este încă în licitație. Constructorii listați sunt asocierea care câștigase toate cele trei loturi înainte de decizie. Harta autostrăzilor Libertatea din iulie 2026, preluată de la 130km.ro, plasează deschiderea Suceava–Siret în 2029. Este o estimare de presă, nu un termen oficial. La nord de Milișăuți (Rădăuți) drumul este planificat ca drum expres până la frontieră."
       },
       "sourceRefs": [
         "agerpres-suceava-siret-hg",
         "economedia-suceava-siret-safe",
-        "libertatea-harta-iulie-2026"
+        "libertatea-harta-iulie-2026",
+        "130km-review-2026-q1",
+        "130km-review-2026-q2",
+        "130km-review-2026-q3",
+        "economedia-suceava-siret-award-annulled"
       ],
       "geometryRef": "suceava-siret"
     }
@@ -1259,6 +1306,41 @@
       "url": "https://economedia.ro/autostrada-pascani-suceava-lot-1-cnair-scoate-la-licitatie-primii-33-km-valoare-totala-estimata-este-intre-388-43-miliarde-lei.html",
       "publisher": "Economedia",
       "retrievedOn": "2026-09-28"
+    },
+    {
+      "id": "economica-buzau-focsani-lots-2-3-tender",
+      "title": "Economica.net: Autostrada Buzău - Focșani: A fost publicat anunțul de licitație pentru tronsoanele 2 și 3 (11 February 2022)",
+      "url": "https://www.economica.net/autostrada-buzau-focsani-a-fost-publicat-anuntul-de-licitatie-pentru-tronsoanele-2-si-3_559802.html",
+      "publisher": "Economica.net",
+      "retrievedOn": "2026-10-01"
+    },
+    {
+      "id": "130km-review-2026-q1",
+      "title": "130km.ro: Review autostrazi si drumuri expres - Trimestrul I 2026",
+      "url": "https://www.130km.ro/articol83.html",
+      "publisher": "130km.ro",
+      "retrievedOn": "2026-10-02"
+    },
+    {
+      "id": "130km-review-2026-q2",
+      "title": "130km.ro: Review autostrazi si drumuri expres - Trimestrul II 2026",
+      "url": "https://www.130km.ro/articol84.html",
+      "publisher": "130km.ro",
+      "retrievedOn": "2026-10-02"
+    },
+    {
+      "id": "130km-review-2026-q3",
+      "title": "130km.ro: Review autostrazi si drumuri expres - Trimestrul III 2026 (30 September 2026)",
+      "url": "https://www.130km.ro/articol85.html",
+      "publisher": "130km.ro",
+      "retrievedOn": "2026-10-02"
+    },
+    {
+      "id": "economedia-suceava-siret-award-annulled",
+      "title": "Economedia: Atribuire anulată pentru contracte deja semnate prin programul SAFE / Curtea de Apel obligă CNAIR să reevalueze ofertele pentru primele două loturi din Drumul Expres Suceava – Siret (18 September 2026)",
+      "url": "https://economedia.ro/breaking-premiera-negativa-atribuire-anulata-pentru-contracte-deja-semnate-prin-programul-safe-curtea-de-apel-obliga-cnair-sa-reevalueze-ofertele-pentru-primele-doua-loturi-din-drumul-expres-suc.html",
+      "publisher": "Economedia",
+      "retrievedOn": "2026-10-02"
     }
   ]
 }

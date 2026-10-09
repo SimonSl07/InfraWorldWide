@@ -1,0 +1,224 @@
+{
+  "id": "bg-rail-sofia-dragoman",
+  "country": "bg",
+  "category": "railway",
+  "name": {
+    "en": "Sofia – Dragoman railway modernisation",
+    "ro": "Modernizarea căii ferate Sofia – Dragoman"
+  },
+  "description": {
+    "en": "Modernisation of the Sofia – Dragoman – Serbian border line, in two lots: a new third track and a new Obelya station between Sofia Central and Voluyak (10 km), and partial doubling with ERTMS between Voluyak and Dragoman (33.34 km). The Dragoman – Serbian border section is not part of this project.",
+    "ro": "Modernizarea liniei Sofia – Dragoman – frontiera cu Serbia, în două loturi: un al treilea fir și o nouă gară Obelya între Sofia Centrală și Voluyak (10 km), respectiv dublarea parțială cu ERTMS între Voluyak și Dragoman (33,34 km). Secțiunea Dragoman – frontiera cu Serbia nu face parte din acest proiect."
+  },
+  "operator": "bg-nric",
+  "lots": [
+    {
+      "id": "s1-sofia-central-voluyak",
+      "name": {
+        "en": "Sofia Central – Voluyak",
+        "ro": "Sofia Centrală – Voluyak"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-10-30",
+        "constructionStart": "2021-07-13"
+      },
+      "lengthKm": 10,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility, approved July 2015. Project total EUR 104,211,047: CEF EUR 76,074,064, national co-financing EUR 13,297,326, NRIC EUR 14,839,656. These are project-level figures, not the construction contract.",
+            "ro": "Mecanismul pentru Interconectarea Europei, aprobat în iulie 2015. Total proiect 104.211.047 euro: MIE 76.074.064 euro, cofinanțare națională 13.297.326 euro, NRIC 14.839.656 euro. Cifrele sunt la nivel de proiect, nu valoarea contractului de construcție."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ZGOP Bulgaria DZZD (Todini Bulgaria – ZGOP AD)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 199.85,
+          "currency": "BGN",
+          "year": 2020,
+          "scope": "works",
+          "note": "BGN 199,850,060.56 excluding VAT, design and construction contract signed 30 October 2020."
+        }
+      },
+      "note": {
+        "en": "Design and construction contract: BGN 199,850,060.56 excluding VAT, 10 km of double line (NRIC). Scope: new third electrified track from Sofia Central to Voluyak, new six-track Obelya station with a link to the metro, new station buildings at Voluyak and Obelya, renewed Nadezhda and Vrabnitsa stops. Contract signed on 30 October 2020; construction was officially launched on 13 July 2021; NRIC still lists Obelya station as to be built. A separate signalling and ERTMS contract (IRTMS KA Voluyak DZZD, BGN 45,499,420.29 excluding VAT) is not included in the figure above. The stated length includes the station track layouts; the line drawn between the two station centres measures 8.0 km on OpenStreetMap.",
+        "ro": "Contract de proiectare și execuție: 199.850.060,56 leva fără TVA, 10 km de linie dublă (NRIC). Obiect: al treilea fir electrificat nou de la Sofia Centrală la Voluyak, gara nouă Obelya cu șase linii și legătură cu metroul, clădiri noi de gară la Voluyak și Obelya, halte Nadezhda și Vrabnitsa reînnoite. Contract semnat la 30 octombrie 2020; lucrările au fost lansate oficial la 13 iulie 2021; NRIC arată gara Obelya ca încă de construit. Un contract separat de semnalizare și ERTMS (IRTMS KA Voluyak DZZD, 45.499.420,29 leva fără TVA) nu este inclus în cifra de mai sus. Lungimea indicată include schemele de linii ale gărilor; linia trasată între centrele celor două gări măsoară 8,0 km pe OpenStreetMap."
+      },
+      "sourceRefs": [
+        "nric-sofia-voluyak",
+        "3e-news-sofia-voluyak-2021",
+        "nric-news-sofia-voluyak-contracts",
+        "osm"
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-10-30",
+          "note": {
+            "en": "Design and construction contract signed (42 months).",
+            "ro": "Contract de proiectare și execuție semnat (42 de luni)."
+          },
+          "sourceRef": "nric-news-sofia-voluyak-contracts"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-07-13",
+          "note": {
+            "en": "Official start of construction works.",
+            "ro": "Startul oficial al lucrărilor de construcție."
+          },
+          "sourceRef": "3e-news-sofia-voluyak-2021"
+        }
+      ],
+      "geometryRef": "s1-sofia-central-voluyak"
+    },
+    {
+      "id": "s2-voluyak-dragoman",
+      "name": {
+        "en": "Voluyak – Dragoman",
+        "ro": "Voluyak – Dragoman"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-03-22",
+        "constructionStart": "2023-01-20"
+      },
+      "lengthKm": 33.34,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Transport Connectivity Programme 2021–2027, phase 2, grant agreement DPTS-11/09.12.2024: project value BGN 331,747,941.77, of which EU contribution BGN 281,985,750.51 and national co-financing BGN 49,762,191.26. This is a grant, not the cost of the works.",
+            "ro": "Programul Conectivitate în Transport 2021–2027, faza 2, contract de finanțare DPTS-11/09.12.2024: valoarea proiectului 331.747.941,77 leva, din care contribuția UE 281.985.750,51 leva și cofinanțarea națională 49.762.191,26 leva. Este o finanțare nerambursabilă, nu costul lucrărilor."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "DZZD VISTRA",
+          "role": "builder"
+        },
+        {
+          "name": "TERNA AD",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Partial doubling of the single-track electrified line for 160 km/h passenger and 120 km/h freight trains. A new second track is built from Voluyak to Aldomirovtsi West (km 9+200 – 36+420); stations Kostinbrod, Petarch, Aldomirovtsi and Dragoman are rebuilt and a new Slivnitsa station is added. Two contracts of 22 March 2021: no. 11366, Voluyak – Petarch (about 12 km of doubling, BGN 91,999,000 excluding VAT), DZZD VISTRA; no. 11365, Petarch – Dragoman (about 17 km of doubling and 6.5 km of single-track modernisation, plus signalling, BGN 275,000,000 excluding VAT), TERNA AD. Works started on Petarch – Dragoman on 20 January 2023 and on Voluyak – Petarch on 18 September 2024. NRIC put overall physical progress at nearly 43% on 27 March 2025, with completion expected by the end of 2027, and reports significant delay. The ERTMS contractor was still being selected. The new border station beyond Dragoman, due by 2030, belongs to the Dragoman – Serbian border section.",
+        "ro": "Dublarea parțială a liniei electrificate cu un singur fir, pentru trenuri de călători de 160 km/h și de marfă de 120 km/h. Se construiește un al doilea fir nou de la Voluyak la Aldomirovtsi Vest (km 9+200 – 36+420); gările Kostinbrod, Petarch, Aldomirovtsi și Dragoman sunt reconstruite și se adaugă o gară nouă Slivnitsa. Două contracte din 22 martie 2021: nr. 11366, Voluyak – Petarch (circa 12 km de dublare, 91.999.000 leva fără TVA), DZZD VISTRA; nr. 11365, Petarch – Dragoman (circa 17 km de dublare și 6,5 km de modernizare a liniei simple, plus semnalizare, 275.000.000 leva fără TVA), TERNA AD. Lucrările au început pe Petarch – Dragoman la 20 ianuarie 2023 și pe Voluyak – Petarch la 18 septembrie 2024. NRIC indica la 27 martie 2025 un progres fizic general de aproape 43%, cu finalizare așteptată până la sfârșitul lui 2027, și raportează întârzieri semnificative. Contractantul pentru ERTMS era încă în curs de selecție. Noua gară de frontieră de dincolo de Dragoman, prevăzută până în 2030, ține de secțiunea Dragoman – frontiera cu Serbia."
+      },
+      "sourceRefs": [
+        "nric-voluyak-dragoman-phase2",
+        "nric-news-voluyak-dragoman-contracts",
+        "nric-news-petarch-dragoman-start",
+        "nric-news-voluyak-petarch-start",
+        "nric-news-voluyak-dragoman-inspection",
+        "osm"
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-03-22",
+          "note": {
+            "en": "Contracts 11366 (Voluyak – Petarch) and 11365 (Petarch – Dragoman) signed.",
+            "ro": "Contractele 11366 (Voluyak – Petarch) și 11365 (Petarch – Dragoman) semnate."
+          },
+          "sourceRef": "nric-news-voluyak-dragoman-contracts"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-01-20",
+          "note": {
+            "en": "Official start of works on Petarch – Dragoman. Works on Voluyak – Petarch started on 18 September 2024.",
+            "ro": "Startul oficial al lucrărilor pe Petarch – Dragoman. Lucrările pe Voluyak – Petarch au început la 18 septembrie 2024."
+          },
+          "sourceRef": "nric-news-petarch-dragoman-start"
+        }
+      ],
+      "geometryRef": "s2-voluyak-dragoman",
+      "contract": {
+        "value": {
+          "amount": 366.999,
+          "currency": "BGN",
+          "year": 2021,
+          "scope": "works",
+          "note": "Sum of two section contracts signed 22 March 2021, both excluding VAT: Voluyak – Petarch BGN 91,999,000 (without contingencies) and Petarch – Dragoman BGN 275,000,000."
+        }
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "nric-sofia-voluyak",
+      "title": "ДП НКЖИ: Развитие на жп възел София – железопътен участък София-Волуяк",
+      "url": "https://www.rail-infra.bg/bg/180",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "3e-news-sofia-voluyak-2021",
+      "title": "3E news: Започва мащабна модернизация на жп инфраструктурата между София и Волуяк за близо 200 млн. лв. (2021-07-13)",
+      "url": "https://3e-news.net/bg/a/view/22905/zapochva-mashtabna-modernizacija-na-jp-infrastrukturata-mejdu-sofija-i-volujak-za-blizo-200-mln-lv",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-voluyak-dragoman-phase2",
+      "title": "ДП НКЖИ: Проект Модернизация на железопътната линия София – Драгоман – сръбска граница, жп участък Волуяк – Драгоман, Фаза 2",
+      "url": "https://www.rail-infra.bg/upload/6682/%D0%98%D0%BD%D1%84%D0%BE+%D0%92%D0%BE%D0%BB%D1%83%D1%8F%D0%BA+-+%D0%94%D1%80%D0%B0%D0%B3%D0%BE%D0%BC%D0%B0%D0%BD+%D0%A4%D0%B0%D0%B7%D0%B0+2.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-sofia-voluyak-contracts",
+      "title": "ДП НКЖИ: Подписаха два ключови договора за развитието на железопътен възел София (2020-10-30)",
+      "url": "https://www.rail-infra.bg/bg/news/4315",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-voluyak-dragoman-contracts",
+      "title": "ДП НКЖИ: Подписаха договорите за модернизация на жп участък Волуяк-Драгоман (2021-03-22)",
+      "url": "https://www.rail-infra.bg/bg/news/4331",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-petarch-dragoman-start",
+      "title": "ДП НКЖИ: Стартира модернизацията на железопътния участък Петърч-Драгоман (2023-01-20)",
+      "url": "https://www.rail-infra.bg/bg/news/4429",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-voluyak-petarch-start",
+      "title": "ДП НКЖИ: Стартира модернизацията на железопътния участък Волуяк – Петърч (2024-09-18)",
+      "url": "https://www.rail-infra.bg/bg/news/4491",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-voluyak-dragoman-inspection",
+      "title": "ДП НКЖИ: Ръководството на НКЖИ направи пълен обход и проверка на строителните дейности по проекта за модернизация на участъка Волуяк-Драгоман (2025-03-27)",
+      "url": "https://www.rail-infra.bg/bg/news/4507",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

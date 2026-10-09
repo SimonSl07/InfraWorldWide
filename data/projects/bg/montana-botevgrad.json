@@ -1,0 +1,421 @@
+{
+  "id": "bg-montana-botevgrad",
+  "country": "bg",
+  "category": "highway",
+  "name": {
+    "en": "Montana – Botevgrad Expressway (I-1 / E79)",
+    "ro": "Drumul expres Montana – Botevgrad (I-1 / E79)"
+  },
+  "description": {
+    "en": "Planned 97.8 km expressway on road I-1 (E79) linking Montana, Vratsa, Mezdra and Botevgrad, continuing the Vidin – Montana motorway towards the A2 Hemus. It is built as new road and as widening of the existing I-1 to a Г20 cross-section with a 120 km/h design speed. The Montana bypass opened on 29 December 2015, Lot 2 (Mezdra – Lyutidol) in July 2025, and 7.5 km of Lot 1 in April 2023. Montana – Vratsa, the Vratsa bypass and Vratsa – Mezdra have no construction contractor. The existing I-1 carries traffic on the unbuilt stretches and is not modelled as a separate lot.",
+    "ro": "Drum expres planificat de 97,8 km pe drumul I-1 (E79), care leagă Montana, Vratsa, Mezdra și Botevgrad și continuă autostrada Vidin – Montana spre A2 Hemus. Se construiește ca drum nou și prin lărgirea drumului I-1 existent la profilul Г20, cu viteză de proiectare de 120 km/h. Ocolitoarea Montana a fost deschisă la 29 decembrie 2015, lotul 2 (Mezdra – Lyutidol) în iulie 2025, iar 7,5 km din lotul 1 în aprilie 2023. Montana – Vratsa, ocolitoarea Vratsa și Vratsa – Mezdra nu au executant de lucrări. Drumul I-1 existent este circulat pe tronsoanele nerealizate și nu este modelat ca lot separat."
+  },
+  "operator": "bg-api",
+  "corridors": [
+    "pan-european-iv"
+  ],
+  "lots": [
+    {
+      "id": "obhod-montana",
+      "name": {
+        "en": "Montana bypass",
+        "ro": "Ocolitoarea Montana"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-08-27",
+        "constructionStart": "2013-09-19",
+        "opened": "2015-12-29"
+      },
+      "lengthKm": 12.45,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2012-02-24",
+          "sourceRef": "wikipedia-bg-montana-botevgrad"
+        },
+        {
+          "kind": "awarded",
+          "date": "2013-08-27",
+          "sourceRef": "wikipedia-bg-montana-botevgrad"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-09-19",
+          "sourceRef": "wikipedia-bg-montana-botevgrad"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-12-29",
+          "sourceRef": "wikipedia-bg-montana-botevgrad"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „Обход Монтана“",
+          "role": "builder"
+        },
+        {
+          "name": "Трейс Груп Холд АД",
+          "role": "builder"
+        },
+        {
+          "name": "Пи Ес Ай АД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Road I-1 (E79) from km 102+060 to km 114+512.20. The Bulgarian Wikipedia table lists the works at 46,572,618 leva including VAT, with indexation, as at 15 April 2025; it is not an award value and is not recorded as a cost here.",
+        "ro": "Drumul I-1 (E79) de la km 102+060 la km 114+512,20. Tabelul din Wikipedia în bulgară indică lucrările la 46.572.618 leva cu TVA, cu indexare, la 15 aprilie 2025; nu este o valoare de atribuire și nu este înregistrată aici ca cost."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-montana-botevgrad",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "obhod-montana"
+    },
+    {
+      "id": "montana-vratsa",
+      "name": {
+        "en": "Montana – Vratsa",
+        "ro": "Montana – Vratsa"
+      },
+      "status": "planned",
+      "lengthKm": 28.7,
+      "contractors": [
+        {
+          "name": "Трансгео ЕООД",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Road I-1 from km 111+305 to km 140+008. A procedure for a preliminary design with geological surveys was opened on 22 December 2023 and the design contract was signed with Трансгео ЕООД on 1 August 2024. As of 1 September 2024 no construction contractor procedure had started. The existing I-1 carries traffic on this stretch.",
+        "ro": "Drumul I-1 de la km 111+305 la km 140+008. La 22 decembrie 2023 a fost deschisă o procedură pentru un proiect preliminar cu studii geologice, iar contractul de proiectare a fost semnat cu Трансгео ЕООД la 1 august 2024. La 1 septembrie 2024 nu fusese pornită nicio procedură pentru un executant de lucrări. Drumul I-1 existent este circulat pe acest tronson."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-montana-botevgrad",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "montana-vratsa"
+    },
+    {
+      "id": "vratsa-bypass",
+      "name": {
+        "en": "Vratsa bypass",
+        "ro": "Ocolitoarea Vratsa"
+      },
+      "status": "planned",
+      "lengthKm": 15,
+      "contractors": [
+        {
+          "name": "Обединение „ИКюИнфра“ (И КЮ И КОНТРОЛ ООД, Инфра про консулт ООД)",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Doubling of the existing Vratsa bypass to the Г20 cross-section, about 15 km. The design contract was signed on 18 February 2025 with Обединение „ИКюИнфра“. As of 1 September 2024 no procedure to choose a contractor for the doubling had started.",
+        "ro": "Dublarea ocolitoarei existente a Vratsei la profilul Г20, circa 15 km. Contractul de proiectare a fost semnat la 18 februarie 2025 cu Обединение „ИКюИнфра“. La 1 septembrie 2024 nu fusese pornită nicio procedură pentru alegerea unui executant pentru dublare."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-montana-botevgrad",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "vratsa-bypass"
+    },
+    {
+      "id": "vratsa-mezdra",
+      "name": {
+        "en": "Vratsa – Mezdra",
+        "ro": "Vratsa – Mezdra"
+      },
+      "status": "planned",
+      "lengthKm": 9,
+      "note": {
+        "en": "To be rehabilitated within the existing alignment, which already has the required cross-section. As of 1 September 2024 no contractor procedure had started. A temporary connection between Mezdra and Vratsa was reported in July 2025.",
+        "ro": "Urmează să fie reabilitat pe traseul existent, care are deja profilul necesar. La 1 septembrie 2024 nu fusese pornită nicio procedură pentru un executant. În iulie 2025 a fost raportată o legătură provizorie între Mezdra și Vratsa."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-montana-botevgrad",
+        "newsbg-lot-2-opening-2025",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "vratsa-mezdra"
+    },
+    {
+      "id": "mezdra-lyutidol",
+      "name": {
+        "en": "Mezdra – Lyutidol (Lot 2)",
+        "ro": "Mezdra – Lyutidol (lotul 2)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-09-03",
+        "constructionStart": "2019-10-21",
+        "opened": "2025-07"
+      },
+      "lengthKm": 13.433,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2018-10-10",
+          "sourceRef": "wikipedia-bg-montana-botevgrad"
+        },
+        {
+          "kind": "awarded",
+          "date": "2019-09-03",
+          "sourceRef": "api-mezdra-botevgrad-lot-2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-10-21",
+          "sourceRef": "wikipedia-bg-montana-botevgrad"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-07",
+          "sourceRef": "newsbg-lot-2-opening-2025"
+        }
+      ],
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 266.97590688,
+              "currency": "BGN",
+              "year": 2019,
+              "scope": "works",
+              "note": "Including VAT. Design and construction contract РД-32-5."
+            },
+            "date": "2019-09-03",
+            "sourceRef": "api-mezdra-botevgrad-lot-2"
+          }
+        ]
+      },
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 30,
+        "totalMonths": 36,
+        "value": {
+          "amount": 266.97590688,
+          "currency": "BGN",
+          "year": 2019,
+          "scope": "works",
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "ДЗЗД „МБ ЛОТ 2-2019“",
+          "role": "builder"
+        },
+        {
+          "name": "Европейски пътища АД",
+          "role": "builder"
+        },
+        {
+          "name": "Водно строителство-Благоевград АД",
+          "role": "builder"
+        },
+        {
+          "name": "Вахостав-СК, а.с.",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "lanes": 4,
+        "designSpeedKmh": 120
+      },
+      "note": {
+        "en": "Road I-1 (E79) from km 161+367 to km 174+800, including the Lyutidol bypass, for which the API page lists two tunnels of 490 m and 340 m; whether they were built is not confirmed. Contract duration converted from days: 1096 days (180 design, 916 construction). News.bg reported on 2 July 2025 that the lot would be officially put into operation the next day; the exact day is not confirmed by a second source, so only the month is recorded. A further contract signed on 10 October 2024 covers landslide stabilisation on the lot, and OpenStreetMap still maps part of the Lyutidol bypass as under construction. The API page gave 266,975,906.88 leva including VAT; the Bulgarian Wikipedia table lists 475,920,000 leva, which is not recorded.",
+        "ro": "Drumul I-1 (E79) de la km 161+367 la km 174+800, cu ocolitoarea Lyutidol, pentru care pagina API indică două tuneluri de 490 m și 340 m; nu este confirmat că au fost construite. Durata contractului convertită din zile: 1096 de zile (180 proiectare, 916 execuție). News.bg a relatat la 2 iulie 2025 că lotul va fi dat oficial în exploatare a doua zi; ziua exactă nu este confirmată de o a doua sursă, deci se înregistrează doar luna. Un alt contract semnat la 10 octombrie 2024 acoperă stabilizarea alunecărilor de teren de pe lot, iar OpenStreetMap încă cartografiază o parte din ocolitoarea Lyutidol ca fiind în construcție. Pagina API indică 266.975.906,88 leva cu TVA; tabelul din Wikipedia în bulgară indică 475.920.000 leva, care nu este înregistrat."
+      },
+      "sourceRefs": [
+        "api-mezdra-botevgrad-lot-2",
+        "newsbg-lot-2-opening-2025",
+        "wikipedia-bg-montana-botevgrad",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "mezdra-lyutidol"
+    },
+    {
+      "id": "lyutidol-novachene",
+      "name": {
+        "en": "Lyutidol – Novachene (Lot 1, western part)",
+        "ro": "Lyutidol – Novachene (lotul 1, partea de vest)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2019-10-18"
+      },
+      "lengthKm": 10.84,
+      "contractors": [
+        {
+          "name": "Обединение „Геопът Лот 1“",
+          "role": "builder"
+        },
+        {
+          "name": "Геострой АД",
+          "role": "builder"
+        },
+        {
+          "name": "Пътстрой-92 АД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Western part of Lot 1 (km 174+800 to km 194+122, 19.322 km), contract РД-33-12 of 18 October 2019 for 159,599,935.27 leva including VAT, 1096 days (180 design, 916 construction). The contract value covers the whole lot and is not split here; the Bulgarian Wikipedia table lists 218,876,687 leva with indexation. Length measured from OpenStreetMap geometry. A 4 km stretch between km 180 and km 184, with the Трудовец overpass, had an Act 15 signed in January 2026 and awaited a use permit. Balkanec.bg reports Lot 1 as 98.5% built, excluding landslide stabilisation, and the whole road finished by mid-2027 (a press forecast).",
+        "ro": "Partea de vest a lotului 1 (km 174+800 la km 194+122, 19,322 km), contract РД-33-12 din 18 octombrie 2019 de 159.599.935,27 leva cu TVA, 1096 de zile (180 proiectare, 916 execuție). Valoarea contractului acoperă întregul lot și nu este împărțită aici; tabelul din Wikipedia în bulgară indică 218.876.687 leva cu indexare. Lungime măsurată din geometria OpenStreetMap. Pe un tronson de 4 km între km 180 și km 184, cu pasajul Трудовец, a fost semnat Actul 15 în ianuarie 2026 și se aștepta autorizația de utilizare. Balkanec.bg indică lotul 1 ca fiind construit în proporție de 98,5%, fără stabilizarea alunecărilor de teren, iar întreg drumul finalizat la mijlocul lui 2027 (prognoză din presă)."
+      },
+      "sourceRefs": [
+        "api-mezdra-botevgrad-lot-1",
+        "balkanec-botevgrad-interchange",
+        "wikipedia-bg-montana-botevgrad",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "lyutidol-novachene"
+    },
+    {
+      "id": "novachene-skravena",
+      "name": {
+        "en": "Novachene – Skravena (Lot 1, opened part)",
+        "ro": "Novachene – Skravena (lotul 1, partea deschisă)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-10-18",
+        "opened": "2023-04-13"
+      },
+      "lengthKm": 7.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2023-04-13",
+          "sourceRef": "wikipedia-bg-montana-botevgrad"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Обединение „Геопът Лот 1“",
+          "role": "builder"
+        },
+        {
+          "name": "Геострой АД",
+          "role": "builder"
+        },
+        {
+          "name": "Пътстрой-92 АД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "7.5 km of new road between Novachene and Skravena, with the Novachene interchange, three bridges over the Bebresh, Rudarka and Kalnitsa rivers and two overpasses, opened on 13 April 2023. Balkanec.bg gives 7.26 km from Novachene to Skravena. Part of Lot 1 under contract РД-33-12; no construction start date is published.",
+        "ro": "7,5 km de drum nou între Novachene și Skravena, cu nodul Novachene, trei poduri peste râurile Bebresh, Rudarka și Kalnitsa și două pasaje, deschiși la 13 aprilie 2023. Balkanec.bg indică 7,26 km de la Novachene la Skravena. Parte a lotului 1 din contractul РД-33-12; nu este publicată o dată de începere a construcției."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-montana-botevgrad",
+        "patstroy-lot-1-7-5-km",
+        "balkanec-botevgrad-interchange",
+        "api-mezdra-botevgrad-lot-1",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "novachene-skravena"
+    },
+    {
+      "id": "skravena-botevgrad",
+      "name": {
+        "en": "Skravena – Botevgrad interchange (Lot 1, eastern part)",
+        "ro": "Skravena – nodul Botevgrad (lotul 1, partea de est)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2019-10-18"
+      },
+      "lengthKm": 1.982,
+      "contractors": [
+        {
+          "name": "Обединение „Геопът Лот 1“",
+          "role": "builder"
+        },
+        {
+          "name": "Геострой АД",
+          "role": "builder"
+        },
+        {
+          "name": "Пътстрой-92 АД",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Works from km 192+140 to km 194+122, including the Botevgrad interchange and a new road section of about 1 km. News.bg reported on 21 July 2026, citing the roads agency, that the interchange was built and Act 15 was signed, with the use permit still to be issued. BTA reported on 5 October 2026 that the minister expected the use permit within the day; no source read states that it was issued or that traffic is running, so the lot is kept as under construction. Landslide works on six newly registered landslides continue on Lot 1. Part of Lot 1 under contract РД-33-12.",
+        "ro": "Lucrări de la km 192+140 la km 194+122, inclusiv nodul Botevgrad și un tronson nou de drum de circa 1 km. News.bg a relatat la 21 iulie 2026, cu trimitere la agenția drumurilor, că nodul a fost construit și Actul 15 a fost semnat, autorizația de utilizare urmând să fie emisă. BTA a relatat la 5 octombrie 2026 că ministrul se aștepta la autorizația de utilizare în cursul zilei; nicio sursă citită nu spune că a fost emisă sau că se circulă, deci lotul rămâne în construcție. Lucrările la șase alunecări de teren nou înregistrate continuă pe lotul 1. Parte a lotului 1 din contractul РД-33-12."
+      },
+      "sourceRefs": [
+        "balkanec-botevgrad-interchange",
+        "newsbg-botevgrad-interchange-2026",
+        "bta-mezdra-botevgrad-2026",
+        "wikipedia-bg-montana-botevgrad",
+        "osm-montana-botevgrad"
+      ],
+      "geometryRef": "skravena-botevgrad"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-bg-montana-botevgrad",
+      "title": "Wikipedia (bg): Скоростен път „Монтана – Ботевград“",
+      "url": "https://bg.wikipedia.org/wiki/%D0%A1%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D0%B5%D0%BD_%D0%BF%D1%8A%D1%82_%E2%80%9E%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%E2%80%93_%D0%91%D0%BE%D1%82%D0%B5%D0%B2%D0%B3%D1%80%D0%B0%D0%B4%E2%80%9C",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "api-mezdra-botevgrad-lot-1",
+      "title": "Агенция „Пътна инфраструктура“: Мездра – Ботевград от км 174+800 до км 194+122, лот 1",
+      "url": "https://api.bg/bg/mezdra-botevgrad-ot-km-174-800-do-km-194-122-lot-1.html",
+      "archiveUrl": "https://web.archive.org/web/20250811164702id_/https://api.bg/bg/mezdra-botevgrad-ot-km-174-800-do-km-194-122-lot-1.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "api-mezdra-botevgrad-lot-2",
+      "title": "Агенция „Пътна инфраструктура“: Мездра – Ботевград от км 161+367 до км 174+800, лот 2",
+      "url": "https://www.api.bg/bg/mezdra-botevgrad-ot-km-161-367-do-km-174-800-lot-2.html",
+      "archiveUrl": "https://web.archive.org/web/20251221085725id_/https://www.api.bg/bg/mezdra-botevgrad-ot-km-161-367-do-km-174-800-lot-2.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "newsbg-lot-2-opening-2025",
+      "title": "News.bg: Пускат движението в участъка между Ботевград и Мездра в посока Враца",
+      "url": "https://news.bg/regions/puskat-dvizhenieto-v-uchastaka-mezhdu-botevgrad-i-mezdra-v-posoka-vratsa.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "patstroy-lot-1-7-5-km",
+      "title": "Пътстрой-92: Готови са 7,5 км новопостроено трасе от скоростен път „Мездра-Ботевград“ Лот 1",
+      "url": "https://patstroy.com/novini/140-gotovi-sa-7-5-km-novopostroeno-trase-ot-skorosten-pat-mezdra-botevgrad-lot-1",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "balkanec-botevgrad-interchange",
+      "title": "Balkanec.bg: Пътен възел „Ботевград“ е готов и очаква официално пускане в експлоатация",
+      "url": "https://balkanec.bg/paten-vazel-botevgrad-e-gotov-i-ochakva-ofitsialno-puskane-v-eksploatatsiya-video-74843.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "bta-mezdra-botevgrad-2026",
+      "title": "БТА: Пътят Мездра - Ботевград ще бъде завършен в рамките на година, съобщи регионалният министър",
+      "url": "https://www.bta.bg/bg/news/economy/1217675-patyat-mezdra-botevgrad-shte-bade-zavarshen-v-ramkite-na-godina-saobshti-regi",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-montana-botevgrad",
+      "title": "OpenStreetMap contributors: road I-1 (E79) between Montana and Botevgrad (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "newsbg-botevgrad-interchange-2026",
+      "title": "News.bg: Завърши изграждането на пътен възел „Ботевград“ по пътя Мездра – Ботевград",
+      "url": "https://news.bg/regions/zavarshi-izgrazhdaneto-na-paten-vazel-botevgrad-po-patya-mezdra-botevgrad.html",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

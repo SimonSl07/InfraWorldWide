@@ -1,0 +1,86 @@
+{
+  "id": "rs-ada-bridge",
+  "country": "rs",
+  "category": "bridge",
+  "city": "rs-belgrade",
+  "name": {
+    "en": "Ada Bridge",
+    "ro": "Podul Ada"
+  },
+  "description": {
+    "en": "Cable-stayed road bridge over the Sava in Belgrade, 996 m long with a 376 m main span. Opened to traffic on 1 January 2012.",
+    "ro": "Pod rutier hobanat peste Sava la Belgrad, lung de 996 m, cu deschidere principală de 376 m. Deschis circulației la 1 ianuarie 2012."
+  },
+  "lots": [
+    {
+      "id": "main-bridge",
+      "name": {
+        "en": "Ada Bridge over the Sava",
+        "ro": "Podul Ada peste Sava"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-12",
+        "opened": "2012-01-01"
+      },
+      "lengthKm": 0.996,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "European Investment Bank loan, 85% of the cost according to Serbian Wikipedia, citing a State Audit Institution report.",
+            "ro": "Credit al Băncii Europene de Investiții, 85% din cost potrivit Wikipedia în sârbă, care citează un raport al Instituției Supreme de Audit."
+          },
+          "coFinancingRate": 0.85
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Porr",
+          "role": "builder"
+        },
+        {
+          "name": "Slovenija ceste Tehnika",
+          "role": "builder"
+        },
+        {
+          "name": "DSD Brückenbau",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Bridge length 996 m, main span 376 m. English Wikipedia gives €360.2 million and Serbian Wikipedia €161 million (with access roads, as planned) without stating whether it covers the bridge alone or the whole project with access roads, so no cost is recorded. The English page also names the EBRD and private financiers without a citation. Main works began in December 2008 on the right bank. The drawn OpenStreetMap line (one carriageway) is 0.92 km.",
+        "ro": "Lungimea podului 996 m, deschiderea principală 376 m. Wikipedia în engleză indică 360,2 milioane EUR, iar cea în sârbă 161 milioane EUR (cu drumurile de acces, conform planului) fără a preciza dacă include doar podul sau întregul proiect cu drumurile de acces, deci nu se înregistrează un cost. Pagina în engleză menționează și BERD și finanțatori privați, fără citare. Lucrările principale au început în decembrie 2008 pe malul drept. Linia desenată din OpenStreetMap (o singură cale) are 0,92 km."
+      },
+      "sourceRefs": [
+        "wikipedia-ada-bridge",
+        "wikipedia-sr-most-na-adi",
+        "osm-ada-bridge"
+      ],
+      "geometryRef": "main-bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-ada-bridge",
+      "title": "Wikipedia: Ada Bridge",
+      "url": "https://en.wikipedia.org/wiki/Ada_Bridge",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-sr-most-na-adi",
+      "title": "Wikipedia (sr): Most na Adi",
+      "url": "https://sr.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D1%82_%D0%BD%D0%B0_%D0%90%D0%B4%D0%B8",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-ada-bridge",
+      "title": "OpenStreetMap contributors: Ada Bridge deck (ODbL)",
+      "url": "https://www.openstreetmap.org/way/593948550",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

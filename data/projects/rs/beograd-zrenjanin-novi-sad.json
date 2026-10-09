@@ -1,0 +1,86 @@
+{
+  "id": "rs-beograd-zrenjanin-novi-sad",
+  "country": "rs",
+  "category": "highway",
+  "operator": "rs-koridori-srbije",
+  "name": {
+    "en": "Belgrade – Zrenjanin – Novi Sad motorway (A6)",
+    "ro": "Autostrada Belgrad – Zrenjanin – Novi Sad (A6)"
+  },
+  "description": {
+    "en": "A 105.4 km motorway from Belgrade (Ovča) through Zrenjanin to Novi Sad, in two sections: Belgrade (Ovča) – Zrenjanin, 67.66 km, and Zrenjanin – Novi Sad, 37.74 km, the last 5.5 km of which is an expressway from the toll gate before the Kać interchange to the Novi Sad East interchange. The Ministry of Construction, Transport and Infrastructure lists China Shandong International Economic and Technical Cooperation Group as contractor under a framework commercial agreement of 10 November 2023, and reports that preparatory works are under way at about 5% physical progress. Only the Belgrade – Zrenjanin section is modelled. The 37.74 km Zrenjanin – Novi Sad section is not drawn: OpenStreetMap maps only about 15 km of it as a rough outline, so it is not recorded as a lot. The ministry gives an estimated investment value of EUR 1 596.35 million for the project.",
+    "ro": "Autostradă de 105,4 km de la Belgrad (Ovča) prin Zrenjanin până la Novi Sad, în două sectoare: Belgrad (Ovča) – Zrenjanin, 67,66 km, și Zrenjanin – Novi Sad, 37,74 km, ultimii 5,5 km fiind o șosea expres de la bariera de taxare dinaintea nodului Kać până la nodul Novi Sad Est. Ministerul Construcțiilor, Transporturilor și Infrastructurii indică drept constructor China Shandong International Economic and Technical Cooperation Group, în baza unui acord comercial cadru din 10 noiembrie 2023, și raportează că lucrările pregătitoare sunt în curs, cu un progres fizic de circa 5%. Este modelat doar sectorul Belgrad – Zrenjanin. Sectorul Zrenjanin – Novi Sad, de 37,74 km, nu este desenat: OpenStreetMap cartografiază doar circa 15 km din el, ca schiță aproximativă, deci nu este înregistrat ca lot. Ministerul indică o valoare estimată a investiției de 1 596,35 milioane EUR pentru proiect."
+  },
+  "lots": [
+    {
+      "id": "ovca-zrenjanin",
+      "name": {
+        "en": "Belgrade (Ovča) – Zrenjanin",
+        "ro": "Belgrad (Ovča) – Zrenjanin"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-11-10"
+      },
+      "lengthKm": 67.66,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-11-10",
+          "note": {
+            "en": "Framework commercial agreement with China Shandong International Economic and Technical Cooperation Group for the whole Belgrade – Zrenjanin – Novi Sad route.",
+            "ro": "Acord comercial cadru cu China Shandong International Economic and Technical Cooperation Group pentru întregul traseu Belgrad – Zrenjanin – Novi Sad."
+          },
+          "sourceRef": "mgsi-beograd-zrenjanin-novi-sad"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The ministry names the republic budget and a domestic bank credit as funding sources for the whole route.",
+            "ro": "Ministerul indică bugetul republicii și un credit bancar intern drept surse de finanțare pentru întregul traseu."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The ministry reports that preparatory works are under way at about 5% physical progress; the status is under construction because the ministry reports physical progress, but main construction has not been reported as started, so no construction start is recorded. Length is the ministry's figure. The OpenStreetMap alignment is a rough outline (A6, highway=construction, marked fixme) of 67.36 km and is drawn from Ovča to its western end south-west of Zrenjanin.",
+        "ro": "Ministerul raportează că lucrările pregătitoare sunt în curs, cu un progres fizic de circa 5%; statutul este în construcție deoarece ministerul raportează progres fizic, dar începerea lucrărilor principale nu a fost raportată, deci nu se înregistrează o dată de începere a construcției. Lungimea este cifra ministerului. Traseul din OpenStreetMap este o schiță aproximativă (A6, highway=construction, marcat fixme) de 67,36 km și este desenat de la Ovča până la capătul său vestic, la sud-vest de Zrenjanin."
+      },
+      "sourceRefs": [
+        "mgsi-beograd-zrenjanin-novi-sad",
+        "osm-beograd-zrenjanin-novi-sad"
+      ],
+      "geometryRef": "ovca-zrenjanin"
+    }
+  ],
+  "cost": {
+    "amount": 1596.35,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "estimated",
+    "note": "Estimated investment value (Procenjena vrednost) stated by the ministry for the project as a whole; price year not stated."
+  },
+  "sources": [
+    {
+      "id": "mgsi-beograd-zrenjanin-novi-sad",
+      "title": "Ministry of Construction, Transport and Infrastructure: Izgradnja autoputa Beograd – Zrenjanin – Novi Sad (sections, contractor, framework agreement of 10.11.2023, preparatory works)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-autoputa-beograd-zrenjanin-novi-sad",
+      "publisher": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-beograd-zrenjanin-novi-sad",
+      "title": "OpenStreetMap contributors: A6 highway=construction ways, Belgrade – Zrenjanin (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

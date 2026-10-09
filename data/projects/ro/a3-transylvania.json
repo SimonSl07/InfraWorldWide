@@ -88,17 +88,34 @@
       "geometryRef": "bors-biharia"
     },
     {
-      "id": "biharia-suplacu",
+      "id": "biharia-chiribis",
       "name": {
-        "en": "Biharia – Suplacu de Barcău",
-        "ro": "Biharia – Suplacu de Barcău"
+        "en": "Biharia – Chiribiș",
+        "ro": "Biharia – Chiribiș"
       },
       "status": "under_construction",
       "dates": {
-        "constructionStart": "2018",
-        "expectedOpening": "2026"
+        "tenderAwarded": "2024-03-15",
+        "constructionStart": "2025-07-24",
+        "expectedOpening": "2027"
       },
-      "lengthKm": 54.9,
+      "lengthKm": 28.55,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 785.21,
+              "currency": "RON",
+              "year": 2024,
+              "scope": "works",
+              "note": "Excluding VAT. Design and build."
+            },
+            "date": "2024-03-15",
+            "sourceRef": "economica-chiribis-biharia-precon-signed"
+          }
+        ]
+      },
       "events": [
         {
           "kind": "contract_terminated",
@@ -109,15 +126,6 @@
           "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
         },
         {
-          "kind": "awarded",
-          "date": "2015",
-          "note": {
-            "en": "Suplacu de Barcău – Borș re-awarded to Corsan-Corviam.",
-            "ro": "Suplacu de Barcău – Borș recontractat cu Corsan-Corviam."
-          },
-          "sourceRef": "economedia-transilvania-telenovela"
-        },
-        {
           "kind": "contract_terminated",
           "date": "2016",
           "note": {
@@ -125,11 +133,6 @@
             "ro": "Contractul Corsan-Corviam, atribuit în 2015, reziliat."
           },
           "sourceRef": "economica-suplacu-chiribis-relaunched"
-        },
-        {
-          "kind": "construction_start",
-          "date": "2018",
-          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
         },
         {
           "kind": "awarded",
@@ -159,24 +162,6 @@
           "sourceRef": "economica-chiribis-biharia-tender-2022"
         },
         {
-          "kind": "tender_launched",
-          "date": "2023-01-06",
-          "note": {
-            "en": "Fourth tender for Suplacu de Barcău – Chiribiș: 937.53 million lei excl. VAT, 6 months design and 18 months execution.",
-            "ro": "A patra licitație pentru Suplacu de Barcău – Chiribiș: 937,53 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție."
-          },
-          "sourceRef": "economedia-suplacu-chiribis-fourth-tender"
-        },
-        {
-          "kind": "awarded",
-          "date": "2023-09-04",
-          "note": {
-            "en": "Construcții Erbașu designated winner for Suplacu de Barcău – Chiribiș (26.35 km): 884.123 million lei excl. VAT, 6 months design and 18 months execution.",
-            "ro": "Construcții Erbașu desemnat câștigător pentru Suplacu de Barcău – Chiribiș (26,35 km): 884,123 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție."
-          },
-          "sourceRef": "economedia-suplacu-chiribis-erbasu-winner"
-        },
-        {
           "kind": "awarded",
           "date": "2024-03-15",
           "note": {
@@ -184,15 +169,6 @@
             "ro": "Contractul Chiribiș – Biharia semnat cu Precon Transilvania – Citadina 98: 785,21 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție, Programul Transport 2021-2027."
           },
           "sourceRef": "economica-chiribis-biharia-precon-signed"
-        },
-        {
-          "kind": "construction_start",
-          "date": "2025-01-20",
-          "note": {
-            "en": "Works start order for Suplacu de Barcău – Chiribiș (Construcții Erbașu); contractual completion moved to the end of July 2026.",
-            "ro": "Ordinul de începere a lucrărilor pentru Suplacu de Barcău – Chiribiș (Construcții Erbașu); termenul contractual de finalizare actualizat la sfârșitul lui iulie 2026."
-          },
-          "sourceRef": "economedia-suplacu-chiribis-delay"
         },
         {
           "kind": "construction_start",
@@ -218,38 +194,160 @@
       ],
       "contractors": [
         {
-          "name": "Precon Transilvania – Citadina 98 (Biharia–Chiribiș)",
-          "role": "builder"
-        },
-        {
-          "name": "Erbașu (Chiribiș–Suplacu de Barcău)",
+          "name": "Precon Transilvania – Citadina 98",
           "role": "builder"
         }
       ],
       "contract": {
+        "value": {
+          "amount": 785.21,
+          "currency": "RON",
+          "year": 2024,
+          "scope": "works",
+          "note": "Excluding VAT. Design and build."
+        },
         "designMonths": 6,
         "executionMonths": 18,
         "totalMonths": 24
       },
       "note": {
-        "en": "Biharia–Chiribiș (28.55 km) and Chiribiș–Suplacu de Barcău (26.35 km) re-tendered after the Bechtel termination; OpenStreetMap tags opening_date=2026 on subsection 3A lot 2. Asociația Pro Infrastructura expects Suplacu de Barcău–Chiribiș (Erbașu, signed 24 November 2023) to open in November 2026 and gives Chiribiș–Biharia good chances for December; the Chiribiș–Biharia contract term is 20 May 2027"
+        "en": "Subsection 3C2, re-tendered after the 2013 Bechtel termination. ro.wikipedia and 130km.ro give the opening as 2027 and the contract term is 20 May 2027; Asociația Pro Infrastructura gives it good chances for December 2026. OpenStreetMap tags opening_date=2027 on subsection 3C lot 2.",
+        "ro": "Subsecțiunea 3C2, relicitată după rezilierea contractului Bechtel din 2013. ro.wikipedia și 130km.ro indică deschiderea în 2027, iar termenul contractual este 20 mai 2027; Asociația Pro Infrastructura îi dă șanse bune pentru decembrie 2026. OpenStreetMap marchează opening_date=2027 pe subsecțiunea 3C lotul 2."
       },
       "sourceRefs": [
         "wikipedia-ro-autostrada-a3-rom-nia",
-        "economica-suplacu-chiribis-november",
+        "130km-a3",
         "economedia-chiribis-biharia-dn19e",
         "economedia-transilvania-telenovela",
         "economica-suplacu-chiribis-relaunched",
         "economica-chiribis-biharia-signed-2020",
         "economica-chiribis-biharia-terminated",
         "economica-chiribis-biharia-tender-2022",
-        "economedia-suplacu-chiribis-fourth-tender",
-        "economedia-suplacu-chiribis-erbasu-winner",
         "economica-chiribis-biharia-precon-signed",
-        "economedia-suplacu-chiribis-delay",
         "economedia-chiribis-biharia-works-order"
       ],
-      "geometryRef": "biharia-suplacu"
+      "geometryRef": "biharia-chiribis"
+    },
+    {
+      "id": "chiribis-suplacu",
+      "name": {
+        "en": "Chiribiș – Suplacu de Barcău",
+        "ro": "Chiribiș – Suplacu de Barcău"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-11",
+        "constructionStart": "2025-01-20",
+        "expectedOpening": "2026-12"
+      },
+      "lengthKm": 26.35,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 884.123,
+              "currency": "RON",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT. Design and build."
+            },
+            "date": "2023-11",
+            "sourceRef": "130km-a3"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "contract_terminated",
+          "date": "2013",
+          "note": {
+            "en": "Bechtel design-build contract terminated."
+          },
+          "sourceRef": "wikipedia-ro-autostrada-a3-rom-nia"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2016",
+          "note": {
+            "en": "Corsan-Corviam contract, awarded 2015, terminated.",
+            "ro": "Contractul Corsan-Corviam, atribuit în 2015, reziliat."
+          },
+          "sourceRef": "economica-suplacu-chiribis-relaunched"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2023-01-06",
+          "note": {
+            "en": "Fourth tender for Suplacu de Barcău – Chiribiș: 937.53 million lei excl. VAT, 6 months design and 18 months execution.",
+            "ro": "A patra licitație pentru Suplacu de Barcău – Chiribiș: 937,53 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție."
+          },
+          "sourceRef": "economedia-suplacu-chiribis-fourth-tender"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-09-04",
+          "note": {
+            "en": "Construcții Erbașu designated winner for Suplacu de Barcău – Chiribiș (26.35 km): 884.123 million lei excl. VAT, 6 months design and 18 months execution.",
+            "ro": "Construcții Erbașu desemnat câștigător pentru Suplacu de Barcău – Chiribiș (26,35 km): 884,123 milioane lei fără TVA, 6 luni proiectare și 18 luni execuție."
+          },
+          "sourceRef": "economedia-suplacu-chiribis-erbasu-winner"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-01-20",
+          "note": {
+            "en": "Works start order for Suplacu de Barcău – Chiribiș (Construcții Erbașu); contractual completion moved to the end of July 2026.",
+            "ro": "Ordinul de începere a lucrărilor pentru Suplacu de Barcău – Chiribiș (Construcții Erbașu); termenul contractual de finalizare actualizat la sfârșitul lui iulie 2026."
+          },
+          "sourceRef": "economedia-suplacu-chiribis-delay"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds, after the Bechtel contract was terminated in 2013",
+            "ro": "Fonduri europene, după rezilierea contractului cu Bechtel în 2013"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Construcții Erbașu",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 884.123,
+          "currency": "RON",
+          "year": 2023,
+          "scope": "works",
+          "note": "Excluding VAT. Design and build."
+        },
+        "designMonths": 6,
+        "executionMonths": 18,
+        "totalMonths": 24
+      },
+      "note": {
+        "en": "Subsection 3C1, with the Suplacu de Barcău viaduct. Contract with Construcții Erbașu signed in November 2023 (24 November per Asociația Pro Infrastructura). ro.wikipedia gives the opening as December 2026 and 130km.ro as 2026; Pro Infrastructura expects November 2026. OpenStreetMap tags opening_date=2026 on subsection 3C lot 1.",
+        "ro": "Subsecțiunea 3C1, cu viaductul de la Suplacu de Barcău. Contractul cu Construcții Erbașu a fost semnat în noiembrie 2023 (la 24 noiembrie, potrivit Asociației Pro Infrastructura). ro.wikipedia indică deschiderea în decembrie 2026, iar 130km.ro în 2026; Pro Infrastructura o așteaptă în noiembrie 2026. OpenStreetMap marchează opening_date=2026 pe subsecțiunea 3C lotul 1."
+      },
+      "sourceRefs": [
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "130km-a3",
+        "economica-suplacu-chiribis-november",
+        "economedia-transilvania-telenovela",
+        "economica-suplacu-chiribis-relaunched",
+        "economedia-suplacu-chiribis-fourth-tender",
+        "economedia-suplacu-chiribis-erbasu-winner",
+        "economedia-suplacu-chiribis-delay"
+      ],
+      "geometryRef": "chiribis-suplacu"
     },
     {
       "id": "suplacu-nusfalau",
@@ -265,6 +363,12 @@
       },
       "lengthKm": 13.55,
       "cost": {
+        "estimated": {
+          "amount": 395.72,
+          "currency": "RON",
+          "scope": "works",
+          "note": "Estimated value of the tender launched by CNAIR on 20 March 2019. VAT basis and price year not stated."
+        },
         "revisions": [
           {
             "kind": "award",
@@ -362,7 +466,8 @@
         "hotnews-suplacu-nusfalau-contract",
         "monitorulcj-suplacu-nusfalau-price",
         "economedia-suplacu-nusfalau-opened",
-        "economedia-suplacu-nusfalau-works"
+        "economedia-suplacu-nusfalau-works",
+        "economica-suplacu-nusfalau-tender-2019"
       ],
       "geometryRef": "suplacu-nusfalau"
     },
@@ -619,6 +724,47 @@
       "geometryRef": "zimbor-nadaselu"
     },
     {
+      "id": "gilau-nadaselu",
+      "name": {
+        "en": "Gilău (Cluj West) – Nădășelu",
+        "ro": "Gilău (Cluj Vest) – Nădășelu"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-04",
+        "constructionStart": "2014-08",
+        "opened": "2018-09-28"
+      },
+      "lengthKm": 9.6,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2018-09-28",
+          "sourceRef": "hotnews-gilau-nadaselu-opened"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Spedition UMB – Tehnostrade",
+          "role": "builder"
+        },
+        {
+          "name": "Tirrena Scavi (Someșul Mic bridge at Gilău)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 28 September 2018, once CNAIR accepted the 320 m bridge over the Someșul Mic at Gilău. Bechtel had left the bridge unfinished; Tirrena Scavi completed it under a contract of about 26 million lei signed in September 2017. The 8.7 km Spedition UMB – Tehnostrade motorway lot beyond it, contracted in April 2013 and started in August 2014, was accepted in November 2017. CNAIR gives the opened section as over 9.6 km; en.wikipedia gives 9.5 km.",
+        "ro": "Deschis la 28 septembrie 2018, după ce CNAIR a recepționat podul de 320 m peste Someșul Mic de la Gilău. Bechtel lăsase podul neterminat; Tirrena Scavi l-a finalizat printr-un contract de circa 26 milioane lei semnat în septembrie 2017. Lotul de autostradă de 8,7 km al Spedition UMB – Tehnostrade de dincolo de pod, contractat în aprilie 2013 și început în august 2014, fusese recepționat în noiembrie 2017. CNAIR indică pentru sectorul deschis peste 9,6 km; en.wikipedia indică 9,5 km."
+      },
+      "sourceRefs": [
+        "hotnews-gilau-nadaselu-opened",
+        "wikipedia-en-a3-motorway-romania",
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
+      "geometryRef": "gilau-nadaselu"
+    },
+    {
       "id": "gilau-turda",
       "name": {
         "en": "Gilău (Cluj West) – Turda",
@@ -685,18 +831,33 @@
       "geometryRef": "turda-campia-turzii"
     },
     {
-      "id": "campia-turzii-targu-mures",
+      "id": "campia-turzii-chetani",
       "name": {
-        "en": "Câmpia Turzii – Târgu Mureș (Ungheni)",
-        "ro": "Câmpia Turzii – Târgu Mureș (Ungheni)"
+        "en": "Câmpia Turzii – Chețani",
+        "ro": "Câmpia Turzii – Chețani"
       },
       "status": "opened",
       "dates": {
-        "tenderAwarded": "2015-02-16",
         "constructionStart": "2016-05",
-        "opened": "2018-12-12"
+        "opened": "2023-12-21"
       },
-      "lengthKm": 57,
+      "lengthKm": 15.69,
+      "events": [
+        {
+          "kind": "contract_terminated",
+          "date": "2021-03",
+          "note": {
+            "en": "Straco Grup – Specialist Consulting – Total Road contract terminated over slow progress and the builder's insolvency.",
+            "ro": "Contractul Straco Grup – Specialist Consulting – Total Road reziliat din cauza progresului lent și a insolvenței constructorului."
+          },
+          "sourceRef": "wikipedia-en-a3-motorway-romania"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-12-21",
+          "sourceRef": "wikipedia-en-a3-motorway-romania"
+        }
+      ],
       "funding": [
         {
           "source": "EU",
@@ -711,32 +872,234 @@
       ],
       "contractors": [
         {
-          "name": "Geiger Transilvania – Wilhelm Geiger (Ogra – Iernut)",
-          "role": "builder"
-        },
-        {
-          "name": "Astaldi – Max Bögl – Astalrom – Consitrans (Iernut – Chețani)",
-          "role": "builder"
-        },
-        {
-          "name": "Straco Grup – Specialist Consulting – Total Road (Chețani – Câmpia Turzii)",
-          "role": "builder"
-        },
-        {
-          "name": "Strabag – Straco (Ungheni – Ogra)",
+          "name": "Strabag – Wilhelm Geiger",
           "role": "builder"
         }
       ],
       "note": {
-        "en": "Iernut–Ungheni was the first segment of this section opened, on 12 December 2018, after the Geiger and Strabag lots were finished; the Cluj-Napoca West (Gilău)–Nădășelu extension followed in 2018. Built under five design-and-build contracts: the first (Ogra – Iernut, Geiger) was signed on 16 February 2015 and Iernut – Chețani on 6 April 2016. Works start orders for four lots were issued in May 2016; on the three Ogra – Câmpia Turzii lots, physical works waited for building permits into 2017. Contract values excluding VAT (Wikipedia): Ungheni – Ogra (Strabag – Straco) 251.3 million lei, Ogra – Iernut (Geiger) 55.8 million lei, Iernut – Chețani (Astaldi – Max Bögl) 379.7 million lei and Chețani – Câmpia Turzii (Straco – Specialist Consulting – Total Road) 279.7 million lei. HotNews gives 438 million lei for Iernut – Chețani, VAT basis not stated.",
-        "ro": "Iernut–Ungheni a fost primul segment deschis din această secțiune, la 12 decembrie 2018, după finalizarea loturilor Geiger și Strabag; extinderea Cluj-Napoca Vest (Gilău)–Nădășelu a urmat în 2018. Construită prin cinci contracte de proiectare și execuție: primul (Ogra – Iernut, Geiger) a fost semnat la 16 februarie 2015, iar Iernut – Chețani la 6 aprilie 2016. Ordinele de începere a lucrărilor pentru patru loturi au fost emise în mai 2016; pe cele trei loturi Ogra – Câmpia Turzii, lucrările fizice au așteptat autorizațiile de construire până în 2017. Valori contractuale fără TVA (Wikipedia): Ungheni – Ogra (Strabag – Straco) 251,3 milioane lei, Ogra – Iernut (Geiger) 55,8 milioane lei, Iernut – Chețani (Astaldi – Max Bögl) 379,7 milioane lei și Chețani – Câmpia Turzii (Straco – Specialist Consulting – Total Road) 279,7 milioane lei. HotNews indică 438 milioane lei pentru Iernut – Chețani, fără a preciza baza TVA."
+        "en": "Ogra – Câmpia Turzii lot 3. The first contract, with Straco Grup – Specialist Consulting – Total Road for 279.7 million lei excluding VAT, was terminated in March 2021; ro.wikipedia names Strabag – Wilhelm Geiger as the builder that finished it. Works were completed on 15 December 2023 and traffic opened on 21 December. Wikipedia gives 15.7 km (en) and 15.69 km (ro).",
+        "ro": "Ogra – Câmpia Turzii lotul 3. Primul contract, cu Straco Grup – Specialist Consulting – Total Road, pentru 279,7 milioane lei fără TVA, a fost reziliat în martie 2021; ro.wikipedia indică Strabag – Wilhelm Geiger drept constructorul care l-a finalizat. Lucrările s-au încheiat la 15 decembrie 2023, iar circulația s-a deschis la 21 decembrie. Wikipedia indică 15,7 km (en) și 15,69 km (ro)."
       },
       "sourceRefs": [
+        "wikipedia-en-a3-motorway-romania",
         "wikipedia-ro-autostrada-a3-rom-nia",
-        "hotnews-monitorizari-campia-turzii-targu-mures",
-        "wikipedia-en-a3-motorway-romania"
+        "hotnews-monitorizari-campia-turzii-targu-mures"
       ],
-      "geometryRef": "campia-turzii-targu-mures"
+      "geometryRef": "campia-turzii-chetani"
+    },
+    {
+      "id": "chetani-iernut",
+      "name": {
+        "en": "Chețani – Iernut",
+        "ro": "Chețani – Iernut"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-04-06",
+        "constructionStart": "2016-05",
+        "opened": "2020-09-18"
+      },
+      "lengthKm": 17.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 379.7,
+              "currency": "RON",
+              "year": 2016,
+              "note": "Excluding VAT."
+            },
+            "date": "2016-04-06",
+            "sourceRef": "wikipedia-en-a3-motorway-romania"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2020-09-18",
+          "sourceRef": "wikipedia-en-a3-motorway-romania"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi – Max Bögl – Astalrom – Consitrans",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 379.7,
+          "currency": "RON",
+          "year": 2016,
+          "note": "Excluding VAT. Design and build."
+        }
+      },
+      "note": {
+        "en": "Ogra – Câmpia Turzii lot 2. Design-and-build contract signed on 6 April 2016 for 379.7 million lei excluding VAT (Wikipedia); HotNews gives 437.63 million lei excluding VAT for the contract signed that day. Works start order in May 2016, but physical works waited for building permits into 2017. Opened on 18 September 2020.",
+        "ro": "Ogra – Câmpia Turzii lotul 2. Contract de proiectare și execuție semnat la 6 aprilie 2016, pentru 379,7 milioane lei fără TVA (Wikipedia); HotNews indică 437,63 milioane lei fără TVA pentru contractul semnat atunci. Ordinul de începere a fost emis în mai 2016, dar lucrările fizice au așteptat autorizațiile de construire până în 2017. Deschis la 18 septembrie 2020."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a3-motorway-romania",
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "hotnews-monitorizari-campia-turzii-targu-mures"
+      ],
+      "geometryRef": "chetani-iernut"
+    },
+    {
+      "id": "iernut-ungheni",
+      "name": {
+        "en": "Iernut – Ungheni",
+        "ro": "Iernut – Ungheni"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-02-16",
+        "constructionStart": "2016-05",
+        "opened": "2018-12-12"
+      },
+      "lengthKm": 13.7,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2018-12-12",
+          "sourceRef": "wikipedia-en-a3-motorway-romania"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag – Straco (Ungheni – Ogra)",
+          "role": "builder"
+        },
+        {
+          "name": "Geiger Transilvania – Wilhelm Geiger (Ogra – Iernut)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Two design-and-build lots: Ungheni – Ogra (10.1 km, Strabag – Straco, 251.3 million lei excluding VAT) and Ogra – Iernut (3.6 km, Geiger, 55.8 million lei excluding VAT, signed on 16 February 2015). Opened on 12 December 2018 with a temporary roundabout at the old DN14A, because the Iernut junction lay on the unfinished Chețani – Iernut lot. The Câmpia Turzii – Târgu Mureș section was previously recorded as one 57 km lot opened in 2018; Wikipedia gives its four parts as 15.69, 17.9, 13.7 and 4.5 km (51.8 km).",
+        "ro": "Două loturi de proiectare și execuție: Ungheni – Ogra (10,1 km, Strabag – Straco, 251,3 milioane lei fără TVA) și Ogra – Iernut (3,6 km, Geiger, 55,8 milioane lei fără TVA, semnat la 16 februarie 2015). Deschis la 12 decembrie 2018 cu un sens giratoriu temporar la vechiul DN14A, deoarece nodul Iernut se afla pe lotul neterminat Chețani – Iernut. Secțiunea Câmpia Turzii – Târgu Mureș era înregistrată anterior ca un singur lot de 57 km deschis în 2018; Wikipedia indică cele patru părți ca având 15,69, 17,9, 13,7 și 4,5 km (51,8 km)."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a3-motorway-romania",
+        "wikipedia-ro-autostrada-a3-rom-nia",
+        "hotnews-monitorizari-campia-turzii-targu-mures"
+      ],
+      "geometryRef": "iernut-ungheni"
+    },
+    {
+      "id": "ungheni-targu-mures",
+      "name": {
+        "en": "Ungheni – Târgu Mureș",
+        "ro": "Ungheni – Târgu Mureș"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-05-29",
+        "opened": "2021-12-06"
+      },
+      "lengthKm": 4.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 39,
+              "currency": "EUR",
+              "year": 2020,
+              "note": "Excluding VAT."
+            },
+            "date": "2020-05-29",
+            "sourceRef": "wikipedia-en-a3-motorway-romania"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "contract_terminated",
+          "date": "2016-04",
+          "note": {
+            "en": "Lemacons – Vega 93 – Arcada contract terminated after CNADNR delays in pre-construction arrangements.",
+            "ro": "Contractul Lemacons – Vega 93 – Arcada reziliat după întârzierile CNADNR în pregătirea amplasamentului."
+          },
+          "sourceRef": "wikipedia-en-a3-motorway-romania"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-05-29",
+          "note": {
+            "en": "Contract signed with Strabag after a court challenge to the November 2017 award: €39 million excluding VAT, 18 months.",
+            "ro": "Contract semnat cu Strabag după contestarea în instanță a atribuirii din noiembrie 2017: 39 milioane euro fără TVA, 18 luni."
+          },
+          "sourceRef": "wikipedia-en-a3-motorway-romania"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-06",
+          "sourceRef": "wikipedia-en-a3-motorway-romania"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU funds",
+            "ro": "Fonduri europene"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 39,
+          "currency": "EUR",
+          "year": 2020,
+          "note": "Excluding VAT."
+        },
+        "executionMonths": 18
+      },
+      "note": {
+        "en": "Târgu Mureș – Ogra lot 1: 4.5 km of motorway and a 4.7 km link road. The first contract (Lemacons – Vega 93 – Arcada, 179.8 million lei excluding VAT) was terminated in April 2016. Opened on 6 December 2021.",
+        "ro": "Târgu Mureș – Ogra lotul 1: 4,5 km de autostradă și un drum de legătură de 4,7 km. Primul contract (Lemacons – Vega 93 – Arcada, 179,8 milioane lei fără TVA) a fost reziliat în aprilie 2016. Deschis la 6 decembrie 2021."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a3-motorway-romania",
+        "wikipedia-ro-autostrada-a3-rom-nia"
+      ],
+      "geometryRef": "ungheni-targu-mures"
     }
   ],
   "sources": [
@@ -938,6 +1301,27 @@
       "url": "https://www.monitorulcj.ro/economie/121956-autostrada-transilvania-licitatie-amanata-pentru-sectiunea-de-41-km-dintre-poarta-salajulu-si-nusfalau",
       "retrievedOn": "2026-09-28",
       "publisher": "Monitorul de Cluj"
+    },
+    {
+      "id": "economica-suplacu-nusfalau-tender-2019",
+      "title": "Economica.net: Autostrada Transilvania: CNAIR a deblocat licitaţia pentru construcţia a 13 kilometri, între Nuşfalău şi Suplacu de Barcău (25 February 2020)",
+      "url": "https://www.economica.net/autostrada-transilvania-cnair-a-deblocat-licitatia-pentru-constructia-a-13-kilometri-intre-nusfalau-si-suplacu-de-barcau_180303.html",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Economica.net"
+    },
+    {
+      "id": "hotnews-gilau-nadaselu-opened",
+      "title": "HotNews: Au fost deschiși traficului rutier cei 9,6 km dintre Gilău și Nădășelu, pe A3 (28 September 2018)",
+      "url": "https://monitorizari.hotnews.ro/stiri-infrastructura_articole-22726584-video-fost-deschi-traficului-rutier-cei-9-6-dintre-gil-elu-a3-transilvania.htm",
+      "retrievedOn": "2026-10-02",
+      "publisher": "HotNews"
+    },
+    {
+      "id": "130km-a3",
+      "title": "130km.ro: Autostrada A3 București – Borș (Autostrada Transilvania), lot status tracking",
+      "url": "http://130km.ro/a3.html",
+      "retrievedOn": "2026-10-02",
+      "publisher": "130km.ro"
     }
   ]
 }

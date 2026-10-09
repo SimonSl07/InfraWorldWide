@@ -1,0 +1,304 @@
+{
+  "id": "hr-a11",
+  "country": "hr",
+  "category": "highway",
+  "name": {
+    "en": "A11 Zagreb – Velika Gorica – Lekenik – Sisak",
+    "ro": "Autostrada A11 Zagreb – Velika Gorica – Lekenik – Sisak"
+  },
+  "description": {
+    "en": "Motorway from the A3 at the Jakuševec interchange in Zagreb past Velika Gorica to Sisak, about 41 km, operated by HAC. It opened in four sections: Velika Gorica jug – Buševec in 2009, Buševec – Lekenik in April 2015, Jakuševec – Velika Gorica jug in November 2015 and Lekenik – Sisak on 22 October 2024. Works began in 2006. Kuna amounts are given in the lot notes only.",
+    "ro": "Autostradă de la A3, la nodul Jakuševec din Zagreb, pe lângă Velika Gorica până la Sisak, circa 41 km, operată de HAC. A fost deschisă în patru sectoare: Velika Gorica jug – Buševec în 2009, Buševec – Lekenik în aprilie 2015, Jakuševec – Velika Gorica jug în noiembrie 2015 și Lekenik – Sisak la 22 octombrie 2024. Lucrările au început în 2006. Sumele în kuna apar doar în notele loturilor."
+  },
+  "operator": "hr-hac",
+  "lots": [
+    {
+      "id": "jakusevec-velika-gorica-jug",
+      "name": {
+        "en": "Jakuševec – Velika Gorica jug",
+        "ro": "Jakuševec – Velika Gorica jug"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-11-03"
+      },
+      "lengthKm": 10.9,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-11-03",
+          "sourceRef": "wikipedia-hr-a11"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "Connects the A3 at the Jakuševec interchange to Velika Gorica jug. The Croatian Wikipedia gives 10.9 km, 4 interchanges, 2 viaducts and no toll; the English Wikipedia gives 11 km and a total cost of 1.645 billion kuna (HRK), and says completion was repeatedly delayed by changes of legislation, land acquisition and funding. The mapped motorway measures about 8.9 km because it starts at the northern end of the mapped carriageways, short of the A3 connection.",
+        "ro": "Leagă A3 la nodul Jakuševec de Velika Gorica jug. Wikipedia croată indică 10,9 km, 4 noduri, 2 viaducte și fără taxă; Wikipedia engleză indică 11 km și un cost total de 1,645 miliarde de kuna (HRK) și spune că finalizarea a fost amânată repetat din cauza modificărilor legislative, a exproprierilor și a finanțării. Autostrada cartografiată măsoară circa 8,9 km, deoarece începe la capătul nordic al carosabilelor cartografiate, înainte de legătura cu A3."
+      },
+      "sourceRefs": [
+        "wikipedia-hr-a11",
+        "wikipedia-en-a11",
+        "osm-relation-144820"
+      ],
+      "geometryRef": "jakusevec-velika-gorica-jug"
+    },
+    {
+      "id": "velika-gorica-jug-busevec",
+      "name": {
+        "en": "Velika Gorica jug – Buševec",
+        "ro": "Velika Gorica jug – Buševec"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-04-05",
+        "opened": "2009-05-09"
+      },
+      "lengthKm": 9,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006-04-05",
+          "note": {
+            "en": "Works on the A11 opened at Kušanec, near the future Velika Gorica jug interchange.",
+            "ro": "Lucrările la A11 au fost deschise la Kušanec, lângă viitorul nod Velika Gorica jug."
+          },
+          "sourceRef": "wikipedia-hr-a11"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-05-09",
+          "sourceRef": "wikipedia-hr-a11"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Viadukt",
+          "role": "builder"
+        },
+        {
+          "name": "Hidroelektra",
+          "role": "builder"
+        },
+        {
+          "name": "Konstruktor",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "The first section of the A11, 9 km, with 6 bridges, 4 flyovers, 2 wildlife crossings, a viaduct and an underpass. The English Wikipedia reports a total cost of 657 million kuna (HRK) and says the contract for the works from Velika Gorica jug towards Hrašće Turopoljsko, announced in April 2006 at 202 million kuna (HRK) excluding VAT with completion planned for 15 June 2007, went to a joint venture of Viadukt, Hidroelektra, Konstruktor and Strabag. The Mraclin toll plaza is on the section.",
+        "ro": "Primul sector al A11, 9 km, cu 6 poduri, 4 pasaje, 2 treceri pentru animale, un viaduct și un pasaj subteran. Wikipedia engleză indică un cost total de 657 de milioane de kuna (HRK) și spune că contractul pentru lucrările de la Velika Gorica jug spre Hrašće Turopoljsko, anunțat în aprilie 2006 la 202 de milioane de kuna (HRK) fără TVA, cu finalizare planificată la 15 iunie 2007, a revenit unei asocieri Viadukt, Hidroelektra, Konstruktor și Strabag. Pe sector se află bariera de taxare Mraclin."
+      },
+      "sourceRefs": [
+        "wikipedia-hr-a11",
+        "wikipedia-en-a11",
+        "osm-relation-144820"
+      ],
+      "geometryRef": "velika-gorica-jug-busevec"
+    },
+    {
+      "id": "busevec-lekenik",
+      "name": {
+        "en": "Buševec – Lekenik",
+        "ro": "Buševec – Lekenik"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-04",
+        "opened": "2015-04-22"
+      },
+      "lengthKm": 11.2,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2010-04",
+          "sourceRef": "wikipedia-en-a11"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-04-22",
+          "sourceRef": "wikipedia-hr-a11"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Konstruktor",
+          "role": "builder"
+        },
+        {
+          "name": "Hidroelektra",
+          "role": "builder"
+        },
+        {
+          "name": "Osijek Koteks",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "The English Wikipedia says works began in April 2010 with completion first announced for 2011, and gives the works contract as 645 million kuna (HRK) including VAT; it also reports a total cost of 700 million kuna (HRK) excluding VAT. The Croatian Wikipedia counts 20 structures (2 bridges, a viaduct, an ecoduct, 6 overpasses and 8 culverts) and the Lekenik interchange and toll plaza; the Pešćenica rest area was planned with the section.",
+        "ro": "Wikipedia engleză spune că lucrările au început în aprilie 2010, cu finalizarea anunțată inițial pentru 2011, și indică contractul de lucrări la 645 de milioane de kuna (HRK) cu TVA; raportează și un cost total de 700 de milioane de kuna (HRK) fără TVA. Wikipedia croată numără 20 de structuri (2 poduri, un viaduct, un ecoduct, 6 pasaje superioare și 8 podețe), nodul Lekenik și bariera de taxare; zona de odihnă Pešćenica a fost prevăzută odată cu sectorul."
+      },
+      "sourceRefs": [
+        "wikipedia-hr-a11",
+        "wikipedia-en-a11",
+        "osm-relation-144820"
+      ],
+      "geometryRef": "busevec-lekenik"
+    },
+    {
+      "id": "lekenik-sisak",
+      "name": {
+        "en": "Lekenik – Sisak",
+        "ro": "Lekenik – Sisak"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-02",
+        "opened": "2024-10-22"
+      },
+      "lengthKm": 10.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 37.4,
+              "currency": "EUR",
+              "year": 2022,
+              "note": "VAT basis not stated."
+            },
+            "date": "2022-02",
+            "sourceRef": "sisak-info-a11-2024"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 37.4,
+          "currency": "EUR",
+          "year": 2022,
+          "note": "VAT basis not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021",
+          "note": {
+            "en": "HAC started the procurement in 2021 under a Government conclusion, valued at EUR 40 million.",
+            "ro": "HAC a început achiziția în 2021, conform unei concluzii a Guvernului, la o valoare de 40 de milioane EUR."
+          },
+          "sourceRef": "sisak-info-a11-2024"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-02",
+          "sourceRef": "sisak-info-a11-2024"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-10-22",
+          "note": {
+            "en": "Opened by Prime Minister Andrej Plenković; open to traffic from 18:00.",
+            "ro": "Deschis de premierul Andrej Plenković; deschis traficului de la ora 18:00."
+          },
+          "sourceRef": "smz-a11-2024"
+        }
+      ],
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "Financed by HAC from its own funds, without additional borrowing.",
+            "ro": "Finanțat de HAC din fonduri proprii, fără îndatorare suplimentară."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "COLAS Hrvatska d.d.",
+          "role": "builder"
+        },
+        {
+          "name": "GEOTEHNIKA d.o.o.",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "The last section of the A11, ending at the Sisak interchange, with six overpass crossings and two bridges. The contract was signed in February 2022 with a business association of COLAS Hrvatska and Geotehnika for EUR 37.4 million; the 2021 procurement was valued at EUR 40 million, and HAC says it spent EUR 42 million on the section. Supervision was valued at EUR 500,000 excluding VAT. Works were hard because of marshy ground. The press and the HAC 2024 business report give 10.9 km, one report 11 km. The Sisak access road and Odra bridge are separate HAC contracts and are not in this lot. The English Wikipedia still shows the route as ending at Lekenik.",
+        "ro": "Ultimul sector al A11, care se termină la nodul Sisak, cu șase pasaje de trecere și două poduri. Contractul a fost semnat în februarie 2022 cu o asociere COLAS Hrvatska și Geotehnika pentru 37,4 milioane EUR; achiziția din 2021 a fost evaluată la 40 de milioane EUR, iar HAC spune că a cheltuit 42 de milioane EUR pe sector. Supravegherea a fost evaluată la 500.000 EUR fără TVA. Lucrările au fost dificile din cauza terenului mlăștinos. Presa și raportul de activitate HAC pe 2024 indică 10,9 km, un raport 11 km. Drumul de acces la Sisak și podul Odra sunt contracte HAC separate și nu fac parte din acest lot. Wikipedia engleză arată încă traseul ca terminându-se la Lekenik."
+      },
+      "sourceRefs": [
+        "sisak-info-a11-2024",
+        "smz-a11-2024",
+        "wikipedia-hr-a11",
+        "osm-relation-144820",
+        "hac-report-2024"
+      ],
+      "geometryRef": "lekenik-sisak"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-hr-a11",
+      "title": "Wikipedia (hr): Autocesta A11 (opening dates 2009 and 2015, section lengths, start of works 5 April 2006)",
+      "url": "https://hr.wikipedia.org/wiki/Autocesta_A11",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-en-a11",
+      "title": "Wikipedia (en): A11 (Croatia) (kuna costs, contractors, 2010 start of Buševec – Lekenik; stale on the Sisak section)",
+      "url": "https://en.wikipedia.org/wiki/A11_(Croatia)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "sisak-info-a11-2024",
+      "title": "Sisak.info: Nakon 18 godina završena je autocesta A11 (22 October 2024; Lekenik – Sisak, COLAS Hrvatska and Geotehnika, EUR 37.4M contract signed February 2022)",
+      "url": "https://www.sisak.info/2024/10/22/nakon-18-godina-zavrsena-je-autocesta-a11/",
+      "publisher": "Sisak.info",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "smz-a11-2024",
+      "title": "Sisak-Moslavina County: Svečano puštena u promet dionica Lekenik – Sisak (22 October 2024; 10.9 km, HAC own funds EUR 42M)",
+      "url": "https://www.smz.hr/aktualno/11038-svecano-pustena-u-promet-dionica-lekenik-sisak-kljucna-infrastrukturna-investicija-vlade-rh-za-gospodarski-razvoj-smz",
+      "publisher": "Sisačko-moslavačka županija",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hac-report-2024",
+      "title": "HAC d.o.o.: Izvješće o poslovanju za 2024 (Lekenik – Sisak, 10.9 km, opened October 2024)",
+      "url": "https://hac.hr/files/shares/1.%20Odnosi%20s%20javnoscu/dokumenti/2025/HAC%20d.o.o._Izvje%C5%A1taj%20o%20poslovanju%20za%202024.pdf",
+      "publisher": "Hrvatske autoceste",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-relation-144820",
+      "title": "OpenStreetMap: relation 144820, Autocesta A11 (ref A11)",
+      "url": "https://www.openstreetmap.org/relation/144820",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

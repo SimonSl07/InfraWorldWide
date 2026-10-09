@@ -1,0 +1,242 @@
+{
+  "id": "rs-dunavski-koridor",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "Danube Corridor (Požarevac – Veliko Gradište – Golubac)",
+    "ro": "Coridorul Dunării (Požarevac – Veliko Gradište – Golubac)"
+  },
+  "description": {
+    "en": "Expressway of state road class IB, 67.94 km, from the Požarevac interchange on the A1 (E75) past Požarevac (bypass) and Veliko Gradište to Golubac, designed for 100 km/h. China Shandong International Economic and Technical Cooperation Group designs and builds it under a commercial contract of 28 August 2021 with the Government and Koridori Srbije, awarded directly under an intergovernmental agreement. Subsections 1 and 3 (31.8 km) opened on 23 February 2025 and a further 28 km (Bratinac–Veliko Gradište and Ponikve–Radoševac) on 31 August 2026. The first 1.975 km, up to the start of subsection 1, is not modelled because no source describes it. Lots follow MGSI's subsection chainage; the stretches the press reports for 2026 are placed from the places named. MGSI gave overall physical progress of about 82% in June 2025. No cost is recorded: the only figure found, EUR 475 million for the whole corridor, is a statement by the President and not a project cost.",
+    "ro": "Coridor expres de drum de stat IB, de 67,94 km, de la nodul Požarevac de pe A1 (E75), pe lângă Požarevac (ocolitoare) și Veliko Gradište, până la Golubac, proiectat pentru 100 km/h. China Shandong International Economic and Technical Cooperation Group îl proiectează și îl construiește în baza unui contract comercial din 28 august 2021 cu Guvernul și Koridori Srbije, atribuit direct în baza unui acord interguvernamental. Subsecțiunile 1 și 3 (31,8 km) au fost deschise la 23 februarie 2025, iar alți 28 km (Bratinac–Veliko Gradište și Ponikve–Radoševac) la 31 august 2026. Primii 1,975 km, până la începutul subsecțiunii 1, nu sunt modelați, deoarece nicio sursă nu îi descrie. Loturile urmează kilometrajul subsecțiunilor MGSI; tronsoanele raportate de presă pentru 2026 sunt plasate după localitățile numite. MGSI indica o realizare fizică totală de circa 82% în iunie 2025. Nu se înregistrează niciun cost: singura cifră găsită, 475 milioane EUR pentru tot coridorul, este o declarație a președintelui și nu un cost de proiect."
+  },
+  "operator": "rs-koridori-srbije",
+  "lots": [
+    {
+      "id": "subsection-1",
+      "name": {
+        "en": "Subsection 1: Mala Krsna – Požarevac bypass (km 1+975 to 22+975)",
+        "ro": "Subsecțiunea 1: Mala Krsna – ocolitoarea Požarevac (km 1+975 la 22+975)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-08-28",
+        "opened": "2025-02-23"
+      },
+      "lengthKm": 21,
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        },
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Opened on 23 February 2025 together with subsection 3 (31.8 km in total). Contract signed on 28 August 2021 by direct award under an intergovernmental agreement (no tender); no contract value is recorded. Drawn length from OpenStreetMap is 20.8 km against the 21 km stated.",
+        "ro": "Deschisă la 23 februarie 2025 împreună cu subsecțiunea 3 (31,8 km în total). Contract semnat la 28 august 2021 prin atribuire directă în baza unui acord interguvernamental (fără licitație); nu se înregistrează nicio valoare de contract. Lungimea desenată din OpenStreetMap este de 20,8 km, față de 21 km indicați."
+      },
+      "sourceRefs": [
+        "mgsi-dunavski",
+        "osm-dunavski"
+      ],
+      "geometryRef": "subsection-1"
+    },
+    {
+      "id": "subsection-2-west",
+      "name": {
+        "en": "Subsection 2 west: Požarevac bypass – Bratinac (km 22+975 to about 25+700)",
+        "ro": "Subsecțiunea 2 vest: ocolitoarea Požarevac – Bratinac (km 22+975 la circa 25+700)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-08-28"
+      },
+      "lengthKm": 2.9,
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        },
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Western end of subsection 2 (km 22+975 to 49+700), between the opened subsection 1 and the stretch that opened from Bratinac in August 2026. The 28 km opening reported by N1 starts at Bratinac, so this stretch is not part of it. MGSI (June 2025) records that works continued on the remaining parts of the route and on structures of subsections 1, 2 and 3; N1 (30 August 2026) says the last six kilometres are due by the end of October 2026. The status follows those general statements: no source names this stretch. Length measured from OpenStreetMap geometry. The Bratinac cut is placed at the mapped village. Contract signed on 28 August 2021 by direct award under an intergovernmental agreement (no tender); no contract value is recorded.",
+        "ro": "Capătul vestic al subsecțiunii 2 (km 22+975 la 49+700), între subsecțiunea 1 deschisă și tronsonul deschis de la Bratinac în august 2026. Deschiderea de 28 km raportată de N1 începe la Bratinac, deci acest tronson nu face parte din ea. MGSI (iunie 2025) indică faptul că lucrările continuau pe părțile rămase ale traseului și pe obiectele subsecțiunilor 1, 2 și 3; N1 (30 august 2026) spune că ultimii șase kilometri sunt așteptați până la sfârșitul lui octombrie 2026. Stadiul urmează aceste afirmații generale: nicio sursă nu numește acest tronson. Lungimea este măsurată din geometria OpenStreetMap. Tăietura de la Bratinac este plasată la satul cartografiat. Contract semnat la 28 august 2021 prin atribuire directă în baza unui acord interguvernamental (fără licitație); nu se înregistrează nicio valoare de contract."
+      },
+      "sourceRefs": [
+        "mgsi-dunavski",
+        "n1-dunavski-2026",
+        "osm-dunavski"
+      ],
+      "geometryRef": "subsection-2-west"
+    },
+    {
+      "id": "subsection-2-bratinac-veliko-gradiste",
+      "name": {
+        "en": "Subsection 2: Bratinac – Veliko Gradište",
+        "ro": "Subsecțiunea 2: Bratinac – Veliko Gradište"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-08-28",
+        "opened": "2026-08-31"
+      },
+      "lengthKm": 24,
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        },
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "N1 (30 August 2026) reports 24 km from Bratinac near Požarevac to Veliko Gradište opening for traffic the next day, as part of 28 km opened together with the Ponikve–Radoševac stretch. B92 (26 September 2026) confirms only that 28 km opened in August 2026; the day 31 August is from N1's announcement. MGSI does not name subsections for this opening; the lot is placed in subsection 2 (km 22+975 to 49+700) because it lies between the two opened subsections, and its end is taken as the start of subsection 3 (km 49+700). Contract signed on 28 August 2021 by direct award under an intergovernmental agreement (no tender); no contract value is recorded.",
+        "ro": "N1 (30 august 2026) relatează că 24 km de la Bratinac, lângă Požarevac, până la Veliko Gradište se deschideau circulației a doua zi, ca parte din cei 28 km deschiși împreună cu tronsonul Ponikve–Radoševac. B92 (26 septembrie 2026) confirmă doar că 28 km s-au deschis în august 2026; ziua de 31 august provine din anunțul N1. MGSI nu numește subsecțiuni pentru această deschidere; lotul este plasat în subsecțiunea 2 (km 22+975 la 49+700) deoarece se află între cele două subsecțiuni deschise, iar capătul său este considerat începutul subsecțiunii 3 (km 49+700). Contract semnat la 28 august 2021 prin atribuire directă în baza unui acord interguvernamental (fără licitație); nu se înregistrează nicio valoare de contract."
+      },
+      "sourceRefs": [
+        "n1-dunavski-2026",
+        "b92-684km-2026",
+        "mgsi-dunavski",
+        "osm-dunavski"
+      ],
+      "geometryRef": "subsection-2-bratinac-veliko-gradiste"
+    },
+    {
+      "id": "subsection-3",
+      "name": {
+        "en": "Subsection 3: Veliko Gradište – Ponikve (km 49+700 to 60+500)",
+        "ro": "Subsecțiunea 3: Veliko Gradište – Ponikve (km 49+700 la 60+500)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-08-28",
+        "opened": "2025-02-23"
+      },
+      "lengthKm": 10.8,
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        },
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Opened on 23 February 2025 in full profile, together with subsection 1. MGSI describes it as the Veliko Gradište – Golubac stretch; its end is cut at Ponikve, where N1 places the start of the stretch that opened in 2026. Contract signed on 28 August 2021 by direct award under an intergovernmental agreement (no tender); no contract value is recorded.",
+        "ro": "Deschisă la 23 februarie 2025 în profil complet, împreună cu subsecțiunea 1. MGSI o descrie drept tronsonul Veliko Gradište – Golubac; capătul său este tăiat la Ponikve, unde N1 plasează începutul tronsonului deschis în 2026. Contract semnat la 28 august 2021 prin atribuire directă în baza unui acord interguvernamental (fără licitație); nu se înregistrează nicio valoare de contract."
+      },
+      "sourceRefs": [
+        "mgsi-dunavski",
+        "n1-dunavski-2026",
+        "osm-dunavski"
+      ],
+      "geometryRef": "subsection-3"
+    },
+    {
+      "id": "ponikve-radosevac",
+      "name": {
+        "en": "Ponikve – Radoševac",
+        "ro": "Ponikve – Radoševac"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-08-28",
+        "opened": "2026-08-31"
+      },
+      "lengthKm": 4,
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        },
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "N1 (30 August 2026) reports 4 km from Ponikve to Radoševac, at the entrance to Golubac, opening the next day with the Bratinac–Veliko Gradište stretch. The lot starts at the end of subsection 3 (km 60+500), where Ponikve lies; the subsection it belongs to is not stated. Contract signed on 28 August 2021 by direct award under an intergovernmental agreement (no tender); no contract value is recorded.",
+        "ro": "N1 (30 august 2026) relatează 4 km de la Ponikve la Radoševac, la intrarea în Golubac, deschiși a doua zi împreună cu tronsonul Bratinac–Veliko Gradište. Lotul începe la capătul subsecțiunii 3 (km 60+500), unde se află Ponikve; subsecțiunea din care face parte nu este indicată. Contract semnat la 28 august 2021 prin atribuire directă în baza unui acord interguvernamental (fără licitație); nu se înregistrează nicio valoare de contract."
+      },
+      "sourceRefs": [
+        "n1-dunavski-2026",
+        "mgsi-dunavski",
+        "osm-dunavski"
+      ],
+      "geometryRef": "ponikve-radosevac"
+    },
+    {
+      "id": "radosevac-golubac",
+      "name": {
+        "en": "Radoševac – Golubac (end of corridor)",
+        "ro": "Radoševac – Golubac (capătul coridorului)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-08-28"
+      },
+      "lengthKm": 3.4,
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        },
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Last stretch to the end of the 67.94 km corridor. N1 reports President Vučić saying the last 6 km of the corridor would be finished by the end of October 2026; that is a press-reported forecast and the 6 km does not map to a single mapped stretch. The status follows MGSI (June 2025) and N1, which record works continuing on the parts not yet open; no source names this stretch. Length measured from OpenStreetMap geometry. Contract signed on 28 August 2021 by direct award under an intergovernmental agreement (no tender); no contract value is recorded.",
+        "ro": "Ultimul tronson până la capătul coridorului de 67,94 km. N1 relatează că președintele Vučić a spus că ultimii 6 km ai coridorului vor fi finalizați până la sfârșitul lui octombrie 2026; este o previziune din presă, iar cei 6 km nu corespund unui singur tronson cartografiat. Stadiul urmează MGSI (iunie 2025) și N1, care indică lucrări în continuare pe părțile încă nedeschise; nicio sursă nu numește acest tronson. Lungimea este măsurată din geometria OpenStreetMap. Contract semnat la 28 august 2021 prin atribuire directă în baza unui acord interguvernamental (fără licitație); nu se înregistrează nicio valoare de contract."
+      },
+      "sourceRefs": [
+        "n1-dunavski-2026",
+        "mgsi-dunavski",
+        "osm-dunavski"
+      ],
+      "geometryRef": "radosevac-golubac"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mgsi-dunavski",
+      "title": "Ministry of Construction, Transport and Infrastructure: state road IB, Požarevac – Veliko Gradište – Golubac (67.94 km, China Shandong, contract 28.08.2021; subsections 1 and 3 opened 23.02.2025)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-drzavnog-puta-ib-reda-deonice-brze-saobracajnice-autoput-e-75-beograd-nis-petlja",
+      "publisher": "MGSI",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "n1-dunavski-2026",
+      "title": "N1: Od sutra saobraćaj na novoj deonici Dunavskog koridora, poslednjih šest kilometara do kraja oktobra (30.08.2026; 24 km Bratinac–Veliko Gradište and 4 km Ponikve–Radoševac)",
+      "url": "https://n1info.rs/vesti/dunavski-koridor-autoput-pozarev-golubac/",
+      "publisher": "N1",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "b92-684km-2026",
+      "title": "B92: Srbija 2026: 684 km novih auto-puteva za 13,5 godina (26.09.2026; 28 km of the Danube Corridor opened in August)",
+      "url": "https://www.b92.net/biz/srbija/vesti/270879/srbija-2026-684-km-novih-auto-puteva-za-135-godina/vest",
+      "publisher": "B92",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-dunavski",
+      "title": "OpenStreetMap contributors: trunk and construction ways with ref M7 (Danube Corridor) (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

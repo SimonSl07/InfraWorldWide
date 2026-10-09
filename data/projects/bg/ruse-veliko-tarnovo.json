@@ -1,0 +1,252 @@
+{
+  "id": "bg-ruse-veliko-tarnovo",
+  "country": "bg",
+  "category": "highway",
+  "name": {
+    "en": "Ruse – Veliko Tarnovo Motorway",
+    "ro": "Autostrada Ruse – Veliko Tarnovo"
+  },
+  "description": {
+    "en": "Planned 132.84 km motorway from the future Danube bridge at Ruse to Debelets, south of Veliko Tarnovo, duplicating the I-5 road. It has no number assigned. The Road Infrastructure Agency (API) splits it into three sections. Sections 1 and 2 (Ruse – Byala and the Byala bypass, 75.64 km) are under design-and-build contracts signed in October and November 2022. The tender for Section 3 (Byala – Veliko Tarnovo) was cancelled on 11 August 2026.",
+    "ro": "Autostradă planificată de 132,84 km, de la viitorul pod peste Dunăre la Ruse până la Debelets, la sud de Veliko Tarnovo, care dublează drumul I-5. Nu are un număr atribuit. Agenția Infrastructurii Rutiere (API) o împarte în trei sectoare. Sectoarele 1 și 2 (Ruse – Byala și ocolitoarea Byala, 75,64 km) fac obiectul unor contracte de proiectare și execuție semnate în octombrie și noiembrie 2022. Licitația pentru sectorul 3 (Byala – Veliko Tarnovo) a fost anulată la 11 august 2026."
+  },
+  "operator": "bg-api",
+  "corridors": [
+    "pan-european-ix"
+  ],
+  "lots": [
+    {
+      "id": "ruse-byala",
+      "name": {
+        "en": "Ruse – Byala (Section 1)",
+        "ro": "Ruse – Byala (sectorul 1)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2022-10-18",
+        "expectedOpening": "2028-08-07"
+      },
+      "lengthKm": 40.24,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 536.39,
+              "currency": "BGN",
+              "note": "Forecast value of the tender, excluding VAT.",
+              "year": 2020
+            },
+            "date": "2020-12-08",
+            "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 876.53,
+              "currency": "BGN",
+              "year": 2022,
+              "note": "Design-and-build contract value, excluding VAT."
+            },
+            "date": "2022-10-18",
+            "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 876.53,
+          "currency": "BGN",
+          "year": 2022,
+          "note": "Design-and-build contract value, excluding VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-12-08",
+          "note": {
+            "en": "Design-and-build tender for km 0+400 to 76+040 in two lots.",
+            "ro": "Licitație de proiectare și execuție pentru km 0+400 – 76+040, în două loturi."
+          },
+          "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-10-18",
+          "note": {
+            "en": "Design-and-build contract signed with DZZD Hemus-16320.",
+            "ro": "Contract de proiectare și execuție semnat cu DZZD Hemus-16320."
+          },
+          "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД ХЕМУС-16320",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Km 0+400 to 40+640. The joint venture DZZD Hemus-16320 comprises Infra Expert AD, Avtomagistrali – Cherno More AD, Patinzheneringstroy-T EAD and Transkonsult-22 EOOD. Contract deadline 7 August 2028. Building permit RS-17 of 18 February 2026 covers km 0+500 to 40+640. No groundbreaking was found in the sources, so the lot is recorded as tendered. Wikipedia lists the section as under construction. Length from the API section description.",
+        "ro": "Km 0+400 – 40+640. Asocierea DZZD Hemus-16320 reunește Infra Expert AD, Avtomagistrali – Cherno More AD, Patinzheneringstroy-T EAD și Transkonsult-22 EOOD. Termenul contractului este 7 august 2028. Autorizația de construire RS-17 din 18 februarie 2026 acoperă km 0+500 – 40+640. Nicio primă săpătură nu apare în surse, deci lotul este înregistrat ca licitat. Wikipedia listează sectorul ca aflat în construcție. Lungimea provine din descrierea sectorului de către API."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-ruse-veliko-tarnovo",
+        "api-ruse-veliko-tarnovo"
+      ],
+      "geometryRef": "ruse-byala"
+    },
+    {
+      "id": "byala-bypass",
+      "name": {
+        "en": "Byala bypass (Section 2)",
+        "ro": "Ocolitoarea Byala (sectorul 2)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-11-07",
+        "constructionStart": "2023-12-03",
+        "expectedOpening": "2027-10-23"
+      },
+      "lengthKm": 35.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 446.35,
+              "currency": "BGN",
+              "note": "Forecast value of the tender, excluding VAT.",
+              "year": 2020
+            },
+            "date": "2020-12-08",
+            "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 660.43,
+              "currency": "BGN",
+              "year": 2022,
+              "note": "Design-and-build contract value, excluding VAT."
+            },
+            "date": "2022-11-07",
+            "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 660.43,
+          "currency": "BGN",
+          "year": 2022,
+          "note": "Design-and-build contract value, excluding VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-12-08",
+          "note": {
+            "en": "Design-and-build tender for km 0+400 to 76+040 in two lots.",
+            "ro": "Licitație de proiectare și execuție pentru km 0+400 – 76+040, în două loturi."
+          },
+          "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-11-07",
+          "note": {
+            "en": "Design-and-build contract signed with DZZD AM Ruse – Tarnovo.",
+            "ro": "Contract de proiectare și execuție semnat cu DZZD AM Ruse – Tarnovo."
+          },
+          "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-12-03",
+          "note": {
+            "en": "Groundbreaking on the part of the lot with a building permit already issued.",
+            "ro": "Prima săpătură pe partea din lot pentru care exista deja autorizație de construire."
+          },
+          "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „АМ Русе – Търново“",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Km 40+640 to 76+040. The joint venture comprises Evropeyski Patishta AD, Groma Hold EOOD, Vodno Stroitelstvo – Blagoevgrad AD, Avtomagistrali Hemus AD and Patproekt 2000 OOD. Contract deadline 23 October 2027. Building permits: RS-85 of 14 November 2023 (km 61+140 to 69+040) and RS-41 of 9 June 2025 (km 40+640 to 61+140 and km 69+040 to 76+040). Length from the API section description.",
+        "ro": "Km 40+640 – 76+040. Asocierea reunește Evropeyski Patishta AD, Groma Hold EOOD, Vodno Stroitelstvo – Blagoevgrad AD, Avtomagistrali Hemus AD și Patproekt 2000 OOD. Termenul contractului este 23 octombrie 2027. Autorizații de construire: RS-85 din 14 noiembrie 2023 (km 61+140 – 69+040) și RS-41 din 9 iunie 2025 (km 40+640 – 61+140 și km 69+040 – 76+040). Lungimea provine din descrierea sectorului de către API."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-ruse-veliko-tarnovo",
+        "api-ruse-veliko-tarnovo"
+      ],
+      "geometryRef": "byala-bypass"
+    },
+    {
+      "id": "byala-veliko-tarnovo",
+      "name": {
+        "en": "Byala – Veliko Tarnovo (Section 3)",
+        "ro": "Byala – Veliko Tarnovo (sectorul 3)"
+      },
+      "status": "planned",
+      "lengthKm": 57.2,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-03-18",
+          "note": {
+            "en": "Design-and-build tender in three lots: km 76+040 to the Hemus crossing, Hemus to road I-4, road I-4 to road II-55.",
+            "ro": "Licitație de proiectare și execuție în trei loturi: km 76+040 – intersecția cu Hemus, Hemus – drumul I-4, drumul I-4 – drumul II-55."
+          },
+          "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+        },
+        {
+          "kind": "tender_cancelled",
+          "date": "2026-08-11",
+          "note": {
+            "en": "Procurement terminated over flaws in the bid evaluation methodology.",
+            "ro": "Procedura a fost încheiată din cauza unor defecte ale metodologiei de evaluare a ofertelor."
+          },
+          "sourceRef": "wikipedia-bg-ruse-veliko-tarnovo"
+        }
+      ],
+      "note": {
+        "en": "Km 76+040 to 133+240 (km 76.04 to 133.24 is 57.2 km, as in the API section description; the Wikipedia article's own text says 58 km). Tender cancelled on 11 August 2026 over flaws in the bid evaluation methodology, so the section has no contractor. Offers had been opened on 2 June 2025 (3, 4 and 5 offers for the three lots). The line follows the OpenStreetMap alignment only where one is mapped. The mapped alignment measures about 46.6 km and ends short of Debelets, so the drawn line is shorter than the recorded length.",
+        "ro": "Km 76+040 – 133+240 (de la km 76,04 la 133,24 sunt 57,2 km, ca în descrierea sectorului de către API; textul articolului Wikipedia indică 58 km). Licitația a fost anulată la 11 august 2026 din cauza unor defecte ale metodologiei de evaluare a ofertelor, deci sectorul nu are constructor. Ofertele fuseseră deschise la 2 iunie 2025 (3, 4 și 5 oferte pentru cele trei loturi). Linia urmează traseul din OpenStreetMap doar acolo unde acesta este cartografiat. Traseul cartografiat măsoară aproximativ 46,6 km și se oprește înainte de Debelets, deci linia desenată este mai scurtă decât lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "wikipedia-bg-ruse-veliko-tarnovo",
+        "api-ruse-veliko-tarnovo"
+      ],
+      "geometryRef": "byala-veliko-tarnovo"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-bg-ruse-veliko-tarnovo",
+      "title": "Wikipedia (bg): Автомагистрала „Русе – Велико Търново“",
+      "url": "https://bg.wikipedia.org/wiki/Автомагистрала_„Русе_–_Велико_Търново“",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "api-ruse-veliko-tarnovo",
+      "title": "Road Infrastructure Agency (API): АМ „Русе – Велико Търново“, project description",
+      "url": "https://www.api.bg/bg/am-ruse-veliko-turnovo.html",
+      "publisher": "Агенция „Пътна инфраструктура“",
+      "retrievedOn": "2026-10-05",
+      "archiveUrl": "https://web.archive.org/web/20230425151241/https://www.api.bg/bg/am-ruse-veliko-turnovo.html"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

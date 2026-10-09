@@ -1,0 +1,2056 @@
+{
+  "id": "pl-s8",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S8 expressway (Wrocław – Łódź – Warszawa – Białystok)",
+    "ro": "Drumul expres S8 (Wrocław – Łódź – Varșovia – Białystok)"
+  },
+  "description": {
+    "en": "Expressway from Wrocław Psie Pole through Oleśnica, Kępno, Sieradz, Łódź, Piotrków Trybunalski, Warsaw, Wyszków and Ostrów Mazowiecka to the S19 junction at Choroszcz near Białystok, drawn as 34 lots. Much of it is DK8 upgraded to expressway standard, so an upgrade date is not a new-build opening: Oleśnica Wschód – Syców Wschód, Piotrków Zachód – Paszków, the Wyszków – Białystok sections and Trasa Armii Krajowej in Warsaw. Not drawn: the Wrocław ring (A8, with the 4.4 km Kobierzyce – Wrocław Południe stretch opened 30 December 2010), the Łódź Południe – Piotrków Trybunalski Zachód stretch on the A1, the Opacz – Konotopa stretch on S2, and the sections from Wrocław towards Kłodzko still planned or under construction. Lots follow the contract sections and opening dates of the pl.wikipedia article, checked against GDDKiA releases where cited. Contract values are as stated and mostly lack a stated VAT basis.",
+    "ro": "Drum expres de la Wrocław Psie Pole prin Oleśnica, Kępno, Sieradz, Łódź, Piotrków Trybunalski, Varșovia, Wyszków și Ostrów Mazowiecka până la nodul cu S19 de la Choroszcz, lângă Białystok, desenat în 34 de loturi. O mare parte este DK8 modernizat la standard de drum expres, deci data modernizării nu este o deschidere nouă: Oleśnica Wschód – Syców Wschód, Piotrków Zachód – Paszków, secțiunile Wyszków – Białystok și Trasa Armii Krajowej din Varșovia. Nedesenate: inelul Wrocławului (A8, cu tronsonul de 4,4 km Kobierzyce – Wrocław Południe deschis la 30 decembrie 2010), tronsonul Łódź Południe – Piotrków Trybunalski Zachód pe A1, tronsonul Opacz – Konotopa pe S2 și secțiunile de la Wrocław spre Kłodzko, încă planificate sau în construcție. Loturile urmează secțiunile contractuale și datele de deschidere din articolul pl.wikipedia, verificate cu comunicatele GDDKiA acolo unde sunt citate. Valorile contractelor sunt cele declarate și în mare parte fără bază TVA precizată."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-09",
+  "lots": [
+    {
+      "id": "wroclaw-psie-pole-olesnica-zachod",
+      "name": {
+        "en": "Wrocław Psie Pole – Oleśnica Zachód",
+        "ro": "Wrocław Psie Pole – Oleśnica Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-11-18",
+        "opened": "2012-10-06"
+      },
+      "lengthKm": 22.1,
+      "contractors": [
+        {
+          "name": "Mota-Engil",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 449,
+          "currency": "PLN",
+          "year": 2009,
+          "note": "VAT basis not stated. Consortium including Mota-Engil."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 449,
+              "currency": "PLN",
+              "year": 2009,
+              "note": "VAT basis not stated. Consortium including Mota-Engil."
+            },
+            "date": "2009-11-18",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-11-18",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-10-06",
+          "sourceRef": "gddkia-s8-wroclaw-olesnica-opening"
+        }
+      ],
+      "note": {
+        "en": "New expressway from the end of the A8 Wrocław ring at Psie Pole to Oleśnica Zachód (Dąbrowa), 22.1 km. Environmental decision 30 December 2008; contract signed 18 November 2009 with a consortium including Mota-Engil (449 mln zł, VAT basis not stated); building permit 2 September 2010. Planned completion May 2012, later September 2012.",
+        "ro": "Drum expres nou de la capătul inelului A8 al Wrocławului, la Psie Pole, până la Oleśnica Zachód (Dąbrowa), 22,1 km. Decizia de mediu din 30 decembrie 2008; contract semnat la 18 noiembrie 2009 cu un consorțiu din care face parte Mota-Engil (449 mil. zł, baza TVA nespecificată); autorizație de construire la 2 septembrie 2010. Finalizare planificată în mai 2012, apoi în septembrie 2012."
+      },
+      "sourceRefs": [
+        "gddkia-s8-wroclaw-olesnica-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wroclaw-psie-pole-olesnica-zachod"
+    },
+    {
+      "id": "olesnica-obwodnica",
+      "name": {
+        "en": "Oleśnica bypass (Oleśnica Zachód – Oleśnica Wschód)",
+        "ro": "Ocolitoarea Oleśnica (Oleśnica Zachód – Oleśnica Wschód)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-11-28"
+      },
+      "lengthKm": 7.7,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2006-11-28",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Part of the Oleśnica bypass between the Oleśnica Zachód (Dąbrowa) and Oleśnica Wschód (Cieśle) junctions, 7.7 km, opened 28 November 2006, years before the rest of the expressway. Oleśnica Wschód is an incomplete junction: exit only towards Wrocław, entry only to Wrocław.",
+        "ro": "Parte a ocolitoarei Oleśnica între nodurile Oleśnica Zachód (Dąbrowa) și Oleśnica Wschód (Cieśle), 7,7 km, deschisă la 28 noiembrie 2006, cu ani înaintea restului drumului expres. Oleśnica Wschód este un nod incomplet: ieșire doar spre Wrocław, intrare doar spre Wrocław."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "olesnica-obwodnica"
+    },
+    {
+      "id": "olesnica-wschod-sycow-wschod",
+      "name": {
+        "en": "Oleśnica Wschód – Syców Wschód",
+        "ro": "Oleśnica Wschód – Syców Wschód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-11-05",
+        "opened": "2012-11-30"
+      },
+      "lengthKm": 25.1,
+      "contractors": [
+        {
+          "name": "Skanska",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 469,
+          "currency": "PLN",
+          "year": 2009,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 469,
+              "currency": "PLN",
+              "year": 2009,
+              "note": "VAT basis not stated."
+            },
+            "date": "2009-11-05",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-11-05",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-11-30",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of the existing DK8 to expressway standard, 25.1 km. The pl.wikipedia list of existing sections gives opening on 30 November 2012; the construction history on the same page gives 21 December 2013 as the final date (planned completion May 2012, later November 2012), which is the opening date of the Syców – Wieruszów sections. The GDDKiA release of 6 October 2012 says the whole Wrocław – Syców stretch would open in November 2012; the day is not stated there. Contract signed 5 November 2009 with Skanska (469 mln zł, VAT basis not stated). The drawn line is 24.3 km.",
+        "ro": "Modernizarea DK8 existent la standard de drum expres, 25,1 km. Lista secțiunilor existente de pe pl.wikipedia indică deschiderea la 30 noiembrie 2012; istoricul construcției din aceeași pagină indică 21 decembrie 2013 ca dată finală (finalizare planificată în mai 2012, apoi în noiembrie 2012), care este data deschiderii secțiunilor Syców – Wieruszów. Comunicatul GDDKiA din 6 octombrie 2012 spune că întregul tronson Wrocław – Syców se deschide în noiembrie 2012; ziua nu este precizată acolo. Contract semnat la 5 noiembrie 2009 cu Skanska (469 mil. zł, baza TVA nespecificată). Linia desenată are 24,3 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-wroclaw-olesnica-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "olesnica-wschod-sycow-wschod"
+    },
+    {
+      "id": "sycow-kepno",
+      "name": {
+        "en": "Syców Wschód – Kępno",
+        "ro": "Syców Wschód – Kępno"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-12-28",
+        "opened": "2013-12-21"
+      },
+      "lengthKm": 15.3,
+      "contractors": [
+        {
+          "name": "Mota-Engil",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 325,
+          "currency": "PLN",
+          "year": 2011,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 325,
+              "currency": "PLN",
+              "year": 2011,
+              "note": "VAT basis not stated."
+            },
+            "date": "2011-12-28",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-06-30",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-12-28",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-12-21",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Syców Wschód to Kępno (S11), 15.3 km. Environmental decision 30 June 2010 (reissued 22 February 2011); tender announced 30 June 2010; contract signed 28 December 2011 with Mota-Engil (325 mln zł, VAT basis not stated). Planned completion October 2013. Opened 21 December 2013 together with the next two sections. The boundary with the next lot is drawn at the Kępno (S11) junction in OpenStreetMap; the sourced lengths 15.3 and 16.6 km would put it about 2 km further west. The drawn line is 17.5 km.",
+        "ro": "Syców Wschód – Kępno (S11), 15,3 km. Decizia de mediu din 30 iunie 2010 (reemisă la 22 februarie 2011); licitație anunțată la 30 iunie 2010; contract semnat la 28 decembrie 2011 cu Mota-Engil (325 mil. zł, baza TVA nespecificată). Finalizare planificată în octombrie 2013. Deschis la 21 decembrie 2013 împreună cu următoarele două secțiuni. Limita cu lotul următor este desenată la nodul Kępno (S11) din OpenStreetMap; lungimile din surse, 15,3 și 16,6 km, ar plasa-o cu circa 2 km mai la vest. Linia desenată are 17,5 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sycow-kepno"
+    },
+    {
+      "id": "kepno-wieruszow",
+      "name": {
+        "en": "Kępno – Wieruszów",
+        "ro": "Kępno – Wieruszów"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-12-28",
+        "opened": "2013-12-21"
+      },
+      "lengthKm": 16.6,
+      "contractors": [
+        {
+          "name": "Mota-Engil",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 527.5,
+          "currency": "PLN",
+          "year": 2011,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 527.5,
+              "currency": "PLN",
+              "year": 2011,
+              "note": "VAT basis not stated."
+            },
+            "date": "2011-12-28",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-06-30",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-12-28",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-12-21",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Kępno (S11) to Wieruszów, 16.6 km. Same procedure dates as Syców – Kępno; contract signed 28 December 2011 with Mota-Engil (527.5 mln zł, VAT basis not stated). Planned completion October 2013. Opened 21 December 2013. The drawn line starts at the Kępno (S11) junction and measures 14.2 km.",
+        "ro": "Kępno (S11) – Wieruszów, 16,6 km. Aceleași date procedurale ca la Syców – Kępno; contract semnat la 28 decembrie 2011 cu Mota-Engil (527,5 mil. zł, baza TVA nespecificată). Finalizare planificată în octombrie 2013. Deschis la 21 decembrie 2013. Linia desenată începe la nodul Kępno (S11) și măsoară 14,2 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kepno-wieruszow"
+    },
+    {
+      "id": "wieruszow-wielun",
+      "name": {
+        "en": "Wieruszów – Wieluń",
+        "ro": "Wieruszów – Wieluń"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-12-28",
+        "opened": "2013-12-21"
+      },
+      "lengthKm": 15.1,
+      "contractors": [
+        {
+          "name": "Dragados",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 233.5,
+          "currency": "PLN",
+          "year": 2011,
+          "note": "VAT basis not stated. Covers the 13.1 km Wieruszów – Wieluń part only."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 233.5,
+              "currency": "PLN",
+              "year": 2011,
+              "note": "VAT basis not stated. Covers the 13.1 km Wieruszów – Wieluń part only."
+            },
+            "date": "2011-12-28",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-06-30",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-12-28",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-12-21",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Wieruszów to the Wieluń junction (formerly Walichnowy) without the junction, 13.1 km, built under a contract signed 28 December 2011 with Dragados (233.5 mln zł, VAT basis not stated; the value covers the 13.1 km part), plus the 2.0 km Wieluń junction (km 99+937 to 101+972.92), built under the Łódź branch contracts signed in October 2011 (contractor not recorded here). Both parts opened 21 December 2013.",
+        "ro": "Wieruszów – nodul Wieluń (fost Walichnowy) fără nod, 13,1 km, construit prin contractul semnat la 28 decembrie 2011 cu Dragados (233,5 mil. zł, baza TVA nespecificată; valoarea acoperă partea de 13,1 km), plus nodul Wieluń de 2,0 km (km 99+937 – 101+972,92), construit prin contractele filialei Łódź semnate în octombrie 2011 (constructor nenotat aici). Ambele părți deschise la 21 decembrie 2013."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wieruszow-wielun"
+    },
+    {
+      "id": "wielun-zloczew",
+      "name": {
+        "en": "Wieluń – Złoczew",
+        "ro": "Wieluń – Złoczew"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-01-05",
+        "opened": "2014-10-29"
+      },
+      "lengthKm": 19,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-11-18",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2012-01-05",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-10-29",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Wieluń junction to Złoczew with the junction (km 101+973 to 120+961), 19.0 km; pl.wikipedia calls it Walichnowy – Złoczew. Environmental decision 8 January 2010; tender announced 18 November 2010; planned completion 11 August 2014. Contract signed 5 January 2012 with a consortium of Hermann Kirchner Polska (leader) and Hermann Kirchner Bauunternehmung. GDDKiA gives a project value of 789.8 mln zł, of which works 709.7 mln zł gross; no contract value is recorded here. The drawn line is 18.8 km.",
+        "ro": "Nodul Wieluń – Złoczew cu nod (km 101+973 – 120+961), 19,0 km; pl.wikipedia îl numește Walichnowy – Złoczew. Decizia de mediu din 8 ianuarie 2010; licitație anunțată la 18 noiembrie 2010; finalizare planificată la 11 august 2014. Contract semnat la 5 ianuarie 2012 cu un consorțiu Hermann Kirchner Polska (lider) și Hermann Kirchner Bauunternehmung. GDDKiA indică o valoare a proiectului de 789,8 mil. zł, din care lucrările 709,7 mil. zł brut; nu este notată nicio valoare a contractului. Linia desenată are 18,8 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-wielun-zloczew",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wielun-zloczew",
+      "contractors": [
+        {
+          "name": "Hermann Kirchner Polska",
+          "role": "builder"
+        },
+        {
+          "name": "Hermann Kirchner Bauunternehmung",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "zloczew-sieradz-poludnie",
+      "name": {
+        "en": "Złoczew – Sieradz Południe",
+        "ro": "Złoczew – Sieradz Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-01-05",
+        "opened": "2014-10-29"
+      },
+      "lengthKm": 19.6,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-11-18",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2012-01-05",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-10-29",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Złoczew junction to Sieradz Południe with the junction (km 120+961 to 140+552), 19.6 km. Tender announced 18 November 2010; contract signed 5 January 2012 with a consortium of Strabag (leader) and Heilit+Woerner Budowlana; planned completion 11 August 2014. GDDKiA gives a project value of 815.3 mln zł, of which works 683.1 mln zł gross; no contract value is recorded here.",
+        "ro": "Nodul Złoczew – Sieradz Południe cu nod (km 120+961 – 140+552), 19,6 km. Licitație anunțată la 18 noiembrie 2010; contract semnat la 5 ianuarie 2012 cu un consorțiu Strabag (lider) și Heilit+Woerner Budowlana; finalizare planificată la 11 august 2014. GDDKiA indică o valoare a proiectului de 815,3 mil. zł, din care lucrările 683,1 mil. zł brut; nu este notată nicio valoare a contractului."
+      },
+      "sourceRefs": [
+        "gddkia-s8-zloczew-sieradz",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zloczew-sieradz-poludnie",
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Heilit+Woerner Budowlana",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "sieradz-poludnie-lask",
+      "name": {
+        "en": "Sieradz Południe – Łask",
+        "ro": "Sieradz Południe – Łask"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-01-05",
+        "opened": "2014-11-30"
+      },
+      "lengthKm": 33.6,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-11-18",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2012-01-05",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-11-30",
+          "sourceRef": "gddkia-s8-sieradz-lask"
+        }
+      ],
+      "note": {
+        "en": "Sieradz Południe (without the junction) to Łask (without the junction), 33.6 km (km 140+552 to 174+200). Tender announced 18 November 2010; contract signed 5 January 2012; planned completion 11 August 2014. Contract signed 5 January 2012 with a consortium led by Dragados (Pol-Aqua as partner, the lead changed on 6 May 2013); no contract value is recorded here. GDDKiA states that the section opened to traffic on 30 November 2014; pl.wikipedia gives 29 November 2014. The drawn line is 34.5 km.",
+        "ro": "Sieradz Południe (fără nod) – Łask (fără nod), 33,6 km (km 140+552 – 174+200). Licitație anunțată la 18 noiembrie 2010; contract semnat la 5 ianuarie 2012; finalizare planificată la 11 august 2014. Contract semnat la 5 ianuarie 2012 cu un consorțiu condus de Dragados (Pol-Aqua ca partener, conducerea a fost schimbată la 6 mai 2013); nu este notată nicio valoare a contractului. GDDKiA indică deschiderea secțiunii traficului la 30 noiembrie 2014; pl.wikipedia indică 29 noiembrie 2014. Linia desenată are 34,5 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-sieradz-lask",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sieradz-poludnie-lask",
+      "contractors": [
+        {
+          "name": "Dragados",
+          "role": "builder"
+        },
+        {
+          "name": "Pol-Aqua",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "lask-roza",
+      "name": {
+        "en": "Łask – Róża",
+        "ro": "Łask – Róża"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-10-05",
+        "opened": "2014-08-08"
+      },
+      "lengthKm": 9.1,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-08-03",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-10-05",
+          "sourceRef": "gddkia-s8-lask-roza"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-08-08",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Łask to the Róża junction with S14, about 9.1 km. The Łódź branch history records the part opened on 8 August 2014 as 8.15 km. Contract signed 5 October 2011 with a consortium of Pol-Aqua and Dragados (Dragados became leader on 6 May 2013); tender announced 3 August 2010; no contract value is recorded here. GDDKiA gives the section as km 174+200 to 183+350. The cut at Róża is drawn at the junction in OpenStreetMap, about 1.2 km short of km 183+350. The drawn line is 7.9 km.",
+        "ro": "Łask – nodul Róża cu S14, circa 9,1 km. Istoricul filialei Łódź consemnează partea deschisă la 8 august 2014 ca 8,15 km. Contract semnat la 5 octombrie 2011 cu un consorțiu Pol-Aqua și Dragados (Dragados a devenit lider la 6 mai 2013); licitație anunțată la 3 august 2010; nu este notată nicio valoare a contractului. GDDKiA indică secțiunea între km 174+200 și 183+350. Limita de la Róża este desenată la nod în OpenStreetMap, cu circa 1,2 km înainte de km 183+350. Linia desenată are 7,9 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-lask-roza",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lask-roza",
+      "contractors": [
+        {
+          "name": "Dragados",
+          "role": "builder"
+        },
+        {
+          "name": "Pol-Aqua",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "roza-rzgow",
+      "name": {
+        "en": "Róża – Rzgów (southern Łódź bypass)",
+        "ro": "Róża – Rzgów (ocolitoarea de sud a Łódźului)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-10",
+        "opened": "2014-04-11"
+      },
+      "lengthKm": 17.3,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-08-03",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-10",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-04-11",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Róża to Rzgów, 17.3 km, the southern Łódź bypass. The 3.3 km S14 section Róża – Dobroń opened the same day and is not part of S8. Contract signed in October 2011 (GDDKiA gives 5 November 2011); tender announced 3 August 2010. Built by Budimex under the Róża – Łódź Południe contract, which GDDKiA values at 903.1 mln zł for the whole 19.8 km (VAT basis not stated); no value is recorded for this lot. Both ends are drawn at the Róża and Rzgów junctions in OpenStreetMap; the GDDKiA chainage puts Róża at km 183+350, about 1.2 km further east. The drawn line is 16.9 km.",
+        "ro": "Róża – Rzgów, 17,3 km, ocolitoarea de sud a Łódźului. Secțiunea S14 Róża – Dobroń de 3,3 km a fost deschisă în aceeași zi și nu face parte din S8. Contract semnat în octombrie 2011 (GDDKiA indică 5 noiembrie 2011); licitație anunțată la 3 august 2010. Construit de Budimex prin contractul Róża – Łódź Południe, pe care GDDKiA îl evaluează la 903,1 mil. zł pentru întregul tronson de 19,8 km (baza TVA nespecificată); nu este notată nicio valoare pentru acest lot. Ambele capete sunt desenate la nodurile Róża și Rzgów din OpenStreetMap; kilometrajul GDDKiA plasează Róża la km 183+350, cu circa 1,2 km mai la est. Linia desenată are 16,9 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-roza-lodz-poludnie",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "roza-rzgow",
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "rzgow-lodz-poludnie",
+      "name": {
+        "en": "Rzgów – Łódź Południe (A1)",
+        "ro": "Rzgów – Łódź Południe (A1)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-10",
+        "opened": "2016-07-01"
+      },
+      "lengthKm": 3.4,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2010-08-03",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-10",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-07-01",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Rzgów to the A1 Łódź Południe junction, 2.1 km, plus the 1.3 km Łódź Południe junction itself. Finished in 2014 but unusable until the connecting A1 Stryków – Tuszyn opened, so opened to traffic on 1 July 2016. GDDKiA states that the junction opened with the A1 Stryków – Tuszyn section on 1 July 2016. The stretch to Rzgów belongs to the Budimex contract for Róża – Łódź Południe, and the junction was built by Skanska (217.7 mln zł per GDDKiA, VAT basis not stated). The drawn line starts at the Rzgów junction, ends at the A1 junction and measures 4.0 km, against 3.4 km sourced. The A1 stretch from Łódź Południe to Piotrków Trybunalski Zachód carries the S8 number but is not part of this project.",
+        "ro": "Rzgów – nodul Łódź Południe cu A1, 2,1 km, plus nodul Łódź Południe de 1,3 km. Terminat în 2014, dar nefolosibil până la deschiderea legăturii A1 Stryków – Tuszyn, deci deschis traficului la 1 iulie 2016. GDDKiA indică faptul că nodul a fost deschis odată cu secțiunea A1 Stryków – Tuszyn la 1 iulie 2016. Tronsonul până la Rzgów ține de contractul Budimex pentru Róża – Łódź Południe, iar nodul a fost construit de Skanska (217,7 mil. zł conform GDDKiA, baza TVA nespecificată). Linia desenată începe la nodul Rzgów, se oprește la nodul A1 și măsoară 4,0 km, față de 3,4 km din surse. Tronsonul A1 de la Łódź Południe la Piotrków Trybunalski Zachód poartă numărul S8, dar nu face parte din acest proiect."
+      },
+      "sourceRefs": [
+        "gddkia-s8-roza-lodz-poludnie",
+        "gddkia-s8-wezel-lodz-poludnie",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rzgow-lodz-poludnie",
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "piotrkow-zachod-rawa-polnoc",
+      "name": {
+        "en": "Piotrków Trybunalski Zachód – Rawa Mazowiecka Północ",
+        "ro": "Piotrków Trybunalski Zachód – Rawa Mazowiecka Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-09-03",
+        "opened": "2012-10-28"
+      },
+      "lengthKm": 61.2,
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1700,
+          "currency": "PLN",
+          "year": 2009,
+          "note": "VAT basis not stated. Consortium led by Astaldi."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1700,
+              "currency": "PLN",
+              "year": 2009,
+              "note": "VAT basis not stated. Consortium led by Astaldi."
+            },
+            "date": "2009-09-03",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-09-03",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-10-28",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to expressway standard between the A1 Piotrków Trybunalski Zachód junction and Rawa Mazowiecka Północ (DK72), 61.2 km, built 2009–2012. Environmental decision 4 October 2006; contract for design and works signed 3 September 2009 with a consortium led by Astaldi (1.7 bn zł, VAT basis not stated); building permit 23 August 2010.",
+        "ro": "Modernizarea DK8 la standard de drum expres între nodul A1 Piotrków Trybunalski Zachód și Rawa Mazowiecka Północ (DK72), 61,2 km, construit în 2009–2012. Decizia de mediu din 4 octombrie 2006; contract de proiectare și execuție semnat la 3 septembrie 2009 cu un consorțiu condus de Astaldi (1,7 mld. zł, baza TVA nespecificată); autorizație de construire la 23 august 2010."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "piotrkow-zachod-rawa-polnoc"
+    },
+    {
+      "id": "rawa-polnoc-adamowice",
+      "name": {
+        "en": "Rawa Mazowiecka Północ – Adamowice",
+        "ro": "Rawa Mazowiecka Północ – Adamowice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-10-29",
+        "opened": "2012-10-17"
+      },
+      "lengthKm": 22.8,
+      "contractors": [
+        {
+          "name": "Bilfinger Berger",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2009-12-21",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2010-10-29",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-10-17",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 from Rawa Mazowiecka Północ (DK72) to Adamowice at the Łódź–Mazovia voivodeship border, 22.8 km. Tender announced 21 December 2009; contract signed 29 October 2010 with Bilfinger Berger (value not recorded here). Opened with restrictions at Babsk, where a pedestrian underpass was still to be built.",
+        "ro": "Modernizarea DK8 de la Rawa Mazowiecka Północ (DK72) la Adamowice, la granița voievodatelor Łódź și Mazovia, 22,8 km. Licitație anunțată la 21 decembrie 2009; contract semnat la 29 octombrie 2010 cu Bilfinger Berger (valoarea nu este notată aici). Deschis cu restricții la Babsk, unde mai trebuia construit un pasaj pietonal subteran."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rawa-polnoc-adamowice"
+    },
+    {
+      "id": "adamowice-radziejowice",
+      "name": {
+        "en": "Adamowice – Radziejowice",
+        "ro": "Adamowice – Radziejowice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-08-31",
+        "opened": "2013-08-24"
+      },
+      "lengthKm": 11.3,
+      "contractors": [
+        {
+          "name": "Mostostal Warszawa",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 192,
+          "currency": "PLN",
+          "year": 2010,
+          "note": "VAT basis not stated. Consortium led by Mostostal Warszawa."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 192,
+              "currency": "PLN",
+              "year": 2010,
+              "note": "VAT basis not stated. Consortium led by Mostostal Warszawa."
+            },
+            "date": "2010-08-31",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2010-08-31",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-08-24",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 from Adamowice (next to the Mszczonów Południe junction) to Radziejowice. The pl.wikipedia section list gives 11.3 km and the Warsaw branch history 10.3 km. Contract signed 31 August 2010 with a consortium led by Mostostal Warszawa (192 mln zł, VAT basis not stated). Opened 24 August 2013 without expressway signage; finishing works ended 19 February 2016. The drawn line is 10.4 km.",
+        "ro": "Modernizarea DK8 de la Adamowice (lângă nodul Mszczonów Południe) la Radziejowice. Lista secțiunilor de pe pl.wikipedia indică 11,3 km, iar istoricul filialei Varșovia 10,3 km. Contract semnat la 31 august 2010 cu un consorțiu condus de Mostostal Warszawa (192 mil. zł, baza TVA nespecificată). Deschis la 24 august 2013 fără marcaj de drum expres; lucrările de finisare s-au încheiat la 19 februarie 2016. Linia desenată are 10,4 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "adamowice-radziejowice"
+    },
+    {
+      "id": "radziejowice-przeszkoda",
+      "name": {
+        "en": "Radziejowice – Przeszkoda",
+        "ro": "Radziejowice – Przeszkoda"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-02-08",
+        "opened": "2019-10-10"
+      },
+      "lengthKm": 9.9,
+      "contractors": [
+        {
+          "name": "Strabag Infrastruktura Południe",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 306.9,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 306.9,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "VAT basis not stated."
+            },
+            "date": "2016-02-08",
+            "sourceRef": "gddkia-s8-radziejowice-paszkow-contract"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-02-08",
+          "sourceRef": "gddkia-s8-radziejowice-paszkow-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-10-10",
+          "sourceRef": "gddkia-s8-radziejowice-przeszkoda-opening"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to expressway standard, 9.9 km, design and build. Contract signed 8 February 2016 with Strabag Infrastruktura Południe (306.9 mln zł of works, VAT basis not stated). Works were completed on 15 July 2019; the occupancy permit came on 10 October 2019, when permanent traffic organisation and expressway status began. The date recorded is that expressway date: traffic already used the section during the works, and GDDKiA reports the full carriageway cross-section toward Warsaw in April 2019. Planned opening was July 2019. The cut with the next lot is drawn at Przeszkoda village in OpenStreetMap, not at a junction. The drawn line is 11.1 km.",
+        "ro": "Modernizarea DK8 la standard de drum expres, 9,9 km, proiectare și execuție. Contract semnat la 8 februarie 2016 cu Strabag Infrastruktura Południe (306,9 mil. zł lucrări, baza TVA nespecificată). Lucrările s-au încheiat la 15 iulie 2019; autorizația de utilizare a venit la 10 octombrie 2019, când au început organizarea permanentă a traficului și statutul de drum expres. Data notată este data statutului de drum expres: traficul a folosit deja secțiunea în timpul lucrărilor, iar GDDKiA raportează secțiunea completă a căii spre Varșovia în aprilie 2019. Deschiderea planificată era iulie 2019. Limita cu lotul următor este desenată la satul Przeszkoda din OpenStreetMap, nu la un nod. Linia desenată are 11,1 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-radziejowice-paszkow-contract",
+        "gddkia-s8-radziejowice-przeszkoda-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "radziejowice-przeszkoda"
+    },
+    {
+      "id": "przeszkoda-paszkow",
+      "name": {
+        "en": "Przeszkoda – Paszków",
+        "ro": "Przeszkoda – Paszków"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-06-03",
+        "opened": "2018-11-30"
+      },
+      "lengthKm": 11.6,
+      "contractors": [
+        {
+          "name": "Intercor",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 436.65,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 436.65,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "VAT basis not stated."
+            },
+            "date": "2015-06-03",
+            "sourceRef": "gddkia-s8-przeszkoda-paszkow-opening"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-06-03",
+          "sourceRef": "gddkia-s8-radziejowice-paszkow-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-11-30",
+          "sourceRef": "gddkia-s8-przeszkoda-paszkow-opening"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to expressway standard, 11.6 km, design and build, contract signed 3 June 2015 with Intercor (436.65 mln zł per GDDKiA, VAT basis not stated). Works were completed on 5 August 2019. Both carriageways opened on 30 November 2018 over 13.1 km (this section plus about 1.5 km of the next) with a 60 km/h limit and no expressway signage; the Nadarzyn junction opened fully on 29 April 2019 and the limit was lifted on 9 December 2019, giving full expressway standard. The cut with the previous lot is drawn at Przeszkoda village in OpenStreetMap. The drawn line is 11.8 km.",
+        "ro": "Modernizarea DK8 la standard de drum expres, 11,6 km, proiectare și execuție, contract semnat la 3 iunie 2015 cu Intercor (436,65 mil. zł conform GDDKiA, baza TVA nespecificată). Lucrările s-au încheiat la 5 august 2019. Ambele căi de rulare au fost deschise la 30 noiembrie 2018 pe 13,1 km (această secțiune plus circa 1,5 km din următoarea), cu limită de 60 km/h și fără marcaj de drum expres; nodul Nadarzyn a fost deschis complet la 29 aprilie 2019, iar limita a fost ridicată la 9 decembrie 2019, cu standard complet de drum expres. Limita cu lotul anterior este desenată la satul Przeszkoda din OpenStreetMap. Linia desenată are 11,8 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-przeszkoda-paszkow-opening",
+        "gddkia-s8-radziejowice-paszkow-contract",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "przeszkoda-paszkow"
+    },
+    {
+      "id": "paszkow-opacz",
+      "name": {
+        "en": "Paszków – Warszawa Opacz (Salomea – Wolica route)",
+        "ro": "Paszków – Varșovia Opacz (traseul Salomea – Wolica)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-04-12",
+        "opened": "2015-12-11"
+      },
+      "lengthKm": 11,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-04-12",
+          "sourceRef": "gddkia-s8-opacz-paszkow"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2015-07-17",
+          "sourceRef": "gddkia-s8-janki-opacz-opening"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-12-11",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Opacz – Paszków part of the Salomea – Wolica route: new alignment bypassing Janki and Raszyn, then the line of the old DK8 (Aleja Katowicka) through Nadarzyn to Paszków. Contract signed 12 April 2013 with Strabag, gross price 565.69 mln zł including a 2.5 km link to DK7 at Sękocin Las (the S8 share is not stated), planned completion December 2015. Janki Małe – Opacz opened on 17 July 2015 (about 5.8 km per GDDKiA, 6.0 km per pl.wikipedia) and Paszków – Janki Małe (5.7 km per pl.wikipedia) on 11 December 2015, the final completion of the contract. GDDKiA gives 11 km for the S8 section (13.477 km with the DK7 link); the drawn OSM line from Paszków to the S8/S2 split at Opacz is 8.6 km, and the sources do not explain the difference. The 1.9 km link from Opacz to Aleje Jerozolimskie (opened 23 December 2013) is not drawn. The expressway continues from Opacz to Konotopa as S2 and is not part of this project.",
+        "ro": "Partea Opacz – Paszków a traseului Salomea – Wolica: traseu nou care ocolește Janki și Raszyn, apoi traseul vechiului DK8 (Aleja Katowicka) prin Nadarzyn până la Paszków. Contract semnat la 12 aprilie 2013 cu Strabag, preț brut 565,69 mil. zł, inclusiv o legătură de 2,5 km cu DK7 la Sękocin Las (partea S8 nu este precizată), finalizare planificată în decembrie 2015. Janki Małe – Opacz a fost deschis la 17 iulie 2015 (circa 5,8 km conform GDDKiA, 6,0 km conform pl.wikipedia), iar Paszków – Janki Małe (5,7 km conform pl.wikipedia) la 11 decembrie 2015, finalizarea contractului. GDDKiA indică 11 km pentru secțiunea S8 (13,477 km cu legătura DK7); linia OSM desenată de la Paszków la bifurcația S8/S2 de la Opacz are 8,6 km, iar sursele nu explică diferența. Legătura de 1,9 km de la Opacz la Aleje Jerozolimskie (deschisă la 23 decembrie 2013) nu este desenată. Drumul expres continuă de la Opacz la Konotopa ca S2 și nu face parte din acest proiect."
+      },
+      "sourceRefs": [
+        "gddkia-s8-opacz-paszkow",
+        "gddkia-s8-janki-opacz-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "paszkow-opacz",
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ]
+    },
+    {
+      "id": "konotopa-powazkowska",
+      "name": {
+        "en": "Konotopa – Warszawa Powązkowska",
+        "ro": "Konotopa – Varșovia Powązkowska"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-05-23"
+      },
+      "lengthKm": 10.4,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2011-01-19",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-05-23",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Part of the Warsaw expressway ring (Ekspresowa Obwodnica Warszawy), 10.4 km. Warszawa Zachód (formerly Mory) – Powązki opened to expressway standard on 19 January 2011 and Konotopa – Warszawa Zachód on 23 May 2012, which completes the lot. The Opacz – Konotopa stretch is S2 and is not part of this project.",
+        "ro": "Parte a inelului expres al Varșoviei (Ekspresowa Obwodnica Warszawy), 10,4 km. Warszawa Zachód (fost Mory) – Powązki a fost deschis la standard de drum expres la 19 ianuarie 2011, iar Konotopa – Warszawa Zachód la 23 mai 2012, ceea ce încheie lotul. Tronsonul Opacz – Konotopa este S2 și nu face parte din acest proiect."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "konotopa-powazkowska"
+    },
+    {
+      "id": "powazkowska-modlinska",
+      "name": {
+        "en": "Warszawa Powązkowska – Modlińska (Trasa Armii Krajowej)",
+        "ro": "Varșovia Powązkowska – Modlińska (Trasa Armii Krajowej)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-07-18",
+        "constructionStart": "2013-10-19",
+        "opened": "2015-09-21"
+      },
+      "lengthKm": 4.6,
+      "contractors": [
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "reconstruction"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-07-18",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-10-19",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-09-21",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Rebuild of the Trasa Armii Krajowej to expressway standard, 4.6 km, under an optimise-and-build contract signed 18 July 2013 with Metrostav. Works began 19 October 2013. Opened to traffic on 21 September 2015 and officially completed and signposted as an expressway on 16 October 2015. Contract value not recorded here.",
+        "ro": "Reconstrucția Trasa Armii Krajowej la standard de drum expres, 4,6 km, prin contract optimizează-și-construiește semnat la 18 iulie 2013 cu Metrostav. Lucrările au început la 19 octombrie 2013. Deschis traficului la 21 septembrie 2015 și finalizat oficial, marcat ca drum expres, la 16 octombrie 2015. Valoarea contractului nu este notată aici."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "powazkowska-modlinska"
+    },
+    {
+      "id": "modlinska-marki",
+      "name": {
+        "en": "Warszawa Modlińska – Marki",
+        "ro": "Varșovia Modlińska – Marki"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-06-07"
+      },
+      "lengthKm": 7.1,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-06-07",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Part of the Warsaw expressway ring, 7.1 km from the Modlińska junction to Marki (ul. Piłsudskiego). The main carriageways opened on 7 June 2012 as an expressway with an 80 km/h limit and works continuing on the access roads; the section was fully opened and brought into the ViaTOLL system on 12 January 2013.",
+        "ro": "Parte a inelului expres al Varșoviei, 7,1 km de la nodul Modlińska la Marki (ul. Piłsudskiego). Căile principale au fost deschise la 7 iunie 2012 ca drum expres cu limită de 80 km/h și lucrări în curs la drumurile de acces; secțiunea a fost deschisă complet și inclusă în sistemul ViaTOLL la 12 ianuarie 2013."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "modlinska-marki"
+    },
+    {
+      "id": "marki-radzymin",
+      "name": {
+        "en": "Marki – Radzymin Południe (Marki bypass)",
+        "ro": "Marki – Radzymin Południe (ocolitoarea Marki)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-11-28",
+        "opened": "2017-12-22"
+      },
+      "lengthKm": 15.4,
+      "contractors": [
+        {
+          "name": "Salini Polska",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Robót Inżynieryjno-Budowlanych Export-Pribex",
+          "role": "builder"
+        },
+        {
+          "name": "Astaldi S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-03-29",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-11-28",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-22",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Two design-and-build contracts on 15.4 km (the history text gives 14.7 km). Marki (without the junction) – Kobyłka, 8.13 km: Salini Polska (leader) with Przedsiębiorstwo Robót Inżynieryjno-Budowlanych Export-Pribex. Kobyłka (without the junction) – Radzymin Południe, 7.24 km: Astaldi S.p.A. (leader) with Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki. Tender announced 29 March 2013; contract signed 28 November 2014. The main carriageways and 2 of 4 junctions opened on 22 December 2017; the investment was completed on 5 March 2021 with the other two junctions. Contract values not recorded here. The drawn line is 13.6 km.",
+        "ro": "Două contracte proiectare și execuție pe 15,4 km (textul istoric indică 14,7 km). Marki (fără nod) – Kobyłka, 8,13 km: Salini Polska (lider) cu Przedsiębiorstwo Robót Inżynieryjno-Budowlanych Export-Pribex. Kobyłka (fără nod) – Radzymin Południe, 7,24 km: Astaldi S.p.A. (lider) cu Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki. Licitație anunțată la 29 martie 2013; contract semnat la 28 noiembrie 2014. Căile principale și 2 din 4 noduri au fost deschise la 22 decembrie 2017; investiția s-a încheiat la 5 martie 2021 cu celelalte două noduri. Valorile contractelor nu sunt notate aici. Linia desenată are 13,6 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "marki-radzymin"
+    },
+    {
+      "id": "radzymin-obwodnica",
+      "name": {
+        "en": "Radzymin bypass (Radzymin Południe – Radzymin Północ)",
+        "ro": "Ocolitoarea Radzymin (Radzymin Południe – Radzymin Północ)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1998"
+      },
+      "lengthKm": 5.3,
+      "contractors": [
+        {
+          "name": "Dromex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1998",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Bypass of Radzymin up to the Radzymin Północ (formerly Zwierzyniec) junction, built 1996–1998 by Dromex and modernised in 2006–2007 by Warszawskie Przedsiębiorstwo Robót Drogowych to carry 115 kN axle loads. The opening year is taken from the construction years; no exact date is recorded here. pl.wikipedia gives 8.115 km from Cegielnia to Radzymin Północ, which starts before the Radzymin Południe junction where this lot begins; the lot is the Radzymin Południe – Radzymin Północ part. Length measured from OpenStreetMap geometry.",
+        "ro": "Ocolitoarea Radzymin până la nodul Radzymin Północ (fost Zwierzyniec), construită în 1996–1998 de Dromex și modernizată în 2006–2007 de Warszawskie Przedsiębiorstwo Robót Drogowych pentru sarcini pe osie de 115 kN. Anul deschiderii provine din anii de construcție; nu este notată o dată exactă. pl.wikipedia indică 8,115 km de la Cegielnia la Radzymin Północ, care începe înainte de nodul Radzymin Południe, unde începe acest lot; lotul este partea Radzymin Południe – Radzymin Północ. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "radzymin-obwodnica"
+    },
+    {
+      "id": "radzymin-wyszkow",
+      "name": {
+        "en": "Radzymin Północ – Wyszków (Mostówka)",
+        "ro": "Radzymin Północ – Wyszków (Mostówka)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-02-18"
+      },
+      "lengthKm": 17.3,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-02-18",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "From the Radzymin Północ junction (formerly Zwierzyniec) to the Mostówka junction, 17.3 km. Opened as a dual carriageway on 18 February 2009 and to expressway standard on 31 July 2009.",
+        "ro": "De la nodul Radzymin Północ (fost Zwierzyniec) la nodul Mostówka, 17,3 km. Deschis ca drum cu două căi de rulare la 18 februarie 2009 și la standard de drum expres la 31 iulie 2009."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "radzymin-wyszkow"
+    },
+    {
+      "id": "wyszkow-obwodnica",
+      "name": {
+        "en": "Wyszków bypass",
+        "ro": "Ocolitoarea Wyszków"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-11-14"
+      },
+      "lengthKm": 12.8,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-11-14",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Wyszków bypass from the Mostówka junction to Wyszków Północ (formerly Turzyn), 12.8 km, with the 600 m bridge over the Bug named after the Heroes of the Battle of Warsaw 1920. Opened 14 November 2008.",
+        "ro": "Ocolitoarea Wyszków de la nodul Mostówka la Wyszków Północ (fost Turzyn), 12,8 km, cu podul de 600 m peste Bug numit după Eroii Bătăliei de la Varșovia din 1920. Deschisă la 14 noiembrie 2008."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wyszkow-obwodnica"
+    },
+    {
+      "id": "wyszkow-poreba",
+      "name": {
+        "en": "Wyszków – Poręba",
+        "ro": "Wyszków – Poręba"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-01-28",
+        "opened": "2018-10"
+      },
+      "lengthKm": 13,
+      "contractors": [
+        {
+          "name": "Skanska",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 334.7,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 334.7,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "VAT basis not stated."
+            },
+            "date": "2016-01-28",
+            "sourceRef": "gddkia-s8-wyszkow-poreba-contract"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: POIiŚ 2014–2020 support of 662.8 mln zł for the three Mazovian sections from Wyszków to the voivodeship border (38.5 km), not for this section alone.",
+            "ro": "GDDKiA: sprijin POIiŚ 2014–2020 de 662,8 mil. zł pentru cele trei secțiuni din Mazovia de la Wyszków la granița voievodatului (38,5 km), nu doar pentru această secțiune."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-01-28",
+          "sourceRef": "gddkia-s8-wyszkow-poreba-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-10",
+          "sourceRef": "gddkia-s8-wyszkow-poreba-opening"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to expressway standard with concrete pavement, just under 13 km, three junctions (Trzcianka, Knurowiec, Poręba). Contract signed 28 January 2016 in Białystok with Skanska (334.7 mln zł of works, VAT basis not stated); planned completion mid-July 2018. The GDDKiA release of 19 October 2018 reports the section as made available to drivers and already in use, completing the two-carriageway route between Warsaw and Białystok. It does not state the day traffic began (pl.wikipedia gives 19 October 2018), so only the month is recorded. Built by the GDDKiA Białystok branch.",
+        "ro": "Modernizarea DK8 la standard de drum expres cu îmbrăcăminte din beton, aproape 13 km, trei noduri (Trzcianka, Knurowiec, Poręba). Contract semnat la 28 ianuarie 2016 la Białystok cu Skanska (334,7 mil. zł lucrări, baza TVA nespecificată); finalizare planificată la mijlocul lui iulie 2018. Comunicatul GDDKiA din 19 octombrie 2018 raportează secțiunea pusă la dispoziția șoferilor și deja în uz, încheind traseul cu două căi de rulare între Varșovia și Białystok. Ziua începerii traficului nu este precizată (pl.wikipedia indică 19 octombrie 2018), deci se notează doar luna. Construită de filiala GDDKiA Białystok."
+      },
+      "sourceRefs": [
+        "gddkia-s8-wyszkow-poreba-opening",
+        "gddkia-s8-wyszkow-poreba-contract",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wyszkow-poreba"
+    },
+    {
+      "id": "poreba-ostrow-mazowiecka",
+      "name": {
+        "en": "Poręba – Ostrów Mazowiecka (south)",
+        "ro": "Poręba – Ostrów Mazowiecka (sud)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-02-17",
+        "opened": "2018-09-17"
+      },
+      "lengthKm": 16.1,
+      "contractors": [
+        {
+          "name": "PORR Polska Infrastructure",
+          "role": "builder"
+        },
+        {
+          "name": "Unibep",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 404.46,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "VAT basis not stated. Consortium of PORR Polska Infrastructure and Unibep."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 404.46,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "VAT basis not stated. Consortium of PORR Polska Infrastructure and Unibep."
+            },
+            "date": "2016-02-17",
+            "sourceRef": "gddkia-s8-poreba-ostrow-contract"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: POIiŚ 2014–2020 support of 662.8 mln zł for the three Mazovian sections from Wyszków to the voivodeship border (38.5 km), not for this section alone.",
+            "ro": "GDDKiA: sprijin POIiŚ 2014–2020 de 662,8 mil. zł pentru cele trei secțiuni din Mazovia de la Wyszków la granița voievodatului (38,5 km), nu doar pentru această secțiune."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-02-17",
+          "sourceRef": "gddkia-s8-poreba-ostrow-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-09-17",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to expressway standard with concrete pavement, 16.11 km, junctions Dybki and Nagoszewo. Offers opened 12 November 2015; contract signed 17 February 2016 with a consortium of PORR Polska Infrastructure and Unibep (404.46 mln zł of works, VAT basis not stated); 22 months excluding winters. The opening date is from pl.wikipedia; the GDDKiA release of 20 July 2018 planned it for the end of August 2018.",
+        "ro": "Modernizarea DK8 la standard de drum expres cu îmbrăcăminte din beton, 16,11 km, noduri Dybki și Nagoszewo. Oferte deschise la 12 noiembrie 2015; contract semnat la 17 februarie 2016 cu un consorțiu PORR Polska Infrastructure și Unibep (404,46 mil. zł lucrări, baza TVA nespecificată); 22 de luni fără iernile. Data deschiderii provine de pe pl.wikipedia; comunicatul GDDKiA din 20 iulie 2018 o planifica pentru sfârșitul lui august 2018."
+      },
+      "sourceRefs": [
+        "gddkia-s8-poreba-ostrow-contract",
+        "gddkia-s8-ostrow-granica-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "poreba-ostrow-mazowiecka"
+    },
+    {
+      "id": "ostrow-mazowiecka-obwodnica",
+      "name": {
+        "en": "Ostrów Mazowiecka bypass",
+        "ro": "Ocolitoarea Ostrów Mazowiecka"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003-12-16"
+      },
+      "lengthKm": 8.4,
+      "contractors": [
+        {
+          "name": "Budimex Dromex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2003-12-16",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Ostrów Mazowiecka bypass, 8.4 km, built 2001–2003 by Budimex Dromex and opened 16 December 2003. The Ostrów Mazowiecka Północ junction is also where S61 branches off.",
+        "ro": "Ocolitoarea Ostrów Mazowiecka, 8,4 km, construită în 2001–2003 de Budimex Dromex și deschisă la 16 decembrie 2003. Nodul Ostrów Mazowiecka Północ este și locul unde se desprinde S61."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ostrow-mazowiecka-obwodnica"
+    },
+    {
+      "id": "ostrow-mazowiecka-granica-wojewodztwa",
+      "name": {
+        "en": "Ostrów Mazowiecka (north) – Podlaskie border",
+        "ro": "Ostrów Mazowiecka (nord) – granița voievodatului Podlaskie"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-02",
+        "opened": "2018-07-20"
+      },
+      "lengthKm": 9.4,
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 248.89,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 248.89,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT."
+            },
+            "date": "2016-02",
+            "sourceRef": "gddkia-s8-ostrow-granica-opening"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: POIiŚ 2014–2020 support of 662.8 mln zł for the three Mazovian sections from Wyszków to the voivodeship border (38.5 km), not for this section alone.",
+            "ro": "GDDKiA: sprijin POIiŚ 2014–2020 de 662,8 mil. zł pentru cele trei secțiuni din Mazovia de la Wyszków la granița voievodatului (38,5 km), nu doar pentru această secțiune."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-02",
+          "sourceRef": "gddkia-s8-ostrow-granica-opening"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-07-20",
+          "sourceRef": "gddkia-s8-ostrow-granica-opening"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 along its old course, 9.4 km, junctions Podborze and Prosienica. Contract signed in February 2016 with Polaqua at 248.89 mln zł gross. Opened to traffic on 20 July 2018 with a 100 km/h limit while finishing works ran to the end of August 2018; pl.wikipedia dates the expressway designation to 17 October 2018. The GDDKiA release says the POIiŚ 2014–2020 support covers the three Mazovian sections together. The drawn line is 9.2 km.",
+        "ro": "Modernizarea DK8 pe vechiul traseu, 9,4 km, noduri Podborze și Prosienica. Contract semnat în februarie 2016 cu Polaqua la 248,89 mil. zł brut. Deschis traficului la 20 iulie 2018 cu limită de 100 km/h, în timp ce lucrările de finisare au continuat până la sfârșitul lui august 2018; pl.wikipedia datează statutul de drum expres la 17 octombrie 2018. Comunicatul GDDKiA precizează că sprijinul POIiŚ 2014–2020 acoperă împreună cele trei secțiuni din Mazovia. Linia desenată are 9,2 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-ostrow-granica-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ostrow-mazowiecka-granica-wojewodztwa"
+    },
+    {
+      "id": "granica-wojewodztwa-zambrow",
+      "name": {
+        "en": "Podlaskie border – Zambrów",
+        "ro": "Granița voievodatului Podlaskie – Zambrów"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-01-28",
+        "opened": "2017-12-22"
+      },
+      "lengthKm": 14.9,
+      "contractors": [
+        {
+          "name": "Rubau Polska",
+          "role": "builder"
+        },
+        {
+          "name": "Construcciones Rubau",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 454.9,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "VAT basis not stated. Consortium of Rubau Polska and Construcciones Rubau."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 454.9,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "VAT basis not stated. Consortium of Rubau Polska and Construcciones Rubau."
+            },
+            "date": "2015-01-28",
+            "sourceRef": "gddkia-s8-granica-zambrow-opening"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-01-28",
+          "sourceRef": "gddkia-s8-granica-zambrow-opening"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-22",
+          "sourceRef": "gddkia-s8-granica-zambrow-opening"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to a dual-carriageway expressway, 14.91 km, with 17 engineering structures. Contract signed 28 January 2015 with a consortium of Rubau Polska and Construcciones Rubau (Spain), 454.9 mln zł of works (VAT basis not stated). Both carriageways opened to traffic on 22 December 2017 with a 100 km/h limit until finishing works and permits were done. The drawn line is 14.6 km.",
+        "ro": "Modernizarea DK8 la drum expres cu două căi de rulare, 14,91 km, cu 17 structuri. Contract semnat la 28 ianuarie 2015 cu un consorțiu Rubau Polska și Construcciones Rubau (Spania), 454,9 mil. zł lucrări (baza TVA nespecificată). Ambele căi au fost deschise traficului la 22 decembrie 2017, cu limită de 100 km/h până la finalizarea lucrărilor și a autorizațiilor. Linia desenată are 14,6 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-granica-zambrow-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "granica-wojewodztwa-zambrow"
+    },
+    {
+      "id": "zambrow-wisniewo-obwodnica",
+      "name": {
+        "en": "Zambrów and Wiśniewo bypass",
+        "ro": "Ocolitoarea Zambrów și Wiśniewo"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-11-09",
+        "opened": "2012-10-02"
+      },
+      "lengthKm": 11.1,
+      "contractors": [
+        {
+          "name": "Bilfinger Berger",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 326,
+          "currency": "PLN",
+          "year": 2009,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 326,
+              "currency": "PLN",
+              "year": 2009,
+              "note": "VAT basis not stated."
+            },
+            "date": "2009-11-09",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-11-09",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-10-02",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Bypass of Zambrów and Wiśniewo, 11.1 km, built 2009–2012. Environmental decision 29 May 2007; contract signed 9 November 2009 with Bilfinger Berger (326 mln zł, VAT basis not stated). Opened as a dual carriageway on 2 October 2012 after the deadline moved to September 2012.",
+        "ro": "Ocolitoarea Zambrów și Wiśniewo, 11,1 km, construită în 2009–2012. Decizia de mediu din 29 mai 2007; contract semnat la 9 noiembrie 2009 cu Bilfinger Berger (326 mil. zł, baza TVA nespecificată). Deschisă ca drum cu două căi de rulare la 2 octombrie 2012, după mutarea termenului la septembrie 2012."
+      },
+      "sourceRefs": [
+        "gddkia-s8-mezenin-jezewo-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zambrow-wisniewo-obwodnica"
+    },
+    {
+      "id": "wisniewo-mezenin",
+      "name": {
+        "en": "Wiśniewo – Mężenin",
+        "ro": "Wiśniewo – Mężenin"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-08-07",
+        "opened": "2016-12-22"
+      },
+      "lengthKm": 15.4,
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 434.8,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 434.8,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "VAT basis not stated."
+            },
+            "date": "2014-08-07",
+            "sourceRef": "gddkia-s8-wisniewo-mezenin-opening"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-08-07",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-22",
+          "sourceRef": "gddkia-s8-wisniewo-mezenin-opening"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to a dual-carriageway expressway from the end of the Zambrów and Wiśniewo bypass to Mężenin, 15.39 km, with a south-western and southern bypass of Mężenin; junctions Kołaki and Mężenin. Contract signed 7 August 2014 with Astaldi (434.8 mln zł, VAT basis not stated); 22 months excluding winters. Opened 22 December 2016. The drawn line is 15.0 km.",
+        "ro": "Modernizarea DK8 la drum expres cu două căi de rulare de la capătul ocolitoarei Zambrów și Wiśniewo până la Mężenin, 15,39 km, cu ocolirea Mężeninului prin sud-vest și sud; noduri Kołaki și Mężenin. Contract semnat la 7 august 2014 cu Astaldi (434,8 mil. zł, baza TVA nespecificată); 22 de luni fără iernile. Deschis la 22 decembrie 2016. Linia desenată are 15,0 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-wisniewo-mezenin-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wisniewo-mezenin"
+    },
+    {
+      "id": "mezenin-jezewo",
+      "name": {
+        "en": "Mężenin – Jeżewo Stare",
+        "ro": "Mężenin – Jeżewo Stare"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-12-22",
+        "opened": "2017-12-30"
+      },
+      "lengthKm": 14.3,
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: the Wiśniewo – Jeżewo project (agreement of 9 October 2015) totals 1 055.5 mln zł with 527.7 mln zł EU support; for the Mężenin – Jeżewo works the agreement annex gives 471.5 mln zł with 231.0 mln zł EU support.",
+            "ro": "GDDKiA: proiectul Wiśniewo – Jeżewo (acord din 9 octombrie 2015) are în total 1 055,5 mil. zł, cu 527,7 mil. zł sprijin UE; pentru lucrările Mężenin – Jeżewo anexa acordului indică 471,5 mil. zł, cu 231,0 mil. zł sprijin UE."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-12-22",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-30",
+          "sourceRef": "gddkia-s8-mezenin-jezewo-opening"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 to a dual-carriageway expressway, 14.3 km (the GDDKiA calendar gives 14.26 km), junctions Kobylin and Sikory. Contract signed 22 December 2014. The release dated 30 December 2017 reports it opened that day, while its own calendar of Podlasie sections gives 29 December 2017. GDDKiA states a contract value of over 440 mln zł, and the co-financing agreement annex gives 471.5 mln zł for the works; the two disagree, so no value is recorded. Contractor not recorded here. Temporary traffic organisation with a 100 km/h limit followed. The end of the lot is placed by the sourced length from Mężenin; the Jeżewo junction lies about 2.5 km further east in OpenStreetMap. The drawn line is 14.0 km.",
+        "ro": "Modernizarea DK8 la drum expres cu două căi de rulare, 14,3 km (calendarul GDDKiA indică 14,26 km), noduri Kobylin și Sikory. Contract semnat la 22 decembrie 2014. Comunicatul datat 30 decembrie 2017 raportează deschiderea în ziua respectivă, în timp ce calendarul propriu al secțiunilor din Podlasia indică 29 decembrie 2017. GDDKiA indică o valoare a contractului de peste 440 mil. zł, iar anexa contractului de cofinanțare indică 471,5 mil. zł pentru lucrări; cele două diferă, deci nu este notată nicio valoare. Constructorul nu este notat aici. A urmat organizarea temporară a traficului cu limită de 100 km/h. Capătul lotului este plasat după lungimea din surse măsurată de la Mężenin; nodul Jeżewo se află cu circa 2,5 km mai la est în OpenStreetMap. Linia desenată are 14,0 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-mezenin-jezewo-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mezenin-jezewo"
+    },
+    {
+      "id": "jezewo-bialystok-choroszcz",
+      "name": {
+        "en": "Jeżewo Stare – Białystok (Choroszcz)",
+        "ro": "Jeżewo Stare – Białystok (Choroszcz)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-08-12",
+        "opened": "2012-09-12"
+      },
+      "lengthKm": 24.5,
+      "contractors": [
+        {
+          "name": "Mota-Engil",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 675,
+          "currency": "PLN",
+          "year": 2009,
+          "note": "VAT basis not stated. Consortium of Mota-Engil and Strabag."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 675,
+              "currency": "PLN",
+              "year": 2009,
+              "note": "VAT basis not stated. Consortium of Mota-Engil and Strabag."
+            },
+            "date": "2009-08-12",
+            "sourceRef": "pl-wikipedia-s8"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-08-12",
+          "sourceRef": "pl-wikipedia-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-09-12",
+          "sourceRef": "pl-wikipedia-s8"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of DK8 from Jeżewo Stare to the Choroszcz junction with S19 near Białystok, 24.5 km (the GDDKiA calendar says 22.7 km of it is designated S). Environmental decision 18 October 2006; design-and-build contract signed 12 August 2009 with a consortium of Mota-Engil and Strabag (675 mln zł, VAT basis not stated); building permit 7 October 2010. Opened 12 September 2012 as a dual carriageway with a 90 km/h limit while finishing works continued. The start is placed by the sourced length from Mężenin. The drawn line is 22.8 km.",
+        "ro": "Modernizarea DK8 de la Jeżewo Stare la nodul Choroszcz cu S19, lângă Białystok, 24,5 km (calendarul GDDKiA precizează că 22,7 km sunt denumiți S). Decizia de mediu din 18 octombrie 2006; contract proiectare și execuție semnat la 12 august 2009 cu un consorțiu Mota-Engil și Strabag (675 mil. zł, baza TVA nespecificată); autorizație de construire la 7 octombrie 2010. Deschis la 12 septembrie 2012 ca drum cu două căi de rulare, cu limită de 90 km/h, în timp ce lucrările de finisare au continuat. Începutul este plasat după lungimea din surse măsurată de la Mężenin. Linia desenată are 22,8 km."
+      },
+      "sourceRefs": [
+        "gddkia-s8-mezenin-jezewo-opening",
+        "pl-wikipedia-s8",
+        "osm-relation-s8",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jezewo-bialystok-choroszcz"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pl-wikipedia-s8",
+      "title": "Wikipedia (pl): Droga ekspresowa S8 (Polska), existing sections list and construction history by GDDKiA branch",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S8_(Polska)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-wisniewo-mezenin-opening",
+      "title": "GDDKiA: Nowy odcinek S8 oddany do użytku (Wiśniewo – Mężenin, 22 December 2016)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/24202/Nowy-odcinek-S8-oddany-do-uzytku",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-granica-zambrow-opening",
+      "title": "GDDKiA: S8 Granica województwa – Zambrów. Ruch już po dwóch jezdniach (22 December 2017)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/28048/S8-Granica-wojewodztwa-Zambrow-Ruch-juz-po-dwoch-jezdniach",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-mezenin-jezewo-opening",
+      "title": "GDDKiA: Trasa S8 na Podlasiu udostępniona kierowcom (Mężenin – Jeżewo, 30 December 2017) with the calendar of the Podlasie sections",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/28077/Trasa-S8-na-Podlasiu-udostepniona-Kierowcom",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-ostrow-granica-opening",
+      "title": "GDDKiA: S8 Wyszków – Białystok coraz dłuższa (Ostrów Mazowiecka – voivodeship border, 20 July 2018)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/30046/S8-Wyszkow-Bialystok-coraz-dluzsza",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-wyszkow-poreba-contract",
+      "title": "GDDKiA: Mazowiecka S8 – pierwsza umowa na kierunku białostockim podpisana (Wyszków – Poręba, 28 January 2016)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/21043/Mazowiecka-S8-pierwsza-umowa-na-kierunku-bialostockim-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-wyszkow-poreba-opening",
+      "title": "GDDKiA: Bezpieczniej i szybciej z Białegostoku do Warszawy (Wyszków – Poręba, 19 October 2018)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/31117/Bezpieczniej-i-szybciej-z-Bialegostoku-do-Warszawy",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-poreba-ostrow-contract",
+      "title": "GDDKiA: S8 Wyszków-Białystok: 83 km w budowie za 2,3 mld zł (Poręba – Ostrów Mazowiecka contract, 17 February 2016)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/21171/S8-Wyszkow-Bialystok-83-km-w-budowie-za-23-mld-zl",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-radziejowice-przeszkoda-opening",
+      "title": "GDDKiA: Ekspresowo pomiędzy Radziejowicami a Przeszkodą (10 October 2019)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/35370/Ekspresowo-pomiedzy-Radziejowicami-a-Przeszkoda",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-przeszkoda-paszkow-opening",
+      "title": "GDDKiA: Dwiema jezdniami na S8 Przeszkoda-Paszków (30 November 2018)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/31644/Dwiema-jezdniami-na-S8-Przeszkoda-Paszkow",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-radziejowice-paszkow-contract",
+      "title": "GDDKiA: Umowa na S8 Radziejowice-Paszków podpisana (Intercor, 3 June 2015)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/21100/Umowa-na-S8-Radziejowice-Paszkow-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-wroclaw-olesnica-opening",
+      "title": "GDDKiA: Ekspresowo w stronę Warszawy! S8 z Wrocławia do Oleśnicy otwarta (6 October 2012)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/11585/Ekspresowo-w-strone-Warszawy-S8-z-Wroclawia-do-Olesnicy-otwarta",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-wielun-zloczew",
+      "title": "GDDKiA: S8 Odcinek Walichnowy – Węzeł Złoczew (km 101+972 to 120+961)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/8023/S8-Odcinek-Walichnowy-Wezel-Zloczew",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-zloczew-sieradz",
+      "title": "GDDKiA: S8 Złoczew – Węzeł \"Sieradz Południe\" (km 120+961 to 140+552)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/10400/e_s8_d02_2",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-sieradz-lask",
+      "title": "GDDKiA: S8 Sieradz Południe – Łask (km 140+552 to 174+200)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/8025/S8-Sieradz-Poludnie-Lask",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-lask-roza",
+      "title": "GDDKiA: S8 Odcinek Węzeł Łask – Węzeł Róża (km 174+200 to 183+350)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/8026/s8-odcinek-wezel-lask-wezel-roza",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-roza-lodz-poludnie",
+      "title": "GDDKiA: S8 Odcinek Róża – A1 \"Węzeł Łódź Południe\" (Budimex)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/8027/s8-odcinek-roza-a1-wezel-lodz-poludnie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-wezel-lodz-poludnie",
+      "title": "GDDKiA: A1 S8 Węzeł \"Łódź Południe\" (opened 1 July 2016)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/10208/e_s8_d06_w",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-opacz-paszkow",
+      "title": "GDDKiA: S8 Salomea – Wolica Etap I cz. 2 – część pozamiejska węzeł Opacz – węzeł Paszków i Etap II (Strabag, 12 April 2013)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/7984/s8-salomea-wolica",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-s8-janki-opacz-opening",
+      "title": "GDDKiA: Od piątku w nocy S8 omija Janki i Raszyn (Janki Małe – Opacz, 17 July 2015)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/19335/S8-Opacz-Warszawa-Janki-oddane-do-ruchu",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-relation-s8",
+      "title": "OpenStreetMap: relation 2107912 and ways with ref S8 (network PL:expressway)",
+      "url": "https://www.openstreetmap.org/relation/2107912",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}
