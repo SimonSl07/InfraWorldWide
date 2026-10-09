@@ -1,0 +1,87 @@
+{
+  "id": "gr-chalkida-bypass",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "Chalkida bypass and Psachna bypass (North–South Evia artery)",
+    "ro": "Ocolitoarea Chalkida și ocolitoarea Psachna (artera Nord–Sud Evia)"
+  },
+  "description": {
+    "en": "Design and construction of the Chalkida bypass and the Psachna bypass with the connecting North–South Evia artery, about 27 km in total, on the island of Euboea. Contractor METKA under a design-build contract; co-financed from the ESPA 2021–2027 programme and the Cohesion Fund. In July 2026 works were earthworks, structures and excavation of the Vathrovouni tunnel.",
+    "ro": "Proiectare și construcție a ocolitoarei Chalkida și a ocolitoarei Psachna, împreună cu artera de legătură Nord–Sud Evia, circa 27 km în total, pe insula Evia. Constructor METKA, în sistem proiectare-execuție; cofinanțat din programul ESPA 2021–2027 și din Fondul de Coeziune. În iulie 2026, lucrările constau în terasamente, structuri și excavarea tunelului Vathrovouni."
+  },
+  "operator": "gr-ypome",
+  "lots": [
+    {
+      "id": "chalkida-psachna-bypass",
+      "name": {
+        "en": "Chalkida bypass, Psachna bypass and North–South Evia artery",
+        "ro": "Ocolitoarea Chalkida, ocolitoarea Psachna și artera Nord–Sud Evia"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2028-08-02"
+      },
+      "lengthKm": 27,
+      "cost": {
+        "estimated": {
+          "amount": 169.35,
+          "currency": "EUR",
+          "scope": "programme",
+          "confidence": "reported",
+          "note": "Budget excluding VAT, as reported by newmoney.gr on 25 November 2024 (EUR 210 million including VAT). Covers the main project (EUR 125 million including VAT) plus optional sections (EUR 85 million including VAT)."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed under the ESPA 2021–2027 programming period, with the participation of the Cohesion Fund (ypodomes.com, 15 July 2026).",
+            "ro": "Cofinanțat în perioada de programare ESPA 2021–2027, cu participarea Fondului de Coeziune (ypodomes.com, 15 iulie 2026)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "METKA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The total is about 27 km (ypodomes.com, 15 July 2026). Newmoney.gr (25 November 2024) gives two sections of the main project: Nea Lampsakos to the Vathrovouni tunnel, 2 km, and Vathrovouni tunnel to Psachna, 14.7 km, with the Psachna bypass and a North–South Evia connector as optional sections. No extents are given for those, so the works are kept as one lot. The date of 2 August 2028 follows an 18-month extension granted by the Ministry of Infrastructure and Transport, as reported by newmoney.gr; it is a press report, not the contract, and is recorded as the expected opening. METKA cited delayed property acquisition, transfer of state forest land, design changes at the Nea Lampsakos junction and at the Lake Dokos anti-flooding works, and unfinished studies. The cross-section is not stated. Drawn geometry is the OpenStreetMap highway=construction (construction=trunk) way from the Vathrovouni tunnel northwards, about 15.2 km: it covers only part of the 27 km, and the Nea Lampsakos approach and the Psachna bypass are not drawn. The existing Schimatari – Chalkida A11 branch is a separate road.",
+        "ro": "Totalul este de circa 27 km (ypodomes.com, 15 iulie 2026). Newmoney.gr (25 noiembrie 2024) indică două tronsoane ale proiectului principal: Nea Lampsakos – tunelul Vathrovouni, 2 km, și tunelul Vathrovouni – Psachna, 14,7 km, cu ocolitoarea Psachna și o legătură Nord–Sud Evia ca tronsoane opționale. Pentru acestea nu sunt date extinderi, deci lucrările rămân un singur lot. Data de 2 august 2028 urmează unei prelungiri de 18 luni acordate de Ministerul Infrastructurii și Transporturilor, relatată de newmoney.gr; este un articol de presă, nu contractul, și este înregistrată ca dată așteptată a deschiderii. METKA a invocat întârzieri la exproprieri, la transferul terenurilor forestiere ale statului, modificări de proiect la nodul Nea Lampsakos și la lucrările antiinundații de la lacul Dokos, precum și studii neterminate. Secțiunea transversală nu este indicată. Geometria desenată este calea OpenStreetMap highway=construction (construction=trunk) de la tunelul Vathrovouni spre nord, circa 15,2 km: acoperă doar o parte din cei 27 km, iar accesul Nea Lampsakos și ocolitoarea Psachna nu sunt desenate. Ramura existentă A11 Schimatari – Chalkida este un drum separat."
+      },
+      "sourceRefs": [
+        "ypodomes-2026-07-15",
+        "newmoney-2024-11-25",
+        "osm"
+      ],
+      "geometryRef": "chalkida-psachna-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ypodomes-2026-07-15",
+      "title": "Ypodomes.com: Με την παράκαμψη Χαλκίδας θα δημιουργηθεί ένας ενιαίος και ασφαλής οδικός άξονας προς τη Βόρεια Εύβοια (15 July 2026)",
+      "url": "https://ypodomes.com/me-tin-parakampsi-chalkidas-tha-dimioyrgithei-enas-eniaios-kai-asfalis-odikos-axonas-pros-ti-voreia-eyvoia/",
+      "publisher": "ypodomes.com",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "newmoney-2024-11-25",
+      "title": "Newmoney.gr: Εύβοια, πότε ολοκληρώνεται το έργο για την παράκαμψη της Χαλκίδας (25 November 2024)",
+      "url": "https://www.newmoney.gr/roh/palmos-oikonomias/ependyseis/evvia-pote-oloklironete-to-ergo-gia-tin-parakampsi-tis-chalkidas/",
+      "publisher": "newmoney.gr",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-09"
+    }
+  ],
+  "lastVerified": "2026-10-09"
+}

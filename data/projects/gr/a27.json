@@ -1,0 +1,102 @@
+{
+  "id": "gr-a27",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "A27 Kozani – Ptolemaida – Florina – Niki",
+    "ro": "A27 Kozani – Ptolemaida – Florina – Niki"
+  },
+  "description": {
+    "en": "Vertical axis 50 of the Egnatia Odos, from the A2 at Kozani by way of Ptolemaida and Florina to the border crossing with North Macedonia at Niki, about 78.5 km in all. Only the Florina – Niki motorway section (14.5 km, opened 20 May 2016) is recorded as a lot here. Kozani – Ptolemaida is also a motorway, but the sources give no length or opening date for it, so it is not drawn. Ptolemaida – Florina runs as an expressway and is planned for upgrade to a motorway; no source gives the extent of the upgrade.",
+    "ro": "Axa verticală 50 a Egnatia Odos, de la A2 la Kozani prin Ptolemaida și Florina până la punctul de frontieră cu Macedonia de Nord de la Niki, circa 78,5 km în total. Aici este înregistrat ca lot doar tronsonul de autostradă Florina – Niki (14,5 km, deschis la 20 mai 2016). Kozani – Ptolemaida este de asemenea autostradă, dar sursele nu indică lungimea sau data deschiderii, deci nu este desenat. Ptolemaida – Florina funcționează ca drum expres și este planificat pentru modernizare la autostradă; nicio sursă nu indică lungimea modernizării."
+  },
+  "corridors": [
+    "pan-european-x"
+  ],
+  "operator": "gr-egnatia-odos",
+  "sources": [
+    {
+      "id": "wikipedia-en-a27",
+      "title": "Wikipedia: A27 motorway (Greece)",
+      "url": "https://en.wikipedia.org/wiki/A27_motorway_(Greece)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wikipedia-el-a27",
+      "title": "Greek Wikipedia: Αυτοκινητόδρομος 27 (Ελλάδα)",
+      "url": "https://el.wikipedia.org/wiki/Αυτοκινητόδρομος_27_(Ελλάδα)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "egnatia-new-project-2011",
+      "title": "Egnatia Odos S.A.: A new project for Egnatia Odos S.A. (29 November 2011)",
+      "url": "http://www.egnatia.gr/page/default.asp?la=2&id=67&pl=1081&pk=77&ap=1063",
+      "retrievedOn": "2026-10-05",
+      "archiveUrl": "https://web.archive.org/web/2019/http://www.egnatia.gr/page/default.asp?la=2&id=67&pl=1081&pk=77&ap=1063"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lots": [
+    {
+      "id": "florina-niki",
+      "name": {
+        "en": "Florina – Niki",
+        "ro": "Florina – Niki"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013",
+        "opened": "2016-05-20"
+      },
+      "lengthKm": 14.5,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2013",
+          "sourceRef": "wikipedia-en-a27"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-05-20",
+          "sourceRef": "wikipedia-en-a27"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Included in the 2007–2013 operational programme \"Improvement of Accessibility\" (Egnatia Odos announcement). No amount is published.",
+            "ro": "Inclus în programul operațional „Îmbunătățirea accesibilității” 2007–2013 (anunț Egnatia Odos). Nu este publicată nicio sumă."
+          }
+        }
+      ],
+      "cost": {
+        "estimated": {
+          "amount": 79.95,
+          "currency": "EUR",
+          "scope": "works",
+          "year": 2011,
+          "note": "Construction budget announced by Egnatia Odos in November 2011, not the awarded sum. Including VAT."
+        }
+      },
+      "note": {
+        "en": "Four-lane road with a 17 m cross section, central reserve and two interchanges (Florina and Kato Klines – Ano Kalliniki) plus an intersection at Niki, per Egnatia Odos. Construction start is given as 2013 by English Wikipedia and as 2012 by Greek Wikipedia; Egnatia Odos announced on 29 November 2011 that the construction contract had been positively evaluated by the Parliamentary Standing Committee on Economic Affairs (22 November 2011), and expected works to begin in the first quarter of 2012. Egnatia Odos expected the AKTOR ATE – TERNA – MOCHLOS joint venture to build it; no later source confirms the contract, so no contractor is recorded. Length 14.5 km is the sourced figure; the OSM line drawn from the Florina interchange to Niki measures about 13.5 km.",
+        "ro": "Drum cu patru benzi, cu secțiune de 17 m, bandă mediană și două noduri (Florina și Kato Klines – Ano Kalliniki), plus o intersecție la Niki, conform Egnatia Odos. Începerea lucrărilor este dată ca 2013 de Wikipedia în engleză și 2012 de Wikipedia în greacă; Egnatia Odos a anunțat la 29 noiembrie 2011 că contractul de construcție a fost evaluat pozitiv de Comisia parlamentară permanentă pentru afaceri economice (22 noiembrie 2011) și se aștepta ca lucrările să înceapă în primul trimestru din 2012. Egnatia Odos se aștepta ca asocierea AKTOR ATE – TERNA – MOCHLOS să îl construiască; nicio sursă ulterioară nu confirmă contractul, deci niciun constructor nu este înregistrat. Lungimea de 14,5 km este cifra din surse; linia OSM desenată de la nodul Florina la Niki măsoară circa 13,5 km."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a27",
+        "wikipedia-el-a27",
+        "egnatia-new-project-2011"
+      ],
+      "geometryRef": "florina-niki"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

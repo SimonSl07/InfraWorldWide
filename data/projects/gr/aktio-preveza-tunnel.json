@@ -1,0 +1,94 @@
+{
+  "id": "gr-aktio-preveza-tunnel",
+  "country": "gr",
+  "category": "tunnel",
+  "operator": "gr-egnatia-odos",
+  "name": {
+    "en": "Aktio – Preveza Undersea Tunnel",
+    "ro": "Tunelul subacvatic Aktio – Preveza"
+  },
+  "description": {
+    "en": "Road tunnel under the mouth of the Ambracian Gulf, between Aktio and Preveza in western Greece. It is 1,570 m long: a 909 m immersed section, with 509 m of cut and cover on the Preveza side and 152 m on the Aktio side. The contract was awarded in 1995 and the tunnel was inaugurated on 28 June 2002. It is tolled.",
+    "ro": "Tunel rutier sub gura Golfului Ambracic, între Aktio și Preveza, în vestul Greciei. Are 1.570 m: o secțiune imersată de 909 m, cu 509 m de tunel deschis pe partea Preveza și 152 m pe partea Aktio. Contractul a fost atribuit în 1995, iar tunelul a fost inaugurat la 28 iunie 2002. Este cu taxă."
+  },
+  "lots": [
+    {
+      "id": "aktio-preveza-tunnel",
+      "name": {
+        "en": "Aktio – Preveza undersea tunnel",
+        "ro": "Tunelul subacvatic Aktio – Preveza"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1995",
+        "opened": "2002-06-28"
+      },
+      "lengthKm": 1.57,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 2,
+        "tunnelKm": 1.57,
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "1995",
+          "note": {
+            "en": "Contract awarded.",
+            "ro": "Contract atribuit."
+          },
+          "sourceRef": "wikipedia-en"
+        },
+        {
+          "kind": "opened",
+          "date": "2002-06-28",
+          "note": {
+            "en": "Official inauguration by Prime Minister Kostas Simitis.",
+            "ro": "Inaugurare oficială de către premierul Kostas Simitis."
+          },
+          "sourceRef": "wikipedia-el"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Christiani & Nielsen – Technical Company of General Construction (TCGC)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Wikipedia (English) gives the toll as EUR 3 as of January 2026. Cost sources disagree and none states an outturn: English Wikipedia gives an approximate construction cost of EUR 90 million, Greek Wikipedia a project budget of EUR 58,904,232.13, so no cost is recorded. Length measured from the OpenStreetMap way is about 1.74 km because it includes the approach ramps; the recorded 1,570 m is sourced.",
+        "ro": "Wikipedia (engleză) indică taxa de 3 EUR în ianuarie 2026. Sursele de cost diferă și niciuna nu indică un cost final: Wikipedia în engleză dă un cost de construcție de circa 90 milioane EUR, Wikipedia în greacă un buget al proiectului de 58.904.232,13 EUR, deci nu se înregistrează niciun cost. Lungimea măsurată pe segmentul OpenStreetMap este de circa 1,74 km, fiindcă include rampele de acces; cei 1.570 m înregistrați provin dintr-o sursă."
+      },
+      "sourceRefs": [
+        "wikipedia-en",
+        "wikipedia-el",
+        "osm-tunnel-way"
+      ],
+      "geometryRef": "aktio-preveza-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en",
+      "title": "Wikipedia: Aktio–Preveza Undersea Tunnel",
+      "url": "https://en.wikipedia.org/wiki/Aktio%E2%80%93Preveza_Undersea_Tunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-el",
+      "title": "Greek Wikipedia: Υποθαλάσσια σήραγγα Πρέβεζας - Ακτίου",
+      "url": "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CE%B8%CE%B1%CE%BB%CE%AC%CF%83%CF%83%CE%B9%CE%B1_%CF%83%CE%AE%CF%81%CE%B1%CE%B3%CE%B3%CE%B1_%CE%A0%CF%81%CE%AD%CE%B2%CE%B5%CE%B6%CE%B1%CF%82_-_%CE%91%CE%BA%CF%84%CE%AF%CE%BF%CF%85",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-tunnel-way",
+      "title": "OpenStreetMap contributors (geometry, ODbL), way 322866174",
+      "url": "https://www.openstreetmap.org/way/322866174",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}
