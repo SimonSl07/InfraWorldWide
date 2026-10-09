@@ -1,0 +1,166 @@
+{
+  "id": "gr-rail-thessaloniki-idomeni",
+  "country": "gr",
+  "category": "railway",
+  "name": {
+    "en": "Thessaloniki – Idomeni railway",
+    "ro": "Calea ferată Salonic – Idomeni"
+  },
+  "description": {
+    "en": "Single-track electrified line from Thessaloniki north along the Axios valley to Idomeni on the North Macedonia border, the Idomeni branch of the PATHE axis. ERGOSE manages two works: the new Polykastro – Idomeni alignment of about 21 km, under construction since 2007, and a signalling and ETCS level 1 contract covering the whole 70.5 km line, signed in March 2022. The signalling lot is drawn and counted only for Thessaloniki – Polykastro, so that the alignment is not counted twice. The existing line is not recorded as a lot of its own. The Athens – Thessaloniki works end at Leptokarya and do not overlap this line.",
+    "ro": "Linie simplă electrificată de la Salonic spre nord, pe valea Axios, până la Idomeni, la granița cu Macedonia de Nord, ramura Idomeni a axei PATHE. ERGOSE gestionează două lucrări: noua variantă Polykastro – Idomeni de circa 21 km, în construcție din 2007, și un contract de semnalizare și ETCS nivel 1 pe întreaga linie de 70,5 km, semnat în martie 2022. Lotul de semnalizare este desenat și numărat doar pentru Salonic – Polykastro, ca varianta nouă să nu fie numărată de două ori. Linia existentă nu este înregistrată ca lot separat. Lucrările Atena – Salonic se opresc la Leptokarya și nu se suprapun cu această linie."
+  },
+  "operator": "gr-ergose",
+  "lots": [
+    {
+      "id": "polykastro-idomeni",
+      "name": {
+        "en": "Polykastro – Idomeni new alignment",
+        "ro": "Varianta nouă Polykastro – Idomeni"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2007"
+      },
+      "lengthKm": 21,
+      "cost": {
+        "estimated": {
+          "amount": 113,
+          "currency": "EUR",
+          "note": "Project cost as given by ERGOSE on a page dated 30 January 2024 that lists the work as in progress; the page does not say whether this is a budget or a final cost. Price year and VAT treatment not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 1
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007",
+          "sourceRef": "ergose-polykastro-idomeni"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Operational Programme Railways, Airports and Urban Transport 2000–2006, Operational Programme Accessibility Improvement 2007–2013 and national resources, and Connecting Europe Facility 2014–2020",
+            "ro": "Programul Operațional Căi Ferate, Aeroporturi și Transport Urban 2000–2006, Programul Operațional Îmbunătățirea Accesibilității 2007–2013 și resurse naționale, și Mecanismul pentru Interconectarea Europei 2014–2020"
+          }
+        }
+      ],
+      "note": {
+        "en": "New electrified alignment between Polykastro and Idomeni of about 21 km, with a new Polykastro station, a renovated Idomeni station and the new Mikro Dasos stop, design speed 160 km/h. The formation allows a double standard-gauge track, but a single track is laid for now. ERGOSE gives construction start as 2007, a cost of EUR 113 million and completion in 2024, and its page of 30 January 2024 lists the work as in progress. Greek Wikipedia says the alignment of 20.60 km has been built, with no opening date, and expects signalling and ETCS to be completed in 2027; no source dating an opening was found, so the lot is not recorded as opened. The signalling contract also covers this alignment; its kilometres are counted here, not in the signalling lot. The drawn line starts at the new Polykastro station and is carried in OpenStreetMap partly as track under construction.",
+        "ro": "Variantă nouă electrificată între Polykastro și Idomeni, de circa 21 km, cu o stație nouă Polykastro, stația Idomeni renovată și noua haltă Mikro Dasos, viteză de proiectare 160 km/h. Platforma permite linie dublă cu ecartament standard, dar deocamdată este montată o singură linie. ERGOSE indică începerea construcției în 2007, un cost de 113 milioane euro și finalizarea în 2024, iar pagina sa din 30 ianuarie 2024 prezintă lucrarea ca fiind în desfășurare. Wikipedia în greacă spune că varianta de 20,60 km a fost construită, fără dată de deschidere, și estimează finalizarea semnalizării și a ETCS în 2027; nu a fost găsită nicio sursă care să dateze o deschidere, deci lotul nu este înregistrat ca deschis. Contractul de semnalizare acoperă și această variantă; kilometrii ei sunt numărați aici, nu în lotul de semnalizare. Linia desenată începe la noua stație Polykastro și este redată în OpenStreetMap parțial ca linie în construcție."
+      },
+      "sourceRefs": [
+        "ergose-polykastro-idomeni",
+        "el-wikipedia-thessaloniki-idomeni"
+      ],
+      "geometryRef": "polykastro-idomeni"
+    },
+    {
+      "id": "signalling-etcs",
+      "name": {
+        "en": "Thessaloniki – Polykastro signalling and ETCS level 1",
+        "ro": "Semnalizare și ETCS nivel 1 Salonic – Polykastro"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2022"
+      },
+      "lengthKm": 51.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 40.97,
+              "currency": "EUR",
+              "year": 2022,
+              "note": "Excluding VAT."
+            },
+            "date": "2022-03-11",
+            "note": "Construction contract signed on 11 March 2022.",
+            "sourceRef": "ergose-pr-2022-03-11"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "tracks": 1
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2022",
+          "sourceRef": "ergose-polykastro-idomeni-signalling"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 40.97,
+          "currency": "EUR",
+          "year": 2022,
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. The contract covers signalling and ETCS level 1 on the whole single line Thessaloniki – Idomeni, 70.5 km, including the new Polykastro – Idomeni alignment held by the other lot, which is why only Thessaloniki – Polykastro is drawn and counted here. It also covers replacement of 37 turnouts, 4 new turnouts, and track and electrification of a 2.2 km bypass line at Mikro Dasos. It is signalling and electrification of a bypass line, not new track. ERGOSE signed the contract on 11 March 2022 with the AVAX – Alstom consortium at EUR 40,973,034.12 excluding VAT; its project page gives EUR 40.86 million excluding VAT, construction start 2022 and planned completion 2025, and lists the work as in progress (page dated 10 November 2022). Greek Wikipedia expects signalling and ETCS to be completed in 2027.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Contractul acoperă semnalizare și ETCS nivel 1 pe întreaga linie simplă Salonic – Idomeni, 70,5 km, inclusiv noua variantă Polykastro – Idomeni, care aparține celuilalt lot, motiv pentru care aici sunt desenați și numărați doar kilometrii Salonic – Polykastro. Include și înlocuirea a 37 de schimbătoare de cale, 4 schimbătoare noi, plus linie și electrificare pentru o linie de ocolire de 2,2 km la Mikro Dasos. Este vorba de semnalizare și de electrificarea unei linii de ocolire, nu de linie nouă. ERGOSE a semnat contractul la 11 martie 2022 cu asocierea AVAX – Alstom, la 40.973.034,12 euro fără TVA; pagina proiectului indică 40,86 milioane euro fără TVA, începerea construcției în 2022 și finalizarea planificată în 2025, și prezintă lucrarea ca fiind în desfășurare (pagină din 10 noiembrie 2022). Wikipedia în greacă estimează finalizarea semnalizării și a ETCS în 2027."
+      },
+      "sourceRefs": [
+        "ergose-pr-2022-03-11",
+        "ergose-polykastro-idomeni-signalling",
+        "el-wikipedia-thessaloniki-idomeni"
+      ],
+      "geometryRef": "signalling-etcs",
+      "contractors": [
+        {
+          "name": "AVAX – Alstom",
+          "role": "builder"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ergose-polykastro-idomeni",
+      "title": "ERGOSE: Πολύκαστρο – Ειδομένη (project page)",
+      "url": "https://www.ergose.gr/project/polykastro_eidomeni/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "ergose-polykastro-idomeni-signalling",
+      "title": "ERGOSE: Πολύκαστρο – Ειδομένη, σηματοδότηση και ETCS (project page)",
+      "url": "https://www.ergose.gr/project/polykastro_eidomeni-2/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "ergose-pr-2022-03-11",
+      "title": "ERGOSE press release: Υπεγράφη η σύμβαση ανάθεσης του έργου σηματοδότησης στη σιδηροδρομική γραμμή Θεσσαλονίκη – Ειδομένη (11 March 2022)",
+      "url": "https://www.ergose.gr/deltio-typoy-ypegrafi-i-symvasi-anathesis-toy-ergoy-simatodotisis-sti-sidirodromiki-grammi-thessaloniki-eidomeni/",
+      "publisher": "ERGOSE",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "el-wikipedia-thessaloniki-idomeni",
+      "title": "Wikipedia (Greek): Σιδηροδρομική γραμμή Θεσσαλονίκης - Ειδομένης",
+      "url": "https://el.wikipedia.org/wiki/%CE%A3%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CE%B4%CF%81%CE%BF%CE%BC%CE%B9%CE%BA%CE%AE_%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%AE_%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7%CF%82_-_%CE%95%CE%B9%CE%B4%CE%BF%CE%BC%CE%AD%CE%BD%CE%B7%CF%82",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

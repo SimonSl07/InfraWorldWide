@@ -1,0 +1,86 @@
+{
+  "id": "gr-thessaloniki-flyover",
+  "country": "gr",
+  "city": "gr-thessaloniki",
+  "category": "highway",
+  "name": {
+    "en": "Thessaloniki Flyover (Eastern Inner Ring Road upgrade, K5 – K12)",
+    "ro": "Flyover Salonic (modernizarea Inelului Interior Estic, K5 – K12)"
+  },
+  "description": {
+    "en": "Public-private partnership upgrade of the eastern Inner Ring Road (Periferiaki) of Thessaloniki between junctions K5 and K12: about 13 km of rebuilt and widened road, an elevated expressway, nine grade-separated interchanges and new bridges and tunnels. The contract was signed on 19 December 2022 with a budget of €373.2 million (excluding VAT per later press) and four years of construction. In April 2026 progress was reported above 50%, with delivery targeted for spring 2027.",
+    "ro": "Modernizare prin parteneriat public-privat a Inelului Interior Estic (Periferiaki) al Salonicului între nodurile K5 și K12: circa 13 km de drum reconstruit și lărgit, o autostradă suprarelevată, nouă noduri denivelate și poduri și tuneluri noi. Contractul a fost semnat pe 19 decembrie 2022, cu un buget de 373,2 milioane EUR (fără TVA, potrivit presei ulterioare) și patru ani de construcție. În aprilie 2026 progresul era raportat la peste 50%, cu predarea vizată pentru primăvara lui 2027."
+  },
+  "lots": [
+    {
+      "id": "k5-k12",
+      "name": {
+        "en": "Eastern Inner Ring Road: junction K5 – junction K12",
+        "ro": "Inelul Interior Estic: nodul K5 – nodul K12"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-12-19"
+      },
+      "lengthKm": 13,
+      "profile": {
+        "works": "upgrade",
+        "viaductKm": 4
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Public-private partnership: four years of construction, then maintenance under the concession (ypodomes.com, 19 December 2022). An additional €81 million for compensation and supplementary works was reported on 21 April 2026 (huffingtonpost.gr).",
+            "ro": "Parteneriat public-privat: patru ani de construcție, apoi întreținere în cadrul concesiunii (ypodomes.com, 19 decembrie 2022). Un supliment de 81 de milioane EUR pentru compensații și lucrări suplimentare a fost raportat la 21 aprilie 2026 (huffingtonpost.gr)."
+          }
+        }
+      ],
+      "contract": {
+        "executionMonths": 48
+      },
+      "cost": {
+        "estimated": {
+          "amount": 373.2,
+          "currency": "EUR",
+          "year": 2022,
+          "scope": "total",
+          "note": "Budget of the PPP as stated at signing (ypodomes.com) and described as an estimate in April 2026 (huffingtonpost.gr), excluding VAT (about €462 million with VAT)."
+        }
+      },
+      "note": {
+        "en": "Upgrade of the existing Inner Ring Road (A24) between junction K5 (Papageorgiou) and junction K12 (Charilaou–Moudanion). The PPP documents give 13 km; the contractor's presentation, quoted on 22 April 2026, gives 12 km of works, 9 grade-separated interchanges, 7.6 km of elevated avenue including its access ramps, 4 km of rapid-traffic bridge, 9 bridges, 2 covered structures and 1 tunnel. At signing the elevated road was given as 4 km, with 10 new bridges and 3 new tunnels. The construction duration is four years; no construction start date was found. Press reports give May 2027 for completion; the source calls the secure schedule 'spring 2027'. The contractor and concessionaire are not named in the sources found. Geometry follows one carriageway of the existing road from K5 to K12 and measures about 12.8 km; the elevated structures are not drawn separately.",
+        "ro": "Modernizarea Inelului Interior existent (A24) între nodul K5 (Papageorgiou) și nodul K12 (Charilaou–Moudanion). Documentele PPP indică 13 km; prezentarea constructorului, citată la 22 aprilie 2026, indică 12 km de lucrări, 9 noduri denivelate, 7,6 km de bulevard suprarelevat împreună cu rampele de acces, 4 km de pod pentru trafic rapid, 9 poduri, 2 structuri acoperite și 1 tunel. La semnare, drumul suprarelevat era dat la 4 km, cu 10 poduri noi și 3 tuneluri noi. Durata construcției este de patru ani; nu a fost găsită o dată de începere a lucrărilor. Presa indică mai 2027 pentru finalizare; sursa numește termenul sigur „primăvara 2027”. Constructorul și concesionarul nu sunt numiți în sursele găsite. Geometria urmează o singură cale a drumului existent de la K5 la K12 și măsoară circa 12,8 km; structurile suprarelevate nu sunt desenate separat."
+      },
+      "sourceRefs": [
+        "ypodomes-2022-12-19",
+        "huffpost-2026-04-22",
+        "osm"
+      ],
+      "geometryRef": "k5-k12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ypodomes-2022-12-19",
+      "title": "Ypodomes.com: Υπεγράφη η σύμβαση για την κατασκευή του Flyover στη Θεσσαλονίκη (19 December 2022)",
+      "url": "https://ypodomes.com/ypegrafi-i-symvasi-gia-tin-kataskeyi-toy-flyover-sti-thessaloniki/",
+      "publisher": "ypodomes.com",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "huffpost-2026-04-22",
+      "title": "HuffPost Greece: Flyover Θεσσαλονίκης: Πάνω από 50% η πρόοδος, με εντατική δουλειά (22 April 2026)",
+      "url": "https://www.huffingtonpost.gr/kinonia/flyover-thessalonikis-pano-apo-50-i-proodos-me-entatiki-douleia-orizontas-paradosis-tin-anoixi-tou-2027/",
+      "publisher": "HuffPost Greece",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

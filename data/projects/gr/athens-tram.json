@@ -1,0 +1,179 @@
+{
+  "id": "gr-athens-tram",
+  "country": "gr",
+  "city": "gr-athens",
+  "category": "railway",
+  "name": {
+    "en": "Athens Tram",
+    "ro": "Tramvaiul din Atena"
+  },
+  "description": {
+    "en": "Tram network of Athens, run by STASY (formerly Tram S.A.). The first network opened on 19 July 2004 before the Olympic Games, from Syntagma to Neo Faliro (SEF) and along the coast to Glyfada and Kolymvitirio. A 700 m extension to Asklepieio Voulas opened on 15 November 2007. A one-way loop through Piraeus, built from 2013, opened on 15 December 2021 as far as Agia Triada and reached its final terminus at Akti Poseidonos on 18 February 2026. STASY gives the system length as 31.3 km (Greek Wikipedia: 29.3 km); the four lots sum to 26.6 km, the single route measured from OpenStreetMap, one track per lot with the shared Syntagma – Edem track counted once. 60 stops, 750 V DC overhead supply.",
+    "ro": "Rețeaua de tramvai din Atena, operată de STASY (fosta Tram S.A.). Prima rețea a fost deschisă pe 19 iulie 2004, înaintea Jocurilor Olimpice, de la Syntagma la Neo Faliro (SEF) și de-a lungul coastei până la Glyfada și Kolymvitirio. O prelungire de 700 m până la Asklepieio Voulas a fost deschisă pe 15 noiembrie 2007. O buclă cu sens unic prin Pireu, construită din 2013, a fost deschisă pe 15 decembrie 2021 până la Agia Triada și a atins stația terminus finală Akti Poseidonos pe 18 februarie 2026. STASY indică pentru sistem 31,3 km (Wikipedia în greacă: 29,3 km); cele patru loturi însumează 26,6 km, traseul simplu măsurat din OpenStreetMap, o singură cale per lot, cu calea comună Syntagma – Edem numărată o dată. 60 de stații, alimentare aeriană de 750 V c.c."
+  },
+  "operator": "gr-stasy",
+  "stationCount": 60,
+  "lots": [
+    {
+      "id": "syntagma-edem-sef",
+      "name": {
+        "en": "Syntagma – Edem – Neo Faliro (SEF)",
+        "ro": "Syntagma – Edem – Neo Faliro (SEF)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004-07-19"
+      },
+      "lengthKm": 14.5,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). Part of the network opened on 19 July 2004 (Syntagma – Neo Faliro / SEF branch); the source gives no branch lengths. The drawn line runs Syntagma – Edem on the T6 alignment and Edem – SEF on the T7 alignment. The 31.3 km system length cited elsewhere is not the sum of the lots.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Face parte din rețeaua deschisă pe 19 iulie 2004 (ramura Syntagma – Neo Faliro / SEF); sursa nu indică lungimile ramurilor. Linia desenată urmează traseul T6 între Syntagma și Edem și traseul T7 între Edem și SEF. Lungimea de 31,3 km a sistemului, citată în altă parte, nu este suma loturilor."
+      },
+      "sourceRefs": [
+        "wikipedia-en-athens-tram",
+        "wikipedia-el-athens-tram",
+        "osm-athens-tram"
+      ],
+      "geometryRef": "syntagma-edem-sef"
+    },
+    {
+      "id": "edem-kolymvitirio",
+      "name": {
+        "en": "Edem – Glyfada – Kolymvitirio",
+        "ro": "Edem – Glyfada – Kolymvitirio"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004-07-19"
+      },
+      "lengthKm": 9.11,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). Coastal branch to Glyfada of the network opened on 19 July 2004; it shares the Syntagma – Edem track with the previous lot, which carries that track in its length.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Ramura de coastă spre Glyfada a rețelei deschise pe 19 iulie 2004; folosește calea Syntagma – Edem, inclusă în lungimea lotului precedent."
+      },
+      "sourceRefs": [
+        "wikipedia-en-athens-tram",
+        "osm-athens-tram"
+      ],
+      "geometryRef": "edem-kolymvitirio"
+    },
+    {
+      "id": "kolymvitirio-asklepieio-voulas",
+      "name": {
+        "en": "Kolymvitirio – Asklepieio Voulas",
+        "ro": "Kolymvitirio – Asklepieio Voulas"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-11-15"
+      },
+      "lengthKm": 0.7,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true
+      },
+      "note": {
+        "en": "Single-stop extension of 700 m. The line drawn from OpenStreetMap stop to stop measures 0.83 km; the sourced length is kept.",
+        "ro": "Prelungire de 700 m cu o singură stație. Linia desenată din OpenStreetMap, de la stație la stație, măsoară 0,83 km; se păstrează lungimea din sursă."
+      },
+      "sourceRefs": [
+        "wikipedia-en-athens-tram",
+        "wikipedia-el-athens-tram",
+        "osm-athens-tram"
+      ],
+      "geometryRef": "kolymvitirio-asklepieio-voulas"
+    },
+    {
+      "id": "piraeus-loop",
+      "name": {
+        "en": "Piraeus loop: Neo Faliro (SEF) – Agia Triada – Akti Poseidonos",
+        "ro": "Bucla Pireu: Neo Faliro (SEF) – Agia Triada – Akti Poseidonos"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-12-15",
+        "constructionStart": "2013"
+      },
+      "lengthKm": 2.2,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2013",
+          "note": {
+            "en": "Construction of the Piraeus extension started in 2013.",
+            "ro": "Construcția prelungirii spre Pireu a început în 2013."
+          },
+          "sourceRef": "wikipedia-en-athens-tram"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-15",
+          "note": {
+            "en": "Opened to Agia Triada (provisional terminus).",
+            "ro": "Deschisă până la Agia Triada (terminus provizoriu)."
+          },
+          "sourceRef": "wikipedia-en-athens-tram"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2026-02-18",
+          "note": {
+            "en": "Final stop Akti Poseidonos opened, completing the loop.",
+            "ro": "Ultima stație, Akti Poseidonos, a fost deschisă, încheind bucla."
+          },
+          "sourceRef": "athenstransport-akti-poseidonos"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). One-way loop; construction started in 2013. The loop opened to the public on 15 December 2021 with Agia Triada as provisional terminus (first traffic); the final stop Akti Poseidonos opened on 18 February 2026. The source gives no separate length for the two stages, so the loop is one lot.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Buclă cu sens unic; construcția a început în 2013. A fost deschisă publicului pe 15 decembrie 2021, cu Agia Triada ca terminus provizoriu (primul trafic), iar ultima stație, Akti Poseidonos, a fost deschisă pe 18 februarie 2026. Sursa nu indică lungimi separate pentru cele două etape, deci bucla este un singur lot."
+      },
+      "sourceRefs": [
+        "wikipedia-en-athens-tram",
+        "wikipedia-el-athens-tram",
+        "athenstransport-akti-poseidonos",
+        "osm-athens-tram"
+      ],
+      "geometryRef": "piraeus-loop"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-athens-tram",
+      "title": "Wikipedia: Athens Tram (\"19 July 2004\"; \"15 November 2007\"; \"15 December 2021\"; \"18 February 2026\"; \"31.3 km\"; \"started in 2013\")",
+      "url": "https://en.wikipedia.org/wiki/Athens_Tram",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-el-athens-tram",
+      "title": "Wikipedia (Greek): Τραμ Αθήνας (\"19 Ιουλίου 2004\"; \"15 Νοεμβρίου 2007\"; \"15 Δεκεμβρίου 2021\"; \"18 Φεβρουαρίου 2026\"; \"29,3 χιλιόμετρα\")",
+      "url": "https://el.wikipedia.org/wiki/%CE%A4%CF%81%CE%B1%CE%BC_%CE%91%CE%B8%CE%AE%CE%BD%CE%B1%CF%82",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "athenstransport-akti-poseidonos",
+      "title": "Athens Transport: Νέα στάση Τραμ στο λιμάνι του Πειραιά, 17 February 2026 (\"Από την Τετάρτη 18 Φεβρουαρίου\")",
+      "url": "https://www.athenstransport.com/2026/02/akti-poseidonos-tram/",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-athens-tram",
+      "title": "OpenStreetMap contributors: Athens Tram route relations T6 and T7 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/6792078",
+      "retrievedOn": "2026-10-09"
+    }
+  ],
+  "lastVerified": "2026-10-09"
+}

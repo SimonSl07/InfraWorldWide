@@ -1,0 +1,75 @@
+{
+  "id": "gr-evripos-bridge",
+  "country": "gr",
+  "category": "bridge",
+  "name": {
+    "en": "Evripos high bridge, Chalkida",
+    "ro": "Podul înalt Evripos, Chalkida"
+  },
+  "description": {
+    "en": "Cable-stayed road bridge, 395 m long with spans of 90 + 215 + 90 m, over the Evripos strait at Chalkida on Euboea. Construction began in May 1985 and it opened on 9 July 1993. It was the first cable-stayed road bridge in Greece.",
+    "ro": "Pod rutier hobanat de 395 m, cu deschideri de 90 + 215 + 90 m, peste strâmtoarea Evripos la Chalkida, în Evia. Construcția a început în mai 1985, iar podul a fost deschis la 9 iulie 1993. A fost primul pod rutier hobanat din Grecia."
+  },
+  "lots": [
+    {
+      "id": "evripos-bridge",
+      "name": {
+        "en": "Evripos high bridge",
+        "ro": "Podul înalt Evripos"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1985-05",
+        "opened": "1993-07-09"
+      },
+      "lengthKm": 0.395,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Volos Technical Company SA",
+          "role": "builder"
+        },
+        {
+          "name": "Hellenic Technodomiki SA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length, spans and names from English Wikipedia, which gives S. Schleich as designer and Volos Technical Company SA and Hellenic Technodomiki SA as builders. Greek Wikipedia confirms May 1985 as the start, 9 July 1993 as the inauguration, the same designer and the builders (Τεχνική Εταιρεία Βόλου Α.Ε., Ελληνική Τεχνοδομική Α.Ε.), and gives a total length of 694.5 m including approaches. The recorded 395 m is the cable-stayed structure. Drawn geometry is the OpenStreetMap bridge way (Υψηλή Γέφυρα Ευρίπου) of 0.59 km, which includes approach spans beyond that structure; OpenStreetMap does not tag the main span separately.",
+        "ro": "Lungimea, deschiderile și numele provin din Wikipedia în engleză, care îl indică pe S. Schleich ca proiectant și pe Volos Technical Company SA și Hellenic Technodomiki SA ca constructori. Wikipedia în greacă confirmă mai 1985 ca început, 9 iulie 1993 ca inaugurare, același proiectant și constructorii (Τεχνική Εταιρεία Βόλου Α.Ε., Ελληνική Τεχνοδομική Α.Ε.) și indică o lungime totală de 694,5 m cu accesele. Cifra înregistrată de 395 m este structura hobanată. Geometria desenată este calea de pod OpenStreetMap (Υψηλή Γέφυρα Ευρίπου) de 0,59 km, care include deschideri de acces dincolo de această structură; OpenStreetMap nu etichetează separat deschiderea principală."
+      },
+      "sourceRefs": [
+        "wikipedia-en",
+        "wikipedia-el",
+        "osm"
+      ],
+      "geometryRef": "evripos-bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en",
+      "title": "Wikipedia: Euripus Bridge",
+      "url": "https://en.wikipedia.org/wiki/Evripos_Bridge",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "wikipedia-el",
+      "title": "Wikipedia (el): Υψηλή Γέφυρα Ευρίπου",
+      "url": "https://el.wikipedia.org/wiki/Υψηλή_Γέφυρα_Ευρίπου",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-09"
+    }
+  ],
+  "lastVerified": "2026-10-09"
+}
