@@ -1,0 +1,133 @@
+{
+  "id": "rs-iverak-lajkovac",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "Iverak – Lajkovac expressway",
+    "ro": "Drumul expres Iverak – Lajkovac"
+  },
+  "description": {
+    "en": "An 18.2 km expressway from the A2 Miloš Veliki at Lajkovac to Iverak, east of Valjevo, built by China Shandong International under a commercial contract of 10 June 2020. It opened in stages: about 500 m on 5 May 2023, 11.9 km to the Divci interchange on 23 December 2023 and the rest on 2 February 2025. Lots are split at the Divci interchange. No cost is recorded: the ministry gives an estimated investment of EUR 278 million for the project, which is not a contract value or outturn.",
+    "ro": "Drum expres de 18,2 km de la A2 Miloš Veliki, la Lajkovac, până la Iverak, la est de Valjevo, construit de China Shandong International în baza unui contract comercial din 10 iunie 2020. A fost deschis etapizat: circa 500 m la 5 mai 2023, 11,9 km până la nodul Divci la 23 decembrie 2023 și restul la 2 februarie 2025. Loturile sunt împărțite la nodul Divci. Nu se înregistrează niciun cost: ministerul indică o investiție estimată de 278 milioane EUR pentru proiect, care nu este nici valoare de contract, nici cost final."
+  },
+  "lots": [
+    {
+      "id": "lajkovac-divci",
+      "name": {
+        "en": "Lajkovac – Divci",
+        "ro": "Lajkovac – Divci"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-06-10",
+        "opened": "2023-12-23"
+      },
+      "lengthKm": 11.9,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-06-10",
+          "note": {
+            "en": "Commercial contract for design and construction signed by the Government of Serbia, JP Putevi Srbije and China Shandong International, directly contracted under an intergovernmental agreement with China.",
+            "ro": "Contract comercial de proiectare și execuție semnat de Guvernul Serbiei, JP Putevi Srbije și China Shandong International, contractat direct în baza unui acord interguvernamental cu China."
+          },
+          "sourceRef": "mgsi-iverak-lajkovac"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2023-05-05",
+          "note": {
+            "en": "The first 500 m, from the Lajkovac interchange to the toll plaza, opened to traffic.",
+            "ro": "Primii 500 m, de la nodul Lajkovac până la bariera de taxare, au fost dați în circulație."
+          },
+          "sourceRef": "mgsi-iverak-lajkovac"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-12-23",
+          "sourceRef": "mgsi-iverak-lajkovac"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Connects to the A2 Miloš Veliki at Lajkovac. The ministry gives 11.9 km from the Lajkovac interchange to the Divci interchange. The drawn centreline measures 11.86 km from the Lajkovac junction; the cut is placed inside the mapped Divci interchange.",
+        "ro": "Se leagă de A2 Miloš Veliki la Lajkovac. Ministerul indică 11,9 km de la nodul Lajkovac la nodul Divci. Axa desenată măsoară 11,86 km de la intersecția Lajkovac; tăietura este plasată în interiorul nodului Divci cartografiat."
+      },
+      "sourceRefs": [
+        "mgsi-iverak-lajkovac",
+        "osm-iverak-lajkovac"
+      ],
+      "geometryRef": "lajkovac-divci"
+    },
+    {
+      "id": "divci-iverak",
+      "name": {
+        "en": "Divci – Iverak",
+        "ro": "Divci – Iverak"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-06-10",
+        "opened": "2025-02-02"
+      },
+      "lengthKm": 5.76,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-06-10",
+          "note": {
+            "en": "Commercial contract for the whole Iverak – Lajkovac route, signed 10 June 2020.",
+            "ro": "Contract comercial pentru întregul traseu Iverak – Lajkovac, semnat la 10 iunie 2020."
+          },
+          "sourceRef": "mgsi-iverak-lajkovac"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-02-02",
+          "note": {
+            "en": "The section from the Divci interchange to Iverak opened, completing the 18.2 km route.",
+            "ro": "Sectorul de la nodul Divci la Iverak a fost deschis, finalizând traseul de 18,2 km."
+          },
+          "sourceRef": "mgsi-iverak-lajkovac"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Shandong International Economic and Technical Cooperation Group",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The ministry gives no separate length for this section. Length measured from OpenStreetMap geometry. The drawn route ends at the mapped Iverak junction, so the two lots total 17.66 km against the ministry's 18.2 km for the whole route.",
+        "ro": "Ministerul nu indică o lungime separată pentru acest sector. Lungime măsurată din geometria OpenStreetMap. Traseul desenat se oprește la intersecția Iverak cartografiată, așa că cele două loturi însumează 17,66 km față de 18,2 km indicați de minister pentru întregul traseu."
+      },
+      "sourceRefs": [
+        "mgsi-iverak-lajkovac",
+        "osm-iverak-lajkovac"
+      ],
+      "geometryRef": "divci-iverak"
+    }
+  ],
+  "operator": "rs-putevi-srbije",
+  "sources": [
+    {
+      "id": "mgsi-iverak-lajkovac",
+      "title": "Ministry of Construction, Transport and Infrastructure: Izgradnja brze saobraćajnice Iverak – Lajkovac (status, stages and commercial contract of 10.06.2020)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-brze-saobracajnice-iverak-lajkovac",
+      "publisher": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-iverak-lajkovac",
+      "title": "OpenStreetMap contributors: trunk ways of the Iverak – Lajkovac expressway (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

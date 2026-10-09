@@ -1,0 +1,112 @@
+{
+  "id": "rs-novi-sad-bypass-bridge",
+  "country": "rs",
+  "category": "bridge",
+  "name": {
+    "en": "Novi Sad bypass with Danube bridge (state road IIA-111)",
+    "ro": "Ocolitoarea Novi Sad cu pod peste Dunăre (drumul de stat IIA-111)"
+  },
+  "description": {
+    "en": "New Danube crossing at Novi Sad, continuing Bulevar Evrope (state road IIA-111) south to Sremska Kamenica and state road IIA-119. Built by China Road and Bridge Corporation under a direct contract based on an agreement between the Serbian and Chinese governments. Phase 1 is a 2.40 km elevated bridge structure with 1.45 km of lanes, collector streets and ramps; phase 2 is a link to the Novi Sad–Ruma expressway (Fruškogorski koridor).",
+    "ro": "Pod nou peste Dunăre la Novi Sad, care prelungește Bulevar Evrope (drumul de stat IIA-111) spre sud, până la Sremska Kamenica și drumul de stat IIA-119. Construit de China Road and Bridge Corporation printr-un contract direct bazat pe un acord între guvernele Serbiei și Chinei. Faza 1 este o structură de pod de 2,40 km deasupra terenului, cu 1,45 km de benzi, străzi colectoare și rampe; faza 2 este legătura cu drumul expres Novi Sad–Ruma (Fruškogorski koridor)."
+  },
+  "lots": [
+    {
+      "id": "phase-1-bridge",
+      "name": {
+        "en": "Phase 1: Danube bridge and elevated structure",
+        "ro": "Faza 1: podul peste Dunăre și structura de pod"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-03-22"
+      },
+      "lengthKm": 2.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 175.5,
+              "currency": "EUR",
+              "year": 2022,
+              "scope": "works",
+              "note": "Contracted value of works as stated by the ministry; VAT treatment is not stated."
+            },
+            "date": "2022-03-22",
+            "note": "The ministry gives the value without a date; it is placed at the commercial contract date. Annexes followed on 13 August 2024 and 15 October 2024, and the page does not say whether they changed the value.",
+            "sourceRef": "mgsi-novi-sad-bypass"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "15% of the investment from the Serbian budget.",
+            "ro": "15% din investiție din bugetul Serbiei."
+          },
+          "coFinancingRate": 0.15
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "85% from a loan under a loan agreement with the Export-Import Bank of China.",
+            "ro": "85% dintr-un credit în baza unui contract de împrumut cu Export-Import Bank of China."
+          },
+          "coFinancingRate": 0.85
+        }
+      ],
+      "contractors": [
+        {
+          "name": "China Road and Bridge Corporation",
+          "role": "builder"
+        },
+        {
+          "name": "China Road and Bridge Corporation",
+          "role": "designer"
+        },
+        {
+          "name": "MHM Projekt",
+          "role": "designer"
+        },
+        {
+          "name": "DB Inženjering",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 175.5,
+          "currency": "EUR",
+          "year": 2022,
+          "scope": "works",
+          "note": "Contracted value of works as stated by the ministry; VAT treatment is not stated."
+        }
+      },
+      "note": {
+        "en": "Commercial contract no. 401-00-467/2022-01 of 22 March 2022 (Belgrade branch of CRBC), with annexes of 13 August 2024 and 15 October 2024. Phase 1 per the ministry: 2.40 km of bridge structure above ground linking to IIA-119, plus 0.65 km of lanes beneath it, 0.6 km of collector streets and 0.2 km of ramps (3.85 km in total). lengthKm is the 2.40 km structure; the OpenStreetMap carriageway drawn here is 2.18 km. The ministry reports piles and pile caps done, with cofferdams, columns and column heads of the main bridge in progress, and physical progress of 7%; it gives no date for the start of works. The building permit exists for the main bridge (the ministry's section 1, stage 1) and is being obtained for the elevated section from Bulevar Evrope to the main bridge (stage 2). The 175.5 million EUR is the ministry's contracted value of works and it does not say whether it covers phase 2.",
+        "ro": "Contract comercial nr. 401-00-467/2022-01 din 22 martie 2022 (sucursala din Belgrad a CRBC), cu acte adiționale din 13 august 2024 și 15 octombrie 2024. Faza 1 conform ministerului: 2,40 km de structură de pod deasupra terenului, legată de IIA-119, plus 0,65 km de benzi dedesubt, 0,6 km de străzi colectoare și 0,2 km de rampe (3,85 km în total). lengthKm este structura de 2,40 km; calea de rulare OpenStreetMap desenată aici are 2,18 km. Ministerul raportează piloții și grinzile de capăt terminate, iar batardourile, stâlpii și grinzile de stâlp ale podului principal în lucru, cu un grad de realizare fizică de 7%; nu indică data începerii lucrărilor. Autorizația de construire există pentru podul principal (secțiunea 1, etapa 1 a ministerului) și este în curs de obținere pentru secțiunea de la Bulevar Evrope la podul principal (etapa 2). Cei 175,5 milioane EUR sunt valoarea contractată a lucrărilor, iar ministerul nu spune dacă include faza 2."
+      },
+      "sourceRefs": [
+        "mgsi-novi-sad-bypass",
+        "osm-novi-sad-bypass"
+      ],
+      "geometryRef": "phase-1-bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mgsi-novi-sad-bypass",
+      "title": "MGSI: Obilaznica oko Novog Sada sa mostom preko Dunava na trasi državnog puta IIA reda br. 111",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/obilaznica-oko-novog-sada-sa-mostom-preko-dunava-na-trasi-drzavnog-puta-iia-reda-br111",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-novi-sad-bypass",
+      "title": "OpenStreetMap contributors: IIA-111 bridge (highway=construction) and approach ways (ODbL)",
+      "url": "https://www.openstreetmap.org/way/385737033",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}
