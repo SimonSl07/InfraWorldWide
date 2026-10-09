@@ -1,0 +1,182 @@
+{
+  "id": "rs-beogradska-obilaznica",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "Belgrade Bypass (A1, E70/E75)",
+    "ro": "Ocolitoarea Belgradului (A1, E70/E75)"
+  },
+  "description": {
+    "en": "The A1 motorway ring road west and south of Belgrade, from Batajnica through the A3 junction at Dobanovci, the Surčin interchange with the A2 and the Ostružnica bridge over the Sava, to Bubanj Potok. Sector A opened in 2012. Sector B, 37.2 km, was built in stages from 2005; its last 19.5 km (sectors 4–6 in the ministry's numbering, built by PowerChina) have been in traffic since 29 June 2023. Sector C (Bubanj Potok – Pančevo, about 31 km) is not built and has no fixed route, so it is not drawn here. No outturn cost is recorded: the ministry gives a contract value for sectors 4–6 only.",
+    "ro": "Centura A1 la vest și la sud de Belgrad, de la Batajnica prin nodul cu A3 de la Dobanovci, nodul Surčin cu A2 și podul Ostružnica peste Sava, până la Bubanj Potok. Sectorul A a fost deschis în 2012. Sectorul B, de 37,2 km, a fost construit etapizat din 2005; ultimii săi 19,5 km (sectoarele 4–6 în numerotarea ministerului, construite de PowerChina) sunt în trafic din 29 iunie 2023. Sectorul C (Bubanj Potok – Pančevo, circa 31 km) nu este construit și nu are traseu stabilit, deci nu este desenat aici. Nu se înregistrează niciun cost final: ministerul indică o valoare de contract doar pentru sectoarele 4–6."
+  },
+  "operator": "rs-putevi-srbije",
+  "corridors": [
+    "pan-european-x"
+  ],
+  "lots": [
+    {
+      "id": "sector-a",
+      "name": {
+        "en": "Sector A: Batajnica – Dobanovci",
+        "ro": "Sectorul A: Batajnica – Dobanovci"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012"
+      },
+      "lengthKm": 10.1,
+      "note": {
+        "en": "English Wikipedia gives 10.1 km and an opening in 2012 (year only). The drawn alignment between the Batajnica interchange and the A3 crossing at Dobanovci measures about 7.9 km, so the recorded length may include approaches beyond the cut points; the sourced figure is kept.",
+        "ro": "Wikipedia engleză indică 10,1 km și o deschidere în 2012 (doar anul). Traseul desenat între nodul Batajnica și intersecția cu A3 la Dobanovci măsoară circa 7,9 km, deci lungimea înregistrată poate include porțiuni dincolo de punctele de tăiere; cifra sursei este păstrată."
+      },
+      "sourceRefs": [
+        "en-wikipedia-belgrade-bypass",
+        "osm-belgrade-bypass"
+      ],
+      "geometryRef": "sector-a"
+    },
+    {
+      "id": "dobanovci-ostruznica",
+      "name": {
+        "en": "Sector B, sections 1–3: Dobanovci – Ostružnica",
+        "ro": "Sectorul B, secțiunile 1–3: Dobanovci – Ostružnica"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005"
+      },
+      "lengthKm": 16.8,
+      "note": {
+        "en": "Dobanovci – Surčin (7.8 km), Surčin – Ostružnica bridge (4.9 km) and Ostružnica bridge – Ostružnica (4.1 km, with the 1,950 m Ostružnica bridge), summed from English Wikipedia. The right carriageway opened in 2005 on all three; the left opened in 2016 on the first two and in June 2020 on the third. The Ostružnica interchange is taken as the start of the ministry's sector 4. The drawn length is 14.5 km.",
+        "ro": "Dobanovci – Surčin (7,8 km), Surčin – podul Ostružnica (4,9 km) și podul Ostružnica – Ostružnica (4,1 km, cu podul Ostružnica de 1.950 m), însumate din Wikipedia engleză. Calea dreaptă a fost deschisă în 2005 pe toate trei; cea stângă în 2016 pe primele două și în iunie 2020 pe a treia. Nodul Ostružnica este considerat începutul sectorului 4 al ministerului. Lungimea desenată este de 14,5 km."
+      },
+      "sourceRefs": [
+        "en-wikipedia-belgrade-bypass",
+        "osm-belgrade-bypass"
+      ],
+      "geometryRef": "dobanovci-ostruznica"
+    },
+    {
+      "id": "sector-4",
+      "name": {
+        "en": "Sector B, sector 4: Ostružnica – Orlovača",
+        "ro": "Sectorul B, sectorul 4: Ostružnica – Orlovača"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2023-06-29"
+      },
+      "lengthKm": 7,
+      "contractors": [
+        {
+          "name": "Power Construction Corporation of China",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Serbian budget, stated for sectors 4–6 together.",
+            "ro": "Bugetul Serbiei, indicat împreună pentru sectoarele 4–6."
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Loan from the Export-Import Bank of China, stated for sectors 4–6 together.",
+            "ro": "Credit de la Export-Import Bank of China, indicat împreună pentru sectoarele 4–6."
+          }
+        }
+      ],
+      "note": {
+        "en": "Ministry sector 4, from the Ostružnica bridge to the Orlovača interchange, with the Lipak and Železnik tunnels. The ministry gives the whole 19.5 km (sectors 4–6) as in traffic from 29 June 2023, and a contract value of CNY 2.59 billion for it, not split by sector. The ministry's project start of 24 December 2018 is recorded on sector 6 only (see there). English Wikipedia dates the earlier right carriageway to 2008 and the left to April 2021 (7.7 km on its cut).",
+        "ro": "Sectorul 4 al ministerului, de la podul Ostružnica la nodul Orlovača, cu tunelurile Lipak și Železnik. Ministerul indică întregul tronson de 19,5 km (sectoarele 4–6) în trafic din 29 iunie 2023 și o valoare de contract de 2,59 miliarde CNY pentru el, nedefalcată pe sectoare. Începutul proiectului, 24 decembrie 2018, este înregistrat doar la sectorul 6 (vezi acolo). Wikipedia engleză datează calea dreaptă mai veche în 2008 și cea stângă în aprilie 2021 (7,7 km pe tăierea sa)."
+      },
+      "sourceRefs": [
+        "mgsi-obilaznica-sektor-b",
+        "en-wikipedia-belgrade-bypass",
+        "osm-belgrade-bypass"
+      ],
+      "geometryRef": "sector-4"
+    },
+    {
+      "id": "sector-5",
+      "name": {
+        "en": "Sector B, sector 5: Orlovača – Straževica tunnel",
+        "ro": "Sectorul B, sectorul 5: Orlovača – tunelul Straževica"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2023-06-29"
+      },
+      "lengthKm": 3,
+      "contractors": [
+        {
+          "name": "Power Construction Corporation of China",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Ministry sector 5, from the Orlovača interchange to the Straževica tunnel (772 m on English Wikipedia; the lot is drawn to its west portal). The ministry gives the whole 19.5 km (sectors 4–6) as in traffic from 29 June 2023; the contract value is stated for the three sectors together (see sector 4). English Wikipedia dates the earlier right carriageway to 2012 and the left to 15 June 2022.",
+        "ro": "Sectorul 5 al ministerului, de la nodul Orlovača la tunelul Straževica (772 m după Wikipedia engleză; lotul este desenat până la portalul vestic). Ministerul indică întregul tronson de 19,5 km (sectoarele 4–6) în trafic din 29 iunie 2023; valoarea contractului este indicată pentru cele trei sectoare împreună (vezi sectorul 4). Wikipedia engleză datează calea dreaptă mai veche în 2012 și pe cea stângă la 15 iunie 2022."
+      },
+      "sourceRefs": [
+        "mgsi-obilaznica-sektor-b",
+        "en-wikipedia-belgrade-bypass",
+        "osm-belgrade-bypass"
+      ],
+      "geometryRef": "sector-5"
+    },
+    {
+      "id": "sector-6",
+      "name": {
+        "en": "Sector B, sector 6: Straževica tunnel – Bubanj Potok",
+        "ro": "Sectorul B, sectorul 6: tunelul Straževica – Bubanj Potok"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-12-24",
+        "opened": "2023-06-29"
+      },
+      "lengthKm": 9.5,
+      "contractors": [
+        {
+          "name": "Power Construction Corporation of China",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Ministry sector 6, from the Straževica tunnel to Bubanj Potok, with the Avala interchange. The ministry gives the whole 19.5 km (sectors 4–6) as in traffic from 29 June 2023; the contract value is stated for the three sectors together (see sector 4). The ministry gives 24 December 2018 as the project start; this is the one sector built as a full profile under that contract, so it is recorded as the construction start here and not on sectors 4 and 5, whose right carriageways were built earlier. English Wikipedia gives 9.74 km and an opening on 28 June 2023. The drawn length is 8.2 km, ending where the mapped bypass meets the A1 at Bubanj Potok.",
+        "ro": "Sectorul 6 al ministerului, de la tunelul Straževica la Bubanj Potok, cu nodul Avala. Ministerul indică întregul tronson de 19,5 km (sectoarele 4–6) în trafic din 29 iunie 2023; valoarea contractului este indicată pentru cele trei sectoare împreună (vezi sectorul 4). Ministerul indică 24 decembrie 2018 ca început al proiectului; este singurul sector construit în profil complet în acest contract, deci este înregistrat aici ca început al construcției, nu la sectoarele 4 și 5, ale căror căi drepte au fost construite mai devreme. Wikipedia engleză indică 9,74 km și o deschidere la 28 iunie 2023. Lungimea desenată este de 8,2 km, până unde ocolitoarea cartografiată întâlnește A1 la Bubanj Potok."
+      },
+      "sourceRefs": [
+        "mgsi-obilaznica-sektor-b",
+        "en-wikipedia-belgrade-bypass",
+        "osm-belgrade-bypass"
+      ],
+      "geometryRef": "sector-6"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mgsi-obilaznica-sektor-b",
+      "title": "Ministry of Construction, Transport and Infrastructure (MGSI): Izgradnja beogradske obilaznice na auto-putu E-70/E-75, Sektor B, most preko reke Save kod Ostružnice – Bubanj Potok",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-beogradske-obilaznice-na-auto-putu-e-70e-75-sektor-b-most-preko-reke-save-kod",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "en-wikipedia-belgrade-bypass",
+      "title": "Wikipedia (en): Belgrade bypass, section Route",
+      "url": "https://en.wikipedia.org/wiki/Belgrade_bypass",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-belgrade-bypass",
+      "title": "OpenStreetMap contributors: Belgrade bypass geometry (ODbL), A1 motorway ways named Obilaznica oko Beograda",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

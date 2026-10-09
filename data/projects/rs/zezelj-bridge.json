@@ -1,0 +1,84 @@
+{
+  "id": "rs-zezelj-bridge",
+  "country": "rs",
+  "category": "bridge",
+  "name": {
+    "en": "Žeželj Bridge, Novi Sad",
+    "ro": "Podul Žeželj, Novi Sad"
+  },
+  "description": {
+    "en": "Combined road and rail bridge over the Danube at Novi Sad, 474 m long with two road lanes and two railway tracks. It replaced the original Žeželj bridge (1957–1961), destroyed in the NATO bombing of 23 April 1999.",
+    "ro": "Pod rutier și feroviar peste Dunăre la Novi Sad, lung de 474 m, cu două benzi de circulație rutieră și două linii de cale ferată. Înlocuiește podul Žeželj original (1957–1961), distrus în bombardamentul NATO din 23 aprilie 1999."
+  },
+  "lots": [
+    {
+      "id": "zezelj-bridge",
+      "name": {
+        "en": "Žeželj road–rail bridge",
+        "ro": "Podul rutier și feroviar Žeželj"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2012-04",
+        "opened": "2018-04"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2018-04",
+          "note": {
+            "en": "Rail traffic began.",
+            "ro": "A început traficul feroviar."
+          },
+          "sourceRef": "wikipedia-zezelj-bridge"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-09-01",
+          "note": {
+            "en": "Road traffic began.",
+            "ro": "A început traficul rutier."
+          },
+          "sourceRef": "wikipedia-zezelj-bridge"
+        }
+      ],
+      "lengthKm": 0.474,
+      "contractors": [
+        {
+          "name": "Azvi – Taddei – Horta Coslada",
+          "role": "builder"
+        },
+        {
+          "name": "Aleksandar Bojović",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Works officially started in April 2012. Rail traffic began in April 2018 and road traffic on 1 September 2018. The opening date is the first public traffic, the rail opening. Expenditure of EUR 51.71M as of October 2017 is spent to date, not a final cost. Aleksandar Bojović is named as the main designer and an international joint venture of Azvi, Taddei and Horta Coslada as the contractor. The Stara Pazova–Novi Sad lot of the Belgrade–Subotica railway already crosses the Danube on this bridge, so its kilometres are counted there and not again here.",
+        "ro": "Lucrările au început oficial în aprilie 2012. Traficul feroviar a început în aprilie 2018, iar cel rutier la 1 septembrie 2018. Data deschiderii este cea a primului trafic public, deschiderea feroviară. Cheltuielile de 51,71 milioane EUR până în octombrie 2017 sunt cheltuieli efectuate până la acea dată, nu costul final. Aleksandar Bojović este numit proiectant principal, iar un consorțiu internațional format din Azvi, Taddei și Horta Coslada, constructor. Lotul Stara Pazova–Novi Sad al căii ferate Belgrad–Subotica traversează deja Dunărea pe acest pod, deci kilometrii lui sunt numărați acolo și nu din nou aici."
+      },
+      "sourceRefs": [
+        "wikipedia-zezelj-bridge",
+        "osm-zezelj-bridge"
+      ],
+      "partOf": "rs-beograd-subotica",
+      "geometryRef": "zezelj-bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-zezelj-bridge",
+      "title": "Wikipedia: Žeželj Bridge",
+      "url": "https://en.wikipedia.org/wiki/%C5%BDe%C5%BEelj_Bridge",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-zezelj-bridge",
+      "title": "OpenStreetMap: way 365820355, Нови Жежељев мост (ODbL)",
+      "url": "https://www.openstreetmap.org/way/365820355",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

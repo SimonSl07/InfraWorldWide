@@ -1,0 +1,101 @@
+{
+  "id": "rs-backa-palanka-bridge",
+  "country": "rs",
+  "category": "bridge",
+  "name": {
+    "en": "Danube bridge at Bačka Palanka",
+    "ro": "Podul peste Dunăre la Bačka Palanka"
+  },
+  "description": {
+    "en": "Bridge over the Danube between Bačka Palanka and Neštin with access roads, part of state road IB-19 (M-18). It has two traffic lanes and two footpaths, 12 m wide in total. Contracted with Centunion S.A. of Spain under an intergovernmental agreement.",
+    "ro": "Pod peste Dunăre între Bačka Palanka și Neštin, cu drumuri de acces, parte din drumul de stat IB-19 (M-18). Are două benzi de circulație și două trotuare, cu o lățime totală de 12 m. Contractat cu Centunion S.A. din Spania în baza unui acord interguvernamental."
+  },
+  "lots": [
+    {
+      "id": "bridge-and-access-roads",
+      "name": {
+        "en": "Bridge and access roads",
+        "ro": "Podul și drumurile de acces"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-12-30"
+      },
+      "lengthKm": 3.35223,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 129.93,
+              "currency": "EUR",
+              "year": 2025,
+              "scope": "works",
+              "note": "Accepted contract amount excluding VAT, customs and import duties."
+            },
+            "date": "2025-12-30",
+            "sourceRef": "mgsi-backa-palanka-bridge"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Serbian budget. Financing starts in 2026 with 5 million EUR.",
+            "ro": "Bugetul Serbiei. Finanțarea începe în 2026 cu 5 milioane EUR."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Centunion S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 129.93,
+          "currency": "EUR",
+          "year": 2025,
+          "scope": "works",
+          "note": "Accepted contract amount excluding VAT, customs and import duties."
+        }
+      },
+      "note": {
+        "en": "Commercial contract of 30 December 2025 between the financier, the investor and the contractor, for design and construction. Designed route 3,352.23 m including a 1,856.04 m bridge (Bačka Palanka approach viaduct, main bridge over the navigation channel, Neštin approach viaduct). Contract amount 129,932,416.81 EUR: phase 1 (design, preparatory works, piling and foundations) 21,052,631.61 EUR, paid net 20,000,000.00 EUR after a retention deposit, starting within 35 days of the contract taking effect; phase 2 (all remaining works) 108,879,785.20 EUR, starting once the contractor receives the advance payment. Completion: phase 1 24 months, phase 2 30 months. The ministry shows the status as implementation under way but gives no start date for works, so the lot stays tendered. In OpenStreetMap the crossing is mapped as proposed road ref 19, with 1.27 km tagged as bridge; the drawn route is 3.34 km.",
+        "ro": "Contract comercial din 30 decembrie 2025 între finanțator, investitor și constructor, pentru proiectare și execuție. Traseul proiectat are 3.352,23 m, inclusiv un pod de 1.856,04 m (viaduct de acces dinspre Bačka Palanka, podul principal peste canalul navigabil, viaduct de acces dinspre Neštin). Valoarea contractului este 129.932.416,81 EUR: faza 1 (proiectare, lucrări pregătitoare, piloți și fundații) 21.052.631,61 EUR, plătită net 20.000.000,00 EUR după reținerea unui depozit, cu începere în 35 de zile de la intrarea în vigoare a contractului; faza 2 (toate lucrările rămase) 108.879.785,20 EUR, cu începere după ce constructorul primește avansul. Termen: faza 1 24 de luni, faza 2 30 de luni. Ministerul indică starea ca implementare în curs, dar nu dă o dată de începere a lucrărilor, deci lotul rămâne tendered. În OpenStreetMap traversarea este cartografiată ca drum proiectat cu ref 19, cu 1,27 km etichetați ca pod; traseul desenat are 3,34 km."
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-12-30",
+          "note": {
+            "en": "Commercial contract signed, direct contracting under an intergovernmental agreement with Spain.",
+            "ro": "Contract comercial semnat, contractare directă în baza unui acord interguvernamental cu Spania."
+          },
+          "sourceRef": "mgsi-backa-palanka-bridge"
+        }
+      ],
+      "sourceRefs": [
+        "mgsi-backa-palanka-bridge",
+        "osm-backa-palanka-bridge"
+      ],
+      "geometryRef": "bridge-and-access-roads"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mgsi-backa-palanka-bridge",
+      "title": "MGSI: Projekat izgradnje mosta sa pristupnim saobraćajnicama na reci Dunav kod Bačke Palanke",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/projekat-izgradnje-mosta-sa-pristupnim-saobracajnicama-na-reci-dunav-kod-backe-palanke",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-backa-palanka-bridge",
+      "title": "OpenStreetMap contributors: proposed road ref 19 across the Danube at Bačka Palanka (ODbL)",
+      "url": "https://www.openstreetmap.org/way/292585823",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}
