@@ -58,6 +58,7 @@ const DEFLATOR_GEO: Record<string, string> = {
   BGN: "BG",
   CZK: "CZ",
   EUR: "EA",
+  PLN: "PL",
   RON: "RO",
   RSD: "RS",
 };
@@ -67,7 +68,7 @@ const NOT_REFETCHED: Record<string, string> = {
 };
 
 /** Currencies the ECB quotes. RSD is not one of them. */
-const ECB_CURRENCIES = ["BGN", "CZK", "RON", "USD"];
+const ECB_CURRENCIES = ["BGN", "CZK", "PLN", "RON", "USD"];
 
 /**
  * Years left out of a series on purpose, with the reason from the file's own

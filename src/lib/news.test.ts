@@ -221,6 +221,15 @@ describe("hasInfrastructureKeyword", () => {
     expect(
       hasInfrastructureKeyword("Úsek rýchlostnej cesty R2 pri Zvolene"),
     ).toBe(true);
+    expect(hasInfrastructureKeyword("Otwarto odcinek autostrady A1")).toBe(
+      true,
+    );
+    expect(
+      hasInfrastructureKeyword("Droga ekspresowa S7: nowy węzeł i obwodnica"),
+    ).toBe(true);
+    expect(hasInfrastructureKeyword("Tunel pod Świną i most w Łodzi")).toBe(
+      true,
+    );
     expect(hasInfrastructureKeyword("Controalele ANAF se înmulțesc")).toBe(
       false,
     );

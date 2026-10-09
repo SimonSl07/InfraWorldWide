@@ -1,0 +1,1080 @@
+{
+  "id": "pl-a4",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "A4 motorway (Jędrzychowice – Wrocław – Katowice – Kraków – Rzeszów – Korczowa)",
+    "ro": "Autostrada A4 (Jędrzychowice – Wrocław – Katowice – Kraków – Rzeszów – Korczowa)"
+  },
+  "description": {
+    "en": "Poland's southern east–west motorway from the German border at Jędrzychowice to the Ukrainian border at Korczowa, 667 km per pl.wikipedia. The oldest parts are pre-war Reichsautobahn sections between Krzyżowa and Wrocław (1936–1937); Katowice – Kraków was built from 1976 to 1991 and has been run since 1997 under a toll concession by Stalexport Autostrada Małopolska S.A. that ends on 15 March 2027. Wrocław – Katowice opened in stages from 2000 to 2005, Zgorzelec – Krzyżowa and Kraków – Targowisko in 2009, and Targowisko – Korczowa between 2012 and 2016. Lots follow the pl.wikipedia sections table and opening lists; contract values are given only where the source states them, and gross figures are marked as including VAT.",
+    "ro": "Autostrada sudică est–vest a Poloniei de la granița cu Germania la Jędrzychowice până la granița cu Ucraina la Korczowa, 667 km conform pl.wikipedia. Cele mai vechi părți sunt secțiuni Reichsautobahn dinainte de război între Krzyżowa și Wrocław (1936–1937); Katowice – Kraków a fost construită între 1976 și 1991 și este exploatată din 1997 în regim de concesiune cu taxă de Stalexport Autostrada Małopolska S.A., care se încheie la 15 martie 2027. Wrocław – Katowice a fost deschisă pe etape între 2000 și 2005, Zgorzelec – Krzyżowa și Kraków – Targowisko în 2009, iar Targowisko – Korczowa între 2012 și 2016. Loturile urmează tabelul secțiunilor și listele de deschideri din pl.wikipedia; valorile contractelor sunt date doar unde sursa le indică, iar cifrele brute sunt marcate ca incluzând TVA."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-09",
+  "lots": [
+    {
+      "id": "jedrzychowice-krzyzowa",
+      "name": {
+        "en": "Jędrzychowice (border) – Zgorzelec – Krzyżowa",
+        "ro": "Jędrzychowice (graniță) – Zgorzelec – Krzyżowa"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-04-10",
+        "opened": "2009-08-14"
+      },
+      "lengthKm": 51.4,
+      "events": [
+        {
+          "kind": "tender_cancelled",
+          "date": "2005-09-15",
+          "note": {
+            "en": "First tender cancelled.",
+            "ro": "Prima licitație a fost anulată."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "tender_cancelled",
+          "date": "2005-12-15",
+          "note": {
+            "en": "Second tender, announced on 8 December 2005, cancelled a week later.",
+            "ro": "A doua licitație, anunțată la 8 decembrie 2005, a fost anulată o săptămână mai târziu."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2007-04-10",
+          "note": {
+            "en": "Works start date given on pl.wikipedia; contractors took over the sites on 3 April 2007.",
+            "ro": "Data începerii lucrărilor din pl.wikipedia; constructorii au preluat șantierele la 3 aprilie 2007."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-08-14",
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "One contract of 51.4 km: 1.7 km from the border at Jędrzychowice to the Zgorzelec junction strengthened (open since 15 July 1994 for freight and 1 August 1996 for cars) and 49.7 km of new motorway in two parts (20.3 and 29.4 km). Three tenders were cancelled (15 September 2005, 15 December 2005 and February 2006); the fourth was announced on 9 March 2006 and its offers were opened on 24 July 2006; the building permit was issued on 27 March 2007. The deadline was 19 months from 10 April 2007 (November 2008), extended by annex to 27 months (July 2009). Contractor and contract value are not given in the source. The drawn line is 49.51 km and starts at the first mapped motorway vertex near the border.",
+        "ro": "Un singur contract de 51,4 km: 1,7 km de la graniță la Jędrzychowice până la nodul Zgorzelec consolidați (în circulație din 15 iulie 1994 pentru marfă și din 1 august 1996 pentru autoturisme) și 49,7 km de autostradă nouă în două părți (20,3 și 29,4 km). Trei licitații au fost anulate (15 septembrie 2005, 15 decembrie 2005 și februarie 2006); a patra a fost anunțată la 9 martie 2006, iar ofertele au fost deschise la 24 iulie 2006; autorizația de construire a fost emisă la 27 martie 2007. Termenul era de 19 luni de la 10 aprilie 2007 (noiembrie 2008), prelungit prin act adițional la 27 de luni (iulie 2009). Constructorul și valoarea contractului nu sunt indicate în sursă. Linia desenată are 49,51 km și începe la primul vârf cartografiat lângă graniță."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jedrzychowice-krzyzowa"
+    },
+    {
+      "id": "krzyzowa-bielany-wroclawskie",
+      "name": {
+        "en": "Krzyżowa – Legnica – Bielany Wrocławskie",
+        "ro": "Krzyżowa – Legnica – Bielany Wrocławskie"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1937-10-17"
+      },
+      "lengthKm": 99,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1936-09-27",
+          "note": {
+            "en": "Krzywa – Legnica and Legnica – Bielany Wrocławskie opened (Reichsautobahn).",
+            "ro": "Krzywa – Legnica și Legnica – Bielany Wrocławskie deschise (Reichsautobahn)."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "1937-10-17",
+          "note": {
+            "en": "Golnice – Krzyżowa – Krzywa opened.",
+            "ro": "Golnice – Krzyżowa – Krzywa deschis."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Pre-war Reichsautobahn (RAB 9), the oldest motorway in the corridor. Krzywa – Legnica (20.5 km) and Legnica – Wrocław (70.8 km) opened on 27 September 1936 and Golnice – Krzyżowa – Krzywa (17 km, now partly A18) on 17 October 1937. The surface was modernised in 2005–2006 without widening or emergency lanes (110 km/h limit); pl.wikipedia says a rebuild to three lanes plus a hard shoulder in the Wrocław area is expected in 2028–2030. The length of 99 km is from the sections table; the drawn line is 103.19 km.",
+        "ro": "Reichsautobahn dinainte de război (RAB 9), cea mai veche autostradă din coridor. Krzywa – Legnica (20,5 km) și Legnica – Wrocław (70,8 km) au fost deschise la 27 septembrie 1936, iar Golnice – Krzyżowa – Krzywa (17 km, în parte azi A18) la 17 octombrie 1937. Îmbrăcămintea a fost modernizată în 2005–2006 fără lărgire și fără benzi de urgență (limită 110 km/h); pl.wikipedia indică o reconstrucție la trei benzi plus banda de urgență în zona Wrocław în 2028–2030. Lungimea de 99 km provine din tabelul secțiunilor; linia desenată are 103,19 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krzyzowa-bielany-wroclawskie"
+    },
+    {
+      "id": "bielany-nogowczyce",
+      "name": {
+        "en": "Bielany Wrocławskie – Opole – Nogowczyce (Strzelce Opolskie)",
+        "ro": "Bielany Wrocławskie – Opole – Nogowczyce (Strzelce Opolskie)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2001-07-26"
+      },
+      "lengthKm": 125.2,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2000-09-30",
+          "note": {
+            "en": "Przylesie – Prądy, 28.7 km.",
+            "ro": "Przylesie – Prądy, 28,7 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2000-12-16",
+          "note": {
+            "en": "Bielany Wrocławskie – Przylesie (40.7 km) and Prądy – Dąbrówka (21.4 km).",
+            "ro": "Bielany Wrocławskie – Przylesie (40,7 km) și Prądy – Dąbrówka (21,4 km)."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2001-07-26",
+          "note": {
+            "en": "Dąbrówka – Nogowczyce, 34.4 km.",
+            "ro": "Dąbrówka – Nogowczyce, 34,4 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Length is the sum of four sections (40.7 + 28.7 + 21.4 + 34.4 km) from the pl.wikipedia opening list. Some stretches of the Wrocław – Brzeg and Ujazd – Gliwice corridors had been built as single carriageways before 1945, and a 16 km dual-carriageway piece from the Opole (Prądy) junction west to the Nysa Kłodzka bridge opened in 1999; the lot opened as a full motorway when the last section opened on 26 July 2001. Drawn length 124.30 km.",
+        "ro": "Lungimea este suma a patru secțiuni (40,7 + 28,7 + 21,4 + 34,4 km) din lista deschiderilor de pe pl.wikipedia. Unele porțiuni din coridoarele Wrocław – Brzeg și Ujazd – Gliwice fuseseră construite cu o singură platformă înainte de 1945, iar o porțiune cu două platforme de 16 km de la nodul Opole (Prądy) spre vest până la podul peste Nysa Kłodzka a fost deschisă în 1999; lotul a devenit autostradă completă când s-a deschis ultima secțiune, la 26 iulie 2001. Lungime desenată 124,30 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bielany-nogowczyce"
+    },
+    {
+      "id": "nogowczyce-murckowska",
+      "name": {
+        "en": "Nogowczyce – Gliwice – Chorzów – Katowice Murckowska",
+        "ro": "Nogowczyce – Gliwice – Chorzów – Katowice Murckowska"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-10-28"
+      },
+      "lengthKm": 61.4,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1996-10-30",
+          "note": {
+            "en": "Katowice Francuska – Katowice Murckowska, 2.3 km.",
+            "ro": "Katowice Francuska – Katowice Murckowska, 2,3 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1999-11-10",
+          "note": {
+            "en": "Katowice Mikołowska – Katowice Francuska, about 2 km.",
+            "ro": "Katowice Mikołowska – Katowice Francuska, circa 2 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2001-11-30",
+          "note": {
+            "en": "Chorzów Batory – Katowice Mikołowska, 4.4 km.",
+            "ro": "Chorzów Batory – Katowice Mikołowska, 4,4 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2003-12-04",
+          "note": {
+            "en": "Nogowczyce – Kleszczów, 17.9 km.",
+            "ro": "Nogowczyce – Kleszczów, 17,9 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2005-01-25",
+          "note": {
+            "en": "Gliwice Sośnica – Chorzów Batory, 15.7 km.",
+            "ro": "Gliwice Sośnica – Chorzów Batory, 15,7 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-10-28",
+          "note": {
+            "en": "Kleszczów – Gliwice Sośnica, 19.1 km.",
+            "ro": "Kleszczów – Gliwice Sośnica, 19,1 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Length is the sum of six sections from the pl.wikipedia opening list (17.9 + 19.1 + 15.7 + 4.4 + about 2 + 2.3 km). The Katowice Murckowska – Mikołowska piece (3.5 km) was signposted DK93 in the 1980s and 1990s. Sections opened between 1996 and 2005; the lot is complete from 28 October 2005. Drawn length 61.37 km. The Gliwice Sośnica junction is the A1 interchange; A1 is a separate project.",
+        "ro": "Lungimea este suma a șase secțiuni din lista deschiderilor de pe pl.wikipedia (17,9 + 19,1 + 15,7 + 4,4 + circa 2 + 2,3 km). Porțiunea Katowice Murckowska – Mikołowska (3,5 km) a fost semnalizată DK93 în anii 1980 și 1990. Secțiunile au fost deschise între 1996 și 2005; lotul este complet din 28 octombrie 2005. Lungime desenată 61,37 km. Nodul Gliwice Sośnica este intersecția cu A1; A1 este un proiect separat."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nogowczyce-murckowska"
+    },
+    {
+      "id": "murckowska-balice",
+      "name": {
+        "en": "Katowice Murckowska – Chrzanów – Balice I (Stalexport concession)",
+        "ro": "Katowice Murckowska – Chrzanów – Balice I (concesiunea Stalexport)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1976",
+        "opened": "1996-10-30"
+      },
+      "lengthKm": 61,
+      "contractors": [
+        {
+          "name": "Stalexport Autostrada Małopolska S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1976",
+          "note": {
+            "en": "Works began from the Kraków side towards Chrzanów; between Katowice and Mysłowice in 1979.",
+            "ro": "Lucrările au început dinspre Kraków spre Chrzanów; între Katowice și Mysłowice în 1979."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1983-01-03",
+          "note": {
+            "en": "Chrzanów I – Balice I, 29.1 km, without junctions.",
+            "ro": "Chrzanów I – Balice I, 29,1 km, fără noduri."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1986-11-22",
+          "note": {
+            "en": "Jaworzno-Byczyna – Chrzanów I, 6 km.",
+            "ro": "Jaworzno-Byczyna – Chrzanów I, 6 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1990-11-29",
+          "note": {
+            "en": "Northern carriageway Mysłowice – Jaworzno-Byczyna, 18.8 km.",
+            "ro": "Platforma nordică Mysłowice – Jaworzno-Byczyna, 18,8 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1991-09-04",
+          "note": {
+            "en": "Southern carriageway Mysłowice – Jaworzno-Byczyna, 18.8 km.",
+            "ro": "Platforma sudică Mysłowice – Jaworzno-Byczyna, 18,8 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "1996-10-30",
+          "note": {
+            "en": "Katowice Murckowska – Mysłowice, 6.3 km.",
+            "ro": "Katowice Murckowska – Mysłowice, 6,3 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Tolled concession section of Stalexport Autostrada Małopolska S.A.: the concession agreement was signed on 19 September 1997 and runs to 15 March 2027 (61 km, per the operator's homepage), after which the road reverts to GDDKiA. It was built from east to west with state money as national road A4 between 1976 and 1991 and adapted to tolling in the 1990s. GDDKiA splits it into Murckowska – Byczyna (25.2 km) and Byczyna – Balice I (34.5 km). The concessionaire is listed as such, not as the builder. Drawn length 60.99 km.",
+        "ro": "Secțiune concesionată cu taxă a Stalexport Autostrada Małopolska S.A.: contractul de concesiune a fost semnat la 19 septembrie 1997 și durează până la 15 martie 2027 (61 km, conform paginii operatorului), după care drumul revine la GDDKiA. A fost construită dinspre est spre vest din bani de stat ca drum național A4 între 1976 și 1991 și adaptată pentru taxare în anii 1990. GDDKiA o împarte în Murckowska – Byczyna (25,2 km) și Byczyna – Balice I (34,5 km). Concesionarul este înregistrat ca atare, nu ca antreprenor. Lungime desenată 60,99 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "stalexport-autostrady",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "murckowska-balice"
+    },
+    {
+      "id": "balice-krakow-wielicka",
+      "name": {
+        "en": "Balice I – Kraków southern bypass – Kraków Wieliczka",
+        "ro": "Balice I – ocolitoarea de sud a orașului Kraków – Kraków Wieliczka"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003-09-03"
+      },
+      "lengthKm": 24,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1988-12-08",
+          "note": {
+            "en": "Balice I – Kraków Tyniecka, 7.4 km.",
+            "ro": "Balice I – Kraków Tyniecka, 7,4 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1993",
+          "note": {
+            "en": "Kraków Tyniecka – Sidzina, 4 km.",
+            "ro": "Kraków Tyniecka – Sidzina, 4 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1995-10-27",
+          "note": {
+            "en": "Sidzina – Opatkowice, 4.7 km.",
+            "ro": "Sidzina – Opatkowice, 4,7 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2002-12-19",
+          "note": {
+            "en": "Two carriageways for 5.9 km from ul. Kąpielowa, then the southern carriageway for 1.1 km to Kraków Wielicka.",
+            "ro": "Două platforme pe 5,9 km de la ul. Kąpielowa, apoi platforma sudică pe 1,1 km până la Kraków Wielicka."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2003-09-03",
+          "note": {
+            "en": "Northern carriageway to Kraków Wielicka, 1.1 km.",
+            "ro": "Platforma nordică până la Kraków Wielicka, 1,1 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Southern bypass of Kraków (Balice – Tyniecka – Sidzina – Opatkowice – Wielicka), 24 km per the sections table, built in pieces from 1988 and signposted as motorway in 2002. The Stalexport concession section ends at Balice, just before the Balice I junction. Drawn length 23.05 km.",
+        "ro": "Ocolitoarea de sud a orașului Kraków (Balice – Tyniecka – Sidzina – Opatkowice – Wielicka), 24 km conform tabelului secțiunilor, construită pe tronsoane din 1988 și semnalizată ca autostradă în 2002. Secțiunea concesionată Stalexport se încheie la Balice, chiar înainte de nodul Balice I. Lungime desenată 23,05 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "balice-krakow-wielicka"
+    },
+    {
+      "id": "krakow-wielicka-targowisko",
+      "name": {
+        "en": "Kraków Wieliczka – Targowisko (Szarów)",
+        "ro": "Kraków Wieliczka – Targowisko (Szarów)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-04-03",
+        "constructionStart": "2007-04-27",
+        "opened": "2009-10-28"
+      },
+      "lengthKm": 19.9,
+      "contractors": [
+        {
+          "name": "Dragados S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Polimex-Mostostal S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2006-06-27",
+          "note": {
+            "en": "Tender announced with a 24-month completion term.",
+            "ro": "Licitație anunțată cu termen de execuție de 24 de luni."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2007-04-03",
+          "note": {
+            "en": "Contract signed with Dragados S.A. and Polimex-Mostostal S.A.",
+            "ro": "Contract semnat cu Dragados S.A. și Polimex-Mostostal S.A."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2007-04-27",
+          "note": {
+            "en": "Official start of construction.",
+            "ro": "Începerea oficială a construcției."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-10-28",
+          "note": {
+            "en": "Opened to traffic after 20:00 following conditional approval; ribbon cutting on 29 October.",
+            "ro": "Deschis circulației după ora 20:00, după admitere condiționată; tăierea panglicii la 29 octombrie."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Km 436+000 to 455+900 (19.9 km). Building permit issued on 24 November 2005. 30 bridge structures (15 motorway overpasses, 6 road overpasses, 5 motorway bridges, 1 wildlife crossing, 3 road bridges). The source says the cost reached about PLN 1 billion without a VAT basis or price year, so no cost is recorded. The planned opening date was 29 October 2009.",
+        "ro": "Km 436+000 – 455+900 (19,9 km). Autorizația de construire a fost emisă la 24 noiembrie 2005. 30 de lucrări de artă (15 pasaje autostradă, 6 pasaje rutiere, 5 poduri de autostradă, 1 pasaj pentru animale, 3 poduri rutiere). Sursa menționează un cost de circa 1 miliard PLN fără baza TVA sau anul prețurilor, deci nu se înregistrează niciun cost. Data planificată a deschiderii era 29 octombrie 2009."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krakow-wielicka-targowisko"
+    },
+    {
+      "id": "targowisko-tarnow-polnoc",
+      "name": {
+        "en": "Targowisko – Bochnia – Brzesko – Tarnów Północ",
+        "ro": "Targowisko – Bochnia – Brzesko – Tarnów Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-12-22",
+        "constructionStart": "2010-01-26",
+        "opened": "2013-05-15"
+      },
+      "lengthKm": 56.8,
+      "contractors": [
+        {
+          "name": "Polimex-Mostostal S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Heilit+Woerner",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Poldim",
+          "role": "builder"
+        },
+        {
+          "name": "IMB Podbeskidzie",
+          "role": "builder"
+        },
+        {
+          "name": "Dragados S.A.",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2008-12-22",
+          "note": {
+            "en": "GDDKiA Kraków announced the tenders for Targowisko – Brzesko, Brzesko – Tarnów Mościce and Tarnów Mościce – Tarnów Centrum.",
+            "ro": "GDDKiA Kraków a anunțat licitațiile pentru Targowisko – Brzesko, Brzesko – Tarnów Mościce și Tarnów Mościce – Tarnów Centrum."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2009-12-22",
+          "note": {
+            "en": "Contract for Targowisko – Brzesko signed with Polimex-Mostostal, Doprastav and Metrostav.",
+            "ro": "Contract pentru Targowisko – Brzesko semnat cu Polimex-Mostostal, Doprastav și Metrostav."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2010-01-26",
+          "note": {
+            "en": "Works start on Targowisko – Brzesko.",
+            "ro": "Începerea lucrărilor pe Targowisko – Brzesko."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2011-02-23",
+          "note": {
+            "en": "GDDKiA terminated the Brzesko – Tarnów Mościce contract with NDI S.A. and SB Granit S.A. (signed 5 February 2010), citing the contractor's fault.",
+            "ro": "GDDKiA a reziliat contractul Brzesko – Tarnów Mościce cu NDI S.A. și SB Granit S.A. (semnat la 5 februarie 2010), din vina constructorului."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "resumed",
+          "date": "2011-10-06",
+          "note": {
+            "en": "Works restarted on Brzesko – Tarnów Mościce under a contract signed on 27 September 2011 with Heilit+Woerner, Strabag, Poldim and IMB Podbeskidzie.",
+            "ro": "Lucrările au repornit pe Brzesko – Tarnów Mościce în baza contractului semnat la 27 septembrie 2011 cu Heilit+Woerner, Strabag, Poldim și IMB Podbeskidzie."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-11-29",
+          "note": {
+            "en": "Targowisko – Tarnów Północ, 57 km; between Bochnia and Tarnów Zachód only the northern carriageway.",
+            "ro": "Targowisko – Tarnów Północ, 57 km; între Bochnia și Tarnów Zachód doar platforma nordică."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-12-22",
+          "note": {
+            "en": "Southern carriageway Bochnia – Brzesko.",
+            "ro": "Platforma sudică Bochnia – Brzesko."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-05-15",
+          "note": {
+            "en": "Southern carriageway Brzesko – Tarnów Zachód; the section is open in full profile.",
+            "ro": "Platforma sudică Brzesko – Tarnów Zachód; secțiunea este deschisă în profil complet."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Three contracts: Targowisko – Brzesko (signed 22 December 2009, Polimex-Mostostal, Doprastav, Metrostav), Brzesko – Tarnów Mościce (20.8 km; terminated and completed by the Heilit+Woerner consortium) and Tarnów Mościce – Tarnów Centrum (13.0 km; Dragados S.A., signed 4 January 2010, 24 months). The pl.wikipedia table calls the end junction Tarnów Północ and the history calls it Tarnów Centrum; OSM names it Tarnów Centrum. Contract values are not given in the source. The lot is recorded as opened on 15 May 2013, the date of the last carriageway named in the source. Drawn length 57.30 km.",
+        "ro": "Trei contracte: Targowisko – Brzesko (semnat la 22 decembrie 2009, Polimex-Mostostal, Doprastav, Metrostav), Brzesko – Tarnów Mościce (20,8 km; reziliat și finalizat de consorțiul Heilit+Woerner) și Tarnów Mościce – Tarnów Centrum (13,0 km; Dragados S.A., semnat la 4 ianuarie 2010, 24 de luni). Tabelul pl.wikipedia numește nodul final Tarnów Północ, iar istoricul îl numește Tarnów Centrum; OSM îl numește Tarnów Centrum. Valorile contractelor nu sunt date în sursă. Lotul este înregistrat ca deschis la 15 mai 2013, data ultimei platforme menționate în sursă. Lungime desenată 57,30 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "targowisko-tarnow-polnoc"
+    },
+    {
+      "id": "tarnow-polnoc-debica-wschod",
+      "name": {
+        "en": "Tarnów Północ – Dębica Wschód",
+        "ro": "Tarnów Północ – Dębica Wschód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-07-07",
+        "opened": "2014-10-30"
+      },
+      "lengthKm": 34.8,
+      "contractors": [
+        {
+          "name": "Heilit+Woerner",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 18,
+        "value": {
+          "amount": 981.5,
+          "currency": "PLN",
+          "year": 2013,
+          "note": "GDDKiA states PLN 981.5 million for the completion contract signed 7 May 2013, VAT basis not stated; pl.wikipedia gives the winning offer as over PLN 981 million gross."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1750,
+              "currency": "PLN",
+              "year": 2010,
+              "note": "Including VAT. First contract (SIAC Construction, PBG, Aprivia, Hydrobudowa Polska), terminated 25 July 2012."
+            },
+            "date": "2010-07-07",
+            "sourceRef": "pl-wikipedia-a4"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 981.5,
+              "currency": "PLN",
+              "year": 2013,
+              "note": "Completion contract with Heilit+Woerner and Budimex; GDDKiA states PLN 981.5 million, VAT basis not stated."
+            },
+            "date": "2013-05-07",
+            "sourceRef": "gddkia-a4-tarnow-debica"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2009-06-25",
+          "note": {
+            "en": "GDDKiA Rzeszów announced the tender.",
+            "ro": "GDDKiA Rzeszów a anunțat licitația."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2010-07-07",
+          "note": {
+            "en": "Contract signed with SIAC Construction Ltd., PBG S.A., Aprivia S.A. and Hydrobudowa Polska S.A. after the lowest bidder NDI declined to sign.",
+            "ro": "Contract semnat cu SIAC Construction Ltd., PBG S.A., Aprivia S.A. și Hydrobudowa Polska S.A. după ce ofertantul cel mai ieftin, NDI, a refuzat semnarea."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2012-07-25",
+          "note": {
+            "en": "GDDKiA terminated the contract.",
+            "ro": "GDDKiA a reziliat contractul."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2013-05-07",
+          "note": {
+            "en": "Completion contract signed with Heilit+Woerner and Budimex, 18 months to complete.",
+            "ro": "Contract de finalizare semnat cu Heilit+Woerner și Budimex, 18 luni pentru execuție."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-10-30",
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "The first contract (PLN 1.75 billion gross, 24-month term, signed 7 July 2010) was terminated on 25 July 2012; three bidders competed for the completion, and Heilit+Woerner with Budimex won at over PLN 981 million gross, PLN 140 million below the investor's estimate. The first milestone was the Dębica Wschód junction within 6 months of the works start; finishing works outside the main route continued into mid-2015. The first low bid of PLN 1.34 billion gross by NDI was not signed. Drawn length 34.74 km.",
+        "ro": "Primul contract (1,75 miliarde PLN brut, termen 24 de luni, semnat la 7 iulie 2010) a fost reziliat la 25 iulie 2012; trei ofertanți au concurat pentru finalizare, iar Heilit+Woerner cu Budimex a câștigat cu peste 981 milioane PLN brut, cu 140 milioane PLN sub estimarea investitorului. Prima etapă-cheie era nodul Dębica Wschód în 6 luni de la începerea lucrărilor; lucrările de finisare în afara traseului principal au continuat până la mijlocul lui 2015. Oferta cea mai mică inițială de 1,34 miliarde PLN brut a NDI nu a fost semnată. Lungime desenată 34,74 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "gddkia-a4-tarnow-debica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tarnow-polnoc-debica-wschod"
+    },
+    {
+      "id": "debica-wschod-rzeszow-zachod",
+      "name": {
+        "en": "Dębica Wschód – Rzeszów Zachód",
+        "ro": "Dębica Wschód – Rzeszów Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-05-10",
+        "constructionStart": "2010-06-09",
+        "opened": "2013-10-30"
+      },
+      "lengthKm": 32.75,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24,
+        "value": {
+          "amount": 1730,
+          "currency": "PLN",
+          "year": 2010,
+          "note": "VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1730,
+              "currency": "PLN",
+              "year": 2010,
+              "note": "VAT basis not stated."
+            },
+            "date": "2010-05-10",
+            "sourceRef": "pl-wikipedia-a4"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2009-06-25",
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2010-05-10",
+          "note": {
+            "en": "Contract signed with Budimex S.A.",
+            "ro": "Contract semnat cu Budimex S.A."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2010-06-09",
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-10-30",
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Contract of PLN 1.73 billion with a 24-month term (planned completion May or June 2012); the section opened on 30 October 2013 (GDDKiA gives about PLN 1.7 billion and 43 structures). Drawn length 33.19 km.",
+        "ro": "Contract de 1,73 miliarde PLN cu termen de 24 de luni (finalizare planificată în mai sau iunie 2012); secțiunea a fost deschisă la 30 octombrie 2013 (GDDKiA indică circa 1,7 miliarde PLN și 43 de lucrări de artă). Lungime desenată 33,19 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "gddkia-a4-rzeszow-debica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "debica-wschod-rzeszow-zachod"
+    },
+    {
+      "id": "rzeszow-zachod-wschod",
+      "name": {
+        "en": "Rzeszów Zachód – Rzeszów Północ – Rzeszów Wschód",
+        "ro": "Rzeszów Zachód – Rzeszów Północ – Rzeszów Wschód"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-03-29",
+        "opened": "2013-10-30"
+      },
+      "lengthKm": 10.9,
+      "contractors": [
+        {
+          "name": "Mostostal Warszawa S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Acciona Infraestructuras S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2010-03-29",
+          "note": {
+            "en": "Works start on Rzeszów Północ – Rzeszów Wschód.",
+            "ro": "Începerea lucrărilor pe Rzeszów Północ – Rzeszów Wschód."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-09-10",
+          "note": {
+            "en": "Rzeszów Północ – Rzeszów Wschód opened to traffic; taking-over certificate of 4 July 2012.",
+            "ro": "Rzeszów Północ – Rzeszów Wschód deschis circulației; certificat de preluare din 4 iulie 2012."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-10-30",
+          "note": {
+            "en": "Rzeszów Zachód – Rzeszów Północ, 4 km.",
+            "ro": "Rzeszów Zachód – Rzeszów Północ, 4 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Two contracts. Rzeszów Północ – Rzeszów Wschód: Mostostal Warszawa and Acciona won at PLN 439.5 million (VAT basis not stated); the building permit was issued on 29 December 2009 and the section opened on 10 September 2012. Rzeszów Zachód – Rzeszów Północ: Radko, Autostrada Wschodnia and Punj Lloyd signed on 22 April 2010 for PLN 441.7 million for A4 and the S19 link (A4 part PLN 234.3 million); GDDKiA terminated it at the end of May 2012 for lack of liquidity after 49% of the financial scope, and Budimex signed a completion contract in early 2013 (PLN 183 million per pl.wikipedia, almost PLN 184 million per GDDKiA), with the section opening on 30 October 2013. No value is recorded as a lot cost because the figures cover parts of the lot or the S19 link. The sources give the second section as 6.5, 6.8 and 6.9 km; 10.9 km is 4 + 6.9 from the sections table. Drawn length 10.28 km.",
+        "ro": "Două contracte. Rzeszów Północ – Rzeszów Wschód: Mostostal Warszawa și Acciona au câștigat cu 439,5 milioane PLN (baza TVA nu este precizată); autorizația de construire a fost emisă la 29 decembrie 2009, iar secțiunea a fost deschisă la 10 septembrie 2012. Rzeszów Zachód – Rzeszów Północ: Radko, Autostrada Wschodnia și Punj Lloyd au semnat la 22 aprilie 2010 pentru 441,7 milioane PLN pentru A4 și legătura S19 (partea A4 234,3 milioane PLN); GDDKiA a reziliat contractul la sfârșitul lui mai 2012 din lipsă de lichiditate, după 49% din obiectul financiar, iar Budimex a semnat la începutul lui 2013 un contract de finalizare (183 milioane PLN conform pl.wikipedia, aproape 184 milioane PLN conform GDDKiA), secțiunea fiind deschisă la 30 octombrie 2013. Nicio valoare nu este înregistrată drept cost al lotului, deoarece cifrele acoperă părți din lot sau legătura S19. Sursele dau a doua secțiune ca 6,5, 6,8 și 6,9 km; 10,9 km este 4 + 6,9 din tabelul secțiunilor. Lungime desenată 10,28 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "gddkia-a4-rzeszow-debica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rzeszow-zachod-wschod"
+    },
+    {
+      "id": "rzeszow-wschod-jaroslaw-zachod",
+      "name": {
+        "en": "Rzeszów Wschód – Jarosław Zachód",
+        "ro": "Rzeszów Wschód – Jarosław Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-07-20"
+      },
+      "lengthKm": 41.2,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2009",
+          "note": {
+            "en": "Tender announced; completion had been planned for 2012.",
+            "ro": "Licitație anunțată; finalizarea fusese planificată pentru 2012."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-09-16",
+          "note": {
+            "en": "Completion contract signed in the GDDKiA Rzeszów branch with Budimex S.A. and Strabag Sp. z o.o.; the consortium offered 14 months, excluding two winter periods of three months.",
+            "ro": "Contract de finalizare semnat la filiala GDDKiA Rzeszów cu Budimex S.A. și Strabag Sp. z o.o.; consorțiul a oferit 14 luni, fără două perioade de iarnă de câte trei luni."
+          },
+          "sourceRef": "gddkia-a4-rzeszow-jaroslaw"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-07-20",
+          "note": {
+            "en": "Opened to traffic with a narrowing to one carriageway at one overpass and lane narrowings elsewhere; both carriageways in full from 31 August 2016.",
+            "ro": "Deschis circulației cu îngustare la o singură platformă la un pasaj și îngustări de benzi în alte locuri; ambele platforme complet din 31 august 2016."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "The contracts signed after the 2009 tender were terminated; Budimex took over the works in September 2014, in a consortium with Strabag (contract of PLN 719 million per GDDKiA). The section opened to traffic on 20 July 2016 with restrictions, the WA9 overpass opened on 31 August 2016 and all works outside the main carriageways ended on 20 October 2016. pl.wikipedia gives no contract values or dates for the earlier contractors. Drawn length 40.46 km.",
+        "ro": "Contractele semnate după licitația din 2009 au fost reziliate; Budimex a preluat lucrările în septembrie 2014, în consorțiu cu Strabag (contract de 719 milioane PLN conform GDDKiA). Secțiunea a fost deschisă circulației la 20 iulie 2016 cu restricții, pasajul WA9 a fost deschis la 31 august 2016, iar toate lucrările din afara platformelor principale s-au încheiat la 20 octombrie 2016. pl.wikipedia nu dă valori sau date ale contractelor pentru constructorii anteriori. Lungime desenată 40,46 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "gddkia-a4-rzeszow-jaroslaw",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rzeszow-wschod-jaroslaw-zachod",
+      "contract": {
+        "value": {
+          "amount": 719,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "GDDKiA states PLN 719 million for the completion contract signed 16 September 2014, VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 719,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Completion contract with Budimex and Strabag; VAT basis not stated."
+            },
+            "date": "2014-09-16",
+            "sourceRef": "gddkia-a4-rzeszow-jaroslaw"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jaroslaw-zachod-korczowa",
+      "name": {
+        "en": "Jarosław Zachód – Przemyśl – Korczowa (border)",
+        "ro": "Jarosław Zachód – Przemyśl – Korczowa (graniță)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-10-29",
+        "opened": "2013-12-23"
+      },
+      "lengthKm": 47,
+      "contractors": [
+        {
+          "name": "Budimex-Dromex",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman",
+          "role": "builder"
+        },
+        {
+          "name": "J&P Avax",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2009-03-03",
+          "note": {
+            "en": "Design-build tender for the Jarosław – Korczowa motorway announced by GDDKiA Rzeszów.",
+            "ro": "Licitație proiectare-execuție pentru autostrada Jarosław – Korczowa anunțată de GDDKiA Rzeszów."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2009-10-29",
+          "note": {
+            "en": "Jarosław – Przemyśl contract signed with Budimex-Dromex and Ferrovial Agroman.",
+            "ro": "Contract Jarosław – Przemyśl semnat cu Budimex-Dromex și Ferrovial Agroman."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "awarded",
+          "date": "2009-11-04",
+          "note": {
+            "en": "Przemyśl – Korczowa contract signed with J&P Avax.",
+            "ro": "Contract Przemyśl – Korczowa semnat cu J&P Avax."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2013-05-27",
+          "note": {
+            "en": "Jarosław Wschód – Przemyśl, 18 km.",
+            "ro": "Jarosław Wschód – Przemyśl, 18 km."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2013-12-20",
+          "note": {
+            "en": "Jarosław Zachód – Jarosław Wschód, 7 km, delayed by work on the Jarosław Zachód junction.",
+            "ro": "Jarosław Zachód – Jarosław Wschód, 7 km, întârziat de lucrările la nodul Jarosław Zachód."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-12-23",
+          "note": {
+            "en": "Przemyśl – Korczowa, 22 km, to the Ukrainian border.",
+            "ro": "Przemyśl – Korczowa, 22 km, până la granița cu Ucraina."
+          },
+          "sourceRef": "pl-wikipedia-a4"
+        }
+      ],
+      "note": {
+        "en": "Two design-build contracts: Jarosław – Przemyśl (25 km) and Przemyśl – Korczowa (22 km). A location decision for Przeworsk – Jarosław – Korczowa was issued by the voivode on 15 July 2009. Completion of Jarosław – Radymno was originally planned for April 2012. GDDKiA gives PLN 818 million for the Przemyśl – Korczowa contract (AVAX), a part of the lot, so no lot value is recorded; no value is given for Jarosław – Przemyśl. Drawn length 46.02 km; the road ends at the Korczowa border crossing.",
+        "ro": "Două contracte proiectare-execuție: Jarosław – Przemyśl (25 km) și Przemyśl – Korczowa (22 km). O decizie de localizare pentru Przeworsk – Jarosław – Korczowa a fost emisă de voievod la 15 iulie 2009. Finalizarea Jarosław – Radymno fusese planificată inițial pentru aprilie 2012. GDDKiA indică 818 milioane PLN pentru contractul Przemyśl – Korczowa (AVAX), o parte a lotului, deci nu se înregistrează valoare pentru lot; pentru Jarosław – Przemyśl nu este dată nicio valoare. Lungime desenată 46,02 km; drumul se încheie la punctul de frontieră Korczowa."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a4",
+        "gddkia-a4-przemysl-korczowa",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jaroslaw-zachod-korczowa"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pl-wikipedia-a4",
+      "title": "Wikipedia (pl): Autostrada A4 (Polska), sections table and construction history",
+      "url": "https://pl.wikipedia.org/wiki/Autostrada_A4_(Polska)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "stalexport-autostrady",
+      "title": "Stalexport Autostrady: concession for adaptation and operation of A4 Katowice–Kraków to 15 March 2027, 61 km",
+      "url": "https://www.stalexport-autostrady.pl/pl/",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-a4-tarnow-debica",
+      "title": "GDDKiA: Umowa na kontynuację budowy autostrady A4 podpisana (Krzyż – Dębica Pustynia, 7 May 2013)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/12371/Umowa-na-kontynuacje-budowy-autostrady-A4-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-a4-rzeszow-debica",
+      "title": "GDDKiA: Autostrada A4 z Rzeszowa do Dębicy otwarta dla kierowców (30 October 2013)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/13321/Autostrada-A4-z-Rzeszowa-do-Debicy-otwarta-dla-kierowcow",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-a4-rzeszow-jaroslaw",
+      "title": "GDDKiA: Umowa na kontynuację budowy A4 Rzeszów – Jarosław podpisana (16 September 2014)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/16327/Umowa-na-kontynuacje-budowy-A4-Rzeszow-Jaroslaw-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-a4-przemysl-korczowa",
+      "title": "GDDKiA: Autostrada A4 do granicy (Przemyśl – Korczowa, 23 December 2013)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/13876/Autostada-A4-do-granicy",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: motorway ways with ref A4, via Overpass (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}
