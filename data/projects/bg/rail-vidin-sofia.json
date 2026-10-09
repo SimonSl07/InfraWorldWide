@@ -1,0 +1,192 @@
+{
+  "id": "bg-rail-vidin-sofia",
+  "country": "bg",
+  "category": "railway",
+  "name": {
+    "en": "Vidin – Sofia railway modernisation: Medkovets – Sratsimir",
+    "ro": "Modernizarea liniei feroviare Vidin – Sofia: Medkovets – Sratsimir"
+  },
+  "description": {
+    "en": "Modernisation of the Medkovets – Sratsimir part of the Vidin – Sofia railway, split by the infrastructure manager NRIC into two sub-sections of single electrified track: Medkovets – Dabova mahala (about 13 km) and Dabova mahala – Sratsimir (about 31 km). Both are design-and-build contracts signed in 2025 and co-financed by the Connecting Europe Facility. The design speed is 160 km/h for passenger and 120 km/h for freight trains, against up to 70 km/h today. Other Vidin – Sofia sections are not yet recorded here.",
+    "ro": "Modernizarea porțiunii Medkovets – Sratsimir din linia feroviară Vidin – Sofia, împărțită de administratorul infrastructurii NRIC în două subsecțiuni cu linie simplă electrificată: Medkovets – Dabova mahala (circa 13 km) și Dabova mahala – Sratsimir (circa 31 km). Ambele sunt contracte de proiectare și execuție semnate în 2025 și cofinanțate prin Mecanismul pentru Interconectarea Europei. Viteza de proiectare este de 160 km/h pentru trenurile de călători și 120 km/h pentru cele de marfă, față de până la 70 km/h în prezent. Celelalte secțiuni Vidin – Sofia nu sunt încă înregistrate aici."
+  },
+  "operator": "bg-nric",
+  "lots": [
+    {
+      "id": "medkovets-dabova-mahala",
+      "name": {
+        "en": "Medkovets – Dabova mahala",
+        "ro": "Medkovets – Dabova mahala"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-10-01"
+      },
+      "lengthKm": 13,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 1,
+        "tunnelKm": 0.325
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-10-01",
+          "sourceRef": "nric-news-4539",
+          "note": {
+            "en": "Design-and-build contract signed by the NRIC director general.",
+            "ro": "Contractul de proiectare și execuție semnat de directorul general al NRIC."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility (CEF) co-financing",
+            "ro": "Cofinanțare din Mecanismul pentru Interconectarea Europei (MIE)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "DZZD MEDKOVETS VO 2025 (Orion Construction s.r.o. – Vashutvil OOD – Vaputvil GEP OOD)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 9,
+        "executionMonths": 22,
+        "totalMonths": 31,
+        "value": {
+          "amount": 173.31,
+          "currency": "BGN",
+          "year": 2025
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 173.31,
+              "currency": "BGN",
+              "year": 2025
+            },
+            "date": "2025-10-01",
+            "sourceRef": "nric-news-4539"
+          }
+        ]
+      },
+      "note": {
+        "en": "Contract value BGN 173,312,170.89 excluding VAT and excluding contingencies. Duration 31 months: design 9, construction 22. Works include a 325 m tunnel. NRIC expected construction to start in 2026; no start is recorded yet. Geometry follows the OpenStreetMap proposed alignment (14.6 km drawn against about 13 km stated).",
+        "ro": "Valoarea contractului este de 173.312.170,89 leva fără TVA și fără cheltuieli neprevăzute. Durata este de 31 de luni: proiectare 9, execuție 22. Lucrările includ un tunel de 325 m. NRIC aștepta începerea lucrărilor în 2026; nu este înregistrat încă un început. Geometria urmează traseul propus din OpenStreetMap (14,6 km desenați față de circa 13 km declarați)."
+      },
+      "sourceRefs": [
+        "nric-news-4539",
+        "osm"
+      ],
+      "geometryRef": "medkovets-dabova-mahala"
+    },
+    {
+      "id": "dabova-mahala-sratsimir",
+      "name": {
+        "en": "Dabova mahala – Sratsimir",
+        "ro": "Dabova mahala – Sratsimir"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-08-22"
+      },
+      "lengthKm": 31,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 1,
+        "stationCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-08-22",
+          "sourceRef": "nric-news-4533",
+          "note": {
+            "en": "Design-and-build contract signed by the NRIC director general.",
+            "ro": "Contractul de proiectare și execuție semnat de directorul general al NRIC."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility (CEF) co-financing",
+            "ro": "Cofinanțare din Mecanismul pentru Interconectarea Europei (MIE)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "DZZD ZhP MEDKOVETS – SRATSIMIR (GBS – Infrastructure Construction AD – Duygu Taahhüt ve İnşaat)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 9,
+        "executionMonths": 28,
+        "totalMonths": 38,
+        "value": {
+          "amount": 597.59,
+          "currency": "BGN",
+          "year": 2025
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 597.59,
+              "currency": "BGN",
+              "year": 2025
+            },
+            "date": "2025-08-22",
+            "sourceRef": "nric-news-4533"
+          }
+        ]
+      },
+      "note": {
+        "en": "Contract value BGN 597,589,670.94 excluding VAT and excluding contingencies. NRIC gives 38 months: design 9, construction 28. Three new stations are planned: Dabova mahala, Vodnyantsi and Sratsimir. NRIC expected construction to start in 2026; no start is recorded yet. Geometry follows the OpenStreetMap proposed alignment (29.4 km drawn against about 31 km stated) and stops about 1.3 km short of Sratsimir station.",
+        "ro": "Valoarea contractului este de 597.589.670,94 leva fără TVA și fără cheltuieli neprevăzute. NRIC indică 38 de luni: proiectare 9, execuție 28. Sunt prevăzute trei gări noi: Dabova mahala, Vodnyantsi și Sratsimir. NRIC aștepta începerea lucrărilor în 2026; nu este înregistrat încă un început. Geometria urmează traseul propus din OpenStreetMap (29,4 km desenați față de circa 31 km declarați) și se oprește la circa 1,3 km de gara Sratsimir."
+      },
+      "sourceRefs": [
+        "nric-news-4533",
+        "osm"
+      ],
+      "geometryRef": "dabova-mahala-sratsimir"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nric-news-4539",
+      "title": "NRIC: Договорът за модернизация на жп участъка Медковец – Дъбова махала е подписан (1 October 2025)",
+      "url": "https://www.rail-infra.bg/bg/news/4539",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-4533",
+      "title": "NRIC: Договорът за модернизация на жп участъка Дъбова махала – Срацимир е подписан (22 August 2025)",
+      "url": "https://www.rail-infra.bg/bg/news/4533",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "bg-rail-plovdiv-node",
+  "country": "bg",
+  "category": "railway",
+  "name": {
+    "en": "Plovdiv railway node modernisation",
+    "ro": "Modernizarea nodului feroviar Plovdiv"
+  },
+  "description": {
+    "en": "Modernisation of the railway lines around Plovdiv, where the lines to Burgas and to Svilengrad (the Turkish and Greek border) meet. The works cover track, overhead line, signalling and telecommunications, plus road overpasses and underpasses replacing level crossings. Two construction contracts: Plovdiv Central station with a road underpass beneath it, and the Plovdiv – Krumovo and Plovdiv – Skutare sections. NRIC gives the whole project value as EUR 103,477,234, of which EUR 87,955,649 from the Connecting Europe Facility. On 29 July 2026 NRIC reported about 90% of the station works done and planned both contracts to finish by the end of 2026.",
+    "ro": "Modernizarea liniilor feroviare din jurul Plovdivului, unde se întâlnesc liniile spre Burgas și spre Svilengrad (granița cu Turcia și Grecia). Lucrările cuprind linia, rețeaua de contact, semnalizarea și telecomunicațiile, plus pasaje rutiere supraterane și subterane în locul trecerilor la nivel. Două contracte de construcție: gara Plovdiv Centrală cu un pasaj rutier sub ea, și secțiunile Plovdiv – Krumovo și Plovdiv – Skutare. NRIC indică valoarea întregului proiect la 103.477.234 euro, din care 87.955.649 euro din Mecanismul pentru Interconectarea Europei. La 29 iulie 2026 NRIC raporta circa 90% din lucrările de la gară executate și prevedea finalizarea ambelor contracte până la sfârșitul anului 2026."
+  },
+  "operator": "bg-nric",
+  "cost": {
+    "amount": 103.477234,
+    "currency": "EUR",
+    "scope": "programme",
+    "note": "Total project value stated by NRIC for the whole Plovdiv node project (both contracts), with EUR 87,955,649 from the Connecting Europe Facility and EUR 15,521,585 national co-financing. Price year not stated."
+  },
+  "lots": [
+    {
+      "id": "plovdiv-central-station",
+      "name": {
+        "en": "Plovdiv Central station and underpass",
+        "ro": "Gara Plovdiv Centrală și pasajul subteran"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2026-12"
+      },
+      "lengthKm": 0.39,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility, project \"Development of Plovdiv railway node\" (EUR 87,955,649 of EUR 103,477,234 for the whole project); national co-financing EUR 15,521,585",
+            "ro": "Mecanismul pentru Interconectarea Europei, proiectul „Dezvoltarea nodului feroviar Plovdiv” (87.955.649 din 103.477.234 euro pentru întregul proiect); cofinanțare națională 15.521.585 euro"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Proekt Plovdiv DZZD (Обединение „Проект Пловдив“ ДЗЗД)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 89.028246,
+          "currency": "BGN",
+          "note": "Excluding VAT: 89,028,245.95 lev. Signing year not stated by NRIC."
+        }
+      },
+      "note": {
+        "en": "Contract for track, overhead line, signalling and telecommunications in Plovdiv station and a road and pedestrian underpass beneath the station area. NRIC, 29 July 2026: about 90% of the planned station works done; the station is due to finish first, then the two pedestrian overpasses (November), then the underpass. Whole contract due by the end of 2026. NRIC gives no length or chainage; the drawn line covers only the station throat, from the west end of the OpenStreetMap station tracks to the east end of the station switches. Length measured from OpenStreetMap geometry. The line from Sofia (the Sofia – Plovdiv modernisation) ends at the west end of this lot.",
+        "ro": "Contract pentru linie, rețea de contact, semnalizare și telecomunicații în gara Plovdiv și un pasaj rutier și pietonal sub zona gării. NRIC, 29 iulie 2026: circa 90% din lucrările planificate la gară sunt executate; gara se finalizează prima, apoi cele două pasarele pietonale (noiembrie), apoi pasajul subteran. Întregul contract este prevăzut pentru sfârșitul anului 2026. NRIC nu indică lungimea sau kilometrajul; linia desenată acoperă doar capul de gară, de la capătul vestic al liniilor gării din OpenStreetMap până la capătul estic al schimbătoarelor gării. Lungime măsurată pe geometria OpenStreetMap. Linia dinspre Sofia (modernizarea Sofia – Plovdiv) se termină la capătul vestic al acestui lot."
+      },
+      "sourceRefs": [
+        "nric-plovdiv-node",
+        "nric-news-4584",
+        "openstreetmap"
+      ],
+      "geometryRef": "plovdiv-central-station"
+    },
+    {
+      "id": "plovdiv-krumovo-skutare",
+      "name": {
+        "en": "Plovdiv – Krumovo and Plovdiv – Skutare sections",
+        "ro": "Secțiunile Plovdiv – Krumovo și Plovdiv – Skutare"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2026-12"
+      },
+      "lengthKm": 22.76,
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility, project \"Development of Plovdiv railway node\" (EUR 87,955,649 of EUR 103,477,234 for the whole project); national co-financing EUR 15,521,585",
+            "ro": "Mecanismul pentru Interconectarea Europei, proiectul „Dezvoltarea nodului feroviar Plovdiv” (87.955.649 din 103.477.234 euro pentru întregul proiect); cofinanțare națională 15.521.585 euro"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Geostroy Lantania (Обединение „Геострой Лантания“)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 132.5207,
+          "currency": "BGN",
+          "note": "Excluding VAT: 132,520,700 lev. Signing year not stated by NRIC."
+        }
+      },
+      "note": {
+        "en": "One contract covers both sections, so they are one lot: Plovdiv – Krumovo (towards Svilengrad) and Plovdiv – Skutare (towards Burgas), with the stations Plovdiv Razpredelitelna, Krumovo and Skutare and the Trakia junction post. Works: track, overhead line, signalling and telecommunications; six new platforms at Skutare, Trakia and Depoto and rebuilt platforms at Krumovo; three level crossings closed and three road overpasses built; relay interlocking at Skutare and Trakia replaced with computer interlocking. NRIC, 29 July 2026: due by the end of 2026. NRIC gives no length or chainage. The line drawn starts where the station lot ends and follows one track to Krumovo (9.3 km), plus the Skutare branch from the point where it leaves the Krumovo line east of Plovdiv (13.4 km); the 3.7 km shared stretch is counted once, in the Krumovo part. Length measured from OpenStreetMap geometry. The Skutare end is drawn at Skutare station, where bg-rail-plovdiv-burgas starts (Skutare – Orizovo), so the two do not overlap.",
+        "ro": "Un singur contract acoperă ambele secțiuni, deci formează un singur lot: Plovdiv – Krumovo (spre Svilengrad) și Plovdiv – Skutare (spre Burgas), cu stațiile Plovdiv Razpredelitelna, Krumovo și Skutare și postul de mișcare Trakia. Lucrări: linie, rețea de contact, semnalizare și telecomunicații; șase peroane noi la Skutare, Trakia și Depoto și peroane refăcute la Krumovo; trei treceri la nivel închise și trei pasaje rutiere supraterane; înlocuirea centralizării cu relee de la Skutare și Trakia cu centralizare computerizată. NRIC, 29 iulie 2026: termen sfârșitul anului 2026. NRIC nu indică lungimea sau kilometrajul. Linia desenată începe unde se termină lotul gării și urmează o singură cale până la Krumovo (9,3 km), plus ramura Skutare din punctul în care aceasta se desparte de linia Krumovo la est de Plovdiv (13,4 km); tronsonul comun de 3,7 km este numărat o singură dată, în partea Krumovo. Lungime măsurată pe geometria OpenStreetMap. Capătul Skutare este desenat la gara Skutare, unde începe bg-rail-plovdiv-burgas (Skutare – Orizovo), astfel încât cele două nu se suprapun."
+      },
+      "sourceRefs": [
+        "nric-plovdiv-node",
+        "nric-news-4584",
+        "openstreetmap"
+      ],
+      "geometryRef": "plovdiv-krumovo-skutare"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nric-plovdiv-node",
+      "title": "NRIC: Развитие на железопътен възел Пловдив",
+      "url": "https://www.rail-infra.bg/bg/210",
+      "publisher": "NRIC (НК „Железопътна инфраструктура“)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-4584",
+      "title": "NRIC: Завършва обновяването на ЖП гара Пловдив, продължава работата по пробива (29.07.2026)",
+      "url": "https://www.rail-infra.bg/bg/news/4584",
+      "publisher": "NRIC (НК „Железопътна инфраструктура“)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

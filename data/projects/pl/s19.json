@@ -1,0 +1,2991 @@
+{
+  "id": "pl-s19",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S19 expressway, Via Carpatia (Kuźnica – Białystok – Lublin – Rzeszów – Barwinek)",
+    "ro": "Drumul expres S19, Via Carpatia (Kuźnica – Białystok – Lublin – Rzeszów – Barwinek)"
+  },
+  "description": {
+    "en": "Expressway of about 570 km from the Belarus border at Kuźnica to the Slovak border at Barwinek, through Białystok, Lublin and Rzeszów. In October 2026 the northern end (Kuźnica – Sokółka Północ, Deniski – Boćki), the Lublin – Rzeszów sections, the Kock bypass, the Rzeszów bypass and Krosno – Dukla are open, and most of the remainder is under construction or contracted. The Białystok Zachód – Deniski gap and the stretch to the Lubelskie border are still in preparation. Lots follow GDDKiA contract sections, grouped where they share an opening date; cost figures are contract values at signing. Rzeszów Wschód – Rzeszów Zachód runs on A4 and Lublin Rudnik – Lublin Sławinek is shared with S12 and S17, so neither is drawn as an S19 lot. Domaradz – Krosno (12.5 km, also called Domaradz – Iskrzynia) is not drawn: its design-build contract of 7 November 2022 was terminated on 14 May 2026 with 13% of the work done, a new tender was announced on 1 September 2026, and OpenStreetMap maps no alignment for it. Geometry comes from OpenStreetMap, cut at junctions where they are mapped and otherwise by the sourced section lengths.",
+    "ro": "Drum expres de circa 570 km de la granița cu Belarus la Kuźnica până la granița cu Slovacia la Barwinek, prin Białystok, Lublin și Rzeszów. În octombrie 2026 sunt deschise capătul nordic (Kuźnica – Sokółka Północ, Deniski – Boćki), tronsoanele Lublin – Rzeszów, ocolitoarea Kock, ocolitoarea Rzeszów și Krosno – Dukla, iar cea mai mare parte din restul este în construcție sau contractată. Golul Białystok Zachód – Deniski și tronsonul până la granița cu voievodatul Lublin sunt încă în pregătire. Loturile urmează tronsoanele contractuale GDDKiA, grupate acolo unde au aceeași dată de deschidere; costurile sunt valori de contract la semnare. Rzeszów Wschód – Rzeszów Zachód folosește A4, iar Lublin Rudnik – Lublin Sławinek este comun cu S12 și S17, deci niciunul nu este desenat ca lot S19. Domaradz – Krosno (12,5 km, numit și Domaradz – Iskrzynia) nu este desenat: contractul de proiectare și construcție din 7 noiembrie 2022 a fost reziliat la 14 mai 2026 cu 13% din lucrări executate, o nouă licitație a fost anunțată la 1 septembrie 2026, iar OpenStreetMap nu cartează niciun traseu pentru el. Geometria provine din OpenStreetMap, tăiată la noduri acolo unde sunt cartate și altfel după lungimile din surse ale tronsoanelor."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-09",
+  "lots": [
+    {
+      "id": "kuznica-sokolka-polnoc",
+      "name": {
+        "en": "Kuźnica – Sokółka Północ",
+        "ro": "Kuźnica – Sokółka Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-03-12",
+        "constructionStart": "2023-01-11",
+        "opened": "2025-12-31"
+      },
+      "lengthKm": 10.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 526.22,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Including VAT."
+            },
+            "date": "2021-03-12",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 526.22,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-09-07",
+          "sourceRef": "msbd-kuznica-sokolka-polnoc"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-03-12",
+          "sourceRef": "msbd-kuznica-sokolka-polnoc"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-01-11",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-31",
+          "sourceRef": "msbd-kuznica-sokolka-polnoc"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PORR S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build, the northern end of S19 at the Belarus border. The main carriageway opened on 31 December 2025 and permanent traffic arrangements followed on 27 July 2026. The whole project is 15.79 km: 10.6 km to expressway standard and 5.2 km of dual carriageway DK19 in class GP from the border crossing to the Kuźnica junction, which is not drawn. The 10.6 km is the expressway length stated by GDDKiA Białystok; the OpenStreetMap centreline from the Kuźnica junction to Sokółka Północ is 8.9 km, 16% shorter. Contract value 526.22 million PLN (monthly table, gross); plwiki gives \"over 526 million\" for the whole project.",
+        "ro": "Proiectare și construcție, capătul nordic al S19 la granița cu Belarus. Calea principală a fost deschisă la 31 decembrie 2025, iar organizarea permanentă a traficului la 27 iulie 2026. Proiectul are 15,79 km în total: 10,6 km la standard de drum expres și 5,2 km de DK19 cu două căi de rulare, clasa GP, de la punctul de frontieră la nodul Kuźnica, nedesenați. Cei 10,6 km sunt lungimea de drum expres indicată de GDDKiA Białystok; axul OpenStreetMap de la nodul Kuźnica la Sokółka Północ are 8,9 km, cu 16% mai puțin. Valoarea contractului 526,22 milioane PLN (tabelul lunar, brut); plwiki indică „peste 526 milioane” pentru întregul proiect."
+      },
+      "sourceRefs": [
+        "msbd-kuznica-sokolka-polnoc",
+        "gddkia-bialystok-2026-05-14",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kuznica-sokolka-polnoc"
+    },
+    {
+      "id": "sokolka-polnoc-czarna-bialostocka",
+      "name": {
+        "en": "Sokółka Północ – Czarna Białostocka",
+        "ro": "Sokółka Północ – Czarna Białostocka"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-06-21",
+        "expectedOpening": "2028-06-21"
+      },
+      "lengthKm": 24.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 828.83,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-06-21",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 828.83,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-07-05",
+          "sourceRef": "msbd-sokolka-czarna"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-06-21",
+          "sourceRef": "msbd-sokolka-czarna"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Stecol Corporation",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Stecol Corporation signed on 21 June 2024; contract deadline 21 June 2028. The road permit (ZRID) application was filed on 22 April 2025 and the MSBD page records no decision, so the lot is shown as awarded, not under construction, although GDDKiA lists the stage as \"Realizacja\". Planned junctions: Sokółka Zachód, Geniusze, Straż and Czarna Białostocka; 28 structures. OpenStreetMap maps no alignment for the last part before Czarna Białostocka, so the drawn line stops where the mapped ways end and is not joined to the next lot. It is 17.9 km long, 26% shorter than the sourced 24.1 km.",
+        "ro": "Contract de proiectare și construcție cu Stecol Corporation, semnat la 21 iunie 2024; termen contractual 21 iunie 2028. Cererea pentru autorizația de construcție (ZRID) a fost depusă la 22 aprilie 2025, iar pagina MSBD nu înregistrează o decizie, deci lotul apare ca atribuit, nu ca în construcție, deși GDDKiA indică etapa „Realizacja”. Noduri planificate: Sokółka Zachód, Geniusze, Straż și Czarna Białostocka; 28 de structuri. OpenStreetMap nu cartează niciun traseu pentru ultima parte dinaintea Czarna Białostocka, deci linia desenată se oprește unde se termină căile cartate și nu este legată de lotul următor. Are 17,9 km, cu 26% mai puțin decât cei 24,1 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-sokolka-czarna",
+        "gddkia-monthly-table",
+        "gddkia-bialystok-2026-05-14",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sokolka-polnoc-czarna-bialostocka"
+    },
+    {
+      "id": "czarna-bialostocka-bialystok-polnoc",
+      "name": {
+        "en": "Czarna Białostocka – Białystok Północ",
+        "ro": "Czarna Białostocka – Białystok Północ"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-02-19",
+        "constructionStart": "2026-07-08",
+        "expectedOpening": "2027-11-19"
+      },
+      "lengthKm": 12.34,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 347.8,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-02-19",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 347.8,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-07-21",
+          "sourceRef": "msbd-czarna-polnoc"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-02-19",
+          "sourceRef": "msbd-czarna-polnoc"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-07-08",
+          "sourceRef": "gddkia-monthly-table"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "UNIBEP S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Unibep signed on 19 February 2024; the road permit (ZRID) was issued on 24 June 2026 and the monthly table gives 8 July 2026 as the works start. The contract deadline is 19 November 2027 (monthly table). Includes the Wasilków junction; 20 structures. OpenStreetMap maps no alignment for the first part after Czarna Białostocka, so the drawn line starts where the mapped ways begin and is not joined to the previous lot. The south end sits at the mapped Białystok Północ junction (unnamed in OpenStreetMap). The drawn centreline is 8.4 km, 32% shorter than the 12.34 km sourced.",
+        "ro": "Contract de proiectare și construcție cu Unibep, semnat la 19 februarie 2024; autorizația de construcție (ZRID) a fost emisă la 24 iunie 2026, iar tabelul lunar indică 8 iulie 2026 ca început al lucrărilor. Termenul contractual este 19 noiembrie 2027 (tabelul lunar). Include nodul Wasilków; 20 de structuri. OpenStreetMap nu cartează niciun traseu pentru prima parte după Czarna Białostocka, deci linia desenată începe unde încep căile cartate și nu este legată de lotul anterior. Capătul sudic se află la nodul cartat Białystok Północ (fără nume în OpenStreetMap). Axul desenat are 8,4 km, cu 32% mai puțin decât cei 12,34 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-czarna-polnoc",
+        "gddkia-monthly-table",
+        "gddkia-bialystok-2026-05-14",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "czarna-bialostocka-bialystok-polnoc"
+    },
+    {
+      "id": "bialystok-polnoc-dobrzyniewo",
+      "name": {
+        "en": "Białystok Północ – Dobrzyniewo",
+        "ro": "Białystok Północ – Dobrzyniewo"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-05-14",
+        "expectedOpening": "2028-05-15"
+      },
+      "lengthKm": 9.47,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 320.89,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-05-14",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 320.89,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-08-04",
+          "sourceRef": "msbd-polnoc-dobrzyniewo"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-05-14",
+          "sourceRef": "msbd-polnoc-dobrzyniewo"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "UNIBEP S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Unibep signed on 14 May 2024, contract deadline 15 May 2028. The road permit (ZRID) was issued on 20 August 2026 and no works start is recorded, so the lot is shown as awarded. Includes the Białystok Północ and Dobrzyniewo junctions; 14 structures. Part of the northern Białystok bypass. Cut proportionally to the sourced lengths; the drawn centreline is 9% shorter than 9.47 km.",
+        "ro": "Contract de proiectare și construcție cu Unibep, semnat la 14 mai 2024, termen contractual 15 mai 2028. Autorizația de construcție (ZRID) a fost emisă la 20 august 2026 și nu este înregistrat un început al lucrărilor, deci lotul apare ca atribuit. Include nodurile Białystok Północ și Dobrzyniewo; 14 structuri. Face parte din ocolitoarea de nord a orașului Białystok. Limitele sunt proporționale cu lungimile din surse; axul desenat este cu 9% mai scurt decât 9,47 km."
+      },
+      "sourceRefs": [
+        "msbd-polnoc-dobrzyniewo",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bialystok-polnoc-dobrzyniewo"
+    },
+    {
+      "id": "krynice-bialystok-zachod",
+      "name": {
+        "en": "Krynice – Dobrzyniewo – Białystok Zachód",
+        "ro": "Krynice – Dobrzyniewo – Białystok Zachód"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-05-19",
+        "constructionStart": "2024-03-12",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 10.18,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 405.61,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Including VAT."
+            },
+            "date": "2021-05-19",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 405.61,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-06-03",
+          "sourceRef": "msbd-krynice-zachod"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-05-19",
+          "sourceRef": "msbd-krynice-zachod"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-03-12",
+          "sourceRef": "gddkia-monthly-table"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PORR S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "UNIBEP S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Porr together with Unibep, signed on 19 May 2021. The road permit (ZRID) was issued on 28 February 2024; the monthly table gives 12 March 2024 as the works start. The contract deadline was 30 April 2025; GDDKiA Białystok said on 14 May 2026 that the section would open in autumn 2026 with work nearly 80% complete. It joins S8 at the Białystok Zachód junction and will meet S16 near Krynice. Cut at the south end by the end of the mapped interchange; the drawn centreline is 9% shorter than the sourced 10.18 km.",
+        "ro": "Contract de proiectare și construcție cu Porr împreună cu Unibep, semnat la 19 mai 2021. Autorizația de construcție (ZRID) a fost emisă la 28 februarie 2024; tabelul lunar indică 12 martie 2024 ca început al lucrărilor. Termenul contractual a fost 30 aprilie 2025; GDDKiA Białystok a declarat la 14 mai 2026 că tronsonul se va deschide în toamna lui 2026, cu lucrările aproape de 80% finalizate. Se leagă de S8 la nodul Białystok Zachód și va întâlni S16 lângă Krynice. Limita sudică este la capătul nodului cartat; axul desenat este cu 9% mai scurt decât cei 10,18 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-krynice-zachod",
+        "gddkia-monthly-table",
+        "gddkia-bialystok-2026-05-14",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krynice-bialystok-zachod"
+    },
+    {
+      "id": "bialystok-zachod-deniski",
+      "name": {
+        "en": "Białystok Zachód – Deniski (southern Białystok bypass)",
+        "ro": "Białystok Zachód – Deniski (ocolitoarea de sud a orașului Białystok)"
+      },
+      "status": "planned",
+      "lengthKm": 41.4,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. The section is also called Choroszcz – Ploski. GDDKiA lists Białystok Zachód – Księżyno at 16.65 km and Białystok Południe – Ploski at 12.72 km (plwiki gives 7.9 km for Księżyno – Południe), 37.3 km to Ploski, and the stretch from Ploski to the Deniski junction is not given separately. Design-build contracts signed in November and December 2020 were terminated after the environmental decision was annulled by the courts. A new environmental decision was issued on 31 July 2023 and the General Director for Environmental Protection partly changed and partly upheld it in October 2025; a complaint to the administrative court is pending (GDDKiA Białystok, 14 May 2026). Both works contracts appear as terminated in the monthly table. No tender or works start is recorded.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Tronsonul este numit și Choroszcz – Ploski. GDDKiA indică Białystok Zachód – Księżyno la 16,65 km și Białystok Południe – Ploski la 12,72 km (plwiki dă 7,9 km pentru Księżyno – Południe), în total 37,3 km până la Ploski, iar porțiunea de la Ploski la nodul Deniski nu este dată separat. Contractele de proiectare și construcție semnate în noiembrie și decembrie 2020 au fost reziliate după anularea deciziei de mediu de către instanțe. O nouă decizie de mediu a fost emisă la 31 iulie 2023, iar Directorul General pentru Protecția Mediului a modificat-o parțial și a menținut-o parțial în octombrie 2025; o plângere la instanța administrativă este pendinte (GDDKiA Białystok, 14 mai 2026). Ambele contracte de lucrări apar ca reziliate în tabelul lunar. Nu este înregistrată nicio licitație sau început de lucrări."
+      },
+      "sourceRefs": [
+        "msbd-zachod-ksiezyno",
+        "msbd-poludnie-ploski",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "gddkia-bialystok-2026-05-14",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bialystok-zachod-deniski"
+    },
+    {
+      "id": "deniski-hacki",
+      "name": {
+        "en": "Deniski – Haćki",
+        "ro": "Deniski – Haćki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-01-29",
+        "constructionStart": "2024-09-11",
+        "opened": "2026-08-04"
+      },
+      "lengthKm": 6.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 305.42,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Including VAT."
+            },
+            "date": "2021-01-29",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 305.42,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-08-05",
+          "sourceRef": "msbd-deniski-hacki"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-01-29",
+          "sourceRef": "msbd-deniski-hacki"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-09-11",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-08-04",
+          "sourceRef": "msbd-deniski-hacki"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "UNIBEP S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Budrex Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build; the Deniski junction joins S19 to the existing DK19, with two rest areas at Haćki. Split out of the earlier Ploski – Haćki section after a court annulled the environmental decision for Choroszcz – Ploski. The permit (ZRID) application was filed in July 2023 and issued on 9 September 2024, against the end of 2021 planned in the contract; the main carriageway opened on 4 August 2026. plwiki names Value Engineering as a third consortium member. There is no junction at Haćki, so the boundary with Haćki – Boćki is placed by the sourced length of 6.5 km.",
+        "ro": "Proiectare și construcție; nodul Deniski leagă S19 de DK19 existent, cu două zone de odihnă la Haćki. Separat din fostul tronson Ploski – Haćki după ce o instanță a anulat decizia de mediu pentru Choroszcz – Ploski. Cererea de autorizare (ZRID) a fost depusă în iulie 2023 și emisă la 9 septembrie 2024, față de sfârșitul lui 2021 prevăzut în contract; calea principală a fost deschisă la 4 august 2026. plwiki numește Value Engineering al treilea membru al consorțiului. Nu există un nod la Haćki, deci limita cu Haćki – Boćki este plasată după lungimea din surse de 6,5 km."
+      },
+      "sourceRefs": [
+        "msbd-deniski-hacki",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "gddkia-bialystok-2026-05-14",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "deniski-hacki"
+    },
+    {
+      "id": "hacki-bocki",
+      "name": {
+        "en": "Haćki – Boćki",
+        "ro": "Haćki – Boćki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-09-06",
+        "opened": "2025-10-31"
+      },
+      "lengthKm": 21.19,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 635.34,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Sum of Haćki – Bielsk Podlaski Zachód (Budimex, 325.99 million, signed 6 September 2021) and Bielsk Podlaski Zachód – Boćki (Strabag, 309.35 million, signed 15 October 2021). Including VAT."
+            },
+            "date": "2021-10-15",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 635.34,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Sum of Haćki – Bielsk Podlaski Zachód (Budimex, 325.99 million, signed 6 September 2021) and Bielsk Podlaski Zachód – Boćki (Strabag, 309.35 million, signed 15 October 2021). Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-07-31",
+          "sourceRef": "msbd-bielsk-bocki"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-09-06",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-10-31",
+          "sourceRef": "msbd-bielsk-bocki"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Two design-build contracts: Haćki – Bielsk Podlaski Zachód (about 9 km, Budimex, includes a link on DK66) and Bielsk Podlaski Zachód – Boćki (12.19 km, Strabag). Both opened to traffic on 31 October 2025. The permits (ZRID) were issued on 23 August 2023 and 4 October 2023. The length is the sum of the two sections (plwiki 9 km and MSBD 12.19 km); the drawn centreline is 6% shorter.",
+        "ro": "Două contracte de proiectare și construcție: Haćki – Bielsk Podlaski Zachód (circa 9 km, Budimex, include o legătură pe DK66) și Bielsk Podlaski Zachód – Boćki (12,19 km, Strabag). Ambele au fost deschise traficului la 31 octombrie 2025. Autorizațiile (ZRID) au fost emise la 23 august 2023 și 4 octombrie 2023. Lungimea este suma celor două tronsoane (plwiki 9 km și MSBD 12,19 km); axul desenat este cu 6% mai scurt."
+      },
+      "sourceRefs": [
+        "msbd-bielsk-bocki",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hacki-bocki"
+    },
+    {
+      "id": "bocki-chlebczyn",
+      "name": {
+        "en": "Boćki – Malewice – Chlebczyn",
+        "ro": "Boćki – Malewice – Chlebczyn"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-09-06",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 40.98,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1008.79,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Sum of Boćki – Malewice (Strabag, 343.58 million, signed 6 September 2021) and Malewice – Chlebczyn (Kolin, 665.21 million, signed 15 October 2021). Including VAT."
+            },
+            "date": "2021-10-15",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1008.79,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Sum of Boćki – Malewice (Strabag, 343.58 million, signed 6 September 2021) and Malewice – Chlebczyn (Kolin, 665.21 million, signed 15 October 2021). Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-09-23",
+          "sourceRef": "msbd-malewice-chlebczyn"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-09-06",
+          "sourceRef": "msbd-bocki-malewice"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the EU programme Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS); the MSBD pages list 787.6 million PLN of co-financing for the project S19 Boćki – Chlebczyn.",
+            "ro": "Cofinanțat prin programul UE Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS); paginile MSBD indică o cofinanțare de 787,6 milioane PLN pentru proiectul S19 Boćki – Chlebczyn."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Kolin İnşaat Turizm Sanayi ve Ticaret",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Two design-build contracts: Boćki – Malewice (15.91 km, Strabag) and Malewice – Chlebczyn (25.07 km, Kolin, with a 658 m bridge over the Bug and the Siemiatycze Północ and Południe junctions). The contract deadlines of 2 May 2025 have passed. On 14 May 2026 GDDKiA Białystok reported Boćki – Malewice at 98% and Malewice – Chlebczyn due in autumn 2026; Boćki – Malewice can only open together with the first half of Malewice – Chlebczyn. The planned total cost of the project is almost 1.5 billion PLN (GDDKiA Białystok). The tender announcement dates differ between pages (23 September and 4 November 2020 on MSBD, 18 September and 30 October on plwiki).",
+        "ro": "Două contracte de proiectare și construcție: Boćki – Malewice (15,91 km, Strabag) și Malewice – Chlebczyn (25,07 km, Kolin, cu un pod de 658 m peste Bug și nodurile Siemiatycze Północ și Południe). Termenele contractuale din 2 mai 2025 au trecut. La 14 mai 2026 GDDKiA Białystok a raportat Boćki – Malewice la 98%, iar Malewice – Chlebczyn urmează în toamna lui 2026; Boćki – Malewice se poate deschide doar împreună cu prima jumătate din Malewice – Chlebczyn. Costul total planificat al proiectului este de aproape 1,5 miliarde PLN (GDDKiA Białystok). Datele anunțului de licitație diferă între pagini (23 septembrie și 4 noiembrie 2020 pe MSBD, 18 septembrie și 30 octombrie pe plwiki)."
+      },
+      "sourceRefs": [
+        "msbd-bocki-malewice",
+        "msbd-malewice-chlebczyn",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "gddkia-bialystok-2026-05-14",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bocki-chlebczyn"
+    },
+    {
+      "id": "chlebczyn-lubelskie-border",
+      "name": {
+        "en": "Chlebczyn – Łosice – Lubelskie border",
+        "ro": "Chlebczyn – Łosice – granița cu voievodatul Lublin"
+      },
+      "status": "planned",
+      "lengthKm": 32,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Section \"granica woj. podlaskiego – Łosice – granica woj. lubelskiego\" (32 km on the MSBD page, 32.4 km on plwiki), in the preparation stage with implementation planned for 2029–2031. The environmental decision was issued on 4 October 2024. It would include the Sarnaki, Ostromęczyn, Łosice and Mszanna junctions according to plwiki. No tender is recorded. The drawn centreline, from OpenStreetMap proposed ways, is 29.6 km (7% shorter).",
+        "ro": "Tronsonul „granica woj. podlaskiego – Łosice – granica woj. lubelskiego” (32 km pe pagina MSBD, 32,4 km pe plwiki), în etapa de pregătire, cu realizarea planificată pentru 2029–2031. Decizia de mediu a fost emisă la 4 octombrie 2024. Conform plwiki ar include nodurile Sarnaki, Ostromęczyn, Łosice și Mszanna. Nu este înregistrată nicio licitație. Axul desenat, din căile propuse din OpenStreetMap, are 29,6 km (cu 7% mai scurt)."
+      },
+      "sourceRefs": [
+        "msbd-losice",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "chlebczyn-lubelskie-border"
+    },
+    {
+      "id": "lubelskie-border-miedzyrzec",
+      "name": {
+        "en": "Lubelskie border – Międzyrzec Podlaski (end of bypass)",
+        "ro": "Granița voievodatului Lublin – Międzyrzec Podlaski (capătul ocolitoarei)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-02-23",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 13.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 391.54,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT."
+            },
+            "date": "2022-02-23",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 391.54,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-08-11",
+          "sourceRef": "msbd-miedzyrzec-etap-ii"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-02-23",
+          "sourceRef": "msbd-miedzyrzec-etap-ii"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the EU programme Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS).",
+            "ro": "Cofinanțat prin programul UE Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Strabag signed on 23 February 2022 (the MSBD page states a cost of 391.5 million PLN). The road permit (ZRID) was issued on 12 December 2024; GDDKiA gives 2027 as the planned opening. No works start date is recorded. Part of the Białystok – Lubartów expressway between the Mazovian/Lubelskie border and the Lubartów Północ junction.",
+        "ro": "Contract de proiectare și construcție cu Strabag, semnat la 23 februarie 2022 (pagina MSBD indică un cost de 391,5 milioane PLN). Autorizația de construcție (ZRID) a fost emisă la 12 decembrie 2024; GDDKiA indică 2027 ca an de deschidere planificat. Nu este înregistrată data începerii lucrărilor. Face parte din drumul expres Białystok – Lubartów între granița voievodatelor Mazovia/Lublin și nodul Lubartów Północ."
+      },
+      "sourceRefs": [
+        "msbd-miedzyrzec-etap-ii",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubelskie-border-miedzyrzec"
+    },
+    {
+      "id": "miedzyrzec-bypass",
+      "name": {
+        "en": "Międzyrzec Podlaski bypass",
+        "ro": "Ocolitoarea Międzyrzec Podlaski"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-04-18"
+      },
+      "lengthKm": 6.6,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-04-18",
+          "sourceRef": "pl-wikipedia-s19"
+        }
+      ],
+      "note": {
+        "en": "Built 2005–2008 as a single-carriageway expressway (dual only at the junctions) and signposted as DK19. plwiki gives the opening as 18 April 2008; the MSBD page gives only the year 2008. The 13.7 km section to the north and the sections to the south are being built to dual carriageway. No junction is mapped at the south end, so the boundary with the next lot is placed by the sourced length of 6.6 km.",
+        "ro": "Construită în 2005–2008 ca drum expres cu o singură cale de rulare (dublă doar la noduri) și semnalizată ca DK19. plwiki indică deschiderea la 18 aprilie 2008; pagina MSBD indică doar anul 2008. Tronsonul de 13,7 km din nord și tronsoanele din sud se construiesc cu două căi de rulare. Niciun nod nu este cartat la capătul sudic, deci limita cu lotul următor este plasată după lungimea din surse de 6,6 km."
+      },
+      "sourceRefs": [
+        "msbd-miedzyrzec-obwodnica",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miedzyrzec-bypass"
+    },
+    {
+      "id": "miedzyrzec-kock",
+      "name": {
+        "en": "Międzyrzec Podlaski – Radzyń Podlaski – Kock",
+        "ro": "Międzyrzec Podlaski – Radzyń Podlaski – Kock"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-07-26",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 40.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1197.22,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Sum of Międzyrzec Podlaski – Radzyń Podlaski (Stecol, 570.73 million, signed 26 July 2022) and Radzyń Podlaski – Kock (Polaqua, 626.49 million, signed 15 September 2022). Gross per the monthly table."
+            },
+            "date": "2022-09-15",
+            "sourceRef": "msbd-radzyn-kock"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1197.22,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Sum of Międzyrzec Podlaski – Radzyń Podlaski (Stecol, 570.73 million, signed 26 July 2022) and Radzyń Podlaski – Kock (Polaqua, 626.49 million, signed 15 September 2022). Gross per the monthly table."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-08-27",
+          "sourceRef": "msbd-miedzyrzec-radzyn"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-07-26",
+          "sourceRef": "msbd-miedzyrzec-radzyn"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the EU programme Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS), project S19 Międzyrzec Podlaski – Lubartów Północ.",
+            "ro": "Cofinanțat prin programul UE Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS), proiectul S19 Międzyrzec Podlaski – Lubartów Północ."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Stecol Corporation",
+          "role": "builder"
+        },
+        {
+          "name": "Polaqua Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Two design-build contracts: Międzyrzec Podlaski – Radzyń Podlaski (22.2 km, Stecol) and Radzyń Podlaski – Kock (18.3 km, Polaqua). The road permits (ZRID) were issued on 21 April 2026 and 22 December 2025; plwiki reports works at 5% and 1% in June 2026. GDDKiA gives 2028 as the planned completion. The cut with the Kock bypass is proportional to the sourced lengths; the drawn centreline is 6% shorter than 40.5 km.",
+        "ro": "Două contracte de proiectare și construcție: Międzyrzec Podlaski – Radzyń Podlaski (22,2 km, Stecol) și Radzyń Podlaski – Kock (18,3 km, Polaqua). Autorizațiile (ZRID) au fost emise la 21 aprilie 2026 și 22 decembrie 2025; plwiki raportează lucrări la 5% și 1% în iunie 2026. GDDKiA indică 2028 ca finalizare planificată. Limita cu ocolitoarea Kock este proporțională cu lungimile din surse; axul desenat este cu 6% mai scurt decât 40,5 km."
+      },
+      "sourceRefs": [
+        "msbd-miedzyrzec-radzyn",
+        "msbd-radzyn-kock",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miedzyrzec-kock"
+    },
+    {
+      "id": "kock-bypass",
+      "name": {
+        "en": "Kock and Wola Skromowska bypass",
+        "ro": "Ocolitoarea Kock și Wola Skromowska"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-12-19"
+      },
+      "lengthKm": 7.9,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-12-19",
+          "sourceRef": "msbd-kock-etap-i"
+        }
+      ],
+      "note": {
+        "en": "Built 2009–2011 as a single-carriageway expressway and opened to traffic on 19 December 2011 (the MSBD page; plwiki gives 21 December). A second carriageway was added under a contract with Polaqua signed on 1 April 2022 (183.44 million PLN gross per the monthly table); the MSBD page gives 19 May 2026 as the date the road was made available, and plwiki says the bypass regained expressway status on 21 May 2026 in full dual-carriageway form. The lot keeps the 2011 opening date because the road has been in use since then. The north boundary is placed by the sourced length of 7.9 km, ending at the mapped Kock Południe junction; the mapped Kock Północ junction lies 1.6 km inside the drawn line.",
+        "ro": "Construită în 2009–2011 ca drum expres cu o singură cale de rulare și deschisă traficului la 19 decembrie 2011 (pagina MSBD; plwiki indică 21 decembrie). A doua cale de rulare a fost adăugată printr-un contract cu Polaqua semnat la 1 aprilie 2022 (183,44 milioane PLN brut conform tabelului lunar); pagina MSBD indică 19 mai 2026 ca dată a punerii la dispoziție, iar plwiki spune că ocolitoarea a recăpătat statutul de drum expres la 21 mai 2026, în profil complet cu două căi de rulare. Lotul păstrează data deschiderii din 2011, deoarece drumul este în uz de atunci. Limita nordică este plasată după lungimea din surse de 7,9 km, încheindu-se la nodul cartat Kock Południe; nodul cartat Kock Północ se află la 1,6 km în interiorul liniei desenate."
+      },
+      "sourceRefs": [
+        "msbd-kock-etap-i",
+        "msbd-kock-etap-ii",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kock-bypass"
+    },
+    {
+      "id": "kock-lubartow-polnoc",
+      "name": {
+        "en": "Kock – Lubartów Północ",
+        "ro": "Kock – Lubartów Północ"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-09-15",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 15.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 390,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Contract value 389,997,651.99 PLN as stated on the MSBD page; VAT basis not stated."
+            },
+            "date": "2022-09-15",
+            "sourceRef": "msbd-kock-lubartow"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 390,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Contract value 389,997,651.99 PLN as stated on the MSBD page; VAT basis not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-08-06",
+          "sourceRef": "msbd-kock-lubartow"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-09-15",
+          "sourceRef": "msbd-kock-lubartow"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the EU programme Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS), project S19 Międzyrzec Podlaski – Lubartów Północ.",
+            "ro": "Cofinanțat prin programul UE Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS), proiectul S19 Międzyrzec Podlaski – Lubartów Północ."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Rubau Polska Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Poltores Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with a Rubau Polska (leader) and Poltores consortium signed on 15 September 2022. The permit (ZRID) was applied for on 17 July 2023 and issued on 24 March 2026; plwiki reports works at 1% in June 2026. Planned completion 2028. The cut at Lubartów Północ is proportional to the sourced lengths of this lot and the next; the drawn centreline is 5% longer than 15.8 km.",
+        "ro": "Contract de proiectare și construcție cu un consorțiu Rubau Polska (lider) și Poltores, semnat la 15 septembrie 2022. Autorizația (ZRID) a fost solicitată la 17 iulie 2023 și emisă la 24 martie 2026; plwiki raportează lucrări la 1% în iunie 2026. Finalizare planificată în 2028. Limita la Lubartów Północ este proporțională cu lungimile din surse ale acestui lot și ale celui următor; axul desenat este cu 5% mai lung decât 15,8 km."
+      },
+      "sourceRefs": [
+        "msbd-kock-lubartow",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kock-lubartow-polnoc"
+    },
+    {
+      "id": "lubartow-polnoc-lublin-rudnik",
+      "name": {
+        "en": "Lubartów Północ – Lublin Rudnik",
+        "ro": "Lubartów Północ – Lublin Rudnik"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-02-26",
+        "constructionStart": "2024-11-25",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 23,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 835.66,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Contract value 835,660,771.00 PLN as stated on the MSBD page; the monthly table lists it as gross."
+            },
+            "date": "2021-02-26",
+            "sourceRef": "msbd-lubartow-rudnik"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 835.66,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Contract value 835,660,771.00 PLN as stated on the MSBD page; the monthly table lists it as gross."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-06-25",
+          "sourceRef": "msbd-lubartow-rudnik"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-02-26",
+          "sourceRef": "msbd-lubartow-rudnik"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-11-25",
+          "sourceRef": "gddkia-monthly-table"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Polska S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Duna Polska (formerly Mota-Engil Central Europe), signed on 26 February 2021. The permit (ZRID) was issued on 15 November 2024, against 2022 planned at signing; the monthly table gives 25 November 2024 as the works start and MSBD gives 2027 as the planned end of works. plwiki reports works at 55% in June 2026, with 29 structures and a reserve for a third lane. The road ends at the Lublin Rudnik junction, from where it shares the Lublin northern ring with S12 and S17; that part is not drawn as an S19 lot.",
+        "ro": "Contract de proiectare și construcție cu Duna Polska (fostă Mota-Engil Central Europe), semnat la 26 februarie 2021. Autorizația (ZRID) a fost emisă la 15 noiembrie 2024, față de 2022 planificat la semnare; tabelul lunar indică 25 noiembrie 2024 ca început al lucrărilor, iar MSBD indică 2027 ca sfârșit planificat al lucrărilor. plwiki raportează lucrări la 55% în iunie 2026, cu 29 de structuri și rezervă pentru a treia bandă. Drumul se încheie la nodul Lublin Rudnik, de unde partajează inelul nordic al Lublinului cu S12 și S17; acea parte nu este desenată ca lot S19."
+      },
+      "sourceRefs": [
+        "msbd-lubartow-rudnik",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubartow-polnoc-lublin-rudnik"
+    },
+    {
+      "id": "lublin-slawinek-weglin",
+      "name": {
+        "en": "Lublin Sławinek – Lublin Węglin (western Lublin bypass)",
+        "ro": "Lublin Sławinek – Lublin Węglin (ocolitoarea de vest a Lublinului)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-10-29",
+        "constructionStart": "2014-11-19",
+        "opened": "2016-12-09"
+      },
+      "lengthKm": 9.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 423.88,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Including VAT."
+            },
+            "date": "2014-10-29",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 423.88,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-10-29",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2014-11-19",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-09",
+          "sourceRef": "msbd-slawinek-weglin"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Dual carriageway western bypass of Lublin, built by Budimex. The monthly table gives 423.88 million PLN (gross); the MSBD page gives 3.62 million for design and 411.51 million for works. Opened on 9 December 2016. The stretch Lublin Rudnik – Lublin Sławinek (10.2 km, opened 31 October 2014) is shared with S12 and S17 and is not drawn here, so it is not counted twice.",
+        "ro": "Ocolitoare de vest a Lublinului cu două căi de rulare, construită de Budimex. Tabelul lunar indică 423,88 milioane PLN (brut); pagina MSBD indică 3,62 milioane pentru proiectare și 411,51 milioane pentru lucrări. Deschisă la 9 decembrie 2016. Tronsonul Lublin Rudnik – Lublin Sławinek (10,2 km, deschis la 31 octombrie 2014) este comun cu S12 și S17 și nu este desenat aici, pentru a nu fi numărat de două ori."
+      },
+      "sourceRefs": [
+        "msbd-slawinek-weglin",
+        "pl-wikipedia-s19",
+        "gddkia-monthly-table",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lublin-slawinek-weglin"
+    },
+    {
+      "id": "weglin-niedrzwica",
+      "name": {
+        "en": "Lublin Węglin – Niedrzwica Duża",
+        "ro": "Lublin Węglin – Niedrzwica Duża"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-02-28",
+        "constructionStart": "2019-08-12",
+        "opened": "2021-12-16"
+      },
+      "lengthKm": 12,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 312.3,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-02-28",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 312.3,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-08-21",
+          "sourceRef": "msbd-weglin-niedrzwica"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-02-28",
+          "sourceRef": "msbd-weglin-niedrzwica"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-08-12",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-16",
+          "sourceRef": "msbd-weglin-niedrzwica"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Aldesa Construcciones Polska Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Aldesa Construcciones Polska with Aldesa Construcciones S.A. The permit (ZRID) was issued on 12 August 2019. Opened on 16 December 2021. The drawn centreline is 13% longer than the 12 km stated.",
+        "ro": "Proiectare și construcție de Aldesa Construcciones Polska împreună cu Aldesa Construcciones S.A. Autorizația (ZRID) a fost emisă la 12 august 2019. Deschis la 16 decembrie 2021. Axul desenat este cu 13% mai lung decât cei 12 km indicați."
+      },
+      "sourceRefs": [
+        "msbd-weglin-niedrzwica",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "weglin-niedrzwica"
+    },
+    {
+      "id": "niedrzwica-krasnik-polnoc",
+      "name": {
+        "en": "Niedrzwica Duża – Kraśnik Północ",
+        "ro": "Niedrzwica Duża – Kraśnik Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-02-28",
+        "constructionStart": "2019-11-29",
+        "opened": "2022-05-21"
+      },
+      "lengthKm": 20,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 498.03,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-02-28",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 498.03,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-08-21",
+          "sourceRef": "msbd-niedrzwica-krasnik"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-02-28",
+          "sourceRef": "msbd-niedrzwica-krasnik"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-11-29",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-05-21",
+          "sourceRef": "msbd-niedrzwica-krasnik"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Mota-Engil Central Europe (now Duna Polska), design by IVIA. Opened on 21 May 2022. The contract deadline was 28 March 2022 (plwiki). The monthly table lists the contractor as Duna Polska SA.",
+        "ro": "Proiectare și construcție de Mota-Engil Central Europe (acum Duna Polska), proiect IVIA. Deschis la 21 mai 2022. Termenul contractual a fost 28 martie 2022 (plwiki). Tabelul lunar indică Duna Polska SA drept contractor."
+      },
+      "sourceRefs": [
+        "msbd-niedrzwica-krasnik",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "niedrzwica-krasnik-polnoc"
+    },
+    {
+      "id": "krasnik-obwodnica",
+      "name": {
+        "en": "Kraśnik bypass",
+        "ro": "Ocolitoarea Kraśnik"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-02-28",
+        "constructionStart": "2019-10-07",
+        "opened": "2021-12-16"
+      },
+      "lengthKm": 9.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 319.46,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-02-28",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 319.46,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-08-21",
+          "sourceRef": "msbd-krasnik-obwodnica"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-02-28",
+          "sourceRef": "msbd-krasnik-obwodnica"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-10-07",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-16",
+          "sourceRef": "msbd-krasnik-obwodnica"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Aldesa Construcciones Polska Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Aldesa Construcciones Polska with Aldesa Construcciones S.A. Opened on 16 December 2021. The section ends at the Słodków junction, now Kraśnik Południe; the boundary is placed at the mapped Kraśnik Południe junction, 4.9 km from Kraśnik Północ along the drawn line. The sourced length is 9.9 km (about 10 km in GDDKiA documents), so the drawn line is 51% shorter and the next lot 16% longer than their sourced lengths; the sums agree.",
+        "ro": "Proiectare și construcție de Aldesa Construcciones Polska împreună cu Aldesa Construcciones S.A. Deschisă la 16 decembrie 2021. Tronsonul se încheie la nodul Słodków, acum Kraśnik Południe; limita este plasată la nodul cartat Kraśnik Południe, la 4,9 km de Kraśnik Północ de-a lungul liniei desenate. Lungimea din surse este 9,9 km (circa 10 km în documentele GDDKiA), deci linia desenată este cu 51% mai scurtă, iar lotul următor cu 16% mai lung decât lungimile lor din surse; sumele coincid."
+      },
+      "sourceRefs": [
+        "msbd-krasnik-obwodnica",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krasnik-obwodnica"
+    },
+    {
+      "id": "krasnik-poludnie-janow-poludnie",
+      "name": {
+        "en": "Kraśnik Południe – Janów Lubelski Południe",
+        "ro": "Kraśnik Południe – Janów Lubelski Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10-30",
+        "constructionStart": "2019-06-26",
+        "opened": "2021-12-16"
+      },
+      "lengthKm": 24.58,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 538.48,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Sum of Kraśnik Południe – Janów Lubelski Północ (Strabag consortium, 389.94 million) and the Janów Lubelski bypass (Mota-Engil Central Europe, 148.54 million), both signed on 30 October 2017. Including VAT."
+            },
+            "date": "2017-10-30",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 538.48,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Sum of Kraśnik Południe – Janów Lubelski Północ (Strabag consortium, 389.94 million) and the Janów Lubelski bypass (Mota-Engil Central Europe, 148.54 million), both signed on 30 October 2017. Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-08-28",
+          "sourceRef": "msbd-krasnik-janow"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-10-30",
+          "sourceRef": "msbd-krasnik-janow"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-06-26",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-16",
+          "sourceRef": "msbd-krasnik-janow"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Mota-Engil Central Europe S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Two design-build contracts signed on 30 October 2017: Kraśnik Południe – Janów Lubelski Północ (18.15 km, Strabag with Strabag Infrastruktura Południe) and the Janów Lubelski bypass (6.43 km, Mota-Engil Central Europe). Both opened on 16 December 2021. The Kraśnik Południe junction, at the start of this lot, crosses DK74 (MSBD). The boundary follows the mapped junction, so the drawn line is 16% longer than the sourced 24.58 km.",
+        "ro": "Două contracte de proiectare și construcție semnate la 30 octombrie 2017: Kraśnik Południe – Janów Lubelski Północ (18,15 km, Strabag împreună cu Strabag Infrastruktura Południe) și ocolitoarea Janów Lubelski (6,43 km, Mota-Engil Central Europe). Ambele au fost deschise la 16 decembrie 2021. Nodul Kraśnik Południe, la începutul acestui lot, intersectează DK74 (MSBD). Limita urmează nodul cartat, deci linia desenată este cu 16% mai lungă decât cei 24,58 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-krasnik-janow",
+        "msbd-janow-obwodnica",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krasnik-poludnie-janow-poludnie"
+    },
+    {
+      "id": "janow-poludnie-lasy-janowskie",
+      "name": {
+        "en": "Janów Lubelski Południe – Lasy Janowskie",
+        "ro": "Janów Lubelski Południe – Lasy Janowskie"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10-30",
+        "constructionStart": "2019-08-05",
+        "opened": "2021-06-14"
+      },
+      "lengthKm": 8.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 183.55,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Including VAT."
+            },
+            "date": "2017-10-30",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 183.55,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-08-28",
+          "sourceRef": "msbd-janow-lasy"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-10-30",
+          "sourceRef": "msbd-janow-lasy"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-08-05",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-06-14",
+          "sourceRef": "msbd-janow-lasy"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Strabag with Strabag Infrastruktura Południe. Opened on 14 June 2021 (the MSBD page; plwiki gives 15 June), the first of the Lublin – Rzeszów sections in this stretch to open.",
+        "ro": "Proiectare și construcție de Strabag împreună cu Strabag Infrastruktura Południe. Deschis la 14 iunie 2021 (pagina MSBD; plwiki indică 15 iunie), primul tronson din acest segment Lublin – Rzeszów care s-a deschis."
+      },
+      "sourceRefs": [
+        "msbd-janow-lasy",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "janow-poludnie-lasy-janowskie"
+    },
+    {
+      "id": "lasy-janowskie-zdziary",
+      "name": {
+        "en": "Lasy Janowskie – Zdziary",
+        "ro": "Lasy Janowskie – Zdziary"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-06-18",
+        "constructionStart": "2020-02-28",
+        "opened": "2021-10-11"
+      },
+      "lengthKm": 9.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 236.33,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-06-18",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 236.33,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-18",
+          "sourceRef": "msbd-lasy-zdziary"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-06-18",
+          "sourceRef": "msbd-lasy-zdziary"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-02-28",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-10-11",
+          "sourceRef": "msbd-lasy-zdziary"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Strabag with Strabag Infrastruktura Południe. Opened on 11 October 2021.",
+        "ro": "Proiectare și construcție de Strabag împreună cu Strabag Infrastruktura Południe. Deschis la 11 octombrie 2021."
+      },
+      "sourceRefs": [
+        "msbd-lasy-zdziary",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lasy-janowskie-zdziary"
+    },
+    {
+      "id": "zdziary-rudnik",
+      "name": {
+        "en": "Zdziary – Rudnik nad Sanem",
+        "ro": "Zdziary – Rudnik nad Sanem"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-06-18",
+        "constructionStart": "2019-10-10",
+        "opened": "2022-04-29"
+      },
+      "lengthKm": 8.22,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 286.89,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-06-18",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 286.89,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-18",
+          "sourceRef": "msbd-zdziary-rudnik"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-06-18",
+          "sourceRef": "msbd-zdziary-rudnik"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-10-10",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-04-29",
+          "sourceRef": "msbd-zdziary-rudnik"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mosty Łódź S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Mosty Łódź, including the bridge over the San. Opened on 29 April 2022 (the contract deadline was 15 April 2022). plwiki gives about 9 km and the MSBD page 8.22 km. The end is cut at the mapped Rudnik nad Sanem junction, so the drawn line is 9.9 km, 20% longer than the MSBD figure.",
+        "ro": "Proiectare și construcție de Mosty Łódź, inclusiv podul peste San. Deschis la 29 aprilie 2022 (termenul contractual a fost 15 aprilie 2022). plwiki indică circa 9 km, iar pagina MSBD 8,22 km. Capătul este tăiat la nodul cartat Rudnik nad Sanem, deci linia desenată are 9,9 km, cu 20% mai mult decât cifra MSBD."
+      },
+      "sourceRefs": [
+        "msbd-zdziary-rudnik",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zdziary-rudnik"
+    },
+    {
+      "id": "rudnik-nisko-lowisko",
+      "name": {
+        "en": "Rudnik nad Sanem – Nisko – Łowisko",
+        "ro": "Rudnik nad Sanem – Nisko – Łowisko"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-06-18",
+        "constructionStart": "2020-01-07",
+        "opened": "2021-12-06"
+      },
+      "lengthKm": 27.93,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 802.32,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Sum of three contracts, all signed in 2018: Rudnik nad Sanem – Nisko Południe (Strabag consortium, 196.34 million, 18 June), Nisko – Jeżowe (Mostostal Warszawa with Acciona, 272.46 million, 14 November) and Jeżowe – Łowisko (Budimex, 333.52 million, 9 August). Including VAT."
+            },
+            "date": "2018-11-14",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 802.32,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Sum of three contracts, all signed in 2018: Rudnik nad Sanem – Nisko Południe (Strabag consortium, 196.34 million, 18 June), Nisko – Jeżowe (Mostostal Warszawa with Acciona, 272.46 million, 14 November) and Jeżowe – Łowisko (Budimex, 333.52 million, 9 August). Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-18",
+          "sourceRef": "msbd-rudnik-nisko"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-06-18",
+          "sourceRef": "msbd-rudnik-nisko"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-01-07",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-06",
+          "sourceRef": "msbd-rudnik-nisko"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Mostostal Warszawa S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Acciona Construcción S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Three design-build contracts, all opened to traffic on 6 December 2021: Rudnik nad Sanem – Nisko Południe (6.45 km), Nisko – Jeżowe (11.15 km) and Jeżowe – Łowisko (10.33 km). The MSBD pages list contract values of 196.34, 272.69 and 335.93 million PLN; the monthly table values are used here because it states they are gross. The lot is drawn from the mapped Rudnik nad Sanem junction to the mapped Łowisko junction (27.9 km, equal to the sourced sum); the three sections are not drawn separately.",
+        "ro": "Trei contracte de proiectare și construcție, toate deschise traficului la 6 decembrie 2021: Rudnik nad Sanem – Nisko Południe (6,45 km), Nisko – Jeżowe (11,15 km) și Jeżowe – Łowisko (10,33 km). Paginile MSBD indică valori de contract de 196,34, 272,69 și 335,93 milioane PLN; aici se folosesc valorile din tabelul lunar, deoarece acesta precizează că sunt brute. Lotul este desenat de la nodul cartat Rudnik nad Sanem până la nodul cartat Łowisko (27,9 km, egal cu suma din surse); cele trei tronsoane nu sunt desenate separat."
+      },
+      "sourceRefs": [
+        "msbd-rudnik-nisko",
+        "msbd-nisko-jezowe",
+        "msbd-jezowe-lowisko",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rudnik-nisko-lowisko"
+    },
+    {
+      "id": "lowisko-sokolow-polnoc",
+      "name": {
+        "en": "Łowisko – Sokołów Małopolski Północ",
+        "ro": "Łowisko – Sokołów Małopolski Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-12-21",
+        "constructionStart": "2020-07-13",
+        "opened": "2021-12-23"
+      },
+      "lengthKm": 8.19,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 286.4,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-12-21",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 286.4,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-18",
+          "sourceRef": "msbd-lowisko-sokolow"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-12-21",
+          "sourceRef": "msbd-lowisko-sokolow"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-07-13",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-23",
+          "sourceRef": "msbd-lowisko-sokolow"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Budimex. Opened on 23 December 2021. The section ends at the Sokołów Małopolski Północ junction, where the dual carriageway road ends and the single-carriageway section begins. The start is cut at the mapped Łowisko junction, so the drawn line is 13% shorter than the sourced 8.19 km.",
+        "ro": "Proiectare și construcție de Budimex. Deschis la 23 decembrie 2021. Tronsonul se încheie la nodul Sokołów Małopolski Północ, unde se termină drumul cu două căi de rulare și începe tronsonul cu o singură cale. Începutul este tăiat la nodul cartat Łowisko, deci linia desenată este cu 13% mai scurtă decât cei 8,19 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-lowisko-sokolow",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lowisko-sokolow-polnoc"
+    },
+    {
+      "id": "sokolow-stobierna",
+      "name": {
+        "en": "Sokołów Małopolski Północ – Stobierna",
+        "ro": "Sokołów Małopolski Północ – Stobierna"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-06-05",
+        "constructionStart": "2015-07-23",
+        "opened": "2017-09-01"
+      },
+      "lengthKm": 12.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 289.98,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Including VAT."
+            },
+            "date": "2014-06-05",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 289.98,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-06-05",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2015-07-23",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-09-01",
+          "sourceRef": "msbd-sokolow-stobierna"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Aldesa Construcciones Polska Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Built by a consortium led by Aldesa Construcciones Polska, in a design-build system, as a single-carriageway expressway. The permit (ZRID) was issued on 10 July 2015 and the road opened on 1 September 2017. A second carriageway is being added on Sokołów Małopolski Północ – Jasionka (13.83 km, Strabag, contract signed 21 November 2022, 69% in May 2026 per plwiki) and is not a separate lot. No junction is mapped at Stobierna, so the boundary with Stobierna – Rzeszów Wschód is placed by the sourced length of 12.5 km.",
+        "ro": "Construit de un consorțiu condus de Aldesa Construcciones Polska, în sistem proiectare și construcție, ca drum expres cu o singură cale de rulare. Autorizația (ZRID) a fost emisă la 10 iulie 2015, iar drumul a fost deschis la 1 septembrie 2017. A doua cale de rulare se adaugă pe Sokołów Małopolski Północ – Jasionka (13,83 km, Strabag, contract semnat la 21 noiembrie 2022, 69% în mai 2026 conform plwiki) și nu este un lot separat. Niciun nod nu este cartat la Stobierna, deci limita cu Stobierna – Rzeszów Wschód este plasată după lungimea din surse de 12,5 km."
+      },
+      "sourceRefs": [
+        "msbd-sokolow-stobierna",
+        "msbd-sokolow-jasionka-ii",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sokolow-stobierna"
+    },
+    {
+      "id": "stobierna-rzeszow-wschod",
+      "name": {
+        "en": "Stobierna – Rzeszów Wschód",
+        "ro": "Stobierna – Rzeszów Wschód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-02-08",
+        "opened": "2012-09-10"
+      },
+      "lengthKm": 6.89,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 213.58,
+              "currency": "PLN",
+              "year": 2010,
+              "note": "Contract value 213,576,067.49 PLN as stated by plwiki; VAT basis not stated. The MSBD page lists 241.63 million PLN for works."
+            },
+            "date": "2010-02-08",
+            "sourceRef": "pl-wikipedia-s19"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 213.58,
+          "currency": "PLN",
+          "year": 2010,
+          "note": "Contract value 213,576,067.49 PLN as stated by plwiki; VAT basis not stated. The MSBD page lists 241.63 million PLN for works."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2010-02-08",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-09-10",
+          "sourceRef": "msbd-stobierna-rzeszow"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "MSF Engenharia S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Built by a Polish–Portuguese consortium led by MSF Engenharia. plwiki gives 3.1 km of dual carriageway (Jasionka – Rzeszów Wschód) and 3.8 km of single carriageway (Stobierna – Jasionka); the MSBD page gives 6.89 km. Opened on 10 September 2012. The second carriageway between Stobierna and Jasionka is part of the Sokołów Małopolski Północ – Jasionka expansion.",
+        "ro": "Construit de un consorțiu polono-portughez condus de MSF Engenharia. plwiki indică 3,1 km cu două căi de rulare (Jasionka – Rzeszów Wschód) și 3,8 km cu o singură cale (Stobierna – Jasionka); pagina MSBD indică 6,89 km. Deschis la 10 septembrie 2012. A doua cale între Stobierna și Jasionka face parte din extinderea Sokołów Małopolski Północ – Jasionka."
+      },
+      "sourceRefs": [
+        "msbd-stobierna-rzeszow",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "stobierna-rzeszow-wschod"
+    },
+    {
+      "id": "rzeszow-zachod-swilcza",
+      "name": {
+        "en": "Rzeszów Zachód – Świlcza",
+        "ro": "Rzeszów Zachód – Świlcza"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-04-22",
+        "opened": "2013-12-13"
+      },
+      "lengthKm": 4.375,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2010-04-22",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2012-05-25",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "awarded",
+          "date": "2013-01-18",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-12-13",
+          "sourceRef": "msbd-rzeszow-zachod-swilcza"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia Polska S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The first contract, signed on 22 April 2010 with a consortium of Radko, Autostrada Wschodnia and Punj Lloyd for this section and A4 Rzeszów Zachód – Rzeszów Centralny (441.7 million PLN in total, about 207.5 million for the S19 part), was terminated on 25 May 2012. A new contract with Eurovia Polska was signed on 18 January 2013 and the section opened on 13 December 2013. No value is recorded because the 2013 contract value is not in the sources. Between Rzeszów Wschód and Rzeszów Zachód, S19 runs on A4, which is not drawn here. The drawn centreline is 8% longer than the sourced 4.375 km.",
+        "ro": "Primul contract, semnat la 22 aprilie 2010 cu un consorțiu Radko, Autostrada Wschodnia și Punj Lloyd pentru acest tronson și A4 Rzeszów Zachód – Rzeszów Centralny (441,7 milioane PLN în total, circa 207,5 milioane pentru partea S19), a fost reziliat la 25 mai 2012. Un nou contract cu Eurovia Polska a fost semnat la 18 ianuarie 2013, iar tronsonul a fost deschis la 13 decembrie 2013. Nu este înregistrată nicio valoare, deoarece valoarea contractului din 2013 nu apare în surse. Între Rzeszów Wschód și Rzeszów Zachód, S19 folosește A4, care nu este desenată aici. Axul desenat este cu 8% mai lung decât cei 4,375 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-rzeszow-zachod-swilcza",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rzeszow-zachod-swilcza"
+    },
+    {
+      "id": "swilcza-rzeszow-poludnie",
+      "name": {
+        "en": "Świlcza – Rzeszów Południe",
+        "ro": "Świlcza – Rzeszów Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-04-09",
+        "constructionStart": "2015-06-02",
+        "opened": "2017-12-07"
+      },
+      "lengthKm": 6.31,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 342.57,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Contract value 342,566,799.40 PLN gross (plwiki and the monthly table)."
+            },
+            "date": "2014-04-09",
+            "sourceRef": "pl-wikipedia-s19"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 342.57,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Contract value 342,566,799.40 PLN gross (plwiki and the monthly table)."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-04-09",
+          "sourceRef": "pl-wikipedia-s19"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2015-06-02",
+          "sourceRef": "gddkia-monthly-table"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-07",
+          "sourceRef": "msbd-swilcza-rzeszow-poludnie"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), per the MSBD pages.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), conform paginilor MSBD."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia Polska S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Warbud S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build by Eurovia Polska with Warbud, signed on 9 April 2014 as the first contract of the 2014–2020 EU financial perspective. The permit (ZRID) was issued on 19 May 2015 and the section opened on 7 December 2017. Includes the Świlcza junction with DK94 and the Rzeszów Południe (Kielanówka) junction.",
+        "ro": "Proiectare și construcție de Eurovia Polska împreună cu Warbud, semnat la 9 aprilie 2014 ca primul contract din perspectiva financiară UE 2014–2020. Autorizația (ZRID) a fost emisă la 19 mai 2015, iar tronsonul a fost deschis la 7 decembrie 2017. Include nodul Świlcza cu DK94 și nodul Rzeszów Południe (Kielanówka)."
+      },
+      "sourceRefs": [
+        "msbd-swilcza-rzeszow-poludnie",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "swilcza-rzeszow-poludnie"
+    },
+    {
+      "id": "rzeszow-poludnie-babica",
+      "name": {
+        "en": "Rzeszów Południe – Babica (Babica tunnel)",
+        "ro": "Rzeszów Południe – Babica (tunelul Babica)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-07-10",
+        "constructionStart": "2022-03-01",
+        "expectedOpening": "2028-01"
+      },
+      "lengthKm": 10.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2230.17,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Including VAT."
+            },
+            "date": "2020-07-10",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 2230.17,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 2.26
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-10-03",
+          "sourceRef": "msbd-rzeszow-babica"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-07-10",
+          "sourceRef": "msbd-rzeszow-babica"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-03-01",
+          "sourceRef": "gddkia-monthly-table"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the EU programme Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS); the MSBD page lists co-financing of 1.5 billion PLN.",
+            "ro": "Cofinanțat prin programul UE Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko (FEnIKS); pagina MSBD indică o cofinanțare de 1,5 miliarde PLN."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mostostal Warszawa S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Acciona Construcción S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build with Mostostal Warszawa and Acciona, signed on 10 July 2020; works began on 1 March 2022 (monthly table) after the permit of 24 February 2022. The lot includes the Babica tunnel, running from about km 18+475 to 20+730 of the project chainage, about 2.26 km (MSBD description; the plwiki route table gives 2 km), bored with the machine Karpatka. It also has the Lutoryż rest areas and several viaducts. The contract deadline was moved to January 2028; GDDKiA gives 58% progress in May 2026 and cites methane, a redesigned tunnel and slower boring as the reasons for the delay. The length is the sourced 10.3 km.",
+        "ro": "Proiectare și construcție cu Mostostal Warszawa și Acciona, semnat la 10 iulie 2020; lucrările au început la 1 martie 2022 (tabelul lunar), după autorizația din 24 februarie 2022. Lotul include tunelul Babica, de la circa km 18+475 la 20+730 al kilometrajului proiectului, circa 2,26 km (descrierea MSBD; tabelul de traseu plwiki indică 2 km), săpat cu mașina Karpatka. Are și zonele de odihnă Lutoryż și mai multe viaducte. Termenul contractual a fost mutat la ianuarie 2028; GDDKiA indică un progres de 58% în mai 2026 și citează metanul, reproiectarea tunelului și săparea mai lentă ca motive ale întârzierii. Lungimea este cei 10,3 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-rzeszow-babica",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rzeszow-poludnie-babica"
+    },
+    {
+      "id": "babica-jawornik",
+      "name": {
+        "en": "Babica – Jawornik",
+        "ro": "Babica – Jawornik"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-02-14",
+        "constructionStart": "2023-09-04",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 11.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1253.37,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT."
+            },
+            "date": "2022-02-14",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1253.37,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-06-30",
+          "sourceRef": "msbd-babica-jawornik"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-02-14",
+          "sourceRef": "msbd-babica-jawornik"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-09-04",
+          "sourceRef": "gddkia-monthly-table"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Przedsiębiorstwo Usług Technicznych Intercor Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build signed on 14 February 2022, with the Strzyżów – Żarnowa junction, a rest area at Jawornik and a temporary link to DK19. The permit (ZRID) was issued on 25 August 2023 (plwiki gives 29 August) and the monthly table gives 4 September 2023 as the works start. GDDKiA gives 2027 as the end of works and 80% progress in May 2026.",
+        "ro": "Proiectare și construcție semnate la 14 februarie 2022, cu nodul Strzyżów – Żarnowa, o zonă de odihnă la Jawornik și o legătură temporară cu DK19. Autorizația (ZRID) a fost emisă la 25 august 2023 (plwiki indică 29 august), iar tabelul lunar indică 4 septembrie 2023 ca început al lucrărilor. GDDKiA indică 2027 ca sfârșit al lucrărilor și un progres de 80% în mai 2026."
+      },
+      "sourceRefs": [
+        "msbd-babica-jawornik",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "babica-jawornik"
+    },
+    {
+      "id": "jawornik-domaradz",
+      "name": {
+        "en": "Jawornik – Lutcza – Domaradz",
+        "ro": "Jawornik – Lutcza – Domaradz"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-05-28",
+        "expectedOpening": "2031"
+      },
+      "lengthKm": 11.63,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 3325.89,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Sum of Jawornik – Lutcza (Gülermak with Budimex, 1,909.65 million, signed 13 November 2024) and Lutcza – Domaradz (Kolin, 1,416.24 million, signed 28 May 2024). Including VAT."
+            },
+            "date": "2024-11-13",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 3325.89,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Sum of Jawornik – Lutcza (Gülermak with Budimex, 1,909.65 million, signed 13 November 2024) and Lutcza – Domaradz (Kolin, 1,416.24 million, signed 28 May 2024). Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-07-01",
+          "sourceRef": "msbd-lutcza-domaradz"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-05-28",
+          "sourceRef": "msbd-lutcza-domaradz"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Kolin İnşaat Turizm Sanayi ve Ticaret",
+          "role": "builder"
+        },
+        {
+          "name": "Gülermak",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Two design-build contracts: Jawornik – Lutcza (5.25 km, Gülermak and Budimex, with a further Gülermak partner named in the monthly table) and Lutcza – Domaradz (6.38 km, Kolin; a first tender was annulled because offers exceeded the estimate). Permit applications were filed on 13 January 2026 and 11 December 2025 and no decision is recorded, so the lot is shown as awarded. GDDKiA gives completion dates of 2031 and June 2030. The Domaradz junction is included. The next stretch, Domaradz – Krosno (12.5 km), is not drawn: its contract was terminated on 14 May 2026 and a new tender was announced on 1 September 2026 (MSBD).",
+        "ro": "Două contracte de proiectare și construcție: Jawornik – Lutcza (5,25 km, Gülermak și Budimex, cu un alt partener Gülermak numit în tabelul lunar) și Lutcza – Domaradz (6,38 km, Kolin; o primă licitație a fost anulată deoarece ofertele depășeau estimarea). Cererile de autorizare au fost depuse la 13 ianuarie 2026 și 11 decembrie 2025, iar nu este înregistrată nicio decizie, deci lotul apare ca atribuit. GDDKiA indică finalizarea în 2031 și iunie 2030. Nodul Domaradz este inclus. Tronsonul următor, Domaradz – Krosno (12,5 km), nu este desenat: contractul său a fost reziliat la 14 mai 2026, iar o nouă licitație a fost anunțată la 1 septembrie 2026 (MSBD)."
+      },
+      "sourceRefs": [
+        "msbd-jawornik-lutcza",
+        "msbd-lutcza-domaradz",
+        "msbd-domaradz-krosno",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jawornik-domaradz"
+    },
+    {
+      "id": "krosno-dukla",
+      "name": {
+        "en": "Krosno – Miejsce Piastowe – Dukla",
+        "ro": "Krosno – Miejsce Piastowe – Dukla"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-07-12",
+        "opened": "2025-12-23"
+      },
+      "lengthKm": 20.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 843.98,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Sum of Krosno – Miejsce Piastowe (Aldesa, 365.07 million, signed 13 September 2021) and Miejsce Piastowe – Dukla (Strabag, 478.91 million, signed 12 July 2021). Including VAT."
+            },
+            "date": "2021-09-13",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 843.98,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Sum of Krosno – Miejsce Piastowe (Aldesa, 365.07 million, signed 13 September 2021) and Miejsce Piastowe – Dukla (Strabag, 478.91 million, signed 12 July 2021). Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-12-24",
+          "sourceRef": "msbd-krosno-miejsce-piastowe"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-07-12",
+          "sourceRef": "msbd-miejsce-piastowe-dukla"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-23",
+          "sourceRef": "msbd-krosno-miejsce-piastowe"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Aldesa Construcciones Polska Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Two design-build contracts, both opened to traffic on 23 December 2025: Krosno – Miejsce Piastowe (10.3 km, Aldesa Construcciones Polska with Aldesa Construcciones, with two junctions) and Miejsce Piastowe – Dukla (about 10.1 km, Strabag, with the Dukla junction and the Równe rest area). The permits (ZRID) were issued on 16 February 2023 and 28 September 2023. The drawn centreline is 7% shorter than the 20.4 km sourced. The stretch before it, Domaradz – Krosno (12.5 km), is not drawn: it is being re-tendered.",
+        "ro": "Două contracte de proiectare și construcție, ambele deschise traficului la 23 decembrie 2025: Krosno – Miejsce Piastowe (10,3 km, Aldesa Construcciones Polska împreună cu Aldesa Construcciones, cu două noduri) și Miejsce Piastowe – Dukla (circa 10,1 km, Strabag, cu nodul Dukla și zona de odihnă Równe). Autorizațiile (ZRID) au fost emise la 16 februarie 2023 și 28 septembrie 2023. Axul desenat este cu 7% mai scurt decât cei 20,4 km din surse. Tronsonul dinaintea lui, Domaradz – Krosno (12,5 km), nu este desenat: este în curs de relicitare."
+      },
+      "sourceRefs": [
+        "msbd-krosno-miejsce-piastowe",
+        "msbd-miejsce-piastowe-dukla",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krosno-dukla"
+    },
+    {
+      "id": "dukla-barwinek",
+      "name": {
+        "en": "Dukla – Barwinek",
+        "ro": "Dukla – Barwinek"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-10-10",
+        "constructionStart": "2025-07-23",
+        "expectedOpening": "2027-05-04"
+      },
+      "lengthKm": 18.18,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1541.12,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT."
+            },
+            "date": "2022-10-10",
+            "sourceRef": "gddkia-monthly-table"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1541.12,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-12-15",
+          "sourceRef": "msbd-dukla-barwinek"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-10-10",
+          "sourceRef": "msbd-dukla-barwinek"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-07-23",
+          "sourceRef": "gddkia-monthly-table"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed by the Connecting Europe Facility (CEF): the MSBD page lists co-financing of 326,637,490 EUR.",
+            "ro": "Cofinanțat prin Mecanismul pentru Interconectarea Europei (CEF): pagina MSBD indică o cofinanțare de 326.637.490 EUR."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Polaqua Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build with Polaqua signed on 10 October 2022, with the Barwinek junction at the Slovak border. The road has no hard shoulder, only emergency bays. The permit (ZRID) was applied for on 1 December 2023 and issued on 2 July 2025, and the monthly table gives 23 July 2025 as the works start. Contract deadline 4 May 2027; plwiki cites 13% progress in May 2026 and says the date may change because the permit was late and structures need redesign.",
+        "ro": "Proiectare și construcție cu Polaqua, semnate la 10 octombrie 2022, cu nodul Barwinek la granița cu Slovacia. Drumul nu are bandă de urgență, doar refugii. Autorizația (ZRID) a fost solicitată la 1 decembrie 2023 și emisă la 2 iulie 2025, iar tabelul lunar indică 23 iulie 2025 ca început al lucrărilor. Termen contractual 4 mai 2027; plwiki citează un progres de 13% în mai 2026 și spune că termenul se poate schimba deoarece autorizația a întârziat și structurile necesită reproiectare."
+      },
+      "sourceRefs": [
+        "msbd-dukla-barwinek",
+        "gddkia-monthly-table",
+        "pl-wikipedia-s19",
+        "osm-relation-s19",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dukla-barwinek"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pl-wikipedia-s19",
+      "title": "Wikipedia (pl): Droga ekspresowa S19 (Polska), section histories and route table",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S19_(Polska)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-monthly-table",
+      "title": "GDDKiA: Bieżąca realizacja RPBDK do 2030 r., monthly contract table (September 2026 edition, PDF)",
+      "url": "https://www.gov.pl/attachment/af0bc322-7a54-4ac3-973b-292ab5a4a2fa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-bialystok-2026-05-14",
+      "title": "GDDKiA Oddział Białystok: Oddanie do ruchu kolejnych odcinków S19 coraz bliżej (14.05.2026)",
+      "url": "https://www.gov.pl/web/gddkia-bialystok/oddanie-do-ruchu-kolejnych-odcinkow-s19-coraz-blizej",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-kuznica-sokolka-polnoc",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Kuźnica – Sokółka Północ",
+      "url": "https://www.gov.pl/web/gddkia/s19-kuznica---sokolka-polnoc",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-sokolka-czarna",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Sokółka Północ – Czarna Białostocka",
+      "url": "https://www.gov.pl/web/gddkia/s19-sokolka---czarna-bialostocka",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-czarna-polnoc",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Czarna Białostocka – Białystok Północ",
+      "url": "https://www.gov.pl/web/gddkia/s19-czarna-bialostocka---bialystok-polnoc",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-polnoc-dobrzyniewo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Białystok Północ – Dobrzyniewo",
+      "url": "https://www.gov.pl/web/gddkia/s19-bialystok-polnoc---dobrzyniewo",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-krynice-zachod",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Krynice – Dobrzyniewo – Białystok Zachód",
+      "url": "https://www.gov.pl/web/gddkia/s19-krynice---dobrzyniewo---bialystok-zachod",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-zachod-ksiezyno",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Białystok Zachód – Księżyno",
+      "url": "https://www.gov.pl/web/gddkia/s19-wezel-bialystok-zachod-bez-wezla---wezel-ksiezyno-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-poludnie-ploski",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Białystok Południe – Ploski",
+      "url": "https://www.gov.pl/web/gddkia/s19-wezel-bialystok-poludnie-bez-wezla---ploski",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-deniski-hacki",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Deniski – Haćki",
+      "url": "https://www.gov.pl/web/gddkia/s19-ploski---hacki",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-bielsk-bocki",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Bielsk Podlaski Zachód – Boćki",
+      "url": "https://www.gov.pl/web/gddkia/s19-wezel-bielsk-podlaski-zachod-bez-wezla---wezel-bocki-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-bocki-malewice",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Boćki – Malewice",
+      "url": "https://www.gov.pl/web/gddkia/s19-wezel-bocki-bez-wezla---malewice",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-malewice-chlebczyn",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Malewice – Chlebczyn",
+      "url": "https://www.gov.pl/web/gddkia/s19-malewice---chlebczyn2",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-losice",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 granica woj. podlaskiego – Łosice – granica woj. lubelskiego",
+      "url": "https://www.gov.pl/web/gddkia/s19-granica-woj-podlaskiego---losice-granica-woj-lubelskiego",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-miedzyrzec-etap-ii",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 gr. woj. lubelskiego i mazowieckiego – Międzyrzec Podlaski (koniec obwodnicy)",
+      "url": "https://www.gov.pl/web/gddkia/s19-obwodnica-miedzyrzeca-podlaskiego---etap-ii",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-miedzyrzec-obwodnica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 obwodnica Międzyrzeca Podlaskiego",
+      "url": "https://www.gov.pl/web/gddkia/s19-obwodnica-miedzyrzeca-podlaskiego",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-miedzyrzec-radzyn",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Międzyrzec Podlaski – Radzyń Podlaski",
+      "url": "https://www.gov.pl/web/gddkia/s19-miedzyrzec-podl---radzyn-podl",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-radzyn-kock",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Radzyń Podlaski – Kock",
+      "url": "https://www.gov.pl/web/gddkia/s19-odc-radzyn-podl---kock",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-kock-etap-i",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 obwodnica Kocka i Woli Skromowskiej, etap I",
+      "url": "https://www.gov.pl/web/gddkia/s19-obwodnica-kocka-i-woli-skromowskiej---i-etap",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-kock-etap-ii",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 obwodnica Kocka i Woli Skromowskiej, dobudowa II jezdni",
+      "url": "https://www.gov.pl/web/gddkia/s19-obwodnica-kocka-i-woli-skromowskiej---etap-ii",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-kock-lubartow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 koniec obwodnicy Kocka i Woli Skromowskiej – Lubartów Północ",
+      "url": "https://www.gov.pl/web/gddkia/s19-koniec-obwodnicy-kocka-i-woli-skromowskiej--w-lubartow-polnoc-bez-wezla",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-lubartow-rudnik",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Lubartów Północ – Lublin Rudnik",
+      "url": "https://www.gov.pl/web/gddkia/s19-lubartow-polnoc---lublin-rudnik",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-slawinek-weglin",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 obwodnica Lublina (Lublin Sławinek – Lublin Węglin)",
+      "url": "https://www.gov.pl/web/gddkia/s19-obwodnica-lublina-lublin-slawinek---lublin-weglin",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-weglin-niedrzwica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Lublin Węglin – Niedrzwica Duża",
+      "url": "https://www.gov.pl/web/gddkia/s19-lublin-weglin-bez-wezla---niedrzwica-duza-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-niedrzwica-krasnik",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Niedrzwica Duża – Kraśnik Północ",
+      "url": "https://www.gov.pl/web/gddkia/s19-niedrzwica-duza-bez-wezla--krasnik-polnoc-bez-wezla",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-krasnik-obwodnica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 obwodnica Kraśnika",
+      "url": "https://www.gov.pl/web/gddkia/s19-obwodnica-krasnika",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-krasnik-janow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Kraśnik Południe – Janów Lubelski Północ",
+      "url": "https://www.gov.pl/web/gddkia/s19-krasnik-poludnie-bez-wezla---janow-lubelski-polnoc-bez-wezla",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-janow-obwodnica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Janów Lubelski Północ – Janów Lubelski Południe",
+      "url": "https://www.gov.pl/web/gddkia/s19-janow-lubelski-polnoc---janow-lubelski-poludnie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-janow-lasy",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Janów Lubelski Południe – Lasy Janowskie",
+      "url": "https://www.gov.pl/web/gddkia/s19-janow-lubelski-poludnie-bez-wezla---lasy-janowskie-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-lasy-zdziary",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Lasy Janowskie – Zdziary",
+      "url": "https://www.gov.pl/web/gddkia/s19-lasy-janowskie-bez-wezla---zdziary-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-zdziary-rudnik",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Zdziary – Rudnik nad Sanem",
+      "url": "https://www.gov.pl/web/gddkia/s19-zdziary--bez-wezla---rudnik-nad-sanem-bez-wezla2",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-rudnik-nisko",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Rudnik nad Sanem – Nisko Południe",
+      "url": "https://www.gov.pl/web/gddkia/s19-rudnik-nad-sanem-z-wezlem---nisko-poludnie-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-nisko-jezowe",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Nisko – Jeżowe",
+      "url": "https://www.gov.pl/web/gddkia/s19-nisko-poludnie---podgorze",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-jezowe-lowisko",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Jeżowe – Łowisko",
+      "url": "https://www.gov.pl/web/gddkia/s19-podgorze---kamien",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-lowisko-sokolow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Łowisko – Sokołów Małopolski Północ",
+      "url": "https://www.gov.pl/web/gddkia/s19-kamien---sokolow-malopolski-polnoc",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-sokolow-stobierna",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Sokołów Małopolski Północ – Stobierna",
+      "url": "https://www.gov.pl/web/gddkia/s19-sokolow-malopolski-polnoc--stobierna",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-stobierna-rzeszow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Stobierna – Rzeszów Wschód",
+      "url": "https://www.gov.pl/web/gddkia/s19-stobierna---rzeszow-wschod",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-sokolow-jasionka-ii",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Sokołów Młp. Północ – Jasionka, etap II (dobudowa drugiej jezdni)",
+      "url": "https://www.gov.pl/web/gddkia/s19-sokolow-mlp-polnoc-bez-wezla--jasionka-bez-wezla--etap-ii-dobudowa-drugiej-jezdni",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-rzeszow-zachod-swilcza",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Rzeszów Zachód – Świlcza",
+      "url": "https://www.gov.pl/web/gddkia/s19-rzeszow-zachod---swilcza",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-swilcza-rzeszow-poludnie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Świlcza – Rzeszów Południe",
+      "url": "https://www.gov.pl/web/gddkia/s19-swilcza-bez-wezla--rzeszow-poludnie-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-rzeszow-babica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Rzeszów Południe – Babica",
+      "url": "https://www.gov.pl/web/gddkia/s19-rzeszow-poludnie-bez-wezla---babica-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-babica-jawornik",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Babica – Jawornik",
+      "url": "https://www.gov.pl/web/gddkia/s19-babica-bez-wezla---jawornik-wraz-z-tymczasowym-lacznikiem-dr-eksp-s19-z-dk-19",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-jawornik-lutcza",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Jawornik – Lutcza",
+      "url": "https://www.gov.pl/web/gddkia/s19-jawornik---domaradz-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-lutcza-domaradz",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Lutcza – Domaradz",
+      "url": "https://www.gov.pl/web/gddkia/s19-lutcza-bez-wezla---domaradz-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-domaradz-krosno",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Domaradz – Krosno",
+      "url": "https://www.gov.pl/web/gddkia/s19-domaradz-bez-wezla--iskrzynia-bez-wezla",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-krosno-miejsce-piastowe",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Krosno – Miejsce Piastowe",
+      "url": "https://www.gov.pl/web/gddkia/s19-iskrzynia-z-wezlem---miejsce-piastowe-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-miejsce-piastowe-dukla",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Miejsce Piastowe – Dukla",
+      "url": "https://www.gov.pl/web/gddkia/s19-miejsce-piastowe-bez-wezla--dukla-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-dukla-barwinek",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S19 Dukla – Barwinek",
+      "url": "https://www.gov.pl/web/gddkia/s19-dukla-bez-wezla--barwinek-granica-panstwa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-relation-s19",
+      "title": "OpenStreetMap: relation 2315275, Droga ekspresowa S19 (network PL:expressway)",
+      "url": "https://www.openstreetmap.org/relation/2315275",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

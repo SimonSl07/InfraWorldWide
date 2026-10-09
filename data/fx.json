@@ -1,10 +1,10 @@
 {
   "base": "EUR",
-  "note": "Annual average euro foreign exchange reference rates, expressed as units of national currency per 1 EUR, so a cost recorded in RON, BGN, CZK, USD or RSD is divided by the rate for its own year to reach euro of that same year. That is all this table licenses: it makes nominal amounts comparable across currencies, not across time (pair it with data/deflators.json for real terms). An annual average also smears intra-year movement, so a contract signed on a single date was not struck at this rate. These are market reference rates, not purchasing-power parities; converting a Romanian and a German cost at them compares money exchanged, not construction bought. EUR is the base and is deliberately absent rather than carried as a self-rate of 1. The Romanian series is published by the ECB on the post-redenomination RON basis for every year, including those before the July 2005 cut of four zeroes (10,000 ROL = 1 RON), so 1999 reads 1.6345 RON/EUR rather than 16,345 ROL/EUR; no conversion was applied here. The Bulgarian lev has been held to the euro by a currency board, and Bulgaria adopted the euro on 1 January 2026 at 1.95583 BGN, making 2025 the last full lev year. The published averages are not all identical to that parity: the ECB reference rate is a market quote disseminated to four decimals, so 2000-2004 sit a few ten-thousandths below parity and only 2005 onward is a flat 1.9558 every year. BGN also has no 1999 figure and its 2000 figure averages July-December only, because the ECB began quoting the lev in July 2000. The ECB publishes no reference rate for the Serbian dinar, so RSD is taken from Eurostat's equivalent annual-average table; it starts in 2001 because 1999 and January-November 2000 are a frozen administered rate of exactly 11.735 dinars per euro, unified with the market rate only in December 2000, and those years are omitted rather than offered as rates at which anything could have been converted. The Czech koruna is published by the ECB for every year from 1999 and has floated freely throughout, so its series moves with the market (36.8843 CZK/EUR in 1999, 24.0043 in 2023).",
+  "note": "Annual average euro foreign exchange reference rates, expressed as units of national currency per 1 EUR, so a cost recorded in RON, BGN, CZK, PLN, USD or RSD is divided by the rate for its own year to reach euro of that same year. That is all this table licenses: it makes nominal amounts comparable across currencies, not across time (pair it with data/deflators.json for real terms). An annual average also smears intra-year movement, so a contract signed on a single date was not struck at this rate. These are market reference rates, not purchasing-power parities; converting a Romanian and a German cost at them compares money exchanged, not construction bought. EUR is the base and is deliberately absent rather than carried as a self-rate of 1. The Romanian series is published by the ECB on the post-redenomination RON basis for every year, including those before the July 2005 cut of four zeroes (10,000 ROL = 1 RON), so 1999 reads 1.6345 RON/EUR rather than 16,345 ROL/EUR; no conversion was applied here. The Bulgarian lev has been held to the euro by a currency board, and Bulgaria adopted the euro on 1 January 2026 at 1.95583 BGN, making 2025 the last full lev year. The published averages are not all identical to that parity: the ECB reference rate is a market quote disseminated to four decimals, so 2000-2004 sit a few ten-thousandths below parity and only 2005 onward is a flat 1.9558 every year. BGN also has no 1999 figure and its 2000 figure averages July-December only, because the ECB began quoting the lev in July 2000. The ECB publishes no reference rate for the Serbian dinar, so RSD is taken from Eurostat's equivalent annual-average table; it starts in 2001 because 1999 and January-November 2000 are a frozen administered rate of exactly 11.735 dinars per euro, unified with the market rate only in December 2000, and those years are omitted rather than offered as rates at which anything could have been converted. The Czech koruna is published by the ECB for every year from 1999 and has floated freely throughout, so its series moves with the market (36.8843 CZK/EUR in 1999, 24.0043 in 2023). The Polish zloty is published by the ECB for every year from 1999, so its series moves with the market (4.2274 PLN/EUR in 1999, 3.5121 in 2008, 4.2397 in 2025).",
   "sources": [
     {
       "title": "European Central Bank Data Portal: Euro foreign exchange reference rates, annual averages [EXR, A.<CUR>.EUR.SP00.A]",
-      "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD+RON+BGN+CZK.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2025"
+      "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD+RON+BGN+CZK+PLN.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2025"
     },
     {
       "title": "Eurostat: Euro/ECU exchange rates, annual data [ert_bil_eur_a], statinfo=AVG; source for RSD and cross-check for RON and USD",
@@ -83,6 +83,41 @@
         "2023": 24.0043,
         "2024": 25.1198,
         "2025": 24.6879
+      }
+    },
+    "PLN": {
+      "label": {
+        "en": "Polish zloty",
+        "ro": "Zlotul polonez"
+      },
+      "perEur": {
+        "1999": 4.2274,
+        "2000": 4.0082,
+        "2001": 3.6721,
+        "2002": 3.8574,
+        "2003": 4.3996,
+        "2004": 4.5268,
+        "2005": 4.023,
+        "2006": 3.8959,
+        "2007": 3.7837,
+        "2008": 3.5121,
+        "2009": 4.3276,
+        "2010": 3.9947,
+        "2011": 4.1206,
+        "2012": 4.1847,
+        "2013": 4.1975,
+        "2014": 4.1843,
+        "2015": 4.1841,
+        "2016": 4.3632,
+        "2017": 4.257,
+        "2018": 4.2615,
+        "2019": 4.2976,
+        "2020": 4.443,
+        "2021": 4.5652,
+        "2022": 4.6861,
+        "2023": 4.542,
+        "2024": 4.3058,
+        "2025": 4.2397
       }
     },
     "RON": {
