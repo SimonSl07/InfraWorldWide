@@ -1,0 +1,414 @@
+{
+  "id": "bg-rail-sofia-plovdiv",
+  "country": "bg",
+  "category": "railway",
+  "name": {
+    "en": "Sofia – Plovdiv railway modernisation",
+    "ro": "Modernizarea liniei de cale ferată Sofia – Plovdiv"
+  },
+  "description": {
+    "en": "Modernisation of line 1 between Sofia and Plovdiv, about 154 km, in four parts. Septemvri – Plovdiv (53.5 km) was rebuilt for 160 km/h and commissioned in March 2017. Sofia – Elin Pelin (23 km), Elin Pelin – Kostenets (51 km in three lots, with Bulgaria's longest railway tunnel at 6.8 km) and Kostenets – Septemvri (24.5 km) are under construction.",
+    "ro": "Modernizarea liniei 1 între Sofia și Plovdiv, circa 154 km, în patru părți. Septemvri – Plovdiv (53,5 km) a fost reconstruită pentru 160 km/h și pusă în exploatare în martie 2017. Sofia – Elin Pelin (23 km), Elin Pelin – Kostenets (51 km în trei loturi, cu cel mai lung tunel feroviar din Bulgaria, de 6,8 km) și Kostenets – Septemvri (24,5 km) sunt în construcție."
+  },
+  "operator": "bg-nric",
+  "corridors": [
+    "ten-t-core"
+  ],
+  "lots": [
+    {
+      "id": "sofia-elin-pelin",
+      "name": {
+        "en": "Sofia – Elin Pelin",
+        "ro": "Sofia – Elin Pelin"
+      },
+      "status": "under_construction",
+      "lengthKm": 23,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility",
+            "ro": "Mecanismul pentru Interconectarea Europei"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Transportno stroitelstvo i vazstanovyavane EAD (TSV EAD)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24,
+        "value": {
+          "amount": 63.34,
+          "currency": "BGN",
+          "year": 2023,
+          "scope": "works",
+          "note": "Excluding VAT. Finishing works on the Sofia – Iskar stretch (km 0+780 to 7+700) only, contract No. 11907 of 30.03.2023."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 63.34,
+              "currency": "BGN",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT. Finishing works on the Sofia – Iskar stretch (km 0+780 to 7+700) only."
+            },
+            "date": "2023-03-30",
+            "sourceRef": "nric-sofia-elin-pelin"
+          }
+        ]
+      },
+      "note": {
+        "en": "Double-track electrified line of about 23 km through Poduyane, Iskar and Kazichene stations (Sofia and Elin Pelin stations are outside the 2023 contract), part of the Sofia – Plovdiv modernisation. The 2023 contract (up to 24 months, BGN 63,336,032.24 excluding VAT) covers only the Sofia – Iskar finishing works. Double-track running was suspended in 2018 during the works; NRIC restored it on the 13 km Iskar – Elin Pelin stretch with its own forces on 9 May 2025. The drawn geometry follows the OpenStreetMap line, 22.55 km from Sofia Central Station to the start of the Elin Pelin – Kostenets project at km 22+554. Contractor in Cyrillic: Транспортно строителство и възстановяване ЕАД (ТСВ ЕАД).",
+        "ro": "Linie dublă electrificată de circa 23 km prin stațiile Poduyane, Iskar și Kazichene (gările Sofia și Elin Pelin sunt în afara contractului din 2023), parte a modernizării Sofia – Plovdiv. Contractul din 2023 (până la 24 de luni, 63.336.032,24 BGN fără TVA) acoperă doar lucrările de finalizare Sofia – Iskar. Circulația pe linie dublă a fost suspendată în 2018 în timpul lucrărilor; NCFI a restabilit-o pe tronsonul Iskar – Elin Pelin de 13 km cu forțe proprii pe 9 mai 2025. Geometria desenată urmează linia din OpenStreetMap, 22,55 km de la Gara Centrală Sofia până la începutul proiectului Elin Pelin – Kostenets la km 22+554. Antreprenor în chirilică: Транспортно строителство и възстановяване ЕАД (ТСВ ЕАД)."
+      },
+      "sourceRefs": [
+        "nric-sofia-elin-pelin",
+        "nric-news-4514"
+      ],
+      "geometryRef": "sofia-elin-pelin"
+    },
+    {
+      "id": "elin-pelin-kostenets-lot-1",
+      "name": {
+        "en": "Elin Pelin – Kostenets, lot 1: Elin Pelin – Vakarel",
+        "ro": "Elin Pelin – Kostenets, lotul 1: Elin Pelin – Vakarel"
+      },
+      "status": "under_construction",
+      "lengthKm": 19.65,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Phase 1: Operational Programme Transport and Transport Infrastructure 2014–2020. Phase 2: Transport Connectivity Programme 2021–2027, grant agreement DPTS-7/11.09.2024 for the whole Elin Pelin – Kostenets project: project value BGN 907.80 million, EU contribution BGN 600.21 million and national co-financing BGN 105.92 million (NRIC marks the project value and the national share as excluding VAT).",
+            "ro": "Faza 1: Programul Operațional Transport și Infrastructură de Transport 2014–2020. Faza 2: Programul Transport Conectivitate 2021–2027, contract de finanțare DPTS-7/11.09.2024 pentru întregul proiect Elin Pelin – Kostenets: valoarea proiectului 907,80 milioane BGN, contribuție UE 600,21 milioane BGN și cofinanțare națională 105,92 milioane BGN (NCFI indică valoarea proiectului și partea națională fără TVA)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dzhen-Duy zhp Elin Pelin DZZD",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Km 22+554 to 42+200 (length from the chainage), the hardest stretch of the Sofia – Plovdiv line. It includes Bulgaria's longest railway tunnel at 6.8 km, the first of its kind since the Koznitsa tunnel of 1949–1951, a new Elin Pelin station, Pobit Kamak halt and Vakarel passing loop, two twin-bore tunnels of about 1.5 km in total, and 8 bridges and trestles. Construction supervision: Zhp Trans DZZD. The 51.044 km project (14.544 km renewed, 36.5 km new double track) is designed for 160 km/h passenger and 120 km/h freight traffic. NRIC gives the total as BGN 1.310 billion and says works started with considerable delay after appeals against detailed plans, slow land expropriation and COVID-19, so the project was split into two funding phases.",
+        "ro": "Km 22+554 – 42+200 (lungime din kilometraj), cel mai dificil tronson al liniei Sofia – Plovdiv. Include cel mai lung tunel feroviar din Bulgaria, de 6,8 km, primul de acest fel de la tunelul Koznitsa din 1949–1951, o nouă gară Elin Pelin, stația Pobit Kamak și postul de secționare Vakarel, două tuneluri cu tub dublu de circa 1,5 km în total, precum 8 poduri și estacade. Supraveghere: Zhp Trans DZZD. Proiectul de 51,044 km (14,544 km reînnoiți, 36,5 km linie dublă nouă) este proiectat pentru 160 km/h la trenurile de călători și 120 km/h la marfă. NCFI indică un total de 1,310 miliarde BGN și precizează că lucrările au început cu întârziere mare din cauza contestațiilor la planurile urbanistice, a exproprierilor lente și a COVID-19, de aceea proiectul a fost împărțit în două faze de finanțare."
+      },
+      "sourceRefs": [
+        "nric-ep-kostenets-phase2"
+      ],
+      "geometryRef": "elin-pelin-kostenets-lot-1"
+    },
+    {
+      "id": "elin-pelin-kostenets-lot-2",
+      "name": {
+        "en": "Elin Pelin – Kostenets, lot 2: Vakarel – Ihtiman",
+        "ro": "Elin Pelin – Kostenets, lotul 2: Vakarel – Ihtiman"
+      },
+      "status": "under_construction",
+      "lengthKm": 20.2,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Phase 1: Operational Programme Transport and Transport Infrastructure 2014–2020. Phase 2: Transport Connectivity Programme 2021–2027, grant agreement DPTS-7/11.09.2024 for the whole Elin Pelin – Kostenets project: project value BGN 907.80 million, EU contribution BGN 600.21 million and national co-financing BGN 105.92 million (NRIC marks the project value and the national share as excluding VAT).",
+            "ro": "Faza 1: Programul Operațional Transport și Infrastructură de Transport 2014–2020. Faza 2: Programul Transport Conectivitate 2021–2027, contract de finanțare DPTS-7/11.09.2024 pentru întregul proiect Elin Pelin – Kostenets: valoarea proiectului 907,80 milioane BGN, contribuție UE 600,21 milioane BGN și cofinanțare națională 105,92 milioane BGN (NCFI indică valoarea proiectului și partea națională fără TVA)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Evro pat DZZD",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Km 42+200 to 62+400 (length from the chainage). Includes Verinsko halt, Ihtiman station and Stambolovo halt, 4 overpasses, 3 bridges and 39 culverts. Construction supervision: Zhp Trans DZZD. The 51.044 km project (14.544 km renewed, 36.5 km new double track) is designed for 160 km/h passenger and 120 km/h freight traffic. NRIC gives the total as BGN 1.310 billion and says works started with considerable delay after appeals against detailed plans, slow land expropriation and COVID-19, so the project was split into two funding phases.",
+        "ro": "Km 42+200 – 62+400 (lungime din kilometraj). Include stația Verinsko, gara Ihtiman și stația Stambolovo, 4 pasaje, 3 poduri și 39 de podețe. Supraveghere: Zhp Trans DZZD. Proiectul de 51,044 km (14,544 km reînnoiți, 36,5 km linie dublă nouă) este proiectat pentru 160 km/h la trenurile de călători și 120 km/h la marfă. NCFI indică un total de 1,310 miliarde BGN și precizează că lucrările au început cu întârziere mare din cauza contestațiilor la planurile urbanistice, a exproprierilor lente și a COVID-19, de aceea proiectul a fost împărțit în două faze de finanțare."
+      },
+      "sourceRefs": [
+        "nric-ep-kostenets-phase2"
+      ],
+      "geometryRef": "elin-pelin-kostenets-lot-2"
+    },
+    {
+      "id": "elin-pelin-kostenets-lot-3",
+      "name": {
+        "en": "Elin Pelin – Kostenets, lot 3: Ihtiman – Kostenets",
+        "ro": "Elin Pelin – Kostenets, lotul 3: Ihtiman – Kostenets"
+      },
+      "status": "under_construction",
+      "lengthKm": 11.2,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 2,
+        "tunnelKm": 5.478,
+        "viaductKm": 1.005
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Phase 1: Operational Programme Transport and Transport Infrastructure 2014–2020. Phase 2: Transport Connectivity Programme 2021–2027, grant agreement DPTS-7/11.09.2024 for the whole Elin Pelin – Kostenets project: project value BGN 907.80 million, EU contribution BGN 600.21 million and national co-financing BGN 105.92 million (NRIC marks the project value and the national share as excluding VAT).",
+            "ro": "Faza 1: Programul Operațional Transport și Infrastructură de Transport 2014–2020. Faza 2: Programul Transport Conectivitate 2021–2027, contract de finanțare DPTS-7/11.09.2024 pentru întregul proiect Elin Pelin – Kostenets: valoarea proiectului 907,80 milioane BGN, contribuție UE 600,21 milioane BGN și cofinanțare națională 105,92 milioane BGN (NCFI indică valoarea proiectului și partea națională fără TVA)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Shtrabag Dzhi Pi Reyl 2017 DZZD",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Km 62+400 to 73+598 (length from the chainage). Includes 8 single-bore tunnels for double track of about 5,478 m in total, 2 viaducts of about 1,005 m and 11 bridges of about 777.70 m, and Nemirovo halt. Construction supervision: Zhp Trans DZZD. The 51.044 km project (14.544 km renewed, 36.5 km new double track) is designed for 160 km/h passenger and 120 km/h freight traffic. NRIC gives the total as BGN 1.310 billion and says works started with considerable delay after appeals against detailed plans, slow land expropriation and COVID-19, so the project was split into two funding phases.",
+        "ro": "Km 62+400 – 73+598 (lungime din kilometraj). Include 8 tuneluri cu un singur tub pentru linie dublă, de circa 5.478 m în total, 2 viaducte de circa 1.005 m și 11 poduri de circa 777,70 m, plus stația Nemirovo. Supraveghere: Zhp Trans DZZD. Proiectul de 51,044 km (14,544 km reînnoiți, 36,5 km linie dublă nouă) este proiectat pentru 160 km/h la trenurile de călători și 120 km/h la marfă. NCFI indică un total de 1,310 miliarde BGN și precizează că lucrările au început cu întârziere mare din cauza contestațiilor la planurile urbanistice, a exproprierilor lente și a COVID-19, de aceea proiectul a fost împărțit în două faze de finanțare."
+      },
+      "sourceRefs": [
+        "nric-ep-kostenets-phase2"
+      ],
+      "geometryRef": "elin-pelin-kostenets-lot-3"
+    },
+    {
+      "id": "kostenets-septemvri",
+      "name": {
+        "en": "Kostenets – Septemvri",
+        "ro": "Kostenets – Septemvri"
+      },
+      "status": "under_construction",
+      "lengthKm": 24.5,
+      "dates": {
+        "expectedOpening": "2029"
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 2,
+        "tunnelKm": 4.6,
+        "viaductKm": 2.49,
+        "bridgeCount": 23
+      },
+      "events": [
+        {
+          "kind": "suspended",
+          "date": "2024",
+          "note": {
+            "en": "Construction frozen for the whole of 2024.",
+            "ro": "Lucrările au fost înghețate pe tot parcursul anului 2024."
+          },
+          "sourceRef": "nric-news-4534"
+        },
+        {
+          "kind": "resumed",
+          "date": "2025-03",
+          "note": {
+            "en": "Works resumed.",
+            "ro": "Lucrările au fost reluate."
+          },
+          "sourceRef": "nric-news-4534"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility, financing agreement signed 10 November 2016.",
+            "ro": "Mecanismul pentru Interconectarea Europei, contract de finanțare semnat pe 10 noiembrie 2016."
+          },
+          "amount": {
+            "amount": 255.21,
+            "currency": "BGN",
+            "note": "Excluding VAT."
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 45.04,
+            "currency": "BGN",
+            "note": "Excluding VAT."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Kostenets-Septemvri 2018 DZZD",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "About 24.5 km of double electrified line: 3 tunnels of 4.6 km in total, 23 bridges and viaducts of 2.49 km, a new Kostenets station and reconstruction of Belovo station. NRIC gives the total project value as BGN 300,251,198 excluding VAT. In August 2025 the deputy prime minister said the 2.5 km tunnel had broken through and that, despite delays, the line would be built for 160 km/h by 2029. Construction supervision: Iver DZZD. The drawn geometry is 25.3 km from OpenStreetMap, cut at the end of the Elin Pelin – Kostenets lot 3 and at Septemvri station.",
+        "ro": "Circa 24,5 km de linie dublă electrificată: 3 tuneluri însumând 4,6 km, 23 de poduri și viaducte însumând 2,49 km, o gară nouă Kostenets și reconstrucția gării Belovo. NCFI indică valoarea totală a proiectului la 300.251.198 BGN fără TVA. În august 2025, vicepremierul a spus că tunelul de 2,5 km a fost perforat și că, în ciuda întârzierilor, linia va fi construită pentru 160 km/h până în 2029. Supraveghere: Iver DZZD. Geometria desenată are 25,3 km din OpenStreetMap, tăiată la capătul lotului 3 Elin Pelin – Kostenets și la gara Septemvri."
+      },
+      "sourceRefs": [
+        "nric-kostenets-septemvri",
+        "nric-news-4534"
+      ],
+      "geometryRef": "kostenets-septemvri"
+    },
+    {
+      "id": "septemvri-plovdiv",
+      "name": {
+        "en": "Septemvri – Plovdiv",
+        "ro": "Septemvri – Plovdiv"
+      },
+      "status": "opened",
+      "lengthKm": 53.5,
+      "dates": {
+        "opened": "2017-03"
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2017-03",
+          "note": {
+            "en": "All three construction positions and the signalling contract commissioned.",
+            "ro": "Toate cele trei poziții de construcție și contractul de semnalizare au fost puse în exploatare."
+          },
+          "sourceRef": "nric-septemvri-plovdiv"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund, Operational Programme Transport.",
+            "ro": "Fondul de Coeziune, Programul Operațional Transport."
+          },
+          "amount": {
+            "amount": 160,
+            "currency": "BGN"
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 40,
+            "currency": "BGN"
+          }
+        },
+        {
+          "source": "other",
+          "detail": {
+            "en": "Co-financing by NRIC.",
+            "ro": "Cofinanțare NCFI."
+          },
+          "amount": {
+            "amount": 430.63,
+            "currency": "BGN"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Svitelski-RVP Kyone consortium",
+          "role": "builder"
+        },
+        {
+          "name": "Ay Dzhi Ey – Zhp Infrastruktura DZZD",
+          "role": "builder"
+        },
+        {
+          "name": "Porr Bau GmbH",
+          "role": "builder"
+        },
+        {
+          "name": "TKB Sofia-Plovdiv consortium",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Track for 160 km/h passenger trains (200 km/h tilting stock) and 120 km/h freight, catenary, signalling with ETCS level 1, in three positions: Septemvri – Pazardzhik (BGN 57.08 million, Svitelski-RVP Kyone), Pazardzhik – Stamboliyski (BGN 49.84 million, Ay Dzhi Ey – Zhp Infrastruktura) and Stamboliyski – Plovdiv (BGN 50.93 million, Porr Bau), plus a BGN 69.25 million signalling and telecommunications contract (TKB Sofia-Plovdiv), all excluding VAT. NRIC records all four as commissioned in March 2017. Total project value BGN 630,626,259.28. BTA reported on 24 September 2026 that a demonstration run covered the 53.5 km at 160 km/h in 25 minutes, against 40 minutes at 80 km/h with older stock. NRIC chainage runs from km 102+014 to km 154+606 (52.6 km). The drawn geometry is 52.3 km from OpenStreetMap.",
+        "ro": "Cale pentru trenuri de călători de 160 km/h (200 km/h cu garnituri pendulare) și 120 km/h pentru marfă, linie de contact, semnalizare cu ETCS nivel 1, pe trei poziții: Septemvri – Pazardzhik (57,08 milioane BGN, Svitelski-RVP Kyone), Pazardzhik – Stamboliyski (49,84 milioane BGN, Ay Dzhi Ey – Zhp Infrastruktura) și Stamboliyski – Plovdiv (50,93 milioane BGN, Porr Bau), plus un contract de semnalizare și telecomunicații de 69,25 milioane BGN (TKB Sofia-Plovdiv), toate fără TVA. NCFI consemnează toate cele patru ca puse în exploatare în martie 2017. Valoarea totală a proiectului este de 630.626.259,28 BGN. BTA a relatat pe 24 septembrie 2026 că o cursă demonstrativă a parcurs cei 53,5 km cu 160 km/h în 25 de minute, față de 40 de minute cu 80 km/h cu material rulant vechi. Kilometrajul NCFI merge de la km 102+014 la km 154+606 (52,6 km). Geometria desenată are 52,3 km din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "nric-septemvri-plovdiv",
+        "bta-septemvri-plovdiv-2026"
+      ],
+      "geometryRef": "septemvri-plovdiv"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nric-ep-kostenets-phase2",
+      "title": "NRIC: Модернизация на железопътната линия София - Пловдив: жп участък Елин Пелин – Костенец, Фаза 2 (PDF)",
+      "url": "https://www.rail-infra.bg/upload/6681/%D0%98%D0%BD%D1%84%D0%BE+%D0%95%D0%BB%D0%B8%D0%BD+%D0%9F%D0%B5%D0%BB%D0%B8%D0%BD-%D0%9A%D0%BE%D1%81%D1%82%D0%B5%D0%BD%D0%B5%D1%86+%D0%A4%D0%B0%D0%B7%D0%B0+2.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-kostenets-septemvri",
+      "title": "NRIC: Модернизация на железопътен участък Костенец - Септември",
+      "url": "https://www.rail-infra.bg/bg/212",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-4534",
+      "title": "NRIC: Строителството на жп линията между Костенец и Септември вече напредва с добри темпове (26.08.2025)",
+      "url": "https://www.rail-infra.bg/bg/news/4534",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-sofia-elin-pelin",
+      "title": "NRIC: Проектиране и строителство за модернизация на железопътен участък София – Елин Пелин",
+      "url": "https://www.rail-infra.bg/bg/384",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-4514",
+      "title": "NRIC: Модернизация на участъка от гара Искър до гара Елин Пелин (09.05.2025)",
+      "url": "https://www.rail-infra.bg/bg/news/4514",
+      "retrievedOn": "2026-10-02"
+    },
+    {
+      "id": "nric-septemvri-plovdiv",
+      "title": "NRIC: Модернизация на железопътен участък Септември – Пловдив – част от Транс-европейската железопътна мрежа",
+      "url": "https://www.rail-infra.bg/bg/170",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "bta-septemvri-plovdiv-2026",
+      "title": "BTA: До май месец 2027 г. БДЖ ще разполагат с общо 60 нови мотриси до 160 км/ч (24.09.2026)",
+      "url": "https://www.bta.bg/bg/news/economy/1210588-do-may-mesets-2027-g-bdzh-shte-razpolagat-s-obshto-60-novi-motrisi-do-160-km-c",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}
