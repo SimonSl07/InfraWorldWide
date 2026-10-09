@@ -1,0 +1,2519 @@
+{
+  "id": "pl-s7",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S7 expressway (Gdańsk – Elbląg – Warszawa – Radom – Kielce – Kraków – Rabka)",
+    "ro": "Drumul expres S7 (Gdańsk – Elbląg – Varșovia – Radom – Kielce – Cracovia – Rabka)"
+  },
+  "description": {
+    "en": "Poland's longest north–south expressway, from Gdańsk to Rabka-Zdrój, drawn as one carriageway from OpenStreetMap relation 112778. Much of it follows the former DK7 corridor, and several lots are rebuilds of that road to expressway standard (Elbląg bypass, Miłomłyn bypass, Szydłowiec bypass, Kielce bypass, Płońsk bypass, Zakroczym – Czosnów, Czosnów – Kiełpin) rather than new roads, so an upgrade date is not a new-build opening. Lots cover the sections opened since 2005 or under construction, grouped by contract and split wherever the parts opened in different years, so each lot carries its own opening date; a lot whose parts opened within one year carries the date of its last part, with the earlier openings listed as events. Not drawn: Kiełpin – Warszawa (design stage), the Warszawa stretch carried by S2 and S8, Głuchów – Radom Północ (older sections), Mistrzejowice – Nowa Huta and the Nowa Huta – Bieżanów eastern ring road of Kraków, Myślenice – Lubień, and the planned Kraków – Myślenice and Rabka – Chyżne sections. Contract values come from GDDKiA pages and pl.wikipedia; each note states the VAT basis where the source gives one and says so where it does not.",
+    "ro": "Cel mai lung drum expres nord–sud al Poloniei, de la Gdańsk la Rabka-Zdrój, desenat ca o singură cale de rulare din relația OpenStreetMap 112778. O mare parte urmează coridorul fostei DK7, iar mai multe loturi sunt reconstrucții ale acelui drum la standard de drum expres (ocolitoarea Elbląg, ocolitoarea Miłomłyn, ocolitoarea Szydłowiec, ocolitoarea Kielce, ocolitoarea Płońsk, Zakroczym – Czosnów, Czosnów – Kiełpin) și nu drumuri noi, deci data unei modernizări nu este o deschidere de construcție nouă. Loturile acoperă secțiunile deschise din 2005 sau în construcție, grupate pe contracte și împărțite oriunde părțile au fost deschise în ani diferiți, astfel încât fiecare lot are propria dată de deschidere; un lot ale cărui părți au fost deschise în același an are data ultimei părți, iar deschiderile anterioare sunt listate ca evenimente. Nedesenate: Kiełpin – Varșovia (fază de proiect), tronsonul din Varșovia asigurat de S2 și S8, Głuchów – Radom Północ (secțiuni mai vechi), Mistrzejowice – Nowa Huta și centura estică Nowa Huta – Bieżanów a Cracoviei, Myślenice – Lubień și secțiunile planificate Cracovia – Myślenice și Rabka – Chyżne. Valorile contractelor provin de pe paginile GDDKiA și de la pl.wikipedia; fiecare notă precizează baza TVA acolo unde sursa o indică și spune acest lucru acolo unde nu o indică."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-09",
+  "lots": [
+    {
+      "id": "chwaszczyno-gdansk-poludnie",
+      "name": {
+        "en": "Chwaszczyno – Gdańsk Południe (Metropolitan Ring Road of the Tri-City)",
+        "ro": "Chwaszczyno – Gdańsk Południe (Obwodnica Metropolitană a Trójmiasto)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-04-16",
+        "opened": "2025-12-23"
+      },
+      "lengthKm": 32.2,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-08-19",
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-04-16",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2025-06-18",
+          "note": {
+            "en": "Chwaszczyno – Żukowo (16.2 km) opened.",
+            "ro": "Chwaszczyno – Żukowo (16,2 km) deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-23",
+          "note": {
+            "en": "Żukowo – Gdańsk Południe (16 km) opened; the whole lot is open.",
+            "ro": "Żukowo – Gdańsk Południe (16 km) deschis; întregul lot este deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Two sub-sections of 16.2 km and 16 km, tendered on 19 August 2020 and signed on 16 April 2021 (pl.wikipedia). The missing ramps at the Chwaszczyno junction, giving direct S6 – S7 movements, opened on 22 September 2025. The drawn centreline starts at the Chwaszczyno junction; the planned northern extension to Gdynia is not drawn.",
+        "ro": "Două subsecțiuni de 16,2 km și 16 km, scoase la licitație la 19 august 2020 și semnate la 16 aprilie 2021 (pl.wikipedia). Rampele lipsă de la nodul Chwaszczyno, care permit mișcările directe S6 – S7, au fost deschise la 22 septembrie 2025. Axul desenat începe la nodul Chwaszczyno; prelungirea planificată spre Gdynia nu este desenată."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "chwaszczyno-gdansk-poludnie"
+    },
+    {
+      "id": "gdansk-poludnie-koszwaly",
+      "name": {
+        "en": "Gdańsk Południe – Koszwały (southern bypass of Gdańsk)",
+        "ro": "Gdańsk Południe – Koszwały (ocolitoarea de sud a Gdańskului)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-06-09"
+      },
+      "lengthKm": 18,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Bilfinger Berger",
+          "role": "builder"
+        },
+        {
+          "name": "Wakoz",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-06-09",
+          "note": {
+            "en": "Opened to traffic; the Żuławy Zachód (20 June 2012), Gdańsk-Lipce (14 December 2012) and Gdańsk-Port (29 December 2012) junctions opened later.",
+            "ro": "Dat în trafic; nodurile Żuławy Zachód (20 iunie 2012), Gdańsk-Lipce (14 decembrie 2012) și Gdańsk-Port (29 decembrie 2012) au fost deschise ulterior."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Built in 2010–2012 by a consortium of Bilfinger Berger (leader) and Wakoz, linking the Tri-City ring road and the A1 with the former DK7 (pl.wikipedia). The drawn centreline is 9% shorter than the sourced 18.0 km; the sourced length is kept.",
+        "ro": "Construit în 2010–2012 de un consorțiu Bilfinger Berger (lider) și Wakoz, care leagă șoseaua de centură a Trójmiasto și A1 cu fosta DK7 (pl.wikipedia). Axul desenat este cu 9% mai scurt decât cei 18,0 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gdansk-poludnie-koszwaly"
+    },
+    {
+      "id": "koszwaly-kazimierzowo",
+      "name": {
+        "en": "Koszwały – Nowy Dwór Gdański – Kazimierzowo",
+        "ro": "Koszwały – Nowy Dwór Gdański – Kazimierzowo"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-09",
+        "opened": "2018-10-31"
+      },
+      "lengthKm": 40,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 3218,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Sum of two contracts signed on 9 October 2015: Metrostav 1642 (GDDKiA: more than 1.642 bn) and Budimex 1576 (pl.wikipedia only). VAT basis not stated in the sources."
+            },
+            "date": "2015-10-09",
+            "sourceRef": "gddkia-koszwaly-kazimierzowo"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 3218,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Sum of the Metrostav (1642) and Budimex (1576) contracts. VAT basis not stated in the source."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-09",
+          "note": {
+            "en": "Both contracts signed.",
+            "ro": "Ambele contracte semnate."
+          },
+          "sourceRef": "gddkia-koszwaly-kazimierzowo"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-01-18",
+          "note": {
+            "en": "South carriageway opened temporarily over 2 km (Kiezmark bridge – Dworek).",
+            "ro": "Calea de rulare sudică deschisă temporar pe 2 km (podul Kiezmark – Dworek)."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-10-18",
+          "note": {
+            "en": "Both carriageways opened over 7.5 km (Koszwały – Kiezmark).",
+            "ro": "Ambele căi de rulare deschise pe 7,5 km (Koszwały – Kiezmark)."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-10-31",
+          "note": {
+            "en": "Both sections opened.",
+            "ro": "Ambele secțiuni deschise."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Two contracts signed on 9 October 2015: Koszwały – Nowy Dwór Gdański (20.47 km, Metrostav, more than 1.642 bn PLN) and Nowy Dwór Gdański – Kazimierzowo (19.14 km per GDDKiA, 19.5 km per pl.wikipedia, Budimex, 1.576 bn PLN per pl.wikipedia). Built in 2015–2019 and opened together on 31 October 2018. The Budimex contract included a viaduct on ul. Żuławska in Elbląg. The drawn centreline ends at the Elbląg Południe junction, 4% longer than the sourced 40 km.",
+        "ro": "Două contracte semnate la 9 octombrie 2015: Koszwały – Nowy Dwór Gdański (20,47 km, Metrostav, peste 1,642 mld PLN) și Nowy Dwór Gdański – Kazimierzowo (19,14 km conform GDDKiA, 19,5 km conform pl.wikipedia, Budimex, 1,576 mld PLN conform pl.wikipedia). Construite în 2015–2019 și deschise împreună la 31 octombrie 2018. Contractul Budimex a inclus un viaduct pe ul. Żuławska din Elbląg. Axul desenat se termină la nodul Elbląg Południe, cu 4% mai lung decât cei 40 km din sursă."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-koszwaly-kazimierzowo",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "koszwaly-kazimierzowo"
+    },
+    {
+      "id": "elblag-poludnie-elblag-wschod",
+      "name": {
+        "en": "Elbląg Południe – Elbląg Wschód (Elbląg bypass)",
+        "ro": "Elbląg Południe – Elbląg Wschód (ocolitoarea Elbląg)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-09-14"
+      },
+      "lengthKm": 4.9,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2005-08-30",
+          "note": {
+            "en": "Elbląg Wschód junction (0.7 km), rebuilt in 2004–2005, opened.",
+            "ro": "Nodul Elbląg Wschód (0,7 km), reconstruit în 2004–2005, deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-09-14",
+          "note": {
+            "en": "Elbląg Południe – Elbląg Wschód (4.2 km) opened; the whole lot is open.",
+            "ro": "Elbląg Południe – Elbląg Wschód (4,2 km) deschis; întregul lot este deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Sum of two entries listed by pl.wikipedia (4.2 km section rebuilt from DK7 in 2005–2007, and the 0.7 km Elbląg Wschód junction, a rebuild of an existing interchange from 2004–2005). The drawn centreline follows the DK7 corridor.",
+        "ro": "Suma a două intrări din pl.wikipedia (secțiunea de 4,2 km reconstruită din DK7 în 2005–2007 și nodul Elbląg Wschód de 0,7 km, reconstrucția unui nod existent din 2004–2005). Axul desenat urmează coridorul DK7."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "elblag-poludnie-elblag-wschod"
+    },
+    {
+      "id": "elblag-wschod-paslek-polnoc",
+      "name": {
+        "en": "Elbląg Wschód – Pasłęk Północ",
+        "ro": "Elbląg Wschód – Pasłęk Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-07-28"
+      },
+      "lengthKm": 13.7,
+      "contractors": [
+        {
+          "name": "Eurovia Polska",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-07-28",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Built in 2008–2011 by a consortium led by Eurovia Polska, for 662.1 million PLN (VAT basis not stated). The contract also added the missing ramp at the Raczki (now Elbląg Południe) junction.",
+        "ro": "Construit în 2008–2011 de un consorțiu condus de Eurovia Polska, pentru 662,1 milioane PLN (baza TVA nu este precizată). Contractul a adăugat și racordul lipsă de la nodul Raczki (acum Elbląg Południe)."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "elblag-wschod-paslek-polnoc"
+    },
+    {
+      "id": "paslek-milomlyn-polnoc",
+      "name": {
+        "en": "Pasłęk Północ – Pasłęk – Miłomłyn Północ",
+        "ro": "Pasłęk Północ – Pasłęk – Miłomłyn Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010",
+        "opened": "2012-08-01"
+      },
+      "lengthKm": 37.2,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-08-01",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Works began in 2010 (pl.wikipedia, no month given). The sources read do not name the contractor or the contract value.",
+        "ro": "Lucrările au început în 2010 (pl.wikipedia, fără lună). Sursele consultate nu indică antreprenorul și nici valoarea contractului."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "paslek-milomlyn-polnoc"
+    },
+    {
+      "id": "milomlyn-polnoc-ostroda-polnoc",
+      "name": {
+        "en": "Miłomłyn Północ – Ostróda Północ",
+        "ro": "Miłomłyn Północ – Ostróda Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-11-05",
+        "opened": "2016-12-19"
+      },
+      "lengthKm": 9.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 292.3,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Contract amount as stated by GDDKiA; VAT basis not stated."
+            },
+            "date": "2014-11-05",
+            "sourceRef": "gddkia-milomlyn-ostroda-polnoc"
+          }
+        ]
+      },
+      "contract": {
+        "executionMonths": 20,
+        "value": {
+          "amount": 292.3,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Contract amount as stated by GDDKiA; VAT basis not stated."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-11-05",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "gddkia-milomlyn-ostroda-polnoc"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-19",
+          "note": {
+            "en": "Opened as a dual carriageway, four months before the planned end.",
+            "ro": "Deschis ca drum cu două căi de rulare, cu patru luni înainte de termenul planificat."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "The Miłomłyn bypass opened as a single carriageway on 9 December 1997 and was rebuilt in 2014–2016 together with DK7 up to Czerwona Karczma. Contract signed on 5 November 2014 with Budimex and Ferrovial Agroman: 20 months, winter periods (15 December to 15 March) excluded. The Miłomłyn Północ and Południe junctions were rebuilt to expressway standard.",
+        "ro": "Ocolitoarea Miłomłyn a fost deschisă cu o singură cale de rulare la 9 decembrie 1997 și reconstruită în 2014–2016 împreună cu DK7 până la Czerwona Karczma. Contract semnat la 5 noiembrie 2014 cu Budimex și Ferrovial Agroman: 20 de luni, fără perioadele de iarnă (15 decembrie – 15 martie). Nodurile Miłomłyn Północ și Południe au fost reconstruite la standard de drum expres."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-milomlyn-ostroda-polnoc",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "milomlyn-polnoc-ostroda-polnoc"
+    },
+    {
+      "id": "ostroda-polnoc-olsztynek-zachod",
+      "name": {
+        "en": "Ostróda Północ – Ostróda Południe – Rychnowo – Olsztynek Zachód",
+        "ro": "Ostróda Północ – Ostróda Południe – Rychnowo – Olsztynek Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-06-15",
+        "opened": "2017-12-22"
+      },
+      "lengthKm": 29.7,
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-06-21",
+          "note": {
+            "en": "Tender announced for Ostróda Północ – Ostróda Południe.",
+            "ro": "Licitație anunțată pentru Ostróda Północ – Ostróda Południe."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-06-15",
+          "note": {
+            "en": "Contract signed for Ostróda Północ – Ostróda Południe.",
+            "ro": "Contract semnat pentru Ostróda Północ – Ostróda Południe."
+          },
+          "sourceRef": "gddkia-ostroda-polnoc-poludnie"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2017-08-11",
+          "note": {
+            "en": "Ostróda Południe – Rychnowo (8.8 km) opened.",
+            "ro": "Ostróda Południe – Rychnowo (8,8 km) deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2017-12-06",
+          "note": {
+            "en": "Rychnowo – Olsztynek Zachód (about 11.2 km) opened.",
+            "ro": "Rychnowo – Olsztynek Zachód (circa 11,2 km) deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-22",
+          "note": {
+            "en": "Ostróda Północ – Ostróda Południe (9.7 km) opened; the whole lot is open.",
+            "ro": "Ostróda Północ – Ostróda Południe (9,7 km) deschis; întregul lot este deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Sum of three sections (9.7 + 8.8 + 11.2 km), all opened in 2017. Ostróda Północ – Południe: Budimex with Ferrovial Agroman, signed on 15 June 2015 for 1.3 bn PLN (pl.wikipedia, GDDKiA); that contract also covers the 8.7 km Ostróda bypass on DK16, so it is not recorded as the cost of this lot. Its last structure, the Niepodległości bridge over the Pauzeński canal, opened on 20 June 2018. Ostróda Południe – Rychnowo: Strabag Infrastruktura Południe (formerly Heilit+Woerner), 299.2 million PLN. Rychnowo – Olsztynek Zachód: Strabag, 388.5 million PLN. VAT basis of the pl.wikipedia figures is not stated. The section lengths are contract lengths and do not match the junction-to-junction distance on the drawn line exactly.",
+        "ro": "Suma a trei secțiuni (9,7 + 8,8 + 11,2 km), toate deschise în 2017. Ostróda Północ – Południe: Budimex cu Ferrovial Agroman, semnat la 15 iunie 2015 pentru 1,3 mld PLN (pl.wikipedia, GDDKiA); acel contract acoperă și ocolitoarea Ostróda de 8,7 km pe DK16, deci nu este înregistrat drept costul acestui lot. Ultima sa structură, podul Niepodległości peste canalul Pauzeński, a fost deschisă la 20 iunie 2018. Ostróda Południe – Rychnowo: Strabag Infrastruktura Południe (fost Heilit+Woerner), 299,2 milioane PLN. Rychnowo – Olsztynek Zachód: Strabag, 388,5 milioane PLN. Baza TVA a cifrelor din pl.wikipedia nu este precizată. Lungimile secțiunilor sunt lungimi contractuale și nu coincid exact cu distanța dintre noduri pe axul desenat."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-ostroda-polnoc-poludnie",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ostroda-polnoc-olsztynek-zachod"
+    },
+    {
+      "id": "olsztynek-zachod-nidzica-polnoc",
+      "name": {
+        "en": "Olsztynek Zachód – Grunwald – Nidzica Północ",
+        "ro": "Olsztynek Zachód – Grunwald – Nidzica Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-05",
+        "opened": "2012-11-08"
+      },
+      "lengthKm": 31.3,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-05",
+          "note": {
+            "en": "Design-build contract for S7 Olsztynek – Nidzica with the Olsztynek bypass on S51 signed.",
+            "ro": "Contract de proiectare și execuție pentru S7 Olsztynek – Nidzica cu ocolitoarea Olsztynek pe S51 semnat."
+          },
+          "sourceRef": "gddkia-olsztynek-nidzica-2012"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-09-29",
+          "note": {
+            "en": "3 km of S7 opened together with the Olsztynek bypass on S51.",
+            "ro": "3 km de S7 deschiși împreună cu ocolitoarea Olsztynek pe S51."
+          },
+          "sourceRef": "gddkia-olsztynek-bypass-2012"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-11-08",
+          "note": {
+            "en": "Olsztynek – Nidzica opened as a dual carriageway; the whole lot is open.",
+            "ro": "Olsztynek – Nidzica deschis ca drum cu două căi de rulare; întregul lot este deschis."
+          },
+          "sourceRef": "gddkia-olsztynek-nidzica-2012"
+        }
+      ],
+      "note": {
+        "en": "GDDKiA gives 31.3 km of expressway for the contract (3 km of S7 opened on 29 September 2012 plus 28.3 km, pl.wikipedia). The contract value was over 1.185 bn PLN, but it also covers the 5.7 km Olsztynek bypass on S51, so it is not recorded as the cost of this lot. Junctions Olsztynek Wschód, Olsztynek Zachód, Grunwald, Waplewo and Rączki. The drawn centreline is 17% shorter than 31.3 km: it runs between the OpenStreetMap junction nodes Olsztynek Zachód and Nidzica Północ (the GDDKiA chainage km 175+800 to 203+600 is 27.8 km).",
+        "ro": "GDDKiA indică 31,3 km de drum expres pentru contract (3 km de S7 deschiși la 29 septembrie 2012 plus 28,3 km, pl.wikipedia). Valoarea contractului a fost de peste 1,185 mld PLN, dar acoperă și ocolitoarea Olsztynek de 5,7 km pe S51, deci nu este înregistrată drept costul acestui lot. Noduri: Olsztynek Wschód, Olsztynek Zachód, Grunwald, Waplewo și Rączki. Axul desenat este cu 17% mai scurt decât 31,3 km: merge între nodurile OpenStreetMap Olsztynek Zachód și Nidzica Północ (kilometrajul GDDKiA km 175+800 – 203+600 înseamnă 27,8 km)."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-olsztynek-bypass-2012",
+        "gddkia-olsztynek-nidzica-2012",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "olsztynek-zachod-nidzica-polnoc"
+    },
+    {
+      "id": "nidzica-napierki",
+      "name": {
+        "en": "Nidzica Północ – Nidzica Południe – Napierki",
+        "ro": "Nidzica Północ – Nidzica Południe – Napierki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-01-22",
+        "opened": "2017-06-23"
+      },
+      "lengthKm": 22.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 492.5,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Sum of two contracts signed on 22 January 2015: 229.4 (Nidzica bypass) and 263.1 (Nidzica Południe – Napierki). VAT basis not stated in the sources."
+            },
+            "date": "2015-01-22",
+            "sourceRef": "gddkia-nidzica-napierki-2017"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 492.5,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Sum of two contracts. VAT basis not stated in the sources."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-01-22",
+          "note": {
+            "en": "Two contracts signed.",
+            "ro": "Două contracte semnate."
+          },
+          "sourceRef": "gddkia-nidzica-napierki-2017"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-06-23",
+          "note": {
+            "en": "Nidzica bypass (9.1 km) and Nidzica Południe – Napierki (13.6 km) opened.",
+            "ro": "Ocolitoarea Nidzica (9,1 km) și Nidzica Południe – Napierki (13,6 km) deschise."
+          },
+          "sourceRef": "gddkia-nidzica-napierki-2017"
+        }
+      ],
+      "note": {
+        "en": "Two contracts: Nidzica Północ – Nidzica Południe (9.1 km, Strabag, 229.4 million PLN) and Nidzica Południe – Napierki (13.6 km, Strabag Infrastruktura Południe, 263.1 million PLN), signed on 22 January 2015. GDDKiA gives a total project cost of 629.75 million PLN including documentation, land and supervision; it is not recorded as a contract value. Junctions Nidzica Północ, Nidzica Południe, Powierż and Napierki. The drawn centreline is 20% shorter than the sourced 22.7 km: the sourced lengths run beyond the junction nodes at both ends (GDDKiA chainage km 203+500 to 225+100 is 21.6 km).",
+        "ro": "Două contracte: Nidzica Północ – Nidzica Południe (9,1 km, Strabag, 229,4 milioane PLN) și Nidzica Południe – Napierki (13,6 km, Strabag Infrastruktura Południe, 263,1 milioane PLN), semnate la 22 ianuarie 2015. GDDKiA indică un cost total al proiectului de 629,75 milioane PLN, incluzând documentația, terenurile și supravegherea; nu este înregistrat ca valoare de contract. Noduri: Nidzica Północ, Nidzica Południe, Powierż și Napierki. Axul desenat este cu 20% mai scurt decât cei 22,7 km din sursă: lungimile din sursă depășesc nodurile la ambele capete (kilometrajul GDDKiA km 203+500 – 225+100 înseamnă 21,6 km)."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-nidzica-napierki-2017",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nidzica-napierki"
+    },
+    {
+      "id": "napierki-plonsk",
+      "name": {
+        "en": "Napierki – Mława – Strzegowo – Płońsk",
+        "ro": "Napierki – Mława – Strzegowo – Płońsk"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-20",
+        "constructionStart": "2019-09-13",
+        "opened": "2022-12-23"
+      },
+      "lengthKm": 71.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1568.7,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Sum of four contract amounts: Napierki – Mława 294.7, Mława – Strzegowo 446.1, Strzegowo – Pieńki 516.2 and Pieńki – Płońsk 311.7 (GDDKiA, signed on 20 December 2017 and 12 January 2018). VAT basis not stated."
+            },
+            "date": "2017-12-20",
+            "sourceRef": "gddkia-napierki-mlawa-contracts"
+          }
+        ]
+      },
+      "contract": {
+        "totalMonths": 34,
+        "value": {
+          "amount": 1568.7,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Sum of four contract amounts. VAT basis not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe",
+          "role": "builder"
+        },
+        {
+          "name": "PORR S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "PORR Bau GmbH",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-23",
+          "note": {
+            "en": "Tender for Strzegowo – Pieńki announced; nine firms bid.",
+            "ro": "Licitație anunțată pentru Strzegowo – Pieńki; nouă firme au depus oferte."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-12-20",
+          "note": {
+            "en": "Contracts signed for Napierki – Mława and Mława – Strzegowo; Strzegowo – Pieńki and Pieńki – Płońsk followed on 12 January 2018.",
+            "ro": "Contracte semnate pentru Napierki – Mława și Mława – Strzegowo; Strzegowo – Pieńki și Pieńki – Płońsk au urmat la 12 ianuarie 2018."
+          },
+          "sourceRef": "gddkia-napierki-mlawa-contracts"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-09-13",
+          "note": {
+            "en": "Works inaugurated on Strzegowo – Pieńki and Pieńki – Płońsk; Mława – Strzegowo followed in autumn 2019 and Napierki – Mława in spring 2020.",
+            "ro": "Lucrări inaugurate pe Strzegowo – Pieńki și Pieńki – Płońsk; Mława – Strzegowo a urmat în toamna 2019 și Napierki – Mława în primăvara 2020."
+          },
+          "sourceRef": "gddkia-mlawa-strzegowo-zrid"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2021-12-22",
+          "note": {
+            "en": "About 50 km between Napierki and Płońsk opened as a dual carriageway under temporary traffic arrangements (80 and 60 km/h limits), partly on one carriageway between Napierki and Mława and near Płońsk.",
+            "ro": "Circa 50 km între Napierki și Płońsk deschiși ca drum cu două căi de rulare cu organizare temporară a traficului (limite de 80 și 60 km/h), parțial pe o singură cale de rulare între Napierki și Mława și lângă Płońsk."
+          },
+          "sourceRef": "mi-napierki-plonsk-2021"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-23",
+          "note": {
+            "en": "All four sections opened.",
+            "ro": "Toate cele patru secțiuni deschise."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Four contracts: Napierki – Mława (about 14 km, Strabag consortium, 294.7 million PLN, signed on 20 December 2017, ZRID of 6 March 2020), Mława – Strzegowo (about 21.5 km, PORR S.A. and PORR Bau GmbH, 446.1 million PLN, signed on 20 December 2017, ZRID of 9 October 2019), Strzegowo – Pieńki (about 22 km, Strabag consortium, 516.2 million PLN) and Pieńki – Płońsk (about 13.7 km, Strabag consortium, 311.7 million PLN), the last two signed on 12 January 2018 with a ZRID of 30 August 2019. GDDKiA states 34 months for each contract and gives the contract amounts without a VAT basis; pl.wikipedia rounds two of them to 294.8 and 446.2. Lengths are 35.5 km (Napierki – Strzegowo) and 35.7 km (Strzegowo – Płońsk). The drawn centreline runs from Napierki to Płońsk Północ.",
+        "ro": "Patru contracte: Napierki – Mława (circa 14 km, consorțiul Strabag, 294,7 milioane PLN, semnat la 20 decembrie 2017, ZRID din 6 martie 2020), Mława – Strzegowo (circa 21,5 km, PORR S.A. și PORR Bau GmbH, 446,1 milioane PLN, semnat la 20 decembrie 2017, ZRID din 9 octombrie 2019), Strzegowo – Pieńki (circa 22 km, consorțiul Strabag, 516,2 milioane PLN) și Pieńki – Płońsk (circa 13,7 km, consorțiul Strabag, 311,7 milioane PLN), ultimele două semnate la 12 ianuarie 2018, cu ZRID din 30 august 2019. GDDKiA indică 34 de luni pentru fiecare contract și dă sumele contractelor fără baza TVA; pl.wikipedia rotunjește două dintre ele la 294,8 și 446,2. Lungimile sunt 35,5 km (Napierki – Strzegowo) și 35,7 km (Strzegowo – Płońsk). Axul desenat merge de la Napierki la Płońsk Północ."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-napierki-mlawa-contracts",
+        "gddkia-strzegowo-plonsk-contracts",
+        "gddkia-mlawa-strzegowo-zrid",
+        "mi-napierki-plonsk-2021",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "napierki-plonsk"
+    },
+    {
+      "id": "plonsk-obwodnica-wschodnia",
+      "name": {
+        "en": "Płońsk eastern bypass (Płońsk Północ – Płońsk Południe)",
+        "ro": "Ocolitoarea de est Płońsk (Płońsk Północ – Płońsk Południe)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-09-28",
+        "opened": "2009-06-03"
+      },
+      "lengthKm": 4.7,
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "Teerag-Asdag",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-06-03",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "gddkia-plonsk-bypass"
+        }
+      ],
+      "note": {
+        "en": "DK7 rebuilt to expressway standard on km 275+700 to 280+400 of the Płońsk bypass, with three junctions (Płońsk Północ, Płońsk, Siedlin), built from 28 September 2007 to 31 May 2009 by a Teerag-Asdag consortium for about 200 million PLN (pl.wikipedia, VAT basis not stated). GDDKiA gives the opening as 3 June 2009.",
+        "ro": "DK7 reconstruit la standard de drum expres pe km 275+700 – 280+400 al ocolitoarei Płońsk, cu trei noduri (Płońsk Północ, Płońsk, Siedlin), construit între 28 septembrie 2007 și 31 mai 2009 de un consorțiu Teerag-Asdag pentru circa 200 milioane PLN (pl.wikipedia, baza TVA nu este precizată). GDDKiA indică deschiderea la 3 iunie 2009."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-plonsk-bypass",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "plonsk-obwodnica-wschodnia"
+    },
+    {
+      "id": "plonsk-poludnie-czosnow",
+      "name": {
+        "en": "Płońsk Południe – Załuski – Modlin – Czosnów",
+        "ro": "Płońsk Południe – Załuski – Modlin – Czosnów"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-05-12",
+        "opened": "2025-12-19"
+      },
+      "lengthKm": 34.6,
+      "profile": {
+        "lanes": 6
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-08-05",
+          "note": {
+            "en": "Tender announced for Płońsk Południe – Załuski; the Załuski – Modlin and Modlin – Czosnów tenders followed on 12 and 19 August 2019.",
+            "ro": "Licitație anunțată pentru Płońsk Południe – Załuski; licitațiile Załuski – Modlin și Modlin – Czosnów au urmat la 12 și 19 august 2019."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-05-12",
+          "note": {
+            "en": "Design-build contract signed for Modlin – Czosnów with Budimex (about 598.8 million PLN, 36 months); Załuski – Modlin followed on 9 July 2020 and Płońsk Południe – Załuski on 1 October 2020.",
+            "ro": "Contract de proiectare și execuție semnat pentru Modlin – Czosnów cu Budimex (circa 598,8 milioane PLN, 36 de luni); Załuski – Modlin a urmat la 9 iulie 2020 și Płońsk Południe – Załuski la 1 octombrie 2020."
+          },
+          "sourceRef": "gddkia-modlin-czosnow-contract"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2025-10-24",
+          "note": {
+            "en": "Modlin – Czosnów (9.7 km) opened.",
+            "ro": "Modlin – Czosnów (9,7 km) deschis."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-19",
+          "note": {
+            "en": "Płońsk Południe – Załuski (12.9 km) and Załuski – Modlin (12 km) main carriageways opened.",
+            "ro": "Căile principale Płońsk Południe – Załuski (12,9 km) și Załuski – Modlin (12 km) deschise."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Three design-build contracts: Płońsk Południe (Siedlin) – Załuski (12.9 km), Załuski – Modlin (12 km) and Modlin – Czosnów (9.7 km). Modlin – Czosnów was signed on 12 May 2020 with Budimex for about 598.8 million PLN (VAT basis not stated), 36 months, and is rebuilt in place of DK7 with three lanes per direction; the sources read do not name the contractors of the other two contracts, so none is recorded for them, and no lot total is recorded. Between Zakroczym and Czosnów (14.6 km) the former expressway, opened as 2x2 on 16 June 1990, was widened to two carriageways of three lanes. The ZRID for Siedlin – Załuski was issued on 2 May 2023. The drawn centreline ends where OpenStreetMap stops tagging the road as S7, 4% shorter than the sourced 34.6 km.",
+        "ro": "Trei contracte de proiectare și execuție: Płońsk Południe (Siedlin) – Załuski (12,9 km), Załuski – Modlin (12 km) și Modlin – Czosnów (9,7 km). Modlin – Czosnów a fost semnat la 12 mai 2020 cu Budimex pentru circa 598,8 milioane PLN (baza TVA nu este precizată), 36 de luni, și este reconstruit în locul DK7, cu trei benzi pe sens; sursele consultate nu indică antreprenorii celorlalte două contracte, deci nu se înregistrează niciunul pentru ele și nici un total al lotului. Între Zakroczym și Czosnów (14,6 km) fosta autostradă expres, deschisă ca 2x2 la 16 iunie 1990, a fost lărgită la două căi de rulare cu trei benzi. ZRID pentru Siedlin – Załuski a fost emis la 2 mai 2023. Axul desenat se termină unde OpenStreetMap încetează să eticheteze drumul ca S7, cu 4% mai scurt decât cei 34,6 km din sursă."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-modlin-czosnow-contract",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "plonsk-poludnie-czosnow"
+    },
+    {
+      "id": "czosnow-kielpin",
+      "name": {
+        "en": "Czosnów – Kiełpin",
+        "ro": "Czosnów – Kiełpin"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-11-16",
+        "constructionStart": "2026-03-16"
+      },
+      "lengthKm": 9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 536.3,
+              "currency": "PLN",
+              "year": 2023,
+              "note": "Contract value 536,313,784.41 PLN on the GDDKiA project site; VAT basis not stated."
+            },
+            "date": "2023-11-16",
+            "sourceRef": "gddkia-czosnow-kielpin-site"
+          }
+        ]
+      },
+      "contract": {
+        "totalMonths": 36,
+        "value": {
+          "amount": 536.3,
+          "currency": "PLN",
+          "year": 2023,
+          "note": "Contract value 536,313,784.41 PLN on the GDDKiA project site; VAT basis not stated."
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "lanes": 6
+      },
+      "contractors": [
+        {
+          "name": "Fabe Polska",
+          "role": "builder"
+        },
+        {
+          "name": "SP Sine Midas Stroy",
+          "role": "builder"
+        },
+        {
+          "name": "Yörük Yapı İnşaat",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-11-16",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "gddkia-czosnow-kielpin-site"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-03-16",
+          "note": {
+            "en": "GDDKiA handed the construction site of section A (8.974 km) to the contractor, five days after the ZRID of 11 March 2026 for sections A and B.",
+            "ro": "GDDKiA a predat antreprenorului șantierul secțiunii A (8,974 km), la cinci zile după ZRID din 11 martie 2026 pentru secțiunile A și B."
+          },
+          "sourceRef": "gddkia-czosnow-kielpin-handover"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract signed on 16 November 2023 with a consortium of Fabe Polska (leader), SP Sine Midas Stroy (Kazakhstan) and Yörük Yapı İnşaat (Turkey), 536.3 million PLN, 36 months from signing with winter periods (16 December to 15 March) not counted. The existing two-lane dual carriageway DK7 becomes an expressway with three lanes plus a hard shoulder in each direction, with junctions Czosnów, Palmiry and Sadowa. The ZRID permits for sections A and B were issued on 11 March 2026 and the site of section A was handed over on 16 March 2026. The GDDKiA project site still gives May 2027 as the planned end (17 months were allowed for design and ZRID, which came about a year later) and reported works progress of 7.47% in October 2026; pl.wikipedia gives May 2028 without an official source, so no expected opening is recorded. The road is built in place of DK7: OpenStreetMap has no separate S7 alignment here (some DK7 ways carry highway=construction, ref 7), so the drawn centreline follows the existing DK7. It is 30% longer than the sourced 9 km because it starts where OpenStreetMap stops tagging S7 near Czosnów and ends where the proposed Kiełpin – Warszawa S7 begins.",
+        "ro": "Contract de proiectare și execuție semnat la 16 noiembrie 2023 cu un consorțiu Fabe Polska (lider), SP Sine Midas Stroy (Kazahstan) și Yörük Yapı İnşaat (Turcia), 536,3 milioane PLN, 36 de luni de la semnare, fără perioadele de iarnă (16 decembrie – 15 martie). DK7 existent, cu două căi de rulare și două benzi, devine drum expres cu trei benzi plus banda de urgență pe fiecare sens, cu nodurile Czosnów, Palmiry și Sadowa. Autorizațiile ZRID pentru secțiunile A și B au fost emise la 11 martie 2026, iar șantierul secțiunii A a fost predat la 16 martie 2026. Site-ul de proiect GDDKiA indică încă mai 2027 ca termen planificat (au fost prevăzute 17 luni pentru proiectare și ZRID, obținut cu circa un an mai târziu) și raporta un progres al lucrărilor de 7,47% în octombrie 2026; pl.wikipedia indică mai 2028 fără o sursă oficială, deci nu se înregistrează o deschidere estimată. Drumul se construiește în locul DK7: OpenStreetMap nu are aici un traseu S7 separat (unele segmente DK7 poartă highway=construction, ref 7), deci axul desenat urmează DK7 existent. Este cu 30% mai lung decât cei 9 km din sursă deoarece începe unde OpenStreetMap încetează să eticheteze S7 lângă Czosnów și se termină unde începe S7 propus Kiełpin – Varșovia."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-czosnow-kielpin-site",
+        "gddkia-czosnow-kielpin-handover",
+        "gddkia-czosnow-kielpin-zrid",
+        "gddkia-czosnow-kielpin-progress",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "czosnow-kielpin"
+    },
+    {
+      "id": "lotnisko-lesznowola",
+      "name": {
+        "en": "Warszawa Lotnisko – Zamienie – Lesznowola",
+        "ro": "Warszawa Lotnisko – Zamienie – Lesznowola"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-08-17",
+        "opened": "2022-08-30"
+      },
+      "lengthKm": 6.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 457.3,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Gross (brutto) value 457,327,407.33 PLN of the replacement contract signed with Polaqua on 14 February 2020."
+            },
+            "date": "2020-02-14",
+            "sourceRef": "gddkia-warszawa-grojec"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 457.3,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Gross (brutto) value of the replacement contract with Polaqua."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 6
+      },
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-18",
+          "note": {
+            "en": "Design-build tender announced for the whole Warszawa – Grójec stretch.",
+            "ro": "Licitație de proiectare și execuție anunțată pentru întregul tronson Varșovia – Grójec."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-08-17",
+          "note": {
+            "en": "Contract signed with a Rubau Polska consortium (221.4 million PLN gross).",
+            "ro": "Contract semnat cu un consorțiu Rubau Polska (221,4 milioane PLN brut)."
+          },
+          "sourceRef": "gddkia-warszawa-grojec-contracts"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-05-16",
+          "note": {
+            "en": "GDDKiA terminated the Rubau contract.",
+            "ro": "GDDKiA a reziliat contractul Rubau."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-02-14",
+          "note": {
+            "en": "Contract to complete the design and build signed with Polaqua (457.3 million PLN gross).",
+            "ro": "Contract de finalizare a proiectului și construcție semnat cu Polaqua (457,3 milioane PLN brut)."
+          },
+          "sourceRef": "gddkia-warszawa-grojec"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-08-30",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Section A of the Warszawa – Grójec project, 6.6 km from the Warszawa Lotnisko junction to the Lesznowola junction, with the Zamienie junction; three lanes per direction. The planned completion in the first contracts was April 2021. The drawn centreline starts at the Warszawa Lotnisko junction ramps and is 21% shorter than the sourced 6.6 km; the road north of it is shared with S2 and S8 and is not drawn.",
+        "ro": "Secțiunea A a proiectului Varșovia – Grójec, 6,6 km de la nodul Warszawa Lotnisko la nodul Lesznowola, cu nodul Zamienie; trei benzi pe sens. Finalizarea planificată în primele contracte era aprilie 2021. Axul desenat începe la rampele nodului Warszawa Lotnisko și este cu 21% mai scurt decât cei 6,6 km din sursă; drumul la nord de acesta este comun cu S2 și S8 și nu este desenat."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-warszawa-grojec",
+        "gddkia-warszawa-grojec-contracts",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lotnisko-lesznowola"
+    },
+    {
+      "id": "lesznowola-tarczyn-polnoc",
+      "name": {
+        "en": "Lesznowola – Antoninów – Złotokłos – Tarczyn Północ",
+        "ro": "Lesznowola – Antoninów – Złotokłos – Tarczyn Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-08-17",
+        "opened": "2023-04-28"
+      },
+      "lengthKm": 14.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 510.5,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Gross (brutto) value 510,533,942.16 PLN of the replacement contract signed with PTU Intercor on 23 June 2021."
+            },
+            "date": "2021-06-23",
+            "sourceRef": "gddkia-warszawa-grojec"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 510.5,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Gross (brutto) value of the replacement contract with PTU Intercor."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "contractors": [
+        {
+          "name": "PTU Intercor",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-08-17",
+          "note": {
+            "en": "Contract signed with IDS-Bud (388.7 million PLN gross).",
+            "ro": "Contract semnat cu IDS-Bud (388,7 milioane PLN brut)."
+          },
+          "sourceRef": "gddkia-warszawa-grojec"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2020-10-02",
+          "note": {
+            "en": "GDDKiA terminated the IDS-Bud contract.",
+            "ro": "GDDKiA a reziliat contractul IDS-Bud."
+          },
+          "sourceRef": "gddkia-warszawa-grojec"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-06-23",
+          "note": {
+            "en": "Contract to continue the works signed with PTU Intercor (510.5 million PLN gross).",
+            "ro": "Contract de continuare a lucrărilor semnat cu PTU Intercor (510,5 milioane PLN brut)."
+          },
+          "sourceRef": "gddkia-warszawa-grojec"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-04-28",
+          "note": {
+            "en": "Both carriageways opened with an 80 km/h limit, without the Antoninów and Tarczyn Północ junctions.",
+            "ro": "Ambele căi de rulare deschise cu limită de 80 km/h, fără nodurile Antoninów și Tarczyn Północ."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Section B of the Warszawa – Grójec project, 14.8 km (pl.wikipedia: about 15 km), two lanes per direction with a reserve for a third. The Antoninów junction opened on 31 August 2023 and the Tarczyn Północ junction on 30 October 2023; the road was designated an expressway on 22 March 2024 (pl.wikipedia). The lot is shown as opened on the day the main carriageways opened.",
+        "ro": "Secțiunea B a proiectului Varșovia – Grójec, 14,8 km (pl.wikipedia: circa 15 km), două benzi pe sens cu rezervă pentru a treia. Nodul Antoninów a fost deschis la 31 august 2023, iar nodul Tarczyn Północ la 30 octombrie 2023; drumul a fost declarat drum expres la 22 martie 2024 (pl.wikipedia). Lotul este afișat ca deschis în ziua în care au fost deschise căile principale."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-warszawa-grojec",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lesznowola-tarczyn-polnoc"
+    },
+    {
+      "id": "tarczyn-polnoc-gluchow",
+      "name": {
+        "en": "Tarczyn Północ – Tarczyn Południe – Głuchów (start of the Grójec bypass)",
+        "ro": "Tarczyn Północ – Tarczyn Południe – Głuchów (începutul ocolitoarei Grójec)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-08-17",
+        "opened": "2020-12-17"
+      },
+      "lengthKm": 7.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 203.4,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Gross (brutto) contract value stated by GDDKiA."
+            },
+            "date": "2017-08-17",
+            "sourceRef": "gddkia-warszawa-grojec-contracts"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 203.4,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Gross (brutto) contract value stated by GDDKiA."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-08-17",
+          "note": {
+            "en": "Contract signed with Mota-Engil Central Europe.",
+            "ro": "Contract semnat cu Mota-Engil Central Europe."
+          },
+          "sourceRef": "gddkia-warszawa-grojec-contracts"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-17",
+          "note": {
+            "en": "The 5 km from the Rembertów roundabout (Tarczyn Południe) to the start of the Grójec bypass opened under temporary traffic arrangements; GDDKiA gives December 2020 for the whole 7.9 km section.",
+            "ro": "Cei 5 km de la giratoriul Rembertów (Tarczyn Południe) la începutul ocolitoarei Grójec deschiși cu organizare temporară a traficului; GDDKiA indică decembrie 2020 pentru întreaga secțiune de 7,9 km."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Section C of the Warszawa – Grójec project, 7.9 km from the crossing with the former DK7 near Pamiątka to the existing Grójec bypass, with the Tarczyn Południe junction. Marked as an expressway from May 2021 (pl.wikipedia). The Tarczyn Północ junction at its start belongs to the previous lot. The drawn centreline is 15% longer than the sourced 7.9 km.",
+        "ro": "Secțiunea C a proiectului Varșovia – Grójec, 7,9 km de la intersecția cu fosta DK7 lângă Pamiątka până la ocolitoarea existentă Grójec, cu nodul Tarczyn Południe. Marcat ca drum expres din mai 2021 (pl.wikipedia). Nodul Tarczyn Północ de la începutul său aparține lotului anterior. Axul desenat este cu 15% mai lung decât cei 7,9 km din sursă."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-warszawa-grojec",
+        "gddkia-warszawa-grojec-contracts",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tarczyn-polnoc-gluchow"
+    },
+    {
+      "id": "radom-zachodnia-obwodnica",
+      "name": {
+        "en": "Western Radom bypass (Radom Północ – Radom Południe)",
+        "ro": "Ocolitoarea de vest a Radomului (Radom Północ – Radom Południe)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-07-29",
+        "constructionStart": "2015-08",
+        "opened": "2018-10-19"
+      },
+      "lengthKm": 24.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 729.4,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Contract value per pl.wikipedia. VAT basis not stated."
+            },
+            "date": "2015-07-29",
+            "sourceRef": "plwiki-s7"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 729.4,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Contract value per pl.wikipedia. VAT basis not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Dragados",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-09-02",
+          "note": {
+            "en": "Tender announced again; offers opened on 30 January 2015.",
+            "ro": "Licitație anunțată din nou; ofertele au fost deschise la 30 ianuarie 2015."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-07-29",
+          "note": {
+            "en": "Design-build contract signed with Dragados.",
+            "ro": "Contract de proiectare și execuție semnat cu Dragados."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2015-08",
+          "note": {
+            "en": "Site handed over to the contractor.",
+            "ro": "Șantierul predat antreprenorului."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-10-19",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Dragados (729.4 million PLN per pl.wikipedia; GDDKiA gives about 728.2 million PLN for the construction works at opening), 2015–2018, with four junctions (Radom Północ, Radom Zachód, Wolanów, Radom Południe) and 27 bridge structures.",
+        "ro": "Contract de proiectare și execuție cu Dragados (729,4 milioane PLN conform pl.wikipedia; GDDKiA indică circa 728,2 milioane PLN pentru lucrările de construcție la deschidere), 2015–2018, cu patru noduri (Radom Północ, Radom Zachód, Wolanów, Radom Południe) și 27 de structuri de poduri."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "radom-zachodnia-obwodnica"
+    },
+    {
+      "id": "radom-poludnie-granica",
+      "name": {
+        "en": "Radom Południe – Szydłowiec – voivodeship border",
+        "ro": "Radom Południe – Szydłowiec – limita voievodatului"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-07-03",
+        "opened": "2017-07-12"
+      },
+      "lengthKm": 22,
+      "contractors": [
+        {
+          "name": "Dragados",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-07-03",
+          "note": {
+            "en": "Contract signed with Dragados.",
+            "ro": "Contract semnat cu Dragados."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-07-12",
+          "note": {
+            "en": "Opened to traffic, including the rebuilt Szydłowiec bypass.",
+            "ro": "Dat în trafic, inclusiv ocolitoarea Szydłowiec reconstruită."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Contract with Dragados signed on 3 July 2014 (pl.wikipedia). The section includes the Szydłowiec bypass, a 4.1 km single carriageway from 1992 rebuilt to an expressway with three junctions; elsewhere it mostly follows a new alignment east of DK7. The drawn centreline ends at the Mazowieckie – Świętokrzyskie voivodeship boundary, placed where the line crosses the OpenStreetMap boundary.",
+        "ro": "Contract cu Dragados semnat la 3 iulie 2014 (pl.wikipedia). Secțiunea include ocolitoarea Szydłowiec, o cale de rulare unică de 4,1 km din 1992 reconstruită ca drum expres cu trei noduri; în rest urmează în mare parte un traseu nou la est de DK7. Axul desenat se termină la limita voievodatelor Mazowieckie – Świętokrzyskie, plasată unde linia traversează limita din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "radom-poludnie-granica"
+    },
+    {
+      "id": "granica-skarzysko-kamienna-zachod",
+      "name": {
+        "en": "Voivodeship border – Skarżysko-Kamienna Zachód",
+        "ro": "Limita voievodatului – Skarżysko-Kamienna Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10-10",
+        "opened": "2019-12-18"
+      },
+      "lengthKm": 7.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 259.8,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Cost of construction per pl.wikipedia. VAT basis not stated."
+            },
+            "date": "2017-10-10",
+            "sourceRef": "plwiki-s7"
+          }
+        ]
+      },
+      "contract": {
+        "executionMonths": 22,
+        "value": {
+          "amount": 259.8,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Cost of construction per pl.wikipedia. VAT basis not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-12",
+          "note": {
+            "en": "Tender announced.",
+            "ro": "Licitație anunțată."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-10-10",
+          "note": {
+            "en": "Contract signed with Budimex.",
+            "ro": "Contract semnat cu Budimex."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-18",
+          "note": {
+            "en": "Opened without the Skarżysko-Kamienna Północ junction (opened 25 May 2020).",
+            "ro": "Deschis fără nodul Skarżysko-Kamienna Północ (deschis la 25 mai 2020)."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Contract with Budimex signed on 10 October 2017, 22 months excluding winters. The route runs west of the old DK7, with junctions Skarżysko-Kamienna Zachód and Północ, four viaducts and two bridges. The drawn centreline starts at the voivodeship boundary and is 16% shorter than the sourced 7.6 km, which probably includes the junction approaches.",
+        "ro": "Contract cu Budimex semnat la 10 octombrie 2017, 22 de luni fără ierni. Traseul trece la vest de vechea DK7, cu nodurile Skarżysko-Kamienna Zachód și Północ, patru viaducte și două poduri. Axul desenat începe la limita voievodatului și este cu 16% mai scurt decât cei 7,6 km din sursă, care probabil includ accesele nodurilor."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "granica-skarzysko-kamienna-zachod"
+    },
+    {
+      "id": "skarzysko-obwodnica",
+      "name": {
+        "en": "Skarżysko-Kamienna bypass",
+        "ro": "Ocolitoarea Skarżysko-Kamienna"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-12-19"
+      },
+      "lengthKm": 2.1,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2005-12-19",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Short bypass opened on 19 December 2005; designated an expressway on 27 April 2011 together with the next section.",
+        "ro": "Ocolitoare scurtă deschisă la 19 decembrie 2005; declarată drum expres la 27 aprilie 2011 împreună cu secțiunea următoare."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "skarzysko-obwodnica"
+    },
+    {
+      "id": "skarzysko-wystepa",
+      "name": {
+        "en": "Skarżysko-Kamienna – Suchedniów – Występa",
+        "ro": "Skarżysko-Kamienna – Suchedniów – Występa"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-04-27"
+      },
+      "lengthKm": 16.7,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-04-27",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Section opened on 27 April 2011. The Występa end is placed by the cumulative sourced section lengths, because no junction marks it.",
+        "ro": "Secțiune deschisă la 27 aprilie 2011. Capătul Występa este plasat după lungimile cumulate ale secțiunilor din sursă, deoarece niciun nod nu îl marchează."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "skarzysko-wystepa"
+    },
+    {
+      "id": "wystepa-wisniowka",
+      "name": {
+        "en": "Występa – Wiśniówka (Kielce Północ junction)",
+        "ro": "Występa – Wiśniówka (nodul Kielce Północ)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-09-19"
+      },
+      "lengthKm": 7.1,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-09-19",
+          "note": {
+            "en": "Opened as a dual carriageway with the Kielce Północ junction; designated an expressway on 16 October 2009.",
+            "ro": "Deschis ca drum cu două căi de rulare cu nodul Kielce Północ; declarat drum expres la 16 octombrie 2009."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Section with the Kielce Północ junction. The cuts at Występa and Wiśniówka are placed by the cumulative sourced section lengths.",
+        "ro": "Secțiune cu nodul Kielce Północ. Tăieturile la Występa și Wiśniówka sunt plasate după lungimile cumulate ale secțiunilor din sursă."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wystepa-wisniowka"
+    },
+    {
+      "id": "wisniowka-checiny",
+      "name": {
+        "en": "Wiśniówka – Chęciny (north-western Kielce bypass)",
+        "ro": "Wiśniówka – Chęciny (ocolitoarea nord-vestică a Kielcelor)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-07-10"
+      },
+      "lengthKm": 22.7,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2013-07-10",
+          "note": {
+            "en": "Opened as a dual carriageway; designated an expressway on 29 August 2013.",
+            "ro": "Deschis ca drum cu două căi de rulare; declarat drum expres la 29 august 2013."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "The bypass was a single carriageway built in 1974–1984 and widened to 2x2 in 2010–2013, with the option of three lanes per direction. Junctions Kielce Zachód, Kielce Jaworznia and Kielce Południe (Chęciny).",
+        "ro": "Ocolitoarea era o cale de rulare unică construită în 1974–1984 și lărgită la 2x2 în 2010–2013, cu posibilitatea a trei benzi pe sens. Noduri: Kielce Zachód, Kielce Jaworznia și Kielce Południe (Chęciny)."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wisniowka-checiny"
+    },
+    {
+      "id": "checiny-jedrzejow",
+      "name": {
+        "en": "Chęciny – Jędrzejów",
+        "ro": "Chęciny – Jędrzejów"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-06-15",
+        "opened": "2018-12-21"
+      },
+      "lengthKm": 21.55,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 585.7,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Contract value per pl.wikipedia. VAT basis not stated in the source."
+            },
+            "date": "2015-06-15",
+            "sourceRef": "plwiki-s7"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 585.7,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Contract value per pl.wikipedia. VAT basis not stated in the source."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Salini Polska",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-06-15",
+          "note": {
+            "en": "Contract signed with a consortium led by Salini Polska.",
+            "ro": "Contract semnat cu un consorțiu condus de Salini Polska."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-09-04",
+          "note": {
+            "en": "9 km between Chęciny and Brzegi opened to traffic with a 100 km/h limit.",
+            "ro": "9 km între Chęciny și Brzegi deschiși circulației cu limită de 100 km/h."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-12-13",
+          "note": {
+            "en": "7 km between Brzegi and Mnichów opened.",
+            "ro": "7 km între Brzegi și Mnichów deschiși."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-12-21",
+          "note": {
+            "en": "Last 4 km, Mnichów – Jędrzejów Północ, opened.",
+            "ro": "Ultimii 4 km, Mnichów – Jędrzejów Północ, deschiși."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Opened in stages in 2018; the planned end was the third quarter of 2017 and all works finished at the end of 2020, with contractual penalties of 60.6 million PLN charged to the contractor. A short stretch of about 1 km at Chęciny opened on 26 October 2018.",
+        "ro": "Deschis pe etape în 2018; termenul planificat era trimestrul III 2017, iar toate lucrările s-au încheiat la sfârșitul lui 2020, cu penalități contractuale de 60,6 milioane PLN aplicate antreprenorului. Un tronson scurt de circa 1 km la Chęciny a fost deschis la 26 octombrie 2018."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "checiny-jedrzejow"
+    },
+    {
+      "id": "jedrzejow-moczydlo",
+      "name": {
+        "en": "Jędrzejów – Mierzawa – Wodzisław – voivodeship border (Moczydło)",
+        "ro": "Jędrzejów – Mierzawa – Wodzisław – limita voievodatului (Moczydło)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-10-16",
+        "opened": "2017-09-23"
+      },
+      "lengthKm": 20,
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-10-16",
+          "note": {
+            "en": "Contract signed with Budimex.",
+            "ro": "Contract semnat cu Budimex."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-09-23",
+          "note": {
+            "en": "Opened to traffic with four junctions.",
+            "ro": "Dat în trafic cu patru noduri."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Junctions Jędrzejów Wschód, Jędrzejów Południe (Łączyn), Mierzawa and Wodzisław. The Jędrzejów bypass (6.8 km, 2003–2005) was completed to two carriageways under this contract. The drawn centreline starts at the Jędrzejów Północ junction and ends where it crosses the Świętokrzyskie – Małopolskie boundary in OpenStreetMap, 6% longer than the sourced 20 km.",
+        "ro": "Noduri: Jędrzejów Wschód, Jędrzejów Południe (Łączyn), Mierzawa și Wodzisław. Ocolitoarea Jędrzejów (6,8 km, 2003–2005) a fost completată cu două căi de rulare prin acest contract. Axul desenat începe la nodul Jędrzejów Północ și se termină unde traversează limita Świętokrzyskie – Małopolskie din OpenStreetMap, cu 6% mai lung decât cei 20 km din sursă."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jedrzejow-moczydlo"
+    },
+    {
+      "id": "moczydlo-miechow",
+      "name": {
+        "en": "Voivodeship border (Moczydło) – Książ – Miechów",
+        "ro": "Limita voievodatului (Moczydło) – Książ – Miechów"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-04-16",
+        "constructionStart": "2020-07-27",
+        "opened": "2023-09-05"
+      },
+      "lengthKm": 18.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 752.9,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "GDDKiA: more than 752.929 million PLN; VAT basis not stated."
+            },
+            "date": "2020-04-16",
+            "sourceRef": "gddkia-moczydlo-miechow-contract"
+          }
+        ]
+      },
+      "contract": {
+        "totalMonths": 31,
+        "value": {
+          "amount": 752.9,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "GDDKiA: more than 752.929 million PLN; VAT basis not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Intercor",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-09-09",
+          "note": {
+            "en": "Tender announced again; the first tender of September 2015 ended without a contract.",
+            "ro": "Licitație anunțată din nou; prima licitație din septembrie 2015 s-a încheiat fără contract."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-04-16",
+          "note": {
+            "en": "Contract to continue the design and build signed with Intercor.",
+            "ro": "Contract de continuare a proiectării și construcției semnat cu Intercor."
+          },
+          "sourceRef": "gddkia-moczydlo-miechow-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-07-27",
+          "note": {
+            "en": "First works in the field.",
+            "ro": "Primele lucrări pe teren."
+          },
+          "sourceRef": "gddkia-miechow-szczepanowice-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-09-05",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "The first tender for Moczydło – Szczepanowice (September 2015) ended without a contract after the environmental decision was annulled following protests in Poradów. Contract of 16 April 2020 with Intercor for more than 752.9 million PLN (VAT basis not stated), 31 months with winters excluded from the works period; junctions Książ and Miechów, 24 structures and two rest areas. pl.wikipedia gives August 2020 for the start of works; GDDKiA gives 27 July 2020. The drawn centreline ends after the Miechów junction and is within 1% of the sourced 18.7 km.",
+        "ro": "Prima licitație pentru Moczydło – Szczepanowice (septembrie 2015) s-a încheiat fără contract după anularea deciziei de mediu în urma protestelor din Poradów. Contract din 16 aprilie 2020 cu Intercor pentru peste 752,9 milioane PLN (baza TVA nu este precizată), 31 de luni cu iernile excluse din perioada lucrărilor; noduri Książ și Miechów, 24 de structuri și două zone de servicii. pl.wikipedia indică august 2020 pentru începerea lucrărilor; GDDKiA indică 27 iulie 2020. Axul desenat se termină după nodul Miechów și se află în limita a 1% față de cei 18,7 km din sursă."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-moczydlo-miechow-contract",
+        "gddkia-miechow-szczepanowice-contract",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "moczydlo-miechow"
+    },
+    {
+      "id": "miechow-szczepanowice",
+      "name": {
+        "en": "Miechów – Szczepanowice",
+        "ro": "Miechów – Szczepanowice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-02-08",
+        "constructionStart": "2023",
+        "opened": "2024-08-26"
+      },
+      "lengthKm": 5.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 162.4,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "GDDKiA: more than 162.4 million PLN; VAT basis not stated."
+            },
+            "date": "2021-02-08",
+            "sourceRef": "gddkia-miechow-szczepanowice-contract"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 162.4,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "GDDKiA: more than 162.4 million PLN; VAT basis not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Fabe Polska",
+          "role": "builder"
+        },
+        {
+          "name": "SP Sine Midas Stroy",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-04-29",
+          "note": {
+            "en": "Tender announced again after the 2015 tender fell through.",
+            "ro": "Licitație anunțată din nou după eșecul licitației din 2015."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-02-08",
+          "note": {
+            "en": "Design-build contract signed with Fabe Polska (leader) and SP Sine Midas Stroy.",
+            "ro": "Contract de proiectare și execuție semnat cu Fabe Polska (lider) și SP Sine Midas Stroy."
+          },
+          "sourceRef": "gddkia-miechow-szczepanowice-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-08-26",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "The last section of S7 in Małopolskie to be contracted. The first tender (September 2015) ended without a contract after the environmental decision was annulled following protests in Poradów. Works began in 2023 (pl.wikipedia, no month given). The drawn centreline spans the stretch between the Miechów and Szczepanowice junctions.",
+        "ro": "Ultima secțiune S7 din Małopolskie pentru care s-a atribuit un contract. Prima licitație (septembrie 2015) s-a încheiat fără contract după anularea deciziei de mediu în urma protestelor din Poradów. Lucrările au început în 2023 (pl.wikipedia, fără lună). Axul desenat acoperă tronsonul dintre nodurile Miechów și Szczepanowice."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-miechow-szczepanowice-contract",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miechow-szczepanowice"
+    },
+    {
+      "id": "szczepanowice-widoma",
+      "name": {
+        "en": "Szczepanowice – Widoma",
+        "ro": "Szczepanowice – Widoma"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-01-08",
+        "constructionStart": "2019-09-11",
+        "opened": "2021-10-04"
+      },
+      "lengthKm": 13.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 508.1,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "GDDKiA: more than 508.135 million PLN; VAT basis not stated."
+            },
+            "date": "2018-01-08",
+            "sourceRef": "gddkia-szczepanowice-widoma-contract"
+          }
+        ]
+      },
+      "contract": {
+        "totalMonths": 34,
+        "value": {
+          "amount": 508.1,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "GDDKiA: more than 508.135 million PLN; VAT basis not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-01-08",
+          "note": {
+            "en": "Design-build contract signed with Mota-Engil Central Europe.",
+            "ro": "Contract de proiectare și execuție semnat cu Mota-Engil Central Europe."
+          },
+          "sourceRef": "gddkia-szczepanowice-widoma-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-09-11",
+          "note": {
+            "en": "Works began.",
+            "ro": "Lucrările au început."
+          },
+          "sourceRef": "gddkia-szczepanowice-widoma-start"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-10-04",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "Contract signed on 8 January 2018, 34 months with winters excluded from the works period. The ZRID was issued on 23 August 2019 and the site handed over on 28 August 2019 (GDDKiA; pl.wikipedia gives the ZRID as 28 August). Two junctions (Szczepanowice and Widoma), 10 viaducts and one 681 – 689 m viaduct at Szczepanowice. GDDKiA gives 13.1 km; pl.wikipedia says about 14 km.",
+        "ro": "Contract semnat la 8 ianuarie 2018, 34 de luni cu iernile excluse din perioada lucrărilor. ZRID a fost emis la 23 august 2019, iar șantierul predat la 28 august 2019 (GDDKiA; pl.wikipedia indică ZRID la 28 august). Două noduri (Szczepanowice și Widoma), 10 viaducte și un viaduct de 681 – 689 m la Szczepanowice. GDDKiA indică 13,1 km; pl.wikipedia spune circa 14 km."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-szczepanowice-widoma-contract",
+        "gddkia-szczepanowice-widoma-start",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szczepanowice-widoma"
+    },
+    {
+      "id": "widoma-krakow-mistrzejowice",
+      "name": {
+        "en": "Widoma – Kraków Mistrzejowice",
+        "ro": "Widoma – Kraków Mistrzejowice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-09-26",
+        "opened": "2024-12-23"
+      },
+      "lengthKm": 13.3,
+      "contractors": [
+        {
+          "name": "Gülermak",
+          "role": "builder"
+        },
+        {
+          "name": "Mosty Łódź",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-18",
+          "note": {
+            "en": "Design-build tender announced.",
+            "ro": "Licitație de proiectare și execuție anunțată."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-09-26",
+          "note": {
+            "en": "Contract signed with Salini Impregilo (later Webuild) for the 18.3 km Widoma – Kraków, over 1 bn PLN; 34 months allowed.",
+            "ro": "Contract semnat cu Salini Impregilo (ulterior Webuild) pentru cei 18,3 km Widoma – Kraków, peste 1 mld PLN; 34 de luni alocate."
+          },
+          "sourceRef": "gddkia-widoma-krakow-contract"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2020-12-07",
+          "note": {
+            "en": "GDDKiA terminated the contract with Webuild (formerly Salini) for poor performance.",
+            "ro": "GDDKiA a reziliat contractul cu Webuild (fost Salini) pentru execuție necorespunzătoare."
+          },
+          "sourceRef": "gddkia-widoma-krakow-termination"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-07-15",
+          "note": {
+            "en": "Contract to continue the works signed with a consortium of Gülermak and Mosty Łódź.",
+            "ro": "Contract de continuare a lucrărilor semnat cu un consorțiu Gülermak și Mosty Łódź."
+          },
+          "sourceRef": "gddkia-widoma-krakow-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-23",
+          "note": {
+            "en": "Opened to traffic (13.3 km, without the Mistrzejowice junction) with restrictions; unrestricted from 27 July 2025.",
+            "ro": "Dat în trafic (13,3 km, fără nodul Mistrzejowice) cu restricții; fără restricții din 27 iulie 2025."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "The contracts cover the whole 18.3 km Widoma – Kraków Nowa Huta (junctions Łuczyce, Raciborowice, Mistrzejowice and Grębałów), of which 13.3 km, without the Mistrzejowice junction, opened on 23 December 2024. The 2021 contract with Gülermak and Mosty Łódź is worth 1,545,681,714.00 PLN (VAT basis not stated), so it is not recorded as the cost of this lot. The ZRID decision of the Małopolska voivode is dated 20 July 2020 and the site was handed over a week later; Webuild (formerly Salini) was terminated on 7 December 2020 after only preparatory works. The Mistrzejowice interchange and the remaining 5 km of the Kraków ring road towards Nowa Huta were still being built at the time of the source and are not part of this lot.",
+        "ro": "Contractele acoperă întregul tronson Widoma – Kraków Nowa Huta de 18,3 km (noduri Łuczyce, Raciborowice, Mistrzejowice și Grębałów), din care 13,3 km, fără nodul Mistrzejowice, au fost deschiși la 23 decembrie 2024. Contractul din 2021 cu Gülermak și Mosty Łódź valorează 1.545.681.714,00 PLN (baza TVA nu este precizată), deci nu este înregistrat drept costul acestui lot. Decizia ZRID a voievodului Małopolska are data de 20 iulie 2020, iar șantierul a fost predat o săptămână mai târziu; Webuild (fost Salini) a fost reziliat la 7 decembrie 2020 după doar lucrări pregătitoare. Nodul Mistrzejowice și cei 5 km rămași din centura Cracoviei spre Nowa Huta erau încă în construcție la data sursei și nu fac parte din acest lot."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-widoma-krakow-contract",
+        "gddkia-widoma-krakow-termination",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "widoma-krakow-mistrzejowice"
+    },
+    {
+      "id": "lubien-naprawa",
+      "name": {
+        "en": "Lubień – Naprawa",
+        "ro": "Lubień – Naprawa"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-06-29",
+        "opened": "2019-12-20"
+      },
+      "lengthKm": 7.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 521.5,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Gross (brutto) value 521,519,095.35 PLN of the IDS-Bud and Altis-Holding contract, terminated on 17 July 2020."
+            },
+            "date": "2016-06-29",
+            "sourceRef": "plwiki-s7"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "IDS-Bud",
+          "role": "builder"
+        },
+        {
+          "name": "Altis-Holding",
+          "role": "builder"
+        },
+        {
+          "name": "TBM",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2014-12-19",
+          "note": {
+            "en": "Tender announced for the three Lubień – Rabka sections.",
+            "ro": "Licitație anunțată pentru cele trei secțiuni Lubień – Rabka."
+          },
+          "sourceRef": "gddkia-naprawa-skomielna-contract"
+        },
+        {
+          "kind": "awarded",
+          "date": "2016-06-29",
+          "note": {
+            "en": "Contract signed with IDS-Bud and Altis-Holding.",
+            "ro": "Contract semnat cu IDS-Bud și Altis-Holding."
+          },
+          "sourceRef": "plwiki-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-20",
+          "note": {
+            "en": "Left carriageway opened for traffic in both directions on one carriageway, with a 70 km/h limit.",
+            "ro": "Calea de rulare stângă deschisă traficului în ambele sensuri pe o singură cale de rulare, cu limită de 70 km/h."
+          },
+          "sourceRef": "gddkia-lubien-naprawa-left-carriageway"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2021-11-30",
+          "note": {
+            "en": "Right carriageway opened.",
+            "ro": "Calea de rulare dreaptă deschisă."
+          },
+          "sourceRef": "gddkia-lubien-naprawa-gov"
+        }
+      ],
+      "note": {
+        "en": "7.6 km (7.5 km in the 2016 GDDKiA announcement), about 24% of it on structures and 49% in cuttings. Gross (brutto) contract value at signing: 521.52 million PLN (IDS-Bud with Altis-Holding, terminated); the replacement contracts were about 42.2 million (TBM, viaduct) and over 74.5 million PLN (Strabag, right carriageway, VAT basis not stated). A landslide halted work on the right carriageway and GDDKiA terminated the IDS-Bud contract on 17 July 2020; replacement contracts followed on 1 September 2020 (TBM) and 22 December 2020 (Strabag). The lot is shown as opened when traffic first ran over the whole length on one carriageway (20 December 2019); the second carriageway opened on 30 November 2021. The road ends at Naprawa and joins the Naprawa – Skomielna Biała tunnel section. The drawn centreline starts 2.4 km after the Lubień junction node: the sourced section lengths (7.6 + 3.1 km) place the start there, and the first kilometres from the node belong to the Lubień bypass opened in 2009, which is not drawn.",
+        "ro": "7,6 km (7,5 km în anunțul GDDKiA din 2016), circa 24% pe structuri și 49% în debleuri. Valoarea brută (brutto) a contractului la semnare: 521,52 milioane PLN (IDS-Bud cu Altis-Holding, reziliat); contractele de înlocuire au fost de circa 42,2 milioane (TBM, viaduct) și de peste 74,5 milioane PLN (Strabag, calea de rulare dreaptă, baza TVA nu este precizată). O alunecare de teren a oprit lucrările la calea de rulare dreaptă, iar GDDKiA a reziliat contractul IDS-Bud la 17 iulie 2020; contractele de înlocuire au urmat la 1 septembrie 2020 (TBM) și 22 decembrie 2020 (Strabag). Lotul este afișat ca deschis când traficul a circulat pe toată lungimea pe o singură cale de rulare (20 decembrie 2019); a doua cale de rulare a fost deschisă la 30 noiembrie 2021. Drumul se termină la Naprawa și se leagă de secțiunea cu tunel Naprawa – Skomielna Biała. Axul desenat începe la 2,4 km după nodul Lubień: lungimile secțiunilor din sursă (7,6 + 3,1 km) plasează începutul acolo, iar primii kilometri de la nod aparțin ocolitoarei Lubień deschise în 2009, care nu este desenată."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-lubien-naprawa-gov",
+        "gddkia-lubien-naprawa-left-carriageway",
+        "gddkia-naprawa-skomielna-contract",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubien-naprawa"
+    },
+    {
+      "id": "naprawa-skomielna-biala",
+      "name": {
+        "en": "Naprawa – Skomielna Biała (Luboń Mały tunnel)",
+        "ro": "Naprawa – Skomielna Biała (tunelul Luboń Mały)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-06-29",
+        "opened": "2022-11-12"
+      },
+      "lengthKm": 3.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 968.8,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Gross (brutto) value 968,835,650.00 PLN of the Astaldi contract."
+            },
+            "date": "2016-06-29",
+            "sourceRef": "gddkia-naprawa-skomielna-contract"
+          }
+        ]
+      },
+      "contract": {
+        "totalMonths": 54,
+        "value": {
+          "amount": 968.8,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Gross (brutto) value of the Astaldi contract."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 2.058
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU co-financing of 1,322,398,015.17 PLN for the whole Lubień – Rabka-Zdrój project (three contracts, total contract value 2,471,380,000 PLN per GDDKiA); the agreement was signed on 11 September 2017. Recorded once, on this lot, and not as the cost of any one lot.",
+            "ro": "Cofinanțare UE de 1.322.398.015,17 PLN pentru întregul proiect Lubień – Rabka-Zdrój (trei contracte, valoare totală a contractelor 2.471.380.000 PLN conform GDDKiA); acordul a fost semnat la 11 septembrie 2017. Înregistrată o singură dată, la acest lot, și nu drept costul unui singur lot."
+          },
+          "amount": {
+            "amount": 1322.4,
+            "currency": "PLN",
+            "year": 2017,
+            "scope": "programme",
+            "note": "EU co-financing of the whole Lubień – Rabka-Zdrój project (GDDKiA)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-06-29",
+          "note": {
+            "en": "Contract signed with Astaldi: about 3 km with the twin-tube tunnel of about 2.06 km, 54 months.",
+            "ro": "Contract semnat cu Astaldi: circa 3 km cu tunelul cu două tuburi de circa 2,06 km, 54 de luni."
+          },
+          "sourceRef": "gddkia-naprawa-skomielna-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-11-12",
+          "note": {
+            "en": "Opened to traffic, with the Luboń Mały tunnel.",
+            "ro": "Dat în trafic, cu tunelul Luboń Mały."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "3.1 km (GDDKiA: about 3.0 km) with the 2.058 km twin-tube Luboń Mały tunnel, drilled in Carpathian flysch cut by faults. The planned 54 months ran to the end of 2020, then to autumn 2021, and neither date was met (pl.wikipedia). Gross contract value at signing 968.84 million PLN (Astaldi). About 8 km of the 15.9 km Lubień – Rabka main line is on viaducts, bridges and in the tunnel. The tunnel is recorded as a profile figure, not as a separate lot. The drawn tunnel section is 2.05 km long.",
+        "ro": "3,1 km (GDDKiA: circa 3,0 km) cu tunelul Luboń Mały cu două tuburi de 2,058 km, săpat în fliș carpatic tăiat de falii. Cele 54 de luni planificate se încheiau la sfârșitul lui 2020, apoi toamna 2021, iar niciun termen nu a fost respectat (pl.wikipedia). Valoarea brută a contractului la semnare: 968,84 milioane PLN (Astaldi). Circa 8 km din traseul principal Lubień – Rabka de 15,9 km sunt pe viaducte, poduri și în tunel. Tunelul este înregistrat ca valoare de profil, nu ca lot separat. Secțiunea desenată a tunelului are 2,05 km."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-naprawa-skomielna-contract",
+        "gddkia-lubien-naprawa-gov",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "naprawa-skomielna-biala"
+    },
+    {
+      "id": "skomielna-biala-rabka",
+      "name": {
+        "en": "Skomielna Biała – Rabka-Zdrój (Zabornia)",
+        "ro": "Skomielna Biała – Rabka-Zdrój (Zabornia)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-03-31",
+        "opened": "2019-09-28"
+      },
+      "lengthKm": 5.2,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Salini Impregilo",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-03-31",
+          "note": {
+            "en": "Contract signed with Salini Impregilo.",
+            "ro": "Contract semnat cu Salini Impregilo."
+          },
+          "sourceRef": "gddkia-skomielna-rabka-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-09-28",
+          "note": {
+            "en": "Opened to traffic, after a fault delayed it from the planned July 2018.",
+            "ro": "Dat în trafic, după ce o falie l-a amânat față de iulie 2018 planificat."
+          },
+          "sourceRef": "plwiki-s7"
+        }
+      ],
+      "note": {
+        "en": "S7 Skomielna Biała – Rabka-Zdrój (Zabornia), 5.2 km, with the Skomielna Biała and Zabornia junctions. The contract signed on 31 March 2016 with Salini Impregilo, 615.07 million PLN gross, also covers the new DK47 Rabka-Zdrój – Chabówka (6.1 km in total from Skomielna Biała to Chabówka), so it is not recorded as the cost of this lot; 22 months were allowed. The S7 ends at the Zabornia junction; the Rabka-Zdrój – Chyżne section is only planned.",
+        "ro": "S7 Skomielna Biała – Rabka-Zdrój (Zabornia), 5,2 km, cu nodurile Skomielna Biała și Zabornia. Contractul semnat la 31 martie 2016 cu Salini Impregilo, 615,07 milioane PLN brut, acoperă și noul DK47 Rabka-Zdrój – Chabówka (6,1 km în total de la Skomielna Biała la Chabówka), deci nu este înregistrat drept costul acestui lot; au fost alocate 22 de luni. S7 se termină la nodul Zabornia; secțiunea Rabka-Zdrój – Chyżne este doar planificată."
+      },
+      "sourceRefs": [
+        "plwiki-s7",
+        "gddkia-skomielna-rabka-contract",
+        "osm-relation-s7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "skomielna-biala-rabka"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-s7",
+      "title": "Wikipedia (pl): Droga ekspresowa S7 (Polska)",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S7_(Polska)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-relation-s7",
+      "title": "OpenStreetMap: route relation 112778 (S7, network PL:expressway)",
+      "url": "https://www.openstreetmap.org/relation/112778",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-koszwaly-kazimierzowo",
+      "title": "GDDKiA: Podpisano umowy na budowę dwóch odcinków S7 między Koszwałami a Elblągiem (9 Oct 2015)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/20179/Podpisano-umowy-na-budowe-dwoch-odcinkow-S7-miedzy-Koszwalami-a-Elblagiem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-milomlyn-ostroda-polnoc",
+      "title": "GDDKiA: Podpisano umowę na budowę S7 Miłomłyn-Ostróda Północ (5 Nov 2014)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/16969/Podpisano-umowe-na-budowe-S7-Milomlyn-Ostroda-Polnoc",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-ostroda-polnoc-poludnie",
+      "title": "GDDKiA: Umowa na budowę siódemki i szesnastki wokół Ostródy podpisana (15 Jun 2015)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/18976/Umowa-na-budowe-siodemki-i-szesnastki-wokol-Ostrody-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-olsztynek-bypass-2012",
+      "title": "GDDKiA: Obwodnica Olsztynka gotowa (29 Sep 2012)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/11550/Ekspresowa-obwodnica-Olsztynka-gotowa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-olsztynek-nidzica-2012",
+      "title": "GDDKiA: Droga ekspresowa S7 Olsztynek – Nidzica jest już dostępna dla kierowców (8 Nov 2012)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/11731/Droga-ekspresowa-S-7-Olsztynek-Nidzica-jest-juz-dostepna-dla-kierowcow-Dzis-po-godzinie10:00-ruch-zostal-skierowany-na-dwie-jezdnie-nowej-siodemki",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-nidzica-napierki-2017",
+      "title": "GDDKiA: S7 Nidzica – Napierki otwarta (23 Jun 2017)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/25989/S7-Nidzica-Napierki-otwarta",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-napierki-mlawa-contracts",
+      "title": "GDDKiA: Podpisanie umów na dwa odcinki S7 na Mazowszu (20 Dec 2017)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/28019/Podpisanie-umow-na-dwa-odcinki-S7-na-Mazowszu",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-strzegowo-plonsk-contracts",
+      "title": "GDDKiA: Komplet umów na budowę S7 między Płońskiem a Warmińsko-Mazurskiem (12 Jan 2018)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/28142/Komplet-umow-na-budowe-S7-miedzy-Plonskiem-a-Warminsko-Mazurskiem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-mlawa-strzegowo-zrid",
+      "title": "GDDKiA: Kolejny ZRID na mazowiecki odcinek S7 (Mława – Strzegowo, 2019)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/35337/Kolejny-ZRID-na-mazowiecki-odcinek-S7",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "mi-napierki-plonsk-2021",
+      "title": "Ministerstwo Infrastruktury: Kolejne kilometry S7 na Mazowszu udostępnione kierowcom (22 Dec 2021)",
+      "url": "https://www.gov.pl/web/infrastruktura/kolejne-kilometry-s7-na-mazowszu-udostepnione-kierowcom",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-plonsk-bypass",
+      "title": "GDDKiA: Ekspresowa obwodnica Płońska otwarta (3 Jun 2009)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/6022/ekspresowa-obwodnica-plonska-otwarta",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-modlin-czosnow-contract",
+      "title": "GDDKiA: Pierwsza umowa na projekt i budowę S7 Płońsk – Czosnów podpisana (12 May 2020)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/37569/Pierwsza-umowa-na-projekt-i-budowe-S7-Plonsk-Czosnow-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-czosnow-kielpin-site",
+      "title": "GDDKiA: S7 Czosnów – Kiełpin project site",
+      "url": "https://s7-czosnow-kielpin.gddkia.gov.pl/",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-czosnow-kielpin-handover",
+      "title": "GDDKiA: Przekazanie terenu budowy dla realizacji odcinka A (S7 Czosnów – Kiełpin, 16 Mar 2026)",
+      "url": "https://s7-czosnow-kielpin.gddkia.gov.pl/przekazanie-terenu-budowy-dla-realizacji-odcinka-a/",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-czosnow-kielpin-zrid",
+      "title": "GDDKiA: Wydanie decyzji ZRID dla odcinka A i odcinka B (S7 Czosnów – Kiełpin, 11 Mar 2026)",
+      "url": "https://s7-czosnow-kielpin.gddkia.gov.pl/wydanie-decyzji-zrid-dla-odcinka-a-i-odcinka-b/",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-czosnow-kielpin-progress",
+      "title": "GDDKiA: S7 Czosnów – Kiełpin, postęp prac",
+      "url": "https://s7-czosnow-kielpin.gddkia.gov.pl/postep-prac/",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-warszawa-grojec",
+      "title": "GDDKiA: S7 Warszawa – Grójec (project page with contract values)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/7965/s7-warszawa-grojec",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-warszawa-grojec-contracts",
+      "title": "GDDKiA: GDDKiA podpisała kontrakty na budowę południowego wylotu trasy S7 (17 Aug 2017)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/26579/GDDKiA-podpisala-kontrakty-na-budowe-poludniowego-wylotu-trasy-S7",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-moczydlo-miechow-contract",
+      "title": "GDDKiA: Kolejna umowa na budowę S7 do Krakowa (Moczydło – Miechów)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/37283/Kolejna-umowa-na-budowe-S7-do-Krakowa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-miechow-szczepanowice-contract",
+      "title": "GDDKiA: Mamy umowę z wykonawcą ostatniego odcinka S7 na terenie województwa małopolskiego (8 Feb 2021)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/40847/Mamy-umowe-z-wykonawca-ostatniego-odcinka-S7-na-terenie-wojewodztwa-malopolskeigo",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-szczepanowice-widoma-contract",
+      "title": "GDDKiA: Umowa na projekt i budowę S7, odcinek II węzeł Szczepanowice – węzeł Widoma (8 Jan 2018)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/28111/Umowa-na-projekt-i-budowe-S7-granica-woj-swietokrzyskiego-Krakow-odcinek-II-wezel-Szczepanowice-wezel-Widoma",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-szczepanowice-widoma-start",
+      "title": "GDDKiA: Coraz bliżej ekspresowego połączenia Warszawy i Krakowa, kolejny odcinek S7 w budowie (11 Sep 2019)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/34970/Coraz-blizej-ekspresowego-polaczenia-Warszawy-i-Krakowa-kolejny-odcinek-S7-w-budowie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-widoma-krakow-contract",
+      "title": "GDDKiA Kraków: Umowa na S7 Widoma – Kraków podpisana (15 Jul 2021)",
+      "url": "https://www.gov.pl/web/gddkia-krakow/umowa-na-s7-widoma---krakow-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-widoma-krakow-termination",
+      "title": "GDDKiA: S7 Widoma – Kraków zbuduje już nowy wykonawca (Dec 2020)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/40337/S7-Widoma-Krakow-zbuduje-juz-nowy-wykonawca",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-lubien-naprawa-gov",
+      "title": "GDDKiA Kraków: Dwie jezdnie na S7 Lubień – Naprawa (30 Nov 2021)",
+      "url": "https://www.gov.pl/web/gddkia-krakow/dwie-jezdnie-na-s7-lubien---naprawa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-lubien-naprawa-left-carriageway",
+      "title": "GDDKiA: Pierwsza jezdnia S7 Lubień – Naprawa od jutra udostępniona kierowcom (19 Dec 2019)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/36175/Pierwsza-jezdnia-S7-Lubien-Naprawa-od-jutra-udostepniona-kierowcom",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-naprawa-skomielna-contract",
+      "title": "GDDKiA: Zakopianka w budowie, umowy na kolejne odcinki S7 podpisane (29 Jun 2016)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/22496/Zakopianka-w-budowie-Umowy-na-kolejne-odcinki-S7-na-Podhalu",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-skomielna-rabka-contract",
+      "title": "GDDKiA: Umowa na budowę S7 Skomielna – Rabka Zdrój i dk 47 Rabka Zdrój – Chabówka została podpisana (31 Mar 2016)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/21563/Umowa-na-budowe-S7-Skomielna-Rabka-Zdroj-i-dk-47-Rabka-Zdroj-Chabowka-zostala-podpisana",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

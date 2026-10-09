@@ -1,0 +1,1510 @@
+{
+  "id": "pl-a1",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "A1 motorway (Rusocin – Toruń – Łódź – Częstochowa – Gliwice – Gorzyczki)",
+    "ro": "Autostrada A1 (Rusocin – Toruń – Łódź – Częstochowa – Gliwice – Gorzyczki)"
+  },
+  "description": {
+    "en": "Poland's north–south motorway from Rusocin near Gdańsk to the Czech border at Gorzyczki, where it meets the D1. Sections opened from 2007 (Rusocin – Swarożyn) to 2023 (Piotrków Trybunalski – Częstochowa). Rusocin – Nowe Marzy (90 km) was built and is run under a concession by Gdańsk Transport Company S.A. (AmberOne), the operator rather than a builder. Lots follow GDDKiA contract sections and opening dates, cut at mapped junctions; the Tuszyn – Pyrzowice works are listed by their lettered sections A to I. Contract values come from the GDDKiA monthly contract table and include VAT. Where a source section length differs from the drawn centreline, the sourced length is kept and the lot note says so.",
+    "ro": "Autostrada nord–sud a Poloniei, de la Rusocin lângă Gdańsk până la granița cehă de la Gorzyczki, unde se leagă de D1. Sectoarele au fost deschise din 2007 (Rusocin – Swarożyn) până în 2023 (Piotrków Trybunalski – Częstochowa). Rusocin – Nowe Marzy (90 km) a fost construit și este exploatat în concesiune de Gdańsk Transport Company S.A. (AmberOne), operator și nu constructor. Loturile urmează sectoarele de contract GDDKiA și datele deschiderii, tăiate la nodurile cartografiate; lucrările Tuszyn – Pyrzowice sunt listate pe sectoarele lor cu litere de la A la I. Valorile contractelor provin din tabelul lunar de contracte GDDKiA și includ TVA. Când lungimea unui sector din sursă diferă de axul desenat, se păstrează lungimea din sursă, iar nota lotului o menționează."
+  },
+  "operator": "pl-gddkia",
+  "lots": [
+    {
+      "id": "rusocin-swarozyn",
+      "name": {
+        "en": "Rusocin – Swarożyn",
+        "ro": "Rusocin – Swarożyn"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2004-08",
+        "constructionStart": "2005-07-29",
+        "opened": "2007-12-22"
+      },
+      "lengthKm": 25,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2004-08",
+          "sourceRef": "gddkia-swarozyn-nowe-marzy",
+          "note": {
+            "en": "Concession agreement for Rusocin – Nowe Marzy signed.",
+            "ro": "Contractul de concesiune Rusocin – Nowe Marzy a fost semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2005-07-29",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-12-22",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Gdańsk Transport Company S.A. (AmberOne)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Concession stretch, opened first. Length (25 km) and the August 2004 concession agreement from the GDDKiA release of 18 October 2008; construction start by the concessionaire from plwiki. Four lanes with room for a third. Drawn centreline includes about 1 km before Rusocin junction.",
+        "ro": "Tronson concesionat, deschis primul. Lungimea (25 km) și contractul de concesiune din august 2004 provin din comunicatul GDDKiA din 18 octombrie 2008; începerea lucrărilor de către concesionar provine de pe plwiki. Patru benzi, cu rezervă pentru a treia. Axul desenat include circa 1 km înainte de nodul Rusocin."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-swarozyn-nowe-marzy",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rusocin-swarozyn"
+    },
+    {
+      "id": "swarozyn-nowe-marzy",
+      "name": {
+        "en": "Swarożyn – Nowe Marzy",
+        "ro": "Swarożyn – Nowe Marzy"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2004-08",
+        "constructionStart": "2005-07-29",
+        "opened": "2008-10-17"
+      },
+      "lengthKm": 65,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2004-08",
+          "sourceRef": "gddkia-swarozyn-nowe-marzy",
+          "note": {
+            "en": "Concession agreement for Rusocin – Nowe Marzy signed.",
+            "ro": "Contractul de concesiune Rusocin – Nowe Marzy a fost semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2005-07-29",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-10-17",
+          "sourceRef": "gddkia-swarozyn-nowe-marzy"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Gdańsk Transport Company S.A. (AmberOne)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Concession stretch (GTC S.A., now branded AmberOne). The GDDKiA release gives 65 km and an opening on 17 October 2008, before the contractual date; together with Rusocin – Swarożyn the concession section is 90 km. Construction began on the whole Rusocin – Nowe Marzy stretch on 29 July 2005.",
+        "ro": "Tronson concesionat (GTC S.A., acum sub marca AmberOne). Comunicatul GDDKiA indică 65 km și deschiderea la 17 octombrie 2008, înaintea termenului contractual; împreună cu Rusocin – Swarożyn, sectorul concesionat are 90 km. Construcția întregului tronson Rusocin – Nowe Marzy a început la 29 iulie 2005."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-swarozyn-nowe-marzy",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "swarozyn-nowe-marzy"
+    },
+    {
+      "id": "nowe-marzy-torun-poludnie",
+      "name": {
+        "en": "Nowe Marzy – Toruń Południe",
+        "ro": "Nowe Marzy – Toruń Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-10-14"
+      },
+      "lengthKm": 62.4,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-08-24",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-10-14",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "note": {
+        "en": "Opened as Grudziądz – Toruń Południe (62 km) with the west carriageway of the Armii Krajowej bridge at Toruń and the bridge at Grudziądz. Originally part of the GTC concession; the minister annulled it in January 2007, GTC won in court and negotiations resumed in January 2008. Construction started on 24 August 2008, together with a 10.7 km upgrade of the S10. Length from the plwiki section table (62.42 km in the design contract). The junction called Toruń Południe in this table is numbered 12 and named Czerniewice by GDDKiA.",
+        "ro": "Deschis ca Grudziądz – Toruń Południe (62 km), cu calea vestică a podului Armii Krajowej de la Toruń și podul de la Grudziądz. Inițial parte din concesiunea GTC; ministrul a anulat-o în ianuarie 2007, GTC a câștigat în instanță, iar negocierile au reluat în ianuarie 2008. Construcția a început la 24 august 2008, odată cu modernizarea a 10,7 km din S10. Lungimea provine din tabelul secțiunilor de pe plwiki (62,42 km în contractul de proiectare). Nodul numit Toruń Południe în acest tabel are numărul 12 și numele Czerniewice la GDDKiA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nowe-marzy-torun-poludnie"
+    },
+    {
+      "id": "torun-poludnie-wloclawek-zachod",
+      "name": {
+        "en": "Toruń Południe – Włocławek Zachód",
+        "ro": "Toruń Południe – Włocławek Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-04-03",
+        "opened": "2013-12-21"
+      },
+      "lengthKm": 45,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-04-03",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "New contracts signed after the first contractors were replaced.",
+            "ro": "Contracte noi semnate după înlocuirea primilor constructori."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2013-12-21",
+          "sourceRef": "gddkia-torun-wloclawek"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Salini",
+          "role": "builder"
+        },
+        {
+          "name": "Impregilo",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Budowy Dróg i Mostów KOBYLARNIA S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 21 December 2013 as Czerniewice – Włocławek Zachód, 45 km (plwiki gives 44 km), with a conditional use permit; local and service roads and rest areas were not yet open. GDDKiA describes the opened stretch as its first two sections plus part of the third. The original contract (17 June 2010, consortia of PBG SA and SRB Civil Engineering Limited, Toruń Południe – Kowal, 64 km, in two stages) was replaced: on 3 April 2013 GDDKiA signed new contracts with a consortium of Salini, Impregilo and Przedsiębiorstwo Budowy Dróg i Mostów KOBYLARNIA S.A. The sources give no termination date for the original contract and do not split the 2013 contracts between this lot and Włocławek Zachód – Kowal, so the three 2013 contractors are listed on both. GDDKiA gives the 2013 contract values as about 450 million PLN gross for sections I and II and about 608 million PLN gross for section III; they are not split by lot here.",
+        "ro": "Deschis la 21 decembrie 2013 ca Czerniewice – Włocławek Zachód, 45 km (plwiki indică 44 km), cu autorizație de utilizare condiționată; drumurile locale și de serviciu și zonele de servicii nu erau încă deschise. GDDKiA descrie sectorul deschis ca primele două secțiuni plus o parte din a treia. Contractul inițial (17 iunie 2010, consorții PBG SA și SRB Civil Engineering Limited, Toruń Południe – Kowal, 64 km, în două etape) a fost înlocuit: la 3 aprilie 2013 GDDKiA a semnat contracte noi cu un consorțiu Salini, Impregilo și Przedsiębiorstwo Budowy Dróg i Mostów KOBYLARNIA S.A. Sursele nu indică o dată a rezilierii contractului inițial și nu împart contractele din 2013 între acest lot și Włocławek Zachód – Kowal, deci cei trei constructori din 2013 apar pe ambele. GDDKiA indică valorile contractelor din 2013 la circa 450 milioane PLN brut pentru secțiunile I și II și circa 608 milioane PLN brut pentru secțiunea III; ele nu sunt repartizate pe loturi aici."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-torun-wloclawek",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "torun-poludnie-wloclawek-zachod"
+    },
+    {
+      "id": "wloclawek-zachod-kowal",
+      "name": {
+        "en": "Włocławek Zachód – Kowal",
+        "ro": "Włocławek Zachód – Kowal"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-04-03",
+        "opened": "2014-04-30"
+      },
+      "lengthKm": 19.5,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-04-03",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "New contracts signed after the first contractors were replaced.",
+            "ro": "Contracte noi semnate după înlocuirea primilor constructori."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2014-04-30",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Salini",
+          "role": "builder"
+        },
+        {
+          "name": "Impregilo",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Budowy Dróg i Mostów KOBYLARNIA S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 30 April 2014 (19.5 km in the plwiki text, 19 km in its table and on the GDDKiA page); from then the A1 is continuous from Łódź to Gdańsk. The original contract (17 June 2010, consortia of PBG SA and SRB Civil Engineering Limited, Toruń Południe – Kowal, 64 km) was replaced: on 3 April 2013 GDDKiA signed new contracts with a consortium of Salini, Impregilo and Przedsiębiorstwo Budowy Dróg i Mostów KOBYLARNIA S.A. The sources give no termination date for the original contract and do not split the 2013 contracts between this lot and Toruń Południe – Włocławek Zachód, so the three 2013 contractors are listed on both; the section III value (about 608 million PLN gross, Brzezie – Kowal) is not allocated to this lot.",
+        "ro": "Deschis la 30 aprilie 2014 (19,5 km în textul plwiki, 19 km în tabel și pe pagina GDDKiA); din acel moment A1 este continuă de la Łódź la Gdańsk. Contractul inițial (17 iunie 2010, consorții PBG SA și SRB Civil Engineering Limited, Toruń Południe – Kowal, 64 km) a fost înlocuit: la 3 aprilie 2013 GDDKiA a semnat contracte noi cu un consorțiu Salini, Impregilo și Przedsiębiorstwo Budowy Dróg i Mostów KOBYLARNIA S.A. Sursele nu indică o dată a rezilierii contractului inițial și nu împart contractele din 2013 între acest lot și Toruń Południe – Włocławek Zachód, deci cei trei constructori din 2013 apar pe ambele; valoarea secțiunii III (circa 608 milioane PLN brut, Brzezie – Kowal) nu este alocată acestui lot."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-wloclawek-kowal",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wloclawek-zachod-kowal"
+    },
+    {
+      "id": "kowal-lodz-polnoc",
+      "name": {
+        "en": "Kowal – Łódź Północ",
+        "ro": "Kowal – Łódź Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-11-13"
+      },
+      "lengthKm": 75,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-11-13",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "note": {
+        "en": "Opened on 13 November 2012 as four sub-sections: Kowal – Kutno Północ (29.8 km), Kutno Północ – Kutno Wschód (15.2 km), Kutno Wschód – Piątek (9 km) and Piątek – Łódź Północ (21 km); the length is their sum. Drawn centreline is 2.4% longer than the summed figure.",
+        "ro": "Deschis la 13 noiembrie 2012 în patru subsectoare: Kowal – Kutno Północ (29,8 km), Kutno Północ – Kutno Wschód (15,2 km), Kutno Wschód – Piątek (9 km) și Piątek – Łódź Północ (21 km); lungimea este suma lor. Axul desenat este cu 2,4% mai lung decât suma."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kowal-lodz-polnoc"
+    },
+    {
+      "id": "lodz-polnoc-tuszyn",
+      "name": {
+        "en": "Łódź Północ – Tuszyn",
+        "ro": "Łódź Północ – Tuszyn"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-12-22",
+        "constructionStart": "2013-04",
+        "opened": "2016-07-01"
+      },
+      "lengthKm": 40.09,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2010-12-22",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "Contract with Polimex Mostostal signed.",
+            "ro": "Contract semnat cu Polimex Mostostal."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-04",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2014-01",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "GDDKiA announced that Polimex would not finish the section and re-tendered it in three parts.",
+            "ro": "GDDKiA a anunțat că Polimex nu va termina sectorul și l-a scos din nou la licitație în trei părți."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-09-30",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "New contracts signed 30 September, 3 October and 6 October 2014.",
+            "ro": "Contracte noi semnate la 30 septembrie, 3 octombrie și 6 octombrie 2014."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2016-07-01",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Polimex Mostostal",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Polska SA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Stryków – Tuszyn, chainage km 295+850 to 335+937.65 (40.09 km, from the GDDKiA contract table). The first contract (Polimex Mostostal, signed 22 December 2010, about 1,150 million PLN, VAT basis not stated: plwiki gives the 1.15 billion PLN offer and 1.16 billion PLN in its table) was dropped in 2014; three completion contracts followed (tasks I, II and III), with Strabag and Budimex on tasks I and III and Duna Polska SA on task II per the GDDKiA contract table. Opened 1 July 2016, about 22 months after the new contracts.",
+        "ro": "Stryków – Tuszyn, kilometraj km 295+850 – 335+937,65 (40,09 km, din tabelul contractelor GDDKiA). Primul contract (Polimex Mostostal, semnat la 22 decembrie 2010, circa 1.150 milioane PLN, baza TVA nespecificată: plwiki indică oferta de 1,15 miliarde PLN și 1,16 miliarde PLN în tabel) a fost abandonat în 2014; au urmat trei contracte de finalizare (sectoarele I, II și III), cu Strabag și Budimex pe I și III și Duna Polska SA pe II conform tabelului GDDKiA. Deschis la 1 iulie 2016, la circa 22 de luni după noile contracte."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lodz-polnoc-tuszyn"
+    },
+    {
+      "id": "tuszyn-piotrkow-poludnie",
+      "name": {
+        "en": "Tuszyn – Piotrków Trybunalski Południe",
+        "ro": "Tuszyn – Piotrków Trybunalski Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1989-12-18"
+      },
+      "lengthKm": 15.8,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 478.87,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-07-30",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 478.87,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1989-12-18",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "Original carriageway opened.",
+            "ro": "Calea originală a fost deschisă."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-07-30",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-06-24",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "Rebuilt carriageways opened to traffic.",
+            "ro": "Căile de rulare reconstruite au fost deschise circulației."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section A of the Tuszyn – Pyrzowice works (chainage km 335+937.65 to 351+800, called Tuszyn – Bełchatów in the GDDKiA table; the junction is now Piotrków Trybunalski Południe). The road was first opened on 18 December 1989; plwiki records construction 1978–1989. It was rebuilt in 2019–2021 (plwiki table) and the rebuilt carriageways opened on 24 June 2022, so the 1989 opening date is kept and no km is added. Contract signed 30 July 2018 with Budimex SA and Strabag sp. z o.o.; the table value includes VAT.",
+        "ro": "Sectorul A al lucrărilor Tuszyn – Pyrzowice (kilometraj km 335+937,65 – 351+800, numit Tuszyn – Bełchatów în tabelul GDDKiA; nodul se numește acum Piotrków Trybunalski Południe). Drumul a fost deschis prima dată la 18 decembrie 1989; plwiki indică construcția în 1978–1989. A fost reconstruit în 2019–2021 (tabelul plwiki), iar căile reconstruite au fost deschise la 24 iunie 2022, deci se păstrează data din 1989 și nu se adaugă km. Contract semnat la 30 iulie 2018 cu Budimex SA și Strabag sp. z o.o.; valoarea din tabel include TVA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tuszyn-piotrkow-poludnie"
+    },
+    {
+      "id": "piotrkow-poludnie-kamiensk",
+      "name": {
+        "en": "Piotrków Trybunalski Południe – Kamieńsk",
+        "ro": "Piotrków Trybunalski Południe – Kamieńsk"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-04-18",
+        "opened": "2022-11-24"
+      },
+      "lengthKm": 24.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 857,
+              "currency": "PLN",
+              "year": 2019,
+              "note": "Including VAT."
+            },
+            "date": "2019-04-18",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 857,
+          "currency": "PLN",
+          "year": 2019,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-04-18",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-11-24",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mirbud SA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section B (chainage km 351+800 to 376+000, Bełchatów – Kamieńsk in the GDDKiA table). Opened to traffic on 24 November 2022 while final road marking and clean-up continued; plwiki gives April 2023 for the whole investment (completion 20 April 2023, ceremony 12 May). Contract with Mirbud SA signed 18 April 2019; the table value includes VAT. Drawn centreline is 5% longer than the sourced length.",
+        "ro": "Sectorul B (kilometraj km 351+800 – 376+000, Bełchatów – Kamieńsk în tabelul GDDKiA). Deschis circulației la 24 noiembrie 2022, în timp ce marcajele finale și curățenia continuau; plwiki indică aprilie 2023 pentru întreaga investiție (finalizare 20 aprilie 2023, ceremonie 12 mai). Contract cu Mirbud SA semnat la 18 aprilie 2019; valoarea din tabel include TVA. Axul desenat este cu 5% mai lung decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "piotrkow-poludnie-kamiensk"
+    },
+    {
+      "id": "kamiensk-radomsko",
+      "name": {
+        "en": "Kamieńsk – Radomsko",
+        "ro": "Kamieńsk – Radomsko"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-09-14",
+        "opened": "2022-06-24"
+      },
+      "lengthKm": 16.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 573.14,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-09-14",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 573.14,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-09-14",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-06-24",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section C (chainage km 376+000 to 392+720). Opened to traffic on 24 June 2022 on a passability basis; plwiki's table gives July 2022. Contract signed 14 September 2018 (plwiki: 13 September) with Strabag sp. z o.o. and Budimex SA; the table value includes VAT.",
+        "ro": "Sectorul C (kilometraj km 376+000 – 392+720). Deschis circulației la 24 iunie 2022 pe bază de trafic; tabelul plwiki indică iulie 2022. Contract semnat la 14 septembrie 2018 (plwiki: 13 septembrie) cu Strabag sp. z o.o. și Budimex SA; valoarea din tabel include TVA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kamiensk-radomsko"
+    },
+    {
+      "id": "radomsko-granica-wojewodztwa",
+      "name": {
+        "en": "Radomsko – łódzkie/śląskie border",
+        "ro": "Radomsko – granița voievodatelor Łódź și Silezia"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-08-30",
+        "opened": "2022-06-24"
+      },
+      "lengthKm": 7.02,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 338.25,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-08-30",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 338.25,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-08-30",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-06-24",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Intercor sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section D (chainage km 392+720 to 399+742.51; 7.02 km, plwiki: 7 km). The geometry is cut 7.02 km after Radomsko junction because the voivodeship border is not a mapped node. Opened 24 June 2022. Contract with Intercor sp. z o.o. signed 30 August 2018; the table value includes VAT.",
+        "ro": "Sectorul D (kilometraj km 392+720 – 399+742,51; 7,02 km, plwiki: 7 km). Geometria este tăiată la 7,02 km după nodul Radomsko, deoarece granița voievodatului nu este un nod cartografiat. Deschis la 24 iunie 2022. Contract cu Intercor sp. z o.o. semnat la 30 august 2018; valoarea din tabel include TVA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "radomsko-granica-wojewodztwa"
+    },
+    {
+      "id": "granica-wojewodztwa-rzasawa",
+      "name": {
+        "en": "łódzkie/śląskie border – Rząsawa",
+        "ro": "Granița voievodatelor Łódź și Silezia – Rząsawa"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-07-23",
+        "opened": "2022-06-24"
+      },
+      "lengthKm": 16.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 596.52,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Including VAT."
+            },
+            "date": "2018-07-23",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 596.52,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-07-23",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-06-24",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Polaqua sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section E (voivodeship border to Rząsawa junction, bez węzła; 16.7 km in plwiki). Rząsawa is the former name of the Częstochowa Północ junction (plwiki), so the geometry ends there, not at the Mykanów junction 4 km to the north. Drawn centreline is 20.7 km, 24% longer than the sourced length, which is kept: the voivodeship border is not a mapped node, so the cut with Radomsko – border is approximate (sections D, E and F together draw 45.7 km against 44.0 km sourced). Opened 24 June 2022. Contract with Polaqua sp. z o.o. signed 23 July 2018; the table value includes VAT.",
+        "ro": "Sectorul E (granița voievodatului – nodul Rząsawa, bez węzła; 16,7 km în plwiki). Rząsawa este vechiul nume al nodului Częstochowa Północ (plwiki), deci geometria se oprește acolo, nu la nodul Mykanów, cu 4 km mai la nord. Axul desenat are 20,7 km, cu 24% mai lung decât lungimea din sursă, care se păstrează: granița voievodatului nu este un nod cartografiat, deci tăietura cu Radomsko – graniță este aproximativă (sectoarele D, E și F împreună au 45,7 km desenați față de 44,0 km în sursă). Deschis la 24 iunie 2022. Contract cu Polaqua sp. z o.o. semnat la 23 iulie 2018; valoarea din tabel include TVA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "granica-wojewodztwa-rzasawa"
+    },
+    {
+      "id": "rzasawa-blachownia",
+      "name": {
+        "en": "Rząsawa – Częstochowa Blachownia",
+        "ro": "Rząsawa – Częstochowa Blachownia"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "opened": "2019-12-23"
+      },
+      "lengthKm": 20.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 703.28,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 703.28,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-04-29",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "GDDKiA withdrew from the design-build contract with Salini Polska over progress and unpaid subcontractors.",
+            "ro": "GDDKiA s-a retras din contractul de proiectare și execuție cu Salini Polska din cauza progresului și a subcontractorilor neplătiți."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2019-07-24",
+          "sourceRef": "gddkia-biezaca-realizacja",
+          "note": {
+            "en": "Security works contract signed (434.4 million PLN with VAT; Strabag Infrastruktura Południe, Budimex, Budpol).",
+            "ro": "Contract de lucrări de securizare semnat (434,4 milioane PLN cu TVA; Strabag Infrastruktura Południe, Budimex, Budpol)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-23",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Salini Polska sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Webuild S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Todini Costruzioni Generali S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        },
+        {
+          "name": "Budpol sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section F, from Rząsawa junction (now Częstochowa Północ) to Blachownia (20.3 km in plwiki; drawn 18.0 km, 11% shorter, see the note on the previous section). The original contract (12 October 2015) was terminated on 29 April 2019. The main line opened to traffic on 23 December 2019 with an 80 km/h limit while work continued; the Jasna Góra junction opened on 15 February 2020 and the Blachownia junction on 10 June 2020. The security works contract is separate from the 703.28 million PLN award (VAT included); the completion contract is not recorded.",
+        "ro": "Sectorul F, de la nodul Rząsawa (acum Częstochowa Północ) la Blachownia (20,3 km în plwiki; desenat 18,0 km, cu 11% mai scurt, vezi nota sectorului anterior). Contractul inițial (12 octombrie 2015) a fost reziliat la 29 aprilie 2019. Axa principală a fost deschisă circulației la 23 decembrie 2019 cu limită de 80 km/h, în timp ce lucrările continuau; nodul Jasna Góra a fost deschis la 15 februarie 2020, iar nodul Blachownia la 10 iunie 2020. Contractul de securizare este separat de adjudecarea de 703,28 milioane PLN (TVA inclus); contractul de finalizare nu este înregistrat."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rzasawa-blachownia"
+    },
+    {
+      "id": "blachownia-czestochowa-poludnie",
+      "name": {
+        "en": "Częstochowa Blachownia – Częstochowa Południe",
+        "ro": "Częstochowa Blachownia – Częstochowa Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-08-31",
+        "opened": "2019-08-02"
+      },
+      "lengthKm": 4.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 219.38,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-08-31",
+            "sourceRef": "gddkia-odcinek-g"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 219.38,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-08-31",
+          "sourceRef": "gddkia-odcinek-g"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-08-02",
+          "sourceRef": "gddkia-odcinek-g"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Grant agreement under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ), signed 27 June 2016.",
+            "ro": "Acord de finanțare în cadrul Programului Operațional Infrastructură și Mediu 2014–2020 (POIiŚ), semnat la 27 iunie 2016."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Berger Bau Polska sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bau GmbH",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section G, chainage km 437+800 to 442+500 (4.7 km), design-build. The GDDKiA page records the opening on 2 August 2019; plwiki adds that it could carry no traffic until Blachownia junction opened (10 June 2020). Contract with Berger Bau Polska sp. z o.o. and Berger Bau GmbH signed 31 August 2015, 219,382,321.53 PLN gross. Grant agreement under POIiŚ 2014–2020 (Cohesion Fund) signed 27 June 2016.",
+        "ro": "Sectorul G, kilometraj km 437+800 – 442+500 (4,7 km), proiectare și execuție. Pagina GDDKiA indică deschiderea la 2 august 2019; plwiki adaugă că nu a putut fi folosit până la deschiderea nodului Blachownia (10 iunie 2020). Contract cu Berger Bau Polska sp. z o.o. și Berger Bau GmbH semnat la 31 august 2015, 219.382.321,53 PLN brut. Acord de finanțare POIiŚ 2014–2020 (Fondul de Coeziune) semnat la 27 iunie 2016."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "gddkia-odcinek-g",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "blachownia-czestochowa-poludnie"
+    },
+    {
+      "id": "czestochowa-poludnie-wozniki",
+      "name": {
+        "en": "Częstochowa Południe – Woźniki",
+        "ro": "Częstochowa Południe – Woźniki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-03-04",
+        "opened": "2019-08-02"
+      },
+      "lengthKm": 16.79,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 574.47,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT."
+            },
+            "date": "2016-03-04",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 574.47,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-03-04",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-08-02",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Infrastruktura Południe sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section H (Zawodzie bez węzła – Woźniki z węzłem). Length measured from OpenStreetMap geometry; the sourced figure for H and I together is 33 km. Opened with section I on 2 August 2019. Contract with Strabag Infrastruktura Południe sp. z o.o. and Strabag sp. z o.o. signed 4 March 2016; the table value includes VAT.",
+        "ro": "Sectorul H (Zawodzie bez węzła – Woźniki z węzłem). Lungime măsurată din geometria OpenStreetMap; cifra din sursă pentru H și I împreună este 33 km. Deschis împreună cu sectorul I la 2 august 2019. Contract cu Strabag Infrastruktura Południe sp. z o.o. și Strabag sp. z o.o. semnat la 4 martie 2016; valoarea din tabel include TVA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "czestochowa-poludnie-wozniki"
+    },
+    {
+      "id": "wozniki-pyrzowice",
+      "name": {
+        "en": "Woźniki – Pyrzowice",
+        "ro": "Woźniki – Pyrzowice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-08-26",
+        "opened": "2019-08-02"
+      },
+      "lengthKm": 16.38,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 609.5,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-08-26",
+            "sourceRef": "gddkia-biezaca-realizacja"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 609.5,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-08-26",
+          "sourceRef": "gddkia-biezaca-realizacja"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-08-02",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Infrastruktura Południe sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section I (Woźniki bez węzła – Pyrzowice bez węzła). Length measured from OpenStreetMap geometry; the sourced figure for H and I together is 33 km. Opened on 2 August 2019. Contract with Strabag Infrastruktura Południe sp. z o.o. and Strabag sp. z o.o. signed 26 August 2015; the table value (609,501,183.07 PLN) includes VAT.",
+        "ro": "Sectorul I (Woźniki bez węzła – Pyrzowice bez węzła). Lungime măsurată din geometria OpenStreetMap; cifra din sursă pentru H și I împreună este 33 km. Deschis la 2 august 2019. Contract cu Strabag Infrastruktura Południe sp. z o.o. și Strabag sp. z o.o. semnat la 26 august 2015; valoarea din tabel (609.501.183,07 PLN) include TVA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-biezaca-realizacja",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wozniki-pyrzowice"
+    },
+    {
+      "id": "pyrzowice-piekary-slaskie",
+      "name": {
+        "en": "Pyrzowice – Piekary Śląskie",
+        "ro": "Pyrzowice – Piekary Śląskie"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-07-27",
+        "opened": "2012-06-01"
+      },
+      "lengthKm": 16.1,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-07-27",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-06-01",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex Dromex",
+          "role": "builder"
+        },
+        {
+          "name": "Mostostal Warszawa",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Contract signed 27 July 2009 with a consortium of Budimex Dromex and Mostostal Warszawa for 16.1 km, planned for completion in March 2012 at nearly 1,830 million PLN (VAT basis not stated). Occupancy permit 29 May 2012, opened 1 June 2012. The whole Sośnica – Pyrzowice stretch cost 5,859 million PLN, of which 4,652 million PLN were EU funds (plwiki). Drawn centreline is 8% shorter than the sourced length.",
+        "ro": "Contract semnat la 27 iulie 2009 cu un consorțiu Budimex Dromex și Mostostal Warszawa pentru 16,1 km, cu finalizare planificată în martie 2012 la aproape 1.830 milioane PLN (baza TVA nespecificată). Autorizație de utilizare la 29 mai 2012, deschis la 1 iunie 2012. Întregul tronson Sośnica – Pyrzowice a costat 5.859 milioane PLN, din care 4.652 milioane PLN fonduri UE (plwiki). Axul desenat este cu 8% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "pyrzowice-piekary-slaskie"
+    },
+    {
+      "id": "piekary-slaskie-zabrze-polnoc",
+      "name": {
+        "en": "Piekary Śląskie – Zabrze Północ",
+        "ro": "Piekary Śląskie – Zabrze Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-06-01"
+      },
+      "lengthKm": 12,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-06-01",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "note": {
+        "en": "Opened on 1 June 2012 with Pyrzowice – Piekary Śląskie (together 28 km Pyrzowice – Zabrze Północ). Finishing work ran to September 2012; the Bytom junction opened late on 17 October 2012.",
+        "ro": "Deschis la 1 iunie 2012 împreună cu Pyrzowice – Piekary Śląskie (împreună 28 km Pyrzowice – Zabrze Północ). Lucrările de finisare au continuat până în septembrie 2012; nodul Bytom a fost deschis cu întârziere la 17 octombrie 2012."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "piekary-slaskie-zabrze-polnoc"
+    },
+    {
+      "id": "zabrze-polnoc-gliwice-wschod",
+      "name": {
+        "en": "Zabrze Północ – Gliwice Wschód",
+        "ro": "Zabrze Północ – Gliwice Wschód"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-12-22"
+      },
+      "lengthKm": 8.06,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-12-22",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "note": {
+        "en": "Opened on 22 December 2011 (8.06 km in the plwiki text, 8.1 km in its table). Drawn centreline is 15% longer than the sourced figure, which is kept.",
+        "ro": "Deschis la 22 decembrie 2011 (8,06 km în textul plwiki, 8,1 km în tabel). Axul desenat este cu 15% mai lung decât cifra din sursă, care se păstrează."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zabrze-polnoc-gliwice-wschod"
+    },
+    {
+      "id": "gliwice-wschod-sosnica",
+      "name": {
+        "en": "Gliwice Wschód – Gliwice Sośnica",
+        "ro": "Gliwice Wschód – Gliwice Sośnica"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-03-09",
+        "opened": "2011-09-30"
+      },
+      "lengthKm": 6.017,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-03-09",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-09-30",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Polimex Mostostal",
+          "role": "builder"
+        },
+        {
+          "name": "DOPRASTAV a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia Polska S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "PRDiM S.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 30 September 2011 as Maciejów (Gliwice Wschód junction) – Gliwice Sośnica, 6.017 km (GDDKiA: 6.017 km, 13 structures, co-financed by the Cohesion Fund). Built from March 2009 by a consortium led by Polimex Mostostal with DOPRASTAV, Eurovia Polska and PRDiM; contract signed 9 March 2009. plwiki gives the construction cost as 1.1 billion PLN, with no price year or VAT basis; the GDDKiA page it cites does not state a cost, so no figure is recorded. The geometry runs between the mapped Gliwice Wschód junction and the centre of the Sośnica interchange and draws 6.5 km, 8% longer than the sourced length, which is kept; the separate 2.2 km Sośnica interchange (opened 23 December 2009, finished 7 July 2010) is not a lot of its own.",
+        "ro": "Deschis la 30 septembrie 2011 ca Maciejów (nodul Gliwice Wschód) – Gliwice Sośnica, 6,017 km (GDDKiA: 6,017 km, 13 structuri, cofinanțat din Fondul de Coeziune). Construit din martie 2009 de un consorțiu condus de Polimex Mostostal, cu DOPRASTAV, Eurovia Polska și PRDiM; contract semnat la 9 martie 2009. plwiki indică costul construcției la 1,1 miliarde PLN, fără an de preț sau bază TVA; pagina GDDKiA citată nu indică un cost, deci nu se înregistrează nicio cifră. Geometria merge între nodul Gliwice Wschód cartografiat și centrul nodului Sośnica și are 6,5 km desenați, cu 8% mai mult decât lungimea din sursă, care se păstrează; nodul Sośnica de 2,2 km (deschis la 23 decembrie 2009, finalizat la 7 iulie 2010) nu este un lot separat."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "gddkia-maciejow-sosnica",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gliwice-wschod-sosnica"
+    },
+    {
+      "id": "sosnica-rybnik",
+      "name": {
+        "en": "Gliwice Sośnica – Rybnik",
+        "ro": "Gliwice Sośnica – Rybnik"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-03-26",
+        "opened": "2009-12-23"
+      },
+      "lengthKm": 15.5,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-03-26",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-12-23",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.83,
+          "detail": {
+            "en": "The Cohesion Fund covered 83% of the project cost, which reached nearly 250 million EUR (plwiki).",
+            "ro": "Fondul de Coeziune a acoperit 83% din costul proiectului, ajuns la aproape 250 milioane EUR (plwiki)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "J&P Avax",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 23 December 2009 as Gliwice Sośnica – Bełk (renamed Rybnik in 2011); 15.5 km in the plwiki text, 15.4 km in its table. The Cohesion Fund covered 83% of the project cost of nearly 250 million EUR. The Sośnica interchange (2.2 km in the plwiki table) was built by J&P Avax (contract 30 May 2008), opened 23 December 2009 and finished on 7 July 2010. Drawn centreline runs from the interchange centre and matches the sourced length.",
+        "ro": "Deschis la 23 decembrie 2009 ca Gliwice Sośnica – Bełk (redenumit Rybnik în 2011); 15,5 km în textul plwiki, 15,4 km în tabel. Fondul de Coeziune a acoperit 83% din costul proiectului, de aproape 250 milioane EUR. Nodul Sośnica (2,2 km în tabelul plwiki) a fost construit de J&P Avax (contract din 30 mai 2008), deschis la 23 decembrie 2009 și finalizat la 7 iulie 2010. Axul desenat pornește din centrul nodului și corespunde lungimii din sursă."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sosnica-rybnik"
+    },
+    {
+      "id": "rybnik-zory",
+      "name": {
+        "en": "Rybnik – Żory",
+        "ro": "Rybnik – Żory"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-12-15"
+      },
+      "lengthKm": 7.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2010-12-15",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "note": {
+        "en": "Opened on 15 December 2010 as Bełk – Rowień (now Rybnik – Żory), 7.5 km. Drawn centreline is 14% shorter than the sourced length, which is kept.",
+        "ro": "Deschis la 15 decembrie 2010 ca Bełk – Rowień (acum Rybnik – Żory), 7,5 km. Axul desenat este cu 14% mai scurt decât lungimea din sursă, care se păstrează."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rybnik-zory"
+    },
+    {
+      "id": "zory-swierklany",
+      "name": {
+        "en": "Żory – Świerklany",
+        "ro": "Żory – Świerklany"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-04-21"
+      },
+      "lengthKm": 7,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-04-21",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "note": {
+        "en": "Opened on 21 April 2011 (7 km in the plwiki text, 6.6 km in its table). The whole Rybnik – Świerklany stretch was planned for November 2010; a flood inundated the site. Drawn centreline is 14% longer than the sourced length, which is kept.",
+        "ro": "Deschis la 21 aprilie 2011 (7 km în textul plwiki, 6,6 km în tabel). Întregul tronson Rybnik – Świerklany era planificat pentru noiembrie 2010; o inundație a acoperit șantierul. Axul desenat este cu 14% mai lung decât lungimea din sursă, care se păstrează."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zory-swierklany"
+    },
+    {
+      "id": "swierklany-mszana",
+      "name": {
+        "en": "Świerklany – Mszana",
+        "ro": "Świerklany – Mszana"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-11-16",
+        "opened": "2014-05-23"
+      },
+      "lengthKm": 7.2,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-11-16",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2009-12",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "GDDKiA terminated the contract with the Alpine consortium for slow progress.",
+            "ro": "GDDKiA a reziliat contractul cu consorțiul Alpine pentru progres lent."
+          }
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2010-09-06",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "GDDKiA terminated the contracts signed in June 2010, citing the contractors' fault.",
+            "ro": "GDDKiA a reziliat contractele semnate în iunie 2010, din vina executanților."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2010-10-01",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-05-23",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alpine Bau",
+          "role": "builder"
+        },
+        {
+          "name": "Intercor",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 23 May 2014, completing Gliwice – Czech border; the formal completion date was 17 July. The date slipped from spring 2012 to August 2013 because of problems at the Mszana bridge; Alpine Bau withdrew from the bridge in May 2013 and Intercor signed on 26 June 2013 to finish it (plwiki article on the bridge). Świerklany – Gorzyczki (18.4 km) began on 16 November 2007 with a consortium of Alpine Meyreder Bau GmbH and Alpine Bau Deutschland. GDDKiA terminated that contract in December 2009 for slow progress. A tender result of 13 August 2010 chose Alpine Bau (legally a different entity), and GDDKiA terminated the contracts signed in June 2010 on 6 September 2010; the contract for the section was signed on 1 October 2010.",
+        "ro": "Deschis la 23 mai 2014, finalizând Gliwice – granița cehă; data formală a finalizării a fost 17 iulie. Termenul a alunecat din primăvara 2012 în august 2013 din cauza problemelor de la podul din Mszana; Alpine Bau s-a retras de la pod în mai 2013, iar Intercor a semnat la 26 iunie 2013 pentru a-l termina (articolul plwiki despre pod). Świerklany – Gorzyczki (18,4 km) a început la 16 noiembrie 2007 cu un consorțiu Alpine Meyreder Bau GmbH și Alpine Bau Deutschland. GDDKiA a reziliat contractul în decembrie 2009 pentru progres lent. Rezultatul licitației din 13 august 2010 a ales Alpine Bau (juridic o altă entitate), iar GDDKiA a reziliat contractele semnate în iunie 2010 la 6 septembrie 2010; contractul pentru sector a fost semnat la 1 octombrie 2010."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "pl-wikipedia-most-mszana",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "swierklany-mszana"
+    },
+    {
+      "id": "mszana-gorzyczki",
+      "name": {
+        "en": "Mszana – Gorzyczki",
+        "ro": "Mszana – Gorzyczki"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-11-16",
+        "opened": "2012-11-30"
+      },
+      "lengthKm": 11.1,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-11-16",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2009-12",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "GDDKiA terminated the contract with the Alpine consortium for slow progress.",
+            "ro": "GDDKiA a reziliat contractul cu consorțiul Alpine pentru progres lent."
+          }
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2010-09-06",
+          "sourceRef": "pl-wikipedia-a1",
+          "note": {
+            "en": "GDDKiA terminated the contracts signed in June 2010, citing the contractors' fault.",
+            "ro": "GDDKiA a reziliat contractele semnate în iunie 2010, din vina executanților."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2010-10-01",
+          "sourceRef": "pl-wikipedia-a1"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-11-30",
+          "sourceRef": "pl-wikipedia-a1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alpine Bau",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened on 30 November 2012 (11.1 km) to the Czech border at Gorzyczki, with traffic routed around the unfinished Mszana bridge by regional roads and, for lorries, national road 78. The section links to the Czech D1 (Bohumín). Świerklany – Gorzyczki (18.4 km) began on 16 November 2007 with a consortium of Alpine Meyreder Bau GmbH and Alpine Bau Deutschland. GDDKiA terminated that contract in December 2009 for slow progress. A tender result of 13 August 2010 chose Alpine Bau (legally a different entity), and GDDKiA terminated the contracts signed in June 2010 on 6 September 2010; the contract for the section was signed on 1 October 2010.",
+        "ro": "Deschis la 30 noiembrie 2012 (11,1 km) până la granița cehă de la Gorzyczki, cu traficul dirijat pe ocolire pe lângă podul neterminat din Mszana pe drumuri regionale și, pentru camioane, pe drumul național 78. Sectorul se leagă de D1 cehă (Bohumín). Świerklany – Gorzyczki (18,4 km) a început la 16 noiembrie 2007 cu un consorțiu Alpine Meyreder Bau GmbH și Alpine Bau Deutschland. GDDKiA a reziliat contractul în decembrie 2009 pentru progres lent. Rezultatul licitației din 13 august 2010 a ales Alpine Bau (juridic o altă entitate), iar GDDKiA a reziliat contractele semnate în iunie 2010 la 6 septembrie 2010; contractul pentru sector a fost semnat la 1 octombrie 2010."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a1",
+        "osm-relation-a1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mszana-gorzyczki"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pl-wikipedia-a1",
+      "title": "Wikipedia (pl): Autostrada A1 (Polska), tables Istniejące odcinki, Historia budowy (cites GDDKiA releases)",
+      "url": "https://pl.wikipedia.org/wiki/Autostrada_A1_(Polska)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-biezaca-realizacja",
+      "title": "GDDKiA: Bieżąca realizacja RPBDK do 2030 r., monthly contract table (PDF, September 2026 edition; values include VAT)",
+      "url": "https://www.gov.pl/attachment/af0bc322-7a54-4ac3-973b-292ab5a4a2fa",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-swarozyn-nowe-marzy",
+      "title": "GDDKiA archive: Otwarcie autostrady A1 na odcinku Swarożyn – Nowe Marzy (18 October 2008)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/3708/otwarcie-autostrady-a1-na-odcinku-swarozyn---nowe-marzy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-torun-wloclawek",
+      "title": "GDDKiA archive: Autostrada A1 z Torunia do Włocławka OTWARTA (21 December 2013)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/13844/Autostrada-A1-z-Torunia-do-Wloclawka-OTWARTA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-odcinek-g",
+      "title": "GDDKiA archive, Mapa Stanu Budowy Dróg: A1, Odcinek G – węzeł Blachownia (bez węzła) – węzeł Zawodzie (z węzłem)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/19981/A1-Odcinek-G-wezel-Blachownia-bez-wezla-wezel-Zawodzie-z-wezlem",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-relation-a1",
+      "title": "OpenStreetMap: relation 2238775, A1 (network PL:motorway)",
+      "url": "https://www.openstreetmap.org/relation/2238775",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-maciejow-sosnica",
+      "title": "GDDKiA archive: A-1 Maciejów-Sośnica - otwarta do ruchu (30 September 2011)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/9917/a-1-maciejow-sosnica---otwarta-do-ruchu",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-wloclawek-kowal",
+      "title": "GDDKiA archive: Autostrada A1 Włocławek – Kowal OTWARTA (30 April 2014)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/14832/Autostrada-A1-Wloclawek-Kowal-OTWARTA",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "pl-wikipedia-most-mszana",
+      "title": "Wikipedia (pl): Most autostradowy w Mszanie",
+      "url": "https://pl.wikipedia.org/wiki/Most_autostradowy_w_Mszanie",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}
