@@ -1,0 +1,140 @@
+{
+  "id": "ro-ungheni-prut-bridge",
+  "country": "ro",
+  "category": "bridge",
+  "name": {
+    "en": "Ungheni road bridges over the Prut",
+    "ro": "Ansamblul de poduri rutiere peste Prut la Ungheni"
+  },
+  "description": {
+    "en": "Two parallel composite road bridges over the Prut at Ungheni, one per direction, continuing the A8 from Romania (Iași county) to Moldova (Ungheni district). The longer bridge is about 260 m.",
+    "ro": "Două poduri rutiere paralele cu tablier mixt peste Prut la Ungheni, câte unul pe sens, în continuarea A8 dinspre România (județul Iași) spre Republica Moldova (raionul Ungheni). Cel mai lung pod are aproximativ 260 m."
+  },
+  "lots": [
+    {
+      "id": "road-bridges",
+      "name": {
+        "en": "Prut bridges, link road and border crossing point",
+        "ro": "Podurile peste Prut, drumul de legătură și punctul de trecere a frontierei"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-04"
+      },
+      "lengthKm": 1.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 151.68,
+              "currency": "RON",
+              "year": 2024,
+              "note": "Excluding VAT."
+            },
+            "date": "2024-09-27",
+            "note": "Contract signed with Ness Proiect Europe SRL.",
+            "sourceRef": "economedia-ro-ungheni-contract"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-09-27",
+          "note": {
+            "en": "CNAIR signed the design-and-build contract with Ness Proiect Europe SRL.",
+            "ro": "CNAIR a semnat contractul de proiectare și execuție cu Ness Proiect Europe SRL."
+          },
+          "sourceRef": "economedia-ro-ungheni-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-04",
+          "note": {
+            "en": "Works announced to start on 26 April 2025 (foundation-stone ceremony), after the Romanian building permit was issued. A July 2026 headline listed by 130km.ro says the bridge was begun in spring 2025; the exact day is not confirmed.",
+            "ro": "Începerea lucrărilor anunțată pentru 26 aprilie 2025 (punerea pietrei de temelie), după emiterea autorizației de construire pe teritoriul României. Un titlu din iulie 2026 listat de 130km.ro spune că podul a fost început în primăvara anului 2025; ziua exactă nu este confirmată."
+          },
+          "sourceRef": "digi24-ro-ungheni-permit"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility (CEF).",
+            "ro": "Mecanismul pentru Interconectarea Europei (CEF)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Ness Proiect Europe SRL",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 18,
+        "totalMonths": 24,
+        "value": {
+          "amount": 151.68,
+          "currency": "RON",
+          "year": 2024,
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Two parallel steel-concrete composite bridges with continuous girders, one per direction; the longer is about 260 m (261.20 m in the building permit, of which 130.60 m in Romania). The contract also covers the link road to the A8 (about 1 km of route) and the border crossing point. Recorded length of 1.1 km is the 130km.ro figure for the assembly. It is a separate contract from the Iași – Ungheni section of the A8 (Itinera – Saipem – ICM). The 130km.ro figures for the two (15.47 km and 1.1 km) are separate, so this is not marked as part of it. The drawn line (0.98 km) follows OpenStreetMap ways tagged with this builder: the approach and the bridge, one carriageway. The western approach part overlaps the A8 lot's drawn line. 130km.ro lists the opening for 2026; an OpenStreetMap tag gives 1 December 2026, which is not an official date.",
+        "ro": "Două poduri paralele cu tablier mixt oțel-beton și grindă continuă, câte unul pe sens; cel mai lung are aproximativ 260 m (261,20 m în autorizația de construire, din care 130,60 m pe teritoriul României). Contractul include și drumul de legătură cu A8 (aproximativ 1 km de traseu) și punctul de trecere a frontierei. Lungimea înregistrată de 1,1 km este cifra 130km.ro pentru ansamblu. Este un contract separat de secțiunea Iași – Ungheni a A8 (Itinera – Saipem – ICM). Cifrele 130km.ro pentru cele două (15,47 km și 1,1 km) sunt separate, deci acesta nu este marcat ca parte a lui. Linia desenată (0,98 km) urmează căile OpenStreetMap etichetate cu acest constructor: accesul și podul, o singură cale de rulare. Porțiunea de acces din vest se suprapune cu linia lotului A8. 130km.ro indică deschiderea în 2026; o etichetă OpenStreetMap indică 1 decembrie 2026, care nu este o dată oficială."
+      },
+      "sourceRefs": [
+        "economedia-ro-ungheni-contract",
+        "digi24-ro-ungheni-permit",
+        "economica-net-ungheni-permit",
+        "130km-ro-a8-ungheni-bridge",
+        "130km-ro-articol85",
+        "openstreetmap-ungheni-bridge"
+      ],
+      "geometryRef": "road-bridges"
+    }
+  ],
+  "sources": [
+    {
+      "id": "economedia-ro-ungheni-contract",
+      "title": "Economedia: Construcţia ansamblului de poduri peste Prut, la Ungheni, va dura doi ani (27.09.2024)",
+      "url": "https://economedia.ro/constructia-ansamblului-de-poduri-peste-prut-la-ungheni-va-dura-doi-ani-seful-cnair-anunta-ca-a-fost-semnat-contractul-ness-proiect-europe.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "digi24-ro-ungheni-permit",
+      "title": "Digi24: A fost emisă autorizaţia de construire pentru podul de la Ungheni (09.04.2025)",
+      "url": "https://www.digi24.ro/stiri/actualitate/a-fost-emisa-autorizatia-de-construire-pentru-podul-de-la-ungheni-peste-raul-prut-lucrarile-incep-pe-26-aprilie-3192381",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "economica-net-ungheni-permit",
+      "title": "Economica.net: Primul pod de autostradă peste Prut a primit autorizație de construire pe teritoriul României",
+      "url": "https://www.economica.net/pod-prut-a8_826561.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "130km-ro-a8-ungheni-bridge",
+      "title": "130km.ro: A8, Podul Ungheni peste râul Prut",
+      "url": "https://www.130km.ro/a8.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "130km-ro-articol85",
+      "title": "130km.ro: Situația autostrăzilor, Q3 2026",
+      "url": "https://www.130km.ro/articol85.html",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap-ungheni-bridge",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

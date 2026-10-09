@@ -1,0 +1,111 @@
+{
+  "id": "ro-rail-bucharest-giurgiu",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "București – Jilava – Giurgiu Nord – Giurgiu Nord Frontieră railway modernisation",
+    "ro": "Modernizarea liniei feroviare București – Jilava – Giurgiu Nord – Giurgiu Nord Frontieră"
+  },
+  "description": {
+    "en": "Design-and-build modernisation of CFR lines 103 and 106A between București Progresu, Jilava, Giurgiu Nord and Giurgiu Nord Frontieră, the approach to the Giurgiu–Ruse bridge. Lot 2 covers electrification, signalling and ERTMS Level 2. Works are under way, with traffic suspended between Jilava and Frătești from 16 March 2026.",
+    "ro": "Modernizare cu proiectare și execuție a liniilor CFR 103 și 106A între București Progresu, Jilava, Giurgiu Nord și Giurgiu Nord Frontieră, accesul spre podul Giurgiu–Ruse. Lotul 2 include electrificarea, instalațiile de semnalizare și ERTMS nivel 2. Lucrările sunt în curs, iar circulația este suspendată între Jilava și Frătești din 16 martie 2026."
+  },
+  "operator": "ro-cfr",
+  "lots": [
+    {
+      "id": "progresu-giurgiu-nord-frontiera",
+      "name": {
+        "en": "Lot 2: București Progresu – Jilava – Giurgiu Nord – Giurgiu Nord Frontieră",
+        "ro": "Lot 2: București Progresu – Jilava – Giurgiu Nord – Giurgiu Nord Frontieră"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-08-14",
+        "constructionStart": "2026-03",
+        "expectedOpening": "2028-09"
+      },
+      "lengthKm": 63.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2108.26,
+              "currency": "RON",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT. Design-and-build contract no. 71/14.08.2025."
+            },
+            "date": "2025-08-14",
+            "sourceRef": "cfr-ro-contract-lot2-2025-08"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility 2021–2027, grant agreement no. 101122601 (22-RO-TC-Giurgiu Stage II), with state budget co-financing",
+            "ro": "Mecanismul pentru Interconectarea Europei 2021–2027, acord de grant nr. 101122601 (22-RO-TC-Giurgiu Stage II), cu cofinanțare din bugetul de stat"
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "RailWorks (Arcada Company – Alstom Transport)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 6,
+        "executionMonths": 30,
+        "guaranteeMonths": 120,
+        "totalMonths": 158,
+        "value": {
+          "amount": 2108.26,
+          "currency": "RON",
+          "year": 2025,
+          "scope": "works",
+          "note": "Excluding VAT."
+        },
+        "noticeUrl": "https://cfr.ro/14-august-2025-cfr-sa-semneaza-contractul-pentru-modernizarea-completa-a-liniei-feroviare-bucuresti-nord-jilava-giurgiu-nord-giurgiu-nord-frontiera-lot-2/"
+      },
+      "note": {
+        "en": "Contract signed on 14 August 2025 with the RailWorks association (Arcada Company as leader, Alstom Transport): 6 months of design, 30 months of works, 120 months of guarantee and 2 months of post-acceptance activities, 158 months in total. CFR states that traffic is suspended between Jilava and Frătești from 16 March 2026 for the works, with similar measures to follow on București Progresu – Jilava and Frătești – Giurgiu Nord Frontieră; CFR estimates completion and reopening for September 2028. CFR's release of 12 March 2026 says the conditions for starting works are met and gives no start date for works, so the start is recorded as March 2026 only. Length measured from OpenStreetMap geometry (one track, from București Progresu to the start of the Giurgiu–Ruse bridge approach). The Giurgiu–Ruse bridge is a separate project and is not included in this length.",
+        "ro": "Contract semnat la 14 august 2025 cu asocierea RailWorks (Arcada Company lider, Alstom Transport): 6 luni de proiectare, 30 de luni de execuție, 120 de luni de garanție și 2 luni de activități după recepție, în total 158 de luni. CFR precizează că circulația este suspendată între Jilava și Frătești din 16 martie 2026 pentru lucrări, cu măsuri similare în etapele următoare pe București Progresu – Jilava și Frătești – Giurgiu Nord Frontieră; CFR estimează finalizarea și redeschiderea pentru septembrie 2028. Comunicatul CFR din 12 martie 2026 spune că sunt îndeplinite condițiile pentru începerea lucrărilor și nu indică o dată de începere a lucrărilor, deci începutul este înregistrat doar ca martie 2026. Lungime măsurată pe geometria OpenStreetMap (o singură cale, de la București Progresu până la începutul accesului la podul Giurgiu–Ruse). Podul Giurgiu–Ruse este un proiect separat și nu este inclus în această lungime."
+      },
+      "sourceRefs": [
+        "cfr-ro-contract-lot2-2025-08",
+        "cfr-ro-start-lot2-2026-03",
+        "openstreetmap-ro-giurgiu"
+      ],
+      "geometryRef": "progresu-giurgiu-nord-frontiera"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cfr-ro-contract-lot2-2025-08",
+      "title": "CFR SA: 14 August 2025, semnarea contractului pentru modernizarea liniei București Nord – Jilava – Giurgiu Nord – Giurgiu Nord Frontieră, Lot 2",
+      "url": "https://cfr.ro/14-august-2025-cfr-sa-semneaza-contractul-pentru-modernizarea-completa-a-liniei-feroviare-bucuresti-nord-jilava-giurgiu-nord-giurgiu-nord-frontiera-lot-2/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-start-lot2-2026-03",
+      "title": "CFR SA: comunicat din 12 martie 2026, începerea lucrărilor de modernizare București Progresu – Jilava – Giurgiu Nord Frontieră",
+      "url": "https://cfr.ro/bucuresti-12-martie-2025-inceperea-lucrarilor-de-modernizare-pe-linia-feroviara-bucuresti-progresu-jilava-giurgiu-nord-frontiera/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap-ro-giurgiu",
+      "title": "OpenStreetMap contributors (geometry of CFR lines 103 and 106A, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

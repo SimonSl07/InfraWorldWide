@@ -1,0 +1,1313 @@
+{
+  "id": "pl-a2",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "A2 motorway (Świecko – Poznań – Łódź – Warszawa – Siedlce – Biała Podlaska – Kukuryki)",
+    "ro": "Autostrada A2 (Świecko – Poznań – Łódź – Varșovia – Siedlce – Biała Podlaska – Kukuryki)"
+  },
+  "description": {
+    "en": "Poland's east–west motorway from the German border at Świecko to Biała Podlaska, with the last 32 km to the Belarus border at Kukuryki not yet built. It is drawn in two parts because the Konotopa – Lubelska stretch through Warsaw is carried by S2 and S8: Świecko – Konotopa and Warszawa Lubelska – Biała Podlaska. The Nowy Tomyśl – Konin section (149 km) is a concession of Autostrada Wielkopolska S.A. and Świecko – Nowy Tomyśl (about 106 km) of Autostrada Wielkopolska II S.A.; the concessionaires are listed as such, not as builders. Września – Konin opened in 1985 and 1988 and was modernised in 2002; Modła – Stryków opened in 2006; the Stryków – Konotopa sections opened in 2012 after two contracts were terminated in June 2011; the Mińsk Mazowiecki bypass opened in 2012 and the Warszawa – Biała Podlaska sections between 2020 and 2026. Lots follow the contract sections and the opening dates in the pl.wikipedia tables, checked against GDDKiA releases. Contract values are given as stated; the VAT basis is mostly not stated in the sources.",
+    "ro": "Autostrada est–vest a Poloniei de la granița cu Germania la Świecko până la Biała Podlaska, cu ultimii 32 km până la granița cu Belarus la Kukuryki încă nerealizați. Este desenată în două părți deoarece tronsonul Konotopa – Lubelska prin Varșovia este asigurat de S2 și S8: Świecko – Konotopa și Warszawa Lubelska – Biała Podlaska. Secțiunea Nowy Tomyśl – Konin (149 km) este concesiunea Autostrada Wielkopolska S.A., iar Świecko – Nowy Tomyśl (circa 106 km) a Autostrada Wielkopolska II S.A.; concesionarii sunt înregistrați ca atare, nu ca antreprenori. Września – Konin a fost deschis în 1985 și 1988 și modernizat în 2002; Modła – Stryków a fost deschis în 2006; secțiunile Stryków – Konotopa au fost deschise în 2012 după rezilierea a două contracte în iunie 2011; ocolitoarea Mińsk Mazowiecki a fost deschisă în 2012, iar secțiunile Warszawa – Biała Podlaska între 2020 și 2026. Loturile urmează secțiunile contractuale și datele de deschidere din tabelele pl.wikipedia, verificate cu comunicatele GDDKiA. Valorile contractelor sunt date ca atare; baza TVA nu este în general precizată în surse."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-05",
+  "lots": [
+    {
+      "id": "swiecko-rzepin",
+      "name": {
+        "en": "Świecko – Rzepin",
+        "ro": "Świecko – Rzepin"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-09-30"
+      },
+      "lengthKm": 17.075,
+      "contractors": [
+        {
+          "name": "Autostrada Wielkopolska II S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-09-30",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Built by the concessionaire Autostrada Wielkopolska II S.A. as a rebuild of the existing DK2 (km 3+375 to 20+450 on the concession chainage, 17.075 km). The pl.wikipedia table gives 18.7 km and the opening as 30 September 2011; the 3.9 km from the border to the Świecko junction is signposted DK2 and is not drawn. Free of charge.",
+        "ro": "Construit de concesionarul Autostrada Wielkopolska II S.A. prin reconstrucția DK2 existent (km 3+375 – 20+450 pe kilometrajul concesiunii, 17,075 km). Tabelul de pe pl.wikipedia indică 18,7 km și deschiderea la 30 septembrie 2011; cei 3,9 km de la graniță la nodul Świecko sunt marcați DK2 și nu sunt desenați. Fără taxă."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-swiecko-nowy-tomysl",
+        "awsa-o-nas",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "swiecko-rzepin"
+    },
+    {
+      "id": "rzepin-nowy-tomysl",
+      "name": {
+        "en": "Rzepin – Nowy Tomyśl",
+        "ro": "Rzepin – Nowy Tomyśl"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-12-01"
+      },
+      "lengthKm": 87.45,
+      "contractors": [
+        {
+          "name": "Autostrada Wielkopolska II S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-12-01",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Concession section of Autostrada Wielkopolska II S.A. (km 20+450 to 107+900, 87.45 km). The pl.wikipedia table gives 84.4 km. Toll from 20 May 2012. The agreement signed on 29 August 2008 planned the start for spring 2009 and the end for 2012; the whole Świecko – Nowy Tomyśl opened almost six months before that deadline. No dated construction start is recorded.",
+        "ro": "Secțiune în concesiunea Autostrada Wielkopolska II S.A. (km 20+450 – 107+900, 87,45 km). Tabelul de pe pl.wikipedia indică 84,4 km. Taxă din 20 mai 2012. Contractul semnat la 29 august 2008 prevedea începerea în primăvara 2009 și finalizarea în 2012; întregul Świecko – Nowy Tomyśl a fost deschis cu aproape șase luni înainte de acest termen. Nu este înregistrată o dată de începere a construcției."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-swiecko-nowy-tomysl",
+        "awsa-o-nas",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rzepin-nowy-tomysl"
+    },
+    {
+      "id": "nowy-tomysl-poznan-komorniki",
+      "name": {
+        "en": "Nowy Tomyśl – Poznań Komorniki",
+        "ro": "Nowy Tomyśl – Poznań Komorniki"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004-10-27"
+      },
+      "lengthKm": 50.4,
+      "contractors": [
+        {
+          "name": "Autostrada Wielkopolska S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2004-10-27",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Concession section of Autostrada Wielkopolska S.A., which is responsible for A2 Nowy Tomyśl – Konin (149 km). pl.wikipedia gives 50.4 km and 27 October 2004; toll collection began on 3 November 2004, and the part between Poznań Zachód and Poznań Komorniki is free. The table at the top of the article names this section as ending at Poznań Zachód.",
+        "ro": "Secțiune în concesiunea Autostrada Wielkopolska S.A., responsabilă de A2 Nowy Tomyśl – Konin (149 km). pl.wikipedia indică 50,4 km și 27 octombrie 2004; taxa se percepe din 3 noiembrie 2004, iar porțiunea dintre Poznań Zachód și Poznań Komorniki este gratuită. Tabelul de la începutul articolului indică sfârșitul secțiunii la Poznań Zachód."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "awsa-o-nas",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nowy-tomysl-poznan-komorniki"
+    },
+    {
+      "id": "poznan-komorniki-krzesiny",
+      "name": {
+        "en": "Poznań Komorniki – Poznań Krzesiny (southern bypass)",
+        "ro": "Poznań Komorniki – Poznań Krzesiny (ocolitoarea de sud)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003-09-12"
+      },
+      "lengthKm": 13.3,
+      "contractors": [
+        {
+          "name": "Autostrada Wielkopolska S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2003-09-12",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Southern bypass of Poznań, free of charge, shared with S5 and S11 on part of its length. The construction history on pl.wikipedia gives 12 September 2003 and 13.3 km; the table of existing sections gives 13 September 2003 for the longer Poznań Zachód – Poznań Wschód stretch (26.1 km).",
+        "ro": "Ocolitoarea de sud a Poznanului, gratuită, comună cu S5 și S11 pe o parte din lungime. Istoricul construcției de pe pl.wikipedia indică 12 septembrie 2003 și 13,3 km; tabelul secțiunilor existente indică 13 septembrie 2003 pentru tronsonul mai lung Poznań Zachód – Poznań Wschód (26,1 km)."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "awsa-o-nas",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "poznan-komorniki-krzesiny"
+    },
+    {
+      "id": "krzesiny-wrzesnia",
+      "name": {
+        "en": "Poznań Krzesiny – Września",
+        "ro": "Poznań Krzesiny – Września"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003-11-27"
+      },
+      "lengthKm": 37.5,
+      "contractors": [
+        {
+          "name": "Autostrada Wielkopolska S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2003-11-27",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Opened on 27 November 2003 (pl.wikipedia, 37.5 km); tolled between Poznań Wschód and Września.",
+        "ro": "Deschis la 27 noiembrie 2003 (pl.wikipedia, 37,5 km); cu taxă între Poznań Wschód și Września."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "awsa-o-nas",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krzesiny-wrzesnia"
+    },
+    {
+      "id": "wrzesnia-sluocin",
+      "name": {
+        "en": "Września – Sługocin",
+        "ro": "Września – Sługocin"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1985-10-09"
+      },
+      "lengthKm": 34.2,
+      "contractors": [
+        {
+          "name": "Autostrada Wielkopolska S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1985-10-09",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Opened on 9 October 1985 (pl.wikipedia, 34.2 km), modernised in 2002 and tolled from 20 December 2002. The drawn length is 35.25 km.",
+        "ro": "Deschis la 9 octombrie 1985 (pl.wikipedia, 34,2 km), modernizat în 2002 și cu taxă din 20 decembrie 2002. Lungimea desenată este 35,25 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "awsa-o-nas",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wrzesnia-sluocin"
+    },
+    {
+      "id": "sluocin-modla",
+      "name": {
+        "en": "Sługocin – Modła (Konin Zachód)",
+        "ro": "Sługocin – Modła (Konin Zachód)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1988-11-10"
+      },
+      "lengthKm": 13.8,
+      "contractors": [
+        {
+          "name": "Autostrada Wielkopolska S.A.",
+          "role": "concessionaire"
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1988-11-10",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Opened on 10 November 1988 (pl.wikipedia, 13.8 km) and modernised in 2002. Free of charge.",
+        "ro": "Deschis la 10 noiembrie 1988 (pl.wikipedia, 13,8 km) și modernizat în 2002. Gratuit."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "awsa-o-nas",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sluocin-modla"
+    },
+    {
+      "id": "modla-strykow",
+      "name": {
+        "en": "Modła (Konin Zachód) – Stryków",
+        "ro": "Modła (Konin Zachód) – Stryków"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-07-28",
+        "opened": "2006-07-26"
+      },
+      "lengthKm": 103,
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.82,
+          "detail": {
+            "en": "pl.wikipedia: financed by GDDKiA, 82% from the EU Cohesion Fund.",
+            "ro": "pl.wikipedia: finanțat de GDDKiA, 82% din Fondul de coeziune al UE."
+          }
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-07-28",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-07-26",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Built by GDDKiA from 28 July 2004; due in November 2005 and opened eight months late, as the longest motorway section opened at one time in Poland. Free for vehicles under 3.5 t from 1 July 2023 (toll only above that mass). Contractors are not named in the sources read.",
+        "ro": "Construit de GDDKiA din 28 iulie 2004; termen noiembrie 2005, deschis cu opt luni întârziere, ca cel mai lung tronson de autostradă deschis simultan în Polonia. Fără taxă pentru vehiculele sub 3,5 t din 1 iulie 2023 (taxă doar peste această masă). Constructorii nu sunt numiți în sursele consultate."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "modla-strykow"
+    },
+    {
+      "id": "strykow-lodz-polnoc",
+      "name": {
+        "en": "Stryków – Łódź Północ",
+        "ro": "Stryków – Łódź Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-12-22"
+      },
+      "lengthKm": 1.7,
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-12-22",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Stryków bypass, opened on 22 December 2008 together with a 3 km slip road to one carriageway of the A1 (pl.wikipedia). Three lanes, free of charge. The drawn centreline between the two junction nodes is 3.43 km, longer than the recorded 1.7 km.",
+        "ro": "Ocolitoarea Strykówului, deschisă la 22 decembrie 2008 împreună cu un racord de 3 km la o singură bandă a A1 (pl.wikipedia). Trei benzi, gratuită. Axul desenat între cele două noduri este de 3,43 km, mai lung decât cei 1,7 km înregistrați."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "strykow-lodz-polnoc"
+    },
+    {
+      "id": "lodz-polnoc-skierniewice",
+      "name": {
+        "en": "Łódź Północ – Skierniewice",
+        "ro": "Łódź Północ – Skierniewice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-09-28",
+        "constructionStart": "2010-07-14",
+        "opened": "2012-06-03"
+      },
+      "lengthKm": 32,
+      "contractors": [
+        {
+          "name": "China Overseas Engineering Group (COVEC)",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "Warbud",
+          "role": "builder"
+        },
+        {
+          "name": "Mostostal Warszawa",
+          "role": "builder"
+        },
+        {
+          "name": "Acciona Infraestructuras",
+          "role": "builder"
+        },
+        {
+          "name": "Polimex Mostostal",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-09-28",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2010-07-14",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2011-06-13",
+          "sourceRef": "pl-wikipedia-a2",
+          "note": {
+            "en": "Section A (29.2 km): GDDKiA terminated the contract with the COVEC-led consortium, effective 27 June 2011.",
+            "ro": "Secțiunea A (29,2 km): GDDKiA a reziliat contractul cu consorțiul condus de COVEC, în vigoare din 27 iunie 2011."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-07-28",
+          "sourceRef": "pl-wikipedia-a2",
+          "note": {
+            "en": "Completion contract for section A with Eurovia / Warbud, about PLN 989 million (VAT basis not stated).",
+            "ro": "Contract de finalizare pentru secțiunea A cu Eurovia / Warbud, circa 989 mil. PLN (TVA nespecificat)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2012-06-03",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Contract section A (29.2 km, Łowicz junction) and the western part of section B (Skierniewice junction). Contracts signed on 28 September 2009 with the works start marked on 14 July 2010; section A went to a consortium led by China Overseas Engineering Group (COVEC), terminated on 13 June 2011 and completed under a contract of 28 July 2011 with Eurovia / Warbud for about PLN 989 million (VAT basis not stated). Section B (17.0 km) went to Mostostal Warszawa / Acciona Infraestructuras / Polimex Mostostal; about 3.8 km of it opened here. Opened to traffic on 3 June 2012; the surface course was then laid, with the northern carriageway reopened on 5 September and the southern on 15 October 2012. Length 32 km from the pl.wikipedia table of sections (the construction history says 33 km). Original COVEC contract value not found.",
+        "ro": "Secțiunea contractuală A (29,2 km, nodul Łowicz) și partea de vest a secțiunii B (nodul Skierniewice). Contracte semnate la 28 septembrie 2009, cu marcarea startului lucrărilor la 14 iulie 2010; secțiunea A a revenit unui consorțiu condus de China Overseas Engineering Group (COVEC), reziliat la 13 iunie 2011 și finalizat printr-un contract din 28 iulie 2011 cu Eurovia / Warbud, circa 989 mil. PLN (TVA nespecificat). Secțiunea B (17,0 km) a revenit Mostostal Warszawa / Acciona Infraestructuras / Polimex Mostostal; circa 3,8 km din ea au fost deschiși aici. Deschis traficului la 3 iunie 2012; apoi s-a așternut stratul de uzură, cu carosabilul nordic redeschis la 5 septembrie și cel sudic la 15 octombrie 2012. Lungime 32 km din tabelul secțiunilor de pe pl.wikipedia (istoricul construcției indică 33 km). Valoarea contractului inițial COVEC nu a fost găsită."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lodz-polnoc-skierniewice"
+    },
+    {
+      "id": "skierniewice-grodzisk",
+      "name": {
+        "en": "Skierniewice – Grodzisk Mazowiecki",
+        "ro": "Skierniewice – Grodzisk Mazowiecki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-09-28",
+        "constructionStart": "2010-07-14",
+        "opened": "2012-06-06"
+      },
+      "lengthKm": 41.4,
+      "contractors": [
+        {
+          "name": "China Overseas Engineering Group (COVEC)",
+          "role": "builder"
+        },
+        {
+          "name": "Dolnośląskie Surowce Skalne (DSS)",
+          "role": "builder"
+        },
+        {
+          "name": "Bögl a Krýsl",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-09-28",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2010-07-14",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2011-06-13",
+          "sourceRef": "pl-wikipedia-a2",
+          "note": {
+            "en": "Section C (20.0 km): GDDKiA terminated the contract with the COVEC-led consortium, effective 27 June 2011.",
+            "ro": "Secțiunea C (20,0 km): GDDKiA a reziliat contractul cu consorțiul condus de COVEC, în vigoare din 27 iunie 2011."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2011-08-01",
+          "sourceRef": "pl-wikipedia-a2",
+          "note": {
+            "en": "Completion contract for section C with DSS / Bögl a Krýsl, PLN 756.05 million (VAT basis not stated).",
+            "ro": "Contract de finalizare pentru secțiunea C cu DSS / Bögl a Krýsl, 756,05 mil. PLN (TVA nespecificat)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2012-06-06",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Contract section C (20.0 km, Wiskitki junction) plus the rest of section B and part of D (Strabag / Mota-Engil). The COVEC-led consortium was terminated on 13 June 2011 (effective 27 June) and section C was completed by DSS / Bögl a Krýsl under the contract of 1 August 2011 (PLN 756.05 million, VAT basis not stated; covers section C only, so it is not recorded as the lot contract value). Opened to traffic on 6 June 2012 with finishing works on the Wiskitki junction continuing to October 2012. Length 41.4 km from the pl.wikipedia table of sections (the construction history says 46 km).",
+        "ro": "Secțiunea contractuală C (20,0 km, nodul Wiskitki) plus restul secțiunii B și o parte din D (Strabag / Mota-Engil). Consorțiul condus de COVEC a fost reziliat la 13 iunie 2011 (în vigoare din 27 iunie), iar secțiunea C a fost finalizată de DSS / Bögl a Krýsl prin contractul din 1 august 2011 (756,05 mil. PLN, TVA nespecificat; acoperă doar secțiunea C, deci nu este înregistrat ca valoare a contractului lotului). Deschis traficului la 6 iunie 2012, cu lucrări de finisare la nodul Wiskitki până în octombrie 2012. Lungime 41,4 km din tabelul secțiunilor de pe pl.wikipedia (istoricul construcției indică 46 km)."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "skierniewice-grodzisk"
+    },
+    {
+      "id": "grodzisk-konotopa",
+      "name": {
+        "en": "Grodzisk Mazowiecki – Konotopa",
+        "ro": "Grodzisk Mazowiecki – Konotopa"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-09-28",
+        "constructionStart": "2010-07-14",
+        "opened": "2012-05-27"
+      },
+      "lengthKm": 17.4,
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Mota-Engil (Duna Polska)",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex-Dromex",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-09-28",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2010-07-14",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-05-23",
+          "sourceRef": "pl-wikipedia-a2",
+          "note": {
+            "en": "Pruszków – Konotopa (4.8 km) opened.",
+            "ro": "Pruszków – Konotopa (4,8 km) deschis."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2012-05-27",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Contract sections D (17.6 km, Strabag / Mota-Engil) and E (7.1 km, Budimex-Dromex / Ferrovial Agroman), without the part of D west of Grodzisk that opened with section C. Pruszków – Konotopa (4.8 km) opened on 23 May 2012 together with 2 km of the S8 to Warszawa Zachodnia; Grodzisk Mazowiecki – Pruszków (12.6 km) opened on 27 May 2012. Length is 12.6 + 4.8 km from the pl.wikipedia table of sections. The OSM ways tagged A2 stop before the Konotopa interchange, so the drawn line is about 15.9 km. The Konotopa – Lubelska gap is carried by S2 and S8.",
+        "ro": "Secțiunile contractuale D (17,6 km, Strabag / Mota-Engil) și E (7,1 km, Budimex-Dromex / Ferrovial Agroman), fără partea din D la vest de Grodzisk deschisă odată cu secțiunea C. Pruszków – Konotopa (4,8 km) deschis la 23 mai 2012 împreună cu 2 km din S8 spre Warszawa Zachodnia; Grodzisk Mazowiecki – Pruszków (12,6 km) deschis la 27 mai 2012. Lungimea este 12,6 + 4,8 km din tabelul secțiunilor de pe pl.wikipedia. Arterele OSM etichetate A2 se opresc înaintea intersecției Konotopa, deci linia desenată are circa 15,9 km. Golul Konotopa – Lubelska este acoperit de S2 și S8."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "grodzisk-konotopa"
+    },
+    {
+      "id": "lubelska-choszczowka",
+      "name": {
+        "en": "Warszawa Lubelska – Choszczówka Stojecka (via Halinów)",
+        "ro": "Warszawa Lubelska – Choszczówka Stojecka (prin Halinów)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-07-25",
+        "opened": "2020-08-14"
+      },
+      "lengthKm": 15,
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 537.7,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Works value of the two Polaqua sections (214.2 + 323.5), as stated by GDDKiA in 2019; VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 537.7,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Works value only (214.2 Lubelska – Konik + 323.5 Konik – Mińsk bypass); VAT basis not stated."
+            },
+            "date": "2017-07-25",
+            "sourceRef": "gddkia-a2-minsk-siedlce-first-contract"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: about PLN 329.6 million of EU funding for the two Polaqua sections.",
+            "ro": "GDDKiA: circa 329,6 mil. PLN fonduri UE pentru cele două secțiuni Polaqua."
+          }
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-07-25",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-08-14",
+          "sourceRef": "gddkia-a2-lubelska-halinow-opening"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Polaqua signed in July 2017 (25 July per pl.wikipedia) for two sections, Lubelska – Halinów (5.6 km) and Halinów – start of the Mińsk Mazowiecki bypass (9.2 km). GDDKiA gives the total investment as almost PLN 755 million including documentation, land and archaeology, of which works about PLN 538 million. Opened on 14 August 2020 (over 15 km). Drawn length is 13.96 km, 7% under the recorded 15 km; the start is the first A2 way after the S17 junction, and the cut at 9.19 km beyond Halinów is by recorded section length.",
+        "ro": "Contract proiectare-construcție cu Polaqua semnat în iulie 2017 (25 iulie conform pl.wikipedia) pentru două secțiuni, Lubelska – Halinów (5,6 km) și Halinów – începutul ocolitoarei Mińsk Mazowiecki (9,2 km). GDDKiA indică investiția totală la aproape 755 mil. PLN, incluzând documentația, terenurile și arheologia, din care lucrările circa 538 mil. PLN. Deschis la 14 august 2020 (peste 15 km). Lungimea desenată este 13,96 km, cu 7% sub cei 15 km înregistrați; începutul este prima arteră A2 după nodul S17, iar tăietura la 9,19 km după Halinów respectă lungimea înregistrată a secțiunii."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-lubelska-halinow-opening",
+        "gddkia-a2-minsk-siedlce-first-contract",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubelska-choszczowka"
+    },
+    {
+      "id": "choszczowka-kaluszyn",
+      "name": {
+        "en": "Mińsk Mazowiecki bypass (Choszczówka Stojecka – Kałuszyn)",
+        "ro": "Ocolitoarea Mińsk Mazowiecki (Choszczówka Stojecka – Kałuszyn)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-08-24",
+        "opened": "2012-08-29"
+      },
+      "lengthKm": 20.8,
+      "contractors": [
+        {
+          "name": "Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki",
+          "role": "builder"
+        },
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 450.31,
+            "currency": "PLN",
+            "note": "Cohesion Fund contribution stated by pl.wikipedia (PLN 450,307,843.41)."
+          },
+          "detail": {
+            "en": "Cohesion Fund contribution of PLN 450.31 million towards a stated project total of PLN 761.66 million.",
+            "ro": "Contribuție din Fondul de coeziune de 450,31 mil. PLN la un total declarat al proiectului de 761,66 mil. PLN."
+          }
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-08-24",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-08-29",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "First eastern section, with junctions Arynów, Lotnisko and Ryczołek. Works started officially on 24 August 2009 and the bypass was opened on 29 August 2012. pl.wikipedia gives the construction cost as PLN 567.4 million and the project total as PLN 761.66 million; neither is recorded as a lot cost because the VAT basis and scope are not stated. Contractor consortium led by Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki with Astaldi and three other firms.",
+        "ro": "Prima secțiune estică, cu nodurile Arynów, Lotnisko și Ryczołek. Lucrările au început oficial la 24 august 2009, iar ocolitoarea a fost deschisă la 29 august 2012. pl.wikipedia indică costul construcției la 567,4 mil. PLN și totalul proiectului la 761,66 mil. PLN; niciuna nu este înregistrată drept cost al lotului deoarece TVA și domeniul nu sunt precizate. Consorțiu de constructori condus de Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki, alături de Astaldi și alte trei firme."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "choszczowka-kaluszyn"
+    },
+    {
+      "id": "kaluszyn-groszki",
+      "name": {
+        "en": "Kałuszyn (Ryczołek) – Groszki",
+        "ro": "Kałuszyn (Ryczołek) – Groszki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-03-05",
+        "opened": "2024-12-18"
+      },
+      "lengthKm": 12,
+      "contractors": [
+        {
+          "name": "PUT Intercor",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 36,
+        "value": {
+          "amount": 499.8,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Stated by GDDKiA as \"ok. 499,8 mln zł\"; VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 499.8,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Approximate; VAT basis not stated."
+            },
+            "date": "2020-03-05",
+            "sourceRef": "gddkia-a2-minsk-siedlce-first-contract"
+          }
+        ]
+      },
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-03-05",
+          "sourceRef": "gddkia-a2-lubelska-halinow-opening"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2024-08-29",
+          "sourceRef": "pl-wikipedia-a2",
+          "note": {
+            "en": "Most of the section opened; the last 3.6 km opened on 18 December 2024.",
+            "ro": "Cea mai mare parte a secțiunii deschisă; ultimii 3,6 km deschiși la 18 decembrie 2024."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-18",
+          "sourceRef": "gddkia-a2-siedlce-opening-2024"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with PUT Intercor for about PLN 499.8 million, 36 months, signed on 5 March 2020 (first of three Mińsk – Siedlce contracts). Opened in two steps: 29 August 2024 (pl.wikipedia) and the last 3.6 km on 18 December 2024 (GDDKiA). Recorded length is the 12 km of the contract; the drawn centreline from the Kałuszyn junction to Groszki is 8.8 km, so the contract section apparently starts west of the junction node.",
+        "ro": "Contract proiectare-construcție cu PUT Intercor pentru circa 499,8 mil. PLN, 36 de luni, semnat la 5 martie 2020 (primul din trei contracte Mińsk – Siedlce). Deschis în două etape: 29 august 2024 (pl.wikipedia) și ultimii 3,6 km la 18 decembrie 2024 (GDDKiA). Lungimea înregistrată este cei 12 km ai contractului; axul desenat de la nodul Kałuszyn la Groszki este de 8,8 km, deci secțiunea contractuală începe aparent la vest de nodul respectiv."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-lubelska-halinow-opening",
+        "gddkia-a2-minsk-siedlce-first-contract",
+        "gddkia-a2-siedlce-opening-2024",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kaluszyn-groszki"
+    },
+    {
+      "id": "groszki-siedlce-zachod",
+      "name": {
+        "en": "Groszki – Siedlce Zachód",
+        "ro": "Groszki – Siedlce Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-01-28",
+        "opened": "2024-12-18"
+      },
+      "lengthKm": 12.9,
+      "contractors": [
+        {
+          "name": "STECOL Corporation",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 36,
+        "value": {
+          "amount": 530.8,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Stated by GDDKiA as \"ok. 530,8 mln zł\"; VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 530.8,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Approximate; VAT basis not stated."
+            },
+            "date": "2021-01-28",
+            "sourceRef": "gddkia-a2-minsk-siedlce-third-contract"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: about PLN 339 million from POIiŚ and FEnIKS combined.",
+            "ro": "GDDKiA: circa 339 mil. PLN din POIiŚ și FEnIKS la un loc."
+          }
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-01-28",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-18",
+          "sourceRef": "gddkia-a2-siedlce-opening-2024"
+        }
+      ],
+      "note": {
+        "en": "Last of the three Mińsk – Siedlce contracts: design-build with STECOL Corporation, about PLN 530.8 million, 36 months, signed on 28 January 2021 (date from pl.wikipedia). Opened on 18 December 2024, three months before the deadline, on a new alignment with a 600 m viaduct in the Kostrzyń valley. GDDKiA names the section Groszki – Siedlce Zachód (12.9 km); the 2021 release calls it Groszki – Gręzów (13 km). The drawn line ends 12.9 km after the Groszki junction, so the OSM Siedlce Zachód junction node lies further east than this contract end.",
+        "ro": "Ultimul din cele trei contracte Mińsk – Siedlce: proiectare-construcție cu STECOL Corporation, circa 530,8 mil. PLN, 36 de luni, semnat la 28 ianuarie 2021 (data din pl.wikipedia). Deschis la 18 decembrie 2024, cu trei luni înainte de termen, pe un traseu nou, cu un viaduct de 600 m în valea Kostrzyń. GDDKiA numește secțiunea Groszki – Siedlce Zachód (12,9 km); comunicatul din 2021 o numește Groszki – Gręzów (13 km). Linia desenată se termină la 12,9 km după nodul Groszki, deci nodul OSM Siedlce Zachód se află mai la est decât capătul acestui contract."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-minsk-siedlce-third-contract",
+        "gddkia-a2-siedlce-opening-2024",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "groszki-siedlce-zachod"
+    },
+    {
+      "id": "siedlce-zachod-poludnie",
+      "name": {
+        "en": "Siedlce Zachód – Siedlce Południe",
+        "ro": "Siedlce Zachód – Siedlce Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-04-07",
+        "opened": "2024-12-18"
+      },
+      "lengthKm": 12.4,
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-04-07",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2024-08-08",
+          "sourceRef": "pl-wikipedia-a2",
+          "note": {
+            "en": "First part of the Siedlce bypass opened; GDDKiA says the last 3.4 km of it joined the adjacent section on 18 December 2024.",
+            "ro": "Prima parte a ocolitoarei Siedlce deschisă; GDDKiA spune că ultimii 3,4 km s-au alăturat secțiunii alăturate la 18 decembrie 2024."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-18",
+          "sourceRef": "gddkia-a2-siedlce-opening-2024"
+        }
+      ],
+      "note": {
+        "en": "Siedlce bypass section of 12.4 km (pl.wikipedia; the tender text gives 12.5 km). pl.wikipedia records the tender of 10 October 2019 as won by Polaqua and the contract as signed on 7 April 2020; GDDKiA calls a 12.5 km contract of 7 April 2020 \"Gręzów – Siedlce Zachód\", so the section names differ between sources. The contract value was not found. Opened 8 August 2024 per pl.wikipedia; GDDKiA says 3.4 km of it opened with the Groszki section on 18 December 2024, which is recorded as the date the whole lot was open. Drawn length is 13.8 km from the end of the Groszki lot to the OSM Siedlce Południe junction.",
+        "ro": "Secțiune a ocolitoarei Siedlce de 12,4 km (pl.wikipedia; textul licitației indică 12,5 km). pl.wikipedia consemnează licitația din 10 octombrie 2019 câștigată de Polaqua și contractul semnat la 7 aprilie 2020; GDDKiA numește „Gręzów – Siedlce Zachód” un contract de 12,5 km din 7 aprilie 2020, deci numele secțiunilor diferă între surse. Valoarea contractului nu a fost găsită. Deschis la 8 august 2024 conform pl.wikipedia; GDDKiA spune că 3,4 km din ea au fost deschiși odată cu secțiunea Groszki la 18 decembrie 2024, data înregistrată ca deschidere a întregului lot. Lungimea desenată este 13,8 km de la capătul lotului Groszki până la nodul OSM Siedlce Południe."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-lubelska-halinow-opening",
+        "gddkia-a2-siedlce-opening-2024",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "siedlce-zachod-poludnie"
+    },
+    {
+      "id": "siedlce-poludnie-malinowiec",
+      "name": {
+        "en": "Siedlce Południe – Malinowiec",
+        "ro": "Siedlce Południe – Malinowiec"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-04-14",
+        "opened": "2026-06-26"
+      },
+      "lengthKm": 18.7,
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 33,
+        "value": {
+          "amount": 589,
+          "currency": "PLN",
+          "note": "GDDKiA 2026: \"wartości blisko 589 mln zł\" (nearly); VAT basis and price year not stated."
+        }
+      },
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-04-14",
+          "sourceRef": "gddkia-a2-siedlce-bp-contracts"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2025-12-23",
+          "sourceRef": "gddkia-a2-biala-podlaska-opening-2026",
+          "note": {
+            "en": "First 8 km opened to the Siedlce Wschód junction.",
+            "ro": "Primii 8 km deschiși până la nodul Siedlce Wschód."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2026-06-26",
+          "sourceRef": "gddkia-a2-biala-podlaska-opening-2026"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Strabag, 18.7 km (GDDKiA 2026; the signing release said almost 19 km, about PLN 700 million, 33 months, with a Borki junction). The first 8 km to Siedlce Wschód opened on 23 December 2025 and the rest on 26 June 2026. pl.wikipedia gives 18.8 km. The 2026 value of nearly PLN 589 million is recorded as stated; the contract was signed on 14 April 2021 (GDDKiA, pl.wikipedia).",
+        "ro": "Contract proiectare-construcție cu Strabag, 18,7 km (GDDKiA 2026; comunicatul de la semnare indica aproape 19 km, circa 700 mil. PLN, 33 de luni, cu nodul Borki). Primii 8 km până la Siedlce Wschód au fost deschiși la 23 decembrie 2025, restul la 26 iunie 2026. pl.wikipedia indică 18,8 km. Valoarea din 2026 de aproape 589 mil. PLN este înregistrată ca atare; contractul a fost semnat la 14 aprilie 2021 (GDDKiA, pl.wikipedia)."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-siedlce-bp-contracts",
+        "gddkia-a2-biala-podlaska-opening-2026",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "siedlce-poludnie-malinowiec"
+    },
+    {
+      "id": "malinowiec-lukowisko",
+      "name": {
+        "en": "Malinowiec – Łukowisko",
+        "ro": "Malinowiec – Łukowisko"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-04-01",
+        "opened": "2026-06-26"
+      },
+      "lengthKm": 18,
+      "contractors": [
+        {
+          "name": "PUT Intercor",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 389,
+          "currency": "PLN",
+          "note": "GDDKiA 2026: \"wartości 389 mln zł\" for a 20 km section; VAT basis and price year not stated."
+        }
+      },
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-04-01",
+          "sourceRef": "pl-wikipedia-a2"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-06-26",
+          "sourceRef": "gddkia-a2-biala-podlaska-opening-2026"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with Intercor; GDDKiA 2026 gives 20 km and PLN 389 million for the section including about 2 km inside the Łukowisko junction, which opened before the May weekend 2026 with the Łukowisko – Biała Podlaska lot. Length 18 km from pl.wikipedia. The Siedlce Wschód – Łukowisko link (about 30 km) opened on 26 June 2026 and the old DK2 to Biała Podlaska became DK92. Signing date 1 April 2021 from pl.wikipedia.",
+        "ro": "Contract proiectare-construcție cu Intercor; GDDKiA 2026 indică 20 km și 389 mil. PLN pentru secțiunea care include circa 2 km în nodul Łukowisko, deschiși înainte de weekendul de 1 Mai 2026 odată cu lotul Łukowisko – Biała Podlaska. Lungime 18 km din pl.wikipedia. Legătura Siedlce Wschód – Łukowisko (circa 30 km) a fost deschisă la 26 iunie 2026, iar vechiul DK2 spre Biała Podlaska a devenit DK92. Data semnării, 1 aprilie 2021, provine din pl.wikipedia."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-biala-podlaska-opening-2026",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "malinowiec-lukowisko"
+    },
+    {
+      "id": "lukowisko-biala-podlaska",
+      "name": {
+        "en": "Łukowisko – Biała Podlaska",
+        "ro": "Łukowisko – Biała Podlaska"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2026-04-29"
+      },
+      "lengthKm": 26.6,
+      "contractors": [
+        {
+          "name": "PUT Intercor",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "tolled": false
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2026-04-29",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Two contract sections, Łukowisko – Swory (12.5 km, Intercor, almost PLN 370 million at signing in April 2021, 33 months, VAT basis not stated) and Swory – Biała Podlaska (about 14 km; contract signed 1 April 2021 per pl.wikipedia, contractor not found). Opened before the May weekend, 29 April 2026 (pl.wikipedia; GDDKiA says 27 km plus 2 km in the Łukowisko junction). Contractor Intercor applies to the Łukowisko – Swory part. The motorway ends at the Biała Podlaska junction.",
+        "ro": "Două secțiuni contractuale, Łukowisko – Swory (12,5 km, Intercor, aproape 370 mil. PLN la semnare în aprilie 2021, 33 de luni, TVA nespecificat) și Swory – Biała Podlaska (circa 14 km; contract semnat la 1 aprilie 2021 conform pl.wikipedia, constructor negăsit). Deschis înainte de weekendul de 1 Mai, la 29 aprilie 2026 (pl.wikipedia; GDDKiA indică 27 km plus 2 km în nodul Łukowisko). Constructorul Intercor se referă la partea Łukowisko – Swory. Autostrada se termină la nodul Biała Podlaska."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-siedlce-bp-contracts",
+        "gddkia-a2-biala-podlaska-opening-2026",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lukowisko-biala-podlaska"
+    },
+    {
+      "id": "biala-podlaska-kijowiec",
+      "name": {
+        "en": "Biała Podlaska – Kijowiec",
+        "ro": "Biała Podlaska – Kijowiec"
+      },
+      "status": "tendered",
+      "lengthKm": 16,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-05-05",
+          "sourceRef": "pl-wikipedia-a2"
+        }
+      ],
+      "note": {
+        "en": "Tender for design and construction announced on 5 May 2025 (pl.wikipedia); GDDKiA said in 2026 that the contract would be signed within the year. Geometry follows the OSM proposed ways of A2 (about 31.5 km from Biała Podlaska to the border) cut by recorded lengths: 16.0 + 9.3 + 6.8 km.",
+        "ro": "Licitație pentru proiectare și construcție lansată la 5 mai 2025 (pl.wikipedia); GDDKiA a spus în 2026 că contractul va fi semnat în cursul anului. Geometria urmează arterele OSM propuse ale A2 (circa 31,5 km de la Biała Podlaska la graniță), tăiate după lungimile înregistrate: 16,0 + 9,3 + 6,8 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-kijowiec-dobryn-contract",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "biala-podlaska-kijowiec"
+    },
+    {
+      "id": "kijowiec-dobryn",
+      "name": {
+        "en": "Kijowiec – Dobryń",
+        "ro": "Kijowiec – Dobryń"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-06-10"
+      },
+      "lengthKm": 9.3,
+      "contractors": [
+        {
+          "name": "Mirbud",
+          "role": "builder"
+        },
+        {
+          "name": "Budpol",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 10,
+        "executionMonths": 22,
+        "value": {
+          "amount": 460,
+          "currency": "PLN",
+          "year": 2026,
+          "note": "GDDKiA: \"wartości prawie 460 mln zł\" (nearly); VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 460,
+              "currency": "PLN",
+              "year": 2026,
+              "note": "Nearly PLN 460 million as stated; VAT basis not stated."
+            },
+            "date": "2026-06-10",
+            "sourceRef": "gddkia-a2-biala-podlaska-opening-2026"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-12-11",
+          "sourceRef": "gddkia-a2-siedlce-opening-2024"
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-06-10",
+          "sourceRef": "gddkia-a2-biala-podlaska-opening-2026"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract with a consortium led by Mirbud with Budpol, signed on 10 June 2026 (GDDKiA, 26 June 2026); tender announced on 11 December 2024. Design phase 10 months, then 22 months of works. The ZRID permit has been issued. The press forecast in the release is access to the Koroszczyn lorry terminal in about three years; no official opening date is stated.",
+        "ro": "Contract proiectare-construcție cu un consorțiu condus de Mirbud, cu Budpol, semnat la 10 iunie 2026 (GDDKiA, 26 iunie 2026); licitația a fost anunțată la 11 decembrie 2024. Faza de proiectare 10 luni, apoi 22 de luni de lucrări. Autorizația ZRID a fost emisă. Prognoza din comunicat este accesul la terminalul de camioane Koroszczyn în circa trei ani; nu este indicată o dată oficială de deschidere."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-kijowiec-dobryn-contract",
+        "gddkia-a2-biala-podlaska-opening-2026",
+        "gddkia-a2-siedlce-opening-2024",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kijowiec-dobryn"
+    },
+    {
+      "id": "dobryn-kukuryki",
+      "name": {
+        "en": "Dobryń – Kukuryki (border)",
+        "ro": "Dobryń – Kukuryki (granița)"
+      },
+      "status": "planned",
+      "lengthKm": 6.8,
+      "note": {
+        "en": "Last 6.8 km to the Belarus border. GDDKiA states that the ZRID procedure is suspended and depends on the geopolitical situation with Belarus (December 2024). No contract or dates.",
+        "ro": "Ultimii 6,8 km până la granița cu Belarus. GDDKiA arată că procedura ZRID este suspendată și depinde de situația geopolitică cu Belarus (decembrie 2024). Fără contract sau date."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-a2",
+        "gddkia-a2-siedlce-opening-2024",
+        "osm-relation-a2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dobryn-kukuryki"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pl-wikipedia-a2",
+      "title": "Wikipedia (pl): Autostrada A2 (Polska), existing sections table and construction history",
+      "url": "https://pl.wikipedia.org/wiki/Autostrada_A2_(Polska)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-swiecko-nowy-tomysl",
+      "title": "GDDKiA: Autostrada A2 Świecko – Nowy Tomyśl (archived copy of the archiwum.gddkia.gov.pl page)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/16146/Autostrada-A2-Swiecko-Nowy-Tomysl",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "awsa-o-nas",
+      "title": "Autostrada Wielkopolska S.A. and Autostrada Wielkopolska II S.A.: O nas (concession sections)",
+      "url": "https://www.autostrada-a2.pl/o-nas/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-lubelska-halinow-opening",
+      "title": "GDDKiA: Oddajemy do ruchu 15 kilometrów A2 na wschód od Warszawy",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/38765/Oddajemy-do-ruchu-15-kilometrow-A2-na-wschod-od-Warszawy",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-minsk-siedlce-first-contract",
+      "title": "GDDKiA: Pierwsza umowa na projekt i budowę autostrady A2 Mińsk – Siedlce podpisana",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/36858/Pierwsza-umowa-na-projekt-i-budowe-autostrady-A2-Minsk-Siedlce-podpisana",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-minsk-siedlce-third-contract",
+      "title": "GDDKiA: Trzecia umowa na projekt i budowę A2 Mińsk Mazowiecki – Siedlce podpisana",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/40775/Trzecia-umowa-na-projekt-i-budowe-A2-Minsk-Mazowiecki-Siedlce-podpisana",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-siedlce-bp-contracts",
+      "title": "GDDKiA: Umowy na kolejne odcinki A2 Siedlce – Biała Podlaska podpisane",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/41142/Umowy-na-kolejne-odcinki-A2-Siedlce-Biala-Podlaska-podpisane",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-siedlce-opening-2024",
+      "title": "GDDKiA Oddział Warszawa: Autostradą do Siedlec",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/autostrada-do-siedlec",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-biala-podlaska-opening-2026",
+      "title": "GDDKiA Oddział Warszawa: Biała Podlaska połączona z Warszawą autostradą",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/biala-podlaska-polaczona-z-warszawa-autostrada",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "gddkia-a2-kijowiec-dobryn-contract",
+      "title": "GDDKiA Oddział Warszawa: Rusza budowa kolejnego odcinka autostrady A2",
+      "url": "https://www.gov.pl/web/gddkia-warszawa/rusza-budowa-kolejnego-odcinka-autostrady-a2",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-relation-a2",
+      "title": "OpenStreetMap: relation 335422, Autostrada A2 (network PL:motorway)",
+      "url": "https://www.openstreetmap.org/relation/335422",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}
