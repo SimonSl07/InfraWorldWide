@@ -1,0 +1,168 @@
+{
+  "id": "gr-a25",
+  "country": "gr",
+  "category": "highway",
+  "name": {
+    "en": "A25 Thessaloniki – Serres – Promachonas",
+    "ro": "A25 Salonic – Serres – Promachonas"
+  },
+  "description": {
+    "en": "Vertical axis of the Egnatia Odos (part of E79, the approach to Pan-European Corridor IV), from the A2 at Lagkadas by way of Serres and Sidirokastro to the Bulgarian border at Promachonas. The operator gives 96 km; Greek Wikipedia gives 105 km measured from Derveni. Of the 96 km, 79 km were built new and opened in stages from 2001 under 14 contracts (budget EUR 465 million including VAT), and the other 17 km reused the existing National Road 12 (Lachanas – Serres), which has two lanes per direction and no hard shoulder. The last new section, 5 km between the Lefkonas and Kato Christos junctions, opened on 2 June 2017, which Greek Wikipedia gives as the official completion date. An operator page archived on 20 May 2013 gave 65 km open and 31 km under construction. The three lots are cut at junctions drawn from OpenStreetMap; no source found gives opening dates for the earlier sections.",
+    "ro": "Axa verticală a Egnatia Odos (parte din E79, acces către Coridorul Pan-European IV), de la A2 la Lagkadas prin Serres și Sidirokastro până la granița cu Bulgaria de la Promachonas. Operatorul indică 96 km; Wikipedia în greacă indică 105 km măsurați de la Derveni. Din cei 96 km, 79 km au fost construiți nou și deschiși etapizat din 2001 prin 14 contracte (buget 465 milioane EUR cu TVA), iar ceilalți 17 km au reutilizat drumul național 12 existent (Lachanas – Serres), cu două benzi pe sens și fără bandă de urgență. Ultimul tronson nou, de 5 km între nodurile Lefkonas și Kato Christos, a fost deschis la 2 iunie 2017, dată pe care Wikipedia în greacă o dă drept finalizare oficială. O pagină a operatorului arhivată la 20 mai 2013 indica 65 km deschiși și 31 km în construcție. Cele trei loturi sunt tăiate la noduri desenate din OpenStreetMap; nicio sursă găsită nu dă date de deschidere pentru tronsoanele anterioare."
+  },
+  "corridors": [
+    "pan-european-iv"
+  ],
+  "operator": "gr-egnatia-odos",
+  "cost": {
+    "amount": 465,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Including VAT. Budget of the 14 Egnatia Odos contracts for the 79 km built new, not the 17 km of existing road and not broken out per lot."
+  },
+  "sources": [
+    {
+      "id": "wikipedia-el-a25",
+      "title": "Greek Wikipedia: Αυτοκινητόδρομος 25 (Ελλάδα)",
+      "url": "https://el.wikipedia.org/wiki/Αυτοκινητόδρομος_25_(Ελλάδα)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "egnatia-vertical-axis",
+      "title": "Egnatia Odos A.E.: Ο Κάθετος Άξονας Θεσσαλονίκη – Σέρρες – Προμαχώνας",
+      "url": "https://egnatia.eu/erga/kathetoi-axones/o-kathetos-axonas-thessaloniki-serres-promaxonas/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "egnatia-vertical-axis-2013",
+      "title": "Egnatia Odos A.E.: Ο Κάθετος Άξονας Θεσσαλονίκη-Σέρρες-Προμαχώνας (archived 20 May 2013)",
+      "url": "http://www.egnatia.eu/page/default.asp?la=1&id=252",
+      "retrievedOn": "2026-10-05",
+      "archiveUrl": "https://web.archive.org/web/20130520125530/http://www.egnatia.eu/page/default.asp?la=1&id=252"
+    },
+    {
+      "id": "makthes-2017-06-02",
+      "title": "Εφημερίδα Μακεδονία: Ολοκληρώθηκε ο αυτοκινητόδρομος Θεσσαλονίκης-Σερρών-Προμαχώνα (2 June 2017)",
+      "url": "https://makthes.gr/%CE%BF%CE%BB%CE%BF%CE%BA%CE%BB%CE%B7%CF%81%CF%8E%CE%B8%CE%B7%CE%BA%CE%B5-%CE%BF-%CE%B1%CF%85%CF%84%CE%BF%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CF%8C%CE%B4%CF%81%CE%BF%CE%BC%CE%BF%CF%82-%CE%B8%CE%B5%CF%83/",
+      "retrievedOn": "2026-10-05",
+      "archiveUrl": "https://web.archive.org/web/20170611121449/http://makthes.gr/%CE%BF%CE%BB%CE%BF%CE%BA%CE%BB%CE%B7%CF%81%CF%8E%CE%B8%CE%B7%CE%BA%CE%B5-%CE%BF-%CE%B1%CF%85%CF%84%CE%BF%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CF%8C%CE%B4%CF%81%CE%BF%CE%BC%CE%BF%CF%82-%CE%B8%CE%B5%CF%83/"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lots": [
+    {
+      "id": "lagkadas-lefkonas",
+      "name": {
+        "en": "Lagkadas (A2) – Serres (Lefkonas)",
+        "ro": "Lagkadas (A2) – Serres (Lefkonas)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001",
+        "opened": "2017-06"
+      },
+      "lengthKm": 57.89,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2001",
+          "note": {
+            "en": "Construction of the vertical axis began (Greek Wikipedia, whole axis).",
+            "ro": "Construcția axei verticale a început (Wikipedia în greacă, întreaga axă)."
+          },
+          "sourceRef": "wikipedia-el-a25"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-06",
+          "note": {
+            "en": "Latest bound: all sections before the Lefkonas – Kato Christos stretch were open by 2 June 2017; the real opening dates are not published in the sources found.",
+            "ro": "Limită superioară: toate tronsoanele dinaintea tronsonului Lefkonas – Kato Christos erau deschise până la 2 iunie 2017; datele reale de deschidere nu sunt publicate în sursele găsite."
+          },
+          "sourceRef": "makthes-2017-06-02"
+        }
+      ],
+      "note": {
+        "en": "Includes the Lachanas – Serres stretch that was part of the old National Road 12 (17 km of the axis reused existing road, with two lanes per direction and no hard shoulder). The twin Dorkada tunnel (288 m per Greek Wikipedia) opened in 2010 and lies inside this lot. No source found dates the opening of the sections before the last 5 km: 2017-06 is the latest bound, since the 2 June 2017 report calls the Lefkonas – Kato Christos stretch the last section under construction, and the real opening was earlier, in stages from 2001. Length measured from OpenStreetMap geometry, from the first Α25 way near the A2 at Lagkadas to the Serres (Lefkonas) junction.",
+        "ro": "Include tronsonul Lachanas – Serres, care făcea parte din vechiul drum național 12 (17 km ai axei au reutilizat drumul existent, cu două benzi pe sens și fără bandă de urgență). Tunelul geamăn Dorkada (288 m după Wikipedia în greacă) a fost deschis în 2010 și se află în acest lot. Nicio sursă găsită nu datează deschiderea tronsoanelor dinaintea ultimilor 5 km: 2017-06 este limita superioară, deoarece relatarea din 2 iunie 2017 numește tronsonul Lefkonas – Kato Christos ultimul aflat în construcție, iar deschiderea reală a fost mai devreme, etapizat din 2001. Lungime măsurată din geometria OpenStreetMap, de la primul tronson Α25 de lângă A2 la Lagkadas până la nodul Serres (Lefkonas)."
+      },
+      "sourceRefs": [
+        "wikipedia-el-a25",
+        "egnatia-vertical-axis",
+        "egnatia-vertical-axis-2013",
+        "makthes-2017-06-02"
+      ],
+      "geometryRef": "lagkadas-lefkonas"
+    },
+    {
+      "id": "lefkonas-kato-christos",
+      "name": {
+        "en": "Serres (Lefkonas) – Kato Christos",
+        "ro": "Serres (Lefkonas) – Kato Christos"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-06-02"
+      },
+      "lengthKm": 5,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2017-06-02",
+          "note": {
+            "en": "Last new section of the axis opened to traffic at about 14:30.",
+            "ro": "Ultimul tronson nou al axei a fost dat în circulație în jurul orei 14:30."
+          },
+          "sourceRef": "makthes-2017-06-02"
+        }
+      ],
+      "note": {
+        "en": "Stretch from the Lefkonas grade-separated junction to the Kato Christos junction, 5 km per the 2 June 2017 report. Drawn length 5.21 km.",
+        "ro": "Tronsonul de la nodul denivelat Lefkonas până la nodul Kato Christos, 5 km după relatarea din 2 iunie 2017. Lungimea desenată este 5,21 km."
+      },
+      "sourceRefs": [
+        "makthes-2017-06-02",
+        "wikipedia-el-a25"
+      ],
+      "geometryRef": "lefkonas-kato-christos"
+    },
+    {
+      "id": "kato-christos-promachonas",
+      "name": {
+        "en": "Kato Christos – Promachonas (Bulgarian border)",
+        "ro": "Kato Christos – Promachonas (granița cu Bulgaria)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-06"
+      },
+      "lengthKm": 29.78,
+      "profile": {
+        "lanes": 4
+      },
+      "note": {
+        "en": "Runs by way of Sidirokastro and Neo Petritsi to the Promachonas toll and border plaza. No source found dates the opening of its sections: 2017-06 is the latest bound, set by the official completion of the axis on 2 June 2017. The operator page archived on 20 May 2013 gave 65 km of the axis open and 31 km under construction, without naming the sections. Length measured from OpenStreetMap geometry.",
+        "ro": "Trece prin Sidirokastro și Neo Petritsi până la barierele de taxare și punctul de frontieră de la Promachonas. Nicio sursă găsită nu datează deschiderea tronsoanelor sale: 2017-06 este limita superioară, dată de finalizarea oficială a axei la 2 iunie 2017. Pagina operatorului arhivată la 20 mai 2013 indica 65 km ai axei deschiși și 31 km în construcție, fără a numi tronsoanele. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-el-a25",
+        "egnatia-vertical-axis",
+        "egnatia-vertical-axis-2013",
+        "makthes-2017-06-02"
+      ],
+      "geometryRef": "kato-christos-promachonas"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

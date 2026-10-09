@@ -1,0 +1,81 @@
+{
+  "id": "rs-rail-nis-brestovac",
+  "country": "rs",
+  "category": "railway",
+  "name": {
+    "en": "Niš – Brestovac Railway Reconstruction",
+    "ro": "Reconstrucția căii ferate Niš – Brestovac"
+  },
+  "description": {
+    "en": "Reconstruction of the 22.8 km Niš – Brestovac section of mainline 102 (Corridor X south of Niš), funded with more than EUR 44 million of EU IPA funds. Infrastruktura železnice Srbije stated on 24 September 2026 that an internal commission checking the reconstructed line found defects the contractors are still fixing. Passenger service at up to 120 km/h will start only once the line meets all safety and technical conditions. Freight trains ran throughout the works.",
+    "ro": "Reconstrucția tronsonului Niš – Brestovac, de 22,8 km, al magistralei 102 (Coridorul X la sud de Niš), finanțată cu peste 44 milioane EUR din fonduri IPA ale UE. Infrastruktura železnice Srbije a declarat la 24 septembrie 2026 că o comisie internă care a verificat linia reconstruită a constatat defecte pe care constructorii le remediază încă. Traficul de călători, cu viteză de până la 120 km/h, va începe abia după ce linia îndeplinește toate condițiile de siguranță și tehnice. Trenurile de marfă au circulat pe tot parcursul lucrărilor."
+  },
+  "corridors": [
+    "pan-european-x"
+  ],
+  "lots": [
+    {
+      "id": "nis-brestovac",
+      "name": {
+        "en": "Niš – Brestovac",
+        "ro": "Niš – Brestovac"
+      },
+      "status": "under_construction",
+      "lengthKm": 22.8,
+      "profile": {
+        "works": "upgrade"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "amount": {
+            "amount": 44,
+            "currency": "EUR",
+            "confidence": "estimated",
+            "note": "Stated as more than EUR 44 million."
+          },
+          "detail": {
+            "en": "EU IPA funds, more than EUR 44 million.",
+            "ro": "Fonduri IPA ale UE, peste 44 milioane EUR."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Trace Group Hold",
+          "role": "builder"
+        },
+        {
+          "name": "Balkantel",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Works: new substructure and superstructure, rails and sleepers, catenary, signalling and lighting, and eight new bridges, the longest 180 m over the South Morava. Both builders are Bulgarian companies chosen at an international tender. Supervision by a consortium led by Italferr. Status is kept at under construction: no opening date is recorded because passenger service has not started. No construction start date is sourced. Length 22.8 km is the figure given by Infrastruktura železnice Srbije; the geometry runs from Niš station and measures 24.3 km. About 1.4 km of it near Niš Ranžirna also lies on the geometry of the Trupale – Međurovo lot of rs-koridor-x-beograd-nis.",
+        "ro": "Lucrări: infrastructură și suprastructură noi, șine și traverse, rețea de contact, semnalizare și iluminat, plus opt poduri noi, cel mai lung de 180 m peste Morava de Sud. Ambii constructori sunt companii bulgare alese printr-o licitație internațională. Supervizare de un consorțiu condus de Italferr. Statutul rămâne în construcție: nu este înregistrată nicio dată de deschidere, deoarece traficul de călători nu a început. Nu există o dată de începere a lucrărilor dintr-o sursă. Lungimea de 22,8 km este cifra dată de Infrastruktura železnice Srbije; geometria pornește din stația Niš și măsoară 24,3 km. Aproximativ 1,4 km din ea, lângă Niš Ranžirna, se află și pe geometria lotului Trupale – Međurovo din rs-koridor-x-beograd-nis."
+      },
+      "sourceRefs": [
+        "izs-2026-09-24-nis-brestovac"
+      ],
+      "geometryRef": "nis-brestovac"
+    }
+  ],
+  "sources": [
+    {
+      "id": "izs-2026-09-24-nis-brestovac",
+      "title": "Infrastruktura železnice Srbije: Путнички возови на прузи Ниш – Брестовац кренуће безбедно брзином 120 км/сат (24 September 2026)",
+      "url": "https://infrazs.rs/%d0%bf%d1%83%d1%82%d0%bd%d0%b8%d1%87%d0%ba%d0%b8-%d0%b2%d0%be%d0%b7%d0%be%d0%b2%d0%b8-%d0%bd%d0%b0-%d0%bf%d1%80%d1%83%d0%b7%d0%b8-%d0%bd%d0%b8%d1%88-%d0%b1%d1%80%d0%b5%d1%81%d1%82%d0%be/",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap: relation 1335434, Магистрална пруга 102",
+      "url": "https://www.openstreetmap.org/relation/1335434",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

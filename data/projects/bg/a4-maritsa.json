@@ -7,8 +7,8 @@
     "ro": "Autostrada A4 Maritsa"
   },
   "description": {
-    "en": "A 117 km motorway in southern Bulgaria linking the Trakia motorway (A1) near Chirpan to the Turkish border at Kapitan Andreevo, on Pan-European Corridor IV and European route E80. It opened in phases between October 2010 and October 2015. A 16.66 km Harmanli – Lyubimets section had first opened on 16 May 2007, then closed for repair and reopened with Lyubimets – Svilengrad on 2 October 2010. The western sections, Chirpan–Haskovo and Haskovo–Harmanli, were co-funded by the EU; the eastern sections were financed nationally.",
-    "ro": "O autostradă de 117 km în sudul Bulgariei, care leagă autostrada Trakia (A1) de lângă Chirpan de granița cu Turcia la Kapitan Andreevo, pe Coridorul paneuropean IV și drumul european E80. S-a deschis în etape între octombrie 2010 și octombrie 2015. Un tronson de 16,66 km Harmanli – Lyubimets fusese deschis pe 16 mai 2007, apoi închis pentru reparații și redeschis împreună cu Lyubimets – Svilengrad pe 2 octombrie 2010. Tronsoanele vestice, Chirpan–Haskovo și Haskovo–Harmanli, au fost cofinanțate de UE; tronsoanele estice au fost finanțate din fonduri naționale."
+    "en": "A 117 km motorway in southern Bulgaria linking the Trakia motorway (A1) at Orizovo to the Turkish border at Kapitan Andreevo, on Pan-European Corridor IV and European route E80. It opened in phases between October 2010 and October 2015. A 16.66 km Harmanli – Lyubimets section had first opened on 16 May 2007, then closed for repair and reopened with Lyubimets – Svilengrad on 2 October 2010. The last 5 km before the border opened on 14 August 2014. The western sections, Orizovo – Dimitrovgrad and Dimitrovgrad – Harmanli, were co-funded by the EU; the eastern sections were financed nationally, except the border approach (km 114–117), a Ministry of Finance project financed by the World Bank.",
+    "ro": "O autostradă de 117 km în sudul Bulgariei, care leagă autostrada Trakia (A1) la Orizovo de granița cu Turcia la Kapitan Andreevo, pe Coridorul paneuropean IV și drumul european E80. S-a deschis în etape între octombrie 2010 și octombrie 2015. Un tronson de 16,66 km Harmanli – Lyubimets fusese deschis pe 16 mai 2007, apoi închis pentru reparații și redeschis împreună cu Lyubimets – Svilengrad pe 2 octombrie 2010. Ultimii 5 km dinaintea graniței s-au deschis pe 14 august 2014. Tronsoanele vestice, Orizovo – Dimitrovgrad și Dimitrovgrad – Harmanli, au fost cofinanțate de UE; tronsoanele estice au fost finanțate din fonduri naționale, cu excepția accesului la frontieră (km 114–117), un proiect al Ministerului Finanțelor finanțat de Banca Mondială."
   },
   "corridors": [
     "pan-european-iv"
@@ -17,8 +17,8 @@
     {
       "id": "chirpan-haskovo",
       "name": {
-        "en": "Chirpan – Haskovo",
-        "ro": "Chirpan – Haskovo"
+        "en": "Orizovo – Dimitrovgrad",
+        "ro": "Orizovo – Dimitrovgrad"
       },
       "status": "opened",
       "dates": {
@@ -26,7 +26,7 @@
         "constructionStart": "2011-10-20",
         "opened": "2015-10-29"
       },
-      "lengthKm": 43,
+      "lengthKm": 31.4,
       "cost": {
         "revisions": [
           {
@@ -41,6 +41,19 @@
             "date": "2011-08-01",
             "note": "Works contract RD-33-16 signed 1 August 2011, from the API Lot 1 page.",
             "sourceRef": "api-maritsa-lot-1"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 42.786359,
+              "currency": "BGN",
+              "year": 2015,
+              "scope": "works",
+              "note": "Excluding VAT, from the price opening of 25 May 2015. 51.3436308 million leva including VAT. Separate additional works contract with Пътища Пловдив АД on Lot 1 Orizovo – Dimitrovgrad: stabilising embankment foundations, reinforcing cutting slopes and a drainage canal crossing at km 26+070."
+            },
+            "date": "2015",
+            "note": "Let by open procedure after cutting slopes slipped because of differences in the geological surveys and heavy rain. A separate contract with a different firm, not a variation of the CMC Ravenna contract. Price offers opened 25 May 2015; signing date not stated.",
+            "sourceRef": "api-maritsa-lot-1-additional-works-position"
           }
         ]
       },
@@ -67,9 +80,14 @@
         {
           "name": "Кооперативно дружество „Кооператива Муратори & Чементисти – Чи. Ем. Чи. Ди. Равенна“",
           "role": "builder"
+        },
+        {
+          "name": "Пътища Пловдив АД",
+          "role": "builder"
         }
       ],
       "contract": {
+        "totalMonths": 32,
         "value": {
           "amount": 133.129678,
           "currency": "BGN",
@@ -79,21 +97,24 @@
         }
       },
       "note": {
-        "en": "Dates, cost and contractor are for API Lot 1 Orizovo – Dimitrovgrad (km 5+000 – 36+400), built 2011–2015. The first 5 km from Orizovo had been built earlier.",
-        "ro": "Datele, costul și constructorul se referă la lotul 1 API Orizovo – Dimitrovgrad (km 5+000 – 36+400), construit în 2011–2015. Primii 5 km de la Orizovo fuseseră construiți anterior."
+        "en": "Dates, cost and contractor are for API Lot 1 Orizovo – Dimitrovgrad (km 5+000 – 36+400), built 2011–2015. Length corrected from 43 km to 31.4 km, the figure the API Lot 1 page states for km 5+000 – 36+400. The route starts at the road II-66 Chirpan – Popovitsa crossing (km 5+000); the drawn line starts at the Orizovo junction, about 2 km further west, on a stretch built earlier. Contract duration stated as 31 months and 29 calendar days. Пътища Пловдив АД built only the additional slope-stabilisation and drainage works on Lot 1, under a separate contract.",
+        "ro": "Datele, costul și constructorul se referă la lotul 1 API Orizovo – Dimitrovgrad (km 5+000 – 36+400), construit în 2011–2015. Lungime corectată de la 43 km la 31,4 km, cifra declarată pe pagina API a lotului 1 pentru km 5+000 – 36+400. Traseul începe la intersecția cu drumul II-66 Chirpan – Popovitsa (km 5+000); linia desenată începe la nodul Orizovo, cu circa 2 km mai la vest, pe un tronson construit anterior. Durata contractului declarată: 31 de luni și 29 de zile calendaristice. Пътища Пловдив АД a executat doar lucrările suplimentare de stabilizare a taluzurilor și de drenaj pe lotul 1, printr-un contract separat."
       },
       "sourceRefs": [
         "wikipedia-maritsa-motorway",
         "api-maritsa-lot-1",
-        "api-maritsa-programme"
+        "api-maritsa-programme",
+        "api-maritsa-lot-1-additional-works-position",
+        "api-maritsa-lot-1-additional-works-offers",
+        "api-maritsa-lot-1-2022"
       ],
       "geometryRef": "chirpan-haskovo"
     },
     {
       "id": "haskovo-harmanli",
       "name": {
-        "en": "Haskovo – Harmanli",
-        "ro": "Haskovo – Harmanli"
+        "en": "Dimitrovgrad – Harmanli",
+        "ro": "Dimitrovgrad – Harmanli"
       },
       "status": "opened",
       "dates": {
@@ -160,7 +181,11 @@
         "api-maritsa-lot-2",
         "api-maritsa-programme"
       ],
-      "geometryRef": "haskovo-harmanli"
+      "geometryRef": "haskovo-harmanli",
+      "note": {
+        "en": "API Lot 2 Dimitrovgrad – Harmanli, km 36+400 – 70+620. The API Lot 2 page states 34.22 km.",
+        "ro": "Lotul 2 API Dimitrovgrad – Harmanli, km 36+400 – 70+620. Pagina API a lotului 2 declară 34,22 km."
+      }
     },
     {
       "id": "harmanli-lyubimets",
@@ -202,8 +227,8 @@
         }
       ],
       "note": {
-        "en": "Contractors are the builders of the Harmanli – Lyubimets section (km 71+011 – 89+100), opened on 16 May 2007, with supervision by Pătinvestinzhenering AD. The builder of the 2010 repair and of Lyubimets – Svilengrad is not named in the sources found.",
-        "ro": "Constructorii sunt cei ai tronsonului Harmanli – Lyubimets (km 71+011 – 89+100), deschis pe 16 mai 2007, cu supervizare asigurată de Pătinvestinzhenering AD. Constructorul reparației din 2010 și al tronsonului Lyubimets – Svilengrad nu este numit în sursele găsite."
+        "en": "Contractors are the builders of the Harmanli – Lyubimets section (km 71+011 – 89+100), opened on 16 May 2007, with supervision by Pătinvestinzhenering AD. The builder of the 2010 repair and of Lyubimets – Svilengrad is not named in the sources found. The drawn line runs from km 70+620 to the Generalovo junction, so it also covers km 108+260 – 112, for which no opening date was found.",
+        "ro": "Constructorii sunt cei ai tronsonului Harmanli – Lyubimets (km 71+011 – 89+100), deschis pe 16 mai 2007, cu supervizare asigurată de Pătinvestinzhenering AD. Constructorul reparației din 2010 și al tronsonului Lyubimets – Svilengrad nu este numit în sursele găsite. Linia desenată merge de la km 70+620 până la nodul Generalovo, deci acoperă și km 108+260 – 112, pentru care nu s-a găsit o dată de deschidere."
       },
       "sourceRefs": [
         "wikipedia-maritsa-motorway",
@@ -212,6 +237,49 @@
         "wikipedia-bg-maritsa-motorway"
       ],
       "geometryRef": "harmanli-lyubimets"
+    },
+    {
+      "id": "km112-kapitan-andreevo",
+      "name": {
+        "en": "Km 112 – Kapitan Andreevo border crossing",
+        "ro": "Km 112 – punctul de frontieră Kapitan Andreevo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-08-14"
+      },
+      "lengthKm": 5.02,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Km 112–114, built by the Road Infrastructure Agency from the state budget.",
+            "ro": "Km 112–114, construit de Agenția pentru Infrastructură Rutieră din bugetul de stat."
+          },
+          "amount": {
+            "amount": 11.082,
+            "currency": "BGN",
+            "year": 2014,
+            "scope": "works",
+            "note": "Including VAT. Construction works on km 112–114 only."
+          }
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Km 114–117, next to the border crossing: a Ministry of Finance project financed by the World Bank.",
+            "ro": "Km 114–117, lângă punctul de frontieră: un proiect al Ministerului Finanțelor finanțat de Banca Mondială."
+          }
+        }
+      ],
+      "note": {
+        "en": "Opened on 14 August 2014 with a temporary traffic layout; 5.02 km per the API. The drawn line starts at the Generalovo junction, the nearest named junction to km 112, and runs to the border.",
+        "ro": "Deschis pe 14 august 2014 cu o organizare provizorie a circulației; 5,02 km conform API. Linia desenată începe la nodul Generalovo, cel mai apropiat nod numit de km 112, și merge până la frontieră."
+      },
+      "sourceRefs": [
+        "api-maritsa-km112-117-2014"
+      ],
+      "geometryRef": "km112-kapitan-andreevo"
     }
   ],
   "sources": [
@@ -259,9 +327,37 @@
       "publisher": "Wikipedia (bg)"
     },
     {
+      "id": "api-maritsa-lot-1-additional-works-position",
+      "title": "Агенция „Пътна инфраструктура“: Позиция относно публикации в медиите за АМ „Марица“, лот 1 (27 April 2017, archived)",
+      "url": "https://web.archive.org/web/20170430071421/http://www.api.bg:80/index.php/bg/prescentar/novini/poziciya-na-api-otnosno-publikacii-v-mediite-za-am-marica-lot-1",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Агенция „Пътна инфраструктура“"
+    },
+    {
+      "id": "api-maritsa-lot-1-additional-works-offers",
+      "title": "Агенция „Пътна инфраструктура“: Отворени ценови оферти за допълнителни строителни работи на лот 1 на АМ „Марица“ (25 May 2015, archived)",
+      "url": "https://web.archive.org/web/20150923172851/http://www.api.bg/index.php/bg/prescentar/novini/2-sa-otvorenite-cenovi-oferti-za-doplnitelni-stroitelni-raboti-na-lot-1-na-am-marica/",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Агенция „Пътна инфраструктура“"
+    },
+    {
+      "id": "api-maritsa-lot-1-2022",
+      "title": "Агенция „Пътна инфраструктура“: АМ „Марица“ лот 1 (archived 2022)",
+      "url": "https://web.archive.org/web/2022/https://api.bg/bg/1606222225.html",
+      "retrievedOn": "2026-10-01",
+      "publisher": "Агенция „Пътна инфраструктура“"
+    },
+    {
+      "id": "api-maritsa-km112-117-2014",
+      "title": "Агенция „Пътна инфраструктура“: Пуснато е движението по участъка от АМ „Марица“ от км 112 до км 117 (14 August 2014, archived)",
+      "url": "https://web.archive.org/web/20140819102813/http://www.api.bg/index.php/bg/prescentar/novini/pusnato-e-dvizhenieto-po-uchastka-ot-am-marica-ot-km-112-do-km-117--5-km-predi-gkpp-kapitan-andreevo/",
+      "retrievedOn": "2026-10-02",
+      "publisher": "Агенция „Пътна инфраструктура“"
+    },
+    {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
-      "retrievedOn": "2026-08-14"
+      "retrievedOn": "2026-10-02"
     }
   ]
 }

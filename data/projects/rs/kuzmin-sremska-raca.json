@@ -1,0 +1,95 @@
+{
+  "id": "rs-kuzmin-sremska-raca",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "Kuzmin – Sremska Rača motorway with Sava bridge (towards Bijeljina)",
+    "ro": "Autostrada Kuzmin – Sremska Rača cu pod peste Sava (spre Bijeljina)"
+  },
+  "description": {
+    "en": "Motorway of about 18 km from the A3 near Kuzmin to the Sava and a new bridge to the border with Bosnia and Herzegovina, the first section of the route towards Bijeljina. The bridge carries an integrated border crossing. Taşyapı is named as contractor in press reports. In August 2026 the motorway was about 89% and the bridge 99.5% complete.",
+    "ro": "Autostradă de circa 18 km de la A3, lângă Kuzmin, până la Sava și un pod nou spre granița cu Bosnia și Herțegovina, primul sector al traseului spre Bijeljina. Podul include un punct de frontieră integrat. Presa îl indică drept constructor pe Taşyapı. În august 2026 autostrada era realizată în proporție de circa 89%, iar podul în proporție de 99,5%."
+  },
+  "operator": "rs-putevi-srbije",
+  "lots": [
+    {
+      "id": "kuzmin-sava-north-abutment",
+      "name": {
+        "en": "Kuzmin – Sava north abutment",
+        "ro": "Kuzmin – culeea nordică a Savei"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2022-03"
+      },
+      "lengthKm": 16.55,
+      "contractors": [
+        {
+          "name": "Taşyapı",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Press gives about 18 km for the whole section including the Sava bridge, with no figure for the motorway alone; the length here is measured from OpenStreetMap geometry, from the A7 start near Kuzmin to the north abutment of the Sava bridge. The A7 start lies about 0.4 km short of the A3 Kuzmin junction, where the link ramps are still mapped separately as under construction. Reported progress on 21 August 2026: about 89% physically complete. The works value of about EUR 225 million is a press estimate and covers the section with the bridge, so it is not recorded as a cost. Works began in March 2022 per press; the first completion deadline, 2023, was moved. OpenStreetMap already maps most of this carriageway as motorway (ref A7, access=no), which is not evidence of opening.",
+        "ro": "Presa indică circa 18 km pentru întregul sector, inclusiv podul peste Sava, fără o cifră pentru autostradă separat; lungimea de aici este măsurată din geometria OpenStreetMap, de la începutul A7 lângă Kuzmin până la culeea nordică a podului peste Sava. Începutul A7 se află la circa 0,4 km de nodul A3 Kuzmin, unde rampele de legătură sunt încă cartografiate separat ca în construcție. Stadiu raportat la 21 august 2026: circa 89% realizat fizic. Valoarea lucrărilor, de circa 225 milioane EUR, este o estimare din presă și acoperă sectorul cu tot cu pod, deci nu este înregistrată drept cost. Lucrările au început în martie 2022 potrivit presei; primul termen de finalizare, 2023, a fost amânat. OpenStreetMap cartografiază deja cea mai mare parte a acestei căi de rulare ca autostradă (ref A7, access=no), ceea ce nu dovedește deschiderea."
+      },
+      "sourceRefs": [
+        "biznis-kuzmin-technical-inspection",
+        "nsreporter-kuzmin-sremska-raca",
+        "osm-kuzmin-sremska-raca"
+      ],
+      "geometryRef": "kuzmin-sava-north-abutment"
+    },
+    {
+      "id": "sava-bridge",
+      "name": {
+        "en": "Sava bridge and border crossing",
+        "ro": "Podul peste Sava și punctul de frontieră"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2019-10"
+      },
+      "lengthKm": 1.3,
+      "contractors": [
+        {
+          "name": "Taşyapı",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Bridge of about 1.3 km over the Sava to the Bosnia and Herzegovina border, with an integrated border crossing. Press: bridge construction began in October 2019. Reported progress on 21 August 2026: 99.5% complete. The OpenStreetMap carriageway drawn here is 1.14 km, against the sourced figure of about 1.3 km, which is kept. The motorway lot ends at the north abutment.",
+        "ro": "Pod de circa 1,3 km peste Sava până la granița cu Bosnia și Herțegovina, cu punct de frontieră integrat. Conform presei, construcția podului a început în octombrie 2019. Stadiu raportat la 21 august 2026: 99,5% realizat. Calea de rulare OpenStreetMap desenată aici are 1,14 km, față de cifra din sursă de circa 1,3 km, care se păstrează. Lotul de autostradă se termină la culeea nordică."
+      },
+      "sourceRefs": [
+        "biznis-kuzmin-technical-inspection",
+        "nsreporter-kuzmin-sremska-raca",
+        "osm-kuzmin-sremska-raca"
+      ],
+      "geometryRef": "sava-bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "biznis-kuzmin-technical-inspection",
+      "title": "Biznis.rs: Raspisan javni poziv za tehnički pregled izvedenih radova na deonici Sremska Rača–Kuzmin (11 July 2025)",
+      "url": "https://biznis.rs/vesti/srbija/raspisan-javni-poziv-za-tehnicki-pregled-izvedenih-radova-na-deonici-sremska-raca-kuzmin/",
+      "publisher": "Biznis.rs",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "nsreporter-kuzmin-sremska-raca",
+      "title": "NSreporter: Auto-put Kuzmin – Sremska Rača pred završetkom (21 August 2026)",
+      "url": "https://nsreporter.rs/2026/08/auto-put-kuzmin-sremska-raca-pred-zavrsetkom-deonica-zavrsena-89-odsto-most-preko-save-995-odsto/",
+      "publisher": "NSreporter",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-kuzmin-sremska-raca",
+      "title": "OpenStreetMap contributors: A7 Ауто-пут Кузмин - Бијељина ways (ODbL)",
+      "url": "https://www.openstreetmap.org/way/744896952",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

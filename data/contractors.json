@@ -2,47 +2,12 @@
   "note": "Canonical contractor identities for by-contractor rankings. src/lib/contractors.ts first normalizes a raw contractor string (cut a trailing em-dash scope note, strip a trailing parenthetical, fold case and diacritics to a slug) and then looks it up here. Entries are only needed where normalization alone would split or merge firms incorrectly; everything else resolves heuristically. An entry with `members` is a joint venture: a lot is credited to the JV *and* to each member. Aliases are matched against the raw string, the em-dash-cut string and the parenthetical-stripped string, in that order, so `Webuild (Astaldi)` resolves to Astaldi before the parenthetical is discarded.",
   "contractors": [
     {
-      "id": "3ti-progetti",
-      "name": "3TI Progetti",
+      "id": "acciona",
+      "name": "Acciona",
       "aliases": [
-        "3TI Progetti Italia – Ingegneria Integrata SpA",
-        "3TI Progetti Italia – Ingegneria Integrata",
-        "3TI Progetti Italia"
-      ],
-      "note": "The en dash is part of the legal name, not a joint-venture separator."
-    },
-    {
-      "id": "3ti-progetti-sws-coding-metrans",
-      "name": "3TI Progetti – SWS Engineering – Coding – METRANS Engineering association",
-      "aliases": [
-        "3TI Progetti Italia – Ingegneria Integrata SpA & SWS Engineering SpA & Coding Srl & METRANS Engineering SRL"
-      ],
-      "members": [
-        "3ti-progetti",
-        "sws-engineering",
-        "coding",
-        "metrans-engineering"
-      ]
-    },
-    {
-      "id": "ab-ad",
-      "name": "AB AD",
-      "aliases": [
-        "АБ АД"
-      ],
-      "note": "Two-letter name, so the id keeps the legal suffix."
-    },
-    {
-      "id": "ab-construct",
-      "name": "AB Construct"
-    },
-    {
-      "id": "adval",
-      "name": "Adval",
-      "aliases": [
-        "АДВАЛ",
-        "АДВАЛ АД",
-        "Адвал"
+        "Acciona Construcción S.A.",
+        "Acciona Infraestructuras",
+        "Acciona Infraestructuras S.A."
       ]
     },
     {
@@ -84,10 +49,10 @@
       ]
     },
     {
-      "id": "agromah",
-      "name": "Agromah",
+      "id": "afcons-infrastructure",
+      "name": "Afcons Infrastructure",
       "aliases": [
-        "Агромах ЕООД"
+        "Afcons Infrastructure Limited"
       ]
     },
     {
@@ -120,6 +85,14 @@
       ]
     },
     {
+      "id": "aldesa",
+      "name": "Aldesa",
+      "aliases": [
+        "Aldesa Construcciones S.A.",
+        "Aldesa Construcciones Polska Sp. z o.o."
+      ]
+    },
+    {
       "id": "alpine-bau",
       "name": "Alpine Bau",
       "aliases": [
@@ -127,76 +100,10 @@
       ]
     },
     {
-      "id": "alsim-alarko",
-      "name": "Alsim Alarko",
-      "aliases": [
-        "Alsim Alarko Sanayi Tesisleri ve Ticaret A.S."
-      ],
-      "note": "The Alarko group's contracting company, not Alarko Holding."
-    },
-    {
-      "id": "alsim-alarko-makyol",
-      "name": "Alsim Alarko – Makyol JV",
-      "aliases": [
-        "Alsim Alarko Sanayi Tesisleri ve Ticaret A.S. – Makyol Insaat Sanayi Turizm ve Ticaret A.S."
-      ],
-      "members": [
-        "alsim-alarko",
-        "makyol"
-      ]
-    },
-    {
       "id": "alstom",
       "name": "Alstom",
       "aliases": [
         "Alstom Transport"
-      ]
-    },
-    {
-      "id": "alve-konsult",
-      "name": "Alve Konsult",
-      "aliases": [
-        "Алве Консулт ЕООД"
-      ]
-    },
-    {
-      "id": "am-struma-3-1",
-      "name": "AM Struma 3.1 Consortium",
-      "aliases": [
-        "ДЗЗД „АМ Струма 3.1“"
-      ],
-      "members": [
-        "agromah",
-        "ab-ad",
-        "hidrostroy",
-        "patishta-plovdiv-grup",
-        "patishta-plovdiv",
-        "alve-konsult"
-      ],
-      "note": "Road sections of Blagoevgrad – Krupnik. The Zheleznitsa tunnel was a separate contract (am-struma-tunel-2018)."
-    },
-    {
-      "id": "am-struma-3-2-2",
-      "name": "AM Struma 3.2.2 Consortium",
-      "aliases": [
-        "ДЗЗД „АМ СТРУМА – 3.2.2.“"
-      ],
-      "members": [
-        "gbs-infrastructure",
-        "epos",
-        "glavbolgarstroy-international"
-      ]
-    },
-    {
-      "id": "am-struma-tunel-2018",
-      "name": "AM Struma Tunel 2018 Consortium",
-      "aliases": [
-        "Консорциум „АМ Струма тунел 2018“"
-      ],
-      "members": [
-        "gp-group",
-        "global-construction",
-        "via-plan"
       ]
     },
     {
@@ -230,27 +137,10 @@
       "note": "Design-build joint venture for the Olympia Odos (Elefsina – Corinth – Patras – Pyrgos). Shares per the concessionaire: AVAX 35.695%, Aktor 35.695%, TERNA 28.600%, VINCI Construction Grands Projets 0.010%."
     },
     {
-      "id": "ar-dzhi-bi",
-      "name": "Ar Dzhi Bi",
-      "aliases": [
-        "Ар Джи Би",
-        "Ар Джи Би ООД"
-      ],
-      "note": "The Cyrillic probably spells out RGB. Not checked in a register, so the name stays transliterated."
-    },
-    {
       "id": "arcada-company",
       "name": "Arcada Company",
       "aliases": [
         "Arcada"
-      ]
-    },
-    {
-      "id": "arhitekti-serafimovi",
-      "name": "Arhitekti Serafimovi",
-      "aliases": [
-        "Архитекти Серафимови",
-        "Архитекти Серафимови ООД"
       ]
     },
     {
@@ -262,40 +152,6 @@
         "Astaldi S.p.A."
       ],
       "note": "Webuild acquired a majority stake in Astaldi in 2020; Astaldi continues as a subsidiary, so contracts awarded to Astaldi stay under Astaldi rather than folding into Webuild."
-    },
-    {
-      "id": "astaldi-fcc-ab-construct-delta-acm",
-      "name": "Astaldi – FCC – AB Construct – Delta ACM",
-      "members": [
-        "astaldi",
-        "fcc-construccion",
-        "ab-construct",
-        "delta-acm"
-      ]
-    },
-    {
-      "id": "astaldi-max-bogl",
-      "name": "Astaldi – Max Bögl",
-      "members": [
-        "astaldi",
-        "max-bogl"
-      ],
-      "note": "The three- and four-member line-ups with CCCF or Astalrom are different consortia."
-    },
-    {
-      "id": "astaldi-max-bogl-astalrom-consitrans",
-      "name": "Astaldi – Max Bögl – Astalrom – Consitrans",
-      "members": [
-        "astaldi",
-        "max-bogl",
-        "astalrom",
-        "consitrans"
-      ]
-    },
-    {
-      "id": "astalrom",
-      "name": "Astalrom",
-      "note": "Kept apart from Astaldi: sources list Astalrom S.A. as its own member beside Astaldi SpA."
     },
     {
       "id": "athena",
@@ -349,31 +205,9 @@
         "ghella",
         "alstom"
       ],
-      "note": "Design-build joint venture for Athens metro Line 4, section A. Shares: AVAX 47%, Ghella 25%, Alstom 28%."
-    },
-    {
-      "id": "avtomagistrali-cherno-more",
-      "name": "Avtomagistrali Cherno More",
+      "note": "Design-build joint venture for Athens metro Line 4, section A. Shares: AVAX 47%, Ghella 25%, Alstom 28%. The Line 3 Piraeus extension (2012) was signed by the same three firms, recorded as J&P-AVAX, Ghella and Alstom.",
       "aliases": [
-        "Автомагистрали - Черно Море АД",
-        "Автомагистрали Черно Море АД"
-      ],
-      "note": "Not the state-owned Avtomagistrali EAD."
-    },
-    {
-      "id": "balkanstroy",
-      "name": "Balkanstroy",
-      "aliases": [
-        "Балканстрой",
-        "Балканстрой АД"
-      ],
-      "note": "Kept apart from Balkanstroy Sofia: one award names both as separate members. A bare 'Балканстрой' lands here, though the source may not say which of the two it was."
-    },
-    {
-      "id": "balkanstroy-sofia",
-      "name": "Balkanstroy Sofia",
-      "aliases": [
-        "Балканстрой София"
+        "J&P-AVAX – Ghella – Alstom Transport"
       ]
     },
     {
@@ -398,20 +232,44 @@
       "note": "Design-build joint venture for Serbia's A5 Morava Corridor; work is credited to the JV and to Bechtel and ENKA individually."
     },
     {
-      "id": "bias-m",
-      "name": "BIAS-M",
+      "id": "berger-bau",
+      "name": "Berger Bau",
       "aliases": [
-        "БИАС-М ЕООД",
-        "БИАС - М ЕООД"
+        "Berger Bau GmbH",
+        "Berger Bau Polska sp. z o.o."
       ]
     },
     {
-      "id": "bitumina",
-      "name": "Bitumina",
+      "id": "bombardier-transportation-italy",
+      "name": "Bombardier Transportation Italy",
       "aliases": [
-        "Bitumina GmbH-Bulgaria"
+        "Bombardier Transportation Italy S.p.A."
+      ]
+    },
+    {
+      "id": "budimex",
+      "name": "Budimex",
+      "aliases": [
+        "Budimex S.A.",
+        "Budimex SA",
+        "Budimex Dromex",
+        "Budimex-Dromex"
       ],
-      "note": "Bulgarian subsidiary of the Austrian Bitumina group, folded into the group. Not part of Strabag."
+      "note": "Budimex Dromex is Budimex under its name after absorbing Dromex; the Dromex that built the 1996–1998 Radzymin bypass on the S8 is kept apart."
+    },
+    {
+      "id": "budpol",
+      "name": "Budpol",
+      "aliases": [
+        "Budpol sp. z o.o."
+      ]
+    },
+    {
+      "id": "budrex",
+      "name": "Budrex",
+      "aliases": [
+        "Budrex Sp. z o.o."
+      ]
     },
     {
       "id": "cccc",
@@ -428,15 +286,11 @@
       ]
     },
     {
-      "id": "ccn",
-      "name": "CCN",
-      "note": "No source used expands the acronym."
-    },
-    {
-      "id": "cengiz",
-      "name": "Cengiz",
+      "id": "cengiz-insaat",
+      "name": "Cengiz İnşaat",
       "aliases": [
-        "Cengiz İnşaat",
+        "Cengiz İnşaat Sanayi ve Ticaret A.Ş.",
+        "Cengiz",
         "Cengiz Insaat"
       ]
     },
@@ -448,16 +302,23 @@
       ]
     },
     {
+      "id": "china-road-and-bridge-corporation",
+      "name": "China Road and Bridge Corporation",
+      "aliases": [
+        "CRBC"
+      ],
+      "note": "Subsidiary of China Communications Construction Company (CCCC), kept as its own entry because the project sources name CRBC."
+    },
+    {
       "id": "cip",
       "name": "Saobraćajni institut CIP"
     },
     {
-      "id": "coding",
-      "name": "Coding",
+      "id": "colas-hrvatska",
+      "name": "COLAS Hrvatska",
       "aliases": [
-        "Coding Srl"
-      ],
-      "note": "Generic word as id. Disambiguate if a different firm called Coding appears."
+        "COLAS Hrvatska d.d."
+      ]
     },
     {
       "id": "condotte",
@@ -468,24 +329,6 @@
       ]
     },
     {
-      "id": "consitrans",
-      "name": "Consitrans"
-    },
-    {
-      "id": "constructii-erbasu",
-      "name": "Construcții Erbașu",
-      "aliases": [
-        "Erbașu",
-        "S.C. Construcții Erbașu S.A.",
-        "Construcții Erbașu S.A.",
-        "SC Construcții Erbașu SA"
-      ]
-    },
-    {
-      "id": "convensa",
-      "name": "Convensa"
-    },
-    {
       "id": "cossi-construzioni",
       "name": "Cossi Construzioni",
       "aliases": [
@@ -493,64 +336,17 @@
       ]
     },
     {
-      "id": "delta-acm",
-      "name": "Delta ACM"
-    },
-    {
       "id": "diktaion-concessions",
       "name": "Diktaion Concessions",
       "note": "GEK TERNA's concession company for the Chania – Heraklion section of the Northern Crete Road (BOAK)."
     },
     {
-      "id": "dogus-eko",
-      "name": "Doğuş – Eko",
-      "aliases": [
-        "Dogus & Eko"
-      ],
-      "members": [
-        "dogus-insaat",
-        "eko"
-      ]
-    },
-    {
-      "id": "dogus-insaat",
-      "name": "Doğuş İnşaat",
-      "aliases": [
-        "Doğuş İnşaat ve Ticaret A.Ş.",
-        "Dogus Insaat Ve Ticaret A.S.",
-        "Доуш Иншаат ве Тиджарет",
-        "Доуш Иншаат ве Тиджарет АД",
-        "Доуш Иншаат ве Тиджарет (position 1: Nadezhda overpass – Patriarh Evtimiy, TBM section)"
-      ],
-      "note": "The full sofia-metro-m2 string is aliased because the colon inside its parenthetical defeats stripping. A comma there in the data would make that alias unnecessary."
-    },
-    {
       "id": "dragados",
-      "name": "Dragados"
-    },
-    {
-      "id": "dvu",
-      "name": "DVU Civil Partnership",
+      "name": "Dragados",
       "aliases": [
-        "Граждански дружество „ДВУ“",
-        "Гражданско дружество „ДВУ“"
-      ],
-      "members": [
-        "dogus-insaat",
-        "via-construct-group",
-        "ultrastroy"
-      ],
-      "note": "The later 'ДЗЗД ДВУ 21' is not merged."
-    },
-    {
-      "id": "egis",
-      "name": "Egis",
-      "note": "Group level. Egis Romania and Egis International are separate subsidiaries and are not aliased."
-    },
-    {
-      "id": "eko",
-      "name": "Eko",
-      "note": "Turkish partner of Doğuş on Trakia Lot 5. The sources give no fuller name."
+        "Dragados S.A.",
+        "Dragados SA"
+      ]
     },
     {
       "id": "ekter",
@@ -560,31 +356,11 @@
       ]
     },
     {
-      "id": "ener",
-      "name": "Ener",
-      "aliases": [
-        "Ener Construction"
-      ]
-    },
-    {
       "id": "enka",
       "name": "ENKA",
       "aliases": [
         "ENKA İnşaat ve Sanayi A.Ş."
       ]
-    },
-    {
-      "id": "epem",
-      "name": "EPEM"
-    },
-    {
-      "id": "epos",
-      "name": "EPOS – Empresa Portuguesa de Obras Subterrâneas",
-      "aliases": [
-        "ЕПОС-Емпреза Португеза де Обрас Субтеранеас АД",
-        "EPOS"
-      ],
-      "note": "Portuguese tunnelling contractor. The bare 'EPOS' alias would also catch an unrelated EPOS added later."
     },
     {
       "id": "euro-construct-trading-98",
@@ -608,14 +384,6 @@
       "note": "Design-build joint venture for the Ionia Odos (A5) under the Nea Odos concession."
     },
     {
-      "id": "evro-alians",
-      "name": "Evro Alians",
-      "aliases": [
-        "Евро Алианс"
-      ],
-      "note": "'Евро Алианс Инженеринг' (a Sofia metro subcontractor) is not confirmed to be the same entity and is not aliased."
-    },
-    {
       "id": "evropaiki-techniki",
       "name": "Evropaiki Techniki",
       "aliases": [
@@ -623,12 +391,10 @@
       ]
     },
     {
-      "id": "fcc-astaldi-convensa",
-      "name": "FCC – Astaldi – Convensa",
-      "members": [
-        "fcc-construccion",
-        "astaldi",
-        "convensa"
+      "id": "fabe-polska",
+      "name": "Fabe Polska",
+      "aliases": [
+        "Fabe Polska Sp. z o.o."
       ]
     },
     {
@@ -641,33 +407,31 @@
       ]
     },
     {
-      "id": "fcc-construccion-gulermak-ccn",
-      "name": "FCC Construcción – Gülermak – CCN",
-      "members": [
-        "fcc-construccion",
-        "gulermak",
-        "ccn"
-      ]
-    },
-    {
       "id": "ferrovial",
       "name": "Ferrovial",
       "aliases": [
         "Ferrovial Agroman",
-        "Ferrovial Construcción"
+        "Ferrovial Construcción",
+        "Ferrovial Agroman SA"
       ],
       "note": "Ferrovial Agroman was the group's construction arm under that name."
     },
     {
-      "id": "gbs-infrastructure",
-      "name": "GBS Infrastructure Construction",
+      "id": "gap-insaat",
+      "name": "GAP İnşaat",
       "aliases": [
-        "GBS-Infrastructure",
-        "ГБС-Инфраструктурно строителство АД",
-        "ГБС Инфраструктурно строителство АД",
-        "ГБС Инфраструктурно строителство"
+        "GAP İnşaat Yatırım ve Dış Ticaret A.Ş."
+      ]
+    },
+    {
+      "id": "gdansk-transport-company",
+      "name": "Gdańsk Transport Company",
+      "aliases": [
+        "Gdańsk Transport Company S.A. (AmberOne)",
+        "Gdańsk Transport Company S.A.",
+        "AmberOne"
       ],
-      "note": "EIK 130131711. A Glavbolgarstroy group company, kept apart from Glavbolgarstroy AD and Glavbolgarstroy International AD, which appear beside it in consortia."
+      "note": "Concessionaire of the A1 Gdańsk – Toruń section."
     },
     {
       "id": "gefyra",
@@ -697,6 +461,1712 @@
       "note": "PPP consortium for the Hersonissos – Neapoli section of the Northern Crete Road (BOAK)."
     },
     {
+      "id": "geotehnika",
+      "name": "GEOTEHNIKA",
+      "aliases": [
+        "GEOTEHNIKA d.o.o."
+      ]
+    },
+    {
+      "id": "ghella",
+      "name": "Ghella",
+      "aliases": [
+        "Ghella S.p.A."
+      ]
+    },
+    {
+      "id": "gp-group",
+      "name": "GP Group",
+      "aliases": [
+        "GP Group JSC",
+        "Джи Пи Груп АД",
+        "ДЖИ ПИ ГРУП АД"
+      ]
+    },
+    {
+      "id": "gp-krk",
+      "name": "GP Krk",
+      "aliases": [
+        "GP Krk d.d."
+      ]
+    },
+    {
+      "id": "heilit-woerner",
+      "name": "Heilit+Woerner",
+      "aliases": [
+        "Heilit+Woerner Budowlana"
+      ]
+    },
+    {
+      "id": "hering",
+      "name": "Hering",
+      "aliases": [
+        "Hering d.d. Široki Brijeg"
+      ],
+      "note": "Construction company from Široki Brijeg, Bosnia and Herzegovina."
+    },
+    {
+      "id": "hermann-kirchner",
+      "name": "Hermann Kirchner",
+      "aliases": [
+        "Hermann Kirchner Bauunternehmung",
+        "Hermann Kirchner Polska"
+      ]
+    },
+    {
+      "id": "impresa-pizzarotti",
+      "name": "Impresa Pizzarotti",
+      "aliases": [
+        "Impresa Pizzarotti & C.",
+        "Impresa Pizzarotti & C. S.p.A."
+      ]
+    },
+    {
+      "id": "intercor",
+      "name": "Intercor",
+      "aliases": [
+        "Intercor sp. z o.o.",
+        "PTU Intercor",
+        "PUT Intercor",
+        "Przedsiębiorstwo Usług Technicznych Intercor Sp. z o.o."
+      ]
+    },
+    {
+      "id": "intrakat",
+      "name": "INTRAKAT",
+      "aliases": [
+        "ΙΝΤΡΑΚΑΤ"
+      ],
+      "note": "Took over Aktor's construction business; later sources call the group AKTOR Group. Kept apart from Aktor because sources name the two separately on the same lot."
+    },
+    {
+      "id": "kentriki-odos",
+      "name": "Kentriki Odos",
+      "aliases": [
+        "Central Greece Motorway S.A.",
+        "Κεντρική Οδός",
+        "Αυτοκινητόδρομος Κεντρικής Ελλάδας Α.Ε. Παραχώρησης"
+      ],
+      "note": "Concessionaire of the Central Greece Motorway (E65)."
+    },
+    {
+      "id": "kinopraxia-gefyra",
+      "name": "Kinopraxia Gefyra",
+      "members": [
+        "vinci-construction-grands-projets",
+        "aktor",
+        "avax",
+        "athena",
+        "proodeftiki",
+        "pantechniki"
+      ],
+      "note": "Construction joint venture for the Rion–Antirion bridge. VINCI Construction Grands Projets held 53.00%, Aktor 15.48% and J&P-Avax 11.20%; the source table does not clearly assign the remaining shares among Athena, Proodeftiki and Pantechniki."
+    },
+    {
+      "id": "kobylarnia",
+      "name": "Kobylarnia",
+      "aliases": [
+        "Kobylarnia SA",
+        "Przedsiębiorstwo Budowy Dróg i Mostów KOBYLARNIA S.A."
+      ]
+    },
+    {
+      "id": "kolin-insaat",
+      "name": "Kolin İnşaat",
+      "aliases": [
+        "Kolin İnşaat Turizm Sanayi ve Ticaret",
+        "Kolin İnşaat Turizm Sanayi ve Ticaret A.Ş."
+      ]
+    },
+    {
+      "id": "max-bogl",
+      "name": "Max Bögl",
+      "aliases": [
+        "Bögl a Krýsl"
+      ],
+      "note": "In Romanian associations the contracting member is often Max Boegl Romania SRL, credited here because the data spells it 'Max Bögl'. Bögl a Krýsl is the group's Czech arm and is folded in."
+    },
+    {
+      "id": "metka",
+      "name": "METKA",
+      "aliases": [
+        "ΜΕΤΚΑ",
+        "Mytilineos",
+        "Mytilineos S.A."
+      ],
+      "note": "METKA was absorbed into Mytilineos, so the two names are one firm here."
+    },
+    {
+      "id": "mirbud",
+      "name": "Mirbud",
+      "aliases": [
+        "Mirbud SA"
+      ]
+    },
+    {
+      "id": "mochlos",
+      "name": "Mochlos",
+      "aliases": [
+        "ΜΟΧΛΟΣ"
+      ]
+    },
+    {
+      "id": "moreas",
+      "name": "Moreas S.A.",
+      "aliases": [
+        "Moreas",
+        "Μορέας Α.Ε."
+      ],
+      "note": "Concessionaire of the Moreas motorway (A7). Shareholders per the concessionaire: Aktor Concessions 71.67%, AVAX 15%, Intrakat 13.33%."
+    },
+    {
+      "id": "moreas-jv",
+      "name": "Moreas J/V",
+      "note": "Design-construction joint venture for the Moreas concession. The sources used do not name its members, so it is not split."
+    },
+    {
+      "id": "mostostal-warszawa",
+      "name": "Mostostal Warszawa",
+      "aliases": [
+        "Mostostal Warszawa S.A."
+      ]
+    },
+    {
+      "id": "mosty-lodz",
+      "name": "Mosty Łódź",
+      "aliases": [
+        "Mosty Łódź S.A."
+      ]
+    },
+    {
+      "id": "mota-engil",
+      "name": "Mota-Engil",
+      "aliases": [
+        "Mota-Engil Engenharia e Construção SA"
+      ],
+      "note": "Portuguese parent group. A bare \"Mota-Engil\" in the Polish data (S8, 2009–2011) is credited here, not to the Polish subsidiary."
+    },
+    {
+      "id": "mota-engil-central-europe",
+      "name": "Mota-Engil Central Europe",
+      "aliases": [
+        "Mota-Engil Central Europe S.A.",
+        "Duna Polska",
+        "Duna Polska S.A.",
+        "Duna Polska SA",
+        "Mota-Engil (Duna Polska)"
+      ],
+      "note": "Mota-Engil Polska (2004) became Mota-Engil Central Europe S.A. in 2009 and was renamed Duna Polska S.A. in 2024 (pl.wikipedia: Duna Polska). Same company, so the names are merged. The Portuguese parent is kept apart as mota-engil."
+    },
+    {
+      "id": "msf-engenharia",
+      "name": "MSF Engenharia",
+      "aliases": [
+        "MSF Engenharia S.A."
+      ]
+    },
+    {
+      "id": "nea-egnatia-odos",
+      "name": "Nea Egnatia Odos",
+      "aliases": [
+        "New Egnatia Odos Concession",
+        "New Egnatia Odos",
+        "Νέα Εγνατία Οδός"
+      ],
+      "note": "Concessionaire of the Egnatia Odos and its perpendicular axes."
+    },
+    {
+      "id": "nea-odos",
+      "name": "Nea Odos",
+      "aliases": [
+        "Nea Odos S.A.",
+        "Νέα Οδός"
+      ],
+      "note": "Concessionaire of the Ionia Odos (A5), in the GEK TERNA group."
+    },
+    {
+      "id": "olympia-odos",
+      "name": "Olympia Odos S.A.",
+      "aliases": [
+        "Olympia Odos",
+        "Ολυμπία Οδός Α.Ε."
+      ],
+      "note": "Concessionaire of the Elefsina – Corinth – Patras – Pyrgos motorway."
+    },
+    {
+      "id": "osijek-koteks",
+      "name": "Osijek-Koteks",
+      "aliases": [
+        "Osijek Koteks",
+        "Osijek-Koteks d.d."
+      ]
+    },
+    {
+      "id": "pantechniki",
+      "name": "Pantechniki",
+      "aliases": [
+        "Παντεχνική"
+      ]
+    },
+    {
+      "id": "pbdim-minsk-mazowiecki",
+      "name": "PBDiM Mińsk Mazowiecki",
+      "aliases": [
+        "Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki"
+      ]
+    },
+    {
+      "id": "polaqua",
+      "name": "Polaqua",
+      "aliases": [
+        "Pol-Aqua",
+        "Polaqua Sp. z o.o.",
+        "Polaqua sp. z o.o."
+      ]
+    },
+    {
+      "id": "polimex-mostostal",
+      "name": "Polimex Mostostal",
+      "aliases": [
+        "Polimex-Mostostal S.A."
+      ]
+    },
+    {
+      "id": "poltores",
+      "name": "Poltores",
+      "aliases": [
+        "Poltores Sp. z o.o."
+      ]
+    },
+    {
+      "id": "porr",
+      "name": "Porr",
+      "aliases": [
+        "Porr Bau",
+        "Porr Construct",
+        "PORR",
+        "PORR Bau",
+        "PORR Bau GmbH",
+        "PORR S.A.",
+        "PORR Polska Infrastructure",
+        "Porr Bau GmbH",
+        "ПООР БАУ ГМБХ"
+      ]
+    },
+    {
+      "id": "prdim",
+      "name": "PRDiM",
+      "aliases": [
+        "PRDiM S.A."
+      ]
+    },
+    {
+      "id": "pribex",
+      "name": "Pribex",
+      "aliases": [
+        "Export-Pribex",
+        "Przedsiębiorstwo Robót Inżynieryjno-Budowlanych Export-Pribex"
+      ]
+    },
+    {
+      "id": "proodeftiki",
+      "name": "Proodeftiki",
+      "aliases": [
+        "Προοδευτική"
+      ]
+    },
+    {
+      "id": "railworks",
+      "name": "RailWorks",
+      "aliases": [
+        "RailWorks (Alstom – Aktor – Arcada – Euro Construct Trading '98)",
+        "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)"
+      ],
+      "members": [
+        "alstom",
+        "aktor",
+        "arcada-company",
+        "euro-construct-trading-98"
+      ],
+      "note": "Consortium for the Brașov–Simeria rail rehabilitation. Listed with two spellings in the source data; the parenthetical is the member list rather than a scope note, so both raw strings are aliased explicitly."
+    },
+    {
+      "id": "rzd-international",
+      "name": "RZD International",
+      "note": "Serbian rail modernisation arm of Russian Railways."
+    },
+    {
+      "id": "sa-pe-construct",
+      "name": "SA&PE Construct",
+      "aliases": [
+        "SA&PE"
+      ]
+    },
+    {
+      "id": "salcef",
+      "name": "Salcef",
+      "aliases": [
+        "Salcef Costruzioni Edili e Ferroviarie S.p.A."
+      ]
+    },
+    {
+      "id": "seli",
+      "name": "SELI",
+      "aliases": [
+        "S.E.L.I."
+      ]
+    },
+    {
+      "id": "shandong-hi-speed",
+      "name": "Shandong Hi-Speed Group Co., Ltd.",
+      "aliases": [
+        "Shandong High-Speed Group"
+      ]
+    },
+    {
+      "id": "sp-sine-midas-stroy",
+      "name": "SP Sine Midas Stroy",
+      "aliases": [
+        "SP Sine Midas Stroy Sp. z o.o."
+      ]
+    },
+    {
+      "id": "stalexport-autostrada-malopolska",
+      "name": "Stalexport Autostrada Małopolska",
+      "aliases": [
+        "Stalexport Autostrada Małopolska S.A."
+      ]
+    },
+    {
+      "id": "stecol",
+      "name": "Stecol Corporation",
+      "aliases": [
+        "STECOL Corporation"
+      ]
+    },
+    {
+      "id": "techniki-olympiaki",
+      "name": "Techniki Olympiaki",
+      "aliases": [
+        "Τεχνική Ολυμπιακή"
+      ]
+    },
+    {
+      "id": "terga",
+      "name": "TERGA",
+      "aliases": [
+        "TERGA ATE"
+      ]
+    },
+    {
+      "id": "terna",
+      "name": "TERNA",
+      "aliases": [
+        "TERNA S.A.",
+        "ΤΕΡΝΑ",
+        "TERNA AD",
+        "ТЕРНА АД"
+      ],
+      "note": "Construction company of the GEK TERNA group. The group has its own entry, gek-terna."
+    },
+    {
+      "id": "terna-alpine",
+      "name": "TERNA – ALPINE J/V",
+      "members": [
+        "terna",
+        "alpine-bau"
+      ]
+    },
+    {
+      "id": "todini",
+      "name": "Todini Costruzioni Generali",
+      "aliases": [
+        "Todini Construzioni Generali",
+        "Todini Costruzioni Generali S.p.A."
+      ]
+    },
+    {
+      "id": "toto",
+      "name": "Toto Costruzioni Generali",
+      "aliases": [
+        "Toto S.p.A. Costruzioni Generali"
+      ]
+    },
+    {
+      "id": "trace-group-hold",
+      "name": "Trace Group Hold",
+      "aliases": [
+        "Трейс Груп Холд АД",
+        "Trace Group Hold AD",
+        "Trace",
+        "TRACE ltd"
+      ]
+    },
+    {
+      "id": "trakcja",
+      "name": "Trakcja",
+      "aliases": [
+        "Trakcja SA"
+      ]
+    },
+    {
+      "id": "unibep",
+      "name": "Unibep",
+      "aliases": [
+        "UNIBEP S.A."
+      ]
+    },
+    {
+      "id": "vianini-lavori",
+      "name": "Vianini Lavori",
+      "aliases": [
+        "Vianini Lavori S.p.A."
+      ]
+    },
+    {
+      "id": "vinci-construction-grands-projets",
+      "name": "VINCI Construction Grands Projets"
+    },
+    {
+      "id": "warbud",
+      "name": "Warbud",
+      "aliases": [
+        "Warbud S.A."
+      ]
+    },
+    {
+      "id": "webuild",
+      "name": "Webuild",
+      "aliases": [
+        "Salini Impregilo",
+        "Impregilo",
+        "Salini",
+        "Salini Polska",
+        "Salini Polska sp. z o.o.",
+        "Webuild S.p.A.",
+        "Webuild SPA"
+      ],
+      "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020. Same legal entity, so the two names are merged."
+    },
+    {
+      "id": "azvi",
+      "name": "AZVI",
+      "aliases": [
+        "AZVI SA",
+        "AZVI S.A."
+      ]
+    },
+    {
+      "id": "taddei",
+      "name": "Taddei",
+      "aliases": [
+        "TADDEI"
+      ]
+    },
+    {
+      "id": "azvi-taddei",
+      "name": "AZVI – Taddei JV",
+      "aliases": [
+        "AZVI SA – TADDEI JV"
+      ],
+      "members": [
+        "azvi",
+        "taddei"
+      ]
+    },
+    {
+      "id": "rubau",
+      "name": "Construcciones Rubau",
+      "aliases": [
+        "Rubau",
+        "Construcciones Rubau S.A.",
+        "Rubau Polska",
+        "Rubau Polska Sp. z o.o."
+      ]
+    },
+    {
+      "id": "azvi-rubau",
+      "name": "AZVI – Construcciones Rubau JV",
+      "members": [
+        "azvi",
+        "rubau"
+      ]
+    },
+    {
+      "id": "mostovik",
+      "name": "Mostovik",
+      "aliases": [
+        "MOSTOVIK"
+      ]
+    },
+    {
+      "id": "trace-mostovik",
+      "name": "TRACE – MOSTOVIK",
+      "aliases": [
+        "TRACE ltd – MOSTOVIK"
+      ],
+      "members": [
+        "trace-group-hold",
+        "mostovik"
+      ]
+    },
+    {
+      "id": "integral-inzenjering",
+      "name": "Integral inženjering"
+    },
+    {
+      "id": "interkop-misar",
+      "name": "Interkop Misar"
+    },
+    {
+      "id": "prijedor-putevi",
+      "name": "Prijedor putevi"
+    },
+    {
+      "id": "integral-interkop-prijedor",
+      "name": "Integral inženjering – Interkop Misar – Prijedor putevi",
+      "members": [
+        "integral-inzenjering",
+        "interkop-misar",
+        "prijedor-putevi"
+      ]
+    },
+    {
+      "id": "powerchina",
+      "name": "PowerChina",
+      "aliases": [
+        "Power Construction Corporation of China, Limited",
+        "Power Construction Corporation of China",
+        "PowerChina",
+        "POWERCHINA",
+        "Power Construction Corporation of China, Ltd.",
+        "PowerChina International Group Limited",
+        "PowerChina International Group Ltd."
+      ],
+      "note": "Power Construction Corporation of China, trading as PowerChina."
+    },
+    {
+      "id": "terna-mytilineos",
+      "name": "TERNA – Mytilineos JV",
+      "members": [
+        "terna",
+        "metka"
+      ]
+    },
+    {
+      "id": "aktor-terna-avax",
+      "name": "AKTOR – TERNA – J&P AVAX",
+      "aliases": [
+        "AKTOR – TERNA – J&P AVAX JV"
+      ],
+      "members": [
+        "aktor",
+        "terna",
+        "avax"
+      ]
+    },
+    {
+      "id": "intrakat-aktor-concessions",
+      "name": "INTRAKAT – AKTOR Concessions",
+      "members": [
+        "intrakat",
+        "aktor-concessions"
+      ],
+      "note": "Concessionaire of the Kalamata – Methoni motorway."
+    },
+    {
+      "id": "gulermak",
+      "name": "Gülermak",
+      "aliases": [
+        "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş.",
+        "Gülermak Spółka z o.o.",
+        "GULERMAK AGIR SANAYI İNSAAT VE TAAHHUT A.S."
+      ]
+    },
+    {
+      "id": "gulermak-alstom-arcada",
+      "name": "Gülermak – Alstom – Arcada JV",
+      "aliases": [
+        "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş. – Gülermak Spółka z o.o. – Alstom Transport S.A. – Arcada Company S.A."
+      ],
+      "members": [
+        "gulermak",
+        "alstom",
+        "arcada-company"
+      ]
+    },
+    {
+      "id": "avtomagistrali-ead",
+      "name": "Avtomagistrali EAD",
+      "aliases": [
+        "Автомагистрали ЕАД",
+        "Автомагистрали"
+      ]
+    },
+    {
+      "id": "avtomagistrali-cherno-more",
+      "name": "Avtomagistrali Cherno More",
+      "aliases": [
+        "Автомагистрали - Черно Море АД",
+        "Автомагистрали – Черно Море АД",
+        "Автомагистрали Черно Море АД",
+        "Avtomagistrali Cherno More"
+      ],
+      "note": "Not the state-owned Avtomagistrali EAD."
+    },
+    {
+      "id": "infra-expert",
+      "name": "Infra Expert",
+      "aliases": [
+        "Инфра Експерт ЕООД",
+        "Infra Ekspert",
+        "Инфра Експерт"
+      ]
+    },
+    {
+      "id": "patinzheneringstroy-t",
+      "name": "Patinzheneringstroy-T",
+      "aliases": [
+        "Пътинженерингстрой-Т ЕАД"
+      ]
+    },
+    {
+      "id": "transkonsult-22",
+      "name": "Transkonsult-22",
+      "aliases": [
+        "Трансконсулт-22 ООД"
+      ],
+      "note": "Not Трансконсулт - БГ ООД."
+    },
+    {
+      "id": "dzzd-hemus-16320",
+      "name": "DZZD Hemus-16320",
+      "aliases": [
+        "ДЗЗД ХЕМУС-16320",
+        "ДЗЗД „Хемус 16320“",
+        "Hemus 16320 Consortium"
+      ],
+      "members": [
+        "infra-expert",
+        "avtomagistrali-cherno-more",
+        "patinzheneringstroy-t",
+        "transkonsult-22"
+      ],
+      "note": "The Ruse – Byala design-and-build lot and the A2 Belokopitovo – Buhovtsi lot name the same consortium."
+    },
+    {
+      "id": "dzzd-am-ruse-tarnovo",
+      "name": "DZZD AM Ruse – Tarnovo",
+      "aliases": [
+        "ДЗЗД „АМ Русе – Търново“"
+      ]
+    },
+    {
+      "id": "pst-group",
+      "name": "PST Group",
+      "aliases": [
+        "ПСТ Груп ЕАД"
+      ]
+    },
+    {
+      "id": "nivel-stroy",
+      "name": "Nivel Stroy",
+      "aliases": [
+        "Нивел строй ЕООД"
+      ]
+    },
+    {
+      "id": "patinzhenering-m",
+      "name": "Patinzhenering-M",
+      "aliases": [
+        "Пътинженеринг-М АД"
+      ]
+    },
+    {
+      "id": "pst-vidin",
+      "name": "PST Vidin",
+      "aliases": [
+        "ПСТ Видин ЕООД"
+      ]
+    },
+    {
+      "id": "pst-sofia",
+      "name": "PST Sofia",
+      "aliases": [
+        "ПСТ София ЕООД"
+      ]
+    },
+    {
+      "id": "dzzd-severozapad-lot-1",
+      "name": "DZZD Severozapad Lot 1",
+      "aliases": [
+        "„Северозапад Лот 1“ ДЗЗД (ПСТ Груп ЕАД, Нивел строй ЕООД, Пътинженеринг-М АД, ПСТ Видин ЕООД, ПСТ София ЕООД)",
+        "„Северозапад Лот 1“ ДЗЗД"
+      ],
+      "members": [
+        "pst-group",
+        "nivel-stroy",
+        "patinzhenering-m",
+        "pst-vidin",
+        "pst-sofia"
+      ]
+    },
+    {
+      "id": "psi",
+      "name": "PSI",
+      "aliases": [
+        "Пи Ес Ай АД",
+        "Пи Ес Ай"
+      ],
+      "note": "Stara Zagora. A Trace Group Hold subsidiary, kept apart from the parent as Astaldi is from Webuild. Also the RUNWAY-BG consortium leader on the A1."
+    },
+    {
+      "id": "dzzd-obhod-montana",
+      "name": "DZZD Obhod Montana",
+      "aliases": [
+        "ДЗЗД „Обход Монтана“"
+      ],
+      "members": [
+        "trace-group-hold",
+        "psi"
+      ]
+    },
+    {
+      "id": "evropeyski-patishta",
+      "name": "Evropeyski Patishta",
+      "aliases": [
+        "Европейски пътища АД"
+      ]
+    },
+    {
+      "id": "vodno-stroitelstvo-blagoevgrad",
+      "name": "Vodno Stroitelstvo – Blagoevgrad",
+      "aliases": [
+        "Водно строителство-Благоевград АД"
+      ]
+    },
+    {
+      "id": "dzzd-mb-lot-2-2019",
+      "name": "DZZD MB Lot 2-2019",
+      "aliases": [
+        "ДЗЗД „МБ ЛОТ 2-2019“"
+      ],
+      "members": [
+        "evropeyski-patishta",
+        "vodno-stroitelstvo-blagoevgrad",
+        "vahostav-sk"
+      ]
+    },
+    {
+      "id": "geostroy",
+      "name": "Geostroy",
+      "aliases": [
+        "Геострой АД",
+        "Геострой"
+      ]
+    },
+    {
+      "id": "patstroy-92",
+      "name": "Patstroy-92",
+      "aliases": [
+        "Пътстрой 92",
+        "Пътстрой-92 АД",
+        "Пътстрой-92",
+        "Пътстрой 92 АД"
+      ],
+      "note": "EIK 121015330, Botevgrad. Not SK-13 Patstroy or Patstroy Burgas."
+    },
+    {
+      "id": "obedinenie-geopat-lot-1",
+      "name": "Obedinenie Geopat Lot 1",
+      "aliases": [
+        "Обединение „Геопът Лот 1“"
+      ],
+      "members": [
+        "geostroy",
+        "patstroy-92"
+      ]
+    },
+    {
+      "id": "transgeo",
+      "name": "Transgeo",
+      "aliases": [
+        "Трансгео ЕООД"
+      ]
+    },
+    {
+      "id": "bemo-tunneling",
+      "name": "BeMo Tunneling",
+      "aliases": [
+        "BeMo Tunneling GmbH"
+      ]
+    },
+    {
+      "id": "colas",
+      "name": "Colas",
+      "aliases": [
+        "COLAS CZ, a.s."
+      ]
+    },
+    {
+      "id": "eurovia",
+      "name": "Eurovia",
+      "aliases": [
+        "Eurovia CS",
+        "Eurovia CZ",
+        "Eurovia SK",
+        "Eurovia Polska",
+        "Eurovia Polska S.A."
+      ]
+    },
+    {
+      "id": "hochtief",
+      "name": "Hochtief",
+      "aliases": [
+        "HOCHTIEF CZ a.s.",
+        "HOCHTIEF Infrastructure GmbH",
+        "Hochtief CZ"
+      ]
+    },
+    {
+      "id": "inzinierske-stavby",
+      "name": "Inžinierske stavby",
+      "aliases": [
+        "Inžinierske stavby a.s."
+      ]
+    },
+    {
+      "id": "metrostav",
+      "name": "Metrostav",
+      "aliases": [
+        "Metrostav a.s.",
+        "Metrostav DS",
+        "Metrostav Slovakia"
+      ]
+    },
+    {
+      "id": "ods-dopravni-stavby-ostrava",
+      "name": "ODS-Dopravní stavby Ostrava",
+      "aliases": [
+        "ODS-Dopravní stavby Ostrava, a.s."
+      ]
+    },
+    {
+      "id": "okd-doprava",
+      "name": "OKD Doprava",
+      "aliases": [
+        "OKD, Doprava, akciová společnost"
+      ]
+    },
+    {
+      "id": "skanska",
+      "name": "Skanska",
+      "aliases": [
+        "Skanska a.s.",
+        "Skanska DS",
+        "SKANSKA DS a.s.",
+        "Skanska SK",
+        "SKANSKA - SK"
+      ],
+      "note": "Czech road and motorway builder Skanska DS and its parent Skanska a.s. are one group."
+    },
+    {
+      "id": "stavby-silnic-a-zeleznic",
+      "name": "Stavby silnic a železnic",
+      "aliases": [
+        "Stavby silnic a železnic, a.s."
+      ]
+    },
+    {
+      "id": "strabag",
+      "name": "Strabag",
+      "aliases": [
+        "STRABAG",
+        "Strabag a.s.",
+        "STRABAG a.s.",
+        "Strabag Sp. z o.o.",
+        "Strabag sp. z o.o.",
+        "Strabag Infrastruktura Południe",
+        "Strabag Infrastruktura Południe Sp. z o.o.",
+        "Strabag Infrastruktura Południe sp. z o.o.",
+        "Strabag EAD"
+      ],
+      "note": "National subsidiaries are folded into the group, as under porr."
+    },
+    {
+      "id": "subterra",
+      "name": "Subterra",
+      "aliases": [
+        "Subterra a.s."
+      ]
+    },
+    {
+      "id": "yoruk-yapi",
+      "name": "Yörük Yapı",
+      "aliases": [
+        "Yörük Yapı İnşaat"
+      ]
+    },
+    {
+      "id": "zublin",
+      "name": "Züblin",
+      "aliases": [
+        "Ed. Züblin AG"
+      ]
+    },
+    {
+      "id": "doprastav",
+      "name": "Doprastav",
+      "aliases": [
+        "Doprastav, a.s.",
+        "Doprastav a.s."
+      ]
+    },
+    {
+      "id": "duha",
+      "name": "Dúha",
+      "aliases": [
+        "Dúha a.s."
+      ]
+    },
+    {
+      "id": "duha-webuild",
+      "name": "Dúha – Salini Impregilo JV",
+      "aliases": [
+        "Dúha a.s. – Salini Impregilo S.p.A."
+      ],
+      "members": [
+        "duha",
+        "webuild"
+      ]
+    },
+    {
+      "id": "ohl-zs",
+      "name": "OHL ŽS",
+      "aliases": [
+        "OHL ŽS, a.s."
+      ]
+    },
+    {
+      "id": "vahostav",
+      "name": "Váhostav",
+      "aliases": [
+        "Váhostav – SK, a.s.",
+        "Váhostav-SK",
+        "Váhostav SK",
+        "Vahostav-SK",
+        "Вахостав-СК, а.с."
+      ]
+    },
+    {
+      "id": "erbasu",
+      "name": "Construcții Erbașu",
+      "aliases": [
+        "Erbașu",
+        "Constructii Erbasu",
+        "S.C. Construcții Erbașu S.A.",
+        "Construcții Erbașu S.A.",
+        "SC Construcții Erbașu SA"
+      ]
+    },
+    {
+      "id": "ness-proiect-europe",
+      "name": "Ness Proiect Europe SRL"
+    },
+    {
+      "id": "ictas",
+      "name": "İçtaş",
+      "aliases": [
+        "Ictas",
+        "İçtaş İnşaat"
+      ]
+    },
+    {
+      "id": "rotary-constructii-mentenanta",
+      "name": "Rotary Construcții Mentenanță",
+      "aliases": [
+        "Rotary"
+      ]
+    },
+    {
+      "id": "a-s-turism-construct",
+      "name": "A&S Turism Construct"
+    },
+    {
+      "id": "trackworks-alstom-terna",
+      "name": "TrackWorks (Alstom – Terna)",
+      "members": [
+        "alstom",
+        "terna"
+      ],
+      "aliases": [
+        "TrackWorks (Alstom Transport – Terna)",
+        "TrackWorks"
+      ],
+      "note": "Consortium for the Craiova – Caransebeș rail modernisation. The parenthetical is the member list rather than a scope note, so the raw string is aliased explicitly."
+    },
+    {
+      "id": "ictas-rotary",
+      "name": "İçtaş – Rotary Construcții Mentenanță JV",
+      "members": [
+        "ictas",
+        "rotary-constructii-mentenanta"
+      ],
+      "aliases": [
+        "İçtaş – Rotary Construcții Mentenanță"
+      ]
+    },
+    {
+      "id": "railworks-arcada-alstom",
+      "name": "RailWorks (Arcada – Alstom)",
+      "members": [
+        "arcada-company",
+        "alstom"
+      ],
+      "aliases": [
+        "RailWorks (Arcada Company – Alstom Transport)"
+      ],
+      "note": "Two-member RailWorks consortium for the Bucharest – Giurgiu rail line. Kept apart from the four-member railworks entry (Brașov – Simeria), which has different members."
+    },
+    {
+      "id": "webuild-salcef",
+      "name": "Webuild – Participazioni Italia – Salcef JV",
+      "members": [
+        "webuild",
+        "salcef"
+      ],
+      "aliases": [
+        "Webuild – Participazioni Italia – Salcef"
+      ],
+      "note": "Participazioni Italia is a Webuild group company, not credited separately."
+    },
+    {
+      "id": "railec-alstom-a-s",
+      "name": "RailEC (Alstom – A&S Turism Construct)",
+      "members": [
+        "alstom",
+        "a-s-turism-construct"
+      ],
+      "aliases": [
+        "RailEC (Alstom Transport – A&S Turism Construct)"
+      ]
+    },
+    {
+      "id": "railworks-alstom-arcada-euro-construct",
+      "name": "RailWorks (Alstom – Arcada – Euro Construct Trading '98)",
+      "members": [
+        "alstom",
+        "arcada-company",
+        "euro-construct-trading-98"
+      ],
+      "aliases": [
+        "RailWorks (Alstom Transport – Arcada Company – Euro Construct Trading '98)"
+      ],
+      "note": "RailWorks consortium for Caransebeș – Arad as named in the source, without Aktor. Kept apart from the four-member railworks entry."
+    },
+    {
+      "id": "obedinenie-evropeyski-zheleznitsi",
+      "name": "Obedinenie Evropeyski zheleznitsi",
+      "aliases": [
+        "Обединение „Европейски железници“"
+      ]
+    },
+    {
+      "id": "infrastructure-construction",
+      "name": "Infrastructure Construction AD",
+      "aliases": [
+        "Инфраструктурно строителство АД",
+        "„Инфраструктурно строителство“ АД",
+        "GBS – Infrastructure Construction AD"
+      ]
+    },
+    {
+      "id": "marco-obra-publica",
+      "name": "Marco Obra Publica",
+      "aliases": [
+        "Марко Обра Публика АД",
+        "„Марко Обра Публика“ АД"
+      ]
+    },
+    {
+      "id": "dzzd-evro-zhp-infrastruktura",
+      "name": "DZZD Evro zhp infrastruktura",
+      "aliases": [
+        "ДЗЗД „Евро жп инфраструктура“",
+        "Evro zhp infrastruktura DZZD"
+      ],
+      "members": [
+        "infrastructure-construction",
+        "marco-obra-publica"
+      ]
+    },
+    {
+      "id": "proekt-plovdiv",
+      "name": "Proekt Plovdiv DZZD",
+      "aliases": [
+        "Обединение „Проект Пловдив“ ДЗЗД",
+        "Обединение „Проект Пловдив“"
+      ]
+    },
+    {
+      "id": "geostroy-lantania",
+      "name": "Geostroy Lantania",
+      "aliases": [
+        "Обединение „Геострой Лантания“"
+      ],
+      "note": "Members other than Geostroy are not recorded in the project data. Consortium that includes geostroy; its other members are not recorded in the project data, so it is not registered as a joint venture and is credited as itself."
+    },
+    {
+      "id": "orion-construction",
+      "name": "Orion Construction",
+      "aliases": [
+        "Orion Construction s.r.o."
+      ]
+    },
+    {
+      "id": "vashutvil",
+      "name": "Vashutvil",
+      "aliases": [
+        "Vashutvil OOD"
+      ]
+    },
+    {
+      "id": "vaputvil-gep",
+      "name": "Vaputvil GEP",
+      "aliases": [
+        "Vaputvil GEP OOD"
+      ]
+    },
+    {
+      "id": "dzzd-medkovets-vo-2025",
+      "name": "DZZD MEDKOVETS VO 2025",
+      "members": [
+        "orion-construction",
+        "vashutvil",
+        "vaputvil-gep"
+      ]
+    },
+    {
+      "id": "duygu-taahhut",
+      "name": "Duygu Taahhüt ve İnşaat",
+      "aliases": [
+        "Duygu Taahhut ve Insaat"
+      ]
+    },
+    {
+      "id": "dzzd-zhp-medkovets-sratsimir",
+      "name": "DZZD ZhP MEDKOVETS – SRATSIMIR",
+      "members": [
+        "infrastructure-construction",
+        "duygu-taahhut"
+      ]
+    },
+    {
+      "id": "todini-bulgaria",
+      "name": "Todini Bulgaria"
+    },
+    {
+      "id": "zgop",
+      "name": "ZGOP AD",
+      "aliases": [
+        "ZGOP"
+      ]
+    },
+    {
+      "id": "zgop-bulgaria-dzzd",
+      "name": "ZGOP Bulgaria DZZD",
+      "members": [
+        "todini-bulgaria",
+        "zgop"
+      ]
+    },
+    {
+      "id": "dzzd-vistra",
+      "name": "DZZD VISTRA"
+    },
+    {
+      "id": "tsv-ead",
+      "name": "Transportno stroitelstvo i vazstanovyavane EAD",
+      "aliases": [
+        "TSV EAD",
+        "Транспортно строителство и възстановяване ЕАД",
+        "Транспортно строителство и възстановяване"
+      ]
+    },
+    {
+      "id": "dzhen-duy-zhp-elin-pelin",
+      "name": "Dzhen-Duy zhp Elin Pelin DZZD"
+    },
+    {
+      "id": "evro-pat-dzzd",
+      "name": "Evro pat DZZD",
+      "note": "Not Evropeyski Patishta (evropeyski-patishta), a separate firm."
+    },
+    {
+      "id": "strabag-gp-rail-2017",
+      "name": "Shtrabag Dzhi Pi Reyl 2017 DZZD",
+      "note": "Consortium that includes strabag; its other members are not recorded in the project data, so it is not registered as a joint venture and is credited as itself."
+    },
+    {
+      "id": "kostenets-septemvri-2018",
+      "name": "Kostenets-Septemvri 2018 DZZD"
+    },
+    {
+      "id": "swietelsky",
+      "name": "Swietelsky",
+      "aliases": [
+        "Swietelsky Bau",
+        "Swietelsky Baugesellschaft"
+      ]
+    },
+    {
+      "id": "svitelski-rvp-kyone",
+      "name": "Svitelski-RVP Kyone consortium",
+      "note": "Consortium that includes swietelsky; its other members are not recorded in the project data, so it is not registered as a joint venture and is credited as itself."
+    },
+    {
+      "id": "ay-dzhi-ey-zhp-infrastruktura",
+      "name": "Ay Dzhi Ey – Zhp Infrastruktura DZZD"
+    },
+    {
+      "id": "tkb-sofia-plovdiv",
+      "name": "TKB Sofia-Plovdiv consortium"
+    },
+    {
+      "id": "horta-coslada",
+      "name": "Horta Coslada",
+      "aliases": [
+        "Horta Coslada S.A."
+      ]
+    },
+    {
+      "id": "azvi-taddei-horta-coslada",
+      "name": "Azvi – Taddei – Horta Coslada JV",
+      "aliases": [
+        "Azvi – Taddei – Horta Coslada"
+      ],
+      "members": [
+        "azvi",
+        "taddei",
+        "horta-coslada"
+      ]
+    },
+    {
+      "id": "tasyapi",
+      "name": "Taşyapı",
+      "aliases": [
+        "TASYAPI",
+        "Tasyapi",
+        "TAŞYAPI",
+        "TAŞYAPI İnşaat Taahhüt Sanayi ve Ticaret A.Ş."
+      ]
+    },
+    {
+      "id": "china-shandong-international",
+      "name": "China Shandong International Economic and Technical Cooperation Group",
+      "aliases": [
+        "China Shandong International",
+        "CSI"
+      ],
+      "note": "Kept apart from Shandong Hi-Speed Group: the Serbian project sources name this company."
+    },
+    {
+      "id": "slovenija-ceste-tehnika",
+      "name": "Slovenija ceste Tehnika",
+      "aliases": [
+        "SCT",
+        "SCT d.d."
+      ]
+    },
+    {
+      "id": "dsd-brueckenbau",
+      "name": "DSD Brückenbau",
+      "aliases": [
+        "DSD Brueckenbau",
+        "DSD Brückenbau GmbH"
+      ]
+    },
+    {
+      "id": "centunion",
+      "name": "Centunion",
+      "aliases": [
+        "Centunion S.A."
+      ]
+    },
+    {
+      "id": "avax-alstom",
+      "name": "AVAX – Alstom",
+      "aliases": [
+        "ΕΝΩΣΗ ΑΒΑΞ – ALSTOM"
+      ],
+      "members": [
+        "avax",
+        "alstom"
+      ]
+    },
+    {
+      "id": "christiani-nielsen",
+      "name": "Christiani & Nielsen",
+      "aliases": [
+        "Christiani and Nielsen"
+      ]
+    },
+    {
+      "id": "hellenic-technodomiki",
+      "name": "Hellenic Technodomiki",
+      "aliases": [
+        "Hellenic Technodomiki SA",
+        "Ελληνική Τεχνοδομική"
+      ]
+    },
+    {
+      "id": "tcgc",
+      "name": "Technical Company of General Construction",
+      "aliases": [
+        "Technical Company of General Construction (TCGC)",
+        "TCGC",
+        "TEGK",
+        "Τεχνική Εταιρεία Γενικών Κατασκευών"
+      ]
+    },
+    {
+      "id": "volos-technical-company",
+      "name": "Volos Technical Company",
+      "aliases": [
+        "Volos Technical Company SA",
+        "Τεχνική Εταιρεία Βόλου"
+      ]
+    },
+    {
+      "id": "3ti-progetti",
+      "name": "3TI Progetti",
+      "aliases": [
+        "3TI Progetti Italia – Ingegneria Integrata SpA",
+        "3TI Progetti Italia – Ingegneria Integrata",
+        "3TI Progetti Italia"
+      ],
+      "note": "The en dash is part of the legal name, not a joint-venture separator."
+    },
+    {
+      "id": "3ti-progetti-sws-coding-metrans",
+      "name": "3TI Progetti – SWS Engineering – Coding – METRANS Engineering association",
+      "aliases": [
+        "3TI Progetti Italia – Ingegneria Integrata SpA & SWS Engineering SpA & Coding Srl & METRANS Engineering SRL"
+      ],
+      "members": [
+        "3ti-progetti",
+        "sws-engineering",
+        "coding",
+        "metrans-engineering"
+      ]
+    },
+    {
+      "id": "ab-ad",
+      "name": "AB AD",
+      "aliases": [
+        "АБ АД"
+      ],
+      "note": "Two-letter name, so the id keeps the legal suffix."
+    },
+    {
+      "id": "ab-construct",
+      "name": "AB Construct"
+    },
+    {
+      "id": "adval",
+      "name": "Adval",
+      "aliases": [
+        "АДВАЛ",
+        "АДВАЛ АД",
+        "Адвал"
+      ]
+    },
+    {
+      "id": "agromah",
+      "name": "Agromah",
+      "aliases": [
+        "Агромах ЕООД"
+      ]
+    },
+    {
+      "id": "alsim-alarko",
+      "name": "Alsim Alarko",
+      "aliases": [
+        "Alsim Alarko Sanayi Tesisleri ve Ticaret A.S."
+      ],
+      "note": "The Alarko group's contracting company, not Alarko Holding."
+    },
+    {
+      "id": "alsim-alarko-makyol",
+      "name": "Alsim Alarko – Makyol JV",
+      "aliases": [
+        "Alsim Alarko Sanayi Tesisleri ve Ticaret A.S. – Makyol Insaat Sanayi Turizm ve Ticaret A.S."
+      ],
+      "members": [
+        "alsim-alarko",
+        "makyol"
+      ]
+    },
+    {
+      "id": "alve-konsult",
+      "name": "Alve Konsult",
+      "aliases": [
+        "Алве Консулт ЕООД"
+      ]
+    },
+    {
+      "id": "am-struma-3-1",
+      "name": "AM Struma 3.1 Consortium",
+      "aliases": [
+        "ДЗЗД „АМ Струма 3.1“"
+      ],
+      "members": [
+        "agromah",
+        "ab-ad",
+        "hidrostroy",
+        "patishta-plovdiv-grup",
+        "patishta-plovdiv",
+        "alve-konsult"
+      ],
+      "note": "Road sections of Blagoevgrad – Krupnik. The Zheleznitsa tunnel was a separate contract (am-struma-tunel-2018)."
+    },
+    {
+      "id": "am-struma-3-2-2",
+      "name": "AM Struma 3.2.2 Consortium",
+      "aliases": [
+        "ДЗЗД „АМ СТРУМА – 3.2.2.“"
+      ],
+      "members": [
+        "gbs-infrastructure",
+        "epos",
+        "glavbolgarstroy-international"
+      ]
+    },
+    {
+      "id": "am-struma-tunel-2018",
+      "name": "AM Struma Tunel 2018 Consortium",
+      "aliases": [
+        "Консорциум „АМ Струма тунел 2018“"
+      ],
+      "members": [
+        "gp-group",
+        "global-construction",
+        "via-plan"
+      ]
+    },
+    {
+      "id": "ar-dzhi-bi",
+      "name": "Ar Dzhi Bi",
+      "aliases": [
+        "Ар Джи Би",
+        "Ар Джи Би ООД"
+      ],
+      "note": "The Cyrillic probably spells out RGB. Not checked in a register, so the name stays transliterated."
+    },
+    {
+      "id": "arhitekti-serafimovi",
+      "name": "Arhitekti Serafimovi",
+      "aliases": [
+        "Архитекти Серафимови",
+        "Архитекти Серафимови ООД"
+      ]
+    },
+    {
+      "id": "astaldi-fcc-ab-construct-delta-acm",
+      "name": "Astaldi – FCC – AB Construct – Delta ACM",
+      "members": [
+        "astaldi",
+        "fcc-construccion",
+        "ab-construct",
+        "delta-acm"
+      ]
+    },
+    {
+      "id": "astaldi-max-bogl",
+      "name": "Astaldi – Max Bögl",
+      "members": [
+        "astaldi",
+        "max-bogl"
+      ],
+      "note": "The three- and four-member line-ups with CCCF or Astalrom are different consortia."
+    },
+    {
+      "id": "astaldi-max-bogl-astalrom-consitrans",
+      "name": "Astaldi – Max Bögl – Astalrom – Consitrans",
+      "members": [
+        "astaldi",
+        "max-bogl",
+        "astalrom",
+        "consitrans"
+      ]
+    },
+    {
+      "id": "astalrom",
+      "name": "Astalrom",
+      "note": "Kept apart from Astaldi: sources list Astalrom S.A. as its own member beside Astaldi SpA."
+    },
+    {
+      "id": "balkanstroy",
+      "name": "Balkanstroy",
+      "aliases": [
+        "Балканстрой",
+        "Балканстрой АД"
+      ],
+      "note": "Kept apart from Balkanstroy Sofia: one award names both as separate members. A bare 'Балканстрой' lands here, though the source may not say which of the two it was."
+    },
+    {
+      "id": "balkanstroy-sofia",
+      "name": "Balkanstroy Sofia",
+      "aliases": [
+        "Балканстрой София"
+      ]
+    },
+    {
+      "id": "bias-m",
+      "name": "BIAS-M",
+      "aliases": [
+        "БИАС-М ЕООД",
+        "БИАС - М ЕООД"
+      ]
+    },
+    {
+      "id": "bitumina",
+      "name": "Bitumina",
+      "aliases": [
+        "Bitumina GmbH-Bulgaria"
+      ],
+      "note": "Bulgarian subsidiary of the Austrian Bitumina group, folded into the group. Not part of Strabag."
+    },
+    {
+      "id": "ccn",
+      "name": "CCN",
+      "note": "No source used expands the acronym."
+    },
+    {
+      "id": "coding",
+      "name": "Coding",
+      "aliases": [
+        "Coding Srl"
+      ],
+      "note": "Generic word as id. Disambiguate if a different firm called Coding appears."
+    },
+    {
+      "id": "consitrans",
+      "name": "Consitrans"
+    },
+    {
+      "id": "convensa",
+      "name": "Convensa"
+    },
+    {
+      "id": "delta-acm",
+      "name": "Delta ACM"
+    },
+    {
+      "id": "dogus-eko",
+      "name": "Doğuş – Eko",
+      "aliases": [
+        "Dogus & Eko"
+      ],
+      "members": [
+        "dogus-insaat",
+        "eko"
+      ]
+    },
+    {
+      "id": "dogus-insaat",
+      "name": "Doğuş İnşaat",
+      "aliases": [
+        "Doğuş İnşaat ve Ticaret A.Ş.",
+        "Dogus Insaat Ve Ticaret A.S.",
+        "Доуш Иншаат ве Тиджарет",
+        "Доуш Иншаат ве Тиджарет АД",
+        "Доуш Иншаат ве Тиджарет (position 1: Nadezhda overpass – Patriarh Evtimiy, TBM section)"
+      ],
+      "note": "The full sofia-metro-m2 string is aliased because the colon inside its parenthetical defeats stripping. A comma there in the data would make that alias unnecessary."
+    },
+    {
+      "id": "dvu",
+      "name": "DVU Civil Partnership",
+      "aliases": [
+        "Граждански дружество „ДВУ“",
+        "Гражданско дружество „ДВУ“"
+      ],
+      "members": [
+        "dogus-insaat",
+        "via-construct-group",
+        "ultrastroy"
+      ],
+      "note": "The later 'ДЗЗД ДВУ 21' is not merged."
+    },
+    {
+      "id": "egis",
+      "name": "Egis",
+      "note": "Group level. Egis Romania and Egis International are separate subsidiaries and are not aliased."
+    },
+    {
+      "id": "eko",
+      "name": "Eko",
+      "note": "Turkish partner of Doğuş on Trakia Lot 5. The sources give no fuller name."
+    },
+    {
+      "id": "ener",
+      "name": "Ener",
+      "aliases": [
+        "Ener Construction"
+      ]
+    },
+    {
+      "id": "epem",
+      "name": "EPEM"
+    },
+    {
+      "id": "epos",
+      "name": "EPOS – Empresa Portuguesa de Obras Subterrâneas",
+      "aliases": [
+        "ЕПОС-Емпреза Португеза де Обрас Субтеранеас АД",
+        "EPOS"
+      ],
+      "note": "Portuguese tunnelling contractor. The bare 'EPOS' alias would also catch an unrelated EPOS added later."
+    },
+    {
+      "id": "evro-alians",
+      "name": "Evro Alians",
+      "aliases": [
+        "Евро Алианс"
+      ],
+      "note": "'Евро Алианс Инженеринг' (a Sofia metro subcontractor) is not confirmed to be the same entity and is not aliased."
+    },
+    {
+      "id": "fcc-astaldi-convensa",
+      "name": "FCC – Astaldi – Convensa",
+      "members": [
+        "fcc-construccion",
+        "astaldi",
+        "convensa"
+      ]
+    },
+    {
+      "id": "fcc-construccion-gulermak-ccn",
+      "name": "FCC Construcción – Gülermak – CCN",
+      "members": [
+        "fcc-construccion",
+        "gulermak",
+        "ccn"
+      ]
+    },
+    {
+      "id": "gbs-infrastructure",
+      "name": "GBS Infrastructure Construction",
+      "aliases": [
+        "GBS-Infrastructure",
+        "ГБС-Инфраструктурно строителство АД",
+        "ГБС Инфраструктурно строителство АД",
+        "ГБС Инфраструктурно строителство"
+      ],
+      "note": "EIK 130131711. A Glavbolgarstroy group company, kept apart from Glavbolgarstroy AD and Glavbolgarstroy International AD, which appear beside it in consortia."
+    },
+    {
       "id": "geometro-bp",
       "name": "Geometro B.P. Consortium",
       "aliases": [
@@ -710,26 +2180,11 @@
       "note": "Geostroy is the leader. Its Metroproekt member is the Bulgarian firm."
     },
     {
-      "id": "geostroy",
-      "name": "Geostroy",
-      "aliases": [
-        "Геострой АД",
-        "Геострой"
-      ]
-    },
-    {
       "id": "geotehmin",
       "name": "Geotehmin",
       "aliases": [
         "Геотехмин ООД",
         "Геотехмин"
-      ]
-    },
-    {
-      "id": "ghella",
-      "name": "Ghella",
-      "aliases": [
-        "Ghella S.p.A."
       ]
     },
     {
@@ -756,23 +2211,6 @@
       ]
     },
     {
-      "id": "gp-group",
-      "name": "GP Group",
-      "aliases": [
-        "GP Group JSC",
-        "Джи Пи Груп АД",
-        "ДЖИ ПИ ГРУП АД"
-      ]
-    },
-    {
-      "id": "gulermak",
-      "name": "Gülermak",
-      "aliases": [
-        "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş.",
-        "GULERMAK AGIR SANAYI İNSAAT VE TAAHHUT A.S."
-      ]
-    },
-    {
       "id": "gulermak-somet",
       "name": "Gülermak – Somet JV",
       "aliases": [
@@ -795,19 +2233,6 @@
         "yse-yapi"
       ],
       "note": "Gülermak 50%. The '&' in the raw string is not a joint-venture separator, so the entry is needed."
-    },
-    {
-      "id": "hemus-16320",
-      "name": "Hemus 16320 Consortium",
-      "aliases": [
-        "ДЗЗД „Хемус 16320“"
-      ],
-      "members": [
-        "infra-ekspert",
-        "patinzheneringstroy-t",
-        "avtomagistrali-cherno-more",
-        "transkonsult-22"
-      ]
     },
     {
       "id": "hemus-a2",
@@ -889,34 +2314,11 @@
       "note": "Italian contractor. Kept apart from impresa-pizzarotti."
     },
     {
-      "id": "impresa-pizzarotti",
-      "name": "Impresa Pizzarotti",
-      "aliases": [
-        "Impresa Pizzarotti & C."
-      ]
-    },
-    {
-      "id": "infra-ekspert",
-      "name": "Infra Ekspert",
-      "aliases": [
-        "Инфра Експерт ЕООД",
-        "Инфра Експерт"
-      ]
-    },
-    {
       "id": "inter-pro",
       "name": "Inter Pro",
       "aliases": [
         "Интер Про ООД"
       ]
-    },
-    {
-      "id": "intrakat",
-      "name": "INTRAKAT",
-      "aliases": [
-        "ΙΝΤΡΑΚΑΤ"
-      ],
-      "note": "Took over Aktor's construction business; later sources call the group AKTOR Group. Kept apart from Aktor because sources name the two separately on the same lot."
     },
     {
       "id": "inzhenering-grup-04",
@@ -974,29 +2376,6 @@
       "note": "Itinera 40% (lead), Saipem 35%, ICM 25%."
     },
     {
-      "id": "kentriki-odos",
-      "name": "Kentriki Odos",
-      "aliases": [
-        "Central Greece Motorway S.A.",
-        "Κεντρική Οδός",
-        "Αυτοκινητόδρομος Κεντρικής Ελλάδας Α.Ε. Παραχώρησης"
-      ],
-      "note": "Concessionaire of the Central Greece Motorway (E65)."
-    },
-    {
-      "id": "kinopraxia-gefyra",
-      "name": "Kinopraxia Gefyra",
-      "members": [
-        "vinci-construction-grands-projets",
-        "aktor",
-        "avax",
-        "athena",
-        "proodeftiki",
-        "pantechniki"
-      ],
-      "note": "Construction joint venture for the Rion–Antirion bridge. VINCI Construction Grands Projets held 53.00%, Aktor 15.48% and J&P-Avax 11.20%; the source table does not clearly assign the remaining shares among Athena, Proodeftiki and Pantechniki."
-    },
-    {
       "id": "konstruktor-inzenjering",
       "name": "Konstruktor-inženjering",
       "aliases": [
@@ -1051,7 +2430,7 @@
       "name": "Mapa – Cengiz",
       "members": [
         "mapa",
-        "cengiz"
+        "cengiz-insaat"
       ]
     },
     {
@@ -1064,18 +2443,6 @@
       "members": [
         "pst-hold",
         "porr"
-      ]
-    },
-    {
-      "id": "max-bogl",
-      "name": "Max Bögl",
-      "note": "In Romanian associations the contracting member is often Max Boegl Romania SRL, credited here because the data spells it 'Max Bögl'."
-    },
-    {
-      "id": "metka",
-      "name": "METKA",
-      "aliases": [
-        "ΜΕΤΚΑ"
       ]
     },
     {
@@ -1233,13 +2600,6 @@
       "note": "Întreprinderea Metroul București (1975) is the earlier name of the same builder. Not Metrorex, the operator."
     },
     {
-      "id": "mochlos",
-      "name": "Mochlos",
-      "aliases": [
-        "ΜΟΧΛΟΣ"
-      ]
-    },
-    {
       "id": "monolit-sofia",
       "name": "Monolit Sofia",
       "aliases": [
@@ -1247,20 +2607,6 @@
         "Монолит София АД"
       ],
       "note": "An HSS Group company, kept apart from hss, a separate legal entity."
-    },
-    {
-      "id": "moreas",
-      "name": "Moreas S.A.",
-      "aliases": [
-        "Moreas",
-        "Μορέας Α.Ε."
-      ],
-      "note": "Concessionaire of the Moreas motorway (A7). Shareholders per the concessionaire: Aktor Concessions 71.67%, AVAX 15%, Intrakat 13.33%."
-    },
-    {
-      "id": "moreas-jv",
-      "name": "Moreas J/V",
-      "note": "Design-construction joint venture for the Moreas concession. The sources used do not name its members, so it is not split."
     },
     {
       "id": "mostkonsult",
@@ -1279,40 +2625,12 @@
       ]
     },
     {
-      "id": "nea-egnatia-odos",
-      "name": "Nea Egnatia Odos",
-      "aliases": [
-        "New Egnatia Odos Concession",
-        "New Egnatia Odos",
-        "Νέα Εγνατία Οδός"
-      ],
-      "note": "Concessionaire of the Egnatia Odos and its perpendicular axes."
-    },
-    {
-      "id": "nea-odos",
-      "name": "Nea Odos",
-      "aliases": [
-        "Nea Odos S.A.",
-        "Νέα Οδός"
-      ],
-      "note": "Concessionaire of the Ionia Odos (A5), in the GEK TERNA group."
-    },
-    {
       "id": "nurol",
       "name": "Nurol",
       "aliases": [
         "Nurol İnşaat ve Ticaret A.Ş.",
         "Nurol İnsaat ve Ticaret"
       ]
-    },
-    {
-      "id": "olympia-odos",
-      "name": "Olympia Odos S.A.",
-      "aliases": [
-        "Olympia Odos",
-        "Ολυμπία Οδός Α.Ε."
-      ],
-      "note": "Concessionaire of the Elefsina – Corinth – Patras – Pyrgos motorway."
     },
     {
       "id": "ozaltin",
@@ -1324,20 +2642,6 @@
         "Ozaltin Insaat"
       ],
       "note": "The slug does not fold the dotless ı, so the ASCII spelling is aliased."
-    },
-    {
-      "id": "pantechniki",
-      "name": "Pantechniki",
-      "aliases": [
-        "Παντεχνική"
-      ]
-    },
-    {
-      "id": "patinzheneringstroy-t",
-      "name": "Patinzheneringstroy-T",
-      "aliases": [
-        "Пътинженерингстрой-Т ЕАД"
-      ]
     },
     {
       "id": "patishta-plovdiv",
@@ -1355,48 +2659,12 @@
       "note": "Separate legal entity from Patishta Plovdiv AD."
     },
     {
-      "id": "patstroy-92",
-      "name": "Patstroy-92",
-      "aliases": [
-        "Пътстрой 92",
-        "Пътстрой-92",
-        "Пътстрой 92 АД",
-        "Пътстрой-92 АД"
-      ],
-      "note": "EIK 121015330, Botevgrad. Not SK-13 Patstroy or Patstroy Burgas."
-    },
-    {
       "id": "patstroy-burgas",
       "name": "Patstroy Burgas",
       "aliases": [
         "Пътстрой Бургас ЕООД"
       ],
       "note": "Not Patstroy-92 or SK-13 Patstroy."
-    },
-    {
-      "id": "porr",
-      "name": "Porr",
-      "aliases": [
-        "Porr Bau",
-        "Porr Construct",
-        "ПООР БАУ ГМБХ"
-      ]
-    },
-    {
-      "id": "proodeftiki",
-      "name": "Proodeftiki",
-      "aliases": [
-        "Προοδευτική"
-      ]
-    },
-    {
-      "id": "psi",
-      "name": "PSI",
-      "aliases": [
-        "Пи Ес Ай",
-        "Пи Ес Ай АД"
-      ],
-      "note": "Stara Zagora. A Trace Group Hold subsidiary, kept apart from the parent as Astaldi is from Webuild. Also the RUNWAY-BG consortium leader on the A1."
     },
     {
       "id": "pst-hold",
@@ -1406,33 +2674,6 @@
         "ПСТ Холд АД"
       ],
       "note": "Sources also give ПСТ Холдинг АД and ПСТ Груп ЕАД for the same role. Probably one group across a rename, but unconfirmed, so only the spelling in the data is aliased."
-    },
-    {
-      "id": "railworks",
-      "name": "RailWorks",
-      "aliases": [
-        "RailWorks (Alstom – Aktor – Arcada – Euro Construct Trading '98)",
-        "RailWorks (Alstom Transport – Aktor – Arcada Company – Euro Construct Trading '98)"
-      ],
-      "members": [
-        "alstom",
-        "aktor",
-        "arcada-company",
-        "euro-construct-trading-98"
-      ],
-      "note": "Consortium for the Brașov–Simeria rail rehabilitation. Listed with two spellings in the source data; the parenthetical is the member list rather than a scope note, so both raw strings are aliased explicitly."
-    },
-    {
-      "id": "rzd-international",
-      "name": "RZD International",
-      "note": "Serbian rail modernisation arm of Russian Railways."
-    },
-    {
-      "id": "sa-pe-construct",
-      "name": "SA&PE Construct",
-      "aliases": [
-        "SA&PE"
-      ]
     },
     {
       "id": "sa-pe-construct-spedition-umb-tehnostrade",
@@ -1450,24 +2691,6 @@
       "aliases": [
         "Saipem S.p.A.",
         "Saipem S.P.A."
-      ]
-    },
-    {
-      "id": "salcef",
-      "name": "Salcef"
-    },
-    {
-      "id": "seli",
-      "name": "SELI",
-      "aliases": [
-        "S.E.L.I."
-      ]
-    },
-    {
-      "id": "shandong-hi-speed",
-      "name": "Shandong Hi-Speed Group Co., Ltd.",
-      "aliases": [
-        "Shandong High-Speed Group"
       ]
     },
     {
@@ -1519,15 +2742,6 @@
         "stanilov",
         "metroprojekt-praha"
       ]
-    },
-    {
-      "id": "strabag",
-      "name": "Strabag",
-      "aliases": [
-        "Strabag EAD",
-        "Strabag Sp. z o.o."
-      ],
-      "note": "National subsidiaries are folded into the group, as under porr."
     },
     {
       "id": "strabag-bpa",
@@ -1633,41 +2847,10 @@
       "name": "Tancrad"
     },
     {
-      "id": "techniki-olympiaki",
-      "name": "Techniki Olympiaki",
-      "aliases": [
-        "Τεχνική Ολυμπιακή"
-      ]
-    },
-    {
       "id": "tehnostrade",
       "name": "Tehnostrade",
       "aliases": [
         "Tehnostrade SRL"
-      ]
-    },
-    {
-      "id": "terga",
-      "name": "TERGA",
-      "aliases": [
-        "TERGA ATE"
-      ]
-    },
-    {
-      "id": "terna",
-      "name": "TERNA",
-      "aliases": [
-        "TERNA S.A.",
-        "ΤΕΡΝΑ"
-      ],
-      "note": "Construction company of the GEK TERNA group. The group has its own entry, gek-terna."
-    },
-    {
-      "id": "terna-alpine",
-      "name": "TERNA – ALPINE J/V",
-      "members": [
-        "terna",
-        "alpine-bau"
       ]
     },
     {
@@ -1676,15 +2859,6 @@
       "aliases": [
         "S.C. TIAB S.A.",
         "TIAB S.A."
-      ]
-    },
-    {
-      "id": "trace-group-hold",
-      "name": "Trace Group Hold",
-      "aliases": [
-        "Трейс Груп Холд АД",
-        "Trace Group Hold AD",
-        "Trace"
       ]
     },
     {
@@ -1705,14 +2879,6 @@
         "Сдружение „Тракия 4“ ДЗЗД"
       ],
       "note": "No member list was found, so it is not split."
-    },
-    {
-      "id": "transkonsult-22",
-      "name": "Transkonsult-22",
-      "aliases": [
-        "Трансконсулт-22 ООД"
-      ],
-      "note": "Not Трансконсулт - БГ ООД."
     },
     {
       "id": "ultrastroy",
@@ -1737,10 +2903,6 @@
       "note": "Not Via Construct Group."
     },
     {
-      "id": "vinci-construction-grands-projets",
-      "name": "VINCI Construction Grands Projets"
-    },
-    {
       "id": "visio-construction-works",
       "name": "Visio Construction Works",
       "aliases": [
@@ -1756,17 +2918,6 @@
         "Водстрой 98 АД",
         "Водстрой 98"
       ]
-    },
-    {
-      "id": "webuild",
-      "name": "Webuild",
-      "aliases": [
-        "Salini Impregilo",
-        "Impregilo",
-        "Webuild SPA",
-        "Webuild S.p.A."
-      ],
-      "note": "Salini Impregilo S.p.A. was renamed Webuild in 2020. Same legal entity, so the two names are merged."
     },
     {
       "id": "webuild-fcc-construccion-salcef-hitachi-rail",

@@ -1,0 +1,1815 @@
+{
+  "id": "pl-s5",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S5 expressway (Nowe Marzy – Bydgoszcz – Gniezno – Poznań – Wrocław)",
+    "ro": "Drumul expres S5 (Nowe Marzy – Bydgoszcz – Gniezno – Poznań – Wrocław)"
+  },
+  "description": {
+    "en": "Expressway between the A1 at Nowe Marzy and the A8 at Wrocław, drawn in three parts: Nowe Marzy – Poznań Wschód (A2), Poznań Zachód (A2) – Wrocław Północ (A8), and the isolated Ornowo – Wirwajdy bypass near Ostróda. The two Poznań ends meet through the A2 between Poznań Wschód and Poznań Zachód, which is recorded in pl-a2. Lots follow the contract sections of the GDDKiA map of road construction, with opening dates from that map, pl.wikipedia and the contract register. Gniezno – Poznań opened in 2012 and Kaczkowo – Korzeńsko in 2014; Korzeńsko – Wrocław (2017), Radomicko – Kaczkowo (2018), Mielno – Gniezno (2017) and Poznań – Radomicko (2019) followed, then Żnin – Bydgoszcz in 2019–2021 and Nowe Marzy – Bydgoszcz in 2022. Contract values are gross where the contract register is the source; the GDDKiA pages give no VAT basis. Grudziądz – Ostróda and Wrocław – Bolków are not built and not recorded here.",
+    "ro": "Drum expres între A1 la Nowe Marzy și A8 la Wrocław, desenat în trei părți: Nowe Marzy – Poznań Wschód (A2), Poznań Zachód (A2) – Wrocław Północ (A8) și ocolitoarea izolată Ornowo – Wirwajdy lângă Ostróda. Cele două capete de la Poznań se leagă prin A2 între Poznań Wschód și Poznań Zachód, înregistrată în pl-a2. Loturile urmează secțiunile contractuale din harta construcției drumurilor GDDKiA, cu datele deschiderii din harta respectivă, pl.wikipedia și registrul contractelor. Gniezno – Poznań a fost deschis în 2012 și Kaczkowo – Korzeńsko în 2014; au urmat Korzeńsko – Wrocław (2017), Radomicko – Kaczkowo (2018), Mielno – Gniezno (2017) și Poznań – Radomicko (2019), apoi Żnin – Bydgoszcz în 2019–2021 și Nowe Marzy – Bydgoszcz în 2022. Valorile contractelor sunt brute acolo unde sursa este registrul contractelor; paginile GDDKiA nu indică baza TVA. Grudziądz – Ostróda și Wrocław – Bolków nu sunt construite și nu sunt înregistrate aici."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-09",
+  "lots": [
+    {
+      "id": "ornowo-wirwajdy",
+      "name": {
+        "en": "Ornowo – Wirwajdy",
+        "ro": "Ornowo – Wirwajdy"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-04-28",
+        "opened": "2022-12-20"
+      },
+      "lengthKm": 5.03,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 203.69,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Including VAT."
+            },
+            "date": "2020-04-28",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-09-02",
+          "sourceRef": "msbd-ornowo-wirwajdy"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-04-28",
+          "sourceRef": "msbd-ornowo-wirwajdy"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-20",
+          "sourceRef": "msbd-ornowo-wirwajdy"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund. The GDDKiA page gives a grant of PLN 284.78 million that also covers the Ostróda bypass on DK16.",
+            "ro": "Fondul European de Dezvoltare Regională. Pagina GDDKiA indică o finanțare de 284,78 mil. PLN care acoperă și ocolitoarea Ostródei pe DK16."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 31,
+        "value": {
+          "amount": 203.69,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build contract signed 28 April 2020 with Budimex; pl.wikipedia gives 31 months, and the register has contractual completion on 28 May 2023. Includes the Ostróda Zachód junction. The GDDKiA page records permanent traffic organisation from 20 December 2022; pl.wikipedia gives 22 December 2022. This is the only built part of S5 north of Nowe Marzy; Wirwajdy – Nowe Marzy is not built.",
+        "ro": "Contract de proiectare și execuție semnat la 28 aprilie 2020 cu Budimex; pl.wikipedia indică 31 de luni, iar registrul indică finalizarea contractuală la 28 mai 2023. Include nodul Ostróda Zachód. Pagina GDDKiA înregistrează organizarea definitivă a traficului din 20 decembrie 2022; pl.wikipedia indică 22 decembrie 2022. Este singura parte construită a S5 la nord de Nowe Marzy; Wirwajdy – Nowe Marzy nu este construit."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-ornowo-wirwajdy",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ornowo-wirwajdy"
+    },
+    {
+      "id": "nowe-marzy-swiecie-poludnie",
+      "name": {
+        "en": "Nowe Marzy – Świecie Południe",
+        "ro": "Nowe Marzy – Świecie Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "constructionStart": "2017-07-06",
+        "opened": "2022-08-26"
+      },
+      "lengthKm": 23.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 374.72,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Original contract with Impresa Pizzarotti, later terminated."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 566.79,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Including VAT. Continuation contract with Budimex."
+            },
+            "date": "2020-04-24",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2014-09-26",
+          "sourceRef": "msbd-nowe-marzy-swiecie-poludnie"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-07-06",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-06-11",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-04-24",
+          "sourceRef": "msbd-nowe-marzy-swiecie-poludnie"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-05-05",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-08-26",
+          "sourceRef": "msbd-nowe-marzy-swiecie-poludnie"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 1,083.47 million for the whole project Nowe Marzy – Bydgoszcz.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 1,083.47 mil. PLN pentru întregul proiect Nowe Marzy – Bydgoszcz."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Impresa Pizzarotti & C. S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 566.79,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build. The 2015 contract with Impresa Pizzarotti (signed 12 October 2015, works from 6 July 2017) was terminated; GDDKiA withdrew from it on 11 June 2019 (pl.wikipedia, after the contractor stopped work in April 2019). The continuation contract went to Budimex (signed 24 April 2020 on the GDDKiA page, 27 April 2020 in the register; works from 5 May 2020). Main carriageway opened on 26 August 2022. The drawn centreline measures 21.05 km, about 10% below the 23.3 km contract length.",
+        "ro": "Proiectare și execuție. Contractul din 2015 cu Impresa Pizzarotti (semnat la 12 octombrie 2015, lucrări din 6 iulie 2017) a fost reziliat; GDDKiA s-a retras din contract la 11 iunie 2019 (pl.wikipedia, după ce antreprenorul a oprit lucrările în aprilie 2019). Contractul de continuare a revenit Budimex (semnat la 24 aprilie 2020 pe pagina GDDKiA, 27 aprilie 2020 în registru; lucrări din 5 mai 2020). Calea principală a fost deschisă la 26 august 2022. Axa desenată măsoară 21,05 km, cu circa 10% sub lungimea contractuală de 23,3 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-nowe-marzy-swiecie-poludnie",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nowe-marzy-swiecie-poludnie"
+    },
+    {
+      "id": "swiecie-poludnie-bydgoszcz-polnoc",
+      "name": {
+        "en": "Świecie Południe – Bydgoszcz Północ",
+        "ro": "Świecie Południe – Bydgoszcz Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "constructionStart": "2017-07-13",
+        "opened": "2022-10-21"
+      },
+      "lengthKm": 22.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 409.76,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Original contract with Impresa Pizzarotti, later terminated."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 583.38,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Including VAT. Continuation contract with the Kobylarnia – Mirbud consortium."
+            },
+            "date": "2020-04-23",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-07-13",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-06-11",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2019-08-27",
+          "sourceRef": "msbd-swiecie-poludnie-bydgoszcz-polnoc"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-04-23",
+          "sourceRef": "msbd-swiecie-poludnie-bydgoszcz-polnoc"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-04-30",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2022-06",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-10-21",
+          "sourceRef": "msbd-swiecie-poludnie-bydgoszcz-polnoc"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 1,083.47 million for the whole project Nowe Marzy – Bydgoszcz.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 1,083.47 mil. PLN pentru întregul proiect Nowe Marzy – Bydgoszcz."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Impresa Pizzarotti & C. S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Kobylarnia SA",
+          "role": "builder"
+        },
+        {
+          "name": "Mirbud SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 583.38,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build. The 2015 contract with Impresa Pizzarotti (works from 13 July 2017) was terminated; GDDKiA withdrew from it on 11 June 2019 (pl.wikipedia, after the contractor stopped work in April 2019). The continuation contract went to the Kobylarnia – Mirbud consortium (signed 23 April 2020, works from 30 April 2020; tender announced 27 August 2019). pl.wikipedia: Bydgoszcz Północ – Trzeciewiec was passable from June 2022; the GDDKiA page gives 21 October 2022 for the main carriageway and 22 December 2022 for permanent traffic organisation.",
+        "ro": "Proiectare și execuție. Contractul din 2015 cu Impresa Pizzarotti (lucrări din 13 iulie 2017) a fost reziliat; GDDKiA s-a retras din contract la 11 iunie 2019 (pl.wikipedia, după ce antreprenorul a oprit lucrările în aprilie 2019). Contractul de continuare a revenit consorțiului Kobylarnia – Mirbud (semnat la 23 aprilie 2020, lucrări din 30 aprilie 2020; licitație anunțată la 27 august 2019). pl.wikipedia: Bydgoszcz Północ – Trzeciewiec a fost practicabil din iunie 2022; pagina GDDKiA indică 21 octombrie 2022 pentru calea principală și 22 decembrie 2022 pentru organizarea definitivă a traficului."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-swiecie-poludnie-bydgoszcz-polnoc",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "swiecie-poludnie-bydgoszcz-polnoc"
+    },
+    {
+      "id": "bydgoszcz-polnoc-oplawiec",
+      "name": {
+        "en": "Bydgoszcz Północ – Bydgoszcz Opławiec",
+        "ro": "Bydgoszcz Północ – Bydgoszcz Opławiec"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "constructionStart": "2017-06-01",
+        "opened": "2019-12-31"
+      },
+      "lengthKm": 14.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 369,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-06-01",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-31",
+          "sourceRef": "msbd-bydgoszcz-polnoc-oplawiec"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 1,083.47 million for the whole project Nowe Marzy – Bydgoszcz.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 1,083.47 mil. PLN pentru întregul proiect Nowe Marzy – Bydgoszcz."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Intercor sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Trakcja SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 369,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build by Intercor and Trakcja (formerly Aleksandrowo – Tryszczyn). Main carriageway opened on 31 December 2019, permanent traffic organisation on 31 December 2020. pl.wikipedia gives 14.1 km for the section.",
+        "ro": "Proiectare și execuție de către Intercor și Trakcja (anterior Aleksandrowo – Tryszczyn). Calea principală a fost deschisă la 31 decembrie 2019, organizarea definitivă a traficului la 31 decembrie 2020. pl.wikipedia indică 14,1 km pentru secțiune."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-bydgoszcz-polnoc-oplawiec",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bydgoszcz-polnoc-oplawiec"
+    },
+    {
+      "id": "oplawiec-blonie",
+      "name": {
+        "en": "Bydgoszcz Opławiec – Bydgoszcz Błonie",
+        "ro": "Bydgoszcz Opławiec – Bydgoszcz Błonie"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "constructionStart": "2017-11-08",
+        "opened": "2020-12-31"
+      },
+      "lengthKm": 13.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 328.48,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-11-08",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-31",
+          "sourceRef": "msbd-oplawiec-blonie"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 1,083.47 million for the whole project Nowe Marzy – Bydgoszcz.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 1,083.47 mil. PLN pentru întregul proiect Nowe Marzy – Bydgoszcz."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Polaqua sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Dragados SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 328.48,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build (formerly Tryszczyn – Białe Błota) by Polaqua and Dragados. Main carriageway opened on 31 December 2020, permanent traffic organisation on 30 June 2021. pl.wikipedia splits the section into Opławiec – Bydgoszcz Zachód (6.3 km) and Bydgoszcz Zachód – Bydgoszcz Błonie (7.2 km), both opened on 31 December 2020. The second part shares its route with S10, which is not in this dataset, so it is not marked as shared.",
+        "ro": "Proiectare și execuție (anterior Tryszczyn – Białe Błota) de către Polaqua și Dragados. Calea principală a fost deschisă la 31 decembrie 2020, organizarea definitivă a traficului la 30 iunie 2021. pl.wikipedia împarte secțiunea în Opławiec – Bydgoszcz Zachód (6,3 km) și Bydgoszcz Zachód – Bydgoszcz Błonie (7,2 km), ambele deschise la 31 decembrie 2020. A doua parte are traseu comun cu S10, care nu este în acest set de date, deci nu este marcată ca partajată."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-oplawiec-blonie",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "oplawiec-blonie"
+    },
+    {
+      "id": "blonie-szubin-polnoc",
+      "name": {
+        "en": "Bydgoszcz Błonie – Szubin Północ",
+        "ro": "Bydgoszcz Błonie – Szubin Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "constructionStart": "2017-09-01",
+        "opened": "2021-12-23"
+      },
+      "lengthKm": 9.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 259.93,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Original contract with Impresa Pizzarotti, later terminated."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 359.43,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Including VAT. Continuation contract with the Kobylarnia – Mirbud consortium."
+            },
+            "date": "2020-03-13",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2014-10-01",
+          "sourceRef": "msbd-blonie-szubin-polnoc"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-09-01",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-06-11",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-03-13",
+          "sourceRef": "msbd-blonie-szubin-polnoc"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-03-20",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-23",
+          "sourceRef": "msbd-blonie-szubin-polnoc"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 716.30 million for the whole project Białe Błota – Mielno.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 716.30 mil. PLN pentru întregul proiect Białe Błota – Mielno."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Impresa Pizzarotti & C. S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Kobylarnia SA",
+          "role": "builder"
+        },
+        {
+          "name": "Mirbud SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 359.43,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build. The 2015 contract with Impresa Pizzarotti (works from 1 September 2017) was terminated; GDDKiA withdrew from it on 11 June 2019 (pl.wikipedia, after the contractor stopped work in April 2019). The continuation contract went to the Kobylarnia – Mirbud consortium (signed 13 March 2020, works from 20 March 2020). Main carriageway opened on 23 December 2021, permanent traffic organisation on 31 August 2022. The recorded 9.7 km runs from Białe Błota to Szubin, both without the junction; the line is drawn between the Bydgoszcz Błonie and Szubin Północ junction nodes and measures 12.74 km, so the two do not agree.",
+        "ro": "Proiectare și execuție. Contractul din 2015 cu Impresa Pizzarotti (lucrări din 1 septembrie 2017) a fost reziliat; GDDKiA s-a retras din contract la 11 iunie 2019 (pl.wikipedia, după ce antreprenorul a oprit lucrările în aprilie 2019). Contractul de continuare a revenit consorțiului Kobylarnia – Mirbud (semnat la 13 martie 2020, lucrări din 20 martie 2020). Calea principală a fost deschisă la 23 decembrie 2021, organizarea definitivă a traficului la 31 august 2022. Lungimea înregistrată de 9,7 km merge de la Białe Błota la Szubin, ambele fără nod; linia este desenată între nodurile Bydgoszcz Błonie și Szubin Północ și măsoară 12,74 km, deci cele două nu coincid."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-blonie-szubin-polnoc",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "blonie-szubin-polnoc"
+    },
+    {
+      "id": "szubin-polnoc-znin-polnoc",
+      "name": {
+        "en": "Szubin Północ – Żnin Północ",
+        "ro": "Szubin Północ – Żnin Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "constructionStart": "2017-04-26",
+        "opened": "2020-10-12"
+      },
+      "lengthKm": 19.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 351.97,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-04-26",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-10-12",
+          "sourceRef": "msbd-szubin-polnoc-znin-polnoc"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 842.71 million for the whole project Bydgoszcz – Mielno, Białe Błota – Mielno.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 842.71 mil. PLN pentru întregul proiect Bydgoszcz – Mielno, Białe Błota – Mielno."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Trakcja SA",
+          "role": "builder"
+        },
+        {
+          "name": "Intercor sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 351.97,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build (formerly Szubin – Jaroszewo) by Trakcja and Intercor. Main carriageway opened on 12 October 2020, permanent traffic organisation on 21 December 2021. pl.wikipedia notes that opening of one carriageway was first planned for the turn of January and February 2020.",
+        "ro": "Proiectare și execuție (anterior Szubin – Jaroszewo) de către Trakcja și Intercor. Calea principală a fost deschisă la 12 octombrie 2020, organizarea definitivă a traficului la 21 decembrie 2021. pl.wikipedia notează că deschiderea unei căi de rulare fusese planificată inițial pentru finalul lui ianuarie și începutul lui februarie 2020."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-szubin-polnoc-znin-polnoc",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szubin-polnoc-znin-polnoc"
+    },
+    {
+      "id": "znin-polnoc-mieleszyn",
+      "name": {
+        "en": "Żnin Północ – Mieleszyn",
+        "ro": "Żnin Północ – Mieleszyn"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-12",
+        "constructionStart": "2017-04-14",
+        "opened": "2019-12-23"
+      },
+      "lengthKm": 25.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 421.82,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-10-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-04-14",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-23",
+          "sourceRef": "msbd-znin-polnoc-mieleszyn"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 716.30 million for the whole project Białe Błota – Mielno.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 716.30 mil. PLN pentru întregul proiect Białe Błota – Mielno."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Kobylarnia SA",
+          "role": "builder"
+        },
+        {
+          "name": "Mirbud SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 421.82,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build (formerly Jaroszewo – voivodeship border) by the Kobylarnia – Mirbud consortium. The GDDKiA section name ends at the border of Kujawsko-Pomorskie and Wielkopolskie voivodeships, next to the Mieleszyn junction. Main carriageway opened on 23 December 2019, permanent traffic organisation on 9 April 2020.",
+        "ro": "Proiectare și execuție (anterior Jaroszewo – granița voievodatului) de către consorțiul Kobylarnia – Mirbud. Denumirea secțiunii la GDDKiA se încheie la granița voievodatelor Cuiavia-Pomerania și Polonia Mare, lângă nodul Mieleszyn. Calea principală a fost deschisă la 23 decembrie 2019, organizarea definitivă a traficului la 9 aprilie 2020."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-znin-polnoc-mieleszyn",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "znin-polnoc-mieleszyn"
+    },
+    {
+      "id": "mieleszyn-gniezno-poludnie",
+      "name": {
+        "en": "Mieleszyn – Gniezno Południe",
+        "ro": "Mieleszyn – Gniezno Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-12-03",
+        "opened": "2017-05-04"
+      },
+      "lengthKm": 18.33,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 476.36,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Including VAT. Works only; the design contract (PLN 7.18 million) is separate."
+            },
+            "date": "2014-12-03",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-06-14",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-12-03",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-05-04",
+          "sourceRef": "msbd-mieleszyn-gniezno-poludnie"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 310.54 million for the whole project Żnin – Gniezno, Mielno – Gniezno (węzeł Łubowo).",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 310.54 mil. PLN pentru întregul proiect Żnin – Gniezno, Mielno – Gniezno (węzeł Łubowo)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 476.36,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Built to the traditional design-then-build model (works contract with Budimex and Ferrovial Agroman, signed 3 December 2014; the register lists the works start on the same date, so no construction start is recorded). The GDDKiA page names the section Mielno (with junction) – Gniezno (junction Łubowo); the Mieleszyn junction was formerly called Mielno. Tender announced 14 June 2013 (pl.wikipedia). The page gives 4 May 2017 for the main carriageway and 28 April 2017 for permanent traffic organisation.",
+        "ro": "Realizat în modelul tradițional proiectare apoi execuție (contract de lucrări cu Budimex și Ferrovial Agroman, semnat la 3 decembrie 2014; registrul indică începerea lucrărilor în aceeași dată, deci nu se înregistrează o dată de începere a construcției). Pagina GDDKiA denumește secțiunea Mielno (cu nod) – Gniezno (nod Łubowo); nodul Mieleszyn se numea anterior Mielno. Licitație anunțată la 14 iunie 2013 (pl.wikipedia). Pagina indică 4 mai 2017 pentru calea principală și 28 aprilie 2017 pentru organizarea definitivă a traficului."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-mieleszyn-gniezno-poludnie",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mieleszyn-gniezno-poludnie"
+    },
+    {
+      "id": "gniezno-poludnie-czachurki",
+      "name": {
+        "en": "Gniezno Południe – Czachurki",
+        "ro": "Gniezno Południe – Czachurki"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-06-04"
+      },
+      "lengthKm": 14.9,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-06-04",
+          "sourceRef": "msbd-gniezno-poludnie-czachurki"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 932.48 million for the whole project Gniezno – Poznań.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 932.48 mil. PLN pentru întregul proiect Gniezno – Poznań."
+          }
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 543.67,
+          "currency": "PLN",
+          "note": "Design and works together (works PLN 537.11 million, design PLN 6.56 million); signing date and VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "First part of the eastern bypass of Poznań (Gniezno – Poznań), traditional model. The GDDKiA page records 2009–2012 as the years of works and 4 June 2012 as the opening, which pl.wikipedia gives for the whole 35 km Gniezno Południe – Poznań Wschód (first passable, with temporary kilometrage). Contractor not named in the sources used. The cut is placed where the line passes the Czachurki village (OSM place node, 0.1 km away); the drawn line measures 14.1 km against 14.9 km on the GDDKiA page.",
+        "ro": "Prima parte a ocolitoarei estice a Poznańului (Gniezno – Poznań), model tradițional. Pagina GDDKiA înregistrează 2009–2012 ca ani de lucrări și 4 iunie 2012 ca dată a deschiderii, pe care pl.wikipedia o indică pentru întregul tronson de 35 km Gniezno Południe – Poznań Wschód (inițial practicabil, cu kilometraj provizoriu). Antreprenorul nu este numit în sursele folosite. Tăietura este plasată unde linia trece pe lângă satul Czachurki (nod OSM place, la 0,1 km); linia desenată măsoară 14,1 km, față de 14,9 km pe pagina GDDKiA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-gniezno-poludnie-czachurki",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gniezno-poludnie-czachurki"
+    },
+    {
+      "id": "czachurki-kleszczewo",
+      "name": {
+        "en": "Czachurki – Kleszczewo",
+        "ro": "Czachurki – Kleszczewo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-06-02"
+      },
+      "lengthKm": 20.2,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-06-02",
+          "sourceRef": "msbd-czachurki-kleszczewo"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme. The GDDKiA page gives a grant of PLN 932.48 million for the whole project Gniezno – Poznań.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu. Pagina GDDKiA indică o finanțare de 932,48 mil. PLN pentru întregul proiect Gniezno – Poznań."
+          }
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 536.53,
+          "currency": "PLN",
+          "note": "Design and works together (works PLN 527.85 million, design PLN 8.68 million); signing date and VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Second part of the eastern bypass of Poznań, traditional model, works 2009–2013 per the GDDKiA page, which gives 2 June 2012 for the opening of the main carriageway; pl.wikipedia gives 4 June 2012 for the whole Gniezno Południe – Poznań Wschód. Junctions Chorzałki, Iwno, Kostrzyn and Kleszczewo. The line is drawn from the Czachurki village to the A2 Poznań Wschód interchange and measures 21.37 km against 20.2 km on the GDDKiA page. Contractor not named in the sources used.",
+        "ro": "A doua parte a ocolitoarei estice a Poznańului, model tradițional, lucrări 2009–2013 conform paginii GDDKiA, care indică 2 iunie 2012 pentru deschiderea căii principale; pl.wikipedia indică 4 iunie 2012 pentru întregul Gniezno Południe – Poznań Wschód. Noduri Chorzałki, Iwno, Kostrzyn și Kleszczewo. Linia este desenată de la satul Czachurki până la nodul A2 Poznań Wschód și măsoară 21,37 km, față de 20,2 km pe pagina GDDKiA. Antreprenorul nu este numit în sursele folosite."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-czachurki-kleszczewo",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "czachurki-kleszczewo"
+    },
+    {
+      "id": "poznan-zachod-wronczyn",
+      "name": {
+        "en": "Poznań Zachód (A2, Głuchowo) – Wronczyn",
+        "ro": "Poznań Zachód (A2, Głuchowo) – Wronczyn"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-07-30",
+        "opened": "2019-12-14"
+      },
+      "lengthKm": 18.86,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 529.24,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Works only; the design contract (PLN 8.30 million) is separate."
+            },
+            "date": "2015-07-30",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-10-30",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-07-30",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-12-30",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-14",
+          "sourceRef": "msbd-poznan-zachod-wronczyn"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 336.87 million for the whole project Poznań – Wrocław, Poznań (A2, w. Głuchowo) – Wronczyn.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 336.87 mil. PLN pentru întregul proiect Poznań – Wrocław, Poznań (A2, w. Głuchowo) – Wronczyn."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Toto S.p.A. Costruzioni Generali",
+          "role": "builder"
+        },
+        {
+          "name": "Vianini Lavori S.p.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 529.24,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Traditional model; tender announced 30 October 2013, works contract signed 30 July 2015 with Toto Costruzioni Generali and Vianini Lavori (the register gives the same date as works start, so no construction start is recorded). The register also lists a separate continuation contract for the section. pl.wikipedia: one carriageway opened on the whole length on 30 December 2018; the GDDKiA page gives 14 December 2019 for the main carriageway. pl.wikipedia gives 16.0 km and the drawn line, cut at the Mosina junction, measures 15.4 km, against 18.86 km on the GDDKiA page.",
+        "ro": "Model tradițional; licitație anunțată la 30 octombrie 2013, contract de lucrări semnat la 30 iulie 2015 cu Toto Costruzioni Generali și Vianini Lavori (registrul indică aceeași dată ca început de lucrări, deci nu se înregistrează o dată de începere a construcției). Registrul listează și un contract separat de continuare pentru secțiune. pl.wikipedia: o cale de rulare a fost deschisă pe toată lungimea la 30 decembrie 2018; pagina GDDKiA indică 14 decembrie 2019 pentru calea principală. pl.wikipedia indică 16,0 km, iar linia desenată, tăiată la nodul Mosina, măsoară 15,4 km, față de 18,86 km pe pagina GDDKiA."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-poznan-zachod-wronczyn",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "poznan-zachod-wronczyn"
+    },
+    {
+      "id": "wronczyn-koscian-poludnie",
+      "name": {
+        "en": "Wronczyn – Kościan Południe",
+        "ro": "Wronczyn – Kościan Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-04-13",
+        "constructionStart": "2017-12-22",
+        "opened": "2019-12-14"
+      },
+      "lengthKm": 18.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 359.29,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT."
+            },
+            "date": "2016-04-13",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-03-19",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "awarded",
+          "date": "2016-04-13",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-12-22",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-14",
+          "sourceRef": "msbd-wronczyn-koscian-poludnie"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 277.76 million for the whole project Poznań – Wrocław, odcinek Wronczyn – Kościan Południe.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 277.76 mil. PLN pentru întregul proiect Poznań – Wrocław, odcinek Wronczyn – Kościan Południe."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 359.29,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build by Budimex; tender announced 19 March 2015, contract signed 13 April 2016 (pl.wikipedia), works from 22 December 2017 (register). The GDDKiA page records PLN 384.44 million as the value after amendments. Opened on 14 December 2019.",
+        "ro": "Proiectare și execuție de către Budimex; licitație anunțată la 19 martie 2015, contract semnat la 13 aprilie 2016 (pl.wikipedia), lucrări din 22 decembrie 2017 (registru). Pagina GDDKiA înregistrează 384,44 mil. PLN ca valoare după modificări. Deschis la 14 decembrie 2019."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-wronczyn-koscian-poludnie",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wronczyn-koscian-poludnie"
+    },
+    {
+      "id": "koscian-poludnie-radomicko",
+      "name": {
+        "en": "Kościan Południe – Radomicko",
+        "ro": "Kościan Południe – Radomicko"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-04-12",
+        "constructionStart": "2018-02-27",
+        "opened": "2019-12-14"
+      },
+      "lengthKm": 15.72,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 303.07,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT."
+            },
+            "date": "2016-04-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-04-12",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-02-27",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-14",
+          "sourceRef": "msbd-koscian-poludnie-radomicko"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 220.38 million for the whole project Poznań – Wrocław.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 220.38 mil. PLN pentru întregul proiect Poznań – Wrocław."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Polska SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 303.07,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Design-build, contract signed 12 April 2016, works from 27 February 2018. The contract register names Duna Polska SA as contractor; pl.wikipedia names Mota-Engil Central Europe at signing. The GDDKiA page records PLN 327.96 million as the value after amendments. Main carriageway opened on 14 December 2019, permanent traffic organisation on 12 June 2020. The line ends at the south end of the Lipno junction, next to Radomicko village, and measures 14.94 km against 15.72 km.",
+        "ro": "Proiectare și execuție, contract semnat la 12 aprilie 2016, lucrări din 27 februarie 2018. Registrul contractelor indică Duna Polska SA ca antreprenor; pl.wikipedia indică Mota-Engil Central Europe la semnare. Pagina GDDKiA înregistrează 327,96 mil. PLN ca valoare după modificări. Calea principală a fost deschisă la 14 decembrie 2019, organizarea definitivă a traficului la 12 iunie 2020. Linia se termină la capătul sudic al nodului Lipno, lângă satul Radomicko, și măsoară 14,94 km, față de 15,72 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-koscian-poludnie-radomicko",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "koscian-poludnie-radomicko"
+    },
+    {
+      "id": "radomicko-leszno-poludnie",
+      "name": {
+        "en": "Radomicko – Leszno Południe",
+        "ro": "Radomicko – Leszno Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-05-16",
+        "opened": "2018-11-09"
+      },
+      "lengthKm": 19.14,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 443.25,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT."
+            },
+            "date": "2016-05-16",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-06-30",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "awarded",
+          "date": "2016-05-16",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-11-09",
+          "sourceRef": "msbd-radomicko-leszno-poludnie"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 2,087.15 million for the whole project Poznań – Wrocław, Radomicko – Kaczkowo.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 2,087.15 mil. PLN pentru întregul proiect Poznań – Wrocław, Radomicko – Kaczkowo."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Polska SA",
+          "role": "builder"
+        },
+        {
+          "name": "Mota-Engil Engenharia e Construção SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 443.25,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Stage I of Radomicko – Kaczkowo, traditional model: tender announced 30 June 2015 (pl.wikipedia), works contract signed 16 May 2016 with Duna Polska and Mota-Engil Engenharia e Construção (the register gives the same date as works start, so no construction start is recorded). The Radomicko end is the south end of the Lipno junction (Radomicko village lies next to it; the GDDKiA name excludes the junction). The drawn line measures 20.29 km against 19.14 km. Opened on 9 November 2018.",
+        "ro": "Etapa I din Radomicko – Kaczkowo, model tradițional: licitație anunțată la 30 iunie 2015 (pl.wikipedia), contract de lucrări semnat la 16 mai 2016 cu Duna Polska și Mota-Engil Engenharia e Construção (registrul indică aceeași dată ca început de lucrări, deci nu se înregistrează o dată de începere a construcției). Capătul Radomicko este capătul sudic al nodului Lipno (satul Radomicko se află lângă el; denumirea GDDKiA exclude nodul). Linia desenată măsoară 20,29 km, față de 19,14 km. Deschis la 9 noiembrie 2018."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-radomicko-leszno-poludnie",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "radomicko-leszno-poludnie"
+    },
+    {
+      "id": "leszno-poludnie-kaczkowo",
+      "name": {
+        "en": "Leszno Południe – Kaczkowo",
+        "ro": "Leszno Południe – Kaczkowo"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-05-05",
+        "opened": "2018-05-05"
+      },
+      "lengthKm": 9.52,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 232.65,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT. Works only."
+            },
+            "date": "2016-05-05",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-05-05",
+          "sourceRef": "gddkia-realizacja-pdf"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-05-05",
+          "sourceRef": "msbd-leszno-poludnie-kaczkowo"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 2,087.15 million for the whole project Poznań – Wrocław, Radomicko – Kaczkowo.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 2,087.15 mil. PLN pentru întregul proiect Poznań – Wrocław, Radomicko – Kaczkowo."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 232.65,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Stage II of Radomicko – Kaczkowo, traditional model; works contract with Budimex signed 5 May 2016 in the register (6 May 2016 in pl.wikipedia; the register gives the same date as works start, so no construction start is recorded). pl.wikipedia gives a cost of PLN 189.1 million gross, below the PLN 232.65 million contract value of the register. Opened on 5 May 2018.",
+        "ro": "Etapa II din Radomicko – Kaczkowo, model tradițional; contract de lucrări cu Budimex semnat la 5 mai 2016 în registru (6 mai 2016 în pl.wikipedia; registrul indică aceeași dată ca început de lucrări, deci nu se înregistrează o dată de începere a construcției). pl.wikipedia indică un cost de 189,1 mil. PLN brut, sub valoarea contractului din registru, 232,65 mil. PLN. Deschis la 5 mai 2018."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-leszno-poludnie-kaczkowo",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "leszno-poludnie-kaczkowo"
+    },
+    {
+      "id": "kaczkowo-korzensko",
+      "name": {
+        "en": "Kaczkowo – Korzeńsko",
+        "ro": "Kaczkowo – Korzeńsko"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-07-30",
+        "opened": "2014-09-15"
+      },
+      "lengthKm": 29.2,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2010-07-30",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2013-06-21",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-02-21",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-09-15",
+          "sourceRef": "msbd-kaczkowo-korzensko"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "European Regional Development Fund under the Infrastructure and Environment programme, 2007–2013 perspective, per the GDDKiA page.",
+            "ro": "Fondul European de Dezvoltare Regională prin programul Infrastructură și Mediu, perspectiva 2007–2013, conform paginii GDDKiA."
+          }
+        }
+      ],
+      "note": {
+        "en": "pl.wikipedia: contract signed 30 July 2010, terminated through the contractor's fault on 21 June 2013, and a new contract to finish the works signed on 21 February 2014. The GDDKiA page gives 29.2 km (plus 8.9 km), works 2009–2014, and 15 September 2014 for permanent traffic organisation; the contractors are not named in the sources used and the page's PLN 1,148 million is an investment value of unclear scope, so no cost is recorded. The drawn line, between the Rydzyna and Korzeńsko junctions, measures 26.22 km.",
+        "ro": "pl.wikipedia: contract semnat la 30 iulie 2010, reziliat din vina antreprenorului la 21 iunie 2013, iar un nou contract pentru finalizarea lucrărilor a fost semnat la 21 februarie 2014. Pagina GDDKiA indică 29,2 km (plus 8,9 km), lucrări 2009–2014 și 15 septembrie 2014 pentru organizarea definitivă a traficului; antreprenorii nu sunt numiți în sursele folosite, iar cele 1.148 mil. PLN de pe pagină sunt o valoare de investiție cu sferă neclară, deci nu se înregistrează un cost. Linia desenată, între nodurile Rydzyna și Korzeńsko, măsoară 26,22 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-kaczkowo-korzensko",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kaczkowo-korzensko"
+    },
+    {
+      "id": "korzensko-km-123700",
+      "name": {
+        "en": "Korzeńsko – km 123+700 (Wrocław, task 1)",
+        "ro": "Korzeńsko – km 123+700 (Wrocław, zadanul 1)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-07-31",
+        "opened": "2017-11-06"
+      },
+      "lengthKm": 14.942,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 576.26,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Including VAT."
+            },
+            "date": "2014-07-31",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-07-31",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-11-06",
+          "sourceRef": "msbd-korzensko-km-123700"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 883.62 million for the whole project Korzeńsko – Wrocław.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 883.62 mil. PLN pentru întregul proiect Korzeńsko – Wrocław."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex SA",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 576.26,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Task 1 of the three design-build contracts for Korzeńsko – Wrocław (A8, Widawa), km 108+758 to 123+700, 14.942 km. Contract signed 31 July 2014 (the register gives the same date as works start, so no construction start is recorded). Opened on 6 November 2017, about 6 weeks before the deadline (pl.wikipedia). The km 123+700 end is not an OSM node: the boundary is placed by the sourced length of 14.942 km from the Korzeńsko junction. The 4.3 km to the Krościna junction given by pl.wikipedia would put it about 1.6 km further along.",
+        "ro": "Zadanul 1 din cele trei contracte de proiectare și execuție pentru Korzeńsko – Wrocław (A8, Widawa), km 108+758 – 123+700, 14,942 km. Contract semnat la 31 iulie 2014 (registrul indică aceeași dată ca început de lucrări, deci nu se înregistrează o dată de începere a construcției). Deschis la 6 noiembrie 2017, cu circa 6 săptămâni înaintea termenului (pl.wikipedia). Capătul km 123+700 nu este nod OSM: limita este plasată prin lungimea înregistrată de 14,942 km de la nodul Korzeńsko. Cei 4,3 km până la nodul Krościna indicați de pl.wikipedia l-ar pune cu circa 1,6 km mai departe."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-korzensko-km-123700",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "korzensko-km-123700"
+    },
+    {
+      "id": "km-123700-km-137500",
+      "name": {
+        "en": "km 123+700 – km 137+500 (Wrocław, task 2)",
+        "ro": "km 123+700 – km 137+500 (Wrocław, zadanul 2)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-09-12",
+        "opened": "2017-12-22"
+      },
+      "lengthKm": 13.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 310.48,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Including VAT."
+            },
+            "date": "2014-09-12",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-09-12",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2017-11-06",
+          "sourceRef": "msbd-km-123700-km-137500"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-22",
+          "sourceRef": "msbd-km-123700-km-137500"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 883.62 million for the whole project Korzeńsko – Wrocław.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 883.62 mil. PLN pentru întregul proiect Korzeńsko – Wrocław."
+          }
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 310.48,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Task 2 of the three design-build contracts for Korzeńsko – Wrocław, Krościna to Marcinowo, 13.8 km. Contract signed 12 September 2014 (the register gives the same date as works start, so no construction start is recorded). The GDDKiA page gives 6 November 2017 for the part up to the Krościna junction (about 4.3 km) and 22 December 2017 for the rest. The km 123+700 end is placed by the sourced length of the previous task; the Marcinowo end is the point of the line nearest to Marcinowo village (OSM place node, 0.4 km away). The drawn line measures 15.75 km against 13.8 km.",
+        "ro": "Zadanul 2 din cele trei contracte de proiectare și execuție pentru Korzeńsko – Wrocław, de la Krościna la Marcinowo, 13,8 km. Contract semnat la 12 septembrie 2014 (registrul indică aceeași dată ca început de lucrări, deci nu se înregistrează o dată de începere a construcției). Pagina GDDKiA indică 6 noiembrie 2017 pentru partea până la nodul Krościna (circa 4,3 km) și 22 decembrie 2017 pentru restul. Capătul km 123+700 este plasat prin lungimea înregistrată a zadanului precedent; capătul Marcinowo este punctul liniei cel mai apropiat de satul Marcinowo (nod OSM place, la 0,4 km). Linia desenată măsoară 15,75 km, față de 13,8 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-km-123700-km-137500",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "km-123700-km-137500"
+    },
+    {
+      "id": "km-137500-wroclaw-polnoc",
+      "name": {
+        "en": "km 137+500 – Wrocław Północ (Wrocław, task 3)",
+        "ro": "km 137+500 – Wrocław Północ (Wrocław, zadanul 3)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-09-10",
+        "opened": "2017-12-22"
+      },
+      "lengthKm": 19.292,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 597.6,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Including VAT."
+            },
+            "date": "2014-09-10",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-09-10",
+          "sourceRef": "pl-wikipedia-s5"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-22",
+          "sourceRef": "msbd-km-137500-wroclaw-polnoc"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020. The GDDKiA page gives a grant of PLN 883.62 million for the whole project Korzeńsko – Wrocław.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020. Pagina GDDKiA indică o finanțare de 883.62 mil. PLN pentru întregul proiect Korzeńsko – Wrocław."
+          }
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 597.6,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Task 3 of the three design-build contracts for Korzeńsko – Wrocław, Marcinowo to the Widawa interchange with A8 (Wrocław Północ), 19.292 km including the rebuilt Widawa interchange. Contract signed 10 September 2014 (the register gives the same date as works start, so no construction start is recorded); contractor not named in the sources used. The GDDKiA page records PLN 598.06 million as the value after amendments. Opened on 22 December 2017. The Marcinowo end is the point of the line nearest to Marcinowo village (OSM place node); the drawn line measures 18.54 km.",
+        "ro": "Zadanul 3 din cele trei contracte de proiectare și execuție pentru Korzeńsko – Wrocław, de la Marcinowo la nodul Widawa cu A8 (Wrocław Północ), 19,292 km incluzând nodul Widawa reconstruit. Contract semnat la 10 septembrie 2014 (registrul indică aceeași dată ca început de lucrări, deci nu se înregistrează o dată de începere a construcției); antreprenorul nu este numit în sursele folosite. Pagina GDDKiA înregistrează 598,06 mil. PLN ca valoare după modificări. Deschis la 22 decembrie 2017. Capătul Marcinowo este punctul liniei cel mai apropiat de satul Marcinowo (nod OSM place); linia desenată măsoară 18,54 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s5",
+        "msbd-km-137500-wroclaw-polnoc",
+        "gddkia-realizacja-pdf",
+        "osm-relation-s5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "km-137500-wroclaw-polnoc"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pl-wikipedia-s5",
+      "title": "Wikipedia (pl): Droga ekspresowa S5 (Polska), existing sections and construction history",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S5_(Polska)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-ornowo-wirwajdy",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Ornowo – Wirwajdy",
+      "url": "https://www.gov.pl/web/gddkia/s5-ornowo---wirwajdy",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-nowe-marzy-swiecie-poludnie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Nowe Marzy – Świecie Południe",
+      "url": "https://www.gov.pl/web/gddkia/s5-nowe-marzy--swiecie-poludnie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-swiecie-poludnie-bydgoszcz-polnoc",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Świecie Południe – Bydgoszcz Północ",
+      "url": "https://www.gov.pl/web/gddkia/s5-swiecie-poludnie--bydgoszcz-polnoc",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-bydgoszcz-polnoc-oplawiec",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Bydgoszcz Północ – Bydgoszcz Opławiec",
+      "url": "https://www.gov.pl/web/gddkia/s5-bydgoszcz-polnoc--bydgoszcz-oplawiec",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-oplawiec-blonie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Bydgoszcz Opławiec – Bydgoszcz Błonie",
+      "url": "https://www.gov.pl/web/gddkia/s5-bydgoszcz-oplawiec--bydgoszcz-blonie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-blonie-szubin-polnoc",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Bydgoszcz Błonie – Szubin Północ",
+      "url": "https://www.gov.pl/web/gddkia/s5-bydgoszcz-blonie--szubin-polnoc",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-szubin-polnoc-znin-polnoc",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Szubin Północ – Żnin Północ",
+      "url": "https://www.gov.pl/web/gddkia/s5-szubin-polnoc--znin-polnoc",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-znin-polnoc-mieleszyn",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Żnin Północ – granica województwa",
+      "url": "https://www.gov.pl/web/gddkia/s5-znin-polnoc--granica-woj",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-mieleszyn-gniezno-poludnie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Mielno (z węzłem) – Gniezno (węzeł Łubowo)",
+      "url": "https://www.gov.pl/web/gddkia/s5-odc-mielno-z-wezlem---gniezno-wezel-lubowo",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-gniezno-poludnie-czachurki",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Gniezno – Czachurki",
+      "url": "https://www.gov.pl/web/gddkia/gniezno---czachurki",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-czachurki-kleszczewo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Czachurki – Kleszczewo",
+      "url": "https://www.gov.pl/web/gddkia/s5-czachurki-kleszczewo",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-poznan-zachod-wronczyn",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Poznań (A2, w. Głuchowo) – Wronczyn",
+      "url": "https://www.gov.pl/web/gddkia/s5-odc-poznan-a2-w-gluchowo---wronczyn",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-wronczyn-koscian-poludnie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Wronczyn – Kościan Południe",
+      "url": "https://www.gov.pl/web/gddkia/s5-wronczyn--koscian-poludnie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-koscian-poludnie-radomicko",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Kościan Południe – Radomicko",
+      "url": "https://www.gov.pl/web/gddkia/s5-koscian-poludnie---radomicko",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-radomicko-leszno-poludnie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Radomicko (bez węzła) – Leszno Południe",
+      "url": "https://www.gov.pl/web/gddkia/s5-radomicko-bez-wezla--leszno-poludnie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-leszno-poludnie-kaczkowo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Leszno Południe – Kaczkowo",
+      "url": "https://www.gov.pl/web/gddkia/s5-radomicko---kaczkowo",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-kaczkowo-korzensko",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Kaczkowo – Korzeńsko",
+      "url": "https://www.gov.pl/web/gddkia/s5-kaczkowo---korzensko",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-korzensko-km-123700",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Korzeńsko – Wrocław (A8, w. Widawa), km 108+758 do km 123+700",
+      "url": "https://www.gov.pl/web/gddkia/s5-korzensko---wroclaw-a8-w-widawa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-km-123700-km-137500",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Korzeńsko – Wrocław, km 123+700 do km 137+500",
+      "url": "https://www.gov.pl/web/gddkia/s5-korzensko---wroclaw-123700-do-km-137500",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "msbd-km-137500-wroclaw-polnoc",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S5 Korzeńsko – Wrocław, km 137+500 do km 156+792 wraz z rozbudową węzła Widawa",
+      "url": "https://www.gov.pl/web/gddkia/s5-korzensko---wroclaw-od-km-137500-do-km-156792-wraz-z-rozbudowa-wezla-widawa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-realizacja-pdf",
+      "title": "GDDKiA: Bieżąca realizacja RPBDK do 2030 r., monthly contract table (PDF, gross values including VAT)",
+      "url": "https://www.gov.pl/web/gddkia/biezaca-realizacja-pbdk-na-lata-2014-2023",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-relation-s5",
+      "title": "OpenStreetMap: relation 2214193, Droga ekspresowa S5 (network PL:expressway)",
+      "url": "https://www.openstreetmap.org/relation/2214193",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

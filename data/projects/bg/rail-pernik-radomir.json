@@ -1,0 +1,67 @@
+{
+  "id": "bg-rail-pernik-radomir",
+  "country": "bg",
+  "category": "railway",
+  "name": {
+    "en": "Pernik – Radomir railway modernisation",
+    "ro": "Modernizarea căii ferate Pernik – Radomir"
+  },
+  "description": {
+    "en": "Modernisation of the Pernik – Radomir section of the Sofia – Pernik – Radomir railway, part of Corridor VIII. The project provides a double line for speeds up to 160 km/h, renewal of station tracks and removal of all level crossings. On 22 December 2025 the National Railway Infrastructure Company ranked DZZD ISPA first at BGN 421.28 million excluding VAT, with completion by mid-2029.",
+    "ro": "Modernizarea secțiunii Pernik – Radomir din calea ferată Sofia – Pernik – Radomir, parte a Coridorului VIII. Proiectul prevede o linie dublă pentru viteze de până la 160 km/h, reînnoirea liniilor din stații și eliminarea tuturor trecerilor la nivel. Pe 22 decembrie 2025 Compania Națională „Infrastructura Feroviară” a clasat pe primul loc DZZD ISPA, cu 421,28 milioane leva fără TVA, cu termen de finalizare la mijlocul anului 2029."
+  },
+  "operator": "bg-nric",
+  "corridors": [
+    "pan-european-viii"
+  ],
+  "lots": [
+    {
+      "id": "pernik-radomir",
+      "name": {
+        "en": "Pernik – Radomir",
+        "ro": "Pernik – Radomir"
+      },
+      "status": "tendered",
+      "dates": {
+        "expectedOpening": "2029-06"
+      },
+      "lengthKm": 14.9,
+      "cost": {
+        "estimated": {
+          "amount": 421.28,
+          "currency": "BGN",
+          "confidence": "reported",
+          "note": "Contract price of the first-ranked bidder, excluding VAT. Not a signed contract."
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "note": {
+        "en": "NRIC closed the contractor selection on 22 December 2025: DZZD ISPA ranked first at BGN 421,283,219 excluding VAT. The scope is a double line for up to 160 km/h, renewal of station tracks and removal of all level crossings; the deadline is mid-2029. No contract signing was found, so the lot stays tendered and the price is recorded as a bid. Length measured from OpenStreetMap geometry (existing single track between Pernik and Radomir stations); no length is stated in the NRIC release. No new alignment is mapped in OpenStreetMap.",
+        "ro": "CNCF a încheiat selecția executantului pe 22 decembrie 2025: DZZD ISPA s-a clasat pe primul loc cu 421.283.219 leva fără TVA. Lucrările constau într-o linie dublă pentru până la 160 km/h, reînnoirea liniilor din stații și eliminarea tuturor trecerilor la nivel; termenul este mijlocul anului 2029. Nu a fost găsită nicio semnare a contractului, deci tronsonul rămâne în faza de licitație, iar prețul este înregistrat ca ofertă. Lungime măsurată din geometria OpenStreetMap (linia simplă existentă între stațiile Pernik și Radomir); comunicatul CNCF nu indică lungimea. În OpenStreetMap nu este cartat niciun traseu nou."
+      },
+      "sourceRefs": [
+        "nric-news-4552",
+        "osm-geometry"
+      ],
+      "geometryRef": "pernik-radomir"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nric-news-4552",
+      "title": "NRIC: НКЖИ приключи процедурите за избор на изпълнител по два проекта от Коридор VIII (22.12.2025)",
+      "url": "https://www.rail-infra.bg/bg/news/4552",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-geometry",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

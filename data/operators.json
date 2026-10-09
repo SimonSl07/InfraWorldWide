@@ -6,7 +6,9 @@
       "localName": "Compania Națională de Administrare a Infrastructurii Rutiere",
       "country": "ro",
       "role": "road_authority",
-      "aliases": ["CNADNR"],
+      "aliases": [
+        "CNADNR"
+      ],
       "note": {
         "en": "Renamed from CNADNR in 2016; awards and reports before that date appear under the old name."
       },
@@ -23,7 +25,9 @@
       "localName": "Compania Națională de Căi Ferate CFR",
       "country": "ro",
       "role": "rail_authority",
-      "aliases": ["CFR"],
+      "aliases": [
+        "CFR"
+      ],
       "sources": [
         {
           "title": "CFR",
@@ -44,12 +48,48 @@
         }
       ]
     },
+    "bg-api": {
+      "name": "Road Infrastructure Agency",
+      "localName": "Агенция „Пътна инфраструктура“",
+      "country": "bg",
+      "role": "road_authority",
+      "aliases": [
+        "API"
+      ],
+      "sources": [
+        {
+          "title": "Road Infrastructure Agency",
+          "url": "https://www.api.bg/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "bg-nric": {
+      "name": "National Railway Infrastructure Company",
+      "localName": "Национална компания „Железопътна инфраструктура“",
+      "country": "bg",
+      "role": "rail_authority",
+      "aliases": [
+        "NRIC",
+        "DP NKZhI"
+      ],
+      "sources": [
+        {
+          "title": "National Railway Infrastructure Company",
+          "url": "https://www.rail-infra.bg/",
+          "retrievedOn": "2026-10-09"
+        }
+      ]
+    },
     "bg-sofia-metropoliten": {
       "name": "Metropoliten Sofia",
       "localName": "Метрополитен ЕАД",
       "country": "bg",
       "role": "metro_operator",
-      "aliases": ["Metropolitan", "Metropoliten"],
+      "aliases": [
+        "Metropolitan",
+        "Metropoliten"
+      ],
       "sources": [
         {
           "title": "Metropoliten Sofia",
@@ -92,7 +132,11 @@
       "localName": "Υπουργείο Υποδομών και Μεταφορών",
       "country": "gr",
       "role": "road_authority",
-      "aliases": ["Ministry of Infrastructure", "YPEHODE", "ΥΠΕΧΩΔΕ"],
+      "aliases": [
+        "Ministry of Infrastructure",
+        "YPEHODE",
+        "ΥΠΕΧΩΔΕ"
+      ],
       "note": {
         "en": "Grantor of the motorway concessions and procuring authority for state-funded road works. Public works passed to it from the Ministry for the Environment, Physical Planning and Public Works (YPEHODE) on 7 October 2009, so works tendered before then appear under YPEHODE. Named Ministry of Infrastructure and Transport since November 2016."
       },
@@ -114,7 +158,9 @@
       "localName": "Εγνατία Οδός Α.Ε.",
       "country": "gr",
       "role": "project_company",
-      "aliases": ["Egnatia Odos A.E."],
+      "aliases": [
+        "Egnatia Odos A.E."
+      ],
       "note": {
         "en": "State company, overseen by the Ministry of Infrastructure and Transport, that built and managed the Egnatia motorway from Igoumenitsa to Kipoi and its perpendicular axes."
       },
@@ -131,7 +177,9 @@
       "localName": "ΕΡΓΑ ΟΣΕ Α.Ε.",
       "country": "gr",
       "role": "project_company",
-      "aliases": ["ERGA OSE"],
+      "aliases": [
+        "ERGA OSE"
+      ],
       "note": {
         "en": "Subsidiary of the Hellenic Railways Organisation (OSE), set up in 1996 to manage the works of OSE's investment programme."
       },
@@ -148,7 +196,10 @@
       "localName": "Ελληνικό Μετρό Α.Ε.",
       "country": "gr",
       "role": "project_company",
-      "aliases": ["Attiko Metro", "Αττικό Μετρό"],
+      "aliases": [
+        "Attiko Metro",
+        "Αττικό Μετρό"
+      ],
       "note": {
         "en": "State company that designs and builds the Athens and Thessaloniki metro networks. Formerly Attiko Metro; contracts from before the rename appear under the old name. It does not run the trains."
       },
@@ -157,6 +208,186 @@
           "title": "Elliniko Metro",
           "url": "https://www.emetro.gr/",
           "retrievedOn": "2026-09-28"
+        }
+      ]
+    },
+    "gr-stasy": {
+      "name": "STASY",
+      "localName": "Σταθερές Συγκοινωνίες Α.Ε.",
+      "country": "gr",
+      "role": "metro_operator",
+      "aliases": [
+        "STASY S.A.",
+        "Σταθερές Συγκοινωνίες",
+        "Tram S.A."
+      ],
+      "note": {
+        "en": "Operator of the Athens tram, formerly Tram S.A."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Athens Tram",
+          "url": "https://en.wikipedia.org/wiki/Athens_Tram",
+          "retrievedOn": "2026-10-09"
+        }
+      ]
+    },
+    "hr-hac": {
+      "name": "Hrvatske autoceste (HAC)",
+      "localName": "Hrvatske autoceste d.o.o.",
+      "country": "hr",
+      "role": "road_authority",
+      "aliases": [
+        "HAC",
+        "Hrvatske autoceste"
+      ],
+      "sources": [
+        {
+          "title": "Hrvatske autoceste",
+          "url": "https://hac.hr/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "hr-hc": {
+      "name": "Hrvatske ceste (HC)",
+      "localName": "Hrvatske ceste d.o.o.",
+      "country": "hr",
+      "role": "road_authority",
+      "aliases": [
+        "HC",
+        "Hrvatske ceste"
+      ],
+      "sources": [
+        {
+          "title": "Hrvatske ceste",
+          "url": "https://hrvatske-ceste.hr/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "hr-hz-infrastruktura": {
+      "name": "HŽ Infrastruktura",
+      "localName": "HŽ Infrastruktura d.o.o.",
+      "country": "hr",
+      "role": "rail_authority",
+      "aliases": [
+        "HŽI",
+        "HZ Infrastruktura"
+      ],
+      "sources": [
+        {
+          "title": "HŽ Infrastruktura",
+          "url": "https://www.hzinfra.hr/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "hr-bina-istra": {
+      "name": "BINA-Istra",
+      "localName": "BINA-ISTRA d.d.",
+      "country": "hr",
+      "role": "project_company",
+      "aliases": [
+        "Bina Istra",
+        "BINA Istra"
+      ],
+      "sources": [
+        {
+          "title": "BINA-Istra",
+          "url": "https://www.bina-istra.com/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "cz-rsd": {
+      "name": "ŘSD",
+      "localName": "Ředitelství silnic a dálnic s. p.",
+      "country": "cz",
+      "role": "road_authority",
+      "aliases": [
+        "Ředitelství silnic a dálnic",
+        "ŘSD ČR"
+      ],
+      "note": {
+        "en": "State enterprise that builds and manages motorways, expressways and class I roads in Czechia."
+      },
+      "sources": [
+        {
+          "title": "Ředitelství silnic a dálnic",
+          "url": "https://www.rsd.cz/",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "cz-dpp": {
+      "name": "DPP",
+      "localName": "Dopravní podnik hl. m. Prahy, akciová společnost",
+      "country": "cz",
+      "role": "metro_operator",
+      "aliases": [
+        "Dopravní podnik hlavního města Prahy",
+        "Prague Public Transit Company"
+      ],
+      "note": {
+        "en": "Prague Public Transit Company, wholly owned by the City of Prague. It runs the Prague Metro, the tram and trolleybus networks and most urban bus services."
+      },
+      "sources": [
+        {
+          "title": "Dopravní podnik hl. m. Prahy",
+          "url": "https://www.dpp.cz/en",
+          "retrievedOn": "2026-10-05"
+        },
+        {
+          "title": "Wikipedia: Dopravní podnik hlavního města Prahy",
+          "url": "https://en.wikipedia.org/wiki/Dopravní_podnik_hlavního_města_Prahy",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "sk-nds": {
+      "name": "National Motorway Company (NDS)",
+      "localName": "Národná diaľničná spoločnosť, a.s.",
+      "country": "sk",
+      "role": "road_authority",
+      "aliases": [
+        "NDS",
+        "Národná diaľničná spoločnosť",
+        "National Motorway Company"
+      ],
+      "note": {
+        "en": "State-owned joint-stock company, established on 1 February 2005 under Act 639/2004, that prepares, builds, repairs, operates and maintains Slovakia's motorways and expressways and runs the electronic vignette and toll."
+      },
+      "sources": [
+        {
+          "title": "NDS",
+          "url": "https://ndsas.sk/",
+          "retrievedOn": "2026-10-05"
+        },
+        {
+          "title": "Wikipedia (sk): Národná diaľničná spoločnosť",
+          "url": "https://sk.wikipedia.org/wiki/N%C3%A1rodn%C3%A1_di%C4%BEni%C4%8Dn%C3%A1_spolo%C4%8Dnos%C5%A5",
+          "retrievedOn": "2026-10-05"
+        }
+      ]
+    },
+    "pl-gddkia": {
+      "name": "GDDKiA",
+      "localName": "Generalna Dyrekcja Dróg Krajowych i Autostrad",
+      "country": "pl",
+      "role": "road_authority",
+      "aliases": [
+        "General Directorate for National Roads and Motorways",
+        "GDDKiA"
+      ],
+      "note": {
+        "en": "Polish state authority that builds and manages national roads, motorways and expressways."
+      },
+      "sources": [
+        {
+          "title": "Generalna Dyrekcja Dróg Krajowych i Autostrad",
+          "url": "https://www.gov.pl/web/gddkia",
+          "retrievedOn": "2026-10-05"
         }
       ]
     }

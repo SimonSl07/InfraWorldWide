@@ -16,6 +16,28 @@ describe("foldText", () => {
     expect(foldText("Râul Doamnei")).toBe("raul doamnei");
   });
 
+  it("folds Slovak diacritics through NFD alone", () => {
+    expect(foldText("Diaľnica Žilina–Košice")).toBe("dialnica zilina–kosice");
+    expect(foldText("Ľubochňa, Čebrať, Štrba, Ružomberok, Trenčín")).toBe(
+      "lubochna, cebrat, strba, ruzomberok, trencin",
+    );
+    expect(foldText("Svrčinovec, Poľana, Hôrky, Ďurďošík, Kráľová")).toBe(
+      "svrcinovec, polana, horky, durdosik, kralova",
+    );
+  });
+
+  it("folds Polish letters, including ł that NFD leaves alone", () => {
+    expect(foldText("Droga ekspresowa S7, węzeł Kiełpin")).toBe(
+      "droga ekspresowa s7, wezel kielpin",
+    );
+    expect(foldText("Łódź, Gdańsk, Świnoujście, Żywiec, Kraków")).toBe(
+      "lodz, gdansk, swinoujscie, zywiec, krakow",
+    );
+    expect(foldText("Ząbki, Mińsk Mazowiecki, Chełm, Sośnica, Ćmielów")).toBe(
+      "zabki, minsk mazowiecki, chelm, sosnica, cmielow",
+    );
+  });
+
   it("folds letters NFD leaves alone", () => {
     expect(foldText("Łódź")).toBe("lodz");
     expect(foldText("Đorđe")).toBe("dorde");

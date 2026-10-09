@@ -1,0 +1,209 @@
+{
+  "id": "rs-ruma-sabac-loznica",
+  "country": "rs",
+  "category": "highway",
+  "name": {
+    "en": "Ruma – Šabac – Loznica Motorway and Expressway",
+    "ro": "Autostrada și drumul expres Ruma – Šabac – Loznica"
+  },
+  "description": {
+    "en": "A 78 km road from the A3 at Ruma to Loznica on the Drina: a motorway to Šabac, a bridge over the Sava, then a two-carriageway expressway. JP Putevi Srbije is the investor; AzVirt built it under a design-build contract signed on 19 November 2019 and concluded without a tender under an intergovernmental agreement with Azerbaijan. The motorway and the Sava bridge opened on 14 October 2023 and the expressway on 29 December 2024. Further sections to Badovinci and Mali Zvornik are not part of this file. The Ministry gives one investment value for the project, not a figure per section, so no lot cost is recorded.",
+    "ro": "Un drum de 78 km de la A3 la Ruma până la Loznica, pe Drina: autostradă până la Šabac, un pod peste Sava, apoi drum expres cu două benzi pe sens. JP Putevi Srbije este investitorul; AzVirt l-a construit în baza unui contract de proiectare și execuție semnat la 19 noiembrie 2019, încheiat fără licitație în temeiul unui acord interguvernamental cu Azerbaidjan. Autostrada și podul peste Sava au fost deschise la 14 octombrie 2023, iar drumul expres la 29 decembrie 2024. Sectoarele următoare spre Badovinci și Mali Zvornik nu fac parte din acest fișier. Ministerul indică o singură valoare a investiției pentru proiect, nu pe sectoare, deci nu se înregistrează un cost pe lot."
+  },
+  "operator": "rs-putevi-srbije",
+  "lots": [
+    {
+      "id": "ruma-sabac",
+      "name": {
+        "en": "Ruma – Šabac motorway",
+        "ro": "Autostrada Ruma – Šabac"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-11-19",
+        "opened": "2023-10-14"
+      },
+      "lengthKm": 22.08,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-11-19",
+          "sourceRef": "mgsi-ruma-sabac-loznica",
+          "note": {
+            "en": "Commercial contract for design and construction signed, no.401-00-1057/2019-01.",
+            "ro": "Contract comercial de proiectare și execuție semnat, nr. 401-00-1057/2019-01."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2023-10-14",
+          "sourceRef": "mgsi-ruma-sabac-loznica"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget"
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Domestic commercial bank loans, per the Ministry (MGSI project page).",
+            "ro": "Împrumuturi de la bănci comerciale interne, conform ministerului (pagina de proiect MGSI)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "AzVirt",
+          "role": "builder"
+        },
+        {
+          "name": "Institut za puteve",
+          "role": "designer"
+        }
+      ],
+      "sourceRefs": [
+        "mgsi-ruma-sabac-loznica",
+        "osm-ruma-sabac-loznica"
+      ],
+      "note": {
+        "en": "MGSI lists Section 1 as 22.08 km plus a 0.44 km deviation to state road IB 21, which is not counted here. Runs from the Ruma interchange on the A3 to the Šabac interchange. The Ministry gives 19 June 2020 as the project start.",
+        "ro": "MGSI indică Sectorul 1 ca 22,08 km plus o deviație de 0,44 km spre drumul de stat IB 21, care nu este inclusă aici. Merge de la nodul Ruma de pe A3 până la nodul Šabac. Ministerul indică 19 iunie 2020 ca început al proiectului."
+      },
+      "geometryRef": "ruma-sabac"
+    },
+    {
+      "id": "sava-bridge",
+      "name": {
+        "en": "Sava bridge with approaches",
+        "ro": "Podul peste Sava cu rampe de acces"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-11-19",
+        "opened": "2023-10-14"
+      },
+      "lengthKm": 1.327,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-11-19",
+          "sourceRef": "mgsi-ruma-sabac-loznica"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-10-14",
+          "sourceRef": "mgsi-ruma-sabac-loznica"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget"
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Domestic commercial bank loans, per the Ministry (MGSI project page).",
+            "ro": "Împrumuturi de la bănci comerciale interne, conform ministerului (pagina de proiect MGSI)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "AzVirt",
+          "role": "builder"
+        },
+        {
+          "name": "Institut za puteve",
+          "role": "designer"
+        }
+      ],
+      "sourceRefs": [
+        "mgsi-ruma-sabac-loznica",
+        "osm-ruma-sabac-loznica"
+      ],
+      "note": {
+        "en": "MGSI lists the bridge over the Sava with its approach structures as a separate Section 2, outside the 22.08 km of Section 1, so it is its own lot and not part of another. The drawn line follows the main bridge way in OpenStreetMap (1.36 km), meeting the end of the Ruma – Šabac line and the start of the Šabac – Loznica line; the eastern approach viaduct is drawn in the Ruma – Šabac lot.",
+        "ro": "MGSI listează podul peste Sava cu structurile de acces ca Sector 2 separat, în afara celor 22,08 km ai Sectorului 1, deci este un lot propriu. Linia desenată urmărește podul principal din OpenStreetMap (1,36 km), între extremitățile lotului Ruma – Šabac și ale lotului Šabac – Loznica; viaductul estic de acces este desenat în lotul Ruma – Šabac."
+      },
+      "geometryRef": "sava-bridge"
+    },
+    {
+      "id": "sabac-loznica",
+      "name": {
+        "en": "Šabac – Loznica expressway",
+        "ro": "Drumul expres Šabac – Loznica"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-11-19",
+        "opened": "2024-12-29"
+      },
+      "lengthKm": 54.58,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-11-19",
+          "sourceRef": "mgsi-ruma-sabac-loznica"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-29",
+          "sourceRef": "mgsi-ruma-sabac-loznica"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget"
+        },
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Domestic commercial bank loans, per the Ministry (MGSI project page).",
+            "ro": "Împrumuturi de la bănci comerciale interne, conform ministerului (pagina de proiect MGSI)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "AzVirt",
+          "role": "builder"
+        },
+        {
+          "name": "Institut za puteve",
+          "role": "designer"
+        }
+      ],
+      "sourceRefs": [
+        "mgsi-ruma-sabac-loznica",
+        "osm-ruma-sabac-loznica"
+      ],
+      "note": {
+        "en": "MGSI gives the opening as December 2024 in the section list and as 29 December 2024 in the completion entry. Defect-liability works continued after opening.",
+        "ro": "MGSI indică deschiderea în decembrie 2024 în lista sectoarelor și la 29 decembrie 2024 în rubrica de finalizare. Lucrările din perioada de garanție au continuat după deschidere."
+      },
+      "geometryRef": "sabac-loznica"
+    }
+  ],
+  "cost": {
+    "amount": 600,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "MGSI investment value for the Ruma – Šabac – Loznica project; the page does not say whether it includes the later Slepčević – Badovinci section, and gives no per-section figures. Price year and VAT treatment not stated."
+  },
+  "sources": [
+    {
+      "id": "mgsi-ruma-sabac-loznica",
+      "title": "Ministry of Construction, Transport and Infrastructure: Izgradnja brze saobraćajnice Ruma – Šabac – Loznica",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-brze-saobracajnice-ruma-sabac-loznica",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-ruma-sabac-loznica",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

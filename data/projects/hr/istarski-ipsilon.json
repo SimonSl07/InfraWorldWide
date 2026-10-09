@@ -1,0 +1,317 @@
+{
+  "id": "hr-istarski-ipsilon",
+  "country": "hr",
+  "category": "highway",
+  "name": {
+    "en": "Istrian Y (A8 Kanfanar – Matulji, A9 Umag – Pula)",
+    "ro": "Y-ul istrian (A8 Kanfanar – Matulji, A9 Umag – Pula)"
+  },
+  "description": {
+    "en": "Croatia's Istrian Y: the A8 from the A9 at Kanfanar to the A7 at Matulji, with the Učka Tunnel, and the A9 from Umag to Pula. The roads were opened as two-lane expressways between 1981 and 2006, and each opening is a lot here. They are being upgraded to full motorway profile under a 32-year concession to BINA-Istra, which is the operator, not the builder; those upgrades are in the companion project hr-istarski-ipsilon-full-profile, so the old road stays opened and its kilometres count once. Original openings are dated by the end year where the source gives a range. Costs are not recorded per lot: the sources give totals for several sections, some in kuna.",
+    "ro": "Y-ul istrian din Croația: A8 de la A9 la Kanfanar până la A7 la Matulji, cu Tunelul Učka, și A9 de la Umag la Pula. Drumurile au fost deschise ca drumuri expres cu două benzi între 1981 și 2006, iar fiecare deschidere este un lot aici. Ele sunt modernizate la profil complet de autostradă în baza unei concesiuni de 32 de ani acordate BINA-Istra, care este operatorul, nu constructorul; modernizările sunt în proiectul însoțitor hr-istarski-ipsilon-full-profile, astfel că drumul vechi rămâne deschis, iar kilometrii lui se numără o singură dată. Deschiderile inițiale sunt datate cu anul final acolo unde sursa dă un interval. Costurile nu sunt înregistrate pe lot: sursele dau totaluri pentru mai multe sectoare, unele în kuna."
+  },
+  "operator": "hr-bina-istra",
+  "lots": [
+    {
+      "id": "a8-kanfanar-rogovici",
+      "name": {
+        "en": "A8 Kanfanar – Rogovići (original two-lane road)",
+        "ro": "A8 Kanfanar – Rogovići (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1999"
+      },
+      "lengthKm": 16.38,
+      "note": {
+        "en": "Last stretch of the A8 to be finished. Wikipedia: the route was extended to Rogovići between 1992 and 1998 and the remaining section to Kanfanar was completed in 1999 as a two-lane road. Length measured from OpenStreetMap geometry.",
+        "ro": "Ultimul tronson al A8 terminat. Wikipedia: traseul a fost extins până la Rogovići între 1992 și 1998, iar restul până la Kanfanar a fost finalizat în 1999 ca drum cu două benzi. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-kanfanar-rogovici"
+    },
+    {
+      "id": "a8-rogovici-cerovlje",
+      "name": {
+        "en": "A8 Rogovići – Cerovlje (original two-lane road)",
+        "ro": "A8 Rogovići – Cerovlje (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1998"
+      },
+      "lengthKm": 10.41,
+      "note": {
+        "en": "Part of the extension to Rogovići built between 1992 and 1998; the source gives no year for this section alone, so the end year is used. Length measured from OpenStreetMap geometry.",
+        "ro": "Parte din extinderea până la Rogovići construită între 1992 și 1998; sursa nu dă un an pentru acest sector, deci se folosește anul final. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-rogovici-cerovlje"
+    },
+    {
+      "id": "a8-cerovlje-lupoglav",
+      "name": {
+        "en": "A8 Cerovlje – Lupoglav (original two-lane road)",
+        "ro": "A8 Cerovlje – Lupoglav (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1988"
+      },
+      "lengthKm": 11.39,
+      "note": {
+        "en": "Wikipedia: the Lupoglav–Cerovlje portion was completed in 1988. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia: porțiunea Lupoglav–Cerovlje a fost finalizată în 1988. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-cerovlje-lupoglav"
+    },
+    {
+      "id": "a8-lupoglav-ucka-tunnel",
+      "name": {
+        "en": "A8 Lupoglav – Učka Tunnel (original two-lane road)",
+        "ro": "A8 Lupoglav – Tunelul Učka (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1981"
+      },
+      "lengthKm": 6.23,
+      "note": {
+        "en": "Part of the 22.6 km Matulji–Lupoglav two-lane expressway completed together with the Učka Tunnel in 1981. Ends at the Istrian portal of the tunnel. Length measured from OpenStreetMap geometry.",
+        "ro": "Parte din drumul expres cu două benzi Matulji–Lupoglav de 22,6 km, finalizat împreună cu Tunelul Učka în 1981. Se termină la portalul istrian al tunelului. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-lupoglav-ucka-tunnel"
+    },
+    {
+      "id": "a8-ucka-tunnel",
+      "name": {
+        "en": "Učka Tunnel (original tube)",
+        "ro": "Tunelul Učka (tubul inițial)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978",
+        "opened": "1981-09-27"
+      },
+      "lengthKm": 5.062,
+      "note": {
+        "en": "Original tube, 5,062 m. Construction began in 1978. Part of the 22.6 km Matulji–Lupoglav section completed in 1981; the neighbouring lots end at the tunnel portals.",
+        "ro": "Tubul inițial, 5062 m. Construcția a început în 1978. Face parte din sectorul Matulji–Lupoglav de 22,6 km finalizat în 1981; loturile vecine se termină la portalurile tunelului."
+      },
+      "sourceRefs": [
+        "wp-ucka-tunnel",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-ucka-tunnel"
+    },
+    {
+      "id": "a8-ucka-matulji",
+      "name": {
+        "en": "A8 Učka Tunnel – Matulji (original two-lane road)",
+        "ro": "A8 Tunelul Učka – Matulji (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1981"
+      },
+      "lengthKm": 10.23,
+      "note": {
+        "en": "Kvarner side of the 22.6 km Matulji–Lupoglav two-lane expressway completed together with the Učka Tunnel in 1981. Ends at the A7 interchange at Matulji. Length measured from OpenStreetMap geometry.",
+        "ro": "Partea dinspre Kvarner a drumului expres cu două benzi Matulji–Lupoglav de 22,6 km, finalizat împreună cu Tunelul Učka în 1981. Se termină la nodul cu A7 de la Matulji. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a8",
+        "osm-a8"
+      ],
+      "geometryRef": "a8-ucka-matulji"
+    },
+    {
+      "id": "a9-umag-buje",
+      "name": {
+        "en": "A9 Umag – Buje (original two-lane road)",
+        "ro": "A9 Umag – Buje (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003",
+        "opened": "2005"
+      },
+      "lengthKm": 5.83,
+      "note": {
+        "en": "Wikipedia: work on the section between Umag and Medaki started in 2003 and was completed by 2005. The Buje–Nova Vas stretch inside it is its own lot (1992); no per-stretch year is given for the rest. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia: lucrările pe sectorul dintre Umag și Medaki au început în 2003 și s-au încheiat în 2005. Tronsonul Buje–Nova Vas din interior este un lot separat (1992); nu se dă un an pentru restul. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-umag-buje"
+    },
+    {
+      "id": "a9-buje-novigrad",
+      "name": {
+        "en": "A9 Buje – Novigrad (Nova Vas) (original two-lane road)",
+        "ro": "A9 Buje – Novigrad (Nova Vas) (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1990",
+        "opened": "1992"
+      },
+      "lengthKm": 6.2,
+      "note": {
+        "en": "Wikipedia: the 6.2 km section between Buje and Nova Vas was built between 1990 and 1992. The two interchanges mapped in OpenStreetMap are 4.9 km apart, so the 1992 section probably reaches beyond one of them; the sourced 6.2 km is kept.",
+        "ro": "Wikipedia: sectorul de 6,2 km dintre Buje și Nova Vas a fost construit între 1990 și 1992. Cele două noduri cartografiate în OpenStreetMap sunt la 4,9 km distanță, deci sectorul din 1992 probabil depășește unul dintre ele; se păstrează cei 6,2 km din sursă."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-buje-novigrad"
+    },
+    {
+      "id": "a9-novigrad-medaki",
+      "name": {
+        "en": "A9 Novigrad – Medaki (original two-lane road)",
+        "ro": "A9 Novigrad – Medaki (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003",
+        "opened": "2005"
+      },
+      "lengthKm": 28.62,
+      "note": {
+        "en": "Wikipedia: work on the section between Umag and Medaki started in 2003 and was completed by 2005. Includes the Mirna Bridge, in use since 2005, 1,354 m long, then a single carriageway. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia: lucrările pe sectorul dintre Umag și Medaki au început în 2003 și s-au încheiat în 2005. Include podul Mirna, în uz din 2005, lung de 1354 m, atunci cu o singură carosabilă. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-novigrad-medaki"
+    },
+    {
+      "id": "a9-medaki-kanfanar",
+      "name": {
+        "en": "A9 Medaki – Kanfanar (original two-lane road)",
+        "ro": "A9 Medaki – Kanfanar (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1988",
+        "opened": "1991"
+      },
+      "lengthKm": 7.4,
+      "note": {
+        "en": "First section of the A9: 7.4 km, built 1988 to 1991, including the 552 m Limska Draga viaduct.",
+        "ro": "Primul sector al A9: 7,4 km, construit între 1988 și 1991, inclusiv viaductul Limska Draga de 552 m."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-medaki-kanfanar"
+    },
+    {
+      "id": "a9-kanfanar-vodnjan",
+      "name": {
+        "en": "A9 Kanfanar – Vodnjan north (original two-lane road)",
+        "ro": "A9 Kanfanar – Vodnjan nord (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1999"
+      },
+      "lengthKm": 14.16,
+      "note": {
+        "en": "Wikipedia: between 1997 and 1999 all sections between Medaki and Vodnjan were completed. No per-section year is given, so the end year is used. The cut at the Vodnjan north interchange is an assumption. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia: între 1997 și 1999 toate sectoarele dintre Medaki și Vodnjan au fost finalizate. Nu se dă un an pe sector, deci se folosește anul final. Tăierea la nodul Vodnjan nord este o presupunere. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-kanfanar-vodnjan"
+    },
+    {
+      "id": "a9-vodnjan-pula",
+      "name": {
+        "en": "A9 Vodnjan – Pula (original two-lane road)",
+        "ro": "A9 Vodnjan – Pula (drum inițial cu două benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005",
+        "opened": "2006"
+      },
+      "lengthKm": 11.91,
+      "note": {
+        "en": "Wikipedia: construction of the southernmost section between Vodnjan and Pula started in 2005 and was completed by the end of 2006, completing the Istrian Y as a two-lane expressway. Length measured from OpenStreetMap geometry.",
+        "ro": "Wikipedia: construcția celui mai sudic sector, între Vodnjan și Pula, a început în 2005 și s-a încheiat până la sfârșitul lui 2006, finalizând Y-ul istrian ca drum expres cu două benzi. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wp-a9",
+        "osm-a9"
+      ],
+      "geometryRef": "a9-vodnjan-pula"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wp-a8",
+      "title": "Wikipedia: A8 (Croatia)",
+      "url": "https://en.wikipedia.org/wiki/A8_(Croatia)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wp-a9",
+      "title": "Wikipedia: A9 (Croatia)",
+      "url": "https://en.wikipedia.org/wiki/A9_(Croatia)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "wp-ucka-tunnel",
+      "title": "Wikipedia: Učka Tunnel",
+      "url": "https://en.wikipedia.org/wiki/U%C4%8Dka_Tunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-a8",
+      "title": "OpenStreetMap: relation 145021, Autocesta A8 (ref A8)",
+      "url": "https://www.openstreetmap.org/relation/145021",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-a9",
+      "title": "OpenStreetMap: relation 145027, Autocesta A9 (ref A9)",
+      "url": "https://www.openstreetmap.org/relation/145027",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

@@ -1,0 +1,1582 @@
+{
+  "id": "cz-d1",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D1 motorway (Praha – Brno – Ostrava – Polish border)",
+    "ro": "Autostrada D1 (Praga – Brno – Ostrava – granița cu Polonia)"
+  },
+  "description": {
+    "en": "Czechia's Praha – Brno – Ostrava motorway, drawn from Spořilov (km 0) to the Polish border, where it meets Poland's A1. Sections opened from 1971 (Spořilov – Mirošovice) to 1992 between Prague and Vyškov, from 2005 to 2011 between Vyškov and Říkovice, from 2007 to 2012 on the former D47 between Lipník nad Bečvou, Ostrava and the border, in December 2019 between Přerov and Lipník nad Bečvou, and in December 2025 between Říkovice and Přerov. Lots follow the cs.wikipedia section table, checked against ŘSD leaflets and the ŘSD D47 brochure where they exist; sections of the same era are listed one by one where their opening dates differ. Chainage starts at Spořilov, and km 0–5.2 has been a Prague local road since 1 January 2023. The 2013–2021 modernisation of Mirošovice – Kývalka (21 sections, about 161 km) and the rebuild of the Brno sections (01191.C reopened in April 2025, 01191.A under construction since October 2025) rework carriageways that were already open, so they are not lots and add no length. Where a source's section length differs from the drawn centreline, the sourced length is kept.",
+    "ro": "Autostrada cehă Praga – Brno – Ostrava, desenată de la Spořilov (km 0) până la granița cu Polonia, unde se leagă de A1 poloneză. Sectoarele au fost deschise din 1971 (Spořilov – Mirošovice) până în 1992 între Praga și Vyškov, între 2005 și 2011 între Vyškov și Říkovice, între 2007 și 2012 pe fosta D47 între Lipník nad Bečvou, Ostrava și graniță, în decembrie 2019 între Přerov și Lipník nad Bečvou și în decembrie 2025 între Říkovice și Přerov. Loturile urmează tabelul secțiunilor de pe cs.wikipedia, verificat cu fișele ŘSD și broșura ŘSD D47 acolo unde există; sectoarele din aceeași perioadă sunt listate separat când datele deschiderii diferă. Kilometrajul începe la Spořilov, iar km 0–5,2 este drum local al Pragăi din 1 ianuarie 2023. Modernizarea Mirošovice – Kývalka din 2013–2021 (21 de sectoare, circa 161 km) și reconstrucția sectoarelor din Brno (01191.C redeschis în aprilie 2025, 01191.A în lucru din octombrie 2025) refac benzi deja deschise, deci nu sunt loturi și nu adaugă lungime. Când lungimea unui sector dintr-o sursă diferă de axul desenat, se păstrează lungimea din sursă."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "spority-miro",
+      "name": {
+        "en": "Spořilov – Mirošovice",
+        "ro": "Spořilov – Mirošovice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1967-09-08",
+        "opened": "1971-07-12"
+      },
+      "lengthKm": 21.255,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1967-09-08",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1971-07-12",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 0–21.255); no ŘSD leaflet covers this section. Km 0–5.2 became a Prague local road on 1 January 2023 and is no longer part of the motorway; the chainage was kept.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 0–21,255); nicio fișă ŘSD nu acoperă acest sector. Km 0–5,2 a devenit drum local al Pragăi la 1 ianuarie 2023 și nu mai face parte din autostradă; kilometrajul a fost păstrat."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "spority-miro"
+    },
+    {
+      "id": "miro-horice",
+      "name": {
+        "en": "Mirošovice – Hořice",
+        "ro": "Mirošovice – Hořice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1969-12",
+        "opened": "1977-07"
+      },
+      "lengthKm": 53.685,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1969-12",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1977-07",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 21.255–74.94); no ŘSD leaflet covers this section. Construction started between December 1969 and July 1972 depending on the part; the earliest is recorded.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 21,255–74,94); nicio fișă ŘSD nu acoperă acest sector. Construcția a început între decembrie 1969 și iulie 1972, în funcție de parte; este înregistrată data cea mai veche."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miro-horice"
+    },
+    {
+      "id": "horice-jirice",
+      "name": {
+        "en": "Hořice – Jiřice",
+        "ro": "Hořice – Jiřice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1974-06",
+        "opened": "1979-05-06"
+      },
+      "lengthKm": 10.26,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1974-06",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1979-05-06",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 74.94–85.2); no ŘSD leaflet covers this section. Opened at half profile on 6 May 1979 and at full profile on 6 October 1979.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 74,94–85,2); nicio fișă ŘSD nu acoperă acest sector. Deschis în profil redus la 6 mai 1979 și în profil complet la 6 octombrie 1979."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "horice-jirice"
+    },
+    {
+      "id": "jirice-krasonov",
+      "name": {
+        "en": "Jiřice – Krasoňov",
+        "ro": "Jiřice – Krasoňov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1974-06",
+        "opened": "1979-11-22"
+      },
+      "lengthKm": 7.5,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1974-06",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1979-11-22",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 85.2–92.7); no ŘSD leaflet covers this section. Length is the sum of Jiřice – Humpolec (6.114 km) and Humpolec – Krasoňov (1.386 km). Construction started in June 1974 (Jiřice – Humpolec) and June 1976 (Humpolec – Krasoňov); the earlier date is recorded. Opened at half profile on 22 November 1979 and at full profile on 8 November 1980.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 85,2–92,7); nicio fișă ŘSD nu acoperă acest sector. Lungimea este suma sectoarelor Jiřice – Humpolec (6,114 km) și Humpolec – Krasoňov (1,386 km). Construcția a început în iunie 1974 (Jiřice – Humpolec) și iunie 1976 (Humpolec – Krasoňov); este înregistrată data cea mai veche. Deschis în profil redus la 22 noiembrie 1979 și în profil complet la 8 noiembrie 1980."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jirice-krasonov"
+    },
+    {
+      "id": "krasonov-pavov",
+      "name": {
+        "en": "Krasoňov – Pávov",
+        "ro": "Krasoňov – Pávov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1976-06",
+        "opened": "1980-11-08"
+      },
+      "lengthKm": 19.28,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1976-06",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1980-11-08",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 92.7–111.98); no ŘSD leaflet covers this section.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 92,7–111,98); nicio fișă ŘSD nu acoperă acest sector."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krasonov-pavov"
+    },
+    {
+      "id": "pavov-rehorov",
+      "name": {
+        "en": "Pávov – Řehořov",
+        "ro": "Pávov – Řehořov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1976",
+        "opened": "1979-11-22"
+      },
+      "lengthKm": 15.3,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1976",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1979-11-22",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 111.98–127.28); no ŘSD leaflet covers this section.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 111,98–127,28); nicio fișă ŘSD nu acoperă acest sector."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "pavov-rehorov"
+    },
+    {
+      "id": "rehorov-velke-mezirici-zapad",
+      "name": {
+        "en": "Řehořov – Velké Meziříčí-západ",
+        "ro": "Řehořov – Velké Meziříčí-západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1972-07",
+        "opened": "1976-12"
+      },
+      "lengthKm": 13.716,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1972-07",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1976-12",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 127.28–140.996); no ŘSD leaflet covers this section. Length is the sum of Řehořov – Měřín (7.174 km, opened 28 October 1976) and Měřín – Velké Meziříčí-západ (6.542 km, opened December 1976).",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 127,28–140,996); nicio fișă ŘSD nu acoperă acest sector. Lungimea este suma sectoarelor Řehořov – Měřín (7,174 km, deschis la 28 octombrie 1976) și Měřín – Velké Meziříčí-západ (6,542 km, deschis în decembrie 1976)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rehorov-velke-mezirici-zapad"
+    },
+    {
+      "id": "velke-mezirici-zapad-vychod",
+      "name": {
+        "en": "Velké Meziříčí-západ – Velké Meziříčí-východ",
+        "ro": "Velké Meziříčí-západ – Velké Meziříčí-východ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1972-07",
+        "opened": "1978-11-28"
+      },
+      "lengthKm": 7.53,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1972-07",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1978-11-28",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 140.996–148.526); no ŘSD leaflet covers this section. The table ends this section at km 148.526; the Velké Meziříčí-východ interchange carries exit number 146, so the drawn line follows chainage rather than the interchange.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 140,996–148,526); nicio fișă ŘSD nu acoperă acest sector. Tabelul încheie acest sector la km 148,526; nodul Velké Meziříčí-východ are numărul de ieșire 146, deci traseul desenat urmează kilometrajul, nu nodul."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "velke-mezirici-zapad-vychod"
+    },
+    {
+      "id": "velke-mezirici-velka-bites",
+      "name": {
+        "en": "Velké Meziříčí-východ – Velká Bíteš",
+        "ro": "Velké Meziříčí-východ – Velká Bíteš"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1971-06",
+        "opened": "1975-12"
+      },
+      "lengthKm": 14.248,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1971-06",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1975-12",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 148.526–162.774); no ŘSD leaflet covers this section. Length is the sum of two table rows: to Lhotka (5.066 km, opened May 1975) and Lhotka – Velká Bíteš (9.182 km, opened December 1975).",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 148,526–162,774); nicio fișă ŘSD nu acoperă acest sector. Lungimea este suma a două rânduri din tabel: până la Lhotka (5,066 km, deschis în mai 1975) și Lhotka – Velká Bíteš (9,182 km, deschis în decembrie 1975)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "velke-mezirici-velka-bites"
+    },
+    {
+      "id": "velka-bites-kyvalka",
+      "name": {
+        "en": "Velká Bíteš – Kývalka",
+        "ro": "Velká Bíteš – Kývalka"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1969-04",
+        "opened": "1973-11-03"
+      },
+      "lengthKm": 19.507,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1969-04",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1973-11-03",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 162.774–182.281); no ŘSD leaflet covers this section.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 162,774–182,281); nicio fișă ŘSD nu acoperă acest sector."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "velka-bites-kyvalka"
+    },
+    {
+      "id": "kyvalka-brno-zapad",
+      "name": {
+        "en": "Kývalka – Brno-západ",
+        "ro": "Kývalka – Brno-západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1969-04",
+        "opened": "1972-09-06"
+      },
+      "lengthKm": 8.223,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1969-04",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1972-09-06",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 182.281–190.474); no ŘSD leaflet covers this section.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 182,281–190,474); nicio fișă ŘSD nu acoperă acest sector."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kyvalka-brno-zapad"
+    },
+    {
+      "id": "brno-zapad-brno-centrum",
+      "name": {
+        "en": "Brno-západ – Brno-centrum",
+        "ro": "Brno-západ – Brno-centrum"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1973-07",
+        "opened": "1976-10-28"
+      },
+      "lengthKm": 3.747,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1973-07",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1976-10-28",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 190.474–194.221); no ŘSD leaflet covers this section.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 190,474–194,221); nicio fișă ŘSD nu acoperă acest sector."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "brno-zapad-brno-centrum"
+    },
+    {
+      "id": "brno-centrum-brno-jih",
+      "name": {
+        "en": "Brno-centrum – Brno-jih",
+        "ro": "Brno-centrum – Brno-jih"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1973-07",
+        "opened": "1978-10-04"
+      },
+      "lengthKm": 2.453,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1973-07",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1978-10-04",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 194.221–196.674); no ŘSD leaflet covers this section. Stavba 01191.C rebuilt this stretch, about 1.4 km, and the road returned to full operation on 7 April 2025; the rebuild is not a separate lot.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 194,221–196,674); nicio fișă ŘSD nu acoperă acest sector. Construcția 01191.C a refăcut acest tronson, de circa 1,4 km, iar drumul a revenit la exploatare completă la 7 aprilie 2025; reconstrucția nu este un lot separat."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl",
+        "rsd-leaflet-01191c"
+      ],
+      "geometryRef": "brno-centrum-brno-jih"
+    },
+    {
+      "id": "brno-jih-brno-vychod",
+      "name": {
+        "en": "Brno-jih – Brno-východ",
+        "ro": "Brno-jih – Brno-východ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1979-04",
+        "opened": "1983-09-09"
+      },
+      "lengthKm": 6.775,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1979-04",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1983-09-09",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 196.674–203.449); no ŘSD leaflet covers this section. Stavba 01191.A rebuilds the Brno-jih interchange at its western end; works began on 9 October 2025 and are not a separate lot.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 196,674–203,449); nicio fișă ŘSD nu acoperă acest sector. Construcția 01191.A reface nodul Brno-jih la capătul vestic; lucrările au început la 9 octombrie 2025 și nu formează un lot separat."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl",
+        "rsd-leaflet-01191a"
+      ],
+      "geometryRef": "brno-jih-brno-vychod"
+    },
+    {
+      "id": "brno-vychod-holubice",
+      "name": {
+        "en": "Brno-východ – Holubice",
+        "ro": "Brno-východ – Holubice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1979-04",
+        "opened": "1982-12"
+      },
+      "lengthKm": 7.585,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1979-04",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1982-12",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 203.449–211.034); no ŘSD leaflet covers this section.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 203,449–211,034); nicio fișă ŘSD nu acoperă acest sector."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "brno-vychod-holubice"
+    },
+    {
+      "id": "holubice-tucapy",
+      "name": {
+        "en": "Holubice – Tučapy",
+        "ro": "Holubice – Tučapy"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1984-12",
+        "opened": "1988-11-11"
+      },
+      "lengthKm": 8.965,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1984-12",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1988-11-11",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 211.034–219.999); no ŘSD leaflet covers this section. Built as part of the planned D47 branch; ŘSD says this stretch between Rousínov and Vyškov was built as D47 and later became D1.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 211,034–219,999); nicio fișă ŘSD nu acoperă acest sector. Construit ca parte a ramurii D47 planificate; ŘSD precizează că acest tronson dintre Rousínov și Vyškov a fost construit ca D47 și a devenit ulterior D1."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl",
+        "rsd-d47-brochure"
+      ],
+      "geometryRef": "holubice-tucapy"
+    },
+    {
+      "id": "tucapy-vyskov",
+      "name": {
+        "en": "Tučapy – Vyškov",
+        "ro": "Tučapy – Vyškov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1989-05",
+        "opened": "1992-07-30"
+      },
+      "lengthKm": 9.676,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1989-05",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "1992-07-30",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 219.999–229.675); no ŘSD leaflet covers this section. Built as part of the planned D47 branch, like Holubice – Tučapy.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 219,999–229,675); nicio fișă ŘSD nu acoperă acest sector. Construit ca parte a ramurii D47 planificate, ca și Holubice – Tučapy."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl",
+        "rsd-d47-brochure"
+      ],
+      "geometryRef": "tucapy-vyskov"
+    },
+    {
+      "id": "vyskov-vrchoslavice",
+      "name": {
+        "en": "Vyškov – Vrchoslavice",
+        "ro": "Vyškov – Vrchoslavice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2002-04",
+        "opened": "2005-10-24"
+      },
+      "lengthKm": 17.575,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2002-04",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-10-24",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 229.429–247.004). Stavby 0133 Vyškov – Mořice (16.084 km, started April 2002) and 0134.1/I Mořice – Vrchoslavice (1.491 km, started December 2004) opened together on 24 October 2005, so they are one lot; the length is their sum.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 229,429–247,004). Construcțiile 0133 Vyškov – Mořice (16,084 km, începută în aprilie 2002) și 0134.1/I Mořice – Vrchoslavice (1,491 km, începută în decembrie 2004) au fost deschise împreună la 24 octombrie 2005, deci formează un singur lot; lungimea este suma lor."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "vyskov-vrchoslavice"
+    },
+    {
+      "id": "vrchoslavice-kojetin",
+      "name": {
+        "en": "Vrchoslavice – Kojetín",
+        "ro": "Vrchoslavice – Kojetín"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-05-24",
+        "opened": "2009-09-17"
+      },
+      "lengthKm": 6.625,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-05-24",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-09-17",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 247.004–253.629). Stavba 0134.1/II.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 247,004–253,629). Construcția 0134.1/II."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "vrchoslavice-kojetin"
+    },
+    {
+      "id": "kojetin-kromeriz-zapad",
+      "name": {
+        "en": "Kojetín – Kroměříž-západ",
+        "ro": "Kojetín – Kroměříž-západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-05-12",
+        "opened": "2008-09-23"
+      },
+      "lengthKm": 4,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006-05-12",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-09-23",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 253.629–257.629). Stavba 0134.2.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 253,629–257,629). Construcția 0134.2."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kojetin-kromeriz-zapad"
+    },
+    {
+      "id": "kromeriz-zapad-vychod",
+      "name": {
+        "en": "Kroměříž-západ – Kroměříž-východ",
+        "ro": "Kroměříž-západ – Kroměříž-východ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-02-21",
+        "opened": "2007-11"
+      },
+      "lengthKm": 3,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-02-21",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-11",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 257.629–260.629). Stavba 0134.3, the Kroměříž bypass. Opened at half profile in November 2007 and at full profile on 15 August 2008.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 257,629–260,629). Construcția 0134.3, ocolitoarea Kroměříž. Deschisă în profil redus în noiembrie 2007 și în profil complet la 15 august 2008."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kromeriz-zapad-vychod"
+    },
+    {
+      "id": "kromeriz-vychod-hulin",
+      "name": {
+        "en": "Kroměříž-východ – Hulín",
+        "ro": "Kroměříž-východ – Hulín"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-05-12",
+        "opened": "2010-12-03"
+      },
+      "lengthKm": 4.8,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-05-12",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-12-03",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 260.629–265.429). Part of stavba 0135, which started on 12 May 2008 for both this lot and Hulín – Říkovice.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 260,629–265,429). Parte din construcția 0135, începută la 12 mai 2008 atât pentru acest lot, cât și pentru Hulín – Říkovice."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kromeriz-vychod-hulin"
+    },
+    {
+      "id": "hulin-rikovice",
+      "name": {
+        "en": "Hulín – Říkovice",
+        "ro": "Hulín – Říkovice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-05-12",
+        "opened": "2011-07-11"
+      },
+      "lengthKm": 6.5,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-05-12",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-07-11",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "note": {
+        "en": "Dates and length from the cs.wikipedia section table (chainage km 265.429–271.929). Part of stavba 0135; the ŘSD leaflet for 0136 gives 07/2011 as its opening.",
+        "ro": "Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (kilometraj km 265,429–271,929). Parte din construcția 0135; fișa ŘSD pentru 0136 indică 07/2011 ca dată a deschiderii."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl",
+        "rsd-leaflet-0136"
+      ],
+      "geometryRef": "hulin-rikovice"
+    },
+    {
+      "id": "rikovice-prerov",
+      "name": {
+        "en": "Říkovice – Přerov",
+        "ro": "Říkovice – Přerov"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 6922.22,
+          "currency": "CZK",
+          "year": 2022,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"), contract signed 6 December 2022."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 6750,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 6922.22,
+              "currency": "CZK",
+              "year": 2022,
+              "note": "Excluding VAT."
+            },
+            "date": "2022-12-06",
+            "sourceRef": "rsd-leaflet-0136"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2022-12-20",
+        "opened": "2025-12-19",
+        "tenderAwarded": "2022-12-06"
+      },
+      "lengthKm": 10.1,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-12",
+          "sourceRef": "rsd-leaflet-0136"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-12-06",
+          "sourceRef": "rsd-leaflet-0136"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-12-20",
+          "sourceRef": "rsd-leaflet-0136"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-19",
+          "sourceRef": "rsd-leaflet-0136"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        },
+        {
+          "name": "IDS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0136. The leaflet gives the length as 10 100 m (its own chainage km 75.300–85.400). The tender was announced in December 2020 and drew five bids. The contract was signed on 6 December 2022 and the works began on 20 December 2022. By agreement with the contractor, with an acceleration bonus paid, the contractual opening date was brought forward by 91 days to 19 December 2025; a public open day was held on 21 September 2025.",
+        "ro": "Construcția ŘSD 0136. Fișa indică lungimea de 10 100 m (kilometraj propriu km 75,300–85,400). Licitația a fost lansată în decembrie 2020 și a primit cinci oferte. Contractul a fost semnat la 6 decembrie 2022, iar lucrările au început la 20 decembrie 2022. Prin acord cu constructorul, cu plata unui bonus de accelerare, termenul contractual de deschidere a fost devansat cu 91 de zile, până la 19 decembrie 2025; la 21 septembrie 2025 a avut loc o zi publică a porților deschise."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0136",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rikovice-prerov"
+    },
+    {
+      "id": "prerov-lipnik",
+      "name": {
+        "en": "Přerov – Lipník nad Bečvou",
+        "ro": "Přerov – Lipník nad Bečvou"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 2717.04,
+          "currency": "CZK",
+          "year": 2015,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"); signing date not stated, price year taken as the year works started (14 July 2015)."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2015-07-14",
+        "opened": "2019-12-12"
+      },
+      "lengthKm": 14.312,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2015-07-14",
+          "sourceRef": "rsd-leaflet-0137"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-12",
+          "sourceRef": "rsd-leaflet-0137"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Skanska a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Sdružení D 0137 (Dopravoprojekt Brno a.s., HBH Projekt spol. s r.o., SUDOP PRAHA a.s.)",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0137, opened on 12 December 2019. The leaflet says the opening slipped by several months because of optical cable relocations at 25 places, far more than documented, and a longer abutment on one bridge. The tender was announced in July 2014.",
+        "ro": "Construcția ŘSD 0137, deschisă la 12 decembrie 2019. Fișa precizează că deschiderea a întârziat cu câteva luni din cauza mutării cablurilor optice în 25 de locuri, mult mai multe decât cele documentate, și a prelungirii unei culee la un pod. Licitația a fost lansată în iulie 2014."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0137",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "prerov-lipnik"
+    },
+    {
+      "id": "lipnik-belotin",
+      "name": {
+        "en": "Lipník nad Bečvou – Bělotín",
+        "ro": "Lipník nad Bečvou – Bělotín"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 7010.56,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2004-11-26",
+        "opened": "2008-11-25"
+      },
+      "lengthKm": 15.387,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-11-26",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-11-25",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Sdružení D 4704",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 4704. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 296.341–311.718). Six-lane section. The brochure gives 15 387 m; the wiki chainage (km 296.341–311.718) gives 15.377 km.",
+        "ro": "Construcția ŘSD 4704. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 296,341–311,718). Sector cu șase benzi. Broșura indică 15 387 m; kilometrajul de pe wiki (km 296,341–311,718) dă 15,377 km."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lipnik-belotin"
+    },
+    {
+      "id": "belotin-hladke-zivotice",
+      "name": {
+        "en": "Bělotín – Hladké Životice",
+        "ro": "Bělotín – Hladké Životice"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 3640.15,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2006-05-23",
+        "opened": "2009-11-25"
+      },
+      "lengthKm": 18.097,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006-05-23",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-11-25",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Inžinierske stavby a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "COLAS CZ, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 4705. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 311.718–329.815). Opened at half profile on 25 November 2009 and at full profile on 22 October 2010.",
+        "ro": "Construcția ŘSD 4705. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 311,718–329,815). Deschis în profil redus la 25 noiembrie 2009 și în profil complet la 22 octombrie 2010."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "belotin-hladke-zivotice"
+    },
+    {
+      "id": "hladke-zivotice-bilovec",
+      "name": {
+        "en": "Hladké Životice – Bílovec",
+        "ro": "Hladké Životice – Bílovec"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 2798.49,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2006-04-06",
+        "opened": "2009-11-25"
+      },
+      "lengthKm": 11.682,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006-04-06",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-11-25",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "SKANSKA DS a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 4706. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 329.815–341.496).",
+        "ro": "Construcția ŘSD 4706. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 329,815–341,496)."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hladke-zivotice-bilovec"
+    },
+    {
+      "id": "bilovec-ostrava-rudna",
+      "name": {
+        "en": "Bílovec – Ostrava-Rudná",
+        "ro": "Bílovec – Ostrava-Rudná"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 6041,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120,
+        "tunnelKm": 1.08
+      },
+      "dates": {
+        "constructionStart": "2005-03-25",
+        "opened": "2008-05-06"
+      },
+      "lengthKm": 11.677,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-03-25",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-05-06",
+          "sourceRef": "cs-wikipedia-d1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "SKANSKA DS a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "STRABAG a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 4707. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 341.496–353.173). Carries the Klimkovice tunnel (1,080 m), the only tunnel on the whole route.",
+        "ro": "Construcția ŘSD 4707. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 341,496–353,173). Include tunelul Klimkovice (1.080 m), singurul tunel de pe întregul traseu."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bilovec-ostrava-rudna"
+    },
+    {
+      "id": "ostrava-rudna-hrusov",
+      "name": {
+        "en": "Ostrava-Rudná – Hrušov",
+        "ro": "Ostrava-Rudná – Hrušov"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 5940.19,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2003-10-16",
+        "opened": "2007-12-02"
+      },
+      "lengthKm": 8.54,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2003-10-16",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-12-02",
+          "sourceRef": "rsd-d47-brochure"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ODS-Dopravní stavby Ostrava, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby silnic a železnic, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "OKD, Doprava, akciová společnost",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 4708. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 353.351–361.891). Opened ahead of schedule on 2 December 2007.",
+        "ro": "Construcția ŘSD 4708. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 353,351–361,891). Deschis înainte de termen la 2 decembrie 2007."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ostrava-rudna-hrusov"
+    },
+    {
+      "id": "hrusov-vrbice",
+      "name": {
+        "en": "Hrušov – Vrbice",
+        "ro": "Hrušov – Vrbice"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 2622.26,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2004-05-19",
+        "opened": "2007-12-02"
+      },
+      "lengthKm": 4.46,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-05-19",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-12-02",
+          "sourceRef": "rsd-d47-brochure"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "STRABAG",
+          "role": "builder"
+        },
+        {
+          "name": "ODS-Dopravní stavby Ostrava",
+          "role": "builder"
+        },
+        {
+          "name": "Alpine Mayreder",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 47091/1. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 361.891–366.351). Opened ahead of schedule on 2 December 2007.",
+        "ro": "Construcția ŘSD 47091/1. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 361,891–366,351). Deschis înainte de termen la 2 decembrie 2007."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hrusov-vrbice"
+    },
+    {
+      "id": "vrbice-bohumin",
+      "name": {
+        "en": "Vrbice – Bohumín",
+        "ro": "Vrbice – Bohumín"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 3065.61,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2004-10-01",
+        "opened": "2007-12-02"
+      },
+      "lengthKm": 4.2,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-10-01",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-12-02",
+          "sourceRef": "rsd-d47-brochure"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Stavby silnic a železnic",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska DS",
+          "role": "builder"
+        },
+        {
+          "name": "Pražské silniční a vodohospodářské stavby",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 47091/2. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 366.351–370.551). Opened ahead of schedule on 2 December 2007.",
+        "ro": "Construcția ŘSD 47091/2. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 366,351–370,551). Deschis înainte de termen la 2 decembrie 2007."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "vrbice-bohumin"
+    },
+    {
+      "id": "bohumin-hranice",
+      "name": {
+        "en": "Bohumín – Polish border",
+        "ro": "Bohumín – granița cu Polonia"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 2675.88,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby bez daně\"). The brochure does not say whether this is the contract price or the final price."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2008-04-06",
+        "opened": "2012-11-30"
+      },
+      "lengthKm": 6.113,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-04-06",
+          "sourceRef": "cs-wikipedia-d1"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-11-30",
+          "sourceRef": "rsd-d47-brochure"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ODS-Dopravní stavby Ostrava",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska DS",
+          "role": "builder"
+        },
+        {
+          "name": "ALPINE stavební spol. CZ",
+          "role": "builder"
+        },
+        {
+          "name": "OHL ŽS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 47092. Opening month, length, price and contractors are from the ŘSD D47 brochure; construction start and exact opening day are from the cs.wikipedia section table unless the brochure gives the day (chainage km 370.551–376.498). Opening to passenger cars on 30 November 2012 was agreed with the Polish side and followed the late completion of a problem bridge; it was coordinated with the opening of Poland's A1.",
+        "ro": "Construcția ŘSD 47092. Luna deschiderii, lungimea, prețul și constructorii provin din broșura ŘSD D47; începerea construcției și ziua exactă a deschiderii provin din tabelul secțiunilor de pe cs.wikipedia, dacă broșura nu indică ziua (kilometraj km 370,551–376,498). Deschiderea pentru autoturisme la 30 noiembrie 2012 a fost convenită cu partea poloneză și a urmat finalizării întârziate a unui pod problematic; a fost coordonată cu deschiderea autostrăzii poloneze A1."
+      },
+      "sourceRefs": [
+        "rsd-d47-brochure",
+        "cs-wikipedia-d1",
+        "osm-relation-d1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bohumin-hranice"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wikipedia-d1",
+      "title": "Wikipedia (cs): Dálnice D1, Přehled úseků and Modernizace v úseku Mirošovice–Kývalka",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D1",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-0136",
+      "title": "ŘSD: Informační leták, D1 stavba 0136 Říkovice – Přerov (12/2025, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/8/leaflet/infoletak_d1-0136-rikovice-prerov.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-0137",
+      "title": "ŘSD: Informační leták, D1 stavba 0137 Přerov – Lipník nad Bečvou (12/2019, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/6/leaflet/infoletak_d1-prerov-lipnik.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-d47-brochure",
+      "title": "ŘSD: Dálnice D47 Lipník nad Bečvou – Bohumín – státní hranice (brožura RSD_D47_2013, per-section prices, contractors and opening dates)",
+      "url": "https://www.rsd.cz/documents/38144/80614/RSD_D47_2013.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-01191c",
+      "title": "ŘSD: Informační leták, D1 01191.C Brno-centrum – Brno-jih (04/2025, full operation on 7 April 2025)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/436/leaflet/infoletak_d1-01191-c-brno-centrum-brno-jih.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "rsd-leaflet-01191a",
+      "title": "ŘSD: Informační leták, D1 01191.A MÚK Brno-jih (stav k 04/2026, construction started 9 October 2025)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/434/leaflet/infoletak_d1-01191-a-muk-brno-jih.pdf",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-relation-d1",
+      "title": "OpenStreetMap: relation 1749436, D1 (network CZ:national)",
+      "url": "https://www.openstreetmap.org/relation/1749436",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

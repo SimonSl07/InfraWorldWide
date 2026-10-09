@@ -1,0 +1,65 @@
+{
+  "id": "bg-rail-gyueshevo-border",
+  "country": "bg",
+  "category": "railway",
+  "name": {
+    "en": "Gyueshevo – North Macedonia border railway",
+    "ro": "Calea ferată Gyueshevo – frontiera cu Macedonia de Nord"
+  },
+  "description": {
+    "en": "Design and construction of the missing 2.4 km of railway from Gyueshevo to the border with North Macedonia, with reconstruction of the station tracks and building at Gyueshevo. Part of Corridor VIII. On 22 December 2025 the National Railway Infrastructure Company ranked DZZD GYUESHEVO 2025 first at BGN 97.97 million excluding VAT, with completion by the end of 2028.",
+    "ro": "Proiectarea și construirea celor 2,4 km lipsă de cale ferată de la Gyueshevo până la frontiera cu Macedonia de Nord, cu reconstrucția liniilor și a clădirii gării Gyueshevo. Parte a Coridorului VIII. Pe 22 decembrie 2025 Compania Națională „Infrastructura Feroviară” a clasat pe primul loc DZZD GYUESHEVO 2025, cu 97,97 milioane leva fără TVA, cu termen de finalizare la sfârșitul anului 2028."
+  },
+  "operator": "bg-nric",
+  "corridors": [
+    "pan-european-viii"
+  ],
+  "lots": [
+    {
+      "id": "gyueshevo-border",
+      "name": {
+        "en": "Gyueshevo – border with North Macedonia",
+        "ro": "Gyueshevo – frontiera cu Macedonia de Nord"
+      },
+      "status": "tendered",
+      "dates": {
+        "expectedOpening": "2028-12"
+      },
+      "lengthKm": 2.4,
+      "cost": {
+        "estimated": {
+          "amount": 97.97,
+          "currency": "BGN",
+          "confidence": "reported",
+          "note": "Contract price of the first-ranked bidder, excluding VAT. Not a signed contract."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "NRIC closed the contractor selection on 22 December 2025: DZZD GYUESHEVO 2025 ranked first at BGN 97,972,691.73 excluding VAT. The scope covers design and construction of the missing 2.4 km to the border and reconstruction of the track layout and station building at Gyueshevo; the deadline is the end of 2028. No contract signing was found, so the lot stays tendered and the price is recorded as a bid. The geometry follows the way mapped in OpenStreetMap as proposed railway from Gyueshevo station to the border, about 2.2 km, including a proposed tunnel; NRIC does not state the tunnel.",
+        "ro": "CNCF a încheiat selecția executantului pe 22 decembrie 2025: DZZD GYUESHEVO 2025 s-a clasat pe primul loc cu 97.972.691,73 leva fără TVA. Lucrările cuprind proiectarea și construirea celor 2,4 km lipsă până la frontieră și reconstrucția liniilor și a clădirii gării Gyueshevo; termenul este sfârșitul anului 2028. Nu a fost găsită nicio semnare a contractului, deci tronsonul rămâne în faza de licitație, iar prețul este înregistrat ca ofertă. Geometria urmează traseul cartat în OpenStreetMap ca cale ferată propusă de la gara Gyueshevo la frontieră, cu circa 2,2 km, inclusiv un tunel propus; CNCF nu menționează tunelul."
+      },
+      "sourceRefs": [
+        "nric-news-4552",
+        "osm-geometry"
+      ],
+      "geometryRef": "gyueshevo-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nric-news-4552",
+      "title": "NRIC: НКЖИ приключи процедурите за избор на изпълнител по два проекта от Коридор VIII (22.12.2025)",
+      "url": "https://www.rail-infra.bg/bg/news/4552",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-geometry",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

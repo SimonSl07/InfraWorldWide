@@ -1,0 +1,93 @@
+{
+  "id": "rs-rail-zemun-polje-airport",
+  "country": "rs",
+  "city": "rs-belgrade",
+  "category": "railway",
+  "name": {
+    "en": "Zemun Polje – Nikola Tesla Airport – National Stadium railway",
+    "ro": "Calea ferată Zemun Polje – Aeroportul Nikola Tesla – Stadionul Național"
+  },
+  "description": {
+    "en": "New double-track electrified passenger line from Zemun Polje to Belgrade's Nikola Tesla Airport and the National Stadium at Surčin, part of the infrastructure for EXPO 2027. It is 18.3 km long, designed for up to 120 km/h, with stops at Singidunum, the airport and Surčin and a station at the National Stadium. The contractor is PowerChina International Group.",
+    "ro": "Linie nouă de cale ferată dublă, electrificată, pentru călători, de la Zemun Polje la Aeroportul Nikola Tesla din Belgrad și la Stadionul Național de la Surčin, parte din infrastructura pentru EXPO 2027. Are 18,3 km, viteză de proiectare de până la 120 km/h, cu haltele Singidunum, Aeroport și Surčin și o stație la Stadionul Național. Constructorul este PowerChina International Group."
+  },
+  "lots": [
+    {
+      "id": "zemun-polje-nikola-tesla-airport-national-stadium",
+      "name": {
+        "en": "Zemun Polje – Nikola Tesla Airport – National Stadium",
+        "ro": "Zemun Polje – Aeroportul Nikola Tesla – Stadionul Național"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-05",
+        "expectedOpening": "2026-12"
+      },
+      "lengthKm": 18.3,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "PowerChina International Group Limited",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 188.1,
+          "currency": "EUR"
+        }
+      },
+      "note": {
+        "en": "New double-track electrified line, 18.3 km (MGSI gives 7.1 km Zemun Polje–Singidunum, 3.7 km to the airport, 3.1 km to Surčin and 3.8 km to the National Stadium). The minister toured the site with workers on 2 May 2025 (MGSI), so construction had started by May 2025; Novosti reported the start on 14 June 2025. The month is recorded as the latest possible start. MGSI states a total contract value of EUR 188.1 million; the contract date and price year are not given, VAT treatment is not stated, and the figure is not recorded as an award revision. The contract was agreed directly under the Serbia–China agreement on economic and technical cooperation in infrastructure. The expected opening is the contracted works deadline of end 2026 stated by the minister, not a passenger opening date; delivery of nine new electric trains was expected from November to March. MGSI counts seven structures on the line (three bridges, two underpasses, two overpasses) while another ministry report counts six (four bridges, a viaduct and an overpass). Geometry is the OpenStreetMap railway=construction ways of one track, 17.9 km as drawn against 18.3 km recorded. The recorded length is the sourced figure.",
+        "ro": "Linie nouă dublă electrificată, 18,3 km (MGSI indică 7,1 km Zemun Polje–Singidunum, 3,7 km până la aeroport, 3,1 km până la Surčin și 3,8 km până la Stadionul Național). Ministra a vizitat șantierul cu muncitorii la 2 mai 2025 (MGSI), deci construcția începuse până în mai 2025; Novosti a relatat începutul la 14 iunie 2025. Luna este înregistrată ca cel mai târziu posibil început. MGSI indică o valoare totală a contractului de 188,1 milioane EUR; data contractului și anul de preț nu sunt date, tratamentul TVA nu este precizat, iar cifra nu este înregistrată ca revizuire de atribuire. Contractul a fost încheiat direct în baza acordului dintre Serbia și China privind cooperarea economică și tehnică în infrastructură. Deschiderea estimată este termenul contractual de finalizare a lucrărilor, sfârșitul lui 2026, indicat de ministră, nu o dată de deschidere pentru călători; livrarea a nouă trenuri electrice noi era așteptată între noiembrie și martie. MGSI numără șapte construcții pe traseu (trei poduri, două pasaje inferioare, două pasaje superioare), iar un alt raport al ministerului numără șase (patru poduri, un viaduct și un pasaj superior). Geometria este formată din căile OpenStreetMap railway=construction ale unui singur fir, 17,9 km desenați față de 18,3 km înregistrați. Lungimea înregistrată este cifra din sursă."
+      },
+      "sourceRefs": [
+        "mgsi-zemun-polje-stadium",
+        "mgsi-sofronijevic-works-on-schedule",
+        "mgsi-sofronijevic-works-progress",
+        "novosti-2025-06-14",
+        "osm-zemun-polje-airport-ways"
+      ],
+      "geometryRef": "zemun-polje-nikola-tesla-airport-national-stadium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mgsi-zemun-polje-stadium",
+      "title": "MGSI: Izgradnja železničke pruge od Zemunskog polja do Nacionalnog fudbalskog stadiona u Beogradu (project page)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-zeleznicke-pruge-od-zemunskog-polja-do-nacionalnog-fudbalskog-stadiona-u-beogradu",
+      "publisher": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "mgsi-sofronijevic-works-on-schedule",
+      "title": "MGSI: Sofronijević: Radovi na pruzi Zemun polje-Nacionalni stadion odlično napreduju",
+      "url": "https://www.mgsi.gov.rs/lat/aktuelnosti/sofronijevic-radovi-na-pruzi-zemun-polje-nacionalni-stadion-odlicno-napreduju",
+      "publisher": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "mgsi-sofronijevic-works-progress",
+      "title": "MGSI: Sofronijević: Radovi na pruzi Zemun Polje - Nacionalni stadion teku planiranom dinamikom",
+      "url": "https://www.mgsi.gov.rs/lat/aktuelnosti/sofronijevic-radovi-na-pruzi-zemun-polje-nacionalni-stadion-teku-planiranom-dinamikom",
+      "publisher": "Ministarstvo građevinarstva, saobraćaja i infrastrukture",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "novosti-2025-06-14",
+      "title": "Novosti: Započeta izgradnja pruge Zemun Polje – Aerodrom Nikola Tesla – Nacionalni stadion (14 June 2025)",
+      "url": "https://www.novosti.rs/expo-2027/vesti/1500123/zapoceta-izgradnja-pruge-zemun-polje-aerodrom-nikola-tesla-nacionalni-stadion-mali-veoma-vazno-poboljsamo-efikasnost-saobracaja",
+      "publisher": "Novosti",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-zemun-polje-airport-ways",
+      "title": "OpenStreetMap contributors (geometry, ODbL): railway=construction ways Zemunsko polje - Aerodrom - Surcin - Ekspo",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

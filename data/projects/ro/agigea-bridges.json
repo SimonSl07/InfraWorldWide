@@ -77,7 +77,16 @@
       },
       "funding": [
         {
-          "source": "national_budget"
+          "source": "EU",
+          "detail": {
+            "en": "Sectoral Operational Programme Transport (POS-T) 2007–2013, financing contract no. 18 of 11 September 2009: 85% EU structural funds, 15% state budget.",
+            "ro": "Programul Operațional Sectorial Transport (POS-T) 2007–2013, contractul de finanțare nr. 18 din 11 septembrie 2009: 85% fonduri structurale UE, 15% buget de stat."
+          },
+          "coFinancingRate": 0.85
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.15
         }
       ],
       "contractors": [
@@ -98,7 +107,8 @@
       },
       "sourceRefs": [
         "adevarul-ro",
-        "ziuaconstanta-ro"
+        "ziuaconstanta-ro",
+        "apmc-proiecte"
       ],
       "geometryRef": "new-bridge"
     }
@@ -120,6 +130,14 @@
       "url": "https://www.ziuaconstanta.ro/stiri/actualitate/18-octombrie-prima-adunare-a-creditorilor-firma-care-a-construit-noul-pod-de-la-agigea-apolodor-com-impex-nu-563588.html",
       "retrievedOn": "2026-09-28",
       "publisher": "ZIUA de Constanța"
+    },
+    {
+      "id": "apmc-proiecte",
+      "title": "CN Administrația Porturilor Maritime Constanța: Proiecte (archived 21 March 2016)",
+      "url": "http://www.portofconstantza.com/apmc/portal/static.do?package_id=proiecte_port&x=load",
+      "retrievedOn": "2026-10-01",
+      "publisher": "CN Administrația Porturilor Maritime SA Constanța",
+      "archiveUrl": "http://web.archive.org/web/20160321103638/http://www.portofconstantza.com:80/apmc/portal/static.do?package_id=proiecte_port&x=load"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",
