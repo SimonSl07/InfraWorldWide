@@ -1,0 +1,62 @@
+{
+  "id": "rs-rail-subotica-horgos",
+  "country": "rs",
+  "category": "railway",
+  "name": {
+    "en": "Subotica – Horgoš – Hungarian Border Railway",
+    "ro": "Calea ferată Subotica – Horgoš – frontiera cu Ungaria"
+  },
+  "description": {
+    "en": "Reconstruction of the Serbian section of the single-track Szeged–Subotica line, Serbian line 201, from Subotica to the Hungarian border near Horgoš. Works began in June 2021 and passenger service resumed on 28 November 2023, together with the rebuilt Hungarian section. Passenger trains had been suspended on the Horgoš–Subotica section since 2015. The Hungarian section (MÁV line 136, 15 km Szeged–Röszke) is not part of this project.",
+    "ro": "Reconstrucția secțiunii sârbe a liniei cu o singură cale Szeged–Subotica, linia sârbă 201, de la Subotica până la frontiera cu Ungaria, lângă Horgoš. Lucrările au început în iunie 2021, iar circulația de călători a fost reluată la 28 noiembrie 2023, odată cu secțiunea maghiară reconstruită. Trenurile de călători fuseseră suspendate pe secțiunea Horgoš–Subotica din 2015. Secțiunea maghiară (linia MÁV 136, 15 km Szeged–Röszke) nu face parte din acest proiect."
+  },
+  "lots": [
+    {
+      "id": "subotica-horgos-border",
+      "name": {
+        "en": "Subotica – Horgoš – Hungarian border",
+        "ro": "Subotica – Horgoš – frontiera cu Ungaria"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2021-06",
+        "opened": "2023-11-28"
+      },
+      "lengthKm": 27.5,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "contractors": [
+        {
+          "name": "RZD International",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry; no published length for the Serbian section was found. Works began in June 2021 with demolition of the worn infrastructure. Track reached the border in March 2022 and the overhead line was finished by April 2022. RZD International won the international tender announced in early 2021; no contract value or cost is recorded. The geometry starts at Subotica station, a short distance south of where the Belgrade–Subotica project's geometry ends.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap; nu a fost găsită o lungime publicată pentru secțiunea sârbă. Lucrările au început în iunie 2021 cu demolarea infrastructurii uzate. Calea a ajuns la frontieră în martie 2022, iar linia de contact a fost terminată până în aprilie 2022. RZD International a câștigat licitația internațională lansată la începutul lui 2021; nu este înregistrată nicio valoare de contract sau de cost. Geometria începe în gara Subotica, la mică distanță la sud de locul unde se termină geometria proiectului Belgrad–Subotica."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-szeged-szabadka",
+        "osm-contributors"
+      ],
+      "geometryRef": "subotica-horgos-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-szeged-szabadka",
+      "title": "Wikipedia (hu): Szeged–Szabadka-vasútvonal",
+      "url": "https://hu.wikipedia.org/wiki/Szeged%E2%80%93Szabadka-vas%C3%BAtvonal",
+      "retrievedOn": "2026-10-05",
+      "publisher": "Wikipedia"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors: route geometry, line Суботица – Хоргош – ДГ 201 (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05",
+      "publisher": "OpenStreetMap"
+    }
+  ]
+}

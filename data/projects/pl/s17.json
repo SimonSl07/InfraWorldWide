@@ -1,0 +1,1850 @@
+{
+  "id": "pl-s17",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S17 expressway (Warszawa – Garwolin – Lublin – Zamość – Hrebenne)",
+    "ro": "Drumul expres S17 (Varșovia – Garwolin – Lublin – Zamość – Hrebenne)"
+  },
+  "description": {
+    "en": "Expressway from the Warsaw east bypass at Warszawa Wschód (formerly Zakręt) through Garwolin, Kurów, Lublin and Zamość to the Ukrainian border at Hrebenne, on the E372 route. Lots follow GDDKiA contract sections. Warszawa – Kurów opened in 2019–2022 and Kurów – Piaski in 2013–2014. Kurów – Piaski Wschód is the same road as S12, and Sławinek – Rudnik also carries S19. Piaski – Hrebenne is being built in contract sections signed in 2022–2024, with two sections still in tender. Not drawn: the Lubelska interchange with S2 and A2, the 2 km Hrebenne bypass signposted DK17, and the planned Drewnica – Warszawa Wschód section. Contract values are gross (VAT included) as published by GDDKiA.",
+    "ro": "Drum expres de la ocolitoarea de est a Varșoviei la Warszawa Wschód (fost Zakręt), prin Garwolin, Kurów, Lublin și Zamość, până la granița cu Ucraina la Hrebenne, pe ruta E372. Loturile urmează secțiunile contractuale GDDKiA. Warszawa – Kurów a fost deschis în 2019–2022, iar Kurów – Piaski în 2013–2014. Kurów – Piaski Wschód este același drum cu S12, iar Sławinek – Rudnik găzduiește și S19. Piaski – Hrebenne se construiește pe secțiuni contractuale semnate în 2022–2024, două secțiuni fiind încă în licitație. Nu sunt desenate: complexul Lubelska cu S2 și A2, ocolitoarea Hrebenne de 2 km marcată DK17 și secțiunea planificată Drewnica – Warszawa Wschód. Valorile contractelor sunt brute (cu TVA), așa cum le publică GDDKiA."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-09",
+  "lots": [
+    {
+      "id": "zakret-lubelska",
+      "name": {
+        "en": "Warszawa Wschód (Zakręt) – Lubelska",
+        "ro": "Warszawa Wschód (Zakręt) – Lubelska"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-11-22",
+        "constructionStart": "2018-11-05",
+        "opened": "2022-12-22"
+      },
+      "lengthKm": 2.53,
+      "contractors": [
+        {
+          "name": "Warbud S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 34,
+        "value": {
+          "amount": 224.86,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 224.86,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2017-11-22",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives a grant of PLN 123.7 million on the section page.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică un grant de 123,7 mil. PLN pe pagina secțiunii."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-18",
+          "sourceRef": "gddkia-msbd-s17-zakret-lubelska"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-11-22",
+          "note": {
+            "en": "Design-build contract signed with Warbud.",
+            "ro": "Contract de proiectare și execuție semnat cu Warbud."
+          },
+          "sourceRef": "gddkia-msbd-s17-zakret-lubelska"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-11-05",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-22",
+          "note": {
+            "en": "Main carriageway opened to traffic; works finished at the end of 2023.",
+            "ro": "Axul principal dat în trafic; lucrările s-au încheiat la sfârșitul lui 2023."
+          },
+          "sourceRef": "gddkia-msbd-s17-zakret-lubelska"
+        }
+      ],
+      "note": {
+        "en": "First 2.53 km of S17 from the Warszawa Wschód junction (formerly Zakręt) to the Lubelska interchange, which is excluded from this lot. Contract completion was set for 30 April 2021 and the 34 months exclude winter periods (15 December – 15 March). The drawn line stops 0.7 km before the Lubelska junction node, which belongs to the S2/A2 interchange contract and is not drawn.",
+        "ro": "Primii 2,53 km ai S17 de la nodul Warszawa Wschód (fost Zakręt) până la complexul Lubelska, exclus din acest lot. Termenul contractual era 30 aprilie 2021, iar cele 34 de luni nu includ perioadele de iarnă (15 decembrie – 15 martie). Linia desenată se oprește cu 0,7 km înainte de nodul Lubelska, care ține de contractul complexului S2/A2 și nu este desenat."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-zakret-lubelska"
+      ],
+      "geometryRef": "zakret-lubelska"
+    },
+    {
+      "id": "lubelska-kolbiel",
+      "name": {
+        "en": "Lubelska – Kołbiel (start of bypass)",
+        "ro": "Lubelska – Kołbiel (începutul ocolitoarei)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-01-27",
+        "constructionStart": "2018-04-13",
+        "opened": "2020-07-17"
+      },
+      "lengthKm": 15.15,
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 370.48,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 370.48,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2016-01-27",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives the grant for the whole project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică grantul pentru întregul proiect, nu pe secțiune."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-01-27",
+          "note": {
+            "en": "Design-build contract signed (part 1 of 3, Lubelska – Garwolin).",
+            "ro": "Contract de proiectare și execuție semnat (partea 1 din 3, Lubelska – Garwolin)."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-04-13",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-07-17",
+          "note": {
+            "en": "Main carriageway opened to traffic; permanent traffic arrangements on 19 March 2021.",
+            "ro": "Axul principal dat în trafic; organizarea permanentă a traficului din 19 martie 2021."
+          },
+          "sourceRef": "gddkia-msbd-s17-lubelska-kolbiel"
+        }
+      ],
+      "note": {
+        "en": "Part 1 of the Lubelska – Garwolin contract (km 4+049 to 19+200, 15.151 km), an expansion of the existing DK17 to expressway standard. GDDKiA gives the contract value after annexes as PLN 382.998 million. The drawn line starts at the Lubelska junction node, 0.7 km after the end of the Warszawa Wschód – Lubelska lot.",
+        "ro": "Partea 1 din contractul Lubelska – Garwolin (km 4+049 – 19+200, 15,151 km), extindere a DK17 existent la standard de drum expres. GDDKiA indică valoarea contractului după acte adiționale la 382,998 mil. PLN. Linia desenată începe la nodul Lubelska, la 0,7 km după sfârșitul lotului Warszawa Wschód – Lubelska."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-lubelska-kolbiel"
+      ],
+      "geometryRef": "lubelska-kolbiel"
+    },
+    {
+      "id": "kolbiel-bypass",
+      "name": {
+        "en": "Kołbiel bypass",
+        "ro": "Ocolitoarea Kołbiel"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-01-27",
+        "constructionStart": "2018-08-20",
+        "opened": "2020-07-17"
+      },
+      "lengthKm": 8.7,
+      "contractors": [
+        {
+          "name": "Strabag Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Infrastruktura Południe Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 225.49,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 225.49,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2016-01-27",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives the grant for the whole project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică grantul pentru întregul proiect, nu pe secțiune."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-01-27",
+          "note": {
+            "en": "Design-build contract signed (part 2 of 3, Lubelska – Garwolin).",
+            "ro": "Contract de proiectare și execuție semnat (partea 2 din 3, Lubelska – Garwolin)."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-08-20",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-07-17",
+          "note": {
+            "en": "Main carriageway opened to traffic.",
+            "ro": "Axul principal dat în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-obwodnica-kolbieli"
+        }
+      ],
+      "note": {
+        "en": "Part 2 of the Lubelska – Garwolin contract (km 19+200 to 27+900, 8.7 km), built by the same Strabag consortium as part 1. It carries the Kołbiel junction.",
+        "ro": "Partea 2 din contractul Lubelska – Garwolin (km 19+200 – 27+900, 8,7 km), construită de același consorțiu Strabag ca partea 1. Cuprinde nodul Kołbiel."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-obwodnica-kolbieli"
+      ],
+      "geometryRef": "kolbiel-bypass"
+    },
+    {
+      "id": "kolbiel-garwolin",
+      "name": {
+        "en": "Kołbiel (end of bypass) – Garwolin (start of bypass)",
+        "ro": "Kołbiel (sfârșitul ocolitoarei) – Garwolin (începutul ocolitoarei)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-01-27",
+        "constructionStart": "2017-08-11",
+        "opened": "2019-12-23"
+      },
+      "lengthKm": 13,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 289.97,
+          "currency": "PLN",
+          "year": 2016,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 289.97,
+              "currency": "PLN",
+              "year": 2016,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2016-01-27",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives the grant for the whole project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică grantul pentru întregul proiect, nu pe secțiune."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-01-27",
+          "note": {
+            "en": "Design-build contract signed (part 3 of 3, Lubelska – Garwolin).",
+            "ro": "Contract de proiectare și execuție semnat (partea 3 din 3, Lubelska – Garwolin)."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-08-11",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-23",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-kolbiel-garwolin"
+        }
+      ],
+      "note": {
+        "en": "Part 3 of the Lubelska – Garwolin contract (km 27+900 to 40+915, 13.015 km). GDDKiA gives the contract value after annexes as PLN 338.683 million. This was the fifth S17 section GDDKiA opened in 2019.",
+        "ro": "Partea 3 din contractul Lubelska – Garwolin (km 27+900 – 40+915, 13,015 km). GDDKiA indică valoarea contractului după acte adiționale la 338,683 mil. PLN. A fost a cincea secțiune S17 dată în trafic de GDDKiA în 2019."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-kolbiel-garwolin"
+      ],
+      "geometryRef": "kolbiel-garwolin"
+    },
+    {
+      "id": "garwolin-bypass",
+      "name": {
+        "en": "Garwolin bypass",
+        "ro": "Ocolitoarea Garwolin"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-09-26"
+      },
+      "lengthKm": 12.8,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-09-26",
+          "note": {
+            "en": "Bypass opened to traffic.",
+            "ro": "Ocolitoarea dată în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-obwodnica-garwolina"
+        }
+      ],
+      "note": {
+        "en": "Built in 2005–2007 as a bypass of DK17 and since carried as part of S17. GDDKiA gives 12.8 km (km 40+400 to 53+197 on its own page). The chainage of the contracts on either side (km 40+915 and 49+973) leaves about 9 km, which is what is drawn; pl.wikipedia gives km 40+700 to 50+520 for the same gap. The sources do not reconcile the two extents. No contract data is published for it.",
+        "ro": "Construită în 2005–2007 ca ocolitoare a DK17 și inclusă ulterior în S17. GDDKiA indică 12,8 km (km 40+400 – 53+197 pe pagina proprie). Kilometrajul contractelor de o parte și de alta (km 40+915 și 49+973) lasă circa 9 km, cât este desenat; pl.wikipedia indică km 40+700 – 50+520 pentru același interval. Sursele nu concordă asupra celor două extinderi. Nu sunt publicate date contractuale."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-obwodnica-garwolina"
+      ],
+      "geometryRef": "garwolin-bypass"
+    },
+    {
+      "id": "garwolin-gonczyce",
+      "name": {
+        "en": "Garwolin (end of bypass) – Gończyce (end of bypass)",
+        "ro": "Garwolin (sfârșitul ocolitoarei) – Gończyce (sfârșitul ocolitoarei)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-09-22",
+        "constructionStart": "2017-03-16",
+        "opened": "2019-07-04"
+      },
+      "lengthKm": 12.2,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 34,
+        "value": {
+          "amount": 288.58,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 288.58,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2015-09-22",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives the grant for the whole project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică grantul pentru întregul proiect, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-09-22",
+          "note": {
+            "en": "Design-build contract signed (part 1 of 2, Garwolin – county border).",
+            "ro": "Contract de proiectare și execuție semnat (partea 1 din 2, Garwolin – limita voievodatului)."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-03-16",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-07-04",
+          "note": {
+            "en": "Main carriageway opened to traffic; permanent arrangements on 22 July 2019.",
+            "ro": "Axul principal dat în trafic; organizare permanentă din 22 iulie 2019."
+          },
+          "sourceRef": "gddkia-msbd-s17-garwolin-gonczyce"
+        }
+      ],
+      "note": {
+        "en": "Part 1 of the Garwolin – Mazovia/Lublin border contract (km 49+973 to 62+200, 12.227 km). The 34 months exclude winter periods (15 December – 15 March). GDDKiA gives the contract value after annexes as PLN 296.612 million. pl.wikipedia rounds the value at signing to PLN 288.5 million.",
+        "ro": "Partea 1 din contractul Garwolin – limita Mazovia/Lublin (km 49+973 – 62+200, 12,227 km). Cele 34 de luni nu includ perioadele de iarnă (15 decembrie – 15 martie). GDDKiA indică valoarea contractului după acte adiționale la 296,612 mil. PLN. pl.wikipedia rotunjește valoarea la semnare la 288,5 mil. PLN."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-garwolin-gonczyce"
+      ],
+      "geometryRef": "garwolin-gonczyce"
+    },
+    {
+      "id": "gonczyce-granica-woj",
+      "name": {
+        "en": "Gończyce (end of bypass) – Mazovia/Lublin voivodeship border",
+        "ro": "Gończyce (sfârșitul ocolitoarei) – limita voievodatelor Mazovia/Lublin"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-09-22",
+        "constructionStart": "2017-03-16",
+        "opened": "2019-07-04"
+      },
+      "lengthKm": 13,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 34,
+        "value": {
+          "amount": 313.63,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 313.63,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2015-09-22",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives the grant for the whole project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică grantul pentru întregul proiect, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-09-22",
+          "note": {
+            "en": "Design-build contract signed (part 2 of 2, Garwolin – county border).",
+            "ro": "Contract de proiectare și execuție semnat (partea 2 din 2, Garwolin – limita voievodatului)."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-03-16",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-07-04",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-gonczyce-granica"
+        }
+      ],
+      "note": {
+        "en": "Part 2 of the Garwolin – border contract (km 62+200 to 75+212, 13.012 km). GDDKiA gives the contract value after annexes as PLN 321.654 million. The 34 months exclude winter periods.",
+        "ro": "Partea 2 din contractul Garwolin – limită (km 62+200 – 75+212, 13,012 km). GDDKiA indică valoarea contractului după acte adiționale la 321,654 mil. PLN. Cele 34 de luni nu includ perioadele de iarnă."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-gonczyce-granica"
+      ],
+      "geometryRef": "gonczyce-granica-woj"
+    },
+    {
+      "id": "granica-skrudki",
+      "name": {
+        "en": "Voivodeship border – Skrudki",
+        "ro": "Limita voievodatului – Skrudki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-11-09",
+        "constructionStart": "2017-04-06",
+        "opened": "2019-09-06"
+      },
+      "lengthKm": 20.17,
+      "contractors": [
+        {
+          "name": "PORR S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 608.81,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 608.81,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2015-11-09",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives the grant for the whole project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică grantul pentru întregul proiect, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-11-09",
+          "note": {
+            "en": "Design-build contract signed (part 3 of 3, border – Kurów Zachód).",
+            "ro": "Contract de proiectare și execuție semnat (partea 3 din 3, limită – Kurów Zachód)."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-04-06",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2019-07-04",
+          "note": {
+            "en": "First 5 km, border to Ryki Północ, opened.",
+            "ro": "Primii 5 km, de la limită la Ryki Północ, dați în trafic."
+          },
+          "sourceRef": "pl-wikipedia-s17"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-09-06",
+          "note": {
+            "en": "Ryki Północ – Skrudki opened with a 100 km/h limit; permanent arrangements on 29 November 2019.",
+            "ro": "Ryki Północ – Skrudki dat în trafic cu limită de 100 km/h; organizare permanentă din 29 noiembrie 2019."
+          },
+          "sourceRef": "gddkia-msbd-s17-granica-skrudki"
+        }
+      ],
+      "note": {
+        "en": "The contractor is shown by pl.wikipedia as PORR Polska Infrastructure (formerly Bilfinger Infrastructure). GDDKiA gives 20.17 km and the contract value after annexes as PLN 618.858 million in its section page; the monthly table gives PLN 625.014 million.",
+        "ro": "pl.wikipedia indică antreprenorul ca PORR Polska Infrastructure (fost Bilfinger Infrastructure). GDDKiA indică 20,17 km și valoarea contractului după acte adiționale la 618,858 mil. PLN în pagina secțiunii; tabelul lunar indică 625,014 mil. PLN."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-granica-skrudki"
+      ],
+      "geometryRef": "granica-skrudki"
+    },
+    {
+      "id": "skrudki-kurow-zachod",
+      "name": {
+        "en": "Skrudki – Kurów Zachód",
+        "ro": "Skrudki – Kurów Zachód"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-10-19",
+        "constructionStart": "2017-01-11",
+        "opened": "2019-06-19"
+      },
+      "lengthKm": 13.2,
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 34,
+        "value": {
+          "amount": 270.82,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 270.82,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2015-10-19",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020; GDDKiA gives the grant for the whole project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020; GDDKiA indică grantul pentru întregul proiect, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-10-19",
+          "note": {
+            "en": "Design-build contract signed (part 2 of 3, border – Kurów Zachód).",
+            "ro": "Contract de proiectare și execuție semnat (partea 2 din 3, limită – Kurów Zachód)."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-01-11",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-06-19",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-skrudki-kurow"
+        }
+      ],
+      "note": {
+        "en": "The 34 months exclude winter periods (15 December – 15 March). GDDKiA gives the contract value after annexes as PLN 272.859 million.",
+        "ro": "Cele 34 de luni nu includ perioadele de iarnă (15 decembrie – 15 martie). GDDKiA indică valoarea contractului după acte adiționale la 272,859 mil. PLN."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-skrudki-kurow"
+      ],
+      "geometryRef": "skrudki-kurow-zachod"
+    },
+    {
+      "id": "kurow-zachod-jastkow",
+      "name": {
+        "en": "Kurów Zachód – Jastków (shared with S12)",
+        "ro": "Kurów Zachód – Jastków (comun cu S12)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-03-03",
+        "opened": "2013-05-28"
+      },
+      "lengthKm": 23.7,
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe S.A.",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2007–2013; GDDKiA gives the grant for the whole Kurów – Lublin – Piaski project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2007–2013; GDDKiA indică grantul pentru întregul proiect Kurów – Lublin – Piaski, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011-03-03",
+          "note": {
+            "en": "Contract signed with Mota-Engil Central Europe.",
+            "ro": "Contract semnat cu Mota-Engil Central Europe."
+          },
+          "sourceRef": "pl-wikipedia-s17"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-05-28",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-kurow-jastkow"
+        }
+      ],
+      "note": {
+        "en": "Carries S12 and S17 together (DK12 and DK17 before reclassification). GDDKiA gives 23.7 km; pl.wikipedia gives 24.7 km. Planned completion was March 2013. No contract value is recorded because the section page does not say whether its PLN 624.2 million works figure is the value at signing or after annexes.",
+        "ro": "Poartă împreună S12 și S17 (DK12 și DK17 înainte de reclasificare). GDDKiA indică 23,7 km; pl.wikipedia indică 24,7 km. Finalizarea era planificată pentru martie 2013. Nu este înregistrată valoarea contractului, deoarece pagina secțiunii nu precizează dacă cifra de 624,2 mil. PLN pentru lucrări este valoarea la semnare sau după acte adiționale."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-kurow-jastkow"
+      ],
+      "geometryRef": "kurow-zachod-jastkow"
+    },
+    {
+      "id": "jastkow-slawinek",
+      "name": {
+        "en": "Jastków – Lublin Sławinek (shared with S12)",
+        "ro": "Jastków – Lublin Sławinek (comun cu S12)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-06-09",
+        "opened": "2014-09-25"
+      },
+      "lengthKm": 8.6,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2007–2013; GDDKiA gives the grant for the whole Kurów – Lublin – Piaski project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2007–2013; GDDKiA indică grantul pentru întregul proiect Kurów – Lublin – Piaski, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011-06-09",
+          "note": {
+            "en": "Contract signed with a Budimex and Ferrovial Agroman consortium.",
+            "ro": "Contract semnat cu un consorțiu Budimex și Ferrovial Agroman."
+          },
+          "sourceRef": "pl-wikipedia-s17"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-09-25",
+          "note": {
+            "en": "Opened with the urban link to al. Solidarności.",
+            "ro": "Dat în trafic împreună cu legătura urbană spre al. Solidarności."
+          },
+          "sourceRef": "gddkia-msbd-s17-jastkow-slawinek"
+        }
+      ],
+      "note": {
+        "en": "GDDKiA gives 8.6 km including the urban link to al. Solidarności in Lublin; pl.wikipedia gives 7.7 km. The drawn main line is about 7.3 km and omits the link. Works were finished in 2013 but the road stayed closed after the embankment in the Ciemięga valley settled; 240 m of it was rebuilt before opening. Carries S12 and S17 together.",
+        "ro": "GDDKiA indică 8,6 km împreună cu legătura urbană spre al. Solidarności din Lublin; pl.wikipedia indică 7,7 km. Axul principal desenat are circa 7,3 km și nu include legătura. Lucrările s-au încheiat în 2013, dar drumul a rămas închis după tasarea rambleului din valea Ciemięga; 240 m au fost refăcuți înainte de deschidere. Găzduiește împreună S12 și S17."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-jastkow-slawinek"
+      ],
+      "geometryRef": "jastkow-slawinek"
+    },
+    {
+      "id": "slawinek-rudnik",
+      "name": {
+        "en": "Lublin Sławinek – Lublin Rudnik (northern bypass, shared with S12 and S19)",
+        "ro": "Lublin Sławinek – Lublin Rudnik (ocolitoarea de nord, comun cu S12 și S19)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-10-31"
+      },
+      "lengthKm": 9.6,
+      "contractors": [
+        {
+          "name": "Dragados",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2007–2013; GDDKiA gives the grant for the whole Kurów – Lublin – Piaski project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2007–2013; GDDKiA indică grantul pentru întregul proiect Kurów – Lublin – Piaski, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2014-10-31",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-slawinek-rudnik"
+        }
+      ],
+      "note": {
+        "en": "Three lanes in each direction, carrying S12, S17 and the future S19. GDDKiA gives 9.6 km (the section also covers the DK19 link to Lubartów); pl.wikipedia gives 10.2 km. The original completion date was 5 December 2013.",
+        "ro": "Trei benzi pe sens, pe care circulă S12, S17 și viitorul S19. GDDKiA indică 9,6 km (secțiunea include și legătura DK19 spre Lubartów); pl.wikipedia indică 10,2 km. Termenul inițial de finalizare era 5 decembrie 2013."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-slawinek-rudnik"
+      ],
+      "geometryRef": "slawinek-rudnik"
+    },
+    {
+      "id": "rudnik-felin",
+      "name": {
+        "en": "Lublin Rudnik – Lublin Felin (eastern bypass, shared with S12)",
+        "ro": "Lublin Rudnik – Lublin Felin (ocolitoarea de est, comun cu S12)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-10-15"
+      },
+      "lengthKm": 12.8,
+      "contractors": [
+        {
+          "name": "Dragados",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2007–2013; GDDKiA gives the grant for the whole Kurów – Lublin – Piaski project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2007–2013; GDDKiA indică grantul pentru întregul proiect Kurów – Lublin – Piaski, nu pe secțiune."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2014-10-15",
+          "note": {
+            "en": "Opened to traffic.",
+            "ro": "Dat în trafic."
+          },
+          "sourceRef": "gddkia-msbd-s17-rudnik-felin"
+        }
+      ],
+      "note": {
+        "en": "Carries S12 and S17 together. The original completion date was 5 December 2013.",
+        "ro": "Poartă împreună S12 și S17. Termenul inițial de finalizare era 5 decembrie 2013."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-rudnik-felin"
+      ],
+      "geometryRef": "rudnik-felin"
+    },
+    {
+      "id": "felin-piaski-wschod",
+      "name": {
+        "en": "Lublin Felin – Piaski Wschód (shared with S12)",
+        "ro": "Lublin Felin – Piaski Wschód (comun cu S12)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-11-12",
+        "opened": "2013-07-11"
+      },
+      "lengthKm": 18,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 460,
+          "currency": "PLN",
+          "year": 2010,
+          "note": "VAT basis not stated. Lowest bid, reported by pl.wikipedia as the contract value."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 460,
+              "currency": "PLN",
+              "year": 2010,
+              "note": "VAT basis not stated. Lowest bid for the Felin – Piaski Zachód part only (13.8 km), reported by pl.wikipedia as the contract value."
+            },
+            "date": "2010-11-12",
+            "sourceRef": "pl-wikipedia-s17"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2007–2013; GDDKiA gives the grant for the whole Kurów – Lublin – Piaski project, not per section.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2007–2013; GDDKiA indică grantul pentru întregul proiect Kurów – Lublin – Piaski, nu pe secțiune."
+          }
+        }
+      ],
+      "profile": {
+        "works": "reconstruction"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2010-11-12",
+          "note": {
+            "en": "Contract signed with a Budimex and Ferrovial Agroman consortium.",
+            "ro": "Contract semnat cu un consorțiu Budimex și Ferrovial Agroman."
+          },
+          "sourceRef": "pl-wikipedia-s17"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-07-11",
+          "note": {
+            "en": "Opened as an expressway.",
+            "ro": "Dat în trafic ca drum expres."
+          },
+          "sourceRef": "pl-wikipedia-s17"
+        }
+      ],
+      "note": {
+        "en": "Rebuild of the dual carriageway DK12/DK17: Lublin Felin – Piaski Zachód (13.8 km, all junctions open on 21 December 2012) and the Piaski bypass (4.2 km, open since 11 October 2004). Both were reclassified as an expressway on 11 July 2013, the date used here. GDDKiA gives 12 km for the first part. The drawn line ends at the start of the unbuilt Piaski Wschód – Łopiennik lot. Carries S12 and S17 together.",
+        "ro": "Reconstrucția drumului cu două căi DK12/DK17: Lublin Felin – Piaski Zachód (13,8 km, toate nodurile deschise la 21 decembrie 2012) și ocolitoarea Piaski (4,2 km, deschisă din 11 octombrie 2004). Ambele au devenit drum expres la 11 iulie 2013, data folosită aici. GDDKiA indică 12 km pentru prima parte. Linia desenată se oprește la începutul lotului nerealizat Piaski Wschód – Łopiennik. Găzduiește împreună S12 și S17."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-lublin-piaski",
+        "gddkia-msbd-s12-obwodnica-piask"
+      ],
+      "geometryRef": "felin-piaski-wschod"
+    },
+    {
+      "id": "piaski-lopiennik",
+      "name": {
+        "en": "Piaski Wschód – Łopiennik",
+        "ro": "Piaski Wschód – Łopiennik"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-09-27",
+        "expectedOpening": "2028-08-28"
+      },
+      "lengthKm": 16.3,
+      "contractors": [
+        {
+          "name": "Aldesa Construcciones Polska Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Aldesa Construcciones S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 41,
+        "value": {
+          "amount": 809.98,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 809.98,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2024-09-27",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-12-28",
+          "sourceRef": "pl-wikipedia-s17"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-09-27",
+          "note": {
+            "en": "Design-build contract signed after a first choice of Intercor (PLN 695.5 million) was overturned on appeal.",
+            "ro": "Contract de proiectare și execuție semnat după ce prima alegere, Intercor (695,5 mil. PLN), a fost anulată în urma unei contestații."
+          },
+          "sourceRef": "gddkia-msbd-s17-piaski-lopiennik"
+        }
+      ],
+      "note": {
+        "en": "Rebuilds the Piaski Wschód junction and adds three junctions (Piaski Południe, Fajsławice, Łopiennik) on a new alignment along DK17. The contract gives 41 months from signing, excluding winters outside design and permitting. The ZRID application was filed on 29 September 2025 and no works start is recorded; the monthly table gives 28 August 2028 as the contract deadline. The end of the drawn line is placed 16.3 km from Piaski Wschód because OpenStreetMap has no junction nodes there.",
+        "ro": "Reconstruiește nodul Piaski Wschód și adaugă trei noduri (Piaski Południe, Fajsławice, Łopiennik) pe un traseu nou, paralel cu DK17. Contractul prevede 41 de luni de la semnare, fără iernile din afara proiectării și autorizării. Cererea ZRID a fost depusă la 29 septembrie 2025 și nu este înregistrată începerea lucrărilor; tabelul lunar indică 28 august 2028 ca termen contractual. Capătul liniei desenate este plasat la 16,3 km de Piaski Wschód, deoarece OpenStreetMap nu are noduri de joncțiune acolo."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-piaski-lopiennik",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "piaski-lopiennik"
+    },
+    {
+      "id": "lopiennik-krasnystaw-polnoc",
+      "name": {
+        "en": "Łopiennik – Krasnystaw Północ",
+        "ro": "Łopiennik – Krasnystaw Północ"
+      },
+      "status": "tendered",
+      "lengthKm": 9.2,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-11-12",
+          "note": {
+            "en": "Design-build tender announced.",
+            "ro": "Licitație de proiectare și execuție lansată."
+          },
+          "sourceRef": "gddkia-msbd-s17-lopiennik-krasnystaw"
+        }
+      ],
+      "note": {
+        "en": "Planned for 2028–2030. The environmental decision was issued on 5 February 2024. The drawn line is placed by sourced length after the previous lot because OpenStreetMap has no junction nodes there.",
+        "ro": "Planificat pentru 2028–2030. Decizia de mediu a fost emisă la 5 februarie 2024. Linia desenată este plasată după lungimea sursă față de lotul precedent, deoarece OpenStreetMap nu are noduri de joncțiune acolo."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-lopiennik-krasnystaw",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lopiennik-krasnystaw-polnoc"
+    },
+    {
+      "id": "krasnystaw-izbica",
+      "name": {
+        "en": "Krasnystaw Północ – Izbica",
+        "ro": "Krasnystaw Północ – Izbica"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-10-10",
+        "expectedOpening": "2028-09-11"
+      },
+      "lengthKm": 18.8,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 961.55,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 961.55,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2024-10-10",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-12-28",
+          "sourceRef": "gddkia-msbd-s17-krasnystaw-izbica"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-10-10",
+          "note": {
+            "en": "Design-build contract signed; best offer chosen in July 2024.",
+            "ro": "Contract de proiectare și execuție semnat; cea mai bună ofertă aleasă în iulie 2024."
+          },
+          "sourceRef": "gddkia-msbd-s17-krasnystaw-izbica"
+        }
+      ],
+      "note": {
+        "en": "The ZRID application was filed on 10 October 2025 and no works start is recorded. The monthly table gives 11 September 2028 as the contract deadline; GDDKiA lists 2026–2028 as the planned years. The drawn line is placed by sourced length because OpenStreetMap has no junction nodes there.",
+        "ro": "Cererea ZRID a fost depusă la 10 octombrie 2025 și nu este înregistrată începerea lucrărilor. Tabelul lunar indică 11 septembrie 2028 ca termen contractual; GDDKiA indică anii planificați 2026–2028. Linia desenată este plasată după lungimea sursă, deoarece OpenStreetMap nu are noduri de joncțiune acolo."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-krasnystaw-izbica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krasnystaw-izbica"
+    },
+    {
+      "id": "izbica-sitaniec",
+      "name": {
+        "en": "Izbica – Zamość Sitaniec",
+        "ro": "Izbica – Zamość Sitaniec"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-08-20",
+        "expectedOpening": "2028-07-20"
+      },
+      "lengthKm": 9.9,
+      "contractors": [
+        {
+          "name": "GAP İnşaat Yatırım ve Dış Ticaret A.Ş.",
+          "role": "builder"
+        },
+        {
+          "name": "Fabe Polska Sp. z o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "SP Sine Midas Stroy Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 503.96,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 503.96,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2024-08-20",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-12-28",
+          "sourceRef": "gddkia-msbd-s17-izbica-sitaniec"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-08-20",
+          "note": {
+            "en": "Design-build contract signed. A first choice of 6 February 2024 (Aldesa, about PLN 522.3 million) was voided after a National Appeals Chamber ruling; the consortium was chosen on 7 May 2024.",
+            "ro": "Contract de proiectare și execuție semnat. Prima alegere din 6 februarie 2024 (Aldesa, circa 522,3 mil. PLN) a fost anulată după o hotărâre a Camerei Naționale de Apel; consorțiul a fost ales la 7 mai 2024."
+          },
+          "sourceRef": "gddkia-msbd-s17-izbica-sitaniec"
+        }
+      ],
+      "note": {
+        "en": "The ZRID application was filed on 20 August 2025 and no works start is recorded. The monthly table gives 20 July 2028 as the contract deadline; GDDKiA lists 2026–2028 as the planned years. The drawn line ends at the Sitaniec junction, the last point where OpenStreetMap has a mapped way.",
+        "ro": "Cererea ZRID a fost depusă la 20 august 2025 și nu este înregistrată începerea lucrărilor. Tabelul lunar indică 20 iulie 2028 ca termen contractual; GDDKiA indică anii planificați 2026–2028. Linia desenată se oprește la nodul Sitaniec, ultimul punct unde OpenStreetMap are un drum cartat."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-izbica-sitaniec",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "izbica-sitaniec"
+    },
+    {
+      "id": "sitaniec-zamosc-wschod",
+      "name": {
+        "en": "Zamość Sitaniec – Zamość Wschód",
+        "ro": "Zamość Sitaniec – Zamość Wschód"
+      },
+      "status": "tendered",
+      "lengthKm": 11.9,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-12-01",
+          "note": {
+            "en": "Design-build tender announced.",
+            "ro": "Licitație de proiectare și execuție lansată."
+          },
+          "sourceRef": "gddkia-msbd-s17-sitaniec-zamosc-wschod"
+        }
+      ],
+      "note": {
+        "en": "Part of the Zamość bypass. Planned for 2028–2031. The environmental decision was issued on 31 July 2024 (pl.wikipedia gives 5 August 2024).",
+        "ro": "Parte din ocolitoarea Zamość. Planificat pentru 2028–2031. Decizia de mediu a fost emisă la 31 iulie 2024 (pl.wikipedia indică 5 august 2024)."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-msbd-s17-sitaniec-zamosc-wschod",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sitaniec-zamosc-wschod"
+    },
+    {
+      "id": "zamosc-wschod-poludnie",
+      "name": {
+        "en": "Zamość Wschód – Zamość Południe",
+        "ro": "Zamość Wschód – Zamość Południe"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-10-14",
+        "constructionStart": "2025-07-22"
+      },
+      "lengthKm": 12.4,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 36,
+        "value": {
+          "amount": 440.63,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 440.63,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2022-10-14",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-12-22",
+          "sourceRef": "gddkia-msbd-s17-zamosc-wschod-poludnie"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-10-14",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și execuție semnat cu Budimex."
+          },
+          "sourceRef": "gddkia-msbd-s17-zamosc-wschod-poludnie"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-07-22",
+          "note": {
+            "en": "Works start date in the monthly contract table; the ZRID was obtained on 18 June 2025.",
+            "ro": "Data începerii lucrărilor din tabelul lunar al contractelor; ZRID obținut la 18 iunie 2025."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        }
+      ],
+      "note": {
+        "en": "The 36 months exclude winter periods (16 December – 15 March) in the works phase. The monthly table gives 14 April 2026 as the original contract deadline and 18 April 2028 after annexes, which does not fit GDDKiA's planned years 2025–2027, so no expected opening is recorded. It also gives PLN 448.468 million as the value after annexes. pl.wikipedia and the contract text give 12.2 km; GDDKiA gives 12.4 km.",
+        "ro": "Cele 36 de luni nu includ perioadele de iarnă (16 decembrie – 15 martie) din faza de execuție. Tabelul lunar indică 14 aprilie 2026 ca termen contractual inițial și 18 aprilie 2028 după acte adiționale, ceea ce nu se potrivește cu anii planificați de GDDKiA, 2025–2027, deci nu este înregistrată o deschidere estimată. Indică și 448,468 mil. PLN ca valoare după acte adiționale. pl.wikipedia și textul contractului indică 12,2 km; GDDKiA indică 12,4 km."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-zamosc-wschod-poludnie"
+      ],
+      "geometryRef": "zamosc-wschod-poludnie"
+    },
+    {
+      "id": "zamosc-poludnie-tomaszow-polnoc",
+      "name": {
+        "en": "Zamość Południe – Tomaszów Lubelski Północ",
+        "ro": "Zamość Południe – Tomaszów Lubelski Północ"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-11-28",
+        "constructionStart": "2026-02-02"
+      },
+      "lengthKm": 18.5,
+      "contractors": [
+        {
+          "name": "Kolin İnşaat Turizm Sanayi ve Ticaret A.Ş.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 822.46,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 822.46,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2022-11-28",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-12-22",
+          "sourceRef": "gddkia-msbd-s17-zamosc-poludnie-tomaszow"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-11-28",
+          "note": {
+            "en": "Design-build contract signed with Kolin İnşaat.",
+            "ro": "Contract de proiectare și execuție semnat cu Kolin İnşaat."
+          },
+          "sourceRef": "gddkia-msbd-s17-zamosc-poludnie-tomaszow"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-02-02",
+          "note": {
+            "en": "Works start date in the monthly contract table; the ZRID was issued on 2 December 2025.",
+            "ro": "Data începerii lucrărilor din tabelul lunar al contractelor; ZRID emis la 2 decembrie 2025."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        }
+      ],
+      "note": {
+        "en": "GDDKiA gives 18.5 km (18.498 km in the contract) and planned years 2025–2028. No expected opening is recorded: the monthly table's completion dates for this contract (28 May 2026) do not match the planned years.",
+        "ro": "GDDKiA indică 18,5 km (18,498 km în contract) și anii planificați 2025–2028. Nu este înregistrată o deschidere preconizată: datele de finalizare din tabelul lunar pentru acest contract (28 mai 2026) nu corespund anilor planificați."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-zamosc-poludnie-tomaszow"
+      ],
+      "geometryRef": "zamosc-poludnie-tomaszow-polnoc"
+    },
+    {
+      "id": "tomaszow-bypass",
+      "name": {
+        "en": "Tomaszów Lubelski bypass",
+        "ro": "Ocolitoarea Tomaszów Lubelski"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-11-17",
+        "constructionStart": "2019-03-16",
+        "opened": "2021-11-29"
+      },
+      "lengthKm": 9.6,
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 34,
+        "value": {
+          "amount": 193.42,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 193.42,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2017-11-17",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed by the EU; GDDKiA gives a grant of PLN 118.8 million for the project.",
+            "ro": "Cofinanțat de UE; GDDKiA indică un grant de 118,8 mil. PLN pentru proiect."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-09-30",
+          "sourceRef": "gddkia-msbd-s17-obwodnica-tomaszowa"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-11-17",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "gddkia-msbd-s17-obwodnica-tomaszowa"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-03-16",
+          "sourceRef": "gddkia-rpbdk-monthly"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-11-29",
+          "note": {
+            "en": "First carriageway opened; the second carriageway followed on 31 August 2023.",
+            "ro": "Prima cale de rulare dată în trafic; a doua a urmat la 31 august 2023."
+          },
+          "sourceRef": "pl-wikipedia-s17"
+        }
+      ],
+      "note": {
+        "en": "Opened with one carriageway on 29 November 2021 and as a dual carriageway on 31 August 2023 after a PLN 74 million annex of 23 September 2020. GDDKiA gives the total cost including preparation, land and supervision as about PLN 365 million. The 34 months exclude winter periods. The contract value after annexes is PLN 279.67 million in the section page and PLN 303.17 million in the monthly table.",
+        "ro": "Deschisă cu o singură cale de rulare la 29 noiembrie 2021 și cu două căi la 31 august 2023, după un act adițional de 74 mil. PLN din 23 septembrie 2020. GDDKiA indică costul total, cu pregătire, terenuri și supervizare, la circa 365 mil. PLN. Cele 34 de luni nu includ perioadele de iarnă. Valoarea contractului după acte adiționale este 279,67 mil. PLN în pagina secțiunii și 303,17 mil. PLN în tabelul lunar."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-obwodnica-tomaszowa"
+      ],
+      "geometryRef": "tomaszow-bypass"
+    },
+    {
+      "id": "tomaszow-hrebenne",
+      "name": {
+        "en": "Tomaszów Lubelski – Hrebenne",
+        "ro": "Tomaszów Lubelski – Hrebenne"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-11-28",
+        "constructionStart": "2025-06-27"
+      },
+      "lengthKm": 17.3,
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 598.27,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT. Contract value at signing, before annexes."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 598.27,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT. Contract value at signing, before annexes."
+            },
+            "date": "2022-11-28",
+            "sourceRef": "gddkia-rpbdk-monthly"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-12-22",
+          "sourceRef": "gddkia-msbd-s17-tomaszow-hrebenne"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-11-28",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și execuție semnat cu Budimex."
+          },
+          "sourceRef": "gddkia-msbd-s17-tomaszow-hrebenne"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-06-27",
+          "note": {
+            "en": "Works start date in the monthly contract table; the ZRID was issued on 28 May 2025.",
+            "ro": "Data începerii lucrărilor din tabelul lunar al contractelor; ZRID emis la 28 mai 2025."
+          },
+          "sourceRef": "gddkia-rpbdk-monthly"
+        }
+      ],
+      "note": {
+        "en": "Ends at the start of the 2 km Hrebenne bypass (signposted DK17, open since 28 April 2008), which is not drawn. pl.wikipedia gives a planned completion of November 2026; the monthly table gives 28 May 2026, so no expected opening is recorded. About 1 km less is drawn than the sourced length because the OpenStreetMap construction ways end before the Hrebenne junction.",
+        "ro": "Se termină la începutul ocolitoarei Hrebenne de 2 km (marcată DK17, deschisă din 28 aprilie 2008), care nu este desenată. pl.wikipedia indică finalizarea planificată în noiembrie 2026; tabelul lunar indică 28 mai 2026, deci nu este înregistrată o deschidere preconizată. Sunt desenați cu circa 1 km mai puțin decât lungimea sursă, deoarece drumurile în construcție din OpenStreetMap se termină înaintea nodului Hrebenne."
+      },
+      "sourceRefs": [
+        "pl-wikipedia-s17",
+        "gddkia-rpbdk-monthly",
+        "gddkia-msbd-s17-tomaszow-hrebenne",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tomaszow-hrebenne"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pl-wikipedia-s17",
+      "title": "Wikipedia (pl): Droga ekspresowa S17 (Polska), existing sections, construction history and sections in progress",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S17_(Polska)",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-rpbdk-monthly",
+      "title": "GDDKiA: Bieżąca realizacja RPBDK do 2030 r., monthly works-contract table (PDF, stan na październik 2026; contract values gross)",
+      "url": "https://www.gov.pl/attachment/ce4b1616-2288-4d98-9546-b10ad15a08ee",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-zakret-lubelska",
+      "title": "GDDKiA MSBD: S17 Warszawa Wschód – Lubelska",
+      "url": "https://www.gov.pl/web/gddkia/s17-zakret-z-wezlem--lubelska-bez-wezla",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-lubelska-kolbiel",
+      "title": "GDDKiA MSBD: S17 węzeł Lubelska – Kołbiel",
+      "url": "https://www.gov.pl/web/gddkia/s17-wezel-lubelska---kolbiel",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-obwodnica-kolbieli",
+      "title": "GDDKiA MSBD: S17 obwodnica Kołbieli",
+      "url": "https://www.gov.pl/web/gddkia/s17-obwodnica-kolbieli2",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-kolbiel-garwolin",
+      "title": "GDDKiA MSBD: S17 Kołbiel – Garwolin",
+      "url": "https://www.gov.pl/web/gddkia/s17-kolbiel--garwolin",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-obwodnica-garwolina",
+      "title": "GDDKiA MSBD: S17 obwodnica Garwolina",
+      "url": "https://www.gov.pl/web/gddkia/s17-obwodnica-garwolina",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-garwolin-gonczyce",
+      "title": "GDDKiA MSBD: S17 Garwolin (koniec obwodnicy) – Gończyce (koniec obwodnicy)",
+      "url": "https://www.gov.pl/web/gddkia/s17-garwolin-koniec-obwodnicy--gonczyce-koniec-obwodnicy",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-gonczyce-granica",
+      "title": "GDDKiA MSBD: S17 koniec obwodnicy Gończyc – granica województw",
+      "url": "https://www.gov.pl/web/gddkia/s17-koniec-obwodnicy-gonczyc---gr-woj-mazowieckiego-i-lubelskiego",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-granica-skrudki",
+      "title": "GDDKiA MSBD: S17 granica województwa – Skrudki",
+      "url": "https://www.gov.pl/web/gddkia/s17-granica-wojewodztwa---skrudki",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-skrudki-kurow",
+      "title": "GDDKiA MSBD: S17 Skrudki – Kurów Zachód",
+      "url": "https://www.gov.pl/web/gddkia/s17-skrudki-bez-wezla---kurow-zachod-bez-wezla",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-kurow-jastkow",
+      "title": "GDDKiA MSBD: S17 Kurów Zachód – Jastków",
+      "url": "https://www.gov.pl/web/gddkia/s17-kurow-zachod--jastkow-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-jastkow-slawinek",
+      "title": "GDDKiA MSBD: S17 Jastków – Lublin Sławinek",
+      "url": "https://www.gov.pl/web/gddkia/s17-jastkow--lublin-slawinek-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-slawinek-rudnik",
+      "title": "GDDKiA MSBD: S17 Dąbrowica – Lubartów i DK19 Lubartów – granica miasta Lublina",
+      "url": "https://www.gov.pl/web/gddkia/s17-dabrowica---lubartow-z-wezlem-i-dk19-lubartow---granica-administracyjna-miasta-lublina",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-rudnik-felin",
+      "title": "GDDKiA MSBD: S17 Rudnik – Felin",
+      "url": "https://www.gov.pl/web/gddkia/s17-rudnik--felin-z-wlaczeniem-do-drogi-lublin--piaski",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-lublin-piaski",
+      "title": "GDDKiA MSBD: S17 Lublin (węzeł Witosa) – Piaski (początek obwodnicy), rozbudowa",
+      "url": "https://www.gov.pl/web/gddkia/s17-lublin-wezel-witosa---piaski-poczatek-obwodnicy---rozbudowa",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s12-obwodnica-piask",
+      "title": "GDDKiA MSBD: S12 obwodnica Piask",
+      "url": "https://www.gov.pl/web/gddkia/s12-obwodnica-piask",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-piaski-lopiennik",
+      "title": "GDDKiA MSBD: S17 Piaski Wschód – Łopiennik",
+      "url": "https://www.gov.pl/web/gddkia/s17-piaski-z-wezlem---lopiennik-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-lopiennik-krasnystaw",
+      "title": "GDDKiA MSBD: S17 Łopiennik – Krasnystaw Północ",
+      "url": "https://www.gov.pl/web/gddkia/s17-lopiennik-bez-wezla---krasnystaw-polnoc-bez-wezla2",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-krasnystaw-izbica",
+      "title": "GDDKiA MSBD: S17 Krasnystaw Północ – Izbica",
+      "url": "https://www.gov.pl/web/gddkia/s17-krasnystaw-polnoc-z-wezlem--izbica--z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-izbica-sitaniec",
+      "title": "GDDKiA MSBD: S17 Izbica – Zamość Sitaniec",
+      "url": "https://www.gov.pl/web/gddkia/s17-izbica-bez-wezla--zamosc-sitaniec-z-wezlem",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-sitaniec-zamosc-wschod",
+      "title": "GDDKiA MSBD: S17 Zamość Sitaniec – Zamość Wschód",
+      "url": "https://www.gov.pl/web/gddkia/s17-zamosc-sitaniec---zamosc-wschod",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-zamosc-wschod-poludnie",
+      "title": "GDDKiA MSBD: S17 Zamość Wschód – Zamość Południe",
+      "url": "https://www.gov.pl/web/gddkia/s17-zamosc-wschod--zamosc-poludnie",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-zamosc-poludnie-tomaszow",
+      "title": "GDDKiA MSBD: S17 Zamość Południe – Tomaszów Lubelski Północ",
+      "url": "https://www.gov.pl/web/gddkia/s17-zamosc-poludnie-bez-wezla--tomaszow-lubelski-polnoc-bez-wezla",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-obwodnica-tomaszowa",
+      "title": "GDDKiA MSBD: S17 obwodnica Tomaszowa Lubelskiego",
+      "url": "https://www.gov.pl/web/gddkia/s17-obwodnica-tomaszowa-lubelskiego",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-msbd-s17-tomaszow-hrebenne",
+      "title": "GDDKiA MSBD: S17 Tomaszów Lubelski – Hrebenne",
+      "url": "https://www.gov.pl/web/gddkia/s17-tomaszow-lubelski--hrebenne",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

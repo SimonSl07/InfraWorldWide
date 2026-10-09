@@ -1,0 +1,135 @@
+{
+  "id": "bg-rail-plovdiv-burgas",
+  "country": "bg",
+  "category": "railway",
+  "name": {
+    "en": "Plovdiv – Burgas railway rehabilitation, Phase 2",
+    "ro": "Reabilitarea liniei de cale ferată Plovdiv – Burgas, Faza 2"
+  },
+  "description": {
+    "en": "Phase 2 of the rehabilitation of railway line 8 between Plovdiv and Burgas, run by the National Railway Infrastructure Company (NRIC). The project is worth BGN 810.02 million, of which BGN 563.16 million is EU grant, and covers track renewal at Skutare – Orizovo, the new double-track Orizovo – Mihaylovo section with the Chirpan tunnel, works at Yambol – Zimnitsa and Straldzha – Tserkovski, signalling and ETCS, and the replacement of level crossings. Only the sections with a recorded extent and contractor are drawn here.",
+    "ro": "Faza 2 a reabilitării liniei de cale ferată 8 dintre Plovdiv și Burgas, derulată de Compania Națională a Infrastructurii Feroviare (NRIC). Proiectul valorează 810,02 milioane BGN, din care 563,16 milioane BGN grant UE, și cuprinde reînnoirea căii la Skutare – Orizovo, noua secțiune cu linie dublă Orizovo – Mihaylovo cu tunelul Chirpan, lucrări la Yambol – Zimnitsa și Straldzha – Tserkovski, semnalizare și ETCS, precum și înlocuirea trecerilor la nivel. Aici sunt desenate doar secțiunile cu extindere și constructor înregistrate."
+  },
+  "operator": "bg-nric",
+  "lots": [
+    {
+      "id": "skutare-orizovo",
+      "name": {
+        "en": "Skutare – Orizovo",
+        "ro": "Skutare – Orizovo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2020-07-28"
+      },
+      "lengthKm": 27.5,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 130
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Phase 2 is co-financed by the Cohesion Fund through the Transport and Transport Infrastructure operational programme 2014–2020.",
+            "ro": "Faza 2 este cofinanțată din Fondul de coeziune prin Programul operațional Transport și infrastructură de transport 2014–2020."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Обединение „Европейски железници“",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 63.5,
+          "currency": "BGN",
+          "note": "Excluding VAT. Price year not stated by the source."
+        }
+      },
+      "note": {
+        "en": "Track renewal, bridge reconstruction, new catenary and signalling in stations, including Manole, Belozem and Opalchenets, for 90–130 km/h. Contract value BGN 63,498,462 excluding VAT. The opening date is that of the NRIC ribbon-cutting ceremony. Length measured from OpenStreetMap geometry (Skutare to Orizovo station).",
+        "ro": "Reînnoirea căii, reconstrucția podurilor, rețea de contact nouă și semnalizare în stații, inclusiv Manole, Belozem și Opalchenets, pentru 90–130 km/h. Valoarea contractului: 63.498.462 BGN fără TVA. Data deschiderii este cea a ceremoniei de tăiere a panglicii organizate de NRIC. Lungime măsurată din geometria OpenStreetMap (de la Skutare la stația Orizovo)."
+      },
+      "sourceRefs": [
+        "nric-phase2-project",
+        "nric-news-4545",
+        "openstreetmap"
+      ],
+      "geometryRef": "skutare-orizovo"
+    },
+    {
+      "id": "orizovo-mihaylovo",
+      "name": {
+        "en": "Orizovo – Mihaylovo (double track, Chirpan tunnel)",
+        "ro": "Orizovo – Mihaylovo (linie dublă, tunelul Chirpan)"
+      },
+      "status": "under_construction",
+      "lengthKm": 35.7,
+      "profile": {
+        "works": "reconstruction",
+        "maxSpeedKmh": 160,
+        "tracks": 2,
+        "tunnelKm": 0.744,
+        "stationCount": 3
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund through the Transport and Transport Infrastructure programme 2014–2020 and the Transport Connectivity programme 2021–2027.",
+            "ro": "Fondul de coeziune prin Programul Transport și infrastructură de transport 2014–2020 și programul Conectivitate în transport 2021–2027."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ДЗЗД „Евро жп инфраструктура“ („Инфраструктурно строителство“ АД, „Марко Обра Публика“ АД)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 217.98,
+          "currency": "BGN",
+          "note": "Excluding VAT. Price year not stated by the source."
+        }
+      },
+      "note": {
+        "en": "The single-track line with five intermediate stations becomes a double-track line with three stations (Orizovo, Chirpan, Mihaylovo) for 160 km/h, without level crossings, mostly on a new alignment. On 4 November 2025 NRIC reported 23.5 km of new track in service and 9.5 km still to come (33.0 km of new track in all). The 744 m Chirpan tunnel, bypassing Chirpan station, was fully excavated, with finishing works to follow; the NRIC project page gives 835 m. Contract value BGN 217,982,167 excluding VAT. Length measured from OpenStreetMap geometry (Orizovo to Mihaylovo station, via the new Chirpan tunnel alignment).",
+        "ro": "Linia simplă cu cinci stații intermediare devine linie dublă cu trei stații (Orizovo, Chirpan, Mihaylovo) pentru 160 km/h, fără treceri la nivel, în mare parte pe un traseu nou. La 4 noiembrie 2025 NRIC a raportat 23,5 km de cale nouă în exploatare și încă 9,5 km de urmat (33,0 km de cale nouă în total). Tunelul Chirpan, de 744 m, care ocolește stația Chirpan, a fost excavat complet, urmând lucrările de finisare; pagina proiectului NRIC indică 835 m. Valoarea contractului: 217.982.167 BGN fără TVA. Lungime măsurată din geometria OpenStreetMap (de la Orizovo la stația Mihaylovo, prin traseul nou cu tunelul Chirpan)."
+      },
+      "sourceRefs": [
+        "nric-news-4545",
+        "nric-phase2-project",
+        "openstreetmap"
+      ],
+      "geometryRef": "orizovo-mihaylovo"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nric-news-4545",
+      "title": "NRIC: Завърши прокопаването на тунела край Чирпан – ключово съоръжение по железопътната линия Пловдив–Бургас (4 Nov 2025)",
+      "url": "https://www.rail-infra.bg/bg/news/4545",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-phase2-project",
+      "title": "NRIC: Рехабилитация на железопътната линия Пловдив – Бургас, Фаза 2",
+      "url": "https://www.rail-infra.bg/bg/187",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (ODbL): railway line 8 Plovdiv – Burgas, relation 3850928",
+      "url": "https://www.openstreetmap.org/relation/3850928",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}

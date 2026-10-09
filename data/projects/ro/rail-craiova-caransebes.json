@@ -1,0 +1,475 @@
+{
+  "id": "ro-rail-craiova-caransebes",
+  "country": "ro",
+  "category": "railway",
+  "name": {
+    "en": "Craiova – Drobeta-Turnu Severin – Caransebeș railway rehabilitation",
+    "ro": "Reabilitarea liniei CF Craiova – Drobeta-Turnu Severin – Caransebeș"
+  },
+  "description": {
+    "en": "Rehabilitation of the 225.29 km Craiova – Filiași – Drobeta-Turnu Severin – Băile Herculane – Caransebeș line (km 248+760 – km 474+046.53), part of the Orient/East-Med corridor, in six design-and-build lots. Five lots have contracts (values per lot below, on differing price years and VAT bases); for lot 3, CFR has designated FCC Construccion as winner without a published signing. The line is to be electrified at 25 kV with ERTMS level 2. Lots 5 and 6 include new double-track tunnels at Poarta, and CFR plans to close Drobeta Turnu Severin – Caransebeș from February 2027 to February 2032.",
+    "ro": "Reabilitarea liniei Craiova – Filiași – Drobeta-Turnu Severin – Băile Herculane – Caransebeș, de 225,29 km (km 248+760 – km 474+046,53), parte a Coridorului Orient/Est-Mediteranean, în șase loturi de proiectare și execuție. Cinci loturi au contracte (valorile pe lot mai jos, pe ani de preț și baze TVA diferite); pentru lotul 3, CFR a desemnat câștigător FCC Construccion, fără o semnare publicată. Linia va fi electrificată la 25 kV și dotată cu ERTMS nivel 2. Loturile 5 și 6 includ tuneluri noi cu linie dublă la Poarta, iar CFR are în vedere închiderea liniei Drobeta Turnu Severin – Caransebeș din februarie 2027 până în februarie 2032."
+  },
+  "operator": "ro-cfr",
+  "lots": [
+    {
+      "id": "l1-craiova-filiasi",
+      "name": {
+        "en": "Lot 1: Craiova – Filiași",
+        "ro": "Lotul 1: Craiova – Filiași"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-03-31"
+      },
+      "lengthKm": 37.975,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2037.42,
+              "currency": "RON",
+              "year": 2026,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2026-03-31",
+            "sourceRef": "cfr-ro-2026-03-31-lot1"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Transport Programme 2021–2027 (external non-reimbursable funds)",
+            "ro": "Programul Transport 2021–2027 (fonduri externe nerambursabile)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget through the Ministry of Transport and Infrastructure",
+            "ro": "Bugetul de stat prin Ministerul Transporturilor și Infrastructurii"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "TrackWorks (Alstom Transport – Terna)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 42,
+        "guaranteeMonths": 120,
+        "value": {
+          "amount": 2037.42,
+          "currency": "RON",
+          "year": 2026,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Design-and-build contract signed on 31 March 2026 with the TrackWorks association (Alstom Transport lead, Terna), RON 2,037,420,531.88 excluding VAT: 12 months of design, 42 months of works, 120 months of guarantee. CFR gives the lot as km 248+760 – km 286+735 and no works start date. Electrification at 25 kV, ERTMS level 2, freight at 100–120 km/h and passenger trains at 120–160 km/h. Length from the CFR chainage; the drawn line follows the existing track between the station areas.",
+        "ro": "Contract de proiectare și execuție semnat la 31 martie 2026 cu asocierea TrackWorks (lider Alstom Transport, Terna), 2.037.420.531,88 lei fără TVA: 12 luni proiectare, 42 de luni execuție, 120 de luni garanție. CFR indică lotul între km 248+760 și km 286+735 și nu comunică o dată de începere a lucrărilor. Electrificare la 25 kV, ERTMS nivel 2, trenuri de marfă la 100–120 km/h și de călători la 120–160 km/h. Lungimea provine din kilometrajul CFR; linia desenată urmează calea existentă între zonele stațiilor."
+      },
+      "sourceRefs": [
+        "cfr-ro-2026-03-31-lot1",
+        "osm"
+      ],
+      "geometryRef": "l1-craiova-filiasi"
+    },
+    {
+      "id": "l2-filiasi-igiroasa",
+      "name": {
+        "en": "Lot 2: Filiași – Igiroasa",
+        "ro": "Lotul 2: Filiași – Igiroasa"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-07-20"
+      },
+      "lengthKm": 44.265,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1800.13,
+              "currency": "RON",
+              "year": 2026,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2026-07-20",
+            "sourceRef": "cfr-ro-2026-07-20-lot2"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Transport Programme 2021–2027 (external non-reimbursable funds)",
+            "ro": "Programul Transport 2021–2027 (fonduri externe nerambursabile)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget through the Ministry of Transport and Infrastructure",
+            "ro": "Bugetul de stat prin Ministerul Transporturilor și Infrastructurii"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "TrackWorks (Alstom Transport – Terna)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 48,
+        "guaranteeMonths": 120,
+        "value": {
+          "amount": 1800.13,
+          "currency": "RON",
+          "year": 2026,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Design-and-build contract signed on 20 July 2026 with the TrackWorks association (Alstom Transport lead, Terna), RON 1,800,131,764.37 excluding VAT: 12 months of design, 48 months of works, 120 months of guarantee. CFR gives the lot as km 286+735 – km 331+000 and no works start date. Length from the CFR chainage.",
+        "ro": "Contract de proiectare și execuție semnat la 20 iulie 2026 cu asocierea TrackWorks (lider Alstom Transport, Terna), 1.800.131.764,37 lei fără TVA: 12 luni proiectare, 48 de luni execuție, 120 de luni garanție. CFR indică lotul între km 286+735 și km 331+000 și nu comunică o dată de începere a lucrărilor. Lungimea provine din kilometrajul CFR."
+      },
+      "sourceRefs": [
+        "cfr-ro-2026-07-20-lot2",
+        "osm"
+      ],
+      "geometryRef": "l2-filiasi-igiroasa"
+    },
+    {
+      "id": "l3-igiroasa-drobeta",
+      "name": {
+        "en": "Lot 3: Igiroasa – Drobeta-Turnu Severin",
+        "ro": "Lotul 3: Igiroasa – Drobeta-Turnu Severin"
+      },
+      "status": "tendered",
+      "lengthKm": 31.632,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Proposed for funding from the Transport Programme 2021–2027 (external non-reimbursable funds)",
+            "ro": "Propus pentru finanțare din Programul Transport 2021–2027 (fonduri externe nerambursabile)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget through the Ministry of Transport and Infrastructure",
+            "ro": "Bugetul de stat prin Ministerul Transporturilor și Infrastructurii"
+          }
+        }
+      ],
+      "note": {
+        "en": "On 25 June 2026 CFR announced FCC Construccion S.A. as the designated winner with an offer of RON 5,166,618,843.00 excluding VAT; no contract signing has been published. The estimated contract value was RON 5,167.14 – 6,152.38 million excluding VAT. Planned duration 135 months: 12 months of design, 60 months of works, at least 60 months of guarantee, 3 months after final acceptance. CFR gives the lot as km 331+000 – km 362+632, including the links to the Prunișor and Drobeta Marfă stations and the Dudașu junction. Length from the CFR chainage.",
+        "ro": "La 25 iunie 2026 CFR a anunțat FCC Construccion S.A. drept câștigător desemnat, cu o ofertă de 5.166.618.843,00 lei fără TVA; nu a fost publicată semnarea contractului. Valoarea estimată a contractului a fost de 5.167,14 – 6.152,38 milioane lei fără TVA. Durata estimată este de 135 de luni: 12 luni proiectare, 60 de luni execuție, minimum 60 de luni garanție, 3 luni după recepția finală. CFR indică lotul între km 331+000 și km 362+632, cu legăturile la stațiile Prunișor și Drobeta Marfă și racordul Dudașu. Lungimea provine din kilometrajul CFR."
+      },
+      "sourceRefs": [
+        "cfr-ro-2026-06-25-lot3",
+        "osm"
+      ],
+      "geometryRef": "l3-igiroasa-drobeta"
+    },
+    {
+      "id": "l4-drobeta-baile-herculane",
+      "name": {
+        "en": "Lot 4: Drobeta-Turnu Severin – Băile Herculane",
+        "ro": "Lotul 4: Drobeta-Turnu Severin – Băile Herculane"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-06-23"
+      },
+      "lengthKm": 41.618,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2309.94,
+              "currency": "RON",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2025-06-23",
+            "sourceRef": "cfr-ro-2025-06-23-lot4"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 100
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Transport Programme 2021–2027 and the state budget through the Ministry of Transport and Infrastructure",
+            "ro": "Programul Transport 2021–2027 și bugetul de stat prin Ministerul Transporturilor și Infrastructurii"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "İçtaş – Rotary Construcții Mentenanță",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 60,
+        "guaranteeMonths": 120,
+        "value": {
+          "amount": 2309.94,
+          "currency": "RON",
+          "year": 2025,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Design-and-build contract signed on 23 June 2025 with the association of İçtaş İnşaat (lead) and Rotary Construcții Mentenanță, RON 2,309,944,931.12 excluding VAT: 12 months of design, 60 months of works, 120 months of guarantee. CFR gives the lot as km 362+632 – km 404+250, with seven existing tunnels rehabilitated (Moșu, Baba, Vir, Vârciorova, Bahna, Alion, Tufari) and a maximum speed of 100 km/h. CFR plans to close the Drobeta Turnu Severin – Caransebeș section to traffic from February 2027 to February 2032 for lots 4 to 6.",
+        "ro": "Contract de proiectare și execuție semnat la 23 iunie 2025 cu asocierea İçtaş İnşaat (lider) și Rotary Construcții Mentenanță, 2.309.944.931,12 lei fără TVA: 12 luni proiectare, 60 de luni execuție, 120 de luni garanție. CFR indică lotul între km 362+632 și km 404+250, cu reabilitarea a șapte tuneluri existente (Moșu, Baba, Vir, Vârciorova, Bahna, Alion, Tufari) și viteză maximă de 100 km/h. CFR are în vedere închiderea totală a secțiunii Drobeta Turnu Severin – Caransebeș între februarie 2027 și februarie 2032 pentru loturile 4–6."
+      },
+      "sourceRefs": [
+        "cfr-ro-2025-06-23-lot4",
+        "cfr-ro-2026-06-19-drobeta-caransebes",
+        "osm"
+      ],
+      "geometryRef": "l4-drobeta-baile-herculane"
+    },
+    {
+      "id": "l5-baile-herculane-nou-poarta",
+      "name": {
+        "en": "Lot 5: Băile Herculane – Nou Poarta",
+        "ro": "Lotul 5: Băile Herculane – Nou Poarta"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-08-27"
+      },
+      "lengthKm": 32.637,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2143.13,
+              "currency": "RON",
+              "year": 2025,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2025-08-27",
+            "sourceRef": "cfr-ro-2025-08-27-lot5"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 100
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Transport Programme 2021–2027 and the state budget through the Ministry of Transport and Infrastructure",
+            "ro": "Programul Transport 2021–2027 și bugetul de stat prin Ministerul Transporturilor și Infrastructurii"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PORR Construct",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 48,
+        "value": {
+          "amount": 2143.13,
+          "currency": "RON",
+          "year": 2025,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Design-and-build contract signed on 27 August 2025 with PORR Construct, RON 2,143,133,821.65 excluding VAT (CFR calls it the estimated total value): 12 months of design and 48 months of works, 60 months in all. CFR gives the lot as km 404+250 – km 436+887 (Cap X Băile Herculane – Cap X Nou Poarta halt), with the Rachitoberg tunnel (496 m) rehabilitated and the new double-track Poarta I tunnel (1,279 m) built, at a maximum speed of 100 km/h. CFR plans to close the Drobeta Turnu Severin – Caransebeș section to traffic from February 2027 to February 2032 for lots 4 to 6.",
+        "ro": "Contract de proiectare și execuție semnat la 27 august 2025 cu PORR Construct, 2.143.133.821,65 lei fără TVA (CFR îl numește valoare totală estimată): 12 luni proiectare și 48 de luni execuție, 60 de luni în total. CFR indică lotul între km 404+250 și km 436+887 (Cap X Băile Herculane – Cap X postul de oprire Nou Poarta), cu reabilitarea tunelului Rachitoberg (496 m) și construirea tunelului nou Poarta I (1.279 m, linie dublă), la viteză maximă de 100 km/h. CFR are în vedere închiderea totală a secțiunii Drobeta Turnu Severin – Caransebeș între februarie 2027 și februarie 2032 pentru loturile 4–6."
+      },
+      "sourceRefs": [
+        "cfr-ro-2025-08-27-lot5",
+        "cfr-ro-2026-06-19-drobeta-caransebes",
+        "osm"
+      ],
+      "geometryRef": "l5-baile-herculane-nou-poarta"
+    },
+    {
+      "id": "l6-nou-poarta-caransebes",
+      "name": {
+        "en": "Lot 6: Nou Poarta – Caransebeș",
+        "ro": "Lotul 6: Nou Poarta – Caransebeș"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-12-11"
+      },
+      "lengthKm": 37.15953,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2114.35,
+              "currency": "RON",
+              "year": 2025,
+              "scope": "works",
+              "note": "VAT basis not stated by CFR."
+            },
+            "date": "2025-12-11",
+            "sourceRef": "cfr-ro-2025-12-11-lot6"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 120
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Transport Programme 2021–2027 (external non-reimbursable funds)",
+            "ro": "Programul Transport 2021–2027 (fonduri externe nerambursabile)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget through the Ministry of Transport and Infrastructure",
+            "ro": "Bugetul de stat prin Ministerul Transporturilor și Infrastructurii"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "İçtaş – Rotary Construcții Mentenanță",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "designMonths": 12,
+        "executionMonths": 60,
+        "guaranteeMonths": 120,
+        "value": {
+          "amount": 2114.35,
+          "currency": "RON",
+          "year": 2025,
+          "scope": "works",
+          "note": "VAT basis not stated by CFR."
+        }
+      },
+      "note": {
+        "en": "Design-and-build contract announced on 11 December 2025 with the association of İçtaş İnşaat (lead) and Rotary Construcții Mentenanță, RON 2,114,352,202.96 (CFR does not say whether VAT is included): 12 months of design, 60 months of works, 120 months of guarantee. CFR gives the lot as km 436+887 – km 474+046.53, with the Feneș and Tâmpa tunnels rehabilitated (Tâmpa widened), the new double-track Poarta 2 (550 m) and Poarta 3 (305 m) tunnels built, and a maximum speed of 120 km/h. CFR plans to close the Drobeta Turnu Severin – Caransebeș section to traffic from February 2027 to February 2032 for lots 4 to 6.",
+        "ro": "Contract de proiectare și execuție anunțat la 11 decembrie 2025 cu asocierea İçtaş İnşaat (lider) și Rotary Construcții Mentenanță, 2.114.352.202,96 lei (CFR nu precizează dacă include TVA): 12 luni proiectare, 60 de luni execuție, 120 de luni garanție. CFR indică lotul între km 436+887 și km 474+046,53, cu reabilitarea tunelurilor Feneș și Tâmpa (Tâmpa lărgit), construirea tunelurilor noi Poarta 2 (550 m) și Poarta 3 (305 m), pe linie dublă, și viteză maximă de 120 km/h. CFR are în vedere închiderea totală a secțiunii Drobeta Turnu Severin – Caransebeș între februarie 2027 și februarie 2032 pentru loturile 4–6."
+      },
+      "sourceRefs": [
+        "cfr-ro-2025-12-11-lot6",
+        "cfr-ro-2026-06-19-drobeta-caransebes",
+        "osm"
+      ],
+      "geometryRef": "l6-nou-poarta-caransebes"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cfr-ro-2026-03-31-lot1",
+      "title": "CFR SA: Semnarea contractului pentru reabilitarea liniei feroviare Craiova – Drobeta Turnu Severin – Caransebeș, Lot 1 Craiova – Filiași (2026-03-31)",
+      "url": "https://cfr.ro/bucuresti-31-martie-2026-semnarea-contractului-pentru-reabilitarea-liniei-feroviare-craiova-drobeta-turnu-severin-caransebeslot-1-craiova-filiasi/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-2026-07-20-lot2",
+      "title": "CFR SA: CFR S.A. a semnat contractul de 1,8 miliarde de lei pentru reabilitarea lotului Filiași – Igiroasa (2026-07-20)",
+      "url": "https://cfr.ro/bucuresti-20-iulie-2026-cfr-s-a-a-semnat-contractul-de-18-miliarde-de-lei-pentru-reabilitarea-lotului-filiasi-igiroasa/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-2026-06-25-lot3",
+      "title": "CFR SA: CFR S.A. anunță desemnarea ofertei câștigătoare pentru Lotul 3 Igiroasa – Drobeta Turnu Severin (2026-06-25)",
+      "url": "https://cfr.ro/25-iunie-2026-cfr-s-a-anunta-desemnarea-ofertei-castigatoare-pentru-lotul-3-igiroasa-drobeta-turnu-severin-un-pas-major-in-modernizarea-liniei-feroviare-craiova-drobeta-turnu-s/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-2025-06-23-lot4",
+      "title": "CFR SA: Semnarea contractului pentru modernizarea liniei feroviare Drobeta Turnu Severin – Băile Herculane, Lot 4 (2025-06-23)",
+      "url": "https://cfr.ro/23-iunie-2025-semnarea-contractului-pentru-modernizarea-liniei-feroviare-drobeta-turnu-severin-baile-herculane-un-nou-pas-in-dezvoltarea-corido/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-2025-08-27-lot5",
+      "title": "CFR SA: Semnare contract pentru proiectare și execuție, Reabilitarea liniei feroviare Craiova – Drobeta Turnu Severin – Caransebeș, Lot 5 Cap X Băile Herculane – Cap X PO Nou Poarta (2025-08-27)",
+      "url": "https://cfr.ro/27-august-2025-semnare-contract-pentru-proiectare-si-executie-lucrari-aferente-obiectivului-de-investitii-reabilitarea-liniei-feroviare-craiova-drobeta-turnu-severin-car/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-2025-12-11-lot6",
+      "title": "CFR SA: Start pentru Lotul 6 al proiectului Craiova – Caransebeș (2025-12-11)",
+      "url": "https://cfr.ro/bucuresti-11-decembrie-2025-start-pentru-lotul-6-al-proiectului-craiova-caransebes/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-2026-06-19-drobeta-caransebes",
+      "title": "CFR SA: Precizări CFR S.A. privind închiderea planificată a liniei Drobeta Turnu Severin – Caransebeș, pentru lucrări de modernizare (2026-06-19)",
+      "url": "https://cfr.ro/bucuresti-19-iunie-2026-precizari-cfr-s-a-privind-inchiderea-planificata-a-liniei-drobeta-turnu-severin-caransebes-pentru-lucrari-de-modernizare/",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry of the existing Craiova – Caransebeș line, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-05"
+    }
+  ]
+}

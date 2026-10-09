@@ -1,0 +1,1803 @@
+{
+  "id": "pl-s3",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S3 expressway (Świnoujście – Szczecin – Zielona Góra – Legnica – Lubawka)",
+    "ro": "Drumul expres S3 (Świnoujście – Szczecin – Zielona Góra – Legnica – Lubawka)"
+  },
+  "description": {
+    "en": "Poland's western north–south expressway from the Świnoujście ferry terminal to the Czech border at Lubawka, drawn as one carriageway from OpenStreetMap relation 2317380. Lots follow GDDKiA contract sections, with dates and values from the GDDKiA Mapa Stanu Budowy Dróg pages and the Polish Wikipedia article. The Szczecin – Gorzów part opened in 2010, Gorzów – Sulechów in 2013–2014, Nowa Sól – Legnica in 2018–2021, Legnica – Bolków in 2018, Bolków – Kamienna Góra in 2024 and Świnoujście – Troszyn in October 2025. Older single-carriageway parts that gained a second carriageway are one lot each, so the old road shows as opened. The 18.3 km from Rzęśnica to Szczecin Klucz is shared with the A6 and is not drawn here, so it is not counted twice. Money is in million PLN as listed by GDDKiA; the pages do not state whether it includes VAT.",
+    "ro": "Drumul expres vestic nord–sud al Poloniei, de la terminalul de feriboturi Świnoujście până la granița cehă de la Lubawka, desenat ca o singură cale de rulare din relația OpenStreetMap 2317380. Loturile urmează secțiunile de contract GDDKiA, cu date și valori din paginile GDDKiA Mapa Stanu Budowy Dróg și din articolul Wikipedia poloneză. Sectorul Szczecin – Gorzów a fost deschis în 2010, Gorzów – Sulechów în 2013–2014, Nowa Sól – Legnica în 2018–2021, Legnica – Bolków în 2018, Bolków – Kamienna Góra în 2024 și Świnoujście – Troszyn în octombrie 2025. Sectoarele vechi cu o singură cale care au primit a doua cale sunt câte un lot, deci drumul vechi apare ca deschis. Cei 18,3 km de la Rzęśnica la Szczecin Klucz sunt comuni cu A6 și nu sunt desenați aici, ca să nu fie numărați de două ori. Sumele sunt în milioane PLN, așa cum le indică GDDKiA; paginile nu precizează dacă includ TVA."
+  },
+  "operator": "pl-gddkia",
+  "lots": [
+    {
+      "id": "swinoujscie-dargobadz",
+      "name": {
+        "en": "Świnoujście – Dargobądz",
+        "ro": "Świnoujście – Dargobądz"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-08-28",
+        "opened": "2025-10-20"
+      },
+      "lengthKm": 17.05,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 688.81,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Contract value as listed on the MSBD page. VAT basis not stated on the source page."
+            },
+            "date": "2020-08-28",
+            "sourceRef": "msbd-swinoujscie-dargobadz"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-12-02",
+          "sourceRef": "msbd-swinoujscie-dargobadz"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-08-28",
+          "note": {
+            "en": "Contract signed; best offer chosen on 26 June 2020.",
+            "ro": "Contract semnat; cea mai bună ofertă aleasă la 26 iunie 2020."
+          },
+          "sourceRef": "msbd-swinoujscie-dargobadz"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-10-20",
+          "sourceRef": "msbd-swinoujscie-dargobadz"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 688.81,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Contract value as listed on the MSBD page. VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Design-build 2x2 expressway from the roundabout at the Świna tunnel in Świnoujście to the Dargobądz junction. Permanent traffic arrangement introduced on 20 October 2025. The lot contains the Międzyzdroje bypass (2.9 km, a single carriageway from 2008 until 2025, per plwiki). The drawn centreline is 7% longer than the MSBD length.",
+        "ro": "Drum expres 2x2 proiectat și construit, de la giratoriul de la tunelul sub Świna din Świnoujście până la nodul Dargobądz. Organizarea permanentă a traficului a fost introdusă la 20 octombrie 2025. Lotul include ocolitoarea Międzyzdroje (2,9 km, cu o singură cale de rulare din 2008 până în 2025, conform plwiki). Axul desenat este cu 7% mai lung decât lungimea din MSBD."
+      },
+      "sourceRefs": [
+        "msbd-swinoujscie-dargobadz",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "swinoujscie-dargobadz"
+    },
+    {
+      "id": "dargobadz-troszyn",
+      "name": {
+        "en": "Dargobądz – Troszyn",
+        "ro": "Dargobądz – Troszyn"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-08-28",
+        "opened": "2025-10-07"
+      },
+      "lengthKm": 16,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 679.35,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Contract value as listed on the MSBD page. VAT basis not stated on the source page."
+            },
+            "date": "2020-08-28",
+            "sourceRef": "msbd-dargobadz-troszyn"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-12-02",
+          "sourceRef": "msbd-dargobadz-troszyn"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-08-28",
+          "note": {
+            "en": "Contract signed; best offer chosen on 26 June 2020.",
+            "ro": "Contract semnat; cea mai bună ofertă aleasă la 26 iunie 2020."
+          },
+          "sourceRef": "msbd-dargobadz-troszyn"
+        },
+        {
+          "kind": "suspended",
+          "date": "2024-03",
+          "note": {
+            "en": "Polbud suspended works over a claim for contract revaluation.",
+            "ro": "Polbud a suspendat lucrările din cauza unei pretenții de reevaluare a contractului."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "resumed",
+          "date": "2024-03-21",
+          "note": {
+            "en": "Works resumed under a preliminary agreement of 20 March 2024.",
+            "ro": "Lucrările au fost reluate în baza unui acord preliminar din 20 martie 2024."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-10-07",
+          "sourceRef": "msbd-dargobadz-troszyn"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Polbud-Pomorze",
+          "role": "builder"
+        },
+        {
+          "name": "Intop",
+          "role": "builder"
+        },
+        {
+          "name": "PRD Nowogard",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 679.35,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Contract value as listed on the MSBD page. VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Design-build 2x2 expressway from the Dargobądz junction to Troszyn, with the Wolin Zachód and Wolin Wschód junctions. The MSBD page gives 7 October 2025 for permanent traffic arrangement on the main carriageways; plwiki gives 20 October 2025 for both Świnoujście – Troszyn lots. Builders are Polbud-Pomorze, Intop (Skarbimierzyce and Warszawa) and PRD Nowogard. The lot includes the Wolin bypass (2.5 km, a single carriageway from December 2003 until 2025, per plwiki). plwiki gives the length as 15.9 km.",
+        "ro": "Drum expres 2x2 proiectat și construit, de la nodul Dargobądz până la Troszyn, cu nodurile Wolin Zachód și Wolin Wschód. Pagina MSBD indică 7 octombrie 2025 pentru organizarea permanentă a traficului pe căile principale; plwiki indică 20 octombrie 2025 pentru ambele loturi Świnoujście – Troszyn. Constructorii sunt Polbud-Pomorze, Intop (Skarbimierzyce și Varșovia) și PRD Nowogard. Lotul include ocolitoarea Wolin (2,5 km, cu o singură cale de rulare din decembrie 2003 până în 2025, conform plwiki). plwiki indică lungimea de 15,9 km."
+      },
+      "sourceRefs": [
+        "msbd-dargobadz-troszyn",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dargobadz-troszyn"
+    },
+    {
+      "id": "troszyn-obwodnica",
+      "name": {
+        "en": "Troszyn, Parłówko and Ostromice bypass",
+        "ro": "Ocolitoarea Troszyn, Parłówko și Ostromice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-11-20",
+        "opened": "2011-07-13"
+      },
+      "lengthKm": 6.1,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-11-20",
+          "note": {
+            "en": "Contract signed with Budimex Dromex after a restricted tender with six offers.",
+            "ro": "Contract semnat cu Budimex Dromex după o licitație restrânsă cu șase oferte."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-07-13",
+          "sourceRef": "plwiki-s3"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex Dromex",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Bypass of Troszyn, Parłówko and Ostromice: 6.131 km per plwiki (4.205 km of it dual carriageway), 6.1 km per MSBD. plwiki gives 13 July 2011 for opening to traffic; the MSBD page gives 9 January 2012 for permanent traffic arrangement. Until the Świnoujście – Troszyn lots opened in October 2025 this was the northern end of the S3.",
+        "ro": "Ocolitoare pentru Troszyn, Parłówko și Ostromice: 6,131 km conform plwiki (din care 4,205 km cu două căi de rulare), 6,1 km conform MSBD. plwiki indică 13 iulie 2011 pentru darea în trafic; pagina MSBD indică 9 ianuarie 2012 pentru organizarea permanentă a traficului. Până la deschiderea loturilor Świnoujście – Troszyn în octombrie 2025, acesta a fost capătul nordic al S3."
+      },
+      "sourceRefs": [
+        "plwiki-s3",
+        "msbd-troszyn-bypass",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "troszyn-obwodnica"
+    },
+    {
+      "id": "brzozowo-miekowo",
+      "name": {
+        "en": "Brzozowo – Miękowo",
+        "ro": "Brzozowo – Miękowo"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-18",
+        "opened": "2021-04-27"
+      },
+      "lengthKm": 22.14,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 385.78,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Contract value as listed on the MSBD page (plwiki gives 360.54 at signing). VAT basis not stated on the source page."
+            },
+            "date": "2017-12-18",
+            "sourceRef": "msbd-brzozowo-miekowo"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2015-10",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-12-18",
+          "note": {
+            "en": "Contract signed with Budimex.",
+            "ro": "Contract semnat cu Budimex."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-04-27",
+          "sourceRef": "msbd-brzozowo-miekowo"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ); the MSBD page lists 225.54 million PLN of co-financing.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ); pagina MSBD indică o cofinanțare de 225,54 milioane PLN."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 385.78,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Contract value as listed on the MSBD page (plwiki gives 360.54 at signing). VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Brzozowo bypass and upgrade of DK3 to expressway standard up to the start of the Miękowo bypass; design-build. The MSBD page gives 22.14 km and plwiki 22.4 km; the drawn centreline between the Brzozowo and Miękowo junctions is 20.0 km, 9% shorter. Opened 27 April 2021 (main carriageway).",
+        "ro": "Ocolitoarea Brzozowo și modernizarea DK3 la standard de drum expres până la începutul ocolitoarei Miękowo; proiectare și construcție. Pagina MSBD indică 22,14 km și plwiki 22,4 km; axul desenat între nodurile Brzozowo și Miękowo are 20,0 km, cu 9% mai puțin. Deschis la 27 aprilie 2021 (calea principală)."
+      },
+      "sourceRefs": [
+        "msbd-brzozowo-miekowo",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "brzozowo-miekowo"
+    },
+    {
+      "id": "miekowo-obwodnica",
+      "name": {
+        "en": "Miękowo bypass (Miękowo – Goleniów Północ)",
+        "ro": "Ocolitoarea Miękowo (Miękowo – Goleniów Północ)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-11-26",
+        "opened": "2011-12-16"
+      },
+      "lengthKm": 4.1,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-11-26",
+          "note": {
+            "en": "Contract signed with Strabag; the tender was won on 21 September 2009.",
+            "ro": "Contract semnat cu Strabag; licitația fusese câștigată la 21 septembrie 2009."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2011-07-15",
+          "note": {
+            "en": "West carriageway opened.",
+            "ro": "Calea de rulare vestică deschisă."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-12-16",
+          "note": {
+            "en": "Second carriageway, northern junction and service roads opened.",
+            "ro": "Au fost deschise a doua cale de rulare, nodul nordic și drumurile de serviciu."
+          },
+          "sourceRef": "plwiki-s3"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Dual-carriageway bypass of Miękowo with the Miękowo junction at its north end. The west carriageway opened on 15 July 2011 and the second carriageway and junction on 16 December 2011. The drawn centreline is 3.7 km.",
+        "ro": "Ocolitoare cu două căi de rulare pentru Miękowo, cu nodul Miękowo la capătul nordic. Calea vestică a fost deschisă la 15 iulie 2011, iar a doua cale și nodul la 16 decembrie 2011. Axul desenat are 3,7 km."
+      },
+      "sourceRefs": [
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miekowo-obwodnica"
+    },
+    {
+      "id": "goleniow-rzesnica",
+      "name": {
+        "en": "Goleniów Północ – Rzęśnica",
+        "ro": "Goleniów Północ – Rzęśnica"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1979-07-20"
+      },
+      "lengthKm": 19,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1979-07-20",
+          "note": {
+            "en": "Dual-carriageway section Rzęśnica – Rurka and a single-carriageway Goleniów bypass opened to traffic.",
+            "ro": "Au fost date în trafic sectorul cu două căi Rzęśnica – Rurka și ocolitoarea Goleniów cu o singură cale."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2020-06-10",
+          "note": {
+            "en": "Rzęśnica and Kliniska junctions opened.",
+            "ro": "Au fost deschise nodurile Rzęśnica și Kliniska."
+          },
+          "sourceRef": "plwiki-s3"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Dual carriageway built in 1976–1982 with at-grade junctions, opened 20 July 1979 (plwiki). A design-build contract with Budimex, signed 18 December 2017 for 126.28 million PLN (MSBD, VAT basis not stated), upgraded it to expressway standard with the new Kliniska junction and a rebuilt Rzęśnica junction; works finished on 27 April 2021. plwiki gives the length as 19 km; the MSBD page gives about 21 km for the whole project area, with the main works on about 4.0 km. The upgrade is not a separate lot, so the old road stays opened.",
+        "ro": "Drum cu două căi construit în 1976–1982 cu intersecții la nivel, dat în trafic la 20 iulie 1979 (plwiki). Un contract de proiectare și construcție cu Budimex, semnat la 18 decembrie 2017 pentru 126,28 milioane PLN (MSBD, baza TVA nespecificată), l-a modernizat la standard de drum expres, cu nodul nou Kliniska și nodul Rzęśnica refăcut; lucrările s-au încheiat la 27 aprilie 2021. plwiki indică lungimea de 19 km; pagina MSBD indică aproximativ 21 km pentru întreaga zonă a proiectului, cu lucrările principale pe circa 4,0 km. Modernizarea nu este lot separat, deci drumul vechi rămâne deschis."
+      },
+      "sourceRefs": [
+        "msbd-miekowo-rzesnica",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "goleniow-rzesnica"
+    },
+    {
+      "id": "klucz-pyrzyce",
+      "name": {
+        "en": "Szczecin Klucz – Pyrzyce",
+        "ro": "Szczecin Klucz – Pyrzyce"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-02-18",
+        "opened": "2010-05-26"
+      },
+      "lengthKm": 28.2,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-02-18",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-05-26",
+          "sourceRef": "msbd-klucz-pyrzyce"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hermann Kirchner",
+          "role": "builder"
+        },
+        {
+          "name": "Max Bögl",
+          "role": "builder"
+        },
+        {
+          "name": "Energopol Szczecin",
+          "role": "builder"
+        },
+        {
+          "name": "Josef Möbius Bau",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Stage I of the new-alignment S3 south of Szczecin, from the Klucz junction on the A6 to Pyrzyce. The contractor was a consortium of Hermann Kirchner, Max Bögl, Energopol Szczecin and Josef Möbius Bau. The MSBD page puts the cost of the whole Szczecin – Gorzów route at 2.3 billion PLN including preparation.",
+        "ro": "Etapa I a S3 pe traseu nou la sud de Szczecin, de la nodul Klucz de pe A6 până la Pyrzyce. Constructorul a fost un consorțiu format din Hermann Kirchner, Max Bögl, Energopol Szczecin și Josef Möbius Bau. Pagina MSBD estimează costul întregului traseu Szczecin – Gorzów la 2,3 miliarde PLN, inclusiv pregătirea."
+      },
+      "sourceRefs": [
+        "msbd-klucz-pyrzyce",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "klucz-pyrzyce"
+    },
+    {
+      "id": "pyrzyce-myslibor",
+      "name": {
+        "en": "Pyrzyce – Myślibórz",
+        "ro": "Pyrzyce – Myślibórz"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-10-11",
+        "opened": "2010-10-22"
+      },
+      "lengthKm": 26.7,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-10-11",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-10-22",
+          "sourceRef": "msbd-pyrzyce-myslibor"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex Dromex",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Stage II of the new-alignment S3 south of Szczecin. Opening was delayed by undocumented ground conditions (a wiszar) that needed a new, larger viaduct under a separate contract (plwiki).",
+        "ro": "Etapa II a S3 pe traseu nou la sud de Szczecin. Deschiderea a fost întârziată de condiții geologice nedocumentate în proiect (un wiszar), care au cerut un viaduct nou, mai mare, în baza unui contract separat (plwiki)."
+      },
+      "sourceRefs": [
+        "msbd-pyrzyce-myslibor",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "pyrzyce-myslibor"
+    },
+    {
+      "id": "myslibor-gorzow",
+      "name": {
+        "en": "Myślibórz – Gorzów Wielkopolski Północ",
+        "ro": "Myślibórz – Gorzów Wielkopolski Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-02",
+        "opened": "2010-12-30"
+      },
+      "lengthKm": 26.7,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-02",
+          "note": {
+            "en": "Works began at the end of February 2008.",
+            "ro": "Lucrările au început la sfârșitul lunii februarie 2008."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-12-30",
+          "sourceRef": "msbd-myslibor-gorzow"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Berger Bau",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Stage III of the new-alignment S3 south of Szczecin, from Myślibórz to the Gorzów Wielkopolski Północ junction. The drawn centreline is 28.1 km, 5% longer than the sourced 26.7 km.",
+        "ro": "Etapa III a S3 pe traseu nou la sud de Szczecin, de la Myślibórz la nodul Gorzów Wielkopolski Północ. Axul desenat are 28,1 km, cu 5% mai mult decât cei 26,7 km din surse."
+      },
+      "sourceRefs": [
+        "msbd-myslibor-gorzow",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "myslibor-gorzow"
+    },
+    {
+      "id": "gorzow-obwodnica",
+      "name": {
+        "en": "Gorzów Wielkopolski western bypass",
+        "ro": "Ocolitoarea de vest Gorzów Wielkopolski"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-04-11",
+        "opened": "2007-11-27"
+      },
+      "lengthKm": 11.877,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-04-11",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-11-27",
+          "sourceRef": "plwiki-s3"
+        }
+      ],
+      "note": {
+        "en": "East carriageway of the bypass (11.877 km per plwiki), opened with the Gorzów Północ, Zachód and Południe junctions on 27 November 2007 after a first 2.38 km stage built by the city in 2001–2003. The second (west) carriageway of 11.66 km, contracted on 30 September 2014 and opened on 9 October 2017 (MSBD), for works worth 292.27 million PLN per MSBD (VAT basis not stated), is not a separate lot, so the old road stays opened. The drawn centreline between the Północ and Południe junctions is 9.1 km, 23% shorter than the sourced length, which also counts the approach to the Rondo Zielonogórskie.",
+        "ro": "Calea estică a ocolitoarei (11,877 km conform plwiki), deschisă cu nodurile Gorzów Północ, Zachód și Południe la 27 noiembrie 2007, după o primă etapă de 2,38 km construită de oraș în 2001–2003. A doua cale (vestică), de 11,66 km, contractată la 30 septembrie 2014 și deschisă la 9 octombrie 2017 (MSBD), cu lucrări de 292,27 milioane PLN conform MSBD (baza TVA nespecificată), nu este lot separat, deci drumul vechi rămâne deschis. Axul desenat între nodurile Północ și Południe are 9,1 km, cu 23% mai puțin decât lungimea din surse, care include și accesul spre Rondo Zielonogórskie."
+      },
+      "sourceRefs": [
+        "plwiki-s3",
+        "msbd-gorzow-bypass-2",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gorzow-obwodnica"
+    },
+    {
+      "id": "gorzow-miedzyrzecz",
+      "name": {
+        "en": "Gorzów Wielkopolski Południe – Międzyrzecz Północ",
+        "ro": "Gorzów Wielkopolski Południe – Międzyrzecz Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-06-16",
+        "constructionStart": "2011-07-14",
+        "opened": "2014-05-15"
+      },
+      "lengthKm": 37.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 802.99,
+              "currency": "PLN",
+              "year": 2011,
+              "scope": "works",
+              "note": "Value of building works as listed on the MSBD page. VAT basis not stated on the source page."
+            },
+            "date": "2011-06-16",
+            "note": "Works value as listed on MSBD; plwiki gives two contracts of 336.48 and 424.99 million PLN.",
+            "sourceRef": "msbd-gorzow-miedzyrzecz"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011-06-16",
+          "note": {
+            "en": "Contracts signed for two tasks: Gorzów – Skwierzyna (Mota-Engil Central Europe, leader of a consortium) and Skwierzyna – Międzyrzecz (Strabag).",
+            "ro": "Contracte semnate pentru două sarcini: Gorzów – Skwierzyna (Mota-Engil Central Europe, liderul unui consorțiu) și Skwierzyna – Międzyrzecz (Strabag)."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2011-07-14",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-05-15",
+          "sourceRef": "msbd-gorzow-miedzyrzecz"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2007–2013 (POIiŚ); the MSBD page lists 672.76 million PLN of co-financing.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2007–2013 (POIiŚ); pagina MSBD indică o cofinanțare de 672,76 milioane PLN."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 802.99,
+          "currency": "PLN",
+          "year": 2011,
+          "scope": "works",
+          "note": "Value of building works as listed on the MSBD page. VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "New-alignment dual carriageway with the Skwierzyna bypass and two junctions, built as two tasks (19.11 km and 18.54 km per plwiki; MSBD gives 37 km). Opened 15 May 2014 with permanent traffic arrangement. The MSBD page lists building works at 802.99 million PLN and the total cost of the task at 936.60 million PLN.",
+        "ro": "Drum cu două căi pe traseu nou, cu ocolitoarea Skwierzyna și două noduri, construit în două sarcini (19,11 km și 18,54 km conform plwiki; MSBD indică 37 km). Deschis la 15 mai 2014 cu organizare permanentă a traficului. Pagina MSBD indică lucrările de construcții la 802,99 milioane PLN și costul total al sarcinii la 936,60 milioane PLN."
+      },
+      "sourceRefs": [
+        "msbd-gorzow-miedzyrzecz",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gorzow-miedzyrzecz"
+    },
+    {
+      "id": "miedzyrzecz-obwodnica",
+      "name": {
+        "en": "Międzyrzecz bypass (Północ – Południe)",
+        "ro": "Ocolitoarea Międzyrzecz (Północ – Południe)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-12",
+        "opened": "2006-08-23"
+      },
+      "lengthKm": 6.37,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-12",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-08-23",
+          "sourceRef": "plwiki-s3"
+        }
+      ],
+      "note": {
+        "en": "Bypass of Międzyrzecz built December 2004 – 23 August 2006 as a single carriageway with the Północ and Południe junctions. The second (west) carriageway with the Międzyrzecz Zachód junction was contracted on 17 November 2014 (Budimex 95% with Ferrovial Agroman; 83.65 million PLN net per plwiki, 107.72 million PLN works per MSBD) and opened on 21 December 2016 (plwiki: both carriageways available 19 October 2016). It is not a separate lot, so the old road stays opened. The drawn centreline between the two junctions is 4.7 km, 25% shorter than the sourced 6.37 km.",
+        "ro": "Ocolitoare a orașului Międzyrzecz construită în decembrie 2004 – 23 august 2006 cu o singură cale de rulare, cu nodurile Północ și Południe. A doua cale (vestică), cu nodul Międzyrzecz Zachód, a fost contractată la 17 noiembrie 2014 (Budimex 95% cu Ferrovial Agroman; 83,65 milioane PLN fără TVA conform plwiki, lucrări de 107,72 milioane PLN conform MSBD) și deschisă la 21 decembrie 2016 (plwiki: ambele căi disponibile din 19 octombrie 2016). Nu este lot separat, deci drumul vechi rămâne deschis. Axul desenat între cele două noduri are 4,7 km, cu 25% mai puțin decât cei 6,37 km din surse."
+      },
+      "sourceRefs": [
+        "plwiki-s3",
+        "msbd-miedzyrzecz-bypass-2",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miedzyrzecz-obwodnica"
+    },
+    {
+      "id": "miedzyrzecz-sulechow",
+      "name": {
+        "en": "Międzyrzecz Południe – Sulechów",
+        "ro": "Międzyrzecz Południe – Sulechów"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-07-23",
+        "constructionStart": "2010-08-18",
+        "opened": "2013-08-21"
+      },
+      "lengthKm": 43,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1080.68,
+              "currency": "PLN",
+              "year": 2010,
+              "scope": "works",
+              "note": "Value of building works as listed on the MSBD page. VAT basis not stated on the source page."
+            },
+            "date": "2010-07-23",
+            "note": "Works value as listed on MSBD; plwiki lists about 914 million PLN for the three contracts.",
+            "sourceRef": "msbd-miedzyrzecz-sulechow"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2008-11-14",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "awarded",
+          "date": "2010-07-23",
+          "note": {
+            "en": "Contracts signed.",
+            "ro": "Contracte semnate."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2010-08-18",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2013-05-27",
+          "note": {
+            "en": "Jordanowo – Świebodzin Północ opened.",
+            "ro": "Jordanowo – Świebodzin Północ deschis."
+          },
+          "sourceRef": "msbd-miedzyrzecz-sulechow"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2013-06-18",
+          "note": {
+            "en": "Świebodzin Południe – Sulechów opened.",
+            "ro": "Świebodzin Południe – Sulechów deschis."
+          },
+          "sourceRef": "msbd-miedzyrzecz-sulechow"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2013-07-11",
+          "note": {
+            "en": "Świebodzin Północ – Świebodzin Południe opened.",
+            "ro": "Świebodzin Północ – Świebodzin Południe deschis."
+          },
+          "sourceRef": "msbd-miedzyrzecz-sulechow"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-08-21",
+          "note": {
+            "en": "Międzyrzecz Południe – Jordanowo opened.",
+            "ro": "Międzyrzecz Południe – Jordanowo deschis."
+          },
+          "sourceRef": "msbd-miedzyrzecz-sulechow"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2007–2013 (POIiŚ); the MSBD page lists 828.50 million PLN of co-financing.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2007–2013 (POIiŚ); pagina MSBD indică o cofinanțare de 828,50 milioane PLN."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        },
+        {
+          "name": "Hermann Kirchner",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1080.68,
+          "currency": "PLN",
+          "year": 2010,
+          "scope": "works",
+          "note": "Value of building works as listed on the MSBD page. VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "New-alignment dual carriageway of about 43 km in four contracted parts, all contracts signed 23 July 2010: Międzyrzecz Południe – Jordanowo and Jordanowo – Świebodzin Północ (Mota-Engil), Świebodzin Północ – Południe (Hermann Kirchner) and Świebodzin Południe – Sulechów (Budimex). The parts opened between 27 May and 21 August 2013, so the lot is shown as opened on the date the last part opened.",
+        "ro": "Drum cu două căi pe traseu nou, de circa 43 km, în patru părți contractate, toate contractele semnate la 23 iulie 2010: Międzyrzecz Południe – Jordanowo și Jordanowo – Świebodzin Północ (Mota-Engil), Świebodzin Północ – Południe (Hermann Kirchner) și Świebodzin Południe – Sulechów (Budimex). Părțile au fost deschise între 27 mai și 21 august 2013, deci lotul apare ca deschis la data deschiderii ultimei părți."
+      },
+      "sourceRefs": [
+        "msbd-miedzyrzecz-sulechow",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miedzyrzecz-sulechow"
+    },
+    {
+      "id": "sulechow-nowa-sol",
+      "name": {
+        "en": "Sulechów – Nowa Sól Południe",
+        "ro": "Sulechów – Nowa Sól Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1998"
+      },
+      "lengthKm": 43.99,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1998",
+          "note": {
+            "en": "Single-carriageway road built 1985–1998; the year is the end of that period.",
+            "ro": "Drum cu o singură cale de rulare construit în 1985–1998; anul este sfârșitul acestei perioade."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2017-10-20",
+          "note": {
+            "en": "Second carriageway Sulechów – Zielona Góra Północ (13.39 km) opened; the Odra bridges followed on 20 December 2019.",
+            "ro": "A doua cale Sulechów – Zielona Góra Północ (13,39 km) deschisă; podurile peste Odra au urmat la 20 decembrie 2019."
+          },
+          "sourceRef": "msbd-sulechow-ns-1"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-11-30",
+          "note": {
+            "en": "Second carriageway Zielona Góra Północ – Niedoradz (13.31 km) opened.",
+            "ro": "A doua cale Zielona Góra Północ – Niedoradz (13,31 km) deschisă."
+          },
+          "sourceRef": "msbd-sulechow-ns-2"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-12-20",
+          "note": {
+            "en": "Second carriageway Niedoradz – Nowa Sól Południe (17.29 km) opened.",
+            "ro": "A doua cale Niedoradz – Nowa Sól Południe (17,29 km) deschisă."
+          },
+          "sourceRef": "msbd-sulechow-ns-3"
+        }
+      ],
+      "note": {
+        "en": "Single-carriageway road built 1985–1998 (Sulechów – Nowa Sól Zachód) with the 1995–1998 Nowa Sól bypass, refurbished in 2005–2008 (plwiki). A second carriageway was added in three works contracts of 311.03, 212.12 and 212.29 million PLN (MSBD, VAT basis not stated) in 2015–2018, on 13.39, 13.31 and 17.29 km. These are not separate lots, so the old road stays opened. Both Odra bridges were open from 20 December 2019. The drawn centreline is 44.5 km.",
+        "ro": "Drum cu o singură cale construit în 1985–1998 (Sulechów – Nowa Sól Zachód) cu ocolitoarea Nowa Sól din 1995–1998, reabilitat în 2005–2008 (plwiki). A doua cale a fost adăugată prin trei contracte de lucrări de 311,03, 212,12 și 212,29 milioane PLN (MSBD, baza TVA nespecificată) în 2015–2018, pe 13,39, 13,31 și 17,29 km. Nu sunt loturi separate, deci drumul vechi rămâne deschis. Ambele poduri peste Odra erau deschise din 20 decembrie 2019. Axul desenat are 44,5 km."
+      },
+      "sourceRefs": [
+        "msbd-sulechow-ns-1",
+        "msbd-sulechow-ns-2",
+        "msbd-sulechow-ns-3",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sulechow-nowa-sol"
+    },
+    {
+      "id": "nowa-sol-polkowice",
+      "name": {
+        "en": "Nowa Sól Południe – Polkowice Północ",
+        "ro": "Nowa Sól Południe – Polkowice Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-12-19",
+        "opened": "2018-09-15"
+      },
+      "lengthKm": 33.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 836.26,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Sum of two works contracts as listed on the MSBD pages (357.90 and 478.36 million PLN). VAT basis not stated on the source page."
+            },
+            "date": "2014-12-19",
+            "sourceRef": "msbd-ns-gaworzyce"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-08-23",
+          "note": {
+            "en": "Restricted tenders announced.",
+            "ro": "Licitații restrânse anunțate."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-12-19",
+          "note": {
+            "en": "Contracts signed for Nowa Sól Południe – Gaworzyce and Gaworzyce – Kaźmierzów.",
+            "ro": "Contracte semnate pentru Nowa Sól Południe – Gaworzyce și Gaworzyce – Kaźmierzów."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-09-15",
+          "sourceRef": "msbd-ns-gaworzyce"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ); the MSBD page lists 670.84 million PLN for the whole Nowa Sól – Legnica project.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ); pagina MSBD indică 670,84 milioane PLN pentru întregul proiect Nowa Sól – Legnica."
+          }
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 836.26,
+          "currency": "PLN",
+          "year": 2014,
+          "note": "Sum of two works contracts as listed on the MSBD pages (357.90 and 478.36 million PLN). VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Design-build 2x2 expressway in two tasks: Nowa Sól Południe – Gaworzyce (16.4 km, 357.90 million PLN) and Gaworzyce – Kaźmierzów, now Polkowice Północ (16.9 km, 478.36 million PLN), with the Nowa Sól Południe, Nowe Miasteczko, Gaworzyce, Głogów Zachód and Głogów Południe junctions. Both opened on 15 September 2018. Contractors are not named on the pages read.",
+        "ro": "Drum expres 2x2 proiectat și construit în două sarcini: Nowa Sól Południe – Gaworzyce (16,4 km, 357,90 milioane PLN) și Gaworzyce – Kaźmierzów, azi Polkowice Północ (16,9 km, 478,36 milioane PLN), cu nodurile Nowa Sól Południe, Nowe Miasteczko, Gaworzyce, Głogów Zachód și Głogów Południe. Ambele au fost deschise la 15 septembrie 2018. Constructorii nu sunt numiți în paginile consultate."
+      },
+      "sourceRefs": [
+        "msbd-ns-gaworzyce",
+        "msbd-gaworzyce-kazmierzow",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nowa-sol-polkowice"
+    },
+    {
+      "id": "polkowice-lubin",
+      "name": {
+        "en": "Polkowice Północ – Lubin Północ",
+        "ro": "Polkowice Północ – Lubin Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-12-22",
+        "opened": "2021-11-10"
+      },
+      "lengthKm": 14.38,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 432.99,
+              "currency": "PLN",
+              "year": 2014,
+              "note": "Original contract as listed on the MSBD page; terminated on 29 April 2019. VAT basis not stated on the source page."
+            },
+            "date": "2014-12-22",
+            "sourceRef": "msbd-kazmierzow-lubin"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 228.35,
+              "currency": "PLN",
+              "year": 2019,
+              "note": "Continuation contract as listed on the MSBD page. VAT basis not stated on the source page."
+            },
+            "date": "2019-11-20",
+            "sourceRef": "msbd-kazmierzow-lubin"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-08-30",
+          "sourceRef": "msbd-kazmierzow-lubin"
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-12-22",
+          "note": {
+            "en": "Original design-build contract signed with a consortium led by Salini Polska.",
+            "ro": "Contractul inițial de proiectare și construcție a fost semnat cu un consorțiu condus de Salini Polska."
+          },
+          "sourceRef": "msbd-kazmierzow-lubin"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-04-29",
+          "note": {
+            "en": "Original contract terminated; the works were about 75% complete (plwiki).",
+            "ro": "Contractul inițial a fost reziliat; lucrările erau finalizate în proporție de circa 75% (plwiki)."
+          },
+          "sourceRef": "msbd-kazmierzow-lubin"
+        },
+        {
+          "kind": "awarded",
+          "date": "2019-11-20",
+          "note": {
+            "en": "Continuation contract signed with Mota-Engil Central Europe (leader), Masfalt and Drogomex.",
+            "ro": "Contract de continuare semnat cu Mota-Engil Central Europe (lider), Masfalt și Drogomex."
+          },
+          "sourceRef": "msbd-kazmierzow-lubin"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2020-11-20",
+          "note": {
+            "en": "About 6 km of one carriageway opened between Polkowice Południe and Lubin Północ.",
+            "ro": "Circa 6 km dintr-o cale de rulare deschiși între Polkowice Południe și Lubin Północ."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2021-10-29",
+          "note": {
+            "en": "Three-lane section Polkowice Południe – Lubin Północ opened.",
+            "ro": "Sectorul cu trei benzi Polkowice Południe – Lubin Północ deschis."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-11-10",
+          "note": {
+            "en": "Rest of the contract, the Polkowice bypass, opened.",
+            "ro": "Restul contractului, ocolitoarea Polkowice, a fost deschis."
+          },
+          "sourceRef": "msbd-kazmierzow-lubin"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund; the MSBD page lists 987.07 million PLN for the whole Nowa Sól – Legnica project.",
+            "ro": "Cofinanțat din Fondul de coeziune; pagina MSBD indică 987,07 milioane PLN pentru întregul proiect Nowa Sól – Legnica."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Salini Polska",
+          "role": "builder"
+        },
+        {
+          "name": "Salini Impregilo",
+          "role": "builder"
+        },
+        {
+          "name": "Todini Construzioni Generali",
+          "role": "builder"
+        },
+        {
+          "name": "Pribex",
+          "role": "builder"
+        },
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        },
+        {
+          "name": "Masfalt",
+          "role": "builder"
+        },
+        {
+          "name": "Drogomex",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 228.35,
+          "currency": "PLN",
+          "year": 2019,
+          "note": "Continuation contract as listed on the MSBD page. VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Design-build with the Polkowice Północ, Polkowice Południe and Lubin Północ junctions. The first contractor stopped work in mid-2017 and the contract was terminated on 29 April 2019; the continuation was signed on 20 November 2019. Builders of the original contract: Salini Polska (leader), Salini Impregilo, Todini Construzioni Generali and Pribex; of the continuation: Mota-Engil Central Europe (leader), Masfalt and Drogomex. Both contract values are listed; the lot's opened date is that of the last part. The drawn centreline is 13.0 km, 10% shorter than the sourced length.",
+        "ro": "Proiectare și construcție cu nodurile Polkowice Północ, Polkowice Południe și Lubin Północ. Primul constructor a oprit lucrările la mijlocul lui 2017, iar contractul a fost reziliat la 29 aprilie 2019; continuarea a fost semnată la 20 noiembrie 2019. Constructorii contractului inițial: Salini Polska (lider), Salini Impregilo, Todini Construzioni Generali și Pribex; ai continuării: Mota-Engil Central Europe (lider), Masfalt și Drogomex. Sunt indicate ambele valori de contract; data deschiderii lotului este cea a ultimei părți. Axul desenat are 13,0 km, cu 10% mai puțin decât lungimea din surse."
+      },
+      "sourceRefs": [
+        "msbd-kazmierzow-lubin",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "polkowice-lubin"
+    },
+    {
+      "id": "lubin-legnica",
+      "name": {
+        "en": "Lubin Północ – Legnica Południe",
+        "ro": "Lubin Północ – Legnica Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-01-26",
+        "opened": "2018-08-27"
+      },
+      "lengthKm": 33.92,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1065.02,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Sum of two works contracts as listed on the MSBD pages (265.17 and 799.85 million PLN). VAT basis not stated on the source page."
+            },
+            "date": "2015-01-26",
+            "sourceRef": "msbd-lubin-lubin"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-08-30",
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-01-26",
+          "note": {
+            "en": "Contract signed for Lubin Północ – Lubin Południe with Mota-Engil Central Europe; the Lubin Południe – Legnica Południe contract is with Budimex and Ferrovial Agroman.",
+            "ro": "Contract semnat pentru Lubin Północ – Lubin Południe cu Mota-Engil Central Europe; contractul Lubin Południe – Legnica Południe este cu Budimex și Ferrovial Agroman."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-06-25",
+          "note": {
+            "en": "Lubin Południe – Legnica II (22.62 km) and part of Lubin Północ – Lubin Południe opened.",
+            "ro": "Lubin Południe – Legnica II (22,62 km) și o parte din Lubin Północ – Lubin Południe deschise."
+          },
+          "sourceRef": "msbd-lubin-legnica"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-08-27",
+          "note": {
+            "en": "Rest of Lubin Północ – Lubin Południe opened.",
+            "ro": "Restul sectorului Lubin Północ – Lubin Południe deschis."
+          },
+          "sourceRef": "msbd-lubin-lubin"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund; the MSBD pages list 987.07 million PLN for the whole Nowa Sól – Legnica project.",
+            "ro": "Cofinanțat din Fondul de coeziune; paginile MSBD indică 987,07 milioane PLN pentru întregul proiect Nowa Sól – Legnica."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Agroman",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1065.02,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Sum of two works contracts as listed on the MSBD pages (265.17 and 799.85 million PLN). VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Two design-build contracts: Lubin Północ – Lubin Południe (11.3 km) and Lubin Południe – Legnica II on the A4 (22.62 km), with the Lubin Zachód, Lubin Południe, Legnica Północ, Legnica Zachód and Legnica Południe junctions. Most of the lot opened on 25 June 2018 and the rest on 27 August 2018. plwiki gives slightly different contract values (261 and 786 million PLN).",
+        "ro": "Două contracte de proiectare și construcție: Lubin Północ – Lubin Południe (11,3 km) și Lubin Południe – Legnica II pe A4 (22,62 km), cu nodurile Lubin Zachód, Lubin Południe, Legnica Północ, Legnica Zachód și Legnica Południe. Cea mai mare parte a lotului a fost deschisă la 25 iunie 2018, restul la 27 august 2018. plwiki indică valori de contract ușor diferite (261 și 786 milioane PLN)."
+      },
+      "sourceRefs": [
+        "msbd-lubin-lubin",
+        "msbd-lubin-legnica",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubin-legnica"
+    },
+    {
+      "id": "legnica-bolkow",
+      "name": {
+        "en": "Legnica Południe – Bolków",
+        "ro": "Legnica Południe – Bolków"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-09-30",
+        "opened": "2018-10-15"
+      },
+      "lengthKm": 35.84,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 625.2,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Sum of two works contracts as listed on the MSBD pages (300.60 and 324.61 million PLN). VAT basis not stated on the source page."
+            },
+            "date": "2015-09-30",
+            "sourceRef": "msbd-legnica-jawor"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2014-08-14",
+          "note": {
+            "en": "Restricted tenders announced for two tasks.",
+            "ro": "Licitații restrânse anunțate pentru două sarcini."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-09-30",
+          "note": {
+            "en": "Jawor II – Bolków contract signed with Mota-Engil; the Legnica – Jawor II contract with Eurovia and Warbud followed on 6 October 2015.",
+            "ro": "Contractul Jawor II – Bolków a fost semnat cu Mota-Engil; contractul Legnica – Jawor II cu Eurovia și Warbud a urmat la 6 octombrie 2015."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-10-15",
+          "sourceRef": "msbd-jawor-bolkow"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ); the MSBD pages list 442.94 million PLN of co-financing for the Legnica – Bolków project.",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ); paginile MSBD indică o cofinanțare de 442,94 milioane PLN pentru proiectul Legnica – Bolków."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "Warbud",
+          "role": "builder"
+        },
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 625.2,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Sum of two works contracts as listed on the MSBD pages (300.60 and 324.61 million PLN). VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Two design-build contracts: Legnica II – Jawor II (19.73 km, Eurovia and Warbud) and Jawor II – Bolków (16.11 km, Mota-Engil), with the Jawor Północ, Jawor Wschód, Jawor Południe and Bolków junctions. Both opened on 15 October 2018. plwiki gives slightly different contract values (about 316 and 345 million PLN).",
+        "ro": "Două contracte de proiectare și construcție: Legnica II – Jawor II (19,73 km, Eurovia și Warbud) și Jawor II – Bolków (16,11 km, Mota-Engil), cu nodurile Jawor Północ, Jawor Wschód, Jawor Południe și Bolków. Ambele au fost deschise la 15 octombrie 2018. plwiki indică valori de contract ușor diferite (circa 316 și 345 milioane PLN)."
+      },
+      "sourceRefs": [
+        "msbd-legnica-jawor",
+        "msbd-jawor-bolkow",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "legnica-bolkow"
+    },
+    {
+      "id": "bolkow-kamienna-gora",
+      "name": {
+        "en": "Bolków – Kamienna Góra Północ",
+        "ro": "Bolków – Kamienna Góra Północ"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-10-17",
+        "constructionStart": "2020-08-27",
+        "opened": "2024-07-31"
+      },
+      "lengthKm": 16.06,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1536.86,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Contract value as listed on the MSBD page. VAT basis not stated on the source page."
+            },
+            "date": "2018-10-17",
+            "sourceRef": "msbd-bolkow-kg"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "works": "greenfield",
+        "tunnelKm": 2.61
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-05-31",
+          "sourceRef": "msbd-bolkow-kg"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-10-17",
+          "note": {
+            "en": "Contract signed; best offer chosen on 12 September 2018.",
+            "ro": "Contract semnat; cea mai bună ofertă aleasă la 12 septembrie 2018."
+          },
+          "sourceRef": "msbd-bolkow-kg"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-08-27",
+          "note": {
+            "en": "Tunnelling of the TS-26 tube began on 5 December 2020.",
+            "ro": "Săparea tunelului TS-26 a început la 5 decembrie 2020."
+          },
+          "sourceRef": "plwiki-s3"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-07-31",
+          "sourceRef": "msbd-bolkow-kg"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PORR",
+          "role": "builder"
+        },
+        {
+          "name": "PORR Bau",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1536.86,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Contract value as listed on the MSBD page. VAT basis not stated on the source page."
+        },
+        "totalMonths": 47
+      },
+      "note": {
+        "en": "Design-build with two tunnels under the Wałbrzych Mountains: TS-26 under Trójgarb (2,290 m) and a 320 m tunnel (plwiki), counted here as 2.61 km of tunnel. The contract runs 47 months from signing, excluding winters (15 December – 15 March). Opened 31 July 2024. The tunnels are not separate lots.",
+        "ro": "Proiectare și construcție cu două tunele sub Munții Wałbrzych: TS-26 sub Trójgarb (2 290 m) și un tunel de 320 m (plwiki), socotite aici ca 2,61 km de tunel. Contractul are 47 de luni de la semnare, fără perioadele de iarnă (15 decembrie – 15 martie). Deschis la 31 iulie 2024. Tunelele nu sunt loturi separate."
+      },
+      "sourceRefs": [
+        "msbd-bolkow-kg",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bolkow-kamienna-gora"
+    },
+    {
+      "id": "kamienna-gora-lubawka",
+      "name": {
+        "en": "Kamienna Góra Północ – Lubawka",
+        "ro": "Kamienna Góra Północ – Lubawka"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-10-17",
+        "opened": "2023-09-29"
+      },
+      "lengthKm": 12.31,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 879.7,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Contract value for the whole 15.31 km Kamienna Góra Północ – border contract, as listed on the MSBD page. VAT basis not stated on the source page."
+            },
+            "date": "2018-10-17",
+            "sourceRef": "msbd-kg-granica"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-05-31",
+          "sourceRef": "msbd-kg-granica"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-10-17",
+          "note": {
+            "en": "Contract signed; best offer chosen on 12 September 2018.",
+            "ro": "Contract semnat; cea mai bună ofertă aleasă la 12 septembrie 2018."
+          },
+          "sourceRef": "msbd-kg-granica"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-09-29",
+          "sourceRef": "msbd-kg-granica"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mosty Łódź",
+          "role": "builder"
+        },
+        {
+          "name": "PBDI",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 879.7,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Contract value for the whole 15.31 km Kamienna Góra Północ – border contract, as listed on the MSBD page. VAT basis not stated on the source page."
+        },
+        "totalMonths": 31
+      },
+      "note": {
+        "en": "Part of the 15.31 km Kamienna Góra Północ – border contract (Mosty Łódź, leader, with PBDI) that is open to traffic: the Kamienna Góra Północ, Kamienna Góra Południe and Lubawka junctions. The contract value and 31-month term (excluding winters) cover the whole contract, including the Lubawka – border lot. Length is the MSBD length of 15.31 km less the 3 km Lubawka – border stretch named by plwiki. Opened 29 September 2023 with permanent traffic arrangement.",
+        "ro": "Partea deschisă în trafic a contractului Kamienna Góra Północ – graniță de 15,31 km (Mosty Łódź, lider, cu PBDI): nodurile Kamienna Góra Północ, Kamienna Góra Południe și Lubawka. Valoarea contractului și durata de 31 de luni (fără ierni) acoperă întregul contract, inclusiv lotul Lubawka – graniță. Lungimea este cea de 15,31 km din MSBD minus cei 3 km Lubawka – graniță indicați de plwiki. Deschis la 29 septembrie 2023 cu organizare permanentă a traficului."
+      },
+      "sourceRefs": [
+        "msbd-kg-granica",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kamienna-gora-lubawka"
+    },
+    {
+      "id": "lubawka-granica",
+      "name": {
+        "en": "Lubawka – Czech border",
+        "ro": "Lubawka – granița cu Cehia"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2018-10-17"
+      },
+      "lengthKm": 3,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-05-31",
+          "sourceRef": "msbd-kg-granica"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-10-17",
+          "note": {
+            "en": "Contract signed for the whole 15.31 km Kamienna Góra Północ – border section.",
+            "ro": "Contract semnat pentru întregul sector Kamienna Góra Północ – graniță de 15,31 km."
+          },
+          "sourceRef": "msbd-kg-granica"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mosty Łódź",
+          "role": "builder"
+        },
+        {
+          "name": "PBDI",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The last 3 km of the Kamienna Góra Północ – border contract, not opened with the rest on 29 September 2023; the status is the contract status, as no source states the state of the works. plwiki says it will open once the D11 motorway in Czechia is finished, which the Czech road administration expected for spring 2028. The contract value is carried by the Kamienna Góra Północ – Lubawka lot. Length is the 3 km stated by plwiki; the drawn centreline is 2.6 km.",
+        "ro": "Ultimii 3 km din contractul Kamienna Góra Północ – graniță, care nu au fost deschiși odată cu restul la 29 septembrie 2023; statutul este cel al contractului, deoarece nicio sursă nu indică stadiul lucrărilor. plwiki spune că vor fi deschiși după terminarea autostrăzii D11 din Cehia, estimată de administrația rutieră cehă pentru primăvara lui 2028. Valoarea contractului este înregistrată la lotul Kamienna Góra Północ – Lubawka. Lungimea este cea de 3 km indicată de plwiki; axul desenat are 2,6 km."
+      },
+      "sourceRefs": [
+        "msbd-kg-granica",
+        "plwiki-s3",
+        "osm-relation-s3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubawka-granica"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-s3",
+      "title": "Wikipedia (pl): Droga ekspresowa S3 (Polska)",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S3_(Polska)",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-swinoujscie-dargobadz",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Świnoujście – Dargobądz (bez węzła)",
+      "url": "https://www.gov.pl/web/gddkia/s3-swinoujscie---dargobadz-bez-wezla",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-dargobadz-troszyn",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Dargobądz – Troszyn",
+      "url": "https://www.gov.pl/web/gddkia/s3-dargobadz-troszyn",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-troszyn-bypass",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Obwodnica Troszyna, Parłówka i Ostromic",
+      "url": "https://www.gov.pl/web/gddkia/s3-obwodnica-troszyna-parlowka-i-ostromic",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-brzozowo-miekowo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: obwodnica Brzozowa oraz dostosowanie DK3 do parametrów drogi ekspresowej na odcinku Brzozowo – Miękowo",
+      "url": "https://www.gov.pl/web/gddkia/s3-cz1",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-miekowo-rzesnica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Miękowo – Rzęśnica",
+      "url": "https://www.gov.pl/web/gddkia/s3-dostosowanie-drogi-krajowej-nr-3-do-parametrow-drogi-ekspresowej-na-odcinku-miekowo-koniec-obw-miekowa--rzesnica-wezel-rzesnica-z-wezlem",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-klucz-pyrzyce",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Klucz – Pyrzyce",
+      "url": "https://www.gov.pl/web/gddkia/s3-klucz---pyrzyce",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-pyrzyce-myslibor",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Pyrzyce – Myślibórz",
+      "url": "https://www.gov.pl/web/gddkia/s3-pyrzyce---mysliborz",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-myslibor-gorzow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Myślibórz – Gorzów Wielkopolski",
+      "url": "https://www.gov.pl/web/gddkia/s3-mysliborz---gorzow-wielkopolski",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-gorzow-bypass-2",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 II jezdnia obwodnicy Gorzowa Wielkopolskiego",
+      "url": "https://www.gov.pl/web/gddkia/s3-ii-jezdnia-obwodnicy-gorzowa-wielkopolskiego",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-gorzow-miedzyrzecz",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Gorzów Wielkopolski – Międzyrzecz",
+      "url": "https://www.gov.pl/web/gddkia/s3-gorzow---miedzyrzecz",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-miedzyrzecz-bypass-2",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 II jezdnia obwodnicy Międzyrzecza",
+      "url": "https://www.gov.pl/web/gddkia/s3-ii-jezdnia-obwodnicy-miedzyrzecza2",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-miedzyrzecz-sulechow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Międzyrzecz – Sulechów",
+      "url": "https://www.gov.pl/web/gddkia/s3-miedzyrzecz---sulechow",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-sulechow-ns-1",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Sulechów – Nowa Sól, odcinek I (druga jezdnia)",
+      "url": "https://www.gov.pl/web/gddkia/s3-sulechow--nowa-sol--odcinek-i-od-km-272650-do-km-286043-druga-jezdnia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-sulechow-ns-2",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Sulechów – Nowa Sól, odcinek II (druga jezdnia)",
+      "url": "https://www.gov.pl/web/gddkia/s3-sulechow--nowa-sol--odcinek-ii-od-km-286043-do-km-299350-druga-jezdnia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-sulechow-ns-3",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Sulechów – Nowa Sól, odcinek III (druga jezdnia)",
+      "url": "https://www.gov.pl/web/gddkia/s3-sulechow--nowa-sol--odcinek-iii-od-km-299350-do-km-316640-druga-jezdnia",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-ns-gaworzyce",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Nowa Sól Południe – Gaworzyce",
+      "url": "https://www.gov.pl/web/gddkia/s3-nowa-sol-poludnie---gaworzyce-bez-wezla",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-gaworzyce-kazmierzow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Gaworzyce – Kaźmierzów",
+      "url": "https://www.gov.pl/web/gddkia/s3-gaworzyce---kazmierzow-bez-wezla",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-kazmierzow-lubin",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Polkowice Północ (dawniej Kaźmierzów) – Lubin Północ",
+      "url": "https://www.gov.pl/web/gddkia/s3-kazmierzow---lubin-polnoc",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-lubin-lubin",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Lubin Północ – Lubin Południe",
+      "url": "https://www.gov.pl/web/gddkia/s3-lubin-polnoc-bez-wezla---lubin-poludnie",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-lubin-legnica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Lubin Południe – Legnica II (A-4)",
+      "url": "https://www.gov.pl/web/gddkia/s3-lubin-poludnie-bez-wezla---legnica-ii-a-4z-wezlem",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-legnica-jawor",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 węzeł Legnica II – węzeł Jawor II",
+      "url": "https://www.gov.pl/web/gddkia/s3-wezel-legnica-ii-bez-wezla---wezel-jawor-ii-z-wezlem",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-jawor-bolkow",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 węzeł Jawor II – węzeł Bolków",
+      "url": "https://www.gov.pl/web/gddkia/s3-wezel-jawor-ii-bez-wezla---wezel-bolkow-z-wezlem",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-bolkow-kg",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Bolków – Kamienna Góra Północ",
+      "url": "https://www.gov.pl/web/gddkia/s3-bolkow-bez-wezla---kamienna-gora-polnoc-bez-wezla",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "msbd-kg-granica",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S3 Kamienna Góra Północ – granica państwa",
+      "url": "https://www.gov.pl/web/gddkia/s3-kamienna-gora-polnoc-z-wezlem-do-granicy-panstwa",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "osm-relation-s3",
+      "title": "OpenStreetMap: relation 2317380, Droga ekspresowa S3 (network PL:expressway)",
+      "url": "https://www.openstreetmap.org/relation/2317380",
+      "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-05"
+    }
+  ],
+  "lastVerified": "2026-10-05"
+}
