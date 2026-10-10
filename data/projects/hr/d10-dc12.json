@@ -1,0 +1,714 @@
+{
+  "id": "hr-d10-dc12",
+  "country": "hr",
+  "category": "highway",
+  "name": {
+    "en": "D10 and DC12 expressways: Sveta Helena – Vrbovec – Križevci and Vrbovec – Bjelovar – Virovitica",
+    "ro": "Drumurile expres D10 și DC12: Sveta Helena – Vrbovec – Križevci și Vrbovec – Bjelovar – Virovitica"
+  },
+  "description": {
+    "en": "Two expressways of the Podravina Y planned by Hrvatske ceste. The D10 runs from the A4 at Sveta Helena past Vrbovec to Križevci, 35 km open in 2002, 2007 and 2016, with a 7.5 km two-lane extension to Kloštar Vojakovački under construction. The DC12 branches off at Vrbovec 2 towards Bjelovar and Virovitica: 10.6 km to Farkaševac opened in April 2019, the rest to Bjelovar, Bulinac and Virovitica is under construction or tendered. Kuna amounts are given in the lot notes only.",
+    "ro": "Două drumuri expres ale „Ipsilonului Podravina” planificate de Hrvatske ceste. D10 merge de la A4, la Sveta Helena, pe lângă Vrbovec până la Križevci, 35 km deschiși în 2002, 2007 și 2016, cu o prelungire cu două benzi de 7,5 km până la Kloštar Vojakovački în construcție. DC12 se desprinde la Vrbovec 2 spre Bjelovar și Virovitica: 10,6 km până la Farkaševac deschiși în aprilie 2019, restul spre Bjelovar, Bulinac și Virovitica este în construcție sau scos la licitație. Sumele în kuna apar doar în notele loturilor."
+  },
+  "operator": "hr-hc",
+  "lots": [
+    {
+      "id": "d10-sveta-helena-vrbovec-1",
+      "name": {
+        "en": "D10 Sveta Helena – Vrbovec 1",
+        "ro": "D10 Sveta Helena – Vrbovec 1"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2002"
+      },
+      "lengthKm": 8,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2002",
+          "sourceRef": "krizevci-info-2016"
+        }
+      ],
+      "note": {
+        "en": "First section of the D10, from the A4 at the Sveta Helena interchange to Vrbovec 1. The opening year comes from the 2016 report on the Gradec – Križevci opening, which gives no day. The 8.0 km is the chainage of Vrbovec 1 in the English Wikipedia exit list, counted from Sveta Helena.",
+        "ro": "Primul sector al D10, de la A4, la nodul Sveta Helena, până la Vrbovec 1. Anul deschiderii provine din relatarea din 2016 despre deschiderea Gradec – Križevci, care nu indică ziua. Cei 8,0 km sunt kilometrajul nodului Vrbovec 1 din lista de ieșiri de pe Wikipedia engleză, numărat de la Sveta Helena."
+      },
+      "sourceRefs": [
+        "krizevci-info-2016",
+        "wikipedia-en-d10",
+        "osm-contributors"
+      ],
+      "geometryRef": "d10-sveta-helena-vrbovec-1"
+    },
+    {
+      "id": "d10-vrbovec-1-gradec",
+      "name": {
+        "en": "D10 Vrbovec 1 – Gradec",
+        "ro": "D10 Vrbovec 1 – Gradec"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-08-03"
+      },
+      "lengthKm": 15.15,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-08-03",
+          "sourceRef": "mmpi-vrbovec-gradec-2007"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Hrvatska",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "lanes": 4
+      },
+      "note": {
+        "en": "Four-lane bypass of Vrbovec with four grade-separated junctions, opened by Deputy Prime Minister Jadranka Kosor on 3 August 2007. It includes the Vrbovec 2 interchange, where the DC12 branches off. The town of Vrbovec reports 15.15 km and the Ministry 15.5 km. Cost about 330 million kuna (HRK). Strabag Hrvatska was the lead contractor.",
+        "ro": "Ocolitoare cu patru benzi a orașului Vrbovec, cu patru intersecții denivelate, inaugurată de vicepremierul Jadranka Kosor la 3 august 2007. Include nodul Vrbovec 2, unde se desprinde DC12. Orașul Vrbovec indică 15,15 km, iar ministerul 15,5 km. Cost de circa 330 de milioane de kuna (HRK). Strabag Hrvatska a fost antreprenorul principal."
+      },
+      "sourceRefs": [
+        "vrbovec-hr-2007",
+        "mmpi-vrbovec-gradec-2007",
+        "krizevci-info-2016",
+        "osm-contributors"
+      ],
+      "geometryRef": "d10-vrbovec-1-gradec"
+    },
+    {
+      "id": "d10-gradec-krizevci",
+      "name": {
+        "en": "D10 Gradec – Križevci",
+        "ro": "D10 Gradec – Križevci"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-09-02"
+      },
+      "lengthKm": 12.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2016-09-02",
+          "sourceRef": "krizevci-info-2016"
+        }
+      ],
+      "note": {
+        "en": "Opened on 2 September 2016 with a total investment of 595 million kuna (HRK) and 15 structures: 6 bridges, 3 viaducts, 4 overpasses, 1 underpass and 1 wildlife crossing. The report is dated the day of the opening. The mapped carriageway measures about 10.9 km against the 12.5 km given by the source.",
+        "ro": "Deschis la 2 septembrie 2016, cu o investiție totală de 595 de milioane de kuna (HRK) și 15 structuri: 6 poduri, 3 viaducte, 4 pasaje superioare, 1 pasaj inferior și 1 trecere pentru animale. Relatarea este datată în ziua deschiderii. Carosabilul cartografiat măsoară circa 10,9 km, față de cei 12,5 km indicați de sursă."
+      },
+      "sourceRefs": [
+        "krizevci-info-2016",
+        "wikipedia-en-d10",
+        "osm-contributors"
+      ],
+      "geometryRef": "d10-gradec-krizevci"
+    },
+    {
+      "id": "d10-krizevci-klostar-vojakovacki",
+      "name": {
+        "en": "D10 Križevci – Kloštar Vojakovački",
+        "ro": "D10 Križevci – Kloštar Vojakovački"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-11",
+        "constructionStart": "2022-10-26",
+        "expectedOpening": "2026-12-23"
+      },
+      "lengthKm": 7.5,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019",
+          "note": {
+            "en": "Tender published towards the end of 2019.",
+            "ro": "Licitație publicată spre sfârșitul anului 2019."
+          },
+          "sourceRef": "tportal-klostar-2026"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-11",
+          "note": {
+            "en": "Award decision published in November 2020.",
+            "ro": "Decizia de atribuire publicată în noiembrie 2020."
+          },
+          "sourceRef": "tportal-klostar-2026"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-10-26",
+          "note": {
+            "en": "Works officially opened with the contractor introduced to the site; 30 months were announced.",
+            "ro": "Lucrările au fost deschise oficial, cu introducerea antreprenorului pe șantier; s-au anunțat 30 de luni."
+          },
+          "sourceRef": "tportal-klostar-2026"
+        }
+      ],
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 30.6,
+              "currency": "EUR",
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2020-11",
+            "note": "Contracted value of the works as stated by Hrvatske ceste in October 2026; the signing date and price year are not given.",
+            "sourceRef": "tportal-klostar-2026"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 2
+      },
+      "contractors": [
+        {
+          "name": "Kamgrad",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 30,
+        "value": {
+          "amount": 30.6,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Two-lane extension of the expressway north from Križevci. Hrvatske ceste told Hina in October 2026 that the contractor asked for an extension to 23 December 2026, which the supervision service agreed, and that the contract value of 30.6 million euro excluding VAT is not expected to be exceeded. The 30-month term announced in October 2022 pointed to 2025. The route towards Koprivnica is in design.",
+        "ro": "Prelungire cu două benzi a drumului expres spre nord de la Križevci. Hrvatske ceste a transmis agenției Hina în octombrie 2026 că antreprenorul a cerut prelungirea termenului până la 23 decembrie 2026, acceptată de serviciul de supraveghere, și că valoarea contractului de 30,6 milioane euro fără TVA nu ar trebui depășită. Termenul de 30 de luni anunțat în octombrie 2022 indica anul 2025. Traseul spre Koprivnica este în faza de proiectare."
+      },
+      "sourceRefs": [
+        "tportal-klostar-2026",
+        "osm-contributors"
+      ],
+      "geometryRef": "d10-krizevci-klostar-vojakovacki"
+    },
+    {
+      "id": "dc12-vrbovec-2-farkasevac",
+      "name": {
+        "en": "DC12 Vrbovec 2 – Farkaševac",
+        "ro": "DC12 Vrbovec 2 – Farkaševac"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010",
+        "opened": "2019-04-16"
+      },
+      "lengthKm": 10.6,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2010",
+          "sourceRef": "baustela-2026-09"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-04-16",
+          "sourceRef": "vlada-2019-farkasevac"
+        }
+      ],
+      "note": {
+        "en": "First section of the DC12, opened on 16 April 2019 after about ten years of works. Cost 349 million kuna (HRK) excluding VAT for construction and equipment. Freight vehicles over 7.5 tonnes were not allowed at opening. Works on the whole route were officially opened on 27 April 2009, and the Bauštela report dates the first works on this section to 2010. The mapped road starts at the first way mapped as DC12, about 400 m south of the D10 mainline.",
+        "ro": "Primul sector al DC12, deschis la 16 aprilie 2019, după circa zece ani de lucrări. Cost de 349 de milioane de kuna (HRK) fără TVA pentru construcție și dotare. La deschidere, vehiculele de marfă de peste 7,5 tone nu aveau voie să circule. Lucrările pe întreg traseul au fost deschise oficial la 27 aprilie 2009, iar relatarea Bauštela plasează primele lucrări pe acest sector în 2010. Drumul cartografiat începe la primul tronson cartografiat ca DC12, la circa 400 m sud de axa D10."
+      },
+      "sourceRefs": [
+        "vlada-2019-farkasevac",
+        "wikipedia-en-d12",
+        "baustela-2026-09",
+        "osm-contributors"
+      ],
+      "geometryRef": "dc12-vrbovec-2-farkasevac"
+    },
+    {
+      "id": "dc12-farkasevac-breza",
+      "name": {
+        "en": "DC12 Farkaševac – Breza",
+        "ro": "DC12 Farkaševac – Breza"
+      },
+      "status": "under_construction",
+      "lengthKm": 5,
+      "contractors": [
+        {
+          "name": "Kamgrad",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First 5 km of the Farkaševac – Bjelovar section. In November 2025 the press reported them as formally finished but closed to traffic, and Bauštela repeated in September 2026 that Kamgrad built them. The road cannot be used until the 11.8 km to Bjelovar are done; the Minister said in January 2026 that the aim is to finish Farkaševac – Bjelovar by the end of 2026. In March 2022 the mayor of Bjelovar expected this part by the end of 2022. The mapped road measures about 5.6 km to the end of the built OpenStreetMap ways.",
+        "ro": "Primii 5 km ai sectorului Farkaševac – Bjelovar. În noiembrie 2025 presa i-a descris ca finalizați formal, dar închiși traficului, iar Bauštela a reluat în septembrie 2026 că Kamgrad i-a construit. Drumul nu poate fi folosit până nu sunt gata cei 11,8 km până la Bjelovar; ministrul a spus în ianuarie 2026 că obiectivul este finalizarea sectorului Farkaševac – Bjelovar până la sfârșitul lui 2026. În martie 2022 primarul din Bjelovar aștepta acest tronson până la sfârșitul lui 2022. Drumul cartografiat măsoară circa 5,6 km până la capătul tronsoanelor construite din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "klikni-2025-11",
+        "klikni-2026-01-delay",
+        "baustela-2026-09",
+        "mojportal-2026-01",
+        "mojportal-2022-03",
+        "osm-contributors"
+      ],
+      "geometryRef": "dc12-farkasevac-breza",
+      "dates": {
+        "constructionStart": "2020"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2020",
+          "note": {
+            "en": "Works reported as begun in 2020.",
+            "ro": "Lucrări raportate ca începute în 2020."
+          },
+          "sourceRef": "klikni-2026-01-delay"
+        }
+      ]
+    },
+    {
+      "id": "dc12-breza-bjelovar",
+      "name": {
+        "en": "DC12 Breza – Bjelovar",
+        "ro": "DC12 Breza – Bjelovar"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-07",
+        "constructionStart": "2022-09-30"
+      },
+      "lengthKm": 11.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 35.13,
+              "currency": "EUR",
+              "year": 2021,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2021-07",
+            "sourceRef": "baustela-2026-09"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 39.82,
+              "currency": "EUR",
+              "year": 2026,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2026-07",
+            "note": "Addendum for additional works signed at the end of July 2026.",
+            "sourceRef": "baustela-2026-09"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Kamgrad",
+          "role": "builder"
+        },
+        {
+          "name": "Pedom Asfalti",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 30,
+        "value": {
+          "amount": 35.13,
+          "currency": "EUR",
+          "year": 2021,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Remaining 11.8 km to the Bjelovar interchange, with a single carriageway. The contract with Kamgrad and Pedom Asfalti was signed in July 2021 and a 30-month term did not change when an addendum for additional works raised it by almost 5 million euro in July 2026. Bjelovar.live reported the contractor introduced to the site on 30 September 2022, while Bauštela dates the works from 2023. The original term would have ended in January 2026; flood and groundwater problems moved it to summer, and Bauštela mentions an unofficial 2027. In January 2026 the Minister said the aim is the end of 2026. The 49.9 million euro quoted for the whole 17 km Farkaševac – Bjelovar section in other press covers both parts and is not recorded as this lot's cost.",
+        "ro": "Cei 11,8 km rămași până la nodul Bjelovar, cu un singur carosabil. Contractul cu Kamgrad și Pedom Asfalti a fost semnat în iulie 2021, iar termenul de 30 de luni nu s-a modificat când un act adițional pentru lucrări suplimentare l-a majorat cu aproape 5 milioane euro în iulie 2026. Bjelovar.live a relatat introducerea antreprenorului pe șantier la 30 septembrie 2022, iar Bauštela datează lucrările din 2023. Termenul inițial ar fi expirat în ianuarie 2026; problemele cu apele de inundație și cele freatice l-au mutat spre vară, iar Bauštela menționează un termen neoficial în 2027. În ianuarie 2026 ministrul a spus că ținta este sfârșitul lui 2026. Cei 49,9 milioane euro indicați de altă presă pentru întregul sector Farkaševac – Bjelovar de 17 km acoperă ambele părți și nu sunt înregistrați drept costul acestui lot."
+      },
+      "sourceRefs": [
+        "baustela-2026-09",
+        "mojportal-2022-03",
+        "bjelovar-live-2022",
+        "mojportal-2026-01",
+        "klikni-2025-11",
+        "osm-contributors"
+      ],
+      "geometryRef": "dc12-breza-bjelovar",
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2022-09-30",
+          "note": {
+            "en": "Contractor introduced to the site; Bauštela dates the works from 2023.",
+            "ro": "Antreprenorul a fost introdus pe șantier; Bauštela datează lucrările din 2023."
+          },
+          "sourceRef": "bjelovar-live-2022"
+        }
+      ]
+    },
+    {
+      "id": "dc12-bjelovar-bulinac",
+      "name": {
+        "en": "DC12 Bjelovar – Bulinac (stages 1A and 1B)",
+        "ro": "DC12 Bjelovar – Bulinac (etapele 1A și 1B)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024",
+        "constructionStart": "2026-01-27"
+      },
+      "lengthKm": 9.38,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024",
+          "note": {
+            "en": "Contract signed before 19 August 2024.",
+            "ro": "Contract semnat înainte de 19 august 2024."
+          },
+          "sourceRef": "glas-slavonije-2024"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-01-27",
+          "note": {
+            "en": "Contractor introduced to the works at the future Bjelovar interchange.",
+            "ro": "Antreprenorul a fost introdus în lucrări la viitorul nod Bjelovar."
+          },
+          "sourceRef": "forbes-2026-01"
+        }
+      ],
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 45.01,
+              "currency": "EUR",
+              "year": 2024,
+              "scope": "works"
+            },
+            "date": "2024",
+            "note": "The VAT basis is not stated. The press reported EUR 56 million in November 2025, which matches the figure plus 25% VAT.",
+            "sourceRef": "baustela-2026-bjelovar-bulinac"
+          }
+        ]
+      },
+      "profile": {
+        "bridgeCount": 5,
+        "designSpeedKmh": 100
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund, Competitiveness and Cohesion Programme 2021–2027: grant agreement signed 27 January 2026 for the whole Bjelovar – Bulinac – Velika Pisanica project (EUR 70 million from the Cohesion Fund, EUR 12.42 million national co-financing, eligible costs EUR 107.45 million; the press gives a project value of EUR 134 million). It covers this lot and the next.",
+            "ro": "Fondul de coeziune, Programul Competitivitate și coeziune 2021–2027: acord de grant semnat la 27 ianuarie 2026 pentru întregul proiect Bjelovar – Bulinac – Velika Pisanica (70 de milioane EUR din Fondul de coeziune, 12,42 milioane EUR cofinanțare națională, costuri eligibile 107,45 milioane EUR; presa indică o valoare a proiectului de 134 de milioane EUR). Acoperă acest lot și pe următorul."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Zagorje gradnja",
+          "role": "builder"
+        },
+        {
+          "name": "Texo molior",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 30,
+        "value": {
+          "amount": 45.01,
+          "currency": "EUR",
+          "year": 2024,
+          "scope": "works"
+        }
+      },
+      "note": {
+        "en": "Stages 1A (km 0+000 to 5+000) and 1B (to km 9+360), 9.38 km with a single carriageway, 5 bridges, 2 overpasses and 1 underpass, designed for 100 km/h. Stage 1A continues the Farkaševac – Bjelovar section at its km 27+530. Works began at the future Bjelovar interchange on 27 January 2026 and the term is 30 months. The stages end short of the Bulinac interchange, where the next lot continues. Land and property procedures delayed the start for more than a year after signing. The mapped road measures about 10.4 km because the cut at the end of stage 1B is approximate.",
+        "ro": "Etapele 1A (km 0+000–5+000) și 1B (până la km 9+360), 9,38 km cu un singur carosabil, 5 poduri, 2 pasaje superioare și 1 pasaj inferior, proiectate pentru 100 km/h. Etapa 1A continuă sectorul Farkaševac – Bjelovar la km 27+530. Lucrările au început la viitorul nod Bjelovar la 27 ianuarie 2026, cu un termen de 30 de luni. Etapele se termină înainte de nodul Bulinac, unde continuă lotul următor. Procedurile funciare și de proprietate au amânat startul cu peste un an după semnare. Drumul cartografiat măsoară circa 10,4 km, deoarece tăietura de la capătul etapei 1B este aproximativă."
+      },
+      "sourceRefs": [
+        "hc-project-68",
+        "baustela-2026-bjelovar-bulinac",
+        "forbes-2026-01",
+        "klikni-2026-01",
+        "klikni-2025-11",
+        "glas-slavonije-2024",
+        "osm-contributors"
+      ],
+      "geometryRef": "dc12-bjelovar-bulinac"
+    },
+    {
+      "id": "dc12-bulinac-velika-pisanica",
+      "name": {
+        "en": "DC12 Bulinac – Velika Pisanica (stages 1C and 2A)",
+        "ro": "DC12 Bulinac – Velika Pisanica (etapele 1C și 2A)"
+      },
+      "status": "tendered",
+      "lengthKm": 11.37,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-04",
+          "note": {
+            "en": "Tender reported on 7 April 2026.",
+            "ro": "Licitație raportată la 7 aprilie 2026."
+          },
+          "sourceRef": "vpz-2026-04"
+        }
+      ],
+      "cost": {
+        "estimated": {
+          "amount": 61.54,
+          "currency": "EUR",
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Estimated value of the tender; the VAT basis and price year are not stated."
+        }
+      },
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund, Competitiveness and Cohesion Programme 2021–2027: grant agreement signed 27 January 2026 for the whole Bjelovar – Bulinac – Velika Pisanica project (EUR 70 million from the Cohesion Fund, EUR 12.42 million national co-financing, eligible costs EUR 107.45 million; the press gives a project value of EUR 134 million). It covers this lot and the previous one.",
+            "ro": "Fondul de coeziune, Programul Competitivitate și coeziune 2021–2027: acord de grant semnat la 27 ianuarie 2026 pentru întregul proiect Bjelovar – Bulinac – Velika Pisanica (70 de milioane EUR din Fondul de coeziune, 12,42 milioane EUR cofinanțare națională, costuri eligibile 107,45 milioane EUR; presa indică o valoare a proiectului de 134 de milioane EUR). Acoperă acest lot și pe cel anterior."
+          }
+        }
+      ],
+      "note": {
+        "en": "Stages 1C and 2A, 11.37 km from km 9+360 across the new Bulinac interchange (with a crossing of the D28) to the Velika Pisanica interchange, with two viaducts, a bridge and several overpasses. The tender gives 4.89 km to the Bulinac interchange and 6.50 km from there, and a 30-month term for the selected contractor. In January 2026 Hrvatske ceste put the estimate at 64 million euro. The mapped line follows the OpenStreetMap construction and proposed ways and measures about 10.6 km.",
+        "ro": "Etapele 1C și 2A, 11,37 km de la km 9+360, peste noul nod Bulinac (cu traversarea drumului D28), până la nodul Velika Pisanica, cu două viaducte, un pod și mai multe pasaje superioare. Licitația indică 4,89 km până la nodul Bulinac și 6,50 km de acolo, și un termen de 30 de luni pentru antreprenorul ales. În ianuarie 2026 Hrvatske ceste a estimat valoarea la 64 de milioane euro. Linia cartografiată urmează tronsoanele în construcție și propuse din OpenStreetMap și măsoară circa 10,6 km."
+      },
+      "sourceRefs": [
+        "vpz-2026-04",
+        "hc-project-68",
+        "forbes-2026-01",
+        "osm-contributors"
+      ],
+      "geometryRef": "dc12-bulinac-velika-pisanica"
+    },
+    {
+      "id": "dc12-spisic-bukovica-virovitica",
+      "name": {
+        "en": "DC12 Špišić Bukovica – Virovitica",
+        "ro": "DC12 Špišić Bukovica – Virovitica"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023"
+      },
+      "lengthKm": 5.6,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023",
+          "note": {
+            "en": "Works reported as begun the year before August 2024.",
+            "ro": "Lucrări raportate ca începute cu un an înainte de august 2024."
+          },
+          "sourceRef": "glas-slavonije-2024"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Colas",
+          "role": "builder"
+        },
+        {
+          "name": "Geotehnika",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section from the Špišić Bukovica interchange to Virovitica, 5.6 km, the part of the DC12 built from the Virovitica side. The press gives a project value of 28.9 million euro, which is not recorded as a contract value. In November 2025 it was due to finish by the end of the year and was about half a year late; Osijek-Koteks builds the Virovitica interchange under a separate contract. The section between Špišić Bukovica and Bjelovar (about 19 km after Velika Pisanica) is in design and is not drawn. In June 2026 the Virovitica-Podravina county prefect said the works on the section were finished, and in August 2026 the mayor of Virovitica also called it finished; no opening date has been found, so the lot stays under construction. The mapped road measures about 5.3 km.",
+        "ro": "Sectorul de la nodul Špišić Bukovica la Virovitica, 5,6 km, partea din DC12 construită dinspre Virovitica. Presa indică o valoare a proiectului de 28,9 milioane euro, care nu este înregistrată drept valoare de contract. În noiembrie 2025 era prevăzut să se termine până la sfârșitul anului și avea o întârziere de circa jumătate de an; Osijek-Koteks construiește nodul Virovitica printr-un contract separat. Sectorul dintre Špišić Bukovica și Bjelovar (circa 19 km după Velika Pisanica) este în proiectare și nu este desenat. În iunie 2026 prefectul județului Virovitica-Podravina a spus că lucrările pe sector sunt încheiate, iar în august 2026 primarul din Virovitica l-a numit tot încheiat; nu s-a găsit nicio dată de deschidere, deci lotul rămâne în construcție. Drumul cartografiat măsoară circa 5,3 km."
+      },
+      "sourceRefs": [
+        "glas-slavonije-2024",
+        "klikni-2025-11",
+        "klikni-2026-06",
+        "virovitica-hr-2026-08",
+        "osm-contributors"
+      ],
+      "geometryRef": "dc12-spisic-bukovica-virovitica"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-d10",
+      "title": "Wikipedia (en): D10 road (Croatia) (exit list: Vrbovec 1 at km 8.0; Gradec – Križevci opened September 2016)",
+      "url": "https://en.wikipedia.org/wiki/D10_road_(Croatia)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "wikipedia-en-d12",
+      "title": "Wikipedia (en): D12 road (Croatia) (Vrbovec 2 – Farkaševac opened 16 April 2019; Farkaševac at km 10.6, Bjelovar at km 27.5)",
+      "url": "https://en.wikipedia.org/wiki/D12_road_(Croatia)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "krizevci-info-2016",
+      "title": "Križevci.info: Otvorena brza cesta do Križevaca (2 September 2016; Gradec – Križevci 12.5 km, 595 million kuna; Sveta Helena – Vrbovec opened 2002, Vrbovec – Gradec 2007)",
+      "url": "https://www.krizevci.info/2016/09/02/otvorena-brza-cesta-do-krizevaca/",
+      "publisher": "Križevci.info",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "mmpi-vrbovec-gradec-2007",
+      "title": "Ministry of the Sea, Transport and Infrastructure: Otvorena novoizgrađena dionica brze ceste Vrbovec – Gradec (3 August 2007; 15.5 km, about 330 million kuna)",
+      "url": "https://mmpi.gov.hr/vijesti-8/otvorena-novoizgradjena-dionica-brze-ceste-vrbovec-gradec/3902",
+      "publisher": "Ministarstvo mora, prometa i infrastrukture",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "vrbovec-hr-2007",
+      "title": "Vrbovec.hr: Otvorena dionica brze ceste Vrbovec – Gradec (3 August 2007; 15.15 km, Strabag Hrvatska main contractor)",
+      "url": "http://www.vrbovec.hr/clanak.aspx?ID=393",
+      "publisher": "Grad Vrbovec",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/20160303204028/http://www.vrbovec.hr/clanak.aspx?ID=393"
+    },
+    {
+      "id": "vlada-2019-farkasevac",
+      "title": "Vlada RH: Otvorena brza cesta od Vrbovca do Farkaševca (16 April 2019; 10.6 km, 349 million kuna excluding VAT)",
+      "url": "http://vlada.gov.hr/vijesti/otvorena-brza-cesta-od-vrbovca-do-farkasevca-osigurana-sredstva-za-izgradnju-prvih-pet-kilometara-prema-bjelovaru/25767?lang=hr",
+      "publisher": "Vlada Republike Hrvatske",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hc-project-68",
+      "title": "Hrvatske ceste: DC12 section čvor Bjelovar – čvor Bulinac – čvor Velika Pisanica (stages 1A, 1B, 1C, 2A; 20.75 km; Cohesion Fund EUR 70 million; eligible costs EUR 107.45 million)",
+      "url": "https://hrvatske-ceste.hr/hr/eu-projekti/projekti/68",
+      "publisher": "Hrvatske ceste",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "tportal-klostar-2026",
+      "title": "tportal (Hina): Gradi se nova brza cesta kod Križevaca (5 October 2026; Križevci – Kloštar Vojakovački 7.5 km, Kamgrad, EUR 30.6 million excluding VAT, deadline 23 December 2026)",
+      "url": "https://www.tportal.hr/vijesti/clanak/gradi-se-nova-brza-cesta-kod-krizevaca-hrvatske-ceste-otkrile-detalje-20261005",
+      "publisher": "tportal",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "klikni-2025-11",
+      "title": "Klikni.hr: Izgradnja brze ceste Bjelovar – Virovitica napreduje, ali puževim korakom (26 November 2025)",
+      "url": "https://www.klikni.hr/aktualno/2025/11/26/izgradnja-brze-ceste-bjelovar-virovitica-napreduje-ali-puzevim-korakom-evo-kakvo-je-stanje-po-dionicama/",
+      "publisher": "Klikni.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "klikni-2026-01",
+      "title": "Klikni.hr: Iako do Bjelovara brza cesta nije stigla, sad nastavlja prema Virovitici (27 January 2026)",
+      "url": "https://www.klikni.hr/aktualno/2026/01/27/foto-iako-do-bjelovara-brza-cesta-nije-stigla-sad-nastavlja-prema-virovitici/",
+      "publisher": "Klikni.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "forbes-2026-01",
+      "title": "Forbes Hrvatska: Počela izgradnja brze ceste od Bjelovara prema Virovitici (27 January 2026; stages 1A and 1B 9.38 km, Zagorje Gradnja, 45 million euro)",
+      "url": "https://forbes.dnevnik.hr/aktualno/pocela-izgradnja-brze-ceste-od-bjelovara-prema-virovitici/",
+      "publisher": "Forbes Hrvatska",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "mojportal-2026-01",
+      "title": "MojPortal.hr: Ministar Butković: Gradi se brza cesta do Bulinca! Dionicu do Bjelovara želimo završiti do kraja 2026 (27 January 2026)",
+      "url": "https://mojportal.hr/aktualno/ministar-butkovic-krecemo-graditi-brzu-ceste-do-bulinca-dionicu-do-bjelovara-zelimo-zavrsiti-do-kraja-2026/",
+      "publisher": "MojPortal.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "mojportal-2022-03",
+      "title": "MojPortal.hr: Brza cesta do Bjelovara dobila građevinsku dozvolu, radovi kreću na proljeće (4 March 2022; Kamgrad and Pedom Asfalti, 30 months)",
+      "url": "https://www.mojportal.hr/aktualno/brza-cesta-do-bjelovara-dobila-gradevinsku-dozvolu-radovi-krecu-na-proljece/",
+      "publisher": "MojPortal.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bjelovar-live-2022",
+      "title": "Bjelovar.live: Brza cesta za 30 mjeseci stiže do Bjelovara (30 September 2022; Kamgrad introduced to the works, two lanes)",
+      "url": "https://bjelovar.live/brza-cesta-za-30-mjeseci-stize-do-bjelovara-i-to-ni-promjena-vlasti-vise-ne-moze-zaustaviti/",
+      "publisher": "Bjelovar.live",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "baustela-2026-09",
+      "title": "Bauštela.hr: Novi produžetak za najiščekivaniju brzu cestu u Hrvatskoj (9 September 2026; Kamgrad and Pedom Asfalti contract 35.13 million euro raised to 39.82 million excluding VAT)",
+      "url": "https://baustela.hr/novosti/vijesti/87170/novi-produzetak-za-najiscekivaniju-brzu-cestu-u-hrvatskoj-prvi-kilometri-gradili-se-jos-prije-10-godina/vijest",
+      "publisher": "Bauštela.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "baustela-2026-bjelovar-bulinac",
+      "title": "Bauštela.hr: Cesta od 134 milijuna gradi se više od desetljeća (stages 1A and 1B, 9.36 km, 45.01 million euro, Zagorje gradnja and Texo molior, 30 months)",
+      "url": "https://baustela.hr/gradiliste/vijesti/77488/cesta-od-134-milijuna-gradi-se-vise-od-desetljeca-radovi-su-na-trasi-od-90-km-a-stizu-i-arheolozi/vijest",
+      "publisher": "Bauštela.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "glas-slavonije-2024",
+      "title": "Glas Slavonije: Radi se na glavnoj trasi i čvorištu Špišić Bukovica (19 August 2024; Virovitica – Špišić Bukovica 5.6 km, 28.9 million euro, works begun the previous year)",
+      "url": "https://www.glas-slavonije.hr/regija/2024/08/19/radi-se-na-glavnoj-trasi-i-cvoristu-spisic-bukovica-565404/",
+      "publisher": "Glas Slavonije",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "vpz-2026-04",
+      "title": "Virovitičko-podravska županija: Hrvatske ceste objavile su natječaj za gradnju nove dionice brze ceste DC12 (7 April 2026; 11.37 km, estimated value 61.54 million euro)",
+      "url": "https://www.vpz.hr/2026/04/hrvatske-ceste-objavile-su-natjecaj-za-gradnju-nove-dionice-brze-ceste-dc12-na-potezu-od-bjelovara-prema-virovitici-duljine-1137-kilometara-s-procijenjenom-vrijednoscu-od-6154-milijuna-eura/",
+      "publisher": "Virovitičko-podravska županija",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors: route geometry (ODbL), ways with ref D10 and D12",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "klikni-2026-01-delay",
+      "title": "Klikni.hr: Brza cesta do Bjelovara kasnit će više nego što smo očekivali (27 January 2026; Farkaševac – Breza begun 2020, Breza – Bjelovar 2022)",
+      "url": "https://www.klikni.hr/aktualno/2026/01/27/brza-cesta-do-bjelovara-kasnit-ce-vise-nego-sto-smo-ocekivali/",
+      "publisher": "Klikni.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "klikni-2026-06",
+      "title": "Klikni.hr: Župan otkrio kada bi brza cesta mogla biti gotova (12 June 2026; works Virovitica – Špišić Bukovica finished, stages 1A and 1B due summer 2028)",
+      "url": "https://www.klikni.hr/aktualno/2026/06/12/zupan-otkrio-kada-bi-brza-cesta-mogla-biti-gotova-a-hrvatske-ceste-nadaju-se-roku-koji-mnoge-iznenaduje/",
+      "publisher": "Klikni.hr",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "virovitica-hr-2026-08",
+      "title": "Grad Virovitica: Svečanom sjednicom obilježen Dan grada (August 2026; Virovitica – Špišić Bukovica section finished)",
+      "url": "https://www.virovitica.hr/2026/08/svecanom-sjednicom-obiljezen-dan-grada-kirin-nalazimo-se-u-najvecem-investicijskom-ciklusu-u-povijesti-virovitice/",
+      "publisher": "Grad Virovitica",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

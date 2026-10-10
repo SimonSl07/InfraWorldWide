@@ -1,0 +1,245 @@
+{
+  "id": "hr-rail-vinkovci-vukovar",
+  "country": "hr",
+  "category": "railway",
+  "name": {
+    "en": "Vinkovci – Vukovar and Vinkovci – Tovarnik railway upgrades",
+    "ro": "Modernizările căilor ferate Vinkovci – Vukovar și Vinkovci – Tovarnik"
+  },
+  "description": {
+    "en": "Two upgrades of lines in eastern Croatia run by HŽ Infrastruktura. Vinkovci – Vukovar (M601, 18.7 km) was renovated and electrified for 120 km/h under a works contract signed on 20 December 2019, and completed in December 2024. Vinkovci – Tovarnik – state border was the first Croatian railway project financed from EU pre-accession funds and was completed in January 2012.",
+    "ro": "Două modernizări de linii în estul Croației, derulate de HŽ Infrastruktura. Vinkovci – Vukovar (M601, 18,7 km) a fost renovată și electrificată pentru 120 km/h printr-un contract de lucrări semnat la 20 decembrie 2019 și finalizată în decembrie 2024. Vinkovci – Tovarnik – granița de stat a fost primul proiect feroviar croat finanțat din fonduri europene de preaderare și a fost finalizat în ianuarie 2012."
+  },
+  "operator": "hr-hz-infrastruktura",
+  "lots": [
+    {
+      "id": "vinkovci-vukovar",
+      "name": {
+        "en": "Vinkovci – Vukovar (M601)",
+        "ro": "Vinkovci – Vukovar (M601)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-12-20",
+        "opened": "2024-12-18"
+      },
+      "lengthKm": 18.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 49.9,
+              "currency": "EUR",
+              "year": 2019,
+              "scope": "works",
+              "note": "Works contract; VAT basis not stated."
+            },
+            "date": "2019-12-20",
+            "sourceRef": "hzinfra-vinkovci-vukovar"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 120,
+        "electrified": true,
+        "tracks": 1
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-12-20",
+          "note": {
+            "en": "Works contract signed in Vukovar with COMSA S.A.U. and COMSA Instalaciones y Sistemas Industriales S.A.U.",
+            "ro": "Contract de lucrări semnat la Vukovar cu COMSA S.A.U. și COMSA Instalaciones y Sistemas Industriales S.A.U."
+          },
+          "sourceRef": "hzinfra-vinkovci-vukovar"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-18",
+          "note": {
+            "en": "Completion of the project marked at a ceremony in Vukovar attended by the transport minister.",
+            "ro": "Finalizarea proiectului, marcată printr-o ceremonie la Vukovar la care a participat ministrul transporturilor."
+          },
+          "sourceRef": "hzinfra-vv-completion"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.85,
+          "amount": {
+            "amount": 54.7,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Operational Programme Competitiveness and Cohesion 2014–2020, Cohesion Fund: grant agreement KK.07.5.1.05.0001 of 21 May 2018, value EUR 89.9 million, eligible costs EUR 68.5 million, maximum co-financing EUR 64.4 million, of which EUR 54.7 million (85%) from the programme",
+            "ro": "Programul Operațional Competitivitate și Coeziune 2014–2020, Fondul de coeziune: acord de grant KK.07.5.1.05.0001 din 21 mai 2018, valoare 89,9 milioane EUR, costuri eligibile 68,5 milioane EUR, cofinanțare maximă 64,4 milioane EUR, din care 54,7 milioane EUR (85%) din program"
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.15,
+          "amount": {
+            "amount": 9.7,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "State budget: EUR 9.7 million (15%) of the maximum co-financing",
+            "ro": "Bugetul de stat: 9,7 milioane EUR (15%) din cofinanțarea maximă"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "COMSA S.A.U. – COMSA Instalaciones y Sistemas Industriales S.A.U.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 49.9,
+          "currency": "EUR",
+          "year": 2019,
+          "scope": "works",
+          "note": "VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Renovation of the single-track line, with Vukovar-Borovo Naselje and Vukovar stations rebuilt, the Nuštar and Bršadin-Lipovača stops rebuilt, nine level crossings modernised, a new Bobotski kanal bridge and a renovated Vuka bridge. The works contract (EUR 49.9 million, signed 20 December 2019), the grant agreement (EUR 89.9 million) and the eligible costs (EUR 68.5 million) are different figures: the grant agreement also covers project management, publicity, supervision (EUR 1.7 million, signed 14 March 2019 with RUBICON ENGINEERING EAD and SPC ENGINEERING EOOD), reserves and land. The grant implementation period runs from March 2016 to December 2024. Voltage of 25 kV was permanently switched on in the contact line on 15 April 2024. At the completion ceremony on 18 December 2024 the minister described a EUR 61 million project with 18.71 km of renovated track; the opening date recorded is the ceremony, as the page gives no separate first-train date. Construction start is not stated on the project pages. The drawn OpenStreetMap length is slightly shorter than the sourced 18.7 km, which is kept.",
+        "ro": "Renovarea liniei cu o singură cale, cu stațiile Vukovar-Borovo Naselje și Vukovar reconstruite, haltele Nuštar și Bršadin-Lipovača reconstruite, nouă treceri la nivel modernizate, un pod nou la Bobotski kanal și podul Vuka renovat. Contractul de lucrări (49,9 milioane EUR, semnat la 20 decembrie 2019), acordul de grant (89,9 milioane EUR) și costurile eligibile (68,5 milioane EUR) sunt cifre diferite: acordul de grant acoperă și managementul proiectului, publicitatea, supravegherea (1,7 milioane EUR, semnat la 14 martie 2019 cu RUBICON ENGINEERING EAD și SPC ENGINEERING EOOD), rezervele și terenurile. Perioada de implementare a grantului este martie 2016 – decembrie 2024. Tensiunea de 25 kV a fost pusă definitiv în rețeaua de contact la 15 aprilie 2024. La ceremonia de finalizare din 18 decembrie 2024, ministrul a descris un proiect de 61 de milioane EUR cu 18,71 km de cale renovată; data de deschidere înregistrată este ceremonia, deoarece pagina nu indică o dată separată a primului tren. Începutul lucrărilor nu este indicat pe paginile proiectului. Lungimea trasată din OpenStreetMap este puțin mai mică decât cei 18,7 km din sursă, care sunt păstrați."
+      },
+      "sourceRefs": [
+        "hzinfra-vinkovci-vukovar",
+        "hzinfra-vv-signing",
+        "hzinfra-vv-voltage",
+        "hzinfra-vv-completion",
+        "osm-copyright"
+      ],
+      "geometryRef": "vinkovci-vukovar"
+    },
+    {
+      "id": "vinkovci-tovarnik-border",
+      "name": {
+        "en": "Vinkovci – Tovarnik – state border",
+        "ro": "Vinkovci – Tovarnik – granița de stat"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-01-19"
+      },
+      "lengthKm": 33.48,
+      "cost": {
+        "actual": {
+          "amount": 66.5,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "HŽ Infrastruktura: project worth about EUR 66.5 million in total; VAT basis and price year not stated."
+        }
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-01-19",
+          "note": {
+            "en": "Completion of works marked at a ceremony.",
+            "ro": "Finalizarea lucrărilor, marcată printr-o ceremonie."
+          },
+          "sourceRef": "hzinfra-vinkovci-tovarnik"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-ispa",
+          "coFinancingRate": 0.48,
+          "detail": {
+            "en": "ISPA pre-accession programme covered 48 percent of the project value; the remaining 52 percent came from the state budget",
+            "ro": "Programul de preaderare ISPA a acoperit 48 la sută din valoarea proiectului; restul de 52 la sută a provenit din bugetul de stat"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Salcef Construzioni Edili e Ferroviarie S.p.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Bombardier Transportation Italy – SITE S.p.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 41.77,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Civil works contract with Salcef (EUR 41,766,847.33); signing date, price year and VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Rehabilitation of the double-track line on Corridor X from Vinkovci to Tovarnik and the Serbian border: 67 km of track renewed for 22.5 t axle load and 160 km/h (previously 50 km/h), with ETCS signalling, seven stops modernised, the Jankovci and Đeletovci stations rebuilt and two new stops built. The project had two parts: civil works by Salcef Construzioni Edili e Ferroviarie S.p.A. of Rome (EUR 41,766,847.33) and the signalling and traffic-control system by Bombardier Transportation Italy with SITE S.p.A. (EUR 16,411,114.98). Supervision by TYPSA cost EUR 2,005,000. The page gives the extent as 33.48 km Vinkovci – Tovarnik – state border; the OpenStreetMap line is drawn from Vinkovci to Tovarnik station, and the sourced figure is kept. The page gives the completion ceremony date but no contract signing or construction start dates.",
+        "ro": "Reabilitarea liniei cu două căi de pe coridorul X de la Vinkovci la Tovarnik și granița cu Serbia: 67 km de cale reînnoiți pentru sarcină pe osie de 22,5 t și 160 km/h (anterior 50 km/h), cu semnalizare ETCS, șapte halte modernizate, stațiile Jankovci și Đeletovci reconstruite și două halte noi. Proiectul a avut două părți: lucrările civile ale Salcef Construzioni Edili e Ferroviarie S.p.A. din Roma (41.766.847,33 EUR) și sistemul de semnalizare și control al traficului al Bombardier Transportation Italy cu SITE S.p.A. (16.411.114,98 EUR). Supravegherea TYPSA a costat 2.005.000 EUR. Pagina indică lungimea 33,48 km Vinkovci – Tovarnik – granița de stat; linia OpenStreetMap este trasată de la Vinkovci la stația Tovarnik, iar cifra din sursă este păstrată. Pagina indică data ceremoniei de finalizare, dar nu datele semnării contractelor sau începutului lucrărilor."
+      },
+      "sourceRefs": [
+        "hzinfra-vinkovci-tovarnik",
+        "osm-copyright"
+      ],
+      "geometryRef": "vinkovci-tovarnik-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hzinfra-vinkovci-vukovar",
+      "title": "HŽ Infrastruktura: Nadogradnja i elektrifikacija željezničke pruge Vinkovci – Vukovar",
+      "url": "https://www.hzinfra.hr/nadogradnja-i-elektrifikacija-zeljeznicke-pruge-vinkovci-vukovar/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hzinfra-vv-signing",
+      "title": "HŽ Infrastruktura: Počinju radovi na modernizaciji pruge Vinkovci – Vukovar",
+      "url": "https://www.hzinfra.hr/potpisan-ugovor-za-radove-na-projektu-vinkovci-vukovar/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hzinfra-vv-voltage",
+      "title": "HŽ Infrastruktura: Puštanje napona u kontaktnu mrežu na pruzi Vinkovci – Vukovar",
+      "url": "https://www.hzinfra.hr/pustanje-napona-u-kontaktnu-mrezu/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hzinfra-vv-completion",
+      "title": "HŽ Infrastruktura: Završeni radovi na modernizaciji 19 km pruge Vinkovci – Vukovar (18 December 2024)",
+      "url": "https://www.hzinfra.hr/zavrseni-radovi-na-modernizaciji-19-km-pruge-vinkovci-vukovar/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hzinfra-vinkovci-tovarnik",
+      "title": "HŽ Infrastruktura: Rehabilitacija željezničke pruge Vinkovci – Tovarnik – Državna granica",
+      "url": "https://www.hzinfra.hr/?p=2183",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-copyright",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

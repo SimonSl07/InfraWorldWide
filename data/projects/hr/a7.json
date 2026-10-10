@@ -1,0 +1,582 @@
+{
+  "id": "hr-a7",
+  "country": "hr",
+  "category": "highway",
+  "name": {
+    "en": "A7 Motorway (Rupa – Rijeka – Žuta Lokva)",
+    "ro": "Autostrada A7 (Rupa – Rijeka – Žuta Lokva)"
+  },
+  "description": {
+    "en": "The Rijeka bypass and its link to the Slovenian border at Rupa, with a planned continuation along the coast to the A1 at Žuta Lokva. The bypass was built in stages from 1977: Orehovica – Diračje in 1988, Diračje – Matulji in 1990 and Matulji – Jurdani in 1991 as four-lane roads, Rupa – Jurdani as a motorway in 2004–2005, Orehovica – Sveti Kuzam in 2006 and Sveti Kuzam – Križišće, completed in December 2013. About 43 km is open (Novi list, 2025). The remaining 56 km from Križišće to Žuta Lokva is split into four sections: Križišće – Selce (two subsections, both under contract in 2026), the Novi Vinodolski bypass (under construction, built as one two-lane carriageway), Novi Vinodolski – Senj and Senj – Žuta Lokva (design stage). The A8 Istrian Y joins at Matulji and is modelled as its own project.",
+    "ro": "Ocolitoarea Rijeka și legătura ei cu granița slovenă de la Rupa, cu o prelungire planificată de-a lungul coastei până la A1 la Žuta Lokva. Ocolitoarea a fost construită în etape din 1977: Orehovica – Diračje în 1988, Diračje – Matulji în 1990 și Matulji – Jurdani în 1991 ca drumuri cu patru benzi, Rupa – Jurdani ca autostradă în 2004–2005, Orehovica – Sveti Kuzam în 2006 și Sveti Kuzam – Križišće, finalizat în decembrie 2013. Aproximativ 43 km sunt în exploatare (Novi list, 2025). Cei 56 km rămași de la Križišće la Žuta Lokva sunt împărțiți în patru sectoare: Križišće – Selce (două subsectoare, ambele contractate în 2026), ocolitoarea Novi Vinodolski (în construcție, realizată cu un singur carosabil cu două benzi), Novi Vinodolski – Senj și Senj – Žuta Lokva (etapa de proiectare). Y-ul istrian A8 se leagă la Matulji și este modelat ca proiect separat."
+  },
+  "operator": "hr-hac",
+  "lots": [
+    {
+      "id": "rupa-jurdani",
+      "name": {
+        "en": "Rupa (border) – Jurdani",
+        "ro": "Rupa (frontieră) – Jurdani"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005"
+      },
+      "lengthKm": 11,
+      "profile": {
+        "tolled": true
+      },
+      "note": {
+        "en": "English Wikipedia: in 2005 an 11 km section was completed between Jurdani and the Slovenian border, built as a six-lane motorway; Građevinar gives the 2004 and 2005 sections of the Rupa – Rijeka motorway as 14.7 km together. Starts at the Rupa border crossing. The only tolled stretch of the A7 (open toll system, one plaza). The mapped alignment measures 11.26 km.",
+        "ro": "Wikipedia în engleză: în 2005 a fost finalizat un sector de 11 km între Jurdani și frontiera slovenă, construit ca autostradă cu șase benzi; Građevinar dă pentru sectoarele din 2004 și 2005 ale autostrăzii Rupa – Rijeka împreună 14,7 km. Începe la punctul de trecere a frontierei Rupa. Singurul sector cu taxă al A7 (sistem deschis, o singură barieră). Traseul cartografiat măsoară 11,26 km."
+      },
+      "sourceRefs": [
+        "wikipedia-en-a7-croatia",
+        "gradjevinar-2008-rijeka-bypass",
+        "osm-copyright"
+      ],
+      "geometryRef": "rupa-jurdani"
+    },
+    {
+      "id": "jurdani-matulji",
+      "name": {
+        "en": "Jurdani – Matulji",
+        "ro": "Jurdani – Matulji"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1991"
+      },
+      "lengthKm": 5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1991",
+          "note": {
+            "en": "Four-lane road without hard shoulders, per Građevinar.",
+            "ro": "Drum cu patru benzi fără benzi de urgență, conform Građevinar."
+          },
+          "sourceRef": "gradjevinar-2008-rijeka-bypass"
+        }
+      ],
+      "note": {
+        "en": "Građevinar (2008): a 5 km four-lane section without hard shoulders opened in 1991, named Matulji – Jušići; the 16.3 km Rupa – Matulji section on the ARZ page leaves about 5 km after the 11 km to Jurdani, so the lot is taken as Jurdani – Matulji. English Wikipedia adds that the A7 was extended 3.7 km to Jurdani in 2004, the first stretch built as a six-lane motorway; the sources do not place that 3.7 km on the 1991 road, so it is not split out. Ends at the Matulji interchange where the A8 Istrian Y joins; the cut is at the A7 carriageway nearest the end of the A8 lot, so the two projects do not overlap. The mapped alignment measures 4.65 km.",
+        "ro": "Građevinar (2008): un sector de 5 km cu patru benzi, fără benzi de urgență, a fost deschis în 1991, numit Matulji – Jušići; sectorul Rupa – Matulji de 16,3 km de pe pagina ARZ lasă circa 5 km după cei 11 km până la Jurdani, deci lotul este considerat Jurdani – Matulji. Wikipedia în engleză adaugă că A7 a fost prelungită cu 3,7 km până la Jurdani în 2004, primul tronson construit ca autostradă cu șase benzi; sursele nu plasează acești 3,7 km pe drumul din 1991, deci nu sunt separați. Se termină la nodul Matulji, unde se leagă A8 Y-ul istrian; tăietura este la carosabilul A7 cel mai apropiat de capătul lotului A8, deci cele două proiecte nu se suprapun. Traseul cartografiat măsoară 4,65 km."
+      },
+      "sourceRefs": [
+        "gradjevinar-2008-rijeka-bypass",
+        "arz-rupa-matulji",
+        "wikipedia-en-a7-croatia",
+        "osm-copyright"
+      ],
+      "geometryRef": "jurdani-matulji"
+    },
+    {
+      "id": "matulji-rijeka-zapad",
+      "name": {
+        "en": "Matulji – Rijeka West (Diračje)",
+        "ro": "Matulji – Rijeka Vest (Diračje)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1990"
+      },
+      "lengthKm": 4,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1990",
+          "note": {
+            "en": "Four-lane road without hard shoulders, per Građevinar.",
+            "ro": "Drum cu patru benzi fără benzi de urgență, conform Građevinar."
+          },
+          "sourceRef": "gradjevinar-2008-rijeka-bypass"
+        }
+      ],
+      "note": {
+        "en": "Građevinar (2008): in 1990 the 4 km Diračje – Matulji section was completed and opened as a four-lane road without hard shoulders. Diračje is the Rijeka West interchange. The mapped alignment measures 4.14 km.",
+        "ro": "Građevinar (2008): în 1990 a fost finalizat și deschis sectorul Diračje – Matulji de 4 km, ca drum cu patru benzi fără benzi de urgență. Diračje este nodul Rijeka Vest. Traseul cartografiat măsoară 4,14 km."
+      },
+      "sourceRefs": [
+        "gradjevinar-2008-rijeka-bypass",
+        "osm-copyright"
+      ],
+      "geometryRef": "matulji-rijeka-zapad"
+    },
+    {
+      "id": "rijeka-zapad-orehovica",
+      "name": {
+        "en": "Rijeka West (Diračje) – Orehovica",
+        "ro": "Rijeka Vest (Diračje) – Orehovica"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1977",
+        "opened": "1988-07"
+      },
+      "lengthKm": 8.85,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1988-07",
+          "note": {
+            "en": "North carriageway only, 8.3 km, with the Orehovica, Škurinje and Diračje interchanges.",
+            "ro": "Numai carosabilul nordic, 8,3 km, cu nodurile Orehovica, Škurinje și Diračje."
+          },
+          "sourceRef": "gradjevinar-2008-rijeka-bypass"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hidroelektra niskogradnja d.d.",
+          "role": "builder"
+        },
+        {
+          "name": "Viadukt d.d.",
+          "role": "builder"
+        },
+        {
+          "name": "Konstruktor-inženjering d.d.",
+          "role": "builder"
+        },
+        {
+          "name": "STRABAG AG",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Construction of the Rijeka bypass started in 1977 and the north carriageway of the Orehovica – Diračje section, 8.3 km, opened in July 1988 (Građevinar, 2008). The south carriageway was added under Autocesta Rijeka – Zagreb: contract signed 22 January 2008 with a joint venture led by Hidroelektra niskogradnja (spelled Hidrolektra in the PDF text) with Viadukt, Konstruktor-inženjering and STRABAG AG, a little under HRK 628 million excluding VAT, work started at the end of February 2008 with a deadline of 1 June 2009. It opened as full profile on 22 December 2009 (Dnevnik.hr): 8.85 km between the interchanges, 9.6 km with access roads, four tunnels, two viaducts and the Rječina Bridge; more than HRK 1 billion invested. Kuna amounts are not recorded as money fields. The length is the south carriageway figure; the mapped alignment measures 8.48 km. Upgrade of the same road: the road stays in the lot as opened from 1988.",
+        "ro": "Construcția ocolitoarei Rijeka a început în 1977, iar carosabilul nordic al sectorului Orehovica – Diračje, 8,3 km, a fost deschis în iulie 1988 (Građevinar, 2008). Carosabilul sudic a fost adăugat de Autocesta Rijeka – Zagreb: contract semnat la 22 ianuarie 2008 cu un consorțiu condus de Hidroelektra niskogradnja (scrisă Hidrolektra în textul PDF) alături de Viadukt, Konstruktor-inženjering și STRABAG AG, puțin sub 628 milioane HRK fără TVA, lucrări începute la sfârșitul lui februarie 2008, cu termen 1 iunie 2009. A fost deschis în profil complet la 22 decembrie 2009 (Dnevnik.hr): 8,85 km între noduri, 9,6 km cu drumurile de acces, patru tuneluri, două viaducte și podul Rječina; peste 1 miliard HRK investit. Sumele în kuna nu sunt înregistrate ca sume. Lungimea este cea a carosabilului sudic; traseul cartografiat măsoară 8,48 km. Modernizarea aceluiași drum: drumul rămâne în lot ca deschis din 1988."
+      },
+      "sourceRefs": [
+        "gradjevinar-2008-rijeka-bypass",
+        "dnevnik-2009-rijeka-bypass",
+        "arz-rijeka-bypass",
+        "osm-copyright"
+      ],
+      "geometryRef": "rijeka-zapad-orehovica"
+    },
+    {
+      "id": "orehovica-sveti-kuzam",
+      "name": {
+        "en": "Orehovica – Sveti Kuzam",
+        "ro": "Orehovica – Sveti Kuzam"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003",
+        "opened": "2006-05"
+      },
+      "lengthKm": 6.35,
+      "note": {
+        "en": "Eastern arm of the Rijeka bypass, four lanes, with the Orehovica, Draga and Sveti Kuzam interchanges. Građevinar (2008): construction began in 2003 and the 6.35 km section opened in 2006; English Wikipedia gives May 2006. The ARZ page gives 6.36 km and 19 structures on the main alignment. The mapped alignment measures 5.55 km, 13% less than the 6.35 km stated; the sources do not say why, and the stated figure is kept.",
+        "ro": "Brațul estic al ocolitoarei Rijeka, patru benzi, cu nodurile Orehovica, Draga și Sveti Kuzam. Građevinar (2008): construcția a început în 2003, iar sectorul de 6,35 km a fost deschis în 2006; Wikipedia în engleză indică mai 2006. Pagina ARZ indică 6,36 km și 19 structuri pe traseul principal. Traseul cartografiat măsoară 5,55 km, cu 13% mai puțin decât cei 6,35 km indicați; sursele nu spun de ce, iar cifra indicată este păstrată."
+      },
+      "sourceRefs": [
+        "gradjevinar-2008-rijeka-bypass",
+        "wikipedia-en-a7-croatia",
+        "arz-orehovica-sveti-kuzam",
+        "osm-copyright"
+      ],
+      "geometryRef": "orehovica-sveti-kuzam"
+    },
+    {
+      "id": "sveti-kuzam-krizisce",
+      "name": {
+        "en": "Sveti Kuzam – Križišće",
+        "ro": "Sveti Kuzam – Križišće"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-12-23"
+      },
+      "lengthKm": 8.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2013-12-23",
+          "note": {
+            "en": "Full profile, four lanes over the whole 8.5 km, after the last 800 m of north carriageway at Križišće was finished.",
+            "ro": "Profil complet, patru benzi pe toți cei 8,5 km, după finalizarea ultimilor 800 m ai carosabilului nordic la Križišće."
+          },
+          "sourceRef": "novilist-2013-sv-kuzam-krizisce"
+        }
+      ],
+      "note": {
+        "en": "Novi list, 23 December 2013: the full profile of the section opened that day, the last 800 m of north carriageway at Križišće with the Križišće viaduct and its roundabouts, after a delay of four more months. The section was still to be built in 2008 (8.37 km per Građevinar, with Hrvatske ceste responsible); no source found gives an earlier partial opening, so the opening recorded is the full-profile date. The road ends at the Križišće interchange. The mapped alignment measures 8.31 km.",
+        "ro": "Novi list, 23 decembrie 2013: profilul complet al sectorului a fost deschis în ziua respectivă, ultimii 800 m ai carosabilului nordic la Križišće cu viaductul Križišće și rotondele sale, după o întârziere de încă patru luni. Sectorul era încă de construit în 2008 (8,37 km conform Građevinar, cu Hrvatske ceste responsabile); nicio sursă găsită nu indică o deschidere parțială anterioară, deci deschiderea înregistrată este data profilului complet. Drumul se termină la nodul Križišće. Traseul cartografiat măsoară 8,31 km."
+      },
+      "sourceRefs": [
+        "novilist-2013-sv-kuzam-krizisce",
+        "gradjevinar-2008-rijeka-bypass",
+        "osm-copyright"
+      ],
+      "geometryRef": "sveti-kuzam-krizisce"
+    },
+    {
+      "id": "krizisce-jadranovo",
+      "name": {
+        "en": "Križišće – Jadranovo",
+        "ro": "Križišće – Jadranovo"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-03-27"
+      },
+      "lengthKm": 5.2,
+      "cost": {
+        "estimated": {
+          "amount": 110,
+          "currency": "EUR",
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Estimated value of the works before award, as reported by Novi list (HINA) on 20 November 2025; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 151.48,
+              "currency": "EUR",
+              "year": 2026,
+              "scope": "works",
+              "note": "Contract value excluding VAT."
+            },
+            "date": "2026-03-27",
+            "sourceRef": "hac-krizisce-jadranovo-2026"
+          }
+        ]
+      },
+      "contract": {
+        "executionMonths": 36,
+        "value": {
+          "amount": 151.48,
+          "currency": "EUR",
+          "year": 2026,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "GP Krk d.o.o.",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-03-27",
+          "note": {
+            "en": "Contract signed at Kraljevica with GP Krk; Prime Minister Plenković and Minister Butković attended.",
+            "ro": "Contract semnat la Kraljevica cu GP Krk; au fost prezenți premierul Plenković și ministrul Butković."
+          },
+          "sourceRef": "hac-krizisce-jadranovo-2026"
+        }
+      ],
+      "note": {
+        "en": "First subsection of the Križišće – Selce section (17.5 km, estimated EUR 350 million per Novi list, November 2025). HAC announced the contract signing on 30 March 2026: signed on Friday 27 March 2026, EUR 151.48 million excluding VAT, 36 months from the contractor being introduced to the site. No source gives a start of works, so the lot stays tendered. OpenStreetMap already shows construction ways along the alignment. The mapped alignment measures 4.51 km against the 5.2 km stated, 13% less; the sources do not say why, and HAC's stated figure is kept.",
+        "ro": "Primul subsector al sectorului Križišće – Selce (17,5 km, estimat la 350 milioane EUR conform Novi list, noiembrie 2025). HAC a anunțat semnarea contractului la 30 martie 2026: semnat vineri, 27 martie 2026, 151,48 milioane EUR fără TVA, 36 de luni de la introducerea executantului în șantier. Nicio sursă nu indică începutul lucrărilor, deci lotul rămâne licitat. OpenStreetMap arată deja drumuri în construcție pe traseu. Traseul cartografiat măsoară 4,51 km față de cei 5,2 km indicați, cu 13% mai puțin; sursele nu spun de ce, iar cifra indicată de HAC este păstrată."
+      },
+      "sourceRefs": [
+        "hac-krizisce-jadranovo-2026",
+        "novilist-2025-a7-plan",
+        "osm-copyright"
+      ],
+      "geometryRef": "krizisce-jadranovo"
+    },
+    {
+      "id": "jadranovo-selce",
+      "name": {
+        "en": "Jadranovo – Selce",
+        "ro": "Jadranovo – Selce"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-07-31"
+      },
+      "lengthKm": 12.3,
+      "cost": {
+        "estimated": {
+          "amount": 200,
+          "currency": "EUR",
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Estimated value of the works before award, as reported by Novi list (HINA) on 20 November 2025; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 252,
+              "currency": "EUR",
+              "year": 2026,
+              "scope": "works",
+              "note": "Contract value excluding VAT."
+            },
+            "date": "2026-07-31",
+            "sourceRef": "hac-jadranovo-selce-2026"
+          }
+        ]
+      },
+      "contract": {
+        "executionMonths": 42,
+        "value": {
+          "amount": 252,
+          "currency": "EUR",
+          "year": 2026,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Kolektor CPG d.o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Kolektor Koling d.o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "CGP d.d.",
+          "role": "builder"
+        },
+        {
+          "name": "Gorenjska Gradbena Družba d.d.",
+          "role": "builder"
+        },
+        {
+          "name": "EURO-ASFALT d.o.o.",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-07-31",
+          "note": {
+            "en": "Contract signed at Crikvenica with a consortium of the five companies; Minister Butković attended.",
+            "ro": "Contract semnat la Crikvenica cu un consorțiu al celor cinci companii; a fost prezent ministrul Butković."
+          },
+          "sourceRef": "hac-jadranovo-selce-2026"
+        }
+      ],
+      "note": {
+        "en": "Second subsection of the Križišće – Selce section. HAC news dated 31 July 2026: contract signed at Crikvenica on Friday 31 July with a bidder consortium (Kolektor CPG, Kolektor Koling, CGP, Gorenjska Gradbena Družba, EURO-ASFALT), EUR 252 million excluding VAT, 42 months from the contractor being introduced to the site. The 12.3 km length is HAC's. No start of works is recorded, so the lot stays tendered. OpenStreetMap shows construction ways along the alignment, including the Jadranovo and Selce interchanges. The mapped alignment measures 13.76 km, 12% more than the 12.3 km stated; the sources do not say why, and the stated figure is kept.",
+        "ro": "A doua subsector a sectorului Križišće – Selce. Știre HAC din 31 iulie 2026: contract semnat la Crikvenica vineri, 31 iulie, cu un consorțiu de ofertanți (Kolektor CPG, Kolektor Koling, CGP, Gorenjska Gradbena Družba, EURO-ASFALT), 252 milioane EUR fără TVA, 42 de luni de la introducerea executantului în șantier. Lungimea de 12,3 km este cea indicată de HAC. Nu este înregistrat niciun început al lucrărilor, deci lotul rămâne licitat. OpenStreetMap arată drumuri în construcție pe traseu, inclusiv nodurile Jadranovo și Selce. Traseul cartografiat măsoară 13,76 km, cu 12% mai mult decât cei 12,3 km indicați; sursele nu spun de ce, iar cifra indicată este păstrată."
+      },
+      "sourceRefs": [
+        "hac-jadranovo-selce-2026",
+        "novilist-2025-a7-plan",
+        "osm-copyright"
+      ],
+      "geometryRef": "jadranovo-selce"
+    },
+    {
+      "id": "selce-novi-vinodolski",
+      "name": {
+        "en": "Selce – Novi Vinodolski (bypass)",
+        "ro": "Selce – Novi Vinodolski (ocolitoare)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-09-13"
+      },
+      "lengthKm": 6.5,
+      "profile": {
+        "tunnelKm": 0.834,
+        "viaductKm": 1.062,
+        "lanes": 2
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 63,
+              "currency": "EUR",
+              "year": 2021,
+              "scope": "works",
+              "note": "HAC's euro figure for the HRK 474,471,626.60 contract, excluding VAT."
+            },
+            "date": "2021-09-13",
+            "sourceRef": "hac-nv-bypass-visit-2024"
+          }
+        ]
+      },
+      "contract": {
+        "executionMonths": 36,
+        "value": {
+          "amount": 63,
+          "currency": "EUR",
+          "year": 2021,
+          "scope": "works",
+          "note": "HAC's euro figure for the HRK 474,471,626.60 contract, excluding VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Kolektor CPG d.o.o.",
+          "role": "builder"
+        },
+        {
+          "name": "ICM S.p.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First phase of the A7 south of Križišće: a 9.8 km bypass of Novi Vinodolski, of which 6.5 km lies on the line of the future A7 and 3.3 km is connecting roads to the D8 at Selce and Povile. Built as a two-lane road in half profile on the line of the future left carriageway. Zagori tunnel 834 m and Ričina viaduct 1,062 m (HAC). Contract signed 13 September 2021, HRK 474,471,626.60 excluding VAT, three years from signing; HAC put it at EUR 63 million in 2024 and total investment at EUR 87 million in 2025. HAC gives completion as spring 2027, weather permitting, moved from the end of 2025 or spring 2026; English Wikipedia gives work as under way since 2022. No start-of-works date is recorded. The second carriageway (Selce – Novi Vinodolski, 7.6 km, estimated EUR 150 million) is a later phase: design contract of October 2023, tender planned after the building permit, by the end of 2026. The mapped alignment measures 6.28 km.",
+        "ro": "Prima fază a A7 la sud de Križišće: o ocolitoare de 9,8 km a localității Novi Vinodolski, din care 6,5 km pe traseul viitoarei A7 și 3,3 km drumuri de legătură cu D8 la Selce și Povile. Construită ca drum cu două benzi, în semiprofil, pe traseul viitorului carosabil stâng. Tunelul Zagori 834 m și viaductul Ričina 1062 m (HAC). Contract semnat la 13 septembrie 2021, 474.471.626,60 HRK fără TVA, trei ani de la semnare; HAC l-a evaluat la 63 milioane EUR în 2024 și investiția totală la 87 milioane EUR în 2025. HAC indică finalizarea în primăvara 2027, dacă vremea permite, mutată de la sfârșitul lui 2025 sau primăvara 2026; Wikipedia în engleză indică lucrări în curs din 2022. Nu este înregistrată o dată de începere a lucrărilor. Al doilea carosabil (Selce – Novi Vinodolski, 7,6 km, estimat la 150 milioane EUR) este o fază ulterioară: contract de proiectare din octombrie 2023, licitație planificată după autorizația de construire, până la sfârșitul lui 2026. Traseul cartografiat măsoară 6,28 km."
+      },
+      "sourceRefs": [
+        "hac-nv-bypass-contract-2021",
+        "hac-nv-bypass-visit-2024",
+        "novilist-2025-a7-plan",
+        "wikipedia-en-a7-croatia",
+        "osm-copyright"
+      ],
+      "geometryRef": "selce-novi-vinodolski"
+    },
+    {
+      "id": "novi-vinodolski-senj",
+      "name": {
+        "en": "Novi Vinodolski – Senj",
+        "ro": "Novi Vinodolski – Senj"
+      },
+      "status": "planned",
+      "lengthKm": 17.9,
+      "cost": {
+        "estimated": {
+          "amount": 290,
+          "currency": "EUR",
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Estimated construction value as reported by Novi list (HINA) on 20 November 2025; price year not stated."
+        }
+      },
+      "note": {
+        "en": "Design stage. A conceptual design exists and spatial plans are being aligned; an environmental impact study and field surveys are under way (Novi list, 20 November 2025). HAC says the start of works cannot yet be set. Estimated construction value EUR 290 million. OpenStreetMap carries the alignment as proposed ways. The Senj end is cut at the proposed interchange ramps near Senj, so the drawn 17.96 km agrees with the stated 17.9 km.",
+        "ro": "Etapa de proiectare. Există un proiect conceptual, iar planurile de amenajare sunt în curs de armonizare; un studiu de impact asupra mediului și cercetări pe teren sunt în desfășurare (Novi list, 20 noiembrie 2025). HAC spune că începutul lucrărilor nu poate fi încă stabilit. Valoare estimată a construcției 290 milioane EUR. OpenStreetMap conține traseul ca drumuri propuse. Capătul Senj este tăiat la rampele propuse ale nodului de lângă Senj, astfel încât cei 17,96 km desenați corespund celor 17,9 km indicați."
+      },
+      "sourceRefs": [
+        "novilist-2025-a7-plan",
+        "hac-nv-bypass-visit-2024",
+        "osm-copyright"
+      ],
+      "geometryRef": "novi-vinodolski-senj"
+    },
+    {
+      "id": "senj-zuta-lokva",
+      "name": {
+        "en": "Senj – Žuta Lokva",
+        "ro": "Senj – Žuta Lokva"
+      },
+      "status": "planned",
+      "lengthKm": 13,
+      "cost": {
+        "estimated": {
+          "amount": 270,
+          "currency": "EUR",
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Estimated construction value as reported by Novi list (HINA) on 20 November 2025; price year not stated."
+        }
+      },
+      "note": {
+        "en": "Design stage. Design documentation up to the location permit is under contract, a conceptual design exists, and an environmental impact study and field surveys are under way (Novi list, 20 November 2025). HAC says the start of works cannot yet be set. Estimated construction value EUR 270 million. Ends at the interchange with the A1 at Žuta Lokva, which already exists. OpenStreetMap carries the alignment as proposed ways. The mapped alignment measures 14.99 km, 15% more than the stated 13 km; the stated figure is kept.",
+        "ro": "Etapa de proiectare. Documentația de proiectare până la autorizația de amplasare este contractată, există un proiect conceptual, iar un studiu de impact asupra mediului și cercetări pe teren sunt în desfășurare (Novi list, 20 noiembrie 2025). HAC spune că începutul lucrărilor nu poate fi încă stabilit. Valoare estimată a construcției 270 milioane EUR. Se termină la nodul cu A1 de la Žuta Lokva, care există deja. OpenStreetMap conține traseul ca drumuri propuse. Traseul cartografiat măsoară 14,99 km, cu 15% mai mult decât cei 13 km indicați; cifra indicată este păstrată."
+      },
+      "sourceRefs": [
+        "novilist-2025-a7-plan",
+        "hac-nv-bypass-visit-2024",
+        "osm-copyright"
+      ],
+      "geometryRef": "senj-zuta-lokva"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-a7-croatia",
+      "title": "Wikipedia: A7 (Croatia)",
+      "url": "https://en.wikipedia.org/wiki/A7_(Croatia)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gradjevinar-2008-rijeka-bypass",
+      "title": "Građevinar 60 (2008) 7: Riječka obilaznica i južni kolnik dionice Orehovica – Diračje (opening years of the bypass sections; south carriageway contract of 22 Jan 2008)",
+      "url": "http://www.casopis-gradjevinar.hr/dokumenti/200807/6.pdf",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2011/http://www.casopis-gradjevinar.hr/dokumenti/200807/6.pdf"
+    },
+    {
+      "id": "dnevnik-2009-rijeka-bypass",
+      "title": "Dnevnik.hr: Otvorena riječka obilaznica u punom profilu (22 Dec 2009)",
+      "url": "https://dnevnik.hr/vijesti/hrvatska/video-otvorena-rijecka-obilaznica-u-punom-profilu.html",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "novilist-2013-sv-kuzam-krizisce",
+      "title": "Novi list: U 12 sati otvoren puni profil dionice Sv. Kuzam – Križišće (23 Dec 2013)",
+      "url": "https://www.novilist.hr/rijeka-regija/rijeka/u-12-sati-otvoren-puni-profil-dionice-sv-kuzam-krizisce/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "arz-rupa-matulji",
+      "title": "Autocesta Rijeka – Zagreb: Rupa – Matulji section (16.3 km)",
+      "url": "http://www.arz.hr/index.php?page=3&sub=15&lng=2",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2012/http://www.arz.hr/index.php?page=3&sub=15&lng=2"
+    },
+    {
+      "id": "arz-orehovica-sveti-kuzam",
+      "title": "Autocesta Rijeka – Zagreb: Orehovica – Sv. Kuzam section (6.36 km)",
+      "url": "http://www.arz.hr/index.php?page=3&sub=16&lng=2",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2012/http://www.arz.hr/index.php?page=3&sub=16&lng=2"
+    },
+    {
+      "id": "arz-rijeka-bypass",
+      "title": "Autocesta Rijeka – Zagreb: Rijeka bypass section (Matulji interchange to Orehovica)",
+      "url": "http://www.arz.hr/index.php?page=3&sub=17&lng=2",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2012/http://www.arz.hr/index.php?page=3&sub=17&lng=2"
+    },
+    {
+      "id": "hac-nv-bypass-contract-2021",
+      "title": "HAC: Potpisan ugovor za izgradnju obilaznice Novog Vinodolskog (13 Sep 2021)",
+      "url": "https://www.hac.hr/hr/odnosi-s-javnoscu/novosti/potpisan-ugovor-za-izgradnju-obilaznice-novog-vinodolskog",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hac-nv-bypass-visit-2024",
+      "title": "HAC: Obilazak gradilišta obilaznice Novog Vinodolskog (18 Mar 2024; EUR 63 million, lengths of the remaining sections)",
+      "url": "https://www.hac.hr/hr/odnosi-s-javnoscu/novosti/obilazak-gradilista-obilaznice-novog-vinodolskog",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "novilist-2025-a7-plan",
+      "title": "Novi list (HINA): Obilaznica Novog Vinodolskog bit će izgrađena u proljeće 2027., evo plana gradnje za četiri dionice do Žute Lokve (20 Nov 2025)",
+      "url": "https://www.novilist.hr/novosti/obilaznica-novog-vinodolskog-bit-ce-izgradena-u-proljece-2027-evo-plana-gradnje-za-cetiri-dionice-do-zute-lokve/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hac-krizisce-jadranovo-2026",
+      "title": "HAC: Potpisan ugovor za izgradnju poddionice Križišće – Jadranovo na autocesti A7 (30 Mar 2026)",
+      "url": "https://www.hac.hr/hr/odnosi-s-javnoscu/novosti/potpisan-ugovor-za-izgradnju-poddionice-krizisce-jadranovo-na-autocesti-a7",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hac-jadranovo-selce-2026",
+      "title": "HAC: Potpisan ugovor za izgradnju poddionice Jadranovo-Selce na autocesti A7 (31 Jul 2026)",
+      "url": "https://www.hac.hr/hr/odnosi-s-javnoscu/novosti/potpisan-ugovor-za-izgradnju-poddionice-jadranovo-selce-na-autocesti-a7",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-copyright",
+      "title": "OpenStreetMap contributors: ways with ref A7, highway=motorway, trunk, construction and proposed (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
