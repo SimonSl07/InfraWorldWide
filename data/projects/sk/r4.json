@@ -1,0 +1,418 @@
+{
+  "id": "sk-r4",
+  "country": "sk",
+  "category": "highway",
+  "name": {
+    "en": "R4 expressway (Košice – Prešov – Svidník – Polish border)",
+    "ro": "Drumul expres R4 (Košice – Prešov – Svidník – frontiera cu Polonia)"
+  },
+  "description": {
+    "en": "North–south expressway planned from the Hungarian border at Milhosť through Košice, Prešov and Svidník to the Polish border at Vyšný Komárnik (sk.wikipedia: 144 km with the stretches shared with the D1 and R2). Four parts are modelled here: Košice – Milhosť (opened 2013), the half-profile Svidník bypass (opened 2010), the first stage of the Prešov north bypass with the Bikoš tunnel (opened 2023) and the second stage with the Okruhliak tunnel (under construction). The shared stretches with the D1 and the R2 are counted in those projects. The sections between Kapušany and the Polish border are in preparation and are not drawn.",
+    "ro": "Drum expres nord–sud planificat de la frontiera cu Ungaria, la Milhosť, prin Košice, Prešov și Svidník până la frontiera cu Polonia, la Vyšný Komárnik (sk.wikipedia: 144 km cu tronsoanele comune cu D1 și R2). Aici sunt modelate patru părți: Košice – Milhosť (deschis în 2013), ocolitoarea Svidník cu profil parțial (deschisă în 2010), prima etapă a ocolitoarei de nord a Prešovului cu tunelul Bikoš (deschisă în 2023) și a doua etapă cu tunelul Okruhliak (în construcție). Tronsoanele comune cu D1 și R2 sunt numărate în acele proiecte. Secțiunile dintre Kapušany și frontiera cu Polonia sunt în pregătire și nu sunt desenate."
+  },
+  "operator": "sk-nds",
+  "lots": [
+    {
+      "id": "kosice-juh-milhost",
+      "name": {
+        "en": "Košice, Juh – Milhosť (Hungarian border)",
+        "ro": "Košice, Juh – Milhosť (frontiera cu Ungaria)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-08-27",
+        "opened": "2013-11-07"
+      },
+      "lengthKm": 14.2,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2010-08-27",
+          "sourceRef": "wiki-r4-sk",
+          "note": {
+            "en": "Official start of construction.",
+            "ro": "Începutul oficial al construcției."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2013-11-07",
+          "sourceRef": "wiki-r4-sk",
+          "note": {
+            "en": "Whole section handed over for use.",
+            "ro": "Întregul sector dat în folosință."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Skanska SK, a. s.",
+          "role": "builder"
+        },
+        {
+          "name": "Dopravoprojekt, a. s. (divízia Prešov)",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Full profile from the start, category R 24,5/120 (R 24,5/100 between Kechnec and the border). 16 bridges and 2 interchanges, among them the 530 m bridge over the broad-gauge railway. sk.wikipedia gives construction costs of EUR 78 million against an initial state expert estimate of EUR 117 million; the VAT basis and price year are not stated, so neither is recorded as a money field. The drawn line starts at the Košice, Juh interchange and ends at the border (14.1 km, about 1% under the recorded length). The section east of Košice, Juh up to Košické Oľšany shares the route of the R2 and is not part of this lot.",
+        "ro": "Profil complet de la început, categoria R 24,5/120 (R 24,5/100 între Kechnec și frontieră). 16 poduri și 2 noduri rutiere, printre ele podul de 530 m peste calea ferată cu ecartament larg. sk.wikipedia indică costuri de construcție de 78 milioane EUR, față de o estimare inițială a expertizei de stat de 117 milioane EUR; baza TVA și anul prețurilor nu sunt precizate, deci niciuna nu este înregistrată ca sumă. Linia desenată începe la nodul Košice, Juh și se termină la frontieră (14,1 km, cu circa 1% sub lungimea înregistrată). Tronsonul de la est de Košice, Juh până la Košické Oľšany folosește traseul R2 și nu face parte din acest lot."
+      },
+      "sourceRefs": [
+        "wiki-r4-sk",
+        "osm-r4",
+        "osm"
+      ],
+      "geometryRef": "kosice-juh-milhost"
+    },
+    {
+      "id": "svidnik-obchvat",
+      "name": {
+        "en": "Svidník bypass (half profile)",
+        "ro": "Ocolitoarea Svidník (profil parțial)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-12",
+        "opened": "2010-12-20"
+      },
+      "lengthKm": 4.573,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-12",
+          "sourceRef": "wiki-r4-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-12-20",
+          "sourceRef": "wiki-r4-sk",
+          "note": {
+            "en": "Planned for May 2009; delayed by landslides of the embankment.",
+            "ro": "Planificat pentru mai 2009; întârziat de alunecări ale rambleului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Inžinierske stavby, a. s.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag s. r. o.",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia SK, a. s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Built as a single carriageway (half profile, category R 11,5/100 or R 22,5/100) with 9 bridges, the Svidník, Juh interchange and an at-grade connection at Svidník, Sever. The left half is not scheduled before 2028 per sk.wikipedia. The drawn line is 4.4 km, about 4% under the recorded length.",
+        "ro": "Construită cu o singură cale de rulare (profil parțial, categoria R 11,5/100 sau R 22,5/100), cu 9 poduri, nodul Svidník, Juh și o legătură la nivel la Svidník, Sever. Jumătatea stângă nu este programată înainte de 2028, conform sk.wikipedia. Linia desenată are 4,4 km, cu circa 4% sub lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "wiki-r4-sk",
+        "osm-r4",
+        "osm"
+      ],
+      "geometryRef": "svidnik-obchvat"
+    },
+    {
+      "id": "presov-severny-obchvat-i-etapa",
+      "name": {
+        "en": "Prešov north bypass, I. stage (Prešov, Západ – Prešov, Sever, Bikoš tunnel)",
+        "ro": "Ocolitoarea de nord a Prešovului, etapa I (Prešov, Západ – Prešov, Sever, tunelul Bikoš)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-07",
+        "opened": "2023-09-25"
+      },
+      "lengthKm": 4.3,
+      "profile": {
+        "tunnelKm": 1.155
+      },
+      "contract": {
+        "executionMonths": 44,
+        "value": {
+          "amount": 142.876816,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Excluding VAT. Proposed contract price of the winning bid as announced by NDS on 13 June 2019 (contract not yet signed then); price year not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 142.876816,
+              "currency": "EUR",
+              "scope": "works",
+              "note": "Excluding VAT. Price year not stated."
+            },
+            "date": "2019-06-13",
+            "sourceRef": "nds-press-i-etapa-tender"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-07",
+          "sourceRef": "nds-press-bikos-prerazeny"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-09-25",
+          "sourceRef": "wiki-r4-sk",
+          "note": {
+            "en": "Handed over for use, three to four months after the contractual end in March 2023.",
+            "ro": "Dat în folosință, la trei–patru luni după termenul contractual din martie 2023."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "NDS press release of 24 August 2021: more than EUR 57.6 million from the European Regional Development Fund (headline: almost EUR 60 million), a non-repayable contribution. The operational programme is not named.",
+            "ro": "Comunicat NDS din 24 august 2021: peste 57,6 milioane EUR din Fondul European de Dezvoltare Regională (titlu: aproape 60 milioane EUR), contribuție nerambursabilă. Programul operațional nu este numit."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "NDS: the construction is financed from the state budget.",
+            "ro": "NDS: construcția este finanțată din bugetul de stat."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Váhostav – SK, a. s.",
+          "role": "builder"
+        },
+        {
+          "name": "TuCon, a. s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Full profile, category R 24,5/100, with the twin-tube Bikoš tunnel (1,155 m), 9 bridges (3 on the R4, 3 on the interchange ramps, 3 off the route) and a rebuilt I/68 at the Prešov, Sever interchange. The Prešov, Západ interchange joins the D1. Contract duration converted from days: 1340 days. The drawn line is 4.0 km, 7% under the recorded length.",
+        "ro": "Profil complet, categoria R 24,5/100, cu tunelul Bikoš cu două tuburi (1.155 m), 9 poduri (3 pe R4, 3 pe rampele nodului, 3 în afara traseului) și drumul I/68 refăcut la nodul Prešov, Sever. Nodul Prešov, Západ se leagă la D1. Durata contractului convertită din zile: 1340 de zile. Linia desenată are 4,0 km, cu 7% sub lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "nds-press-i-etapa-start",
+        "nds-press-i-etapa-tender",
+        "nds-press-bikos-prerazeny",
+        "nds-press-i-etapa-eu",
+        "wiki-r4-sk",
+        "osm-r4",
+        "osm"
+      ],
+      "geometryRef": "presov-severny-obchvat-i-etapa"
+    },
+    {
+      "id": "presov-severny-obchvat-ii-etapa",
+      "name": {
+        "en": "Prešov north bypass, II. stage (Prešov, Sever – Kapušany, Okruhliak tunnel)",
+        "ro": "Ocolitoarea de nord a Prešovului, etapa II (Prešov, Sever – Kapušany, tunelul Okruhliak)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-06-29",
+        "constructionStart": "2023-09-25"
+      },
+      "lengthKm": 10.2,
+      "profile": {
+        "tunnelKm": 1.8
+      },
+      "contract": {
+        "executionMonths": 48,
+        "value": {
+          "amount": 338,
+          "currency": "EUR",
+          "year": 2023,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Winning bid of 'almost EUR 338 million' (Aktuality.sk); sk.wikipedia gives '338 miliónov € bez DPH', excluding VAT. NDS page does not publish the value."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 263,
+          "currency": "EUR",
+          "year": 2022,
+          "scope": "works",
+          "note": "Expected contract value announced by NDS at tender launch (predpokladaná hodnota zákazky); VAT basis not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 338,
+              "currency": "EUR",
+              "year": 2023,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Excluding VAT per sk.wikipedia."
+            },
+            "date": "2023-06-29",
+            "sourceRef": "aktuality-ii-etapa-contract"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-02-24",
+          "sourceRef": "nds-press-ii-etapa-tender",
+          "note": {
+            "en": "Notice sent to the public procurement bulletin.",
+            "ro": "Anunț trimis către buletinul achizițiilor publice."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-06-29",
+          "sourceRef": "aktuality-ii-etapa-contract",
+          "note": {
+            "en": "Date of the press report that NDS had signed the contract.",
+            "ro": "Data articolului de presă care anunță semnarea contractului de către NDS."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-09-25",
+          "sourceRef": "wiki-r4-sk",
+          "note": {
+            "en": "Started on the day the I. stage opened.",
+            "ro": "Început în ziua deschiderii etapei I."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "NDS project page: state budget and CEF.",
+            "ro": "Pagina de proiect NDS: buget de stat și CEF."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility (CEF), military mobility call: more than EUR 69 million, shared between this stage and the design of the R4 sections between Kapušany and the Polish border.",
+            "ro": "Mecanismul pentru interconectarea Europei (CEF), apelul pentru mobilitate militară: peste 69 milioane EUR, împărțite între această etapă și proiectarea tronsoanelor R4 dintre Kapušany și frontiera cu Polonia."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia SK, a. s.",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia CS, a. s.",
+          "role": "builder"
+        },
+        {
+          "name": "SMS a. s.",
+          "role": "builder"
+        },
+        {
+          "name": "Váhostav – SK, a. s.",
+          "role": "builder"
+        },
+        {
+          "name": "Marti",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Full profile, 10.2 km from the Prešov, Sever interchange to the Kapušany interchange on I/18, with the twin-tube Okruhliak tunnel (1,800 m, NDS), 12 bridges and 6 noise barriers (3,683 m in total). Contractor is the Združenie R4 severný obchvat Prešova II. etapa: the NDS page lists Marti as the fifth member, while the 2023 press report named TuCon. Contract duration converted from days: 1464 days. The contract deadline is the last quarter of 2027, not recorded as an expected opening; Korzár (5 April 2026, via sk.wikipedia) reports that NDS expects to open in summer 2028. The drawn line (10.0 km) starts at the first mapped construction way, about 1 km beyond the Prešov, Sever interchange where the I. stage ends.",
+        "ro": "Profil complet, 10,2 km de la nodul Prešov, Sever până la nodul Kapušany de pe I/18, cu tunelul Okruhliak cu două tuburi (1.800 m, NDS), 12 poduri și 6 ecrane fonice (3.683 m în total). Constructorul este asocierea Združenie R4 severný obchvat Prešova II. etapa: pagina NDS indică Marti ca al cincilea membru, în timp ce presa din 2023 îl numea pe TuCon. Durata contractului convertită din zile: 1464 de zile. Termenul contractual este ultimul trimestru din 2027, neînregistrat ca deschidere estimată; Korzár (5 aprilie 2026, prin sk.wikipedia) relatează că NDS se așteaptă la deschidere în vara 2028. Linia desenată (10,0 km) începe la primul tronson de construcție cartografiat, la circa 1 km după nodul Prešov, Sever, unde se termină etapa I."
+      },
+      "sourceRefs": [
+        "nds-presov-ii-etapa",
+        "nds-press-ii-etapa-tender",
+        "aktuality-ii-etapa-contract",
+        "nds-press-okruhliak",
+        "wiki-r4-sk",
+        "osm-r4",
+        "osm"
+      ],
+      "geometryRef": "presov-severny-obchvat-ii-etapa"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-r4-sk",
+      "title": "Wikipedia (sk): Rýchlostná cesta R4 (Slovensko), section table and 'Úseky' prose",
+      "url": "https://sk.wikipedia.org/wiki/R%C3%BDchlostn%C3%A1_cesta_R4_(Slovensko)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-presov-ii-etapa",
+      "title": "NDS: R4 Prešov – severný obchvat, II. etapa (length 10 200 m, financing, contractor association)",
+      "url": "https://ndsas.sk/stavby/vystavba/presov-severny-obchvat-ii-etapa",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-ii-etapa-tender",
+      "title": "NDS press: Začíname obstarávať II. etapu severného obchvatu R4 (notice sent 24.02.2022, expected value EUR 263 million)",
+      "url": "https://ndsas.sk/press/spravy/zaciname-obstaravat-ii-etapu-severneho-obchvatu-r4",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "aktuality-ii-etapa-contract",
+      "title": "Aktuality.sk, 29.6.2023: Obchvat Prešova môže pokračovať, diaľničiari podpísali zmluvu s víťazom tendra",
+      "url": "https://www.aktuality.sk/clanok/n1IRslI/obchvat-presova-moze-pokracovat-dialniciari-podpisali-zmluvu-s-vitazom-tendra/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-okruhliak",
+      "title": "NDS press: Tunel Okruhliak má už vyrazený skoro kilometer (II. etapa figures, CEF grant above EUR 69 million)",
+      "url": "https://ndsas.sk/press/spravy/tunel-okruhliak-ma-uz-vyrazeny-skoro-kilometer",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-i-etapa-start",
+      "title": "NDS press: Severný obchvat Prešova sa začne stavať koncom júla (I. etapa 4,3 km, Bikoš tunnel 1 155 m, 1 340 days)",
+      "url": "https://ndsas.sk/press/spravy/severny-obchvat-presova-sa-zacne-stavat-koncom-jula",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-i-etapa-tender",
+      "title": "NDS press: Tunel Prešov je prerazený o tri mesiace skôr (I. etapa winner Váhostav – SK and TuCon, EUR 142 876 816 excluding VAT)",
+      "url": "https://ndsas.sk/press/spravy/tunel-presov-je-prerazeny-o-tri-mesiace-skor",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-bikos-prerazeny",
+      "title": "NDS press: Tunel Bikoš je prerazený. Najťažšie práce sú za nami (I. etapa under construction since July 2019)",
+      "url": "https://ndsas.sk/press/spravy/tunel-bikos-je-prerazeny-najtazsie-prace-su-za-nami",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-i-etapa-eu",
+      "title": "NDS press: Na výstavbu I. etapy prešovskej R4 sme získali takmer 60 miliónov z fondov EÚ",
+      "url": "https://ndsas.sk/press/spravy/na-vystavbu-i-etapy-presovskej-r4-sme-ziskali-takmer-60-milionov-z-fondov-eu",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-r4",
+      "title": "OpenStreetMap: ways with ref=R4 (highway=motorway, trunk and construction), Overpass query of 2026-10-10",
+      "url": "https://www.openstreetmap.org/way/138176605",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
