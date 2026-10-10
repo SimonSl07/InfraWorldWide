@@ -1,0 +1,1309 @@
+{
+  "id": "cz-d6",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D6 motorway (Praha – Karlovy Vary)",
+    "ro": "Autostrada D6 (Praga – Karlovy Vary)"
+  },
+  "description": {
+    "en": "Czechia's Praha – Karlovy Vary motorway, drawn from the Řepy junction with D0 to Žalmanov, with the stretch beyond it to Karlovy Vary shown only where OpenStreetMap maps it. Sections opened from 1985 (Kačice – Nové Strašecí) to 2015 (Lubenec – Bošov) and, in ŘSD stavba order, Nové Strašecí – Řevničov and the Řevničov bypass (November 2020), Lubenec (August 2021), Krupá (August 2024), Hořesedly and Hořovičky (September 2025). Petrohrad – Lubenec stage 1, Bošov – Knínice and Knínice – Žalmanov are under construction and stage 2 is due in 2028. Two sections towards Karlovy Vary are not lots because OpenStreetMap has no way for the first and maps only 2.4 km of the second: Olšová Vrata – Žalmanov (7.3 km, tender launched on 10 April 2026, estimate 3 054 million Kč excluding VAT, opening planned for 2029, leaflet of May 2026) and Olšová Vrata – Karlovy Vary (8.054 km, tender launched on 19 December 2025, one bid of 3 443.7 million Kč excluding VAT received on 16 April 2026 and no award, estimate 4 303 million Kč, opening planned for 2029, leaflet of April 2026). The Karlovy Vary through-road and the motorway west of Karlovy Vary towards Cheb are not in this file. Lots follow ŘSD stavba sections; where a leaflet exists it is the source, otherwise the cs.wikipedia section table. The route was renamed from R6 on 1 January 2016.",
+    "ro": "Autostrada cehă Praga – Karlovy Vary, desenată de la nodul Řepy cu D0 până la Žalmanov, iar tronsonul de după acesta până la Karlovy Vary apare doar unde îl cartografiază OpenStreetMap. Sectoarele au fost deschise din 1985 (Kačice – Nové Strašecí) până în 2015 (Lubenec – Bošov) și, în ordinea lucrărilor ŘSD, Nové Strašecí – Řevničov și ocolitoarea Řevničov (noiembrie 2020), Lubenec (august 2021), Krupá (august 2024), Hořesedly și Hořovičky (septembrie 2025). Petrohrad – Lubenec etapa 1, Bošov – Knínice și Knínice – Žalmanov sunt în construcție, iar etapa 2 este programată pentru 2028. Două sectoare spre Karlovy Vary nu sunt loturi, deoarece OpenStreetMap nu are niciun drum pentru primul și cartografiază doar 2,4 km din al doilea: Olšová Vrata – Žalmanov (7,3 km, licitație lansată la 10 aprilie 2026, estimare 3 054 milioane Kč fără TVA, deschidere planificată pentru 2029, fișa din mai 2026) și Olšová Vrata – Karlovy Vary (8,054 km, licitație lansată la 19 decembrie 2025, o ofertă de 3 443,7 milioane Kč fără TVA primită la 16 aprilie 2026 și nicio atribuire, estimare 4 303 milioane Kč, deschidere planificată pentru 2029, fișa din aprilie 2026). Traversarea Karlovy Vary și autostrada la vest de Karlovy Vary spre Cheb nu sunt în acest fișier. Loturile urmează lucrările ŘSD; unde există fișă, aceasta este sursa, altfel tabelul secțiunilor de pe cs.wikipedia. Traseul a fost redenumit din R6 la 1 ianuarie 2016."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "praha-pavlov",
+      "name": {
+        "en": "Praha (Řepy) – Pavlov",
+        "ro": "Praga (Řepy) – Pavlov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-03",
+        "opened": "2008-12"
+      },
+      "lengthKm": 10.43,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-03",
+          "sourceRef": "cs-wikipedia-d6"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-12",
+          "sourceRef": "cs-wikipedia-d6"
+        }
+      ],
+      "note": {
+        "en": "Dates, category R 24.5/120 and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. It starts at the Řepy junction with D0 and includes the Hostivice and Jeneč junctions. The planned Jeneček cut-and-cover tunnel (462.5 m, for a new Prague airport runway) is not built and is not a lot. The section boundary is placed on the OpenStreetMap line from the neighbouring junctions and the section lengths in the table, so it can be off by a few hundred metres.",
+        "ro": "Datele, categoria R 24,5/120 și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Începe la nodul Řepy cu D0 și include nodurile Hostivice și Jeneč. Tunelul Jeneček (462,5 m, pentru o nouă pistă a aeroportului din Praga) este doar planificat și nu este lot. Limita sectorului este plasată pe linia OpenStreetMap pornind de la nodurile vecine și de la lungimile din tabel, deci poate diferi cu câteva sute de metri."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "praha-pavlov"
+    },
+    {
+      "id": "pavlov-velka-dobra",
+      "name": {
+        "en": "Pavlov – Velká Dobrá",
+        "ro": "Pavlov – Velká Dobrá"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1999",
+        "opened": "2002"
+      },
+      "lengthKm": 5.7,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1999",
+          "sourceRef": "cs-wikipedia-d6"
+        },
+        {
+          "kind": "opened",
+          "date": "2002",
+          "sourceRef": "cs-wikipedia-d6"
+        }
+      ],
+      "note": {
+        "en": "Dates, category R 24.5/100 and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. The table gives the opening as 2001–2002 and the later year is recorded. It includes the Unhošť junction. The section boundary is placed on the OpenStreetMap line from the neighbouring junctions and the section lengths in the table, so it can be off by a few hundred metres.",
+        "ro": "Datele, categoria R 24,5/100 și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Tabelul indică deschiderea în 2001–2002, iar anul mai târziu este înregistrat. Include nodul Unhošť. Limita sectorului este plasată pe linia OpenStreetMap pornind de la nodurile vecine și de la lungimile din tabel, deci poate diferi cu câteva sute de metri."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "pavlov-velka-dobra"
+    },
+    {
+      "id": "velka-dobra-kamenne-zehrovice",
+      "name": {
+        "en": "Velká Dobrá – Kamenné Žehrovice",
+        "ro": "Velká Dobrá – Kamenné Žehrovice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1988-11",
+        "opened": "1994-10"
+      },
+      "lengthKm": 6.2,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1988-11",
+          "sourceRef": "cs-wikipedia-d6"
+        },
+        {
+          "kind": "opened",
+          "date": "1994-10",
+          "sourceRef": "cs-wikipedia-d6"
+        }
+      ],
+      "note": {
+        "en": "Dates, category R 24.5/100 and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. The section boundary is placed on the OpenStreetMap line from the neighbouring junctions and the section lengths in the table, so it can be off by a few hundred metres.",
+        "ro": "Datele, categoria R 24,5/100 și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Limita sectorului este plasată pe linia OpenStreetMap pornind de la nodurile vecine și de la lungimile din tabel, deci poate diferi cu câteva sute de metri."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "velka-dobra-kamenne-zehrovice"
+    },
+    {
+      "id": "kamenne-zehrovice-kacice",
+      "name": {
+        "en": "Kamenné Žehrovice – Kačice",
+        "ro": "Kamenné Žehrovice – Kačice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1982-11",
+        "opened": "1986"
+      },
+      "lengthKm": 3.3,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1982-11",
+          "sourceRef": "cs-wikipedia-d6"
+        },
+        {
+          "kind": "opened",
+          "date": "1986",
+          "sourceRef": "cs-wikipedia-d6"
+        }
+      ],
+      "note": {
+        "en": "Dates, category R 24.5/100 and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. The table gives 1986 here and 1985 for the next section towards Nové Strašecí; both are recorded as given. The section boundary is placed on the OpenStreetMap line from the neighbouring junctions and the section lengths in the table, so it can be off by a few hundred metres.",
+        "ro": "Datele, categoria R 24,5/100 și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Tabelul indică 1986 aici și 1985 pentru sectorul următor spre Nové Strašecí; ambele sunt înregistrate așa cum apar. Limita sectorului este plasată pe linia OpenStreetMap pornind de la nodurile vecine și de la lungimile din tabel, deci poate diferi cu câteva sute de metri."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kamenne-zehrovice-kacice"
+    },
+    {
+      "id": "kacice-nove-straseci",
+      "name": {
+        "en": "Kačice – Nové Strašecí",
+        "ro": "Kačice – Nové Strašecí"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1984-11",
+        "opened": "1985"
+      },
+      "lengthKm": 6.5,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1984-11",
+          "sourceRef": "cs-wikipedia-d6"
+        },
+        {
+          "kind": "opened",
+          "date": "1985",
+          "sourceRef": "cs-wikipedia-d6"
+        }
+      ],
+      "note": {
+        "en": "Dates, category R 24.5/100 and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. It includes the Tuchlovice and Nové Strašecí junctions. The section boundary is placed on the OpenStreetMap line from the neighbouring junctions and the section lengths in the table, so it can be off by a few hundred metres.",
+        "ro": "Datele, categoria R 24,5/100 și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Include nodurile Tuchlovice și Nové Strašecí. Limita sectorului este plasată pe linia OpenStreetMap pornind de la nodurile vecine și de la lungimile din tabel, deci poate diferi cu câteva sute de metri."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kacice-nove-straseci"
+    },
+    {
+      "id": "nove-straseci-revnicov",
+      "name": {
+        "en": "Nové Strašecí – Řevničov",
+        "ro": "Nové Strašecí – Řevničov"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 745,
+          "currency": "CZK",
+          "year": 2017,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"); signing date not stated, price year taken as the year works started (December 2017)."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 745,
+              "currency": "CZK",
+              "year": 2017,
+              "note": "Excluding VAT."
+            },
+            "date": "2017-12",
+            "sourceRef": "rsd-leaflet-s11"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds; the leaflet names no programme.",
+            "ro": "Cofinanțat din fonduri UE; fișa nu numește programul."
+          }
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 100
+      },
+      "dates": {
+        "constructionStart": "2017-12",
+        "opened": "2020-11-30"
+      },
+      "lengthKm": 5.55,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-09",
+          "sourceRef": "rsd-leaflet-s11"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-12",
+          "sourceRef": "rsd-leaflet-s11"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-11-30",
+          "sourceRef": "rsd-leaflet-s11"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Porr",
+          "role": "builder"
+        },
+        {
+          "name": "Habau CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Sudop Praha",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S11, a new build of category R 25.5/100. The leaflet gives the length as 5550 m (its own chainage km 32.000–37.550) and says the works were opened on 30 November 2020. The leaflet timeline puts the tender at 09/2016 and the start of works at 12/2017; the contract date is not given, so the award revision carries the start month.",
+        "ro": "Construcția ŘSD S11, lucrare nouă de categorie R 25,5/100. Fișa indică lungimea de 5550 m (kilometraj propriu km 32,000–37,550) și deschiderea la 30 noiembrie 2020. Cronologia din fișă plasează licitația în 09/2016 și începutul lucrărilor în 12/2017; data contractului nu este indicată, deci revizuirea de atribuire poartă luna începerii."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s11",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nove-straseci-revnicov"
+    },
+    {
+      "id": "revnicov-obchvat",
+      "name": {
+        "en": "Řevničov bypass",
+        "ro": "Ocolitoarea Řevničov"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 1073.96,
+          "currency": "CZK",
+          "year": 2017,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"); signing date not stated, price year taken as the year works started (December 2017)."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1073.96,
+              "currency": "CZK",
+              "year": 2017,
+              "note": "Excluding VAT."
+            },
+            "date": "2017-12",
+            "sourceRef": "rsd-leaflet-s12"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds; the leaflet names no programme.",
+            "ro": "Cofinanțat din fonduri UE; fișa nu numește programul."
+          }
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 100
+      },
+      "dates": {
+        "constructionStart": "2017-12",
+        "opened": "2020-11-30"
+      },
+      "lengthKm": 4.2,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-09",
+          "sourceRef": "rsd-leaflet-s12"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-12",
+          "sourceRef": "rsd-leaflet-s12"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-11-30",
+          "sourceRef": "rsd-leaflet-s12"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S12, a bypass of Řevničov with the Řevničov junction (exit 38). The leaflet gives the length as 4200 m and says the main route was opened on 30 November 2020; the I/16 relocation had opened on 20 December 2019. The contract date is not given, so the award revision carries the start month.",
+        "ro": "Construcția ŘSD S12, ocolitoare a localității Řevničov cu nodul Řevničov (ieșirea 38). Fișa indică lungimea de 4200 m și deschiderea traseului principal la 30 noiembrie 2020; relocarea I/16 fusese deschisă la 20 decembrie 2019. Data contractului nu este indicată, deci revizuirea de atribuire poartă luna începerii."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s12",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "revnicov-obchvat"
+    },
+    {
+      "id": "krupa-prelozka",
+      "name": {
+        "en": "Krupá relocation",
+        "ro": "Variantă ocolitoare Krupá"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 1543.45,
+          "currency": "CZK",
+          "year": 2022,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"), contract signed 1 February 2022."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1944.609,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1543.45,
+              "currency": "CZK",
+              "year": 2022,
+              "note": "Excluding VAT."
+            },
+            "date": "2022-02-01",
+            "sourceRef": "rsd-leaflet-s13"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2022-02-01",
+        "constructionStart": "2022-03-03",
+        "opened": "2024-08-27"
+      },
+      "lengthKm": 6.45,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-11-26",
+          "sourceRef": "rsd-leaflet-s13"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-02-01",
+          "sourceRef": "rsd-leaflet-s13"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-03-03",
+          "sourceRef": "rsd-leaflet-s13"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-08-27",
+          "sourceRef": "rsd-leaflet-s13"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Metrostav Infrastructure",
+          "role": "builder"
+        },
+        {
+          "name": "Sudop Praha",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S13, a new build of category D 25.5/130 with the Krupá junction (exit 43). The leaflet gives the length as 6450 m and the works as opened ceremonially on 27 August 2024; the start date is the ceremonial start of 3 March 2022. The estimate of 1 944 609 000 Kč was published before the award.",
+        "ro": "Construcția ŘSD S13, lucrare nouă de categorie D 25,5/130 cu nodul Krupá (ieșirea 43). Fișa indică lungimea de 6450 m și deschiderea festivă la 27 august 2024; data începerii este startul festiv din 3 martie 2022. Estimarea de 1 944 609 000 Kč a fost publicată înaintea atribuirii."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s13",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "krupa-prelozka"
+    },
+    {
+      "id": "horesedly-prelozka",
+      "name": {
+        "en": "Hořesedly relocation",
+        "ro": "Variantă ocolitoare Hořesedly"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 1886.34,
+          "currency": "CZK",
+          "year": 2023,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"), contract signed 12 January 2023."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 2186.2,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1886.34,
+              "currency": "CZK",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-01-12",
+            "sourceRef": "rsd-leaflet-s14"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2023-01-12",
+        "constructionStart": "2023-02-07",
+        "opened": "2025-09-27"
+      },
+      "lengthKm": 9.2,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-12-23",
+          "sourceRef": "rsd-leaflet-s14"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-01-12",
+          "sourceRef": "rsd-leaflet-s14"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-02-07",
+          "sourceRef": "rsd-leaflet-s14"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-09-27",
+          "sourceRef": "rsd-leaflet-s14"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S14, category D 25.5/130, with the Kněževes junction (exit 51). The leaflet gives the length as 9200 m (its own chainage km 48.2–57.4), eight bids and the whole works as opened on 27 September 2025; the start date is the ceremonial start of 7 February 2023.",
+        "ro": "Construcția ŘSD S14, categoria D 25,5/130, cu nodul Kněževes (ieșirea 51). Fișa indică lungimea de 9200 m (kilometraj propriu km 48,2–57,4), opt oferte și deschiderea întregii lucrări la 27 septembrie 2025; data începerii este startul festiv din 7 februarie 2023."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s14",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "horesedly-prelozka"
+    },
+    {
+      "id": "horovicky-obchvat",
+      "name": {
+        "en": "Hořovičky bypass",
+        "ro": "Ocolitoarea Hořovičky"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 1509.48,
+          "currency": "CZK",
+          "year": 2023,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"), contract signed 28 February 2023."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1965.4,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1509.48,
+              "currency": "CZK",
+              "year": 2023,
+              "note": "Excluding VAT."
+            },
+            "date": "2023-02-28",
+            "sourceRef": "rsd-leaflet-s15"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2023-02-28",
+        "constructionStart": "2023-03-28",
+        "opened": "2025-09-27"
+      },
+      "lengthKm": 5.194,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-12-08",
+          "sourceRef": "rsd-leaflet-s15"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-02-28",
+          "sourceRef": "rsd-leaflet-s15"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-03-28",
+          "sourceRef": "rsd-leaflet-s15"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-09-27",
+          "sourceRef": "rsd-leaflet-s15"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S15, category D 25.5/130, with the Jesenice junction (exit 62). The leaflet gives the length as 5194 m (its own chainage km 57.400–62.594), seven bids and the whole works as opened on 27 September 2025; the start date is the ceremonial start of 28 March 2023. Traffic was moved onto the new road from 1 July 2024 while the old I/6 was rebuilt.",
+        "ro": "Construcția ŘSD S15, categoria D 25,5/130, cu nodul Jesenice (ieșirea 62). Fișa indică lungimea de 5194 m (kilometraj propriu km 57,400–62,594), șapte oferte și deschiderea întregii lucrări la 27 septembrie 2025; data începerii este startul festiv din 28 martie 2023. Traficul a fost mutat pe drumul nou din 1 iulie 2024, cât timp vechiul I/6 a fost reconstruit."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s15",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "horovicky-obchvat"
+    },
+    {
+      "id": "petrohrad-lubenec-2-etapa",
+      "name": {
+        "en": "Petrohrad – Lubenec, stage 2",
+        "ro": "Petrohrad – Lubenec, etapa 2"
+      },
+      "status": "under_construction",
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2024-06-26",
+        "constructionStart": "2024-07-03",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 9.906,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-05-19",
+          "sourceRef": "rsd-leaflet-u2a"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-06-26",
+          "sourceRef": "rsd-leaflet-u2a"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-07-03",
+          "sourceRef": "rsd-leaflet-u2a"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        },
+        {
+          "name": "Valbek",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba U2a, category D 25.5/130, with the Černčice junction (exit 68) and a 620 m bridge over the Bílenecký potok. The leaflet (state of March 2026) gives the length as 9906 m, six bids, the contract of 26 June 2024 and the ceremonial start of 3 July 2024. ŘSD now gives 2028 for completion; Zdopravy.cz of 22 September 2026 reports it, citing unstable ground. The leaflet gives one contract price (3 477 584 013 Kč excluding VAT) and one estimate (4 931 243 881 Kč) for the whole Petrohrad – Lubenec stavba, both stages together, and no split, so no cost is recorded on this lot. ",
+        "ro": "Construcția ŘSD U2a, categoria D 25,5/130, cu nodul Černčice (ieșirea 68) și un pod de 620 m peste Bílenecký potok. Fișa (stare la martie 2026) indică lungimea de 9906 m, șase oferte, contractul din 26 iunie 2024 și startul festiv din 3 iulie 2024. ŘSD indică acum anul 2028 pentru finalizare; Zdopravy.cz din 22 septembrie 2026 relatează acest lucru, invocând terenul instabil. Fișa indică un singur preț de contract (3 477 584 013 Kč fără TVA) și o singură estimare (4 931 243 881 Kč) pentru întreaga lucrare Petrohrad – Lubenec, ambele etape la un loc, fără defalcare, deci niciun cost nu este înregistrat pe acest lot. "
+      },
+      "sourceRefs": [
+        "rsd-leaflet-u2a",
+        "zdopravy-d6-petrohrad-lubenec",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "petrohrad-lubenec-2-etapa"
+    },
+    {
+      "id": "petrohrad-lubenec-1-etapa",
+      "name": {
+        "en": "Petrohrad – Lubenec, stage 1",
+        "ro": "Petrohrad – Lubenec, etapa 1"
+      },
+      "status": "under_construction",
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2024-06-26",
+        "constructionStart": "2024-07-03",
+        "expectedOpening": "2026-10"
+      },
+      "lengthKm": 2.2,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-05-19",
+          "sourceRef": "rsd-leaflet-u2b"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-06-26",
+          "sourceRef": "rsd-leaflet-u2b"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-07-03",
+          "sourceRef": "rsd-leaflet-u2b"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        },
+        {
+          "name": "Valbek",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba U2b, category D 25.5/130, continuing the Lubenec bypass past Ležky (the leaflet's chainage starts at km 72.500 and joins the finished bypass at km 74.700). It was due in December 2025 and slipped because the embankments settled more slowly than designed. On 22 September 2026 ŘSD told Zdopravy.cz it planned to open it in mid-October 2026; it is recorded as under construction until then. The leaflet gives one contract price (3 477 584 013 Kč excluding VAT) and one estimate (4 931 243 881 Kč) for the whole Petrohrad – Lubenec stavba, both stages together, and no split, so no cost is recorded on this lot. ",
+        "ro": "Construcția ŘSD U2b, categoria D 25,5/130, continuarea ocolitoarei Lubenec pe lângă Ležky (kilometrajul din fișă începe la km 72,500 și se leagă de ocolitoarea terminată la km 74,700). Termenul era decembrie 2025, depășit deoarece rambleurile s-au tasat mai lent decât proiectat. La 22 septembrie 2026 ŘSD a declarat pentru Zdopravy.cz că plănuiește deschiderea la mijlocul lui octombrie 2026; până atunci este înregistrat ca în construcție. Fișa indică un singur preț de contract (3 477 584 013 Kč fără TVA) și o singură estimare (4 931 243 881 Kč) pentru întreaga lucrare Petrohrad – Lubenec, ambele etape la un loc, fără defalcare, deci niciun cost nu este înregistrat pe acest lot. "
+      },
+      "sourceRefs": [
+        "rsd-leaflet-u2b",
+        "zdopravy-d6-petrohrad-lubenec",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "petrohrad-lubenec-1-etapa"
+    },
+    {
+      "id": "lubenec-obchvat",
+      "name": {
+        "en": "Lubenec bypass",
+        "ro": "Ocolitoarea Lubenec"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 1037.99,
+          "currency": "CZK",
+          "year": 2018,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"), contract signed at the end of January 2018."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1474.847,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1037.99,
+              "currency": "CZK",
+              "year": 2018,
+              "note": "Excluding VAT."
+            },
+            "date": "2018-01",
+            "sourceRef": "rsd-leaflet-u3"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 100
+      },
+      "dates": {
+        "tenderAwarded": "2018-01",
+        "constructionStart": "2018-03-01",
+        "opened": "2021-08-31"
+      },
+      "lengthKm": 4.86,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-09",
+          "sourceRef": "rsd-leaflet-u3"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-01",
+          "sourceRef": "rsd-leaflet-u3"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-03-01",
+          "sourceRef": "rsd-leaflet-u3"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-08-31",
+          "sourceRef": "rsd-leaflet-u3"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Swietelsky",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Sudop Praha",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba U3, a new build of category R 25.5/100 with the Lubenec junction (exit 77). The leaflet gives the length as 4860 m, the ceremonial start of 1 March 2018 and the opening of 31 August 2021. The contractor is the joint venture Společnost R6 (D6), Swietelsky and Strabag. The estimate of 1 474 847 430 Kč was published before the award.",
+        "ro": "Construcția ŘSD U3, lucrare nouă de categorie R 25,5/100 cu nodul Lubenec (ieșirea 77). Fișa indică lungimea de 4860 m, startul festiv din 1 martie 2018 și deschiderea din 31 august 2021. Constructorul este asocierea Společnost R6 (D6), Swietelsky și Strabag. Estimarea de 1 474 847 430 Kč a fost publicată înaintea atribuirii."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-u3",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubenec-obchvat"
+    },
+    {
+      "id": "lubenec-bosov",
+      "name": {
+        "en": "Lubenec – Bošov",
+        "ro": "Lubenec – Bošov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2010-05",
+        "opened": "2015-11-10"
+      },
+      "lengthKm": 4.12,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2008-12",
+          "sourceRef": "rsd-leaflet-u4"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2010-05",
+          "sourceRef": "rsd-leaflet-u4"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-11-10",
+          "sourceRef": "rsd-leaflet-u4"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba U4, a new build of category R 25.5/100 with the Bošov junction (exit 83). The leaflet (11/2015) gives the length as 4120 m, the contract price of 1 647 780 583 Kč excluding VAT and the opening of 10 November 2015. Works began in May 2010, were suspended in August 2010 for lack of funds and resumed in September 2013. The contractor is the joint venture Sdružení Lubenec–Bošov. The leaflet gives no contract date, so the award revision carries the start month.",
+        "ro": "Construcția ŘSD U4, lucrare nouă de categorie R 25,5/100 cu nodul Bošov (ieșirea 83). Fișa (11/2015) indică lungimea de 4120 m, prețul contractului de 1 647 780 583 Kč fără TVA și deschiderea din 10 noiembrie 2015. Lucrările au început în mai 2010, au fost suspendate în august 2010 din lipsa fondurilor și reluate în septembrie 2013. Constructorul este asocierea Sdružení Lubenec–Bošov. Fișa nu indică data contractului, deci revizuirea de atribuire poartă luna începerii."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-u4",
+        "cs-wikipedia-d6",
+        "rsd-stavby-json",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lubenec-bosov",
+      "contract": {
+        "value": {
+          "amount": 1647.78,
+          "currency": "CZK",
+          "year": 2010,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"); signing date not stated, price year taken as the year works started (May 2010)."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1647.78,
+              "currency": "CZK",
+              "year": 2010,
+              "note": "Excluding VAT."
+            },
+            "date": "2010-05",
+            "sourceRef": "rsd-leaflet-u4"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        },
+        {
+          "name": "Geosan group",
+          "role": "builder"
+        },
+        {
+          "name": "AZ Sanace",
+          "role": "builder"
+        },
+        {
+          "name": "Sudop Praha",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "kninice-bosov",
+      "name": {
+        "en": "Bošov – Knínice",
+        "ro": "Bošov – Knínice"
+      },
+      "status": "under_construction",
+      "contract": {
+        "value": {
+          "amount": 2342.41,
+          "currency": "CZK",
+          "year": 2025,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"), contract signed 14 February 2025."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 3360,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2342.41,
+              "currency": "CZK",
+              "year": 2025,
+              "note": "Excluding VAT."
+            },
+            "date": "2025-02-14",
+            "sourceRef": "rsd-leaflet-k1"
+          }
+        ]
+      },
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2025-02-14",
+        "constructionStart": "2025-03-10",
+        "expectedOpening": "2027-12"
+      },
+      "lengthKm": 7.9,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-07-04",
+          "sourceRef": "rsd-leaflet-k1"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-02-14",
+          "sourceRef": "rsd-leaflet-k1"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-03-10",
+          "sourceRef": "rsd-leaflet-k1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba K1 Knínice – Bošov (the leaflet calls it Knínice–Bošov), category D 25.5/130, with the Žlutice (Knínice) junction (exit 90). The leaflet gives the length as 7900 m, four bids, the contract of 14 February 2025 with the joint venture Společnost D6 Knínice – Bošov, the ceremonial start of 10 March 2025 and an expected opening in 12/2027. The estimate of 3 360 000 000 Kč was published before the award. The route runs beside the existing I/6 for the first 3 km.",
+        "ro": "Construcția ŘSD K1 Knínice – Bošov (fișa o numește Knínice–Bošov), categoria D 25,5/130, cu nodul Žlutice (Knínice) (ieșirea 90). Fișa indică lungimea de 7900 m, patru oferte, contractul din 14 februarie 2025 cu asocierea Společnost D6 Knínice – Bošov, startul festiv din 10 martie 2025 și o deschidere estimată în 12/2027. Estimarea de 3 360 000 000 Kč a fost publicată înaintea atribuirii. Traseul merge paralel cu I/6 existent pe primii 3 km."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-k1",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kninice-bosov"
+    },
+    {
+      "id": "zalmanov-kninice",
+      "name": {
+        "en": "Knínice – Žalmanov",
+        "ro": "Knínice – Žalmanov"
+      },
+      "status": "under_construction",
+      "contract": {
+        "value": {
+          "amount": 2163.33,
+          "currency": "CZK",
+          "year": 2025,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"), contract signed 3 June 2025."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 3246,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2163.33,
+              "currency": "CZK",
+              "year": 2025,
+              "note": "Excluding VAT."
+            },
+            "date": "2025-06-03",
+            "sourceRef": "rsd-leaflet-k2"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2025-06-03",
+        "constructionStart": "2025-07-24",
+        "expectedOpening": "2027-11"
+      },
+      "lengthKm": 6.95,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-12-16",
+          "sourceRef": "rsd-leaflet-k2"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-06-03",
+          "sourceRef": "rsd-leaflet-k2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-07-24",
+          "sourceRef": "rsd-leaflet-k2"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        },
+        {
+          "name": "Sudop Praha",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba K2 Žalmanov – Knínice (the leaflet calls it Žalmanov–Knínice), category D 25.5/130, with the Bochov junction (exit 96). The leaflet gives the length as 6950 m, two bids, the contract of 3 June 2025 with the joint venture Společnost D6 Žalmanov – Knínice, the ceremonial start of 24 July 2025 and an expected opening in 11/2027. It calls the work a new line, since almost the whole section runs off the existing I/6. The estimate of 3 246 000 000 Kč was published before the award.",
+        "ro": "Construcția ŘSD K2 Žalmanov – Knínice (fișa o numește Žalmanov–Knínice), categoria D 25,5/130, cu nodul Bochov (ieșirea 96). Fișa indică lungimea de 6950 m, două oferte, contractul din 3 iunie 2025 cu asocierea Společnost D6 Žalmanov – Knínice, startul festiv din 24 iulie 2025 și o deschidere estimată în 11/2027. Lucrarea este descrisă ca traseu nou, deoarece aproape întreaga secțiune ocolește I/6 existent. Estimarea de 3 246 000 000 Kč a fost publicată înaintea atribuirii."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-k2",
+        "cs-wikipedia-d6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zalmanov-kninice"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wikipedia-d6",
+      "title": "Wikipedia (cs): Dálnice D6, Přehled úseků",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D6",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-stavby-json",
+      "title": "ŘSD: mapa staveb, dataset stavby-linestring (section codes, lengths, boundaries, status)",
+      "url": "https://apdos-v2.creativesound.cz/static/stavby-linestring-v2025.json",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s11",
+      "title": "ŘSD: Informační leták, D6 S11 Nové Strašecí – Řevničov (11/2020, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/95/leaflet/infoletak_d6-nove-straseci-revnicov.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s12",
+      "title": "ŘSD: Informační leták, D6 S12 Řevničov, obchvat (11/2020, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/94/leaflet/infoletak_d6-revnicov-obchvat.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s13",
+      "title": "ŘSD: Informační leták, D6 S13 Krupá, přeložka (08/2024, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/103/leaflet/infoletak_d6-krupa-prelozka.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s14",
+      "title": "ŘSD: Informační leták, D6 S14 Hořesedly, přeložka (09/2025, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/102/leaflet/infoletak_d6-horesedly-prelozka.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s15",
+      "title": "ŘSD: Informační leták, D6 S15 Hořovičky, obchvat (09/2025, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/101/leaflet/infoletak_d6-horovicky-obchvat.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-u2a",
+      "title": "ŘSD: Informační leták, D6 Petrohrad – Lubenec, 2. etapa (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/100/leaflet/infoletak_d6-petrohrad-lubenec-2etapa-A5.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-u2b",
+      "title": "ŘSD: Informační leták, D6 Petrohrad – Lubenec, 1. etapa (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/748/leaflet/infoletak_d6-petrohrad-lubenec-1etapa-A5.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-u3",
+      "title": "ŘSD: Informační leták, D6 U3 Lubenec – obchvat (08/2021, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/93/leaflet/infoletak_d6-lubenec-obchvat.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-u4",
+      "title": "ŘSD: Informační leták, R6 Lubenec – Bošov (11/2015, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/108/leaflet/Infoletak_r6-lubenec-bosov.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-k1",
+      "title": "ŘSD: Informační leták, D6 K1 Knínice – Bošov (aktualizace 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/99/leaflet/infoletak_d6-kninice-bosov.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-k2",
+      "title": "ŘSD: Informační leták, D6 K2 Žalmanov – Knínice (aktualizace 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/98/leaflet/infoletak_d6-zalmanov-kninice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "title": "ŘSD: Informační leták, D6 K3 Olšová Vrata – Žalmanov (aktualizace 05/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/97/leaflet/infoletak_d6-olsvrata-zalmanov.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "title": "ŘSD: Informační leták, D6 K4 Karlovy Vary – Olšová Vrata (aktualizace 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/96/leaflet/infoletak_d6-karlovy-vary-olsova-vrata.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zdopravy-d6-petrohrad-lubenec",
+      "title": "Zdopravy.cz: ŘSD oznámilo termín otevření dalšího úseku dálnice D6 (22. 9. 2026)",
+      "url": "https://zdopravy.cz/rsd-oznamilo-termin-otevreni-dalsiho-useku-dalnice-d6-nasledovat-bude-ruseni-provizorniho-sjezdu-300331/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lastVerified": "2026-10-10"
+}

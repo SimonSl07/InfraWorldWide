@@ -1,0 +1,1359 @@
+{
+  "id": "cz-d3",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D3 motorway (Praha – Tábor – České Budějovice – Dolní Dvořiště)",
+    "ro": "Autostrada D3 (Praga – Tábor – České Budějovice – Dolní Dvořiště)"
+  },
+  "description": {
+    "en": "Czechia's Praha – České Budějovice – Austrian border motorway, drawn from the Prague ring road at Jesenice to the border at Dolní Dvořiště. About 100 km is open: the Mezno – Tábor part from 2004 to 2009, Tábor – Veselí nad Lužnicí in June 2013, Veselí – Ševětín – Borek – Úsilné in 2017–2019, the České Budějovice bypass up to Kaplice nádraží on 21 December 2024 and Nažidla – border on 31 July 2026. Kaplice nádraží – Nažidla is under construction in two stages, with opening planned for November 2026 and mid-2027. The five Central Bohemian sections between Prague and Nová Hospoda are in preparation with opening planned for 2032, and the last 384 m to the border follow the Austrian S10. Lots follow the ŘSD section numbers (0301 to 0312); the older opened sections are taken from the cs.wikipedia section table, the rest from ŘSD leaflets and press releases. Sourced section lengths are kept where they differ from the drawn line.",
+    "ro": "Autostrada cehă Praga – České Budějovice – granița austriacă, desenată de la șoseaua de centură a Pragăi la Jesenice până la granița de la Dolní Dvořiště. Circa 100 km sunt deschiși: partea Mezno – Tábor din 2004 până în 2009, Tábor – Veselí nad Lužnicí în iunie 2013, Veselí – Ševětín – Borek – Úsilné în 2017–2019, ocolitoarea České Budějovice până la Kaplice nádraží la 21 decembrie 2024 și Nažidla – graniță la 31 iulie 2026. Kaplice nádraží – Nažidla este în construcție în două etape, cu deschidere planificată în noiembrie 2026 și la mijlocul lui 2027. Cele cinci sectoare din Boemia Centrală dintre Praga și Nová Hospoda sunt în pregătire, cu deschidere planificată în 2032, iar ultimii 384 m până la graniță urmează S10 austriacă. Loturile urmează numerele sectoarelor ŘSD (0301–0312); sectoarele mai vechi deschise provin din tabelul de pe cs.wikipedia, restul din fișele și comunicatele ŘSD. Lungimile din sursă sunt păstrate acolo unde diferă de linia desenată."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "d3-0301",
+      "name": {
+        "en": "Praha – Jílové (0301), with Kamenná Vrata tunnel",
+        "ro": "Praga – Jílové (0301), cu tunelul Kamenná Vrata"
+      },
+      "status": "planned",
+      "cost": {
+        "estimated": {
+          "amount": 12900,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládané náklady stavby\"), ŘSD leaflet state 04/2026; price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120,
+        "tunnelKm": 3.207
+      },
+      "dates": {
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 9.522,
+      "note": {
+        "en": "ŘSD stavba 0301, km 4.000 to 13.522, with tunnels totalling 3207 m. The notice of the zoning proceeding was published on 20 August 2025. Driving of a 1617 m exploratory adit for the Kamenná Vrata tunnel began on 29 August 2025 and is set to last 29 months. The leaflet (04/2026) plans the tender in 2027, construction from 2028 and opening in 2032. Drawn from the OSM proposed way, cut in proportion to the sourced section lengths.",
+        "ro": "Construcția ŘSD 0301, km 4,000–13,522, cu tuneluri însumând 3207 m. Anunțul procedurii de amplasare a fost publicat la 20 august 2025. Săparea unei galerii de explorare de 1617 m pentru tunelul Kamenná Vrata a început la 29 august 2025 și va dura 29 de luni. Fișa (04/2026) planifică licitația în 2027, construcția din 2028 și deschiderea în 2032. Desenat din traseul OSM propus, tăiat proporțional cu lungimile din sursă ale sectoarelor."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0301",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "d3-0301"
+    },
+    {
+      "id": "d3-0302",
+      "name": {
+        "en": "Jílové – Hostěradice (0302), with Luka tunnel",
+        "ro": "Jílové – Hostěradice (0302), cu tunelul Luka"
+      },
+      "status": "planned",
+      "cost": {
+        "estimated": {
+          "amount": 8100,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládané náklady stavby\"), ŘSD leaflet state 04/2026; price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120,
+        "tunnelKm": 1.843
+      },
+      "dates": {
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 4.386,
+      "note": {
+        "en": "ŘSD stavba 0302, km 13.522 to 17.908, with the 1843 m Luka tunnel and the Sázava bridge. The notice of the zoning proceeding was published on 20 August 2025. An exploratory adit for the Luka tunnel has been driven since March 2025. The leaflet (04/2026) plans the tender in 2027, construction from 2028 and opening in 2032. Drawn from the OSM proposed way, cut in proportion to the sourced section lengths.",
+        "ro": "Construcția ŘSD 0302, km 13,522–17,908, cu tunelul Luka de 1843 m și podul peste Sázava. Anunțul procedurii de amplasare a fost publicat la 20 august 2025. O galerie de explorare pentru tunelul Luka este săpată din martie 2025. Fișa (04/2026) planifică licitația în 2027, construcția din 2028 și deschiderea în 2032. Desenat din traseul OSM propus, tăiat proporțional cu lungimile din sursă ale sectoarelor."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0302",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "d3-0302"
+    },
+    {
+      "id": "d3-0303",
+      "name": {
+        "en": "Hostěradice – Václavice (0303)",
+        "ro": "Hostěradice – Václavice (0303)"
+      },
+      "status": "planned",
+      "cost": {
+        "estimated": {
+          "amount": 14900,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládané náklady stavby\"), ŘSD leaflet state 04/2026; price year not stated. The separate Benešov feeder road (CZK 1500 million) is not included."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120,
+        "tunnelKm": 0.946
+      },
+      "dates": {
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 11.29,
+      "note": {
+        "en": "ŘSD stavba 0303, km 17.908 to 29.198, with tunnels totalling 946 m. The notice of the zoning proceeding was published on 20 August 2025 and objections are being settled. The leaflet (04/2026) plans the tender in 2027, construction from 2028 and opening in 2032. Drawn from the OSM proposed way, cut in proportion to the sourced section lengths.",
+        "ro": "Construcția ŘSD 0303, km 17,908–29,198, cu tuneluri însumând 946 m. Anunțul procedurii de amplasare a fost publicat la 20 august 2025, iar obiecțiile sunt în curs de soluționare. Fișa (04/2026) planifică licitația în 2027, construcția din 2028 și deschiderea în 2032. Desenat din traseul OSM propus, tăiat proporțional cu lungimile din sursă ale sectoarelor."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0303",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "d3-0303"
+    },
+    {
+      "id": "d3-0304",
+      "name": {
+        "en": "Václavice – Voračice (0304), with Prostřední Vrch tunnel",
+        "ro": "Václavice – Voračice (0304), cu tunelul Prostřední Vrch"
+      },
+      "status": "planned",
+      "cost": {
+        "estimated": {
+          "amount": 17500,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládané náklady stavby\"), ŘSD leaflet state 04/2026; price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130,
+        "tunnelKm": 0.95
+      },
+      "dates": {
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 15.84,
+      "note": {
+        "en": "ŘSD stavba 0304, km 29.200 to 45.040, with the 950 m Prostřední Vrch tunnel. The ÚR was issued on 10 February 2026 and appeals are pending. The leaflet (04/2026) plans the tender in 2027, construction from 2028 and opening in 2032. On 1 October 2026 ŘSD started driving an 838 m exploratory adit, named Žofie, for the tunnel; the work is priced at CZK 248 million excluding VAT and runs until October 2027. It is a ground survey, separate from this section's construction. Drawn from the OSM proposed way, cut in proportion to the sourced section lengths.",
+        "ro": "Construcția ŘSD 0304, km 29,200–45,040, cu tunelul Prostřední Vrch de 950 m. ÚR a fost emisă la 10 februarie 2026, iar recursurile sunt în curs. Fișa (04/2026) planifică licitația în 2027, construcția din 2028 și deschiderea în 2032. La 1 octombrie 2026 ŘSD a început săparea unei galerii de explorare de 838 m, numită Žofie, pentru tunel; lucrarea costă 248 milioane CZK fără TVA și durează până în octombrie 2027. Este un studiu geotehnic, separat de construcția acestui sector. Desenat din traseul OSM propus, tăiat proporțional cu lungimile din sursă ale sectoarelor."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0304",
+        "rsd-press-prostredni-vrch",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "d3-0304"
+    },
+    {
+      "id": "d3-0305-i",
+      "name": {
+        "en": "Voračice – Nová Hospoda (0305/I)",
+        "ro": "Voračice – Nová Hospoda (0305/I)"
+      },
+      "status": "planned",
+      "cost": {
+        "estimated": {
+          "amount": 18500,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládané náklady stavby\"), ŘSD leaflet state 04/2026; price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 17.36,
+      "note": {
+        "en": "ŘSD stavba 0305/I, km 45.040 to 62.400, the last Central Bohemian section. The zoning decision (ÚR) was issued on 27 November 2025 and is not yet final because appeals are pending. The leaflet (04/2026) plans the tender in 2027, construction from 2028 and opening in 2032. Drawn from the OSM proposed way, cut in proportion to the sourced section lengths; the OSM way stops about 0.4 km short of the opened Nová Hospoda – Mezno section.",
+        "ro": "Construcția ŘSD 0305/I, km 45,040–62,400, ultimul sector din Boemia Centrală. Decizia de amplasare (ÚR) a fost emisă la 27 noiembrie 2025 și nu este încă definitivă, deoarece recursurile sunt în curs. Fișa (04/2026) planifică licitația în 2027, construcția din 2028 și deschiderea în 2032. Desenat din traseul OSM propus, tăiat proporțional cu lungimile din sursă ale sectoarelor; traseul OSM se oprește la circa 0,4 km de sectorul deschis Nová Hospoda – Mezno."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0305-i",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "d3-0305-i"
+    },
+    {
+      "id": "nova-hospoda-mezno",
+      "name": {
+        "en": "Nová Hospoda – Mezno (0305/II)",
+        "ro": "Nová Hospoda – Mezno (0305/II)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nova-hospoda-mezno",
+      "note": {
+        "en": "ŘSD stavba 0305/II, the northern end of the opened motorway. Length and dates from the cs.wikipedia section table: half profile built from April 2007 and opened in December 2007, full profile built from July 2008 and opened in December 2009. The half profile is recorded as a partial opening and the full profile as the opening. OSM draws the road to a temporary connection at Mezno; the drawn length is 3% under the recorded length, split proportionally from Mezno – Chotoviny.",
+        "ro": "Construcția ŘSD 0305/II, capătul nordic al autostrăzii deschise. Lungimea și datele provin din tabelul secțiunilor de pe cs.wikipedia: jumătate de profil construită din aprilie 2007 și deschisă în decembrie 2007, profil complet construit din iulie 2008 și deschis în decembrie 2009. Jumătatea de profil este înregistrată ca deschidere parțială, iar profilul complet ca deschidere. OSM desenează drumul până la o legătură provizorie la Mezno; lungimea desenată este cu 3% sub cea înregistrată, împărțită proporțional față de Mezno – Chotoviny."
+      },
+      "dates": {
+        "constructionStart": "2007-04",
+        "opened": "2009-12"
+      },
+      "lengthKm": 1.7,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-04",
+          "sourceRef": "cs-wikipedia-d3"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2007-12",
+          "sourceRef": "cs-wikipedia-d3"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-12",
+          "sourceRef": "cs-wikipedia-d3"
+        }
+      ]
+    },
+    {
+      "id": "mezno-chotoviny",
+      "name": {
+        "en": "Mezno – Chotoviny (0306/I)",
+        "ro": "Mezno – Chotoviny (0306/I)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mezno-chotoviny",
+      "note": {
+        "en": "ŘSD stavba 0306/I. Opened on 17 December 2007 (cs.wikipedia text). The section table gives construction start 05/2004 while the text says it was built from 2005, so no start date is recorded. Length from the section table. The cut with Nová Hospoda – Mezno is proportional to the two sourced lengths along the OSM line, since no junction node marks it.",
+        "ro": "Construcția ŘSD 0306/I. Deschis la 17 decembrie 2007 (textul de pe cs.wikipedia). Tabelul secțiunilor indică începerea în 05/2004, iar textul spune că a fost construit din 2005, deci nicio dată de început nu este înregistrată. Lungimea provine din tabelul secțiunilor. Limita cu Nová Hospoda – Mezno este proporțională cu cele două lungimi din sursă de-a lungul liniei OSM, deoarece niciun nod de joncțiune nu o marchează."
+      },
+      "dates": {
+        "opened": "2007-12-17"
+      },
+      "lengthKm": 6.8,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-12-17",
+          "sourceRef": "cs-wikipedia-d3"
+        }
+      ]
+    },
+    {
+      "id": "chotoviny-cekanice",
+      "name": {
+        "en": "Chotoviny – Čekanice (0306/II)",
+        "ro": "Chotoviny – Čekanice (0306/II)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "chotoviny-cekanice",
+      "note": {
+        "en": "ŘSD stavby 0306/IIA to IID, Chotoviny – Čekanice, including the Čekanice bridge. The length is the four cs.wikipedia section lengths added up: 3.25, 1.02, 0.474 and 0.536 km. Construction started in February 2002 and the first part opened in October 2004. Parts of 0306/IIB to IID had a half profile from 1991–1994 and reached full profile between October 2004 and June 2005. cs.wikipedia names Chotoviny – Čekanice (8.3 km, October 2004) as the first part of D3 to open. Cut at the Čekanice and Chotoviny junction nodes.",
+        "ro": "Construcțiile ŘSD 0306/IIA–IID, Chotoviny – Čekanice, cu podul Čekanice. Lungimea este suma celor patru lungimi din tabelul de pe cs.wikipedia: 3,25, 1,02, 0,474 și 0,536 km. Lucrările au început în februarie 2002, iar prima parte a fost deschisă în octombrie 2004. Părți din 0306/IIB–IID aveau jumătate de profil din 1991–1994 și au ajuns la profil complet între octombrie 2004 și iunie 2005. cs.wikipedia indică Chotoviny – Čekanice (8,3 km, octombrie 2004) drept prima parte din D3 deschisă. Tăiat la nodurile Čekanice și Chotoviny."
+      },
+      "dates": {
+        "constructionStart": "2002-02",
+        "opened": "2004-10"
+      },
+      "lengthKm": 5.28,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2002-02",
+          "sourceRef": "cs-wikipedia-d3"
+        },
+        {
+          "kind": "opened",
+          "date": "2004-10",
+          "sourceRef": "cs-wikipedia-d3"
+        }
+      ]
+    },
+    {
+      "id": "tabor-bypass",
+      "name": {
+        "en": "Tábor bypass, Čekanice – Měšice (0306/III)",
+        "ro": "Ocolitoarea Tábor, Čekanice – Měšice (0306/III)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tabor-bypass",
+      "note": {
+        "en": "ŘSD stavba 0306/III, the Tábor bypass between the Čekanice and Měšice junctions. Dates and length from the cs.wikipedia section table; no leaflet was read. Built from 1988 and opened in 1991 but not marked as a motorway; it was reclassified as part of D3 in 2013. A missing 400 m of the second carriageway was finished in August 2024 after a 25-year dispute over access to a motorcycle centre. Cut at the Měšice and Čekanice junction nodes.",
+        "ro": "Construcția ŘSD 0306/III, ocolitoarea Tábor între nodurile Čekanice și Měšice. Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă nu a fost citită. Construită din 1988 și deschisă în 1991, dar nemarcată ca autostradă; a fost reclasificată ca parte din D3 în 2013. Lipsa a 400 m din a doua bandă a fost completată în august 2024, după o dispută de 25 de ani privind accesul la un centru de motociclete. Tăiat la nodurile Měšice și Čekanice."
+      },
+      "dates": {
+        "constructionStart": "1988",
+        "opened": "1991"
+      },
+      "lengthKm": 3.45,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1988",
+          "sourceRef": "cs-wikipedia-d3"
+        },
+        {
+          "kind": "opened",
+          "date": "1991",
+          "sourceRef": "cs-wikipedia-d3"
+        }
+      ]
+    },
+    {
+      "id": "tabor-sobeslav",
+      "name": {
+        "en": "Tábor – Soběslav (0307)",
+        "ro": "Tábor – Soběslav (0307)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tabor-sobeslav",
+      "note": {
+        "en": "ŘSD stavba 0307, with junctions Planá nad Lužnicí and Soběslav. Dates and length from the cs.wikipedia section table; no leaflet was read. Started in September 2008 and opened on 28 June 2013, together with 0308AB. The same work rebuilt the 1980s and 1990s sections between Stoklasná Lhota and Měšice. Cut at the Soběslav and Měšice junction nodes; the drawn length is 4% under the recorded length.",
+        "ro": "Construcția ŘSD 0307, cu nodurile Planá nad Lužnicí și Soběslav. Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă nu a fost citită. Început în septembrie 2008 și deschis la 28 iunie 2013, împreună cu 0308AB. Aceleași lucrări au refăcut sectoarele din anii 1980–1990 dintre Stoklasná Lhota și Měšice. Tăiat la nodurile Soběslav și Měšice; lungimea desenată este cu 4% sub cea înregistrată."
+      },
+      "dates": {
+        "constructionStart": "2008-09",
+        "opened": "2013-06-28"
+      },
+      "lengthKm": 16.3,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-09",
+          "sourceRef": "cs-wikipedia-d3"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-06-28",
+          "sourceRef": "cs-wikipedia-d3"
+        }
+      ]
+    },
+    {
+      "id": "sobeslav-veseli",
+      "name": {
+        "en": "Soběslav – Veselí nad Lužnicí (0308AB)",
+        "ro": "Soběslav – Veselí nad Lužnicí (0308AB)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sobeslav-veseli",
+      "note": {
+        "en": "ŘSD stavba 0308AB, with junctions Dráchov and Veselí nad Lužnicí-sever. Dates and length from the cs.wikipedia section table; no leaflet was read. Started in January 2009 and opened on 28 June 2013 together with 0307. The Veselí nad Lužnicí bypass of the 1990s, built as one carriageway, was completed to full profile in this work. Drawn from the Soběslav junction to the start of 0308C; the drawn length is 3% under the recorded length.",
+        "ro": "Construcția ŘSD 0308AB, cu nodurile Dráchov și Veselí nad Lužnicí-sever. Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă nu a fost citită. Început în ianuarie 2009 și deschis la 28 iunie 2013, împreună cu 0307. Ocolitoarea Veselí nad Lužnicí din anii 1990, construită cu o singură bandă, a fost adusă la profil complet prin aceste lucrări. Desenat de la nodul Soběslav până la începutul 0308C; lungimea desenată este cu 3% sub cea înregistrată."
+      },
+      "dates": {
+        "constructionStart": "2009-01",
+        "opened": "2013-06-28"
+      },
+      "lengthKm": 8.72,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-01",
+          "sourceRef": "cs-wikipedia-d3"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-06-28",
+          "sourceRef": "cs-wikipedia-d3"
+        }
+      ]
+    },
+    {
+      "id": "veseli-bosilec",
+      "name": {
+        "en": "Veselí nad Lužnicí – Bošilec (0308C)",
+        "ro": "Veselí nad Lužnicí – Bošilec (0308C)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 634.72,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\")."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2015-04-07",
+        "opened": "2017-10-12"
+      },
+      "lengthKm": 5.125,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2015-04-07",
+          "sourceRef": "rsd-leaflet-0308c"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-10-12",
+          "sourceRef": "rsd-leaflet-0308c"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0308C, km 104.135 to 109.260. It widened the existing half-profile road I/3 (category D 26.5) to a full motorway profile (D 27.5/120). The old half-profile road is not modelled as a separate lot. The start ceremony was held on 7 April 2015 and opening on 12 October 2017. The contractor is a Strabag and Eurovia joint venture.",
+        "ro": "Construcția ŘSD 0308C, km 104,135–109,260. A lărgit drumul I/3 existent, în jumătate de profil (categoria D 26,5), la profil complet de autostradă (D 27,5/120). Vechiul drum în jumătate de profil nu este modelat ca lot separat. Ceremonia de început a avut loc la 7 aprilie 2015, iar deschiderea la 12 octombrie 2017. Constructorul este o asociere Strabag și Eurovia."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0308c",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "veseli-bosilec"
+    },
+    {
+      "id": "bosilec-sevetin",
+      "name": {
+        "en": "Bošilec – Ševětín (0309/I)",
+        "ro": "Bošilec – Ševětín (0309/I)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 1248.23,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\")."
+        }
+      },
+      "contractors": [
+        {
+          "name": "MTS",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2016-02",
+        "opened": "2019-06-24"
+      },
+      "lengthKm": 8.137,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2014-11-28",
+          "sourceRef": "rsd-leaflet-0309-i"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2016-02",
+          "sourceRef": "rsd-leaflet-0309-i"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-06-24",
+          "sourceRef": "rsd-leaflet-0309-i"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0309/I, km 109.259 to 117.396, a new route. The tender was announced on 28 November 2014 and drew no objections. The start ceremony was held on 22 September 2015 and works began in earnest in February 2016. A peat bog under the bridge over the Bukovský potok was deeper than expected. Opened on 24 June 2019. Pragoprojekt prepared the construction design.",
+        "ro": "Construcția ŘSD 0309/I, km 109,259–117,396, traseu nou. Licitația a fost lansată la 28 noiembrie 2014 și nu a primit contestații. Ceremonia de început a avut loc la 22 septembrie 2015, iar lucrările au început efectiv în februarie 2016. O turbărie sub podul peste Bukovský potok a fost mai adâncă decât se aștepta. Deschis la 24 iunie 2019. Pragoprojekt a elaborat proiectul de execuție."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0309-i",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bosilec-sevetin"
+    },
+    {
+      "id": "sevetin-borek",
+      "name": {
+        "en": "Ševětín – Borek (0309/II)",
+        "ro": "Ševětín – Borek (0309/II)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 933.22,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\")."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2016-12",
+        "opened": "2019-12-10"
+      },
+      "lengthKm": 10.68,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2016-12",
+          "sourceRef": "rsd-leaflet-0309-ii"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2018-12-18",
+          "sourceRef": "rsd-leaflet-0309-ii"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-10",
+          "sourceRef": "rsd-leaflet-0309-ii"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0309/II, km 117.400 to 128.080. Ten bidders took part and Eurovia CS offered the lowest price, CZK 933 million excluding VAT. The start ceremony was held on 15 March 2017; the leaflet gives the construction start as 12/2016. The first half profile, a new carriageway, opened on 18 December 2018 and traffic then moved onto it while the existing road I/3 was rebuilt as the second carriageway. The full profile opened on 10 December 2019. The old I/3 road is not modelled as a separate lot, so the lot shows as opened only from the full opening.",
+        "ro": "Construcția ŘSD 0309/II, km 117,400–128,080. Au participat zece ofertanți, iar Eurovia CS a oferit cel mai mic preț, 933 milioane CZK fără TVA. Ceremonia de început a avut loc la 15 martie 2017; fișa indică începerea construcției în 12/2016. Prima jumătate de profil, o bandă nouă de circulație, a fost deschisă la 18 decembrie 2018, iar traficul a fost mutat pe ea cât timp drumul I/3 existent a fost refăcut ca a doua bandă. Profilul complet a fost deschis la 10 decembrie 2019. Vechiul drum I/3 nu este modelat ca lot separat, deci lotul apare ca deschis doar de la deschiderea completă."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0309-ii",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sevetin-borek"
+    },
+    {
+      "id": "borek-usilne",
+      "name": {
+        "en": "Borek – Úsilné (0309/III)",
+        "ro": "Borek – Úsilné (0309/III)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 717.58,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\")."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2015-04-07",
+        "opened": "2017-09-27"
+      },
+      "lengthKm": 3.16,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2015-04-07",
+          "sourceRef": "rsd-leaflet-0309-iii"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-09-27",
+          "sourceRef": "rsd-leaflet-0309-iii"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0309/III, ending at km 131.240 behind MÚK Úsilné; the first of the České Budějovice bypass sections to open. The start ceremony was held on 7 April 2015 and opening on 27 September 2017. The contractor is a joint venture of Eurovia and Strabag.",
+        "ro": "Construcția ŘSD 0309/III, care se termină la km 131,240, după MÚK Úsilné; primul sector al ocolitoarei České Budějovice deschis. Ceremonia de început a avut loc la 7 aprilie 2015, iar deschiderea la 27 septembrie 2017. Constructorul este o asociere Eurovia și Strabag."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0309-iii",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "borek-usilne"
+    },
+    {
+      "id": "usilne-hodejovice",
+      "name": {
+        "en": "Úsilné – Hodějovice, with Pohůrka tunnel (0310/I)",
+        "ro": "Úsilné – Hodějovice, cu tunelul Pohůrka (0310/I)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 5285.64,
+          "currency": "CZK",
+          "year": 2019,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"). Contract signed 28 March 2019."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 6873.83,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 5285.64,
+              "currency": "CZK",
+              "year": 2019,
+              "note": "Excluding VAT."
+            },
+            "date": "2019-03-28",
+            "sourceRef": "rsd-leaflet-0310-i"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 5919.36,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT. ŘSD: \"Cena po valorizaci: 5 919 357 420 Kč bez DPH\", state at 12/2024."
+            },
+            "date": "2024-12",
+            "sourceRef": "rsd-press-d3-2024"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hochtief CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Colas CZ",
+          "role": "builder"
+        },
+        {
+          "name": "M-Silnice",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120,
+        "tunnelKm": 0.9995
+      },
+      "dates": {
+        "tenderAwarded": "2019-03-28",
+        "constructionStart": "2019-04-23",
+        "opened": "2024-12-21"
+      },
+      "lengthKm": 7.197,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2018-01",
+          "sourceRef": "rsd-leaflet-0310-i"
+        },
+        {
+          "kind": "awarded",
+          "date": "2019-03-28",
+          "sourceRef": "rsd-leaflet-0310-i"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-04-23",
+          "sourceRef": "rsd-leaflet-0310-i"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-21",
+          "sourceRef": "rsd-press-d3-2024"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0310/I, km 131.240 to 138.437, including the 999.5 m cut-and-cover Pohůrka tunnel. A second tender round started in January 2018. The site was handed over on 15 April 2019, works began on 23 April and the start ceremony was on 17 April 2019. In July 2020 the tunnel method was changed to a cast-in-place box in an open pit because of groundwater; works on the tunnel resumed in March 2021. Opened on 21 December 2024.",
+        "ro": "Construcția ŘSD 0310/I, km 131,240–138,437, cu tunelul Pohůrka de 999,5 m, executat în tranșee deschisă. O a doua rundă de licitație a început în ianuarie 2018. Șantierul a fost predat la 15 aprilie 2019, lucrările au început la 23 aprilie, iar ceremonia de început a fost la 17 aprilie 2019. În iulie 2020 metoda de execuție a tunelului a fost schimbată într-un cheson turnat pe loc în groapă deschisă, din cauza apei subterane; lucrările la tunel au fost reluate în martie 2021. Deschis la 21 decembrie 2024."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0310-i",
+        "rsd-press-d3-2024",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "usilne-hodejovice"
+    },
+    {
+      "id": "hodejovice-trebonin",
+      "name": {
+        "en": "Hodějovice – Dolní Třebonín (0310/II)",
+        "ro": "Hodějovice – Dolní Třebonín (0310/II)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 5804.19,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\")."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 5953.73,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 6561.76,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT. ŘSD: \"Cena po valorizaci: 6 561 756 896 Kč bez DPH\", state at 12/2024."
+            },
+            "date": "2024-12",
+            "sourceRef": "rsd-press-d3-2024"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        },
+        {
+          "name": "Salini Impregilo",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "2019-03-01",
+        "opened": "2024-12-21"
+      },
+      "lengthKm": 12.536,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-03-01",
+          "sourceRef": "rsd-leaflet-0310-ii"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-21",
+          "sourceRef": "rsd-press-d3-2024"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0310/II, km 138.437 to 150.973. The site was handed over on 20 February 2019 and works began on 1 March 2019; the start ceremony was on 29 March 2019. A slope near Rožnovský les (km 141.9–142.2) showed instability from late 2019 and an old underground working was found at km 138.6. The leaflet does not state the contract signing date. Opened on 21 December 2024.",
+        "ro": "Construcția ŘSD 0310/II, km 138,437–150,973. Șantierul a fost predat la 20 februarie 2019, iar lucrările au început la 1 martie 2019; ceremonia de început a fost la 29 martie 2019. O pantă de lângă Rožnovský les (km 141,9–142,2) a arătat instabilitate de la sfârșitul lui 2019, iar la km 138,6 a fost găsită o galerie subterană veche. Fișa nu indică data semnării contractului. Deschis la 21 decembrie 2024."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0310-ii",
+        "rsd-press-d3-2024",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hodejovice-trebonin"
+    },
+    {
+      "id": "trebonin-kaplice",
+      "name": {
+        "en": "Dolní Třebonín – Kaplice nádraží (0311)",
+        "ro": "Dolní Třebonín – Kaplice nádraží (0311)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 1877.77,
+          "currency": "CZK",
+          "year": 2022,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"). Contract signed 6 January 2022."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 2388.8,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1877.77,
+              "currency": "CZK",
+              "year": 2022,
+              "note": "Excluding VAT."
+            },
+            "date": "2022-01-06",
+            "sourceRef": "rsd-leaflet-0311"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 2034.42,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT. ŘSD: \"Cena po valorizaci: 2 034 420 570 Kč bez DPH\", state at 12/2024."
+            },
+            "date": "2024-12",
+            "sourceRef": "rsd-press-d3-2024"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "tenderAwarded": "2022-01-06",
+        "constructionStart": "2022-02-04",
+        "opened": "2024-12-21"
+      },
+      "lengthKm": 8.539,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-09",
+          "sourceRef": "rsd-leaflet-0311"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-01-06",
+          "sourceRef": "rsd-leaflet-0311"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-02-04",
+          "sourceRef": "rsd-leaflet-0311"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-21",
+          "sourceRef": "rsd-press-d3-2024"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0311, km 150.973 to 159.512. The tender was announced in September 2020; the original plan to start in 2021 slipped over a dispute about the references of one bidder (cs.wikipedia). The start ceremony was held on 4 February 2022. Opened on 21 December 2024 together with 0310/I and 0310/II.",
+        "ro": "Construcția ŘSD 0311, km 150,973–159,512. Licitația a fost lansată în septembrie 2020; planul inițial de începere în 2021 a fost amânat din cauza unei dispute privind referințele unui ofertant (cs.wikipedia). Ceremonia de început a avut loc la 4 februarie 2022. Deschis la 21 decembrie 2024, împreună cu 0310/I și 0310/II."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0311",
+        "rsd-press-d3-2024",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "trebonin-kaplice"
+    },
+    {
+      "id": "kaplice-nazidla-1",
+      "name": {
+        "en": "Kaplice nádraží – Kaplice, stage 1 (0312/I)",
+        "ro": "Kaplice nádraží – Kaplice, etapa 1 (0312/I)"
+      },
+      "status": "under_construction",
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "MI Roads",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2024-06-14",
+        "constructionStart": "2024-06-28",
+        "expectedOpening": "2026-11"
+      },
+      "lengthKm": 5.785,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-03-01",
+          "sourceRef": "rsd-leaflet-0312-i-1"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-06-14",
+          "sourceRef": "rsd-leaflet-0312-i-1"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-06-28",
+          "sourceRef": "rsd-leaflet-0312-i-1"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0312/I, stage 1, from the end of 0311 at Kaplice nádraží (km 159.55) to MÚK Kaplice (km 165.325). The leaflet gives the length as 5785 m. The contract covers both stages of 0312/I: CZK 4295.57 million excluding VAT against an estimate of CZK 6182 million, signed on 14 June 2024. That price is not split by stage and is left out of the cost fields. The leaflet (04/2026) and the ŘSD press release of 31 July 2026 both expect opening in November 2026. OSM maps this stage as construction ways, with a few short motorway ways at the Kaplice junction.",
+        "ro": "Construcția ŘSD 0312/I, etapa 1, de la capătul 0311 la Kaplice nádraží (km 159,55) până la MÚK Kaplice (km 165,325). Fișa indică lungimea de 5785 m. Contractul acoperă ambele etape ale 0312/I: 4295,57 milioane CZK fără TVA, față de o estimare de 6182 milioane CZK, semnat la 14 iunie 2024. Prețul nu este împărțit pe etape și nu apare în câmpurile de cost. Fișa (04/2026) și comunicatul ŘSD din 31 iulie 2026 prevăd deschiderea în noiembrie 2026. OSM cartografiază această etapă ca trasee în construcție, cu câteva trasee scurte de autostradă la nodul Kaplice."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0312-i-1",
+        "rsd-press-d3-border-2026",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kaplice-nazidla-1"
+    },
+    {
+      "id": "kaplice-nazidla-2",
+      "name": {
+        "en": "Kaplice – Nažidla, stage 2 (0312/I)",
+        "ro": "Kaplice – Nažidla, etapa 2 (0312/I)"
+      },
+      "status": "under_construction",
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "MI Roads",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2024-06-14",
+        "constructionStart": "2024-06-28",
+        "expectedOpening": "2027-07"
+      },
+      "lengthKm": 6.215,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-03-01",
+          "sourceRef": "rsd-leaflet-0312-i-2"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-06-14",
+          "sourceRef": "rsd-leaflet-0312-i-2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-06-28",
+          "sourceRef": "rsd-leaflet-0312-i-2"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0312/I, stage 2, from MÚK Kaplice (km 165.325) to km 171.540 where Nažidla – border begins. The leaflet gives the length as 6215 m. The contract covers both stages of 0312/I: CZK 4295.57 million excluding VAT against an estimate of CZK 6182 million, signed on 14 June 2024 after four bids. That price is not split by stage and is left out of the cost fields. The leaflet (04/2026) expects opening in 07/2027; the ŘSD director general said in July 2026 that opening is wanted in June 2027. The cut with stage 1 follows the sourced chainage. OSM maps this stage as construction ways.",
+        "ro": "Construcția ŘSD 0312/I, etapa 2, de la MÚK Kaplice (km 165,325) până la km 171,540, unde începe Nažidla – graniță. Fișa indică lungimea de 6215 m. Contractul acoperă ambele etape ale 0312/I: 4295,57 milioane CZK fără TVA, față de o estimare de 6182 milioane CZK, semnat la 14 iunie 2024 după patru oferte. Prețul nu este împărțit pe etape și nu apare în câmpurile de cost. Fișa (04/2026) prevede deschiderea în 07/2027; directorul general ŘSD a spus în iulie 2026 că dorește deschiderea în iunie 2027. Limita cu etapa 1 urmează kilometrajul din sursă. OSM cartografiază această etapă ca trasee în construcție."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0312-i-2",
+        "rsd-press-d3-border-2026",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kaplice-nazidla-2"
+    },
+    {
+      "id": "nazidla-border",
+      "name": {
+        "en": "Nažidla – border (0312/II)",
+        "ro": "Nažidla – graniță (0312/II)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 874.93,
+          "currency": "CZK",
+          "year": 2024,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"). Contract signed 01/2024."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1245.71,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"), price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 874.93,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT."
+            },
+            "date": "2024-01",
+            "sourceRef": "rsd-leaflet-0312-ii"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 1040,
+              "currency": "CZK",
+              "note": "Excluding VAT; price year not stated. ŘSD: \"Cena stavby po valorizaci je zhruba 1,04 miliardy Kč bez DPH\"; a rounded figure."
+            },
+            "date": "2026-07-31",
+            "sourceRef": "rsd-press-d3-border-2026"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Swietelsky",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "designSpeedKmh": 130
+      },
+      "dates": {
+        "tenderAwarded": "2024-01",
+        "constructionStart": "2024-01-09",
+        "opened": "2026-07-31"
+      },
+      "lengthKm": 3.16,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-02-28",
+          "sourceRef": "rsd-leaflet-0312-ii"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-01",
+          "sourceRef": "rsd-leaflet-0312-ii"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-01-09",
+          "sourceRef": "rsd-leaflet-0312-ii"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2025-08-29",
+          "sourceRef": "rsd-leaflet-0312-ii"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-07-31",
+          "sourceRef": "rsd-press-d3-border-2026"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 0312/II, km 171.540 to about km 174.7, excluding the 384 m border section. Almost all of it follows the line of the old road I/3. Five bids were received for the contract and the start ceremony was held on 9 January 2024. Traffic moved onto the finished half profile on 29 August 2025 while the second half was built. ŘSD opened it on 31 July 2026 with a temporary connection to the Austrian road network at the border. Drawn length is 13% under the sourced length: OSM has no D3 way for the first 0.3 km at the border end.",
+        "ro": "Construcția ŘSD 0312/II, de la km 171,540 până la circa km 174,7, fără sectorul de frontieră de 384 m. Aproape tot urmează traseul vechiului drum I/3. Pentru contract au fost primite cinci oferte, iar ceremonia de început a avut loc la 9 ianuarie 2024. Circulația a fost mutată pe jumătatea de profil terminată la 29 august 2025, cât timp a fost construită a doua jumătate. ŘSD l-a deschis la 31 iulie 2026, cu o legătură provizorie la rețeaua rutieră austriacă la graniță. Lungimea desenată este cu 13% sub cea din sursă: OSM nu are traseu D3 pentru primii 0,3 km de la capătul dinspre graniță."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0312-ii",
+        "rsd-press-d3-border-2026",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nazidla-border"
+    },
+    {
+      "id": "border-section",
+      "name": {
+        "en": "Nažidla – border, border section (0312/II)",
+        "ro": "Nažidla – graniță, sectorul de frontieră (0312/II)"
+      },
+      "status": "planned",
+      "lengthKm": 0.384,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "ŘSD stavba 0312/II, the last 384 m to the Austrian border. The Nažidla – border leaflet says it will be built together with the Austrian S10, so the 3.16 km before it opened with a temporary connection to the Austrian network. The ŘSD stavby dataset lists it as in preparation with works from 2029 and completion in 2032; cs.wikipedia gives 2029 and 2033, citing a May 2026 ŘSD leaflet that could not be opened. No date is recorded here. Drawn from the OSM proposed ways.",
+        "ro": "Construcția ŘSD 0312/II, ultimii 384 m până la granița cu Austria. Fișa sectorului Nažidla – graniță spune că va fi construit împreună cu S10 austriacă, deci cei 3,16 km dinaintea lui au fost deschiși cu o legătură provizorie la rețeaua austriacă. Setul de date ŘSD stavby îl listează în pregătire, cu lucrări din 2029 și finalizare în 2032; cs.wikipedia indică 2029 și 2033, citând o fișă ŘSD din mai 2026 care nu a putut fi deschisă. Nicio dată nu este înregistrată aici. Desenat din traseele OSM propuse."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-0312-ii",
+        "rsd-stavby-dataset",
+        "cs-wikipedia-d3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "border-section"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wikipedia-d3",
+      "title": "Wikipedia (cs): Dálnice D3, Přehled úseků and Historie výstavby",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D3",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0301",
+      "title": "ŘSD: Informační leták, D3 0301 Praha – Jílové (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/45/leaflet/infoletak_d3-0301-praha-jilove.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0302",
+      "title": "ŘSD: Informační leták, D3 0302 Jílové – Hostěradice (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/44/leaflet/infoletak_d3-0302-jilove-hosteradice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0303",
+      "title": "ŘSD: Informační leták, D3 0303 Hostěradice – Václavice (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/43/leaflet/infoletak_d3-0303-hosteradice-vaclavice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0304",
+      "title": "ŘSD: Informační leták, D3 0304 Václavice – Voračice (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/42/leaflet/infoletak_d3-0304-vaclavice-voracice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0305-i",
+      "title": "ŘSD: Informační leták, D3 0305/I Voračice – Nová Hospoda (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/41/leaflet/infoletak_d3-0305-I-voracice-nova_hospoda.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0308c",
+      "title": "ŘSD: Informační leták, D3 0308C Veselí nad Lužnicí – Bošilec (10/2017, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/35/leaflet/infoletak_d3-0308C-veseli-bosilec.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0309-i",
+      "title": "ŘSD: Informační leták, D3 0309/I Bošilec – Ševětín (06/2019, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/38/leaflet/infoletak-d3-bosilec-sevetin.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0309-ii",
+      "title": "ŘSD: Informační leták, D3 0309/II Ševětín – Borek (12/2019, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/37/leaflet/infoletak_d3-sevetin-borek.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0309-iii",
+      "title": "ŘSD: Informační leták, D3 0309/III Borek – Úsilné (09/2017, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/36/leaflet/infoletak_d3-borek-usilne.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0310-i",
+      "title": "ŘSD: Informační leták, D3 0310/I Úsilné – Hodějovice (12/2024, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/39/leaflet/infoletak_d3-usilne-hodejovice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0310-ii",
+      "title": "ŘSD: Informační leták, D3 0310/II Hodějovice – Třebonín (12/2024, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/40/leaflet/infoletak_d3-hodejovice-trebonin.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0311",
+      "title": "ŘSD: Informační leták, D3 0311 Třebonín – Kaplice nádraží (12/2024, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/48/leaflet/infoletak_d3-trebonin-kaplice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0312-i-1",
+      "title": "ŘSD: Informační leták, D3 0312/I Kaplice nádraží – Nažidla, 1. etapa (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/47/leaflet/infoletak_d3-kaplice-nazidla-1-etapa-A5.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0312-i-2",
+      "title": "ŘSD: Informační leták, D3 0312/I Kaplice nádraží – Nažidla, 2. etapa (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/749/leaflet/infoletak_d3-kaplice-nazidla-ii-etapa-A5.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0312-ii",
+      "title": "ŘSD: Informační leták, D3 0312/II Nažidla – Dolní Dvořiště, st. hranice (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/46/leaflet/infoletak_d3-nazidla-dolni-dvoriste.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-press-d3-border-2026",
+      "title": "ŘSD: Ředitelství silnic a dálnic otevřelo úsek D3 od Nažidel ke státní hranici (31. 7. 2026)",
+      "url": "https://www.rsd.cz/-/tz-%C5%98editelstv%C3%AD-silnic-a-d%C3%A1lnic-otev%C5%99elo-%C3%BAsek-d3-od-na%C5%BEidel-ke-st%C3%A1tn%C3%AD-hranici",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-press-d3-2024",
+      "title": "ŘSD: Ředitelství silnic a dálnic zprovozňuje tři nové úseky dálnice D3 (21. 12. 2024)",
+      "url": "https://www.rsd.cz/-/%C5%98editelstv%C3%AD-silnic-a-d%C3%A1lnic-zprovoz%C5%88uje-t%C5%99i-nov%C3%A9-%C3%BAseky-d%C3%A1lnice-d3",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-press-prostredni-vrch",
+      "title": "ŘSD: Začala ražba průzkumné štoly pro tunel Prostřední Vrch na D3 (1. 10. 2026)",
+      "url": "https://www.rsd.cz/-/zacala-razba-pruzkumne-stoly-pro-tunel-prostredni-vrch-na-d3",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-stavby-dataset",
+      "title": "ŘSD: mapa staveb, dataset stavby-linestring-v2025 (stavba 0312/II hraniční úsek, Delka 0.4, V přípravě)",
+      "url": "https://apdos-v2.creativesound.cz/static/stavby-linestring-v2025.json",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
