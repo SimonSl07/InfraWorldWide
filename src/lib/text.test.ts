@@ -38,6 +38,18 @@ describe("foldText", () => {
     );
   });
 
+  it("folds Hungarian letters, including double-acute ő and ű", () => {
+    expect(foldText("Autópálya, autóút, alagút, híd, csomópont")).toBe(
+      "autopalya, autout, alagut, hid, csomopont",
+    );
+    expect(foldText("Győr, Szőny, Tűzoltó utca, Gödöllő, Nyíregyháza")).toBe(
+      "gyor, szony, tuzolto utca, godollo, nyiregyhaza",
+    );
+    expect(foldText("Kőröshegy, Ürömi, Ferihegyi Ikarus, Szűcs")).toBe(
+      "koroshegy, uromi, ferihegyi ikarus, szucs",
+    );
+  });
+
   it("folds letters NFD leaves alone", () => {
     expect(foldText("Łódź")).toBe("lodz");
     expect(foldText("Đorđe")).toBe("dorde");

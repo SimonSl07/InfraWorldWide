@@ -230,6 +230,17 @@ describe("hasInfrastructureKeyword", () => {
     expect(hasInfrastructureKeyword("Tunel pod Świną i most w Łodzi")).toBe(
       true,
     );
+    expect(
+      hasInfrastructureKeyword("Átadták az M44-es autóút új szakaszát"),
+    ).toBe(true);
+    expect(
+      hasInfrastructureKeyword("Autópályán épül új csomópont és elkerülő"),
+    ).toBe(true);
+    expect(hasInfrastructureKeyword("Alagút és híd a vasútvonalon")).toBe(true);
+    expect(hasInfrastructureKeyword("Gyorsforgalmi út Kecskemétnél")).toBe(
+      true,
+    );
+    expect(hasInfrastructureKeyword("Telephelyi takarító állás")).toBe(false);
     expect(hasInfrastructureKeyword("Controalele ANAF se înmulțesc")).toBe(
       false,
     );

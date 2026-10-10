@@ -1,0 +1,468 @@
+{
+  "id": "hu-m7",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M7 motorway (Budapest – Lake Balaton – Nagykanizsa – Letenye) and M70 spur",
+    "ro": "Autostrada M7 (Budapesta – Balaton – Nagykanizsa – Letenye) și ramura M70"
+  },
+  "description": {
+    "en": "Hungary's oldest motorway, from Budapest past Székesfehérvár and the south shore of Lake Balaton to Nagykanizsa and the Croatian border at Letenye. The first section opened on 1 April 1965 and the carriageways to Balatonaliga and Zamárdi were built by 1975, the last stretch as a semi-motorway. The missing parts were completed between 2002 and 2008, with the Kőröshegy viaduct opening on 8 August 2007 and the border section on 22 October 2008. The M70 branches at Letenye towards Slovenia (21 km, opened 2004–2005, rebuilt as a full motorway on 13 December 2019). Lots follow the hu.wikipedia history and sections table; costs and contractors are given only where a source names them.",
+    "ro": "Cea mai veche autostradă a Ungariei, de la Budapesta pe lângă Székesfehérvár și malul sudic al lacului Balaton până la Nagykanizsa și granița cu Croația la Letenye. Prima secțiune a fost deschisă la 1 aprilie 1965, iar carosabilele până la Balatonaliga și Zamárdi au fost construite până în 1975, ultimul tronson ca semiautostradă. Părțile lipsă au fost finalizate între 2002 și 2008, viaductul Kőröshegy fiind deschis la 8 august 2007 și secțiunea de graniță la 22 octombrie 2008. M70 se desparte la Letenye spre Slovenia (21 km, deschisă în 2004–2005, reconstruită ca autostradă completă la 13 decembrie 2019). Loturile urmează istoricul și tabelul secțiunilor din hu.wikipedia; costurile și constructorii sunt date doar unde o sursă îi numește."
+  },
+  "operator": "hu-nif",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "budapest-torokbalint",
+      "name": {
+        "en": "Budapest (Budaörsi út) – Budaörs – Törökbálint",
+        "ro": "Budapesta (Budaörsi út) – Budaörs – Törökbálint"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1965-04-01"
+      },
+      "lengthKm": 9.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1965-04-01",
+          "note": {
+            "en": "M1–M7 shared Budaörs section opened as far as Törökbálint.",
+            "ro": "Secțiunea comună M1–M7 de la Budaörs deschisă până la Törökbálint."
+          },
+          "sourceRef": "hu-wikipedia-m7"
+        }
+      ],
+      "note": {
+        "en": "First section of the M7, opened on 1 April 1965 as the shared M1–M7 stretch at Budaörs as far as Törökbálint. It was widened in 1977–1978 by one lane per direction in the middle to its present width. Today the M1 leaves at the M1–M7 split near km 12 and shares this section with the M7. Length measured from OpenStreetMap geometry. The drawn line starts where OpenStreetMap carries the M1;M7 reference at Budaörsi út in Budapest.",
+        "ro": "Prima secțiune a M7, deschisă la 1 aprilie 1965 ca tronson comun M1–M7 la Budaörs până la Törökbálint. A fost lărgită în 1977–1978 cu câte o bandă pe sens, pe mijloc, la lățimea actuală. Azi M1 se desparte de M7 la nodul M1–M7 de lângă km 12 și împarte această secțiune cu M7. Lungime măsurată din geometria OpenStreetMap. Linia desenată începe unde OpenStreetMap poartă referința M1;M7 pe Budaörsi út, în Budapesta."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "budapest-torokbalint"
+    },
+    {
+      "id": "torokbalint-balatonaliga",
+      "name": {
+        "en": "Törökbálint – Székesfehérvár – Balatonaliga",
+        "ro": "Törökbálint – Székesfehérvár – Balatonaliga"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1975"
+      },
+      "lengthKm": 76.2,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1966-06-17",
+          "note": {
+            "en": "Left carriageway completed to Martonvásár.",
+            "ro": "Carosabilul stâng finalizat până la Martonvásár."
+          },
+          "sourceRef": "hu-wikipedia-m7"
+        },
+        {
+          "kind": "opened",
+          "date": "1975",
+          "note": {
+            "en": "Right carriageway built 1972–1975, first to Székesfehérvár, then to Aliga (end year of the range).",
+            "ro": "Carosabilul drept construit în 1972–1975, întâi până la Székesfehérvár, apoi până la Aliga (anul final al intervalului)."
+          },
+          "sourceRef": "hu-wikipedia-m7"
+        }
+      ],
+      "note": {
+        "en": "Built in two carriageway stages. The left carriageway reached Martonvásár on 17 June 1966 and Zamárdi by 1971. The right carriageway was built in 1972–1975, first from Törökbálint to Székesfehérvár and then to Aliga. Opened is given as 1975, the last year of that range. The original concrete-slab surface was later asphalted. The Székesfehérvár – Érd stretch has three lanes towards Budapest since 26 June 2008. Length measured from OpenStreetMap geometry. The cut at Balatonaliga is the Balatonvilágos junction.",
+        "ro": "Construită în două etape pe carosabile. Carosabilul stâng a ajuns la Martonvásár la 17 iunie 1966 și la Zamárdi până în 1971. Carosabilul drept a fost construit în 1972–1975, mai întâi de la Törökbálint la Székesfehérvár și apoi până la Aliga. Deschiderea este dată ca 1975, ultimul an al intervalului. Îmbrăcămintea originală din plăci de beton a fost asfaltată ulterior. Tronsonul Székesfehérvár – Érd are trei benzi spre Budapesta din 26 iunie 2008. Lungime măsurată din geometria OpenStreetMap. Limita de la Balatonaliga este nodul Balatonvilágos."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "torokbalint-balatonaliga"
+    },
+    {
+      "id": "balatonaliga-zamardi",
+      "name": {
+        "en": "Balatonaliga – Zamárdi",
+        "ro": "Balatonaliga – Zamárdi"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1971"
+      },
+      "lengthKm": 21.2,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1971",
+          "note": {
+            "en": "Left carriageway to Zamárdi in service as a semi-motorway, one lane per direction.",
+            "ro": "Carosabilul stâng până la Zamárdi în exploatare ca semiautostradă, o bandă pe sens."
+          },
+          "sourceRef": "hu-wikipedia-m7"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2002-11-11",
+          "note": {
+            "en": "Right carriageway opened; the section became a full motorway.",
+            "ro": "Carosabilul drept deschis; secțiunea a devenit autostradă completă."
+          },
+          "sourceRef": "hu-wikipedia-m7"
+        }
+      ],
+      "note": {
+        "en": "The left carriageway was built to Zamárdi by 1971 and served as a semi-motorway with one lane per direction, in effect an expressway, for almost thirty years. It joined the 7 main road at Zamárdi. The missing right carriageway was built from the early 2000s and opened on 11 November 2002, with the existing 90 km expressway renovated and converted into a motorway. hu.wikipedia gives no length for this section. Length measured from OpenStreetMap geometry.",
+        "ro": "Carosabilul stâng a fost construit până la Zamárdi în 1971 și a funcționat aproape treizeci de ani ca semiautostradă cu o bandă pe sens, practic o autostradă expres. Se racorda la drumul principal 7 la Zamárdi. Carosabilul drept lipsă a fost construit de la începutul anilor 2000 și deschis la 11 noiembrie 2002, iar drumul expres existent de 90 km a fost renovat și transformat în autostradă. hu.wikipedia nu dă lungimea acestei secțiuni. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "balatonaliga-zamardi"
+    },
+    {
+      "id": "zamardi-balatonszarszo",
+      "name": {
+        "en": "Zamárdi – Balatonszárszó (Kőröshegy viaduct)",
+        "ro": "Zamárdi – Balatonszárszó (viaductul Kőröshegy)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-08-08"
+      },
+      "lengthKm": 14.2,
+      "contractors": [
+        {
+          "name": "Hídépítő Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "Pont-TERV Zrt.",
+          "role": "designer"
+        }
+      ],
+      "cost": {
+        "actual": {
+          "amount": 76000,
+          "currency": "HUF",
+          "scope": "total",
+          "note": "Cost of the 14.2 km section opened with the viaduct, as stated on hu.wikipedia (76 milliárd forintba került); price year and VAT basis not stated."
+        }
+      },
+      "profile": {
+        "viaductKm": 1.872
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2004-05-07",
+          "note": {
+            "en": "Construction contract for the viaduct signed with the Völgyhíd consortium (Hídépítő Zrt., Strabag Zrt.).",
+            "ro": "Contractul de construcție pentru viaduct semnat cu consorțiul Völgyhíd (Hídépítő Zrt., Strabag Zrt.)."
+          },
+          "sourceRef": "hu-wikipedia-koroshegyi-volgyhid"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-08-08",
+          "sourceRef": "hu-wikipedia-m7"
+        }
+      ],
+      "note": {
+        "en": "Opened on 8 August 2007, closing the last gap in the M7. The section includes the Kőröshegy viaduct (1,872 m, 17 spans, longest span 120 m, up to 88 m high per the article's bridge box) and two smaller viaducts of 300 m and 168 m. The viaduct was designed by Pont-TERV Zrt. and Hídépítő Zrt. and built by the Völgyhíd consortium of Hídépítő Zrt. and Strabag Zrt., under a contract signed on 7 May 2004. The Hungarian State Audit Office put the viaduct construction cost at HUF 51.175 billion; that figure covers the viaduct only. Route choice took from the 1970s to 2003 and the audit office found the decision on the viaduct route not justified on technical, economic, nature-protection or planning grounds.",
+        "ro": "Deschisă la 8 august 2007, închizând ultima lacună din M7. Secțiunea include viaductul Kőröshegy (1.872 m, 17 deschideri, deschiderea maximă 120 m, înălțime până la 88 m conform fișei podului din articol) și două viaducte mai mici de 300 m și 168 m. Viaductul a fost proiectat de Pont-TERV Zrt. și Hídépítő Zrt. și construit de consorțiul Völgyhíd al Hídépítő Zrt. și Strabag Zrt., în baza unui contract semnat la 7 mai 2004. Curtea de Conturi a Ungariei a estimat costul de construcție al viaductului la 51,175 miliarde HUF; cifra acoperă doar viaductul. Alegerea traseului a durat din anii 1970 până în 2003, iar Curtea de Conturi a considerat decizia privind traseul cu viaduct nejustificată tehnic, economic, ecologic și urbanistic."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "hu-wikipedia-koroshegyi-volgyhid",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zamardi-balatonszarszo"
+    },
+    {
+      "id": "balatonszarszo-ordacsehi",
+      "name": {
+        "en": "Balatonszárszó – Ordacsehi",
+        "ro": "Balatonszárszó – Ordacsehi"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-07"
+      },
+      "lengthKm": 20,
+      "note": {
+        "en": "Opened in July 2005, 20 km per the hu.wikipedia sections table; the day is not given.",
+        "ro": "Deschisă în iulie 2005, 20 km conform tabelului secțiunilor din hu.wikipedia; ziua nu este indicată."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "balatonszarszo-ordacsehi"
+    },
+    {
+      "id": "ordacsehi-balatonkeresztur",
+      "name": {
+        "en": "Ordacsehi – Balatonkeresztúr",
+        "ro": "Ordacsehi – Balatonkeresztúr"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-03-27"
+      },
+      "lengthKm": 25.7,
+      "note": {
+        "en": "Opened on 27 March 2006, 25.7 km per the hu.wikipedia sections table.",
+        "ro": "Deschisă la 27 martie 2006, 25,7 km conform tabelului secțiunilor din hu.wikipedia."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ordacsehi-balatonkeresztur"
+    },
+    {
+      "id": "balatonkeresztur-zalakomar",
+      "name": {
+        "en": "Balatonkeresztúr – Zalakomár",
+        "ro": "Balatonkeresztúr – Zalakomár"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-06-26"
+      },
+      "lengthKm": 21,
+      "note": {
+        "en": "Opened on 26 June 2008, 21 km per the hu.wikipedia sections table.",
+        "ro": "Deschisă la 26 iunie 2008, 21 km conform tabelului secțiunilor din hu.wikipedia."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "balatonkeresztur-zalakomar"
+    },
+    {
+      "id": "zalakomar-nagykanizsa",
+      "name": {
+        "en": "Zalakomár – Nagykanizsa",
+        "ro": "Zalakomár – Nagykanizsa"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-08-19"
+      },
+      "lengthKm": 15,
+      "note": {
+        "en": "Opened on 19 August 2008, 15 km per the hu.wikipedia sections table. The cut at Nagykanizsa is the Nagykanizsa-kelet junction.",
+        "ro": "Deschisă la 19 august 2008, 15 km conform tabelului secțiunilor din hu.wikipedia. Limita de la Nagykanizsa este nodul Nagykanizsa-kelet."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zalakomar-nagykanizsa"
+    },
+    {
+      "id": "nagykanizsa-sormas",
+      "name": {
+        "en": "Nagykanizsa bypass – Sormás",
+        "ro": "Ocolitoarea Nagykanizsa – Sormás"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-08-24"
+      },
+      "lengthKm": 11.3,
+      "note": {
+        "en": "Opened on 24 August 2007 as the Nagykanizsa bypass, 11.3 km per the hu.wikipedia sections table. The line drawn between the Nagykanizsa-kelet and Sormás junctions is 12.5 km, about 11% longer than the recorded figure; the recorded figure is kept.",
+        "ro": "Deschisă la 24 august 2007 ca ocolitoare a Nagykanizsa, 11,3 km conform tabelului secțiunilor din hu.wikipedia. Linia desenată între nodurile Nagykanizsa-kelet și Sormás are 12,5 km, cu aproximativ 11% mai mult decât cifra înregistrată; se păstrează cifra înregistrată."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nagykanizsa-sormas"
+    },
+    {
+      "id": "sormas-becsehely",
+      "name": {
+        "en": "Sormás (Eszteregnye) – Becsehely",
+        "ro": "Sormás (Eszteregnye) – Becsehely"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-12-11"
+      },
+      "lengthKm": 4.5,
+      "note": {
+        "en": "Opened on 11 December 2006, 4.5 km per the hu.wikipedia sections table. The line drawn between the Sormás and Becsehely junctions is 5.5 km; the page's kilometre table puts them at km 219 and km 224. The recorded figure is kept.",
+        "ro": "Deschisă la 11 decembrie 2006, 4,5 km conform tabelului secțiunilor din hu.wikipedia. Linia desenată între nodurile Sormás și Becsehely are 5,5 km; tabelul kilometric al paginii le plasează la km 219 și km 224; se păstrează cifra înregistrată."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sormas-becsehely"
+    },
+    {
+      "id": "becsehely-letenye",
+      "name": {
+        "en": "Becsehely – Letenye",
+        "ro": "Becsehely – Letenye"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004-09"
+      },
+      "lengthKm": 6.5,
+      "note": {
+        "en": "Opened in September 2004, 6.5 km per the hu.wikipedia sections table, which cites an origo.hu report; the day is not given. It ends at the M7–M70 junction. The line drawn between the Becsehely junction and the M70 junction is 7.5 km; the recorded figure is kept.",
+        "ro": "Deschisă în septembrie 2004, 6,5 km conform tabelului secțiunilor din hu.wikipedia, care citează un articol origo.hu; ziua nu este indicată. Se termină la nodul M7–M70. Linia desenată între nodul Becsehely și nodul M70 are 7,5 km; se păstrează cifra înregistrată."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "becsehely-letenye"
+    },
+    {
+      "id": "letenye-border",
+      "name": {
+        "en": "Letenye – Croatian border (Zrínyi Bridge)",
+        "ro": "Letenye – granița cu Croația (podul Zrínyi)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-10-22"
+      },
+      "lengthKm": 0.8,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-10-22",
+          "sourceRef": "hu-wikipedia-m7"
+        }
+      ],
+      "note": {
+        "en": "Opened on 22 October 2008, 0.8 km per the hu.wikipedia sections table, including the Zrínyi Bridge over the Mura (216 m). This completed the M7 from Budapest to Letenye and the Croatian border. The line drawn from the M7–M70 junction to the border is 2.2 km, well over the recorded 0.8 km. The page's kilometre table puts the Letenye junction at km 232 and the border at km 233; the recorded figure is kept.",
+        "ro": "Deschisă la 22 octombrie 2008, 0,8 km conform tabelului secțiunilor din hu.wikipedia, inclusiv podul Zrínyi peste Mura (216 m). Cu aceasta M7 a fost finalizată de la Budapesta până la Letenye și granița cu Croația. Linia desenată de la nodul M7–M70 la graniță are 2,2 km, mult peste cei 0,8 km înregistrați. Tabelul kilometric al paginii plasează nodul Letenye la km 232 și granița la km 233; se păstrează cifra înregistrată."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m7",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "letenye-border"
+    },
+    {
+      "id": "m70-letenye-tornyiszentmiklos",
+      "name": {
+        "en": "M70: Letenye (M7 junction) – Tornyiszentmiklós",
+        "ro": "M70: Letenye (nodul M7) – Tornyiszentmiklós"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004-11"
+      },
+      "lengthKm": 18.6,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2004-11",
+          "note": {
+            "en": "Finished as an expressway, one lane per direction.",
+            "ro": "Finalizat ca drum expres, o bandă pe sens."
+          },
+          "sourceRef": "hu-wikipedia-m70"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2019-12-13",
+          "note": {
+            "en": "Opened to traffic as a full motorway with 2x2 lanes and a hard shoulder.",
+            "ro": "Dat în circulație ca autostradă completă cu 2x2 benzi și bandă de urgență."
+          },
+          "sourceRef": "hu-wikipedia-m70"
+        }
+      ],
+      "note": {
+        "en": "Spur of the M7 towards the Slovenian A5. It was finished by November 2004 over 18.6 km as a road with one lane per direction, widened to two lanes only around junctions. In August 2017 it was announced that EuroAszfalt Kft. and Colas Út Zrt. would build the four-laning of 10 km and linked works for HUF 16.7 billion (basis not stated; the article does not say which 10 km). The road reopened as a full motorway with two lanes per direction and a hard shoulder on 13 December 2019. The drawn line is 17.6 km, about 6% shorter than the recorded figure.",
+        "ro": "Ramură a M7 spre autostrada slovenă A5. A fost finalizată până în noiembrie 2004 pe 18,6 km ca drum cu o bandă pe sens, lărgit la două benzi doar în jurul nodurilor. În august 2017 s-a anunțat că EuroAszfalt Kft. și Colas Út Zrt. vor construi lărgirea la patru benzi pe 10 km și lucrările conexe pentru 16,7 miliarde HUF (baza nu este indicată; articolul nu precizează care 10 km). Drumul a fost redeschis ca autostradă completă, cu două benzi pe sens și bandă de urgență, la 13 decembrie 2019. Linia desenată are 17,6 km, cu aproximativ 6% mai puțin decât cifra înregistrată."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m70",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m70-letenye-tornyiszentmiklos"
+    },
+    {
+      "id": "m70-tornyiszentmiklos-border",
+      "name": {
+        "en": "M70: Tornyiszentmiklós – Slovenian border",
+        "ro": "M70: Tornyiszentmiklós – granița cu Slovenia"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005"
+      },
+      "lengthKm": 2,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2005",
+          "note": {
+            "en": "Section to the border handed over in autumn 2005.",
+            "ro": "Secțiunea până la graniță predată în toamna anului 2005."
+          },
+          "sourceRef": "hu-wikipedia-m70"
+        }
+      ],
+      "note": {
+        "en": "Handed over in autumn 2005 together with the border crossing, 2 km, already built with two lanes per direction. The Slovenian continuation opened on 19 August 2008. The drawn line is 2.9 km, longer than the recorded 2 km; the recorded figure is kept.",
+        "ro": "Predată în toamna anului 2005 împreună cu punctul de frontieră, 2 km, deja construită cu două benzi pe sens. Continuarea slovenă a fost deschisă la 19 august 2008. Linia desenată are 2,9 km, mai mult decât cei 2 km înregistrați; se păstrează cifra înregistrată."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m70",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m70-tornyiszentmiklos-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-m7",
+      "title": "Wikipedia (hu): M7-es autópálya (Magyarország), history and sections table",
+      "url": "https://hu.wikipedia.org/wiki/M7-es_aut%C3%B3p%C3%A1lya_(Magyarorsz%C3%A1g)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-m70",
+      "title": "Wikipedia (hu): M70-es autópálya (Magyarország)",
+      "url": "https://hu.wikipedia.org/wiki/M70-es_aut%C3%B3p%C3%A1lya_(Magyarorsz%C3%A1g)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-koroshegyi-volgyhid",
+      "title": "Wikipedia (hu): Kőröshegyi völgyhíd (cites the State Audit Office report of 2008)",
+      "url": "https://hu.wikipedia.org/wiki/K%C5%91r%C3%B6shegyi_v%C3%B6lgyh%C3%ADd",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: motorway ways with ref M7 and M70, via Overpass (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

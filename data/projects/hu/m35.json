@@ -1,0 +1,295 @@
+{
+  "id": "hu-m35",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M35 motorway (Görbeháza – Debrecen – Berettyóújfalu)",
+    "ro": "Autostrada M35 (Görbeháza – Debrecen – Berettyóújfalu)"
+  },
+  "description": {
+    "en": "Motorway from the M3 at Görbeháza past Debrecen to the M4 at Berettyóújfalu, 68.8 km in total. Görbeháza – Debrecen-dél opened in 2006 (the Debrecen bypass in spring, the rest in December), followed by Debrecen-dél – Mikepércs in 2017 and Mikepércs – Berettyóújfalu in 2018. Contract values are net of VAT, from NIF project pages.",
+    "ro": "Autostradă de la M3 la Görbeháza, pe lângă Debrecen, până la M4 la Berettyóújfalu, 68,8 km în total. Görbeháza – Debrecen-dél a fost deschis în 2006 (ocolitoarea Debrecenului în primăvară, restul în decembrie), urmat de Debrecen-dél – Mikepércs în 2017 și Mikepércs – Berettyóújfalu în 2018. Valorile contractelor sunt fără TVA, din paginile de proiect NIF."
+  },
+  "operator": "hu-nif",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "gorbehaza-debrecen-eszak",
+      "name": {
+        "en": "Görbeháza (M3) – Debrecen-észak",
+        "ro": "Görbeháza (M3) – Debrecen-nord"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-12-15"
+      },
+      "lengthKm": 36.6,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2006-12-15",
+          "sourceRef": "nif-m35-2006-opening"
+        }
+      ],
+      "note": {
+        "en": "NIF names this stretch Görbeháza – Debrecen (35 km) and opened it on 15 December 2006; it also gives the tolled part of the motorway as km 0 to 36.6, and 36.6 km is used here. The Debrecen bypass beyond it is the next lot. NIF records a construction contract signed on 19 October 2004 with STRABAG Rt., design by UVATERV Rt. and supervision by FŐBER Rt., with a completion deadline of 30 November 2006; the release lists these once for the whole motorway, does not say which section the contract covers and gives no value. The M3 junction at Görbeháza belongs to the M3 project.",
+        "ro": "NIF denumește acest sector Görbeháza – Debrecen (35 km) și l-a deschis la 15 decembrie 2006; indică și partea cu taxă a autostrăzii ca km 0–36,6, iar aici se folosește 36,6 km. Ocolitoarea Debrecenului de după el este lotul următor. NIF înregistrează un contract de construcție semnat la 19 octombrie 2004 cu STRABAG Rt., proiectare UVATERV Rt. și supervizare FŐBER Rt., cu termen de finalizare 30 noiembrie 2006; comunicatul le menționează o singură dată pentru întreaga autostradă, nu spune ce secțiune acoperă contractul și nu indică o valoare. Nodul M3 de la Görbeháza aparține proiectului M3."
+      },
+      "sourceRefs": [
+        "nif-m35-2006-opening",
+        "hu-wikipedia-m35",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gorbehaza-debrecen-eszak",
+      "contractors": [
+        {
+          "name": "STRABAG Rt.",
+          "role": "builder"
+        },
+        {
+          "name": "UVATERV Rt.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "debrecen-bypass",
+      "name": {
+        "en": "Debrecen bypass (Debrecen-észak – Debrecen-dél)",
+        "ro": "Ocolitoarea Debrecenului (Debrecen-nord – Debrecen-sud)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-04"
+      },
+      "lengthKm": 7.4,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2006-04",
+          "sourceRef": "en-wikipedia-m35"
+        }
+      ],
+      "note": {
+        "en": "The Debrecen bypass was the second design section, with its building permit dated 16 December 2003, and NIF says it opened to traffic in spring 2006; en.wikipedia gives April 2006. The exact day is not in the sources found. Length is 44.0 km (en.wikipedia, Görbeháza – Debrecen-dél) minus 36.6 km (NIF km post for the first stretch). The drawn OpenStreetMap line is 6.4 km. NIF does not say which contractor built it.",
+        "ro": "Ocolitoarea Debrecenului a fost a doua secțiune de proiectare, cu autorizația de construire din 16 decembrie 2003, iar NIF spune că a fost dată în trafic în primăvara lui 2006; en.wikipedia indică aprilie 2006. Ziua exactă nu apare în sursele găsite. Lungimea este 44,0 km (en.wikipedia, Görbeháza – Debrecen-dél) minus 36,6 km (borna kilometrică NIF a primului sector). Linia OpenStreetMap desenată este de 6,4 km. NIF nu spune ce constructor a executat-o."
+      },
+      "sourceRefs": [
+        "nif-m35-2006-opening",
+        "en-wikipedia-m35",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "debrecen-bypass"
+    },
+    {
+      "id": "debrecen-del-mikepercs",
+      "name": {
+        "en": "Debrecen-dél (Route 4) – Mikepércs (Route 481)",
+        "ro": "Debrecen-dél (drumul 4) – Mikepércs (drumul 481)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016",
+        "constructionStart": "2016-05",
+        "opened": "2017-12-13"
+      },
+      "lengthKm": 5.43,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 17237.47,
+              "currency": "HUF",
+              "year": 2016,
+              "note": "Net of VAT."
+            },
+            "date": "2016",
+            "sourceRef": "nif-m35-i-utem"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2016-05",
+          "sourceRef": "hu-wikipedia-m35"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-13",
+          "sourceRef": "nif-m35-i-utem"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Project IKOP-1.1.0-15-2016-00010, shared with the Mikepércs – Berettyóújfalu lot and the Route 481 link. NIF gives support of HUF 70.32 bn at 97.39% on the phase I page and HUF 72.75 bn at 85% EU and 15% national funding on the phase II page.",
+            "ro": "Proiectul IKOP-1.1.0-15-2016-00010, comun cu lotul Mikepércs – Berettyóújfalu și legătura drumului 481. NIF indică o finanțare de 70,32 mld. HUF la 97,39% pe pagina fazei I și de 72,75 mld. HUF, 85% fonduri UE și 15% naționale, pe pagina fazei II."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Colas Hungária Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "Colas Út Zrt.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 17237.47,
+          "currency": "HUF",
+          "year": 2016,
+          "note": "Net of VAT."
+        }
+      },
+      "note": {
+        "en": "Phase I of the Debrecen – Berettyóújfalu extension: 2x2 lanes with hard shoulder, junctions with Route 4 and Route 481 and 3 bridges. Built by the Colas Hungária – Colas Út consortium for a net HUF 17.2 bn; the NIF page gives HUF 17,237,474,262. The signing date is not given, so the award is dated 2016, and the construction start is from hu.wikipedia (May 2016). Opened to traffic on 13 December 2017. The Route 481 link built under the same project (5.5 km, STR Építő Kft., HUF 4.9 bn) is not part of the motorway and is not recorded here. The drawn OpenStreetMap line between the two junction nodes is 4.7 km against the sourced 5.43 km.",
+        "ro": "Faza I a extinderii Debrecen – Berettyóújfalu: 2x2 benzi cu bandă de urgență, noduri cu drumurile 4 și 481 și 3 poduri. Construită de consorțiul Colas Hungária – Colas Út pentru 17,2 mld. HUF net; pagina NIF indică 17.237.474.262 HUF. Data semnării nu este indicată, deci atribuirea este datată 2016, iar începutul lucrărilor provine de la hu.wikipedia (mai 2016). Deschis traficului la 13 decembrie 2017. Legătura drumului 481 construită în același proiect (5,5 km, STR Építő Kft., 4,9 mld. HUF) nu face parte din autostradă și nu este înregistrată aici. Linia OpenStreetMap desenată între cele două noduri este de 4,7 km, față de 5,43 km din sursă."
+      },
+      "sourceRefs": [
+        "nif-m35-i-utem",
+        "nif-m35-2017-opening",
+        "hu-wikipedia-m35",
+        "en-wikipedia-m35",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "debrecen-del-mikepercs"
+    },
+    {
+      "id": "mikepercs-berettyoujfalu",
+      "name": {
+        "en": "Mikepércs (Route 481) – Berettyóújfalu (M4)",
+        "ro": "Mikepércs (drumul 481) – Berettyóújfalu (M4)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016",
+        "opened": "2018-12-20"
+      },
+      "lengthKm": 18.74,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 46990.61,
+              "currency": "HUF",
+              "year": 2016,
+              "note": "Net of VAT."
+            },
+            "date": "2016",
+            "sourceRef": "nif-m35-ii-utem"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2018-12-20",
+          "sourceRef": "nif-m35-ii-utem"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Project IKOP-1.1.0-15-2016-00010. NIF gives support of HUF 72.75 bn for phase II, 85% EU and 15% national funding.",
+            "ro": "Proiectul IKOP-1.1.0-15-2016-00010. NIF indică o finanțare de 72,75 mld. HUF pentru faza II, 85% fonduri UE și 15% naționale."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hódút Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 46990.61,
+          "currency": "HUF",
+          "year": 2016,
+          "note": "Net of VAT."
+        }
+      },
+      "note": {
+        "en": "Phase II of the Debrecen – Berettyóújfalu extension: 18.74 km of 2x2 lanes with hard shoulder, one grade-separated junction with Route 4816 (Derecske) and two rest areas. Built by the Hódút – Duna Aszfalt consortium; the NIF project page gives a net contract value of HUF 46,990,610,185, and the 2018 release gives net HUF 46.9 bn for M35 phase II and HUF 15.2 bn for the first phase of M4. The signing date is not given, so the award is dated 2016; the foundation stone was laid in summer 2016. Opened on 20 December 2018, free of charge until 31 December 2018. The M4 junction at Berettyóújfalu and the M4 section to the border are other projects; M4 is not recorded in this repository.",
+        "ro": "Faza II a extinderii Debrecen – Berettyóújfalu: 18,74 km cu 2x2 benzi și bandă de urgență, un nod denivelat cu drumul 4816 (Derecske) și două zone de odihnă. Construită de consorțiul Hódút – Duna Aszfalt; pagina de proiect NIF indică o valoare netă a contractului de 46.990.610.185 HUF, iar comunicatul din 2018 indică 46,9 mld. HUF net pentru faza II a M35 și 15,2 mld. HUF pentru prima fază a M4. Data semnării nu este indicată, deci atribuirea este datată 2016; piatra de temelie a fost pusă în vara lui 2016. Deschis la 20 decembrie 2018, gratuit până la 31 decembrie 2018. Nodul M4 de la Berettyóújfalu și secțiunea M4 până la frontieră sunt alte proiecte; M4 nu este înregistrat în acest depozit."
+      },
+      "sourceRefs": [
+        "nif-m35-ii-utem",
+        "nif-m35-2018-opening",
+        "hu-wikipedia-m35",
+        "hu-wikipedia-autopalyak",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mikepercs-berettyoujfalu"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-m35",
+      "title": "Wikipedia (hu): M35-ös autópálya (Magyarország)",
+      "url": "https://hu.wikipedia.org/wiki/M35-%C3%B6s_aut%C3%B3p%C3%A1lya_(Magyarorsz%C3%A1g)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "en-wikipedia-m35",
+      "title": "Wikipedia (en): M35 motorway (Hungary), timeline table",
+      "url": "https://en.wikipedia.org/wiki/M35_motorway_(Hungary)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-autopalyak",
+      "title": "Wikipedia (hu): Magyarország autópályái, section opening table",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_aut%C3%B3p%C3%A1ly%C3%A1i",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m35-2006-opening",
+      "title": "NIF: M35-ös autópálya ünnepélyes átadása, 2006. december 15. (Internet Archive copy)",
+      "url": "http://web.archive.org/web/2025/https://nif.hu/2006/12/m35-os-autopalya-unnepelyes-atadasa-2006-december-15/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m35-i-utem",
+      "title": "NIF project page: M35 autópálya (I. ütem) 4. sz. főút-481. sz. főút közötti szakasz (Internet Archive copy)",
+      "url": "http://web.archive.org/web/2025/https://archivum.nif.hu/projektek/2016/07/m35-autopalya-i-utem/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m35-ii-utem",
+      "title": "NIF project page: M35 autópálya (II. ütem) 481. sz. főút – Berettyóújfalu közötti szakasz (Internet Archive copy)",
+      "url": "http://web.archive.org/web/2025/https://archivum.nif.hu/projektek/2016/06/m35-autopalya-ii-utem-481-sz-fout-berettyoujfalu-kozotti-szakasz/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m35-2017-opening",
+      "title": "NIF: Átadták a forgalomnak az M35 autópálya 4. sz. főút – 481. sz. főút közötti szakaszát (Internet Archive copy)",
+      "url": "http://web.archive.org/web/2025/https://archivum.nif.hu/2017/12/atadtak-a-forgalomnak-az-m35-autopalya-4-sz-fout-481-sz-fout-kozotti-szakaszat-valamint-a-481-sz-foutat/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m35-2018-opening",
+      "title": "NIF: Két új autópálya-szakaszt adtak át Hajdú-Bihar megyében (Internet Archive copy)",
+      "url": "http://web.archive.org/web/2025/https://archivum.nif.hu/2018/12/ket-uj-autopalya-szakaszt-adtak-at-hajdu-bihar-megyeben/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: motorway ways with ref M35, via Overpass (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

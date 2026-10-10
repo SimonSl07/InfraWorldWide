@@ -1,0 +1,539 @@
+{
+  "id": "hu-m0",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M0 Budapest ring road",
+    "ro": "Centura Budapestei M0"
+  },
+  "description": {
+    "en": "Budapest's ring road, drawn from the M1 interchange at Budaörs round the south, east and north to Road 11 at Békásmegyer: about 78 km open, 108 km planned. The south sector (M1 – M5) opened in 1990 and 1994 as a 2x2 road without hard shoulders, and the link from Road 51 to the M5 followed in 2013. The east sector (M5 – M3) opened in 2005 and 2008, and the north sector (M3 – Road 11) in 1999 and 2008, the latter with the Megyeri Bridge over the Danube. Lots follow the section table on hu.wikipedia, checked against NIF project pages and press releases. The 2012–2015 widening of the south sector to 2x3 lanes reworks road that was already open, so it is described in the lot notes and adds no length. The 1988 stretch between Road 51 and the M5 is now the M51 and is not part of this project. The west sector between the M1 and Road 11 is unbuilt; its two lots are drawn only where OpenStreetMap maps a proposed route.",
+    "ro": "Centura Budapestei, desenată de la nodul M1 de la Budaörs, prin sud, est și nord, până la drumul 11 la Békásmegyer: circa 78 km deschiși din 108 km planificați. Sectorul sudic (M1 – M5) a fost deschis în 1990 și 1994 ca drum 2x2 fără benzi de urgență, iar legătura dintre drumul 51 și M5 a urmat în 2013. Sectorul estic (M5 – M3) a fost deschis în 2005 și 2008, iar cel nordic (M3 – drumul 11) în 1999 și 2008, acesta din urmă cu podul Megyeri peste Dunăre. Loturile urmează tabelul secțiunilor de pe hu.wikipedia, verificat cu fișele de proiect și comunicatele NIF. Lărgirea sectorului sudic la 2x3 benzi din 2012–2015 reface un drum deja deschis, deci este descrisă în notele loturilor și nu adaugă lungime. Tronsonul din 1988 dintre drumul 51 și M5 este acum M51 și nu face parte din acest proiect. Sectorul vestic dintre M1 și drumul 11 nu este construit; cele două loturi ale sale sunt desenate doar acolo unde OpenStreetMap cartografiază un traseu propus."
+  },
+  "operator": "hu-nif",
+  "lots": [
+    {
+      "id": "m1-route6",
+      "name": {
+        "en": "South sector: M1 – Road 6",
+        "ro": "Sectorul sud: M1 – drumul 6"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1994-05-03"
+      },
+      "lengthKm": 13.9,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1994-05-03",
+          "sourceRef": "hu-wikipedia-motorways"
+        }
+      ],
+      "note": {
+        "en": "Chainage km 0–13.9 (M1 to Road 6), opened 3 May 1994 as a 2x2 road. Widened to 2x3 lanes in two steps: M1 km 2.84 – M6 (6.56 km, Colas Hungária Zrt., net contract HUF 11.11 billion), opened 19 June 2012, and M1 – M7 (2.725 km, Betonútépítő Zrt., net contract HUF 6.38 billion), opened 23 November 2015. The M6 – Road 51 widening of 2013 also covers the part of this lot east of the M6 junction.",
+        "ro": "Kilometraj km 0–13,9 (de la M1 la drumul 6), deschis la 3 mai 1994 ca drum 2x2. Lărgit la 2x3 benzi în două etape: M1 km 2,84 – M6 (6,56 km, Colas Hungária Zrt., contract net de 11,11 miliarde HUF), deschis la 19 iunie 2012, și M1 – M7 (2,725 km, Betonútépítő Zrt., contract net de 6,38 miliarde HUF), deschis la 23 noiembrie 2015. Lărgirea M6 – drumul 51 din 2013 acoperă și partea acestui lot situată la est de nodul M6."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-motorways",
+        "hu-wikipedia-m0",
+        "nif-project-m0-m1-m6",
+        "nif-project-m0-m1-m7",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m1-route6"
+    },
+    {
+      "id": "route6-route51",
+      "name": {
+        "en": "South sector: Road 6 – Road 51",
+        "ro": "Sectorul sud: drumul 6 – drumul 51"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1990-11-16"
+      },
+      "lengthKm": 9.3,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1990-11-16",
+          "sourceRef": "hu-wikipedia-motorways"
+        }
+      ],
+      "note": {
+        "en": "Chainage km 13.9–23.2, the first part of the ring that is still on the M0, opened 16 November 1990 as a 2x2 road. It includes the Deák Ferenc Bridge over the Danube (770 m) and the Soroksár bridge over the Ráckeve Danube branch (499 m). Widened to 2x3 lanes between the M6 junction and Road 51 (11.06 km, M-0 déli ág II. Konzorcium, net contract HUF 37.03 billion), opened 30 June 2013.",
+        "ro": "Kilometraj km 13,9–23,2, prima parte a centurii aflată și astăzi pe M0, deschisă la 16 noiembrie 1990 ca drum 2x2. Include podul Deák Ferenc peste Dunăre (770 m) și podul Soroksár peste brațul Ráckeve al Dunării (499 m). Lărgit la 2x3 benzi între nodul M6 și drumul 51 (11,06 km, M-0 déli ág II. Konzorcium, contract net de 37,03 miliarde HUF), deschis la 30 iunie 2013."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-motorways",
+        "hu-wikipedia-m0",
+        "nif-project-m0-m6-51",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "route6-route51"
+    },
+    {
+      "id": "route51-m5",
+      "name": {
+        "en": "South sector: Road 51 – M5 (new alignment)",
+        "ro": "Sectorul sud: drumul 51 – M5 (traseu nou)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-07-27",
+        "constructionStart": "2009-09-14",
+        "opened": "2013-08-31"
+      },
+      "lengthKm": 6.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 11757.76,
+              "currency": "HUF",
+              "year": 2009,
+              "scope": "works",
+              "note": "Excluding VAT (\"11.757.757.695,- Ft + ÁFA\")."
+            },
+            "date": "2009-07-27",
+            "sourceRef": "euroaszfalt-m0-51-m5"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 6,
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-07-27",
+          "note": {
+            "en": "Construction contract signed with the EMWL consortium.",
+            "ro": "Contractul de construcție semnat cu consorțiul EMWL."
+          },
+          "sourceRef": "euroaszfalt-m0-51-m5"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-09-14",
+          "note": {
+            "en": "Site handed over to the contractor.",
+            "ro": "Amplasamentul predat constructorului."
+          },
+          "sourceRef": "euroaszfalt-m0-51-m5"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-08-31",
+          "note": {
+            "en": "Provisional opening to traffic; handover of the remaining works on 24 April 2014.",
+            "ro": "Deschidere provizorie la trafic; recepția lucrărilor rămase la 24 aprilie 2014."
+          },
+          "sourceRef": "euroaszfalt-m0-51-m5"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "NIF: \"A beruházást az Európai Unió és a magyar állam támogatja\" (supported by the European Union and the Hungarian state); no programme or share is given.",
+            "ro": "NIF: proiectul este sprijinit de Uniunea Europeană și de statul maghiar; nu se indică programul sau ponderea."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "EMWL Autópálya Konzorcium (EuroAszfalt Kft., Lavinamix Kft., MAHÍD 2000 Zrt., W-MIX Kft.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 11757.76,
+          "currency": "HUF",
+          "year": 2009,
+          "scope": "works",
+          "note": "Excluding VAT (\"11.757.757.695,- Ft + ÁFA\")."
+        }
+      },
+      "note": {
+        "en": "Chainage km 23.2–29.5, a new 2x3 alignment that links the older south sector to the east sector and cut the route by 4.2 km. Before it opened, the M0 ran from Road 51 to the M5 along the 1988 road that is now the M51, and the east sector began on the M5. The M51 name was applied on 31 August 2013.",
+        "ro": "Kilometraj km 23,2–29,5, traseu nou 2x3 care leagă sectorul sudic mai vechi de cel estic și a scurtat ruta cu 4,2 km. Înainte de deschidere, M0 mergea de la drumul 51 la M5 pe drumul din 1988 care este acum M51, iar sectorul estic începea pe M5. Denumirea M51 a fost aplicată la 31 august 2013."
+      },
+      "sourceRefs": [
+        "euroaszfalt-m0-51-m5",
+        "nif-project-m0-51-m5",
+        "hu-wikipedia-motorways",
+        "hu-wikipedia-m0",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "route51-m5"
+    },
+    {
+      "id": "m5-m4",
+      "name": {
+        "en": "East sector: M5 – M4",
+        "ro": "Sectorul est: M5 – M4"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-12-17"
+      },
+      "lengthKm": 12.7,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2005-12-17",
+          "sourceRef": "nif-2005-m0-m5-m4"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "STRABAG Rt.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Chainage km 29.5–42.2, opened 17 December 2005 together with the 12.5 km Vecsés–Üllő bypass of Road 4. NIF says both sections took 17 months to build and that Strabag built the section; the release gives HUF 33.8 billion and HUF 12.5 billion without saying clearly which road each covers, so no cost is recorded. hu.wikipedia says the M5 – M3 stretch has concrete pavement.",
+        "ro": "Kilometraj km 29,5–42,2, deschis la 17 decembrie 2005 împreună cu ocolitoarea Vecsés–Üllő a drumului 4 (12,5 km). NIF precizează că ambele sectoare au necesitat 17 luni de construcție și că sectorul a fost construit de Strabag; comunicatul indică 33,8 și 12,5 miliarde HUF fără să spună clar la ce drum se referă fiecare, deci nu se înregistrează niciun cost. Potrivit hu.wikipedia, tronsonul M5 – M3 are îmbrăcăminte din beton."
+      },
+      "sourceRefs": [
+        "nif-2005-m0-m5-m4",
+        "hu-wikipedia-motorways",
+        "en-wikipedia-m0",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m5-m4"
+    },
+    {
+      "id": "m4-m3",
+      "name": {
+        "en": "East sector: M4 – M3",
+        "ro": "Sectorul est: M4 – M3"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-09-16"
+      },
+      "lengthKm": 26.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-09-16",
+          "sourceRef": "hu-wikipedia-motorways"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "NIF, March 2006: EU Cohesion Fund support of 85% within a EUR 284 million investment budget; the winning tenders left room for the 12 km M31 from the same budget.",
+            "ro": "NIF, martie 2006: sprijin din Fondul de coeziune al UE de 85% în cadrul unui buget de investiții de 284 milioane EUR; ofertele câștigătoare au lăsat loc pentru M31 (12 km) din același buget."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PVT-M0 Konzorcium (Porr Technobau und Umwelt AG Magyarországi Fióktelepe, Viadom Építőipari Zrt., Teerag-Asdag AG)",
+          "role": "builder"
+        },
+        {
+          "name": "\"ED\"-M0 Közös Vállalkozás",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Chainage km 42.2–68.7, opened 16 September 2008. NIF announced the start of construction on 13 March 2006 and planned completion for the end of 2007. The release names the \"ED\"-M0 joint venture for the stretch between Road 3 and the M3, and PVT-M0 for the second and third sub-sections (6.7 km and 10.9 km); the first sub-section is not named in the text. The client was Nemzeti Autópálya Zrt. The EUR 284 million is a budget, not an outturn, so no cost is recorded.",
+        "ro": "Kilometraj km 42,2–68,7, deschis la 16 septembrie 2008. NIF a anunțat începerea construcției la 13 martie 2006 și finalizarea planificată pentru sfârșitul lui 2007. Comunicatul menționează asocierea \"ED\"-M0 pentru tronsonul dintre drumul 3 și M3 și PVT-M0 pentru al doilea și al treilea subtronson (6,7 km și 10,9 km); primul subtronson nu este numit în text. Beneficiar: Nemzeti Autópálya Zrt. Cele 284 milioane EUR sunt un buget, nu un cost final, deci nu se înregistrează niciun cost."
+      },
+      "sourceRefs": [
+        "nif-2006-m0-east",
+        "hu-wikipedia-motorways",
+        "en-wikipedia-m0",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m4-m3"
+    },
+    {
+      "id": "m3-m2",
+      "name": {
+        "en": "North sector: M3 – M2",
+        "ro": "Sectorul nord: M3 – M2"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1999-06-16"
+      },
+      "lengthKm": 2.89,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1999-06-16",
+          "sourceRef": "hu-wikipedia-motorways"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Unitef '83",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Table chainage km 69.65–72.54. Opened 16 June 1999 as a 2x2 road with a median and hard shoulders, with five junctions on the M3 – Road 2 stretch. Unitef '83 made the design phases for the M3 – Road 11 sector. hu.wikipedia's M0 article gives 1998 for the M3 – Road 2 opening; the section table, which cites 1999 press, is followed here.",
+        "ro": "Kilometraj din tabel km 69,65–72,54. Deschis la 16 iunie 1999 ca drum 2x2 cu separator median și benzi de urgență, cu cinci noduri pe tronsonul M3 – drumul 2. Unitef '83 a realizat fazele de proiectare pentru sectorul M3 – drumul 11. Articolul hu.wikipedia despre M0 indică 1998 pentru deschiderea M3 – drumul 2; aici se urmează tabelul secțiunilor, care citează presa din 1999."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-motorways",
+        "hu-wikipedia-m0",
+        "unitef-m0-north",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m3-m2"
+    },
+    {
+      "id": "m2-route2",
+      "name": {
+        "en": "North sector: M2 – Road 2",
+        "ro": "Sectorul nord: M2 – drumul 2"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1999-10-29"
+      },
+      "lengthKm": 3.06,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1999-10-29",
+          "sourceRef": "hu-wikipedia-motorways"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Unitef '83",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Table chainage km 72.54–75.6. Opened 29 October 1999 as a 2x2 road, the continuation of the M3 – M2 lot. The two lots were known as Roads 2/B and 2/A before the ring was joined up.",
+        "ro": "Kilometraj din tabel km 72,54–75,6. Deschis la 29 octombrie 1999 ca drum 2x2, continuarea lotului M3 – M2. Cele două loturi au fost cunoscute ca drumurile 2/B și 2/A înainte ca inelul să fie închis."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-motorways",
+        "en-wikipedia-m0",
+        "unitef-m0-north",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m2-route2"
+    },
+    {
+      "id": "route2-route11",
+      "name": {
+        "en": "North sector: Road 2 – Road 11 (Megyeri Bridge)",
+        "ro": "Sectorul nord: drumul 2 – drumul 11 (podul Megyeri)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006",
+        "opened": "2008-09-30"
+      },
+      "lengthKm": 3.874,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "viaductKm": 1.861
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006",
+          "note": {
+            "en": "Construction began with preparatory works; a flood wave destroyed much of this early work.",
+            "ro": "Construcția a început cu lucrări pregătitoare; o viitură a distrus o mare parte din aceste lucrări."
+          },
+          "sourceRef": "hu-wikipedia-megyeri"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-09-30",
+          "sourceRef": "hu-wikipedia-motorways"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "M0 Északi Duna-híd konzorcium (Hídépítő Zrt. 60%, Strabag Építő Zrt. 40%)",
+          "role": "builder"
+        },
+        {
+          "name": "Unitef '83",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Table chainage km 72.835–76.709, opened 30 September 2008. The Megyeri Bridge between Újpest and Budakalász (km 74.526–76.387, 1861.35 m, five bridges and nine structures, designed by Unitef-Céh Kkt.) is inside this lot and is entered as its viaduct length; the consortium named is the bridge's builder. It was handed over on 30 September 2008 and went into traffic on provisional permits, built for 2 x 2 lanes with room for 2 x 3. hu.wikipedia gives HUF 63 billion as the bridge's total construction cost, with no price year or VAT basis; it covers the bridge, not the whole lot, so no cost is recorded. The drawn centreline is about 15% shorter than the tabled length: it starts at the OpenStreetMap node of the Road 2 junction and ends where the westbound carriageway ends.",
+        "ro": "Kilometraj din tabel km 72,835–76,709, deschis la 30 septembrie 2008. Podul Megyeri dintre Újpest și Budakalász (km 74,526–76,387, 1861,35 m, cinci poduri și nouă structuri, proiectat de Unitef-Céh Kkt.) se află în acest lot și este înregistrat ca lungime de viaduct; consorțiul menționat este constructorul podului. A fost predat la 30 septembrie 2008 și a intrat în trafic pe baza unor autorizații provizorii, construit pentru 2 x 2 benzi, cu loc pentru 2 x 3. hu.wikipedia indică 63 miliarde HUF drept cost total de construcție al podului, fără an al prețurilor sau regim TVA; cifra acoperă podul, nu întregul lot, deci nu se înregistrează niciun cost. Axul desenat este cu circa 15% mai scurt decât lungimea din tabel: începe la nodul OpenStreetMap al intersecției cu drumul 2 și se termină unde se termină banda spre vest."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-motorways",
+        "hu-wikipedia-megyeri",
+        "hu-wikipedia-m0",
+        "unitef-m0-north",
+        "osm-relation-m0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "route2-route11"
+    },
+    {
+      "id": "west-route11-route10",
+      "name": {
+        "en": "West sector: Road 11 – Road 10 (planned)",
+        "ro": "Sectorul vest: drumul 11 – drumul 10 (planificat)"
+      },
+      "status": "planned",
+      "lengthKm": 9,
+      "note": {
+        "en": "en.wikipedia: the 9 km section between Highway 11 and Highway 10 is planned but construction is not scheduled. The drawn line is OpenStreetMap's proposed route (relation \"M0 északnyugati szektor Plan-A\"), 7.3 km between the Road 11 end and the Road 10 crossing, so about 19% shorter than the stated length. The planning table on hu.wikipedia gives 8.040 km for the same section, against 7.346 km between its chainage points (km 76.709 and 84.055); the drawn line starts about 0.5 km west of the end of the Road 2 – Road 11 lot. hu.wikipedia says design of the west sector began in 2018 and the project came off the agenda early the next year; it also gives an estimate of nearly HUF 400 billion for the whole west sector, with no price year.",
+        "ro": "en.wikipedia: sectorul de 9 km dintre drumul 11 și drumul 10 este planificat, dar construcția nu este programată. Linia desenată este traseul propus din OpenStreetMap (relația \"M0 északnyugati szektor Plan-A\"), 7,3 km între capătul de la drumul 11 și intersecția cu drumul 10, deci cu circa 19% mai scurtă decât lungimea indicată. Tabelul de planificare de pe hu.wikipedia indică 8,040 km pentru același sector, față de 7,346 km între punctele sale kilometrice (km 76,709 și 84,055); linia desenată începe la circa 0,5 km vest de capătul lotului drumul 2 – drumul 11. hu.wikipedia precizează că proiectarea sectorului vestic a început în 2018 și că proiectul a fost scos de pe agendă la începutul anului următor; indică și o estimare de aproape 400 miliarde HUF pentru întregul sector vestic, fără an al prețurilor."
+      },
+      "sourceRefs": [
+        "en-wikipedia-m0",
+        "hu-wikipedia-m0",
+        "osm-relation-m0-nw-plan",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "west-route11-route10"
+    },
+    {
+      "id": "west-route10-m1",
+      "name": {
+        "en": "West sector: Road 10 – M1 (planned)",
+        "ro": "Sectorul vest: drumul 10 – M1 (planificat)"
+      },
+      "status": "planned",
+      "lengthKm": 18,
+      "note": {
+        "en": "en.wikipedia: the 18 km remaining section between Highway 10 and the oldest part of the M0 at the M1 interchange. The drawn line is OpenStreetMap's proposed route (relation \"M0 északnyugati szektor Plan-A\"), 18.3 km from the Road 10 crossing to the end of the built M0 near the M1. The west sector is mostly tunnel and viaduct, per the junction table on hu.wikipedia (planned tunnels of 2020 m and 3190 m). It is not on the Trans-European network, so it would need national funding, according to hu.wikipedia.",
+        "ro": "en.wikipedia: sectorul rămas de 18 km dintre drumul 10 și cea mai veche parte a M0, la nodul M1. Linia desenată este traseul propus din OpenStreetMap (relația \"M0 északnyugati szektor Plan-A\"), 18,3 km de la intersecția cu drumul 10 până la capătul M0 construit, lângă M1. Sectorul vestic ar fi în cea mai mare parte tunel și viaduct, conform tabelului de noduri de pe hu.wikipedia (tuneluri planificate de 2020 m și 3190 m). Nu face parte din rețeaua transeuropeană, deci ar necesita finanțare națională, potrivit hu.wikipedia."
+      },
+      "sourceRefs": [
+        "en-wikipedia-m0",
+        "hu-wikipedia-m0",
+        "osm-relation-m0-nw-plan",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "west-route10-m1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-motorways",
+      "title": "Wikipedia (hu): Magyarország autópályái, chronological table of sections (M0 rows)",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_aut%C3%B3p%C3%A1ly%C3%A1i",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-m0",
+      "title": "Wikipedia (hu): M0-s autóút (Magyarország)",
+      "url": "https://hu.wikipedia.org/wiki/M0-s_aut%C3%B3%C3%BAt_(Magyarorsz%C3%A1g)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "en-wikipedia-m0",
+      "title": "Wikipedia (en): M0 motorway",
+      "url": "https://en.wikipedia.org/wiki/M0_motorway",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-megyeri",
+      "title": "Wikipedia (hu): Megyeri híd",
+      "url": "https://hu.wikipedia.org/wiki/Megyeri_h%C3%ADd",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-2005-m0-m5-m4",
+      "title": "NIF press release: 13 kilométerrel hosszabb az M0 körgyűrű! (17 December 2005)",
+      "url": "https://archivum.nif.hu/2005/12/13-kilometerrel-hosszabb-az-m0-korgyuru/",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2025/https://archivum.nif.hu/2005/12/13-kilometerrel-hosszabb-az-m0-korgyuru/"
+    },
+    {
+      "id": "nif-2006-m0-east",
+      "title": "NIF press release: Indul az M0 keleti szektorának építése (13 March 2006)",
+      "url": "https://archivum.nif.hu/2006/03/indul-az-m0-keleti-szektoranak-epitese/",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2025/https://archivum.nif.hu/2006/03/indul-az-m0-keleti-szektoranak-epitese/"
+    },
+    {
+      "id": "nif-project-m0-51-m5",
+      "title": "NIF project page: M0 déli szektor 51. sz. főút-M5 autópálya közötti szakasz kiépítése",
+      "url": "https://archivum.nif.hu/projektek/2015/10/m0-autopalya-deli-szektor-51-sz-fput-m5-autopalya-kozotti-2x3-savos-szakasza/",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2025/https://archivum.nif.hu/projektek/2015/10/m0-autopalya-deli-szektor-51-sz-fput-m5-autopalya-kozotti-2x3-savos-szakasza/"
+    },
+    {
+      "id": "nif-project-m0-m1-m6",
+      "title": "NIF project page: M0 autópálya déli szektor M1-M6 autópályák közötti szakaszának bal pálya, valamint csatlakozó létesítményei kivitelezési munkái",
+      "url": "https://archivum.nif.hu/projektek/2015/10/m0-autopalya-deli-szektor-m1-m6-autopalyak-kozotti-szakaszanak-bal-palya-valamint-csatlakozo-letesitmenyei-kivitelezesi-munkai/",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2025/https://archivum.nif.hu/projektek/2015/10/m0-autopalya-deli-szektor-m1-m6-autopalyak-kozotti-szakaszanak-bal-palya-valamint-csatlakozo-letesitmenyei-kivitelezesi-munkai/"
+    },
+    {
+      "id": "nif-project-m0-m6-51",
+      "title": "NIF project page: M0 déli szektor bővítése az M6 AP és az 51. sz. főút között",
+      "url": "https://archivum.nif.hu/projektek/2015/10/m0-deli-szektor-bovitese-az-m6-ap-es-az-51-sz-fout-kozott-ews-kapcsolodo-letesitmenyei/",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2025/https://archivum.nif.hu/projektek/2015/10/m0-deli-szektor-bovitese-az-m6-ap-es-az-51-sz-fout-kozott-ews-kapcsolodo-letesitmenyei/"
+    },
+    {
+      "id": "nif-project-m0-m1-m7",
+      "title": "NIF project page: M0-M1 csomópont infrastrukturális fejlesztése",
+      "url": "https://archivum.nif.hu/projektek/2015/10/m0-m1-csomopont-infrastrukturalis-fejlesztese/",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/2025/https://archivum.nif.hu/projektek/2015/10/m0-m1-csomopont-infrastrukturalis-fejlesztese/"
+    },
+    {
+      "id": "euroaszfalt-m0-51-m5",
+      "title": "EuroAszfalt Kft.: reference M0 déli szektor 51. sz. főút – M5 autópálya közötti, 2x3 sávos szakasza (contract date, price, site handover)",
+      "url": "https://euroaszfalt.hu/referenciak/autopalya-epites/m0-deli-szektor-bovitese-3/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "unitef-m0-north",
+      "title": "Unitef'83 Zrt.: M0 Északi szektor (design of M3 – Road 11 sector)",
+      "url": "https://www.unitef.hu/m0-eszaki-szektor",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-m0",
+      "title": "OpenStreetMap: relation 21750, M0 (network HU:expressway), and ways with ref=M0",
+      "url": "https://www.openstreetmap.org/relation/21750",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-m0-nw-plan",
+      "title": "OpenStreetMap: relation 7638705, M0 északnyugati szektor Plan-A (highway=proposed)",
+      "url": "https://www.openstreetmap.org/relation/7638705",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lastVerified": "2026-10-10"
+}

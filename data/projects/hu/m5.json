@@ -1,0 +1,422 @@
+{
+  "id": "hu-m5",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M5 motorway (Budapest – Kecskemét – Szeged – Röszke)",
+    "ro": "Autostrada M5 (Budapesta – Kecskemét – Szeged – Röszke)"
+  },
+  "description": {
+    "en": "Hungary's south-eastern motorway from Budapest to the Serbian border at Röszke, where it continues as Serbia's A1. Built in stages from 1985 to 2006. In 1994 the state gave Alföld Koncessziós Autópálya (AKA) a 35-year concession to complete it; the state bought it back in part in 2004. Lots follow the opened sections of the hu.wikipedia section table, cut at mapped junctions; dates and builders for the concession stages come from AKA's own construction pages. Lengths are the table figures.",
+    "ro": "Autostrada din sud-estul Ungariei, de la Budapesta la granița sârbă de la Röszke, unde continuă ca A1 al Serbiei. Construită în etape între 1985 și 2006. În 1994 statul a dat Alföld Koncessziós Autópálya (AKA) o concesiune de 35 de ani pentru a o finaliza; în 2004 statul a răscumpărat-o în parte. Loturile urmează sectoarele deschise din tabelul hu.wikipedia, tăiate la noduri cartografiate; datele și constructorii etapelor concesiunii provin din paginile de construcție ale AKA. Lungimile sunt cele din tabel."
+  },
+  "operator": "hu-nif",
+  "lots": [
+    {
+      "id": "budapest-ocsa",
+      "name": {
+        "en": "Budapest – Ócsa",
+        "ro": "Budapest – Ócsa"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1985-11-22"
+      },
+      "lengthKm": 18.3,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1985-11-22",
+          "sourceRef": "hu-wikipedia-autopalyak"
+        }
+      ],
+      "note": {
+        "en": "Km 11+800 – 30+100. Built by 1984 and opened on 22 November 1985 as a full motorway. The drawn line starts where OpenStreetMap's M5 ways start, near the Budapest city boundary. AKA renovated the junctions and pavement of the Budapest – Újhartyán stretch under the concession (km 17.4 – 44.3) and collected tolls from 1 January 1997. hu.wikipedia does not name the builder, so none is listed.",
+        "ro": "Km 11+800 – 30+100. Construit până în 1984 și deschis la 22 noiembrie 1985 ca autostradă completă. Linia desenată începe unde încep căile M5 din OpenStreetMap, lângă limita orașului Budapesta. AKA a renovat nodurile și îmbrăcămintea tronsonului Budapesta – Újhartyán în cadrul concesiunii (km 17,4 – 44,3) și a încasat taxa de la 1 ianuarie 1997. hu.wikipedia nu numește constructorul, deci nu este listat niciunul."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m5",
+        "aka-hu-faza1",
+        "osm-ways-m5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "budapest-ocsa"
+    },
+    {
+      "id": "ocsa-ujhartyan",
+      "name": {
+        "en": "Ócsa – Újhartyán",
+        "ro": "Ócsa – Újhartyán"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1990-10-26"
+      },
+      "lengthKm": 13.1,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1985-11-22",
+          "sourceRef": "hu-wikipedia-autopalyak",
+          "note": {
+            "en": "Ócsa – Örkény opened with one carriageway (22.6 km; Ócsa – Újhartyán is the part in this lot).",
+            "ro": "Ócsa – Örkény deschis cu o singură cale (22,6 km; Ócsa – Újhartyán este partea din acest lot)."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1986-09-12",
+          "sourceRef": "hu-wikipedia-autopalyak",
+          "note": {
+            "en": "Second carriageway Ócsa – Inárcs (7.6 km).",
+            "ro": "A doua cale Ócsa – Inárcs (7,6 km)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1990-10-26",
+          "sourceRef": "hu-wikipedia-autopalyak",
+          "note": {
+            "en": "Second carriageway Inárcs – Újhartyán (5.5 km) completes the full profile.",
+            "ro": "A doua cale Inárcs – Újhartyán (5,5 km) completează profilul complet."
+          }
+        }
+      ],
+      "note": {
+        "en": "Km 30+100 – 43+200. One carriageway from 1985; the second carriageway (7.6 km Ócsa – Inárcs, then 5.5 km Inárcs – Újhartyán) completed the full profile in 1990. Length is the sum of those two table sections. The M5 article text instead dates the right carriageway of Ócsa – Újhartyán to 1987. hu.wikipedia does not name the builder, so none is listed.",
+        "ro": "Km 30+100 – 43+200. O singură cale din 1985; a doua cale (7,6 km Ócsa – Inárcs, apoi 5,5 km Inárcs – Újhartyán) a completat profilul complet în 1990. Lungimea este suma celor două secțiuni din tabel. Textul articolului despre M5 datează în schimb calea dreaptă Ócsa – Újhartyán în 1987. hu.wikipedia nu numește constructorul, deci nu este listat niciunul."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m5",
+        "osm-ways-m5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ocsa-ujhartyan"
+    },
+    {
+      "id": "ujhartyan-kecskemet-eszak",
+      "name": {
+        "en": "Újhartyán – Kecskemét-észak",
+        "ro": "Újhartyán – Kecskemét-észak"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1996-12-21"
+      },
+      "lengthKm": 30.3,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1989-07-10",
+          "sourceRef": "hu-wikipedia-autopalyak",
+          "note": {
+            "en": "Örkény – Kecskemét-észak opened with one carriageway (20.8 km).",
+            "ro": "Örkény – Kecskemét-észak deschis cu o singură cale (20,8 km)."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "1994-05-02",
+          "sourceRef": "hu-wikipedia-m5",
+          "note": {
+            "en": "Concession contract signed between the state and AKA (35 years).",
+            "ro": "Contractul de concesiune dintre stat și AKA (35 de ani) a fost semnat."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1996-12-21",
+          "sourceRef": "hu-wikipedia-autopalyak",
+          "note": {
+            "en": "Missing second carriageway handed over by AKA.",
+            "ro": "A doua cale lipsă a fost predată de AKA."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alföld Koncessziós Autópálya Zrt. (AKA)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Km 43+200 – 73+500. The stretch had one carriageway from 1985–1989; AKA built the right carriageway and opened the full profile on 21 December 1996 (AKA and hu.wikipedia agree). hu.wikipedia and AKA do not name the builder, so none is listed.",
+        "ro": "Km 43+200 – 73+500. Tronsonul avea o singură cale din 1985–1989; AKA a construit calea dreaptă și a deschis profilul complet la 21 decembrie 1996 (AKA și hu.wikipedia concordă). hu.wikipedia și AKA nu numesc constructorul, deci nu este listat niciunul."
+      },
+      "sourceRefs": [
+        "aka-hu-faza1",
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m5",
+        "osm-ways-m5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ujhartyan-kecskemet-eszak"
+    },
+    {
+      "id": "kecskemet-eszak-kecskemet-del",
+      "name": {
+        "en": "Kecskemét-észak – Kecskemét-dél (Kecskemét bypass)",
+        "ro": "Kecskemét-észak – Kecskemét-dél (Kecskemét bypass)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1997-12-06"
+      },
+      "lengthKm": 17,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1997-12-06",
+          "sourceRef": "aka-hu-faza1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alföld Koncessziós Autópálya Zrt. (AKA)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Km 73+500 – 90+500. Opened under the AKA concession, one month ahead of the deadline according to AKA. hu.wikipedia and AKA do not name the builder, so none is listed.",
+        "ro": "Km 73+500 – 90+500. Deschis în cadrul concesiunii AKA, cu o lună înainte de termen potrivit AKA. hu.wikipedia și AKA nu numesc constructorul, deci nu este listat niciunul."
+      },
+      "sourceRefs": [
+        "aka-hu-faza1",
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m5",
+        "osm-ways-m5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kecskemet-eszak-kecskemet-del"
+    },
+    {
+      "id": "kecskemet-del-kiskunfelegyhaza",
+      "name": {
+        "en": "Kecskemét-dél – Kiskunfélegyháza",
+        "ro": "Kecskemét-dél – Kiskunfélegyháza"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1998-06-09"
+      },
+      "lengthKm": 23,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1998-06-09",
+          "sourceRef": "aka-hu-faza1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Alföld Koncessziós Autópálya Zrt. (AKA)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Km 90+500 – 113+500. Opened on 9 June 1998 according to AKA and the M5 article text, one month ahead of the deadline; the section table gives 18 June 1998. AKA states the end as km 113.8 (Kiskunfélegyháza-dél junction). Opened under the AKA concession. hu.wikipedia and AKA do not name the builder, so none is listed.",
+        "ro": "Km 90+500 – 113+500. Deschis la 9 iunie 1998 potrivit AKA și textului articolului despre M5, cu o lună înainte de termen; tabelul secțiunilor indică 18 iunie 1998. AKA indică sfârșitul la km 113,8 (nodul Kiskunfélegyháza-dél). Deschis în cadrul concesiunii AKA. hu.wikipedia și AKA nu numesc constructorul, deci nu este listat niciunul."
+      },
+      "sourceRefs": [
+        "aka-hu-faza1",
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m5",
+        "osm-ways-m5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kecskemet-del-kiskunfelegyhaza"
+    },
+    {
+      "id": "kiskunfelegyhaza-szeged",
+      "name": {
+        "en": "Kiskunfélegyháza – Szeged-észak",
+        "ro": "Kiskunfélegyháza – Szeged-észak"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-05-17",
+        "opened": "2005-12-10"
+      },
+      "lengthKm": 45.7,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-05-17",
+          "sourceRef": "aka-hu-faza2"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-12-10",
+          "sourceRef": "aka-hu-faza2"
+        }
+      ],
+      "note": {
+        "en": "Km 113+500 – 159+200. Opened on 10 December 2005 according to AKA and the M5 article text, together with the 3 km M43 link to road 5; the section table gives 9 December. AKA gives this phase as 45.4 km (km 113.8 – 159.2) against the table's 45.7 km. Works began on 17 May 2004. AKA names the general contractor M5 Construction Group, a joint venture of Strabag, Colas and Bouygues TP whose Hungarian subsidiaries built it: Strabag Építő Zrt. built km 113.8 – 140 and the DEA consortium led by DEBMUT km 140 – 159.2.",
+        "ro": "Km 113+500 – 159+200. Deschis la 10 decembrie 2005 potrivit AKA și textului articolului despre M5, împreună cu legătura M43 de 3 km către drumul 5; tabelul secțiunilor indică 9 decembrie. AKA dă această fază ca 45,4 km (km 113,8 – 159,2), față de 45,7 km în tabel. Lucrările au început la 17 mai 2004. AKA numește antreprenorul general M5 Construction Group, asociere între Strabag, Colas și Bouygues TP, ale cărei filiale maghiare au construit-o: Strabag Építő Zrt. a construit km 113,8 – 140, iar consorțiul DEA condus de DEBMUT km 140 – 159,2."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m5",
+        "aka-hu-faza2",
+        "osm-ways-m5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kiskunfelegyhaza-szeged",
+      "contractors": [
+        {
+          "name": "Alföld Koncessziós Autópálya Zrt. (AKA)",
+          "role": "concessionaire"
+        },
+        {
+          "name": "M5 Construction Group (Strabag, Colas, Bouygues TP joint venture)",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Építő Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "DEA Konzorcium (DEBMUT Zrt., EGÚT Zrt., Alterra Építőipari Kft.)",
+          "role": "builder"
+        },
+        {
+          "name": "UVATERV",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "szeged-roszke",
+      "name": {
+        "en": "Szeged-észak – Röszke (Serbian border)",
+        "ro": "Szeged-észak – Röszke (granița cu Serbia)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-03-31",
+        "opened": "2006-03-11"
+      },
+      "lengthKm": 14.7,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-03-31",
+          "sourceRef": "aka-hu-faza3"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-03-11",
+          "sourceRef": "aka-hu-faza3"
+        }
+      ],
+      "note": {
+        "en": "Km 159+200 – 173+900, to the Röszke – Horgos border crossing; the road continues in Serbia as the A1 (rs-a1). Works began on 31 March 2005 and the section opened on 11 March 2006. AKA names the builder as M5 Phase 3 Contractors, a joint venture of the Hungarian companies of Bouygues TP, Strabag and Colas: COLAS Hungária with Debmút, EGÚT, Hofmann and Alterra built km 159.2 – 165.32, and Strabag Építő Zrt. km 165.32 – 173.895.",
+        "ro": "Km 159+200 – 173+900, până la punctul de frontieră Röszke – Horgos; drumul continuă în Serbia ca A1 (rs-a1). Lucrările au început la 31 martie 2005, iar secțiunea a fost deschisă la 11 martie 2006. AKA numește constructorul M5 Phase 3 Contractors, o asociere a firmelor maghiare ale Bouygues TP, Strabag și Colas: COLAS Hungária împreună cu Debmút, EGÚT, Hofmann și Alterra a construit km 159,2 – 165,32, iar Strabag Építő Zrt. km 165,32 – 173,895."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m5",
+        "aka-hu-faza3",
+        "osm-ways-m5",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szeged-roszke",
+      "contractors": [
+        {
+          "name": "Alföld Koncessziós Autópálya Zrt. (AKA)",
+          "role": "concessionaire"
+        },
+        {
+          "name": "M5 Phase 3 Contractors (Bouygues TP, Strabag, Colas joint venture)",
+          "role": "builder"
+        },
+        {
+          "name": "COLAS Hungária",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag Építő Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "UVATERV",
+          "role": "designer"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-autopalyak",
+      "title": "Wikipedia (hu): Magyarország autópályái, chronological section table (M5 rows, km chainage and lengths)",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_aut%C3%B3p%C3%A1ly%C3%A1i",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-m5",
+      "title": "Wikipedia (hu): M5-ös autópálya (Magyarország), Története",
+      "url": "https://hu.wikipedia.org/wiki/M5-%C3%B6s_aut%C3%B3p%C3%A1lya_(Magyarorsz%C3%A1g)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "aka-hu-faza1",
+      "title": "AKA: Az M5 autópálya építése, I. fázis (Budapest – Kiskunfélegyháza)",
+      "url": "https://web.archive.org/web/2008/http://www.aka.hu/magyar/7_Epites/epites.asp?page=7Ifazis",
+      "publisher": "Alföld Koncessziós Autópálya Zrt. (via Internet Archive)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "aka-hu-faza2",
+      "title": "AKA: Építés, II. fázis (Kiskunfélegyháza – Szeged-észak)",
+      "url": "https://web.archive.org/web/2008/http://www.aka.hu/magyar/7_Epites/epites.asp?page=7IIfazis",
+      "publisher": "Alföld Koncessziós Autópálya Zrt. (via Internet Archive)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "aka-hu-faza3",
+      "title": "AKA: Építés, III. fázis (Szeged-észak – Röszke)",
+      "url": "https://web.archive.org/web/2008/http://www.aka.hu/magyar/7_Epites/epites.asp?page=7IIIfazis",
+      "publisher": "Alföld Koncessziós Autópálya Zrt. (via Internet Archive)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-ways-m5",
+      "title": "OpenStreetMap: motorway ways with ref M5 (network HU:motorway)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
