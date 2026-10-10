@@ -1,0 +1,1154 @@
+{
+  "id": "sk-r1",
+  "country": "sk",
+  "category": "highway",
+  "name": {
+    "en": "R1 expressway (Trnava – Nitra – Žiar nad Hronom – Zvolen – Banská Bystrica)",
+    "ro": "Drumul expres R1 (Trnava – Nitra – Žiar nad Hronom – Zvolen – Banská Bystrica)"
+  },
+  "description": {
+    "en": "Expressway from Trnava through Nitra, Žiar nad Hronom and Zvolen to Banská Bystrica, with a 3.04 km extension towards Slovenská Ľupča under construction. sk.wikipedia counts 177.1 km in operation of 270.5 km planned. Sections opened from 1975 to 2012, many first as half profile on the former roads I/51 and I/66. Nitra západ – Tekovské Nemce and the Banská Bystrica northern bypass (opened 2011 and 2012) are a public-private partnership: GRANVIA, a.s. holds the 30-year concession and Granvia Construction a.s. built them. Pre-2009 costs are in SKK and the concession payments are not construction costs, so no older figures are recorded. The R1A branch into Nitra and the planned sections are not included. Lengths are the sourced ones; drawn lengths come from OpenStreetMap.",
+    "ro": "Drum expres de la Trnava prin Nitra, Žiar nad Hronom și Zvolen până la Banská Bystrica, cu o prelungire de 3,04 km spre Slovenská Ľupča în construcție. Sk.wikipedia numără 177,1 km în exploatare din 270,5 km planificați. Sectoarele au fost deschise între 1975 și 2012, multe întâi cu profil parțial pe fostele drumuri I/51 și I/66. Nitra západ – Tekovské Nemce și ocolitoarea de nord a orașului Banská Bystrica (deschise în 2011 și 2012) sunt un parteneriat public-privat: GRANVIA, a.s. deține concesiunea de 30 de ani, iar Granvia Construction a.s. le-a construit. Costurile dinainte de 2009 sunt în SKK, iar plățile de concesiune nu sunt costuri de construcție, deci nu sunt înregistrate cifre mai vechi. Ramura R1A spre Nitra și sectoarele planificate nu sunt incluse. Lungimile sunt cele din surse; lungimile desenate provin din OpenStreetMap."
+  },
+  "operator": "sk-nds",
+  "lots": [
+    {
+      "id": "trnava-sered-zapad",
+      "name": {
+        "en": "Trnava – Sereď západ",
+        "ro": "Trnava – Sereď západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997-11",
+        "opened": "2000-07-15"
+      },
+      "lengthKm": 13.1,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1997-11",
+          "sourceRef": "hd-1997",
+          "note": {
+            "en": "Trnava D1 – Sereď part (6.775 km).",
+            "ro": "Partea Trnava D1 – Sereď (6,775 km)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2000-07-15",
+          "sourceRef": "hd-2000"
+        }
+      ],
+      "note": {
+        "en": "Length is the 13.1 km of the sk.wikipedia section table, which says the whole Trnava – Sereď section was opened on 15 July 2000. Historiadialnic.sk dates the 6.775 km Trnava D1 – Sereď part, started in November 1997. Drawn line runs from the Trnava-sever exit, where the OSM expressway begins, to the Sládkovičovo junction (13.6 km), taken as the table's Sereď-západ because the table's section lengths add up to it from Báb.",
+        "ro": "Lungimea este cei 13,1 km din tabelul de sectoare de pe sk.wikipedia, care spune că întregul sector Trnava – Sereď a fost deschis la 15 iulie 2000. Historiadialnic.sk datează partea Trnava D1 – Sereď de 6,775 km, începută în noiembrie 1997. Linia desenată merge de la ieșirea Trnava-sever, unde începe drumul expres în OSM, până la nodul Sládkovičovo (13,6 km), considerat Sereď-západ din tabel, deoarece lungimile sectoarelor din tabel ajung la el pornind de la Báb."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "hd-1997",
+        "hd-2000",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "trnava-sered-zapad"
+    },
+    {
+      "id": "sered-zapad-pata",
+      "name": {
+        "en": "Sereď západ – Pata (Dolná Streda, Šoporňa)",
+        "ro": "Sereď západ – Pata (Dolná Streda, Šoporňa)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1983",
+        "opened": "1998"
+      },
+      "lengthKm": 8.4,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1983",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Right half of Dolná Streda – Šoporňa.",
+            "ro": "Jumătatea dreaptă Dolná Streda – Šoporňa."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1989",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Dolná Streda – Šoporňa (4.5 km), right half.",
+            "ro": "Dolná Streda – Šoporňa (4,5 km), jumătatea dreaptă."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1990",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Sereď západ – Dolná Streda (2.4 km), left half.",
+            "ro": "Sereď západ – Dolná Streda (2,4 km), jumătatea stângă."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1995",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Šoporňa – Pata (1.5 km), right half.",
+            "ro": "Šoporňa – Pata (1,5 km), jumătatea dreaptă."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1998",
+          "sourceRef": "hd-1998",
+          "note": {
+            "en": "Second halves completed; the other carriageways were started in 1997.",
+            "ro": "Celelalte jumătăți finalizate; celelalte căi de rulare au fost începute în 1997."
+          }
+        }
+      ],
+      "note": {
+        "en": "Three sk.wikipedia sections (2.4 + 4.5 + 1.5 km) built first as half profile and completed in 1998. Historiadialnic.sk dates the second carriageway of Sereď – Šoporňa (6.795 km) from 26 March 1997 and its opening to 1998 without a day. Drawn line runs from the Sládkovičovo junction to the Šoporňa junction, which OSM signs for Pata (8.5 km).",
+        "ro": "Trei sectoare sk.wikipedia (2,4 + 4,5 + 1,5 km) construite întâi cu profil parțial și finalizate în 1998. Historiadialnic.sk datează a doua cale de rulare Sereď – Šoporňa (6,795 km) de la 26 martie 1997 și deschiderea ei în 1998, fără zi. Linia desenată merge de la nodul Sládkovičovo la nodul Šoporňa, indicat în OSM pentru Pata (8,5 km)."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "hd-1997",
+        "hd-1998",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "sered-zapad-pata"
+    },
+    {
+      "id": "pata-bab",
+      "name": {
+        "en": "Pata – Báb",
+        "ro": "Pata – Báb"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997-06-27",
+        "opened": "1998-09-18"
+      },
+      "lengthKm": 6.9,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1997-06-27",
+          "sourceRef": "hd-1997",
+          "note": {
+            "en": "Date given for Šoporňa – Báb (9.465 km).",
+            "ro": "Data indicată pentru Šoporňa – Báb (9,465 km)."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "1998-09-18",
+          "sourceRef": "hd-1998",
+          "note": {
+            "en": "Date given for Šoporňa – Báb (9.465 km).",
+            "ro": "Data indicată pentru Šoporňa – Báb (9,465 km)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length from the sk.wikipedia table (start and opening 1997 and 1998). The days are those historiadialnic.sk gives for the longer Šoporňa – Báb section (9.465 km). Drawn line runs from the Šoporňa junction, which OSM signs for Pata, to the Veľké Zálužie junction, signed for Báb (6.8 km).",
+        "ro": "Lungimea provine din tabelul sk.wikipedia (început și deschidere 1997 și 1998). Zilele sunt cele date de historiadialnic.sk pentru sectorul mai lung Šoporňa – Báb (9,465 km). Linia desenată merge de la nodul Šoporňa, indicat în OSM pentru Pata, la nodul Veľké Zálužie, indicat pentru Báb (6,8 km)."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "hd-1997",
+        "hd-1998",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "pata-bab"
+    },
+    {
+      "id": "bab-nitra-zapad",
+      "name": {
+        "en": "Báb – Nitra západ",
+        "ro": "Báb – Nitra západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1976",
+        "opened": "1980"
+      },
+      "lengthKm": 9.9,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1976",
+          "sourceRef": "wiki-r1-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "1980",
+          "sourceRef": "wiki-r1-sk"
+        }
+      ],
+      "note": {
+        "en": "One of the reconstructions of road I/51 into a half-profile expressway before 1989 (sk.wikipedia); only years are given. The R1A branch into Nitra leaves at the Nitra západ junction and is not drawn.",
+        "ro": "Una dintre reconstrucțiile drumului I/51 într-un drum expres cu profil parțial înainte de 1989 (sk.wikipedia); sunt date doar anii. Ramura R1A spre Nitra pornește din nodul Nitra západ și nu este desenată."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "bab-nitra-zapad"
+    },
+    {
+      "id": "nitra-zapad-selenec",
+      "name": {
+        "en": "Nitra západ – Selenec",
+        "ro": "Nitra západ – Selenec"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-04",
+        "constructionStart": "2009-08-28",
+        "opened": "2011-10-28"
+      },
+      "lengthKm": 12.589,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-04",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Concession agreement with GRANVIA, a.s. signed.",
+            "ro": "Contractul de concesiune cu GRANVIA, a.s. a fost semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-08-28",
+          "sourceRef": "hd-2009"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-10-28",
+          "sourceRef": "hd-2011",
+          "note": {
+            "en": "Handed over for early use.",
+            "ro": "Predat pentru utilizare anticipată."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Public-private partnership: 30-year concession to GRANVIA, a.s. to design, build and operate; financial close 27 August 2009 (sk.wikipedia).",
+            "ro": "Parteneriat public-privat: concesiune de 30 de ani acordată GRANVIA, a.s. pentru proiectare, construcție și operare; închiderea financiară la 27 august 2009 (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GRANVIA, a.s.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Granvia Construction a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Part of the second PPP package, Nitra – Tekovské Nemce (sk.wikipedia). Length from historiadialnic.sk and the sk.wikipedia section text (the sk.wikipedia table says 14.3 km). Drawn line ends at the Nitra-východ junction (12.4 km). Concession lot: GRANVIA, a.s. is the concessionaire and Granvia Construction a.s. (Eurovia CS group) designed and built it; Granvia Operation, s.r.o. (Vinci Concessions) operates it (MDV PPP page). The concessionaire's site says main works began on 1 September 2009; the 28 August 2009 start is historiadialnic.sk's. Concession payments are not a construction cost and are not recorded.",
+        "ro": "Parte din al doilea pachet PPP, Nitra – Tekovské Nemce (sk.wikipedia). Lungimea provine de la historiadialnic.sk și din textul sk.wikipedia (tabelul sk.wikipedia spune 14,3 km). Linia desenată se termină la nodul Nitra-východ (12,4 km). Tronson în concesiune: GRANVIA, a.s. este concesionarul, iar Granvia Construction a.s. (grup Eurovia CS) l-a proiectat și construit; Granvia Operation, s.r.o. (Vinci Concessions) îl operează (pagina PPP a MDV). Site-ul concesionarului indică începerea lucrărilor principale la 1 septembrie 2009; startul din 28 august 2009 provine de la historiadialnic.sk. Plățile de concesiune nu sunt un cost de construcție și nu sunt înregistrate."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "mindop-ppp-r1",
+        "hd-2009",
+        "hd-2011",
+        "viapribina",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "nitra-zapad-selenec"
+    },
+    {
+      "id": "selenec-beladice",
+      "name": {
+        "en": "Selenec – Beladice",
+        "ro": "Selenec – Beladice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-04",
+        "constructionStart": "2009-08-28",
+        "opened": "2011-10-28"
+      },
+      "lengthKm": 18.967,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-04",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Concession agreement with GRANVIA, a.s. signed.",
+            "ro": "Contractul de concesiune cu GRANVIA, a.s. a fost semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-08-28",
+          "sourceRef": "hd-2009"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-10-28",
+          "sourceRef": "hd-2011",
+          "note": {
+            "en": "Handed over for early use.",
+            "ro": "Predat pentru utilizare anticipată."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Public-private partnership: 30-year concession to GRANVIA, a.s. to design, build and operate; financial close 27 August 2009 (sk.wikipedia).",
+            "ro": "Parteneriat public-privat: concesiune de 30 de ani acordată GRANVIA, a.s. pentru proiectare, construcție și operare; închiderea financiară la 27 august 2009 (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GRANVIA, a.s.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Granvia Construction a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section without exits in the sk.wikipedia table; drawn line ends at the Zlaté Moravce junction, which serves Beladice (18.8 km). Concession lot: GRANVIA, a.s. is the concessionaire and Granvia Construction a.s. (Eurovia CS group) designed and built it; Granvia Operation, s.r.o. (Vinci Concessions) operates it (MDV PPP page). The concessionaire's site says main works began on 1 September 2009; the 28 August 2009 start is historiadialnic.sk's. Concession payments are not a construction cost and are not recorded.",
+        "ro": "Sector fără ieșiri în tabelul sk.wikipedia; linia desenată se termină la nodul Zlaté Moravce, care deservește Beladice (18,8 km). Tronson în concesiune: GRANVIA, a.s. este concesionarul, iar Granvia Construction a.s. (grup Eurovia CS) l-a proiectat și construit; Granvia Operation, s.r.o. (Vinci Concessions) îl operează (pagina PPP a MDV). Site-ul concesionarului indică începerea lucrărilor principale la 1 septembrie 2009; startul din 28 august 2009 provine de la historiadialnic.sk. Plățile de concesiune nu sunt un cost de construcție și nu sunt înregistrate."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "mindop-ppp-r1",
+        "hd-2009",
+        "hd-2011",
+        "viapribina",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "selenec-beladice"
+    },
+    {
+      "id": "beladice-tekovske-nemce",
+      "name": {
+        "en": "Beladice – Tekovské Nemce",
+        "ro": "Beladice – Tekovské Nemce"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-04",
+        "constructionStart": "2009-08-28",
+        "opened": "2011-10-28"
+      },
+      "lengthKm": 14.31,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-04",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Concession agreement with GRANVIA, a.s. signed.",
+            "ro": "Contractul de concesiune cu GRANVIA, a.s. a fost semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-08-28",
+          "sourceRef": "hd-2009"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-10-28",
+          "sourceRef": "hd-2011",
+          "note": {
+            "en": "Handed over for early use.",
+            "ro": "Predat pentru utilizare anticipată."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Public-private partnership: 30-year concession to GRANVIA, a.s. to design, build and operate; financial close 27 August 2009 (sk.wikipedia).",
+            "ro": "Parteneriat public-privat: concesiune de 30 de ani acordată GRANVIA, a.s. pentru proiectare, construcție și operare; închiderea financiară la 27 august 2009 (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GRANVIA, a.s.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Granvia Construction a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Includes the Zlaté Moravce junction. Tekovské Nemce has no junction, so the drawn end is cut 14.31 km after Zlaté Moravce (14.1 km drawn). Concession lot: GRANVIA, a.s. is the concessionaire and Granvia Construction a.s. (Eurovia CS group) designed and built it; Granvia Operation, s.r.o. (Vinci Concessions) operates it (MDV PPP page). The concessionaire's site says main works began on 1 September 2009; the 28 August 2009 start is historiadialnic.sk's. Concession payments are not a construction cost and are not recorded.",
+        "ro": "Include nodul Zlaté Moravce. Tekovské Nemce nu are nod, deci capătul desenat este tăiat la 14,31 km după Zlaté Moravce (14,1 km desenați). Tronson în concesiune: GRANVIA, a.s. este concesionarul, iar Granvia Construction a.s. (grup Eurovia CS) l-a proiectat și construit; Granvia Operation, s.r.o. (Vinci Concessions) îl operează (pagina PPP a MDV). Site-ul concesionarului indică începerea lucrărilor principale la 1 septembrie 2009; startul din 28 august 2009 provine de la historiadialnic.sk. Plățile de concesiune nu sunt un cost de construcție și nu sunt înregistrate."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "mindop-ppp-r1",
+        "hd-2009",
+        "hd-2011",
+        "viapribina",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "beladice-tekovske-nemce"
+    },
+    {
+      "id": "tekovske-nemce-hronsky-benadik",
+      "name": {
+        "en": "Tekovské Nemce – Hronský Beňadik",
+        "ro": "Tekovské Nemce – Hronský Beňadik"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-01-30",
+        "opened": "2005-09-30"
+      },
+      "lengthKm": 2.772,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-01-30",
+          "sourceRef": "hd-2004"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-09-30",
+          "sourceRef": "hd-2005"
+        }
+      ],
+      "note": {
+        "en": "Length and dates from historiadialnic.sk. The sk.wikipedia table gives 7.1 km for this section (2004 start, 2005 opening); the sourced 2.772 km is kept and matches the 2.9 km drawn between the end of the PPP lot and the Hronský Beňadik junction.",
+        "ro": "Lungimea și datele provin de la historiadialnic.sk. Tabelul sk.wikipedia dă 7,1 km pentru acest sector (început 2004, deschidere 2005); cei 2,772 km din sursă sunt păstrați și corespund celor 2,9 km desenați între capătul tronsonului PPP și nodul Hronský Beňadik."
+      },
+      "sourceRefs": [
+        "hd-2004",
+        "hd-2005",
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "tekovske-nemce-hronsky-benadik"
+    },
+    {
+      "id": "hronsky-benadik-rudno-nad-hronom",
+      "name": {
+        "en": "Hronský Beňadik – Nová Baňa – Rudno nad Hronom",
+        "ro": "Hronský Beňadik – Nová Baňa – Rudno nad Hronom"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997-12-10",
+        "opened": "2003-10-28"
+      },
+      "lengthKm": 12.891,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1997-12-10",
+          "sourceRef": "hd-1997",
+          "note": {
+            "en": "Nová Baňa bypass (5.303 km). Hronský Beňadik – Nová Baňa started in June 2001 and Nová Baňa – Rudno nad Hronom on 15 December 2001.",
+            "ro": "Ocolitoarea Nová Baňa (5,303 km). Hronský Beňadik – Nová Baňa a început în iunie 2001, iar Nová Baňa – Rudno nad Hronom la 15 decembrie 2001."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2003-10-28",
+          "sourceRef": "hd-2003",
+          "note": {
+            "en": "All three parts opened on this day.",
+            "ro": "Toate cele trei părți au fost deschise în această zi."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Sum of three historiadialnic.sk sections: Hronský Beňadik – Nová Baňa 4.363 km, Nová Baňa bypass 5.303 km and Nová Baňa – Rudno nad Hronom 3.225 km. Doprastav, a.s. built the Nová Baňa bypass (sk.wikipedia); builders of the other two parts are not named. Rudno nad Hronom has no junction, so the drawn end is cut 5.485 km before the Žarnovica junction.",
+        "ro": "Suma a trei sectoare historiadialnic.sk: Hronský Beňadik – Nová Baňa 4,363 km, ocolitoarea Nová Baňa 5,303 km și Nová Baňa – Rudno nad Hronom 3,225 km. Doprastav, a.s. a construit ocolitoarea Nová Baňa (sk.wikipedia); constructorii celorlalte două părți nu sunt numiți. Rudno nad Hronom nu are nod, deci capătul desenat este tăiat la 5,485 km înaintea nodului Žarnovica."
+      },
+      "sourceRefs": [
+        "hd-1997",
+        "hd-2001",
+        "hd-2003",
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "hronsky-benadik-rudno-nad-hronom"
+    },
+    {
+      "id": "rudno-nad-hronom-zarnovica",
+      "name": {
+        "en": "Rudno nad Hronom – Žarnovica",
+        "ro": "Rudno nad Hronom – Žarnovica"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-07-06",
+        "opened": "2006-10-25"
+      },
+      "lengthKm": 5.485,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-07-06",
+          "sourceRef": "hd-2004"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-10-25",
+          "sourceRef": "hd-2006"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length and dates from historiadialnic.sk. sk.wikipedia names Doprastav, a.s. and Strabag, a.s. as builders of Rudno nad Hronom – Žarnovica and gives a cost of 2.217 billion SKK for a 9.955 km section of that name; that length differs from this lot, so the cost is not recorded.",
+        "ro": "Lungimea și datele provin de la historiadialnic.sk. Sk.wikipedia numește Doprastav, a.s. și Strabag, a.s. drept constructori ai sectorului Rudno nad Hronom – Žarnovica și dă un cost de 2,217 miliarde SKK pentru un sector de 9,955 km cu acest nume; lungimea diferă de cea a acestui tronson, deci costul nu este înregistrat."
+      },
+      "sourceRefs": [
+        "hd-2004",
+        "hd-2006",
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "rudno-nad-hronom-zarnovica"
+    },
+    {
+      "id": "zarnovica-obchvat",
+      "name": {
+        "en": "Žarnovica bypass",
+        "ro": "Ocolitoarea Žarnovica"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996",
+        "opened": "2006-10-25"
+      },
+      "lengthKm": 4.47,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Left carriageway.",
+            "ro": "Calea de rulare stângă."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1998-09-08",
+          "sourceRef": "hd-1998",
+          "note": {
+            "en": "Left carriageway opened.",
+            "ro": "Calea de rulare stângă deschisă."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2004-07-06",
+          "sourceRef": "hd-2004",
+          "note": {
+            "en": "Right carriageway.",
+            "ro": "Calea de rulare dreaptă."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2006-10-25",
+          "sourceRef": "hd-2006",
+          "note": {
+            "en": "Right carriageway opened, full profile.",
+            "ro": "Calea de rulare dreaptă deschisă, profil complet."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length from historiadialnic.sk (4.47 km; sk.wikipedia table 4.4 km). Opened as half profile in 1998 and completed in 2006. Drawn from the Žarnovica junction to the Žarnovica-sever junction (4.9 km).",
+        "ro": "Lungimea provine de la historiadialnic.sk (4,47 km; tabelul sk.wikipedia 4,4 km). Deschisă cu profil parțial în 1998 și finalizată în 2006. Desenată de la nodul Žarnovica la nodul Žarnovica-sever (4,9 km)."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "hd-1998",
+        "hd-2004",
+        "hd-2006",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "zarnovica-obchvat"
+    },
+    {
+      "id": "zarnovica-sasovske-podhradie-1-etapa",
+      "name": {
+        "en": "Žarnovica – Šášovské Podhradie, I. etapa",
+        "ro": "Žarnovica – Šášovské Podhradie, etapa I"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-02-26",
+        "opened": "2009-11-19"
+      },
+      "lengthKm": 9.675,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-02-26",
+          "sourceRef": "hd-2008"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-11-19",
+          "sourceRef": "hd-2009"
+        }
+      ],
+      "note": {
+        "en": "Date of opening from historiadialnic.sk; the sk.wikipedia table gives 2010 for this stage. Includes the Bzenica junction and 11 bridges (sk.wikipedia). Drawn line ends at the Žiar nad Hronom-západ junction (9.1 km).",
+        "ro": "Data deschiderii provine de la historiadialnic.sk; tabelul sk.wikipedia dă anul 2010 pentru această etapă. Include nodul Bzenica și 11 poduri (sk.wikipedia). Linia desenată se termină la nodul Žiar nad Hronom-západ (9,1 km)."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "hd-2008",
+        "hd-2009",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "zarnovica-sasovske-podhradie-1-etapa"
+    },
+    {
+      "id": "zarnovica-sasovske-podhradie-2-etapa",
+      "name": {
+        "en": "Žarnovica – Šášovské Podhradie, II. etapa",
+        "ro": "Žarnovica – Šášovské Podhradie, etapa II"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-11-25",
+        "opened": "2011-01-21"
+      },
+      "lengthKm": 8.373,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-11-25",
+          "sourceRef": "hd-2008"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-01-21",
+          "sourceRef": "hd-2011"
+        }
+      ],
+      "note": {
+        "en": "Opening day from historiadialnic.sk. The whole Žarnovica – Šášovské Podhradie section was first due in June 2010 (sk.wikipedia). Includes the junction with the R2 at Žiar nad Hronom and 10 bridges. Drawn line ends at the Žiar nad Hronom-východ junction (8.7 km).",
+        "ro": "Ziua deschiderii provine de la historiadialnic.sk. Întregul sector Žarnovica – Šášovské Podhradie trebuia finalizat inițial în iunie 2010 (sk.wikipedia). Include nodul cu R2 la Žiar nad Hronom și 10 poduri. Linia desenată se termină la nodul Žiar nad Hronom-východ (8,7 km)."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "hd-2008",
+        "hd-2011",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "zarnovica-sasovske-podhradie-2-etapa"
+    },
+    {
+      "id": "sasovske-podhradie-budca",
+      "name": {
+        "en": "Šášovské Podhradie – Budča",
+        "ro": "Šášovské Podhradie – Budča"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1982",
+        "opened": "1986"
+      },
+      "lengthKm": 17.2,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1982",
+          "sourceRef": "wiki-r1-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "1986",
+          "sourceRef": "wiki-r1-sk"
+        }
+      ],
+      "note": {
+        "en": "Built in the 1980s on the line of the former first-class road (sk.wikipedia); only years are given. Includes the Hronská Breznica and Hronská Dúbrava junctions. The next lot is 2.885 km long and no OSM junction fits that distance back from Kováčová, so the drawn end is placed by the sourced length, before the Zvolen-Stráže junction (15.9 km drawn). OSM has a Budča junction about 3.5 km earlier, which does not fit the sourced lengths.",
+        "ro": "Construit în anii 1980 pe traseul fostului drum de clasa I (sk.wikipedia); sunt date doar anii. Include nodurile Hronská Breznica și Hronská Dúbrava. Tronsonul următor are 2,885 km și niciun nod OSM nu se potrivește acestei distanțe măsurate înapoi de la Kováčová, deci capătul desenat este stabilit după lungimea din sursă, înainte de nodul Zvolen-Stráže (15,9 km desenați). OSM are un nod Budča cu circa 3,5 km mai devreme, care nu corespunde lungimilor din surse."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "sasovske-podhradie-budca"
+    },
+    {
+      "id": "budca-kovacova",
+      "name": {
+        "en": "Budča – Kováčová",
+        "ro": "Budča – Kováčová"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001-07-01",
+        "opened": "2004-11-05"
+      },
+      "lengthKm": 2.885,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2001-07-01",
+          "sourceRef": "hd-2001"
+        },
+        {
+          "kind": "opened",
+          "date": "2004-11-05",
+          "sourceRef": "hd-2004"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Replaced the first-class road around Zvolen (sk.wikipedia, which names Doprastav, a.s. as builder and says 2001–2006; the dates here are historiadialnic.sk's and the sk.wikipedia table's 2004 opening). Length 2.885 km from historiadialnic.sk (the sk.wikipedia text says 2.855 km). The drawn start is placed by this length.",
+        "ro": "A înlocuit drumul de clasa I din jurul Zvolenului (sk.wikipedia, care numește Doprastav, a.s. drept constructor și indică 2001–2006; datele de aici sunt cele de la historiadialnic.sk și deschiderea din 2004 din tabelul sk.wikipedia). Lungime 2,885 km de la historiadialnic.sk (textul sk.wikipedia spune 2,855 km). Începutul desenat este stabilit după această lungime."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "hd-2001",
+        "hd-2004",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "budca-kovacova"
+    },
+    {
+      "id": "kovacova-banska-bystrica-juh",
+      "name": {
+        "en": "Kováčová – Banská Bystrica juh (Kremnička)",
+        "ro": "Kováčová – Banská Bystrica juh (Kremnička)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1972",
+        "opened": "1975"
+      },
+      "lengthKm": 13.8,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1972",
+          "sourceRef": "wiki-r1-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "1975",
+          "sourceRef": "wiki-r1-sk"
+        }
+      ],
+      "note": {
+        "en": "Sum of the sk.wikipedia sections Sliač (Kováčová) – Kremnička 11.9 km and Kremnička – Banská Bystrica juh 1.9 km, both 1972–1975; built as a rebuild of road I/66. Drawn line ends at the Banská Bystrica-Radvaň junction (14.0 km).",
+        "ro": "Suma sectoarelor sk.wikipedia Sliač (Kováčová) – Kremnička 11,9 km și Kremnička – Banská Bystrica juh 1,9 km, ambele 1972–1975; construit ca reconstrucție a drumului I/66. Linia desenată se termină la nodul Banská Bystrica-Radvaň (14,0 km)."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "kovacova-banska-bystrica-juh"
+    },
+    {
+      "id": "banska-bystrica-juh-zapad",
+      "name": {
+        "en": "Banská Bystrica juh – západ",
+        "ro": "Banská Bystrica juh – západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1975",
+        "opened": "1979"
+      },
+      "lengthKm": 4,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1975",
+          "sourceRef": "wiki-r1-sk"
+        },
+        {
+          "kind": "opened",
+          "date": "1979",
+          "sourceRef": "wiki-r1-sk"
+        }
+      ],
+      "note": {
+        "en": "Includes the Radvaň, centre and Podlavice junctions (sk.wikipedia); only years are given. Drawn line ends at the Banská Bystrica-sever junction.",
+        "ro": "Include nodurile Radvaň, centru și Podlavice (sk.wikipedia); sunt date doar anii. Linia desenată se termină la nodul Banská Bystrica-sever."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "banska-bystrica-juh-zapad"
+    },
+    {
+      "id": "banska-bystrica-severny-obchvat",
+      "name": {
+        "en": "Banská Bystrica northern bypass",
+        "ro": "Ocolitoarea de nord a orașului Banská Bystrica"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-04",
+        "constructionStart": "2009-08-28",
+        "opened": "2012-07-27"
+      },
+      "lengthKm": 5.14,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-04",
+          "sourceRef": "wiki-r1-sk",
+          "note": {
+            "en": "Concession agreement with GRANVIA, a.s. signed.",
+            "ro": "Contractul de concesiune cu GRANVIA, a.s. a fost semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-08-28",
+          "sourceRef": "hd-2009"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-07-27",
+          "sourceRef": "hd-2012"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Public-private partnership: 30-year concession to GRANVIA, a.s. to design, build and operate; financial close 27 August 2009 (sk.wikipedia).",
+            "ro": "Parteneriat public-privat: concesiune de 30 de ani acordată GRANVIA, a.s. pentru proiectare, construcție și operare; închiderea financiară la 27 august 2009 (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GRANVIA, a.s.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Granvia Construction a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length 5.14 km from historiadialnic.sk (sk.wikipedia table 5.6 km). The drawn line is 4.9 km, 5% shorter. It runs past the Banská Bystrica-východ junction along the OSM motorway and single-carriageway R1 ways to the start of the extension under construction, where sk.wikipedia lists a temporary connection to road I/66; the sourced length is kept. Concession lot: GRANVIA, a.s. is the concessionaire and Granvia Construction a.s. (Eurovia CS group) designed and built it; Granvia Operation, s.r.o. (Vinci Concessions) operates it (MDV PPP page). The concessionaire's site says main works began on 1 September 2009; the 28 August 2009 start is historiadialnic.sk's. Concession payments are not a construction cost and are not recorded.",
+        "ro": "Lungimea de 5,14 km provine de la historiadialnic.sk (tabelul sk.wikipedia 5,6 km). Linia desenată are 4,9 km, cu 5% mai scurtă. Trece de nodul Banská Bystrica-východ pe căile OSM de autostradă și R1 cu o singură carosabilă, până la începutul prelungirii în construcție, unde sk.wikipedia listează o legătură provizorie cu drumul I/66; lungimea din sursă este păstrată. Tronson în concesiune: GRANVIA, a.s. este concesionarul, iar Granvia Construction a.s. (grup Eurovia CS) l-a proiectat și construit; Granvia Operation, s.r.o. (Vinci Concessions) îl operează (pagina PPP a MDV). Site-ul concesionarului indică începerea lucrărilor principale la 1 septembrie 2009; startul din 28 august 2009 provine de la historiadialnic.sk. Plățile de concesiune nu sunt un cost de construcție și nu sunt înregistrate."
+      },
+      "sourceRefs": [
+        "wiki-r1-sk",
+        "mindop-ppp-r1",
+        "hd-2009",
+        "hd-2012",
+        "viapribina",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "banska-bystrica-severny-obchvat"
+    },
+    {
+      "id": "banska-bystrica-slovenska-lupca-i-etapa",
+      "name": {
+        "en": "Banská Bystrica – Slovenská Ľupča, I. etapa (to Šalková)",
+        "ro": "Banská Bystrica – Slovenská Ľupča, etapa I (până la Šalková)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-03-27",
+        "constructionStart": "2024-04-23"
+      },
+      "lengthKm": 3.04,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-03-30",
+          "sourceRef": "nds-press-tender-2023",
+          "note": {
+            "en": "Estimated contract value 89.32 million EUR excluding VAT, offers due 30 May 2023.",
+            "ro": "Valoare estimată a contractului 89,32 milioane EUR fără TVA, oferte până la 30 mai 2023."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-03-27",
+          "sourceRef": "nds-press-contract-2024",
+          "note": {
+            "en": "NDS signed the contract with the Doprastav – Metrostav DS association (date of the press release).",
+            "ro": "NDS a semnat contractul cu asocierea Doprastav – Metrostav DS (data comunicatului de presă)."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-04-23",
+          "sourceRef": "nds-press-foundation-2024",
+          "note": {
+            "en": "Foundation stone laid by the transport minister and NDS; the date is the ceremonial start.",
+            "ro": "Piatra de temelie pusă de ministrul transporturilor și NDS; data este startul ceremonial."
+          }
+        }
+      ],
+      "cost": {
+        "estimated": {
+          "amount": 89.32,
+          "currency": "EUR",
+          "year": 2023,
+          "note": "Estimated contract value excluding VAT from the March 2023 tender announcement."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2024-03-27",
+            "sourceRef": "nds-r1-bb-lupca",
+            "money": {
+              "amount": 86.77723179,
+              "currency": "EUR",
+              "year": 2024,
+              "note": "Contract price excluding VAT, as published on the NDS project page."
+            }
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (NDS press releases of 27 March and 23 April 2024).",
+            "ro": "Buget de stat (comunicatele NDS din 27 martie și 23 aprilie 2024)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav DS a.s.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 86.77723179,
+          "currency": "EUR",
+          "year": 2024,
+          "note": "Contract price excluding VAT, as published on the NDS project page."
+        }
+      },
+      "note": {
+        "en": "3040 m extension of the R1 east of Banská Bystrica with the Šalková junction, a new bridge over the Hron and a relocation of road I/66. The award date is that of the NDS press release on the contract; the signing day itself was not found. The recorded start is the foundation-stone ceremony of 23 April 2024; the sources give no earlier site-work date. The tender expected a 960-day build. sk.wikipedia tabulates a contractual end of November 2026 and an opening in December 2028 and cites TASR of 23 November 2025 on NDS reporting problems with utility relocations; no official opening date was found, so none is recorded. Drawn from OSM construction ways (2.8 km, 8% shorter); a short stretch is drawn on the opposite carriageway where OSM lacks the other, and it starts where the drawn northern bypass ends.",
+        "ro": "Prelungire de 3040 m a R1 la est de Banská Bystrica, cu nodul Šalková, un pod nou peste Hron și o relocare a drumului I/66. Data atribuirii este cea a comunicatului NDS despre contract; ziua semnării nu a fost găsită. Startul înregistrat este ceremonia pietrei de temelie din 23 aprilie 2024; sursele nu indică o dată anterioară a lucrărilor pe șantier. Licitația prevedea o durată de 960 de zile. Sk.wikipedia indică un termen contractual de sfârșit în noiembrie 2026 și o deschidere în decembrie 2028 și citează TASR din 23 noiembrie 2025 despre probleme raportate de NDS la relocarea rețelelor; nu s-a găsit o dată oficială a deschiderii, deci nu este înregistrată niciuna. Desenată din căile OSM în construcție (2,8 km, cu 8% mai scurtă); un tronson scurt este desenat pe calea opusă, unde OSM nu o are pe cealaltă, și începe unde se termină ocolitoarea de nord desenată."
+      },
+      "sourceRefs": [
+        "nds-r1-bb-lupca",
+        "nds-press-tender-2023",
+        "nds-press-contract-2024",
+        "nds-press-foundation-2024",
+        "nds-press-progress-2025",
+        "wiki-r1-sk",
+        "osm-r1-ways",
+        "osm"
+      ],
+      "geometryRef": "banska-bystrica-slovenska-lupca-i-etapa"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-r1-sk",
+      "title": "Wikipedia (sk): Rýchlostná cesta R1 (Slovensko), section table, 'Priebeh výstavby' and 'Úseky rýchlostnej cesty R1'",
+      "url": "https://sk.wikipedia.org/wiki/R%C3%BDchlostn%C3%A1_cesta_R1_(Slovensko)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-1997",
+      "title": "História diaľnic: História 1997 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1989-1998/historia-1997/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-1998",
+      "title": "História diaľnic: História 1998 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1989-1998/historia-1998/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2000",
+      "title": "História diaľnic: História 2000 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2000/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2001",
+      "title": "História diaľnic: História 2001 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2001/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2003",
+      "title": "História diaľnic: História 2003 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2003/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2004",
+      "title": "História diaľnic: História 2004 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2004/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2005",
+      "title": "História diaľnic: História 2005 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2005/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2006",
+      "title": "História diaľnic: História 2006 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2006/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2008",
+      "title": "História diaľnic: História 2008 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2008/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2009",
+      "title": "História diaľnic: História 2009 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2009/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2011",
+      "title": "História diaľnic: História 2011 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2011/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2012",
+      "title": "História diaľnic: História 2012 (dated starts and openings of R1 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2012/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "mindop-ppp-r1",
+      "title": "MDV SR: PPP projekty, R1 (Granvia concession, builder and operator, openings 2011 and 2012)",
+      "url": "https://www.mindop.sk/ppp-projekty/r1",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-r1-bb-lupca",
+      "title": "NDS: R1 Banská Bystrica – Slovenská Ľupča, I. etapa (project page: length, contractors, contract price excluding VAT)",
+      "url": "https://ndsas.sk/r1-banska-bystrica-slovenska-lupca-i-etapa",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-tender-2023",
+      "title": "NDS press release 30 March 2023: Vyhlasujeme tender na výstavbu R1 po Slovenskú Ľupču",
+      "url": "https://ndsas.sk/press/spravy/vyhlasujeme-tender-na-vystavbu-r1-po-slovensku-lupcu",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-contract-2024",
+      "title": "NDS press release 27 March 2024: NDS podpísala zmluvu na výstavbu R1 Banská Bystrica – Slovenská Ľupča, I. etapa",
+      "url": "https://ndsas.sk/press/spravy/nds-podpisala-zmluvu-na-vystavbu-r1-banska-bystrica-slovenska-lupca-i-etapa",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-foundation-2024",
+      "title": "NDS press release 23 April 2024: Štartuje výstavba R1 Banská Bystrica – Slovenská Ľupča, I. etapa",
+      "url": "https://ndsas.sk/press/spravy/startuje-vystavba-r1-banska-bystrica-slovenska-lupca-i-etapa",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-press-progress-2025",
+      "title": "NDS press release 25 March 2025: Výstavba bystrickej R1 pokročila, preložka cesty si vyžiada obmedzenie dopravy",
+      "url": "https://ndsas.sk/press/spravy/vystavba-bystrickej-r1-pokrocila-prelozka-cesty-si-vyziada-obmedzenie-dopravy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "viapribina",
+      "title": "Via Pribina (GRANVIA concessionaire): Koncesia a prevadzka (30-year concession, main works from 1 September 2009, openings 28 October 2011 and 27 July 2012)",
+      "url": "https://viapribina.sk/sk/koncesia-a-prevadzka/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-r1-ways",
+      "title": "OpenStreetMap: ways with ref=R1 (highway=motorway, highway=construction) via Overpass, base 2026-10-10",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

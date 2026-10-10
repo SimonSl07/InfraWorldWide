@@ -1,0 +1,1066 @@
+{
+  "id": "sk-rail-bratislava-zilina",
+  "country": "sk",
+  "category": "railway",
+  "name": {
+    "en": "Bratislava Rača – Trnava – Trenčín – Žilina railway modernisation (line 120, 160 km/h)",
+    "ro": "Modernizarea căii ferate Bratislava Rača – Trnava – Trenčín – Žilina (linia 120, 160 km/h)"
+  },
+  "description": {
+    "en": "ŽSR modernisation of the Bratislava – Žilina line (line 120) for 160 km/h, delivered as separate ŽSR projects from 2000 to 2022. Each lot is one contract or project with the contractor, works price, signing, start and handover dates from the ŽSR project pages. Lengths are the ŽSR or sk.wikipedia figures, except on the first three lots, where they are station-to-station distances from the sk.wikipedia line diagram. Prices are as published, in euro, and VAT basis is stated only where the source gives it. The Žilina node and the Váh – Varín – Strečno project, which lies on the Žilina – Košice line, are not included.",
+    "ro": "Modernizarea ŽSR a liniei Bratislava – Žilina (linia 120) pentru 160 km/h, realizată în proiecte ŽSR separate între 2000 și 2022. Fiecare lot este un contract sau proiect cu constructorul, prețul lucrărilor, datele semnării, începerii și predării din paginile de proiect ŽSR. Lungimile sunt cifrele ŽSR sau sk.wikipedia, cu excepția primelor trei loturi, unde sunt distanțe de la stație la stație din schema liniei de pe sk.wikipedia. Prețurile sunt cele publicate, în euro, iar baza TVA este indicată doar acolo unde sursa o dă. Nodul Žilina și proiectul Váh – Varín – Strečno, aflat pe linia Žilina – Košice, nu sunt incluse."
+  },
+  "operator": "sk-zsr",
+  "lots": [
+    {
+      "id": "raca-senkvice",
+      "name": {
+        "en": "Bratislava Rača – Šenkvice",
+        "ro": "Bratislava Rača – Šenkvice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2002-03-04",
+        "constructionStart": "2002-03-11",
+        "opened": "2006-09"
+      },
+      "lengthKm": 18.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 44.71339,
+              "currency": "EUR",
+              "year": 2002,
+              "scope": "works",
+              "note": "As published by ŽSR in euro; VAT basis not stated on the source page."
+            },
+            "date": "2002-03-04",
+            "sourceRef": "zsr-raca-senkvice"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2002-03-04",
+          "sourceRef": "zsr-raca-senkvice",
+          "note": {
+            "en": "Works contract signed.",
+            "ro": "Contract de lucrări semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2002-03-11",
+          "sourceRef": "zsr-raca-senkvice"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-09",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; ŽSR gives works end 30 September 2006.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; ŽSR indică sfârșitul lucrărilor la 30 septembrie 2006."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie Trať Rača – Šenkvice (lead Doprastav, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 44.71339,
+          "currency": "EUR",
+          "year": 2002,
+          "scope": "works",
+          "note": "As published by ŽSR in euro; VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Works contract with Združenie Trať Rača – Šenkvice (lead Doprastav, a.s.), signed 4 March 2002 for EUR 44.71 million; ŽSR gives the project start as 11 March 2002 and the end as 30 September 2006. The ŽSR page states the price in euro although it was signed before the euro was adopted. sk.wikipedia gives 13.4 km excluding stations and September 2006 as the commissioning month. The recorded 18.4 km is the station-to-station distance from the sk.wikipedia line diagram (km 7.435 to 25.833); the drawn line is 18.5 km. Part of the saving was moved to the Trnava – Piešťany project.",
+        "ro": "Contract de lucrări cu Združenie Trať Rača – Šenkvice (lider Doprastav, a.s.), semnat la 4 martie 2002 pentru 44,71 milioane EUR; ŽSR indică începutul proiectului la 11 martie 2002 și sfârșitul la 30 septembrie 2006. Pagina ŽSR indică prețul în euro, deși contractul a fost semnat înainte de adoptarea monedei euro. sk.wikipedia dă 13,4 km fără stații și septembrie 2006 ca lună a punerii în funcțiune. Cei 18,4 km înregistrați sunt distanța de la stație la stație din schema liniei de pe sk.wikipedia (km 7,435 – 25,833); linia desenată are 18,5 km. O parte din economii a fost mutată la proiectul Trnava – Piešťany."
+      },
+      "sourceRefs": [
+        "zsr-raca-senkvice",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "raca-senkvice"
+    },
+    {
+      "id": "senkvice-cifer",
+      "name": {
+        "en": "Šenkvice – Cífer (with stations Bratislava Rača – Trnava)",
+        "ro": "Šenkvice – Cífer (cu stațiile Bratislava Rača – Trnava)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-07-01",
+        "opened": "2008-09"
+      },
+      "lengthKm": 11.5,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-07-01",
+          "sourceRef": "zsr-senkvice-cifer"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-09",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; ŽSR: the works ended on the contractual date, 30 September 2008.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; ŽSR: lucrările s-au încheiat la termenul contractual, 30 septembrie 2008."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie Modernizácia Bratislava Rača – Trnava (lead Skanska DS a.s.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 141.98768436,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Price year and signing date not stated; VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Works contract with Združenie Modernizácia Bratislava Rača – Trnava (lead Skanska DS a.s., Brno) for EUR 141.99 million; the signing date is not on the page. Works ran from 1 July 2004 to the contractual deadline of 30 September 2008. The project covers the Šenkvice – Cífer track and the stations along Rača – Trnava, so sk.wikipedia's 22.4 km includes station areas outside the Šenkvice – Cífer line. The recorded 11.5 km is the station-to-station distance from the sk.wikipedia line diagram (km 25.833 to 37.350); the drawn line is 11.4 km.",
+        "ro": "Contract de lucrări cu Združenie Modernizácia Bratislava Rača – Trnava (lider Skanska DS a.s., Brno) pentru 141,99 milioane EUR; data semnării nu apare pe pagină. Lucrările au durat din 1 iulie 2004 până la termenul contractual de 30 septembrie 2008. Proiectul cuprinde calea Šenkvice – Cífer și stațiile de pe Rača – Trnava, deci cei 22,4 km din sk.wikipedia includ zone de stații din afara liniei Šenkvice – Cífer. Cei 11,5 km înregistrați sunt distanța de la stație la stație din schema liniei de pe sk.wikipedia (km 25,833 – 37,350); linia desenată are 11,4 km."
+      },
+      "sourceRefs": [
+        "zsr-senkvice-cifer",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "senkvice-cifer"
+    },
+    {
+      "id": "cifer-trnava",
+      "name": {
+        "en": "Cífer – Trnava",
+        "ro": "Cífer – Trnava"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2000-03",
+        "opened": "2001-06"
+      },
+      "lengthKm": 8.9,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2000-03",
+          "sourceRef": "wiki-sk-line"
+        },
+        {
+          "kind": "opened",
+          "date": "2001-06",
+          "sourceRef": "wiki-sk-line"
+        }
+      ],
+      "note": {
+        "en": "Earlier modernisation of the section outside stations, from March 2000 to June 2001, per sk.wikipedia, which gives 5.8 km excluding stations. The recorded 8.9 km is the station-to-station distance from its line diagram (km 37.350 to 46.290); the drawn line is 9.0 km. No contractor or price is recorded.",
+        "ro": "Modernizare anterioară a secțiunii în afara stațiilor, din martie 2000 până în iunie 2001, conform sk.wikipedia, care indică 5,8 km fără stații. Cei 8,9 km înregistrați sunt distanța de la stație la stație din schema liniei (km 37,350 – 46,290); linia desenată are 9,0 km. Nu sunt înregistrați constructor sau preț."
+      },
+      "sourceRefs": [
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "cifer-trnava"
+    },
+    {
+      "id": "trnava-piestany",
+      "name": {
+        "en": "Trnava – Piešťany",
+        "ro": "Trnava – Piešťany"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2004-10-07",
+        "constructionStart": "2004-10-29",
+        "opened": "2008-03"
+      },
+      "lengthKm": 33,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 129.19542423,
+              "currency": "EUR",
+              "year": 2004,
+              "scope": "works",
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2004-10-07",
+            "sourceRef": "zsr-trnava-piestany"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2004-10-07",
+          "sourceRef": "zsr-trnava-piestany"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2004-10-29",
+          "sourceRef": "zsr-trnava-piestany"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-03",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; ŽSR: construction units complete on 31 March 2008.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; ŽSR: unitățile de construcție terminate la 31 martie 2008."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie Project SK 2004 (lead OHL ŽS, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 129.19542423,
+          "currency": "EUR",
+          "year": 2004,
+          "scope": "works",
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Works contract with Združenie Project SK 2004 (lead OHL ŽS, a.s., Brno), signed 7 October 2004 for EUR 129.20 million. ŽSR gives the project start as 29 October 2004 and the end as 31 March 2008, when all construction units were complete. First stage of the Trnava – Nové Mesto nad Váhom project (km 47.550 – 100.500). Length is from sk.wikipedia (outside Trnava and Piešťany stations).",
+        "ro": "Contract de lucrări cu Združenie Project SK 2004 (lider OHL ŽS, a.s., Brno), semnat la 7 octombrie 2004 pentru 129,20 milioane EUR. ŽSR indică începutul proiectului la 29 octombrie 2004 și sfârșitul la 31 martie 2008, când toate unitățile de construcție erau terminate. Prima etapă a proiectului Trnava – Nové Mesto nad Váhom (km 47,550 – 100,500). Lungimea provine de la sk.wikipedia (în afara stațiilor Trnava și Piešťany)."
+      },
+      "sourceRefs": [
+        "zsr-trnava-piestany",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "trnava-piestany"
+    },
+    {
+      "id": "piestany-nove-mesto",
+      "name": {
+        "en": "Piešťany – Nové Mesto nad Váhom",
+        "ro": "Piešťany – Nové Mesto nad Váhom"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-03-20",
+        "constructionStart": "2006-03-20",
+        "opened": "2009-03"
+      },
+      "lengthKm": 20,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-03-20",
+          "sourceRef": "zsr-piestany-nove-mesto"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2006-03-20",
+          "sourceRef": "zsr-piestany-nove-mesto",
+          "note": {
+            "en": "Project start date given by ŽSR; equals the signing date.",
+            "ro": "Data începerii proiectului indicată de ŽSR; coincide cu data semnării."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2009-03",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; ŽSR: works ended 31 March 2009.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; ŽSR: lucrările s-au încheiat la 31 martie 2009."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie S K Nové Mesto (lead Doprastav, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Works contract with Združenie S K Nové Mesto (lead Doprastav, a.s.) signed 20 March 2006 for 3,568,275,273.95 SKK (prose only: SKK is not in the exchange-rate table). ŽSR lists the same date as the project start and 31 March 2009 as the end of works. Second stage of the Trnava – Nové Mesto nad Váhom project. Length is from sk.wikipedia and includes the stations at both ends; the drawn line is 17.7 km.",
+        "ro": "Contract de lucrări cu Združenie S K Nové Mesto (lider Doprastav, a.s.) semnat la 20 martie 2006 pentru 3.568.275.273,95 SKK (doar în text: SKK nu figurează în tabelul de cursuri). ŽSR indică aceeași dată ca început al proiectului și 31 martie 2009 ca sfârșit al lucrărilor. A doua etapă a proiectului Trnava – Nové Mesto nad Váhom. Lungimea provine de la sk.wikipedia și include stațiile de la ambele capete; linia desenată are 17,7 km."
+      },
+      "sourceRefs": [
+        "zsr-piestany-nove-mesto",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "piestany-nove-mesto"
+    },
+    {
+      "id": "nove-mesto-zlatovce",
+      "name": {
+        "en": "Nové Mesto nad Váhom – Zlatovce",
+        "ro": "Nové Mesto nad Váhom – Zlatovce"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-08-26",
+        "constructionStart": "2009-09-29",
+        "opened": "2013-05"
+      },
+      "lengthKm": 17.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 263.83750459,
+              "currency": "EUR",
+              "year": 2009,
+              "scope": "works",
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2009-08-26",
+            "sourceRef": "zsr-nove-mesto-zlatovce"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-08-26",
+          "sourceRef": "zsr-nove-mesto-zlatovce"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-09-29",
+          "sourceRef": "zsr-nove-mesto-zlatovce"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-05",
+          "sourceRef": "zsr-nove-mesto-zlatovce",
+          "note": {
+            "en": "All objects handed over on 28 May 2013.",
+            "ro": "Toate obiectele predate la 28 mai 2013."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 195.154622,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Cohesion Fund grant agreement 94/270/2010 (10 May 2010); EU share EUR 195.15 million of EUR 274.99 million total eligible cost",
+            "ro": "Acordul de grant din Fondul de Coeziune 94/270/2010 (10 mai 2010); contribuția UE 195,15 milioane EUR din 274,99 milioane EUR costuri eligibile totale"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie Nové Mesto – Zlatovce 2009",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 263.83750459,
+          "currency": "EUR",
+          "year": 2009,
+          "scope": "works",
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "One ŽSR project for stages I and II of Nové Mesto nad Váhom – Púchov (km 100.500 – 159.100): contract with Združenie Nové Mesto – Zlatovce 2009 signed 26 August 2009 for EUR 263.84 million. Works began on 29 September 2009 and all objects were handed over on 28 May 2013. Length is 4.5 km (Nové Mesto – Trenčianske Bohuslavice) plus 12.9 km (to Zlatovce) from sk.wikipedia, excluding stations. The ŽSR page gives no km range for the stage; vlaky.net puts the start of the next stage at km 117.690, about 4 km before Zlatovce station on the sk.wikipedia line diagram, so the lot is cut there by chainage and its end is approximate. The drawn line is 18.1 km. The Cohesion Fund grant allotment of EUR 195.15 million is not the works price.",
+        "ro": "Un singur proiect ŽSR pentru etapele I și II ale tronsonului Nové Mesto nad Váhom – Púchov (km 100,500 – 159,100): contract cu Združenie Nové Mesto – Zlatovce 2009 semnat la 26 august 2009 pentru 263,84 milioane EUR. Lucrările au început la 29 septembrie 2009, iar toate obiectele au fost predate la 28 mai 2013. Lungimea este 4,5 km (Nové Mesto – Trenčianske Bohuslavice) plus 12,9 km (până la Zlatovce) de la sk.wikipedia, fără stații. Pagina ŽSR nu indică un interval kilometric pentru etapă; vlaky.net plasează începutul etapei următoare la km 117,690, cu circa 4 km înainte de stația Zlatovce pe schema liniei de pe sk.wikipedia, deci lotul este tăiat acolo după kilometraj, iar capătul este aproximativ. Linia desenată are 18,1 km. Alocarea din grantul Fondului de Coeziune, de 195,15 milioane EUR, nu este prețul lucrărilor."
+      },
+      "sourceRefs": [
+        "zsr-nove-mesto-zlatovce",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "nove-mesto-zlatovce"
+    },
+    {
+      "id": "zlatovce-trencianska-tepla",
+      "name": {
+        "en": "Zlatovce – Trenčianska Teplá",
+        "ro": "Zlatovce – Trenčianska Teplá"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-10",
+        "constructionStart": "2013-02",
+        "opened": "2017-12"
+      },
+      "lengthKm": 12.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 245,
+              "currency": "EUR",
+              "year": 2012,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Press figure, 'takmer 245 mil. eur bez DPH' (almost EUR 245 million excluding VAT); rounded."
+            },
+            "date": "2012-10",
+            "sourceRef": "sita-trencin-2016"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2012-10",
+          "sourceRef": "sita-trencin-2016",
+          "note": {
+            "en": "Works contract concluded.",
+            "ro": "Contract de lucrări încheiat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-02",
+          "sourceRef": "wiki-sk-line"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; its text gives works end in October 2017.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; textul indică sfârșitul lucrărilor în octombrie 2017."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie pod Brezinou (lead TSS Grade, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 245,
+          "currency": "EUR",
+          "year": 2012,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Press figure, 'takmer 245 mil. eur bez DPH' (almost EUR 245 million excluding VAT); rounded."
+        }
+      },
+      "note": {
+        "en": "Stage III of Nové Mesto nad Váhom – Púchov, through Trenčín with a new Váh bridge. Works contract with Združenie pod Brezinou (lead TSS Grade, a.s.; members Bögl a Krýsl and Konstruktor-Inženjering), signed in October 2012 for almost EUR 245 million excluding VAT (EUR 294 million with VAT), per SITA and vlaky.net. The contract allowed 40 months; the deadline was moved from February 2016 to the end of November 2016. sk.wikipedia gives works start in February 2013 and end in October 2017, and December 2017 as the commissioning month. The ŽSR project page for this stage was not found, so the price year is the signing year and the figure is a press one. Length is from sk.wikipedia (12.2 km); vlaky.net gives km 117.690 – 129.642. The lot is cut at those kilometres by chainage, so its ends are approximate and it begins before Zlatovce station; the drawn line is 11.6 km.",
+        "ro": "Etapa III a tronsonului Nové Mesto nad Váhom – Púchov, prin Trenčín, cu un pod nou peste Váh. Contract de lucrări cu Združenie pod Brezinou (lider TSS Grade, a.s.; membri Bögl a Krýsl și Konstruktor-Inženjering), semnat în octombrie 2012 pentru aproape 245 milioane EUR fără TVA (294 milioane EUR cu TVA), conform SITA și vlaky.net. Contractul prevedea 40 de luni; termenul a fost mutat din februarie 2016 la sfârșitul lui noiembrie 2016. sk.wikipedia indică începutul lucrărilor în februarie 2013 și sfârșitul în octombrie 2017, iar decembrie 2017 ca lună a punerii în funcțiune. Pagina de proiect ŽSR pentru această etapă nu a fost găsită, deci anul prețului este anul semnării, iar cifra provine din presă. Lungimea provine de la sk.wikipedia (12,2 km); vlaky.net indică km 117,690 – 129,642. Lotul este tăiat la acești kilometri după kilometraj, deci capetele sunt aproximative, iar lotul începe înainte de stația Zlatovce; linia desenată are 11,6 km."
+      },
+      "sourceRefs": [
+        "wiki-sk-line",
+        "vlaky-trencin-2013",
+        "sita-trencin-2016",
+        "crp-zlatovce-tt",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "zlatovce-trencianska-tepla"
+    },
+    {
+      "id": "trencianska-tepla-belusa",
+      "name": {
+        "en": "Trenčianska Teplá – Ilava – Beluša",
+        "ro": "Trenčianska Teplá – Ilava – Beluša"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-11-12",
+        "constructionStart": "2009-11-25",
+        "opened": "2014-07"
+      },
+      "lengthKm": 20.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 289.89062482,
+              "currency": "EUR",
+              "year": 2009,
+              "scope": "works",
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2009-11-12",
+            "sourceRef": "zsr-tt-belusa"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-11-12",
+          "sourceRef": "zsr-tt-belusa"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-11-25",
+          "sourceRef": "zsr-tt-belusa"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-07",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; ŽSR: construction completed 4 May 2014.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; ŽSR: construcția terminată la 4 mai 2014."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 196.468579,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Cohesion Fund grant agreement 158/170/2010 (12 October 2010); EU share EUR 196.47 million of EUR 275.65 million total eligible cost",
+            "ro": "Acordul de grant din Fondul de Coeziune 158/170/2010 (12 octombrie 2010); contribuția UE 196,47 milioane EUR din 275,65 milioane EUR costuri eligibile totale"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie ŽSR-Beluša",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 289.89062482,
+          "currency": "EUR",
+          "year": 2009,
+          "scope": "works",
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Stages IV and V of Nové Mesto nad Váhom – Púchov: contract with Združenie ŽSR-Beluša signed 12 November 2009 for EUR 289.89 million. Works began on 25 November 2009 and ŽSR reports completion on 4 May 2014 in line with the contract; sk.wikipedia gives July 2014 as the commissioning month. The recorded 20.4 km is the project length that sk.wikipedia cites from the European Commission. Its table gives 11.4 km (Trenčianska Teplá – Ilava) plus 12.2 km (Ilava – Beluša), but its line diagram puts Ilava – Beluša at 8.4 km, so the table sum of 23.6 km is not used. The lot runs from km 129.642 (end of the previous stage, per vlaky.net) to about km 149.4 (159.100 minus the 9.7 km of the next stage), cut by chainage; the drawn line is 20.6 km. The Cohesion Fund allotment of EUR 196.47 million is not the works price.",
+        "ro": "Etapele IV și V ale tronsonului Nové Mesto nad Váhom – Púchov: contract cu Združenie ŽSR-Beluša semnat la 12 noiembrie 2009 pentru 289,89 milioane EUR. Lucrările au început la 25 noiembrie 2009, iar ŽSR raportează finalizarea la 4 mai 2014, conform contractului; sk.wikipedia indică iulie 2014 ca lună a punerii în funcțiune. Lungimea înregistrată, 20,4 km, este lungimea proiectului citată de sk.wikipedia după Comisia Europeană. Tabelul său dă 11,4 km (Trenčianska Teplá – Ilava) plus 12,2 km (Ilava – Beluša), dar schema liniei plasează Ilava – Beluša la 8,4 km, deci suma din tabel, 23,6 km, nu este folosită. Lotul merge de la km 129,642 (sfârșitul etapei precedente, conform vlaky.net) până la circa km 149,4 (159,100 minus cei 9,7 km ai etapei următoare), tăiat după kilometraj; linia desenată are 20,6 km. Alocarea din Fondul de Coeziune, de 196,47 milioane EUR, nu este prețul lucrărilor."
+      },
+      "sourceRefs": [
+        "zsr-tt-belusa",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "trencianska-tepla-belusa"
+    },
+    {
+      "id": "belusa-puchov",
+      "name": {
+        "en": "Beluša – Púchov",
+        "ro": "Beluša – Púchov"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-03-07",
+        "constructionStart": "2012-07",
+        "opened": "2015-11"
+      },
+      "lengthKm": 9.7,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 91.80317763,
+              "currency": "EUR",
+              "year": 2012,
+              "scope": "works",
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2012-03-07",
+            "sourceRef": "zsr-belusa-puchov"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2012-03-07",
+          "sourceRef": "zsr-belusa-puchov"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2012-07",
+          "sourceRef": "wiki-sk-line"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-11",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; ŽSR: works ended 30 September 2015.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; ŽSR: lucrările s-au încheiat la 30 septembrie 2015."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 84.318684,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Cohesion Fund grant agreement 438/B300/2013 (12 April 2013); EU share EUR 84.32 million of EUR 105.45 million total eligible cost",
+            "ro": "Acordul de grant din Fondul de Coeziune 438/B300/2013 (12 aprilie 2013); contribuția UE 84,32 milioane EUR din 105,45 milioane EUR costuri eligibile totale"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie Púchov (lead OHL ŽS, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 91.80317763,
+          "currency": "EUR",
+          "year": 2012,
+          "scope": "works",
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Stage VI of Nové Mesto nad Váhom – Púchov: contract with Združenie Púchov (lead OHL ŽS, a.s.) signed 7 March 2012 for EUR 91.80 million. ŽSR lists 7 March 2012 as the project start and 30 September 2015 as the end of works; sk.wikipedia gives July 2012 for the start of construction and November 2015 as the commissioning month. Length is from sk.wikipedia and includes the Púchov station. The lot ends at km 159.100, the end of the Nové Mesto – Púchov project, about 0.8 km past Púchov station, and begins about 2 km before Beluša station, cut by chainage; the drawn line is 9.0 km. The Cohesion Fund allotment of EUR 84.32 million is not the works price.",
+        "ro": "Etapa VI a tronsonului Nové Mesto nad Váhom – Púchov: contract cu Združenie Púchov (lider OHL ŽS, a.s.) semnat la 7 martie 2012 pentru 91,80 milioane EUR. ŽSR indică 7 martie 2012 ca început al proiectului și 30 septembrie 2015 ca sfârșit al lucrărilor; sk.wikipedia dă iulie 2012 pentru începutul construcției și noiembrie 2015 ca lună a punerii în funcțiune. Lungimea provine de la sk.wikipedia și include stația Púchov. Lotul se termină la km 159,100, sfârșitul proiectului Nové Mesto – Púchov, cu circa 0,8 km după stația Púchov, și începe cu circa 2 km înainte de stația Beluša, tăiat după kilometraj; linia desenată are 9,0 km. Alocarea din Fondul de Coeziune, de 84,32 milioane EUR, nu este prețul lucrărilor."
+      },
+      "sourceRefs": [
+        "zsr-belusa-puchov",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "belusa-puchov"
+    },
+    {
+      "id": "puchov-povazska-tepla",
+      "name": {
+        "en": "Púchov – Považská Bystrica – Považská Teplá",
+        "ro": "Púchov – Považská Bystrica – Považská Teplá"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-07-13",
+        "constructionStart": "2016-09-07",
+        "opened": "2022-05"
+      },
+      "lengthKm": 15.921,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 364.93898047,
+              "currency": "EUR",
+              "year": 2016,
+              "scope": "works",
+              "note": "VAT basis not stated on the source page. sk.wikipedia gives EUR 369.4 million excluding VAT for the finished contract."
+            },
+            "date": "2016-07-13",
+            "sourceRef": "zsr-puchov-povazska-tepla"
+          },
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 378.6,
+              "currency": "EUR",
+              "scope": "works",
+              "note": "Excluding VAT, price at the end of 2020 as reported by Denník N via sk.wikipedia, after the 10% reserve was used up.",
+              "year": 2020
+            },
+            "date": "2021-01-05",
+            "sourceRef": "wiki-sk-line"
+          }
+        ]
+      },
+      "profile": {
+        "works": "reconstruction",
+        "maxSpeedKmh": 160,
+        "tunnelKm": 2.943
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-07-13",
+          "sourceRef": "zsr-puchov-povazska-tepla",
+          "note": {
+            "en": "Works contract took effect.",
+            "ro": "Contractul de lucrări a intrat în vigoare."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2016-09-07",
+          "sourceRef": "zsr-puchov-povazska-tepla"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2020-09-17",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Trains moved to the new Púchov – Nosice section with the Diel tunnel.",
+            "ro": "Trenurile au trecut pe noua secțiune Púchov – Nosice cu tunelul Diel."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2021-12",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Milochov tunnel opened for single-track operation.",
+            "ro": "Tunelul Milochov deschis pentru circulație pe o singură cale."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2022-05",
+          "sourceRef": "zsr-puchov-povazska-tepla",
+          "note": {
+            "en": "ŽSR takeover protocol of 16 May 2022; two-way use of the Milochov tunnel from May 2022.",
+            "ro": "Proces-verbal de preluare ŽSR din 16 mai 2022; circulație în ambele sensuri prin tunelul Milochov din mai 2022."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "amount": {
+            "amount": 297.145608,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Grant agreement 311011B658 (28 September 2018) under the Operational Programme Integrated Infrastructure; EU share EUR 297.15 million of EUR 360.97 million total eligible cost",
+            "ro": "Acordul de grant 311011B658 (28 septembrie 2018) în cadrul Programului Operațional Infrastructură Integrată; contribuția UE 297,15 milioane EUR din 360,97 milioane EUR costuri eligibile totale"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie Nimnica (lead Doprastav, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 364.93898047,
+          "currency": "EUR",
+          "year": 2016,
+          "scope": "works",
+          "note": "VAT basis not stated on the source page. sk.wikipedia gives EUR 369.4 million excluding VAT for the finished contract."
+        }
+      },
+      "note": {
+        "en": "Stage I of Púchov – Žilina, described by ŽSR as its most demanding project: a new alignment with the Diel (1,082 m) and Milochov (1,861 m) tunnels, 14 railway bridges and 6 road bridges and overpasses. The route shortens from 18.742 km to 15.921 km. Contract with Združenie Nimnica (lead Doprastav, a.s.), effective 13 July 2016 for EUR 364.94 million; works began on 7 September 2016. Trains moved to the new Púchov – Nosice section on 17 September 2020 and Milochov tunnel opened for one track in December 2021 (sk.wikipedia). ŽSR issued the takeover protocol on 16 May 2022 and the completion protocol on 15 May 2023; sk.wikipedia gives May 2022 for two-way use of the tunnel. The line starts about 0.8 km past Púchov station, where the previous project ends, and the drawn line is 14.6 km. The tunnels are not drawn as separate lots.",
+        "ro": "Etapa I a tronsonului Púchov – Žilina, descrisă de ŽSR drept cel mai dificil proiect al său: traseu nou cu tunelurile Diel (1.082 m) și Milochov (1.861 m), 14 poduri feroviare și 6 poduri și pasaje rutiere. Traseul se scurtează de la 18,742 km la 15,921 km. Contract cu Združenie Nimnica (lider Doprastav, a.s.), în vigoare din 13 iulie 2016, pentru 364,94 milioane EUR; lucrările au început la 7 septembrie 2016. Trenurile au trecut pe noua secțiune Púchov – Nosice la 17 septembrie 2020, iar tunelul Milochov s-a deschis pe o singură cale în decembrie 2021 (sk.wikipedia). ŽSR a emis procesul-verbal de preluare la 16 mai 2022 și pe cel de finalizare la 15 mai 2023; sk.wikipedia indică mai 2022 pentru circulația în ambele sensuri prin tunel. Linia începe la circa 0,8 km după stația Púchov, unde se termină proiectul precedent, iar linia desenată are 14,6 km. Tunelurile nu sunt desenate ca loturi separate."
+      },
+      "sourceRefs": [
+        "zsr-puchov-povazska-tepla",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "puchov-povazska-tepla"
+    },
+    {
+      "id": "povazska-tepla-zilina",
+      "name": {
+        "en": "Považská Teplá – Dolný Hričov – Žilina",
+        "ro": "Považská Teplá – Dolný Hričov – Žilina"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-12-19",
+        "constructionStart": "2014-02-06",
+        "opened": "2018-02"
+      },
+      "lengthKm": 22.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 127.7908511,
+              "currency": "EUR",
+              "year": 2013,
+              "scope": "works",
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2013-12-19",
+            "sourceRef": "zsr-povazska-tepla-dolny-hricov"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-12-19",
+          "sourceRef": "zsr-povazska-tepla-dolny-hricov"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2014-02-06",
+          "sourceRef": "zsr-povazska-tepla-dolny-hricov"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-02",
+          "sourceRef": "wiki-sk-line",
+          "note": {
+            "en": "Commissioning month per sk.wikipedia; ŽSR: final takeover protocol 29 December 2017.",
+            "ro": "Luna punerii în funcțiune conform sk.wikipedia; ŽSR: proces-verbal final de preluare la 29 decembrie 2017."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 52.431387,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Part Považská Teplá – Dolný Hričov: grant agreement 966/A822/2014 (10 November 2014); EU share EUR 52.43 million of EUR 73.09 million total eligible cost",
+            "ro": "Partea Považská Teplá – Dolný Hričov: acordul de grant 966/A822/2014 (10 noiembrie 2014); contribuția UE 52,43 milioane EUR din 73,09 milioane EUR costuri eligibile totale"
+          }
+        },
+        {
+          "source": "EU",
+          "amount": {
+            "amount": 39.483891,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Part Dolný Hričov – Žilina: grant agreement Z311011A952 (3 June 2017) under the Operational Programme Integrated Infrastructure; EU share EUR 39.48 million of EUR 49.46 million total eligible cost",
+            "ro": "Partea Dolný Hričov – Žilina: acordul de grant Z311011A952 (3 iunie 2017) în cadrul Programului Operațional Infrastructură Integrată; contribuția UE 39,48 milioane EUR din 49,46 milioane EUR costuri eligibile totale"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie TEBS (lead TSS GRADE, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 127.7908511,
+          "currency": "EUR",
+          "year": 2013,
+          "scope": "works",
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "note": {
+        "en": "Stage II of Púchov – Žilina: modernisation of the existing double-track line over 22.8 km, delivered as two ŽSR projects under one contract. Contract with Združenie TEBS (lead TSS GRADE, a.s.) signed 19 December 2013 for EUR 127.79 million; works began on 6 February 2014. ŽSR reports the works finished on 31 December 2017 with the final takeover protocol on 29 December 2017, and the construction approval became final on 12 July 2019; sk.wikipedia gives a ceremony and commissioning in February 2018. Length is the ŽSR figure; the drawn line to Žilina station is 27.3 km, because the ŽSR section ends before Žilina station.",
+        "ro": "Etapa II a tronsonului Púchov – Žilina: modernizarea liniei existente cu două căi pe 22,8 km, realizată ca două proiecte ŽSR în baza unui singur contract. Contract cu Združenie TEBS (lider TSS GRADE, a.s.) semnat la 19 decembrie 2013 pentru 127,79 milioane EUR; lucrările au început la 6 februarie 2014. ŽSR raportează lucrările terminate la 31 decembrie 2017, cu procesul-verbal final de preluare la 29 decembrie 2017, iar autorizația de recepție a devenit definitivă la 12 iulie 2019; sk.wikipedia indică ceremonie și punere în funcțiune în februarie 2018. Lungimea este cifra ŽSR; linia desenată până la stația Žilina are 27,3 km, deoarece secțiunea ŽSR se termină înainte de stația Žilina."
+      },
+      "sourceRefs": [
+        "zsr-povazska-tepla-dolny-hricov",
+        "zsr-dolny-hricov-zilina",
+        "wiki-sk-line",
+        "osm-relation-366619",
+        "osm"
+      ],
+      "geometryRef": "povazska-tepla-zilina"
+    }
+  ],
+  "sources": [
+    {
+      "id": "zsr-raca-senkvice",
+      "title": "ŽSR: Modernizácia železničnej trate Bratislava Rača – Trnava, úsek Bratislava Rača – Šenkvice",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/modernizacia-zeleznicnej-trate-bratislava-raca-trnava-usek-bratislava-raca-senkvice",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-senkvice-cifer",
+      "title": "ŽSR: Modernizácia železničnej trate Šenkvice – Cífer a staníc Rača – Trnava na Slovensku",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/modernizacia-zeleznicnej-trate-senkvice-cifer-a-stanic-raca-trnava-na-slovensku",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-trnava-piestany",
+      "title": "ŽSR: Modernizácia železničnej trate Trnava – Nové Mesto nad Váhom, úsek Trnava – Piešťany",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/modernizacia-zeleznicnej-trate-trnavanove-mesto-nad-vahom-usek-trnava-piestany",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-piestany-nove-mesto",
+      "title": "ŽSR: Modernizácia železničnej trate Trnava – Nové Mesto nad Váhom, II. etapa, úsek Piešťany – Nové Mesto nad Váhom",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/modernizacia-zeleznicnej-trate-trnavanove-mesto-nad-vahom-zkm-47-550-100-500-pre-tratovu-rychlost-do-160-km-h-ii.etapa-piestanynove-mesto-nad-vahom",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-nove-mesto-zlatovce",
+      "title": "ŽSR: Modernizácia železničnej trate Nové Mesto nad Váhom – Púchov, I. a II. etapa (úsek Nové Mesto nad Váhom – Zlatovce)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/zsr-modernizacia-zeleznicnej-trate-nove-mesto-nad-vahom-puchov-zkm-100-500-159-100-pre-tratovu-rychlost-do-160-km-hod.i.etapa-a-ii.etapa--usek-nove-mesto-nad-vahom-zlatovce-",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-tt-belusa",
+      "title": "ŽSR: Modernizácia železničnej trate Nové Mesto nad Váhom – Púchov, IV. a V. etapa (úsek Trenčianska Teplá – Ilava – Beluša)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/zsr-modernizacia-zeleznicnej-trate-nove-mesto-nad-vahom-puchov-zkm-100-500-159-100-pre-tratovu-rychlost-do-160-km-hod.iv.a-v.etapa-usek-trencianska-tepla-ilava-belusa",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-belusa-puchov",
+      "title": "ŽSR: Modernizácia železničnej trate Nové Mesto nad Váhom – Púchov, VI. etapa (úsek Beluša – Púchov)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/zsr-modernizacia-zeleznicnej-trate-nove-mesto-nad-vahom--puchov-zkm-100-500--159-100-pre-tratovu-rychlost-do-160-km-hod.vi.etapa-usek-belusa-puchov",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-puchov-povazska-tepla",
+      "title": "ŽSR: Modernizácia železničnej trate Púchov – Žilina, I. etapa (Púchov – Považská Teplá)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/zsr-modernizacia-zeleznicnej-trate-puchov--zilina-pre-tratovu-rychlost-do-160-km-hod.-i.etapa-puchov--povazska-tepla",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-povazska-tepla-dolny-hricov",
+      "title": "ŽSR: Modernizácia trate Púchov – Žilina, II. etapa, časť Považská Teplá – Dolný Hričov",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/zsr-modernizacia-trate-puchov--zilina-pre-rychlost-do-160-km-hod.ii.etapa-usek-povazska-tepla-mimo-zilina-mimo--cast-povazska-tepla-mimo-dolny-hricov-mimo",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-dolny-hricov-zilina",
+      "title": "ŽSR: Modernizácia trate Púchov – Žilina, II. etapa, 2. fáza (Dolný Hričov – Žilina), realizácia",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/zsr-modernizacia-trate-puchov-zilina-pre-rychlost-do-160-km-hod.ii.etapa-usek-povazska-tepla-mimo-zilina-mimo--2.faza-dolny-hricov-zilina-realizacia",
+      "publisher": "ŽSR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "wiki-sk-line",
+      "title": "Wikipédia: Železničná trať Bratislava – Žilina (Prehľad modernizácie úsekov)",
+      "url": "https://sk.wikipedia.org/wiki/%C5%BDelezni%C4%8Dn%C3%A1_tra%C5%A5_Bratislava_%E2%80%93_%C5%BDilina",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sita-trencin-2016",
+      "title": "SITA Doprava: Modernizácia železničného úseku pri Trenčíne sa opäť predĺži (18 November 2016)",
+      "url": "https://sita.sk/nasadoprava/modernizacia-zeleznicneho-useku-pri-trencine-sa-opat-predlzi/",
+      "publisher": "SITA",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "vlaky-trencin-2013",
+      "title": "Vlaky.net: Modernizácia trate cez Trenčín (17 May 2013)",
+      "url": "https://www.vlaky.net/zeleznice/spravy/4926-Modernizacia-trate-cez-Trencin/",
+      "publisher": "Vlaky.net",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "crp-zlatovce-tt",
+      "title": "Register projektov: ŽSR, Modernizácia trate Nové Mesto nad Váhom – Púchov, III. etapa (úsek Zlatovce – Trenčianska Teplá)",
+      "url": "https://www.crp.gov.sk/zsr-modernizacia-zel-trate-nnove-mesto-nad-vahom-puchov-zkm-100500-159100-pre-trat-rychlost-do-160-km-hod-iii-etapa-usek-zlatovce-trencianska-tepla/",
+      "publisher": "Úrad vlády SR (CRP)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-366619",
+      "title": "OpenStreetMap: relation 366619, railway 120 Bratislava – Žilina (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/relation/366619",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

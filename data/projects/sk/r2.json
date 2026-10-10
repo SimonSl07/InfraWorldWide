@@ -1,0 +1,1015 @@
+{
+  "id": "sk-r2",
+  "country": "sk",
+  "category": "highway",
+  "name": {
+    "en": "R2 expressway (Trenčín – Prievidza – Zvolen – Lučenec – Rimavská Sobota – Rožňava – Košice)",
+    "ro": "Drumul expres R2 (Trenčín – Prievidza – Zvolen – Lučenec – Rimavská Sobota – Rožňava – Košice)"
+  },
+  "description": {
+    "en": "Southern expressway planned from the D1 at Chocholná near Trenčín through Bánovce nad Bebravou, Prievidza, Žiar nad Hronom, Zvolen, Lučenec, Rimavská Sobota and Rožňava to the D1 at Rozhanovce near Košice. Modelled here are the opened sections with sourced dates (the Bánovce, Žiar nad Hronom, Ožďany, Figa and Tornaľa bypasses and the stretch from Zvolen to Tomášovce), the Košice bypass from Košice, Juh to Hrašovík, and three sections at tender stage. Several early sections were opened as one carriageway only. The stretch shared with the R1 between Žiar nad Hronom and Zvolen is counted in the R1 project. The remaining sections are at preparation stage and are not drawn.",
+    "ro": "Drum expres sudic planificat de la D1 la Chocholná, lângă Trenčín, prin Bánovce nad Bebravou, Prievidza, Žiar nad Hronom, Zvolen, Lučenec, Rimavská Sobota și Rožňava până la D1 la Rozhanovce, lângă Košice. Sunt modelate sectoarele deschise cu date din surse (ocolitoarele Bánovce, Žiar nad Hronom, Ožďany, Figa și Tornaľa și porțiunea de la Zvolen la Tomášovce), ocolitoarea Košice de la Košice, Juh la Hrašovík și trei sectoare aflate la etapa de licitație. Mai multe sectoare timpurii au fost deschise cu o singură cale de rulare. Porțiunea comună cu R1 între Žiar nad Hronom și Zvolen este numărată în proiectul R1. Celelalte sectoare sunt în pregătire și nu sunt desenate."
+  },
+  "operator": "sk-nds",
+  "lots": [
+    {
+      "id": "ruskovce-pravotice",
+      "name": {
+        "en": "Ruskovce – Pravotice (Bánovce nad Bebravou bypass, half profile)",
+        "ro": "Ruskovce – Pravotice (ocolitoarea Bánovce nad Bebravou, profil parțial)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-12-30",
+        "constructionStart": "2014-03-06",
+        "opened": "2016-10-06"
+      },
+      "lengthKm": 9.56,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 15
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-12-30",
+          "sourceRef": "wiki-r2-sk",
+          "note": {
+            "en": "Construction contract signed.",
+            "ro": "Contractul de execuție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2014-03-06",
+          "sourceRef": "hd-2014"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-10-06",
+          "sourceRef": "tsk-ruskovce-pravotice",
+          "note": {
+            "en": "Ceremonial opening of the half-profile section. Originally due in May 2016. historiadialnic.sk dates the handover to 9 October 2016.",
+            "ro": "Deschidere oficială a sectorului cu profil parțial. Termenul inițial era mai 2016. historiadialnic.sk datează predarea la 9 octombrie 2016."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Inžinierske stavby, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Cesty Nitra, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First section of the R2 between Trenčín and Prievidza, built as one carriageway (category 1/2 R 24,5/120) with 15 bridges and 3 junctions. TSK gives the contract price as EUR 88.2 million excluding VAT (EUR 105.82 million including VAT), financed from EU funds and the state budget. TSK names the builder as Investičné stavby, a. s. (Košice), while sk.wikipedia names the joint venture of Inžinierske stavby, a.s. and Cesty Nitra, a.s., which is recorded here. The regional authority (TSK) gives the whole section as 10.760 km; the recorded 9.56 km is the half-profile length given by sk.wikipedia and historiadialnic.sk. The drawn line (9.65 km) starts at the temporary connection to the I/9 at Ruskovce and ends at Pravotice. The right half is not in the plan before 2034 according to sk.wikipedia.",
+        "ro": "Primul sector al R2 între Trenčín și Prievidza, construit cu o singură cale de rulare (categoria 1/2 R 24,5/120), cu 15 poduri și 3 noduri. TSK indică prețul contractului la 88,2 milioane EUR fără TVA (105,82 milioane EUR cu TVA), finanțat din fonduri UE și din bugetul de stat. TSK numește constructorul Investičné stavby, a. s. (Košice), în timp ce sk.wikipedia numește asocierea Inžinierske stavby, a.s. și Cesty Nitra, a.s., înregistrată aici. Autoritatea regională (TSK) indică 10,760 km pentru întreg sectorul; cei 9,56 km înregistrați sunt lungimea profilului parțial din sk.wikipedia și historiadialnic.sk. Linia desenată (9,65 km) începe la racordul provizoriu cu I/9 de la Ruskovce și se termină la Pravotice. Jumătatea dreaptă nu este în plan înainte de 2034, potrivit sk.wikipedia."
+      },
+      "sourceRefs": [
+        "wiki-r2-sk",
+        "tsk-ruskovce-pravotice",
+        "hd-2014",
+        "hd-2016",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "ruskovce-pravotice",
+      "contract": {
+        "value": {
+          "amount": 88.2,
+          "currency": "EUR",
+          "year": 2013,
+          "scope": "works",
+          "note": "Contract price excluding VAT (EUR 105.82 million including VAT), as stated by the regional authority (TSK) on 7 October 2016."
+        }
+      }
+    },
+    {
+      "id": "ziar-nad-hronom-obchvat",
+      "name": {
+        "en": "Žiar nad Hronom west bypass (half profile)",
+        "ro": "Ocolitoarea de vest Žiar nad Hronom (profil parțial)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-09-25",
+        "constructionStart": "2012-10-16",
+        "opened": "2014-12-15"
+      },
+      "lengthKm": 5.76,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 5
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2012-09-25",
+          "sourceRef": "wiki-r2-sk",
+          "note": {
+            "en": "Construction contract signed.",
+            "ro": "Contractul de execuție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2012-10-16",
+          "sourceRef": "hd-2012"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-12-15",
+          "sourceRef": "hd-2014",
+          "note": {
+            "en": "Whole section handed over; one carriageway, except about 1.4 km at the R1 junction built as full profile.",
+            "ro": "Întregul sector dat în folosință; o singură cale de rulare, cu excepția a circa 1,4 km la nodul cu R1, construiți cu profil complet."
+          }
+        }
+      ],
+      "note": {
+        "en": "Western bypass of Žiar nad Hronom from the Žiar nad Hronom, sever junction to the Žiar nad Hronom, juh interchange with the R1, with 2 grade-separated junctions and 5 bridges totalling 293 m. Historiadialnic.sk gives 1.36 km of full profile, sk.wikipedia about 1.4 km. The drawn line (5.17 km, about 10% under the recorded length) follows the OpenStreetMap ways tagged R2 and ends at the R1 junction; the R1 and R2 share the road from there to Zvolen, which is counted in the R1 project.",
+        "ro": "Ocolitoarea de vest a orașului Žiar nad Hronom, de la nodul Žiar nad Hronom, sever până la nodul Žiar nad Hronom, juh cu R1, cu 2 noduri denivelate și 5 poduri însumând 293 m. Historiadialnic.sk indică 1,36 km cu profil complet, sk.wikipedia circa 1,4 km. Linia desenată (5,17 km, cu circa 10% sub lungimea înregistrată) urmează căile OpenStreetMap etichetate R2 și se termină la nodul cu R1; R1 și R2 folosesc împreună drumul de acolo până la Zvolen, numărat în proiectul R1."
+      },
+      "sourceRefs": [
+        "wiki-r2-sk",
+        "hd-2012",
+        "hd-2014",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "ziar-nad-hronom-obchvat"
+    },
+    {
+      "id": "zvolen-vychod-pstrusa",
+      "name": {
+        "en": "Zvolen, východ – Pstruša",
+        "ro": "Zvolen, východ – Pstruša"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014-09-11",
+        "opened": "2017-05-16"
+      },
+      "lengthKm": 7.85,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 14
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2014-09-11",
+          "sourceRef": "hd-2014"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-05-16",
+          "sourceRef": "wiki-r2-sk",
+          "note": {
+            "en": "Ceremonial handover. sk.wikipedia: an extended pyrotechnic survey in spring 2015 pushed the planned opening to November 2016, and the section opened later still.",
+            "ro": "Predare festivă. sk.wikipedia: o cercetare pirotehnică prelungită în primăvara lui 2015 a mutat deschiderea planificată în noiembrie 2016, iar sectorul a fost deschis și mai târziu."
+          }
+        }
+      ],
+      "note": {
+        "en": "Full profile, category R 24,5/120, from the Zvolen bypass past the north of Vígľaš to Pstruša, with 14 bridges and a grade-separated junction; a temporary junction linked the I/16 while the neighbouring sections were built. The drawn line (7.27 km, 7% under the recorded length) starts at the Zvolen, východ junction and ends at the Pstruša junction, which OpenStreetMap names Vígľaš.",
+        "ro": "Profil complet, categoria R 24,5/120, de la ocolitoarea Zvolenului, pe la nordul localității Vígľaš, până la Pstruša, cu 14 poduri și un nod denivelat; un nod provizoriu a legat I/16 cât timp s-au construit sectoarele vecine. Linia desenată (7,27 km, cu 7% sub lungimea înregistrată) începe la nodul Zvolen, východ și se termină la nodul Pstruša, numit Vígľaš în OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wiki-r2-sk",
+        "hd-2014",
+        "hd-2017",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "zvolen-vychod-pstrusa"
+    },
+    {
+      "id": "pstrusa-krivan",
+      "name": {
+        "en": "Pstruša – Kriváň (Detva southern bypass)",
+        "ro": "Pstruša – Kriváň (ocolitoarea de sud a orașului Detva)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-11-12",
+        "constructionStart": "2013-11-25",
+        "opened": "2015-11-10"
+      },
+      "lengthKm": 10.38,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 18
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-11-12",
+          "sourceRef": "wiki-r2-sk",
+          "note": {
+            "en": "Construction contract signed.",
+            "ro": "Contractul de execuție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-11-25",
+          "sourceRef": "hd-2013"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-11-10",
+          "sourceRef": "wiki-r2-sk",
+          "note": {
+            "en": "Handed over in full profile, on schedule.",
+            "ro": "Predat cu profil complet, la termen."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag, s.r.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Váhostav SK",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Full profile, category R 24,5/120, running beside the I/16 and railway line 160, with 18 bridges, 3 junctions and the Detva feeder road. sk.wikipedia gives the consortium's price as EUR 178 million without a VAT basis, so it is not recorded as a money field; the same page notes earlier estimates of EUR 134 million (2009) and EUR 232 million (summer 2012). The drawn line (10.19 km, 2% under) starts at the Pstruša junction, which OpenStreetMap names Vígľaš, and ends at the Kriváň junction.",
+        "ro": "Profil complet, categoria R 24,5/120, paralelă cu I/16 și cu linia ferată 160, cu 18 poduri, 3 noduri și drumul de legătură Detva. sk.wikipedia indică prețul consorțiului la 178 milioane EUR fără bază TVA, deci nu este înregistrat ca sumă; aceeași pagină notează estimări anterioare de 134 milioane EUR (2009) și 232 milioane EUR (vara 2012). Linia desenată (10,19 km, cu 2% sub) începe la nodul Pstruša, numit Vígľaš în OpenStreetMap, și se termină la nodul Kriváň."
+      },
+      "sourceRefs": [
+        "wiki-r2-sk",
+        "hd-2013",
+        "hd-2015",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "pstrusa-krivan"
+    },
+    {
+      "id": "krivan-mytna",
+      "name": {
+        "en": "Kriváň – Mýtna (Krivánsky potok viaduct)",
+        "ro": "Kriváň – Mýtna (viaductul Krivánsky potok)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-02-14",
+        "constructionStart": "2020-03-16",
+        "opened": "2025-11-20"
+      },
+      "lengthKm": 9.1,
+      "profile": {
+        "works": "greenfield",
+        "viaductKm": 4.37
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-02-14",
+          "sourceRef": "nds-krivan-mytna-contract",
+          "note": {
+            "en": "Date of the NDS press release announcing the signed contract.",
+            "ro": "Data comunicatului NDS care anunță contractul semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-03-16",
+          "sourceRef": "hd-2020",
+          "note": {
+            "en": "sk.wikipedia dates the start of construction to December 2021 in its prose (its section table gives 03/2020). The earliest documented site start is kept.",
+            "ro": "sk.wikipedia datează începutul construcției în decembrie 2021 în text (tabelul său de sectoare indică 03/2020). Este păstrat cel mai timpuriu început documentat al lucrărilor."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-11-20",
+          "sourceRef": "cdb-vybrane-zmeny",
+          "note": {
+            "en": "Opened as one 9.1 km section. NDS had announced 2024 when the contract was signed.",
+            "ro": "Dat în folosință ca un singur sector de 9,1 km. NDS anunțase 2024 la semnarea contractului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "STRABAG s.r.o.",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia SK, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia CS, a.s.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 232.146454,
+          "currency": "EUR",
+          "year": 2020,
+          "scope": "works",
+          "note": "Contract price excluding VAT, as published by NDS on 14 February 2020."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 232.146454,
+              "currency": "EUR",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2020-02-14",
+            "sourceRef": "nds-krivan-mytna-contract"
+          }
+        ]
+      },
+      "note": {
+        "en": "Full profile from the Kriváň junction to the temporary at-grade connection before Mýtna, dominated by the Krivánsky potok viaduct, which the CDB register gives as 4.37 km (NDS said about 5 km during construction), the longest in Slovakia. The consortium was the winner of NDS's first tender judged on several criteria. The drawn line (9.06 km) ends at the OpenStreetMap node 9.1 km from the Kriváň junction, where the Mýtna – Lovinobaňa, Tomášovce section begins.",
+        "ro": "Profil complet de la nodul Kriváň până la racordul provizoriu în nivel dinaintea localității Mýtna, dominat de viaductul Krivánsky potok, pe care registrul CDB îl dă la 4,37 km (NDS spunea circa 5 km în timpul construcției), cel mai lung din Slovacia. Consorțiul a câștigat prima licitație NDS evaluată după mai multe criterii. Linia desenată (9,06 km) se termină la nodul OpenStreetMap aflat la 9,1 km de nodul Kriváň, unde începe sectorul Mýtna – Lovinobaňa, Tomášovce."
+      },
+      "sourceRefs": [
+        "cdb-vybrane-zmeny",
+        "nds-krivan-mytna-contract",
+        "wiki-r2-sk",
+        "hd-2020",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "krivan-mytna"
+    },
+    {
+      "id": "mytna-lovinobana-tomasovce",
+      "name": {
+        "en": "Mýtna – Lovinobaňa, Tomášovce",
+        "ro": "Mýtna – Lovinobaňa, Tomášovce"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-07-23",
+        "constructionStart": "2019-08-22",
+        "opened": "2022-12-19"
+      },
+      "lengthKm": 13.5,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 11,
+        "viaductKm": 1.6
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-07-23",
+          "sourceRef": "nds-mytna-lovinobana-contract",
+          "note": {
+            "en": "Date of the NDS press release announcing the signed contract.",
+            "ro": "Data comunicatului NDS care anunță contractul semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-08-22",
+          "sourceRef": "hd-2019"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-19",
+          "sourceRef": "hd-2022",
+          "note": {
+            "en": "Opened 16 months after the original contractual deadline (sk.wikipedia).",
+            "ro": "Dat în folosință la 16 luni după termenul contractual inițial (sk.wikipedia)."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "NDS: the construction is financed from the state budget.",
+            "ro": "NDS: construcția este finanțată din bugetul de stat."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Metrostav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "HOCHTIEF SK s.r.o.",
+          "role": "builder"
+        },
+        {
+          "name": "HOCHTIEF CZ a.s.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24,
+        "value": {
+          "amount": 127.705628,
+          "currency": "EUR",
+          "year": 2019,
+          "scope": "works",
+          "note": "Contract price excluding VAT, as published by NDS (EUR 127,705,627.71)."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 127.705628,
+              "currency": "EUR",
+              "year": 2019,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2019-07-23",
+            "sourceRef": "nds-mytna-lovinobana-contract"
+          }
+        ]
+      },
+      "note": {
+        "en": "Full profile from the temporary at-grade connection with the I/16 before Mýtna, through the Mýtna interchange, to the Tomášovce interchange, with 11 bridges (1.6 km in total), 6 noise walls and a wildlife crossing at Divínsky háj. Contract duration is stated as 2 years, so the opening was first due in 2021. sk.wikipedia gives a pre-tender estimate of EUR 168 million (earlier 204 million), VAT basis not stated. The drawn line (12.93 km, 4% under) starts at the end of the Kriváň – Mýtna line and ends where OpenStreetMap's built R2 ends at Tomášovce.",
+        "ro": "Profil complet de la racordul provizoriu în nivel cu I/16 dinaintea localității Mýtna, prin nodul Mýtna, până la nodul Tomášovce, cu 11 poduri (1,6 km în total), 6 ziduri antifonice și o trecere pentru faună la Divínsky háj. Durata contractului este de 2 ani, deci deschiderea era prevăzută inițial pentru 2021. sk.wikipedia indică o estimare dinaintea licitației de 168 milioane EUR (anterior 204 milioane), fără bază TVA. Linia desenată (12,93 km, cu 4% sub) începe la capătul liniei Kriváň – Mýtna și se termină unde se oprește R2 construit din OpenStreetMap, la Tomášovce."
+      },
+      "sourceRefs": [
+        "nds-mytna-lovinobana-contract",
+        "nds-mytna-lovinobana-numbers",
+        "wiki-r2-sk",
+        "hd-2019",
+        "hd-2022",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "mytna-lovinobana-tomasovce"
+    },
+    {
+      "id": "ozdany-obchvat",
+      "name": {
+        "en": "Ožďany bypass (half profile)",
+        "ro": "Ocolitoarea Ožďany (profil parțial)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-12",
+        "opened": "2006-12-05"
+      },
+      "lengthKm": 6.09,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 6
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-12",
+          "sourceRef": "hd-2004"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-12-05",
+          "sourceRef": "wiki-r2-sk",
+          "note": {
+            "en": "Handed over for early use. historiadialnic.sk gives 4 December 2006.",
+            "ro": "Predat pentru utilizare anticipată. historiadialnic.sk indică 4 decembrie 2006."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Structural fund (sk.wikipedia).",
+            "ro": "Fond structural (sk.wikipedia)."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "European Investment Bank (sk.wikipedia).",
+            "ro": "Banca Europeană de Investiții (sk.wikipedia)."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (sk.wikipedia).",
+            "ro": "Buget de stat (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "One carriageway, category R 22,5/100, with 6 bridges and temporary at-grade connections to the I/16 and I/50. Cost stated as 1,718,412,605 SKK (SKK is not in the exchange-rate table, so prose only). Lengths differ between sources: sk.wikipedia (citing NDS) gives 6.09 km, historiadialnic.sk 4.767 km, and the drawn line follows 5.1 km of OpenStreetMap ways, 16% under the recorded length.",
+        "ro": "O singură cale de rulare, categoria R 22,5/100, cu 6 poduri și racorduri provizorii în nivel la I/16 și I/50. Costul este indicat la 1.718.412.605 SKK (SKK nu figurează în tabelul de cursuri, deci doar în text). Lungimile diferă între surse: sk.wikipedia (citând NDS) indică 6,09 km, historiadialnic.sk 4,767 km, iar linia desenată urmează 5,1 km de căi OpenStreetMap, cu 16% sub lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "wiki-r2-sk",
+        "hd-2004",
+        "hd-2006",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "ozdany-obchvat"
+    },
+    {
+      "id": "zacharovce-batka",
+      "name": {
+        "en": "Zacharovce – Bátka (left half)",
+        "ro": "Zacharovce – Bátka (jumătatea stângă)"
+      },
+      "status": "tendered",
+      "lengthKm": 8.32,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-03-30",
+          "sourceRef": "wiki-harmonogram"
+        }
+      ],
+      "note": {
+        "en": "Half-profile section between the Rimavská Sobota and Bátka interchanges. NDS lists it with 8.32 km at the stage 'Súťaž na zhotoviteľa stavby'; the MDV road schedule as reproduced by sk.wikipedia gives a tender launched on 30 March 2026 and a start in 2027. Opening years are not recorded: the table and the MDV workbook disagree. The line follows the proposed R2 ways in OpenStreetMap (no junction nodes are mapped there). The Zacharovce and Bátka cuts are set by the official lengths of 8.32 km and 6.18 km counted back from the start of the Figa bypass, which puts the end of the Ožďany bypass 25.0 km away against 25.06 km from the NDS lengths.",
+        "ro": "Sector cu profil parțial între nodurile Rimavská Sobota și Bátka. NDS îl listează cu 8,32 km la etapa „Súťaž na zhotoviteľa stavby”; programul MDV al drumurilor, reprodus de sk.wikipedia, indică licitație lansată la 30 martie 2026 și început în 2027. Anii de deschidere nu sunt înregistrați: tabelul și registrul MDV nu concordă. Linia urmează căile R2 propuse din OpenStreetMap (acolo nu sunt cartate noduri). Tăieturile Zacharovce și Bátka sunt stabilite după lungimile oficiale de 8,32 km și 6,18 km numărate înapoi de la începutul ocolitoarei Figa, ceea ce pune capătul ocolitoarei Ožďany la 25,0 km, față de 25,06 km din lungimile NDS."
+      },
+      "sourceRefs": [
+        "nds-priprava-stavieb",
+        "wiki-harmonogram",
+        "wiki-r2-sk",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "zacharovce-batka"
+    },
+    {
+      "id": "batka-figa",
+      "name": {
+        "en": "Bátka – Figa (left half)",
+        "ro": "Bátka – Figa (jumătatea stângă)"
+      },
+      "status": "tendered",
+      "lengthKm": 6.18,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-03-30",
+          "sourceRef": "wiki-harmonogram"
+        }
+      ],
+      "note": {
+        "en": "Half-profile section from the Bátka interchange to the start of the Figa bypass, with no interchanges. NDS lists it with 6.18 km at the stage 'Súťaž na zhotoviteľa stavby'; the MDV road schedule as reproduced by sk.wikipedia gives a tender launched on 30 March 2026 and a start in 2027. Opening years are not recorded: the table and the MDV workbook disagree. sk.wikipedia notes that a building permit was issued in 2024. The line follows the proposed R2 ways in OpenStreetMap; the Bátka cut is set by the official length of 6.18 km counted back from the Figa bypass.",
+        "ro": "Sector cu profil parțial de la nodul Bátka până la începutul ocolitoarei Figa, fără noduri. NDS îl listează cu 6,18 km la etapa „Súťaž na zhotoviteľa stavby”; programul MDV al drumurilor, reprodus de sk.wikipedia, indică licitație lansată la 30 martie 2026 și început în 2027. Anii de deschidere nu sunt înregistrați: tabelul și registrul MDV nu concordă. sk.wikipedia notează că autorizația de construire a fost emisă în 2024. Linia urmează căile R2 propuse din OpenStreetMap; tăietura Bátka este stabilită după lungimea oficială de 6,18 km numărată înapoi de la ocolitoarea Figa."
+      },
+      "sourceRefs": [
+        "nds-priprava-stavieb",
+        "wiki-harmonogram",
+        "wiki-r2-sk",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "batka-figa"
+    },
+    {
+      "id": "figa-obchvat",
+      "name": {
+        "en": "Figa bypass (half profile)",
+        "ro": "Ocolitoarea Figa (profil parțial)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-09",
+        "opened": "2008-08-28"
+      },
+      "lengthKm": 3.3,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006-09",
+          "sourceRef": "hd-2006"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-08-28",
+          "sourceRef": "hd-2008"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Structural fund (sk.wikipedia, for the Figa and Tornaľa bypasses together).",
+            "ro": "Fond structural (sk.wikipedia, pentru ocolitoarele Figa și Tornaľa împreună)."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget and NDS (sk.wikipedia, for the Figa and Tornaľa bypasses together).",
+            "ro": "Buget de stat și NDS (sk.wikipedia, pentru ocolitoarele Figa și Tornaľa împreună)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Left half of the Figa bypass, one carriageway in category R 11,5/100. The builders are named by sk.wikipedia for the Figa and Tornaľa bypasses together (14 km, 19 bridges, 3 junctions, 2003–2008). Historiadialnic.sk gives 2.708 km for this half; the recorded 3.3 km is the sk.wikipedia table length. The drawn line (3.4 km) runs from the first built OpenStreetMap way to the node 3.3 km along, where the Tornaľa bypass begins.",
+        "ro": "Jumătatea stângă a ocolitoarei Figa, o singură cale de rulare în categoria R 11,5/100. Constructorii sunt numiți de sk.wikipedia pentru ocolitoarele Figa și Tornaľa împreună (14 km, 19 poduri, 3 noduri, 2003–2008). Historiadialnic.sk indică 2,708 km pentru această jumătate; cei 3,3 km înregistrați sunt lungimea din tabelul sk.wikipedia. Linia desenată (3,4 km) merge de la prima cale construită din OpenStreetMap până la nodul aflat la 3,3 km, unde începe ocolitoarea Tornaľa."
+      },
+      "sourceRefs": [
+        "wiki-r2-sk",
+        "hd-2006",
+        "hd-2008",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "figa-obchvat"
+    },
+    {
+      "id": "tornala-obchvat",
+      "name": {
+        "en": "Tornaľa bypass (half profile)",
+        "ro": "Ocolitoarea Tornaľa (profil parțial)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003-01-15",
+        "opened": "2006-12-04"
+      },
+      "lengthKm": 10.694,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2003-01-15",
+          "sourceRef": "hd-2003"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-12-04",
+          "sourceRef": "hd-2006"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Structural fund (sk.wikipedia, for the Figa and Tornaľa bypasses together).",
+            "ro": "Fond structural (sk.wikipedia, pentru ocolitoarele Figa și Tornaľa împreună)."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget and NDS (sk.wikipedia, for the Figa and Tornaľa bypasses together).",
+            "ro": "Buget de stat și NDS (sk.wikipedia, pentru ocolitoarele Figa și Tornaľa împreună)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Left half of the Tornaľa bypass with the Tornaľa, juh and Tornaľa, sever junctions, one carriageway in category R 11,5/100. The builders are named by sk.wikipedia for the Figa and Tornaľa bypasses together. The drawn line (9.52 km, 11% under the recorded length) ends at the last built OpenStreetMap way north of Tornaľa.",
+        "ro": "Jumătatea stângă a ocolitoarei Tornaľa, cu nodurile Tornaľa, juh și Tornaľa, sever, o singură cale de rulare în categoria R 11,5/100. Constructorii sunt numiți de sk.wikipedia pentru ocolitoarele Figa și Tornaľa împreună. Linia desenată (9,52 km, cu 11% sub lungimea înregistrată) se termină la ultima cale construită din OpenStreetMap, la nord de Tornaľa."
+      },
+      "sourceRefs": [
+        "wiki-r2-sk",
+        "hd-2003",
+        "hd-2006",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "tornala-obchvat"
+    },
+    {
+      "id": "kosice-saca-haniska",
+      "name": {
+        "en": "Košice, Šaca – Haniska (I. úsek)",
+        "ro": "Košice, Šaca – Haniska (sectorul I)"
+      },
+      "status": "tendered",
+      "lengthKm": 6.8,
+      "note": {
+        "en": "Southern part of the Košice bypass from the Šaca interchange to the R2 and R4 junction at Haniska. NDS lists it as Košice, Šaca – Košické Oľšany, I. úsek (6.80 km, 'Súťaž na zhotoviteľa stavby'). Tender and opening dates are not recorded: sk.wikipedia's reproduction of the MDV road schedule gives a tender launched on 27 May 2026, while the MDV workbook lists the tender as still in preparation. The drawn line follows the proposed OpenStreetMap ways in two pieces (6.51 km, 4% under): the mapped ways do not meet near Šaca, and the link into the Haniska junction is not drawn.",
+        "ro": "Partea de sud a ocolitoarei Košice, de la nodul Šaca la nodul R2 și R4 de la Haniska. NDS îl listează ca Košice, Šaca – Košické Oľšany, I. úsek (6,80 km, „Súťaž na zhotoviteľa stavby”). Datele licitației și ale deschiderii nu sunt înregistrate: reproducerea de pe sk.wikipedia a programului MDV indică licitație lansată la 27 mai 2026, în timp ce registrul MDV listează licitația ca fiind încă în pregătire. Linia desenată urmează căile propuse din OpenStreetMap în două bucăți (6,51 km, cu 4% sub): căile cartate nu se întâlnesc lângă Šaca, iar racordul spre nodul Haniska nu este desenat."
+      },
+      "sourceRefs": [
+        "nds-priprava-stavieb",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "kosice-saca-haniska"
+    },
+    {
+      "id": "kosice-saca-kosicke-olsany-ii",
+      "name": {
+        "en": "Košice, Šaca – Košické Oľšany, II. úsek (Košice, Juh – Hrašovík)",
+        "ro": "Košice, Šaca – Košické Oľšany, sectorul II (Košice, Juh – Hrašovík)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-03",
+        "constructionStart": "2022-03-23",
+        "opened": "2025-09-24"
+      },
+      "lengthKm": 14.261,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 13
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2022-03",
+          "sourceRef": "nds-kosice-retrospective",
+          "note": {
+            "en": "Contract signed in March 2022.",
+            "ro": "Contract semnat în martie 2022."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-03-23",
+          "sourceRef": "hd-2022",
+          "note": {
+            "en": "sk.wikipedia gives 25 March 2022.",
+            "ro": "sk.wikipedia indică 25 martie 2022."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-09-24",
+          "sourceRef": "cdb-vybrane-zmeny",
+          "note": {
+            "en": "Opened about six months after the contractual end of 21 March 2025 (sk.wikipedia).",
+            "ro": "Dat în folosință la circa șase luni după termenul contractual din 21 martie 2025 (sk.wikipedia)."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "NDS: EUR 165.3 million for R2 Košice, Šaca – Košické Oľšany (stages I and II together), of which EUR 140.5 million from EU funds and EUR 24.8 million from the state budget. The programme is not named.",
+            "ro": "NDS: 165,3 milioane EUR pentru R2 Košice, Šaca – Košické Oľšany (etapele I și II împreună), din care 140,5 milioane EUR din fonduri UE și 24,8 milioane EUR din bugetul de stat. Programul nu este numit."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia SK, a.s.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 36,
+        "value": {
+          "amount": 132.6,
+          "currency": "EUR",
+          "year": 2022,
+          "scope": "works",
+          "note": "Contract amount excluding VAT as given in the sk.wikipedia section table (NDS press release: EUR 132.5 million)."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 132.6,
+              "currency": "EUR",
+              "year": 2022,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2022-03",
+            "sourceRef": "wiki-r2-sk"
+          }
+        ]
+      },
+      "note": {
+        "en": "Full profile, category R 24,5/120 (R 24,5/100 on a shorter part), from the Košice, Juh interchange with the R4 through the new Krásna interchange to the Hrašovík interchange (Košice, Východ) at the D1, with 13 bridges, the Valaliky rest area and the Valaliky wetland restoration. sk.wikipedia gives the contract price as EUR 159,100,002.1 with the VAT basis unstated, the amount excluding VAT as EUR 132.6 million and a pre-contract estimate of EUR 202 million. The contract ran from March 2022 to March 2025. The NDS press releases and the CDB register give the length as 14.2 km (the NDS tender notice 14.262 km), historiadialnic.sk 14.261 km. The CDB register describes it as a new R4 section and OpenStreetMap tags the ways R4, but NDS and sk.wikipedia treat it as the R2. The drawn line (14.13 km) starts where the R4 Košice, Juh – Milhosť line starts. historiadialnic.sk lists a further 1.061 km, Hrašovík – Košické Oľšany, as part of the R2 works, opened on 16 December 2019 together with D1 Budimír – Bidovce but listed apart from the 14.44 km of that D1 section. It is neither drawn nor counted in this lot.",
+        "ro": "Profil complet, categoria R 24,5/120 (R 24,5/100 pe o parte mai scurtă), de la nodul Košice, Juh cu R4, prin noul nod Krásna, până la nodul Hrašovík (Košice, Východ) de la D1, cu 13 poduri, aria de odihnă Valaliky și refacerea zonei umede Valaliky. sk.wikipedia indică prețul contractului la 159.100.002,1 EUR fără bază TVA precizată, suma fără TVA la 132,6 milioane EUR și o estimare dinaintea contractului de 202 milioane EUR. Contractul a durat din martie 2022 până în martie 2025. Comunicatele NDS și registrul CDB dau lungimea de 14,2 km (anunțul de licitație NDS 14,262 km), historiadialnic.sk 14,261 km. Registrul CDB îl descrie ca nou sector R4, iar OpenStreetMap etichetează căile R4, dar NDS și sk.wikipedia îl tratează ca R2. Linia desenată (14,13 km) începe unde începe linia R4 Košice, Juh – Milhosť. historiadialnic.sk listează încă 1,061 km, Hrašovík – Košické Oľšany, ca parte a lucrărilor R2, dați în folosință la 16 decembrie 2019 odată cu D1 Budimír – Bidovce, dar listați separat de cei 14,44 km ai acelui sector D1. Nu este nici desenat, nici numărat în acest lot."
+      },
+      "sourceRefs": [
+        "cdb-vybrane-zmeny",
+        "wiki-r2-sk",
+        "nds-kosice-ii-start",
+        "nds-kosice-retrospective",
+        "nds-kosice-eu",
+        "nds-kosice-ii-tender",
+        "hd-2022",
+        "osm-r2",
+        "osm"
+      ],
+      "geometryRef": "kosice-saca-kosicke-olsany-ii"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-r2-sk",
+      "title": "Wikipedia (sk): Rýchlostná cesta R2 (Slovensko), section table and 'Úseky rýchlostnej cesty R2' prose",
+      "url": "https://sk.wikipedia.org/wiki/R%C3%BDchlostn%C3%A1_cesta_R2_(Slovensko)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "wiki-harmonogram",
+      "title": "Wikipedia (sk): Harmonogram výstavby diaľnic a rýchlostných ciest na Slovensku (built from the MDV SR road schedule 2026–2036; tender dates and planned openings)",
+      "url": "https://sk.wikipedia.org/wiki/Harmonogram_v%C3%BDstavby_dia%C4%BEnic_a_r%C3%BDchlostn%C3%BDch_ciest_na_Slovensku",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-priprava-stavieb",
+      "title": "NDS: Príprava stavieb (R2 Zacharovce – Bátka 8.32 km, Bátka – Figa 6.18 km and Košice, Šaca – Košické Oľšany I. úsek 6.80 km, all 'Súťaž na zhotoviteľa stavby')",
+      "url": "https://ndsas.sk/stavby/priprava-stavieb",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "cdb-vybrane-zmeny",
+      "title": "Cestná databanka (SSC): Vybrané zmeny v cestnej sieti SR (R2 Kriváň – Mýtna 9.1 km opened 20.11.2025; Šaca – Košické Oľšany 14.2 km opened 24.9.2025)",
+      "url": "https://www.cdb.sk/sk/cestna-siet-SR/vybrane-zmeny-v-cestnej-sieti.alej",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-krivan-mytna-contract",
+      "title": "NDS press, 14.2.2020: Podpísali sme zmluvu so zhotoviteľom úseku R2 Kriváň – Mýtna (contract price 232 146 454,18 EUR excluding VAT; four-member consortium)",
+      "url": "https://ndsas.sk/press/spravy/podpisali-sme-zmluvu-so-zhotovitelom-useku-r2-krivan-mytna",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-mytna-lovinobana-contract",
+      "title": "NDS press, 23.7.2019: Zmluva na R2 Mýtna – Lovinobaňa je podpísaná. Zhotoviteľ môže začať s prácami (127 705 627,71 EUR excluding VAT, 2 years, state budget)",
+      "url": "https://ndsas.sk/press/spravy/zmluva-na-r2-mytna-lovinobana-je-podpisana-zhotovitel-moze-zacat-s-pracami",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-mytna-lovinobana-numbers",
+      "title": "NDS press: Výborná správa pre juh Slovenska, nový úsek R2-ky pomôže najmä kamionistom (R2 Mýtna – Lovinobaňa, Tomášovce in numbers: 13.5 km, contract price 127 705 627,71 EUR, 11 bridges)",
+      "url": "https://ndsas.sk/press/spravy/vyborna-sprava-pre-juh-slovenska-novy-usek-r2-ky-pomoze-najma-kamionistom",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-kosice-ii-start",
+      "title": "NDS press: Stavba košickej R2 slávnostne odklepnutá (R2 Košice, Šaca – Košické Oľšany in numbers: 14.2 km, 13 bridges, 3 junctions, EUR 132.5 million)",
+      "url": "https://ndsas.sk/press/spravy/stavba-kosickej-r2-slavnostne-odklepnuta-tranzit-pojde-naokolo-kosic-v-roku-2025",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-kosice-retrospective",
+      "title": "NDS press: Košická R2 má za sebou stovky dní práce aj nečakané objavy (contract signed March 2022, 13 bridges)",
+      "url": "https://ndsas.sk/press/spravy/kosicka-r2-ma-za-sebou-stovky-dni-prace-aj-necakane-objavy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-kosice-eu",
+      "title": "NDS press: Pre košickú R2 sme zabezpečili financovanie z eurofondov (EUR 165.3 million, of which EU EUR 140.5 million, for R2 Košice, Šaca – Košické Oľšany I. and II. úsek)",
+      "url": "https://ndsas.sk/press/spravy/pre-kosicku-r2-sme-zabezpecili-financovanie-z-eurofondov",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-kosice-ii-tender",
+      "title": "NDS press: Košice dostanú juhovýchodný obchvat. Vypísali sme tender na zhotoviteľa úseku R2 Košice, Šaca – Košické Oľšany (II. úsek 14.262 km, 3 junctions, 13 bridges)",
+      "url": "https://ndsas.sk/press/spravy/kosice-dostanu-juhovychodny-obchvat-vypisali-sme-tender-na-zhotovitela-useku-r2-kosice-saca-kosicke-olsany",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "tsk-ruskovce-pravotice",
+      "title": "Trenčiansky samosprávny kraj, 7.10.2016: Vodiči prvýkrát prešli novou rýchlostnou cestou R2 Ruskovce – Pravotice (ceremonial opening on Thursday 6 October 2016)",
+      "url": "https://www.tsk.sk/aktualne-spravy/tlacove-spravy/vodici-prvykrat-presli-novou-rychlostnou-cestou-r2-ruskovce-pravotice.html?page_id=346700",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2003",
+      "title": "História diaľnic: História 2003 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2003/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2004",
+      "title": "História diaľnic: História 2004 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2004/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2006",
+      "title": "História diaľnic: História 2006 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2006/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2008",
+      "title": "História diaľnic: História 2008 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2008/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2012",
+      "title": "História diaľnic: História 2012 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2012/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2013",
+      "title": "História diaľnic: História 2013 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2013/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2014",
+      "title": "História diaľnic: História 2014 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2014/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2015",
+      "title": "História diaľnic: História 2015 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2015/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2016",
+      "title": "História diaľnic: História 2016 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2016/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2017",
+      "title": "História diaľnic: História 2017 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2017/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2019",
+      "title": "História diaľnic: História 2019 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2019-2025/historia-2019/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2020",
+      "title": "História diaľnic: História 2020 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2019-2025/historia-2020/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2022",
+      "title": "História diaľnic: História 2022 (dated starts and openings of R2 sections)",
+      "url": "https://historiadialnic.sk/historia-2019-2025/historia-2022/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-r2",
+      "title": "OpenStreetMap: ways with ref=R2 (highway=motorway, trunk and proposed) and ref=R4 on the Košice bypass, Overpass API (openstreetmap.fr mirror, base 2026-10-10)",
+      "url": "https://overpass.openstreetmap.fr/api/interpreter",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lastVerified": "2026-10-10"
+}

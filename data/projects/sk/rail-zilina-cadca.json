@@ -1,0 +1,278 @@
+{
+  "id": "sk-rail-zilina-cadca",
+  "country": "sk",
+  "category": "railway",
+  "name": {
+    "en": "Žilina – Čadca – Czech border railway modernisation (line 106D, corridor VI)",
+    "ro": "Modernizarea căii ferate Žilina – Čadca – granița cu Cehia (linia 106D, coridorul VI)"
+  },
+  "description": {
+    "en": "Modernisation of the double-track ŽSR line Žilina – Čadca – Mosty u Jablunkova, part of European rail corridor VI. ŽSR ran it as separate EU-co-financed projects. Žilina – Krásno nad Kysucou was built in 2008–2011 under a Doprastav-led joint venture. Čadca – Svrčinovec – state border was one works contract with TSS GRADE, split into two sections by funding source, and was completed on 12 December 2025. Krásno nad Kysucou – Čadca had only a design project (territorial decision issued on 31 August 2012) and no works contract on the ŽSR project pages. No ŽSR project page covers the Čadca – Skalité branch.",
+    "ro": "Modernizarea liniei ŽSR cu două căi Žilina – Čadca – Mosty u Jablunkova, parte a coridorului feroviar european VI. ŽSR a derulat-o ca proiecte separate cofinanțate de UE. Žilina – Krásno nad Kysucou a fost construit în 2008–2011 de o asociere condusă de Doprastav. Čadca – Svrčinovec – granița de stat a fost un singur contract de lucrări cu TSS GRADE, împărțit în două secțiuni după sursa de finanțare, finalizat la 12 decembrie 2025. Krásno nad Kysucou – Čadca a avut doar un proiect de proiectare (decizie teritorială emisă la 31 august 2012) și niciun contract de lucrări pe paginile de proiect ale ŽSR. Nicio pagină de proiect ŽSR nu acoperă ramura Čadca – Skalité."
+  },
+  "operator": "sk-zsr",
+  "lots": [
+    {
+      "id": "zilina-krasno-nad-kysucou",
+      "name": {
+        "en": "Žilina – Krásno nad Kysucou",
+        "ro": "Žilina – Krásno nad Kysucou"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-11-30"
+      },
+      "lengthKm": 20.03,
+      "contract": {
+        "value": {
+          "amount": 153.6398221,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Contract price of the works contract; VAT basis and price year not stated."
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-11-30",
+          "note": {
+            "en": "Works completed and all structures handed over to the infrastructure manager; the page records no separate traffic opening date.",
+            "ro": "Lucrări terminate și toate construcțiile predate administratorului de infrastructură; pagina nu înregistrează o dată separată de deschidere în trafic."
+          },
+          "sourceRef": "zsr-zilina-krasno"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund, grant agreement 165/270/2009 of 23 September 2009. Total cost under the grant EUR 158,840,953.10, of which EU EUR 85,877,364.00. Final financial outturn EUR 152,000,120.10.",
+            "ro": "Fondul de coeziune, acord de grant 165/270/2009 din 23 septembrie 2009. Costul total în baza grantului 158.840.953,10 EUR, din care UE 85.877.364,00 EUR. Execuția financiară finală 152.000.120,10 EUR."
+          },
+          "amount": {
+            "amount": 85.877364,
+            "currency": "EUR",
+            "scope": "programme"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie „Žilina – Krásno“ (Doprastav, a.s.)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Modernisation of the existing double-track line: safety and communication systems, track, overhead line, platforms, bridges, culverts and underpasses. The ŽSR page gives the works contract (no. 56/2008/0) as EUR 153,639,822.1 with the joint venture led by Doprastav, and the project start as 6 June 2008. Its signing-date column shows 30 November 2011, which is the works completion date, so no award date or cost-revision entry is recorded. The page adds that the completion approval proceedings were still under way. The contract was amended by three addenda and five change orders and the accepted price was not exceeded. The supervision contract (Inžinierske združenie Kysuce, EUR 4,383,724) was signed on 2 September 2008. Length measured from OpenStreetMap geometry (Žilina station to Krásno nad Kysucou station); the page states no length.",
+        "ro": "Modernizarea liniei existente cu două căi: instalații de siguranță și comunicații, cale, linie de contact, peroane, poduri, podețe și pasaje. Pagina ŽSR indică contractul de lucrări (nr. 56/2008/0) la 153.639.822,1 EUR cu asocierea condusă de Doprastav și începutul proiectului la 6 iunie 2008. Coloana datei semnării arată 30 noiembrie 2011, adică data terminării lucrărilor, deci nu se înregistrează o dată de atribuire sau o revizuire de cost. Pagina adaugă că procedurile de recepție erau încă în curs. Contractul a fost modificat prin trei acte adiționale și cinci ordine de modificare, iar prețul acceptat nu a fost depășit. Contractul de supraveghere (Inžinierske združenie Kysuce, 4.383.724 EUR) a fost semnat la 2 septembrie 2008. Lungime măsurată din geometria OpenStreetMap (de la stația Žilina la stația Krásno nad Kysucou); pagina nu indică o lungime."
+      },
+      "sourceRefs": [
+        "zsr-zilina-krasno",
+        "osm"
+      ],
+      "geometryRef": "zilina-krasno-nad-kysucou"
+    },
+    {
+      "id": "cadca-svrcinovec-zastavka",
+      "name": {
+        "en": "Čadca – Svrčinovec zastávka (section A)",
+        "ro": "Čadca – Svrčinovec zastávka (secțiunea A)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-12-12"
+      },
+      "lengthKm": 2.663,
+      "contract": {
+        "value": {
+          "amount": 65.88286712,
+          "currency": "EUR",
+          "year": 2022,
+          "scope": "works",
+          "note": "One works contract for sections A and B together (Čadca – Svrčinovec – state border); VAT basis not stated."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 65.88286712,
+              "currency": "EUR",
+              "year": 2022,
+              "scope": "works",
+              "note": "Covers sections A and B together; VAT basis not stated."
+            },
+            "date": "2022-03-29",
+            "note": "Date is the contract's effective date (dátum účinnosti), not necessarily the signing date.",
+            "sourceRef": "zsr-cadca-svrcinovec"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2025-12-12",
+          "note": {
+            "en": "Works completed and the line put into early use (predčasné užívanie) as of 12 December 2025.",
+            "ro": "Lucrări terminate și linia dată în utilizare anticipată (predčasné užívanie) la 12 decembrie 2025."
+          },
+          "sourceRef": "zsr-cadca-svrcinovec"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "Connecting Europe Facility, grant agreement INEA/CEF/TRAN/M2019/2106494 (signed 26 October and 16 November 2020). Total cost under the grant EUR 46,921,455, of which EU EUR 39,883,237 and state budget EUR 7,038,218. Spent by 30 June 2026: EUR 55,491,354.16 from all sources.",
+            "ro": "Mecanismul pentru Interconectarea Europei, acord de grant INEA/CEF/TRAN/M2019/2106494 (semnat la 26 octombrie și 16 noiembrie 2020). Costul total în baza grantului 46.921.455 EUR, din care UE 39.883.237 EUR și bugetul de stat 7.038.218 EUR. Cheltuit până la 30 iunie 2026: 55.491.354,16 EUR din toate sursele."
+          },
+          "amount": {
+            "amount": 39.883237,
+            "currency": "EUR",
+            "scope": "programme"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie „ŽSR, KYSUCE“ – TSS GRADE, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section A of the Čadca (excluding the station) – Svrčinovec – state border works: about 2.663 km of existing double track, with safety and communication systems, track, overhead line, 2 platforms, rebuilt bridges and culverts and a passenger overpass. The EUR 65,882,867.12 works contract (effective 29 March 2022) covers sections A and B together and is recorded on this lot only. The ŽSR page gives 29 March 2022 as the start of the main activities, which is the contract date, so no construction start is recorded. The ŽSR page does not give the chainage where the works start (\"Čadca (mimo)\"). The drawn line ends at Svrčinovec zastávka and is cut back along the track to match the stated 2.663 km, so its northern start is approximate. Chainages on sk.wikipedia (Svrčinovec zastávka 281.920, border 284.339) give about 2.42 km for section B and about 4.9 km for sections A and B together.",
+        "ro": "Secțiunea A a lucrărilor Čadca (fără stație) – Svrčinovec – granița de stat: circa 2,663 km de linie dublă existentă, cu instalații de siguranță și comunicații, cale, linie de contact, 2 peroane, poduri și podețe reconstruite și o pasarelă pentru călători. Contractul de lucrări de 65.882.867,12 EUR (în vigoare din 29 martie 2022) acoperă secțiunile A și B împreună și este înregistrat doar la acest lot. Pagina ŽSR indică 29 martie 2022 ca început al activităților principale, adică data contractului, deci nu se înregistrează un început de construcție. Pagina ŽSR nu indică kilometrajul de la care încep lucrările („Čadca (mimo)”). Linia desenată se termină la Svrčinovec zastávka și este tăiată de-a lungul căii pentru a corespunde celor 2,663 km indicați; cifra indicată este păstrată, iar începutul nordic al liniei este aproximativ. Kilometrajul din sk.wikipedia (Svrčinovec zastávka 281,920, frontiera 284,339) dă circa 2,42 km pentru secțiunea B și circa 4,9 km pentru secțiunile A și B împreună."
+      },
+      "sourceRefs": [
+        "zsr-cadca-svrcinovec",
+        "osm"
+      ],
+      "geometryRef": "cadca-svrcinovec-zastavka"
+    },
+    {
+      "id": "svrcinovec-zastavka-state-border",
+      "name": {
+        "en": "Svrčinovec zastávka – Czech border (section B)",
+        "ro": "Svrčinovec zastávka – granița cu Cehia (secțiunea B)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-12-12"
+      },
+      "lengthKm": 2.41,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2025-12-12",
+          "note": {
+            "en": "Works completed and the line put into early use (predčasné užívanie) as of 12 December 2025.",
+            "ro": "Lucrări terminate și linia dată în utilizare anticipată (predčasné užívanie) la 12 decembrie 2025."
+          },
+          "sourceRef": "zsr-svrcinovec-border-2"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "Phase 1: Operational Programme Integrated Infrastructure 2014–2020, grant agreement Z311011BID1 effective 1 January 2022. Total cost under the grant EUR 5,516,262.81, of which EU EUR 4,688,823.39.",
+            "ro": "Faza 1: Programul Operațional Infrastructură Integrată 2014–2020, acord de grant Z311011BID1 în vigoare din 1 ianuarie 2022. Cost total în baza grantului 5.516.262,81 EUR, din care UE 4.688.823,39 EUR."
+          },
+          "amount": {
+            "amount": 4.68882339,
+            "currency": "EUR",
+            "scope": "programme"
+          }
+        },
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "Phase 2: Programme Slovensko, grant agreement Z401301FNZ effective 21 May 2024. Total cost under the grant EUR 29,343,243.72, of which EU EUR 24,941,787.16. Spent by 30 June 2026: EUR 29,317,577.21 from all sources.",
+            "ro": "Faza 2: Programul Slovensko, acord de grant Z401301FNZ în vigoare din 21 mai 2024. Cost total în baza grantului 29.343.243,72 EUR, din care UE 24.941.787,16 EUR. Cheltuit până la 30 iunie 2026: 29.317.577,21 EUR din toate sursele."
+          },
+          "amount": {
+            "amount": 24.94178716,
+            "currency": "EUR",
+            "scope": "programme"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie „ŽSR, KYSUCE“ – TSS GRADE, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Section B of the same works contract as section A (EUR 65,882,867.12, recorded on the Čadca – Svrčinovec lot): modernisation of the double-track line 106D from Svrčinovec zastávka to the Czech border, with three retaining walls at Svrčinovec and the halt rebuilt. ŽSR split it into phase 1 (OPII, main activities 29 March 2022 to 30 November 2023) and phase 2 (Programme Slovensko, from 1 December 2023); the phase 2 page records completion by 12 December 2025. Length measured from OpenStreetMap geometry (Svrčinovec zastávka to the border node); the pages state no length. The two funding entries are the EU shares of phase 1 and phase 2.",
+        "ro": "Secțiunea B a aceluiași contract de lucrări ca secțiunea A (65.882.867,12 EUR, înregistrat la lotul Čadca – Svrčinovec): modernizarea liniei cu două căi 106D de la Svrčinovec zastávka până la granița cu Cehia, cu trei ziduri de sprijin la Svrčinovec și halta reconstruită. ŽSR a împărțit-o în faza 1 (OPII, activități principale 29 martie 2022 – 30 noiembrie 2023) și faza 2 (Programul Slovensko, din 1 decembrie 2023); pagina fazei 2 înregistrează finalizarea la 12 decembrie 2025. Lungime măsurată din geometria OpenStreetMap (de la Svrčinovec zastávka până la nodul de frontieră); paginile nu indică o lungime. Cele două intrări de finanțare sunt contribuțiile UE din faza 1 și din faza 2."
+      },
+      "sourceRefs": [
+        "zsr-svrcinovec-border-1",
+        "zsr-svrcinovec-border-2",
+        "osm"
+      ],
+      "geometryRef": "svrcinovec-zastavka-state-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "zsr-zilina-krasno",
+      "title": "ŽSR: Modernizácia železničnej trate Žilina – Krásno nad Kysucou",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/modernizacia-zeleznicnej-trate-zilina-krasno-nad-kysucou",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-cadca-svrcinovec",
+      "title": "ŽSR: Modernizácia železničného úseku Čadca – Svrčinovec zastávka (vrátane)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/stavby-v-realizacii/modernizacia-zeleznicneho-useku-cadca-svrcinovec-zastavka-vratane",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-svrcinovec-border-1",
+      "title": "ŽSR: Modernizácia koridoru, štátna hranica ČR/SR – Čadca – Krásno nad Kysucou (mimo), úsek Svrčinovec – štátna hranica SR/ČR (1. fáza)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/zsr-modernizacia-koridoru-statna-hranica-cr-sr--cadca--krasno-nad-kysucou-mimo-zeleznicna-trat-usek-svrcinovec--statna-hranica-sr-cr-1.faza",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-svrcinovec-border-2",
+      "title": "ŽSR: Modernizácia koridoru, štátna hranica ČR/SR – Čadca – Krásno nad Kysucou (mimo), úsek Svrčinovec – štátna hranica SR/ČR (2. fáza)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/stavby-v-realizacii/zsr-modernizacia-koridoru-statna-hranica-cr-sr--cadca--krasno-nad-kysucou-mimo-zeleznicna-trat-usek-svrcinovec--statna-hranica-sr-cr-2.faza",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "title": "ŽSR: Modernizácia koridoru, štátna hranica ČR/SR – Čadca – Krásno nad Kysucou, (vonkajšia) železničná trať (design project)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/zrealizovane-stavby/modernizacia-koridoru-statna-hranica-cr-sr-cadca-krasno-nad-kysucou-vonkajsia-zeleznicna-trat",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): railway=rail ways, Žilina – Čadca – Svrčinovec – Czech border",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
