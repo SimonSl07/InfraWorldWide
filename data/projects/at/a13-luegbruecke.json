@@ -1,0 +1,64 @@
+{
+  "id": "at-a13-luegbruecke",
+  "country": "at",
+  "category": "bridge",
+  "name": {
+    "en": "A 13 Luegbrücke replacement",
+    "ro": "Înlocuirea podului Luegbrücke de pe A 13"
+  },
+  "description": {
+    "en": "ASFINAG is replacing the Luegbrücke on the Brenner motorway with two new bridge structures. Construction began in March 2025 and overall completion is planned for the end of 2030.",
+    "ro": "ASFINAG înlocuiește podul Luegbrücke de pe autostrada Brenner cu două structuri noi. Lucrările au început în martie 2025, iar finalizarea generală este planificată pentru sfârșitul anului 2030."
+  },
+  "operator": "at-asfinag",
+  "sources": [
+    {
+      "id": "asfinag-luegbruecke",
+      "title": "ASFINAG: A 13 Brenner Autobahn, Luegbrücke replacement",
+      "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/a-13-brenner-autobahn-luegbruecke/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-luegbruecke",
+      "title": "OpenStreetMap: A 13 bridge at Lueg, way 44572234",
+      "url": "https://www.openstreetmap.org/way/44572234",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lots": [
+    {
+      "id": "luegbruecke-replacement",
+      "name": {
+        "en": "Luegbrücke replacement",
+        "ro": "Înlocuirea podului Luegbrücke"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-03",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 1.8,
+      "cost": {
+        "estimated": {
+          "amount": 380,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "estimated"
+        }
+      },
+      "profile": {
+        "works": "reconstruction",
+        "viaductKm": 1.8
+      },
+      "note": {
+        "en": "ASFINAG gives an approximate total project cost of EUR 380 million and a total length of 1,800 m. The works provide two separate new structures. The OSM line follows one mapped carriageway of the existing crossing as the location reference; it measures about 1.8 km. Price year and VAT basis are not stated.",
+        "ro": "ASFINAG indică un cost total aproximativ de 380 de milioane EUR și o lungime totală de 1.800 m. Lucrările prevăd două structuri noi separate. Linia OSM urmează una dintre căile existente ale traversării ca reper de amplasare și măsoară circa 1,8 km. Anul de referință al prețului și regimul TVA nu sunt precizate."
+      },
+      "sourceRefs": [
+        "asfinag-luegbruecke",
+        "osm-luegbruecke"
+      ],
+      "geometryRef": "luegbruecke-replacement"
+    }
+  ]
+}

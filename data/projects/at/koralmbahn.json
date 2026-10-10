@@ -1,0 +1,40 @@
+{
+  "id": "at-koralmbahn",
+  "country": "at",
+  "category": "railway",
+  "name": { "en": "Koralmbahn Graz–Klagenfurt", "ro": "Calea ferată Koralm Graz–Klagenfurt" },
+  "description": {
+    "en": "The Koralmbahn is a new double-track line between Graz and Klagenfurt. The route entered scheduled passenger service on 14 December 2025. It includes the 32.894 km Koralmtunnel and sections that entered service earlier.",
+    "ro": "Koralmbahn este o linie nouă cu două căi între Graz și Klagenfurt. Traficul regulat de călători a început la 14 decembrie 2025. Linia include tunelul Koralmtunnel de 32,894 km și secțiuni puse în funcțiune mai devreme."
+  },
+  "operator": "at-oebb-infrastruktur",
+  "sources": [
+    { "id": "oebb-koralm-sections", "title": "ÖBB-Infrastruktur: Koralmbahn sections", "url": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/suedstrecke-wien-villach/koralmbahn/abschnitte", "retrievedOn": "2026-10-10" },
+    { "id": "rh-koralm", "title": "Austrian Court of Audit: Koralmbahn project report", "url": "https://www.rechnungshof.gv.at/rh/home/news/Meldungen_2025/The-Austrian-Court-of-Audit-published-the-Koralmbahn-Projec.html", "retrievedOn": "2026-10-10" },
+    { "id": "wiki-koralm", "title": "Wikipedia: Koralmbahn", "url": "https://de.wikipedia.org/wiki/Koralmbahn", "retrievedOn": "2026-10-10" },
+    { "id": "osm-koralm", "title": "OpenStreetMap: Koralmbahn rail geometry, ÖBB ref 401 01", "url": "https://www.openstreetmap.org/#map=8/46.8/15.0", "retrievedOn": "2026-10-10" }
+  ],
+  "lots": [
+    {
+      "id": "graz-klagenfurt",
+      "name": { "en": "Graz–Klagenfurt new line", "ro": "Linia nouă Graz–Klagenfurt" },
+      "status": "opened",
+      "dates": { "constructionStart": "1998", "opened": "2025-12-14" },
+      "lengthKm": 125,
+      "cost": { "amount": 6139, "currency": "EUR", "scope": "total", "confidence": "reported", "note": "ÖBB forecast reported by the Court of Audit as of end 2023; not an outturn. Price basis not stated." },
+      "profile": { "works": "greenfield", "tunnelKm": 32.894 },
+      "events": [
+        { "kind": "partial_opening", "date": "2010-12-13", "sourceRef": "wiki-koralm", "note": { "en": "Passenger services began on the Werndorf–Wettmannstätten section.", "ro": "Serviciile de călători au început pe secțiunea Werndorf–Wettmannstätten." } },
+        { "kind": "partial_opening", "date": "2020-09-07", "sourceRef": "wiki-koralm", "note": { "en": "The Mittlern–Pribelsdorf section and Mittlern station entered service.", "ro": "Secțiunea Mittlern–Pribelsdorf și gara Mittlern au intrat în exploatare." } },
+        { "kind": "partial_opening", "date": "2023-12-10", "sourceRef": "oebb-koralm-sections", "note": { "en": "St. Paul im Lavanttal station and the early-operating Carinthian sections entered service.", "ro": "Gara St. Paul im Lavanttal și secțiunile carintiene date anticipat în exploatare au intrat în serviciu." } },
+        { "kind": "opened", "date": "2025-12-14", "sourceRef": "wiki-koralm", "note": { "en": "Scheduled passenger service began on the full route.", "ro": "A început serviciul regulat de călători pe întreaga rută." } }
+      ],
+      "note": {
+        "en": "The Austrian Court of Audit reports a route length of about 125 km and an ÖBB end-2023 forecast of €6.139 billion. ÖBB publishes 130 km for the Koralmbahn corridor; the cited length follows the audit report. The OSM geometry contains the two parallel tracks tagged with ÖBB ref 401 01, so its drawn length is about twice the single route length.",
+        "ro": "Curtea de Conturi a Austriei indică o lungime de aproximativ 125 km și o prognoză ÖBB de 6,139 miliarde EUR la sfârșitul lui 2023. ÖBB publică 130 km pentru coridorul Koralmbahn; lungimea înregistrată urmează raportul de audit. Geometria OSM conține cele două căi paralele cu referința ÖBB 401 01, astfel încât lungimea desenată este de aproximativ două ori lungimea unică a rutei."
+      },
+      "sourceRefs": ["oebb-koralm-sections", "rh-koralm", "wiki-koralm", "osm-koralm"],
+      "geometryRef": "koralmbahn"
+    }
+  ]
+}

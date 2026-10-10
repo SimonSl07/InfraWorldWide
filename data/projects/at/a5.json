@@ -1,0 +1,96 @@
+{
+  "id": "at-a5",
+  "country": "at",
+  "category": "highway",
+  "name": {
+    "en": "A 5 Nord/Weinviertel Autobahn",
+    "ro": "Autostrada A 5 Nord/Weinviertel"
+  },
+  "description": {
+    "en": "The A 5 links the Vienna area with the northern Weinviertel. The Eibesbrunn–Schrick and Schrick–Poysdorf-Nord sections opened in 2010 and 2017. The Drasenhofen bypass opened in 2019, while a later full-profile extension remains planned.",
+    "ro": "A 5 leagă zona Vienei de nordul regiunii Weinviertel. Sectoarele Eibesbrunn–Schrick și Schrick–Poysdorf-Nord au fost deschise în 2010 și 2017. Centura Drasenhofen a fost deschisă în 2019, iar extinderea ulterioară la profil complet rămâne planificată."
+  },
+  "operator": "at-asfinag",
+  "sources": [
+    {
+      "id": "a5-wikipedia",
+      "title": "Nord/Weinviertel Autobahn",
+      "url": "https://de.wikipedia.org/wiki/Nord/Weinviertel_Autobahn",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "a5-asfinag-drasenhofen",
+      "title": "ASFINAG: A 5 gap closure, Poysbrunn to the Drasenhofen state border",
+      "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/a-5-lueckenschluss-poysbrunn-bis-zur-staatsgrenze-drasenhofen/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-a5",
+      "title": "OpenStreetMap: A 5 Nord/Weinviertel Autobahn",
+      "url": "https://www.openstreetmap.org/way/23394557",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lots": [
+    {
+      "id": "eibesbrunn-schrick",
+      "name": {
+        "en": "Eibesbrunn–Schrick",
+        "ro": "Eibesbrunn–Schrick"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-02-26",
+        "opened": "2010-01-31"
+      },
+      "lengthKm": 23.5,
+      "cost": {
+        "estimated": {
+          "amount": 255,
+          "currency": "EUR",
+          "scope": "total"
+        }
+      },
+      "contractors": [
+        {
+          "name": "Bonaventura Straßenerrichtungs-GmbH",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "The cited length and EUR 255 million figure cover the 23.5 km PPP section. The source names Bonaventura as main contractor and says the company group also financed and operated the road under a 30-year concession. The price year and VAT basis are not stated. The OSM line measures about 21.7 km, 8% below the published length.",
+        "ro": "Lungimea și suma de 255 de milioane EUR citate se referă la sectorul PPP de 23,5 km. Sursa îl numește pe Bonaventura antreprenor principal și spune că grupul a finanțat și exploatat drumul în cadrul unei concesiuni de 30 de ani. Anul de referință al prețului și regimul TVA nu sunt precizate. Linia OSM măsoară circa 21,7 km, cu 8% sub lungimea publicată."
+      },
+      "sourceRefs": [
+        "a5-wikipedia",
+        "osm-a5"
+      ],
+      "geometryRef": "eibesbrunn-schrick"
+    },
+    {
+      "id": "schrick-poysdorf-nord",
+      "name": {
+        "en": "Schrick–Poysdorf-Nord",
+        "ro": "Schrick–Poysdorf-Nord"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2015-04",
+        "opened": "2017-12-08"
+      },
+      "lengthKm": 24.4,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "The section runs from the Schrick junction to Poysdorf-Nord. A separate two-lane Drasenhofen bypass opened in 2019 and is not included here. The OSM line measures about 24.7 km against the published 24.4 km.",
+        "ro": "Sectorul se întinde de la nodul Schrick până la Poysdorf-Nord. O centură separată cu două benzi la Drasenhofen a fost deschisă în 2019 și nu este inclusă aici. Linia OSM măsoară circa 24,7 km față de cei 24,4 km publicați."
+      },
+      "sourceRefs": [
+        "a5-wikipedia",
+        "osm-a5"
+      ],
+      "geometryRef": "schrick-poysdorf-nord"
+    }
+  ]
+}

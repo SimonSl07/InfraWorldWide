@@ -1,6 +1,32 @@
 {
   "note": "Procuring authorities and infrastructure managers. Delivery performance by authority is arguably fairer than by contractor, since the authority wrote the contract terms the contractor was held to. A project names an operator only where its own description or one of its sources does; entries are not inferred from the country and mode.",
   "operators": {
+    "at-oebb-infrastruktur": {
+      "name": "ÖBB-Infrastruktur AG",
+      "country": "at",
+      "role": "rail_authority",
+      "aliases": ["ÖBB-Infrastruktur", "ÖBB Infrastruktur AG"],
+      "sources": [
+        {
+          "title": "ÖBB-Infrastruktur AG",
+          "url": "https://infrastruktur.oebb.at/",
+          "retrievedOn": "2026-10-10"
+        }
+      ]
+    },
+    "at-bbt-se": {
+      "name": "Brenner Basistunnel BBT SE",
+      "country": "at",
+      "role": "rail_authority",
+      "aliases": ["BBT SE"],
+      "sources": [
+        {
+          "title": "Brenner Basistunnel BBT SE",
+          "url": "https://www.bbt-se.com/",
+          "retrievedOn": "2026-10-10"
+        }
+      ]
+    },
     "ro-cnair": {
       "name": "CNAIR",
       "localName": "Compania Națională de Administrare a Infrastructurii Rutiere",
@@ -467,6 +493,22 @@
         {
           "title": "NIF Zrt. projects page (Internet Archive snapshot of nif.hu, 27 March 2023; the live site did not answer on 2026-10-10)",
           "url": "http://web.archive.org/web/20230327200258/https://nif.hu/projektek/",
+          "retrievedOn": "2026-10-10"
+        }
+      ]
+    },
+    "at-asfinag": {
+      "name": "ASFINAG",
+      "localName": "Autobahnen- und Schnellstraßen-Finanzierungs-Aktiengesellschaft",
+      "country": "at",
+      "role": "road_authority",
+      "aliases": [
+        "ASFiNAG"
+      ],
+      "sources": [
+        {
+          "title": "ASFINAG: A 11 Karawanken Autobahn, second tube",
+          "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/a-11-karawanken-autobahn-karawankentunnel/",
           "retrievedOn": "2026-10-10"
         }
       ]

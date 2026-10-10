@@ -1,0 +1,73 @@
+{
+  "id": "at-s10",
+  "country": "at",
+  "category": "highway",
+  "name": { "en": "S 10 Mühlviertler Schnellstraße", "ro": "Drumul expres S 10 Mühlviertler" },
+  "description": {
+    "en": "The S 10 runs north from Unterweitersdorf toward the Czech border at Wullowitz. The 22 km section to Freistadt Nord opened in 2015. The Freistadt Nord–Rainbach Nord section is under construction, and the Rainbach Nord–Wullowitz border section is planned.",
+    "ro": "S 10 merge spre nord de la Unterweitersdorf către granița cu Cehia de la Wullowitz. Secțiunea de 22 km până la Freistadt Nord a fost deschisă în 2015. Secțiunea Freistadt Nord–Rainbach Nord este în construcție, iar secțiunea Rainbach Nord–Wullowitz până la graniță este planificată."
+  },
+  "operator": "at-asfinag",
+  "sources": [
+    { "id": "asfinag-s10-freistadt-rainbach", "title": "ASFINAG: S 10 Freistadt Nord–Rainbach Nord", "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/s-10-muehlviertler-schnellstrasse-freistadt-nord-rainbach-nord/", "retrievedOn": "2026-10-10" },
+    { "id": "asfinag-s10-rainbach-border", "title": "ASFINAG: S 10 Rainbach Nord–Staatsgrenze bei Wullowitz", "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/s-10-muehlviertler-schnellstrasse-rainbach-nord-staatsgrenze-bei-wullowitz/", "retrievedOn": "2026-10-10" },
+    { "id": "wiki-s10", "title": "Wikipedia: Mühlviertler Schnellstraße", "url": "https://de.wikipedia.org/wiki/M%C3%BChlviertler_Schnellstra%C3%9Fe", "retrievedOn": "2026-10-10" },
+    { "id": "osm-s10", "title": "OpenStreetMap: S 10 route geometry, proposed way 48633414", "url": "https://www.openstreetmap.org/way/48633414", "retrievedOn": "2026-10-10" }
+  ],
+  "lots": [
+    {
+      "id": "unterweitersdorf-freistadt-nord",
+      "name": { "en": "Unterweitersdorf–Freistadt Nord", "ro": "Unterweitersdorf–Freistadt Nord" },
+      "status": "opened",
+      "dates": { "constructionStart": "2009-08-01", "opened": "2015-12-21" },
+      "lengthKm": 22,
+      "cost": { "amount": 689, "currency": "EUR", "scope": "total", "confidence": "reported", "note": "Reported as net cost; price year not stated." },
+      "profile": { "works": "greenfield" },
+      "events": [
+        { "kind": "partial_opening", "date": "2012-07-30", "sourceRef": "wiki-s10", "note": { "en": "The first 2.5 km section at Unterweitersdorf opened to traffic.", "ro": "Prima secțiune de 2,5 km de la Unterweitersdorf a fost deschisă traficului." } },
+        { "kind": "partial_opening", "date": "2014-11-15", "sourceRef": "wiki-s10", "note": { "en": "The Freistadt bypass section opened to traffic.", "ro": "Secțiunea de ocolire a orașului Freistadt a fost deschisă traficului." } },
+        { "kind": "opened", "date": "2015-12-21", "sourceRef": "wiki-s10" }
+      ],
+      "note": {
+        "en": "The sourced length is 22 km. The OSM-derived line measures about 19.2 km; the published length is retained because the mapped centerline cut is shorter.",
+        "ro": "Lungimea publicată este de 22 km. Linia derivată din OSM măsoară aproximativ 19,2 km; valoarea publicată este păstrată deoarece secțiunea cartografiată este mai scurtă."
+      },
+      "sourceRefs": ["wiki-s10", "osm-s10"],
+      "geometryRef": "unterweitersdorf-freistadt-nord"
+    },
+    {
+      "id": "freistadt-nord-rainbach-nord",
+      "name": { "en": "Freistadt Nord–Rainbach Nord", "ro": "Freistadt Nord–Rainbach Nord" },
+      "status": "under_construction",
+      "dates": { "constructionStart": "2023", "expectedOpening": "2027" },
+      "lengthKm": 7.2,
+      "cost": { "amount": 361.5, "currency": "EUR", "scope": "total", "confidence": "estimated", "note": "ASFINAG total project cost; price year and VAT basis not stated." },
+      "profile": { "works": "greenfield" },
+      "events": [
+        { "kind": "construction_start", "date": "2023-11-06", "sourceRef": "asfinag-s10-freistadt-rainbach", "note": { "en": "Construction mobilisation for lot 01, including Tunnel Vierzehn.", "ro": "Începerea lucrărilor pentru lotul 01, inclusiv tunelul Vierzehn." } },
+        { "kind": "construction_start", "date": "2024-09-16", "sourceRef": "asfinag-s10-freistadt-rainbach", "note": { "en": "Construction mobilisation for lot 02.", "ro": "Începerea lucrărilor pentru lotul 02." } }
+      ],
+      "note": {
+        "en": "The 7.2 km project is built in two construction lots. ASFINAG lists the total project cost as €361.5 million and planned completion in 2027. The mapped construction alignment measures about 7.8 km.",
+        "ro": "Proiectul de 7,2 km este construit în două loturi. ASFINAG indică un cost total de 361,5 milioane EUR și finalizarea planificată în 2027. Aliniamentul în construcție cartografiat măsoară aproximativ 7,8 km."
+      },
+      "sourceRefs": ["asfinag-s10-freistadt-rainbach", "osm-s10"],
+      "geometryRef": "freistadt-nord-rainbach-nord"
+    },
+    {
+      "id": "rainbach-nord-wullowitz",
+      "name": { "en": "Rainbach Nord–Wullowitz border", "ro": "Rainbach Nord–granița de la Wullowitz" },
+      "status": "planned",
+      "dates": { "constructionStart": "2029", "expectedOpening": "2032" },
+      "lengthKm": 8.8,
+      "cost": { "amount": 325, "currency": "EUR", "scope": "total", "confidence": "estimated", "note": "ASFINAG project estimate; price year and VAT basis not stated." },
+      "profile": { "works": "greenfield" },
+      "note": {
+        "en": "ASFINAG submitted the project for environmental assessment on 22 October 2025. The length, cost, 2029 target construction start and 2032 planned completion are ASFINAG estimates. The line follows the mapped proposed OSM alignment.",
+        "ro": "ASFINAG a depus proiectul pentru evaluarea impactului asupra mediului la 22 octombrie 2025. Lungimea, costul, începerea vizată a lucrărilor în 2029 și finalizarea planificată în 2032 sunt estimări ASFINAG. Linia urmează aliniamentul OSM propus și cartografiat."
+      },
+      "sourceRefs": ["asfinag-s10-rainbach-border"],
+      "geometryRef": "rainbach-nord-wullowitz"
+    }
+  ]
+}

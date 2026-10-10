@@ -1,0 +1,126 @@
+{
+  "id": "at-a26",
+  "country": "at",
+  "category": "highway",
+  "name": {
+    "en": "A 26 Linzer Autobahn",
+    "ro": "Autostrada A 26 Linzer"
+  },
+  "description": {
+    "en": "The A 26 is being built in stages between the Linz-Hummelhof interchange and Donau Nord. The Donautalbrücke opened as an initial section in 2024; the Freinberg tunnel section is under construction, and the Westbrücke connection to A 7 is planned for 2033–2035.",
+    "ro": "A 26 este construită etapizat între nodul Linz-Hummelhof și Donau Nord. Donautalbrücke a fost deschisă ca sector inițial în 2024; sectorul tunelului Freinberg este în construcție, iar legătura Westbrücke cu A 7 este planificată pentru 2033–2035."
+  },
+  "operator": "at-asfinag",
+  "sources": [
+    {
+      "id": "asfinag-a26",
+      "title": "ASFINAG: A 26 Linzer Autobahn, Linz-Hummelhof to Donau Nord",
+      "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/a-26-linzer-autobahn-knoten-linz-hummelhof-a-7-anschlussstelle-donau-nord/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "asfinag-a26-map",
+      "title": "ASFINAG: A 26 route map, August 2026",
+      "url": "https://media.asfinag.at/media/hf0j0nvt/a26_8-28.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-a26-donautalbruecke",
+      "title": "OpenStreetMap: A 26 Donautalbrücke, way 857660433",
+      "url": "https://www.openstreetmap.org/way/857660433",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-a26-freinberg",
+      "title": "OpenStreetMap: A 26 Freinberg tunnel alignment, way 992040491",
+      "url": "https://www.openstreetmap.org/way/992040491",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-a26-westbruecke",
+      "title": "OpenStreetMap: A 26 Westbrücke alignment, way 992040518",
+      "url": "https://www.openstreetmap.org/way/992040518",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lots": [
+    {
+      "id": "donautalbruecke",
+      "name": {
+        "en": "Donautalbrücke",
+        "ro": "Donautalbrücke"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-01",
+        "opened": "2024-10"
+      },
+      "lengthKm": 0.306,
+      "profile": {
+        "works": "greenfield",
+        "viaductKm": 0.306
+      },
+      "note": {
+        "en": "ASFINAG's route map gives the bridge length as approximately 306 m. The OSM line measures about 308 m. This first A 26 section opened as a stub before the rest of the motorway was complete.",
+        "ro": "Harta ASFINAG indică o lungime de aproximativ 306 m pentru pod. Linia OSM măsoară circa 308 m. Acest prim sector al autostrăzii A 26 a fost deschis înainte de finalizarea restului autostrăzii."
+      },
+      "sourceRefs": [
+        "asfinag-a26",
+        "asfinag-a26-map",
+        "osm-a26-donautalbruecke"
+      ],
+      "geometryRef": "donautalbruecke"
+    },
+    {
+      "id": "freinberg-tunnel-section",
+      "name": {
+        "en": "Freinberg tunnel section",
+        "ro": "Sectorul tunelului Freinberg"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2026-07",
+        "expectedOpening": "2032"
+      },
+      "lengthKm": 3.2,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 3.2
+      },
+      "note": {
+        "en": "ASFINAG lists construction from July 2026 to December 2032 for the Freinberg tunnel section, including the station junction and Waldeggstraße underpass. The route map gives the tunnel length as 3,200 m. The OSM line follows this section between the Donautalbrücke and Westbrücke and measures about 3.25 km.",
+        "ro": "ASFINAG indică lucrări din iulie 2026 până în decembrie 2032 pentru sectorul tunelului Freinberg, inclusiv nodul gării și pasajul subteran Waldeggstraße. Harta traseului indică o lungime de 3.200 m pentru tunel. Linia OSM urmează acest sector între Donautalbrücke și Westbrücke și măsoară circa 3,25 km."
+      },
+      "sourceRefs": [
+        "asfinag-a26",
+        "asfinag-a26-map",
+        "osm-a26-freinberg"
+      ],
+      "geometryRef": "freinberg-tunnel-section"
+    },
+    {
+      "id": "westbruecke-a7-connection",
+      "name": {
+        "en": "Westbrücke and A 7 connection",
+        "ro": "Westbrücke și legătura cu A 7"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2035"
+      },
+      "lengthKm": 0.49,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "ASFINAG schedules this stage from March 2033 to December 2035. Length measured from OpenStreetMap geometry, following the mapped Westbrücke alignment and connection toward A 7.",
+        "ro": "ASFINAG planifică această etapă din martie 2033 până în decembrie 2035. Lungime măsurată pe geometria OpenStreetMap, urmărind aliniamentul cartografiat al Westbrücke și legătura spre A 7."
+      },
+      "sourceRefs": [
+        "asfinag-a26",
+        "osm-a26-westbruecke"
+      ],
+      "geometryRef": "westbruecke-a7-connection"
+    }
+  ]
+}

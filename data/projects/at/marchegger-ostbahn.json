@@ -1,0 +1,100 @@
+{
+  "id": "at-marchegger-ostbahn",
+  "country": "at",
+  "category": "railway",
+  "name": {
+    "en": "Marchegger Ostbahn upgrade and electrification",
+    "ro": "Modernizarea și electrificarea liniei Marchegger Ostbahn"
+  },
+  "description": {
+    "en": "The Austrian section between Wien Stadlau and Marchegg was modernised and electrified. The line was rebuilt as a double-track route in stages.",
+    "ro": "Secțiunea austriacă dintre Wien Stadlau și Marchegg a fost modernizată și electrificată. Linia a fost refăcută cu două fire în mai multe etape."
+  },
+  "operator": "at-oebb-infrastruktur",
+  "sources": [
+    {
+      "id": "oebb-marchegger-build",
+      "title": "ÖBB-Infrastruktur: Marchegger Ostbahn, construction milestones",
+      "url": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/weststrecke-wien-salzburg/ausbau-marchegger-ostbahn/rund-um-den-bau",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "oebb-marchegger-overview",
+      "title": "ÖBB Südstrecke: Marchegger Ostbahn",
+      "url": "https://suedstrecke.oebb.at/de/projekte/02-ausbau-marchegger-ostbahn",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-marchegger",
+      "title": "OpenStreetMap: Marchegger Ostbahn rail geometry, ÖBB line ref 117 01",
+      "url": "https://www.openstreetmap.org/#map=10/48.24/16.69",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lots": [
+    {
+      "id": "stadlau-marchegg-upgrade",
+      "name": {
+        "en": "Wien Stadlau–Marchegg upgrade and double tracking",
+        "ro": "Modernizare și dublare Wien Stadlau–Marchegg"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2015",
+        "opened": "2025"
+      },
+      "lengthKm": 37,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2018-12",
+          "sourceRef": "oebb-marchegger-build",
+          "note": {
+            "en": "The Wien Stadlau–Wien Aspern Nord construction section entered service.",
+            "ro": "Secțiunea Wien Stadlau–Wien Aspern Nord a intrat în exploatare."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2022-12",
+          "sourceRef": "oebb-marchegger-build",
+          "note": {
+            "en": "Selective double tracking and electrification were completed.",
+            "ro": "Au fost finalizate dublarea selectivă și electrificarea."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2023-12",
+          "sourceRef": "oebb-marchegger-build",
+          "note": {
+            "en": "The full double-track expansion between Raasdorf and Marchegg was completed.",
+            "ro": "A fost finalizată dublarea completă între Raasdorf și Marchegg."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025",
+          "sourceRef": "oebb-marchegger-build",
+          "note": {
+            "en": "ÖBB records completion of the continuous double-track expansion in 2025.",
+            "ro": "ÖBB consemnează finalizarea dublării continue a liniei în 2025."
+          }
+        }
+      ],
+      "note": {
+        "en": "ÖBB gives about 37 km for the Austrian route between Vienna and Marchegg. The OSM centerline follows one rail alignment and draws about 36 km. The Marchegg–state border section is described separately by ÖBB and is not included in this lot.",
+        "ro": "ÖBB indică aproximativ 37 km pentru traseul austriac dintre Viena și Marchegg. Linia centrală OSM urmează un singur aliniament feroviar și măsoară aproximativ 36 km. Secțiunea Marchegg–frontieră este descrisă separat de ÖBB și nu este inclusă în acest lot."
+      },
+      "sourceRefs": [
+        "oebb-marchegger-build",
+        "oebb-marchegger-overview",
+        "osm-marchegger"
+      ],
+      "geometryRef": "stadlau-marchegg-upgrade"
+    }
+  ]
+}
