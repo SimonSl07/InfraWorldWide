@@ -20,12 +20,14 @@ const LETTER_FOLDS: Record<string, string> = {
   Æ: "ae",
   œ: "oe",
   Œ: "oe",
+  // Turkish dotless i: "Özaltın" must fold to "ozaltin", not "ozaltn".
+  ı: "i",
 };
 
 /** Lowercases and strips accents: "Bögl" → "bogl", "Râul" → "raul". */
 export function foldText(value: string): string {
   return value
-    .replace(/[øØłŁđĐßæÆœŒ]/g, (c) => LETTER_FOLDS[c] ?? c)
+    .replace(/[øØłŁđĐßæÆœŒı]/g, (c) => LETTER_FOLDS[c] ?? c)
     .normalize("NFD")
     .replace(/\p{Diacritic}/gu, "")
     .toLowerCase();
