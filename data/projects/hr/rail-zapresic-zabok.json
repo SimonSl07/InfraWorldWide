@@ -1,0 +1,230 @@
+{
+  "id": "hr-rail-zapresic-zabok",
+  "country": "hr",
+  "category": "railway",
+  "name": {
+    "en": "Zaprešić – Zabok railway modernisation and electrification (R201)",
+    "ro": "Modernizarea și electrificarea căii ferate Zaprešić – Zabok (R201)"
+  },
+  "description": {
+    "en": "Modernisation and electrification of the 23.9 km Zaprešić – Zabok section of the R201 Zaprešić – Čakovec regional line, with rebuilt stations at Novi Dvori, Luka, Veliko Trgovišće and Zabok and new stops at Pojatno, Kupljenovo and Žeinci. The works contract with Swietelsky was signed on 12 June 2018 for €74.4 million. Works ran from July 2018 to September 2022. A second lot covers the 11 km renewal of the local line Hum-Lug – Gornja Stubica, contracted on 2 June 2026 for €16 million.",
+    "ro": "Modernizarea și electrificarea tronsonului Zaprešić – Zabok (23,9 km) al liniei regionale R201 Zaprešić – Čakovec, cu stațiile Novi Dvori, Luka, Veliko Trgovišće și Zabok reconstruite și cu stațiile de oprire Pojatno, Kupljenovo și Žeinci. Contractul de lucrări cu Swietelsky a fost semnat la 12 iunie 2018 pentru 74,4 milioane de euro. Lucrările au durat din iulie 2018 până în septembrie 2022. Un al doilea lot cuprinde renovarea pe 11 km a liniei locale Hum-Lug – Gornja Stubica, contractată la 2 iunie 2026 pentru 16 milioane de euro."
+  },
+  "operator": "hr-hz-infrastruktura",
+  "lots": [
+    {
+      "id": "zapresic-zabok",
+      "name": {
+        "en": "Zaprešić – Zabok",
+        "ro": "Zaprešić – Zabok"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-06-12",
+        "constructionStart": "2018-07",
+        "opened": "2022-09"
+      },
+      "lengthKm": 23.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 74.4,
+              "currency": "EUR",
+              "year": 2018,
+              "scope": "works",
+              "note": "Works contract with Swietelsky d.o.o. VAT basis not stated."
+            },
+            "date": "2018-06-12",
+            "sourceRef": "hzinfra-zapresic-zabok"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 120,
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-06-12",
+          "note": {
+            "en": "Works contract signed with Swietelsky d.o.o.; supervision contract signed on 28 June 2018 with DB Engineering & Consulting GmbH (€2.1 million).",
+            "ro": "Contract de lucrări semnat cu Swietelsky d.o.o.; contractul de supraveghere a fost semnat la 28 iunie 2018 cu DB Engineering & Consulting GmbH (2,1 milioane de euro)."
+          },
+          "sourceRef": "hzinfra-zapresic-zabok"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-07",
+          "sourceRef": "hzinfra-zapresic-zabok"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-09",
+          "note": {
+            "en": "HŽ Infrastruktura records the works as finished in September 2022.",
+            "ro": "HŽ Infrastruktura înregistrează lucrările ca încheiate în septembrie 2022."
+          },
+          "sourceRef": "hzinfra-zapresic-zabok"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.85,
+          "amount": {
+            "amount": 69.3,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Operational Programme Competitiveness and Cohesion 2014–2020 (Cohesion Fund), grant agreement KK.07.5.1.03.0001 of 9 November 2017: €69.3 million (85%) of €81.5 million in eligible costs.",
+            "ro": "Programul Operațional Competitivitate și Coeziune 2014–2020 (Fondul de Coeziune), acordul de grant KK.07.5.1.03.0001 din 9 noiembrie 2017: 69,3 milioane de euro (85%) din costurile eligibile de 81,5 milioane de euro."
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.15,
+          "amount": {
+            "amount": 12.2,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "State budget: €12.2 million (15%) of the eligible costs.",
+            "ro": "Bugetul de stat: 12,2 milioane de euro (15%) din costurile eligibile."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Swietelsky d.o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 74.4,
+          "currency": "EUR",
+          "year": 2018,
+          "scope": "works",
+          "note": "VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "The €74.4 million is the works contract. The grant agreement is worth €102.6 million, of which €81.5 million is eligible cost; the two are different figures. The grant implementation period runs from January 2014 to December 2023. The works rebuilt the stations Novi Dvori, Luka, Veliko Trgovišće and Zabok, the stops Pojatno, Kupljenovo and Žeinci, and electrified the line, allowing passenger trains up to 120 km/h. Length measured from OpenStreetMap geometry is 23.6 km against the 23.9 km recorded by HŽ Infrastruktura; the drawn line starts about 150 m after Zaprešić station and ends at Zabok.",
+        "ro": "Cele 74,4 milioane de euro reprezintă contractul de lucrări. Acordul de grant are o valoare de 102,6 milioane de euro, din care 81,5 milioane de euro sunt costuri eligibile; sunt cifre diferite. Perioada de implementare a grantului este ianuarie 2014 – decembrie 2023. Lucrările au reconstruit stațiile Novi Dvori, Luka, Veliko Trgovišće și Zabok și stațiile de oprire Pojatno, Kupljenovo și Žeinci și au electrificat linia, permițând trenurilor de călători viteze de până la 120 km/h. Lungimea măsurată pe geometria OpenStreetMap este de 23,6 km, față de 23,9 km indicați de HŽ Infrastruktura; linia desenată începe la circa 150 m după stația Zaprešić și se termină la Zabok."
+      },
+      "sourceRefs": [
+        "hzinfra-zapresic-zabok",
+        "osm-hr-r201"
+      ],
+      "geometryRef": "zapresic-zabok"
+    },
+    {
+      "id": "hum-lug-gornja-stubica",
+      "name": {
+        "en": "Hum-Lug – Gornja Stubica renewal",
+        "ro": "Hum-Lug – Gornja Stubica, renovare"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-06-02"
+      },
+      "lengthKm": 11,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 16,
+              "currency": "EUR",
+              "year": 2026,
+              "scope": "works",
+              "note": "Contract total as stated by HŽ Infrastruktura: €13 million for the track and €3 million for four bridges and three culverts. VAT basis not stated."
+            },
+            "date": "2026-06-02",
+            "sourceRef": "hzinfra-hum-lug-gornja-stubica"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 80,
+        "tracks": 1
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-06-02",
+          "note": {
+            "en": "Contract signed in Donja Stubica by HŽ Infrastruktura and Pružne građevine.",
+            "ro": "Contract semnat la Donja Stubica de HŽ Infrastruktura și Pružne građevine."
+          },
+          "sourceRef": "hzinfra-hum-lug-gornja-stubica"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Financed from the €900 million agreement between the Government and the European Investment Bank for local and regional railways.",
+            "ro": "Finanțat din acordul de 900 de milioane de euro dintre Guvern și Banca Europeană de Investiții pentru liniile locale și regionale."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Pružne građevine",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24,
+        "value": {
+          "amount": 16,
+          "currency": "EUR",
+          "year": 2026,
+          "scope": "works",
+          "note": "VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Contract signed on 2 June 2026. The €16 million covers €13 million for the track and €3 million for four bridges and three culverts. The first phase covers the track grid, drainage, stops and level crossings, with a two-year deadline; buildings, including station buildings, may follow in a second phase. A board member of Pružne građevine said works were expected to start in the autumn of 2026, so no construction start is recorded. Line speed is to rise to 80 km/h. This is the local line Zabok – Gornja Stubica (L202), a branch off R201 at Hum-Lug, not R201 itself. Length of 11 km as stated by HŽ Infrastruktura; the drawn line, measured from OpenStreetMap geometry, is 10.6 km.",
+        "ro": "Contract semnat la 2 iunie 2026. Cele 16 milioane de euro includ 13 milioane de euro pentru cale și 3 milioane de euro pentru patru poduri și trei podețe. Prima fază cuprinde grila căii, drenajul, stațiile de oprire și trecerile la nivel, cu termen de doi ani; clădirile, inclusiv cele ale stațiilor, ar putea urma într-o a doua fază. Un membru al directoratului Pružne građevine a spus că lucrările urmau să înceapă în toamna lui 2026, deci nu este înregistrată o dată de început. Viteza liniei va crește la 80 km/h. Este linia locală Zabok – Gornja Stubica (L202), o ramificație a R201 la Hum-Lug, nu R201 propriu-zisă. Lungimea de 11 km este cea indicată de HŽ Infrastruktura; linia desenată, măsurată pe geometria OpenStreetMap, are 10,6 km."
+      },
+      "sourceRefs": [
+        "hzinfra-hum-lug-gornja-stubica",
+        "osm-hr-r201"
+      ],
+      "geometryRef": "hum-lug-gornja-stubica"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hzinfra-zapresic-zabok",
+      "title": "HŽ Infrastruktura: Modernizacija i elektrifikacija pruge Zaprešić – Zabok",
+      "url": "https://www.hzinfra.hr/?p=12756",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hzinfra-hum-lug-gornja-stubica",
+      "title": "HŽ Infrastruktura: Počinje obnova pruge Hum-Lug – Gornja Stubica",
+      "url": "https://www.hzinfra.hr/pocinje-obnova-pruge-hum-lug-gornja-stubica/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-hr-r201",
+      "title": "OpenStreetMap contributors (geometry of railway lines R201 and L202, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

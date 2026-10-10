@@ -1,0 +1,143 @@
+{
+  "id": "hr-rail-hrvatski-leskovac-karlovac",
+  "country": "hr",
+  "category": "railway",
+  "name": {
+    "en": "Hrvatski Leskovac – Karlovac railway (M202, second track)",
+    "ro": "Calea ferată Hrvatski Leskovac – Karlovac (M202, a doua cale)"
+  },
+  "description": {
+    "en": "Reconstruction of the single-track electrified M202 Zagreb GK – Rijeka line between Hrvatski Leskovac and Karlovac (44.0 km) and construction of a second track, on the Rijeka – Zagreb – Budapest section of the Mediterranean corridor. HŽ Infrastruktura split the project into 11 stages: STRABAG completed eight, and the remaining three went to COMSA S.A. under a contract signed on 17 April 2026.",
+    "ro": "Reconstrucția liniei electrificate M202 Zagreb GK – Rijeka cu o singură cale între Hrvatski Leskovac și Karlovac (44,0 km) și construirea unei a doua căi, pe tronsonul Rijeka – Zagreb – Budapesta al coridorului mediteraneean. HŽ Infrastruktura a împărțit proiectul în 11 etape: STRABAG a finalizat opt, iar celelalte trei au revenit COMSA S.A. printr-un contract semnat la 17 aprilie 2026."
+  },
+  "operator": "hr-hz-infrastruktura",
+  "lots": [
+    {
+      "id": "hrvatski-leskovac-karlovac",
+      "name": {
+        "en": "Hrvatski Leskovac – Karlovac",
+        "ro": "Hrvatski Leskovac – Karlovac"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-07-28"
+      },
+      "lengthKm": 44,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 278.85,
+              "currency": "EUR",
+              "year": 2026,
+              "scope": "works",
+              "note": "Works contract with COMSA S.A. for the remaining three stages, excluding VAT. Including 25% VAT: EUR 348.56 million."
+            },
+            "date": "2026-04-17",
+            "sourceRef": "hzinfra-hrvatski-leskovac-karlovac"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2022-07-28",
+          "note": {
+            "en": "Works contracts signed with the STRABAG AG, STRABAG d.o.o. and STRABAG Rail a.s. consortium and with AŽD Praha s.r.o.",
+            "ro": "Contracte de lucrări semnate cu consorțiul STRABAG AG, STRABAG d.o.o. și STRABAG Rail a.s. și cu AŽD Praha s.r.o."
+          },
+          "sourceRef": "hzinfra-hrvatski-leskovac-karlovac-signed"
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-04-17",
+          "note": {
+            "en": "Works contract for the remaining three stages signed with COMSA S.A.",
+            "ro": "Contract de lucrări pentru cele trei etape rămase, semnat cu COMSA S.A."
+          },
+          "sourceRef": "hzinfra-hrvatski-leskovac-karlovac"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "STRABAG",
+          "role": "builder"
+        },
+        {
+          "name": "COMSA S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "AŽD Praha s.r.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 36,
+        "value": {
+          "amount": 278.85,
+          "currency": "EUR",
+          "year": 2026,
+          "scope": "works",
+          "note": "COMSA contract for the remaining three stages, excluding VAT."
+        }
+      },
+      "note": {
+        "en": "The project page states 44.0 km and 11 stages. STRABAG completed eight: the Lazina and Ribnjak underpasses, the Pavučnjak, Domagović, Cvetković and Zdenčina overpasses, the Orlovac – Ilovac unclassified road and the Mrzlo Polje traction substation. The remaining three stages (track, stations and halts, bridges and viaducts, the Bedekova underpass) went to COMSA S.A.: selection decision 6 February 2026, contract signed 17 April 2026, EUR 278,849,960.28 excluding VAT (EUR 348,562,450.35 including VAT), 36 months. The first works contracts were signed on 28 July 2022 with the STRABAG consortium (STRABAG AG, STRABAG d.o.o., STRABAG Rail a.s.) and AŽD Praha s.r.o., about 2.72 billion kuna in total (\"dvije milijarde i 721 milijun kuna\"); STRABAG's selected bid after a repeated procedure was HRK 1,713,193,222.13 excluding VAT. Both contracts are in kuna and are not recorded as money fields. No page gives the reason the last three stages were re-tendered, a termination, a construction start, or the extents of the stages, so none are recorded and the lot is not split. The line stays in operation as single track until the second track is built. Design speed 160 km/h, except 120 and 140 km/h around Mavračići, Jastrebarsko and Karlovac. Length measured from OpenStreetMap geometry between the two stations is about 41.8 km; the sourced 44.0 km is kept.",
+        "ro": "Pagina proiectului indică 44,0 km și 11 etape. STRABAG a finalizat opt: pasajele subterane Lazina și Ribnjak, pasajele supraterane Pavučnjak, Domagović, Cvetković și Zdenčina, drumul neclasificat Orlovac – Ilovac și substația de tracțiune Mrzlo Polje. Cele trei etape rămase (calea, stațiile și haltele, podurile și viaductele, pasajul subteran Bedekova) au revenit COMSA S.A.: decizia de selectare la 6 februarie 2026, contract semnat la 17 aprilie 2026, 278.849.960,28 EUR fără TVA (348.562.450,35 EUR cu TVA), 36 de luni. Primele contracte de lucrări au fost semnate la 28 iulie 2022 cu consorțiul STRABAG (STRABAG AG, STRABAG d.o.o., STRABAG Rail a.s.) și cu AŽD Praha s.r.o., în total circa 2,72 miliarde kuna („dvije milijarde i 721 milijun kuna”); oferta STRABAG selectată după o procedură repetată a fost de 1.713.193.222,13 HRK fără TVA. Ambele contracte sunt în kuna și nu sunt înregistrate ca sume. Nicio pagină nu indică motivul reorganizării ultimelor trei etape, o reziliere, un început al lucrărilor sau întinderea etapelor, deci nu sunt înregistrate, iar lotul nu este împărțit. Linia rămâne în exploatare cu o singură cale până la construirea celei de-a doua. Viteza de proiect 160 km/h, cu excepția a 120 și 140 km/h în zona Mavračići, Jastrebarsko și Karlovac. Lungimea măsurată din geometria OpenStreetMap între cele două stații este de circa 41,8 km; cei 44,0 km din sursă sunt păstrați."
+      },
+      "sourceRefs": [
+        "hzinfra-hrvatski-leskovac-karlovac",
+        "hzinfra-hrvatski-leskovac-karlovac-signed",
+        "hzinfra-hrvatski-leskovac-karlovac-selected",
+        "osm-copyright"
+      ],
+      "geometryRef": "hrvatski-leskovac-karlovac",
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85,
+          "detail": {
+            "en": "85% of the funds, under the Operational Programme Competitiveness and Cohesion 2014–2020; amount and fund not stated",
+            "ro": "85% din fonduri, în cadrul Programului Operațional Competitivitate și Coeziune 2014–2020; suma și fondul nu sunt indicate"
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hzinfra-hrvatski-leskovac-karlovac",
+      "title": "HŽ Infrastruktura: Rekonstrukcija postojećeg i izgradnja drugog kolosijeka na dionici Hrvatski Leskovac – Karlovac na željezničkoj pruzi M202 Zagreb GK – Rijeka",
+      "url": "https://www.hzinfra.hr/rekonstrukcija-postojeceg-i-izgradnja-drugog-kolosijeka-na-dionici-hrvatski-leskovac-karlovac-na-zeljeznickoj-pruzi-m202-zagreb-gk-rijeka/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hzinfra-hrvatski-leskovac-karlovac-signed",
+      "title": "HŽ Infrastruktura: Potpisani ugovori za radove na projektu Hrvatski Leskovac – Karlovac",
+      "url": "https://www.hzinfra.hr/potpisani-ugovori-za-radove-na-projektu-hrvatski-leskovac-karlovac/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hzinfra-hrvatski-leskovac-karlovac-selected",
+      "title": "HŽ Infrastruktura: Dionica Hrvatski Leskovac – Karlovac, odabran izvođač radova",
+      "url": "https://www.hzinfra.hr/dionica-hrvatski-leskovac-karlovac-odabran-izvodac-radova/",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-copyright",
+      "title": "OpenStreetMap contributors: railway M202 geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
