@@ -1,0 +1,874 @@
+{
+  "id": "cz-d48",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D48 motorway (Bělotín – Nový Jičín – Frýdek-Místek – Žukov)",
+    "ro": "Autostrada D48 (Bělotín – Nový Jičín – Frýdek-Místek – Žukov)"
+  },
+  "description": {
+    "en": "Czechia's D48, until 31 December 2015 the R48 expressway on the I/48 road, between the D1 at Bělotín and Žukov near Český Těšín, where it continues as the I/48 to the Polish border. The ŘSD list of 1 July 2026 gives 62.081 km as motorway. Sections opened from 2004 to 2012 between Bělotín, Rychaltice and Žukov, from 2020 on the rebuilt I/48 between Rybí and Rychaltice, in 2022–2023 on the Frýdek-Místek bypass and in 2023–2024 between Bělotín and Šenov. Two lots are unfinished: Dub – Palačov (opening planned October 2026) and Šenov – Rybí, started in October 2026. Lots follow the cs.wikipedia section table, checked against ŘSD leaflets where they exist. Many lots are rebuilds of the existing I/48 into a divided motorway; where a source's section length differs from the drawn centreline, the sourced length is kept.",
+    "ro": "D48 a Cehiei, până la 31 decembrie 2015 drumul expres R48 pe drumul I/48, între D1 la Bělotín și Žukov, lângă Český Těšín, unde continuă ca I/48 până la granița cu Polonia. Lista ŘSD din 1 iulie 2026 indică 62,081 km de autostradă. Sectoarele s-au deschis din 2004 până în 2012 între Bělotín, Rychaltice și Žukov, din 2020 pe I/48 reconstruit între Rybí și Rychaltice, în 2022–2023 pe ocolitoarea Frýdek-Místek și în 2023–2024 între Bělotín și Šenov. Două loturi nu sunt terminate: Dub – Palačov (deschidere prevăzută în octombrie 2026) și Šenov – Rybí, început în octombrie 2026. Loturile urmează tabelul secțiunilor de pe cs.wikipedia, verificat cu fișele ŘSD acolo unde există. Multe loturi sunt reconstrucții ale drumului I/48 existent într-o autostradă cu sensuri separate; când lungimea unui sector dintr-o sursă diferă de axul desenat, se păstrează lungimea din sursă."
+  },
+  "lots": [
+    {
+      "id": "belotin-privadec",
+      "name": {
+        "en": "Bělotín feeder (D1 junction – Bělotín-jih)",
+        "ro": "Legătura Bělotín (nodul D1 – Bělotín-jih)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-11"
+      },
+      "lengthKm": 1.6,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-11",
+          "sourceRef": "cs-wikipedia-d48"
+        }
+      ],
+      "note": {
+        "en": "Stavba 4801. Opening date and length from the cs.wikipedia section table (category R 24,5/100); no ŘSD leaflet covers this section. The table gives construction start 11/2004 and an archived dalnice.com page gives 1/2004, so no start is recorded. The feeder joined the road to the D1. Drawn from the D1 junction to the Bělotín-jih junction (OSM motorway_junction node).",
+        "ro": "Construcția 4801. Data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 24,5/100); nicio fișă ŘSD nu acoperă acest sector. Tabelul indică începerea lucrărilor în 11/2004, iar o pagină dalnice.com arhivată în 1/2004, deci nu se înregistrează o dată de început. Legătura a conectat drumul la D1. Desenat de la nodul cu D1 până la nodul Bělotín-jih (nod motorway_junction din OSM)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d48",
+        "dalnice-com-r48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "belotin-privadec"
+    },
+    {
+      "id": "belotin-obchvat",
+      "name": {
+        "en": "Bělotín bypass (Bělotín-jih – Bělotín-východ)",
+        "ro": "Ocolitoarea Bělotín (Bělotín-jih – Bělotín-východ)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-08"
+      },
+      "lengthKm": 1.56,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-08",
+          "sourceRef": "cs-wikipedia-d48"
+        }
+      ],
+      "note": {
+        "en": "Stavba 4802. Opening date and length from the cs.wikipedia section table (category R 22,5/100); no ŘSD leaflet covers this section. The table gives construction start 05/2004 and an archived dalnice.com page gives 1/2004, so no start is recorded; the same page dates a half-profile opening to 1 July 2007 and the full profile to 2 August 2008, against 08/2007 in the table. Drawn from Bělotín-jih to the end of the bypass, where the ŘSD leaflet T7a says its section starts (leaflet km 0.864; an OSM way boundary, not a junction node).",
+        "ro": "Construcția 4802. Data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 22,5/100); nicio fișă ŘSD nu acoperă acest sector. Tabelul indică începerea lucrărilor în 05/2004, iar o pagină dalnice.com arhivată în 1/2004, deci nu se înregistrează o dată de început; aceeași pagină datează deschiderea în profil redus la 1 iulie 2007 și profilul complet la 2 august 2008, față de 08/2007 în tabel. Desenat de la Bělotín-jih până la capătul ocolitoarei, unde fișa ŘSD T7a spune că începe sectorul ei (km 0,864 din fișă; limită de drum în OSM, nu nod de ieșire)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d48",
+        "dalnice-com-r48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "belotin-obchvat"
+    },
+    {
+      "id": "belotin-dub",
+      "name": {
+        "en": "Bělotín-východ – Dub",
+        "ro": "Bělotín-východ – Dub"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-12-15",
+        "constructionStart": "2021-06-10",
+        "opened": "2023-12-21"
+      },
+      "lengthKm": 5.036,
+      "profile": {
+        "works": "reconstruction",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-08-08",
+          "sourceRef": "rsd-leaflet-t7a"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-12-15",
+          "sourceRef": "rsd-leaflet-t7a"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-06-10",
+          "sourceRef": "rsd-leaflet-t7a"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-12-21",
+          "sourceRef": "rsd-leaflet-t7a"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Colas CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Firesta-Fišer",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba T7a. Rebuild of the existing two-lane undivided I/48 into a divided motorway, category D 25,5/120. One contract covers the whole first stage (13.2 km: this lot and Palačov – Šenov): price 3 084 446 497 Kč excluding VAT against an estimate of 2 704 000 000 Kč, so no lot-level value is recorded. The contract was signed on 15 December 2020. Leaflet length 5036 m; the drawing starts where the road built to D 25,5/120 standard begins (an OSM way boundary) and ends at the Dub junction.",
+        "ro": "Construcția ŘSD T7a. Reconstrucția drumului I/48 existent, cu două benzi și fără separare, într-o autostradă cu sensuri separate, categoria D 25,5/120. Un singur contract acoperă întreaga primă etapă (13,2 km: acest lot și Palačov – Šenov): preț 3 084 446 497 Kč fără TVA, față de o estimare de 2 704 000 000 Kč, deci nu se înregistrează o valoare pe lot. Contractul a fost semnat la 15 decembrie 2020. Lungimea din fișă este 5036 m; desenul începe unde începe drumul construit la standardul D 25,5/120 (limită de drum în OSM) și se termină la nodul Dub."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-t7a",
+        "cs-wikipedia-d48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "belotin-dub"
+    },
+    {
+      "id": "dub-palacov",
+      "name": {
+        "en": "Dub – Palačov",
+        "ro": "Dub – Palačov"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-04-20",
+        "constructionStart": "2023-06-05",
+        "expectedOpening": "2026-10"
+      },
+      "lengthKm": 3.695,
+      "profile": {
+        "works": "reconstruction",
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-12-08",
+          "sourceRef": "rsd-leaflet-z57b"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-04-20",
+          "sourceRef": "rsd-leaflet-z57b",
+          "note": {
+            "en": "Contract signed with the winning bidder.",
+            "ro": "Contract semnat cu ofertantul câștigător."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-06-05",
+          "sourceRef": "rsd-leaflet-z57b"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Colas CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Colas Hungária",
+          "role": "builder"
+        },
+        {
+          "name": "Firesta-Fišer",
+          "role": "builder"
+        },
+        {
+          "name": "HBH Projekt",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba Z57b (leaflet state 04/2026): rebuild of the I/48 between Dub and the Palačov interchange (3695 m), built with the new I/35 Lešná–Palačov road (5.2 km, category S 24,5/100). The contract price of 2 184 076 205 Kč excluding VAT (estimate 2 200 000 000 Kč) covers both roads, so no lot-level value is recorded. Works started on 5 June 2023. ŘSD said on 30 September 2026 that the section opens in October 2026. The ŘSD list of motorway lengths of 1 July 2026 does not yet include it. OSM draws the existing two-way road up to where the dual carriageway begins east of the Palačov interchange; the drawing is 4.0 km against the sourced 3.7 km.",
+        "ro": "Construcția ŘSD Z57b (fișa, stare 04/2026): reconstrucția drumului I/48 între Dub și nodul Palačov (3695 m), executată împreună cu drumul nou I/35 Lešná–Palačov (5,2 km, categoria S 24,5/100). Prețul contractului de 2 184 076 205 Kč fără TVA (estimare 2 200 000 000 Kč) acoperă ambele drumuri, deci nu se înregistrează o valoare pe lot. Lucrările au început la 5 iunie 2023. ŘSD a declarat la 30 septembrie 2026 că sectorul se deschide în octombrie 2026. Lista ŘSD a lungimilor de autostradă din 1 iulie 2026 nu îl include încă. OSM desenează drumul existent cu două sensuri până unde începe carosabilul dublu, la est de nodul Palačov; desenul măsoară 4,0 km față de 3,7 km din sursă."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-z57b",
+        "rsd-press-novy-jicin-2026",
+        "rsd-lengths-2026",
+        "cs-wikipedia-d48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dub-palacov"
+    },
+    {
+      "id": "palacov-senov",
+      "name": {
+        "en": "Palačov – Šenov u Nového Jičína",
+        "ro": "Palačov – Šenov u Nového Jičína"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-12-15",
+        "constructionStart": "2021-06-10",
+        "opened": "2024-12-19"
+      },
+      "lengthKm": 8.151,
+      "profile": {
+        "works": "reconstruction",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-08-08",
+          "sourceRef": "rsd-leaflet-t7c"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-12-15",
+          "sourceRef": "rsd-leaflet-t7c"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-06-10",
+          "sourceRef": "rsd-leaflet-t7c"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-19",
+          "sourceRef": "rsd-leaflet-t7c"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Colas CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Firesta-Fišer",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba T7c, km 9.600–17.751 of the leaflet. Rebuild of the I/48, category D 25,5/120, from the existing interchange east of Palačov to Šenov u Nového Jičína. It shares one contract with Bělotín – Dub (price 3 084 446 497 Kč excluding VAT for 13.2 km), so no lot-level value is recorded. The drawing ends where OSM changes the road ref from D48 to 48 near Nový Jičín.",
+        "ro": "Construcția ŘSD T7c, km 9,600–17,751 din fișă. Reconstrucția drumului I/48, categoria D 25,5/120, de la nodul existent la est de Palačov până la Šenov u Nového Jičína. Are un singur contract cu Bělotín – Dub (preț 3 084 446 497 Kč fără TVA pentru 13,2 km), deci nu se înregistrează o valoare pe lot. Desenul se termină unde OSM schimbă referința drumului din D48 în 48, lângă Nový Jičín."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-t7c",
+        "rsd-lengths-2026",
+        "cs-wikipedia-d48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "palacov-senov"
+    },
+    {
+      "id": "senov-rybi",
+      "name": {
+        "en": "Šenov u Nového Jičína – Rybí (Nový Jičín)",
+        "ro": "Šenov u Nového Jičína – Rybí (Nový Jičín)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2026-10",
+        "expectedOpening": "2029-01"
+      },
+      "lengthKm": 3.815,
+      "contract": {
+        "value": {
+          "amount": 870.48,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\", 870 481 436 Kč). Signing date and price year not stated; the leaflet of April 2026 was still evaluating bids."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1200,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby II. et.\"), leaflet of April 2026; price year not stated."
+        }
+      },
+      "profile": {
+        "works": "reconstruction",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-10-16",
+          "sourceRef": "rsd-leaflet-t7b"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-10",
+          "sourceRef": "rsd-press-novy-jicin-2026"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "MI Roads",
+          "role": "builder"
+        },
+        {
+          "name": "B E S",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav DS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba T7b, second stage of Bělotín – Rybí (km 18.1–21.9 of the leaflet, 3815 m, category D 25,5/120), the Nový Jičín bypass section with the Nový Jičín-západ and Nový Jičín-východ interchanges. Six bids were received (870.48 to 1 094.62 million Kč excluding VAT). The ŘSD press release of 30 September 2026 says works have begun, with opening planned for January 2029 after 27 months; the leaflet gives 2029. ŘSD says D48 will then be complete except the Šenov viaduct, for which only a study exists. The leaflet says the I/48 is rebuilt in place, reusing the existing earthwork, so the drawing follows the existing road. OSM still maps it as I/48 (ref 48). The drawing, 4.4 km, also takes in the Šenov viaduct (leaflet km 17.751–18.104, in neither this lot nor Palačov – Šenov) and ends where OSM ref D48 begins at Rybí.",
+        "ro": "Construcția ŘSD T7b, a doua etapă din Bělotín – Rybí (km 18,1–21,9 din fișă, 3815 m, categoria D 25,5/120), sectorul ocolitoarei Nový Jičín cu nodurile Nový Jičín-západ și Nový Jičín-východ. Au fost primite șase oferte (870,48 până la 1 094,62 milioane Kč fără TVA). Comunicatul ŘSD din 30 septembrie 2026 spune că lucrările au început, cu deschiderea prevăzută în ianuarie 2029, după 27 de luni; fișa indică 2029. ŘSD spune că D48 va fi atunci completă, cu excepția viaductului Šenov, pentru care există doar un studiu. Fișa spune că I/48 se reconstruiește pe loc, folosind corpul de drum existent, deci desenul urmează drumul existent. OSM îl desenează încă ca I/48 (ref 48). Desenul, de 4,4 km, include și viaductul Šenov (km 17,751–18,104 din fișă, în afara acestui lot și a lotului Palačov – Šenov) și se termină unde începe ref D48 în Rybí."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-t7b",
+        "rsd-press-novy-jicin-2026",
+        "cs-wikipedia-d48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "senov-rybi"
+    },
+    {
+      "id": "rybi-rychaltice",
+      "name": {
+        "en": "Rybí – Rychaltice",
+        "ro": "Rybí – Rychaltice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2017-05",
+        "opened": "2020-12-15"
+      },
+      "lengthKm": 12.975,
+      "contract": {
+        "value": {
+          "amount": 2069.02,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\", 2 069 023 420 Kč). Signing date and price year not stated."
+        }
+      },
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-07",
+          "sourceRef": "rsd-leaflet-t8"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-05",
+          "sourceRef": "rsd-leaflet-t8"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-15",
+          "sourceRef": "rsd-leaflet-t8"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds (the leaflet does not name the programme).",
+            "ro": "Cofinanțat din fonduri UE (fișa nu numește programul)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky",
+          "role": "builder"
+        },
+        {
+          "name": "Colas CZ",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba T8 (leaflet 82): rebuild and new construction, category R 25,5/120, turning the existing undivided four-lane I/48 into a divided road. The leaflet timeline gives construction start 05/2017; the cs.wikipedia table gives 06/2017. The leaflet gives the whole Rybí – Rychaltice section as 12 975 m, of which 11 528 m is this contract's main route and 1447 m is the Příbor bypass section (cs.wikipedia 4804.1, opened 24 November 2011), built under an earlier contract. The length recorded here is the whole section, which matches the 13.2 km drawn from the start of OSM ref D48 at Rybí to the Rychaltice junction.",
+        "ro": "Construcția ŘSD T8 (fișa 82): reconstrucție și construcție nouă, categoria R 25,5/120, care transformă drumul I/48 existent cu patru benzi fără separare într-un drum cu sensuri separate. Cronologia din fișă indică începerea lucrărilor în 05/2017; tabelul de pe cs.wikipedia indică 06/2017. Fișa dă întregul sector Rybí – Rychaltice ca 12 975 m, din care 11 528 m sunt traseul principal al acestui contract, iar 1447 m sunt sectorul ocolitoarei Příbor (cs.wikipedia 4804.1, deschis la 24 noiembrie 2011), construit printr-un contract anterior. Lungimea înregistrată aici este întregul sector, care corespunde celor 13,2 km desenați de la începutul ref D48 din OSM în Rybí până la nodul Rychaltice."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-t8",
+        "cs-wikipedia-d48",
+        "rsd-lengths-2026",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rybi-rychaltice"
+    },
+    {
+      "id": "rychaltice-frydek-mistek-zapad",
+      "name": {
+        "en": "Rychaltice – Frýdek-Místek-západ",
+        "ro": "Rychaltice – Frýdek-Místek-západ"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-09",
+        "opened": "2012-12-13"
+      },
+      "lengthKm": 7.137,
+      "contract": {
+        "value": {
+          "amount": 2574.62,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\", 2 574 617 242 Kč). Signing date and price year not stated."
+        }
+      },
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2008-09",
+          "sourceRef": "rsd-leaflet-t9"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-09",
+          "sourceRef": "rsd-leaflet-t9"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-12-13",
+          "sourceRef": "rsd-leaflet-t9"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Sdružení R48 Rychaltice–Frýdek-Místek",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba T9 (leaflet 83, archived copy), category R 25,5/120, main route 7137 m. Between the Rychaltice interchange and the Hroch rest area the existing I/48 was rebuilt, and beyond it the road follows a new route; the Rychaltice interchange was rebuilt too, and a 160 m cut-and-cover tunnel was built at Lysůvky. The leaflet names the contractor as Sdružení R48 Rychaltice–Frýdek-Místek (Skanska DS, ODS-DS Ostrava, Metrostav a.s.).",
+        "ro": "Construcția ŘSD T9 (fișa 83, copie arhivată), categoria R 25,5/120, traseu principal 7137 m. Între nodul Rychaltice și popasul Hroch a fost reconstruit drumul I/48 existent, iar dincolo de el drumul urmează un traseu nou; nodul Rychaltice a fost reconstruit, iar la Lysůvky s-a construit un tunel de 160 m în săpătură deschisă. Fișa numește constructorul Sdružení R48 Rychaltice–Frýdek-Místek (Skanska DS, ODS-DS Ostrava, Metrostav a.s.)."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-t9",
+        "cs-wikipedia-d48",
+        "rsd-lengths-2026",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rychaltice-frydek-mistek-zapad"
+    },
+    {
+      "id": "frydek-mistek-obchvat-i",
+      "name": {
+        "en": "Frýdek-Místek bypass, stage I (Frýdek-Místek-západ – Ostravice)",
+        "ro": "Ocolitoarea Frýdek-Místek, etapa I (Frýdek-Místek-západ – Ostravice)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-05-22",
+        "opened": "2022-09-02"
+      },
+      "lengthKm": 4.25,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-05-22",
+          "sourceRef": "rsd-leaflet-t10a"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2022-06-30",
+          "sourceRef": "rsd-leaflet-t10a"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-09-02",
+          "sourceRef": "rsd-leaflet-t10a"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds (the leaflet does not name the programme).",
+            "ro": "Cofinanțat din fonduri UE (fișa nu numește programul)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Porr",
+          "role": "builder"
+        },
+        {
+          "name": "Habau CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bohemia",
+          "role": "builder"
+        },
+        {
+          "name": "Transconsult",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba T10a (leaflet 79), main route 4250 m, category R 25,5/120, a new road south of Místek with the Frýdek-Místek-západ and Frýdek-Místek-jih interchanges. It was built with the D56 Frýdek-Místek connection under one contract of 2 169 232 817 Kč excluding VAT, so no lot-level value is recorded. A part opened on 30 June 2022 and the whole stage on 2 September 2022. The drawing starts at the Frýdek-Místek-západ exit node and ends east of the Ostravice bridge, 3.7 km against the sourced 4.25 km.",
+        "ro": "Construcția ŘSD T10a (fișa 79), traseu principal 4250 m, categoria R 25,5/120, un drum nou la sud de Místek cu nodurile Frýdek-Místek-západ și Frýdek-Místek-jih. A fost executat cu legătura D56 Frýdek-Místek printr-un singur contract de 2 169 232 817 Kč fără TVA, deci nu se înregistrează o valoare pe lot. O parte s-a deschis la 30 iunie 2022, iar întreaga etapă la 2 septembrie 2022. Desenul începe la nodul de ieșire Frýdek-Místek-západ și se termină la est de podul peste Ostravice, 3,7 km față de 4,25 km din sursă."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-t10a",
+        "cs-wikipedia-d48",
+        "rsd-lengths-2026",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "frydek-mistek-obchvat-i"
+    },
+    {
+      "id": "frydek-mistek-obchvat-ii",
+      "name": {
+        "en": "Frýdek-Místek bypass, stage II (Ostravice – Frýdek-Místek-východ)",
+        "ro": "Ocolitoarea Frýdek-Místek, etapa II (Ostravice – Frýdek-Místek-východ)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-09-25",
+        "opened": "2023-07-24"
+      },
+      "lengthKm": 4.316,
+      "contract": {
+        "value": {
+          "amount": 1975.8,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby II. etapy dle smlouvy\", 1 975 799 472 Kč). Signing date and price year not stated."
+        }
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1770,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby (II. et.)\"); price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-09-25",
+          "sourceRef": "rsd-leaflet-t10b"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2022-12-22",
+          "sourceRef": "rsd-leaflet-t10b"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-07-24",
+          "sourceRef": "rsd-leaflet-t10b"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Eurovia CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Transconsult",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba T10b (leaflet 409), main route 4316 m (operating chainage km 48.610–52.926), category R 25,5/120, including the Frýdek-Místek-východ interchange. The first contractor withdrew from the contract and a new one was selected at the end of August 2019. It opened at half profile on 22 December 2022; the full 2+2 profile opened on 24 July 2023, the date the leaflet and the cs.wikipedia table give as the opening, and the date recorded here. Works on part of the route were halted in 2022 by a court ruling on the building permit.",
+        "ro": "Construcția ŘSD T10b (fișa 409), traseu principal 4316 m (kilometraj de exploatare km 48,610–52,926), categoria R 25,5/120, cu nodul Frýdek-Místek-východ. Primul constructor s-a retras din contract, iar la sfârșitul lui august 2019 a fost ales unul nou. S-a deschis în profil redus la 22 decembrie 2022; profilul complet 2+2 s-a deschis la 24 iulie 2023, data indicată ca deschidere în fișă și în tabelul de pe cs.wikipedia, și data înregistrată aici. Lucrările pe o parte din traseu au fost oprite în 2022 de o hotărâre judecătorească privind autorizația de construire."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-t10b",
+        "cs-wikipedia-d48",
+        "rsd-lengths-2026",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "frydek-mistek-obchvat-ii"
+    },
+    {
+      "id": "frydek-mistek-vychod-dobra",
+      "name": {
+        "en": "Frýdek-Místek-východ – Dobrá",
+        "ro": "Frýdek-Místek-východ – Dobrá"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2002-06",
+        "opened": "2004-10"
+      },
+      "lengthKm": 1.5,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2002-06",
+          "sourceRef": "cs-wikipedia-d48"
+        },
+        {
+          "kind": "opened",
+          "date": "2004-10",
+          "sourceRef": "cs-wikipedia-d48"
+        }
+      ],
+      "note": {
+        "en": "Stavba 4807. Dates from the cs.wikipedia section table (category R 22,5/100); no ŘSD leaflet covers this section. The table's 5.62 km is the whole 2004 Frýdek – Dobrá stavba (an archived dalnice.com page: about 5.6 km, opened 26 October 2004). Its western part is now the feeder of the Frýdek-Místek bypass (ŘSD leaflet T10b) and is not on the D48 route, so 5.62 km is not recorded. Drawn between the Frýdek-Místek-východ and Dobrá junctions (OSM motorway_junction nodes), 1.47 km; the 1.5 km recorded is that measurement, not a published figure. The ŘSD motorway length of 62.081 km at 1 July 2026 is consistent with it.",
+        "ro": "Construcția 4807. Datele provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 22,5/100); nicio fișă ŘSD nu acoperă acest sector. Cei 5,62 km din tabel reprezintă întreaga construcție Frýdek – Dobrá din 2004 (o pagină dalnice.com arhivată: circa 5,6 km, deschis la 26 octombrie 2004). Partea ei vestică este acum legătura ocolitoarei Frýdek-Místek (fișa ŘSD T10b) și nu mai face parte din traseul D48, deci 5,62 km nu se înregistrează. Desenat între nodurile Frýdek-Místek-východ și Dobrá (noduri motorway_junction din OSM), 1,47 km; cei 1,5 km înregistrați sunt această măsurătoare, nu o cifră publicată. Lungimea de autostradă ŘSD de 62,081 km la 1 iulie 2026 este compatibilă cu ea."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d48",
+        "dalnice-com-r48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "frydek-mistek-vychod-dobra"
+    },
+    {
+      "id": "dobra-tosanovice",
+      "name": {
+        "en": "Dobrá – Tošanovice",
+        "ro": "Dobrá – Tošanovice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-05",
+        "opened": "2006-10"
+      },
+      "lengthKm": 6.88,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-05",
+          "sourceRef": "cs-wikipedia-d48"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-10",
+          "sourceRef": "cs-wikipedia-d48"
+        }
+      ],
+      "note": {
+        "en": "Stavba 4808.1. Dates and length from the cs.wikipedia section table (category R 22,5/100); no ŘSD leaflet covers this section. Drawn between the Dobrá and Tošanovice interchanges (OSM motorway_junction nodes).",
+        "ro": "Construcția 4808.1. Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 22,5/100); nicio fișă ŘSD nu acoperă acest sector. Desenat între nodurile Dobrá și Tošanovice (noduri motorway_junction din OSM)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dobra-tosanovice"
+    },
+    {
+      "id": "tosanovice-zukov",
+      "name": {
+        "en": "Tošanovice – Žukov",
+        "ro": "Tošanovice – Žukov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-04",
+        "opened": "2007-11"
+      },
+      "lengthKm": 7.85,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-04",
+          "sourceRef": "cs-wikipedia-d48"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-11",
+          "sourceRef": "cs-wikipedia-d48"
+        }
+      ],
+      "note": {
+        "en": "Stavba 4809. Dates and length from the cs.wikipedia section table (category R 22,5/100); no ŘSD leaflet covers this section. Drawn from the Tošanovice interchange to the end of OSM ref D48 at Žukov, where the road continues as the I/48 toward Český Těšín and the Polish border.",
+        "ro": "Construcția 4809. Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 22,5/100); nicio fișă ŘSD nu acoperă acest sector. Desenat de la nodul Tošanovice până la sfârșitul ref D48 din OSM la Žukov, unde drumul continuă ca I/48 spre Český Těšín și granița cu Polonia."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d48",
+        "osm-relation-d48",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tosanovice-zukov"
+    }
+  ],
+  "operator": "cz-rsd",
+  "sources": [
+    {
+      "id": "cs-wikipedia-d48",
+      "title": "Wikipedia (cs): Dálnice D48, Přehled úseků and Historie",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D48",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-lengths-2026",
+      "title": "ŘSD: Délky a další data komunikací (state of 1 July 2026, D48 62,081 km)",
+      "url": "https://www.rsd.cz/web/guest/silnice-a-dalnice/delky-a-dalsi-data-komunikaci",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-t7a",
+      "title": "ŘSD: Informační leták, D48 MÚK Bělotín–Rybí, I. etapa (Bělotín–Dub) (12/2023, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/547/leaflet/infoletak_d48-belotin-rybi-I-etapa-belotin-dub-A5.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-z57b",
+      "title": "ŘSD: Informační leták, D48 Dub–Palačov (I/35 Lešná–Palačov) (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/656/leaflet/infoletak_s35-lesna-palacov-d48-dub-palacovA5.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-t7c",
+      "title": "ŘSD: Informační leták, D48 MÚK Bělotín–Rybí, I. etapa (Palačov–Šenov u N. J.) (12/2024, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/660/leaflet/infoletak_d48-belotin-rybi-I-etapa-palacov-senov-A5.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-t7b",
+      "title": "ŘSD: Informační leták, D48 MÚK Bělotín–Rybí II. etapa (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/548/leaflet/infoletak_d48-belotin-rybi-II-etapa.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-press-novy-jicin-2026",
+      "title": "ŘSD: Ředitelství silnic a dálnic začalo stavět nový úsek D48 u Nového Jičína (30. 9. 2026)",
+      "url": "https://www.rsd.cz/-/rsd-zacalo-stavet-novy-usek-d48-u-noveho-jicina",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-t8",
+      "title": "ŘSD: Informační leták, D48 Rybí–MÚK Rychaltice (12/2020, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/82/leaflet/infoletak_d48-rybi-muk-rychaltice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-t9",
+      "title": "ŘSD: Informační leták, R48 Rychaltice–Frýdek-Místek (12/2012, uvedeno do provozu)",
+      "url": "https://apdos.roadmedia.cz/Upload/Stavby/83/d48-rychaltice-fm_1436713033596.pdf",
+      "archiveUrl": "https://web.archive.org/web/20250109031006/https://apdos.roadmedia.cz/Upload/Stavby/83/d48-rychaltice-fm_1436713033596.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-t10a",
+      "title": "ŘSD: Informační leták, D48 Frýdek-Místek, obchvat I. etapa (09/2022, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/79/leaflet/infoletak_d48-fm-obchvat-I-etapa.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-t10b",
+      "title": "ŘSD: Informační leták, D48 Frýdek-Místek, obchvat II. etapa (07/2023, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/409/leaflet/infoletak_d48-fm-obchvat-II-etapa.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-d48",
+      "title": "OpenStreetMap: relation 1853073, D48 (network CZ:national)",
+      "url": "https://www.openstreetmap.org/relation/1853073",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "dalnice-com-r48",
+      "title": "dalnice.com: Rychlostnice R48 (archived 24 January 2012)",
+      "url": "https://web.archive.org/web/20120124084409/http://www.dalnice.com/r/r48.htm",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

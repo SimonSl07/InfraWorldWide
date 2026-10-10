@@ -1,0 +1,868 @@
+{
+  "id": "cz-rail-praha-ceske-budejovice",
+  "country": "cz",
+  "category": "railway",
+  "name": {
+    "en": "Praha – Benešov – Tábor – České Budějovice railway (4th transit corridor, lines 221/220)",
+    "ro": "Calea ferată Praga – Benešov – Tábor – České Budějovice (al 4-lea coridor de tranzit, liniile 221/220)"
+  },
+  "description": {
+    "en": "Modernisation of the Praha – České Budějovice main line (221 to Benešov, 220 beyond), part of the IV. transit corridor run by Správa železnic (SŽDC until 2020). One lot per construction project from Praha-Vršovice to České Budějovice, drawn from OpenStreetMap. Most lots rebuild the existing double-track line; Votice – Sudoměřice and Doubí – Soběslav are new alignments, and Nemanice I – Ševětín is a planned relocation whose tender was cancelled in January 2026. Dates in the section table are years only. Contract prices were found for one lot; the cost shown elsewhere is the total project cost in the source.",
+    "ro": "Modernizarea liniei principale Praga – České Budějovice (221 până la Benešov, 220 dincolo), parte a coridorului de tranzit IV gestionat de Správa železnic (SŽDC până în 2020). Un lot pentru fiecare proiect de construcție de la Praha-Vršovice la České Budějovice, desenat din OpenStreetMap. Majoritatea loturilor reconstruiesc linia existentă cu două căi; Votice – Sudoměřice și Doubí – Soběslav sunt traseuri noi, iar Nemanice I – Ševětín este o relocare planificată a cărei licitație a fost anulată în ianuarie 2026. Datele din tabelul de tronsoane sunt doar ani. Prețuri de contract s-au găsit pentru un singur lot; costul afișat în rest este costul total al proiectului din sursă."
+  },
+  "operator": "cz-spravazeleznic",
+  "lots": [
+    {
+      "id": "praha-hostivar",
+      "name": {
+        "en": "Praha hl. n. – Praha-Hostivař (Vršovice rebuild, four tracks)",
+        "ro": "Praha hl. n. – Praha-Hostivař (reconstrucția Vršovice, patru căi)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-03-13",
+        "constructionStart": "2018-06",
+        "opened": "2021"
+      },
+      "lengthKm": 6.7,
+      "cost": {
+        "estimated": {
+          "amount": 4419.96,
+          "currency": "CZK",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Excluding VAT. Správa železnic figure for the whole project (\"Celkové náklady stavby 4 419 960 000 Kč bez DPH\"); price year not stated."
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "tracks": 4,
+        "maxSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-03-13",
+          "note": {
+            "en": "Works contract signed with the Metrostav, Swietelsky Rail CZ and SMP CZ consortium.",
+            "ro": "Contract de lucrări semnat cu asocierea Metrostav, Swietelsky Rail CZ și SMP CZ."
+          },
+          "sourceRef": "cs-wiki-4k"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-06",
+          "sourceRef": "cs-wiki-4k"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility: 82.14% of eligible costs, up to EUR 110.3 million (about CZK 3 billion)",
+            "ro": "Mecanismul pentru Interconectarea Europei: 82,14% din costurile eligibile, până la 110,3 milioane EUR (circa 3 miliarde CZK)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "National funding from the State Fund for Transport Infrastructure",
+            "ro": "Finanțare națională din Fondul de Stat pentru Infrastructura de Transport"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Metrostav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky Rail CZ",
+          "role": "builder"
+        },
+        {
+          "name": "SMP CZ",
+          "role": "builder"
+        },
+        {
+          "name": "SUDOP PRAHA a.s.",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Upgrade of the existing line between the Vinohrady tunnels and Praha-Hostivař: the line was straightened over the former Vršovice marshalling yard and made four-track, with new Praha-Eden and Praha-Zahradní Město stops (Zahradní Město opened on 24 September 2021). Správa železnic's 2018 release gave completion as 10/2021; cs.wikipedia's section table gives 2021 for commissioning, so only the year is recorded. The signing date is from cs.wikipedia. The 6.7 km extent is as stated there; the drawn line starts at Praha-Vršovice station. The Hostivař station rebuild (2.2 km, 2014–2016) and the Vinohrady tunnels (planned 2028–2029) are not part of this lot.",
+        "ro": "Modernizarea liniei existente între tunelurile Vinohrady și Praha-Hostivař: linia a fost îndreptată peste fosta gară de triere Vršovice și adusă la patru căi, cu haltele noi Praha-Eden și Praha-Zahradní Město (Zahradní Město a fost deschisă la 24 septembrie 2021). Comunicatul Správa železnic din 2018 indica finalizarea la 10/2021; tabelul de tronsoane de pe cs.wikipedia dă 2021 pentru punerea în exploatare, deci se înregistrează doar anul. Data semnării provine de pe cs.wikipedia. Lungimea de 6,7 km este cea indicată acolo; linia desenată începe la stația Praha-Vršovice. Reconstrucția stației Hostivař (2,2 km, 2014–2016) și tunelurile Vinohrady (planificate 2028–2029) nu fac parte din acest lot."
+      },
+      "sourceRefs": [
+        "sz-hostivar-2018",
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "praha-hostivar"
+    },
+    {
+      "id": "hostivar-strancice",
+      "name": {
+        "en": "Praha-Hostivař – Strančice",
+        "ro": "Praha-Hostivař – Strančice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-09",
+        "opened": "2008"
+      },
+      "lengthKm": 18.2,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Upgrade of the existing double-track line: the first section of the corridor rebuild, started in September 2005 behind Praha-Hostivař and finished in 2008. Track, sleepers and bed were replaced, with noise walls along the line. No contractor or contract price was found.",
+        "ro": "Modernizarea liniei existente cu două căi: prima etapă a reconstrucției coridorului, începută în septembrie 2005 după Praha-Hostivař și încheiată în 2008. S-au înlocuit calea, traversele și patul, cu ziduri antifonice de-a lungul liniei. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hostivar-strancice"
+    },
+    {
+      "id": "strancice-benesov",
+      "name": {
+        "en": "Strančice – Benešov u Prahy",
+        "ro": "Strančice – Benešov u Prahy"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007",
+        "opened": "2010"
+      },
+      "lengthKm": 24,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Upgrade of the existing double-track line (\"Optimalizace tratě Benešov – Strančice\"). The table gives construction 2007–2010, while another passage of the same article says the reconstruction beyond Strančice ran from 2008. No contractor or contract price was found.",
+        "ro": "Modernizarea liniei existente cu două căi (\"Optimalizace tratě Benešov – Strančice\"). Tabelul indică execuția 2007–2010, iar un alt pasaj din același articol spune că reconstrucția dincolo de Strančice a decurs din 2008. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "strancice-benesov"
+    },
+    {
+      "id": "benesov-votice",
+      "name": {
+        "en": "Benešov u Prahy – Votice",
+        "ro": "Benešov u Prahy – Votice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009",
+        "opened": "2013"
+      },
+      "lengthKm": 18.5,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2,
+        "tunnelKm": 2.69
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2011-11-30",
+          "note": {
+            "en": "Votice relocation (Votice and Olbramovice tunnels) opened.",
+            "ro": "Variantă ocolitoare Votice (tunelurile Votice și Olbramovice) deschisă."
+          },
+          "sourceRef": "cs-wiki-220"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-08",
+          "note": {
+            "en": "All five new tunnels in service.",
+            "ro": "Toate cele cinci tunele noi în exploatare."
+          },
+          "sourceRef": "cs-wiki-220"
+        }
+      ],
+      "note": {
+        "en": "Double-tracking and partial relocation of the existing line for 160 km/h, with five new tunnels (Votice 590 m, Olbramovice 480 m, Zahradnický 1044 m, Tomice I 324 m and Tomice II 252 m, 2.69 km in all). The section table gives construction from 2009 (another passage gives 15 March 2010), construction complete in 2012 and the whole project complete by the end of 2013, which is the year recorded as opening. No contractor or contract price was found.",
+        "ro": "Dublarea căii și relocarea parțială a liniei existente pentru 160 km/h, cu cinci tunele noi (Votice 590 m, Olbramovice 480 m, Zahradnický 1044 m, Tomice I 324 m și Tomice II 252 m, 2,69 km în total). Tabelul indică execuția din 2009 (un alt pasaj indică 15 martie 2010), construcția încheiată în 2012 și proiectul întreg încheiat la sfârșitul lui 2013, anul înregistrat ca deschidere. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "benesov-votice"
+    },
+    {
+      "id": "votice-sudomerice",
+      "name": {
+        "en": "Votice – Sudoměřice u Tábora (new line with two tunnels)",
+        "ro": "Votice – Sudoměřice u Tábora (linie nouă cu două tunele)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-05-01",
+        "opened": "2022-09-01"
+      },
+      "lengthKm": 17,
+      "cost": {
+        "estimated": {
+          "amount": 6734.89,
+          "currency": "CZK",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Excluding VAT. Total cost in the Správa železnic leaflet of May 2023 (\"náklady stavby: 6 734 886 294 Kč (bez DPH)\"); price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 7159.05,
+              "currency": "CZK",
+              "scope": "total",
+              "note": "Excluding VAT. Total investment cost in the June 2018 release (\"Celkové investiční náklady ... 7 159 049 000 Kč bez DPH\")."
+            },
+            "date": "2018-06-05",
+            "sourceRef": "sz-sudomerice-votice-2018"
+          },
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 6734.89,
+              "currency": "CZK",
+              "scope": "total",
+              "note": "Excluding VAT. Leaflet figure."
+            },
+            "date": "2023-05-25",
+            "sourceRef": "sz-leaflet-sudomerice-votice"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 200,
+        "tracks": 2,
+        "tunnelKm": 1.5
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-05-01",
+          "sourceRef": "cs-wiki-220"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2022-07-01",
+          "note": {
+            "en": "One of the two tracks opened to long-distance trains.",
+            "ro": "Una dintre cele două căi deschisă pentru trenurile de lung parcurs."
+          },
+          "sourceRef": "cs-wiki-4k"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-09-01",
+          "sourceRef": "cs-wiki-4k"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 5151.79,
+            "currency": "CZK",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Cohesion Fund, Operational Programme Transport 2014–2020: contribution of up to CZK 5 151 794 403 in the 2018 release and the 2023 leaflet (the English release gives up to CZK 3 966 814 703)",
+            "ro": "Fondul de Coeziune, Programul Operațional Transport 2014–2020: contribuție de până la 5 151 794 403 CZK în comunicatul din 2018 și în fișa din 2023 (comunicatul în engleză indică până la 3 966 814 703 CZK)"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "National funding from the State Fund for Transport Infrastructure",
+            "ro": "Finanțare națională din Fondul de Stat pentru Infrastructura de Transport"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "OHL ŽS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "New double-track alignment, almost entirely off the old single track and about 2 km shorter, with the Mezno (840 m) and Deboreč (660 m) tunnels, four viaducts and the new Červený Újezd u Votic station. The June 2018 release gives the project extent as 19.9 km; cs.wikipedia gives the new alignment as 17 km, which is recorded. Works began on 1 May 2018 (the release planned 03/2018–08/2021; the leaflet gives 05/2018–12/2023) and the speed target was raised from 160 to 200 km/h in late 2019. The old line closed on 2 April 2022; the new line opened on one track on 1 July 2022 and on both tracks on 1 September 2022. 200 km/h has been allowed since 31 August 2025. The cost is the total investment cost; the OHL ŽS contract price is not recorded (cs.wikipedia reports its bid as CZK 4.378 bn).",
+        "ro": "Traseu nou cu două căi, aproape integral în afara vechii linii simple și mai scurt cu circa 2 km, cu tunelurile Mezno (840 m) și Deboreč (660 m), patru viaducte și noua stație Červený Újezd u Votic. Comunicatul din iunie 2018 indică întinderea proiectului la 19,9 km; cs.wikipedia indică traseul nou la 17 km, cifra înregistrată. Lucrările au început la 1 mai 2018 (comunicatul planifica 03/2018–08/2021; fișa indică 05/2018–12/2023), iar ținta de viteză a fost ridicată de la 160 la 200 km/h la sfârșitul lui 2019. Vechea linie s-a închis la 2 aprilie 2022; linia nouă s-a deschis pe o cale la 1 iulie 2022 și pe ambele căi la 1 septembrie 2022. Viteza de 200 km/h este permisă din 31 august 2025. Costul este costul total al investiției; prețul contractului OHL ŽS nu este înregistrat (cs.wikipedia indică oferta sa la 4,378 mld. CZK)."
+      },
+      "sourceRefs": [
+        "sz-sudomerice-votice-2018",
+        "sz-leaflet-sudomerice-votice",
+        "sz-sudomerice-votice-en",
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "votice-sudomerice"
+    },
+    {
+      "id": "sudomerice-tabor",
+      "name": {
+        "en": "Sudoměřice u Tábora – Tábor",
+        "ro": "Sudoměřice u Tábora – Tábor"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-03",
+        "opened": "2016-06-02"
+      },
+      "lengthKm": 11.4,
+      "cost": {
+        "estimated": {
+          "amount": 1930.57,
+          "currency": "CZK",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Excluding VAT. \"Total estimated investment costs ... up to 1,930,574,616 CZK (VAT excluded)\" in the completion release; price year not stated."
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2,
+        "tunnelKm": 0.444
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2013-03",
+          "sourceRef": "sz-tabor-sudomerice-2016"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-06-02",
+          "sourceRef": "sz-tabor-sudomerice-2016"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 1203.25,
+            "currency": "CZK",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Cohesion Fund, Operational Programme Transport: up to CZK 1 203 248 440",
+            "ro": "Fondul de Coeziune, Programul Operațional Transport: până la 1 203 248 440 CZK"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "National funding from the State Fund for Transport Infrastructure",
+            "ro": "Finanțare națională din Fondul de Stat pentru Infrastructura de Transport"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "OHL ŽS, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Double-tracking and partial relocation of the single-track line, with a 444 m double-track tunnel, the first in South Bohemia, and an eight-span viaduct 455 m long. The start (3/2013) and the 2 June 2016 completion release (stated completion 7/2016) are from Správa železnic; the release speaks of 12 km and the section table of 11.4 km, which is recorded. cs.wikipedia gives \"stavebně 2015, kompletně 2016\" for commissioning. Cost is the total estimated investment cost; the contract price is not recorded.",
+        "ro": "Dublarea căii și relocarea parțială a liniei simple, cu un tunel de 444 m cu două căi, primul din Boemia de Sud, și un viaduct cu opt deschideri de 455 m. Startul (3/2013) și comunicatul de finalizare din 2 iunie 2016 (finalizare indicată 7/2016) provin de la Správa železnic; comunicatul vorbește de 12 km, iar tabelul de tronsoane de 11,4 km, cifra înregistrată. cs.wikipedia indică \"stavebně 2015, kompletně 2016\" pentru punerea în exploatare. Costul este costul total estimat al investiției; prețul contractului nu este înregistrat."
+      },
+      "sourceRefs": [
+        "sz-tabor-sudomerice-2016",
+        "cs-wiki-4k",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sudomerice-tabor"
+    },
+    {
+      "id": "tabor-doubi",
+      "name": {
+        "en": "Tábor – Doubí u Tábora",
+        "ro": "Tábor – Doubí u Tábora"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006",
+        "opened": "2009-09-15"
+      },
+      "lengthKm": 11.8,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2,
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-09-15",
+          "sourceRef": "cs-wiki-220"
+        }
+      ],
+      "note": {
+        "en": "Double-tracking of the existing line, with 110 km/h for ordinary trains and 160 km/h for tilting trains, and a new Tábor-Čápův Dvůr stop. One passage describes the section as a two-year reconstruction completed on 15 September 2009, the table gives 2006 as the start, so only the year is recorded. No contractor or contract price was found.",
+        "ro": "Dublarea liniei existente, cu 110 km/h pentru trenurile obișnuite și 160 km/h pentru cele cu înclinare, și o haltă nouă Tábor-Čápův Dvůr. Un pasaj descrie tronsonul ca o reconstrucție de doi ani încheiată la 15 septembrie 2009, iar tabelul indică 2006 ca început, deci se înregistrează doar anul. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-220",
+        "cs-wiki-4k",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tabor-doubi"
+    },
+    {
+      "id": "doubi-sobeslav",
+      "name": {
+        "en": "Doubí u Tábora – Soběslav (new line)",
+        "ro": "Doubí u Tábora – Soběslav (linie nouă)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-09",
+        "opened": "2022-09-11"
+      },
+      "lengthKm": 8.8,
+      "cost": {
+        "estimated": {
+          "amount": 4800,
+          "currency": "CZK",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Press figure (\"4,8 miliardy korun\") as quoted by cs.wikipedia; VAT basis and price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "maxSpeedKmh": 200,
+        "tunnelKm": 0.37,
+        "viaductKm": 1.093
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-09",
+          "sourceRef": "sz-leaflet-sobeslav-doubi"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-09-11",
+          "note": {
+            "en": "New section opened with local restrictions; full operation at up to 160 km/h was planned for 12 December 2022.",
+            "ro": "Tronson nou deschis cu restricții locale; circulația completă la până la 160 km/h era planificată pentru 12 decembrie 2022."
+          },
+          "sourceRef": "cs-wiki-4k"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Operational Programme Transport: up to 82.84% of eligible costs",
+            "ro": "Programul Operațional Transport: până la 82,84% din costurile eligibile"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "National funding from the State Fund for Transport Infrastructure",
+            "ro": "Finanțare națională din Fondul de Stat pentru Infrastructura de Transport"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Společnost Soběslav – Doubí (Strabag Rail, Eurovia CS, Metrostav)",
+          "role": "builder"
+        },
+        {
+          "name": "METROPROJEKT Praha a.s.",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "New 8.8 km double-track relocation on a new alignment, partly alongside the D3 motorway, replacing the single-track line through Roudná (the route is 765 m shorter). It has the 370 m Zvěrotický tunnel, viaducts of 830 m and 263 m and two new stops, Myslkovice and Doubí u Tábora. The leaflet gives works as 09/2019–04/2023; the old line closed on 2 September 2022. The design speed was raised from 160 to 200 km/h in 2020; 200 km/h has been allowed since 31 August 2025. The 4.8 bn cost is a press figure, not a contract price. The drawn length is 7.8 km against the 8.8 km stated.",
+        "ro": "Relocare nouă cu două căi de 8,8 km, pe traseu nou, parțial în paralel cu autostrada D3, care înlocuiește linia simplă prin Roudná (traseul este mai scurt cu 765 m). Are tunelul Zvěrotický de 370 m, viaducte de 830 m și 263 m și două haltele noi, Myslkovice și Doubí u Tábora. Fișa indică lucrările 09/2019–04/2023; vechea linie s-a închis la 2 septembrie 2022. Viteza de proiectare a fost ridicată de la 160 la 200 km/h în 2020; 200 km/h este permis din 31 august 2025. Costul de 4,8 mld. este o cifră din presă, nu un preț de contract. Lungimea desenată este 7,8 km, față de 8,8 km indicați."
+      },
+      "sourceRefs": [
+        "sz-leaflet-sobeslav-doubi",
+        "cs-wiki-sobeslav-doubi",
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "doubi-sobeslav"
+    },
+    {
+      "id": "sobeslav-veseli",
+      "name": {
+        "en": "Soběslav – Veselí nad Lužnicí",
+        "ro": "Soběslav – Veselí nad Lužnicí"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014",
+        "opened": "2016"
+      },
+      "lengthKm": 5.9,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Part of the Veselí nad Lužnicí – Doubí u Tábora modernisation (first stage, Veselí – Soběslav). Dates are years only, from the section table. The drawn length is 6.9 km against the 5.9 km stated. No contractor or contract price was found.",
+        "ro": "Parte a modernizării Veselí nad Lužnicí – Doubí u Tábora (prima etapă, Veselí – Soběslav). Datele sunt doar ani, din tabelul de tronsoane. Lungimea desenată este 6,9 km, față de 5,9 km indicați. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sobeslav-veseli"
+    },
+    {
+      "id": "veseli-horusice",
+      "name": {
+        "en": "Veselí nad Lužnicí – Horusice",
+        "ro": "Veselí nad Lužnicí – Horusice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013",
+        "opened": "2016"
+      },
+      "lengthKm": 5,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Upgrade of the existing line. Dates are years only, from the section table. No contractor or contract price was found.",
+        "ro": "Modernizarea liniei existente. Datele sunt doar ani, din tabelul de tronsoane. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-4k",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "veseli-horusice"
+    },
+    {
+      "id": "horusice-dynin",
+      "name": {
+        "en": "Horusice – Dynín",
+        "ro": "Horusice – Dynín"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014",
+        "opened": "2016"
+      },
+      "lengthKm": 4.4,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Upgrade of the existing line (the Ševětín – Horusice project in the section table). Dates are years only. The table ends the section partway through Dynín station, so the drawn line, which runs to the station, is 3.8 km against 4.4 km. No contractor or contract price was found.",
+        "ro": "Modernizarea liniei existente (proiectul Ševětín – Horusice din tabelul de tronsoane). Datele sunt doar ani. Tabelul încheie tronsonul la jumătatea stației Dynín, deci linia desenată, care merge până la stație, are 3,8 km față de 4,4 km. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "horusice-dynin"
+    },
+    {
+      "id": "dynin-sevetin",
+      "name": {
+        "en": "Dynín – Ševětín",
+        "ro": "Dynín – Ševětín"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-02",
+        "constructionStart": "2018-07",
+        "opened": "2020-01"
+      },
+      "lengthKm": 4.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 597.49,
+              "currency": "CZK",
+              "year": 2018,
+              "scope": "works",
+              "note": "Contract value as stated (\"597 486 627 Kč\"); VAT basis not stated."
+            },
+            "date": "2018-02",
+            "sourceRef": "koridory-sevetin-dynin-2018"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2,
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-02",
+          "note": {
+            "en": "Contract signed with the Nemanice – Ševětín – EŽ+AŽD+Subterra consortium.",
+            "ro": "Contract semnat cu asocierea Nemanice – Ševětín – EŽ+AŽD+Subterra."
+          },
+          "sourceRef": "cs-wiki-4k"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-07",
+          "sourceRef": "cs-wiki-4k"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Společnost Nemanice – Ševětín – EŽ+AŽD+Subterra",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 597.49,
+          "currency": "CZK",
+          "year": 2018,
+          "scope": "works",
+          "note": "VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Track and station rebuild on the existing double-track line, with Dynín station reworked and the Neplachov stop moved (\"Modernizace trati Nemanice I – Ševětín, 1. stavba, úpravy pro ETCS, 2. část\"). The construction project runs from km 25.000, 2.8 km beyond Ševětín station, to km 29.303 at the end of the modernised Dynín – Horusice section: 4.3 km on koridory.cz, 4.0 km in the cs.wikipedia section table. The drawn line runs from Dynín station (km 29.0) to km 25.0, so Ševětín station to km 25.0 is not part of this lot (the planned Nemanice I – Ševětín project ends at km 25.0). Main works began in July 2018; the table gives completion in 01/2020. The contract value is from koridory.cz (\"Podle smlouvy dosáhnou náklady stavby 597 486 627 Kč\").",
+        "ro": "Reconstrucția căii și a stației pe linia existentă cu două căi, cu stația Dynín refăcută și halta Neplachov mutată (\"Modernizace trati Nemanice I – Ševětín, 1. stavba, úpravy pro ETCS, 2. část\"). Proiectul de construcție se întinde de la km 25,000, la 2,8 km după stația Ševětín, până la km 29,303, unde se termină tronsonul modernizat Dynín – Horusice: 4,3 km pe koridory.cz, 4,0 km în tabelul de tronsoane de pe cs.wikipedia. Linia desenată merge de la stația Dynín (km 29,0) la km 25,0, deci porțiunea de la stația Ševětín la km 25,0 nu face parte din acest lot (proiectul planificat Nemanice I – Ševětín se termină la km 25,0). Lucrările principale au început în iulie 2018; tabelul indică finalizarea în 01/2020. Valoarea contractului provine de pe koridory.cz (\"Podle smlouvy dosáhnou náklady stavby 597 486 627 Kč\")."
+      },
+      "sourceRefs": [
+        "koridory-sevetin-dynin-2018",
+        "koridory-4k-stav-2018-01",
+        "sz-leaflet-nemanice-sevetin",
+        "cs-wiki-4k",
+        "cs-wiki-220",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dynin-sevetin"
+    },
+    {
+      "id": "nemanice-sevetin",
+      "name": {
+        "en": "Nemanice I – Ševětín (new line with two tunnels)",
+        "ro": "Nemanice I – Ševětín (linie nouă cu două tunele)"
+      },
+      "status": "planned",
+      "dates": {},
+      "lengthKm": 18,
+      "cost": {
+        "estimated": {
+          "amount": 21300,
+          "currency": "CZK",
+          "year": 2025,
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Highest permissible tender price of the March 2025 procurement (\"21,3 mld. Kč\"), as reported by cs.wikipedia; a cap, not an award, and the tender was cancelled in January 2026. VAT basis not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "maxSpeedKmh": 200,
+        "tunnelKm": 7.93
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-03",
+          "sourceRef": "cs-wiki-4k"
+        },
+        {
+          "kind": "tender_cancelled",
+          "date": "2026-01",
+          "note": {
+            "en": "Tender cancelled and the project postponed for lack of funds, with works not before 2028.",
+            "ro": "Licitație anulată și proiect amânat din lipsă de fonduri, cu lucrări nu mai devreme de 2028."
+          },
+          "sourceRef": "cs-wiki-4k"
+        }
+      ],
+      "note": {
+        "en": "Planned double-track relocation on a new alignment, designed for 200 km/h with the Hosín (3 120 m) and Chotýčany (4 806 m) tunnels, the longest on the Czech network. The May 2024 leaflet gives almost 18 km, planned works 02/2026–12/2032 and no contractor selected; cs.wikipedia gives 21.5 km including stations and now plans 2028–2034. A PPP was planned in 2023 and dropped in 2025. The leaflet gives the official end of the project at km 25.0, beyond Ševětín station, where the Dynín – Ševětín lot begins. The drawn line follows only the OpenStreetMap proposed alignment, 12.3 km of the route; the stretches at both ends that join the existing stations are not drawn, so the drawn length is short of the stated 18 km. The existing single track between the two stations is not modelled as a lot.",
+        "ro": "Relocare planificată cu două căi pe traseu nou, proiectată pentru 200 km/h, cu tunelurile Hosín (3 120 m) și Chotýčany (4 806 m), cele mai lungi din rețeaua cehă. Fișa din mai 2024 indică aproape 18 km, lucrări planificate 02/2026–12/2032 și niciun constructor selectat; cs.wikipedia indică 21,5 km cu stațiile și planifică acum 2028–2034. Un PPP a fost planificat în 2023 și abandonat în 2025. Fișa indică sfârșitul oficial al proiectului la km 25,0, dincolo de stația Ševětín, unde începe lotul Dynín – Ševětín. Linia desenată urmează doar traseul propus din OpenStreetMap, 12,3 km din traseu; porțiunile de la capete care se leagă de stațiile existente nu sunt desenate, deci lungimea desenată este sub cei 18 km indicați. Linia simplă existentă dintre cele două stații nu este modelată ca lot."
+      },
+      "sourceRefs": [
+        "sz-leaflet-nemanice-sevetin",
+        "cs-wiki-4k",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nemanice-sevetin"
+    },
+    {
+      "id": "budejovice-nemanice",
+      "name": {
+        "en": "Nemanice I – České Budějovice",
+        "ro": "Nemanice I – České Budějovice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-02",
+        "opened": "2014"
+      },
+      "lengthKm": 3,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Upgrade of the existing line into České Budějovice (\"Modernizace trati České Budějovice – Nemanice I\"). Built from February 2011 and completed in 2014. No contractor or contract price was found.",
+        "ro": "Modernizarea liniei existente spre České Budějovice (\"Modernizace trati České Budějovice – Nemanice I\"). Construită din februarie 2011 și finalizată în 2014. Nu s-au găsit constructor sau preț de contract."
+      },
+      "sourceRefs": [
+        "cs-wiki-4k",
+        "osm-railway-220",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "budejovice-nemanice"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wiki-4k",
+      "title": "cs.wikipedia: IV. tranzitní železniční koridor (section table and construction history)",
+      "url": "https://cs.wikipedia.org/wiki/%C4%8Ctvrt%C3%BD_%C5%BEelezni%C4%8Dn%C3%AD_koridor",
+      "publisher": "Wikipedia (cs)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "cs-wiki-220",
+      "title": "cs.wikipedia: Železniční trať Praha – České Budějovice (Modernizace IV. tranzitního koridoru)",
+      "url": "https://cs.wikipedia.org/wiki/%C5%BDelezni%C4%8Dn%C3%AD_tra%C5%A5_Praha_%E2%80%93_%C4%8Cesk%C3%A9_Bud%C4%9Bjovice",
+      "publisher": "Wikipedia (cs)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "cs-wiki-sobeslav-doubi",
+      "title": "cs.wikipedia: Přeložka Soběslav – Doubí u Tábora",
+      "url": "https://cs.wikipedia.org/wiki/P%C5%99elo%C5%BEka_Sob%C4%9Bslav_%E2%80%93_Doub%C3%AD_u_T%C3%A1bora",
+      "publisher": "Wikipedia (cs)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "koridory-sevetin-dynin-2018",
+      "title": "koridory.cz: V červenci začne modernizace trati ze Ševětína do Dynína (17 June 2018)",
+      "url": "https://www.koridory.cz/archives/41774/",
+      "publisher": "koridory.cz",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "koridory-4k-stav-2018-01",
+      "title": "koridory.cz: Stav příprav staveb čtvrtého koridoru – leden 2018 (Ševětín – Dynín, km 25,000–29,303)",
+      "url": "https://www.koridory.cz/archives/41435/",
+      "publisher": "koridory.cz",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sz-hostivar-2018",
+      "title": "Správa železniční dopravní cesty: V Praze vzniknou dvě nová nádraží – Eden a Zahradní Město (15 August 2018)",
+      "url": "https://www.spravazeleznic.cz/pro-media/tiskovy-servis-tiskove-zpravy-prohlaseni/hostivar-hl.n.",
+      "publisher": "Správa železnic",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sz-sudomerice-votice-2018",
+      "title": "Správa železniční dopravní cesty: Cesta vlakem z Prahy do Tábora se zkrátí na hodinu (5 June 2018)",
+      "url": "https://www.spravazeleznic.cz/pro-media/tiskovy-servis-tiskove-zpravy-prohlaseni/moder.sudomerice-votice",
+      "publisher": "Správa železnic",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sz-leaflet-sudomerice-votice",
+      "title": "Správa železnic: Modernizace trati Sudoměřice – Votice (leaflet S-10, updated 25 May 2023)",
+      "url": "https://mapy.spravazeleznic.cz/letaky/S631500104_202306121437.pdf",
+      "publisher": "Správa železnic",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sz-sudomerice-votice-en",
+      "title": "Správa železnic: Trains return to the line between Sudoměřice and Votice, modernisation of the section nearly finished",
+      "url": "https://www.spravazeleznic.cz/web/en/-/trains-return-to-the-line-between-sudomerice-and-votice-modernisation-of-the-section-nearly-finished",
+      "publisher": "Správa železnic",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sz-tabor-sudomerice-2016",
+      "title": "Správa železniční dopravní cesty: Completed modernisation of the line near Tábor brought the first railway tunnel to South Bohemia (2 June 2016)",
+      "url": "https://spravazeleznic.cz/web/en/press/press-releases/tabor-sudomerice-ukonceni",
+      "publisher": "Správa železnic",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sz-leaflet-sobeslav-doubi",
+      "title": "Správa železnic: Modernizace trati Veselí n.L. – Tábor – II. část, 2. etapa Soběslav – Doubí (leaflet C-03, updated 27 July 2021)",
+      "url": "https://mapy.spravazeleznic.cz/letaky/S631500085_202108121304.pdf",
+      "publisher": "Správa železnic",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sz-leaflet-nemanice-sevetin",
+      "title": "Správa železnic: Modernizace trati Nemanice I – Ševětín (leaflet C-01, updated 16 May 2024)",
+      "url": "https://mapy.spravazeleznic.cz/letaky/S631500294_202405201756.pdf",
+      "publisher": "Správa železnic",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-railway-220",
+      "title": "OpenStreetMap: railway relations 48883 (221 Praha – Benešov) and 48888 (220 Benešov – České Budějovice) and proposed ways 565072199–565072203 (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/relation/48888",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

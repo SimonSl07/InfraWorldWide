@@ -1,0 +1,1044 @@
+{
+  "id": "pl-s1",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S1 expressway (Pyrzowice – Dąbrowa Górnicza – Mysłowice – Bielsko-Biała – Żywiec – Zwardoń)",
+    "ro": "Drumul expres S1 (Pyrzowice – Dąbrowa Górnicza – Mysłowice – Bielsko-Biała – Żywiec – Zwardoń)"
+  },
+  "description": {
+    "en": "S1 links the A1 at Pyrzowice airport with the Slovak border at Zwardoń, over 133 km when complete, drawn as one carriageway from OpenStreetMap relation 309616. Since 4 August 2016 the number covers the former S69 from Bielsko-Biała to Zwardoń; the Bielsko-Biała – Cieszyn road is now the S52 and is not part of this file. The northern part includes the Dąbrowa Górnicza – Kosztowy eastern ring road of the GOP (built 1978–1983) and the DK1 rebuilt to expressway standard at Podwarpie. The new Mysłowice – Bielsko-Biała line (about 40 km, with the Oświęcim bypass) opened in stages in 2025–2026 and only Mysłowice Kosztowy II – Bieruń is still under construction. Lots are grouped by contract and split where parts opened in different years. Not drawn: the 1.5 km Podwarpie link and the 1.4 km Zwardoń – border stretch (no opening date), the Komorowice – Hałcnów stretch (S52 in OpenStreetMap) and the Lędziny – Tychy stretch outside the target route. Contract values come from GDDKiA pages; each note states the VAT basis, or says it is not stated.",
+    "ro": "S1 leagă A1 de la aeroportul Pyrzowice cu granița slovacă de la Zwardoń, peste 133 km la finalizare, desenat ca o singură cale de rulare din relația OpenStreetMap 309616. Din 4 august 2016 numărul cuprinde fosta S69 de la Bielsko-Biała la Zwardoń; drumul Bielsko-Biała – Cieszyn este acum S52 și nu face parte din acest fișier. Partea de nord include centura estică Dąbrowa Górnicza – Kosztowy a GOP (construită în 1978–1983) și DK1 reconstruit la standard de drum expres la Podwarpie. Noua linie Mysłowice – Bielsko-Biała (circa 40 km, cu ocolitoarea Oświęcim) a fost deschisă în etape în 2025–2026, iar doar Mysłowice Kosztowy II – Bieruń este încă în construcție. Loturile sunt grupate pe contracte și împărțite acolo unde părțile au fost deschise în ani diferiți. Nedesenate: legătura de 1,5 km de la Podwarpie și tronsonul de 1,4 km Zwardoń – frontieră (fără dată de deschidere), tronsonul Komorowice – Hałcnów (S52 în OpenStreetMap) și tronsonul Lędziny – Tychy din afara traseului țintă. Valorile contractelor provin de pe paginile GDDKiA; fiecare notă precizează baza TVA sau spune că nu este indicată."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "pyrzowice-lotnisko",
+      "name": {
+        "en": "Pyrzowice – Pyrzowice Lotnisko",
+        "ro": "Pyrzowice – Pyrzowice Lotnisko"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-06-01"
+      },
+      "lengthKm": 1.9,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-06-01",
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "Junction Pyrzowice (A1) to junction Pyrzowice Lotnisko, 1.9 km, opened to traffic on 1 June 2012 (pl.wikipedia).",
+        "ro": "De la nodul Pyrzowice (A1) la nodul Pyrzowice Lotnisko, 1,9 km, dat în trafic la 1 iunie 2012 (pl.wikipedia)."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "pyrzowice-lotnisko"
+    },
+    {
+      "id": "lotnisko-podwarpie",
+      "name": {
+        "en": "Pyrzowice Lotnisko – Podwarpie",
+        "ro": "Pyrzowice Lotnisko – Podwarpie"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-11-20"
+      },
+      "lengthKm": 9.72,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 130.29,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Construction contract for the second carriageway only, signed 26 November 2018. VAT basis not stated on the source page."
+            },
+            "date": "2018-11-26",
+            "sourceRef": "gddkia-pyrzowice-podwarpie"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 130.29,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Construction contract for the second carriageway. VAT basis not stated on the source page."
+        }
+      },
+      "contractors": [
+        {
+          "name": "RUBAU Polska",
+          "role": "builder"
+        },
+        {
+          "name": "Construcciones Rubau",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: POIiŚ 2014–2020 support of 87.58 mln zł for the second carriageway.",
+            "ro": "GDDKiA: sprijin POIiŚ 2014–2020 de 87,58 mil. zł pentru a doua cale de rulare."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2006-11-20",
+          "note": {
+            "en": "Opened as a single carriageway.",
+            "ro": "Dat în trafic cu o singură cale de rulare."
+          },
+          "sourceRef": "plwiki-s1"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2018-02-14",
+          "note": {
+            "en": "Tender for the second carriageway.",
+            "ro": "Licitație pentru a doua cale de rulare."
+          },
+          "sourceRef": "gddkia-pyrzowice-podwarpie"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-11-26",
+          "note": {
+            "en": "Construction contract for the second carriageway signed.",
+            "ro": "Contract de construcție pentru a doua cale de rulare semnat."
+          },
+          "sourceRef": "gddkia-pyrzowice-podwarpie"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-05-17",
+          "note": {
+            "en": "Second carriageway opened; the lot was already open as a single carriageway.",
+            "ro": "A doua cale de rulare dată în trafic; lotul era deja deschis cu o singură cale."
+          },
+          "sourceRef": "gddkia-pyrzowice-podwarpie"
+        }
+      ],
+      "note": {
+        "en": "Opened on 20 November 2006 as a single carriageway (pl.wikipedia). The second carriageway was tendered on 14 February 2018 (an earlier tender of October 2015 was cancelled), the contract was signed on 26 November 2018 and the carriageway opened on 17 May 2021. The lot ends at the old Podwarpie junction; the 1.5 km Podwarpie link listed by pl.wikipedia without a date is not drawn.",
+        "ro": "Deschis la 20 noiembrie 2006 cu o singură cale de rulare (pl.wikipedia). A doua cale a fost scoasă la licitație la 14 februarie 2018 (o licitație anterioară din octombrie 2015 a fost anulată), contractul a fost semnat la 26 noiembrie 2018, iar calea a fost dată în trafic la 17 mai 2021. Lotul se termină la vechiul nod Podwarpie; legătura de 1,5 km de la Podwarpie, menționată fără dată de pl.wikipedia, nu este desenată."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "gddkia-pyrzowice-podwarpie",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lotnisko-podwarpie"
+    },
+    {
+      "id": "podwarpie-dabrowa-gornicza-pogoria",
+      "name": {
+        "en": "Podwarpie – Dąbrowa Górnicza Pogoria (rebuild of DK1)",
+        "ro": "Podwarpie – Dąbrowa Górnicza Pogoria (reconstrucția DK1)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-09-11",
+        "opened": "2024-07-02"
+      },
+      "lengthKm": 6.95,
+      "profile": {
+        "works": "upgrade"
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 282.12,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2020-09-11",
+            "sourceRef": "gddkia-podwarpie-dabrowa"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 282.12,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: POIiŚ 2014–2020 support of 168.40 mln zł.",
+            "ro": "GDDKiA: sprijin POIiŚ 2014–2020 de 168,40 mil. zł."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-12-16",
+          "sourceRef": "plwiki-s1"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-09-11",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și construcție semnat cu Budimex."
+          },
+          "sourceRef": "gddkia-podwarpie-dabrowa"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-07-02",
+          "note": {
+            "en": "Main carriageways opened; the rebuilt Dąbrowa Górnicza Pogoria junction opened in full on 18 December 2024.",
+            "ro": "Căile principale date în trafic; nodul reconstruit Dąbrowa Górnicza Pogoria a fost deschis complet la 18 decembrie 2024."
+          },
+          "sourceRef": "gddkia-podwarpie-dabrowa"
+        }
+      ],
+      "note": {
+        "en": "Rebuild of the dual carriageway DK1 to expressway standard (2x2), removing the at-grade junctions. Design-build contract signed on 11 September 2020, contractual completion 11 December 2023. The drawn centreline starts at the Podwarpie junction (ref 4) and is 7% shorter than the sourced 6.95 km; the sourced length is kept.",
+        "ro": "Reconstrucția drumului național DK1 cu două căi de rulare la standard de drum expres (2x2), cu eliminarea intersecțiilor la nivel. Contract de proiectare și construcție semnat la 11 septembrie 2020, termen contractual 11 decembrie 2023. Axul desenat începe la nodul Podwarpie (ref 4) și este cu 7% mai scurt decât cei 6,95 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "gddkia-podwarpie-dabrowa",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "podwarpie-dabrowa-gornicza-pogoria"
+    },
+    {
+      "id": "dabrowa-gornicza-myslowice-kosztowy",
+      "name": {
+        "en": "Dąbrowa Górnicza Pogoria – Mysłowice Kosztowy II (eastern ring road of the GOP)",
+        "ro": "Dąbrowa Górnicza Pogoria – Mysłowice Kosztowy II (centura estică a GOP)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1983"
+      },
+      "lengthKm": 25.1,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Wschodnia obwodnica GOP, built in 1978–1983 (pl.wikipedia, 35.4 km counting the part to Tychy that lies outside the target S1 route). The opening year is taken as the end of the 1978–1983 construction range, since the page gives no opening date, so 1983 is a latest bound and sections may have opened earlier. Length measured from OpenStreetMap geometry between the Dąbrowa Górnicza Pogoria junction and the start of the Kosztowy II lot.",
+        "ro": "Wschodnia obwodnica GOP, construită în 1978–1983 (pl.wikipedia, 35,4 km cu porțiunea spre Tychy care se află în afara traseului țintă al S1). Anul deschiderii este luat ca sfârșitul intervalului de construcție 1978–1983, deoarece pagina nu indică o dată de deschidere, deci 1983 este o limită cea mai târzie, iar sectoare pot fi deschise mai devreme. Lungime măsurată din geometria OpenStreetMap între nodul Dąbrowa Górnicza Pogoria și începutul lotului Kosztowy II."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dabrowa-gornicza-myslowice-kosztowy"
+    },
+    {
+      "id": "myslowice-kosztowy-bierun",
+      "name": {
+        "en": "Mysłowice Kosztowy II – Bieruń",
+        "ro": "Mysłowice Kosztowy II – Bieruń"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-07-04",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 10,
+      "profile": {
+        "works": "greenfield"
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 489.18,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT. GDDKiA states 489 175 059,00 zł (brutto)."
+            },
+            "date": "2022-07-04",
+            "sourceRef": "gddkia-myslowice-bierun"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 489.18,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: FEnIKS 2021–2027 support of 255 mln zł for the whole Kosztowy – Oświęcim section, shared with the Bieruń – Oświęcim lot.",
+            "ro": "GDDKiA: sprijin FEnIKS 2021–2027 de 255 mil. zł pentru întregul sector Kosztowy – Oświęcim, comun cu lotul Bieruń – Oświęcim."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-06-11",
+          "sourceRef": "gddkia-myslowice-bierun"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-07-04",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și construcție semnat cu Budimex."
+          },
+          "sourceRef": "gddkia-myslowice-bierun"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract signed on 4 July 2022. The ZRID permit was issued on 31 January 2025 (applied for on 28 April 2023), which moved the works front to spring 2025 and the original October 2025 deadline out of reach. GDDKiA gives a planned works completion of September 2027 and plans opening to traffic in Q4 2027, with progress above 66% in September 2026. The drawn centreline starts at the Kosztowy II interchange (no OpenStreetMap junction node, position from the construction ways and pl.wikipedia) and is 4% shorter than the sourced 10 km; the sourced length is kept.",
+        "ro": "Contract de proiectare și construcție semnat la 4 iulie 2022. Autorizația ZRID a fost emisă la 31 ianuarie 2025 (solicitată la 28 aprilie 2023), ceea ce a mutat frontul de lucru în primăvara 2025 și a făcut imposibil termenul inițial din octombrie 2025. GDDKiA indică finalizarea lucrărilor planificată în septembrie 2027 și deschiderea în trafic în trimestrul IV 2027, cu un progres de peste 66% în septembrie 2026. Axul desenat începe la nodul Kosztowy II (fără nod OpenStreetMap, poziția provine din segmentele în construcție și pl.wikipedia) și este cu 4% mai scurt decât cei 10 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "gddkia-myslowice-bierun",
+        "gddkia-katowice-s1-bierun-pelny-przekroj",
+        "gddkia-katowice-s1-myslowice-bierun",
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "myslowice-kosztowy-bierun"
+    },
+    {
+      "id": "bierun-oswiecim",
+      "name": {
+        "en": "Bieruń – Oświęcim (with the Bieruń bypass)",
+        "ro": "Bieruń – Oświęcim (cu ocolitoarea Bieruń)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-11-30",
+        "constructionStart": "2024-08-20",
+        "opened": "2026-09-09"
+      },
+      "lengthKm": 2.86,
+      "profile": {
+        "works": "greenfield"
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 212.7,
+              "currency": "PLN",
+              "year": 2021,
+              "note": "Including VAT. GDDKiA states 212 701 633,06 zł (brutto); the contract also covers the 2.7 km western Bieruń bypass on DK44."
+            },
+            "date": "2021-11-30",
+            "sourceRef": "gddkia-bierun-oswiecim"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 212.7,
+          "currency": "PLN",
+          "year": 2021,
+          "note": "Including VAT. Also covers the 2.7 km western Bieruń bypass on DK44."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: FEnIKS 2021–2027 support of 255 mln zł for the whole Kosztowy – Oświęcim section, shared with the Mysłowice – Bieruń lot.",
+            "ro": "GDDKiA: sprijin FEnIKS 2021–2027 de 255 mil. zł pentru întregul sector Kosztowy – Oświęcim, comun cu lotul Mysłowice – Bieruń."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-06-01",
+          "sourceRef": "gddkia-bierun-oswiecim"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-11-30",
+          "note": {
+            "en": "Design-build contract signed with Strabag.",
+            "ro": "Contract de proiectare și construcție semnat cu Strabag."
+          },
+          "sourceRef": "gddkia-bierun-oswiecim"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2026-03-23",
+          "note": {
+            "en": "Opened to traffic with restrictions: one carriageway for about 1 km from the Gostynia bridge to the Oświęcim junction, left lanes only on the remaining 1.9 km towards Bieruń.",
+            "ro": "Dat în trafic cu restricții: o singură cale pe aproximativ 1 km de la podul peste Gostynia la nodul Oświęcim, doar benzile din stânga pe restul de 1,9 km spre Bieruń."
+          },
+          "sourceRef": "gddkia-katowice-s1-bierun-pelny-przekroj"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-09-09",
+          "note": {
+            "en": "Opened in full cross-section with the final traffic layout.",
+            "ro": "Dat în trafic în profil complet, cu organizarea finală a traficului."
+          },
+          "sourceRef": "gddkia-bierun-oswiecim"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract signed on 30 November 2021; ZRID issued on 13 August 2024. GDDKiA lists the length as 2.86 km of S1 plus 2.7 km of DK44. The drawn centreline between the two junctions is 15% longer than the sourced 2.86 km; the sourced length is kept. Site handed to the contractor on 20 August 2024.",
+        "ro": "Contract de proiectare și construcție semnat la 30 noiembrie 2021; ZRID emis la 13 august 2024. GDDKiA indică lungimea de 2,86 km de S1 plus 2,7 km de DK44. Axul desenat între cele două noduri este cu 15% mai lung decât cei 2,86 km din sursă; lungimea din sursă este păstrată. Terenul a fost predat constructorului la 20 august 2024."
+      },
+      "sourceRefs": [
+        "gddkia-bierun-oswiecim",
+        "gddkia-katowice-s1-bierun-pelny-przekroj",
+        "gddkia-katowice-s1-myslowice-bierun",
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bierun-oswiecim"
+    },
+    {
+      "id": "oswiecim-dankowice",
+      "name": {
+        "en": "Oświęcim – Dankowice (with the Oświęcim bypass)",
+        "ro": "Oświęcim – Dankowice (cu ocolitoarea Oświęcim)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-05-14",
+        "constructionStart": "2022-09-15",
+        "opened": "2025-12-19"
+      },
+      "lengthKm": 15.8,
+      "profile": {
+        "works": "greenfield"
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 989.75,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2020-05-14",
+            "sourceRef": "gddkia-oswiecim-dankowice"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 989.75,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Porr",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Polska (formerly Mota-Engil Central Europe)",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: FEnIKS 2021–2027 support of 581.2 mln zł, listed identically on this page and on the Dankowice – Suchy Potok page and not split between them.",
+            "ro": "GDDKiA: sprijin FEnIKS 2021–2027 de 581,2 mil. zł, indicat identic pe această pagină și pe pagina Dankowice – Suchy Potok și nedivizat între ele."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-10-11",
+          "sourceRef": "gddkia-oswiecim-dankowice"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-05-14",
+          "note": {
+            "en": "Design-build contract signed with the Porr / Duna Polska consortium.",
+            "ro": "Contract de proiectare și construcție semnat cu consorțiul Porr / Duna Polska."
+          },
+          "sourceRef": "gddkia-oswiecim-dankowice"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2025-08-25",
+          "note": {
+            "en": "Main line opened over 10.6 km from the Oświęcim junction to the Brzeszcze junction.",
+            "ro": "Calea principală dată în trafic pe 10,6 km de la nodul Oświęcim la nodul Brzeszcze."
+          },
+          "sourceRef": "gddkia-oswiecim-dankowice"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-19",
+          "note": {
+            "en": "Remaining 5.2 km from Brzeszcze to Dankowice opened under temporary traffic arrangements; permanent arrangements from 23 March 2026.",
+            "ro": "Restul de 5,2 km de la Brzeszcze la Dankowice dat în trafic cu organizare temporară; organizare permanentă din 23 martie 2026."
+          },
+          "sourceRef": "gddkia-oswiecim-dankowice"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract signed on 14 May 2020 with the Porr / Duna Polska (formerly Mota-Engil Central Europe) consortium; ZRID issued on 12 September 2022; contractual completion 14 August 2023, 28 July 2025 after an annex. GDDKiA says the value stood at almost 1.2 bn PLN after contract changes and a higher indexation limit. The end of the lot (km 28+030) has no OpenStreetMap junction node: the boundary is placed 4.42 km beyond the Brzeszcze junction (km 23+607). The drawn centreline is 8% shorter than the sourced 15.8 km; the sourced length is kept. Site handed to the contractor on 15 September 2022.",
+        "ro": "Contract de proiectare și construcție semnat la 14 mai 2020 cu consorțiul Porr / Duna Polska (fost Mota-Engil Central Europe); ZRID emis la 12 septembrie 2022; termen contractual 14 august 2023, 28 iulie 2025 după un act adițional. GDDKiA indică o valoare de aproape 1,2 mld PLN după modificări contractuale și o limită de indexare mai mare. Sfârșitul lotului (km 28+030) nu are nod OpenStreetMap: limita este plasată la 4,42 km după nodul Brzeszcze (km 23+607). Axul desenat este cu 8% mai scurt decât cei 15,8 km din sursă; lungimea din sursă este păstrată. Terenul a fost predat constructorului la 15 septembrie 2022."
+      },
+      "sourceRefs": [
+        "gddkia-oswiecim-dankowice",
+        "gddkia-katowice-s1-myslowice-bierun",
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "oswiecim-dankowice"
+    },
+    {
+      "id": "dankowice-suchy-potok",
+      "name": {
+        "en": "Dankowice – Bielsko-Biała Hałcnów (Suchy Potok)",
+        "ro": "Dankowice – Bielsko-Biała Hałcnów (Suchy Potok)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-08-03",
+        "constructionStart": "2022-10",
+        "opened": "2025-12-19"
+      },
+      "lengthKm": 11.87,
+      "profile": {
+        "works": "greenfield"
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 586.71,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2020-08-03",
+            "sourceRef": "gddkia-dankowice-suchy-potok"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 586.71,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Mirbud",
+          "role": "builder"
+        },
+        {
+          "name": "Kobylarnia",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: FEnIKS 2021–2027 support of 581.2 mln zł, listed identically on this page and on the Oświęcim – Dankowice page and not split between them.",
+            "ro": "GDDKiA: sprijin FEnIKS 2021–2027 de 581,2 mil. zł, indicat identic pe această pagină și pe pagina Oświęcim – Dankowice și nedivizat între ele."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-10-11",
+          "sourceRef": "gddkia-dankowice-suchy-potok"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-08-03",
+          "note": {
+            "en": "Design-build contract signed with the Mirbud / Kobylarnia consortium.",
+            "ro": "Contract de proiectare și construcție semnat cu consorțiul Mirbud / Kobylarnia."
+          },
+          "sourceRef": "gddkia-dankowice-suchy-potok"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-19",
+          "note": {
+            "en": "Main line opened; permanent traffic arrangements from 23 March 2026.",
+            "ro": "Calea principală dată în trafic; organizare permanentă a traficului din 23 martie 2026."
+          },
+          "sourceRef": "gddkia-dankowice-suchy-potok"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract signed on 3 August 2020 for 586.71 mln zł; GDDKiA says the value stood at almost 681 mln zł after contract changes and a higher indexation limit. ZRID issued on 27 September 2022. The start of the lot (km 28+030) has no OpenStreetMap junction node and is placed 4.42 km beyond the Brzeszcze junction. The drawn centreline ends at the Hałcnów (Suchy Potok) junction and is 12% shorter than the sourced 11.87 km; the sourced length is kept. Works began in October 2022.",
+        "ro": "Contract de proiectare și construcție semnat la 3 august 2020 pentru 586,71 mil. zł; GDDKiA indică o valoare de aproape 681 mil. zł după modificări contractuale și o limită de indexare mai mare. ZRID emis la 27 septembrie 2022. Începutul lotului (km 28+030) nu are nod OpenStreetMap și este plasat la 4,42 km după nodul Brzeszcze. Axul desenat se termină la nodul Hałcnów (Suchy Potok) și este cu 12% mai scurt decât cei 11,87 km din sursă; lungimea din sursă este păstrată. Lucrările au început în octombrie 2022."
+      },
+      "sourceRefs": [
+        "gddkia-dankowice-suchy-potok",
+        "gddkia-katowice-s1-myslowice-bierun",
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dankowice-suchy-potok"
+    },
+    {
+      "id": "halcnow-mikuszowice",
+      "name": {
+        "en": "Bielsko-Biała Hałcnów – Mikuszowice (north-east bypass)",
+        "ro": "Bielsko-Biała Hałcnów – Mikuszowice (ocolitoarea nord-estică)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-10-28"
+      },
+      "lengthKm": 6.9,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-10-28",
+          "note": {
+            "en": "Rosta – Mikuszowice (9.1 km) opened.",
+            "ro": "Rosta – Mikuszowice (9,1 km) dat în trafic."
+          },
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "Part of the north-east bypass of Bielsko-Biała (11.9 km Komorowice – Mikuszowice per pl.wikipedia), whose Rosta – Mikuszowice section (9.1 km) opened on 28 October 2011 and Komorowice – Rosta (2.8 km) on 19 August 2011. OpenStreetMap carries ref S52 on the Komorowice – Hałcnów part, so only Hałcnów – Mikuszowice is drawn here. Length measured from OpenStreetMap geometry.",
+        "ro": "Parte a ocolitoarei nord-estice a orașului Bielsko-Biała (11,9 km Komorowice – Mikuszowice conform pl.wikipedia), al cărei sector Rosta – Mikuszowice (9,1 km) a fost deschis la 28 octombrie 2011, iar Komorowice – Rosta (2,8 km) la 19 august 2011. OpenStreetMap atribuie ref S52 porțiunii Komorowice – Hałcnów, deci aici este desenat doar Hałcnów – Mikuszowice. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "halcnow-mikuszowice"
+    },
+    {
+      "id": "mikuszowice-buczkowice",
+      "name": {
+        "en": "Bielsko-Biała Mikuszowice – Buczkowice (with the Wilkowice junction)",
+        "ro": "Bielsko-Biała Mikuszowice – Buczkowice (cu nodul Wilkowice)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-11-06"
+      },
+      "lengthKm": 6.1,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2014-11-06",
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "6.1 km including the Wilkowice junction, opened on 6 November 2014 (pl.wikipedia). Signed S69 until 4 August 2016. The drawn centreline is 7% longer than the sourced length; the sourced length is kept.",
+        "ro": "6,1 km inclusiv nodul Wilkowice, dat în trafic la 6 noiembrie 2014 (pl.wikipedia). Marcat S69 până la 4 august 2016. Axul desenat este cu 7% mai lung decât lungimea din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mikuszowice-buczkowice"
+    },
+    {
+      "id": "buczkowice-zywiec",
+      "name": {
+        "en": "Buczkowice – Żywiec",
+        "ro": "Buczkowice – Żywiec"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-07-24"
+      },
+      "lengthKm": 9.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-07-24",
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "9.5 km, opened on 24 July 2015 (pl.wikipedia). Signed S69 until 4 August 2016. The lot ends at the Żywiec Soła junction; the drawn centreline is 4% shorter than the sourced length, which is kept.",
+        "ro": "9,5 km, dat în trafic la 24 iulie 2015 (pl.wikipedia). Marcat S69 până la 4 august 2016. Lotul se termină la nodul Żywiec Soła; axul desenat este cu 4% mai scurt decât lungimea din sursă, care este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "buczkowice-zywiec"
+    },
+    {
+      "id": "zywiec-przybedza",
+      "name": {
+        "en": "Żywiec – Browar – Węgierska Górka (Przybędza)",
+        "ro": "Żywiec – Browar – Węgierska Górka (Przybędza)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-01"
+      },
+      "lengthKm": 7.7,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-01",
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "Two parts of 2.8 km (Żywiec – Browar) and 4.9 km (Browar – Przybędza), 7.7 km in total, opened in January 2007 as part of the S69 (pl.wikipedia); the page gives no day. The access road from the Żywiec junction to the Soła bridge (1.5 km) was opened on 8 January 2007. The drawn centreline is 10% shorter than the sourced length, which is kept.",
+        "ro": "Două părți de 2,8 km (Żywiec – Browar) și 4,9 km (Browar – Przybędza), 7,7 km în total, date în trafic în ianuarie 2007 ca parte a S69 (pl.wikipedia); pagina nu indică ziua. Drumul de acces de la nodul Żywiec la podul peste Soła (1,5 km) a fost deschis la 8 ianuarie 2007. Axul desenat este cu 10% mai scurt decât lungimea din sursă, care este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zywiec-przybedza"
+    },
+    {
+      "id": "przybedza-milowka",
+      "name": {
+        "en": "Węgierska Górka (Przybędza) – Milówka (Węgierska Górka bypass, two tunnels)",
+        "ro": "Węgierska Górka (Przybędza) – Milówka (ocolitoarea Węgierska Górka, două tunele)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-10-10",
+        "opened": "2025-10-23"
+      },
+      "lengthKm": 8.5,
+      "profile": {
+        "works": "greenfield",
+        "terrain": "mountain",
+        "tunnelKm": 1.83
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1378.95,
+              "currency": "PLN",
+              "year": 2019,
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2019-10-10",
+            "sourceRef": "gddkia-przybedza-milowka"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1378.95,
+          "currency": "PLN",
+          "year": 2019,
+          "note": "VAT basis not stated on the source page."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Mirbud",
+          "role": "builder"
+        },
+        {
+          "name": "Kobylarnia",
+          "role": "builder"
+        },
+        {
+          "name": "Zrzeszenie Budowlane Interbudmontaż",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2018-01-17",
+          "sourceRef": "gddkia-przybedza-milowka"
+        },
+        {
+          "kind": "awarded",
+          "date": "2019-10-10",
+          "note": {
+            "en": "Design-build contract signed with the Mirbud (leader) / Kobylarnia / Interbudmontaż consortium.",
+            "ro": "Contract de proiectare și construcție semnat cu consorțiul Mirbud (lider) / Kobylarnia / Interbudmontaż."
+          },
+          "sourceRef": "gddkia-przybedza-milowka"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-10-23",
+          "sourceRef": "gddkia-przybedza-milowka"
+        }
+      ],
+      "note": {
+        "en": "8.5 km with two twin-tube tunnels of 830 m and 1000 m and a viaduct of almost 1 km; 4.8 km is dual carriageway (the tunnel stretch and between the tunnels) and 3.7 km single carriageway. Design-build contract signed on 10 October 2019 after the tender of 17 January 2018. The drawn centreline is 1% shorter than the sourced length.",
+        "ro": "8,5 km cu două tunele cu tuburi gemene de 830 m și 1000 m și un viaduct de aproape 1 km; 4,8 km sunt cu două căi de rulare (zona tunelurilor și dintre tunele), iar 3,7 km cu o singură cale. Contract de proiectare și construcție semnat la 10 octombrie 2019 după licitația din 17 ianuarie 2018. Axul desenat este cu 1% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "gddkia-przybedza-milowka",
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "przybedza-milowka"
+    },
+    {
+      "id": "milowka-szare",
+      "name": {
+        "en": "Milówka – Szare",
+        "ro": "Milówka – Szare"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-01-08"
+      },
+      "lengthKm": 2.9,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-01-08",
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "2.9 km, single carriageway, opened on 8 January 2007 together with 1.8 km of upgraded access road to Milówka (pl.wikipedia). Szare has no OpenStreetMap junction node, so the boundary is placed by the sourced length, 2.9 km from the Milówka junction.",
+        "ro": "2,9 km, o singură cale de rulare, dat în trafic la 8 ianuarie 2007 împreună cu 1,8 km de drum de acces modernizat spre Milówka (pl.wikipedia). Szare nu are nod OpenStreetMap, deci limita este plasată după lungimea din sursă, la 2,9 km de nodul Milówka."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "milowka-szare"
+    },
+    {
+      "id": "szare-laliki",
+      "name": {
+        "en": "Szare – Laliki (Emilia tunnel)",
+        "ro": "Szare – Laliki (tunelul Emilia)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-03-05"
+      },
+      "lengthKm": 4.7,
+      "profile": {
+        "works": "greenfield",
+        "terrain": "mountain",
+        "tunnelKm": 0.678
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2007-10",
+          "note": {
+            "en": "Contract signed (month given only).",
+            "ro": "Contract semnat (doar luna este indicată)."
+          },
+          "sourceRef": "plwiki-s1"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-03-05",
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "4.7 km, single carriageway, contract signed in October 2007 and opened on 5 March 2010 (pl.wikipedia). It includes the Emilia tunnel (678 m), the first road tunnel built outside a city in Poland, with two parallel tubes, one of them for technical and evacuation use. Neither boundary has an OpenStreetMap junction node; the start follows the Milówka – Szare cut, and the end is placed by the sourced length of the next lot (1.8 km) counted back from the Zwardoń end of the drawn road. The drawn centreline is 14% longer than the sourced 4.7 km; the sourced length is kept.",
+        "ro": "4,7 km, o singură cale de rulare, contract semnat în octombrie 2007 și dat în trafic la 5 martie 2010 (pl.wikipedia). Include tunelul Emilia (678 m), primul tunel rutier construit în afara unui oraș în Polonia, cu două tuburi paralele, unul dintre ele pentru uz tehnic și de evacuare. Niciuna dintre limite nu are nod OpenStreetMap; începutul urmează tăietura Milówka – Szare, iar sfârșitul este plasat după lungimea din sursă a lotului următor (1,8 km) numărată de la capătul Zwardoń al drumului desenat. Axul desenat este cu 14% mai lung decât cei 4,7 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szare-laliki"
+    },
+    {
+      "id": "laliki-zwardon",
+      "name": {
+        "en": "Laliki – Zwardoń",
+        "ro": "Laliki – Zwardoń"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-12-28"
+      },
+      "lengthKm": 1.8,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2007-06",
+          "note": {
+            "en": "Contract signed (month given only).",
+            "ro": "Contract semnat (doar luna este indicată)."
+          },
+          "sourceRef": "plwiki-s1"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-12-28",
+          "sourceRef": "plwiki-s1"
+        }
+      ],
+      "note": {
+        "en": "1.8 km, single carriageway, contract signed in June 2007 and opened on 28 December 2008 (pl.wikipedia). The boundary is placed by the sourced length counted back from the end of the S1 ways in OpenStreetMap at Zwardoń. The final 1.4 km to the Zwardoń/Myto – Skalité border (works completed December 2004 per pl.wikipedia) is not drawn.",
+        "ro": "1,8 km, o singură cale de rulare, contract semnat în iunie 2007 și dat în trafic la 28 decembrie 2008 (pl.wikipedia). Limita este plasată după lungimea din sursă numărată de la capătul ways S1 din OpenStreetMap la Zwardoń. Ultimii 1,4 km până la frontiera Zwardoń/Myto – Skalité (lucrări terminate în decembrie 2004 conform pl.wikipedia) nu sunt desenați."
+      },
+      "sourceRefs": [
+        "plwiki-s1",
+        "osm-relation-s1",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "laliki-zwardon"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-s1",
+      "title": "Wikipedia (pl): Droga ekspresowa S1 (Polska)",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S1_(Polska)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-s1",
+      "title": "OpenStreetMap: route relation 309616 (S1, network PL:expressway)",
+      "url": "https://www.openstreetmap.org/relation/309616",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-pyrzowice-podwarpie",
+      "title": "GDDKiA MSBD: S1 Pyrzowice – Podwarpie, etap III (z wyłączeniem odcinka w. Pyrzowice – w. Lotnisko)",
+      "url": "https://www.gov.pl/web/gddkia/s1-pyrzowice-podwarpie--etap-iii-z-wylaczeniem-odcinka-w-pyrzowice-w-lotnisko",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-podwarpie-dabrowa",
+      "title": "GDDKiA MSBD: S1 odc. Podwarpie – Dąbrowa Górnicza (przebudowa DK1)",
+      "url": "https://www.gov.pl/web/gddkia/s1-odc-podwarpie--dabrowa-gornicza-przebudowa-dk1",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-myslowice-bierun",
+      "title": "GDDKiA MSBD: S1 węzeł Kosztowy II (z węzłem) – węzeł Bieruń (bez węzła)",
+      "url": "https://www.gov.pl/web/gddkia/s1-wezel-kosztowy-ii-z-wezlem---wezel-bierun-bez-wezla2",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-bierun-oswiecim",
+      "title": "GDDKiA MSBD: S1 węzeł Bieruń (z węzłem) – węzeł Oświęcim (bez węzła)",
+      "url": "https://www.gov.pl/web/gddkia/s1-wezel-bierun-z-wezlem---wezel-oswiecim-bez-wezla",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-oswiecim-dankowice",
+      "title": "GDDKiA MSBD: S1 węzeł Oświęcim – Dankowice",
+      "url": "https://www.gov.pl/web/gddkia/s1-wezel-oswiecim---dankowice",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-dankowice-suchy-potok",
+      "title": "GDDKiA MSBD: S1 Odcinek III Dankowice – węzeł Suchy Potok (z węzłem)",
+      "url": "https://www.gov.pl/web/gddkia/s1-odcinek-iii-dankowice--wezel-suchy-potok--z-wezlem",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-przybedza-milowka",
+      "title": "GDDKiA MSBD: S1 (dawniej S69) Bielsko-Biała – Żywiec – Zwardoń, odcinek Przybędza – Milówka (obejście Węgierskiej Górki)",
+      "url": "https://www.gov.pl/web/gddkia/s1-dawniej-s69-bielsko-biala-zywiec-zwardon-odcinek-przybedza-milowka-obejscie-wegierskiej-gorki",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-katowice-s1-bierun-pelny-przekroj",
+      "title": "GDDKiA Oddział Katowice: S1 Bieruń – węzeł Oświęcim w pełnym przekroju",
+      "url": "https://www.gov.pl/web/gddkia-katowice/s1-bierun-wezel-oswiecim-w-pelnym-przekroju",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-katowice-s1-myslowice-bierun",
+      "title": "GDDKiA Oddział Katowice: Może ruszać budowa S1 Mysłowice – Bieruń",
+      "url": "https://www.gov.pl/web/gddkia-katowice/moze-ruszac-budowa-s1-myslowice---bierun",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

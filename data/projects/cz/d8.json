@@ -1,0 +1,447 @@
+{
+  "id": "cz-d8",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D8 motorway (Praha – Lovosice – Ústí nad Labem – German border)",
+    "ro": "Autostrada D8 (Praga – Lovosice – Ústí nad Labem – granița cu Germania)"
+  },
+  "description": {
+    "en": "Czech motorway from Zdiby on the northern edge of Prague to the German border at Krásný Les, where it meets the A17. Lots follow the ŘSD section numbers 0801–0807 and the cs.wikipedia section table: 0806 Řehlovice – Trmice opened in 1990, 0801 to 0804 between 1993 and 2001, 0807 Trmice – border in December 2006, and 0805 Lovosice – Řehlovice through České středohoří in May 2012 (Lovosice – Bílinka) and December 2016 (the rest, after the 2013 Prackovice landslide). The 2.248 km Březiněves – Zdiby link on the Prosecká radiála is not part of the motorway and is not drawn. Capacity widening at Zdiby – Nová Ves and Praha – Zdiby is only in preparation and is not recorded.",
+    "ro": "Autostradă cehă de la Zdiby, la marginea nordică a Pragăi, până la granița cu Germania la Krásný Les, unde se leagă de A17. Loturile urmează numerele de construcție ŘSD 0801–0807 și tabelul secțiunilor de pe cs.wikipedia: 0806 Řehlovice – Trmice deschis în 1990, 0801–0804 între 1993 și 2001, 0807 Trmice – graniță în decembrie 2006, iar 0805 Lovosice – Řehlovice prin České středohoří în mai 2012 (Lovosice – Bílinka) și în decembrie 2016 (restul, după alunecarea de teren de la Prackovice din 2013). Legătura Březiněves – Zdiby de 2,248 km de pe Prosecká radiála nu face parte din autostradă și nu este desenată. Lărgirile de capacitate Zdiby – Nová Ves și Praha – Zdiby sunt doar în pregătire și nu sunt înregistrate."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "zdiby-uzice",
+      "name": {
+        "en": "Zdiby – Úžice (0801)",
+        "ro": "Zdiby – Úžice (0801)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "1990-10",
+        "opened": "1993-07-23"
+      },
+      "lengthKm": 9.6,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1990-10",
+          "sourceRef": "cs-wikipedia-d8"
+        },
+        {
+          "kind": "opened",
+          "date": "1993-07-23",
+          "sourceRef": "cs-wikipedia-d8"
+        }
+      ],
+      "note": {
+        "en": "Stavba 0801, km 0–9.6. Dates and length from the cs.wikipedia section table and text and the ŘSD publication (started October 1990, opened 23 July 1993, fully completed December 1993). Category D 26.5/120. The 2.248 km Březiněves – Zdiby link on the Prosecká radiála is not part of the motorway and is not drawn. The line starts at the Zdiby junction (OSM motorway_junction, ref 1), where the section table puts km 0; the drawn line is about 5% longer than the recorded 9.6 km because the Úžice end is cut at the junction node.",
+        "ro": "Construcția 0801, km 0–9,6. Datele și lungimea provin din tabelul și textul de pe cs.wikipedia și din publicația ŘSD (început în octombrie 1990, deschis la 23 iulie 1993, finalizat complet în decembrie 1993). Categoria D 26,5/120. Legătura Březiněves – Zdiby de 2,248 km de pe Prosecká radiála nu face parte din autostradă și nu este desenată. Linia începe la nodul Zdiby (OSM motorway_junction, ref 1), unde tabelul secțiunilor pune km 0; linia desenată este cu circa 5% mai lungă decât cei 9,6 km înregistrați, deoarece capătul Úžice este tăiat la nodul de joncțiune."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d8",
+        "rsd-publikace-d8-2018",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zdiby-uzice",
+      "contractors": [
+        {
+          "name": "SSŽ a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "VPÚ DECO PRAHA a.s.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "uzice-nova-ves",
+      "name": {
+        "en": "Úžice – Nová Ves (0802)",
+        "ro": "Úžice – Nová Ves (0802)"
+      },
+      "status": "opened",
+      "cost": {
+        "actual": {
+          "amount": 1965,
+          "currency": "CZK",
+          "note": "Construction cost stated as 1.965 billion CZK on dalnice-silnice.cz (2008, archived), which gives it as the cost of the built section (\"Náklady na výstavbu byly\"). cs.wikipedia dates it only as \"in the 1990s\". Price year and VAT basis not stated."
+        }
+      },
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "1993-12",
+        "opened": "1996-10-18"
+      },
+      "lengthKm": 8.9,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1993-12",
+          "sourceRef": "cs-wikipedia-d8"
+        },
+        {
+          "kind": "opened",
+          "date": "1996-10-18",
+          "sourceRef": "cs-wikipedia-d8"
+        }
+      ],
+      "note": {
+        "en": "Stavba 0802, km 9.6–18.5, with the Vltava bridge and the Nová Ves junction. Dates and length from cs.wikipedia and the ŘSD publication (started December 1993, opened 18 October 1996, fully completed April 1997). Category D 26.5/120. Cost as stated on the archived 2008 enthusiast page dalnice-silnice.cz, which cs.wikipedia cites.",
+        "ro": "Construcția 0802, km 9,6–18,5, cu podul peste Vltava și nodul Nová Ves. Datele și lungimea provin de pe cs.wikipedia și din publicația ŘSD (început în decembrie 1993, deschis la 18 octombrie 1996, finalizat complet în aprilie 1997). Categoria D 26,5/120. Costul este cel de pe pagina de entuziaști dalnice-silnice.cz din 2008 (arhivată), citată de cs.wikipedia."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d8",
+        "dalnice-silnice-d8-2008",
+        "rsd-publikace-d8-2018",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "uzice-nova-ves",
+      "contractors": [
+        {
+          "name": "SSŽ a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "VPÚ DECO PRAHA a.s.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "nova-ves-doksany",
+      "name": {
+        "en": "Nová Ves – Doksany (0803)",
+        "ro": "Nová Ves – Doksany (0803)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "1998-10-26",
+        "opened": "2001-06-18"
+      },
+      "lengthKm": 16.351,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1998-10-26",
+          "sourceRef": "rsd-publikace-d8-2018"
+        },
+        {
+          "kind": "opened",
+          "date": "2001-06-18",
+          "sourceRef": "rsd-publikace-d8-2018"
+        }
+      ],
+      "note": {
+        "en": "Stavba 0803, km 18.5–34.851, with the Roudnice nad Labem junction. Started on 26 October 1998, after most of 0804 had opened; opened on 18 June 2001 (fully completed August 2001), which gave a continuous motorway from Zdiby to Lovosice. Category D 26.5/120. No cost is recorded: cs.wikipedia gives 1.88 billion CZK \"in the 1990s\", while the archived dalnice-silnice.cz page it cites gives 1.4 billion CZK.",
+        "ro": "Construcția 0803, km 18,5–34,851, cu nodul Roudnice nad Labem. Începută la 26 octombrie 1998, după deschiderea celei mai mari părți din 0804; deschisă la 18 iunie 2001 (finalizată complet în august 2001), ceea ce a creat o autostradă continuă de la Zdiby la Lovosice. Categoria D 26,5/120. Nu este înregistrat niciun cost: cs.wikipedia indică 1,88 miliarde CZK „în anii 1990”, iar pagina dalnice-silnice.cz arhivată, citată acolo, indică 1,4 miliarde CZK."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d8",
+        "rsd-publikace-d8-2018",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nova-ves-doksany",
+      "contractors": [
+        {
+          "name": "SSŽ, o.z. 3, Praha",
+          "role": "builder"
+        },
+        {
+          "name": "VPÚ DECO PRAHA a.s.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "doksany-lovosice",
+      "name": {
+        "en": "Doksany – Lovosice (0804)",
+        "ro": "Doksany – Lovosice (0804)"
+      },
+      "status": "opened",
+      "cost": {
+        "actual": {
+          "amount": 2616,
+          "currency": "CZK",
+          "note": "Construction cost stated as 2.616 billion CZK on dalnice-silnice.cz (2008, archived), which gives it as the cost of the built section (\"Náklady na výstavbu úseku 0804 byly\"). cs.wikipedia dates it only as \"in the 1990s\". Price year and VAT basis not stated."
+        }
+      },
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "dates": {
+        "constructionStart": "1996-10",
+        "opened": "1998-10-26"
+      },
+      "lengthKm": 13.425,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996-10",
+          "sourceRef": "cs-wikipedia-d8"
+        },
+        {
+          "kind": "opened",
+          "date": "1998-10-26",
+          "sourceRef": "rsd-publikace-d8-2018"
+        }
+      ],
+      "note": {
+        "en": "Stavba 0804, km 34.851–48.276, with the 1,183 m bridge over the Ohře. First work started in July 1995 on that bridge, official construction start October 1996. Opened on 26 October 1998 except the first 800 m with the Doksany junction, which were built with 0803 and opened in June 2001. Category D 26.5/120. Cost as stated on the archived 2008 enthusiast page dalnice-silnice.cz, which cs.wikipedia cites.",
+        "ro": "Construcția 0804, km 34,851–48,276, cu podul de 1.183 m peste Ohře. Primele lucrări au început în iulie 1995 la acest pod, startul oficial în octombrie 1996. Deschisă la 26 octombrie 1998, cu excepția primilor 800 m cu nodul Doksany, construiți împreună cu 0803 și deschiși în iunie 2001. Categoria D 26,5/120. Costul este cel de pe pagina de entuziaști dalnice-silnice.cz din 2008 (arhivată), citată de cs.wikipedia."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d8",
+        "dalnice-silnice-d8-2008",
+        "rsd-publikace-d8-2018",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "doksany-lovosice",
+      "contractors": [
+        {
+          "name": "SSŽ, o.z. 3, Praha Sdružení SMP a MBK (SMP Praha a Max Bögl & Krýsl)",
+          "role": "builder"
+        },
+        {
+          "name": "VPÚ DECO PRAHA a.s.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "lovosice-rehlovice",
+      "name": {
+        "en": "Lovosice – Řehlovice (0805, České středohoří)",
+        "ro": "Lovosice – Řehlovice (0805, České středohoří)"
+      },
+      "status": "opened",
+      "contract": {
+        "value": {
+          "amount": 8955.25,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"). Signing date and price year not stated."
+        }
+      },
+      "profile": {
+        "designSpeedKmh": 120,
+        "tunnelKm": 0.89,
+        "bridgeCount": 19
+      },
+      "dates": {
+        "constructionStart": "2007-10",
+        "opened": "2016-12-17"
+      },
+      "lengthKm": 16.413,
+      "contractors": [
+        {
+          "name": "Sdružení D8 0805, SSŽ-MTS (EUROVIA CS, Metrostav, SMP CZ, Berger Bohemia)",
+          "role": "builder"
+        },
+        {
+          "name": "PRAGOPROJEKT a.s.",
+          "role": "designer"
+        }
+      ],
+      "events": [
+        {
+          "kind": "litigation",
+          "date": "2007",
+          "sourceRef": "rsd-leaflet-0805",
+          "note": {
+            "en": "Lawsuits by several environmental associations delayed the works, so the original 2010 completion was missed.",
+            "ro": "Acțiuni în instanță ale unor asociații de mediu au întârziat lucrările, iar termenul inițial din 2010 nu a fost respectat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2007-10",
+          "sourceRef": "rsd-leaflet-0805"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-05",
+          "sourceRef": "rsd-leaflet-0805",
+          "note": {
+            "en": "About 4 km between the Lovosice and Bílinka junctions opened.",
+            "ro": "A fost deschis un sector de circa 4 km între nodurile Lovosice și Bílinka."
+          }
+        },
+        {
+          "kind": "suspended",
+          "date": "2013-06-07",
+          "sourceRef": "cs-wikipedia-d8",
+          "note": {
+            "en": "Landslide of about 500,000 m3 at km 56.3–56.5 near Litochovice nad Labem.",
+            "ro": "Alunecare de teren de circa 500.000 m3 la km 56,3–56,5 lângă Litochovice nad Labem."
+          }
+        },
+        {
+          "kind": "resumed",
+          "date": "2014-11-19",
+          "sourceRef": "rsd-leaflet-0805",
+          "note": {
+            "en": "Removal of the slide began; the first remediation stage ended on 7 April 2015 and the second began in autumn 2015.",
+            "ro": "A început îndepărtarea alunecării; prima etapă de sanare s-a încheiat la 7 aprilie 2015, iar a doua a început în toamna lui 2015."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-17",
+          "sourceRef": "rsd-leaflet-0805"
+        }
+      ],
+      "note": {
+        "en": "Stavba 0805, km 48.276–64.689, through České středohoří with the Vchynice, Oparno (275 m) and Dobkovičky bridges, the Prackovice viaduct and two tunnels (Prackovice 260/270 m, Radejčín 600/620 m, 890 m in total, longer tube of each). Only the roughly 4 km between the Lovosice and Bílinka junctions opened in May 2012. The Prackovice landslide of 7 June 2013 shifted part of the carriageway about 25 m and required a full rebuild there. The remaining 12.7 km from Bílinka to Řehlovice opened on 17 December 2016, with the Prackovice viaduct temporarily carrying one lane per direction on a single carriageway; it reached full profile on 20 September 2017. The leaflet gives the contract price; cs.wikipedia mentions remediation stages of 70 and 400 million CZK, which are not recorded as lot cost. Construction start is October 2007 in the ŘSD leaflet; cs.wikipedia gives the official start as 6 November 2007. A 2018 ŘSD publication gives the contract price as 9,850,778,000 CZK excl. VAT. Length from the leaflet and cs.wikipedia; the drawn centreline is 2.7% shorter.",
+        "ro": "Construcția 0805, km 48,276–64,689, prin České středohoří, cu podurile Vchynice, Oparno (275 m) și Dobkovičky, viaductul Prackovice și două tuneluri (Prackovice 260/270 m, Radejčín 600/620 m, 890 m în total, tubul mai lung al fiecăruia). În mai 2012 s-au deschis doar circa 4 km între nodurile Lovosice și Bílinka. Alunecarea de teren de la Prackovice din 7 iunie 2013 a deplasat o parte din carosabil cu circa 25 m și a impus acolo o reconstrucție completă. Cei 12,7 km rămași, de la Bílinka la Řehlovice, au fost deschiși la 17 decembrie 2016, viaductul Prackovice având temporar o bandă pe sens pe un singur carosabil; a ajuns la profil complet la 20 septembrie 2017. Fișa indică prețul contractului; cs.wikipedia menționează etape de sanare de 70 și 400 milioane CZK, care nu sunt înregistrate drept cost al lotului. Startul lucrărilor este octombrie 2007 în fișa ŘSD; cs.wikipedia indică startul oficial la 6 noiembrie 2007. O publicație ŘSD din 2018 indică prețul contractului la 9.850.778.000 CZK fără TVA. Lungimea provine din fișă și de pe cs.wikipedia; axul desenat este cu 2,7% mai scurt."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d8",
+        "rsd-leaflet-0805",
+        "rsd-publikace-d8-2018",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lovosice-rehlovice"
+    },
+    {
+      "id": "rehlovice-trmice",
+      "name": {
+        "en": "Řehlovice – Trmice (0806)",
+        "ro": "Řehlovice – Trmice (0806)"
+      },
+      "status": "opened",
+      "profile": {
+        "designSpeedKmh": 120,
+        "bridgeCount": 6
+      },
+      "dates": {
+        "constructionStart": "1984-04",
+        "opened": "1990-11-06"
+      },
+      "lengthKm": 4.175,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1984-04",
+          "sourceRef": "cs-wikipedia-d8"
+        },
+        {
+          "kind": "opened",
+          "date": "1990-11-06",
+          "sourceRef": "cs-wikipedia-d8"
+        }
+      ],
+      "note": {
+        "en": "Stavba 0806, km 64.689–68.864, the oldest part of the D8, with six motorway bridges including the Stadice, Koštov and Trmice bridges. Built ahead of the rest because the Chabařovice coal pit threatened the only road link between Teplice and Ústí nad Labem; with the road I/63 it served as an alternative link until the next section opened in December 2006. Its total cost was 1,032 million Kčs (dalnice-silnice.cz), a defunct currency, so it is not recorded as a figure. The boundary with 0807 is cut at the present Trmice junction, so the drawn 4.4 km exceeds the sourced length.",
+        "ro": "Construcția 0806, km 64,689–68,864, cea mai veche parte a D8, cu șase poduri de autostradă, printre care Stadice, Koštov și Trmice. Construită înaintea restului deoarece cariera de cărbune Chabařovice amenința singura legătură rutieră dintre Teplice și Ústí nad Labem; împreună cu drumul I/63 a servit ca legătură alternativă până la deschiderea următorului sector în decembrie 2006. Costul total a fost de 1.032 milioane Kčs (dalnice-silnice.cz), monedă dispărută, deci nu este înregistrat ca valoare. Limita cu 0807 este tăiată la nodul Trmice actual, deci cei 4,4 km desenați depășesc lungimea din sursă."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d8",
+        "dalnice-silnice-d8-2008",
+        "rsd-publikace-d8-2018",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rehlovice-trmice",
+      "contractors": [
+        {
+          "name": "Dopravní stavby Olomouc",
+          "role": "builder"
+        },
+        {
+          "name": "VPÚ DECO PRAHA a.s.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "trmice-hranice",
+      "name": {
+        "en": "Trmice – state border (0807, Panenská tunnel)",
+        "ro": "Trmice – granița de stat (0807, tunelul Panenská)"
+      },
+      "status": "opened",
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The European Union contributed 1.5 billion CZK (programme not named in the source).",
+            "ro": "Uniunea Europeană a contribuit cu 1,5 miliarde CZK (programul nu este numit în sursă)."
+          }
+        }
+      ],
+      "profile": {
+        "tunnelKm": 2.703
+      },
+      "dates": {
+        "constructionStart": "2004-11",
+        "opened": "2006-12-21"
+      },
+      "lengthKm": 23.344,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-11",
+          "sourceRef": "cs-wikipedia-d8"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-12-21",
+          "sourceRef": "cs-wikipedia-d8"
+        }
+      ],
+      "note": {
+        "en": "Stavba 0807, km 68.864–92.208, over the Krušné hory to the border at Krásný Les/Breitenau, joining Germany's A17. Opened on 21 December 2006 (ŘSD publication, cs.wikipedia). Construction began in November 2004 (section table; ŘSD: autumn 2004), with the Panenská tunnel driven from autumn 2003. Panenská, the longest motorway tunnel in Czechia, has tubes of 2,167.7 and 2,115.7 m; the Libouchec tunnel has tubes of 535 and 454 m in the ŘSD section description (the same publication gives 504 and 520 m elsewhere). profile.tunnelKm sums the longer tube of each (2.703 km). The cs.wikipedia text splits the section into 0807/I Trmice – Knínice (12.244 km, D 28.0/100) and 0807/II Knínice – border (11.475 km, D 27.5/120); those parts sum to 23.719 km against 23.344 km for the section, so one lot is kept with the official figure. Both parts opened together. No cost is recorded: the 22.334 billion CZK on cs.wikipedia has no price year and is not on the archived page it cites.",
+        "ro": "Construcția 0807, km 68,864–92,208, peste Munții Metaliferi (Krušné hory) până la granița de la Krásný Les/Breitenau, unde se leagă de A17 germană. Deschisă la 21 decembrie 2006 (publicația ŘSD, cs.wikipedia). Lucrările au început în noiembrie 2004 (tabelul secțiunilor; ŘSD: toamna 2004), tunelul Panenská fiind excavat din toamna 2003. Panenská, cel mai lung tunel de autostradă din Cehia, are tuburi de 2.167,7 și 2.115,7 m; tunelul Libouchec are tuburi de 535 și 454 m în descrierea sectorului din ŘSD (aceeași publicație indică în alt loc 504 și 520 m). profile.tunnelKm însumează tubul mai lung al fiecăruia (2,703 km). Textul de pe cs.wikipedia împarte sectorul în 0807/I Trmice – Knínice (12,244 km, D 28,0/100) și 0807/II Knínice – graniță (11,475 km, D 27,5/120); părțile însumează 23,719 km față de 23,344 km pentru sector, deci se păstrează un singur lot cu cifra oficială. Cele două părți au fost deschise împreună. Nu este înregistrat niciun cost: cele 22,334 miliarde CZK de pe cs.wikipedia nu au an de preț și nu apar pe pagina arhivată citată acolo."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d8",
+        "rsd-publikace-d8-2018",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "trmice-hranice"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wikipedia-d8",
+      "title": "Wikipedia (cs): Dálnice D8, Historie and Úseky dálnice (section table, per-section text)",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D8",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-0805",
+      "title": "ŘSD: Informační leták, D8 stavba 0805 Lovosice – Řehlovice (12/2016, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/122/leaflet/infoletak_d8-lovosice-rehlovice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "dalnice-silnice-d8-2008",
+      "title": "Lenny: Dálnice D8 Praha – Lovosice – Ústí nad Labem – státní hranice ČR/Německo (dalnice-silnice.cz, 2008, archived)",
+      "url": "https://web.archive.org/web/20080410220600/http://dalnice-silnice.cz/D8.htm",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-publikace-d8-2018",
+      "title": "ŘSD: Dálnice D8 (publikace 02/2018, per-section data sheets for stavby 0801–0807)",
+      "url": "https://web.archive.org/web/20230103131209/https://rsd.cz/documents/38144/80614/rsd-publikace-D8_02-2018.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: motorway ways ref=D8, one carriageway (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

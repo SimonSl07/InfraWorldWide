@@ -2,6 +2,10 @@ import { describe, it, expect } from "vitest";
 import { foldText, textMatches } from "./text";
 
 describe("foldText", () => {
+  it("folds the Turkish dotless i", () => {
+    expect(foldText("Özaltın İnşaat")).toBe("ozaltin insaat");
+  });
+
   it("lowercases", () => {
     expect(foldText("Bucharest")).toBe("bucharest");
   });

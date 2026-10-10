@@ -1,0 +1,292 @@
+{
+  "id": "cz-d49",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D49 motorway (Hulín – Fryšták – Vizovice)",
+    "ro": "Autostrada D49 (Hulín – Fryšták – Vizovice)"
+  },
+  "description": {
+    "en": "Motorway from the D1/D55 interchange at Hulín east towards Zlín and the Slovak border. ŘSD stavba 4901 Hulín – Fryšták (17.3 km) was started in 2008, stopped in 2010 after complaints and lawsuits and resumed in December 2021. Its first part to Holešov opened on 19 December 2024 and the rest to a temporary connection to road II/490 at Fryšták on 17 June 2026. Sections 4902.1, 4902.2, 4902.3 and 4903.1 (Fryšták – Lípa – Vizovice, 17.7 km in all) are in preparation, with the extent from the ŘSD leaflets drawn along the OpenStreetMap proposed line. The end of the route between Vizovice and the Slovak border was moved in autumn 2023 to the I/49 road class and is not drawn. Lot lengths are the ŘSD figures; the drawn centreline of the two 4901 parts is about 0.9 km shorter in total because it starts at the Hulín junction node, east of the D1.",
+    "ro": "Autostradă de la nodul D1/D55 de la Hulín spre est, către Zlín și granița cu Slovacia. Construcția ŘSD 4901 Hulín – Fryšták (17,3 km) a început în 2008, a fost oprită în 2010 din cauza contestațiilor și proceselor și reluată în decembrie 2021. Prima parte, până la Holešov, a fost deschisă la 19 decembrie 2024, iar restul, până la o legătură provizorie cu drumul II/490 la Fryšták, la 17 iunie 2026. Sectoarele 4902.1, 4902.2, 4902.3 și 4903.1 (Fryšták – Lípa – Vizovice, 17,7 km în total) sunt în pregătire, cu extinderea din fișele ŘSD desenată pe linia propusă din OpenStreetMap. Capătul traseului între Vizovice și granița slovacă a fost trecut în toamna 2023 în clasa drumurilor I/49 și nu este desenat. Lungimile loturilor sunt cele ale ŘSD; axul desenat al celor două părți 4901 este în total cu circa 0,9 km mai scurt, deoarece începe la nodul Hulín, la est de D1."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "hulin-holesov",
+      "name": {
+        "en": "Hulín – Holešov (4901, part 1)",
+        "ro": "Hulín – Holešov (4901, partea 1)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-09",
+        "opened": "2024-12-19"
+      },
+      "lengthKm": 9.8,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "contractors": [
+        { "name": "Skanska DS", "role": "builder" },
+        { "name": "Eurovia", "role": "builder" },
+        { "name": "Metrostav", "role": "builder" },
+        { "name": "DSP", "role": "builder" },
+        { "name": "Porr", "role": "builder" }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-09",
+          "sourceRef": "cs-wikipedia-d49"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010-07",
+          "sourceRef": "cs-wikipedia-d49"
+        },
+        {
+          "kind": "resumed",
+          "date": "2021-12",
+          "sourceRef": "cs-wikipedia-d49"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-19",
+          "sourceRef": "rsd-leaflet-4901-part2"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 4901, first part, from MÚK Hulín to MÚK Holešov. The 2026 leaflet gives its length as cca 9.8 km; the 12/2024 leaflet says 9.5 km in one place and cca 9.8 km in another. Construction began in September 2008, stopped in July 2010 and resumed in December 2021. The contractor is the Sdružení Hulín–Fryšták joint venture (Skanska DS, Eurovia, Metrostav, DSP, Porr). The contract price of the whole stavba 4901, both parts together, is 5 959 599 028 Kč excluding VAT (contract from 2008); it is not split between the parts, so no lot value is recorded. The drawn centreline starts at the Hulín junction node and is about 1.3 km shorter than the sourced length.",
+        "ro": "Construcția ŘSD 4901, prima parte, de la MÚK Hulín la MÚK Holešov. Fișa din 2026 dă lungimea de cca 9,8 km; fișa din 12/2024 indică 9,5 km într-un loc și cca 9,8 km în altul. Lucrările au început în septembrie 2008, au fost oprite în iulie 2010 și reluate în decembrie 2021. Constructorul este asocierea Sdružení Hulín–Fryšták (Skanska DS, Eurovia, Metrostav, DSP, Porr). Prețul contractului pentru întreaga construcție 4901, ambele părți la un loc, este 5 959 599 028 Kč fără TVA (contract din 2008); nu este împărțit între părți, deci nu se înregistrează valoare pe lot. Axul desenat începe la nodul Hulín și este cu circa 1,3 km mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-4901-part1",
+        "rsd-leaflet-4901-part2",
+        "cs-wikipedia-d49",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hulin-holesov"
+    },
+    {
+      "id": "holesov-frystak",
+      "name": {
+        "en": "Holešov – Fryšták (4901, part 2)",
+        "ro": "Holešov – Fryšták (4901, partea 2)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-09",
+        "opened": "2026-06-17"
+      },
+      "lengthKm": 7.5,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "contractors": [
+        { "name": "Skanska DS", "role": "builder" },
+        { "name": "Eurovia", "role": "builder" },
+        { "name": "Metrostav", "role": "builder" },
+        { "name": "DSP", "role": "builder" },
+        { "name": "Porr", "role": "builder" }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-09",
+          "sourceRef": "cs-wikipedia-d49"
+        },
+        {
+          "kind": "suspended",
+          "date": "2010-07",
+          "sourceRef": "cs-wikipedia-d49"
+        },
+        {
+          "kind": "resumed",
+          "date": "2021-12",
+          "sourceRef": "cs-wikipedia-d49"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-06-17",
+          "sourceRef": "zdopravy-d49-opening"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 4901, second part, 7.5 km from MÚK Holešov to a temporary connection to II/490 south of Fryšták. Opened on 17 June 2026 for early use under a decision of the Dopravní a energetický stavební úřad; the ceremonial opening was planned for 20 June. The May 2026 leaflet had forecast 06/2026 and recorded the building permit for 11 structures being annulled in July 2025 and reissued on 20 March 2026. The contractor is the Sdružení Hulín–Fryšták joint venture. The contract price of the whole stavba 4901 is 5 959 599 028 Kč excluding VAT (contract from 2008) and is not split between the parts; zdopravy.cz gave about 6.5 billion Kč excluding VAT for this section, which is not recorded as a lot value because the basis is not stated. The 2008 construction start is for the whole stavba.",
+        "ro": "Construcția ŘSD 4901, partea a doua, 7,5 km de la MÚK Holešov la o legătură provizorie cu II/490 la sud de Fryšták. Deschisă la 17 iunie 2026 pentru utilizare anticipată, printr-o decizie a Dopravní a energetický stavební úřad; deschiderea festivă era planificată pentru 20 iunie. Fișa din mai 2026 prevedea 06/2026 și consemna anularea în iulie 2025 a autorizației de construire pentru 11 obiecte, emisă din nou la 20 martie 2026. Constructorul este asocierea Sdružení Hulín–Fryšták. Prețul contractului pentru întreaga construcție 4901 este 5 959 599 028 Kč fără TVA (contract din 2008) și nu este împărțit între părți; zdopravy.cz a indicat circa 6,5 miliarde Kč fără TVA pentru acest sector, care nu este înregistrat ca valoare de lot deoarece baza nu este precizată. Începutul din 2008 este pentru întreaga construcție."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-4901-part2",
+        "zdopravy-d49-opening",
+        "cs-wikipedia-d49",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "holesov-frystak"
+    },
+    {
+      "id": "frystak-lipa-1",
+      "name": {
+        "en": "Fryšták – Lípa, stage 1 (4902.1)",
+        "ro": "Fryšták – Lípa, etapa 1 (4902.1)"
+      },
+      "status": "planned",
+      "lengthKm": 1.7,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "note": {
+        "en": "ŘSD stavba 4902.1 from km 17.300 behind the Dolní Ves bridge to km 19.000: the permanent MÚK Fryšták and the 3.366 km Zlín feeder (relocated II/490). Category D 25.5/120. The ŘSD stavby dataset (export of 2026-05-05) lists it as in preparation, with construction planned for 2029–2032 (years only). Drawn along the OpenStreetMap proposed line, cut at the leaflet chainage from the end of stavba 4901.",
+        "ro": "Construcția ŘSD 4902.1 de la km 17,300, după podul Dolní Ves, la km 19,000: MÚK Fryšták definitiv și legătura Zlín de 3,366 km (II/490 relocat). Categoria D 25,5/120. Setul de date ŘSD (export din 2026-05-05) o indică în pregătire, cu construcția planificată pentru 2029–2032 (doar ani). Desenată pe linia propusă din OpenStreetMap, tăiată la kilometrajul din fișă de la capătul construcției 4901."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-49021",
+        "rsd-stavby-dataset",
+        "cs-wikipedia-d49",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "frystak-lipa-1"
+    },
+    {
+      "id": "frystak-lipa-2",
+      "name": {
+        "en": "Fryšták – Slušovice, stage 2 (4902.2)",
+        "ro": "Fryšták – Slušovice, etapa 2 (4902.2)"
+      },
+      "status": "planned",
+      "lengthKm": 9.3,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "note": {
+        "en": "ŘSD stavba 4902.2 from km 19.000 behind MÚK Fryšták to km 28.300, where it ends provisionally at a roundabout on II/491 before Slušovice. Category D 25.5/120. After it, through traffic towards Vizovice is to use II/491. The ŘSD stavby dataset lists it as in preparation, with construction planned for 2029–2032 (years only). Drawn along the OpenStreetMap proposed line, cut at the leaflet chainage.",
+        "ro": "Construcția ŘSD 4902.2 de la km 19,000, după MÚK Fryšták, la km 28,300, unde se oprește provizoriu la un sens giratoriu pe II/491 înainte de Slušovice. Categoria D 25,5/120. După ea, traficul de tranzit spre Vizovice va folosi II/491. Setul de date ŘSD o indică în pregătire, cu construcția planificată pentru 2029–2032 (doar ani). Desenată pe linia propusă din OpenStreetMap, tăiată la kilometrajul din fișă."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-49022",
+        "rsd-stavby-dataset",
+        "cs-wikipedia-d49",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "frystak-lipa-2"
+    },
+    {
+      "id": "frystak-lipa-3",
+      "name": {
+        "en": "Slušovice – Lípa, stage 3 (4902.3)",
+        "ro": "Slušovice – Lípa, etapa 3 (4902.3)"
+      },
+      "status": "planned",
+      "lengthKm": 3.7,
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "ŘSD stavba 4902.3 from km 28.300 to km 32.000, with MÚK Lípa 1 and Lípa 2, viaducts over the Dřevnice (734 m) and Lutoninka (815 m and 853 m) and a provisional connection to I/49. Category D 26.0/130. The leaflet says preparation is not continuing for now because the route beyond Lípa is unclear. The ŘSD stavby dataset lists construction planned for 2031–2034 (years only). Drawn along the OpenStreetMap proposed line, cut at the leaflet chainage.",
+        "ro": "Construcția ŘSD 4902.3 de la km 28,300 la km 32,000, cu MÚK Lípa 1 și Lípa 2, viaducte peste Dřevnice (734 m) și Lutoninka (815 m și 853 m) și o legătură provizorie cu I/49. Categoria D 26,0/130. Fișa spune că pregătirea nu continuă deocamdată, deoarece traseul dincolo de Lípa este neclar. Setul de date ŘSD indică construcția planificată pentru 2031–2034 (doar ani). Desenată pe linia propusă din OpenStreetMap, tăiată la kilometrajul din fișă."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-49023",
+        "rsd-stavby-dataset",
+        "cs-wikipedia-d49",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "frystak-lipa-3"
+    },
+    {
+      "id": "lipa-vizovice",
+      "name": {
+        "en": "Lípa – Vizovice (4903.1)",
+        "ro": "Lípa – Vizovice (4903.1)"
+      },
+      "status": "planned",
+      "lengthKm": 3.0,
+      "profile": {
+        "designSpeedKmh": 130
+      },
+      "note": {
+        "en": "ŘSD stavba 4903.1 from km 32.000 to km 35.000, with a 630 m gallery at Zádveřice and MÚK Vizovice. Category D 26.0/130. It replaces a stretch of the two-lane I/49. The ŘSD stavby dataset lists construction planned for 2033–2036 (years only). Drawn along the OpenStreetMap proposed line, cut at the leaflet chainage; the line ends at the Vizovice junction.",
+        "ro": "Construcția ŘSD 4903.1 de la km 32,000 la km 35,000, cu o galerie de 630 m la Zádveřice și MÚK Vizovice. Categoria D 26,0/130. Înlocuiește o porțiune din I/49 cu două benzi. Setul de date ŘSD indică construcția planificată pentru 2033–2036 (doar ani). Desenată pe linia propusă din OpenStreetMap, tăiată la kilometrajul din fișă; linia se termină la nodul Vizovice."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-49031",
+        "rsd-stavby-dataset",
+        "cs-wikipedia-d49",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lipa-vizovice"
+    }
+  ],
+  "sources": [
+    {
+      "id": "rsd-leaflet-4901-part1",
+      "title": "ŘSD: Informační leták, D49 stavba 4901 Hulín – Fryšták (12/2024, 1. část uvedena do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/84/leaflet/infoletak_d49-hulin-frystak.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-4901-part2",
+      "title": "ŘSD: Informační leták, D49 stavba 4901 Hulín – Fryšták, 2. část (05/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/731/leaflet/infoletak_d49-hulin-frystak-2-cast-A5.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-49021",
+      "title": "ŘSD: Informační leták, D49 4902.1 Fryšták – Lípa, 1. etapa",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/440/leaflet/infoletak_d49-frystak-lipa-1-etapa.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-49022",
+      "title": "ŘSD: Informační leták, D49 4902.2 Fryšták – Lípa, 2. etapa",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/442/leaflet/infoletak_d49-frystak-lipa-2-etapa.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-49023",
+      "title": "ŘSD: Informační leták, D49 4902.3 Fryšták – Lípa, 3. etapa",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/443/leaflet/infoletak_d49-frystak-lipa-3-etapa.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-49031",
+      "title": "ŘSD: Informační leták, D49 4903.1 Lípa – Vizovice",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/444/leaflet/infoletak_d49-lipa-vizovice.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-stavby-dataset",
+      "title": "ŘSD: dataset staveb (stavby-linestring, export 2026-05-05), D49 4902.1, 4902.2, 4902.3 and 4903.1 as V přípravě",
+      "url": "https://apdos-v2.creativesound.cz/static/stavby-linestring-v2025.json",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zdopravy-d49-opening",
+      "title": "Zdopravy.cz: 18 let čekání dovršeno. ŘSD otevřelo zbývající část „začarovaného“ úseku dálnice D49 Hulín – Fryšták (17. 6. 2026)",
+      "url": "https://zdopravy.cz/18-let-cekani-dovrseno-rsd-otevrelo-zbyvajici-cast-zacarovaneho-useku-d49-hulin-frystak-285929/",
+      "publisher": "Zdopravy.cz",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "cs-wikipedia-d49",
+      "title": "Wikipedia (cs): Dálnice D49, Výstavba and Přehled úseků",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D49",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
