@@ -1,0 +1,415 @@
+{
+  "id": "sk-r3",
+  "country": "sk",
+  "category": "highway",
+  "name": {
+    "en": "R3 expressway (Orava and Turiec sections)",
+    "ro": "Drumul expres R3 (sectoarele Orava și Turiec)"
+  },
+  "description": {
+    "en": "Expressway planned from the Polish border at Trstená through Dolný Kubín to the D1 and, in two further parts, from Martin to Ráztočno and from Budča to the Hungarian border near Šahy. sk.wikipedia counts 24.2 km in operation, all of it one carriageway: the Trstená bypass (2010), Tvrdošín – Nižná (2025), Oravský Podzámok – Horná Lehota (2007) and the detached Horná Štubňa bypass (2010). Nižná – Dlhá nad Oravou and Dlhá nad Oravou – Sedliacka Dubová are at building-permit documentation stage (NDS); other sections are at EIA or earlier stages. Only these four built sections are recorded as lots.",
+    "ro": "Drum expres planificat de la frontiera cu Polonia la Trstená, prin Dolný Kubín, până la D1 și, în alte două părți, de la Martin la Ráztočno și de la Budča la frontiera cu Ungaria lângă Šahy. sk.wikipedia numără 24,2 km în exploatare, toți cu o singură cale de rulare: ocolitoarea Trstená (2010), Tvrdošín – Nižná (2025), Oravský Podzámok – Horná Lehota (2007) și ocolitoarea izolată Horná Štubňa (2010). Nižná – Dlhá nad Oravou și Dlhá nad Oravou – Sedliacka Dubová sunt în etapa documentației pentru autorizația de construire (NDS); celelalte sectoare sunt în etapa EIA sau mai devreme. Doar aceste patru sectoare construite sunt înregistrate ca loturi."
+  },
+  "operator": "sk-nds",
+  "lots": [
+    {
+      "id": "trstena-bypass",
+      "name": {
+        "en": "Trstená bypass",
+        "ro": "Ocolitoarea Trstená"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-03-31",
+        "opened": "2010-10-29"
+      },
+      "lengthKm": 6.716,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 14
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-03-31",
+          "sourceRef": "hd-2008"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-10-29",
+          "sourceRef": "hd-2010",
+          "note": {
+            "en": "Opened in half profile (one carriageway).",
+            "ro": "Deschis în profil parțial (o singură cale de rulare)."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (sk.wikipedia).",
+            "ro": "Buget de stat (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "VÁHOSTAV – SK, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Inžinierske stavby, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First section of the R3, from the temporary connection to the I/59 north of Trstená past the Trstená exit to the Tvrdošín exit. One carriageway only. historiadialnic.sk gives 6.716 km (right carriageway) and a start on 31 March 2008; sk.wikipedia gives 7.2 km and says construction started in April 2008 and ran for 30 months. 14 bridges. The drawn line is 6.45 km, cut at the north end of the trunk ways with ref R3 and at the Tvrdošín junction node.",
+        "ro": "Primul sector al R3, de la racordul provizoriu cu I/59 la nord de Trstená, prin ieșirea Trstená, până la ieșirea Tvrdošín. Doar o singură cale de rulare. historiadialnic.sk dă 6,716 km (calea dreaptă) și un început la 31 martie 2008; sk.wikipedia dă 7,2 km și spune că lucrările au început în aprilie 2008 și au durat 30 de luni. 14 poduri. Linia desenată are 6,45 km, tăiată la capătul nordic al drumurilor trunk cu ref R3 și la nodul Tvrdošín."
+      },
+      "sourceRefs": [
+        "hd-2008",
+        "hd-2010",
+        "wiki-r3-sk",
+        "osm"
+      ],
+      "geometryRef": "trstena-bypass"
+    },
+    {
+      "id": "tvrdosin-nizna",
+      "name": {
+        "en": "Tvrdošín – Nižná",
+        "ro": "Tvrdošín – Nižná"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-02-25",
+        "constructionStart": "2021-03",
+        "opened": "2025-07-21"
+      },
+      "lengthKm": 4.4,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 8
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-07-24",
+          "sourceRef": "nds-tender-2017"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021-02-25",
+          "sourceRef": "nds-start-2021",
+          "note": {
+            "en": "Works contract signed.",
+            "ro": "Contract de execuție semnat."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-03",
+          "sourceRef": "nds-tech-2023"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-07-21",
+          "sourceRef": "nds-opened-2025",
+          "note": {
+            "en": "Opened in half profile (one carriageway), with 260 m in full profile at the Nižná end (sk.wikipedia).",
+            "ro": "Deschis în profil parțial (o singură cale de rulare), cu 260 m în profil complet la capătul Nižná (sk.wikipedia)."
+          }
+        }
+      ],
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "date": "2017-07-24",
+            "sourceRef": "nds-eval-2019",
+            "money": {
+              "amount": 74.979572,
+              "currency": "EUR",
+              "year": 2017,
+              "scope": "works",
+              "note": "Expected value of the contract at tender launch. Excluding VAT."
+            }
+          },
+          {
+            "kind": "award",
+            "date": "2021-02-25",
+            "sourceRef": "nds-start-2021",
+            "money": {
+              "amount": 62,
+              "currency": "EUR",
+              "year": 2021,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Published only as 'vyše 62 miliónov eur' (the page says over EUR 62 million), so 62 is a lower bound. VAT basis not stated."
+            }
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Operational Programme Integrated Infrastructure and Program Slovensko (NDS, July 2025). The 2021 signing release gave the state budget.",
+            "ro": "Programul Operațional Infrastructură Integrată și Program Slovensko (NDS, iulie 2025). Comunicatul de la semnarea din 2021 indica bugetul de stat."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hochtief SK, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "PORR a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Hydroekol Dolný Kubín s.r.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 27,
+        "value": {
+          "amount": 62,
+          "currency": "EUR",
+          "year": 2021,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Published only as 'vyše 62 miliónov eur' (the page says over EUR 62 million), so 62 is a lower bound. VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Bypass of Tvrdošín from the Tvrdošín exit on the Trstená bypass to the Nižná junction, on the left bank of the Orava. Built as one carriageway (category R 24.5/100), with 260 m in full profile from km 3.900 to km 4.160. NDS counts 5.6 km including 480 m of junction ramps and a 697 m feeder; the 4.4 km is the R3 route itself. Tender launched on 24 July 2017 at an expected EUR 74.98 million excluding VAT. A first evaluation on 2 December 2019 named a Todini-led consortium at EUR 59.40 million excluding VAT, after objections; the contract was signed with Hochtief SK, Porr and Hydroekol Dolný Kubín on 25 February 2021 (the 20 November 2020 release named Alpine Slovakia instead of Porr). Contract duration converted from days: 822 days. NDS first expected opening in 2023; on 23 March 2023 it said harder rock, a pyrotechnic survey and gas pipeline relocations would move completion and the final price. The drawn line runs 4.47 km to the end of the ways with ref R3 before the proposed continuation.",
+        "ro": "Ocolitoarea Tvrdošín, de la ieșirea Tvrdošín de pe ocolitoarea Trstená până la nodul Nižná, pe malul stâng al râului Orava. Construită cu o singură cale de rulare (categoria R 24,5/100), cu 260 m în profil complet de la km 3,900 la km 4,160. NDS numără 5,6 km, inclusiv 480 m de rampe de nod și un racord de 697 m; cei 4,4 km sunt traseul R3 propriu-zis. Licitația a fost lansată la 24 iulie 2017 la o valoare estimată de 74,98 milioane EUR fără TVA. O primă evaluare din 2 decembrie 2019 a desemnat un consorțiu condus de Todini la 59,40 milioane EUR fără TVA, după contestații; contractul a fost semnat cu Hochtief SK, Porr și Hydroekol Dolný Kubín la 25 februarie 2021 (comunicatul din 20 noiembrie 2020 numea Alpine Slovakia în locul Porr). Durata contractului convertită din zile: 822 de zile. NDS a așteptat inițial deschiderea în 2023; la 23 martie 2023 a anunțat că roca mai dură, cercetarea pirotehnică și relocările de conducte de gaz vor muta finalizarea și prețul final. Linia desenată are 4,47 km, până la capătul drumurilor cu ref R3 înaintea continuării propuse."
+      },
+      "sourceRefs": [
+        "nds-tender-2017",
+        "nds-eval-2019",
+        "nds-winner-2020",
+        "nds-start-2021",
+        "nds-tech-2023",
+        "nds-opened-2025",
+        "wiki-r3-sk",
+        "osm"
+      ],
+      "geometryRef": "tvrdosin-nizna"
+    },
+    {
+      "id": "oravsky-podzamok-horna-lehota",
+      "name": {
+        "en": "Oravský Podzámok – Horná Lehota",
+        "ro": "Oravský Podzámok – Horná Lehota"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-11",
+        "opened": "2007-11-26"
+      },
+      "lengthKm": 6.442,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 9
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-11",
+          "sourceRef": "hd-2004"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-11-26",
+          "sourceRef": "hd-2007",
+          "note": {
+            "en": "Opened in half profile (one carriageway).",
+            "ro": "Deschis în profil parțial (o singură cale de rulare)."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (sk.wikipedia).",
+            "ro": "Buget de stat (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "VÁHOSTAV – SK, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Max Bögl",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Bypass between two temporary connections to the I/59, west and east. One carriageway, category R 11.5/100, speed limit 100 km/h, signed as I/59A until it becomes part of the R3. 9 bridges, the main one 750 m long over the Orava and the railway. historiadialnic.sk gives 6.442 km (right carriageway), a start in November 2004 and opening on 26 November 2007. The drawn line is 5.61 km, from the first to the last way with ref R3 as trunk road, and omits the connection roads at both ends.",
+        "ro": "Ocolitoare între două racorduri provizorii la I/59, vest și est. O singură cale de rulare, categoria R 11,5/100, limită de viteză de 100 km/h, marcată ca I/59A până când va deveni parte din R3. 9 poduri, cel principal de 750 m peste Orava și calea ferată. historiadialnic.sk dă 6,442 km (calea dreaptă), un început în noiembrie 2004 și deschiderea la 26 noiembrie 2007. Linia desenată are 5,61 km, de la prima la ultima cale cu ref R3 ca drum trunk, și omite drumurile de racord de la ambele capete."
+      },
+      "sourceRefs": [
+        "hd-2004",
+        "hd-2007",
+        "wiki-r3-sk",
+        "osm"
+      ],
+      "geometryRef": "oravsky-podzamok-horna-lehota"
+    },
+    {
+      "id": "horna-stubna-bypass",
+      "name": {
+        "en": "Horná Štubňa bypass",
+        "ro": "Ocolitoarea Horná Štubňa"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-12-17",
+        "opened": "2010-11-23"
+      },
+      "lengthKm": 4.321,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 6
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-12-17",
+          "sourceRef": "hd-2008"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-11-23",
+          "sourceRef": "hd-2010",
+          "note": {
+            "en": "Opened in half profile (one carriageway).",
+            "ro": "Deschis în profil parțial (o singură cale de rulare)."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State budget (sk.wikipedia).",
+            "ro": "Buget de stat (sk.wikipedia)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska, a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Bypass of Horná Štubňa on the I/65 between the Kremnické Bane and Šturec passes, with a temporary connection to the I/65 at each end. One carriageway only, a detached part of the R3 with no link to the other sections. 6 bridges. historiadialnic.sk gives 4.321 km (left carriageway), a start on 17 December 2008 and opening on 23 November 2010; the sk.wikipedia section table gives 4.7 km. The drawn line is 3.99 km, from the first to the last way with ref R3 as trunk road, and omits the connection roads at both ends.",
+        "ro": "Ocolitoarea Horná Štubňa pe I/65, între pasurile Kremnické Bane și Šturec, cu un racord provizoriu la I/65 la fiecare capăt. Doar o singură cale de rulare, un fragment izolat al R3 fără legătură cu celelalte sectoare. 6 poduri. historiadialnic.sk dă 4,321 km (calea stângă), un început la 17 decembrie 2008 și deschiderea la 23 noiembrie 2010; tabelul de sectoare sk.wikipedia dă 4,7 km. Linia desenată are 3,99 km, de la prima la ultima cale cu ref R3 ca drum trunk, și omite drumurile de racord de la ambele capete."
+      },
+      "sourceRefs": [
+        "hd-2008",
+        "hd-2010",
+        "wiki-r3-sk",
+        "osm"
+      ],
+      "geometryRef": "horna-stubna-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wiki-r3-sk",
+      "title": "Wikipedia (sk): Rýchlostná cesta R3 (Slovensko), section table and 'Úseky' prose",
+      "url": "https://sk.wikipedia.org/wiki/R%C3%BDchlostn%C3%A1_cesta_R3_(Slovensko)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2004",
+      "title": "História diaľnic: História 2004 (R3 Horná Lehota – Oravský Podzámok, right carriageway 6.442 km, start November 2004)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2004/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2007",
+      "title": "História diaľnic: História 2007 (R3 Horná Lehota – Oravský Podzámok opened 26 November 2007)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2007/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2008",
+      "title": "História diaľnic: História 2008 (starts of R3 Trstená bypass 31 March 2008 and Horná Štubňa bypass 17 December 2008)",
+      "url": "https://historiadialnic.sk/historia-1999-2008/historia-2008/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hd-2010",
+      "title": "História diaľnic: História 2010 (openings of R3 Trstená bypass 29 October 2010 and Horná Štubňa bypass 23 November 2010)",
+      "url": "https://historiadialnic.sk/historia-2009-2018/historia-2010/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-tender-2017",
+      "title": "NDS: Vypísali sme súťaž na úsek R3 Tvrdošín – Nižná (24 July 2017)",
+      "url": "https://ndsas.sk/press/spravy/vypisali-sme-sutaz-na-usek-r3-tvrdosin-nizna",
+      "publisher": "Národná diaľničná spoločnosť",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-eval-2019",
+      "title": "NDS: NDS vyhodnotila ponuky na úsek R3 Tvrdošín – Nižná (2 December 2019)",
+      "url": "https://ndsas.sk/press/spravy/nds-vyhodnotila-ponuky-na-usek-r3-tvrdosin-nizna",
+      "publisher": "Národná diaľničná spoločnosť",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-winner-2020",
+      "title": "NDS: R3 na Orave: Zakrátko podpíšeme zmluvu na jej výstavbu (20 November 2020)",
+      "url": "https://ndsas.sk/press/spravy/r3-na-orave-zakratko-podpiseme-zmluvu-na-jej-vystavbu",
+      "publisher": "Národná diaľničná spoločnosť",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-start-2021",
+      "title": "NDS: Štartuje výstavba R3 na Orave (25 February 2021)",
+      "url": "https://ndsas.sk/press/spravy/startuje-vystavba-r3-na-orave",
+      "publisher": "Národná diaľničná spoločnosť",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-tech-2023",
+      "title": "NDS: Stavba R3 Tvrdošín – Nižná si vyžiada úpravu technológie (23 March 2023)",
+      "url": "https://ndsas.sk/press/spravy/stavba-r3-tvrdosin-nizna-si-vyziada-upravu-technologie",
+      "publisher": "Národná diaľničná spoločnosť",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nds-opened-2025",
+      "title": "NDS: Tvrdošín získal rýchlostný obchvat (21 July 2025)",
+      "url": "https://ndsas.sk/press/spravy/tvrdosin-ziskal-rychlostny-obchvat",
+      "publisher": "Národná diaľničná spoločnosť",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): ways with ref R3, via Overpass API",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "id": "sk-rail-zilina-kosice",
+  "country": "sk",
+  "category": "railway",
+  "name": {
+    "en": "Žilina – Košice railway modernisation (160 km/h)",
+    "ro": "Modernizarea căii ferate Žilina – Košice (160 km/h)"
+  },
+  "description": {
+    "en": "Modernisation of the Žilina – Košice main line (ŽSR line 180) to 160 km/h on the Rhine–Danube corridor. ŽSR runs it as separate construction projects. Three have a project page with an extent: Poprad – Lučivná (handed over in 2024), Poprad-Tatry – Vydrník (stage A1, with the Španí Háj tunnel) and Spišská Nová Ves – Spišské Tomášovce (contractor tender running). Contract prices, grant budgets and spending to date are kept as separate figures.",
+    "ro": "Modernizarea magistralei Žilina – Košice (linia ŽSR 180) la 160 km/h, pe coridorul Rin–Dunăre. ŽSR o derulează ca proiecte de construcție separate. Trei au o pagină de proiect cu tronsonul indicat: Poprad – Lučivná (predat în 2024), Poprad-Tatry – Vydrník (etapa A1, cu tunelul Španí Háj) și Spišská Nová Ves – Spišské Tomášovce (licitația pentru constructor este în curs). Prețurile contractelor, bugetele grantului și cheltuielile până în prezent sunt păstrate ca cifre separate."
+  },
+  "operator": "sk-zsr",
+  "corridors": [
+    "ten-t-rhine-danube"
+  ],
+  "lots": [
+    {
+      "id": "poprad-lucivna",
+      "name": {
+        "en": "Poprad – Lučivná",
+        "ro": "Poprad – Lučivná"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-06-11",
+        "opened": "2024-08-28"
+      },
+      "lengthKm": 12.868,
+      "cost": {
+        "actual": {
+          "amount": 124.75,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "Financial performance at 31 December 2025 on a project page marked final: EU 77.42 M, state budget co-financing 18.05 M, other state budget expenses 22.97 M, own resources 6.31 M. VAT basis and price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 97.48,
+              "currency": "EUR",
+              "year": 2020,
+              "scope": "works",
+              "note": "VAT basis not stated on the page."
+            },
+            "date": "2020-06-11",
+            "sourceRef": "zsr-poprad-lucivna"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-06-11",
+          "note": {
+            "en": "Works contract signed with Združenie Tatry 2017 (lead member TSS GRADE).",
+            "ro": "Contract de lucrări semnat cu Združenie Tatry 2017 (lider TSS GRADE)."
+          },
+          "sourceRef": "zsr-poprad-lucivna"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-08-28",
+          "note": {
+            "en": "Project closed with the handover protocol.",
+            "ro": "Proiect închis prin procesul-verbal de predare."
+          },
+          "sourceRef": "zsr-poprad-lucivna"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.7976,
+          "amount": {
+            "amount": 77.62,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Connecting Europe Facility grant agreement NEA/CEF/TRAN/M2015/1138561, signed 15 and 17 November 2016: EUR 77.62 million from the EU of a EUR 97.32 million total",
+            "ro": "Acord de grant Mecanismul pentru Interconectarea Europei NEA/CEF/TRAN/M2015/1138561, semnat la 15 și 17 noiembrie 2016: 77,62 milioane EUR din partea UE dintr-un total de 97,32 milioane EUR"
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 19.7,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "State budget share of the grant agreement: EUR 19.70 million",
+            "ro": "Cota din bugetul de stat a acordului de grant: 19,70 milioane EUR"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie Tatry 2017 (lead member TSS GRADE)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 97.48,
+          "currency": "EUR",
+          "year": 2020,
+          "scope": "works",
+          "note": "VAT basis not stated on the page."
+        }
+      },
+      "note": {
+        "en": "Poprad – Štrba (Lučivná), 12.868 km in its current state, in three parts: Poprad – Svit, Svit station and Svit – Štrba. Works contract signed 11 June 2020 for EUR 97,482,977.95; the page gives 11 June 2020 as the start of the main project activities, so no construction start is recorded. The planned end was 7 April 2023. The project was closed by a handover protocol on 28 August 2024, recorded here as the opening date. The grant budget (EUR 97.32 million), the contract price and the EUR 124.75 million spent are different figures. The drawn line runs from the Lučivná halt to Poprad-Tatry (11.1 km measured from OpenStreetMap), about 1.8 km short of the sourced length because the end of the works west of the halt is not given.",
+        "ro": "Poprad – Štrba (Lučivná), 12,868 km în starea actuală, în trei părți: Poprad – Svit, stația Svit și Svit – Štrba. Contract de lucrări semnat la 11 iunie 2020 pentru 97.482.977,95 EUR; pagina indică 11 iunie 2020 ca început al activităților principale ale proiectului, deci nu se înregistrează o dată de începere a construcției. Sfârșitul planificat era 7 aprilie 2023. Proiectul a fost închis prin procesul-verbal de predare din 28 august 2024, înregistrat aici ca dată a deschiderii. Bugetul grantului (97,32 milioane EUR), prețul contractului și cele 124,75 milioane EUR cheltuite sunt cifre diferite. Linia desenată merge de la halta Lučivná la Poprad-Tatry (11,1 km măsurați din OpenStreetMap), cu circa 1,8 km mai scurtă decât lungimea din sursă, deoarece capătul lucrărilor la vest de haltă nu este indicat."
+      },
+      "sourceRefs": [
+        "zsr-poprad-lucivna",
+        "osm"
+      ],
+      "geometryRef": "poprad-lucivna"
+    },
+    {
+      "id": "poprad-tatry-vydrnik",
+      "name": {
+        "en": "Poprad-Tatry – Vydrník (stage A1)",
+        "ro": "Poprad-Tatry – Vydrník (etapa A1)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-12",
+        "expectedOpening": "2027-11"
+      },
+      "lengthKm": 13.14,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 368.9,
+              "currency": "EUR",
+              "year": 2023,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2023-12",
+            "sourceRef": "sita-contract-2023"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-12",
+          "note": {
+            "en": "Contract with Združenie pod Dubinou announced by ŽSR on Friday 22 December 2023.",
+            "ro": "Contract cu Združenie pod Dubinou anunțat de ŽSR vineri, 22 decembrie 2023."
+          },
+          "sourceRef": "sita-contract-2023"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85,
+          "amount": {
+            "amount": 372.58,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Program Slovensko 2021–2027: grant agreement Z401301B315, effective 21 December 2024 (decision of 20 November 2024), EUR 438.33 million in total costs, of which EUR 372.58 million from the EU",
+            "ro": "Program Slovensko 2021–2027: contract de grant Z401301B315, în vigoare din 21 decembrie 2024 (decizia din 20 noiembrie 2024), 438,33 milioane EUR costuri totale, din care 372,58 milioane EUR din partea UE"
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 65.75,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "State budget co-financing under the grant agreement: EUR 65.75 million",
+            "ro": "Cofinanțare din bugetul de stat în contractul de grant: 65,75 milioane EUR"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Združenie pod Dubinou (TSS GRADE, Doprastav)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 33,
+        "value": {
+          "amount": 368.9,
+          "currency": "EUR",
+          "year": 2023,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "Stage A1 of the Poprad-Tatry (outside) – Krompachy project, from Poprad-Tatry to Vydrník, with the 711 m Španí Háj twin-track tunnel (692 m mined, 39 m open cut). Works contract worth almost EUR 369 million excluding VAT (EUR 368.9 million), 1,004 days from handover of the first site (contract duration converted from days: 1,004 days). ŽSR gives March 2025 as the planned start and November 2027 as the planned end of the main activities. At 31 December 2025 preparatory and construction works were running, and boring of the tunnel began on 22 July 2025. Spending to 31 December 2025 was EUR 37.42 million. The page gives no extent in kilometres. Length measured from OpenStreetMap geometry. The grant budget is not the contract price.",
+        "ro": "Etapa A1 a proiectului Poprad-Tatry (exclusiv) – Krompachy, de la Poprad-Tatry la Vydrník, cu tunelul Španí Háj cu două căi de 711 m (692 m excavați subteran, 39 m în săpătură deschisă). Contract de lucrări de aproape 369 milioane EUR fără TVA (368,9 milioane EUR), 1.004 zile de la predarea primului amplasament (durata contractului convertită din zile: 1.004 zile). ŽSR indică martie 2025 ca început planificat și noiembrie 2027 ca sfârșit planificat al activităților principale. La 31 decembrie 2025 se desfășurau lucrări pregătitoare și de construcție, iar excavarea tunelului a început la 22 iulie 2025. Cheltuielile până la 31 decembrie 2025 au fost de 37,42 milioane EUR. Pagina nu indică tronsonul în kilometri. Lungime măsurată din geometria OpenStreetMap. Bugetul grantului nu este prețul contractului."
+      },
+      "sourceRefs": [
+        "zsr-poprad-vydrnik",
+        "sita-contract-2023",
+        "sita-tunnel-2025",
+        "osm"
+      ],
+      "geometryRef": "poprad-tatry-vydrnik"
+    },
+    {
+      "id": "spisska-nova-ves-spisske-tomasovce",
+      "name": {
+        "en": "Spišská Nová Ves – Spišské Tomášovce",
+        "ro": "Spišská Nová Ves – Spišské Tomášovce"
+      },
+      "status": "tendered",
+      "dates": {
+        "expectedOpening": "2028-06"
+      },
+      "lengthKm": 4.9,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85,
+          "amount": {
+            "amount": 96.86,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Grant agreement 101233060 – 24-SK-TC-MRLVSNV, signed 16 October 2025: EUR 113.95 million in total costs, of which EUR 96.86 million from the EU",
+            "ro": "Acord de grant 101233060 – 24-SK-TC-MRLVSNV, semnat la 16 octombrie 2025: 113,95 milioane EUR costuri totale, din care 96,86 milioane EUR din partea UE"
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 17.09,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "State budget co-financing under the grant agreement: EUR 17.09 million",
+            "ro": "Cofinanțare din bugetul de stat în acordul de grant: 17,09 milioane EUR"
+          }
+        }
+      ],
+      "note": {
+        "en": "Modernisation of 4.9 km of double track between Spišská Nová Ves (outside the station) and the Spišské Tomášovce passing loop, with the Smižany halt, new bridges and retaining walls, and the signalling rebuild at Poprad-Tatry station. ŽSR gives January 2025 as the start of the main activities and June 2028 as the planned end. At 30 June 2026 the procurement of the works contractor was running, no contract was listed and nothing had been spent. The grant budget is not a cost. The drawn line covers the 4.9 km counted back from Spišská Nová Ves station along the existing track, because the loop's position is not given. The Spišské Tomášovce halt in OpenStreetMap lies about 1.7 km further west, so the boundary is placed by the sourced length, not at a mapped point.",
+        "ro": "Modernizarea a 4,9 km de cale dublă între Spišská Nová Ves (în afara stației) și linia de încrucișare Spišské Tomášovce, cu halta Smižany, poduri și ziduri de sprijin noi și refacerea instalațiilor de semnalizare din stația Poprad-Tatry. ŽSR indică ianuarie 2025 ca început al activităților principale și iunie 2028 ca sfârșit planificat. La 30 iunie 2026 se desfășura achiziția constructorului, nu era listat niciun contract și nu se cheltuise nimic. Bugetul grantului nu este un cost. Linia desenată acoperă 4,9 km numărați înapoi de la stația Spišská Nová Ves pe calea existentă, deoarece poziția liniei de încrucișare nu este indicată. Halta Spišské Tomášovce din OpenStreetMap se află cu circa 1,7 km mai la vest, deci limita este stabilită după lungimea din sursă, nu într-un punct cartografiat."
+      },
+      "sourceRefs": [
+        "zsr-snv-tomasovce",
+        "osm"
+      ],
+      "geometryRef": "spisska-nova-ves-spisske-tomasovce"
+    }
+  ],
+  "sources": [
+    {
+      "id": "zsr-poprad-lucivna",
+      "title": "ŽSR: Modernizácia železničnej trate Žilina – Košice, úsek Liptovský Mikuláš – Poprad Tatry (mimo), 1. etapa (Poprad – Lučivná)",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/stavby-v-realizacii/modernizacia-zeleznicnej-trate-zilina--kosice-usek-liptovsky-mikulas--poprad-tatry-mimo-1.etapa-poprad--lucivna",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-poprad-vydrnik",
+      "title": "ŽSR: Modernizácia železničnej trate Žilina – Košice, úsek trate Poprad Tatry (mimo) – Krompachy, Stavba A1 Poprad Tatry (mimo) – Vydrník",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/stavby-v-realizacii/modernizacia-zeleznicnej-trate-zilina--kosice-usek-trate-poprad-tatry-mimo--krompachy-stavba-a1-poprad-tatry-mimo--vydrnik",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zsr-snv-tomasovce",
+      "title": "ŽSR: Modernizácia železničnej trate Žilina - Košice, úsek Spišská Nová Ves – Spišské Tomášovce",
+      "url": "https://www.zsr.sk/o-nas/modernizacia-trati/projekty-spolufinancovane-eu/stavby-v-realizacii/modernizacia-zeleznicnej-trate-zilina--kosice-usek-spisska-nova-ves--spisske-tomasovce",
+      "publisher": "Železnice Slovenskej republiky",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sita-contract-2023",
+      "title": "SITA: Železnice pokračujú v úprave tratí, podpísali zmluvu na modernizáciu úseku na severe Slovenska (23 December 2023)",
+      "url": "https://sita.sk/nasadoprava/zsr-pokracuju-v-uprave-trati-podpisali-zmluvu-na-modernizaciu-severneho-tratoveho-useku-poprad-tatry-vydrnik/",
+      "publisher": "SITA",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "sita-tunnel-2025",
+      "title": "SITA: Železnice začali razenie tunela Španí Háj (22 July 2025)",
+      "url": "https://sita.sk/nasadoprava/zeleznice-zacali-razenie-tunela-spani-haj-podla-raza-prepaja-vychod-a-zapad-krajiny/",
+      "publisher": "SITA",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: railway ways of ŽSR line 180, Žilina – Košice (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
