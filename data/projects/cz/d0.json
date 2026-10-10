@@ -1,0 +1,740 @@
+{
+  "id": "cz-d0",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D0 Prague Ring Road (Pražský okruh)",
+    "ro": "Centura Praga D0 (Pražský okruh)"
+  },
+  "description": {
+    "en": "The outer ring road of Prague, numbered D0 since 1 January 2016. The ŘSD sections 510 and 515 to 517 opened between 1983 and 2001, the south-western segment (512 to 514) on 20 September 2010. Section 511 Běchovice – D1 has been under construction since December 2024. Sections 518, 519 and 520 between Ruzyně and Satalice are in preparation. Lots follow ŘSD section numbers and the cs.wikipedia section table; lengths are the sourced ones and geometry is cut at OSM junction nodes, so drawn lengths can differ. Two stretches are not drawn: about 1.4 km on the D1 at Modletice between sections 511 and 512, and about 2 km between Ruzyně and Přední Kopanina that belongs to a D7 project.",
+    "ro": "Centura exterioară a Pragăi, numerotată D0 din 1 ianuarie 2016. Secțiunile ŘSD 510 și 515–517 au fost deschise între 1983 și 2001, segmentul sud-vestic (512–514) la 20 septembrie 2010. Secțiunea 511 Běchovice – D1 este în construcție din decembrie 2024. Secțiunile 518, 519 și 520 dintre Ruzyně și Satalice sunt în pregătire. Loturile urmează numerele secțiunilor ŘSD și tabelul secțiunilor de pe cs.wikipedia; lungimile sunt cele din surse, iar geometria este tăiată la nodurile OSM, deci lungimile desenate pot diferi. Două porțiuni nu sunt desenate: circa 1,4 km pe D1 la Modletice între secțiunile 511 și 512 și circa 2 km între Ruzyně și Přední Kopanina, care țin de un proiect D7."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "satalice-horni-pocernice",
+      "name": {
+        "en": "Satalice – Horní Počernice (510, 1st stage)",
+        "ro": "Satalice – Horní Počernice (510, etapa I)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1980",
+        "opened": "1984-10-12"
+      },
+      "lengthKm": 1.12,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1980",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "1984-10-12",
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 510, 1st stage. Construction start (year only), opening date and length are from the cs.wikipedia section table, which lists the exits Satalice (58) and Chlumecká (59) and gives category S 27,5/100. The cs.wikipedia history text says the first sections, Satalice – Počernice (510/I) and Slivenec – Třebonice (515), opened in 1984. The ŘSD 2010 brochure names Stavby silnic a železnic (Hradec Králové branch) as builder and Vojenský projektový ústav Praha as designer, and dates construction June 1980 to October 1984; no cost is published. The line is drawn from the Satalice junction (exit 58) to the Horní Počernice junction (exit 60) and measures 1.00 km. The OSM carriageway continues about 0.7 km north of exit 58 to the Satalice interchange; that stretch is not drawn.",
+        "ro": "Secțiunea 510, etapa I. Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia, care listează ieșirile Satalice (58) și Chlumecká (59) și indică categoria S 27,5/100. Textul istoric de pe cs.wikipedia spune că primele sectoare, Satalice – Počernice (510/I) și Slivenec – Třebonice (515), au fost deschise în 1984. Broșura ŘSD din 2010 numește constructor Stavby silnic a železnic (filiala Hradec Králové) și proiectant Vojenský projektový ústav Praha și datează construcția iunie 1980 – octombrie 1984; nu este publicat un cost. Traseul este desenat de la nodul Satalice (ieșirea 58) la nodul Horní Počernice (ieșirea 60) și măsoară 1,00 km. Carosabilul OSM continuă încă circa 0,7 km spre nord de ieșirea 58 până la nodul Satalice; acea porțiune nu este desenată."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "rsd-brochure-2010",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "satalice-horni-pocernice",
+      "contractors": [
+        {
+          "name": "Stavby silnic a železnic, o. z. Hradec Králové",
+          "role": "builder"
+        },
+        {
+          "name": "Vojenský projektový ústav Praha",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "horni-pocernice-bechovice",
+      "name": {
+        "en": "Horní Počernice – Běchovice (510, 2nd stage)",
+        "ro": "Horní Počernice – Běchovice (510, etapa a II-a)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1988",
+        "opened": "1993-11-05"
+      },
+      "lengthKm": 2.33,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1988",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "1993-11-05",
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 510, 2nd stage. Construction start (year only), opening date and length are from the cs.wikipedia section table, which lists the exits Horní Počernice (60) and Běchovice (63) and gives category S 27,5/100. The ŘSD 2010 brochure names Stavby silnic a železnic (Hradec Králové branch) as builder and Vojenský projektový ústav Praha as designer, and dates construction July 1988 to 1993; no cost is published. The line is drawn from the Horní Počernice junction (exit 60) to the Běchovice junction (exit 63) and measures 2.70 km, 16% more than the tabled length; the recorded length is the sourced one.",
+        "ro": "Secțiunea 510, etapa a II-a. Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia, care listează ieșirile Horní Počernice (60) și Běchovice (63) și indică categoria S 27,5/100. Broșura ŘSD din 2010 numește constructor Stavby silnic a železnic (filiala Hradec Králové) și proiectant Vojenský projektový ústav Praha și datează construcția iulie 1988 – 1993; nu este publicat un cost. Traseul este desenat de la nodul Horní Počernice (ieșirea 60) la nodul Běchovice (ieșirea 63) și măsoară 2,70 km, cu 16% mai mult decât lungimea din tabel; lungimea înregistrată este cea din sursă."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "rsd-brochure-2010",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "horni-pocernice-bechovice",
+      "contractors": [
+        {
+          "name": "Stavby silnic a železnic, o. z. Hradec Králové",
+          "role": "builder"
+        },
+        {
+          "name": "Vojenský projektový ústav Praha",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "bechovice-d1",
+      "name": {
+        "en": "Běchovice – D1 (511)",
+        "ro": "Běchovice – D1 (511)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-12-03",
+        "constructionStart": "2024-12-16"
+      },
+      "lengthKm": 12.65,
+      "cost": {
+        "estimated": {
+          "amount": 15070,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure \"Předpokládaná cena stavby\"; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2024-12-03",
+            "money": {
+              "amount": 9764.97,
+              "currency": "CZK",
+              "year": 2024,
+              "note": "Excluding VAT."
+            },
+            "sourceRef": "rsd-leaflet-d0-511"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 9764.97,
+          "currency": "CZK",
+          "year": 2024,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\" 9 764 969 697 Kč), contract signed 3 December 2024."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3), as stated in the ŘSD leaflet. No contribution amount is published.",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3), conform fișei ŘSD. Nu este publicată o sumă a contribuției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia CZ",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů",
+          "role": "builder"
+        },
+        {
+          "name": "PORR",
+          "role": "builder"
+        },
+        {
+          "name": "Porr Bau GmbH",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-12-18",
+          "sourceRef": "rsd-leaflet-d0-511"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-12-03",
+          "note": {
+            "en": "Contract signed; ŘSD had chosen the contractor in November 2024.",
+            "ro": "Contract semnat; ŘSD alesese constructorul în noiembrie 2024."
+          },
+          "sourceRef": "rsd-leaflet-d0-511"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-12-16",
+          "note": {
+            "en": "Ceremonial start of construction.",
+            "ro": "Începerea festivă a construcției."
+          },
+          "sourceRef": "rsd-leaflet-d0-511"
+        }
+      ],
+      "note": {
+        "en": "ŘSD section 511 (leaflet no. 2, state 03/2026). The leaflet gives a six-lane main route of 12 650 m, category D 34,5/100, starting at the Českobrodská interchange with I/12 at km 64.0 and ending before the Modletice interchange with the D1 at km 76.570, with the Dubeč (232 m) and Na Vysoké (394 m) cut-and-cover tunnels. The tender was launched on 18 December 2023 and drew four bids after the deadline was moved to 18 October 2024. The consortium of Eurovia CZ, Stavby mostů, PORR a.s. and PORR Bau GmbH signed on 3 December 2024. The leaflet states the opening year as 2027; cs.wikipedia, citing the June 2026 leaflet, gives 2028, so no expected opening is recorded. Drawn from the OSM construction ways; the line measures 12.65 km.",
+        "ro": "Secțiunea ŘSD 511 (fișa nr. 2, stare 03/2026). Fișa indică un traseu principal cu șase benzi de 12 650 m, categoria D 34,5/100, de la nodul Českobrodská cu I/12 la km 64,0 până înainte de nodul Modletice cu D1 la km 76,570, cu tunelurile acoperite Dubeč (232 m) și Na Vysoké (394 m). Licitația a fost lansată la 18 decembrie 2023 și a primit patru oferte, după mutarea termenului la 18 octombrie 2024. Asocierea Eurovia CZ, Stavby mostů, PORR a.s. și PORR Bau GmbH a semnat la 3 decembrie 2024. Fișa indică anul deschiderii 2027; cs.wikipedia, citând fișa din iunie 2026, indică 2028, deci nu se înregistrează o deschidere estimată. Desenat din drumurile în construcție OSM; traseul măsoară 12,65 km."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-d0-511",
+        "cs-wikipedia-d0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bechovice-d1"
+    },
+    {
+      "id": "d1-vestec",
+      "name": {
+        "en": "D1 (Modletice) – Vestec (512)",
+        "ro": "D1 (Modletice) – Vestec (512)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2010-09-20"
+      },
+      "lengthKm": 8.75,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-09-20",
+          "note": {
+            "en": "Ceremonial opening on 20 September 2010; regular traffic from 21 September 2010.",
+            "ro": "Deschidere festivă la 20 septembrie 2010; trafic obișnuit din 21 septembrie 2010."
+          },
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 512, part of the south-western segment (512, 513, 514) opened on 20 September 2010 and put into regular operation the next day, per cs.wikipedia. Construction start (year only), opening date and length are from the section table (category S 27,5/100; exits Modletice 76 and Jesenice 82). The ŘSD 2010 brochure gives the length as 8750 m and the extent as from before the Modletice interchange with the D1 to behind the II/101 overpass before the planned D3 interchange, so the boundary with 513 is at the D3 interchange near Jesenice, not at Vestec. Builder: Sdružení 512 (Dálniční stavby Praha, Skanska DS, Metrostav, PSVS); the design for the building permit was by Pragoprojekt and Valbek; contract price 4 539 429 350 CZK excluding tax. The line is drawn from the Modletice junction (exit 76) to the D3 junction near Jesenice and measures 7.32 km, 16% less than the recorded length: the 1.4 km between the end of the 511 construction ways and the Modletice junction lies on the D1 and is not drawn.",
+        "ro": "Secțiunea 512, parte din segmentul sud-vestic (512, 513, 514) deschis la 20 septembrie 2010 și dat în exploatare curentă a doua zi, conform cs.wikipedia. Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor (categoria S 27,5/100; ieșirile Modletice 76 și Jesenice 82). Broșura ŘSD din 2010 indică lungimea de 8750 m și traseul de la înainte de nodul Modletice cu D1 până după pasajul II/101, înainte de nodul planificat cu D3, deci limita cu 513 este la nodul D3 de lângă Jesenice, nu la Vestec. Constructor: Sdružení 512 (Dálniční stavby Praha, Skanska DS, Metrostav, PSVS); proiectul pentru autorizația de construire: Pragoprojekt și Valbek; prețul contractului 4 539 429 350 CZK fără taxe. Traseul este desenat de la nodul Modletice (ieșirea 76) la nodul D3 de lângă Jesenice și măsoară 7,32 km, cu 16% mai puțin decât lungimea înregistrată: cei 1,4 km dintre capătul drumurilor în construcție ale secțiunii 511 și nodul Modletice sunt pe D1 și nu sunt desenați."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "rsd-brochure-2010",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "d1-vestec",
+      "contractors": [
+        {
+          "name": "Dálniční stavby Praha",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska DS",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "PSVS",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        },
+        {
+          "name": "Valbek",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 4539.43,
+          "currency": "CZK",
+          "note": "Excluding tax (\"bez daně\"), \"Cena stavby dle smlouvy\" in the ŘSD 2010 brochure; contract year not stated."
+        }
+      }
+    },
+    {
+      "id": "vestec-lahovice",
+      "name": {
+        "en": "Vestec – Lahovice (513)",
+        "ro": "Vestec – Lahovice (513)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006",
+        "opened": "2010-09-20"
+      },
+      "lengthKm": 8.34,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-09-20",
+          "note": {
+            "en": "Ceremonial opening on 20 September 2010; regular traffic from 21 September 2010.",
+            "ro": "Deschidere festivă la 20 septembrie 2010; trafic obișnuit din 21 septembrie 2010."
+          },
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 513, part of the south-western segment opened on 20 September 2010 (regular traffic from 21 September). Construction start (year only), opening date and length are from the cs.wikipedia section table (category S 27,5/100). The ŘSD 2010 brochure gives the length as 8337 m, starting behind the II/101 overpass before the future D3 interchange near Jesenice (so before the Vestec junction) and ending at the Zbraslav interchange at km 9.687. It lists the 236 m Vltava bridge, the Šabatka ecoduct and the Cholupice (Komořany) tunnel (1937 m left tube) in this section. Builder: Sdružení Skanska DS, Skanska BS and Alpine Mayreder Bau GmbH; the design for the building permit was by Pragoprojekt and IKP Consulting Engineers; contract price 4 931 051 720 CZK excluding tax. The line is drawn from the D3 junction near Jesenice to the west end of the Vltava bridge, where the Zbraslav exit (10) leaves the ring, and measures 8.21 km, 2% less than the recorded length.",
+        "ro": "Secțiunea 513, parte din segmentul sud-vestic deschis la 20 septembrie 2010 (trafic obișnuit din 21 septembrie). Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria S 27,5/100). Broșura ŘSD din 2010 indică lungimea de 8337 m, de la pasajul II/101 dinaintea viitorului nod cu D3 de lângă Jesenice (deci înainte de nodul Vestec) până la nodul Zbraslav, la km 9,687. Ea listează în această secțiune podul peste Vltava de 236 m, ecoductul Šabatka și tunelul Cholupice (Komořany) (1937 m tubul stâng). Constructor: Sdružení Skanska DS, Skanska BS și Alpine Mayreder Bau GmbH; proiectul pentru autorizația de construire: Pragoprojekt și IKP Consulting Engineers; prețul contractului 4 931 051 720 CZK fără taxe. Traseul este desenat de la nodul D3 de lângă Jesenice până la capătul vestic al podului peste Vltava, unde ieșirea Zbraslav (10) părăsește inelul, și măsoară 8,21 km, cu 2% mai puțin decât lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "rsd-brochure-2010",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "vestec-lahovice",
+      "contractors": [
+        {
+          "name": "Skanska DS",
+          "role": "builder"
+        },
+        {
+          "name": "Skanska BS",
+          "role": "builder"
+        },
+        {
+          "name": "Alpine Mayreder Bau",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        },
+        {
+          "name": "IKP Consulting Engineers",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 4931.05,
+          "currency": "CZK",
+          "note": "Excluding tax (\"bez daně\"), \"Cena stavby dle smlouvy\" in the ŘSD 2010 brochure; contract year not stated."
+        }
+      }
+    },
+    {
+      "id": "lahovice-slivenec",
+      "name": {
+        "en": "Lahovice – Slivenec (514)",
+        "ro": "Lahovice – Slivenec (514)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006",
+        "opened": "2010-09-20"
+      },
+      "lengthKm": 6.03,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2006",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-09-20",
+          "note": {
+            "en": "Ceremonial opening on 20 September 2010; regular traffic from 21 September 2010.",
+            "ro": "Deschidere festivă la 20 septembrie 2010; trafic obișnuit din 21 septembrie 2010."
+          },
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 514, part of the south-western segment opened on 20 September 2010 (regular traffic from 21 September). Construction start (year only), opening date and length are from the cs.wikipedia section table (category R 27,5/100; exits Zbraslav 10 and Lochkov 15). cs.wikipedia lists the Lochkov tunnel (1659 m) and the Lochkov, Slavičí and Radotín bridges in this section. The ŘSD 2010 brochure names the builder as a joint venture of Strabag, Hochtief and a third firm whose name is cut off in the copy, gives Valbek as coordinator of the implementation design and a contract price of 7 448 429 698 CZK excluding tax, and states a length of 6030 m. The line is drawn from the west end of the Vltava bridge to the Slivenec junction (exit 16) and measures 5.98 km.",
+        "ro": "Secțiunea 514, parte din segmentul sud-vestic deschis la 20 septembrie 2010 (trafic obișnuit din 21 septembrie). Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 27,5/100; ieșirile Zbraslav 10 și Lochkov 15). cs.wikipedia listează în această secțiune tunelul Lochkov (1659 m) și podurile Lochkov, Slavičí și Radotín. Broșura ŘSD din 2010 numește constructor o asociere Strabag, Hochtief și o a treia firmă al cărei nume este tăiat în copie, indică Valbek drept coordonator al proiectului de execuție și un preț al contractului de 7 448 429 698 CZK fără taxe, și indică o lungime de 6030 m. Traseul este desenat de la capătul vestic al podului peste Vltava până la nodul Slivenec (ieșirea 16) și măsoară 5,98 km."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "rsd-brochure-2010",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lahovice-slivenec",
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "Hochtief",
+          "role": "builder"
+        },
+        {
+          "name": "Valbek",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 7448.43,
+          "currency": "CZK",
+          "note": "Excluding tax (\"bez daně\"), \"Cena stavby dle smlouvy\" in the ŘSD 2010 brochure; contract year not stated."
+        }
+      }
+    },
+    {
+      "id": "slivenec-trebonice",
+      "name": {
+        "en": "Slivenec – Třebonice (515)",
+        "ro": "Slivenec – Třebonice (515)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1977",
+        "opened": "1983-09-20"
+      },
+      "lengthKm": 7.41,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1977",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "1983-09-20",
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 515. Construction start (year only), opening date and length are from the cs.wikipedia section table (category S 26,5/100; exits Slivenec 16, Ořech 19, Jinočany 21, Třebonice 23). The cs.wikipedia history text says this section opened in 1984, together with Satalice – Počernice; the table date is recorded, and the ŘSD 2010 brochure also gives 09/1983. No contractor or cost is published. The surface was rebuilt carriageway by carriageway before September 2010, and ŘSD has a capacity upgrade of the section in preparation. The line is drawn from the Slivenec junction (exit 16) to the south end of the Třebonice interchange (exit 23, Chrášťany) and measures 6.77 km, 9% less than the tabled length.",
+        "ro": "Secțiunea 515. Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria S 26,5/100; ieșirile Slivenec 16, Ořech 19, Jinočany 21, Třebonice 23). Textul istoric de pe cs.wikipedia spune că secțiunea a fost deschisă în 1984, odată cu Satalice – Počernice; se înregistrează data din tabel, iar broșura ŘSD din 2010 indică și ea 09/1983. Nu sunt publicați constructorul și costul. Îmbrăcămintea a fost refăcută pe câte un sens înainte de septembrie 2010, iar ŘSD pregătește o mărire a capacității secțiunii. Traseul este desenat de la nodul Slivenec (ieșirea 16) până la capătul sudic al nodului Třebonice (ieșirea 23, Chrášťany) și măsoară 6,77 km, cu 9% mai puțin decât lungimea din tabel."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "slivenec-trebonice"
+    },
+    {
+      "id": "trebonice-repy",
+      "name": {
+        "en": "Třebonice – Řepy (516)",
+        "ro": "Třebonice – Řepy (516)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1998",
+        "opened": "2000-08-20"
+      },
+      "lengthKm": 3.3,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1998",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "2000-08-20",
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 516. Construction start (year only), opening date and length are from the cs.wikipedia section table (category R 34/100; exit Řepy 26). The ŘSD 2010 brochure names Sdružení SOKP stavba 516 (Dálniční stavby Praha, Stavby mostů Praha, PSVS) as builder and Pragoprojekt as designer, and dates construction May 1998 to August 2000; no cost is published. The line is drawn from the south end of the Třebonice interchange (exit 23, Chrášťany) to the Řepy junction (exit 26) and measures 3.59 km.",
+        "ro": "Secțiunea 516. Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 34/100; ieșirea Řepy 26). Broșura ŘSD din 2010 numește constructor Sdružení SOKP stavba 516 (Dálniční stavby Praha, Stavby mostů Praha, PSVS) și proiectant Pragoprojekt și datează construcția mai 1998 – august 2000; nu este publicat un cost. Traseul este desenat de la capătul sudic al nodului Třebonice (ieșirea 23, Chrášťany) până la nodul Řepy (ieșirea 26) și măsoară 3,59 km."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "rsd-brochure-2010",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "trebonice-repy",
+      "contractors": [
+        {
+          "name": "Dálniční stavby Praha",
+          "role": "builder"
+        },
+        {
+          "name": "Stavby mostů Praha",
+          "role": "builder"
+        },
+        {
+          "name": "PSVS",
+          "role": "builder"
+        },
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "repy-ruzyne",
+      "name": {
+        "en": "Řepy – Ruzyně (517)",
+        "ro": "Řepy – Ruzyně (517)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1999",
+        "opened": "2001-10-29"
+      },
+      "lengthKm": 2.51,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1999",
+          "sourceRef": "cs-wikipedia-d0"
+        },
+        {
+          "kind": "opened",
+          "date": "2001-10-29",
+          "sourceRef": "cs-wikipedia-d0"
+        }
+      ],
+      "note": {
+        "en": "Section 517. Construction start (year only), opening date and length are from the cs.wikipedia section table (category R 34/100; exit Ruzyně 28). The ŘSD 2010 brochure names Sdružení 517 (SSŽ, Metrostav, SMP Construction, Bögl & Krýsl; the list is cut off in the copy) as builder and SUDOP Praha as designer, and dates construction May 1999 to October 2001; no cost is published. The line is drawn from the Řepy junction (exit 26) to the end of the opened carriageway north of the Ruzyně junction and measures 2.27 km. The ŘSD 518 leaflet states that km 27.913 to 29.990 of the ring will be built under the D7 project MÚK Ruzyně – MÚK Aviatická, so a gap of about 2 km separates this lot from lot 518.",
+        "ro": "Secțiunea 517. Începutul construcției (doar anul), data deschiderii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria R 34/100; ieșirea Ruzyně 28). Broșura ŘSD din 2010 numește constructor Sdružení 517 (SSŽ, Metrostav, SMP Construction, Bögl & Krýsl; lista este tăiată în copie) și proiectant SUDOP Praha și datează construcția mai 1999 – octombrie 2001; nu este publicat un cost. Traseul este desenat de la nodul Řepy (ieșirea 26) până la capătul carosabilului deschis, la nord de nodul Ruzyně, și măsoară 2,27 km. Fișa ŘSD pentru 518 arată că km 27,913–29,990 ai inelului vor fi construiți în cadrul proiectului D7 MÚK Ruzyně – MÚK Aviatická, deci între acest lot și lotul 518 rămâne un gol de circa 2 km."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d0",
+        "rsd-brochure-2010",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "repy-ruzyne",
+      "contractors": [
+        {
+          "name": "SSŽ",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "SMP Construction",
+          "role": "builder"
+        },
+        {
+          "name": "Bögl & Krýsl",
+          "role": "builder"
+        },
+        {
+          "name": "SUDOP Praha",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "ruzyne-suchdol",
+      "name": {
+        "en": "Ruzyně – Suchdol (518)",
+        "ro": "Ruzyně – Suchdol (518)"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2031"
+      },
+      "lengthKm": 8.26,
+      "cost": {
+        "estimated": {
+          "amount": 13044.63,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure \"Předpokládaná cena stavby\"; price year not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "note": {
+        "en": "ŘSD section 518 (leaflet no. 506, state 01/2026), in preparation. It starts at km 29.990 at the Přední Kopanina interchange with the D7 and ends at km 38.250 behind the Rybářka interchange, 8260 m in category D 34/100, with the Horoměřice, Suchdol (1970 m) and Rybářka tunnels (3450 m in total). The EIA opinion was issued on 2 September 2024; the joint permit design is due in the second or third quarter of 2026. The leaflet plans the start of the works for 2028 and opening for 2031, years only. Ring km 27.913 to 29.990 between Ruzyně and Přední Kopanina is to be built under the D7 project MÚK Ruzyně – MÚK Aviatická. The design was prepared by Pragoprojekt. Drawn from OSM highway=proposed ways between the D7 junction and the Vltava; the drawn line measures 7.91 km, 4% less than the leaflet.",
+        "ro": "Secțiunea ŘSD 518 (fișa nr. 506, stare 01/2026), în pregătire. Începe la km 29,990 la nodul Přední Kopanina cu D7 și se termină la km 38,250, după nodul Rybářka, 8260 m în categoria D 34/100, cu tunelurile Horoměřice, Suchdol (1970 m) și Rybářka (3450 m în total). Avizul EIA a fost emis la 2 septembrie 2024; proiectul pentru autorizația comună este așteptat în trimestrul 2 sau 3 din 2026. Fișa prevede începerea lucrărilor în 2028 și deschiderea în 2031, doar ani. Km 27,913–29,990 ai inelului, între Ruzyně și Přední Kopanina, vor fi construiți în cadrul proiectului D7 MÚK Ruzyně – MÚK Aviatická. Proiectul a fost întocmit de Pragoprojekt. Desenat din drumurile OSM highway=proposed între nodul D7 și Vltava; traseul măsoară 7,91 km, cu 4% mai puțin decât fișa."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-d0-518",
+        "cs-wikipedia-d0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ruzyne-suchdol"
+    },
+    {
+      "id": "suchdol-brezineves",
+      "name": {
+        "en": "Suchdol – Březiněves (519)",
+        "ro": "Suchdol – Březiněves (519)"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2031"
+      },
+      "lengthKm": 6.85,
+      "cost": {
+        "estimated": {
+          "amount": 19090.91,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure \"Předpokládaná cena stavby\"; price year not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "AFRY CZ",
+          "role": "designer"
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "note": {
+        "en": "ŘSD section 519 (leaflet no. 504, state 01/2026), in preparation. It starts at km 38.250 before the Vltava bridge (572 m) and ends at km 45.100 at the Březiněves interchange with the D8, 6850 m in category D 34/100, and includes widening the Prosecká radiála at that interchange to motorway standard. The EIA opinion was issued on 2 September 2024. An architectural competition for the Vltava valley bridge drew 15 entries by 28 February 2025; one for the Drahaň valley bridge was launched in October 2025. The leaflet plans the start of the works for 2028 and opening for 2031, years only. The EIA and technical study were prepared by AFRY CZ. Drawn from OSM highway=proposed ways, from the Vltava to the crossing with the Prosecká radiála (D8).",
+        "ro": "Secțiunea ŘSD 519 (fișa nr. 504, stare 01/2026), în pregătire. Începe la km 38,250, înainte de podul peste Vltava (572 m), și se termină la km 45,100 la nodul Březiněves cu D8, 6850 m în categoria D 34/100, și include lărgirea Prosecká radiála la acest nod la standard de autostradă. Avizul EIA a fost emis la 2 septembrie 2024. Un concurs de arhitectură pentru podul peste valea Vltavei a primit 15 propuneri până la 28 februarie 2025; unul pentru podul peste valea Drahaň a fost lansat în octombrie 2025. Fișa prevede începerea lucrărilor în 2028 și deschiderea în 2031, doar ani. EIA și studiul tehnic au fost întocmite de AFRY CZ. Desenat din drumurile OSM highway=proposed, de la Vltava până la intersecția cu Prosecká radiála (D8)."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-d0-519",
+        "cs-wikipedia-d0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "suchdol-brezineves"
+    },
+    {
+      "id": "brezineves-satalice",
+      "name": {
+        "en": "Březiněves – Satalice (520)",
+        "ro": "Březiněves – Satalice (520)"
+      },
+      "status": "planned",
+      "lengthKm": 13.643,
+      "cost": {
+        "estimated": {
+          "amount": 46768,
+          "currency": "CZK",
+          "note": "Excluding VAT. Leaflet figure \"Předpokládaná cena stavby\"; price year not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Pragoprojekt",
+          "role": "designer"
+        },
+        {
+          "name": "AMBERG Engineering Brno",
+          "role": "designer"
+        }
+      ],
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "note": {
+        "en": "ŘSD section 520 (leaflet no. 503, state 03/2026), in preparation. It starts at km 46.410 at the Březiněves interchange with the D8 and ends behind the Satalice interchange, 13 643 m in category D 34/100, with the Třeboradice (1330 m), Veleň (1000 m) and Vinoř (2710 m) tunnels. The EIA opinion (both variants) was issued on 31 January 2025, and in July 2025 the government chose the tunnel variant. A contract for the design for the joint permit with Pragoprojekt and AMBERG Engineering Brno was concluded in September 2025, and land purchase is expected to start in 2027. The leaflet plans the start of the works for 2028 and opening for 2031; cs.wikipedia, citing the June 2026 leaflet, gives 2029 and 2032, so no expected opening is recorded. Drawn from OSM highway=proposed ways from the crossing with the Prosecká radiála (D8) to the end of the proposed ways at Satalice, so it also covers the 1.3 km between leaflet km 45.1 and km 46.41. The drawn line measures 12.97 km, 5% less than the leaflet.",
+        "ro": "Secțiunea ŘSD 520 (fișa nr. 503, stare 03/2026), în pregătire. Începe la km 46,410 la nodul Březiněves cu D8 și se termină după nodul Satalice, 13 643 m în categoria D 34/100, cu tunelurile Třeboradice (1330 m), Veleň (1000 m) și Vinoř (2710 m). Avizul EIA (pentru ambele variante) a fost emis la 31 ianuarie 2025, iar în iulie 2025 guvernul a ales varianta cu tuneluri. Contractul pentru proiectul autorizației comune cu Pragoprojekt și AMBERG Engineering Brno a fost încheiat în septembrie 2025, iar achiziția terenurilor este așteptată din 2027. Fișa prevede începerea lucrărilor în 2028 și deschiderea în 2031; cs.wikipedia, citând fișa din iunie 2026, indică 2029 și 2032, deci nu se înregistrează o deschidere estimată. Desenat din drumurile OSM highway=proposed, de la intersecția cu Prosecká radiála (D8) până la capătul drumurilor propuse la Satalice, deci acoperă și cei 1,3 km dintre km 45,1 și km 46,41 din fișă. Traseul măsoară 12,97 km, cu 5% mai puțin decât fișa."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-d0-520",
+        "cs-wikipedia-d0",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "brezineves-satalice"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wikipedia-d0",
+      "title": "Wikipedia (cs): Dálnice D0, Přehled úseků and Historie přípravy a výstavby",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D0",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-d0-511",
+      "title": "ŘSD: Informační leták, D0 511 Běchovice – D1 (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/2/leaflet/infoletak_d0-511-bechovice-d1.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-brochure-2010",
+      "title": "ŘSD: Pražský okruh (brožura k zprovoznění jižní části, 20. 9. 2010), data o stavbě 510 až 517",
+      "url": "https://web.archive.org/web/20120114085210/http://www.rsd.cz/rsd/rsd.nsf/0/EB81E673EF263364C125779D00385600/$file/RSD_R1_9_10.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-d0-518",
+      "title": "ŘSD: Informační leták, D0 518 Ruzyně – Suchdol (stav k 01/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/506/leaflet/infoletak_d0-518-ruzyne-suchdol.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-d0-519",
+      "title": "ŘSD: Informační leták, D0 519 Suchdol – Březiněves (stav k 01/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/504/leaflet/infoletak_d0-519-suchdol-brezineves.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-d0-520",
+      "title": "ŘSD: Informační leták, D0 520 Březiněves – Satalice (stav k 03/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/503/leaflet/infoletak_d0-520-brezineves-satalice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

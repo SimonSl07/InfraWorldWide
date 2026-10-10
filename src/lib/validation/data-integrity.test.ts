@@ -32,7 +32,8 @@ import type {
  * validate against the schema and have matching geometry. Runs against the
  * real repo data so a bad data edit fails `npm test` too, not just builds.
  */
-describe("seed data integrity", () => {
+// Each test re-validates every committed data file, which exceeds the 5 s default under a full parallel run.
+describe("seed data integrity", { timeout: 60_000 }, () => {
   it("all committed projects validate with zero errors", () => {
     const { projects, errors } = collectErrors(process.cwd());
     expect(errors).toEqual([]);
