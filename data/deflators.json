@@ -1,6 +1,6 @@
 {
   "baseYear": 2015,
-  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes, since src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017. That is a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated. Croatia has no series: the kuna was replaced by the euro on 1 January 2023 at 7.53450 HRK per euro, so an HRK series would end in 2022 and pull the common latest price year of the whole table back from 2025 to 2022. Croatian figures recorded in kuna stay as prose in notes and are not restated; euro figures from 2023 use the euro-area series like every other euro cost. The Czech series is Eurostat's HICP for Czechia and starts in 1996, the first year Eurostat publishes it. The Polish series is Eurostat's HICP for Poland and also starts in 1996, the first year Eurostat publishes it.",
+  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes, since src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017. That is a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated. Croatia has no series: the kuna was replaced by the euro on 1 January 2023 at 7.53450 HRK per euro, so an HRK series would end in 2022 and pull the common latest price year of the whole table back from 2025 to 2022. Croatian figures recorded in kuna stay as prose in notes and are not restated; euro figures from 2023 use the euro-area series like every other euro cost. The Czech series is Eurostat's HICP for Czechia and starts in 1996, the first year Eurostat publishes it. The Polish series is Eurostat's HICP for Poland and also starts in 1996, the first year Eurostat publishes it. The Hungarian series is Eurostat's HICP for Hungary and also starts in 1996, the first year Eurostat publishes it.",
   "sources": [
     {
       "title": "Eurostat: HICP annual data (average index and rate of change) [prc_hicp_aind]",
@@ -126,6 +126,45 @@
         "2023": 123.15,
         "2024": 126.07,
         "2025": 128.75
+      }
+    },
+    "HUF": {
+      "geo": "HU",
+      "label": {
+        "en": "Hungary",
+        "ro": "Ungaria"
+      },
+      "index": {
+        "1996": 31.76,
+        "1997": 37.62,
+        "1998": 42.97,
+        "1999": 47.25,
+        "2000": 51.95,
+        "2001": 56.67,
+        "2002": 59.64,
+        "2003": 62.43,
+        "2004": 66.66,
+        "2005": 68.98,
+        "2006": 71.76,
+        "2007": 77.45,
+        "2008": 82.12,
+        "2009": 85.43,
+        "2010": 89.47,
+        "2011": 92.98,
+        "2012": 98.24,
+        "2013": 99.92,
+        "2014": 99.94,
+        "2015": 100,
+        "2016": 100.45,
+        "2017": 102.84,
+        "2018": 105.84,
+        "2019": 109.46,
+        "2020": 113.15,
+        "2021": 119.04,
+        "2022": 137.22,
+        "2023": 160.59,
+        "2024": 166.56,
+        "2025": 173.96
       }
     },
     "PLN": {

@@ -1,0 +1,808 @@
+{
+  "id": "hu-m85",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M85 expressway (Győr – Csorna – Sopron – Austrian border)",
+    "ro": "Drumul expres M85 (Győr – Csorna – Sopron – granița cu Austria)"
+  },
+  "description": {
+    "en": "Expressway from the M1 at Győr through Csorna and Kapuvár to Sopron and the Austrian border, built in sections from 2009. Eleven lots follow the opened sections: the Enese bypass (2011), Győr – Kóny (2015), Kóny – Csorna-dél (2015), the second Csorna bypass phase (2017), the three contract sections between Csorna-nyugat and Sopron-kelet (2020), Sopron-kelet – Balf and Balf – Fertőrákos (2021) and the last stretch to the border with the 780 m Sopron tunnel (2024). Lengths come from the hu.wikipedia section table; contract values are net of VAT and are tender results unless the lot says otherwise. The Kóny – Csorna-dél lot includes the stretch shared with the M86.",
+    "ro": "Drum expres de la M1 la Győr, prin Csorna și Kapuvár, până la Sopron și granița cu Austria, construit pe tronsoane din 2009. Cele unsprezece loturi urmează secțiunile deschise: ocolitoarea Enese (2011), Győr – Kóny (2015), Kóny – Csorna-dél (2015), a doua fază a ocolitoarei Csorna (2017), cele trei secțiuni contractuale dintre Csorna-nyugat și Sopron-kelet (2020), Sopron-kelet – Balf și Balf – Fertőrákos (2021) și ultimul tronson până la graniță, cu tunelul Sopron de 780 m (2024). Lungimile provin din tabelul de secțiuni de pe hu.wikipedia; valorile contractelor sunt fără TVA și sunt rezultate de licitație, dacă lotul nu spune altfel. Lotul Kóny – Csorna-dél include tronsonul comun cu M86."
+  },
+  "operator": "hu-nif",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "gyor-enese",
+      "name": {
+        "en": "Győr (M1) – Enese (Rábapatona)",
+        "ro": "Győr (M1) – Enese (Rábapatona)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-06",
+        "opened": "2015-06-16"
+      },
+      "lengthKm": 6.8,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-01-02",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-06",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-06-16",
+          "sourceRef": "hu-wikipedia-m85"
+        }
+      ],
+      "profile": {
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Km 0+000–6+800 of the M85, from the M1 junction at Győr to the start of the Enese bypass. Opened on 16 June 2015 together with the Enese bypass and the Enese – Kóny stretch as a continuous 16 km section. hu.wikipedia says the works include about 2.0 km of four-laning of road 1 between road 1 and the M1. The tender for the Csorna I, Csorna – Enese and Enese – Győr sections was published on 2 January 2013 and works began in June 2013, by the CC M85 I. Konzorcium and MK Csorna Konzorcium; no contract value is given. The drawn line is 7.36 km because OpenStreetMap places the lot end at the Rábapatona junction.",
+        "ro": "Km 0+000–6+800 al M85, de la nodul cu M1 la Győr până la începutul ocolitoarei Enese. Deschis la 16 iunie 2015 împreună cu ocolitoarea Enese și tronsonul Enese – Kóny, ca secțiune continuă de 16 km. hu.wikipedia indică lucrări de lărgire la patru benzi a drumului 1, pe aproximativ 2,0 km, între drumul 1 și M1. Licitația pentru secțiunile Csorna I, Csorna – Enese și Enese – Győr a fost publicată la 2 ianuarie 2013, iar lucrările au început în iunie 2013, executate de CC M85 I. Konzorcium și MK Csorna Konzorcium; nu se indică o valoare a contractului. Linia desenată are 7,36 km, deoarece OpenStreetMap plasează capătul lotului la nodul Rábapatona."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gyor-enese"
+    },
+    {
+      "id": "enese-bypass",
+      "name": {
+        "en": "Enese bypass (km 6+800–13+800)",
+        "ro": "Ocolitoarea Enese (km 6+800–13+800)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-07-20",
+        "opened": "2011-12-21"
+      },
+      "contractors": [
+        {
+          "name": "CÉ-LA Enese 2009 Konzorcium",
+          "role": "builder"
+        }
+      ],
+      "lengthKm": 7.0,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-07-20",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-12-21",
+          "sourceRef": "hu-wikipedia-m85"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "First part of the M85 to open: a 7 km bypass of Enese, km 6+800–13+800, opened on 21 December 2011. Works began on 20 July 2009. The opening was delayed by supplementary archaeological excavation. In the last two months of construction the bypass was closed and traffic was diverted onto road 85 through the village. Joined to the rest of the Győr – Kóny section on 16 June 2015. OpenStreetMap has no junction at km 13+800, so the cut with the next lot is placed on the drawn line by calibration and the drawn length differs from the sourced one.",
+        "ro": "Prima parte a M85 deschisă: ocolitoare de 7 km a localității Enese, km 6+800–13+800, deschisă la 21 decembrie 2011. Lucrările au început la 20 iulie 2009. Deschiderea a întârziat din cauza unor săpături arheologice suplimentare. În ultimele două luni de execuție ocolitoarea a fost închisă, iar traficul a fost deviat pe drumul 85 prin localitate. Legată de restul secțiunii Győr – Kóny la 16 iunie 2015. În OpenStreetMap nu există un nod la km 13+800, deci limita cu lotul următor este plasată pe linia desenată prin calibrare, iar lungimea desenată diferă de cea din sursă."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "enese-bypass"
+    },
+    {
+      "id": "enese-kony",
+      "name": {
+        "en": "Enese bypass – Kóny (km 13+800–16+100)",
+        "ro": "Ocolitoarea Enese – Kóny (km 13+800–16+100)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-06",
+        "opened": "2015-06-16"
+      },
+      "lengthKm": 2.3,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-01-02",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-06",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-06-16",
+          "sourceRef": "hu-wikipedia-m85"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Km 13+800–16+100, from the end of the Enese bypass to the Kóny junction. Opened on 16 June 2015 as the last part of the Győr – Kóny section. The tender was published on 2 January 2013 and works began in June 2013; no contract value is given. The length is from the hu.wikipedia section table. The drawn line is shorter because the cut with the Enese bypass lot at km 13+800 is placed by calibration.",
+        "ro": "Km 13+800–16+100, de la capătul ocolitoarei Enese până la nodul Kóny. Deschis la 16 iunie 2015 ca ultima parte a secțiunii Győr – Kóny. Licitația a fost publicată la 2 ianuarie 2013, iar lucrările au început în iunie 2013; nu se indică o valoare a contractului. Lungimea provine din tabelul de secțiuni de pe hu.wikipedia. Linia desenată este mai scurtă, deoarece limita cu lotul ocolitoarei Enese la km 13+800 este plasată prin calibrare."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "enese-kony"
+    },
+    {
+      "id": "kony-csorna-dele",
+      "name": {
+        "en": "Kóny – Csorna (bypass, phase I) – Csorna-dél",
+        "ro": "Kóny – Csorna (ocolitoare, faza I) – Csorna-dél"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-06",
+        "opened": "2015-09-09"
+      },
+      "lengthKm": 10.62,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2013-01-02",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-06",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-09-09",
+          "sourceRef": "hu-wikipedia-m85"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Km 16+100–27+100, from Kóny to the Csorna-dél junction, including the first phase of the Csorna bypass. Opened on 9 September 2015, which brought the M85 to 27.1 km. The stretch includes the section shared with the M86 (km 22+890–26+403 of the M85), which is not split out here; a future M86 file must mark its copy of this 3.508 km with sharedWith so the network totals count it once. The hu.wikipedia section table lists the stretch in four rows of 4.7, 2.09, 3.508 and 1.754 km. The tender was published on 2 January 2013 and works began in June 2013, by the CC M85 I. Konzorcium and MK Csorna Konzorcium; no contract value is given. Length measured from OpenStreetMap geometry.",
+        "ro": "Km 16+100–27+100, de la Kóny la nodul Csorna-dél, inclusiv prima fază a ocolitoarei Csorna. Deschis la 9 septembrie 2015, ceea ce a adus M85 la 27,1 km. Tronsonul include secțiunea comună cu M86 (km 22+890–26+403 al M85), care nu este separată aici; un viitor fișier M86 trebuie să marcheze propria copie a acestor 3,508 km cu sharedWith, ca totalurile rețelei să o numere o singură dată. Tabelul de secțiuni de pe hu.wikipedia listează tronsonul în patru rânduri de 4,7, 2,09, 3,508 și 1,754 km. Licitația a fost publicată la 2 ianuarie 2013, iar lucrările au început în iunie 2013, executate de CC M85 I. Konzorcium și MK Csorna Konzorcium; nu se indică o valoare a contractului. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kony-csorna-dele"
+    },
+    {
+      "id": "csorna-ii",
+      "name": {
+        "en": "Csorna bypass, phase II (Csorna-dél – Csorna-nyugat)",
+        "ro": "Ocolitoarea Csorna, faza II (Csorna-dél – Csorna-nyugat)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-12-15"
+      },
+      "lengthKm": 4.45,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 13845,
+              "currency": "HUF",
+              "year": 2016,
+              "note": "Net of VAT. Value for which the works were carried out from 19 May 2016, as stated by hu.wikipedia."
+            },
+            "date": "2016-04-14",
+            "sourceRef": "hu-wikipedia-m85"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-04-14",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2016-05-19",
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-12-15",
+          "sourceRef": "hu-wikipedia-m85"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ST-M85-II konzorcium (STR Építő Kft., TRSZ Kft.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 13845,
+          "currency": "HUF",
+          "year": 2016,
+          "note": "Net of VAT. Value for which the works were carried out from 19 May 2016, as stated by hu.wikipedia."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Km 27+100–31+550 (the hu.wikipedia text gives 4.5 km, 27+100–31+855), from Csorna-dél to Csorna-nyugat, near Jobaháza. Opened on 15 December 2017. The tender was won on 14 April 2016 by the ST-M85-II konzorcium (STR Építő Kft., TRSZ Kft.); works ran from 19 May 2016 for a net HUF 13.845 billion, according to hu.wikipedia. It links the 2015 bypass to the road to Farád and relieves road 85. The drawn line is about 1 km longer than the sourced figure.",
+        "ro": "Km 27+100–31+550 (textul hu.wikipedia indică 4,5 km, 27+100–31+855), de la Csorna-dél la Csorna-nyugat, lângă Jobaháza. Deschis la 15 decembrie 2017. Licitația a fost câștigată la 14 aprilie 2016 de ST-M85-II konzorcium (STR Építő Kft., TRSZ Kft.); lucrările s-au desfășurat din 19 mai 2016, pentru 13,845 mld. HUF fără TVA, potrivit hu.wikipedia. Leagă ocolitoarea din 2015 de drumul spre Farád și descarcă drumul 85. Linia desenată este cu aproximativ 1 km mai lungă decât cifra din sursă."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "csorna-ii"
+    },
+    {
+      "id": "csorna-nyugat-fertod",
+      "name": {
+        "en": "Csorna-nyugat – Fertőendréd (Fertőd)",
+        "ro": "Csorna-nyugat – Fertőendréd (Fertőd)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-01",
+        "opened": "2020-12-16"
+      },
+      "lengthKm": 20.05,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 51900,
+              "currency": "HUF",
+              "year": 2017,
+              "note": "Net of VAT. Winning bid in the evaluation summary."
+            },
+            "date": "2017-12-01",
+            "sourceRef": "magyarepitok-2017-12-tender"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-12-01",
+          "note": {
+            "en": "Winning bid announced in the bid evaluation summary.",
+            "ro": "Oferta câștigătoare anunțată în sinteza evaluării ofertelor."
+          },
+          "sourceRef": "magyarepitok-2017-12-tender"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-16",
+          "sourceRef": "magyarepitok-2020-12-opening"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Építő Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag AG",
+          "role": "builder"
+        },
+        {
+          "name": "Belfry PE Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 51900,
+          "currency": "HUF",
+          "year": 2017,
+          "note": "Net of VAT. Winning bid in the evaluation summary."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "First of three contract sections of Csorna-nyugat – Sopron-kelet (51.05 km), opened on Wednesday 16 December 2020, before the contractual deadline. Strabag Építő Kft., Strabag AG and Belfry PE Kft. built 20.05 km. The value is the winning bid in the evaluation summary reported in December 2017, net of VAT; hu.wikipedia dates the announcement to 1 December 2017. No signed contract value was found. Designers: BIMLAB Mérnökiroda Kft., FŐMTERV Zrt. and UTIBER Közúti Beruházó Kft.",
+        "ro": "Prima dintre cele trei secțiuni contractuale Csorna-nyugat – Sopron-kelet (51,05 km), deschisă miercuri, 16 decembrie 2020, înainte de termenul contractual. Strabag Építő Kft., Strabag AG și Belfry PE Kft. au construit 20,05 km. Valoarea este oferta câștigătoare din sinteza evaluării raportată în decembrie 2017, fără TVA; hu.wikipedia datează anunțul la 1 decembrie 2017. Nu s-a găsit o valoare a contractului semnat. Proiectanți: BIMLAB Mérnökiroda Kft., FŐMTERV Zrt. și UTIBER Közúti Beruházó Kft."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "magyarepitok-2017-12-tender",
+        "magyarepitok-2020-12-opening",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "csorna-nyugat-fertod"
+    },
+    {
+      "id": "fertod-nagylozs",
+      "name": {
+        "en": "Fertőendréd (Fertőd) – Nagylózs",
+        "ro": "Fertőendréd (Fertőd) – Nagylózs"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-01",
+        "opened": "2020-12-16"
+      },
+      "lengthKm": 15.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 48100,
+              "currency": "HUF",
+              "year": 2017,
+              "note": "Net of VAT. Winning bid in the evaluation summary."
+            },
+            "date": "2017-12-01",
+            "sourceRef": "magyarepitok-2017-12-tender"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-12-01",
+          "note": {
+            "en": "Winning bid announced in the bid evaluation summary.",
+            "ro": "Oferta câștigătoare anunțată în sinteza evaluării ofertelor."
+          },
+          "sourceRef": "magyarepitok-2017-12-tender"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-16",
+          "sourceRef": "magyarepitok-2020-12-opening"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "EuroAszfalt Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky Magyarország Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Betonútépítő Zrt.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 48100,
+          "currency": "HUF",
+          "year": 2017,
+          "note": "Net of VAT. Winning bid in the evaluation summary."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Second contract section, 15.6 km from the Fertőd-Endrédmajor junction to Nagylózs, opened on 16 December 2020. Built by EuroAszfalt Kft., Swietelsky Magyarország Kft. and Betonútépítő Zrt. The value is the winning bid in the evaluation summary reported in December 2017, net of VAT; no signed contract value was found. OpenStreetMap has no junction at Nagylózs, so the end is placed 15.6 km along the drawn line from the Fertőd junction.",
+        "ro": "A doua secțiune contractuală, de 15,6 km, de la nodul Fertőd-Endrédmajor la Nagylózs, deschisă la 16 decembrie 2020. Construită de EuroAszfalt Kft., Swietelsky Magyarország Kft. și Betonútépítő Zrt. Valoarea este oferta câștigătoare din sinteza evaluării raportată în decembrie 2017, fără TVA; nu s-a găsit o valoare a contractului semnat. În OpenStreetMap nu există un nod la Nagylózs, deci capătul este plasat la 15,6 km pe linia desenată față de nodul Fertőd."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "magyarepitok-2017-12-tender",
+        "magyarepitok-2020-12-opening",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "fertod-nagylozs"
+    },
+    {
+      "id": "nagylozs-sopron-kelet",
+      "name": {
+        "en": "Nagylózs – Sopron-kelet",
+        "ro": "Nagylózs – Sopron-kelet"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-01",
+        "opened": "2020-12-16"
+      },
+      "lengthKm": 15.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 53090,
+              "currency": "HUF",
+              "year": 2017,
+              "note": "Net of VAT. Winning bid in the evaluation summary."
+            },
+            "date": "2017-12-01",
+            "sourceRef": "magyarepitok-2017-12-tender"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-12-01",
+          "note": {
+            "en": "Winning bid announced in the bid evaluation summary.",
+            "ro": "Oferta câștigătoare anunțată în sinteza evaluării ofertelor."
+          },
+          "sourceRef": "magyarepitok-2017-12-tender"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-16",
+          "sourceRef": "magyarepitok-2020-12-opening"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dömper Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra-Raab Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 53090,
+          "currency": "HUF",
+          "year": 2017,
+          "note": "Net of VAT. Winning bid in the evaluation summary."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Third contract section, 15.4 km from Nagylózs to the Sopron-kelet junction, opened on 16 December 2020. Built by Dömper Kft. and Subterra-Raab Kft. The value is the winning bid in the evaluation summary reported in December 2017, net of VAT; no signed contract value was found. The contractor moved onto the site at Sopron-kelet on 26 February 2018 and the foundation-stone ceremony was held on 6 March 2018. The drawn line is shorter than the sourced length because the start at Nagylózs is placed by calibration.",
+        "ro": "A treia secțiune contractuală, de 15,4 km, de la Nagylózs la nodul Sopron-kelet, deschisă la 16 decembrie 2020. Construită de Dömper Kft. și Subterra-Raab Kft. Valoarea este oferta câștigătoare din sinteza evaluării raportată în decembrie 2017, fără TVA; nu s-a găsit o valoare a contractului semnat. Constructorul a început mobilizarea pe șantier la Sopron-kelet la 26 februarie 2018, iar ceremonia punerii pietrei de temelie a avut loc la 6 martie 2018. Linia desenată este mai scurtă decât lungimea din sursă, deoarece începutul la Nagylózs este plasat prin calibrare."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "magyarepitok-2017-12-tender",
+        "magyarepitok-2020-12-opening",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nagylozs-sopron-kelet"
+    },
+    {
+      "id": "sopron-kelet-balf",
+      "name": {
+        "en": "Sopron-kelet – Balf",
+        "ro": "Sopron-kelet – Balf"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-06-09"
+      },
+      "lengthKm": 2.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2021-06-09",
+          "sourceRef": "magyarepitok-2021-06-opening"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dömper Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra-Raab Kft.",
+          "role": "builder"
+        }
+      ],
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Km 82+600–85+100, 2.5 km from Sopron-kelet to the Balf junction, opened on Wednesday 9 June 2021. It is the first part of the fourth contract section, Sopron-kelet – Fertőrákos (6.4 km), built by Dömper Kft. and Subterra-Raab Kft. as the DS Konzorcium. The contract value of the whole section is recorded on the next lot, Balf – Fertőrákos.",
+        "ro": "Km 82+600–85+100, 2,5 km de la Sopron-kelet la nodul Balf, deschis miercuri, 9 iunie 2021. Este prima parte a celei de-a patra secțiuni contractuale, Sopron-kelet – Fertőrákos (6,4 km), construită de Dömper Kft. și Subterra-Raab Kft. ca DS Konzorcium. Valoarea contractului pentru întreaga secțiune este înregistrată la lotul următor, Balf – Fertőrákos."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "magyarepitok-2017-12-tender",
+        "magyarepitok-2021-06-opening",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sopron-kelet-balf"
+    },
+    {
+      "id": "balf-fertorakos",
+      "name": {
+        "en": "Balf – Fertőrákos",
+        "ro": "Balf – Fertőrákos"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-01",
+        "opened": "2021-12-10"
+      },
+      "lengthKm": 3.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 17700,
+              "currency": "HUF",
+              "year": 2017,
+              "note": "Net of VAT. Winning bid for the whole Sopron-kelet – Fertőrákos section (6.4 km)."
+            },
+            "date": "2017-12-01",
+            "sourceRef": "magyarepitok-2017-12-tender"
+          },
+          {
+            "kind": "addendum",
+            "money": {
+              "amount": 20400,
+              "currency": "HUF",
+              "note": "Net of VAT. Contract value of the DS Konzorcium for the whole Sopron-kelet – Fertőrákos section as stated at the June 2021 opening. Signing date not found, so no price year."
+            },
+            "date": "2021-06-09",
+            "sourceRef": "magyarepitok-2021-06-opening"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-12-01",
+          "note": {
+            "en": "Winning bid announced in the bid evaluation summary.",
+            "ro": "Oferta câștigătoare anunțată în sinteza evaluării ofertelor."
+          },
+          "sourceRef": "magyarepitok-2017-12-tender"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2021-06-14",
+          "note": {
+            "en": "One carriageway opened toward Fertőrákos with one lane at 60 km/h as a diversion.",
+            "ro": "Un sens deschis spre Fertőrákos pe o bandă, cu 60 km/h, ca deviere."
+          },
+          "sourceRef": "hu-wikipedia-m85"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-10",
+          "sourceRef": "magyarepitok-2021-12-opening"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The NIF release at the opening says the project is carried out from domestic funds.",
+            "ro": "Comunicatul NIF de la deschidere indică faptul că proiectul se realizează din fonduri interne."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dömper Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra-Raab Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 20400,
+          "currency": "HUF",
+          "note": "Net of VAT. Contract value of the DS Konzorcium for the whole Sopron-kelet – Fertőrákos section as stated in June 2021."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true
+      },
+      "note": {
+        "en": "Km 85+100–89+000, 3.9 km from the Balf junction to Fertőrákos. Opening was held back until the new Mély út link in Sopron was ready, so the carriageway toward Fertőrákos was first opened with one lane at 60 km/h from 14 June 2021, and the other carriageway with a speed limit from 22 July 2021. The final opening was on 10 December 2021. The contract for the whole Sopron-kelet – Fertőrákos section (6.4 km, also covering the previous lot) was bid at HUF 17.7 billion net in 2017 and is stated as HUF 20.4 billion net in the June 2021 release, which also says the section had to be supplemented with the Mély út link and other works. The value is recorded on this lot only. Financed from domestic funds.",
+        "ro": "Km 85+100–89+000, 3,9 km de la nodul Balf la Fertőrákos. Deschiderea a fost amânată până la finalizarea noii legături Mély út din Sopron, așa că sensul spre Fertőrákos a fost deschis mai întâi pe o bandă, cu 60 km/h, din 14 iunie 2021, iar celălalt sens cu limită de viteză din 22 iulie 2021. Deschiderea finală a avut loc la 10 decembrie 2021. Contractul pentru întreaga secțiune Sopron-kelet – Fertőrákos (6,4 km, care acoperă și lotul precedent) a fost ofertat la 17,7 mld. HUF fără TVA în 2017 și este indicat la 20,4 mld. HUF fără TVA în comunicatul din iunie 2021, care precizează și că secțiunea a trebuit completată cu legătura Mély út și alte lucrări. Valoarea este înregistrată doar la acest lot. Finanțat din fonduri interne."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "magyarepitok-2017-12-tender",
+        "magyarepitok-2021-06-opening",
+        "magyarepitok-2021-12-opening",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "balf-fertorakos"
+    },
+    {
+      "id": "fertorakos-border",
+      "name": {
+        "en": "Fertőrákos – Sopron (Austrian border), incl. Sopron tunnel",
+        "ro": "Fertőrákos – Sopron (granița cu Austria), inclusiv tunelul Sopron"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-06-11",
+        "opened": "2024-12-14"
+      },
+      "lengthKm": 4.12,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 49900,
+              "currency": "HUF",
+              "year": 2019,
+              "note": "Net of VAT. Whole package: 3.95 km road, Sopron tunnel, two bridges, link to road 84, 3.6 km Sopron north-west bypass and renovation of road 84."
+            },
+            "date": "2019-06-11",
+            "sourceRef": "magyarepitok-2019-06-tunnel-contract"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-06-11",
+          "note": {
+            "en": "Winning consortium announced from EU procurement data.",
+            "ro": "Consorțiul câștigător anunțat pe baza datelor europene de achiziții."
+          },
+          "sourceRef": "magyarepitok-2019-06-tunnel-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-14",
+          "sourceRef": "hu-wikipedia-soproni-alagut"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Dömper Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Pannon-Doprastav Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra-Raab Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 49900,
+          "currency": "HUF",
+          "year": 2019,
+          "note": "Net of VAT. Whole package: 3.95 km road, Sopron tunnel, two bridges, link to road 84, 3.6 km Sopron north-west bypass and renovation of road 84."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4,
+        "tolled": true,
+        "tunnelKm": 0.78
+      },
+      "note": {
+        "en": "Km 89+000–93+119, from the Fertőrákos junction through the 780 m Sopron tunnel under the Bécsi-domb to the end at road 84 near the Austrian border. Opened on 14 December 2024; the main hu.wikipedia text gives 17 December, citing a 444.hu article whose address is dated 14 December, while the tunnel article and the section table give 14 December. The contract, announced on 11 June 2019 at net HUF 49.9 billion, went to the consortium of Dömper Kft., Pannon-Doprastav Kft. and Subterra-Raab Kft. It covers 3.95 km of 2x2 road, the tunnel, two road bridges, a 725 m temporary link to road 84, the 3.6 km north-west bypass of Sopron and the renovation of road 84 to the border crossing, so it is not the cost of this lot alone. The lead of the source article quotes about HUF 43.9 billion for the project. Excavation of the tunnel began on 26 October 2020. The OpenStreetMap line is about 0.5 km longer than the sourced length.",
+        "ro": "Km 89+000–93+119, de la nodul Fertőrákos, prin tunelul Sopron de 780 m de sub Bécsi-domb, până la capătul de la drumul 84, lângă granița cu Austria. Deschis la 14 decembrie 2024; textul principal de pe hu.wikipedia indică 17 decembrie, citând un articol 444.hu a cărui adresă poartă data de 14 decembrie, în timp ce articolul despre tunel și tabelul de secțiuni indică 14 decembrie. Contractul, anunțat la 11 iunie 2019 la 49,9 mld. HUF fără TVA, a revenit consorțiului Dömper Kft., Pannon-Doprastav Kft. și Subterra-Raab Kft. Acoperă 3,95 km de drum 2x2, tunelul, două poduri rutiere, o legătură provizorie de 725 m la drumul 84, ocolitoarea de nord-vest a orașului Sopron de 3,6 km și renovarea drumului 84 până la punctul de frontieră, deci nu este costul acestui lot singur. Introducerea articolului sursă citează aproximativ 43,9 mld. HUF pentru proiect. Excavarea tunelului a început la 26 octombrie 2020. Linia OpenStreetMap este cu aproximativ 0,5 km mai lungă decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m85",
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-soproni-alagut",
+        "magyarepitok-2019-06-tunnel-contract",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "fertorakos-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-m85",
+      "title": "Wikipedia (hu): M85-ös autóút (Magyarország), section history, tender results and interchange list",
+      "url": "https://hu.wikipedia.org/wiki/M85-%C3%B6s_aut%C3%B3%C3%BAt_(Magyarorsz%C3%A1g)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-autopalyak",
+      "title": "Wikipedia (hu): Magyarország autópályái, chronological table of sections with chainage and length",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_aut%C3%B3p%C3%A1ly%C3%A1i",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-soproni-alagut",
+      "title": "Wikipedia (hu): Soproni alagút",
+      "url": "https://hu.wikipedia.org/wiki/Soproni_alag%C3%BAt",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "magyarepitok-2017-12-tender",
+      "title": "Magyar Építők: Ezek a cégek vihetik el Sopronig az M85-öst (December 2017, bid evaluation summary)",
+      "url": "https://magyarepitok.hu/utepites/2017/12/ezek-a-cegek-vihetik-el-sopronig-az-m85-ost",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "magyarepitok-2019-06-tunnel-contract",
+      "title": "Magyar Építők: Kiderült, kik építik meg az M85-ös közel kilométeres alagútját (June 2019)",
+      "url": "https://magyarepitok.hu/aktualis/2019/06/kiderult-kik-epitik-meg-az-m85-os-kozel-kilometeres-alagutjat",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "magyarepitok-2020-12-opening",
+      "title": "Magyar Építők: Sopron is bekapcsolódott a gyorsforgalmi hálózatba (December 2020)",
+      "url": "https://magyarepitok.hu/utepites/2020/12/sopron-is-bekapcsolodott-a-gyorsforgalmi-halozatba",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "magyarepitok-2021-06-opening",
+      "title": "Magyar Építők: Átadták az M85 autóút legújabb szakaszát (June 2021)",
+      "url": "https://magyarepitok.hu/utepites/2021/06/atadtak-az-m85-autout-legujabb-szakaszat",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "magyarepitok-2021-12-opening",
+      "title": "Magyar Építők: M85: hivatalosan is megnyílt az autóút Balf és Fertőrákos között (December 2021)",
+      "url": "https://magyarepitok.hu/utepites/2021/12/m85-hivatalosan-is-megnyilt-az-autout-balf-es-fertorakos-kozott-",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: ways with ref M85, via Overpass (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

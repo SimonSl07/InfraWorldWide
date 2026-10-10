@@ -1,0 +1,310 @@
+{
+  "id": "hu-m6",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M6 motorway (Budapest – Dunaújváros – Szekszárd – Bóly – Ivándárda)",
+    "ro": "Autostrada M6 (Budapesta – Dunaújváros – Szekszárd – Bóly – Ivándárda)"
+  },
+  "description": {
+    "en": "Motorway along the right bank of the Danube from the M0 ring at Budapest to the Croatian border at Ivándárda, where it meets the A5. Sections opened from 2006 (Érdi tető – Dunaújváros) to 2025 (Lippó – Ivándárda). Three sections were built under PPP concessions; the M60 branch to Pécs is a separate project. Lots follow the opening dates and concession sections, cut at mapped junctions. Lengths are measured from OpenStreetMap unless a page figure is stated in the lot note.",
+    "ro": "Autostradă pe malul drept al Dunării, de la inelul M0 de la Budapesta până la granița croată de la Ivándárda, unde se leagă de A5. Sectoarele au fost deschise din 2006 (Érdi tető – Dunaújváros) până în 2025 (Lippó – Ivándárda). Trei sectoare au fost construite în concesiune PPP; ramura M60 spre Pécs este un proiect separat. Loturile urmează datele deschiderii și sectoarele concesionate, tăiate la nodurile cartografiate. Lungimile sunt măsurate din OpenStreetMap, în afară de cazul în care nota lotului indică o cifră din pagină."
+  },
+  "operator": "hu-nif",
+  "lots": [
+    {
+      "id": "m0-erdi-teto",
+      "name": {
+        "en": "M0 – Érdi tető",
+        "ro": "M0 – Érdi tető"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-09-23"
+      },
+      "lengthKm": 7,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-09-23",
+          "sourceRef": "hu-wikipedia-m6"
+        }
+      ],
+      "note": {
+        "en": "Opened on 23 September 2008, after the section beyond Érdi tető. Length (7 km) from the kilometre markers in the hu.wikipedia junction list (M0 junction at km 15, Érdi tető at km 22); the drawn centreline measures about 6.5 km. No concessionaire or builder is named for this stretch; the article says Magyar Közút Nonprofit Zrt. operates it.",
+        "ro": "Deschis la 23 septembrie 2008, după sectorul de dincolo de Érdi tető. Lungimea (7 km) provine din kilometrajul din lista nodurilor de pe hu.wikipedia (nodul M0 la km 15, Érdi tető la km 22); axul desenat măsoară circa 6,5 km. Pentru acest tronson nu sunt numiți concesionar sau constructor; articolul indică Magyar Közút Nonprofit Zrt. ca operator."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m6",
+        "osm-relation-m6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "m0-erdi-teto"
+    },
+    {
+      "id": "erdi-teto-dunaujvaros",
+      "name": {
+        "en": "Érdi tető – Dunaújváros",
+        "ro": "Érdi tető – Dunaújváros"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-06-11"
+      },
+      "lengthKm": 53.7,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2006-06-11",
+          "sourceRef": "hu-wikipedia-m6"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "M6 Duna Autópálya Koncessziós Zrt.",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Opened on 11 June 2006, the first section of the M6. Concession company M6 Duna Autópálya Koncessziós Zrt., founded in 2004 by Bilfinger Berger Project Investments GmbH, Porr Infrastruktur GmbH and Swietelsky International Baugesellschaft GmbH; the page does not name the builders. The en.wikipedia opening list gives 68 km for this section; it is not used because the hu.wikipedia junction list places Érdi tető at km 22 and the M8 junction at km 75, about 53 km apart.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Deschis la 11 iunie 2006, primul sector al M6. Concesionar: M6 Duna Autópálya Koncessziós Zrt., înființată în 2004 de Bilfinger Berger Project Investments GmbH, Porr Infrastruktur GmbH și Swietelsky International Baugesellschaft GmbH; pagina nu numește constructorii. Lista deschiderilor de pe en.wikipedia indică 68 km pentru acest sector; cifra nu este folosită, deoarece lista nodurilor de pe hu.wikipedia situează Érdi tető la km 22 și nodul M8 la km 75, adică la circa 53 km distanță."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m6",
+        "osm-relation-m6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "erdi-teto-dunaujvaros"
+    },
+    {
+      "id": "dunaujvaros-szekszard",
+      "name": {
+        "en": "Dunaújváros – Szekszárd",
+        "ro": "Dunaújváros – Szekszárd"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-03-31"
+      },
+      "lengthKm": 75.2,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2010-03-31",
+          "sourceRef": "index-m6-2010"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "M6 Tolna Autópálya Koncessziós Zrt.",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Opened on 31 March 2010, the same day as Szekszárd – Bóly: hu.wikipedia gives that date for Dunaújváros – Bóly and Index (31 March 2010) reports this section opened that day on a last-minute temporary permit. Concession company M6 Tolna Autópálya Koncessziós Zrt.; the page does not name the builders. The cut between this lot and the next is the Szekszárd-dél junction (km 151), an assumption: the page names the concession split at Szekszárd without a junction.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Deschis la 31 martie 2010, în aceeași zi cu Szekszárd – Bóly: hu.wikipedia indică această dată pentru Dunaújváros – Bóly, iar Index (31 martie 2010) relatează că sectorul a fost deschis în ziua respectivă cu o autorizație temporară obținută în ultimul moment. Concesionar: M6 Tolna Autópálya Koncessziós Zrt.; pagina nu numește constructorii. Limita față de lotul următor este nodul Szekszárd-dél (km 151), o presupunere: pagina indică împărțirea concesiunilor la Szekszárd fără a numi un nod."
+      },
+      "sourceRefs": [
+        "index-m6-2010",
+        "hu-wikipedia-m6",
+        "osm-relation-m6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dunaujvaros-szekszard"
+    },
+    {
+      "id": "szekszard-boly",
+      "name": {
+        "en": "Szekszárd – Bóly",
+        "ro": "Szekszárd – Bóly"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-03-31"
+      },
+      "lengthKm": 38.7,
+      "profile": {
+        "lanes": 4,
+        "tunnelKm": 3.01
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2010-03-31",
+          "sourceRef": "hu-wikipedia-m6"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Mecsek Autópálya Koncessziós Zrt.",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Opened on 31 March 2010 and ends at the M60 split near Bóly (km 191.6). Concession company Mecsek Autópálya Koncessziós Zrt., formed by Strabag AG, Colas S.A., Bouygues Travaux Publics S.A., John Laing Infrastructure Limited and Intertoll-Europe Zrt.; the page does not name the builders. Four tunnel pairs: Bátaszék 1,331 m, Geresd 399 m, Baranya 865 m and Véménd 418 m (3.01 km per carriageway), and nine larger bridges. From km 191.6 the main carriageways were not built and traffic ran on the collector lanes until the extension towards the border.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Deschis la 31 martie 2010, se termină la bifurcația M60 de lângă Bóly (km 191,6). Concesionar: Mecsek Autópálya Koncessziós Zrt., formată din Strabag AG, Colas S.A., Bouygues Travaux Publics S.A., John Laing Infrastructure Limited și Intertoll-Europe Zrt.; pagina nu numește constructorii. Patru perechi de tuneluri: Bátaszék 1.331 m, Geresd 399 m, Baranya 865 m și Véménd 418 m (3,01 km pe sens) și nouă poduri mai mari. De la km 191,6 căile principale nu au fost construite, iar traficul a circulat pe căile colectoare până la extinderea spre graniță."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m6",
+        "osm-relation-m6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szekszard-boly"
+    },
+    {
+      "id": "boly-lippo",
+      "name": {
+        "en": "Bóly – Lippó",
+        "ro": "Bóly – Lippó"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-12-12",
+        "opened": "2024-05-02"
+      },
+      "lengthKm": 14.8,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-02-10",
+          "sourceRef": "hu-wikipedia-m6",
+          "note": {
+            "en": "Procurement for Bóly – Ivándárda launched (TED notice).",
+            "ro": "Procedura de achiziție pentru Bóly – Ivándárda a fost lansată (anunț TED)."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-12-12",
+          "sourceRef": "hu-wikipedia-m6",
+          "note": {
+            "en": "NIF Zrt. signed the Bóly – Ivándárda contract.",
+            "ro": "NIF Zrt. a semnat contractul Bóly – Ivándárda."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2024-05-02",
+          "sourceRef": "hu-wikipedia-m6"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Építő Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt Út és Mélyépítő Kft.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Opened on 2 May 2024. NIF Zrt. signed the contract for the whole Bóly – Ivándárda stretch on 12 December 2020 with Strabag Építő Kft. and Duna Aszfalt Út és Mélyépítő Kft. for more than HUF 90 billion; the page does not say whether that is net or gross and it covers both lots, so no figure is recorded. Works area handed over and archaeology from 10 February 2021, earthworks planned from late March 2021; contract deadline May 2024. Ends at the Lippó junction.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Deschis la 2 mai 2024. NIF Zrt. a semnat la 12 decembrie 2020 contractul pentru întregul tronson Bóly – Ivándárda cu Strabag Építő Kft. și Duna Aszfalt Út és Mélyépítő Kft., pentru peste 90 de miliarde HUF; pagina nu precizează dacă suma este netă sau brută și acoperă ambele loturi, deci nu se înregistrează nicio cifră. Șantierul a fost predat și au început cercetările arheologice la 10 februarie 2021, iar terasamentele erau programate de la sfârșitul lui martie 2021; termen contractual mai 2024. Se termină la nodul Lippó."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m6",
+        "osm-relation-m6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "boly-lippo"
+    },
+    {
+      "id": "lippo-ivandarda",
+      "name": {
+        "en": "Lippó – Ivándárda",
+        "ro": "Lippó – Ivándárda"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-12-12",
+        "opened": "2025-10-07"
+      },
+      "lengthKm": 5,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-12-12",
+          "sourceRef": "hu-wikipedia-m6",
+          "note": {
+            "en": "NIF Zrt. signed the Bóly – Ivándárda contract.",
+            "ro": "NIF Zrt. a semnat contractul Bóly – Ivándárda."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-10-07",
+          "sourceRef": "hu-wikipedia-m6"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag Építő Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt Út és Mélyépítő Kft.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Last 5 km to the Croatian border at Ivándárda, handed over on 6 October 2025 with the Croatian A5 section from Pélmonostor to the border; traffic started on 7 October. Length (5 km) as stated in the hu.wikipedia article; the drawn centreline measures about 6.5 km. Same contract and contractors as Bóly – Lippó (see that lot for the contract).",
+        "ro": "Ultimii 5 km până la granița croată de la Ivándárda, predați la 6 octombrie 2025 odată cu sectorul croat al A5 de la Pélmonostor la graniță; traficul a început la 7 octombrie. Lungimea (5 km) provine de pe hu.wikipedia; axul desenat măsoară circa 6,5 km. Același contract și aceiași constructori ca la Bóly – Lippó (contractul se află la acel lot)."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m6",
+        "24hu-m6-border",
+        "osm-relation-m6",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lippo-ivandarda"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-m6",
+      "title": "Wikipedia (hu): M6-os autópálya (Magyarország), sections, concessions, tunnels, Bóly–Ivándárda construction",
+      "url": "https://hu.wikipedia.org/wiki/M6-os_aut%C3%B3p%C3%A1lya_(Magyarorsz%C3%A1g)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "24hu-m6-border",
+      "title": "24.hu: Vége az építkezésnek: új autópálya köti össze Magyarországot Horvátországgal (6 October 2025)",
+      "url": "https://24.hu/fn/gazdasag/2025/10/06/m6-autopalya-magyarorszag-horvatorszag-sztrada-epitoipar-kozlekedes",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "index-m6-2010",
+      "title": "Index: Egy órával közelebb került Pécs Budapesthez (31 March 2010)",
+      "url": "https://index.hu/gazdasag/magyar/2010/03/31/m6-atadas/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-m6",
+      "title": "OpenStreetMap: ways ref M6 (network HU:motorway), Overpass query 2026-10-10",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

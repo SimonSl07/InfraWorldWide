@@ -1,0 +1,531 @@
+{
+  "id": "hu-m3",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M3 motorway (Budapest – Gödöllő – Hatvan – Füzesabony – Nyíregyháza – Vásárosnamény – Ukrainian border)",
+    "ro": "Autostrada M3 (Budapesta – Gödöllő – Hatvan – Füzesabony – Nyíregyháza – Vásárosnamény – granița cu Ucraina)"
+  },
+  "description": {
+    "en": "The longest motorway in Hungary, from Budapest north-east to Vásárosnamény, with the last section to the Ukrainian border at Beregdaróc still planned (307 km in total per hu.wikipedia, 280 km in operation). It was built in stages: Budapest – Hatvan in 1978–1980, to Gyöngyös in 1983, then after a pause to Füzesabony in 1998, Polgár in 2002, Görbeháza in 2004, Nyíregyháza in 2006–2007 and Vásárosnamény in 2013–2014. The M30 (Miskolc) and M35 (Debrecen) branch off it. Lots follow the opening dates in the hu.wikipedia sections table. Builders and net contract sums are recorded where NIF pages state them, for the lots from Görbeháza onward.",
+    "ro": "Cea mai lungă autostradă a Ungariei, de la Budapesta spre nord-est până la Vásárosnamény, cu ultima secțiune spre granița cu Ucraina la Beregdaróc încă planificată (307 km în total conform hu.wikipedia, 280 km în exploatare). A fost construită pe etape: Budapesta – Hatvan în 1978–1980, până la Gyöngyös în 1983, apoi după o pauză până la Füzesabony în 1998, Polgár în 2002, Görbeháza în 2004, Nyíregyháza în 2006–2007 și Vásárosnamény în 2013–2014. Din ea se ramifică M30 (Miskolc) și M35 (Debrecen). Loturile urmează datele de deschidere din tabelul secțiunilor din hu.wikipedia. Constructorii și valorile nete ale contractelor sunt înregistrate acolo unde paginile NIF le indică, pentru loturile de la Görbeháza încolo."
+  },
+  "operator": "hu-nif",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "budapest-godollo",
+      "name": {
+        "en": "Budapest (Újpest–Rákospalota) – Gödöllő",
+        "ro": "Budapesta (Újpest–Rákospalota) – Gödöllő"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1978-10-16"
+      },
+      "lengthKm": 23.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1978-10-16",
+          "sourceRef": "hu-wikipedia-autopalyak"
+        }
+      ],
+      "note": {
+        "en": "Km 10+200 to 33+700 per the hu.wikipedia sections table; the first section, opened on 16 October 1978 as far as the Domonyvölgy viaduct; the table labels the end \"Gödöllő\", while en.wikipedia gives Budapest – Gödöllő as 14 km. The Budapest feeder was completed in stages: one bridge of the flyover over the Körvasút (400 m long, three lanes per direction) opened in 1978 and the flyover was finished in 1980. The inner Budapest part before km 10+200 is not drawn: the M3 in OpenStreetMap starts at the Újpest–Rákospalota junction. The Gödöllő cut is placed by chainage from the Hatvan junction. Drawn length 23.50 km.",
+        "ro": "Km 10+200 – 33+700 conform tabelului secțiunilor din hu.wikipedia; prima secțiune, deschisă la 16 octombrie 1978 până la viaductul Domonyvölgy; tabelul numește capătul „Gödöllő”, iar en.wikipedia indică Budapesta – Gödöllő ca 14 km. Accesul dinspre Budapesta a fost finalizat pe etape: un pod al pasajului peste Körvasút (400 m lungime, trei benzi pe sens) a fost deschis în 1978, iar pasajul a fost terminat în 1980. Partea interioară a Budapestei dinainte de km 10+200 nu este desenată: M3 din OpenStreetMap începe la nodul Újpest–Rákospalota. Limita Gödöllő este plasată prin kilometraj față de nodul Hatvan. Lungime desenată 23,50 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "en-wikipedia-m3",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "budapest-godollo"
+    },
+    {
+      "id": "godollo-hatvan",
+      "name": {
+        "en": "Gödöllő – Hatvan",
+        "ro": "Gödöllő – Hatvan"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1980-10-31"
+      },
+      "lengthKm": 21.4,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1980-10-31",
+          "sourceRef": "hu-wikipedia-autopalyak"
+        }
+      ],
+      "note": {
+        "en": "Km 33+700 to 55+100 per the hu.wikipedia sections table. Drawn length 21.00 km; the Gödöllő end is placed by chainage, as the sources give no junction there.",
+        "ro": "Km 33+700 – 55+100 conform tabelului secțiunilor din hu.wikipedia. Lungime desenată 21,00 km; capătul Gödöllő este plasat prin kilometraj, deoarece sursele nu indică un nod acolo."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "godollo-hatvan"
+    },
+    {
+      "id": "hatvan-gyongyos",
+      "name": {
+        "en": "Hatvan – Gyöngyös-nyugat",
+        "ro": "Hatvan – Gyöngyös-nyugat"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1983-04-29"
+      },
+      "lengthKm": 14.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1983-04-29",
+          "sourceRef": "hu-wikipedia-autopalyak"
+        }
+      ],
+      "note": {
+        "en": "Km 55+100 to 69+600 per the hu.wikipedia sections table. Construction then stopped and resumed only in 1996 (hu.wikipedia, M3 article). Drawn length 15.30 km.",
+        "ro": "Km 55+100 – 69+600 conform tabelului secțiunilor din hu.wikipedia. Construcția s-a oprit apoi și a fost reluată abia în 1996 (articolul M3 din hu.wikipedia). Lungime desenată 15,30 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hatvan-gyongyos"
+    },
+    {
+      "id": "gyongyos-fuzesabony",
+      "name": {
+        "en": "Gyöngyös-nyugat – Füzesabony",
+        "ro": "Gyöngyös-nyugat – Füzesabony"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1998-09-01"
+      },
+      "lengthKm": 44,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1998-09-01",
+          "sourceRef": "hu-wikipedia-autopalyak"
+        }
+      ],
+      "note": {
+        "en": "Km 69+600 to 113+600 per the hu.wikipedia sections table (44.0 km). Drawn length 43.25 km.",
+        "ro": "Km 69+600 – 113+600 conform tabelului secțiunilor din hu.wikipedia (44,0 km). Lungime desenată 43,25 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gyongyos-fuzesabony"
+    },
+    {
+      "id": "fuzesabony-polgar",
+      "name": {
+        "en": "Füzesabony – Polgár",
+        "ro": "Füzesabony – Polgár"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2002-12-05"
+      },
+      "lengthKm": 60.45,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2002-12-05",
+          "sourceRef": "hu-wikipedia-autopalyak"
+        }
+      ],
+      "note": {
+        "en": "Km 114+350 to 174+800 per the hu.wikipedia sections table; the table opens this section at 114+350 and the previous one ends at 113+600, so 0.75 km between them is not allocated to either lot. The table gives 5 December 2002 and the article text only 2002. Origo, 27 November 2002, announces the handover of the 60 km Füzesabony – Polgár section on 5 December in Tiszaújváros. The section includes the 405.5 m Polgár Tisza bridge (en.wikipedia). Drawn length 61.57 km.",
+        "ro": "Km 114+350 – 174+800 conform tabelului secțiunilor din hu.wikipedia; tabelul începe această secțiune la 114+350, iar cea anterioară se termină la 113+600, deci 0,75 km dintre ele nu sunt atribuiți niciunui lot. Tabelul indică 5 decembrie 2002, iar textul articolului doar 2002. Origo, 27 noiembrie 2002, anunță predarea secțiunii Füzesabony – Polgár, de 60 km, la 5 decembrie la Tiszaújváros. Secțiunea include podul Tisza de la Polgár, de 405,5 m (en.wikipedia). Lungime desenată 61,57 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "origo-m3-fuzesabony-polgar-2002",
+        "en-wikipedia-m3",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "fuzesabony-polgar"
+    },
+    {
+      "id": "polgar-gorbeheza",
+      "name": {
+        "en": "Polgár – Görbeháza (M35 junction)",
+        "ro": "Polgár – Görbeháza (nodul M35)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004-09-07"
+      },
+      "lengthKm": 13,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2004-09-07",
+          "sourceRef": "origo-m3-polgar-gorbeheza-2004"
+        }
+      ],
+      "note": {
+        "en": "Km 174+800 to 187+800 per the hu.wikipedia sections table (13.0 km). Origo reports it opened on Tuesday 7 September 2004, \"close to 13 kilometres\", built for 21.2 billion forints in about 21 months (en.wikipedia gives October 2004). The M35 to Debrecen branches off at Görbeháza. Drawn length 11.15 km, 14% under the sourced figure; the sections table and the junction positions in OpenStreetMap differ by about 2 km at this end.",
+        "ro": "Km 174+800 – 187+800 conform tabelului secțiunilor din hu.wikipedia (13,0 km). Origo relatează că a fost deschis marți, 7 septembrie 2004, „aproape 13 kilometri”, construit cu 21,2 miliarde de forinți în circa 21 de luni (en.wikipedia indică octombrie 2004). M35 spre Debrecen se desparte la Görbeháza. Lungime desenată 11,15 km, cu 14% sub cifra din sursă; tabelul secțiunilor și poziția nodurilor din OpenStreetMap diferă cu aproximativ 2 km la acest capăt."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "origo-m3-polgar-gorbeheza-2004",
+        "en-wikipedia-m3",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "polgar-gorbeheza"
+    },
+    {
+      "id": "gorbeheza-nyiregyhaza",
+      "name": {
+        "en": "Görbeháza – Nyíregyháza-dél",
+        "ro": "Görbeháza – Nyíregyháza-dél"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-08-31"
+      },
+      "lengthKm": 39,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-08-31",
+          "sourceRef": "nif-m3-gorbehaza-nyiregyhaza-2007"
+        }
+      ],
+      "note": {
+        "en": "Km 187+800 to 226+800 per the hu.wikipedia sections table (39.0 km; the article text says 41 km). NIF reports it opened on Friday 31 August 2007, \"close to 40 km\", with 20 structures over the motorway and 11 bridges. Drawn length 40.20 km.",
+        "ro": "Km 187+800 – 226+800 conform tabelului secțiunilor din hu.wikipedia (39,0 km; textul articolului indică 41 km). NIF relatează că a fost deschis vineri, 31 august 2007, „aproape 40 km”, cu 20 de lucrări de artă peste autostradă și 11 poduri. Lungime desenată 40,20 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "nif-m3-gorbehaza-nyiregyhaza-2007",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gorbeheza-nyiregyhaza",
+      "contractors": [
+        {
+          "name": "BETONÚT Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "UNITEF Zrt., FŐMTERV Zrt., UTIBER Kft.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "nyiregyhaza-nagykallo",
+      "name": {
+        "en": "Nyíregyháza bypass (Nyíregyháza-dél – Nagykálló)",
+        "ro": "Ocolitoarea Nyíregyháza (Nyíregyháza-dél – Nagykálló)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006-08-03"
+      },
+      "lengthKm": 8.1,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2006-08-03",
+          "sourceRef": "nif-m3-nyiregyhaza-bypass-2006"
+        }
+      ],
+      "note": {
+        "en": "Km 226+800 to 234+900 per the hu.wikipedia sections table. The NIF release dated 3 August 2006 says it was handed over that morning (hu.wikipedia text and en.wikipedia give 5 August 2006), a year before the Görbeháza – Nyíregyháza section reached it. The release describes an 8.1 km motorway section with two junctions, a rest-area pair and 17 structures. Its 32.9 billion forint figure covers the whole investment, which also includes the 15.4 km road 403 bypass and works on road 4, so it is not recorded as this lot's cost. Drawn length 7.69 km.",
+        "ro": "Km 226+800 – 234+900 conform tabelului secțiunilor din hu.wikipedia. Comunicatul NIF din 3 august 2006 spune că a fost predat în acea dimineață (textul hu.wikipedia și en.wikipedia indică 5 august 2006), cu un an înainte ca secțiunea Görbeháza – Nyíregyháza să ajungă la el. Comunicatul descrie o secțiune de autostradă de 8,1 km cu două noduri, o pereche de zone de odihnă și 17 lucrări de artă. Cifra de 32,9 miliarde de forinți acoperă întreaga investiție, care include și ocolitoarea drumului 403, de 15,4 km, și lucrări pe drumul 4, deci nu este înregistrată drept costul acestui lot. Lungime desenată 7,69 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "nif-m3-nyiregyhaza-bypass-2006",
+        "en-wikipedia-m3",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nyiregyhaza-nagykallo",
+      "contractors": [
+        {
+          "name": "EGÚT Egri Útépítő Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "UVATERV Zrt.",
+          "role": "designer"
+        }
+      ]
+    },
+    {
+      "id": "nagykallo-or",
+      "name": {
+        "en": "Nagykálló – Őr",
+        "ro": "Nagykálló – Őr"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-01-16"
+      },
+      "lengthKm": 33.762,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2013-01-16",
+          "sourceRef": "nif-m3-nagykallo-or-2013"
+        }
+      ],
+      "note": {
+        "en": "Km 234+900 to 268+662 per the hu.wikipedia sections table (33.762 km; the article text says 33.8 km). NIF opened it to traffic provisionally on 16 January 2013; the article records the Ófehértó maintenance depot handover and final traffic approval on 18 June 2013. The NIF project page gives a net contract sum for the works of 34,583,372,826 forints, while the opening release gives a net 31.9 billion forints for the 33.8 km investment, financed 85% by the EU and 15% from domestic funds; the two figures are not reconciled and neither is recorded as a cost. The M49 to Csenger branches off at Őr. Drawn length 32.89 km.",
+        "ro": "Km 234+900 – 268+662 conform tabelului secțiunilor din hu.wikipedia (33,762 km; textul articolului indică 33,8 km). NIF l-a deschis provizoriu circulației la 16 ianuarie 2013; articolul consemnează predarea depoului de întreținere de la Ófehértó și aprobarea finală a circulației la 18 iunie 2013. Pagina de proiect NIF indică o valoare netă a contractului de lucrări de 34.583.372.826 de forinți, iar comunicatul de deschidere indică 31,9 miliarde de forinți net pentru investiția de 33,8 km, finanțată 85% de UE și 15% din fonduri interne; cele două cifre nu sunt reconciliate și niciuna nu este înregistrată drept cost. M49 spre Csenger se desparte la Őr. Lungime desenată 32,89 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "nif-m3-nagykallo-or-2013",
+        "nif-m3-nagykallo-or-project",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nagykallo-or",
+      "contractors": [
+        {
+          "name": "C.S.K.K. 2009 Kft. Projekttársaság",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.15
+        }
+      ]
+    },
+    {
+      "id": "or-vasarosnameny",
+      "name": {
+        "en": "Őr – Vásárosnamény",
+        "ro": "Őr – Vásárosnamény"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-10-10"
+      },
+      "lengthKm": 11.9,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2014-10-10",
+          "sourceRef": "nif-m3-or-vasarosnameny-2014"
+        }
+      ],
+      "note": {
+        "en": "Km 268+662 to 280+562 per the hu.wikipedia sections table (11.9 km), opened on 10 October 2014, a month ahead of the deadline per NIF. The NIF project page gives a net contract sum of 15,498,989,989 forints; the opening release says net 15.4 billion forints, built in 350 working days with 85% EU and 15% state funding. The section ends at an at-grade junction with road 41. The Őr cut is placed 11.9 km back from the end of the mapped motorway, as OpenStreetMap has no junction node at Őr, so the drawn length equals the sourced length by construction.",
+        "ro": "Km 268+662 – 280+562 conform tabelului secțiunilor din hu.wikipedia (11,9 km), deschis la 10 octombrie 2014, cu o lună înainte de termen conform NIF. Pagina de proiect NIF indică o valoare netă a contractului de 15.498.989.989 de forinți; comunicatul de deschidere indică 15,4 miliarde de forinți net, construit în 350 de zile lucrătoare, cu finanțare 85% UE și 15% de stat. Secțiunea se termină la un nod la nivel cu drumul 41. Limita Őr este plasată la 11,9 km de capătul autostrăzii cartografiate, deoarece OpenStreetMap nu are un nod la Őr, deci lungimea desenată este egală cu cea din sursă prin construcție."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-autopalyak",
+        "hu-wikipedia-m3",
+        "nif-m3-or-vasarosnameny-2014",
+        "nif-m3-or-vasarosnameny-project",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "or-vasarosnameny",
+      "contractors": [
+        {
+          "name": "M3 KRASZNA 2012 Konzorcium (STRABAG Általános Építő Kft., KÖZGÉP Zrt., COLAS Hungária Zrt.)",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.85
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.15
+        }
+      ]
+    },
+    {
+      "id": "vasarosnameny-border",
+      "name": {
+        "en": "Vásárosnamény – Beregdaróc (Ukrainian border)",
+        "ro": "Vásárosnamény – Beregdaróc (granița cu Ucraina)"
+      },
+      "status": "planned",
+      "lengthKm": 22.635,
+      "note": {
+        "en": "Last missing section, a new alignment from the M3–M34 junction at Vásárosnamény to Beregdaróc on the Ukrainian border, with a new Tisza bridge (about 210 m span), a border crossing, four grade-separated junctions and 29 structures in all. The NIF project page (18 January 2018) gives 22,635 m (\"about 23 km\"), phase \"preparation\", with a feasibility study, an environmental permit and a permit design, financed by the Hungarian state. Magyar Építők gives 23 km in 2020 and about 25 km in 2017. The total M3 length of 307 km with 280 km in operation (hu.wikipedia) leaves 27 km, about 4 km more than the NIF section, which suggests that stretch lies between the end of the built motorway and the M3–M34 junction. On 22 September 2020 NIF announced the winner of the design tender for the permit design (Főmterv, Utiber and Constreal consortium). In March 2024 the chief executive of MKIF said the M3 will also reach the border in its ten-year road programme, with no date for this section. No construction contract or date was found. The drawn line follows the OpenStreetMap highway=proposed ways, which run 31.42 km from the end of the built motorway to a point near Beregdaróc, well over the sourced length, so the drawn line is indicative only. The 2020 design contract value is not stated in the page read.",
+        "ro": "Ultima secțiune lipsă, un traseu nou de la nodul M3–M34 de la Vásárosnamény până la Beregdaróc, la granița cu Ucraina, cu un pod nou peste Tisa (deschidere de circa 210 m), un punct de trecere a frontierei, patru noduri denivelate și 29 de lucrări de artă în total. Pagina de proiect NIF (18 ianuarie 2018) indică 22.635 m („circa 23 km”), faza „pregătire”, cu studiu de fezabilitate, aviz de mediu și proiect de autorizare, finanțat de statul maghiar. Magyar Építők indică 23 km în 2020 și circa 25 km în 2017. Lungimea totală a M3 de 307 km, din care 280 km în exploatare (hu.wikipedia), lasă 27 km, cu circa 4 km mai mult decât secțiunea NIF, ceea ce sugerează că acel tronson se află între capătul autostrăzii construite și nodul M3–M34. La 22 septembrie 2020 NIF a anunțat câștigătorul licitației de proiectare pentru proiectul de autorizare (consorțiul Főmterv, Utiber și Constreal). În martie 2024 directorul general al MKIF a spus că M3 va ajunge și la graniță în programul de zece ani al drumurilor, fără o dată pentru această secțiune. Nu a fost găsit niciun contract de execuție sau vreo dată. Linia desenată urmează căile OpenStreetMap highway=proposed, care măsoară 31,42 km de la capătul autostrăzii construite până lângă Beregdaróc, mult peste lungimea din sursă, deci linia desenată este orientativă. Valoarea contractului de proiectare din 2020 nu este indicată în pagina citită."
+      },
+      "contractors": [
+        {
+          "name": "Főmterv Mérnöki Tervező Zrt., Utiber Közúti Beruházó Kft., Constreal Mérnöki Iroda Kft. (consortium)",
+          "role": "designer"
+        }
+      ],
+      "sourceRefs": [
+        "magyarepitok-m3-2020",
+        "magyarepitok-m3-2017",
+        "hu-wikipedia-m3",
+        "nif-m3-vasarosnameny-beregdaroc-project",
+        "vg-mkif-2024",
+        "osm-ways-m3",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "vasarosnameny-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-m3",
+      "title": "Wikipedia (hu): M3-as autópálya (Magyarország)",
+      "url": "https://hu.wikipedia.org/wiki/M3-as_aut%C3%B3p%C3%A1lya_(Magyarorsz%C3%A1g)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hu-wikipedia-autopalyak",
+      "title": "Wikipedia (hu): Magyarország autópályái, chronological table of sections with km chainage",
+      "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_aut%C3%B3p%C3%A1ly%C3%A1i",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "magyarepitok-m3-2020",
+      "title": "Magyar Építők: Új Tisza-híddal és határátkelővel épül meg az M3-as utolsó szakasza (22 September 2020)",
+      "url": "https://magyarepitok.hu/utepites/2020/09/megcelozza-az-ukran-hatart-az-m3-as-kihirdettek-a-tervezot",
+      "publisher": "Magyar Építők",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "magyarepitok-m3-2017",
+      "title": "Magyar Építők: Ezzel a szakasszal éri el az ukrán határt M3-as autópálya (September 2017)",
+      "url": "https://magyarepitok.hu/utepites/2017/09/ezzel-a-beruhazassal-epul-meg-az-m3-as-befejezo-szakasza",
+      "publisher": "Magyar Építők",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "en-wikipedia-m3",
+      "title": "Wikipedia (en): M3 motorway (Hungary)",
+      "url": "https://en.wikipedia.org/wiki/M3_motorway_(Hungary)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "origo-m3-fuzesabony-polgar-2002",
+      "title": "Origo: Átadták a felújított M7-es autópályát (27 November 2002; announces the M3 Füzesabony – Polgár handover on 5 December)",
+      "url": "https://www.origo.hu/itthon/20021127elkeszult.html",
+      "publisher": "Origo",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "origo-m3-polgar-gorbeheza-2004",
+      "title": "Origo: Átadták az M3-as új szakaszát (7 September 2004)",
+      "url": "https://www.origo.hu/gazdasag/20040907atadtak.html",
+      "publisher": "Origo",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m3-nyiregyhaza-bypass-2006",
+      "title": "NIF: Ma délelőtt átadták az M3 autópálya Nyíregyháza déli elkerülő szakaszát (3 August 2006)",
+      "url": "https://nif.hu/2006/08/ma-delelott-atadtak-az-m3-autopalya-nyiregyhaza-deli-elkerulo-szakaszat/",
+      "publisher": "NIF Zrt.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m3-gorbehaza-nyiregyhaza-2007",
+      "title": "NIF: Átadták az M3-as autópálya Görbeháza–Nyíregyháza közötti szakaszát (31 August 2007)",
+      "url": "https://archivum.nif.hu/2007/09/atadtak-az-m3-as-autopalya-gorbehaza-nyiregyhaza-kozotti-szakaszat/",
+      "publisher": "NIF Zrt.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m3-nagykallo-or-2013",
+      "title": "NIF: Megnyílt a forgalom előtt az M3-as új szakasza (16 January 2013)",
+      "url": "https://archivum.nif.hu/2013/01/megnyilt-a-forgalom-elott-az-m3-as-uj-szakasza/",
+      "publisher": "NIF Zrt.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m3-nagykallo-or-project",
+      "title": "NIF: M3 autópálya Nyíregyháza-Őr közötti szakasz kivitelezése (project page, 28 October 2015)",
+      "url": "https://archivum.nif.hu/projektek/2015/10/m3-autopalya-nyiregyhaza-or-kozotti-szakasz/",
+      "publisher": "NIF Zrt.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m3-or-vasarosnameny-2014",
+      "title": "NIF: MÁR VÁSÁROSNAMÉNYIG ÉR AZ M3 (10 October 2014)",
+      "url": "https://archivum.nif.hu/2014/10/mar-vasarosnamenyig-er-az-m3/",
+      "publisher": "NIF Zrt.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m3-or-vasarosnameny-project",
+      "title": "NIF: M3 autópálya Őr-Vásárosnamény közötti szakasz kivitelezése (project page, 28 October 2015)",
+      "url": "https://archivum.nif.hu/projektek/2015/10/m3-autopalya-or-vasarosnameny-kozotti-szakasz-kivitelezese/",
+      "publisher": "NIF Zrt.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m3-vasarosnameny-beregdaroc-project",
+      "title": "NIF: M3 gyorsforgalmi út Vásárosnamény (M3-M34 gyorsforgalmi út elválási csomópont) – Beregdaróc (országhatár) közötti szakasz előkészítése (project page, 18 January 2018)",
+      "url": "https://archivum.nif.hu/projektek/2018/01/m3-gyorsforgalmi-ut-vasarosnameny-m34-gyf-ut-elvalasi-csomopont-beregdaroc-orszaghatar-kozotti-2x1-savos-autopalyava-fejlesztheto-ut-kiepitesenek-elokeszitese/",
+      "publisher": "NIF Zrt.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "vg-mkif-2024",
+      "title": "Világgazdaság: Bejelentések sora: megvan, mikor indul az M1-es, az M7-es és az M3-as autópálya bővítése (10 March 2024; interview with the MKIF chief executive)",
+      "url": "https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2024/03/bejelentesek-sora-megvan-mikor-indul-az-m1-es-az-m7-es-es-az-m3-as-autopalya-bovitese-ezermilliardokbol-rakjak-rendbe-a-magyar-utakat",
+      "publisher": "Világgazdaság",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-ways-m3",
+      "title": "OpenStreetMap: motorway and proposed ways with ref M3 (network HU:motorway)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

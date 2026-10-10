@@ -1,0 +1,583 @@
+{
+  "id": "hu-m44",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M44 expressway (Kecskemét – Kunszentmárton – Békéscsaba)",
+    "ro": "Drumul expres M44 (Kecskemét – Kunszentmárton – Békéscsaba)"
+  },
+  "description": {
+    "en": "Expressway from the M5 at Kecskemét east to Békéscsaba, built by NIF in sections from 2017. Lots follow the opened sections: Tiszakürt – Kondoros (2019, three contract stages), Kondoros – Békéscsaba (2020), Lakitelek – Tiszakürt (2021), Szentkirály – Lakitelek (2024) and Kecskemét – Szentkirály (2025). The interchange with the M5 is under construction. Contract values come from hu.wikipedia and the investment portal and are in HUF millions; the VAT basis is given only where stated. The planned extension from Békéscsaba to the Romanian border is not recorded.",
+    "ro": "Drum expres de la M5 la Kecskemét spre est până la Békéscsaba, construit de NIF pe secțiuni din 2017. Loturile urmează secțiunile deschise: Tiszakürt – Kondoros (2019, trei etape contractuale), Kondoros – Békéscsaba (2020), Lakitelek – Tiszakürt (2021), Szentkirály – Lakitelek (2024) și Kecskemét – Szentkirály (2025). Nodul cu M5 este în construcție. Valorile contractelor provin din hu.wikipedia și portalul de investiții și sunt în milioane HUF; baza TVA este dată doar unde este precizată. Extinderea planificată de la Békéscsaba până la granița cu România nu este înregistrată."
+  },
+  "operator": "hu-nif",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "kecskemet-m5-csomopont",
+      "name": {
+        "en": "Kecskemét (M5 interchange – road 5)",
+        "ro": "Kecskemét (nodul M5 – drumul 5)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2024-05-13",
+        "expectedOpening": "2027-02-28"
+      },
+      "lengthKm": 1.8,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2024-05-13",
+          "sourceRef": "beruhazas-m44-kecskemet-szentkiraly-ii"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hódút Építő Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 41981.77,
+          "currency": "HUF",
+          "note": "Net of VAT. Contract date not stated, so no price year."
+        }
+      },
+      "note": {
+        "en": "Second stage of the Kecskemét–Szentkirály section: a full cloverleaf interchange where the M44 meets the M5, plus 1.8 km of 2x2 expressway. Until it opens the M44 and M5 connect only towards Budapest at the Kecskemét-Centrum junction. The investment portal gives construction start 13 May 2024, a completion deadline of 28 February 2027 and a net contract sum of HUF 41,981,774,352. The contract date is not given, so the figure has no price year and no award revision is recorded. The drawn length covers only the mapped construction ways and is shorter than the sourced 1.8 km.",
+        "ro": "A doua etapă a secțiunii Kecskemét–Szentkirály: un nod complet tip trifoi unde M44 întâlnește M5, plus 1,8 km de drum expres 2x2. Până la deschidere, M44 și M5 se leagă doar spre Budapesta la nodul Kecskemét-Centrum. Portalul de investiții indică începutul lucrărilor la 13 mai 2024, termenul de finalizare 28 februarie 2027 și o sumă netă a contractului de 41.981.774.352 HUF. Data contractului nu este dată, deci cifra nu are an de preț și nu se înregistrează o revizuire de atribuire. Lungimea desenată cuprinde doar căile cartografiate în construcție și este mai mică decât cei 1,8 km din sursă."
+      },
+      "sourceRefs": [
+        "beruhazas-m44-kecskemet-szentkiraly-ii",
+        "hu-wikipedia-m44",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kecskemet-m5-csomopont"
+    },
+    {
+      "id": "kecskemet-szentkiraly",
+      "name": {
+        "en": "Kecskemét – Szentkirály",
+        "ro": "Kecskemét – Szentkirály"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-01",
+        "constructionStart": "2022-03-30",
+        "opened": "2025-04-15"
+      },
+      "lengthKm": 32.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 106996,
+              "currency": "HUF",
+              "year": 2022,
+              "note": "VAT basis not stated in the source."
+            },
+            "date": "2022-01",
+            "sourceRef": "hu-wikipedia-m44"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-06-06",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-01",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-03-30",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-04-15",
+          "sourceRef": "hu-wikipedia-m44"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Hódút Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 106996,
+          "currency": "HUF",
+          "year": 2022,
+          "note": "VAT basis not stated in the source."
+        }
+      },
+      "note": {
+        "en": "First stage: 32.3 km of 2x2 expressway without hard shoulder from road 5 at Kecskemét to Szentkirály, with a junction at road 441. The notice of 6 June 2021 gave 32.2 km and 14 structures. Hódút Kft. won at HUF 106.996 billion (announced January 2022; net or gross not stated). Works officially began on 30 March 2022 and the section opened on 15 April 2025. It runs on the alignment first planned as the M8.",
+        "ro": "Prima etapă: 32,3 km de drum expres 2x2 fără bandă de urgență, de la drumul 5 la Kecskemét până la Szentkirály, cu un nod la drumul 441. Anunțul din 6 iunie 2021 indica 32,2 km și 14 structuri. Hódút Kft. a câștigat cu 106,996 miliarde HUF (anunțat în ianuarie 2022; net sau brut nu este precizat). Lucrările au început oficial la 30 martie 2022, iar secțiunea a fost deschisă la 15 aprilie 2025. Urmează traseul planificat inițial ca M8."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m44",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kecskemet-szentkiraly"
+    },
+    {
+      "id": "szentkiraly-lakitelek",
+      "name": {
+        "en": "Szentkirály – Lakitelek",
+        "ro": "Szentkirály – Lakitelek"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2020-02",
+        "opened": "2024-05-07"
+      },
+      "lengthKm": 4.6,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2020-02",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-05-07",
+          "sourceRef": "hu-wikipedia-m44"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Közgép Építő- és Fémszerkezetgyártó Zrt.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 35490,
+          "currency": "HUF",
+          "note": "VAT basis not stated in the source. Covers design and build of this section and the side-road works named in the lot note."
+        }
+      },
+      "note": {
+        "en": "4.6 km of 2x2 expressway without hard shoulder. The design-build contract with Közgép (HUF 35.49 billion) also covers the 4623 side-road renewal, a 3.5 km Szentkirály bypass, the 4622 side-road renewal, a roundabout and 3.4 km of road 44, so it is not the cost of the expressway alone. A second Közgép contract of HUF 8.12 billion covers 20.3 km of road 44 and is not recorded here. Design and build began in February 2020 (month only given) and the section opened on 7 May 2024. The contract date is not given, so the figure has no price year and no award revision is recorded.",
+        "ro": "4,6 km de drum expres 2x2 fără bandă de urgență. Contractul de proiectare și execuție cu Közgép (35,49 miliarde HUF) cuprinde și renovarea drumului secundar 4623, o variantă ocolitoare Szentkirály de 3,5 km, renovarea drumului secundar 4622, un sens giratoriu și 3,4 km din drumul 44, deci nu este costul drumului expres singur. Un al doilea contract Közgép de 8,12 miliarde HUF acoperă 20,3 km din drumul 44 și nu este înregistrat aici. Proiectarea și execuția au început în februarie 2020 (se dă doar luna), iar secțiunea a fost deschisă la 7 mai 2024. Data contractului nu este dată, deci cifra nu are an de preț și nu se înregistrează o revizuire de atribuire."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m44",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szentkiraly-lakitelek"
+    },
+    {
+      "id": "lakitelek-tiszakurt",
+      "name": {
+        "en": "Lakitelek – Tiszakürt (with the Tisza bridge)",
+        "ro": "Lakitelek – Tiszakürt (with the Tisza bridge)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-04-28",
+        "constructionStart": "2018-07",
+        "opened": "2021-12-15"
+      },
+      "lengthKm": 9.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 51300,
+              "currency": "HUF",
+              "year": 2018,
+              "note": "VAT basis not stated in the source."
+            },
+            "date": "2018-04-28",
+            "sourceRef": "hu-wikipedia-m44"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-04-28",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-07",
+          "sourceRef": "nif-m44-lakitelek-tiszakurt"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2021-09-21",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-15",
+          "sourceRef": "hu-wikipedia-m44"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 51300,
+          "currency": "HUF",
+          "year": 2018,
+          "note": "VAT basis not stated in the source."
+        }
+      },
+      "note": {
+        "en": "9.9 km including the new Tisza bridge (552 m), opened in two parts: 6.7 km, with the bridge, on 15 December 2021 and 3.2 km on 21 September 2021 (from the Tiszakürt / Tiszaug junction to the temporary end of the Tiszakürt – Kondoros section). The award is dated by press reports of 28 April 2018 that named Duna Aszfalt at HUF 51.3 billion. The NIF page gives construction start July 2018 and a contract sum of HUF 51,308,917,861 (VAT basis not stated). The boundary with the next lot is placed by the sourced length of 9.9 km along the drawn line, not at the mapped Tiszakürt junction.",
+        "ro": "9,9 km incluzând noul pod peste Tisa (552 m), deschis în două părți: 6,7 km, cu podul, la 15 decembrie 2021 și 3,2 km la 21 septembrie 2021 (de la nodul Tiszakürt / Tiszaug până la capătul provizoriu al secțiunii Tiszakürt – Kondoros). Atribuirea este datată după presa din 28 aprilie 2018, care a numit Duna Aszfalt cu 51,3 miliarde HUF. Pagina NIF indică începutul lucrărilor în iulie 2018 și o sumă a contractului de 51.308.917.861 HUF (baza TVA nu este precizată). Limita cu lotul următor este plasată după lungimea de 9,9 km din sursă, măsurată pe linia desenată, nu la nodul Tiszakürt cartografiat."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m44",
+        "nif-m44-lakitelek-tiszakurt",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lakitelek-tiszakurt"
+    },
+    {
+      "id": "tiszakurt-kunszentmarton",
+      "name": {
+        "en": "Tiszakürt – Kunszentmárton",
+        "ro": "Tiszakürt – Kunszentmárton"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-11-15",
+        "constructionStart": "2017",
+        "opened": "2019-10-02"
+      },
+      "lengthKm": 9.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 56500,
+              "currency": "HUF",
+              "year": 2016,
+              "note": "VAT basis not stated in the source."
+            },
+            "date": "2016-11-15",
+            "sourceRef": "hu-wikipedia-m44"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-11-15",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-10-02",
+          "sourceRef": "hu-wikipedia-m44"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Hódút Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 56500,
+          "currency": "HUF",
+          "year": 2016,
+          "note": "VAT basis not stated in the source."
+        }
+      },
+      "note": {
+        "en": "First of three construction stages of the 61.2 km Tiszakürt – Kondoros section (opened 2 October 2019): Duna Aszfalt – Hódút consortium, HUF 56.5 billion. The three stages were tendered together (result announced 15 November 2016, contracts signed December 2016, foundation stone 21 December 2016, works from early 2017). The sources give no stage lengths. Length measured from OpenStreetMap geometry between the end of the Lakitelek – Tiszakürt lot (placed by its sourced length) and the Kunszentmárton junction. The three stage lengths sum to 59.4 km against 61.2 km sourced for the section.",
+        "ro": "Prima dintre cele trei etape de construcție ale secțiunii Tiszakürt – Kondoros de 61,2 km (deschisă la 2 octombrie 2019): consorțiul Duna Aszfalt – Hódút, 56,5 miliarde HUF. Cele trei etape au fost licitate împreună (rezultat anunțat la 15 noiembrie 2016, contracte semnate în decembrie 2016, piatra de temelie la 21 decembrie 2016, lucrări de la începutul lui 2017). Sursele nu dau lungimile etapelor. Lungime măsurată din geometria OpenStreetMap între capătul lotului Lakitelek – Tiszakürt (plasat după lungimea lui din sursă) și nodul Kunszentmárton. Cele trei lungimi însumează 59,4 km față de 61,2 km din sursă pentru secțiune."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m44",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "tiszakurt-kunszentmarton"
+    },
+    {
+      "id": "kunszentmarton-csabacsud",
+      "name": {
+        "en": "Kunszentmárton – Csabacsűd",
+        "ro": "Kunszentmárton – Csabacsűd"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-11-15",
+        "constructionStart": "2017",
+        "opened": "2019-10-02"
+      },
+      "lengthKm": 34.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 43980,
+              "currency": "HUF",
+              "year": 2016,
+              "note": "VAT basis not stated in the source."
+            },
+            "date": "2016-11-15",
+            "sourceRef": "hu-wikipedia-m44"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-11-15",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-10-02",
+          "sourceRef": "hu-wikipedia-m44"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "EuroAszfalt Építő és Szolgáltató Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky Magyarország Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Soltút Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "A-Híd Zrt.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 43980,
+          "currency": "HUF",
+          "year": 2016,
+          "note": "VAT basis not stated in the source."
+        }
+      },
+      "note": {
+        "en": "Second stage of the Tiszakürt – Kondoros section (opened 2 October 2019): EuroAszfalt – Swietelsky – Soltút – A-Híd consortium, HUF 43.98 billion. Includes the 450 m Berkó Dezső bridge over the Hármas-Körös. Length measured from OpenStreetMap geometry, cut at the Kunszentmárton and Kardos / Csabacsűd junctions.",
+        "ro": "A doua etapă a secțiunii Tiszakürt – Kondoros (deschisă la 2 octombrie 2019): consorțiul EuroAszfalt – Swietelsky – Soltút – A-Híd, 43,98 miliarde HUF. Include podul Berkó Dezső de 450 m peste Hármas-Körös. Lungime măsurată din geometria OpenStreetMap, tăiată la nodurile Kunszentmárton și Kardos / Csabacsűd."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m44",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kunszentmarton-csabacsud"
+    },
+    {
+      "id": "csabacsud-kondoros",
+      "name": {
+        "en": "Csabacsűd – Kondoros",
+        "ro": "Csabacsűd – Kondoros"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-11-15",
+        "constructionStart": "2017",
+        "opened": "2019-10-02"
+      },
+      "lengthKm": 16.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 45200,
+              "currency": "HUF",
+              "year": 2016,
+              "note": "VAT basis not stated in the source."
+            },
+            "date": "2016-11-15",
+            "sourceRef": "hu-wikipedia-m44"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016-11-15",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-10-02",
+          "sourceRef": "hu-wikipedia-m44"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Hódút Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 45200,
+          "currency": "HUF",
+          "year": 2016,
+          "note": "VAT basis not stated in the source."
+        }
+      },
+      "note": {
+        "en": "Third stage of the Tiszakürt – Kondoros section (opened 2 October 2019): Duna Aszfalt – Hódút consortium, HUF 45.2 billion. The sources give no stage lengths. Length measured from OpenStreetMap geometry between the Kardos / Csabacsűd junction and the start of the Kondoros – Békéscsaba lot, which is placed by that lot's sourced length of 17.6 km (the section ends east of the mapped Kondoros junction).",
+        "ro": "A treia etapă a secțiunii Tiszakürt – Kondoros (deschisă la 2 octombrie 2019): consorțiul Duna Aszfalt – Hódút, 45,2 miliarde HUF. Sursele nu dau lungimile etapelor. Lungime măsurată din geometria OpenStreetMap între nodul Kardos / Csabacsűd și începutul lotului Kondoros – Békéscsaba, plasat după lungimea acestuia din sursă de 17,6 km (secțiunea se termină la est de nodul Kondoros cartografiat)."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m44",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "csabacsud-kondoros"
+    },
+    {
+      "id": "kondoros-bekescsaba",
+      "name": {
+        "en": "Kondoros – Békéscsaba",
+        "ro": "Kondoros – Békéscsaba"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10-25",
+        "constructionStart": "2018-02",
+        "opened": "2020-12-11"
+      },
+      "lengthKm": 17.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 41400,
+              "currency": "HUF",
+              "year": 2017,
+              "note": "VAT basis not stated in the source."
+            },
+            "date": "2017-10-25",
+            "sourceRef": "hu-wikipedia-m44"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-05-05",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-10-25",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-02",
+          "sourceRef": "hu-wikipedia-m44"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-11",
+          "sourceRef": "hu-wikipedia-m44"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 41400,
+          "currency": "HUF",
+          "year": 2017,
+          "note": "VAT basis not stated in the source."
+        }
+      },
+      "note": {
+        "en": "17.6 km with one grade-separated junction (Békéscsaba-nyugat / Kétsoprony). The site was handed over in mid-February 2018 (month only recorded) and the section opened on 11 December 2020, 1.5 months before the 31 January 2021 deadline. Duna Aszfalt was named winner on 25 October 2017 at HUF 41.4 billion. Boundary placed by the sourced length: the start is 17.6 km before the end of the drawn line, east of the mapped Kondoros junction.",
+        "ro": "17,6 km cu un nod denivelat (Békéscsaba-nyugat / Kétsoprony). Șantierul a fost predat la jumătatea lui februarie 2018 (se înregistrează doar luna), iar secțiunea a fost deschisă la 11 decembrie 2020, cu 1,5 luni înaintea termenului din 31 ianuarie 2021. Duna Aszfalt a fost desemnat câștigător la 25 octombrie 2017 cu 41,4 miliarde HUF. Limită plasată după lungimea din sursă: începutul se află la 17,6 km înaintea capătului liniei desenate, la est de nodul Kondoros cartografiat."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m44",
+        "osm-m44",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kondoros-bekescsaba"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-wikipedia-m44",
+      "title": "Wikipedia (hu): M44-es autóút (Magyarország), sections, contractors, contract values, opening dates",
+      "url": "https://hu.wikipedia.org/wiki/M44-es_aut%C3%B3%C3%BAt_(Magyarorsz%C3%A1g)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nif-m44-lakitelek-tiszakurt",
+      "title": "NIF: Békéscsaba megközelítése, M44 Lakitelek – Tiszakürt (9.9 km, construction start July 2018, contract sum HUF 51,308,917,861)",
+      "url": "https://nif.hu/projektek/2015/11/m44-autout-nagykoros-tiszakurt-kozotti-szakasz/",
+      "retrievedOn": "2026-10-10",
+      "archiveUrl": "https://web.archive.org/web/20201221092514/https://nif.hu/projektek/2015/11/m44-autout-nagykoros-tiszakurt-kozotti-szakasz/"
+    },
+    {
+      "id": "beruhazas-m44-kecskemet-szentkiraly-ii",
+      "title": "Beruházási portál: Békéscsaba megközelítése, M44 Kecskemét–Szentkirály II. ütem (net contract sum HUF 41,981,774,352; start 13 May 2024; deadline 28 February 2027)",
+      "url": "https://beruhazas.gov.hu/projektek/bekescsaba-megkozelitese-m44-gyorsforgalmi-ut-kecskemet-szentkiraly-kozotti-szakasz-ii-utem-m44-autout-m5-autopalya-5-sz-fout-csomopontjai/48782",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-m44",
+      "title": "OpenStreetMap: ways with ref M44 (highway=trunk, highway=construction), cut at motorway_junction nodes",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
