@@ -1,0 +1,286 @@
+{
+  "id": "pl-rail-e65-warszawa-gdynia",
+  "country": "pl",
+  "category": "railway",
+  "name": {
+    "en": "E65 Warszawa – Gdynia railway modernisation (line 9)",
+    "ro": "Modernizarea căii ferate E65 Varșovia – Gdynia (linia 9)"
+  },
+  "description": {
+    "en": "Modernisation of line 9 (Warszawa Wschodnia – Gdańsk Główny, 323.4 km) towards Gdynia for 160 km/h, or 200 km/h for tilting trains, under the Infrastructure and Environment programme; pl.wikipedia puts the cost at about PLN 10 billion and the period at 2006–2014. PKP PLK let it by local control centre area (LCS). The file holds the two areas whose works contract and kilometre range were found: Iława and Malbork, kilometre 184.800 to 287.700, about 103 km. Not modelled, for lack of a sourced kilometre range or works contract: Warszawa – Nasielsk, the Nasielsk, Ciechanów and Działdowo areas (the last a contract of about PLN 953 million with Grupa ZUE, 2010–2013, with no stated extent), and Malbork – Tczew – Gdańsk – Gdynia. Line 9 has existed since 1852–1877, so each lot is an upgrade of an open line.",
+    "ro": "Modernizarea liniei 9 (Warszawa Wschodnia – Gdańsk Główny, 323,4 km) spre Gdynia pentru 160 km/h, sau 200 km/h pentru trenuri cu înclinare, în cadrul programului Infrastructură și Mediu; pl.wikipedia indică un cost de circa 10 miliarde PLN și perioada 2006–2014. PKP PLK a atribuit-o pe zone de centre locale de comandă (LCS). Fișierul cuprinde cele două zone cu contract de lucrări și interval kilometric găsite: Iława și Malbork, kilometrul 184,800 – 287,700, circa 103 km. Nemodelate, din lipsa unui interval kilometric sau a unui contract de lucrări documentat: Warszawa – Nasielsk, zonele Nasielsk, Ciechanów și Działdowo (ultima cu un contract de circa 953 milioane PLN cu Grupa ZUE, 2010–2013, fără extindere indicată), precum și Malbork – Tczew – Gdańsk – Gdynia. Linia 9 există din 1852–1877, deci fiecare lot este o modernizare a unei linii deschise."
+  },
+  "operator": "pl-plk",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "lcs-ilawa",
+      "name": {
+        "en": "Iława area (LCS Iława): kilometre 184.800 – 236.920 (Zajączkowo Lubawskie – Susz)",
+        "ro": "Zona Iława (LCS Iława): kilometrul 184,800 – 236,920 (Zajączkowo Lubawskie – Susz)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-05-27",
+        "opened": "2014"
+      },
+      "lengthKm": 52.1,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011-05-27",
+          "note": {
+            "en": "Works contract signed with the Budimex, Tchas Polska and Eiffage Budownictwo Mitex consortium.",
+            "ro": "Contract de lucrări semnat cu consorțiul Budimex, Tchas Polska și Eiffage Budownictwo Mitex."
+          },
+          "sourceRef": "plk-ilawa-malbork-2011"
+        },
+        {
+          "kind": "opened",
+          "date": "2014",
+          "note": {
+            "en": "Latest bound, not an opening date: pl.wikipedia gives the whole line 9 modernisation as 2006–2014.",
+            "ro": "Limită superioară, nu data deschiderii: pl.wikipedia indică modernizarea întregii linii 9 ca 2006–2014."
+          },
+          "sourceRef": "plwiki-linia-9"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund under the Infrastructure and Environment programme 2007–2013 (amount for this lot not stated)",
+            "ro": "Fondul de Coeziune în cadrul programului Infrastructură și Mediu 2007–2013 (suma pentru acest lot nu este indicată)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        },
+        {
+          "name": "Tchas Polska",
+          "role": "builder"
+        },
+        {
+          "name": "Eiffage Budownictwo Mitex",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 758.26,
+          "currency": "PLN",
+          "year": 2011,
+          "scope": "works",
+          "note": "Net, excluding VAT."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 758.26,
+              "currency": "PLN",
+              "year": 2011,
+              "scope": "works",
+              "note": "Net, excluding VAT."
+            },
+            "date": "2011-05-27",
+            "sourceRef": "plk-ilawa-malbork-2011"
+          }
+        ]
+      },
+      "note": {
+        "en": "Contract signed 27 May 2011 for 52.1 km, quoted by PKP PLK as between Zajączkowo Lubawskie and Susz. The 22 January 2007 design contract for both areas covers line 9 from kilometre 184.800 to 287.700 and the Malbork contract starts at kilometre 236.920, so this lot is kilometre 184.800 – 236.920 (52.12 km). The drawn line is cut from the station kilometres on pl.wikipedia (Zajączkowo Lubawskie 189.504, Susz 232.428, Prabuty 242.297) and measures 51.5 km. Net value PLN 758,264,998.15, duration 30 months from signing. Iława and Malbork areas together are close to 103 km, with over 280 engineering structures and 68 level crossings removed across both. Planned completion in 2013 per the 2012 article. No completion date for this lot was found. The year 2014 is a latest bound, not an opening date: pl.wikipedia (Linia kolejowa nr 9) says \"W latach 2006–2014 linia została gruntownie zmodernizowana\" for the whole line, and Pendolino services have run on the line since 14 December 2014 (pl.wikipedia, Kolej dużych prędkości w Polsce), which that page does not tie to this section.",
+        "ro": "Contract semnat la 27 mai 2011 pentru 52,1 km, indicat de PKP PLK ca fiind între Zajączkowo Lubawskie și Susz. Contractul de proiectare din 22 ianuarie 2007 pentru ambele zone acoperă linia 9 de la kilometrul 184,800 la 287,700, iar contractul Malbork începe la kilometrul 236,920, deci acest lot este kilometrul 184,800 – 236,920 (52,12 km). Linia desenată este tăiată după kilometrajul stațiilor din pl.wikipedia (Zajączkowo Lubawskie 189,504, Susz 232,428, Prabuty 242,297) și măsoară 51,5 km. Valoare netă 758.264.998,15 PLN, durată 30 de luni de la semnare. Zonele Iława și Malbork însumează aproape 103 km, cu peste 280 de structuri de inginerie și 68 de treceri la nivel eliminate în ambele. Finalizare planificată în 2013 conform articolului din 2012. Nu s-a găsit o dată de finalizare pentru acest lot. Anul 2014 este o limită superioară, nu data deschiderii: pl.wikipedia (Linia kolejowa nr 9) spune „W latach 2006–2014 linia została gruntownie zmodernizowana” pentru întreaga linie, iar serviciile Pendolino circulă pe linie din 14 decembrie 2014 (pl.wikipedia, Kolej dużych prędkości w Polsce), pagină care nu le leagă de această secțiune."
+      },
+      "sourceRefs": [
+        "plk-ilawa-malbork-2011",
+        "inzynier-ilawa-malbork-2012",
+        "transinfo-lcs-ilawa-malbork-design",
+        "plwiki-kdp",
+        "plwiki-linia-9",
+        "osm-line-9-e65",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lcs-ilawa"
+    },
+    {
+      "id": "lcs-malbork",
+      "name": {
+        "en": "Malbork area (LCS Malbork): kilometre 236.920 – 287.700 (to Szymankowo)",
+        "ro": "Zona Malbork (LCS Malbork): kilometrul 236,920 – 287,700 (până la Szymankowo)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-05-27",
+        "opened": "2014"
+      },
+      "lengthKm": 50.8,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011-05-27",
+          "note": {
+            "en": "Works contract signed with a Trakcja Polska-led consortium.",
+            "ro": "Contract de lucrări semnat cu un consorțiu condus de Trakcja Polska."
+          },
+          "sourceRef": "rk-lcs-malbork-2011"
+        },
+        {
+          "kind": "opened",
+          "date": "2014",
+          "note": {
+            "en": "Latest bound, not an opening date: pl.wikipedia gives the whole line 9 modernisation as 2006–2014.",
+            "ro": "Limită superioară, nu data deschiderii: pl.wikipedia indică modernizarea întregii linii 9 ca 2006–2014."
+          },
+          "sourceRef": "plwiki-linia-9"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund under the Infrastructure and Environment programme 2007–2013 (amount for this lot not stated)",
+            "ro": "Fondul de Coeziune în cadrul programului Infrastructură și Mediu 2007–2013 (suma pentru acest lot nu este indicată)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Trakcja Polska",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Napraw Infrastruktury",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Robót Mostowych Mosty-Łódź",
+          "role": "builder"
+        },
+        {
+          "name": "PKP Energetyka",
+          "role": "builder"
+        },
+        {
+          "name": "Pomorskie Przedsiębiorstwo Mechaniczno-Torowe",
+          "role": "builder"
+        },
+        {
+          "name": "INTOP Warszawa",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 868.89,
+          "currency": "PLN",
+          "year": 2011,
+          "scope": "works",
+          "note": "Net, excluding VAT; PLN 1,068.74 million including VAT."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 868.89,
+              "currency": "PLN",
+              "year": 2011,
+              "scope": "works",
+              "note": "Net, excluding VAT; PLN 1,068.74 million including VAT."
+            },
+            "date": "2011-05-27",
+            "sourceRef": "rk-lcs-malbork-2011"
+          }
+        ]
+      },
+      "note": {
+        "en": "Contract signed 27 May 2011 for kilometre 236.920 to 287.700 of line 9 (almost 51 km), quoted by PKP PLK as between Prabuty and Szymankowo; Prabuty station (kilometre 242.297 on pl.wikipedia) lies about 5 km inside the range. The drawn line is cut at kilometre 236.920 by station kilometres and ends at Szymankowo: it measures 49.6 km against the sourced 50.8 km, and the sourced figure is kept. Net value PLN 868,894,251.27, gross PLN 1,068,739,929.06, duration 30 months from the start of works, planned completion November 2013 (PKP PLK). No completion date for this lot was found. The year 2014 is a latest bound, not an opening date: pl.wikipedia (Linia kolejowa nr 9) says \"W latach 2006–2014 linia została gruntownie zmodernizowana\" for the whole line, and Pendolino services have run on the line since 14 December 2014 (pl.wikipedia, Kolej dużych prędkości w Polsce), which that page does not tie to this section.",
+        "ro": "Contract semnat la 27 mai 2011 pentru kilometrul 236,920 – 287,700 al liniei 9 (aproape 51 km), indicat de PKP PLK ca fiind între Prabuty și Szymankowo; stația Prabuty (kilometrul 242,297 pe pl.wikipedia) se află la circa 5 km în interiorul intervalului. Linia desenată este tăiată la kilometrul 236,920 după kilometrajul stațiilor și se termină la Szymankowo: măsoară 49,6 km față de 50,8 km din sursă, iar cifra din sursă este păstrată. Valoare netă 868.894.251,27 PLN, brută 1.068.739.929,06 PLN, durată 30 de luni de la începerea lucrărilor, finalizare planificată noiembrie 2013 (PKP PLK). Nu s-a găsit o dată de finalizare pentru acest lot. Anul 2014 este o limită superioară, nu data deschiderii: pl.wikipedia (Linia kolejowa nr 9) spune „W latach 2006–2014 linia została gruntownie zmodernizowana” pentru întreaga linie, iar serviciile Pendolino circulă pe linie din 14 decembrie 2014 (pl.wikipedia, Kolej dużych prędkości w Polsce), pagină care nu le leagă de această secțiune."
+      },
+      "sourceRefs": [
+        "plk-ilawa-malbork-2011",
+        "rk-lcs-malbork-2011",
+        "plwiki-kdp",
+        "plwiki-linia-9",
+        "osm-line-9-e65",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lcs-malbork"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plk-ilawa-malbork-2011",
+      "title": "PKP PLK: Dwa miliardy złotych na modernizację linii kolejowej w okolicach Iławy i Malborka (30 May 2011)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/dwa-miliardy-zlotych-na-modernizacje-linii-kolejowej-w-okolicach-ilawy-i-malborka-1314",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rk-lcs-malbork-2011",
+      "title": "Rynek Kolejowy: Umowa na LCS Malbork podpisana (27 May 2011)",
+      "url": "https://www.rynek-kolejowy.pl/wiadomosci/umowa-na-lcs-malbork-podpisana-49087.html",
+      "publisher": "Rynek Kolejowy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "inzynier-ilawa-malbork-2012",
+      "title": "Inżynier Budownictwa: Nowa infrastruktura kolejowa w okolicach Iławy i Malborka (2 April 2012)",
+      "url": "https://inzynierbudownictwa.pl/?p=6189",
+      "publisher": "Inżynier Budownictwa",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "transinfo-lcs-ilawa-malbork-design",
+      "title": "TransInfo: Warszawa: Podpisanie umowy na LCS Iława i LCS Malbork (page dated 24 January 2008; contract signed 22 January 2007)",
+      "url": "https://transinfo.pl/x/inforail/warszawa-podpisanie-umowy-na-lcs-ilawa-i-lcs-malbork/",
+      "publisher": "TransInfo",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-linia-9",
+      "title": "Wikipedia (pl): Linia kolejowa nr 9",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_9",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-kdp",
+      "title": "Wikipedia (pl): Kolej dużych prędkości w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Kolej_du%C5%BCych_pr%C4%99dko%C5%9Bci_w_Polsce",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-line-9-e65",
+      "title": "OpenStreetMap: railway ways with ref=9 (track 1), Mława – Szymankowo (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

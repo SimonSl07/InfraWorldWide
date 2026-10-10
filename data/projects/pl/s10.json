@@ -1,0 +1,1569 @@
+{
+  "id": "pl-s10",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S10 expressway (Szczecin – Stargard – Wałcz – Piła – Bydgoszcz – Toruń – Płońsk)",
+    "ro": "Drumul expres S10 (Szczecin – Stargard – Wałcz – Piła – Bydgoszcz – Toruń – Płońsk)"
+  },
+  "description": {
+    "en": "East–west expressway from Szczecin towards the S50 Warsaw ring near Nacpolsk, built in sections. Lots follow the GDDKiA contract sections, grouped by contract, and are cut at junctions mapped in OpenStreetMap; where a junction is not mapped, the lot note says how the cut was placed. Not drawn: the Piła Północ – Piła Wschód common run with S11 and the Piła Wschód – Wyrzysk Zachód section (planned, no mapped way and no contract), the Bydgoszcz Zachód – Bydgoszcz Błonie stretch common with S5 (opened on 31 December 2020, drawn in pl-s5), the Toruń Południe – Włocławek Północ stretch that is the A1 (not designated S10), and the planned Włocławek Północ – Nacpolsk section. Contract values come from the GDDKiA contract table of October 2026 and include VAT; older figures come from pl.wikipedia and say where the VAT basis is not stated.",
+    "ro": "Drum expres est–vest de la Szczecin spre ocolitoarea Varșoviei S50, lângă Nacpolsk, construit pe secțiuni. Loturile urmează secțiunile de contract GDDKiA, grupate pe contracte, și sunt tăiate la nodurile cartografiate în OpenStreetMap; unde un nod nu este cartografiat, nota lotului explică cum a fost plasată tăietura. Nedesenate: traseul comun Piła Północ – Piła Wschód cu S11 și secțiunea Piła Wschód – Wyrzysk Zachód (planificate, fără drum cartografiat și fără contract), tronsonul Bydgoszcz Zachód – Bydgoszcz Błonie comun cu S5 (deschis la 31 decembrie 2020, desenat în pl-s5), tronsonul Toruń Południe – Włocławek Północ care este A1 (nedesemnat S10) și secțiunea planificată Włocławek Północ – Nacpolsk. Valorile contractelor provin din tabelul de contracte GDDKiA din octombrie 2026 și includ TVA; cifrele mai vechi provin de pe pl.wikipedia și spun unde baza TVA nu este indicată."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "szczecin-kijewo-zdunowo",
+      "name": {
+        "en": "Szczecin Kijewo – Szczecin Zdunowo (Płonia bypass)",
+        "ro": "Szczecin Kijewo – Szczecin Zdunowo (ocolitoarea Płonia)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-01-27",
+        "constructionStart": "2026-06-08",
+        "expectedOpening": "2028-10-27"
+      },
+      "lengthKm": 4.35,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 204.06,
+              "currency": "PLN",
+              "year": 2025,
+              "note": "Including VAT."
+            },
+            "date": "2025-01-27",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 204.06,
+          "currency": "PLN",
+          "year": 2025,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-09-29",
+          "sourceRef": "msbd-kijewo-zdunowo"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-01-27",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și execuție semnat cu Budimex."
+          },
+          "sourceRef": "msbd-kijewo-zdunowo"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-06-08",
+          "note": {
+            "en": "Right of access to the construction site effective from this date (handover held on 3 June 2026).",
+            "ro": "Dreptul de acces la șantier în vigoare de la această dată (predarea a avut loc la 3 iunie 2026)."
+          },
+          "sourceRef": "msbd-kijewo-site"
+        }
+      ],
+      "note": {
+        "en": "New 4.35 km section north of the Płonia district, with a 130 m bridge over the Płonia and the Szczecin Płonia and Szczecin Zdunowo junctions. The environmental decision was issued on 16 December 2022 and the ZRID permit on 26 May 2026. The first bid, from NDI at PLN 187.34 million, was set aside after a court ruling in October 2024 (pl.wikipedia). The contractor has had access to the site since 8 June 2026; the contract table gives no works start date, so the access date is recorded. The drawn line covers only the section mapped in OpenStreetMap, from the Płonia junction to Zdunowo, so it is shorter than the recorded length.",
+        "ro": "Secțiune nouă de 4,35 km la nord de cartierul Płonia, cu un pod de 130 m peste Płonia și nodurile Szczecin Płonia și Szczecin Zdunowo. Decizia de mediu a fost emisă la 16 decembrie 2022, iar autorizația ZRID la 26 mai 2026. Prima ofertă, a NDI, de 187,34 milioane PLN, a fost respinsă după o hotărâre judecătorească din octombrie 2024 (pl.wikipedia). Constructorul are acces la șantier din 8 iunie 2026; tabelul de contracte nu indică o dată de începere a lucrărilor, deci se înregistrează data accesului. Axul desenat acoperă doar secțiunea cartografiată în OpenStreetMap, de la nodul Płonia la Zdunowo, deci este mai scurt decât lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "msbd-kijewo-zdunowo",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "msbd-kijewo-site",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szczecin-kijewo-zdunowo"
+    },
+    {
+      "id": "zdunowo-kobylanka",
+      "name": {
+        "en": "Szczecin Zdunowo – Kobylanka",
+        "ro": "Szczecin Zdunowo – Kobylanka"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2002-09-06",
+        "opened": "2004-12-10"
+      },
+      "lengthKm": 5.3,
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "NCC",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2002-09-06",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "opened",
+          "date": "2004-12-10",
+          "sourceRef": "plwiki-s10"
+        }
+      ],
+      "note": {
+        "en": "Outbound stretch of the former DK10 from Szczecin, rebuilt in 2002–2004 as a dual carriageway. Contract date, opening date and builder come from the section table of pl.wikipedia. The article gives 5.3 km in that table and 6 km in its text. GDDKiA gave it S10 expressway designation after 28 November 2020.",
+        "ro": "Tronsonul de ieșire din Szczecin al fostei DK10, reconstruit în 2002–2004 ca drum cu două căi de rulare. Data contractului, data deschiderii și constructorul provin din tabelul de secțiuni de pe pl.wikipedia. Articolul indică 5,3 km în tabel și 6 km în text. GDDKiA i-a atribuit denumirea de drum expres S10 după 28 noiembrie 2020."
+      },
+      "sourceRefs": [
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "zdunowo-kobylanka"
+    },
+    {
+      "id": "kobylanka-stargard-zachod",
+      "name": {
+        "en": "Kobylanka – Stargard Zachód (Kobylanka, Morzyczyn and Zieleniewo bypass)",
+        "ro": "Kobylanka – Stargard Zachód (ocolitoarea Kobylanka, Morzyczyn și Zieleniewo)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2005-07-30",
+        "opened": "2007-09-14"
+      },
+      "lengthKm": 7.5,
+      "contractors": [
+        {
+          "name": "NCC",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2005-07-30",
+          "note": {
+            "en": "First-carriageway contract signed with NCC.",
+            "ro": "Contractul pentru prima cale de rulare semnat cu NCC."
+          },
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-09-14",
+          "note": {
+            "en": "First (southern) carriageway opened.",
+            "ro": "Prima cale de rulare (sudică) deschisă."
+          },
+          "sourceRef": "plwiki-s10"
+        }
+      ],
+      "note": {
+        "en": "The first carriageway opened on 14 September 2007. The second was built by Strabag under a design-build contract signed on 12 September 2017 (PLN 57.22 million including VAT, which also covers a 3.2 km service road) and opened on 28 November 2020. The date of the contract with NCC, the length and both opening dates come from the section table of pl.wikipedia, which gives 8.8 km for the first carriageway with its junctions in a footnote.",
+        "ro": "Prima cale de rulare a fost deschisă la 14 septembrie 2007. A doua a fost construită de Strabag în baza unui contract de proiectare și execuție semnat la 12 septembrie 2017 (57,22 milioane PLN cu TVA, care include și un drum de serviciu de 3,2 km) și deschisă la 28 noiembrie 2020. Data contractului cu NCC, lungimea și ambele date de deschidere provin din tabelul de secțiuni de pe pl.wikipedia, care indică 8,8 km pentru prima cale de rulare cu nodurile, într-o notă de subsol."
+      },
+      "sourceRefs": [
+        "plwiki-s10",
+        "gddkia-realizacja-pdf",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kobylanka-stargard-zachod"
+    },
+    {
+      "id": "stargard-zachod-stargard-wschod",
+      "name": {
+        "en": "Stargard Zachód – Stargard Wschód (Stargard bypass)",
+        "ro": "Stargard Zachód – Stargard Wschód (ocolitoarea Stargard)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-04-30",
+        "constructionStart": "2008-05-26",
+        "opened": "2009-12-21"
+      },
+      "lengthKm": 13.4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 351.1,
+              "currency": "PLN",
+              "note": "Construction cost as reported in the press. Price year and VAT basis not stated."
+            },
+            "date": "2009-12-21",
+            "sourceRef": "plwiki-s10"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Johann Bunte",
+          "role": "builder"
+        },
+        {
+          "name": "Berger Bau",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2007-05-18",
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "awarded",
+          "date": "2008-04-30",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008-05-26",
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-12-21",
+          "sourceRef": "plwiki-s10"
+        }
+      ],
+      "note": {
+        "en": "Dual-carriageway bypass of Stargard with the Stargard Zachód, Stargard Południe and Stargard Wschód junctions. It was first planned as a single carriageway and widened to a full profile after a tyre factory was sited in the town. Built by a consortium of Johann Bunte and Berger Bau. The article gives 13.4 km in the section table and 13.52 km in its text; the first figure is kept.",
+        "ro": "Ocolitoare cu două căi de rulare a orașului Stargard, cu nodurile Stargard Zachód, Stargard Południe și Stargard Wschód. A fost planificată inițial cu o singură cale de rulare și lărgită la profil complet după amplasarea unei fabrici de anvelope în oraș. Construită de un consorțiu Johann Bunte și Berger Bau. Articolul indică 13,4 km în tabelul de secțiuni și 13,52 km în text; prima valoare este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "stargard-zachod-stargard-wschod"
+    },
+    {
+      "id": "stargard-wschod-suchan",
+      "name": {
+        "en": "Stargard Wschód – Suchań",
+        "ro": "Stargard Wschód – Suchań"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-07-05",
+        "constructionStart": "2026-03-16",
+        "expectedOpening": "2028-07-05"
+      },
+      "lengthKm": 13.8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 450.39,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-07-05",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 450.39,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-10-04",
+          "sourceRef": "msbd-stargard-wschod-suchan"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-07-05",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-stargard-wschod-suchan"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-03-16",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract on the new S10 Szczecin – Piła route. ZRID permit issued on 9 December 2025. The best offer was chosen on 13 March 2024 (PLN 450.38 million, against a GDDKiA budget of PLN 562.6 million, pl.wikipedia). The drawn line is 5% longer than the recorded length.",
+        "ro": "Contract de proiectare și execuție pentru noul traseu S10 Szczecin – Piła. Autorizația ZRID a fost emisă la 9 decembrie 2025. Cea mai bună ofertă a fost aleasă la 13 martie 2024 (450,38 milioane PLN, față de un buget GDDKiA de 562,6 milioane PLN, pl.wikipedia). Axul desenat este cu 5% mai lung decât lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "msbd-stargard-wschod-suchan",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "stargard-wschod-suchan"
+    },
+    {
+      "id": "suchan-recz",
+      "name": {
+        "en": "Suchań – Recz",
+        "ro": "Suchań – Recz"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-05-24",
+        "constructionStart": "2026-03-16",
+        "expectedOpening": "2028-05-24"
+      },
+      "lengthKm": 19.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 667.52,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-05-24",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 667.52,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Kobylarnia",
+          "role": "builder"
+        },
+        {
+          "name": "Mirbud",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-10-04",
+          "sourceRef": "msbd-suchan-recz"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-05-24",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-suchan-recz"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-03-16",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract on the new S10 Szczecin – Piła route. ZRID permit issued on 9 December 2025. Built by a consortium of Kobylarnia (leader) and Mirbud. The drawn line is 12% shorter than the recorded length; the recorded length is kept.",
+        "ro": "Contract de proiectare și execuție pentru noul traseu S10 Szczecin – Piła. Autorizația ZRID a fost emisă la 9 decembrie 2025. Construit de un consorțiu Kobylarnia (lider) și Mirbud. Axul desenat este cu 12% mai scurt decât lungimea înregistrată; lungimea înregistrată este păstrată."
+      },
+      "sourceRefs": [
+        "msbd-suchan-recz",
+        "gddkia-realizacja-pdf",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "suchan-recz"
+    },
+    {
+      "id": "recz-cybowo",
+      "name": {
+        "en": "Recz – Cybowo",
+        "ro": "Recz – Cybowo"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-07-05",
+        "constructionStart": "2026-05-04",
+        "expectedOpening": "2028-07-05"
+      },
+      "lengthKm": 15.68,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 647,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-07-05",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 647,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Kobylarnia",
+          "role": "builder"
+        },
+        {
+          "name": "Mirbud",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-09-29",
+          "sourceRef": "msbd-recz-cybowo"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-07-05",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-recz-cybowo"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-05-04",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract on the new S10 Szczecin – Piła route. ZRID permit issued on 20 April 2026. Built by a consortium of Kobylarnia and Mirbud. The drawn line is 9% longer than the recorded length, which excludes both junctions; the recorded length is kept.",
+        "ro": "Contract de proiectare și execuție pentru noul traseu S10 Szczecin – Piła. Autorizația ZRID a fost emisă la 20 aprilie 2026. Construit de un consorțiu Kobylarnia și Mirbud. Axul desenat este cu 9% mai lung decât lungimea înregistrată, care exclude ambele noduri; lungimea înregistrată este păstrată."
+      },
+      "sourceRefs": [
+        "msbd-recz-cybowo",
+        "gddkia-realizacja-pdf",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "recz-cybowo"
+    },
+    {
+      "id": "cybowo-lowicz-walecki",
+      "name": {
+        "en": "Cybowo – Łowicz Wałecki (including the Kalisz Pomorski bypass)",
+        "ro": "Cybowo – Łowicz Wałecki (inclusiv ocolitoarea Kalisz Pomorski)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-06-20",
+        "constructionStart": "2026-02-19",
+        "expectedOpening": "2028-06-20"
+      },
+      "lengthKm": 16.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 592.97,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-06-20",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 592.97,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-09-29",
+          "sourceRef": "msbd-cybowo-lowicz-walecki"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-06-20",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-cybowo-lowicz-walecki"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-02-19",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract on the new S10 Szczecin – Piła route. ZRID permit issued on 6 February 2026. The section has 16 structures, including five road overpasses and seven wildlife underpasses (pl.wikipedia).",
+        "ro": "Contract de proiectare și execuție pentru noul traseu S10 Szczecin – Piła. Autorizația ZRID a fost emisă la 6 februarie 2026. Secțiunea are 16 structuri, între care cinci pasaje rutiere și șapte pasaje inferioare pentru faună (pl.wikipedia)."
+      },
+      "sourceRefs": [
+        "msbd-cybowo-lowicz-walecki",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "cybowo-lowicz-walecki"
+    },
+    {
+      "id": "lowicz-walecki-piecnik",
+      "name": {
+        "en": "Łowicz Wałecki – Piecnik (including the Mirosławiec bypass)",
+        "ro": "Łowicz Wałecki – Piecnik (inclusiv ocolitoarea Mirosławiec)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-10-30",
+        "expectedOpening": "2028-07-31"
+      },
+      "lengthKm": 14.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 538.05,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-10-30",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 538.05,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-10-04",
+          "sourceRef": "msbd-lowicz-walecki-piecnik"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-10-30",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-lowicz-walecki-piecnik"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract on the new S10 Szczecin – Piła route. ZRID permit issued on 29 June 2026; the contract site reports the construction site handed to the contractor after the permit (post of 1 July 2026, no handover date given). The contract table gives no works start date, so the lot is recorded as awarded and not yet under construction. The contract completion date is 31 July 2028 in the GDDKiA contract table.",
+        "ro": "Contract de proiectare și execuție pentru noul traseu S10 Szczecin – Piła. Autorizația ZRID a fost emisă la 29 iunie 2026; site-ul contractului consemnează predarea șantierului către constructor după autorizație (articol din 1 iulie 2026, fără dată de predare). Tabelul de contracte nu indică o dată de începere a lucrărilor, deci lotul este înregistrat ca atribuit și neînceput. Termenul contractual de finalizare este 31 iulie 2028 în tabelul de contracte GDDKiA."
+      },
+      "sourceRefs": [
+        "msbd-lowicz-walecki-piecnik",
+        "gddkia-realizacja-pdf",
+        "msbd-lowicz-site",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lowicz-walecki-piecnik"
+    },
+    {
+      "id": "piecnik-walcz-zachod",
+      "name": {
+        "en": "Piecnik – Wałcz Zachód",
+        "ro": "Piecnik – Wałcz Zachód"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-05-24",
+        "constructionStart": "2026-02-06",
+        "expectedOpening": "2028-05-24"
+      },
+      "lengthKm": 14.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 552.22,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-05-24",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 552.22,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-10-04",
+          "sourceRef": "msbd-piecnik-walcz-zachod"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-05-24",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-piecnik-walcz-zachod"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-02-06",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract on the new S10 Szczecin – Piła route. ZRID permit issued on 20 January 2026. The works start date is from the GDDKiA contract table; the contract site gives 29 January 2026 (site handed over on 28 January). The route leaves the DK10 north of the existing road and rejoins it east of Piława at the Wałcz Zachód junction. pl.wikipedia gives 16.0 km for the section; the GDDKiA page figure is kept.",
+        "ro": "Contract de proiectare și execuție pentru noul traseu S10 Szczecin – Piła. Autorizația ZRID a fost emisă la 20 ianuarie 2026. Data începerii lucrărilor provine din tabelul de contracte GDDKiA; site-ul contractului indică 29 ianuarie 2026 (șantierul a fost predat la 28 ianuarie). Traseul se desprinde de DK10 la nord de drumul existent și revine la acesta la est de Piława, la nodul Wałcz Zachód. pl.wikipedia indică 16,0 km pentru secțiune; este păstrată valoarea de pe pagina GDDKiA."
+      },
+      "sourceRefs": [
+        "msbd-piecnik-walcz-zachod",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "msbd-piecnik-site",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "piecnik-walcz-zachod"
+    },
+    {
+      "id": "walcz-bypass",
+      "name": {
+        "en": "Wałcz bypass (Wałcz Zachód – Witankowo)",
+        "ro": "Ocolitoarea Wałcz (Wałcz Zachód – Witankowo)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-11-18",
+        "opened": "2020-12-19"
+      },
+      "lengthKm": 17.83,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 430.49,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Including VAT."
+            },
+            "date": "2015-11-18",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 430.49,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Including VAT."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "amount": {
+            "amount": 264.87,
+            "currency": "PLN"
+          },
+          "detail": {
+            "en": "Co-financed under the Infrastructure and Environment Operating Programme 2014–2020 (grant PLN 264.87 million, GDDKiA page).",
+            "ro": "Cofinanțat prin Programul Operațional Infrastructură și Mediu 2014–2020 (finanțare de 264,87 milioane PLN, pagina GDDKiA)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "WBP Zabrze",
+          "role": "designer"
+        },
+        {
+          "name": "Energopol Szczecin",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex",
+          "role": "builder"
+        },
+        {
+          "name": "Porr",
+          "role": "builder"
+        },
+        {
+          "name": "Pol-Dróg Drawsko Pomorskie",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-11-18",
+          "note": {
+            "en": "Works contract signed with Energopol Szczecin.",
+            "ro": "Contract de lucrări semnat cu Energopol Szczecin."
+          },
+          "sourceRef": "msbd-walcz-bypass"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-10-14",
+          "note": {
+            "en": "GDDKiA terminated the contract with Energopol Szczecin after it missed the deadline.",
+            "ro": "GDDKiA a reziliat contractul cu Energopol Szczecin după ce acesta a depășit termenul."
+          },
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "resumed",
+          "date": "2020-05-29",
+          "note": {
+            "en": "Completion contracts signed with Budimex (29 May 2020), Porr (1 June 2020) and Pol-Dróg Drawsko Pomorskie (30 June 2020).",
+            "ro": "Contracte de finalizare semnate cu Budimex (29 mai 2020), Porr (1 iunie 2020) și Pol-Dróg Drawsko Pomorskie (30 iunie 2020)."
+          },
+          "sourceRef": "msbd-walcz-bypass"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-19",
+          "note": {
+            "en": "Main carriageway opened to traffic.",
+            "ro": "Calea principală deschisă traficului."
+          },
+          "sourceRef": "msbd-walcz-bypass"
+        }
+      ],
+      "note": {
+        "en": "The original contract with Energopol Szczecin (PLN 430.49 million including VAT; the GDDKiA table shows its completion date moved from 18 June 2018 to 26 May 2019) was terminated on 14 October 2019 with the work unfinished. The remaining work was split among Budimex, Porr and Pol-Dróg Drawsko Pomorskie in 2020. The GDDKiA page gives PLN 583.01 million for all works contracts together; VAT basis not stated on the source page. The page gives the bypass as km 0+020 to 17+805. The drawn line runs between the Wałcz Zachód and Witankowo junction nodes mapped in OpenStreetMap and is 14% shorter than the sourced 17.83 km; the sourced length is kept.",
+        "ro": "Contractul inițial cu Energopol Szczecin (430,49 milioane PLN cu TVA; tabelul GDDKiA arată termenul de finalizare mutat de la 18 iunie 2018 la 26 mai 2019) a fost reziliat la 14 octombrie 2019, cu lucrarea neterminată. Lucrările rămase au fost împărțite în 2020 între Budimex, Porr și Pol-Dróg Drawsko Pomorskie. Pagina GDDKiA indică 583,01 milioane PLN pentru toate contractele de lucrări la un loc; baza TVA nu este indicată pe pagina sursă. Pagina indică ocolitoarea de la km 0+020 la 17+805. Axul desenat merge între nodurile Wałcz Zachód și Witankowo cartografiate în OpenStreetMap și este cu 14% mai scurt decât cei 17,83 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "msbd-walcz-bypass",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "walcz-bypass"
+    },
+    {
+      "id": "witankowo-pila-polnoc",
+      "name": {
+        "en": "Wałcz Witankowo – Piła Północ",
+        "ro": "Wałcz Witankowo – Piła Północ"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2024-07-03",
+        "expectedOpening": "2028-07-03"
+      },
+      "lengthKm": 13.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 721.3,
+              "currency": "PLN",
+              "year": 2024,
+              "note": "Including VAT."
+            },
+            "date": "2024-07-03",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 721.3,
+          "currency": "PLN",
+          "year": 2024,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-10-11",
+          "sourceRef": "msbd-witankowo-pila-polnoc"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-07-03",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-witankowo-pila-polnoc"
+        }
+      ],
+      "note": {
+        "en": "Design-build contract; the ZRID permit application was filed on 5 May 2025 and the GDDKiA page records no decision. The works start date is not stated, so the lot is recorded as awarded and not yet under construction. The line is drawn from ways mapped in OpenStreetMap as proposed. The Piła Północ junction is not mapped by name, so the end of the line is placed by the sourced length of 13.5 km, measured from the Witankowo junction.",
+        "ro": "Contract de proiectare și execuție; cererea pentru autorizația ZRID a fost depusă la 5 mai 2025, iar pagina GDDKiA nu consemnează o decizie. Data începerii lucrărilor nu este indicată, deci lotul este înregistrat ca atribuit și neînceput. Axul este desenat din drumuri cartografiate în OpenStreetMap ca propuse. Nodul Piła Północ nu este cartografiat cu nume, deci capătul axului este plasat după lungimea din sursă de 13,5 km, măsurată de la nodul Witankowo."
+      },
+      "sourceRefs": [
+        "msbd-witankowo-pila-polnoc",
+        "gddkia-realizacja-pdf",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "witankowo-pila-polnoc"
+    },
+    {
+      "id": "wyrzysk-bypass",
+      "name": {
+        "en": "Wyrzysk bypass (Łobżenica – Wyrzysk)",
+        "ro": "Ocolitoarea Wyrzysk (Łobżenica – Wyrzysk)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-06-19",
+        "constructionStart": "2008-07-15",
+        "opened": "2009-12-16"
+      },
+      "lengthKm": 7.8,
+      "contractors": [
+        {
+          "name": "Pol-Dróg Piła",
+          "role": "builder"
+        },
+        {
+          "name": "PRM Mosty Łódź",
+          "role": "builder"
+        },
+        {
+          "name": "Wakoz",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2008-06-19",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008-07-15",
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-12-16",
+          "sourceRef": "plwiki-s10"
+        }
+      ],
+      "note": {
+        "en": "Single-carriageway northern bypass of Wyrzysk, with two carriageways only at the Łobżenica and Wyrzysk junctions. A second carriageway is under a design-build contract with Mirbud, signed on 21 July 2025 (PLN 121.30 million; the GDDKiA page gives 5 km, 2027–2029, and the ZRID application was filed on 21 May 2026). It is not a separate lot, so the length is not counted twice. The drawn line follows the mapped trunk ways from the western end of the Łobżenica junction to the eastern end of the Wyrzysk junction and is 17% shorter than the sourced 7.8 km; the sourced length is kept.",
+        "ro": "Ocolitoare nordică a orașului Wyrzysk cu o singură cale de rulare, cu două căi doar la nodurile Łobżenica și Wyrzysk. A doua cale de rulare face obiectul unui contract de proiectare și execuție cu Mirbud, semnat la 21 iulie 2025 (121,30 milioane PLN; pagina GDDKiA indică 5 km, 2027–2029, iar cererea ZRID a fost depusă la 21 mai 2026). Nu este un lot separat, astfel încât lungimea nu este numărată de două ori. Axul desenat urmează drumurile trunk cartografiate de la capătul vestic al nodului Łobżenica până la capătul estic al nodului Wyrzysk și este cu 17% mai scurt decât cei 7,8 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s10",
+        "msbd-wyrzysk-second-carriageway",
+        "gddkia-realizacja-pdf",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wyrzysk-bypass"
+    },
+    {
+      "id": "wyrzysk-wschod-naklo",
+      "name": {
+        "en": "Wyrzysk Wschód – Nakło nad Notecią",
+        "ro": "Wyrzysk Wschód – Nakło nad Notecią"
+      },
+      "status": "tendered",
+      "dates": {},
+      "lengthKm": 20.2,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-12-09",
+          "sourceRef": "msbd-wyrzysk-naklo"
+        }
+      ],
+      "note": {
+        "en": "Design-build tender announced on 9 December 2025; the GDDKiA page gives planned works for 2028–2031 and no contractor. The corridor study contract dates from 11 October 2010 and the environmental decision from 29 November 2022. The line is drawn from ways mapped in OpenStreetMap as proposed; the Nakło nad Notecią junction is placed at the proposed junction on those ways. pl.wikipedia swaps the lengths of this section and the next (20.2 and 19.5 km); the GDDKiA page figures are used.",
+        "ro": "Licitație de proiectare și execuție anunțată la 9 decembrie 2025; pagina GDDKiA indică lucrări planificate pentru 2028–2031 și niciun constructor. Contractul pentru studiul de coridor datează din 11 octombrie 2010, iar decizia de mediu din 29 noiembrie 2022. Axul este desenat din drumuri cartografiate în OpenStreetMap ca propuse; nodul Nakło nad Notecią este plasat la nodul propus de pe aceste drumuri. pl.wikipedia inversează lungimile acestei secțiuni și ale următoarei (20,2 și 19,5 km); se folosesc valorile de pe paginile GDDKiA."
+      },
+      "sourceRefs": [
+        "msbd-wyrzysk-naklo",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wyrzysk-wschod-naklo"
+    },
+    {
+      "id": "naklo-bydgoszcz-zachod",
+      "name": {
+        "en": "Nakło nad Notecią – Bydgoszcz Zachód",
+        "ro": "Nakło nad Notecią – Bydgoszcz Zachód"
+      },
+      "status": "tendered",
+      "dates": {},
+      "lengthKm": 19.5,
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-12-17",
+          "sourceRef": "msbd-naklo-bydgoszcz-zachod"
+        }
+      ],
+      "note": {
+        "en": "Design-build tender announced on 17 December 2025; the GDDKiA page gives planned works for 2028–2031 and no contractor. It includes the Ślesin and Kruszyn (Sicienko) junctions, a pair of rest areas at Strzelewo and 22 structures, and the ramps of the Bydgoszcz Zachód junction are to be rebuilt. The line is drawn from ways mapped in OpenStreetMap as proposed, from the proposed Nakło nad Notecią junction to where those ways meet S5, and is 8% longer than the recorded length.",
+        "ro": "Licitație de proiectare și execuție anunțată la 17 decembrie 2025; pagina GDDKiA indică lucrări planificate pentru 2028–2031 și niciun constructor. Include nodurile Ślesin și Kruszyn (Sicienko), o pereche de zone de servicii la Strzelewo și 22 de structuri, iar rampele nodului Bydgoszcz Zachód urmează să fie refăcute. Axul este desenat din drumuri cartografiate în OpenStreetMap ca propuse, de la nodul propus Nakło nad Notecią până unde acestea se întâlnesc cu S5, și este cu 8% mai lung decât lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "msbd-naklo-bydgoszcz-zachod",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "naklo-bydgoszcz-zachod"
+    },
+    {
+      "id": "bydgoszcz-blonie-poludnie",
+      "name": {
+        "en": "Bydgoszcz Błonie – Bydgoszcz Południe (southern Bydgoszcz bypass)",
+        "ro": "Bydgoszcz Błonie – Bydgoszcz Południe (ocolitoarea sudică Bydgoszcz)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-07-18",
+        "opened": "2009-12-18"
+      },
+      "lengthKm": 12,
+      "contractors": [
+        {
+          "name": "Budimex-Dromex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2008-07-18",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-12-18",
+          "sourceRef": "plwiki-s10"
+        }
+      ],
+      "note": {
+        "en": "Part of the southern Bydgoszcz bypass, opened as a dual carriageway on 18 December 2009. The GDDKiA page gives 12 km and lists pavement rebuilding on DK5, DK10 and DW223 next to the junctions in its scope; pl.wikipedia gives 9.1 km in its section table and 12 km in its text. The drawn line runs between the Bydgoszcz Błonie and Bydgoszcz Południe junction nodes and is 19% shorter than 12 km; the sourced length is kept. The 7.2 km stretch from Bydgoszcz Zachód to Bydgoszcz Błonie, opened on 31 December 2020, is common with S5 and is drawn in the pl-s5 project (lot Bydgoszcz Opławiec – Bydgoszcz Błonie), so it is not drawn again here.",
+        "ro": "Parte a ocolitoarei sudice Bydgoszcz, deschisă cu două căi de rulare la 18 decembrie 2009. Pagina GDDKiA indică 12 km și include în domeniu refacerea îmbrăcăminții pe DK5, DK10 și DW223 lângă noduri; pl.wikipedia indică 9,1 km în tabelul de secțiuni și 12 km în text. Axul desenat merge între nodurile Bydgoszcz Błonie și Bydgoszcz Południe și este cu 19% mai scurt decât 12 km; lungimea din sursă este păstrată. Tronsonul de 7,2 km de la Bydgoszcz Zachód la Bydgoszcz Błonie, deschis la 31 decembrie 2020, este comun cu S5 și este desenat în proiectul pl-s5 (lotul Bydgoszcz Opławiec – Bydgoszcz Błonie), deci nu este desenat din nou aici."
+      },
+      "sourceRefs": [
+        "msbd-bydgoszcz-blonie-poludnie",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bydgoszcz-blonie-poludnie"
+    },
+    {
+      "id": "poludnie-emilianowo",
+      "name": {
+        "en": "Bydgoszcz Południe – Bydgoszcz Park Przemysłowy (with the DK25 rebuild)",
+        "ro": "Bydgoszcz Południe – Bydgoszcz Park Przemysłowy (cu reconstrucția DK25)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-05-06",
+        "constructionStart": "2024-11-21"
+      },
+      "lengthKm": 8.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 410.82,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT."
+            },
+            "date": "2022-05-06",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 410.82,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Intercor",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-06-22",
+          "sourceRef": "msbd-poludnie-emilianowo"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-05-06",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-poludnie-emilianowo"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-11-21",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "First of four contracts of the S10 Bydgoszcz – Toruń project. The GDDKiA page gives 8.9 km of S10 plus 5.4 km of rebuilt DK25, which is not counted here; the ZRID permit was issued on 30 October 2024. The contract completion date of 24 August 2026 has passed. The contract site reported earthworks, drainage and base-course work on 7 October 2026 and no new completion date, so no expected opening is recorded. The line is drawn from ways mapped in OpenStreetMap as under construction, from the east side of the Bydgoszcz Południe junction to where the ways change from 'odcinek 1' to 'odcinek 2'; it is 6% shorter than the recorded length.",
+        "ro": "Primul dintre cele patru contracte ale proiectului S10 Bydgoszcz – Toruń. Pagina GDDKiA indică 8,9 km de S10 plus 5,4 km de DK25 reconstruită, care nu sunt numărați aici; autorizația ZRID a fost emisă la 30 octombrie 2024. Termenul contractual de finalizare, 24 august 2026, a trecut. Site-ul contractului a raportat la 7 octombrie 2026 terasamente, canalizare și lucrări de fundație și nicio dată nouă de finalizare, deci nu se înregistrează o deschidere estimată. Axul este desenat din drumuri cartografiate în OpenStreetMap ca aflate în construcție, de la partea estică a nodului Bydgoszcz Południe până unde drumurile trec de la „odcinek 1” la „odcinek 2”; este cu 6% mai scurt decât lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "msbd-poludnie-emilianowo",
+        "gddkia-realizacja-pdf",
+        "contract-poludnie-emilianowo",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "poludnie-emilianowo"
+    },
+    {
+      "id": "emilianowo-solec",
+      "name": {
+        "en": "Bydgoszcz Park Przemysłowy – Solec Kujawski",
+        "ro": "Bydgoszcz Park Przemysłowy – Solec Kujawski"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-09-02",
+        "constructionStart": "2025-07-02",
+        "expectedOpening": "2027-07-17"
+      },
+      "lengthKm": 8.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 239.84,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT."
+            },
+            "date": "2022-09-02",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 239.84,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-07-02",
+          "sourceRef": "msbd-emilianowo-solec"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-09-02",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-emilianowo-solec"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-07-02",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "Second contract of the S10 Bydgoszcz – Toruń project, including the Makowiska road maintenance depot (OUD); the ZRID permit was issued on 17 June 2025. The contract table gives a completion date of 2 August 2026, moved to 17 July 2027 after annexes; the later date is recorded as the expected opening. pl.wikipedia gives 15.3 km for this section, the GDDKiA page 8.6 km. The line is drawn from ways mapped in OpenStreetMap as under construction: the western end is where the ways change from 'odcinek 1' to 'odcinek 2', the eastern end where the named 'Solec Kujawski-Toruń' ways begin.",
+        "ro": "Al doilea contract al proiectului S10 Bydgoszcz – Toruń, inclusiv obiectul de întreținere a drumului (OUD) Makowiska; autorizația ZRID a fost emisă la 17 iunie 2025. Tabelul de contracte indică un termen de finalizare de 2 august 2026, mutat la 17 iulie 2027 după acte adiționale; data ulterioară este înregistrată ca deschidere estimată. pl.wikipedia indică 15,3 km pentru această secțiune, pagina GDDKiA 8,6 km. Axul este desenat din drumuri cartografiate în OpenStreetMap ca aflate în construcție: capătul vestic este unde drumurile trec de la „odcinek 1” la „odcinek 2”, capătul estic unde încep drumurile denumite „Solec Kujawski-Toruń”."
+      },
+      "sourceRefs": [
+        "msbd-emilianowo-solec",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "emilianowo-solec"
+    },
+    {
+      "id": "solec-torun-zachod",
+      "name": {
+        "en": "Solec Kujawski – Toruń Zachód",
+        "ro": "Solec Kujawski – Toruń Zachód"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-05-06",
+        "constructionStart": "2025-02-21",
+        "expectedOpening": "2027-04-15"
+      },
+      "lengthKm": 21.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 425.87,
+              "currency": "PLN",
+              "year": 2022,
+              "note": "Including VAT."
+            },
+            "date": "2022-05-06",
+            "sourceRef": "gddkia-realizacja-pdf"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 425.87,
+          "currency": "PLN",
+          "year": 2022,
+          "note": "Including VAT."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The GDDKiA page gives co-financing of PLN 750 million from the Infrastructure, Climate, Environment programme (FEnIKS) for the S10 Bydgoszcz – Toruń project. The contract site says the funded project covers sections 3 and 4, with a total value of PLN 2,170 million.",
+            "ro": "Pagina GDDKiA indică o cofinanțare de 750 milioane PLN din programul Infrastructură, Climă, Mediu (FEnIKS) pentru proiectul S10 Bydgoszcz – Toruń. Site-ul contractului indică faptul că proiectul finanțat cuprinde secțiunile 3 și 4, cu o valoare totală de 2.170 milioane PLN."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Kobylarnia",
+          "role": "builder"
+        },
+        {
+          "name": "Mirbud",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2021-06-30",
+          "sourceRef": "msbd-solec-torun-zachod"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-05-06",
+          "note": {
+            "en": "Design-build contract signed.",
+            "ro": "Contract de proiectare și execuție semnat."
+          },
+          "sourceRef": "msbd-solec-torun-zachod"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-02-21",
+          "note": {
+            "en": "Works start date from the GDDKiA contract table.",
+            "ro": "Data începerii lucrărilor din tabelul de contracte GDDKiA."
+          },
+          "sourceRef": "gddkia-realizacja-pdf"
+        }
+      ],
+      "note": {
+        "en": "Third contract of the S10 Bydgoszcz – Toruń project, built by a consortium of Kobylarnia (leader) and Mirbud; the ZRID permit was issued on 12 February 2025 and the GDDKiA page gives completion in the third quarter of 2026. The contract table gives a completion date of 24 April 2026, moved to 15 April 2027 after annexes; the later date is recorded as the expected opening. The line is drawn from ways mapped in OpenStreetMap as under construction, from where the named 'Solec Kujawski-Toruń' ways begin to the start of the Toruń Zachód junction ways.",
+        "ro": "Al treilea contract al proiectului S10 Bydgoszcz – Toruń, construit de un consorțiu Kobylarnia (lider) și Mirbud; autorizația ZRID a fost emisă la 12 februarie 2025, iar pagina GDDKiA indică finalizarea în trimestrul al treilea din 2026. Tabelul de contracte indică un termen de finalizare de 24 aprilie 2026, mutat la 15 aprilie 2027 după acte adiționale; data ulterioară este înregistrată ca deschidere estimată. Axul este desenat din drumuri cartografiate în OpenStreetMap ca aflate în construcție, de unde încep drumurile denumite „Solec Kujawski-Toruń” până la începutul drumurilor nodului Toruń Zachód."
+      },
+      "sourceRefs": [
+        "msbd-solec-torun-zachod",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "contract-solec-torun",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "solec-torun-zachod"
+    },
+    {
+      "id": "torun-zachod-torun-poludnie",
+      "name": {
+        "en": "Toruń Zachód – Toruń Południe (southern Toruń bypass)",
+        "ro": "Toruń Zachód – Toruń Południe (ocolitoarea sudică Toruń)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2004-02-12",
+        "opened": "2005-11-15"
+      },
+      "lengthKm": 11.8,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Hermann Kirchner",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2004-02-12",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "plwiki-s10"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-11-15",
+          "note": {
+            "en": "Opened as a single carriageway with space for a second.",
+            "ro": "Deschis cu o singură cale de rulare, cu rezervă pentru a doua."
+          },
+          "sourceRef": "plwiki-s10"
+        }
+      ],
+      "note": {
+        "en": "Single-carriageway southern bypass of Toruń (the \"Trasa Poligonowa\", formerly Nieszawka – Czerniewice) with a reserve strip for a second carriageway. It is being rebuilt to a dual carriageway under a design-build contract with Rubau Polska (leader) and Poltores, signed on 20 January 2023 (PLN 339.95 million including VAT; works start 20 April 2026, contract completion 20 March 2027; ZRID permit issued on 31 March 2026; the GDDKiA page gives 11.9 km and adds the Toruń Podgórz and Toruń Czerniewice junctions). That upgrade is not a separate lot, so the length is not counted twice. The length of 11.8 km is from the pl.wikipedia section table; the article text gives 11.3 km.",
+        "ro": "Ocolitoare sudică a orașului Toruń cu o singură cale de rulare („Trasa Poligonowa”, fosta Nieszawka – Czerniewice), cu bandă de rezervă pentru a doua cale. Este refăcută la două căi de rulare în baza unui contract de proiectare și execuție cu Rubau Polska (lider) și Poltores, semnat la 20 ianuarie 2023 (339,95 milioane PLN cu TVA; începerea lucrărilor 20 aprilie 2026, finalizarea contractuală 20 martie 2027; autorizația ZRID emisă la 31 martie 2026; pagina GDDKiA indică 11,9 km și adaugă nodurile Toruń Podgórz și Toruń Czerniewice). Această modernizare nu este un lot separat, deci lungimea nu este numărată de două ori. Lungimea de 11,8 km provine din tabelul de secțiuni de pe pl.wikipedia; textul articolului indică 11,3 km."
+      },
+      "sourceRefs": [
+        "msbd-torun-zachod-torun-poludnie",
+        "gddkia-realizacja-pdf",
+        "plwiki-s10",
+        "osm-s10-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "torun-zachod-torun-poludnie"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-s10",
+      "title": "Wikipedia (pl): Droga ekspresowa S10 (Polska)",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S10_(Polska)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-realizacja-pdf",
+      "title": "GDDKiA: Bieżąca realizacja PBDK, stan na październik 2026 (contract table, PDF)",
+      "url": "https://www.gov.pl/attachment/ce4b1616-2288-4d98-9546-b10ad15a08ee",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-kijewo-zdunowo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Szczecin Kijewo (bez węzła) – Szczecin Zdunowo",
+      "url": "https://www.gov.pl/web/gddkia/s10-szczecin-kijewo-bez-wezla---szczecin-zdunowo",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-stargard-wschod-suchan",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Stargard Wschód – Suchań",
+      "url": "https://www.gov.pl/web/gddkia/s10-stargard-wschod---suchan",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-suchan-recz",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Suchań – Recz",
+      "url": "https://www.gov.pl/web/gddkia/s10-suchan---recz",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-recz-cybowo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Recz – Cybowo",
+      "url": "https://www.gov.pl/web/gddkia/s10-recz---cybowo",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-cybowo-lowicz-walecki",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Cybowo – Łowicz Wałecki",
+      "url": "https://www.gov.pl/web/gddkia/s10-cybowo---lowicz-walecki",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-lowicz-walecki-piecnik",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Łowicz Wałecki – Piecnik",
+      "url": "https://www.gov.pl/web/gddkia/s10-lowicz-walecki---piecnik",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-piecnik-walcz-zachod",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Piecnik – Wałcz Zachód",
+      "url": "https://www.gov.pl/web/gddkia/s10-piecnik---walcz-zachod",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-walcz-bypass",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 obwodnica Wałcza",
+      "url": "https://www.gov.pl/web/gddkia/s10-obwodnica-walcza",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-witankowo-pila-polnoc",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Wałcz Witankowo (bez węzła) – Piła Północ",
+      "url": "https://www.gov.pl/web/gddkia/s10-walcz-witankowo-bez-wezla---pila-polnoc",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-wyrzysk-second-carriageway",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 obwodnica Wyrzyska, dobudowa drugiej jezdni",
+      "url": "https://www.gov.pl/web/gddkia/s10-obwodnica-wyrzyska---dobudowa-drugiej-jezdni",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-wyrzysk-naklo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Wyrzysk – Nakło nad Notecią",
+      "url": "https://www.gov.pl/web/gddkia/s10-pila--bydgoszcz",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-naklo-bydgoszcz-zachod",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Nakło nad Notecią – Bydgoszcz Zachód",
+      "url": "https://www.gov.pl/web/gddkia/s10-naklo-nad-notecia---bydgoszcz-zachod",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-bydgoszcz-blonie-poludnie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Bydgoszcz Południe – Bydgoszcz Błonie",
+      "url": "https://www.gov.pl/web/gddkia/s10-bydgoszcz-poludnie--bydgoszcz-blonie",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-poludnie-emilianowo",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Bydgoszcz Południe – Bydgoszcz Park Przemysłowy wraz z rozbudową DK25",
+      "url": "https://www.gov.pl/web/gddkia/s10-bydgoszcz-poludnie---bydgoszcz-emilianowo-wraz-z-rozbudowa-dk25",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-emilianowo-solec",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Bydgoszcz Park Przemysłowy – Solec Kuj.",
+      "url": "https://www.gov.pl/web/gddkia/s10-bydgoszcz-emilianowo-bez-wezla---solec-bez-wezla",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-solec-torun-zachod",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Solec Kuj. – Toruń Zachód",
+      "url": "https://www.gov.pl/web/gddkia/s10-solec-z-wezlem---torun-zachod",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-torun-zachod-torun-poludnie",
+      "title": "GDDKiA Mapa Stanu Budowy Dróg: S10 Toruń Zachód – Toruń Południe",
+      "url": "https://www.gov.pl/web/gddkia/s10-torun-zachod---torun-poludnie",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-s10-ways",
+      "title": "OpenStreetMap: ways tagged ref=S10 (Overpass query; e.g. way 161925774)",
+      "url": "https://www.openstreetmap.org/way/161925774",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-kijewo-site",
+      "title": "GDDKiA contract site S10 Kijewo – Zdunowo: Przekazanie prawa dostępu do placu budowy (9 June 2026)",
+      "url": "https://s10-kijewo-zdunowo.gddkia.gov.pl/przekazanie-prawa-dostepu-do-placu-budowy/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-lowicz-site",
+      "title": "GDDKiA contract site S10 Łowicz Wałecki – Piecnik: Uzyskanie Decyzji ZRID i przekazanie Placu Budowy Wykonawcy (1 July 2026)",
+      "url": "https://s10-lowiczwalecki-piecnik.gddkia.gov.pl/uzyskanie-decyzji-zrid-i-przekazanie-placu-budowy-wykonawcy-dla-budowy-drogi-ekspresowej-s10-na-odcinku-piecnik-walcz/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-piecnik-site",
+      "title": "GDDKiA contract site S10 Piecnik – Wałcz: Rozpoczęcie Robót (11 March 2026)",
+      "url": "https://s10-piecnik-walcz.gddkia.gov.pl/rozpoczecie-robot/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "contract-poludnie-emilianowo",
+      "title": "S10 Bydgoszcz – Toruń, odcinek 1 contract site: Stan prac (7 October 2026)",
+      "url": "https://s10-bydgoszcz-emilianowo.pl/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "contract-solec-torun",
+      "title": "S10 Bydgoszcz – Toruń, sections 3 and 4 contract site (project data)",
+      "url": "https://s10-solec-torun.pl/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

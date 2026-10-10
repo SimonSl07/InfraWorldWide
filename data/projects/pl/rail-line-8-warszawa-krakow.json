@@ -1,0 +1,599 @@
+{
+  "id": "pl-rail-line-8-warszawa-krakow",
+  "country": "pl",
+  "category": "railway",
+  "name": {
+    "en": "Railway line 8 Warszawa – Radom – Kielce – Kraków (modernisation)",
+    "ro": "Linia ferată 8 Varșovia – Radom – Kielce – Cracovia (modernizare)"
+  },
+  "description": {
+    "en": "PKP PLK line no. 8, 317.164 km from Warszawa Zachodnia to Kraków Główny, electrified at 3 kV DC. The lots are the modernisation contracts with a sourced extent and a signing date: Warszawa Okęcie – Czachówek Południowy, Czachówek Południowy – Warka, Warka – Radom (second track), Skarżysko-Kamienna – Tumlin and Sędziszów – Kozłów. Other works on the line are not drawn: Skarżysko-Kamienna – Suchedniów (ZUE, signed 2016), Radom – Skarżysko-Kamienna (revitalised 2011–2013 per pl.wikipedia), Tumlin – Sędziszów and Tunel – Kraków. Contract values come from press reports of the signings and do not include later annexes.",
+    "ro": "Linia nr 8 a PKP PLK, 317,164 km de la Warszawa Zachodnia la Kraków Główny, electrificată la 3 kV c.c. Loturile sunt contractele de modernizare cu extindere și dată de semnare din surse: Warszawa Okęcie – Czachówek Południowy, Czachówek Południowy – Warka, Warka – Radom (a doua cale), Skarżysko-Kamienna – Tumlin și Sędziszów – Kozłów. Alte lucrări de pe linie nu sunt desenate: Skarżysko-Kamienna – Suchedniów (ZUE, semnat în 2016), Radom – Skarżysko-Kamienna (revitalizat în 2011–2013 conform pl.wikipedia), Tumlin – Sędziszów și Tunel – Kraków. Valorile contractelor provin din relatări de presă despre semnări și nu includ acte adiționale ulterioare."
+  },
+  "operator": "pl-plk",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "okecie-czachowek-poludnie",
+      "name": {
+        "en": "Warszawa Okęcie – Czachówek Południowy",
+        "ro": "Warszawa Okęcie – Czachówek Południowy"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-07-27",
+        "opened": "2021-08-29"
+      },
+      "lengthKm": 27,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 462,
+              "currency": "PLN",
+              "year": 2015,
+              "scope": "works",
+              "note": "Contract value as stated in the signing release; VAT basis not stated."
+            },
+            "date": "2015-07-27",
+            "sourceRef": "transinfo-okecie-czachowek"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-07-27",
+          "note": {
+            "en": "Contract signed with Trakcja PRKiI at Piaseczno station.",
+            "ro": "Contract semnat cu Trakcja PRKiI în stația Piaseczno."
+          },
+          "sourceRef": "transinfo-okecie-czachowek"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-08-29",
+          "note": {
+            "en": "PLK scheduled trains on two tracks along the whole Warszawa – Radom route from this date. The date this stretch itself went into service was not found.",
+            "ro": "PLK a programat trenuri pe două căi pe tot traseul Warszawa – Radom de la această dată. Data punerii în circulație a acestui tronson nu a fost găsită."
+          },
+          "sourceRef": "plk-2021-two-tracks"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Trakcja PRKiI",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 462,
+          "currency": "PLN",
+          "year": 2015,
+          "scope": "works",
+          "note": "VAT basis not stated."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 171.85,
+            "currency": "EUR",
+            "scope": "programme"
+          },
+          "detail": {
+            "en": "Phase II of Warszawa Okęcie – Radom (LOTs A, B, F) as a whole, under the Infrastructure and Environment Operational Programme 2014–2020: total investment EUR 312,259,480, Cohesion Fund contribution EUR 171,847,828. The figure also covers the Czachówek Południowy – Warka lot. The EC page gives a project duration of 01/2013 – 06/2021.",
+            "ro": "Faza II a Warszawa Okęcie – Radom (LOT A, B, F) în ansamblu, în cadrul Programului Operațional Infrastructură și Mediu 2014–2020: investiție totală 312.259.480 EUR, contribuția Fondului de Coeziune 171.847.828 EUR. Suma acoperă și lotul Czachówek Południowy – Warka. Pagina CE indică o durată a proiectului de 01/2013 – 06/2021."
+          }
+        }
+      ],
+      "note": {
+        "en": "Modernisation of 27 km with rebuilt platforms and track layout, design and build, for up to 160 km/h; 77 km of track and 101 switches were to be replaced (PLK, 2016). The signing release gives 462 million PLN and a duration of 20 months; a PLK release of February 2016 gives 460 million PLN. The line was originally due to be modernised by 2012. In December 2016 PLK planned to finish the whole investment in the third quarter of 2017; the date trains began using the finished stretch was not found, so the opened date is the day trains ran on two tracks along the whole Warszawa – Radom route (29 August 2021), and the stretch may have opened earlier. Passenger speeds on the modernised line Okęcie – Radom Główny rose to 160 km/h from 11 June 2023. The drawn centreline is 7% shorter than the sourced 27 km; the sourced length is kept.",
+        "ro": "Modernizare pe 27 km cu peroane și schemă de linii refăcute, proiectare și execuție, pentru până la 160 km/h; urmau să fie înlocuiți 77 km de cale și 101 aparate de cale (PLK, 2016). Comunicatul de semnare indică 462 milioane PLN și o durată de 20 de luni; un comunicat PLK din februarie 2016 indică 460 milioane PLN. Linia trebuia modernizată inițial până în 2012. În decembrie 2016 PLK plănuia încheierea întregii investiții în trimestrul III 2017; data la care trenurile au început să circule pe tronsonul finalizat nu a fost găsită, deci data deschiderii este ziua în care trenurile au circulat pe două căi pe tot traseul Warszawa – Radom (29 august 2021), iar tronsonul poate fi deschis mai devreme. Viteza trenurilor de călători pe linia modernizată Okęcie – Radom Główny a crescut la 160 km/h din 11 iunie 2023. Axul desenat este cu 7% mai scurt decât cei 27 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "transinfo-okecie-czachowek",
+        "plk-2015-okecie",
+        "plk-2016-okecie",
+        "plk-2016-piaseczno",
+        "plk-2021-two-tracks",
+        "plk-2023-160",
+        "plwiki-line-8",
+        "ec-line-8-phase-2",
+        "osm-relation-318914",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "okecie-czachowek-poludnie"
+    },
+    {
+      "id": "czachowek-poludnie-warka",
+      "name": {
+        "en": "Czachówek Południowy – Warka",
+        "ro": "Czachówek Południowy – Warka"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-04-11",
+        "opened": "2021-08-29"
+      },
+      "lengthKm": 19.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 216.7,
+              "currency": "PLN",
+              "year": 2017,
+              "scope": "works",
+              "note": "Net of VAT (netto). The signing report rounds it to 217 million PLN."
+            },
+            "date": "2017-04-11",
+            "sourceRef": "inzynier-czachowek-warka"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 2,
+        "stationCount": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-04-11",
+          "note": {
+            "en": "Contract signed with the Strabag – ZUE – Budimex consortium.",
+            "ro": "Contract semnat cu consorțiul Strabag – ZUE – Budimex."
+          },
+          "sourceRef": "rk-warka-radom-contracts"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-08-29",
+          "note": {
+            "en": "PLK scheduled trains on two tracks along the whole Warszawa – Radom route from this date. The date this stretch itself went into service was not found.",
+            "ro": "PLK a programat trenuri pe două căi pe tot traseul Warszawa – Radom de la această dată. Data punerii în circulație a acestui tronson nu a fost găsită."
+          },
+          "sourceRef": "plk-2021-two-tracks"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        },
+        {
+          "name": "ZUE",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 216.7,
+          "currency": "PLN",
+          "year": 2017,
+          "scope": "works",
+          "note": "Net of VAT."
+        }
+      },
+      "note": {
+        "en": "Design and build for 19.3 km: two tracks from Czachówek Południowy to Warka, level crossings, and the Warka and Chynów stations. The planned completion date given at signing was November 2020. PLK later gave this lot and Warka – Radom together as over 645 million PLN net (10 March 2022). The date trains began using this stretch was not found; the opened date is the day trains ran on two tracks along the whole Warszawa – Radom route (29 August 2021), and the stretch may have opened earlier. The Warka Miasto stop opened on 13 March 2022. Part of phase II (LOTs A, B, F), see the funding entry on the Okęcie lot. The drawn centreline is within 2% of the sourced length.",
+        "ro": "Proiectare și execuție pe 19,3 km: două căi de la Czachówek Południowy la Warka, treceri la nivel și stațiile Warka și Chynów. Termenul de finalizare planificat la semnare era noiembrie 2020. PLK a indicat ulterior acest lot și Warka – Radom împreună la peste 645 milioane PLN net (10 martie 2022). Data la care trenurile au început să circule pe acest tronson nu a fost găsită; data deschiderii este ziua în care trenurile au circulat pe două căi pe tot traseul Warszawa – Radom (29 august 2021), iar tronsonul poate fi deschis mai devreme. Halta Warka Miasto a fost deschisă la 13 martie 2022. Face parte din faza II (LOT A, B, F), vezi finanțarea de la lotul Okęcie. Axul desenat se încadrează în 2% față de lungimea din sursă."
+      },
+      "sourceRefs": [
+        "inzynier-czachowek-warka",
+        "rk-warka-radom-contracts",
+        "plk-2021-two-tracks",
+        "plk-2022-warka-miasto",
+        "plk-2023-160",
+        "plwiki-line-8",
+        "ec-line-8-phase-2",
+        "osm-relation-318914",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "czachowek-poludnie-warka"
+    },
+    {
+      "id": "warka-radom",
+      "name": {
+        "en": "Warka – Radom (second track)",
+        "ro": "Warka – Radom (a doua cale)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-04-11",
+        "opened": "2021-08-29"
+      },
+      "lengthKm": 46.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 429,
+              "currency": "PLN",
+              "year": 2017,
+              "scope": "works",
+              "note": "Contract value as stated in the signing report; VAT basis not stated there. PLK later gave this lot and Czachówek Południowy – Warka together as over 645 million PLN net, which equals 216.7 + 429 = 645.7."
+            },
+            "date": "2017-04-11",
+            "sourceRef": "rk-warka-radom-contracts"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-04-11",
+          "note": {
+            "en": "Contract signed in Radom with the Swietelsky Rail – Track Tec – Infrakol – Leonhard Weiss – Intop consortium.",
+            "ro": "Contract semnat la Radom cu consorțiul Swietelsky Rail – Track Tec – Infrakol – Leonhard Weiss – Intop."
+          },
+          "sourceRef": "rk-warka-radom-contracts"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2021-03-14",
+          "note": {
+            "en": "Trains from Warka ran on two tracks as far as Dobieszyn (one new track in use since February); traffic into Radom was to resume around mid-June.",
+            "ro": "Trenurile de la Warka au circulat pe două căi până la Dobieszyn (o cale nouă în uz din februarie); traficul spre Radom urma să fie reluat în jurul mijlocului lui iunie."
+          },
+          "sourceRef": "plk-2021-warka-dobieszyn"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-08-29",
+          "note": {
+            "en": "Trains ran on two tracks along the whole route to Radom, removing the single-track bottleneck between Warka and Radom.",
+            "ro": "Trenurile au circulat pe două căi pe tot traseul spre Radom, eliminând punctul îngust cu o singură cale dintre Warka și Radom."
+          },
+          "sourceRef": "plk-2021-two-tracks"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Swietelsky Rail",
+          "role": "builder"
+        },
+        {
+          "name": "Track Tec",
+          "role": "builder"
+        },
+        {
+          "name": "Infrakol",
+          "role": "builder"
+        },
+        {
+          "name": "Leonhard Weiss",
+          "role": "builder"
+        },
+        {
+          "name": "Intop",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 429,
+          "currency": "PLN",
+          "year": 2017,
+          "scope": "works",
+          "note": "VAT basis not stated in the signing report; see the cost note."
+        }
+      },
+      "note": {
+        "en": "Design and build including a second track between Warka and Radom, with traffic suspended for about half a year; construction was to take about 2.5 years after design. Two tracks ran from Warka to Dobieszyn from 14 March 2021 and along the whole route from 29 August 2021. Passenger speeds on the modernised line Okęcie – Radom Główny rose to 160 km/h from 11 June 2023. The report puts the whole Okęcie – Radom modernisation at about 1.8 billion PLN; PLK gave about 1.7 billion PLN in June 2023. Length is the difference of the Warka (km 56.444) and Radom Główny (km 102.944) chainages on pl.wikipedia; the drawn centreline is 46.5 km.",
+        "ro": "Proiectare și execuție inclusiv a doua cale între Warka și Radom, cu traficul suspendat circa jumătate de an; construcția urma să dureze circa 2,5 ani după proiectare. Două căi au circulat de la Warka la Dobieszyn din 14 martie 2021 și pe tot traseul din 29 august 2021. Viteza trenurilor de călători pe linia modernizată Okęcie – Radom Główny a crescut la 160 km/h din 11 iunie 2023. Raportul estimează întreaga modernizare Okęcie – Radom la circa 1,8 miliarde PLN; PLK a indicat circa 1,7 miliarde PLN în iunie 2023. Lungimea este diferența dintre kilometrajele Warka (km 56,444) și Radom Główny (km 102,944) din pl.wikipedia; axul desenat are 46,5 km."
+      },
+      "sourceRefs": [
+        "rk-warka-radom-contracts",
+        "plk-2021-warka-dobieszyn",
+        "plk-2021-two-tracks",
+        "plk-2022-warka-miasto",
+        "plk-2023-160",
+        "plwiki-line-8",
+        "osm-relation-318914",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "warka-radom"
+    },
+    {
+      "id": "skarzysko-kamienna-tumlin",
+      "name": {
+        "en": "Skarżysko-Kamienna – Tumlin",
+        "ro": "Skarżysko-Kamienna – Tumlin"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-02-06",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 32.18,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 678,
+              "currency": "PLN",
+              "year": 2025,
+              "scope": "works",
+              "note": "Net of VAT: over 678 million PLN (about 834 million gross). One figure for the whole agreement, covering both tasks."
+            },
+            "date": "2025-05",
+            "sourceRef": "plk-skarzysko-tumlin"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-02-06",
+          "note": {
+            "en": "Tender result for LOT A (Skarżysko-Kamienna – Tumlin, without Tumlin station), works to be done by PNUiK Kraków (pl.wikipedia). PLK reported the agreement signed in its release of 16 May 2025; the signing date is not stated.",
+            "ro": "Rezultatul licitației pentru LOT A (Skarżysko-Kamienna – Tumlin, fără stația Tumlin), lucrări de executat de PNUiK Kraków (pl.wikipedia). PLK a raportat contractul semnat în comunicatul din 16 mai 2025; data semnării nu este indicată."
+          },
+          "sourceRef": "plwiki-line-8"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Przedsiębiorstwo Napraw i Utrzymania Infrastruktury Kolejowej w Krakowie (PNUiK)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 678,
+          "currency": "PLN",
+          "year": 2025,
+          "scope": "works",
+          "note": "Net of VAT."
+        }
+      },
+      "note": {
+        "en": "Design and build of two tasks: LOT-A1-1 Skarżysko-Kamienna – Łączna (km 142.820 to 161.810) and LOT-A1-2 Łączna (without the station) – Tumlin (km 161.810 to 175.001), excluding Tumlin station; part of the project \"Prace na linii kolejowej nr 8 na odcinku Skarżysko-Kamienna – Kielce – Kozłów\". The contractor has 36 months for construction. The scope includes over 62 km of track, new platforms at Suchedniów, Łączna and Zagnańsk, 13 level crossing upgrades and a road tunnel at Suchedniów. Passenger trains are to reach 120 km/h and freight 100 km/h; PLK states that speeds rise by the end of 2028. No construction start was found. The drawn centreline is 2% shorter than the km span.",
+        "ro": "Proiectare și execuție a două sarcini: LOT-A1-1 Skarżysko-Kamienna – Łączna (km 142,820 la 161,810) și LOT-A1-2 Łączna (fără stație) – Tumlin (km 161,810 la 175,001), fără stația Tumlin; parte a proiectului „Prace na linii kolejowej nr 8 na odcinku Skarżysko-Kamienna – Kielce – Kozłów”. Executantul are 36 de luni pentru construcție. Lucrările includ peste 62 km de cale, peroane noi la Suchedniów, Łączna și Zagnańsk, modernizarea a 13 treceri la nivel și un tunel rutier la Suchedniów. Trenurile de călători vor atinge 120 km/h, iar cele de marfă 100 km/h; PLK indică creșterea vitezelor până la sfârșitul lui 2028. Nu a fost găsită o dată de începere a construcției. Axul desenat este cu 2% mai scurt decât intervalul kilometric."
+      },
+      "sourceRefs": [
+        "plk-skarzysko-tumlin",
+        "plk-skarzysko-kozlow",
+        "plwiki-line-8",
+        "osm-relation-318914",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "skarzysko-kamienna-tumlin"
+    },
+    {
+      "id": "sedziszow-kozlow",
+      "name": {
+        "en": "Sędziszów – Kozłów",
+        "ro": "Sędziszów – Kozłów"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-07-12",
+        "constructionStart": "2024-11",
+        "expectedOpening": "2027-06"
+      },
+      "lengthKm": 11,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 287.66,
+              "currency": "PLN",
+              "year": 2024,
+              "scope": "works",
+              "note": "Net of VAT (netto): 287,661,780.49 PLN."
+            },
+            "date": "2024-07-12",
+            "sourceRef": "rk-sedziszow-kozlow"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 140
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-01-04",
+          "sourceRef": "rk-sedziszow-kozlow"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-07-12",
+          "note": {
+            "en": "Contract signed with Pomorskie Przedsiębiorstwo Mechaniczno-Torowe (PPM-T), a company controlled by PKP PLK.",
+            "ro": "Contract semnat cu Pomorskie Przedsiębiorstwo Mechaniczno-Torowe (PPM-T), companie controlată de PKP PLK."
+          },
+          "sourceRef": "rk-sedziszow-kozlow"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-11",
+          "note": {
+            "en": "PLK: works on the southern section of line 8 began in November 2024.",
+            "ro": "PLK: lucrările pe secțiunea sudică a liniei 8 au început în noiembrie 2024."
+          },
+          "sourceRef": "plk-skarzysko-kozlow"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Pomorskie Przedsiębiorstwo Mechaniczno-Torowe (PPM-T)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 287.66,
+          "currency": "PLN",
+          "year": 2024,
+          "scope": "works",
+          "note": "Net of VAT."
+        }
+      },
+      "note": {
+        "en": "Design and build of about 11 km on the Świętokrzyskie – Małopolskie border (LOT B2_2 and B3 of Sitkówka Nowiny – Kozłów), excluding Sędziszów station. Line speed rises from 110 to 140 km/h (160 km/h beyond the Kozłów exit head), freight from 80 to 120 km/h. The tender was launched on 4 January 2023; 13 bids were opened on 31 July 2023. According to the schedule the modernisation is to end in June 2027; PLK (16 April 2025) gives \"over 300 million PLN\" for the 11 km, with the Kozłów station and the Klimontów stop, ready in 2027. The contract date is that of the report (12 July 2024). The drawn centreline is 10% longer than the sourced approximate 11 km (it runs to the Kozłów exit head); the sourced length is kept.",
+        "ro": "Proiectare și execuție pe circa 11 km la limita voievodatelor Świętokrzyskie și Małopolskie (LOT B2_2 și B3 din Sitkówka Nowiny – Kozłów), fără stația Sędziszów. Viteza liniei crește de la 110 la 140 km/h (160 km/h dincolo de capul de ieșire Kozłów), iar cea a mărfarelor de la 80 la 120 km/h. Licitația a fost lansată la 4 ianuarie 2023; 13 oferte au fost deschise la 31 iulie 2023. Conform graficului, modernizarea se încheie în iunie 2027; PLK (16 aprilie 2025) indică „peste 300 milioane PLN” pentru cei 11 km, cu stația Kozłów și halta Klimontów, gata în 2027. Data contractului este cea a relatării (12 iulie 2024). Axul desenat este cu 10% mai lung decât cei circa 11 km din sursă (ajunge până la capul de ieșire Kozłów); lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "rk-sedziszow-kozlow",
+        "plk-skarzysko-kozlow",
+        "plwiki-line-8",
+        "osm-relation-318914",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sedziszow-kozlow"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-line-8",
+      "title": "Wikipedia (pl): Linia kolejowa nr 8",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_8",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "transinfo-okecie-czachowek",
+      "title": "Rusza modernizacja kolejnego odcinka ósemki",
+      "url": "https://transinfo.pl/inforail/rusza-modernizacja-kolejnego-odcinka-osemki_more_75348/",
+      "publisher": "inforail.pl (transinfo.pl)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rk-warka-radom-contracts",
+      "title": "PKP PLK z umowami na modernizację Warka – Radom",
+      "url": "https://www.rynek-kolejowy.pl/wiadomosci/pkp-plk-z-umowami-na-modernizacje-warka--radom-81201.html",
+      "publisher": "Rynek Kolejowy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "inzynier-czachowek-warka",
+      "title": "Modernizacja linii kolejowej nr 8 Warszawa-Radom",
+      "url": "https://inzynierbudownictwa.pl/modernizacja-linii-kolejowej-nr-8-warszawa-radom/",
+      "publisher": "Inżynier Budownictwa",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rk-sedziszow-kozlow",
+      "title": "Linia 8: Sędziszów – Kozłów nareszcie z umową",
+      "url": "https://www.rynek-kolejowy.pl/wiadomosci/linia-8-sedziszow--kozlow-nareszcie-z-umowa-119722.html",
+      "publisher": "Rynek Kolejowy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "ec-line-8-phase-2",
+      "title": "European Commission: Modernizacja linii kolejowej nr 8, odcinek Warszawa Okęcie–Radom (LOT A, B, F), faza II",
+      "url": "https://ec.europa.eu/regional_policy/projects/projects-database/strengthening-the-spine-of-poland-s-modern-rail-network_pl",
+      "publisher": "European Commission",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-318914",
+      "title": "OpenStreetMap: relation 318914, Linia kolejowa nr 8 Warszawa Zachodnia – Kraków Główny (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/relation/318914",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-2015-okecie",
+      "title": "Rusza modernizacja pierwszego odcinka linii Warszawa – Radom",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/rusza-modernizacja-pierwszego-odcinka-linii-warszawa-radom-2844",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-2016-okecie",
+      "title": "Warszawa Okęcie – Czachówek: dobre tempo prac, od marca kolejny etap przebudowy",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/warszawa-okecie-czachowek-dobre-tempo-prac-od-marca-kolejny-etap-przebudowy-3013",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-2016-piaseczno",
+      "title": "W Piasecznie od grudnia z nowego peronu",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/w-piasecznie-od-grudnia-z-nowego-peronu-3242",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-2021-warka-dobieszyn",
+      "title": "Warka – Radom, dwutorowo jedziemy do Dobieszyna",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/warka-radom-dwutorowo-jedziemy-do-dobieszyna-5484",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-2021-two-tracks",
+      "title": "Od niedzieli w Radomiu jedziemy z nowych przystanków",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/od-niedzieli-w-radomiu-jedziemy-z-nowych-przystankow-6047",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-2022-warka-miasto",
+      "title": "Warka Miasto – nowy przystanek lepszy dostęp do kolei",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/warka-miasto-nowy-przystanek-lepszy-dostep-do-kolei-6767",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-2023-160",
+      "title": "Krótsze podróże pociągami między Radomiem a Warszawą",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/krotsze-podroze-pociagami-miedzy-radomiem-a-warszawa-8418",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-skarzysko-tumlin",
+      "title": "Nowoczesna kolej ze Skarżyska-Kamiennej w kierunku Kielc",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/nowoczesna-kolej-ze-skarzyska-kamiennej-w-kierunku-kielc-10724",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-skarzysko-kozlow",
+      "title": "Zmodernizujemy najważniejszą linię kolejową w województwie świętokrzyskim",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/zmodernizujemy-najwazniejsza-linie-kolejowa-w-wojewodztwie-swietokrzyskim-10653",
+      "publisher": "PKP Polskie Linie Kolejowe",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

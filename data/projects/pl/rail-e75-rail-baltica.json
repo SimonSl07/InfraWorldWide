@@ -1,0 +1,518 @@
+{
+  "id": "pl-rail-e75-rail-baltica",
+  "country": "pl",
+  "category": "railway",
+  "name": {
+    "en": "Rail Baltica in Poland: Warszawa Rembertów – Sadowne – Czyżew – Białystok – Ełk (lines 449, 6 and 38, E75)",
+    "ro": "Rail Baltica în Polonia: Varșovia Rembertów – Sadowne – Czyżew – Białystok – Ełk (liniile 449, 6 și 38, E75)"
+  },
+  "description": {
+    "en": "Modernisation of the existing Warszawa – Białystok – Ełk railway for 160–200 km/h, the Polish part of the E75 corridor towards Lithuania. PKP PLK splits it into stages, each with its own contract and EU Connecting Europe Facility (CEF) project: Warszawa Rembertów – Sadowne (main works finished 2015), Sadowne – Czyżew (contract 2017, second track in service 30 December 2019), Czyżew – Białystok (contract 26 June 2020, works at the finishing stage in January 2025) and Białystok – Ełk (contract signed 15 September 2026). The Ełk – Trakiszki (Lithuanian border) section is still at design stage and is not drawn. Lots are drawn on one track of the existing line from OpenStreetMap. Contract values are net of VAT where PLK states it; the net and gross values, and the contract and the whole CEF project, are different figures and are kept apart in the lot notes.",
+    "ro": "Modernizarea liniei existente Varșovia – Białystok – Ełk pentru 160–200 km/h, partea poloneză a coridorului E75 spre Lituania. PKP PLK o împarte în etape, fiecare cu propriul contract și propriul proiect al Mecanismului pentru Interconectarea Europei (CEF): Varșovia Rembertów – Sadowne (lucrările principale încheiate în 2015), Sadowne – Czyżew (contract 2017, a doua cale în exploatare la 30 decembrie 2019), Czyżew – Białystok (contract 26 iunie 2020, lucrări în faza de finalizare în ianuarie 2025) și Białystok – Ełk (contract semnat la 15 septembrie 2026). Tronsonul Ełk – Trakiszki (granița cu Lituania) este încă în faza de proiectare și nu este desenat. Loturile sunt desenate pe o cale a liniei existente din OpenStreetMap. Valorile contractelor sunt fără TVA acolo unde PLK o precizează; valoarea netă și cea brută, precum și contractul și întregul proiect CEF, sunt cifre diferite și sunt păstrate separat în notele loturilor."
+  },
+  "operator": "pl-plk",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "rembertow-sadowne",
+      "name": {
+        "en": "Warszawa Rembertów – Zielonka – Wołomin – Tłuszcz – Sadowne",
+        "ro": "Varșovia Rembertów – Zielonka – Wołomin – Tłuszcz – Sadowne"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015"
+      },
+      "lengthKm": 66,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 1500,
+              "currency": "PLN",
+              "scope": "total",
+              "confidence": "reported",
+              "note": "Press figure, about PLN 1.5 billion; VAT basis and price year not stated."
+            },
+            "date": "2018-03-12",
+            "note": "PAP figure quoted by Forsal on 12 March 2018: the Warszawa – Sadowne works \"kosztowały ok. 1,5 mld zł\". VAT basis and price year not stated.",
+            "sourceRef": "forsal-2018-03"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015",
+          "note": {
+            "en": "Main modernisation works on Warszawa Rembertów – Tłuszcz (Sadowne) finished.",
+            "ro": "Lucrările principale de modernizare pe Varșovia Rembertów – Tłuszcz (Sadowne) încheiate."
+          },
+          "sourceRef": "kolej-na-wschod-about"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The remaining works on this section (grade-separated crossings at Kobyłka, Jasienica, Łochów, Topór, Tłuszcz, Zielonka and Mokra Wieś) belong to CEF project 2014-PL-TMC-0182-W, which also covers Sadowne – Czyżew: total cost EUR 235.2 million, EU contribution EUR 179.2 million",
+            "ro": "Lucrările rămase pe acest tronson (intersecții denivelate la Kobyłka, Jasienica, Łochów, Topór, Tłuszcz, Zielonka și Mokra Wieś) aparțin proiectului CEF 2014-PL-TMC-0182-W, care cuprinde și Sadowne – Czyżew: cost total 235,2 milioane EUR, contribuție UE 179,2 milioane EUR"
+          }
+        }
+      ],
+      "note": {
+        "en": "Draws the line from the junction of line 449 at Rembertów through Zielonka, Wołomin and Tłuszcz to Sadowne Węgrowskie. PLK dates the end of the main works to 2015 and reports 4 stations and 14 stops rebuilt, more than 60 km of track replaced, 8 bridges and 24 level crossings; trains returned to Tłuszcz – Sadowne on 13 December 2015 after a closure from 12 October 2014 (pl.wikipedia). PLK's press release of 27 May 2014 gives the project as more than 66 km of line. The PLN 1.5 billion cost is a PAP statement quoted by Forsal in March 2018. Grade-separated crossings continue under CEF project 2014-PL-TMC-0182-W, whose period runs to December 2024, and separate contracts were let for them, for example five signed on 19 May 2017 with PW Banimex and Budrex-Kobi (pl.wikipedia); these are not priced here. The contracts for the individual sub-sections (Rembertów – Wołomin, Wołomin – Tłuszcz, Tłuszcz – Sadowne) were not found, so the stage is one lot.",
+        "ro": "Desenează linia de la joncțiunea liniei 449 la Rembertów prin Zielonka, Wołomin și Tłuszcz până la Sadowne Węgrowskie. PLK datează sfârșitul lucrărilor principale în 2015 și raportează 4 stații și 14 halte reconstruite, peste 60 km de cale înlocuiți, 8 poduri și 24 de treceri la nivel; trenurile au revenit pe Tłuszcz – Sadowne la 13 decembrie 2015, după o închidere din 12 octombrie 2014 (pl.wikipedia). Comunicatul PLK din 27 mai 2014 indică proiectul ca peste 66 km de linie. Costul de 1,5 miliarde PLN este o declarație PAP citată de Forsal în martie 2018. Intersecțiile denivelate continuă în proiectul CEF 2014-PL-TMC-0182-W, a cărui perioadă se întinde până în decembrie 2024, iar pentru ele au fost atribuite contracte separate, de exemplu cinci semnate la 19 mai 2017 cu PW Banimex și Budrex-Kobi (pl.wikipedia); acestea nu sunt evaluate aici. Contractele pentru subtronsoane (Rembertów – Wołomin, Wołomin – Tłuszcz, Tłuszcz – Sadowne) nu au fost găsite, deci etapa este un singur lot."
+      },
+      "sourceRefs": [
+        "kolej-na-wschod-about",
+        "forsal-2018-03",
+        "plk-rembertow-sadowne-2014-05",
+        "plwiki-linia-6",
+        "plk-cef-0182",
+        "osm-rail-baltica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "rembertow-sadowne"
+    },
+    {
+      "id": "sadowne-czyzew",
+      "name": {
+        "en": "Sadowne – Czyżew",
+        "ro": "Sadowne – Czyżew"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-06-13",
+        "opened": "2019-12-30"
+      },
+      "lengthKm": 38.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 641,
+              "currency": "PLN",
+              "year": 2017,
+              "scope": "works",
+              "note": "Stated as over PLN 641 million; VAT basis not stated."
+            },
+            "date": "2017-06-13",
+            "sourceRef": "rynek-kolejowy-2017-06"
+          },
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 560,
+              "currency": "PLN",
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Railway Gazette: a PLN 560 million modernisation; VAT basis and price year not stated."
+            },
+            "date": "2019-12-30",
+            "sourceRef": "railway-gazette-2019-12"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2,
+        "stationCount": 2,
+        "bridgeCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-06-13",
+          "note": {
+            "en": "Works contract signed with Przedsiębiorstwo Usług Technicznych Intercor.",
+            "ro": "Contract de lucrări semnat cu Przedsiębiorstwo Usług Technicznych Intercor."
+          },
+          "sourceRef": "rynek-kolejowy-2017-06"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-30",
+          "note": {
+            "en": "Second track handed over; trains run on both modernised tracks and the single-track Bug bridge is replaced by a double-track one.",
+            "ro": "A doua cale predată; trenurile circulă pe ambele căi modernizate, iar podul cu o singură cale peste Bug este înlocuit cu unul cu două căi."
+          },
+          "sourceRef": "kolej-na-wschod-2019-12"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "amount": {
+            "amount": 467,
+            "currency": "PLN",
+            "scope": "programme",
+            "note": "Stated by PLK as the Connecting Europe Facility share of the contract."
+          },
+          "detail": {
+            "en": "Connecting Europe Facility: PLK states PLN 467 million of the contract value comes from CEF",
+            "ro": "Mecanismul pentru Interconectarea Europei: PLK precizează că 467 milioane PLN din valoarea contractului provin din CEF"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Przedsiębiorstwo Usług Technicznych Intercor",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 641,
+          "currency": "PLN",
+          "year": 2017,
+          "scope": "works",
+          "note": "Stated as over PLN 641 million; VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Contract signed 13 June 2017 for over PLN 641 million (VAT basis not stated), PLN 467 million of it from CEF, under project 2014-PL-TMC-0182-W. Scope: Małkinia and Sadowne stations, 12 platforms, about 70 km of single track, 11 level crossings, 3 bridges including a new bridge over the Bug and a second track on Prostyń Bug – Małkinia, and a local control centre at Małkinia. PLK says the second track was handed over on 30 December 2019 and Railway Gazette reports a PLN 560 million modernisation completed that day on 38.9 km Sadowne Węgrowskie – Czyżew; PLK's own page speaks of more than 36 km modernised, and its press release of 24 January 2020 gives PLN 569 million for the investment. The start of construction is not stated in the sources found. The drawn track, cut at the Czyżew station node, is 1.7% longer than the sourced 38.9 km; the sourced length is kept.",
+        "ro": "Contract semnat la 13 iunie 2017 pentru peste 641 milioane PLN (baza TVA nu este indicată), din care 467 milioane PLN din CEF, în cadrul proiectului 2014-PL-TMC-0182-W. Lucrări: stațiile Małkinia și Sadowne, 12 peroane, circa 70 km de cale simplă, 11 treceri la nivel, 3 poduri, între care un pod nou peste Bug și a doua cale pe Prostyń Bug – Małkinia, și un centru local de comandă la Małkinia. PLK spune că a doua cale a fost predată la 30 decembrie 2019, iar Railway Gazette raportează o modernizare de 560 milioane PLN încheiată în acea zi pe 38,9 km Sadowne Węgrowskie – Czyżew; pagina PLK vorbește de peste 36 km modernizați, iar comunicatul PLK din 24 ianuarie 2020 indică 569 milioane PLN pentru investiție. Începutul construcției nu este indicat în sursele găsite. Calea desenată, tăiată la nodul stației Czyżew, este cu 1,7% mai lungă decât cei 38,9 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "rynek-kolejowy-2017-06",
+        "kolej-na-wschod-2019-12",
+        "railway-gazette-2019-12",
+        "plk-sadowne-czyzew-2020-01",
+        "plk-cef-0182",
+        "osm-rail-baltica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sadowne-czyzew"
+    },
+    {
+      "id": "czyzew-bialystok",
+      "name": {
+        "en": "Czyżew – Białystok",
+        "ro": "Czyżew – Białystok"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-06-26",
+        "constructionStart": "2020-09-17"
+      },
+      "lengthKm": 71,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 3300,
+              "currency": "PLN",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT; PLK states over PLN 3.3 billion net."
+            },
+            "date": "2020-06-26",
+            "sourceRef": "plk-czyzew-bialystok-2020-06"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-06-26",
+          "note": {
+            "en": "Works contract signed with the Intercor, Stecol Corporation and Sinohydro Corporation Limited consortium.",
+            "ro": "Contract de lucrări semnat cu consorțiul Intercor, Stecol Corporation și Sinohydro Corporation Limited."
+          },
+          "sourceRef": "plk-czyzew-bialystok-2020-06"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-09-17",
+          "note": {
+            "en": "PLK reported that the rebuilding had begun, starting from the Podlaskie voivodeship border towards Czyżew.",
+            "ro": "PLK a anunțat că a început reconstrucția, pornind de la granița voievodatului Podlasia spre Czyżew."
+          },
+          "sourceRef": "plk-czyzew-bialystok-2020-09"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility: PLK cites a grant of over PLN 1.2 billion for this section; the CEF programme for both Czyżew – Białystok phases is over EUR 800 million with over EUR 668 million from the EU",
+            "ro": "Mecanismul pentru Interconectarea Europei: PLK menționează un grant de peste 1,2 miliarde PLN pentru acest tronson; programul CEF pentru ambele faze Czyżew – Białystok depășește 800 milioane EUR, din care peste 668 milioane EUR de la UE"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Przedsiębiorstwo Usług Technicznych Intercor",
+          "role": "builder"
+        },
+        {
+          "name": "Stecol Corporation",
+          "role": "builder"
+        },
+        {
+          "name": "Sinohydro Corporation Limited",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 3300,
+          "currency": "PLN",
+          "year": 2020,
+          "scope": "works",
+          "note": "Excluding VAT; stated as over PLN 3.3 billion net."
+        }
+      },
+      "note": {
+        "en": "Contract signed 26 June 2020 for over PLN 3.3 billion net. Over 71 km of line for 200 km/h: 5 stations rebuilt (Czyżew, Szepietowo, Łapy, Racibory, Białystok), a new station at Baciuty, 11 stops, a 200 m bridge over the Narew and grade-separated crossings. The sources describe two CEF phases (projects 2015-PL-TM-0002-W and 2019-PL-TMC-0322-W). Works were planned for 2020–2023. Later PLK releases give the value of the whole investment as almost PLN 3.4 billion and move the end of works to 2024 (19 July 2024: 24 of 25 road crossings ready, works at Białystok and Łapy continuing). On 14 January 2025 PLK wrote that work on the section was \"obecnie są na ukończeniu\"; no completion notice or later release was found, so the status follows that last source and no opening date is recorded. Opened in stages: platforms at Białystok and Białystok Zielone Wzgórza from September 2023, and the rebuilt Białystok station fully in use from September 2024. The drawn track starts at the Czyżew station node and is 8% shorter than the sourced 71 km, which PLK counts as 71.24 km of track from the Podlaskie border west of Czyżew; the Czyżew and Białystok stations are about 65.5 km apart on line 6 (pl.wikipedia). The sourced length is kept.",
+        "ro": "Contract semnat la 26 iunie 2020 pentru peste 3,3 miliarde PLN net. Peste 71 km de linie pentru 200 km/h: 5 stații reconstruite (Czyżew, Szepietowo, Łapy, Racibory, Białystok), o stație nouă la Baciuty, 11 halte, un pod de 200 m peste Narew și intersecții denivelate. Sursele descriu două faze CEF (proiectele 2015-PL-TM-0002-W și 2019-PL-TMC-0322-W). Lucrările erau planificate pentru 2020–2023. Comunicatele PLK ulterioare dau valoarea întregii investiții la aproape 3,4 miliarde PLN și mută sfârșitul lucrărilor în 2024 (19 iulie 2024: 24 din 25 de treceri rutiere gata, lucrări în continuare la Białystok și Łapy). La 14 ianuarie 2025 PLK a scris că lucrările pe tronson sunt \"obecnie są na ukończeniu\" (în finalizare); nu s-a găsit nicio notificare de finalizare sau un comunicat ulterior, deci statutul urmează ultima sursă și nu este înregistrată nicio dată de deschidere. Deschis pe etape: peroane la Białystok și Białystok Zielone Wzgórza din septembrie 2023, iar stația Białystok reconstruită este în folosință completă din septembrie 2024. Calea desenată începe la nodul stației Czyżew și este cu 8% mai scurtă decât cei 71 km din sursă, pe care PLK îi numără ca 71,24 km de cale de la granița Podlasiei, la vest de Czyżew; stațiile Czyżew și Białystok sunt la circa 65,5 km una de alta pe linia 6 (pl.wikipedia). Lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plk-czyzew-bialystok-2020-06",
+        "plk-czyzew-bialystok-2020-09",
+        "plk-czyzew-bialystok-2023-12",
+        "plk-czyzew-bialystok-2024-07",
+        "plk-podlaskie-2025-01",
+        "plwiki-linia-6",
+        "plk-cef-0322",
+        "osm-rail-baltica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "czyzew-bialystok"
+    },
+    {
+      "id": "bialystok-elk",
+      "name": {
+        "en": "Białystok – Ełk (line 38)",
+        "ro": "Białystok – Ełk (linia 38)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-09-15"
+      },
+      "lengthKm": 95,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 4084,
+              "currency": "PLN",
+              "year": 2026,
+              "scope": "works",
+              "note": "Excluding VAT; PLN 5,023 million including VAT."
+            },
+            "date": "2026-09-15",
+            "sourceRef": "plk-bialystok-elk-2026"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-09-15",
+          "note": {
+            "en": "Works contract signed at Białystok station with a consortium led by Track Tec Construction.",
+            "ro": "Contract de lucrări semnat la stația Białystok cu un consorțiu condus de Track Tec Construction."
+          },
+          "sourceRef": "plk-bialystok-elk-2026"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Connecting Europe Facility, under the projects Białystok – Knyszyn, Knyszyn – Osowiec and Osowiec – Ełk",
+            "ro": "Mecanismul pentru Interconectarea Europei, în cadrul proiectelor Białystok – Knyszyn, Knyszyn – Osowiec și Osowiec – Ełk"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Track Tec Construction",
+          "role": "builder"
+        },
+        {
+          "name": "INTOP",
+          "role": "builder"
+        },
+        {
+          "name": "INTOP INFRASTRUKTURA",
+          "role": "builder"
+        },
+        {
+          "name": "UNIBEP",
+          "role": "builder"
+        },
+        {
+          "name": "Pomorskie Przedsiębiorstwo Mechaniczno-Torowe",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 4084,
+          "currency": "PLN",
+          "year": 2026,
+          "scope": "works",
+          "note": "Excluding VAT; PLN 5,023 million including VAT."
+        }
+      },
+      "note": {
+        "en": "Contract signed 15 September 2026 for PLN 4,084 million net (PLN 5,023 million gross) with a consortium of Track Tec Construction (leader), INTOP S.A., INTOP INFRASTRUKTURA S.A., UNIBEP S.A. and Pomorskie Przedsiębiorstwo Mechaniczno-Torowe. Almost 95 km of double-track line for up to 200 km/h, 8 stations and 10 stops, 20 road and 12 rail viaducts and 12 underpasses; work is planned to the fourth quarter of 2029. The drawn track of the existing line 38 is 9% longer than the stated length; the stated length is kept. Works have not started in the sources found.",
+        "ro": "Contract semnat la 15 septembrie 2026 pentru 4.084 milioane PLN net (5.023 milioane PLN brut) cu un consorțiu format din Track Tec Construction (lider), INTOP S.A., INTOP INFRASTRUKTURA S.A., UNIBEP S.A. și Pomorskie Przedsiębiorstwo Mechaniczno-Torowe. Aproape 95 km de linie cu două căi pentru până la 200 km/h, 8 stații și 10 halte, 20 de viaducte rutiere și 12 feroviare și 12 pasaje subterane; lucrările sunt planificate până în trimestrul al patrulea din 2029. Calea desenată a liniei existente 38 este cu 9% mai lungă decât lungimea indicată; lungimea indicată este păstrată. În sursele găsite lucrările nu au început."
+      },
+      "sourceRefs": [
+        "plk-bialystok-elk-2026",
+        "osm-rail-baltica",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bialystok-elk"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plk-bialystok-elk-2026",
+      "title": "PKP PLK: Rail Baltica Białystok-Ełk – rekordowa umowa i inwestycja (15 September 2026)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/rail-baltica-bialystok-elk-rekordowa-umowa-i-inwestycja-11736",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-czyzew-bialystok-2020-06",
+      "title": "PKP PLK: Rail Baltica: rusza modernizacja odcinka Czyżew – Białystok (26 June 2020)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/rail-baltica-rusza-modernizacja-odcinka-czyzew-bialystok-4779",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-czyzew-bialystok-2020-09",
+      "title": "PKP PLK: Rail Baltica: ruszyła przebudowa Czyżew-Białystok (17 September 2020)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/rail-baltica-ruszyla-przebudowa-czyzew-bialystok-5010",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rynek-kolejowy-2017-06",
+      "title": "Rynek Kolejowy: PLK ruszają z dalszą modernizacją Rail Baltiki (13 June 2017)",
+      "url": "https://www.rynek-kolejowy.pl/wiadomosci/plk-ruszaja-z-dalsza-modernizacja-rail-baltiki-82172.html",
+      "publisher": "Rynek Kolejowy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "kolej-na-wschod-2019-12",
+      "title": "Kolej na wschód: Sadowne – Czyżew po obu torach! (30 December 2019, web.archive.org copy)",
+      "url": "https://web.archive.org/web/20200103141744/http://www.rail-baltica.pl/aktualnosci/sadowne-czyzew-po-obu-torach-2323/",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "kolej-na-wschod-about",
+      "title": "Kolej na wschód: O inwestycji (web.archive.org copy, 24 September 2023)",
+      "url": "https://web.archive.org/web/20230924150443/https://www.rail-baltica.pl/o-inwestycji/",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "railway-gazette-2019-12",
+      "title": "Railway Gazette: Polish-Chinese consortium to upgrade Białystok line",
+      "url": "https://railwaygazette.com/infrastructure/polish-chinese-consortium-to-upgrade-biaystok-line/55448.article",
+      "publisher": "Railway Gazette International",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "forsal-2018-03",
+      "title": "Forsal.pl: PKP PLK: w połowie 2018 r. przetarg na odcinek Rail Baltica Czyżew-Białystok (12 March 2018)",
+      "url": "https://forsal.pl/artykuly/1110457,pkp-plk-w-polowie-2018-r-przetarg-na-odcinek-rail-baltica-czyzewbialystok.html",
+      "publisher": "Forsal.pl (PAP)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-cef-0182",
+      "title": "PKP PLK investment map: 2014-PL-TMC-0182-W Prace na linii E75 na odcinku Sadowne – Czyżew wraz z robotami pozostałymi na odcinku Warszawa Rembertów – Sadowne",
+      "url": "https://www.plk-inwestycje.pl/projekty/instrument-laczac-europe-connecting-europe-facility-cef/2014-pl-tmc-0182-w-prace-na-linii-e75-na-odcinku-sadowne-czyzew-wraz-z-robotami-pozostalymi-na-odcinku-warszawa-rembertow-sadowne/",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-cef-0322",
+      "title": "PKP PLK investment map: 2019-PL-TMC-0322-W Prace na linii E75 na odcinku Czyżew – Białystok (faza II)",
+      "url": "https://www.plk-inwestycje.pl/projekty/instrument-laczac-europe-connecting-europe-facility-cef/2019-pl-tmc-0322-w-prace-na-linii-e75-na-odcinku-czyzew-bialystok-faza-ii/",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-linia-6",
+      "title": "Wikipedia (pl): Linia kolejowa nr 6",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_6",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-rembertow-sadowne-2014-05",
+      "title": "PKP PLK: Ruszyła modernizacja linii Rail Baltica (27 May 2014)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/ruszyla-modernizacja-linii-rail-baltica-2432",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-sadowne-czyzew-2020-01",
+      "title": "PKP PLK: Rail Baltica. Podróże Warszawa – Białystok dwoma torami nad Bugiem (24 January 2020)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/rail-baltica-podroze-warszawa-bialystok-dwoma-torami-nad-bugiem-4522",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-czyzew-bialystok-2023-12",
+      "title": "PKP PLK: Rail Baltica: szybsze i wygodniejsze podróże na linii Warszawa – Białystok (11 December 2023)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/rail-baltica-szybsze-i-wygodniejsze-podroze-na-linii-warszawa-bialystok-9113",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-czyzew-bialystok-2024-07",
+      "title": "PKP PLK: Podlaskie: tunel w Baciutach usprawnia ruch kolejowy i drogowy (19 July 2024)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/podlaskie-tunel-w-baciutach-usprawnia-ruch-kolejowy-i-drogowy-9913",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-podlaskie-2025-01",
+      "title": "PKP PLK: Województwo podlaskie – PLK SA podsumowują rok 2024 (14 January 2025)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/wojewodztwo-podlaskie-plk-sa-podsumowuja-rok-2024-10428",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-rail-baltica",
+      "title": "OpenStreetMap: railway ways of lines 449, 6 and 38 (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

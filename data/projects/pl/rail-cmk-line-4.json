@@ -1,0 +1,340 @@
+{
+  "id": "pl-rail-cmk-line-4",
+  "country": "pl",
+  "category": "railway",
+  "name": {
+    "en": "Centralna Magistrala Kolejowa (line 4 Grodzisk Mazowiecki – Zawiercie)",
+    "ro": "Centralna Magistrala Kolejowa (linia 4 Grodzisk Mazowiecki – Zawiercie)"
+  },
+  "description": {
+    "en": "Line 4 of PKP PLK, the Central Railway Trunk Line (CMK), is a two-track 3 kV DC line of 223.8 km (km 1.091 to 224.915) from Grodzisk Mazowiecki to Zawiercie. It was built in 1971–1977: the first track from Zawiercie to Idzikowice opened on 26 September 1974, Idzikowice – Szeligi on 30 June 1977 and the last section to Grodzisk Mazowiecki on 28 December 1977. It stays open throughout and is modelled as three lots on the existing line, so the old railway shows as opened before the upgrade. The upgrade is a series of separate PLK contracts, listed in the lot notes: 200 km/h has been permitted on Olszamowice – Zawiercie since 14 December 2014 and on Grodzisk Mazowiecki – Idzikowice since 10 December 2017. In March 2024 PLK said it was building ETCS level 2 on the 210 km Korytów – Zawiercie section for PLN 361 million, as part of preparing the line for 250 km/h. Also drawn is the new single-track link, line 582 Czarnca – Włoszczowa Północ, opened in December 2022.",
+    "ro": "Linia 4 a PKP PLK, Magistrala Feroviară Centrală (CMK), este o linie electrificată la 3 kV c.c. cu două căi, de 223,8 km (km 1,091 – 224,915), de la Grodzisk Mazowiecki la Zawiercie. A fost construită în 1971–1977: prima cale dintre Zawiercie și Idzikowice a fost deschisă la 26 septembrie 1974, Idzikowice – Szeligi la 30 iunie 1977, iar ultimul tronson spre Grodzisk Mazowiecki la 28 decembrie 1977. Rămâne în exploatare pe tot parcursul și este modelată ca trei loturi pe linia existentă, astfel încât calea ferată veche apare ca deschisă înainte de modernizare. Modernizarea este o serie de contracte PLK separate, enumerate în notele loturilor: 200 km/h este permis pe Olszamowice – Zawiercie din 14 decembrie 2014 și pe Grodzisk Mazowiecki – Idzikowice din 10 decembrie 2017. În martie 2024 PLK a declarat că construiește ETCS nivel 2 pe tronsonul Korytów – Zawiercie de 210 km, pentru 361 milioane PLN, în pregătirea liniei pentru 250 km/h. Este desenată și noua legătură cu o singură cale, linia 582 Czarnca – Włoszczowa Północ, deschisă în decembrie 2022."
+  },
+  "operator": "pl-plk",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "grodzisk-idzikowice",
+      "name": {
+        "en": "Grodzisk Mazowiecki – Idzikowice",
+        "ro": "Grodzisk Mazowiecki – Idzikowice"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1977-12-28"
+      },
+      "lengthKm": 79.52,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200,
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1977-06-30",
+          "note": {
+            "en": "Idzikowice – Szeligi opened, with the connecting curves.",
+            "ro": "Idzikowice – Szeligi deschis, împreună cu legăturile."
+          },
+          "sourceRef": "plwiki-line-4"
+        },
+        {
+          "kind": "opened",
+          "date": "1977-12-28",
+          "note": {
+            "en": "Last section, Szeligi – Grodzisk Mazowiecki, opened.",
+            "ro": "Ultimul tronson, Szeligi – Grodzisk Mazowiecki, deschis."
+          },
+          "sourceRef": "plwiki-line-4"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PKP Energetyka",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Chainage km 1.091 – 80.608 (79.517 km). Original opening 1977 in two parts. 200 km/h was introduced on this 80 km section on 10 December 2017. Overhead line Szeligi – Idzikowice (km 24.023 – 79.309, 55 km over both tracks): contract signed on 20 June 2012 with PKP Energetyka, net value PLN 65.9 million including design, with completion planned by 5 June 2013 (the report does not say it was completed). Line 4 also carries ETCS level 2 works on Korytów – Zawiercie (PLN 361 million for the whole 210 km, not split by lot, basis not stated).",
+        "ro": "Kilometraj km 1,091 – 80,608 (79,517 km). Deschidere inițială 1977, în două părți. Viteza de 200 km/h a fost introdusă pe acest tronson de 80 km la 10 decembrie 2017. Linia de contact Szeligi – Idzikowice (km 24,023 – 79,309, 55 km deasupra ambelor căi): contract semnat la 20 iunie 2012 cu PKP Energetyka, valoare netă 65,9 milioane PLN inclusiv proiectarea, cu finalizare planificată până la 5 iunie 2013 (articolul nu spune că a fost finalizat). Pe linia 4 se execută și lucrări ETCS nivel 2 pe Korytów – Zawiercie (361 milioane PLN pentru cei 210 km în total, nedefalcate pe loturi, baza nu este indicată)."
+      },
+      "sourceRefs": [
+        "plwiki-line-4",
+        "rk-pkp-energetyka-catenary",
+        "plk-cmk-2024",
+        "osm"
+      ],
+      "geometryRef": "grodzisk-idzikowice"
+    },
+    {
+      "id": "idzikowice-olszamowice",
+      "name": {
+        "en": "Idzikowice – Olszamowice",
+        "ro": "Idzikowice – Olszamowice"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1974-09-26"
+      },
+      "lengthKm": 44.2,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1974-09-26",
+          "note": {
+            "en": "First track opened on Zawiercie – Idzikowice, with provisional signalling. The second track and electrification followed after about a year.",
+            "ro": "Prima cale deschisă pe Zawiercie – Idzikowice, cu instalații provizorii de semnalizare. A doua cale și electrificarea au urmat după circa un an."
+          },
+          "sourceRef": "plwiki-line-4"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "KZA Lublin",
+          "role": "builder"
+        },
+        {
+          "name": "Porr Polska Construction S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Chainage km 80.608 – 124.808 (44.2 km). Original opening 1974. Named contracts: Idzikowice station and local control centre, Budimex and KZA Lublin consortium, design-and-build, PLN 106 million (basis not stated), works from February 2018, final acceptance in June 2020, two weeks before the contract deadline. Opoczno Południe station (km 92.142), design and works with a second platform, Porr Polska Construction S.A. (spelt \"Porr Polska Construcion S.A.\" in the source), contract signed 16 May 2017, almost PLN 55 million (basis not stated), works planned for 2017–2019. Olszamowice station, Budimex, design and works worth almost PLN 45 million (basis not stated), completion reported on 21 August 2018. The Pilichowice junction post (km 106.588) opened on 11 August 2017. About 40 km of overhead line between Idzikowice and Olszamowice has been replaced.",
+        "ro": "Kilometraj km 80,608 – 124,808 (44,2 km). Deschidere inițială 1974. Contracte numite: stația Idzikowice și centrul local de comandă, consorțiul Budimex și KZA Lublin, proiectare și execuție, 106 milioane PLN (baza nu este indicată), lucrări din februarie 2018, recepție finală în iunie 2020, cu două săptămâni înainte de termenul contractual. Stația Opoczno Południe (km 92,142), proiectare și execuție cu al doilea peron, Porr Polska Construction S.A. (scris „Porr Polska Construcion S.A.” în sursă), contract semnat la 16 mai 2017, aproape 55 milioane PLN (baza nu este indicată), lucrări planificate în 2017–2019. Stația Olszamowice, Budimex, proiectare și lucrări de aproape 45 milioane PLN (baza nu este indicată), finalizare raportată la 21 august 2018. Posturul de ramificație Pilichowice (km 106,588) a fost deschis la 11 august 2017. Circa 40 km de linie de contact între Idzikowice și Olszamowice au fost înlocuiți."
+      },
+      "sourceRefs": [
+        "plwiki-line-4",
+        "budimex-lcs-idzikowice-2024",
+        "inforail-opoczno-2017",
+        "rk-budimex-olszamowice-2018",
+        "plk-cmk-2024",
+        "osm"
+      ],
+      "geometryRef": "idzikowice-olszamowice"
+    },
+    {
+      "id": "olszamowice-zawiercie",
+      "name": {
+        "en": "Olszamowice – Zawiercie",
+        "ro": "Olszamowice – Zawiercie"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1974-09-26"
+      },
+      "lengthKm": 100.11,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 200,
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1974-09-26",
+          "note": {
+            "en": "First track opened on Zawiercie – Idzikowice, with provisional signalling. The second track and electrification followed after about a year.",
+            "ro": "Prima cale deschisă pe Zawiercie – Idzikowice, cu instalații provizorii de semnalizare. A doua cale și electrificarea au urmat după circa un an."
+          },
+          "sourceRef": "plwiki-line-4"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Trakcja PRKiI",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Chainage km 124.808 – 224.915 (100.107 km). Original opening 1974. Scheduled 200 km/h service with ED250 Pendolino began on 14 December 2014 between km 125.2 and 212.2, excluding the Włoszczowa Północ station area and a stretch with level crossings (76.82 km in total); in March 2017 the 200 km/h stretch was shortened to 58 km (km 156.496–214.800) for the station works. Włoszczowa Północ station (km 154.39), second platform: contract signed in early November 2016 with Trakcja PRKiI, PLN 57 million net, works planned to the end of May 2018; the new platform opened on 11 August 2017. In March 2024 PLK described works on this lot: Psary – Zawiercie track renewal worth PLN 305 million, Knapówka junction post PLN 38 million, Zawiercie station PLN 96 million (basis not stated for these three, contractors not named). The PLN 361 million ETCS level 2 contract covers Korytów – Zawiercie, across all three lots. Speed on the line was lowered from 200 to 160 km/h in 2024 while ETCS level 1 was switched off; PLK says 250 km/h needs ETCS level 2 and GSM-R, with GSM-R tests planned for August 2026 in a PLK release of 16 April 2026 (not cited here).",
+        "ro": "Kilometraj km 124,808 – 224,915 (100,107 km). Deschidere inițială 1974. Circulația programată la 200 km/h cu ED250 Pendolino a început la 14 decembrie 2014 între km 125,2 și 212,2, cu excepția zonei stației Włoszczowa Północ și a unui tronson cu treceri la nivel (76,82 km în total); în martie 2017 tronsonul de 200 km/h a fost scurtat la 58 km (km 156,496–214,800) pentru lucrările la stații. Stația Włoszczowa Północ (km 154,39), al doilea peron: contract semnat la începutul lui noiembrie 2016 cu Trakcja PRKiI, 57 milioane PLN net, lucrări planificate până la sfârșitul lui mai 2018; noul peron a fost deschis la 11 august 2017. În martie 2024 PLK a descris lucrări pe acest lot: reînnoirea căii Psary – Zawiercie de 305 milioane PLN, postul de ramificație Knapówka 38 milioane PLN, stația Zawiercie 96 milioane PLN (baza nu este indicată pentru aceste trei, antreprenori nenumiți). Contractul ETCS nivel 2 de 361 milioane PLN acoperă Korytów – Zawiercie, pe toate cele trei loturi. Viteza pe linie a fost redusă de la 200 la 160 km/h în 2024, cât ETCS nivel 1 a fost oprit; PLK spune că pentru 250 km/h sunt necesare ETCS nivel 2 și GSM-R, cu teste GSM-R planificate în august 2026 într-un comunicat PLK din 16 aprilie 2026 (necitat aici)."
+      },
+      "sourceRefs": [
+        "plwiki-line-4",
+        "rk-trakcja-wloszczowa-2016",
+        "plk-cmk-2024",
+        "osm"
+      ],
+      "geometryRef": "olszamowice-zawiercie"
+    },
+    {
+      "id": "czarnca-wloszczowa-polnoc",
+      "name": {
+        "en": "Line 582 Czarnca – Włoszczowa Północ (new link)",
+        "ro": "Linia 582 Czarnca – Włoszczowa Północ (legătură nouă)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-28",
+        "opened": "2022-12"
+      },
+      "lengthKm": 5.025,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 40.2,
+              "currency": "PLN",
+              "year": 2017,
+              "scope": "works",
+              "note": "Net of VAT, design and build."
+            },
+            "date": "2017-12-28",
+            "sourceRef": "inforail-582-zue-2017"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 100,
+        "electrified": true,
+        "tracks": 1
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-12-28",
+          "note": {
+            "en": "Design-and-build contract signed with ZUE.",
+            "ro": "Contract de proiectare și execuție semnat cu ZUE."
+          },
+          "sourceRef": "inforail-582-zue-2017"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12",
+          "note": {
+            "en": "PLK announced the link ready on 6 December 2022; plwiki gives 11 December 2022 as the commissioning date.",
+            "ro": "PLK a anunțat legătura finalizată la 6 decembrie 2022; plwiki indică 11 decembrie 2022 ca dată a punerii în funcțiune."
+          },
+          "sourceRef": "plk-lacznica-582-2022"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-erdf",
+          "detail": {
+            "en": "Regional Operational Programme of Świętokrzyskie Voivodeship (ERDF): project value about PLN 42.8 million, of which EU co-financing over PLN 36 million",
+            "ro": "Programul Operațional Regional al Voievodatului Świętokrzyskie (FEDR): valoarea proiectului circa 42,8 milioane PLN, din care cofinanțarea UE peste 36 milioane PLN"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ZUE S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 40.2,
+          "currency": "PLN",
+          "year": 2017,
+          "scope": "works",
+          "note": "Net of VAT, design and build."
+        }
+      },
+      "note": {
+        "en": "Single-track electrified link between Czarnca junction on line 61 and Włoszczowa Północ on line 4, allowing trains from Kielce to enter the CMK northwards. The length is the 5.025 km in PLK's line list (Id-12, as cited on plwiki); PLK's press release calls it a three-kilometre link and the 2017 report gives about 3.2 km, which is also what is drawn, so the drawn line is shorter than the recorded length. The 2017 press report put the total cost at almost PLN 50 million with VAT, of which PLN 40.2 million net for ZUE. At completion PLK gave the project value as about PLN 42.8 million (basis not stated). Passenger trains up to 100 km/h, freight 80 km/h. The press forecast of December 2019 for opening was missed. Plwiki says works were reported begun in early July 2018 but that, because of plot-division problems, they actually started at the end of 2020, so no construction start is recorded.",
+        "ro": "Legătură electrificată cu o singură cale între stația de ramificație Czarnca de pe linia 61 și Włoszczowa Północ de pe linia 4, care permite trenurilor de la Kielce să intre pe CMK spre nord. Lungimea este cea de 5,025 km din lista de linii a PLK (Id-12, citată pe plwiki); comunicatul PLK o numește legătură de trei kilometri, iar presa din 2017 indică circa 3,2 km, cât este și linia desenată, deci linia desenată este mai scurtă decât lungimea înregistrată. Presa din 2017 a indicat un cost total de aproape 50 milioane PLN cu TVA, din care 40,2 milioane PLN net pentru ZUE. La finalizare PLK a indicat valoarea proiectului la circa 42,8 milioane PLN (baza nu este indicată). Trenuri de călători până la 100 km/h, marfă 80 km/h. Termenul de deschidere de decembrie 2019 anunțat în presă nu a fost respectat. Plwiki indică începerea lucrărilor în iulie 2018, dar și că lucrările propriu-zise au început la sfârșitul lui 2020 din cauza problemelor cu parcelele, deci nu este înregistrată nicio dată de începere a construcției."
+      },
+      "sourceRefs": [
+        "plk-lacznica-582-2022",
+        "inforail-582-zue-2017",
+        "plwiki-line-582",
+        "osm"
+      ],
+      "geometryRef": "czarnca-wloszczowa-polnoc"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-line-4",
+      "title": "Wikipedia (pl): Linia kolejowa nr 4 (chainage, 1974–1977 openings, 200 km/h dates, station contracts)",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_4",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-line-582",
+      "title": "Wikipedia (pl): Linia kolejowa nr 582 Czarnca – Włoszczowa Północ",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_582",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-cmk-2024",
+      "title": "PKP PLK: Prace na CMK dla szybszych podróży koleją (11 March 2024)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/prace-na-cmk-dla-szybszych-podrozy-koleja-9473",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-lacznica-582-2022",
+      "title": "PKP PLK: Łącznica Czarnca – Włoszczowa Północ usprawni możliwości podróży pociągiem (6 December 2022)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/lacznica-czarnca-wloszczowa-polnoc-usprawni-mozliwosci-podrozy-pociagiem-7751",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "inforail-582-zue-2017",
+      "title": "Inforail: Będzie łącznik między Kielcami a CMK (Czarnca-Włoszczowa Północ) (29 December 2017)",
+      "url": "https://transinfo.pl/inforail/bedzie-lacznik-miedzy-kielcami-a-cmk-czarnca-wloszczowa-polnoc-_more_101511/",
+      "publisher": "Inforail (TransInfo)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rk-trakcja-wloszczowa-2016",
+      "title": "Rynek Kolejowy: Trakcja PRKiI zmodernizuje Włoszczowę Północ (8 November 2016)",
+      "url": "http://www.rynek-kolejowy.pl/wiadomosci/trakcja-prkii-zmodernizuje-wloszczowe-polnoc-78912.html",
+      "publisher": "Rynek Kolejowy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "inforail-opoczno-2017",
+      "title": "Inforail: Drugie perony na stacjach Opoczno Południe i Włoszczowa Południe (17 May 2017)",
+      "url": "https://transinfo.pl/inforail/drugie-perony-na-stacjach-opoczno-poludnie-i-wloszczowa-poludnie-_more_94499/",
+      "publisher": "Inforail (TransInfo)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rk-budimex-olszamowice-2018",
+      "title": "Rynek Kolejowy: Budimex zakończył przebudowę stacji Olszamowice (21 August 2018)",
+      "url": "https://www.rynek-kolejowy.pl/wiadomosci/budimex-zakonczyl-przebudowe-stacji-olszamowice-88324.html",
+      "publisher": "Rynek Kolejowy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "budimex-lcs-idzikowice-2024",
+      "title": "Budimex: LCS Idzikowice na CMK zmodernizowane przed terminem (13 July 2020)",
+      "url": "https://budimex.pl/informacje-prasowe/lcs-idzikowice-na-cmk-zmodernizowane-przed-terminem-539969/",
+      "publisher": "Budimex",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rk-pkp-energetyka-catenary",
+      "title": "Rynek Kolejowy: PKP Energetyka zmodernizuje sieć trakcyjną na CMK (25 June 2012)",
+      "url": "https://www.rynek-kolejowy.pl/wiadomosci/pkp-energetyka-zmodernizuje-siec-trakcyjna-na-cmk-40181.html",
+      "publisher": "Rynek Kolejowy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry of line 4 and line 582, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
