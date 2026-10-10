@@ -1,0 +1,133 @@
+{
+  "id": "pl-tunel-pod-swina",
+  "country": "pl",
+  "category": "tunnel",
+  "name": {
+    "en": "Świna Tunnel (Świnoujście)",
+    "ro": "Tunelul pod Świna (Świnoujście)"
+  },
+  "description": {
+    "en": "Road tunnel under the Świna in Świnoujście, linking the islands of Uznam and Wolin on national road 93. It is 1,780 m long, of which 1,484 m was bored with a tunnel boring machine and 295 m built by cut and cover. The city of Świnoujście is the investor; GDDKiA acted as substitute investor. A design-and-build contract was signed on 17 September 2018 and the tunnel opened on 30 June 2023. It is not tolled.",
+    "ro": "Tunel rutier sub Świna, în Świnoujście, care leagă insulele Uznam și Wolin pe drumul național 93. Are 1.780 m, din care 1.484 m au fost săpați cu o mașină de tunelare și 295 m în metodă deschisă. Investitor este orașul Świnoujście, iar GDDKiA a acționat ca investitor substitut. Contractul de proiectare și execuție a fost semnat la 17 septembrie 2018, iar tunelul a fost deschis la 30 iunie 2023. Nu este cu taxă."
+  },
+  "lots": [
+    {
+      "id": "tunel-pod-swina",
+      "name": {
+        "en": "Tunnel under the Świna",
+        "ro": "Tunelul pod Świna"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-09-17",
+        "constructionStart": "2019-10-10",
+        "opened": "2023-06-30"
+      },
+      "lengthKm": 1.78,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 793.19,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Winning offer of 793.186 million PLN (pl.wikipedia); the contract is given as 793 million PLN (PortalMorski). VAT basis not stated."
+            },
+            "date": "2018-09-17",
+            "sourceRef": "plwiki-tunel-pod-swina"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 793.19,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Offer of 793.186 million PLN; VAT basis not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 2,
+        "tunnelKm": 1.78,
+        "tolled": false
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "EU co-financing of 775.6 million PLN from the Infrastructure and Environment Operational Programme 2014–2020 (POIiŚ); the agreement was signed on 28 April 2017. The rest came from the Świnoujście city budget.",
+            "ro": "Cofinanțare UE de 775,6 milioane PLN din Programul Operațional Infrastructură și Mediu 2014–2020 (POIiŚ); acordul a fost semnat la 28 aprilie 2017. Restul a provenit din bugetul orașului Świnoujście."
+          },
+          "amount": {
+            "amount": 775.68,
+            "currency": "PLN",
+            "year": 2017,
+            "scope": "programme",
+            "note": "EU co-financing of the whole investment (775,677,722.67 PLN)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PORR – PORR Bau – Gülermak – Energopol-Szczecin",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-09-17",
+          "note": {
+            "en": "Design-and-build contract signed with the PORR, PORR Bau, Gülermak and Energopol-Szczecin consortium.",
+            "ro": "Contract de proiectare și execuție semnat cu consorțiul PORR, PORR Bau, Gülermak și Energopol-Szczecin."
+          },
+          "sourceRef": "plwiki-tunel-pod-swina"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-06-30",
+          "note": {
+            "en": "Tunnel opened to traffic.",
+            "ro": "Tunel deschis circulației."
+          },
+          "sourceRef": "plwiki-tunel-pod-swina"
+        }
+      ],
+      "note": {
+        "en": "The road is signed DK93 (OpenStreetMap ref 93; pl.wikipedia). Works: the site was handed to the contractor on 10 October 2019 and boring began on 5 March 2021. The 1,780 m is 1,484 m bored plus 295 m cut and cover (pl.wikipedia); a 2019 PortalMorski report gave 1.48 km bored, 295 m cut and cover and 475 m in retaining walls. Total investment cost is given as over 912 million PLN (pl.wikipedia), against 950 million PLN in its infobox, so no outturn is recorded. The 775.6 million PLN EU grant is the 85% share of the 912 million PLN total.",
+        "ro": "Drumul este semnalizat DK93 (ref 93 în OpenStreetMap; pl.wikipedia). Lucrări: șantierul a fost predat constructorului la 10 octombrie 2019, iar tunelarea a început la 5 martie 2021. Cei 1.780 m înseamnă 1.484 m săpați cu mașina și 295 m în metodă deschisă (pl.wikipedia); un articol PortalMorski din 2019 indica 1,48 km săpați, 295 m în metodă deschisă și 475 m în ziduri de sprijin. Costul total al investiției este dat ca peste 912 milioane PLN (pl.wikipedia), față de 950 milioane PLN în caseta informativă, deci nu se înregistrează un cost final. Grantul UE de 775,6 milioane PLN reprezintă 85% din totalul de 912 milioane PLN."
+      },
+      "sourceRefs": [
+        "plwiki-tunel-pod-swina",
+        "portalmorski-zrid-tunel",
+        "osm-tunel-pod-swina"
+      ],
+      "geometryRef": "tunel-pod-swina"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-tunel-pod-swina",
+      "title": "Wikipedia (pl): Tunel pod Świną",
+      "url": "https://pl.wikipedia.org/wiki/Tunel_pod_%C5%9Awin%C4%85",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "portalmorski-zrid-tunel",
+      "title": "PortalMorski.pl: Więcej o zezwoleniu na budowę tunelu w Świnoujściu i o samej inwestycji",
+      "url": "https://www.portalmorski.pl/wiadomosci/porty-logistyka/43553-wiecej-o-zezwoleniu-na-budowe-tunelu-i-o-samej-inwestycji",
+      "publisher": "PortalMorski.pl",
+      "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "osm-tunel-pod-swina",
+      "title": "OpenStreetMap contributors (geometry, ODbL), way 304973954",
+      "url": "https://www.openstreetmap.org/way/304973954",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-09"
+    }
+  ]
+}

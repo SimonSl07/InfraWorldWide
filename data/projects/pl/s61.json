@@ -1,0 +1,1208 @@
+{
+  "id": "pl-s61",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S61 expressway Via Baltica (Ostrów Mazowiecka – Łomża – Ełk – Suwałki – Budzisko)",
+    "ro": "Drumul expres S61 Via Baltica (Ostrów Mazowiecka – Łomża – Ełk – Suwałki – Budzisko)"
+  },
+  "description": {
+    "en": "The Polish part of the Via Baltica (E67), from the Podborze junction on the S8 near Ostrów Mazowiecka to the Lithuanian border at Budzisko, drawn as one centreline from OpenStreetMap ways tagged S61. Lots follow the GDDKiA contract sections and are all open: from the Augustów bypass in 2014 to the Łomża bypass in 2024 (full standard in 2025). Each lot is its own contract with its own opening date. The one-carriageway Stawiski bypass (2013) and the DK63 and DK64 spurs built in the Łomża contracts are not split out or drawn. Contract values come from GDDKiA pages and pl.wikipedia, and each says where the VAT basis is not stated.",
+    "ro": "Partea poloneză a Via Baltica (E67), de la nodul Podborze de pe S8 lângă Ostrów Mazowiecka până la granița cu Lituania la Budzisko, desenată ca un singur ax din căile OpenStreetMap cu eticheta S61. Loturile urmează secțiunile contractate de GDDKiA și sunt toate deschise: de la ocolitoarea Augustów în 2014 la ocolitoarea Łomża în 2024 (standard complet în 2025). Fiecare lot este un contract separat cu propria dată de deschidere. Ocolitoarea Stawiski cu o singură cale (2013) și racordurile DK63 și DK64 construite prin contractele Łomża nu sunt separate sau desenate. Valorile contractelor provin de pe paginile GDDKiA și de la pl.wikipedia, iar fiecare precizează unde baza TVA nu este indicată."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "podborze-sniadowo",
+      "name": {
+        "en": "Podborze – Śniadowo (from the S8)",
+        "ro": "Podborze – Śniadowo (de la S8)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-01-08",
+        "opened": "2023-10-13"
+      },
+      "lengthKm": 19.46,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-04-27",
+          "note": {
+            "en": "First tender, with Śniadowo – Łomża Południe.",
+            "ro": "Prima licitație, împreună cu Śniadowo – Łomża Południe."
+          },
+          "sourceRef": "gddkia-2017-04-27-podborze-lomza"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-05-16",
+          "note": {
+            "en": "GDDKiA withdrew from the design-build contract with the first contractor, who had not applied for the ZRID permit.",
+            "ro": "GDDKiA s-a retras din contractul de proiectare și execuție cu primul constructor, care nu solicitase autorizația ZRID."
+          },
+          "sourceRef": "gddkia-2020-01-08-new-contracts"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2019-08-16",
+          "sourceRef": "msbd-podborze-sniadowo"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-01-08",
+          "note": {
+            "en": "Contract to complete the design and build signed with Polaqua.",
+            "ro": "Contract de finalizare a proiectării și execuției semnat cu Polaqua."
+          },
+          "sourceRef": "msbd-podborze-sniadowo"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-10-13",
+          "note": {
+            "en": "Opened to traffic on the main carriageways.",
+            "ro": "Dat în trafic pe căile de rulare principale."
+          },
+          "sourceRef": "msbd-podborze-sniadowo"
+        }
+      ],
+      "note": {
+        "en": "Starts at the Podborze junction with the S8 and includes the Komorowo junction; the works also rebuilt about 3 km of the existing S8. Best offer chosen on 21 November 2019. GDDKiA gave the value of the 2020 contract as nearly 750 mln zł, which is not an exact figure and is not recorded as a cost. pl.wikipedia dates the permanent traffic organisation to 13 August 2024. The drawn centreline is 3% longer than the sourced 19.46 km.",
+        "ro": "Începe la nodul Podborze cu S8 și include nodul Komorowo; lucrările au reconstruit și circa 3 km din S8 existentă. Cea mai bună ofertă a fost aleasă la 21 noiembrie 2019. GDDKiA a indicat valoarea contractului din 2020 ca fiind aproape 750 mil. zł, cifră inexactă care nu este înregistrată drept cost. pl.wikipedia datează organizarea permanentă a traficului la 13 august 2024. Axul desenat este cu 3% mai lung decât cei 19,46 km din sursă."
+      },
+      "sourceRefs": [
+        "msbd-podborze-sniadowo",
+        "gddkia-2020-01-08-new-contracts",
+        "gddkia-2017-04-27-podborze-lomza",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "podborze-sniadowo"
+    },
+    {
+      "id": "sniadowo-lomza-poludnie",
+      "name": {
+        "en": "Śniadowo – Łomża Południe",
+        "ro": "Śniadowo – Łomża Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-02-09",
+        "opened": "2021-07-14"
+      },
+      "lengthKm": 16.99,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-04-29",
+          "sourceRef": "msbd-sniadowo-lomza-poludnie"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-02-09",
+          "note": {
+            "en": "Contract signed with Polaqua.",
+            "ro": "Contract semnat cu Polaqua."
+          },
+          "sourceRef": "msbd-sniadowo-lomza-poludnie"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-07-14",
+          "note": {
+            "en": "Opened under permanent traffic organisation.",
+            "ro": "Deschis cu organizare permanentă a traficului."
+          },
+          "sourceRef": "msbd-sniadowo-lomza-poludnie"
+        }
+      ],
+      "note": {
+        "en": "Includes the Śniadowo junction. No contract value is given on the MSBD page. pl.wikipedia gives 11 October 2018 as the signing date, but the MSBD page dates the contract to 9 February 2018 and gives 11 October 2018 for the terminated Łomża Zachód – Kolno contract, so the MSBD date is used. The drawn centreline is 4% shorter than the sourced length.",
+        "ro": "Include nodul Śniadowo. Pagina MSBD nu indică valoarea contractului. pl.wikipedia indică 11 octombrie 2018 ca dată a semnării, dar pagina MSBD datează contractul la 9 februarie 2018 și dă 11 octombrie 2018 pentru contractul reziliat Łomża Zachód – Kolno, deci se folosește data MSBD. Axul desenat este cu 4% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-sniadowo-lomza-poludnie",
+        "gddkia-2017-04-27-podborze-lomza",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sniadowo-lomza-poludnie"
+    },
+    {
+      "id": "lomza-poludnie-lomza-zachod",
+      "name": {
+        "en": "Łomża Południe – Łomża Zachód (Łomża bypass, southern part)",
+        "ro": "Łomża Południe – Łomża Zachód (ocolitoarea Łomża, partea de sud)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-12-21",
+        "opened": "2022-03-15"
+      },
+      "lengthKm": 7.18,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 218.1,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "More than 218.1 mln zł (GDDKiA). VAT basis not stated in the source."
+            },
+            "date": "2017-12-21",
+            "sourceRef": "gddkia-2017-12-21-lomza-poludnie"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 218.1,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "More than 218.1 mln zł (GDDKiA). VAT basis not stated in the source."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Mota-Engil Central Europe",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-03-31",
+          "sourceRef": "msbd-lomza-poludnie-zachod"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-12-21",
+          "note": {
+            "en": "Contract signed with Mota-Engil Central Europe.",
+            "ro": "Contract semnat cu Mota-Engil Central Europe."
+          },
+          "sourceRef": "gddkia-2017-12-21-lomza-poludnie"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-03-15",
+          "note": {
+            "en": "Main carriageways opened.",
+            "ro": "Căile de rulare principale deschise."
+          },
+          "sourceRef": "msbd-lomza-poludnie-zachod"
+        }
+      ],
+      "note": {
+        "en": "Includes the Łomża Południe junction, where the 8.9 km DK63 spur to Zambrów starts; the spur is not drawn and not counted in the length. The contract value is stated as more than 218.1 mln zł. pl.wikipedia gives 22 December 2017 for the signing (the GDDKiA release and MSBD give 21 December) and dates the opening to 2 June 2023, after the Łomża Zachód junction was finished; the MSBD date of the main carriageways is used. The drawn centreline is 7% shorter than the sourced length.",
+        "ro": "Include nodul Łomża Południe, de unde pornește racordul DK63 de 8,9 km spre Zambrów; racordul nu este desenat și nu intră în lungime. Valoarea contractului este indicată ca peste 218,1 mil. zł. pl.wikipedia indică 22 decembrie 2017 pentru semnare (comunicatul GDDKiA și MSBD indică 21 decembrie) și datează deschiderea la 2 iunie 2023, după finalizarea nodului Łomża Zachód; se folosește data MSBD a căilor principale. Axul desenat este cu 7% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-lomza-poludnie-zachod",
+        "gddkia-2017-12-21-lomza-poludnie",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lomza-poludnie-lomza-zachod"
+    },
+    {
+      "id": "lomza-zachod-kolno",
+      "name": {
+        "en": "Łomża Zachód – Kolno (Łomża bypass, northern part, with the Narew bridge)",
+        "ro": "Łomża Zachód – Kolno (ocolitoarea Łomża, partea de nord, cu podul peste Narew)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-05-19",
+        "opened": "2024-09-30"
+      },
+      "lengthKm": 12.92,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Intercor",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-03-31",
+          "sourceRef": "msbd-lomza-zachod-kolno"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-10-11",
+          "note": {
+            "en": "Contract signed with TOTO S.p.A. Costruzioni Generali.",
+            "ro": "Contract semnat cu TOTO S.p.A. Costruzioni Generali."
+          },
+          "sourceRef": "msbd-lomza-zachod-kolno"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2021-05-14",
+          "note": {
+            "en": "GDDKiA announced on this date that it had withdrawn from the contract with TOTO for lack of progress.",
+            "ro": "GDDKiA a anunțat la această dată că s-a retras din contractul cu TOTO din cauza lipsei de progres."
+          },
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2021-07-23",
+          "note": {
+            "en": "New tender.",
+            "ro": "Licitație nouă."
+          },
+          "sourceRef": "msbd-lomza-zachod-kolno"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-05-19",
+          "note": {
+            "en": "Contract signed with Intercor.",
+            "ro": "Contract semnat cu Intercor."
+          },
+          "sourceRef": "msbd-lomza-zachod-kolno"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-09-30",
+          "note": {
+            "en": "Opened on temporary traffic organisation, one carriageway; full expressway standard followed on 2 October 2025.",
+            "ro": "Deschis cu organizare temporară a traficului, o cale de rulare; standardul complet de drum expres a urmat la 2 octombrie 2025."
+          },
+          "sourceRef": "msbd-lomza-zachod-kolno"
+        }
+      ],
+      "note": {
+        "en": "Includes the Nowogród and Łomża Północ junctions and the 1.2 km bridge over the Narew valley (1,205 m per pl.wikipedia). The 6.96 km DK64 Łomża Północ – Elżbiecin road built in the same contract is not drawn and not counted. The offer chosen on 23 March 2022 was 713.4 mln zł (pl.wikipedia); the contract value is not stated separately, so no cost is recorded. The sourced S61 length is 12.92 km (MSBD); pl.wikipedia gives 12.99 km. The drawn centreline is 1% longer than the sourced length.",
+        "ro": "Include nodurile Nowogród și Łomża Północ și podul de 1,2 km peste valea Narew (1.205 m conform pl.wikipedia). Drumul DK64 Łomża Północ – Elżbiecin de 6,96 km, construit prin același contract, nu este desenat și nu este numărat. Oferta aleasă la 23 martie 2022 a fost de 713,4 mil. zł (pl.wikipedia); valoarea contractului nu este indicată separat, deci nu se înregistrează niciun cost. Lungimea S61 din sursă este 12,92 km (MSBD); pl.wikipedia indică 12,99 km. Axul desenat este cu 1% mai lung decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-lomza-zachod-kolno",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lomza-zachod-kolno"
+    },
+    {
+      "id": "kolno-stawiski",
+      "name": {
+        "en": "Kolno – Stawiski",
+        "ro": "Kolno – Stawiski"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10-31",
+        "opened": "2021-08-09"
+      },
+      "lengthKm": 16.43,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 288.3,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Value of the construction contract (GDDKiA). VAT basis not stated in the source."
+            },
+            "date": "2017-10-31",
+            "sourceRef": "gddkia-2017-10-31-kolno-szczuczyn"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 288.3,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Value of the construction contract (GDDKiA). VAT basis not stated in the source."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-02-09",
+          "sourceRef": "msbd-kolno-stawiski"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-10-31",
+          "note": {
+            "en": "Design-build contract signed with Strabag.",
+            "ro": "Contract de proiectare și execuție semnat cu Strabag."
+          },
+          "sourceRef": "gddkia-2017-10-31-kolno-szczuczyn"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-08-09",
+          "note": {
+            "en": "Main carriageways opened.",
+            "ro": "Căile de rulare principale deschise."
+          },
+          "sourceRef": "msbd-kolno-stawiski"
+        }
+      ],
+      "note": {
+        "en": "Includes the Kolno junction, where DK63 joins; the 2.25 km DK63 stretch is not drawn and not counted. The contract also covered the second carriageway of part of the Stawiski bypass, whose first carriageway opened on 19 December 2013; that part is not split out. The contract value is the construction contract value quoted by GDDKiA on 31 October 2017. The drawn centreline is 5% shorter than the sourced length.",
+        "ro": "Include nodul Kolno, unde se racordează DK63; tronsonul DK63 de 2,25 km nu este desenat și nu este numărat. Contractul a acoperit și a doua cale de rulare a unei părți din ocolitoarea Stawiski, a cărei primă cale de rulare a fost deschisă la 19 decembrie 2013; această parte nu este separată. Valoarea contractului este valoarea contractului de construcție citată de GDDKiA la 31 octombrie 2017. Axul desenat este cu 5% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-kolno-stawiski",
+        "gddkia-2017-10-31-kolno-szczuczyn",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kolno-stawiski"
+    },
+    {
+      "id": "stawiski-szczuczyn",
+      "name": {
+        "en": "Stawiski – Szczuczyn (to the Szczuczyn bypass)",
+        "ro": "Stawiski – Szczuczyn (până la ocolitoarea Szczuczyn)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10-31",
+        "opened": "2021-07-20"
+      },
+      "lengthKm": 18,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 342.1,
+              "currency": "PLN",
+              "year": 2017,
+              "note": "Value of the construction contract (GDDKiA). VAT basis not stated in the source."
+            },
+            "date": "2017-10-31",
+            "sourceRef": "gddkia-2017-10-31-kolno-szczuczyn"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 342.1,
+          "currency": "PLN",
+          "year": 2017,
+          "note": "Value of the construction contract (GDDKiA). VAT basis not stated in the source."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-02-09",
+          "sourceRef": "msbd-stawiski-szczuczyn"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-10-31",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și execuție semnat cu Budimex."
+          },
+          "sourceRef": "gddkia-2017-10-31-kolno-szczuczyn"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-07-20",
+          "note": {
+            "en": "Main carriageways opened with a 70 km/h limit; permanent traffic organisation followed on 9 August 2021.",
+            "ro": "Căile de rulare principale deschise cu limită de 70 km/h; organizarea permanentă a traficului a urmat la 9 august 2021."
+          },
+          "sourceRef": "msbd-stawiski-szczuczyn"
+        }
+      ],
+      "note": {
+        "en": "Starts after the Stawiski junction, includes the Grabowo junction and ends where the Szczuczyn bypass begins. The contract also covered the second carriageway of part of the Stawiski bypass (first carriageway opened on 19 December 2013), which is not split out. The end of the lot is not at a mapped node: the boundary is placed by the sourced length, about 3.9 km before the OSM Szczuczyn junction. The drawn centreline is 1% shorter than the sourced 18 km.",
+        "ro": "Începe după nodul Stawiski, include nodul Grabowo și se termină unde începe ocolitoarea Szczuczyn. Contractul a acoperit și a doua cale de rulare a unei părți din ocolitoarea Stawiski (prima cale deschisă la 19 decembrie 2013), care nu este separată. Sfârșitul lotului nu este la un nod cartografiat: limita este plasată după lungimea din sursă, la circa 3,9 km înainte de nodul Szczuczyn din OSM. Axul desenat este cu 1% mai scurt decât cei 18 km din sursă."
+      },
+      "sourceRefs": [
+        "msbd-stawiski-szczuczyn",
+        "gddkia-2017-10-31-kolno-szczuczyn",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "stawiski-szczuczyn"
+    },
+    {
+      "id": "obwodnica-szczuczyna",
+      "name": {
+        "en": "Szczuczyn bypass",
+        "ro": "Ocolitoarea Szczuczyn"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-08-11",
+        "opened": "2015-11-13"
+      },
+      "lengthKm": 8,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Polaqua",
+          "role": "builder"
+        },
+        {
+          "name": "FCC Construcción",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2012-08-27",
+          "note": {
+            "en": "Contract signed with FCC Construcción, 124.8 mln zł (VAT basis not stated).",
+            "ro": "Contract semnat cu FCC Construcción, 124,8 mil. zł (baza TVA neindicată)."
+          },
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2013-06-22",
+          "note": {
+            "en": "GDDKiA terminated the contract; the contractor had already withdrawn on 12 June 2013.",
+            "ro": "GDDKiA a reziliat contractul; constructorul se retrăsese deja la 12 iunie 2013."
+          },
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "awarded",
+          "date": "2014-08-11",
+          "note": {
+            "en": "Contract to complete the bypass signed with Polaqua.",
+            "ro": "Contract de finalizare a ocolitoarei semnat cu Polaqua."
+          },
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-11-13",
+          "note": {
+            "en": "First carriageway opened, not signed as an expressway; the second carriageway opened on 15 May 2020.",
+            "ro": "Prima cale de rulare deschisă, fără semnalizare de drum expres; a doua cale de rulare a fost deschisă la 15 mai 2020."
+          },
+          "sourceRef": "plwiki-s61"
+        }
+      ],
+      "note": {
+        "en": "Includes the Szczuczyn junction. Built as one carriageway with reserve for the second. The second carriageway (6.59 km, Polaqua, contract of 26 May 2017, lowest offer 75.08 mln zł) opened on 15 May 2020 under CEF funding. Length 8 km per pl.wikipedia. The ends are not at mapped nodes: the boundaries are placed by the sourced length, about 3.9 km before and 3.6 km after the OSM Szczuczyn junction. The second carriageway was added over 2.897 km from the Łomża side and 3.691 km from the Grajewo side (MSBD). The drawn centreline is 6% shorter than the sourced length.",
+        "ro": "Include nodul Szczuczyn. Construită cu o singură cale de rulare, cu rezervă pentru a doua. A doua cale de rulare (6,59 km, Polaqua, contract din 26 mai 2017, cea mai mică ofertă 75,08 mil. zł) a fost deschisă la 15 mai 2020 cu finanțare CEF. Lungime 8 km conform pl.wikipedia. Capetele nu sunt la noduri cartografiate: limitele sunt plasate după lungimea din sursă, la circa 3,9 km înainte și 3,6 km după nodul Szczuczyn din OSM. A doua cale de rulare a fost adăugată pe 2,897 km dinspre Łomża și 3,691 km dinspre Grajewo (MSBD). Axul desenat este cu 6% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "plwiki-s61",
+        "msbd-szczuczyn-bypass-2nd",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "obwodnica-szczuczyna"
+    },
+    {
+      "id": "szczuczyn-elk-poludnie",
+      "name": {
+        "en": "Szczuczyn – Ełk Południe",
+        "ro": "Szczuczyn – Ełk Południe"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-08-06",
+        "constructionStart": "2020-03",
+        "opened": "2022-09-13"
+      },
+      "lengthKm": 23.25,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 699.51,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Value of the design and build contract (MSBD). VAT basis not stated on the source page."
+            },
+            "date": "2018-08-06",
+            "sourceRef": "msbd-szczuczyn-elk-poludnie"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 699.51,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Value of the design and build contract (MSBD). VAT basis not stated on the source page."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Porr",
+          "role": "builder"
+        },
+        {
+          "name": "Unibep",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-04-15",
+          "note": {
+            "en": "First stage of the Szczuczyn – Raczki tender.",
+            "ro": "Prima etapă a licitației Szczuczyn – Raczki."
+          },
+          "sourceRef": "msbd-szczuczyn-elk-poludnie"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-08-06",
+          "note": {
+            "en": "Design-build contract signed with the Porr and Unibep consortium.",
+            "ro": "Contract de proiectare și execuție semnat cu consorțiul Porr și Unibep."
+          },
+          "sourceRef": "msbd-szczuczyn-elk-poludnie"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-03",
+          "note": {
+            "en": "Works began in March 2020.",
+            "ro": "Lucrările au început în martie 2020."
+          },
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-09-13",
+          "note": {
+            "en": "Opened under permanent traffic organisation, after delays to works on the Ełk streets.",
+            "ro": "Deschis cu organizare permanentă a traficului, după întârzieri la lucrările din străzile Ełk-ului."
+          },
+          "sourceRef": "msbd-szczuczyn-elk-poludnie"
+        }
+      ],
+      "note": {
+        "en": "Includes the Ełk Południe junction. Works began in March 2020 and the contract deadline was 31 July 2022 (MSBD). The start is the end of the Szczuczyn bypass, not a mapped node; that boundary is placed by the sourced length. Co-financed by the Connecting Europe Facility. The drawn centreline is 12% shorter than the sourced length.",
+        "ro": "Include nodul Ełk Południe. Lucrările au început în martie 2020, iar termenul contractual a fost 31 iulie 2022 (MSBD). Începutul este sfârșitul ocolitoarei Szczuczyn, nu un nod cartografiat; limita respectivă este plasată după lungimea din sursă. Cofinanțat prin Mecanismul pentru Interconectarea Europei. Axul desenat este cu 12% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-szczuczyn-elk-poludnie",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "szczuczyn-elk-poludnie"
+    },
+    {
+      "id": "elk-poludnie-wysokie",
+      "name": {
+        "en": "Ełk Południe – Wysokie (with the link to the S16 Ełk bypass)",
+        "ro": "Ełk Południe – Wysokie (cu legătura la ocolitoarea Ełk pe S16)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-07-19",
+        "opened": "2023-08-12"
+      },
+      "lengthKm": 22.95,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 686.86,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Value of the design and build contract (MSBD). VAT basis not stated on the source page."
+            },
+            "date": "2018-07-19",
+            "sourceRef": "msbd-elk-poludnie-wysokie"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 686.86,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Value of the design and build contract (MSBD). VAT basis not stated on the source page."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Trakcja",
+          "role": "builder"
+        },
+        {
+          "name": "Mostostal Warszawa",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Eksploatacji Ulic i Mostów",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-04-15",
+          "note": {
+            "en": "First stage of the Szczuczyn – Raczki tender.",
+            "ro": "Prima etapă a licitației Szczuczyn – Raczki."
+          },
+          "sourceRef": "msbd-elk-poludnie-wysokie"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-07-19",
+          "note": {
+            "en": "Design-build contract signed with a consortium led by Trakcja.",
+            "ro": "Contract de proiectare și execuție semnat cu un consorțiu condus de Trakcja."
+          },
+          "sourceRef": "msbd-elk-poludnie-wysokie"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-08-12",
+          "note": {
+            "en": "Opened under permanent traffic organisation.",
+            "ro": "Deschis cu organizare permanentă a traficului."
+          },
+          "sourceRef": "msbd-elk-poludnie-wysokie"
+        }
+      ],
+      "note": {
+        "en": "The sourced 22.95 km is the MSBD length of the S61/S16 section, which includes about 3.4 km of connection to the S16 Ełk bypass; the drawn line follows the S61 only and ends at the Kalinowo junction, which OSM records with the old name Wysokie (ref 15) and which MSBD counts in the next lot. pl.wikipedia gives a contract value of 685,948,284.67 zł; the MSBD figure is recorded. Co-financed by the Connecting Europe Facility. The drawn centreline is 5% shorter than the sourced length.",
+        "ro": "Cei 22,95 km din sursă reprezintă lungimea MSBD a secțiunii S61/S16, care include circa 3,4 km de legătură cu ocolitoarea Ełk pe S16; linia desenată urmează doar S61 și se termină la nodul Kalinowo, care în OSM are vechiul nume Wysokie (ref 15) și pe care MSBD îl include în lotul următor. pl.wikipedia indică o valoare a contractului de 685.948.284,67 zł; se înregistrează cifra MSBD. Cofinanțat prin Mecanismul pentru Interconectarea Europei. Axul desenat este cu 5% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-elk-poludnie-wysokie",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "elk-poludnie-wysokie"
+    },
+    {
+      "id": "wysokie-raczki",
+      "name": {
+        "en": "Wysokie – Raczki",
+        "ro": "Wysokie – Raczki"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-07-04",
+        "opened": "2021-12-30"
+      },
+      "lengthKm": 20.17,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 484.29,
+              "currency": "PLN",
+              "year": 2018,
+              "note": "Value of the design and build contract (MSBD). VAT basis not stated on the source page."
+            },
+            "date": "2018-07-04",
+            "sourceRef": "msbd-wysokie-raczki"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 484.29,
+          "currency": "PLN",
+          "year": 2018,
+          "note": "Value of the design and build contract (MSBD). VAT basis not stated on the source page."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-04-20",
+          "sourceRef": "msbd-wysokie-raczki"
+        },
+        {
+          "kind": "awarded",
+          "date": "2018-07-04",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și execuție semnat cu Budimex."
+          },
+          "sourceRef": "msbd-wysokie-raczki"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-30",
+          "note": {
+            "en": "Opened under permanent traffic organisation; pl.wikipedia gives 31 December 2021 for the partial opening.",
+            "ro": "Deschis cu organizare permanentă a traficului; pl.wikipedia indică 31 decembrie 2021 pentru deschiderea parțială."
+          },
+          "sourceRef": "msbd-wysokie-raczki"
+        }
+      ],
+      "note": {
+        "en": "Ends at the Raczki junction, where the S61 meets DK8. Co-financed by the Connecting Europe Facility. The Wysokie end is taken at the Kalinowo junction (OSM old name Wysokie), which MSBD lists in this lot. The drawn centreline is 10% shorter than the sourced length.",
+        "ro": "Se termină la nodul Raczki, unde S61 întâlnește DK8. Cofinanțat prin Mecanismul pentru Interconectarea Europei. Capătul Wysokie este luat la nodul Kalinowo (vechiul nume OSM: Wysokie), pe care MSBD îl include în acest lot. Axul desenat este cu 10% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-wysokie-raczki",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wysokie-raczki"
+    },
+    {
+      "id": "raczki-suwalki-poludnie",
+      "name": {
+        "en": "Raczki – Suwałki Południe (Augustów bypass, S61 part)",
+        "ro": "Raczki – Suwałki Południe (ocolitoarea Augustów, partea S61)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-03-11",
+        "opened": "2014-11-06"
+      },
+      "lengthKm": 12.75,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011-03-11",
+          "note": {
+            "en": "Design-build contract for the whole Augustów bypass signed with Budimex.",
+            "ro": "Contract de proiectare și execuție pentru întreaga ocolitoare Augustów semnat cu Budimex."
+          },
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-11-06",
+          "note": {
+            "en": "Opened to traffic. The GDDKiA release dated 7 November 2014 says the first vehicles entered minutes before midnight on 6 November; pl.wikipedia gives 7 November.",
+            "ro": "Dat în trafic. Comunicatul GDDKiA din 7 noiembrie 2014 indică intrarea primelor vehicule cu câteva minute înainte de miezul nopții de 6 noiembrie; pl.wikipedia indică 7 noiembrie."
+          },
+          "sourceRef": "msbd-augustow-bypass"
+        }
+      ],
+      "note": {
+        "en": "The two-carriageway S61 part of the Augustów bypass, from the Raczki junction to the Suwałki Południe junction. The 659 mln zł contract (gross) covers the whole 34.23 km bypass, including 21.48 km of single-carriageway DK8 and a 2.4 km county road link, so it is not the cost of this lot alone and is not recorded as such. Co-financed under the Infrastructure and Environment programme (POIiŚ). The drawn centreline is 6% shorter than the sourced length.",
+        "ro": "Partea cu două căi de rulare S61 a ocolitoarei Augustów, de la nodul Raczki la nodul Suwałki Południe. Contractul de 659 mil. zł (brut) acoperă întreaga ocolitoare de 34,23 km, inclusiv 21,48 km de DK8 cu o singură cale de rulare și o legătură de drum județean de 2,4 km, deci nu este costul acestui lot singur și nu este înregistrat ca atare. Cofinanțat prin Programul Operațional Infrastructură și Mediu (POIiŚ). Axul desenat este cu 6% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-augustow-bypass",
+        "gddkia-2014-augustow-bypass",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "raczki-suwalki-poludnie"
+    },
+    {
+      "id": "obwodnica-suwalk",
+      "name": {
+        "en": "Suwałki bypass (Suwałki Południe – Suwałki Północ)",
+        "ro": "Ocolitoarea Suwałki (Suwałki Południe – Suwałki Północ)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-09-29",
+        "opened": "2019-04-13"
+      },
+      "lengthKm": 12.83,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 299.4,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "Contract value (GDDKiA). VAT basis not stated in the source."
+            },
+            "date": "2015-09-29",
+            "sourceRef": "gddkia-2015-09-29-suwalki-bypass"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 299.4,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Contract value (GDDKiA). VAT basis not stated in the source."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2014-11-12",
+          "sourceRef": "msbd-suwalki-bypass"
+        },
+        {
+          "kind": "awarded",
+          "date": "2015-09-29",
+          "note": {
+            "en": "Design-build contract signed with Budimex.",
+            "ro": "Contract de proiectare și execuție semnat cu Budimex."
+          },
+          "sourceRef": "gddkia-2015-09-29-suwalki-bypass"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-04-13",
+          "note": {
+            "en": "Opened under permanent traffic organisation.",
+            "ro": "Deschis cu organizare permanentă a traficului."
+          },
+          "sourceRef": "msbd-suwalki-bypass"
+        }
+      ],
+      "note": {
+        "en": "Runs from the Suwałki Południe junction past the new Suwałki Zachód junction to the Suwałki Północ junction (not included). Cement concrete surface, a first on the S61 in Podlasie. Contract value 299.4 mln zł for 34 months excluding winters (GDDKiA, 2015). Co-financed by the Connecting Europe Facility. The drawn centreline is 5% shorter than the sourced length.",
+        "ro": "Pornește de la nodul Suwałki Południe, trece pe lângă noul nod Suwałki Zachód și ajunge la nodul Suwałki Północ (neinclus). Îmbrăcăminte din beton de ciment, prima de acest fel pe S61 în Podlasia. Valoarea contractului 299,4 mil. zł pentru 34 de luni fără sezoanele de iarnă (GDDKiA, 2015). Cofinanțat prin Mecanismul pentru Interconectarea Europei. Axul desenat este cu 5% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-suwalki-bypass",
+        "gddkia-2015-09-29-suwalki-bypass",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "obwodnica-suwalk"
+    },
+    {
+      "id": "suwalki-polnoc-budzisko",
+      "name": {
+        "en": "Suwałki Północ – Budzisko (Lithuanian border)",
+        "ro": "Suwałki Północ – Budzisko (granița cu Lituania)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-01-08",
+        "opened": "2022-12-22"
+      },
+      "lengthKm": 24.16,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1037,
+              "currency": "PLN",
+              "year": 2020,
+              "note": "Contract of 8 January 2020 (pl.wikipedia). VAT basis not stated in the source."
+            },
+            "date": "2020-01-08",
+            "sourceRef": "plwiki-s61"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1037,
+          "currency": "PLN",
+          "year": 2020,
+          "note": "Contract of 8 January 2020 (pl.wikipedia). VAT basis not stated in the source."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-04-15",
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-06-06",
+          "note": {
+            "en": "First contract signed with Impresa Pizzarotti & C. S.p.A., lowest offer 605.58 mln zł (VAT basis not stated).",
+            "ro": "Primul contract semnat cu Impresa Pizzarotti & C. S.p.A., cea mai mică ofertă 605,58 mil. zł (baza TVA neindicată)."
+          },
+          "sourceRef": "plwiki-s61"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2019-05",
+          "note": {
+            "en": "GDDKiA withdrew from the contract with Impresa Pizzarotti in May 2019 after the contractor did not start works (the day is not given for this section).",
+            "ro": "GDDKiA s-a retras din contractul cu Impresa Pizzarotti în mai 2019, după ce constructorul nu a început lucrările (ziua nu este indicată pentru această secțiune)."
+          },
+          "sourceRef": "gddkia-2020-01-08-new-contracts"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2019-08-09",
+          "sourceRef": "msbd-suwalki-budzisko"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-01-08",
+          "note": {
+            "en": "Contract to complete the design and build signed with Budimex.",
+            "ro": "Contract de finalizare a proiectării și execuției semnat cu Budimex."
+          },
+          "sourceRef": "msbd-suwalki-budzisko"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-22",
+          "note": {
+            "en": "Main carriageways opened.",
+            "ro": "Căile de rulare principale deschise."
+          },
+          "sourceRef": "msbd-suwalki-budzisko"
+        }
+      ],
+      "note": {
+        "en": "Includes the Suwałki Północ and Szypliszki junctions, the Budzisko rest areas and ends at the Lithuanian border, where the road continues as the A5 towards Kaunas. Contract of 8 January 2020 with Budimex at 1.037 bn zł (pl.wikipedia; GDDKiA: more than 1 bn zł); contract deadline 7 April 2023. Co-financed by the Connecting Europe Facility. The drawn centreline is 4% shorter than the sourced length.",
+        "ro": "Include nodurile Suwałki Północ și Szypliszki, zonele de odihnă Budzisko și se termină la granița cu Lituania, unde drumul continuă ca A5 spre Kaunas. Contract din 8 ianuarie 2020 cu Budimex la 1,037 mld. zł (pl.wikipedia; GDDKiA: peste 1 mld. zł); termen contractual 7 aprilie 2023. Cofinanțat prin Mecanismul pentru Interconectarea Europei. Axul desenat este cu 4% mai scurt decât lungimea din sursă."
+      },
+      "sourceRefs": [
+        "msbd-suwalki-budzisko",
+        "gddkia-2020-01-08-new-contracts",
+        "plwiki-s61",
+        "osm-ways-s61",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "suwalki-polnoc-budzisko"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-s61",
+      "title": "Wikipedia (pl): Droga ekspresowa S61 (Polska)",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S61_(Polska)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-podborze-sniadowo",
+      "title": "GDDKiA MSBD: Podborze - Śniadowo",
+      "url": "https://www.gov.pl/web/gddkia/s61-wezel-podborze-z-wezlem---wezel-sniadowo",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-sniadowo-lomza-poludnie",
+      "title": "GDDKiA MSBD: S61 Śniadowo - Łomża Południe",
+      "url": "https://www.gov.pl/web/gddkia/s61-wezel-sniadowo-z-wezlem---wezel-lomza-poludnie-bez-wezla",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-lomza-poludnie-zachod",
+      "title": "GDDKiA MSBD: Łomża Południe - Łomża Zachód",
+      "url": "https://www.gov.pl/web/gddkia/s61-wezel-lomza-poludnie-z-wezlem--wezel-lomza-zachod-bez-wezla",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-lomza-zachod-kolno",
+      "title": "GDDKiA MSBD: Łomża Zachód - Kolno wraz z budową odcinka drogi krajowej nr 64 Łomża Północ - Elżbiecin",
+      "url": "https://www.gov.pl/web/gddkia/s61-wezel-lomza-zachod-z-wezlem--wezel-kolno-bez-wezla",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-kolno-stawiski",
+      "title": "GDDKiA MSBD: Kolno - Stawiski",
+      "url": "https://www.gov.pl/web/gddkia/s61-wezel-kolno-z-wezlem---wezel-stawiski-bez-wezla",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-stawiski-szczuczyn",
+      "title": "GDDKiA MSBD: S61 Stawiski - do obwodnicy Szczuczyna",
+      "url": "https://www.gov.pl/web/gddkia/s61wezel-stawiski-bez-wezla---do-obwodnicy-szczuczyna",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-szczuczyn-bypass-2nd",
+      "title": "GDDKiA MSBD: S61 obwodnica Szczuczyna, II jezdnia",
+      "url": "https://www.gov.pl/web/gddkia/s61-obwodnica-szczuczyna-ii-jezdnia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-szczuczyn-elk-poludnie",
+      "title": "GDDKiA MSBD: S61 Szczuczyn - Ełk Południe (z węzłem)",
+      "url": "https://www.gov.pl/web/gddkia/s61-szczuczyn---elk-poludnie-z-wezlem",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-elk-poludnie-wysokie",
+      "title": "GDDKiA MSBD: S61/S16 Ełk Południe (bez węzła) - Wysokie (bez węzła)",
+      "url": "https://www.gov.pl/web/gddkia/s61s16--elk-poludnie-bez-wezla---wysokie-bez-wezla",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-wysokie-raczki",
+      "title": "GDDKiA MSBD: S61 Wysokie - węzeł Raczki",
+      "url": "https://www.gov.pl/web/gddkia/s61-wysokie--raczki",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-augustow-bypass",
+      "title": "GDDKiA MSBD: S61/DK8 obwodnica Augustowa",
+      "url": "https://www.gov.pl/web/gddkia/s61dk8-obwodnica-augustowa",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-suwalki-bypass",
+      "title": "GDDKiA MSBD: S61 obwodnica Suwałk",
+      "url": "https://www.gov.pl/web/gddkia/s61-obwodnica-suwalk",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "msbd-suwalki-budzisko",
+      "title": "GDDKiA MSBD: S61 koniec obw. Suwałk – Budzisko z obw. Szypliszek - kontynuacja",
+      "url": "https://www.gov.pl/web/gddkia/s61-koniec-obw-suwalk--budzisko-z-obw-szypliszek---kontynuacja",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-2017-04-27-podborze-lomza",
+      "title": "GDDKiA: Realizacja trasy Via Baltica staje się faktem (27 April 2017)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/25414/Realizacja-trasy-Via-Baltica-staje-sie-faktem",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-2017-10-31-kolno-szczuczyn",
+      "title": "GDDKiA: Powstaną kolejne odcinki S61 w ramach trasy Via Baltica (31 October 2017)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/27555/Powstana-kolejne-odcinki-S61-w-ramach-trasy-Via-Baltica",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-2017-12-21-lomza-poludnie",
+      "title": "GDDKiA: Obwodnica Łomży w realizacji (21 December 2017)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/28032/Obwodnica-Lomzy-w-ciagu-S61-juz-w-realizacji",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-2020-01-08-new-contracts",
+      "title": "GDDKiA: Via Baltica – nowe umowy, nowi wykonawcy (8 January 2020)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/36264/Via-Baltica-nowe-umowy-nowi-wykonawcy",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-2015-09-29-suwalki-bypass",
+      "title": "GDDKiA: Obwodnica Suwałk - umowa podpisana (29 September 2015)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/20026/Obwodnica-Suwalk-umowa-podpisana",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-2014-augustow-bypass",
+      "title": "GDDKiA: Obwodnica Augustowa dostępna dla kierowców (7 November 2014)",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/17001/Obwodnica-Augustowa-dostepna-dla-kierowcow",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-ways-s61",
+      "title": "OpenStreetMap: ways tagged ref=S61 (Overpass query, data of 2026-10-10)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "id": "pl-rail-line-201-koscierzyna-gdynia",
+  "country": "pl",
+  "category": "railway",
+  "name": {
+    "en": "Railway line 201 Kościerzyna – Somonino – Gdynia Główna (modernisation, electrification and second track) and Pomorska Kolej Metropolitalna line 248",
+    "ro": "Linia ferată 201 Kościerzyna – Somonino – Gdynia Główna (modernizare, electrificare și a doua cale) și linia 248 a Pomorska Kolej Metropolitalna"
+  },
+  "description": {
+    "en": "PKP PLK is modernising line 201 between Kościerzyna and Gdynia Główna: electrification and a second track, split into contracts. Kościerzyna – Somonino (Budimex) and Somonino – Gdańsk Osowa (a PMT / Trakcja / ZRK-DOM consortium) are signed and under construction, with traffic stopped on both since 30 June 2025. Gdańsk Osowa – Gdynia Główna is one contract planned for 2026–2031. Line 248, built by Pomorska Kolej Metropolitalna S.A. from Gdańsk Wrzeszcz to a junction with line 201 at Rębiechowo, opened on 1 September 2015 and is a separate lot.",
+    "ro": "PKP PLK modernizează linia 201 între Kościerzyna și Gdynia Główna: electrificare și a doua cale, împărțite în contracte. Kościerzyna – Somonino (Budimex) și Somonino – Gdańsk Osowa (un consorțiu PMT / Trakcja / ZRK-DOM) sunt semnate și în execuție, cu traficul oprit pe ambele din 30 iunie 2025. Gdańsk Osowa – Gdynia Główna este un contract planificat pentru 2026–2031. Linia 248, construită de Pomorska Kolej Metropolitalna S.A. de la Gdańsk Wrzeszcz până la o joncțiune cu linia 201 la Rębiechowo, a fost deschisă la 1 septembrie 2015 și este un lot separat."
+  },
+  "operator": "pl-plk",
+  "lots": [
+    {
+      "id": "koscierzyna-somonino",
+      "name": {
+        "en": "Kościerzyna – Somonino (line 201)",
+        "ro": "Kościerzyna – Somonino (linia 201)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-12-12",
+        "expectedOpening": "2027-12"
+      },
+      "lengthKm": 27,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1275,
+              "currency": "PLN",
+              "year": 2024,
+              "scope": "works",
+              "note": "Excluding VAT; PLK gives PLN 1.559 billion including VAT. Contract also covers 8 km of line 214 Somonino – Kartuzy."
+            },
+            "date": "2024-12-12",
+            "sourceRef": "plk-201-kaszuby-2025"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-12-12",
+          "note": {
+            "en": "PKP PLK signed the contract for line 201 Kościerzyna – Somonino and line 214 Somonino – Kartuzy; the contractor is Budimex.",
+            "ro": "PKP PLK a semnat contractul pentru linia 201 Kościerzyna – Somonino și linia 214 Somonino – Kartuzy; constructorul este Budimex."
+          },
+          "sourceRef": "gov-pl-201-a"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "National funds under the Krajowy Program Kolejowy",
+            "ro": "Fonduri naționale în cadrul Krajowy Program Kolejowy"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1275,
+          "currency": "PLN",
+          "year": 2024,
+          "scope": "works",
+          "note": "Excluding VAT; includes 8 km of line 214."
+        }
+      },
+      "note": {
+        "en": "Works contract \"Odcinek A\" of the project \"Prace na odcinku Kościerzyna – Gdynia\": about 27 km of line 201 plus 8 km of line 214, PLN 1.275 billion net (1.559 billion gross), signed on 12 December 2024 (gov.pl). Rail traffic on Kościerzyna – Somonino – Gdańsk Osowa has been stopped since 30 June 2025. PLK plans to resume trains Kościerzyna – Somonino in December 2027 and to finish all works on this stretch by the end of 2027. The drawn line follows the existing track (24.7 km measured from OpenStreetMap), shorter than the 27 km PLK figure; the sourced length is kept.",
+        "ro": "Contract de lucrări „Odcinek A” din proiectul „Prace na odcinku Kościerzyna – Gdynia”: circa 27 km din linia 201 plus 8 km din linia 214, 1,275 miliarde PLN fără TVA (1,559 miliarde cu TVA), semnat la 12 decembrie 2024 (gov.pl). Traficul feroviar pe Kościerzyna – Somonino – Gdańsk Osowa este oprit din 30 iunie 2025. PLK plănuiește reluarea trenurilor Kościerzyna – Somonino în decembrie 2027 și terminarea tuturor lucrărilor pe acest tronson până la sfârșitul lui 2027. Linia desenată urmează calea existentă (24,7 km măsurați din OpenStreetMap), mai scurtă decât cifra PLK de 27 km; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plk-201-kaszuby-2025",
+        "gov-pl-201-a",
+        "plwiki-201",
+        "osm-line-201"
+      ],
+      "geometryRef": "koscierzyna-somonino"
+    },
+    {
+      "id": "somonino-gdansk-osowa",
+      "name": {
+        "en": "Somonino – Gdańsk Osowa (line 201)",
+        "ro": "Somonino – Gdańsk Osowa (linia 201)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-09-20"
+      },
+      "lengthKm": 28,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1253.59,
+              "currency": "PLN",
+              "year": 2024,
+              "scope": "works",
+              "note": "Excluding VAT; PLK gives PLN 1.541 billion including VAT. Contract also covers electrification of line 229 Glincz – Kartuzy."
+            },
+            "date": "2024-09-20",
+            "sourceRef": "plk-201-b-2024"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "tracks": 2,
+        "maxSpeedKmh": 140
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-09-20",
+          "note": {
+            "en": "Contract signed with the Pomorskie Przedsiębiorstwo Mechaniczno-Torowe / TRAKCJA / Zakład Robót Komunikacyjnych – DOM w Poznaniu consortium.",
+            "ro": "Contract semnat cu consorțiul Pomorskie Przedsiębiorstwo Mechaniczno-Torowe / TRAKCJA / Zakład Robót Komunikacyjnych – DOM w Poznaniu."
+          },
+          "sourceRef": "plk-201-b-2024"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Line 201 works are paid from the state budget",
+            "ro": "Lucrările pe linia 201 sunt plătite din bugetul de stat"
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Line 229 part: Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko 2021–2027 (FEnIKS); amount not stated",
+            "ro": "Partea liniei 229: Fundusze Europejskie na Infrastrukturę, Klimat, Środowisko 2021–2027 (FEnIKS); suma nu este indicată"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Pomorskie Przedsiębiorstwo Mechaniczno-Torowe – TRAKCJA – Zakład Robót Komunikacyjnych DOM w Poznaniu",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1253.59,
+          "currency": "PLN",
+          "year": 2024,
+          "scope": "works",
+          "note": "Excluding VAT; includes electrification of line 229."
+        }
+      },
+      "note": {
+        "en": "Works contract \"Odcinek B\", PLN 1,253,589,722.58 net (1.541 billion gross), for more than 28 km of line 201 with a second track and electrification, plus electrification of line 229 Glincz – Kartuzy. PLK gives the end of works as 2027 (without acceptance), passenger speeds up to 140 km/h after approvals. Traffic has been stopped since 30 June 2025; PLK plans to resume trains Somonino – Gdańsk Osowa in December 2026. The drawn line follows the existing track (25.8 km measured from OpenStreetMap), shorter than the PLK figure; the sourced length is kept.",
+        "ro": "Contract de lucrări „Odcinek B”, 1.253.589.722,58 PLN fără TVA (1,541 miliarde cu TVA), pentru peste 28 km din linia 201 cu a doua cale și electrificare, plus electrificarea liniei 229 Glincz – Kartuzy. PLK indică încheierea lucrărilor în 2027 (fără recepții) și viteze pentru călători până la 140 km/h după obținerea avizelor. Traficul este oprit din 30 iunie 2025; PLK plănuiește reluarea trenurilor Somonino – Gdańsk Osowa în decembrie 2026. Linia desenată urmează calea existentă (25,8 km măsurați din OpenStreetMap), mai scurtă decât cifra PLK; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plk-201-b-2024",
+        "plk-201-kaszuby-2025",
+        "plwiki-201",
+        "osm-line-201"
+      ],
+      "geometryRef": "somonino-gdansk-osowa"
+    },
+    {
+      "id": "gdansk-osowa-gdynia-glowna",
+      "name": {
+        "en": "Gdańsk Osowa – Gdynia Główna (line 201)",
+        "ro": "Gdańsk Osowa – Gdynia Główna (linia 201)"
+      },
+      "status": "planned",
+      "lengthKm": 15.7,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "PLK plans one contract for this section, with works in 2026–2031 and the whole project, including permits, to be completed by 2032. No tender, contractor or value is recorded. Length measured from OpenStreetMap geometry.",
+        "ro": "PLK planifică un singur contract pentru acest tronson, cu lucrări în 2026–2031, iar întregul proiect, inclusiv autorizațiile, să fie încheiat până în 2032. Nu sunt înregistrate licitație, constructor sau valoare. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "plk-201-kaszuby-2025",
+        "osm-line-201"
+      ],
+      "geometryRef": "gdansk-osowa-gdynia-glowna"
+    },
+    {
+      "id": "pkm-line-248",
+      "name": {
+        "en": "Pomorska Kolej Metropolitalna: Gdańsk Wrzeszcz – Rębiechowo (line 248)",
+        "ro": "Pomorska Kolej Metropolitalna: Gdańsk Wrzeszcz – Rębiechowo (linia 248)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2013-03-07",
+        "constructionStart": "2013-05-08",
+        "opened": "2015-09-01"
+      },
+      "lengthKm": 18.4,
+      "cost": {
+        "estimated": {
+          "amount": 769.9,
+          "currency": "PLN",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Excluding VAT. Original estimated cost of the line; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 716.14,
+              "currency": "PLN",
+              "year": 2013,
+              "scope": "works",
+              "note": "Including VAT."
+            },
+            "date": "2013-03-07",
+            "sourceRef": "plwiki-pkm"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-03-07",
+          "note": {
+            "en": "PKM announced the Budimex and Ferrovial Agroman consortium as tender winner; the contract was signed on 7 May 2013.",
+            "ro": "PKM a anunțat consorțiul Budimex și Ferrovial Agroman câștigător al licitației; contractul a fost semnat la 7 mai 2013."
+          },
+          "sourceRef": "plwiki-pkm"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-05-08",
+          "note": {
+            "en": "Site handed to the contractor; the foundation act was signed on 1 July 2013.",
+            "ro": "Șantierul a fost predat constructorului; actul de fundație a fost semnat la 1 iulie 2013."
+          },
+          "sourceRef": "plwiki-pkm"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-09-01",
+          "note": {
+            "en": "Ceremonial launch on 30 August 2015; line put into use on 1 September.",
+            "ro": "Inaugurare festivă la 30 august 2015; linia a fost dată în exploatare la 1 septembrie."
+          },
+          "sourceRef": "pkm-opening-2015"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Operational Programme Infrastructure and Environment: PLN 500.9 million of the PLN 769.9 million original estimate",
+            "ro": "Programul Operațional Infrastructură și Mediu: 500,9 milioane PLN din estimarea inițială de 769,9 milioane PLN"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex – Ferrovial Agroman",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 716.14,
+          "currency": "PLN",
+          "year": 2013,
+          "scope": "works",
+          "note": "Including VAT."
+        }
+      },
+      "note": {
+        "en": "Built by Pomorska Kolej Metropolitalna S.A. (a Pomeranian Voivodeship company): a 17 km double-track line from Gdańsk Wrzeszcz plus a 1.4 km connector to line 201 towards Kościerzyna, joining it at Rębiechowo; trains then use line 201 to Gdynia Główna. Works contract PLN 716,136,838.06 including VAT. Wikipedia gives the total project as PLN 907 million net including PLN 186.5 million of land, and PLN 949 million with the Gdańsk Osowa station and two Gdynia stops; these cover more than the line and are not recorded as cost. Wikipedia also records a PLN 106 million connection works contract won in 2014 by a Rubau-led consortium. PKM's own 2013 release gives the contract as PLN 582.2 million net (716.3 million gross).",
+        "ro": "Construită de Pomorska Kolej Metropolitalna S.A. (societate a voievodatului Pomerania): o linie dublă de 17 km de la Gdańsk Wrzeszcz plus o legătură de 1,4 km cu linia 201 spre Kościerzyna, care se unește cu aceasta la Rębiechowo; trenurile merg apoi pe linia 201 până la Gdynia Główna. Contract de lucrări 716.136.838,06 PLN cu TVA. Wikipedia indică proiectul total la 907 milioane PLN fără TVA, incluzând 186,5 milioane PLN pentru terenuri, și 949 milioane PLN cu stația Gdańsk Osowa și două haltele din Gdynia; acestea cuprind mai mult decât linia și nu sunt înregistrate drept cost. Wikipedia consemnează și un contract de lucrări de racordare de 106 milioane PLN, câștigat în 2014 de un consorțiu condus de Rubau. Comunicatul PKM din 2013 indică contractul la 582,2 milioane PLN fără TVA (716,3 milioane cu TVA)."
+      },
+      "sourceRefs": [
+        "plwiki-pkm",
+        "pkm-contract-2013",
+        "pkm-opening-2015",
+        "osm-line-248"
+      ],
+      "geometryRef": "pkm-line-248"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plk-201-b-2024",
+      "title": "PKP PLK: Nowa jakość podróżowania koleją z Kaszub do Trójmiasta",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/nowa-jakosc-podrozowania-koleja-z-kaszub-do-trojmiasta-10089",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-201-kaszuby-2025",
+      "title": "PKP PLK: Kaszuby przed kolejową rewolucją – od 30 czerwca ważne zmiany dla podróżnych",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/kaszuby-przed-kolejowa-rewolucja-od-30-czerwca-wazne-zmiany-dla-podroznych-10839",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-201",
+      "title": "Wikipedia (pl): Linia kolejowa nr 201",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_201",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-pkm",
+      "title": "Wikipedia (pl): Pomorska Kolej Metropolitalna",
+      "url": "https://pl.wikipedia.org/wiki/Pomorska_Kolej_Metropolitalna",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-line-201",
+      "title": "OpenStreetMap contributors: railway line 201 (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gov-pl-201-a",
+      "title": "Ministerstwo Infrastruktury (gov.pl): Nowa jakość podróżowania koleją na Pomorzu",
+      "url": "https://www.gov.pl/web/infrastruktura/nowa-jakosc-podrozowania-koleja-na-pomorzu",
+      "publisher": "Ministerstwo Infrastruktury",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "pkm-contract-2013",
+      "title": "PKM S.A.: Umowa na budowę Pomorskiej Kolei Metropolitalnej podpisana",
+      "url": "https://www.pkm-sa.pl/2013/05/07/umowa-na-budowe-pomorskiej-kolei-metropolitalnej-podpisana/",
+      "publisher": "Pomorska Kolej Metropolitalna S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "pkm-opening-2015",
+      "title": "PKM S.A.: Ruszyła Pomorska Kolej Metropolitalna",
+      "url": "https://www.pkm-sa.pl/2015/09/03/ruszyla-pomorska-kolej-metropolitalna/",
+      "publisher": "Pomorska Kolej Metropolitalna S.A.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-line-248",
+      "title": "OpenStreetMap contributors: railway line 248 (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

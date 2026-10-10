@@ -1,0 +1,483 @@
+{
+  "id": "pl-s2",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S2 expressway (Południowa Obwodnica Warszawy: Konotopa – Puławska – Lubelska)",
+    "ro": "Drumul expres S2 (Południowa Obwodnica Warszawy: Konotopa – Puławska – Lubelska)"
+  },
+  "description": {
+    "en": "Southern bypass of Warsaw between the A2 junction at Konotopa and the Lubelska junction with A2 and S17, about 34 km, drawn as one carriageway from OpenStreetMap ways with ref S2. It is split by contract: Konotopa – Warszawa Lotnisko and Warszawa Lotnisko – Puławska (opened in 2013), then the three Puławska – Lubelska design-build contracts, opened in December 2020 (Wilanów – Lubelska) and December 2021 (Puławska – Wilanów, with the 2.3 km Ursynów tunnel). The tunnel is part of lot A, so it is recorded in that lot's profile and note and not as a separate structure. The S79 link from Warszawa Lotnisko to Marynarska and the S8 and S17 roads that meet the bypass are separate projects and are not drawn here. Contract values come from GDDKiA pages; each lot note states the VAT basis where the page gives one.",
+    "ro": "Ocolitoarea de sud a Varșoviei între nodul A2 de la Konotopa și nodul Lubelska cu A2 și S17, circa 34 km, desenată ca o singură cale de rulare din căile OpenStreetMap cu ref S2. Este împărțită pe contracte: Konotopa – Warszawa Lotnisko și Warszawa Lotnisko – Puławska (deschise în 2013), apoi cele trei contracte de proiectare și execuție Puławska – Lubelska, deschise în decembrie 2020 (Wilanów – Lubelska) și decembrie 2021 (Puławska – Wilanów, cu tunelul Ursynów de 2,3 km). Tunelul face parte din lotul A, deci este înregistrat în profilul și nota lotului respectiv și nu ca structură separată. Legătura S79 de la Warszawa Lotnisko la Marynarska și drumurile S8 și S17 care se întâlnesc cu ocolitoarea sunt proiecte separate și nu sunt desenate aici. Valorile contractelor provin de pe paginile GDDKiA; fiecare notă de lot precizează baza TVA acolo unde pagina o indică."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "konotopa-warszawa-lotnisko",
+      "name": {
+        "en": "Konotopa – Warszawa Lotnisko",
+        "ro": "Konotopa – Warszawa Lotnisko"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-02-09",
+        "opened": "2013-09-06"
+      },
+      "lengthKm": 11.13,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 908.01,
+              "currency": "PLN",
+              "note": "Including VAT. Total value of the POW III works, 908 010 832 PLN brutto; price year not stated."
+            },
+            "date": "2010-02-09",
+            "sourceRef": "gddkia-konotopa-lotnisko"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 908.01,
+          "currency": "PLN",
+          "note": "Including VAT. Price year not stated on the source page."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Bilfinger Berger",
+          "role": "builder"
+        },
+        {
+          "name": "Mosty Łódź",
+          "role": "builder"
+        },
+        {
+          "name": "Intercor",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2009-03-28",
+          "note": {
+            "en": "First tender for Konotopa – Warszawa Lotnisko (10.4 km planned); it was later annulled.",
+            "ro": "Prima licitație pentru Konotopa – Warszawa Lotnisko (10,4 km planificați); a fost anulată ulterior."
+          },
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "awarded",
+          "date": "2010-02-09",
+          "note": {
+            "en": "Result of the repeated tender: consortium of Bilfinger Berger, Mosty Łódź and Intercor, offer 908 050 715.86 zł.",
+            "ro": "Rezultatul licitației repetate: consorțiul Bilfinger Berger, Mosty Łódź și Intercor, ofertă de 908 050 715,86 zł."
+          },
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2013-07-31",
+          "note": {
+            "en": "Main carriageways Konotopa – al. Krakowska opened, without ramps at the Aleje Jerozolimskie and Opacz junctions.",
+            "ro": "Căile principale Konotopa – al. Krakowska deschise, fără rampe la nodurile Aleje Jerozolimskie și Opacz."
+          },
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-09-06",
+          "note": {
+            "en": "Al. Krakowska – Warszawa Lotnisko opened; the Opacz junction and the remaining ramps followed on 9 September and 24 December 2013.",
+            "ro": "Al. Krakowska – Warszawa Lotnisko deschis; nodul Opacz și rampele rămase au urmat la 9 septembrie și 24 decembrie 2013."
+          },
+          "sourceRef": "plwiki-s2"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA project page: Cohesion Fund, Infrastructure and Environment Programme 2007–2013. The 4 307 million zł project total and 2 343 million zł of EU support cover the whole Konotopa – Puławska task including the S79 link, not this lot alone.",
+            "ro": "Pagina de proiect GDDKiA: Fondul de coeziune, Programul Infrastructură și Mediu 2007–2013. Totalul proiectului de 4 307 milioane zł și sprijinul UE de 2 343 milioane zł acoperă întreaga lucrare Konotopa – Puławska, inclusiv legătura S79, nu doar acest lot."
+          }
+        }
+      ],
+      "note": {
+        "en": "The contract (stage III of the task) runs from the Konotopa junction (excluded) to the Lotnisko junction (excluded), chainage km 455+550 – 466+684, which is the 11.13 km recorded here. The drawn line is 12.7 km because it runs from the Konotopa to the Warszawa Lotnisko junction nodes and so includes both junctions. The 908 010 832 PLN (brutto) is the total value of the stage III works on the GDDKiA project page, which gives no signing date; the 9 February 2010 date is the result of the repeated tender, where pl.wikipedia gives an offer of 908 050 715.86 zł. pl.wikipedia lists the openings as 6 km and 7 km. The S8 project draws Konotopa – Powązkowska on the S8, north of this lot, so the two geometries do not overlap; they meet only at the Konotopa and Opacz junctions.",
+        "ro": "Contractul (etapa III a lucrării) merge de la nodul Konotopa (exclus) la nodul Lotnisko (exclus), kilometraj km 455+550 – 466+684, adică cei 11,13 km înregistrați aici. Linia desenată are 12,7 km deoarece merge de la nodul Konotopa la nodul Warszawa Lotnisko și include deci ambele noduri. Suma de 908 010 832 PLN (brutto) este valoarea totală a lucrărilor etapei III pe pagina de proiect GDDKiA, care nu indică o dată de semnare; data de 9 februarie 2010 este rezultatul licitației repetate, pentru care pl.wikipedia indică o ofertă de 908 050 715,86 zł. pl.wikipedia indică deschiderile ca 6 km și 7 km. Proiectul S8 desenează Konotopa – Powązkowska pe S8, la nord de acest lot, deci geometriile nu se suprapun; se întâlnesc doar la nodurile Konotopa și Opacz."
+      },
+      "sourceRefs": [
+        "plwiki-s2",
+        "gddkia-konotopa-lotnisko",
+        "osm-ways-s2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "konotopa-warszawa-lotnisko"
+    },
+    {
+      "id": "warszawa-lotnisko-pulawska",
+      "name": {
+        "en": "Warszawa Lotnisko – Puławska",
+        "ro": "Warszawa Lotnisko – Puławska"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2009-08-10",
+        "constructionStart": "2009-09-16",
+        "opened": "2013-09-18"
+      },
+      "lengthKm": 2.5,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Teerag-Asdag",
+          "role": "builder"
+        },
+        {
+          "name": "Intop Tarnobrzeg",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2009-08-10",
+          "note": {
+            "en": "Contract signed with the Teerag-Asdag Polska and Intop Tarnobrzeg consortium.",
+            "ro": "Contract semnat cu consorțiul Teerag-Asdag Polska și Intop Tarnobrzeg."
+          },
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2009-09-16",
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-09-18",
+          "sourceRef": "plwiki-s2"
+        }
+      ],
+      "note": {
+        "en": "The 2009 contract covered 3.9 km counted with the Warszawa Lotnisko junction roads, plus a 4.3 km link to Marynarska on the S79, which is not part of this project; the cost, planned at 1.123 bn zł, covers both and is not recorded here. OpenStreetMap has no single node for the Puławska junction, only two R12 ramp nodes about 1.7 km apart, so the lot ends midway between them.",
+        "ro": "Contractul din 2009 acoperea 3,9 km socotiți împreună cu drumurile nodului Warszawa Lotnisko, plus o legătură de 4,3 km spre Marynarska pe S79, care nu face parte din acest proiect; costul, planificat la 1,123 mld zł, le acoperă pe amândouă și nu este înregistrat aici. OpenStreetMap nu are un singur nod pentru nodul Puławska, ci doar două noduri de rampă R12 la circa 1,7 km distanță, deci lotul se termină la mijlocul distanței dintre ele."
+      },
+      "sourceRefs": [
+        "plwiki-s2",
+        "osm-ways-s2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "warszawa-lotnisko-pulawska"
+    },
+    {
+      "id": "pulawska-przyczolkowa-tunnel",
+      "name": {
+        "en": "Puławska – Warszawa Wilanów (Przyczółkowa), with the Ursynów tunnel (lot A)",
+        "ro": "Puławska – Warszawa Wilanów (Przyczółkowa), cu tunelul Ursynów (lotul A)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-12-11",
+        "opened": "2021-12-20"
+      },
+      "lengthKm": 4.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1220,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2015-12-11",
+            "sourceRef": "gddkia-pulawska-lubelska"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1220,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Contract with Astaldi S.p.A., design and build. VAT basis not stated on the source page."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 2.335
+      },
+      "contractors": [
+        {
+          "name": "Astaldi",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-12-11",
+          "note": {
+            "en": "Design-and-build contract signed with Astaldi S.p.A. Completion was due in August 2020, 41 months excluding winter periods.",
+            "ro": "Contract de proiectare și execuție semnat cu Astaldi S.p.A. Termenul de finalizare era august 2020, 41 de luni fără perioadele de iarnă."
+          },
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-20",
+          "note": {
+            "en": "Opened with the 2 335 m tunnel under Ursynów, the last section of the bypass.",
+            "ro": "Deschis cu tunelul de 2 335 m de sub Ursynów, ultima secțiune a ocolitoarei."
+          },
+          "sourceRef": "gddkia-tunel-opening"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: co-financed from the Cohesion Fund under the Infrastructure and Environment Programme 2014–2020; EU support of about 1.7 bn zł covers the three Puławska – Lubelska sections (18.6 km) together, not this section alone.",
+            "ro": "GDDKiA: cofinanțat din Fondul de coeziune prin Programul Infrastructură și Mediu 2014–2020; sprijinul UE de circa 1,7 mld zł acoperă împreună cele trei secțiuni Puławska – Lubelska (18,6 km), nu doar această secțiune."
+          }
+        }
+      ],
+      "note": {
+        "en": "Lot A of the Puławska – Lubelska task, called Przyczółkowa at tender and Warszawa Wilanów at opening. The twin-tube Ursynów tunnel is 2 335 m long (GDDKiA: the longest road tunnel in Poland at opening) and lies inside this lot, so it is recorded here in the profile and not as a separate structure. GDDKiA gives the investment at about 1.66 bn zł (design, land, works and supervision) and the works alone at about 1.2 bn zł. The drawn centreline is 7% longer than the sourced 4.6 km; the sourced length is kept.",
+        "ro": "Lotul A al lucrării Puławska – Lubelska, numit Przyczółkowa la licitație și Warszawa Wilanów la deschidere. Tunelul Ursynów cu două tuburi are 2 335 m și se află în acest lot, deci este înregistrat aici în profil și nu ca structură separată (GDDKiA: cel mai lung tunel rutier din Polonia la deschidere). GDDKiA indică investiția la circa 1,66 mld zł (documentație, terenuri, lucrări și supraveghere) și doar lucrările la circa 1,2 mld zł. Axul desenat este cu 7% mai lung decât cei 4,6 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s2",
+        "gddkia-pulawska-lubelska",
+        "gddkia-tunel-opening",
+        "osm-ways-s2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "pulawska-przyczolkowa-tunnel"
+    },
+    {
+      "id": "przyczolkowa-wal-miedzeszynski",
+      "name": {
+        "en": "Warszawa Wilanów (Przyczółkowa) – Wał Miedzeszyński, with the Anna Jagiellonka bridge (lot B)",
+        "ro": "Warszawa Wilanów (Przyczółkowa) – Wał Miedzeszyński, cu podul Anna Jagiellonka (lotul B)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-12-11",
+        "opened": "2020-12-22"
+      },
+      "lengthKm": 6.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 757.6,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2015-12-11",
+            "sourceRef": "gddkia-pulawska-lubelska"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 757.6,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Design and build. VAT basis not stated on the source page."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Gülermak",
+          "role": "builder"
+        },
+        {
+          "name": "Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-12-11",
+          "note": {
+            "en": "Design-and-build contract signed with Gülermak (leader) and PBDiM Mińsk Mazowiecki.",
+            "ro": "Contract de proiectare și execuție semnat cu Gülermak (lider) și PBDiM Mińsk Mazowiecki."
+          },
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-22",
+          "note": {
+            "en": "Opened with Wał Miedzeszyński – Lubelska.",
+            "ro": "Deschis împreună cu Wał Miedzeszyński – Lubelska."
+          },
+          "sourceRef": "plwiki-s2"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: co-financed from the Cohesion Fund under the Infrastructure and Environment Programme 2014–2020; EU support of about 1.7 bn zł covers the three Puławska – Lubelska sections (18.6 km) together, not this section alone.",
+            "ro": "GDDKiA: cofinanțat din Fondul de coeziune prin Programul Infrastructură și Mediu 2014–2020; sprijinul UE de circa 1,7 mld zł acoperă împreună cele trei secțiuni Puławska – Lubelska (18,6 km), nu doar această secțiune."
+          }
+        }
+      ],
+      "note": {
+        "en": "Lot B. Contractors: Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş. (leader) and Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki. The Anna Jagiellonka bridge over the Vistula lies in this lot (pl.wikipedia: 1 025.5 m). The GDDKiA project page dates the opening of this lot to 10 December 2020 and 22 December 2020; the Wilanów – Lubelska opening is recorded here as 22 December 2020. The drawn centreline is 5% shorter than the sourced 6.5 km; the sourced length is kept.",
+        "ro": "Lotul B. Constructori: Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş. (lider) și Przedsiębiorstwo Budowy Dróg i Mostów Mińsk Mazowiecki. Podul Anna Jagiellonka peste Vistula se află în acest lot (pl.wikipedia: 1 025,5 m). Pagina de proiect GDDKiA datează deschiderea acestui lot la 10 decembrie 2020 și 22 decembrie 2020; deschiderea Wilanów – Lubelska este înregistrată aici ca 22 decembrie 2020. Axul desenat este cu 5% mai scurt decât cei 6,5 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s2",
+        "gddkia-pulawska-lubelska",
+        "osm-ways-s2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "przyczolkowa-wal-miedzeszynski"
+    },
+    {
+      "id": "wal-miedzeszynski-lubelska",
+      "name": {
+        "en": "Wał Miedzeszyński – Lubelska (lot C)",
+        "ro": "Wał Miedzeszyński – Lubelska (lotul C)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-12-11",
+        "opened": "2020-12-22"
+      },
+      "lengthKm": 7.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 561.7,
+              "currency": "PLN",
+              "year": 2015,
+              "note": "VAT basis not stated on the source page."
+            },
+            "date": "2015-12-11",
+            "sourceRef": "gddkia-pulawska-lubelska"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 561.7,
+          "currency": "PLN",
+          "year": 2015,
+          "note": "Design and build. VAT basis not stated on the source page."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Warbud",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-12-11",
+          "note": {
+            "en": "Design-and-build contract signed with Warbud S.A.",
+            "ro": "Contract de proiectare și execuție semnat cu Warbud S.A."
+          },
+          "sourceRef": "plwiki-s2"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-22",
+          "note": {
+            "en": "Opened to traffic; the ramps from Warszawa Wilanów towards Lublin at the Lubelska junction opened on 22 December 2020 and the remaining movements in June 2021.",
+            "ro": "Dat în trafic; rampele de la Warszawa Wilanów spre Lublin la nodul Lubelska au fost deschise la 22 decembrie 2020, iar restul relațiilor în iunie 2021."
+          },
+          "sourceRef": "plwiki-s2"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "GDDKiA: co-financed from the Cohesion Fund under the Infrastructure and Environment Programme 2014–2020; EU support of about 1.7 bn zł covers the three Puławska – Lubelska sections (18.6 km) together, not this section alone.",
+            "ro": "GDDKiA: cofinanțat din Fondul de coeziune prin Programul Infrastructură și Mediu 2014–2020; sprijinul UE de circa 1,7 mld zł acoperă împreună cele trei secțiuni Puławska – Lubelska (18,6 km), nu doar această secțiune."
+          }
+        }
+      ],
+      "note": {
+        "en": "Lot C. Four viaducts carry the road through the Mazowiecki Landscape Park (GDDKiA project page). GDDKiA's project page records this lot as handed over on 21 December 2020; the opening to traffic is dated 22 December 2020. The drawn line ends at the Lubelska junction at 21.271445 E, 52.198571 N, where the S17 lot Zakręt – Lubelska ends (a few tens of metres apart) and the A2 geometry starts further east, so the three do not overlap. The drawn centreline is 9% longer than the sourced 7.5 km; the sourced length is kept.",
+        "ro": "Lotul C. Patru viaducte duc drumul prin Parcul Peisagistic Mazowiecki (pagina de proiect GDDKiA). Pagina de proiect GDDKiA înregistrează acest lot ca predat la 21 decembrie 2020; deschiderea în trafic este datată 22 decembrie 2020. Linia desenată se termină la nodul Lubelska, la 21,271445 E, 52,198571 N, unde se termină lotul S17 Zakręt – Lubelska (la câteva zeci de metri) și unde geometria A2 începe mai la est, deci cele trei nu se suprapun. Axul desenat este cu 9% mai lung decât cei 7,5 km din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plwiki-s2",
+        "gddkia-pulawska-lubelska",
+        "osm-ways-s2",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wal-miedzeszynski-lubelska"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plwiki-s2",
+      "title": "Wikipedia (pl): Droga ekspresowa S2 (Polska)",
+      "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S2_(Polska)",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-konotopa-lotnisko",
+      "title": "GDDKiA: S2 Konotopa – Lotnisko, project page (archived 26 Dec 2011)",
+      "url": "https://web.archive.org/web/20111226173222/http://www.s2konotopa-lotnisko.pl/dane-ogolne",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-pulawska-lubelska",
+      "title": "GDDKiA: S2 Puławska – Lubelska, project page",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/7958/s2-pulawska-lubelska",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-tunel-opening",
+      "title": "GDDKiA: Ostatni odcinek Południowej Obwodnicy Warszawy oddany do ruchu (20 Dec 2021)",
+      "url": "https://www.gov.pl/web/gddkia/ostatni-odcinek-poludniowej-obwodnicy-warszawy-oddany-do-ruchu",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-ways-s2",
+      "title": "OpenStreetMap: motorway ways with ref S2 around Warsaw (Overpass, base 2026-10-10)",
+      "url": "https://www.openstreetmap.org/way/376382125",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

@@ -1,0 +1,1039 @@
+{
+  "id": "pl-rail-podleze-piekielko",
+  "country": "pl",
+  "category": "railway",
+  "name": {
+    "en": "Podłęże – Piekiełko new line and line 104 Chabówka – Nowy Sącz rebuild",
+    "ro": "Linia nouă Podłęże – Piekiełko și reconstrucția liniei 104 Chabówka – Nowy Sącz"
+  },
+  "description": {
+    "en": "PKP PLK's largest programme in southern Poland: the rebuild and electrification of the 75 km line 104 Chabówka – Nowy Sącz, and a new line 622 (with the 623 branch) from Podłęże near Kraków through Gdów and Szczyrzyc to Tymbark, about 58 km of new track and 20 tunnels in all. Each lot is one PLK contract or tender, six on line 104 and four on the new lines. The design contract of 7 January 2019 (PLN 180 million, consortium led by Egis Rail) is not a lot. PLK gives the whole programme as about PLN 17 billion gross and the full Kraków – Nowy Sącz link for 2030. The line 104 lots are rebuilds of an existing line; the line 622 and 623 lots are new-build. Not drawn: the Podłęże – Podłęże Balachówka link (627) and the Porąbka – Stróża link (628). The lots on lines 622 and 623 that are only tendered are drawn from OpenStreetMap ways tagged proposed.",
+    "ro": "Cel mai mare program al PKP PLK din sudul Poloniei: reconstrucția și electrificarea liniei 104 Chabówka – Nowy Sącz (75 km) și o linie nouă 622 (cu ramura 623) de la Podłęże, lângă Kraków, prin Gdów și Szczyrzyc până la Tymbark, circa 58 km de cale nouă și 20 de tuneluri în total. Fiecare lot este un contract sau o licitație PLK, șase pe linia 104 și patru pe liniile noi. Contractul de proiectare din 7 ianuarie 2019 (180 milioane PLN, consorțiu condus de Egis Rail) nu este lot. PLK indică pentru întregul program circa 17 miliarde PLN brut și legătura completă Kraków – Nowy Sącz pentru 2030. Loturile de pe linia 104 sunt reconstrucții ale unei linii existente; loturile de pe liniile 622 și 623 sunt construcții noi. Nedesenate: legătura Podłęże – Podłęże Balachówka (627) și legătura Porąbka – Stróża (628). Loturile de pe liniile 622 și 623 aflate doar în licitație sunt desenate din căi OpenStreetMap etichetate ca proiectate."
+  },
+  "operator": "pl-plk",
+  "lastVerified": "2026-10-10",
+  "lots": [
+    {
+      "id": "chabowka-rabka-zaryte",
+      "name": {
+        "en": "Line 104 Chabówka – Rabka Zaryte (rebuild)",
+        "ro": "Linia 104 Chabówka – Rabka Zaryte (reconstrucție)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2023-05-11",
+        "opened": "2025-12-14"
+      },
+      "lengthKm": 4.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 370,
+              "currency": "PLN",
+              "year": 2023,
+              "scope": "works",
+              "note": "Net. PLK states \"blisko 370 mln zł netto\" (just under 370); the exact figure is not given."
+            },
+            "date": "2023-05-11",
+            "sourceRef": "plk-pp-2023-05-11"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "maxSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-05-11",
+          "note": {
+            "en": "Contract signed with Budimex S.A. for the Chabówka – Rabka Zaryte section.",
+            "ro": "Contract semnat cu Budimex S.A. pentru tronsonul Chabówka – Rabka Zaryte."
+          },
+          "sourceRef": "plk-pp-2023-05-11"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2025-08-31",
+          "note": {
+            "en": "Passenger trains returned to Rabka-Zdrój, the first part of the section.",
+            "ro": "Trenurile de călători au revenit la Rabka-Zdrój, prima parte a tronsonului."
+          },
+          "sourceRef": "plk-pp-2025-08-29"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-14",
+          "note": {
+            "en": "Regular passenger service from Chabówka to Rabka Zaryte began, the first rebuilt part of the programme in service.",
+            "ro": "A început circulația regulată de călători de la Chabówka la Rabka Zaryte, prima parte reconstruită a programului dată în folosință."
+          },
+          "sourceRef": "plk-pp-2025-12-13"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Financed under the National Recovery and Resilience Plan (KPO). One grant agreement of 25 April 2023 covers the whole task Chabówka – Rabka Zaryte and Limanowa – Klęczany – Nowy Sącz (project value PLN 4,349,978,339.04 and EU contribution PLN 3,536,567,755.33 after annex 03, as stated by PLK), so the figures are not split per lot.",
+            "ro": "Finanțat prin Planul Național de Redresare și Reziliență (KPO). Un singur acord de grant din 25 aprilie 2023 acoperă întregul proiect Chabówka – Rabka Zaryte și Limanowa – Klęczany – Nowy Sącz (valoarea proiectului 4.349.978.339,04 PLN și contribuția UE 3.536.567.755,33 PLN după anexa 03, conform PLK), deci cifrele nu sunt împărțite pe loturi."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 370,
+          "currency": "PLN",
+          "year": 2023,
+          "scope": "works",
+          "note": "Net. Stated as just under PLN 370 million."
+        }
+      },
+      "note": {
+        "en": "Rebuild and electrification of the existing single-track line 104 between Chabówka and Rabka Zaryte, in a corrected alignment with new bridges, viaducts and roads; trains up to 100 km/h. PLK dates the start of works to 2023 without a month. Trains reached Rabka-Zdrój on 31 August 2025 and Rabka Zaryte on 14 December 2025, after almost 20 years without passenger service. Net contract value as stated by PLK: just under PLN 370 million. No section length is stated in the sources. Length measured from OpenStreetMap geometry.",
+        "ro": "Reconstrucția și electrificarea liniei existente 104 cu o singură cale între Chabówka și Rabka Zaryte, pe un traseu corectat, cu poduri, viaducte și drumuri noi; trenuri până la 100 km/h. PLK plasează începutul lucrărilor în 2023, fără lună. Trenurile au ajuns la Rabka-Zdrój la 31 august 2025 și la Rabka Zaryte la 14 decembrie 2025, după aproape 20 de ani fără trenuri de călători. Valoarea netă a contractului conform PLK: puțin sub 370 milioane PLN. Lungimea tronsonului nu este indicată în surse. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "plk-pp-about",
+        "plk-pp-2023-05-11",
+        "plk-pp-2025-08-29",
+        "plk-pp-2025-12-13",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "chabowka-rabka-zaryte"
+    },
+    {
+      "id": "rabka-zaryte-fornale",
+      "name": {
+        "en": "Line 104 Rabka Zaryte – Mszana Dolna – Fornale (rebuild)",
+        "ro": "Linia 104 Rabka Zaryte – Mszana Dolna – Fornale (reconstrucție)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-08-08"
+      },
+      "lengthKm": 15,
+      "cost": {
+        "estimated": {
+          "amount": 750,
+          "currency": "PLN",
+          "year": 2024,
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "VAT basis not stated. Tender estimate \"ponad 750 mln zł\" announced 31 December 2024."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 567,
+              "currency": "PLN",
+              "year": 2025,
+              "scope": "works",
+              "note": "Net. PLK states \"przeszło 567 mln zł netto\" (more than 567)."
+            },
+            "date": "2025-08-08",
+            "sourceRef": "plk-pp-2025-08-11"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "maxSpeedKmh": 120,
+        "bridgeCount": 14
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-12-31",
+          "note": {
+            "en": "Tender launched for Rabka Zaryte – Mszana Dolna – Fornale, after PLK terminated the earlier contract for Rabka Zaryte – Mszana Dolna.",
+            "ro": "Licitație lansată pentru Rabka Zaryte – Mszana Dolna – Fornale, după ce PLK a reziliat contractul anterior pentru Rabka Zaryte – Mszana Dolna."
+          },
+          "sourceRef": "plk-pp-2024-12-31"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-08-08",
+          "note": {
+            "en": "Contract signed with the PORR S.A. and Trakcja System Sp. z o.o. consortium; 24 months of works.",
+            "ro": "Contract semnat cu consorțiul PORR S.A. și Trakcja System Sp. z o.o.; lucrări de 24 de luni."
+          },
+          "sourceRef": "plk-pp-2025-08-11"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "PLK states the task is financed from budget funds (\"ze środków budżetowych\").",
+            "ro": "PLK spune că proiectul este finanțat din fonduri bugetare."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "PORR S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Trakcja System Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24,
+        "value": {
+          "amount": 567,
+          "currency": "PLN",
+          "year": 2025,
+          "scope": "works",
+          "note": "Net. Stated as more than PLN 567 million."
+        }
+      },
+      "note": {
+        "en": "Rebuild and electrification of line 104 for 120 km/h, with 66 engineering structures including 14 bridges and 5 viaducts, and new platforms at Raba Niżna, Mszana Dolna Marki and Mszana Dolna station. The section is about 15 km. An earlier contract of 13 October 2023 for Rabka Zaryte – Mszana Dolna (PLK: almost PLN 430 million) was terminated by PLK because the contractor kept missing the schedule; the releases do not name that contractor or give the termination date, so neither is recorded. Trains ran at 30 km/h and only occasionally on the old track. PLK gives no start date for the new contract's works but reported them under way on 6 October 2025. About 15.3 km drawn from OpenStreetMap, with a 0.2 km straight link across a gap in the mapped ways near Rabka Zaryte.",
+        "ro": "Reconstrucția și electrificarea liniei 104 pentru 120 km/h, cu 66 de construcții inginerești, inclusiv 14 poduri și 5 viaducte, și peroane noi la Raba Niżna, Mszana Dolna Marki și în gara Mszana Dolna. Tronsonul are circa 15 km. Un contract anterior din 13 octombrie 2023 pentru Rabka Zaryte – Mszana Dolna (PLK: aproape 430 milioane PLN) a fost reziliat de PLK pentru că executantul nu respecta graficul; comunicatele nu numesc executantul și nu indică data rezilierii, deci niciuna nu este înregistrată. Pe vechea cale trenurile circulau cu 30 km/h și doar ocazional. PLK nu indică data începerii lucrărilor noului contract, dar le-a raportat în desfășurare la 6 octombrie 2025. Circa 15,3 km desenați din OpenStreetMap, cu o legătură dreaptă de 0,2 km peste un gol în căile cartografiate lângă Rabka Zaryte."
+      },
+      "sourceRefs": [
+        "plk-pp-2024-12-31",
+        "plk-pp-2025-08-11",
+        "plk-pp-2023-10-13",
+        "plk-pp-2025-10-06",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "rabka-zaryte-fornale"
+    },
+    {
+      "id": "limanowa-station",
+      "name": {
+        "en": "Line 104 Limanowa station (rebuild)",
+        "ro": "Linia 104 stația Limanowa (reconstrucție)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-07-29",
+        "constructionStart": "2024-09",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 3.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 273,
+              "currency": "PLN",
+              "year": 2024,
+              "scope": "works",
+              "note": "Net. PLK states \"niemal 273 mln zł netto\" (almost 273)."
+            },
+            "date": "2024-07-29",
+            "sourceRef": "plk-pp-2024-07-29"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "maxSpeedKmh": 160,
+        "stationCount": 1
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-10-13",
+          "note": {
+            "en": "Tender launched for the station and a stretch of almost 3.5 km.",
+            "ro": "Licitație lansată pentru stație și un tronson de aproape 3,5 km."
+          },
+          "sourceRef": "plk-pp-2023-10-13"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-07-29",
+          "note": {
+            "en": "Contract signed with Skanska S.A.; 24 months.",
+            "ro": "Contract semnat cu Skanska S.A.; 24 de luni."
+          },
+          "sourceRef": "plk-pp-2024-07-29"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-09",
+          "note": {
+            "en": "Works at the station under way \"since September\", as PLK put it on 17 February 2025.",
+            "ro": "Lucrările la stație în desfășurare „din septembrie”, după cum a formulat PLK la 17 februarie 2025."
+          },
+          "sourceRef": "plk-pp-2025-02-17"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Financed under the National Recovery and Resilience Plan (KPO). One grant agreement of 25 April 2023 covers the whole task Chabówka – Rabka Zaryte and Limanowa – Klęczany – Nowy Sącz (project value PLN 4,349,978,339.04 and EU contribution PLN 3,536,567,755.33 after annex 03, as stated by PLK), so the figures are not split per lot.",
+            "ro": "Finanțat prin Planul Național de Redresare și Reziliență (KPO). Un singur acord de grant din 25 aprilie 2023 acoperă întregul proiect Chabówka – Rabka Zaryte și Limanowa – Klęczany – Nowy Sącz (valoarea proiectului 4.349.978.339,04 PLN și contribuția UE 3.536.567.755,33 PLN după anexa 03, conform PLK), deci cifrele nu sunt împărțite pe loturi."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Skanska S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 24,
+        "value": {
+          "amount": 273,
+          "currency": "PLN",
+          "year": 2024,
+          "scope": "works",
+          "note": "Net. Stated as almost PLN 273 million."
+        }
+      },
+      "note": {
+        "en": "Rebuild of Limanowa station and 3.5 km of track, partly in a new alignment for 160 km/h, with two platforms, an underpass with lifts, viaducts and bridges. PLK dates the start of works to September 2024 (release of 17 February 2025) and, later, to mid-2024. On 10 August 2026 PLK said the station was nearly finished, at about PLN 330 million gross, and that the first trains would call there in 2027, once the Pisarzowa tunnel is complete. That 2027 date is PLK's, for trains, and is used as the expected opening.",
+        "ro": "Reconstrucția stației Limanowa și 3,5 km de cale, parțial pe un traseu nou pentru 160 km/h, cu două peroane, pasaj subteran cu lifturi, viaducte și poduri. PLK plasează începutul lucrărilor în septembrie 2024 (comunicatul din 17 februarie 2025) și, mai târziu, la mijlocul lui 2024. La 10 august 2026 PLK a spus că stația este aproape terminată, la circa 330 milioane PLN brut, și că primele trenuri vor opri acolo în 2027, după terminarea tunelului Pisarzowa. Data 2027 este a PLK, pentru trenuri, și este folosită ca deschidere așteptată."
+      },
+      "sourceRefs": [
+        "plk-pp-about",
+        "plk-pp-2023-10-13",
+        "plk-pp-2024-07-29",
+        "plk-pp-2025-02-17",
+        "plk-pp-2026-08-10",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "limanowa-station"
+    },
+    {
+      "id": "limanowa-klanczany",
+      "name": {
+        "en": "Line 104 Limanowa – Klęczany siding, with the Pisarzowa tunnel (rebuild, new alignment)",
+        "ro": "Linia 104 Limanowa – bocznica Klęczany, cu tunelul Pisarzowa (reconstrucție, traseu nou)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-03-08",
+        "constructionStart": "2024-06",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 12.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1900,
+              "currency": "PLN",
+              "year": 2024,
+              "scope": "works",
+              "note": "Net. PLK states \"przeszło 1,9 miliarda zł netto\" (more than 1.9 billion)."
+            },
+            "date": "2024-03-08",
+            "sourceRef": "plk-pp-2024-03-08"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "maxSpeedKmh": 160,
+        "tunnelKm": 3.75
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-03-08",
+          "note": {
+            "en": "Contract signed with the Budimex S.A. / Gülermak consortium; 31 months.",
+            "ro": "Contract semnat cu consorțiul Budimex S.A. / Gülermak; 31 de luni."
+          },
+          "sourceRef": "plk-pp-2024-03-08"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-06",
+          "note": {
+            "en": "Works began on a route largely in a new alignment.",
+            "ro": "Lucrările au început pe un traseu în mare parte nou."
+          },
+          "sourceRef": "plwiki-104"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Financed under the National Recovery and Resilience Plan (KPO). One grant agreement of 25 April 2023 covers the whole task Chabówka – Rabka Zaryte and Limanowa – Klęczany – Nowy Sącz (project value PLN 4,349,978,339.04 and EU contribution PLN 3,536,567,755.33 after annex 03, as stated by PLK), so the figures are not split per lot.",
+            "ro": "Finanțat prin Planul Național de Redresare și Reziliență (KPO). Un singur acord de grant din 25 aprilie 2023 acoperă întregul proiect Chabówka – Rabka Zaryte și Limanowa – Klęczany – Nowy Sącz (valoarea proiectului 4.349.978.339,04 PLN și contribuția UE 3.536.567.755,33 PLN după anexa 03, conform PLK), deci cifrele nu sunt împărțite pe loturi."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş.",
+          "role": "builder"
+        },
+        {
+          "name": "Gülermak Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 31,
+        "value": {
+          "amount": 1900,
+          "currency": "PLN",
+          "year": 2024,
+          "scope": "works",
+          "note": "Net. Stated as more than PLN 1.9 billion."
+        }
+      },
+      "note": {
+        "en": "Rebuild and electrification of more than 12.5 km of track between Limanowa and the Klęczany siding, largely in a new alignment for 160 km/h, with 10 viaducts, 12 bridges and new stops at Mordarka and Chomranice. The Pisarzowa tunnel between Mordarka and Męcina is 3,750 m long, the longest railway tunnel in Poland according to PLK; the TBM \"Jadwiga\" finished boring it on 14 April 2026, with an escape tunnel beside it. PLK said on 10 August 2026 that first trains reach Limanowa in 2027, after the tunnel is finished. The siding is not a mapped node: the cut with the next lot is placed by chainage so that this lot (12.5 km) and the next (12.6 km) agree with the drawn track within 6%. Length of the drawn track: 12.7 km.",
+        "ro": "Reconstrucția și electrificarea a peste 12,5 km de cale între Limanowa și linia industrială Klęczany, în mare parte pe un traseu nou pentru 160 km/h, cu 10 viaducte, 12 poduri și opriri noi la Mordarka și Chomranice. Tunelul Pisarzowa dintre Mordarka și Męcina are 3.750 m, cel mai lung tunel feroviar din Polonia potrivit PLK; tuneliera „Jadwiga” a terminat forajul la 14 aprilie 2026, cu un tunel de evacuare alăturat. La 10 august 2026 PLK a spus că primele trenuri ajung la Limanowa în 2027, după terminarea tunelului. Linia industrială nu este un nod cartografiat: limita cu lotul următor este pusă după cumulată, astfel încât acest lot (12,5 km) și următorul (12,6 km) să corespundă traseului desenat cu o eroare sub 6%. Lungimea traseului desenat: 12,7 km."
+      },
+      "sourceRefs": [
+        "plk-pp-about",
+        "plk-pp-2024-03-08",
+        "plk-pp-2026-04-14",
+        "plk-pp-2026-08-10",
+        "plwiki-104",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "limanowa-klanczany"
+    },
+    {
+      "id": "klanczany-nowy-sacz",
+      "name": {
+        "en": "Line 104 Klęczany siding – Nowy Sącz (rebuild)",
+        "ro": "Linia 104 bocznica Klęczany – Nowy Sącz (reconstrucție)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2023-05-11",
+        "constructionStart": "2023-09",
+        "opened": "2026-06-14"
+      },
+      "lengthKm": 12.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 780,
+              "currency": "PLN",
+              "year": 2023,
+              "scope": "works",
+              "note": "Net. PLK states \"nieco ponad 780 mln zł netto\" (just over 780)."
+            },
+            "date": "2023-05-11",
+            "sourceRef": "plk-pp-2023-05-11"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "maxSpeedKmh": 120,
+        "bridgeCount": 1,
+        "stationCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-05-11",
+          "note": {
+            "en": "Contract signed with the Torpol S.A. and Intop Warszawa Sp. z o.o. consortium.",
+            "ro": "Contract semnat cu consorțiul Torpol S.A. și Intop Warszawa Sp. z o.o."
+          },
+          "sourceRef": "plk-pp-2023-05-11"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-09",
+          "note": {
+            "en": "Construction works began in September 2023.",
+            "ro": "Lucrările de construcție au început în septembrie 2023."
+          },
+          "sourceRef": "plk-pp-2023-09-08"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-06-14",
+          "note": {
+            "en": "Regular passenger service resumed between Nowy Sącz and Marcinkowice after more than 20 years.",
+            "ro": "Circulația regulată de călători a fost reluată între Nowy Sącz și Marcinkowice, după peste 20 de ani."
+          },
+          "sourceRef": "plk-pp-2026-06-15"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Financed under the National Recovery and Resilience Plan (KPO). One grant agreement of 25 April 2023 covers the whole task Chabówka – Rabka Zaryte and Limanowa – Klęczany – Nowy Sącz (project value PLN 4,349,978,339.04 and EU contribution PLN 3,536,567,755.33 after annex 03, as stated by PLK), so the figures are not split per lot.",
+            "ro": "Finanțat prin Planul Național de Redresare și Reziliență (KPO). Un singur acord de grant din 25 aprilie 2023 acoperă întregul proiect Chabówka – Rabka Zaryte și Limanowa – Klęczany – Nowy Sącz (valoarea proiectului 4.349.978.339,04 PLN și contribuția UE 3.536.567.755,33 PLN după anexa 03, conform PLK), deci cifrele nu sunt împărțite pe loturi."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Torpol S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Intop Warszawa Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 780,
+          "currency": "PLN",
+          "year": 2023,
+          "scope": "works",
+          "note": "Net. Stated as just over PLN 780 million."
+        }
+      },
+      "note": {
+        "en": "Rebuild and electrification of line 104 from the Klęczany siding to Nowy Sącz for 120 km/h: 12.6 km of track replaced, a new Dunajec railway bridge, grade-separated crossings at Kolejowa and Krakowska streets, a two-platform Marcinkowice station and rebuilt stops at Nowy Sącz Chełmiec and Nowy Sącz Miasto. PLK put the cost at about PLN 780 million at opening. Passenger trains run Nowy Sącz – Marcinkowice (about 11 minutes) from Sunday 14 June 2026; the release describes the whole section to the Klęczany siding as rebuilt and handed over. The cut with the previous lot is placed by chainage (the siding is not a mapped node). Length of the drawn track: 13.2 km.",
+        "ro": "Reconstrucția și electrificarea liniei 104 de la linia industrială Klęczany la Nowy Sącz pentru 120 km/h: 12,6 km de cale înlocuiți, un pod feroviar nou peste Dunajec, intersecții denivelate pe străzile Kolejowa și Krakowska, gara Marcinkowice cu două peroane și opririle Nowy Sącz Chełmiec și Nowy Sącz Miasto refăcute. PLK a indicat un cost de circa 780 milioane PLN la deschidere. Trenurile de călători circulă Nowy Sącz – Marcinkowice (circa 11 minute) din duminica de 14 iunie 2026; comunicatul descrie întregul tronson până la linia industrială Klęczany ca reconstruit și predat. Limita cu lotul anterior este pusă după cumulată (linia industrială nu este un nod cartografiat). Lungimea traseului desenat: 13,2 km."
+      },
+      "sourceRefs": [
+        "plk-pp-about",
+        "plk-pp-2023-05-11",
+        "plk-pp-2023-09-08",
+        "plk-pp-2026-06-15",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "klanczany-nowy-sacz"
+    },
+    {
+      "id": "tymbark-limanowa",
+      "name": {
+        "en": "Line 104 Tymbark – Limanowa (rebuild, partly new alignment)",
+        "ro": "Linia 104 Tymbark – Limanowa (reconstrucție, parțial traseu nou)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-03-12"
+      },
+      "lengthKm": 9.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1300,
+              "currency": "PLN",
+              "year": 2026,
+              "scope": "works",
+              "note": "Net. PLK states \"ponad 1,3 mld zł netto\" (more than 1.3 billion; 1.6 billion gross)."
+            },
+            "date": "2026-03-12",
+            "sourceRef": "plk-pp-2026-03-12"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "maxSpeedKmh": 150
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-02-17",
+          "note": {
+            "en": "Tender launched for Tymbark – Limanowa, valued at more than PLN 1.3 billion.",
+            "ro": "Licitație lansată pentru Tymbark – Limanowa, evaluată la peste 1,3 miliarde PLN."
+          },
+          "sourceRef": "plk-pp-2025-02-17"
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-03-12",
+          "note": {
+            "en": "Contract signed with the Gülermak S.A. and Intop S.A. consortium; 36 months of works.",
+            "ro": "Contract semnat cu consorțiul Gülermak S.A. și Intop S.A.; lucrări de 36 de luni."
+          },
+          "sourceRef": "plk-pp-2026-03-12"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Gülermak S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Intop S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 36,
+        "value": {
+          "amount": 1300,
+          "currency": "PLN",
+          "year": 2026,
+          "scope": "works",
+          "note": "Net. Stated as more than PLN 1.3 billion."
+        }
+      },
+      "note": {
+        "en": "Rebuild and electrification of line 104 between Tymbark and Limanowa (station excluded), partly in a new alignment for up to 150 km/h, with a tunnel and an escape structure between Tymbark and Koszary, a viaduct of about 2 km into Limanowa, a new stop at Koszary and a rebuilt Tymbark station. The same contract also builds a piece of new line 622 out of Tymbark towards Szczyrzyc: PLK counts 14 km of new track and 17 bridges and viaducts in total, so the 14 km is not used as this lot's length. The 622 piece is drawn here as the last 2.2 km west of Tymbark: its extent is inferred, because the sources give no chainage, from where the OpenStreetMap ways of the Szczyrzyc – Tymbark contract (the two tunnels of 3.8 and 1 km, 8 km in all) end. Signed 12 March 2026 for PLN 1.6 billion gross; PLK still described the Limanowa end as to be rebuilt on 10 August 2026, and no construction start is recorded. Length measured from OpenStreetMap geometry: 7.7 km on line 104 and 2.2 km on line 622.",
+        "ro": "Reconstrucția și electrificarea liniei 104 între Tymbark și Limanowa (fără stație), parțial pe un traseu nou pentru până la 150 km/h, cu un tunel și o construcție de evacuare între Tymbark și Koszary, un viaduct de circa 2 km spre Limanowa, o oprire nouă la Koszary și gara Tymbark refăcută. Același contract construiește și o bucată din linia nouă 622 dinspre Tymbark spre Szczyrzyc: PLK numără în total 14 km de cale nouă și 17 poduri și viaducte, deci cei 14 km nu sunt folosiți ca lungime a acestui lot. Bucata de 622 este desenată aici ca ultimii 2,2 km la vest de Tymbark: întinderea ei este dedusă, deoarece sursele nu dau cumulate, din locul unde se termină căile OpenStreetMap ale contractului Szczyrzyc – Tymbark (cele două tuneluri de 3,8 și 1 km, 8 km în total). Semnat la 12 martie 2026 pentru 1,6 miliarde PLN brut; la 10 august 2026 PLK descria încă capătul dinspre Limanowa ca urmând să fie reconstruit, iar începerea lucrărilor nu este înregistrată. Lungime măsurată din geometria OpenStreetMap: 7,7 km pe linia 104 și 2,2 km pe linia 622."
+      },
+      "sourceRefs": [
+        "plk-pp-2025-02-17",
+        "plk-pp-2026-03-12",
+        "plk-pp-2026-08-10",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "tymbark-limanowa"
+    },
+    {
+      "id": "podleze-gdow",
+      "name": {
+        "en": "Line 622 Podłęże – Gdów (new line)",
+        "ro": "Linia 622 Podłęże – Gdów (linie nouă)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-03-06",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 20,
+      "cost": {
+        "estimated": {
+          "amount": 2300,
+          "currency": "PLN",
+          "year": 2025,
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "VAT basis not stated. Tender estimate \"2,3 mld zł\" announced 18 January 2025."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 3200,
+              "currency": "PLN",
+              "year": 2026,
+              "scope": "works",
+              "note": "Including VAT. PLK states \"niemal 3,2 mld zł brutto\" (almost 3.2 billion gross); no net figure is given."
+            },
+            "date": "2026-03-06",
+            "sourceRef": "plk-pp-2026-03-06"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "tunnelKm": 0.9
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-01-18",
+          "note": {
+            "en": "Tender launched, estimated by PLK at PLN 2.3 billion.",
+            "ro": "Licitație lansată, estimată de PLK la 2,3 miliarde PLN."
+          },
+          "sourceRef": "plk-pp-2025-01-18"
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-03-06",
+          "note": {
+            "en": "Contract signed with the Budimex S.A., Budimex Kolejnictwo S.A. and Ferrovial Construction (UK) Limited consortium; 46 months.",
+            "ro": "Contract semnat cu consorțiul Budimex S.A., Budimex Kolejnictwo S.A. și Ferrovial Construction (UK) Limited; 46 de luni."
+          },
+          "sourceRef": "plk-pp-2026-03-06"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex Kolejnictwo S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Ferrovial Construction (UK) Limited",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 46,
+        "value": {
+          "amount": 3200,
+          "currency": "PLN",
+          "year": 2026,
+          "scope": "works",
+          "note": "Including VAT. Stated as almost PLN 3.2 billion gross."
+        }
+      },
+      "note": {
+        "en": "New double-track line from the Kraków – Rzeszów main line (E30) between Węgrzce Wielkie and Podłęże, over the A4 motorway on viaducts, to Gdów station near Marszowice, with a twin-nave tunnel of more than 900 m, 42 engineering structures (the longest over 1,300 m), 33 grade-separated crossings, a new Podłęże Balachówka station and stops at Zagórze near Niepołomice and Wiatowice. PLK states about 20 km of new double track, which includes the Podłęże – Podłęże Balachówka link (line 627); the tender of 18 January 2025 named both the Podłęże – Gdów and Podłęże – Podłęże Balachówka lines. The drawn main line to Gdów is 16.3 km, 19% shorter, which matches Gdów at km 16.317 of line 622 on plwiki; the link is not drawn. First trains Kraków – Gdów are planned for 2030. The sources give no construction start, so none is recorded. The value is gross; the PLN 3 billion quoted by the minister is a rounded figure.",
+        "ro": "Linie nouă cu două căi de la magistrala Kraków – Rzeszów (E30) între Węgrzce Wielkie și Podłęże, peste autostrada A4 pe viaducte, până la gara Gdów lângă Marszowice, cu un tunel cu două nave de peste 900 m, 42 de construcții inginerești (cea mai lungă peste 1.300 m), 33 de intersecții denivelate, o gară nouă Podłęże Balachówka și opriri la Zagórze lângă Niepołomice și Wiatowice. PLK indică circa 20 km de cale dublă nouă, care include legătura Podłęże – Podłęże Balachówka (linia 627); licitația din 18 ianuarie 2025 a numit ambele linii, Podłęże – Gdów și Podłęże – Podłęże Balachówka. Magistrala desenată până la Gdów are 16,3 km, cu 19% mai puțin, ceea ce corespunde cu Gdów la km 16,317 al liniei 622 pe plwiki; legătura nu este desenată. Primele trenuri Kraków – Gdów sunt planificate pentru 2030. Sursele nu indică începerea lucrărilor, deci nu este înregistrată. Valoarea este brută; cei 3 miliarde PLN citați de ministru sunt o cifră rotunjită."
+      },
+      "sourceRefs": [
+        "plk-pp-2025-01-18",
+        "plk-pp-2026-03-06",
+        "plwiki-622",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "podleze-gdow"
+    },
+    {
+      "id": "szczyrzyc-tymbark",
+      "name": {
+        "en": "Line 622 Szczyrzyc – Tymbark (new line)",
+        "ro": "Linia 622 Szczyrzyc – Tymbark (linie nouă)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-10-06",
+        "constructionStart": "2026-01",
+        "expectedOpening": "2029-06"
+      },
+      "lengthKm": 8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1700,
+              "currency": "PLN",
+              "year": 2025,
+              "scope": "works",
+              "note": "Net. PLK states \"niemal 1,7 mld zł netto\" (almost 1.7 billion; about 2 billion gross)."
+            },
+            "date": "2025-10-06",
+            "sourceRef": "plk-pp-2025-10-06"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1,
+        "maxSpeedKmh": 160,
+        "tunnelKm": 4.8
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-10-06",
+          "note": {
+            "en": "Contract signed with the Budimex S.A., Budimex Kolejnictwo S.A. and Gülermak S.A. consortium; 46 months, budget funding.",
+            "ro": "Contract semnat cu consorțiul Budimex S.A., Budimex Kolejnictwo S.A. și Gülermak S.A.; 46 de luni, finanțare bugetară."
+          },
+          "sourceRef": "plk-pp-2025-10-06"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-01",
+          "note": {
+            "en": "Main construction works began after preparatory works.",
+            "ro": "Lucrările principale au început după lucrările pregătitoare."
+          },
+          "sourceRef": "plwiki-622"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "PLK states the section is financed from budget funds (\"ze środków budżetowych\").",
+            "ro": "PLK spune că tronsonul este finanțat din fonduri bugetare."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex Kolejnictwo S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Gülermak S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 46,
+        "value": {
+          "amount": 1700,
+          "currency": "PLN",
+          "year": 2025,
+          "scope": "works",
+          "note": "Net. Stated as almost PLN 1.7 billion."
+        }
+      },
+      "note": {
+        "en": "The first stretch of entirely new line 622: 8 km linking the new Szczyrzyc station with Tymbark, single track for 160 km/h passenger and 120 km/h freight trains, with two tunnels (3.8 km and 1 km), bridges and viaducts, all crossings grade-separated, and a new stop at Stróża koło Dobrej. PLK gives completion as mid-2029. The sources give no chainage, so the extent is drawn from the OpenStreetMap ways tagged as construction that carry the two tunnels (3.84 and 1.15 km): from the point where line 623 leaves line 622 south of Szczyrzyc station to the east end of the long tunnel, 7.9 km against the 8 km PLK states. The 1.4 km stub from the station to that point is drawn in the Fornale – Szczyrzyc lot, and the last 2.2 km into Tymbark in the Tymbark – Limanowa lot, which also builds a piece of line 622 out of Tymbark. Both cuts are inferred from the mapped tagging and the sourced length.",
+        "ro": "Primul tronson al liniei complet noi 622: 8 km între noua gară Szczyrzyc și Tymbark, o singură cale pentru trenuri de călători de 160 km/h și de marfă de 120 km/h, cu două tuneluri (3,8 km și 1 km), poduri și viaducte, toate intersecțiile denivelate și o oprire nouă la Stróża koło Dobrej. PLK indică finalizarea la mijlocul lui 2029. Sursele nu dau cumulate, deci întinderea este desenată din căile OpenStreetMap etichetate ca în construcție care poartă cele două tuneluri (3,84 și 1,15 km): de la punctul unde linia 623 se desparte de linia 622, la sud de gara Szczyrzyc, până la capătul estic al tunelului lung, 7,9 km față de cei 8 km indicați de PLK. Porțiunea de 1,4 km de la gară până la acel punct este desenată în lotul Fornale – Szczyrzyc, iar ultimii 2,2 km spre Tymbark în lotul Tymbark – Limanowa, care construiește și o bucată din linia 622 dinspre Tymbark. Ambele limite sunt deduse din etichetarea cartografiată și din lungimea din sursă."
+      },
+      "sourceRefs": [
+        "plk-pp-2025-10-06",
+        "plwiki-622",
+        "plk-pp-2026-03-12",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "szczyrzyc-tymbark"
+    },
+    {
+      "id": "gdow-szczyrzyc",
+      "name": {
+        "en": "Line 622 Gdów – Szczyrzyc (new line, tender)",
+        "ro": "Linia 622 Gdów – Szczyrzyc (linie nouă, licitație)"
+      },
+      "status": "tendered",
+      "lengthKm": 16,
+      "cost": {
+        "estimated": {
+          "amount": 2500,
+          "currency": "PLN",
+          "year": 2026,
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Net. PLK estimate \"ok. 2,5 mld zł netto\" at tender launch."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "maxSpeedKmh": 160,
+        "tunnelKm": 2.4
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-06-30",
+          "note": {
+            "en": "Tender launched for the last section of the programme; works would take 38 months.",
+            "ro": "Licitație lansată pentru ultimul tronson al programului; lucrările ar dura 38 de luni."
+          },
+          "sourceRef": "plk-pp-2026-06-30"
+        }
+      ],
+      "note": {
+        "en": "Almost 16 km of double track between Gdów and Szczyrzyc, with two tunnels of almost 2.4 km in total, viaducts, bridges and a structure over 850 m long, Szczyrzyc station and stops at Zręczyce and Gruszów; 160 km/h. PLK calls it the last section of the programme. The tender was launched on 30 June 2026 and no contract is recorded. OpenStreetMap shows this stretch almost entirely as railway=proposed, not as construction, so the drawn line is a planned alignment; it is 15.3 km, with a 0.1 km straight link across a gap in the mapped ways.",
+        "ro": "Aproape 16 km de cale dublă între Gdów și Szczyrzyc, cu două tuneluri totalizând aproape 2,4 km, viaducte, poduri și o construcție de peste 850 m, gara Szczyrzyc și opriri la Zręczyce și Gruszów; 160 km/h. PLK o numește ultimul tronson al programului. Licitația a fost lansată la 30 iunie 2026 și nu este înregistrat niciun contract. OpenStreetMap arată acest tronson aproape în întregime ca railway=proposed, nu ca în construcție, deci linia desenată este un traseu planificat; are 15,3 km, cu o legătură dreaptă de 0,1 km peste un gol în căile cartografiate."
+      },
+      "sourceRefs": [
+        "plk-pp-2026-06-30",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "gdow-szczyrzyc"
+    },
+    {
+      "id": "fornale-szczyrzyc",
+      "name": {
+        "en": "Line 623 Fornale – Szczyrzyc with the Porąbka – Stróża link (new line, tender)",
+        "ro": "Linia 623 Fornale – Szczyrzyc cu legătura Porąbka – Stróża (linie nouă, licitație)"
+      },
+      "status": "tendered",
+      "lengthKm": 13,
+      "cost": {
+        "estimated": {
+          "amount": 1900,
+          "currency": "PLN",
+          "year": 2026,
+          "scope": "works",
+          "confidence": "estimated",
+          "note": "Net. PLK estimate \"niemal 1,9 mld zł netto\" at tender launch."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 3.6
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-04-30",
+          "note": {
+            "en": "Tender launched for the new line from Kasina Wielka to Szczyrzyc and the Porąbka – Stróża link; 38 months of works.",
+            "ro": "Licitație lansată pentru linia nouă de la Kasina Wielka la Szczyrzyc și legătura Porąbka – Stróża; lucrări de 38 de luni."
+          },
+          "sourceRef": "plk-pp-2026-04-30"
+        }
+      ],
+      "note": {
+        "en": "13 km of new track in foothill terrain between Fornale and Szczyrzyc (line 623) and on the Porąbka – Stróża link (line 628), with six tunnels of more than 3.6 km in total, viaducts and a new Kasina Wielka Północna station. PLK calls it the last part of the rebuilt line 104 to be built in a new alignment. The tender was launched on 30 April 2026 and no contract is recorded. Only the line 623 stretch is drawn, from OpenStreetMap ways tagged proposed (10.8 km, 17% shorter than the sourced 13 km), including the 1.4 km of line 622 from Szczyrzyc station to the point where line 623 branches off; the link is not in the OpenStreetMap data used.",
+        "ro": "13 km de cale nouă în teren de piemont între Fornale și Szczyrzyc (linia 623) și pe legătura Porąbka – Stróża (linia 628), cu șase tuneluri totalizând peste 3,6 km, viaducte și o gară nouă Kasina Wielka Północna. PLK o numește ultima parte a liniei 104 reconstruite care se construiește pe un traseu nou. Licitația a fost lansată la 30 aprilie 2026 și nu este înregistrat niciun contract. Se desenează doar tronsonul liniei 623, din căi OpenStreetMap etichetate ca proiectate (10,8 km, cu 17% mai puțin decât cei 13 km din sursă), inclusiv 1,4 km din linia 622 de la gara Szczyrzyc până la ramificația liniei 623; legătura nu apare în datele OpenStreetMap folosite."
+      },
+      "sourceRefs": [
+        "plk-pp-2026-04-30",
+        "osm-lines-104-622"
+      ],
+      "geometryRef": "fornale-szczyrzyc"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plk-pp-about",
+      "title": "PKP PLK: Linia 104 i „Podłęże – Piekiełko”, O inwestycji",
+      "url": "https://podleze-piekielko.pl/o-inwestycji/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2023-05-11",
+      "title": "PKP PLK: Chabówka - Nowy Sącz. Nowe możliwości kolei w Małopolsce (11.05.2023)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/chabowka-nowy-sacz-nowe-mozliwosci-kolei-w-malopolsce-id25/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2023-09-08",
+      "title": "PKP PLK: Modernizacja linii Chabówka - Nowy Sącz, nowe możliwości dla podróżnych i mieszkańców (08.09.2023)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/modernizacja-linii-chabowka-nowy-sacz-nowe-mozliwosci-dla-podroznych-i-mieszkancow-id26/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2023-10-13",
+      "title": "PKP PLK: Podłęże – Piekiełko: rozpędzamy projekt! (13.10.2023)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-rozpedzamy-projekt-id27/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2024-03-08",
+      "title": "PKP PLK: Tunel kolejowy pod górami usprawni przejazd pomiędzy Limanową a Nowym Sączem (08.03.2024)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/tunel-kolejowy-pod-gorami-usprawni-przejazd-pomiedzy-limanowa-a-nowym-saczem-id28/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2024-07-29",
+      "title": "PKP PLK: Nowoczesna kolej w Limanowej (29.07.2024)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/nowoczesna-kolej-w-limanowej-id29/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2024-12-31",
+      "title": "PKP PLK: Podłęże-Piekiełko: Jest kolejny przetarg na modernizację linii kolejowej Chabówka – Nowy Sącz (31.12.2024)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-jest-kolejny-przetarg-na-modernizacje-linii-kolejowej-chabowka-nowy-sacz-id33/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2025-01-18",
+      "title": "PKP PLK: Podłęże-Piekiełko: Z Krakowa do Gdowa w okamgnieniu (18.01.2025)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-z-krakowa-do-gdowa-w-okamgnieniu-id34/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2025-02-17",
+      "title": "PKP PLK: W Limanowej rządzić będzie kolej! (17.02.2025)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/w-limanowej-rzadzic-bedzie-kolej-id35/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2025-08-11",
+      "title": "PKP PLK: Prawie 3 miliardy złotych na walkę z wykluczeniem komunikacyjnym na południowym wschodzie Polski (11.08.2025)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/prawie-3-miliardy-zlotych-na-walke-z-wykluczeniem-komunikacyjnym-na-poludniowym-wschodzie-polski-id43/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2025-08-29",
+      "title": "PKP PLK: Podłęże-Piekiełko: Pierwszy odcinek inwestycji gotowy – pociągi wracają do Rabki (29.08.2025)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-pierwszy-odcinek-inwestycji-gotowy-pociagi-wracaja-do-rabki-id44/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2025-10-06",
+      "title": "PKP PLK: Powstanie pierwszy odcinek nowej linii kolejowej w ramach inwestycji „Podłęże-Piekiełko” (06.10.2025)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/powstanie-pierwszy-odcinek-nowej-linii-kolejowej-w-ramach-inwestycji-podleze-piekielko-id46/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2025-12-13",
+      "title": "PKP PLK: Podłęże-Piekiełko: Stacja Rabka Zaryte gotowa (13.12.2025)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-stacja-rabka-zaryte-gotowa-pociagi-wracaja-na-pierwszy-odcinek-modernizowanej-linii-kolejowej-chabowka-nowy-sacz-id49/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2026-03-06",
+      "title": "PKP PLK: Podłęże-Piekiełko: Nowoczesna kolej połączy Kraków z Gdowem (06.03.2026)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-nowoczesna-kolej-polaczy-krakow-z-gdowem-id51/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2026-03-12",
+      "title": "PKP PLK: Tunel i estakada połączą kolejowo Tymbark z Limanową (12.03.2026)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/tunel-i-estakada-polacza-kolejowo-tymbark-z-limanowa-id52/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2026-04-14",
+      "title": "PKP PLK: Podłęże-Piekiełko: pierwszy tunel kolejowy wydrążony (14.04.2026)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-pierwszy-tunel-kolejowy-wydrazony-id54/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2026-04-30",
+      "title": "PKP PLK: Tunelami pod górami: z Kasiny Wielkiej do Krakowa (30.04.2026)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/tunelami-pod-gorami-z-kasiny-wielkiej-do-krakowa-id55/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2026-06-15",
+      "title": "PKP PLK: #NaszaKolej. Krajowy Plan Odbudowy przywraca kolej na Sądecczyźnie (15.06.2026)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/naszakolej-krajowy-plan-odbudowy-przywraca-kolej-na-sadecczyznie-id56/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2026-06-30",
+      "title": "PKP PLK: Podłęże-Piekiełko: Szczyrzyc zwieńczy dzieło – ostatni przetarg ogłoszony (30.06.2026)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/podleze-piekielko-szczyrzyc-zwienczy-dzielo-ostatni-przetarg-ogloszony-id57/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-pp-2026-08-10",
+      "title": "PKP PLK: Dzięki KPO kolej zmieniła Limanową (10.08.2026)",
+      "url": "https://podleze-piekielko.pl/wazne-wydarzenia/dzieki-kpo-kolej-zmienila-limanowa-id58/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-104",
+      "title": "Wikipedia (pl): Linia kolejowa nr 104",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_104",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plwiki-622",
+      "title": "Wikipedia (pl): Linia kolejowa nr 622",
+      "url": "https://pl.wikipedia.org/wiki/Linia_kolejowa_nr_622",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-lines-104-622",
+      "title": "OpenStreetMap contributors (ODbL): railway ways with ref 104, 622 and 623 (rail, construction, proposed), via Overpass 2026-10-09 and 2026-10-10",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
