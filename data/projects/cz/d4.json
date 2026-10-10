@@ -1,0 +1,907 @@
+{
+  "id": "cz-d4",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D4 motorway (Praha – Příbram – Písek)",
+    "ro": "Autostrada D4 (Praga – Příbram – Písek)"
+  },
+  "description": {
+    "en": "Czechia's D4 runs south-west from Jíloviště, where it meets I/4 from Prague, to Nová Hospoda at the I/20 near Písek, about 75 km. The state built the sections from Jíloviště (Jíloviště – Varadov, opened 1971) to Skalka by 1989 and added Skalka – II/118 in October 2017. Háje – Mirotice (32 km of new construction and widening) was built under the first Czech PPP, the Via Salis concession: Via Salis s.r.o. (formerly DIVia D4, Vinci and Meridiam in equal shares) finances and operates it, Eurovia CS builds it, and the state pays availability payments. The winning bid was 16.55 billion CZK discounted to 1 January 2020 and 31.95 billion CZK nominal to 2049 (Zdopravy.cz); these are payments over the concession, not a construction cost, so no cost is recorded for those lots. The section opened on 17 December 2024. Via Salis also operates 16 km of D4 and I/20 that were already built. Praha – Jíloviště (9 km, I/4) is not a motorway and is not drawn. Dates of the older sections are years from the cs.wikipedia table.",
+    "ro": "D4 din Cehia merge spre sud-vest de la Jíloviště, unde se leagă de I/4 dinspre Praga, până la Nová Hospoda pe I/20 lângă Písek, circa 75 km. Statul a construit sectoarele de la Jíloviště (Jíloviště – Varadov, deschis în 1971) până la Skalka până în 1989 și a adăugat Skalka – II/118 în octombrie 2017. Háje – Mirotice (32 km de construcție nouă și lărgire) a fost construit prin primul PPP ceh, concesiunea Via Salis: Via Salis s.r.o. (fostă DIVia D4, Vinci și Meridiam în părți egale) finanțează și exploatează, Eurovia CS construiește, iar statul plătește plăți de disponibilitate. Oferta câștigătoare a fost 16,55 miliarde CZK actualizat la 1 ianuarie 2020 și 31,95 miliarde CZK nominal până în 2049 (Zdopravy.cz); sunt plăți pe durata concesiunii, nu un cost de construcție, deci pentru aceste loturi nu se înregistrează cost. Sectorul a fost deschis la 17 decembrie 2024. Via Salis exploatează și 16 km de D4 și I/20 deja construiți. Praha – Jíloviště (9 km, I/4) nu este autostradă și nu este desenat. Datele sectoarelor vechi sunt ani din tabelul de pe cs.wikipedia."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "jiloviste-varadov",
+      "name": {
+        "en": "Jíloviště – Varadov",
+        "ro": "Jíloviště – Varadov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1969",
+        "opened": "1971"
+      },
+      "lengthKm": 2,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1969",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1971",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Cut between the Jíloviště (exit 9) and Řitka (exit 14) junctions, proportional to this section and the Řitka bypass; Varadov is not a mapped junction. The table's two lengths sum to 6.2 km, against about 5.0 km between the two junctions; the sourced length is kept.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Tăiat între nodurile Jíloviště (ieșirea 9) și Řitka (ieșirea 14), proporțional cu acest sector și cu ocolitoarea Řitka; Varadov nu este un nod cartografiat. Cele două lungimi din tabel însumează 6,2 km, față de circa 5,0 km între cele două noduri; se păstrează lungimea din sursă."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jiloviste-varadov"
+    },
+    {
+      "id": "ritka-bypass",
+      "name": {
+        "en": "Řitka bypass",
+        "ro": "Ocolitoarea Řitka"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1971",
+        "opened": "1978"
+      },
+      "lengthKm": 4.2,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1971",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1978",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Ends at the Řitka junction (exit 14); the cut with Jíloviště – Varadov is proportional (see that lot). Drawn length about 3.4 km against 4.2 km in the table; the sourced length is kept.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Se termină la nodul Řitka (ieșirea 14); tăietura cu Jíloviště – Varadov este proporțională (vezi acel lot). Lungimea desenată este de circa 3,4 km față de 4,2 km în tabel; se păstrează lungimea din sursă."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ritka-bypass"
+    },
+    {
+      "id": "ritka-mnisek",
+      "name": {
+        "en": "Řitka – Mníšek pod Brdy",
+        "ro": "Řitka – Mníšek pod Brdy"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978",
+        "opened": "1982"
+      },
+      "lengthKm": 3.1,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1978",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1982",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Runs between the Řitka (exit 14) and Mníšek pod Brdy (exit 18) junctions.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Merge între nodurile Řitka (ieșirea 14) și Mníšek pod Brdy (ieșirea 18)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ritka-mnisek"
+    },
+    {
+      "id": "mnisek-kytin",
+      "name": {
+        "en": "Mníšek pod Brdy – Kytín",
+        "ro": "Mníšek pod Brdy – Kytín"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1976",
+        "opened": "1980"
+      },
+      "lengthKm": 3.1,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1976",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1980",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Runs between the Mníšek pod Brdy (exit 18) and Kytín (exit 21) junctions. Drawn length about 4.0 km against 3.1 km here (3.2 km in the article text); the sourced length is kept.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Merge între nodurile Mníšek pod Brdy (ieșirea 18) și Kytín (ieșirea 21). Lungimea desenată este de circa 4,0 km față de 3,1 km aici (3,2 km în textul articolului); se păstrează lungimea din sursă."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mnisek-kytin"
+    },
+    {
+      "id": "kytin-voznice",
+      "name": {
+        "en": "Kytín – Voznice",
+        "ro": "Kytín – Voznice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1975",
+        "opened": "1981"
+      },
+      "lengthKm": 3.5,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1975",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1981",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Runs between the Kytín (exit 21) and Voznice (exit 24) junctions. Drawn length about 2.7 km against 3.5 km in the table; the sourced length is kept.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Merge între nodurile Kytín (ieșirea 21) și Voznice (ieșirea 24). Lungimea desenată este de circa 2,7 km față de 3,5 km în tabel; se păstrează lungimea din sursă."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "kytin-voznice"
+    },
+    {
+      "id": "voznice-dobris",
+      "name": {
+        "en": "Voznice – Kodetka and Dobříš relocation",
+        "ro": "Voznice – Kodetka și varianta Dobříš"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1980",
+        "opened": "1986"
+      },
+      "lengthKm": 5.3,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1980",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1986",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Merges Voznice – Kodetka (2.1 km, started 1980) and the Dobříš relocation (3.2 km, started 1982), which the table gives the same opening year; the length is the sum. Starts at the Voznice junction (exit 24). The end is proportional between the Dobříš-sever (exit 27) and Dobříš-jih (exit 32) junctions, using the table lengths of the relocation and Dobříš – Obořiště. The article's prose gives 1983 for the Dobříš – Voznice link; the table's year is recorded.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Reunește Voznice – Kodetka (2,1 km, început în 1980) și varianta Dobříš (3,2 km, început în 1982), pentru care tabelul dă același an de deschidere; lungimea este suma. Începe la nodul Voznice (ieșirea 24). Capătul este proporțional între nodurile Dobříš-sever (ieșirea 27) și Dobříš-jih (ieșirea 32), după lungimile din tabel ale variantei și ale sectorului Dobříš – Obořiště. Textul articolului indică 1983 pentru legătura Dobříš – Voznice; se înregistrează anul din tabel."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "voznice-dobris"
+    },
+    {
+      "id": "dobris-oboriste",
+      "name": {
+        "en": "Dobříš – Obořiště",
+        "ro": "Dobříš – Obořiště"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978",
+        "opened": "1983"
+      },
+      "lengthKm": 2.8,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1978",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1983",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Ends at the Dobříš-jih junction (exit 32), which the table lists in this row; the start is the proportional cut described under the Voznice – Dobříš lot.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Se termină la nodul Dobříš-jih (ieșirea 32), pe care tabelul îl listează în acest rând; începutul este tăietura proporțională descrisă la lotul Voznice – Dobříš."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dobris-oboriste"
+    },
+    {
+      "id": "oboriste-relocation",
+      "name": {
+        "en": "Obořiště relocation",
+        "ro": "Variantă Obořiště"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1977",
+        "opened": "1980"
+      },
+      "lengthKm": 3.7,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1977",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1980",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Cut proportional to the table lengths between the Dobříš-jih (exit 32) and Skalka (exit 41) junctions; there is no mapped junction at Obořiště or Dlouhá Lhota.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Tăiat proporțional cu lungimile din tabel între nodurile Dobříš-jih (ieșirea 32) și Skalka (ieșirea 41); la Obořiště și Dlouhá Lhota nu există un nod cartografiat."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "oboriste-relocation"
+    },
+    {
+      "id": "dlouha-lhota-relocation",
+      "name": {
+        "en": "Dlouhá Lhota relocation",
+        "ro": "Variantă Dlouhá Lhota"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1979",
+        "opened": "1981"
+      },
+      "lengthKm": 2.9,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1979",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1981",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Cut proportional to the table lengths between the Dobříš-jih (exit 32) and Skalka (exit 41) junctions; there is no mapped junction at Obořiště or Dlouhá Lhota.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Tăiat proporțional cu lungimile din tabel între nodurile Dobříš-jih (ieșirea 32) și Skalka (ieșirea 41); la Obořiště și Dlouhá Lhota nu există un nod cartografiat."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dlouha-lhota-relocation"
+    },
+    {
+      "id": "dlouha-lhota-skalka",
+      "name": {
+        "en": "Dlouhá Lhota – Skalka",
+        "ro": "Dlouhá Lhota – Skalka"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1986",
+        "opened": "1989"
+      },
+      "lengthKm": 1.8,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1986",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "1989",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Dates (years) and length from the cs.wikipedia section table; no ŘSD leaflet covers this section. Ends at the Skalka junction (exit 41); the start is the proportional cut between the Dobříš-jih and Skalka junctions.",
+        "ro": "Anii și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; nicio fișă ŘSD nu acoperă acest sector. Se termină la nodul Skalka (ieșirea 41); începutul este tăietura proporțională între nodurile Dobříš-jih și Skalka."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dlouha-lhota-skalka"
+    },
+    {
+      "id": "skalka-ii118",
+      "name": {
+        "en": "Skalka – II/118 (Dubenec bypass)",
+        "ro": "Skalka – II/118 (Dubenec bypass)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2015-04-01",
+        "opened": "2017-10-04"
+      },
+      "lengthKm": 4.788,
+      "profile": {
+        "designSpeedKmh": 80
+      },
+      "contract": {
+        "value": {
+          "amount": 417.49,
+          "currency": "CZK",
+          "year": 2015,
+          "note": "Contract price without VAT, as stated in the leaflet. Signing date not stated; price year taken as the year works started."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Skanska a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Valbek spol. s r.o.",
+          "role": "designer"
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2015-04-01",
+          "sourceRef": "rsd-leaflet-s7"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-10-04",
+          "sourceRef": "rsd-leaflet-s7"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S7, 4788 m, category R 22.5/80. Four-lane motorway that replaced the two-lane I/4 and bypasses Dubenec; the existing carriageway is reused as one of the two. Leaflet: 'Stavba byla slavnostně zahájena 1. dubna 2015'. Valbek is the leaflet's 'Zpracovatel DSP' (permit design). Starts at the OSM Skalka junction (leaflet km 41.115); this and the later cuts scale the official lengths over the drawn line.",
+        "ro": "Stavba ŘSD S7, 4788 m, categoria R 22,5/80. Autostradă cu patru benzi care a înlocuit drumul I/4 cu două benzi și ocolește Dubenec; carosabilul existent este refolosit ca una dintre cele două căi. Fișa: „Stavba byla slavnostně zahájena 1. dubna 2015”. Valbek este „Zpracovatel DSP” din fișă (proiectul pentru autorizație). Începe la nodul OSM Skalka (km 41,115 din fișă); această tăietură și cele următoare scalează lungimile oficiale pe axul desenat."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s7",
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "skalka-ii118"
+    },
+    {
+      "id": "ii118-milin",
+      "name": {
+        "en": "II/118 (Háje) – Milín",
+        "ro": "II/118 (Háje) – Milín"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-02-15",
+        "constructionStart": "2021-06",
+        "opened": "2024-12-17"
+      },
+      "lengthKm": 5.46,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "contractors": [
+        {
+          "name": "Via Salis s.r.o. (formerly DIVia D4 s.r.o.)",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-02-15",
+          "note": {
+            "en": "Concession agreement signed.",
+            "ro": "Contract de concesiune semnat."
+          },
+          "sourceRef": "zdopravy-ppp-signed"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-06",
+          "sourceRef": "rsd-leaflet-s8"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-17",
+          "sourceRef": "rsd-leaflet-s8"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S8, 5460 m, part of the Via Salis PPP concession (signed 15 February 2021, construction from June 2021). Opened 17 December 2024. The state pays the concessionaire availability payments over the concession; they are not a construction cost and are not recorded as one. Eurovia CS is named as builder for the project as a whole. Widens the former I/4 by two lanes into a motorway; includes the Milín junction. Via Salis lists it as section 2, Háje – Milín.",
+        "ro": "Stavba ŘSD S8, 5460 m, parte din concesiunea PPP Via Salis (semnată la 15 februarie 2021, construcție din iunie 2021). Deschis la 17 decembrie 2024. Statul plătește concesionarului plăți de disponibilitate pe durata concesiunii; ele nu sunt un cost de construcție și nu sunt înregistrate ca atare. Eurovia CS este numită constructor pentru întregul proiect. Lărgește fosta I/4 cu două benzi într-o autostradă; include nodul Milín. Via Salis o listează ca secțiunea 2, Háje – Milín."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s8",
+        "viasalis",
+        "zdopravy-ppp-signed",
+        "zdopravy-ppp-winner",
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "ii118-milin"
+    },
+    {
+      "id": "milin-lety",
+      "name": {
+        "en": "Milín – Lety",
+        "ro": "Milín – Lety"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-02-15",
+        "constructionStart": "2021-06",
+        "opened": "2024-12-17"
+      },
+      "lengthKm": 11.6,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "contractors": [
+        {
+          "name": "Via Salis s.r.o. (formerly DIVia D4 s.r.o.)",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-02-15",
+          "note": {
+            "en": "Concession agreement signed.",
+            "ro": "Contract de concesiune semnat."
+          },
+          "sourceRef": "zdopravy-ppp-signed"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-06",
+          "sourceRef": "rsd-leaflet-s9"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-17",
+          "sourceRef": "rsd-leaflet-s9"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba S9, 11600 m, part of the Via Salis PPP concession (signed 15 February 2021, construction from June 2021). Opened 17 December 2024. The state pays the concessionaire availability payments over the concession; they are not a construction cost and are not recorded as one. Eurovia CS is named as builder for the project as a whole. Includes the Chraštice and Zalužany bypass and the Těchařovice junction. Via Salis: 'Výstavba zcela nového úseku dálnice D4'.",
+        "ro": "Stavba ŘSD S9, 11600 m, parte din concesiunea PPP Via Salis (semnată la 15 februarie 2021, construcție din iunie 2021). Deschis la 17 decembrie 2024. Statul plătește concesionarului plăți de disponibilitate pe durata concesiunii; ele nu sunt un cost de construcție și nu sunt înregistrate ca atare. Eurovia CS este numită constructor pentru întregul proiect. Include ocolitoarea Chraštice și Zalužany și nodul Těchařovice. Via Salis: „Výstavba zcela nového úseku dálnice D4”."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-s9",
+        "viasalis",
+        "zdopravy-ppp-signed",
+        "zdopravy-ppp-winner",
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "milin-lety"
+    },
+    {
+      "id": "lety-cimelice",
+      "name": {
+        "en": "Lety – Čimelice",
+        "ro": "Lety – Čimelice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-02-15",
+        "constructionStart": "2021-06",
+        "opened": "2024-12-17"
+      },
+      "lengthKm": 2.59,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "contractors": [
+        {
+          "name": "Via Salis s.r.o. (formerly DIVia D4 s.r.o.)",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-02-15",
+          "note": {
+            "en": "Concession agreement signed.",
+            "ro": "Contract de concesiune semnat."
+          },
+          "sourceRef": "zdopravy-ppp-signed"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-06",
+          "sourceRef": "rsd-leaflet-c11"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-17",
+          "sourceRef": "rsd-leaflet-c11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba C11, 2590 m, part of the Via Salis PPP concession (signed 15 February 2021, construction from June 2021). Opened 17 December 2024. The state pays the concessionaire availability payments over the concession; they are not a construction cost and are not recorded as one. Eurovia CS is named as builder for the project as a whole. Widens the former I/4 into a motorway and adds the Lety junction with I/19.",
+        "ro": "Stavba ŘSD C11, 2590 m, parte din concesiunea PPP Via Salis (semnată la 15 februarie 2021, construcție din iunie 2021). Deschis la 17 decembrie 2024. Statul plătește concesionarului plăți de disponibilitate pe durata concesiunii; ele nu sunt un cost de construcție și nu sunt înregistrate ca atare. Eurovia CS este numită constructor pentru întregul proiect. Lărgește fosta I/4 într-o autostradă și adaugă nodul Lety cu I/19."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-c11",
+        "viasalis",
+        "zdopravy-ppp-signed",
+        "zdopravy-ppp-winner",
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lety-cimelice"
+    },
+    {
+      "id": "cimelice-mirotice",
+      "name": {
+        "en": "Čimelice – Mirotice",
+        "ro": "Čimelice – Mirotice"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-02-15",
+        "constructionStart": "2021-06",
+        "opened": "2024-12-17"
+      },
+      "lengthKm": 8.46,
+      "profile": {
+        "designSpeedKmh": 120
+      },
+      "contractors": [
+        {
+          "name": "Via Salis s.r.o. (formerly DIVia D4 s.r.o.)",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Eurovia CS",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-02-15",
+          "note": {
+            "en": "Concession agreement signed.",
+            "ro": "Contract de concesiune semnat."
+          },
+          "sourceRef": "zdopravy-ppp-signed"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-06",
+          "sourceRef": "rsd-leaflet-c12"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-17",
+          "sourceRef": "rsd-leaflet-c12"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba C12, 8460 m, part of the Via Salis PPP concession (signed 15 February 2021, construction from June 2021). Opened 17 December 2024. The state pays the concessionaire availability payments over the concession; they are not a construction cost and are not recorded as one. Eurovia CS is named as builder for the project as a whole. Čimelice bypass, the longest bridge of the new motorway, a monolithic bridge over the Skalice river (Via Salis) and two opposed rest areas at Krsice. Via Salis: 'Výstavba zcela nového úseku dálnice D4'.",
+        "ro": "Stavba ŘSD C12, 8460 m, parte din concesiunea PPP Via Salis (semnată la 15 februarie 2021, construcție din iunie 2021). Deschis la 17 decembrie 2024. Statul plătește concesionarului plăți de disponibilitate pe durata concesiunii; ele nu sunt un cost de construcție și nu sunt înregistrate ca atare. Eurovia CS este numită constructor pentru întregul proiect. Ocolitoarea Čimelice, cel mai lung pod al noii autostrăzi, un pod monolit peste râul Skalice (Via Salis) și două parcări opuse la Krsice. Via Salis: „Výstavba zcela nového úseku dálnice D4”."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-c12",
+        "viasalis",
+        "zdopravy-ppp-signed",
+        "zdopravy-ppp-winner",
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "cimelice-mirotice"
+    },
+    {
+      "id": "mirotice-bypass",
+      "name": {
+        "en": "Mirotice bypass (half profile, widened 2024)",
+        "ro": "Ocolitoarea Mirotice (profil redus, lărgită 2024)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1984",
+        "opened": "1985"
+      },
+      "lengthKm": 3.645,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "contractors": [
+        {
+          "name": "Via Salis s.r.o. (formerly DIVia D4 s.r.o.)",
+          "role": "concessionaire"
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1984",
+          "sourceRef": "rsd-leaflet-c13"
+        },
+        {
+          "kind": "opened",
+          "date": "1985",
+          "sourceRef": "rsd-leaflet-c13"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba C13 'Mirotice, rozšíření', 3645 m. The bypass, the left half of the future motorway (category S 11.5/80), was built in 1984–1985 and has been open at half profile since 1985. The Via Salis PPP added the second half (construction from June 2021, category D 25.5/100) and it opened as a motorway on 17 December 2024. That widening is recorded here and not as a second lot, because the kilometres are the same. Concessionaire from the leaflet; concession payments are availability payments, not a construction cost.",
+        "ro": "Stavba ŘSD C13 „Mirotice, rozšíření”, 3645 m. Ocolitoarea, jumătatea stângă a viitoarei autostrăzi (categoria S 11,5/80), a fost construită în 1984–1985 și este deschisă în profil redus din 1985. PPP Via Salis a adăugat a doua jumătate (construcție din iunie 2021, categoria D 25,5/100), iar ea a fost deschisă ca autostradă la 17 decembrie 2024. Lărgirea este consemnată aici și nu ca al doilea lot, deoarece kilometrii sunt aceiași. Concesionar conform fișei; plățile de concesiune sunt plăți de disponibilitate, nu un cost de construcție."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-c13",
+        "viasalis",
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mirotice-bypass"
+    },
+    {
+      "id": "mirotice-trebkov",
+      "name": {
+        "en": "Mirotice – Třebkov",
+        "ro": "Mirotice – Třebkov"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2010-09-17"
+      },
+      "lengthKm": 5.9,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-09-17",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "Length, start year and opening from the cs.wikipedia section table and text: ceremonial opening on 16 September 2010, open to the public the next day. Category R 22.5/100. Cut at a distance proportional to the sourced lengths, not at a mapped junction.",
+        "ro": "Lungimea, anul începerii și deschiderea provin din tabelul și textul de pe cs.wikipedia: deschidere festivă la 16 septembrie 2010, deschis publicului a doua zi. Categoria R 22,5/100. Tăiat la o distanță proporțională cu lungimile din sursă, nu la un nod cartografiat."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "mirotice-trebkov"
+    },
+    {
+      "id": "nova-hospoda",
+      "name": {
+        "en": "Nová Hospoda junction with I/20",
+        "ro": "Nodul Nová Hospoda cu I/20"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-09",
+        "opened": "2007-11-19"
+      },
+      "lengthKm": 0.8,
+      "profile": {
+        "designSpeedKmh": 100
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-09",
+          "sourceRef": "cs-wikipedia-d4"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-11-19",
+          "sourceRef": "cs-wikipedia-d4"
+        }
+      ],
+      "note": {
+        "en": "About 800 m with the grade-separated junction with I/20; the motorway ends here and continues as the four-lane I/20. Start month from the section table, opening date from the article text ('ke zprovoznění úseku došlo 19. listopadu 2007').",
+        "ro": "Circa 800 m cu nodul denivelat cu I/20; autostrada se termină aici și continuă ca I/20 cu patru benzi. Luna începerii provine din tabelul secțiunilor, data deschiderii din textul articolului („ke zprovoznění úseku došlo 19. listopadu 2007”)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d4",
+        "osm-relation-d4",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nova-hospoda"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wikipedia-d4",
+      "title": "Wikipedia (cs): Dálnice D4, Přehled úseků and PPP",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D4",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s7",
+      "title": "ŘSD leaflet: D4 Skalka–křižovatka II/118 (stavba S7)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/66/leaflet/infoletak_d4-skalka-s118.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s8",
+      "title": "ŘSD leaflet: D4 Háje–Milín (stavba S8)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/70/leaflet/infoletak_d4-haje-milin.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-s9",
+      "title": "ŘSD leaflet: D4 Milín–Lety (stavba S9)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/69/leaflet/infoletak_d4-milin-lety.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-c11",
+      "title": "ŘSD leaflet: D4 Lety–Čimelice (stavba C11)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/71/leaflet/infoletak_d4-lety-cimelice.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-c12",
+      "title": "ŘSD leaflet: D4 Čimelice–Mirotice (stavba C12)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/67/leaflet/infoletak_d4-cimelice-mirotice.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-c13",
+      "title": "ŘSD leaflet: D4 Mirotice, rozšíření (stavba C13)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/68/leaflet/infoletak_d4-mirotice-rozsireni.pdf",
+      "publisher": "Ředitelství silnic a dálnic ČR",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "viasalis",
+      "title": "Via Salis: 32 km nové a 16 km modernizované dálnice, sections 2 to 6",
+      "url": "https://www.viasalis.cz/",
+      "publisher": "Via Salis s.r.o.",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zdopravy-ppp-signed",
+      "title": "Zdopravy.cz: Podepsáno, dálnici D4 dostaví francouzské sdružení (15 Feb 2021)",
+      "url": "https://zdopravy.cz/podepsano-dalnici-d4-dostavi-francouzske-sdruzeni-dalsi-ppp-projekt-necha-havlicek-na-nove-vlade-73632/",
+      "publisher": "Zdopravy.cz",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "zdopravy-ppp-winner",
+      "title": "Zdopravy.cz: První dálniční projekt PPP má vítěze. Dálnici D4 postaví Eurovia (9 Dec 2020)",
+      "url": "https://zdopravy.cz/prvni-dalnicni-projekt-ppp-ma-viteze-dalnici-d4-postavi-eurovia-68295/",
+      "publisher": "Zdopravy.cz",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-relation-d4",
+      "title": "OpenStreetMap: relation 295545, D4 (network CZ:national)",
+      "url": "https://www.openstreetmap.org/relation/295545",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}

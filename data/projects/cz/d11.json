@@ -1,0 +1,935 @@
+{
+  "id": "cz-d11",
+  "country": "cz",
+  "category": "highway",
+  "name": {
+    "en": "D11 motorway (Praha – Hradec Králové – Jaroměř – Trutnov – Polish border)",
+    "ro": "Autostrada D11 (Praga – Hradec Králové – Jaroměř – Trutnov – granița cu Polonia)"
+  },
+  "description": {
+    "en": "Czechia's Hradec motorway (Hradecká dálnice), drawn from the D0 junction at Horní Počernice to the Polish border at Královec, where it meets Poland's S3. Praha – Jirny opened in 1984, the section to Sadská in 1985, to Libice nad Cidlinou in 1990, to Osičky in 2005–2006, on towards Hradec Králové in December 2006 and December 2008, to Kukleny in August 2017, and Hradec Králové – Jaroměř in December 2021. Jaroměř – Trutnov (1108, under construction since April 2026) and Trutnov – Polish border (1109, in two stages, since October 2024) are the unfinished part; the 1109 border stage is expected to open in the fourth quarter of 2026. Lots follow the cs.wikipedia section table and the ŘSD leaflets; stavba 1105-2 is split at the chainage the leaflet gives for its parts. Between Sedlice and Plotiště the D11 shares its route with the D35. The planned widening of Praha – Jirny and Jirny – Poděbrady to six lanes rebuilds open carriageways and is not a lot.",
+    "ro": "Autostrada Hradec a Cehiei (Hradecká dálnice), desenată de la nodul cu D0 de la Horní Počernice până la granița cu Polonia la Královec, unde se leagă de S3 poloneză. Praga – Jirny a fost deschis în 1984, sectorul până la Sadská în 1985, până la Libice nad Cidlinou în 1990, până la Osičky în 2005–2006, spre Hradec Králové în decembrie 2006 și decembrie 2008, până la Kukleny în august 2017, iar Hradec Králové – Jaroměř în decembrie 2021. Jaroměř – Trutnov (1108, în construcție din aprilie 2026) și Trutnov – granița cu Polonia (1109, în două etape, din octombrie 2024) sunt partea nefinalizată; etapa de graniță 1109 este așteptată în trimestrul 4 din 2026. Loturile urmează tabelul secțiunilor de pe cs.wikipedia și fișele ŘSD; construcția 1105-2 este împărțită la kilometrajul dat în fișă pentru părțile sale. Între Sedlice și Plotiště, D11 are traseu comun cu D35. Lărgirea planificată la șase benzi pe Praga – Jirny și Jirny – Poděbrady reface benzi deja deschise și nu este un lot."
+  },
+  "operator": "cz-rsd",
+  "lots": [
+    {
+      "id": "praha-jirny",
+      "name": {
+        "en": "Praha – Jirny",
+        "ro": "Praha – Jirny"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978-09",
+        "opened": "1984-10"
+      },
+      "lengthKm": 8.32,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1978-09",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "1984-10",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1101. Dates and length from the cs.wikipedia section table (category D34/120, the widest part of the D11). Starts at the D0 junction at Horní Počernice; cut at the Jirny junction.",
+        "ro": "Construcția ŘSD 1101. Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia (categoria D34/120, cel mai lat sector al D11). Începe la nodul cu D0 de la Horní Počernice; tăiat la nodul Jirny."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "praha-jirny"
+    },
+    {
+      "id": "jirny-bristvi",
+      "name": {
+        "en": "Jirny – Bříství",
+        "ro": "Jirny – Bříství"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1980-03",
+        "opened": "1984-10"
+      },
+      "lengthKm": 10.18,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1980-03",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "1984-10",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1102/I. Dates and length from the cs.wikipedia section table; cut at the Jirny and Bříství junctions.",
+        "ro": "Construcția ŘSD 1102/I. Datele și lungimea provin din tabelul secțiunilor de pe cs.wikipedia; tăiat la nodurile Jirny și Bříství."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jirny-bristvi"
+    },
+    {
+      "id": "bristvi-sadska",
+      "name": {
+        "en": "Bříství – Sadská",
+        "ro": "Bříství – Sadská"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1980-03",
+        "opened": "1985-10"
+      },
+      "lengthKm": 8.2,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1980-03",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "1985-10",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1102/II, listed on cs.wikipedia as Bříství–Třebestovice. Dates and length from the section table. Cut at the Sadská junction, the nearest junction node; the drawn centreline is 7.18 km, 12% shorter than the recorded 8.2 km, and the recorded length is kept.",
+        "ro": "Construcția ŘSD 1102/II, listată pe cs.wikipedia ca Bříství–Třebestovice. Datele și lungimea provin din tabelul secțiunilor. Tăiat la nodul Sadská, cel mai apropiat nod; axul desenat măsoară 7,18 km, cu 12% mai puțin decât cei 8,2 km înregistrați, iar lungimea înregistrată este păstrată."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "bristvi-sadska"
+    },
+    {
+      "id": "sadska-libice",
+      "name": {
+        "en": "Sadská – Libice nad Cidlinou",
+        "ro": "Sadská – Libice nad Cidlinou"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1985-04",
+        "opened": "1990-11"
+      },
+      "lengthKm": 15.3,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1985-04",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "1990-11",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1103, listed on cs.wikipedia as Třebestovice–Libice nad Cidlinou, with the Poděbrady-západ, -jih and -východ exits. Dates and length from the section table. Cut at the Sadská and Libice junctions; the drawn centreline is 15.9 km. The D11 stayed 42 km long for the next 16 years.",
+        "ro": "Construcția ŘSD 1103, listată pe cs.wikipedia ca Třebestovice–Libice nad Cidlinou, cu ieșirile Poděbrady-západ, -jih și -východ. Datele și lungimea provin din tabelul secțiunilor. Tăiat la nodurile Sadská și Libice; axul desenat măsoară 15,9 km. D11 a rămas lungă de 42 km încă 16 ani."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sadska-libice"
+    },
+    {
+      "id": "libice-dobsice",
+      "name": {
+        "en": "Libice nad Cidlinou – Dobšice",
+        "ro": "Libice nad Cidlinou – Dobšice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-01",
+        "opened": "2006-12-19"
+      },
+      "lengthKm": 11.538,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-01",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-12-19",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1104/I. Dates and length from the cs.wikipedia section table and text (the whole stretch from Poděbrady to before Hradec Králové opened on 19 December 2006). Cut at the Libice and Dobšice junctions, which gives 8.48 km drawn against the recorded 11.538 km (26% less). The table does not say where 1104/I ends, and 1104/I and 1104/II together draw 25.9 km against 27.5 km recorded, so the recorded length is kept and the split is the doubtful part.",
+        "ro": "Construcția ŘSD 1104/I. Datele și lungimea provin din tabelul și textul de pe cs.wikipedia (tot tronsonul de la Poděbrady până înainte de Hradec Králové a fost deschis la 19 decembrie 2006). Tăiat la nodurile Libice și Dobšice, ceea ce dă 8,48 km desenați față de 11,538 km înregistrați (cu 26% mai puțin). Tabelul nu spune unde se termină 1104/I, iar 1104/I și 1104/II împreună se desenează la 25,9 km față de 27,5 km înregistrați, deci lungimea înregistrată este păstrată, iar împărțirea este partea îndoielnică."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "libice-dobsice"
+    },
+    {
+      "id": "dobsice-chyst",
+      "name": {
+        "en": "Dobšice – Chýšť",
+        "ro": "Dobšice – Chýšť"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-08",
+        "opened": "2005-12-15"
+      },
+      "lengthKm": 15.975,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-08",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-12-15",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1104/II, the Chlumec nad Cidlinou bypass. Opened at half profile on 15 December 2005 without a well-marked link to the existing roads; the whole stretch to before Hradec Králové was in service on 19 December 2006 (cs.wikipedia text and section table). Length from the table; the drawn centreline is 17.4 km (9% more), see the note on Libice – Dobšice.",
+        "ro": "Construcția ŘSD 1104/II, ocolitoarea Chlumec nad Cidlinou. Deschis în profil redus la 15 decembrie 2005, fără o legătură bine marcată cu drumurile existente; tot tronsonul până înainte de Hradec Králové era în funcțiune la 19 decembrie 2006 (textul și tabelul de pe cs.wikipedia). Lungimea provine din tabel; axul desenat măsoară 17,4 km (cu 9% mai mult), vezi nota de la Libice – Dobšice."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "dobsice-chyst"
+    },
+    {
+      "id": "chyst-osicky",
+      "name": {
+        "en": "Chýšť – Osičky",
+        "ro": "Chýšť – Osičky"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-06",
+        "opened": "2006-12-19"
+      },
+      "lengthKm": 10.9,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-06",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-12-19",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1105/I. Dates and length from the cs.wikipedia section table and text; cut at the Chýšť junction and at km 78.91, where the ŘSD leaflet for stavba 1105-2 says the next section starts (the drawn centreline's chainage agrees with the leaflet's km 90.76 at Kukleny to 14 m).",
+        "ro": "Construcția ŘSD 1105/I. Datele și lungimea provin din tabelul și textul de pe cs.wikipedia; tăiat la nodul Chýšť și la km 78,91, unde fișa ŘSD a construcției 1105-2 spune că începe sectorul următor (kilometrajul axului desenat coincide cu km 90,76 de la Kukleny din fișă cu 14 m)."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "chyst-osicky"
+    },
+    {
+      "id": "osicky-hk-km-78-84",
+      "name": {
+        "en": "Osičky – Hradec Králové, km 78.91–84.20",
+        "ro": "Osičky – Hradec Králové, km 78.91–84.20"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-01",
+        "opened": "2006-12-19"
+      },
+      "lengthKm": 5.29,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-01",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "2006-12-19",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "First part of ŘSD stavba 1105-2, in service from December 2006 with a provisional link to road II/333 (leaflet; the cs.wikipedia text gives 19 December 2006). Construction start from the cs.wikipedia section table (the leaflet says the whole stavba began in 2004). The leaflet gives chainage but no length. Length measured from OpenStreetMap geometry.",
+        "ro": "Prima parte a construcției ŘSD 1105-2, în funcțiune din decembrie 2006 cu o legătură provizorie la drumul II/333 (fișa; textul de pe cs.wikipedia indică 19 decembrie 2006). Începutul construcției provine din tabelul de pe cs.wikipedia (fișa spune că întreaga construcție a început în 2004). Fișa dă kilometrajul, dar nu lungimea. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "rsd-leaflet-1105-2",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "osicky-hk-km-78-84"
+    },
+    {
+      "id": "osicky-hk-km-84-86",
+      "name": {
+        "en": "Osičky – Hradec Králové, km 84.20–86.46",
+        "ro": "Osičky – Hradec Králové, km 84.20–86.46"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-01",
+        "opened": "2008-12"
+      },
+      "lengthKm": 2.26,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2005-01",
+          "sourceRef": "cs-wikipedia-d11"
+        },
+        {
+          "kind": "opened",
+          "date": "2008-12",
+          "sourceRef": "cs-wikipedia-d11"
+        }
+      ],
+      "note": {
+        "en": "Second part of ŘSD stavba 1105-2, in service from December 2008 with a provisional link to road II/333 via III/32324 (leaflet; the exact day is not given). Construction start from the cs.wikipedia section table. Length measured from OpenStreetMap geometry.",
+        "ro": "A doua parte a construcției ŘSD 1105-2, în funcțiune din decembrie 2008 cu o legătură provizorie la II/333 prin III/32324 (fișa; ziua exactă nu este indicată). Începutul construcției provine din tabelul de pe cs.wikipedia. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "cs-wikipedia-d11",
+        "rsd-leaflet-1105-2",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "osicky-hk-km-84-86"
+    },
+    {
+      "id": "osicky-hk-km-86-88",
+      "name": {
+        "en": "Osičky – Hradec Králové, km 86.46–88.30",
+        "ro": "Osičky – Hradec Králové, km 86.46–88.30"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-08-21"
+      },
+      "lengthKm": 1.84,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2017-08-21",
+          "sourceRef": "rsd-leaflet-1105-2"
+        }
+      ],
+      "note": {
+        "en": "Third part of ŘSD stavba 1105-2. The leaflet says it was structurally complete in 2010 but could not be opened because the road could not be continued; it opened with the next part on 21 August 2017. Construction start not stated. Length measured from OpenStreetMap geometry.",
+        "ro": "A treia parte a construcției ŘSD 1105-2. Fișa spune că era terminată din punct de vedere constructiv în 2010, dar nu a putut fi deschisă deoarece drumul nu putea fi continuat; a fost deschisă odată cu partea următoare, la 21 august 2017. Începutul construcției nu este indicat. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-1105-2",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "osicky-hk-km-86-88"
+    },
+    {
+      "id": "osicky-hk-km-88-91",
+      "name": {
+        "en": "Osičky – Hradec Králové, km 88.30–90.76 (Kukleny)",
+        "ro": "Osičky – Hradec Králové, km 88,30–90,76 (Kukleny)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014-07",
+        "opened": "2017-08-21"
+      },
+      "lengthKm": 2.46,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "cost": {
+        "estimated": {
+          "amount": 882,
+          "currency": "CZK",
+          "note": "Excluding VAT and valorisation (\"Předpokládaná cena dostavby\"); price year not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2014-07",
+          "sourceRef": "rsd-leaflet-1105-2"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-08-21",
+          "sourceRef": "rsd-leaflet-1105-2"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "EUROVIA CS, a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Strabag a.s.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The completion of ŘSD stavba 1105-2 to the Kukleny junction, where stavba 1106 begins. The leaflet gives 2460 m, category D 27.5/120. It says 4.3 km (this part and the one before it) opened on 21 August 2017 and expects completion of the whole stavba in July 2018. No contract price is given, only the estimate, which is for this 2.46 km completion.",
+        "ro": "Finalizarea construcției ŘSD 1105-2 până la nodul Kukleny, unde începe construcția 1106. Fișa indică 2460 m, categoria D 27,5/120. Fișa spune că 4,3 km (această parte și cea dinainte) au fost deschiși la 21 august 2017 și estimează finalizarea întregii construcții în iulie 2018. Nu este dat un preț de contract, ci doar estimarea, care este pentru această finalizare de 2,46 km."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-1105-2",
+        "cs-wikipedia-d11",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "osicky-hk-km-88-91"
+    },
+    {
+      "id": "hk-smirice",
+      "name": {
+        "en": "Hradec Králové – Smiřice",
+        "ro": "Hradec Králové – Smiřice"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-10-02",
+        "opened": "2021-12-17"
+      },
+      "lengthKm": 15.2,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "contract": {
+        "value": {
+          "amount": 2593.81,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"). Signing date not stated, so no price year. An addendum of 11 February 2019 shortened the build time and raised the price; the leaflet does not say whether the figure includes it."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds; the leaflet names no programme.",
+            "ro": "Cofinanțat din fonduri UE; fișa nu numește programul."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-10-02",
+          "sourceRef": "rsd-leaflet-1106"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-17",
+          "sourceRef": "rsd-leaflet-1106"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Eurovia",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1106, category D 27.5/120, with the Plotiště and Smiřice junctions (139 construction objects, 1168 m of bridges). Construction start is the ceremonial start (cs.wikipedia gives 10/2018). Opened together with 1107 on 17 December 2021. Cut at the stavba boundary taken from the ŘSD construction map, which sits between the Smiřice and Jaroměř-jih junctions.",
+        "ro": "Construcția ŘSD 1106, categoria D 27,5/120, cu nodurile Plotiště și Smiřice (139 de obiecte de construcție, 1168 m de poduri). Începutul construcției este startul festiv (cs.wikipedia indică 10/2018). Deschis împreună cu 1107 la 17 decembrie 2021. Tăiat la limita construcției preluată din harta ŘSD a construcțiilor, situată între nodurile Smiřice și Jaroměř-jih."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-1106",
+        "cs-wikipedia-d11",
+        "rsd-stavby-map",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "hk-smirice"
+    },
+    {
+      "id": "smirice-jaromer",
+      "name": {
+        "en": "Smiřice – Jaroměř",
+        "ro": "Smiřice – Jaroměř"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-05-15",
+        "opened": "2021-12-17"
+      },
+      "lengthKm": 7.15,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 120
+      },
+      "contract": {
+        "value": {
+          "amount": 1497.74,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"). Signing date not stated, so no price year."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Co-financed from EU funds; the leaflet names no programme.",
+            "ro": "Cofinanțat din fonduri UE; fișa nu numește programul."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-05-15",
+          "sourceRef": "rsd-leaflet-1107"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-12-17",
+          "sourceRef": "rsd-leaflet-1107"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Porr a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Porr Bau GmbH",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1107, category D 27.5/120, with the Jaroměř-jih and Jaroměř-sever junctions (93 construction objects, 676 m of bridges, 6558 m of noise walls). Construction start is the ceremonial start of 15 May 2018 (cs.wikipedia gives 04/2018). The leaflet gives opening on 17 December 2021, although the 1108 leaflet says November 2021. The road ends at the Jaroměř-sever junction, where 1108 begins at km 113.370.",
+        "ro": "Construcția ŘSD 1107, categoria D 27,5/120, cu nodurile Jaroměř-jih și Jaroměř-sever (93 de obiecte de construcție, 676 m de poduri, 6558 m de ecrane fonice). Începutul construcției este startul festiv din 15 mai 2018 (cs.wikipedia indică 04/2018). Fișa indică deschiderea la 17 decembrie 2021, deși fișa 1108 spune noiembrie 2021. Drumul se termină la nodul Jaroměř-sever, unde 1108 începe la km 113,370."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-1107",
+        "cs-wikipedia-d11",
+        "rsd-leaflet-1108",
+        "rsd-stavby-map",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "smirice-jaromer"
+    },
+    {
+      "id": "jaromer-trutnov",
+      "name": {
+        "en": "Jaroměř – Trutnov (1108)",
+        "ro": "Jaroměř – Trutnov (1108)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2026-03-20",
+        "constructionStart": "2026-04-08",
+        "expectedOpening": "2029-10"
+      },
+      "lengthKm": 19.63,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "cost": {
+        "estimated": {
+          "amount": 12870,
+          "currency": "CZK",
+          "note": "Excluding VAT (\"Předpokládaná cena stavby\"); price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 9087.45,
+              "currency": "CZK",
+              "year": 2026,
+              "note": "Excluding VAT."
+            },
+            "date": "2026-03-20",
+            "sourceRef": "rsd-leaflet-1108"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 9087.45,
+          "currency": "CZK",
+          "year": 2026,
+          "note": "Excluding VAT (\"Cena stavby dle smlouvy\"); signed by ŘSD on 20 March 2026."
+        }
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-12-23",
+          "sourceRef": "rsd-leaflet-1108"
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-03-20",
+          "note": {
+            "en": "Contract signed by ŘSD; the contractor had signed earlier and ŘSD chose it in September 2025.",
+            "ro": "Contract semnat de ŘSD; constructorul îl semnase mai devreme, iar ŘSD l-a ales în septembrie 2025."
+          },
+          "sourceRef": "rsd-leaflet-1108"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-04-08",
+          "sourceRef": "rsd-leaflet-1108"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "EUROVIA CZ",
+          "role": "builder"
+        },
+        {
+          "name": "MI Roads",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav TBR",
+          "role": "builder"
+        },
+        {
+          "name": "M-SILNICE",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1108, category D 26.0/130, km 113.370–133.000, 241 construction objects including one tunnel (Kamenný vrch, left 780 m, right 756 m), 2499 m of bridges and the Choustníkovo Hradiště and Kocbeře junctions. Tender launched 23 December 2024; three bids were received by the deadline of 4 July 2025. Site handed over 1 April 2026; construction start is the ceremonial start of 8 April 2026. The leaflet expects opening in October 2029. Planning: EIA opinion of 30 June 2016, building permit of 7 October 2024.",
+        "ro": "Construcția ŘSD 1108, categoria D 26,0/130, km 113,370–133,000, 241 de obiecte de construcție, inclusiv un tunel (Kamenný vrch, stânga 780 m, dreapta 756 m), 2499 m de poduri și nodurile Choustníkovo Hradiště și Kocbeře. Licitația a fost lansată la 23 decembrie 2024; au fost depuse trei oferte până la termenul de 4 iulie 2025. Șantierul a fost predat la 1 aprilie 2026; începutul construcției este startul festiv din 8 aprilie 2026. Fișa estimează deschiderea în octombrie 2029. Planificare: aviz EIA din 30 iunie 2016, autorizație de construire din 7 octombrie 2024."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-1108",
+        "cs-wikipedia-d11",
+        "rsd-stavby-map",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "jaromer-trutnov"
+    },
+    {
+      "id": "trutnov-border-2",
+      "name": {
+        "en": "Trutnov – Polish border, 2nd stage (1109/II)",
+        "ro": "Trutnov – granița cu Polonia, etapa a 2-a (1109/II)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-10-08",
+        "constructionStart": "2024-10-11",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 17.9,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 130
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-12-19",
+          "sourceRef": "rsd-leaflet-1109-2"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-10-08",
+          "note": {
+            "en": "Contract with the contractor signed.",
+            "ro": "Contract semnat cu constructorul."
+          },
+          "sourceRef": "rsd-leaflet-1109-2"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-10-11",
+          "sourceRef": "rsd-leaflet-1109-2"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "MI Roads a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav TBR a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt",
+          "role": "builder"
+        },
+        {
+          "name": "Sdružení Valbek-Bung",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1109, 2nd stage, km 133.0–150.9, categories D 26.0/130 and D 21.5/110, with the Poříčí tunnel (540 m and 576 m), the Opevnění tunnel (2 x 492 m), the Poříčí bridge (715 m) and the Střítež and Poříčí junctions. The leaflet expects opening in 2028; this stage opens after the 1st stage. Construction start is the ceremonial start of 11 October 2024. Six bids were received by 6 September 2023. Both etapas of stavba 1109 are one contract: 11 710.02 million CZK excluding VAT, signed 8 October 2024, against an estimate of 13 068 million CZK excluding VAT. That figure covers the whole 21.2 km and is not recorded as this lot's cost.",
+        "ro": "Construcția ŘSD 1109, etapa a 2-a, km 133,0–150,9, categoriile D 26,0/130 și D 21,5/110, cu tunelul Poříčí (540 m și 576 m), tunelul Opevnění (2 x 492 m), podul Poříčí (715 m) și nodurile Střítež și Poříčí. Fișa estimează deschiderea în 2028; această etapă se deschide după prima. Începutul construcției este startul festiv din 11 octombrie 2024. Șase oferte au fost depuse până la 6 septembrie 2023. Ambele etape ale construcției 1109 sunt un singur contract: 11 710,02 milioane CZK fără TVA, semnat la 8 octombrie 2024, față de o estimare de 13 068 milioane CZK fără TVA. Cifra acoperă întreaga lungime de 21,2 km și nu este înregistrată drept costul acestui lot."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-1109-2",
+        "cs-wikipedia-d11",
+        "rsd-stavby-map",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "trutnov-border-2"
+    },
+    {
+      "id": "trutnov-border-1",
+      "name": {
+        "en": "Trutnov – Polish border, 1st stage (1109/I, border section)",
+        "ro": "Trutnov – granița cu Polonia, etapa 1 (1109/I, sectorul de graniță)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-10-08",
+        "constructionStart": "2024-10-11",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 3.275,
+      "profile": {
+        "works": "greenfield",
+        "designSpeedKmh": 110
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Co-financed from the Cohesion Fund under Programme Doprava 2021–2027 (OPD3).",
+            "ro": "Cofinanțat din Fondul de coeziune prin Programul Doprava 2021–2027 (OPD3)."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-12-19",
+          "sourceRef": "rsd-leaflet-1109-1"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-10-08",
+          "note": {
+            "en": "Contract with the contractor signed.",
+            "ro": "Contract semnat cu constructorul."
+          },
+          "sourceRef": "rsd-leaflet-1109-1"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-10-11",
+          "sourceRef": "rsd-leaflet-1109-1"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "MI Roads a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Doprastav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Metrostav TBR a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Subterra a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Duna Aszfalt",
+          "role": "builder"
+        },
+        {
+          "name": "Sdružení Valbek-Bung",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "ŘSD stavba 1109, 1st stage, the border section with the Královec junction, category D 21.5/110, 12 construction objects. It joins the Polish S3, whose last lot ends at the border. The leaflet expects opening in the 4th quarter of 2026; embankment consolidation affects the date. OpenStreetMap tags these ways as motorway with access=no and start_date 2026-11-01, which is a mapper's tag and not an official date. Construction start is the ceremonial start of 11 October 2024. Six bids were received by 6 September 2023. Both etapas of stavba 1109 are one contract: 11 710.02 million CZK excluding VAT, signed 8 October 2024, against an estimate of 13 068 million CZK excluding VAT. That figure covers the whole 21.2 km and is not recorded as this lot's cost.",
+        "ro": "Construcția ŘSD 1109, etapa 1, sectorul de graniță cu nodul Královec, categoria D 21,5/110, 12 obiecte de construcție. Se leagă de S3 poloneză, al cărei ultim lot se termină la graniță. Fișa estimează deschiderea în trimestrul 4 din 2026; consolidarea rambleului influențează data. OpenStreetMap marchează aceste tronsoane drept autostradă cu access=no și start_date 2026-11-01, o etichetă a cartografilor și nu o dată oficială. Începutul construcției este startul festiv din 11 octombrie 2024. Șase oferte au fost depuse până la 6 septembrie 2023. Ambele etape ale construcției 1109 sunt un singur contract: 11 710,02 milioane CZK fără TVA, semnat la 8 octombrie 2024, față de o estimare de 13 068 milioane CZK fără TVA. Cifra acoperă întreaga lungime de 21,2 km și nu este înregistrată drept costul acestui lot."
+      },
+      "sourceRefs": [
+        "rsd-leaflet-1109-1",
+        "cs-wikipedia-d11",
+        "rsd-stavby-map",
+        "osm-d11-ways",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "trutnov-border-1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cs-wikipedia-d11",
+      "title": "Wikipedia (cs): Dálnice D11, Přehled úseků",
+      "url": "https://cs.wikipedia.org/wiki/D%C3%A1lnice_D11",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-1105-2",
+      "title": "ŘSD: Informační leták, D11 stavba 1105-2 Osičky – Hradec Králové, km 88,30–90,76 (08/2017, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/30/leaflet/infoletak_d11-1105-osicky-HK.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-1106",
+      "title": "ŘSD: Informační leták, D11 stavba 1106 Hradec Králové – Smiřice (12/2021, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/32/leaflet/infoletak_d11-1106-hk-smirice.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-1107",
+      "title": "ŘSD: Informační leták, D11 stavba 1107 Smiřice – Jaroměř (12/2021, uvedeno do provozu)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/31/leaflet/infoletak_d11-1107-smirice-jaromer.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-1108",
+      "title": "ŘSD: Informační leták, D11 stavba 1108 Jaroměř – Trutnov (stav k 05/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/33/leaflet/infoletak_d11-jaromer-trutnov.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-1109-1",
+      "title": "ŘSD: Informační leták, D11 stavba 1109 Trutnov – státní hranice ČR/Polsko, 1. etapa (stav k 05/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/34/leaflet/infoletak_d11-trutnov-hranice-1etapa.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-leaflet-1109-2",
+      "title": "ŘSD: Informační leták, D11 stavba 1109 Trutnov – státní hranice ČR/Polsko, 2. etapa (stav k 04/2026)",
+      "url": "https://apdos-v2.creativesound.cz/media/stavba/747/leaflet/infoletak_d11-trutnov-hranice-2etapa.pdf",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "rsd-stavby-map",
+      "title": "ŘSD: mapa staveb (stavby-linestring dataset), used only to locate section boundaries",
+      "url": "https://apdos-v2.creativesound.cz/static/stavby-linestring-v2025.json",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-d11-ways",
+      "title": "OpenStreetMap: ways with ref D11 (highway=motorway and highway=construction), via Overpass API",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-10-10"
+    }
+  ]
+}
