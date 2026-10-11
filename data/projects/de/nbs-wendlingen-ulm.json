@@ -27,6 +27,13 @@
       "retrievedOn": "2026-10-11"
     },
     {
+      "id": "db-nbs-costs",
+      "title": "Bahnprojekt Stuttgart–Ulm: NBS Wendlingen–Ulm financing and costs",
+      "url": "https://www.bahnprojekt-stuttgart-ulm.de/projekt/finanzierung-und-kosten/nbs-neubaustrecke-wendlingen-ulm/",
+      "publisher": "Bahnprojekt Stuttgart–Ulm / Deutsche Bahn",
+      "retrievedOn": "2026-10-11"
+    },
+    {
       "id": "db-infrago-profile",
       "title": "DB InfraGO: Unser Profil",
       "url": "https://www.dbinfrago.com/web/unternehmen/ueber-uns/profil-12600170",
@@ -54,6 +61,15 @@
         "opened": "2022-12-09"
       },
       "lengthKm": 60,
+      "cost": {
+        "estimated": {
+          "amount": 3985,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "DB's current total value scope for the new line, including price escalation and the delayed December 2022 commissioning. The 2012 scope was EUR 3,259 million."
+        }
+      },
       "profile": {
         "works": "greenfield"
       },
@@ -84,6 +100,7 @@
       "sourceRefs": [
         "db-nbs-wendlingen-ulm",
         "db-nbs-opening",
+        "db-nbs-costs",
         "db-infrago-profile",
         "osm-nbs-wendlingen-ulm"
       ],
