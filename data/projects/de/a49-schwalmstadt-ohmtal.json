@@ -1,0 +1,91 @@
+{
+  "id": "de-a49-schwalmstadt-ohmtal",
+  "country": "de",
+  "category": "highway",
+  "name": {
+    "en": "A 49 Schwalmstadt–Ohmtal triangle",
+    "ro": "Autostrada A 49 Schwalmstadt–triunghiul Ohmtal"
+  },
+  "description": {
+    "en": "A new section of the A 49 between AS Schwalmstadt and the Ohmtal triangle, closing the gap to the A 5.",
+    "ro": "Un sector nou al autostrăzii A 49 între nodul Schwalmstadt și triunghiul Ohmtal, care închide legătura cu A 5."
+  },
+  "operator": "de-a49-autobahngesellschaft",
+  "sources": [
+    {
+      "id": "deges-a49",
+      "title": "DEGES: A 49 AS Fritzlar–Ohmtal triangle (A 5/A 49)",
+      "url": "https://www.deges.de/projekte/projekt/a-49-as-fritzlar-ohmtal-dreieck-a-5-a-49/",
+      "publisher": "DEGES",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "deges-a49-opened",
+      "title": "DEGES: A 49 gap closure opened to traffic",
+      "url": "https://www.deges.de/aktuelles/neuigkeit/lueckenschluss-der-a-49-fuer-den-verkehr-freigegeben/",
+      "publisher": "DEGES",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-a49",
+      "title": "OpenStreetMap: A 49 at AS Schwalmstadt",
+      "url": "https://www.openstreetmap.org/way/132415724",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "schwalmstadt-ohmtal-dreieck",
+      "name": {
+        "en": "AS Schwalmstadt–Ohmtal triangle",
+        "ro": "Nodul Schwalmstadt–triunghiul Ohmtal"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2020",
+        "opened": "2025-03-21"
+      },
+      "lengthKm": 31.35,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "STRABAG Infrastrukturprojekt GmbH",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "DEGES reports approximately 31.35 km for VKE 30 and VKE 40. The OSM line follows one carriageway and measures about 30.83 km.",
+        "ro": "DEGES indică aproximativ 31,35 km pentru VKE 30 și VKE 40. Linia OSM urmează o singură cale de rulare și măsoară aproximativ 30,83 km."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2020",
+          "sourceRef": "deges-a49-opened",
+          "note": {
+            "en": "Preparatory construction work began in autumn 2020.",
+            "ro": "Lucrările pregătitoare au început în toamna anului 2020."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-03-21",
+          "sourceRef": "deges-a49-opened",
+          "note": {
+            "en": "DEGES reported that the A 49 gap closure was opened to traffic.",
+            "ro": "DEGES a anunțat deschiderea pentru trafic a sectorului de închidere a legăturii A 49."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "deges-a49",
+        "deges-a49-opened",
+        "osm-a49"
+      ],
+      "geometryRef": "schwalmstadt-ohmtal-dreieck"
+    }
+  ]
+}
