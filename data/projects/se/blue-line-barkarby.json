@@ -1,0 +1,81 @@
+{
+  "id": "se-blue-line-barkarby",
+  "country": "se",
+  "city": "se-stockholm",
+  "category": "railway",
+  "name": {
+    "en": "Blue Line extension to Barkarby",
+    "ro": "Extinderea liniei albastre până la Barkarby"
+  },
+  "description": {
+    "en": "The Stockholm Metro Blue Line is being extended underground from Akalla to Barkarby, adding stations at Barkarbystaden and Barkarby.",
+    "ro": "Linia albastră a metroului din Stockholm se extinde subteran de la Akalla la Barkarby, cu stații la Barkarbystaden și Barkarby."
+  },
+  "operator": "se-region-stockholm",
+  "stationCount": 2,
+  "sources": [
+    {
+      "id": "barkarby-project",
+      "title": "Region Stockholm: Blue Line to Barkarby",
+      "url": "https://nyatunnelbanan.se/barkarby/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "barkarby-opening",
+      "title": "Region Stockholm: FAQ, assessed traffic start for Blue Line to Barkarby",
+      "url": "https://nyatunnelbanan.se/fragor-och-svar/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-barkarby",
+      "title": "OpenStreetMap: Blue Line construction alignment, Akalla–Barkarby",
+      "url": "https://www.openstreetmap.org/way/23079153",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "barkarby-start",
+      "title": "Region Stockholm: First railway plan approved",
+      "url": "https://nyatunnelbanan.se/nyheter/forsta-jarnvagsplanen-beslutad/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-barkarby-second-track",
+      "title": "OpenStreetMap: second Blue Line construction track, Akalla?Barkarby",
+      "url": "https://www.openstreetmap.org/way/777209637",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "akalla-barkarby",
+      "name": {
+        "en": "Akalla–Barkarby",
+        "ro": "Akalla–Barkarby"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2028",
+        "constructionStart": "2018"
+      },
+      "lengthKm": 4,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 2,
+        "tunnelKm": 4
+      },
+      "note": {
+        "en": "Region Stockholm describes a 4 km underground extension with two new stations. The OSM construction alignment measures 4.00 km.",
+        "ro": "Regiunea Stockholm descrie o extindere subterană de 4 km cu două stații noi. Aliniamentul în construcție din OSM măsoară 4,00 km."
+      },
+      "sourceRefs": [
+        "barkarby-project",
+        "barkarby-opening",
+        "osm-barkarby",
+        "barkarby-start",
+        "osm-barkarby-second-track"
+      ],
+      "geometryRef": "akalla-barkarby"
+    }
+  ]
+}
