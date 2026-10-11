@@ -20,8 +20,21 @@
       },
       "status": "under_construction",
       "dates": {
+        "tenderAwarded": "2018-12-19",
         "constructionStart": "2022-03"
       },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-12-19",
+          "sourceRef": "serbia-gov-kuzmin-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-03-01",
+          "sourceRef": "mgsi-kuzmin-works-start"
+        }
+      ],
       "lengthKm": 16.55,
       "contractors": [
         {
@@ -36,6 +49,9 @@
       "sourceRefs": [
         "biznis-kuzmin-technical-inspection",
         "nsreporter-kuzmin-sremska-raca",
+        "mgsi-kuzmin-sremska-raca",
+        "mgsi-kuzmin-works-start",
+        "serbia-gov-kuzmin-contract",
         "osm-kuzmin-sremska-raca"
       ],
       "geometryRef": "kuzmin-sava-north-abutment"
@@ -48,8 +64,21 @@
       },
       "status": "under_construction",
       "dates": {
+        "tenderAwarded": "2018-12-19",
         "constructionStart": "2019-10"
       },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-12-19",
+          "sourceRef": "serbia-gov-kuzmin-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-10",
+          "sourceRef": "mgsi-kuzmin-works-start"
+        }
+      ],
       "lengthKm": 1.3,
       "contractors": [
         {
@@ -64,12 +93,36 @@
       "sourceRefs": [
         "biznis-kuzmin-technical-inspection",
         "nsreporter-kuzmin-sremska-raca",
+        "mgsi-kuzmin-sremska-raca",
+        "mgsi-kuzmin-works-start",
+        "serbia-gov-kuzmin-contract",
         "osm-kuzmin-sremska-raca"
       ],
       "geometryRef": "sava-bridge"
     }
   ],
   "sources": [
+    {
+      "id": "serbia-gov-kuzmin-contract",
+      "title": "Government of Serbia: Contract on construction of Belgrade–Sarajevo motorway signed (19.12.2018)",
+      "url": "https://www.srbija.gov.rs/vest/en/135449/contract-on-construction-of-belgrade-sarajevo-motorway-signed.php",
+      "publisher": "Government of the Republic of Serbia",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "mgsi-kuzmin-sremska-raca",
+      "title": "MGSI: E-761 Belgrade–Sarajevo, Sremska Rača–Kuzmin (contractor and project details)",
+      "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-auto-puta-e-761-beograd-sarajevo-deonica-sremska-raca-kuzmin",
+      "publisher": "Ministry of Construction, Transport and Infrastructure",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "mgsi-kuzmin-works-start",
+      "title": "MGSI: Start of works on Sremska Rača–Kuzmin motorway route (01.03.2022)",
+      "url": "https://www.mgsi.gov.rs/cir/aktuelnosti/pocheli-radovi-na-izgradnji-trase-auto-puta-sremska-racha-kuzmin",
+      "publisher": "Ministry of Construction, Transport and Infrastructure",
+      "retrievedOn": "2026-10-11"
+    },
     {
       "id": "biznis-kuzmin-technical-inspection",
       "title": "Biznis.rs: Raspisan javni poziv za tehnički pregled izvedenih radova na deonici Sremska Rača–Kuzmin (11 July 2025)",
