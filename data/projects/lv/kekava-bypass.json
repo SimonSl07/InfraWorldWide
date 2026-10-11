@@ -1,0 +1,84 @@
+{
+  "id": "lv-kekava-bypass",
+  "country": "lv",
+  "category": "highway",
+  "name": {
+    "en": "Ķekava bypass (A7)",
+    "ro": "Centura Ķekava (A7)"
+  },
+  "description": {
+    "en": "A new section of the A7 and E67 south of Riga, built as a public-private partnership.",
+    "ro": "Un sector nou al drumurilor A7 și E67 la sud de Riga, construit în cadrul unui parteneriat public-privat."
+  },
+  "operator": "lv-lvc",
+  "sources": [
+    {
+      "id": "lvc-kekava",
+      "title": "Latvijas Valsts ceļi: Ķekava bypass PPP project",
+      "url": "https://lvceli.lv/en/road-network/projects/ppp-project/kekava-bypass-ppp-project/",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-a7-route",
+      "title": "OpenStreetMap: A7 road route relation 164956",
+      "url": "https://www.openstreetmap.org/relation/164956",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "a7-kekava-bypass",
+      "name": {
+        "en": "A7, km 7.9–25.0",
+        "ro": "A7, km 7,9–25,0"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-08-13",
+        "constructionStart": "2021-11-29",
+        "opened": "2023-10-13"
+      },
+      "lengthKm": 13.64,
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (13.64 km). The OSM line uses one carriageway from the A7 route relation. LVC gives a project breakdown of 12.22 km of four-lane road, 5.36 km of two-lane road and 20.7 km of parallel roads and overpasses; the published figures cover more than the mapped line. The project also includes two tunnels and six bridges and overpasses.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (13.64 km). Linia OSM folosește o singură cale de rulare din relația rutei A7. LVC publică pentru proiect 12,22 km de drum cu patru benzi, 5,36 km de drum cu două benzi și 20,7 km de drumuri paralele și pasaje; cifrele publicate acoperă mai mult decât linia cartografiată. Proiectul include și două tuneluri și șase poduri și pasaje."
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-08-13",
+          "sourceRef": "lvc-kekava",
+          "note": {
+            "en": "The procurement committee awarded the PPP contract to PA Kekava ABT.",
+            "ro": "Comisia de achiziții a atribuit contractul PPP asocierii PA Kekava ABT."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-11-29",
+          "sourceRef": "lvc-kekava",
+          "note": {
+            "en": "The approved project moved to the construction phase.",
+            "ro": "Proiectul aprobat a trecut la etapa de construcție."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2023-10-13",
+          "sourceRef": "lvc-kekava",
+          "note": {
+            "en": "Construction was completed and the bypass became available to users.",
+            "ro": "Construcția s-a încheiat, iar centura a devenit disponibilă pentru utilizatori."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "lvc-kekava",
+        "osm-a7-route"
+      ],
+      "geometryRef": "a7-kekava-bypass"
+    }
+  ]
+}
