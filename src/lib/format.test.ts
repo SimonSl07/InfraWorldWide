@@ -74,6 +74,9 @@ describe("formatMoney", () => {
     expect(formatMoney({ amount: 90, currency: "RSD", year: 2020 }, "en")).toBe(
       "дин.90M",
     );
+    expect(
+      formatMoney({ amount: 500, currency: "SEK", year: 2025 }, "en"),
+    ).toBe("kr500M");
   });
 
   it("uses the locale's decimal separator and magnitude words", () => {
