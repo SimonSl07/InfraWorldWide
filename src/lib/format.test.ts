@@ -22,6 +22,12 @@ describe("formatMoney", () => {
       "kr10M",
     );
   });
+  it("formats Danish kroner", () => {
+    expect(formatMoney({ amount: 42, currency: "DKK", year: 2020 }, "en")).toBe(
+      "kr42M",
+    );
+  });
+
   it("rolls up to billions", () => {
     expect(
       formatMoney({ amount: 1800, currency: "EUR", year: 2023 }, "en"),

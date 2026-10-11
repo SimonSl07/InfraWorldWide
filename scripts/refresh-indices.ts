@@ -57,6 +57,7 @@ const ECB = "https://data-api.ecb.europa.eu/service/data";
 const DEFLATOR_GEO: Record<string, string> = {
   BGN: "BG",
   CZK: "CZ",
+  DKK: "DK",
   EUR: "EA",
   HUF: "HU",
   PLN: "PL",
@@ -71,7 +72,17 @@ const NOT_REFETCHED: Record<string, string> = {
 };
 
 /** Currencies the ECB quotes. RSD is not one of them. */
-const ECB_CURRENCIES = ["BGN", "CZK", "HUF", "PLN", "RON", "SEK", "NOK", "USD"];
+const ECB_CURRENCIES = [
+  "BGN",
+  "CZK",
+  "DKK",
+  "HUF",
+  "PLN",
+  "RON",
+  "SEK",
+  "NOK",
+  "USD",
+];
 
 /**
  * Years left out of a series on purpose, with the reason from the file's own

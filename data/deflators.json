@@ -1,6 +1,6 @@
 {
   "baseYear": 2015,
-  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes, since src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017. That is a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated. Croatia has no series: the kuna was replaced by the euro on 1 January 2023 at 7.53450 HRK per euro, so an HRK series would end in 2022 and pull the common latest price year of the whole table back from 2025 to 2022. Croatian figures recorded in kuna stay as prose in notes and are not restated; euro figures from 2023 use the euro-area series like every other euro cost. The Czech series is Eurostat's HICP for Czechia and starts in 1996, the first year Eurostat publishes it. The Polish series is Eurostat's HICP for Poland and also starts in 1996, the first year Eurostat publishes it. The Hungarian series is Eurostat's HICP for Hungary and also starts in 1996, the first year Eurostat publishes it. The Swedish series is Eurostat HICP for Sweden and starts in 1996, the first year Eurostat publishes it. The Norwegian series is Eurostat's HICP for Norway and starts in 1996, the first year Eurostat publishes it.",
+  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes, since src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017. That is a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated. Croatia has no series: the kuna was replaced by the euro on 1 January 2023 at 7.53450 HRK per euro, so an HRK series would end in 2022 and pull the common latest price year of the whole table back from 2025 to 2022. Croatian figures recorded in kuna stay as prose in notes and are not restated; euro figures from 2023 use the euro-area series like every other euro cost. The Czech series is Eurostat's HICP for Czechia and starts in 1996, the first year Eurostat publishes it. The Polish series is Eurostat's HICP for Poland and also starts in 1996, the first year Eurostat publishes it. The Hungarian series is Eurostat's HICP for Hungary and also starts in 1996, the first year Eurostat publishes it. The Swedish series is Eurostat HICP for Sweden and starts in 1996, the first year Eurostat publishes it. The Norwegian series is Eurostat's HICP for Norway and starts in 1996, the first year Eurostat publishes it. The Danish series is Eurostat HICP for Denmark and starts in 1996, the first year Eurostat publishes it.",
   "sources": [
     {
       "title": "Eurostat: HICP annual data (average index and rate of change) [prc_hicp_aind]",
@@ -389,6 +389,45 @@
         "2023": 131.6,
         "2024": 135.4,
         "2025": 139.2
+      }
+    },
+    "DKK": {
+      "geo": "DK",
+      "label": {
+        "en": "Denmark",
+        "ro": "Danemarca"
+      },
+      "index": {
+        "1996": 71.6,
+        "1997": 73.0,
+        "1998": 73.9,
+        "1999": 75.4,
+        "2000": 77.5,
+        "2001": 79.3,
+        "2002": 81.2,
+        "2003": 82.7,
+        "2004": 83.5,
+        "2005": 85.0,
+        "2006": 86.5,
+        "2007": 88.0,
+        "2008": 91.2,
+        "2009": 92.1,
+        "2010": 94.1,
+        "2011": 96.6,
+        "2012": 98.9,
+        "2013": 99.4,
+        "2014": 99.8,
+        "2015": 100.0,
+        "2016": 100.0,
+        "2017": 101.1,
+        "2018": 101.8,
+        "2019": 102.5,
+        "2020": 102.9,
+        "2021": 104.9,
+        "2022": 113.8,
+        "2023": 117.6,
+        "2024": 119.1,
+        "2025": 121.3
       }
     }
   }
