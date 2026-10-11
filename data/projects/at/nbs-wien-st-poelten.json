@@ -1,0 +1,35 @@
+{
+  "id": "at-nbs-wien-st-poelten",
+  "country": "at",
+  "category": "railway",
+  "name": { "en": "New West Railway Wien–St. Pölten", "ro": "Noua linie feroviară Wien–St. Pölten" },
+  "description": {
+    "en": "The 60 km new line between Wien Meidling and St. Pölten opened in December 2012. It includes the Lainzer Tunnel and Wienerwald Tunnel.",
+    "ro": "Noua linie de 60 km dintre Wien Meidling și St. Pölten a fost deschisă în decembrie 2012. Aceasta include tunelurile Lainzer și Wienerwald."
+  },
+  "operator": "at-oebb-infrastruktur",
+  "sources": [
+    { "id": "oebb-weststrecke", "title": "ÖBB-Infrastruktur: Weststrecke Wien–Salzburg", "url": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/weststrecke-wien-salzburg", "retrievedOn": "2026-10-10" },
+    { "id": "oebb-streckenbeschreibung", "title": "ÖBB-Infrastruktur: Streckenbeschreibung 2026", "url": "https://infrastruktur.oebb.at/de/geschaeftspartner/schienennetz/snnb/snnb-2026/snnb-2026-anhaenge/streckenbeschreibung.pdf", "retrievedOn": "2026-10-10" },
+    { "id": "osm-nbs-westbahn", "title": "OpenStreetMap: New West Railway, ÖBB ref 130 01", "url": "https://www.openstreetmap.org/relation/3323817", "retrievedOn": "2026-10-10" }
+  ],
+  "lots": [
+    {
+      "id": "wien-meidling-st-poelten",
+      "name": { "en": "Wien Meidling–St. Pölten new line", "ro": "Noua linie Wien Meidling–St. Pölten" },
+      "status": "opened",
+      "dates": { "opened": "2012-12" },
+      "lengthKm": 60,
+      "profile": { "works": "greenfield", "tunnelKm": 26.614 },
+      "events": [
+        { "kind": "opened", "date": "2012-12", "sourceRef": "oebb-weststrecke", "note": { "en": "The new line entered service.", "ro": "Noua linie a intrat în exploatare." } }
+      ],
+      "note": {
+        "en": "ÖBB reports a route length of about 60 km. Its 2026 network description lists 13.238 km for the Lainzer Tunnel and 13.376 km for the Wienerwald Tunnel. The OSM line draws about 60.3 km along one direction of the route.",
+        "ro": "ÖBB indică o lungime de aproximativ 60 km. Descrierea rețelei din 2026 menționează 13,238 km pentru tunelul Lainzer și 13,376 km pentru tunelul Wienerwald. Linia OSM măsoară aproximativ 60,3 km pe un singur sens al traseului."
+      },
+      "sourceRefs": ["oebb-weststrecke", "oebb-streckenbeschreibung", "osm-nbs-westbahn"],
+      "geometryRef": "wien-meidling-st-poelten"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "at-a11-karawanken",
+  "country": "at",
+  "category": "tunnel",
+  "name": {
+    "en": "A 11 Karawanken Tunnel second tube, Austrian section",
+    "ro": "A doua galerie a tunelului Karawanken de pe A 11, sectorul austriac"
+  },
+  "description": {
+    "en": "The new eastern tube of the cross-border Karawanken Tunnel, recorded only on Austrian territory.",
+    "ro": "Noua galerie estică a tunelului transfrontalier Karawanken, înregistrată numai pe teritoriul Austriei."
+  },
+  "operator": "at-asfinag",
+  "sources": [
+    {
+      "id": "asfinag-karawanken",
+      "title": "ASFINAG: A 11 Karawanken Autobahn, second tube",
+      "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/a-11-karawanken-autobahn-karawankentunnel/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-karawanken-new-tube",
+      "title": "OpenStreetMap: Karawanken Tunnel second tube, way 64031975",
+      "url": "https://www.openstreetmap.org/way/64031975",
+      "retrievedOn": "2026-10-10"
+    }
+  ],
+  "lots": [
+    {
+      "id": "karawanken-second-tube-at",
+      "name": {
+        "en": "Karawanken Tunnel second tube, Austrian section",
+        "ro": "A doua galerie a tunelului Karawanken, sectorul austriac"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-09-18",
+        "opened": "2026-03"
+      },
+      "lengthKm": 4.402,
+      "cost": {
+        "estimated": {
+          "amount": 191,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Approximate Austrian construction cost for the new tube; the source gives EUR 340 million for both countries, including the DARS share."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 4.402
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-09-18",
+          "sourceRef": "asfinag-karawanken"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-03",
+          "sourceRef": "asfinag-karawanken",
+          "note": {
+            "en": "ASFINAG reports the symbolic traffic release on 18 March and says the new tube entered operation a few days later.",
+            "ro": "ASFINAG menționează deschiderea simbolică pentru trafic la 18 martie și spune că noua galerie a intrat în exploatare câteva zile mai târziu."
+          }
+        }
+      ],
+      "note": {
+        "en": "ASFINAG gives the Austrian tunnel length as approximately 4.402 km. The OSM line for the new tube measures about 4.45 km; it follows the mapped alignment to the state border. The existing west tube's refurbishment is maintenance and is not included.",
+        "ro": "ASFINAG indică o lungime de aproximativ 4,402 km pentru tunelul de pe teritoriul Austriei. Linia OSM pentru noua galerie măsoară circa 4,45 km și urmează aliniamentul cartografiat până la graniță. Renovarea galeriei vestice existente este întreținere și nu este inclusă."
+      },
+      "sourceRefs": [
+        "asfinag-karawanken",
+        "osm-karawanken-new-tube"
+      ],
+      "geometryRef": "karawanken-second-tube-at"
+    }
+  ]
+}

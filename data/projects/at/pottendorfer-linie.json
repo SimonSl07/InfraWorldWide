@@ -1,0 +1,36 @@
+{
+  "id": "at-pottendorfer-linie",
+  "country": "at",
+  "category": "railway",
+  "name": { "en": "Pottendorfer Linie upgrade", "ro": "Modernizarea liniei Pottendorfer" },
+  "description": {
+    "en": "ÖBB upgraded the Pottendorfer Linie between Wien Meidling and Wiener Neustadt. Double tracking was completed through Wampersdorf by 2023. Further station and line works between Wampersdorf and Ebenfurth are ongoing.",
+    "ro": "ÖBB a modernizat linia Pottendorfer între Wien Meidling și Wiener Neustadt. Dublarea liniei până la Wampersdorf a fost finalizată în 2023. Lucrările suplimentare la stații și linie între Wampersdorf și Ebenfurth sunt în desfășurare."
+  },
+  "operator": "at-oebb-infrastruktur",
+  "sources": [
+    { "id": "oebb-pottendorfer-build", "title": "ÖBB-Infrastruktur: Pottendorfer Linie, construction milestones", "url": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/suedstrecke-wien-villach/pottendorfer-linie/rund-um-den-bau", "retrievedOn": "2026-10-10" },
+    { "id": "oebb-pottendorfer-overview", "title": "ÖBB Südstrecke: Pottendorfer Linie", "url": "https://suedstrecke.oebb.at/de/projekte/05-pottendorfer-linie", "retrievedOn": "2026-10-10" },
+    { "id": "osm-pottendorfer", "title": "OpenStreetMap: Pottendorfer Linie rail geometry, ÖBB ref 106 01", "url": "https://www.openstreetmap.org/#map=9/47.99/16.29", "retrievedOn": "2026-10-10" }
+  ],
+  "lots": [
+    {
+      "id": "wien-meidling-wiener-neustadt",
+      "name": { "en": "Wien Meidling–Wiener Neustadt", "ro": "Wien Meidling–Wiener Neustadt" },
+      "status": "opened",
+      "dates": { "constructionStart": "2016", "opened": "2023" },
+      "lengthKm": 52,
+      "profile": { "works": "upgrade" },
+      "events": [
+        { "kind": "partial_opening", "date": "2019", "sourceRef": "oebb-pottendorfer-build", "note": { "en": "Two tracks entered service between Hennersdorf and Münchendorf.", "ro": "Au intrat în exploatare două linii între Hennersdorf și Münchendorf." } },
+        { "kind": "partial_opening", "date": "2023", "sourceRef": "oebb-pottendorfer-overview", "note": { "en": "Through double tracking was completed by the end of 2023.", "ro": "Dublarea continuă a fost finalizată până la sfârșitul anului 2023." } }
+      ],
+      "note": {
+        "en": "ÖBB gives 52 km for the full Wien Meidling–Wiener Neustadt route. The existing double-track section from Wampersdorf to Wiener Neustadt was not a new double-tracking work. Station and loop upgrades between Wampersdorf and Ebenfurth continue separately. The OSM line follows one railway alignment and draws about 50 km.",
+        "ro": "ÖBB indică 52 km pentru întreaga rută Wien Meidling–Wiener Neustadt. Secțiunea cu două linii existentă între Wampersdorf și Wiener Neustadt nu a fost o lucrare nouă de dublare. Modernizarea stațiilor și a buclei între Wampersdorf și Ebenfurth continuă separat. Linia OSM urmează un singur aliniament feroviar și măsoară aproximativ 50 km."
+      },
+      "sourceRefs": ["oebb-pottendorfer-build", "oebb-pottendorfer-overview", "osm-pottendorfer"],
+      "geometryRef": "wien-meidling-wiener-neustadt"
+    }
+  ]
+}

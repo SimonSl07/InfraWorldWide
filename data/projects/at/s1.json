@@ -1,0 +1,87 @@
+{
+  "id": "at-s1",
+  "country": "at",
+  "category": "highway",
+  "name": { "en": "S 1 Wiener Außenring Schnellstraße", "ro": "Drumul expres S 1 Wiener Außenring" },
+  "description": {
+    "en": "The S 1 is open south of Vienna between Vösendorf and Schwechat and north of Vienna between Süßenbrunn and Korneuburg. The Schwechat–Süßenbrunn gap is planned in two sections: VA1 from Groß-Enzersdorf to Süßenbrunn and VA2, including the 8.3 km Donau-Lobau tunnel.",
+    "ro": "S 1 este deschisă la sud de Viena între Vösendorf și Schwechat și la nord între Süßenbrunn și Korneuburg. Legătura planificată Schwechat–Süßenbrunn este împărțită în două secțiuni: VA1 între Groß-Enzersdorf și Süßenbrunn și VA2, care include tunelul Donau-Lobau de 8,3 km."
+  },
+  "operator": "at-asfinag",
+  "sources": [
+    { "id": "asfinag-s1", "title": "ASFINAG: S 1 Wiener Außenring Schnellstraße, Schwechat to Süßenbrunn", "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/s-1-wiener-aussenring-schnellstrasse-schwechat-bis-suessenbrunn/", "retrievedOn": "2026-10-10" },
+    { "id": "wiki-s1", "title": "Wikipedia: Wiener Außenring Schnellstraße", "url": "https://de.wikipedia.org/wiki/Wiener_Au%C3%9Fenring_Schnellstra%C3%9Fe", "retrievedOn": "2026-10-10" },
+    { "id": "osm-s1-open", "title": "OpenStreetMap: S 1 open motorway network", "url": "https://www.openstreetmap.org/#map=10/48.2/16.5", "retrievedOn": "2026-10-10" },
+    { "id": "osm-s1-proposed", "title": "OpenStreetMap: S 1 Ausbau, proposed alignment", "url": "https://www.openstreetmap.org/relation/3507985", "retrievedOn": "2026-10-10" }
+  ],
+  "lots": [
+    {
+      "id": "south-voesendorf-schwechat",
+      "name": { "en": "Vösendorf–Schwechat", "ro": "Vösendorf–Schwechat" },
+      "status": "opened",
+      "dates": { "opened": "2006-04-28" },
+      "lengthKm": 16.2,
+      "profile": { "works": "greenfield" },
+      "sourceRefs": ["wiki-s1", "osm-s1-open"],
+      "geometryRef": "south-voesendorf-schwechat"
+    },
+    {
+      "id": "suessenbrunn-eibesbrunn",
+      "name": { "en": "Süßenbrunn–Eibesbrunn", "ro": "Süßenbrunn–Eibesbrunn" },
+      "status": "opened",
+      "dates": { "opened": "2009-10-31" },
+      "lengthKm": 10,
+      "profile": { "works": "greenfield" },
+      "note": {
+        "en": "The geometry follows the mapped motorway corridor and draws about 7.2 km against the sourced 10 km section length. The sourced figure is retained; the route cut is incomplete at the Süßenbrunn end.",
+        "ro": "Geometria urmează coridorul autostrăzii cartografiat și are aproximativ 7,2 km față de lungimea publicată de 10 km. Valoarea documentată este păstrată; limita traseului este incompletă la capătul Süßenbrunn."
+      },
+      "sourceRefs": ["wiki-s1", "osm-s1-open"],
+      "geometryRef": "suessenbrunn-eibesbrunn"
+    },
+    {
+      "id": "eibesbrunn-korneuburg",
+      "name": { "en": "Eibesbrunn–Korneuburg", "ro": "Eibesbrunn–Korneuburg" },
+      "status": "opened",
+      "dates": { "opened": "2010-01-31" },
+      "lengthKm": 13.5,
+      "profile": { "works": "greenfield" },
+      "sourceRefs": ["wiki-s1", "osm-s1-open"],
+      "geometryRef": "eibesbrunn-korneuburg"
+    },
+    {
+      "id": "va1-gross-enzersdorf-suessenbrunn",
+      "name": { "en": "VA1 Groß-Enzersdorf–Süßenbrunn", "ro": "VA1 Groß-Enzersdorf–Süßenbrunn" },
+      "status": "planned",
+      "dates": { "expectedOpening": "2032" },
+      "lengthKm": 10.8,
+      "cost": { "amount": 500, "currency": "EUR", "scope": "total", "confidence": "estimated", "note": "ASFINAG estimate; price year and VAT basis not stated." },
+      "profile": { "works": "greenfield" },
+      "note": {
+        "en": "ASFINAG reports preliminary site work in 2026 and states that route construction is planned to start in 2027. The project page gives completion in 2032. The stated length and cost cover VA1.",
+        "ro": "ASFINAG menționează lucrări pregătitoare în 2026 și indică începerea construcției traseului în 2027. Pagina proiectului prevede finalizarea în 2032. Lungimea și costul publicate se referă la VA1."
+      },
+      "sourceRefs": ["asfinag-s1", "osm-s1-proposed"],
+      "geometryRef": "va1-gross-enzersdorf-suessenbrunn"
+    },
+    {
+      "id": "va2-schwechat-gross-enzersdorf",
+      "name": { "en": "VA2 Schwechat–Groß-Enzersdorf and Donau-Lobau tunnel", "ro": "VA2 Schwechat–Groß-Enzersdorf și tunelul Donau-Lobau" },
+      "status": "planned",
+      "lengthKm": 8.3,
+      "cost": { "amount": 2200, "currency": "EUR", "scope": "total", "confidence": "estimated", "note": "ASFINAG estimate; price year and VAT basis not stated." },
+      "profile": { "works": "greenfield", "tunnelKm": 8.3 },
+      "events": [
+        { "kind": "litigation", "date": "2015-03-27", "sourceRef": "wiki-s1", "note": { "en": "The approval was challenged in court.", "ro": "Aprobarea a fost contestată în instanță." } },
+        { "kind": "litigation", "date": "2018-05", "sourceRef": "wiki-s1", "note": { "en": "The environmental impact assessment approval was renewed.", "ro": "Aprobarea evaluării impactului asupra mediului a fost reînnoită." } },
+        { "kind": "announced", "date": "2021-12-01", "sourceRef": "wiki-s1", "note": { "en": "The transport minister announced that the Schwechat–Groß-Enzersdorf section would not proceed in its then-current form.", "ro": "Ministrul transporturilor a anunțat că secțiunea Schwechat–Groß-Enzersdorf nu va continua în forma de atunci." } }
+      ],
+      "note": {
+        "en": "ASFINAG lists VA2 as planned, with construction no earlier than 2030 and an approximately ten-year duration. The project was halted by the transport minister in December 2021; its present planned status follows ASFINAG's current page. The 8.3 km figure is the tunnel length, not the full VA2 route length, so no total route length is recorded.",
+        "ro": "ASFINAG menține VA2 în plan, cu lucrări care nu vor începe înainte de 2030 și o durată de aproximativ zece ani. Ministrul transporturilor a oprit proiectul în decembrie 2021; statutul planificat actual urmează pagina ASFINAG. Valoarea de 8,3 km este lungimea tunelului, nu a întregului traseu VA2, deci nu este înregistrată o lungime totală."
+      },
+      "sourceRefs": ["asfinag-s1", "wiki-s1", "osm-s1-proposed"],
+      "geometryRef": "va2-schwechat-gross-enzersdorf"
+    }
+  ]
+}
