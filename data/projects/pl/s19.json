@@ -11,7 +11,7 @@
     "ro": "Drum expres de circa 570 km de la granița cu Belarus la Kuźnica până la granița cu Slovacia la Barwinek, prin Białystok, Lublin și Rzeszów. În octombrie 2026 sunt deschise capătul nordic (Kuźnica – Sokółka Północ, Deniski – Boćki), tronsoanele Lublin – Rzeszów, ocolitoarea Kock, ocolitoarea Rzeszów și Krosno – Dukla, iar cea mai mare parte din restul este în construcție sau contractată. Golul Białystok Zachód – Deniski și tronsonul până la granița cu voievodatul Lublin sunt încă în pregătire. Loturile urmează tronsoanele contractuale GDDKiA, grupate acolo unde au aceeași dată de deschidere; costurile sunt valori de contract la semnare. Rzeszów Wschód – Rzeszów Zachód folosește A4, iar Lublin Rudnik – Lublin Sławinek este comun cu S12 și S17, deci niciunul nu este desenat ca lot S19. Domaradz – Krosno (12,5 km, numit și Domaradz – Iskrzynia) nu este desenat: contractul de proiectare și construcție din 7 noiembrie 2022 a fost reziliat la 14 mai 2026 cu 13% din lucrări executate, o nouă licitație a fost anunțată la 1 septembrie 2026, iar OpenStreetMap nu cartează niciun traseu pentru el. Geometria provine din OpenStreetMap, tăiată la noduri acolo unde sunt cartate și altfel după lungimile din surse ale tronsoanelor."
   },
   "operator": "pl-gddkia",
-  "lastVerified": "2026-10-09",
+  "lastVerified": "2026-10-11",
   "lots": [
     {
       "id": "kuznica-sokolka-polnoc",
@@ -690,6 +690,7 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2022-02-23",
+        "constructionStart": "2025-01-20",
         "expectedOpening": "2027"
       },
       "lengthKm": 13.7,
@@ -729,6 +730,11 @@
           "kind": "awarded",
           "date": "2022-02-23",
           "sourceRef": "msbd-miedzyrzec-etap-ii"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-01-20",
+          "sourceRef": "gddkia-monthly-table"
         }
       ],
       "funding": [
@@ -747,8 +753,8 @@
         }
       ],
       "note": {
-        "en": "Design-build contract with Strabag signed on 23 February 2022 (the MSBD page states a cost of 391.5 million PLN). The road permit (ZRID) was issued on 12 December 2024; GDDKiA gives 2027 as the planned opening. No works start date is recorded. Part of the Białystok – Lubartów expressway between the Mazovian/Lubelskie border and the Lubartów Północ junction.",
-        "ro": "Contract de proiectare și construcție cu Strabag, semnat la 23 februarie 2022 (pagina MSBD indică un cost de 391,5 milioane PLN). Autorizația de construcție (ZRID) a fost emisă la 12 decembrie 2024; GDDKiA indică 2027 ca an de deschidere planificat. Nu este înregistrată data începerii lucrărilor. Face parte din drumul expres Białystok – Lubartów între granița voievodatelor Mazovia/Lublin și nodul Lubartów Północ."
+    "en": "Design-build contract with Strabag signed on 23 February 2022 (the MSBD page states a cost of 391.5 million PLN). The road permit (ZRID) was issued on 12 December 2024; GDDKiA gives 2027 as the planned opening. GDDKiA's monthly contract table records that works began on 20 January 2025. Part of the Białystok – Lubartów expressway between the Mazovian/Lubelskie border and the Lubartów Północ junction.",
+    "ro": "Contract de proiectare și construcție cu Strabag, semnat la 23 februarie 2022 (pagina MSBD indică un cost de 391,5 milioane PLN). Autorizația de construcție (ZRID) a fost emisă la 12 decembrie 2024; GDDKiA indică 2027 ca an de deschidere planificat. Tabelul lunar de contracte GDDKiA consemnează că lucrările au început la 20 ianuarie 2025. Face parte din drumul expres Białystok – Lubartów între granița voievodatelor Mazovia/Lublin și nodul Lubartów Północ."
       },
       "sourceRefs": [
         "msbd-miedzyrzec-etap-ii",
@@ -918,6 +924,7 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2022-09-15",
+        "constructionStart": "2026-04-22",
         "expectedOpening": "2028"
       },
       "lengthKm": 15.8,
@@ -957,6 +964,11 @@
           "kind": "awarded",
           "date": "2022-09-15",
           "sourceRef": "msbd-kock-lubartow"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-04-22",
+          "sourceRef": "gddkia-monthly-table"
         }
       ],
       "funding": [
@@ -2689,9 +2701,9 @@
     },
     {
       "id": "gddkia-monthly-table",
-      "title": "GDDKiA: Bieżąca realizacja RPBDK do 2030 r., monthly contract table (September 2026 edition, PDF)",
-      "url": "https://www.gov.pl/attachment/af0bc322-7a54-4ac3-973b-292ab5a4a2fa",
-      "retrievedOn": "2026-10-09"
+      "title": "GDDKiA: Current RPBDK implementation to 2030, monthly contract table (October 2026 edition, PDF)",
+      "url": "https://www.gov.pl/attachment/ce4b1616-2288-4d98-9546-b10ad15a08ee",
+      "retrievedOn": "2026-10-11"
     },
     {
       "id": "gddkia-bialystok-2026-05-14",

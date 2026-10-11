@@ -11,7 +11,7 @@
     "ro": "S1 leagă A1 de la aeroportul Pyrzowice cu granița slovacă de la Zwardoń, peste 133 km la finalizare, desenat ca o singură cale de rulare din relația OpenStreetMap 309616. Din 4 august 2016 numărul cuprinde fosta S69 de la Bielsko-Biała la Zwardoń; drumul Bielsko-Biała – Cieszyn este acum S52 și nu face parte din acest fișier. Partea de nord include centura estică Dąbrowa Górnicza – Kosztowy a GOP (construită în 1978–1983) și DK1 reconstruit la standard de drum expres la Podwarpie. Noua linie Mysłowice – Bielsko-Biała (circa 40 km, cu ocolitoarea Oświęcim) a fost deschisă în etape în 2025–2026, iar doar Mysłowice Kosztowy II – Bieruń este încă în construcție. Loturile sunt grupate pe contracte și împărțite acolo unde părțile au fost deschise în ani diferiți. Nedesenate: legătura de 1,5 km de la Podwarpie și tronsonul de 1,4 km Zwardoń – frontieră (fără dată de deschidere), tronsonul Komorowice – Hałcnów (S52 în OpenStreetMap) și tronsonul Lędziny – Tychy din afara traseului țintă. Valorile contractelor provin de pe paginile GDDKiA; fiecare notă precizează baza TVA sau spune că nu este indicată."
   },
   "operator": "pl-gddkia",
-  "lastVerified": "2026-10-10",
+  "lastVerified": "2026-10-11",
   "lots": [
     {
       "id": "pyrzowice-lotnisko",
@@ -269,6 +269,7 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2022-07-04",
+        "constructionStart": "2025-02-07",
         "expectedOpening": "2027"
       },
       "lengthKm": 10,
@@ -327,6 +328,11 @@
             "ro": "Contract de proiectare și construcție semnat cu Budimex."
           },
           "sourceRef": "gddkia-myslowice-bierun"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-02-07",
+          "sourceRef": "gddkia-monthly-table"
         }
       ],
       "note": {
@@ -339,7 +345,8 @@
         "gddkia-katowice-s1-myslowice-bierun",
         "plwiki-s1",
         "osm-relation-s1",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-monthly-table"
       ],
       "geometryRef": "myslowice-kosztowy-bierun"
     },
@@ -1039,6 +1046,12 @@
       "title": "GDDKiA Oddział Katowice: Może ruszać budowa S1 Mysłowice – Bieruń",
       "url": "https://www.gov.pl/web/gddkia-katowice/moze-ruszac-budowa-s1-myslowice---bierun",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-monthly-table",
+      "title": "GDDKiA: Current RPBDK implementation to 2030, monthly contract table (October 2026 edition, PDF)",
+      "url": "https://www.gov.pl/attachment/ce4b1616-2288-4d98-9546-b10ad15a08ee",
+      "retrievedOn": "2026-10-11"
     }
   ]
 }
