@@ -1,0 +1,82 @@
+{
+  "id": "se-e22-satarod-va",
+  "country": "se",
+  "category": "highway",
+  "name": {
+    "en": "E22 Sätaröd–Vä",
+    "ro": "E22 Sätaröd–Vä"
+  },
+  "description": {
+    "en": "A new E22 motorway section between the Knopparp junction at Linderöd and the Nöbbelöv junction at Vä.",
+    "ro": "Un nou sector de autostradă E22 între nodul Knopparp de la Linderöd și nodul Nöbbelöv de la Vä."
+  },
+  "operator": "se-trafikverket",
+  "sources": [
+    {
+      "id": "trafikverket-e22-opening",
+      "title": "Trafikverket via TT: New E22 Sätaröd–Vä opened to traffic",
+      "url": "https://via.tt.se/pressmeddelande/3288570/klart-for-trafik-pa-nya-e22-mellan-satarod-och-va",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "peab-e22-satarod-va",
+      "title": "Peab: E22 Sätaröd–Vä motorway project",
+      "url": "https://peab.se/projekt/e22-satarod-va/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-e22-sweden",
+      "title": "OpenStreetMap: European route E22 in Sweden",
+      "url": "https://www.openstreetmap.org/relation/2144252",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "knopparp-nobbelov",
+      "name": {
+        "en": "Knopparp–Nöbbelöv",
+        "ro": "Knopparp–Nöbbelöv"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-01",
+        "opened": "2020-12-10"
+      },
+      "lengthKm": 15,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-01",
+          "sourceRef": "peab-e22-satarod-va",
+          "note": {
+            "en": "Peab records the project start in January 2018.",
+            "ro": "Peab înregistrează începutul proiectului în ianuarie 2018."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-10",
+          "sourceRef": "trafikverket-e22-opening",
+          "note": {
+            "en": "Trafikverket opened the new 15 km road section to traffic.",
+            "ro": "Trafikverket a deschis circulației noul sector de drum de 15 km."
+          }
+        }
+      ],
+      "note": {
+        "en": "Trafikverket identifies the ends as junctions Nöbbelöv at Vä and Knopparp at Linderöd. The OSM alignment measures 14.56 km, about 3% below the published 15 km.",
+        "ro": "Trafikverket identifică capetele la nodurile Nöbbelöv de la Vä și Knopparp de la Linderöd. Aliniamentul OSM măsoară 14,56 km, cu circa 3% sub cei 15 km publicați."
+      },
+      "sourceRefs": [
+        "trafikverket-e22-opening",
+        "peab-e22-satarod-va",
+        "osm-e22-sweden"
+      ],
+      "geometryRef": "knopparp-nobbelov"
+    }
+  ]
+}
