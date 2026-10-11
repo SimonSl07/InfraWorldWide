@@ -1,0 +1,75 @@
+{
+  "id": "es-madrid-valladolid",
+  "country": "es",
+  "category": "railway",
+  "name": {
+    "en": "Madrid–Valladolid high-speed railway",
+    "ro": "Calea ferată de mare viteză Madrid–Valladolid"
+  },
+  "description": {
+    "en": "The standard-gauge high-speed line from Madrid to Valladolid via Segovia.",
+    "ro": "Linia de mare viteză cu ecartament standard de la Madrid la Valladolid, prin Segovia."
+  },
+  "operator": "es-adif",
+  "lots": [
+    {
+      "id": "madrid-valladolid",
+      "name": {
+        "en": "Madrid–Valladolid high-speed line",
+        "ro": "Linia de mare viteză Madrid–Valladolid"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007"
+      },
+      "lengthKm": 178.5,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "ADIF reports 178.5 km for the Madrid–Valladolid line. The OSM geometry follows one track between Madrid-Chamartín and Valladolid-Campo Grande and measures about 181.6 km.",
+        "ro": "ADIF indică 178,5 km pentru linia Madrid–Valladolid. Geometria OSM urmează o singură cale între Madrid-Chamartín și Valladolid-Campo Grande și măsoară aproximativ 181,6 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007",
+          "sourceRef": "adif-2009-management",
+          "note": {
+            "en": "ADIF reports that the line entered service at the end of 2007.",
+            "ro": "ADIF indică faptul că linia a intrat în exploatare la sfârșitul anului 2007."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "adif-2009-management",
+        "adif-2013-sustainability",
+        "osm-madrid-valladolid"
+      ],
+      "geometryRef": "madrid-valladolid"
+    }
+  ],
+  "sources": [
+    {
+      "id": "adif-2009-management",
+      "title": "Informe de gestión 2009: Línea de alta velocidad Madrid–Valladolid–Norte",
+      "url": "https://www.adif.es/documents/20124/10261485/2009_INFORME%2BGESTI%C3%93N_ADIF.pdf/b8034699-434a-40a5-25c9-1aec35e8b9fa?t=1666598927211",
+      "publisher": "Adif",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "adif-2013-sustainability",
+      "title": "Informe de Sostenibilidad y Gobierno Corporativo 2013",
+      "url": "https://www.adif.es/documents/20124/4217183/2013_01_CA_MS.pdf/a3b0fa22-d6dc-d2d9-8627-b1a5e394d537?t=1664176822319",
+      "publisher": "Adif",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-madrid-valladolid",
+      "title": "OpenStreetMap: Madrid–Valladolid high-speed line, relation 4777557",
+      "url": "https://www.openstreetmap.org/relation/4777557",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

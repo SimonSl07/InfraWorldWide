@@ -1,0 +1,67 @@
+{
+  "id": "es-a54-palas-melide",
+  "country": "es",
+  "category": "highway",
+  "name": {
+    "en": "A-54 Palas de Rei–Melide",
+    "ro": "Autovía A-54 Palas de Rei–Melide"
+  },
+  "description": {
+    "en": "The A-54 section between Palas de Rei and Melide in Galicia.",
+    "ro": "Sectorul A-54 dintre Palas de Rei și Melide, în Galicia."
+  },
+  "operator": "es-ministerio-transportes",
+  "sources": [
+    {
+      "id": "ministry-a54-palas-melide",
+      "title": "Ministerio de Transportes: A-54 Palas de Rei–Melide section opened",
+      "url": "https://www.transportes.gob.es/carreteras/nuestro-trabajo/proyectos-y-obras/nuevos-tramos-en-servicio/2025/autovia-54-tramo-palas-de-rei-melide",
+      "publisher": "Ministerio de Transportes y Movilidad Sostenible",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-a54",
+      "title": "OpenStreetMap: A-54 route relation 4051452",
+      "url": "https://www.openstreetmap.org/relation/4051452",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "palas-de-rei-melide",
+      "name": {
+        "en": "Palas de Rei–Melide",
+        "ro": "Palas de Rei–Melide"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-02-03"
+      },
+      "lengthKm": 11.67,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "The ministry reports 11.67 km. The OSM line follows one carriageway from the Palas de Rei junction to the construction boundary near Melide and measures about 12.1 km.",
+        "ro": "Ministerul indică 11,67 km. Linia OSM urmează o singură cale de rulare de la nodul Palas de Rei până la limita sectorului în construcție de lângă Melide și măsoară aproximativ 12,1 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2025-02-03",
+          "sourceRef": "ministry-a54-palas-melide",
+          "note": {
+            "en": "The section opened to traffic.",
+            "ro": "Sectorul a fost deschis traficului."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "ministry-a54-palas-melide",
+        "osm-a54"
+      ],
+      "geometryRef": "palas-de-rei-melide"
+    }
+  ]
+}
