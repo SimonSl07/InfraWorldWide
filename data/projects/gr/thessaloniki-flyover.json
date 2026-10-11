@@ -49,15 +49,22 @@
         }
       },
       "note": {
-        "en": "Upgrade of the existing Inner Ring Road (A24) between junction K5 (Papageorgiou) and junction K12 (Charilaou–Moudanion). The PPP documents give 13 km; the contractor's presentation, quoted on 22 April 2026, gives 12 km of works, 9 grade-separated interchanges, 7.6 km of elevated avenue including its access ramps, 4 km of rapid-traffic bridge, 9 bridges, 2 covered structures and 1 tunnel. At signing the elevated road was given as 4 km, with 10 new bridges and 3 new tunnels. The construction duration is four years; no construction start date was found. Press reports give May 2027 for completion; the source calls the secure schedule 'spring 2027'. The contractor and concessionaire are not named in the sources found. Geometry follows one carriageway of the existing road from K5 to K12 and measures about 12.8 km; the elevated structures are not drawn separately.",
-        "ro": "Modernizarea Inelului Interior existent (A24) între nodul K5 (Papageorgiou) și nodul K12 (Charilaou–Moudanion). Documentele PPP indică 13 km; prezentarea constructorului, citată la 22 aprilie 2026, indică 12 km de lucrări, 9 noduri denivelate, 7,6 km de bulevard suprarelevat împreună cu rampele de acces, 4 km de pod pentru trafic rapid, 9 poduri, 2 structuri acoperite și 1 tunel. La semnare, drumul suprarelevat era dat la 4 km, cu 10 poduri noi și 3 tuneluri noi. Durata construcției este de patru ani; nu a fost găsită o dată de începere a lucrărilor. Presa indică mai 2027 pentru finalizare; sursa numește termenul sigur „primăvara 2027”. Constructorul și concesionarul nu sunt numiți în sursele găsite. Geometria urmează o singură cale a drumului existent de la K5 la K12 și măsoară circa 12,8 km; structurile suprarelevate nu sunt desenate separat."
+        "en": "Upgrade of the existing Inner Ring Road (A24) between junction K5 (Papageorgiou) and junction K12 (Charilaou–Moudanion). The PPP documents give 13 km; the contractor's presentation, quoted on 22 April 2026, gives 12 km of works, 9 grade-separated interchanges, 7.6 km of elevated avenue including its access ramps, 4 km of rapid-traffic bridge, 9 bridges, 2 covered structures and 1 tunnel. At signing the elevated road was given as 4 km, with 10 new bridges and 3 new tunnels. The construction duration is four years; no construction start date was found. Press reports give May 2027 for completion; the source calls the secure schedule 'spring 2027'. M CONCESSIONS states that MYTILINEOS and M CONCESSIONS, in cooperation with AVAX, are the contractors; it gives participation rates of 50% each without specifying the named parties those shares refer to. Geometry follows one carriageway of the existing road from K5 to K12 and measures about 12.8 km; the elevated structures are not drawn separately.",
+        "ro": "Modernizarea Inelului Interior existent (A24) între nodul K5 (Papageorgiou) și nodul K12 (Charilaou–Moudanion). Documentele PPP indică 13 km; prezentarea constructorului, citată la 22 aprilie 2026, indică 12 km de lucrări, 9 noduri denivelate, 7,6 km de bulevard suprarelevat împreună cu rampele de acces, 4 km de pod pentru trafic rapid, 9 poduri, 2 structuri acoperite și 1 tunel. La semnare, drumul suprarelevat era dat la 4 km, cu 10 poduri noi și 3 tuneluri noi. Durata construcției este de patru ani; nu a fost găsită o dată de începere a lucrărilor. Presa indică mai 2027 pentru finalizare; sursa numește termenul sigur „primăvara 2027”. M CONCESSIONS precizează că MYTILINEOS și M CONCESSIONS, în cooperare cu AVAX, sunt contractanții; indică cote de participare de 50% fiecare, fără să precizeze la care dintre părțile numite se referă. Geometria urmează o singură cale a drumului existent de la K5 la K12 și măsoară circa 12,8 km; structurile suprarelevate nu sunt desenate separat."
       },
       "sourceRefs": [
         "ypodomes-2022-12-19",
         "huffpost-2026-04-22",
-        "osm"
+        "osm",
+        "m-concessions-contract-signature"
       ],
-      "geometryRef": "k5-k12"
+      "geometryRef": "k5-k12",
+      "contractors": [
+        {
+          "name": "AVAX – MYTILINEOS – M CONCESSIONS consortium",
+          "role": "builder"
+        }
+      ]
     }
   ],
   "sources": [
@@ -80,7 +87,14 @@
       "title": "OpenStreetMap contributors (geometry, ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "m-concessions-contract-signature",
+      "title": "M CONCESSIONS: Flyover Thessaloniki – contract signature (19 December 2022)",
+      "url": "https://www.m-concessions.gr/en/news/flyover-thessaloniki-contract-signature/",
+      "publisher": "M CONCESSIONS",
+      "retrievedOn": "2026-10-11"
     }
   ],
-  "lastVerified": "2026-10-05"
+  "lastVerified": "2026-10-11"
 }

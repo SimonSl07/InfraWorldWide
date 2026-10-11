@@ -125,6 +125,9 @@
       },
       "status": "under_construction",
       "lengthKm": 20.2,
+      "dates": {
+        "constructionStart": "2023-10-30"
+      },
       "profile": {
         "works": "upgrade",
         "maxSpeedKmh": 160,
@@ -151,7 +154,19 @@
         "ro": "Km 42+200 – 62+400 (lungime din kilometraj). Include stația Verinsko, gara Ihtiman și stația Stambolovo, 4 pasaje, 3 poduri și 39 de podețe. Supraveghere: Zhp Trans DZZD. Proiectul de 51,044 km (14,544 km reînnoiți, 36,5 km linie dublă nouă) este proiectat pentru 160 km/h la trenurile de călători și 120 km/h la marfă. NCFI indică un total de 1,310 miliarde BGN și precizează că lucrările au început cu întârziere mare din cauza contestațiilor la planurile urbanistice, a exproprierilor lente și a COVID-19, de aceea proiectul a fost împărțit în două faze de finanțare."
       },
       "sourceRefs": [
-        "nric-ep-kostenets-phase2"
+        "nric-ep-kostenets-phase2",
+        "nric-news-4462"
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023-10-30",
+          "note": {
+            "en": "NRIC marked the start of construction for lot 2, Vakarel–Ihtiman.",
+            "ro": "NRIC a marcat începerea lucrărilor la lotul 2, Vakarel–Ihtiman."
+          },
+          "sourceRef": "nric-news-4462"
+        }
       ],
       "geometryRef": "elin-pelin-kostenets-lot-2"
     },
@@ -163,6 +178,9 @@
       },
       "status": "under_construction",
       "lengthKm": 11.2,
+      "dates": {
+        "constructionStart": "2022-09-15"
+      },
       "profile": {
         "works": "upgrade",
         "maxSpeedKmh": 160,
@@ -191,7 +209,19 @@
         "ro": "Km 62+400 – 73+598 (lungime din kilometraj). Include 8 tuneluri cu un singur tub pentru linie dublă, de circa 5.478 m în total, 2 viaducte de circa 1.005 m și 11 poduri de circa 777,70 m, plus stația Nemirovo. Supraveghere: Zhp Trans DZZD. Proiectul de 51,044 km (14,544 km reînnoiți, 36,5 km linie dublă nouă) este proiectat pentru 160 km/h la trenurile de călători și 120 km/h la marfă. NCFI indică un total de 1,310 miliarde BGN și precizează că lucrările au început cu întârziere mare din cauza contestațiilor la planurile urbanistice, a exproprierilor lente și a COVID-19, de aceea proiectul a fost împărțit în două faze de finanțare."
       },
       "sourceRefs": [
-        "nric-ep-kostenets-phase2"
+        "nric-ep-kostenets-phase2",
+        "nric-news-4418"
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2022-09-15",
+          "note": {
+            "en": "NRIC marked the start of construction for lot 3, Ihtiman–Kostenets.",
+            "ro": "NRIC a marcat începerea lucrărilor la lotul 3, Ihtiman–Kostenets."
+          },
+          "sourceRef": "nric-news-4418"
+        }
       ],
       "geometryRef": "elin-pelin-kostenets-lot-3"
     },
@@ -403,6 +433,18 @@
       "title": "BTA: До май месец 2027 г. БДЖ ще разполагат с общо 60 нови мотриси до 160 км/ч (24.09.2026)",
       "url": "https://www.bta.bg/bg/news/economy/1210588-do-may-mesets-2027-g-bdzh-shte-razpolagat-s-obshto-60-novi-motrisi-do-160-km-c",
       "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-news-4418",
+      "title": "NRIC: Стартира изграждането на Лот 3 на жп участък Елин Пелин - Костенец (15.09.2022)",
+      "url": "https://www.rail-infra.bg/bg/news/4418",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "nric-news-4462",
+      "title": "NRIC: Стартира изграждането на Лот 2 на жп участъка Елин Пелин - Костенец (30.10.2023)",
+      "url": "https://www.rail-infra.bg/bg/news/4462",
+      "retrievedOn": "2026-10-11"
     },
     {
       "title": "OpenStreetMap contributors (geometry, ODbL)",

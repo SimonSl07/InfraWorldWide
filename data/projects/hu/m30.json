@@ -1,0 +1,114 @@
+{
+  "id": "hu-m30",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M30 motorway: Miskolc–Szikszó",
+    "ro": "Autostrada M30: Miskolc–Szikszó"
+  },
+  "description": {
+    "en": "This record covers only construction section A, Miskolc–Szikszó (km 30+100–40+500), of the official Miskolc–Tornyosnémeti project. The other construction sections are not included. Section A opened in 2021, closed in February 2024 after subsidence, and reopened on 30 December 2025.",
+    "ro": "Această înregistrare acoperă numai secțiunea de construcție A, Miskolc–Szikszó (km 30+100–40+500), din proiectul oficial Miskolc–Tornyosnémeti. Celelalte secțiuni de construcție nu sunt incluse. Secțiunea A a fost deschisă în 2021, închisă în februarie 2024 după tasare și redeschisă la 30 decembrie 2025."
+  },
+  "lastVerified": "2026-10-11",
+  "lots": [
+    {
+      "id": "miskolc-szikso",
+      "name": {
+        "en": "Miskolc–Szikszó, construction section A",
+        "ro": "Miskolc–Szikszó, secțiunea de construcție A"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-10"
+      },
+      "lengthKm": 10.4,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2021-10",
+          "note": {
+            "en": "The project portal reports traffic handover on 19 October 2021, while the traffic-use permit took effect on 22 October at 08:00. The opening day is unresolved, so this record uses month precision. The government records the opening ceremony on 26 October.",
+            "ro": "Portalul proiectului indică darea în circulație la 19 octombrie 2021, în timp ce autorizația de circulație a intrat în vigoare la 22 octombrie, ora 08:00. Ziua deschiderii nu este clară, deci înregistrarea folosește doar luna. Guvernul consemnează ceremonia de inaugurare la 26 octombrie."
+          },
+          "sourceRef": "m30-government-project"
+        },
+        {
+          "kind": "suspended",
+          "date": "2024-02",
+          "note": {
+            "en": "The section was closed after subsidence.",
+            "ro": "Secțiunea a fost închisă după tasare."
+          },
+          "sourceRef": "m30-closure-ministry"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-30",
+          "note": {
+            "en": "MKIF reported that unrestricted traffic resumed at 10:30. The minister had earlier announced 18:00.",
+            "ro": "MKIF a anunțat reluarea circulației fără restricții la ora 10:30. Ministrul anunțase anterior ora 18:00."
+          },
+          "sourceRef": "m30-reopening-mkif"
+        }
+      ],
+      "note": {
+        "en": "Official limits are km 30+100–40+500, length 10.4 km. OSM relation 23060 represents the M30 route; geometry follows one carriageway. Its route distance was calibrated linearly to the official Miskolc-north junction at km 32+050 and Szikszó interchange at km 39+836.41. The resulting line measures 10.31 km. Traffic opening is recorded as October 2021 only: the project portal lists 19 October, the traffic-use permit takes effect on 22 October at 08:00, and the government records the ceremony on 26 October. The ministry reports closure in February 2024; MKIF later reported reopening at 10:30 on 30 December 2025, before the minister’s announced 18:00 time.",
+        "ro": "Limitele oficiale sunt km 30+100–40+500, lungimea fiind 10,4 km. Relația OSM 23060 reprezintă traseul M30; geometria urmează o singură cale. Distanța traseului OSM a fost calibrată liniar la nodul Miskolc-észak de la km 32+050 și la nodul Szikszó de la km 39+836,41. Linia rezultată măsoară 10,31 km. Deschiderea pentru trafic este înregistrată doar ca octombrie 2021: portalul proiectului indică 19 octombrie, autorizația de circulație intră în vigoare la 22 octombrie, ora 08:00, iar guvernul consemnează ceremonia la 26 octombrie. Ministerul confirmă închiderea în februarie 2024; MKIF a anunțat ulterior redeschiderea la ora 10:30 în 30 decembrie 2025, înainte de ora 18:00 anunțată de ministru."
+      },
+      "sourceRefs": [
+        "m30-government-project",
+        "m30-commissioning-permit",
+        "m30-closure-ministry",
+        "m30-reopening-mkif",
+        "osm-relation-m30",
+        "m30-opening-ceremony"
+      ],
+      "geometryRef": "miskolc-szikso"
+    }
+  ],
+  "sources": [
+    {
+      "id": "m30-government-project",
+      "title": "Ministry of Construction and Transport: M30 motorway Miskolc–Tornyosnémeti project, construction sections and lengths",
+      "url": "https://beruhazas.gov.hu/projektek/m30-gyorsforgalmi-ut-miskolc-tornyosnemeti-kozotti-szakasz/9119",
+      "publisher": "Közlekedési és Beruházási Minisztérium",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "m30-commissioning-permit",
+      "title": "Budapest Government Office: M30 Miskolc–Tornyosnémeti traffic-use permit, km 30+100–86+848.05",
+      "url": "https://kormanyhivatalok.hu/sites/default/files/2025-10/bp_0801_00872_45_2021_hatarozat.pdf",
+      "publisher": "Budapest Government Office",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "m30-closure-ministry",
+      "title": "Ministry of Construction and Transport: Arnót roundabout works after the M30 closure",
+      "url": "https://beruhazas.gov.hu/hirek/elkezdodtek-az-arnoti-korforgalom-bovitesenek-munkalatai/48863",
+      "publisher": "Közlekedési és Beruházási Minisztérium",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "m30-reopening-mkif",
+      "title": "Magyar Építők: reopened M30 section, reporting MKIF reopening notice",
+      "url": "https://magyarepitok.hu/utepites/2025/12/ma-este-megnyithatjak-az-m30-as-helyreallitott-szakaszat",
+      "publisher": "Magyar Építők, quoting MKIF Zrt.",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-relation-m30",
+      "title": "OpenStreetMap contributors: relation 23060, M30 route and member ways (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/23060",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "m30-opening-ceremony",
+      "title": "Government of Hungary: M30 opening ceremony in Tornyosnémeti, 26 October 2021",
+      "url": "https://kormany.hu/kormanyzat/miniszterelnok/galeriak/atadtak-az-m30-as-autopalya-tornyosnemetiig-tarto-szakaszat",
+      "publisher": "Government of Hungary",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}
