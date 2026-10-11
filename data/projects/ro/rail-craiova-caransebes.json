@@ -196,9 +196,24 @@
       },
       "sourceRefs": [
         "cfr-ro-2026-06-25-lot3",
-        "osm"
+        "osm",
+        "cfr-ro-stadiu-2026-09"
       ],
-      "geometryRef": "l3-igiroasa-drobeta"
+      "geometryRef": "l3-igiroasa-drobeta",
+      "dates": {
+        "tenderAwarded": "2026-06-24"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-06-24",
+          "note": {
+            "en": "CFR lists FCC Construccion S.A. as the selected winner on this date; no contract signing is reported.",
+            "ro": "CFR îl indică pe FCC Construccion S.A. drept câștigător desemnat la această dată; raportul nu consemnează semnarea contractului."
+          },
+          "sourceRef": "cfr-ro-stadiu-2026-09"
+        }
+      ]
     },
     {
       "id": "l4-drobeta-baile-herculane",
@@ -470,6 +485,13 @@
       "url": "https://www.openstreetmap.org/copyright",
       "publisher": "OpenStreetMap",
       "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "cfr-ro-stadiu-2026-09",
+      "title": "CFR SA: Stadiul proiectelor de reabilitare/modernizare infrastructură feroviară, August 2026 (publicat septembrie 2026)",
+      "url": "https://cfr.ro/wp-content/uploads/2026/09/Stadiu-proiecte-CFR-August-Septembrie-2026-1.pdf",
+      "publisher": "CFR SA",
+      "retrievedOn": "2026-10-11"
     }
   ]
 }
