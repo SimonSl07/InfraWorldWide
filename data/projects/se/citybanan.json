@@ -1,0 +1,63 @@
+{
+  "id": "se-citybanan",
+  "country": "se",
+  "category": "railway",
+  "name": {
+    "en": "Citybanan (Stockholm City Line)",
+    "ro": "Citybanan (linia feroviară urbană din Stockholm)"
+  },
+  "description": {
+    "en": "A six-kilometre commuter railway tunnel between Tomteboda and Stockholm Södra, with stations at Stockholm City and Odenplan.",
+    "ro": "Un tunel feroviar pentru trenurile suburbane, lung de șase kilometri, între Tomteboda și Stockholm Södra, cu stații la Stockholm City și Odenplan."
+  },
+  "operator": "se-trafikverket",
+  "stationCount": 2,
+  "sources": [
+    {
+      "id": "trafikverket-citybanan",
+      "title": "Trafikverket: Citybanan",
+      "url": "https://www.trafikverket.se/resa-och-trafik/jarnvag/Sveriges-jarnvagsnat/Citybanan/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "trafikverket-citybanan-opening",
+      "title": "Trafikverket via TT: Changed travel routes during the Citybanan connection work",
+      "url": "https://via.tt.se/pressmeddelande/1570895/andrade-resvagar-under-inkopplingen-av-citybanan",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-citybanan",
+      "title": "OpenStreetMap: Citybanan railway route relation",
+      "url": "https://www.openstreetmap.org/relation/6804332",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "stockholms-sodra-tomteboda",
+      "name": {
+        "en": "Stockholm Södra–Tomteboda",
+        "ro": "Stockholm Södra–Tomteboda"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-07-10"
+      },
+      "lengthKm": 6,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 6
+      },
+      "note": {
+        "en": "Trafikverket gives the tunnel length as 6 km. The drawn OSM alignment follows one track and measures about 5.66 km.",
+        "ro": "Trafikverket indică o lungime de 6 km pentru tunel. Aliniamentul OSM reprezentat urmează o singură cale și măsoară aproximativ 5,66 km."
+      },
+      "sourceRefs": [
+        "trafikverket-citybanan",
+        "trafikverket-citybanan-opening",
+        "osm-citybanan"
+      ],
+      "geometryRef": "stockholms-sodra-tomteboda"
+    }
+  ]
+}
