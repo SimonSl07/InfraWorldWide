@@ -1,0 +1,93 @@
+{
+  "id": "nl-a24-blankenburgverbinding",
+  "country": "nl",
+  "category": "highway",
+  "name": {
+    "en": "Blankenburg Connection (A24)",
+    "ro": "Legătura Blankenburg (A24)"
+  },
+  "description": {
+    "en": "A new tolled motorway link between the A20 west of Vlaardingen and the A15 near Rozenburg.",
+    "ro": "O legătură nouă de autostradă cu taxă între A20, la vest de Vlaardingen, și A15, lângă Rozenburg."
+  },
+  "operator": "nl-rws",
+  "sources": [
+    {
+      "id": "rws-a24-opened",
+      "title": "Rijkswaterstaat: A24 (Blankenburgverbinding) opened to traffic",
+      "url": "https://www.rijkswaterstaat.nl/nieuws/archief/2024/12/a24-blankenburgverbinding-geopend-voor-verkeer",
+      "publisher": "Rijkswaterstaat",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "rws-a24-facts",
+      "title": "Rijkswaterstaat: A24 motorway facts",
+      "url": "https://www.rijkswaterstaat.nl/wegen/wegenoverzicht/a24",
+      "publisher": "Rijkswaterstaat",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-a24",
+      "title": "OpenStreetMap: A24 route relation 14655709",
+      "url": "https://www.openstreetmap.org/relation/14655709",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "a20-vlaardingen-a15-rozenburg",
+      "name": {
+        "en": "A20 Vlaardingen–A15 Rozenburg",
+        "ro": "A20 Vlaardingen–A15 Rozenburg"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018",
+        "opened": "2024-12-07"
+      },
+      "lengthKm": 4.5,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 6,
+        "tolled": true
+      },
+      "contractors": [
+        {
+          "name": "BAAK",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The A24 includes the Hollandtunnel and Maasdeltatunnel. The OSM line follows one carriageway of route relation 14655709 and measures 4.15 km, against Rijkswaterstaat's published 4.5 km route length.",
+        "ro": "A24 include tunelul Holland și tunelul Maasdeltatunnel. Linia OSM urmărește o singură cale de rulare din relația rutei 14655709 și măsoară 4,15 km, față de lungimea publicată de Rijkswaterstaat de 4,5 km."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018",
+          "sourceRef": "rws-a24-opened",
+          "note": {
+            "en": "Rijkswaterstaat and construction consortium BAAK began work on the project.",
+            "ro": "Rijkswaterstaat și consorțiul de construcții BAAK au început lucrările la proiect."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-07",
+          "sourceRef": "rws-a24-opened",
+          "note": {
+            "en": "The A24 opened to traffic.",
+            "ro": "A24 a fost deschisă traficului."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "rws-a24-opened",
+        "rws-a24-facts",
+        "osm-a24"
+      ],
+      "geometryRef": "a20-vlaardingen-a15-rozenburg"
+    }
+  ]
+}
