@@ -20,7 +20,7 @@
       },
       "status": "under_construction",
       "dates": {
-        "tenderAwarded": "2023-04",
+        "tenderAwarded": "2023-04-21",
         "expectedOpening": "2028-11-08"
       },
       "lengthKm": 16.4,
@@ -58,9 +58,21 @@
         "ypodomes-2025-06-02",
         "sditforum-axis",
         "anagnostis-2025-12-07",
-        "osm"
+        "osm",
+        "primeminister-kalamata-2023-04-21"
       ],
-      "geometryRef": "kalamata-rizomylos"
+      "geometryRef": "kalamata-rizomylos",
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-04-21",
+          "sourceRef": "primeminister-kalamata-2023-04-21",
+          "note": {
+            "en": "The PPP contract covering the full Kalamata–Rizomylos–Pylos–Methoni axis was signed.",
+            "ro": "A fost semnat contractul PPP pentru întreaga axă Kalamata–Rizomylos–Pylos–Methoni."
+          }
+        }
+      ]
     },
     {
       "id": "rizomylos-pylos",
@@ -70,7 +82,7 @@
       },
       "status": "under_construction",
       "dates": {
-        "tenderAwarded": "2023-04",
+        "tenderAwarded": "2023-04-21",
         "expectedOpening": "2028-11-08"
       },
       "lengthKm": 24.4,
@@ -105,9 +117,21 @@
         "ypodomes-2025-11-17",
         "anagnostis-2025-12-07",
         "sditforum-axis",
-        "osm"
+        "osm",
+        "primeminister-kalamata-2023-04-21"
       ],
-      "geometryRef": "rizomylos-pylos"
+      "geometryRef": "rizomylos-pylos",
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-04-21",
+          "sourceRef": "primeminister-kalamata-2023-04-21",
+          "note": {
+            "en": "The PPP contract covering the full Kalamata–Rizomylos–Pylos–Methoni axis was signed.",
+            "ro": "A fost semnat contractul PPP pentru întreaga axă Kalamata–Rizomylos–Pylos–Methoni."
+          }
+        }
+      ]
     },
     {
       "id": "pylos-methoni",
@@ -117,7 +141,7 @@
       },
       "status": "under_construction",
       "dates": {
-        "tenderAwarded": "2023-04",
+        "tenderAwarded": "2023-04-21",
         "expectedOpening": "2028-11-08"
       },
       "lengthKm": 7.9,
@@ -154,9 +178,21 @@
         "ypodomes-2023-04-22",
         "sditforum-axis",
         "anagnostis-2025-12-07",
-        "osm"
+        "osm",
+        "primeminister-kalamata-2023-04-21"
       ],
-      "geometryRef": "pylos-methoni"
+      "geometryRef": "pylos-methoni",
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-04-21",
+          "sourceRef": "primeminister-kalamata-2023-04-21",
+          "note": {
+            "en": "The PPP contract covering the full Kalamata–Rizomylos–Pylos–Methoni axis was signed.",
+            "ro": "A fost semnat contractul PPP pentru întreaga axă Kalamata–Rizomylos–Pylos–Methoni."
+          }
+        }
+      ]
     }
   ],
   "cost": {
@@ -208,6 +244,13 @@
       "title": "OpenStreetMap contributors (geometry, ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "primeminister-kalamata-2023-04-21",
+      "title": "Presidency of the Government: Kalamata–Rizomylos–Pylos–Methoni contract signing",
+      "url": "https://www.primeminister.gr/2023/04/21/31725",
+      "publisher": "Presidency of the Government of Greece",
+      "retrievedOn": "2026-10-11"
     }
   ],
   "lastVerified": "2026-10-05"
