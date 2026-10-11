@@ -1,0 +1,91 @@
+{
+  "id": "no-follobanen",
+  "country": "no",
+  "category": "railway",
+  "name": {
+    "en": "Follo Line",
+    "ro": "Linia Follo"
+  },
+  "description": {
+    "en": "A new double-track express railway between Oslo Central Station and Ski, including the 19.5 km Blixtunnel.",
+    "ro": "O linie feroviară expres nouă cu cale dublă între Gara Centrală Oslo și Ski, inclusiv tunelul Blixta de 19,5 km."
+  },
+  "operator": "no-bane-nor",
+  "sources": [
+    {
+      "id": "follobanen-dimensions",
+      "title": "Jernbanedirektoratet: Follobanen line description",
+      "url": "https://www.jernbanedirektoratet.no/jernbanestrekning/follobanen/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "follobanen-start-open",
+      "title": "Bane NOR: King Harald opened the Follo Line",
+      "url": "https://www.banenor.no/nyheter-og-aktuelt/hendelser/follobanen-i-2022/hans-majestet-kongen-apnet-follobanen/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "follobanen-reopen",
+      "title": "Bane NOR: Welcome back to the Follo Line",
+      "url": "https://www.banenor.no/nyheter-og-aktuelt/hendelser/follobanen-i-2022/velkommen-tilbake-til-follobanen/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-follobanen",
+      "title": "OpenStreetMap: Follobanen railway route relation",
+      "url": "https://www.openstreetmap.org/relation/8257734",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "oslo-ski",
+      "name": {
+        "en": "Oslo Central–Ski",
+        "ro": "Oslo Central–Ski"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2015",
+        "opened": "2023-03-05"
+      },
+      "lengthKm": 22,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "tunnelKm": 19.5
+      },
+      "note": {
+        "en": "Bane NOR first opened the line on 11 December 2022. Following a closure for repairs, it reopened for passenger traffic on 5 March 2023. The mapped OSM alignment is 21.67 km, close to the published 22 km.",
+        "ro": "Bane NOR a deschis linia pentru prima dată la 11 decembrie 2022. După o închidere pentru reparații, linia s-a redeschis pentru traficul de pasageri la 5 martie 2023. Aliniamentul OSM măsoară 21,67 km, apropiat de cei 22 km publicați."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2015",
+          "sourceRef": "follobanen-start-open",
+          "note": {
+            "en": "Bane NOR records that construction began in 2015.",
+            "ro": "Bane NOR consemnează că lucrările au început în 2015."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2023-03-05",
+          "sourceRef": "follobanen-reopen",
+          "note": {
+            "en": "The line reopened for passenger traffic after repair work.",
+            "ro": "Linia s-a redeschis pentru traficul de pasageri după lucrările de reparații."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "follobanen-dimensions",
+        "follobanen-start-open",
+        "follobanen-reopen",
+        "osm-follobanen"
+      ],
+      "geometryRef": "oslo-ski"
+    }
+  ]
+}

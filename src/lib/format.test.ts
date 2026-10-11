@@ -18,6 +18,9 @@ describe("formatMoney", () => {
     expect(formatMoney({ amount: 42, currency: "USD", year: 2020 }, "en")).toBe(
       "$42M",
     );
+    expect(formatMoney({ amount: 10, currency: "NOK", year: 2020 }, "en")).toBe(
+      "kr10M",
+    );
   });
   it("rolls up to billions", () => {
     expect(
