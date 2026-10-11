@@ -28,6 +28,15 @@
           "kind": "opened",
           "date": "1994-05-03",
           "sourceRef": "hu-wikipedia-motorways"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-08-23",
+          "note": {
+            "en": "The M1–M6 section had been widened to three lanes per direction and opened to traffic.",
+            "ro": "Secțiunea M1–M6 fusese lărgită la trei benzi pe sens și deschisă circulației."
+          },
+          "sourceRef": "nfm-2012-m0-widening"
         }
       ],
       "note": {
@@ -40,7 +49,8 @@
         "nif-project-m0-m1-m6",
         "nif-project-m0-m1-m7",
         "osm-relation-m0",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "nfm-2012-m0-widening"
       ],
       "geometryRef": "m1-route6"
     },
@@ -60,6 +70,15 @@
           "kind": "opened",
           "date": "1990-11-16",
           "sourceRef": "hu-wikipedia-motorways"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2013-06-30",
+          "note": {
+            "en": "The 11 km southbound carriageway between M6 and Road 51 opened with three traffic lanes and one shoulder lane.",
+            "ro": "Calea spre sud de 11 km dintre M6 și drumul 51 a fost deschisă cu trei benzi de circulație și una de urgență."
+          },
+          "sourceRef": "nfm-2013-m0-widening"
         }
       ],
       "note": {
@@ -71,7 +90,8 @@
         "hu-wikipedia-m0",
         "nif-project-m0-m6-51",
         "osm-relation-m0",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "nfm-2013-m0-widening"
       ],
       "geometryRef": "route6-route51"
     },
@@ -533,6 +553,18 @@
       "title": "OpenStreetMap contributors: route geometry (ODbL)",
       "url": "https://www.openstreetmap.org/",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "nfm-2012-m0-widening",
+      "title": "National Development Ministry: M0 widened section M1–M6 opened",
+      "url": "https://2010-2014.kormany.hu/hu/nemzeti-fejlesztesi-miniszterium/hirek/atadtak-az-m0-kiszelesitett-elso-szakaszat",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "nfm-2013-m0-widening",
+      "title": "National Development Ministry: M0 south sector M6–Road 51 widening, traffic opening",
+      "url": "https://2010-2014.kormany.hu/hu/nemzeti-fejlesztesi-miniszterium/infrastrukturaert-elelos-allamtitkarsag/hirek/vege-a-mindennapos-forgalmi-dugoknak-az-m0-deli-szektoraban",
+      "retrievedOn": "2026-10-11"
     }
   ],
   "lastVerified": "2026-10-10"
