@@ -1,0 +1,93 @@
+{
+  "id": "de-nbs-wendlingen-ulm",
+  "country": "de",
+  "category": "railway",
+  "name": {
+    "en": "Wendlingen–Ulm high-speed railway",
+    "ro": "Calea ferată de mare viteză Wendlingen–Ulm"
+  },
+  "description": {
+    "en": "A new high-speed railway line across the Swabian Jura, linking Wendlingen with Ulm.",
+    "ro": "O linie feroviară nouă de mare viteză peste Jura Șvabă, care leagă Wendlingen de Ulm."
+  },
+  "operator": "de-db-infrago",
+  "sources": [
+    {
+      "id": "db-nbs-wendlingen-ulm",
+      "title": "Bahnprojekt Stuttgart–Ulm: Schnellfahrstrecke Wendlingen–Ulm",
+      "url": "https://www.bahnprojekt-stuttgart-ulm.de/projekt/was-wir-bauen/schnellfahrstrecke-wendlingen-ulm",
+      "publisher": "Bahnprojekt Stuttgart–Ulm / Deutsche Bahn",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "db-nbs-opening",
+      "title": "Bahnprojekt Stuttgart–Ulm: Neubaustrecke Wendlingen–Ulm goes into operation",
+      "url": "https://www.bahnprojekt-stuttgart-ulm.de/projekt/ueber-uns/presse/Neubaustrecke-Wendlingen-Ulm-Tempomacher-fuer-den-Bahnverkehr-in-ganz-Deutschland-geht-in-Betrieb-13448492",
+      "publisher": "Deutsche Bahn",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "db-infrago-profile",
+      "title": "DB InfraGO: Unser Profil",
+      "url": "https://www.dbinfrago.com/web/unternehmen/ueber-uns/profil-12600170",
+      "publisher": "DB InfraGO AG",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-nbs-wendlingen-ulm",
+      "title": "OpenStreetMap: Wendlingen–Ulm new high-speed line, relation 12308943",
+      "url": "https://www.openstreetmap.org/relation/12308943",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "wendlingen-ulm",
+      "name": {
+        "en": "Wendlingen–Ulm high-speed line",
+        "ro": "Linia de mare viteză Wendlingen–Ulm"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2012",
+        "opened": "2022-12-09"
+      },
+      "lengthKm": 60,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "DB reports the route as around 60 km. The OSM geometry follows one track and measures about 58.6 km.",
+        "ro": "DB indică o lungime a traseului de aproximativ 60 km. Geometria OSM urmează o singură cale și măsoară aproximativ 58,6 km."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2012",
+          "sourceRef": "db-nbs-wendlingen-ulm",
+          "note": {
+            "en": "DB reports the first groundbreaking in 2012.",
+            "ro": "DB indică prima ceremonie de începere a lucrărilor în 2012."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-09",
+          "sourceRef": "db-nbs-opening",
+          "note": {
+            "en": "The new line officially entered operation.",
+            "ro": "Noua linie a intrat oficial în exploatare."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "db-nbs-wendlingen-ulm",
+        "db-nbs-opening",
+        "db-infrago-profile",
+        "osm-nbs-wendlingen-ulm"
+      ],
+      "geometryRef": "wendlingen-ulm"
+    }
+  ]
+}
