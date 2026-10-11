@@ -772,6 +772,43 @@ describe("checkEvents", () => {
     });
     expect(checkEvents([p]).warnings[0]).toContain("constructionStart");
   });
+
+  it.each(["2018-10-11", "2022-05-19"])(
+    "accepts tenderAwarded %s when it matches any out-of-order award event",
+    (tenderAwarded) => {
+      const p = withSource({
+        status: "opened",
+        dates: { tenderAwarded, opened: "2024-09-30" },
+        events: [
+          { kind: "awarded", date: "2022-05-19", sourceRef: "src-a" },
+          {
+            kind: "contract_terminated",
+            date: "2021-05-14",
+            sourceRef: "src-a",
+          },
+          { kind: "tender_launched", date: "2021-07-23", sourceRef: "src-a" },
+          { kind: "awarded", date: "2018-10-11", sourceRef: "src-a" },
+          { kind: "opened", date: "2024-09-30", sourceRef: "src-a" },
+        ],
+      });
+      expect(checkEvents([p])).toEqual({ errors: [], warnings: [] });
+    },
+  );
+
+  it("warns when tenderAwarded matches none of the award events", () => {
+    const p = withSource({
+      status: "opened",
+      dates: { tenderAwarded: "2020-01-01" },
+      events: [
+        { kind: "awarded", date: "2018-10-11", sourceRef: "src-a" },
+        { kind: "awarded", date: "2022-05-19", sourceRef: "src-a" },
+        { kind: "opened", date: "2024-09-30", sourceRef: "src-a" },
+      ],
+    });
+    expect(checkEvents([p]).warnings.join(" ")).toContain(
+      'event "awarded" (2018-10-11) disagrees with dates.tenderAwarded (2020-01-01)',
+    );
+  });
 });
 
 describe("checkCostRevisions", () => {

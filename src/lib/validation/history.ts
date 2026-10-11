@@ -145,11 +145,21 @@ export function checkEvents(projects: Project[]): GeometryReport {
         ["opened", "opened"],
         ["awarded", "tenderAwarded"],
       ] as const) {
-        const event = events.find((e) => e.kind === kind);
         const recorded = lot.dates?.[field];
-        if (!event || !recorded) continue;
-        const n = Math.min(event.date.length, recorded.length);
-        if (event.date.slice(0, n) !== recorded.slice(0, n)) {
+        if (!recorded) continue;
+        const matchingEvents = events.filter((e) => e.kind === kind);
+        if (matchingEvents.length === 0) continue;
+        const matchesRecorded = (event: (typeof matchingEvents)[number]) => {
+          const n = Math.min(event.date.length, recorded.length);
+          return event.date.slice(0, n) === recorded.slice(0, n);
+        };
+        // A lot may have more than one valid award after a contract is
+        // terminated and re-let. The dates block may describe either award.
+        const event =
+          kind === "awarded"
+            ? (matchingEvents.find(matchesRecorded) ?? matchingEvents[0])
+            : matchingEvents[0];
+        if (!matchesRecorded(event)) {
           warnings.push(
             `${at} event "${kind}" (${event.date}) disagrees with dates.${field} (${recorded})`,
           );
