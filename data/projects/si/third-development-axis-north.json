@@ -21,12 +21,13 @@
       "status": "under_construction",
       "lengthKm": 17.5,
       "note": {
-        "en": "OpenStreetMap currently maps only a 2.85 km H8 construction fragment, not the complete 17.5 km route. The drawn fragment is incomplete.",
-        "ro": "OpenStreetMap cartografiază în prezent doar un fragment H8 în construcție de 2,85 km, nu traseul complet de 17,5 km. Fragmentul desenat este incomplet."
+        "en": "OpenStreetMap currently maps only a 2.85 km H8 construction fragment, not the complete 17.5 km route. The drawn fragment is incomplete. DARS reported that the contractors declared construction complete on packages B (Škalsko jezero) and H (Konovo) on 29 December 2025; inspections, defect correction and testing of the Konovo tunnel equipment followed. DARS lists EUR 70.3 million as the combined contract value of those two packages only, not the full Velenje–Slovenj Gradec section. VAT basis is not stated, so no structured cost is recorded.",
+        "ro": "OpenStreetMap cartografiază în prezent doar un fragment H8 în construcție de 2,85 km, nu traseul complet de 17,5 km. Fragmentul desenat este incomplet. DARS a raportat că executanții au declarat finalizate lucrările la pachetele B (Škalsko jezero) și H (Konovo) la 29 decembrie 2025; au urmat inspecțiile, remedierea deficiențelor și testarea echipamentului din tunelul Konovo. DARS indică 70,3 milioane EUR drept valoare cumulată a contractelor numai pentru aceste două pachete, nu pentru întregul sector Velenje–Slovenj Gradec. Sursa nu precizează regimul TVA, deci nu se înregistrează un cost structurat."
       },
       "sourceRefs": [
         "dars-third-axis",
-        "osm-h8-fragments"
+        "osm-h8-fragments",
+        "dars-annual-report-2025"
       ],
       "geometryRef": "velenje-slovenj-gradec"
     }
@@ -42,6 +43,13 @@
       "id": "osm-h8-fragments",
       "title": "OpenStreetMap contributors: H8 construction fragments near Slovenj Gradec (ODbL)",
       "url": "https://www.openstreetmap.org/?mlat=46.46&mlon=15.09#map=14/46.46/15.09",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "dars-annual-report-2025",
+      "title": "DARS annual report 2025: Third Development Axis North, Velenje to Slovenj Gradec works and packages B/H",
+      "url": "https://www.dars.si/Content/doc/letna-porocila/LP%20DARS%202025.pdf",
+      "publisher": "DARS d.d.",
       "retrievedOn": "2026-10-11"
     }
   ]
