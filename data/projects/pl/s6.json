@@ -1653,6 +1653,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2018-06-11",
+        "constructionStart": "2020-01-31",
         "opened": "2022-12-21"
       },
       "lengthKm": 10.4,
@@ -1712,6 +1713,15 @@
           "sourceRef": "msbd-bozepole-luzino"
         },
         {
+          "kind": "construction_start",
+          "date": "2020-01-31",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2022-12-21",
           "note": {
@@ -1730,7 +1740,8 @@
         "gddkia-bozepole-luzino-offer",
         "plwiki-trasa-kaszubska",
         "osm-s6-relation",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "bozepole-luzino"
     },
@@ -1743,6 +1754,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2018-06-11",
+        "constructionStart": "2019-11-12",
         "opened": "2022-12-21"
       },
       "lengthKm": 10.3,
@@ -1788,6 +1800,15 @@
           "sourceRef": "msbd-luzino-szemud"
         },
         {
+          "kind": "construction_start",
+          "date": "2019-11-12",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2022-12-21",
           "note": {
@@ -1806,7 +1827,8 @@
         "gddkia-luzino-szemud-offer",
         "plwiki-trasa-kaszubska",
         "osm-s6-relation",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "luzino-szemud"
     },
@@ -1819,6 +1841,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2018-03-26",
+        "constructionStart": "2019-09-24",
         "opened": "2022-12-21"
       },
       "lengthKm": 20.19,
@@ -1863,6 +1886,15 @@
           "sourceRef": "gddkia-szemud-gdynia-contract"
         },
         {
+          "kind": "construction_start",
+          "date": "2019-09-24",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2022-12-21",
           "note": {
@@ -1882,7 +1914,8 @@
         "plwiki-trasa-kaszubska",
         "plwiki-omt",
         "osm-s6-relation",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "szemud-gdynia-wielki-kack"
     }
@@ -2129,6 +2162,13 @@
       "title": "KIO ruling KIO 1680/22 and KIO 1682/22: S6 Szczecin western bypass chainages",
       "url": "https://orzeczenia.uzp.gov.pl/Home/PdfContent/17733?Kind=KIO",
       "publisher": "Krajowa Izba Odwoławcza",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "gddkia-road-project-status-report-10",
+      "title": "GDDKiA: CZD data for PIU ZBP under the National Road Construction Programme, report 10",
+      "url": "https://www.gov.pl/attachment/61158448-395b-4ac0-ad32-c70e2a9b8d89",
+      "publisher": "GDDKiA",
       "retrievedOn": "2026-10-11"
     }
   ]
