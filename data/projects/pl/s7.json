@@ -966,6 +966,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2017-08-17",
+        "constructionStart": "2020-02-27",
         "opened": "2022-08-30"
       },
       "lengthKm": 6.6,
@@ -1040,6 +1041,15 @@
           "sourceRef": "gddkia-warszawa-grojec"
         },
         {
+          "kind": "construction_start",
+          "date": "2020-02-27",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2022-08-30",
           "note": {
@@ -1058,7 +1068,8 @@
         "gddkia-warszawa-grojec",
         "gddkia-warszawa-grojec-contracts",
         "osm-relation-s7",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "lotnisko-lesznowola"
     },
@@ -1071,6 +1082,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2017-08-17",
+        "constructionStart": "2021-06-23",
         "opened": "2023-04-28"
       },
       "lengthKm": 14.8,
@@ -1136,6 +1148,15 @@
           "sourceRef": "gddkia-warszawa-grojec"
         },
         {
+          "kind": "construction_start",
+          "date": "2021-06-23",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2023-04-28",
           "note": {
@@ -1153,7 +1174,8 @@
         "plwiki-s7",
         "gddkia-warszawa-grojec",
         "osm-relation-s7",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "lesznowola-tarczyn-polnoc"
     },
@@ -1166,6 +1188,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2017-08-17",
+        "constructionStart": "2018-12-14",
         "opened": "2020-12-17"
       },
       "lengthKm": 7.9,
@@ -1213,6 +1236,15 @@
           "sourceRef": "gddkia-warszawa-grojec-contracts"
         },
         {
+          "kind": "construction_start",
+          "date": "2018-12-14",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2020-12-17",
           "note": {
@@ -1231,7 +1263,8 @@
         "gddkia-warszawa-grojec",
         "gddkia-warszawa-grojec-contracts",
         "osm-relation-s7",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "tarczyn-polnoc-gluchow"
     },
@@ -2514,6 +2547,13 @@
       "title": "OpenStreetMap contributors (ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-09"
+    },
+    {
+      "id": "gddkia-road-project-status-report-10",
+      "title": "GDDKiA: CZD data for PIU ZBP under the National Road Construction Programme, report 10",
+      "url": "https://www.gov.pl/attachment/61158448-395b-4ac0-ad32-c70e2a9b8d89",
+      "publisher": "GDDKiA",
+      "retrievedOn": "2026-10-11"
     }
   ]
 }

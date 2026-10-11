@@ -43,6 +43,24 @@
       "title": "OpenStreetMap: second Blue Line construction track, Akalla?Barkarby",
       "url": "https://www.openstreetmap.org/way/777209637",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "barkarby-progress-2022",
+      "title": "Region Stockholm: Both Barkarby stations have been excavated (16 Feb 2022)",
+      "url": "https://nyatunnelbanan.se/nyheter/sista-salvan-for-stationen-barkarbystaden-nasta/",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "stockholm-barkarby-annual-2024",
+      "title": "Stockholmsförhandlingen: Annual report 2024, Barkarby progress, accumulated outturn and Järfällatunneln contract termination",
+      "url": "https://bransch.trafikverket.se/contentassets/7dd9cd0aaad1417f82613866527d4248/arsrapport-2024-stockholmsforhandlingen.pdf",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "barkarby-cost-update-2026",
+      "title": "Region Stockholm: Review complete, updated assessment for the metro expansion (9 Oct 2026)",
+      "url": "https://nyatunnelbanan.se/en/news/review-complete-updated-estimate-for-stockholms-new-metro-expansion/",
+      "retrievedOn": "2026-10-11"
     }
   ],
   "lots": [
@@ -65,17 +83,41 @@
         "tunnelKm": 4
       },
       "note": {
-        "en": "Region Stockholm describes a 4 km underground extension with two new stations. The OSM construction alignment measures 4.00 km.",
-        "ro": "Regiunea Stockholm descrie o extindere subterană de 4 km cu două stații noi. Aliniamentul în construcție din OSM măsoară 4,00 km."
+        "en": "Region Stockholm’s 2026 review assesses traffic launch in Q4 2028 and a project-specific final cost of SEK 9.9 billion at current price levels. Its 2024 annual report records accumulated outturn of SEK 5,476 million through December 2024 in current prices; this is interim expenditure, not final cost. By 16 February 2022, both Barkarby stations had been excavated, and about 70% of rock excavation along the full extension was complete. In August 2023 the contractor terminated the rock and civil works contract, which the project administration then counterterminated.",
+        "ro": "Analiza Regiunii Stockholm din 2026 estimează începerea traficului în trimestrul IV 2028 și un cost final specific proiectului de 9,9 miliarde SEK la prețurile curente. Raportul anual din 2024 consemnează un rezultat cumulat de 5.476 milioane SEK până în decembrie 2024, la prețuri curente; aceasta este cheltuială intermediară, nu cost final. Până la 16 februarie 2022, excavația ambelor stații Barkarby era încheiată, iar aproximativ 70% din excavarea rocii pe întreaga extindere fusese realizată. În august 2023, antreprenorul a reziliat contractul pentru lucrările de excavare și construcții, iar administrația proiectului l-a contrareziliat ulterior."
       },
       "sourceRefs": [
         "barkarby-project",
         "barkarby-opening",
         "osm-barkarby",
         "barkarby-start",
-        "osm-barkarby-second-track"
+        "osm-barkarby-second-track",
+        "barkarby-progress-2022",
+        "stockholm-barkarby-annual-2024",
+        "barkarby-cost-update-2026"
       ],
-      "geometryRef": "akalla-barkarby"
+      "geometryRef": "akalla-barkarby",
+      "cost": {
+        "estimated": {
+          "amount": 9900,
+          "currency": "SEK",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Final-cost forecast at current price levels, published 2026-10-09. The source does not state a fixed price year or VAT treatment."
+        }
+      },
+      "events": [
+        {
+          "kind": "contract_terminated",
+          "date": "2023-08",
+          "note": {
+            "en": "The rock and civil works contract for the Akalla–Barkarby tunnel was terminated by the contractor and then counterterminated by the project administration.",
+            "ro": "Contractul pentru lucrările de excavare și construcții ale tunelului Akalla–Barkarby a fost reziliat de antreprenor și apoi contrareziliat de administrația proiectului."
+          },
+          "sourceRef": "stockholm-barkarby-annual-2024"
+        }
+      ]
     }
-  ]
+  ],
+  "lastVerified": "2026-10-11"
 }

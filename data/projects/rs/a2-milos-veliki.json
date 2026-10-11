@@ -247,9 +247,22 @@
       },
       "status": "opened",
       "dates": {
+        "tenderAwarded": "2012-04-07",
         "constructionStart": "2012-04-20",
-        "opened": "2016"
+        "opened": "2016-11"
       },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2012-04-07",
+          "sourceRef": "koridori-audit-ljig-preljina"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-11",
+          "sourceRef": "mgsi-ljig-preljina"
+        }
+      ],
       "lengthKm": 40.3,
       "cost": {
         "estimated": {
@@ -280,6 +293,7 @@
       "sourceRefs": [
         "autozona-ljig-preljina",
         "mgsi-ljig-preljina",
+        "koridori-audit-ljig-preljina",
         "koridori-beograd-juzni-jadran",
         "b92-azerbaijan-loan"
       ],
@@ -464,6 +478,13 @@
       "title": "MGSI: Izgradnja autoputa E-763, deonica: Ljig-Preljina (2025-06-27)",
       "url": "https://www.mgsi.gov.rs/lat/projekti/izgradnja-autoputa-e-763-deonica-ljig-preljina",
       "retrievedOn": "2026-09-25"
+    },
+    {
+      "id": "koridori-audit-ljig-preljina",
+      "title": "Koridori Srbije: 2015–2016 audit report (AzVirt construction contract signed 07.04.2012)",
+      "url": "https://www.koridorisrbije.rs/site/content/files/577f8ed35ca1e_IZVESTAJ%20REVIZIJE%202015-2016.pdf",
+      "publisher": "Koridori Srbije",
+      "retrievedOn": "2026-10-11"
     },
     {
       "id": "b92-azerbaijan-loan",

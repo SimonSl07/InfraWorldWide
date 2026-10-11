@@ -236,18 +236,25 @@
       },
       "sourceRefs": [
         "cs-wikipedia-d3",
+        "vlada-cz-d3-mezno-chotoviny-2007",
         "openstreetmap-odbl"
       ],
       "geometryRef": "mezno-chotoviny",
       "note": {
-        "en": "ŘSD stavba 0306/I. Opened on 17 December 2007 (cs.wikipedia text). The section table gives construction start 05/2004 while the text says it was built from 2005, so no start date is recorded. Length from the section table. The cut with Nová Hospoda – Mezno is proportional to the two sourced lengths along the OSM line, since no junction node marks it.",
-        "ro": "Construcția ŘSD 0306/I. Deschis la 17 decembrie 2007 (textul de pe cs.wikipedia). Tabelul secțiunilor indică începerea în 05/2004, iar textul spune că a fost construit din 2005, deci nicio dată de început nu este înregistrată. Lungimea provine din tabelul secțiunilor. Limita cu Nová Hospoda – Mezno este proporțională cu cele două lungimi din sursă de-a lungul liniei OSM, deoarece niciun nod de joncțiune nu o marchează."
+        "en": "ŘSD stavba 0306/I. The Czech Government reports the 6.8 km section was built in 2004–2007, so the start year is recorded as 2004. Opened on 17 December 2007. Length from the section table. The cut with Nová Hospoda – Mezno is proportional to the two sourced lengths along the OSM line, since no junction node marks it.",
+        "ro": "Construcția ŘSD 0306/I. Guvernul ceh raportează că secțiunea de 6,8 km a fost construită în 2004–2007, astfel că anul de început este înregistrat ca 2004. Deschisă la 17 decembrie 2007. Lungimea provine din tabelul secțiunilor. Limita cu Nová Hospoda – Mezno este proporțională cu cele două lungimi din sursă de-a lungul liniei OSM, deoarece niciun nod de joncțiune nu o marchează."
       },
       "dates": {
+        "constructionStart": "2004",
         "opened": "2007-12-17"
       },
       "lengthKm": 6.8,
       "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004",
+          "sourceRef": "vlada-cz-d3-mezno-chotoviny-2007"
+        },
         {
           "kind": "opened",
           "date": "2007-12-17",
@@ -1229,6 +1236,12 @@
     }
   ],
   "sources": [
+    {
+      "id": "vlada-cz-d3-mezno-chotoviny-2007",
+      "title": "Government of the Czech Republic: Opening of a new D3 section (17 December 2007)",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/otevreni-noveho-useku-dalnice-d3-zahajil-premier-mirek-topolanek-28887/",
+      "retrievedOn": "2026-10-11"
+    },
     {
       "id": "cs-wikipedia-d3",
       "title": "Wikipedia (cs): Dálnice D3, Přehled úseků and Historie výstavby",

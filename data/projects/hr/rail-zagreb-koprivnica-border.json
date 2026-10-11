@@ -20,7 +20,8 @@
       },
       "status": "under_construction",
       "dates": {
-        "tenderAwarded": "2016-04-29"
+        "tenderAwarded": "2016-04-29",
+        "constructionStart": "2016-07-25"
       },
       "lengthKm": 38.2,
       "cost": {
@@ -60,6 +61,11 @@
             "ro": "Contract de lucrări semnat cu consorțiul DIV GRUPA – DALEKOVOD – ZAGREB-MONTAŽA."
           },
           "sourceRef": "hzinfra-dugo-selo-krizevci"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2016-07-25",
+          "sourceRef": "hzinfra-dugo-selo-krizevci-2016-start"
         }
       ],
       "funding": [
@@ -120,7 +126,8 @@
       "sourceRefs": [
         "hzinfra-dugo-selo-krizevci",
         "danica-2026-02",
-        "osm-relation-1646296"
+        "osm-relation-1646296",
+        "hzinfra-dugo-selo-krizevci-2016-start"
       ],
       "geometryRef": "dugo-selo-krizevci"
     },
@@ -133,7 +140,8 @@
       "status": "under_construction",
       "dates": {
         "tenderAwarded": "2020-03-12",
-        "expectedOpening": "2026-12"
+        "expectedOpening": "2026-12",
+        "constructionStart": "2020-06-25"
       },
       "lengthKm": 42.6,
       "cost": {
@@ -174,6 +182,11 @@
             "ro": "Contract de lucrări semnat cu Cengiz İnşaat Sanayi ve Ticaret A.Ş."
           },
           "sourceRef": "hzinfra-krizevci-koprivnica"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-06-25",
+          "sourceRef": "hzinfra-krizevci-koprivnica-2020-start"
         }
       ],
       "funding": [
@@ -228,7 +241,8 @@
         "hzinfra-krizevci-koprivnica",
         "podravski-2025-12",
         "danica-2026-02",
-        "osm-relation-1646296"
+        "osm-relation-1646296",
+        "hzinfra-krizevci-koprivnica-2020-start"
       ],
       "geometryRef": "krizevci-koprivnica-border"
     }
@@ -272,6 +286,20 @@
       "title": "OpenStreetMap contributors: route geometry (ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hzinfra-dugo-selo-krizevci-2016-start",
+      "title": "HŽ Infrastruktura: Željezničar 8/2016, Radovi na pruzi Dugo Selo – Križevci",
+      "url": "https://www.hzinfra.hr/wp-content/uploads/2016/04/zeljeznicar-851.pdf",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "hzinfra-krizevci-koprivnica-2020-start",
+      "title": "HŽ Infrastruktura: Željezničar 895 (lipanj 2020), Započeli radovi na rekonstrukciji pruge Križevci – mađarska granica",
+      "url": "https://www.hzinfra.hr/wp-content/uploads/2020/07/Zeljeznicar-895-lipanj-2020.pdf",
+      "publisher": "HŽ Infrastruktura",
+      "retrievedOn": "2026-10-11"
     }
   ]
 }

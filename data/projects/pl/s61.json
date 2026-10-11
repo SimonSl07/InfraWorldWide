@@ -22,6 +22,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2020-01-08",
+        "constructionStart": "2023-07-08",
         "opened": "2023-10-13"
       },
       "lengthKm": 19.46,
@@ -68,6 +69,15 @@
           "sourceRef": "msbd-podborze-sniadowo"
         },
         {
+          "kind": "construction_start",
+          "date": "2023-07-08",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2023-10-13",
           "note": {
@@ -87,7 +97,8 @@
         "gddkia-2017-04-27-podborze-lomza",
         "plwiki-s61",
         "osm-ways-s61",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "podborze-sniadowo"
     },
@@ -100,6 +111,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2018-02-09",
+        "constructionStart": "2019-08-19",
         "opened": "2021-07-14"
       },
       "lengthKm": 16.99,
@@ -128,6 +140,15 @@
           "sourceRef": "msbd-sniadowo-lomza-poludnie"
         },
         {
+          "kind": "construction_start",
+          "date": "2019-08-19",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2021-07-14",
           "note": {
@@ -146,7 +167,8 @@
         "gddkia-2017-04-27-podborze-lomza",
         "plwiki-s61",
         "osm-ways-s61",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "sniadowo-lomza-poludnie"
     },
@@ -159,6 +181,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2017-12-21",
+        "constructionStart": "2020-03-16",
         "opened": "2022-03-15"
       },
       "lengthKm": 7.18,
@@ -210,6 +233,15 @@
           "sourceRef": "gddkia-2017-12-21-lomza-poludnie"
         },
         {
+          "kind": "construction_start",
+          "date": "2020-03-16",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2022-03-15",
           "note": {
@@ -228,7 +260,8 @@
         "gddkia-2017-12-21-lomza-poludnie",
         "plwiki-s61",
         "osm-ways-s61",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "lomza-poludnie-lomza-zachod"
     },
@@ -974,6 +1007,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2020-01-08",
+        "constructionStart": "2020-01-15",
         "opened": "2022-12-22"
       },
       "lengthKm": 24.16,
@@ -1048,6 +1082,15 @@
           "sourceRef": "msbd-suwalki-budzisko"
         },
         {
+          "kind": "construction_start",
+          "date": "2020-01-15",
+          "note": {
+            "en": "GDDKiA records this as the start date of construction works.",
+            "ro": "GDDKiA consemnează această dată drept începutul lucrărilor de construcție."
+          },
+          "sourceRef": "gddkia-road-project-status-report-10"
+        },
+        {
           "kind": "opened",
           "date": "2022-12-22",
           "note": {
@@ -1066,7 +1109,8 @@
         "gddkia-2020-01-08-new-contracts",
         "plwiki-s61",
         "osm-ways-s61",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "gddkia-road-project-status-report-10"
       ],
       "geometryRef": "suwalki-polnoc-budzisko"
     }
@@ -1203,6 +1247,13 @@
       "title": "OpenStreetMap contributors (ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "gddkia-road-project-status-report-10",
+      "title": "GDDKiA: CZD data for PIU ZBP under the National Road Construction Programme, report 10",
+      "url": "https://www.gov.pl/attachment/61158448-395b-4ac0-ad32-c70e2a9b8d89",
+      "publisher": "GDDKiA",
+      "retrievedOn": "2026-10-11"
     }
   ]
 }

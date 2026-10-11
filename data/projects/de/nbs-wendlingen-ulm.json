@@ -27,6 +27,13 @@
       "retrievedOn": "2026-10-11"
     },
     {
+      "id": "db-nbs-costs",
+      "title": "DB Projekt Stuttgart–Ulm: 2022 steering committee presentation, NBS status",
+      "url": "https://www.bahnprojekt-stuttgart-ulm.de/resource/blob/13497010/d26662360e839295f6884d608a338fce/20221021_Praesentation-Lenkungskreis-Stuttgart-21-data.pdf",
+      "publisher": "Bahnprojekt Stuttgart–Ulm / Deutsche Bahn",
+      "retrievedOn": "2026-10-11"
+    },
+    {
       "id": "db-infrago-profile",
       "title": "DB InfraGO: Unser Profil",
       "url": "https://www.dbinfrago.com/web/unternehmen/ueber-uns/profil-12600170",
@@ -54,6 +61,15 @@
         "opened": "2022-12-09"
       },
       "lengthKm": 60,
+      "cost": {
+        "estimated": {
+          "amount": 3985,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "DB's Q2 2022 total value scope for the new line."
+        }
+      },
       "profile": {
         "works": "greenfield"
       },
@@ -84,6 +100,7 @@
       "sourceRefs": [
         "db-nbs-wendlingen-ulm",
         "db-nbs-opening",
+        "db-nbs-costs",
         "db-infrago-profile",
         "osm-nbs-wendlingen-ulm"
       ],

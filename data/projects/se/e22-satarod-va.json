@@ -29,6 +29,12 @@
       "title": "OpenStreetMap: European route E22 in Sweden",
       "url": "https://www.openstreetmap.org/relation/2144252",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "peab-e22-last-bridge",
+      "title": "Peab: The last of 26 bridges is nearing completion on the new E22 past Sätaröd–Vä (5 May 2020)",
+      "url": "https://peab.se/om-peab/bolagsinformation/press-och-media/nyhetsarkiv/den-sista-av-de-26-broar-snart-klar-pa-nya-e22-forbi-satarod-va-i-skane/",
+      "retrievedOn": "2026-10-11"
     }
   ],
   "lots": [
@@ -45,7 +51,8 @@
       },
       "lengthKm": 15,
       "profile": {
-        "works": "greenfield"
+        "works": "greenfield",
+        "bridgeCount": 26
       },
       "events": [
         {
@@ -68,15 +75,17 @@
         }
       ],
       "note": {
-        "en": "Trafikverket identifies the ends as junctions Nöbbelöv at Vä and Knopparp at Linderöd. The OSM alignment measures 14.56 km, about 3% below the published 15 km.",
-        "ro": "Trafikverket identifică capetele la nodurile Nöbbelöv de la Vä și Knopparp de la Linderöd. Aliniamentul OSM măsoară 14,56 km, cu circa 3% sub cei 15 km publicați."
+        "en": "Trafikverket identifies the ends as junctions Nöbbelöv at Vä and Knopparp at Linderöd. The OSM alignment measures 14.56 km, about 3% below the published 15 km. Peab reported on 5 May 2020 that work was under way on the last of 26 bridges, over Vramsån; the second girder pair was installed on 28 April 2020. The section opened on 10 December 2020, ahead of the forecast summer 2021 opening.",
+        "ro": "Trafikverket identifică capetele la nodurile Nöbbelöv de la Vä și Knopparp de la Linderöd. Aliniamentul OSM măsoară 14,56 km, cu circa 3% sub cei 15 km publicați. La 5 mai 2020, Peab a raportat că se lucra la ultima dintre cele 26 de poduri, peste Vramsån; a doua pereche de grinzi a fost instalată la 28 aprilie 2020. Sectorul a fost deschis la 10 decembrie 2020, înainte de deschiderea estimată pentru vara lui 2021."
       },
       "sourceRefs": [
         "trafikverket-e22-opening",
         "peab-e22-satarod-va",
-        "osm-e22-sweden"
+        "osm-e22-sweden",
+        "peab-e22-last-bridge"
       ],
       "geometryRef": "knopparp-nobbelov"
     }
-  ]
+  ],
+  "lastVerified": "2026-10-11"
 }
