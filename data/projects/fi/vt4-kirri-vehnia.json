@@ -1,0 +1,68 @@
+{
+  "id": "fi-vt4-kirri-vehnia",
+  "country": "fi",
+  "category": "highway",
+  "name": {
+    "en": "Vt 4 Kirri–Vehniä motorway",
+    "ro": "Autostrada Vt 4 Kirri–Vehniä"
+  },
+  "description": {
+    "en": "A new 16 km motorway between Kirri and Vehniä, opened to traffic on 21 December 2021. The wider Vt 4 Kirri–Tikkakoski project also built parallel and cross roads, which are excluded from this lot.",
+    "ro": "O autostradă nouă de 16 km între Kirri și Vehniä, deschisă circulației la 21 decembrie 2021. Proiectul mai amplu Vt 4 Kirri–Tikkakoski a construit și drumuri paralele și transversale, excluse din acest lot."
+  },
+  "operator": "fi-vayla",
+  "lastVerified": "2026-10-11",
+  "lots": [
+    {
+      "id": "kirri-vehnia",
+      "name": {
+        "en": "Kirri–Vehniä",
+        "ro": "Kirri–Vehniä"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-12-21"
+      },
+      "lengthKm": 16,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Destia Oy",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Väylävirasto reports 16 km of new motorway. The OSM line runs between the Kirri J55 and Vehniä J60 junction nodes and measures 15.08 km, about 6% shorter than the reported length; the sourced figure is retained. It represents one motorway carriageway.",
+        "ro": "Väylävirasto raportează 16 km de autostradă nouă. Linia OSM este trasată între nodurile Kirri J55 și Vehniä J60 și măsoară 15,08 km, cu circa 6% mai puțin decât lungimea raportată; cifra din sursă este păstrată. Reprezintă o singură cale a autostrăzii."
+      },
+      "sourceRefs": [
+        "vayla-opening-2021",
+        "vayla-completion-2022",
+        "osm-vt4-finland"
+      ],
+      "geometryRef": "kirri-vehnia"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vayla-opening-2021",
+      "title": "Väylävirasto: New motorway between Kirri and Vehniä opens 21 December 2021 (16 Dec 2021)",
+      "url": "https://www.epressi.com/tiedotteet/logistiikka-ja-liikenne/vt-4-kirri-tikkakoski-uusi-moottoritie-valilla-kirri-vehnia-otetaan-liikenteelle-21.12.21.html",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "vayla-completion-2022",
+      "title": "Väylävirasto: Vt 4 motorway between Kirri and Vehniä completed (20 Dec 2022)",
+      "url": "https://www.epressi.com/tiedotteet/logistiikka-ja-liikenne/vt-4-kirri-tikkakoski-moottoritie-valilla-kirri-tikkakoski-ja-vehnia-valmistui.html",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-vt4-finland",
+      "title": "OpenStreetMap: Valtatie 4 route relation 14265641",
+      "url": "https://www.openstreetmap.org/relation/14265641",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}
