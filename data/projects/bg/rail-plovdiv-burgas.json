@@ -20,8 +20,20 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "2017-08-30",
         "opened": "2020-07-28"
       },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2017-08-30",
+          "note": {
+            "en": "NRIC marked the official start of rehabilitation works on Skutare–Orizovo.",
+            "ro": "NRIC a marcat începerea oficială a lucrărilor de reabilitare pe Skutare–Orizovo."
+          },
+          "sourceRef": "nric-skutare-orizovo-start-2017"
+        }
+      ],
       "lengthKm": 27.5,
       "profile": {
         "works": "rehabilitation",
@@ -57,6 +69,7 @@
       "sourceRefs": [
         "nric-phase2-project",
         "nric-news-4545",
+        "nric-skutare-orizovo-start-2017",
         "openstreetmap"
       ],
       "geometryRef": "skutare-orizovo"
@@ -68,6 +81,20 @@
         "ro": "Orizovo – Mihaylovo (linie dublă, tunelul Chirpan)"
       },
       "status": "under_construction",
+      "dates": {
+        "constructionStart": "2021-05-28"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2021-05-28",
+          "note": {
+            "en": "NRIC marked the start of modernization works on Orizovo–Mihaylovo.",
+            "ro": "NRIC a marcat începerea lucrărilor de modernizare pe Orizovo–Mihaylovo."
+          },
+          "sourceRef": "nric-orizovo-mihaylovo-start-2021"
+        }
+      ],
       "lengthKm": 35.7,
       "profile": {
         "works": "reconstruction",
@@ -105,6 +132,7 @@
       },
       "sourceRefs": [
         "nric-news-4545",
+        "nric-orizovo-mihaylovo-start-2021",
         "nric-phase2-project",
         "openstreetmap"
       ],
@@ -119,6 +147,18 @@
       "retrievedOn": "2026-10-05"
     },
     {
+      "id": "nric-skutare-orizovo-start-2017",
+      "title": "NRIC: Construction starts on the Skutare–Orizovo railway section (30 Aug 2017)",
+      "url": "https://www.rail-infra.bg/bg/news/4078",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "nric-orizovo-mihaylovo-start-2021",
+      "title": "NRIC: Minister marks start of modernization on Orizovo–Mihaylovo (28 May 2021)",
+      "url": "https://www.rail-infra.bg/bg/news/4343",
+      "retrievedOn": "2026-10-11"
+    },
+    {
       "id": "nric-phase2-project",
       "title": "NRIC: Рехабилитация на железопътната линия Пловдив – Бургас, Фаза 2",
       "url": "https://www.rail-infra.bg/bg/187",
@@ -131,5 +171,5 @@
       "retrievedOn": "2026-10-05"
     }
   ],
-  "lastVerified": "2026-10-05"
+  "lastVerified": "2026-10-11"
 }
