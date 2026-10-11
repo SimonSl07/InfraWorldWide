@@ -1,0 +1,47 @@
+{
+  "id": "si-a1",
+  "country": "si",
+  "category": "highway",
+  "name": {
+    "en": "A1 motorway (Šentilj – Koper)",
+    "ro": "Autostrada A1 (Šentilj – Koper)"
+  },
+  "description": {
+    "en": "DARS records the A1 as the Šentilj–Koper route. Its 230.7 km Maribor–Ljubljana–Koper section was complete on 12 August 2005; the line also includes the Šentilj approach north of Maribor.",
+    "ro": "DARS înregistrează A1 ca traseu Šentilj–Koper. Secțiunea de 230,7 km Maribor–Ljubljana–Koper era finalizată la 12 august 2005; traseul include și legătura spre Šentilj, la nord de Maribor."
+  },
+  "operator": "si-dars",
+  "lots": [
+    {
+      "id": "maribor-koper",
+      "name": {
+        "en": "Maribor – Koper",
+        "ro": "Maribor – Koper"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-08-12"
+      },
+      "lengthKm": 230.7,
+      "sourceRefs": [
+        "dars-a1-history",
+        "osm-si-59655"
+      ],
+      "geometryRef": "maribor-koper"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dars-a1-history",
+      "title": "DARS: A1 Šentilj – Srmin construction history",
+      "url": "https://www.dars.si/Zgodovina_gradnje/A1_sentilj_-_Srmin",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-si-59655",
+      "title": "OpenStreetMap contributors: A1 route relation 59655 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/59655",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

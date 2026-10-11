@@ -1,0 +1,61 @@
+{
+  "id": "si-h4",
+  "country": "si",
+  "category": "highway",
+  "name": {
+    "en": "H4 expressway (Razdrto – Vrtojba)",
+    "ro": "Drumul expres H4 (Razdrto – Vrtojba)"
+  },
+  "description": {
+    "en": "The H4 expressway crosses the Vipava Valley between Razdrto and the Vrtojba border crossing. DARS lists the route in four construction sections.",
+    "ro": "Drumul expres H4 traversează valea Vipava între Razdrto și punctul de frontieră Vrtojba. DARS împarte traseul în patru secțiuni de construcție."
+  },
+  "operator": "si-dars",
+  "lots": [
+    {
+      "id": "razdrto-vrtojba",
+      "name": {
+        "en": "Razdrto – Vrtojba",
+        "ro": "Razdrto – Vrtojba"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-08-13"
+      },
+      "lengthKm": 42.11,
+      "sourceRefs": [
+        "dars-h4-history",
+        "dars-h4-rebernice",
+        "osm-si-1652350",
+        "road-decree-2010"
+      ],
+      "geometryRef": "razdrto-vrtojba"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dars-h4-history",
+      "title": "DARS: H4 Razdrto – Vrtojba construction history",
+      "url": "https://www.dars.si/Zgrajene_AC_in_HC/H4_Razdrto_-_Vrtojba",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "dars-h4-rebernice",
+      "title": "DARS: H4 Razdrto – Vipava, Rebernice section opening",
+      "url": "https://www.dars.si/Zgrajene_AC_in_HC/H4_Razdrto_-_Vrtojba?zid=164",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-si-1652350",
+      "title": "OpenStreetMap contributors: H4 route relation 1652350 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/1652350",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "road-decree-2010",
+      "title": "Official Gazette of the Republic of Slovenia: Decree on the categorisation of state roads (2010), H4 route and length",
+      "url": "https://www.uradni-list.si/_pdf/2010/Ur/u2010030.pdf",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

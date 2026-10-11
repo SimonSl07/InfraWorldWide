@@ -1,0 +1,51 @@
+{
+  "id": "si-rail-pragersko-hodos",
+  "country": "si",
+  "category": "railway",
+  "name": {
+    "en": "Pragersko – Hodoš railway modernisation",
+    "ro": "Modernizarea căii ferate Pragersko – Hodoš"
+  },
+  "description": {
+    "en": "The project modernised and electrified the existing railway from Pragersko through Ormož to Hodoš. DRSI gives a project period from May 2009 to June 2016; the route is not new railway mileage.",
+    "ro": "Proiectul a modernizat și electrificat calea ferată existentă de la Pragersko prin Ormož până la Hodoš. DRSI indică perioada mai 2009 – iunie 2016; traseul nu reprezintă kilometri de cale ferată nouă."
+  },
+  "operator": "si-sz-infrastruktura",
+  "lots": [
+    {
+      "id": "pragersko-hodos",
+      "name": {
+        "en": "Pragersko – Hodoš",
+        "ro": "Pragersko – Hodoš"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-05",
+        "opened": "2016-06"
+      },
+      "lengthKm": 109,
+      "profile": {
+        "works": "upgrade"
+      },
+      "sourceRefs": [
+        "drsi-pragersko-hodos",
+        "osm-rail-40-41"
+      ],
+      "geometryRef": "pragersko-hodos"
+    }
+  ],
+  "sources": [
+    {
+      "id": "drsi-pragersko-hodos",
+      "title": "DRSI: Pragersko–Hodoš railway modernisation",
+      "url": "https://www.krajsamorazdalje.si/projekti/zelezniska-proga-pragersko-hodos",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-rail-40-41",
+      "title": "OpenStreetMap contributors: railway lines 40 and 41 between Pragersko and Hodoš (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/3436979",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

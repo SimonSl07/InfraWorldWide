@@ -1,0 +1,55 @@
+{
+  "id": "si-karavanke-tunnel",
+  "country": "si",
+  "category": "tunnel",
+  "name": {
+    "en": "Karavanke road tunnel, second tube",
+    "ro": "Tunelul rutier Karavanke, al doilea tub"
+  },
+  "description": {
+    "en": "The eastern tube of the Karavanke road tunnel opened in March 2026. This record covers the 3.546 km Slovenian half; the Austrian half belongs to the A11 project.",
+    "ro": "Tubul estic al tunelului rutier Karavanke s-a deschis în martie 2026. Această înregistrare acoperă jumătatea slovenă de 3,546 km; jumătatea austriacă aparține proiectului A11."
+  },
+  "operator": "si-dars",
+  "lots": [
+    {
+      "id": "east-tube-slovenia",
+      "name": {
+        "en": "Second tube, Slovenian half",
+        "ro": "Al doilea tub, jumătatea slovenă"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2020-08-25",
+        "opened": "2026-03-18"
+      },
+      "lengthKm": 3.546,
+      "sourceRefs": [
+        "dars-karavanke",
+        "dars-annual-report-2025",
+        "osm-karavanke-tube"
+      ],
+      "geometryRef": "east-tube-slovenia"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dars-karavanke",
+      "title": "DARS: Karavanke tunnel second tube",
+      "url": "https://www.dars.si/Infrastrukturni_projekti/Predor_Karavanke_-_druga_cev",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "dars-annual-report-2025",
+      "title": "DARS annual report 2025: opening of the Karavanke east tube",
+      "url": "https://www.dars.si/Content/doc/letna-porocila/LP%20DARS%202025.pdf",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-karavanke-tube",
+      "title": "OpenStreetMap contributors: A2 tunnel way 64031972, Slovenian second tube (ODbL)",
+      "url": "https://www.openstreetmap.org/way/64031972",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}
