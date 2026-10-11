@@ -86,7 +86,9 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2022-07-26"
+        "opened": "2022-07-26",
+        "tenderAwarded": "2019-10-09",
+        "constructionStart": "2019-11-13"
       },
       "lengthKm": 12.04,
       "profile": {
@@ -104,15 +106,40 @@
         }
       ],
       "note": {
-        "en": "Hrvatske ceste lists the roads as 12.04 km: Duboka (D8) to the bridge 2.14 km on the mainland, and the bridge to Zaradeže 9.898 km on Pelješac with 2 tunnels, 1 viaduct and 2 bridges. The road opened together with the bridge (en.wikipedia). Drawn geometry runs from the Duboka junction on the D8 to the bridge (about 1.98 km measured) and from the bridge (about 9.82 km measured) along the OpenStreetMap centreline towards Ston. No construction start, award date or contract value for this lot was found. The opening is stated by en.wikipedia only; Jutarnji list reported on 27 July 2022 that works on a Pelješac access road were still having problems.",
-        "ro": "Hrvatske ceste indică drumurile cu 12,04 km: Duboka (D8) până la pod 2,14 km pe continent, și de la pod la Zaradeže 9,898 km pe Pelješac, cu 2 tuneluri, 1 viaduct și 2 poduri. Drumul s-a deschis odată cu podul (en.wikipedia). Geometria desenată merge de la nodul Duboka de pe D8 până la pod (circa 1,98 km măsurați) și de la pod (circa 9,82 km măsurați) pe axa din OpenStreetMap spre Ston. Nu s-au găsit data începerii lucrărilor, data atribuirii sau valoarea contractului pentru acest lot. Deschiderea este indicată doar de en.wikipedia; Jutarnji list a relatat la 27 iulie 2022 că lucrările la un drum de acces de pe Pelješac aveau încă probleme."
+        "en": "Hrvatske ceste lists the roads as 12.04 km: Duboka (D8) to the bridge 2.14 km on the mainland, and the bridge to Zaradeže 9.898 km on Pelješac with 2 tunnels, 1 viaduct and 2 bridges. Hrvatske ceste records a works contract signed on 9 October 2019, work start on 13 November 2019 and construction by a STRABAG consortium. Its 2022 annual report says the bridge and access roads opened together on 26 July 2022. Drawn geometry runs from the Duboka junction on the D8 to the bridge (about 1.98 km measured) and from the bridge (about 9.82 km measured) along the OpenStreetMap centreline towards Ston. The source does not state the phase-specific contract value.",
+        "ro": "Hrvatske ceste indică drumurile cu 12,04 km: Duboka (D8) până la pod 2,14 km pe continent, și de la pod la Zaradeže 9,898 km pe Pelješac, cu 2 tuneluri, 1 viaduct și 2 poduri. Hrvatske ceste consemnează semnarea contractului la 9 octombrie 2019, începerea lucrărilor la 13 noiembrie 2019 și execuția de către un consorțiu STRABAG. Raportul anual pentru 2022 spune că podul și drumurile de acces au fost deschise împreună la 26 iulie 2022. Geometria desenată merge de la nodul Duboka de pe D8 până la pod (circa 1,98 km măsurați) și de la pod (circa 9,82 km măsurați) pe axa din OpenStreetMap spre Ston. Sursa nu indică valoarea contractului pentru această fază."
       },
       "sourceRefs": [
         "hc-eu-project-south-dalmatia",
         "wikipedia-en-peljesac-bridge",
-        "openstreetmap"
+        "openstreetmap",
+        "hc-peljesac-monograph-2022",
+        "hc-south-dalmatia-report-2022"
       ],
-      "geometryRef": "access-roads"
+      "geometryRef": "access-roads",
+      "contractors": [
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-10-09",
+          "sourceRef": "hc-peljesac-monograph-2022"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-11-13",
+          "sourceRef": "hc-peljesac-monograph-2022"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-07-26",
+          "sourceRef": "hc-south-dalmatia-report-2022"
+        }
+      ]
     },
     {
       "id": "ston-bypass",
@@ -122,10 +149,16 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2023-04-19"
+        "opened": "2023-04-19",
+        "constructionStart": "2019-12-05"
       },
       "lengthKm": 7.89,
       "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-12-05",
+          "sourceRef": "hc-peljesac-monograph-2022"
+        },
         {
           "kind": "opened",
           "date": "2023-04-19",
@@ -149,19 +182,20 @@
       ],
       "contractors": [
         {
-          "name": "Avax",
+          "name": "AVAX",
           "role": "builder"
         }
       ],
       "note": {
-        "en": "Second phase of the Ston bypass, from the Prapratno junction to the Doli junction: 7.89 km with 2 tunnels, 1 viaduct and 1 bridge (Hrvatske ceste); the Ministry of the Sea, Transport and Infrastructure gives 7.5 km. Polakovica tunnel 1,265 m and Supava tunnel 1,320 m, joined by the 485 m Ston Bridge (Croatia Week). Opened on Wednesday 19 April 2023. The Prime Minister described the bypass as valued at EUR 70 million (ministry, Croatia Week); this is not recorded as a cost because it is neither a contract nor a dated estimate. The ministry names Avax as main contractor 'uz Strabag' (with Strabag); the split of roles was not found.",
-        "ro": "A doua fază a variantei ocolitoare Ston, de la nodul Prapratno la nodul Doli: 7,89 km cu 2 tuneluri, 1 viaduct și 1 pod (Hrvatske ceste); Ministerul Mării, Transporturilor și Infrastructurii indică 7,5 km. Tunelul Polakovica de 1.265 m și tunelul Supava de 1.320 m, legate de podul Ston de 485 m (Croatia Week). Deschisă miercuri, 19 aprilie 2023. Prim-ministrul a descris varianta ca fiind în valoare de 70 milioane EUR (minister, Croatia Week); cifra nu este înregistrată drept cost, deoarece nu este nici contract, nici estimare datată. Ministerul numește Avax contractor principal „uz Strabag” (alături de Strabag); împărțirea rolurilor nu a fost găsită."
+        "en": "Second phase of the Ston bypass, from the Prapratno junction to the Doli junction: 7.89 km with 2 tunnels, 1 viaduct and 1 bridge (Hrvatske ceste); the Ministry of the Sea, Transport and Infrastructure gives 7.5 km. Polakovica tunnel 1,265 m and Supava tunnel 1,320 m, joined by the 485 m Ston Bridge (Croatia Week). Opened on Wednesday 19 April 2023. The Prime Minister described the bypass as valued at EUR 70 million (ministry, Croatia Week); this is not recorded as a cost because it is neither a contract nor a dated estimate. Hrvatske ceste’s 2022 monograph identifies AVAX S.A. as contractor for phases three and four and records the contractor’s site handover on 5 December 2019. The ministry described Avax as main contractor with Strabag.",
+        "ro": "A doua fază a variantei ocolitoare Ston, de la nodul Prapratno la nodul Doli: 7,89 km cu 2 tuneluri, 1 viaduct și 1 pod (Hrvatske ceste); Ministerul Mării, Transporturilor și Infrastructurii indică 7,5 km. Tunelul Polakovica de 1.265 m și tunelul Supava de 1.320 m, legate de podul Ston de 485 m (Croatia Week). Deschisă miercuri, 19 aprilie 2023. Prim-ministrul a descris varianta ca fiind în valoare de 70 milioane EUR (minister, Croatia Week); cifra nu este înregistrată drept cost, deoarece nu este nici contract, nici estimare datată. Monografia Hrvatske ceste din 2022 identifică AVAX S.A. drept constructor pentru fazele trei și patru și consemnează introducerea constructorului pe șantier la 5 decembrie 2019. Ministerul a descris Avax drept contractor principal uz Strabag."
       },
       "sourceRefs": [
         "hc-eu-project-south-dalmatia",
         "mmpi-ston-bypass",
         "croatiaweek-ston-bypass",
-        "openstreetmap"
+        "openstreetmap",
+        "hc-peljesac-monograph-2022"
       ],
       "geometryRef": "ston-bypass"
     }
@@ -202,6 +236,20 @@
       "title": "OpenStreetMap contributors (ODbL): geometry via Overpass API",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "hc-peljesac-monograph-2022",
+      "title": "Hrvatske ceste: Monografija Pelješki most i ljudi (2022)",
+      "url": "https://hrvatske-ceste.hr/uploads/documents/attachment_file/file/1782/Monografija_Peljes%CC%8Cki_Most_i_ljudi_2022.pdf",
+      "publisher": "Hrvatske ceste",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "hc-south-dalmatia-report-2022",
+      "title": "Hrvatske ceste: Izvještaj o poslovanju i održivosti za 2022.",
+      "url": "https://hrvatske-ceste.hr/uploads/documents/attachment_file/file/1723/Izvje%C5%A1taj_o_poslovanju_i_odr%C5%BEivosti_2022..pdf",
+      "publisher": "Hrvatske ceste",
+      "retrievedOn": "2026-10-11"
     }
   ],
   "lastVerified": "2026-10-05"
