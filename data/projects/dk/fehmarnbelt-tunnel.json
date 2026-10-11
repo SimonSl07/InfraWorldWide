@@ -1,0 +1,93 @@
+{
+  "id": "dk-fehmarnbelt-tunnel",
+  "country": "dk",
+  "category": "tunnel",
+  "name": {
+    "en": "Fehmarn Belt tunnel",
+    "ro": "Tunelul Fehmarn Belt"
+  },
+  "description": {
+    "en": "An immersed road and rail tunnel of about 18 km linking Lolland in Denmark with Fehmarn in Germany.",
+    "ro": "Un tunel rutier și feroviar imersat de aproximativ 18 km, care leagă insula Lolland din Danemarca de Fehmarn din Germania."
+  },
+  "operator": "dk-femern-as",
+  "sources": [
+    {
+      "id": "femern-factsheet",
+      "title": "Femern A/S: Fehmarnbelt tunnel factsheet, April 2026",
+      "url": "https://femern.com/media/lxjaphla/2604_factsheet_fehmarnbelt-tunnel_april2026.pdf",
+      "publisher": "Femern A/S",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "femern-status",
+      "title": "Femern A/S: Project status",
+      "url": "https://femern.com/da/tunnelen/projektstatus/",
+      "publisher": "Femern A/S",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "femern-opening-phases",
+      "title": "Femern A/S: The Fehmarnbelt tunnel will open in two stages",
+      "url": "https://femern.com/da/presse/nyheder/femern-baelt-tunnelen-abnes-i-to-etaper/",
+      "publisher": "Femern A/S",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "dk-anlaegsstatus-2026",
+      "title": "Transportministeriet: Anlægsstatus, 1st half 2026, Fehmarnbelt coast-to-coast project",
+      "url": "https://www.trm.dk/media/vtuldjoz/anlaegsstatus-1-halvaar-2026.pdf",
+      "publisher": "Danish Ministry of Transport",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-femern",
+      "title": "OpenStreetMap: Fehmarn Belt Tunnel relation 19557301",
+      "url": "https://www.openstreetmap.org/relation/19557301",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-11"
+    }
+  ],
+  "lots": [
+    {
+      "id": "rodbyhavn-puttgarden",
+      "name": {
+        "en": "Rødbyhavn–Puttgarden",
+        "ro": "Rødbyhavn–Puttgarden"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020"
+      },
+      "lengthKm": 18,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "tunnelKm": 18
+      },
+      "note": {
+        "en": "The project is recorded in Denmark and crosses the Danish-German border. Construction began on the Danish side in 2020 and on the German side in 2021. The current plan is phased: road traffic first, rail later after German land works; a revised timetable is pending. The OSM railway alignment is about 18.42 km, around 2.3% longer than the official approximate 18 km.",
+        "ro": "Proiectul este înregistrat în Danemarca și traversează frontiera danezo-germană. Construcția a început pe partea daneză în 2020 și pe partea germană în 2021. Planul actual prevede deschiderea în etape: mai întâi traficul rutier, apoi calea ferată după lucrările terestre din Germania; noul calendar este în curs de pregătire. Aliniamentul feroviar OSM măsoară aproximativ 18,42 km, cu circa 2,3% peste lungimea oficială aproximativă de 18 km."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2020",
+          "sourceRef": "femern-status",
+          "note": {
+            "en": "Construction began on the Danish side in 2020.",
+            "ro": "Construcția a început pe partea daneză în 2020."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "femern-factsheet",
+        "femern-status",
+        "femern-opening-phases",
+        "dk-anlaegsstatus-2026",
+        "osm-femern"
+      ],
+      "geometryRef": "rodbyhavn-puttgarden"
+    }
+  ]
+}

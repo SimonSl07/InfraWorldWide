@@ -4,7 +4,7 @@
   "sources": [
     {
       "title": "European Central Bank Data Portal: Euro foreign exchange reference rates, annual averages [EXR, A.<CUR>.EUR.SP00.A]",
-      "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD+RON+BGN+CZK+HUF+PLN+SEK+NOK.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2025"
+      "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD+RON+BGN+CZK+HUF+PLN+SEK+NOK+DKK.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2025"
     },
     {
       "title": "Eurostat: Euro/ECU exchange rates, annual data [ert_bil_eur_a], statinfo=AVG; source for RSD and cross-check for RON and USD",
@@ -326,6 +326,41 @@
         "2023": 11.4248,
         "2024": 11.629,
         "2025": 11.7173
+      }
+    },
+    "DKK": {
+      "label": {
+        "en": "Danish krone",
+        "ro": "Coroană daneză"
+      },
+      "perEur": {
+        "1999": 7.4355,
+        "2000": 7.4538,
+        "2001": 7.4521,
+        "2002": 7.4305,
+        "2003": 7.4307,
+        "2004": 7.4399,
+        "2005": 7.4518,
+        "2006": 7.4591,
+        "2007": 7.4506,
+        "2008": 7.456,
+        "2009": 7.4462,
+        "2010": 7.4473,
+        "2011": 7.4506,
+        "2012": 7.4437,
+        "2013": 7.4579,
+        "2014": 7.4548,
+        "2015": 7.4587,
+        "2016": 7.4452,
+        "2017": 7.4386,
+        "2018": 7.4532,
+        "2019": 7.4661,
+        "2020": 7.4542,
+        "2021": 7.437,
+        "2022": 7.4396,
+        "2023": 7.4509,
+        "2024": 7.4589,
+        "2025": 7.4634
       }
     }
   }

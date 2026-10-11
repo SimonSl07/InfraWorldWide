@@ -7,6 +7,7 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   BGN: "лв",
   RSD: "дин.",
   CZK: "Kč",
+  DKK: "kr",
   PLN: "zł",
   HUF: "Ft",
   SEK: "kr",
