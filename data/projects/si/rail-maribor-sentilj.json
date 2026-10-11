@@ -1,0 +1,55 @@
+{
+  "id": "si-rail-maribor-sentilj",
+  "country": "si",
+  "category": "railway",
+  "name": {
+    "en": "Maribor – Šentilj railway upgrade",
+    "ro": "Modernizarea căii ferate Maribor – Šentilj"
+  },
+  "description": {
+    "en": "DRSI upgraded 18.15 km of existing railway between Maribor and the Austrian border and built 3.7 km of new alignment between Počehova and Pesnica. The works ran from August 2018 to March 2024.",
+    "ro": "DRSI a modernizat 18,15 km de cale ferată existentă între Maribor și frontiera austriacă și a construit 3,7 km de traseu nou între Počehova și Pesnica. Lucrările s-au desfășurat din august 2018 până în martie 2024."
+  },
+  "operator": "si-sz-infrastruktura",
+  "lots": [
+    {
+      "id": "maribor-sentilj",
+      "name": {
+        "en": "Maribor – Šentilj",
+        "ro": "Maribor – Šentilj"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2018-08",
+        "opened": "2024-03"
+      },
+      "lengthKm": 18.15,
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "The mapped OpenStreetMap route measures 15.52 km; DRSI reports 18.15 km of upgraded existing track. The project also built a separate 3.7 km alignment between Počehova and Pesnica.",
+        "ro": "Traseul cartografiat în OpenStreetMap măsoară 15,52 km; DRSI raportează 18,15 km de cale existentă modernizată. Proiectul a construit separat o aliniere nouă de 3,7 km între Počehova și Pesnica."
+      },
+      "sourceRefs": [
+        "drsi-maribor-sentilj",
+        "osm-rail-30"
+      ],
+      "geometryRef": "maribor-sentilj"
+    }
+  ],
+  "sources": [
+    {
+      "id": "drsi-maribor-sentilj",
+      "title": "DRSI: Upgrade of the Maribor–Šentilj railway line",
+      "url": "https://www.krajsamorazdalje.si/projekti/nadgradnja-zelezniske-proge-maribor-sentilj",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-rail-30",
+      "title": "OpenStreetMap contributors: railway line 30 ways between Maribor and Šentilj (ODbL)",
+      "url": "https://www.openstreetmap.org/way/24039864",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

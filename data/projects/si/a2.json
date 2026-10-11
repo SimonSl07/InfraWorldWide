@@ -1,0 +1,58 @@
+{
+  "id": "si-a2",
+  "country": "si",
+  "category": "highway",
+  "name": {
+    "en": "A2 motorway (Karavanke – Obrežje)",
+    "ro": "Autostrada A2 (Karavanke – Obrežje)"
+  },
+  "description": {
+    "en": "The A2 connects the Karavanke road tunnel with the Obrežje border crossing. DARS records the northern branch as complete apart from the Peračica–Podtabor carriageway completed in 2011, and the southern branch as completed in 2010.",
+    "ro": "A2 leagă tunelul rutier Karavanke de punctul de frontieră Obrežje. DARS consemnează ramura nordică drept finalizată, cu excepția carosabilului Peračica–Podtabor încheiat în 2011, iar ramura sudică drept finalizată în 2010."
+  },
+  "operator": "si-dars",
+  "lots": [
+    {
+      "id": "karavanke-obrezje",
+      "name": {
+        "en": "Karavanke – Obrežje",
+        "ro": "Karavanke – Obrežje"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011"
+      },
+      "lengthKm": 175.472,
+      "note": {
+        "en": "DARS reports 175.472 km for the route under its management in its 2022 annual report. The mapped relation measures about 179 km.",
+        "ro": "DARS raportează 175,472 km pentru traseul aflat în administrarea sa în raportul anual 2022. Relația cartografiată măsoară circa 179 km."
+      },
+      "sourceRefs": [
+        "dars-a2-history",
+        "osm-si-1645049",
+        "dars-annual-report-2022"
+      ],
+      "geometryRef": "karavanke-obrezje"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dars-a2-history",
+      "title": "DARS: A2 Karavanke – Obrežje construction history",
+      "url": "https://www.dars.si/Zgodovina_gradnje/A2_Karavanke_-_Obrezje",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-si-1645049",
+      "title": "OpenStreetMap contributors: A2 route relation 1645049 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/1645049",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "dars-annual-report-2022",
+      "title": "DARS annual report 2022: network length under management",
+      "url": "https://www.dars.si/Content/doc/letna-porocila/Letno%20poro%C4%8Dilo%202022.pdf",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

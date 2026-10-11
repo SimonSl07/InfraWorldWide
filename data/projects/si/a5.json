@@ -1,0 +1,58 @@
+{
+  "id": "si-a5",
+  "country": "si",
+  "category": "highway",
+  "name": {
+    "en": "A5 motorway (Maribor – Pince)",
+    "ro": "Autostrada A5 (Maribor – Pince)"
+  },
+  "description": {
+    "en": "The four-lane A5 links Maribor with the Hungarian border at Pince. DARS says the complete motorway opened to traffic in October 2008.",
+    "ro": "Autostrada A5 cu patru benzi leagă Maribor de frontiera cu Ungaria la Pince. DARS consemnează deschiderea integrală pentru trafic în octombrie 2008."
+  },
+  "operator": "si-dars",
+  "lots": [
+    {
+      "id": "maribor-pince",
+      "name": {
+        "en": "Maribor – Pince",
+        "ro": "Maribor – Pince"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-10"
+      },
+      "lengthKm": 79.54,
+      "note": {
+        "en": "The 79.54 km route length is listed in the Slovenian road categorisation decree. DARS includes access roads in its separate 85.2 km Pomurje motorway branch figure. OSM carriageways were collapsed to a single mapped alignment.",
+        "ro": "Lungimea de 79,54 km este indicată în decretul sloven privind clasificarea drumurilor. Într-o cifră separată de 85,2 km pentru ramura Pomurje, DARS include și drumurile de acces. Carosabilele OSM au fost reunite într-un singur traseu cartografiat."
+      },
+      "sourceRefs": [
+        "dars-a5-history",
+        "osm-si-1652348",
+        "road-decree-2010"
+      ],
+      "geometryRef": "maribor-pince"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dars-a5-history",
+      "title": "DARS: A5 Maribor – Pince construction history",
+      "url": "https://www.dars.si/Zgodovina_gradnje/A5_Maribor_-_Pince",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-si-1652348",
+      "title": "OpenStreetMap contributors: A5 route relation 1652348 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/1652348",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "road-decree-2010",
+      "title": "Official Gazette of the Republic of Slovenia: Decree on the categorisation of state roads (2010), A5 route and length",
+      "url": "https://www.uradni-list.si/_pdf/2010/Ur/u2010030.pdf",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

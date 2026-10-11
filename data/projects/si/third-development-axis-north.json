@@ -1,0 +1,48 @@
+{
+  "id": "si-third-development-axis-north",
+  "country": "si",
+  "category": "highway",
+  "name": {
+    "en": "Third Development Axis North (Velenje – Slovenj Gradec)",
+    "ro": "Axa a treia de dezvoltare, ramura nordică (Velenje – Slovenj Gradec)"
+  },
+  "description": {
+    "en": "The north arm of the Third Development Axis is planned as a new expressway link between Velenje and Slovenj Gradec. DARS lists the Velenje South–Slovenj Gradec South section at 17.5 km and under construction.",
+    "ro": "Ramura nordică a Axei a treia de dezvoltare este planificată ca drum expres nou între Velenje și Slovenj Gradec. DARS indică 17,5 km pentru secțiunea Velenje Sud–Slovenj Gradec Sud și o încadrează ca fiind în construcție."
+  },
+  "operator": "si-dars",
+  "lots": [
+    {
+      "id": "velenje-slovenj-gradec",
+      "name": {
+        "en": "Velenje South – Slovenj Gradec South",
+        "ro": "Velenje Sud – Slovenj Gradec Sud"
+      },
+      "status": "under_construction",
+      "lengthKm": 17.5,
+      "note": {
+        "en": "OpenStreetMap currently maps only a 2.85 km H8 construction fragment, not the complete 17.5 km route. The drawn fragment is incomplete.",
+        "ro": "OpenStreetMap cartografiază în prezent doar un fragment H8 în construcție de 2,85 km, nu traseul complet de 17,5 km. Fragmentul desenat este incomplet."
+      },
+      "sourceRefs": [
+        "dars-third-axis",
+        "osm-h8-fragments"
+      ],
+      "geometryRef": "velenje-slovenj-gradec"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dars-third-axis",
+      "title": "DARS: Third Development Axis",
+      "url": "https://www.dars.si/Infrastrukturni_projekti/Tretja_razvojna_os",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-h8-fragments",
+      "title": "OpenStreetMap contributors: H8 construction fragments near Slovenj Gradec (ODbL)",
+      "url": "https://www.openstreetmap.org/?mlat=46.46&mlon=15.09#map=14/46.46/15.09",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}

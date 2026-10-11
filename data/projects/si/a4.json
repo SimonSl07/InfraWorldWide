@@ -1,0 +1,51 @@
+{
+  "id": "si-a4",
+  "country": "si",
+  "category": "highway",
+  "name": {
+    "en": "A4 motorway (Slivnica – Gruškovje)",
+    "ro": "Autostrada A4 (Slivnica – Gruškovje)"
+  },
+  "description": {
+    "en": "A4 links the Slivnica interchange with the Gruškovje border crossing. This record covers the Slivnica–Draženci section, which DARS says opened in July 2009.",
+    "ro": "A4 leagă nodul Slivnica de punctul de frontieră Gruškovje. Această înregistrare acoperă secțiunea Slivnica–Draženci, deschisă în iulie 2009 potrivit DARS."
+  },
+  "operator": "si-dars",
+  "lots": [
+    {
+      "id": "slivnica-drazenci",
+      "name": {
+        "en": "Slivnica – Draženci",
+        "ro": "Slivnica – Draženci"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-07"
+      },
+      "lengthKm": 19.8,
+      "note": {
+        "en": "DARS publishes 19.8 km for Slivnica–Draženci. The route relation available in OpenStreetMap covers this section and measures about 18.9 km.",
+        "ro": "DARS publică 19,8 km pentru Slivnica–Draženci. Relația de traseu disponibilă în OpenStreetMap acoperă această secțiune și măsoară circa 18,9 km."
+      },
+      "sourceRefs": [
+        "dars-a4-history",
+        "osm-si-1660417"
+      ],
+      "geometryRef": "slivnica-drazenci"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dars-a4-history",
+      "title": "DARS: A4 Slivnica – Gruškovje construction history",
+      "url": "https://www.dars.si/Zgodovina_gradnje/A4_Slivnica_-_Gruskovje",
+      "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "osm-si-1660417",
+      "title": "OpenStreetMap contributors: A4 route relation 1660417 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/1660417",
+      "retrievedOn": "2026-10-11"
+    }
+  ]
+}
