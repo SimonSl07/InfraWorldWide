@@ -10,6 +10,7 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   PLN: "zł",
   HUF: "Ft",
   SEK: "kr",
+  NOK: "kr",
   GBP: "£",
 };
 
