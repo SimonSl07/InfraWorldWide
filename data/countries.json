@@ -1,5 +1,5 @@
 {
-  "note": "Per-country area and population, used only to normalise infrastructure length (km per 1,000 km², km per million people) so that countries of very different size stay comparable. Area comes from the CIA World Factbook and population from Eurostat: one source each, applied to every country, because a density ranking built from mixed methodologies ranks the methodologies rather than the countries. Eurostat publishes no area figure for Serbia, which is why the Factbook is used for area throughout rather than Eurostat for the EU members and something else for the rest. Both sources exclude Kosovo from Serbia, matching the Natural Earth outline in data/geo/countries/rs.geojson. The Factbook was retired in February 2026 and cia.gov no longer serves the country pages. Wayback snapshots of them do not help either: they captured only the page shell, because the figures were loaded client-side. The areas are therefore cited to factbook.json, the public-domain machine-readable conversion of the final (2025) edition, which is where these values were actually read and which still resolves.",
+  "note": "Per-country area and population, used only to normalise infrastructure length (km per 1,000 km², km per million people) so that countries of very different size stay comparable. Area comes from the CIA World Factbook and population from Eurostat for its reporting countries; the CIA World Factbook supplies population for countries outside Eurostat coverage. Serbia uses Factbook area and Eurostat population; Bosnia and Herzegovina and North Macedonia use Factbook area and population values. Both sources exclude Kosovo from Serbia, matching the Natural Earth outline in data/geo/countries/rs.geojson. The Factbook was retired in February 2026 and cia.gov no longer serves the country pages. Wayback snapshots of them do not help either: they captured only the page shell, because the figures were loaded client-side. The areas are therefore cited to factbook.json, the public-domain machine-readable conversion of the final (2025) edition, which is where these values were actually read and which still resolves.",
   "countries": {
     "bg": {
       "areaKm2": 110879,
@@ -302,6 +302,28 @@
         {
           "title": "Eurostat: Population change, demographic balance and crude rates at national level [demo_gind], geo ME, population on 1 January 2026",
           "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_gind?geo=ME&indic_de=JAN&time=2026"
+        }
+      ]
+    },
+    "ba": {
+      "areaKm2": 51197,
+      "population": 3653499,
+      "populationDate": "2025",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), Bosnia and Herzegovina, Geography: Area and People and Society: Population, via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/bk.json"
+        }
+      ]
+    },
+    "mk": {
+      "areaKm2": 25713,
+      "population": 2137556,
+      "populationDate": "2025",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), North Macedonia, Geography: Area and People and Society: Population, via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/mk.json"
         }
       ]
     }

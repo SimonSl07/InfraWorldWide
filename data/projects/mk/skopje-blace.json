@@ -1,0 +1,60 @@
+{
+  "id": "mk-skopje-blace",
+  "country": "mk",
+  "category": "highway",
+  "name": {
+    "en": "A4 Skopje�Blace motorway, Phase 2",
+    "ro": "Autostrada A4 Skopje�Blace, faza 2"
+  },
+  "description": {
+    "en": "The 10.5 km second phase of the A4 from Stenkovec interchange to the Blace border crossing.",
+    "ro": "A doua faza de 10,5 km a autostrazii A4, de la nodul Stenkovec la punctul de trecere a frontierei Blace."
+  },
+  "operator": "mk-pesr",
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "phase-start",
+      "title": "PESR: Foundation stone laid for the most complex motorway, Skopje�Blace Phase 2",
+      "url": "https://roads.org.mk/en/2026/08/27/trajanovski-today-we-are-laying-the-foundation-stone-for-the-most-complex-and-most-challenging-motorway-which-over-a-short-distance-of-just-10-5-km-will-feature-numerous-tunnels-viaducts/",
+      "publisher": "Public Enterprise for State Roads",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "alignment-osm",
+      "title": "OpenStreetMap contributors: A4 construction alignment between Stenkovec and Blace, downloaded 12 October 2026",
+      "url": "https://www.openstreetmap.org/#map=12/42.096/21.35",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "stenkovec-blace-phase-2",
+      "name": {
+        "en": "Stenkovec�Blace, Phase 2",
+        "ro": "Stenkovec�Blace, faza 2"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2026-08-27"
+      },
+      "lengthKm": 10.5,
+      "contractors": [
+        {
+          "name": "Granit AD",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "stenkovec-blace",
+      "sourceRefs": [
+        "phase-start",
+        "alignment-osm"
+      ],
+      "note": {
+        "en": "PESR reports the 10.5 km section from Stenkovec interchange to the border crossing, construction commencement on 27 August 2026, and a four-year construction period. The works include five twin-tube tunnels and eight bridges. Published EBRD loan and WBIF grant figures are financing commitments, not project cost, so cost is omitted.",
+        "ro": "PESR indica tronsonul de 10,5 km de la nodul Stenkovec la punctul de trecere a frontierei, inceperea lucrarilor la 27 august 2026 si o durata de executie de patru ani. Lucrarile includ cinci tuneluri cu doua galerii si opt poduri. Imprumutul BERD si grantul WBIF publicate sunt angajamente de finantare, nu costul proiectului, deci costul este omis."
+      }
+    }
+  ]
+}
