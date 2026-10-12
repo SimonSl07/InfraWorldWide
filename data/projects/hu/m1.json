@@ -4,11 +4,11 @@
   "category": "highway",
   "name": {
     "en": "M1 motorway widening",
-    "ro": "L?rgirea autostr?zii M1"
+    "ro": "Lărgirea autostrăzii M1"
   },
   "description": {
-    "en": "Widening of the M1 motorway from the M0 junction to the Conc? rest area in two phases, with three traffic lanes in each direction and one ITS lane on each side.",
-    "ro": "L?rgirea autostr?zii M1 de la nodul M0 p?n? la spa?iul de servicii Conc?, ?n dou? etape, la trei benzi de circula?ie pe sens ?i c?te o band? ITS pe fiecare parte."
+    "en": "Widening of the M1 motorway from the M0 junction to the Concó rest area at km 94 in two phases. The corridor is being expanded to three traffic lanes in each direction, with one ITS lane on each side. Lots follow MKIF’s phase limits; geometry is traced along OSM relation 21313 and cut at the M0, Bicske and km 94 junction nodes.",
+    "ro": "Lărgirea autostrăzii M1 de la nodul M0 până la spațiul de servicii Concó, la kilometrul 94, în două etape. Autostrada va avea trei benzi de circulație pe sens și câte o bandă ITS pe fiecare parte. Loturile urmează limitele etapelor MKIF; geometria urmărește relația OSM 21313 și este tăiată la nodurile M0, Bicske și kilometrul 94."
   },
   "lastVerified": "2026-10-12",
   "sources": [
@@ -28,9 +28,30 @@
     },
     {
       "id": "osm-m1-route",
-      "title": "OpenStreetMap contributors: M1 motorway route relation 21313, downloaded 12 October 2026",
+      "title": "OpenStreetMap contributors: M1 motorway route relation 21313 and member way/node geometry (ODbL)",
       "url": "https://www.openstreetmap.org/relation/21313",
       "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "bicske-m1-contractors",
+      "title": "Bicske Municipality: operation of municipal road during M1 motorway widening",
+      "url": "https://www.bicske.hu/sites/default/files/eloterjesztesek/nyilt/152_0179_2_hrsz-u_ut_uzemeltetese.pdf",
+      "publisher": "Municipality of Bicske",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "duna-aszfalt-legal-history",
+      "title": "Duna Group: Duna Aszfalt company history",
+      "url": "https://www.dunagroup.hu/duna-aszfalt/",
+      "publisher": "Duna Group",
       "retrievedOn": "2026-10-12"
     }
   ],
@@ -38,8 +59,8 @@
     {
       "id": "m0-bicske",
       "name": {
-        "en": "M0?Bicske, phase I",
-        "ro": "M0?Bicske, etapa I"
+        "en": "M0 – Bicske, phase I",
+        "ro": "M0 – Bicske, etapa I"
       },
       "status": "under_construction",
       "dates": {
@@ -56,7 +77,7 @@
           "date": "2025-09-01",
           "note": {
             "en": "MKIF reported that mainline widening works began on 1 September 2025.",
-            "ro": "MKIF a anun?at c? lucr?rile de l?rgire a c?ii principale au ?nceput la 1 septembrie 2025."
+            "ro": "MKIF a anunțat că lucrările de lărgire a căii principale au început la 1 septembrie 2025."
           },
           "sourceRef": "mkif-m1-start"
         }
@@ -65,18 +86,27 @@
       "sourceRefs": [
         "mkif-m1-phases",
         "mkif-m1-start",
-        "osm-m1-route"
+        "osm-m1-route",
+        "bicske-m1-contractors",
+        "openstreetmap-odbl",
+        "duna-aszfalt-legal-history"
       ],
       "note": {
-        "en": "MKIF gives the phase limits as km 16?39 and expected completion by 31 August 2028. Length follows the 23 km chainage interval. The completed section is planned for three traffic lanes in each direction plus one ITS lane on each side. The OSM trace measures 23.26 km.",
-        "ro": "MKIF indic? limitele etapei la km 16?39 ?i finalizarea estimat? p?n? la 31 august 2028. Lungimea urmeaz? intervalul de 23 km dintre bornele kilometrice. Dup? finalizare, sec?iunea va avea trei benzi de circula?ie pe sens ?i c?te o band? ITS pe fiecare parte. Traseul OSM m?soar? 23,26 km."
-      }
+        "en": "MKIF defines phase I as km 16–39, M0 to Bicske, with completion due by 31 August 2028. Bicske Municipality identifies Duna Aszfalt Zrt. as the builder from M0 to km 39+200. The municipality’s contractor breakpoint is 200 m beyond the phase limit stated by MKIF. Length follows the stated 23 km chainage interval. The OSM relation 21313 line from the M0 junction (km 16) to the Bicske junction (km 39) measures 23.71 km.",
+        "ro": "MKIF definește etapa I între kilometrii 16–39, de la M0 la Bicske, cu termen de finalizare 31 august 2028. Primăria Bicske indică Duna Aszfalt Zrt. drept constructor de la M0 până la kilometrul 39+200. Limita constructorului din sursa primăriei este cu 200 m după limita de etapă publicată de MKIF. Lungimea respectă intervalul de 23 km publicat. Traseul OSM din relația 21313, de la nodul M0 (km 16) la nodul Bicske (km 39), măsoară 23,71 km."
+      },
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Zrt.",
+          "role": "builder"
+        }
+      ]
     },
     {
       "id": "bicske-conco",
       "name": {
-        "en": "Bicske?Conc?, phase II",
-        "ro": "Bicske?Conc?, etapa II"
+        "en": "Bicske – Concó, phase II",
+        "ro": "Bicske – Concó, etapa II"
       },
       "status": "under_construction",
       "dates": {
@@ -93,7 +123,7 @@
           "date": "2025-09-01",
           "note": {
             "en": "MKIF reported that mainline widening works began on 1 September 2025.",
-            "ro": "MKIF a anun?at c? lucr?rile de l?rgire a c?ii principale au ?nceput la 1 septembrie 2025."
+            "ro": "MKIF a anunțat că lucrările de lărgire a căii principale au început la 1 septembrie 2025."
           },
           "sourceRef": "mkif-m1-start"
         }
@@ -102,12 +132,26 @@
       "sourceRefs": [
         "mkif-m1-phases",
         "mkif-m1-start",
-        "osm-m1-route"
+        "osm-m1-route",
+        "bicske-m1-contractors",
+        "openstreetmap-odbl",
+        "duna-aszfalt-legal-history"
       ],
       "note": {
-        "en": "MKIF gives the phase limits as km 39?94 and expected completion by 31 August 2029. Length follows the 55 km chainage interval. The completed section is planned for three traffic lanes in each direction plus one ITS lane on each side. The OSM trace measures 57.85 km.",
-        "ro": "MKIF indic? limitele etapei la km 39?94 ?i finalizarea estimat? p?n? la 31 august 2029. Lungimea urmeaz? intervalul de 55 km dintre bornele kilometrice. Dup? finalizare, sec?iunea va avea trei benzi de circula?ie pe sens ?i c?te o band? ITS pe fiecare parte. Traseul OSM m?soar? 57,85 km."
-      }
+        "en": "MKIF defines phase II as km 39–94, Bicske to the Concó rest area, with completion due by 31 August 2029. Bicske Municipality identifies Duna Aszfalt Zrt. as the builder from km 39+000 to 39+200 and V-Híd Zrt. from km 39+200 to Győr. The phase therefore includes 200 m of Duna Aszfalt work, with the remainder assigned to V-Híd. Length follows the stated 55 km chainage interval. The OSM relation 21313 line from the Bicske junction (km 39) to the Ács/Bábolna junction at km 94 measures 54.43 km.",
+        "ro": "MKIF definește etapa II între kilometrii 39–94, de la Bicske la spațiul de servicii Concó, cu termen de finalizare 31 august 2029. Primăria Bicske indică Duna Aszfalt Zrt. drept constructor între kilometrii 39+000 și 39+200 și V-Híd Zrt. de la kilometrul 39+200 până la Győr. Etapa include astfel 200 m de lucrări Duna Aszfalt, restul revenind firmei V-Híd. Lungimea respectă intervalul de 55 km publicat. Traseul OSM din relația 21313, de la nodul Bicske (km 39) la nodul Ács/Bábolna de la km 94, măsoară 54,43 km."
+      },
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Zrt.",
+          "role": "builder"
+        },
+        {
+          "name": "V-Híd Zrt.",
+          "role": "builder"
+        }
+      ]
     }
-  ]
+  ],
+  "operator": "hu-mkif"
 }
