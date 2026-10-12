@@ -2,30 +2,68 @@
   "id": "at-semmering-basistunnel",
   "country": "at",
   "category": "tunnel",
-  "name": { "en": "Semmering Base Tunnel", "ro": "Tunelul de bază Semmering" },
+  "name": {
+    "en": "Semmering Base Tunnel",
+    "ro": "Tunelul de bază Semmering"
+  },
   "description": {
     "en": "The 27.3 km Semmering Base Tunnel links Gloggnitz and Mürzzuschlag beneath the Semmering Pass. It is under construction as part of the Vienna–Villach Southern Railway upgrade.",
     "ro": "Tunelul de bază Semmering, cu o lungime de 27,3 km, leagă Gloggnitz și Mürzzuschlag pe sub pasul Semmering. Este în construcție ca parte a modernizării liniei ferate sudice Viena–Villach."
   },
   "operator": "at-oebb-infrastruktur",
   "sources": [
-    { "id": "oebb-semmering", "title": "ÖBB-Infrastruktur: Semmering Base Tunnel", "url": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/suedstrecke-wien-villach/semmering-basistunnel", "retrievedOn": "2026-10-10" },
-    { "id": "wiki-semmering", "title": "Wikipedia: Semmering-Basistunnel", "url": "https://de.wikipedia.org/wiki/Semmering-Basistunnel", "retrievedOn": "2026-10-10" },
-    { "id": "osm-semmering", "title": "OpenStreetMap: Semmering Base Tunnel construction way 394410162", "url": "https://www.openstreetmap.org/way/394410162", "retrievedOn": "2026-10-10" }
+    {
+      "id": "oebb-semmering",
+      "title": "ÖBB-Infrastruktur: Semmering Base Tunnel",
+      "url": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/suedstrecke-wien-villach/semmering-basistunnel",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "oebb-semmering-progress",
+      "title": "ÖBB-Infrastruktur: Current progress on the Semmering Base Tunnel",
+      "url": "https://infrastruktur.oebb.at/de/projekte-fuer-oesterreich/bahnstrecken/suedstrecke-wien-villach/semmering-basistunnel/aktuelles-s",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "wiki-semmering",
+      "title": "Wikipedia: Semmering-Basistunnel",
+      "url": "https://de.wikipedia.org/wiki/Semmering-Basistunnel",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-semmering",
+      "title": "OpenStreetMap: Semmering Base Tunnel construction way 394410162",
+      "url": "https://www.openstreetmap.org/way/394410162",
+      "retrievedOn": "2026-10-10"
+    }
   ],
   "lots": [
     {
       "id": "gloggnitz-muerzzuschlag",
-      "name": { "en": "Gloggnitz–Mürzzuschlag tunnel", "ro": "Tunelul Gloggnitz–Mürzzuschlag" },
-      "status": "under_construction",
-      "dates": { "constructionStart": "2012-04-25", "expectedOpening": "2030" },
-      "lengthKm": 27.3,
-      "profile": { "works": "greenfield", "tunnelKm": 27.3 },
-      "note": {
-        "en": "ÖBB currently says the tunnel will connect Gloggnitz and Mürzzuschlag from the end of 2029; its construction timeline describes the first trains in 2030. The mapped OSM tunnel line measures 27.1 km, close to the sourced 27.3 km. This lot records the full tunnel route; individual construction-contract scopes are not split because their route lengths are not stated on the project overview.",
-        "ro": "ÖBB indică în prezent că tunelul va lega Gloggnitz și Mürzzuschlag de la sfârșitul lui 2029; calendarul lucrărilor indică primele trenuri în 2030. Linia de tunel OSM cartografiată măsoară 27,1 km, aproape de cei 27,3 km publicați. Lotul reprezintă întregul traseu al tunelului; contractele de construcție nu sunt împărțite deoarece pagina generală a proiectului nu precizează lungimile lor."
+      "name": {
+        "en": "Gloggnitz–Mürzzuschlag tunnel",
+        "ro": "Tunelul Gloggnitz–Mürzzuschlag"
       },
-      "sourceRefs": ["oebb-semmering", "wiki-semmering", "osm-semmering"],
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2012-04-25",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 27.3,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 27.3
+      },
+      "note": {
+        "en": "ÖBB reports that the final breakthrough in the Gloggnitz section took place on 29 November 2024. Technical tunnel equipment works began in summer 2025. The tunnel is scheduled to open at the end of 2029; ÖBB says the first trains will run in 2030. The mapped OSM tunnel line measures 27.1 km, close to the sourced 27.3 km. This lot records the full tunnel route; individual construction-contract scopes are not split because their route lengths are not stated on the project overview.",
+        "ro": "ÖBB raportează că străpungerea finală în secțiunea Gloggnitz a avut loc la 29 noiembrie 2024. Lucrările pentru echiparea tehnică a tunelului au început în vara anului 2025. Deschiderea tunelului este programată pentru sfârșitul lui 2029; ÖBB spune că primele trenuri vor circula în 2030. Linia de tunel OSM măsoară 27,1 km, aproape de lungimea publicată de 27,3 km. Lotul reprezintă întregul traseu al tunelului; contractele de construcție nu sunt împărțite deoarece pagina generală a proiectului nu precizează lungimile lor."
+      },
+      "sourceRefs": [
+        "oebb-semmering",
+        "oebb-semmering-progress",
+        "wiki-semmering",
+        "osm-semmering"
+      ],
       "geometryRef": "gloggnitz-muerzzuschlag"
     }
   ]

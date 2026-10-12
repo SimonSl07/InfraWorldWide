@@ -25,6 +25,13 @@
       "url": "https://www.openstreetmap.org/relation/164956",
       "publisher": "OpenStreetMap contributors",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "lvc-kekava-works-start",
+      "title": "Latvijas Valsts ceļi: Construction begins on the Ķekava bypass",
+      "url": "https://lvceli.lv/aktualitates/sak-buvet-kekavas-apvedcelu-fotoreportaza/",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-12"
     }
   ],
   "lots": [
@@ -37,7 +44,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2020-08-13",
-        "constructionStart": "2021-11-29",
+        "constructionStart": "2021-12",
         "opened": "2023-10-13"
       },
       "lengthKm": 13.64,
@@ -63,11 +70,11 @@
         },
         {
           "kind": "construction_start",
-          "date": "2021-11-29",
-          "sourceRef": "lvc-kekava",
+          "date": "2021-12",
+          "sourceRef": "lvc-kekava-works-start",
           "note": {
-            "en": "The approved project moved to the construction phase.",
-            "ro": "Proiectul aprobat a trecut la etapa de construcție."
+            "en": "LVC reports that construction works began in December 2021. The 29 November date on the project page is the approval of the construction design and transition to the construction phase.",
+            "ro": "LVC relatează că lucrările de construcție au început în decembrie 2021. Data de 29 noiembrie din pagina proiectului este aprobarea proiectului tehnic și trecerea la faza de construcție."
           }
         },
         {
@@ -82,7 +89,8 @@
       ],
       "sourceRefs": [
         "lvc-kekava",
-        "osm-a7-route"
+        "osm-a7-route",
+        "lvc-kekava-works-start"
       ],
       "geometryRef": "a7-kekava-bypass"
     }

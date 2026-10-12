@@ -46,6 +46,13 @@
       "url": "https://www.openstreetmap.org/relation/14655709",
       "publisher": "OpenStreetMap contributors",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "mirt-2019-a24",
+      "title": "Ministry of Infrastructure and Water Management: MIRT Overview 2019, A24 Blankenburg Connection",
+      "url": "https://www.mirtoverzicht.nl/site/binaries/site-content/collections/documents/2018/09/18/mirt-2019/MIRT%2BOverzicht%2B2019%2Blowres%2B28%2BMb.pdf",
+      "publisher": "Government of the Netherlands",
+      "retrievedOn": "2026-10-12"
     }
   ],
   "lots": [
@@ -58,7 +65,8 @@
       "status": "opened",
       "dates": {
         "constructionStart": "2018",
-        "opened": "2024-12-07"
+        "opened": "2024-12-07",
+        "tenderAwarded": "2017"
       },
       "lengthKm": 4.2,
       "cost": {
@@ -87,6 +95,15 @@
       },
       "events": [
         {
+          "kind": "awarded",
+          "date": "2017",
+          "sourceRef": "mirt-2019-a24",
+          "note": {
+            "en": "The MIRT report states that the DBFM contract was awarded in 2017.",
+            "ro": "Raportul MIRT indică atribuirea contractului DBFM în 2017."
+          }
+        },
+        {
           "kind": "construction_start",
           "date": "2018",
           "sourceRef": "rws-a24-opened",
@@ -110,7 +127,8 @@
         "rws-a24-facts",
         "rws-a24-length",
         "nl-mobility-fund-2025",
-        "osm-a24"
+        "osm-a24",
+        "mirt-2019-a24"
       ],
       "geometryRef": "a20-vlaardingen-a15-rozenburg"
     }

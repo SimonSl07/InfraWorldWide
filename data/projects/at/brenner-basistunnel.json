@@ -2,35 +2,101 @@
   "id": "at-brenner-basistunnel",
   "country": "at",
   "category": "railway",
-  "name": { "en": "Brenner Base Tunnel, Austrian section", "ro": "Tunelul de bază Brenner, secțiunea austriacă" },
+  "name": {
+    "en": "Brenner Base Tunnel, Austrian section",
+    "ro": "Tunelul de bază Brenner, secțiunea austriacă"
+  },
   "description": {
     "en": "The Austrian section of the Brenner Base Tunnel runs from the Sillschlucht near Innsbruck to the Italian border at Brenner. Construction packages H21, H33, H41, H52 and H53 cover the works on this section.",
     "ro": "Secțiunea austriacă a tunelului de bază Brenner se întinde de la Sillschlucht, lângă Innsbruck, până la frontiera cu Italia de la Brenner. Pachetele de lucrări H21, H33, H41, H52 și H53 acoperă lucrările de pe această secțiune."
   },
   "operator": "at-bbt-se",
   "sources": [
-    { "id": "bbt-h21", "title": "BBT SE: Construction lot H21 Sillschlucht", "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h21-sillschlucht/", "retrievedOn": "2026-10-10" },
-    { "id": "bbt-h33", "title": "BBT SE: Construction lot H33 Tulfes–Pfons", "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h33-tulfes-pfons/", "retrievedOn": "2026-10-10" },
-    { "id": "bbt-h41", "title": "BBT SE: Construction lot H41 Sillschlucht–Pfons", "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h41-sillschlucht-pfons/", "retrievedOn": "2026-10-10" },
-    { "id": "bbt-h52", "title": "BBT SE: Construction lot H52 Hochstegen", "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h52-hochstegen/", "retrievedOn": "2026-10-10" },
-    { "id": "bbt-h53", "title": "BBT SE: Construction lot H53 Pfons–Brenner", "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h53-pfons-brenner/", "retrievedOn": "2026-10-10" },
-    { "id": "bbt-opening", "title": "BBT SE: Brenner Base Tunnel project overview and opening target", "url": "https://www.bbt-se.com/en/newsroom/detail/wilma-and-olga-the-last-tbms-of-the-brenner-base-tunnel-have-been-launched/", "retrievedOn": "2026-10-10" },
-    { "id": "osm-bbt", "title": "OpenStreetMap: Brenner Base Tunnel, west main bore", "url": "https://www.openstreetmap.org/way/416877603", "retrievedOn": "2026-10-10" }
+    {
+      "id": "bbt-h21",
+      "title": "BBT SE: Construction lot H21 Sillschlucht",
+      "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h21-sillschlucht/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bbt-h33",
+      "title": "BBT SE: Construction lot H33 Tulfes–Pfons",
+      "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h33-tulfes-pfons/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bbt-h41",
+      "title": "BBT SE: Construction lot H41 Sillschlucht–Pfons",
+      "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h41-sillschlucht-pfons/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bbt-h52",
+      "title": "BBT SE: Construction lot H52 Hochstegen",
+      "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h52-hochstegen/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bbt-h53",
+      "title": "BBT SE: Construction lot H53 Pfons–Brenner",
+      "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/baulos-h53-pfons-brenner/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bbt-opening",
+      "title": "BBT SE: Brenner Base Tunnel project overview and opening target",
+      "url": "https://www.bbt-se.com/en/newsroom/detail/wilma-and-olga-the-last-tbms-of-the-brenner-base-tunnel-have-been-launched/",
+      "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "osm-bbt",
+      "title": "OpenStreetMap: Brenner Base Tunnel, west main bore",
+      "url": "https://www.openstreetmap.org/way/416877603",
+      "retrievedOn": "2026-10-10"
+    }
   ],
   "lots": [
     {
       "id": "innsbruck-brenner-border",
-      "name": { "en": "Sillschlucht–Brenner state border", "ro": "Sillschlucht–frontiera Brenner" },
+      "name": {
+        "en": "Sillschlucht–Brenner state border",
+        "ro": "Sillschlucht–frontiera Brenner"
+      },
       "status": "under_construction",
-      "dates": { "constructionStart": "2014-07", "expectedOpening": "2032" },
+      "dates": {
+        "constructionStart": "2014-07",
+        "expectedOpening": "2032"
+      },
       "lengthKm": 29.9,
-      "profile": { "works": "greenfield", "tunnelKm": 29.9 },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 29.9
+      },
       "note": {
         "en": "The line is measured from the OSM west main bore between Sillschlucht and the state border; the mapped Austrian section is about 29.9 km. BBT lists separate package awards: H21 EUR 59.5 million to PORR, H33 EUR 377 million to Strabag and Webuild, H41 EUR 651 million to Implenia, Webuild and CSC, H52 EUR 120 million to Swietelsky, and H53 EUR 959 million to PORR and Marti. The packages contain overlapping tunnel and ancillary works, so the award values are not summed or assigned as the cost of this route lot. The Italian packages are excluded.",
         "ro": "Linia este măsurată pe tunelul principal vestic OSM, între Sillschlucht și frontieră; secțiunea austriacă cartografiată are aproximativ 29,9 km. BBT listează separat valorile contractelor: H21, 59,5 milioane EUR către PORR; H33, 377 milioane EUR către Strabag și Webuild; H41, 651 milioane EUR către Implenia, Webuild și CSC; H52, 120 milioane EUR către Swietelsky; H53, 959 milioane EUR către PORR și Marti. Pachetele includ lucrări de tunel și lucrări auxiliare cu suprapuneri, astfel că valorile nu sunt însumate și nu sunt atribuite ca preț al acestui lot de traseu. Pachetele italiene sunt excluse."
       },
-      "sourceRefs": ["bbt-h21", "bbt-h33", "bbt-h41", "bbt-h52", "bbt-h53", "bbt-opening", "osm-bbt"],
-      "geometryRef": "innsbruck-brenner-border"
+      "sourceRefs": [
+        "bbt-h21",
+        "bbt-h33",
+        "bbt-h41",
+        "bbt-h52",
+        "bbt-h53",
+        "bbt-opening",
+        "osm-bbt"
+      ],
+      "geometryRef": "innsbruck-brenner-border",
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-04-04",
+          "sourceRef": "bbt-opening",
+          "note": {
+            "en": "Construction lot H53 Pfons–Brenner was awarded to the consortium of Porr Bau GmbH, Marti GmbH Austria and Marti Tunnel AG Switzerland. BBT states a contract value of EUR 959 million for that package.",
+            "ro": "Lotul de construcție H53 Pfons–Brenner a fost atribuit asocierii Porr Bau GmbH, Marti GmbH Austria și Marti Tunnel AG Switzerland. BBT indică o valoare a contractului de 959 milioane EUR pentru acest pachet."
+          }
+        }
+      ]
     }
   ]
 }
