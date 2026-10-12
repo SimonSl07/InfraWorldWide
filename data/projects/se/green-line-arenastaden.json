@@ -23,6 +23,13 @@
       "retrievedOn": "2026-10-12"
     },
     {
+      "id": "region-stockholm-arenastaden-start",
+      "title": "Region Stockholm: Green Line to Arenastaden works newsletter, December 2020",
+      "url": "https://nyatunnelbanan.se/wp-content/uploads/files/Arenastaden%20december%202020_0.pdf",
+      "publisher": "Region Stockholm / Nya tunnelbanan",
+      "retrievedOn": "2026-10-12"
+    },
+    {
       "id": "region-stockholm-metro-forecast",
       "title": "Region Stockholm: New metro expansion cost and opening forecast, 25 September 2026",
       "url": "https://nyatunnelbanan.se/?p=46253",
@@ -53,6 +60,7 @@
       },
       "status": "under_construction",
       "dates": {
+        "constructionStart": "2020",
         "expectedOpening": "2029"
       },
       "lengthKm": 4,
@@ -60,6 +68,17 @@
         "works": "greenfield",
         "stationCount": 3
       },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2020",
+          "sourceRef": "region-stockholm-arenastaden-start",
+          "note": {
+            "en": "By December 2020, Region Stockholm reported that 100 m of the 600 m work tunnel toward Hagastaden had been excavated.",
+            "ro": "Până în decembrie 2020, Regiunea Stockholm a raportat excavarea a 100 m din tunelul de lucru de 600 m către Hagastaden."
+          }
+        }
+      ],
       "cost": {
         "estimated": {
           "amount": 12300,
@@ -75,6 +94,7 @@
       },
       "sourceRefs": [
         "region-stockholm-arenastaden",
+        "region-stockholm-arenastaden-start",
         "region-stockholm-metro-forecast",
         "osm-arenastaden-alignment",
         "osm-snapshot"

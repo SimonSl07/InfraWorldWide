@@ -7,11 +7,11 @@
     "ro": "Linia ferată 8 Varșovia – Radom – Kielce – Cracovia (modernizare)"
   },
   "description": {
-    "en": "PKP PLK line no. 8, 317.164 km from Warszawa Zachodnia to Kraków Główny, electrified at 3 kV DC. The lots are the modernisation contracts with a sourced extent and a signing date: Warszawa Okęcie – Czachówek Południowy, Czachówek Południowy – Warka, Warka – Radom (second track), Skarżysko-Kamienna – Tumlin and Sędziszów – Kozłów. Other works on the line are not drawn: Skarżysko-Kamienna – Suchedniów (ZUE, signed 2016), Radom – Skarżysko-Kamienna (revitalised 2011–2013 per pl.wikipedia), Tumlin – Sędziszów and Tunel – Kraków. Contract values come from press reports of the signings and do not include later annexes.",
-    "ro": "Linia nr 8 a PKP PLK, 317,164 km de la Warszawa Zachodnia la Kraków Główny, electrificată la 3 kV c.c. Loturile sunt contractele de modernizare cu extindere și dată de semnare din surse: Warszawa Okęcie – Czachówek Południowy, Czachówek Południowy – Warka, Warka – Radom (a doua cale), Skarżysko-Kamienna – Tumlin și Sędziszów – Kozłów. Alte lucrări de pe linie nu sunt desenate: Skarżysko-Kamienna – Suchedniów (ZUE, semnat în 2016), Radom – Skarżysko-Kamienna (revitalizat în 2011–2013 conform pl.wikipedia), Tumlin – Sędziszów și Tunel – Kraków. Valorile contractelor provin din relatări de presă despre semnări și nu includ acte adiționale ulterioare."
+    "en": "PKP PLK line no. 8, 317.164 km from Warszawa Zachodnia to Kraków Główny, electrified at 3 kV DC. The lots are the modernisation contracts with a sourced extent and a signing date: Warszawa Okęcie – Czachówek Południowy, Czachówek Południowy – Warka, Warka – Radom (second track), Skarżysko-Kamienna – Tumlin Sędziszów – Kozłów, Sitkówka Nowiny – Miąsowa, and Miąsowa – Sędziszów. The last lot records one ZUE contract for two contiguous tasks. Other works on the line are not drawn: Skarżysko-Kamienna – Suchedniów (ZUE, signed 2016), Radom – Skarżysko-Kamienna (revitalised 2011–2013 per pl.wikipedia), Tumlin – Sędziszów and Tunel – Kraków. Contract values come from press reports of the signings and do not include later annexes.",
+    "ro": "Linia nr 8 a PKP PLK, 317,164 km de la Warszawa Zachodnia la Kraków Główny, electrificată la 3 kV c.c. Loturile sunt contractele de modernizare cu extindere și dată de semnare din surse: Warszawa Okęcie – Czachówek Południowy, Czachówek Południowy – Warka, Warka – Radom (a doua cale), Skarżysko-Kamienna – Tumlin Sędziszów – Kozłów, Sitkówka Nowiny – Miąsowa și Miąsowa – Sędziszów. Ultimul lot reprezintă un singur contract ZUE pentru două sarcini consecutive. Alte lucrări de pe linie nu sunt desenate: Skarżysko-Kamienna – Suchedniów (ZUE, semnat în 2016), Radom – Skarżysko-Kamienna (revitalizat în 2011–2013 conform pl.wikipedia), Tumlin – Sędziszów și Tunel – Kraków. Valorile contractelor provin din relatări de presă despre semnări și nu includ acte adiționale ulterioare."
   },
   "operator": "pl-plk",
-  "lastVerified": "2026-10-10",
+  "lastVerified": "2026-10-12",
   "lots": [
     {
       "id": "okecie-czachowek-poludnie",
@@ -475,6 +475,156 @@
         "openstreetmap-odbl"
       ],
       "geometryRef": "sedziszow-kozlow"
+    },
+    {
+      "id": "sitkowka-nowiny-miasowa",
+      "name": {
+        "en": "Sitkówka Nowiny – Miąsowa",
+        "ro": "Sitkówka Nowiny – Miąsowa"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-09-14"
+      },
+      "lengthKm": 22.034,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 496.37,
+              "currency": "PLN",
+              "year": 2026,
+              "scope": "works",
+              "note": "Including VAT. MIRBUD reported PLN 496,373,286.92 gross; the net contract value was not found."
+            },
+            "date": "2026-09-14",
+            "sourceRef": "mirbud-line8-contract-20260914"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 140,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-09-14",
+          "note": {
+            "en": "PKP PLK signed the contract with a consortium led by PPM-T, with Transkol as partner.",
+            "ro": "PKP PLK a semnat contractul cu un consorțiu condus de PPM-T, cu Transkol ca partener."
+          },
+          "sourceRef": "mirbud-line8-contract-20260914"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Pomorskie Przedsiębiorstwo Mechaniczno-Torowe (PPM-T)",
+          "role": "builder"
+        },
+        {
+          "name": "Transkol Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 496.37,
+          "currency": "PLN",
+          "year": 2026,
+          "scope": "works",
+          "note": "Including VAT. MIRBUD reported PLN 496,373,286.92 gross; the net contract value was not found."
+        }
+      },
+      "note": {
+        "en": "LOT B1_1 covers km 196.095–218.129, a sourced chainage span of 22.034 km. The procurement title excludes the Sitkówka Nowiny station. The OSM track cut uses the Sitkówka Nowiny and Miąsowa station anchors; its measured length is 22.052 km. The PLN 496.37 million contract value is gross; a net value was not found. The works cover the existing two-track line.",
+        "ro": "LOT B1_1 acoperă km 196,095–218,129, un interval de 22,034 km conform kilometrajului din sursă. Titlul achiziției exclude stația Sitkówka Nowiny. Tronsonul OSM folosește ca repere stațiile Sitkówka Nowiny și Miąsowa; lungimea măsurată este 22,052 km. Valoarea contractului de 496,37 milioane PLN este brută; nu a fost găsită valoarea netă. Lucrările se execută pe linia existentă cu două căi."
+      },
+      "sourceRefs": [
+        "eu-line8-kielce-kozlow-tender-2026",
+        "mirbud-line8-offer-20260522",
+        "mirbud-line8-contract-20260914",
+        "osm-line8-snapshot-20261010",
+        "osm-relation-318914",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "sitkowka-nowiny-miasowa"
+    },
+    {
+      "id": "miasowa-sedziszow-2026",
+      "name": {
+        "en": "Miąsowa – Sędziszów",
+        "ro": "Miąsowa – Sędziszów"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-09-14"
+      },
+      "lengthKm": 34.671,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 780.8,
+              "currency": "PLN",
+              "year": 2026,
+              "scope": "works",
+              "note": "Net of VAT. ZUE reported PLN 960.4 million gross."
+            },
+            "date": "2026-09-14",
+            "sourceRef": "zue-line8-net-offer-20260313"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 140,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-09-14",
+          "note": {
+            "en": "PKP PLK signed the combined contract with ZUE S.A. for the Miąsowa–Jędrzejów and Jędrzejów–Sędziszów tasks.",
+            "ro": "PKP PLK a semnat contractul comun cu ZUE S.A. pentru lucrările Miąsowa–Jędrzejów și Jędrzejów–Sędziszów."
+          },
+          "sourceRef": "zue-line8-contract-20260914"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ZUE S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 780.8,
+          "currency": "PLN",
+          "year": 2026,
+          "scope": "works",
+          "note": "Net of VAT. ZUE reported PLN 960.4 million gross."
+        }
+      },
+      "note": {
+        "en": "One ZUE contract covers two contiguous tender tasks: LOT B1_2 Miąsowa–Jędrzejów, km 218.129–233.150, and LOT B2_1 Jędrzejów (station excluded)–Sędziszów, km 233.150–252.800. Their chainage span is 34.671 km. The PLN 780.8 million net award (PLN 960.4 million gross) is recorded once for this combined lot. The OSM track cut between Miąsowa and Sędziszów measures 31.440 km, 9.3% shorter than the sourced chainage span; the sourced length is kept.",
+        "ro": "Un singur contract ZUE acoperă două sarcini consecutive: LOT B1_2 Miąsowa–Jędrzejów, km 218,129–233,150, și LOT B2_1 Jędrzejów (fără stație)–Sędziszów, km 233,150–252,800. Intervalul total conform kilometrajului este de 34,671 km. Valoarea contractului de 780,8 milioane PLN net (960,4 milioane PLN brut) este înregistrată o singură dată pentru acest lot combinat. Tronsonul OSM între Miąsowa și Sędziszów măsoară 31,440 km, cu 9,3% mai puțin decât intervalul din sursă; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "eu-line8-kielce-kozlow-tender-2026",
+        "zue-line8-contract-20260914",
+        "zue-line8-net-offer-20260313",
+        "osm-line8-snapshot-20261010",
+        "osm-relation-318914",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "miasowa-sedziszow-2026"
     }
   ],
   "sources": [
@@ -594,6 +744,48 @@
       "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/zmodernizujemy-najwazniejsza-linie-kolejowa-w-wojewodztwie-swietokrzyskim-10653",
       "publisher": "PKP Polskie Linie Kolejowe",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "eu-line8-kielce-kozlow-tender-2026",
+      "title": "EU procurement notice: Line 8, Miąsowa – Jędrzejów and Jędrzejów – Sędziszów works, exact chainages",
+      "url": "https://op.europa.eu/en/web/public-procurement/procurement-details/-/procurement/d9c4d78d-649f-4b88-ba25-e4efcbe2e4da",
+      "publisher": "European Union Publications Office",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "mirbud-line8-contract-20260914",
+      "title": "MIRBUD: consortium signs Line 8 Sitkówka Nowiny – Miąsowa contract (14 September 2026)",
+      "url": "https://mirbud.pl/aktualnosci/grupa-mirbud-z-pierwszym-duzym-kontraktem-kolejowym-konsorcjum-z-udzialem-transkolu-zmodernizuje-linie-kolejowa-nr-8",
+      "publisher": "MIRBUD S.A.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "mirbud-line8-offer-20260522",
+      "title": "MIRBUD current report 31/2026: selected consortium offer for LOT B1_1",
+      "url": "https://relacje.mirbud.pl/pobierz/1597/rb31-2026-wybor-oferty-spolki-zaleznej-emitenta-pdf",
+      "publisher": "MIRBUD S.A.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "zue-line8-contract-20260914",
+      "title": "ZUE: Line 8 Sędziszów – Jędrzejów – Miąsowa contract",
+      "url": "https://www.grupazue.pl/aktualnosci/zue-z-kontraktem-o-wartosci-960-mln-zl-na-modernizacje-linii-kolejowej-nr-8-w-wojewodztwie-swietokrzyskim",
+      "publisher": "ZUE S.A.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "zue-line8-net-offer-20260313",
+      "title": "ZUE current report 6/2026: net and gross offer for the Line 8 works",
+      "url": "https://www.grupazue.pl/uploads/app-_aliso-post-post/files/2589/rb-6-2026.pdf",
+      "publisher": "ZUE S.A.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-line8-snapshot-20261010",
+      "title": "OpenStreetMap Line 8 railway ways, Overpass base snapshot 10 October 2026 (relation 318914)",
+      "url": "https://www.openstreetmap.org/relation/318914",
+      "publisher": "OpenStreetMap contributors, ODbL",
+      "retrievedOn": "2026-10-12"
     }
   ]
 }
