@@ -1,0 +1,85 @@
+{
+  "id": "se-green-line-arenastaden",
+  "country": "se",
+  "city": "se-stockholm",
+  "category": "railway",
+  "name": {
+    "en": "Green Line extension to Arenastaden",
+    "ro": "Extinderea Liniei Verzi până la Arenastaden"
+  },
+  "description": {
+    "en": "A 4 km underground extension north from Odenplan to Arenastaden via Hagastaden and Södra Hagalund, adding three stations.",
+    "ro": "O extindere subterană de 4 km spre nord, de la Odenplan la Arenastaden prin Hagastaden și Södra Hagalund, cu trei stații noi."
+  },
+  "operator": "se-region-stockholm",
+  "stationCount": 3,
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "region-stockholm-arenastaden",
+      "title": "Region Stockholm: Green Line to Arenastaden, 4 km and three new stations",
+      "url": "https://nyatunnelbanan.se/arenastaden/",
+      "publisher": "Region Stockholm / Nya tunnelbanan",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "region-stockholm-metro-forecast",
+      "title": "Region Stockholm: New metro expansion cost and opening forecast, 25 September 2026",
+      "url": "https://nyatunnelbanan.se/?p=46253",
+      "publisher": "Region Stockholm / Nya tunnelbanan",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-arenastaden-alignment",
+      "title": "OpenStreetMap: Green Line construction alignment, Odenplan–Arenastaden (way 777186557)",
+      "url": "https://www.openstreetmap.org/way/777186557",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-snapshot",
+      "title": "OpenStreetMap ODbL attribution: geometry from OSM construction way snapshots, base timestamp 2026-10-12T20:00:03Z",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "odenplan-arenastaden",
+      "name": {
+        "en": "Odenplan–Arenastaden",
+        "ro": "Odenplan–Arenastaden"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2029"
+      },
+      "lengthKm": 4,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 3
+      },
+      "cost": {
+        "estimated": {
+          "amount": 12300,
+          "currency": "SEK",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Region Stockholm forecast in current price levels, published 25 September 2026."
+        }
+      },
+      "note": {
+        "en": "The official length is 4 km. The OSM construction alignment follows one track and measures 3.73 km; the sourced length is retained.",
+        "ro": "Lungimea oficială este de 4 km. Aliniamentul OSM de construcție urmează o singură cale și măsoară 3.73 km; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "region-stockholm-arenastaden",
+        "region-stockholm-metro-forecast",
+        "osm-arenastaden-alignment",
+        "osm-snapshot"
+      ],
+      "geometryRef": "odenplan-arenastaden"
+    }
+  ]
+}
