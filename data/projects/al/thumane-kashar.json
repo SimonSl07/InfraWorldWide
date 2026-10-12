@@ -1,0 +1,62 @@
+{
+  "id": "al-thumane-kashar",
+  "country": "al",
+  "category": "highway",
+  "name": {
+    "en": "Thumanë–Kashar motorway",
+    "ro": "Autostrada Thumanë–Kashar"
+  },
+  "description": {
+    "en": "The 21 km Thumanë–Kashar section of Albania’s Corridor Blu opened to traffic on 30 June 2024.",
+    "ro": "Sectorul de 21 km Thumanë–Kashar al Coridorului Albastru din Albania a fost deschis circulației la 30 iunie 2024."
+  },
+  "operator": "al-arrsh",
+  "lots": [
+    {
+      "id": "thumane-kashar",
+      "name": {
+        "en": "Thumanë–Kashar",
+        "ro": "Thumanë–Kashar"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2024-06-30"
+      },
+      "lengthKm": 21,
+      "profile": {
+        "terrain": "plain"
+      },
+      "note": {
+        "en": "ARRSH describes the route as about 21 km. OSM geometry measures 21.48 km between the mapped northern Thumanë endpoint and the Kashar interchange.",
+        "ro": "ARRSH descrie traseul ca având aproximativ 21 km. Geometria OSM măsoară 21,48 km între capătul nordic cartografiat la Thumanë și nodul Kashar."
+      },
+      "sourceRefs": [
+        "arrsh-thumane-kashar-length",
+        "arrsh-thumane-kashar-opening",
+        "osm-thumane-kashar"
+      ],
+      "geometryRef": "thumane-kashar"
+    }
+  ],
+  "sources": [
+    {
+      "id": "arrsh-thumane-kashar-length",
+      "title": "ARRSH: Vazhdojnë punimet në kantierin e aksit Thumanë-Kashar (12 June 2023)",
+      "url": "https://www.arrsh.gov.al/vazhdojne-punimet-ne-kantierin-e-aksit-thumane-kashar.html",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "arrsh-thumane-kashar-opening",
+      "title": "ARRSH: Hapet për qarkullimin e automjeteve datë 30 qershor aksi Thumanë-Kashar (27 June 2024)",
+      "url": "https://www.arrsh.gov.al/hapet-per-qarkullimin-e-automjeteve-date-30-qershor-aksi-thumane-kashar.html",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-thumane-kashar",
+      "title": "OpenStreetMap contributors (ODbL): Thumanë–Kashar motorway section, from relation 12925304",
+      "url": "https://www.openstreetmap.org/relation/12925304",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lastUpdated": "2026-10-12"
+}
