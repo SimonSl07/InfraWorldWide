@@ -1,0 +1,68 @@
+{
+  "id": "me-podgorica-western-bypass",
+  "country": "me",
+  "city": "me-podgorica",
+  "category": "highway",
+  "name": {
+    "en": "Podgorica Western Bypass",
+    "ro": "Centura vestică a Podgoricăi"
+  },
+  "description": {
+    "en": "Four-lane urban bypass between Donja Gorica and Komanski most.",
+    "ro": "Centura urbană cu patru benzi între Donja Gorica și Komanski most."
+  },
+  "operator": "me-uzs",
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "podgorica-award",
+      "title": "Government of Montenegro: contract signed for the Podgorica Western Bypass",
+      "url": "https://www.gov.me/clanak/potpisan-ugovor-za-izgradnju-zapadne-obilaznice-podgorice-vrijedan-oko-17-miliona-eura",
+      "publisher": "Transport Administration of Montenegro",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "podgorica-osm",
+      "title": "OpenStreetMap contributors: proposed Zapadna obilaznica alignment near Podgorica",
+      "url": "https://www.openstreetmap.org/#map=15/42.431/19.206",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "donja-gorica-komanski-most",
+      "name": {
+        "en": "Donja Gorica–Komanski most",
+        "ro": "Donja Gorica–Komanski most"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-08-28"
+      },
+      "lengthKm": 3,
+      "contractors": [
+        {
+          "name": "Euromont stil–Toškovići JV",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-08-28",
+          "sourceRef": "podgorica-award"
+        }
+      ],
+      "geometryRef": "donja-gorica-komanski-most",
+      "sourceRefs": [
+        "podgorica-award",
+        "podgorica-osm"
+      ],
+      "note": {
+        "en": "The Transport Administration gives an approximate length of 3 km and a construction period of 550 calendar days from site handover. The length is recorded as stated; the drawn OSM alignment is about 2.85 km. Contract value omitted because the cited source does not state the VAT basis.",
+        "ro": "Administrația Transporturilor indică o lungime aproximativă de 3 km și o perioadă de execuție de 550 de zile calendaristice de la predarea amplasamentului. Lungimea este păstrată conform sursei; aliniamentul OSM desenat are aproximativ 2,85 km. Valoarea contractului este omisă deoarece sursa citată nu precizează regimul TVA."
+      }
+    }
+  ]
+}

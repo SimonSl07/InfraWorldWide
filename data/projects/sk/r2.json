@@ -843,6 +843,44 @@
         "osm"
       ],
       "geometryRef": "kosice-saca-kosicke-olsany-ii"
+    },
+    {
+      "id": "kosicke-olsany-hrasovik",
+      "name": {
+        "en": "Košické Oľšany–Hrašovík connector",
+        "ro": "Legătura Košické Oľšany–Hrašovík"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-12-16"
+      },
+      "lengthKm": 1.061,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "A 1.061 km R2/R4 section from the Košické Oľšany interchange to Hrašovík on road I/50, built within the D1 Budimír–Bidovce project. The Ministry of Transport says the short connector was open to traffic on 16 December 2019. EIB records construction of the combined project as starting in 2016, but no segment-specific start date is stated. The reported EUR 197 million contract value covers the bundled D1 and R2/R4 works and is not allocated to this lot. The OSM line is 1.189 km, 12% longer than the sourced length; the sourced figure is retained.",
+        "ro": "Sector R2/R4 de 1,061 km de la nodul Košické Oľšany la Hrašovík, pe drumul I/50, construit în cadrul proiectului D1 Budimír–Bidovce. Ministerul Transporturilor spune că legătura scurtă a fost deschisă traficului la 16 decembrie 2019. BEI consemnează începerea în 2016 a proiectului combinat, dar nu indică o dată de start separată pentru acest sector. Valoarea contractuală raportată de 197 de milioane EUR acoperă lucrările grupate D1 și R2/R4 și nu este alocată acestui lot. Linia OSM are 1,189 km, cu 12% peste lungimea din sursă; se păstrează cifra din sursă."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2019-12-16",
+          "sourceRef": "mindop-2019-r2-connector-opening",
+          "note": {
+            "en": "The Ministry states that the short R2/R4 section from Košické Oľšany to Hrašovík was open to traffic as part of the D1 project.",
+            "ro": "Ministerul spune că sectorul scurt R2/R4 de la Košické Oľšany la Hrašovík a fost deschis traficului în cadrul proiectului D1."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "mindop-2019-r2-connector-opening",
+        "mindop-2019-annual-report-r2-connector",
+        "eib-d1-budimir-bidovce",
+        "osm-r4-kosicke-olsany-hrasovik",
+        "osm"
+      ],
+      "geometryRef": "kosicke-olsany-hrasovik"
     }
   ],
   "sources": [
@@ -1019,7 +1057,35 @@
       "title": "CRZ: R2 Ruskovce-Pravotice works contract amendment no. 10 (COLAS Slovakia, a.s.; signed 2019-08-26)",
       "url": "https://www.crz.gov.sk/4170548/",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "mindop-2019-r2-connector-opening",
+      "title": "Ministry of Transport of the Slovak Republic: D1 Budimír–Bidovce opened, including the R2/R4 connector (16 December 2019)",
+      "url": "https://www.mindop.sk/media/tlacove-spravy/detail/nov%E5%8F%A9-dia%E7%9B%B4nica-pri-ko%E9%82%B8iciach-u%E8%BB%A2-sl%E7%82%AD%E8%BB%A2i-motoristom",
+      "publisher": "Ministry of Transport of the Slovak Republic",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "mindop-2019-annual-report-r2-connector",
+      "title": "Ministry of Transport of the Slovak Republic: Annual report 2019, section 2.1.1 (D1 Budimír–Bidovce and R2 Košické Oľšany–Hrašovník)",
+      "url": "https://da.mindop.sk/fileadmin/documents/vyrocnespravy/2019/VYROCNA_20SPRAVA_202019_20final_20web.pdf",
+      "publisher": "Ministry of Transport of the Slovak Republic",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "eib-d1-budimir-bidovce",
+      "title": "European Investment Bank: D1 Budimír–Bidovce, Environmental and Social Data Sheet (R2/R4 connector scope and length)",
+      "url": "https://www.eib.org/attachments/registers/140663213.pdf",
+      "publisher": "European Investment Bank",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-r4-kosicke-olsany-hrasovik",
+      "title": "OpenStreetMap: motorway ways with ref=R4 on the Košické Oľšany–Hrašovík connector, Overpass base 2026-10-12",
+      "url": "https://overpass-api.de/api/interpreter",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
     }
   ],
-  "lastVerified": "2026-10-11"
+  "lastVerified": "2026-10-12"
 }
