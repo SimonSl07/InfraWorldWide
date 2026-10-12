@@ -1,0 +1,139 @@
+{
+  "id": "me-matesevo-andrijevica",
+  "country": "me",
+  "category": "highway",
+  "name": {
+    "en": "Bar–Boljare motorway (A1)",
+    "ro": "Autostrada Bar–Boljare (A1)"
+  },
+  "description": {
+    "en": "The Bar–Boljare motorway, including the open Smokovac–Mateševo section and the Mateševo–Andrijevica extension.",
+    "ro": "Autostrada Bar–Boljare, cu secțiunea deschisă Smokovac–Mateševo și extinderea Mateševo–Andrijevica."
+  },
+  "operator": "me-monteput",
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "mate-award",
+      "title": "Monteput: contract signed for the Mateševo–Andrijevica section",
+      "url": "https://monteput.me/potpisan-ugovor-o-projektovanju-i-gradnji-druge-dionice-auto-puta-bar-boljare-matesevo-andrijevica/",
+      "publisher": "Monteput d.o.o.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "mate-length-start",
+      "title": "Monteput: preparatory works begin on Mateševo–Andrijevica",
+      "url": "https://monteput.me/poceli-pripremni-radovi-na-izgradnji-druge-dionice-auto-puta-bar-boljare/",
+      "publisher": "Monteput d.o.o.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "mate-osm",
+      "title": "OpenStreetMap contributors: proposed A1 route relation 7723188, downloaded 12 October 2026",
+      "url": "https://www.openstreetmap.org/relation/7723188",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "smokovac-length",
+      "title": "Monteput: Bar–Boljare motorway portfolio, Smokovac–Mateševo length approximately 41.5 km",
+      "url": "https://monteput.me/portfolio/autoput-bar-boljare/",
+      "publisher": "Monteput d.o.o.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "smokovac-osm",
+      "title": "OpenStreetMap contributors: A1 route relation 7723187",
+      "url": "https://www.openstreetmap.org/relation/7723187",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "smokovac-opening",
+      "title": "Government of Montenegro: official service of Smokovac–Mateševo begins on 14 July 2022 at 08:00",
+      "url": "https://www.gov.me/clanak/svecano-otvaranje-prve-dionice-autoputa-bar-boljare-smokovac-matesevo",
+      "publisher": "Government of Montenegro",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "matesevo-andrijevica",
+      "name": {
+        "en": "Mateševo–Andrijevica",
+        "ro": "Mateševo–Andrijevica"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2026-02-27",
+        "constructionStart": "2026-06-26"
+      },
+      "lengthKm": 23,
+      "contractors": [
+        {
+          "name": "PowerChina–STECOL–PCCD",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-02-27",
+          "sourceRef": "mate-award"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-06-26",
+          "note": {
+            "en": "Monteput reported the start of preparatory works.",
+            "ro": "Monteput a raportat inceperea lucrarilor pregatitoare."
+          },
+          "sourceRef": "mate-length-start"
+        }
+      ],
+      "geometryRef": "matesevo-andrijevica",
+      "sourceRefs": [
+        "mate-award",
+        "mate-length-start",
+        "mate-osm"
+      ],
+      "note": {
+        "en": "Monteput reports a length of 23 km. The OSM alignment relation continues north of Andrijevica towards Boljare; the mapped section ends at the alignment point nearest Andrijevica. Contract value omitted because the cited source does not state the VAT basis.",
+        "ro": "Monteput indica o lungime de 23 km. Relatia OSM continua spre nord de Andrijevica catre Boljare; geometria sectiunii se termina la punctul de aliniament cel mai apropiat de Andrijevica. Valoarea contractului este omisa deoarece sursa citata nu precizeaza regimul TVA."
+      }
+    },
+    {
+      "id": "smokovac-matesevo",
+      "name": {
+        "en": "Smokovac–Mateševo",
+        "ro": "Smokovac–Mateševo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-07-14"
+      },
+      "lengthKm": 41.5,
+      "geometryRef": "smokovac-matesevo",
+      "sourceRefs": [
+        "smokovac-length",
+        "smokovac-osm",
+        "smokovac-opening"
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2022-07-14",
+          "note": {
+            "en": "The Government scheduled the opening ceremony for 13 July; the motorway entered official service on 14 July at 08:00.",
+            "ro": "Guvernul a programat ceremonia de deschidere pe 13 iulie; autostrada a intrat oficial in exploatare pe 14 iulie la ora 08:00."
+          },
+          "sourceRef": "smokovac-opening"
+        }
+      ],
+      "note": {
+        "en": "The opening ceremony was held on 13 July 2022; official service began on 14 July 2022 at 08:00.",
+        "ro": "Ceremonia de deschidere a avut loc pe 13 iulie 2022; exploatarea oficiala a inceput pe 14 iulie 2022 la ora 08:00."
+      }
+    }
+  ]
+}
