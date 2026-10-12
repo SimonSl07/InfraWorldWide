@@ -11,7 +11,7 @@
     "ro": "O autostradă nouă de 16 km între Kirri și Vehniä, deschisă circulației la 21 decembrie 2021. Proiectul mai amplu Vt 4 Kirri–Tikkakoski a construit și drumuri paralele și transversale, excluse din acest lot."
   },
   "operator": "fi-vayla",
-  "lastVerified": "2026-10-11",
+  "lastVerified": "2026-10-12",
   "lots": [
     {
       "id": "kirri-vehnia",
@@ -42,7 +42,18 @@
         "vayla-completion-2022",
         "osm-vt4-finland"
       ],
-      "geometryRef": "kirri-vehnia"
+      "geometryRef": "kirri-vehnia",
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2021-12-21",
+          "sourceRef": "vayla-opening-2021",
+          "note": {
+            "en": "Väylävirasto announced that the motorway would open to traffic on 21 December 2021.",
+            "ro": "Väylävirasto a anunțat că autostrada urma să fie deschisă circulației la 21 decembrie 2021."
+          }
+        }
+      ]
     }
   ],
   "sources": [
@@ -56,7 +67,7 @@
       "id": "vayla-completion-2022",
       "title": "Väylävirasto: Vt 4 motorway between Kirri and Vehniä completed (20 Dec 2022)",
       "url": "https://www.epressi.com/tiedotteet/logistiikka-ja-liikenne/vt-4-kirri-tikkakoski-moottoritie-valilla-kirri-tikkakoski-ja-vehnia-valmistui.html",
-      "retrievedOn": "2026-10-11"
+      "retrievedOn": "2026-10-12"
     },
     {
       "id": "osm-vt4-finland",
@@ -64,5 +75,12 @@
       "url": "https://www.openstreetmap.org/relation/14265641",
       "retrievedOn": "2026-10-11"
     }
-  ]
+  ],
+  "cost": {
+    "amount": 141.9,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "estimated",
+    "note": "Väylävirasto reports this as the budget for the wider Vt 4 Kirri–Tikkakoski project, including a EUR 2.9 million contribution from Jyväskylä. It covers more than this 16 km motorway lot, including parallel and cross roads; the source gives no price year."
+  }
 }
