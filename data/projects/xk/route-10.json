@@ -1,0 +1,139 @@
+{
+  "id": "xk-route-10",
+  "country": "xk",
+  "category": "railway",
+  "name": {
+    "en": "Railway Route 10 rehabilitation",
+    "ro": "Reabilitarea căii ferate Route 10"
+  },
+  "description": {
+    "en": "INFRAKOS is rehabilitating two sections of Railway Route 10 between Fushë Kosovë, Mitrovicë and Han i Elezit.",
+    "ro": "INFRAKOS reabilitează două sectoare ale căii ferate Route 10 între Fushë Kosovë, Mitrovicë și Han i Elezit."
+  },
+  "lots": [
+    {
+      "id": "route10-phase-1",
+      "name": {
+        "en": "Fushë Kosovë–Hani i Elezit, Phase 1",
+        "ro": "Fushë Kosovë–Hani i Elezit, etapa 1"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2019-08-30"
+      },
+      "lengthKm": 66.823,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 78.6256394,
+              "currency": "EUR",
+              "note": "Accepted contract amount. The report does not state a price year or VAT basis."
+            },
+            "date": "2019-02-06",
+            "sourceRef": "infrakos-route10-ppr-2026"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "contract": {
+        "value": {
+          "amount": 78.6256394,
+          "currency": "EUR",
+          "note": "Accepted contract amount. The report does not state a price year or VAT basis."
+        }
+      },
+      "contractors": [
+        {
+          "name": "GCF Generale Costruzioni Ferroviarie S.p.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "INFRAKOS gives the main alignment as 66.823 km, chainage 246+888 to 313+711. The OSM alignment measures 62.90 km between the mapped Fushë Kosovë and Han i Elezit stations. The report lists 13.857 km of secondary track separately; it is not included in this lot length.",
+        "ro": "INFRAKOS indică 66,823 km pentru aliniamentul principal, de la km 246+888 la km 313+711. Aliniamentul OSM măsoară 62,90 km între stațiile cartografiate Fushë Kosovë și Han i Elezit. Raportul indică separat 13,857 km de cale secundară, care nu sunt incluși în lungimea acestui lot."
+      },
+      "sourceRefs": [
+        "infrakos-route10-ppr-2026",
+        "osm-route10-phase-1"
+      ],
+      "geometryRef": "route10-phase-1"
+    },
+    {
+      "id": "route10-phase-2",
+      "name": {
+        "en": "Fushë Kosovë–Mitrovicë, Phase 2",
+        "ro": "Fushë Kosovë–Mitrovicë, etapa 2"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2022-10-10"
+      },
+      "lengthKm": 34.369,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 47.92750532,
+              "currency": "EUR",
+              "note": "Accepted contract amount. The report does not state a price year or VAT basis."
+            },
+            "date": "2021-12-08",
+            "sourceRef": "infrakos-route10-ppr-2026"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "contract": {
+        "value": {
+          "amount": 47.92750532,
+          "currency": "EUR",
+          "note": "Accepted contract amount. The report does not state a price year or VAT basis."
+        }
+      },
+      "contractors": [
+        {
+          "name": "GCF Generale Costruzioni Ferroviarie S.p.A.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The contract table gives chainage 246+888 to 212+519, descending northward, and 34.369 km of main alignment. The OSM alignment between the mapped Fushë Kosovë and Mitrovicë stations measures 34.43 km. Secondary tracks are not included.",
+        "ro": "Tabelul contractului indică kilometrajul 246+888–212+519, descrescător spre nord, și 34,369 km pentru aliniamentul principal. Aliniamentul OSM dintre stațiile cartografiate Fushë Kosovë și Mitrovicë măsoară 34,43 km. Căile secundare nu sunt incluse."
+      },
+      "sourceRefs": [
+        "infrakos-route10-ppr-2026",
+        "osm-route10-phase-2"
+      ],
+      "geometryRef": "route10-phase-2"
+    }
+  ],
+  "sources": [
+    {
+      "id": "infrakos-route10-ppr-2026",
+      "title": "INFRAKOS: Rehabilitation of Southern Part of Railway Route 10, Periodic Project Report, Biannual Report for the 1st 6 monthly period of 2026",
+      "url": "https://infrakos.com/wp-content/uploads/2026/09/PPR-Kosovo-Route-10-Jan-June-2026.pdf",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-route10-phase-1",
+      "title": "OpenStreetMap contributors (ODbL): Railway Route 10 from Fushë Kosovë to Han i Elezit, route relation 19013860",
+      "url": "https://www.openstreetmap.org/relation/19013860",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-route10-phase-2",
+      "title": "OpenStreetMap contributors (ODbL): Railway Route 10 from Fushë Kosovë to Mitrovicë, route relation 8825756",
+      "url": "https://www.openstreetmap.org/relation/8825756",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "operator": "xk-infrakos"
+}
