@@ -129,16 +129,34 @@
       },
       "sourceRefs": [
         "nric-ep-kostenets-phase2",
-        "nric-elin-pelin-kostenets-contracts-192"
+        "nric-elin-pelin-kostenets-contracts-192",
+        "gradat-ep-vakarel-contract-signed-2019"
       ],
       "geometryRef": "elin-pelin-kostenets-lot-1",
       "contract": {
         "value": {
           "amount": 498.800012,
           "currency": "BGN",
+          "year": 2019,
           "scope": "works",
-          "note": "Construction contract value, excluding VAT, as stated by NRIC on the project page."
+          "note": "Construction contract value, excluding VAT, as stated by NRIC. Gradat reports the contract was signed in 2019."
         }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 498.800012,
+              "currency": "BGN",
+              "year": 2019,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2019",
+            "sourceRef": "gradat-ep-vakarel-contract-signed-2019"
+          }
+        ]
       }
     },
     {
@@ -180,7 +198,8 @@
       "sourceRefs": [
         "nric-ep-kostenets-phase2",
         "nric-news-4462",
-        "nric-elin-pelin-kostenets-contracts-192"
+        "nric-elin-pelin-kostenets-contracts-192",
+        "gradat-ep-kostenets-lots-2-3-contracts-2020"
       ],
       "events": [
         {
@@ -198,9 +217,26 @@
         "value": {
           "amount": 113.60983015,
           "currency": "BGN",
+          "year": 2020,
           "scope": "works",
-          "note": "Construction contract value, excluding VAT, as stated by NRIC on the project page."
+          "note": "Construction contract value, excluding VAT, as stated by NRIC. Gradat dates the contract signature to 19 July 2020."
         }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 113.60983015,
+              "currency": "BGN",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2020-07-19",
+            "sourceRef": "gradat-ep-kostenets-lots-2-3-contracts-2020"
+          }
+        ]
       }
     },
     {
@@ -244,7 +280,8 @@
       "sourceRefs": [
         "nric-ep-kostenets-phase2",
         "nric-news-4418",
-        "nric-elin-pelin-kostenets-contracts-192"
+        "nric-elin-pelin-kostenets-contracts-192",
+        "gradat-ep-kostenets-lots-2-3-contracts-2020"
       ],
       "events": [
         {
@@ -262,9 +299,26 @@
         "value": {
           "amount": 394.52507405,
           "currency": "BGN",
+          "year": 2020,
           "scope": "works",
-          "note": "Construction contract value, excluding VAT, as stated by NRIC on the project page."
+          "note": "Construction contract value, excluding VAT, as stated by NRIC. Gradat dates the contract signature to 19 July 2020."
         }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 394.52507405,
+              "currency": "BGN",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2020-07-19",
+            "sourceRef": "gradat-ep-kostenets-lots-2-3-contracts-2020"
+          }
+        ]
       }
     },
     {
@@ -504,6 +558,20 @@
       "title": "NRIC: Sofia-Plovdiv railway modernisation, Elin Pelin-Kostenets section (project page)",
       "url": "https://www.rail-infra.bg/bg/192",
       "publisher": "National Railway Infrastructure Company (NRIC)",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "gradat-ep-vakarel-contract-signed-2019",
+      "title": "Gradat: Elin Pelin-Vakarel construction contract signed in 2019",
+      "url": "https://gradat.bg/infrastruktura/startira-realizaciyata-na-modernizaciyata-na-zhp-liniyata-elin-pelin-vakarel-po",
+      "publisher": "Gradat.bg",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "gradat-ep-kostenets-lots-2-3-contracts-2020",
+      "title": "Gradat: Elin Pelin-Kostenets Lots 2 and 3 contracts signed on 19 July 2020",
+      "url": "https://gradat.bg/infrastruktura/podpisaha-dogovorite-za-pozicii-2-i-3-ot-modernizaciya-na-zhp-uchastk-elin-pelin",
+      "publisher": "Gradat.bg",
       "retrievedOn": "2026-10-12"
     }
   ],
