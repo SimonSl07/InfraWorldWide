@@ -1,0 +1,113 @@
+{
+  "id": "hu-m1",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M1 motorway widening",
+    "ro": "L?rgirea autostr?zii M1"
+  },
+  "description": {
+    "en": "Widening of the M1 motorway from the M0 junction to the Conc? rest area in two phases, with three traffic lanes in each direction and one ITS lane on each side.",
+    "ro": "L?rgirea autostr?zii M1 de la nodul M0 p?n? la spa?iul de servicii Conc?, ?n dou? etape, la trei benzi de circula?ie pe sens ?i c?te o band? ITS pe fiecare parte."
+  },
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "mkif-m1-phases",
+      "title": "MKIF: Development of M1 motorway to 2x3 + ITS lane",
+      "url": "https://development.mkif.hu/en/m1",
+      "publisher": "MKIF Hungarian Concession Infrastructure Development Ltd.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "mkif-m1-start",
+      "title": "MKIF: M1 widening begins",
+      "url": "https://mkif.hu/elindult-az-m1-bovitese/",
+      "publisher": "MKIF Hungarian Concession Infrastructure Development Ltd.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-m1-route",
+      "title": "OpenStreetMap contributors: M1 motorway route relation 21313, downloaded 12 October 2026",
+      "url": "https://www.openstreetmap.org/relation/21313",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "m0-bicske",
+      "name": {
+        "en": "M0?Bicske, phase I",
+        "ro": "M0?Bicske, etapa I"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-09-01",
+        "expectedOpening": "2028-08-31"
+      },
+      "lengthKm": 23,
+      "profile": {
+        "lanes": 6
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2025-09-01",
+          "note": {
+            "en": "MKIF reported that mainline widening works began on 1 September 2025.",
+            "ro": "MKIF a anun?at c? lucr?rile de l?rgire a c?ii principale au ?nceput la 1 septembrie 2025."
+          },
+          "sourceRef": "mkif-m1-start"
+        }
+      ],
+      "geometryRef": "m0-bicske",
+      "sourceRefs": [
+        "mkif-m1-phases",
+        "mkif-m1-start",
+        "osm-m1-route"
+      ],
+      "note": {
+        "en": "MKIF gives the phase limits as km 16?39 and expected completion by 31 August 2028. Length follows the 23 km chainage interval. The completed section is planned for three traffic lanes in each direction plus one ITS lane on each side. The OSM trace measures 23.26 km.",
+        "ro": "MKIF indic? limitele etapei la km 16?39 ?i finalizarea estimat? p?n? la 31 august 2028. Lungimea urmeaz? intervalul de 23 km dintre bornele kilometrice. Dup? finalizare, sec?iunea va avea trei benzi de circula?ie pe sens ?i c?te o band? ITS pe fiecare parte. Traseul OSM m?soar? 23,26 km."
+      }
+    },
+    {
+      "id": "bicske-conco",
+      "name": {
+        "en": "Bicske?Conc?, phase II",
+        "ro": "Bicske?Conc?, etapa II"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-09-01",
+        "expectedOpening": "2029-08-31"
+      },
+      "lengthKm": 55,
+      "profile": {
+        "lanes": 6
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2025-09-01",
+          "note": {
+            "en": "MKIF reported that mainline widening works began on 1 September 2025.",
+            "ro": "MKIF a anun?at c? lucr?rile de l?rgire a c?ii principale au ?nceput la 1 septembrie 2025."
+          },
+          "sourceRef": "mkif-m1-start"
+        }
+      ],
+      "geometryRef": "bicske-conco",
+      "sourceRefs": [
+        "mkif-m1-phases",
+        "mkif-m1-start",
+        "osm-m1-route"
+      ],
+      "note": {
+        "en": "MKIF gives the phase limits as km 39?94 and expected completion by 31 August 2029. Length follows the 55 km chainage interval. The completed section is planned for three traffic lanes in each direction plus one ITS lane on each side. The OSM trace measures 57.85 km.",
+        "ro": "MKIF indic? limitele etapei la km 39?94 ?i finalizarea estimat? p?n? la 31 august 2029. Lungimea urmeaz? intervalul de 55 km dintre bornele kilometrice. Dup? finalizare, sec?iunea va avea trei benzi de circula?ie pe sens ?i c?te o band? ITS pe fiecare parte. Traseul OSM m?soar? 57,85 km."
+      }
+    }
+  ]
+}
