@@ -7,10 +7,10 @@
     "ro": "M4 Törökszentmiklós–Kisújszállás"
   },
   "description": {
-    "en": "The M4 expressway section from Törökszentmiklós to Kisújszállás, opened in December 2025.",
-    "ro": "Secțiunea drumului expres M4 de la Törökszentmiklós la Kisújszállás, deschisă în decembrie 2025."
+    "en": "The M4 expressway section from Törökszentmiklós to Kisújszállás, handed over to traffic in January 2026.",
+    "ro": "Secțiunea drumului expres M4 de la Törökszentmiklós la Kisújszállás, dată în circulație în ianuarie 2026."
   },
-  "lastVerified": "2026-10-11",
+  "lastVerified": "2026-10-12",
   "lots": [
     {
       "id": "torokszentmiklos-kisujszallas",
@@ -20,18 +20,18 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2025-12-22"
+        "opened": "2026-01-23"
       },
       "lengthKm": 34.29,
       "events": [
         {
           "kind": "opened",
-          "date": "2025-12-22",
+          "date": "2026-01-23",
           "note": {
-            "en": "The traffic commissioning permit took effect at 15:00.",
-            "ro": "Autorizația de dare în circulație a intrat în vigoare la ora 15:00."
+            "en": "The ministry project page records traffic handover on 23 January 2026. The commissioning permit had taken effect on 22 December 2025 at 15:00.",
+            "ro": "Pagina ministerului consemnează darea în circulație la 23 ianuarie 2026. Autorizația de dare în circulație intrase în vigoare la 22 decembrie 2025, ora 15:00."
           },
-          "sourceRef": "bfkh-m4-commissioning-permit"
+          "sourceRef": "ekm-m4-handover"
         }
       ],
       "note": {
@@ -39,6 +39,7 @@
         "ro": "Km 118+000–152+290. Lungimea oficială de 34,29 km provine din autorizația de dare în circulație, intrată în vigoare la 22 decembrie 2025, ora 15:00. Linia OpenStreetMap urmează o singură cale M4 de la marcajul SOS etichetat M4 km 116+000, tăiată la 2 km mai departe pe traseu pentru km 118+000, până la capătul relației M4, la limita autorizată km 152+290. Linia măsoară 34,13 km, cu aproximativ 0,16 km mai puțin decât lungimea oficială."
       },
       "sourceRefs": [
+        "ekm-m4-handover",
         "bfkh-m4-commissioning-permit",
         "osm-relation-m4"
       ],
@@ -46,6 +47,13 @@
     }
   ],
   "sources": [
+    {
+      "id": "ekm-m4-handover",
+      "title": "ÉKM: M4 expressway Törökszentmiklós–Kisújszállás (East), traffic handover and project details",
+      "url": "https://beruhazas.gov.hu/projektek/m4-gyorsforgalmi-ut-torokszentmiklos-kisujszallas-kelet/45466",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-12"
+    },
     {
       "id": "bfkh-m4-commissioning-permit",
       "title": "Budapest Government Office: M4 Törökszentmiklós–Kisújszállás traffic commissioning permit, km 118+000–152+290",
