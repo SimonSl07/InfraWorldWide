@@ -1,0 +1,287 @@
+{
+  "id": "hu-m86",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M86 expressway (Szombathely – Csorna)",
+    "ro": "Drumul expres M86 (Szombathely – Csorna)"
+  },
+  "description": {
+    "en": "The M86 expressway connects Szombathely with Csorna. This record covers the opened sections from Szombathely through Vát and Hegyfalu to the Csorna bypass, completed in stages between 2009 and 2016.",
+    "ro": "Drumul expres M86 leagă Szombathely de Csorna. Această înregistrare cuprinde sectoarele deschise de la Szombathely prin Vát și Hegyfalu până la ocolirea Csorna, realizate în etape între 2009 și 2016."
+  },
+  "operator": "hu-nif",
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "hu-wikipedia-m86",
+      "title": "Wikipedia (hu): M86-os autóút (Magyarország), route sections and opening dates",
+      "url": "https://hu.wikipedia.org/wiki/M86-os_aut%C3%B3%C3%BAt_(Magyarorsz%C3%A1g)",
+      "publisher": "Wikipedia (Hungarian)",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "eib-m86-assessment",
+      "title": "EIB: Expressway M86, Szombathely–Csorna section, environmental performance assessment",
+      "url": "https://www.eib.org/attachments/registers/65276880.pdf",
+      "publisher": "European Investment Bank",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "ministry-m85-m86-csorna-phase-i",
+      "title": "Ministry: M85–M86 expressway, Csorna bypass phase I",
+      "url": "https://beruhazas.gov.hu/projektek/m85-m86-gyorsforgalmi-ut-csorna-elkerulo-i-utem/8949",
+      "publisher": "Közlekedési és Beruházási Minisztérium",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "hu-wikipedia-m85",
+      "title": "Wikipedia (hu): M85-ös autóút (Magyarország), sections and chainages",
+      "url": "https://hu.wikipedia.org/wiki/M85-%C3%B6s_aut%C3%B3%C3%BAt_(Magyarorsz%C3%A1g)",
+      "publisher": "Wikipedia (Hungarian)",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-m86-relation",
+      "title": "OpenStreetMap: M86 route relation 225681, OSM relation/full.json geometry",
+      "url": "https://www.openstreetmap.org/relation/225681",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "szombathely-vat",
+      "name": {
+        "en": "Szombathely – Vát",
+        "ro": "Szombathely – Vát"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-07-24"
+      },
+      "lengthKm": 9.2,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2014-07-24",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "The section account gives 9.2 km. The EIB assessment gives chainage 80+775–89+980; the OSM relation begins at 80+950, and the drawn line measures 8.60 km. The geometry follows one carriageway from the Szombathely end to the Vát bypass start.",
+        "ro": "Descrierea sectorului indică 9,2 km. Evaluarea BEI oferă kilometrajul 80+775–89+980; relația OSM începe la 80+950, iar linia desenată măsoară 8,60 km. Geometria urmărește o singură cale de la capătul Szombathely la începutul ocolirii Vát."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "eib-m86-assessment",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "szombathely-vat"
+    },
+    {
+      "id": "vat-bypass",
+      "name": {
+        "en": "Vát bypass",
+        "ro": "Ocolirea Vát"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-06-10"
+      },
+      "lengthKm": 3.002,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-06-10",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "The bypass follows the existing main-road 86 alignment from the 89+980 project start to the grade-separated junction with road 88. Length measured from OpenStreetMap geometry.",
+        "ro": "Ocolirea urmează aliniamentul existent al drumului principal 86, de la începutul proiectului la km 89+980 până la nodul denivelat cu drumul 88. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "eib-m86-assessment",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "vat-bypass"
+    },
+    {
+      "id": "vat-szeleste",
+      "name": {
+        "en": "Vát – Szeleste",
+        "ro": "Vát – Szeleste"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-12-15"
+      },
+      "lengthKm": 3.8,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2010-12-15",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "The Vát–Szeleste section is reported as 3.8 km and opened on 15 December 2010. The geometry is cut at the road 88 and Ölbő–Szeleste junctions and measures 3.60 km.",
+        "ro": "Sectorul Vát–Szeleste este raportat la 3,8 km și a fost deschis la 15 decembrie 2010. Geometria este delimitată la nodurile cu drumul 88 și Ölbő–Szeleste și măsoară 3,60 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "eib-m86-assessment",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "vat-szeleste"
+    },
+    {
+      "id": "szeleste-hegyfalu",
+      "name": {
+        "en": "Szeleste – Hegyfalu (road 84)",
+        "ro": "Szeleste – Hegyfalu (drumul 84)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-09-18"
+      },
+      "lengthKm": 7.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-09-18",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "The new-alignment section runs from the Szeleste–Ölbő junction to the Hegyfalu junction with road 84. The section account gives 7.5 km; the drawn OSM line measures 8.48 km.",
+        "ro": "Sectorul pe aliniament nou merge de la nodul Szeleste–Ölbő la nodul Hegyfalu cu drumul 84. Descrierea sectorului indică 7,5 km; linia OSM desenată măsoară 8,48 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "eib-m86-assessment",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "szeleste-hegyfalu"
+    },
+    {
+      "id": "hegyfalu-szilsarkany",
+      "name": {
+        "en": "Hegyfalu – Szilsárkány",
+        "ro": "Hegyfalu – Szilsárkány"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-10-25"
+      },
+      "lengthKm": 33.4,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2016-10-25",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "The section opened in 2016 runs from the Hegyfalu junction with road 84 to the Szilsárkány junction. The section account gives 33.4 km; the drawn OSM line measures 34.25 km.",
+        "ro": "Sectorul deschis în 2016 merge de la nodul Hegyfalu cu drumul 84 la nodul Szilsárkány. Descrierea sectorului indică 33,4 km; linia OSM desenată măsoară 34,25 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "hegyfalu-szilsarkany"
+    },
+    {
+      "id": "szilsarkany-csorna-del",
+      "name": {
+        "en": "Szilsárkány – Csorna south (M86-only)",
+        "ro": "Szilsárkány – Csorna sud (doar M86)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-09-09"
+      },
+      "lengthKm": 3.61,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-09-09",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "M86-only part of the Csorna north–Szilsárkány bypass package, from the Szilsárkány junction to the start of the M85–M86 shared carriageway. The package is reported as 12.5 km overall and includes the shared section. Length measured from OpenStreetMap geometry.",
+        "ro": "Partea exclusiv M86 a pachetului de ocolire Csorna nord–Szilsárkány, de la nodul Szilsárkány până la începutul căii comune M85–M86. Pachetul este raportat la 12,5 km în total și include sectorul comun. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "ministry-m85-m86-csorna-phase-i",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "szilsarkany-csorna-del"
+    },
+    {
+      "id": "csorna-del-csorna-kelet-shared",
+      "name": {
+        "en": "Csorna south – Csorna east (shared with M85)",
+        "ro": "Csorna sud – Csorna est (comun cu M85)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-09-09"
+      },
+      "lengthKm": 3.508,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-09-09",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "The M85–M86 common section is listed as 3.508 km in the M85 section table and as about 3.5 km in the M86 account. It is counted under M85, which already measures this section; the OSM carriageway measures 3.44 km.",
+        "ro": "Sectorul comun M85–M86 este indicat la 3,508 km în tabelul M85 și la aproximativ 3,5 km în descrierea M86. Este numărat la M85, care măsoară deja acest sector; calea OSM măsoară 3,44 km."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "hu-wikipedia-m85",
+        "ministry-m85-m86-csorna-phase-i",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "csorna-del-csorna-kelet-shared",
+      "sharedWith": "hu-m85"
+    },
+    {
+      "id": "csorna-kelet-csorna-eszak",
+      "name": {
+        "en": "Csorna east – Csorna north tie-in",
+        "ro": "Csorna est – legătura cu Csorna nord"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-09-09"
+      },
+      "lengthKm": 2.044,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-09-09",
+          "sourceRef": "hu-wikipedia-m86"
+        }
+      ],
+      "note": {
+        "en": "M86-only northern part of the Csorna north–Szilsárkány bypass package, from the M85–M86 split to the tie-in with existing road 86 north of Csorna. The package is reported as 12.5 km overall and includes the shared section. Length measured from OpenStreetMap geometry.",
+        "ro": "Partea exclusiv M86 din nord a pachetului de ocolire Csorna nord–Szilsárkány, de la separarea M85–M86 până la legătura cu drumul 86 existent la nord de Csorna. Pachetul este raportat la 12,5 km în total și include sectorul comun. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "hu-wikipedia-m86",
+        "ministry-m85-m86-csorna-phase-i",
+        "osm-m86-relation"
+      ],
+      "geometryRef": "csorna-kelet-csorna-eszak"
+    }
+  ]
+}
