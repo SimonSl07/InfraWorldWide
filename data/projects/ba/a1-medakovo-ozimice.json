@@ -1,0 +1,86 @@
+{
+  "id": "ba-a1-medakovo-ozimice",
+  "country": "ba",
+  "category": "highway",
+  "name": {
+    "en": "A1 motorway: Medakovo–Ozimice",
+    "ro": "Autostrada A1: Medakovo–Ozimice"
+  },
+  "description": {
+    "en": "A 21.7 km section of the A1 motorway on Corridor Vc between Medakovo and Ozimice.",
+    "ro": "Un tronson de 21,7 km al autostrazii A1 de pe Coridorul Vc, intre Medakovo si Ozimice."
+  },
+  "operator": "ba-jp-autoceste-fbih",
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "section-contract",
+      "title": "JP Autoceste FBiH: Q3 2025 Project Progress Report, Corridor Vc Motorway",
+      "url": "https://www.jpautoceste.ba/wp-content/uploads/2025/12/Q3-2025-PPR_Motorway-on-Corridor-Vc-EBRD-1.pdf",
+      "publisher": "JP Autoceste FBiH",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "tunnel-breakthrough",
+      "title": "JP Autoceste FBiH: Crni Vrh tunnel breakthrough on Medakovo–Ozimice",
+      "url": "https://www.jpautoceste.ba/probijen-tunel-crni-vrh-na-dionici-medakovo-ozimice/",
+      "publisher": "JP Autoceste FBiH",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "alignment-osm",
+      "title": "OpenStreetMap contributors: A1 motorway construction alignment, downloaded 12 October 2026",
+      "url": "https://www.openstreetmap.org/#map=12/44.56/18.04",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "medakovo-ozimice",
+      "name": {
+        "en": "Medakovo–Ozimice",
+        "ro": "Medakovo–Ozimice"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-03-09",
+        "constructionStart": "2023-05"
+      },
+      "lengthKm": 21.7,
+      "contractors": [
+        {
+          "name": "Cengiz Insaat Sanayi ve Ticaret A.S.",
+          "role": "builder"
+        }
+      ],
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2023-03-09",
+            "money": {
+              "amount": 361.7533555,
+              "currency": "EUR",
+              "year": 2023,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Contract amount excluding VAT."
+            },
+            "sourceRef": "section-contract"
+          }
+        ]
+      },
+      "geometryRef": "medakovo-ozimice",
+      "sourceRefs": [
+        "section-contract",
+        "tunnel-breakthrough",
+        "alignment-osm"
+      ],
+      "note": {
+        "en": "The Q3 2025 report gives 21.7 km and reports construction underway. Cengiz Insaat signed the EUR 361.7533555 million contract excluding VAT on 9 March 2023. The OSM line is about 21.86 km, drawn between the nearest mapped A1 construction points to Medakovo and Ozimice; recorded length follows the project source.",
+        "ro": "Raportul din trimestrul III 2025 indica 21,7 km si lucrari in curs. Cengiz Insaat a semnat contractul de 361,7533555 milioane EUR fara TVA la 9 martie 2023. Linia OSM are aproximativ 21,86 km, trasata intre punctele de constructie A1 cartografiate cele mai apropiate de Medakovo si Ozimice; lungimea inregistrata urmeaza sursa proiectului."
+      }
+    }
+  ]
+}

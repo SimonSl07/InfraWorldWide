@@ -1,0 +1,82 @@
+{
+  "id": "se-e4-forbifart-stockholm",
+  "country": "se",
+  "category": "highway",
+  "name": {
+    "en": "E4 Förbifart Stockholm",
+    "ro": "E4 Förbifart Stockholm"
+  },
+  "description": {
+    "en": "A 21 km bypass of Stockholm between Häggvik and Kungens Kurva, including approximately 18 km of tunnel.",
+    "ro": "O variantă ocolitoare de 21 km a orașului Stockholm, între Häggvik și Kungens Kurva, cu aproximativ 18 km de tunel."
+  },
+  "operator": "se-trafikverket",
+  "sources": [
+    {
+      "id": "trafikverket-forbifart",
+      "title": "Trafikverket: E4 Förbifart Stockholm",
+      "url": "https://www.trafikverket.se/vara-projekt/projekt-i-stockholms-lan/e4-forbifart-stockholm/",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "trafikverket-forbifart-opening",
+      "title": "Trafikverket: First section of E4 Förbifart Stockholm opens on 6 December 2026",
+      "url": "https://www.trafikverket.se/vara-projekt/projekt-i-stockholms-lan/e4-forbifart-stockholm/nyheter-for-e4-forbifart-stockholm/2026-10/6-december-oppnar-forsta-delen-av-e4-forbifart-stockholm/",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-forbifart",
+      "title": "OpenStreetMap: E4 Förbifart Stockholm construction alignment, OSM snapshot 2026-10-12",
+      "url": "https://www.openstreetmap.org/#map=12/59.35/17.9",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "haggvik-hjulsta",
+      "name": {
+        "en": "Häggvik–Hjulsta",
+        "ro": "Häggvik–Hjulsta"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2016",
+        "expectedOpening": "2026-12-06"
+      },
+      "lengthKm": 3.5,
+      "note": {
+        "en": "Trafikverket says this first section is approximately 3.5 km and opens on 6 December 2026. The mapped OSM line measures 3.33 km; the cut at Hjulsta follows the mapped junction and may differ slightly from the construction boundary.",
+        "ro": "Trafikverket spune că acest prim sector are aproximativ 3,5 km și se deschide la 6 decembrie 2026. Linia OSM măsoară 3.33 km; delimitarea de la Hjulsta urmează nodul rutier din hartă și poate diferi ușor de limita lucrărilor."
+      },
+      "sourceRefs": [
+        "trafikverket-forbifart",
+        "trafikverket-forbifart-opening",
+        "osm-forbifart"
+      ],
+      "geometryRef": "haggvik-hjulsta"
+    },
+    {
+      "id": "hjulsta-kungens-kurva",
+      "name": {
+        "en": "Hjulsta–Kungens Kurva",
+        "ro": "Hjulsta–Kungens Kurva"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2016",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 17.5,
+      "note": {
+        "en": "The remaining section between Hjulsta and Kungens Kurva is scheduled for completion in 2030. Its approximate 17.5 km length is the difference between Trafikverket’s approximately 21 km total and the approximately 3.5 km first section. The mapped OSM line measures 19.00 km.",
+        "ro": "Restul sectorului dintre Hjulsta și Kungens Kurva este programat pentru finalizare în 2030. Lungimea aproximativă de 17,5 km este diferența dintre totalul de aproximativ 21 km indicat de Trafikverket și primul sector de aproximativ 3,5 km. Linia OSM măsoară 19.00 km."
+      },
+      "sourceRefs": [
+        "trafikverket-forbifart",
+        "trafikverket-forbifart-opening",
+        "osm-forbifart"
+      ],
+      "geometryRef": "hjulsta-kungens-kurva"
+    }
+  ]
+}
