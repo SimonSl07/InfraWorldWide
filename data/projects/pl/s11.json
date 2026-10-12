@@ -1,0 +1,90 @@
+{
+  "id": "pl-s11",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "S11 expressway, including the Bobolice–Szczecinek section",
+    "ro": "Drumul expres S11, inclusiv sectorul Bobolice–Szczecinek"
+  },
+  "description": {
+    "en": "The S11 is being built in separate sections. This record covers the 24.4 km Bobolice–Szczecinek section in West Pomerania.",
+    "ro": "Drumul S11 este construit pe sectoare. Această înregistrare acoperă sectorul de 24,4 km Bobolice–Szczecinek din Pomerania Occidentală."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "gddkia-bobolice-szczecinek",
+      "title": "GDDKiA: S11 Bobolice – Szczecinek project page",
+      "url": "https://www.gov.pl/web/gddkia/s11-bobolice---szczecinek",
+      "publisher": "General Directorate for National Roads and Motorways (GDDKiA)",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "gddkia-bobolice-szczecinek-progress",
+      "title": "GDDKiA: S11 Bobolice – Szczecinek construction progress, 29 August 2025",
+      "url": "https://www.gov.pl/web/gddkia-szczecin/budowa-s11-bobolice---szczecinek-na-polmetku",
+      "publisher": "GDDKiA Szczecin",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-s11-relation",
+      "title": "OpenStreetMap: S11 road relation 2108297 and Bobolice – Szczecinek alignment, OSM snapshot 12 October 2026",
+      "url": "https://www.openstreetmap.org/relation/2108297",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "bobolice-szczecinek",
+      "name": {
+        "en": "Bobolice – Szczecinek",
+        "ro": "Bobolice – Szczecinek"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-08-30",
+        "constructionStart": "2024",
+        "expectedOpening": "2026"
+      },
+      "lengthKm": 24.4,
+      "contractors": [
+        {
+          "name": "Intercor Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-08-30",
+          "note": {
+            "en": "Works contract signed with Intercor.",
+            "ro": "Contractul de lucrări a fost semnat cu Intercor."
+          },
+          "sourceRef": "gddkia-bobolice-szczecinek"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024",
+          "sourceRef": "gddkia-bobolice-szczecinek-progress",
+          "note": {
+            "en": "GDDKiA reported that construction started in spring 2024.",
+            "ro": "GDDKiA a raportat că lucrările au început în primăvara anului 2024."
+          }
+        }
+      ],
+      "note": {
+        "en": "GDDKiA gives a length of 24.4 km, describes the section as starting beyond the Bobolice interchange and joining the Szczecinek bypass, and lists Intercor as contractor. The project page gives a works completion deadline in Q3/Q4 2026; the 2025 progress update expected traffic opening in Q3 2026. The mapped OSM line follows one carriageway and measures 24.09 km.",
+        "ro": "GDDKiA indică o lungime de 24,4 km, precizează că sectorul începe după nodul Bobolice și se unește cu ocolitoarea Szczecinek și îl menționează pe Intercor ca executant. Pagina proiectului indică termenul de finalizare a lucrărilor în trimestrul III/IV 2026; actualizarea din 2025 estima deschiderea pentru trafic în trimestrul III 2026. Linia OSM urmărește o singură cale și măsoară 24.09 km."
+      },
+      "sourceRefs": [
+        "gddkia-bobolice-szczecinek",
+        "gddkia-bobolice-szczecinek-progress",
+        "osm-s11-relation"
+      ],
+      "geometryRef": "bobolice-szczecinek"
+    }
+  ]
+}
