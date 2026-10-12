@@ -7,8 +7,8 @@
     "ro": "Linia ferată 201 Kościerzyna – Somonino – Gdynia Główna (modernizare, electrificare și a doua cale) și linia 248 a Pomorska Kolej Metropolitalna"
   },
   "description": {
-    "en": "PKP PLK is modernising line 201 between Kościerzyna and Gdynia Główna: electrification and a second track, split into contracts. Kościerzyna – Somonino (Budimex) and Somonino – Gdańsk Osowa (a PMT / Trakcja / ZRK-DOM consortium) are signed and under construction, with traffic stopped on both since 30 June 2025. Gdańsk Osowa – Gdynia Główna is one contract planned for 2026–2031. Line 248, built by Pomorska Kolej Metropolitalna S.A. from Gdańsk Wrzeszcz to a junction with line 201 at Rębiechowo, opened on 1 September 2015 and is a separate lot.",
-    "ro": "PKP PLK modernizează linia 201 între Kościerzyna și Gdynia Główna: electrificare și a doua cale, împărțite în contracte. Kościerzyna – Somonino (Budimex) și Somonino – Gdańsk Osowa (un consorțiu PMT / Trakcja / ZRK-DOM) sunt semnate și în execuție, cu traficul oprit pe ambele din 30 iunie 2025. Gdańsk Osowa – Gdynia Główna este un contract planificat pentru 2026–2031. Linia 248, construită de Pomorska Kolej Metropolitalna S.A. de la Gdańsk Wrzeszcz până la o joncțiune cu linia 201 la Rębiechowo, a fost deschisă la 1 septembrie 2015 și este un lot separat."
+    "en": "PKP PLK is modernising line 201 between Kościerzyna and Gdynia Główna: electrification and a second track, split into contracts. Kościerzyna – Somonino (Budimex) and Somonino – Gdańsk Osowa (a PMT / Trakcja / ZRK-DOM consortium) are signed and under construction, with traffic stopped on both since 30 June 2025. The Gdańsk Osowa – Gdynia Główna contract was signed in August 2026, with main works planned through 2031. Line 248, built by Pomorska Kolej Metropolitalna S.A. from Gdańsk Wrzeszcz to a junction with line 201 at Rębiechowo, opened on 1 September 2015 and is a separate lot.",
+    "ro": "PKP PLK modernizează linia 201 între Kościerzyna și Gdynia Główna: electrificare și a doua cale, împărțite în contracte. Kościerzyna – Somonino (Budimex) și Somonino – Gdańsk Osowa (un consorțiu PMT / Trakcja / ZRK-DOM) sunt semnate și în execuție, cu traficul oprit pe ambele din 30 iunie 2025. Contractul Gdańsk Osowa – Gdynia Główna a fost semnat în august 2026, iar lucrările principale sunt planificate până în 2031. Linia 248, construită de Pomorska Kolej Metropolitalna S.A. de la Gdańsk Wrzeszcz până la o joncțiune cu linia 201 la Rębiechowo, a fost deschisă la 1 septembrie 2015 și este un lot separat."
   },
   "operator": "pl-plk",
   "lots": [
@@ -189,19 +189,40 @@
         "en": "Gdańsk Osowa – Gdynia Główna (line 201)",
         "ro": "Gdańsk Osowa – Gdynia Główna (linia 201)"
       },
-      "status": "planned",
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-08-24"
+      },
       "lengthKm": 15.7,
       "profile": {
         "works": "upgrade",
         "electrified": true
       },
       "note": {
-        "en": "PLK plans one contract for this section, with works in 2026–2031 and the whole project, including permits, to be completed by 2032. No tender, contractor or value is recorded. Length measured from OpenStreetMap geometry.",
-        "ro": "PLK planifică un singur contract pentru acest tronson, cu lucrări în 2026–2031, iar întregul proiect, inclusiv autorizațiile, să fie încheiat până în 2032. Nu sunt înregistrate licitație, constructor sau valoare. Lungime măsurată din geometria OpenStreetMap."
+        "en": "PLK signed the design-build contract on 24 August 2026 with Unibep and Track Tec Construction. It covers 12 km of line 201 and 1.5 km of line 202 at Gdynia Główna; the value is over PLN 874 million net including options, so it is not recorded as a lot-only cost. Main works are planned through 2031, with contract completion and approvals in 2032. Length measured from OpenStreetMap geometry.",
+        "ro": "PLK a semnat contractul de proiectare și execuție la 24 august 2026 cu Unibep și Track Tec Construction. Acesta acoperă 12 km din linia 201 și 1,5 km din linia 202 la Gdynia Główna; valoarea depășește 874 milioane PLN net cu opțiuni, deci nu este înregistrată ca un cost exclusiv al lotului. Lucrările principale sunt planificate până în 2031, iar contractul și autorizațiile până în 2032. Lungime măsurată din geometria OpenStreetMap."
       },
       "sourceRefs": [
         "plk-201-kaszuby-2025",
+        "plk-201-gdynia-2026",
         "osm-line-201"
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-08-24",
+          "sourceRef": "plk-201-gdynia-2026"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Unibep S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "Track Tec Construction Sp. z o.o.",
+          "role": "builder"
+        }
       ],
       "geometryRef": "gdansk-osowa-gdynia-glowna"
     },
@@ -372,6 +393,13 @@
       "title": "OpenStreetMap contributors: railway line 248 (geometry, ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "plk-201-gdynia-2026",
+      "title": "PKP PLK: Trzeci tor i nowe przystanki na trójmiejskim odcinku Węglówki (24.08.2026)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/trzeci-tor-i-nowe-przystanki-na-trojmiejskim-odcinku-weglowki-zyskaja-podrozni-i-port-w-gdyni-11709",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-12"
     },
     {
       "id": "plk-201-works-start-2024",
