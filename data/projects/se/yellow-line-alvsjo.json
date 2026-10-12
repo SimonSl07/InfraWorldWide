@@ -1,0 +1,105 @@
+{
+  "id": "se-yellow-line-alvsjo",
+  "country": "se",
+  "city": "se-stockholm",
+  "category": "railway",
+  "name": {
+    "en": "Yellow Line to Älvsjö",
+    "ro": "Linia Galbenă până la Älvsjö"
+  },
+  "description": {
+    "en": "A new 8 km underground metro line from Fridhemsplan to Älvsjö with six stations. Preparatory works began in April 2026.",
+    "ro": "O nouă linie de metrou subterană de 8 km, de la Fridhemsplan la Älvsjö, cu șase stații. Lucrările pregătitoare au început în aprilie 2026."
+  },
+  "operator": "se-region-stockholm",
+  "stationCount": 6,
+  "lastVerified": "2026-10-12",
+  "sources": [
+    {
+      "id": "region-stockholm-yellow-line",
+      "title": "Region Stockholm: Yellow Line to Älvsjö, 8 km and six stations",
+      "url": "https://nyatunnelbanan.se/gul-linje",
+      "publisher": "Region Stockholm / Nya tunnelbanan",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "region-stockholm-yellow-start",
+      "title": "Region Stockholm: Preparatory works underway for the Yellow Line, published 29 April 2026",
+      "url": "https://nyatunnelbanan.se/nyheter/resan-mot-gul-linje-har-borjat-har-pagar-forberedande-arbeten/",
+      "publisher": "Region Stockholm / Nya tunnelbanan",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "region-stockholm-metro-forecast",
+      "title": "Region Stockholm: New metro expansion cost and opening forecast, 25 September 2026",
+      "url": "https://nyatunnelbanan.se/?p=46253",
+      "publisher": "Region Stockholm / Nya tunnelbanan",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-yellow-line-alignment",
+      "title": "OpenStreetMap: Yellow Line construction alignment, Fridhemsplan–Älvsjö (way 1452125742)",
+      "url": "https://www.openstreetmap.org/way/1452125742",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-snapshot",
+      "title": "OpenStreetMap ODbL attribution: geometry from OSM construction way snapshots, base timestamp 2026-10-12T20:00:03Z",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "fridhemsplan-alvsjo",
+      "name": {
+        "en": "Fridhemsplan–Älvsjö",
+        "ro": "Fridhemsplan–Älvsjö"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2026-04",
+        "expectedOpening": "2037"
+      },
+      "lengthKm": 8,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 6
+      },
+      "cost": {
+        "estimated": {
+          "amount": 27100,
+          "currency": "SEK",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Region Stockholm final-cost forecast in current price levels, published 25 September 2026."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2026-04",
+          "sourceRef": "region-stockholm-yellow-start",
+          "note": {
+            "en": "Preparatory works were underway at several sites by April 2026. Major tunnel excavation was still pending permits.",
+            "ro": "Lucrările pregătitoare erau în desfășurare în mai multe puncte în aprilie 2026. Excavarea principală a tunelului urma să înceapă după obținerea autorizațiilor."
+          }
+        }
+      ],
+      "note": {
+        "en": "The official length is 8 km. The OSM construction alignment follows one track and measures 8.54 km; the sourced length is retained. The source forecast puts traffic start in 2037.",
+        "ro": "Lungimea oficială este de 8 km. Aliniamentul OSM de construcție urmează o singură cale și măsoară 8.54 km; lungimea din sursă este păstrată. Prognoza sursei indică începerea circulației în 2037."
+      },
+      "sourceRefs": [
+        "region-stockholm-yellow-line",
+        "region-stockholm-yellow-start",
+        "region-stockholm-metro-forecast",
+        "osm-yellow-line-alignment",
+        "osm-snapshot"
+      ],
+      "geometryRef": "fridhemsplan-alvsjo"
+    }
+  ]
+}
