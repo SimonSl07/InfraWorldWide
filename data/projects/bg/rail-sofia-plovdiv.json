@@ -128,9 +128,36 @@
         "ro": "Km 22+554 – 42+200 (lungime din kilometraj), cel mai dificil tronson al liniei Sofia – Plovdiv. Include cel mai lung tunel feroviar din Bulgaria, de 6,8 km, primul de acest fel de la tunelul Koznitsa din 1949–1951, o nouă gară Elin Pelin, stația Pobit Kamak și postul de secționare Vakarel, două tuneluri cu tub dublu de circa 1,5 km în total, precum 8 poduri și estacade. Supraveghere: Zhp Trans DZZD. Proiectul de 51,044 km (14,544 km reînnoiți, 36,5 km linie dublă nouă) este proiectat pentru 160 km/h la trenurile de călători și 120 km/h la marfă. NCFI indică un total de 1,310 miliarde BGN și precizează că lucrările au început cu întârziere mare din cauza contestațiilor la planurile urbanistice, a exproprierilor lente și a COVID-19, de aceea proiectul a fost împărțit în două faze de finanțare."
       },
       "sourceRefs": [
-        "nric-ep-kostenets-phase2"
+        "nric-ep-kostenets-phase2",
+        "nric-elin-pelin-kostenets-contracts-192",
+        "gradat-ep-vakarel-contract-signed-2019"
       ],
-      "geometryRef": "elin-pelin-kostenets-lot-1"
+      "geometryRef": "elin-pelin-kostenets-lot-1",
+      "contract": {
+        "value": {
+          "amount": 498.800012,
+          "currency": "BGN",
+          "year": 2019,
+          "scope": "works",
+          "note": "Construction contract value, excluding VAT, as stated by NRIC. Gradat reports the contract was signed in 2019."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 498.800012,
+              "currency": "BGN",
+              "year": 2019,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2019",
+            "sourceRef": "gradat-ep-vakarel-contract-signed-2019"
+          }
+        ]
+      }
     },
     {
       "id": "elin-pelin-kostenets-lot-2",
@@ -170,7 +197,9 @@
       },
       "sourceRefs": [
         "nric-ep-kostenets-phase2",
-        "nric-news-4462"
+        "nric-news-4462",
+        "nric-elin-pelin-kostenets-contracts-192",
+        "gradat-ep-kostenets-lots-2-3-contracts-2020"
       ],
       "events": [
         {
@@ -183,7 +212,32 @@
           "sourceRef": "nric-news-4462"
         }
       ],
-      "geometryRef": "elin-pelin-kostenets-lot-2"
+      "geometryRef": "elin-pelin-kostenets-lot-2",
+      "contract": {
+        "value": {
+          "amount": 113.60983015,
+          "currency": "BGN",
+          "year": 2020,
+          "scope": "works",
+          "note": "Construction contract value, excluding VAT, as stated by NRIC. Gradat dates the contract signature to 19 July 2020."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 113.60983015,
+              "currency": "BGN",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2020-07-19",
+            "sourceRef": "gradat-ep-kostenets-lots-2-3-contracts-2020"
+          }
+        ]
+      }
     },
     {
       "id": "elin-pelin-kostenets-lot-3",
@@ -225,7 +279,9 @@
       },
       "sourceRefs": [
         "nric-ep-kostenets-phase2",
-        "nric-news-4418"
+        "nric-news-4418",
+        "nric-elin-pelin-kostenets-contracts-192",
+        "gradat-ep-kostenets-lots-2-3-contracts-2020"
       ],
       "events": [
         {
@@ -238,7 +294,32 @@
           "sourceRef": "nric-news-4418"
         }
       ],
-      "geometryRef": "elin-pelin-kostenets-lot-3"
+      "geometryRef": "elin-pelin-kostenets-lot-3",
+      "contract": {
+        "value": {
+          "amount": 394.52507405,
+          "currency": "BGN",
+          "year": 2020,
+          "scope": "works",
+          "note": "Construction contract value, excluding VAT, as stated by NRIC. Gradat dates the contract signature to 19 July 2020."
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 394.52507405,
+              "currency": "BGN",
+              "year": 2020,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2020-07-19",
+            "sourceRef": "gradat-ep-kostenets-lots-2-3-contracts-2020"
+          }
+        ]
+      }
     },
     {
       "id": "kostenets-septemvri",
@@ -471,6 +552,27 @@
       "title": "OpenStreetMap contributors (geometry, ODbL)",
       "url": "https://www.openstreetmap.org/copyright",
       "retrievedOn": "2026-10-05"
+    },
+    {
+      "id": "nric-elin-pelin-kostenets-contracts-192",
+      "title": "NRIC: Sofia-Plovdiv railway modernisation, Elin Pelin-Kostenets section (project page)",
+      "url": "https://www.rail-infra.bg/bg/192",
+      "publisher": "National Railway Infrastructure Company (NRIC)",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "gradat-ep-vakarel-contract-signed-2019",
+      "title": "Gradat: Elin Pelin-Vakarel construction contract signed in 2019",
+      "url": "https://gradat.bg/infrastruktura/startira-realizaciyata-na-modernizaciyata-na-zhp-liniyata-elin-pelin-vakarel-po",
+      "publisher": "Gradat.bg",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "gradat-ep-kostenets-lots-2-3-contracts-2020",
+      "title": "Gradat: Elin Pelin-Kostenets Lots 2 and 3 contracts signed on 19 July 2020",
+      "url": "https://gradat.bg/infrastruktura/podpisaha-dogovorite-za-pozicii-2-i-3-ot-modernizaciya-na-zhp-uchastk-elin-pelin",
+      "publisher": "Gradat.bg",
+      "retrievedOn": "2026-10-12"
     }
   ],
   "lastVerified": "2026-10-11"
