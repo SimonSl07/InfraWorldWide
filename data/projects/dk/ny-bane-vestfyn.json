@@ -1,0 +1,84 @@
+{
+  "id": "dk-ny-bane-vestfyn",
+  "country": "dk",
+  "category": "railway",
+  "name": {
+    "en": "New Railway across Vestfyn",
+    "ro": "Noua cale ferată peste Vestfyn"
+  },
+  "description": {
+    "en": "A new double-track electrified high-speed railway between Odense Vest and Kauslunde, designed for passenger trains up to 250 km/h.",
+    "ro": "O nouă cale ferată electrificată cu două linii între Odense Vest și Kauslunde, proiectată pentru trenuri de pasageri de până la 250 km/h."
+  },
+  "operator": "dk-banedanmark",
+  "sources": [
+    {
+      "id": "vestfyn-banedanmark",
+      "title": "Banedanmark: New railway across Vestfyn",
+      "url": "https://www.banedanmark.dk/da/Borger/Baneprojekter/Vestfyn-_-Ny-bane",
+      "publisher": "Banedanmark",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "vestfyn-anlaegsstatus",
+      "title": "Transportministeriet: Anlægsstatus 1, 2026, New Railway across Vestfyn",
+      "url": "https://www.trm.dk/media/vtuldjoz/anlaegsstatus-1-halvaar-2026.pdf",
+      "publisher": "Danish Ministry of Transport",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-vestfyn-track",
+      "title": "OpenStreetMap: New Railway across Vestfyn construction track, way 926175220 and connected ways",
+      "url": "https://www.openstreetmap.org/way/926175220",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-vestfyn-snapshot",
+      "title": "OpenStreetMap ODbL attribution: construction-track geometry snapshot, 12 October 2026",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ],
+  "lots": [
+    {
+      "id": "odense-west-kauslunde",
+      "name": {
+        "en": "Odense Vest–Kauslunde",
+        "ro": "Odense Vest–Kauslunde"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2024",
+        "expectedOpening": "2029"
+      },
+      "lengthKm": 35,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "cost": {
+        "estimated": {
+          "amount": 6305.4,
+          "currency": "DKK",
+          "year": 2026,
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Approved total expenditure, including central reserve, in 2026 prices."
+        }
+      },
+      "note": {
+        "en": "The Transport Ministry reports an approved total expenditure of DKK 6,305.4 million in 2026 prices. Banedanmark says preparatory work began in 2023 and construction began in 2024. The published length is about 35 km. The OSM alignment follows one of the two parallel construction tracks and measures 34.77 km.",
+        "ro": "Ministerul Transporturilor raportează o cheltuială totală aprobată de 6.305,4 milioane DKK la prețurile din 2026. Banedanmark afirmă că lucrările pregătitoare au început în 2023, iar construcția a început în 2024. Lungimea publicată este de aproximativ 35 km. Aliniamentul OSM urmează una dintre cele două linii paralele aflate în construcție și măsoară 34,77 km."
+      },
+      "sourceRefs": [
+        "vestfyn-banedanmark",
+        "vestfyn-anlaegsstatus",
+        "osm-vestfyn-track",
+        "osm-vestfyn-snapshot"
+      ],
+      "geometryRef": "odense-west-kauslunde"
+    }
+  ]
+}
