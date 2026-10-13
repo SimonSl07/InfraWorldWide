@@ -1,0 +1,52 @@
+{
+  "id": "it-a36-tratta-a",
+  "country": "it",
+  "category": "highway",
+  "name": { "en": "A36 Pedemontana Lombarda, Tratta A", "ro": "A36 Pedemontana Lombarda, tronsonul A" },
+  "description": {
+    "en": "The 20.41 km Tratta A of A36 runs from Cassano Magnago at the A8 to Turate at the A9. Construction began in 2010 and the route opened to traffic in January 2015.",
+    "ro": "Tronsonul A de 20,41 km al autostrăzii A36 merge de la Cassano Magnago, la A8, până la Turate, la A9. Lucrările au început în 2010, iar traseul a fost deschis traficului în ianuarie 2015."
+  },
+  "operator": "it-pedemontana-lombarda",
+  "lots": [
+    {
+      "id": "tratta-a-cassano-magnago-turate",
+      "name": { "en": "Tratta A: Cassano Magnago (A8) – Turate (A9)", "ro": "Tronsonul A: Cassano Magnago (A8) – Turate (A9)" },
+      "status": "opened",
+      "dates": { "constructionStart": "2010", "opened": "2015-01-26" },
+      "lengthKm": 20.41,
+      "sourceRefs": ["apl-history", "apl-route", "apl-openings", "osm-a36"],
+      "geometryRef": "main"
+    }
+  ],
+  "sources": [
+    {
+      "id": "apl-history",
+      "title": "Autostrada Pedemontana Lombarda: project history",
+      "url": "https://www.pedemontana.com/it/chi-siamo/opera-storia",
+      "publisher": "Autostrada Pedemontana Lombarda S.p.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "apl-route",
+      "title": "Autostrada Pedemontana Lombarda A36: Tratta A route data",
+      "url": "https://www.pedemontana.com/it/la-rete-esercizio/lo-sviluppo-della-A36",
+      "publisher": "Autostrada Pedemontana Lombarda S.p.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "apl-openings",
+      "title": "Autostrada Pedemontana Lombarda: Sustainability Report 2022–2023, network operations",
+      "url": "https://www.pedemontana.com/sites/default/files/2024-11/APL_Rapporto_sostenibilit%C3%A0-2022-23_0.pdf",
+      "publisher": "Autostrada Pedemontana Lombarda S.p.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a36",
+      "title": "OpenStreetMap relation 4543247, A36 Tratta A motorway geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/4543247",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}

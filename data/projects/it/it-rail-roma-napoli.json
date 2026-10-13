@@ -1,0 +1,42 @@
+{
+  "id": "it-rail-roma-napoli",
+  "country": "it",
+  "category": "railway",
+  "name": { "en": "Rome–Naples high-speed railway", "ro": "Calea ferată de mare viteză Roma–Napoli" },
+  "description": {
+    "en": "The RFI high-speed railway connects Rome and Naples. The first section was completed in 2005, and the final Gricignano di Aversa–Caserta section entered service in 2009.",
+    "ro": "Calea ferată de mare viteză RFI leagă Roma și Napoli. Primul tronson a fost finalizat în 2005, iar ultimul tronson Gricignano di Aversa–Caserta a intrat în exploatare în 2009."
+  },
+  "operator": "it-rfi",
+  "lots": [
+    {
+      "id": "full-route",
+      "name": { "en": "Rome–Naples route", "ro": "Traseul Roma–Napoli" },
+      "status": "opened",
+      "dates": { "opened": "2009" },
+      "lengthKm": 222.8,
+      "note": {
+        "en": "Length measured from the OpenStreetMap route geometry.",
+        "ro": "Lungimea a fost măsurată din geometria traseului OpenStreetMap."
+      },
+      "sourceRefs": ["fs-roma-napoli-2015", "osm-roma-napoli"],
+      "geometryRef": "main"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fs-roma-napoli-2015",
+      "title": "FS Italiane: Rome–Naples high-speed railway, ten years",
+      "url": "https://www.fsitaliane.it/it/media/eventi/2015/12/21/Alta-velocita-Roma-Napoli-compie-10-anni.html",
+      "publisher": "Ferrovie dello Stato Italiane",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-roma-napoli",
+      "title": "OpenStreetMap relation 2169082, Rome–Naples high-speed railway geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2169082",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}
