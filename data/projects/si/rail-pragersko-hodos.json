@@ -20,7 +20,7 @@
       },
       "status": "opened",
       "dates": {
-        "constructionStart": "2009-05",
+        "constructionStart": "2009",
         "opened": "2016-06"
       },
       "lengthKm": 109,
@@ -29,12 +29,15 @@
       },
       "sourceRefs": [
         "drsi-pragersko-hodos",
+        "drsi-pragersko-hodos-booklet",
+        "sz-annual-report-2016",
+        "sz-annual-report-2017",
         "osm-rail-40-41"
       ],
       "geometryRef": "pragersko-hodos",
       "note": {
-        "en": "DRSI gives the project period as May 2009 to June 2016. Its scope covers two phases: modernisation and electrification of the railway, then level-crossing and station-access works. The page reports a total investment value of EUR 475.90 million for the project. It does not state a VAT or valuation basis, so no structured cost is recorded. This is an upgrade of existing railway, not new route mileage.",
-        "ro": "DRSI indică perioada proiectului din mai 2009 până în iunie 2016. Domeniul cuprinde două faze: modernizarea și electrificarea căii ferate, apoi lucrările la trecerile la nivel și accesele stațiilor. Pagina raportează o valoare totală a investiției de 475,90 milioane EUR pentru proiect. Nu precizează regimul TVA sau baza de evaluare, deci nu se înregistrează un cost structurat. Este o modernizare a căii ferate existente, nu kilometri de traseu nou."
+        "en": "The DRSI project page gives an overall period of May 2009 to June 2016. Its 2016 booklet dates the reconstruction and upgrading stage to 2009–2015 and electrification to 2013–2016; the operator's 2017 annual report says the electrified line was officially opened in June 2016. The OSM trace measures 109.48 km, close to DRSI's stated 109 km electrification length. DRSI's current page reports total investment of EUR 475.90 million, while its 2016 booklet reports EUR 465 million for the entire investment and EUR 325 million for Phase I. Neither source states a VAT or comparable valuation basis, so no structured cost is recorded. This is an upgrade of existing railway, not new route mileage.",
+        "ro": "Pagina DRSI indică o perioadă generală din mai 2009 până în iunie 2016. Broșura din 2016 datează etapa de reconstrucție și modernizare în perioada 2009–2015, iar electrificarea în perioada 2013–2016; raportul anual al operatorului pentru 2017 spune că linia electrificată a fost deschisă oficial în iunie 2016. Traseul OSM măsoară 109,48 km, aproape de lungimea de 109 km a electrificării indicată de DRSI. Pagina actuală DRSI raportează o investiție totală de 475,90 milioane EUR, în timp ce broșura din 2016 raportează 465 milioane EUR pentru întreaga investiție și 325 milioane EUR pentru faza I. Niciuna dintre surse nu precizează regimul TVA sau o bază de evaluare comparabilă, deci nu se înregistrează un cost structurat. Este o modernizare a căii ferate existente, nu kilometri de traseu nou."
       }
     }
   ],
@@ -50,6 +53,24 @@
       "title": "OpenStreetMap contributors: railway lines 40 and 41 between Pragersko and Hodoš (ODbL)",
       "url": "https://www.openstreetmap.org/relation/3436979",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "drsi-pragersko-hodos-booklet",
+      "title": "DRSI: Pragersko–Hodoš railway modernisation, 2016 booklet",
+      "url": "https://www.krajsamorazdalje.si/uploads/pragersko-hodos-fotoknjiga_ang.pdf",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "sz-annual-report-2016",
+      "title": "Slovenske železnice: Annual report 2016",
+      "url": "https://www.sz.si/wp-content/uploads/2021/12/LETNO_POROCILO_SLOVENSKE_ZELEZNICE_2016.pdf",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "sz-annual-report-2017",
+      "title": "Slovenske železnice: Annual report 2017",
+      "url": "https://infrastruktura.sz.si/wp-content/uploads/2021/12/SZ-Letno-porocilo-2017-SLO-iNET-video.pdf",
+      "retrievedOn": "2026-10-13"
     }
   ]
 }
