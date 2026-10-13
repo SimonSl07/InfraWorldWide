@@ -23,6 +23,12 @@
       "title": "OpenStreetMap: A 13 bridge at Lueg, way 44572234",
       "url": "https://www.openstreetmap.org/way/44572234",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "asfinag-bauprogramm-2026-2031",
+      "title": "ASFINAG: Bauprogramm 2026–2031, Stand November 2025",
+      "url": "https://media.asfinag.at/media/1uoh2far/asf_karte_evaluierung-bauprojekte_20251125_rz.pdf",
+      "retrievedOn": "2026-10-13"
     }
   ],
   "lots": [
@@ -44,18 +50,32 @@
           "currency": "EUR",
           "scope": "total",
           "confidence": "estimated"
-        }
+        },
+        "revisions": [
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 346,
+              "currency": "EUR",
+              "scope": "total",
+              "confidence": "estimated"
+            },
+            "date": "2025-11",
+            "sourceRef": "asfinag-bauprogramm-2026-2031"
+          }
+        ]
       },
       "profile": {
         "works": "reconstruction",
         "viaductKm": 1.8
       },
       "note": {
-        "en": "ASFINAG gives an approximate total project cost of EUR 380 million and a total length of 1,800 m. The works provide two separate new structures. The OSM line follows one mapped carriageway of the existing crossing as the location reference; it measures about 1.8 km. Price year and VAT basis are not stated.",
-        "ro": "ASFINAG indică un cost total aproximativ de 380 de milioane EUR și o lungime totală de 1.800 m. Lucrările prevăd două structuri noi separate. Linia OSM urmează una dintre căile existente ale traversării ca reper de amplasare și măsoară circa 1,8 km. Anul de referință al prețului și regimul TVA nu sunt precizate."
+        "en": "ASFINAG's project page gives an approximate total cost of EUR 380 million, while its November 2025 building programme lists EUR 346 million in total project costs. Both sources give a total length of 1,800 m and describe two new bridge structures. The OSM line follows one mapped carriageway of the existing crossing as the location reference; it measures about 1.8 km. The sources do not state a price year or VAT basis.",
+        "ro": "Pagina proiectului ASFINAG indică un cost total de aproximativ 380 de milioane EUR, iar programul de lucrări din noiembrie 2025 listează costuri totale de 346 de milioane EUR. Ambele surse dau o lungime totală de 1.800 m și descriu două structuri noi de pod. Linia OSM urmează o cale existentă a traversării ca reper de amplasare și măsoară circa 1,8 km. Sursele nu precizează anul de referință al prețului sau regimul TVA."
       },
       "sourceRefs": [
         "asfinag-luegbruecke",
+        "asfinag-bauprogramm-2026-2031",
         "osm-luegbruecke"
       ],
       "geometryRef": "luegbruecke-replacement"
