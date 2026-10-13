@@ -28,11 +28,13 @@
         "works": "upgrade"
       },
       "note": {
-        "en": "The mapped OpenStreetMap route measures 15.52 km; DRSI reports 18.15 km of upgraded existing track. The project also built a separate 3.7 km alignment between Počehova and Pesnica. DRSI lists the total project value as EUR 309.86 million; its stated scope includes both the upgraded railway and new alignment. The page does not state the VAT or valuation basis, so no structured cost is recorded.",
-        "ro": "Traseul cartografiat în OpenStreetMap măsoară 15,52 km; DRSI raportează 18,15 km de cale existentă modernizată. Proiectul a construit separat o aliniere nouă de 3,7 km între Počehova și Pesnica. DRSI indică valoarea totală a proiectului la 309,86 milioane EUR; domeniul declarat include atât linia modernizată, cât și alinierea nouă. Pagina nu precizează regimul TVA sau baza de evaluare, deci nu se înregistrează un cost structurat."
+        "en": "The mapped OpenStreetMap route measures 15.52 km; DRSI reports 18.15 km of upgraded existing track and a separate 3.7 km new alignment from Počehova to Pesnica. DRSI's project page gives a total value of EUR 309.86 million, its completion release says over EUR 314 million, and the 2025 state budget lists a current estimate of EUR 311.526 million at 96.5% execution. The budget figure is not an outturn, and the sources do not state a consistent VAT or valuation basis, so no structured cost is recorded.",
+        "ro": "Traseul cartografiat în OpenStreetMap măsoară 15,52 km; DRSI raportează 18,15 km de cale existentă modernizată și o aliniere nouă separată de 3,7 km între Počehova și Pesnica. Pagina proiectului DRSI indică o valoare totală de 309,86 milioane EUR, comunicatul de finalizare indică peste 314 milioane EUR, iar bugetul de stat pentru 2025 listează o estimare curentă de 311,526 milioane EUR la un nivel de execuție de 96,5%. Valoarea bugetară nu este o valoare finală a lucrărilor, iar sursele nu precizează în mod consecvent regimul TVA sau baza de evaluare, deci nu se înregistrează un cost structurat."
       },
       "sourceRefs": [
         "drsi-maribor-sentilj",
+        "drsi-maribor-sentilj-completion",
+        "si-2025-budget-rail-projects",
         "osm-rail-30"
       ],
       "geometryRef": "maribor-sentilj"
@@ -44,6 +46,18 @@
       "title": "DRSI: Upgrade of the Maribor–Šentilj railway line",
       "url": "https://www.krajsamorazdalje.si/projekti/nadgradnja-zelezniske-proge-maribor-sentilj",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "drsi-maribor-sentilj-completion",
+      "title": "DRSI: Completion of the Maribor–Šentilj railway upgrade",
+      "url": "https://www.gov.si/novice/2024-05-13-zakljucena-obsezna-nadgradnja-zelezniske-proge-mariborsentiljdrzavna-meja/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "si-2025-budget-rail-projects",
+      "title": "Ministry of Finance: Revised 2025 development programme budget, project 2431-16-0007",
+      "url": "https://www.gov.si/assets/ministrstva/MF/Proracun-direktorat/Drzavni-proracun/Sprejeti-proracun/Spremembe-2025/Izpisi/SSP25_NRP.pdf",
+      "retrievedOn": "2026-10-13"
     },
     {
       "id": "osm-rail-30",
