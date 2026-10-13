@@ -1,0 +1,57 @@
+{
+  "id": "pt-covilha-guarda-reopening",
+  "country": "pt",
+  "category": "railway",
+  "name": {
+    "en": "Covilhã–Guarda railway reopening",
+    "ro": "Redeschiderea liniei feroviare Covilhã–Guarda"
+  },
+  "description": {
+    "en": "Modernisation and electrification of the 46 km Covilhã–Guarda section of the Linha da Beira Baixa, restoring the rail connection after about 12 years without service.",
+    "ro": "Modernizarea și electrificarea secțiunii de 46 km Covilhã–Guarda a liniei Linha da Beira Baixa, care a restabilit legătura feroviară după aproximativ 12 ani fără serviciu."
+  },
+  "operator": "pt-infraestruturas-de-portugal",
+  "lots": [
+    {
+      "id": "covilha-guarda",
+      "name": {
+        "en": "Covilhã–Guarda",
+        "ro": "Covilhã–Guarda"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-05-02"
+      },
+      "lengthKm": 46,
+      "profile": {
+        "works": "rehabilitation",
+        "electrified": true
+      },
+      "note": {
+        "en": "Infraestruturas de Portugal says passenger and freight services resumed on 2 May 2021 after about 12 years of interruption. The 46 km works modernised and electrified the route. The OSM track geometry also measures about 46 km.",
+        "ro": "Infraestruturas de Portugal indică reluarea serviciilor de călători și marfă la 2 mai 2021, după o întrerupere de aproximativ 12 ani. Lucrările au modernizat și electrificat traseul de 46 km. Geometria căii ferate OSM măsoară tot aproximativ 46 km."
+      },
+      "sourceRefs": [
+        "ip-covilha-guarda-reopened",
+        "osm-beira-baixa"
+      ],
+      "geometryRef": "covilha-guarda"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ip-covilha-guarda-reopened",
+      "title": "Infraestruturas de Portugal: Reaberta a Circulação Ferroviária no Troço Covilhã–Guarda (4 May 2021)",
+      "url": "https://www.infraestruturasdeportugal.pt/pt-pt/reaberta-circulacao-ferroviaria-no-troco-covilha-guarda",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Infraestruturas de Portugal"
+    },
+    {
+      "id": "osm-beira-baixa",
+      "title": "OpenStreetMap contributors: Linha da Beira Baixa railway relation (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2355657",
+      "retrievedOn": "2026-10-13",
+      "publisher": "OpenStreetMap contributors"
+    }
+  ]
+}
