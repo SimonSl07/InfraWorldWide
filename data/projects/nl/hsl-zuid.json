@@ -1,0 +1,110 @@
+{
+  "id": "nl-hsl-zuid",
+  "country": "nl",
+  "category": "railway",
+  "name": {
+    "en": "HSL-Zuid",
+    "ro": "Linia de mare viteză HSL-Zuid"
+  },
+  "description": {
+    "en": "Dedicated high-speed railway infrastructure between Hoofddorp and Rotterdam and between Rotterdam Lombardijen and the Belgian border. HSL trains use conventional tracks on the remaining corridor sections.",
+    "ro": "Infrastructură feroviară de mare viteză între Hoofddorp și Rotterdam, respectiv între Rotterdam Lombardijen și granița cu Belgia. Trenurile HSL folosesc linii convenționale pe celelalte secțiuni ale coridorului."
+  },
+  "sources": [
+    {
+      "id": "ns-hsl-scope",
+      "title": "NS: High-speed rail line",
+      "url": "https://www.ns.nl/over-ns/trein-en-sporen/hogesnelheidslijn",
+      "publisher": "Nederlandse Spoorwegen",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "nl-government-hsl",
+      "title": "Dutch Parliament: HSL-Zuid corridor scope and opening dates",
+      "url": "https://zoek.officielebekendmakingen.nl/kst-35570-A-2.html",
+      "publisher": "Tweede Kamer der Staten-Generaal",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-hsl-zuid",
+      "title": "OpenStreetMap: HSL-Zuid route relation 5823319",
+      "url": "https://www.openstreetmap.org/relation/5823319",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "hoofddorp-rotterdam-centraal",
+      "name": {
+        "en": "Hoofddorp–Rotterdam Centraal",
+        "ro": "Hoofddorp–Rotterdam Centraal"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-09-07"
+      },
+      "lengthKm": 46.94,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "The 125 km corridor includes conventional track between Amsterdam and Hoofddorp and between Rotterdam and Barendrecht. This lot covers only the dedicated Hoofddorp–Rotterdam high-speed infrastructure. Length measured from OpenStreetMap geometry: 46.94 km.",
+        "ro": "Coridorul de 125 km include linii convenționale între Amsterdam și Hoofddorp, precum și între Rotterdam și Barendrecht. Acest lot acoperă doar infrastructura dedicată de mare viteză dintre Hoofddorp și Rotterdam. Lungimea măsurată din geometria OpenStreetMap: 46,94 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-09-07",
+          "sourceRef": "nl-government-hsl",
+          "note": {
+            "en": "The government records this HSL corridor section entering service on this date.",
+            "ro": "Guvernul consemnează intrarea în exploatare a acestei secțiuni HSL la această dată."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "ns-hsl-scope",
+        "nl-government-hsl",
+        "osm-hsl-zuid"
+      ],
+      "geometryRef": "hoofddorp-rotterdam-centraal"
+    },
+    {
+      "id": "rotterdam-lombardijen-belgian-border",
+      "name": {
+        "en": "Rotterdam Lombardijen–Belgian border",
+        "ro": "Rotterdam Lombardijen–granița cu Belgia"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-12-13"
+      },
+      "lengthKm": 48.32,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "The government identifies the new high-speed infrastructure from Barendrecht to the Belgian border; NS describes the fast section as Rotterdam Lombardijen–the Belgian border. Conventional track between Rotterdam and Barendrecht is excluded. Length measured from OpenStreetMap geometry: 48.32 km.",
+        "ro": "Guvernul identifică infrastructura nouă de mare viteză de la Barendrecht la granița cu Belgia; NS descrie secțiunea rapidă de la Rotterdam Lombardijen la granița cu Belgia. Linia convențională dintre Rotterdam și Barendrecht este exclusă. Lungimea măsurată din geometria OpenStreetMap: 48,32 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-12-13",
+          "sourceRef": "nl-government-hsl",
+          "note": {
+            "en": "The government records this HSL corridor section entering service on this date.",
+            "ro": "Guvernul consemnează intrarea în exploatare a acestei secțiuni HSL la această dată."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "ns-hsl-scope",
+        "nl-government-hsl",
+        "osm-hsl-zuid"
+      ],
+      "geometryRef": "rotterdam-lombardijen-belgian-border"
+    }
+  ]
+}
