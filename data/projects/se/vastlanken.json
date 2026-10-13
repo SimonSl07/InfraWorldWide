@@ -1,0 +1,97 @@
+{
+  "id": "se-vastlanken",
+  "country": "se",
+  "category": "railway",
+  "name": {
+    "en": "Västlänken (West Link)",
+    "ro": "Västlänken (legătura feroviară vestică)"
+  },
+  "description": {
+    "en": "An 8 km railway through central Gothenburg, with more than 6 km underground and new stations at Centralen, Haga and Korsvägen. Construction started in 2018. Centralen is scheduled to open as a terminus station on 13 December 2026; through-running service over the full line is expected in 2030, within Trafikverket’s 2029–2032 range.",
+    "ro": "O cale ferată de 8 km prin centrul orașului Göteborg, cu peste 6 km în subteran și stații noi la Centralen, Haga și Korsvägen. Construcția a început în 2018. Centralen este programată să se deschidă ca stație terminus la 13 decembrie 2026; circulația pe întreaga linie este estimată să înceapă în 2030, în intervalul 2029–2032 indicat de Trafikverket."
+  },
+  "operator": "se-trafikverket",
+  "sources": [
+    {
+      "id": "trafikverket-vastlanken",
+      "title": "Trafikverket: Västlänken",
+      "url": "https://www.trafikverket.se/vara-projekt/projekt-i-vastra-gotalands-lan/vastlanken/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "trafikverket-vastlanken-opening",
+      "title": "Trafikverket: Nu startar nedräkningen",
+      "url": "https://www.trafikverket.se/vara-projekt/projekt-i-vastra-gotalands-lan/vastlanken/nyheter-for-projekt-vastlanken/2025/december/nu-startar-nedrakningen/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-vastlanken",
+      "title": "OpenStreetMap contributors: Västlänken railway route relation (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/21409045",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-vastlanken-centralen-stop",
+      "title": "OpenStreetMap contributors: Göteborg C stop position (ODbL)",
+      "url": "https://www.openstreetmap.org/node/4705527261",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "olskroken-centralen",
+      "name": {
+        "en": "Olskroken–Centralen",
+        "ro": "Olskroken–Centralen"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2018",
+        "expectedOpening": "2026-12-13"
+      },
+      "lengthKm": 1.61,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 1
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Trafikverket schedules Centralen to open as a terminus station on 13 December 2026.",
+        "ro": "Lungime măsurată pe baza geometriei OpenStreetMap. Trafikverket programează deschiderea stației Centralen ca stație terminus la 13 decembrie 2026."
+      },
+      "sourceRefs": [
+        "trafikverket-vastlanken",
+        "trafikverket-vastlanken-opening",
+        "osm-vastlanken",
+        "osm-vastlanken-centralen-stop"
+      ],
+      "geometryRef": "olskroken-centralen"
+    },
+    {
+      "id": "centralen-almedal",
+      "name": {
+        "en": "Centralen–Almedal",
+        "ro": "Centralen–Almedal"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2018",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 5.47,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 2
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Through-running service over the full line is expected in 2030. The complete mapped alignment measures 7.08 km against Trafikverket’s approximate 8 km project length.",
+        "ro": "Lungime măsurată pe baza geometriei OpenStreetMap. Circulația pe întreaga linie este estimată să înceapă în 2030. Aliniamentul complet din OSM măsoară 7,08 km față de lungimea de aproximativ 8 km indicată de Trafikverket pentru proiect."
+      },
+      "sourceRefs": [
+        "trafikverket-vastlanken",
+        "osm-vastlanken",
+        "osm-vastlanken-centralen-stop"
+      ],
+      "geometryRef": "centralen-almedal"
+    }
+  ]
+}
