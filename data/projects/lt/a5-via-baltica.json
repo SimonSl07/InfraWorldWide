@@ -1,0 +1,250 @@
+{
+  "id": "lt-a5-via-baltica",
+  "country": "lt",
+  "category": "highway",
+  "name": {
+    "en": "A5 Kaunas–Polish border",
+    "ro": "A5 Kaunas–frontiera cu Polonia"
+  },
+  "description": {
+    "en": "The Lithuanian A5 is part of Via Baltica and links Kaunas with the Polish border. This record covers the Garliava–Mauručiai reconstruction and the motorway-standard sections from Mauručiai to the border. The 16.465–23.320 km section is being reconstructed; the southern sections opened in 2018–2025.",
+    "ro": "A5 din Lituania face parte din Via Baltica și leagă Kaunas de frontiera cu Polonia. Această înregistrare acoperă reconstrucția Garliava–Mauručiai și sectoarele la standard de autostradă dintre Mauručiai și frontieră. Sectorul 16,465–23,320 km este în reconstrucție; sectoarele sudice au fost deschise între 2018 și 2025."
+  },
+  "operator": "lt-via-lietuva",
+  "sources": [
+    {
+      "id": "vialietuva-a5-south",
+      "title": "Via Lietuva: A5 Kaunas–Marijampolė–Suvalkai, 56.83–97.06 km reconstruction",
+      "url": "https://vialietuva.lt/projektai/strateginiai-infrastrukturos-projektai/via-baltica-kelio-a5-kaunas-marijampole-suvalkai-ruozo-nuo-5683-iki-9706-km-rekonstravimas",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "vialietuva-a5-garliava",
+      "title": "Via Lietuva: A5 Garliava–Mauručiai, 16.465–23.320 km reconstruction",
+      "url": "https://vialietuva.lt/projektai/via-baltica-a5-kaunas-marijampole-suvalkai-ruozo-nuo-16465-iki-2332-km-rekonstravimas",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "vialietuva-a5-garliava-news",
+      "title": "Via Lietuva: Garliava–Mauručiai Via Baltica reconstruction starts",
+      "url": "https://vialietuva.lt/naujienos/pradedamas-via-baltica-ruozo-nuo-garliavos-iki-mauruciu-rekonstravimas",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "wikipedia-a5-lt",
+      "title": "Magistralinis kelias A5 (Lietuva)",
+      "url": "https://lt.wikipedia.org/wiki/Magistralinis_kelias_A5_(Lietuva)",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a5",
+      "title": "OpenStreetMap relation 2895576, A5 Kaunas–Marijampolė–Suvalkai (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2895576",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lastVerified": "2026-10-13",
+  "lots": [
+    {
+      "id": "mauruciai-23-32",
+      "name": {
+        "en": "16.465–23.320 km (Garliava–Mauručiai)",
+        "ro": "16,465–23,320 km (Garliava–Mauručiai)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2026-06",
+        "expectedOpening": "2027-11"
+      },
+      "lengthKm": 6.86,
+      "profile": {
+        "works": "reconstruction",
+        "lanes": 4
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Via Lietuva lists European Regional Development Fund support.",
+            "ro": "Via Lietuva menționează finanțare din Fondul european de dezvoltare regională."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Via Lietuva lists the state Road Fund.",
+            "ro": "Via Lietuva menționează Fondul rutier de stat."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Kauno tiltai",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2026-06",
+          "sourceRef": "vialietuva-a5-garliava-news"
+        }
+      ],
+      "note": {
+        "en": "Via Lietuva reports a contract value of EUR 29.27 million including VAT. The route remains four lanes; the works remove direct access points and add connecting roads.",
+        "ro": "Via Lietuva raportează o valoare contractuală de 29,27 milioane EUR cu TVA inclusă. Drumul rămâne cu patru benzi; lucrările elimină accesele directe și adaugă drumuri de legătură."
+      },
+      "sourceRefs": ["vialietuva-a5-garliava", "vialietuva-a5-garliava-news", "osm-a5"],
+      "geometryRef": "mauruciai-23-32"
+    },
+    {
+      "id": "mauruciai-marijampole",
+      "name": {
+        "en": "23.320–56.830 km (Mauručiai–Marijampolė)",
+        "ro": "23,320–56,830 km (Mauručiai–Marijampolė)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2018-11"
+      },
+      "lengthKm": 33.166,
+      "profile": {
+        "works": "reconstruction",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2018-11",
+          "sourceRef": "wikipedia-a5-lt"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. The full Mauručiai–Marijampolė section opened in November 2018 as a four-lane motorway.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Întregul sector Mauručiai–Marijampolė a fost deschis în noiembrie 2018 ca autostradă cu patru benzi."
+      },
+      "sourceRefs": ["wikipedia-a5-lt", "osm-a5"],
+      "geometryRef": "mauruciai-marijampole"
+    },
+    {
+      "id": "marijampole-72-50",
+      "name": {
+        "en": "56.830–72.500 km (Marijampolė–state border, stage III)",
+        "ro": "56,830–72,500 km (Marijampolė–frontieră, etapa III)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2023-06",
+        "opened": "2024-10"
+      },
+      "lengthKm": 15.508,
+      "profile": {
+        "works": "reconstruction",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2024-10",
+          "sourceRef": "wikipedia-a5-lt"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Chainage and stage boundary follow Via Lietuva. The section was completed in October 2024.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Kilometrajul și limita etapei urmează datele Via Lietuva. Sectorul a fost finalizat în octombrie 2024."
+      },
+      "sourceRefs": ["vialietuva-a5-south", "wikipedia-a5-lt", "osm-a5"],
+      "geometryRef": "marijampole-72-50"
+    },
+    {
+      "id": "72-50-79",
+      "name": {
+        "en": "72.500–79.000 km (Marijampolė–state border, stage I)",
+        "ro": "72,500–79,000 km (Marijampolė–frontieră, etapa I)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2022-12",
+        "opened": "2023-10"
+      },
+      "lengthKm": 6.433,
+      "profile": {
+        "works": "reconstruction",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2023-10",
+          "sourceRef": "wikipedia-a5-lt"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Chainage and stage boundary follow Via Lietuva. The section was completed in October 2023.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Kilometrajul și limita etapei urmează datele Via Lietuva. Sectorul a fost finalizat în octombrie 2023."
+      },
+      "sourceRefs": ["vialietuva-a5-south", "wikipedia-a5-lt", "osm-a5"],
+      "geometryRef": "72-50-79"
+    },
+    {
+      "id": "79-85",
+      "name": {
+        "en": "79.000–85.000 km (Marijampolė–state border, stage II)",
+        "ro": "79,000–85,000 km (Marijampolė–frontieră, etapa II)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2023",
+        "opened": "2023-12"
+      },
+      "lengthKm": 5.939,
+      "profile": {
+        "works": "reconstruction",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2023-12",
+          "sourceRef": "wikipedia-a5-lt"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Chainage and stage boundary follow Via Lietuva. The section was completed in December 2023.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Kilometrajul și limita etapei urmează datele Via Lietuva. Sectorul a fost finalizat în decembrie 2023."
+      },
+      "sourceRefs": ["vialietuva-a5-south", "wikipedia-a5-lt", "osm-a5"],
+      "geometryRef": "79-85"
+    },
+    {
+      "id": "85-polish-border",
+      "name": {
+        "en": "85.000–97.060 km (Marijampolė–Polish border, stage IV)",
+        "ro": "85,000–97,060 km (Marijampolė–frontiera cu Polonia, etapa IV)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2024-06",
+        "opened": "2025-12"
+      },
+      "lengthKm": 11.936,
+      "profile": {
+        "works": "reconstruction",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2025-12",
+          "sourceRef": "wikipedia-a5-lt"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Via Lietuva's September 2025 update still listed works in progress; the Lithuanian A5 article records completion in December 2025.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Actualizarea Via Lietuva din septembrie 2025 încă lista lucrările în curs; articolul lituanian despre A5 consemnează finalizarea în decembrie 2025."
+      },
+      "sourceRefs": ["vialietuva-a5-south", "wikipedia-a5-lt", "osm-a5"],
+      "geometryRef": "85-polish-border"
+    }
+  ]
+}
