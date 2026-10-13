@@ -1,0 +1,88 @@
+{
+  "id": "lv-a5-babite-reconstruction",
+  "country": "lv",
+  "category": "highway",
+  "name": {
+    "en": "A5 Babīte reconstruction",
+    "ro": "Reconstrucția A5 la Babīte"
+  },
+  "description": {
+    "en": "Reconstruction of the A5 Riga bypass between Riga and the A10 interchange at Babīte.",
+    "ro": "Reconstrucția centurii Riga A5 între Riga și nodul cu A10 de la Babīte."
+  },
+  "operator": "lv-lvc",
+  "sources": [
+    {
+      "id": "lvc-a5-babite-works",
+      "title": "Weekly report on planned roadworks, 29 April–5 May 2024",
+      "url": "https://lvceli.lv/wp-content/uploads/2024/04/29.04.2024.-05.05.2024.pdf",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "lvc-a5-babite-update",
+      "title": "Traffic restrictions will remain through winter at Babīte and on the Vidzeme highway",
+      "url": "https://lvceli.lv/aktuali/uz-rigas-apvedcela-babite-un-uz-vidzemes-sosejas-ziema-saglabasies-satiksmes-ierobezojumi/",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a5-route",
+      "title": "OpenStreetMap: A5 road route relation 164559",
+      "url": "https://www.openstreetmap.org/relation/164559",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "a5-km-38-200-40-825",
+      "name": {
+        "en": "A5, km 38.200–40.825",
+        "ro": "A5, km 38,200–40,825"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2023-08-28",
+        "opened": "2024-08-20"
+      },
+      "lengthKm": 2.625,
+      "contractors": [
+        {
+          "name": "SIA Vianova",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "LVC identifies this 2.6 km section from Riga's boundary to the A10 interchange and reports work from 28 August 2023 to 20 August 2024. The map follows one A5 carriageway; LVC's regional works list reports 5.30 km of carriageway across both sides. The published contract value includes VAT and is omitted.",
+        "ro": "LVC identifică acest sector de 2,6 km de la limita orașului Riga până la nodul cu A10 și raportează lucrări între 28 august 2023 și 20 august 2024. Harta urmărește o singură cale de rulare A5; lista regională a lucrărilor LVC raportează 5,30 km de carosabil pentru ambele sensuri. Valoarea contractului publicată include TVA și este omisă."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023-08-28",
+          "sourceRef": "lvc-a5-babite-works",
+          "note": {
+            "en": "LVC reports this as the construction start date.",
+            "ro": "LVC raportează această dată drept începerea lucrărilor."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2024-08-20",
+          "sourceRef": "lvc-a5-babite-works",
+          "note": {
+            "en": "LVC reports this as the construction completion date.",
+            "ro": "LVC raportează această dată drept finalizarea lucrărilor."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "lvc-a5-babite-works",
+        "lvc-a5-babite-update",
+        "osm-a5-route"
+      ],
+      "geometryRef": "a5-km-38-200-40-825"
+    }
+  ]
+}
