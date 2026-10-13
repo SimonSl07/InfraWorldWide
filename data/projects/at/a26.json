@@ -41,6 +41,18 @@
       "title": "OpenStreetMap: A 26 Westbrücke alignment, way 992040518",
       "url": "https://www.openstreetmap.org/way/992040518",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bmimi-a26",
+      "title": "BMIMI: A 26 Linzer Autobahn project overview",
+      "url": "https://www.bmimi.gv.at/themen/verkehr/strasse/infrastruktur/projekte/autobahnen/a26.html",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "usp-a26-etappe-2-award",
+      "title": "USP eProcurement: A 26 Linzer Autobahn Etappe 2, main works award",
+      "url": "https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?backlink=L2F0Lmd2LmJtZHcuZXByb2MtcC9wdWJsaWMvdGVuZGVybGlzdD9sb2FkPXRydWU%3D&object=41a809d9-0b61-4991-86b8-74dc07973af3-66bed647-8b0f-473a-a951-a12840e7bcea&orderColumn=2&orderDir=desc&start=0",
+      "retrievedOn": "2026-10-13"
     }
   ],
   "lots": [
@@ -53,7 +65,7 @@
       "status": "opened",
       "dates": {
         "constructionStart": "2019-01",
-        "opened": "2024-10"
+        "opened": "2024-11"
       },
       "lengthKm": 0.306,
       "profile": {
@@ -67,7 +79,8 @@
       "sourceRefs": [
         "asfinag-a26",
         "asfinag-a26-map",
-        "osm-a26-donautalbruecke"
+        "osm-a26-donautalbruecke",
+        "bmimi-a26"
       ],
       "geometryRef": "donautalbruecke"
     },
@@ -80,7 +93,7 @@
       "status": "under_construction",
       "dates": {
         "constructionStart": "2026-07",
-        "expectedOpening": "2032"
+        "expectedOpening": "2032-12"
       },
       "lengthKm": 3.2,
       "profile": {
@@ -94,9 +107,24 @@
       "sourceRefs": [
         "asfinag-a26",
         "asfinag-a26-map",
-        "osm-a26-freinberg"
+        "osm-a26-freinberg",
+        "usp-a26-etappe-2-award"
       ],
-      "geometryRef": "freinberg-tunnel-section"
+      "geometryRef": "freinberg-tunnel-section",
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 376.05772591,
+              "currency": "EUR"
+            },
+            "date": "2026-04-28",
+            "note": "Award for the main construction works of Stage 2 (Freinberg tunnel and Waldeggstraße underpass). The published value is not a total project cost; the source does not state a VAT basis.",
+            "sourceRef": "usp-a26-etappe-2-award"
+          }
+        ]
+      }
     },
     {
       "id": "westbruecke-a7-connection",
@@ -106,7 +134,7 @@
       },
       "status": "planned",
       "dates": {
-        "expectedOpening": "2035"
+        "expectedOpening": "2035-12"
       },
       "lengthKm": 0.49,
       "profile": {
