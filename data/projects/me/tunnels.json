@@ -1,0 +1,112 @@
+{
+  "id": "me-tunnels",
+  "country": "me",
+  "category": "tunnel",
+  "name": {
+    "en": "Montenegro road and railway tunnels",
+    "ro": "Tuneluri rutiere și feroviare din Muntenegru"
+  },
+  "description": {
+    "en": "Notable operating road and railway tunnels in Montenegro.",
+    "ro": "Tuneluri rutiere și feroviare importante aflate în exploatare în Muntenegru."
+  },
+  "lastVerified": "2026-10-13",
+  "sources": [
+    {
+      "id": "sozina-monteput",
+      "title": "Monteput: Sozina Tunnel project, opened 13 July 2005",
+      "url": "https://monteput.me/portfolio/tunel-sozina/",
+      "publisher": "Monteput d.o.o.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "sozina-length",
+      "title": "Government of Montenegro: Sozina Tunnel length",
+      "url": "https://www.gov.me/clanak/151586--saopstenje-decenija-od-otvaranja-tunela-sozina-proslo-vise-od-22-miliona-vozila",
+      "publisher": "Government of Montenegro",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "sozina-road-osm",
+      "title": "OpenStreetMap contributors: M-1.1 Sozina road tunnel, way 6021851",
+      "url": "https://www.openstreetmap.org/way/6021851",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "sozina-rail-zicg",
+      "title": "ŽICG: Belgrade–Bar railway, including the 6,176 m Sozina tunnel",
+      "url": "https://www.zicg.me/odnosi-sa-javnoscu/aktuelnosti/pruga-beogradbar-19762026/oa-MjhmZwgb",
+      "publisher": "Željeznički prevoz Crne Gore",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "belgrade-bar-opening-zicg",
+      "title": "ŽICG: Belgrade–Bar railway opened in 1976",
+      "url": "https://www.zicg.me/odnosi-sa-javnoscu/aktuelnosti/pruga-beogradbar-19762026/oa-MjhmZwgb",
+      "publisher": "Željeznička infrastruktura Crne Gore",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "sozina-rail-osm",
+      "title": "OpenStreetMap contributors: M11 Sozina railway tunnel, way 36055204",
+      "url": "https://www.openstreetmap.org/way/36055204",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "sozina-road",
+      "name": {
+        "en": "Sozina road tunnel",
+        "ro": "Tunelul rutier Sozina"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-07-13"
+      },
+      "lengthKm": 4.189,
+      "profile": {
+        "tunnelKm": 4.189,
+        "terrain": "mountain"
+      },
+      "geometryRef": "sozina-road",
+      "sourceRefs": [
+        "sozina-monteput",
+        "sozina-length",
+        "sozina-road-osm"
+      ],
+      "note": {
+        "en": "The OSM tunnel way is 4.164 km long; the recorded 4.189 km is the published project length.",
+        "ro": "Tunelul cartografiat în OSM are 4,164 km; valoarea înregistrată de 4,189 km este lungimea publicată a proiectului."
+      }
+    },
+    {
+      "id": "sozina-rail",
+      "name": {
+        "en": "Sozina railway tunnel",
+        "ro": "Tunelul feroviar Sozina"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1976"
+      },
+      "lengthKm": 6.176,
+      "profile": {
+        "tunnelKm": 6.176,
+        "terrain": "mountain"
+      },
+      "geometryRef": "sozina-rail",
+      "sourceRefs": [
+        "sozina-rail-zicg",
+        "belgrade-bar-opening-zicg",
+        "sozina-rail-osm"
+      ],
+      "note": {
+        "en": "The OSM railway tunnel way measures 6.177 km; ŽICG reports 6.176 km.The OSM railway tunnel way measures 6.177 km; ŽICG reports 6.176 km. The 1976 opened date is the opening year of the Belgrade-Bar line containing the tunnel.",
+        "ro": "Tunelul feroviar cartografiat în OSM măsoară 6,177 km; ŽICG raportează 6,176 km."
+      }
+    }
+  ]
+}
