@@ -201,6 +201,7 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "2016-05-19",
         "opened": "2017-12-15"
       },
       "lengthKm": 4.45,
@@ -256,13 +257,14 @@
         "tolled": true
       },
       "note": {
-        "en": "Km 27+100–31+550 (the hu.wikipedia text gives 4.5 km, 27+100–31+855), from Csorna-dél to Csorna-nyugat, near Jobaháza. Opened on 15 December 2017. The tender was won on 14 April 2016 by the ST-M85-II konzorcium (STR Építő Kft., TRSZ Kft.); works ran from 19 May 2016 for a net HUF 13.845 billion, according to hu.wikipedia. It links the 2015 bypass to the road to Farád and relieves road 85. The drawn line is about 1 km longer than the sourced figure.",
-        "ro": "Km 27+100–31+550 (textul hu.wikipedia indică 4,5 km, 27+100–31+855), de la Csorna-dél la Csorna-nyugat, lângă Jobaháza. Deschis la 15 decembrie 2017. Licitația a fost câștigată la 14 aprilie 2016 de ST-M85-II konzorcium (STR Építő Kft., TRSZ Kft.); lucrările s-au desfășurat din 19 mai 2016, pentru 13,845 mld. HUF fără TVA, potrivit hu.wikipedia. Leagă ocolitoarea din 2015 de drumul spre Farád și descarcă drumul 85. Linia desenată este cu aproximativ 1 km mai lungă decât cifra din sursă."
+        "en": "Km 27+100–31+550 (the hu.wikipedia text gives 4.5 km, 27+100–31+855), from Csorna-dél to Csorna-nyugat, near Jobaháza. Opened on 15 December 2017. The tender was won on 14 April 2016 by the ST-M85-II konzorcium (STR Építő Kft., TRSZ Kft.); works ran from 19 May 2016 for a net HUF 13.845 billion, according to hu.wikipedia. It links the 2015 bypass to the road to Farád and relieves road 85. The drawn line is about 1 km longer than the sourced figure. The ministry project page lists 1 April 2016 as the project construction start; this differs from the reported works start of 19 May 2016, retained in the dates field.",
+        "ro": "Km 27+100–31+550 (textul hu.wikipedia indică 4,5 km, 27+100–31+855), de la Csorna-dél la Csorna-nyugat, lângă Jobaháza. Deschis la 15 decembrie 2017. Licitația a fost câștigată la 14 aprilie 2016 de ST-M85-II konzorcium (STR Építő Kft., TRSZ Kft.); lucrările s-au desfășurat din 19 mai 2016, pentru 13,845 mld. HUF fără TVA, potrivit hu.wikipedia. Leagă ocolitoarea din 2015 de drumul spre Farád și descarcă drumul 85. Linia desenată este cu aproximativ 1 km mai lungă decât cifra din sursă. Pagina proiectului ministerial indic? 1 aprilie 2016 drept ?nceput al construc?iei proiectului; aceast? dat? difer? de ?nceputul lucr?rilor raportat la 19 mai 2016, p?strat ?n c?mpul dates."
       },
       "sourceRefs": [
         "hu-wikipedia-m85",
         "hu-wikipedia-autopalyak",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "ekm-m85-csorna-ii"
       ],
       "geometryRef": "csorna-ii"
     },
@@ -275,7 +277,8 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2017-12-01",
-        "opened": "2020-12-16"
+        "opened": "2020-12-16",
+        "constructionStart": "2018-02-01"
       },
       "lengthKm": 20.05,
       "cost": {
@@ -302,6 +305,11 @@
             "ro": "Oferta câștigătoare anunțată în sinteza evaluării ofertelor."
           },
           "sourceRef": "magyarepitok-2017-12-tender"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-02-01",
+          "sourceRef": "ekm-m85-csorna-fertod"
         },
         {
           "kind": "opened",
@@ -345,7 +353,8 @@
         "hu-wikipedia-autopalyak",
         "magyarepitok-2017-12-tender",
         "magyarepitok-2020-12-opening",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "ekm-m85-csorna-fertod"
       ],
       "geometryRef": "csorna-nyugat-fertod"
     },
@@ -441,7 +450,8 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2017-12-01",
-        "opened": "2020-12-16"
+        "opened": "2020-12-16",
+        "constructionStart": "2018-02-01"
       },
       "lengthKm": 15.4,
       "cost": {
@@ -468,6 +478,11 @@
             "ro": "Oferta câștigătoare anunțată în sinteza evaluării ofertelor."
           },
           "sourceRef": "magyarepitok-2017-12-tender"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2018-02-01",
+          "sourceRef": "ekm-m85-nagylozs-sopron"
         },
         {
           "kind": "opened",
@@ -507,7 +522,8 @@
         "hu-wikipedia-autopalyak",
         "magyarepitok-2017-12-tender",
         "magyarepitok-2020-12-opening",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "ekm-m85-nagylozs-sopron"
       ],
       "geometryRef": "nagylozs-sopron-kelet"
     },
@@ -673,7 +689,8 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2019-06-11",
-        "opened": "2024-12-14"
+        "opened": "2024-12-14",
+        "constructionStart": "2019-12-01"
       },
       "lengthKm": 4.12,
       "cost": {
@@ -700,6 +717,11 @@
             "ro": "Consorțiul câștigător anunțat pe baza datelor europene de achiziții."
           },
           "sourceRef": "magyarepitok-2019-06-tunnel-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019-12-01",
+          "sourceRef": "ekm-m85-fertorakos-border"
         },
         {
           "kind": "opened",
@@ -744,7 +766,8 @@
         "hu-wikipedia-autopalyak",
         "hu-wikipedia-soproni-alagut",
         "magyarepitok-2019-06-tunnel-contract",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "ekm-m85-fertorakos-border"
       ],
       "geometryRef": "fertorakos-border"
     }
@@ -803,6 +826,34 @@
       "title": "OpenStreetMap contributors: ways with ref M85, via Overpass (ODbL)",
       "url": "https://www.openstreetmap.org/",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "ekm-m85-csorna-ii",
+      "title": "Ministry of Construction and Transport: M85 Csorna bypass, phase II",
+      "url": "https://beruhazas.gov.hu/projektek/m85-gyorsforgalmi-ut-csorna-elkerulo-ii-utem/12614",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "ekm-m85-csorna-fertod",
+      "title": "Ministry of Construction and Transport: M85 Csorna-nyugat?Fert?endr?d section, part 1",
+      "url": "https://beruhazas.gov.hu/projektek/sopron-megkozelitese-m85-autout-csorna-ii-fertod-endredmajor-csomopont-kozotti-szakasz/26701",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "ekm-m85-nagylozs-sopron",
+      "title": "Ministry of Construction and Transport: M85 Nagyl?zs?Sopron-kelet section",
+      "url": "https://beruhazas.gov.hu/projektek/sopron-megkozelitese-m85-autout-nagylozs-sopron-kelet-szakasz-a-nagycenki-uzemmernokseggel/26706",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "ekm-m85-fertorakos-border",
+      "title": "Ministry of Construction and Transport: M85 Fert?r?kos?Austrian border section",
+      "url": "https://beruhazas.gov.hu/projektek/sopron-megkozelitese-m85-autout-fertorakos-csomopont-sopron-oh-szakasz-a-8647-jelu-sopron-eny-i-elkerulo-uttal/31299",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-13"
     }
   ]
 }

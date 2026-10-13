@@ -169,7 +169,8 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2020-12-12",
-        "opened": "2024-05-02"
+        "opened": "2024-05-02",
+        "constructionStart": "2021-02-01"
       },
       "lengthKm": 14.8,
       "profile": {
@@ -195,6 +196,11 @@
           }
         },
         {
+          "kind": "construction_start",
+          "date": "2021-02-01",
+          "sourceRef": "ekm-m6-preparation"
+        },
+        {
           "kind": "opened",
           "date": "2024-05-02",
           "sourceRef": "hu-wikipedia-m6"
@@ -216,6 +222,7 @@
       },
       "sourceRefs": [
         "hu-wikipedia-m6",
+        "ekm-m6-preparation",
         "osm-relation-m6",
         "openstreetmap-odbl"
       ],
@@ -230,7 +237,8 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2020-12-12",
-        "opened": "2025-10-07"
+        "opened": "2025-10-07",
+        "constructionStart": "2021-02-01"
       },
       "lengthKm": 5,
       "profile": {
@@ -245,6 +253,11 @@
             "en": "NIF Zrt. signed the Bóly – Ivándárda contract.",
             "ro": "NIF Zrt. a semnat contractul Bóly – Ivándárda."
           }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-02-01",
+          "sourceRef": "ekm-m6-preparation"
         },
         {
           "kind": "opened",
@@ -269,6 +282,7 @@
       "sourceRefs": [
         "hu-wikipedia-m6",
         "24hu-m6-border",
+        "ekm-m6-preparation",
         "osm-relation-m6",
         "openstreetmap-odbl"
       ],
@@ -305,6 +319,13 @@
       "title": "OpenStreetMap contributors: route geometry (ODbL)",
       "url": "https://www.openstreetmap.org/",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "ekm-m6-preparation",
+      "title": "Ministry of Construction and Transport: M6 motorway B?ly?Iv?nd?rda border section preparation and construction",
+      "url": "https://beruhazas.gov.hu/projektek/m6-autopalya-boly-ivandarda-orszaghatar-kozotti-szakasz-elokeszitese/9045",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-13"
     }
   ]
 }

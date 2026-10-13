@@ -1,0 +1,147 @@
+{
+  "id": "hu-m43",
+  "country": "hu",
+  "category": "highway",
+  "name": {
+    "en": "M43 motorway (Szeged–Makó–Romanian border)",
+    "ro": "Autostrada M43 (Szeged–Makó–granița cu România)"
+  },
+  "description": {
+    "en": "The M43 motorway links Szeged and Makó with the Romanian border. This record covers the 31.6 km Szeged–Makó section from km 3+000 and the 23.125 km Makó–border section. The first 3 km from the M5 junction is already included in the M5 project record.",
+    "ro": "Autostrada M43 leagă Szeged și Makó de granița cu România. Înregistrarea acoperă secțiunea Szeged–Makó de 31,6 km, începând la km 3+000, și secțiunea Makó–graniță de 23,125 km. Primii 3 km de la nodul M5 sunt deja incluși în proiectul M5."
+  },
+  "operator": "hu-nif",
+  "lastVerified": "2026-10-13",
+  "lots": [
+    {
+      "id": "szeged-mako",
+      "name": {
+        "en": "Szeged–Makó",
+        "ro": "Szeged–Makó"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-04-20"
+      },
+      "lengthKm": 31.6,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2011-04-20",
+          "sourceRef": "ekm-m43-szeged-mako"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "M43 Szeged–Makó consortium (Swietelsky, KE-VÍZ 21)",
+          "role": "builder"
+        },
+        {
+          "name": "TISZA 43 consortium (Sedesa S.A., Hídépítő Zrt., SZEVIÉP Zrt.)",
+          "role": "builder"
+        },
+        {
+          "name": "MAROSLELE 43 consortium (EuroAszfalt Kft., Magyar Aszfalt Kft., KELET-ÚT Kft., KÖZGÉP Zrt.)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 67502.610409,
+          "currency": "HUF",
+          "note": "Net of VAT, ministry project page."
+        }
+      },
+      "note": {
+        "en": "The official limits are km 3+000–34+600, 31.6 km. The first 3 km from the M5 connection are recorded in m5.json and are excluded here. The OpenStreetMap line follows one M43 carriageway from an interpolated cut 174 m before the mapped km 3+174 marker to the km 34+600 marker; it measures 31.73 km. The ministry lists three construction consortia and a net contract amount of HUF 67,502,610,409.",
+        "ro": "Limitele oficiale sunt km 3+000–34+600, adică 31,6 km. Primii 3 km de la legătura cu M5 sunt înregistrați în m5.json și sunt excluși aici. Linia OpenStreetMap urmează o singură cale M43, de la un punct interpolat cu 174 m înaintea marcajului cartografiat km 3+174 până la marcajul km 34+600; măsoară 31,73 km. Ministerul enumeră trei consorții de construcție și o valoare netă a contractului de 67.502.610.409 HUF."
+      },
+      "sourceRefs": [
+        "ekm-m43-szeged-mako",
+        "mko-2013-m43-chainage",
+        "osm-relation-m43"
+      ],
+      "geometryRef": "szeged-mako"
+    },
+    {
+      "id": "mako-border",
+      "name": {
+        "en": "Makó–Romanian border",
+        "ro": "Makó–granița cu România"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2015-07-10"
+      },
+      "lengthKm": 23.125,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2015-07-10",
+          "sourceRef": "ekm-m43-mako-border"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Kft.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 46490.126611,
+          "currency": "HUF",
+          "note": "Net of VAT, ministry project page."
+        }
+      },
+      "note": {
+        "en": "The ministry gives a length of 23.125 km and describes the new 2×2-lane section from Makó to the Romanian border. The OpenStreetMap line follows one M43 carriageway from the km 34+600 project boundary to the border and measures 22.88 km. The ministry names Duna Aszfalt Kft. and a net contract amount of HUF 46,490,126,611.",
+        "ro": "Ministerul indică o lungime de 23,125 km și descrie noua secțiune cu 2×2 benzi de la Makó până la granița cu România. Linia OpenStreetMap urmează o singură cale M43 de la limita proiectului km 34+600 până la frontieră și măsoară 22,88 km. Ministerul menționează Duna Aszfalt Kft. și o valoare netă a contractului de 46.490.126.611 HUF."
+      },
+      "sourceRefs": [
+        "ekm-m43-mako-border",
+        "mko-2013-m43-chainage",
+        "osm-relation-m43"
+      ],
+      "geometryRef": "mako-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ekm-m43-szeged-mako",
+      "title": "Ministry of Construction and Transport: M43 Szeged–Makó motorway section",
+      "url": "https://beruhazas.gov.hu/projektek/m43-autopalya-szeged-mako-kozotti-szakasz/9678",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "ekm-m43-mako-border",
+      "title": "Ministry of Construction and Transport: M43 Makó–Romanian border motorway section",
+      "url": "https://beruhazas.gov.hu/projektek/m43-autopalya-mako-orszaghatar-kozotti-szakasz-es-csatlakozo-epitmenyek-kivitelezesi-munkai/9020",
+      "publisher": "Ministry of Construction and Transport",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "mko-2013-m43-chainage",
+      "title": "Magyar Közlöny: M43 motorway Szeged–Makó project chainage limits",
+      "url": "https://magyarkozlony.hu/hivatalos-lapok/1ea23ef33affb071c6d343ec3f14906a3cde56df/dokumentumok/96db6b9446ab36986e5212c819445a8c7358a363/letoltes",
+      "publisher": "Magyar Közlöny",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-relation-m43",
+      "title": "OpenStreetMap contributors: relation 23064, M43 route and member ways (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/23064",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}

@@ -170,6 +170,7 @@
       "status": "opened",
       "dates": {
         "tenderAwarded": "2016",
+        "constructionStart": "2016-07-06",
         "opened": "2018-12-20"
       },
       "lengthKm": 18.74,
@@ -189,6 +190,15 @@
         ]
       },
       "events": [
+        {
+          "kind": "construction_start",
+          "date": "2016-07-06",
+          "sourceRef": "hbmo-m35-ii-groundbreaking",
+          "note": {
+            "en": "Groundbreaking ceremony launched the phase II project.",
+            "ro": "Ceremonia de inaugurare a ?antierului a marcat lansarea proiectului fazei II."
+          }
+        },
         {
           "kind": "opened",
           "date": "2018-12-20",
@@ -231,7 +241,8 @@
         "nif-m35-2018-opening",
         "hu-wikipedia-m35",
         "hu-wikipedia-autopalyak",
-        "openstreetmap-odbl"
+        "openstreetmap-odbl",
+        "hbmo-m35-ii-groundbreaking"
       ],
       "geometryRef": "mikepercs-berettyoujfalu"
     }
@@ -290,6 +301,13 @@
       "title": "OpenStreetMap contributors: motorway ways with ref M35, via Overpass (ODbL)",
       "url": "https://www.openstreetmap.org/",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "hbmo-m35-ii-groundbreaking",
+      "title": "Hajd?-Bihar County Government: M35 motorway second phase groundbreaking, 6 July 2016",
+      "url": "https://hbmo.hu/portal/hirek-archivum/page/189/",
+      "publisher": "Hajd?-Bihar County Government",
+      "retrievedOn": "2026-10-13"
     }
   ]
 }
