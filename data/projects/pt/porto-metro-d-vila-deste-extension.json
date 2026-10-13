@@ -1,0 +1,55 @@
+{
+  "id": "pt-porto-metro-d-vila-deste-extension",
+  "country": "pt",
+  "category": "railway",
+  "name": {
+    "en": "Porto Metro Line D Vila d’Este extension",
+    "ro": "Extinderea Liniei D a metroului din Porto la Vila d’Este"
+  },
+  "description": {
+    "en": "The Yellow Line extension from Santo Ovídio to Vila d’Este opened on 28 June 2024. Metro do Porto reports an operational network increase of about 3.15 km and three new stations: Manuel Leão, Hospital Santos Silva and Vila d’Este.",
+    "ro": "Extinderea Liniei Galbene de la Santo Ovídio la Vila d’Este a fost inaugurată la 28 iunie 2024. Metro do Porto raportează o creștere a rețelei în exploatare de aproximativ 3,15 km și trei stații noi: Manuel Leão, Hospital Santos Silva și Vila d’Este."
+  },
+  "lots": [
+    {
+      "id": "santo-ovidio-vila-deste",
+      "name": {
+        "en": "Santo Ovídio–Vila d’Este",
+        "ro": "Santo Ovídio–Vila d’Este"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2024-06-28"
+      },
+      "lengthKm": 3.15,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Metro do Porto states that the extension adds about 3.15 km to the operating network and includes three stations. The mapped line geometry is clipped between the Santo Ovídio and Vila d’Este stop nodes in OpenStreetMap relation 2567504; the source geometry follows the track alignment and can differ from the project’s reported length.",
+        "ro": "Metro do Porto precizează că extinderea adaugă aproximativ 3,15 km rețelei în exploatare și include trei stații. Geometria liniei este decupată între nodurile stațiilor Santo Ovídio și Vila d’Este din relația OpenStreetMap 2567504; geometria urmărește aliniamentul căii și poate diferi de lungimea raportată a proiectului."
+      },
+      "sourceRefs": [
+        "metro-porto-extension",
+        "osm-metro-d"
+      ],
+      "geometryRef": "santo-ovidio-vila-deste"
+    }
+  ],
+  "sources": [
+    {
+      "id": "metro-porto-extension",
+      "title": "Metro do Porto: Sustainability Report 2022–2024",
+      "url": "https://www.metrodoporto.pt/metrodoporto/uploads/writer_file/document/748/rs_2022_2024.pdf",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Metro do Porto"
+    },
+    {
+      "id": "osm-metro-d",
+      "title": "OpenStreetMap contributors: Metro do Porto Line D route relation (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2567504",
+      "retrievedOn": "2026-10-13",
+      "publisher": "OpenStreetMap contributors"
+    }
+  ]
+}

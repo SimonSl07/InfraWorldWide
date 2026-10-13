@@ -1,0 +1,64 @@
+{
+  "id": "pt-a1-north-south-motorway",
+  "country": "pt",
+  "category": "highway",
+  "name": {
+    "en": "A1 North–South Motorway",
+    "ro": "Autostrada A1 Nord–Sud"
+  },
+  "description": {
+    "en": "Portugal's main north–south motorway between Lisbon and Porto. Brisa reports the 296 km concession as completed in 1991; the first Lisbon–Vila Franca de Xira section opened in 1961.",
+    "ro": "Principala autostradă nord–sud a Portugaliei, între Lisabona și Porto. Brisa indică finalizarea concesiunii de 296 km în 1991; prima secțiune, Lisabona–Vila Franca de Xira, a fost deschisă în 1961."
+  },
+  "operator": "pt-infraestruturas-de-portugal",
+  "lots": [
+    {
+      "id": "lisbon-porto",
+      "name": {
+        "en": "Lisbon–Porto",
+        "ro": "Lisabona–Porto"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1991"
+      },
+      "lengthKm": 296,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Brisa reports the completed Lisbon–Porto concession as 296 km. Infraestruturas de Portugal's road chronology records the first Lisbon–Vila Franca de Xira section opening in 1961. OpenStreetMap geometry contains the mapped motorway carriageways, whose combined drawn length is approximately twice the single-route concession length.",
+        "ro": "Brisa indică o lungime de 296 km pentru concesiunea finalizată Lisabona–Porto. Cronologia rutieră a Infraestruturas de Portugal consemnează deschiderea primei secțiuni Lisabona–Vila Franca de Xira în 1961. Geometria OpenStreetMap include carosabilele autostrăzii, a căror lungime desenată cumulată este aproximativ dublă față de lungimea concesiunii pe un singur traseu."
+      },
+      "sourceRefs": [
+        "brisa-concessao",
+        "ip-road-chronology",
+        "osm-a1"
+      ],
+      "geometryRef": "full"
+    }
+  ],
+  "sources": [
+    {
+      "id": "brisa-concessao",
+      "title": "Brisa: Brisa Concessão Rodoviária",
+      "url": "https://www.brisaconcessao.pt/informacao-corporativa/concessao-brisa",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Brisa"
+    },
+    {
+      "id": "ip-road-chronology",
+      "title": "Infraestruturas de Portugal: Road heritage chronology",
+      "url": "https://www.ippatrimonio.pt/pt-pt/a-descobrir/patrimonio-rodoviario/cronologia",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Infraestruturas de Portugal"
+    },
+    {
+      "id": "osm-a1",
+      "title": "OpenStreetMap contributors: A1 route relation (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/1502233",
+      "retrievedOn": "2026-10-13",
+      "publisher": "OpenStreetMap contributors"
+    }
+  ]
+}

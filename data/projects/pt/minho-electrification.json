@@ -1,0 +1,105 @@
+{
+  "id": "pt-minho-electrification",
+  "country": "pt",
+  "category": "railway",
+  "name": {
+    "en": "Linha do Minho electrification",
+    "ro": "Electrificarea liniei Linha do Minho"
+  },
+  "description": {
+    "en": "Electrification and modernisation of the Nine–Valença section of the Linha do Minho, delivered in two stages: Nine–Viana do Castelo and Viana do Castelo–Valença.",
+    "ro": "Electrificarea și modernizarea secțiunii Nine–Valença a liniei Linha do Minho, realizată în două etape: Nine–Viana do Castelo și Viana do Castelo–Valença."
+  },
+  "operator": "pt-infraestruturas-de-portugal",
+  "lots": [
+    {
+      "id": "nine-viana-electrification",
+      "name": {
+        "en": "Nine–Viana do Castelo",
+        "ro": "Nine–Viana do Castelo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-07"
+      },
+      "lengthKm": 44,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "The Portuguese Government reports completion of the electrification in July 2019 over 44 km. The OpenStreetMap track geometry measures about 42.5 km; the sourced project length is retained because the two measurements have different scopes.",
+        "ro": "Guvernul portughez indică finalizarea electrificării în iulie 2019, pe o lungime de 44 km. Geometria căii ferate din OpenStreetMap măsoară aproximativ 42,5 km; lungimea publicată a proiectului este păstrată deoarece cele două măsurători au domenii diferite."
+      },
+      "sourceRefs": [
+        "ip-minho-nine-viana",
+        "gov-minho-nine-viana-length",
+        "osm-minho-line"
+      ],
+      "geometryRef": "nine-viana"
+    },
+    {
+      "id": "viana-valenca-electrification",
+      "name": {
+        "en": "Viana do Castelo–Valença",
+        "ro": "Viana do Castelo–Valença"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-04-25"
+      },
+      "lengthKm": 49,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "Electric train services began on 25 April 2021. Infraestruturas de Portugal describes the electrified Porto–Valença line as 134 km; its engineering unit identifies the Viana–Valença works as approximately 49 km. The OSM track geometry for this section measures about 48 km.",
+        "ro": "Trenurile electrice au început să circule la 25 aprilie 2021. Infraestruturas de Portugal descrie linia electrificată Porto–Valença ca având 134 km; unitatea sa de inginerie indică aproximativ 49 km pentru lucrările Viana–Valença. Geometria căii ferate OSM pentru această secțiune măsoară aproximativ 48 km."
+      },
+      "sourceRefs": [
+        "ip-minho-viana-valenca-opened",
+        "ip-minho-combined-scope",
+        "osm-minho-line"
+      ],
+      "geometryRef": "viana-valenca"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ip-minho-nine-viana",
+      "title": "Infraestruturas de Portugal: Modernização da Linha do Minho",
+      "url": "https://www.infraestruturasdeportugal.pt/pt-pt/node/3672",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Infraestruturas de Portugal"
+    },
+    {
+      "id": "gov-minho-nine-viana-length",
+      "title": "República Portuguesa: Concluída a eletrificação da Linha do Minho entre Nine e Viana do Castelo (15 July 2019)",
+      "url": "https://portugal.gov.pt/pt/gc21/comunicacao/comunicados/concluida-a-eletrificacao-da-linha-do-minho-entre-nine-e-viana-do-castelo",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Government of Portugal"
+    },
+    {
+      "id": "ip-minho-viana-valenca-opened",
+      "title": "Infraestruturas de Portugal: Comboios de Tração Elétrica no Troço Viana do Castelo–Valença",
+      "url": "https://www.infraestruturasdeportugal.pt/pt-pt/node/5101",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Infraestruturas de Portugal"
+    },
+    {
+      "id": "ip-minho-combined-scope",
+      "title": "IP Engenharia: Linha do Minho – Eletrif. Nine/Viana e Viana/Valença",
+      "url": "https://www.ipengenharia.pt/pt-pt/referencias-ipe/linha-do-minho-eletrif-nineviana-e-vianavalenca-0",
+      "retrievedOn": "2026-10-13",
+      "publisher": "IP Engenharia"
+    },
+    {
+      "id": "osm-minho-line",
+      "title": "OpenStreetMap contributors: Linha do Minho railway relation (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/4508126",
+      "retrievedOn": "2026-10-13",
+      "publisher": "OpenStreetMap contributors"
+    }
+  ]
+}

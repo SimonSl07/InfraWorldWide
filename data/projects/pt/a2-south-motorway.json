@@ -1,0 +1,64 @@
+{
+  "id": "pt-a2-south-motorway",
+  "country": "pt",
+  "category": "highway",
+  "name": {
+    "en": "A2 South Motorway",
+    "ro": "Autostrada A2 Sud"
+  },
+  "description": {
+    "en": "The Lisbon–Algarve motorway, completed in July 2002. Brisa reports 235 km for the concession.",
+    "ro": "Autostrada Lisabona–Algarve, finalizată în iulie 2002. Brisa indică 235 km pentru concesiune."
+  },
+  "operator": "pt-infraestruturas-de-portugal",
+  "lots": [
+    {
+      "id": "lisbon-algarve",
+      "name": {
+        "en": "Lisbon–Algarve",
+        "ro": "Lisabona–Algarve"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2002-07"
+      },
+      "lengthKm": 235,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Brisa gives the concession length as 235 km, and Infraestruturas de Portugal records completion in July 2002. The OSM route geometry includes both mapped carriageways; their combined drawn length is approximately twice the single-route concession length.",
+        "ro": "Brisa indică o lungime de 235 km pentru concesiune, iar Infraestruturas de Portugal consemnează finalizarea în iulie 2002. Geometria OSM include ambele carosabile cartografiate; lungimea lor desenată cumulată este aproximativ dublă față de lungimea concesiunii pe un singur traseu."
+      },
+      "sourceRefs": [
+        "brisa-concessao",
+        "ip-road-chronology",
+        "osm-a2"
+      ],
+      "geometryRef": "full"
+    }
+  ],
+  "sources": [
+    {
+      "id": "brisa-concessao",
+      "title": "Brisa: Brisa Concessão Rodoviária",
+      "url": "https://www.brisaconcessao.pt/informacao-corporativa/concessao-brisa",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Brisa"
+    },
+    {
+      "id": "ip-road-chronology",
+      "title": "Infraestruturas de Portugal: Road heritage chronology",
+      "url": "https://www.ippatrimonio.pt/pt-pt/a-descobrir/patrimonio-rodoviario/cronologia",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Infraestruturas de Portugal"
+    },
+    {
+      "id": "osm-a2",
+      "title": "OpenStreetMap contributors: A2 route (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/1504070",
+      "retrievedOn": "2026-10-13",
+      "publisher": "OpenStreetMap contributors"
+    }
+  ]
+}
