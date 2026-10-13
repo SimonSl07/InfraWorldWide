@@ -29,6 +29,18 @@
       "title": "OpenStreetMap: A 5 Nord/Weinviertel Autobahn",
       "url": "https://www.openstreetmap.org/way/23394557",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "poysdorf-chronicle-2019",
+      "title": "City of Poysdorf: 2019 chronicle, Drasenhofen bypass",
+      "url": "https://www.poysdorf.gv.at/system/web/GetDocument.ashx?cts=1740933237&fileId=2286090&useFlipbook=true",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-drasenhofen-bypass",
+      "title": "OpenStreetMap: Drasenhofen bypass, A5",
+      "url": "https://www.openstreetmap.org/way/546386469",
+      "retrievedOn": "2026-10-13"
     }
   ],
   "lots": [
@@ -91,6 +103,31 @@
         "osm-a5"
       ],
       "geometryRef": "schrick-poysdorf-nord"
+    },
+    {
+      "id": "drasenhofen-bypass",
+      "name": {
+        "en": "Drasenhofen bypass",
+        "ro": "Centura Drasenhofen"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-09-08"
+      },
+      "lengthKm": 5,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "The two-lane bypass opened to traffic on 8 September 2019. The City of Poysdorf reports a 5 km section. This lot records the bypass as built; ASFINAG's planned 9 km full-profile Poysbrunn–border project is a later phase and is not added here as a second overlapping route lot. The OSM line measures about 5.1 km.",
+        "ro": "Centura cu două benzi a fost deschisă circulației la 8 septembrie 2019. Orașul Poysdorf indică o lungime de 5 km. Acest lot înregistrează centura construită; proiectul ASFINAG planificat pentru profil complet, de 9 km între Poysbrunn și frontieră, este o etapă ulterioară și nu este adăugat aici ca un al doilea lot suprapus. Linia OSM măsoară aproximativ 5,1 km."
+      },
+      "sourceRefs": [
+        "a5-asfinag-drasenhofen",
+        "poysdorf-chronicle-2019",
+        "osm-drasenhofen-bypass"
+      ],
+      "geometryRef": "drasenhofen-bypass"
     }
   ]
 }
