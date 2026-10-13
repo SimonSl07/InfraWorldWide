@@ -1,0 +1,96 @@
+{
+  "id": "de-a14-nordverlaengerung",
+  "country": "de",
+  "category": "highway",
+  "name": {
+    "en": "A 14 Nordverlängerung: Lüderitz–Stendal-Süd",
+    "ro": "Autostrada A 14: Lüderitz–Stendal-Süd"
+  },
+  "description": {
+    "en": "The 6.8 km southern part of VKE 1.5 on the A 14 between Lüderitz and Stendal-Süd.",
+    "ro": "Partea sudică de 6,8 km a VKE 1.5 de pe A 14, între Lüderitz și Stendal-Süd."
+  },
+  "operator": "de-autobahn-gmbh",
+  "sources": [
+    {
+      "id": "autobahn-a14",
+      "title": "Autobahn GmbH: A 14 Nordverlängerung Magdeburg–Wittenberge–Schwerin",
+      "url": "https://www.autobahn.de/planen-bauen/projekt/nordverlaengerung-magdeburg-wittenberge-schwerin",
+      "publisher": "Die Autobahn GmbH des Bundes",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "autobahn-a14-opening",
+      "title": "Autobahn GmbH: A 14 VKE 1.5 South opens and construction begins between Wittenberge and Karstädt",
+      "url": "https://www.autobahn.de/aktuelles/aktuell/a14-letzte-bauetappe-in-brandenburg-beginnt-weiterer-abschnitt-in-sachsen-anhalt-unter-verkehr",
+      "publisher": "Die Autobahn GmbH des Bundes",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a14",
+      "title": "OpenStreetMap: A 14 mapped alignment, relation 9716855",
+      "url": "https://www.openstreetmap.org/relation/9716855",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "ted-a14-vke-1-5-award",
+      "title": "TED: Award of A 14 VKE 1.5 South roadworks, notice 455383-2023",
+      "url": "https://ted.europa.eu/en/notice/-/detail/455383-2023",
+      "publisher": "Publications Office of the European Union",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "vke-1-5-sued",
+      "name": {
+        "en": "VKE 1.5 South: Lüderitz–Stendal-Süd",
+        "ro": "VKE 1.5 Sud: Lüderitz–Stendal-Süd"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2026-06-29",
+        "tenderAwarded": "2023-07-21"
+      },
+      "lengthKm": 6.784,
+      "note": {
+        "en": "TED reports a sourced construction length of 6.784 km. The OSM line follows one carriageway and measures about 6.56 km. TED reports the contract award value as EUR 45,154,636.81, but the notice does not state its VAT basis, so it is not recorded as a project cost. OSM still tags parts of the mapped alignment as construction; the opened status and date follow Autobahn GmbH.",
+        "ro": "TED indică o lungime de construcție de 6,784 km. Linia OSM urmează o singură cale de rulare și măsoară aproximativ 6,56 km. TED indică valoarea contractului atribuit ca 45.154.636,81 EUR, dar anunțul nu precizează regimul TVA, astfel că suma nu este înregistrată drept cost al proiectului. OSM marchează încă părți ale traseului cartografiat ca fiind în construcție; starea deschisă și data urmează informațiile Autobahn GmbH."
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-07-21",
+          "sourceRef": "ted-a14-vke-1-5-award",
+          "note": {
+            "en": "TED lists STRABAG Großprojekte GmbH as contractor and gives the contract date as 21 July 2023.",
+            "ro": "TED indică STRABAG Großprojekte GmbH drept antreprenor și datează contractul la 21 iulie 2023."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2026-06-29",
+          "sourceRef": "autobahn-a14-opening",
+          "note": {
+            "en": "Autobahn GmbH reports the section between Lüderitz and Stendal-Süd was opened to traffic.",
+            "ro": "Autobahn GmbH anunță deschiderea pentru trafic a sectorului dintre Lüderitz și Stendal-Süd."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "autobahn-a14",
+        "autobahn-a14-opening",
+        "osm-a14",
+        "ted-a14-vke-1-5-award"
+      ],
+      "geometryRef": "vke-1-5-sued",
+      "contractors": [
+        {
+          "name": "STRABAG Großprojekte GmbH",
+          "role": "builder"
+        }
+      ]
+    }
+  ]
+}
