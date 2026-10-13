@@ -3,35 +3,60 @@
   "country": "si",
   "category": "railway",
   "name": {
-    "en": "Divača – Koper second railway track",
-    "ro": "Al doilea fir feroviar Divača – Koper"
+    "en": "Divača–Koper second railway track",
+    "ro": "Al doilea fir feroviar Divača–Koper"
   },
   "description": {
-    "en": "2TDK is building a new 27.1 km single-track railway between Divača and Koper, with tunnels, viaducts and service tubes. It will run beside the existing route and is tracked here as new railway infrastructure.",
-    "ro": "2TDK construiește o linie feroviară nouă, cu un singur fir, de 27,1 km între Divača și Koper, cu tuneluri, viaducte și galerii de serviciu. Va circula în paralel cu traseul existent și este înregistrată aici ca infrastructură feroviară nouă."
+    "en": "2TDK is building a new 27.1 km single-track railway between Divača and Koper, beside the existing line. Construction includes eight tunnels, two viaducts and two other major structures. Rail vehicles traversed the new track in March 2026 and testing began.",
+    "ro": "2TDK construiește o linie feroviară nouă, cu un singur fir și lungimea de 27,1 km, între Divača și Koper, în paralel cu linia existentă. Lucrările includ opt tuneluri, două viaducte și alte două structuri majore. Vehicule feroviare au parcurs linia nouă în martie 2026, când au început testele."
   },
   "operator": "si-2tdk",
   "lots": [
     {
       "id": "divaca-koper",
       "name": {
-        "en": "Divača – Koper second track",
-        "ro": "Al doilea fir Divača – Koper"
+        "en": "Divača–Koper second track",
+        "ro": "Al doilea fir Divača–Koper"
       },
       "status": "under_construction",
+      "dates": {
+        "constructionStart": "2021-05-05"
+      },
       "lengthKm": 27.1,
       "profile": {
-        "works": "greenfield"
+        "works": "greenfield",
+        "maxSpeedKmh": 160
+      },
+      "contractors": [
+        {
+          "name": "Kolektor CPG",
+          "role": "builder"
+        },
+        {
+          "name": "Yapı Merkezi",
+          "role": "builder"
+        },
+        {
+          "name": "Özaltın",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "2TDK signed separate main civil works contracts: Divača–Črni Kal on 5 May 2021 and Črni Kal–Koper on 31 March 2021, both with the Kolektor CPG, Yapı Merkezi and Özaltın consortium. GZS reports EUR 403,613,361.12 excluding VAT for the Divača–Črni Kal contract. For Črni Kal–Koper, eTransport reported EUR 224.749 million excluding VAT in 2021. In February 2025, 2TDK reported a revised value of EUR 250,970,313.16 excluding VAT and an increase of EUR 23,293,438.75 from the preceding value. The 2025 page does not reconcile the earlier report's different figure. These are civil works contract values, not the total project cost, and are not placed in the whole-route cost field. The 27.1 km length is the official route length; the OSM line is about 24.6 km and stops short of the complete official alignment. RTV Slovenija reported on 17 September 2026 that main works were expected to finish by year-end, followed by testing and permits; the line was not yet open.",
+        "ro": "2TDK a semnat contracte separate pentru lucrările civile principale: Divača–Črni Kal la 5 mai 2021 și Črni Kal–Koper la 31 martie 2021, ambele cu asocierea Kolektor CPG, Yapı Merkezi și Özaltın. GZS indică 403.613.361,12 EUR fără TVA pentru contractul Divača–Črni Kal. Pentru Črni Kal–Koper, eTransport a raportat 224,749 milioane EUR fără TVA în 2021. În februarie 2025, 2TDK a raportat o valoare revizuită de 250.970.313,16 EUR fără TVA și o creștere de 23.293.438,75 EUR față de valoarea precedentă. Pagina din 2025 nu explică diferența față de cifra publicată anterior. Acestea sunt valori ale contractelor de lucrări civile, nu costul total al proiectului, așa că nu sunt trecute la costul traseului integral. Lungimea de 27,1 km este lungimea oficială a traseului; linia OSM are aproximativ 24,6 km și se oprește înainte de capătul aliniamentului oficial. RTV Slovenija a relatat la 17 septembrie 2026 că lucrările principale urmau să se termine până la sfârșitul anului, urmate de testare și autorizare; linia nu era încă deschisă."
       },
       "sourceRefs": [
         "govsi-second-track",
-        "govsi-second-track-start",
-        "osm-second-track"
+        "govsi-section-two-award",
+        "govsi-section-one-start",
+        "gzs-section-one-contract",
+        "etransport-section-two-contract",
+        "2tdk-section-two-amendment",
+        "govsi-testing-2026",
+        "osm-second-track",
+        "rtvslo-status-2026"
       ],
-      "geometryRef": "divaca-koper",
-      "dates": {
-        "constructionStart": "2021-05-05"
-      }
+      "geometryRef": "divaca-koper"
     }
   ],
   "sources": [
@@ -39,19 +64,55 @@
       "id": "govsi-second-track",
       "title": "GOV.SI: Construction of the second track between Divača and Koper",
       "url": "https://www.gov.si/zbirke/projekti-in-programi/izgradnja-drugega-tira-zelezniske-povezave-divacakoper/",
-      "retrievedOn": "2026-10-11"
+      "retrievedOn": "2026-10-13"
     },
     {
-      "id": "govsi-second-track-start",
-      "title": "GOV.SI: A symbolic start of the main construction works for the second railway line (5 May 2021)",
-      "url": "https://www.gov.si/en/news/2021-05-07-a-symbolic-start-of-the-main-construction-works-for-the-transparent-construction-of-the-second-railway-line/",
-      "retrievedOn": "2026-10-12"
+      "id": "govsi-section-two-award",
+      "title": "GOV.SI: Minister Vrtovec on the second track contract for Črni Kal–Koper (31 March 2021)",
+      "url": "https://www.gov.si/novice/2021-03-31-minister-vrtovec-o-pomembnosti-izgradnje-drugega-tira-za-slovensko-gospodarstvo-in-logistiko/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "govsi-section-one-start",
+      "title": "GOV.SI: Symbolic start of main construction works for Divača–Črni Kal (5 May 2021)",
+      "url": "https://www.gov.si/novice/2021-05-05-minister-vrtovec-ob-simbolicnem-zacetku-glavnih-gradbenih-del-za-transparentno-gradnjo-drugega-tira/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "gzs-section-one-contract",
+      "title": "GZS ZGIGM: Contract for Divača–Črni Kal and start of the second track",
+      "url": "https://www.gzs.si/zbornica_gradbenistva_in_industrije_gradbenega_materiala/Novice/ArticleId/79642/podpis-pogodbe-za-odsek-divacacrni-kal-in-zacetek-gradnje-drugega-tira-sodelujejo-tudi-clani-gzs-zgigm",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "etransport-section-two-contract",
+      "title": "eTransport: Start of construction of the Divača–Koper second track (June 2021)",
+      "url": "https://www.etransport.si/storage/doc/202106/tr-06---2021---internet.pdf",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "2tdk-section-two-amendment",
+      "title": "2TDK: The Second Track project remains within the investment values defined in NIP2 (7 February 2025)",
+      "url": "https://drugitir.si/en/news/gradnja/projekt-drugi-tir-ostaja-v-okviru-investicijskih-vrednosti-opredeljenih-v-investicijskem-programu-nip2",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "govsi-testing-2026",
+      "title": "GOV.SI: Government report 2022–2026, rail vehicle pass and testing on the second track",
+      "url": "https://www.gov.si/assets/vlada/Razno/PV-Golob/Porocilo-o-delu-Vlade-Republike-Slovenije-2022-2026.pdf",
+      "retrievedOn": "2026-10-13"
     },
     {
       "id": "osm-second-track",
-      "title": "OpenStreetMap contributors: railway construction geometry for the Divača–Koper second track (ODbL)",
+      "title": "OpenStreetMap contributors: Divača–Koper second track geometry (ODbL)",
       "url": "https://www.openstreetmap.org/?mlat=45.61&mlon=13.89#map=11/45.61/13.89",
-      "retrievedOn": "2026-10-11"
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "rtvslo-status-2026",
+      "title": "RTV Slovenija: Second track stays within budget, works and tests timeline (17 September 2026)",
+      "url": "https://www.rtvslo.si/slovenija/2tdk-drugi-tir-ostaja-znotraj-financnega-okvira-trenutna-realizacija-988-65-milijona-evrov/794072",
+      "retrievedOn": "2026-10-13"
     }
   ]
 }
