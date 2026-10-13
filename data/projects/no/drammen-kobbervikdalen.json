@@ -1,0 +1,99 @@
+{
+  "id": "no-drammen-kobbervikdalen",
+  "country": "no",
+  "category": "railway",
+  "name": {
+    "en": "Drammen–Kobbervikdalen double track",
+    "ro": "Linia cu cale dublă Drammen–Kobbervikdalen"
+  },
+  "description": {
+    "en": "A new double-track section of the Vestfold Line between Drammen and Kobbervikdalen, including a new tunnel through Strømsåsen.",
+    "ro": "O secțiune nouă cu cale dublă a liniei Vestfold între Drammen și Kobbervikdalen, inclusiv un tunel nou prin Strømsåsen."
+  },
+  "operator": "no-bane-nor",
+  "sources": [
+    {
+      "id": "drammen-kobbervikdalen-banenor",
+      "title": "Bane NOR: New double track from Drammen to Kobbervikdalen",
+      "url": "https://www.banenor.no/prosjekter/alle-prosjekter/nytt-dobbeltspor-drammen-kobbervikdalen/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-vestfoldbanen",
+      "title": "OpenStreetMap: Vestfoldbanen railway route relation",
+      "url": "https://www.openstreetmap.org/relation/1948000",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "prop-1-s-2025-2026",
+      "title": "Ministry of Transport: Prop. 1 S (2025–2026), rail project cost table",
+      "url": "https://www.regjeringen.no/contentassets/2eaad89d75a84555b16981e2943b3278/no/pdfs/prp202520260001_sddddpdfs.pdf",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "drammen-kobbervikdalen",
+      "name": {
+        "en": "Drammen–Kobbervikdalen",
+        "ro": "Drammen–Kobbervikdalen"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-12-19",
+        "opened": "2025-08-31"
+      },
+      "lengthKm": 3.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Bane NOR records official construction start on 19 December 2019 and opening to traffic on 31 August 2025. The 2025–2026 state budget reports a NOK 18,087 million cost frame and NOK 13,095 million final cost, both in 2026 prices. Length measured from OpenStreetMap geometry of the mapped railway alignment.",
+        "ro": "Bane NOR consemnează începerea oficială a lucrărilor la 19 decembrie 2019 și deschiderea circulației la 31 august 2025. Bugetul de stat 2025–2026 raportează un plafon de cost de 18.087 milioane NOK și un cost final de 13.095 milioane NOK, ambele la prețurile din 2026. Lungime măsurată din geometria OpenStreetMap a traseului feroviar cartografiat."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-12-19",
+          "sourceRef": "drammen-kobbervikdalen-banenor",
+          "note": {
+            "en": "Bane NOR records the official start of construction.",
+            "ro": "Bane NOR consemnează începerea oficială a lucrărilor."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-08-31",
+          "sourceRef": "drammen-kobbervikdalen-banenor",
+          "note": {
+            "en": "The new double track opened to traffic.",
+            "ro": "Noua cale dublă a fost deschisă circulației."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "drammen-kobbervikdalen-banenor",
+        "osm-vestfoldbanen",
+        "prop-1-s-2025-2026"
+      ],
+      "geometryRef": "drammen-kobbervikdalen",
+      "cost": {
+        "estimated": {
+          "amount": 18087,
+          "currency": "NOK",
+          "year": 2026,
+          "scope": "total",
+          "note": "Approved cost frame, in millions of 2026 kroner."
+        },
+        "actual": {
+          "amount": 13095,
+          "currency": "NOK",
+          "year": 2026,
+          "scope": "total",
+          "note": "Final outturn, in millions of 2026 kroner."
+        }
+      }
+    }
+  ]
+}
