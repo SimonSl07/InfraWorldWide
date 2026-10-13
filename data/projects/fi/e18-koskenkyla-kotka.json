@@ -1,0 +1,83 @@
+{
+  "id": "fi-e18-koskenkyla-kotka",
+  "country": "fi",
+  "category": "highway",
+  "name": {
+    "en": "E18 Koskenkylä–Kotka motorway",
+    "ro": "Autostrada E18 Koskenkylä–Kotka"
+  },
+  "description": {
+    "en": "A 53 km motorway project on Vt 7 between Koskenkylä and Kotka. It upgraded 17 km of existing road from Koskenkylä to Loviisa and built 36 km of new motorway from Loviisa to Kotka. The full route opened on 1 September 2014.",
+    "ro": "Un proiect de autostradă de 53 km pe Vt 7, între Koskenkylä și Kotka. A modernizat 17 km de drum existent între Koskenkylä și Loviisa și a construit 36 km de autostradă nouă între Loviisa și Kotka. Întregul traseu s-a deschis la 1 septembrie 2014."
+  },
+  "operator": "fi-vayla",
+  "lastVerified": "2026-10-13",
+  "lots": [
+    {
+      "id": "koskenkyla-kotka",
+      "name": {
+        "en": "Koskenkylä–Kotka",
+        "ro": "Koskenkylä–Kotka"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-09-01"
+      },
+      "lengthKm": 53,
+      "profile": {
+        "lanes": 4
+      },
+      "note": {
+        "en": "The EIB describes 17 km as an upgrade from Koskenkylä to Loviisa and 36 km as new motorway from Loviisa to Kotka. The OSM line follows one carriageway between the Koskenkylä and Kotka ends and measures 51.15 km, 3.5% below the reported 53 km; the sourced figure is retained.",
+        "ro": "BEI descrie 17 km ca modernizare între Koskenkylä și Loviisa și 36 km ca autostradă nouă între Loviisa și Kotka. Linia OSM urmează o singură cale între capetele Koskenkylä și Kotka și măsoară 51,15 km, cu 3,5% sub cei 53 km raportați; cifra din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "nib-completion",
+        "eib-project-scope",
+        "osm-vt7-finland"
+      ],
+      "geometryRef": "koskenkyla-kotka",
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2014-09-01",
+          "sourceRef": "nib-completion",
+          "note": {
+            "en": "The Nordic Investment Bank reports that the final motorway stretches entered use on 1 September 2014.",
+            "ro": "Banca Nordică de Investiții afirmă că ultimele tronsoane de autostradă au intrat în exploatare la 1 septembrie 2014."
+          }
+        }
+      ]
+    }
+  ],
+  "cost": {
+    "amount": 340,
+    "currency": "EUR",
+    "scope": "total",
+    "confidence": "reported",
+    "note": "The Nordic Investment Bank reports the project cost as EUR 340 million. It separately reports an approximately EUR 623 million service-contract value, which includes maintenance through 2026 and is not the construction cost. No price year is stated."
+  },
+  "sources": [
+    {
+      "id": "nib-completion",
+      "title": "Nordic Investment Bank: Finland, E18 Koskenkylä–Kotka ready ahead of schedule",
+      "url": "https://www.nib.int/articles/finland-e18-koskenkyla-kotka-ready-ahead-of-schedule",
+      "publisher": "Nordic Investment Bank",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "eib-project-scope",
+      "title": "European Investment Bank: E18 Koskenkylä–Kotka PPP Priority TEN",
+      "url": "https://www.eib.org/en/projects/all/20100352",
+      "publisher": "European Investment Bank",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-vt7-finland",
+      "title": "OpenStreetMap: Valtatie 7 route relation 14265976",
+      "url": "https://www.openstreetmap.org/relation/14265976",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}

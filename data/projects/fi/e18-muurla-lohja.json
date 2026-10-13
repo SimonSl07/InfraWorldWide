@@ -1,0 +1,128 @@
+{
+  "id": "fi-e18-muurla-lohja",
+  "country": "fi",
+  "category": "highway",
+  "name": {
+    "en": "E18 Muurla–Lohja motorway",
+    "ro": "Autostrada E18 Muurla–Lohja"
+  },
+  "description": {
+    "en": "A 51.3 km motorway project on Vt 1 between Muurla and Lohja. The developer rounds the two sections to 23 km and 29 km. Muurla–Lahnajärvi opened on 19 November 2008, and Lahnajärvi–Lohja opened on 28 January 2009.",
+    "ro": "Un proiect de autostradă de 51,3 km pe Vt 1, între Muurla și Lohja. Dezvoltatorul rotunjește cele două secțiuni la 23 km și 29 km. Muurla–Lahnajärvi s-a deschis la 19 noiembrie 2008, iar Lahnajärvi–Lohja s-a deschis la 28 ianuarie 2009."
+  },
+  "operator": "fi-vayla",
+  "lastVerified": "2026-10-13",
+  "lots": [
+    {
+      "id": "muurla-lahnajarvi",
+      "name": {
+        "en": "Muurla–Lahnajärvi",
+        "ro": "Muurla–Lahnajärvi"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2008-11-19"
+      },
+      "lengthKm": 23,
+      "note": {
+        "en": "The project developer reports a 23 km section. The OSM line follows one carriageway between junctions 15 and 18 and measures 24.65 km, 7% above the reported length; the sourced figure is retained.",
+        "ro": "Dezvoltatorul proiectului raportează o secțiune de 23 km. Linia OSM urmează o singură cale între nodurile 15 și 18 și măsoară 24,65 km, cu 7% peste lungimea raportată; cifra din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "yit-muurla-opening",
+        "yle-muurla-opening",
+        "osm-vt1-finland"
+      ],
+      "geometryRef": "muurla-lahnajarvi",
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2008-11-19",
+          "sourceRef": "yle-muurla-opening",
+          "note": {
+            "en": "Yle reports that the Muurla–Lahnajärvi section opened around midday on 19 November 2008.",
+            "ro": "Yle relatează că secțiunea Muurla–Lahnajärvi s-a deschis în jurul prânzului la 19 noiembrie 2008."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lahnajarvi-lohja",
+      "name": {
+        "en": "Lahnajärvi–Lohja",
+        "ro": "Lahnajärvi–Lohja"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-01-28"
+      },
+      "lengthKm": 29,
+      "note": {
+        "en": "The project developer reports a 29 km section. The OSM line follows one carriageway between junctions 18 and 22 and measures 31.19 km, 8% above the reported length; the sourced figure is retained.",
+        "ro": "Dezvoltatorul proiectului raportează o secțiune de 29 km. Linia OSM urmează o singură cale între nodurile 18 și 22 și măsoară 31,19 km, cu 8% peste lungimea raportată; cifra din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "yit-muurla-opening",
+        "yle-lohja-opening",
+        "vayla-muurla-evaluation",
+        "osm-vt1-finland"
+      ],
+      "geometryRef": "lahnajarvi-lohja",
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-01-28",
+          "sourceRef": "yle-lohja-opening",
+          "note": {
+            "en": "Yle reports that the Lohja–Lahnajärvi section opened at 21:00 on Wednesday, 28 January 2009.",
+            "ro": "Yle relatează că secțiunea Lohja–Lahnajärvi s-a deschis la ora 21:00, miercuri, 28 ianuarie 2009."
+          }
+        }
+      ]
+    }
+  ],
+  "cost": {
+    "amount": 300,
+    "currency": "EUR",
+    "scope": "works",
+    "confidence": "reported",
+    "note": "The Finnish Transport Agency's post-project evaluation reports construction costs of EUR 300 million. No price year is stated."
+  },
+  "sources": [
+    {
+      "id": "vayla-muurla-evaluation",
+      "title": "Finnish Transport Agency: Post-project evaluation of E18 Muurla–Lohja",
+      "url": "https://www.doria.fi/bitstream/handle/10024/121648/ls_2014-04_978-952-317-019-3.pdf?sequence=1",
+      "publisher": "Finnish Transport Agency",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "yit-muurla-opening",
+      "title": "YIT: E18 Muurla–Lahnajärvi section opens, and Lahnajärvi–Lohja works continue",
+      "url": "https://www.yitgroup.com/fi/lemminkainen-news-repository/2008/e18-moottoritien-turvallisuus-tutkitaan-kalliosortumien-varalta",
+      "publisher": "YIT",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "yle-muurla-opening",
+      "title": "Yle: E18 partially opens, Muurla–Lahnajärvi section",
+      "url": "https://yle.fi/a/3-6121290",
+      "publisher": "Yle",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "yle-lohja-opening",
+      "title": "Yle: E18 motorway open to traffic, Lohja–Lahnajärvi section",
+      "url": "https://yle.fi/a/3-5718280",
+      "publisher": "Yle",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-vt1-finland",
+      "title": "OpenStreetMap: Valtatie 1 route relation 9193462",
+      "url": "https://www.openstreetmap.org/relation/9193462",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}

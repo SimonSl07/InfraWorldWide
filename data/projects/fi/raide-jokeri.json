@@ -1,0 +1,86 @@
+{
+  "id": "fi-raide-jokeri",
+  "country": "fi",
+  "category": "railway",
+  "name": {
+    "en": "Raide-Jokeri light rail, line 15",
+    "ro": "Linia 15 de metrou ușor Raide-Jokeri"
+  },
+  "description": {
+    "en": "A 25 km light-rail line between Itäkeskus in Helsinki and Keilaniemi in Espoo. Construction began in June 2019 and passenger service began on 21 October 2023. The Helsinki and Espoo infrastructure outturn was reported as EUR 382 million, including a warranty-period reserve.",
+    "ro": "O linie de metrou ușor de 25 km Ã®ntre Itäkeskus, Ã®n Helsinki, și Keilaniemi, Ã®n Espoo. Construcția a Ã®nceput Ã®n iunie 2019, iar transportul de pasageri a Ã®nceput la 21 octombrie 2023. Costul final raportat pentru infrastructura din Helsinki și Espoo a fost de 382 de milioane EUR, inclusiv o rezervă pentru perioada de garanție."
+  },
+  "lastVerified": "2026-10-13",
+  "cost": {
+    "amount": 382,
+    "currency": "EUR",
+    "scope": "total",
+    "confidence": "reported",
+    "note": "The reported infrastructure outturn includes a EUR 7 million reserve for costs during the warranty period. The depot outturn of EUR 63 million and EUR 67.5 million of related works are separate. The source does not state a price year."
+  },
+  "lots": [
+    {
+      "id": "itakeskus-keilaniemi",
+      "name": {
+        "en": "Itäkeskus–Keilaniemi light-rail line",
+        "ro": "Linia de metrou ușor Itäkeskus–Keilaniemi"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-06-03",
+        "opened": "2023-10-21"
+      },
+      "lengthKm": 25,
+      "note": {
+        "en": "The OSM route geometry measures 24.24 km, about 3% below the published approximate length of 25 km. The official figure is retained.",
+        "ro": "Geometria rutei OSM măsoară 24,24 km, cu circa 3% sub lungimea publicată de aproximativ 25 km. Se păstrează cifra oficialÄƒ."
+      },
+      "sourceRefs": [
+        "espoo-raide-jokeri-facts",
+        "espoo-raide-jokeri-opening",
+        "espoo-raide-jokeri-outturn",
+        "osm-raide-jokeri-route"
+      ],
+      "geometryRef": "itakeskus-keilaniemi",
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-06-03",
+          "sourceRef": "espoo-raide-jokeri-facts"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-10-21",
+          "sourceRef": "espoo-raide-jokeri-opening"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "espoo-raide-jokeri-facts",
+      "title": "City of Espoo: Questions and answers about Raide-Jokeri",
+      "url": "https://www.espoo.fi/fi/kysymyksia-ja-vastauksia-raide-jokerista",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "espoo-raide-jokeri-opening",
+      "title": "City of Espoo: Light-rail services start on 21 October in a carnival atmosphere in Otaniemi",
+      "url": "https://www.espoo.fi/uutiset/2023/10/pikaratikkaliikenne-alkaa-2110-karnevaalitunnelmissa-espoon-otaniemessa",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "espoo-raide-jokeri-outturn",
+      "title": "City of Espoo: Raide-Jokeri came in under budget, final cost will be specified after the warranty period",
+      "url": "https://www.espoo.fi/fi/uutiset/2023/12/raide-jokeri-alitti-budjetin-lopullinen-kustannus-tarkentuu-jalkivastuuajan-jalkeen",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-raide-jokeri-route",
+      "title": "OpenStreetMap: Raide-Jokeri line 15 route relation 13919462",
+      "url": "https://www.openstreetmap.org/relation/13919462",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}
+
