@@ -1,0 +1,75 @@
+{
+  "id": "fr-a65",
+  "country": "fr",
+  "category": "highway",
+  "name": {
+    "en": "A65 Langon–Pau",
+    "ro": "Autostrada A65 Langon–Pau"
+  },
+  "description": {
+    "en": "The 150 km motorway between Langon and Pau, opened in December 2010.",
+    "ro": "Autostrada de 150 km dintre Langon și Pau, deschisă în decembrie 2010."
+  },
+  "operator": "fr-alienor",
+  "sources": [
+    {
+      "id": "ministry-a65-2010",
+      "title": "Ministère de l’Écologie: Rapport d’activité 2010 sur les concessions d’autoroutes",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/rapport_d_activite_2010_.pdf",
+      "publisher": "Ministère de l’Écologie",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "alienor-a65",
+      "title": "A’LIÉNOR: Concessionnaire de l’A65",
+      "url": "https://www.a65-alienor.com/alienor-concessionnaire-de-la65",
+      "publisher": "A’LIÉNOR",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a65",
+      "title": "OpenStreetMap: A65 route relation 446265",
+      "url": "https://www.openstreetmap.org/relation/446265",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "langon-pau",
+      "name": {
+        "en": "Langon–Pau",
+        "ro": "Langon–Pau"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-12"
+      },
+      "lengthKm": 150,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "The ministry reports 150 km. The OSM centreline cut between Langon and Pau measures about 144.7 km.",
+        "ro": "Ministerul indică 150 km. Linia centrală OSM trasată între Langon și Pau măsoară aproximativ 144,7 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2010-12",
+          "sourceRef": "ministry-a65-2010",
+          "note": {
+            "en": "The motorway entered service in December 2010.",
+            "ro": "Autostrada a fost deschisă circulației în decembrie 2010."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "ministry-a65-2010",
+        "alienor-a65",
+        "osm-a65"
+      ],
+      "geometryRef": "langon-pau"
+    }
+  ]
+}
