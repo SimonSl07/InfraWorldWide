@@ -1,0 +1,116 @@
+{
+  "id": "lv-a2-reconstructions",
+  "country": "lv",
+  "category": "highway",
+  "name": {
+    "en": "A2 pavement reconstructions, 2015–2023",
+    "ro": "Reabilitări de îmbrăcăminte rutieră pe A2, 2015–2023"
+  },
+  "description": {
+    "en": "Pavement-strengthening works on two sections of the A2 between Riga and Sigulda.",
+    "ro": "Lucrări de consolidare a îmbrăcămintei rutiere pe două sectoare ale A2 între Riga și Sigulda."
+  },
+  "operator": "lv-lvc",
+  "sources": [
+    {
+      "id": "lvc-kf-road-objects",
+      "title": "Cohesion Fund co-financed reconstruction projects on state main roads, 2014–2020 programming period",
+      "url": "https://lvceli.lv/celu-tikls/projekti/projekti-ar-es-lidzfinansejumu/kf-lidzfinansetie-valsts-galveno-autocelu-parbuves-objekti-2014-2020-gada-planosanas-perioda/",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a2-route",
+      "title": "OpenStreetMap: A2 road route relation 164336",
+      "url": "https://www.openstreetmap.org/relation/164336",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "a2-km-15-40-25-50",
+      "name": {
+        "en": "A2, km 15.40–25.50",
+        "ro": "A2, km 15,40–25,50"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2015-04-13",
+        "opened": "2015-12-09"
+      },
+      "lengthKm": 10.1,
+      "note": {
+        "en": "LVC reports 20.20 km of carriageway rebuilt over this 10.10 km chainage interval. The mapped line follows one carriageway. LVC records commissioning on 28 January 2016; the opening date here follows the reported works completion date. The published EUR 16.44 million is total eligible project cost, not a construction outturn, and is omitted.",
+        "ro": "LVC raportează 20,20 km de carosabil reabilitat pe acest interval de 10,10 km de kilometraj. Linia cartografiată urmează o singură cale de rulare. LVC indică darea în exploatare la 28 ianuarie 2016; data deschiderii de aici urmează data raportată pentru finalizarea lucrărilor. Valoarea publicată de 16,44 milioane EUR reprezintă costul eligibil total al proiectului, nu costul final al construcției, și este omisă."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2015-04-13",
+          "sourceRef": "lvc-kf-road-objects",
+          "note": {
+            "en": "LVC reports that works began on this date.",
+            "ro": "LVC raportează că lucrările au început la această dată."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2015-12-09",
+          "sourceRef": "lvc-kf-road-objects",
+          "note": {
+            "en": "LVC reports that works were completed on this date.",
+            "ro": "LVC raportează că lucrările au fost finalizate la această dată."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "lvc-kf-road-objects",
+        "osm-a2-route"
+      ],
+      "geometryRef": "a2-km-15-40-25-50"
+    },
+    {
+      "id": "a2-km-39-44-46-30",
+      "name": {
+        "en": "A2, km 39.44–46.30",
+        "ro": "A2, km 39,44–46,30"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2022-08-02",
+        "opened": "2023-09-15"
+      },
+      "lengthKm": 6.86,
+      "note": {
+        "en": "LVC reports 13.72 km of carriageway rebuilt over this 6.86 km chainage interval. The mapped line follows one carriageway. LVC records commissioning on 22 December 2023; the opening date here follows the reported works completion date. The published EUR 13.87 million is total eligible project cost, not a construction outturn, and is omitted.",
+        "ro": "LVC raportează 13,72 km de carosabil reabilitat pe acest interval de 6,86 km de kilometraj. Linia cartografiată urmează o singură cale de rulare. LVC indică darea în exploatare la 22 decembrie 2023; data deschiderii de aici urmează data raportată pentru finalizarea lucrărilor. Valoarea publicată de 13,87 milioane EUR reprezintă costul eligibil total al proiectului, nu costul final al construcției, și este omisă."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2022-08-02",
+          "sourceRef": "lvc-kf-road-objects",
+          "note": {
+            "en": "LVC reports that works began on this date.",
+            "ro": "LVC raportează că lucrările au început la această dată."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2023-09-15",
+          "sourceRef": "lvc-kf-road-objects",
+          "note": {
+            "en": "LVC reports that works were completed on this date.",
+            "ro": "LVC raportează că lucrările au fost finalizate la această dată."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "lvc-kf-road-objects",
+        "osm-a2-route"
+      ],
+      "geometryRef": "a2-km-39-44-46-30"
+    }
+  ]
+}
