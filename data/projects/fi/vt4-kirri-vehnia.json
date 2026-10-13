@@ -11,7 +11,7 @@
     "ro": "O autostradă nouă de 16 km între Kirri și Vehniä, deschisă circulației la 21 decembrie 2021. Proiectul mai amplu Vt 4 Kirri–Tikkakoski a construit și drumuri paralele și transversale, excluse din acest lot."
   },
   "operator": "fi-vayla",
-  "lastVerified": "2026-10-12",
+  "lastVerified": "2026-10-13",
   "lots": [
     {
       "id": "kirri-vehnia",
@@ -21,7 +21,8 @@
       },
       "status": "opened",
       "dates": {
-        "opened": "2021-12-21"
+        "opened": "2021-12-21",
+        "constructionStart": "2019-05"
       },
       "lengthKm": 16,
       "profile": {
@@ -39,11 +40,21 @@
       },
       "sourceRefs": [
         "vayla-opening-2021",
+        "vayla-construction-start-2021",
         "vayla-completion-2022",
         "osm-vt4-finland"
       ],
       "geometryRef": "kirri-vehnia",
       "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-05",
+          "sourceRef": "vayla-construction-start-2021",
+          "note": {
+            "en": "Väylävirasto says road construction on the wider Kirri–Tikkakoski project began in May 2019; the project included the Kirri–Vehniä motorway section.",
+            "ro": "Väylävirasto afirmă că lucrările rutiere la proiectul mai amplu Kirri–Tikkakoski au început în mai 2019; proiectul a inclus sectorul de autostradă Kirri–Vehniä."
+          }
+        },
         {
           "kind": "opened",
           "date": "2021-12-21",
@@ -62,6 +73,12 @@
       "title": "Väylävirasto: New motorway between Kirri and Vehniä opens 21 December 2021 (16 Dec 2021)",
       "url": "https://www.epressi.com/tiedotteet/logistiikka-ja-liikenne/vt-4-kirri-tikkakoski-uusi-moottoritie-valilla-kirri-vehnia-otetaan-liikenteelle-21.12.21.html",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "vayla-construction-start-2021",
+      "title": "Väylävirasto: Construction of Vt 4 Kirri–Tikkakoski is halfway complete (18 Feb 2021)",
+      "url": "https://www.epressi.com/tiedotteet/hanketiedotteet/vt-4-kirri-tikkakoski-nelostien-rakentaminen-on-puolivalissa.html",
+      "retrievedOn": "2026-10-13"
     },
     {
       "id": "vayla-completion-2022",
