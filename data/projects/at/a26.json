@@ -41,6 +41,18 @@
       "title": "OpenStreetMap: A 26 Westbrücke alignment, way 992040518",
       "url": "https://www.openstreetmap.org/way/992040518",
       "retrievedOn": "2026-10-10"
+    },
+    {
+      "id": "bmimi-a26",
+      "title": "BMIMI: A 26 Linzer Autobahn project overview",
+      "url": "https://www.bmimi.gv.at/themen/verkehr/strasse/infrastruktur/projekte/autobahnen/a26.html",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "usp-a26-etappe-2-award",
+      "title": "USP eProcurement: A 26 Linzer Autobahn Etappe 2, main works award",
+      "url": "https://ausschreibungen.usp.gv.at/at.gv.bmdw.eproc-p/public/tender-detail?backlink=L2F0Lmd2LmJtZHcuZXByb2MtcC9wdWJsaWMvdGVuZGVybGlzdD9sb2FkPXRydWU%3D&object=41a809d9-0b61-4991-86b8-74dc07973af3-66bed647-8b0f-473a-a951-a12840e7bcea&orderColumn=2&orderDir=desc&start=0",
+      "retrievedOn": "2026-10-13"
     }
   ],
   "lots": [
@@ -53,7 +65,7 @@
       "status": "opened",
       "dates": {
         "constructionStart": "2019-01",
-        "opened": "2024-10"
+        "opened": "2024-11"
       },
       "lengthKm": 0.306,
       "profile": {
@@ -67,7 +79,8 @@
       "sourceRefs": [
         "asfinag-a26",
         "asfinag-a26-map",
-        "osm-a26-donautalbruecke"
+        "osm-a26-donautalbruecke",
+        "bmimi-a26"
       ],
       "geometryRef": "donautalbruecke"
     },
@@ -80,7 +93,7 @@
       "status": "under_construction",
       "dates": {
         "constructionStart": "2026-07",
-        "expectedOpening": "2032"
+        "expectedOpening": "2032-12"
       },
       "lengthKm": 3.2,
       "profile": {
@@ -88,13 +101,14 @@
         "tunnelKm": 3.2
       },
       "note": {
-        "en": "ASFINAG lists construction from July 2026 to December 2032 for the Freinberg tunnel section, including the station junction and Waldeggstraße underpass. The route map gives the tunnel length as 3,200 m. The OSM line follows this section between the Donautalbrücke and Westbrücke and measures about 3.25 km.",
-        "ro": "ASFINAG indică lucrări din iulie 2026 până în decembrie 2032 pentru sectorul tunelului Freinberg, inclusiv nodul gării și pasajul subteran Waldeggstraße. Harta traseului indică o lungime de 3.200 m pentru tunel. Linia OSM urmează acest sector între Donautalbrücke și Westbrücke și măsoară circa 3,25 km."
+        "en": "ASFINAG lists construction from July 2026 to December 2032 for the Freinberg tunnel section, including the station junction and Waldeggstraße underpass. The route map gives the tunnel length as 3,200 m. The OSM line follows this section between the Donautalbrücke and Westbrücke and measures about 3.25 km. The USP award notice lists EUR 376,057,725.91 for the combined Stage 2 main construction works covering the Freinberg tunnel and Waldeggstraße underpass; it does not state whether the amount is net or gross.",
+        "ro": "ASFINAG indică lucrări din iulie 2026 până în decembrie 2032 pentru sectorul tunelului Freinberg, inclusiv nodul gării și pasajul subteran Waldeggstraße. Harta traseului indică o lungime de 3.200 m pentru tunel. Linia OSM urmează acest sector între Donautalbrücke și Westbrücke și măsoară circa 3,25 km. Anunțul USP privind atribuirea indică 376.057.725,91 EUR pentru lucrările principale combinate din etapa a doua, care acoperă tunelul Freinberg și pasajul subteran Waldeggstraße; nu precizează dacă suma include TVA."
       },
       "sourceRefs": [
         "asfinag-a26",
         "asfinag-a26-map",
-        "osm-a26-freinberg"
+        "osm-a26-freinberg",
+        "usp-a26-etappe-2-award"
       ],
       "geometryRef": "freinberg-tunnel-section"
     },
@@ -106,7 +120,7 @@
       },
       "status": "planned",
       "dates": {
-        "expectedOpening": "2035"
+        "expectedOpening": "2035-12"
       },
       "lengthKm": 0.49,
       "profile": {
