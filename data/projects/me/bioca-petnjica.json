@@ -1,0 +1,67 @@
+{
+  "id": "me-bioca-petnjica",
+  "country": "me",
+  "category": "highway",
+  "name": {
+    "en": "Bioča–Petnjica road reconstruction",
+    "ro": "Reabilitarea drumului Bioča–Petnjica"
+  },
+  "description": {
+    "en": "Reconstruction of about 9 km of the regional road between Bioča and Petnjica.",
+    "ro": "Reabilitarea a aproximativ 9 km din drumul regional dintre Bioča și Petnjica."
+  },
+  "operator": "me-uzs",
+  "lastVerified": "2026-10-13",
+  "sources": [
+    {
+      "id": "bioca-petnjica-uzs",
+      "title": "Transport Administration of Montenegro: Bioča–Petnjica road reconstruction",
+      "url": "https://www.gov.me/cyr/clanak/rekonstrukcija-puta-bioca-petnjica",
+      "publisher": "Transport Administration of Montenegro",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "bioca-petnjica-start",
+      "title": "Bemax: reconstruction of the Bioča–Petnjica road has begun",
+      "url": "https://bemax.me/en/vijesti/the-reconstruction-of-the-road-bioca-petnjica-has-begun/",
+      "publisher": "Bemax",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "bioca-petnjica-osm",
+      "title": "OpenStreetMap contributors: Bioča–Petnjica road ways 1121652581, 973278766, 973278765, 973278764, 973278763, 149504331 and 30609315",
+      "url": "https://www.openstreetmap.org/way/1121652581",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "bioca-petnjica",
+      "name": {
+        "en": "Bioča–Petnjica",
+        "ro": "Bioča–Petnjica"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-08-13"
+      },
+      "lengthKm": 9,
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "contractors": [
+        {
+          "name": "Bemax",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "bioca-petnjica",
+      "sourceRefs": [
+        "bioca-petnjica-uzs",
+        "bioca-petnjica-start",
+        "bioca-petnjica-osm"
+      ]
+    }
+  ]
+}
