@@ -1,0 +1,75 @@
+{
+  "id": "fr-a355",
+  "country": "fr",
+  "category": "highway",
+  "name": {
+    "en": "A355 Strasbourg West Bypass",
+    "ro": "A355 Centura de vest a Strasbourgului"
+  },
+  "description": {
+    "en": "The 24 km motorway bypass west of Strasbourg, opened in December 2021.",
+    "ro": "Centura de 24 km la vest de Strasbourg, deschisă în decembrie 2021."
+  },
+  "operator": "fr-arcos",
+  "sources": [
+    {
+      "id": "ministry-a355-2021",
+      "title": "Ministère de la Transition écologique: Rapport d’activité 2021 sur les concessions d’autoroutes",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/Rapport%20d%27activite%CC%81%202021.pdf",
+      "publisher": "Ministère de la Transition écologique",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "vinci-a355-opening",
+      "title": "VINCI Autoroutes: A355, contournement Ouest de Strasbourg, mise en service",
+      "url": "https://www.vinci-autoroutes.com/fr/actualites/services-et-aires/a355-contournement-ouest-de-strasbourg-mise-en-service/",
+      "publisher": "VINCI Autoroutes",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a355",
+      "title": "OpenStreetMap: A355 route relation 12153907",
+      "url": "https://www.openstreetmap.org/relation/12153907",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "strasbourg-west-bypass",
+      "name": {
+        "en": "Strasbourg West Bypass",
+        "ro": "Centura de vest a Strasbourgului"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-12-17"
+      },
+      "lengthKm": 24,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "The ministry reports 24 km. The OSM centreline cut between the Duttlenheim and Vendenheim junctions measures about 25.0 km.",
+        "ro": "Ministerul indică 24 km. Linia centrală OSM trasată între nodurile Duttlenheim și Vendenheim măsoară aproximativ 25,0 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2021-12-17",
+          "sourceRef": "ministry-a355-2021",
+          "note": {
+            "en": "The motorway entered service on 17 December 2021.",
+            "ro": "Autostrada a fost deschisă circulației la 17 decembrie 2021."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "ministry-a355-2021",
+        "vinci-a355-opening",
+        "osm-a355"
+      ],
+      "geometryRef": "strasbourg-west-bypass"
+    }
+  ]
+}

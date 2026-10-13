@@ -1,0 +1,88 @@
+{
+  "id": "fr-a69",
+  "country": "fr",
+  "category": "highway",
+  "name": {
+    "en": "A69 Castres–Verfeil",
+    "ro": "Autostrada A69 Castres–Verfeil"
+  },
+  "description": {
+    "en": "The 54 km motorway link between Castres and Verfeil, mostly on a new alignment.",
+    "ro": "Legătura de 54 km dintre Castres și Verfeil, construită în mare parte pe un traseu nou."
+  },
+  "operator": "fr-atosca",
+  "sources": [
+    {
+      "id": "ministry-a69-length",
+      "title": "Ministère de la Transition écologique: Rapport d’activité 2023 sur les concessions d’autoroutes, A69 Castres–Verfeil",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/Rapport%202023%20sur%20les%20concessions%20d%27autoroutes.pdf",
+      "publisher": "Ministère de la Transition écologique",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "ministry-a69-start",
+      "title": "Ministère de la Transition écologique: A69 entre Castres et Toulouse, l’État va faire appel de la décision du tribunal administratif de Toulouse",
+      "url": "https://www.ecologie.gouv.fr/presse/a69-entre-castres-toulouse-letat-va-faire-appel-decision-tribunal-administratif-toulouse",
+      "publisher": "Ministère de la Transition écologique",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "ministry-a69-restart",
+      "title": "Ministère de la Transition écologique: A69 entre Castres et Toulouse, la cour administrative d’appel rétablit les autorisations environnementales",
+      "url": "https://www.ecologie.gouv.fr/presse/a69-entre-castres-toulouse-cour-administrative-dappel-retablit-autorisations",
+      "publisher": "Ministère de la Transition écologique",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a69",
+      "title": "OpenStreetMap: A69 route relation 15745759",
+      "url": "https://www.openstreetmap.org/relation/15745759",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "atosca-a69-opening-2026",
+      "title": "ConstructionBTP: A69, un dernier survol avant sa mise en service",
+      "url": "https://www.constructionbtp.com/infrastructures/article/2026/10/12/156425/a69-dernier-survol-avant-mise-service",
+      "publisher": "ConstructionBTP, reporting with ATOSCA",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "castres-verfeil",
+      "name": {
+        "en": "Castres–Verfeil",
+        "ro": "Castres–Verfeil"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023-03"
+      },
+      "lengthKm": 54,
+      "note": {
+        "en": "The ministry reports about 54 km. The OSM centreline cut from the Verfeil interchange to Castres measures about 52.7 km. On 12 October 2026, Atosca said the motorway could open in the first week of November after safety checks.",
+        "ro": "Ministerul indică aproximativ 54 km. Linia centrală OSM trasată între nodul de la Verfeil și Castres măsoară aproximativ 52,7 km. La 12 octombrie 2026, Atosca a spus că autostrada ar putea fi deschisă în prima săptămână din noiembrie, după controalele de siguranță."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023-03",
+          "sourceRef": "ministry-a69-start",
+          "note": {
+            "en": "The ministry reports that works started in March 2023.",
+            "ro": "Ministerul indică începerea lucrărilor în martie 2023."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "ministry-a69-length",
+        "ministry-a69-start",
+        "ministry-a69-restart",
+        "osm-a69",
+        "atosca-a69-opening-2026"
+      ],
+      "geometryRef": "castres-verfeil"
+    }
+  ]
+}

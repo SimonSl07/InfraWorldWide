@@ -1,0 +1,75 @@
+{
+  "id": "fr-a79",
+  "country": "fr",
+  "category": "highway",
+  "name": {
+    "en": "A79 Sazeret–Digoin",
+    "ro": "Autostrada A79 Sazeret–Digoin"
+  },
+  "description": {
+    "en": "The motorway-standard upgrade of the former N79 between Sazeret and Digoin.",
+    "ro": "Modernizarea la standard de autostradă a fostei RN79 între Sazeret și Digoin."
+  },
+  "operator": "fr-aliae",
+  "sources": [
+    {
+      "id": "ministry-a79-2022",
+      "title": "Ministère de la Transition écologique: Rapport d’activité 2022 sur les concessions d’autoroutes",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/Rapport%20d%27activit%C3%A9%202022.pdf",
+      "publisher": "Ministère de la Transition écologique",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "eiffage-a79-opening",
+      "title": "Eiffage: A79, ouverture de la première autoroute à péage en flux libre en France",
+      "url": "https://www.eiffage.com/medias/actualites/a79--ouverture-de-la-premiere-autoroute-a-peage-en-flux-libre-en-france",
+      "publisher": "Eiffage",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a79",
+      "title": "OpenStreetMap: A79 route relation 14473447",
+      "url": "https://www.openstreetmap.org/relation/14473447",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "sazeret-digoin",
+      "name": {
+        "en": "Sazeret–Digoin",
+        "ro": "Sazeret–Digoin"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-11-04"
+      },
+      "lengthKm": 88.4,
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "The ministry reports 88.4 km. The OSM centreline cut from Sazeret to Digoin measures about 89.8 km.",
+        "ro": "Ministerul indică 88,4 km. Linia centrală OSM trasată de la Sazeret la Digoin măsoară aproximativ 89,8 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2022-11-04",
+          "sourceRef": "ministry-a79-2022",
+          "note": {
+            "en": "The motorway entered service.",
+            "ro": "Autostrada a fost deschisă circulației."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "ministry-a79-2022",
+        "eiffage-a79-opening",
+        "osm-a79"
+      ],
+      "geometryRef": "sazeret-digoin"
+    }
+  ]
+}
