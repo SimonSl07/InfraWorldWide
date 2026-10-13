@@ -1,0 +1,88 @@
+{
+  "id": "lv-salaca-bridge",
+  "country": "lv",
+  "category": "bridge",
+  "name": {
+    "en": "Salaca bridge reconstruction",
+    "ro": "Reconstrucția podului peste Salaca"
+  },
+  "description": {
+    "en": "Replacement of the A1 bridge over the Salaca in Salacgrīva for civilian and military use.",
+    "ro": "Înlocuirea podului A1 peste Salaca din Salacgrīva pentru uz civil și militar."
+  },
+  "operator": "lv-lvc",
+  "sources": [
+    {
+      "id": "lvc-salacamilmob",
+      "title": "Reconstruction of the bridge over Salaca for enhanced dual use",
+      "url": "https://lvceli.lv/celu-tikls/projekti/areja-finansejuma-projekti/salacamilmob/",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "lvc-salaca-a1-km-91-10",
+      "title": "Construction of the temporary bridge over the Salaca in Salacgrīva",
+      "url": "https://lvceli.lv/aktuali/fotoreportaza-ka-notiek-pagaidu-tilta-par-salacu-buvnieciba-salacgriva/",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-salaca-bridge",
+      "title": "OpenStreetMap: A1 bridge over the Salaca",
+      "url": "https://www.openstreetmap.org/way/25660789",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "a1-salaca-bridge",
+      "name": {
+        "en": "A1 Salaca bridge",
+        "ro": "Podul Salaca de pe A1"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2024-06-10",
+        "opened": "2025-11-12"
+      },
+      "lengthKm": 0.198,
+      "contractors": [
+        {
+          "name": "PS NB & TILTS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "LVC reports that the new bridge opened to traffic in both directions on 12 November 2025. The wider project period runs through 30 April 2026, and completion of all work was planned for December 2025. The mapped OpenStreetMap bridge way measures 0.198 km; LVC identifies the site as A1 km 91.10. No as-built bridge length is reported.",
+        "ro": "LVC raportează că noul pod a fost deschis traficului în ambele sensuri la 12 noiembrie 2025. Perioada proiectului se extinde până la 30 aprilie 2026, iar finalizarea tuturor lucrărilor era planificată pentru decembrie 2025. Podul din OpenStreetMap măsoară 0,198 km; LVC identifică locul la km 91,10 pe A1. Nu este raportată lungimea construită a podului."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2024-06-10",
+          "sourceRef": "lvc-salaca-a1-km-91-10",
+          "note": {
+            "en": "LVC lists 10 June 2024 as the construction start date.",
+            "ro": "LVC indică 10 iunie 2024 ca dată de începere a construcției."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-11-12",
+          "sourceRef": "lvc-salacamilmob",
+          "note": {
+            "en": "LVC reports the new bridge opened to traffic in both directions.",
+            "ro": "LVC raportează că noul pod a fost deschis traficului în ambele sensuri."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "lvc-salacamilmob",
+        "lvc-salaca-a1-km-91-10",
+        "osm-salaca-bridge"
+      ],
+      "geometryRef": "a1-salaca-bridge"
+    }
+  ]
+}
