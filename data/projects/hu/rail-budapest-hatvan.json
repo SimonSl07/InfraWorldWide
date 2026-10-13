@@ -1,0 +1,88 @@
+{
+  "id": "hu-rail-budapest-hatvan",
+  "country": "hu",
+  "category": "railway",
+  "name": {
+    "en": "Budapest–Hatvan railway modernisation",
+    "ro": "Modernizarea căii ferate Budapesta–Hatvan"
+  },
+  "description": {
+    "en": "Modernisation of the 53 km Rákos–Hatvan section of MÁV line 80, including track, station, signalling and ETCS works. The upgraded line was handed over in October 2022.",
+    "ro": "Modernizarea secțiunii de 53 km Rákos–Hatvan a liniei MÁV 80, cu lucrări la cale, stații, semnalizare și ETCS. Linia modernizată a fost predată în octombrie 2022."
+  },
+  "lastVerified": "2026-10-13",
+  "operator": "hu-mav",
+  "lots": [
+    {
+      "id": "rakos-hatvan",
+      "name": {
+        "en": "Rákos–Hatvan",
+        "ro": "Rákos–Hatvan"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2017",
+        "opened": "2022-10-07"
+      },
+      "lengthKm": 53,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2017",
+          "note": {
+            "en": "MÁV says work began in winter 2017.",
+            "ro": "MÁV precizează că lucrările au început în iarna anului 2017."
+          },
+          "sourceRef": "mav-budapest-hatvan-handover"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-10-07",
+          "sourceRef": "mav-budapest-hatvan-handover"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "STRABAG Vasútépítő Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Belfry PE Kft.",
+          "role": "builder"
+        },
+        {
+          "name": "Swietelsky Vasúttechnika Kft.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "MÁV describes the completed investment as 53 km. Its section figures are 25.2 km from Rákos to Gödöllő and 27.3 km from Gödöllő to Hatvan, totalling 52.5 km before rounding. The OpenStreetMap geometry follows the line 80 route relation from the nearest track node at Rákos to the nearest track node at Hatvan. The drawn route measures 58.32 km, about 10% longer than the rounded official project length; station-centre snap distances are excluded. Contractors are listed by MÁV for the two track construction lots. Separate third-track and signalling contracts are not included in this geometry or contractor list.",
+        "ro": "MÁV descrie investiția finalizată ca având 53 km. Valorile pe secțiuni sunt 25,2 km de la Rákos la Gödöllő și 27,3 km de la Gödöllő la Hatvan, în total 52,5 km înainte de rotunjire. Geometria OpenStreetMap urmează relația traseului liniei 80, de la cel mai apropiat nod al căii ferate din Rákos la cel mai apropiat nod din Hatvan. Traseul desenat măsoară 58,32 km, cu aproximativ 10% mai mult decât lungimea oficială rotunjită; distanțele de la centrele stațiilor până la cale nu sunt incluse. Constructorii sunt enumerați de MÁV pentru cele două loturi de construcție a căii. Contractele separate pentru a treia cale și pentru semnalizare nu sunt incluse în această geometrie sau în lista constructorilor."
+      },
+      "sourceRefs": [
+        "mav-budapest-hatvan-handover",
+        "osm-rail-line-80"
+      ],
+      "geometryRef": "rakos-hatvan"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mav-budapest-hatvan-handover",
+      "title": "MÁV: Modernised Budapest–Hatvan railway handed over, section lengths and contracts",
+      "url": "https://www.mavcsoport.hu/mav-csoport/atadtak-korszerusitett-budapest-hatvan-vasutvonal",
+      "publisher": "MÁV Zrt.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-rail-line-80",
+      "title": "OpenStreetMap contributors: relation 77344, MÁV line 80 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/77344",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}
