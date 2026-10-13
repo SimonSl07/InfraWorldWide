@@ -1,0 +1,119 @@
+{
+  "id": "nl-a16-rotterdam",
+  "country": "nl",
+  "category": "highway",
+  "name": {
+    "en": "A16 Rotterdam",
+    "ro": "Autostrada A16 Rotterdam"
+  },
+  "description": {
+    "en": "A new motorway link from the A13 at Rotterdam The Hague Airport to the A16 at Terbregseplein.",
+    "ro": "O legătură nouă de autostradă între A13, lângă aeroportul Rotterdam The Hague, și A16, la Terbregseplein."
+  },
+  "operator": "nl-rws",
+  "sources": [
+    {
+      "id": "rws-a16-opened",
+      "title": "Rijkswaterstaat: Full A16 Rotterdam opened to traffic",
+      "url": "https://www.rijkswaterstaat.nl/nieuws/archief/2025/10/volledige-snelweg-a16-rotterdam-geopend-voor-verkeer",
+      "publisher": "Rijkswaterstaat",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "rws-a16-tunnel",
+      "title": "Rijkswaterstaat: Net 0 on the A16 at Rotterdam",
+      "url": "https://www.rijkswaterstaat.nl/en/news/archive/2025/08/net-0-on-the-a16-at-rotterdam",
+      "publisher": "Rijkswaterstaat",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "mirt-2023-a16",
+      "title": "Ministerie van Infrastructuur en Waterstaat: MIRT Overview 2023, A16 Rotterdam",
+      "url": "https://www.mirtoverzicht.nl/site/binaries/site-content/collections/documents/2023/09/20/mirt-2023/Klikbare%2Ben%2Btoegankelijke%2Bversie%2Bvan%2Bhet%2BMIRT%2BOverzicht%2B2023.pdf",
+      "publisher": "Ministerie van Infrastructuur en Waterstaat",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a16",
+      "title": "OpenStreetMap: A16 route relation 13149543",
+      "url": "https://www.openstreetmap.org/relation/13149543",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "a13-terbregseplein",
+      "name": {
+        "en": "A13 Rotterdam The Hague Airport–A16 Terbregseplein",
+        "ro": "A13, aeroportul Rotterdam The Hague–A16 Terbregseplein"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018",
+        "constructionStart": "2019",
+        "opened": "2025-10-27"
+      },
+      "lengthKm": 11,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 2.2
+      },
+      "contractors": [
+        {
+          "name": "De Groene Boog",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Rijkswaterstaat reports an 11 km route. The OSM line follows one carriageway of route relation 13149543 and measures 10.19 km.",
+        "ro": "Rijkswaterstaat indică o lungime de 11 km. Linia OSM urmărește o cale de rulare din relația de rută 13149543 și măsoară 10.19 km."
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018",
+          "sourceRef": "mirt-2023-a16",
+          "note": {
+            "en": "The MIRT overview states that the project was awarded in 2018.",
+            "ro": "MIRT precizează că proiectul a fost atribuit în 2018."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019",
+          "sourceRef": "mirt-2023-a16",
+          "note": {
+            "en": "The MIRT overview states that construction started in 2019.",
+            "ro": "MIRT precizează că lucrările au început în 2019."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2025-10-06",
+          "sourceRef": "rws-a16-opened",
+          "note": {
+            "en": "The carriageway toward Dordrecht and Breda opened to traffic.",
+            "ro": "Calea de rulare spre Dordrecht și Breda a fost deschisă circulației."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-10-27",
+          "sourceRef": "rws-a16-opened",
+          "note": {
+            "en": "The carriageway toward Delft and The Hague opened, completing the full connection.",
+            "ro": "Calea de rulare spre Delft și Haga a fost deschisă, completând legătura."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "rws-a16-opened",
+        "rws-a16-tunnel",
+        "mirt-2023-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "a13-terbregseplein"
+    }
+  ]
+}
