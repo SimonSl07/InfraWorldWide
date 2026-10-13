@@ -1,0 +1,69 @@
+{
+  "id": "se-norrbotniabanan",
+  "country": "se",
+  "category": "railway",
+  "name": {
+    "en": "Norrbotniabanan (North Bothnia Line)",
+    "ro": "Norrbotniabanan (linia feroviară din nordul Golfului Botnic)"
+  },
+  "description": {
+    "en": "A new coastal railway planned between Umeå and Luleå. This record covers the mapped Umeå–Skellefteå section. Trafikverket targets initial freight traffic on Umeå–Dåva in 2026 and opening the Umeå–Skellefteå section in 2036. The Skellefteå–Luleå section remains in planning and is not included in this lot.",
+    "ro": "O cale ferată nouă de coastă, planificată între Umeå și Luleå. Această înregistrare acoperă secțiunea cartografiată Umeå–Skellefteå. Trafikverket vizează începerea transportului inițial de marfă pe Umeå–Dåva în 2026 și deschiderea secțiunii Umeå–Skellefteå în 2036. Secțiunea Skellefteå–Luleå este încă în faza de planificare și nu este inclusă în acest tronson."
+  },
+  "operator": "se-trafikverket",
+  "sources": [
+    {
+      "id": "trafikverket-norrbotniabanan",
+      "title": "Trafikverket: Norrbotniabanan",
+      "url": "https://www.trafikverket.se/vara-projekt/projekt-som-stracker-sig-over-flera-lan/norrbotniabanan/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "trafikverket-norrbotniabanan-umea",
+      "title": "Trafikverket: Norrbotniabanan in Umeå",
+      "url": "https://www.trafikverket.se/vara-projekt/projekt-som-stracker-sig-over-flera-lan/norrbotniabanan/norrbotniabanan-umea/",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "trafikverket-norrbotniabanan-phases-2025",
+      "title": "Trafikverket: Norrbotniabanan supplier day, phase lengths and schedules",
+      "url": "https://bransch.trafikverket.se/contentassets/f540ae8752e641ed96f6be39d1fe1edc/leverantorsdag-norrbotniabanan-2025-11-05-presentation-entreprenader.pdf",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-norrbotniabanan",
+      "title": "OpenStreetMap contributors: Norrbotniabanan railway route relation (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/18698010",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "umea-skelleftea",
+      "name": {
+        "en": "Umeå–Skellefteå",
+        "ro": "Umeå–Skellefteå"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2036"
+      },
+      "lengthKm": 129.68,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. The OSM route relation is continuous from Umeå to Skellefteå and measures about 129.68 km. Trafikverket gives the overall Norrbotniabanan length as 270 km from Umeå to Luleå. Its current Umeå page gives Umeå–Dåva as 12 km, while a 2025 supplier presentation rounds it to 1 Swedish mil (10 km); the same presentation gives Dåva–Skellefteå as 12 mil (120 km). These are rounded phase figures, so the mapped OSM line length is retained. Trafikverket targets initial freight traffic on Umeå–Dåva in 2026, reports construction underway on Dåva–Skellefteå in 2026, and targets traffic on the full Umeå–Skellefteå section in 2036. The Skellefteå–Luleå section is excluded because it remains in planning.",
+        "ro": "Lungime măsurată pe baza geometriei OpenStreetMap. Relația OSM este continuă între Umeå și Skellefteå și măsoară aproximativ 129,68 km. Trafikverket indică o lungime totală de 270 km pentru Norrbotniabanan, între Umeå și Luleå. Pagina actuală pentru Umeå indică 12 km pentru Umeå–Dåva, iar o prezentare pentru furnizori din 2025 rotunjește lungimea la o milă suedeză (10 km); aceeași prezentare indică 12 mile (120 km) pentru Dåva–Skellefteå. Aceste lungimi pe faze sunt rotunjite, de aceea se păstrează lungimea măsurată pe geometria OSM. Trafikverket vizează transportul inițial de marfă pe Umeå–Dåva în 2026, raportează lucrări în desfășurare pe Dåva–Skellefteå în 2026 și vizează începerea circulației pe întreaga secțiune Umeå–Skellefteå în 2036. Secțiunea Skellefteå–Luleå este exclusă deoarece rămâne în faza de planificare."
+      },
+      "sourceRefs": [
+        "trafikverket-norrbotniabanan",
+        "trafikverket-norrbotniabanan-umea",
+        "trafikverket-norrbotniabanan-phases-2025",
+        "osm-norrbotniabanan"
+      ],
+      "geometryRef": "umea-skelleftea"
+    }
+  ]
+}
