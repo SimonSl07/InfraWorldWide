@@ -1,0 +1,64 @@
+{
+  "id": "pt-beira-alta-modernisation",
+  "country": "pt",
+  "category": "railway",
+  "name": {
+    "en": "Linha da Beira Alta modernisation",
+    "ro": "Modernizarea liniei Linha da Beira Alta"
+  },
+  "description": {
+    "en": "Modernisation of the Linha da Beira Alta between Pampilhosa and Vilar Formoso, including track renewal, realignments, station upgrades, level-crossing removal, signalling and telecommunications. The line reopened throughout on 28 September 2025.",
+    "ro": "Modernizarea liniei Linha da Beira Alta între Pampilhosa și Vilar Formoso, cu reînnoirea căii, variante, modernizarea stațiilor, eliminarea trecerilor la nivel, semnalizare și telecomunicații. Linia a fost redeschisă integral la 28 septembrie 2025."
+  },
+  "operator": "pt-infraestruturas-de-portugal",
+  "lots": [
+    {
+      "id": "pampilhosa-vilar-formoso",
+      "name": {
+        "en": "Pampilhosa–Vilar Formoso",
+        "ro": "Pampilhosa–Vilar Formoso"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-09-28"
+      },
+      "lengthKm": 190,
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "note": {
+        "en": "Infraestruturas de Portugal states that passenger services resumed over the full Pampilhosa–Vilar Formoso route on 28 September 2025 after the modernisation works. Its 2025 reopening notice gives the intervention as approximately 190 km. A separate project summary describes an approximately 202 km scope; this record uses the latest opening notice’s stated 190 km. The €547.7 million figure published for the wider Aveiro–Vilar Formoso EU project covers project and works across a broader scope and is not recorded as this lot’s cost. Geometry follows the OpenStreetMap route relation for the line and measures about 208.8 km, while the agency states the modernisation intervention as about 190 km; the source scopes differ, so the sourced length is retained.",
+        "ro": "Infraestruturas de Portugal indică reluarea serviciilor de călători pe întregul traseu Pampilhosa–Vilar Formoso la 28 septembrie 2025, după lucrările de modernizare. Comunicatul de redeschidere din 2025 indică o intervenție de aproximativ 190 km. O altă prezentare a proiectului menționează un domeniu de aproximativ 202 km; această înregistrare folosește cei 190 km publicați în comunicatul mai recent. Valoarea de 547,7 milioane EUR publicată pentru proiectul european mai amplu Aveiro–Vilar Formoso acoperă proiectarea și lucrările pe un domeniu mai larg și nu este înregistrată drept cost al acestui lot. Geometria urmează relația OpenStreetMap a liniei și măsoară aproximativ 208,8 km, în timp ce agenția indică aproximativ 190 km pentru intervenția de modernizare; domeniile surselor diferă, astfel că lungimea citată este păstrată."
+      },
+      "sourceRefs": [
+        "ip-beira-alta-reopened",
+        "ip-beira-alta-funding",
+        "osm-beira-alta"
+      ],
+      "geometryRef": "pampilhosa-vilar-formoso"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ip-beira-alta-reopened",
+      "title": "Infraestruturas de Portugal: Linha da Beira Alta reabre totalmente modernizada e com novas ligações estratégicas (24 September 2025)",
+      "url": "https://www.infraestruturasdeportugal.pt/index.php/pt-pt/linha-da-beira-alta-reabre-totalmente-modernizada-e-com-novas-ligacoes-estrategicas",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Infraestruturas de Portugal"
+    },
+    {
+      "id": "ip-beira-alta-funding",
+      "title": "Infraestruturas de Portugal: Ligação Ferroviária Aveiro–Vilar Formoso no Corredor Atlântico, Projeto de Execução e Obra",
+      "url": "https://www.infraestruturasdeportugal.pt/pt-pt/ligacao-ferroviaria-aveiro-vilar-formoso-no-corredor-atlantico-projeto-de-execucao-e-obra",
+      "retrievedOn": "2026-10-13",
+      "publisher": "Infraestruturas de Portugal"
+    },
+    {
+      "id": "osm-beira-alta",
+      "title": "OpenStreetMap contributors: Linha da Beira Alta route relation (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2906482",
+      "retrievedOn": "2026-10-13",
+      "publisher": "OpenStreetMap contributors"
+    }
+  ]
+}
