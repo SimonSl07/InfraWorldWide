@@ -7,8 +7,8 @@
     "ro": "Axa a treia de dezvoltare, ramura nordică (Velenje – Slovenj Gradec)"
   },
   "description": {
-    "en": "The north arm of the Third Development Axis is planned as a new expressway link between Velenje and Slovenj Gradec. DARS lists the Velenje South–Slovenj Gradec South section at 17.5 km and under construction.",
-    "ro": "Ramura nordică a Axei a treia de dezvoltare este planificată ca drum expres nou între Velenje și Slovenj Gradec. DARS indică 17,5 km pentru secțiunea Velenje Sud–Slovenj Gradec Sud și o încadrează ca fiind în construcție."
+    "en": "The north arm of the Third Development Axis is a new expressway link between Velenje and Slovenj Gradec. DARS lists the Velenje South–Slovenj Gradec South section at 17.5 km and under construction.",
+    "ro": "Ramura nordică a Axei a treia de dezvoltare este o legătură nouă de drum expres între Velenje și Slovenj Gradec. DARS indică 17,5 km pentru secțiunea Velenje Sud–Slovenj Gradec Sud și o încadrează ca fiind în construcție."
   },
   "operator": "si-dars",
   "lots": [
@@ -21,13 +21,14 @@
       "status": "under_construction",
       "lengthKm": 17.5,
       "note": {
-        "en": "OpenStreetMap currently maps only a 2.85 km H8 construction fragment, not the complete 17.5 km route. The drawn fragment is incomplete. DARS reported that the contractors declared construction complete on packages B (Škalsko jezero) and H (Konovo) on 29 December 2025; inspections, defect correction and testing of the Konovo tunnel equipment followed. DARS lists EUR 70.3 million as the combined contract value of those two packages only, not the full Velenje–Slovenj Gradec section. VAT basis is not stated, so no structured cost is recorded.",
-        "ro": "OpenStreetMap cartografiază în prezent doar un fragment H8 în construcție de 2,85 km, nu traseul complet de 17,5 km. Fragmentul desenat este incomplet. DARS a raportat că executanții au declarat finalizate lucrările la pachetele B (Škalsko jezero) și H (Konovo) la 29 decembrie 2025; au urmat inspecțiile, remedierea deficiențelor și testarea echipamentului din tunelul Konovo. DARS indică 70,3 milioane EUR drept valoare cumulată a contractelor numai pentru aceste două pachete, nu pentru întregul sector Velenje–Slovenj Gradec. Sursa nu precizează regimul TVA, deci nu se înregistrează un cost structurat."
+        "en": "OpenStreetMap currently maps only a 2.85 km H8 construction fragment, not the complete 17.5 km route. The drawn fragment is incomplete. DARS's 2025 annual report says contractors declared packages B (Škalsko jezero) and H (Konovo) complete on 29 December 2025, after which inspections, defect correction and Konovo tunnel equipment testing followed. On 12 March 2026, the government reported that DARS had completed construction works on both packages. The full Velenje–Slovenj Gradec section remains under construction. DARS lists EUR 70.3 million as the combined contract value of packages B and H only. The VAT basis is unstated, so no structured cost is recorded.",
+        "ro": "OpenStreetMap cartografiază în prezent doar un fragment H8 în construcție de 2,85 km, nu traseul complet de 17,5 km. Fragmentul desenat este incomplet. Raportul anual DARS pe 2025 arată că executanții au declarat finalizate pachetele B (Škalsko jezero) și H (Konovo) la 29 decembrie 2025, după care au urmat inspecțiile, remedierea deficiențelor și testarea echipamentului din tunelul Konovo. La 12 martie 2026, guvernul a raportat că DARS a finalizat lucrările de construcție la ambele pachete. Întreaga secțiune Velenje–Slovenj Gradec rămâne în construcție. DARS indică 70,3 milioane EUR drept valoare cumulată a contractelor numai pentru pachetele B și H. Regimul TVA nu este precizat, deci nu se înregistrează niciun cost structurat."
       },
       "sourceRefs": [
         "dars-third-axis",
         "osm-h8-fragments",
-        "dars-annual-report-2025"
+        "dars-annual-report-2025",
+        "gov-si-third-axis-march-2026"
       ],
       "geometryRef": "velenje-slovenj-gradec"
     }
@@ -51,6 +52,13 @@
       "url": "https://www.dars.si/Content/doc/letna-porocila/LP%20DARS%202025.pdf",
       "publisher": "DARS d.d.",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "gov-si-third-axis-march-2026",
+      "title": "Government of Slovenia: Third Development Axis North progress, including completion of packages B and H",
+      "url": "https://www.gov.si/novice/2026-03-20-sprejet-dpn-slovenj-gradecdravograd-korak-k-skladnemu-razvoju-in-boljsi-povezanosti-drzave/",
+      "publisher": "Government of Slovenia",
+      "retrievedOn": "2026-10-13"
     }
   ]
 }
