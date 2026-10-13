@@ -1,0 +1,94 @@
+{
+  "id": "hu-rail-budapest-kelebia",
+  "country": "hu",
+  "category": "railway",
+  "name": {
+    "en": "Budapest–Belgrade railway: Soroksár–Kelebia",
+    "ro": "Calea ferată Budapesta–Belgrad: Soroksár–Kelebia"
+  },
+  "description": {
+    "en": "Reconstruction, electrification and double-tracking of the Hungarian section of MÁV line 150 between Soroksár and Kelebia. Freight traffic began in February 2026; passenger operation was still undergoing ETCS testing in March 2026.",
+    "ro": "Reconstrucția, electrificarea și dublarea liniei MÁV 150 pe secțiunea maghiară dintre Soroksár și Kelebia. Traficul de marfă a început în februarie 2026; în martie 2026, sistemul ETCS era încă testat înaintea începerii serviciului de călători."
+  },
+  "lastVerified": "2026-10-13",
+  "operator": "hu-mav",
+  "lots": [
+    {
+      "id": "soroksar-kelebia",
+      "name": {
+        "en": "Soroksár–Kelebia",
+        "ro": "Soroksár–Kelebia"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2021-10-15",
+        "opened": "2026-02-27"
+      },
+      "lengthKm": 152,
+      "profile": {
+        "works": "reconstruction",
+        "speedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2026-02-27",
+          "note": {
+            "en": "Freight services began on the rebuilt Hungarian section. MÁV reported on 30 March that passenger services were still awaiting successful ETCS tests and independent safety certification.",
+            "ro": "Traficul de marfă a început pe secțiunea maghiară reconstruită. La 30 martie, MÁV a raportat că serviciile de călători așteptau încă finalizarea cu succes a testelor ETCS și certificarea independentă de siguranță."
+          },
+          "sourceRef": "mav-bube-passenger-testing"
+        }
+      ],
+      "note": {
+        "en": "MÁV's 2017 procurement notice gives 152 km for the Soroksár–Kelebia design-and-build section. The 2021 MÁV notice records the start of construction preparation on 15 October 2021 and describes the more than 150 km project as a double-track, 160 km/h reconstruction. The OpenStreetMap route relation follows one track from Soroksár to the Kelebia border and measures about 149.1 km, about 1.9% shorter than the procurement length. No structured cost is recorded because the available project sources do not establish a comparable construction-cost figure.",
+        "ro": "Anunțul de achiziție MÁV din 2017 indică 152 km pentru secțiunea de proiectare și execuție Soroksár–Kelebia. Comunicatul MÁV din 2021 consemnează începutul pregătirilor de construcție la 15 octombrie 2021 și descrie proiectul de peste 150 km ca reconstrucție cu două fire, pentru 160 km/h. Relația OpenStreetMap urmărește o cale de la Soroksár la frontiera Kelebia și măsoară aproximativ 149,1 km, cu circa 1,9% mai puțin decât lungimea din achiziție. Nu este înregistrat un cost structurat, deoarece sursele de proiect disponibile nu stabilesc o valoare comparabilă a costului de construcție."
+      },
+      "sourceRefs": [
+        "mav-bube-procurement",
+        "mav-bube-construction-start",
+        "mav-bube-passenger-testing",
+        "crec-bube-freight-opening",
+        "osm-rail-line-150"
+      ],
+      "geometryRef": "soroksar-kelebia"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mav-bube-procurement",
+      "title": "MÁV: Soroksár–Kelebia 152 km design-and-build procurement notice",
+      "url": "https://www.mavcsoport.hu/bbproject/kozlemenyeink",
+      "publisher": "MÁV Zrt.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "mav-bube-construction-start",
+      "title": "MÁV: Budapest–Belgrade railway modernisation, construction preparation begins",
+      "url": "https://www.mavcsoport.hu/bbproject/budapest-belgrad-vasutvonal-korszerusitese-alapkoletetel",
+      "publisher": "MÁV Zrt.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "mav-bube-passenger-testing",
+      "title": "MÁV: Hungarian section freight service and passenger ETCS testing status",
+      "url": "https://www.mavcsoport.hu/mav-csoport/nincs-politikai-celdatum-szemelyforgalom-indulasa-kizarolag-sikeres-etcs-uzembehelyezes",
+      "publisher": "MÁV-csoport",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "crec-bube-freight-opening",
+      "title": "CREC: Budapest–Belgrade Railway (Hungarian Section) Officially Launches Freight Services",
+      "url": "https://www.crecg.com/zgztywz/cs11/10210606/2026030915235058802/index.html",
+      "publisher": "China Railway Group Limited",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-rail-line-150",
+      "title": "OpenStreetMap contributors: MÁV railway line 150, Budapest-Ferencváros–Kelebia (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/240977",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}
