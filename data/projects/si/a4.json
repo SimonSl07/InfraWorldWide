@@ -7,8 +7,8 @@
     "ro": "Autostrada A4 (Slivnica – Gruškovje)"
   },
   "description": {
-    "en": "A4 links the Slivnica interchange with the Gruškovje border crossing. This record covers the Slivnica–Draženci section, which DARS says opened in July 2009.",
-    "ro": "A4 leagă nodul Slivnica de punctul de frontieră Gruškovje. Această înregistrare acoperă secțiunea Slivnica–Draženci, deschisă în iulie 2009 potrivit DARS."
+    "en": "This record covers the Slivnica–Draženci and Draženci–Gruškovje motorway sections. DARS reports that the first opened in July 2009 and the second in stages in 2017 and 2018.",
+    "ro": "Această înregistrare acoperă secțiunile de autostradă Slivnica–Draženci și Draženci–Gruškovje. DARS consemnează că prima a fost deschisă în iulie 2009, iar a doua în etape, în 2017 și 2018."
   },
   "operator": "si-dars",
   "lots": [
@@ -32,6 +32,49 @@
         "osm-si-1660417"
       ],
       "geometryRef": "slivnica-drazenci"
+    },
+    {
+      "id": "drazenci-gruskovje",
+      "name": {
+        "en": "Draženci–Gruškovje",
+        "ro": "Draženci–Gruškovje"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2015-07",
+        "opened": "2018-11-30"
+      },
+      "lengthKm": 13.03,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2017-11-22",
+          "sourceRef": "dars-a4-drazenci-gruskovje",
+          "note": {
+            "en": "The first stage, Draženci–Podlehnik, opened to traffic.",
+            "ro": "Prima etapă, Draženci–Podlehnik, a fost deschisă traficului."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2018-11-30",
+          "sourceRef": "dars-a4-drazenci-gruskovje",
+          "note": {
+            "en": "The remaining Draženci–Gruškovje section opened to traffic.",
+            "ro": "Restul secțiunii Draženci–Gruškovje a fost deschis traficului."
+          }
+        }
+      ],
+      "note": {
+        "en": "DARS reports a 13.03 km section and staged openings on 22 November 2017 and 30 November 2018. The OpenStreetMap motorway centerline from the existing Draženci lot endpoint to the Croatian border via Podlehnik measures about 14.43 km, 10.8% longer than the reported length. DARS’s investment estimate includes the parallel regional road and deviations, so no cost is recorded.",
+        "ro": "DARS indică o secțiune de 13,03 km și deschideri în etape la 22 noiembrie 2017 și 30 noiembrie 2018. Linia mediană a autostrăzii din OpenStreetMap, de la capătul lotului existent din Draženci până la frontiera cu Croația prin Podlehnik, măsoară aproximativ 14,43 km, cu 10,8% mai mult decât lungimea publicată. Estimarea investiției DARS include drumul regional paralel și devierile, deci nu este înregistrat niciun cost."
+      },
+      "sourceRefs": [
+        "dars-a4-drazenci-gruskovje",
+        "osm-si-1660417",
+        "osm-a4-way-474237015"
+      ],
+      "geometryRef": "drazenci-gruskovje"
     }
   ],
   "sources": [
@@ -46,6 +89,20 @@
       "title": "OpenStreetMap contributors: A4 route relation 1660417 (ODbL)",
       "url": "https://www.openstreetmap.org/relation/1660417",
       "retrievedOn": "2026-10-11"
+    },
+    {
+      "id": "dars-a4-drazenci-gruskovje",
+      "title": "DARS: A4 Draženci–Gruškovje section construction history",
+      "url": "https://www.dars.si/Zgodovina_gradnje/A4_Slivnica_-_Gruskovje?zid=177",
+      "publisher": "DARS d.d.",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-a4-way-474237015",
+      "title": "OpenStreetMap contributors: A4 motorway connector way 474237015 (ODbL)",
+      "url": "https://www.openstreetmap.org/way/474237015",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
     }
   ]
 }

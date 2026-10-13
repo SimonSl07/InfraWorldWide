@@ -1,0 +1,91 @@
+{
+  "id": "pl-a8",
+  "country": "pl",
+  "category": "highway",
+  "name": {
+    "en": "A8 Wrocław Motorway Bypass",
+    "ro": "Centura autostrăzii A8 din Wrocław"
+  },
+  "description": {
+    "en": "The 22.7 km motorway bypass of Wrocław connects the A4 at Wrocław Południe with the S8 at Wrocław Psie Pole. GDDKiA records construction in 2008–2011. The route includes the Rędziński Bridge and its approach viaducts.",
+    "ro": "Centura de autostradă a orașului Wrocław, cu lungimea de 22,7 km, leagă A4 la Wrocław Południe de S8 la Wrocław Psie Pole. GDDKiA înregistrează construcția în perioada 2008–2011. Traseul include podul Rędziński și viaductele de acces."
+  },
+  "operator": "pl-gddkia",
+  "lastVerified": "2026-10-12",
+  "lots": [
+    {
+      "id": "wroclaw-bypass",
+      "name": {
+        "en": "Wrocław Południe (A4) – Wrocław Psie Pole (S8)",
+        "ro": "Wrocław Południe (A4) – Wrocław Psie Pole (S8)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2011"
+      },
+      "lengthKm": 22.7,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "sourceRef": "gddkia-a8-opened",
+          "note": {
+            "en": "GDDKiA dates construction of the bypass to 2008–2011.",
+            "ro": "GDDKiA datează construcția centurii în perioada 2008–2011."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2011",
+          "sourceRef": "gddkia-a8-opened",
+          "note": {
+            "en": "GDDKiA reported the bypass open to traffic in September 2011.",
+            "ro": "GDDKiA a anunțat deschiderea centurii pentru trafic în septembrie 2011."
+          }
+        }
+      ],
+      "note": {
+        "en": "GDDKiA reports 22.7 km in operation. The project also included connectors and a short S8 section, which are excluded here. The Rędziński Bridge with approach viaducts is 1.742 km long. The drawn line measures 21.56 km; the official length is retained.",
+        "ro": "GDDKiA raportează 22,7 km în exploatare. Proiectul a inclus și drumuri de legătură și un scurt tronson S8, excluse aici. Podul Rędziński cu viaductele de acces are 1,742 km. Linia desenată măsoară 21,56 km; lungimea oficială este păstrată."
+      },
+      "sourceRefs": [
+        "gddkia-a8-status",
+        "gddkia-a8-opened",
+        "osm-a8-relation",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "wroclaw-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gddkia-a8-status",
+      "title": "GDDKiA: Autostrady - stan realizacji",
+      "url": "https://www.gov.pl/web/gddkia/autostrady---stan-realizacji2",
+      "publisher": "General Directorate for National Roads and Motorways (GDDKiA)",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "gddkia-a8-opened",
+      "title": "GDDKiA: Autostradowa Obwodnica Wrocławia otwarta do ruchu",
+      "url": "https://www.archiwum.gddkia.gov.pl/pl/a/9754/autostradowa-obwodnica-wroclawia-otwarta-do-ruchu",
+      "publisher": "General Directorate for National Roads and Motorways (GDDKiA)",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "osm-a8-relation",
+      "title": "OpenStreetMap relation 2107913: Autostrada A8",
+      "url": "https://www.openstreetmap.org/relation/2107913",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap copyright and license",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-12"
+    }
+  ]
+}
