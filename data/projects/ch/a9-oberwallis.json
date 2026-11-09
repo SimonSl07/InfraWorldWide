@@ -1,0 +1,324 @@
+{
+  "id": "ch-a9-oberwallis",
+  "country": "ch",
+  "category": "highway",
+  "name": {
+    "en": "A9 Upper Valais (Sierre–Brig)",
+    "ro": "A9 Oberwallis (Sierre–Brig)"
+  },
+  "description": {
+    "en": "The last gap of the A9 motorway between Sierre (Siders) and Brig in Upper Valais. The Canton of Valais (DNSB) is the client for the Federal Roads Office (FEDRO); the road passes to the federal government once complete. The Federal Audit Office (EFK) puts the Sierre East–Visp East stretch at 31.8 km and CHF 5.15 billion (as at 2024). The A9 has been continuous from Gampel/Steg to Brig since 27 October 2025. Open: Leuk/Susten East–Gampel/Steg West (2016), Gampel/Steg–Visp West (2025), the Visp bypass (2025) and Visp East–Brig (2002). Under construction: the Riedberg tunnel and the last 8.5 km, Sierre East–Leuk/Susten East (Pfyn), mostly in tunnel and covered cutting under a protected forest. The lots follow the section names on a9-info.ch; Sion–Sierre and the western A9 are not covered. Lot lengths are the sourced figure where one exists and otherwise measured from OpenStreetMap geometry.",
+    "ro": "Ultimul tronson lipsă al autostrăzii A9 între Sierre (Siders) și Brig, în Oberwallis. Cantonul Valais (DNSB) este beneficiarul pentru Oficiul Federal pentru Drumuri (FEDRO); drumul trece în proprietatea Confederației după finalizare. Controlul Federal al Finanțelor (EFK) estimează tronsonul Sierre Est–Visp Est la 31,8 km și 5,15 miliarde CHF (situația 2024). A9 este continuă de la Gampel/Steg la Brig din 27 octombrie 2025. Deschise: Leuk/Susten Est–Gampel/Steg Vest (2016), Gampel/Steg–Visp Vest (2025), ocolitoarea Visp (2025) și Visp Est–Brig (2002). În construcție: tunelul Riedberg și ultimii 8,5 km, Sierre Est–Leuk/Susten Est (Pfyn), în mare parte în tunel și tranșee acoperită sub o pădure protejată. Loturile urmează denumirile de secțiuni de pe a9-info.ch; Sion–Sierre și A9 vestică nu sunt incluse. Lungimile loturilor sunt cifra din sursă acolo unde există, altfel măsurate din geometria OpenStreetMap."
+  },
+  "operator": "ch-canton-valais-dnsb",
+  "lots": [
+    {
+      "id": "siders-ost-leuk-susten-ost",
+      "name": {
+        "en": "Sierre East – Leuk/Susten East (Pfyn)",
+        "ro": "Sierre Est – Leuk/Susten Est (Pfyn)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2037"
+      },
+      "lengthKm": 8.5,
+      "cost": {
+        "estimated": {
+          "amount": 1477,
+          "currency": "CHF",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Remaining cost of the last section as at December 2024 (EFK). Inflation incurred to date is included in accrued costs; future inflation is not in the planning."
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The federal government finances 96% of the A9 network completion in Valais through the NAF fund (EFK audit 25703). The Canton of Valais (DNSB) is the client (Bauherr).",
+            "ro": "Statul federal finanțează 96% din finalizarea rețelei A9 în Valais prin fondul NAF (auditul EFK 25703). Cantonul Valais (DNSB) este beneficiarul (Bauherr)."
+          }
+        }
+      ],
+      "note": {
+        "en": "The last 8.5 km of the A9 in Valais, mostly underground through the Pfynwald protected area. Main structures on a9-info.ch: covered cutting Pfyn 4.2 km (works from 2026), Susten tunnel 2.1 km (from 2028) and a 500 m open stretch (start 2030). The EFK reports the approved plan (final approval by the department UVEK since December 2024), tenders and execution from 2026, and commissioning of the whole route planned for 2037. Early works so far are the construction track and the relocation of the T9 cantonal road to the north bank of the Rhone. Drawn length 8.45 km against the sourced 8.5 km.",
+        "ro": "Ultimii 8,5 km ai A9 în Valais, în mare parte subterani, prin zona protejată Pfynwald. Structuri principale pe a9-info.ch: tranșeea acoperită Pfyn de 4,2 km (lucrări din 2026), tunelul Susten de 2,1 km (din 2028) și un sector deschis de 500 m (start 2030). EFK raportează planul aprobat (aprobare definitivă a departamentului UVEK din decembrie 2024), licitații și execuție din 2026 și punerea în funcțiune a întregului traseu planificată pentru 2037. Lucrările preliminare de până acum sunt pista de șantier și mutarea drumului cantonal T9 pe malul nordic al Ronului. Lungime desenată 8,45 km față de 8,5 km din sursă."
+      },
+      "sourceRefs": [
+        "efk-25703",
+        "a9-info-pfyn"
+      ],
+      "geometryRef": "siders-ost-leuk-susten-ost"
+    },
+    {
+      "id": "leuk-susten-ost-gampel-steg-west",
+      "name": {
+        "en": "Leuk/Susten East – Gampel/Steg West",
+        "ro": "Leuk/Susten Est – Gampel/Steg Vest"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-11-25"
+      },
+      "lengthKm": 7.04,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2016-11-25",
+          "note": {
+            "en": "Opening ceremony with Federal Councillor Doris Leuthard; open day on 4 September 2016.",
+            "ro": "Ceremonie de deschidere cu consiliera federală Doris Leuthard; zi a porților deschise la 4 septembrie 2016."
+          },
+          "sourceRef": "a9-info-leuk-gampel"
+        }
+      ],
+      "note": {
+        "en": "Includes the Turtmann covered cutting (1,350 m, built 2004–2015). The a9-info.ch page gives 7.04 for the opened stretch, written as \"7.04 m\", while its three parts (Susten/Leuk East to the covered cutting 1,905 m, the covered cutting 1,350 m, the covered cutting to the Gampel/Steg West half interchange 2,725 m) add to 5.98 km and the drawn geometry measures 5.59 km. The sourced figure is kept.",
+        "ro": "Include tranșeea acoperită Turtmann (1.350 m, construită în 2004–2015). Pagina a9-info.ch indică 7,04 pentru sectorul deschis, scris \"7.04 m\", în timp ce cele trei părți ale sale (Susten/Leuk Est până la tranșeea acoperită 1.905 m, tranșeea acoperită 1.350 m, de la tranșeea acoperită la semi-nodul Gampel/Steg Vest 2.725 m) însumează 5,98 km, iar geometria desenată măsoară 5,59 km. Cifra din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "a9-info-leuk-gampel"
+      ],
+      "geometryRef": "leuk-susten-ost-gampel-steg-west"
+    },
+    {
+      "id": "riedberg",
+      "name": {
+        "en": "Riedberg tunnel (Gampel/Steg West – Gampel/Steg)",
+        "ro": "Tunelul Riedberg (Gampel/Steg Vest – Gampel/Steg)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 1.96,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The federal government finances 96% of the A9 network completion in Valais through the NAF fund (EFK audit 25703). The Canton of Valais (DNSB) is the client (Bauherr).",
+            "ro": "Statul federal finanțează 96% din finalizarea rețelei A9 în Valais prin fondul NAF (auditul EFK 25703). Cantonul Valais (DNSB) este beneficiarul (Bauherr)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Twin tubes, north 445 m and south 483 m. Both tubes have been fully excavated since spring 2021 and the inner concrete lining was complete in spring 2025; the portal structures were under construction and the safety and operating equipment follows. A 1,417 m exploration and drainage gallery is meant to slow the Riedberg slope slide; it was 92% excavated on 5 November 2026. a9-info.ch says the 2027 handover \"should\" be possible; the EFK expects only the Pfyn stretch to remain in work from 2028. Length measured from OpenStreetMap geometry (the tunnel and its approach roads between the 2016 section and the east end of the construction ways).",
+        "ro": "Tuburi gemene, nord 445 m și sud 483 m. Ambele tuburi sunt complet excavate din primăvara 2021, iar placarea interioară din beton era terminată în primăvara 2025; structurile portalurilor erau în construcție, urmând echipamentele de siguranță și exploatare. O galerie de explorare și drenaj de 1.417 m urmărește încetinirea alunecării versantului Riedberg; la 5 noiembrie 2026 era excavată în proporție de 92%. a9-info.ch spune că predarea în 2027 \"ar trebui\" să fie posibilă; EFK se așteaptă ca din 2028 să rămână în lucru doar sectorul Pfyn. Lungime măsurată din geometria OpenStreetMap (tunelul și drumurile de acces dintre secțiunea din 2016 și capătul estic al segmentelor în construcție)."
+      },
+      "sourceRefs": [
+        "a9-info-riedberg",
+        "a9-info-riedberg-gallery",
+        "efk-25703"
+      ],
+      "geometryRef": "riedberg"
+    },
+    {
+      "id": "gampel-steg-visp-west",
+      "name": {
+        "en": "Gampel/Steg – Visp West",
+        "ro": "Gampel/Steg – Visp Vest"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-10-27"
+      },
+      "lengthKm": 7.6,
+      "cost": {
+        "actual": {
+          "amount": 420,
+          "currency": "CHF",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Total cost of the section, \"rund 420 Millionen Franken\", as stated at the opening; price year not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2025-10-27",
+          "note": {
+            "en": "Section released to traffic on the afternoon of 27 October 2025; the A9 is then continuous from Gampel/Steg to Brig.",
+            "ro": "Secțiune dată în trafic în după-amiaza zilei de 27 octombrie 2025; A9 devine continuă de la Gampel/Steg la Brig."
+          },
+          "sourceRef": "a9-info-opening-2025"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The federal government finances 96% of the A9 network completion in Valais through the NAF fund (EFK audit 25703). The Canton of Valais (DNSB) is the client (Bauherr).",
+            "ro": "Statul federal finanțează 96% din finalizarea rețelei A9 în Valais prin fondul NAF (auditul EFK 25703). Cantonul Valais (DNSB) este beneficiarul (Bauherr)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Contains the Raron covered cutting (GERA, 1.46 km, of which 1,000 m is true tunnel; construction start 5 March 2018; CHF 163 million total cost), the 2 km embankment from the St. German underpass to Visp West alongside the SBB and BLS Lötschberg base tunnel lines, and the full Raron interchange with the refurbished Grossi Brigga Gesch bridge. a9-info.ch splits the stretch into 2.5 km Gampel/Steg to GERA, GERA, and 3.2 km St. German to Visp West. Drawn length 8.56 km against the sourced 7.6 km, because the drawing starts at the east end of the Riedberg construction ways.",
+        "ro": "Conține tranșeea acoperită Raron (GERA, 1,46 km, din care 1.000 m tunel propriu-zis; început construcție 5 martie 2018; cost total 163 milioane CHF), rambleul de 2 km de la pasajul St. German la Visp Vest, paralel cu liniile SBB și BLS ale tunelului de bază Lötschberg, și nodul complet Raron cu podul reabilitat Grossi Brigga Gesch. a9-info.ch împarte sectorul în 2,5 km Gampel/Steg–GERA, GERA și 3,2 km St. German–Visp Vest. Lungime desenată 8,56 km față de 7,6 km din sursă, deoarece desenul începe la capătul estic al segmentelor în construcție Riedberg."
+      },
+      "sourceRefs": [
+        "a9-info-opening-2025",
+        "a9-info-gampel-visp"
+      ],
+      "geometryRef": "gampel-steg-visp-west"
+    },
+    {
+      "id": "visp-west-visp-ost",
+      "name": {
+        "en": "Visp West – Visp East (Visp southern bypass)",
+        "ro": "Visp Vest – Visp Est (ocolitoarea sudică Visp)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-06-24"
+      },
+      "lengthKm": 7.67,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2018-04-13",
+          "note": {
+            "en": "Eyholz tunnel opened (north tube 4,230 m, south tube 4,231 m).",
+            "ro": "Tunelul Eyholz deschis (tubul nord 4.230 m, tubul sud 4.231 m)."
+          },
+          "sourceRef": "a9-info-visp-visp"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2022-09-23",
+          "note": {
+            "en": "First partial commissioning of the bypass: exit of the north tube of the Visp tunnel. The north Staldbach bridge also opened on this date.",
+            "ro": "Prima punere parțială în funcțiune a ocolitoarei: ieșirea tubului nord al tunelului Visp. Podul nord Staldbach s-a deschis la aceeași dată."
+          },
+          "sourceRef": "a9-info-visp-visp"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-06-24",
+          "note": {
+            "en": "Second partial commissioning: entry into the south tube of the Visp tunnel. The south Staldbach bridge opened on 25 June 2025.",
+            "ro": "A doua punere parțială în funcțiune: intrarea în tubul sud al tunelului Visp. Podul sud Staldbach s-a deschis la 25 iunie 2025."
+          },
+          "sourceRef": "a9-info-visp-visp"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The federal government finances 96% of the A9 network completion in Valais through the NAF fund (EFK audit 25703). The Canton of Valais (DNSB) is the client (Bauherr).",
+            "ro": "Statul federal finanțează 96% din finalizarea rețelei A9 în Valais prin fondul NAF (auditul EFK 25703). Cantonul Valais (DNSB) este beneficiarul (Bauherr)."
+          }
+        }
+      ],
+      "note": {
+        "en": "The Visp southern bypass, including the Eyholz tunnel (about 4.2 km, the longest motorway tunnel in Valais), the Staldbach twin bridge (2 x 220 m) and the Visp West full interchange. a9-info.ch dates the definitive commissioning of the Visp West interchange for use in all directions to 27 October 2025. Length measured from OpenStreetMap geometry.",
+        "ro": "Ocolitoarea sudică Visp, cu tunelul Eyholz (circa 4,2 km, cel mai lung tunel de autostradă din Valais), podul geamăn Staldbach (2 x 220 m) și nodul complet Visp Vest. a9-info.ch datează punerea definitivă în funcțiune a nodului Visp Vest, pentru toate direcțiile, la 27 octombrie 2025. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "a9-info-visp-visp",
+        "a9-info-home"
+      ],
+      "geometryRef": "visp-west-visp-ost"
+    },
+    {
+      "id": "visp-ost-brig",
+      "name": {
+        "en": "Visp East – Brig",
+        "ro": "Visp Est – Brig"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2002"
+      },
+      "lengthKm": 2.92,
+      "profile": {
+        "tunnelKm": 1.05
+      },
+      "note": {
+        "en": "Includes the Gamsen tunnel, two tubes of 1,050 m each, dated 2002 on a9-info.ch as the first motorway tunnel in Upper Valais. The page lists the open stretches from the Visp East three-quarter interchange to the tunnel and from the tunnel to the Bildacker roundabout without dates of their own. Length measured from OpenStreetMap geometry; it lies outside the EFK's 31.8 km Sierre East–Visp East figure.",
+        "ro": "Include tunelul Gamsen, două tuburi de câte 1.050 m, datat 2002 pe a9-info.ch drept primul tunel de autostradă din Oberwallis. Pagina listează sectoarele deschise de la semi-nodul Visp Est până la tunel și de la tunel până la giratoriul Bildacker fără date proprii. Lungime măsurată din geometria OpenStreetMap; se află în afara cifrei EFK de 31,8 km Sierre Est–Visp Est."
+      },
+      "sourceRefs": [
+        "a9-info-visp-brig"
+      ],
+      "geometryRef": "visp-ost-brig"
+    }
+  ],
+  "cost": {
+    "amount": 5150,
+    "currency": "CHF",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "DNSB budget for the 31.8 km Sierre East–Visp East stretch as at 2024 (EFK audit 25703); the EFK elsewhere gives about CHF 5.135 billion at the end of 2024 for completing the A9. Not broken out per lot."
+  },
+  "sources": [
+    {
+      "id": "a9-info-home",
+      "title": "DNSB Valais: Autobahn A9 im Oberwallis (a9-info.ch)",
+      "url": "https://a9-info.ch/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-pfyn",
+      "title": "DNSB Valais: Baustellen Pfyn, die letzten 8.5 km A9-Autobahn",
+      "url": "https://a9-info.ch/baustellen-pfyn/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-leuk-gampel",
+      "title": "DNSB Valais: Autobahnabschnitt Leuk – Gampel",
+      "url": "https://a9-info.ch/leuk-gampel/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-riedberg",
+      "title": "DNSB Valais: Tunnel Riedberg, Baufortschritt",
+      "url": "https://a9-info.ch/baustelle-riedberg/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-riedberg-gallery",
+      "title": "DNSB Valais: Erkundungs- und Entwässerungsstollen Riedberg",
+      "url": "https://a9-info.ch/stollen-riedberg/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-gampel-visp",
+      "title": "DNSB Valais: Autobahnabschnitt Gampel – Visp West",
+      "url": "https://a9-info.ch/gampel-visp/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-opening-2025",
+      "title": "DNSB Valais: A9 im Oberwallis, Offizielle Eröffnung des Abschnitts Gampel/Steg – Visp West (28 Oct 2025)",
+      "url": "https://a9-info.ch/a9-im-oberwallis-offizielle-eroeffnung-des-abschnitts-gampel-steg-visp-west/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-visp-visp",
+      "title": "DNSB Valais: Autobahnabschnitt Visp West – Visp Ost",
+      "url": "https://a9-info.ch/visp-visp/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "a9-info-visp-brig",
+      "title": "DNSB Valais: Autobahnabschnitt Visp Ost – Brig",
+      "url": "https://a9-info.ch/brig-visp/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "efk-25703",
+      "title": "Eidgenössische Finanzkontrolle: Fertigstellung der A9, Prüfung 25703 (5 Dec 2025)",
+      "url": "https://www.efk.admin.ch/wp-content/uploads/publikationen/berichte/sicherheit_und_umwelt/verkehr_und_umwelt/25703/25703be-astra-fertigstellung-der-a9.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "OpenStreetMap contributors: A9 ways between Sierre and Brig (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

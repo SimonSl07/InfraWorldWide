@@ -1,0 +1,85 @@
+{
+  "id": "ch-ceva-leman-express",
+  "country": "ch",
+  "category": "railway",
+  "name": {
+    "en": "CEVA Léman Express (Cornavin – Eaux-Vives – Annemasse), Swiss section",
+    "ro": "CEVA Léman Express (Cornavin – Eaux-Vives – Annemasse), secțiunea elvețiană"
+  },
+  "description": {
+    "en": "Double-track, electrified rail link between Geneva Cornavin, Eaux-Vives and Annemasse in France, used by the Léman Express regional network. The whole line is 16.1 km; this file maps only the Swiss part, from Cornavin to the French border at Moillesulaz. It includes the 1,628 m Champel tunnel. The official inauguration was on 12 December 2019 and passenger service began on 15 December 2019. The Swiss side cost CHF 1,567 million at 2008 prices.",
+    "ro": "Legătură feroviară electrificată, cu două linii, între Geneva Cornavin, Eaux-Vives și Annemasse (Franța), folosită de rețeaua regională Léman Express. Linia are 16,1 km în total; acest fișier cartografiază doar partea elvețiană, de la Cornavin la granița cu Franța de la Moillesulaz. Include tunelul Champel de 1.628 m. Inaugurarea oficială a avut loc la 12 decembrie 2019, iar serviciul de călători a început la 15 decembrie 2019. Partea elvețiană a costat 1.567 milioane CHF la prețurile din 2008."
+  },
+  "operator": "ch-sbb",
+  "lots": [
+    {
+      "id": "cornavin-border",
+      "name": {
+        "en": "Cornavin – Eaux-Vives – Moillesulaz (Swiss part)",
+        "ro": "Cornavin – Eaux-Vives – Moillesulaz (partea elvețiană)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-11-15",
+        "opened": "2019-12-15"
+      },
+      "lengthKm": 14.4,
+      "cost": {
+        "actual": {
+          "amount": 1567,
+          "currency": "CHF",
+          "year": 2008,
+          "scope": "total",
+          "confidence": "reported"
+        }
+      },
+      "profile": {
+        "maxSpeedKmh": 100,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2011-11-15",
+          "sourceRef": "wikipedia-de-ceva"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-12-15",
+          "sourceRef": "wikipedia-de-ceva"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, Cornavin to the border near Moillesulaz). German Wikipedia places the border at km 74.39 and Cornavin at km 60.26, about 14.1 km. The first official sod was turned on 15 November 2011 at Lancy-Pont-Rouge. The cost of CHF 1,567 million is the total on the Swiss side at 2008 prices, from a secondary source; the French side is not mapped. Service started on 15 December 2019, after the inauguration on 12 December.",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap (o linie, de la Cornavin la graniță lângă Moillesulaz). Wikipedia în germană plasează granița la km 74,39 și Cornavin la km 60,26, adică circa 14,1 km. Prima lopată oficială a fost dată la 15 noiembrie 2011 la Lancy-Pont-Rouge. Costul de 1.567 milioane CHF este totalul pe partea elvețiană la prețurile din 2008, dintr-o sursă secundară; partea franceză nu este cartografiată. Serviciul a început la 15 decembrie 2019, după inaugurarea din 12 decembrie."
+      },
+      "sourceRefs": [
+        "wikipedia-de-ceva",
+        "wikipedia-en-leman-express",
+        "osm-ch"
+      ],
+      "geometryRef": "cornavin-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-de-ceva",
+      "title": "Wikipedia (de): Bahnstrecke Cornavin–Eaux-Vives–Annemasse",
+      "url": "https://de.wikipedia.org/wiki/Bahnstrecke_Cornavin–Eaux-Vives–Annemasse",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-leman-express",
+      "title": "Wikipedia (en): Léman Express",
+      "url": "https://en.wikipedia.org/wiki/L%C3%A9man_Express",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-ch",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
