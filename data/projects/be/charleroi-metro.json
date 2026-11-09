@@ -1,0 +1,111 @@
+{
+  "id": "be-charleroi-metro",
+  "country": "be",
+  "city": "be-charleroi",
+  "category": "railway",
+  "name": {
+    "en": "Charleroi Light Metro",
+    "ro": "Metroul ușor din Charleroi"
+  },
+  "description": {
+    "en": "Light metro of Charleroi, run by TEC Charleroi on 1,000 mm gauge track: a central loop with branches to Anderlues, Gosselies, Gilly and Châtelineau. The first section opened on 21 June 1976 and building stopped in the 1990s with part of the network unused. Works that restarted in 2007 closed the central loop and opened Gilly–Soleilmont on 27 February 2012 and the Gosselies branch in June 2013. Since 22 June 2013 four lines (M1 to M4) serve the network, 33.3 km of track and 59.5 km summed over the lines. Only the post-2007 works are modelled here as lots.",
+    "ro": "Metroul ușor din Charleroi, operat de TEC Charleroi pe cale cu ecartament de 1.000 mm: o buclă centrală cu ramuri spre Anderlues, Gosselies, Gilly și Châtelineau. Prima secțiune a fost deschisă la 21 iunie 1976, iar construcția s-a oprit în anii 1990, cu o parte a rețelei neutilizată. Lucrările reluate în 2007 au închis bucla centrală și au deschis Gilly–Soleilmont la 27 februarie 2012 și ramura Gosselies în iunie 2013. Din 22 iunie 2013, patru linii (M1–M4) deservesc rețeaua, cu 33,3 km de cale și 59,5 km însumați pe linii. Doar lucrările de după 2007 sunt modelate aici ca loturi."
+  },
+  "operator": "be-tec",
+  "lots": [
+    {
+      "id": "loop-parc-gare-centrale",
+      "name": {
+        "en": "Central loop: Parc – Gare Centrale",
+        "ro": "Bucla centrală: Parc – Gare Centrale"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-02-27"
+      },
+      "lengthKm": 2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Closed the central loop with 2,000 m of street-running tramway on a separate right of way between Parc and the station then called Sud. The original underground and elevated alignment was dropped. The Tirou stop opened on this section. Lines M1, M2 and M4 started on 27 February 2012 and M3 on 3 September 2012. The stop then called Sud was not served from 1 July 2021 during works at the station forecourt. The loop reopened on 3 January 2023, when Sud became Gare Centrale and a new Sambre stop opened. Fr Wikipedia gives a cost of €24.5 million for the works, citing a 2007 press article, so it is not recorded as an outturn. The drawn OpenStreetMap line of the M3 route between the two stops measures 1.33 km, shorter than the stated 2,000 m. The stated length is kept.",
+        "ro": "A închis bucla centrală cu 2.000 m de tramvai pe cale proprie, între Parc și stația numită atunci Sud. Traseul inițial, subteran și suspendat, a fost abandonat. Stația Tirou a fost deschisă pe această secțiune. Liniile M1, M2 și M4 au pornit la 27 februarie 2012, iar M3 la 3 septembrie 2012. Stația numită atunci Sud nu a mai fost deservită din 1 iulie 2021, din cauza lucrărilor din fața gării. Bucla a fost redeschisă la 3 ianuarie 2023, când Sud a devenit Gare Centrale și a fost deschisă o stație nouă, Sambre. Wikipedia în franceză indică un cost de 24,5 milioane de euro pentru lucrări, citând un articol de presă din 2007, deci nu este înregistrat ca cost final. Linia desenată din OpenStreetMap pentru ruta M3 între cele două stații măsoară 1,33 km, mai puțin decât cei 2.000 m indicați. Lungimea indicată a fost păstrată."
+      },
+      "geometryRef": "loop-parc-gare-centrale",
+      "sourceRefs": [
+        "wikipedia-fr-mlc",
+        "openstreetmap-charleroi"
+      ]
+    },
+    {
+      "id": "gilly-soleilmont",
+      "name": {
+        "en": "Gilly branch extension: Gilly – Soleilmont",
+        "ro": "Extinderea ramurii Gilly: Gilly – Soleilmont"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009",
+        "opened": "2012-02-27"
+      },
+      "lengthKm": 1.8,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Completed the Gilly branch, opened to Gilly on 28 August 1992, with the Marabout, Sart-Culpart and Soleilmont stations. The section between Gilly and Sart-Culpart was finished and the one from Sart-Culpart to Soleilmont built new, with works under way from 2009. Fr Wikipedia gives the whole branch, from Waterloo to Soleilmont, as 4 km with 6 stations (7 counting Waterloo).",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. A completat ramura Gilly, deschisă până la Gilly la 28 august 1992, cu stațiile Marabout, Sart-Culpart și Soleilmont. Secțiunea dintre Gilly și Sart-Culpart a fost terminată, iar cea de la Sart-Culpart la Soleilmont construită nou, cu lucrări în curs din 2009. Wikipedia în franceză indică pentru întreaga ramură, de la Waterloo la Soleilmont, 4 km cu 6 stații (7 cu Waterloo)."
+      },
+      "geometryRef": "gilly-soleilmont",
+      "sourceRefs": [
+        "wikipedia-fr-mlc",
+        "openstreetmap-charleroi"
+      ]
+    },
+    {
+      "id": "gosselies-piges-faubourg-de-bruxelles",
+      "name": {
+        "en": "Gosselies branch: Piges – Faubourg de Bruxelles",
+        "ro": "Ramura Gosselies: Piges – Faubourg de Bruxelles"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-03-25",
+        "opened": "2013-06-22"
+      },
+      "lengthKm": 7.2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Surface tramway on its own right of way along the Chaussée de Bruxelles, north from Piges to the Faubourg de Bruxelles terminus. A track from Piges to the Jumet depot had existed since the 1980s but was used only for depot runs. Works began on 25 March 2009 and the line was commissioned on 22 June 2013 as line M3. Fr Wikipedia gives 22 June 2013 in the history text, 21 June 2013 in the branch section and 30 June 2013 in the works table. Its cost for the branch is €49.5 million, citing a 2007 press article, so it is not recorded as an outturn. Fr Wikipedia gives the whole Gosselies branch from Palais as 12.3 km, which includes the older underground part.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Tramvai de suprafață pe cale proprie, de-a lungul Chaussée de Bruxelles, spre nord de la Piges până la terminalul Faubourg de Bruxelles. O cale de la Piges la depoul Jumet exista din anii 1980, dar era folosită doar pentru deplasări la depou. Lucrările au început la 25 martie 2009, iar linia a fost pusă în funcțiune la 22 iunie 2013 ca linia M3. Wikipedia în franceză indică 22 iunie 2013 în textul istoric, 21 iunie 2013 în secțiunea ramurii și 30 iunie 2013 în tabelul lucrărilor. Costul indicat pentru ramură este de 49,5 milioane de euro, citând un articol de presă din 2007, deci nu este înregistrat ca cost final. Wikipedia în franceză indică pentru întreaga ramură Gosselies, de la Palais, 12,3 km, ceea ce include partea subterană mai veche."
+      },
+      "geometryRef": "gosselies-piges-faubourg-de-bruxelles",
+      "sourceRefs": [
+        "wikipedia-fr-mlc",
+        "openstreetmap-charleroi"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-fr-mlc",
+      "title": "Wikipédia: Métro léger de Charleroi",
+      "url": "https://fr.wikipedia.org/wiki/M%C3%A9tro_l%C3%A9ger_de_Charleroi",
+      "publisher": "Wikipédia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-charleroi",
+      "title": "OpenStreetMap contributors: TEC Charleroi light_rail route relations M3 and M4 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2804168",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

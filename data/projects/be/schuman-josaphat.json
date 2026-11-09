@@ -1,0 +1,91 @@
+{
+  "id": "be-schuman-josaphat",
+  "country": "be",
+  "category": "tunnel",
+  "name": {
+    "en": "Schuman–Josaphat rail tunnel (line 161A)",
+    "ro": "Tunelul feroviar Schuman–Josaphat (linia 161A)"
+  },
+  "description": {
+    "en": "Twin-track rail tunnel of 1,250 m in Brussels, built as one tube. It links line 161 just after Schuman station with line 26 at the Cinquantenaire tunnel, before Meiser station, and forms the northern part of line 161A. Infrabel and Beliris were the contracting authorities.",
+    "ro": "Tunel feroviar cu două linii, de 1.250 m, la Bruxelles, construit într-un singur tub. Leagă linia 161, imediat după gara Schuman, de linia 26 la tunelul Cinquantenaire, înainte de gara Meiser, și formează partea nordică a liniei 161A. Infrabel și Beliris au fost autoritățile contractante."
+  },
+  "operator": "be-infrabel",
+  "lots": [
+    {
+      "id": "schuman-josaphat-tunnel",
+      "name": {
+        "en": "Schuman – junction with line 26 (Cinquantenaire)",
+        "ro": "Schuman – joncțiunea cu linia 26 (Cinquantenaire)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2016-04-04"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2016-04-04",
+          "note": {
+            "en": "Commercial service had been planned for December 2015.",
+            "ro": "Exploatarea comercială fusese planificată pentru decembrie 2015."
+          },
+          "sourceRef": "wikipedia-fr-tunnel-schuman-josaphat"
+        }
+      ],
+      "lengthKm": 1.25,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 1.25
+      },
+      "cost": {
+        "actual": {
+          "amount": 365,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Infrabel gives the total cost of the Schuman–Josaphat link as about 365 (million euro); Dutch Wikipedia states 365 million euro. Price year and VAT treatment not stated. Excludes the 266 million euro for four tracks between Watermael and Schuman."
+        }
+      },
+      "note": {
+        "en": "Opening was planned for December 2015 (13 December on the French Wikipedia infobox text, 14 December in its history section) and postponed because the disaster exercise could not be held under the maximum alert in Brussels after the Paris attacks of 13 November 2015. The tunnel opened on 4 April 2016. Construction start is the year given in the Dutch Wikipedia infobox; no month or day is sourced. Infrabel puts the total cost of the link at about 365 million euro, and a further 266 million euro on the four-track section between Watermael and Schuman, which is not part of this lot. Drawn from the end of the Schuman platform area to the junction with line 26; the OpenStreetMap tunnel way is longer because it includes the station, so the start is cut to the sourced 1,250 m.",
+        "ro": "Deschiderea era planificată pentru decembrie 2015 (13 decembrie în textul infocasetei Wikipedia în franceză, 14 decembrie în secțiunea de istorie) și a fost amânată deoarece exercițiul de dezastru nu a putut avea loc în condițiile alertei maxime de la Bruxelles după atentatele de la Paris din 13 noiembrie 2015. Tunelul a fost deschis la 4 aprilie 2016. Începutul construcției este anul din infocasetă Wikipedia în neerlandeză; nu există o lună sau o zi din surse. Infrabel indică un cost total al legăturii de circa 365 de milioane de euro și încă 266 de milioane de euro pentru secțiunea cu patru linii între Watermael și Schuman, care nu face parte din acest lot. Trasat de la capătul zonei peroanelor Schuman până la joncțiunea cu linia 26; calea OpenStreetMap a tunelului este mai lungă pentru că include gara, deci începutul este tăiat la cei 1.250 m din surse."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-tunnel-schuman-josaphat",
+        "wikipedia-nl-schuman-josafattunnel",
+        "infrabel-tunnel-schuman-josaphat",
+        "openstreetmap-schuman-josaphat"
+      ],
+      "geometryRef": "schuman-josaphat-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-fr-tunnel-schuman-josaphat",
+      "title": "Wikipedia (fr): Tunnel Schuman-Josaphat",
+      "url": "https://fr.wikipedia.org/wiki/Tunnel_Schuman-Josaphat",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-nl-schuman-josafattunnel",
+      "title": "Wikipedia (nl): Schuman-Josafattunnel",
+      "url": "https://nl.wikipedia.org/wiki/Schuman-Josafattunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "infrabel-tunnel-schuman-josaphat",
+      "title": "Infrabel: Le tunnel Schuman-Josaphat (archived 25 March 2016)",
+      "url": "http://www.infrabel.be/fr/a-propos-dinfrabel/nos-realisations/tunnel-schuman-josaphat",
+      "retrievedOn": "2026-11-09",
+      "archiveUrl": "https://web.archive.org/web/20160325050710/http://www.infrabel.be/fr/a-propos-dinfrabel/nos-realisations/tunnel-schuman-josaphat"
+    },
+    {
+      "id": "openstreetmap-schuman-josaphat",
+      "title": "OpenStreetMap contributors (ODbL): railway way ref=L161A, Schuman-Josaphat tunnel, Brussels",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

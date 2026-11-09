@@ -1,0 +1,90 @@
+{
+  "id": "be-diabolo",
+  "country": "be",
+  "category": "railway",
+  "name": {
+    "en": "Diabolo rail link to Brussels Airport (line 36C)",
+    "ro": "Legătura feroviară Diabolo cu Aeroportul Bruxelles (linia 36C)"
+  },
+  "description": {
+    "en": "Underground rail link between Brussels Airport station and the new line 25N in the E19 central reservation, joining line 36 (Brussels–Leuven) and line 25N (Brussels–Mechelen–Antwerp) through the airport. Just under 3 km of slab track in cut-and-cover and single-bore tunnels. Built and financed by the project company SA Diabolo under a public-private partnership and leased to Infrabel for 35 years.",
+    "ro": "Legătură feroviară subterană între gara Aeroportului Bruxelles și noua linie 25N din spațiul median al autostrăzii E19, care unește linia 36 (Bruxelles–Leuven) cu linia 25N (Bruxelles–Mechelen–Anvers) prin aeroport. Puțin sub 3 km de cale pe placă, în tunel deschis și în tuneluri cu un singur tub. Construită și finanțată de societatea de proiect SA Diabolo printr-un parteneriat public-privat și închiriată Infrabel pentru 35 de ani."
+  },
+  "operator": "be-infrabel",
+  "lots": [
+    {
+      "id": "diabolo-36c",
+      "name": {
+        "en": "Brussels Airport – junction with line 25N (E19)",
+        "ro": "Aeroportul Bruxelles – joncțiunea cu linia 25N (E19)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-06-08"
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2012-06-08",
+          "note": {
+            "en": "Officially opened by King Albert on 8 June 2012; first train from Mechelen to the airport ran on 10 June 2012.",
+            "ro": "Inaugurată oficial de regele Albert la 8 iunie 2012; primul tren de la Mechelen la aeroport a circulat la 10 iunie 2012."
+          },
+          "sourceRef": "wikipedia-diabolo-project"
+        }
+      ],
+      "lengthKm": 3,
+      "profile": {
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Public-private partnership: SA Diabolo builds, finances and maintains the infrastructure from the airport to the E19, leases it to Infrabel from 2011 to 2045, then Infrabel takes ownership (for 1 euro per English Wikipedia).",
+            "ro": "Parteneriat public-privat: SA Diabolo construiește, finanțează și întreține infrastructura de la aeroport până la E19 și o închiriază Infrabel din 2011 până în 2045, după care proprietatea revine Infrabel (pentru 1 euro, conform Wikipedia în engleză)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length is the source's \"just under 3 km\", recorded as 3. The drawn track, from the platform end at the airport station to the junction with line 25N at the E19, measures about 3.2 km. Per SNCB (2005), the budget for the whole Diabolo project, including Infrabel's own Brussels–Mechelen line 25N, was estimated at 493 million euro, of which 280.3 million euro were to be financed through the public-private partnership; no cost for this section alone is recorded here.",
+        "ro": "Lungimea este \"puțin sub 3 km\" din sursă, înregistrată ca 3. Traseul desenat, de la capătul peroanelor gării aeroportului până la joncțiunea cu linia 25N de la E19, măsoară circa 3,2 km. Potrivit SNCB (2005), bugetul întregului proiect Diabolo, inclusiv linia Bruxelles–Mechelen 25N a Infrabel, era estimat la 493 de milioane de euro, din care 280,3 milioane de euro urmau să fie finanțate prin parteneriatul public-privat; pentru această secțiune nu se înregistrează un cost separat."
+      },
+      "sourceRefs": [
+        "wikipedia-diabolo-project",
+        "sncb-projet-diabolo-2005",
+        "infrabel-airport-rail-projects-2012",
+        "openstreetmap-diabolo"
+      ],
+      "geometryRef": "diabolo-36c"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-diabolo-project",
+      "title": "Wikipedia: Diabolo project",
+      "url": "https://en.wikipedia.org/wiki/Diabolo_project",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "sncb-projet-diabolo-2005",
+      "title": "SNCB: Le Projet Diabolo (31 March 2005)",
+      "url": "http://www.b-rail.be/php/press/index.php?lang=F&task=view&id=1387",
+      "retrievedOn": "2026-11-09",
+      "archiveUrl": "https://web.archive.org/web/20140201205915/http://www.b-rail.be/php/press/index.php?lang=F&task=view&id=1387"
+    },
+    {
+      "id": "infrabel-airport-rail-projects-2012",
+      "title": "Infrabel: Airport Railway Projects (archived January 2012)",
+      "url": "http://www.infrabel.be/en/about-infrabel/mobility-projects/airport-railway-projects",
+      "retrievedOn": "2026-11-09",
+      "archiveUrl": "https://web.archive.org/web/20120118203713/http://www.infrabel.be/en/about-infrabel/mobility-projects/airport-railway-projects"
+    },
+    {
+      "id": "openstreetmap-diabolo",
+      "title": "OpenStreetMap contributors (ODbL): railway ways ref=L36C, Brussels Airport",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

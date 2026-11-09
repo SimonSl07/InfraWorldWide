@@ -1,0 +1,106 @@
+{
+  "id": "be-hsl-3",
+  "country": "be",
+  "category": "railway",
+  "name": {
+    "en": "HSL 3 (Line 3) Chênée – Hergenrath high-speed line",
+    "ro": "Linia de mare viteză HSL 3 (linia 3) Chênée – Hergenrath"
+  },
+  "description": {
+    "en": "High-speed line from Chênée, near Liège, towards the German border at Aachen, owned by Infrabel. The new-built part is 36.1 km, with the 6.5 km Soumagne tunnel, the longest railway tunnel in Belgium at its opening, and runs alongside the A3/E40 motorway. It joins line 37 near Walhorn for the last kilometres to the border. Built 2001–2007 and first used on 14 June 2009 by ICE trains, after delays with ETCS level 2 signalling.",
+    "ro": "Linie de mare viteză de la Chênée, lângă Liège, spre granița cu Germania la Aachen, aflată în proprietatea Infrabel. Partea nouă are 36,1 km și include tunelul Soumagne de 6,5 km, cel mai lung tunel feroviar din Belgia la deschidere; urmează autostrada A3/E40. Se reunește cu linia 37 lângă Walhorn pentru ultimii kilometri până la graniță. Construită în 2001–2007 și folosită prima dată la 14 iunie 2009 de trenurile ICE, după întârzieri cu semnalizarea ETCS nivel 2."
+  },
+  "operator": "be-infrabel",
+  "lots": [
+    {
+      "id": "chenee-hammerbrug",
+      "name": {
+        "en": "Chênée – Y Hammerbrug (new-built section)",
+        "ro": "Chênée – Y Hammerbrug (secțiunea nou construită)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001",
+        "opened": "2009-06-14"
+      },
+      "lengthKm": 36.1,
+      "cost": {
+        "actual": {
+          "amount": 830,
+          "currency": "EUR",
+          "confidence": "reported",
+          "note": "Reported cost of the 36 km line built by TUC Rail 2001–2007, including ETCS level 2 signalling. Price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true,
+        "maxSpeedKmh": 260
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2001",
+          "note": {
+            "en": "Line built 2001–2007; the Soumagne tunnel was built from 14 May 2001 to August 2005.",
+            "ro": "Linia a fost construită în 2001–2007; tunelul Soumagne a fost construit între 14 mai 2001 și august 2005."
+          },
+          "sourceRef": "wikipedia-en-hsl-3"
+        },
+        {
+          "kind": "opened",
+          "date": "2009-06-14",
+          "note": {
+            "en": "ICE trains began service on 14 June 2009; Thalys trains followed on 13 December 2009.",
+            "ro": "Trenurile ICE au început circulația la 14 iunie 2009; trenurile Thalys au urmat la 13 decembrie 2009."
+          },
+          "sourceRef": "wikipedia-en-hsl-3"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "TUC Rail",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Chainage 0 at Chênée to the Y Hammerbrug junction with line 37 at 36.1 km (Dutch Wikipedia). The line was technically completed in 2007 (October 2007 on the HSL 3 page, 15 December 2007 on the Belgian high-speed rail page) but unused until ETCS level 2 trains were available. Speed 260 km/h on the open line, 200 km/h in the Soumagne tunnel. The 56 km figure quoted for the whole line (42 km dedicated plus 14 km modernised) also covers upgraded line 37 and track beyond the border, which is not recorded here. Drawn geometry is one track from OpenStreetMap, 36.0 km.",
+        "ro": "Kilometrajul 0 este la Chênée, până la joncțiunea Y Hammerbrug cu linia 37 la 36,1 km (Wikipedia neerlandeză). Linia a fost finalizată tehnic în 2007 (octombrie 2007 pe pagina HSL 3, 15 decembrie 2007 pe pagina despre mare viteză în Belgia), dar a rămas nefolosită până au existat trenuri cu ETCS nivel 2. Viteza este de 260 km/h pe linia deschisă și 200 km/h în tunelul Soumagne. Cifra de 56 km citată pentru întreaga linie (42 km dedicați plus 14 km modernizați) include și linia 37 modernizată și traseul de dincolo de graniță, care nu sunt înregistrate aici. Geometria desenată este o singură cale din OpenStreetMap, 36,0 km."
+      },
+      "sourceRefs": [
+        "wikipedia-en-hsl-3",
+        "wikipedia-nl-hsl-3",
+        "wikipedia-en-hsr-belgium",
+        "osm-hsl-3"
+      ],
+      "geometryRef": "chenee-hammerbrug"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-hsl-3",
+      "title": "Wikipedia: HSL 3",
+      "url": "https://en.wikipedia.org/wiki/HSL_3",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-nl-hsl-3",
+      "title": "Wikipedia (nl): HSL 3",
+      "url": "https://nl.wikipedia.org/wiki/HSL_3",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-hsr-belgium",
+      "title": "Wikipedia: High-speed rail in Belgium",
+      "url": "https://en.wikipedia.org/wiki/High-speed_rail_in_Belgium",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-hsl-3",
+      "title": "OpenStreetMap contributors: relation 253548, LGV 3 - HSL 3 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/253548",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
