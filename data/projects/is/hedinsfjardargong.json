@@ -1,0 +1,142 @@
+{
+  "id": "is-hedinsfjardargong",
+  "country": "is",
+  "category": "tunnel",
+  "name": {
+    "en": "Héðinsfjarðargöng",
+    "ro": "Héðinsfjarðargöng"
+  },
+  "description": {
+    "en": "Two road tunnels on Route 76 (section 76-15) in northern Iceland, 3.9 km from Siglufjörður to the uninhabited Héðinsfjörður and 7.1 km from Héðinsfjörður to Ólafsfjörður, linking the two towns by about 15 km of road. Built 2006–2010 and opened to traffic on 2 October 2010.",
+    "ro": "Două tuneluri rutiere pe drumul 76 (secțiunea 76-15) din nordul Islandei: 3,9 km de la Siglufjörður la golful nelocuit Héðinsfjörður și 7,1 km de la Héðinsfjörður la Ólafsfjörður, care leagă cele două localități printr-un drum de circa 15 km. Construite în 2006–2010 și deschise traficului la 2 octombrie 2010."
+  },
+  "operator": "is-vegagerdin",
+  "lots": [
+    {
+      "id": "siglufjordur-hedinsfjordur",
+      "name": {
+        "en": "Siglufjörður – Héðinsfjörður tunnel",
+        "ro": "Tunelul Siglufjörður – Héðinsfjörður"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-05-20",
+        "constructionStart": "2006-09",
+        "opened": "2010-10-02"
+      },
+      "lengthKm": 3.9,
+      "profile": {
+        "tunnelKm": 3.9,
+        "lanes": 2
+      },
+      "contractors": [
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Háfell",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The tender notice gave 3.7 km of rock tunnel for this part; Vegagerðin's tunnel register gives 3.9 km. One contract covered both tunnels and the connecting roads, signed on 20 May 2006 by Vegagerðin with Metrostav a.s. and Háfell ehf. on a joint bid of ISK 5,739,412,688 plus indexation, so no per-tunnel value is recorded. Works began in September 2006 and finished a year later than the 2009 target, mainly because of water in the tunnels",
+        "ro": "Anunțul de licitație indica 3,7 km de tunel în rocă pentru acest tronson; registrul tunelurilor Vegagerðin indică 3,9 km. Un singur contract a acoperit ambele tuneluri și drumurile de legătură, semnat la 20 mai 2006 de Vegagerðin cu Metrostav a.s. și Háfell ehf. pe baza unei oferte comune de 5.739.412.688 ISK plus indexare, deci nu se înregistrează o valoare pe tunel. Lucrările au început în septembrie 2006 și s-au încheiat cu un an după ținta din 2009, în principal din cauza apei din tuneluri"
+      },
+      "sourceRefs": [
+        "vegagerdin-jardgong",
+        "wikipedia-is-hedinsfjardargong",
+        "visir-hedinsfjardargong-opnud",
+        "haestirettur-423-2014",
+        "haestirettur-hafell-metrostav",
+        "openstreetmap-hedinsfjardargong"
+      ],
+      "geometryRef": "siglufjordur-hedinsfjordur"
+    },
+    {
+      "id": "hedinsfjordur-olafsfjordur",
+      "name": {
+        "en": "Héðinsfjörður – Ólafsfjörður tunnel",
+        "ro": "Tunelul Héðinsfjörður – Ólafsfjörður"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-05-20",
+        "constructionStart": "2006-09",
+        "opened": "2010-10-02"
+      },
+      "lengthKm": 7.1,
+      "profile": {
+        "tunnelKm": 7.1,
+        "lanes": 2
+      },
+      "contractors": [
+        {
+          "name": "Metrostav",
+          "role": "builder"
+        },
+        {
+          "name": "Háfell",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The tender notice gave 6.9 km of rock tunnel for this part; Vegagerðin's tunnel register gives 7.1 km. Built under the same single contract as the Siglufjörður – Héðinsfjörður tunnel. A road in Héðinsfjörður connects the two tunnels and is not drawn",
+        "ro": "Anunțul de licitație indica 6,9 km de tunel în rocă pentru acest tronson; registrul tunelurilor Vegagerðin indică 7,1 km. Construit în baza aceluiași contract unic ca tunelul Siglufjörður – Héðinsfjörður. Un drum în Héðinsfjörður leagă cele două tuneluri și nu este desenat"
+      },
+      "sourceRefs": [
+        "vegagerdin-jardgong",
+        "wikipedia-is-hedinsfjardargong",
+        "visir-hedinsfjardargong-opnud",
+        "haestirettur-423-2014",
+        "haestirettur-hafell-metrostav",
+        "openstreetmap-hedinsfjardargong"
+      ],
+      "geometryRef": "hedinsfjordur-olafsfjordur"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vegagerdin-jardgong",
+      "title": "Vegagerðin: Listi yfir jarðgöng",
+      "url": "https://www.vegagerdin.is/samgongukerfid/vegakerfid/jardgong",
+      "publisher": "Vegagerðin",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-is-hedinsfjardargong",
+      "title": "Wikipedia (is): Héðinsfjarðargöng",
+      "url": "https://is.wikipedia.org/wiki/H%C3%A9%C3%B0insfjar%C3%B0arg%C3%B6ng",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "visir-hedinsfjardargong-opnud",
+      "title": "Vísir: Héðinsfjarðargöng opnuð í dag",
+      "url": "http://www.visir.is/hedinsfjardargong-opnud-i-dag/article/201041760619",
+      "publisher": "Vísir",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "haestirettur-423-2014",
+      "title": "Hæstiréttur, mál nr. 423/2014: Metrostav a.s. gegn Háfelli ehf.",
+      "url": "https://island.is/domar/s-17000419-A984-46E4-8BF3-69A3B57707C3",
+      "publisher": "Hæstiréttur Íslands",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "haestirettur-hafell-metrostav",
+      "title": "Hæstiréttur: Vegagerðin gegn Háfelli ehf. og Metrostav a.s. (Héðinsfjarðargöng)",
+      "url": "https://island.is/domar/s-D4970013-795B-4173-A4F1-FB7196B195DA",
+      "publisher": "Hæstiréttur Íslands",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-hedinsfjardargong",
+      "title": "OpenStreetMap: Héðinsfjarðargöng (ways 208098858 and 208098869), ODbL",
+      "url": "https://www.openstreetmap.org/way/208098858",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

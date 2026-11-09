@@ -1,0 +1,217 @@
+{
+  "id": "ch-mehrspur-zuerich-winterthur-bruettenertunnel",
+  "country": "ch",
+  "category": "railway",
+  "name": {
+    "en": "Zürich–Winterthur multi-track expansion with the Brüttenertunnel",
+    "ro": "Extinderea la mai multe linii Zürich–Winterthur cu Brüttenertunnel"
+  },
+  "description": {
+    "en": "Capacity expansion between Zürich and Winterthur in the AS2035 rail programme: a roughly 9 km twin-tube tunnel from Dietlikon and Bassersdorf to Tössmühle, with works at Winterthur, Dietlikon, Bassersdorf and Wallisellen. The BAV approved the plans in October 2025 and reports all measures in execution at 31 December 2025. The six BAV measures are modelled as five lots (A1–A5). Measure A0, the whole-project item, has a cost basis of CHF 368.9 million and a forecast of CHF 145.6 million and is not added to the lots. Costs are at the 12/2014 price level, excluding inflation and VAT, and are not comparable with NEAT figures that include VAT.",
+    "ro": "Extindere de capacitate între Zürich și Winterthur în programul feroviar AS2035: un tunel cu două tuburi de circa 9 km de la Dietlikon și Bassersdorf până la Tössmühle, cu lucrări la Winterthur, Dietlikon, Bassersdorf și Wallisellen. BAV a aprobat planurile în octombrie 2025 și raportează toate măsurile în execuție la 31 decembrie 2025. Cele șase măsuri BAV sunt modelate ca cinci loturi (A1–A5). Măsura A0, poziția pentru întregul proiect, are o bază de cost de 368,9 milioane CHF și o prognoză de 145,6 milioane CHF și nu se adaugă la loturi. Costurile sunt la nivelul prețurilor din 12/2014, fără inflație și TVA, și nu sunt comparabile cu cifrele NEAT care includ TVA."
+  },
+  "operator": "ch-sbb",
+  "lots": [
+    {
+      "id": "a1-winterthur",
+      "name": {
+        "en": "Measure A1: Winterthur (Tössmühle – Winterthur)",
+        "ro": "Măsura A1: Winterthur (Tössmühle – Winterthur)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2037-03-16"
+      },
+      "lengthKm": 3.4,
+      "cost": {
+        "estimated": {
+          "amount": 846.3,
+          "currency": "CHF",
+          "year": 2014,
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Endkostenprognose in the BAV Standbericht 2025 (state 31.12.2025), at the price level of the commitment credit (12/2014), excluding inflation and VAT. Cost basis 571.6 million, invoices to date 47.5 million."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Northern approach between the Tössmühle tunnel portal and Winterthur. BAV Standbericht 2025 lists the phase as Ausführung (execution) and gives the commissioning date as a forecast. The BAV does not state the limits of measure A1: the drawn line runs from the Tössmühle junction to Winterthur station and its length was measured from OpenStreetMap geometry.",
+        "ro": "Accesul nordic între portalul Tössmühle și Winterthur. Standbericht 2025 al BAV indică faza Ausführung (execuție), iar data punerii în funcțiune este o prognoză. BAV nu indică limitele măsurii A1: linia desenată merge de la bifurcația Tössmühle la gara Winterthur, iar lungimea a fost măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "bav-standbericht-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "a1-winterthur"
+    },
+    {
+      "id": "a2-tunnel",
+      "name": {
+        "en": "Measure A2: Brüttenertunnel",
+        "ro": "Măsura A2: Tunelul Brüttenertunnel"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2037-12-13"
+      },
+      "lengthKm": 9,
+      "cost": {
+        "estimated": {
+          "amount": 1310.7,
+          "currency": "CHF",
+          "year": 2014,
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Endkostenprognose in the BAV Standbericht 2025 (state 31.12.2025), at the price level of the commitment credit (12/2014), excluding inflation and VAT. Cost basis 981.1 million, invoices to date 41 million."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 9,
+        "tracks": 2
+      },
+      "note": {
+        "en": "Twin-tube tunnel of about 9 km between portals at Dietlikon and Bassersdorf and the northern portal at Tössmühle near Winterthur. The Dietlikon and Bassersdorf branches join underground. Wikipedia gives a ceremonial start in July 2026 and tunnelling by boring machines from 2029. BAV Standbericht 2025 lists the phase as Ausführung (execution) and gives the commissioning date as a forecast. The drawn OpenStreetMap geometry measures 9.8 km because it includes the Bassersdorf branch stub.",
+        "ro": "Tunel cu două tuburi de circa 9 km, între portalurile de la Dietlikon și Bassersdorf și portalul nordic de la Tössmühle, lângă Winterthur. Ramurile Dietlikon și Bassersdorf se unesc în subteran. Wikipedia indică o primă lovitură de târnăcop în iulie 2026 și săparea cu mașini de forat din 2029. Standbericht 2025 al BAV indică faza Ausführung (execuție), iar data punerii în funcțiune este o prognoză. Geometria OpenStreetMap desenată măsoară 9,8 km, deoarece include ramura Bassersdorf."
+      },
+      "sourceRefs": [
+        "bav-standbericht-2025",
+        "wikipedia-de-bruettener-tunnel",
+        "srf-bruettenertunnel-bewilligt",
+        "osm-contributors"
+      ],
+      "geometryRef": "a2-tunnel"
+    },
+    {
+      "id": "a3-dietlikon",
+      "name": {
+        "en": "Measure A3: Dietlikon",
+        "ro": "Măsura A3: Dietlikon"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2033-12-31"
+      },
+      "lengthKm": 2.2,
+      "cost": {
+        "estimated": {
+          "amount": 444.3,
+          "currency": "CHF",
+          "year": 2014,
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Endkostenprognose in the BAV Standbericht 2025 (state 31.12.2025), at the price level of the commitment credit (12/2014), excluding inflation and VAT. Cost basis 373.1 million, invoices to date 32.8 million."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Station and track works at Dietlikon up to the Dietlikon tunnel portal. BAV Standbericht 2025 lists the phase as Ausführung (execution) and gives the commissioning date as a forecast. The BAV does not state the limits of measure A3: the drawn line follows the OpenStreetMap way tagged railway=construction between Dietlikon and the portal, and its length was measured from OpenStreetMap geometry.",
+        "ro": "Lucrări la gară și la linii în Dietlikon, până la portalul tunelului. Standbericht 2025 al BAV indică faza Ausführung (execuție), iar data punerii în funcțiune este o prognoză. BAV nu indică limitele măsurii A3: linia desenată urmează calea OpenStreetMap etichetată railway=construction între Dietlikon și portal, iar lungimea a fost măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "bav-standbericht-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "a3-dietlikon"
+    },
+    {
+      "id": "a4-bassersdorf",
+      "name": {
+        "en": "Measure A4: Bassersdorf",
+        "ro": "Măsura A4: Bassersdorf"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2035-05-28"
+      },
+      "lengthKm": 0.95,
+      "cost": {
+        "estimated": {
+          "amount": 201.4,
+          "currency": "CHF",
+          "year": 2014,
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Endkostenprognose in the BAV Standbericht 2025 (state 31.12.2025), at the price level of the commitment credit (12/2014), excluding inflation and VAT. Cost basis 158.6 million, invoices to date 16.2 million."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Station and track works at Bassersdorf and the connection to the tunnel branch. BAV Standbericht 2025 lists the phase as Ausführung (execution) and gives the commissioning date as a forecast. The BAV does not state the limits of measure A4: the drawn line runs from Bassersdorf station to the Bassersdorf tunnel portal area on the existing line, and its length was measured from OpenStreetMap geometry.",
+        "ro": "Lucrări la gară și la linii în Bassersdorf și racordul la ramura tunelului. Standbericht 2025 al BAV indică faza Ausführung (execuție), iar data punerii în funcțiune este o prognoză. BAV nu indică limitele măsurii A4: linia desenată merge de la gara Bassersdorf până în zona portalului tunelului, pe linia existentă, iar lungimea a fost măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "bav-standbericht-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "a4-bassersdorf"
+    },
+    {
+      "id": "a5-wallisellen",
+      "name": {
+        "en": "Measure A5: Wallisellen",
+        "ro": "Măsura A5: Wallisellen"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2033-12-31"
+      },
+      "lengthKm": 2.1,
+      "cost": {
+        "estimated": {
+          "amount": 279.3,
+          "currency": "CHF",
+          "year": 2014,
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Endkostenprognose in the BAV Standbericht 2025 (state 31.12.2025), at the price level of the commitment credit (12/2014), excluding inflation and VAT. Cost basis 160.9 million, invoices to date 24.7 million."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Station and track works at Wallisellen. BAV Standbericht 2025 lists the phase as Ausführung (execution) and gives the commissioning date as a forecast. The BAV does not state the limits of measure A5: the drawn line follows the OpenStreetMap track near Wallisellen station and its length was measured from OpenStreetMap geometry.",
+        "ro": "Lucrări la gară și la linii în Wallisellen. Standbericht 2025 al BAV indică faza Ausführung (execuție), iar data punerii în funcțiune este o prognoză. BAV nu indică limitele măsurii A5: linia desenată urmează linia OpenStreetMap din apropierea gării Wallisellen, iar lungimea a fost măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "bav-standbericht-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "a5-wallisellen"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bav-standbericht-2025",
+      "title": "BAV: Standbericht 2025, Datenbeilage Eisenbahnausbauprogramme (state 31.12.2025)",
+      "url": "https://www.bav.admin.ch/dam/de/sd-web/asaXIEGVpouJ/Datenbeilage_Standbericht_2025_d.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-de-bruettener-tunnel",
+      "title": "Wikipedia: Brüttener Tunnel",
+      "url": "https://de.wikipedia.org/wiki/Br%C3%BCttener_Tunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "srf-bruettenertunnel-bewilligt",
+      "title": "SRF: Brüttenertunnel bewilligt – Bauarbeiten könnten 2026 starten (2025-10-14)",
+      "url": "https://www.srf.ch/news/schweiz/entlastung-der-zugstrecke-bruettenertunnel-bewilligt-bauarbeiten-koennten-2026-starten",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

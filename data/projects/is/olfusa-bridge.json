@@ -1,0 +1,109 @@
+{
+  "id": "is-olfusa-bridge",
+  "country": "is",
+  "category": "bridge",
+  "operator": "is-vegagerdin",
+  "name": {
+    "en": "Ölfusá Bridge and Ring Road bypass of Selfoss",
+    "ro": "Podul Ölfusá și ocolitoarea Drumului Inelar la Selfoss"
+  },
+  "description": {
+    "en": "New 3.7 km stretch of the Ring Road (Route 1) around Selfoss, with a 330 m cable-stayed bridge over the Ölfusá river and a 60 m tower on the island of Efri-Laugardælaeyja. It shortens the Ring Road by 1.2 km.",
+    "ro": "Tronson nou de 3,7 km al Drumului Inelar (Drumul 1) în jurul orașului Selfoss, cu un pod hobanat de 330 m peste râul Ölfusá și un pilon de 60 m pe insula Efri-Laugardælaeyja. Scurtează Drumul Inelar cu 1,2 km."
+  },
+  "lots": [
+    {
+      "id": "ring-road-bypass",
+      "name": {
+        "en": "Ring Road (1) bypass of Selfoss with the Ölfusá bridge",
+        "ro": "Ocolitoarea Drumului Inelar (1) la Selfoss cu podul Ölfusá"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-11-20",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 3.7,
+      "cost": {
+        "estimated": {
+          "amount": 17900,
+          "currency": "ISK",
+          "scope": "total",
+          "note": "Vegagerðin's estimated total cost of the works, of which 8,400 million ISK is for the bridge itself. Price year and VAT treatment are not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 1
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-03-03",
+          "note": {
+            "en": "Competitive tender for design, construction and financing during construction. Five applicants were prequalified.",
+            "ro": "Licitație competitivă pentru proiectare, execuție și finanțare pe durata construcției. Cinci solicitanți au fost preselectați."
+          },
+          "sourceRef": "vegagerdin-project-olfusa"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-11-20",
+          "note": {
+            "en": "Contract signed with ÞG verk. One bid had been received at the opening on 12 March 2024; negotiations ran until July 2025.",
+            "ro": "Contract semnat cu ÞG verk. La deschiderea din 12 martie 2024 fusese primită o singură ofertă; negocierile au continuat până în iulie 2025."
+          },
+          "sourceRef": "vegagerdin-project-olfusa"
+        }
+      ],
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "The contractor finances the works during construction. Vegagerðin expects toll revenue to cover the cost.",
+            "ro": "Constructorul finanțează lucrările pe durata execuției. Vegagerðin se așteaptă ca taxele de drum să acopere costul."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ÞG verk",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design-build-finance contract. ÞG verk is main contractor and draws on Ramboll for the bridge design, VSL International for building the bridge and Verkís for the other bridges and roads. Works also include about 1 km of other two-lane roads, a new junction on the Ring Road east of Selfoss and underpasses. The bridge deck is 19 m wide, laid out as 2+1 lanes with a walking and cycling path, and is designed to carry four lanes later. A temporary bridge was lifted into place on 4 July 2025, the first concrete was cast on 16 October 2025, and a 2,000 tonne steel deck was being prepared for launching across the river in late October 2026. Vegagerðin gives a traffic opening in autumn 2028 as an expectation, not a fixed date. The old bridge stays in use, with heavy vehicles directed to the new one. The 330 m bridge is inside the 3.7 km. The drawn OpenStreetMap line (one carriageway, from the Route 1 junction west of Selfoss to the junction east of it) is 3.35 km against the recorded 3.7 km.",
+        "ro": "Contract de proiectare, execuție și finanțare. ÞG verk este antreprenor general și se bazează pe Ramboll pentru proiectul podului, VSL International pentru construcția podului și Verkís pentru celelalte poduri și drumuri. Lucrările includ și circa 1 km de alte drumuri cu două benzi, o intersecție nouă pe Drumul Inelar la est de Selfoss și pasaje subterane. Tablierul podului are 19 m lățime, cu benzi 2+1 și o alee pentru pietoni și biciclete, și este proiectat să poată duce ulterior patru benzi. Un pod provizoriu a fost ridicat la 4 iulie 2025, primul beton a fost turnat la 16 octombrie 2025, iar un tablier de oțel de 2.000 de tone era pregătit pentru lansare peste râu la sfârșitul lui octombrie 2026. Vegagerðin indică deschiderea circulației în toamna anului 2028 ca estimare, nu ca dată fixă. Vechiul pod rămâne în uz, iar vehiculele grele sunt îndrumate pe cel nou. Podul de 330 m se află în cadrul celor 3,7 km. Linia OpenStreetMap desenată (o singură carosabilă, de la intersecția Drumului 1 la vest de Selfoss până la cea de la est) măsoară 3,35 km față de 3,7 km înregistrați."
+      },
+      "sourceRefs": [
+        "vegagerdin-project-olfusa",
+        "vegagerdin-news-olfusa-deck-2026",
+        "osm-olfusa-bridge"
+      ],
+      "geometryRef": "ring-road-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vegagerdin-project-olfusa",
+      "title": "Vegagerðin: Hringvegur (1) um Ölfusá",
+      "url": "https://www.vegagerdin.is/verkefnin/framkvaemdir/um-olfusa",
+      "publisher": "Vegagerðin",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-news-olfusa-deck-2026",
+      "title": "Vegagerðin: 2.000 tonna brúargólf brátt dregið yfir Ölfusá (26 October 2026)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/2-000-tonna-bruargolf-bratt-dregid-yfir-olfusa",
+      "publisher": "Vegagerðin",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-olfusa-bridge",
+      "title": "OpenStreetMap contributors (ODbL): Suðurlandsvegur construction ways at Selfoss, Overpass extract",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

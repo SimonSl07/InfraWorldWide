@@ -1,0 +1,97 @@
+{
+  "id": "ch-ceneri-base-tunnel",
+  "country": "ch",
+  "category": "tunnel",
+  "name": {
+    "en": "Ceneri Base Tunnel",
+    "ro": "Tunelul de bază Ceneri"
+  },
+  "description": {
+    "en": "Twin single-track railway tunnel of 15.4 km under Monte Ceneri in Ticino, between Camorino near Bellinzona and Vezia near Lugano. It completes the Gotthard axis of the New Rail Link through the Alps (NEAT) south of the Gotthard Base Tunnel and bypasses the Monte Ceneri line. Opened on 4 September 2020 and in regular service from 13 December 2020.",
+    "ro": "Tunel feroviar dublu, cu două tuburi cu o singură cale, de 15,4 km sub Monte Ceneri în cantonul Ticino, între Camorino, lângă Bellinzona, și Vezia, lângă Lugano. Completează axa Gotthard a Noii Legături Feroviare prin Alpi (NEAT), la sud de tunelul de bază Gotthard, și ocolește linia peste Monte Ceneri. Inaugurat la 4 septembrie 2020 și în exploatare regulată din 13 decembrie 2020."
+  },
+  "operator": "ch-alptransit-gotthard-ag",
+  "lots": [
+    {
+      "id": "ceneri-base-tunnel",
+      "name": {
+        "en": "Ceneri Base Tunnel (Camorino – Vezia)",
+        "ro": "Tunelul de bază Ceneri (Camorino – Vezia)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-06-02",
+        "opened": "2020-12-13"
+      },
+      "lengthKm": 15.4,
+      "profile": {
+        "tunnelKm": 15.4
+      },
+      "cost": {
+        "actual": {
+          "amount": 3600,
+          "currency": "CHF",
+          "scope": "total",
+          "note": "Effective cost including interest and VAT, as stated by the Federal Office of Transport; price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 987,
+              "currency": "CHF",
+              "year": 2009,
+              "scope": "works",
+              "note": "Value of the principal tunnel construction contract; VAT treatment not stated."
+            },
+            "date": "2009-06",
+            "sourceRef": "wikipedia-en-ceneri"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Consorzio Condotte Cossi",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Construction was marked on 2 June 2006 by the foundation stone ceremony; the tunnel was handed to SBB on 1 September 2020 and opened on 4 September 2020. Drawn from OpenStreetMap geometry of one bore (15.2 km), slightly shorter than the stated 15.4 km. The 3.6 bn CHF figure is the federal effective cost; Wikipedia (de) gives earlier estimates of about 2.05 bn and 2.2 bn CHF.",
+        "ro": "Lucrările au fost marcate la 2 iunie 2006 prin ceremonia pietrei de temelie; tunelul a fost predat SBB la 1 septembrie 2020 și inaugurat la 4 septembrie 2020. Trasat după geometria OpenStreetMap a unui tub (15,2 km), puțin mai scurt decât cei 15,4 km declarați. Cifra de 3,6 mld. CHF este costul efectiv federal; Wikipedia (de) indică estimări anterioare de circa 2,05 și 2,2 mld. CHF."
+      },
+      "sourceRefs": [
+        "bav-neat",
+        "wikipedia-de-ceneri",
+        "wikipedia-en-ceneri",
+        "osm-ceneri"
+      ],
+      "geometryRef": "ceneri-base-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bav-neat",
+      "title": "BAV: NEAT, Neue Eisenbahn-Alpentransversale",
+      "url": "https://www.bav.admin.ch/de/neat-neue-eisenbahn-alpentransversale",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-de-ceneri",
+      "title": "Wikipedia (de): Ceneri-Basistunnel",
+      "url": "https://de.wikipedia.org/wiki/Ceneri-Basistunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-ceneri",
+      "title": "Wikipedia (en): Ceneri Base Tunnel",
+      "url": "https://en.wikipedia.org/wiki/Ceneri_Base_Tunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-ceneri",
+      "title": "OpenStreetMap contributors (ODbL): Ceneri-Basistunnel, track ref 580 (way 239060128 and connected ways)",
+      "url": "https://www.openstreetmap.org/way/239060128",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

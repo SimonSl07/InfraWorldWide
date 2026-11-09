@@ -1,0 +1,142 @@
+{
+  "id": "gb-silvertown-tunnel",
+  "country": "gb",
+  "category": "tunnel",
+  "name": {
+    "en": "Silvertown Tunnel",
+    "ro": "Tunelul Silvertown"
+  },
+  "description": {
+    "en": "Twin-bore road tunnel under the River Thames in east London, 1.4 km long, linking Silvertown in Newham with the Greenwich Peninsula next to the Blackwall Tunnel. Promoted by Transport for London and delivered by Riverlinx under a design, build, finance, operate and maintain contract awarded in November 2019. Construction began in March 2021 and the tunnel opened on 7 April 2025. Both the Silvertown and Blackwall tunnels have been tolled since opening. Highways Magazine gives the scheme as £2.2 billion, most of it privately financed by Riverlinx and repaid by TfL through availability payments over 25 years.",
+    "ro": "Tunel rutier cu două tuburi sub Tamisa, în estul Londrei, lung de 1,4 km, care leagă Silvertown (Newham) de peninsula Greenwich, lângă tunelul Blackwall. Promovat de Transport for London și realizat de Riverlinx printr-un contract de proiectare, construcție, finanțare, operare și întreținere atribuit în noiembrie 2019. Lucrările au început în martie 2021, iar tunelul a fost deschis la 7 aprilie 2025. Tunelurile Silvertown și Blackwall sunt cu taxă de la deschidere. Highways Magazine indică pentru proiect 2,2 miliarde £, în mare parte finanțate privat de Riverlinx și rambursate de TfL prin plăți de disponibilitate pe 25 de ani."
+  },
+  "operator": "gb-riverlinx",
+  "lots": [
+    {
+      "id": "silvertown-tunnel",
+      "name": {
+        "en": "Silvertown Tunnel (Silvertown – Greenwich Peninsula)",
+        "ro": "Tunelul Silvertown (Silvertown – peninsula Greenwich)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2019-11",
+        "constructionStart": "2021-03",
+        "opened": "2025-04-07"
+      },
+      "lengthKm": 1.4,
+      "cost": {
+        "estimated": {
+          "amount": 1000,
+          "currency": "GBP",
+          "year": 2015,
+          "scope": "works",
+          "note": "Cost of construction estimated in the 2015 consultation, as reported by Wikipedia."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 1.4,
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2019-11",
+          "sourceRef": "wikipedia-silvertown-tunnel",
+          "note": {
+            "en": "Contract awarded to the Riverlinx consortium.",
+            "ro": "Contract atribuit consorțiului Riverlinx."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-03",
+          "sourceRef": "wikipedia-silvertown-tunnel",
+          "note": {
+            "en": "Construction began in March 2021.",
+            "ro": "Lucrările au început în martie 2021."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-04-07",
+          "sourceRef": "tunnels-and-tunnelling",
+          "note": {
+            "en": "Opened to traffic on 7 April 2025.",
+            "ro": "Deschis traficului la 7 aprilie 2025."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Majority privately financed by Riverlinx; TfL pays availability payments over 25 years from opening, repaid through the tunnel user charge.",
+            "ro": "Finanțat în majoritate privat de Riverlinx; TfL plătește plăți de disponibilitate pe 25 de ani de la deschidere, recuperate prin taxa de utilizare a tunelului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Riverlinx CJV (BAM, Ferrovial Construction, SK ecoplant)",
+          "role": "builder"
+        },
+        {
+          "name": "Riverlinx",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Twin-bore tunnel on the A1026, driven by an 11.91 m diameter tunnel boring machine. Highways Magazine gives £2.2 billion for the scheme; Wikipedia gives £2.2 billion as the private finance secured in 2021 and a 2015 construction estimate of £1 billion. The sources do not state a price year for the £2.2 billion, so it is not recorded as a cost figure. The drawn line follows one bore from OpenStreetMap (1.41 km).",
+        "ro": "Tunel cu două tuburi pe A1026, săpat cu un utilaj de forat cu diametrul de 11,91 m. Highways Magazine indică 2,2 miliarde £ pentru proiect; Wikipedia indică 2,2 miliarde £ ca finanțare privată obținută în 2021 și o estimare din 2015 a construcției de 1 miliard £. Sursele nu precizează anul prețurilor pentru cele 2,2 miliarde £, deci nu sunt înregistrate ca valoare de cost. Linia desenată urmează un tub din OpenStreetMap (1,41 km)."
+      },
+      "sourceRefs": [
+        "wikipedia-silvertown-tunnel",
+        "tunnels-and-tunnelling",
+        "highways-magazine",
+        "tfl-silvertown-tunnel",
+        "openstreetmap"
+      ],
+      "geometryRef": "silvertown-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-silvertown-tunnel",
+      "title": "Wikipedia: Silvertown Tunnel (1.4 km twin-bore tunnel, contract awarded November 2019, construction began March 2021, 2015 construction estimate £1bn, £2.2bn private finance in 2021)",
+      "url": "https://en.wikipedia.org/wiki/Silvertown_Tunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tunnels-and-tunnelling",
+      "title": "Tunnels & Tunnelling: Silvertown Tunnel in London opens today (1.4 km, opened 7 April 2025, Riverlinx JV of BAM Nuttall, Ferrovial Construction and SK ecoplant, 11.91 m TBM)",
+      "url": "https://tunnelsandtunnelling.com/?p=26910",
+      "publisher": "Tunnels & Tunnelling",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "highways-magazine",
+      "title": "Highways Magazine: The Silvertown Tunnel opens for business (£2.2bn, 1.4 km, DBFOM contract, 25 years of availability payments)",
+      "url": "https://www.highwaysmagazine.co.uk/The-Silvertown-Tunnel-opens-for-business/14442",
+      "publisher": "Highways Magazine",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tfl-silvertown-tunnel",
+      "title": "Transport for London: Silvertown Tunnel (open since 7 April 2025)",
+      "url": "https://tfl.gov.uk/travel-information/improvements-and-projects/silvertown-tunnel",
+      "publisher": "Transport for London",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

@@ -1,0 +1,165 @@
+{
+  "id": "cy-a8-limassol-saittas",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A8 Limassol – Saittas",
+    "ro": "Autostrada A8 Limassol – Saittas"
+  },
+  "description": {
+    "en": "Planned 22.5 km motorway from Limassol towards Saittas and the Troodos Mountains, built as an upgrade of the B8. Phase A1 (Polemidia – Palodia, 3.6 km) opened on 4 July 2025. Phase A2 (Palodia – Monagri, about 8 km) is at construction-drawing stage with a tender scheduled for the end of 2026.",
+    "ro": "Autostradă planificată de 22,5 km de la Limassol spre Saittas și munții Troodos, realizată prin modernizarea B8. Faza A1 (Polemidia – Palodia, 3,6 km) a fost deschisă la 4 iulie 2025. Faza A2 (Palodia – Monagri, circa 8 km) se află în etapa planurilor de execuție, cu licitația programată la sfârșitul lui 2026."
+  },
+  "operator": "cy-pwd",
+  "lastVerified": "2026-11-09",
+  "lots": [
+    {
+      "id": "a1-polemidia-palodia",
+      "name": {
+        "en": "Phase A1: Polemidia – Palodia",
+        "ro": "Faza A1: Polemidia – Palodia"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-06-05",
+        "constructionStart": "2020-09-19",
+        "opened": "2025-07-04"
+      },
+      "lengthKm": 3.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 26.126,
+              "currency": "EUR",
+              "year": 2020,
+              "note": "Excluding VAT."
+            },
+            "date": "2020-06-05",
+            "sourceRef": "ted-627618-2020"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-06-05",
+          "sourceRef": "ted-627618-2020"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-09-19",
+          "sourceRef": "wikipedia-a8"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-07-04",
+          "sourceRef": "politis-motorways-2026"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Cyfield Construction Limited",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 26.126,
+          "currency": "EUR",
+          "year": 2020,
+          "note": "Excluding VAT."
+        }
+      },
+      "geometryRef": "a1-polemidia-palodia",
+      "sourceRefs": [
+        "ted-627618-2020",
+        "politis-motorways-2026",
+        "knews-a1-opening",
+        "wikipedia-a8",
+        "osm-a8"
+      ],
+      "note": {
+        "en": "Upgrade of 3.6 km of the B8 from the grade-separated junction at the Spyros Kyprianou Athletic Centre in Polemidia, with two lanes in each direction, four roundabouts, bridges, retaining walls and a secondary road network. The contract (PS/C/769(A1), Cyfield Construction Limited, EUR 26.126 million excluding VAT, concluded 5 June 2020) covers chainage 4+835 to 8+400. Wikipedia gives 19 September 2020 as the construction start and 13 March 2023 as the original completion date. Public Works Department reporting carried by Politis and KNEWS puts the opening on 4 July 2025. The drawn line is the mapped Limassol – Saittas motorway ways, cut at the OpenStreetMap way boundary at the Polemidia junction (drawn length 3.74 km) and ending where the mapped motorway meets the old B8 near Palodia.",
+        "ro": "Modernizarea a 3,6 km din B8 de la nodul denivelat de la Centrul Atletic Spyros Kyprianou din Polemidia, cu două benzi pe sens, patru sensuri giratorii, poduri, ziduri de sprijin și o rețea de drumuri secundare. Contractul (PS/C/769(A1), Cyfield Construction Limited, 26,126 milioane EUR fără TVA, încheiat la 5 iunie 2020) acoperă kilometrajul 4+835 – 8+400. Wikipedia indică 19 septembrie 2020 ca început al lucrărilor și 13 martie 2023 ca termen inițial de finalizare. Raportările Departamentului Lucrărilor Publice preluate de Politis și KNEWS indică deschiderea la 4 iulie 2025. Linia desenată urmează căile cartografiate ale autostrăzii Limassol – Saittas, tăiată la limita căii OpenStreetMap din dreptul nodului Polemidia (lungime desenată 3,74 km) și se termină unde autostrada cartografiată se întâlnește cu vechiul B8 lângă Palodia."
+      }
+    },
+    {
+      "id": "a2-palodia-monagri",
+      "name": {
+        "en": "Phase A2: Palodia – Monagri",
+        "ro": "Faza A2: Palodia – Monagri"
+      },
+      "status": "planned",
+      "lengthKm": 8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 80,
+              "currency": "EUR",
+              "confidence": "estimated"
+            },
+            "date": "2026-11-09",
+            "sourceRef": "politis-motorways-2026"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "geometryRef": "a2-palodia-monagri",
+      "sourceRefs": [
+        "politis-motorways-2026",
+        "osm-a8"
+      ],
+      "note": {
+        "en": "About 8 km extending to the Zygos bridge, with construction drawings at an advanced stage and an estimated cost of EUR 80 million (VAT treatment and price year not stated). Politis reports the tender scheduled for the end of 2026 and works planned to start in 2027. The 2027 state budget carries EUR 210,000 for the continuing study of the construction drawings. The new alignment is not mapped: the drawn line follows the existing B8 west of Palodia for the sourced 8 km and is indicative only. Further sections to Saittas would complete the 22.5 km axis; they are at planning or study stage and are not recorded as lots.",
+        "ro": "Circa 8 km până la podul Zygos, cu planurile de execuție într-o fază avansată și un cost estimat de 80 de milioane EUR (tratamentul TVA și anul prețurilor nu sunt precizate). Politis relatează licitația programată la sfârșitul lui 2026 și începerea lucrărilor în 2027. Bugetul de stat pe 2027 prevede 210.000 EUR pentru continuarea studiului planurilor de execuție. Noul traseu nu este cartografiat: linia desenată urmează B8 existent la vest de Palodia pe cei 8 km indicați în sursă și este orientativă. Secțiunile următoare până la Saittas ar completa axa de 22,5 km; ele sunt în stadiu de planificare sau studiu și nu sunt înregistrate ca loturi."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "ted-627618-2020",
+      "title": "TED notice 627618-2020: contract award, PS/C/769(A1) Limassol–Saittas motorway, chainage 4+835 to 8+400",
+      "url": "https://ted.europa.eu/en/notice/627618-2020/xml",
+      "publisher": "Publications Office of the European Union (TED), Public Works Department of Cyprus",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "politis-motorways-2026",
+      "title": "Politis: Cyprus motorway network gears up for expansion",
+      "url": "https://en.politis.com.cy/news/cy-news/1041270/cyprus-motorway-network-gears-up-for-expansion",
+      "publisher": "Politis",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "knews-a1-opening",
+      "title": "KNEWS: Weekend drives just got easier with new Limassol–Saittas link",
+      "url": "https://knews.kathimerini.com.cy/en/news/weekend-drives-just-got-easier-with-new-limassol%E2%80%93saittas-link",
+      "publisher": "Kathimerini Cyprus (KNEWS)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-a8",
+      "title": "Wikipedia: A8 motorway (Cyprus)",
+      "url": "https://en.wikipedia.org/wiki/A8_motorway_(Cyprus)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-a8",
+      "title": "OpenStreetMap contributors: A8 and B8 ways near Polemidia and Palodia (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

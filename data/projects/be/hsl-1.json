@@ -1,0 +1,100 @@
+{
+  "id": "be-hsl-1",
+  "country": "be",
+  "category": "railway",
+  "name": {
+    "en": "HSL 1 (Brussels – French border)",
+    "ro": "HSL 1 (Bruxelles – frontiera cu Franța)"
+  },
+  "description": {
+    "en": "Belgian high-speed line 1 (Infrabel line 1), linking Brussels-South with the LGV Nord at the French border near Esplechin. Wikipedia gives 88 km in total: 71 km of dedicated high-speed track from Lembeek and 17 km of modernised conventional line 96N from Brussels-South. Service began on 14 December 1997. The line carries 25 kV AC, two tracks and TVM-430 signalling, with a line speed of 300 km/h. The French half (LGV Nord) is not covered here.",
+    "ro": "Linia belgiană de mare viteză 1 (linia 1 Infrabel) leagă Bruxelles-Sud de LGV Nord la frontiera franceză, lângă Esplechin. Wikipedia indică 88 km în total: 71 km de cale dedicată vitezei mari de la Lembeek și 17 km de linie convențională modernizată 96N de la Bruxelles-Sud. Serviciul a început la 14 decembrie 1997. Linia are electrificare 25 kV c.a., două căi și semnalizare TVM-430, cu viteză de linie de 300 km/h. Jumătatea franceză (LGV Nord) nu este inclusă aici."
+  },
+  "operator": "be-infrabel",
+  "lots": [
+    {
+      "id": "brussels-lembeek",
+      "name": {
+        "en": "Brussels-South – Lembeek (line 96N approach)",
+        "ro": "Bruxelles-Sud – Lembeek (acces pe linia 96N)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1997-12-14"
+      },
+      "lengthKm": 17,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true,
+        "tracks": 2
+      },
+      "note": {
+        "en": "Modernised conventional line 96N, used by high-speed trains from Brussels-South to the start of the dedicated track at the Lembeek viaduct; the sources give 17 km. The drawn OpenStreetMap line measures about 14.6 km from Brussels-South to the start of the dedicated track, 14% shorter than the quoted figure. The line existed before 1997; the opening date is the start of high-speed service on the whole line. The track is Infrabel line 96N, which no other project in the dataset measures.",
+        "ro": "Linia convențională 96N modernizată, folosită de trenurile de mare viteză de la Bruxelles-Sud până la începutul căii dedicate de la viaductul Lembeek; sursele indică 17 km. Linia desenată din OpenStreetMap măsoară circa 14,6 km de la Bruxelles-Sud până la începutul căii dedicate, cu 14% mai puțin decât cifra citată. Linia exista dinainte de 1997; data deschiderii este începutul serviciului de mare viteză pe întreaga linie. Calea este linia Infrabel 96N, pe care niciun alt proiect din set nu o măsoară."
+      },
+      "sourceRefs": [
+        "wikipedia-en-hsl-1",
+        "wikipedia-fr-lgv-1",
+        "osm-hsl-1"
+      ],
+      "geometryRef": "brussels-lembeek"
+    },
+    {
+      "id": "lembeek-border",
+      "name": {
+        "en": "Lembeek – French border (dedicated line)",
+        "ro": "Lembeek – frontiera cu Franța (linie dedicată)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1997-12-14"
+      },
+      "lengthKm": 71,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 300,
+        "electrified": true,
+        "tracks": 2,
+        "designSpeedKmh": 300
+      },
+      "note": {
+        "en": "71 km of dedicated high-speed track, from the Lembeek viaduct past Ath and Antoing to the border at Esplechin–Wannehain, including the 2,005 m Arbre viaduct. The drawn OpenStreetMap line measures about 73.1 km, 3% longer than the quoted figure. The Dutch Wikipedia dates the first section, Y Antoing to the border, to 2 June 1996 and the full line to 14 December 1997; the English and French articles give only 1997. Total construction cost: the English and French Wikipedia articles state EUR 1.42 billion without a citation, and the Dutch article states EUR 1.08 billion, so no cost figure is recorded.",
+        "ro": "71 km de cale dedicată vitezei mari, de la viaductul Lembeek, pe lângă Ath și Antoing, până la frontiera de la Esplechin–Wannehain, inclusiv viaductul Arbre de 2.005 m. Linia desenată din OpenStreetMap măsoară circa 73,1 km, cu 3% mai mult decât cifra citată. Wikipedia în neerlandeză datează prima secțiune, de la Y Antoing la frontieră, la 2 iunie 1996 și întreaga linie la 14 decembrie 1997; articolele în engleză și franceză indică doar 1997. Costul total al construcției: articolele Wikipedia în engleză și franceză indică 1,42 miliarde EUR fără citare, iar cel în neerlandeză indică 1,08 miliarde EUR, deci nu se înregistrează nicio cifră de cost."
+      },
+      "sourceRefs": [
+        "wikipedia-en-hsl-1",
+        "wikipedia-fr-lgv-1",
+        "wikipedia-nl-hsl-1",
+        "osm-hsl-1"
+      ],
+      "geometryRef": "lembeek-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-hsl-1",
+      "title": "Wikipedia (en): HSL 1",
+      "url": "https://en.wikipedia.org/wiki/HSL_1",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-fr-lgv-1",
+      "title": "Wikipédia (fr): LGV 1",
+      "url": "https://fr.wikipedia.org/wiki/LGV_1",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-nl-hsl-1",
+      "title": "Wikipedia (nl): HSL 1",
+      "url": "https://nl.wikipedia.org/wiki/HSL_1",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-hsl-1",
+      "title": "OpenStreetMap contributors (ODbL): relations 57712 (LGV 1 - HSL 1) and 255385 (L96N)",
+      "url": "https://www.openstreetmap.org/relation/57712",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

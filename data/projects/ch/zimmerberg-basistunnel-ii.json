@@ -1,0 +1,105 @@
+{
+  "id": "ch-zimmerberg-basistunnel-ii",
+  "country": "ch",
+  "category": "tunnel",
+  "name": {
+    "en": "Zimmerberg Base Tunnel II (Thalwil – Zug)",
+    "ro": "Tunelul de bază Zimmerberg II (Thalwil – Zug)"
+  },
+  "description": {
+    "en": "Second stage of the Zimmerberg Base Tunnel, two tunnel tubes, 10.8 km long, from the Nidelbad branching structure to the junction with the main line at Litti near Baar. It continues the second double track Zürich–Thalwil and includes a preliminary investment for an underground branch to a later Meilibach tunnel. Part of the AS2035 rail expansion step; in the design and public-exhibition phase at 31 December 2025, with a forecast commissioning date of 10 December 2039.",
+    "ro": "A doua etapă a tunelului de bază Zimmerberg, două tuburi de tunel, lungi de 10,8 km, de la structura de ramificare Nidelbad până la racordul cu linia principală de la Litti, lângă Baar. Continuă a doua linie dublă Zürich–Thalwil și include o investiție preliminară pentru o ramificație subterană spre un viitor tunel Meilibach. Face parte din etapa de extindere feroviară AS2035; la 31 decembrie 2025 se afla în faza de proiect pentru consultare publică, cu punere în funcțiune prognozată la 10 decembrie 2039."
+  },
+  "operator": "ch-sbb",
+  "lots": [
+    {
+      "id": "zimmerberg-basistunnel-ii",
+      "name": {
+        "en": "Zimmerberg Base Tunnel II, Nidelbad – Litti (incl. Meilibach tunnel connection)",
+        "ro": "Tunelul de bază Zimmerberg II, Nidelbad – Litti (incl. racordul tunelului Meilibach)"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2039-12-10"
+      },
+      "lengthKm": 10.8,
+      "profile": {
+        "tunnelKm": 10.8,
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "cost": {
+        "estimated": {
+          "amount": 1517.7,
+          "currency": "CHF",
+          "year": 2014,
+          "note": "Cost basis of the AS2035 commitment credit (price level 12/2014, excluding inflation and VAT)."
+        },
+        "revisions": [
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 1546.9,
+              "currency": "CHF",
+              "year": 2014,
+              "note": "Final-cost forecast at the price level of the commitment credit (12/2014), excluding VAT."
+            },
+            "date": "2025-12-31",
+            "note": "State at 31 December 2025; 19.3 million CHF invoiced to that date.",
+            "sourceRef": "bav-standbericht-2025-datenbeilage"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Rail infrastructure fund (BIF), expansion step AS2035",
+            "ro": "Fondul pentru infrastructura feroviară (BIF), etapa de extindere AS2035"
+          }
+        }
+      ],
+      "note": {
+        "en": "Not under construction. The forecast commissioning date is the BAV's, not a contract deadline. The 10.8 km length is the BAV sector plan figure for the two tubes; the cost covers the tunnel including the connection for the Meilibach tunnel, which is a separate, later project. The drawn OpenStreetMap line (proposed, tagged opening 2040) measures about 11.1 km. Separately, the AS30 planning credit for Thalwil–Zug (45.0 million CHF budgeted, 3.4 invoiced) is not a construction cost.",
+        "ro": "Nu este în construcție. Data prognozată a punerii în funcțiune este cea a BAV, nu un termen contractual. Lungimea de 10,8 km este cifra din planul sectorial al BAV pentru cele două tuburi; costul acoperă tunelul inclusiv racordul pentru tunelul Meilibach, care este un proiect separat, ulterior. Linia desenată din OpenStreetMap (proiectată, cu deschidere 2040) măsoară circa 11,1 km. Separat, creditul de proiectare AS30 pentru Thalwil–Zug (45,0 milioane CHF bugetate, 3,4 facturate) nu este un cost de construcție."
+      },
+      "sourceRefs": [
+        "bav-standbericht-2025-datenbeilage",
+        "bav-sachplan-ob-1-2-zimmerberg",
+        "wikipedia-de-zimmerberg-basistunnel",
+        "openstreetmap-zimmerberg-basistunnel-2"
+      ],
+      "geometryRef": "zimmerberg-basistunnel-ii"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bav-standbericht-2025-datenbeilage",
+      "title": "BAV: Standbericht 2025, Datenbeilage Kennzahlen Eisenbahnausbauprogramme BIF (state 31.12.2025)",
+      "url": "https://www.bav.admin.ch/dam/de/sd-web/asaXIEGVpouJ/Datenbeilage_Standbericht_2025_d.pdf",
+      "publisher": "Bundesamt für Verkehr (BAV)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "bav-sachplan-ob-1-2-zimmerberg",
+      "title": "BAV: Sachplan Verkehr, Teil Infrastruktur Schiene, Objektblatt OB 1.2 Zimmerberg (19.09.2025)",
+      "url": "https://www.bav.admin.ch/dam/de/sd-web/BzwgDAakNsjk/ob-1-2-zimmerberg.pdf",
+      "publisher": "Bundesamt für Verkehr (BAV)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-de-zimmerberg-basistunnel",
+      "title": "Wikipedia (de): Zimmerberg-Basistunnel",
+      "url": "https://de.wikipedia.org/wiki/Zimmerberg-Basistunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-zimmerberg-basistunnel-2",
+      "title": "OpenStreetMap contributors: way 1488536135, Zimmerberg-Basistunnel 2 (railway=proposed), ODbL",
+      "url": "https://www.openstreetmap.org/way/1488536135",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "is-kjalarnes-widening",
+  "country": "is",
+  "category": "highway",
+  "name": {
+    "en": "Ring Road (Route 1) widening at Kjalarnes",
+    "ro": "Lărgirea Drumului Inelar (Ruta 1) la Kjalarnes"
+  },
+  "description": {
+    "en": "Widening of Route 1 (Vesturlandsvegur) north of Reykjavík, from Varmhólar to the Hvalfjarðarvegur junction, from a 1+1 road with almost 30 junctions and crossings to a 2+1 road with separated carriageways, roundabouts and side roads. Vegagerðin describes the whole scheme as about 9 km and builds it in two stages.",
+    "ro": "Lărgirea Rutei 1 (Vesturlandsvegur) la nord de Reykjavík, de la Varmhólar până la intersecția cu Hvalfjarðarvegur, de la un drum 1+1 cu aproape 30 de intersecții și traversări la un drum 2+1 cu benzi separate, sensuri giratorii și drumuri laterale. Vegagerðin descrie întregul proiect ca având circa 9 km și îl execută în două etape."
+  },
+  "operator": "is-vegagerdin",
+  "sources": [
+    {
+      "id": "vegagerdin-kjalarnes",
+      "title": "Vegagerðin: Um Kjalarnes (Hringvegur um Kjalarnes)",
+      "url": "https://www.vegagerdin.is/verkefnin/framkvaemdir/hringvegur-um-kjalarnes",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-tender-23-096",
+      "title": "Vegagerðin: Útboð 23-096, Hringvegur (1) um Kjalarnes, 2. áfangi, Vallá – Hvalfjörður",
+      "url": "https://www.vegagerdin.is/verkefnin/utbod/hringvegur-1-um-kjalarnes-2-afangi-valla-hvalfjordur",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-news-stage1-contract",
+      "title": "Vegagerðin: Skrifað undir samning um breikkun Hringvegar á Kjalarnesi",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/skrifad-undir-samning-um-breikkun-hringvegar-a-kjalarnesi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-news-stage2-contract",
+      "title": "Vegagerðin: Samið um breikkun Hringvegar á Kjalarnesi",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/samid-um-breikkun-hringvegar-a-kjalarnesi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-vesturlandsvegur",
+      "title": "OpenStreetMap: Vesturlandsvegur (Route 1) ways between Varmhólar and Hvalfjarðarvegur (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1149463722",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lots": [
+    {
+      "id": "stage-1-varmholar-valla",
+      "name": {
+        "en": "Stage 1: Varmhólar – Vallá",
+        "ro": "Etapa 1: Varmhólar – Vallá"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2022-09"
+      },
+      "lengthKm": 4.1,
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "Ístak hf.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Vegagerðin and Ístak signed the contract on 10 September 2022 for the 4.1 km Varmhólar–Vallá section: the existing 2-lane road becomes 2+1 with separated carriageways, with a roundabout at Móa, two steel-plate underpasses at Varmhólar and Saltvík, a rest area, side roads and paths. Ístak was to start work immediately. The project page lists the works period as 2020–2027 and does not give an opening date, so none is recorded. No contract value was found. The drawn OpenStreetMap line (one carriageway) is longer than the stated 4.1 km; the sourced figure is kept.",
+        "ro": "Vegagerðin și Ístak au semnat contractul la 10 septembrie 2022 pentru sectorul Varmhólar–Vallá de 4,1 km: drumul existent cu 2 benzi devine 2+1 cu benzi separate, cu un sens giratoriu la Móa, două pasaje subterane din plăci de oțel la Varmhólar și Saltvík, o zonă de odihnă, drumuri laterale și piste. Ístak urma să înceapă imediat lucrările. Pagina proiectului indică perioada lucrărilor ca 2020–2027 și nu dă o dată de deschidere, deci nu se înregistrează una. Nu s-a găsit valoarea contractului. Linia OpenStreetMap desenată (o singură cale de rulare) este mai lungă decât cei 4,1 km declarați; cifra din sursă este păstrată."
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2022-09",
+          "sourceRef": "vegagerdin-news-stage1-contract",
+          "note": {
+            "en": "Contract signed between Vegagerðin and Ístak hf.",
+            "ro": "Contract semnat între Vegagerðin și Ístak hf."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "vegagerdin-kjalarnes",
+        "vegagerdin-news-stage1-contract",
+        "osm-vesturlandsvegur"
+      ],
+      "geometryRef": "stage-1-varmholar-valla"
+    },
+    {
+      "id": "stage-2-valla-hvalfjordur",
+      "name": {
+        "en": "Stage 2: Vallá – Hvalfjörður",
+        "ro": "Etapa 2: Vallá – Hvalfjörður"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-10-27",
+        "expectedOpening": "2029-09-30"
+      },
+      "lengthKm": 5.6,
+      "profile": {
+        "works": "upgrade"
+      },
+      "cost": {
+        "estimated": {
+          "amount": 5180.54,
+          "currency": "ISK",
+          "scope": "works",
+          "note": "Estimated contractor cost (áætlaður verktakakostnaður) of ISK 5,180,542,567 in tender 23-096. The price year is not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Suðurverk hf.",
+          "role": "builder"
+        },
+        {
+          "name": "Fossvélar ehf.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Tender 23-096 covers the 5.6 km from Vallá to Hvalfjarðarvegur: the 2-lane road becomes 2+1 and 2+2 with separated carriageways, with two roundabouts, new underpasses at Grundarhverfi and Arnarhamar, an extension of the underpass at Klébergsskóli, side roads and paths. It was advertised on 15 July 2026 and bids were opened on 15 September 2026. Suðurverk hf. and Fossvélar ehf. submitted the lowest bid, ISK 4,680,697,303, against the estimate; the page does not state the contract value, so none is recorded. Vegagerðin concluded the contract with them on 27 October 2026. The tender requires the works to be fully complete by 30 September 2029. The drawn OpenStreetMap line (one carriageway) is shorter than the stated 5.6 km; the sourced figure is kept.",
+        "ro": "Licitația 23-096 acoperă cei 5,6 km de la Vallá la Hvalfjarðarvegur: drumul cu 2 benzi devine 2+1 și 2+2 cu benzi separate, cu două sensuri giratorii, pasaje noi la Grundarhverfi și Arnarhamar, prelungirea pasajului de la Klébergsskóli, drumuri laterale și piste. A fost anunțată la 15 iulie 2026, iar ofertele au fost deschise la 15 septembrie 2026. Suðurverk hf. și Fossvélar ehf. au depus cea mai mică ofertă, 4.680.697.303 ISK, față de estimare; pagina nu indică valoarea contractului, deci nu se înregistrează una. Vegagerðin a încheiat contractul cu ele la 27 octombrie 2026. Licitația cere finalizarea completă a lucrărilor până la 30 septembrie 2029. Linia OpenStreetMap desenată (o singură cale de rulare) este mai scurtă decât cei 5,6 km declarați; cifra din sursă este păstrată."
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2026-07-15",
+          "sourceRef": "vegagerdin-tender-23-096",
+          "note": {
+            "en": "Tender advertised.",
+            "ro": "Licitație anunțată."
+          }
+        },
+        {
+          "kind": "awarded",
+          "date": "2026-10-27",
+          "sourceRef": "vegagerdin-news-stage2-contract",
+          "note": {
+            "en": "Contract concluded with Suðurverk hf. and Fossvélar ehf.",
+            "ro": "Contract încheiat cu Suðurverk hf. și Fossvélar ehf."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "vegagerdin-kjalarnes",
+        "vegagerdin-tender-23-096",
+        "vegagerdin-news-stage2-contract",
+        "osm-vesturlandsvegur"
+      ],
+      "geometryRef": "stage-2-valla-hvalfjordur"
+    }
+  ]
+}

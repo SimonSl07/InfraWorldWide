@@ -1,0 +1,90 @@
+{
+  "id": "be-hsl-2",
+  "country": "be",
+  "category": "railway",
+  "name": {
+    "en": "HSL 2 (line 2) Leuven – Ans",
+    "ro": "HSL 2 (linia 2) Leuven – Ans"
+  },
+  "description": {
+    "en": "Belgian high-speed line between Leuven and Ans near Liège, running alongside the A3/E40 motorway, with 25 kV AC electrification and two tracks. It opened on 15 December 2002 and is owned and maintained by Infrabel. The line itself is about 66 km; the 95 km figure quoted for the HSL 2 project (61 km of new track and 34 km of modernised existing lines) also counts upgraded sections of the classic network that are not part of line 2.",
+    "ro": "Linie belgiană de mare viteză între Leuven și Ans, lângă Liège, paralelă cu autostrada A3/E40, electrificată la 25 kV c.a. și cu două linii. A fost deschisă la 15 decembrie 2002 și aparține Infrabel, care o și întreține. Linia propriu-zisă are circa 66 km; cifra de 95 km citată pentru proiectul HSL 2 (61 km de linie nouă și 34 km de linii existente modernizate) include și secțiuni modernizate ale rețelei clasice care nu fac parte din linia 2."
+  },
+  "operator": "be-infrabel",
+  "lots": [
+    {
+      "id": "leuven-ans",
+      "name": {
+        "en": "Leuven – Ans",
+        "ro": "Leuven – Ans"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2002-12-15"
+      },
+      "lengthKm": 66.2,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 300,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2002-12-15",
+          "sourceRef": "wikipedia-en-hsl-2",
+          "note": {
+            "en": "Began service.",
+            "ro": "A intrat în exploatare."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length 66.2 km as given for line 2 on English Wikipedia; Infrabel's open data lists line 2 in three sections (Leuven – Hoegaarden, Hoegaarden – Pousset, Pousset – Ans) totalling 66.7 km, and Dutch Wikipedia gives 64.7 km. Speed is limited to 200 km/h out of Leuven and through the 758 m Bierbeek tunnel, then 300 km/h alongside the E40. The drawn line is 65.1 km from OpenStreetMap relation L2 and starts about 1 km east of the start of Infrabel's section at Leuven. The 61 km of new track and 34 km of modernised line quoted for the whole HSL 2 project are not split by section in the sources, so the modernised parts (classic line 36 near Brussels and Liège) are not drawn here.",
+        "ro": "Lungime de 66,2 km, așa cum este dată pentru linia 2 în Wikipedia engleză; datele deschise Infrabel împart linia 2 în trei secțiuni (Leuven – Hoegaarden, Hoegaarden – Pousset, Pousset – Ans) însumând 66,7 km, iar Wikipedia neerlandeză indică 64,7 km. Viteza este limitată la 200 km/h la ieșirea din Leuven și prin tunelul Bierbeek de 758 m, apoi la 300 km/h lângă E40. Traseul desenat are 65,1 km din relația OpenStreetMap L2 și începe la circa 1 km est de începutul secțiunii Infrabel de la Leuven. Cele 61 km de linie nouă și 34 km de linie modernizată citate pentru întregul proiect HSL 2 nu sunt defalcate pe secțiuni în surse, deci părțile modernizate (linia clasică 36 lângă Bruxelles și Liège) nu sunt desenate aici."
+      },
+      "sourceRefs": [
+        "wikipedia-en-hsl-2",
+        "wikipedia-en-hsr-belgium",
+        "wikipedia-nl-hsl-2",
+        "infrabel-lijnsecties",
+        "osm-l2"
+      ],
+      "geometryRef": "leuven-ans"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-hsl-2",
+      "title": "HSL 2 (Wikipedia, English)",
+      "url": "https://en.wikipedia.org/wiki/HSL_2",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-hsr-belgium",
+      "title": "High-speed rail in Belgium (Wikipedia, English)",
+      "url": "https://en.wikipedia.org/wiki/High-speed_rail_in_Belgium",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-nl-hsl-2",
+      "title": "HSL 2 (Wikipedia, Dutch)",
+      "url": "https://nl.wikipedia.org/wiki/HSL_2",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "infrabel-lijnsecties",
+      "title": "Infrabel open data: line sections (lijnsecties), line 2",
+      "url": "https://opendata.infrabel.be/api/explore/v2.1/catalog/datasets/lijnsecties/records?where=label%3D%222%22",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-l2",
+      "title": "OpenStreetMap relation 57694 (HSL 2, ref L2), ODbL",
+      "url": "https://www.openstreetmap.org/relation/57694",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

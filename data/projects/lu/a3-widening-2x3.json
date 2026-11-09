@@ -1,0 +1,294 @@
+{
+  "id": "lu-a3-widening-2x3",
+  "country": "lu",
+  "category": "highway",
+  "name": {
+    "en": "A3 widening to 2x3 lanes (Croix de Gasperich – French border)",
+    "ro": "Lărgirea A3 la 2x3 benzi (Croix de Gasperich – frontiera franceză)"
+  },
+  "description": {
+    "en": "Widening of the existing A3 (opened 1978) from the Croix de Gasperich to the French border at Dudelange, about 12 km. The works add a third lane in each direction and a hard shoulder, rebuild the Livange and Dudelange-Centre interchanges and rework the Croix de Bettembourg. The law of 2017 (bill 7144) caps the works at EUR 356 million including VAT at the October 2016 construction price index; the bill's own breakdown gives EUR 304.78 million excluding VAT. The bill splits the project into five lots, A to E, which are kept here, except that the first-opened section is cut at the Berchem rest area and the short stretch from there to Livange is drawn with lot B. The motorway itself is not recorded in this dataset as a separate project, so these lots carry its length. The first 2x3 section, Croix de Gasperich to the Berchem rest area, opened on 23 and 30 March 2025 with a car-pool and bus lane. The government gives 2030 for the full commissioning of the remaining sections.",
+    "ro": "Lărgirea autostrăzii A3 existente (deschisă în 1978) de la Croix de Gasperich până la frontiera franceză de la Dudelange, pe circa 12 km. Lucrările adaugă o a treia bandă pe sens și o bandă de urgență, refac nodurile Livange și Dudelange-Centre și remaniază Croix de Bettembourg. Legea din 2017 (proiectul 7144) plafonează lucrările la 356 de milioane EUR cu TVA, la indicele prețurilor din construcții din octombrie 2016; defalcarea din proiectul de lege dă 304,78 milioane EUR fără TVA. Proiectul de lege împarte lucrarea în cinci loturi, A–E, păstrate aici, cu diferența că primul sector deschis este tăiat la zona de servicii Berchem, iar scurtul tronson de acolo până la Livange este desenat cu lotul B. Autostrada propriu-zisă nu este înregistrată separat în acest set de date, deci loturile de aici îi poartă lungimea. Primul sector 2x3, de la Croix de Gasperich la zona Berchem, s-a deschis pe 23 și 30 martie 2025, cu o bandă pentru covoiturare și autobuze. Guvernul indică 2030 pentru punerea în funcțiune completă a sectoarelor rămase."
+  },
+  "operator": "lu-pch",
+  "cost": {
+    "amount": 304.78,
+    "currency": "EUR",
+    "year": 2016,
+    "scope": "programme",
+    "note": "Gross amount excluding VAT in the financial sheet of bill 7144, at construction price index 764.68 (October 2016). The statutory cap is EUR 356 million including 17% VAT. Covers all five lots."
+  },
+  "lots": [
+    {
+      "id": "lot-a-gasperich-berchem",
+      "name": {
+        "en": "Lot A: Croix de Gasperich – Berchem rest area",
+        "ro": "Lot A: Croix de Gasperich – zona de servicii Berchem"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "2017-04-07",
+        "opened": "2025-03-23"
+      },
+      "lengthKm": 3.69,
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2017-04-07",
+          "note": {
+            "en": "Minister François Bausch presents the 2x3 project.",
+            "ro": "Ministrul François Bausch prezintă proiectul 2x3."
+          },
+          "sourceRef": "gov-bausch-2017"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-03-23",
+          "note": {
+            "en": "Berchem rest area to Croix de Gasperich direction opened on 23 March 2025; the Croix de Gasperich to Berchem direction followed on 30 March 2025.",
+            "ro": "Sensul zona Berchem – Croix de Gasperich s-a deschis pe 23 martie 2025; sensul Croix de Gasperich – Berchem a urmat pe 30 martie 2025."
+          },
+          "sourceRef": "gov-a3-opening-2025"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Charged to the Fonds des Routes under article 3 of bill 7144.",
+            "ro": "Suportat din Fonds des Routes, conform art. 3 din proiectul de lege 7144."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "lanes": 6
+      },
+      "note": {
+        "en": "Lot A of bill 7144 runs from the Croix de Gasperich, at the end of the A6 slip road towards Metz, to the Livange interchange, and widens 3,500 m towards France and 2,600 m towards Luxembourg. The section opened is the one to the Berchem rest area, and the carriageway between Berchem and Livange was already three lanes towards Luxembourg, so that stretch is drawn with lot B. The third lane is a car-pool and bus lane (at least two occupants); towards Gasperich a bus lane also runs on the hard shoulder. Dynamic lane allocation was announced for early 2026. Length measured from OpenStreetMap geometry, cut at the Berchem rest area slip road, one carriageway.",
+        "ro": "Lotul A din proiectul de lege 7144 merge de la Croix de Gasperich, la capătul bretelei A6 spre Metz, până la nodul Livange, și lărgește 3.500 m spre Franța și 2.600 m spre Luxembourg. Sectorul deschis este cel până la zona Berchem, iar calea de rulare dintre Berchem și Livange avea deja trei benzi spre Luxembourg, așa că acel tronson este desenat cu lotul B. A treia bandă este rezervată covoiturării și autobuzelor (cel puțin doi ocupanți); spre Gasperich, o bandă pentru autobuze funcționează și pe banda de urgență. Alocarea dinamică a benzilor a fost anunțată pentru începutul lui 2026. Lungime măsurată pe geometria OpenStreetMap, tăiată la bretelei zonei de servicii Berchem, pe o singură cale de rulare."
+      },
+      "sourceRefs": [
+        "chd-7144",
+        "chd-7144-dossier",
+        "gov-bausch-2017",
+        "gov-a3-opening-2025",
+        "osm-a3"
+      ],
+      "geometryRef": "lot-a-gasperich-berchem"
+    },
+    {
+      "id": "lot-b-berchem-livange-viaduct",
+      "name": {
+        "en": "Lot B: Berchem rest area – Livange interchange and viaduct",
+        "ro": "Lot B: zona de servicii Berchem – nodul și viaductul Livange"
+      },
+      "status": "under_construction",
+      "dates": {
+        "announced": "2017-04-07"
+      },
+      "lengthKm": 2.03,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Charged to the Fonds des Routes under article 3 of bill 7144.",
+            "ro": "Suportat din Fonds des Routes, conform art. 3 din proiectul de lege 7144."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "lanes": 6
+      },
+      "note": {
+        "en": "Lot B of bill 7144 is the full rebuild of the Livange interchange (widening of structure OA1020) and the widening of the Livange viaduct (OA1025). The lot ends at kilometre point 7+096, where the lot C1.A tender begins. A contract notice for the viaduct (OA1025) was published in the Official Journal of the EU on 14 March 2022. No lot-level construction start or award is published in the sources consulted; the status rests on the ministry's mention of preparatory works for the Livange viaduct in October 2025. Length measured from OpenStreetMap geometry; the drawn stretch also includes the approach from the Berchem rest area, which the bill counts in lot A.",
+        "ro": "Lotul B din proiectul de lege 7144 este refacerea completă a nodului Livange (cu lărgirea structurii OA1020) și lărgirea viaductului Livange (OA1025). Lotul se termină la punctul kilometric 7+096, unde începe licitația pentru lotul C1.A. Un anunț de contract pentru viaduct (OA1025) a fost publicat în Jurnalul Oficial al UE pe 14 martie 2022. În sursele consultate nu există o dată de începere a lucrărilor sau o atribuire pe lot; statutul se bazează pe menționarea de către minister, în octombrie 2025, a lucrărilor pregătitoare la viaductul Livange. Lungime măsurată pe geometria OpenStreetMap; tronsonul desenat include și accesul dinspre zona Berchem, pe care proiectul de lege îl numără în lotul A."
+      },
+      "sourceRefs": [
+        "chd-7144-dossier",
+        "gov-bausch-2017",
+        "ted-oa1025-2022",
+        "gov-passerelle-2025",
+        "osm-a3"
+      ],
+      "geometryRef": "lot-b-berchem-livange-viaduct"
+    },
+    {
+      "id": "lot-c-livange-viaduct-bettembourg",
+      "name": {
+        "en": "Lot C: Livange viaduct – Croix de Bettembourg",
+        "ro": "Lot C: viaductul Livange – Croix de Bettembourg"
+      },
+      "status": "tendered",
+      "dates": {
+        "announced": "2017-04-07"
+      },
+      "lengthKm": 2.52,
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2017-04-07",
+          "sourceRef": "gov-bausch-2017"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2026-01-05",
+          "note": {
+            "en": "Notice for lot C1.A (kilometre points 7+096 to 9+740) sent; tenders due 11 March 2026; expected start summer 2026, 550 working days.",
+            "ro": "Anunț trimis pentru lotul C1.A (punctele kilometrice 7+096–9+740); oferte până la 11 martie 2026; început estimat vara 2026, 550 de zile lucrătoare."
+          },
+          "sourceRef": "ted-lot-c1a-2026"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Charged to the Fonds des Routes under article 3 of bill 7144.",
+            "ro": "Suportat din Fonds des Routes, conform art. 3 din proiectul de lege 7144."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "lanes": 6
+      },
+      "note": {
+        "en": "Lot C of bill 7144 starts at the Alzette crossing (kilometre point 7+096) and ends at the CR161 underpass (9+620); the length is that difference. The tender for lot C1.A covers 7+096 to 9+740, both sides between 7+096 and 7+672 and the east side to 9+740, with a cycle track on the west side between Livange and CR132. No award is in the sources consulted. A footbridge over the A3 at Bettembourg, budget about EUR 1.75 million including VAT, was under construction in October 2025 as part of the widening, with completion due by May 2026.",
+        "ro": "Lotul C din proiectul de lege 7144 începe la traversarea Alzette (punctul kilometric 7+096) și se termină la pasajul inferior CR161 (9+620); lungimea este această diferență. Licitația pentru lotul C1.A acoperă 7+096–9+740, ambele părți între 7+096 și 7+672 și partea de est până la 9+740, cu o pistă de biciclete pe partea de vest între Livange și CR132. În sursele consultate nu există nicio atribuire. O pasarelă peste A3 la Bettembourg, cu buget de circa 1,75 milioane EUR cu TVA, era în construcție în octombrie 2025 în cadrul lărgirii, cu finalizare prevăzută până în mai 2026."
+      },
+      "sourceRefs": [
+        "chd-7144-dossier",
+        "gov-bausch-2017",
+        "ted-lot-c1a-2026",
+        "gov-passerelle-2025",
+        "osm-a3"
+      ],
+      "geometryRef": "lot-c-livange-viaduct-bettembourg"
+    },
+    {
+      "id": "lot-d-croix-de-bettembourg",
+      "name": {
+        "en": "Lot D: Croix de Bettembourg",
+        "ro": "Lot D: Croix de Bettembourg"
+      },
+      "status": "planned",
+      "dates": {
+        "announced": "2017-04-07"
+      },
+      "lengthKm": 1.7,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Charged to the Fonds des Routes under article 3 of bill 7144.",
+            "ro": "Suportat din Fonds des Routes, conform art. 3 din proiectul de lege 7144."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "lanes": 6
+      },
+      "note": {
+        "en": "Lot D of bill 7144 is the rework of the Croix de Bettembourg, from the CR161 underpass (kilometre point 9+620) to the high point towards Dudelange-Centre (11+320); the length is that difference. It also affects the geometry of the A13 within the interchange. No construction start, tender or award is published in the sources consulted. Only the A3 through carriageway is drawn.",
+        "ro": "Lotul D din proiectul de lege 7144 este remanierea Croix de Bettembourg, de la pasajul inferior CR161 (punctul kilometric 9+620) la punctul înalt spre Dudelange-Centre (11+320); lungimea este această diferență. Afectează și geometria A13 în cadrul nodului. În sursele consultate nu există o dată de începere a lucrărilor, o licitație sau o atribuire. Este desenată doar calea de rulare directă a A3."
+      },
+      "sourceRefs": [
+        "chd-7144-dossier",
+        "gov-bausch-2017",
+        "gov-a3-opening-2025",
+        "osm-a3"
+      ],
+      "geometryRef": "lot-d-croix-de-bettembourg"
+    },
+    {
+      "id": "lot-e-bettembourg-border",
+      "name": {
+        "en": "Lot E: Croix de Bettembourg – Dudelange-Centre – French border",
+        "ro": "Lot E: Croix de Bettembourg – Dudelange-Centre – frontiera franceză"
+      },
+      "status": "planned",
+      "dates": {
+        "announced": "2017-04-07"
+      },
+      "lengthKm": 2.02,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Charged to the Fonds des Routes under article 3 of bill 7144.",
+            "ro": "Suportat din Fonds des Routes, conform art. 3 din proiectul de lege 7144."
+          }
+        }
+      ],
+      "profile": {
+        "works": "upgrade",
+        "lanes": 6
+      },
+      "note": {
+        "en": "Lot E of bill 7144 runs from the high point before Dudelange-Centre (kilometre point 11+320) to the Luxembourg–France border and turns the Dudelange-Centre half-interchange into a full interchange. The government counts the border to Croix de Bettembourg section, with the Croix de Bettembourg to Croix de Gasperich section, in the full commissioning from 2030. No construction start, tender or award is published in the sources consulted. Length measured from OpenStreetMap geometry, ending where the OpenStreetMap ref changes from A3 to A31.",
+        "ro": "Lotul E din proiectul de lege 7144 merge de la punctul înalt dinaintea Dudelange-Centre (punctul kilometric 11+320) până la frontiera Luxembourg–Franța și transformă semi-nodul Dudelange-Centre în nod complet. Guvernul include sectorul frontieră – Croix de Bettembourg, împreună cu sectorul Croix de Bettembourg – Croix de Gasperich, în punerea în funcțiune completă din 2030. În sursele consultate nu există o dată de începere a lucrărilor, o licitație sau o atribuire. Lungime măsurată pe geometria OpenStreetMap, până unde referința OpenStreetMap trece de la A3 la A31."
+      },
+      "sourceRefs": [
+        "chd-7144-dossier",
+        "gov-bausch-2017",
+        "gov-a3-opening-2025",
+        "osm-a3"
+      ],
+      "geometryRef": "lot-e-bettembourg-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "chd-7144",
+      "title": "Chambre des Députés: dossier 7144, projet de loi relatif à la mise à 2 x 3 voies de l'autoroute A3 (déposé le 26.05.2017)",
+      "url": "https://www.chd.lu/fr/dossier/7144",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "chd-7144-dossier",
+      "title": "Chambre des Députés: dossier 7144 complet (texte, exposé des motifs, fiche financière, lots A à E)",
+      "url": "https://wdocs-pub.chd.lu/docs/compilation/docpa/pdf/7144_Dossier_Complet.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "gov-bausch-2017",
+      "title": "Gouvernement du Luxembourg: François Bausch présente le projet de la mise à 2 x 3 voies de l'autoroute A3 (7 avril 2017)",
+      "url": "https://mmtp.gouvernement.lu/fr/actualites.gouvernement2024+fr+actualites+toutes_actualites+articles+2017+04-avril+07-bausch-autoroute.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "gov-a3-opening-2025",
+      "title": "Gouvernement du Luxembourg: Ouverture du premier tronçon de l'autoroute A3 à 2x3 voies avec une voie dédiée au covoiturage/bus (mars 2025)",
+      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2025/03-mars/21-backes-autoroute-a3.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ted-oa1025-2022",
+      "title": "TED: contract notice 131632-2022, OA1025 (Livange viaduct), Division des Ouvrages d'art",
+      "url": "https://ted.europa.eu/en/notice/131632-2022/pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ted-lot-c1a-2026",
+      "title": "Mise à 2x3 voies de l'autoroute A3, Lot C1.A: Tronçon Viaduc de Livange – Croix de Bettembourg (avis de marché, copie du TED)",
+      "url": "https://statics.wedoany.com/2026/0108/20260108103911648.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "gov-passerelle-2025",
+      "title": "Administration des ponts et chaussées: Construction d'une passerelle piétonne sur l'A3 à Bettembourg (27 octobre 2025)",
+      "url": "https://pch.gouvernement.lu/fr/actualites.gouvernement2024+fr+actualites+toutes_actualites+communiques+2025+10-octobre+27-backes-passerelle-bettembourg.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-a3",
+      "title": "OpenStreetMap contributors: A 3 Autoroute de Dudelange, southbound carriageway (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
