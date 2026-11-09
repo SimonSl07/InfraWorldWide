@@ -1,0 +1,82 @@
+{
+  "id": "me-niksic-podgorica-rail",
+  "country": "me",
+  "category": "railway",
+  "name": {
+    "en": "Nikšić–Podgorica railway reconstruction",
+    "ro": "Reabilitarea căii ferate Nikšić–Podgorica"
+  },
+  "description": {
+    "en": "Reconstruction and electrification of Montenegro's 56.6 km Nikšić–Podgorica railway, reopened to service in 2012.",
+    "ro": "Reabilitarea și electrificarea liniei feroviare Nikšić–Podgorica din Muntenegru, cu 56,6 km, redeschisă în 2012."
+  },
+  "operator": "me-zicg",
+  "lastVerified": "2026-10-13",
+  "sources": [
+    {
+      "id": "niksic-podgorica-start",
+      "title": "Government of Montenegro: works begin on the Podgorica–Nikšić railway modernization",
+      "url": "https://www.gov.me/clanak/20697--11473",
+      "publisher": "Government of Montenegro",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "niksic-podgorica-opening",
+      "title": "Government of Montenegro: Nikšić–Podgorica railway opening",
+      "url": "https://www.gov.me/clanak/116700--svecano-otvaranje-pruge-niksic-podgorica",
+      "publisher": "Government of Montenegro",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "niksic-podgorica-length",
+      "title": "Government of Montenegro: 2012 railway programme report, open line length 56.60 km",
+      "url": "https://wapi.gov.me/download-preview/750a6914-6e4c-47e0-8b80-c5cc953a7fcc?version=1.0",
+      "publisher": "Government of Montenegro",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "niksic-podgorica-osm",
+      "title": "OpenStreetMap contributors: Nikšić–Podgorica railway relation 2829124",
+      "url": "https://www.openstreetmap.org/relation/2829124",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "niksic-podgorica",
+      "name": {
+        "en": "Nikšić–Podgorica",
+        "ro": "Nikšić–Podgorica"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-03-07",
+        "opened": "2012-10-01"
+      },
+      "lengthKm": 56.6,
+      "profile": {
+        "electrified": true,
+        "tracks": 1,
+        "works": "reconstruction"
+      },
+      "contractors": [
+        {
+          "name": "ŽS Brno–AŽD Praha",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "niksic-podgorica",
+      "sourceRefs": [
+        "niksic-podgorica-start",
+        "niksic-podgorica-opening",
+        "niksic-podgorica-length",
+        "niksic-podgorica-osm"
+      ],
+      "note": {
+        "en": "OSM route geometry includes station approaches and measures about 57.0 km. The recorded 56.6 km is the official open-line length, excluding station tracks.",
+        "ro": "Geometria rutei OSM include accesele din stații și măsoară aproximativ 57,0 km. Cei 56,6 km înregistrați reprezintă lungimea oficială a liniei deschise, fără liniile din stații."
+      }
+    }
+  ]
+}
