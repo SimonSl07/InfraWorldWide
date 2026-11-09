@@ -1,0 +1,596 @@
+{
+  "id": "gb-a9-dualling-perth-inverness",
+  "country": "gb",
+  "category": "highway",
+  "name": {
+    "en": "A9 Dualling Perth to Inverness",
+    "ro": "Dualizarea A9 Perth – Inverness"
+  },
+  "description": {
+    "en": "Transport Scotland's programme to upgrade the single-carriageway stretches of the A9 between Perth and Inverness to dual carriageway: 83 miles (133 km) by its count, at GBP 3.97 billion in April 2025 prices. Its project page lists 11 sections, one lot each here, covering only the single-carriageway parts. Luncarty – Pass of Birnam (2021) and Kincraig – Dalraddy (2017) are open, Tay Crossing – Ballinluig and Tomatin – Moy are under construction, Pitlochry – Killiecrankie is in procurement and the rest are in preparation. The 2026 Delivery Plan targets completion by the end of 2035 under a Framework Agreement of five contracts for the remaining sections. Section costs are Transport Scotland's estimated total scheme costs at the price year stated on each section page, not outturns, and the GBP 1.94 billion Delivery Framework is a framework agreement, not a section contract.",
+    "ro": "Programul Transport Scotland de modernizare a tronsoanelor cu un singur carosabil ale A9 dintre Perth și Inverness la carosabil dublu: 83 de mile (133 km) după calculul acestuia, la 3,97 miliarde GBP în prețuri din aprilie 2025. Pagina proiectului listează 11 sectoare, câte un lot aici, care acoperă doar părțile cu un singur carosabil. Luncarty – Pass of Birnam (2021) și Kincraig – Dalraddy (2017) sunt deschise, Tay Crossing – Ballinluig și Tomatin – Moy sunt în construcție, Pitlochry – Killiecrankie este în achiziție, iar restul sunt în pregătire. Planul de livrare 2026 vizează finalizarea până la sfârșitul lui 2035 printr-un acord-cadru cu cinci contracte pentru sectoarele rămase. Costurile pe sector sunt costurile totale estimate ale schemelor de către Transport Scotland, în anul de preț indicat pe pagina fiecărui sector, nu costuri finale, iar acordul-cadru de livrare de 1,94 miliarde GBP este un acord-cadru, nu un contract de sector."
+  },
+  "operator": "gb-transport-scotland",
+  "lots": [
+    {
+      "id": "luncarty-pass-of-birnam",
+      "name": {
+        "en": "Luncarty – Pass of Birnam",
+        "ro": "Luncarty – Pass of Birnam"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021-08"
+      },
+      "lengthKm": 9.5,
+      "cost": {
+        "estimated": {
+          "amount": 99,
+          "currency": "GBP",
+          "year": 2023,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2023 prices; includes GBP 97 million spent up to 18 October 2023."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Transport Scotland gives the section as 9.5 km and describes it as completed. Its programme page records dualling operational in August 2021. The drawn line starts at the Bankfoot south junction, the nearest mapped junction to the published length, and ends where the mapped dual carriageway ends at Pass of Birnam.",
+        "ro": "Transport Scotland indică sectorul ca 9,5 km și îl descrie ca finalizat. Pagina programului consemnează dualizarea ca operațională în august 2021. Linia desenată începe la nodul Bankfoot sud, cel mai apropiat nod cartografiat de lungimea publicată, și se încheie unde se termină carosabilul dublu cartografiat la Pass of Birnam."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-luncarty",
+        "osm"
+      ],
+      "geometryRef": "luncarty-pass-of-birnam"
+    },
+    {
+      "id": "pass-of-birnam-tay-crossing",
+      "name": {
+        "en": "Pass of Birnam – Tay Crossing",
+        "ro": "Pass of Birnam – Tay Crossing"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2033-12"
+      },
+      "lengthKm": 8.4,
+      "cost": {
+        "estimated": {
+          "amount": 478,
+          "currency": "GBP",
+          "year": 2023,
+          "scope": "total",
+          "note": "Stated by Transport Scotland as the estimated outturn scheme cost range for the proposed scheme. April 2023 prices."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Draft Orders and an Environmental Impact Assessment Report were published on 30 May 2025 for public consultation. The 2026 Delivery Plan expects procurement to start in summer 2028, contract award in spring 2029 and dualling to be operational by the end of 2033, subject to the statutory processes. Drawn length is 7.6 km against the published 8.4 km. Geometry follows the existing A9 northbound carriageway in OpenStreetMap, not the future alignment.",
+        "ro": "Proiectele de ordine și un raport de evaluare a impactului asupra mediului au fost publicate la 30 mai 2025 pentru consultare publică. Planul de livrare 2026 prevede începerea achiziției în vara lui 2028, atribuirea în primăvara lui 2029 și dualizarea operațională până la sfârșitul lui 2033, sub rezerva procedurilor legale. Lungimea desenată este de 7,6 km, față de 8,4 km publicați. Geometria urmează sensul nordic al A9 existent din OpenStreetMap, nu viitorul traseu."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-pass-tay",
+        "osm"
+      ],
+      "geometryRef": "pass-of-birnam-tay-crossing"
+    },
+    {
+      "id": "tay-crossing-ballinluig",
+      "name": {
+        "en": "Tay Crossing – Ballinluig",
+        "ro": "Tay Crossing – Ballinluig"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-07",
+        "expectedOpening": "2028-12"
+      },
+      "lengthKm": 8.2,
+      "cost": {
+        "estimated": {
+          "amount": 257,
+          "currency": "GBP",
+          "year": 2025,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. Q2 2025 prices."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 152.74,
+              "currency": "GBP",
+              "year": 2025,
+              "scope": "works"
+            },
+            "date": "2025-07",
+            "note": "Construction contract with Wills Bros Civil Engineering Ltd, Q2 2025 prices.",
+            "sourceRef": "ts-news-tay-award"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Described by Transport Scotland as a Scottish Government investment of GBP 257 million in the project.",
+            "ro": "Descrisă de Transport Scotland drept o investiție a Guvernului Scoției de 257 milioane GBP în proiect."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Wills Bros Civil Engineering Ltd",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 152.74,
+          "currency": "GBP",
+          "year": 2025,
+          "scope": "works"
+        }
+      },
+      "note": {
+        "en": "The construction contract was announced on 18 July 2025 as the fourth section of the programme, with the new dual carriageway expected to be operational by the end of 2028. It includes a new overbridge at Guay South and an underbridge at Kindallachan. Geometry follows the existing A9 northbound carriageway in OpenStreetMap, not the future alignment.",
+        "ro": "Contractul de construcție a fost anunțat la 18 iulie 2025 ca al patrulea sector al programului, cu noua autostradă cu carosabil dublu așteptată să fie operațională până la sfârșitul lui 2028. Include un pasaj superior la Guay South și un pasaj inferior la Kindallachan. Geometria urmează sensul nordic al A9 existent din OpenStreetMap, nu viitorul traseu."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-tay-ballinluig",
+        "ts-news-tay-award",
+        "osm"
+      ],
+      "geometryRef": "tay-crossing-ballinluig"
+    },
+    {
+      "id": "pitlochry-killiecrankie",
+      "name": {
+        "en": "Pitlochry – Killiecrankie",
+        "ro": "Pitlochry – Killiecrankie"
+      },
+      "status": "tendered",
+      "dates": {
+        "expectedOpening": "2030-12"
+      },
+      "lengthKm": 6.4,
+      "cost": {
+        "estimated": {
+          "amount": 296,
+          "currency": "GBP",
+          "year": 2023,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2023 prices; includes GBP 27 million spent up to end March 2025."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-07",
+          "note": {
+            "en": "Commencement of procurement, per the programme details page.",
+            "ro": "Începerea achiziției, conform paginii cu detaliile programului."
+          },
+          "sourceRef": "ts-programme"
+        }
+      ],
+      "note": {
+        "en": "Transport Scotland lists the section as in preparation and in procurement, with contract award expected in autumn 2026 and dualling operational by the end of 2030. Shortlisted contractors were named on 11 November 2025. The end of the drawn line is the Killiecrankie junction; the start is placed 6.4 km south of it, the published length.",
+        "ro": "Transport Scotland listează sectorul ca aflat în pregătire și în procedură de achiziție, cu atribuirea contractului așteptată în toamna lui 2026 și dualizarea operațională până la sfârșitul lui 2030. Contractanții preselectați au fost numiți la 11 noiembrie 2025. Capătul liniei desenate este nodul Killiecrankie; începutul este plasat la 6,4 km sud de acesta, lungimea publicată."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-pitlochry",
+        "osm"
+      ],
+      "geometryRef": "pitlochry-killiecrankie"
+    },
+    {
+      "id": "killiecrankie-glen-garry",
+      "name": {
+        "en": "Killiecrankie – Glen Garry",
+        "ro": "Killiecrankie – Glen Garry"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2034-12"
+      },
+      "lengthKm": 22,
+      "cost": {
+        "estimated": {
+          "amount": 627,
+          "currency": "GBP",
+          "year": 2025,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2025 prices; includes GBP 31 million spent up to end March 2025."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "The 2026 Delivery Plan expects procurement to start in spring 2029, contract award in winter 2029/30 and dualling to be operational by the end of 2034. The drawn line runs from the Killiecrankie junction to the point 9.5 km south of Dalwhinnie and measures 33.8 km against the published 22 km, so it probably includes stretches of the A9 that are already dual. Geometry follows the existing A9 northbound carriageway in OpenStreetMap, not the future alignment.",
+        "ro": "Planul de livrare 2026 prevede începerea achiziției în primăvara lui 2029, atribuirea în iarna 2029/30 și dualizarea operațională până la sfârșitul lui 2034. Linia desenată merge de la nodul Killiecrankie până în punctul aflat la 9,5 km sud de Dalwhinnie și măsoară 33,8 km, față de 22 km publicați, deci include probabil porțiuni ale A9 care sunt deja cu carosabil dublu. Geometria urmează sensul nordic al A9 existent din OpenStreetMap, nu viitorul traseu."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-killiecrankie",
+        "osm"
+      ],
+      "geometryRef": "killiecrankie-glen-garry"
+    },
+    {
+      "id": "glen-garry-dalwhinnie",
+      "name": {
+        "en": "Glen Garry – Dalwhinnie",
+        "ro": "Glen Garry – Dalwhinnie"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2034-12"
+      },
+      "lengthKm": 9.5,
+      "cost": {
+        "estimated": {
+          "amount": 247,
+          "currency": "GBP",
+          "year": 2025,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2025 prices; includes GBP 19 million spent up to end March 2025."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Transport Scotland will procure this section together with Dalwhinnie to Crubenmore as a single Glen Garry to Crubenmore contract. The 2026 Delivery Plan expects procurement to start in autumn 2027, award in summer 2028 and dualling to be operational by the end of 2034. The start of the drawn line is placed 9.5 km south of Dalwhinnie, the published length. Geometry follows the existing A9 northbound carriageway in OpenStreetMap, not the future alignment.",
+        "ro": "Transport Scotland va achiziționa acest sector împreună cu Dalwhinnie – Crubenmore printr-un singur contract Glen Garry – Crubenmore. Planul de livrare 2026 prevede începerea achiziției în toamna lui 2027, atribuirea în vara lui 2028 și dualizarea operațională până la sfârșitul lui 2034. Începutul liniei desenate este plasat la 9,5 km sud de Dalwhinnie, lungimea publicată. Geometria urmează sensul nordic al A9 existent din OpenStreetMap, nu viitorul traseu."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-glen-garry",
+        "osm"
+      ],
+      "geometryRef": "glen-garry-dalwhinnie"
+    },
+    {
+      "id": "dalwhinnie-crubenmore",
+      "name": {
+        "en": "Dalwhinnie – Crubenmore",
+        "ro": "Dalwhinnie – Crubenmore"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2034-12"
+      },
+      "lengthKm": 11,
+      "cost": {
+        "estimated": {
+          "amount": 266,
+          "currency": "GBP",
+          "year": 2025,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2025 prices; includes GBP 31 million spent up to end March 2025."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Procured together with Glen Garry to Dalwhinnie as a single Glen Garry to Crubenmore contract, with dualling expected to be operational by the end of 2034. The drawn line ends where the mapped dual carriageway at Crubenmore ends, 11.2 km from Dalwhinnie. Geometry follows the existing A9 northbound carriageway in OpenStreetMap, not the future alignment.",
+        "ro": "Achiziționat împreună cu Glen Garry – Dalwhinnie printr-un singur contract Glen Garry – Crubenmore, cu dualizarea așteptată să fie operațională până la sfârșitul lui 2034. Linia desenată se încheie unde se termină carosabilul dublu cartografiat la Crubenmore, la 11,2 km de Dalwhinnie. Geometria urmează sensul nordic al A9 existent din OpenStreetMap, nu viitorul traseu."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-dalwhinnie",
+        "osm"
+      ],
+      "geometryRef": "dalwhinnie-crubenmore"
+    },
+    {
+      "id": "crubenmore-kincraig",
+      "name": {
+        "en": "Crubenmore – Kincraig",
+        "ro": "Crubenmore – Kincraig"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2035-12"
+      },
+      "lengthKm": 16.5,
+      "cost": {
+        "estimated": {
+          "amount": 512,
+          "currency": "GBP",
+          "year": 2025,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2025 prices; includes GBP 33 million spent up to end March 2025."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "The 2026 Delivery Plan expects procurement to start in winter 2029/30, contract award in autumn 2030 and dualling to be operational by the end of 2035. Geometry follows the existing A9 northbound carriageway in OpenStreetMap, not the future alignment.",
+        "ro": "Planul de livrare 2026 prevede începerea achiziției în iarna 2029/30, atribuirea în toamna lui 2030 și dualizarea operațională până la sfârșitul lui 2035. Geometria urmează sensul nordic al A9 existent din OpenStreetMap, nu viitorul traseu."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-crubenmore",
+        "osm"
+      ],
+      "geometryRef": "crubenmore-kincraig"
+    },
+    {
+      "id": "kincraig-dalraddy",
+      "name": {
+        "en": "Kincraig – Dalraddy",
+        "ro": "Kincraig – Dalraddy"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-09"
+      },
+      "lengthKm": 7.5,
+      "cost": {
+        "estimated": {
+          "amount": 44,
+          "currency": "GBP",
+          "year": 2023,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2023 prices; includes GBP 44 million spent up to 18 October 2023."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "Wills Bros John Paul JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The first section of the programme to open. Transport Scotland's news item of 30 September 2017 reports it fully open to traffic, and its programme page records dualling operational in September 2017. The contractor was a joint venture of Wills Bros Civil Engineering and John Paul Construction. The drawn line follows the mapped dual carriageway and measures 7.0 km.",
+        "ro": "Primul sector al programului deschis circulației. Știrea Transport Scotland din 30 septembrie 2017 îl raportează complet deschis, iar pagina programului consemnează dualizarea ca operațională în septembrie 2017. Constructorul a fost o asociere între Wills Bros Civil Engineering și John Paul Construction. Linia desenată urmează carosabilul dublu cartografiat și măsoară 7,0 km."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-kincraig",
+        "ts-news-kincraig-open",
+        "osm"
+      ],
+      "geometryRef": "kincraig-dalraddy"
+    },
+    {
+      "id": "dalraddy-slochd",
+      "name": {
+        "en": "Dalraddy – Slochd",
+        "ro": "Dalraddy – Slochd"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2032-12"
+      },
+      "lengthKm": 25,
+      "cost": {
+        "estimated": {
+          "amount": 775,
+          "currency": "GBP",
+          "year": 2025,
+          "scope": "total",
+          "note": "Estimated total scheme cost for preparation, procurement and construction, as published by Transport Scotland. April 2025 prices; includes GBP 61 million spent up to end March 2025."
+        }
+      },
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "The 2026 Delivery Plan expects procurement to start in winter 2026/27, contract award in autumn 2027 and dualling to be operational by the end of 2032. The drawn line ends where the mapped dual carriageway north of Slochd begins. Geometry follows the existing A9 northbound carriageway in OpenStreetMap, not the future alignment.",
+        "ro": "Planul de livrare 2026 prevede începerea achiziției în iarna 2026/27, atribuirea în toamna lui 2027 și dualizarea operațională până la sfârșitul lui 2032. Linia desenată se încheie unde începe carosabilul dublu cartografiat la nord de Slochd. Geometria urmează sensul nordic al A9 existent din OpenStreetMap, nu viitorul traseu."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-dalraddy",
+        "osm"
+      ],
+      "geometryRef": "dalraddy-slochd"
+    },
+    {
+      "id": "tomatin-moy",
+      "name": {
+        "en": "Tomatin – Moy",
+        "ro": "Tomatin – Moy"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-07",
+        "constructionStart": "2024-10",
+        "expectedOpening": "2028-05"
+      },
+      "lengthKm": 9.6,
+      "profile": {
+        "works": "upgrade"
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Described by Transport Scotland as a Scottish Government investment of GBP 296 million (Q2 2024 prices).",
+            "ro": "Descrisă de Transport Scotland drept o investiție a Guvernului Scoției de 296 milioane GBP (prețuri T2 2024)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Balfour Beatty Civil Engineering Ltd",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The construction contract went to Balfour Beatty in July 2024. Preparatory works began on 21 October 2024 and main construction was due to start in spring 2025, so the construction start recorded here is the preparatory works. Dualling is expected to be operational by the end of spring 2028, subject to extensions of time. The drawn line follows the existing A9 from the end of the dual carriageway at Tomatin to its resumption at Moy and measures 9.9 km.",
+        "ro": "Contractul de construcție a fost atribuit Balfour Beatty în iulie 2024. Lucrările pregătitoare au început la 21 octombrie 2024, iar construcția principală urma să înceapă în primăvara lui 2025, deci începerea construcției înregistrată aici este cea a lucrărilor pregătitoare. Dualizarea este așteptată să fie operațională până la sfârșitul primăverii 2028, sub rezerva prelungirilor de termen. Linia desenată urmează A9 existent de la capătul carosabilului dublu la Tomatin până la reluarea acestuia la Moy și măsoară 9,9 km."
+      },
+      "sourceRefs": [
+        "ts-project",
+        "ts-programme",
+        "ts-tomatin",
+        "ts-news-tomatin-works",
+        "ts-news-tomatin-year1",
+        "osm"
+      ],
+      "geometryRef": "tomatin-moy"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ts-project",
+      "title": "Transport Scotland: A9 Dualling Perth to Inverness (11 sections and their status)",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-programme",
+      "title": "Transport Scotland: A9 dualling programme details (budget, operational dates, 2026 Delivery Plan)",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/programme-details/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-luncarty",
+      "title": "Transport Scotland: A9 Luncarty to Pass of Birnam",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-luncarty-to-pass-of-birnam/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-pass-tay",
+      "title": "Transport Scotland: A9 Pass of Birnam to Tay Crossing",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-pass-of-birnam-to-tay-crossing/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-tay-ballinluig",
+      "title": "Transport Scotland: A9 Tay Crossing to Ballinluig",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-tay-crossing-to-ballinluig/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-pitlochry",
+      "title": "Transport Scotland: A9 Pitlochry to Killiecrankie",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-pitlochry-to-killiecrankie/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-killiecrankie",
+      "title": "Transport Scotland: A9 Killiecrankie to Glen Garry",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-killiecrankie-to-glen-garry/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-glen-garry",
+      "title": "Transport Scotland: A9 Glen Garry to Dalwhinnie",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-glen-garry-to-dalwhinnie/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-dalwhinnie",
+      "title": "Transport Scotland: A9 Dalwhinnie to Crubenmore",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-dalwhinnie-to-crubenmore/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-crubenmore",
+      "title": "Transport Scotland: A9 Crubenmore to Kincraig",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-crubenmore-to-kincraig/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-kincraig",
+      "title": "Transport Scotland: A9 Kincraig to Dalraddy",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-kincraig-to-dalraddy/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-dalraddy",
+      "title": "Transport Scotland: A9 Dalraddy to Slochd",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-dalraddy-to-slochd/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-tomatin",
+      "title": "Transport Scotland: A9 Tomatin to Moy",
+      "url": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/a9-tomatin-to-moy/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-news-tomatin-works",
+      "title": "Transport Scotland news, 7 Oct 2024: Works programme confirmed for A9 Dualling Tomatin to Moy, preparatory works to start on 21 October",
+      "url": "https://www.transport.gov.scot/news/works-programme-confirmed-for-a9-dualling-tomatin-to-moy-with-preparatory-works-set-to-start-on-21-october/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-news-tomatin-year1",
+      "title": "Transport Scotland news, 28 Aug 2025: First year of A9 Dualling Tomatin to Moy project",
+      "url": "https://www.transport.gov.scot/news/first-year-of-a9-dualling-tomatin-to-moy-project-delivers-boost-for-local-economy/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-news-tay-award",
+      "title": "Transport Scotland news, 18 Jul 2025: Fourth section of A9 Dualling contract expected to be awarded",
+      "url": "https://www.transport.gov.scot/news/construction-work-ramps-up-on-the-a9-as-the-fourth-section-of-a9-dualling-contract-is-expected-to-be-awarded/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-news-kincraig-open",
+      "title": "Transport Scotland news, 30 Sep 2017: New A9 dual carriageway opens",
+      "url": "https://www.transport.gov.scot/news/new-a9-dual-carriageway-opens/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: A9 trunk road geometry, northbound carriageway (ODbL; Overpass snapshot 2026-09-13)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

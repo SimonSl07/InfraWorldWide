@@ -1,0 +1,109 @@
+{
+  "id": "ua-rail-uzhhorod-chop-1435",
+  "country": "ua",
+  "category": "railway",
+  "name": {
+    "en": "Uzhhorod – Chop standard-gauge (1435 mm) line",
+    "ro": "Linia de ecartament standard (1435 mm) Ujhorod – Cop"
+  },
+  "description": {
+    "en": "A 22 km single standard-gauge (1435 mm) track between Uzhhorod and Chop, laid inside the existing 1520 mm track. Ukrzaliznytsia built it with a Connecting Europe Facility grant. The first direct train to Vienna left Uzhhorod on 12 September 2025. Electrification of the section was reported complete on 20 September 2026.",
+    "ro": "O cale unică de ecartament standard (1435 mm) de 22 km între Ujhorod și Cop, montată în interiorul căii existente de 1520 mm. Ukrzaliznytsia a construit-o cu o finanțare din Mecanismul pentru Interconectarea Europei. Primul tren direct spre Viena a plecat din Ujhorod la 12 septembrie 2025. Electrificarea secțiunii a fost raportată ca încheiată la 20 septembrie 2026."
+  },
+  "operator": "ua-uz",
+  "lots": [
+    {
+      "id": "uzhhorod-chop",
+      "name": {
+        "en": "Uzhhorod – Chop",
+        "ro": "Ujhorod – Cop"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-09"
+      },
+      "lengthKm": 22,
+      "cost": {
+        "estimated": {
+          "amount": 1300,
+          "currency": "UAH"
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "tracks": 1,
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2025-09-12",
+          "note": {
+            "en": "First direct passenger train, Uzhhorod – Budapest – Vienna, left Uzhhorod.",
+            "ro": "Primul tren direct de călători, Ujhorod – Budapesta – Viena, a plecat din Ujhorod."
+          },
+          "sourceRef": "ukrinform-first-train-2025-09"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.5,
+          "detail": {
+            "en": "Connecting Europe Facility (CEF Transport) grant, 50% of the project cost; the rest from the state budget and Ukrzaliznytsia's own funds",
+            "ro": "Grant din Mecanismul pentru Interconectarea Europei (CEF Transport), 50% din costul proiectului; restul din bugetul de stat și fondurile proprii ale Ukrzaliznytsia"
+          }
+        }
+      ],
+      "note": {
+        "en": "Ukrzaliznytsia gives the project as 22 km of standard-gauge track plus reconstruction of structures and utilities, with two-way semi-automatic block signalling, and a total cost of UAH 1.3 billion, 50% from CEF (price year not stated). A launch ceremony with a symbolic 20 m track span was held on 11 April 2024 and regional authorities then expected construction to begin in May 2024; no construction start date is recorded. Roadbed preparation for the 22 km was reported on 28 August 2024, and the company then targeted completion by July 2025. Ukrinform reported the section opened in Uzhhorod on 5 September 2025; the first direct passenger train left on 12 September 2025, which is the date used. Electrification was reported complete on 20 September 2026, and the same company statement gives UAH 1.3 billion as the total for the electrification project, so the cost figure may cover that project rather than the track alone. The second electrification stage, Chop to the Hungarian border at Záhony, is not part of this lot. Drawn length (OpenStreetMap, mixed-gauge 1435;1520 track Uzhhorod to Chop) is about 21.3 km, against the stated 22 km. The standard-gauge track shares its alignment with the existing 1520 mm Chop – Uzhhorod track.",
+        "ro": "Ukrzaliznytsia prezintă proiectul ca 22 km de cale de ecartament standard, plus reconstrucția construcțiilor și a rețelelor, cu bloc semiautomat bilateral, și un cost total de 1,3 miliarde UAH, din care 50% din CEF (anul prețurilor nu este indicat). La 11 aprilie 2024 a avut loc o ceremonie de lansare cu un tronson simbolic de 20 m de cale, iar autoritățile regionale preconizau apoi începerea lucrărilor în mai 2024; nu este înregistrată o dată de începere a construcției. Pregătirea platformei pe cei 22 km a fost raportată la 28 august 2024, iar compania ținea atunci ca finalizarea să fie până în iulie 2025. Ukrinform a relatat deschiderea secțiunii la Ujhorod la 5 septembrie 2025; primul tren direct de călători a plecat la 12 septembrie 2025, data folosită aici. Electrificarea a fost raportată ca încheiată la 20 septembrie 2026, iar aceeași declarație a companiei indică 1,3 miliarde UAH ca total pentru proiectul de electrificare, deci cifra de cost poate acoperi acel proiect, nu doar calea. A doua etapă a electrificării, de la Cop la frontiera cu Ungaria la Záhony, nu face parte din acest lot. Lungimea desenată (OpenStreetMap, calea cu ecartament mixt 1435;1520 de la Ujhorod la Cop) este de circa 21,3 km, față de 22 km declarați. Calea de ecartament standard folosește același traseu ca linia existentă de 1520 mm Cop – Ujhorod."
+      },
+      "sourceRefs": [
+        "ukrinform-roadbed-2024-08",
+        "ukrinform-span-2024-04",
+        "ukrinform-first-train-2025-09",
+        "ukrinform-electrification-2026-09",
+        "osm-uzhhorod-chop"
+      ],
+      "geometryRef": "uzhhorod-chop"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ukrinform-roadbed-2024-08",
+      "title": "Укрінформ: Укрзалізниця показала, як будують євроколію Чоп-Ужгород (28.08.2024)",
+      "url": "https://www.ukrinform.ua/rubric-economy/3899801-ukrzaliznica-pokazala-ak-buduut-evrokoliu-copuzgorod.html",
+      "publisher": "Укрінформ",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ukrinform-span-2024-04",
+      "title": "Укрінформ: На Закарпатті змонтували символічні 20 метрів майбутньої євроколії (11.04.2024)",
+      "url": "https://www.ukrinform.ua/rubric-regions/3851309-na-zakarpatti-zmontuvali-simvolicni-20-metriv-majbutnoi-evrokolii.html",
+      "publisher": "Укрінформ",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ukrinform-first-train-2025-09",
+      "title": "Укрінформ: З Ужгорода вирушив перший поїзд до ЄС новою євроколією (12.09.2025)",
+      "url": "https://www.ukrinform.ua/rubric-regions/4035678-z-uzgoroda-virusili-persi-poizdi-do-es-novou-evrokolieu.html",
+      "publisher": "Укрінформ",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ukrinform-electrification-2026-09",
+      "title": "Укрінформ: В Україні завершили електрифікацію першої новозбудованої євроколії (20.09.2026)",
+      "url": "https://www.ukrinform.ua/rubric-economy/4166058-v-ukraini-zaversili-elektrifikaciu-persoi-novozbudovanoi-evrokolii.html",
+      "publisher": "Укрінформ",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-uzhhorod-chop",
+      "title": "OpenStreetMap contributors: railway ways gauge=1435;1520, Uzhhorod – Chop (ODbL)",
+      "url": "https://www.openstreetmap.org/way/372521136",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

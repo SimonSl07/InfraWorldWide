@@ -1,0 +1,68 @@
+{
+  "id": "md-ebrd-roads6-r7-m3",
+  "country": "md",
+  "category": "highway",
+  "name": {
+    "en": "EBRD Roads Rehabilitation Project VI (R7 and M3)",
+    "ro": "Proiectul VI BERD de reabilitare a drumurilor (R7 și M3)"
+  },
+  "description": {
+    "en": "Rehabilitation, construction and widening of sections of the R7 Râșcani–Soroca and M3 Chișinău–Comrat national roads, financed by an EBRD loan of up to EUR 344 million signed on 17 September 2026. The interventions cover about 134 km in total; the ministry does not say how that is split between the two roads or which sectors are included. The drawn geometry follows the whole named R7 and M3 corridors as mapped in OpenStreetMap, not the works sections, and is indicative only. Most of the M3 line is the existing road and overlaps other M3 projects.",
+    "ro": "Reabilitarea, construcția și lărgirea unor sectoare ale drumurilor naționale R7 Râșcani–Soroca și M3 Chișinău–Comrat, finanțate printr-un împrumut BERD de până la 344 milioane EUR, semnat la 17 septembrie 2026. Intervențiile acoperă circa 134 km în total; ministerul nu precizează repartizarea între cele două drumuri și nici sectoarele incluse. Geometria desenată urmează coridoarele R7 și M3 în întregime, așa cum sunt cartografiate în OpenStreetMap, nu sectoarele de lucrări, și are doar valoare orientativă. Cea mai mare parte a traseului M3 este drumul existent și se suprapune cu alte proiecte M3."
+  },
+  "operator": "md-midr",
+  "lots": [
+    {
+      "id": "r7-m3-sectors",
+      "name": {
+        "en": "R7 Râșcani – Soroca and M3 Chișinău – Comrat sectors",
+        "ro": "Sectoare R7 Râșcani – Soroca și M3 Chișinău – Comrat"
+      },
+      "status": "planned",
+      "sharedWith": "md-m3-vulcanesti-bypass",
+      "lengthKm": 134,
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "amount": {
+            "amount": 344,
+            "currency": "EUR",
+            "year": 2026,
+            "scope": "programme",
+            "note": "Loan of up to EUR 344 million in two tranches, EUR 175 million and EUR 169 million. It also covers technical supervision and implementation support."
+          },
+          "detail": {
+            "en": "EBRD loan of up to EUR 344 million (175 million first tranche, 169 million second). On top of the loan, the EBRD is mobilising an EU Neighbourhood Investment Platform grant of up to EUR 11.4 million, Moldova is to receive a Connecting Europe Facility grant of up to EUR 7.7 million, and up to EUR 34.2 million of concessional EU funds is foreseen under the Moldova Growth Plan.",
+            "ro": "Împrumut BERD de până la 344 milioane EUR (175 milioane în prima tranșă, 169 milioane în a doua). Pe lângă împrumut, BERD mobilizează un grant de până la 11,4 milioane EUR prin Platforma de Investiții pentru Vecinătate a UE, Moldova urmează să primească un grant de până la 7,7 milioane EUR prin Mecanismul pentru Interconectarea Europei, iar prin Planul de Creștere pentru Republica Moldova este prevăzută o contribuție concesională UE de până la 34,2 milioane EUR."
+          }
+        }
+      ],
+      "note": {
+        "en": "Planned: the loan agreement was signed on 17 September 2026 and no section lengths, tenders or contractors are published. The 134 km is the ministry's total for both roads. The geometry covers the whole R7 from Râșcani to the mapped end near Soroca and the whole M3 from Chișinău's southern edge to Comrat (about 58 km and 80 km as drawn), so it does not show which sectors will be worked. The M3 part runs on the existing road, including sections other projects measure.",
+        "ro": "Planificat: acordul de împrumut a fost semnat la 17 septembrie 2026, iar lungimile sectoarelor, licitațiile și constructorii nu sunt publicați. Cei 134 km sunt totalul ministerului pentru ambele drumuri. Geometria acoperă întregul R7 de la Râșcani până la capătul cartografiat lângă Soroca și întregul M3 de la marginea de sud a Chișinăului până la Comrat (circa 58 km și 80 km pe desen), deci nu arată ce sectoare vor fi lucrate. Partea M3 urmează drumul existent, inclusiv sectoare măsurate de alte proiecte."
+      },
+      "sourceRefs": [
+        "midr-ebrd-344m-roads-vi",
+        "osm-roads"
+      ],
+      "geometryRef": "r7-m3-sectors"
+    }
+  ],
+  "sources": [
+    {
+      "id": "midr-ebrd-344m-roads-vi",
+      "title": "MIDR: Republica Moldova și BERD semnează un acord de 344 milioane de euro pentru modernizarea drumurilor R7 și M3 (2026-09-17)",
+      "url": "https://midr.gov.md/noutati/republica-moldova-si-berd-semneaza-un-acord-de-344-milioane-de-euro-pentru-modernizarea-drumurilor-r7-si-m3",
+      "publisher": "Ministerul Infrastructurii și Dezvoltării Regionale",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-roads",
+      "title": "OpenStreetMap contributors: R7 and M3 road geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

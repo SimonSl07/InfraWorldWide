@@ -1,0 +1,132 @@
+{
+  "id": "ua-rail-mostyska-lviv-1435",
+  "country": "ua",
+  "category": "railway",
+  "name": {
+    "en": "Mostyska – Lviv standard-gauge (1435 mm) line",
+    "ro": "Linia de ecartament normal (1435 mm) Mostyska – Lviv"
+  },
+  "description": {
+    "en": "Standard-gauge track from the Polish border at Mostyska to Skniliv and on to Lviv station, the first of four parts of the \"Euro-gauge Mostyska – Lviv\" project of Ukrzaliznytsia. The EU Connecting Europe Facility (CEF 2024 call) approved EUR 76 million of grant for the Skniliv – Mostyska II section in July 2025. Ukraine's deputy prime minister put the length to be built by the end of 2027 at 70 km; the Lviv mayor gave 2030 for the link to Lviv station. Ukrainian Wikipedia records the whole scope as 72.9 km.",
+    "ro": "Cale de ecartament normal de la frontiera cu Polonia la Mostyska până la Skniliv și mai departe până la gara Lviv, prima dintre cele patru părți ale proiectului „Euro-colia Mostyska – Lviv” al Ukrzaliznytsia. Mecanismul pentru Interconectarea Europei (apelul CEF 2024) a aprobat în iulie 2025 un grant de 76 de milioane de euro pentru secțiunea Skniliv – Mostyska II. Vicepremierul Ucrainei a indicat pentru lungimea de construit până la sfârșitul lui 2027 cifra de 70 km; primarul Lvivului a indicat 2030 pentru legătura cu gara Lviv. Wikipedia în ucraineană înregistrează întregul domeniu ca 72,9 km."
+  },
+  "operator": "ua-uz",
+  "lots": [
+    {
+      "id": "mostyska-ii-skniliv",
+      "name": {
+        "en": "Mostyska II – Skniliv",
+        "ro": "Mostyska II – Skniliv"
+      },
+      "status": "planned",
+      "dates": {
+        "announced": "2025-07-03",
+        "expectedOpening": "2027-12"
+      },
+      "lengthKm": 70,
+      "profile": {
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "coFinancingRate": 0.5,
+          "amount": {
+            "amount": 76,
+            "currency": "EUR",
+            "year": 2025
+          },
+          "detail": {
+            "en": "Connecting Europe Facility, CEF 2024 call: EUR 76 million approved on 3 July 2025; grant agreement handed over on 6 November 2025 (EUR 73.7 million reported received).",
+            "ro": "Mecanismul pentru Interconectarea Europei, apelul CEF 2024: 76 de milioane de euro aprobate la 3 iulie 2025; acordul de grant a fost predat la 6 noiembrie 2025 (73,7 milioane de euro raportate ca primite)."
+          }
+        },
+        {
+          "source": "national_budget",
+          "coFinancingRate": 0.5,
+          "detail": {
+            "en": "The deputy prime minister said the financing split is 50% European Commission and 50% Ukrainian budget.",
+            "ro": "Vicepremierul a spus că finanțarea se împarte 50% Comisia Europeană și 50% bugetul Ucrainei."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length is the 70 km the deputy prime minister said Ukraine would complete by the end of 2027. Ukrainian Wikipedia says construction began in 2026; no Ukrzaliznytsia or CEF release confirming a start was found, so the lot stays planned. The EUR 76 million grant covers this section only, not the whole 72.9 km scope. The drawn line follows the existing 1520 mm Przemyśl–Lviv track as an indicative corridor, because the new 1435 mm alignment is not mapped in OpenStreetMap; it ends 1.9 km short of Skniliv station and measures 73.6 km.",
+        "ro": "Lungimea este cea de 70 km pe care vicepremierul a spus că Ucraina o va finaliza până la sfârșitul lui 2027. Wikipedia în ucraineană indică începerea lucrărilor în 2026; nu a fost găsit niciun comunicat al Ukrzaliznytsia sau CEF care să confirme startul, așa că lotul rămâne planificat. Grantul de 76 de milioane de euro acoperă doar această secțiune, nu întregul domeniu de 72,9 km. Linia desenată urmează calea existentă de 1520 mm Przemyśl–Lviv ca traseu orientativ, deoarece noul traseu de 1435 mm nu este cartografiat în OpenStreetMap; se oprește la 1,9 km de gara Skniliv și măsoară 73,6 km."
+      },
+      "sourceRefs": [
+        "kmu-cef-76m-2025-07",
+        "ukrinform-cef-73-7m-2025-11",
+        "wikipedia-uk-euro-gauge",
+        "osm-geometry"
+      ],
+      "geometryRef": "mostyska-ii-skniliv"
+    },
+    {
+      "id": "skniliv-lviv-station",
+      "name": {
+        "en": "Skniliv – Lviv station",
+        "ro": "Skniliv – gara Lviv"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 5.74,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. The Lviv mayor said in January 2026 that the Euro-gauge should reach Skniliv in 2027 and the main station by 2030. No source gives this section's length or route; the line drawn is the existing Lviv–Stryi 1520 mm track between Skniliv and Lviv station, used as an indicative corridor.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Primarul Lvivului a spus în ianuarie 2026 că Euro-colia ar trebui să ajungă la Skniliv în 2027 și la gara principală până în 2030. Nicio sursă nu dă lungimea sau traseul acestei secțiuni; linia desenată este calea existentă de 1520 mm Lviv–Stryi între Skniliv și gara Lviv, folosită ca traseu orientativ."
+      },
+      "sourceRefs": [
+        "ukrinform-lviv-station-2030-2026-01",
+        "wikipedia-uk-euro-gauge",
+        "osm-geometry"
+      ],
+      "geometryRef": "skniliv-lviv-station"
+    }
+  ],
+  "sources": [
+    {
+      "id": "kmu-cef-76m-2025-07",
+      "title": "Cabinet of Ministers of Ukraine: ЄС надасть Україні €76 млн на будівництво євроколії Львів–Польща (2025-07-03)",
+      "url": "https://www.kmu.gov.ua/news/yes-nadast-ukraini-76-mln-na-budivnytstvo-ievrokolii-lvivpolshcha-oleksii-kuleba",
+      "publisher": "Ministry for Communities and Territories Development of Ukraine",
+      "retrievedOn": "2026-11-09",
+      "quote": "Європейський Союз ухвалив рішення виділити 76 мільйонів євро грантової допомоги на реалізацію першого етапу будівництва євроколії в Україні."
+    },
+    {
+      "id": "ukrinform-cef-73-7m-2025-11",
+      "title": "Ukrinform: Україна отримала €73,7 мільйона гранту ЄС на розбудову євроколії Скнилів-Мостиська (2025-11-06)",
+      "url": "https://www.ukrinform.ua/rubric-economy/4055851-ukraina-otrimala-737-miljona-grantu-es-na-rozbudovu-evrokolii-sknilivmostiska.html",
+      "publisher": "Ukrinform",
+      "retrievedOn": "2026-11-09",
+      "quote": "аби завершити будівництво 70 км євроколії до кінця 2027 року"
+    },
+    {
+      "id": "ukrinform-lviv-station-2030-2026-01",
+      "title": "Ukrinform: До 2030 року львівський вокзал має бути з’єднаний з євроколією (2026-01-16)",
+      "url": "https://www.ukrinform.ua/rubric-regions/4081165-do-2030-roku-lvivskij-vokzal-mae-buti-zednanij-z-evrokolieu-sadovij.html",
+      "publisher": "Ukrinform",
+      "retrievedOn": "2026-11-09",
+      "quote": "На 2027 рік євроколія має зайти на станцію Скнилів. Потім вона має йти до головного вокзалу до 2030 року."
+    },
+    {
+      "id": "wikipedia-uk-euro-gauge",
+      "title": "Wikipedia (uk): Європейська колія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%84%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BB%D1%96%D1%8F",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09",
+      "quote": "Проєкт прокладання 72,9 км євроколії. У липні 2025 року ЄС виділив 76 млн євро грантової допомоги (CEF 2024)."
+    },
+    {
+      "id": "osm-geometry",
+      "title": "OpenStreetMap contributors (ODbL), existing 1520 mm track used as indicative corridor",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

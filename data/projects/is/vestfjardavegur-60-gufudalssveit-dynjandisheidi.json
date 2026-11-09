@@ -1,0 +1,806 @@
+{
+  "id": "is-vestfjardavegur-60-gufudalssveit-dynjandisheidi",
+  "country": "is",
+  "category": "highway",
+  "operator": "is-vegagerdin",
+  "name": {
+    "en": "Vestfjarðavegur (Route 60): Gufudalssveit and Dynjandisheiði",
+    "ro": "Vestfjarðavegur (Drumul 60): Gufudalssveit și Dynjandisheiði"
+  },
+  "description": {
+    "en": "Rebuilding of Route 60 in the Westfjords between Bjarkalundur and Dýrafjörður: 25.8 km of new road through Gufudalssveit, shortening the route by 21.6 km and removing 4 one-lane bridges, and 35.2 km across Dynjandisheiði, shortening it by 2 km and removing 8 one-lane bridges. Both are Vegagerðin projects. The Þorskafjörður bridge and the Teigsskógur road are open; the Djúpifjörður and Gufufjörður crossings are still being built. Dýrafjarðargöng, which continues Route 60 north of Mjólká, is a separate project.",
+    "ro": "Reconstrucția Drumului 60 în Fiordurile de Vest între Bjarkalundur și Dýrafjörður: 25,8 km de drum nou prin Gufudalssveit, care scurtează traseul cu 21,6 km și elimină 4 poduri cu o bandă, și 35,2 km peste Dynjandisheiði, care scurtează traseul cu 2 km și elimină 8 poduri cu o bandă. Ambele sunt proiecte ale Vegagerðin. Podul Þorskafjörður și drumul prin Teigsskógur sunt deschise; traversările Djúpifjörður și Gufufjörður sunt încă în construcție. Dýrafjarðargöng, care continuă Drumul 60 la nord de Mjólká, este un proiect separat."
+  },
+  "lots": [
+    {
+      "id": "thorskafjordur-kinnastadir-thorisstadir",
+      "name": {
+        "en": "Þorskafjörður crossing (Kinnastaðir – Þórisstaðir)",
+        "ro": "Traversarea Þorskafjörður (Kinnastaðir – Þórisstaðir)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-04-08",
+        "constructionStart": "2021-10",
+        "opened": "2023-10-25"
+      },
+      "lengthKm": 4.07,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2236,
+              "currency": "ISK",
+              "year": 2021,
+              "scope": "works",
+              "note": "Suðurverk's bid as opened on 16 February 2021, stated as just over ISK 2,236 million and 107.6% of Vegagerðin's estimated contractor cost. The contract sum itself is not stated. VAT treatment is not stated."
+            },
+            "date": "2021-04-08",
+            "sourceRef": "vn-thorskafjordur-opening"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-04-08",
+          "note": {
+            "en": "Contract signed with Suðurverk hf., the lowest bidder.",
+            "ro": "Contract semnat cu Suðurverk hf., ofertantul cu cel mai mic preț."
+          },
+          "sourceRef": "vn-thorskafjordur-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-10",
+          "note": {
+            "en": "Works began in October 2021.",
+            "ro": "Lucrările au început în octombrie 2021."
+          },
+          "sourceRef": "vn-thorskafjordur-opening"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-10-25",
+          "note": {
+            "en": "New bridge formally opened by the infrastructure minister.",
+            "ro": "Podul nou a fost deschis oficial de ministrul infrastructurii."
+          },
+          "sourceRef": "vn-thorskafjordur-opening"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Suðurverk hf.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 2236,
+          "currency": "ISK",
+          "year": 2021,
+          "scope": "works",
+          "note": "Suðurverk's winning bid; the contract sum is not stated. VAT treatment is not stated."
+        }
+      },
+      "note": {
+        "en": "New 260 m cast-in-place post-tensioned concrete bridge in six spans, with road fills over a 2.7 km section. It replaced about 10 km of the old road and a one-lane bridge over the Þorskafjarðará from 1981, and removed the Hjallaháls pass (336 m). Length measured from OpenStreetMap geometry, from the western end of the old fjord-head road to the western abutment of the bridge; the sources give only the 260 m bridge and the 2.7 km of fills.",
+        "ro": "Pod nou turnat monolit din beton postcomprimat, de 260 m, cu șase deschideri, și rambleuri rutiere pe un tronson de 2,7 km. A înlocuit circa 10 km de drum vechi și un pod cu o bandă peste Þorskafjarðará din 1981 și a eliminat pasul Hjallaháls (336 m). Lungime măsurată din geometria OpenStreetMap, de la capătul vestic al vechiului drum de la capul fiordului până la culeea vestică a podului; sursele dau doar podul de 260 m și 2,7 km de rambleuri."
+      },
+      "sourceRefs": [
+        "vn-thorskafjordur-opening",
+        "vn-thorskafjordur-contract",
+        "vegagerdin-gufudalssveit",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "thorskafjordur-kinnastadir-thorisstadir"
+    },
+    {
+      "id": "teigsskogur-thorisstadir-hallsteinsnes",
+      "name": {
+        "en": "Teigsskógur (Þórisstaðir – Hallsteinsnes)",
+        "ro": "Teigsskógur (Þórisstaðir – Hallsteinsnes)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-05-10",
+        "opened": "2023-12-01"
+      },
+      "lengthKm": 10,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1235,
+              "currency": "ISK",
+              "year": 2022,
+              "scope": "works",
+              "note": "Borgarverk's lowest bid, stated as ISK 1,235 million and just over 86% of Vegagerðin's original estimate. The contract sum is not stated. VAT treatment is not stated."
+            },
+            "date": "2022-05-10",
+            "sourceRef": "vn-teigsskogur-contract"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1235,
+          "currency": "ISK",
+          "year": 2022,
+          "scope": "works",
+          "note": "Borgarverk's lowest bid; the contract sum is not stated. VAT treatment is not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-01-28",
+          "note": {
+            "en": "Road through Teigsskógur put out to tender.",
+            "ro": "Drumul prin Teigsskógur a fost scos la licitație."
+          },
+          "sourceRef": "vegagerdin-gufudalssveit"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-05-10",
+          "note": {
+            "en": "Contract signed with Borgarverk ehf.",
+            "ro": "Contract semnat cu Borgarverk ehf."
+          },
+          "sourceRef": "vn-teigsskogur-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-12-01",
+          "note": {
+            "en": "Opened to traffic, with the road into Djúpifjörður.",
+            "ro": "Deschis circulației, împreună cu drumul spre Djúpifjörður."
+          },
+          "sourceRef": "vn-fills-contract"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Borgarverk ehf.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "About 10 km of new road from the Þorskafjörður crossing through Teigsskógur to the junction at Djúpifjörður. Opened on 1 December 2023, but the Ódrjúgsháls pass stays on the through route until the Djúpifjörður and Gufufjörður crossings are finished. The contract gave 10.4 km between stations 4,400 and 14,800. Drawn length from OpenStreetMap is 10.78 km.",
+        "ro": "Circa 10 km de drum nou de la traversarea Þorskafjörður prin Teigsskógur până la intersecția de la Djúpifjörður. Deschis la 1 decembrie 2023, dar pasul Ódrjúgsháls rămâne pe traseul de tranzit până la finalizarea traversărilor Djúpifjörður și Gufufjörður. Contractul indica 10,4 km între stațiile 4.400 și 14.800. Lungimea desenată din OpenStreetMap este de 10,78 km."
+      },
+      "sourceRefs": [
+        "vn-teigsskogur-contract",
+        "vn-fills-contract",
+        "vn-status-2024-03",
+        "vegagerdin-gufudalssveit",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "teigsskogur-thorisstadir-hallsteinsnes"
+    },
+    {
+      "id": "hallsteinsnes-skalanes-fyllingar",
+      "name": {
+        "en": "Hallsteinsnes – Skálanes (fills across Djúpifjörður and Gufufjörður)",
+        "ro": "Hallsteinsnes – Skálanes (rambleuri peste Djúpifjörður și Gufufjörður)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-11-30",
+        "constructionStart": "2024-01"
+      },
+      "lengthKm": 3.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 838,
+              "currency": "ISK",
+              "year": 2023,
+              "scope": "works",
+              "note": "Borgarverk's lowest bid opened on 12 October 2023, 74% of Vegagerðin's estimate. VAT treatment is not stated."
+            },
+            "date": "2023-11-30",
+            "sourceRef": "vn-fills-contract"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-09-08",
+          "note": {
+            "en": "Tender advertised in the European Economic Area.",
+            "ro": "Licitație publicată în Spațiul Economic European."
+          },
+          "sourceRef": "vn-fills-tender"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-11-30",
+          "note": {
+            "en": "Contract signed with Borgarverk ehf.",
+            "ro": "Contract semnat cu Borgarverk ehf."
+          },
+          "sourceRef": "vn-fills-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-01",
+          "note": {
+            "en": "Works began at the end of January 2024.",
+            "ro": "Lucrările au început la sfârșitul lui ianuarie 2024."
+          },
+          "sourceRef": "vn-status-2024-03"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Borgarverk ehf.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 838,
+          "currency": "ISK",
+          "year": 2023,
+          "scope": "works",
+          "note": "Borgarverk's lowest bid, 74% of the estimate; the contract sum is not stated. VAT treatment is not stated."
+        }
+      },
+      "note": {
+        "en": "First stage of the Djúpifjörður and Gufufjörður crossings: about 3.6 km of new road on fills, including a 119 m temporary bridge over Gufufjörður. Planned completion was 30 September 2025; by 19 February 2026 Vegagerðin reported the fills and rock protection done, apart from quarry finishing and additional works. The road carries through traffic only once the bridges are built; 2028 is the end of the project period on Vegagerðin's project page. The three bridge sites have their own lots. The drawn OpenStreetMap alignment between them, from the Hallsteinsnes junction to the rejoin with the existing road at Skálanes, is 4.16 km, longer than the 3.6 km stated.",
+        "ro": "Prima etapă a traversărilor Djúpifjörður și Gufufjörður: circa 3,6 km de drum nou pe rambleuri, inclusiv un pod provizoriu de 119 m peste Gufufjörður. Finalizarea era planificată pentru 30 septembrie 2025; la 19 februarie 2026 Vegagerðin raporta rambleurile și protecția la eroziune încheiate, în afară de amenajarea carierei și lucrările suplimentare. Drumul va purta traficul de tranzit abia după construirea podurilor; 2028 este sfârșitul perioadei proiectului pe pagina Vegagerðin. Cele trei locuri de pod au loturi proprii. Traseul OpenStreetMap desenat între ele, de la intersecția Hallsteinsnes până la reîntâlnirea cu drumul existent la Skálanes, are 4,16 km, mai mult decât cei 3,6 km declarați."
+      },
+      "sourceRefs": [
+        "vn-fills-tender",
+        "vn-fills-contract",
+        "vn-status-2024-03",
+        "vn-fills-status-2026",
+        "vegagerdin-gufudalssveit",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "hallsteinsnes-skalanes-fyllingar"
+    },
+    {
+      "id": "bridges-djupifjordur-gufufjordur",
+      "name": {
+        "en": "Djúpifjörður (Grónes) and Gufufjörður bridges",
+        "ro": "Podurile Djúpifjörður (Grónes) și Gufufjörður"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-10-02",
+        "expectedOpening": "2026-12"
+      },
+      "lengthKm": 0.188,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1850,
+              "currency": "ISK",
+              "year": 2025,
+              "scope": "works",
+              "note": "Contract price stated as ISK 1.85 billion, about ISK 200 million above Vegagerðin's estimated contractor cost. VAT treatment is not stated."
+            },
+            "date": "2025-10-02",
+            "sourceRef": "vn-bridges-contract"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2025-03-14",
+          "note": {
+            "en": "Tender advertised for two concrete bridges.",
+            "ro": "Licitație publicată pentru două poduri din beton."
+          },
+          "sourceRef": "vn-bridges-tender"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-10-02",
+          "note": {
+            "en": "Contract signed with Leonhard Nilsen & Sønner as after a review board allowed the award to proceed.",
+            "ro": "Contract semnat cu Leonhard Nilsen & Sønner as după ce comisia de soluționare a contestațiilor a permis continuarea."
+          },
+          "sourceRef": "vn-bridges-contract"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Leonhard Nilsen & Sønner as",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1850,
+          "currency": "ISK",
+          "year": 2025,
+          "scope": "works",
+          "note": "Contract price; about ISK 200 million above Vegagerðin's estimated contractor cost. VAT treatment is not stated."
+        }
+      },
+      "note": {
+        "en": "Two concrete bridges: 58 m over Djúpifjörður at Grónes and about 130 m over Gufufjörður, with removal of the 119 m temporary bridge and rock protection. The two lowest bidders were rejected as non-compliant and the lowest bidder appealed. The agreed work programme gives completion on 31 December 2026 (the tender said 30 September 2026). By 19 February 2026 the contractor was on site at Gufufjörður, excavating for the abutments of the 130 m bridge; the Djúpifjörður bridge was to start soon after. The start date is not stated.",
+        "ro": "Două poduri din beton: unul de 58 m peste Djúpifjörður la Grónes și unul de circa 130 m peste Gufufjörður, cu demontarea podului provizoriu de 119 m și protecție la eroziune. Cei doi ofertanți cu cel mai mic preț au fost respinși ca neconformi, iar ofertantul cu cel mai mic preț a contestat. Programul de lucru aprobat prevede finalizarea la 31 decembrie 2026 (licitația indica 30 septembrie 2026). La 19 februarie 2026 constructorul era pe șantier la Gufufjörður, cu săpături pentru culeele podului de 130 m; podul Djúpifjörður urma să înceapă curând după aceea. Data începerii nu este precizată."
+      },
+      "sourceRefs": [
+        "vn-bridges-tender",
+        "vn-bridges-contract",
+        "vn-fills-status-2026",
+        "vegagerdin-gufudalssveit",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "bridges-djupifjordur-gufufjordur"
+    },
+    {
+      "id": "bridge-djupifjordur-arch",
+      "name": {
+        "en": "Djúpifjörður arch bridge",
+        "ro": "Podul în arc peste Djúpifjörður"
+      },
+      "status": "planned",
+      "lengthKm": 0.21,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Last stage of the Gufudalssveit road, at the 210 m way mapped in OpenStreetMap. Vegagerðin described it as a 250 m steel arch bridge in October 2025 and as a 210 m network-arch bridge on 12 May 2026, when the tender was said to follow the next week. On 29 May 2026 it stated that the tender documents were still being finished. No advertised tender was found. 2028 is the end of the project period on Vegagerðin's project page.",
+        "ro": "Ultima etapă a drumului Gufudalssveit, la tronsonul de 210 m cartografiat în OpenStreetMap. Vegagerðin l-a descris ca pod în arc din oțel de 250 m în octombrie 2025 și ca pod cu arc și hobane în rețea de 210 m la 12 mai 2026, când licitația urma să fie publicată săptămâna următoare. La 29 mai 2026 a precizat că documentația de licitație era încă în finalizare. Nu a fost găsită nicio licitație publicată. 2028 este sfârșitul perioadei proiectului pe pagina Vegagerðin."
+      },
+      "sourceRefs": [
+        "vn-arch-bridge-announce",
+        "vn-arch-bridge-tender",
+        "vn-bridges-contract",
+        "vegagerdin-gufudalssveit",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "bridge-djupifjordur-arch"
+    },
+    {
+      "id": "dynjandisheidi-stage1-medalnes",
+      "name": {
+        "en": "Dynjandisheiði stage 1: Meðalnes (Mjólká – Búðavík)",
+        "ro": "Dynjandisheiði etapa 1: Meðalnes (Mjólká – Búðavík)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-09-11",
+        "opened": "2021-10"
+      },
+      "lengthKm": 4.3,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-07",
+          "note": {
+            "en": "Tender advertised in the European Economic Area.",
+            "ro": "Licitație publicată în Spațiul Economic European."
+          },
+          "sourceRef": "vegagerdin-dynjandisheidi"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-09-11",
+          "note": {
+            "en": "Contract signed with ÍAV hf. for stage 1.",
+            "ro": "Contract semnat cu ÍAV hf. pentru etapa 1."
+          },
+          "sourceRef": "vn-dyn-stage1-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-10",
+          "note": {
+            "en": "New Dynjandisvogur section opened.",
+            "ro": "Secțiunea nouă Dynjandisvogur a fost deschisă."
+          },
+          "sourceRef": "vn-dyn-stage2-contract"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ÍAV hf.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Stage 1 was one ÍAV contract of two sections: this 4.3 km section around Meðalnes at the head of Arnarfjörður, which begins near Mjólká power station and is wholly on a new alignment, and the Þverdalsá section. The later news pieces give the openings as the Dynjandisvogur section in October 2021 and the Pennusneiðingur to Norðdalsá section in November 2021, and this lot takes the Dynjandisvogur opening for Meðalnes, which the sources do not state outright. The contract value is not given in the pages consulted. The drawn OpenStreetMap line from Búðavík to the Mjólká junction is 5.07 km. The Dýrafjarðargöng project starts at the same Mjólká point.",
+        "ro": "Etapa 1 a fost un singur contract ÍAV cu două secțiuni: această secțiune de 4,3 km în jurul Meðalnes, la capătul fiordului Arnarfjörður, care începe lângă centrala Mjólká și este în întregime pe traseu nou, și secțiunea Þverdalsá. Știrile ulterioare dau deschiderile ca secțiunea Dynjandisvogur în octombrie 2021 și secțiunea Pennusneiðingur–Norðdalsá în noiembrie 2021, iar acest lot atribuie deschiderea Dynjandisvogur secțiunii Meðalnes, lucru pe care sursele nu îl afirmă explicit. Valoarea contractului nu apare în paginile consultate. Linia OpenStreetMap desenată de la Búðavík până la intersecția Mjólká are 5,07 km. Proiectul Dýrafjarðargöng începe în același punct Mjólká."
+      },
+      "sourceRefs": [
+        "vn-dyn-stage1-contract",
+        "vn-dyn-stage2-contract",
+        "vn-status-2024-03",
+        "vegagerdin-dynjandisheidi",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "dynjandisheidi-stage1-medalnes"
+    },
+    {
+      "id": "dynjandisheidi-stage1-thverdalsa",
+      "name": {
+        "en": "Dynjandisheiði stage 1: Þverdalsá to Norðdalsá",
+        "ro": "Dynjandisheiði etapa 1: Þverdalsá – Norðdalsá"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-09-11",
+        "opened": "2021-11"
+      },
+      "lengthKm": 7.7,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-07",
+          "note": {
+            "en": "Tender advertised in the European Economic Area.",
+            "ro": "Licitație publicată în Spațiul Economic European."
+          },
+          "sourceRef": "vegagerdin-dynjandisheidi"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-09-11",
+          "note": {
+            "en": "Contract signed with ÍAV hf. for stage 1.",
+            "ro": "Contract semnat cu ÍAV hf. pentru etapa 1."
+          },
+          "sourceRef": "vn-dyn-stage1-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-11",
+          "note": {
+            "en": "Section from Pennusneiðingur past the Bíldudalur junction to Norðdalsá opened; surfacing followed in summer 2022.",
+            "ro": "Secțiunea de la Pennusneiðingur, pe lângă intersecția Bíldudalur, până la Norðdalsá a fost deschisă; asfaltarea a urmat în vara lui 2022."
+          },
+          "sourceRef": "vn-dyn-stage2-contract"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ÍAV hf.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The 2020 contract described this section as 5.7 km at Þverdalsá (road section 60-35), mostly on a new alignment and partly on the existing one, running down Pennudalur; Vegagerðin's project page now gives 7.7 km, which is recorded. The sources do not say where the section ends in metres: it is drawn from the Þverdalsá bridge to the start of stage 2, which is cut so that stage 2 measures about 13 km. Drawn length 8.33 km. The 650 m added on Bíldudalsvegur and the 1 km repaired from Penna to Flókalundur in autumn 2022 are not drawn.",
+        "ro": "Contractul din 2020 descria această secțiune ca 5,7 km la Þverdalsá (sectorul de drum 60-35), în mare parte pe traseu nou și parțial pe cel existent, coborând prin Pennudalur; pagina de proiect a Vegagerðin dă acum 7,7 km, cifră înregistrată aici. Sursele nu precizează în metri unde se termină secțiunea: este desenată de la podul Þverdalsá până la începutul etapei 2, tăiat astfel încât etapa 2 să măsoare circa 13 km. Lungime desenată 8,33 km. Cei 650 m adăugați pe Bíldudalsvegur și 1 km reparat de la Penna la Flókalundur în toamna lui 2022 nu sunt desenați."
+      },
+      "sourceRefs": [
+        "vn-dyn-stage1-contract",
+        "vn-dyn-stage2-contract",
+        "vn-status-2024-03",
+        "vegagerdin-dynjandisheidi",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "dynjandisheidi-stage1-thverdalsa"
+    },
+    {
+      "id": "dynjandisheidi-stage2-nordalsa-thvera",
+      "name": {
+        "en": "Dynjandisheiði stage 2: Norðdalsá – Þverá",
+        "ro": "Dynjandisheiði etapa 2: Norðdalsá – Þverá"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-08-17",
+        "constructionStart": "2022-10",
+        "opened": "2024-09"
+      },
+      "lengthKm": 13,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2450,
+              "currency": "ISK",
+              "year": 2022,
+              "scope": "works",
+              "note": "Suðurverk's lowest bid opened on 5 July 2022, stated as about ISK 2.45 billion. The contract sum is not stated. VAT treatment is not stated."
+            },
+            "date": "2022-08-17",
+            "sourceRef": "vn-dyn-stage2-contract"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-06",
+          "note": {
+            "en": "Tender advertised in the European Economic Area.",
+            "ro": "Licitație publicată în Spațiul Economic European."
+          },
+          "sourceRef": "vegagerdin-dynjandisheidi"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-08-17",
+          "note": {
+            "en": "Contract signed with Suðurverk hf.",
+            "ro": "Contract semnat cu Suðurverk hf."
+          },
+          "sourceRef": "vn-dyn-stage2-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2022-10",
+          "note": {
+            "en": "Works began in October 2022.",
+            "ro": "Lucrările au început în octombrie 2022."
+          },
+          "sourceRef": "vn-dyn-stage2-complete"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2023-10",
+          "note": {
+            "en": "Norðdalsá to Vatnahvilft opened to traffic.",
+            "ro": "Norðdalsá – Vatnahvilft deschis circulației."
+          },
+          "sourceRef": "vn-status-2024-03"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2023-12",
+          "note": {
+            "en": "Section under Botnshestur opened to traffic.",
+            "ro": "Secțiunea de sub Botnshestur deschisă circulației."
+          },
+          "sourceRef": "vn-status-2024-03"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-09",
+          "note": {
+            "en": "Works finished in early September 2024.",
+            "ro": "Lucrările s-au încheiat la începutul lui septembrie 2024."
+          },
+          "sourceRef": "vn-dyn-stage2-complete"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Suðurverk hf.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 2450,
+          "currency": "ISK",
+          "year": 2022,
+          "scope": "works",
+          "note": "Suðurverk's lowest bid, stated as about ISK 2.45 billion; the contract sum is not stated. VAT treatment is not stated."
+        }
+      },
+      "note": {
+        "en": "New road from Norðdalsá, north of the Bíldudalur junction, over the highest part of the heath and north past the county boundary, mostly on a new alignment, with a quarry road at Trölladalur and two rest areas. The contract gave 12.6 km; the road was lengthened by 850 m in summer 2024 and Vegagerðin's completion report gives about 13 km, which is recorded. Drawn length 12.97 km, with the start cut by length from the stage 2 and 3 junction.",
+        "ro": "Drum nou de la Norðdalsá, la nord de intersecția Bíldudalur, peste cea mai înaltă parte a platoului și spre nord, dincolo de limita comitatului, în mare parte pe traseu nou, cu un drum de carieră la Trölladalur și două zone de odihnă. Contractul indica 12,6 km; drumul a fost prelungit cu 850 m în vara lui 2024, iar raportul de finalizare al Vegagerðin dă circa 13 km, cifră înregistrată aici. Lungime desenată 12,97 km, cu începutul tăiat după lungime de la joncțiunea etapelor 2 și 3."
+      },
+      "sourceRefs": [
+        "vn-dyn-stage2-contract",
+        "vn-dyn-stage2-complete",
+        "vn-status-2024-03",
+        "vegagerdin-dynjandisheidi",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "dynjandisheidi-stage2-nordalsa-thvera"
+    },
+    {
+      "id": "dynjandisheidi-stage3-thvera-budavik",
+      "name": {
+        "en": "Dynjandisheiði stage 3: Þverá – Búðavík",
+        "ro": "Dynjandisheiði etapa 3: Þverá – Búðavík"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-03-04",
+        "constructionStart": "2025-06",
+        "expectedOpening": "2026-09"
+      },
+      "lengthKm": 7.1,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-12",
+          "note": {
+            "en": "Tender advertised in the European Economic Area.",
+            "ro": "Licitație publicată în Spațiul Economic European."
+          },
+          "sourceRef": "vegagerdin-dynjandisheidi"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-03-04",
+          "note": {
+            "en": "Contract signed with Borgarverk ehf.",
+            "ro": "Contract semnat cu Borgarverk ehf."
+          },
+          "sourceRef": "vn-dyn-stage3-contract"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-06",
+          "note": {
+            "en": "Works began at the start of June 2025.",
+            "ro": "Lucrările au început la începutul lui iunie 2025."
+          },
+          "sourceRef": "vn-dyn-stage3-start"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Borgarverk ehf.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Last stage: new road from the stage 2 junction to Búðavík, mostly on a new alignment, plus the road to the Dynjandi waterfall, a chain-up area and a rest area. The contract (4 March 2025) gives 7.2 km of Route 60 and 0.8 km of Dynjandavegur and a completion date of 30 September 2026; the project page gives 7.1 km and 1 km, and 7.1 km is recorded. About 30 people were working on site on 19 February 2026. The project page still reads \"Framkvæmd hafin\" (work started) and no completion report was found, so the lot stays under construction past the contract date. Drawn length 6.74 km: the OpenStreetMap construction ways have a gap of about 0.5 km, joined with a straight line. The contract value is not given in the pages consulted.",
+        "ro": "Ultima etapă: drum nou de la joncțiunea cu etapa 2 până la Búðavík, în mare parte pe traseu nou, plus drumul spre cascada Dynjandi, o zonă pentru lanțuri și o zonă de odihnă. Contractul (4 martie 2025) indică 7,2 km din Drumul 60 și 0,8 km din Dynjandavegur și finalizarea la 30 septembrie 2026; pagina de proiect dă 7,1 km și 1 km, iar 7,1 km este cifra înregistrată. Aproximativ 30 de persoane lucrau pe șantier la 19 februarie 2026. Pagina de proiect indică în continuare \"Framkvæmd hafin\" (lucrări începute) și nu a fost găsit un raport de finalizare, deci lotul rămâne în construcție după data contractuală. Lungime desenată 6,74 km: tronsoanele OpenStreetMap în construcție au un hiat de circa 0,5 km, unit cu o linie dreaptă. Valoarea contractului nu apare în paginile consultate."
+      },
+      "sourceRefs": [
+        "vn-dyn-stage3-contract",
+        "vn-dyn-stage3-start",
+        "vn-fills-status-2026",
+        "vegagerdin-dynjandisheidi",
+        "osm-vestfjardavegur"
+      ],
+      "geometryRef": "dynjandisheidi-stage3-thvera-budavik"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vegagerdin-gufudalssveit",
+      "title": "Vegagerðin: Um Gufudalssveit (project page)",
+      "url": "https://www.vegagerdin.is/verkefnin/framkvaemdir/um-gufudalssveit",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-dynjandisheidi",
+      "title": "Vegagerðin: Dynjandisheiði (project page)",
+      "url": "https://www.vegagerdin.is/verkefnin/framkvaemdir/vestfjardavegur-dynjandisheidi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-thorskafjordur-opening",
+      "title": "Vegagerðin: Ný brú yfir Þorskafjörð formlega opnuð í dag (25 October 2023)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/ny-bru-yfir-thorskafjord-formlega-opnud-i-dag",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-thorskafjordur-contract",
+      "title": "Vegagerðin: Skrifað undir verksamning um þverun Þorskafjarðar (8 April 2021)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/skrifad-undir-verksamning-um-thverun-thorskafjardar",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-teigsskogur-contract",
+      "title": "Vegagerðin: Skrifað undir verksamning vegna vegagerðar um Teigsskóg (10 May 2022)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/skrifad-undir-verksamning-vegna-vegagerdar-um-teigsskog",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-fills-tender",
+      "title": "Vegagerðin: Næsti áfangi Vestfjarðarvegar um Gufudalssveit boðinn út (11 September 2023)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/naesti-afangi-vestfjardarvegar-um-gufudalssveit-bodinn-ut",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-fills-contract",
+      "title": "Vegagerðin: Skrifað undir verksamning um gerð vegfyllinga yfir Djúpafjörð og Gufufjörð (4 December 2023)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/vegfyllingar-yfir-djupafjord",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-status-2024-03",
+      "title": "Vegagerðin: Staða framkvæmda á Vestfjarðavegi (60) um Gufudalssveit og Dynjandisheiði (1 March 2024)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/stada-framkvaemda-a-vestfjardavegi-60-um-gufudalssveit-og-dynjandisheidi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-bridges-tender",
+      "title": "Vegagerðin: Brýr á Djúpafjörð við Grónes og Gufufjörð í útboð (14 March 2025)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/bryr-a-djupafjord-vid-grones-og-gufufjord-i-utbod",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-bridges-contract",
+      "title": "Vegagerðin: Skrifað undir samning um byggingu brúa yfir Gufufjörð og Djúpafjörð (3 October 2025)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/skrifad-undir-samning-um-byggingu-brua-yfir-gufufjord-og-djupafjord",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-arch-bridge-announce",
+      "title": "Vegagerðin: Bogabrú á Djúpafjörð senn í útboð (12 May 2026)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/bogabru-a-djupafjord-senn-i-utbod",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-arch-bridge-tender",
+      "title": "Vegagerðin: Útboð brúar yfir Djúpafjörð (29 May 2026)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/utbod-bruar-yfir-djupafjord",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-fills-status-2026",
+      "title": "Vegagerðin: Framkvæmdir á Vestfjarðavegi á Dynjandisheiði (19 February 2026)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/framkvaemdir-a-vestfjardavegi-a-dynjandisheidi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-dyn-stage1-contract",
+      "title": "Vegagerðin: Dynjandisheiðin, skrifað undir verksamning (11 September 2020)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/dynjandisheidin-skrifad-undir-verksamning",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-dyn-stage2-contract",
+      "title": "Vegagerðin: Samið um annan áfanga Vestfjarðavegar (60) um Dynjandisheiði (17 August 2022)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/samid-um-annan-afanga-vestfjardavegar-60-um-dynjandisheidi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-dyn-stage2-complete",
+      "title": "Vegagerðin: Framkvæmdum lokið við annan áfanga Dynjandisheiðar (25 September 2024)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/framkvaemdum-lokid-vid-annan-afanga-dynjandisheidar",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-dyn-stage3-contract",
+      "title": "Vegagerðin: Skrifað undir verksamning vegna 3. áfanga Dynjandisheiðar (4 March 2025)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/skrifad-undir-verksamning-vegna-3-afanga-dynjandisheidar",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vn-dyn-stage3-start",
+      "title": "Vegagerðin: Framkvæmdir eru hafnar á Dynjandisheiði (30 June 2025)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/framkvaemdir-eru-hafnar-a-dynjandisheidi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-vestfjardavegur",
+      "title": "OpenStreetMap contributors (ODbL): Vestfjarðavegur ways, Overpass extract",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

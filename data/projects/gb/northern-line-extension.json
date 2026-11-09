@@ -1,0 +1,146 @@
+{
+  "id": "gb-northern-line-extension",
+  "country": "gb",
+  "city": "gb-london",
+  "category": "railway",
+  "name": {
+    "en": "Northern line extension to Battersea (Kennington – Battersea Power Station)",
+    "ro": "Extinderea liniei Northern spre Battersea (Kennington – Battersea Power Station)"
+  },
+  "description": {
+    "en": "Extension of the Charing Cross branch of the London Underground Northern line from Kennington through new Nine Elms and Battersea Power Station stations, in twin tunnels of 3,150 m and 3,250 m. London Underground awarded a £500 million design-and-build contract to a Ferrovial Agroman and Laing O'Rourke joint venture in August 2014. Construction was officially started on 23 November 2015 and the extension opened on 20 September 2021, after the opening was put back from December 2020. It cost about £1.1 billion and was funded by the private sector, including the developers of Battersea Power Station.",
+    "ro": "Extinderea ramurii Charing Cross a liniei Northern a metroului londonez de la Kennington, prin stațiile noi Nine Elms și Battersea Power Station, în tuneluri gemene de 3.150 m și 3.250 m. London Underground a atribuit în august 2014 un contract de proiectare și execuție de 500 de milioane de lire unui consorțiu format din Ferrovial Agroman și Laing O'Rourke. Lucrările au fost lansate oficial pe 23 noiembrie 2015, iar extinderea a fost deschisă pe 20 septembrie 2021, după ce deschiderea fusese amânată din decembrie 2020. A costat circa 1,1 miliarde de lire și a fost finanțată din sectorul privat, inclusiv de dezvoltatorii Battersea Power Station."
+  },
+  "operator": "gb-tfl",
+  "stationCount": 2,
+  "lots": [
+    {
+      "id": "kennington-battersea-power-station",
+      "name": {
+        "en": "Kennington – Nine Elms – Battersea Power Station",
+        "ro": "Kennington – Nine Elms – Battersea Power Station"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-08",
+        "constructionStart": "2015-11-23",
+        "opened": "2021-09-20"
+      },
+      "lengthKm": 3.2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 2
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 500,
+              "currency": "GBP",
+              "year": 2014,
+              "note": "Design-and-build contract value as reported by Railway Technology on 21 August 2014."
+            },
+            "date": "2014-08",
+            "sourceRef": "railway-technology-award-2014"
+          },
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 1100,
+              "currency": "GBP",
+              "scope": "total",
+              "confidence": "estimated",
+              "note": "Wikipedia: estimated to have cost around £1.1 billion, £160 million below budget. Nominal, price year not stated."
+            },
+            "date": "2021-09-20",
+            "sourceRef": "wikipedia-northern-line-extension"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "Private sector, including developers of Battersea Power Station and contributions from other developments in the Vauxhall, Nine Elms and Battersea area",
+            "ro": "Sector privat, inclusiv dezvoltatorii Battersea Power Station și contribuții din alte proiecte imobiliare din zona Vauxhall, Nine Elms și Battersea"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Ferrovial Agroman – Laing O'Rourke",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 72,
+        "value": {
+          "amount": 500,
+          "currency": "GBP",
+          "year": 2014,
+          "note": "Design-and-build contract as reported by Railway Technology on 21 August 2014."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-08",
+          "note": {
+            "en": "London Underground awarded the design-and-build contract to Ferrovial Agroman Laing O'Rourke.",
+            "ro": "London Underground a atribuit contractul de proiectare și execuție consorțiului Ferrovial Agroman Laing O'Rourke."
+          },
+          "sourceRef": "railway-technology-award-2014"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2015-11-23",
+          "note": {
+            "en": "Mayor Boris Johnson officially started construction at Battersea Power Station; preparation works began earlier in 2015.",
+            "ro": "Primarul Boris Johnson a lansat oficial lucrările la Battersea Power Station; lucrările pregătitoare începuseră mai devreme în 2015."
+          },
+          "sourceRef": "wikipedia-northern-line-extension"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-09-20",
+          "sourceRef": "wikipedia-northern-line-extension"
+        }
+      ],
+      "note": {
+        "en": "Length is the infobox figure of 2 miles; the twin tunnels are 3,150 m (northbound) and 3,250 m (southbound), and the drawn single line measures about 3.1 km. Contract duration is the six years stated by Wikipedia. Main tunnelling began in April 2017. The opening was put back from December 2020 to 2021, announced in January 2019. Railway Technology reported the expected cost at about £1 billion in 2014; the £1.1 billion outturn is an estimate that is nominal and not split by item. Two ventilation shafts at Kennington Park and Kennington Green. The tunnels join the existing Kennington Loop.",
+        "ro": "Lungimea este cifra de 2 mile din caseta informativă; tunelurile gemene au 3.150 m (spre nord) și 3.250 m (spre sud), iar linia unică desenată măsoară circa 3,1 km. Durata contractului este cea de șase ani indicată de Wikipedia. Forajul principal a început în aprilie 2017. Deschiderea a fost amânată din decembrie 2020 în 2021, anunțat în ianuarie 2019. Railway Technology a raportat în 2014 un cost estimat de circa 1 miliard de lire; rezultatul de 1,1 miliarde este o estimare în valoare nominală, fără defalcare pe categorii. Două puțuri de ventilație la Kennington Park și Kennington Green. Tunelurile se leagă de bucla existentă Kennington Loop."
+      },
+      "sourceRefs": [
+        "wikipedia-northern-line-extension",
+        "railway-technology-award-2014",
+        "osm-northern-line-extension"
+      ],
+      "geometryRef": "kennington-battersea-power-station"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-northern-line-extension",
+      "title": "Wikipedia: Northern line extension to Battersea",
+      "url": "https://en.wikipedia.org/wiki/Northern_line_extension_to_Battersea",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "railway-technology-award-2014",
+      "title": "LU awards Northern line extension contract to Ferrovial",
+      "url": "https://www.railway-technology.com/news/newslu-awards-northern-line-extension-contract-to-ferrovial-4350711/",
+      "publisher": "Railway Technology",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-northern-line-extension",
+      "title": "OpenStreetMap: Northern line extension tunnel ways (ODbL)",
+      "url": "https://www.openstreetmap.org/way/78897362",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

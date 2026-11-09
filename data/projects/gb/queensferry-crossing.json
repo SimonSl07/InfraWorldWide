@@ -1,0 +1,139 @@
+{
+  "id": "gb-queensferry-crossing",
+  "country": "gb",
+  "category": "bridge",
+  "name": {
+    "en": "Queensferry Crossing (Forth Replacement Crossing)",
+    "ro": "Queensferry Crossing (Forth Replacement Crossing)"
+  },
+  "description": {
+    "en": "Three-tower cable-stayed road bridge over the Firth of Forth carrying the M90, with 4 km of new connecting roads and 19.7 km of upgraded roads. The principal design-and-build contract went to Forth Crossing Bridge Constructors in April 2011 at GBP 790 million. The bridge opened to traffic on 30 August 2017. Transport Scotland gives a project budget of GBP 1.325 to 1.35 billion. The Forth Road Bridge alongside is not part of this scheme.",
+    "ro": "Pod rutier hobanat cu trei piloni peste Firth of Forth, pe care circulă M90, cu 4 km de drumuri de legătură noi și 19,7 km de drumuri modernizate. Contractul principal de proiectare și execuție a fost atribuit în aprilie 2011 consorțiului Forth Crossing Bridge Constructors, la 790 de milioane GBP. Podul a fost deschis circulației la 30 august 2017. Transport Scotland indică un buget al proiectului de 1,325–1,35 miliarde GBP. Podul Forth Road de alături nu face parte din această schemă."
+  },
+  "operator": "gb-transport-scotland",
+  "lots": [
+    {
+      "id": "queensferry-crossing-bridge",
+      "name": {
+        "en": "Queensferry Crossing (bridge)",
+        "ro": "Queensferry Crossing (podul)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-04",
+        "constructionStart": "2011-09",
+        "opened": "2017-08-30"
+      },
+      "lengthKm": 2.7,
+      "cost": {
+        "estimated": {
+          "amount": 1350,
+          "currency": "GBP",
+          "scope": "programme",
+          "note": "Upper end of the GBP 1.325 to 1.35 billion budget Transport Scotland gives for the whole Forth Replacement Crossing project (bridge, connecting roads, M9 Junction 1A and ITS). Price year not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 790,
+              "currency": "GBP",
+              "year": 2011,
+              "scope": "works",
+              "note": "Tender price of the principal contract, which covers the bridge and the connecting roads together."
+            },
+            "date": "2011-04",
+            "sourceRef": "ts-project-details"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Forth Crossing Bridge Constructors",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 790,
+          "currency": "GBP",
+          "year": 2011,
+          "scope": "works",
+          "note": "Principal contract for the bridge and the connecting roads."
+        }
+      },
+      "note": {
+        "en": "Overall length 2.7 km including approaches, main span 650 m. The 2008 date on the Transport Scotland page is the start of the project, not of construction: preparatory works began in September 2011. Length drawn from the OpenStreetMap northbound carriageway is 2.67 km.",
+        "ro": "Lungime totală 2,7 km cu rampele de acces, deschidere principală 650 m. Data 2008 de pe pagina Transport Scotland este începutul proiectului, nu al construcției: lucrările pregătitoare au început în septembrie 2011. Lungimea desenată pe sensul nordic din OpenStreetMap este 2,67 km."
+      },
+      "sourceRefs": [
+        "ts-forth-replacement-crossing",
+        "ts-project-details",
+        "wikipedia-queensferry-crossing",
+        "osm"
+      ],
+      "geometryRef": "queensferry-crossing-bridge"
+    },
+    {
+      "id": "m90-connecting-roads",
+      "name": {
+        "en": "M90 connecting roads (Echline to the bridge, bridge to Ferrytoll)",
+        "ro": "Drumurile de legătură M90 (Echline – pod, pod – Ferrytoll)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011-04",
+        "constructionStart": "2011-09",
+        "opened": "2017-08-30"
+      },
+      "lengthKm": 4,
+      "contractors": [
+        {
+          "name": "Forth Crossing Bridge Constructors",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Transport Scotland gives 4 km of completely new connecting roads, plus 19.7 km of upgraded roads, built under the principal contract. The drawn line follows the northbound carriageway in two parts, from the A90 at Echline to the southern landfall and from the northern landfall to Ferrytoll junction, and measures 4.1 km. The exact limits of the 4 km are not published on the page, so the cuts are an estimate. The opening date is that of the bridge. The M9 Junction 1A upgrade (completed February 2013) and the Fife intelligent transport system (final phase 1 February 2018) were separate contracts and are not drawn.",
+        "ro": "Transport Scotland indică 4 km de drumuri de legătură complet noi, plus 19,7 km de drumuri modernizate, executate prin contractul principal. Linia desenată urmează sensul nordic în două părți, de la A90 la Echline până la capătul sudic al podului și de la capătul nordic până la nodul Ferrytoll, și măsoară 4,1 km. Limitele exacte ale celor 4 km nu sunt publicate pe pagină, deci tăieturile sunt o estimare. Data deschiderii este cea a podului. Modernizarea nodului M9 1A (finalizată în februarie 2013) și sistemul inteligent de transport din Fife (ultima fază la 1 februarie 2018) au fost contracte separate și nu sunt desenate."
+      },
+      "sourceRefs": [
+        "ts-project-details",
+        "wikipedia-queensferry-crossing",
+        "osm"
+      ],
+      "geometryRef": "m90-connecting-roads"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ts-forth-replacement-crossing",
+      "title": "Transport Scotland: Forth Replacement Crossing (Completed; 2008 to summer 2017; budget GBP 1.325 - GBP 1.35 billion)",
+      "url": "https://www.transport.gov.scot/projects/forth-replacement-crossing/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ts-project-details",
+      "title": "Transport Scotland: Forth Replacement Crossing project details (principal contract awarded April 2011 at GBP 790 million; 4 km of new connecting roads; opened to traffic 30 August 2017)",
+      "url": "https://www.transport.gov.scot/projects/forth-replacement-crossing/project-details/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-queensferry-crossing",
+      "title": "Wikipedia: Queensferry Crossing (overall length 2.7 km, construction start September 2011)",
+      "url": "https://en.wikipedia.org/wiki/Queensferry_Crossing",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: M90 Queensferry Crossing and approach ways (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "gb-borders-railway",
+  "country": "gb",
+  "category": "railway",
+  "name": {
+    "en": "Borders Railway (Newcraighall – Tweedbank)",
+    "ro": "Borders Railway (Newcraighall – Tweedbank)"
+  },
+  "description": {
+    "en": "Passenger railway from Edinburgh through Midlothian to Tweedbank in the Scottish Borders, on most of the northern Waverley Route alignment closed in 1969. Network Rail built it as a largely single-track, unelectrified line with seven new stations, opened to passengers on 6 September 2015.",
+    "ro": "Cale ferată de călători de la Edinburgh prin Midlothian până la Tweedbank, în Scottish Borders, pe cea mai mare parte a traseului nordic al Waverley Route, închis în 1969. Network Rail a construit-o ca linie în mare parte cu o singură cale, neelectrificată, cu șapte stații noi; a fost deschisă pentru călători la 6 septembrie 2015."
+  },
+  "operator": "gb-network-rail",
+  "lots": [
+    {
+      "id": "newcraighall-tweedbank",
+      "name": {
+        "en": "Newcraighall – Tweedbank",
+        "ro": "Newcraighall – Tweedbank"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2012-12",
+        "constructionStart": "2013-04-18",
+        "opened": "2015-09-06"
+      },
+      "lengthKm": 49.9,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 294,
+              "currency": "GBP"
+            },
+            "date": "2012-11-06",
+            "note": "Network Rail agreed to build the line for this sum at the Transfer of Responsibility on 6 November 2012.",
+            "sourceRef": "wikipedia-borders-railway"
+          }
+        ]
+      },
+      "profile": {
+        "works": "reconstruction",
+        "electrified": false,
+        "tracks": 1,
+        "stationCount": 7
+      },
+      "contractors": [
+        {
+          "name": "BAM Nuttall",
+          "role": "builder"
+        },
+        {
+          "name": "URS",
+          "role": "designer"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_cancelled",
+          "date": "2011-06"
+        },
+        {
+          "kind": "awarded",
+          "date": "2012-12"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2013-04-18"
+        },
+        {
+          "kind": "opened",
+          "date": "2015-09-06"
+        }
+      ],
+      "note": {
+        "en": "The line from Edinburgh Waverley to Tweedbank is 35 mi 25 ch (56.8 km); this lot covers the new railway from Newcraighall, 31 mi (49.9 km) according to Wikipedia. Edinburgh–Newcraighall already carried trains and is not drawn. Seven new stations: Shawfair, Eskbank, Newtongrange, Gorebridge, Stow, Galashiels and Tweedbank. Network Rail agreed to build it for £294 million (nominal, price year not stated), against a £230 million estimate and £100 million in 2000. Network Rail appointed BAM Nuttall as main contractor in December 2012 and URS designed bridges, stations and roads. A first sod was turned on 3 March 2010 and construction began in earnest on 18 April 2013. Passenger service began on 6 September 2015, with an official opening on 9 September. Drawn geometry measured from OpenStreetMap is about 49.3 km.",
+        "ro": "Linia de la Edinburgh Waverley la Tweedbank măsoară 35 mi 25 ch (56,8 km); acest lot cuprinde calea ferată nouă de la Newcraighall, 31 mi (49,9 km) potrivit Wikipedia. Segmentul Edinburgh–Newcraighall avea deja trenuri și nu este desenat. Șapte stații noi: Shawfair, Eskbank, Newtongrange, Gorebridge, Stow, Galashiels și Tweedbank. Network Rail a convenit să o construiască pentru 294 de milioane de lire (nominal, anul prețurilor nespecificat), față de o estimare de 230 de milioane și 100 de milioane în 2000. Network Rail a numit BAM Nuttall antreprenor principal în decembrie 2012, iar URS a proiectat podurile, stațiile și drumurile. Prima lopată a fost ridicată la 3 martie 2010, iar construcția propriu-zisă a început la 18 aprilie 2013. Serviciul de călători a început la 6 septembrie 2015, cu o deschidere oficială la 9 septembrie. Geometria desenată, măsurată din OpenStreetMap, are circa 49,3 km."
+      },
+      "sourceRefs": [
+        "wikipedia-borders-railway",
+        "transport-scotland-borders-railway",
+        "osm-borders-railway"
+      ],
+      "geometryRef": "newcraighall-tweedbank"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-borders-railway",
+      "title": "Wikipedia: Borders Railway",
+      "url": "https://en.wikipedia.org/wiki/Borders_Railway",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "transport-scotland-borders-railway",
+      "title": "Transport Scotland: Borders Railway",
+      "url": "https://www.transport.gov.scot/projects/borders-railway/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-borders-railway",
+      "title": "OpenStreetMap contributors: railway geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

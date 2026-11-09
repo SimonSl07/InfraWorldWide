@@ -1,0 +1,167 @@
+{
+  "id": "is-east-ring-road-tunnels",
+  "country": "is",
+  "category": "tunnel",
+  "name": {
+    "en": "East Iceland Ring Road tunnels",
+    "ro": "Tunelurile Drumului Inelar din estul Islandei"
+  },
+  "description": {
+    "en": "Two road tunnels on Route 1 (the Ring Road) in eastern Iceland, both built in 2003–2005 by the Icelandic Road and Coastal Administration: the 5.9 km Fáskrúðsfjarðargöng between Reyðarfjörður and Fáskrúðsfjörður, opened on 9 September 2005, and the 1.3 km Almannaskarðsgöng east of Höfn, opened on 24 June 2005.",
+    "ro": "Două tuneluri rutiere pe Ruta 1 (Drumul Inelar) din estul Islandei, ambele construite în 2003–2005 de Administrația Islandeză a Drumurilor și Coastelor: Fáskrúðsfjarðargöng, de 5,9 km, între Reyðarfjörður și Fáskrúðsfjörður, deschis la 9 septembrie 2005, și Almannaskarðsgöng, de 1,3 km, la est de Höfn, deschis la 24 iunie 2005."
+  },
+  "operator": "is-vegagerdin",
+  "lots": [
+    {
+      "id": "faskrudsfjardargong",
+      "name": {
+        "en": "Fáskrúðsfjarðargöng (Reyðarfjörður – Fáskrúðsfjörður)",
+        "ro": "Fáskrúðsfjarðargöng (Reyðarfjörður – Fáskrúðsfjörður)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003",
+        "opened": "2005-09-09"
+      },
+      "lengthKm": 5.9,
+      "profile": {
+        "tunnelKm": 5.9
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 3800,
+              "currency": "ISK"
+            },
+            "date": "2003-03-21",
+            "sourceRef": "mbl-2003-faskrudsfjardargong",
+            "note": "Estimated cost of building the tunnels, quoted on the day the contracts were signed."
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Ístak hf.",
+          "role": "builder"
+        },
+        {
+          "name": "E. Pihl & Søn AS",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2003-03-21",
+          "sourceRef": "mbl-2003-faskrudsfjardargong"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-09-09",
+          "sourceRef": "wikipedia-en-faskrudsfjardargong"
+        }
+      ],
+      "note": {
+        "en": "Twin-lane tunnel on Route 1, road number 1-u2. At signing the length was given as 5.7 km of blasted tunnel plus 200 m of portals, 5.9 km in all, and the highest point is 124 m above sea level. Contracts were signed on 21 March 2003 with work expected to start in April; the Vegagerðin tunnel table gives the construction period as 2003–2005, and the exact start date was not found. The tunnel was formerly on Route 96 and the Ring Road was routed through it in 2017. Length measured from OpenStreetMap geometry is 5.88 km.",
+        "ro": "Tunel cu două benzi pe Ruta 1, numărul de drum 1-u2. La semnare lungimea era dată ca 5,7 km de tunel excavat plus 200 m de portaluri, în total 5,9 km, iar punctul cel mai înalt se află la 124 m deasupra mării. Contractele au fost semnate la 21 martie 2003, cu începerea lucrărilor așteptată în aprilie; tabelul Vegagerðin indică perioada de construcție 2003–2005, iar data exactă de început nu a fost găsită. Tunelul a fost inițial pe Ruta 96, iar Drumul Inelar a fost trecut prin el în 2017. Lungimea măsurată din geometria OpenStreetMap este de 5,88 km."
+      },
+      "sourceRefs": [
+        "vegagerdin-jardgong",
+        "mbl-2003-faskrudsfjardargong",
+        "wikipedia-en-faskrudsfjardargong",
+        "osm"
+      ],
+      "geometryRef": "faskrudsfjardargong"
+    },
+    {
+      "id": "almannaskardsgong",
+      "name": {
+        "en": "Almannaskarðsgöng (east of Höfn)",
+        "ro": "Almannaskarðsgöng (la est de Höfn)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-03",
+        "opened": "2005-06-24"
+      },
+      "lengthKm": 1.3,
+      "profile": {
+        "tunnelKm": 1.3
+      },
+      "contractors": [
+        {
+          "name": "Héraðsverk ehf.",
+          "role": "builder"
+        },
+        {
+          "name": "Leonhard Nilsen & Sønner",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2005-06-24",
+          "sourceRef": "visir-2005-almannaskard"
+        }
+      ],
+      "note": {
+        "en": "Twin-lane tunnel on Route 1, road number 1-x5, replacing the Almannaskarð mountain pass, which was dangerous and often impassable in winter. Construction began in March 2004 and breakthrough came in October 2004. The tunnel is 1,150 m of rock plus about 162 m of concrete portals, 1,312 m in all, signed as 1,300 m. Vísir reported the tunnel and about 5 km of new road on both sides as having cost a little over one billion króna; that figure covers more than the tunnel and is not recorded as a cost. Length measured from OpenStreetMap geometry is 1.28 km.",
+        "ro": "Tunel cu două benzi pe Ruta 1, numărul de drum 1-x5, care a înlocuit pasul montan Almannaskarð, periculos și adesea impracticabil iarna. Construcția a început în martie 2004, iar străpungerea a avut loc în octombrie 2004. Tunelul are 1.150 m în rocă plus circa 162 m de portaluri din beton, în total 1.312 m, marcat pe semn cu 1.300 m. Vísir a relatat că tunelul și circa 5 km de drum nou de ambele părți au costat puțin peste un miliard de coroane; cifra cuprinde mai mult decât tunelul și nu este înregistrată drept cost. Lungimea măsurată din geometria OpenStreetMap este de 1,28 km."
+      },
+      "sourceRefs": [
+        "vegagerdin-jardgong",
+        "wikipedia-en-almannaskardsgong",
+        "visir-2005-almannaskard",
+        "osm"
+      ],
+      "geometryRef": "almannaskardsgong"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vegagerdin-jardgong",
+      "title": "Vegagerðin: Jarðgöng (list of tunnels with construction years and lengths)",
+      "url": "https://www.vegagerdin.is/samgongukerfid/vegakerfid/jardgong",
+      "publisher": "Vegagerðin",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "mbl-2003-faskrudsfjardargong",
+      "title": "Morgunblaðið (mbl.is): Skrifað undir samning um Fáskrúðsfjarðargöng í dag (2003-03-21)",
+      "url": "https://www.mbl.is/frettir/innlent/2003/03/21/skrifad_undir_samning_um_faskrudsfjardargong_i_dag/",
+      "publisher": "mbl.is",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-faskrudsfjardargong",
+      "title": "Wikipedia: Fáskrúðsfjörður Tunnel",
+      "url": "https://en.wikipedia.org/wiki/F%C3%A1skr%C3%BA%C3%B0sfjar%C3%B0arg%C3%B6ng",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-almannaskardsgong",
+      "title": "Wikipedia: Almannaskarðsgöng",
+      "url": "https://en.wikipedia.org/wiki/Almannaskar%C3%B0sg%C3%B6ng",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "visir-2005-almannaskard",
+      "title": "Vísir: Göng undir Almannaskarð opnuð (2005-06-24)",
+      "url": "https://www.visir.is/gong-undir-almannaskard-opnud/article/2005506240307",
+      "publisher": "Vísir",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): ways 208098866 and 208098871",
+      "url": "https://www.openstreetmap.org/way/208098866",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

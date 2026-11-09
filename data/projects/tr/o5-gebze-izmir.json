@@ -1,0 +1,572 @@
+{
+  "id": "tr-o5-gebze-izmir",
+  "country": "tr",
+  "category": "highway",
+  "name": {
+    "en": "O-5 Gebze–Orhangazi–İzmir Motorway",
+    "ro": "Autostrada O-5 Gebze–Orhangazi–İzmir"
+  },
+  "description": {
+    "en": "Toll motorway from Gebze (Muallimköy) across the Gulf of Izmit on the Osman Gazi Bridge, past Bursa and Balıkesir to İzmir. KGM gives 426 km in total, 384 km of motorway plus 42 km of connecting roads, and states that the whole project was in operation on 5 August 2019. It was tendered on 9 April 2009 as a build–operate–transfer concession; the implementation agreement with Otoyol A.Ş. was signed on 27 September 2010 and full financing closed on 5 June 2015. Turkish Wikipedia reports a cost estimated at USD 6.9 billion in 2009 and USD 13.6 billion at completion in 2019, met entirely by Otoyol A.Ş.; no primary source was found, so no cost is recorded per lot. Lots follow the section openings listed by Turkish Wikipedia and are cut at mapped interchanges; their lengths are measured from OpenStreetMap and sum to about 376 km, against 377 km of motorway given by Wikipedia. The Bursa ring road between Bursa North and Bursa West, part of the O-5 but built earlier and toll-free, is not drawn.",
+    "ro": "Autostradă cu taxă de la Gebze (Muallimköy), peste Golful Izmit pe Podul Osman Gazi, pe lângă Bursa și Balıkesir, până la İzmir. KGM indică 426 km în total, 384 km de autostradă plus 42 km de drumuri de legătură, și precizează că întregul proiect era în exploatare la 5 august 2019. A fost licitată la 9 aprilie 2009 ca concesiune construire–operare–transfer; contractul de implementare cu Otoyol A.Ş. a fost semnat la 27 septembrie 2010, iar finanțarea completă a fost încheiată la 5 iunie 2015. Wikipedia în turcă raportează un cost estimat la 6,9 miliarde USD în 2009 și 13,6 miliarde USD la finalizare, în 2019, suportat integral de Otoyol A.Ş.; nu s-a găsit o sursă primară, deci nu se înregistrează cost pe lot. Loturile urmează deschiderile pe sectoare din Wikipedia în turcă și sunt tăiate la noduri cartografiate; lungimile sunt măsurate pe OpenStreetMap și însumează circa 376 km, față de 377 km de autostradă indicați de Wikipedia. Șoseaua de centură a Bursei dintre Bursa Nord și Bursa Vest, parte din O-5 dar construită mai devreme și fără taxă, nu este desenată."
+  },
+  "operator": "tr-otoyol-as",
+  "lots": [
+    {
+      "id": "gebze-altinova-bridge",
+      "name": {
+        "en": "Gebze (Muallimköy) – Altınova, incl. Osman Gazi Bridge",
+        "ro": "Gebze (Muallimköy) – Altınova, inclusiv Podul Osman Gazi"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2016-07-01"
+      },
+      "lengthKm": 10.1,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2016-07-01",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        },
+        {
+          "name": "IHI Infrastructure Systems",
+          "role": "builder"
+        },
+        {
+          "name": "COWI",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Opened with the Osman Gazi Bridge (Izmit Gulf crossing, main span 1,550 m, total length 2,682 m according to Turkish Wikipedia) on 1 July 2016; the ceremony was held on the evening of 30 June 2016. The bridge was built under an EPC contract by IHI Infrastructure Systems, designed by COWI. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis odată cu Podul Osman Gazi (traversarea Golfului Izmit, deschidere principală 1.550 m, lungime totală 2.682 m conform Wikipedia în turcă) la 1 iulie 2016; ceremonia a avut loc în seara de 30 iunie 2016. Podul a fost construit prin contract EPC de IHI Infrastructure Systems, proiectat de COWI. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5",
+        "wikipedia-en-osman-gazi-bridge",
+        "wikipedia-tr-osmangazi-koprusu"
+      ],
+      "geometryRef": "gebze-altinova-bridge"
+    },
+    {
+      "id": "altinova-gemlik",
+      "name": {
+        "en": "Altınova – Gemlik",
+        "ro": "Altınova – Gemlik"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2016-04-20"
+      },
+      "lengthKm": 40,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2016-04-20",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "First section of the motorway to open, ahead of the bridge. Length measured from OpenStreetMap geometry.",
+        "ro": "Primul sector al autostrăzii deschis, înaintea podului. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "altinova-gemlik"
+    },
+    {
+      "id": "gemlik-bursa-kuzey",
+      "name": {
+        "en": "Gemlik – Bursa North",
+        "ro": "Gemlik – Bursa Nord"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2017-03-12"
+      },
+      "lengthKm": 21.3,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2017-03-12",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opening completed an uninterrupted motorway link from Gebze to Bursa. Ends at the Bursa North interchange (the OSM junction K-6A is used). The existing Bursa ring road between Bursa North and Bursa West predates the concession, is toll-free and is not drawn here. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschiderea a încheiat legătura continuă de autostradă Gebze – Bursa. Se termină la nodul Bursa Nord (se folosește nodul OSM K-6A). Șoseaua de centură existentă a Bursei dintre Bursa Nord și Bursa Vest este anterioară concesiunii, fără taxă, și nu este desenată aici. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "gemlik-bursa-kuzey"
+    },
+    {
+      "id": "bursa-bati-balikesir-kuzey",
+      "name": {
+        "en": "Bursa West – Balıkesir North",
+        "ro": "Bursa Vest – Balıkesir Nord"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2019-08-04"
+      },
+      "lengthKm": 98.9,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2019-08-04",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened 4 August 2019 according to Turkish Wikipedia; KGM gives 5 August 2019 as the date the whole project was in operation. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis la 4 august 2019 conform Wikipedia în turcă; KGM indică 5 august 2019 ca dată la care întregul proiect era în exploatare. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "bursa-bati-balikesir-kuzey"
+    },
+    {
+      "id": "balikesir-kuzey-balikesir-bati",
+      "name": {
+        "en": "Balıkesir North – Balıkesir West",
+        "ro": "Balıkesir Nord – Balıkesir Vest"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2019-03"
+      },
+      "lengthKm": 28.8,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2019-03",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened in March 2019: Turkish Wikipedia gives both 14 and 17 March 2019 for this section, so only the month is recorded. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis în martie 2019: Wikipedia în turcă indică atât 14, cât și 17 martie 2019 pentru acest sector, deci se înregistrează doar luna. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "balikesir-kuzey-balikesir-bati"
+    },
+    {
+      "id": "balikesir-bati-akhisar",
+      "name": {
+        "en": "Balıkesir West – Akhisar",
+        "ro": "Balıkesir Vest – Akhisar"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2019-08-04"
+      },
+      "lengthKm": 84.4,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2019-08-04",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened 4 August 2019 according to Turkish Wikipedia; passes Savaştepe, Soma and Kırkağaç. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis la 4 august 2019 conform Wikipedia în turcă; trece pe lângă Savaştepe, Soma și Kırkağaç. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "balikesir-bati-akhisar"
+    },
+    {
+      "id": "akhisar-saruhanli",
+      "name": {
+        "en": "Akhisar – Saruhanlı",
+        "ro": "Akhisar – Saruhanlı"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2019-03"
+      },
+      "lengthKm": 23.6,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2019-03",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened in March 2019: Turkish Wikipedia gives both 14 and 17 March 2019 for this section (Saruhanlı–Akhisar), so only the month is recorded. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschis în martie 2019: Wikipedia în turcă indică atât 14, cât și 17 martie 2019 pentru acest sector (Saruhanlı–Akhisar), deci se înregistrează doar luna. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "akhisar-saruhanli"
+    },
+    {
+      "id": "saruhanli-kemalpasa",
+      "name": {
+        "en": "Saruhanlı – Kemalpaşa",
+        "ro": "Saruhanlı – Kemalpaşa"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2018-12-01"
+      },
+      "lengthKm": 49.5,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2018-12-01",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Toll section opened 1 December 2018. Length measured from OpenStreetMap geometry.",
+        "ro": "Sector cu taxă deschis la 1 decembrie 2018. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "saruhanli-kemalpasa"
+    },
+    {
+      "id": "kemalpasa-izmir",
+      "name": {
+        "en": "Kemalpaşa – İzmir",
+        "ro": "Kemalpaşa – İzmir"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2010-09-27",
+        "opened": "2017-03-08"
+      },
+      "lengthKm": 19.2,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2017-03-08",
+          "sourceRef": "wikipedia-tr-otoyol-5",
+          "note": {
+            "en": "Opening date as listed by Turkish Wikipedia.",
+            "ro": "Data deschiderii conform Wikipedia în turcă."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build–operate–transfer concession to Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); full financing for the whole project was completed on 5 June 2015.",
+            "ro": "Concesiune construire–operare–transfer acordată Otoyol A.Ş. (NÖMAYG: Nurol, Özaltın, Makyol, Astaldi, Göçay); finanțarea întregului proiect a fost încheiată la 5 iunie 2015."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        },
+        {
+          "name": "NÖMAYG (Nurol, Özaltın, Makyol, Astaldi, Göçay)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Toll-free 18 km section as described by Turkish Wikipedia, opened 8 March 2017; drawn to the Karasuluk interchange on the western edge of İzmir. Length measured from OpenStreetMap geometry.",
+        "ro": "Sector de 18 km fără taxă conform Wikipedia în turcă, deschis la 8 martie 2017; desenat până la nodul Karasuluk, la marginea de vest a orașului İzmir. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "otoyol-tarihce",
+        "kgm-kamu-ozel",
+        "wikipedia-tr-otoyol-5",
+        "wikipedia-en-otoyol-5",
+        "osm-o5"
+      ],
+      "geometryRef": "kemalpasa-izmir"
+    }
+  ],
+  "sources": [
+    {
+      "id": "otoyol-tarihce",
+      "title": "Otoyol A.Ş.: Tarihçe",
+      "url": "https://isletme.otoyolas.com.tr/tarihce/",
+      "publisher": "Otoyol Yatırım ve İşletme A.Ş.",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "kgm-kamu-ozel",
+      "title": "KGM Kamu Özel Sektör Ortaklığı Bölge Müdürlüğü: Gebze-Orhangazi-İzmir Otoyolu",
+      "url": "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Bolgeler/KamuOzel/KamuOzel.aspx",
+      "publisher": "Karayolları Genel Müdürlüğü",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-tr-otoyol-5",
+      "title": "Vikipedi: Otoyol 5",
+      "url": "https://tr.wikipedia.org/wiki/Otoyol_5",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-otoyol-5",
+      "title": "Wikipedia: Otoyol 5",
+      "url": "https://en.wikipedia.org/wiki/Otoyol_5",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-tr-osmangazi-koprusu",
+      "title": "Vikipedi: Osmangazi Köprüsü",
+      "url": "https://tr.wikipedia.org/wiki/Osmangazi_K%C3%B6pr%C3%BCs%C3%BC",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-osman-gazi-bridge",
+      "title": "Wikipedia: Osman Gazi Bridge",
+      "url": "https://en.wikipedia.org/wiki/Osman_Gazi_Bridge",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-o5",
+      "title": "OpenStreetMap contributors: O-5 motorway (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/5944186",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

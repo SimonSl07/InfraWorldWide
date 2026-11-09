@@ -1,0 +1,158 @@
+{
+  "id": "tr-ankara-metro",
+  "country": "tr",
+  "city": "tr-ankara",
+  "category": "railway",
+  "name": {
+    "en": "Ankara Metro lines M2, M3 and M4",
+    "ro": "Liniile M2, M3 și M4 ale metroului din Ankara"
+  },
+  "description": {
+    "en": "Three Ankara metro lines taken over from Ankara Metropolitan Municipality by the Ministry of Transport on 7 May 2011: M3 Batıkent – OSB-Törekent (15.36 km, opened 12 February 2014), M2 Kızılay – Koru (16.59 km, opened 13 March 2014) and M4 Şehitler – Kızılay (12.5 km, opened in 2017 and 2023).",
+    "ro": "Trei linii de metrou din Ankara preluate de la Primăria Metropolitană Ankara de Ministerul Transporturilor pe 7 mai 2011: M3 Batıkent – OSB-Törekent (15,36 km, deschisă pe 12 februarie 2014), M2 Kızılay – Koru (16,59 km, deschisă pe 13 martie 2014) și M4 Şehitler – Kızılay (12,5 km, deschisă în 2017 și 2023)."
+  },
+  "operator": "tr-uab-aygm",
+  "lots": [
+    {
+      "id": "m2-kizilay-koru",
+      "name": {
+        "en": "M2: Kızılay – Koru (Çayyolu)",
+        "ro": "M2: Kızılay – Koru (Çayyolu)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2002",
+        "opened": "2014-03-13"
+      },
+      "lengthKm": 16.59,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 12
+      },
+      "note": {
+        "en": "Opened 13 March 2014 (AYGM page: completion date). Wikipedia gives 12 stations and a construction start in 2002; the works were re-tendered by the Ministry of Transport after Ankara Metropolitan Municipality handed M2, M3 and M4 over on 7 May 2011. Contractors and cost are not stated on the pages consulted. Since 2019 M1, M2 and M3 run as one service between Koru and OSB-Törekent. Drawn length from OpenStreetMap is 16.72 km.",
+        "ro": "Deschisă pe 13 martie 2014 (pagina AYGM: data finalizării). Wikipedia indică 12 stații și începerea lucrărilor în 2002; lucrările au fost relicitate de Ministerul Transporturilor după ce Primăria Metropolitană Ankara a predat liniile M2, M3 și M4 pe 7 mai 2011. Constructorii și costul nu sunt menționați în paginile consultate. Din 2019, M1, M2 și M3 circulă ca un singur serviciu între Koru și OSB-Törekent. Lungimea desenată din OpenStreetMap este 16,72 km."
+      },
+      "sourceRefs": [
+        "aygm-ankara-m2",
+        "wikipedia-en-ankara-metro",
+        "wikipedia-tr-ankara-metro",
+        "osm-ankara-metro"
+      ],
+      "geometryRef": "m2-kizilay-koru"
+    },
+    {
+      "id": "m3-batikent-torekent",
+      "name": {
+        "en": "M3: Batıkent – OSB-Törekent",
+        "ro": "M3: Batıkent – OSB-Törekent"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001",
+        "opened": "2014-02-12"
+      },
+      "lengthKm": 15.36,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 12
+      },
+      "note": {
+        "en": "Opened 12 February 2014 per Wikipedia, with 12 stations and a construction start in 2001. The works were re-tendered by the Ministry of Transport after the municipality handed the line over on 7 May 2011. Contractors and cost are not stated on the pages consulted. Since 2018 M3 has run through to Kızılay with M1. Drawn length from OpenStreetMap is 15.30 km. The line meets M1 at Batıkent without sharing track.",
+        "ro": "Deschisă pe 12 februarie 2014 potrivit Wikipedia, cu 12 stații și începerea lucrărilor în 2001. Lucrările au fost relicitate de Ministerul Transporturilor după predarea liniei de către primărie pe 7 mai 2011. Constructorii și costul nu sunt menționați în paginile consultate. Din 2018, M3 circulă fără întrerupere până la Kızılay împreună cu M1. Lungimea desenată din OpenStreetMap este 15,30 km. Linia întâlnește M1 la Batıkent fără a împărți calea de rulare."
+      },
+      "sourceRefs": [
+        "wikipedia-en-ankara-metro",
+        "wikipedia-tr-ankara-metro",
+        "osm-ankara-metro"
+      ],
+      "geometryRef": "m3-batikent-torekent"
+    },
+    {
+      "id": "m4-sehitler-akm",
+      "name": {
+        "en": "M4: Şehitler – Atatürk Kültür Merkezi (AKM)",
+        "ro": "M4: Şehitler – Atatürk Kültür Merkezi (AKM)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-01-05"
+      },
+      "lengthKm": 8.89,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "First section of M4, opened 5 January 2017 (Wikipedia). Length measured from OpenStreetMap geometry; Wikipedia gives 12.5 km for the whole line, of which this lot and the AKM–Kızılay lot together draw 12.27 km. Wikipedia (English) says M4 launched construction in 2004, Turkish Wikipedia says 2003, so no start date is recorded. Contractors and cost are not stated on the pages consulted.",
+        "ro": "Prima secțiune a liniei M4, deschisă pe 5 ianuarie 2017 (Wikipedia). Lungime măsurată din geometria OpenStreetMap; Wikipedia indică 12,5 km pentru întreaga linie, din care această secțiune și cea AKM–Kızılay însumează 12,27 km desenați. Wikipedia în engleză indică începerea lucrărilor în 2004, iar cea în turcă 2003, deci nu se înregistrează o dată de început. Constructorii și costul nu sunt menționați în paginile consultate."
+      },
+      "sourceRefs": [
+        "wikipedia-en-ankara-metro",
+        "wikipedia-tr-ankara-metro",
+        "osm-ankara-metro"
+      ],
+      "geometryRef": "m4-sehitler-akm"
+    },
+    {
+      "id": "m4-akm-kizilay",
+      "name": {
+        "en": "M4: AKM – Kızılay",
+        "ro": "M4: AKM – Kızılay"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2023-04-12"
+      },
+      "lengthKm": 3.38,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Second section of M4 via Gar and Adliye, opened 12 April 2023 (Wikipedia). Length measured from OpenStreetMap geometry. The AYGM page for AKM–Gar–Kızılay still describes the works as under way and was not updated after opening. Contractors and cost are not stated on the pages consulted.",
+        "ro": "A doua secțiune a liniei M4, prin Gar și Adliye, deschisă pe 12 aprilie 2023 (Wikipedia). Lungime măsurată din geometria OpenStreetMap. Pagina AYGM pentru AKM–Gar–Kızılay descrie încă lucrările ca fiind în desfășurare și nu a fost actualizată după deschidere. Constructorii și costul nu sunt menționați în paginile consultate."
+      },
+      "sourceRefs": [
+        "wikipedia-en-ankara-metro",
+        "aygm-ankara-akm-gar-kizilay",
+        "osm-ankara-metro"
+      ],
+      "geometryRef": "m4-akm-kizilay"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-ankara-metro",
+      "title": "Wikipedia: Ankara Metro (lines M1–M4: opening dates, lengths, stations; M4 \"launched construction in 2004\"; M4 sections opened 5 January 2017 and 12 April 2023)",
+      "url": "https://en.wikipedia.org/wiki/Ankara_Metro",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-tr-ankara-metro",
+      "title": "Vikipedi: Ankara Metrosu (M2 16,590 km, M3 15,360 km, M4 12,500 km; construction start years 2001, 2002, 2003; \"7 Mayıs 2011'de Ankara Büyükşehir Belediyesi üç metro hattını da Ulaştırma Bakanlığına devretti\")",
+      "url": "https://tr.wikipedia.org/wiki/Ankara_Metrosu",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "aygm-ankara-m2",
+      "title": "AYGM: Ankara Kızılay–Çayyolu Metrosu (M2), completion 13 March 2014",
+      "url": "https://aygm.uab.gov.tr/projeler/ankara-kizilay-cayyolu-metrosu-m2/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "aygm-ankara-akm-gar-kizilay",
+      "title": "AYGM: Ankara AKM–Gar–Kızılay Metrosu (page not updated since works were under way)",
+      "url": "https://aygm.uab.gov.tr/projeler/ankara-akm-gar-kizilay-metrosu/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-ankara-metro",
+      "title": "OpenStreetMap contributors (ODbL): route relations 3604162 (M2), 7878077 (M3) and 7981739 (M4)",
+      "url": "https://www.openstreetmap.org/relation/7981739",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

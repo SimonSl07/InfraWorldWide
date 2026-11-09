@@ -1,0 +1,167 @@
+{
+  "id": "md-m1-leuseni-chisinau-rehab",
+  "country": "md",
+  "category": "highway",
+  "name": {
+    "en": "M1 Leușeni – Chișinău rehabilitation",
+    "ro": "Reabilitarea drumului M1 Leușeni – Chișinău"
+  },
+  "description": {
+    "en": "Rehabilitation of the M1 road from the Romanian border at Leușeni to the Chișinău ring road, about 85 km, which the National Roads Administration (AND) lists as the Chișinău–Leușeni sector. Works are split into one border lot (km 0+000 to 1+000) and four rehabilitation lots (km 1+000 to 85+460). As of November 2026 all five are tendered, with no contract awarded. Moldova has no legal motorway, so the M1 is drawn here as a trunk road. The Chișinău ring road lots on the same M1 numbering (km 86+260 onward) and the M2 ring road are separate projects and are not counted here.",
+    "ro": "Reabilitarea drumului M1 de la frontiera cu România la Leușeni până la centura Chișinăului, circa 85 km, pe care Administrația Națională a Drumurilor (AND) o listează ca sectorul Chișinău–Leușeni. Lucrările sunt împărțite într-un lot la frontieră (km 0+000 – 1+000) și patru loturi de reabilitare (km 1+000 – 85+460). În noiembrie 2026 toate cele cinci sunt în licitație, fără contract atribuit. Moldova nu are autostradă în sens legal, deci M1 este desenat aici ca drum național de tip trunchi. Loturile centurii Chișinăului de pe aceeași kilometrare M1 (de la km 86+260) și centura M2 sunt proiecte separate și nu sunt numărate aici."
+  },
+  "operator": "md-and",
+  "lots": [
+    {
+      "id": "border-approach",
+      "name": {
+        "en": "M1 km 0+000 – 1+000 (Leușeni border approach)",
+        "ro": "M1 km 0+000 – 1+000 (apropiere de frontiera Leușeni)"
+      },
+      "status": "tendered",
+      "lengthKm": 1,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Listed with the World Bank as financier in the AND planned projects list.",
+            "ro": "Listat cu Banca Mondială ca finanțator în lista AND a proiectelor planificate."
+          }
+        }
+      ],
+      "note": {
+        "en": "Contract MRCP/W8/01. The AND international tenders page lists it as 127, with date 17 September 2026 and status bid evaluation. No value or contractor is published. Geometry starts at the western end of the mapped M1 near the Prut; its drawn length is 0.98 km.",
+        "ro": "Contract MRCP/W8/01. Pagina AND a licitațiilor internaționale îl listează la poziția 127, cu data 17 septembrie 2026 și statutul evaluarea ofertelor. Nu sunt publicate valoarea sau constructorul. Geometria începe de la capătul vestic al M1 cartografiat lângă Prut; lungimea desenată este de 0,98 km."
+      },
+      "sourceRefs": ["and-international-tenders", "and-planned-projects", "osm-m1"],
+      "geometryRef": "border-approach"
+    },
+    {
+      "id": "lot1-leuseni",
+      "name": {
+        "en": "M1 km 1+000 – 9+000 (Lot 1)",
+        "ro": "M1 km 1+000 – 9+000 (Lotul 1)"
+      },
+      "status": "tendered",
+      "lengthKm": 8,
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "detail": {
+            "en": "The MIDR road projects report names the EBRD as financier of the M1 Chișinău–Leușeni modernisation (85 km).",
+            "ro": "Raportul MIDR privind proiectele rutiere numește BERD finanțator al modernizării M1 Chișinău–Leușeni (85 km)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Contract RSP/W16/01. The AND international tenders page lists it as 123 together with Lot 2, with date 15 July 2026 and status bid evaluation. No value or contractor is published. Rehabilitation of the existing road. Drawn length 8.06 km.",
+        "ro": "Contract RSP/W16/01. Pagina AND a licitațiilor internaționale îl listează la poziția 123 împreună cu Lotul 2, cu data 15 iulie 2026 și statutul evaluarea ofertelor. Nu sunt publicate valoarea sau constructorul. Reabilitarea drumului existent. Lungime desenată 8,06 km."
+      },
+      "sourceRefs": ["and-international-tenders", "and-planned-projects", "midr-roads-q4-2025", "osm-m1"],
+      "geometryRef": "lot1-leuseni"
+    },
+    {
+      "id": "lot2-km9-39",
+      "name": {
+        "en": "M1 km 9+000 – 39+000 (Lot 2)",
+        "ro": "M1 km 9+000 – 39+000 (Lotul 2)"
+      },
+      "status": "tendered",
+      "lengthKm": 30,
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "detail": {
+            "en": "The MIDR road projects report names the EBRD as financier of the M1 Chișinău–Leușeni modernisation (85 km).",
+            "ro": "Raportul MIDR privind proiectele rutiere numește BERD finanțator al modernizării M1 Chișinău–Leușeni (85 km)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Contract RSP/W16/02. Tendered together with Lot 1 (AND tender 123, date 15 July 2026, status bid evaluation). No value or contractor is published. Rehabilitation of the existing road. Drawn length 29.98 km.",
+        "ro": "Contract RSP/W16/02. Licitat împreună cu Lotul 1 (licitația AND 123, data 15 iulie 2026, statutul evaluarea ofertelor). Nu sunt publicate valoarea sau constructorul. Reabilitarea drumului existent. Lungime desenată 29,98 km."
+      },
+      "sourceRefs": ["and-international-tenders", "and-planned-projects", "midr-roads-q4-2025", "osm-m1"],
+      "geometryRef": "lot2-km9-39"
+    },
+    {
+      "id": "lot3-km39-61",
+      "name": {
+        "en": "M1 km 39+000 – 61+750 (Lot 3)",
+        "ro": "M1 km 39+000 – 61+750 (Lotul 3)"
+      },
+      "status": "tendered",
+      "lengthKm": 22.75,
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "detail": {
+            "en": "The MIDR road projects report names the EBRD as financier of the M1 Chișinău–Leușeni modernisation (85 km).",
+            "ro": "Raportul MIDR privind proiectele rutiere numește BERD finanțator al modernizării M1 Chișinău–Leușeni (85 km)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Contract RSP/W16/03. The AND international tenders page lists it as 130 together with Lot 4, with date 26 October 2026 and status bid submission. A supervision contract for Lots 3 and 4 (RSP/CS/M1/03-04/2025) is listed as 125. No value or contractor is published. Drawn length 22.65 km.",
+        "ro": "Contract RSP/W16/03. Pagina AND a licitațiilor internaționale îl listează la poziția 130 împreună cu Lotul 4, cu data 26 octombrie 2026 și statutul depunerea ofertelor. Un contract de supervizare pentru Loturile 3 și 4 (RSP/CS/M1/03-04/2025) este listat la poziția 125. Nu sunt publicate valoarea sau constructorul. Lungime desenată 22,65 km."
+      },
+      "sourceRefs": ["and-international-tenders", "and-planned-projects", "midr-roads-q4-2025", "osm-m1"],
+      "geometryRef": "lot3-km39-61"
+    },
+    {
+      "id": "lot4-km61-85",
+      "name": {
+        "en": "M1 km 61+750 – 85+460 (Lot 4)",
+        "ro": "M1 km 61+750 – 85+460 (Lotul 4)"
+      },
+      "status": "tendered",
+      "lengthKm": 23.71,
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "detail": {
+            "en": "The MIDR road projects report names the EBRD as financier of the M1 Chișinău–Leușeni modernisation (85 km).",
+            "ro": "Raportul MIDR privind proiectele rutiere numește BERD finanțator al modernizării M1 Chișinău–Leușeni (85 km)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Contract RSP/W16/04. Tendered together with Lot 3 (AND tender 130, date 26 October 2026, status bid submission). No value or contractor is published. The drawn length is 23.98 km, and the whole mapped road from the border to the lot end is 85.64 km against the 85.46 km stated chainage.",
+        "ro": "Contract RSP/W16/04. Licitat împreună cu Lotul 3 (licitația AND 130, data 26 octombrie 2026, statutul depunerea ofertelor). Nu sunt publicate valoarea sau constructorul. Lungimea desenată este de 23,98 km, iar drumul cartografiat de la frontieră până la capătul lotului măsoară 85,64 km, față de kilometrajul declarat de 85,46 km."
+      },
+      "sourceRefs": ["and-international-tenders", "and-planned-projects", "midr-roads-q4-2025", "osm-m1"],
+      "geometryRef": "lot4-km61-85"
+    }
+  ],
+  "sources": [
+    {
+      "id": "and-international-tenders",
+      "title": "AND: International tenders (tenders 123, 125, 127, 130)",
+      "url": "https://www.andsa.md/categorie/tendere-internationale/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "and-planned-projects",
+      "title": "AND: Proiecte planificate spre lansare (April 2025)",
+      "url": "https://www.andsa.md/wp-content/uploads/2025/04/proiecte_planificate.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "midr-roads-q4-2025",
+      "title": "MIDR: Infrastructura de transport în curs de implementare (Q4 2025), item 17",
+      "url": "https://midr.gov.md/files/shares/6_Infrastructur___de_transport___n_curs_de_implementare_IV.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-m1",
+      "title": "OpenStreetMap contributors (ODbL): highway=trunk ref=M1, Overpass query",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

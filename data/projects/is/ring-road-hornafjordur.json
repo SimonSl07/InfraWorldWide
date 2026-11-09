@@ -1,0 +1,232 @@
+{
+  "id": "is-ring-road-hornafjordur",
+  "country": "is",
+  "category": "highway",
+  "operator": "is-vegagerdin",
+  "name": {
+    "en": "Ring Road (Route 1) at Hornafjörður",
+    "ro": "Drumul Inelar (Ruta 1) la Hornafjörður"
+  },
+  "description": {
+    "en": "New alignment of the Ring Road (Route 1) across the Hornafjarðarfljót delta in south-east Iceland, with four two-lane bridges and about 9 km of side roads. It shortened the Ring Road by 12 km. Vegagerðin puts the new Ring Road at just under 19 km; the geometry here covers the part mapped in OpenStreetMap, from Hólmsvegur to the Hafnarvegur roundabout. It is Vegagerðin's first public–private cooperation project (samvinnuverkefni): the contractor also financed construction, and tolls collected under the Spölur ehf. name cover part of the cost. Vegagerðin estimates the total cost at just over 10 billion ISK. It opened in June 2026.",
+    "ro": "Traseu nou al Drumului Inelar (Ruta 1) peste delta Hornafjarðarfljót, în sud-estul Islandei, cu patru poduri cu două benzi și circa 9 km de drumuri laterale. A scurtat Drumul Inelar cu 12 km. Vegagerðin indică pentru noul drum puțin sub 19 km; geometria de aici acoperă partea cartografiată în OpenStreetMap, de la Hólmsvegur până la sensul giratoriu de pe Hafnarvegur. Este primul proiect de cooperare public–privată (samvinnuverkefni) al Vegagerðin: constructorul a finanțat și lucrarea, iar taxele colectate sub numele Spölur ehf. acoperă o parte din cost. Vegagerðin estimează costul total la puțin peste 10 miliarde ISK. A fost deschis în iunie 2026."
+  },
+  "lots": [
+    {
+      "id": "holmur-djupa",
+      "name": {
+        "en": "Hólmur – Djúpá (embankment)",
+        "ro": "Hólmur – Djúpá (rambleu)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-10",
+        "opened": "2026-06-24"
+      },
+      "lengthKm": 4.82,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 114,
+              "currency": "ISK",
+              "year": 2017,
+              "scope": "works"
+            },
+            "date": "2017-10",
+            "note": "Jökulfell's bid, 74% of Vegagerðin's cost estimate. VAT treatment is not stated.",
+            "sourceRef": "vegagerdin-project-hornafjordur"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2017-08",
+          "note": {
+            "en": "Tender for the embankment from the west end of the construction area to Djúpá advertised.",
+            "ro": "Licitație pentru rambleul de la capătul vestic al zonei de lucru până la Djúpá, anunțată."
+          },
+          "sourceRef": "vegagerdin-project-hornafjordur"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-10",
+          "note": {
+            "en": "Contract concluded with Jökulfell.",
+            "ro": "Contract încheiat cu Jökulfell."
+          },
+          "sourceRef": "vegagerdin-project-hornafjordur"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-06-24",
+          "note": {
+            "en": "Part of the new Ring Road, opened to traffic.",
+            "ro": "Parte din noul Drum Inelar, deschis circulației."
+          },
+          "sourceRef": "vegagerdin-news-opening"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Jökulfell",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 114,
+          "currency": "ISK",
+          "year": 2017,
+          "scope": "works",
+          "note": "Jökulfell's bid of 114 million ISK; the page gives no separate contract sum."
+        }
+      },
+      "geometryRef": "holmur-djupa",
+      "sourceRefs": [
+        "vegagerdin-project-hornafjordur",
+        "vegagerdin-news-opening",
+        "osm-hornafjordur"
+      ],
+      "note": {
+        "en": "Vegagerðin describes this first tender as an embankment of just under 5 km from the west end of the construction area to Djúpá. Length measured from OpenStreetMap geometry (Hólmsvegur junction to the Djúpá bridge). The contractor also built a trial fill with geotextile below Hafnarnes during the contract. The 2017 contract covered the fill only; the road surface and bridges came under the 2022 contract.",
+        "ro": "Vegagerðin descrie această primă licitație ca un rambleu de puțin sub 5 km, de la capătul vestic al zonei de lucru până la Djúpá. Lungime măsurată din geometria OpenStreetMap (intersecția Hólmsvegur până la podul Djúpá). Contractantul a realizat în timpul contractului și un rambleu experimental cu geotextil sub Hafnarnes. Contractul din 2017 a vizat doar rambleul; îmbrăcămintea și podurile au intrat în contractul din 2022."
+      }
+    },
+    {
+      "id": "djupa-hafnarvegur",
+      "name": {
+        "en": "Djúpá – Hafnarvegur roundabout, with the Hornafjarðarfljót bridge",
+        "ro": "Djúpá – sensul giratoriu Hafnarvegur, cu podul Hornafjarðarfljót"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "2021-02",
+        "tenderAwarded": "2022-07-14",
+        "opened": "2026-06-24"
+      },
+      "lengthKm": 9.46,
+      "profile": {
+        "works": "greenfield",
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2021-02",
+          "note": {
+            "en": "Vegagerðin presented the Ring Road at Hornafjarðarfljót (news of 16 February 2021).",
+            "ro": "Vegagerðin a prezentat Drumul Inelar la Hornafjarðarfljót (știre din 16 februarie 2021)."
+          },
+          "sourceRef": "vegagerdin-project-hornafjordur"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2022-02-02",
+          "note": {
+            "en": "Tender for construction and construction financing advertised, as a cooperation project under Act no. 80/2020. Bids opened 17 May 2022.",
+            "ro": "Licitație pentru construcție și finanțarea construcției anunțată, ca proiect de cooperare conform Legii nr. 80/2020. Ofertele au fost deschise la 17 mai 2022."
+          },
+          "sourceRef": "vegagerdin-tender-hornafjordur"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-07-14",
+          "note": {
+            "en": "Contract signed with Ístak hf., the lowest bidder. Vegagerðin calls it its first cooperation project.",
+            "ro": "Contract semnat cu Ístak hf., ofertantul cu cel mai mic preț. Vegagerðin îl numește primul său proiect de cooperare."
+          },
+          "sourceRef": "vegagerdin-news-contract"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-06-24",
+          "note": {
+            "en": "Opened with a ceremony on the new Hornafjarðarfljót bridge. Vegagerðin counts traffic on the new road from 25 June.",
+            "ro": "Deschis printr-o ceremonie pe noul pod peste Hornafjarðarfljót. Vegagerðin numără traficul pe drumul nou din 25 iunie."
+          },
+          "sourceRef": "vegagerdin-news-opening"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Ístak hf.",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Cooperation project (samvinnuverkefni) under Act no. 80/2020: the contractor financed construction. By law tolls are to cover at least 50% of construction, maintenance, operation and development cost. Toll collection runs under the Spölur ehf. name.",
+            "ro": "Proiect de cooperare (samvinnuverkefni) conform Legii nr. 80/2020: contractantul a finanțat construcția. Potrivit legii, taxele de drum acoperă cel puțin 50% din costul construcției, întreținerii, exploatării și dezvoltării. Taxele se colectează sub numele Spölur ehf."
+          }
+        }
+      ],
+      "geometryRef": "djupa-hafnarvegur",
+      "sourceRefs": [
+        "vegagerdin-project-hornafjordur",
+        "vegagerdin-tender-hornafjordur",
+        "vegagerdin-news-contract",
+        "vegagerdin-news-opening",
+        "vegagerdin-news-tolls",
+        "vegagerdin-news-traffic",
+        "osm-hornafjordur"
+      ],
+      "note": {
+        "en": "Four two-lane bridges, 468 m in total: Djúpá 52 m, Hornafjarðarfljót 250 m in six spans, Hoffellsá 114 m and Bergá 52 m. The works also include two rest areas and a roundabout at Hafnarvegur. Single toll for a car under 3.5 t: 1,500 ISK from 1 September 2026. Supervision by Verkís. Length measured from OpenStreetMap geometry. Ístak's winning bid of just under 6.3 billion ISK (2022, 107% of Vegagerðin's estimate, VAT not stated) covers the whole new road and the four bridges plus construction-period financing, so it is not recorded as this lot's cost. The tender defines the new Ring Road as station 0 just west of Hólmsvegur (9822) to station 18,760 west of Dynjandisvegur (9721), 18.76 km, against 14.28 km drawn here for both lots to the Hafnarvegur roundabout; the 4.5 km difference is unexplained.",
+        "ro": "Patru poduri cu două benzi, 468 m în total: Djúpá 52 m, Hornafjarðarfljót 250 m în șase deschideri, Hoffellsá 114 m și Bergá 52 m. Lucrările includ și două zone de odihnă și un sens giratoriu la Hafnarvegur. Taxă unică pentru un autoturism sub 3,5 t: 1.500 ISK din 1 septembrie 2026. Supervizare de către Verkís. Lungime măsurată din geometria OpenStreetMap. Oferta câștigătoare a Ístak, puțin sub 6,3 miliarde ISK (2022, 107% din estimarea Vegagerðin, TVA nespecificat), acoperă întregul drum nou și cele patru poduri, plus finanțarea din perioada construcției, deci nu este înregistrată ca cost al acestui lot. Licitația definește noul Drum Inelar de la stația 0, imediat la vest de Hólmsvegur (9822), până la stația 18.760, la vest de Dynjandisvegur (9721), adică 18,76 km, față de 14,28 km desenați aici pentru ambele loturi până la sensul giratoriu Hafnarvegur; diferența de 4,5 km este neexplicată."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "vegagerdin-project-hornafjordur",
+      "title": "Vegagerðin: Hringvegur um Hornafjörð (project page)",
+      "url": "https://www.vegagerdin.is/verkefnin/framkvaemdir/um-hornafjardarfljot",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-tender-hornafjordur",
+      "title": "Vegagerðin: Útboð Hringvegur (1) um Hornafjörð (advertised 2 February 2022)",
+      "url": "https://www.vegagerdin.is/verkefnin/utbod/hringvegur-1-um-hornafjord",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-news-contract",
+      "title": "Vegagerðin: Samið um fyrsta samvinnuverkefnið, Hringveg um Hornafjörð (14 July 2022)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/samid-um-fyrsta-samvinnuverkefnid-hringveg-um-hornafjord",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-news-opening",
+      "title": "Vegagerðin: Nýr Hringvegur (1) um Hornafjörð opnaður 24. júní",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/nyr-hringvegur-1-um-hornafjord-opnadur-24-juni",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-news-tolls",
+      "title": "Vegagerðin: Gjaldtaka á Hringvegi (1) um Hornafjörð hefst í september",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/gjaldtaka-a-hringvegi-1-um-hornafjord-hefst-i-september",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-news-traffic",
+      "title": "Vegagerðin: Meirihluti umferðar fer um nýjan Hringveg um Hornafjörð (1 October 2026)",
+      "url": "https://www.vegagerdin.is/vegagerdin/starfsemi/frettir/meirihluti-umferdar-fer-um-nyjan-hringveg-um-hornafjord",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-hornafjordur",
+      "title": "OpenStreetMap contributors (ODbL): Route 1 ways at Hornafjörður, Overpass extract",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

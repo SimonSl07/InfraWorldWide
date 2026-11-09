@@ -1,0 +1,158 @@
+{
+  "id": "ua-kyiv-metro-m3-vynohradar",
+  "country": "ua",
+  "city": "ua-kyiv",
+  "category": "railway",
+  "name": {
+    "en": "Kyiv Metro M3 extension to Vynohradar, first phase (Syrets – Prospekt Pravdy)",
+    "ro": "Prelungirea liniei M3 a metroului din Kiev spre Vynohradar, prima etapă (Syrets – Prospekt Pravdy)"
+  },
+  "description": {
+    "en": "First phase of the Syretsko-Pecherska line extension from Syrets towards the Vynohradar housing district: 7.39 km (2017 design figures: 1.3 km bored, 6.09 km cut-and-cover) with two stations, Mostytska and Prospekt Pravdy (renamed Varshavska), and a fork towards Vynohradar. The city approved the project on 11 July 2018. Kyivmetrobud tunnelled from 20 November 2018 to 2023 without starting either station. Avtostrada signed a new contract in August 2024 for UAH 13.78 billion and resumed work on 8 November 2024. The full project has four stations and a depot.",
+    "ro": "Prima etapă a prelungirii liniei Syretsko-Pecherska de la Syrets spre cartierul Vynohradar: 7,39 km (cifre din proiectul din 2017: 1,3 km forați, 6,09 km în șanț deschis) cu două stații, Mostytska și Prospekt Pravdy (redenumită Varshavska), și o bifurcație spre Vynohradar. Orașul a aprobat proiectul la 11 iulie 2018. Kyivmetrobud a săpat tunelurile între 20 noiembrie 2018 și 2023, fără să înceapă vreuna dintre stații. Avtostrada a semnat un nou contract în august 2024, pentru 13,78 miliarde UAH, și a reluat lucrările la 8 noiembrie 2024. Proiectul complet are patru stații și un depou."
+  },
+  "operator": "ua-kyiv-metro",
+  "stationCount": 2,
+  "lots": [
+    {
+      "id": "syrets-prospekt-pravdy",
+      "name": {
+        "en": "Syrets – Prospekt Pravdy (phase 1)",
+        "ro": "Syrets – Prospekt Pravdy (etapa 1)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2018-11-20",
+        "expectedOpening": "2027-04-30"
+      },
+      "lengthKm": 7.39,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 2
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 13780,
+              "currency": "UAH",
+              "year": 2024,
+              "note": "Reported as UAH 13.78 billion. The sources read do not say whether VAT is included."
+            },
+            "date": "2024-08",
+            "note": "Contract between KP Kyivskyi Metropoliten and Avtostrada Group, August 2024 (Ekonomichna Pravda, 15 August 2024).",
+            "sourceRef": "epravda-contract-2024"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Kyivmetrobud",
+          "role": "builder"
+        },
+        {
+          "name": "Avtostrada Group",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 30,
+        "value": {
+          "amount": 13780,
+          "currency": "UAH",
+          "year": 2024,
+          "note": "Reported as UAH 13.78 billion. The sources read do not say whether VAT is included."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2018-11-20",
+          "note": {
+            "en": "Contract with Kyivmetrobud concluded (Prozorro tender UA-2018-09-10-000597-b); tunnelling from Syrets towards Prospekt Pravdy.",
+            "ro": "Contract încheiat cu Kyivmetrobud (tender Prozorro UA-2018-09-10-000597-b); săpare de tuneluri de la Syrets spre Prospekt Pravdy."
+          },
+          "sourceRef": "wikipedia-uk-syretsko-pecherska"
+        },
+        {
+          "kind": "contract_terminated",
+          "date": "2023",
+          "note": {
+            "en": "Contract with Kyivmetrobud terminated; neither station had been started. Ukrainian Wikipedia gives 24 January 2023 (Prozorro note); the operator said it ended the contract through the courts in December 2023, so only the year is recorded.",
+            "ro": "Contractul cu Kyivmetrobud a fost reziliat; nicio stație nu fusese începută. Wikipedia ucraineană indică 24 ianuarie 2023 (notă Prozorro); operatorul a spus că a reziliat contractul în instanță în decembrie 2023, așa că se înregistrează doar anul."
+          },
+          "sourceRef": "wikipedia-uk-syretsko-pecherska"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-08",
+          "note": {
+            "en": "New contract with Avtostrada Group for UAH 13.78 billion and 30 months.",
+            "ro": "Contract nou cu Grupul Avtostrada, 13,78 miliarde UAH, 30 de luni."
+          },
+          "sourceRef": "epravda-contract-2024"
+        },
+        {
+          "kind": "resumed",
+          "date": "2024-11-08",
+          "note": {
+            "en": "Avtostrada announced the resumption of construction.",
+            "ro": "Avtostrada a anunțat reluarea construcției."
+          },
+          "sourceRef": "wikipedia-uk-syretsko-pecherska"
+        }
+      ],
+      "note": {
+        "en": "The contract covers the Mostytska and Prospekt Pravdy stations, the running tunnels between them and Syrets, turnback sidings and a train maintenance point. The first version set completion for the end of 2026; the parties later moved the deadline by four months to 30 April 2027 (Kyiv Vlada, 6 November 2026), which is the expected opening here. In November 2026 the contractor reported funding of about UAH 3.2 billion so far, readiness of up to 20% by the end of 2026, and 1.6 billion allocated for 2026 against 10 billion needed. In October 2026 the operator contracted a design revision for UAH 80.7 million, due by 1 December 2028; the design brief put the estimated cost at UAH 23.34 billion under the city's 2024–2026 programme, and neither a new cost nor a new completion date has been published. The earlier project estimate of over UAH 11.2 billion (1 March 2017 prices) was for the four-station project. Length 7.39 km as given by Ukrainian Wikipedia; it does not say whether this counts one or both tracks, and the single-track centreline drawn from OpenStreetMap (construction way, Syrets to the fork north of Prospekt Pravdy) measures about 3.5 km.",
+        "ro": "Contractul cuprinde stațiile Mostytska și Prospekt Pravdy, tunelurile dintre ele și Syrets, linii de manevră și un punct de întreținere a trenurilor. Prima versiune prevedea finalizarea la sfârșitul lui 2026; părțile au mutat ulterior termenul cu patru luni, la 30 aprilie 2027 (Kyiv Vlada, 6 noiembrie 2026), data folosită aici ca deschidere așteptată. În noiembrie 2026 constructorul a raportat o finanțare de circa 3,2 miliarde UAH până acum, o stare de execuție de până la 20% la sfârșitul lui 2026 și 1,6 miliarde alocate pe 2026 față de 10 miliarde necesare. În octombrie 2026 operatorul a contractat o revizuire a proiectului pentru 80,7 milioane UAH, de predat până la 1 decembrie 2028; tema de proiectare a stabilit costul estimat la 23,34 miliarde UAH în programul orașului 2024–2026, iar un cost nou sau o nouă dată de finalizare nu au fost publicate. Estimarea anterioară a proiectului, peste 11,2 miliarde UAH (prețuri de la 1 martie 2017), se referea la proiectul cu patru stații. Lungimea de 7,39 km este cea din Wikipedia ucraineană, care nu precizează dacă numără o cale sau ambele; axa cu o singură cale desenată din OpenStreetMap (tronson în construcție, de la Syrets la bifurcația de la nord de Prospekt Pravdy) măsoară circa 3,5 km."
+      },
+      "sourceRefs": [
+        "wikipedia-uk-syretsko-pecherska",
+        "epravda-contract-2024",
+        "kyivvlada-revision-2026",
+        "forbes-ua-autostrada-2026",
+        "osm"
+      ],
+      "geometryRef": "syrets-prospekt-pravdy"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-uk-syretsko-pecherska",
+      "title": "Wikipedia (uk): Сирецько-Печерська лінія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%80%D0%B5%D1%86%D1%8C%D0%BA%D0%BE-%D0%9F%D0%B5%D1%87%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%B0_%D0%BB%D1%96%D0%BD%D1%96%D1%8F",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "epravda-contract-2024",
+      "title": "Економічна правда: Метрополітен уклав з \"Автострадою\" угоду на будівництво метро на Виноградар за 13,8 млрд (15 August 2024)",
+      "url": "https://www.epravda.com.ua/news/2024/08/15/718054/",
+      "publisher": "Економічна правда",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "kyivvlada-revision-2026",
+      "title": "КиївВлада: Метро на Виноградар знову перекроюють: чому будівництво дорожчає і скільки ще до фінішу (6 November 2026)",
+      "url": "https://kyivvlada.com.ua/texts/metro-na-vynogradar-znovu-perekroyuyut-chomu-budivnycztvo-dorozhchaye-i-skilky-shhe-do-finishu/",
+      "publisher": "КиївВлада",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "forbes-ua-autostrada-2026",
+      "title": "Forbes Ukraine: «Автострада» продовжує роботи на всіх об’єктах попри борг держави у 15 млрд грн (5 October 2026)",
+      "url": "https://forbes.ua/news/avtostrada-prodovzuje-roboti-na-vsix-objektax-popri-borg-derzavi-u-15-mlrd-grn-skil-05102026-42657",
+      "publisher": "Forbes Ukraine",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: way 23775339, Будівництво метро на ж/м Виноградар (І черга будівництва) (ODbL)",
+      "url": "https://www.openstreetmap.org/way/23775339",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

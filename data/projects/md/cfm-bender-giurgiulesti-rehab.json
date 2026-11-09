@@ -1,0 +1,61 @@
+{
+  "id": "md-cfm-bender-giurgiulesti-rehab",
+  "country": "md",
+  "category": "railway",
+  "name": {
+    "en": "Bender – Căușeni – Basarabeasca – Giurgiulești railway rehabilitation",
+    "ro": "Reabilitarea căii ferate Bender – Căușeni – Basarabeasca – Giurgiulești"
+  },
+  "description": {
+    "en": "Track, switch, sleeper and bridge repairs on the Bender–Căușeni–Basarabeasca–Giurgiulești line, carried out by Calea Ferată din Moldova under its EUR 156.75 million restructuring programme (2022–2026, EBRD, EIB and EU funding). The programme also covers rolling stock and company restructuring. The Ministry of Infrastructure and Regional Development reported about 40% of the works done by the end of 2025.",
+    "ro": "Reparații ale căii, macazurilor, traverselor și podurilor pe linia Bender–Căușeni–Basarabeasca–Giurgiulești, executate de Calea Ferată din Moldova în cadrul programului de restructurare de 156,75 milioane euro (2022–2026, finanțare BERD, BEI și UE). Programul cuprinde și material rulant și restructurarea întreprinderii. Ministerul Infrastructurii și Dezvoltării Regionale a raportat circa 40% din lucrări executate la sfârșitul anului 2025."
+  },
+  "operator": "md-cfm",
+  "lots": [
+    {
+      "id": "bender-giurgiulesti",
+      "name": {
+        "en": "Bender – Căușeni – Basarabeasca – Giurgiulești",
+        "ro": "Bender – Căușeni – Basarabeasca – Giurgiulești"
+      },
+      "status": "under_construction",
+      "dates": {},
+      "lengthKm": 290,
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Programme of EUR 156.75 million: loans of EUR 76 million and EUR 74 million (EBRD and EIB), EUR 5 million Neighbourhood Investment Facility grant, EUR 1.5 million technical assistance grant and EUR 0.25 million EU grant. The figure covers the whole CFM restructuring programme, not this line alone.",
+            "ro": "Program de 156,75 milioane euro: împrumuturi de 76 și 74 de milioane euro (BERD și BEI), grant de 5 milioane euro din Fondul de Investiții pentru Vecinătate, grant de asistență tehnică de 1,5 milioane euro și grant UE de 0,25 milioane euro. Suma acoperă întregul program de restructurare a CFM, nu doar această linie."
+          }
+        }
+      ],
+      "note": {
+        "en": "Works named by MIDR: Bender–Hajimusu–Căușeni, Căinari–Zloți, Cimișlia–Basarabeasca–Abaclia and Zloți–Cimișlia, Basarabeasca–Abaclia–Ceadîr-Lunga–Chiriutnia–Taraclia, and station tracks at Căușeni, Zaim, Cimișlia, Căinari and Zloți. By the end of 2025, MIDR reported 60.3 km of medium repairs (76% of plan), 30 km of capital repairs (18%), 68 sets of switches replaced (74%) and 24,965 defective sleepers replaced (98%), with bridge repairs at between 25% and 100% on individual sections. Section lengths and start dates are not published, so the line is one lot. Length measured from OpenStreetMap geometry (Bender to Giurgiulești).",
+        "ro": "Lucrări numite de MIDR: Bender–Hajimusu–Căușeni, Căinari–Zloți, Cimișlia–Basarabeasca–Abaclia și Zloți–Cimișlia, Basarabeasca–Abaclia–Ceadîr-Lunga–Chiriutnia–Taraclia, precum și căile din stațiile Căușeni, Zaim, Cimișlia, Căinari și Zloți. La sfârșitul anului 2025, MIDR a raportat 60,3 km de reparații medii (76% din plan), 30 km de reparații capitale (18%), 68 de seturi de macazuri înlocuite (74%) și 24 965 de traverse defecte înlocuite (98%), cu reparații la poduri între 25% și 100% pe secțiuni. Lungimile secțiunilor și datele de start nu sunt publicate, deci linia este un singur lot. Lungime măsurată din geometria OpenStreetMap (Bender – Giurgiulești)."
+      },
+      "sourceRefs": [
+        "midr-external-assistance-2025",
+        "osm-md-rail"
+      ],
+      "geometryRef": "bender-giurgiulesti"
+    }
+  ],
+  "sources": [
+    {
+      "id": "midr-external-assistance-2025",
+      "title": "MIDR: Proiecte de asistență externă în curs de implementare, transport feroviar (raport 2025)",
+      "url": "https://midr.gov.md/files/shares/4_Transport_feroviar___n_curs_de_implementare_trimestrul_IV.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-md-rail",
+      "title": "OpenStreetMap contributors (geometry of relation 13891680, Bender–Galați railway, ODbL)",
+      "url": "https://www.openstreetmap.org/relation/13891680",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
