@@ -1,0 +1,292 @@
+{
+  "id": "gb-west-midlands-metro",
+  "country": "gb",
+  "city": "gb-birmingham",
+  "category": "railway",
+  "name": {
+    "en": "West Midlands Metro",
+    "ro": "West Midlands Metro"
+  },
+  "description": {
+    "en": "Tram system between Birmingham and Wolverhampton, launched as Midland Metro on 30 May 1999 with 24.0 km of track and 35 stops in use. Extensions opened across Birmingham city centre (2015–2016), to Edgbaston (2019 and 2022), through Wolverhampton city centre (2023) and to Millennium Point (5 April 2026). A branch from Wednesbury to Dudley and Brierley Hill is under construction. It is owned by Transport for West Midlands and operated by Midland Metro Limited.",
+    "ro": "Sistem de tramvai între Birmingham și Wolverhampton, lansat ca Midland Metro pe 30 mai 1999, cu 24,0 km de linie și 35 de stații în uz. Prelungirile s-au deschis prin centrul Birminghamului (2015–2016), până la Edgbaston (2019 și 2022), prin centrul Wolverhamptonului (2023) și până la Millennium Point (5 aprilie 2026). O ramură de la Wednesbury la Dudley și Brierley Hill este în construcție. Aparține Transport for West Midlands și este operat de Midland Metro Limited."
+  },
+  "operator": "gb-tfwm",
+  "stationCount": 35,
+  "lots": [
+    {
+      "id": "line-1-snow-hill-wolverhampton",
+      "name": {
+        "en": "Line 1: Snow Hill – Wolverhampton St George's (Midland Metro)",
+        "ro": "Linia 1: Snow Hill – Wolverhampton St George's (Midland Metro)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "1995-08",
+        "opened": "1999-05-30"
+      },
+      "lengthKm": 19.95,
+      "profile": {
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "1995-08",
+          "note": {
+            "en": "25-year contract awarded to the Altram consortium.",
+            "ro": "Contract pe 25 de ani atribuit consorțiului Altram."
+          },
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        },
+        {
+          "kind": "opened",
+          "date": "1999-05-30",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Altram consortium",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Original Midland Metro line, launched on 30 May 1999. Wikipedia gives 24.0 km (14.9 miles) of track for the whole system as now extended. In August 1995 a 25-year contract was awarded to the Altram consortium, and the estimated construction cost in 1995 was £145 million (not recorded as a figure, as the euro table starts in 1999). Wikipedia lists no contractors for the later extensions. The Wolverhampton city centre extension beyond St George's is a separate lot. Length measured from OpenStreetMap geometry.",
+        "ro": "Linia Midland Metro inițială, lansată pe 30 mai 1999. Wikipedia indică 24,0 km (14,9 mile) de linie pentru întregul sistem, așa cum este extins acum. În august 1995 un contract pe 25 de ani a fost atribuit consorțiului Altram, iar costul estimat al construcției în 1995 era de 145 de milioane de lire sterline (nu este înregistrat ca valoare, deoarece tabelul în euro începe în 1999). Wikipedia nu menționează constructori pentru prelungirile ulterioare. Prelungirea prin centrul orașului Wolverhampton, dincolo de St George's, este un lot separat. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "line-1-snow-hill-wolverhampton"
+    },
+    {
+      "id": "birmingham-city-centre",
+      "name": {
+        "en": "Birmingham city centre extension (Snow Hill – Grand Central)",
+        "ro": "Prelungirea prin centrul Birminghamului (Snow Hill – Grand Central)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016"
+      },
+      "lengthKm": 0.71,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2015-12-06",
+          "note": {
+            "en": "Service to Bull Street.",
+            "ro": "Serviciu până la Bull Street."
+          },
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        },
+        {
+          "kind": "opened",
+          "date": "2016",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "note": {
+        "en": "Trams entered service on the extension to Bull Street on 6 December 2015, and between 2015 and 2016 the line was extended across the city centre as far as Grand Central, moving the terminus from Snow Hill to New Street. The passenger-service opening year is used, not the construction date. Wikipedia gives a budget of £128 million, of which £75 million was to be funded by the Department for Transport; this is a budget, not an outturn. The exact opening date of the Grand Central section was not found. OpenStreetMap has no tram way for part of this section, so a short stretch of the drawn line is a straight join. Length measured from OpenStreetMap geometry.",
+        "ro": "Tramvaiele au intrat în serviciu pe prelungirea până la Bull Street pe 6 decembrie 2015, iar între 2015 și 2016 linia a fost prelungită prin centrul orașului până la Grand Central, iar capătul liniei a fost mutat de la Snow Hill la New Street. Se folosește anul deschiderii pentru pasageri, nu data construcției. Wikipedia indică un buget de 128 de milioane de lire sterline, din care 75 de milioane urmau să fie finanțate de Departamentul pentru Transport; este un buget, nu un cost final. Data exactă a deschiderii secțiunii Grand Central nu a fost găsită. OpenStreetMap nu conține o cale de tramvai pentru o parte a acestei secțiuni, așa că un tronson scurt al liniei desenate este o legătură dreaptă. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "birmingham-city-centre"
+    },
+    {
+      "id": "westside-phase-1",
+      "name": {
+        "en": "Westside extension, phase 1 (Grand Central – Library)",
+        "ro": "Prelungirea Westside, faza 1 (Grand Central – Library)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-12"
+      },
+      "lengthKm": 0.6,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2019-12",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "note": {
+        "en": "Phase 1 extended the line from New Street to Birmingham Library and opened to passenger service in December 2019. Wikipedia states no cost or contractor. OpenStreetMap has no tram way for part of this section, so a short stretch of the drawn line is a straight join. Length measured from OpenStreetMap geometry.",
+        "ro": "Faza 1 a prelungit linia de la New Street până la Birmingham Library și s-a deschis pasagerilor în decembrie 2019. Wikipedia nu menționează costul sau constructorul. OpenStreetMap nu conține o cale de tramvai pentru o parte a acestei secțiuni, așa că un tronson scurt al liniei desenate este o legătură dreaptă. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "westside-phase-1"
+    },
+    {
+      "id": "westside-phase-2",
+      "name": {
+        "en": "Westside extension, phase 2 (Library – Edgbaston Village)",
+        "ro": "Prelungirea Westside, faza 2 (Library – Edgbaston Village)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-07"
+      },
+      "lengthKm": 1.26,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2022-07",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "note": {
+        "en": "Phase 2 extended the line from the Library to Edgbaston Village near Five Ways and opened in July 2022, with new tram stops at Brindleyplace, Five Ways and Edgbaston. The section between the Library and Edgbaston is unwired, with trams taking power from onboard batteries. Wikipedia states no cost or contractor. Length measured from OpenStreetMap geometry.",
+        "ro": "Faza 2 a prelungit linia de la Library până la Edgbaston Village, lângă Five Ways, și s-a deschis în iulie 2022, cu stații noi la Brindleyplace, Five Ways și Edgbaston. Secțiunea dintre Library și Edgbaston nu are fir de contact, tramvaiele luând energie din baterii. Wikipedia nu menționează costul sau constructorul. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "westside-phase-2"
+    },
+    {
+      "id": "wolverhampton-city-centre",
+      "name": {
+        "en": "Wolverhampton city centre extension (Pipers Row – Wolverhampton Station)",
+        "ro": "Prelungirea prin centrul Wolverhamptonului (Pipers Row – Wolverhampton Station)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2023-09"
+      },
+      "lengthKm": 0.55,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2023-09",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "note": {
+        "en": "Completed in September 2023 and opened to passengers in the same month, with stops at Pipers Row and Wolverhampton Station. Wikipedia gives an estimated cost of £30 million only for the earlier 2009 scheme, so no cost is recorded for this lot. Length measured from OpenStreetMap geometry.",
+        "ro": "Finalizată în septembrie 2023 și deschisă pasagerilor în aceeași lună, cu stații la Pipers Row și Wolverhampton Station. Wikipedia indică un cost estimat de 30 de milioane de lire sterline doar pentru schema anterioară din 2009, așa că nu se înregistrează niciun cost pentru acest lot. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "wolverhampton-city-centre"
+    },
+    {
+      "id": "eastside-millennium-point",
+      "name": {
+        "en": "Eastside extension (Bull Street – Millennium Point)",
+        "ro": "Prelungirea Eastside (Bull Street – Millennium Point)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2021-06",
+        "opened": "2026-04-05"
+      },
+      "lengthKm": 0.42,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2021-06",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-04-05",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "note": {
+        "en": "Construction of the first part of the Eastside extension began in June 2021. It opened between Bull Street and Millennium Point on 5 April 2026, with new stops at Albert Street and Millennium Point. Trams run on battery power between those two stops, as the overhead wiring ends at Albert Street. OpenStreetMap also maps a Digbeth extension beyond Millennium Point, which is not drawn here. Length measured from OpenStreetMap geometry.",
+        "ro": "Construcția primei părți a prelungirii Eastside a început în iunie 2021. S-a deschis între Bull Street și Millennium Point pe 5 aprilie 2026, cu stații noi la Albert Street și Millennium Point. Tramvaiele circulă pe baterii între aceste două stații, deoarece firul de contact se oprește la Albert Street. OpenStreetMap cartografiază și o prelungire Digbeth dincolo de Millennium Point, care nu este desenată aici. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "eastside-millennium-point"
+    },
+    {
+      "id": "wednesbury-dudley",
+      "name": {
+        "en": "Wednesbury – Dudley (Wednesbury to Brierley Hill Extension, first stage)",
+        "ro": "Wednesbury – Dudley (Prelungirea Wednesbury – Brierley Hill, prima etapă)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-02"
+      },
+      "lengthKm": 6.4,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2020-02",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "note": {
+        "en": "Wikipedia says the Wednesbury to Brierley Hill branch was approved in March 2019 and started in February 2020, and that full-scale work started in early 2021. The Wednesbury–Dudley route is expected to open in late 2026 (not yet open on 2026-11-09), with Dudley–Brierley Hill to follow in 2028. The whole extension is an 11 km line. Wikipedia gives its cost as an estimated £268 million in 2012 and \"now £449 million\", without a price year, so no cost is recorded. No contractors are named for this extension. Length measured from OpenStreetMap geometry.",
+        "ro": "Potrivit Wikipedia, ramura Wednesbury – Brierley Hill a fost aprobată în martie 2019 și începută în februarie 2020, iar lucrările la scară largă au început la începutul lui 2021. Traseul Wednesbury–Dudley urmează să se deschidă la sfârșitul lui 2026 (încă nedeschis la 2026-11-09), iar Dudley–Brierley Hill în 2028. Întreaga prelungire are 11 km. Wikipedia indică costul ca estimat la 268 de milioane de lire sterline în 2012 și „acum 449 de milioane”, fără anul prețurilor, deci nu se înregistrează niciun cost. Nu sunt numiți constructori pentru această prelungire. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "wednesbury-dudley"
+    },
+    {
+      "id": "dudley-brierley-hill",
+      "name": {
+        "en": "Dudley – Brierley Hill (Wednesbury to Brierley Hill Extension, second stage)",
+        "ro": "Dudley – Brierley Hill (Prelungirea Wednesbury – Brierley Hill, a doua etapă)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025"
+      },
+      "lengthKm": 4.17,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2025",
+          "sourceRef": "wikipedia-en-west-midlands-metro"
+        }
+      ],
+      "note": {
+        "en": "Construction began in early 2025. Runs to Waterfront Business Park and Merry Hill Shopping Centre; the line enters Dudley town centre on-street and through the new bus station. Wikipedia expects this stage to follow the Wednesbury–Dudley opening, in 2028. The two stages together measure close to the 11 km Wikipedia gives for the whole extension. Length measured from OpenStreetMap geometry.",
+        "ro": "Construcția a început la începutul lui 2025. Ajunge la Waterfront Business Park și centrul comercial Merry Hill; linia intră în centrul Dudley pe stradă și prin noua stație de autobuze. Wikipedia estimează că această etapă urmează deschiderii Wednesbury–Dudley, în 2028. Cele două etape însumează aproape cei 11 km indicați de Wikipedia pentru întreaga prelungire. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-en-west-midlands-metro",
+        "osm-west-midlands-metro"
+      ],
+      "geometryRef": "dudley-brierley-hill"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-west-midlands-metro",
+      "title": "Wikipedia: West Midlands Metro (\"It was launched on 30 May 1999 as Midland Metro\"; \"a total of 14.9 miles (24.0 km) of track\"; \"There are 35 tram stops in use\"; \"opened up to this point on 5 April 2026\")",
+      "url": "https://en.wikipedia.org/wiki/West_Midlands_Metro",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-west-midlands-metro",
+      "title": "OpenStreetMap: tram and construction ways of Midland Metro (ODbL)",
+      "url": "https://www.openstreetmap.org/#map=12/52.52/-2.02",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

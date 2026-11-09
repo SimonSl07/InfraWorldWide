@@ -1,0 +1,128 @@
+{
+  "id": "gb-mersey-gateway-bridge",
+  "country": "gb",
+  "category": "bridge",
+  "name": {
+    "en": "Mersey Gateway Bridge",
+    "ro": "Podul Mersey Gateway"
+  },
+  "description": {
+    "en": "Six-lane cable-stayed toll bridge over the River Mersey and the Manchester Ship Canal between Runcorn and Widnes, about 1.5 km upstream of the Silver Jubilee Bridge. Built under a 30-year design, build, finance, operate and maintain concession (2014–2044) held by Merseylink. Opened on 14 October 2017.",
+    "ro": "Pod suspendat cu hobane, cu taxă, cu șase benzi, peste râul Mersey și canalul Manchester Ship Canal, între Runcorn și Widnes, la circa 1,5 km în amonte de Silver Jubilee Bridge. Construit în baza unei concesiuni de 30 de ani pentru proiectare, construcție, finanțare, operare și întreținere (2014–2044), deținută de Merseylink. Deschis la 14 octombrie 2017."
+  },
+  "lots": [
+    {
+      "id": "mersey-gateway-bridge",
+      "name": {
+        "en": "Mersey Gateway Bridge and approach viaducts",
+        "ro": "Podul Mersey Gateway și viaductele de acces"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-03",
+        "constructionStart": "2014-05-07",
+        "opened": "2017-10-14"
+      },
+      "lengthKm": 2.3,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 6,
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2014-03",
+          "sourceRef": "mersey-gateway-finances",
+          "note": {
+            "en": "Contracts awarded to the Merseylink consortium in March 2014.",
+            "ro": "Contractele au fost atribuite consorțiului Merseylink în martie 2014."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2014-05-07",
+          "sourceRef": "wikipedia-mersey-gateway",
+          "note": {
+            "en": "Wikipedia: construction began on 7 May 2014 after extensive site preparation.",
+            "ro": "Wikipedia: construcția a început la 7 mai 2014, după lucrări extinse de pregătire a șantierului."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2017-10-14",
+          "sourceRef": "mersey-gateway-about",
+          "note": {
+            "en": "Opened to the public at midnight on 14 October 2017.",
+            "ro": "Deschis publicului la miezul nopții de 14 octombrie 2017."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Merseylink finances the project with bank loans, a council loan and a bond supported by the HM Treasury UK Guarantees Scheme. Halton Borough Council pays Merseylink an annual unitary charge from October 2017. The Department for Transport provided operating grants of £138 million over 2017–2023.",
+            "ro": "Merseylink finanțează proiectul din împrumuturi bancare, un împrumut al consiliului local și o emisiune de obligațiuni garantată prin schema UK Guarantees a HM Treasury. Consiliul Halton plătește Merseylink o taxă unitară anuală din octombrie 2017. Departamentul pentru Transport a acordat granturi de operare de 138 milioane £ în 2017–2023."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Merseylink",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Merseylink CCJV (Kier Infrastructure and Overseas, FCC Construccion, Samsung C&T ECUK Consortium)",
+          "role": "builder"
+        },
+        {
+          "name": "COWI & FHECOR",
+          "role": "designer"
+        }
+      ],
+      "note": {
+        "en": "Cable-stayed span of 998 m between two side spans and two main spans, with a total length of 2.3 km including approach viaducts (Wikipedia). Drawn from the OpenStreetMap northbound carriageway between the southern approach viaduct near Runcorn and the northern abutment near Widnes (2.25 km drawn). The cost is not recorded: the project's own page gives £1.86 billion as the total cost over the 30-year period 2014–2044, a figure that covers financing and operation, not construction. The Silver Jubilee Bridge refurbishment and the wider 9.5 km project road are separate from this lot.",
+        "ro": "Deschidere cu hobane de 998 m, cu două deschideri principale și două laterale, cu lungime totală de 2,3 km incluzând viaductele de acces (Wikipedia). Desenat după carosabilul spre nord din OpenStreetMap, între viaductul de acces sudic de lângă Runcorn și culeea nordică de lângă Widnes (2,25 km desenați). Costul nu este înregistrat: pagina proiectului indică 1,86 miliarde £ ca cost total pe perioada de 30 de ani 2014–2044, cifră care include finanțarea și operarea, nu doar construcția. Reabilitarea Silver Jubilee Bridge și drumul de proiect de 9,5 km din jur sunt separate de acest lot."
+      },
+      "sourceRefs": [
+        "wikipedia-mersey-gateway",
+        "mersey-gateway-about",
+        "mersey-gateway-finances",
+        "osm"
+      ],
+      "geometryRef": "mersey-gateway-bridge"
+    }
+  ],
+  "operator": "gb-merseylink",
+  "sources": [
+    {
+      "id": "wikipedia-mersey-gateway",
+      "title": "Wikipedia: Mersey Gateway",
+      "url": "https://en.wikipedia.org/wiki/Mersey_Gateway",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "mersey-gateway-about",
+      "title": "Mersey Gateway Crossings Board: About us",
+      "url": "https://merseygateway.co.uk/about-us/",
+      "publisher": "Mersey Gateway Crossings Board",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "mersey-gateway-finances",
+      "title": "Mersey Gateway Crossings Board: Project finances",
+      "url": "https://merseygateway.co.uk/project-finances/",
+      "publisher": "Mersey Gateway Crossings Board",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): Mersey Gateway Bridge ways",
+      "url": "https://www.openstreetmap.org/way/532680444",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

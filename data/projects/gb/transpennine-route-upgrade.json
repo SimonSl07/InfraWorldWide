@@ -1,0 +1,245 @@
+{
+  "id": "gb-transpennine-route-upgrade",
+  "country": "gb",
+  "category": "railway",
+  "name": {
+    "en": "Transpennine Route Upgrade (Manchester – Huddersfield – Leeds – York)",
+    "ro": "Transpennine Route Upgrade (Manchester – Huddersfield – Leeds – York)"
+  },
+  "description": {
+    "en": "Electrification, extra track, resignalling and station rebuilds on the 76-mile Transpennine route between Manchester Victoria and York via Huddersfield and Leeds, which has 23 stations. The 2021 Transport and Works Act Order split the work into 11 sections, grouped here into seven lots. Church Fenton – York and Manchester – Stalybridge are complete; Huddersfield – Leeds and Leeds – Church Fenton are under construction; Stalybridge – Huddersfield is in planning. Wikipedia gives an estimated cost of £2.9–3.1 billion in 2018 and £11.5 billion by 2022, and a completion window of 2036–2041. ETCS signalling is to be commissioned in phases between 2032 and 2039.",
+    "ro": "Electrificare, cale suplimentară, resemnalizare și reconstruirea stațiilor pe ruta Transpennine de 76 de mile dintre Manchester Victoria și York, via Huddersfield și Leeds, cu 23 de stații. Transport and Works Act Order din 2021 a împărțit lucrările în 11 secțiuni, grupate aici în șapte loturi. Church Fenton – York și Manchester – Stalybridge sunt finalizate; Huddersfield – Leeds și Leeds – Church Fenton sunt în construcție; Stalybridge – Huddersfield este în planificare. Wikipedia indică un cost estimat de 2,9–3,1 miliarde de lire sterline în 2018 și 11,5 miliarde până în 2022, precum și o finalizare între 2036 și 2041. Semnalizarea ETCS urmează să fie pusă în funcțiune în etape între 2032 și 2039."
+  },
+  "operator": "gb-network-rail",
+  "stationCount": 23,
+  "cost": {
+    "amount": 11500,
+    "currency": "GBP",
+    "scope": "programme",
+    "confidence": "estimated",
+    "note": "Whole-programme estimate by 2022 according to Wikipedia; price year not stated."
+  },
+  "lots": [
+    {
+      "id": "w1-w2a-manchester-stalybridge",
+      "name": {
+        "en": "W1 and W2a: Manchester Victoria – Stalybridge",
+        "ro": "W1 și W2a: Manchester Victoria – Stalybridge"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2024-12"
+      },
+      "lengthKm": 12.8,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "Line speed increases and electrification, with the Stalybridge station remodelling (W2a). Overhead line installation began in November 2022; the first electric test run was on 13 March 2024 and regular electric services started on 3 December 2024. Wikipedia lists both sections as complete in 2025. Length measured from OpenStreetMap geometry.",
+        "ro": "Creșterea vitezei de circulație și electrificare, cu remodelarea stației Stalybridge (W2a). Instalarea liniei de contact a început în noiembrie 2022; prima circulație de probă electrică a avut loc la 13 martie 2024, iar serviciile electrice regulate au început la 3 decembrie 2024. Wikipedia indică ambele secțiuni ca finalizate în 2025. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-tru",
+        "nr-tru",
+        "osm-odbl"
+      ],
+      "geometryRef": "w1-w2a-manchester-stalybridge"
+    },
+    {
+      "id": "w2b-stalybridge-marsden",
+      "name": {
+        "en": "W2b: Stalybridge – Marsden",
+        "ro": "W2b: Stalybridge – Marsden"
+      },
+      "status": "planned",
+      "lengthKm": 17.6,
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "AtkinsRealis"
+        }
+      ],
+      "note": {
+        "en": "Line speed increases, electrification and station upgrades, including track realignment between Stalybridge and Diggle (Saddleworth). In planning; Wikipedia gives a 2032 target published by Transport for the North in 2024. AtkinsRealis was selected in February 2025 as main contractor for W2b and W2c. Length measured from OpenStreetMap geometry.",
+        "ro": "Creșterea vitezei de circulație, electrificare și modernizarea stațiilor, inclusiv rectificarea traseului între Stalybridge și Diggle (Saddleworth). În etapa de planificare; Wikipedia indică un obiectiv pentru 2032, publicat de Transport for the North în 2024. AtkinsRealis a fost selectat în februarie 2025 ca antreprenor principal pentru W2b și W2c. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-tru",
+        "nr-tru",
+        "osm-odbl"
+      ],
+      "geometryRef": "w2b-stalybridge-marsden"
+    },
+    {
+      "id": "w2c-marsden-huddersfield",
+      "name": {
+        "en": "W2c: Marsden – Huddersfield",
+        "ro": "W2c: Marsden – Huddersfield"
+      },
+      "status": "planned",
+      "lengthKm": 10.9,
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "AtkinsRealis"
+        }
+      ],
+      "note": {
+        "en": "Line speed increases, electrification, an additional bi-directional third track for freight climbing from Huddersfield to Marsden, and station upgrades. In planning; Wikipedia gives a 2032 target published by Transport for the North in 2024. AtkinsRealis was selected in February 2025 as main contractor for W2b and W2c. Length measured from OpenStreetMap geometry.",
+        "ro": "Creșterea vitezei de circulație, electrificare, o a treia cale bidirecțională pentru trenurile de marfă care urcă de la Huddersfield la Marsden și modernizarea stațiilor. În etapa de planificare; Wikipedia indică un obiectiv pentru 2032, publicat de Transport for the North în 2024. AtkinsRealis a fost selectat în februarie 2025 ca antreprenor principal pentru W2b și W2c. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-tru",
+        "nr-tru",
+        "osm-odbl"
+      ],
+      "geometryRef": "w2c-marsden-huddersfield"
+    },
+    {
+      "id": "w3-huddersfield-ravensthorpe",
+      "name": {
+        "en": "W3: Huddersfield – Ravensthorpe",
+        "ro": "W3: Huddersfield – Ravensthorpe"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2030-02"
+      },
+      "lengthKm": 13.4,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 4
+      },
+      "contractors": [
+        {
+          "name": "BAM and Amey consortium"
+        }
+      ],
+      "note": {
+        "en": "The eight-mile Huddersfield – Westtown (Dewsbury) section doubles from two tracks to four, with electrification, station works at Huddersfield, Deighton, Mirfield and Ravensthorpe, and a bridge giving grade separation at Thornhill LNW Junction. The decision on the Transport and Works Act Order for the Huddersfield – Westtown section was published on 27 June 2022. The Enhancements Delivery Plan (September 2026) lists the Entry Into Service milestone as February 2030, on target. A consortium including BAM and Amey was announced in September 2024 for the Leeds – Huddersfield sections. Length measured from OpenStreetMap geometry.",
+        "ro": "Secțiunea de opt mile Huddersfield – Westtown (Dewsbury) este dublată de la două la patru căi, cu electrificare, lucrări la stațiile Huddersfield, Deighton, Mirfield și Ravensthorpe și un pod pentru separarea pe niveluri la Thornhill LNW Junction. Decizia privind Transport and Works Act Order pentru secțiunea Huddersfield – Westtown a fost publicată la 27 iunie 2022. Planul de livrare a îmbunătățirilor (septembrie 2026) indică intrarea în exploatare în februarie 2030, conform planului. Un consorțiu care include BAM și Amey a fost anunțat în septembrie 2024 pentru secțiunile Leeds – Huddersfield. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "nr-tru",
+        "nr-edp",
+        "wikipedia-tru",
+        "osm-odbl"
+      ],
+      "geometryRef": "w3-huddersfield-ravensthorpe"
+    },
+    {
+      "id": "w4-ravensthorpe-leeds",
+      "name": {
+        "en": "W4: Ravensthorpe – Leeds",
+        "ro": "W4: Ravensthorpe – Leeds"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 23.6,
+      "profile": {
+        "works": "upgrade"
+      },
+      "contractors": [
+        {
+          "name": "BAM and Amey consortium"
+        }
+      ],
+      "note": {
+        "en": "Line speed increases, electrification and station upgrades. The Enhancements Delivery Plan (September 2026) lists Entry Into Service dates of February 2030 and April 2030 for this section, on target. Morley station (W5) was rebuilt and reopened on 26 June 2023; it has no length of its own and is not a separate lot. A consortium including BAM and Amey was announced in September 2024 for the Leeds – Huddersfield sections. Length measured from OpenStreetMap geometry.",
+        "ro": "Creșterea vitezei de circulație, electrificare și modernizarea stațiilor. Planul de livrare a îmbunătățirilor (septembrie 2026) indică pentru această secțiune date de intrare în exploatare în februarie 2030 și aprilie 2030, conform planului. Stația Morley (W5) a fost reconstruită și redeschisă la 26 iunie 2023; nu are lungime proprie și nu este un lot separat. Un consorțiu care include BAM și Amey a fost anunțat în septembrie 2024 pentru secțiunile Leeds – Huddersfield. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "nr-edp",
+        "wikipedia-tru",
+        "osm-odbl"
+      ],
+      "geometryRef": "w4-ravensthorpe-leeds"
+    },
+    {
+      "id": "e234-leeds-church-fenton",
+      "name": {
+        "en": "E2, E3 and E4: Leeds – Church Fenton",
+        "ro": "E2, E3 și E4: Leeds – Church Fenton"
+      },
+      "status": "under_construction",
+      "lengthKm": 24.6,
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Leeds station improvements (E2), Crossgates – Micklefield (E3) and Micklefield – Church Fenton (E4): electrification, line speed increases, level crossing closures and a temporary closure of Neville Hill depot. The Transport and Works Act Order for Leeds – Micklefield was published on 1 October 2024. The Enhancements Delivery Plan (September 2026) lists the combined Leeds – Church Fenton project as on target; Wikipedia gives a 2030 target for E3 and E4 and lists E2 (Leeds station) as in planning with no date. The three sections are drawn as one lot. Length measured from OpenStreetMap geometry.",
+        "ro": "Îmbunătățiri la stația Leeds (E2), Crossgates – Micklefield (E3) și Micklefield – Church Fenton (E4): electrificare, creșterea vitezei de circulație, închiderea unor treceri la nivel și o închidere temporară a depoului Neville Hill. Transport and Works Act Order pentru Leeds – Micklefield a fost publicat la 1 octombrie 2024. Planul de livrare a îmbunătățirilor (septembrie 2026) indică proiectul combinat Leeds – Church Fenton ca fiind conform planului; Wikipedia indică un obiectiv pentru 2030 la E3 și E4, iar E2 (stația Leeds) apare în planificare, fără dată. Cele trei secțiuni sunt desenate ca un singur lot. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "nr-edp",
+        "wikipedia-tru",
+        "osm-odbl"
+      ],
+      "geometryRef": "e234-leeds-church-fenton"
+    },
+    {
+      "id": "e1-church-fenton-york",
+      "name": {
+        "en": "E1: Church Fenton – York",
+        "ro": "E1: Church Fenton – York"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-08"
+      },
+      "lengthKm": 16.7,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "Electrification and line speed increase. Overhead line equipment between Church Fenton and Colton Junction was energised in July 2024 and the section was announced as complete in August 2025 according to Wikipedia. The Enhancements Delivery Plan (September 2026) shows the Entry Into Service milestone, originally April 2026, as complete. Length measured from OpenStreetMap geometry.",
+        "ro": "Electrificare și creșterea vitezei de circulație. Linia de contact dintre Church Fenton și Colton Junction a fost pusă sub tensiune în iulie 2024, iar secțiunea a fost anunțată ca finalizată în august 2025 potrivit Wikipedia. Planul de livrare a îmbunătățirilor (septembrie 2026) indică intrarea în exploatare, inițial aprilie 2026, ca finalizată. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "nr-edp",
+        "wikipedia-tru",
+        "osm-odbl"
+      ],
+      "geometryRef": "e1-church-fenton-york"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nr-tru",
+      "title": "Network Rail: Transpennine Route Upgrade",
+      "url": "https://www.networkrail.co.uk/our-work/railway-upgrade-plan/key-projects/transpennine-route-upgrade/",
+      "publisher": "Network Rail",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "nr-edp",
+      "title": "Network Rail: Enhancements Delivery Plan, England and Wales, September 2026",
+      "url": "https://www.networkrail.co.uk/wp-content/uploads/2020/01/Enhancements-Delivery-Plan-England-and-Wales-September-2026.pdf",
+      "publisher": "Network Rail",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-tru",
+      "title": "Wikipedia: Transpennine Route Upgrade",
+      "url": "https://en.wikipedia.org/wiki/Transpennine_Route_Upgrade",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-odbl",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

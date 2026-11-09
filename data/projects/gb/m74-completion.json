@@ -1,0 +1,138 @@
+{
+  "id": "gb-m74-completion",
+  "country": "gb",
+  "category": "highway",
+  "name": {
+    "en": "M74 Completion (Fullarton Road – Kingston Bridge)",
+    "ro": "Finalizarea M74 (Fullarton Road – Kingston Bridge)"
+  },
+  "description": {
+    "en": "A six-lane motorway of about 8 km through south-east Glasgow, joining the M74 at Fullarton Road to the M8 at Kingston Bridge. Construction ran from 2008 and it opened on 28 June 2011. Transport Scotland funded it in partnership with Glasgow City, South Lanarkshire and Renfrewshire councils.",
+    "ro": "O autostradă cu șase benzi, de circa 8 km, prin sud-estul orașului Glasgow, care leagă M74 la Fullarton Road de M8 la Kingston Bridge. Lucrările au început în 2008, iar drumul a fost deschis la 28 iunie 2011. Transport Scotland a finanțat-o în parteneriat cu consiliile Glasgow City, South Lanarkshire și Renfrewshire."
+  },
+  "operator": "gb-transport-scotland",
+  "lots": [
+    {
+      "id": "m74-completion",
+      "name": {
+        "en": "Fullarton Road – Kingston Bridge",
+        "ro": "Fullarton Road – Kingston Bridge"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-02",
+        "constructionStart": "2008-05",
+        "opened": "2011-06-28"
+      },
+      "lengthKm": 8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 445,
+              "currency": "GBP",
+              "year": 2008,
+              "scope": "works"
+            },
+            "date": "2008-02",
+            "note": "Contract value as reported by BBC News.",
+            "sourceRef": "bbc-timeline"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 445,
+          "currency": "GBP",
+          "year": 2008,
+          "scope": "works",
+          "note": "Contract awarded to the sole bidder, Interlink M74."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2008-02",
+          "note": {
+            "en": "Ministers approved the tender of Interlink M74, the sole bidder, with a £445m contract.",
+            "ro": "Miniștrii au aprobat oferta Interlink M74, unicul ofertant, cu un contract de 445 mil. GBP."
+          },
+          "sourceRef": "bbc-timeline"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008-05",
+          "note": {
+            "en": "Work officially started with a ground-breaking ceremony by the First Minister.",
+            "ro": "Lucrările au început oficial, cu o ceremonie de deschidere a șantierului condusă de prim-ministrul Scoției."
+          },
+          "sourceRef": "bbc-timeline"
+        },
+        {
+          "kind": "opened",
+          "date": "2011-06-28",
+          "note": {
+            "en": "The project opened to traffic at 19:00 BST.",
+            "ro": "Proiectul a fost deschis circulației la ora 19:00 BST."
+          },
+          "sourceRef": "bbc-timeline"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Interlink M74",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length is the 5 miles (8.0 km) given by Wikipedia; the mapped carriageway measures about 8.06 km. The scheme links the end of the existing M74 at Fullarton Road, near Carmyle (junction 3), with the M8 south-west of the Kingston Bridge. Construction was officially launched in May 2008 with a ground-breaking ceremony. The £445m contract was awarded in February 2008 to Interlink M74, the sole bidder. BBC News gave the cost as £692m at opening, quoting an Audit Scotland estimate; its timeline calls the project £657m, and Wikipedia says £692m includes land purchase. Drawn geometry is one mapped carriageway, from the M8 junction at Kingston to junction 3.",
+        "ro": "Lungimea este cele 5 mile (8,0 km) indicate de Wikipedia; carosabilul cartografiat măsoară circa 8,06 km. Proiectul leagă capătul M74 existent de la Fullarton Road, lângă Carmyle (nodul 3), de M8, la sud-vest de Kingston Bridge. Construcția a fost lansată oficial în mai 2008, cu ceremonia de începere a lucrărilor. Contractul de 445 mil. GBP a fost atribuit în februarie 2008 consorțiului Interlink M74, unicul ofertant. BBC News a indicat costul de 692 mil. GBP la deschidere, citând o estimare Audit Scotland; cronologia sa numește proiectul 657 mil. GBP, iar Wikipedia precizează că 692 mil. GBP include achiziția de terenuri. Geometria desenată este un singur carosabil cartografiat, de la nodul M8 de la Kingston până la nodul 3."
+      },
+      "sourceRefs": [
+        "ts-m74-completion",
+        "bbc-timeline",
+        "wikipedia-m74",
+        "osm-m74"
+      ],
+      "geometryRef": "m74-completion"
+    }
+  ],
+  "cost": {
+    "amount": 692,
+    "currency": "GBP",
+    "scope": "total",
+    "confidence": "reported",
+    "note": "BBC News headline figure at opening. Price year not stated."
+  },
+  "sources": [
+    {
+      "id": "ts-m74-completion",
+      "title": "Transport Scotland: M74 Completion (\"Completed\"; partnership with Glasgow City, South Lanarkshire and Renfrewshire councils)",
+      "url": "https://www.transport.gov.scot/projects/m74-completion/",
+      "publisher": "Transport Scotland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "bbc-timeline",
+      "title": "BBC News: Timeline: Glasgow's M74 extension project (28 June 2011; \"The £657m project formally opens to traffic at 1900 BST\")",
+      "url": "https://www.bbc.co.uk/news/uk-scotland-13927131",
+      "publisher": "BBC News",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-m74",
+      "title": "Wikipedia: M74 motorway (northern extension, 5 miles (8.0 km), opened 28 June 2011; Interlink M74 joint venture)",
+      "url": "https://en.wikipedia.org/wiki/M74_motorway",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-m74",
+      "title": "OpenStreetMap contributors: M74 motorway ways (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

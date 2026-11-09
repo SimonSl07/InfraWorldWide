@@ -1,0 +1,153 @@
+{
+  "id": "gb-a6-randalstown-castledawson",
+  "country": "gb",
+  "category": "highway",
+  "name": {
+    "en": "A6 Randalstown – Castledawson dualling",
+    "ro": "Dublarea A6 Randalstown – Castledawson"
+  },
+  "description": {
+    "en": "Dualling of 14.7 km of the A6 North Western Transport Corridor between Randalstown and Castledawson in Northern Ireland, delivered by the Department for Infrastructure at a published cost of £189 million. The contract was awarded to GRAHAM Farrans Joint Venture in May 2015, preliminary works began in October 2016 and main construction in June 2017. The Randalstown–Toome part opened in August 2019, Toome–Castledawson in November 2020 and the whole scheme on 29 May 2021.",
+    "ro": "Dublarea a 14,7 km din coridorul de transport nord-vestic A6 între Randalstown și Castledawson, în Irlanda de Nord, realizată de Departamentul pentru Infrastructură la un cost publicat de 189 de milioane de lire sterline. Contractul a fost atribuit asocierii GRAHAM Farrans Joint Venture în mai 2015, lucrările preliminare au început în octombrie 2016, iar cele principale în iunie 2017. Partea Randalstown–Toome a fost deschisă în august 2019, Toome–Castledawson în noiembrie 2020, iar întregul proiect la 29 mai 2021."
+  },
+  "operator": "gb-dfi-northern-ireland",
+  "cost": {
+    "amount": 189,
+    "currency": "GBP",
+    "scope": "programme",
+    "note": "Whole-scheme cost as published; price year not stated and not broken out per lot."
+  },
+  "lots": [
+    {
+      "id": "randalstown-toome",
+      "name": {
+        "en": "Randalstown – Toome",
+        "ro": "Randalstown – Toome"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-05",
+        "constructionStart": "2017-06",
+        "opened": "2019-08-04"
+      },
+      "lengthKm": 7.3,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-05",
+          "sourceRef": "dfi-a6-rcd",
+          "note": {
+            "en": "Contract awarded to GRAHAM Farrans Joint Venture (whole scheme).",
+            "ro": "Contract atribuit asocierii GRAHAM Farrans Joint Venture (întregul proiect)."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-06",
+          "sourceRef": "dfi-a6-rcd",
+          "note": {
+            "en": "Main construction commenced; preliminary works began in October 2016.",
+            "ro": "Au început lucrările principale; lucrările preliminare au început în octombrie 2016."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2019-08-04",
+          "sourceRef": "dfi-a6-rcd",
+          "note": {
+            "en": "Opened to traffic on 4 August 2019 and formally opened on 12 September 2019.",
+            "ro": "Deschis traficului la 4 august 2019 și inaugurat oficial la 12 septembrie 2019."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GRAHAM Farrans Joint Venture",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "randalstown-toome",
+      "sourceRefs": [
+        "dfi-a6-rcd",
+        "osm-contributors"
+      ],
+      "note": {
+        "en": "Length 7.3 km as published by the Department for Infrastructure. The cut with the next lot is drawn at the Toome (Brecart) roundabout; OpenStreetMap geometry runs from the Randalstown end to that roundabout and measures about 8.2 km, so the drawn line and the published length differ and the published figure is kept.",
+        "ro": "Lungime de 7,3 km publicată de Departamentul pentru Infrastructură. Limita cu lotul următor este trasată la sensul giratoriu Toome (Brecart); geometria OpenStreetMap merge de la capătul dinspre Randalstown până la acel sens giratoriu și măsoară circa 8,2 km, deci linia desenată diferă de lungimea publicată, iar cifra publicată este păstrată."
+      }
+    },
+    {
+      "id": "toome-castledawson",
+      "name": {
+        "en": "Toome – Castledawson",
+        "ro": "Toome – Castledawson"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2015-05",
+        "constructionStart": "2017-06",
+        "opened": "2020-11-22"
+      },
+      "lengthKm": 7.4,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2015-05",
+          "sourceRef": "dfi-a6-rcd",
+          "note": {
+            "en": "Contract awarded to GRAHAM Farrans Joint Venture (whole scheme).",
+            "ro": "Contract atribuit asocierii GRAHAM Farrans Joint Venture (întregul proiect)."
+          }
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-06",
+          "sourceRef": "dfi-a6-rcd",
+          "note": {
+            "en": "Main construction commenced; preliminary works began in October 2016.",
+            "ro": "Au început lucrările principale; lucrările preliminare au început în octombrie 2016."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2020-11-22",
+          "sourceRef": "dfi-a6-rcd",
+          "note": {
+            "en": "Opened to traffic on 22 November 2020.",
+            "ro": "Deschis traficului la 22 noiembrie 2020."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GRAHAM Farrans Joint Venture",
+          "role": "builder"
+        }
+      ],
+      "geometryRef": "toome-castledawson",
+      "sourceRefs": [
+        "dfi-a6-rcd",
+        "osm-contributors"
+      ],
+      "note": {
+        "en": "Length 7.4 km as published by the Department for Infrastructure. The drawn line runs from the Toome (Brecart) roundabout to the Castledawson roundabout and measures about 8.3 km; the end points of the published figure are not stated, so the published figure is kept.",
+        "ro": "Lungime de 7,4 km publicată de Departamentul pentru Infrastructură. Linia desenată merge de la sensul giratoriu Toome (Brecart) la sensul giratoriu Castledawson și măsoară circa 8,3 km; capetele cifrei publicate nu sunt indicate, deci cifra publicată este păstrată."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "dfi-a6-rcd",
+      "title": "Department for Infrastructure: A6 Randalstown to Castledawson dualling scheme",
+      "url": "https://www.infrastructure-ni.gov.uk/articles/a6-randalstown-castledawson-dualling-scheme",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
