@@ -1,0 +1,85 @@
+{
+  "id": "be-25n-mechelen",
+  "country": "be",
+  "category": "railway",
+  "name": {
+    "en": "Line 25N Mechelen extension (Spoorbypass Mechelen)",
+    "ro": "Prelungirea liniei 25N spre Mechelen (Spoorbypass Mechelen)"
+  },
+  "description": {
+    "en": "Two-track extension of line 25N from Y Abeelstraat through Mechelen station to the junction with line 25 near Mechelen-Nekkerspoel, about 3 km. It continues the Diabolo line from Brussels along the E19 and adds two platform tracks at Mechelen station (10 to 12 tracks).",
+    "ro": "Prelungire cu două linii a liniei 25N de la Y Abeelstraat, prin gara Mechelen, până la joncțiunea cu linia 25 lângă Mechelen-Nekkerspoel, circa 3 km. Continuă linia Diabolo dinspre Bruxelles de-a lungul E19 și adaugă două linii de peron în gara Mechelen (de la 10 la 12 linii)."
+  },
+  "operator": "be-infrabel",
+  "lots": [
+    {
+      "id": "mechelen-spoorbypass",
+      "name": {
+        "en": "Y Abeelstraat – Mechelen – Mechelen-Nekkerspoel",
+        "ro": "Y Abeelstraat – Mechelen – Mechelen-Nekkerspoel"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013",
+        "opened": "2020-12-14"
+      },
+      "lengthKm": 3.15,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "cost": {
+        "actual": {
+          "amount": 170,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "Covers the roughly 3 km line and the adaptation of Mechelen station, works carried out 2013 to end 2019. Price year not stated."
+        }
+      },
+      "contractors": [],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2013",
+          "sourceRef": "infrabel-spoorbypass-mechelen"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-12-14",
+          "sourceRef": "wikipedia-nl-spoorlijn-25n"
+        }
+      ],
+      "note": {
+        "en": "Infrabel gives the project area as 3.15 km in three zones: Abeelstraat to just past the Leuvense vaart (1.55 km), the station zone with the platforms (0.55 km) and platform end to the N15 (1.05 km). Works were planned from spring 2013 to the end of 2019; the bypass entered service on 14 December 2020 with the new timetable, so the end of works and the start of service are separate dates. The EUR 170 million covers the roughly 3 km section and the station adaptation. The section from Y Albertbrug to Y Abeelstraat opened with the Diabolo project in June 2012 and is not part of this lot. The drawn geometry measures 3.37 km (one track, from OpenStreetMap), 7% above the Infrabel figure; the start at Y Abeelstraat is placed approximately.",
+        "ro": "Infrabel indică zona proiectului la 3,15 km, în trei zone: de la Abeelstraat până puțin după Leuvense vaart (1,55 km), zona gării cu peroanele (0,55 km) și de la capătul peroanelor până la N15 (1,05 km). Lucrările erau planificate din primăvara 2013 până la sfârșitul lui 2019; ocolirea a intrat în exploatare la 14 decembrie 2020, odată cu noul orar, deci încheierea lucrărilor și începutul exploatării sunt date distincte. Cei 170 de milioane EUR acoperă secțiunea de circa 3 km și adaptarea gării. Secțiunea de la Y Albertbrug la Y Abeelstraat a fost deschisă odată cu proiectul Diabolo, în iunie 2012, și nu face parte din acest lot. Geometria desenată măsoară 3,37 km (o singură linie, din OpenStreetMap), cu 7% peste cifra Infrabel; începutul la Y Abeelstraat este plasat aproximativ."
+      },
+      "sourceRefs": [
+        "infrabel-spoorbypass-mechelen",
+        "wikipedia-nl-spoorlijn-25n",
+        "openstreetmap-25n-mechelen"
+      ],
+      "geometryRef": "mechelen-spoorbypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "infrabel-spoorbypass-mechelen",
+      "title": "Infrabel: Spoorbypass Mechelen (archived 2019-07-03)",
+      "url": "https://www.infrabel.be/nl/buurtbewoners/spoorbypass-mechelen",
+      "archiveUrl": "https://web.archive.org/web/20190703211513/https://www.infrabel.be/nl/buurtbewoners/spoorbypass-mechelen",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-nl-spoorlijn-25n",
+      "title": "Wikipedia (nl): Spoorlijn 25N",
+      "url": "https://nl.wikipedia.org/wiki/Spoorlijn_25N",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-25n-mechelen",
+      "title": "OpenStreetMap contributors: railway geometry, line 25N at Mechelen (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

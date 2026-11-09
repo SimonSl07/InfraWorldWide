@@ -1,0 +1,86 @@
+{
+  "id": "lu-tram-k2a-kirchberg",
+  "country": "lu",
+  "city": "lu-luxembourg",
+  "category": "railway",
+  "name": {
+    "en": "Tram extension K2A, Kirchberg (Boulevard Konrad Adenauer)",
+    "ro": "Extinderea tramvaiului K2A, Kirchberg (bulevardul Konrad Adenauer)"
+  },
+  "description": {
+    "en": "First extension of Luxembourg tram line T1, a double-track branch of about 2.3 km with 3 new stops, running from the Pfaffenthal/Kirchberg hub along Boulevard Konrad Adenauer to the European School. Preparatory works began in February 2025. Luxtram plans service from the start of the 2027 school year. The state estimated the section at EUR 106 million excluding VAT in February 2024.",
+    "ro": "Prima extindere a liniei de tramvai T1 din Luxemburg: o ramură cu cale dublă de circa 2,3 km și 3 stații noi, de la nodul Pfaffenthal/Kirchberg de-a lungul bulevardului Konrad Adenauer până la Școala Europeană. Lucrările pregătitoare au început în februarie 2025. Luxtram prevede darea în folosință la începutul anului școlar 2027. Statul a estimat secțiunea la 106 milioane de euro fără TVA în februarie 2024."
+  },
+  "operator": "lu-luxtram",
+  "stationCount": 3,
+  "lots": [
+    {
+      "id": "k2a-pont-rouge-european-school",
+      "name": {
+        "en": "K2A: Pfaffenthal/Kirchberg – European School",
+        "ro": "K2A: Pfaffenthal/Kirchberg – Școala Europeană"
+      },
+      "status": "under_construction",
+      "dates": {
+        "announced": "2024-02-01",
+        "constructionStart": "2025-02",
+        "expectedOpening": "2027-09"
+      },
+      "lengthKm": 2.3,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "cost": {
+        "estimated": {
+          "amount": 106,
+          "currency": "EUR",
+          "year": 2024,
+          "note": "Excluding VAT. Estimate stated in the government release of 1 February 2024 for the K2A section."
+        }
+      },
+      "note": {
+        "en": "Length and station count are from the government release of 1 February 2024 (double track, 2.3 km, 3 new stations); the drawn OpenStreetMap line measures 2.28 km. The branch leaves T1 near Rout Bréck–Pafendall. Luxtram says preparatory works between Avenue John F. Kennedy and Rue Richard Coudenhove-Kalergi began in February 2025 and service between the Pont Grande-Duchesse Charlotte and the European School is planned for the 2027 school year (rentrée 2027). The date is recorded as September 2027 for that reason. English Wikipedia names two new stops and the same September 2027 date; the government release gives three, and the three-stop figure is used here. The 2.3 km figure on the Luxtram page refers to the tree-lined avenue, not to the line. The EUR 135 million figure is the combined financing for K2A and the Hollerich extension (EUR 90 million state, EUR 45 million City of Luxembourg), not a cost for K2A alone. The longer K2B route towards Kuebebierg and Luxexpo is a later phase and is not included.",
+        "ro": "Lungimea și numărul de stații provin din comunicatul guvernului din 1 februarie 2024 (cale dublă, 2,3 km, 3 stații noi); linia OpenStreetMap desenată măsoară 2,28 km. Ramura pornește din T1 lângă Rout Bréck–Pafendall. Luxtram indică faptul că lucrările pregătitoare între Avenue John F. Kennedy și Rue Richard Coudenhove-Kalergi au început în februarie 2025, iar serviciul între podul Grande-Duchesse Charlotte și Școala Europeană este prevăzut pentru anul școlar 2027 (rentrée 2027). De aceea data este înregistrată ca septembrie 2027. Wikipedia în engleză indică două stații noi și aceeași dată, septembrie 2027; comunicatul guvernului indică trei, iar aici se folosește cifra de trei stații. Cifra de 2,3 km de pe pagina Luxtram se referă la aleea cu arbori, nu la linie. Cele 135 de milioane de euro reprezintă finanțarea combinată pentru K2A și extinderea spre Hollerich (90 de milioane statul, 45 de milioane orașul Luxemburg), nu costul K2A singur. Ruta mai lungă K2B spre Kuebebierg și Luxexpo este o fază ulterioară și nu este inclusă."
+      },
+      "sourceRefs": [
+        "gov-lu-2024-extension",
+        "luxtram-k2a",
+        "wikipedia-en-luxtram",
+        "openstreetmap"
+      ],
+      "geometryRef": "k2a-pont-rouge-european-school"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gov-lu-2024-extension",
+      "title": "Gouvernement du Luxembourg: L'extension de la ligne de tramway au Kirchberg et vers le quartier de Hollerich votée à l'unanimité (1 February 2024): \"La première étape (A) en voie double s'étend sur 2,3 km et comprend 3 nouvelles stations\"; \"estimé à 106.000.000 € HTVA\"",
+      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2024/02-fevrier/01-extension-tramway.html",
+      "publisher": "Gouvernement du Grand-Duché de Luxembourg",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "luxtram-k2a",
+      "title": "Luxtram: Extension Kirchberg 2A (\"La mise en service de cette nouvelle extension entre le pont Grande-Duchesse Charlotte et l'École européenne est prévue à la rentrée 2027\"; preparatory works began in February 2025)",
+      "url": "https://www.luxtram.lu/travaux/extension-kirchberg-2a/",
+      "publisher": "Luxtram S.A.",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-luxtram",
+      "title": "Wikipedia: Luxtram (\"An initial extension between Avenue John F. Kennedy and Rue Richard Coudenhove-Kalergi is scheduled to open in September 2027, and will include two new stops\")",
+      "url": "https://en.wikipedia.org/wiki/Luxtram",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors: route geometry (ODbL), way 1339895462 (railway=construction, K2a)",
+      "url": "https://www.openstreetmap.org/way/1339895462",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

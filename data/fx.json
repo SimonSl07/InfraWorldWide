@@ -1,14 +1,14 @@
 {
   "base": "EUR",
-  "note": "Annual average euro foreign exchange reference rates, expressed as units of national currency per 1 EUR, so a cost recorded in RON, BGN, CZK, HUF, PLN, SEK, NOK, USD or RSD is divided by the rate for its own year to reach euro of that same year. That is all this table licenses: it makes nominal amounts comparable across currencies, not across time (pair it with data/deflators.json for real terms). An annual average also smears intra-year movement, so a contract signed on a single date was not struck at this rate. These are market reference rates, not purchasing-power parities; converting a Romanian and a German cost at them compares money exchanged, not construction bought. EUR is the base and is deliberately absent rather than carried as a self-rate of 1. The Romanian series is published by the ECB on the post-redenomination RON basis for every year, including those before the July 2005 cut of four zeroes (10,000 ROL = 1 RON), so 1999 reads 1.6345 RON/EUR rather than 16,345 ROL/EUR; no conversion was applied here. The Bulgarian lev has been held to the euro by a currency board, and Bulgaria adopted the euro on 1 January 2026 at 1.95583 BGN, making 2025 the last full lev year. The published averages are not all identical to that parity: the ECB reference rate is a market quote disseminated to four decimals, so 2000-2004 sit a few ten-thousandths below parity and only 2005 onward is a flat 1.9558 every year. BGN also has no 1999 figure and its 2000 figure averages July-December only, because the ECB began quoting the lev in July 2000. The ECB publishes no reference rate for the Serbian dinar, so RSD is taken from Eurostat's equivalent annual-average table; it starts in 2001 because 1999 and January-November 2000 are a frozen administered rate of exactly 11.735 dinars per euro, unified with the market rate only in December 2000, and those years are omitted rather than offered as rates at which anything could have been converted. The Czech koruna is published by the ECB for every year from 1999 and has floated freely throughout, so its series moves with the market (36.8843 CZK/EUR in 1999, 24.0043 in 2023). The Polish zloty is published by the ECB for every year from 1999, so its series moves with the market (4.2274 PLN/EUR in 1999, 3.5121 in 2008, 4.2397 in 2025). The Hungarian forint is published by the ECB for every year from 1999 and floats freely, so its series moves with the market (252.7672 HUF/EUR in 1999, 391.2865 in 2022, 397.7675 in 2025). The Swedish krona is published by the ECB for every year from 1999 and floats freely. The Norwegian krone is published by the ECB for every year from 1999 and floats freely.",
+  "note": "Annual average euro foreign exchange reference rates, expressed as units of national currency per 1 EUR, so a cost recorded in RON, BGN, CZK, HUF, PLN, SEK, NOK, USD, CHF, GBP, ISK, TRY, MDL, UAH or RSD is divided by the rate for its own year to reach euro of that same year. That is all this table licenses: it makes nominal amounts comparable across currencies, not across time (pair it with data/deflators.json for real terms). An annual average also smears intra-year movement, so a contract signed on a single date was not struck at this rate. These are market reference rates, not purchasing-power parities; converting a Romanian and a German cost at them compares money exchanged, not construction bought. EUR is the base and is deliberately absent rather than carried as a self-rate of 1. The Romanian series is published by the ECB on the post-redenomination RON basis for every year, including those before the July 2005 cut of four zeroes (10,000 ROL = 1 RON), so 1999 reads 1.6345 RON/EUR rather than 16,345 ROL/EUR; no conversion was applied here. The Bulgarian lev has been held to the euro by a currency board, and Bulgaria adopted the euro on 1 January 2026 at 1.95583 BGN, making 2025 the last full lev year. The published averages are not all identical to that parity: the ECB reference rate is a market quote disseminated to four decimals, so 2000-2004 sit a few ten-thousandths below parity and only 2005 onward is a flat 1.9558 every year. BGN also has no 1999 figure and its 2000 figure averages July-December only, because the ECB began quoting the lev in July 2000. The ECB publishes no reference rate for the Serbian dinar, so RSD is taken from Eurostat's equivalent annual-average table; it starts in 2001 because 1999 and January-November 2000 are a frozen administered rate of exactly 11.735 dinars per euro, unified with the market rate only in December 2000, and those years are omitted rather than offered as rates at which anything could have been converted. The Czech koruna is published by the ECB for every year from 1999 and has floated freely throughout, so its series moves with the market (36.8843 CZK/EUR in 1999, 24.0043 in 2023). The Polish zloty is published by the ECB for every year from 1999, so its series moves with the market (4.2274 PLN/EUR in 1999, 3.5121 in 2008, 4.2397 in 2025). The Hungarian forint is published by the ECB for every year from 1999 and floats freely, so its series moves with the market (252.7672 HUF/EUR in 1999, 391.2865 in 2022, 397.7675 in 2025). The Swedish krona is published by the ECB for every year from 1999 and floats freely. The Norwegian krone is published by the ECB for every year from 1999 and floats freely. The Swiss franc and the pound sterling are published by the ECB for every year from 1999 and float freely (CHF 1.6003 per EUR in 1999, 0.9370 in 2025; GBP 0.6587 in 1999, 0.8568 in 2025). The Turkish lira is published by the ECB for every year from 1999 on the post-redenomination basis (six zeroes removed on 1 January 2005), so 1999 reads 0.4472 TRY/EUR rather than 447,200 old lira; no conversion was applied here. It depreciated from 1.7771 TRY/EUR in 2004 to 44.8161 in 2025, so a Turkish figure is only meaningful when deflated within lira first, as the cost rule requires. The ECB suspended its Icelandic króna reference rate in December 2008, and its series has no 2009 to 2017 figures, so ISK is taken from Eurostat's equivalent annual-average table, which is complete from 1999 and carried at two decimals (77.18 ISK/EUR in 1999, 172.67 in 2009, 144.66 in 2025). The ECB publishes no reference rate for the Moldovan leu or the Ukrainian hryvnia either, so MDL and UAH are also taken from Eurostat ert_bil_eur_a (statinfo AVG), complete from 1999 (MDL 11.1935 in 1999, 19.5911 in 2025; UAH 4.4048 in 1999, 47.0932 in 2025). A Ukrainian cost in hryvnia is a wartime figure from 2022 and the annual average hides the sharp mid-year moves of 2022.",
   "sources": [
     {
       "title": "European Central Bank Data Portal: Euro foreign exchange reference rates, annual averages [EXR, A.<CUR>.EUR.SP00.A]",
-      "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD+RON+BGN+CZK+HUF+PLN+SEK+NOK+DKK.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2025"
+      "url": "https://data-api.ecb.europa.eu/service/data/EXR/A.USD+RON+BGN+CZK+HUF+PLN+SEK+NOK+DKK+CHF+GBP+TRY.EUR.SP00.A?format=csvdata&startPeriod=1999&endPeriod=2025"
     },
     {
-      "title": "Eurostat: Euro/ECU exchange rates, annual data [ert_bil_eur_a], statinfo=AVG; source for RSD and cross-check for RON and USD",
-      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ert_bil_eur_a?format=JSON&currency=RSD&statinfo=AVG&unit=NAC&sinceTimePeriod=1999"
+      "title": "Eurostat: Euro/ECU exchange rates, annual data [ert_bil_eur_a], statinfo=AVG; source for RSD, ISK, MDL and UAH and cross-check for RON, USD, CHF, GBP and TRY",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ert_bil_eur_a?format=JSON&currency=RSD&currency=ISK&currency=MDL&currency=UAH&statinfo=AVG&unit=NAC&sinceTimePeriod=1999"
     },
     {
       "title": "Council Regulation (EU) 2025/1409 amending Regulation (EC) No 2866/98: irrevocable conversion rate of 1,95583 Bulgarian lev to the euro from 1 January 2026",
@@ -361,6 +361,216 @@
         "2023": 7.4509,
         "2024": 7.4589,
         "2025": 7.4634
+      }
+    },
+    "CHF": {
+      "label": {
+        "en": "Swiss franc",
+        "ro": "Francul elvețian"
+      },
+      "perEur": {
+        "1999": 1.6003,
+        "2000": 1.5579,
+        "2001": 1.5105,
+        "2002": 1.467,
+        "2003": 1.5212,
+        "2004": 1.5438,
+        "2005": 1.5483,
+        "2006": 1.5729,
+        "2007": 1.6427,
+        "2008": 1.5874,
+        "2009": 1.51,
+        "2010": 1.3803,
+        "2011": 1.2326,
+        "2012": 1.2053,
+        "2013": 1.2311,
+        "2014": 1.2146,
+        "2015": 1.0679,
+        "2016": 1.0902,
+        "2017": 1.1117,
+        "2018": 1.155,
+        "2019": 1.1124,
+        "2020": 1.0705,
+        "2021": 1.0811,
+        "2022": 1.0047,
+        "2023": 0.9718,
+        "2024": 0.9526,
+        "2025": 0.937
+      }
+    },
+    "GBP": {
+      "label": {
+        "en": "Pound sterling",
+        "ro": "Lira sterlină"
+      },
+      "perEur": {
+        "1999": 0.6587,
+        "2000": 0.6095,
+        "2001": 0.6219,
+        "2002": 0.6288,
+        "2003": 0.692,
+        "2004": 0.6787,
+        "2005": 0.6838,
+        "2006": 0.6817,
+        "2007": 0.6843,
+        "2008": 0.7963,
+        "2009": 0.8909,
+        "2010": 0.8578,
+        "2011": 0.8679,
+        "2012": 0.8109,
+        "2013": 0.8493,
+        "2014": 0.8061,
+        "2015": 0.7258,
+        "2016": 0.8195,
+        "2017": 0.8767,
+        "2018": 0.8847,
+        "2019": 0.8778,
+        "2020": 0.8897,
+        "2021": 0.8596,
+        "2022": 0.8528,
+        "2023": 0.8698,
+        "2024": 0.8466,
+        "2025": 0.8568
+      }
+    },
+    "ISK": {
+      "label": {
+        "en": "Icelandic króna",
+        "ro": "Coroana islandeză"
+      },
+      "perEur": {
+        "1999": 77.18,
+        "2000": 72.58,
+        "2001": 87.42,
+        "2002": 86.18,
+        "2003": 86.65,
+        "2004": 87.14,
+        "2005": 78.23,
+        "2006": 87.76,
+        "2007": 87.63,
+        "2008": 143.83,
+        "2009": 172.67,
+        "2010": 161.89,
+        "2011": 161.42,
+        "2012": 160.73,
+        "2013": 162.38,
+        "2014": 154.86,
+        "2015": 146.3,
+        "2016": 133.59,
+        "2017": 120.54,
+        "2018": 127.89,
+        "2019": 137.28,
+        "2020": 154.59,
+        "2021": 150.15,
+        "2022": 142.24,
+        "2023": 149.13,
+        "2024": 149.31,
+        "2025": 144.66
+      }
+    },
+    "TRY": {
+      "label": {
+        "en": "Turkish lira",
+        "ro": "Lira turcească"
+      },
+      "perEur": {
+        "1999": 0.4472,
+        "2000": 0.5748,
+        "2001": 1.1024,
+        "2002": 1.4397,
+        "2003": 1.6949,
+        "2004": 1.7771,
+        "2005": 1.6771,
+        "2006": 1.809,
+        "2007": 1.7865,
+        "2008": 1.9064,
+        "2009": 2.1631,
+        "2010": 1.9965,
+        "2011": 2.3378,
+        "2012": 2.3135,
+        "2013": 2.5335,
+        "2014": 2.9065,
+        "2015": 3.0255,
+        "2016": 3.3433,
+        "2017": 4.1206,
+        "2018": 5.7077,
+        "2019": 6.3578,
+        "2020": 8.0547,
+        "2021": 10.5124,
+        "2022": 17.4088,
+        "2023": 25.7597,
+        "2024": 35.5734,
+        "2025": 44.8161
+      }
+    },
+    "MDL": {
+      "label": {
+        "en": "Moldovan leu",
+        "ro": "Leul moldovenesc"
+      },
+      "perEur": {
+        "1999": 11.1935,
+        "2000": 11.4945,
+        "2001": 11.5239,
+        "2002": 12.8337,
+        "2003": 15.7403,
+        "2004": 15.3287,
+        "2005": 15.6978,
+        "2006": 16.4918,
+        "2007": 16.5986,
+        "2008": 15.2916,
+        "2009": 15.5248,
+        "2010": 16.3995,
+        "2011": 16.3369,
+        "2012": 15.5632,
+        "2013": 16.7241,
+        "2014": 18.6321,
+        "2015": 20.8882,
+        "2016": 22.0518,
+        "2017": 20.8286,
+        "2018": 19.8459,
+        "2019": 19.6727,
+        "2020": 19.7511,
+        "2021": 20.9216,
+        "2022": 19.8997,
+        "2023": 19.6431,
+        "2024": 19.2533,
+        "2025": 19.5911
+      }
+    },
+    "UAH": {
+      "label": {
+        "en": "Ukrainian hryvnia",
+        "ro": "Hrivna ucraineană"
+      },
+      "perEur": {
+        "1999": 4.4048,
+        "2000": 5.0233,
+        "2001": 4.8087,
+        "2002": 5.0386,
+        "2003": 6.0345,
+        "2004": 6.6178,
+        "2005": 6.3663,
+        "2006": 6.342,
+        "2007": 6.9229,
+        "2008": 7.7102,
+        "2009": 10.8922,
+        "2010": 10.5538,
+        "2011": 11.0747,
+        "2012": 10.2718,
+        "2013": 10.6157,
+        "2014": 15.6833,
+        "2015": 24.1905,
+        "2016": 28.3116,
+        "2017": 30.0531,
+        "2018": 32.1228,
+        "2019": 28.9192,
+        "2020": 30.909,
+        "2021": 32.2611,
+        "2022": 34.0188,
+        "2023": 39.5388,
+        "2024": 43.4694,
+        "2025": 47.0932
       }
     }
   }

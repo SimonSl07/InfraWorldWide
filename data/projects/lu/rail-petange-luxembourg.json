@@ -1,0 +1,91 @@
+{
+  "id": "lu-rail-petange-luxembourg",
+  "country": "lu",
+  "category": "railway",
+  "name": {
+    "en": "Pétange–Luxembourg double tracking (line 7)",
+    "ro": "Linia dublă Pétange–Luxembourg (linia 7)"
+  },
+  "description": {
+    "en": "Conversion of the 20.4 km Luxembourg–Pétange line, opened in 1900 as a single track, to double track. The works were officially launched at Bascharage on 13 December 2004 and the double-track line was inaugurated at Pétange station in December 2012. A 2019 law separately caps spending of EUR 319.92 million on full double tracking of the line and renewal of its fixed installations, in particular in the Pétange and Rodange station areas.",
+    "ro": "Trecerea liniei Luxembourg–Pétange, lungă de 20,4 km și deschisă în 1900 cu o singură cale, la linie dublă. Lucrările au fost lansate oficial la Bascharage la 13 decembrie 2004, iar linia dublă a fost inaugurată în gara Pétange în decembrie 2012. O lege din 2019 plafonează separat cheltuielile la 319,92 milioane EUR pentru linia dublă integrală și reînnoirea instalațiilor fixe, în special în zonele gărilor Pétange și Rodange."
+  },
+  "operator": "lu-cfl",
+  "lots": [
+    {
+      "id": "petange-luxembourg",
+      "name": {
+        "en": "Pétange – Luxembourg double track",
+        "ro": "Linia dublă Pétange – Luxembourg"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2004-12-13",
+        "opened": "2012-12"
+      },
+      "lengthKm": 20.4,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2,
+        "electrified": true,
+        "maxSpeedKmh": 140
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2004-12-13",
+          "sourceRef": "raillu-chantier-petange-luxembourg"
+        },
+        {
+          "kind": "opened",
+          "date": "2012-12",
+          "sourceRef": "raillu-chantier-petange-luxembourg"
+        }
+      ],
+      "note": {
+        "en": "The line opened as a single track on 8 August 1900 and was electrified on 27 May 1981. Earthworks for the second track were done in 1934. rail.lu records the official launch of the double-track works at Bascharage on 13 December 2004, a further phase from 6 April 2009 between Pétange and Dippach-Reckange, and photographs of the inauguration of the double-track line at Pétange station dated 7 December 2012; the opening date is given as month only because the page does not state the date of first regular service. No final cost or contractor was found. The EUR 319.92 million in the law of 6 June 2019 is a spending cap that also covers renewal of fixed installations, not an outturn, and is not recorded as the lot cost. Whether the station-area renewal at Pétange and Rodange under that law is complete was not established. Length is the 20.40 km given by French Wikipedia; the line is drawn from OpenStreetMap (single track centreline) at about 20.2 km.",
+        "ro": "Linia a fost deschisă cu o singură cale la 8 august 1900 și electrificată la 27 mai 1981. Terasamentele pentru a doua cale au fost realizate în 1934. rail.lu consemnează lansarea oficială a lucrărilor de linie dublă la Bascharage la 13 decembrie 2004, o fază ulterioară începând cu 6 aprilie 2009 între Pétange și Dippach-Reckange și fotografii ale inaugurării liniei duble în gara Pétange din 7 decembrie 2012; data deschiderii este dată doar pe lună, deoarece pagina nu indică data primei circulații regulate. Nu au fost găsite costul final și constructorul. Suma de 319,92 milioane EUR din legea din 6 iunie 2019 este un plafon de cheltuieli care include și reînnoirea instalațiilor fixe, nu un cost final, și nu este înregistrată drept cost al lotului. Nu s-a stabilit dacă reînnoirea zonelor gărilor Pétange și Rodange prevăzută de lege este încheiată. Lungimea este cea de 20,40 km indicată de Wikipedia în franceză; linia este trasată din OpenStreetMap (axul unei singure căi) la circa 20,2 km."
+      },
+      "sourceRefs": [
+        "raillu-chantier-petange-luxembourg",
+        "raillu-ligne-luxembourg-petange",
+        "wikipedia-fr-ligne-7-cfl",
+        "legilux-loi-2019-06-06",
+        "osm-contributors"
+      ],
+      "geometryRef": "petange-luxembourg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "raillu-chantier-petange-luxembourg",
+      "title": "rail.lu: Chantier de la mise à double voie de la ligne ferroviaire Pétange–Luxembourg",
+      "url": "http://www.rail.lu/events/chantierluxpetange2voies.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "raillu-ligne-luxembourg-petange",
+      "title": "rail.lu: Ligne PH / CFL Luxembourg – Pétange",
+      "url": "http://www.rail.lu/ligneluxembourgpetange.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-fr-ligne-7-cfl",
+      "title": "Wikipédia: Ligne 7 (CFL)",
+      "url": "https://fr.wikipedia.org/wiki/Ligne_7_(CFL)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "legilux-loi-2019-06-06",
+      "title": "Legilux: Loi du 6 juin 2019 relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire",
+      "url": "https://data.legilux.public.lu/eli/etat/leg/loi/2019/06/06/a390/jo",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors (geometry of CFL line 7, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
