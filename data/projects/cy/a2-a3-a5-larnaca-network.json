@@ -1,0 +1,149 @@
+{
+  "id": "cy-a2-a3-a5-larnaca-network",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A2, A3 and A5 motorways around Larnaca",
+    "ro": "Autostrăzile A2, A3 și A5 din jurul Larnacăi"
+  },
+  "description": {
+    "en": "Three older Cypriot motorways meeting near Larnaca: the A2 from the A1 at Pera Chorio, the A5 from the A1 at Kofinou, and the A3 Dhekelia – Ayia Napa section completed in 2003. Only sections with a stated length and date are recorded.",
+    "ro": "Trei autostrăzi cipriote mai vechi care se întâlnesc lângă Larnaca: A2 de la A1 la Pera Chorio, A5 de la A1 la Kofinou și secțiunea A3 Dhekelia – Ayia Napa, finalizată în 2003. Sunt înregistrate doar secțiunile cu lungime și dată indicate."
+  },
+  "operator": "cy-pwd",
+  "lastVerified": "2026-11-09",
+  "lots": [
+    {
+      "id": "a2-pera-chorio-rizoelia",
+      "name": {
+        "en": "A2 Pera Chorio – Rizoelia",
+        "ro": "A2 Pera Chorio – Rizoelia"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1991"
+      },
+      "lengthKm": 21,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1991",
+          "sourceRef": "wikipedia-el-a2"
+        }
+      ],
+      "geometryRef": "a2-pera-chorio-rizoelia",
+      "sourceRefs": [
+        "wikipedia-el-a2",
+        "osm-cy-a2-a3-a5"
+      ],
+      "note": {
+        "en": "Greek Wikipedia gives the A2 (Nicosia – Larnaca) as 21 km, completed in 1991, linking the A1 at Pera Chorio with the A3 at Rizoelia. Wikipedia lists the opening only by year. The drawn OpenStreetMap line between the Pera Chorio – Nisou interchange and the A3 is 18.46 km; the recorded length is left as stated.",
+        "ro": "Wikipedia în greacă indică A2 (Nicosia – Larnaca) cu 21 km, finalizată în 1991, între A1 la Pera Chorio și A3 la Rizoelia. Wikipedia indică deschiderea doar prin an. Linia OpenStreetMap desenată între nodul Pera Chorio – Nisou și A3 măsoară 18,46 km; lungimea înregistrată rămâne cea indicată."
+      }
+    },
+    {
+      "id": "a5-kofinou-kalo-chorio",
+      "name": {
+        "en": "A5 Kofinou – Kalo Chorio",
+        "ro": "A5 Kofinou – Kalo Chorio"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1996"
+      },
+      "lengthKm": 19,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "1996",
+          "sourceRef": "wikipedia-el-a5"
+        }
+      ],
+      "geometryRef": "a5-kofinou-kalo-chorio",
+      "sourceRefs": [
+        "wikipedia-el-a5",
+        "osm-cy-a2-a3-a5"
+      ],
+      "note": {
+        "en": "Greek Wikipedia gives the A5 as 19 km, completed in 1996, linking the A1 at Kofinou with the A3 at Kalo Chorio, with two lanes in each direction. The opening is given by year only. The drawn OpenStreetMap line is 18.96 km.",
+        "ro": "Wikipedia în greacă indică A5 cu 19 km, finalizată în 1996, între A1 la Kofinou și A3 la Kalo Chorio, cu două benzi pe sens. Deschiderea este indicată doar prin an. Linia OpenStreetMap desenată măsoară 18,96 km."
+      }
+    },
+    {
+      "id": "a3-dhekelia-ayia-napa",
+      "name": {
+        "en": "A3 Dhekelia – Ayia Napa",
+        "ro": "A3 Dhekelia – Ayia Napa"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997",
+        "opened": "2003"
+      },
+      "lengthKm": 33,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1997",
+          "sourceRef": "wikipedia-el-a3"
+        },
+        {
+          "kind": "opened",
+          "date": "2003",
+          "sourceRef": "wikipedia-el-a3"
+        }
+      ],
+      "geometryRef": "a3-dhekelia-ayia-napa",
+      "sourceRefs": [
+        "wikipedia-el-a3",
+        "osm-cy-a2-a3-a5"
+      ],
+      "note": {
+        "en": "Greek Wikipedia gives the remaining 33 km of the A3 from Dhekelia to Ayia Napa as completed in 2003, with first works from late 1997 between Pyla and Xylotymvou, extended to Ayia Napa from 1998. English Wikipedia also gives 2003. The section start is cut at the OpenStreetMap junction numbered 59, chosen because it gives a drawn length of 32.83 km against the stated 33 km. Earlier stages of the A3 (Rizoelia – Dhekelia and Rizoelia – airport) are not recorded here because sources disagree on their dates.",
+        "ro": "Wikipedia în greacă indică restul de 33 km ai A3 de la Dhekelia la Ayia Napa ca finalizat în 2003, cu primele lucrări la sfârșitul lui 1997 între Pyla și Xylotymvou, extinse spre Ayia Napa din 1998. Wikipedia în engleză indică tot 2003. Începutul secțiunii este tăiat la nodul OpenStreetMap numerotat 59, ales pentru că dă o lungime desenată de 32,83 km față de 33 km indicați. Etapele anterioare ale A3 (Rizoelia – Dhekelia și Rizoelia – aeroport) nu sunt înregistrate aici, deoarece sursele nu concordă asupra datelor lor."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-el-a2",
+      "title": "Wikipedia (Greek): Αυτοκινητόδρομος 2 (Κύπρος)",
+      "url": "https://el.wikipedia.org/wiki/%CE%91%CF%85%CF%84%CE%BF%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CF%8C%CE%B4%CF%81%CE%BF%CE%BC%CE%BF%CF%82_2_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-el-a3",
+      "title": "Wikipedia (Greek): Αυτοκινητόδρομος 3 (Κύπρος)",
+      "url": "https://el.wikipedia.org/wiki/%CE%91%CF%85%CF%84%CE%BF%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CF%8C%CE%B4%CF%81%CE%BF%CE%BC%CE%BF%CF%82_3_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-el-a5",
+      "title": "Wikipedia (Greek): Αυτοκινητόδρομος 5 (Κύπρος)",
+      "url": "https://el.wikipedia.org/wiki/%CE%91%CF%85%CF%84%CE%BF%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CF%8C%CE%B4%CF%81%CE%BF%CE%BC%CE%BF%CF%82_5_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-cy-a2-a3-a5",
+      "title": "OpenStreetMap contributors: A2, A3 and A5 motorway ways near Larnaca (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
