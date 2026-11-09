@@ -1,0 +1,65 @@
+{
+  "id": "ua-kharkiv-metro-oleksiivska",
+  "country": "ua",
+  "city": "ua-kharkiv",
+  "category": "railway",
+  "name": {
+    "en": "Kharkiv Metro Oleksiivska Line: Derzhavynska and Odeska",
+    "ro": "Linia Oleksiivska a metroului din Harkiv: Derzhavynska și Odeska"
+  },
+  "description": {
+    "en": "Southern extension of the Oleksiivska Line (Line 3) of the Kharkiv Metro from Metrobudivnykiv to Odeska, 3.5 km with two stations, Derzhavynska and Odeska. The operator names the two stations and the Oleksiivske depot as the next step in the metro's development. The line opened in 1995 and was last extended to Peremoha in 2016.",
+    "ro": "Extinderea spre sud a liniei Oleksiivska (linia 3) a metroului din Harkiv, de la Metrobudivnykiv la Odeska: 3,5 km cu două stații, Derzhavynska și Odeska. Operatorul le numește, împreună cu depoul Oleksiivske, drept următorul pas în dezvoltarea metroului. Linia a fost deschisă în 1995 și ultima oară extinsă până la Peremoha, în 2016."
+  },
+  "operator": "ua-kharkiv-metro",
+  "stationCount": 2,
+  "lots": [
+    {
+      "id": "metrobudivnykiv-odeska",
+      "name": {
+        "en": "Metrobudivnykiv – Derzhavynska – Odeska",
+        "ro": "Metrobudivnykiv – Derzhavynska – Odeska"
+      },
+      "status": "planned",
+      "lengthKm": 3.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 2
+      },
+      "note": {
+        "en": "Wikipedia gives the section as 3.5 km, each station complex 650–700 m long. Derzhavynska is to stand on Aerospace Avenue near Chuhuivska Street, Odeska at Aerospace Avenue and Odeska Street. Tunnels between the two stations are planned by closed tunnelling. Wikipedia reports that the city began work on the section after 2016 and that by March 2020 the Odeska site was prepared and the station designs had passed state and environmental review, ready for a general-contractor tender; the Kharkiv City Council allocated funds for the two stations again from 2026. No contract, cost or opening date is published in the sources read. Wikipedia reports a plan to commission the Oleksiivske depot by 2030, after which the stations are expected to open; the operator gives no date. The line would measure 14.4 km after this section. The Oleksiivske depot is not drawn: no geometry for it was found. Drawn length (OpenStreetMap track I, Metrobudivnykiv to Odeska) is about 3.7 km, against the stated 3.5 km.",
+        "ro": "Wikipedia indică secțiunea ca având 3,5 km, fiecare complex de stație având 650–700 m. Derzhavynska urmează să fie pe Prospectul Aerospațial, lângă strada Chuhuivska, iar Odeska la intersecția Prospectului Aerospațial cu strada Odeska. Tunelurile dintre cele două stații sunt prevăzute în metoda tunelării închise. Wikipedia menționează că orașul a început lucrările pe secțiune după 2016 și că în martie 2020 amplasamentul stației Odeska era pregătit, iar proiectele stațiilor trecuseră de expertiza de stat și de mediu, fiind gata pentru licitația antreprenorului general; Consiliul municipal Harkiv a alocat din nou fonduri pentru cele două stații începând din 2026. Sursele citite nu publică niciun contract, cost sau dată de deschidere. Wikipedia menționează planul de a pune în funcțiune depoul Oleksiivske până în 2030, după care stațiile ar urma să se deschidă; operatorul nu indică o dată. Linia ar măsura 14,4 km după această secțiune. Depoul Oleksiivske nu este desenat: nu a fost găsită geometrie pentru el. Lungimea desenată (OpenStreetMap, calea I, de la Metrobudivnykiv la Odeska) este de circa 3,7 km, față de 3,5 km declarați."
+      },
+      "sourceRefs": [
+        "kharkiv-metro-development",
+        "wikipedia-en-kharkiv-metro",
+        "osm-oleksiivska"
+      ],
+      "geometryRef": "metrobudivnykiv-odeska"
+    }
+  ],
+  "sources": [
+    {
+      "id": "kharkiv-metro-development",
+      "title": "Kharkiv Metro: Розвиток метрополітену (next step: stations Derzhavynska and Odeska and the Oleksiivske depot)",
+      "url": "https://metro.kharkiv.ua/rozvitok-metropolitenu.html",
+      "publisher": "КП «Харківський метрополітен»",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-kharkiv-metro",
+      "title": "Wikipedia: Kharkiv Metro (Modern development; section Metrobudivnykiv to Odeska, 3.5 km)",
+      "url": "https://en.wikipedia.org/wiki/Kharkiv_Metro",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-oleksiivska",
+      "title": "OpenStreetMap contributors: way 1250193224 Метробудівників-Одеська (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1250193224",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "ua-beskyd-tunnel",
+  "country": "ua",
+  "category": "tunnel",
+  "name": {
+    "en": "Beskyd railway tunnel (new double-track bore)",
+    "ro": "Tunelul feroviar Beskid (tub nou cu cale dublă)"
+  },
+  "description": {
+    "en": "Double-track railway tunnel under the main Carpathian watershed ridge on the Stryi–Chop line, between Beskyd (Lviv oblast) and Skotarske (Zakarpattia oblast). It was built next to the single-track tunnel of 1886, which remains in use. Works began in 2013 and the tunnel opened on 24 May 2018.",
+    "ro": "Tunel feroviar cu cale dublă sub creasta principală a Carpaților, pe linia Stryi–Chop, între Beskyd (regiunea Lviv) și Skotarske (regiunea Transcarpatia). A fost construit lângă tunelul cu o singură cale din 1886, care rămâne în uz. Lucrările au început în 2013, iar tunelul a fost dat în folosință la 24 mai 2018."
+  },
+  "operator": "ua-uz",
+  "lots": [
+    {
+      "id": "beskyd-new-tunnel",
+      "name": {
+        "en": "New double-track Beskyd tunnel",
+        "ro": "Noul tunel Beskid cu cale dublă"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013",
+        "opened": "2018-05-24"
+      },
+      "lengthKm": 1.7645,
+      "cost": {
+        "actual": {
+          "amount": 102.7,
+          "currency": "EUR",
+          "scope": "works",
+          "note": "Total cost of works as stated on uk.wikipedia at completion of construction on 6 October 2017; the price year is not stated."
+        }
+      },
+      "profile": {
+        "tunnelKm": 1.7645
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2013",
+          "note": {
+            "en": "Design approved in August 2013 and works began on site in 2013.",
+            "ro": "Proiectul a fost aprobat în august 2013, iar lucrările pe șantier au început în 2013."
+          },
+          "sourceRef": "wikipedia-uk-beskyd-tunnel"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-05-24",
+          "note": {
+            "en": "Official opening on 24 May 2018; the first train ran on 25 May 2018.",
+            "ro": "Deschidere oficială la 24 mai 2018; primul tren a circulat la 25 mai 2018."
+          },
+          "sourceRef": "wikipedia-uk-beskyd-tunnel"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "EBRD credit. Design and survey work from 2007 was financed by a USD 40 million EBRD credit.",
+            "ro": "Credit BERD. Lucrările de proiectare și cercetare din 2007 au fost finanțate printr-un credit BERD de 40 de milioane USD."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length is 1,764.5 m without portals (1,822 m with portals), 10.5 m wide, 8.5 m high. Preparatory works began in 2011 and boring was reported complete on 29 October 2016. Capacity rose from 47 to 100 train pairs a day. The 1886 single-track tunnel alongside is not part of this lot.",
+        "ro": "Lungimea este de 1.764,5 m fără portaluri (1.822 m cu portaluri), lățime 10,5 m, înălțime 8,5 m. Lucrările pregătitoare au început în 2011, iar săparea a fost raportată ca finalizată la 29 octombrie 2016. Capacitatea a crescut de la 47 la 100 de perechi de trenuri pe zi. Tunelul cu o singură cale din 1886, aflat alături, nu face parte din acest lot."
+      },
+      "sourceRefs": [
+        "wikipedia-uk-beskyd-tunnel",
+        "openstreetmap-beskyd-tunnel"
+      ],
+      "geometryRef": "beskyd-new-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-uk-beskyd-tunnel",
+      "title": "Wikipedia (uk): Бескидський тунель",
+      "url": "https://uk.wikipedia.org/wiki/%D0%91%D0%B5%D1%81%D0%BA%D0%B8%D0%B4%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%82%D1%83%D0%BD%D0%B5%D0%BB%D1%8C",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-beskyd-tunnel",
+      "title": "OpenStreetMap contributors (ODbL): Beskyd tunnel, way 591167735",
+      "url": "https://www.openstreetmap.org/way/591167735",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

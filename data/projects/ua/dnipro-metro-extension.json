@@ -1,0 +1,186 @@
+{
+  "id": "ua-dnipro-metro-extension",
+  "country": "ua",
+  "city": "ua-dnipro",
+  "category": "railway",
+  "name": {
+    "en": "Dnipro Metro extension: Vokzalna – Muzeina",
+    "ro": "Extinderea metroului din Dnipro: Vokzalna – Muzeina"
+  },
+  "description": {
+    "en": "Second start-up section of the first stage of the Dnipro Metro, from Vokzalna to Muzeina (Istorychnyi muzei): 4.017 km double-track with three new stations, Teatralna, Tsentralna and Muzeina. The operator, KP Dniprovskyi Metropoliten, finances it from a EUR 152.0 million EBRD credit and a EUR 152.0 million EIB loan, with Limak of Turkey as general contractor and designer and a contract term of 5 years. Works began in 2017 and the operator's construction site records them as suspended because of Russia's armed aggression against Ukraine. The first section, 7.82 km with six stations, opened in 1995.",
+    "ro": "A doua secțiune de punere în funcțiune a primei etape a metroului din Dnipro, de la Vokzalna la Muzeina (Istorychnyi muzei): 4,017 km cu cale dublă și trei stații noi, Teatralna, Tsentralna și Muzeina. Operatorul, KP Dniprovskyi Metropoliten, o finanțează dintr-un credit BERD de 152,0 milioane de euro și un împrumut BEI de 152,0 milioane de euro, cu firma turcă Limak ca antreprenor general și proiectant și o durată a contractului de 5 ani. Lucrările au început în 2017, iar șantierul operatorului le consemnează ca suspendate din cauza agresiunii armate a Rusiei împotriva Ucrainei. Prima secțiune, de 7,82 km cu șase stații, a fost deschisă în 1995."
+  },
+  "operator": "ua-dnipro-metro",
+  "stationCount": 3,
+  "lots": [
+    {
+      "id": "vokzalna-muzeina",
+      "name": {
+        "en": "Vokzalna – Teatralna – Tsentralna – Muzeina",
+        "ro": "Vokzalna – Teatralna – Tsentralna – Muzeina"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2016",
+        "constructionStart": "2017-04"
+      },
+      "lengthKm": 4.017,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2016",
+          "note": {
+            "en": "Contract signed by the mayor of Dnipro and representatives of Limak Holding in summer 2016.",
+            "ro": "Contract semnat de primarul orașului Dnipro și reprezentanții Limak Holding în vara anului 2016."
+          },
+          "sourceRef": "wikipedia-en-dnipro-metro"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2017-04",
+          "note": {
+            "en": "Active phase of work started in April 2017.",
+            "ro": "Faza activă a lucrărilor a început în aprilie 2017."
+          },
+          "sourceRef": "wikipedia-en-dnipro-metro"
+        },
+        {
+          "kind": "suspended",
+          "date": "2022-02",
+          "note": {
+            "en": "The operator's construction site lists the objects under \"construction suspended due to Russian armed aggression\"; its last progress posts are dated 8–15 February 2022.",
+            "ro": "Șantierul operatorului listează obiectele sub mențiunea \"construcție suspendată din cauza agresiunii armate a Rusiei\"; ultimele sale rapoarte de progres sunt datate 8–15 februarie 2022."
+          },
+          "sourceRef": "metrobuild-objects"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "ebrd-loan",
+          "amount": {
+            "amount": 152,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "Credit agreement between Ukraine and the EBRD for the project \"Completion of the Dnipro Metro construction\"",
+            "ro": "Acord de credit între Ucraina și BERD pentru proiectul \"Finalizarea construcției metroului din Dnipro\""
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "amount": {
+            "amount": 152,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "Financing agreement with the European Investment Bank for the same project",
+            "ro": "Acord de finanțare cu Banca Europeană de Investiții pentru același proiect"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Limak",
+          "role": "builder"
+        },
+        {
+          "name": "Limak",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "totalMonths": 60,
+        "noticeReference": "EBRD project Completion of the Dnipro Metro construction"
+      },
+      "note": {
+        "en": "The operator gives the section from Vokzalna to Zhovtneva Ploshcha (Istorychnyi muzei, the Muzeina station) as 4.017 km counted double-track. The construction site lists three stations (Teatralna, Tsentralna, Muzeina) and five shafts (1, 13, 14, 15-bis, 16-bis). The contract term is 5 years; ILF of Poland supervises the works. Last published progress: Teatralna central hall 43% of excavation volume (14 February 2022), Muzeina station tunnels under way with the vestibule pit 87% excavated (8 February 2022), Tsentralna vestibule pit 30% excavated (29 January 2021). The contract value is not stated in the sources read, and the EUR 152.0 million credit and EUR 152.0 million loan are financing, not a cost. On 24 December 2025 the EBRD announced a tender for a contractor to keep the underground works technically safe, and bidders visited the site on 28 January 2026; this is not a resumption of construction. Wikipedia gave 2024 as the planned opening in 2020; no current opening date is published. The line is drawn on OpenStreetMap track I, from Vokzalna to the Muzeina site (Wikipedia coordinates); drawn length about 3.84 km, against the stated 4.017 km. The OSM construction way continues about 0.5 km beyond Muzeina and is not drawn.",
+        "ro": "Operatorul indică secțiunea de la Vokzalna la Zhovtneva Ploshcha (Istorychnyi muzei, stația Muzeina) ca 4,017 km în calcul pe cale dublă. Șantierul listează trei stații (Teatralna, Tsentralna, Muzeina) și cinci puțuri (1, 13, 14, 15-bis, 16-bis). Durata contractului este de 5 ani; lucrările sunt supravegheate de firma poloneză ILF. Ultimul progres publicat: sala centrală Teatralna 43% din volumul de excavare (14 februarie 2022), tunelurile stației Muzeina în lucru și groapa vestibulului excavată în proporție de 87% (8 februarie 2022), groapa vestibulului Tsentralna excavată în proporție de 30% (29 ianuarie 2021). Valoarea contractului nu este indicată în sursele consultate, iar creditul de 152,0 milioane de euro și împrumutul de 152,0 milioane de euro sunt finanțare, nu cost. Pe 24 decembrie 2025 BERD a anunțat o licitație pentru un antreprenor care să mențină lucrările subterane în siguranță tehnică, iar ofertanții au vizitat șantierul pe 28 ianuarie 2026; aceasta nu reprezintă reluarea construcției. Wikipedia indica în 2020 anul 2024 ca dată planificată de deschidere; nu este publicată nicio dată actuală. Traseul este desenat pe linia I din OpenStreetMap, de la Vokzalna la amplasamentul Muzeina (coordonate Wikipedia); lungimea desenată este de circa 3,84 km, față de 4,017 km declarați. Segmentul în construcție din OSM continuă cu circa 0,5 km dincolo de Muzeina și nu este desenat."
+      },
+      "sourceRefs": [
+        "metrobuild-about",
+        "metrobuild-objects",
+        "metrobuild-teatralna",
+        "metrobuild-tsentralna",
+        "metrobuild-muzeina",
+        "metrobuild-tender-2025",
+        "wikipedia-en-dnipro-metro",
+        "wikipedia-en-muzeina",
+        "osm-dnipro-construction"
+      ],
+      "geometryRef": "vokzalna-muzeina"
+    }
+  ],
+  "sources": [
+    {
+      "id": "metrobuild-about",
+      "title": "MetroBuild.dp: Про будівництво (second start-up section Vokzalna – Zhovtneva Ploshcha 4.017 km; EBRD credit EUR 152.0 million and EIB EUR 152.0 million; general contractor and designer LIMAK; contract term 5 years)",
+      "url": "https://metro.dp.ua/build/about-project/",
+      "publisher": "Будівництво Дніпровського метро (MetroBuild.dp)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrobuild-objects",
+      "title": "MetroBuild.dp: Об'єкти (Будівництво призупинено через збройну агресію росії проти України; stations Teatralna, Tsentralna, Muzeina; shafts 1, 13, 14, 15-bis, 16-bis)",
+      "url": "https://metro.dp.ua/build/",
+      "publisher": "Будівництво Дніпровського метро (MetroBuild.dp)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrobuild-teatralna",
+      "title": "MetroBuild.dp: Станція Театральна (progress data of 14.02.2022)",
+      "url": "https://metro.dp.ua/build/teatralna/",
+      "publisher": "Будівництво Дніпровського метро (MetroBuild.dp)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrobuild-tsentralna",
+      "title": "MetroBuild.dp: Станція Центральна (progress data of 29.01.2021)",
+      "url": "https://metro.dp.ua/build/centralna/",
+      "publisher": "Будівництво Дніпровського метро (MetroBuild.dp)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrobuild-muzeina",
+      "title": "MetroBuild.dp: Станція Музейна (progress data of 08.02.2022, station complex 241 m)",
+      "url": "https://metro.dp.ua/build/muzeina/",
+      "publisher": "Будівництво Дніпровського метро (MetroBuild.dp)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrobuild-tender-2025",
+      "title": "MetroBuild.dp: Оголошено тендер на забезпечення техногенної безпеки метро (24.12.2025) and Учасники першого технічного етапу тендеру відвідали об'єкт будівництва (28 January 2026 site visit)",
+      "url": "https://metro.dp.ua/build/",
+      "publisher": "Будівництво Дніпровського метро (MetroBuild.dp)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-dnipro-metro",
+      "title": "Wikipedia: Dnipro Metro (Limak Holding contract summer 2016, active phase April 2017, opening planned for 2024 as of December 2020)",
+      "url": "https://en.wikipedia.org/wiki/Dnipro_Metro",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-muzeina",
+      "title": "Wikipedia: Muzeina (Dnipro Metro) (station coordinates 48°27'20\"N 35°03'55\"E)",
+      "url": "https://en.wikipedia.org/wiki/Muzeina_(Dnipro_Metro)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-dnipro-construction",
+      "title": "OpenStreetMap contributors: way 79430383 (railway=construction, subway, track I, Vokzalna to Muzeina) (ODbL)",
+      "url": "https://www.openstreetmap.org/way/79430383",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

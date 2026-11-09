@@ -1,0 +1,117 @@
+{
+  "id": "ua-kremenchuk-bridge",
+  "country": "ua",
+  "category": "bridge",
+  "name": {
+    "en": "New Kremenchuk Bridge",
+    "ro": "Noul pod de la Kremenciuk"
+  },
+  "description": {
+    "en": "Cable-stayed road bridge over the Dnipro at Kremenchuk, parallel to the Kryukiv bridge, with four lanes and junctions on both banks. Construction began in 2021 and was suspended in early 2022.",
+    "ro": "Pod rutier cu hobane peste Nipru la Kremenciuk, paralel cu podul Kriukiv, cu patru benzi și noduri pe ambele maluri. Lucrările au început în 2021 și au fost suspendate la începutul lui 2022."
+  },
+  "operator": "ua-agency-restoration",
+  "lots": [
+    {
+      "id": "bridge-and-approaches",
+      "name": {
+        "en": "Dnipro crossing, approaches and junctions",
+        "ro": "Traversarea Niprului, accesele și nodurile"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2021-06-04"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-10-21",
+          "note": {
+            "en": "Ukravtodor announced the tender for a cable-stayed bridge at Kremenchuk.",
+            "ro": "Ukravtodor a anunțat licitația pentru un pod cu hobane la Kremenciuk."
+          },
+          "sourceRef": "uk-wikipedia-new-kremenchuk-bridge"
+        },
+        {
+          "kind": "awarded",
+          "date": "2021",
+          "note": {
+            "en": "Doğuş İnşaat ve Ticaret won the tender in winter 2021 (exact date not stated).",
+            "ro": "Doğuş İnşaat ve Ticaret a câștigat licitația iarna 2021 (data exactă nu este indicată)."
+          },
+          "sourceRef": "poltava-to-construction-start"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-06-04",
+          "note": {
+            "en": "The contractor reported the start of construction work on 4 June 2021.",
+            "ro": "Constructorul a anunțat începerea lucrărilor la 4 iunie 2021."
+          },
+          "sourceRef": "poltava-to-construction-start"
+        },
+        {
+          "kind": "suspended",
+          "date": "2022-02",
+          "note": {
+            "en": "In the first days of the full-scale invasion the Turkish builders left Ukraine and construction was suspended.",
+            "ro": "În primele zile ale invaziei la scară largă, constructorii turci au părăsit Ucraina, iar lucrările au fost suspendate."
+          },
+          "sourceRef": "uk-wikipedia-new-kremenchuk-bridge"
+        }
+      ],
+      "lengthKm": 3,
+      "profile": {
+        "works": "greenfield",
+        "lanes": 4
+      },
+      "contract": {
+        "value": {
+          "amount": 11200,
+          "currency": "UAH",
+          "scope": "total",
+          "note": "Stated as the cost of the contractor's services including design and two junctions; year and VAT treatment not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Doğuş İnşaat ve Ticaret",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Spans 180 + 360 + 180 m between two reinforced-concrete pylons of about 115 m including foundations, each carrying 46 stays. Links the H-08 road on the right bank with Kremenchuk's street network on the left bank. Total length of the structures is given as over 3 km; the drawn centreline (2.92 km) follows the OpenStreetMap proposed trunk way including the bridge. The 2021 contract is the only one counted: earlier announced starts (1990s, 2013) did not proceed. The planned completion was given as 3 years from start (press: 2025).",
+        "ro": "Deschideri de 180 + 360 + 180 m între doi piloni din beton armat de circa 115 m cu tot cu fundații, fiecare cu 46 de hobane. Leagă drumul H-08 de pe malul drept de rețeaua stradală din Kremenciuk pe malul stâng. Lungimea totală a structurilor este indicată ca peste 3 km; traseul desenat (2,92 km) urmează calea propusă din OpenStreetMap, inclusiv podul. Se numără doar contractul din 2021: startul anunțat mai devreme (anii 1990, 2013) nu a avut loc. Finalizarea planificată a fost indicată la 3 ani de la start (presă: 2025)."
+      },
+      "sourceRefs": [
+        "uk-wikipedia-new-kremenchuk-bridge",
+        "poltava-to-construction-start",
+        "openstreetmap-kremenchuk-bridge"
+      ],
+      "geometryRef": "bridge-and-approaches"
+    }
+  ],
+  "sources": [
+    {
+      "id": "uk-wikipedia-new-kremenchuk-bridge",
+      "title": "Wikipedia (uk): Новий Кременчуцький міст",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D0%B8%D0%B9_%D0%9A%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%87%D1%83%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D1%96%D1%81%D1%82",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "poltava-to-construction-start",
+      "title": "Полтавщина: У Кременчуці почалося будівництво нового мосту за 11 млрд грн (13 June 2021)",
+      "url": "https://poltava.to/news/61247/",
+      "publisher": "Полтавщина",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-kremenchuk-bridge",
+      "title": "OpenStreetMap contributors (ODbL): ways 884086577, 884086579, 884086578",
+      "url": "https://www.openstreetmap.org/way/884086579",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
