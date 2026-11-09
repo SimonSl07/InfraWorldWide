@@ -1,0 +1,98 @@
+{
+  "id": "be-a11-ax",
+  "country": "be",
+  "category": "highway",
+  "name": {
+    "en": "A11 Westkapelle – Brugge (Project AX) and N49 conversion",
+    "ro": "A11 Westkapelle – Brugge (proiectul AX) și transformarea N49"
+  },
+  "description": {
+    "en": "The A11 (part of the E34) runs from Antwerp towards the coast. East of Zelzate the N49 expressway is being converted to motorway in numbered sub-projects, and the conversion between Assenede and Westkapelle is not complete as of 2026. Project AX is the new 11 km motorway from the N49 near Westkapelle to the N31/E403 at the Blauwe Toren in Brugge, built from March 2014 and opened on 1 September 2017. This file records AX and the one remaining sub-project with an official status, Project 10 at Lapscheure (Damme). The other conversion works (grade-separated crossings opened 2000–2023, bridges and tunnels planned after 2026, the Kaprijke and Maldegem junctions) are not modelled as separate lots because no source fetched gives a length or status for the stretches they sit on.",
+    "ro": "A11 (parte a E34) pornește din Anvers spre coastă. La est de Zelzate, drumul expres N49 este transformat în autostradă prin subproiecte numerotate, iar transformarea dintre Assenede și Westkapelle nu este finalizată în 2026. Proiectul AX este autostrada nouă de 11 km de la N49, lângă Westkapelle, până la N31/E403 la Blauwe Toren din Brugge, construită din martie 2014 și deschisă la 1 septembrie 2017. Fișierul cuprinde AX și singurul subproiect rămas cu stadiu oficial, Proiectul 10 de la Lapscheure (Damme). Celelalte lucrări de transformare (încrucișări denivelate deschise în 2000–2023, poduri și tunele planificate după 2026, nodurile Kaprijke și Maldegem) nu sunt modelate ca loturi separate, deoarece nicio sursă consultată nu indică lungimea sau stadiul tronsoanelor pe care se află."
+  },
+  "operator": "be-awv",
+  "lots": [
+    {
+      "id": "ax-westkapelle-brugge",
+      "name": {
+        "en": "Project AX: Westkapelle – Brugge",
+        "ro": "Proiectul AX: Westkapelle – Brugge"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014-03",
+        "opened": "2017-09-01"
+      },
+      "lengthKm": 11,
+      "cost": {
+        "actual": {
+          "amount": 674,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Total cost of the project as stated by nl Wikipedia; price year and VAT treatment not stated. The article attributes the high figure to cycle paths, tunnels, bridges and noise barriers built on and beside the motorway."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2014-03",
+          "note": {
+            "en": "Construction began in March 2014, after the plan-MER of 2006 and a planned start of 2010 or 2011.",
+            "ro": "Construcția a început în martie 2014, după plan-MER din 2006 și un start planificat în 2010 sau 2011."
+          },
+          "sourceRef": "wikipedia-nl-a11"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-09-01",
+          "sourceRef": "wikipedia-nl-a11"
+        }
+      ],
+      "note": {
+        "en": "New alignment from the N49/E34 just south of Westkapelle (Knokke-Heist junction) to the N31/E403 at the Blauwe Toren in Brugge, with the Roskambrug, the first movable bridge on a Belgian motorway. The 11 km length is the figure given by nl Wikipedia; the drawn OpenStreetMap carriageway measures about 11.4 km. The RSV of 1997 already provided for AX. The cost figure is for the whole project.",
+        "ro": "Traseu nou de la N49/E34, chiar la sud de Westkapelle (nodul Knokke-Heist), până la N31/E403 la Blauwe Toren din Brugge, cu podul Roskambrug, primul pod mobil de pe o autostradă belgiană. Lungimea de 11 km este cifra din Wikipedia (nl); o singură cale de rulare desenată după OpenStreetMap măsoară circa 11,4 km. RSV din 1997 prevedea deja AX. Costul se referă la întregul proiect."
+      },
+      "sourceRefs": [
+        "wikipedia-nl-a11"
+      ],
+      "geometryRef": "ax-westkapelle-brugge"
+    },
+    {
+      "id": "project-10-damme-tunnel-lapscheurestraat",
+      "name": {
+        "en": "Project 10: N49 conversion, Vredestraat – Lapscheurestraat (Damme)",
+        "ro": "Proiectul 10: transformarea N49, Vredestraat – Lapscheurestraat (Damme)"
+      },
+      "status": "planned",
+      "note": {
+        "en": "AWV lists the project as \"In Studie\" (under study). The N49 crossing with the Vredestraat is to disappear and a tunnel is to link the Vredestraat and the Lapscheurestraat under the new motorway. AWV and its design office are preparing the preliminary design and there is no start date. nl Wikipedia cites 7.1 million euro excluding VAT and a 2027 start for an undertunnelling at Lapscheure, taken from an archived AWV page, but the current AWV page gives no start date, so neither is recorded. No tunnel alignment is published: the drawn line follows the existing Vredestraat and Lapscheurestraat connection across the N49. Length measured from OpenStreetMap geometry.",
+        "ro": "AWV listează proiectul ca „In Studie” (în studiu). Intersecția N49 cu Vredestraat urmează să dispară, iar un tunel va lega Vredestraat de Lapscheurestraat pe sub noua autostradă. AWV și biroul de proiectare pregătesc proiectul preliminar și nu există dată de începere. Wikipedia (nl) citează 7,1 milioane euro fără TVA și un start în 2027 pentru un pasaj subteran la Lapscheure, preluate dintr-o pagină AWV arhivată, dar pagina AWV actuală nu indică nicio dată de începere, așa că niciuna nu este înregistrată. Nu este publicat un traseu al tunelului: linia desenată urmează legătura existentă dintre Vredestraat și Lapscheurestraat peste N49. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "lengthKm": 0.29,
+      "sourceRefs": [
+        "awv-project-10"
+      ],
+      "geometryRef": "project-10-damme-tunnel-lapscheurestraat"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-nl-a11",
+      "title": "Wikipedia (nl): A11 (België)",
+      "url": "https://nl.wikipedia.org/wiki/A11_(Belgi%C3%AB)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "awv-project-10",
+      "title": "Wegen en Verkeer: Project 10, ombouw N49 tot snelweg tussen Vredestraat en Lapscheurestraat",
+      "url": "https://wegenenverkeer.be/werken/project-10-ombouw-n49-tot-snelweg-tussen-vredestraat-en-lapscheurestraat",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

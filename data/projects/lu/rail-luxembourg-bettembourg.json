@@ -1,0 +1,171 @@
+{
+  "id": "lu-rail-luxembourg-bettembourg",
+  "country": "lu",
+  "category": "railway",
+  "name": {
+    "en": "New railway line Luxembourg–Bettembourg",
+    "ro": "Linia nouă de cale ferată Luxembourg–Bettembourg"
+  },
+  "description": {
+    "en": "A new double-track line of about 7 km on its own alignment between the future Howald hub and Bettembourg, designed for 160 km/h and with no intermediate stop. It crosses the A3 on the bowstring bridge OA14, passes under national road N31 and crosses the existing line at Bettembourg on a grade-separated crossing. Construction began at the end of 2015. The ministry gives the cost as EUR 292,013,570 excluding VAT (index 730.85 on 1 April 2013). The ministry's page expects progressive commissioning at the end of 2026; CFL states September 2027.",
+    "ro": "O linie nouă cu două căi, de circa 7 km, pe traseu propriu între viitorul nod Howald și Bettembourg, proiectată pentru 160 km/h și fără oprire intermediară. Traversează A3 pe podul de tip „bowstring” OA14, trece pe sub drumul național N31 și încrucișează linia existentă la Bettembourg printr-un pasaj denivelat. Construcția a început la sfârșitul lui 2015. Ministerul indică un cost de 292.013.570 euro fără TVA (indice 730,85 la 1 aprilie 2013). Pagina ministerului prevede punerea în funcțiune progresivă la sfârșitul lui 2026; CFL indică septembrie 2027."
+  },
+  "operator": "lu-cfl",
+  "lots": [
+    {
+      "id": "s1-bettembourg",
+      "name": {
+        "en": "Section 1: Bettembourg station link",
+        "ro": "Secțiunea 1: legătura cu gara Bettembourg"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2027-09"
+      },
+      "lengthKm": 0.53,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 160,
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Last platform contract, linking Bettembourg station with section 2; the ministry says it was to start in early 2024. Includes the grade-separated crossing (OA5 and OA6) with the existing line, built earlier. Length measured from OpenStreetMap geometry: it is the remainder of the roughly 7 km line after sections 2 to 4, and the boundary with section 2 is approximate. The ministry page (last updated March 2024) gives progressive commissioning for end 2026; CFL stated in September 2025 that the line opens in September 2027. Section boundaries are drawn by cumulating the ministry's section lengths from the Bettembourg end and checking them against the N31 crossing (section 2) and the CR158 bridges (section 3); they are approximate.",
+        "ro": "Ultimul contract pentru platformă, care leagă gara Bettembourg de secțiunea 2; ministerul indică începerea la începutul lui 2024. Include încrucișarea denivelată (OA5 și OA6) cu linia existentă, construită anterior. Lungime măsurată pe geometria OpenStreetMap: este restul liniei de circa 7 km după secțiunile 2–4, iar limita cu secțiunea 2 este aproximativă. Pagina ministerului (actualizată ultima dată în martie 2024) indică o punere în funcțiune progresivă la sfârșitul lui 2026; CFL a declarat în septembrie 2025 că linia se deschide în septembrie 2027. Limitele secțiunilor sunt trasate însumând lungimile ministerului dinspre Bettembourg și verificate față de pasajul N31 (secțiunea 2) și podurile CR158 (secțiunea 3); sunt aproximative."
+      },
+      "sourceRefs": [
+        "ministry-lu-nouvelle-ligne",
+        "chronicle-cfl-resumption-2025",
+        "blogcfl-nbs-numbers",
+        "osm"
+      ],
+      "geometryRef": "s1-bettembourg"
+    },
+    {
+      "id": "s2-n31-oa7",
+      "name": {
+        "en": "Section 2: N31 underpass (OA7)",
+        "ro": "Secțiunea 2: pasajul sub N31 (OA7)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2027-09"
+      },
+      "lengthKm": 1.8,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 160,
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Platform of 1.8 km with the underpass OA7 that carries the railway under national road N31, plus drainage structures OH8 and OH9. Rigid inclusions and ballasted columns improve the ground under the tracks. Earthworks began in early 2023. The ministry page (last updated March 2024) gives progressive commissioning for end 2026; CFL stated in September 2025 that the line opens in September 2027. Section boundaries are drawn by cumulating the ministry's section lengths from the Bettembourg end and checking them against the N31 crossing (section 2) and the CR158 bridges (section 3); they are approximate.",
+        "ro": "Platformă de 1,8 km cu pasajul OA7, care trece calea ferată pe sub drumul național N31, plus lucrările hidraulice OH8 și OH9. Inclusiuni rigide și coloane de balast îmbunătățesc terenul de sub linii. Terasamentele au început la începutul lui 2023. Pagina ministerului (actualizată ultima dată în martie 2024) indică o punere în funcțiune progresivă la sfârșitul lui 2026; CFL a declarat în septembrie 2025 că linia se deschide în septembrie 2027. Limitele secțiunilor sunt trasate însumând lungimile ministerului dinspre Bettembourg și verificate față de pasajul N31 (secțiunea 2) și podurile CR158 (secțiunea 3); sunt aproximative."
+      },
+      "sourceRefs": [
+        "ministry-lu-nouvelle-ligne",
+        "chronicle-cfl-resumption-2025",
+        "blogcfl-nbs-numbers",
+        "osm"
+      ],
+      "geometryRef": "s2-n31-oa7"
+    },
+    {
+      "id": "s3-platform",
+      "name": {
+        "en": "Section 3: platform",
+        "ro": "Secțiunea 3: platforma"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2027-09"
+      },
+      "lengthKm": 2.2,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 160,
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Platform of 2.2 km, listed by the ministry as completed. Includes the road bridges OA12 and OA13 over the new line and the A3. Track, overhead line and signalling are not part of the platform contract. The ministry page (last updated March 2024) gives progressive commissioning for end 2026; CFL stated in September 2025 that the line opens in September 2027. Section boundaries are drawn by cumulating the ministry's section lengths from the Bettembourg end and checking them against the N31 crossing (section 2) and the CR158 bridges (section 3); they are approximate.",
+        "ro": "Platformă de 2,2 km, indicată de minister drept finalizată. Include podurile rutiere OA12 și OA13 peste linia nouă și A3. Calea, linia de contact și semnalizarea nu fac parte din contractul de platformă. Pagina ministerului (actualizată ultima dată în martie 2024) indică o punere în funcțiune progresivă la sfârșitul lui 2026; CFL a declarat în septembrie 2025 că linia se deschide în septembrie 2027. Limitele secțiunilor sunt trasate însumând lungimile ministerului dinspre Bettembourg și verificate față de pasajul N31 (secțiunea 2) și podurile CR158 (secțiunea 3); sunt aproximative."
+      },
+      "sourceRefs": [
+        "ministry-lu-nouvelle-ligne",
+        "chronicle-cfl-resumption-2025",
+        "blogcfl-nbs-numbers",
+        "osm"
+      ],
+      "geometryRef": "s3-platform"
+    },
+    {
+      "id": "s4-oa15-howald",
+      "name": {
+        "en": "Section 4: OA15 to Howald",
+        "ro": "Secțiunea 4: OA15 până la Howald"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2027-09"
+      },
+      "lengthKm": 2.3,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 160,
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Platform of 2.3 km with the composite structure OA15, an underpass for forest access between the A3 and the new line that also carries the Doulemerbaach stream. The 'bowstring' rail bridge OA14 over the A3 was moved into place in October 2022. The line is drawn to the end of the OSM construction way, about 0.5 km short of Howald halt. The ministry page (last updated March 2024) gives progressive commissioning for end 2026; CFL stated in September 2025 that the line opens in September 2027. Section boundaries are drawn by cumulating the ministry's section lengths from the Bettembourg end and checking them against the N31 crossing (section 2) and the CR158 bridges (section 3); they are approximate.",
+        "ro": "Platformă de 2,3 km cu structura mixtă OA15, un pasaj pentru accesul la pădure între A3 și linia nouă, care trece și pârâul Doulemerbaach. Podul feroviar de tip „bowstring” OA14 peste A3 a fost mutat în poziție în octombrie 2022. Linia este trasată până la capătul căii în construcție din OSM, cu circa 0,5 km înainte de halta Howald. Pagina ministerului (actualizată ultima dată în martie 2024) indică o punere în funcțiune progresivă la sfârșitul lui 2026; CFL a declarat în septembrie 2025 că linia se deschide în septembrie 2027. Limitele secțiunilor sunt trasate însumând lungimile ministerului dinspre Bettembourg și verificate față de pasajul N31 (secțiunea 2) și podurile CR158 (secțiunea 3); sunt aproximative."
+      },
+      "sourceRefs": [
+        "ministry-lu-nouvelle-ligne",
+        "chronicle-cfl-resumption-2025",
+        "blogcfl-nbs-numbers",
+        "osm"
+      ],
+      "geometryRef": "s4-oa15-howald"
+    }
+  ],
+  "cost": {
+    "amount": 292.01,
+    "currency": "EUR",
+    "year": 2013,
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Project cost excluding VAT at index 730.85 on 1 April 2013, for the whole line, not broken out per section."
+  },
+  "sources": [
+    {
+      "id": "ministry-lu-nouvelle-ligne",
+      "title": "Ministère de la Mobilité et des Travaux publics: Nouvelle ligne ferroviaire Luxembourg–Bettembourg",
+      "url": "https://transports.public.lu/fr/planifier/projets-et-chantiers-en-cours/nouvelle-ligne-ferroviaire-luxembourg-bettembourg.html",
+      "publisher": "Ministère de la Mobilité et des Travaux publics",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "chronicle-cfl-resumption-2025",
+      "title": "Chronicle.lu: CFL confirms return to regular train traffic from 15 September",
+      "url": "https://chronicle.lu/category/rail/56745-cfl-confirms-return-to-regular-train-traffic-from-15-september",
+      "publisher": "Chronicle.lu",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "blogcfl-nbs-numbers",
+      "title": "CFL blog: The new Luxembourg–Bettembourg line in pictures and in numbers",
+      "url": "https://blogcfl.lu/en/engineering-worksprojets/the-new-luxembourg-bettembourg-line-in-pictures-and-in-numbers",
+      "publisher": "CFL",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry of the Luxembourg–Bettembourg construction line, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

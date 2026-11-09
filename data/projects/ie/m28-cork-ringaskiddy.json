@@ -1,0 +1,148 @@
+{
+  "id": "ie-m28-cork-ringaskiddy",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "M28 Cork to Ringaskiddy",
+    "ro": "M28 Cork – Ringaskiddy"
+  },
+  "description": {
+    "en": "Motorway from the N40 Bloomfield Interchange south of Cork city to Barnahely, with a 1.5 km single carriageway Ringaskiddy Relief Road from Barnahely to the Port of Cork at Ringaskiddy. An Bord Pleanála approved the scheme in June 2018 and the decision was cleared of legal challenge in March 2021. BAM Ireland won the mainline contract in May 2025 and construction started in June 2025; Sorensen Civil Engineering builds the relief road as advance works. Completion is due by summer 2028. The EUR 456 million figure covers both linked schemes and is recorded once, at project level. TII's 2024 active list gave a forecast cost of 342 million, which the Cork National Roads Office figure supersedes. The mainline length is the TII figure of 10.9 km, which the Cork National Roads Office rounds to 11 km.",
+    "ro": "Autostradă de la nodul N40 Bloomfield, la sud de orașul Cork, până la Barnahely, cu un drum de ocolire Ringaskiddy de 1,5 km, cu o singură platformă, de la Barnahely la portul Cork din Ringaskiddy. An Bord Pleanála a aprobat proiectul în iunie 2018, iar decizia a rămas fără contestații în martie 2021. BAM Ireland a câștigat contractul pentru traseul principal în mai 2025, iar lucrările au început în iunie 2025; Sorensen Civil Engineering construiește drumul de ocolire ca lucrări preliminare. Finalizarea este prevăzută până în vara lui 2028. Cifra de 456 de milioane EUR acoperă ambele proiecte legate și este înregistrată o singură dată, la nivel de proiect. Lista activă TII din 2024 indica un cost prognozat de 342 de milioane, înlocuit de cifra Oficiului Național de Drumuri Cork. Lungimea traseului principal este cifra TII de 10,9 km, rotunjită de Oficiul Național de Drumuri Cork la 11 km."
+  },
+  "lots": [
+    {
+      "id": "mainline-bloomfield-barnahely",
+      "name": {
+        "en": "Bloomfield Interchange – Barnahely",
+        "ro": "Nodul Bloomfield – Barnahely"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-05",
+        "constructionStart": "2025-06",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 10.9,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-05",
+          "note": {
+            "en": "Contract awarded to BAM Ireland.",
+            "ro": "Contract atribuit BAM Ireland."
+          },
+          "sourceRef": "cork-rdo-m28"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-06",
+          "sourceRef": "cork-rdo-m28"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Funded by the Department of Transport through Transport Infrastructure Ireland.",
+            "ro": "Finanțat de Departamentul Transporturilor prin Transport Infrastructure Ireland."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "BAM Ireland",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "TII's active list gives 10.9 km of motorway; the Cork National Roads Office gives 11 km. Completion by summer 2028 applies to the whole project. The Annual Report 2025 describes the works as 13 km including the relief road. Drawn geometry is about 10.1 km because the mapped alignment starts just south of the Bloomfield roundabout.",
+        "ro": "Lista activă TII indică 10,9 km de autostradă, iar Oficiul Național de Drumuri Cork indică 11 km. Finalizarea până în vara lui 2028 se aplică întregului proiect. Raportul anual 2025 descrie lucrările ca 13 km, inclusiv drumul de ocolire. Geometria desenată are circa 10,1 km, deoarece traseul cartografiat începe puțin la sud de giratoriul Bloomfield."
+      },
+      "sourceRefs": [
+        "cork-rdo-m28",
+        "tii-active-list-2024",
+        "tii-annual-report-2025",
+        "m28-ie",
+        "osm-m28"
+      ],
+      "geometryRef": "mainline-bloomfield-barnahely"
+    },
+    {
+      "id": "ringaskiddy-relief-road",
+      "name": {
+        "en": "Ringaskiddy Relief Road (Barnahely – Ringaskiddy)",
+        "ro": "Drumul de ocolire Ringaskiddy (Barnahely – Ringaskiddy)"
+      },
+      "status": "under_construction",
+      "lengthKm": 1.5,
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Funded by the Department of Transport through Transport Infrastructure Ireland.",
+            "ro": "Finanțat de Departamentul Transporturilor prin Transport Infrastructure Ireland."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Sorensen Civil Engineering",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "1.5 km of single carriageway with roundabouts at Barnahely, Loughbeg and east of Ringaskiddy, built as advance works. TII's active list of December 2024 records advance works already underway; the start date is not stated in the sources read. The M28 project site says the road is nearing completion and gives no opening date.",
+        "ro": "1,5 km de drum cu o singură platformă, cu giratorii la Barnahely, Loughbeg și la est de Ringaskiddy, construit ca lucrări preliminare. Lista activă TII din decembrie 2024 consemnează lucrări preliminare deja în curs; data de începere nu este indicată în sursele consultate. Site-ul proiectului M28 spune că drumul este aproape finalizat și nu indică o dată de deschidere."
+      },
+      "sourceRefs": [
+        "cork-rdo-m28",
+        "tii-active-list-2024",
+        "m28-ie",
+        "osm-m28"
+      ],
+      "geometryRef": "ringaskiddy-relief-road"
+    }
+  ],
+  "operator": "ie-transport-infrastructure-ireland",
+  "cost": {
+    "amount": 456,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Covers the 11 km mainline and the 1.5 km Ringaskiddy Relief Road together, per the Cork National Roads Office."
+  },
+  "sources": [
+    {
+      "id": "cork-rdo-m28",
+      "title": "Cork National Roads Office: M28 Cork to Ringaskiddy Project",
+      "url": "https://www.corkrdo.ie/major-schemes/m28-cork-to-ringaskiddy-project/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "m28-ie",
+      "title": "M28 Cork to Ringaskiddy project website",
+      "url": "https://www.m28.ie/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-active-list-2024",
+      "title": "TII: Major Roads and Greenways Projects Active List 2024",
+      "url": "https://www.tii.ie/media/hmqmkadl/final_full-report_major-roads-and-greenways-projects-active-list_2024.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "TII: Annual Report and Financial Statements 2025",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-m28",
+      "title": "OpenStreetMap contributors: M28 construction ways (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
