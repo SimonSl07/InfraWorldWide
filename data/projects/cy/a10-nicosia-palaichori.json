@@ -1,0 +1,170 @@
+{
+  "id": "cy-a10-nicosia-palaichori",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A10 Nicosia–Palaichori motorway",
+    "ro": "Autostrada A10 Nicosia–Palaichori"
+  },
+  "description": {
+    "en": "Motorway from Anthoupolis in Nicosia towards Palaichori, also called phase C of the South Nicosia Orbital (A22). Two lots: Anageia–Agrokipia (about 8.1 km) is under construction, and Anthoupolis–Anageia (about 7 km) is planned.",
+    "ro": "Autostradă de la Anthoupolis, în Nicosia, spre Palaichori, numită și faza C a șoselei de centură sudice a Nicosiei (A22). Două loturi: Anageia–Agrokipia (circa 8,1 km) este în construcție, iar Anthoupolis–Anageia (circa 7 km) este planificat."
+  },
+  "operator": "cy-pwd",
+  "lastVerified": "2026-11-09",
+  "sources": [
+    {
+      "id": "ted-194243-2023",
+      "title": "TED contract award notice 194243-2023: Nicosia–Palaichori motorway, Anageia to Agrokipia section (KPS/48/2022/E(A))",
+      "url": "https://ted.europa.eu/en/notice/194243-2023/xml",
+      "publisher": "Publications Office of the European Union (TED)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-a10",
+      "title": "Wikipedia: A10 motorway (Cyprus)",
+      "url": "https://en.wikipedia.org/wiki/A10_motorway_(Cyprus)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "cbn-ten-projects",
+      "title": "Cyprus Business Now: The ten major projects set to change Cyprus road network (2 November 2023)",
+      "url": "https://www.cbn.com.cy/article/2023/11/2/740668/the-ten-major-projects-set-to-change-cyprus-road-network/",
+      "publisher": "Cyprus Business Now",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "politis-motorway-expansion",
+      "title": "Politis English: Cyprus motorway network gears up for expansion",
+      "url": "https://en.politis.com.cy/news/cy-news/1041270/cyprus-motorway-network-gears-up-for-expansion",
+      "publisher": "Politis",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-a10",
+      "title": "OpenStreetMap contributors: A10 Nicosia-Palaichori Highway (highway=construction ways, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lots": [
+    {
+      "id": "anageia-agrokipia",
+      "name": {
+        "en": "Anageia – Agrokipia",
+        "ro": "Anageia – Agrokipia"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-01-25",
+        "constructionStart": "2023-03"
+      },
+      "lengthKm": 8.1,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 65.247,
+              "currency": "EUR",
+              "year": 2023
+            },
+            "date": "2023-01-25",
+            "sourceRef": "ted-194243-2023"
+          }
+        ]
+      },
+      "profile": {
+        "lanes": 4,
+        "bridgeCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-01-25",
+          "sourceRef": "ted-194243-2023"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-03",
+          "sourceRef": "cbn-ten-projects"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Financed from national resources.",
+            "ro": "Finanțat din resurse naționale."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Iacovou Brothers Constructions Ltd",
+          "role": "builder"
+        },
+        {
+          "name": "Cyfield Construction Ltd",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 42,
+        "value": {
+          "amount": 65.247,
+          "currency": "EUR",
+          "year": 2023
+        }
+      },
+      "geometryRef": "anageia-agrokipia",
+      "sourceRefs": [
+        "ted-194243-2023",
+        "wikipedia-a10",
+        "cbn-ten-projects",
+        "osm-a10"
+      ],
+      "note": {
+        "en": "Four lanes from about km 7 (Anageia) to about km 15 (Agrokipia), with an at-grade junction at Ergates, grade-separated junctions at Areidiou and Malounda and an at-grade roundabout at Agrokipia. About 8.5 km of improvements to the existing E903 are reported alongside. Contract signed 25 January 2023 for EUR 65.247 million (TED award notice, VAT basis not stated). Wikipedia and CBN give EUR 71.4 million, which is not reconciled with the TED figure. The 42-month term is from Wikipedia. CBN gave September 2026 as completion and Wikipedia gives 2030; no official opening date is recorded. Length from the TED notice; drawn OpenStreetMap geometry measures 8.2 km.",
+        "ro": "Patru benzi de la circa km 7 (Anageia) la circa km 15 (Agrokipia), cu o intersecție la nivel la Ergates, noduri denivelate la Areidiou și Malounda și un sens giratoriu la Agrokipia. Sunt raportate alături circa 8,5 km de îmbunătățiri ale drumului existent E903. Contract semnat la 25 ianuarie 2023 pentru 65,247 milioane EUR (anunț de atribuire TED, baza TVA nespecificată). Wikipedia și CBN indică 71,4 milioane EUR, cifră care nu este reconciliată cu cea din TED. Durata de 42 de luni provine din Wikipedia. CBN indica finalizarea în septembrie 2026, iar Wikipedia indică 2030; nu este consemnată o dată oficială de deschidere. Lungimea provine din anunțul TED; geometria OpenStreetMap desenată măsoară 8,2 km."
+      }
+    },
+    {
+      "id": "anthoupolis-anageia",
+      "name": {
+        "en": "Anthoupolis – Anageia",
+        "ro": "Anthoupolis – Anageia"
+      },
+      "status": "planned",
+      "lengthKm": 7,
+      "cost": {
+        "estimated": {
+          "amount": 85,
+          "currency": "EUR",
+          "note": "Excluding VAT. Estimate for the section as reported by Politis; price year not stated."
+        }
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Politis reports EUR 12.3 million approved from the Connecting Europe Facility. Wikipedia cites an EU grant of just over EUR 43 million for this phase; the two figures are not reconciled.",
+            "ro": "Politis raportează 12,3 milioane EUR aprobate din Mecanismul pentru Interconectarea Europei. Wikipedia menționează o finanțare UE de puțin peste 43 de milioane EUR pentru această fază; cele două cifre nu sunt reconciliate."
+          }
+        }
+      ],
+      "geometryRef": "anthoupolis-anageia",
+      "sourceRefs": [
+        "politis-motorway-expansion",
+        "wikipedia-a10",
+        "osm-a10"
+      ],
+      "note": {
+        "en": "Phase C of the South Nicosia Orbital, from the Anthoupolis roundabout (A9) to Anageia, with a cloverleaf interchange with the A22. Politis reports a length of 7 km, an estimated cost of EUR 85 million plus VAT, a EUR 19 million allocation in the 2027 state budget for design and the start of works, and about 3.5 years to build once started. Procedures for the start of construction are expected in 2027. Drawn from OpenStreetMap ways tagged as under construction; the route is not yet being built according to Politis. Drawn length 6.8 km.",
+        "ro": "Faza C a șoselei de centură sudice a Nicosiei, de la sensul giratoriu Anthoupolis (A9) la Anageia, cu un nod trifoi cu A22. Politis raportează o lungime de 7 km, un cost estimat de 85 milioane EUR plus TVA, o alocare de 19 milioane EUR în bugetul de stat pe 2027 pentru proiectare și începerea lucrărilor și circa 3,5 ani de execuție după începere. Procedurile pentru începerea construcției sunt așteptate în 2027. Desenat după tronsoane OpenStreetMap marcate ca fiind în construcție; potrivit Politis, traseul nu este încă în execuție. Lungime desenată 6,8 km."
+      }
+    }
+  ]
+}
