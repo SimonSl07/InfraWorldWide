@@ -1,0 +1,91 @@
+{
+  "id": "ch-loetschberg-base-tunnel",
+  "country": "ch",
+  "category": "tunnel",
+  "name": {
+    "en": "Lötschberg Base Tunnel",
+    "ro": "Tunelul de bază Lötschberg"
+  },
+  "description": {
+    "en": "Railway base tunnel between Frutigen (canton of Bern) and Raron (canton of Valais), on the Lötschberg axis of the NEAT. It is 34 km long and has been in operation since 2007. The excavated second bore is only partly fitted out; Parliament decided in 2024 to equip it completely.",
+    "ro": "Tunel feroviar de bază între Frutigen (cantonul Berna) și Raron (cantonul Valais), pe axa Lötschberg a NEAT. Are 34 km și este în exploatare din 2007. Al doilea tub excavat este echipat doar parțial; în 2024 Parlamentul a decis echiparea lui completă."
+  },
+  "operator": "ch-bls-netz",
+  "lots": [
+    {
+      "id": "loetschberg-base-tunnel",
+      "name": {
+        "en": "Lötschberg Base Tunnel (Frutigen – Raron)",
+        "ro": "Tunelul de bază Lötschberg (Frutigen – Raron)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1999-07-05",
+        "opened": "2007-06"
+      },
+      "lengthKm": 34.5766,
+      "profile": {
+        "tunnelKm": 34.5766,
+        "electrified": true
+      },
+      "cost": {
+        "actual": {
+          "amount": 5300,
+          "currency": "CHF",
+          "scope": "total",
+          "note": "About 5.3 bn CHF, current costs including interest and VAT; price year not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1999-07-05",
+          "sourceRef": "wikipedia-en-loetschberg-base-tunnel"
+        },
+        {
+          "kind": "opened",
+          "date": "2007-06",
+          "sourceRef": "wikipedia-de-loetschberg-basistunnel"
+        }
+      ],
+      "note": {
+        "en": "The BAV gives a construction time of eight years and about 5.3 bn CHF including interest and VAT. Wikipedia (de) records a federal credit limit of 4.3 bn CHF at 1998 price level, excluding inflation, VAT and interest, with a further 861 m CHF for those items; the two bases are not comparable and are not mixed here. The tunnel was excavated as two bores between Ferden and Mitholz, but only about a third of the route was fitted out for two tracks; the rest of the second bore serves as a rescue tunnel, so the tunnel is not double-track throughout. The BAV gives 2007 as the start of operation; Wikipedia (de) states the operating licence of 14 June 2007 and operation from 16 June 2007, and the opening date is therefore recorded as June 2007. Length 34.5766 km as given by Wikipedia (en); the BAV rounds to 34 km.",
+        "ro": "BAV indică o durată de construcție de opt ani și circa 5,3 mld CHF, inclusiv dobânzi și TVA. Wikipedia (de) înregistrează un plafon de credit federal de 4,3 mld CHF la nivelul prețurilor din 1998, fără inflație, TVA și dobânzi, plus încă 861 mil. CHF pentru acestea; cele două baze nu sunt comparabile și nu sunt amestecate aici. Tunelul a fost excavat cu două tuburi între Ferden și Mitholz, dar doar circa o treime din traseu a fost echipată pentru două linii; restul celui de-al doilea tub servește drept tunel de salvare, deci tunelul nu este cu linie dublă pe toată lungimea. BAV indică 2007 ca început al exploatării; Wikipedia (de) menționează autorizația de exploatare din 14 iunie 2007 și exploatarea din 16 iunie 2007, de aceea data deschiderii este înregistrată ca iunie 2007. Lungime 34,5766 km conform Wikipedia (en); BAV rotunjește la 34 km."
+      },
+      "sourceRefs": [
+        "bav-neat",
+        "wikipedia-de-loetschberg-basistunnel",
+        "wikipedia-en-loetschberg-base-tunnel",
+        "osm-loetschberg-base-tunnel"
+      ],
+      "geometryRef": "loetschberg-base-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bav-neat",
+      "title": "BAV: Die Neue Eisenbahn-Alpentransversale (NEAT)",
+      "url": "https://www.bav.admin.ch/de/neat-neue-eisenbahn-alpentransversale",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-de-loetschberg-basistunnel",
+      "title": "Wikipedia (de): Lötschberg-Basistunnel",
+      "url": "https://de.wikipedia.org/wiki/L%C3%B6tschberg-Basistunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-loetschberg-base-tunnel",
+      "title": "Wikipedia (en): Lötschberg Base Tunnel",
+      "url": "https://en.wikipedia.org/wiki/L%C3%B6tschberg_Base_Tunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-loetschberg-base-tunnel",
+      "title": "OpenStreetMap contributors (ODbL): Lötschberg-Basistunnel, railway line 330",
+      "url": "https://www.openstreetmap.org/way/15593850",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

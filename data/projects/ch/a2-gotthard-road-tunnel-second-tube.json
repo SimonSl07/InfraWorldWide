@@ -1,0 +1,124 @@
+{
+  "id": "ch-a2-gotthard-road-tunnel-second-tube",
+  "country": "ch",
+  "category": "tunnel",
+  "name": {
+    "en": "A2 Gotthard road tunnel second tube",
+    "ro": "Al doilea tub al tunelului rutier Gotthard (A2)"
+  },
+  "description": {
+    "en": "A second tube of about 17 km is being built 40 m east of the service and infrastructure tunnel of the A2 Gotthard road tunnel between Göschenen and Airolo, so the existing tube can be renovated without a full closure. The 2016 referendum approved it on condition that capacity does not rise: only one lane per direction stays open. Building is scheduled for 2021–2030, then the first tube is renovated in 2030–2033.",
+    "ro": "Un al doilea tub de circa 17 km se construiește la 40 m est de galeria de serviciu și infrastructură a tunelului rutier Gotthard de pe A2, între Göschenen și Airolo, astfel încât tubul existent să poată fi renovat fără închidere totală. Referendumul din 2016 l-a aprobat cu condiția ca capacitatea să nu crească: rămâne deschisă o singură bandă pe sens. Construcția este programată pentru 2021–2030, apoi primul tub este renovat în 2030–2033."
+  },
+  "operator": "ch-astra",
+  "lots": [
+    {
+      "id": "second-tube",
+      "name": {
+        "en": "Second tube (Göschenen – Airolo)",
+        "ro": "Al doilea tub (Göschenen – Airolo)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2021",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 16.9,
+      "cost": {
+        "estimated": {
+          "amount": 2053,
+          "currency": "CHF",
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Excluding VAT, cost estimate accuracy +/- 15%."
+        }
+      },
+      "profile": {
+        "terrain": "mountain",
+        "works": "greenfield",
+        "tunnelKm": 16.9,
+        "lanes": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2021",
+          "note": {
+            "en": "Construction of the service and infrastructure tunnel and of the northern and southern access tunnels began in 2021; the main tunnel followed in 2022.",
+            "ro": "În 2021 au început galeria de serviciu și infrastructură și galeriile de acces nord și sud; tunelul principal a urmat în 2022."
+          },
+          "sourceRef": "gotthardtunnel-ch"
+        }
+      ],
+      "note": {
+        "en": "About 17 km, 12.3 m diameter, 40 m east of the service and infrastructure tunnel, linked to it by cross passages every 250 m. Tunnel boring machines started on the main tunnel from Göschenen and Airolo on 14 February 2025. On the south side the machine Paulina resumed boring on 18 May 2026 after a rock collapse of about 2,000 m3 at metre 192 had stopped it for almost a year. The project site gives an opening in 2030 and a total of 2.14 billion francs excluding VAT; the Federal Roads Office project page gives about 2.053 billion francs excluding VAT (estimate +/- 15%), which is the figure recorded. Only one lane per direction will be open, so capacity does not increase. OpenStreetMap draws the line as a road under construction",
+        "ro": "Circa 17 km, diametru 12,3 m, la 40 m est de galeria de serviciu și infrastructură, legat de aceasta prin galerii transversale la fiecare 250 m. Mașinile de forat au început tunelul principal dinspre Göschenen și Airolo la 14 februarie 2025. Pe partea de sud, mașina Paulina a reluat forajul la 18 mai 2026, după ce o prăbușire de circa 2.000 m3 de rocă la metrul 192 o oprise aproape un an. Site-ul proiectului indică deschiderea în 2030 și un total de 2,14 miliarde franci fără TVA; pagina proiectului a Oficiului Federal pentru Drumuri indică circa 2,053 miliarde franci fără TVA (estimare +/- 15%), cifra înregistrată aici. Va fi deschisă o singură bandă pe sens, deci capacitatea nu crește. OpenStreetMap trasează linia ca drum în construcție"
+      },
+      "sourceRefs": [
+        "astra-zweite-roehre-gotthard",
+        "gotthardtunnel-ch",
+        "osm-gotthard"
+      ],
+      "geometryRef": "second-tube"
+    },
+    {
+      "id": "first-tube-renovation",
+      "name": {
+        "en": "First tube renovation (Göschenen – Airolo)",
+        "ro": "Renovarea primului tub (Göschenen – Airolo)"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2033"
+      },
+      "lengthKm": 16.9,
+      "profile": {
+        "terrain": "mountain",
+        "works": "rehabilitation",
+        "tunnelKm": 16.9
+      },
+      "note": {
+        "en": "The existing tube opened on 5 September 1980. Renovation is to start in 2030 once the second tube is open and end in 2033; the Federal Roads Office says the project is under way and the total cost is still being examined, so no cost is recorded. Length is the project site figure for the tunnel. This lot is the same tunnel as the existing tube, not additional road",
+        "ro": "Tubul existent a fost deschis la 5 septembrie 1980. Renovarea va începe în 2030, după deschiderea celui de-al doilea tub, și se va încheia în 2033; Oficiul Federal pentru Drumuri precizează că proiectul este în desfășurare și că se examinează încă costul total, deci nu se înregistrează niciun cost. Lungimea este cifra site-ului proiectului pentru tunel. Acest lot este același tunel ca tubul existent, nu drum suplimentar"
+      },
+      "sourceRefs": [
+        "astra-zweite-roehre-gotthard",
+        "gotthardtunnel-ch",
+        "wikipedia-de-gotthard-strassentunnel",
+        "osm-gotthard"
+      ],
+      "geometryRef": "first-tube-renovation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "astra-zweite-roehre-gotthard",
+      "title": "ASTRA: A2 Sanierung des Gotthard-Strassentunnels",
+      "url": "https://www.astra.admin.ch/de/zweite-roehre-gotthard",
+      "publisher": "Bundesamt für Strassen ASTRA",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "gotthardtunnel-ch",
+      "title": "A2 Second Gotthard tube (project site of the Federal Roads Office)",
+      "url": "https://www.gotthardtunnel.ch/en/",
+      "publisher": "Federal Roads Office FEDRO",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-de-gotthard-strassentunnel",
+      "title": "Wikipedia (de): Gotthard-Strassentunnel",
+      "url": "https://de.wikipedia.org/wiki/Gotthard-Strassentunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-gotthard",
+      "title": "OpenStreetMap contributors: A2 Gotthard-Strassentunnel and second tube (ODbL)",
+      "url": "https://www.openstreetmap.org/way/49124513",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
