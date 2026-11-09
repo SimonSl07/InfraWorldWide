@@ -13,16 +13,24 @@
  *   deflators  Eurostat prc_hicp_aind, unit INX_A_AVG, coicop CP00, per geo.
  *              Free reuse under Commission decision 2011/833/EU.
  *   fx         ECB Data Portal EXR/A.<CUR>.EUR.SP00.A, annual averages. Free
- *              reuse with attribution. The ECB publishes no dinar rate (404),
- *              so RSD comes from Eurostat ert_bil_eur_a, statinfo AVG, the
- *              substitution the fx note already documents.
+ *              reuse with attribution. The ECB publishes no dinar, hryvnia or
+ *              Moldovan leu rate, and its krona series has a hole from 2009
+ *              to 2017, so RSD, MDL, UAH and ISK come from Eurostat
+ *              ert_bil_eur_a, statinfo AVG, the substitution the fx note
+ *              already documents.
  *
- * Two deliberate refusals, both of which a naive refetch would undo:
+ * Deliberate refusals, which a naive refetch would undo:
  *   - USD deflator. The committed series is the US CPI-U (BLS, via FRED)
  *     rebased to 2015 = 100. Eurostat does publish a US HICP, but it is a
  *     different index (106.80 against 109.2 for 2020), so splicing one onto
  *     the other would corrupt every dollar comparison. This script leaves USD
  *     alone and says so.
+ *   - GBP deflator. Eurostat's UK HICP stops in 2019 (the UK left the
+ *     collection after Brexit), so the committed series is the ONS CPI index
+ *     (D7BT, 2015 = 100), which is the UK's HICP-conformant measure.
+ *   - MDL deflator. Entered by hand from the National Bureau of Statistics
+ *     of Moldova (annual average CPI, previous year = 100, chained to 2015
+ *     = 100). Eurostat publishes no Moldovan HICP.
  *   - Years listed in DELIBERATELY_ABSENT. The dinar's 1999 and 2000 figures
  *     are a frozen administered rate, not a rate anything could be converted
  *     at, and were left out on purpose.
@@ -65,13 +73,25 @@ const DEFLATOR_GEO: Record<string, string> = {
   RSD: "RS",
   SEK: "SE",
   NOK: "NO",
+  CHF: "CH",
+  ISK: "IS",
+  TRY: "TR",
 };
 
 const NOT_REFETCHED: Record<string, string> = {
   USD: "US CPI-U (BLS via FRED) rebased to 2015 = 100. Eurostat's US HICP is a different index and must not be spliced onto it.",
+  GBP: "ONS CPI index D7BT, 2015 = 100. Eurostat's UK HICP ends in 2019 and the ONS series continues it.",
+  MDL: "National Bureau of Statistics of Moldova, annual average CPI (previous year = 100) chained to 2015 = 100. Eurostat has no Moldovan HICP.",
 };
 
-/** Currencies the ECB quotes. RSD is not one of them. */
+/**
+ * Currencies taken from Eurostat ert_bil_eur_a instead of the ECB. The ECB has
+ * no dinar, hryvnia or Moldovan leu series, and its krona series is missing
+ * 2009 to 2017 (Eurostat's is complete, at two decimals).
+ */
+const EUROSTAT_FX_CURRENCIES = ["RSD", "ISK", "MDL", "UAH"];
+
+/** Currencies the ECB quotes in full. */
 const ECB_CURRENCIES = [
   "BGN",
   "CZK",
@@ -82,6 +102,9 @@ const ECB_CURRENCIES = [
   "SEK",
   "NOK",
   "USD",
+  "CHF",
+  "GBP",
+  "TRY",
 ];
 
 /**
@@ -229,12 +252,14 @@ async function refreshFx(
     Object.assign(fetched, parseEcbCsv(await get(url, "text/csv")));
   }
 
-  // The ECB has no dinar series at all, which is why the fx note documents
-  // Eurostat as the substitute rather than treating the gap as an outage.
-  if (wanted.includes("RSD")) {
-    const url = `${EUROSTAT}/ert_bil_eur_a?format=JSON&currency=RSD&statinfo=AVG&unit=NAC&sinceTimePeriod=1999`;
+  // The ECB has no dinar, hryvnia or Moldovan leu series at all, which is why
+  // the fx note documents Eurostat as the substitute rather than treating the
+  // gap as an outage.
+  const fromEurostat = wanted.filter((c) => EUROSTAT_FX_CURRENCIES.includes(c));
+  if (fromEurostat.length > 0) {
+    const url = `${EUROSTAT}/ert_bil_eur_a?format=JSON&${fromEurostat.map((c) => `currency=${c}`).join("&")}&statinfo=AVG&unit=NAC&sinceTimePeriod=1999`;
     console.log(
-      "Eurostat ert_bil_eur_a: RSD (the ECB publishes no dinar rate)",
+      `Eurostat ert_bil_eur_a: ${fromEurostat.join(", ")} (no complete ECB series)`,
     );
     const byCurrency = parseJsonStat(
       JSON.parse(await get(url, "application/json")),
