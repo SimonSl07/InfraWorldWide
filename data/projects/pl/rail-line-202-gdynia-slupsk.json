@@ -1,0 +1,173 @@
+{
+  "id": "pl-rail-line-202-gdynia-slupsk",
+  "country": "pl",
+  "category": "railway",
+  "name": {
+    "en": "Railway line 202 Gdynia Chylonia – Słupsk (modernisation)",
+    "ro": "Linia ferată 202 Gdynia Chylonia – Słupsk (modernizare)"
+  },
+  "description": {
+    "en": "Modernisation of railway line 202 between Gdynia Chylonia and Słupsk, split at Lębork. The contracted Gdynia Chylonia – Lębork section adds tracks and upgrades the existing line. Works on Lębork – Słupsk are under way, including a second track. PLK's works at Słupsk station are a separate contract and are not mapped as a separate lot.",
+    "ro": "Modernizarea liniei ferate 202 între Gdynia Chylonia și Słupsk, împărțită la Lębork. Contractul pentru Gdynia Chylonia – Lębork adaugă căi și modernizează linia existentă. Lucrările pe Lębork – Słupsk sunt în curs, inclusiv construirea celei de-a doua căi. Lucrările PLK din gara Słupsk fac obiectul unui contract separat și nu sunt reprezentate ca lot separat."
+  },
+  "operator": "pl-plk",
+  "lastVerified": "2026-10-13",
+  "lots": [
+    {
+      "id": "gdynia-chylonia-lebork",
+      "name": {
+        "en": "Gdynia Chylonia – Lębork",
+        "ro": "Gdynia Chylonia – Lębork"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-12-16"
+      },
+      "lengthKm": 55.95,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2617.6,
+              "currency": "PLN",
+              "year": 2025,
+              "scope": "works",
+              "note": "Net. ZUE reported PLN 3,219.7 million gross."
+            },
+            "date": "2025-12-16",
+            "sourceRef": "zue-202-gdynia-lebork-2025"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-12-16",
+          "note": {
+            "en": "PKP PLK signed the design and construction contract with ZUE.",
+            "ro": "PKP PLK a semnat contractul de proiectare și execuție cu ZUE."
+          },
+          "sourceRef": "zue-202-gdynia-lebork-2025"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ZUE S.A.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 56,
+        "value": {
+          "amount": 2617.6,
+          "currency": "PLN",
+          "year": 2025,
+          "scope": "works",
+          "note": "Net. ZUE reported PLN 3,219.7 million gross."
+        }
+      },
+      "note": {
+        "en": "The works contract covers the existing line from Gdynia Chylonia to Lębork. PLK describes 55 km of track works. Its 2026/2027 track-closure schedule gives the section as km 25.200–81.150, a 55.95 km chainage span; the sourced chainage is used. The package adds a second track between Gdynia Chylonia and Rumia and between Wejherowo and Lębork, plus two suburban tracks between Rumia and Wejherowo. PLK planned completion in 2029; ZUE states a contract duration of 56 months. The OSM line drawn is 53.4 km, about 5% shorter than the chainage span, so the sourced length is kept.",
+        "ro": "Contractul de lucrări acoperă linia existentă de la Gdynia Chylonia la Lębork. PLK descrie 55 km de lucrări la cale. Programul său de închideri pentru 2026/2027 indică secțiunea între km 25,200 și 81,150, un interval de 55,95 km; se folosește kilometrajul din sursă. Pachetul adaugă a doua cale între Gdynia Chylonia și Rumia și între Wejherowo și Lębork, plus două căi suburbane între Rumia și Wejherowo. PLK planifica finalizarea în 2029; ZUE indică o durată contractuală de 56 de luni. Linia OSM desenată are 53,4 km, cu circa 5% mai puțin decât intervalul de kilometraj, deci lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "plk-202-gdynia-lebork-2025",
+        "plk-202-chainage-2026",
+        "zue-202-gdynia-lebork-2025",
+        "osm-line-202-relation-2345694",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gdynia-chylonia-lebork"
+    },
+    {
+      "id": "lebork-slupsk",
+      "name": {
+        "en": "Lębork – Słupsk",
+        "ro": "Lębork – Słupsk"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023"
+      },
+      "lengthKm": 53.95,
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 2
+      },
+      "contractors": [
+        {
+          "name": "Intercor Sp. z o.o.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "CUPT gives the line 202 works as km 81.150–135.100, 53.950 km, and states that the completed line will be double track. PLK reported construction under way on the Lębork – Słupsk section in July 2025 and named Intercor as the contractor. Works at Słupsk station are a separate PLK contract with Torpol and are not split into another mapped lot. The OSM line drawn is 51.2 km, about 5% shorter than the sourced chainage, which is kept. No award date for the Intercor package was found, so its contract value is not recorded.",
+        "ro": "CUPT indică lucrările de pe linia 202 între km 81,150 și 135,100, adică 53,950 km, și precizează că linia finalizată va avea două căi. În iulie 2025, PLK a raportat că lucrările pe Lębork – Słupsk erau în curs și l-a numit pe Intercor drept constructor. Lucrările din gara Słupsk fac obiectul unui contract PLK separat cu Torpol și nu sunt împărțite într-un alt lot cartografiat. Linia OSM desenată are 51,2 km, cu circa 5% mai puțin decât kilometrajul din sursă, care este păstrat. Nu a fost găsită data atribuirii contractului Intercor, așa că valoarea acestuia nu este înregistrată."
+      },
+      "sourceRefs": [
+        "cupt-202-lebork-slupsk",
+        "plk-202-lebork-slupsk-2025",
+        "osm-line-202-relation-2345694",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "lebork-slupsk"
+    }
+  ],
+  "sources": [
+    {
+      "id": "plk-202-gdynia-lebork-2025",
+      "title": "PKP PLK: Miliardy na lepszą kolej z Trójmiasta do Słupska (16.12.2025)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/miliardy-na-lepsza-kolej-z-trojmiasta-do-slupska-11411",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "zue-202-gdynia-lebork-2025",
+      "title": "ZUE S.A. current report 36/2025: Gdynia Chylonia – Lębork contract (16.12.2025)",
+      "url": "https://pap-mediaroom.pl/biznes-i-finanse/zue-sa-362025-zawarcie-umowy-na-realizacje-projektu-infrastrukturalnego",
+      "publisher": "ZUE S.A. (ESPI via PAP MediaRoom)",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "plk-202-lebork-slupsk-2025",
+      "title": "PKP PLK: Kolej w Słupsku zyskuje nowe oblicze (31.07.2025)",
+      "url": "https://www.plk-sa.pl/o-spolce/biuro-prasowe/informacje-prasowe/szczegoly/kolej-w-slupsku-zyskuje-nowe-oblicze-10954",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "cupt-202-lebork-slupsk",
+      "title": "CUPT: Umowa FEnIKS, Prace na linii kolejowej nr 202 na odcinku Gdynia Chylonia – Słupsk – faza II",
+      "url": "https://www.cupt.gov.pl/en/umowa/feniks/opis-umowy-na-przebudowe-lk-202-gdynia-chylonia-slupsk/",
+      "publisher": "Centrum Unijnych Projektów Transportowych",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "plk-202-chainage-2026",
+      "title": "PKP PLK: Sieciowy harmonogram zamknięć torowych, rozkład jazdy 2026/2027",
+      "url": "https://www.plk-sa.pl/files/public/user_upload/pdf/Harmonogram_zamkniec_torowych/Rozklad_jazdy_2026_2027/SHZT_2026_2027.pdf",
+      "publisher": "PKP Polskie Linie Kolejowe S.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-line-202-relation-2345694",
+      "title": "OpenStreetMap relation 2345694: railway line 202 Gdańsk Główny – Stargard, route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2345694",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: copyright and ODbL attribution",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}

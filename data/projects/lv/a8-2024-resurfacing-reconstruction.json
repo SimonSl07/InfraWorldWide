@@ -1,0 +1,88 @@
+{
+  "id": "lv-a8-2024-resurfacing-reconstruction",
+  "country": "lv",
+  "category": "highway",
+  "name": {
+    "en": "A8 resurfacing, Riga–Jaunolaine",
+    "ro": "Reașternerea carosabilului pe A8, Riga–Jaunolaine"
+  },
+  "description": {
+    "en": "Surface renewal on the A8 between Riga and Jaunolaine.",
+    "ro": "Reînnoirea suprafeței pe A8 între Riga și Jaunolaine."
+  },
+  "operator": "lv-lvc",
+  "sources": [
+    {
+      "id": "lvc-a8-weekly-2024",
+      "title": "Weekly report on planned roadworks, 8–14 July 2024",
+      "url": "https://lvceli.lv/wp-content/uploads/2024/07/08.07.2024.-14.07.2024.pdf",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "lvc-riga-region-roadworks-2024",
+      "title": "Planned national-road works in the Riga planning region",
+      "url": "https://lvceli.lv/aktualitates/rigas-planosanas-regiona-iecereto-valsts-celu-buvdarbu-karte-un-saraksts/",
+      "publisher": "Latvijas Valsts ceļi",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a8-carriageway",
+      "title": "OpenStreetMap: A8 at Jaunolaine",
+      "url": "https://www.openstreetmap.org/#map=13/56.8385/24.0219",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "a8-km-9-917-19-193",
+      "name": {
+        "en": "A8, km 9.917–19.193",
+        "ro": "A8, km 9,917–19,193"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2024-05-20",
+        "opened": "2024-08-25"
+      },
+      "lengthKm": 9.276,
+      "contractors": [
+        {
+          "name": "Ceļu būvniecības sabiedrība IGATE",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "LVC lists surface renewal on this A8 section from 20 May to 25 August 2024 and identifies the builder as Ceļu būvniecības sabiedrība IGATE. The regional works page identifies the section as the left carriageway from the Riga boundary to Jaunolaine. The mapped line follows one carriageway; the published 9.276 km is the road-chainage interval. No final outturn cost was found.",
+        "ro": "LVC indică reînnoirea suprafeței pe acest sector A8 între 20 mai și 25 august 2024 și identifică antreprenorul drept Ceļu būvniecības sabiedrība IGATE. Pagina regională a lucrărilor identifică sectorul drept calea de rulare din stânga, de la limita Riga până la Jaunolaine. Linia cartografiată urmează o singură cale de rulare; cei 9,276 km reprezintă intervalul de kilometraj al drumului. Nu a fost găsit costul final al lucrărilor."
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2024-05-20",
+          "sourceRef": "lvc-a8-weekly-2024",
+          "note": {
+            "en": "LVC reports this as the works start date.",
+            "ro": "LVC raportează această dată drept începerea lucrărilor."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2024-08-25",
+          "sourceRef": "lvc-a8-weekly-2024",
+          "note": {
+            "en": "LVC reports this as the works completion date.",
+            "ro": "LVC raportează această dată drept finalizarea lucrărilor."
+          }
+        }
+      ],
+      "sourceRefs": [
+        "lvc-a8-weekly-2024",
+        "lvc-riga-region-roadworks-2024",
+        "osm-a8-carriageway"
+      ],
+      "geometryRef": "a8-km-9-917-19-193"
+    }
+  ]
+}
