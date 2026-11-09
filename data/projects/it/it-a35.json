@@ -1,0 +1,49 @@
+{
+  "id": "it-a35",
+  "country": "it",
+  "category": "highway",
+  "name": { "en": "A35 BreBeMi", "ro": "Autostrada A35 BreBeMi" },
+  "description": {
+    "en": "The A35 motorway connects Brescia with the Milan area via Bergamo. Its 62.1 km route opened to traffic on 23 July 2014 after construction began in July 2009.",
+    "ro": "Autostrada A35 leagă Brescia de zona orașului Milano prin Bergamo. Traseul de 62,1 km a fost deschis traficului pe 23 iulie 2014, după ce lucrările au început în iulie 2009."
+  },
+  "operator": "it-brebemi",
+  "lots": [
+    {
+      "id": "full-route",
+      "name": { "en": "Full route", "ro": "Traseul complet" },
+      "status": "opened",
+      "dates": { "constructionStart": "2009-07", "opened": "2014-07-23" },
+      "lengthKm": 62.1,
+      "note": {
+        "en": "The concessionaire reports 62.1 km for the motorway. The map geometry follows the A35 main alignment in OpenStreetMap.",
+        "ro": "Concesionarul indică 62,1 km pentru autostradă. Geometria hărții urmează traseul principal A35 din OpenStreetMap."
+      },
+      "sourceRefs": ["brebemi-history", "brebemi-length", "osm-a35"],
+      "geometryRef": "main"
+    }
+  ],
+  "sources": [
+    {
+      "id": "brebemi-history",
+      "title": "A35 Brebemi: project history",
+      "url": "https://www.brebemi.it/storia-del-progetto/",
+      "publisher": "Società di Progetto Brebemi S.p.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "brebemi-length",
+      "title": "A35 Brebemi: route and operating information",
+      "url": "https://www.brebemi.it/a35-brebemi-importanti-novita-traffico-in-crescita-del-25-iniziano-i-lavori-di-interconnessione-con-la-a4-e-viene-incrementato-lo-sconto-al-20/",
+      "publisher": "Società di Progetto Brebemi S.p.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a35",
+      "title": "OpenStreetMap relation 3306416, A35 BreBeMi motorway geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/3306416",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}
