@@ -1,0 +1,208 @@
+{
+  "id": "ch-limmattalbahn",
+  "country": "ch",
+  "city": "ch-zurich",
+  "category": "railway",
+  "name": {
+    "en": "Limmattalbahn (Zürich Altstetten – Killwangen-Spreitenbach)",
+    "ro": "Limmattalbahn (Zürich Altstetten – Killwangen-Spreitenbach)"
+  },
+  "description": {
+    "en": "Metre-gauge tram line 20 through the Limmat valley from Zürich Altstetten station via Schlieren, Urdorf and Dietikon to Killwangen-Spreitenbach in canton Aargau: 13.4 km with 27 stops. Limmattalbahn AG, owned 75% by canton Zürich and 25% by canton Aargau, built the infrastructure; Aargau Verkehr operates it. The first stage ran from Farbhof to Schlieren Geissweid (service from 2 September 2019, as Zürich tram line 2). The second stage to Killwangen-Spreitenbach opened on 11 December 2022. The credit for the whole project was about CHF 755 million, and the works finished about CHF 160 million (21%) under budget.",
+    "ro": "Linia de tramvai 20, cu ecartament metric, prin valea Limmat de la gara Zürich Altstetten, prin Schlieren, Urdorf și Dietikon, până la Killwangen-Spreitenbach în cantonul Aargau: 13,4 km cu 27 de stații. Limmattalbahn AG, deținută 75% de cantonul Zürich și 25% de cantonul Aargau, a construit infrastructura; Aargau Verkehr o operează. Prima etapă a circulat de la Farbhof la Schlieren Geissweid (servicii din 2 septembrie 2019, ca linia de tramvai 2 din Zürich). A doua etapă, până la Killwangen-Spreitenbach, a fost deschisă pe 11 decembrie 2022. Creditul pentru întregul proiect a fost de circa 755 de milioane de franci elvețieni, iar lucrările s-au încheiat cu circa 160 de milioane (21%) sub buget."
+  },
+  "operator": "ch-aargau-verkehr",
+  "stationCount": 27,
+  "cost": {
+    "amount": 755,
+    "currency": "CHF",
+    "scope": "programme",
+    "note": "Total credit for the Limmattalbahn (about CHF 755 million), of which canton Zürich approved CHF 510.3 million in 2015 plus CHF 136.3 million for linked road measures. No price year is stated."
+  },
+  "lots": [
+    {
+      "id": "altstetten-farbhof",
+      "name": {
+        "en": "Zürich Altstetten – Farbhof",
+        "ro": "Zürich Altstetten – Farbhof"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2017-08-28",
+        "opened": "2022-12-11"
+      },
+      "lengthKm": 0.8,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true,
+        "tracks": 2,
+        "stationCount": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2017-08-28",
+          "note": {
+            "en": "Groundbreaking for stage 1, which de.wikipedia describes as running from Altstetten station to Schlieren Geissweid.",
+            "ro": "Prima lopată pentru etapa 1, descrisă de de.wikipedia ca mergând de la gara Altstetten la Schlieren Geissweid."
+          },
+          "sourceRef": "wikipedia-de-limmattalbahn"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-11",
+          "note": {
+            "en": "Start of timetabled service of line 20 from Bahnhof Altstetten.",
+            "ro": "Începutul circulației după orar a liniei 20 de la Bahnhof Altstetten."
+          },
+          "sourceRef": "wikipedia-de-limmattalbahn"
+        }
+      ],
+      "note": {
+        "en": "Stub from the terminus at the south side of Altstetten station along Hohlstrasse (stops Bahnhof Altstetten, Seidelhof) to the junction at Farbhof with the existing tram line 2 route. Length from the chainage table on de.wikipedia (Farbhof at 0.8 km). The sources give no separate opening date for this stub: the date is the start of line 20 service, which runs from Altstetten station. Stage 1 as a whole is described as Altstetten – Geissweid (3.6 km by chainage); the Farbhof – Geissweid part is in the next lot.",
+        "ro": "Tronson de la capătul din partea de sud a gării Altstetten, de-a lungul Hohlstrasse (stațiile Bahnhof Altstetten, Seidelhof), până la joncțiunea de la Farbhof cu traseul existent al liniei de tramvai 2. Lungimea provine din tabelul de kilometraj de pe de.wikipedia (Farbhof la 0,8 km). Sursele nu indică o dată de deschidere separată pentru acest tronson: data este cea a începerii circulației liniei 20, care pornește din gara Altstetten. Etapa 1 în ansamblu este descrisă ca Altstetten – Geissweid (3,6 km după kilometraj); partea Farbhof – Geissweid este în lotul următor."
+      },
+      "sourceRefs": [
+        "wikipedia-de-limmattalbahn",
+        "osm-limmattalbahn"
+      ],
+      "geometryRef": "altstetten-farbhof"
+    },
+    {
+      "id": "farbhof-geissweid",
+      "name": {
+        "en": "Stage 1: Farbhof – Schlieren Geissweid",
+        "ro": "Etapa 1: Farbhof – Schlieren Geissweid"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2017-08-28",
+        "opened": "2019-09-02"
+      },
+      "lengthKm": 2.9,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true,
+        "tracks": 2,
+        "stationCount": 6
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2017-08-28",
+          "note": {
+            "en": "Groundbreaking in Schlieren, attended by the Federal President and the cantonal governments.",
+            "ro": "Prima lopată la Schlieren, în prezența președintelui Confederației și a guvernelor cantonale."
+          },
+          "sourceRef": "wikipedia-de-limmattalbahn"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-09-02",
+          "note": {
+            "en": "Ceremonial opening on 30 August 2019; timetabled service by Zürich tram line 2 from 2 September 2019.",
+            "ro": "Deschidere festivă pe 30 august 2019; circulație după orar cu linia de tramvai 2 din Zürich din 2 septembrie 2019."
+          },
+          "sourceRef": "wikipedia-de-limmattalbahn"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The Confederation covered about 35% of stage 1; the rest was carried by cantons Zürich and Aargau.",
+            "ro": "Confederația a acoperit circa 35% din etapa 1; restul a fost suportat de cantoanele Zürich și Aargau."
+          }
+        }
+      ],
+      "note": {
+        "en": "Section from Farbhof, where the line joins the existing tram line 2 route on Badenerstrasse, to Schlieren Geissweid (stops Micafil, Mülligen, Gasometerbrücke, Wagonsfabrik, Schlieren Zentrum/Bahnhof, Geissweid). The Farbhof – Schlieren tram had been closed in 1955. The first tracks were laid in Schlieren Geissweid in April 2018. Before the stage 2 opening only Zürich tram line 2 ran here. Drawn length 2.8 km against the stated 2.9 km.",
+        "ro": "Tronson de la Farbhof, unde linia se alătură traseului existent al liniei de tramvai 2 pe Badenerstrasse, până la Schlieren Geissweid (stațiile Micafil, Mülligen, Gasometerbrücke, Wagonsfabrik, Schlieren Zentrum/Bahnhof, Geissweid). Tramvaiul Farbhof – Schlieren fusese închis în 1955. Primele șine au fost montate la Schlieren Geissweid în aprilie 2018. Înainte de deschiderea etapei 2 aici circula doar linia de tramvai 2 din Zürich. Lungime desenată 2,8 km față de 2,9 km declarat."
+      },
+      "sourceRefs": [
+        "wikipedia-de-limmattalbahn",
+        "osm-limmattalbahn"
+      ],
+      "geometryRef": "farbhof-geissweid"
+    },
+    {
+      "id": "geissweid-killwangen",
+      "name": {
+        "en": "Stage 2: Schlieren Geissweid – Killwangen-Spreitenbach",
+        "ro": "Etapa 2: Schlieren Geissweid – Killwangen-Spreitenbach"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-09",
+        "opened": "2022-12-11"
+      },
+      "lengthKm": 9.6,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true,
+        "tracks": 2,
+        "stationCount": 17
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-09",
+          "note": {
+            "en": "Start of civil works for the continuation to Killwangen-Spreitenbach.",
+            "ro": "Începutul lucrărilor civile pentru prelungirea până la Killwangen-Spreitenbach."
+          },
+          "sourceRef": "wikipedia-de-limmattalbahn"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-12-11",
+          "note": {
+            "en": "Official opening on 9 December 2022; public festival on 10 December; timetabled service of line 20 from 11 December 2022.",
+            "ro": "Deschiderea oficială pe 9 decembrie 2022; sărbătoarea publică pe 10 decembrie; circulația liniei 20 după orar din 11 decembrie 2022."
+          },
+          "sourceRef": "wikipedia-de-limmattalbahn"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "The Confederation was to cover about CHF 200 million of stage 2; the rest was carried by cantons Zürich and Aargau.",
+            "ro": "Confederația urma să acopere circa 200 de milioane de franci din etapa 2; restul a fost suportat de cantoanele Zürich și Aargau."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop, Geissweid to Killwangen Bahnhof); the whole line is stated as 13.4 km by Aargau Verkehr and 13.3 km by chainage on de.wikipedia. Runs along Badenerstrasse, through a 245 m tunnel under the Färberhüsli area, through Urdorf and Dietikon (sharing a short stretch of track with the Bremgarten–Dietikon railway) and over the Zürich–Aargau cantonal border to Killwangen-Spreitenbach. The depot at Müsli (0.6 km branch) is part of this stage and is not drawn. The first tracks were laid in Dietikon in February 2020 and the last rail was welded on 11 April 2022.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație, de la Geissweid la Killwangen Bahnhof); întreaga linie este indicată ca 13,4 km de Aargau Verkehr și 13,3 km după kilometraj pe de.wikipedia. Trece pe Badenerstrasse, printr-un tunel de 245 m sub zona Färberhüsli, prin Urdorf și Dietikon (folosind în comun un scurt tronson de cale cu calea ferată Bremgarten–Dietikon) și peste granița cantonală Zürich–Aargau până la Killwangen-Spreitenbach. Depoul de la Müsli (ramificație de 0,6 km) face parte din această etapă și nu este desenat. Primele șine au fost montate la Dietikon în februarie 2020, iar ultima șină a fost sudată pe 11 aprilie 2022."
+      },
+      "sourceRefs": [
+        "wikipedia-de-limmattalbahn",
+        "ava-ltb",
+        "osm-limmattalbahn"
+      ],
+      "geometryRef": "geissweid-killwangen"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ava-ltb",
+      "title": "Aargau Verkehr: Limmat Bahn (LTB), line 20 serves 27 stops over 13.4 kilometres",
+      "url": "https://www.aargauverkehr.ch/ava/projekte/ltb",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-de-limmattalbahn",
+      "title": "Wikipedia: Limmattalbahn (stages, dates, credit, chainage table)",
+      "url": "https://de.wikipedia.org/wiki/Limmattalbahn",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-limmattalbahn",
+      "title": "OpenStreetMap contributors: Tram 20 Zürich, Bahnhof Altstetten to Killwangen, Bahnhof, route relation 14987052 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/14987052",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

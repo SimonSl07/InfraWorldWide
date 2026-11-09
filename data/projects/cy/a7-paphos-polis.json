@@ -1,0 +1,134 @@
+{
+  "id": "cy-a7-paphos-polis",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A7 Paphos – Polis Chrysochous Motorway",
+    "ro": "Autostrada A7 Paphos – Polis Chrysochous"
+  },
+  "description": {
+    "en": "Planned motorway from the A6 near Agia Marinouda to Polis Chrysochous. Phase A runs from Agia Marinouda to Stroumbi: about 15.5 km with two traffic lanes, designed to take two more later, built under a design-and-build contract that the Public Works Department discontinued with the works 21.1% complete. A new tender to finish it was launched on 8 August 2025. The Stroumbi–Polis section (about 15 km, four lanes, EUR 110 million excluding VAT in the 2027 budget) is planned but has no mapped alignment, so it is not drawn here. The two-lane widening of the existing B7 road is a separate road improvement and is not part of this motorway.",
+    "ro": "Autostradă planificată de la A6, lângă Agia Marinouda, până la Polis Chrysochous. Faza A merge de la Agia Marinouda la Stroumbi: circa 15,5 km cu două benzi de circulație, proiectată pentru încă două benzi ulterior, construită printr-un contract de proiectare și execuție pe care Departamentul Lucrărilor Publice l-a întrerupt când lucrările erau finalizate în proporție de 21,1%. La 8 august 2025 a fost lansată o nouă licitație pentru finalizare. Secțiunea Stroumbi–Polis (circa 15 km, patru benzi, 110 milioane EUR fără TVA în bugetul pentru 2027) este planificată, dar nu are un traseu cartografiat, deci nu este desenată aici. Lărgirea cu benzi suplimentare a drumului existent B7 este o lucrare rutieră separată și nu face parte din această autostradă."
+  },
+  "operator": "cy-pwd",
+  "lots": [
+    {
+      "id": "phase-a-agia-marinouda-stroumbi",
+      "name": {
+        "en": "Phase A: Agia Marinouda – Stroumbi",
+        "ro": "Faza A: Agia Marinouda – Stroumbi"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2021-05-17"
+      },
+      "lengthKm": 15.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 72.979,
+              "currency": "EUR",
+              "year": 2021,
+              "scope": "works",
+              "note": "Excluding VAT. Design-and-build contract PS/DB/16."
+            },
+            "date": "2021-05-17",
+            "sourceRef": "ted-344988-2021"
+          },
+          {
+            "kind": "revised_budget",
+            "money": {
+              "amount": 90.2,
+              "currency": "EUR",
+              "confidence": "estimated",
+              "note": "Excluding VAT. PWD estimate of the cost to complete the remaining works, not the total cost of the lot."
+            },
+            "date": "2025-08-28",
+            "sourceRef": "dialogos-paphos-polis-cost"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "lanes": 2
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-05-17",
+          "note": {
+            "en": "Contract with Intrakat concluded, EUR 72.979 million excluding VAT (TED conclusion date). The PWD statement gives signing on 13 May 2021.",
+            "ro": "Contract încheiat cu Intrakat, 72,979 milioane EUR fără TVA (data încheierii din TED). Comunicatul PWD indică semnarea la 13 mai 2021."
+          },
+          "sourceRef": "ted-344988-2021"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2025-08-08",
+          "note": {
+            "en": "New tender launched to complete the project, after the Council of Ministers confirmed on 6 August 2025 that the road is needed.",
+            "ro": "Licitație nouă lansată pentru finalizarea proiectului, după ce Consiliul de Miniștri a confirmat la 6 august 2025 necesitatea drumului."
+          },
+          "sourceRef": "dialogos-paphos-polis-cost"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Intrakat",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 42,
+        "value": {
+          "amount": 72.979,
+          "currency": "EUR",
+          "year": 2021,
+          "scope": "works",
+          "note": "Excluding VAT."
+        },
+        "noticeReference": "2021/S 131-344988",
+        "noticeUrl": "https://ted.europa.eu/en/notice/344988-2021/xml"
+      },
+      "note": {
+        "en": "Design-and-build contract with a contractual works period of 27 May 2021 to 26 November 2024 (42 months). The PWD says that from April 2024 nothing was being done except excavation on a small part of the works, that the contractor's claims reached EUR 36.2 million and a 59-month extension by October 2024 with the project 21.1% complete, and that the contract was discontinued. No termination date is given in the source read, so none is recorded. Performance guarantees are in court. The 2027 state budget carries EUR 90.2 million excluding VAT to complete the road, which is a cost to complete and not a total. The contract covers an at-grade junction at about chainage km 9+500 (the future Tsada interchange) and a terminal roundabout at about km 15+200 beyond Stroumbi. Length is the 15.5 km stated in the contract notice; the drawn OpenStreetMap line, one carriageway, measures about 14.9 km.",
+        "ro": "Contract de proiectare și execuție cu perioadă contractuală a lucrărilor între 27 mai 2021 și 26 noiembrie 2024 (42 de luni). PWD afirmă că din aprilie 2024 nu s-a executat nimic în afară de excavații pe o mică parte a lucrărilor, că pretențiile contractorului ajunseseră în octombrie 2024 la 36,2 milioane EUR și o prelungire de 59 de luni, cu proiectul finalizat în proporție de 21,1%, și că s-a întrerupt contractul. Sursa citită nu indică o dată a rezilierii, deci nu se înregistrează una. Garanțiile de bună execuție sunt în instanță. Bugetul de stat pentru 2027 cuprinde 90,2 milioane EUR fără TVA pentru finalizarea drumului, adică un cost de finalizare, nu un total. Contractul include un nod la nivel în jurul km 9+500 (viitorul nod Tsada) și un sens giratoriu terminal în jurul km 15+200, după Stroumbi. Lungimea este cea de 15,5 km din anunțul contractului; linia desenată din OpenStreetMap, o singură platformă, măsoară circa 14,9 km."
+      },
+      "sourceRefs": [
+        "ted-344988-2021",
+        "dialogos-paphos-polis-cost",
+        "politis-motorway-network-2027",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "phase-a-agia-marinouda-stroumbi"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ted-344988-2021",
+      "title": "TED notice 344988-2021: Design and build of the Paphos – Polis Chrysochous motorway, section 1, phase (A), tender PS/DB/16, contract award",
+      "url": "https://ted.europa.eu/en/notice/344988-2021/xml",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "dialogos-paphos-polis-cost",
+      "title": "Dialogos: Paphos–Polis Chrysochous motorway, cost of completion and progress (PWD statement, 28 August 2025)",
+      "url": "https://dialogos.com.cy/aytokinitodromos-pafoy-polis-chrysochoys-kostos-oloklirosis-kai-exelixi-ergoy-ti-ypostirizoyn-ta-dimosia-erga/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "politis-motorway-network-2027",
+      "title": "Politis: Cyprus Motorway Network Gears Up for Expansion (1 October 2026)",
+      "url": "https://en.politis.com.cy/news/cy-news/1041270/cyprus-motorway-network-gears-up-for-expansion",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: highway=construction ways, ref A7 (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

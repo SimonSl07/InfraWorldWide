@@ -1,0 +1,113 @@
+{
+  "id": "be-metro-3",
+  "country": "be",
+  "city": "be-brussels",
+  "category": "railway",
+  "name": {
+    "en": "Brussels Metro 3 (Albert – Gare du Nord – Bordet)",
+    "ro": "Metroul 3 din Bruxelles (Albert – Gare du Nord – Bordet)"
+  },
+  "description": {
+    "en": "North–south metro line for Brussels, planned at 10.3 km and 18 stations from Forest to Evere via the centre. Phase 1 adapts the existing pre-metro tunnel between Albert and Gare du Nord (raised platforms, new signalling, third rail), adds one new station, Toots Thielemans, and a junction structure under the Gare du Nord railway tracks. Phase 2 extends the line from Gare du Nord to Bordet with a 4.5 km tunnel, 7 stations and a depot at Haren. STIB-MIVB leads phase 1 and Beliris leads phase 2 and the Nord junction.",
+    "ro": "Linie de metrou nord–sud pentru Bruxelles, planificată la 10,3 km și 18 stații, de la Forest la Evere prin centru. Faza 1 adaptează tunelul de premetrou existent între Albert și Gare du Nord (peroane ridicate, semnalizare nouă, a treia șină), adaugă o stație nouă, Toots Thielemans, și o structură de racord sub liniile de cale ferată de la Gare du Nord. Faza 2 prelungește linia de la Gare du Nord la Bordet printr-un tunel de 4,5 km, cu 7 stații și un depou la Haren. STIB-MIVB conduce faza 1, iar Beliris conduce faza 2 și racordul de la Nord."
+  },
+  "operator": "be-stib-mivb",
+  "stationCount": 18,
+  "lots": [
+    {
+      "id": "phase-1-albert-gare-du-nord",
+      "name": {
+        "en": "Phase 1: Albert – Gare du Nord (pre-metro conversion)",
+        "ro": "Faza 1: Albert – Gare du Nord (conversia premetroului)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-08-01"
+      },
+      "lengthKm": 5.4,
+      "profile": {
+        "works": "upgrade",
+        "stationCount": 11
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2013-02-28",
+          "note": {
+            "en": "Brussels Government approves the general route and an automatic metro.",
+            "ro": "Guvernul Bruxelles aprobă traseul general și metroul automat."
+          },
+          "sourceRef": "metro3-project"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2020-08-01",
+          "note": {
+            "en": "Works start at Albert station.",
+            "ro": "Încep lucrările la stația Albert."
+          },
+          "sourceRef": "metro3-project"
+        }
+      ],
+      "note": {
+        "en": "Existing pre-metro tunnel (Albert to Gare du Nord) converted for metro: 11 stations, of which Toots Thielemans, between Gare du Midi and Anneessens, is the only new one. Works started at Albert on 1 August 2020, at Toots Thielemans on 1 October 2020 and at the Gare du Nord structure (led by Beliris) on 31 March 2021. The Albert terminus was put into service for tram line T18 on 28 August 2023; this is a tram service, not metro. The project page gives no budget, contractor or opening date. Length measured from OpenStreetMap geometry (tram 4 pre-metro route, Albert stop to Gare du Nord); it is not stated on the project page. The 10.3 km stated for the whole line is more than the two lot lengths add up to; the sources do not explain the difference.",
+        "ro": "Tunelul de premetrou existent (de la Albert la Gare du Nord) convertit pentru metrou: 11 stații, dintre care Toots Thielemans, între Gare du Midi și Anneessens, este singura nouă. Lucrările au început la Albert pe 1 august 2020, la Toots Thielemans pe 1 octombrie 2020 și la structura de la Gare du Nord (condusă de Beliris) pe 31 martie 2021. Terminalul Albert a fost pus în funcțiune pentru tramvaiul T18 pe 28 august 2023; este un serviciu de tramvai, nu de metrou. Pagina proiectului nu indică buget, constructor sau dată de deschidere. Lungimea este măsurată pe geometria OpenStreetMap (traseul de premetrou al tramvaiului 4, de la stația Albert la Gare du Nord); nu este indicată pe pagina proiectului. Cei 10,3 km indicați pentru întreaga linie depășesc suma lungimilor celor două loturi; sursele nu explică diferența."
+      },
+      "sourceRefs": [
+        "metro3-project",
+        "osm"
+      ],
+      "geometryRef": "phase-1-albert-gare-du-nord"
+    },
+    {
+      "id": "phase-2-gare-du-nord-bordet",
+      "name": {
+        "en": "Phase 2: Gare du Nord – Bordet",
+        "ro": "Faza 2: Gare du Nord – Bordet"
+      },
+      "status": "planned",
+      "lengthKm": 4.5,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 4.5,
+        "stationCount": 7
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2013-02-28",
+          "note": {
+            "en": "Brussels Government approves the general route and an automatic metro.",
+            "ro": "Guvernul Bruxelles aprobă traseul general și metroul automat."
+          },
+          "sourceRef": "metro3-project"
+        }
+      ],
+      "note": {
+        "en": "New 4.5 km tunnel with 7 stations (Liedts, Colignon, Verboekhoven, Riga, Tilleul, Paix, Bordet) and a depot at Haren. Beliris leads the works. The more precise route with the 7 stations was approved on 8 May 2014; the permit application was filed on 18 August 2017, re-filed on 5 December 2018 and an adapted file submitted on 25 September 2023. The permit procedure was still in progress on the project page, with no works start, budget, contractor or opening date. The line drawn from OpenStreetMap (a proposed subway way from Gare du Nord to Bordet) measures about 4.2 km.",
+        "ro": "Tunel nou de 4,5 km cu 7 stații (Liedts, Colignon, Verboekhoven, Riga, Tilleul, Paix, Bordet) și un depou la Haren. Beliris conduce lucrările. Traseul mai precis, cu cele 7 stații, a fost aprobat pe 8 mai 2014; cererea de autorizare a fost depusă pe 18 august 2017, redepusă pe 5 decembrie 2018, iar un dosar adaptat a fost depus pe 25 septembrie 2023. Procedura de autorizare era încă în curs pe pagina proiectului, fără început de lucrări, buget, constructor sau dată de deschidere. Linia desenată din OpenStreetMap (un tronson de metrou propus de la Gare du Nord la Bordet) măsoară circa 4,2 km."
+      },
+      "sourceRefs": [
+        "metro3-project",
+        "osm"
+      ],
+      "geometryRef": "phase-2-gare-du-nord-bordet"
+    }
+  ],
+  "sources": [
+    {
+      "id": "metro3-project",
+      "title": "Metro 3: Le projet (18 stations, 10,3 km, phases 1 and 2, chronology 1957–2023)",
+      "url": "https://metro3.be/fr/project",
+      "publisher": "STIB-MIVB / Beliris",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): tram route relation 58536 and proposed subway way 530371377",
+      "url": "https://www.openstreetmap.org/relation/58536",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

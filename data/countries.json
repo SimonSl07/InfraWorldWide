@@ -1,5 +1,5 @@
 {
-  "note": "Per-country area and population, used only to normalise infrastructure length (km per 1,000 km², km per million people) so that countries of very different size stay comparable. Area comes from the CIA World Factbook and population from Eurostat for its reporting countries; the CIA World Factbook supplies population for countries outside Eurostat coverage. Serbia uses Factbook area and Eurostat population; Bosnia and Herzegovina and North Macedonia use Factbook area and population values. Both sources exclude Kosovo from Serbia, matching the Natural Earth outline in data/geo/countries/rs.geojson. The Factbook was retired in February 2026 and cia.gov no longer serves the country pages. Wayback snapshots of them do not help either: they captured only the page shell, because the figures were loaded client-side. The areas are therefore cited to factbook.json, the public-domain machine-readable conversion of the final (2025) edition, which is where these values were actually read and which still resolves.",
+  "note": "Per-country area and population, used only to normalise infrastructure length (km per 1,000 km², km per million people) so that countries of very different size stay comparable. Area comes from the CIA World Factbook and population from Eurostat for its reporting countries; the CIA World Factbook supplies population for countries outside Eurostat coverage. Serbia uses Factbook area and Eurostat population; Bosnia and Herzegovina and North Macedonia use Factbook area and population values. Both sources exclude Kosovo from Serbia, matching the Natural Earth outline in data/geo/countries/rs.geojson. The Factbook was retired in February 2026 and cia.gov no longer serves the country pages. Wayback snapshots of them do not help either: they captured only the page shell, because the figures were loaded client-side. The areas are therefore cited to factbook.json, the public-domain machine-readable conversion of the final (2025) edition, which is where these values were actually read and which still resolves. Cyprus uses the Factbook total less the 3,355 sq km it lists in north Cyprus, because Eurostat population and the Natural Earth outline in data/geo/countries/cy.geojson both cover the Republic of Cyprus only.",
   "countries": {
     "bg": {
       "areaKm2": 110879,
@@ -410,6 +410,111 @@
         {
           "title": "Eurostat: Population change, demographic balance and crude rates at national level [demo_gind], Lithuania, population on 1 January 2026 (2,890.7 thousand)",
           "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/1787.pdf"
+        }
+      ]
+    },
+    "lu": {
+      "areaKm2": 2586,
+      "population": 681973,
+      "populationDate": "2025-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), Luxembourg, Geography: Area (total 2,586 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/lu.json"
+        },
+        {
+          "title": "Eurostat: Population on 1 January by age and sex [demo_pjan], total population, Luxembourg, 2025",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table"
+        }
+      ]
+    },
+    "ie": {
+      "areaKm2": 70273,
+      "population": 5440278,
+      "populationDate": "2025-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), Ireland, Geography: Area (total 70,273 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/ei.json"
+        },
+        {
+          "title": "Eurostat: Population on 1 January by age and sex [demo_pjan], total population, Ireland, 2025",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table"
+        }
+      ]
+    },
+    "be": {
+      "areaKm2": 30528,
+      "population": 11883495,
+      "populationDate": "2025-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), Belgium, Geography: Area (total 30,528 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/be.json"
+        },
+        {
+          "title": "Eurostat: Population on 1 January by age and sex [demo_pjan], total population, Belgium, 2025",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table"
+        }
+      ]
+    },
+    "ee": {
+      "areaKm2": 45228,
+      "population": 1369995,
+      "populationDate": "2025-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), Estonia, Geography: Area (total 45,228 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/en.json"
+        },
+        {
+          "title": "Eurostat: Population on 1 January by age and sex [demo_pjan], total population, Estonia, 2025",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table"
+        }
+      ]
+    },
+    "cy": {
+      "areaKm2": 5896,
+      "population": 982966,
+      "populationDate": "2025-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), Cyprus, Geography: Area (total 9,251 sq km, of which 3,355 sq km are in north Cyprus; 9,251 minus 3,355 = 5,896 sq km used, the area of the Republic of Cyprus), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/cy.json"
+        },
+        {
+          "title": "Eurostat: Population on 1 January by age and sex [demo_pjan], total population, Cyprus, 2025 (Republic of Cyprus, government-controlled area)",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table"
+        }
+      ]
+    },
+    "ch": {
+      "areaKm2": 41277,
+      "population": 9051029,
+      "populationDate": "2025-01",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), Switzerland, Geography: Area (total 41,277 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/sz.json"
+        },
+        {
+          "title": "Eurostat: Population on 1 January by age and sex [demo_pjan], total population, Switzerland, 2025",
+          "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table"
+        }
+      ]
+    },
+    "gb": {
+      "areaKm2": 243610,
+      "population": 69484000,
+      "populationDate": "2025-06",
+      "sources": [
+        {
+          "title": "CIA World Factbook 2025 (final edition), United Kingdom, Geography: Area (total 243,610 sq km), via factbook.json",
+          "url": "https://github.com/factbook/factbook.json/blob/master/europe/uk.json"
+        },
+        {
+          "title": "Office for National Statistics: Population estimates for the UK, mid-2025 (69,484,000; not Eurostat, as the UK no longer reports to demo_pjan)",
+          "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2025"
         }
       ]
     },

@@ -1,0 +1,51 @@
+{
+  "id": "cy-a6-limassol-paphos",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A6 Limassol – Paphos",
+    "ro": "Autostrada A6 Limassol – Paphos"
+  },
+  "description": {
+    "en": "Motorway linking Limassol and Paphos along the south-west coast, 66 km long. Wikipedia states it was completed in 2006, together with updates to the Polemidia and Troodos junctions, which closed the four-lane motorway network between Cyprus's major cities. It passes through the Akrotiri Sovereign Base Area, where it runs in two 950 m two-lane tunnels (one per direction), and crosses a 550 m bridge, 110 m high, near Petra tou Romiou. No per-section opening dates, costs or contractors were found in a fetched source, so the motorway is recorded as one lot and the structures are not modelled separately.",
+    "ro": "Autostradă între Limassol și Paphos, pe coasta de sud-vest, lungă de 66 km. Wikipedia indică finalizarea în 2006, odată cu lucrări la nodurile Polemidia și Troodos, ceea ce a închis rețeaua de autostrăzi cu patru benzi dintre marile orașe ale Ciprului. Traversează zona bazei suverane Akrotiri, unde trece prin două tuneluri cu două benzi de 950 m (câte unul pe sens), și un viaduct de 550 m și 110 m înălțime lângă Petra tou Romiou. Nu s-au găsit într-o sursă consultată date de deschidere pe sectoare, costuri sau constructori, deci autostrada este înregistrată ca un singur lot, iar structurile nu sunt modelate separat."
+  },
+  "operator": "cy-pwd",
+  "lots": [
+    {
+      "id": "a6-limassol-paphos",
+      "name": {
+        "en": "Polemidia/Troodos junction (Limassol) – Paphos",
+        "ro": "Nodul Polemidia/Troodos (Limassol) – Paphos"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2006"
+      },
+      "lengthKm": 66,
+      "note": {
+        "en": "Opening date is the year of completion given by Wikipedia; sections may have opened earlier. Length is the stated 66 km; the OpenStreetMap carriageway drawn here measures about 61 km between the Polemidia junction and the Konia end, so the drawn line is shorter than the stated length. No source for the date was found beyond Wikipedia, which carries no citations.",
+        "ro": "Data deschiderii este anul finalizării indicat de Wikipedia; este posibil ca unele sectoare să fi fost deschise mai devreme. Lungimea este cea indicată, de 66 km; traseul OpenStreetMap desenat aici măsoară circa 61 km între nodul Polemidia și capătul Konia, deci linia desenată este mai scurtă decât lungimea indicată. Nu s-a găsit altă sursă pentru dată decât Wikipedia, care nu are citări."
+      },
+      "sourceRefs": [
+        "wikipedia-a6-cyprus",
+        "osm"
+      ],
+      "geometryRef": "a6-limassol-paphos"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-a6-cyprus",
+      "title": "Wikipedia: A6 motorway (Cyprus)",
+      "url": "https://en.wikipedia.org/wiki/A6_motorway_(Cyprus)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): A6 motorway geometry",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
