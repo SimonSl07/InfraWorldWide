@@ -1,0 +1,130 @@
+{
+  "id": "md-m3-slobozia-mare-bypass",
+  "country": "md",
+  "category": "highway",
+  "name": {
+    "en": "M3 Slobozia Mare bypass",
+    "ro": "Drumul M3, ocolirea Slobozia Mare"
+  },
+  "description": {
+    "en": "16.6 km two-lane bypass of Slobozia Mare on the M3 national road towards Giurgiulești, opened on 27 July 2026. EBRD-financed; the works were let as an initial contract of EUR 12.412 million and a second contract signed in December 2024 for the remaining works.",
+    "ro": "Ocolirea de 16,6 km, cu două benzi, a localității Slobozia Mare pe drumul național M3 spre Giurgiulești, deschisă circulației la 27 iulie 2026. Finanțată de BERD; lucrările au fost contractate printr-un contract inițial de 12,412 milioane EUR și un al doilea contract, semnat în decembrie 2024, pentru lucrările rămase."
+  },
+  "operator": "md-and",
+  "lots": [
+    {
+      "id": "m3-slobozia-mare-bypass",
+      "name": {
+        "en": "Slobozia Mare bypass",
+        "ro": "Ocolirea Slobozia Mare"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2024-12-06",
+        "opened": "2026-07-27"
+      },
+      "lengthKm": 16.6,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 11.135,
+              "currency": "EUR",
+              "year": 2024,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Value of the contract signed in December 2024 for the remaining works, as stated by AND; VAT basis not stated."
+            },
+            "date": "2024-12-06",
+            "sourceRef": "and-opening-release"
+          }
+        ]
+      },
+      "profile": {
+        "terrain": "plain",
+        "lanes": 2
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "EBRD financing, as stated by AND.",
+            "ro": "Finanțare BERD, conform AND."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Irinda Prim & Nouconst Joint Venture",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 12,
+        "value": {
+          "amount": 11.135,
+          "currency": "EUR",
+          "year": 2024,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "VAT basis not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-12-06",
+          "note": {
+            "en": "Contract RSP/W15/04 for the remaining works signed.",
+            "ro": "Contractul RSP/W15/04 pentru lucrările rămase a fost semnat."
+          },
+          "sourceRef": "and-dashboard-w15-04"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-07-27",
+          "sourceRef": "and-opening-release"
+        }
+      ],
+      "note": {
+        "en": "AND gives two contract values: EUR 12.412 million for the initial contract and EUR 11.135 million for the one signed in December 2024, about EUR 24 million in total; the initial contract's dates and contractor are not on the pages consulted, so only the second is recorded as a contract. The AND monthly dashboard for RSP/W15/04 (remaining works, km 0+000–16+598) lists EUR 10.46 million as the accepted contract value, names Irinda Prim & Nouconst Joint Venture as contractor, 17 March 2025 as commencement and 17 March 2026 as the end date of the period of works; the 12-month execution period is read from that date range. The MIDR Q4 2025 report labels the same contract as km 0+000–18+290. Construction start of the road is not stated and is left blank. Length is the AND figure; the OSM centreline measures about 16.4 km.",
+        "ro": "AND indică două valori contractuale: 12,412 milioane EUR pentru contractul inițial și 11,135 milioane EUR pentru cel semnat în decembrie 2024, în total circa 24 de milioane EUR; datele și constructorul contractului inițial nu apar în paginile consultate, așa că doar al doilea este înregistrat ca contract. Tabloul lunar AND pentru RSP/W15/04 (lucrări rămase, km 0+000–16+598) indică 10,46 milioane EUR ca valoare acceptată a contractului, numește asocierea Irinda Prim & Nouconst ca antreprenor, 17 martie 2025 ca dată de începere și 17 martie 2026 ca termen al perioadei de execuție; durata de 12 luni rezultă din acest interval. Raportul MIDR din trimestrul IV 2025 etichetează același contract km 0+000–18+290. Începutul construcției drumului nu este indicat și rămâne necompletat. Lungimea este cea indicată de AND; axa OSM măsoară circa 16,4 km."
+      },
+      "sourceRefs": [
+        "and-opening-release",
+        "and-dashboard-w15-04",
+        "midr-q4-2025",
+        "osm-m3-slobozia-mare"
+      ],
+      "geometryRef": "m3-slobozia-mare-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "and-opening-release",
+      "title": "AND: A fost deschisă circulația pe drumul M3, ocolirea Slobozia Mare (27 July 2026)",
+      "url": "https://www.andsa.md/comunicate-de-presa/ro-fost-deschis-circula-ia-pe-drumul-m3-ocolirea-slobozia-mare/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "and-dashboard-w15-04",
+      "title": "AND: Contract RSP/W15/04, Construction of M3 Slobozia Mare Bypass, km 0+000–km 16+598 (remaining works), monthly dashboard of 16 May 2025",
+      "url": "https://www.andsa.md/wp-content/uploads/2025/05/RSP.W15.04Aprilie.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "midr-q4-2025",
+      "title": "MIDR: Infrastructura de transport în curs de implementare, trimestrul IV 2025",
+      "url": "https://midr.gov.md/files/shares/6_Infrastructur___de_transport___n_curs_de_implementare_IV.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-m3-slobozia-mare",
+      "title": "OpenStreetMap contributors (ODbL): M3 Comrat – Giurgiulești, ways 1545325537, 1545325538 and 702308892",
+      "url": "https://www.openstreetmap.org/way/702308892",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastUpdated": "2026-11-09"
+}

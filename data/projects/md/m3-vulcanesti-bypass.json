@@ -1,0 +1,141 @@
+{
+  "id": "md-m3-vulcanesti-bypass",
+  "country": "md",
+  "category": "highway",
+  "name": {
+    "en": "M3 Vulcănești Bypass",
+    "ro": "Ocolirea Vulcănești (M3)"
+  },
+  "description": {
+    "en": "Bypass of the town of Vulcănești on the M3 Chișinău – Comrat – Giurgiulești road, contract RSP/W14/01. New road at km 2+800 – 8+580, reconstruction of an existing sector at km 0+100 – 2+800, a bridge at km 2+965 and an agricultural underpass at km 4+690. Opened on 18 December 2025.",
+    "ro": "Ocolirea orașului Vulcănești pe drumul M3 Chișinău – Comrat – Giurgiulești, contractul RSP/W14/01. Drum nou la km 2+800 – 8+580, reconstrucția unui sector existent la km 0+100 – 2+800, un pod la km 2+965 și un pasaj pentru tehnică agricolă la km 4+690. Deschis circulației la 18 decembrie 2025."
+  },
+  "operator": "md-and",
+  "lots": [
+    {
+      "id": "m3-vulcanesti-bypass",
+      "name": {
+        "en": "Vulcănești bypass (km 0+000 – 8+580)",
+        "ro": "Ocolirea Vulcănești (km 0+000 – 8+580)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2023-08-15",
+        "opened": "2025-12-18"
+      },
+      "lengthKm": 8.58,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 21.29,
+              "currency": "EUR",
+              "year": 2023,
+              "scope": "works",
+              "note": "Accepted contract value of RSP/W14/01 as shown in the AND progress report; VAT treatment not stated."
+            },
+            "date": "2023-06-13",
+            "sourceRef": "and-progress-report-rsp-w14-01"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 21.29,
+          "currency": "EUR",
+          "year": 2023,
+          "scope": "works",
+          "note": "Accepted contract value; VAT treatment not stated."
+        },
+        "noticeUrl": "https://www.andsa.md/wp-content/uploads/2025/05/RSP.W14.01Aprilie.pdf"
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-04-27",
+          "note": {
+            "en": "Invitation to tender issued.",
+            "ro": "Invitația pentru depunerea ofertelor."
+          },
+          "sourceRef": "and-progress-report-rsp-w14-01"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-06-13",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "and-progress-report-rsp-w14-01"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-08-15",
+          "note": {
+            "en": "Notice to commence works.",
+            "ro": "Notificarea de începere a lucrărilor."
+          },
+          "sourceRef": "and-progress-report-rsp-w14-01"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-12-18",
+          "note": {
+            "en": "Opened to traffic, two months before the contractual deadline of February 2026.",
+            "ro": "Deschis circulației, cu două luni înainte de termenul contractual din februarie 2026."
+          },
+          "sourceRef": "and-press-release-vulcanesti-opening"
+        }
+      ],
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "Financed by the European Bank for Reconstruction and Development (EBRD project ID 45094). Loan terms not stated in the sources.",
+            "ro": "Finanțat de Banca Europeană pentru Reconstrucție și Dezvoltare (BERD, ID proiect 45094). Condițiile creditului nu sunt precizate în surse."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Automagistral-Pivden LLC",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "AND quotes about 8.5 km in the opening release and 8.58 km in the progress report; the bypass chainage restarts at km 0. Drawn length from OpenStreetMap is 8.34 km. The works save about 20 km on the Chișinău – Giurgiulești route. The progress report names EPTISA Servicios de Ingenieria as supervising engineer. The release states the project value at about EUR 21 million. Part of the route (km 0+100 – 2+800) is a reconstruction of an existing sector.",
+        "ro": "AND indică circa 8,5 km în comunicatul de deschidere și 8,58 km în raportul de progres; kilometrajul ocolirii pornește de la km 0. Lungimea desenată din OpenStreetMap este de 8,34 km. Lucrările scurtează cu circa 20 km ruta Chișinău – Giurgiulești. Raportul de progres numește EPTISA Servicios de Ingenieria drept inginer supervizor. Comunicatul indică valoarea proiectului la circa 21 milioane de euro. O parte din traseu (km 0+100 – 2+800) este reconstrucția unui sector existent."
+      },
+      "profile": {
+        "works": "greenfield"
+      },
+      "sourceRefs": [
+        "and-press-release-vulcanesti-opening",
+        "and-progress-report-rsp-w14-01",
+        "osm-m3-vulcanesti"
+      ],
+      "geometryRef": "m3-vulcanesti-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "and-press-release-vulcanesti-opening",
+      "title": "AND: Ocolirea Vulcănești deschisă circulației (press release, 18 December 2025)",
+      "url": "https://www.andsa.md/comunicate-de-presa/de-la-trafic-greu-prin-oras-la-un-drum-nou-modern-construit-de-la-zero-ocolirea-vulcanesti-deschisa-circulatiei/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "and-progress-report-rsp-w14-01",
+      "title": "AND: Raport de progres RSP/W14/01 (April 2025)",
+      "url": "https://www.andsa.md/wp-content/uploads/2025/05/RSP.W14.01Aprilie.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-m3-vulcanesti",
+      "title": "OpenStreetMap contributors: M3 Vulcănești bypass (ODbL)",
+      "url": "https://www.openstreetmap.org/way/702305078",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
