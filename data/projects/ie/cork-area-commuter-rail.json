@@ -1,0 +1,122 @@
+{
+  "id": "ie-cork-area-commuter-rail",
+  "country": "ie",
+  "category": "railway",
+  "name": {
+    "en": "Cork Area Commuter Rail, Phase 1",
+    "ro": "Calea ferată de navetiști din zona Cork, faza 1"
+  },
+  "description": {
+    "en": "Phase 1 of Irish Rail's Cork Area Commuter Rail Programme: a through platform at Cork Kent station (platforms 5b and 6), a second track on the Midleton line from Cobh Junction to Midleton, and an upgrade of signalling and communications between Mallow and Cobh/Midleton. The signalling works are not mapped: Alstom was awarded the design and build contract in June 2023, construction began in January 2024 and completion is scheduled for 2027.",
+    "ro": "Faza 1 a programului Cork Area Commuter Rail al Irish Rail: o peronă de trecere la gara Cork Kent (peroanele 5b și 6), a doua cale pe linia Midleton de la Cobh Junction la Midleton și modernizarea semnalizării și comunicațiilor între Mallow și Cobh/Midleton. Lucrările de semnalizare nu sunt cartografiate: Alstom a primit contractul de proiectare și execuție în iunie 2023, lucrările au început în ianuarie 2024, iar finalizarea este programată pentru 2027."
+  },
+  "operator": "ie-iarnrod-eireann",
+  "lots": [
+    {
+      "id": "kent-station-through-platform",
+      "name": {
+        "en": "Kent Station through platform",
+        "ro": "Peronul de trecere din gara Kent"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-04"
+      },
+      "lengthKm": 0.22,
+      "profile": {
+        "works": "upgrade",
+        "stationCount": 1
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Primarily funded by the NextGenerationEU recovery instrument, with exchequer funding from the Department of Transport through the NTA",
+            "ro": "Finanțat în principal din instrumentul de redresare NextGenerationEU, cu fonduri de la bugetul statului prin Departamentul Transporturilor, prin NTA"
+          }
+        }
+      ],
+      "note": {
+        "en": "A 220 m long, 6 m wide, double-sided extension to platform 5 provides the new platform 5b, with a new platform 6, to allow through running of services from Cobh and Midleton. Construction was completed in March 2025 and the platforms entered service in April 2025. Drawn along the OpenStreetMap outline of platform 6.",
+        "ro": "O extindere de 220 m lungime și 6 m lățime, cu două fețe, a peronului 5 oferă noul peron 5b, împreună cu noul peron 6, pentru circulația de tranzit a trenurilor dinspre Cobh și Midleton. Lucrările s-au încheiat în martie 2025, iar peroanele au intrat în funcțiune în aprilie 2025. Trasat după conturul peronului 6 din OpenStreetMap."
+      },
+      "sourceRefs": [
+        "irishrail-cork-kent-platform",
+        "irishrail-cork-area-commuter-rail"
+      ],
+      "geometryRef": "kent-station-through-platform"
+    },
+    {
+      "id": "glounthaune-midleton-twin-track",
+      "name": {
+        "en": "Glounthaune – Midleton twin track",
+        "ro": "A doua cale Glounthaune – Midleton"
+      },
+      "status": "under_construction",
+      "lengthKm": 10,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Primarily funded by the NextGenerationEU recovery instrument, with exchequer funding from the Department of Transport through the NTA",
+            "ro": "Finanțat în principal din instrumentul de redresare NextGenerationEU, cu fonduri de la bugetul statului prin Departamentul Transporturilor, prin NTA"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "BAM",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "A second track over the full extent of the Midleton line, about 10 km from Cobh Junction to Midleton, with sidings and turn-back facilities at Midleton. A Railway Order was granted by An Bord Pleanála in November 2023. BAM was awarded the civil works contract after a tender. Construction began in autumn 2024 and is now largely complete; testing of the twin-tracking infrastructure is scheduled to begin in 2027. No contract value is published on the cited pages.",
+        "ro": "A doua cale pe toată lungimea liniei Midleton, circa 10 km de la Cobh Junction la Midleton, cu linii de garare și facilități de întoarcere la Midleton. An Bord Pleanála a acordat Railway Order în noiembrie 2023. BAM a primit contractul pentru lucrările civile în urma unei licitații. Lucrările au început în toamna anului 2024 și sunt în mare parte finalizate; testarea infrastructurii cu două căi este programată să înceapă în 2027. Paginile citate nu publică valoarea contractului."
+      },
+      "sourceRefs": [
+        "irishrail-cork-twin-track",
+        "irishrail-cork-area-commuter-rail"
+      ],
+      "geometryRef": "glounthaune-midleton-twin-track"
+    }
+  ],
+  "sources": [
+    {
+      "id": "irishrail-cork-area-commuter-rail",
+      "title": "Iarnród Éireann: Cork Area Commuter Rail",
+      "url": "https://www.irishrail.ie/en-ie/about-us/iarnrod-eireann-projects-and-investments/cork-area-commuter-rail",
+      "publisher": "Iarnród Éireann (Irish Rail)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "irishrail-cork-kent-platform",
+      "title": "Iarnród Éireann: Kent Station Through Platform",
+      "url": "https://www.irishrail.ie/en-ie/about-us/iarnrod-eireann-projects-and-investments/cork-area-commuter-rail/kent-station-through-platform",
+      "publisher": "Iarnród Éireann (Irish Rail)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "irishrail-cork-twin-track",
+      "title": "Iarnród Éireann: Glounthaune to Midleton Twin Track",
+      "url": "https://www.irishrail.ie/en-ie/about-us/iarnrod-eireann-projects-and-investments/cork-area-commuter-rail/glounthaune-to-midleton-twin-track-project",
+      "publisher": "Iarnród Éireann (Irish Rail)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "Iarnród Éireann: Signalling and Communications Upgrade",
+      "url": "https://www.irishrail.ie/en-ie/about-us/iarnrod-eireann-projects-and-investments/cork-area-commuter-rail/signalling-and-communications-upgrade",
+      "publisher": "Iarnród Éireann (Irish Rail)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

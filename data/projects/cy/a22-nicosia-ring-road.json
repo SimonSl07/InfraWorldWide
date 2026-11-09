@@ -1,0 +1,228 @@
+{
+  "id": "cy-a22-nicosia-ring-road",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A22 Nicosia Ring Road",
+    "ro": "Șoseaua de centură A22 a Nicosiei"
+  },
+  "description": {
+    "en": "Planned 32 km southern and western orbital motorway around Nicosia, divided into five phases. Phase A1 opened in 2024 and Phase B3 was awarded in 2025. Phases B, D and E are planned. Phase C, Anthoupolis–Anageia, is recorded with the A10 project, not here.",
+    "ro": "Autostradă de centură planificată, de 32 km, la sud și vest de Nicosia, împărțită în cinci faze. Faza A1 a fost deschisă în 2024, iar Faza B3 a fost atribuită în 2025. Fazele B, D și E sunt planificate. Faza C, Anthoupolis–Anageia, este înregistrată în proiectul A10, nu aici."
+  },
+  "operator": "cy-pwd",
+  "lots": [
+    {
+      "id": "a1-tseri-idalion",
+      "name": {
+        "en": "Phase A1: Tseri roundabout – A1 junction near Idalion",
+        "ro": "Faza A1: sensul giratoriu Tseri – nodul A1 de lângă Idalion"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-02-11",
+        "constructionStart": "2020-03-23",
+        "opened": "2024-08-08"
+      },
+      "lengthKm": 7.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 60.745,
+              "currency": "EUR",
+              "year": 2020,
+              "scope": "works",
+              "note": "Total contract value excluding VAT, as published in the TED award notice."
+            },
+            "date": "2020-02-11",
+            "sourceRef": "ted-134946-2020"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Cyfield Construction Limited",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 60.745,
+          "currency": "EUR",
+          "year": 2020,
+          "scope": "works"
+        },
+        "noticeReference": "134946-2020",
+        "noticeUrl": "https://ted.europa.eu/en/notice/134946-2020/xml"
+      },
+      "note": {
+        "en": "First of five stages of the Nicosia ring road: a four-lane motorway of 7.5 km from the A1 near the Idalion industrial area to Strovolos–Tseri Avenue, with local-road works alongside (Public Works Department contract PS/C/765(A1)). Wikipedia dates the opening to 8 August 2024 and the end of the local-road works to 6 November 2024; Politis gives November 2024 for the opening. The 8 August 2024 date is used. Contract concluded 11 February 2020. Works began on 23 March 2020. The drawn centreline measures 7.69 km.",
+        "ro": "Prima din cele cinci etape ale șoselei de centură a Nicosiei: autostradă cu patru benzi de 7,5 km, de la A1 lângă zona industrială Idalion până la bulevardul Strovolos–Tseri, cu lucrări la drumurile locale alăturate (contractul PS/C/765(A1) al Departamentului Lucrări Publice). Wikipedia datează deschiderea la 8 august 2024 și încheierea lucrărilor la drumurile locale la 6 noiembrie 2024; Politis indică noiembrie 2024 pentru deschidere. Se folosește data de 8 august 2024. Contract încheiat la 11 februarie 2020. Lucrările au început la 23 martie 2020. Traseul desenat măsoară 7,69 km."
+      },
+      "sourceRefs": [
+        "ted-134946-2020",
+        "wikipedia-a22-motorway-cyprus",
+        "politis-motorway-network-expansion",
+        "openstreetmap-a22"
+      ],
+      "geometryRef": "a1-tseri-idalion"
+    },
+    {
+      "id": "b-tseri-anthoupolis",
+      "name": {
+        "en": "Phase B: Tseri roundabout – Anthoupolis (B1 and link to B3)",
+        "ro": "Faza B: sensul giratoriu Tseri – Anthoupolis (B1 și legătura cu B3)"
+      },
+      "status": "planned",
+      "lengthKm": 2.97,
+      "note": {
+        "en": "Planned section of the ring road between the end of Phase A1 and the start of Phase B3, mapped in OpenStreetMap as a proposed tunnel. Wikipedia describes Phase B as 5.7 km, of which 3.2 km in tunnel, estimated at about EUR 130 million and postponed until the first phase of the A10 is complete; B1 is described there as running from the E901 to Archbishop Makarios III Avenue. The official split of Phase B into sub-phases and the exact extent of the tunnel are not confirmed by the sources read, so no cost is recorded. Length measured from OpenStreetMap geometry.",
+        "ro": "Secțiune planificată a șoselei de centură între capătul Fazei A1 și începutul Fazei B3, cartografiată în OpenStreetMap ca tunel propus. Wikipedia descrie Faza B ca având 5,7 km, din care 3,2 km în tunel, estimată la circa 130 de milioane EUR și amânată până la finalizarea primei faze a A10; B1 este descrisă acolo ca mergând de la E901 la bulevardul Arhiepiscop Makarios III. Împărțirea oficială a Fazei B în subfaze și extinderea exactă a tunelului nu sunt confirmate de sursele citite, deci nu se înregistrează niciun cost. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-a22-motorway-cyprus",
+        "openstreetmap-a22"
+      ],
+      "geometryRef": "b-tseri-anthoupolis"
+    },
+    {
+      "id": "b3-anthoupolis",
+      "name": {
+        "en": "Phase B3: Lakatamia–Deftera road – Anthoupolis",
+        "ro": "Faza B3: drumul Lakatamia–Deftera – Anthoupolis"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-07-30"
+      },
+      "lengthKm": 2.15,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 29.92,
+              "currency": "EUR",
+              "year": 2025,
+              "scope": "works",
+              "note": "Payable amount in the TED award notice. The notice's estimated overall contract amount is EUR 35.766 million."
+            },
+            "date": "2025-07-30",
+            "sourceRef": "ted-502563-2025"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Politis reports 85% funding from the Cohesion Fund through the THALIA 2021-2027 programme.",
+            "ro": "Politis raportează o finanțare de 85% din Fondul de coeziune prin programul THALIA 2021-2027."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Iacovou Brothers (Constructions) Ltd",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 29.92,
+          "currency": "EUR",
+          "year": 2025,
+          "scope": "works"
+        },
+        "noticeReference": "502563-2025",
+        "noticeUrl": "https://ted.europa.eu/en/notice/502563-2025/xml"
+      },
+      "note": {
+        "en": "New four-lane alignment of 2,150 m with a roundabout at the Lakatamia–Deftera road (E902), a bridge over the Pediaios river, two overpasses and connecting roads at the Nicosia–Palaichori road (E903) at the entrance to the Anthoupolis settlements (tender KPS/45/2023/E(A)). The TED notice names Iacovou Brothers (Constructions) Ltd; Politis reports a Cyfield–Iacovou joint venture. Politis gives about EUR 37 million including VAT (EUR 29.9 million plus VAT), a contract signed in July 2025 and completion scheduled for July 2028. Politis describes the phase as under construction, but no construction start date was found, so the lot stays at contract award. The drawn centreline measures 2.17 km.",
+        "ro": "Traseu nou cu patru benzi de 2.150 m, cu sens giratoriu la drumul Lakatamia–Deftera (E902), un pod peste râul Pediaios, două pasaje superioare și drumuri de legătură la drumul Nicosia–Palaichori (E903), la intrarea în așezările Anthoupolis (licitația KPS/45/2023/E(A)). Anunțul TED numește Iacovou Brothers (Constructions) Ltd; Politis raportează o asociere Cyfield–Iacovou. Politis indică circa 37 de milioane EUR cu TVA (29,9 milioane EUR plus TVA), contract semnat în iulie 2025 și finalizare programată pentru iulie 2028. Politis descrie faza ca fiind în construcție, dar nu s-a găsit o dată de începere a lucrărilor, așa că lotul rămâne la atribuirea contractului. Traseul desenat măsoară 2,17 km."
+      },
+      "sourceRefs": [
+        "ted-502563-2025",
+        "politis-motorway-network-expansion",
+        "openstreetmap-a22"
+      ],
+      "geometryRef": "b3-anthoupolis"
+    },
+    {
+      "id": "d-idalion-geri",
+      "name": {
+        "en": "Phase D: A1 junction – Geri",
+        "ro": "Faza D: nodul A1 – Geri"
+      },
+      "status": "planned",
+      "lengthKm": 5,
+      "note": {
+        "en": "Planned 5 km of motorway from the A1 junction past Latsia to Geri, with about 4 km of secondary road improvements and stub lanes prepared at the A1 junction (Wikipedia). The drawn OpenStreetMap proposed alignment measures 6.29 km, longer than the 5 km recorded; the sourced figure is kept.",
+        "ro": "Cinci km planificați de autostradă de la nodul A1, pe lângă Latsia, până la Geri, cu circa 4 km de îmbunătățiri ale drumurilor secundare și benzi de așteptare pregătite la nodul A1 (Wikipedia). Traseul propus desenat din OpenStreetMap măsoară 6,29 km, mai mult decât cei 5 km înregistrați; cifra din sursă se păstrează."
+      },
+      "sourceRefs": [
+        "wikipedia-a22-motorway-cyprus",
+        "openstreetmap-a22"
+      ],
+      "geometryRef": "d-idalion-geri"
+    },
+    {
+      "id": "e-a10-a9",
+      "name": {
+        "en": "Phase E: A10 – A9",
+        "ro": "Faza E: A10 – A9"
+      },
+      "status": "planned",
+      "lengthKm": 2.5,
+      "note": {
+        "en": "Planned 2.5 km of motorway between the A10 and the A9 with a cloverleaf junction at each, and about 2.5 km of secondary road improvements (Wikipedia). The drawn OpenStreetMap proposed alignment, which runs to the A9 slip road, measures 3.40 km, longer than the 2.5 km recorded; the sourced figure is kept.",
+        "ro": "Doi km și jumătate planificați de autostradă între A10 și A9, cu câte un nod în trifoi la fiecare, și circa 2,5 km de îmbunătățiri ale drumurilor secundare (Wikipedia). Traseul propus desenat din OpenStreetMap, care ajunge la bretea A9, măsoară 3,40 km, mai mult decât cei 2,5 km înregistrați; cifra din sursă se păstrează."
+      },
+      "sourceRefs": [
+        "wikipedia-a22-motorway-cyprus",
+        "openstreetmap-a22"
+      ],
+      "geometryRef": "e-a10-a9"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ted-134946-2020",
+      "title": "TED notice 134946-2020: Nicosia ring road, Phase A1 (PS/C/765(A1)), Cyfield Construction Limited, EUR 60,745,000, concluded 2020-02-11",
+      "url": "https://ted.europa.eu/en/notice/134946-2020/xml",
+      "publisher": "Publications Office of the EU",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ted-502563-2025",
+      "title": "TED notice 502563-2025: Phase B3, Anthoupolis section, Iacovou Brothers (Constructions) Ltd, payable amount EUR 29,920,000, 2025-07-30",
+      "url": "https://ted.europa.eu/en/notice/502563-2025/xml",
+      "publisher": "Publications Office of the EU",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-a22-motorway-cyprus",
+      "title": "Wikipedia: A22 motorway (Cyprus)",
+      "url": "https://en.wikipedia.org/wiki/A22_motorway_(Cyprus)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "politis-motorway-network-expansion",
+      "title": "Politis: Cyprus motorway network gears up for expansion",
+      "url": "https://en.politis.com.cy/news/cy-news/1041270/cyprus-motorway-network-gears-up-for-expansion",
+      "publisher": "Politis",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-a22",
+      "title": "OpenStreetMap contributors: A22 Nicosia ring road geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

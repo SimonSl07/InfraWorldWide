@@ -1,0 +1,102 @@
+{
+  "id": "lu-rail-pulvermuhle-viaduct",
+  "country": "lu",
+  "category": "bridge",
+  "name": {
+    "en": "Second Pulvermühle viaduct and Luxembourg station north head",
+    "ro": "Al doilea viaduct Pulvermühle și capul nord al gării Luxembourg"
+  },
+  "description": {
+    "en": "New two-track viaduct, single-track tunnel under boulevard d'Avranches and embankment structure at the north exit of Luxembourg station, built 2009–2019. It removes a bottleneck by separating Nord line traffic from Wasserbillig line traffic.",
+    "ro": "Viaduct nou cu două linii, tunel cu o singură linie sub bulevardul d'Avranches și structură pe taluz la ieșirea nord din gara Luxembourg, realizate în 2009–2019. Elimină un blocaj prin separarea traficului liniei Nord de cel al liniei Wasserbillig."
+  },
+  "operator": "lu-cfl",
+  "lots": [
+    {
+      "id": "pulvermuhle-viaduct",
+      "name": {
+        "en": "Second Pulvermühle viaduct",
+        "ro": "Al doilea viaduct Pulvermühle"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-06-11"
+      },
+      "lengthKm": 0.242,
+      "note": {
+        "en": "Reinforced concrete deck carrying two new tracks beside the existing viaduct. CFL planned commissioning of the three structures for 23 April 2019; French Wikipedia gives the inauguration as 11 June 2019. The drawn OpenStreetMap track is about 0.26 km; the sourced length is kept.",
+        "ro": "Tablier din beton armat care susține două linii noi lângă viaductul existent. CFL a planificat darea în exploatare a celor trei lucrări pentru 23 aprilie 2019; Wikipedia în franceză indică inaugurarea la 11 iunie 2019. Traseul OpenStreetMap desenat măsoară circa 0,26 km; lungimea din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "cfl-second-viaduct-pulvermuhle",
+        "wikipedia-fr-viaduc-de-pulvermuhl",
+        "openstreetmap"
+      ],
+      "geometryRef": "pulvermuhle-viaduct"
+    },
+    {
+      "id": "pulvermuhle-tunnel-avranches",
+      "name": {
+        "en": "Tunnel under boulevard d'Avranches",
+        "ro": "Tunelul sub bulevardul d'Avranches"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-06-11"
+      },
+      "lengthKm": 0.1,
+      "note": {
+        "en": "Single-track tunnel under the new road structure carrying boulevard d'Avranches, which spans four tracks instead of two. CFL's page does not date it separately: it lists commissioning of the three structures together. The opening date is that of the viaduct. The OpenStreetMap line is a 100 m cut of the Tunnel tête Nord track at its crossing with the boulevard, so its exact position is approximate.",
+        "ro": "Tunel cu o singură linie sub structura rutieră nouă pe care trece bulevardul d'Avranches, care traversează patru linii în loc de două. Pagina CFL nu îl datează separat: enumeră darea în exploatare a celor trei lucrări împreună. Data deschiderii este cea a viaductului. Linia OpenStreetMap este o secțiune de 100 m din linia Tunnel tête Nord la intersecția cu bulevardul, deci poziția exactă este aproximativă."
+      },
+      "sourceRefs": [
+        "cfl-second-viaduct-pulvermuhle",
+        "wikipedia-fr-viaduc-de-pulvermuhl",
+        "openstreetmap"
+      ],
+      "geometryRef": "pulvermuhle-tunnel-avranches"
+    },
+    {
+      "id": "pulvermuhle-embankment",
+      "name": {
+        "en": "Embankment structure to the Wasserbillig line",
+        "ro": "Structură pe taluz spre linia Wasserbillig"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-06-11"
+      },
+      "lengthKm": 0.275,
+      "note": {
+        "en": "Structure on a stone-faced embankment (ouvrage sur perré) that extends the two new tracks from the viaduct and connects them to the existing Luxembourg–Wasserbillig line. The opening date is that of the viaduct. The OpenStreetMap line is the 275 m of track following the viaduct, since the structure itself is not tagged.",
+        "ro": "Structură pe taluz pietruit (ouvrage sur perré) care prelungește cele două linii noi de la viaduct și le racordează la linia existentă Luxembourg–Wasserbillig. Data deschiderii este cea a viaductului. Linia OpenStreetMap reprezintă cei 275 m de cale care urmează viaductului, deoarece structura în sine nu este etichetată."
+      },
+      "sourceRefs": [
+        "cfl-second-viaduct-pulvermuhle",
+        "wikipedia-fr-viaduc-de-pulvermuhl",
+        "openstreetmap"
+      ],
+      "geometryRef": "pulvermuhle-embankment"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cfl-second-viaduct-pulvermuhle",
+      "title": "CFL: Construction second viaduc Pulvermühle",
+      "url": "https://groupe.cfl.lu/fr-fr/project/detail/construction-second-viaduct-pulvermuhle",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-fr-viaduc-de-pulvermuhl",
+      "title": "Wikipédia: Viaduc de Pulvermühl",
+      "url": "https://fr.wikipedia.org/wiki/Viaduc_de_Pulverm%C3%BChl",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

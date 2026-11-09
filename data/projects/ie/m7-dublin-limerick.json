@@ -1,0 +1,299 @@
+{
+  "id": "ie-m7-dublin-limerick",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "M7 Dublin – Limerick",
+    "ro": "M7 Dublin – Limerick"
+  },
+  "description": {
+    "en": "The 199 km route from Dublin to Limerick, built as 12 separate road projects between 1968 and 2010 and passing through six counties. The Dublin–Naas dual carriageway dates from 1968, the Naas, Newbridge and Portlaoise bypasses from 1983, 1993 and 1997, and the Kildare, Monasterevin and Nenagh bypasses from the early 2000s. The last three sections opened in 2010, ending with Castletown–Nenagh in December, the last inter-urban route to be completed. Journey time fell by 40%, to 2 hours 10 minutes. Lots cover the mapped road from the M50 to Annacotty, about 176 km; the 199 km is a route distance from Dublin, and lengths of the earliest bypasses are measured from OpenStreetMap geometry. The Portlaoise–Castletown lot is a public–private partnership shared with the M8 to Cork.",
+    "ro": "Traseul Dublin–Limerick de 199 km, construit ca 12 proiecte rutiere separate între 1968 și 2010, care traversează șase comitate. Autostrada dublă Dublin–Naas datează din 1968, variantele Naas, Newbridge și Portlaoise din 1983, 1993 și 1997, iar variantele Kildare, Monasterevin și Nenagh de la începutul anilor 2000. Ultimele trei sectoare au fost deschise în 2010, ultimul fiind Castletown–Nenagh, în decembrie, ultimul traseu interurban finalizat. Durata călătoriei a scăzut cu 40%, la 2 ore și 10 minute. Loturile acoperă drumul cartografiat de la M50 la Annacotty, circa 176 km; cei 199 km sunt o distanță de traseu de la Dublin, iar lungimile primelor variante sunt măsurate pe geometria OpenStreetMap. Lotul Portlaoise–Castletown este un parteneriat public–privat comun cu M8 spre Cork."
+  },
+  "operator": "ie-transport-infrastructure-ireland",
+  "lots": [
+    {
+      "id": "dublin-naas",
+      "name": {
+        "en": "Dublin – Naas (Naas Road)",
+        "ro": "Dublin – Naas (Naas Road)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1968"
+      },
+      "lengthKm": 19.99,
+      "note": {
+        "en": "Dual carriageway completed in 1968, from the M50 interchange to Naas North (junction 9). The 14 km Naas Road Widening and Interchange Scheme (2004–2006) widened it from a two-lane to a three-lane dual carriageway and added grade-separated junctions at Johnstown, Kill, Castlewarden and Steelstown. It is part of this lot and not a separate one, so its length is not counted twice. Length measured from OpenStreetMap geometry between the named junctions; the source gives no length for this section. Later widening and the Osberstown interchange are not recorded here: no source was found.",
+        "ro": "Autostradă dublă (drum cu două benzi pe sens) finalizată în 1968, de la nodul M50 până la Naas Nord (nodul 9). Schema de lărgire și noduri Naas Road, de 14 km (2004–2006), a lărgit-o de la două la trei benzi pe sens și a adăugat noduri denivelate la Johnstown, Kill, Castlewarden și Steelstown. Face parte din acest lot, nu este un lot separat, deci lungimea ei nu se numără de două ori. Lungime măsurată pe geometria OpenStreetMap între nodurile numite; sursa nu indică o lungime pentru acest sector. Lărgirile ulterioare și nodul Osberstown nu sunt înregistrate aici: nu s-a găsit nicio sursă."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "dublin-naas"
+    },
+    {
+      "id": "naas-bypass",
+      "name": {
+        "en": "Naas Bypass",
+        "ro": "Varianta ocolitoare Naas"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1983"
+      },
+      "lengthKm": 6.95,
+      "note": {
+        "en": "Naas Bypass, completed in 1983. Length measured from OpenStreetMap geometry between the named junctions; the source gives no length for this section. The cut at Naas South (junction 10) is a choice: the source does not give the bypass's ends.",
+        "ro": "Varianta ocolitoare Naas, finalizată în 1983. Lungime măsurată pe geometria OpenStreetMap între nodurile numite; sursa nu indică o lungime pentru acest sector. Limita de la Naas Sud (nodul 10) este o alegere: sursa nu indică capetele variantei."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "naas-bypass"
+    },
+    {
+      "id": "newbridge-bypass",
+      "name": {
+        "en": "Newbridge Bypass",
+        "ro": "Varianta ocolitoare Newbridge"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1993"
+      },
+      "lengthKm": 10.14,
+      "note": {
+        "en": "Newbridge Bypass, completed in 1993. Length measured from OpenStreetMap geometry between the named junctions; the source gives no length for this section. Cut from Naas South (junction 10) to Newbridge (junction 12), which includes the M7/M9 junction (junction 11); the ends are a choice.",
+        "ro": "Varianta ocolitoare Newbridge, finalizată în 1993. Lungime măsurată pe geometria OpenStreetMap între nodurile numite; sursa nu indică o lungime pentru acest sector. Tăiată de la Naas Sud (nodul 10) la Newbridge (nodul 12), cu nodul M7/M9 (nodul 11); capetele sunt o alegere."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "newbridge-bypass"
+    },
+    {
+      "id": "kildare-bypass",
+      "name": {
+        "en": "Kildare Bypass",
+        "ro": "Varianta ocolitoare Kildare"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003"
+      },
+      "lengthKm": 13,
+      "note": {
+        "en": "Kildare Bypass, 13 km (the review's case study gives 13.2 km). Work began in February 2001 and the case study says it opened in December 2003, as does Appendix I (2003 completions); the summary on the route pages gives 2002. 2003 is used. It removed 20,000 vehicles a day from Kildare Town. Drawn from Newbridge (junction 12) to Monasterevin (junction 14); the ends are a choice.",
+        "ro": "Varianta ocolitoare Kildare, 13 km (studiul de caz din raport indică 13,2 km). Lucrările au început în februarie 2001, iar studiul de caz spune că a fost deschisă în decembrie 2003, la fel ca Anexa I (lucrări finalizate în 2003); rezumatul de pe paginile traseului indică 2002. Se folosește 2003. A scos 20.000 de vehicule pe zi din orașul Kildare. Trasată de la Newbridge (nodul 12) la Monasterevin (nodul 14); capetele sunt o alegere."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "kildare-bypass"
+    },
+    {
+      "id": "monasterevin-bypass",
+      "name": {
+        "en": "Monasterevin Bypass",
+        "ro": "Varianta ocolitoare Monasterevin"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004"
+      },
+      "lengthKm": 17,
+      "note": {
+        "en": "Monasterevin Bypass, 17 km, opened in 2004, 11 months ahead of schedule. It links the Kildare and Portlaoise bypasses. Drawn from Monasterevin (junction 14) to Portlaoise East (junction 16), 19.4 km on the map; the ends are a choice.",
+        "ro": "Varianta ocolitoare Monasterevin, 17 km, deschisă în 2004, cu 11 luni înaintea termenului. Leagă variantele Kildare și Portlaoise. Trasată de la Monasterevin (nodul 14) la Portlaoise Est (nodul 16), 19,4 km pe hartă; capetele sunt o alegere."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "monasterevin-bypass"
+    },
+    {
+      "id": "portlaoise-bypass",
+      "name": {
+        "en": "Portlaoise Bypass",
+        "ro": "Varianta ocolitoare Portlaoise"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1997"
+      },
+      "lengthKm": 9.35,
+      "note": {
+        "en": "Portlaoise Bypass, completed in 1997. Length measured from OpenStreetMap geometry between the named junctions; the source gives no length for this section. Cut from Portlaoise East (junction 16) to Portlaoise West (junction 18), where the 2010 section begins; the ends are a choice.",
+        "ro": "Varianta ocolitoare Portlaoise, finalizată în 1997. Lungime măsurată pe geometria OpenStreetMap între nodurile numite; sursa nu indică o lungime pentru acest sector. Tăiată de la Portlaoise Est (nodul 16) la Portlaoise Vest (nodul 18), unde începe sectorul din 2010; capetele sunt o alegere."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "portlaoise-bypass"
+    },
+    {
+      "id": "portlaoise-castletown",
+      "name": {
+        "en": "Portlaoise – Castletown (M7/M8 PPP)",
+        "ro": "Portlaoise – Castletown (PPP M7/M8)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-06",
+        "constructionStart": "2007-06",
+        "opened": "2010-05"
+      },
+      "lengthKm": 27,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2007-06",
+          "sourceRef": "tii-annual-report-2025"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2007-06",
+          "sourceRef": "tii-decade-of-progress"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-05",
+          "sourceRef": "tii-decade-of-progress"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Celtic Roads Group (Portlaoise)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "M7 part of the Portlaoise–Castletown/Cullahill public–private partnership: 27 km, of which 17 km run west of the Portlaoise Bypass to the Aghaboe interchange (M7/M8, junction 19) and 10 km on to Castletown. The M8 branch (14 km) belongs to the M8 project. The whole scheme is about 41 km; the Annual Report describes it as a 30-year toll concession awarded to the Celtic Roads Group (Portlaoise) consortium in June 2007, tolled between junctions 18 and 19. The review says it was delivered four months ahead of schedule. Drawn from Portlaoise West (junction 18) to Borris-in-Ossory (junction 21), 25.7 km on the map.",
+        "ro": "Partea M7 a parteneriatului public–privat Portlaoise–Castletown/Cullahill: 27 km, din care 17 km la vest de varianta Portlaoise până la nodul Aghaboe (M7/M8, nodul 19) și 10 km până la Castletown. Ramura M8 (14 km) aparține proiectului M8. Schema totală are circa 41 km; raportul anual o descrie ca o concesiune cu taxă de 30 de ani atribuită consorțiului Celtic Roads Group (Portlaoise) în iunie 2007, cu taxă între nodurile 18 și 19. Raportul TII spune că a fost livrată cu patru luni înainte de termen. Trasată de la Portlaoise Vest (nodul 18) la Borris-in-Ossory (nodul 21), 25,7 km pe hartă."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "tii-annual-report-2025",
+        "osm-geometry"
+      ],
+      "geometryRef": "portlaoise-castletown"
+    },
+    {
+      "id": "castletown-nenagh",
+      "name": {
+        "en": "Castletown – Nenagh",
+        "ro": "Castletown – Nenagh"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-02",
+        "opened": "2010-12"
+      },
+      "lengthKm": 36,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-02",
+          "sourceRef": "tii-decade-of-progress"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-12",
+          "sourceRef": "tii-decade-of-progress"
+        }
+      ],
+      "note": {
+        "en": "36 km between Castletown and Nenagh, bypassing Roscrea, Moneygall and Toomevara, with interchanges at Nenagh, Moneygall, Roscrea and Borris-in-Ossory. It was the final stage of the 199 km Dublin–Limerick route and the last inter-urban route completed. Drawn from Borris-in-Ossory (junction 21) to Toomevara (junction 24), 35.2 km on the map; the Nenagh end is a choice.",
+        "ro": "36 km între Castletown și Nenagh, ocolind Roscrea, Moneygall și Toomevara, cu noduri la Nenagh, Moneygall, Roscrea și Borris-in-Ossory. A fost ultima etapă a traseului Dublin–Limerick de 199 km și ultimul traseu interurban finalizat. Trasat de la Borris-in-Ossory (nodul 21) la Toomevara (nodul 24), 35,2 km pe hartă; capătul dinspre Nenagh este o alegere."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "castletown-nenagh"
+    },
+    {
+      "id": "nenagh-bypass",
+      "name": {
+        "en": "Nenagh Bypass",
+        "ro": "Varianta ocolitoare Nenagh"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2001"
+      },
+      "lengthKm": 11,
+      "note": {
+        "en": "Nenagh Bypass, 11 km, built in 2001 as a wide single carriageway to remove 10,000 vehicles a day from the old route, then widened to dual carriageway motorway standard as part of the Dublin–Limerick route. The review's Appendix I dates it to 2000; the narrative's 2001 is used, and the date of the widening is not given. Drawn from Toomevara (junction 24) to Nenagh West (junction 26), 9.1 km on the map; the ends are a choice.",
+        "ro": "Varianta ocolitoare Nenagh, 11 km, construită în 2001 ca drum lat cu o singură platformă, pentru a scoate 10.000 de vehicule pe zi de pe vechiul traseu, apoi lărgită la standard de autostradă dublă în cadrul traseului Dublin–Limerick. Anexa I a raportului o datează în 2000; se folosește 2001 din text, iar data lărgirii nu este indicată. Trasată de la Toomevara (nodul 24) la Nenagh Vest (nodul 26), 9,1 km pe hartă; capetele sunt o alegere."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "nenagh-bypass"
+    },
+    {
+      "id": "nenagh-limerick",
+      "name": {
+        "en": "Nenagh – Limerick (Annacotty)",
+        "ro": "Nenagh – Limerick (Annacotty)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-01",
+        "opened": "2010-09"
+      },
+      "lengthKm": 38,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2007-01",
+          "sourceRef": "tii-decade-of-progress"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-09",
+          "sourceRef": "tii-decade-of-progress"
+        }
+      ],
+      "note": {
+        "en": "38 km from the northern end of the Nenagh Bypass to Annacotty, where it joins the Limerick Southern Ring Road, with four interchanges at Nenagh, Birdhill and Limerick. It removed 90% of the 20,000 vehicles a day on the old N7. Drawn from Nenagh West (junction 26) to Castletroy (junction 28), 27.5 km on the map; the recorded 38 km is a source figure and may include the Nenagh Bypass, which is a separate lot here, so the lengths do not reconcile.",
+        "ro": "38 km de la capătul nordic al variantei Nenagh până la Annacotty, unde se leagă de Limerick Southern Ring Road, cu patru noduri la Nenagh, Birdhill și Limerick. A scos 90% din cele 20.000 de vehicule pe zi de pe vechiul N7. Trasat de la Nenagh Vest (nodul 26) la Castletroy (nodul 28), 27,5 km pe hartă; cei 38 km înregistrați provin din sursă și pot include varianta Nenagh, care este aici un lot separat, deci lungimile nu se reconciliază."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "osm-geometry"
+      ],
+      "geometryRef": "nenagh-limerick"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tii-decade-of-progress",
+      "title": "Transport Infrastructure Ireland: A Decade of Progress (M7 Dublin to Limerick, pp. 44–47; Appendix I)",
+      "url": "https://www.tii.ie/media/hrroellt/a-decade-of-progress.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "Transport Infrastructure Ireland: Annual Report and Financial Statements 2025 (note 10e, M7/M8 Portlaoise toll concession)",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-geometry",
+      "title": "OpenStreetMap contributors (ODbL): M7 and N7 ways, via Overpass",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

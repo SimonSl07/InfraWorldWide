@@ -1,0 +1,84 @@
+{
+  "id": "be-hsl-4",
+  "country": "be",
+  "category": "railway",
+  "name": {
+    "en": "HSL 4 (Antwerp–Dutch border)",
+    "ro": "HSL 4 (Anvers–granița cu Țările de Jos)"
+  },
+  "description": {
+    "en": "Belgian high-speed line 4 (Infrabel line 4) from a connection near Antwerpen-Luchtbal to the Dutch border at Meer, where it meets the Dutch HSL-Zuid. 25 kV 50 Hz AC, two tracks, up to 300 km/h, with an intermediate station at Noorderkempen. The line parallels the E19 motorway.",
+    "ro": "Linia belgiană de mare viteză 4 (linia Infrabel 4), de la o legătură lângă Antwerpen-Luchtbal până la granița cu Țările de Jos la Meer, unde se leagă de HSL-Zuid olandeză. Electrificare 25 kV 50 Hz c.a., două linii, până la 300 km/h, cu o stație intermediară la Noorderkempen. Linia urmează autostrada E19."
+  },
+  "operator": "be-infrabel",
+  "sources": [
+    {
+      "id": "wiki-hsl-4",
+      "title": "Wikipedia: HSL 4",
+      "url": "https://en.wikipedia.org/wiki/HSL_4",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wiki-hsr-belgium",
+      "title": "Wikipedia: High-speed rail in Belgium",
+      "url": "https://en.wikipedia.org/wiki/High-speed_rail_in_Belgium",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wiki-nl-hsl-4",
+      "title": "Wikipedia (nl): HSL 4",
+      "url": "https://nl.wikipedia.org/wiki/HSL_4",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-hsl-4",
+      "title": "OpenStreetMap: HSL 4 route relation 408464",
+      "url": "https://www.openstreetmap.org/relation/408464",
+      "publisher": "OpenStreetMap contributors (ODbL)",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lots": [
+    {
+      "id": "luchtbal-dutch-border",
+      "name": {
+        "en": "Antwerpen-Luchtbal–Dutch border (Meer)",
+        "ro": "Antwerpen-Luchtbal–granița cu Țările de Jos (Meer)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2009-12-13"
+      },
+      "lengthKm": 35.9,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 300
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2009-12-13",
+          "sourceRef": "wiki-nl-hsl-4",
+          "note": {
+            "en": "The whole line was put into use on this date. The Antwerpen–Noorderkempen part had opened earlier in 2009.",
+            "ro": "Întreaga linie a fost dată în exploatare la această dată. Partea Antwerpen–Noorderkempen se deschisese mai devreme în 2009."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length 35.9 km as stated by Wikipedia (Infrabel open data sections sum to a similar 35.94 km). The line starts at a connection with the Antwerp–Lage Zwaluwe line near Luchtbal. The Wikipedia article on high-speed rail in Belgium gives the line as 87 km including 47 km of upgraded line from Antwerp to Brussels (not part of this lot) and 40 km of dedicated track. Initially planned to open in 2005; mostly completed in 2007 and delayed to December 2009 by signalling problems. The drawn OpenStreetMap track measures about 39.9 km because it includes the approach to the line's start.",
+        "ro": "Lungime de 35,9 km conform Wikipedia (secțiunile din datele deschise Infrabel însumează o valoare apropiată, 35,94 km). Linia începe la o legătură cu linia Antwerp–Lage Zwaluwe, lângă Luchtbal. Articolul Wikipedia despre trenurile de mare viteză din Belgia indică 87 km, incluzând 47 km de linie modernizată între Anvers și Bruxelles (în afara acestui lot) și 40 km de linie dedicată. Inițial deschiderea era planificată în 2005; lucrările erau în mare parte încheiate în 2007, iar deschiderea a fost amânată până în decembrie 2009 din cauza problemelor de semnalizare. Traseul OpenStreetMap desenat măsoară circa 39,9 km, deoarece include accesul către începutul liniei."
+      },
+      "sourceRefs": [
+        "wiki-hsl-4",
+        "wiki-hsr-belgium",
+        "wiki-nl-hsl-4",
+        "osm-hsl-4"
+      ],
+      "geometryRef": "luchtbal-dutch-border"
+    }
+  ]
+}
