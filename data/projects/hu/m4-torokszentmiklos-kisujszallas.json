@@ -20,10 +20,16 @@
       },
       "status": "opened",
       "dates": {
+        "constructionStart": "2023-01-01",
         "opened": "2025-12-22"
       },
       "lengthKm": 34.29,
       "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023-01-01",
+          "sourceRef": "ekm-m4-handover"
+        },
         {
           "kind": "opened",
           "date": "2025-12-22",
@@ -32,6 +38,12 @@
             "ro": "Autorizația a permis circulația din 22 decembrie 2025, ora 15:00, data predării oficiale. Portalul ministerului consemnează separat 23 ianuarie 2026 drept dată a dării în circulație."
           },
           "sourceRef": "ekm-m4-handover"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Duna Aszfalt Projekt Zrt.",
+          "role": "builder"
         }
       ],
       "note": {
