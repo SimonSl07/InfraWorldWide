@@ -231,7 +231,21 @@
           "amount": 315,
           "currency": "EUR",
           "note": "Project cost as given by ERGOSE on a page that lists the infrastructure contract as completed; the page does not say whether this is a budget or the final cost. Excludes track, signalling and electrification, which are in contract 1510. Price year and VAT treatment not stated."
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 293.1,
+              "currency": "EUR",
+              "year": 2013,
+              "scope": "works",
+              "note": "Contract budget of EUR 293.1 million before revision and excluding VAT, as stated by AVAX on signing."
+            },
+            "date": "2013-06-21",
+            "sourceRef": "avax-rododafni-psathopyrgos-2013"
+          }
+        ]
       },
       "profile": {
         "works": "greenfield",
@@ -283,7 +297,16 @@
           "name": "AKTOR – J&P AVAX – INTRAKAT consortium",
           "role": "builder"
         }
-      ]
+      ],
+      "contract": {
+        "value": {
+          "amount": 293.1,
+          "currency": "EUR",
+          "year": 2013,
+          "note": "Contract budget of EUR 293.1 million before revision and excluding VAT, as stated by AVAX on signing."
+        },
+        "totalMonths": 36
+      }
     },
     {
       "id": "psathopyrgos-patras",
@@ -302,7 +325,21 @@
           "amount": 117,
           "currency": "EUR",
           "note": "Estimated cost as given by ERGOSE for the infrastructure; price year and VAT treatment not stated."
-        }
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 96.05,
+              "currency": "EUR",
+              "year": 2017,
+              "scope": "works",
+              "note": "Bid of EUR 96,049,725.14 by GD INFRASTRUTTURE SRL; VAT treatment not stated."
+            },
+            "date": "2017-08-07",
+            "sourceRef": "ergose-psathopyrgos-rio-contract-716"
+          }
+        ]
       },
       "profile": {
         "works": "greenfield",
@@ -352,7 +389,16 @@
           "name": "GD INFRASTRUTTURE SRL",
           "role": "builder"
         }
-      ]
+      ],
+      "contract": {
+        "value": {
+          "amount": 96.05,
+          "currency": "EUR",
+          "year": 2017,
+          "note": "Bid of EUR 96,049,725.14 by GD INFRASTRUTTURE SRL; VAT treatment not stated."
+        },
+        "totalMonths": 36
+      }
     }
   ],
   "sources": [
