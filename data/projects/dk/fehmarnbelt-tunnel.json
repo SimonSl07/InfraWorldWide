@@ -64,6 +64,7 @@
       },
       "status": "under_construction",
       "dates": {
+        "tenderAwarded": "2020-05",
         "constructionStart": "2020"
       },
       "lengthKm": 18,
@@ -95,7 +96,37 @@
         "osm-femern",
         "femern-contractors"
       ],
-      "geometryRef": "rodbyhavn-puttgarden"
+      "geometryRef": "rodbyhavn-puttgarden",
+      "contractors": [
+        {
+          "name": "Femern Link Contractors (VINCI Construction Grands Projets, Per Aarsleff, Wayss & Freytag Ingenieurbau, BAM Infra, BAM International)",
+          "role": "builder"
+        },
+        {
+          "name": "Fehmarn Belt Contractors (Van Oord Dredging and Marine Contractors)",
+          "role": "builder"
+        },
+        {
+          "name": "Femern SICE Cobra (SICE, SICE Tecnología y Sistemas, Cobra Instalaciones y Servicios, Moncobra)",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Loans secured by Danish state guarantees, refinanced through motor vehicle tolls and railway charges. Financing responsibility lies solely with Denmark.",
+            "ro": "Împrumuturi garantate de statul danez, rambursate din taxele de drum pentru autovehicule și taxele feroviare. Responsabilitatea finanțării revine exclusiv Danemarcei."
+          }
+        },
+        {
+          "source": "EU",
+          "detail": {
+            "en": "Femern A/S describes extensive EU funding; no amount is stated in the factsheet.",
+            "ro": "Femern A/S menționează o finanțare europeană extinsă; factsheet-ul nu indică o sumă."
+          }
+        }
+      ]
     }
   ]
 }

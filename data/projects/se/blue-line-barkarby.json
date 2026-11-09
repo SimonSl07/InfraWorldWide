@@ -79,7 +79,9 @@
         "estimated": {
           "amount": 9900,
           "currency": "SEK",
-          "note": "Region Stockholm's 25 September 2026 final-cost forecast in current prices."
+          "scope": "total",
+          "confidence": "estimated",
+          "note": "Final-cost forecast at current price levels, published 2026-10-09. The source does not state a fixed price year or VAT treatment."
         }
       },
       "lengthKm": 4,
@@ -104,15 +106,6 @@
         "barkarby-cost-update-2026"
       ],
       "geometryRef": "akalla-barkarby",
-      "cost": {
-        "estimated": {
-          "amount": 9900,
-          "currency": "SEK",
-          "scope": "total",
-          "confidence": "estimated",
-          "note": "Final-cost forecast at current price levels, published 2026-10-09. The source does not state a fixed price year or VAT treatment."
-        }
-      },
       "events": [
         {
           "kind": "contract_terminated",
