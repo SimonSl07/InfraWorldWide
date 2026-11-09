@@ -1,0 +1,63 @@
+{
+  "id": "lu-rail-luxembourg-sandweiler-double-track",
+  "country": "lu",
+  "category": "railway",
+  "name": {
+    "en": "Luxembourg – Sandweiler-Contern double track",
+    "ro": "Linie dublă Luxembourg – Sandweiler-Contern"
+  },
+  "description": {
+    "en": "Second track on the Luxembourg–Wasserbillig line (line 30) from the Pulvermühle viaduct to the Sandweiler-Contern stop, passing Cents-Hamm. CFL ran the project from 2012 to 2019 to relieve the northern exit of Luxembourg station. The Cents-Hamm and Sandweiler-Contern stops were rebuilt and level crossing PN56 at Cents was removed.",
+    "ro": "A doua cale pe linia Luxembourg–Wasserbillig (linia 30), de la viaductul Pulvermühle până la halta Sandweiler-Contern, prin Cents-Hamm. CFL a derulat proiectul între 2012 și 2019 pentru a degaja ieșirea nordică din gara Luxembourg. Haltele Cents-Hamm și Sandweiler-Contern au fost reamenajate, iar trecerea la nivel PN56 de la Cents a fost desființată."
+  },
+  "operator": "lu-cfl",
+  "lots": [
+    {
+      "id": "luxembourg-sandweiler-double-track",
+      "name": {
+        "en": "Pulvermühle viaduct – Sandweiler-Contern",
+        "ro": "Viaductul Pulvermühle – Sandweiler-Contern"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-04"
+      },
+      "lengthKm": 5.9,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2,
+        "stationCount": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2019-04",
+          "sourceRef": "cfl-double-track"
+        }
+      ],
+      "note": {
+        "en": "CFL gives the project period as 2012–2019 and states that the double track was opened to train traffic in April 2019. CFL does not state a length or a cost. Length measured from OpenStreetMap geometry (one track, from the east end of the Pulvermühle viaduct to the Sandweiler-Contern stop). The second Pulvermühle viaduct is a separate project and is not included in this length.",
+        "ro": "CFL indică perioada proiectului ca 2012–2019 și precizează că linia dublă a fost deschisă circulației trenurilor în aprilie 2019. CFL nu indică lungimea și nici costul. Lungimea este măsurată pe geometria OpenStreetMap (o singură cale, de la capătul estic al viaductului Pulvermühle până la halta Sandweiler-Contern). Al doilea viaduct Pulvermühle este un proiect separat și nu este inclus în această lungime."
+      },
+      "sourceRefs": [
+        "cfl-double-track",
+        "osm"
+      ],
+      "geometryRef": "luxembourg-sandweiler-double-track"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cfl-double-track",
+      "title": "CFL: Mise à double voie du tronçon Luxembourg – Sandweiler-Contern",
+      "url": "https://groupe.cfl.lu/fr-fr/project/detail/mise-a-double-voie-du-troncon-luxembourg-sandwei",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (railway geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

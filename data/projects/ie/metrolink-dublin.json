@@ -1,0 +1,154 @@
+{
+  "id": "ie-metrolink-dublin",
+  "country": "ie",
+  "city": "ie-dublin",
+  "category": "railway",
+  "name": {
+    "en": "MetroLink (Estuary–Charlemont)",
+    "ro": "MetroLink (Estuary–Charlemont)"
+  },
+  "description": {
+    "en": "Planned driverless metro in Dublin, about 19 km and mostly underground, from Estuary near Swords through Dublin Airport, Ballymun, Glasnevin and the city centre to Charlemont, with 16 stations. An Coimisiún Pleanála granted the Railway Order in October 2025. Cabinet approved the move to the detailed tender stage on 16 September 2026, with enabling works due to start on site in early 2027 and tunnelling and station construction to follow. No construction contract has been awarded and no opening date has been set.",
+    "ro": "Metrou fără mecanic planificat la Dublin, de circa 19 km și în mare parte subteran, de la Estuary, lângă Swords, prin Aeroportul Dublin, Ballymun, Glasnevin și centrul orașului până la Charlemont, cu 16 stații. An Coimisiún Pleanála a aprobat Railway Order în octombrie 2025. Guvernul a aprobat trecerea la etapa de licitație detaliată pe 16 septembrie 2026, cu lucrări pregătitoare programate să înceapă pe teren la începutul lui 2027, urmate de tunelare și construcția stațiilor. Niciun contract de construcție nu a fost atribuit și nu a fost stabilită o dată de deschidere."
+  },
+  "operator": "ie-transport-infrastructure-ireland",
+  "stationCount": 16,
+  "lots": [
+    {
+      "id": "estuary-charlemont",
+      "name": {
+        "en": "Estuary – Charlemont",
+        "ro": "Estuary – Charlemont"
+      },
+      "status": "tendered",
+      "lengthKm": 19,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 11.7,
+        "stationCount": 16
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 15750,
+              "currency": "EUR",
+              "scope": "total",
+              "confidence": "estimated",
+              "note": "Central estimate in the Detailed Business Case, including contingency and inflation, excluding VAT. Range €14.44 billion to €17.49 billion. Price year not stated."
+            },
+            "date": "2026-09-16",
+            "note": "Detailed Business Case reviewed by the Department of Transport and the National Transport Authority under Approval Gate 2.",
+            "sourceRef": "metrolink-cabinet-2026"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 2000,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "€2 billion from the Infrastructure, Climate and Nature Fund, allocated in the National Development Plan Review (July 2025) for the commencement of construction",
+            "ro": "2 miliarde de euro din Fondul pentru Infrastructură, Climă și Natură, alocate prin revizuirea Planului Național de Dezvoltare (iulie 2025) pentru începerea construcției"
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "litigation",
+          "date": "2025-12-23",
+          "note": {
+            "en": "Residents of Dartmouth Square West agreed after mediation to withdraw their judicial review of the Railway Order, confirmed for January 2026.",
+            "ro": "Locuitorii din Dartmouth Square West au convenit, în urma medierii, să retragă contestația în justiție împotriva Railway Order, confirmată pentru ianuarie 2026."
+          },
+          "sourceRef": "metrolink-jr-2025"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2026-02-03",
+          "note": {
+            "en": "Contract notices issued for the M401 and M402 civil works contracts (tunnelling, stations, viaducts), at the pre-qualification stage.",
+            "ro": "Anunțuri de contract emise pentru contractele de lucrări civile M401 și M402 (tunelare, stații, viaducte), în etapa de preselecție."
+          },
+          "sourceRef": "metrolink-civils-2026"
+        }
+      ],
+      "note": {
+        "en": "Length is the figure stated by TII and the Government (approximately 19 km); the line drawn from OpenStreetMap measures about 18.7 km. An Coimisiún Pleanála granted the Railway Order in October 2025 (press release of 2 October 2025), authorising all necessary works; about 11.7 km is underground. The Government's September 2026 release counts 16 stations, where the October 2025 release counted 15. Procurement is split into the M401 (Charlemont to Northwood) and M402 (Northwood to Estuary) civil works contracts, with a combined maximum contract notice value of €7.9 billion excluding VAT (a ceiling, not a price; TII expects tenders well below it), the M500 design-build-finance-operate-maintain contract for trains, systems and 25 years of operation as an availability-based PPP (contract notice issued in May 2026), and enabling works and a Dublin Airport package (M120 framework, May 2026). Jacobs AECOM was appointed Programme Delivery Partner in September 2026, a support services contract and not a builder. The Detailed Business Case central estimate is €15.75 billion; the Government states that firm cost ranges will be known only after bids are received in 2027. The drawn geometry is the approximate alignment mapped in OpenStreetMap from September 2022, with some sections above ground. No opening date has been published.",
+        "ro": "Lungimea este cea indicată de TII și de Guvern (aproximativ 19 km); linia desenată din OpenStreetMap măsoară circa 18,7 km. An Coimisiún Pleanála a aprobat Railway Order în octombrie 2025 (comunicat din 2 octombrie 2025), autorizând toate lucrările necesare; circa 11,7 km sunt subterani. Comunicatul Guvernului din septembrie 2026 indică 16 stații, față de 15 în comunicatul din octombrie 2025. Achiziția este împărțită în contractele de lucrări civile M401 (Charlemont – Northwood) și M402 (Northwood – Estuary), cu o valoare maximă combinată în anunțul de contract de 7,9 miliarde de euro fără TVA (un plafon, nu un preț; TII se așteaptă la oferte mult mai mici), contractul M500 de proiectare, construcție, finanțare, operare și întreținere pentru trenuri, sisteme și 25 de ani de operare, ca PPP bazat pe disponibilitate (anunț de contract emis în mai 2026), precum și lucrări pregătitoare și un pachet pentru Aeroportul Dublin (cadrul M120, mai 2026). Jacobs AECOM a fost numit Programme Delivery Partner în septembrie 2026, un contract de servicii de sprijin, nu de construcție. Estimarea centrală din Detailed Business Case este de 15,75 miliarde de euro; Guvernul precizează că intervalele ferme de cost vor fi cunoscute abia după primirea ofertelor, în 2027. Geometria desenată este traseul aproximativ cartografiat în OpenStreetMap din septembrie 2022, cu unele secțiuni la suprafață. Nu a fost publicată o dată de deschidere."
+      },
+      "sourceRefs": [
+        "metrolink-cabinet-2026",
+        "metrolink-railway-order-2025",
+        "metrolink-civils-2026",
+        "metrolink-m500-2026",
+        "metrolink-pdp-2026",
+        "metrolink-airport-2026",
+        "metrolink-jr-2025",
+        "tii-annual-report-2025",
+        "osm-metrolink"
+      ],
+      "geometryRef": "estuary-charlemont"
+    }
+  ],
+  "sources": [
+    {
+      "id": "metrolink-cabinet-2026",
+      "title": "MetroLink: Government approves MetroLink to proceed to detailed tender stage (16 September 2026)",
+      "url": "https://www.metrolink.ie/en/news/latest-news/government-approves-metrolink-to-proceed-to-detailed-tender-stage/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrolink-railway-order-2025",
+      "title": "MetroLink: Transport Minister and Government Agencies Welcome MetroLink Railway Order (2 October 2025)",
+      "url": "https://www.metrolink.ie/en/news/latest-news/transport-minister-and-government-agencies-welcome-metrolink-railway-order/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrolink-civils-2026",
+      "title": "MetroLink: First Major Design and Build Civils Contracts Announced for MetroLink (3 February 2026)",
+      "url": "https://www.metrolink.ie/en/news/latest-news/first-major-design-and-build-civils-contracts-announced-for-metrolink/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrolink-m500-2026",
+      "title": "MetroLink: MetroLink announces contract for supplying trains, tracks and stations and operating service for 25 years",
+      "url": "https://www.metrolink.ie/en/news/latest-news/metrolink-announces-contract-for-supplying-trains-tracks-and-stations-and-operating-service-for-25-years/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrolink-pdp-2026",
+      "title": "MetroLink: Transport Infrastructure Ireland Appoints Programme Delivery Partner to Drive MetroLink Construction Phase (10 September 2026)",
+      "url": "https://www.metrolink.ie/en/news/latest-news/transport-infrastructure-ireland-appoints-programme-delivery-partner-to-drive-metrolink-construction-phase/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrolink-airport-2026",
+      "title": "MetroLink: MetroLink to Partner with daa and Transport Agencies to Deliver Key Airport Works (29 May 2026)",
+      "url": "https://www.metrolink.ie/en/news/latest-news/metrolink-to-partner-with-daa-and-transport-agencies-to-deliver-key-airport-works/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "metrolink-jr-2025",
+      "title": "MetroLink: Minister for Transport and Government Agencies Welcome Resolution of MetroLink Judicial Review Following Successful Mediation (23 December 2025)",
+      "url": "https://www.metrolink.ie/en/news/latest-news/minister-for-transport-and-government-agencies-welcome-resolution-of-metrolink-judicial-review-following-successful-mediation/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "Transport Infrastructure Ireland: Annual Report and Financial Statements 2025, MetroLink section",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-metrolink",
+      "title": "OpenStreetMap contributors: MetroLink proposed alignment, ways 1100622960 and 1435972224 (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1100622960",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

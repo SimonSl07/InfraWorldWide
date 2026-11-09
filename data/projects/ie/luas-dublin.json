@@ -1,0 +1,213 @@
+{
+  "id": "ie-luas-dublin",
+  "country": "ie",
+  "city": "ie-dublin",
+  "category": "railway",
+  "name": {
+    "en": "Luas Dublin (Red and Green Lines)",
+    "ro": "Luas Dublin (Linia Roșie și Linia Verde)"
+  },
+  "description": {
+    "en": "Light rail network of Dublin. Transport Infrastructure Ireland describes two lines: the Red Line, 21 km with 32 stops, from Tallaght and Saggart to The Point, and the Green Line, 22 km with 35 operating stops, from Bride's Glen to Broombridge. The Green Line opened in June 2004 and the Red Line in September 2004. The Red Line reached the Docklands in 2009 and Saggart in 2011, the Green Line reached Bride's Glen in 2010, and Luas Cross City joined the two lines in 2017. The network recorded 55 million passenger journeys in 2025.",
+    "ro": "Rețeaua de tramvai rapid din Dublin. Transport Infrastructure Ireland descrie două linii: Linia Roșie, de 21 km cu 32 de stații, de la Tallaght și Saggart la The Point, și Linia Verde, de 22 km cu 35 de stații în funcțiune, de la Bride's Glen la Broombridge. Linia Verde a fost deschisă în iunie 2004, iar Linia Roșie în septembrie 2004. Linia Roșie a ajuns în Docklands în 2009 și la Saggart în 2011, Linia Verde a ajuns la Bride's Glen în 2010, iar Luas Cross City a unit cele două linii în 2017. Rețeaua a înregistrat 55 de milioane de călătorii în 2025."
+  },
+  "lots": [
+    {
+      "id": "red-tallaght-connolly",
+      "name": {
+        "en": "Red Line: Tallaght – Connolly",
+        "ro": "Linia Roșie: Tallaght – Connolly"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001-03",
+        "opened": "2004-09-26"
+      },
+      "lengthKm": 15.03,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). First section of the Red Line, from Tallaght through the city centre to Connolly station. Main construction on both lines started in 2001 (Transport Infrastructure Ireland). Wikipedia gives March 2001 for the start of works and 26 September 2004 for the opening, with six days of free travel.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Prima secțiune a Liniei Roșii, de la Tallaght prin centrul orașului până la gara Connolly. Lucrările principale pe ambele linii au început în 2001 (Transport Infrastructure Ireland). Wikipedia indică martie 2001 pentru începutul lucrărilor și 26 septembrie 2004 pentru deschidere, cu șase zile de transport gratuit."
+      },
+      "sourceRefs": [
+        "tii-red-green-lines",
+        "osm-luas-dublin",
+        "wikipedia-en-luas"
+      ],
+      "geometryRef": "red-tallaght-connolly"
+    },
+    {
+      "id": "red-busaras-the-point",
+      "name": {
+        "en": "Red Line C1: Busáras – The Point",
+        "ro": "Linia Roșie C1: Busáras – The Point"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-06",
+        "opened": "2009-12-08"
+      },
+      "lengthKm": 1.48,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). Docklands extension (C1) east of Busáras to The Point, which TII dates to 2009. Wikipedia gives construction from the beginning of June 2007 and opening on 8 December 2009 for the Connolly to Docklands extension.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Extinderea spre Docklands (C1), la est de Busáras până la The Point, datată de TII în 2009. Wikipedia indică lucrări de la începutul lui iunie 2007 și deschiderea pe 8 decembrie 2009 pentru extinderea Connolly – Docklands."
+      },
+      "sourceRefs": [
+        "tii-red-green-lines",
+        "osm-luas-dublin",
+        "wikipedia-en-luas"
+      ],
+      "geometryRef": "red-busaras-the-point"
+    },
+    {
+      "id": "red-belgard-saggart",
+      "name": {
+        "en": "Red Line A1: Belgard – Saggart",
+        "ro": "Linia Roșie A1: Belgard – Saggart"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011"
+      },
+      "lengthKm": 4.65,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). Spur branching off the Red Line near Belgard to Saggart. TII records its opening to passengers in 2011; the exact day is not given on the page fetched.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Ramificație a Liniei Roșii de lângă Belgard până la Saggart. TII înregistrează deschiderea pentru călători în 2011; ziua exactă nu apare pe pagina consultată."
+      },
+      "sourceRefs": [
+        "tii-red-green-lines",
+        "osm-luas-dublin"
+      ],
+      "geometryRef": "red-belgard-saggart"
+    },
+    {
+      "id": "green-st-stephens-green-sandyford",
+      "name": {
+        "en": "Green Line: St Stephen's Green – Sandyford",
+        "ro": "Linia Verde: St Stephen's Green – Sandyford"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001-03",
+        "opened": "2004-06-30"
+      },
+      "lengthKm": 8.77,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). Original Green Line, opened in June 2004 between St Stephen's Green and Sandyford (Transport Infrastructure Ireland). Wikipedia gives 30 June 2004.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Linia Verde inițială, deschisă în iunie 2004 între St Stephen's Green și Sandyford (Transport Infrastructure Ireland). Wikipedia indică 30 iunie 2004."
+      },
+      "sourceRefs": [
+        "tii-red-green-lines",
+        "osm-luas-dublin",
+        "wikipedia-en-luas"
+      ],
+      "geometryRef": "green-st-stephens-green-sandyford"
+    },
+    {
+      "id": "green-sandyford-brides-glen",
+      "name": {
+        "en": "Green Line B1: Sandyford – Bride's Glen",
+        "ro": "Linia Verde B1: Sandyford – Bride's Glen"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-10-16"
+      },
+      "lengthKm": 7.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (one track, stop to stop). Southern extension (B1) to Bride's Glen, which TII dates to 2010. Wikipedia gives opening on 16 October 2010 and names the extension Sandyford to Cherrywood.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (o singură cale, de la stație la stație). Extinderea sudică (B1) până la Bride's Glen, datată de TII în 2010. Wikipedia indică deschiderea pe 16 octombrie 2010 și numește extinderea Sandyford – Cherrywood."
+      },
+      "sourceRefs": [
+        "tii-red-green-lines",
+        "osm-luas-dublin",
+        "wikipedia-en-luas"
+      ],
+      "geometryRef": "green-sandyford-brides-glen"
+    },
+    {
+      "id": "green-cross-city",
+      "name": {
+        "en": "Green Line: Luas Cross City (St Stephen's Green – Broombridge)",
+        "ro": "Linia Verde: Luas Cross City (St Stephen's Green – Broombridge)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013-06",
+        "opened": "2017-12-09"
+      },
+      "lengthKm": 5.2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Luas Cross City links the Green Line through the north city centre to Broombridge and crosses the Red Line at Abbey Street. TII records planning approval in 2012 and opening in 2017. Wikipedia gives construction from June 2013 and opening on 9 December 2017. Length measured from OpenStreetMap geometry (one track, St Stephen's Green to Broombridge). The Green Line has a single-track loop in the city centre.",
+        "ro": "Luas Cross City leagă Linia Verde prin nordul centrului până la Broombridge și traversează Linia Roșie la Abbey Street. TII înregistrează aprobarea planificării în 2012 și deschiderea în 2017. Wikipedia indică lucrări din iunie 2013 și deschiderea pe 9 decembrie 2017. Lungime măsurată din geometria OpenStreetMap (o singură cale, de la St Stephen's Green la Broombridge). Linia Verde are o buclă cu o singură cale în centrul orașului."
+      },
+      "sourceRefs": [
+        "tii-red-green-lines",
+        "osm-luas-dublin",
+        "wikipedia-en-luas",
+        "wikipedia-en-green-line"
+      ],
+      "geometryRef": "green-cross-city"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tii-red-green-lines",
+      "title": "Transport Infrastructure Ireland: Red and Green Lines (Delivery Timeline, 20 Years of Luas)",
+      "url": "https://www.tii.ie/en/public-transport/luas/red-and-green-lines/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "Transport Infrastructure Ireland: Luas (two lines, 43 km, 55 million passenger journeys in 2025)",
+      "url": "https://www.tii.ie/en/public-transport/luas/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-luas",
+      "title": "Wikipedia: Luas",
+      "url": "https://en.wikipedia.org/wiki/Luas",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-green-line",
+      "title": "Wikipedia: Green Line (Luas)",
+      "url": "https://en.wikipedia.org/wiki/Green_Line_(Luas)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-luas-dublin",
+      "title": "OpenStreetMap contributors (ODbL): Luas Red Line and Green Line route relations 3616736, 3616737, 6975500",
+      "url": "https://www.openstreetmap.org/relation/6975500",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

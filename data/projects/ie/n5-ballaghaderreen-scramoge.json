@@ -1,0 +1,241 @@
+{
+  "id": "ie-n5-ballaghaderreen-scramoge",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "N5 Ballaghaderreen to Scramoge",
+    "ro": "N5 Ballaghaderreen – Scramoge"
+  },
+  "description": {
+    "en": "A 33.4 km Type 1 single carriageway in County Roscommon, between the N5 Ballaghaderreen Bypass and the existing N5 at Scramoge. It bypasses Frenchpark, Bellanagare, Tulsk and Strokestown and replaces 35 km of the existing N5. Roscommon County Council is the client and Wills Bros the contractor. The first 7 km, the Frenchpark Bypass, was officially opened on 26 March 2026, and the rest is anticipated for 2027. The first main contract, awarded in June 2021, ended when the contractor went into receivership in March 2022. The project was retendered in July 2022 and the current contract was awarded in October 2023. The lot split follows the TII description of Section 1 as the Frenchpark Bypass; the contract is not otherwise broken into published sections.",
+    "ro": "O șosea cu o singură platformă de tip Type 1, lungă de 33,4 km, în comitatul Roscommon, între ocolitoarea N5 Ballaghaderreen și drumul N5 existent la Scramoge. Ocolește Frenchpark, Bellanagare, Tulsk și Strokestown și înlocuiește 35 km din N5 existent. Beneficiarul este Roscommon County Council, iar constructorul este Wills Bros. Primii 7 km, ocolitoarea Frenchpark, au fost inaugurați oficial la 26 martie 2026, iar restul este estimat pentru 2027. Primul contract principal, atribuit în iunie 2021, s-a încheiat când constructorul a intrat în insolvență în martie 2022. Proiectul a fost relicitat în iulie 2022, iar contractul actual a fost atribuit în octombrie 2023. Împărțirea pe loturi urmează descrierea TII a Secțiunii 1 ca ocolitoare Frenchpark; contractul nu este altfel împărțit în secțiuni publicate."
+  },
+  "operator": "ie-transport-infrastructure-ireland",
+  "lots": [
+    {
+      "id": "frenchpark-bypass",
+      "name": {
+        "en": "Section 1: Frenchpark Bypass (Rathkeery – Cashel)",
+        "ro": "Secțiunea 1: ocolitoarea Frenchpark (Rathkeery – Cashel)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2023-10-25",
+        "opened": "2026-03-26"
+      },
+      "lengthKm": 7,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-06",
+          "note": {
+            "en": "First main construction contract awarded; the contractor went into receivership in March 2022.",
+            "ro": "Primul contract principal de construcție a fost atribuit; constructorul a intrat în insolvență în martie 2022."
+          },
+          "sourceRef": "tii-active-list-2024"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2022-07",
+          "note": {
+            "en": "Construction contract retendered.",
+            "ro": "Contractul de construcție a fost relicitat."
+          },
+          "sourceRef": "tii-active-list-2024"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-10-25",
+          "note": {
+            "en": "Main construction contract awarded to Wills Bros Ltd; signed on 8 December 2023.",
+            "ro": "Contractul principal de construcție a fost atribuit Wills Bros Ltd; semnat la 8 decembrie 2023."
+          },
+          "sourceRef": "roscommon-people-contracts-signed"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-03-26",
+          "note": {
+            "en": "Officially opened by the Minister for Transport.",
+            "ro": "Inaugurată oficial de ministrul transporturilor."
+          },
+          "sourceRef": "tii-press-release-frenchpark-opening"
+        }
+      ],
+      "profile": {
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Funded by the Department of Transport and Transport Infrastructure Ireland, with Roscommon County Council as client.",
+            "ro": "Finanțat de Departamentul Transporturilor și Transport Infrastructure Ireland, cu Roscommon County Council ca beneficiar."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Wills Bros Ltd",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Starts in the townland of Rathkeery, bypasses Frenchpark village south of the existing N5, crosses the R361 and rejoins the existing N5 in the townland of Cashel. TII gives the length as 7 km, about 20% of the project, and says it was completed nineteen months ahead of schedule. The TII Annual Report 2025 lists the opening among the 2025 outcomes, so traffic may have used it before the official opening on 26 March 2026; the date it opened to traffic was not found. The date recorded is the official opening. The contract covers the whole project and is recorded on the remaining lot. The drawn OpenStreetMap geometry measures 7.35 km.",
+        "ro": "Începe în townland-ul Rathkeery, ocolește satul Frenchpark la sud de N5 existent, traversează drumul regional R361 și se reunește cu N5 existent în townland-ul Cashel. TII dă lungimea de 7 km, circa 20% din proiect, și spune că a fost finalizată cu nouăsprezece luni înainte de termen. Raportul anual TII 2025 include deschiderea printre rezultatele anului 2025, deci circulația ar fi putut începe înaintea inaugurării oficiale din 26 martie 2026; data deschiderii pentru trafic nu a fost găsită. Data înregistrată este cea a inaugurării oficiale. Contractul acoperă întregul proiect și este înregistrat la lotul rămas. Geometria OpenStreetMap desenată măsoară 7,35 km."
+      },
+      "sourceRefs": [
+        "tii-press-release-frenchpark-opening",
+        "rod-news-first-section-opens",
+        "tii-annual-report-2025",
+        "tii-active-list-2024",
+        "roscommon-people-contracts-signed",
+        "osm-contributors"
+      ],
+      "geometryRef": "frenchpark-bypass"
+    },
+    {
+      "id": "cashel-scramoge",
+      "name": {
+        "en": "Cashel – Scramoge (Bellanagare, Tulsk and Strokestown bypasses)",
+        "ro": "Cashel – Scramoge (ocolitoarele Bellanagare, Tulsk și Strokestown)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-10-25",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 26.4,
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-06",
+          "note": {
+            "en": "First main construction contract awarded; the contractor went into receivership in March 2022.",
+            "ro": "Primul contract principal de construcție a fost atribuit; constructorul a intrat în insolvență în martie 2022."
+          },
+          "sourceRef": "tii-active-list-2024"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2022-07",
+          "note": {
+            "en": "Construction contract retendered.",
+            "ro": "Contractul de construcție a fost relicitat."
+          },
+          "sourceRef": "tii-active-list-2024"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-10-25",
+          "note": {
+            "en": "Main construction contract awarded to Wills Bros Ltd; signed on 8 December 2023.",
+            "ro": "Contractul principal de construcție a fost atribuit Wills Bros Ltd; semnat la 8 decembrie 2023."
+          },
+          "sourceRef": "roscommon-people-contracts-signed"
+        }
+      ],
+      "profile": {
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Funded by the Department of Transport and Transport Infrastructure Ireland, with Roscommon County Council as client.",
+            "ro": "Finanțat de Departamentul Transporturilor și Transport Infrastructure Ireland, cu Roscommon County Council ca beneficiar."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Wills Bros Ltd",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "totalMonths": 48,
+        "noticeUrl": "https://roscommonpeople.ie/contracts-signed-for-n5-ballaghaderreen-to-scramoge-road-project/"
+      },
+      "note": {
+        "en": "The rest of the scheme, from the east end of the Frenchpark Bypass at Cashel to the existing N5 at Scramoge, about 4 km east of Strokestown. Length derived as the 33.4 km project length less the 7 km Frenchpark Bypass; the drawn OpenStreetMap geometry measures 25.59 km. Contract duration is four years, with substantial completion anticipated by October 2027. The Minister of State said in May 2025 that completion was expected in the third quarter of 2027, and the TII Annual Report 2025 says 2027. The contractor start is given only as October 2023, so no construction start date is recorded. The cost is recorded on the project as a forecast; the Minister of State reported EUR 179 million spent to date in May 2025.",
+        "ro": "Restul schemei, de la capătul estic al ocolitoarei Frenchpark la Cashel până la N5 existent la Scramoge, la circa 4 km est de Strokestown. Lungimea este dedusă ca lungimea proiectului de 33,4 km minus cei 7 km ai ocolitoarei Frenchpark; geometria OpenStreetMap desenată măsoară 25,59 km. Durata contractului este de patru ani, cu finalizare substanțială estimată până în octombrie 2027. Ministrul de stat a spus în mai 2025 că finalizarea este așteptată în trimestrul al treilea din 2027, iar Raportul anual TII 2025 indică 2027. Începutul lucrărilor constructorului este dat doar ca octombrie 2023, deci nu se înregistrează o dată de începere a lucrărilor. Costul este înregistrat la nivel de proiect ca estimare; ministrul de stat a raportat 179 milioane EUR cheltuite până în mai 2025."
+      },
+      "sourceRefs": [
+        "tii-active-list-2024",
+        "tii-annual-report-2025",
+        "roscommon-people-contracts-signed",
+        "connaught-telegraph-2025-on-track",
+        "n5b2s-project-site",
+        "wills-bros-project-page",
+        "tii-press-release-frenchpark-opening",
+        "osm-contributors"
+      ],
+      "geometryRef": "cashel-scramoge"
+    }
+  ],
+  "cost": {
+    "amount": 462.4,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "estimated",
+    "note": "Forecast cost in the TII Major Roads and Greenways Active List, December 2024, based on the 2021 Final Business Case. The TII press release of March 2026 gives an investment of approximately EUR 450 million."
+  },
+  "sources": [
+    {
+      "id": "tii-active-list-2024",
+      "title": "TII: Major Roads and Greenways Projects Active List, December 2024 (N5 Ballaghaderreen to Scramoge: 33.4 km, forecast cost 462.4m, contract history)",
+      "url": "https://www.tii.ie/media/hmqmkadl/final_full-report_major-roads-and-greenways-projects-active-list_2024.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "TII: Annual Report 2025 (Frenchpark Bypass opening; completion anticipated in 2027)",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-press-release-frenchpark-opening",
+      "title": "TII: Transport Minister opens first section of multi-million euro N5 Ballaghaderreen to Scramoge Road Project (26 March 2026)",
+      "url": "https://www.tii.ie/en/news/press-releases/transport-minister-opens-first-section-of-multi-million-euro-n5-ballaghaderreen-to-scramoge-road-project/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "rod-news-first-section-opens",
+      "title": "ROD: First section of N5 Ballaghaderreen to Scramoge Road project opens to traffic (31 March 2026)",
+      "url": "https://www.rod.ie/about/news/first-section-n5-ballaghaderreen-scramoge-road-project-opens-traffic",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "roscommon-people-contracts-signed",
+      "title": "Roscommon People: Contracts signed for N5 Ballaghaderreen to Scramoge Road Project (awarded to Wills Bros Ltd on 25 October 2023, signed 8 December 2023, four-year duration)",
+      "url": "https://roscommonpeople.ie/contracts-signed-for-n5-ballaghaderreen-to-scramoge-road-project/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "connaught-telegraph-2025-on-track",
+      "title": "Connaught Telegraph: N5 project on track for 2027 opening, bringing big benefits to Mayo (6 May 2025)",
+      "url": "https://www.con-telegraph.ie/2025/05/06/n5-project-on-track-for-2027-opening-bringing-big-benefits-to-mayo/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "n5b2s-project-site",
+      "title": "Roscommon County Council: The N5 Ballaghaderreen to Scramoge Project (33.4 km Type 1 single carriageway, Tibohine to Scramoge)",
+      "url": "https://n5b2s.ie/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wills-bros-project-page",
+      "title": "Wills Bros: N5 Ballaghadereen to Scramoge Road Scheme (client Roscommon County Council, October 2023 to present)",
+      "url": "https://willsbros.com/portfolio/n5-ballaghadereen-to-scramoge/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors: highway=construction and trunk ways (Frenchpark Bypass; Ballaghaderreen to Scramoge), ODbL",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

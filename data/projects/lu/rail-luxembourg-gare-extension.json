@@ -1,0 +1,134 @@
+{
+  "id": "lu-rail-luxembourg-gare-extension",
+  "country": "lu",
+  "category": "railway",
+  "name": {
+    "en": "Luxembourg central station extension",
+    "ro": "Extinderea gării centrale Luxembourg"
+  },
+  "description": {
+    "en": "CFL extension of Luxembourg central station, started in 2018 with completion scheduled for 2025. Two new island platforms (V and VI) add four platform tracks and were commissioned in 2021, the north and south underpasses are extended, and the switching zones on both sides of the station are rebuilt with fixed routes to reduce conflicting movements. The north zone was redone in summer 2021 and work on the south zone began in summer 2022. A new Bonnevoie footbridge was commissioned in September 2022 and a second north entry to the CFL maintenance centre at the end of 2022; neither is drawn here. The 2019 Fonds du rail law caps spending on the platforms V and VI and track plan restructuring at EUR 171 million excluding VAT, at the April 2017 construction price index.",
+    "ro": "Extinderea gării centrale Luxembourg de către CFL, începută în 2018, cu finalizarea programată pentru 2025. Două peroane noi (V și VI) adaugă patru linii de peron și au fost puse în funcțiune în 2021, pasajele subterane nord și sud sunt prelungite, iar zonele de macazuri de ambele părți ale gării sunt refăcute cu itinerarii fixe, pentru a reduce încrucișările. Zona nord a fost refăcută în vara 2021, iar lucrările la zona sud au început în vara 2022. O pasarelă nouă spre Bonnevoie a fost pusă în funcțiune în septembrie 2022, iar o a doua intrare nordică în centrul de întreținere CFL la sfârșitul lui 2022; niciuna nu este desenată aici. Legea din 2019 privind Fonds du rail plafonează cheltuielile pentru peroanele V și VI și restructurarea planului de linii la 171 de milioane de euro fără TVA, la indicele prețurilor din construcții din aprilie 2017."
+  },
+  "operator": "lu-cfl",
+  "lots": [
+    {
+      "id": "platform-v",
+      "name": {
+        "en": "Platform V",
+        "ro": "Peronul V"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021"
+      },
+      "lengthKm": 0.311,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "New platform, 311 m long and up to 10 m wide, giving platform access to existing track 11 and to new tracks 12 to 14 together with platform VI. Commissioned in 2021, no month stated. Drawn along the platform edge of track 11. It adds station capacity, not line length.",
+        "ro": "Peron nou, lung de 311 m și lat de până la 10 m, care oferă acces la peron pentru linia existentă 11 și, împreună cu peronul VI, pentru liniile noi 12–14. Pus în funcțiune în 2021, fără lună indicată. Desenat pe marginea peronului liniei 11. Adaugă capacitate de gară, nu lungime de linie."
+      },
+      "sourceRefs": [
+        "cfl-gare-extension",
+        "legilux-loi-2019-06-06",
+        "osm-copyright"
+      ],
+      "geometryRef": "platform-v"
+    },
+    {
+      "id": "platform-vi",
+      "name": {
+        "en": "Platform VI",
+        "ro": "Peronul VI"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021"
+      },
+      "lengthKm": 0.253,
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "New platform, 253 m long and up to 10 m wide. Commissioned in 2021, no month stated. Drawn along the platform edge of track 13; the drawn line measures about 0.26 km.",
+        "ro": "Peron nou, lung de 253 m și lat de până la 10 m. Pus în funcțiune în 2021, fără lună indicată. Desenat pe marginea peronului liniei 13; linia desenată măsoară circa 0,26 km."
+      },
+      "sourceRefs": [
+        "cfl-gare-extension",
+        "osm-copyright"
+      ],
+      "geometryRef": "platform-vi"
+    },
+    {
+      "id": "north-switching-zone",
+      "name": {
+        "en": "North switching zone",
+        "ro": "Zona de macazuri nord"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021"
+      },
+      "lengthKm": 0.27,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "note": {
+        "en": "CFL gives the north part as redone in summer 2021. The page states no length or end date. Length measured from OpenStreetMap geometry: one track from the north end of the platforms to the start of the north head tunnel section, an indicative extent only. The north head and the Pulvermühle viaduct beyond it are a separate project.",
+        "ro": "CFL indică partea nordică ca refăcută în vara 2021. Pagina nu indică lungime sau dată de finalizare. Lungime măsurată pe geometria OpenStreetMap: o linie de la capătul nordic al peroanelor până la începutul tunelului capului nord, doar o întindere orientativă. Capul nord și viaductul Pulvermühle de dincolo de el sunt un proiect separat."
+      },
+      "sourceRefs": [
+        "cfl-gare-extension",
+        "osm-copyright"
+      ],
+      "geometryRef": "north-switching-zone"
+    },
+    {
+      "id": "south-switching-zone",
+      "name": {
+        "en": "South switching zone",
+        "ro": "Zona de macazuri sud"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2022"
+      },
+      "lengthKm": 0.34,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "note": {
+        "en": "CFL states the south part began in summer 2022, with the whole extension scheduled to end in 2025, and gives no completion for this zone. As of 9 November 2026 no source seen says it is finished, so it stays under construction. Length measured from OpenStreetMap geometry: one track from the south end of the platforms to the first junction of the southern approach, an indicative extent only.",
+        "ro": "CFL indică partea sudică ca începută în vara 2022, cu finalul întregii extinderi programat pentru 2025, fără o dată de finalizare pentru această zonă. La 9 noiembrie 2026 nicio sursă consultată nu spune că este terminată, deci rămâne în construcție. Lungime măsurată pe geometria OpenStreetMap: o linie de la capătul sudic al peroanelor până la prima bifurcație a accesului sudic, doar o întindere orientativă."
+      },
+      "sourceRefs": [
+        "cfl-gare-extension",
+        "osm-copyright"
+      ],
+      "geometryRef": "south-switching-zone"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cfl-gare-extension",
+      "title": "CFL: Extension de la Gare de Luxembourg",
+      "url": "https://groupe.cfl.lu/fr-fr/project/detail/extension-gare-de-luxembourg",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "legilux-loi-2019-06-06",
+      "title": "Loi du 6 juin 2019 (Fonds du rail), annexe I, point 36°: quais V et VI et restructuration du plan des voies, 171 000 000 EUR",
+      "url": "https://data.legilux.public.lu/eli/etat/leg/loi/2019/06/06/a390/jo",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-copyright",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
