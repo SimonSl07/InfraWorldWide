@@ -1,0 +1,128 @@
+{
+  "id": "is-fossvogsbru",
+  "country": "is",
+  "category": "bridge",
+  "name": {
+    "en": "Fossvogsbrú (Alda)",
+    "ro": "Fossvogsbrú (Alda)"
+  },
+  "description": {
+    "en": "Bridge across Fossvogur between Reykjavík and Kópavogur for Borgarlína rapid transit vehicles, buses, pedestrians and cyclists. 270 m long and up to 17 m wide. Landfills and sea defences for the abutments were tendered separately by Vegagerðin and began in January 2025.",
+    "ro": "Pod peste Fossvogur între Reykjavík și Kópavogur, pentru vehiculele de transport rapid Borgarlína, autobuze, pietoni și bicicliști. Lungime 270 m, lățime de până la 17 m. Umpluturile și digurile de protecție pentru culee au fost licitate separat de Vegagerðin și au început în ianuarie 2025."
+  },
+  "operator": "is-betri-samgongur",
+  "lots": [
+    {
+      "id": "bridge",
+      "name": {
+        "en": "Fossvogsbrú bridge",
+        "ro": "Podul Fossvogsbrú"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-11-20",
+        "constructionStart": "2026-04",
+        "expectedOpening": "2028-06-16"
+      },
+      "lengthKm": 0.27,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 5960,
+              "currency": "ISK",
+              "year": 2025,
+              "scope": "works"
+            },
+            "date": "2025-05",
+            "note": "Estimate in the 2025 tender (advertised May 2025); VAT treatment not stated on the source page.",
+            "sourceRef": "borgarlinan-fossvogsbru"
+          },
+          {
+            "kind": "award",
+            "money": {
+              "amount": 7661,
+              "currency": "ISK",
+              "year": 2025,
+              "scope": "works",
+              "note": "VAT treatment not stated on the source page."
+            },
+            "date": "2025-11-20",
+            "sourceRef": "borgarlinan-fossvogsbru"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "Financed by the Samgöngusáttmálinn (transport agreement), per the project page.",
+            "ro": "Finanțat prin Samgöngusáttmálinn (pactul de transport), conform paginii proiectului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Ístak hf.",
+          "role": "builder"
+        },
+        {
+          "name": "Per Aarsleff AS",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 7661,
+          "currency": "ISK",
+          "year": 2025,
+          "scope": "works",
+          "note": "VAT treatment not stated on the source page."
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-11-20",
+          "sourceRef": "borgarlinan-fossvogsbru"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-04",
+          "sourceRef": "borgarlinan-fossvogsbru"
+        }
+      ],
+      "note": {
+        "en": "Contract signed with Ístak hf. and Per Aarsleff AS on 20 November 2025; work began in April 2026. The contractors are to hand over the finished bridge on 16 June 2028. The price year of the 2025 tender estimate is taken from the page; the contract value is recorded at the signing year. Landfills and sea defences (about 2 ha and 740 m of seawall on the Reykjavík side, about 0.3 ha and 220 m on the Kópavogur side, contractor Grafa og Grjót, contract January 2025, planned for 2025–2026) are a separate contract tendered by Vegagerðin for Betri samgöngur and are not drawn or measured here.",
+        "ro": "Contract semnat cu Ístak hf. și Per Aarsleff AS la 20 noiembrie 2025; lucrările au început în aprilie 2026. Antreprenorii trebuie să predea podul finalizat la 16 iunie 2028. Anul de preț al estimării din 2025 este cel de pe pagină; valoarea contractului este înregistrată la anul semnării. Umpluturile și digurile de protecție (circa 2 ha și 740 m de dig pe partea Reykjavík, circa 0,3 ha și 220 m pe partea Kópavogur, antreprenor Grafa og Grjót, contract ianuarie 2025, planificate pentru 2025–2026) sunt un contract separat, licitat de Vegagerðin pentru Betri samgöngur și nu sunt desenate sau măsurate aici."
+      },
+      "sourceRefs": [
+        "borgarlinan-fossvogsbru",
+        "vegagerdin-fossvogsbru-landfyllingar",
+        "openstreetmap-fossvogsbru"
+      ],
+      "geometryRef": "bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "borgarlinan-fossvogsbru",
+      "title": "Borgarlínan: Fossvogsbrú (Alda)",
+      "url": "https://www.borgarlinan.is/framkvaemdir/fossvogsbru",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-fossvogsbru-landfyllingar",
+      "title": "Vegagerðin: Fossvogsbrú, landfyllingar og sjóvarnir",
+      "url": "https://www.vegagerdin.is/verkefnin/framkvaemdir/fossvogsbru-landfyllingar-og-sjovarnir",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-fossvogsbru",
+      "title": "OpenStreetMap contributors (ODbL): Fossvogsbrú, way 1302582863",
+      "url": "https://www.openstreetmap.org/way/1302582863",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

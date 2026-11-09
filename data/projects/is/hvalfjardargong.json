@@ -1,0 +1,91 @@
+{
+  "id": "is-hvalfjardargong",
+  "country": "is",
+  "category": "tunnel",
+  "name": {
+    "en": "Hvalfjörður Tunnel",
+    "ro": "Tunelul Hvalfjörður"
+  },
+  "description": {
+    "en": "Subsea road tunnel under the Hvalfjörður fjord on Route 1 (Ring Road), 5,770 m long, reaching 165 m below sea level.",
+    "ro": "Tunel rutier submarin sub fiordul Hvalfjörður, pe Ruta 1 (Ring Road), lung de 5.770 m, ajungând la 165 m sub nivelul mării."
+  },
+  "operator": "is-vegagerdin",
+  "sources": [
+    {
+      "id": "vegagerdin-jardgong",
+      "title": "Vegagerðin: Listi yfir jarðgöng (tunnel list)",
+      "url": "https://www.vegagerdin.is/samgongukerfid/vegakerfid/jardgong",
+      "publisher": "Vegagerðin",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-hvalfjordur-tunnel",
+      "title": "Wikipedia: Hvalfjörður Tunnel",
+      "url": "https://en.wikipedia.org/wiki/Hvalfj%C3%B6r%C3%B0ur_Tunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-is-hvalfjardargong",
+      "title": "Wikipedia: Hvalfjarðargöng",
+      "url": "https://is.wikipedia.org/wiki/Hvalfjar%C3%B0arg%C3%B6ng",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-hvalfjardargong",
+      "title": "OpenStreetMap (ODbL): Hvalfjarðargöng ways 208098870 and 661188775",
+      "url": "https://www.openstreetmap.org/way/208098870",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lots": [
+    {
+      "id": "hvalfjardargong",
+      "name": {
+        "en": "Hvalfjörður Tunnel",
+        "ro": "Tunelul Hvalfjörður"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996",
+        "opened": "1998-07-11"
+      },
+      "lengthKm": 5.77,
+      "cost": {
+        "actual": {
+          "amount": 5000,
+          "currency": "ISK",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "About ISK 5,000 million (USD 70 million) as reported by Wikipedia; price year not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996",
+          "sourceRef": "wikipedia-hvalfjordur-tunnel"
+        },
+        {
+          "kind": "opened",
+          "date": "1998-07-11",
+          "sourceRef": "vegagerdin-jardgong"
+        }
+      ],
+      "note": {
+        "en": "Built 1996–1998. Vegagerðin's tunnel list records it as inaugurated (\"Vígð\") on 11 July 1998; the same date is used as the opening date. It was built, owned and operated by Spölur ehf., which collected tolls until the tunnel was handed to the state in September 2018. The builder is not named in the sources consulted. A second tube (Hvalfjarðargöng 2) is listed by Vegagerðin as in preparation only and is not modelled.",
+        "ro": "Construit în 1996–1998. Lista tunelurilor Vegagerðin îl consemnează ca inaugurat („Vígð”) la 11 iulie 1998; aceeași dată este folosită ca dată a deschiderii. A fost construit, deținut și operat de Spölur ehf., care a încasat taxe până la predarea tunelului către stat în septembrie 2018. Constructorul nu este numit în sursele consultate. Un al doilea tub (Hvalfjarðargöng 2) apare la Vegagerðin doar ca aflat în pregătire și nu este modelat."
+      },
+      "sourceRefs": [
+        "vegagerdin-jardgong",
+        "wikipedia-hvalfjordur-tunnel",
+        "wikipedia-is-hvalfjardargong",
+        "osm-hvalfjardargong"
+      ],
+      "geometryRef": "hvalfjardargong"
+    }
+  ]
+}
