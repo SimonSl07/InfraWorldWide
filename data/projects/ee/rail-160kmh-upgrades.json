@@ -1,0 +1,410 @@
+{
+  "id": "ee-rail-160kmh-upgrades",
+  "country": "ee",
+  "category": "railway",
+  "name": {
+    "en": "Eesti Raudtee 160 km/h upgrades",
+    "ro": "Modernizări Eesti Raudtee pentru 160 km/h"
+  },
+  "description": {
+    "en": "Eesti Raudtee is straightening curves and renewing track so passenger trains can run up to 160 km/h on Tapa–Tartu, Tapa–Narva and Tartu–Valga, where the top speed is now 120 to 135 km/h. Budgets are programme amounts: EUR 76.8 million for Tallinn–Tartu–Koidula and Tartu–Valga, EUR 16.3 million for Tapa–Narva, EUR 18.0 million for Palupera–Puka–Keeni and EUR 14.0 million for Kiltsi–Vägeva. Platform works at Nelijärve, Jäneda and Lehtse (EUR 4.75 million) are not drawn.",
+    "ro": "Eesti Raudtee îndreaptă curbe și reînnoiește calea pentru ca trenurile de călători să circule cu până la 160 km/h pe Tapa–Tartu, Tapa–Narva și Tartu–Valga, unde viteza maximă este acum de 120–135 km/h. Bugetele sunt sume ale programelor: 76,8 milioane EUR pentru Tallinn–Tartu–Koidula și Tartu–Valga, 16,3 milioane EUR pentru Tapa–Narva, 18,0 milioane EUR pentru Palupera–Puka–Keeni și 14,0 milioane EUR pentru Kiltsi–Vägeva. Lucrările la peroanele Nelijärve, Jäneda și Lehtse (4,75 milioane EUR) nu sunt desenate."
+  },
+  "operator": "ee-eesti-raudtee",
+  "lots": [
+    {
+      "id": "tapa-tartu-160",
+      "name": {
+        "en": "Tapa–Tartu 160 km/h (curve straightening and capital repair)",
+        "ro": "Tapa–Tartu 160 km/h (îndreptarea curbelor și reparație capitală)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2027-12"
+      },
+      "lengthKm": 74,
+      "cost": {
+        "estimated": {
+          "amount": 76.8,
+          "currency": "EUR",
+          "scope": "programme",
+          "note": "Budget of the whole Tallinn–Tartu–Koidula and Tartu–Valga project, including land acquisition on Tartu–Valga."
+        }
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 1
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 65.3,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "Cohesion Fund co-financing, EUR 65.3 million",
+            "ro": "Cofinanțare din Fondul de Coeziune, 65,3 milioane EUR"
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 11.5,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "State co-financing, EUR 11.5 million",
+            "ro": "Cofinanțare de la stat, 11,5 milioane EUR"
+          }
+        }
+      ],
+      "note": {
+        "en": "Eesti Raudtee budget of EUR 76.8 million (Cohesion Fund 65.3 million, state 11.5 million), Q1 2022 – Q4 2027, listed under 'Tallinn–Tartu–Koidula curve straightening and capital repair and land acquisition on Tartu–Valga'. It aims to raise the passenger speed limit on Tapa–Tartu from 120 to 160 km/h and states that about 74 km of track is rebuilt or renewed. The drawn line is the whole 110 km Tapa–Tartu line, because the rebuilt stretches are not itemised, so the drawn length exceeds the recorded 74 km. The Kiltsi–Vägeva lot lies inside this line. The 2027 end date is the project period, not a contract deadline. The same track is being electrified under a separate project.",
+        "ro": "Bugetul Eesti Raudtee este de 76,8 milioane EUR (Fondul de Coeziune 65,3 milioane, statul 11,5 milioane), T1 2022 – T4 2027, sub titlul „Îndreptarea curbelor și reparația capitală Tallinn–Tartu–Koidula și achiziția de terenuri pe Tartu–Valga”. Scopul este creșterea vitezei maxime pentru trenurile de călători pe Tapa–Tartu de la 120 la 160 km/h, iar sursa indică circa 74 km de cale reconstruită sau reînnoită. Linia desenată este întreaga linie Tapa–Tartu, de 110 km, deoarece tronsoanele reconstruite nu sunt detaliate, deci lungimea desenată depășește cei 74 km înregistrați. Lotul Kiltsi–Vägeva se află în această linie. Termenul 2027 este perioada proiectului, nu un termen contractual. Aceeași cale este electrificată printr-un proiect separat."
+      },
+      "sourceRefs": [
+        "evr-projects"
+      ],
+      "geometryRef": "tapa-tartu-160"
+    },
+    {
+      "id": "kiltsi-vageva",
+      "name": {
+        "en": "Tapa–Tartu: Kiltsi–Rakke–Vägeva capital repair",
+        "ro": "Tapa–Tartu: reparație capitală Kiltsi–Rakke–Vägeva"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-04",
+        "expectedOpening": "2026-11"
+      },
+      "lengthKm": 17.62,
+      "cost": {
+        "estimated": {
+          "amount": 14,
+          "currency": "EUR",
+          "scope": "programme",
+          "note": "Project budget for the Kiltsi–Vägeva reconstruction, which also covers platforms at Kiltsi, Rakke, Vägeva, Pedja, Tabivere and Kärkna and the Alupere crossing."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 8.9,
+              "currency": "EUR",
+              "year": 2025,
+              "note": "Contract for capital repair of Kiltsi–Rakke–Vägeva and platform extensions at Kiltsi and Rakke; VAT treatment not stated."
+            },
+            "date": "2025-02-27",
+            "sourceRef": "evr-news-3395"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "tracks": 1
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 8,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "State co-financing EUR 8 million, from greenhouse gas emission allowance trading revenue; the EU share is not stated",
+            "ro": "Cofinanțare de la stat de 8 milioane EUR, din veniturile comerțului cu certificate de emisii de gaze cu efect de seră; partea UE nu este indicată"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Leonhard Weiss OÜ",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 8.9,
+          "currency": "EUR",
+          "year": 2025
+        }
+      },
+      "note": {
+        "en": "Eesti Raudtee signed an EUR 8.9 million contract with Leonhard Weiss OÜ (announced 27 February 2025). Rails and sleepers are replaced over 17.62 km, level crossings at Nõmme, Räitsvere, Rakke and Edru are renewed, and new 100 m island platforms are built at Kiltsi and Rakke. Main works were planned for 2025 from April; the contract deadline is November 2026. The old track limited speed to 140 km/h. The drawn Kiltsi–Vägeva line is 21.3 km, longer than the 17.62 km of renewed track. The works lie inside the Tapa–Tartu line of the lot above.",
+        "ro": "Eesti Raudtee a semnat un contract de 8,9 milioane EUR cu Leonhard Weiss OÜ (anunțat la 27 februarie 2025). Șinele și traversele sunt înlocuite pe 17,62 km, trecerile la nivel de la Nõmme, Räitsvere, Rakke și Edru sunt reînnoite, iar la Kiltsi și Rakke se construiesc peroane insulă noi de 100 m. Lucrările principale au fost planificate pentru 2025, începând din aprilie; termenul contractual este noiembrie 2026. Vechea cale limita viteza la 140 km/h. Linia desenată Kiltsi–Vägeva are 21,3 km, mai mult decât cei 17,62 km de cale reînnoită. Lucrările se află în linia Tapa–Tartu a lotului de mai sus."
+      },
+      "sourceRefs": [
+        "evr-news-3395",
+        "evr-projects"
+      ],
+      "geometryRef": "kiltsi-vageva"
+    },
+    {
+      "id": "tapa-narva-160",
+      "name": {
+        "en": "Tapa–Narva 160 km/h (curve straightening and capital repair)",
+        "ro": "Tapa–Narva 160 km/h (îndreptarea curbelor și reparație capitală)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2027-12"
+      },
+      "lengthKm": 12,
+      "cost": {
+        "estimated": {
+          "amount": 16.3,
+          "currency": "EUR",
+          "scope": "programme"
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 17.5,
+              "currency": "EUR",
+              "year": 2025,
+              "note": "Contract for curve straightening and station reconstruction on the Tapa–Narva line; VAT treatment not stated."
+            },
+            "date": "2025-03-19",
+            "sourceRef": "evr-news-3405"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "maxSpeedKmh": 160,
+        "tracks": 1
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "amount": {
+            "amount": 13.8,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "Cohesion Fund co-financing, EUR 13.8 million",
+            "ro": "Cofinanțare din Fondul de Coeziune, 13,8 milioane EUR"
+          }
+        },
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 2.5,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "State co-financing, EUR 2.5 million",
+            "ro": "Cofinanțare de la stat, 2,5 milioane EUR"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GoTrack OÜ",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 17.5,
+          "currency": "EUR",
+          "year": 2025
+        }
+      },
+      "note": {
+        "en": "Eesti Raudtee budget of EUR 16.3 million, Q1 2022 – Q4 2027. About 12 km of track is rebuilt or renewed: geometry on Tapa–Kadrina, Kiviõli–Püssi, Jõhvi–Oru and Püssi–Kohtla, and capital repair with concrete sleepers on Soldina–Narva. The target is up to 160 km/h for passenger trains, up from 135 km/h. GoTrack OÜ signed a EUR 17.5 million contract for curve straightening and station reconstruction (announced 19 March 2025), which exceeds the budget figure. The drawn line covers the whole named station gaps (47 km), of which only about 12 km is rebuilt. The same track is being electrified under a separate project.",
+        "ro": "Bugetul Eesti Raudtee este de 16,3 milioane EUR, T1 2022 – T4 2027. Sunt reconstruite sau reînnoite circa 12 km de cale: geometria pe Tapa–Kadrina, Kiviõli–Püssi, Jõhvi–Oru și Püssi–Kohtla și reparația capitală cu traverse de beton pe Soldina–Narva. Ținta este de până la 160 km/h pentru trenurile de călători, față de 135 km/h. GoTrack OÜ a semnat un contract de 17,5 milioane EUR pentru îndreptarea curbelor și reconstrucția stațiilor (anunțat la 19 martie 2025), care depășește cifra bugetară. Linia desenată acoperă întregile intervale dintre stațiile numite (47 km), din care doar circa 12 km sunt reconstruiți. Aceeași cale este electrificată printr-un proiect separat."
+      },
+      "sourceRefs": [
+        "evr-projects",
+        "evr-news-3405"
+      ],
+      "geometryRef": "tapa-narva-160"
+    },
+    {
+      "id": "palupera-puka",
+      "name": {
+        "en": "Tartu–Valga: Palupera–Puka",
+        "ro": "Tartu–Valga: Palupera–Puka"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2026-12"
+      },
+      "lengthKm": 9.67,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 7.8,
+              "currency": "EUR",
+              "year": 2025,
+              "note": "Contract for curve straightening and capital repair of Palupera–Puka; VAT treatment not stated."
+            },
+            "date": "2025-07-10",
+            "sourceRef": "evr-news-3433"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "detail": {
+            "en": "The project page gives both 'EU co-financing EUR 6 million' and '50% from the Connecting Europe Facility' for the whole EUR 18.0 million Palupera–Keeni project; the figures are not reconciled here",
+            "ro": "Pagina proiectului indică atât „cofinanțare UE 6 milioane EUR”, cât și „50% din Mecanismul pentru Interconectarea Europei” pentru întregul proiect Palupera–Keeni de 18,0 milioane EUR; cifrele nu sunt reconciliate aici"
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State co-financing from greenhouse gas emission allowance trading revenue (EUR 12 million of the EUR 18.0 million project per the project page)",
+            "ro": "Cofinanțare de la stat din veniturile comerțului cu certificate de emisii (12 milioane EUR din proiectul de 18,0 milioane EUR, conform paginii proiectului)"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GoTrack OÜ",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 7.8,
+          "currency": "EUR",
+          "year": 2025
+        }
+      },
+      "note": {
+        "en": "Part of Eesti Raudtee's EUR 18.0 million Palupera–Puka–Keeni project (Q1 2024 – Q4 2026) to allow up to 160 km/h on track currently limited to 120 km/h. GoTrack OÜ signed a EUR 7.8 million contract for curve straightening and capital repair (announced 10 July 2025). Eesti Raudtee announced works for May to November 2026 (notice of 18 May 2026). Length measured from OpenStreetMap geometry. Land acquisition for the straightening is handled by Eesti Raudtee outside the CEF project.",
+        "ro": "Parte din proiectul Palupera–Puka–Keeni al Eesti Raudtee, de 18,0 milioane EUR (T1 2024 – T4 2026), care permite până la 160 km/h pe o cale limitată în prezent la 120 km/h. GoTrack OÜ a semnat un contract de 7,8 milioane EUR pentru îndreptarea curbelor și reparația capitală (anunțat la 10 iulie 2025). Eesti Raudtee a anunțat lucrări în perioada mai–noiembrie 2026 (anunț din 18 mai 2026). Lungime măsurată pe geometria OpenStreetMap. Achiziția terenurilor pentru îndreptare este făcută de Eesti Raudtee în afara proiectului CEF."
+      },
+      "sourceRefs": [
+        "evr-projects",
+        "evr-news-3433",
+        "evr-news-3526"
+      ],
+      "geometryRef": "palupera-puka"
+    },
+    {
+      "id": "puka-keeni",
+      "name": {
+        "en": "Tartu–Valga: Puka–Keeni",
+        "ro": "Tartu–Valga: Puka–Keeni"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2026-12"
+      },
+      "lengthKm": 12.25,
+      "profile": {
+        "works": "rehabilitation",
+        "maxSpeedKmh": 160,
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 4.6,
+              "currency": "EUR",
+              "year": 2025,
+              "note": "Contract for the Puka–Keeni section; VAT treatment not stated."
+            },
+            "date": "2025-12-10",
+            "sourceRef": "evr-news-3466"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "State co-financing from greenhouse gas emission allowance trading revenue; the EU co-finances under the EstMilMob grant agreement",
+            "ro": "Cofinanțare de la stat din veniturile comerțului cu certificate de emisii; UE cofinanțează prin acordul de grant EstMilMob"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GoTrack OÜ",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 4.6,
+          "currency": "EUR",
+          "year": 2025
+        }
+      },
+      "note": {
+        "en": "Part of Eesti Raudtee's EUR 18.0 million Palupera–Puka–Keeni project (Q1 2024 – Q4 2026). GoTrack OÜ signed a EUR 4.6 million contract (announced 10 December 2025); the main works were planned for 2026, and Eesti Raudtee announced works for May to November 2026. Length measured from OpenStreetMap geometry.",
+        "ro": "Parte din proiectul Palupera–Puka–Keeni al Eesti Raudtee, de 18,0 milioane EUR (T1 2024 – T4 2026). GoTrack OÜ a semnat un contract de 4,6 milioane EUR (anunțat la 10 decembrie 2025); lucrările principale au fost planificate pentru 2026, iar Eesti Raudtee a anunțat lucrări în perioada mai–noiembrie 2026. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "evr-projects",
+        "evr-news-3466",
+        "evr-news-3526"
+      ],
+      "geometryRef": "puka-keeni"
+    }
+  ],
+  "sources": [
+    {
+      "id": "evr-projects",
+      "title": "Eesti Raudtee: Projektid (Eesti Raudtee projects)",
+      "url": "https://www.evr.ee/et/projektid",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-3395",
+      "title": "Eesti Raudtee: Kiltsi–Rakke–Vägeva lõigul algavad aprillikuus kapitaalremonditööd (27 Feb 2025)",
+      "url": "https://www.evr.ee/et/uudised/3395-kiltsi-rakke-vaegeva-loigul-algavad-aprillikuus-kapitaalremonditoeoed",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-3405",
+      "title": "Eesti Raudtee: Tapa–Narva raudteeliinil alustatakse ehitustöid 160 km/h saavutamiseks (19 Mar 2025)",
+      "url": "https://www.evr.ee/et/uudised/3405-tapa-narva-raudteeliinil-alustatakse-ehitustoeid-160-km-h-saavutamiseks",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-3433",
+      "title": "Eesti Raudtee: Tartu–Valga raudteeliinil alustatakse ehitustöid 160 km/h saavutamiseks (10 Jul 2025)",
+      "url": "https://www.evr.ee/et/uudised/3433-tartu-valga-raudteeliinil-alustatakse-ehitustoeid-160-km-h-saavutamiseks",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-3466",
+      "title": "Eesti Raudtee: Tartu–Valga raudteel algavad 160 km/h kiiruse ja julgeolekule kaasa aitavad ehitustööd (10 Dec 2025)",
+      "url": "https://www.evr.ee/et/uudised/3466-tartu-valga-raudteel-algavad-160-km-h-kiiruse-ja-julgeolekule-kaasa-aitavad-ehitustoeoed",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-3526",
+      "title": "Eesti Raudtee: Teade Palupera–Puka–Keeni raudtee ehitustööde kohta (18 May 2026)",
+      "url": "https://www.evr.ee/et/uudised/3526-teade-palupera-puka-keeni-raudtee-ehitustoeoede-kohta",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "OpenStreetMap contributors (geometry of the Tapa–Tartu, Tapa–Narva and Tartu–Valga lines, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
