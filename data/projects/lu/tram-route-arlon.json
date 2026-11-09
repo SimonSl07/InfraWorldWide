@@ -1,0 +1,108 @@
+{
+  "id": "lu-tram-route-arlon",
+  "country": "lu",
+  "city": "lu-luxembourg",
+  "category": "railway",
+  "name": {
+    "en": "Tram extension, Route d'Arlon (Place de l'Étoile – CHL)",
+    "ro": "Extinderea tramvaiului pe Route d'Arlon (Place de l'Étoile – CHL)"
+  },
+  "description": {
+    "en": "Extension of Luxembourg City's tram line T1 west from Place de l'Étoile along Route d'Arlon to the future CHL interchange in Strassen: about 2.2 km with four stops (Étoile, Wunnquartier, CHL, CHL mobility hub), partly in a covered trench of about 600 m between the CHL and the Stade Josy Barthel. The law of 17 September 2026 authorises construction and caps State spending at €114 million excluding VAT; the whole project is put at €171 million, with the City of Luxembourg paying €57 million. Luxtram is the contracting authority. Construction is expected to start in spring 2029 and commercial service in the first quarter of 2033.",
+    "ro": "Extinderea liniei T1 a tramvaiului din orașul Luxemburg spre vest, de la Place de l'Étoile de-a lungul Route d'Arlon până la viitorul nod de transport CHL din Strassen: circa 2,2 km cu patru stații (Étoile, Wunnquartier, CHL, CHL mobility hub), în parte într-o tranșee acoperită de circa 600 m între CHL și Stade Josy Barthel. Legea din 17 septembrie 2026 autorizează construcția și plafonează cheltuielile statului la 114 milioane de euro fără TVA; proiectul în ansamblu este estimat la 171 de milioane de euro, din care orașul Luxemburg plătește 57 de milioane. Luxtram este autoritatea contractantă. Lucrările ar urma să înceapă în primăvara lui 2029, iar serviciul comercial în primul trimestru din 2033."
+  },
+  "operator": "lu-luxtram",
+  "stationCount": 4,
+  "lots": [
+    {
+      "id": "etoile-chl",
+      "name": {
+        "en": "Place de l'Étoile – CHL interchange",
+        "ro": "Place de l'Étoile – nodul CHL"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2033"
+      },
+      "lengthKm": 2.2,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 0.6,
+        "stationCount": 4
+      },
+      "cost": {
+        "estimated": {
+          "amount": 171,
+          "currency": "EUR",
+          "year": 2025,
+          "note": "Excluding VAT. Whole project: €114 million State plus €57 million City of Luxembourg. The State share is capped at the April 2025 construction price index."
+        }
+      },
+      "funding": [
+        {
+          "source": "national_budget",
+          "amount": {
+            "amount": 114,
+            "currency": "EUR",
+            "year": 2025,
+            "note": "Excluding VAT. Statutory spending cap, indexed twice a year to the construction price index (April 2025 value 1164.15)."
+          },
+          "detail": {
+            "en": "State of Luxembourg, charged to the Ministry of Mobility and Public Works",
+            "ro": "Statul luxemburghez, din bugetul Ministerului Mobilității și Lucrărilor Publice"
+          }
+        },
+        {
+          "source": "other",
+          "amount": {
+            "amount": 57,
+            "currency": "EUR",
+            "year": 2025,
+            "note": "Excluding VAT."
+          },
+          "detail": {
+            "en": "City of Luxembourg",
+            "ro": "Orașul Luxemburg"
+          }
+        }
+      ],
+      "note": {
+        "en": "Length is the ministry's 2.2 km; the ministry's July 2026 announcement (via Chronicle.lu) says about 2.1 km. The drawn line follows the Route d'Arlon (N6) centreline from Place de l'Étoile, using the planned tram ways mapped in OpenStreetMap near the Étoile, and is cut at 2.2 km from the start because OpenStreetMap does not map the full alignment or the stops. The ministry page calls the covered section a tunnel between the CHL and the Stade Josy Barthel. Government approved the bill at the end of 2025; the Chamber adopted it on 15 July 2026 and the law of 17 September 2026 was published on 9 October 2026. The ministry page gives service from 2032; the government release of July 2026 gives the first quarter of 2033, with construction from spring 2029. This is a first stage towards a P+R Ouest. The separate tram rapide Luxembourg – Esch-sur-Alzette has no published route and is not included.",
+        "ro": "Lungimea este cea de 2,2 km indicată de minister; anunțul ministerului din iulie 2026 (prin Chronicle.lu) indică circa 2,1 km. Linia desenată urmează axa Route d'Arlon (N6) de la Place de l'Étoile, folosind traseele de tramvai planificate cartografiate în OpenStreetMap lângă Étoile, și este tăiată la 2,2 km de capătul de pornire, deoarece OpenStreetMap nu cartografiază traseul complet și nici stațiile. Pagina ministerului numește secțiunea acoperită tunel între CHL și Stade Josy Barthel. Guvernul a aprobat proiectul de lege la sfârșitul lui 2025; Camera l-a adoptat pe 15 iulie 2026, iar legea din 17 septembrie 2026 a fost publicată pe 9 octombrie 2026. Pagina ministerului indică darea în exploatare din 2032; comunicatul guvernului din iulie 2026 indică primul trimestru din 2033, cu lucrări din primăvara lui 2029. Este prima etapă spre un P+R Ouest. Tramvaiul rapid Luxemburg – Esch-sur-Alzette nu are traseu publicat și nu este inclus."
+      },
+      "sourceRefs": [
+        "mmtp-tram-extensions",
+        "legilux-loi-2026-tram-chl",
+        "chronicle-bills-2026",
+        "osm-route-arlon"
+      ],
+      "geometryRef": "etoile-chl"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mmtp-tram-extensions",
+      "title": "Ministère de la Mobilité et des Travaux publics: Extensions du réseau tram (\"Ce projet majeur de 2,2 km incluera 4 arrêts supplémentaires ainsi un tunnel entre le CHL et l'actuel Stade Josy Barthel ... Une mise en service est prévue à l'horizon 2032\")",
+      "url": "https://transports.public.lu/fr/planifier/projets-et-chantiers-en-cours/extensions-reseau-tram.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "legilux-loi-2026-tram-chl",
+      "title": "Legilux: Loi du 17 septembre 2026 relative à la construction de l'extension de la ligne de tramway entre la place de l'Étoile et le pôle d'échange \"CHL\" (\"ne peuvent pas dépasser le montant de 114 000 000 euros ... hors TVA ... LUXTRAM S.A., maître d'ouvrage du projet\")",
+      "url": "https://data.legilux.public.lu/eli/etat/leg/loi/2026/09/17/a491/jo",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "chronicle-bills-2026",
+      "title": "Chronicle.lu: Luxembourg parliament adopts 4 mobility, energy, infrastructure bills (\"Construction is expected to begin in spring 2029, with commercial service scheduled to start in the first quarter of 2033\"; 16 July 2026)",
+      "url": "https://chronicle.lu/category/mobility/62431-luxembourg-parliament-adopts-4-mobility-energy-infrastructure-bills",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-route-arlon",
+      "title": "OpenStreetMap contributors (ODbL): Route d'Arlon (N6) and railway=proposed ways near Place de l'Étoile",
+      "url": "https://www.openstreetmap.org/way/95025027",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

@@ -1,10 +1,20 @@
 {
   "baseYear": 2015,
-  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes, since src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017. That is a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated. Croatia has no series: the kuna was replaced by the euro on 1 January 2023 at 7.53450 HRK per euro, so an HRK series would end in 2022 and pull the common latest price year of the whole table back from 2025 to 2022. Croatian figures recorded in kuna stay as prose in notes and are not restated; euro figures from 2023 use the euro-area series like every other euro cost. The Czech series is Eurostat's HICP for Czechia and starts in 1996, the first year Eurostat publishes it. The Polish series is Eurostat's HICP for Poland and also starts in 1996, the first year Eurostat publishes it. The Hungarian series is Eurostat's HICP for Hungary and also starts in 1996, the first year Eurostat publishes it. The Swedish series is Eurostat HICP for Sweden and starts in 1996, the first year Eurostat publishes it. The Norwegian series is Eurostat's HICP for Norway and starts in 1996, the first year Eurostat publishes it. The Danish series is Eurostat HICP for Denmark and starts in 1996, the first year Eurostat publishes it.",
+  "note": "Annual average Harmonised Index of Consumer Prices (all-items, COICOP CP00), 2015 = 100. Used to express costs from different price years in comparable real terms. HICP is a consumer-price proxy: a construction cost index (Eurostat sts_copi_a) would be a closer fit and can be substituted without code changes, since src/lib/deflator.ts consumes any table in this shape. USD is the US CPI-U (all urban consumers, all items, US city average), rebased from its native 1982–84 = 100 basis by dividing by the 2015 annual average of 237.017. That is a national CPI, not an HICP. The Serbian series starts in 2006: Eurostat publishes no annual-average HICP index for Serbia before then, and the 1990s hyperinflation and dinar redenomination make splicing the national CPI onto it unsound, so earlier years are absent rather than estimated. Croatia has no series: the kuna was replaced by the euro on 1 January 2023 at 7.53450 HRK per euro, so an HRK series would end in 2022 and pull the common latest price year of the whole table back from 2025 to 2022. Croatian figures recorded in kuna stay as prose in notes and are not restated; euro figures from 2023 use the euro-area series like every other euro cost. The Czech series is Eurostat's HICP for Czechia and starts in 1996, the first year Eurostat publishes it. The Polish series is Eurostat's HICP for Poland and also starts in 1996, the first year Eurostat publishes it. The Hungarian series is Eurostat's HICP for Hungary and also starts in 1996, the first year Eurostat publishes it. The Swedish series is Eurostat HICP for Sweden and starts in 1996, the first year Eurostat publishes it. The Norwegian series is Eurostat's HICP for Norway and starts in 1996, the first year Eurostat publishes it. The Danish series is Eurostat HICP for Denmark and starts in 1996, the first year Eurostat publishes it. The Swiss series is Eurostat's HICP for Switzerland and starts in 2005, the first year Eurostat publishes it, so Swiss costs priced before 2005 are not restated. The Icelandic series is Eurostat's HICP for Iceland and starts in 1996, the first year Eurostat publishes it. The Turkish series is Eurostat's HICP for Türkiye and starts in 1996, the first year Eurostat publishes it; it rises from 1.57 in 1996 to 1221.20 in 2025, so a Turkish cost deflated across years is dominated by inflation and is meaningful only after the within-currency step the cost rule requires. The pound sterling series is the ONS Consumer Prices Index (CPI INDEX 00: ALL ITEMS, series D7BT, 2015 = 100), entered by hand and not refetched by scripts/refresh-indices.ts: Eurostat's UK HICP stops in 2019 because the UK left the collection after Brexit, and the ONS CPI is the UK's HICP-conformant measure; the two agree to within 0.05 for every year from 1996 to 2019. The ONS publishes it to one decimal, so the series is carried at one decimal. The Moldovan series is the National Bureau of Statistics of Moldova's annual average consumer price index (previous year = 100, table PRE010100), chained to 2015 = 100 by dividing and multiplying through the published year-on-year ratios; it starts in 2001, the first year of that table. Eurostat publishes no HICP for Moldova, so the series is entered by hand and not refetched. There is no Ukrainian series: the State Statistics Service of Ukraine publishes consumer prices as year-on-year rates, its site gave no stable URL for an annual-average index, and no value was estimated. Costs in hryvnia stay as recorded and are dropped from real-terms comparisons rather than guessed.",
   "sources": [
     {
       "title": "Eurostat: HICP annual data (average index and rate of change) [prc_hicp_aind]",
       "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table"
+    },
+    {
+      "title": "Office for National Statistics: CPI INDEX 00: ALL ITEMS 2015=100 [D7BT, MM23], source for the pound sterling series",
+      "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/mm23",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "National Bureau of Statistics of the Republic of Moldova, StatBank: Price indices, by sectors of economy, annual average, previous year=100 [PRE010100], source for the Moldovan leu series",
+      "url": "https://statbank.statistica.md/PxWeb/pxweb/en/40%20Statistica%20economica/40%20Statistica%20economica__05%20PRE__PRE010__serii%20anuale/PRE010100.px/",
+      "retrievedOn": "2026-11-09"
     },
     {
       "title": "U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers: All Items in U.S. City Average [CPIAUCNS], via FRED",
@@ -428,6 +438,187 @@
         "2023": 117.6,
         "2024": 119.1,
         "2025": 121.3
+      }
+    },
+    "CHF": {
+      "geo": "CH",
+      "label": {
+        "en": "Switzerland",
+        "ro": "Elveția"
+      },
+      "index": {
+        "2005": 97.43,
+        "2006": 98.4,
+        "2007": 99.17,
+        "2008": 101.51,
+        "2009": 100.77,
+        "2010": 101.39,
+        "2011": 101.49,
+        "2012": 100.76,
+        "2013": 100.83,
+        "2014": 100.84,
+        "2015": 100,
+        "2016": 99.47,
+        "2017": 100.11,
+        "2018": 101.03,
+        "2019": 101.41,
+        "2020": 100.56,
+        "2021": 101.04,
+        "2022": 103.74,
+        "2023": 106.1,
+        "2024": 107.25,
+        "2025": 107.36
+      }
+    },
+    "GBP": {
+      "geo": "GB",
+      "label": {
+        "en": "United Kingdom",
+        "ro": "Regatul Unit"
+      },
+      "index": {
+        "1996": 68.8,
+        "1997": 70.1,
+        "1998": 71.2,
+        "1999": 72.1,
+        "2000": 72.7,
+        "2001": 73.6,
+        "2002": 74.5,
+        "2003": 75.5,
+        "2004": 76.5,
+        "2005": 78.1,
+        "2006": 79.9,
+        "2007": 81.8,
+        "2008": 84.7,
+        "2009": 86.6,
+        "2010": 89.4,
+        "2011": 93.4,
+        "2012": 96.1,
+        "2013": 98.5,
+        "2014": 100,
+        "2015": 100,
+        "2016": 100.7,
+        "2017": 103.4,
+        "2018": 105.9,
+        "2019": 107.8,
+        "2020": 108.7,
+        "2021": 111.6,
+        "2022": 121.7,
+        "2023": 130.5,
+        "2024": 133.9,
+        "2025": 138.4
+      }
+    },
+    "ISK": {
+      "geo": "IS",
+      "label": {
+        "en": "Iceland",
+        "ro": "Islanda"
+      },
+      "index": {
+        "1996": 43.26,
+        "1997": 44.05,
+        "1998": 44.64,
+        "1999": 45.59,
+        "2000": 47.6,
+        "2001": 50.74,
+        "2002": 53.44,
+        "2003": 54.18,
+        "2004": 55.43,
+        "2005": 56.19,
+        "2006": 58.8,
+        "2007": 60.94,
+        "2008": 68.71,
+        "2009": 79.89,
+        "2010": 85.85,
+        "2011": 89.46,
+        "2012": 94.84,
+        "2013": 98.76,
+        "2014": 99.74,
+        "2015": 100,
+        "2016": 100.79,
+        "2017": 99.13,
+        "2018": 99.86,
+        "2019": 101.85,
+        "2020": 103.06,
+        "2021": 106.84,
+        "2022": 112.96,
+        "2023": 121.96,
+        "2024": 127.47,
+        "2025": 132.22
+      }
+    },
+    "TRY": {
+      "geo": "TR",
+      "label": {
+        "en": "Turkey",
+        "ro": "Turcia"
+      },
+      "index": {
+        "1996": 1.57,
+        "1997": 2.92,
+        "1998": 5.32,
+        "1999": 8.58,
+        "2000": 13.14,
+        "2001": 20.6,
+        "2002": 30.28,
+        "2003": 37.94,
+        "2004": 41.76,
+        "2005": 45.15,
+        "2006": 49.34,
+        "2007": 53.66,
+        "2008": 59.27,
+        "2009": 62.97,
+        "2010": 68.37,
+        "2011": 72.79,
+        "2012": 79.31,
+        "2013": 85.22,
+        "2014": 92.81,
+        "2015": 100,
+        "2016": 107.66,
+        "2017": 119.63,
+        "2018": 139.17,
+        "2019": 160.3,
+        "2020": 179.98,
+        "2021": 215.24,
+        "2022": 370.82,
+        "2023": 570.94,
+        "2024": 905.21,
+        "2025": 1221.2
+      }
+    },
+    "MDL": {
+      "geo": "MD",
+      "label": {
+        "en": "Moldova",
+        "ro": "Moldova"
+      },
+      "index": {
+        "2001": 32.57,
+        "2002": 34.26,
+        "2003": 38.24,
+        "2004": 42.98,
+        "2005": 48.09,
+        "2006": 54.2,
+        "2007": 60.87,
+        "2008": 68.6,
+        "2009": 68.6,
+        "2010": 73.67,
+        "2011": 79.27,
+        "2012": 82.92,
+        "2013": 86.73,
+        "2014": 91.16,
+        "2015": 100,
+        "2016": 106.36,
+        "2017": 113.35,
+        "2018": 116.8,
+        "2019": 122.46,
+        "2020": 127.08,
+        "2021": 133.57,
+        "2022": 171.96,
+        "2023": 195.03,
+        "2024": 204.16,
+        "2025": 220
       }
     }
   }
