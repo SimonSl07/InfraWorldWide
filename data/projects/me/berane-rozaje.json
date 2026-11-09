@@ -1,0 +1,109 @@
+{
+  "id": "me-berane-rozaje",
+  "country": "me",
+  "category": "highway",
+  "name": {
+    "en": "Berane–Rožaje road reconstruction",
+    "ro": "Reabilitarea drumului Berane–Rožaje"
+  },
+  "description": {
+    "en": "Reconstruction of about 30 km of the Berane–Rožaje section of Montenegro’s northern road corridor. The signed contract refers to the road as M-2; OSM maps the route as M-5.",
+    "ro": "Reabilitarea a aproximativ 30 km din tronsonul Berane–Rožaje al coridorului rutier nordic din Muntenegru. Contractul semnat denumește drumul M-2; OSM cartografiază traseul ca M-5."
+  },
+  "operator": "me-uzs",
+  "lastVerified": "2026-10-13",
+  "sources": [
+    {
+      "id": "berane-rozaje-award",
+      "title": "Government of Montenegro: contract signed for reconstruction of the Berane–Rožaje road",
+      "url": "https://www.gov.me/cyr/clanak/potpisan-ugovor-vrijedan-537-miliona-eura-za-rekonstrukciju-puta-berane-rozaje",
+      "publisher": "Transport Administration of Montenegro",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "m5-osm",
+      "title": "OpenStreetMap contributors: M-5 relation 13768953, downloaded 13 October 2026",
+      "url": "https://www.openstreetmap.org/relation/13768953",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "berane-rozaje",
+      "name": {
+        "en": "Berane–Rožaje",
+        "ro": "Berane–Rožaje"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-07-29"
+      },
+      "lengthKm": 30,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 53.67654327,
+              "currency": "EUR",
+              "year": 2026,
+              "note": "Excluding VAT."
+            },
+            "date": "2026-07-29",
+            "sourceRef": "berane-rozaje-award"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation"
+      },
+      "contractors": [
+        {
+          "name": "Xingtai–Makimsan JV",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-07-29",
+          "sourceRef": "berane-rozaje-award"
+        }
+      ],
+      "geometryRef": "berane-rozaje",
+      "sourceRefs": [
+        "berane-rozaje-award",
+        "m5-osm"
+      ],
+      "note": {
+        "en": "The contract source identifies this route as M-2, while OpenStreetMap maps the corridor as M-5. The source reports that works were planned to start after the 2026 summer season, but does not confirm a start date.",
+        "ro": "Sursa contractului identifică drumul ca M-2, în timp ce OpenStreetMap cartografiază coridorul ca M-5. Sursa indică începerea planificată a lucrărilor după sezonul estival 2026, dar nu confirmă o dată de începere."
+      },
+      "contract": {
+        "value": {
+          "amount": 53.67654327,
+          "currency": "EUR",
+          "year": 2026,
+          "note": "Excluding VAT."
+        }
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "European Investment Bank loan.",
+            "ro": "Împrumut de la Banca Europeană de Investiții."
+          }
+        },
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Montenegro state budget.",
+            "ro": "Bugetul de stat al Muntenegrului."
+          }
+        }
+      ]
+    }
+  ]
+}
