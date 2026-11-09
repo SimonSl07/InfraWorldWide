@@ -1,0 +1,81 @@
+{
+  "id": "md-cantemir-falciu-railway",
+  "country": "md",
+  "category": "railway",
+  "name": {
+    "en": "Cantemir – Fălciu railway reconnection",
+    "ro": "Reconectarea feroviară Cantemir – Fălciu"
+  },
+  "description": {
+    "en": "Reconstruction of the Prut-2 – Fălciu line, which links the Moldovan 1520 mm network with the Romanian 1435 mm network. About 4 km of track were rebuilt for combined gauge, with repair of the Prut bridge and the Prut 2 and Fălciu border stations. The project was launched under the April 2025 memorandum between CFM and CFR and the line reopened on 22 April 2026, mainly for freight. Only the Moldovan part is mapped here.",
+    "ro": "Reconstrucția liniei Prut-2 – Fălciu, care leagă rețeaua moldovenească cu ecartament de 1520 mm de cea românească cu ecartament de 1435 mm. Aproximativ 4 km de cale ferată au fost refăcuți pentru ecartament combinat, cu repararea podului peste Prut și a stațiilor de frontieră Prut 2 și Fălciu. Proiectul a fost lansat în baza memorandumului dintre CFM și CFR din aprilie 2025, iar linia a fost redeschisă la 22 aprilie 2026, în principal pentru transportul de marfă. Aici este cartografiată doar partea de pe teritoriul Republicii Moldova."
+  },
+  "operator": "md-cfm",
+  "lots": [
+    {
+      "id": "cantemir-falciu",
+      "name": {
+        "en": "Prut-2 – Fălciu (Moldovan part)",
+        "ro": "Prut-2 – Fălciu (partea din Republica Moldova)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2026-04-22"
+      },
+      "lengthKm": 4,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2025-04",
+          "note": {
+            "en": "CFM and CFR sign a memorandum under which the reconstruction project was launched.",
+            "ro": "CFM și CFR semnează un memorandum în baza căruia a fost lansat proiectul de reconstrucție."
+          },
+          "sourceRef": "adevarul-cantemir-falciu-2026-04-22"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-04-22",
+          "note": {
+            "en": "The Government of Moldova announced the line open after reconstruction and modernisation.",
+            "ro": "Guvernul Republicii Moldova a anunțat deschiderea liniei după lucrările de reconstrucție și modernizare."
+          },
+          "sourceRef": "adevarul-cantemir-falciu-2026-04-22"
+        }
+      ],
+      "note": {
+        "en": "Works covered about 4 km of track, over 3,000 sleepers, repair of the Prut bridge, the Prut 2 and Fălciu border stations and bank consolidation on the Prut. The line now carries combined 1520 mm and 1435 mm gauge. The 4 km is the figure given by the Moldovan Government; the line drawn from OpenStreetMap between Prut-2 station and the Prut bridge is about 4.95 km, and the Romanian approach to Fălciu is not included. The Prut bridge is drawn up to where OpenStreetMap switches operator from CFR to CFM, which is not a surveyed border position. No cost has been published. The 2026–2030 National Railway Infrastructure Programme still lists completion of the Prut-2 – Fălciu section, so some works may remain.",
+        "ro": "Lucrările au inclus circa 4 km de cale ferată, peste 3000 de traverse, repararea podului peste Prut, stațiile de frontieră Prut 2 și Fălciu și consolidarea malului Prutului. Linia are acum ecartament combinat de 1520 mm și 1435 mm. Cei 4 km sunt cifra indicată de Guvernul Republicii Moldova; linia desenată pe baza OpenStreetMap între stația Prut-2 și podul peste Prut are circa 4,95 km, iar accesul românesc spre Fălciu nu este inclus. Podul peste Prut este desenat până la punctul în care OpenStreetMap schimbă operatorul din CFR în CFM, care nu este o poziție topografică a frontierei. Nu a fost publicat niciun cost. Programul național de infrastructură feroviară 2026–2030 mai prevede finalizarea lucrărilor pe tronsonul Prut-2 – Fălciu, deci pot rămâne lucrări."
+      },
+      "sourceRefs": [
+        "adevarul-cantemir-falciu-2026-04-22",
+        "midr-national-railway-programme-2026-2030",
+        "osm-cantemir-falciu"
+      ],
+      "geometryRef": "cantemir-falciu"
+    }
+  ],
+  "sources": [
+    {
+      "id": "adevarul-cantemir-falciu-2026-04-22",
+      "title": "Adevărul: O linie de cale ferată cu ecartament european a fost redeschisă în Republica Moldova (2026-04-22)",
+      "url": "https://adevarul.ro/economie/o-linie-de-cale-ferata-cu-ecartament-european-a-2524553.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "midr-national-railway-programme-2026-2030",
+      "title": "MIDR: Programul național de infrastructură feroviară pentru anii 2026–2030",
+      "url": "https://midr.gov.md/noutati/programul-national-de-infrastructura-feroviara-pentru-anii-2026-2030-aprobat-de-guvern-calea-ferata-va-fi-modernizata-iar-transportul-de-pasageri-va-fi-extins",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-cantemir-falciu",
+      "title": "OpenStreetMap contributors (ODbL): railway Prut-2 – Post 8 km – Fălciu",
+      "url": "https://www.openstreetmap.org/way/44046953",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

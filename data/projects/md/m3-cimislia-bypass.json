@@ -1,0 +1,97 @@
+{
+  "id": "md-m3-cimislia-bypass",
+  "country": "md",
+  "category": "highway",
+  "name": {
+    "en": "M3 Cimișlia Bypass",
+    "ro": "Drumul de ocolire Cimișlia (M3)"
+  },
+  "description": {
+    "en": "New 7.339 km alignment of the M3 national road outside the town of Cimișlia, with two bridges and three grade-separated junctions. The works contract was signed on 22 September 2026.",
+    "ro": "Traseu nou de 7,339 km al drumului național M3 în extravilanul orașului Cimișlia, cu două poduri și trei intersecții denivelate. Contractul de lucrări a fost semnat la 22 septembrie 2026."
+  },
+  "operator": "md-and",
+  "lots": [
+    {
+      "id": "cimislia-bypass",
+      "name": {
+        "en": "Cimișlia bypass",
+        "ro": "Ocolirea Cimișlia"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2026-09-22"
+      },
+      "lengthKm": 7.339,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 43.3,
+              "currency": "EUR",
+              "year": 2026,
+              "scope": "works",
+              "note": "Excluding VAT."
+            },
+            "date": "2026-09-22",
+            "sourceRef": "and-contract-signed-2026"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "Financed by the European Investment Bank, per the National Roads Administration release.",
+            "ro": "Finanțat de Banca Europeană de Investiții, conform comunicatului Administrației Naționale a Drumurilor."
+          }
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 43.3,
+          "currency": "EUR",
+          "year": 2026,
+          "scope": "works",
+          "note": "Excluding VAT."
+        },
+        "totalMonths": 30
+      },
+      "note": {
+        "en": "Contract signed on 22 September 2026 by the director of the National Roads Administration and the winning contractor, who is not named in the release. Execution period 915 days. Contract duration converted from days: 915 days. No commencement order has been published, so the lot is not recorded as under construction. Works include 10,189 m of metal safety barriers, road lighting, and relocation of electricity, telecommunications and gas networks. The drawn line follows OpenStreetMap ways mapped as under construction and measures about 7.5 km. An April 2025 AND planning list gave the section as km 0+000 to km 7+400, new construction, with EIB as lender.",
+        "ro": "Contract semnat la 22 septembrie 2026 de directorul general al Administrației Naționale a Drumurilor și de antreprenorul câștigător, nenumit în comunicat. Perioada de execuție este de 915 zile. Durata contractului convertită din zile: 915 zile. Nu a fost publicat un ordin de începere, deci lotul nu este înregistrat ca fiind în construcție. Lucrările includ 10.189 m de parapete metalice, iluminat rutier și relocarea rețelelor electrice, de telecomunicații și de gaze. Linia desenată urmează căile OpenStreetMap marcate ca în construcție și măsoară circa 7,5 km. O listă de planificare AND din aprilie 2025 indica sectorul km 0+000 – km 7+400, construcție nouă, cu BEI drept finanțator."
+      },
+      "sourceRefs": [
+        "and-contract-signed-2026",
+        "and-planned-projects-2025",
+        "openstreetmap-m3-cimislia"
+      ],
+      "geometryRef": "cimislia-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "and-contract-signed-2026",
+      "title": "AND: A fost semnat contractul pentru construcția drumului de ocolire al orașului Cimișlia (2026-09-22)",
+      "url": "https://www.andsa.md/featured/fost-semnat-contractul-pentru-construc-ia-drumului-de-ocolire-al-ora-ului-cimi-lia/",
+      "publisher": "Administrația Națională a Drumurilor",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "and-planned-projects-2025",
+      "title": "AND: Proiecte planificate (PDF, April 2025)",
+      "url": "https://www.andsa.md/wp-content/uploads/2025/04/proiecte_planificate.pdf",
+      "publisher": "Administrația Națională a Drumurilor",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-m3-cimislia",
+      "title": "OpenStreetMap contributors: M3 Cimișlia bypass ways (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

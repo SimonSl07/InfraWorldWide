@@ -1,0 +1,161 @@
+{
+  "id": "md-ungheni-access-roads",
+  "country": "md",
+  "category": "highway",
+  "name": {
+    "en": "Ungheni Prut bridge approach roads (Moldovan side)",
+    "ro": "Drumurile de acces la podul peste Prut, Ungheni (partea moldovenească)"
+  },
+  "description": {
+    "en": "Road works on the Moldovan side of the Ungheni–Ungheni bridge over the Prut: a World Bank-financed access road tendered by the National Road Administration, a 500 m Moldova-funded stretch of motorway between the bridge and the R16, and about 4.7 km of motorway beyond it that Romania has agreed to finance. The bridge itself is mapped under the Romanian project.",
+    "ro": "Lucrări rutiere pe partea moldovenească a podului Ungheni–Ungheni peste Prut: un drum de acces finanțat de Banca Mondială, scos la licitație de Administrația Națională a Drumurilor, un sector de 500 m de autostradă între pod și R16 finanțat de Republica Moldova și circa 4,7 km de autostradă dincolo de acesta, pe care România a convenit să îi finanțeze. Podul propriu-zis este cartografiat în proiectul românesc."
+  },
+  "operator": "md-and",
+  "lots": [
+    {
+      "id": "access-road-km1-1410",
+      "name": {
+        "en": "Access road to the Prut bridge, km 1+000 – 1+410",
+        "ro": "Drumul de acces către podul peste Prut, km 1+000 – 1+410"
+      },
+      "status": "tendered",
+      "lengthKm": 0.41,
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "World Bank, Moldova Rural Connectivity Project (Loan No. 9672-MD / Credit No. 7538-MD).",
+            "ro": "Banca Mondială, Proiectul de conectivitate rurală din Moldova (Împrumut nr. 9672-MD / Credit nr. 7538-MD)."
+          }
+        }
+      ],
+      "note": {
+        "en": "Contract MRCP/W6/01: earthworks, pavement, drainage, guardrail, lighting and utility relocation. Bids were due on 8 September 2026 and the National Road Administration lists the tender as at bid evaluation. No value, contractor or award date is published. The tender documents do not say where km 0 lies; the line is drawn on the OpenStreetMap motorway alignment 1.0 to 1.41 km from the Moldovan end of the bridge, which is an assumption and overlaps the 4.7 km lot below.",
+        "ro": "Contractul MRCP/W6/01: terasamente, îmbrăcăminte rutieră, drenaj, parapete, iluminat și mutarea utilităților. Ofertele erau așteptate pe 8 septembrie 2026, iar Administrația Națională a Drumurilor indică licitația în faza de evaluare a ofertelor. Nu sunt publicate valoarea, constructorul sau data atribuirii. Documentele de licitație nu precizează unde se află km 0; linia este trasată pe axa autostrăzii din OpenStreetMap, la 1,0–1,41 km de capătul moldovenesc al podului, ceea ce este o presupunere și se suprapune cu lotul de 4,7 km de mai jos."
+      },
+      "sourceRefs": [
+        "and-tender-mrcp-w6-01",
+        "and-notice-mrcp-w6-01",
+        "and-planned-projects-2025",
+        "osm-ungheni-access-roads"
+      ],
+      "geometryRef": "access-road-km1-1410"
+    },
+    {
+      "id": "border-to-r16-sector",
+      "name": {
+        "en": "Bridge – R16 motorway sector",
+        "ro": "Sector de autostradă pod – R16"
+      },
+      "status": "planned",
+      "lengthKm": 0.5,
+      "cost": {
+        "estimated": {
+          "amount": 5,
+          "currency": "EUR",
+          "confidence": "estimated",
+          "note": "Estimated value reported by Veridica."
+        }
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2026-07-02",
+          "note": {
+            "en": "Moldova and Romania sign in Bucharest an agreement under which Moldova funds about 500 m of motorway between the Prut bridge and the R16. The Moldovan government approved the ratification bill on 16 September 2026.",
+            "ro": "Republica Moldova și România semnează la București un acord prin care Republica Moldova finanțează circa 500 m de autostradă între podul peste Prut și R16. Guvernul de la Chișinău a aprobat proiectul de lege de ratificare la 16 septembrie 2026."
+          },
+          "sourceRef": "veridica-ungheni-bridge-scope-2026"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Funded by the Republic of Moldova.",
+            "ro": "Finanțat de Republica Moldova."
+          }
+        }
+      ],
+      "note": {
+        "en": "Recorded length is the about 500 m of the source. The drawn line (0.47 km) follows the OpenStreetMap motorway under construction from the end of the bridge to the R16 junction. No contractor or schedule is published.",
+        "ro": "Lungimea înregistrată este cea de circa 500 m din sursă. Linia desenată (0,47 km) urmează autostrada în construcție din OpenStreetMap de la capătul podului până la nodul cu R16. Nu sunt publicate constructorul sau calendarul."
+      },
+      "sourceRefs": [
+        "veridica-ungheni-bridge-scope-2026",
+        "osm-ungheni-access-roads"
+      ],
+      "geometryRef": "border-to-r16-sector"
+    },
+    {
+      "id": "motorway-r16-to-east",
+      "name": {
+        "en": "Motorway beyond the R16 (Romania-financed)",
+        "ro": "Autostrada dincolo de R16 (finanțată de România)"
+      },
+      "status": "planned",
+      "lengthKm": 4.7,
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2026-07-02",
+          "note": {
+            "en": "Agreement signed in Bucharest: Romania is to finance about 4.7 km of motorway in Moldova and a link road of about 1.1 km to the Berești multimodal logistics complex.",
+            "ro": "Acord semnat la București: România va finanța circa 4,7 km de autostradă în Republica Moldova și un drum de legătură de circa 1,1 km către complexul logistic multimodal Berești."
+          },
+          "sourceRef": "veridica-ungheni-bridge-scope-2026"
+        }
+      ],
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "Financed by Romania, including through the EU SAFE instrument.",
+            "ro": "Finanțat de România, inclusiv prin instrumentul european SAFE."
+          }
+        }
+      ],
+      "note": {
+        "en": "Veridica gives about EUR 56 million for the whole Romanian-financed package (bridge, related infrastructure, the Romanian border crossing point, the 4.7 km and the 1.1 km link road), so no cost is recorded for this lot. The 1.1 km link road to Berești is not drawn. The Romanian A8 Iași – Ungheni contract is reported to also cover the first kilometres of motorway in Moldova; the two may be the same works. Drawn from the end of the previous lot along the OpenStreetMap motorway under construction, cut at the recorded length.",
+        "ro": "Veridica indică circa 56 de milioane EUR pentru întregul pachet finanțat de România (podul, infrastructura conexă, punctul de trecere a frontierei de pe teritoriul românesc, cei 4,7 km și drumul de legătură de 1,1 km), deci pentru acest lot nu se înregistrează un cost. Drumul de legătură de 1,1 km către Berești nu este desenat. Contractul românesc A8 Iași – Ungheni ar include și primii kilometri de autostradă din Republica Moldova; este posibil să fie aceleași lucrări. Desenat de la capătul lotului anterior de-a lungul autostrăzii în construcție din OpenStreetMap, tăiat la lungimea înregistrată."
+      },
+      "sourceRefs": [
+        "veridica-ungheni-bridge-scope-2026",
+        "osm-ungheni-access-roads"
+      ],
+      "geometryRef": "motorway-r16-to-east"
+    }
+  ],
+  "sources": [
+    {
+      "id": "and-tender-mrcp-w6-01",
+      "title": "AND: Contractul MRCP/W6/01, Construcția drumului de acces către podul pe râul Prut, Ungheni, km 1+000 – km 1+410",
+      "url": "https://www.andsa.md/tendere-internationale/124-contractul-mrcp-w6-01-construc-ia-drumului-de-acces-c-tre-podul-pe-r-ul-prut-ungheni-km-1-000-km-1-410/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "and-notice-mrcp-w6-01",
+      "title": "AND: Specific Procurement Notice MRCP/W6/01 (World Bank, Moldova Rural Connectivity Project)",
+      "url": "https://www.andsa.md/wp-content/uploads/2026/07/Anunt-lansare-licitatie-Ungheni.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "and-planned-projects-2025",
+      "title": "AND: Proiecte planificate spre lansare (April 2025)",
+      "url": "https://www.andsa.md/wp-content/uploads/2025/04/proiecte_planificate.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "veridica-ungheni-bridge-scope-2026",
+      "title": "Veridica: R. Moldova și România extind proiectul podului rutier Ungheni-Ungheni (2026-09-16)",
+      "url": "https://www.veridica.md/stiri/r-moldova-si-romania-extind-proiectul-podului-rutier-ungheni-ungheni",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-ungheni-access-roads",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
