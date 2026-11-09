@@ -1,0 +1,203 @@
+{
+  "id": "gb-edinburgh-trams",
+  "country": "gb",
+  "city": "gb-edinburgh",
+  "category": "railway",
+  "name": {
+    "en": "Edinburgh Trams (Airport – Newhaven)",
+    "ro": "Tramvaiul din Edinburgh (Aeroport – Newhaven)"
+  },
+  "description": {
+    "en": "Single tram line of 18.5 km with 23 stops between Edinburgh Airport and Newhaven, built in two stages. The first stage, from the airport to York Place, was built from June 2008 and opened on 31 May 2014 after delays and a cut from the planned network; the public inquiry into it put its final cost at £835.7 million. An 8-stop extension from York Place (served from 2022 by Picardy Place) through Leith to Newhaven opened on 7 June 2023.",
+    "ro": "Linie unică de tramvai de 18,5 km, cu 23 de stații, între Aeroportul Edinburgh și Newhaven, construită în două etape. Prima etapă, de la aeroport la York Place, a fost construită din iunie 2008 și s-a deschis pe 31 mai 2014, după întârzieri și după reducerea rețelei planificate; ancheta publică asupra ei a stabilit costul final la 835,7 milioane de lire sterline. Prelungirea cu 8 stații de la York Place (deservit din 2022 de Picardy Place) prin Leith până la Newhaven s-a deschis pe 7 iunie 2023."
+  },
+  "operator": "gb-edinburgh-trams",
+  "stationCount": 23,
+  "lots": [
+    {
+      "id": "airport-york-place",
+      "name": {
+        "en": "Edinburgh Airport – York Place (Phase 1a)",
+        "ro": "Aeroportul Edinburgh – York Place (faza 1a)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2008-05",
+        "constructionStart": "2008-06",
+        "opened": "2014-05-31"
+      },
+      "lengthKm": 13.7,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 835.7,
+              "currency": "GBP",
+              "note": "Final cost of the project as given by the Edinburgh Tram Inquiry (Lord Hardie). The price year is not stated in the source."
+            },
+            "date": "2023",
+            "note": "Figure reported by Wikipedia from the Inquiry report; the report itself was not available.",
+            "sourceRef": "wikipedia-edinburgh-trams"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2008-05",
+          "note": {
+            "en": "Final contracts awarded to the BSC consortium of Bilfinger Berger, Siemens and CAF.",
+            "ro": "Contractele finale au fost atribuite consorțiului BSC format din Bilfinger Berger, Siemens și CAF."
+          },
+          "sourceRef": "wikipedia-edinburgh-trams"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2008-06",
+          "sourceRef": "wikipedia-edinburgh-trams"
+        },
+        {
+          "kind": "opened",
+          "date": "2014-05-31",
+          "sourceRef": "wikipedia-edinburgh-trams"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "BSC consortium (Bilfinger Berger, Siemens, CAF)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (13.7 km from the airport to the York Place stop); Wikipedia gives 18.5 km for the whole line and the Council gives 4.69 km for the extension, which leaves about 13.8 km. The 2014 line was cut back from the planned network: the council cancelled phase 1b in April 2009 and, after a 2011 vote, set the eastern end at York Place. Works began in June 2008 and the council decided on 30 June 2011 to keep the airport–St Andrew Square section, after costs had passed £770 million. The £835.7 million is the Inquiry's final cost of the project as reported by Wikipedia; it is not a contract value. The Inquiry report, published in 2023, found failings by the council, TIE and the Scottish Government. The York Place stop was closed in February 2022 and replaced by Picardy Place.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap (13,7 km de la aeroport până la stația York Place); Wikipedia indică 18,5 km pentru întreaga linie, iar consiliul 4,69 km pentru prelungire, ceea ce lasă circa 13,8 km. Linia din 2014 a fost redusă față de rețeaua planificată: consiliul a anulat faza 1b în aprilie 2009 și, după un vot din 2011, a stabilit capătul estic la York Place. Lucrările au început în iunie 2008, iar consiliul a hotărât pe 30 iunie 2011 să păstreze secțiunea aeroport – St Andrew Square, după ce costurile depășiseră 770 de milioane de lire. Suma de 835,7 milioane este costul final al proiectului stabilit de anchetă, așa cum îl raportează Wikipedia; nu este valoarea unui contract. Raportul anchetei, publicat în 2023, a constatat deficiențe ale consiliului, ale TIE și ale Guvernului Scoției. Stația York Place a fost închisă în februarie 2022 și înlocuită de Picardy Place."
+      },
+      "sourceRefs": [
+        "wikipedia-edinburgh-trams",
+        "wikipedia-edinburgh-tram-inquiry",
+        "osm-edinburgh-trams"
+      ],
+      "geometryRef": "airport-york-place"
+    },
+    {
+      "id": "york-place-newhaven",
+      "name": {
+        "en": "York Place – Newhaven (Trams to Newhaven)",
+        "ro": "York Place – Newhaven (Trams to Newhaven)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-11",
+        "opened": "2023-06-07"
+      },
+      "lengthKm": 4.69,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true,
+        "stationCount": 8
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "money": {
+              "amount": 207.3,
+              "currency": "GBP",
+              "note": "Project budget in the Final Business Case approved by the City of Edinburgh Council in March 2019. The price year is not stated. This is a budget, not an outturn."
+            },
+            "date": "2019-03",
+            "note": "In November 2020 the council still projected delivery within this budget.",
+            "sourceRef": "council-fbc-refresh-2020"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2019-11",
+          "sourceRef": "council-trams-to-newhaven"
+        },
+        {
+          "kind": "suspended",
+          "date": "2020-03",
+          "note": {
+            "en": "Work suspended because of the coronavirus pandemic.",
+            "ro": "Lucrările au fost suspendate din cauza pandemiei de coronavirus."
+          },
+          "sourceRef": "wikipedia-edinburgh-trams"
+        },
+        {
+          "kind": "resumed",
+          "date": "2020-06",
+          "sourceRef": "wikipedia-edinburgh-trams"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-06-07",
+          "sourceRef": "wikipedia-edinburgh-trams"
+        }
+      ],
+      "note": {
+        "en": "The City of Edinburgh Council gives the extension as 4.69 km with 8 new stops, joining the line at York Place. The drawn OpenStreetMap line is 4.5 km, because it ends at the Newhaven stop area and the council figure may include the terminal stub. The council approved the Final Business Case in March 2019 with a £207.3 million budget (of which £5.5 million was already spent); the 2020 refresh put the pandemic cost at about £5 million and still projected delivery within budget. A final outturn was not found in the sources read. The York Place stop was closed in February 2022 and replaced by Picardy Place. Test running began on 13 March 2023 and passenger service on 7 June 2023. The council's October 2026 update lists 857 snagging issues, 150 of them high priority, to be cleared by 31 March 2027.",
+        "ro": "Consiliul orașului Edinburgh indică prelungirea ca având 4,69 km și 8 stații noi, racordată la linie la York Place. Linia desenată din OpenStreetMap are 4,5 km, deoarece se oprește în zona stației Newhaven, iar cifra consiliului poate include porțiunea terminală. Consiliul a aprobat cazul de afaceri final în martie 2019, cu un buget de 207,3 milioane de lire (din care 5,5 milioane fuseseră deja cheltuite); reevaluarea din 2020 a estimat costul pandemiei la circa 5 milioane și a menținut previziunea încadrării în buget. Costul final nu a fost găsit în sursele consultate. Stația York Place a fost închisă în februarie 2022 și înlocuită de Picardy Place. Probele au început pe 13 martie 2023, iar serviciul de pasageri pe 7 iunie 2023. Actualizarea din octombrie 2026 a consiliului enumeră 857 de probleme de finisare, dintre care 150 prioritare, de remediat până la 31 martie 2027."
+      },
+      "sourceRefs": [
+        "council-trams-to-newhaven",
+        "council-fbc-refresh-2020",
+        "council-ttn-update-2026-10",
+        "wikipedia-edinburgh-trams",
+        "osm-edinburgh-trams"
+      ],
+      "geometryRef": "york-place-newhaven"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-edinburgh-trams",
+      "title": "Wikipedia: Edinburgh Trams (\"It is an 18.5-kilometre (11.5 mi) line between Newhaven and Edinburgh Airport, with 23 stops\"; \"construction started in June 2008\"; \"opened to passengers on 31 May 2014\"; \"revenue service on the full route began on 7 June 2023\"; Inquiry figure of £835.7m)",
+      "url": "https://en.wikipedia.org/wiki/Edinburgh_Trams",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-edinburgh-tram-inquiry",
+      "title": "Wikipedia: Edinburgh Tram Inquiry (report published 2023, failings of the council and TIE)",
+      "url": "https://en.wikipedia.org/wiki/Edinburgh_Tram_Inquiry",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "council-trams-to-newhaven",
+      "title": "City of Edinburgh Council: Trams to Newhaven (\"add 4.69 kilometres / 2.91 miles of track ... with 8 new stops\"; \"Construction commenced in November 2019\")",
+      "url": "https://www.edinburgh.gov.uk/tramstonewhaven",
+      "publisher": "City of Edinburgh Council",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "council-fbc-refresh-2020",
+      "title": "City of Edinburgh Council, Transport and Environment Committee, 12 November 2020: Trams to Newhaven COVID-19 Final Business Case Refresh (\"still projected to be within the budget of £207.3m as set out in the Final Business Case\")",
+      "url": "https://www.edinburgh.gov.uk/tramstonewhaven/downloads/file/354/trams-to-newhaven-covid-19-final-business-case-refresh",
+      "publisher": "City of Edinburgh Council",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "council-ttn-update-2026-10",
+      "title": "City of Edinburgh Council: Trams to Newhaven Issues Resolution Update October 2026 (\"the total number of issues was revised to 857, 150 as red (high)\")",
+      "url": "https://www.edinburgh.gov.uk/tramstonewhaven/news/article/432/trams-to-newhaven-issues-resolution-update-october-2026",
+      "publisher": "City of Edinburgh Council",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-edinburgh-trams",
+      "title": "OpenStreetMap: route relation 4116776, Edinburgh Trams: Airport => Newhaven (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/4116776",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

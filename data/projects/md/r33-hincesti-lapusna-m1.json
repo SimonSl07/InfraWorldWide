@@ -1,0 +1,139 @@
+{
+  "id": "md-r33-hincesti-lapusna-m1",
+  "country": "md",
+  "category": "highway",
+  "name": {
+    "en": "R33 Hîncești – Lăpușna – M1 rehabilitation",
+    "ro": "Reabilitarea drumului R33 Hîncești – Lăpușna – M1"
+  },
+  "description": {
+    "en": "Rehabilitation of 37.2 km of the R33 national road between Hîncești and the M1 route, financed by the EBRD (contract RSP/W15/01). The works covered the full 7 m carriageway, three bridges and 43 culverts, and added road signs, barriers and street lighting in Hîncești, Lăpușna and Onești. The road was opened to traffic on 5 November 2026.",
+    "ro": "Reabilitarea a 37,2 km din drumul național R33 între Hîncești și magistrala M1, finanțată de BERD (contractul RSP/W15/01). Lucrările au cuprins reabilitarea integrală a carosabilului de 7 m, trei poduri și 43 de podețe, plus indicatoare, parapete și iluminat stradal în Hîncești, Lăpușna și Onești. Drumul a fost redeschis circulației la 5 noiembrie 2026."
+  },
+  "operator": "md-and",
+  "lots": [
+    {
+      "id": "r33-hincesti-lapusna-m1",
+      "name": {
+        "en": "R33 Hîncești – Lăpușna – M1 (km 0+000 – 37+200)",
+        "ro": "R33 Hîncești – Lăpușna – M1 (km 0+000 – 37+200)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2023-12-12",
+        "constructionStart": "2024-04-15",
+        "opened": "2026-11-05"
+      },
+      "lengthKm": 37.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 38.75,
+              "currency": "EUR",
+              "year": 2023,
+              "scope": "works",
+              "note": "Accepted contract value 38 746 632.26 EUR; VAT basis not stated."
+            },
+            "date": "2023-12-12",
+            "sourceRef": "and-dashboard-rsp-w15-01-2025-04"
+          }
+        ]
+      },
+      "profile": {
+        "works": "rehabilitation",
+        "bridgeCount": 3
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2023-07-03",
+          "note": {
+            "en": "Invitation to tender.",
+            "ro": "Invitație pentru depunerea ofertelor."
+          },
+          "sourceRef": "and-dashboard-rsp-w15-01-2025-04"
+        },
+        {
+          "kind": "awarded",
+          "date": "2023-12-12",
+          "note": {
+            "en": "Contract signed.",
+            "ro": "Contract semnat."
+          },
+          "sourceRef": "and-dashboard-rsp-w15-01-2025-04"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2024-04-15",
+          "note": {
+            "en": "Commencement date of the works.",
+            "ro": "Data începerii lucrărilor."
+          },
+          "sourceRef": "and-dashboard-rsp-w15-01-2025-04"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-11-05",
+          "sourceRef": "ziarulnational-md-r33-opened"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "European Bank for Reconstruction and Development (EBRD), project ID 45094.",
+            "ro": "Banca Europeană pentru Reconstrucție și Dezvoltare (BERD), proiect 45094."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ONUR Taahhut Tasimacilik Insaat Ticaret ve Sanayi S.R.L.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 30,
+        "value": {
+          "amount": 38.75,
+          "currency": "EUR",
+          "year": 2023,
+          "scope": "works",
+          "note": "Accepted contract value 38 746 632.26 EUR; VAT basis not stated."
+        }
+      },
+      "note": {
+        "en": "Contract duration converted from days: 915 days, with a completion deadline of 17 October 2026 and no extension of time recorded in April 2025. Supervising engineer: IRD Engineering S.R.L. (Italy). The April 2025 dashboard showed 31.36% physical progress and EUR 19.71 million paid. The opening ceremony was attended by the prime minister. Drawn geometry follows the R33 route as mapped in OpenStreetMap from the M1 junction to the centre of Hîncești.",
+        "ro": "Durata contractului convertită din zile: 915 zile, cu termen de finalizare 17 octombrie 2026 și fără extindere de termen înregistrată în aprilie 2025. Inginer supervizor: IRD Engineering S.R.L. (Italia). Tabloul de bord din aprilie 2025 arăta un progres fizic de 31,36% și 19,71 milioane EUR achitate. La ceremonia de deschidere a participat prim-ministrul. Geometria desenată urmează traseul R33 cartografiat în OpenStreetMap, de la intersecția cu M1 până în centrul orașului Hîncești."
+      },
+      "sourceRefs": [
+        "and-dashboard-rsp-w15-01-2025-04",
+        "ziarulnational-md-r33-opened",
+        "openstreetmap-r33"
+      ],
+      "geometryRef": "r33-hincesti-lapusna-m1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "and-dashboard-rsp-w15-01-2025-04",
+      "title": "AND: Contract RSP/W15/01 Rehabilitation R33 Hîncești – Lăpușna – M1, monthly dashboard (16.05.2025)",
+      "url": "https://www.andsa.md/wp-content/uploads/2025/05/RSP.W15.01Aprilie.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ziarulnational-md-r33-opened",
+      "title": "Ziarul Național: Drumul R33 Hîncești–Lăpușna–M1, reabilitat pe 37,2 km și deschis circulației (05.11.2026)",
+      "url": "https://www.ziarulnational.md/drumul-r33-hincestilapusnam1-reabilitat-pe-372-km-si-deschis-circulatiei",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-r33",
+      "title": "OpenStreetMap contributors: route relation 8431908 (R33 Hîncești-Lăpușna-M1), ODbL",
+      "url": "https://www.openstreetmap.org/relation/8431908",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

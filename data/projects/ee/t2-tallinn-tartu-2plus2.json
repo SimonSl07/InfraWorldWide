@@ -1,0 +1,286 @@
+{
+  "id": "ee-t2-tallinn-tartu-2plus2",
+  "country": "ee",
+  "category": "highway",
+  "name": {
+    "en": "T2 Tallinn–Tartu 2+2 sections (Aruvalla – Mäo, Kärevere – Kardla)",
+    "ro": "T2 Tallinn–Tartu, sectoare 2+2 (Aruvalla – Mäo, Kärevere – Kardla)"
+  },
+  "description": {
+    "en": "Four-lane sections of national road 2 (Tallinn–Tartu–Võru–Luhamaa, E263) opened since 2013: Aruvalla–Kose, Kose–Võõbu, Võõbu–Mäo and the short Kärevere–Kardla section near Tartu. Estonia has no motorways, so these class I roads are recorded as highways. The opening dates for Aruvalla–Kose, Võõbu–Mäo (full width) and Kärevere–Kardla come from the Estonian Wikipedia; the Kose–Võõbu opening and the Kärevere–Kardla contract are from press and agency reports. The 2+1 overtaking-lane sections and the unbuilt Mäo–Imavere section are not part of this file.",
+    "ro": "Sectoare cu patru benzi ale drumului național 2 (Tallinn–Tartu–Võru–Luhamaa, E263) deschise din 2013: Aruvalla–Kose, Kose–Võõbu, Võõbu–Mäo și scurtul sector Kärevere–Kardla lângă Tartu. Estonia nu are autostrăzi, așa că aceste drumuri de clasa I sunt înregistrate ca drumuri expres. Datele de deschidere pentru Aruvalla–Kose, Võõbu–Mäo (lățime completă) și Kärevere–Kardla provin din Wikipedia în estonă; deschiderea Kose–Võõbu și contractul Kärevere–Kardla provin din presă și comunicate ale agenției. Sectoarele 2+1 cu benzi de depășire și sectorul nerealizat Mäo–Imavere nu fac parte din acest fișier."
+  },
+  "operator": "ee-transpordiamet",
+  "lots": [
+    {
+      "id": "aruvalla-kose",
+      "name": {
+        "en": "Aruvalla – Kose",
+        "ro": "Aruvalla – Kose"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011",
+        "opened": "2013-11"
+      },
+      "lengthKm": 9.71,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2013-11",
+          "sourceRef": "wikipedia-et-t2",
+          "note": {
+            "en": "Opened to traffic in November 2013; the Estonian Wikipedia cites a Delfi Ärileht article of 18 November 2013.",
+            "ro": "Deschis circulației în noiembrie 2013; Wikipedia în estonă citează un articol Delfi Ärileht din 18 noiembrie 2013."
+          }
+        }
+      ],
+      "note": {
+        "en": "Four-lane section of the T2 between Aruvalla and Kose; the Estonian Wikipedia gives construction from 2011 and a class I road finished in 2013, with the country's first ecoduct built in this work. No source fetched states the length, the cost or the contractor. Length measured from OpenStreetMap geometry between the Aruvalla junction and the Kose junction (Kose–Purila road), which is where the Kose–Ardu contract starts; the exact ends are not stated in the sources.",
+        "ro": "Sector cu patru benzi al T2 între Aruvalla și Kose; Wikipedia în estonă indică lucrări din 2011 și un drum de clasa I finalizat în 2013, cu primul ecoduct al țării construit în această lucrare. Nicio sursă consultată nu indică lungimea, costul sau constructorul. Lungime măsurată din geometria OpenStreetMap între nodul Aruvalla și nodul Kose (drumul Kose–Purila), unde începe contractul Kose–Ardu; capetele exacte nu sunt indicate în surse."
+      },
+      "sourceRefs": [
+        "wikipedia-et-t2",
+        "osm"
+      ],
+      "geometryRef": "aruvalla-kose"
+    },
+    {
+      "id": "kose-voobu",
+      "name": {
+        "en": "Kose – Võõbu",
+        "ro": "Kose – Võõbu"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2017",
+        "opened": "2020-08-14"
+      },
+      "lengthKm": 23,
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2020-08-14",
+          "sourceRef": "pistik-kose-voobu",
+          "note": {
+            "en": "Pistik, 14 August 2020: \"Täna, 14. augustil 2020 avati liiklusele Tallinna–Tartu maantee uus Kose–Võõbu 23-kilomeetrine teelõik.\" The 120 km/h limit could not yet be applied because work was unfinished.",
+            "ro": "Pistik, 14 august 2020: \"Täna, 14. augustil 2020 avati liiklusele Tallinna–Tartu maantee uus Kose–Võõbu 23-kilomeetrine teelõik.\" Limita de 120 km/h nu putea fi aplicată încă din cauza lucrărilor neterminate."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "AS TREV-2 Grupp",
+          "role": "builder"
+        },
+        {
+          "name": "Kelprojektas UAB",
+          "role": "designer"
+        },
+        {
+          "name": "Skepast & Puhkim AS",
+          "role": "designer"
+        },
+        {
+          "name": "OÜ Reaalprojekt",
+          "role": "designer"
+        },
+        {
+          "name": "AS GRK Infra",
+          "role": "builder"
+        },
+        {
+          "name": "Graniittirakennus",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "New-alignment 2+2 road built as two contracts. Kose–Ardu: 12 km, main contractor AS TREV-2 Grupp, works scheduled 08.2017–12.2020, works cost reported as EUR 50.7 million. Ardu–Võõbu: 11 km, AS GRK Infra with Graniittirakennus, EUR 38.1 million per ERR in December 2017, start planned for Q1 2018, 32 months. Pistik reports EUR 50.7 million and EUR 38 million, EUR 88.7 million in total, without stating whether VAT is included, so no cost field is recorded. Which of the two contractors named for Ardu–Võõbu built which part is not stated. Length measured from OpenStreetMap geometry is 21.8 km against the reported 23 km; the reported figure is kept.",
+        "ro": "Drum 2+2 pe traseu nou, construit prin două contracte. Kose–Ardu: 12 km, antreprenor principal AS TREV-2 Grupp, lucrări programate 08.2017–12.2020, cost al lucrărilor raportat 50,7 milioane EUR. Ardu–Võõbu: 11 km, AS GRK Infra cu Graniittirakennus, 38,1 milioane EUR conform ERR în decembrie 2017, început planificat în T1 2018, 32 de luni. Pistik raportează 50,7 milioane EUR și 38 de milioane EUR, în total 88,7 milioane EUR, fără a preciza dacă include TVA, deci nu se înregistrează un câmp de cost. Nu se precizează care dintre cei doi constructori numiți pentru Ardu–Võõbu a construit care parte. Lungimea măsurată din geometria OpenStreetMap este 21,8 km față de 23 km raportați; cifra raportată se păstrează."
+      },
+      "sourceRefs": [
+        "pistik-kose-voobu",
+        "ehitusest-kose-ardu",
+        "err-ardu-voobu",
+        "wikipedia-et-t2",
+        "osm"
+      ],
+      "geometryRef": "kose-voobu"
+    },
+    {
+      "id": "voobu-mao",
+      "name": {
+        "en": "Võõbu – Mäo",
+        "ro": "Võõbu – Mäo"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022"
+      },
+      "lengthKm": 16,
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2022-09",
+          "sourceRef": "logistikauudised-voobu-mao",
+          "note": {
+            "en": "Traffic moved onto the new section on 28 September 2022 (a Wednesday, per an article of 29 September); full completion was planned for the end of the year.",
+            "ro": "Traficul a fost mutat pe sectorul nou la 28 septembrie 2022 (o miercuri, conform unui articol din 29 septembrie); finalizarea completă era planificată pentru sfârșitul anului."
+          }
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Cohesion Fund 2014–2020 grant of EUR 34,013,847.77 including VAT, listed by Transpordiamet for km 68.0–85.0. The grant is not the cost of the section.",
+            "ro": "Grant din Fondul de Coeziune 2014–2020 de 34.013.847,77 EUR cu TVA, listat de Transpordiamet pentru km 68,0–85,0. Grantul nu reprezintă costul sectorului."
+          },
+          "amount": {
+            "amount": 34.01,
+            "currency": "EUR",
+            "scope": "programme",
+            "note": "Including VAT."
+          }
+        }
+      ],
+      "note": {
+        "en": "Class I 2+2 road on a mostly new alignment, km 68.0–85.0 of the T2; Transpordiamet reports about 16 km built and about 2 km saved on the route. Structures listed include the Anna interchange, the Võõbu, Anna and Korba viaducts, the Kruusiaugu and Kükita bridges and the Puiatu ecoduct. The cost and contractor are not stated in the sources fetched. The drawn end is the Mäo junction; length measured from OpenStreetMap is 17.3 km against the reported 16 km, and the reported figure is kept. Full-width opening is dated only to the end of 2022 by the Estonian Wikipedia, so dates.opened is the year.",
+        "ro": "Drum 2+2 de clasa I pe un traseu în mare parte nou, km 68,0–85,0 al T2; Transpordiamet raportează circa 16 km construiți și circa 2 km scurtare a traseului. Printre structuri: nodul Anna, viaductele Võõbu, Anna și Korba, podurile Kruusiaugu și Kükita și ecoductul Puiatu. Costul și constructorul nu sunt indicate în sursele consultate. Capătul desenat este nodul Mäo; lungimea măsurată din OpenStreetMap este 17,3 km față de 16 km raportați, iar cifra raportată se păstrează. Deschiderea pe lățime completă este datată doar la sfârșitul lui 2022 de Wikipedia în estonă, deci dates.opened este anul."
+      },
+      "sourceRefs": [
+        "transpordiamet-eu-projects",
+        "logistikauudised-voobu-mao",
+        "wikipedia-et-t2",
+        "osm"
+      ],
+      "geometryRef": "voobu-mao"
+    },
+    {
+      "id": "karevere-kardla",
+      "name": {
+        "en": "Kärevere – Kardla",
+        "ro": "Kärevere – Kardla"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-02",
+        "opened": "2022-11"
+      },
+      "lengthKm": 4,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2021-02-19",
+            "money": {
+              "amount": 12.6,
+              "currency": "EUR",
+              "year": 2021,
+              "scope": "works",
+              "note": "Excluding VAT; VAT is added to the price."
+            },
+            "sourceRef": "transpordiamet-karevere-kardla"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 12.6,
+          "currency": "EUR",
+          "year": 2021,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "AS Nordecon",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-02-19",
+          "sourceRef": "transpordiamet-karevere-kardla",
+          "note": {
+            "en": "Contract signed with Nordecon: \"Tööde maksumus on 12,6 miljonit eurot, hinnale lisandub käibemaks.\"",
+            "ro": "Contract semnat cu Nordecon: \"Tööde maksumus on 12,6 miljonit eurot, hinnale lisandub käibemaks.\""
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2022-11",
+          "sourceRef": "wikipedia-et-t2",
+          "note": {
+            "en": "The Estonian Wikipedia: the four-lane section near Tartu between Kärevere and Kardla was completed in November 2022.",
+            "ro": "Wikipedia în estonă: sectorul cu patru benzi de lângă Tartu între Kärevere și Kardla a fost finalizat în noiembrie 2022."
+          }
+        }
+      ],
+      "note": {
+        "en": "Short 2+2 section of the T2 near Tartu, km 167–171, with two game crossings. The Transpordiamet release of 19 February 2021 gives the km range, the contractor and the price but no schedule; the length of about 4 km is derived from the km range. The opening month is from the Estonian Wikipedia only. The mapped dual carriageway between the Kärevere junction and Kardla measures 3.35 km, which is 16% under the derived length; the derived figure is kept.",
+        "ro": "Sector scurt 2+2 al T2 lângă Tartu, km 167–171, cu două treceri pentru animale. Comunicatul Transpordiamet din 19 februarie 2021 indică intervalul de km, constructorul și prețul, dar nu un calendar; lungimea de circa 4 km este dedusă din intervalul de km. Luna deschiderii provine doar din Wikipedia în estonă. Platforma dublă cartografiată între nodul Kärevere și Kardla măsoară 3,35 km, cu 16% sub lungimea dedusă; cifra dedusă se păstrează."
+      },
+      "sourceRefs": [
+        "transpordiamet-karevere-kardla",
+        "wikipedia-et-t2",
+        "osm"
+      ],
+      "geometryRef": "karevere-kardla"
+    }
+  ],
+  "sources": [
+    {
+      "id": "transpordiamet-eu-projects",
+      "title": "Transpordiamet: EL-i toetusega projektid (Võõbu–Mäo, Neanurme–Pikknurme)",
+      "url": "https://transpordiamet.ee/teehoid-ja-liikluskorraldus/tee-ehitus/el-i-toetusega-projektid",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "transpordiamet-karevere-kardla",
+      "title": "Transpordiamet: Transpordiamet ja Nordecon sõlmisid lepingu Kärevere–Kardla 2+2 möödasõidualade ehitamiseks (19.02.2021)",
+      "url": "https://www.transpordiamet.ee/uudised/transpordiamet-ja-nordecon-solmisid-lepingu-karevere-kardla-22-moodasoidualade-ehitamiseks",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "pistik-kose-voobu",
+      "title": "Pistik: Täna avati taasiseseisvumisaja suurima teeobjekti esimene osa, Kose–Võõbu teelõik (14.08.2020)",
+      "url": "https://www.pistik.net/uudis/2382/tana-avati-taasiseseisvumisaja-suurima-teeobjekti-esimene-osa-kose-voobu-teeloik",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ehitusest-kose-ardu",
+      "title": "EhitusEST: Moodsaim lõik Tallinna–Tartu maanteest kulgeb üle raba (30.03.2020)",
+      "url": "https://ehitusest.ee/uudis/2020/03/30/moodsaim-loik-tallinna-tartu-maanteest-kulgeb-ule-raba/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "err-ardu-voobu",
+      "title": "ERR: Tallinna–Tartu maantee uue neljarealise osa ehitusmaksumus on 38 miljonit",
+      "url": "https://www.err.ee/648389/tallinna-tartu-maantee-uue-neljarealise-osa-ehitusmaksumus-on-38-miljonit",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "logistikauudised-voobu-mao",
+      "title": "Logistikauudised: Tallinna–Tartu maantee uus Võõbu–Mäo teelõik avati liiklusele (29.09.2022)",
+      "url": "https://www.logistikauudised.ee/uudised/2022/09/29/tallinna-tartu-maantee-uus-voobu-mao-teeloik-avati-liiklusele",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-et-t2",
+      "title": "Vikipeedia: Tallinna–Tartu–Võru–Luhamaa maantee",
+      "url": "https://et.wikipedia.org/wiki/Tallinna%E2%80%93Tartu%E2%80%93V%C3%B5ru%E2%80%93Luhamaa_maantee",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): road ref 2, dual carriageway ways, via Overpass API",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

@@ -1,0 +1,355 @@
+{
+  "id": "ch-a16-transjurane",
+  "country": "ch",
+  "category": "highway",
+  "name": {
+    "en": "A16 Transjurane",
+    "ro": "A16 Transjurane"
+  },
+  "description": {
+    "en": "Motorway of about 84 km (85 km in other sources) from Biel/Bienne through the Bernese Jura and the canton of Jura to the French border at Boncourt. The lots here run from La Heutte to Boncourt and open in stages between 1995 and 2017; the Biel – La Heutte stretch, in use in stages since 1965, is not drawn. The road carries both four-lane motorway and two-lane Autostrasse sections, and many tunnels. Total cost is given as 6.5 billion francs against 1.5 billion estimated in 1980; this is a whole-route figure and is not split per lot. Lot lengths and dates follow Wikipedia fr, which lists each opening; the two Wikipedia editions differ on some dates and lengths, noted per lot.",
+    "ro": "Autostradă de circa 84 km (85 km în alte surse) de la Biel/Bienne prin Jura bernez și cantonul Jura până la frontiera franceză de la Boncourt. Loturile de aici merg de la La Heutte la Boncourt și s-au deschis etapizat între 1995 și 2017; tronsonul Biel – La Heutte, folosit etapizat din 1965, nu este desenat. Drumul are atât sectoare de autostradă cu patru benzi, cât și sectoare Autostrasse cu două benzi, precum și multe tuneluri. Costul total este dat ca 6,5 miliarde franci, față de 1,5 miliarde estimate în 1980; este o cifră pentru întreg traseul și nu este împărțită pe loturi. Lungimile și datele loturilor urmează Wikipedia fr, care listează fiecare deschidere; cele două ediții Wikipedia diferă la unele date și lungimi, menționat pe lot."
+  },
+  "operator": "ch-astra",
+  "lots": [
+    {
+      "id": "la-heutte-sonceboz-sud",
+      "name": {
+        "en": "La Heutte – Sonceboz Sud",
+        "ro": "La Heutte – Sonceboz Sud"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1995-11-10"
+      },
+      "lengthKm": 3,
+      "note": {
+        "en": "Opened 10 November 1995 (Wikipedia fr). The drawn line ends at the Sonceboz hairpin and measures longer than the stated length.",
+        "ro": "Deschis la 10 noiembrie 1995 (Wikipedia fr). Linia desenată se oprește la bucla de la Sonceboz și măsoară mai mult decât lungimea indicată."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "la-heutte-sonceboz-sud"
+    },
+    {
+      "id": "sonceboz-sud-tavannes",
+      "name": {
+        "en": "Sonceboz Sud – Tavannes (Pierre Pertuis)",
+        "ro": "Sonceboz Sud – Tavannes (Pierre Pertuis)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1997-11-18"
+      },
+      "lengthKm": 4,
+      "note": {
+        "en": "Opened 18 November 1997 (Wikipedia fr). Includes the 2,208 m Pierre Pertuis tunnel, which Wikipedia de dates to 1997.",
+        "ro": "Deschis la 18 noiembrie 1997 (Wikipedia fr). Include tunelul Pierre Pertuis de 2.208 m, datat 1997 de Wikipedia de."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "sonceboz-sud-tavannes"
+    },
+    {
+      "id": "tavannes-loveresse",
+      "name": {
+        "en": "Tavannes – Loveresse",
+        "ro": "Tavannes – Loveresse"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2012-11-29"
+      },
+      "lengthKm": 3.7,
+      "note": {
+        "en": "Opened 29 November 2012 (Wikipedia fr and de).",
+        "ro": "Deschis la 29 noiembrie 2012 (Wikipedia fr și de)."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "tavannes-loveresse"
+    },
+    {
+      "id": "loveresse-court",
+      "name": {
+        "en": "Loveresse – Court",
+        "ro": "Loveresse – Court"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-04-03"
+      },
+      "lengthKm": 9.4,
+      "note": {
+        "en": "Last section to open, on 3 April 2017. The length is 9.4 km per Wikipedia de; Wikipedia fr gives 9.1 km. Wikipedia de describes it as partly motorway standard.",
+        "ro": "Ultimul sector deschis, la 3 aprilie 2017. Lungimea este 9,4 km după Wikipedia de; Wikipedia fr indică 9,1 km. Wikipedia de îl descrie ca parțial la standard de autostradă."
+      },
+      "sourceRefs": [
+        "wikipedia-de-a16",
+        "wikipedia-fr-a16",
+        "thelocal-transjura",
+        "osm-a16"
+      ],
+      "geometryRef": "loveresse-court"
+    },
+    {
+      "id": "court-moutier-sud",
+      "name": {
+        "en": "Court – Moutier Sud",
+        "ro": "Court – Moutier Sud"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-11-05"
+      },
+      "lengthKm": 3.1,
+      "note": {
+        "en": "Opened 5 November 2013. Includes the Graitery tunnel (2,420 m).",
+        "ro": "Deschis la 5 noiembrie 2013. Include tunelul Graitery (2.420 m)."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "court-moutier-sud"
+    },
+    {
+      "id": "moutier-bypass",
+      "name": {
+        "en": "Moutier bypass",
+        "ro": "Ocolitoarea Moutier"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-11-25"
+      },
+      "lengthKm": 2.1,
+      "note": {
+        "en": "Opened 25 November 2011 (Wikipedia fr; Wikipedia de: November 2011). Wikipedia fr reports that the tunnel boring machine was blocked for more than two years in poor rock in the Moutier tunnel.",
+        "ro": "Deschis la 25 noiembrie 2011 (Wikipedia fr; Wikipedia de: noiembrie 2011). Wikipedia fr relatează că mașina de forat a fost blocată peste doi ani în rocă slabă în tunelul Moutier."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "moutier-bypass"
+    },
+    {
+      "id": "moutier-nord-choindez",
+      "name": {
+        "en": "Moutier Nord – Choindez",
+        "ro": "Moutier Nord – Choindez"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-11-30"
+      },
+      "lengthKm": 4.3,
+      "note": {
+        "en": "Opened 30 November 2007. Includes the Raimeux tunnel (3,211 m), opened 2007.",
+        "ro": "Deschis la 30 noiembrie 2007. Include tunelul Raimeux (3.211 m), deschis în 2007."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "moutier-nord-choindez"
+    },
+    {
+      "id": "choindez-delemont-est",
+      "name": {
+        "en": "Choindez – Delémont Est",
+        "ro": "Choindez – Delémont Est"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-12-05"
+      },
+      "lengthKm": 4.9,
+      "note": {
+        "en": "Opened 5 December 2016 (Wikipedia de: December 2016; originally planned for 2012). Includes the Choindez tunnel (3,200 m per Wikipedia de, 3,228 m per Wikipedia fr).",
+        "ro": "Deschis la 5 decembrie 2016 (Wikipedia de: decembrie 2016; inițial planificat pentru 2012). Include tunelul Choindez (3.200 m după Wikipedia de, 3.228 m după Wikipedia fr)."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "choindez-delemont-est"
+    },
+    {
+      "id": "delemont-bypass",
+      "name": {
+        "en": "Delémont bypass",
+        "ro": "Ocolitoarea Delémont"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-09-30"
+      },
+      "lengthKm": 2,
+      "note": {
+        "en": "Opened 30 September 2005 (Wikipedia fr and de).",
+        "ro": "Deschis la 30 septembrie 2005 (Wikipedia fr și de)."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "delemont-bypass"
+    },
+    {
+      "id": "delemont-ouest-porrentruy-est",
+      "name": {
+        "en": "Delémont Ouest – Porrentruy Est",
+        "ro": "Delémont Ouest – Porrentruy Est"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1987-09-23",
+        "opened": "1998-11-13"
+      },
+      "lengthKm": 23,
+      "note": {
+        "en": "Opened 13 November 1998 (Wikipedia fr: 'Porrentruy to Delémont', 23 km; Wikipedia de: 1998). Includes the Mont Terri (4,068 m) and Mont Russelin (3,550 m) tunnels. The Mont Terri boring began on 23 September 1987, the start of works on the Transjurane (Wikipedia fr; The Local: construction began that day at Saint-Ursanne).",
+        "ro": "Deschis la 13 noiembrie 1998 (Wikipedia fr: „Porrentruy – Delémont”, 23 km; Wikipedia de: 1998). Include tunelurile Mont Terri (4.068 m) și Mont Russelin (3.550 m). Forajul Mont Terri a început la 23 septembrie 1987, startul lucrărilor la Transjurane (Wikipedia fr; The Local: construcția a început în acea zi la Saint-Ursanne)."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "thelocal-transjura",
+        "osm-a16"
+      ],
+      "geometryRef": "delemont-ouest-porrentruy-est",
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1987-09-23",
+          "note": {
+            "en": "Tunnel boring began at Mont Terri.",
+            "ro": "A început forajul tunelului Mont Terri."
+          },
+          "sourceRef": "wikipedia-fr-a16"
+        },
+        {
+          "kind": "opened",
+          "date": "1998-11-13",
+          "note": {
+            "en": "Section opened.",
+            "ro": "Sector deschis."
+          },
+          "sourceRef": "wikipedia-fr-a16"
+        }
+      ]
+    },
+    {
+      "id": "porrentruy-bypass",
+      "name": {
+        "en": "Porrentruy bypass",
+        "ro": "Ocolitoarea Porrentruy"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2005-09-30"
+      },
+      "lengthKm": 3,
+      "note": {
+        "en": "Opened 30 September 2005 (Wikipedia fr and de). Includes the La Perche (1,027 m) and Banné (1,086 m) tunnels, which Wikipedia de dates to 2005.",
+        "ro": "Deschis la 30 septembrie 2005 (Wikipedia fr și de). Include tunelurile La Perche (1.027 m) și Banné (1.086 m), datate 2005 de Wikipedia de."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "porrentruy-bypass"
+    },
+    {
+      "id": "porrentruy-ouest-bure",
+      "name": {
+        "en": "Porrentruy Ouest – Bure",
+        "ro": "Porrentruy Ouest – Bure"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2014-08-21"
+      },
+      "lengthKm": 8.3,
+      "note": {
+        "en": "Opened 21 August 2014 (Wikipedia fr and de). Includes the Bure tunnel (3,059 m).",
+        "ro": "Deschis la 21 august 2014 (Wikipedia fr și de). Include tunelul Bure (3.059 m)."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "porrentruy-ouest-bure"
+    },
+    {
+      "id": "bure-boncourt",
+      "name": {
+        "en": "Bure – Boncourt",
+        "ro": "Bure – Boncourt"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-11-11"
+      },
+      "lengthKm": 4.6,
+      "note": {
+        "en": "Opened 11 November 2011 (Wikipedia fr). Wikipedia de dates the Porrentruy-Ouest – Boncourt link to 2014, so the two sources disagree on this stretch. The motorway ends at the French border; the connection to the French A36 was completed in 2010 (Wikipedia de) and is not mapped here.",
+        "ro": "Deschis la 11 noiembrie 2011 (Wikipedia fr). Wikipedia de datează legătura Porrentruy-Ouest – Boncourt în 2014, deci sursele diferă pentru acest tronson. Autostrada se termină la frontiera franceză; legătura cu A36 din Franța a fost finalizată în 2010 (Wikipedia de) și nu este cartografiată aici."
+      },
+      "sourceRefs": [
+        "wikipedia-fr-a16",
+        "wikipedia-de-a16",
+        "osm-a16"
+      ],
+      "geometryRef": "bure-boncourt"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-de-a16",
+      "title": "Wikipedia (de): Autobahn A16 (Schweiz)",
+      "url": "https://de.wikipedia.org/wiki/Autobahn_A16_(Schweiz)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-fr-a16",
+      "title": "Wikipedia (fr): Autoroute suisse A16",
+      "url": "https://fr.wikipedia.org/wiki/Autoroute_suisse_A16",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "thelocal-transjura",
+      "title": "Transjura motorway finally finished 30 years after works began",
+      "url": "https://www.thelocal.com/20170331/transjura-motorway-finally-finished-30-years-after-works-began",
+      "publisher": "The Local",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-a16",
+      "title": "OpenStreetMap contributors: A16 Transjurane (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
