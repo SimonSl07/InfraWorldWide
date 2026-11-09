@@ -1,0 +1,225 @@
+{
+  "id": "ee-rail-electrification-phase1",
+  "country": "ee",
+  "category": "railway",
+  "name": {
+    "en": "Estonian railway electrification, phase 1",
+    "ro": "Electrificarea căilor ferate din Estonia, etapa 1"
+  },
+  "description": {
+    "en": "Eesti Raudtee programme to electrify Tallinn–Tartu, Tapa–Narva and Lagedi–Muuga. The programme budget is EUR 273.9 million (Cohesion Fund EUR 192.0 million, state EUR 81.9 million) for Q1 2022 to 30 June 2028. It covers about 500 km of electrified track, of which about 121 km is renewal of existing catenary and about 379 km is new catenary. The long-term goal is 800 km. Lots here are the three directions with published progress; Lagedi–Muuga is not drawn.",
+    "ro": "Programul Eesti Raudtee de electrificare a liniilor Tallinn–Tartu, Tapa–Narva și Lagedi–Muuga. Bugetul programului este de 273,9 milioane EUR (Fondul de coeziune 192,0 milioane EUR, statul 81,9 milioane EUR) pentru perioada I trimestru 2022 – 30 iunie 2028. Programul acoperă circa 500 km de cale electrificată, din care circa 121 km sunt reconstrucția rețelei de contact existente și circa 379 km rețea nouă. Obiectivul pe termen lung este de 800 km. Loturile de aici sunt cele trei direcții cu progres publicat; Lagedi–Muuga nu este desenat."
+  },
+  "operator": "ee-eesti-raudtee",
+  "cost": {
+    "amount": 273.9,
+    "currency": "EUR",
+    "scope": "programme",
+    "note": "Programme budget for phase 1 per Eesti Raudtee; not a contract value and not allocated to lots."
+  },
+  "lots": [
+    {
+      "id": "lagedi-aegviidu",
+      "name": {
+        "en": "Lagedi – Aegviidu",
+        "ro": "Lagedi – Aegviidu"
+      },
+      "status": "under_construction",
+      "lengthKm": 41.4,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "Eesti Raudtee reports the Lagedi–Aegviidu catenary as fully renewed. Substations and signalling are still to be completed, so the lot stays under construction. Length measured from OpenStreetMap geometry (Elron route relation, ODbL); no length is stated by Eesti Raudtee for this section.",
+        "ro": "Eesti Raudtee raportează rețeaua de contact Lagedi–Aegviidu ca fiind complet reînnoită. Substațiile și semnalizarea mai trebuie finalizate, astfel încât lotul rămâne în construcție. Lungime măsurată pe geometria OpenStreetMap (relația de rută Elron, ODbL); Eesti Raudtee nu indică o lungime pentru această secțiune."
+      },
+      "contractors": [
+        {
+          "name": "Leonhard Weiss",
+          "role": "builder"
+        }
+      ],
+      "sourceRefs": [
+        "evr-projects",
+        "evr-news-grk-2024",
+        "osm"
+      ],
+      "geometryRef": "lagedi-aegviidu"
+    },
+    {
+      "id": "aegviidu-tapa-tartu",
+      "name": {
+        "en": "Aegviidu – Tapa – Tartu",
+        "ro": "Aegviidu – Tapa – Tartu"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-02",
+        "expectedOpening": "2027-02"
+      },
+      "lengthKm": 132.7,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 80,
+              "currency": "EUR",
+              "year": 2023,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Reported as nearly EUR 80 million before VAT, for about 180 km of new catenary and three new traction substations."
+            },
+            "date": "2023-02",
+            "sourceRef": "evr-news-tartu-contract-2023"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 80,
+          "currency": "EUR",
+          "year": 2023,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Reported as nearly EUR 80 million before VAT."
+        }
+      },
+      "contractors": [
+        {
+          "name": "GRK Suomi Oy",
+          "role": "builder"
+        },
+        {
+          "name": "GRK Eesti AS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "In February 2023 Eesti Raudtee signed with joint bidders GRK Suomi Oy and GRK Eesti AS for design, construction and later maintenance of about 180 km of new catenary and three traction substations on Aegviidu–Tapa–Tartu, then due by the end of 2024; maintenance runs five years after completion. The schedule has since slipped: in May 2025 Eesti Raudtee said completion had shifted, and on 3 November 2026 the Minister of Infrastructure said infrastructure works on the Tartu direction end in mid-January and Elron's new electric trains can serve Tallinn–Tartu from 1 February (year not stated in the article, read as 2027). The expected opening is that trains date. Aegviidu–Tapa is also part of the Tallinn–Narva line. Length measured from OpenStreetMap geometry (Elron route relation, ODbL); no length is stated by Eesti Raudtee for this section.",
+        "ro": "În februarie 2023 Eesti Raudtee a semnat cu ofertanții asociați GRK Suomi Oy și GRK Eesti AS proiectarea, construirea și întreținerea ulterioară a circa 180 km de rețea de contact nouă și a trei substații de tracțiune pe Aegviidu–Tapa–Tartu, cu termen inițial la sfârșitul lui 2024; întreținerea durează cinci ani după finalizare. Calendarul a alunecat: în mai 2025 Eesti Raudtee a anunțat că finalizarea s-a mutat, iar la 3 noiembrie 2026 ministrul infrastructurii a spus că lucrările de infrastructură pe direcția Tartu se încheie la jumătatea lui ianuarie și că noile trenuri electrice Elron pot circula pe Tallinn–Tartu de la 1 februarie (anul nu este precizat în articol, interpretat ca 2027). Data deschiderii estimate este cea a trenurilor. Segmentul Aegviidu–Tapa face parte și din linia Tallinn–Narva. Lungime măsurată pe geometria OpenStreetMap (relația de rută Elron, ODbL); Eesti Raudtee nu indică o lungime pentru această secțiune."
+      },
+      "sourceRefs": [
+        "evr-projects",
+        "evr-news-tartu-contract-2023",
+        "evr-news-tartu-schedule-2025",
+        "evr-news-tartu-2026-11",
+        "osm"
+      ],
+      "geometryRef": "aegviidu-tapa-tartu",
+      "sharedWith": "ee-rail-160kmh-upgrades"
+    },
+    {
+      "id": "tapa-narva",
+      "name": {
+        "en": "Tapa – Narva",
+        "ro": "Tapa – Narva"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-12",
+        "expectedOpening": "2027"
+      },
+      "lengthKm": 131.5,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 81,
+              "currency": "EUR",
+              "year": 2024,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "VAT treatment not stated. Design and construction of catenary and traction substations."
+            },
+            "date": "2024-12",
+            "sourceRef": "evr-news-grk-2024"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 81,
+          "currency": "EUR",
+          "year": 2024,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "VAT treatment not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "GRK Eesti AS",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Contracts signed with GRK Eesti AS on 13 December 2024 (date of the Eesti Raudtee announcement): EUR 81 million to design and build the catenary and traction substations, and EUR 2.9 million for five years of catenary maintenance. Eesti Raudtee says the Tapa–Narva catenary will be ready for use in 2027. The expected opening is that year. Tapa–Narva also has a separate EUR 17.5 million GoTrack contract for 160 km/h and electrification groundwork, not recorded as a cost here. Narva-direction catenary work is reported as mostly near completion. Length measured from OpenStreetMap geometry (Elron route relation, ODbL); no length is stated by Eesti Raudtee for this section.",
+        "ro": "Contracte semnate cu AS GRK Eesti la 13 decembrie 2024 (data anunțului Eesti Raudtee): 81 de milioane EUR pentru proiectarea și construirea rețelei de contact și a substațiilor de tracțiune și 2,9 milioane EUR pentru cinci ani de întreținere. Eesti Raudtee spune că rețeaua de contact Tapa–Narva va fi gata în 2027. Deschiderea estimată este acel an. Pe Tapa–Narva există și un contract separat de 17,5 milioane EUR cu GoTrack pentru 160 km/h și lucrări pregătitoare pentru electrificare, neînregistrat aici drept cost. Lucrările la rețeaua de contact pe direcția Narva sunt raportate ca aproape finalizate. Lungime măsurată pe geometria OpenStreetMap (relația de rută Elron, ODbL); Eesti Raudtee nu indică o lungime pentru această secțiune."
+      },
+      "sourceRefs": [
+        "evr-projects",
+        "evr-news-grk-2024",
+        "evr-news-tapa-narva-160",
+        "osm"
+      ],
+      "geometryRef": "tapa-narva",
+      "sharedWith": "ee-rail-160kmh-upgrades"
+    }
+  ],
+  "sources": [
+    {
+      "id": "evr-projects",
+      "title": "Eesti Raudtee: Projektid (Elektrifitseerimine)",
+      "url": "https://www.evr.ee/et/projektid",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-grk-2024",
+      "title": "Eesti Raudtee: Eesti Raudtee alustab Tapa–Narva lõigu elektrifitseerimise töödega (2024-12-13)",
+      "url": "https://www.evr.ee/et/uudised/3379-eesti-raudtee-alustab-tapa-narva-loigu-elektrifitseerimise-toeoedega",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-tapa-narva-160",
+      "title": "Eesti Raudtee: Tapa–Narva raudteeliinil alustatakse ehitustöid 160 km/h saavutamiseks (2025-03-19)",
+      "url": "https://www.evr.ee/et/uudised/3405-tapa-narva-raudteeliinil-alustatakse-ehitustoeoed-160-km-h-saavutamiseks",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-tartu-contract-2023",
+      "title": "Eesti Raudtee: Eesti Raudtee sõlmis töövõtulepingu Tartu suuna raudtee varustamiseks kontaktvõrguga (2023-02-08)",
+      "url": "https://www.evr.ee/et/uudised/3196-eesti-raudtee-solmis-toeoevotulepingu-tartu-suuna-raudtee-varustamiseks-kontaktvorguga",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-tartu-schedule-2025",
+      "title": "Eesti Raudtee: Tartu suuna raudtee elektrifitseerimise projekti ajakava on täpsustunud (2025-05-28)",
+      "url": "https://www.evr.ee/et/uudised/3425-tartu-suuna-raudtee-elektrifitseerimise-projekti-ajakava-on-taepsustunud",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-tartu-2026-11",
+      "title": "Eesti Raudtee: Taristuminister Leis: raudteetööd Tartu suunal lõppevad jaanuaris (2026-11-03)",
+      "url": "https://www.evr.ee/et/uudised/3566-taristuminister-leis-raudteetoeoed-tartu-suunal-loppevad-jaanuaris-uued-elektrirongid-saavad-hakata-soitma",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (geometry of Elron route relations, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

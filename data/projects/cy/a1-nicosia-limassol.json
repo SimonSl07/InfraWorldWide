@@ -1,0 +1,103 @@
+{
+  "id": "cy-a1-nicosia-limassol",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A1 Nicosia – Limassol motorway",
+    "ro": "Autostrada A1 Nicosia – Limassol"
+  },
+  "description": {
+    "en": "The first and longest motorway in Cyprus, linking Nicosia with the port of Limassol. English Wikipedia gives its length as 73 km and says construction began in 1978 at both ends at once, with the final stage (Kornos to Kophinou) completed in October 1984. The Public Works Department lists two later works on the Nicosia side: a new interchange at the GSP stadium (11/2009–11/2011, EUR 21.51 million excluding VAT) and a six-lane widening from the GSP interchange to Alambra (1/2010–10/2011, EUR 32.39 million excluding VAT, design and construction). The road is split into three lots at the GSP and Alambra junctions so that the widened stretch has its own record. Per-stage opening dates for 1978–1984 are not in the sources used, so each lot carries the October 1984 completion of the whole road. The original construction costs would have been in Cypriot pounds and are not recorded.",
+    "ro": "Prima și cea mai lungă autostradă a Ciprului, care leagă Nicosia de portul Limassol. Wikipedia în engleză indică o lungime de 73 km și spune că lucrările au început în 1978 simultan la ambele capete, ultima etapă (Kornos – Kophinou) fiind finalizată în octombrie 1984. Departamentul de Lucrări Publice listează două lucrări ulterioare pe partea Nicosiei: un nod nou la stadionul GSP (11/2009–11/2011, 21,51 milioane EUR fără TVA) și lărgirea la șase benzi de la nodul GSP la Alambra (1/2010–10/2011, 32,39 milioane EUR fără TVA, proiectare și execuție). Drumul este împărțit în trei loturi la nodurile GSP și Alambra, astfel încât tronsonul lărgit să aibă propria înregistrare. Datele de deschidere pe etape pentru 1978–1984 nu apar în sursele folosite, așa că fiecare lot poartă finalizarea întregului drum din octombrie 1984. Costurile inițiale de construcție ar fi fost în lire cipriote și nu sunt înregistrate."
+  },
+  "operator": "cy-pwd",
+  "lots": [
+    {
+      "id": "nicosia-gsp",
+      "name": {
+        "en": "Nicosia (Athalassas) – GSP interchange",
+        "ro": "Nicosia (Athalassas) – nodul GSP"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978",
+        "opened": "1984-10"
+      },
+      "lengthKm": 2.12,
+      "note": {
+        "en": "Start of the motorway at the Athalassas junction (OSM junction 1) to the junction beside the GSP stadium (OSM junction 4). The opening date is the completion of the final stage of the whole motorway; when this part opened is not stated in the sources used. Length measured from OpenStreetMap geometry. The GSP junction position is taken from the stadium location, since the PWD page does not give coordinates.",
+        "ro": "De la începutul autostrăzii, la nodul Athalassas (nodul OSM 1), până la nodul de lângă stadionul GSP (nodul OSM 4). Data deschiderii este finalizarea ultimei etape a întregii autostrăzi; momentul deschiderii acestei părți nu este indicat în sursele folosite. Lungime măsurată din geometria OpenStreetMap. Poziția nodului GSP este luată după locația stadionului, deoarece pagina PWD nu oferă coordonate."
+      },
+      "sourceRefs": [
+        "wikipedia-a1-cyprus",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "nicosia-gsp"
+    },
+    {
+      "id": "gsp-alambra",
+      "name": {
+        "en": "GSP interchange – Alambra (six-lane section)",
+        "ro": "Nodul GSP – Alambra (sector cu șase benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978",
+        "opened": "1984-10"
+      },
+      "lengthKm": 15.48,
+      "note": {
+        "en": "The original four-lane motorway opened with the rest of the road by October 1984 (date of the final stage; this part's own date is not stated). The Public Works Department lists a six-lane widening of this stretch from the GSP interchange to Alambra, 1/2010–10/2011, at EUR 32.393 million excluding VAT (design and construction), and a new GSP interchange at EUR 21.511985 million excluding VAT, 11/2009–11/2011. Wikipedia says the widening began in 2012 on the section from the edge of Nicosia to the A2 junction; the PWD dates are used. The widening adds no length, so no separate lot or cost is recorded. Length measured from OpenStreetMap geometry; the Alambra end is OSM junction 9.",
+        "ro": "Autostrada inițială cu patru benzi a fost deschisă odată cu restul drumului până în octombrie 1984 (data ultimei etape; data acestei părți nu este indicată). Departamentul de Lucrări Publice listează o lărgire la șase benzi a acestui tronson, de la nodul GSP la Alambra, 1/2010–10/2011, la 32,393 milioane EUR fără TVA (proiectare și execuție), și un nod GSP nou la 21,511985 milioane EUR fără TVA, 11/2009–11/2011. Wikipedia spune că lărgirea a început în 2012 pe sectorul de la marginea Nicosiei până la nodul cu A2; se folosesc datele PWD. Lărgirea nu adaugă lungime, deci nu se înregistrează un lot sau un cost separat. Lungime măsurată din geometria OpenStreetMap; capătul Alambra este nodul OSM 9."
+      },
+      "sourceRefs": [
+        "pwd-completed-works-2008-2011",
+        "wikipedia-a1-cyprus",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "gsp-alambra"
+    },
+    {
+      "id": "alambra-limassol",
+      "name": {
+        "en": "Alambra – Limassol (Troodos junction)",
+        "ro": "Alambra – Limassol (nodul Troodos)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1978",
+        "opened": "1984-10"
+      },
+      "lengthKm": 61.31,
+      "note": {
+        "en": "From the Alambra junction to the Troodos junction at Limassol, passing the Kofinou junction with the A5. Construction started from both ends in 1978 and the last stage, Kornos to Kophinou, was completed in October 1984. The Limassol flyovers (Polemidia and Troodos, Agia Filaxis, Agios Athanasios, Linopetra, Germasogeia junctions) were completed in summer 2008 according to Wikipedia; they are junction works, not new length. Length measured from OpenStreetMap geometry. The three lots measure 78.91 km together against the 73 km Wikipedia gives for the whole road; the drawn lengths are not adjusted to it.",
+        "ro": "De la nodul Alambra la nodul Troodos din Limassol, trecând prin nodul Kofinou cu A5. Lucrările au început de la ambele capete în 1978, iar ultima etapă, Kornos – Kophinou, a fost finalizată în octombrie 1984. Pasajele din Limassol (nodurile Polemidia și Troodos, Agia Filaxis, Agios Athanasios, Linopetra, Germasogeia) au fost finalizate în vara lui 2008 potrivit Wikipedia; sunt lucrări la noduri, nu lungime nouă. Lungime măsurată din geometria OpenStreetMap. Cele trei loturi măsoară împreună 78,91 km, față de 73 km indicați de Wikipedia pentru întregul drum; lungimile desenate nu sunt ajustate la această cifră."
+      },
+      "sourceRefs": [
+        "wikipedia-a1-cyprus",
+        "openstreetmap-odbl"
+      ],
+      "geometryRef": "alambra-limassol"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pwd-completed-works-2008-2011",
+      "title": "Public Works Department (Cyprus): road works, completed projects 2008–2011 (item 1.3 GSP interchange 11/2009–11/2011, EUR 21,511,985 + VAT; item 1.4 GSP–Alambra six lanes 1/2010–10/2011, EUR 32,393,000 + VAT, design and construction)",
+      "url": "https://www.mcw.gov.cy/mtcw/pwd/pwd.nsf/pagem1_gr/pagem1_gr?OpenDocument",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-a1-cyprus",
+      "title": "Wikipedia: A1 motorway (Cyprus) (73 km; construction from 1978 at both ends; final stage Kornos to Kophinou October 1984)",
+      "url": "https://en.wikipedia.org/wiki/A1_motorway_(Cyprus)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-odbl",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

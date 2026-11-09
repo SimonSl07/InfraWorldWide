@@ -1,0 +1,126 @@
+{
+  "id": "lu-a13-sarre",
+  "country": "lu",
+  "category": "highway",
+  "name": {
+    "en": "A13 Liaison avec la Sarre (Croix de Bettembourg – German border)",
+    "ro": "A13 Liaison avec la Sarre (Croix de Bettembourg – frontiera cu Germania)"
+  },
+  "description": {
+    "en": "The eastern 21.949 km of the A13, from the Croix de Bettembourg interchange with the A3 to the German border at Schengen, where it continues as the A8 towards Perl. Parliament authorised the road by the law of 31 July 1995 and works began on 2 June 1997 with earthworks between Frisange and Altwies. It has five interchanges, a 1,575 m tunnel, two cut-and-cover sections, two viaducts, 10 overbridges and 7 underbridges. Hellange–Schengen opened on 24 July 2003. Lots follow the six segments published by the Ponts et chaussées, grouped around that opening.",
+    "ro": "Cei 21,949 km estici ai A13, de la nodul Croix de Bettembourg cu A3 până la frontiera cu Germania de la Schengen, unde continuă ca A8 spre Perl. Parlamentul a autorizat drumul prin legea din 31 iulie 1995, iar lucrările au început la 2 iunie 1997, cu terasamente între Frisange și Altwies. Are cinci noduri rutiere, un tunel de 1.575 m, două tronsoane acoperite, două viaducte, 10 pasaje superioare și 7 pasaje inferioare. Hellange–Schengen a fost deschis la 24 iulie 2003. Loturile urmează cele șase segmente publicate de Ponts et chaussées, grupate în jurul acestei deschideri."
+  },
+  "operator": "lu-pch",
+  "lots": [
+    {
+      "id": "croix-de-bettembourg-hellange",
+      "name": {
+        "en": "Croix de Bettembourg – Hellange",
+        "ro": "Croix de Bettembourg – Hellange"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003"
+      },
+      "lengthKm": 0.73,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Segment of 730 m listed by the Ponts et chaussées. The opening year 2003 is that of the Liaison avec la Sarre as a whole; no separate date is published for this segment. The drawn OpenStreetMap line is longer than the published length, so the junction cut may differ from the official one.",
+        "ro": "Segment de 730 m indicat de Ponts et chaussées. Anul deschiderii, 2003, este cel al Liaison avec la Sarre în ansamblu; nu se publică o dată separată pentru acest segment. Linia desenată din OpenStreetMap este mai lungă decât lungimea publicată, deci tăietura la nod poate diferi de cea oficială."
+      },
+      "sourceRefs": [
+        "openstreetmap-a13-sarre",
+        "pch-a13-sarre",
+        "wikipedia-en-a13-luxembourg",
+        "cour-des-comptes-fonds-des-routes-2004"
+      ],
+      "geometryRef": "croix-de-bettembourg-hellange"
+    },
+    {
+      "id": "hellange-schengen",
+      "name": {
+        "en": "Hellange – Schengen",
+        "ro": "Hellange – Schengen"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003-07-24"
+      },
+      "lengthKm": 20.212,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Sum of four segments listed by the Ponts et chaussées: Hellange–Frisange 5,404 m, Frisange–Altwies 3,648 m, Altwies–Mondorf 3,979 m and Mondorf–Schengen 7,181 m. Wikipedia gives 24 July 2003 as the opening date of Hellange–Schengen. The section includes the Markusbierg tunnel (1,575 m), two cut-and-cover sections (360 m and 575 m) and two viaducts (190 m and 600 m), as counted by the Ponts et chaussées for the whole motorway.",
+        "ro": "Suma a patru segmente indicate de Ponts et chaussées: Hellange–Frisange 5.404 m, Frisange–Altwies 3.648 m, Altwies–Mondorf 3.979 m și Mondorf–Schengen 7.181 m. Wikipedia indică 24 iulie 2003 ca dată a deschiderii pentru Hellange–Schengen. Sectorul include tunelul Markusbierg (1.575 m), două tronsoane acoperite (360 m și 575 m) și două viaducte (190 m și 600 m), așa cum le numără Ponts et chaussées pentru întreaga autostradă."
+      },
+      "sourceRefs": [
+        "openstreetmap-a13-sarre",
+        "pch-a13-sarre",
+        "wikipedia-en-a13-luxembourg",
+        "cour-des-comptes-fonds-des-routes-2004"
+      ],
+      "geometryRef": "hellange-schengen"
+    },
+    {
+      "id": "schengen-border",
+      "name": {
+        "en": "Schengen – German border",
+        "ro": "Schengen – frontiera cu Germania"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003"
+      },
+      "lengthKm": 1.007,
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "note": {
+        "en": "Segment of 1,007 m listed by the Ponts et chaussées, running to the border at the Moselle. The opening year 2003 is that of the Liaison avec la Sarre as a whole. The motorway continues in Germany as the A8 towards Perl. The drawn OpenStreetMap line is shorter than the published length, so the official Schengen start point may lie before the Schengen junction.",
+        "ro": "Segment de 1.007 m indicat de Ponts et chaussées, până la frontieră, pe Moselle. Anul deschiderii, 2003, este cel al Liaison avec la Sarre în ansamblu. Autostrada continuă în Germania ca A8 spre Perl. Linia desenată din OpenStreetMap este mai scurtă decât lungimea publicată, deci punctul oficial de început Schengen poate fi înaintea nodului Schengen."
+      },
+      "sourceRefs": [
+        "openstreetmap-a13-sarre",
+        "pch-a13-sarre",
+        "wikipedia-en-a13-luxembourg",
+        "cour-des-comptes-fonds-des-routes-2004"
+      ],
+      "geometryRef": "schengen-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pch-a13-sarre",
+      "title": "Administration des ponts et chaussées: A13 Liaison avec la Sarre",
+      "url": "https://travaux.public.lu/fr/reseau-routier/autoroutes/a13-sarre.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-a13-luxembourg",
+      "title": "Wikipedia: A13 motorway (Luxembourg)",
+      "url": "https://en.wikipedia.org/wiki/A13_motorway_(Luxembourg)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "cour-des-comptes-fonds-des-routes-2004",
+      "title": "Cour des comptes: Rapport spécial, Fonds des routes (2004)",
+      "url": "https://cour-des-comptes.public.lu/dam-assets/fr/rapports/rapports-speciaux/2004/fonds-des-routes.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-a13-sarre",
+      "title": "OpenStreetMap contributors: A13 Liaison avec la Sarre geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

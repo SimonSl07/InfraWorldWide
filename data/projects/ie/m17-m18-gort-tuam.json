@@ -1,0 +1,83 @@
+{
+  "id": "ie-m17-m18-gort-tuam",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "M17/M18 Gort–Tuam",
+    "ro": "M17/M18 Gort–Tuam"
+  },
+  "description": {
+    "en": "Public–private partnership scheme in County Galway: about 53 km of motorway plus 4 km of dual carriageway, bypassing Clarinbridge, Claregalway and Tuam. The M18 runs north from Gort and meets the M6 near Athenry, where the M17 continues to Tuam. The contract was awarded to DirectRoute (Tuam) Ltd in April 2014, covers design, construction, operation and maintenance, and runs for 25 years from completion. Transport Infrastructure Ireland pays availability payments. It opened on 27 September 2017.",
+    "ro": "Proiect în parteneriat public-privat în comitatul Galway: circa 53 km de autostradă și 4 km de drum cu două benzi pe sens, care ocolesc Clarinbridge, Claregalway și Tuam. M18 merge spre nord de la Gort și întâlnește M6 lângă Athenry, de unde M17 continuă până la Tuam. Contractul a fost atribuit DirectRoute (Tuam) Ltd în aprilie 2014, cuprinde proiectarea, construcția, exploatarea și întreținerea și durează 25 de ani de la finalizare. Transport Infrastructure Ireland plătește plăți de disponibilitate. A fost deschis la 27 septembrie 2017."
+  },
+  "operator": "ie-directroute-tuam",
+  "lots": [
+    {
+      "id": "m17-m18-gort-tuam",
+      "name": {
+        "en": "Gort – Tuam (M18/M17 and Tuam bypass)",
+        "ro": "Gort – Tuam (M18/M17 și ocolitoarea Tuam)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2014-04",
+        "constructionStart": "2015-01-15",
+        "opened": "2017-09-27"
+      },
+      "lengthKm": 57,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "25-year contract operational period from scheme completion; the company recoups its investment through availability payments paid by Transport Infrastructure Ireland.",
+            "ro": "Perioadă contractuală de exploatare de 25 de ani de la finalizare; societatea își recuperează investiția prin plăți de disponibilitate plătite de Transport Infrastructure Ireland."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "DirectRoute (Tuam) Ltd",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Length is 53 km of motorway plus 4 km of dual carriageway, as stated by TII. The drawn line runs from the north end of the older M18 Crusheen–Gort section to Mountpotter roundabout on the N17 Tuam bypass, and measures about 56.1 km (motorway to Kilmore roundabout about 52.0 km). The contract value is not recorded because no fetched source states it. Wikipedia dates the start of works to 15 January 2015 and the opening to 27 September 2017; TII gives September 2017.",
+        "ro": "Lungimea este de 53 km de autostradă plus 4 km de drum cu două benzi pe sens, conform TII. Linia desenată merge de la capătul nordic al secțiunii M18 Crusheen–Gort, mai veche, până la giratoriul Mountpotter de pe ocolitoarea Tuam a N17 și măsoară circa 56,1 km (autostrada până la giratoriul Kilmore circa 52,0 km). Valoarea contractului nu este înregistrată, deoarece nicio sursă consultată nu o indică. Wikipedia datează începerea lucrărilor la 15 ianuarie 2015 și deschiderea la 27 septembrie 2017; TII indică septembrie 2017."
+      },
+      "sourceRefs": [
+        "tii-annual-report-2025",
+        "wikipedia-m18-motorway",
+        "wikipedia-m17-motorway",
+        "openstreetmap-contributors"
+      ],
+      "geometryRef": "m17-m18-gort-tuam"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tii-annual-report-2025",
+      "title": "TII Annual Report and Financial Statements 2025, note 10e: general description of schemes (M17/M18 Gort to Tuam)",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-m18-motorway",
+      "title": "Wikipedia: M18 motorway (Ireland)",
+      "url": "https://en.wikipedia.org/wiki/M18_motorway_(Ireland)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-m17-motorway",
+      "title": "Wikipedia: M17 motorway (Ireland)",
+      "url": "https://en.wikipedia.org/wiki/M17_motorway_(Ireland)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-contributors",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

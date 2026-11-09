@@ -1,0 +1,121 @@
+{
+  "id": "ch-bern-tram",
+  "country": "ch",
+  "city": "ch-bern",
+  "category": "railway",
+  "name": {
+    "en": "Bern tram extensions (Bern West, Bern–Ostermundigen)",
+    "ro": "Extinderile tramvaiului din Berna (Bern West, Bern–Ostermundigen)"
+  },
+  "description": {
+    "en": "Two new tram routes in Bern. Tram Bern West, a 6.8 km new line to Bümpliz and Brünnen, was built from April 2008 and opened on 12 December 2010. Tram Bern–Ostermundigen (TBO) is a planned 4.45 km line from Viktoriaplatz to Oberfeld in Ostermundigen that replaces bus line 10. Utility works ran from July 2024 to September 2025, and the Federal Office of Transport granted the building permit at the end of September 2026. The start of tram construction is open.",
+    "ro": "Două trasee noi de tramvai în Berna. Tram Bern West, o linie nouă de 6,8 km spre Bümpliz și Brünnen, a fost construită începând din aprilie 2008 și deschisă pe 12 decembrie 2010. Tram Bern–Ostermundigen (TBO) este o linie planificată de 4,45 km de la Viktoriaplatz la Oberfeld, în Ostermundigen, care înlocuiește linia de autobuz 10. Lucrările la rețelele de utilități au avut loc între iulie 2024 și septembrie 2025, iar Oficiul Federal al Transporturilor a acordat autorizația de construire la sfârșitul lui septembrie 2026. Începerea lucrărilor la linia de tramvai este încă deschisă."
+  },
+  "operator": "ch-bernmobil",
+  "lots": [
+    {
+      "id": "bern-west",
+      "name": {
+        "en": "Tram Bern West (Bern to Bümpliz and Brünnen)",
+        "ro": "Tram Bern West (Berna – Bümpliz și Brünnen)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-04-01",
+        "opened": "2010-12-12"
+      },
+      "lengthKm": 6.8,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008-04-01",
+          "sourceRef": "wikipedia-de-strassenbahn-bern"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-12-12",
+          "sourceRef": "wikipedia-de-strassenbahn-bern"
+        }
+      ],
+      "note": {
+        "en": "The Bernese electorate approved the investment credit on 17 June 2007. Construction of the 6.8 km new line began on 1 April 2008 and finished at the end of September 2010. It starts after the branch of line 6 and is served by line 7 to Bümpliz and line 8 to Brünnen. Service began at the timetable change on 12 December 2010. No cost figure is recorded. The drawn geometry covers the shared section and the Bümpliz branch (line 7) and the Brünnen branch (line 8); its start at the line 6 branch is placed from the OpenStreetMap route relations, and drawn length is about 6.77 km.",
+        "ro": "Alegătorii din cantonul Berna au aprobat creditul de investiții pe 17 iunie 2007. Construcția noii linii de 6,8 km a început pe 1 aprilie 2008 și s-a încheiat la sfârșitul lui septembrie 2010. Linia pornește după bifurcația liniei 6 și este deservită de linia 7 spre Bümpliz și de linia 8 spre Brünnen. Serviciul a început la schimbarea orarului din 12 decembrie 2010. Nu este înregistrată nicio cifră de cost. Geometria desenată cuprinde tronsonul comun și ramurile spre Bümpliz (linia 7) și Brünnen (linia 8); începutul de la bifurcația liniei 6 este stabilit după relațiile de rută OpenStreetMap, iar lungimea desenată este de circa 6,77 km."
+      },
+      "sourceRefs": [
+        "wikipedia-de-strassenbahn-bern",
+        "osm-bern-tram"
+      ],
+      "geometryRef": "bern-west"
+    },
+    {
+      "id": "tbo-tram-works",
+      "name": {
+        "en": "Tram Bern–Ostermundigen (Viktoriaplatz – Oberfeld)",
+        "ro": "Tram Bern–Ostermundigen (Viktoriaplatz – Oberfeld)"
+      },
+      "status": "planned",
+      "lengthKm": 4.45,
+      "profile": {
+        "works": "greenfield"
+      },
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2018-03-04",
+          "note": {
+            "en": "Canton of Bern voters approved the cantonal contribution (51.6% yes), after Ostermundigen (3 April 2016) and the City of Bern (26 November 2017).",
+            "ro": "Alegătorii din cantonul Berna au aprobat contribuția cantonală (51,6% da), după Ostermundigen (3 aprilie 2016) și orașul Berna (26 noiembrie 2017)."
+          },
+          "sourceRef": "wikipedia-de-strassenbahn-bern"
+        }
+      ],
+      "note": {
+        "en": "The new 4.45 km line from Viktoriaplatz to Oberfeld replaces bus line 10, which carries over 8 million passengers a year. Owner is Tram Bern-Ostermundigen AG (TBO AG), carried by BERNMOBIL, the municipality of Ostermundigen and the City of Bern. Preparatory utility works on Bernstrasse between Waldeck and the Poststrasse junction (about 500 m of the route) ran from July 2024 and were completed in September 2025. The Federal Office of Transport granted the building permit (Plangenehmigung) at the end of September 2026. TBO AG states that the start of tram construction is open and depends on the permit procedure and possible appeals. No cost or opening date is recorded. The drawn line follows the OpenStreetMap road centreline from Viktoriaplatz along Viktoriastrasse, Laubeggstrasse, Ostermundigenstrasse and Bernstrasse to Oberfeld, because no tram alignment is mapped; drawn length is about 4.08 km and omits the Rüti turning loop.",
+        "ro": "Noua linie de 4,45 km de la Viktoriaplatz la Oberfeld înlocuiește linia de autobuz 10, folosită anual de peste 8 milioane de pasageri. Proprietarul este Tram Bern-Ostermundigen AG (TBO AG), susținută de BERNMOBIL, comuna Ostermundigen și orașul Berna. Lucrările pregătitoare la rețelele de utilități de pe Bernstrasse, între Waldeck și intersecția cu Poststrasse (circa 500 m din traseu), au început în iulie 2024 și s-au încheiat în septembrie 2025. Oficiul Federal al Transporturilor a acordat autorizația de construire (Plangenehmigung) la sfârșitul lui septembrie 2026. TBO AG precizează că începerea lucrărilor la linia de tramvai este încă deschisă și depinde de procedura de autorizare și de eventuale contestații. Nu sunt înregistrate costuri sau o dată de deschidere. Linia desenată urmează axa drumului din OpenStreetMap de la Viktoriaplatz pe Viktoriastrasse, Laubeggstrasse, Ostermundigenstrasse și Bernstrasse până la Oberfeld, deoarece traseul tramvaiului nu este cartografiat; lungimea desenată este de circa 4,08 km și nu include bucla de întoarcere de la Rüti."
+      },
+      "sourceRefs": [
+        "tbo-das-projekt",
+        "tbo-vorarbeiten-abschluss",
+        "bernmobil-baubewilligung-2026",
+        "wikipedia-de-strassenbahn-bern",
+        "osm-bern-tram"
+      ],
+      "geometryRef": "tbo-tram-works"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-de-strassenbahn-bern",
+      "title": "Wikipedia: Strassenbahn Bern (Tram Bern West 2010; Tram Bern–Ostermundigen)",
+      "url": "https://de.wikipedia.org/wiki/Strassenbahn_Bern",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tbo-das-projekt",
+      "title": "Tram Bern-Ostermundigen AG: Das Projekt (4'450 Meter lange Tramlinie, Viktoriaplatz bis Oberfeld)",
+      "url": "https://tram-bern-ostermundigen.ch/das-projekt/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tbo-vorarbeiten-abschluss",
+      "title": "Tram Bern-Ostermundigen AG: Planmässiger Abschluss der Vorarbeiten (10 November 2025)",
+      "url": "https://tram-bern-ostermundigen.ch/planmaessiger-abschluss-der-vorarbeiten/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "bernmobil-baubewilligung-2026",
+      "title": "BERNMOBIL: Baubewilligung für Tram Bern-Ostermundigen liegt vor (28 September 2026)",
+      "url": "https://www.bernmobil.ch/de/baubewilligung-fuer-tram-bern-ostermundigen-liegt-vor",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-bern-tram",
+      "title": "OpenStreetMap contributors: Bern tram route relations 7 and 8 and road centrelines (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/4152199",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

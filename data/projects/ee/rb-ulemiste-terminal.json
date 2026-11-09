@@ -1,0 +1,243 @@
+{
+  "id": "ee-rb-ulemiste-terminal",
+  "country": "ee",
+  "city": "ee-tallinn",
+  "category": "railway",
+  "name": {
+    "en": "Rail Baltica Ülemiste joint terminal (Linda), Tallinn",
+    "ro": "Terminalul comun Rail Baltica Ülemiste (Linda), Tallinn"
+  },
+  "description": {
+    "en": "Joint passenger terminal at Ülemiste in Tallinn, named Linda, where Rail Baltica's 1435 mm line will meet the existing 1520 mm railway, tram, buses and cycle routes. Rail Baltic Estonia is building it in stages while trains keep running: station railway works from 2023 and a terminal building designed by Zaha Hadid Architects with Esplan, under a contract of nearly €85 million excluding VAT signed in May 2025. A new 230 m platform opened on 12 June 2025. Completion is expected in 2028.",
+    "ro": "Terminal comun de călători la Ülemiste, în Tallinn, numit Linda, unde linia Rail Baltica de 1435 mm se va întâlni cu calea ferată existentă de 1520 mm, cu tramvaiul, autobuzele și traseele pentru biciclete. Rail Baltic Estonia îl construiește în etape, fără oprirea circulației trenurilor: lucrări feroviare în stație din 2023 și clădirea terminalului, proiectată de Zaha Hadid Architects împreună cu Esplan, în baza unui contract de aproape 85 de milioane de euro fără TVA, semnat în mai 2025. Un peron nou de 230 m a fost deschis pe 12 iunie 2025. Finalizarea este așteptată în 2028."
+  },
+  "operator": "ee-rail-baltic-estonia",
+  "stationCount": 1,
+  "lots": [
+    {
+      "id": "ulemiste-railway-works",
+      "name": {
+        "en": "Ülemiste station railway works (stages I and II)",
+        "ro": "Lucrări feroviare în stația Ülemiste (etapele I și II)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-04",
+        "constructionStart": "2023-10"
+      },
+      "lengthKm": 1.35,
+      "partOf": "ee-rail-baltica-estonia",
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-04",
+          "note": {
+            "en": "Construction contract for the Ülemiste railway infrastructure signed.",
+            "ro": "Contractul de construcție pentru infrastructura feroviară Ülemiste a fost semnat."
+          },
+          "sourceRef": "rbulemiste-et"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-10",
+          "note": {
+            "en": "Reconstruction of the existing railway infrastructure and work on the structures under the tracks began.",
+            "ro": "Au început reconstrucția infrastructurii feroviare existente și lucrările la structurile de sub căile ferate."
+          },
+          "sourceRef": "rbulemiste-et"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "Terminal construction is financed from the EU Cohesion Fund and the Connecting Europe Facility (CEF).",
+            "ro": "Construcția terminalului este finanțată din Fondul de Coeziune al UE și din Mecanismul pentru Interconectarea Europei (CEF)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Merko",
+          "role": "builder"
+        },
+        {
+          "name": "KMG",
+          "role": "builder"
+        },
+        {
+          "name": "Atemo",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Covers the railway works of the Ülemiste joint terminal: stage I (underground concrete structures under the tracks, 1520 mm track reconstruction, new 1520 mm embankment and platform), completed in December 2024 (a new 230 m by 9.3 m platform opened to passenger trains on 12 June 2025, the first finished part of the terminal), and stage II (started July 2025). The site timeline to February 2026 names Merko and KMG on stage II, and Atemo on retaining walls for the 1435 mm embankment on Suur-Sõjamäe street. Rail Baltic Estonia states that train traffic continues throughout construction. The pages do not state the contract value or the length of track covered. Length measured from OpenStreetMap geometry: the Rail Baltica 1435 mm main track through the station area, from the western end of the construction-tagged line to the last crossover. The site lists Rail Baltica's Harjumaa stage I (Ülemiste–Soodevahe) as a separate works object, so these tracks may also be counted there; hence partOf.",
+        "ro": "Cuprinde lucrările feroviare ale terminalului comun Ülemiste: etapa I (structuri subterane din beton sub căi, reconstrucția căii de 1520 mm, rambleu și peron nou de 1520 mm), finalizată în decembrie 2024 (un peron nou de 230 m pe 9,3 m a fost deschis pentru trenurile de călători pe 12 iunie 2025, prima parte finalizată a terminalului), și etapa II (începută în iulie 2025). Cronologia șantierului până în februarie 2026 numește Merko și KMG la etapa II și Atemo la zidurile de sprijin ale rambleului de 1435 mm de pe strada Suur-Sõjamäe. Rail Baltic Estonia afirmă că circulația trenurilor continuă pe toată durata lucrărilor. Paginile nu indică valoarea contractului și nici lungimea căii acoperite. Lungime măsurată pe geometria OpenStreetMap: calea principală de 1435 mm a Rail Baltica prin zona stației, de la capătul vestic al liniei marcate în construcție până la ultimul schimbător de cale. Site-ul listează etapa I Harjumaa a Rail Baltica (Ülemiste–Soodevahe) ca obiect de lucrări separat, deci aceste căi pot fi numărate și acolo; de aici partOf."
+      },
+      "sourceRefs": [
+        "rbulemiste-et",
+        "rbulemiste-en",
+        "rbulemiste-news-2025-06-12",
+        "rbestonia-construction-status",
+        "osm-geometry"
+      ],
+      "geometryRef": "ulemiste-railway-works"
+    },
+    {
+      "id": "linda-terminal-building",
+      "name": {
+        "en": "Linda terminal building",
+        "ro": "Clădirea terminalului Linda"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-05-21",
+        "constructionStart": "2025-10",
+        "expectedOpening": "2028-10"
+      },
+      "lengthKm": 0.18,
+      "partOf": "ee-rail-baltica-estonia",
+      "cost": {
+        "estimated": {
+          "amount": 57,
+          "currency": "EUR",
+          "year": 2024,
+          "note": "Value of the terminal building procurement announced on 2 October 2024."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 85,
+              "currency": "EUR",
+              "year": 2025,
+              "note": "Excluding VAT. The press release gives the contract sum as nearly €85 million plus VAT."
+            },
+            "date": "2025-05-21",
+            "sourceRef": "rbulemiste-news-2025-05-21"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2024-10-02",
+          "note": {
+            "en": "Rail Baltic Estonia announced the €57 million procurement for the Linda terminal building.",
+            "ro": "Rail Baltic Estonia a anunțat achiziția de 57 de milioane de euro pentru clădirea terminalului Linda."
+          },
+          "sourceRef": "rbulemiste-news-2024-10-02"
+        },
+        {
+          "kind": "awarded",
+          "date": "2025-05-21",
+          "note": {
+            "en": "Construction contract signed with Merko Ehitus Eesti.",
+            "ro": "Contractul de construcție a fost semnat cu Merko Ehitus Eesti."
+          },
+          "sourceRef": "rbulemiste-news-2025-05-21"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-10",
+          "note": {
+            "en": "Start of terminal building works.",
+            "ro": "Începutul lucrărilor la clădirea terminalului."
+          },
+          "sourceRef": "rbulemiste-et"
+        }
+      ],
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "detail": {
+            "en": "The construction contract is financed from the EU Cohesion Fund and the Connecting Europe Facility (CEF).",
+            "ro": "Contractul de construcție este finanțat din Fondul de Coeziune al UE și din Mecanismul pentru Interconectarea Europei (CEF)."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Merko Ehitus Eesti AS",
+          "role": "builder"
+        },
+        {
+          "name": "Zaha Hadid Architects",
+          "role": "designer"
+        },
+        {
+          "name": "Esplan",
+          "role": "designer"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 85,
+          "currency": "EUR",
+          "year": 2025,
+          "note": "Excluding VAT. The press release gives the contract sum as nearly €85 million plus VAT."
+        }
+      },
+      "note": {
+        "en": "Building about 20 m high that crosses Suur-Sõjamäe street, the Rail Baltica alignment and Eesti Raudtee's eastbound railway, with a central structure 180 m long. Pedestrian tunnels and technical systems go under it, and three platforms with a total length of 1,250 m, about half of them roofed, go beside the track. Zaha Hadid Architects designed it with Esplan. The tender schedule of October 2024 set the building to be ready in February 2028, with final handover to Rail Baltic Estonia in October 2028; the site states completion as presumably 2028. The first stage of the building works, the underground load-bearing structures, pedestrian tunnels and technical rooms, began earlier under a separate contract signed in April 2023 and is recorded on the railway works lot. The line drawn is the building's footprint along the track, measured from OpenStreetMap geometry (about 170 m); the 180 m length is the sourced figure.",
+        "ro": "Clădire înaltă de circa 20 m, care traversează strada Suur-Sõjamäe, traseul Rail Baltica și calea ferată spre est a Eesti Raudtee, cu o structură centrală de 180 m lungime. Dedesubt se amenajează tuneluri pietonale și sisteme tehnice, iar lângă cale trei peroane cu lungime totală de 1.250 m, aproximativ jumătate acoperite. A fost proiectată de Zaha Hadid Architects împreună cu Esplan. Graficul licitației din octombrie 2024 prevedea clădirea gata în februarie 2028, cu predarea finală către Rail Baltic Estonia în octombrie 2028; site-ul indică finalizarea ca presupusă în 2028. Prima etapă a lucrărilor la clădire, structurile portante subterane, tunelurile pietonale și încăperile tehnice, a început mai devreme printr-un contract separat semnat în aprilie 2023 și este înregistrată la lotul lucrărilor feroviare. Linia desenată este amprenta clădirii de-a lungul căii, măsurată pe geometria OpenStreetMap (circa 170 m); lungimea de 180 m este cifra din surse."
+      },
+      "sourceRefs": [
+        "rbulemiste-et",
+        "rbulemiste-en",
+        "rbulemiste-news-2024-10-02",
+        "rbulemiste-news-2025-05-21",
+        "rbulemiste-news-2025-06-12",
+        "osm-geometry"
+      ],
+      "geometryRef": "linda-terminal-building"
+    }
+  ],
+  "sources": [
+    {
+      "id": "rbulemiste-et",
+      "title": "RB Ülemiste Terminal (Estonian): \"Terminali ja seda ümbritseva ala ehitustööd algasid 2022. aastal ning kogu terminal koos läheduses valmib eeldatavasti 2028. aastal.\" Important dates: Aprill 2023 \"Ülemiste raudteetaristu ehituslepingu sõlmimine\"; Juuni 2025 \"Uue 1520 raudtee ooteplatvormi avamine Ülemistel\"; Juuli 2025 \"Raudteerajatiste II etapi ehitustööde algus\"; Oktoober 2025 \"Terminalihoone ehitustööde algus\"",
+      "url": "https://rbulemiste.ee/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "rbulemiste-en",
+      "title": "RB Ülemiste Terminal (English): October 2023 \"Starting the construction works of the I stage of terminal building\"; \"Reconstruction works of the existing railway infrastructure\"",
+      "url": "https://rbulemiste.ee/en/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "rbulemiste-news-2024-10-02",
+      "title": "Rail Baltic Estonia kuulutas välja kaks suuremahulist hanget põhitrassi ja Ülemiste Linda rahvusvahelise reisiterminali ehituseks (2 October 2024): \"Lisaks kuulutatakse välja 57 miljoni euro suurune hange Ülemiste Linda terminalihoone ehitamiseks.\"",
+      "url": "https://rbulemiste.ee/2024/10/02/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "rbulemiste-news-2025-05-21",
+      "title": "Rail Baltic Estonia sõlmis lepingu Tallinna Ülemiste rahvusvahelise reisiterminali ehitamiseks (21 May 2025): \"Lepingu summaks on ligi 85 miljonit eurot, millele lisandub käibemaks.\"",
+      "url": "https://rbulemiste.ee/2025/05/21/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "rbulemiste-news-2025-06-12",
+      "title": "Esimene osa Ülemiste Linda terminalist sai valmis (12 June 2025): \"Uus 230 meetri pikkune ja 9,3 meetri laiune platvorm\"; \"Ülemiste Linda terminal valmib 2028. aastal.\"",
+      "url": "https://rbulemiste.ee/2025/06/12/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "rbestonia-construction-status",
+      "title": "Rail Baltic Estonia: Ehituse seis (lists \"Harjumaa põhitrassi I etapi ehitustööd lõigul Ülemiste-Soodevahe\" and \"Ülemiste ühisterminal\" as separate works pages)",
+      "url": "https://www.rbestonia.ee/ehituse-seis/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-geometry",
+      "title": "OpenStreetMap contributors: Rail Baltica construction way 1110369903 and construction building way 1312496255 (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1110369903",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "cy-a9-evrychou-viaduct",
+  "country": "cy",
+  "category": "bridge",
+  "name": {
+    "en": "A9 Astromeritis–Evrychou Viaduct",
+    "ro": "Viaductul A9 Astromeritis–Evrychou"
+  },
+  "description": {
+    "en": "Viaduct of about 750 m on Phase D of the A9 motorway between Astromeritis and Evrychou, described as the longest bridge in Cyprus. Opened with the 11.3 km section on 30 April 2026.",
+    "ro": "Viaduct de circa 750 m pe faza D a autostrăzii A9 între Astromeritis și Evrychou, descris drept cel mai lung pod din Cipru. Deschis odată cu secțiunea de 11,3 km la 30 aprilie 2026."
+  },
+  "operator": "cy-pwd",
+  "lots": [
+    {
+      "id": "viaduct",
+      "name": {
+        "en": "Viaduct",
+        "ro": "Viaduct"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2026-04-30"
+      },
+      "lengthKm": 0.75,
+      "partOf": "cy-a9-nicosia-troodos",
+      "note": {
+        "en": "Sits inside Phase D of the A9, whose cost and length are recorded on that project; no separate cost is stated. Both sources give 750 m. The OpenStreetMap carriageway tagged as a bridge is about 810 m.",
+        "ro": "Se află în faza D a A9, al cărei cost și lungime sunt înregistrate la acel proiect; nu este indicat un cost separat. Ambele surse indică 750 m. Calea de rulare marcată ca pod în OpenStreetMap măsoară circa 810 m."
+      },
+      "sourceRefs": [
+        "wikipedia-a9-motorway-cyprus",
+        "sigmalive-astromeritis-evrychou-opening",
+        "openstreetmap-a9-viaduct"
+      ],
+      "geometryRef": "viaduct"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-a9-motorway-cyprus",
+      "title": "Wikipedia: A9 motorway (Cyprus)",
+      "url": "https://en.wikipedia.org/wiki/A9_motorway_(Cyprus)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "sigmalive-astromeritis-evrychou-opening",
+      "title": "Sigmalive English: Astromeritis–Evrychou highway opens this afternoon (2026-04-30)",
+      "url": "https://en.sigmalive.com/astromeritis-evrychou-highway-opens-this-afternoon/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-a9-viaduct",
+      "title": "OpenStreetMap contributors (ODbL): way 1249634610, A9 viaduct geometry",
+      "url": "https://www.openstreetmap.org/way/1249634610",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

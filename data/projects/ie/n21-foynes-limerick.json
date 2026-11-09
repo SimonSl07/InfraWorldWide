@@ -1,0 +1,147 @@
+{
+  "id": "ie-n21-foynes-limerick",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "N21/N69 Foynes to Limerick (including Adare Bypass)",
+    "ro": "N21/N69 Foynes – Limerick (inclusiv ocolitoarea Adare)"
+  },
+  "description": {
+    "en": "Limerick City and County Council scheme, with the Department of Transport and Transport Infrastructure Ireland, to upgrade the N21 from the Attyflin junction (N21/N20/M20) to Rathkeale as motorway and to connect the Port of Foynes by dual carriageway. The project site gives 35 km in total: about 17.5 km of motorway from Rathkeale to Attyflin and about 15.6 km of dual carriageway from Foynes to Rathkeale, with a 1.9 km single carriageway link between Ballyclogh and Askeaton. An Bord Pleanála approved the schemes on 30 August 2022. Only the 7 km Adare Bypass is under construction; the remainder of the motorway is recorded as planned. The Foynes – Rathkeale dual carriageway and the Ballyclogh – Askeaton link are not drawn here because no alignment is mapped in OpenStreetMap, so they have no lot. The name \"M21\" used in OpenStreetMap is not an official designation.",
+    "ro": "Schemă a Consiliului Orașului și Județului Limerick, împreună cu Departamentul Transporturilor și Transport Infrastructure Ireland, pentru modernizarea N21 de la nodul Attyflin (N21/N20/M20) până la Rathkeale ca autostradă și pentru legarea portului Foynes prin drum cu două benzi pe sens. Site-ul proiectului indică 35 km în total: circa 17,5 km de autostradă între Rathkeale și Attyflin și circa 15,6 km de drum cu două benzi pe sens între Foynes și Rathkeale, plus o legătură de 1,9 km cu o singură bandă pe sens între Ballyclogh și Askeaton. An Bord Pleanála a aprobat schemele la 30 august 2022. Doar ocolitoarea Adare, de 7 km, este în construcție; restul autostrăzii este înregistrat ca planificat. Drumul Foynes – Rathkeale și legătura Ballyclogh – Askeaton nu sunt desenate aici, fiindcă în OpenStreetMap nu există un traseu cartografiat, deci nu au lot. Denumirea \"M21\" din OpenStreetMap nu este una oficială."
+  },
+  "operator": "ie-transport-infrastructure-ireland",
+  "lots": [
+    {
+      "id": "adare-bypass",
+      "name": {
+        "en": "Adare Bypass (Croagh – Adare)",
+        "ro": "Ocolitoarea Adare (Croagh – Adare)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "announced": "2023-11-21",
+        "tenderAwarded": "2024-12",
+        "constructionStart": "2025-01",
+        "expectedOpening": "2027-06"
+      },
+      "lengthKm": 7,
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2023-11-21",
+          "note": {
+            "en": "Government approval to advance construction of the Adare Bypass ahead of the Ryder Cup at Adare Manor in September 2027.",
+            "ro": "Aprobarea guvernului de a accelera construcția ocolitoarei Adare înaintea Ryder Cup de la Adare Manor, din septembrie 2027."
+          },
+          "sourceRef": "foyneslimerick-home"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2024-06",
+          "note": {
+            "en": "Tender for the 7 km Adare Bypass as an advance construction contract; tenders were due in late September 2024.",
+            "ro": "Licitație pentru ocolitoarea Adare de 7 km, ca contract de construcție anticipat; ofertele erau așteptate la sfârșitul lui septembrie 2024."
+          },
+          "sourceRef": "foyneslimerick-home"
+        },
+        {
+          "kind": "awarded",
+          "date": "2024-12",
+          "sourceRef": "foyneslimerick-adare"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-01",
+          "sourceRef": "foyneslimerick-adare"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Funded by the Government of Ireland through the Department of Transport, which is investing approximately EUR 150 million to deliver the bypass. This is a funding figure, not a contract value.",
+            "ro": "Finanțat de guvernul Irlandei prin Departamentul Transporturilor, care investește circa 150 de milioane EUR pentru ocolitoare. Este o sumă de finanțare, nu valoarea contractului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Sisk Sorensen Joint Venture (John Sisk & Son (Holdings) Ltd and Sorensen Civil Engineering Ltd)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Design and construction contract awarded to the Sisk Sorensen Joint Venture in December 2024 and signed in March 2025; works began in January 2025 and the project site gives completion as June 2027. The contract value was not found. The bypass has grade-separated junctions at Adare and Croagh. Irish Rail awarded a separate contract to John Cradock Ltd in August 2024 for three road-over-rail bridges, two of them on the bypass. The TII Annual Report 2025 says the bypass was extended to include a 3.5 km section connecting the dual carriageway to Limerick. The drawn line runs between the mapped Croagh and Adare junctions and measures 6.55 km against the stated 7 km; the 3.5 km extension is not part of this lot's recorded length.",
+        "ro": "Contractul de proiectare și execuție a fost atribuit asocierii Sisk Sorensen în decembrie 2024 și semnat în martie 2025; lucrările au început în ianuarie 2025, iar site-ul proiectului indică finalizarea în iunie 2027. Valoarea contractului nu a fost găsită. Ocolitoarea are noduri denivelate la Adare și Croagh. Irish Rail a atribuit în august 2024 un contract separat firmei John Cradock Ltd pentru trei poduri rutiere peste calea ferată, dintre care două pe ocolitoare. Raportul anual TII 2025 spune că ocolitoarea a fost extinsă cu un sector de 3,5 km care leagă drumul cu două benzi pe sens de Limerick. Linia desenată urmează traseul dintre nodurile cartografiate Croagh și Adare și măsoară 6,55 km față de cei 7 km declarați; extinderea de 3,5 km nu face parte din lungimea înregistrată a acestui lot."
+      },
+      "sourceRefs": [
+        "foyneslimerick-home",
+        "foyneslimerick-adare",
+        "foyneslimerick-news",
+        "adarebypass-ie",
+        "tii-annual-report-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "adare-bypass"
+    },
+    {
+      "id": "rathkeale-attyflin-remainder",
+      "name": {
+        "en": "Rathkeale – Attyflin motorway (excluding Adare Bypass)",
+        "ro": "Autostrada Rathkeale – Attyflin (fără ocolitoarea Adare)"
+      },
+      "status": "planned",
+      "lengthKm": 10.5,
+      "note": {
+        "en": "The project site gives about 17.5 km of motorway from Rathkeale to Attyflin; the 7 km Adare Bypass sits inside it, and 10.5 km is that total less the bypass. The TII Annual Report 2025 lists the scheme under Going to Construction. No contract or construction start was found for this part. OpenStreetMap draws it in two pieces, from the western end of the mapped line to Croagh and from Adare to the Attyflin end, about 9.3 km in all, and the western end stops short of Rathkeale. OpenStreetMap tags both pieces as under construction in places, and the TII Annual Report 2025 says the bypass was extended by a 3.5 km section towards Limerick, so a 3.5 km extension may be under construction; the sources do not say where it lies.",
+        "ro": "Site-ul proiectului indică circa 17,5 km de autostradă între Rathkeale și Attyflin; ocolitoarea Adare de 7 km se află în interiorul lui, iar 10,5 km este acel total minus ocolitoarea. Raportul anual TII 2025 listează schema la categoria Going to Construction. Pentru această parte nu s-a găsit niciun contract sau început de construcție. OpenStreetMap o desenează în două bucăți, de la capătul vestic al liniei cartografiate până la Croagh și de la Adare până la capătul dinspre Attyflin, circa 9,3 km în total, iar capătul vestic se oprește înainte de Rathkeale. OpenStreetMap marchează pe alocuri ambele bucăți ca fiind în construcție, iar raportul anual TII 2025 spune că ocolitoarea a fost extinsă cu un sector de 3,5 km spre Limerick, deci o extindere de 3,5 km poate fi în construcție; sursele nu spun unde se află."
+      },
+      "sourceRefs": [
+        "foyneslimerick-home",
+        "tii-annual-report-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "rathkeale-attyflin-remainder"
+    }
+  ],
+  "sources": [
+    {
+      "id": "foyneslimerick-home",
+      "title": "Foynes to Limerick Road (including Adare Bypass): project site, home page",
+      "url": "https://www.foyneslimerick.ie/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "foyneslimerick-adare",
+      "title": "Foynes to Limerick Road: Adare Bypass (Phase 1A) page",
+      "url": "https://www.foyneslimerick.ie/phase-1a-adare-bypass",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "foyneslimerick-news",
+      "title": "Adare Bypass Update: Contracts Signed as Works Advance on 'Vital Infrastructure' (3 March 2025)",
+      "url": "https://www.foyneslimerick.ie/single-post/adare-bypass-update-contracts-signed-as-works-advance-on-vital-infrastructure",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "adarebypass-ie",
+      "title": "Adare Bypass: contractor project site",
+      "url": "https://www.adarebypass.ie/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "Transport Infrastructure Ireland: Annual Report 2025",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

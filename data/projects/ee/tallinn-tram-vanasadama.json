@@ -1,0 +1,190 @@
+{
+  "id": "ee-tallinn-tram-vanasadama",
+  "country": "ee",
+  "city": "ee-tallinn",
+  "category": "railway",
+  "name": {
+    "en": "Tallinn Old City Harbour (Vanasadam) tramway",
+    "ro": "Linia de tramvai Vanasadam (Portul Vechi) din Tallinn"
+  },
+  "description": {
+    "en": "New double-track tram line of about 2.5 km from the Kivisilla–Gonsiori junction in central Tallinn through the Old City Harbour area to Põhja puiestee, where it joins the existing line to Kopli. The City of Tallinn signed a design-and-build contract with Merko Ehitus Eesti and KMG Inseneriehituse in August 2022; works ran from 7 March 2023 to autumn 2024. Tram line 2 began running on the new tracks on 1 December 2024. A further extension to the airport depends on the Rail Baltica Ülemiste terminal.",
+    "ro": "Linie nouă de tramvai cu cale dublă, de circa 2,5 km, de la intersecția Kivisilla–Gonsiori din centrul orașului Tallinn, prin zona Portului Vechi, până la Põhja puiestee, unde se leagă de linia existentă spre Kopli. Orașul Tallinn a semnat în august 2022 un contract de proiectare și execuție cu Merko Ehitus Eesti și KMG Inseneriehituse; lucrările au durat din 7 martie 2023 până în toamna lui 2024. Linia de tramvai 2 circulă pe noul traseu din 1 decembrie 2024. Prelungirea spre aeroport depinde de terminalul Rail Baltica Ülemiste."
+  },
+  "operator": "ee-tallinna-linnatranspordi",
+  "lots": [
+    {
+      "id": "vanasadama-line",
+      "name": {
+        "en": "Vanasadam line: Kivisilla–Gonsiori to Põhja puiestee",
+        "ro": "Linia Vanasadam: Kivisilla–Gonsiori – Põhja puiestee"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-08-09",
+        "constructionStart": "2023-03-07",
+        "opened": "2024-12-01"
+      },
+      "lengthKm": 2.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "cost": {
+        "estimated": {
+          "amount": 44.9,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "Including VAT and owner supervision, as stated by the City of Tallinn when the contract was signed."
+        },
+        "actual": {
+          "amount": 55,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "Approximately; including VAT and oversight expenses, as stated by the City of Tallinn at the opening."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 36.5,
+              "currency": "EUR",
+              "year": 2022,
+              "scope": "works",
+              "note": "Excluding VAT. Design and construction contract."
+            },
+            "date": "2022-08-09",
+            "note": "Contract value stated by the City of Tallinn on the day of signing.",
+            "sourceRef": "tallinn-contract-2022"
+          },
+          {
+            "kind": "outturn",
+            "money": {
+              "amount": 55,
+              "currency": "EUR",
+              "scope": "total",
+              "note": "Approximately; including VAT and oversight expenses."
+            },
+            "date": "2024-11-29",
+            "sourceRef": "tallinn-opening-2024"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "amount": {
+            "amount": 36.5,
+            "currency": "EUR"
+          },
+          "detail": {
+            "en": "NextGenerationEU recovery fund contribution of €36.5 million stated at the opening; €26 million from the Recovery and Resilience Facility was stated when the contract was signed.",
+            "ro": "Contribuție de 36,5 milioane de euro din fondul de redresare NextGenerationEU, indicată la inaugurare; 26 de milioane de euro din Mecanismul de redresare și reziliență fuseseră indicate la semnarea contractului."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Merko Ehitus Eesti AS",
+          "role": "builder"
+        },
+        {
+          "name": "KMG Inseneriehituse AS (KMG Infra OÜ)",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2022-04-21",
+          "note": {
+            "en": "International procurement for design and construction announced; tenders due 1 July 2022.",
+            "ro": "Achiziție internațională pentru proiectare și execuție anunțată; ofertele erau așteptate până la 1 iulie 2022."
+          },
+          "sourceRef": "tallinn-contract-2022"
+        },
+        {
+          "kind": "awarded",
+          "date": "2022-08-09",
+          "note": {
+            "en": "Contract signed with Merko Ehitus Eesti and KMG Inseneriehituse.",
+            "ro": "Contract semnat cu Merko Ehitus Eesti și KMG Inseneriehituse."
+          },
+          "sourceRef": "tallinn-contract-2022"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2023-03-07",
+          "note": {
+            "en": "Works began on Gonsiori and Laikmaa streets.",
+            "ro": "Lucrările au început pe străzile Gonsiori și Laikmaa."
+          },
+          "sourceRef": "tallinn-start-2023"
+        },
+        {
+          "kind": "opened",
+          "date": "2024-12-01",
+          "note": {
+            "en": "Officially opened on 29 November 2024; tram line 2 started running on the new tracks on 1 December 2024.",
+            "ro": "Inaugurată oficial pe 29 noiembrie 2024; tramvaiul 2 circulă pe noul traseu din 1 decembrie 2024."
+          },
+          "sourceRef": "tallinn-opening-2024"
+        }
+      ],
+      "note": {
+        "en": "The 2.5 km length is the City of Tallinn's figure for the double-track line. The single alignment drawn from OpenStreetMap, Kivisilla–Gonsiori to Põhja puiestee via Gonsiori, Ahtri and the A-terminal streets, measures about 1.4 km; the recorded length is kept. The contract was signed on the day the city news item was published, 9 August 2022; the contract value of €36.5 million excludes VAT. The planned €44.9 million (about €46 million in the March 2023 start notice) and the final cost of about €55 million include VAT and owner supervision. The contract deadline was February 2025 and works finished in autumn 2024. The temporary line 6 from 3 July 2023 and line 5 from 1 November 2023 (Kopli–Vana-Lõuna) ran on existing tracks during construction and are not part of this line. Line 2 initially runs Kopli–Vanasadam–Suur-Paala; an airport extension awaits the Rail Baltica Ülemiste terminal.",
+        "ro": "Lungimea de 2,5 km este cifra Orașului Tallinn pentru linia cu cale dublă. Traseul unic desenat din OpenStreetMap, de la Kivisilla–Gonsiori la Põhja puiestee pe străzile Gonsiori, Ahtri și cele din dreptul terminalului A, măsoară circa 1,4 km; lungimea înregistrată este păstrată. Contractul a fost semnat în ziua publicării știrii orașului, 9 august 2022; valoarea de 36,5 milioane de euro este fără TVA. Costul planificat de 44,9 milioane de euro (circa 46 de milioane în anunțul de start din martie 2023) și costul final de circa 55 de milioane includ TVA și supervizarea beneficiarului. Termenul contractual era februarie 2025, iar lucrările s-au încheiat în toamna lui 2024. Linia temporară 6 din 3 iulie 2023 și linia 5 din 1 noiembrie 2023 (Kopli–Vana-Lõuna) au circulat pe căi existente în timpul lucrărilor și nu fac parte din această linie. Linia 2 circulă inițial Kopli–Vanasadam–Suur-Paala; prelungirea spre aeroport așteaptă terminalul Rail Baltica Ülemiste."
+      },
+      "sourceRefs": [
+        "tallinn-contract-2022",
+        "tallinn-start-2023",
+        "tallinn-opening-2024",
+        "tlt-line5-2023",
+        "wikipedia-en-trams-tallinn",
+        "osm-tallinn-tram"
+      ],
+      "geometryRef": "vanasadama-line"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tallinn-contract-2022",
+      "title": "City of Tallinn: Tallinn Old City Harbour tramway to be completed by February 2025 (\"The cost of the contract is €36.5 million plus VAT\"; \"approximately 2.5 km\"; \"Including VAT and owner supervision, the cost of the tramway is €44.9 million\")",
+      "url": "https://www.tallinn.ee/en/news/tallinn-old-city-harbour-tramway-be-completed-february-2025",
+      "retrievedOn": "2026-11-09",
+      "archiveUrl": "https://web.archive.org/web/20250419170845/https://www.tallinn.ee/en/news/tallinn-old-city-harbour-tramway-be-completed-february-2025"
+    },
+    {
+      "id": "tallinn-start-2023",
+      "title": "City of Tallinn: Construction works for the new tramline in Tallinn to begin next month (\"From 7 March, construction works will start for the first phase of the Vanasadama tramline\")",
+      "url": "https://www.tallinn.ee/en/news/construction-works-new-tramline-tallinn-begin-next-month",
+      "retrievedOn": "2026-11-09",
+      "archiveUrl": "https://web.archive.org/web/20250918033853/https://www.tallinn.ee/en/news/construction-works-new-tramline-tallinn-begin-next-month"
+    },
+    {
+      "id": "tallinn-opening-2024",
+      "title": "City of Tallinn: Old City Harbour tramway officially opened today (29 November 2024; \"approximately 2.5 kilometers of double-track tramline\"; \"approximately €55 million\"; \"Starting December 1, tramline 2 will operate on the new tracks\")",
+      "url": "https://www.tallinn.ee/en/news/old-city-harbour-tramway-officially-opened-today",
+      "retrievedOn": "2026-11-09",
+      "archiveUrl": "https://web.archive.org/web/20250919082101/https://www.tallinn.ee/en/news/old-city-harbour-tramway-officially-opened-today"
+    },
+    {
+      "id": "tlt-line5-2023",
+      "title": "TLT: New tram line number 5 to enter service on 1 November (temporary line 6 ends on 31 October 2023)",
+      "url": "https://tlt.ee/en/new-tram-line-number-5-to-enter-service-on-1-november/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-trams-tallinn",
+      "title": "Wikipedia: Trams in Tallinn (Old City Harbour line)",
+      "url": "https://en.wikipedia.org/wiki/Trams_in_Tallinn",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-tallinn-tram",
+      "title": "OpenStreetMap contributors: railway=tram ways, Tallinn Old City Harbour (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

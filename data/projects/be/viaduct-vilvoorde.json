@@ -1,0 +1,106 @@
+{
+  "id": "be-viaduct-vilvoorde",
+  "country": "be",
+  "category": "bridge",
+  "name": {
+    "en": "Vilvoorde Viaduct (R0)",
+    "ro": "Viaductul Vilvoorde (R0)"
+  },
+  "description": {
+    "en": "Viaduct carrying the R0 Brussels ring over the Brussels–Scheldt canal at Vilvoorde, built 1974–1978. A renovation started on 16 August 2023.",
+    "ro": "Viaduct pe care inelul R0 al Bruxelles-ului trece peste canalul Bruxelles–Scheldt la Vilvoorde, construit în 1974–1978. O renovare a început la 16 august 2023."
+  },
+  "operator": "be-awv",
+  "lots": [
+    {
+      "id": "viaduct",
+      "name": {
+        "en": "Viaduct (existing structure)",
+        "ro": "Viaduct (structura existentă)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1974",
+        "opened": "1978-07-01"
+      },
+      "lengthKm": 1.7,
+      "note": {
+        "en": "Built from 1974 to 1978. The outer ring was inaugurated on 29 December 1977 and the inner ring opened on 1 July 1978. Length 1,700 m in the infobox (1,687 m outer ring, 1,692 m inner ring).",
+        "ro": "Construit între 1974 și 1978. Sensul exterior a fost inaugurat la 29 decembrie 1977, iar cel interior a fost deschis la 1 iulie 1978. Lungime 1.700 m în fișa tehnică (1.687 m sens exterior, 1.692 m sens interior)."
+      },
+      "sourceRefs": [
+        "wikipedia-nl-viaduct-vilvoorde",
+        "osm-viaduct-vilvoorde"
+      ],
+      "geometryRef": "viaduct"
+    },
+    {
+      "id": "renovation-2023-2030",
+      "name": {
+        "en": "Renovation 2023–2030",
+        "ro": "Renovare 2023–2030"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023-08-16"
+      },
+      "lengthKm": 1.7,
+      "cost": {
+        "estimated": {
+          "amount": 435,
+          "currency": "EUR",
+          "scope": "total",
+          "note": "About 435 million euro excluding VAT, as estimated by VRT NWS / Belga on 13 March 2023 (the 2019 first study put it at 100 million). Price year not stated. nl Wikipedia quotes about 500 million, which the article cited for it does not state."
+        }
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023-08-16",
+          "sourceRef": "vrt-viaduct-vilvoorde-2023"
+        }
+      ],
+      "note": {
+        "en": "Works of eight years in phases, on the structure that lot \"viaduct\" already records. VRT NWS gives phase 1 as August 2023 to end 2025 (right half of the inner ring bridge, three narrowed lanes), phase 2 as spring 2026 to spring 2027 (outer ring), and the final phase as spring 2027 to end 2030, with one bridge half open at a time. nl Wikipedia counts five phases. No official completion date was found, so none is recorded. Contractor not named in the sources fetched.",
+        "ro": "Lucrări de opt ani, în faze, pe structura deja înregistrată în lotul „viaduct”. VRT NWS indică faza 1 din august 2023 până la sfârșitul lui 2025 (jumătatea dreaptă a podului sensului interior, trei benzi îngustate), faza 2 din primăvara 2026 până în primăvara 2027 (sensul exterior) și faza finală din primăvara 2027 până la sfârșitul lui 2030, cu o singură jumătate de pod deschisă la un moment dat. Wikipedia (nl) numără cinci faze. Nu s-a găsit o dată oficială de finalizare, deci nu este înregistrată niciuna. Constructorul nu este numit în sursele consultate."
+      },
+      "sourceRefs": [
+        "wikipedia-nl-viaduct-vilvoorde",
+        "vrt-viaduct-vilvoorde-2023",
+        "vrt-viaduct-vilvoorde-cost-2023",
+        "osm-viaduct-vilvoorde"
+      ],
+      "geometryRef": "renovation-2023-2030"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-nl-viaduct-vilvoorde",
+      "title": "Wikipedia (nl): Viaduct van Vilvoorde",
+      "url": "https://nl.wikipedia.org/wiki/Viaduct_van_Vilvoorde",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vrt-viaduct-vilvoorde-2023",
+      "title": "VRT NWS: Smalle rijstroken en files: grote renovatie van het viaduct van Vilvoorde (2023-08-10)",
+      "url": "https://www.vrt.be/vrtnws/nl/2023/08/10/smalle-rijstroken-en-files-grote-renovatie-van-het-viaduct-van/",
+      "publisher": "VRT NWS",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vrt-viaduct-vilvoorde-cost-2023",
+      "title": "VRT NWS / Belga: Viaduct van Vilvoorde ondergaat grondige renovatie: 8 jaar hinder (2023-03-13)",
+      "url": "https://www.vrt.be/vrtnws/nl/2023/03/13/viaduct-vilvoorde-belga/",
+      "publisher": "VRT NWS",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-viaduct-vilvoorde",
+      "title": "OpenStreetMap contributors (ODbL): way 344140803, Viaduct van Vilvoorde",
+      "url": "https://www.openstreetmap.org/way/344140803",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

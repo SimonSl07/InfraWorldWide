@@ -1,0 +1,116 @@
+{
+  "id": "ch-gotthard-base-tunnel",
+  "country": "ch",
+  "category": "tunnel",
+  "name": {
+    "en": "Gotthard Base Tunnel",
+    "ro": "Tunelul de bază Gotthard"
+  },
+  "description": {
+    "en": "Twin-bore railway base tunnel of 57 km between Erstfeld (Uri) and Bodio (Ticino), part of the New Rail Link through the Alps (NEAT). It consists of two fully fitted single-track tubes and shortens the route between Uri and Ticino by about 30 km compared with the mountain line. The first blast at the Gotthard was on 4 November 1999, the opening ceremony was held on 1 June 2016 and regular train service began on 11 December 2016. The Ceneri Base Tunnel to the south is a separate project.",
+    "ro": "Tunel feroviar de bază cu două tuburi, lung de 57 km, între Erstfeld (Uri) și Bodio (Ticino), parte a Noii legături feroviare alpine (NEAT). Are două tuburi cu o singură cale, echipate complet, și scurtează traseul dintre Uri și Ticino cu aproximativ 30 km față de linia de munte. Prima detonare la Gotthard a avut loc la 4 noiembrie 1999, ceremonia de deschidere la 1 iunie 2016, iar circulația regulată a trenurilor a început la 11 decembrie 2016. Tunelul de bază Ceneri, la sud, este un proiect separat."
+  },
+  "operator": "ch-alptransit-gotthard-ag",
+  "lots": [
+    {
+      "id": "gotthard-base-tunnel",
+      "name": {
+        "en": "Gotthard Base Tunnel (Erstfeld – Bodio)",
+        "ro": "Tunelul de bază Gotthard (Erstfeld – Bodio)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1999-11-04",
+        "opened": "2016-12-11"
+      },
+      "lengthKm": 57,
+      "cost": {
+        "actual": {
+          "amount": 12200,
+          "currency": "CHF",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Today's costs including interest and VAT, as stated by the Federal Office of Transport. Price year not stated; not comparable with figures excluding VAT and interest."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 57,
+        "tracks": 2,
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1999-11-04",
+          "note": {
+            "en": "First blast at the Gotthard. The official start of NEAT construction, 5 July 1999, was the first blast at the Lötschberg.",
+            "ro": "Prima detonare la Gotthard. Startul oficial al construcției NEAT, 5 iulie 1999, a fost prima detonare la Lötschberg."
+          },
+          "sourceRef": "alptransit-portal-baustart"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-11",
+          "note": {
+            "en": "Regular train service began. The opening ceremony was on 1 June 2016 and freight trains ran from 5 September 2016.",
+            "ro": "A început circulația regulată a trenurilor. Ceremonia de deschidere a fost la 1 iunie 2016, iar trenurile de marfă circulau din 5 septembrie 2016."
+          },
+          "sourceRef": "alptransit-portal-kosten-nutzen"
+        }
+      ],
+      "note": {
+        "en": "Built in five construction sections (Erstfeld, Amsteg, Sedrun, Faido, Bodio) with access at Amsteg, Sedrun and Faido. Section lengths and contractors are not recorded here because the sources disagree on section boundaries, which moved during construction. The first tunnel boring machine breakthrough was on 6 September 2006 and the main breakthrough of the east tube below Sedrun on 15 October 2010. The cost is the Federal Office of Transport figure including interest and VAT. Drawn geometry is one tube measured from OpenStreetMap (57.0 km).",
+        "ro": "Construit în cinci secțiuni (Erstfeld, Amsteg, Sedrun, Faido, Bodio), cu acces la Amsteg, Sedrun și Faido. Lungimile secțiunilor și constructorii nu sunt înregistrați aici, deoarece sursele diferă în privința limitelor secțiunilor, care s-au mutat în timpul construcției. Prima trecere a unui tunelier a fost la 6 septembrie 2006, iar străpungerea principală a tubului estic sub Sedrun la 15 octombrie 2010. Costul este cifra Oficiului Federal pentru Transporturi, inclusiv dobânzi și TVA. Geometria desenată este un singur tub, măsurat din OpenStreetMap (57,0 km)."
+      },
+      "sourceRefs": [
+        "bav-neat",
+        "alptransit-portal-baustart",
+        "alptransit-portal-durchschlag",
+        "alptransit-portal-kosten-nutzen",
+        "wikipedia-de-gotthard-basistunnel",
+        "osm-gotthard-base-tunnel"
+      ],
+      "geometryRef": "gotthard-base-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bav-neat",
+      "title": "Federal Office of Transport (BAV): NEAT, New Rail Link through the Alps",
+      "url": "https://www.bav.admin.ch/de/neat-neue-eisenbahn-alpentransversale",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "alptransit-portal-baustart",
+      "title": "alptransit-portal.ch: Der Baustart",
+      "url": "https://www.alptransit-portal.ch/de/uebersicht/bau/ereignisse/ereignis/der-baustart/true",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "alptransit-portal-durchschlag",
+      "title": "alptransit-portal.ch: Durchschlag im Gotthard",
+      "url": "https://www.alptransit-portal.ch/de/uebersicht/bau/ereignisse/ereignis/durchschlag-im-gotthard/true",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "alptransit-portal-kosten-nutzen",
+      "title": "alptransit-portal.ch: Kosten und Nutzen",
+      "url": "https://www.alptransit-portal.ch/de/uebersicht/gesellschaft/ereignisse/ereignis/kosten-und-nutzen/true",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-de-gotthard-basistunnel",
+      "title": "Wikipedia (de): Gotthard-Basistunnel",
+      "url": "https://de.wikipedia.org/wiki/Gotthard-Basistunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-gotthard-base-tunnel",
+      "title": "OpenStreetMap contributors (ODbL): Gotthard Base Tunnel railway ways",
+      "url": "https://www.openstreetmap.org/way/199664200",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
