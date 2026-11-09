@@ -1,0 +1,87 @@
+{
+  "id": "gb-gwml-electrification",
+  "country": "gb",
+  "category": "railway",
+  "name": {
+    "en": "Great Western Main Line electrification (Maidenhead – Thingley Junction)",
+    "ro": "Electrificarea Great Western Main Line (Maidenhead – Thingley Junction)"
+  },
+  "description": {
+    "en": "25 kV AC overhead electrification of the Great Western Main Line west of Maidenhead. The programme was announced in 2011 to run to Bristol Temple Meads and Cardiff. After cost increases and delays, it was completed as far as Didcot Parkway in December 2017 and Thingley Junction, west of Chippenham, in December 2019. Royal Wootton Bassett – Bristol, Bristol Parkway – Temple Meads and Didcot – Oxford were deferred or postponed and are not mapped here.",
+    "ro": "Electrificarea cu linie de contact de 25 kV c.a. a magistralei Great Western Main Line la vest de Maidenhead. Programul a fost anunțat în 2011 pentru a ajunge la Bristol Temple Meads și Cardiff. După creșteri de costuri și întârzieri, a fost finalizat până la Didcot Parkway în decembrie 2017 și până la Thingley Junction, la vest de Chippenham, în decembrie 2019. Royal Wootton Bassett – Bristol, Bristol Parkway – Temple Meads și Didcot – Oxford au fost amânate și nu sunt cartografiate aici."
+  },
+  "operator": "gb-network-rail",
+  "lots": [
+    {
+      "id": "maidenhead-didcot",
+      "name": {
+        "en": "Maidenhead – Didcot Parkway",
+        "ro": "Maidenhead – Didcot Parkway"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-12"
+      },
+      "lengthKm": 46.3,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "Electrification of the existing line, completed in December 2017 according to Wikipedia, which cites Railway Technology Magazine. The Crossrail scheme covered electrification from Airport Junction to Maidenhead. Length measured from OpenStreetMap geometry. No per-section cost is recorded: the NAO (2016) gives only a programme figure of £2.8 billion for Maidenhead – Cardiff.",
+        "ro": "Electrificarea liniei existente, finalizată în decembrie 2017 potrivit Wikipedia, care citează Railway Technology Magazine. Proiectul Crossrail a acoperit electrificarea de la Airport Junction până la Maidenhead. Lungime măsurată pe geometria OpenStreetMap. Nu este înregistrat un cost pe secțiune: NAO (2016) oferă doar o cifră la nivel de program, 2,8 miliarde de lire sterline pentru Maidenhead – Cardiff."
+      },
+      "sourceRefs": [
+        "wikipedia-gwml",
+        "nao-gwr-2016",
+        "osm-odbl"
+      ],
+      "geometryRef": "maidenhead-didcot"
+    },
+    {
+      "id": "didcot-thingley",
+      "name": {
+        "en": "Didcot Parkway – Thingley Junction",
+        "ro": "Didcot Parkway – Thingley Junction"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2019-12"
+      },
+      "lengthKm": 69.0,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "Electrification to Thingley Junction, 2 miles west of Chippenham, completed in December 2019 according to Wikipedia, which cites Buxton and Heath (2025) and Keenor. Length measured from OpenStreetMap geometry. In July 2017 the government confirmed electrification would stop there for the time being.",
+        "ro": "Electrificarea până la Thingley Junction, la 2 mile vest de Chippenham, finalizată în decembrie 2019 potrivit Wikipedia, care citează Buxton și Heath (2025) și Keenor. Lungime măsurată pe geometria OpenStreetMap. În iulie 2017 guvernul a anunțat că electrificarea se oprește aici deocamdată."
+      },
+      "sourceRefs": [
+        "wikipedia-gwml",
+        "osm-odbl"
+      ],
+      "geometryRef": "didcot-thingley"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-gwml",
+      "title": "Wikipedia: Great Western Main Line (Electrification section)",
+      "url": "https://en.wikipedia.org/wiki/Great_Western_Main_Line",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "nao-gwr-2016",
+      "title": "National Audit Office: Modernising the Great Western railway",
+      "url": "https://www.nao.org.uk/reports/modernising-the-great-western-railway/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-odbl",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

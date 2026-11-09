@@ -1,0 +1,113 @@
+{
+  "id": "gb-hs1",
+  "country": "gb",
+  "category": "railway",
+  "name": {
+    "en": "High Speed 1 (Channel Tunnel Rail Link)",
+    "ro": "High Speed 1 (Channel Tunnel Rail Link)"
+  },
+  "description": {
+    "en": "High-speed line of about 110 km linking the Channel Tunnel portal near Folkestone with London St Pancras International. Built in two sections by London and Continental Railways: Section 1 opened on 28 September 2003 and Section 2 on 14 November 2007. Ebbsfleet International opened on 19 November 2007 and Stratford International on 30 November 2009. Construction cost £6.84 billion. The 30-year operating concession was sold in November 2010 for £2.1 billion and resold in 2017; that is a concession price, not a construction cost.",
+    "ro": "Linie de mare viteză de circa 110 km între portalul Tunelului Canalului Mânecii, lângă Folkestone, și gara London St Pancras International. A fost construită în două secțiuni de London and Continental Railways: secțiunea 1 a fost deschisă la 28 septembrie 2003, iar secțiunea 2 la 14 noiembrie 2007. Gara Ebbsfleet International a fost deschisă la 19 noiembrie 2007, iar Stratford International la 30 noiembrie 2009. Costul construcției a fost de 6,84 miliarde de lire sterline. Concesiunea de exploatare pe 30 de ani a fost vândută în noiembrie 2010 cu 2,1 miliarde de lire și revândută în 2017; acesta este un preț de concesiune, nu un cost de construcție."
+  },
+  "operator": "gb-hs1-ltd",
+  "cost": {
+    "amount": 6840,
+    "currency": "GBP",
+    "scope": "programme",
+    "note": "Total construction cost as stated by Wikipedia. Price year not stated."
+  },
+  "lots": [
+    {
+      "id": "section-1",
+      "name": {
+        "en": "Section 1: Channel Tunnel – Fawkham Junction",
+        "ro": "Secțiunea 1: Tunelul Canalului Mânecii – Fawkham Junction"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003-09-28"
+      },
+      "lengthKm": 74,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 300,
+        "electrified": true,
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "London and Continental Railways sold £1.6 billion of government-backed bonds to pay for Section 1 after the 1998 rescue plan.",
+            "ro": "London and Continental Railways a vândut obligațiuni garantate de stat de 1,6 miliarde de lire pentru secțiunea 1, după planul de salvare din 1998."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2003-09-28",
+          "sourceRef": "wikipedia-hs1"
+        }
+      ],
+      "note": {
+        "en": "The sourced length of 74 km runs to Fawkham Junction on the Kent main line. The geometry follows the main line from the Channel Tunnel portal to Ebbsfleet only, where Section 2 begins, and measures 72.6 km. The Medway Viaduct (1.26 km) lies on this section. Overall construction cost is recorded on the project, not split by section.",
+        "ro": "Lungimea sursei de 74 km ajunge până la Fawkham Junction, pe linia principală din Kent. Geometria urmează linia principală de la portalul Tunelului Canalului Mânecii doar până la Ebbsfleet, unde începe secțiunea 2, și măsoară 72,6 km. Viaductul Medway (1,26 km) se află pe această secțiune. Costul total al construcției este înregistrat la nivel de proiect, nu pe secțiuni."
+      },
+      "sourceRefs": [
+        "wikipedia-hs1",
+        "osm"
+      ],
+      "geometryRef": "section-1"
+    },
+    {
+      "id": "section-2",
+      "name": {
+        "en": "Section 2: Ebbsfleet – London St Pancras",
+        "ro": "Secțiunea 2: Ebbsfleet – London St Pancras"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2007-11-14"
+      },
+      "lengthKm": 39.4,
+      "profile": {
+        "works": "greenfield",
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2007-11-14",
+          "sourceRef": "wikipedia-hs1"
+        }
+      ],
+      "note": {
+        "en": "Starts with a 3.1 km tunnel under the River Thames and continues in twin tunnels under London. Ebbsfleet International opened on 19 November 2007; Stratford International opened on 30 November 2009. The drawn geometry measures 36.0 km, 9% below the sourced length, and ends at the St Pancras throat.",
+        "ro": "Începe cu un tunel de 3,1 km sub Tamisa și continuă prin tuneluri gemene sub Londra. Gara Ebbsfleet International a fost deschisă la 19 noiembrie 2007, iar Stratford International la 30 noiembrie 2009. Geometria desenată măsoară 36,0 km, cu 9% sub lungimea din sursă, și se oprește la intrarea în St Pancras."
+      },
+      "sourceRefs": [
+        "wikipedia-hs1",
+        "osm"
+      ],
+      "geometryRef": "section-2"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-hs1",
+      "title": "Wikipedia: High Speed 1",
+      "url": "https://en.wikipedia.org/wiki/High_Speed_1",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors (ODbL): High Speed 1 ways",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

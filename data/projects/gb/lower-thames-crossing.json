@@ -1,0 +1,266 @@
+{
+  "id": "gb-lower-thames-crossing",
+  "country": "gb",
+  "category": "highway",
+  "name": {
+    "en": "Lower Thames Crossing",
+    "ro": "Lower Thames Crossing (traversarea Tamisei)"
+  },
+  "description": {
+    "en": "A new road of about 23 km (14.3 miles) between the M25 and the A2/M2 east of Gravesend, with a 4.2 km tunnel under the River Thames. It joins the M25 between junctions 29 and 30 north of the river and the A2 at Thong south of it. Development consent was granted in March 2025 and early construction began in March 2026. Lots follow the three main works contracts, drawn from approximate alignments in OpenStreetMap, so the drawn lots total about 21 km against the stated 23 km. The reported cost was revised to £10.6 billion in December 2025, with no price year stated, and the opening was reported as pushed back to 2034. No opening date is recorded.",
+    "ro": "Un drum nou de aproximativ 23 km (14,3 mile) între M25 și A2/M2, la est de Gravesend, cu un tunel de 4,2 km sub Tamisa. Se leagă de M25 între nodurile 29 și 30, la nord de râu, și de A2 la Thong, la sud. Autorizația de construire a fost acordată în martie 2025, iar lucrările timpurii au început în martie 2026. Loturile urmează cele trei contracte principale de lucrări, desenate pe trasee aproximative din OpenStreetMap, deci loturile desenate însumează circa 21 km față de cei 23 km declarați. Costul raportat a fost revizuit la 10,6 miliarde GBP în decembrie 2025, fără an de preț indicat, iar deschiderea a fost raportată ca amânată până în 2034. Nu se înregistrează o dată de deschidere."
+  },
+  "operator": "gb-national-highways",
+  "lots": [
+    {
+      "id": "roads-north",
+      "name": {
+        "en": "Roads north of the Thames (M25 junction 29 – tunnel north portal)",
+        "ro": "Drumuri la nord de Tamisa (nodul M25 29 – portalul nordic al tunelului)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-01",
+        "constructionStart": "2026-03"
+      },
+      "lengthKm": 14.57,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1200,
+              "currency": "GBP",
+              "year": 2023,
+              "scope": "works"
+            },
+            "date": "2023-01",
+            "note": "Contract value as reported by Wikipedia.",
+            "sourceRef": "wikipedia-ltc"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1200,
+          "currency": "GBP",
+          "year": 2023,
+          "scope": "works"
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-01",
+          "note": {
+            "en": "Balfour Beatty announced as contractor for the Roads North of the Thames contract, valued at £1.2 billion.",
+            "ro": "Balfour Beatty a fost anunțată ca antreprenor pentru contractul Roads North of the Thames, evaluat la 1,2 miliarde GBP."
+          },
+          "sourceRef": "wikipedia-ltc"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-03",
+          "note": {
+            "en": "Early construction began in March 2026.",
+            "ro": "Lucrările timpurii au început în martie 2026."
+          },
+          "sourceRef": "wikipedia-ltc"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Balfour Beatty",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (northern carriageway from the M25 to the A13 junction, then the approximate alignment to the tunnel portal). Wikipedia describes the Roads North contract as 10 miles of road, which includes junction works not drawn here.",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap (calea de rulare nordică de la M25 la nodul A13, apoi traseul aproximativ până la portalul tunelului). Wikipedia descrie contractul Roads North ca 10 mile de drum, cifră care include lucrări de noduri nedesenate aici."
+      },
+      "sourceRefs": [
+        "wikipedia-ltc",
+        "nh-hub",
+        "osm-ltc"
+      ],
+      "geometryRef": "roads-north"
+    },
+    {
+      "id": "thames-tunnel",
+      "name": {
+        "en": "Thames tunnel and approaches",
+        "ro": "Tunelul sub Tamisa și rampele de acces"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-12",
+        "constructionStart": "2026-03"
+      },
+      "lengthKm": 4.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1300,
+              "currency": "GBP",
+              "year": 2023,
+              "scope": "works"
+            },
+            "date": "2023-12",
+            "note": "Contract value as reported by Wikipedia.",
+            "sourceRef": "wikipedia-ltc"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 1300,
+          "currency": "GBP",
+          "year": 2023,
+          "scope": "works"
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-12",
+          "note": {
+            "en": "A joint venture of Bouygues and J. Murphy & Sons announced as contractor for the Tunnels and Approaches contract, valued at £1.3 billion.",
+            "ro": "O asociere Bouygues și J. Murphy & Sons a fost anunțată ca antreprenor pentru contractul Tunnels and Approaches, evaluat la 1,3 miliarde GBP."
+          },
+          "sourceRef": "wikipedia-ltc"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-03",
+          "note": {
+            "en": "Early construction began in March 2026.",
+            "ro": "Lucrările timpurii au început în martie 2026."
+          },
+          "sourceRef": "wikipedia-ltc"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Bouygues Travaux Publics",
+          "role": "builder"
+        },
+        {
+          "name": "J. Murphy & Sons",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length is the 4.2 km tunnel stated by Wikipedia; the drawn alignment is the OpenStreetMap approximate alignment of the bore, 3.97 km. The contract also covers the approaches.",
+        "ro": "Lungimea este cea de 4,2 km a tunelului indicată de Wikipedia; traseul desenat este alinierea aproximativă din OpenStreetMap, de 3,97 km. Contractul include și rampele de acces."
+      },
+      "sourceRefs": [
+        "wikipedia-ltc",
+        "nh-hub",
+        "osm-ltc"
+      ],
+      "geometryRef": "thames-tunnel"
+    },
+    {
+      "id": "kent-roads",
+      "name": {
+        "en": "Kent roads (tunnel south portal – A2/M2)",
+        "ro": "Drumuri în Kent (portalul sudic al tunelului – A2/M2)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2023-07",
+        "constructionStart": "2026-03"
+      },
+      "lengthKm": 2.79,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 450,
+              "currency": "GBP",
+              "year": 2023,
+              "scope": "works"
+            },
+            "date": "2023-07",
+            "note": "Contract value as reported by Wikipedia.",
+            "sourceRef": "wikipedia-ltc"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 450,
+          "currency": "GBP",
+          "year": 2023,
+          "scope": "works"
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2023-07",
+          "note": {
+            "en": "Skanska announced as contractor for the Kent Roads contract, valued at £450 million.",
+            "ro": "Skanska a fost anunțată ca antreprenor pentru contractul Kent Roads, evaluat la 450 de milioane GBP."
+          },
+          "sourceRef": "wikipedia-ltc"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2026-03",
+          "note": {
+            "en": "Early construction began in March 2026.",
+            "ro": "Lucrările timpurii au început în martie 2026."
+          },
+          "sourceRef": "wikipedia-ltc"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Skanska",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry (tunnel south portal to the A2/M2 junction at Thong). Wikipedia describes the Kent Roads contract as 3.7 miles, which includes A2 and M2 junction works not drawn here.",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap (de la portalul sudic al tunelului la nodul A2/M2 de la Thong). Wikipedia descrie contractul Kent Roads ca 3,7 mile, cifră care include lucrări la nodurile A2 și M2 nedesenate aici."
+      },
+      "sourceRefs": [
+        "wikipedia-ltc",
+        "nh-hub",
+        "osm-ltc"
+      ],
+      "geometryRef": "kent-roads"
+    }
+  ],
+  "cost": {
+    "amount": 10600,
+    "currency": "GBP",
+    "scope": "total",
+    "confidence": "reported",
+    "note": "Revised figure reported by Wikipedia in December 2025; no price year stated. It was £9 billion in November 2022."
+  },
+  "sources": [
+    {
+      "id": "wikipedia-ltc",
+      "title": "Wikipedia: Lower Thames Crossing (\"Road: 14.3 miles (23.0 km)\"; \"Tunnel: 2.6 miles (4.2 km)\"; \"early construction began in March 2026\"; cost \"later (December 2025) revised to £10.6 billion\")",
+      "url": "https://en.wikipedia.org/wiki/Lower_Thames_Crossing",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "nh-hub",
+      "title": "National Highways: Lower Thames Crossing (news: construction work began in early 2026)",
+      "url": "https://nationalhighways.co.uk/roads-and-travel/road-projects/south-east/lower-thames-crossing/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-ltc",
+      "title": "OpenStreetMap contributors: Lower Thames Crossing ways (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

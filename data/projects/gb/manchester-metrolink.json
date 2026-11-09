@@ -1,0 +1,581 @@
+{
+  "id": "gb-manchester-metrolink",
+  "country": "gb",
+  "city": "gb-manchester",
+  "category": "railway",
+  "name": {
+    "en": "Manchester Metrolink",
+    "ro": "Manchester Metrolink"
+  },
+  "description": {
+    "en": "Tram and light rail network in Greater Manchester, owned by Transport for Greater Manchester and operated by KeolisAmey. It opened on 6 April 1992 and has 99 stops on 64 miles (103 km) of route. It was built in phases: Phase 1 (1992), Phase 2 to Eccles (1999–2000), Phase 3a (2011–2013), Phase 3b (2013–2014), the Second City Crossing (2017) and the Trafford Park Line (2020). A cost of £489 million is given for Phase 3 as a whole, and it is not split between the lots.",
+    "ro": "Rețea de tramvai și metrou ușor în Greater Manchester, deținută de Transport for Greater Manchester și operată de KeolisAmey. A fost deschisă la 6 aprilie 1992 și are 99 de stopuri pe 64 de mile (103 km) de traseu. A fost construită în faze: faza 1 (1992), faza 2 până la Eccles (1999–2000), faza 3a (2011–2013), faza 3b (2013–2014), Second City Crossing (2017) și linia Trafford Park (2020). Pentru faza 3 în ansamblu este indicat un cost de 489 de milioane de lire, care nu este împărțit pe loturi."
+  },
+  "operator": "gb-tfgm",
+  "stationCount": 99,
+  "lots": [
+    {
+      "id": "phase-1-bury-altrincham",
+      "name": {
+        "en": "Phase 1: Bury – Altrincham and Piccadilly branch",
+        "ro": "Faza 1: Bury – Altrincham și ramura Piccadilly"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1991-07",
+        "opened": "1992-07-20"
+      },
+      "lengthKm": 30.9,
+      "cost": {
+        "actual": {
+          "amount": 145,
+          "currency": "GBP",
+          "scope": "total",
+          "note": "Cost of Phase 1 as stated by Wikipedia (citing GMPTE, 2000); price year not stated."
+        }
+      },
+      "profile": {
+        "works": "reconstruction",
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1992-04-06",
+          "note": {
+            "en": "Bury Line reopened from Victoria to Bury Interchange.",
+            "ro": "Linia Bury a fost redeschisă de la Victoria la Bury Interchange."
+          },
+          "sourceRef": "wikipedia-manchester-metrolink"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1992-04-27",
+          "note": {
+            "en": "First street-level trams, Victoria to G-Mex.",
+            "ro": "Primele tramvaie pe stradă, de la Victoria la G-Mex."
+          },
+          "sourceRef": "wikipedia-manchester-metrolink"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "1992-06-15",
+          "note": {
+            "en": "Altrincham Line reopened from G-Mex to Altrincham Interchange.",
+            "ro": "Linia Altrincham a fost redeschisă de la G-Mex la Altrincham Interchange."
+          },
+          "sourceRef": "wikipedia-manchester-metrolink"
+        },
+        {
+          "kind": "opened",
+          "date": "1992-07-20",
+          "note": {
+            "en": "Branch to Piccadilly station opened.",
+            "ro": "Ramura spre gara Piccadilly a fost deschisă."
+          },
+          "sourceRef": "wikipedia-manchester-metrolink"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "GMA Group",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Conversion of two suburban railway lines (Bury Line from July 1991, the Manchester, South Junction and Altrincham line from December 1991) joined by a new street-level tramway through the city centre, the First City Crossing. The line was officially opened by Queen Elizabeth II on 17 July 1992. Length converted from the 19.2 miles stated for the network (30.9 km). GMA Group was a consortium of AMEC, GM Buses, John Mowlem and GEC. The drawn line (Bury – Altrincham 30.3 km plus the 0.6 km Piccadilly branch) agrees with it.",
+        "ro": "Conversia a două linii feroviare suburbane (linia Bury din iulie 1991, linia Manchester, South Junction și Altrincham din decembrie 1991), unite printr-un tramvai nou pe stradă prin centrul orașului, First City Crossing. Linia a fost inaugurată oficial de regina Elisabeta a II-a la 17 iulie 1992. Lungime convertită din cele 19,2 mile indicate pentru rețea (30,9 km). GMA Group era un consorțiu format din AMEC, GM Buses, John Mowlem și GEC. Traseul desenat (Bury – Altrincham 30,3 km plus ramura Piccadilly de 0,6 km) corespunde."
+      },
+      "sourceRefs": [
+        "wikipedia-manchester-metrolink",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-1-bury-altrincham"
+    },
+    {
+      "id": "phase-2-eccles",
+      "name": {
+        "en": "Phase 2: Eccles Line (Cornbrook – Eccles)",
+        "ro": "Faza 2: linia Eccles (Cornbrook – Eccles)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1997",
+        "opened": "2000-07-21"
+      },
+      "lengthKm": 6.4,
+      "cost": {
+        "actual": {
+          "amount": 160,
+          "currency": "GBP",
+          "scope": "total",
+          "note": "Extension cost as stated by Wikipedia; price year not stated. Excludes the MediaCityUK spur."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "1999-12-06",
+          "note": {
+            "en": "Opened as far as Broadway, inaugurated by the prime minister.",
+            "ro": "Deschisă până la Broadway, inaugurată de prim-ministru."
+          },
+          "sourceRef": "wikipedia-manchester-metrolink"
+        },
+        {
+          "kind": "opened",
+          "date": "2000-07-21",
+          "note": {
+            "en": "Broadway – Eccles section opened; the complete line was officially opened on 9 January 2001.",
+            "ro": "Secțiunea Broadway – Eccles a fost deschisă; linia completă a fost inaugurată oficial la 9 ianuarie 2001."
+          },
+          "sourceRef": "wikipedia-metrolink-timeline"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Altram (Serco, Ansaldo, John Laing)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Westward extension to Eccles through Salford Quays, 4 miles (6.4 km), constructed 1997–99 by the Altram consortium. Funded by the GMPTA, the ERDF and private developers. Length converted from 4 miles. The drawn line from Cornbrook measures 6.3 km.",
+        "ro": "Extindere spre vest până la Eccles prin Salford Quays, 4 mile (6,4 km), construită în 1997–1999 de consorțiul Altram. Finanțată de GMPTA, FEDR și dezvoltatori privați. Lungime convertită din 4 mile. Traseul desenat de la Cornbrook măsoară 6,3 km."
+      },
+      "sourceRefs": [
+        "wikipedia-manchester-metrolink",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-2-eccles"
+    },
+    {
+      "id": "mediacityuk-spur",
+      "name": {
+        "en": "MediaCityUK spur",
+        "ro": "Ramura MediaCityUK"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2010-09-20"
+      },
+      "lengthKm": 0.4,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "New 0.25-mile (0.4 km) spur off the Eccles Line to MediaCityUK, funded separately by the Northwest Regional Development Agency. Length converted from 0.25 miles; the line drawn from the Harbour City junction measures 0.4 km.",
+        "ro": "Ramură nouă de 0,25 mile (0,4 km) de la linia Eccles la MediaCityUK, finanțată separat de Northwest Regional Development Agency. Lungime convertită din 0,25 mile; traseul desenat de la joncțiunea Harbour City măsoară 0,4 km."
+      },
+      "sourceRefs": [
+        "wikipedia-manchester-metrolink",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "mediacityuk-spur"
+    },
+    {
+      "id": "phase-3a-oldham-loop",
+      "name": {
+        "en": "Phase 3a: Victoria – Oldham – Rochdale Railway Station (Oldham Loop conversion)",
+        "ro": "Faza 3a: Victoria – Oldham – Rochdale Railway Station (conversia Oldham Loop)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-02-28"
+      },
+      "lengthKm": 22.7,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2012-06-13",
+          "note": {
+            "en": "Services from Victoria to the temporary Oldham Mumps stop.",
+            "ro": "Servicii de la Victoria până la stația temporară Oldham Mumps."
+          },
+          "sourceRef": "wikipedia-metrolink-timeline"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2012-12-16",
+          "note": {
+            "en": "Services extended from Oldham Mumps to Shaw and Crompton.",
+            "ro": "Servicii extinse de la Oldham Mumps la Shaw and Crompton."
+          },
+          "sourceRef": "wikipedia-metrolink-timeline"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-02-28",
+          "note": {
+            "en": "Extended to Rochdale Railway Station, completing Phase 3a.",
+            "ro": "Extins până la Rochdale Railway Station, încheind faza 3a."
+          },
+          "sourceRef": "wikipedia-metrolink-timeline"
+        }
+      ],
+      "note": {
+        "en": "Conversion of the Oldham Loop heavy-rail line, closed on 3 October 2009, including rebuilt stations and new stops. Drawn as the converted railway from Victoria to Westwood plus Oldham Mumps to Rochdale Railway Station; the Westwood – Oldham Mumps street-running section replaced about 2.4 km of the old railway in Phase 3b and is a separate lot. Length measured from OpenStreetMap geometry (11.1 km + 11.5 km). The temporary Oldham Mumps stop used from 2012 was on the old trackbed, so a short part of the drawn alignment near Oldham differs from the route used until January 2014.",
+        "ro": "Conversia liniei feroviare Oldham Loop, închisă la 3 octombrie 2009, cu stații reconstruite și stopuri noi. Desenată ca fosta cale ferată convertită de la Victoria la Westwood plus Oldham Mumps – Rochdale Railway Station; secțiunea pe stradă Westwood – Oldham Mumps a înlocuit circa 2,4 km din vechea cale ferată în faza 3b și este un lot separat. Lungime măsurată din geometria OpenStreetMap (11,1 km + 11,5 km). Stația temporară Oldham Mumps folosită din 2012 se afla pe vechiul traseu feroviar, deci o parte scurtă din traseul desenat de lângă Oldham diferă de traseul folosit până în ianuarie 2014."
+      },
+      "sourceRefs": [
+        "wikipedia-manchester-metrolink",
+        "wikipedia-metrolink-timeline",
+        "wikipedia-oldham-rochdale-line",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3a-oldham-loop"
+    },
+    {
+      "id": "phase-3a-south-manchester",
+      "name": {
+        "en": "Phase 3a: South Manchester Line (Trafford Bar – St Werburgh’s Road)",
+        "ro": "Faza 3a: linia South Manchester (Trafford Bar – St Werburgh’s Road)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008-10",
+        "opened": "2011-07-07"
+      },
+      "lengthKm": 3,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "First stage of the South Manchester Line on a disused Cheshire Lines Committee railway, 1.8 miles (3 km). Clearance work started in October 2008. The drawn line measures 2.9 km.",
+        "ro": "Prima etapă a liniei South Manchester pe o cale ferată dezafectată a Cheshire Lines Committee, 1,8 mile (3 km). Lucrările de curățare au început în octombrie 2008. Traseul desenat măsoară 2,9 km."
+      },
+      "sourceRefs": [
+        "wikipedia-south-manchester-line",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3a-south-manchester"
+    },
+    {
+      "id": "phase-3a-east-manchester",
+      "name": {
+        "en": "Phase 3a: East Manchester Line (Piccadilly – Droylsden)",
+        "ro": "Faza 3a: linia East Manchester (Piccadilly – Droylsden)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2013-02-11"
+      },
+      "lengthKm": 6.3,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "New line, 3.9 miles (6.3 km). It had a three-day free trial for local residents from 8 February 2013 and opened to the public on 11 February 2013. The drawn line measures 6.3 km.",
+        "ro": "Linie nouă, 3,9 mile (6,3 km). A avut o perioadă de probă gratuită de trei zile pentru localnici din 8 februarie 2013 și a fost deschisă publicului la 11 februarie 2013. Traseul desenat măsoară 6,3 km."
+      },
+      "sourceRefs": [
+        "wikipedia-east-manchester-line",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3a-east-manchester"
+    },
+    {
+      "id": "phase-3b-south-manchester-east-didsbury",
+      "name": {
+        "en": "Phase 3b: South Manchester Line extension (St Werburgh’s Road – East Didsbury)",
+        "ro": "Faza 3b: extinderea liniei South Manchester (St Werburgh’s Road – East Didsbury)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-03",
+        "opened": "2013-05-23"
+      },
+      "lengthKm": 4.4,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 2
+      },
+      "note": {
+        "en": "2.8 miles (4.4 km), opened three months ahead of schedule with five new stops. Construction of all Phase 3b lines began in March 2011. The drawn line measures 4.5 km.",
+        "ro": "2,8 mile (4,4 km), deschisă cu trei luni înainte de termen, cu cinci stopuri noi. Construcția tuturor liniilor din faza 3b a început în martie 2011. Traseul desenat măsoară 4,5 km."
+      },
+      "sourceRefs": [
+        "wikipedia-south-manchester-line",
+        "wikipedia-metrolink-timeline",
+        "wikipedia-manchester-metrolink",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3b-south-manchester-east-didsbury"
+    },
+    {
+      "id": "phase-3b-east-manchester-ashton",
+      "name": {
+        "en": "Phase 3b: East Manchester Line extension (Droylsden – Ashton-under-Lyne)",
+        "ro": "Faza 3b: extinderea liniei East Manchester (Droylsden – Ashton-under-Lyne)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-03",
+        "opened": "2013-10-09"
+      },
+      "lengthKm": 3.4,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "2.1 miles (3.4 km). The drawn line measures 3.8 km, 12% more than the stated length.",
+        "ro": "2,1 mile (3,4 km). Traseul desenat măsoară 3,8 km, cu 12% mai mult decât lungimea indicată."
+      },
+      "sourceRefs": [
+        "wikipedia-east-manchester-line",
+        "wikipedia-metrolink-timeline",
+        "wikipedia-manchester-metrolink",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3b-east-manchester-ashton"
+    },
+    {
+      "id": "phase-3b-oldham-town-centre",
+      "name": {
+        "en": "Phase 3b: Oldham town centre street running (Westwood – Oldham Mumps)",
+        "ro": "Faza 3b: secțiunea pe stradă din centrul Oldham (Westwood – Oldham Mumps)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-03",
+        "opened": "2014-01-27"
+      },
+      "lengthKm": 1.7,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "New street-running section with four stops (Westwood, Oldham King Street, Oldham Central, Oldham Mumps), replacing about 1.5 miles (2.4 km) of the old railway through the former Oldham Mumps station. Length measured from OpenStreetMap geometry.",
+        "ro": "Secțiune nouă pe stradă cu patru stopuri (Westwood, Oldham King Street, Oldham Central, Oldham Mumps), care a înlocuit circa 1,5 mile (2,4 km) din vechea cale ferată prin fosta gară Oldham Mumps. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-oldham-rochdale-line",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3b-oldham-town-centre"
+    },
+    {
+      "id": "phase-3b-rochdale-town-centre",
+      "name": {
+        "en": "Phase 3b: Rochdale town centre street running (Rochdale Railway Station – Rochdale Town Centre)",
+        "ro": "Faza 3b: secțiunea pe stradă din centrul Rochdale (Rochdale Railway Station – Rochdale Town Centre)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-03",
+        "opened": "2014-03-31"
+      },
+      "lengthKm": 0.9,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Street-running section into Rochdale town centre. Length measured from OpenStreetMap geometry.",
+        "ro": "Secțiune pe stradă spre centrul Rochdale. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-metrolink-timeline",
+        "wikipedia-manchester-metrolink",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3b-rochdale-town-centre"
+    },
+    {
+      "id": "phase-3b-airport-line",
+      "name": {
+        "en": "Phase 3b: Airport Line (St Werburgh’s Road – Manchester Airport)",
+        "ro": "Faza 3b: linia Airport (St Werburgh’s Road – Manchester Airport)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-03",
+        "opened": "2014-11-03"
+      },
+      "lengthKm": 14.5,
+      "cost": {
+        "actual": {
+          "amount": 368,
+          "currency": "GBP",
+          "scope": "total",
+          "note": "Cost stated on the Airport Line page; price year not stated."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "New 9-mile (14.5 km) line, opened more than a year early. A 580-tonne steel bridge over the M56 was installed on 25 November 2012. Phase 3b was funded by council tax, government grants, Metrolink fares and contributions from the Manchester Airports Group and others. The drawn line measures 14.5 km.",
+        "ro": "Linie nouă de 9 mile (14,5 km), deschisă cu mai mult de un an înainte de termen. Un pod metalic de 580 de tone peste M56 a fost montat la 25 noiembrie 2012. Faza 3b a fost finanțată din taxa locală, granturi guvernamentale, tarife Metrolink și contribuții ale Manchester Airports Group și ale altora. Traseul desenat măsoară 14,5 km."
+      },
+      "sourceRefs": [
+        "wikipedia-airport-line",
+        "wikipedia-manchester-metrolink",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "phase-3b-airport-line"
+    },
+    {
+      "id": "second-city-crossing",
+      "name": {
+        "en": "Second City Crossing (St Peter’s Square – Exchange Square – Victoria)",
+        "ro": "Second City Crossing (St Peter’s Square – Exchange Square – Victoria)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2014",
+        "opened": "2017-02-26"
+      },
+      "lengthKm": 1.3,
+      "cost": {
+        "actual": {
+          "amount": 165,
+          "currency": "GBP",
+          "year": 2017,
+          "scope": "total"
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2015-12-06",
+          "note": {
+            "en": "First part opened between Victoria and Exchange Square.",
+            "ro": "Prima parte a fost deschisă între Victoria și Exchange Square."
+          },
+          "sourceRef": "wikipedia-metrolink-timeline"
+        },
+        {
+          "kind": "opened",
+          "date": "2017-02-26",
+          "note": {
+            "en": "Fully opened between St Peter’s Square and Victoria.",
+            "ro": "Deschisă complet între St Peter’s Square și Victoria."
+          },
+          "sourceRef": "wikipedia-metrolink-timeline"
+        }
+      ],
+      "note": {
+        "en": "0.8 miles (1.3 km) of new track via Princess Street, Albert Square, Cross Street and Corporation Street, a second route across the city centre. The Wikipedia article gives a cost of £165 million in 2017. Length converted from 0.8 miles; the drawn line measures 1.4 km.",
+        "ro": "0,8 mile (1,3 km) de cale nouă prin Princess Street, Albert Square, Cross Street și Corporation Street, un al doilea traseu prin centrul orașului. Articolul Wikipedia indică un cost de 165 de milioane de lire în 2017. Lungime convertită din 0,8 mile; traseul desenat măsoară 1,4 km."
+      },
+      "sourceRefs": [
+        "wikipedia-manchester-metrolink",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "second-city-crossing"
+    },
+    {
+      "id": "trafford-park-line",
+      "name": {
+        "en": "Trafford Park Line (Pomona – The Trafford Centre)",
+        "ro": "Linia Trafford Park (Pomona – The Trafford Centre)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2017-01",
+        "opened": "2020-03-22"
+      },
+      "lengthKm": 5.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "stationCount": 6
+      },
+      "note": {
+        "en": "3.4 miles (5.5 km) with six stops. The Transport and Works Act Order was granted in October 2016 and construction began in January 2017. The funding envelope was £350 million, mostly from the government, with £20 million from Trafford Council. This is a funding envelope, not an outturn cost. The drawn line measures 5.5 km.",
+        "ro": "3,4 mile (5,5 km), cu șase stopuri. Ordinul Transport and Works Act a fost emis în octombrie 2016, iar construcția a început în ianuarie 2017. Pachetul de finanțare a fost de 350 de milioane de lire, în mare parte de la guvern, cu 20 de milioane de la Trafford Council. Este un plafon de finanțare, nu un cost final. Traseul desenat măsoară 5,5 km."
+      },
+      "sourceRefs": [
+        "wikipedia-trafford-park-line",
+        "wikipedia-manchester-metrolink",
+        "wikipedia-metrolink-timeline",
+        "osm-metrolink-geometry"
+      ],
+      "geometryRef": "trafford-park-line"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-manchester-metrolink",
+      "title": "Wikipedia: Manchester Metrolink",
+      "url": "https://en.wikipedia.org/wiki/Manchester_Metrolink",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-metrolink-timeline",
+      "title": "Wikipedia: Timeline of Manchester Metrolink",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_Manchester_Metrolink",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-airport-line",
+      "title": "Wikipedia: Airport Line (Manchester Metrolink)",
+      "url": "https://en.wikipedia.org/wiki/Airport_Line_(Manchester_Metrolink)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-south-manchester-line",
+      "title": "Wikipedia: South Manchester Line",
+      "url": "https://en.wikipedia.org/wiki/South_Manchester_Line",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-east-manchester-line",
+      "title": "Wikipedia: East Manchester Line",
+      "url": "https://en.wikipedia.org/wiki/East_Manchester_Line",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-oldham-rochdale-line",
+      "title": "Wikipedia: Oldham and Rochdale Line",
+      "url": "https://en.wikipedia.org/wiki/Oldham_and_Rochdale_Line",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-trafford-park-line",
+      "title": "Wikipedia: Trafford Park Line",
+      "url": "https://en.wikipedia.org/wiki/Trafford_Park_Line",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-metrolink-geometry",
+      "title": "OpenStreetMap contributors: Metrolink tram and light rail ways (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
