@@ -1,0 +1,104 @@
+{
+  "id": "tr-eurasia-tunnel",
+  "country": "tr",
+  "category": "tunnel",
+  "operator": "tr-atas",
+  "name": {
+    "en": "Eurasia Tunnel",
+    "ro": "Tunelul Eurasia"
+  },
+  "description": {
+    "en": "Double-deck road tunnel under the Bosphorus in Istanbul, linking Kumkapı on the European side with Koşuyolu (Kadıköy) on the Asian side. Built and operated by ATAŞ under a build-operate-transfer concession.",
+    "ro": "Tunel rutier cu două niveluri sub Bosfor, la Istanbul, între Kumkapı pe malul european și Koșuyolu (Kadıköy) pe malul asiatic. Construit și exploatat de ATAŞ în regim de concesiune construire-exploatare-transfer."
+  },
+  "lots": [
+    {
+      "id": "eurasia-tunnel",
+      "name": {
+        "en": "Eurasia Tunnel",
+        "ro": "Tunelul Eurasia"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2011-02-26",
+        "opened": "2016-12-22"
+      },
+      "lengthKm": 5.4,
+      "profile": {
+        "tunnelKm": 5.4,
+        "tolled": true,
+        "lanes": 4
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Total financing USD 1,245 million: USD 285 million equity and USD 960 million loans. The Treasury is guarantor. Financing is not recorded as a construction cost.",
+            "ro": "Finanțare totală de 1.245 milioane USD: 285 milioane USD capital propriu și 960 milioane USD credite. Garant este Trezoreria. Finanțarea nu este înregistrată drept cost de construcție."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ATAŞ (Yapı Merkezi, SK ecoplant)",
+          "role": "concessionaire"
+        },
+        {
+          "name": "SK ecoplant",
+          "role": "builder"
+        },
+        {
+          "name": "Parsons Brinckerhoff",
+          "role": "designer"
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2011-02-26",
+          "sourceRef": "wikipedia-eurasia-tunnel"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-22",
+          "note": {
+            "en": "Official ceremony on 20 December 2016; open to traffic on 22 December 2016.",
+            "ro": "Ceremonie oficială la 20 decembrie 2016; deschis traficului la 22 decembrie 2016."
+          },
+          "sourceRef": "wikipedia-eurasia-tunnel"
+        }
+      ],
+      "note": {
+        "en": "The 5.4 km is the tunnel as listed by Wikipedia; the route including approach roads is 14.6 km and the bored (TBM) section under the strait is 3.4 km, the rest being NATM and cut-and-cover. The page of the concession company gives a contract term of 28 years 7 months 22 days (investment 3 years 11 months 3 days, operation 24 years 8 months 19 days); Wikipedia states 29 years. The contracting authority is AYGM of the Ministry of Transport and Infrastructure. Drawn geometry covers the underground carriageway in OpenStreetMap (about 5.0 km).",
+        "ro": "Cei 5,4 km reprezintă tunelul conform Wikipedia; traseul cu drumurile de acces are 14,6 km, iar secțiunea forată (TBM) sub strâmtoare are 3,4 km, restul fiind NATM și excavație deschisă. Pagina companiei concesionare indică o durată a contractului de 28 de ani, 7 luni și 22 de zile (investiție 3 ani, 11 luni și 3 zile, exploatare 24 de ani, 8 luni și 19 zile); Wikipedia indică 29 de ani. Autoritatea contractantă este AYGM din cadrul Ministerului Transporturilor și Infrastructurii. Geometria desenată acoperă carosabilul subteran din OpenStreetMap (circa 5,0 km)."
+      },
+      "sourceRefs": [
+        "avrasya-tuneli-kunye",
+        "wikipedia-eurasia-tunnel",
+        "osm-eurasia-tunnel"
+      ],
+      "geometryRef": "eurasia-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "avrasya-tuneli-kunye",
+      "title": "Avrasya Tüneli: Projenin Künyesi",
+      "url": "https://www.avrasyatuneli.com/kurumsal/ne/projenin-kunyesi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-eurasia-tunnel",
+      "title": "Wikipedia: Eurasia Tunnel",
+      "url": "https://en.wikipedia.org/wiki/Eurasia_Tunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-eurasia-tunnel",
+      "title": "OpenStreetMap contributors (ODbL): Avrasya Tüneli ways 332219146, 405767351",
+      "url": "https://www.openstreetmap.org/way/332219146",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

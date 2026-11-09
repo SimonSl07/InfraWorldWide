@@ -1,0 +1,148 @@
+{
+  "id": "tr-halkali-kapikule-rail",
+  "country": "tr",
+  "category": "railway",
+  "name": {
+    "en": "Halkalı–Kapıkule high-standard railway",
+    "ro": "Calea ferată de standard înalt Halkalı–Kapıkule"
+  },
+  "description": {
+    "en": "Double-track electrified line for 200 km/h mixed passenger and freight traffic from Halkalı, the Marmaray terminus in Istanbul, to Kapıkule on the Bulgarian border near Edirne, about 229 km in total. The Çerkezköy–Kapıkule section (153 km) opened on 9 October 2026; Halkalı–Ispartakule and Ispartakule–Çerkezköy are under construction with an official target of 2028. At Kapıkule the line meets the Bulgarian network at Svilengrad. The Marmaray tunnel is not part of this file.",
+    "ro": "Linie electrificată cu dublă cale pentru trenuri mixte de călători și marfă, cu viteza de 200 km/h, de la Halkalı, terminusul Marmaray din Istanbul, până la Kapıkule, la frontiera cu Bulgaria, lângă Edirne, în total circa 229 km. Secțiunea Çerkezköy–Kapıkule (153 km) a fost deschisă la 9 octombrie 2026; Halkalı–Ispartakule și Ispartakule–Çerkezköy sunt în construcție, cu termen oficial 2028. La Kapıkule linia se leagă de rețeaua bulgară la Svilengrad. Tunelul Marmaray nu face parte din acest fișier."
+  },
+  "operator": "tr-uab-aygm",
+  "lots": [
+    {
+      "id": "halkali-ispartakule",
+      "name": {
+        "en": "Halkalı – Ispartakule",
+        "ro": "Halkalı – Ispartakule"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023-07-12",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 8.4,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "Length of 8.4 km as listed on Vikipedi; the drawn line is 8.3 km. The minister said in October 2026 that work continues on the section linking Ispartakule to Halkalı. The 2028 target is the Halkalı–Çerkezköy completion date stated by the ministry in November 2025. The construction start of 12 July 2023 is given on Vikipedi for the whole Halkalı–Çerkezköy part (76 km). The OpenStreetMap line stops about 1 km short of Halkalı station.",
+        "ro": "Lungimea de 8,4 km provine din Vikipedi; linia desenată are 8,3 km. Ministrul a spus în octombrie 2026 că lucrările continuă pe secțiunea care leagă Ispartakule de Halkalı. Ținta 2028 este data de finalizare Halkalı–Çerkezköy indicată de minister în noiembrie 2025. Începerea lucrărilor la 12 iulie 2023 este dată de Vikipedi pentru întreaga parte Halkalı–Çerkezköy (76 km). Linia din OpenStreetMap se oprește cu circa 1 km înainte de gara Halkalı."
+      },
+      "sourceRefs": [
+        "wikipedia-tr-istanbul-kapikule",
+        "trt-cerkezkoy-kapikule-opening",
+        "uab-2171-proje-2025-11",
+        "osm-halkali-kapikule"
+      ],
+      "geometryRef": "halkali-ispartakule"
+    },
+    {
+      "id": "ispartakule-cerkezkoy",
+      "name": {
+        "en": "Ispartakule – Çerkezköy",
+        "ro": "Ispartakule – Çerkezköy"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023-07-12",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 67,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true
+      },
+      "note": {
+        "en": "AYGM describes a new double-track electrified line of 67 km from Ispartakule to a point beside Çerkezköy station, for passenger and freight trains, plus changes at 2 existing stations. The minister said in October 2026 that construction continues. The drawn line is 68.7 km, with about 14 km in two gaps unmapped in OpenStreetMap joined by straight lines. The 2028 target is the ministry's November 2025 figure; the 12 July 2023 start is given on Vikipedi for Halkalı–Çerkezköy as a whole. AYGM gives no cost.",
+        "ro": "AYGM descrie o linie nouă electrificată cu dublă cale de 67 km de la Ispartakule până lângă gara Çerkezköy, pentru trenuri de călători și de marfă, plus modificări la 2 gări existente. Ministrul a spus în octombrie 2026 că lucrările continuă. Linia desenată are 68,7 km, cu circa 14 km în două goluri nemapate în OpenStreetMap, unite prin linii drepte. Ținta 2028 este cea a ministerului din noiembrie 2025; startul din 12 iulie 2023 este dat de Vikipedi pentru Halkalı–Çerkezköy în ansamblu. AYGM nu indică niciun cost."
+      },
+      "sourceRefs": [
+        "aygm-ispartakule-cerkezkoy",
+        "trt-cerkezkoy-kapikule-opening",
+        "uab-2171-proje-2025-11",
+        "wikipedia-tr-istanbul-kapikule",
+        "osm-halkali-kapikule"
+      ],
+      "geometryRef": "ispartakule-cerkezkoy"
+    },
+    {
+      "id": "cerkezkoy-kapikule",
+      "name": {
+        "en": "Çerkezköy – Kapıkule",
+        "ro": "Çerkezköy – Kapıkule"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2019-09-25",
+        "opened": "2026-10-09"
+      },
+      "lengthKm": 153,
+      "profile": {
+        "tracks": 2,
+        "electrified": true,
+        "maxSpeedKmh": 200
+      },
+      "note": {
+        "en": "Opened on 9 October 2026 at a ceremony in Babaeski; the minister gave the length as 153 km, double track, electrified, Level 1 signalling, 200 km/h, with 31 bridges, 8 cut-and-cover tunnels, 2 viaducts, 114 underpasses and overpasses and 175 culverts. New station buildings at Babaeski, Lüleburgaz and Büyükkarıştıran, rebuilt Kapıkule and Edirne stations, and about 2.4 km of the approach to the Bulgarian border made double track. The construction start of 25 September 2019 is given on Vikipedi, which also describes EU grant co-funding. Contract value and contractor are not stated on any page read for this file. The drawn line is 150.8 km and stops about 1.7 km short of Kapıkule station.",
+        "ro": "Deschisă la 9 octombrie 2026 într-o ceremonie la Babaeski; ministrul a indicat 153 km, dublă cale, electrificată, semnalizare de nivel 1, 200 km/h, cu 31 de poduri, 8 tunele deschise, 2 viaducte, 114 pasaje și 175 de podețe. Clădiri noi de gară la Babaeski, Lüleburgaz și Büyükkarıştıran, gări Kapıkule și Edirne reconstruite și circa 2,4 km de apropiere de frontiera bulgară făcuți cu dublă cale. Începerea lucrărilor la 25 septembrie 2019 este dată de Vikipedi, care menționează și cofinanțarea prin granturi UE. Valoarea contractului și constructorul nu apar în nicio pagină citită pentru acest fișier. Linia desenată are 150,8 km și se oprește cu circa 1,7 km înainte de gara Kapıkule."
+      },
+      "sourceRefs": [
+        "ntv-cerkezkoy-kapikule-opened",
+        "trt-cerkezkoy-kapikule-opening",
+        "wikipedia-tr-istanbul-kapikule",
+        "osm-halkali-kapikule"
+      ],
+      "geometryRef": "cerkezkoy-kapikule"
+    }
+  ],
+  "sources": [
+    {
+      "id": "aygm-ispartakule-cerkezkoy",
+      "title": "AYGM: Ispartakule-Çerkezköy Demiryolu Hattı Projesi",
+      "url": "https://aygm.uab.gov.tr/ispartakule-cerkezkoy-demiryolu-hatti-projesi",
+      "publisher": "T.C. Ulaştırma ve Altyapı Bakanlığı, AYGM",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ntv-cerkezkoy-kapikule-opened",
+      "title": "NTV: Çerkezköy-Kapıkule Hızlı Tren Hattı açıldı, ilk sürüşü Cumhurbaşkanı Erdoğan yaptı (2026-10-09)",
+      "url": "https://www.ntv.com.tr/gundem/galeri-cerkezkoy-kapikule-hizli-tren-hatti-acildi-ilk-surusu-cumhurbaskani-erdogan-yapti-1745571",
+      "publisher": "NTV",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "trt-cerkezkoy-kapikule-opening",
+      "title": "TRT Haber: Halkalı-Kapıkule Hızlı Tren Hattı'nın Çerkezköy-Kapıkule kesimi açılıyor (AA)",
+      "url": "https://www.trthaber.com/haber/ekonomi/halkali-kapikule-hizli-tren-hattinin-cerkezkoy-kapikule-kesimi-aciliyor-959067.html",
+      "publisher": "TRT Haber",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "uab-2171-proje-2025-11",
+      "title": "UAB: 2 Bin 171 Proje, Toplam 5,2 Trilyon Lira Yatırım (2025-11-19)",
+      "url": "https://www.uab.gov.tr/haberler/2-bin-171-proje-toplam-5-2-trilyon-lira-yatirim",
+      "publisher": "T.C. Ulaştırma ve Altyapı Bakanlığı",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-tr-istanbul-kapikule",
+      "title": "Vikipedi: İstanbul-Kapıkule yüksek standartlı demiryolu",
+      "url": "https://tr.wikipedia.org/wiki/%C4%B0stanbul-Kap%C4%B1kule_y%C3%BCksek_standartl%C4%B1_demiryolu",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-halkali-kapikule",
+      "title": "OpenStreetMap contributors: İstanbul-Kapıkule yüksek standartlı demiryolu (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

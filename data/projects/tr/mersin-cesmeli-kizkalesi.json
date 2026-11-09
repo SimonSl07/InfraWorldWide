@@ -1,0 +1,120 @@
+{
+  "id": "tr-mersin-cesmeli-kizkalesi",
+  "country": "tr",
+  "category": "highway",
+  "name": {
+    "en": "Mersin Çeşmeli–Kızkalesi Motorway",
+    "ro": "Autostrada Mersin Çeşmeli–Kızkalesi"
+  },
+  "description": {
+    "en": "First section of the planned Mersin (Çeşmeli)–Erdemli–Silifke–Taşucu motorway. It leaves the existing Mersin–Adana–Gaziantep motorway at the Çeşmeli junction and runs west north of Erdemli and Kızkalesi, parallel to the D400 coast road, ending at the Kızkalesi junction. The General Directorate of Highways (KGM) gives 52 km in total: a 41 km 2x3-lane main line and 11 km of connector roads. It is a build-operate-transfer project; the contract was signed on 22 December 2021 and financial close followed on 1 August 2025. Traffic opened on 19 October 2026, with the official ceremony still to come. Only the main line is drawn here. Later sections towards Silifke and Taşucu are not mapped in this file.",
+    "ro": "Primul sector al autostrăzii planificate Mersin (Çeşmeli)–Erdemli–Silifke–Taşucu. Pornește de la autostrada existentă Mersin–Adana–Gaziantep, la nodul Çeşmeli, și merge spre vest, la nord de Erdemli și Kızkalesi, paralel cu șoseaua de coastă D400, până la nodul Kızkalesi. Direcția Generală a Drumurilor (KGM) indică 52 km în total: 41 km de traseu principal cu 2x3 benzi și 11 km de drumuri de legătură. Este un proiect de tip construiește–exploatează–transferă; contractul a fost semnat la 22 decembrie 2021, iar închiderea financiară a avut loc la 1 august 2025. Circulația a fost deschisă la 19 octombrie 2026, ceremonia oficială fiind încă așteptată. Aici este desenat doar traseul principal. Sectoarele următoare spre Silifke și Taşucu nu sunt cartografiate în acest fișier."
+  },
+  "operator": "tr-kgm",
+  "lots": [
+    {
+      "id": "cesmeli-kizkalesi",
+      "name": {
+        "en": "Çeşmeli – Kızkalesi",
+        "ro": "Çeşmeli – Kızkalesi"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2021-12-22",
+        "opened": "2026-10-19"
+      },
+      "lengthKm": 41,
+      "cost": {
+        "estimated": {
+          "amount": 1263,
+          "currency": "EUR",
+          "year": 2025,
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Investment cost stated by the Minister of Transport at financial close for the whole 52 km section, main line and connectors."
+        }
+      },
+      "profile": {
+        "tunnelKm": 10.116,
+        "viaductKm": 1.633,
+        "bridgeCount": 9,
+        "lanes": 6,
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-12-22",
+          "note": {
+            "en": "Contract for the Çeşmeli–Kızkalesi section signed. Financial close followed on 2025-08-01.",
+            "ro": "Contractul pentru sectorul Çeşmeli–Kızkalesi a fost semnat. Închiderea financiară a urmat la 1 august 2025."
+          },
+          "sourceRef": "kgm-faaliyet-raporu-2025"
+        },
+        {
+          "kind": "opened",
+          "date": "2026-10-19",
+          "note": {
+            "en": "Reported open to vehicle traffic on 19 October 2026.",
+            "ro": "Raportat ca deschis circulației rutiere la 19 octombrie 2026."
+          },
+          "sourceRef": "cnbce-opening-2026"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build-operate-transfer. At financial close the Minister of Transport stated about EUR 379 million (30%) equity and EUR 884 million (70%) in bank loans from eight institutions, with no public funds during construction.",
+            "ro": "Construiește–exploatează–transferă. La închiderea financiară, ministrul transporturilor a indicat circa 379 de milioane EUR (30%) capital propriu și 884 de milioane EUR (70%) credite bancare de la opt instituții, fără fonduri publice în timpul construcției."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Kolin İnşaat"
+        },
+        {
+          "name": "Koloğlu Holding"
+        }
+      ],
+      "note": {
+        "en": "lengthKm is the 41 km main line stated by KGM; the 11 km of connector roads are not counted (52 km in total). Drawn main line is about 39.9 km from OpenStreetMap, which also tags it ref O-51. KGM lists 6 junctions, 7 tunnels totalling 10,116 m, 5 viaducts totalling 1,633 m and 9 bridges; a press report of the financial close gives the viaducts as 1,647 m and another opening report counts 10 junctions. Kolin İnşaat and Koloğlu Holding are named as the companies carrying out the loan arrangements at financial close; their exact role is not stated in the sources. The source gives no construction start date, and OpenStreetMap still tags most of the road as under construction.",
+        "ro": "lengthKm este traseul principal de 41 km indicat de KGM; cei 11 km de drumuri de legătură nu sunt incluși (52 km în total). Traseul principal desenat are circa 39,9 km după OpenStreetMap, care îl etichetează cu ref O-51. KGM indică 6 noduri, 7 tuneluri însumând 10.116 m, 5 viaducte însumând 1.633 m și 9 poduri; o știre despre închiderea financiară dă viaductele la 1.647 m, iar altă știre despre deschidere numără 10 noduri. Kolin İnşaat și Koloğlu Holding sunt numite ca firmele care au dus negocierile pentru credite la închiderea financiară; rolul lor exact nu este precizat în surse. Sursele nu indică data începerii lucrărilor, iar OpenStreetMap încă marchează cea mai mare parte a drumului ca fiind în construcție."
+      },
+      "sourceRefs": [
+        "kgm-faaliyet-raporu-2025",
+        "haberler-financial-close-2025",
+        "cnbce-opening-2026",
+        "osm-contributors"
+      ],
+      "geometryRef": "cesmeli-kizkalesi"
+    }
+  ],
+  "sources": [
+    {
+      "id": "kgm-faaliyet-raporu-2025",
+      "title": "Karayolları Genel Müdürlüğü: 2025 Faaliyet Raporu (Çeşmeli–Kızkalesi Otoyolu: 41 km + 11 km, contract 22.12.2021, financial close 01.08.2025)",
+      "url": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/MerkezBirimler/Kurumsal/FaaliyetRaporu/2025Faaliyet.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "haberler-financial-close-2025",
+      "title": "haberler.com: Bakan Uraloğlu, Çeşmeli-Kızkalesi Otoyolu Projesi'nin Finansal Kapanış Töreni'nde konuştu (2025-08-01; investment cost 1 milyar 263 milyon avro)",
+      "url": "https://www.haberler.com/guncel/bakan-uraloglu-cesmeli-kizkalesi-otoyolu-projesi-18905230-haberi/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "cnbce-opening-2026",
+      "title": "CNBC-e: Mersin'de 52 kilometrelik otoyol açıldı (2026-10-19; Çeşmeli-Kızkalesi kesimi araç trafiğine açıldı)",
+      "url": "https://www.cnbce.com/haberler/mersinde-52-kilometrelik-otoyol-acildi-25-saatlik-yol-18-dakikaya-dusuyor-g39773",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

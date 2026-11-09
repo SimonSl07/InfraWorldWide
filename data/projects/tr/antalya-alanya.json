@@ -1,0 +1,99 @@
+{
+  "id": "tr-antalya-alanya",
+  "country": "tr",
+  "category": "highway",
+  "name": {
+    "en": "Antalya–Alanya Motorway",
+    "ro": "Autostrada Antalya–Alanya"
+  },
+  "description": {
+    "en": "Build-operate-transfer motorway along the Mediterranean coast east of Antalya, from the Serik junction through the Serik and Manavgat districts to the western junction at Konaklı. The General Directorate of Highways gives 122 km in total: 84 km of 2x3-lane motorway and 38 km of 2x2-lane connecting roads. The BOT tender was held on 15 December 2023, the implementation agreement was signed on 14 October 2024 and took effect on 6 October 2025, and the groundbreaking ceremony was held on 25 July 2025. The financing agreement was signed in Ankara on 6 October 2025. The target opening is 2028. The construction start date is that of the groundbreaking ceremony. The geometry follows the mapped main carriageway only, not the connecting roads.",
+    "ro": "Autostradă în regim construire-operare-transfer (BOT) pe coasta mediteraneană la est de Antalya, de la nodul Serik, prin districtele Serik și Manavgat, până la nodul vestic de la Konaklı. Direcția Generală a Drumurilor dă 122 km în total: 84 km de autostradă cu 2x3 benzi și 38 km de drumuri de legătură cu 2x2 benzi. Licitația BOT a avut loc la 15 decembrie 2023, contractul de implementare a fost semnat la 14 octombrie 2024 și a intrat în vigoare la 6 octombrie 2025, iar ceremonia de punere a pietrei de temelie a fost la 25 iulie 2025. Acordul de finanțare a fost semnat la Ankara la 6 octombrie 2025. Deschiderea țintă este 2028. Data începerii lucrărilor este cea a ceremoniei de punere a pietrei de temelie. Geometria urmărește doar carosabilul principal cartografiat, nu drumurile de legătură."
+  },
+  "operator": "tr-kgm",
+  "lots": [
+    {
+      "id": "serik-konakli",
+      "name": {
+        "en": "Serik – Konaklı West",
+        "ro": "Serik – Konaklı Vest"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2025-07-25",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 84,
+      "funding": [
+        {
+          "source": "ppp",
+          "coFinancingRate": 0.7,
+          "amount": {
+            "amount": 1700,
+            "currency": "EUR",
+            "scope": "programme",
+            "confidence": "reported"
+          },
+          "detail": {
+            "en": "Financing of the whole project: EUR 1.7 billion of sustainability-linked loans (70%) from 14 banks and financial institutions, with 30% equity, against a total investment value of EUR 2.43 billion. Loan maturity 14 years.",
+            "ro": "Finanțarea întregului proiect: 1,7 miliarde EUR credite legate de sustenabilitate (70%) de la 14 bănci și instituții financiare, cu 30% capital propriu, față de o valoare totală a investiției de 2,43 miliarde EUR. Scadența creditului este de 14 ani."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length is the 84 km 2x3-lane main line stated by the General Directorate of Highways; the 38 km of 2x2-lane connecting roads in its 122 km total are not included. The route starts at the Serik junction and ends at the western junction north of Konaklı. The drawn mapped main carriageway measures about 80.2 km to the Konaklı junction, and the mapped route continues a further 6.5 km to the Alanya junction. Concessionaire and builder are not named in the sources cited here.",
+        "ro": "Lungimea este de 84 km, carosabilul principal cu 2x3 benzi, indicată de Direcția Generală a Drumurilor; cei 38 km de drumuri de legătură cu 2x2 benzi din totalul de 122 km nu sunt incluși. Traseul pornește de la nodul Serik și se termină la nodul vestic la nord de Konaklı. Carosabilul principal cartografiat măsoară circa 80,2 km până la nodul Konaklı, iar traseul cartografiat continuă încă 6,5 km până la nodul Alanya. Concesionarul și constructorul nu sunt numiți în sursele citate aici."
+      },
+      "sourceRefs": [
+        "kgm-faaliyet-2025",
+        "invest-financing",
+        "dailysabah-loan",
+        "osm-way-1463084180"
+      ],
+      "geometryRef": "serik-konakli"
+    }
+  ],
+  "cost": {
+    "amount": 2430,
+    "currency": "EUR",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Total investment value of the whole project as stated by the Minister of Transport and Infrastructure at the financial close; no price year given."
+  },
+  "sources": [
+    {
+      "id": "kgm-faaliyet-2025",
+      "title": "KGM 2025 Faaliyet Raporu (activity report), Antalya – Alanya Otoyolu Projesi, pp. 128–129: \"84 km 2x3 şeritli otoyol ve 38 km 2x2 şeritli bağlantı yolu olmak üzere toplam 122 km\"; \"15.12.2023 tarihinde gerçekleştirilmiştir. İşe ait Uygulama Sözleşmesi 14.10.2024 tarihinde imzalanmış olup 06.10.2025 tarihinde yürürlüğe girmiştir. 25.07.2025 tarihinde temel atma töreni\"; \"2028 yılında tamamlanarak trafiğe açılması hedeflenmektedir\"",
+      "url": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/MerkezBirimler/Kurumsal/FaaliyetRaporu/2025Faaliyet.pdf",
+      "publisher": "Karayolları Genel Müdürlüğü",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "invest-financing",
+      "title": "Invest in Türkiye: EUR 1.7 Billion Investment Secured for the Antalya–Alanya Motorway (\"total investment value of EUR 2.43 billion ... 30 percent equity and 70 percent debt, amounting to EUR 1.7 billion\")",
+      "url": "https://www.invest.gov.tr/en/news/news-from-turkey/pages/eur-1-7-billion-investment-secured-antalya-alanya-motorway.aspx",
+      "publisher": "Investment Office of the Presidency of the Republic of Türkiye",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "dailysabah-loan",
+      "title": "Daily Sabah: Highway project linking tourism hubs Antalya, Alanya gets $2B loan (14 banks and financial institutions, 14-year maturity, signed in Ankara)",
+      "url": "https://www.dailysabah.com/business/transportation/highway-project-linking-tourism-hubs-antalya-alanya-gets-2b-loan/amp",
+      "publisher": "Daily Sabah",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-way-1463084180",
+      "title": "OpenStreetMap: Antalya - Alanya Otoyolu construction ways (e.g. way 1463084180), ODbL",
+      "url": "https://www.openstreetmap.org/way/1463084180",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

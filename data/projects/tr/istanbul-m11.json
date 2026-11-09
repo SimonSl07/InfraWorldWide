@@ -1,0 +1,176 @@
+{
+  "id": "tr-istanbul-m11",
+  "country": "tr",
+  "city": "tr-istanbul",
+  "category": "railway",
+  "name": {
+    "en": "Istanbul M11 Metro (Gayrettepe – Istanbul Airport – Halkalı)",
+    "ro": "Metroul M11 din Istanbul (Gayrettepe – Aeroportul Istanbul – Halkalı)"
+  },
+  "description": {
+    "en": "Underground metro line of about 69 km and 16 stations from Gayrettepe through Istanbul Airport to Halkalı, built by the Ministry of Transport and Infrastructure (AYGM) and operated by TCDD Taşımacılık. It was tendered in two stages: Gayrettepe–Kargo Terminali (37.5 km, contract signed 7 December 2016, about €1 billion) and Kargo Terminali–Halkalı (31.5 km, contract signed 7 March 2018, TRY 4.3 billion). Sections opened on 22 January 2023, 29 January 2024, 19 March 2024 and 20 June 2026.",
+    "ro": "Linie de metrou subteran de circa 69 km, cu 16 stații, de la Gayrettepe prin Aeroportul Istanbul până la Halkalı, construită de Ministerul Transporturilor și Infrastructurii (AYGM) și operată de TCDD Taşımacılık. A fost licitată în două etape: Gayrettepe–Kargo Terminali (37,5 km, contract semnat la 7 decembrie 2016, circa 1 miliard de euro) și Kargo Terminali–Halkalı (31,5 km, contract semnat la 7 martie 2018, 4,3 miliarde de lire turcești). Secțiunile au fost deschise la 22 ianuarie 2023, 29 ianuarie 2024, 19 martie 2024 și 20 iunie 2026."
+  },
+  "operator": "tr-uab-aygm",
+  "stationCount": 16,
+  "lots": [
+    {
+      "id": "gayrettepe-kagithane",
+      "name": {
+        "en": "Gayrettepe – Kâğıthane",
+        "ro": "Gayrettepe – Kâğıthane"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-12-07",
+        "opened": "2024-01-29"
+      },
+      "lengthKm": 3.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "contractors": [
+        {
+          "name": "Kolin – Şenbay",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Part of the first tender stage (Gayrettepe–Kargo Terminali, about €1 billion, signed 7 December 2016), which is one figure for 37.5 km and is not split here. The section opened on 29 January 2024, after Kâğıthane–Kargo Terminali. Drawn length from OpenStreetMap is 3.3 km.",
+        "ro": "Face parte din prima etapă licitată (Gayrettepe–Kargo Terminali, circa 1 miliard de euro, semnat la 7 decembrie 2016), o valoare unică pentru 37,5 km, care nu este împărțită aici. Secțiunea a fost deschisă la 29 ianuarie 2024, după Kâğıthane–Kargo Terminali. Lungimea desenată din OpenStreetMap este de 3,3 km."
+      },
+      "sourceRefs": [
+        "wikipedia-tr-m11",
+        "wikipedia-en-m11",
+        "ntv-m11-opening-2026",
+        "osm-m11"
+      ],
+      "geometryRef": "gayrettepe-kagithane"
+    },
+    {
+      "id": "kagithane-kargo-terminali",
+      "name": {
+        "en": "Kâğıthane – Istanbul Airport – Kargo Terminali",
+        "ro": "Kâğıthane – Aeroportul Istanbul – Kargo Terminali"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2016-12-07",
+        "opened": "2023-01-22"
+      },
+      "lengthKm": 34,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "contractors": [
+        {
+          "name": "Kolin – Şenbay",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "AYGM reports the Kâğıthane–Istanbul Airport line as opened with a ceremony attended by the President; Turkish Wikipedia gives 22 January 2023 as the opening date and 34.0 km to Kargo Terminali, the station beyond Istanbul Airport. Part of the first tender stage (about €1 billion for 37.5 km), not split here. Drawn length from OpenStreetMap is 32.5 km, with a 5.4 km straight stretch where the route relation has no way between İhsaniye and Istanbul Airport; the sourced figure is kept.",
+        "ro": "AYGM raportează linia Kâğıthane–Aeroportul Istanbul ca deschisă printr-o ceremonie cu participarea președintelui; Wikipedia în turcă indică 22 ianuarie 2023 ca dată a deschiderii și 34,0 km până la Kargo Terminali, stația de dincolo de Aeroportul Istanbul. Face parte din prima etapă licitată (circa 1 miliard de euro pentru 37,5 km), care nu este împărțită aici. Lungimea desenată din OpenStreetMap este de 32,5 km, cu un tronson drept de 5,4 km acolo unde relația traseului nu are nicio cale între İhsaniye și Aeroportul Istanbul; cifra din sursă este păstrată."
+      },
+      "sourceRefs": [
+        "aygm-kagithane-airport",
+        "wikipedia-tr-m11",
+        "wikipedia-en-m11",
+        "ntv-m11-opening-2026",
+        "osm-m11"
+      ],
+      "geometryRef": "kagithane-kargo-terminali"
+    },
+    {
+      "id": "kargo-terminali-arnavutkoy-hastane",
+      "name": {
+        "en": "Kargo Terminali – Arnavutköy Hastane",
+        "ro": "Kargo Terminali – Arnavutköy Hastane"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-03-07",
+        "opened": "2024-03-19"
+      },
+      "lengthKm": 10,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "Opened on 19 March 2024. Railway Gazette, quoted by English Wikipedia, gives the extension as 10 km; Turkish Wikipedia's table gives 14.0 km, which does not fit the 47 km Gayrettepe–Arnavutköy total in the President's speech. Drawn length from OpenStreetMap is 10.7 km, through Taşoluk station. Part of the second tender stage (Kargo Terminali–Halkalı, TRY 4.3 billion, signed 7 March 2018), not split here.",
+        "ro": "Deschisă la 19 martie 2024. Railway Gazette, citată de Wikipedia în engleză, indică extinderea ca 10 km; tabelul din Wikipedia în turcă indică 14,0 km, ceea ce nu se potrivește cu totalul de 47 km Gayrettepe–Arnavutköy din discursul președintelui. Lungimea desenată din OpenStreetMap este de 10,7 km, prin stația Taşoluk. Face parte din a doua etapă licitată (Kargo Terminali–Halkalı, 4,3 miliarde de lire turcești, semnat la 7 martie 2018), care nu este împărțită aici."
+      },
+      "sourceRefs": [
+        "wikipedia-en-m11",
+        "wikipedia-tr-m11",
+        "ntv-m11-opening-2026",
+        "osm-m11"
+      ],
+      "geometryRef": "kargo-terminali-arnavutkoy-hastane"
+    },
+    {
+      "id": "arnavutkoy-hastane-halkali",
+      "name": {
+        "en": "Arnavutköy Hastane – Halkalı",
+        "ro": "Arnavutköy Hastane – Halkalı"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-03-07",
+        "opened": "2026-06-20"
+      },
+      "lengthKm": 22,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2
+      },
+      "note": {
+        "en": "The opening ceremony was held on 19 June 2026 with the President; passenger service began on 20 June 2026, free until 31 July 2026. The President described the Halkalı–Arnavutköy section as 22 km with five new stations (İbn Haldun Üniversitesi, Kayaşehir, Olimpiyatköy, Halkalı Stadı, Halkalı); Turkish Wikipedia gives 17.5 km. Drawn length from OpenStreetMap is 21.8 km. Part of the second tender stage (TRY 4.3 billion, signed 7 March 2018), not split here. Halkalı meets Marmaray with no shared track.",
+        "ro": "Ceremonia de deschidere a avut loc la 19 iunie 2026, cu președintele; serviciul de pasageri a început la 20 iunie 2026, gratuit până la 31 iulie 2026. Președintele a descris secțiunea Halkalı–Arnavutköy ca având 22 km și cinci stații noi (İbn Haldun Üniversitesi, Kayaşehir, Olimpiyatköy, Halkalı Stadı, Halkalı); Wikipedia în turcă indică 17,5 km. Lungimea desenată din OpenStreetMap este de 21,8 km. Face parte din a doua etapă licitată (4,3 miliarde de lire turcești, semnat la 7 martie 2018), care nu este împărțită aici. Halkalı se întâlnește cu Marmaray, fără cale comună."
+      },
+      "sourceRefs": [
+        "ntv-m11-opening-2026",
+        "wikipedia-tr-m11",
+        "wikipedia-en-m11",
+        "osm-m11"
+      ],
+      "geometryRef": "arnavutkoy-hastane-halkali"
+    }
+  ],
+  "sources": [
+    {
+      "id": "aygm-kagithane-airport",
+      "title": "AYGM: Kağıthane-İstanbul Havalimanı Metro Hattı Açıldı",
+      "url": "https://aygm.uab.gov.tr/haberler/kagithane-istanbul-havalimani-metro-hatti-acildi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-tr-m11",
+      "title": "Vikipedi: M11 (İstanbul Metrosu)",
+      "url": "https://tr.wikipedia.org/wiki/M11_(%C4%B0stanbul_Metrosu)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-m11",
+      "title": "Wikipedia: M11 (Istanbul Metro)",
+      "url": "https://en.wikipedia.org/wiki/M11_(Istanbul_Metro)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ntv-m11-opening-2026",
+      "title": "NTV: Halkalı-İstanbul Havalimanı metrosu açıldı. Cumhurbaşkanı Erdoğan: 31 Temmuz'a kadar ücretsiz",
+      "url": "https://www.ntv.com.tr/turkiye/halkali-istanbul-havalimani-metro-hatti-31-temmuza-kadar-ucretsiz-1729273",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-m11",
+      "title": "OpenStreetMap contributors: route relation M11 Gayrettepe → Halkalı (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/15083964",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
