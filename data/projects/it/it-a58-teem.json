@@ -1,0 +1,45 @@
+{
+  "id": "it-a58-teem",
+  "country": "it",
+  "category": "highway",
+  "name": { "en": "A58 Tangenziale Est Esterna di Milano (TEEM)", "ro": "Autostrada A58 Tangenziale Est Esterna di Milano (TEEM)" },
+  "description": {
+    "en": "The A58 TEEM connects the A4 near Agrate Brianza and Caponago with the A1 near Melegnano and Cerro al Lambro. The full 32 km route entered service on 16 May 2015 after works began in June 2012.",
+    "ro": "Autostrada A58 TEEM leagă A4, lângă Agrate Brianza și Caponago, de A1, lângă Melegnano și Cerro al Lambro. Traseul complet de 32 km a intrat în exploatare pe 16 mai 2015, după ce lucrările au început în iunie 2012."
+  },
+  "operator": "it-tangenziale-esterna",
+  "lots": [
+    {
+      "id": "full-route",
+      "name": { "en": "Full route", "ro": "Traseul complet" },
+      "status": "opened",
+      "dates": { "constructionStart": "2012-06-11", "opened": "2015-05-16" },
+      "lengthKm": 32,
+      "sourceRefs": ["teem-profile", "teem-history", "osm-a58"],
+      "geometryRef": "main"
+    }
+  ],
+  "sources": [
+    {
+      "id": "teem-profile",
+      "title": "Tangenziale Est Esterna di Milano A58: company profile and route information",
+      "url": "https://www.tangenziale.esterna.it/profilo/",
+      "publisher": "Tangenziale Esterna S.p.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "teem-history",
+      "title": "Tangenziale Est Esterna di Milano A58: project history",
+      "url": "https://www.tangenziale.esterna.it/la-storia/",
+      "publisher": "Tangenziale Esterna S.p.A.",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a58",
+      "title": "OpenStreetMap relation 5185485, A58 TEEM motorway geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/5185485",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}

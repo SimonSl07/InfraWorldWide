@@ -1,0 +1,42 @@
+{
+  "id": "it-rail-milano-bologna",
+  "country": "it",
+  "category": "railway",
+  "name": { "en": "Milan–Bologna high-speed railway", "ro": "Calea ferată de mare viteză Milano–Bologna" },
+  "description": {
+    "en": "The RFI high-speed railway links Milan and Bologna. Passenger service on the line began on 13 December 2008.",
+    "ro": "Calea ferată de mare viteză RFI leagă Milano și Bologna. Serviciul de călători pe linie a început la 13 decembrie 2008."
+  },
+  "operator": "it-rfi",
+  "lots": [
+    {
+      "id": "full-route",
+      "name": { "en": "Milan–Bologna route", "ro": "Traseul Milano–Bologna" },
+      "status": "opened",
+      "dates": { "opened": "2008-12-13" },
+      "lengthKm": 214.4,
+      "note": {
+        "en": "Length measured from the OpenStreetMap route geometry.",
+        "ro": "Lungimea a fost măsurată din geometria traseului OpenStreetMap."
+      },
+      "sourceRefs": ["fs-milano-bologna-2018", "osm-milano-bologna"],
+      "geometryRef": "main"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fs-milano-bologna-2018",
+      "title": "FS Italiane: Milan–Bologna line, ten years of high speed",
+      "url": "https://www.fsitaliane.it/it/media/comunicati-stampa/2018/12/12/linea-milano-_-bologna--dieci-anni-di-alta-velocita.html",
+      "publisher": "Ferrovie dello Stato Italiane",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-milano-bologna",
+      "title": "OpenStreetMap relation 1962856, Milan–Bologna high-speed railway geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/1962856",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}
