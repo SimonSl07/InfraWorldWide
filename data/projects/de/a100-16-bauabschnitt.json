@@ -1,0 +1,75 @@
+{
+  "id": "de-a100-16-bauabschnitt",
+  "country": "de",
+  "category": "highway",
+  "name": {
+    "en": "A 100 16th section: Neukölln interchange–Am Treptower Park",
+    "ro": "A 100, secțiunea 16: nodul Neukölln–Am Treptower Park"
+  },
+  "description": {
+    "en": "A 3.2 km extension of the A 100 from the Neukölln interchange to Am Treptower Park in Berlin.",
+    "ro": "O prelungire de 3,2 km a autostrăzii A 100, de la nodul Neukölln la Am Treptower Park, în Berlin."
+  },
+  "operator": "de-autobahn-gmbh",
+  "sources": [
+    {
+      "id": "autobahn-a100-16",
+      "title": "Autobahn GmbH: A100 16th section, Neukölln interchange to Am Treptower Park",
+      "url": "https://www.autobahn.de/planen-bauen/projekt/a100-verlaengerung-anschlussstelle-neukoelln-bis-am-treptower-park-berlin",
+      "publisher": "Die Autobahn GmbH des Bundes",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "autobahn-a100-16-open",
+      "title": "Autobahn GmbH: A100 16th section opened to traffic",
+      "url": "https://www.autobahn.de/aktuelles/aktuell/freigabe-des-16-bauabschnitts-der-a100-wirkungsvolle-verkehrsentlastung-fuer-stadt-land-und-pendler",
+      "publisher": "Die Autobahn GmbH des Bundes",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-a100",
+      "title": "OpenStreetMap: A 100 route, relation 21634",
+      "url": "https://www.openstreetmap.org/relation/21634",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ],
+  "lots": [
+    {
+      "id": "16-bauabschnitt",
+      "name": {
+        "en": "Neukölln interchange–Am Treptower Park",
+        "ro": "Nodul Neukölln–Am Treptower Park"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-08-27"
+      },
+      "lengthKm": 3.2,
+      "sourceRefs": [
+        "autobahn-a100-16",
+        "autobahn-a100-16-open",
+        "osm-a100"
+      ],
+      "geometryRef": "16-bauabschnitt",
+      "profile": {
+        "works": "greenfield"
+      },
+      "note": {
+        "en": "Autobahn GmbH reports 3.2 km for the project section. The OSM line follows one carriageway and measures about 2.93 km.",
+        "ro": "Autobahn GmbH indică 3,2 km pentru sectorul proiectului. Linia OSM urmează o singură cale de rulare și măsoară aproximativ 2,93 km."
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2025-08-27",
+          "sourceRef": "autobahn-a100-16-open",
+          "note": {
+            "en": "Autobahn GmbH reports the 16th section was opened to traffic.",
+            "ro": "Autobahn GmbH anunță deschiderea pentru trafic a secțiunii 16."
+          }
+        }
+      ]
+    }
+  ]
+}
