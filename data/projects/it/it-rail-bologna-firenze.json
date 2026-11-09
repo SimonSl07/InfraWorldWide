@@ -1,0 +1,42 @@
+{
+  "id": "it-rail-bologna-firenze",
+  "country": "it",
+  "category": "railway",
+  "name": { "en": "Bologna–Florence high-speed railway", "ro": "Calea ferată de mare viteză Bologna–Florența" },
+  "description": {
+    "en": "The RFI high-speed railway crosses the Apennines between Bologna and Florence. The route entered service in December 2009 as part of the completed Turin–Milan–Bologna–Florence–Rome–Naples high-speed system.",
+    "ro": "Calea ferată de mare viteză RFI traversează Apeninii între Bologna și Florența. Traseul a intrat în exploatare în decembrie 2009, ca parte a sistemului complet de mare viteză Torino–Milano–Bologna–Florența–Roma–Napoli."
+  },
+  "operator": "it-rfi",
+  "lots": [
+    {
+      "id": "full-route",
+      "name": { "en": "Bologna–Florence route", "ro": "Traseul Bologna–Florența" },
+      "status": "opened",
+      "dates": { "opened": "2009-12" },
+      "lengthKm": 84.5,
+      "note": {
+        "en": "Length measured from the OpenStreetMap route geometry.",
+        "ro": "Lungimea a fost măsurată din geometria traseului OpenStreetMap."
+      },
+      "sourceRefs": ["fs-av-completion-2009", "osm-bologna-firenze"],
+      "geometryRef": "main"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fs-av-completion-2009",
+      "title": "FS Italiane: Roma–Napoli high-speed railway anniversary and history of the national AV system",
+      "url": "https://www.fsitaliane.it/it/media/eventi/2015/12/21/Alta-velocita-Roma-Napoli-compie-10-anni.html",
+      "publisher": "Ferrovie dello Stato Italiane",
+      "retrievedOn": "2026-10-13"
+    },
+    {
+      "id": "osm-bologna-firenze",
+      "title": "OpenStreetMap relation 2172727, Bologna–Florence high-speed railway geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/2172727",
+      "publisher": "OpenStreetMap contributors",
+      "retrievedOn": "2026-10-13"
+    }
+  ]
+}
