@@ -1,0 +1,146 @@
+{
+  "id": "ie-m50-dublin-ring",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "M50 Dublin Ring (Junction 3 – Junction 17)",
+    "ro": "M50 Inelul Dublinului (nodul 3 – nodul 17)"
+  },
+  "description": {
+    "en": "Dublin's orbital motorway between Junction 3 (M1) in the north and Junction 17 (M11) in the south-east. Construction began in 1987 on the Western Parkway, and the Southern Cross Route and South Eastern Motorway completed the C-ring in June 2005. Each lot is one of the four stages that Transport Infrastructure Ireland describes in its decade review. The 2006–2010 upgrade is not a lot here: it widened existing carriageways between Junction 3 and Junction 14 (two to three lanes each way, with a fourth auxiliary lane to Junction 12) and added no kilometres. A PPP contract for 24 km of the widening was awarded to M50 Concession Ltd in September 2007 for 35 years, and the works were completed in 2010. The Second Westlink Bridge (2003) is a parallel structure beside the Liffey bridge inside the Western Parkway lot. Lots 1 and 2 have no published length, so their lengths are measured from the mapped carriageway.",
+    "ro": "Autostrada de centură a Dublinului, între nodul 3 (M1) la nord și nodul 17 (M11) la sud-est. Construcția a început în 1987 pe Western Parkway, iar Southern Cross Route și South Eastern Motorway au închis inelul C în iunie 2005. Fiecare lot este una dintre cele patru etape descrise de Transport Infrastructure Ireland în bilanțul său decenal. Modernizarea din 2006–2010 nu este un lot aici: a lărgit carosabilul existent între nodul 3 și nodul 14 (de la două la trei benzi pe sens, cu o a patra bandă auxiliară până la nodul 12) și nu a adăugat kilometri. Un contract PPP pentru 24 km din lărgire a fost atribuit M50 Concession Ltd în septembrie 2007, pe 35 de ani, iar lucrările au fost finalizate în 2010. Al doilea pod Westlink (2003) este o structură paralelă lângă podul peste Liffey, în interiorul lotului Western Parkway. Loturile 1 și 2 nu au o lungime publicată, deci lungimile lor sunt măsurate pe carosabilul cartografiat."
+  },
+  "operator": "ie-transport-infrastructure-ireland",
+  "lots": [
+    {
+      "id": "northern-cross",
+      "name": {
+        "en": "Northern Cross (Junction 3 – Junction 6)",
+        "ro": "Northern Cross (nodul 3 – nodul 6)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1996"
+      },
+      "lengthKm": 8.22,
+      "note": {
+        "en": "Junction 3 (M1) to Junction 6 (N3). Completed in 1996. Length measured from OpenStreetMap geometry.",
+        "ro": "De la nodul 3 (M1) la nodul 6 (N3). Finalizat în 1996. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "osm"],
+      "geometryRef": "northern-cross"
+    },
+    {
+      "id": "western-parkway",
+      "name": {
+        "en": "Western Parkway (Junction 6 – Junction 11)",
+        "ro": "Western Parkway (nodul 6 – nodul 11)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1987",
+        "opened": "1990"
+      },
+      "lengthKm": 12.22,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1987",
+          "note": {
+            "en": "Construction of the M50 began on the Western Parkway.",
+            "ro": "Construcția M50 a început pe Western Parkway."
+          },
+          "sourceRef": "tii-decade-of-progress"
+        },
+        {
+          "kind": "opened",
+          "date": "1990",
+          "note": {
+            "en": "Section between Junctions 6 (N3) and 11 (N81) completed.",
+            "ro": "Sectorul dintre nodurile 6 (N3) și 11 (N81) finalizat."
+          },
+          "sourceRef": "tii-decade-of-progress"
+        }
+      ],
+      "note": {
+        "en": "Junction 6 (N3) to Junction 11 (N81 Tallaght). Includes a tolled bridge over the River Liffey between Junctions 6 and 7 (N4), built by 2000. A second bridge alongside it was built in 2003 under a PPP (Sisk / Strabag J.V.); it adds no length to the lot. The West-Link toll plaza was removed in August 2008 and replaced by barrier-free eFlow tolling. Length measured from OpenStreetMap geometry.",
+        "ro": "De la nodul 6 (N3) la nodul 11 (N81 Tallaght). Include un pod cu taxă peste râul Liffey între nodurile 6 și 7 (N4), construit până în 2000. Un al doilea pod alăturat a fost construit în 2003 printr-un PPP (Sisk / Strabag J.V.); nu adaugă lungime lotului. Bariera de taxare West-Link a fost eliminată în august 2008 și înlocuită cu taxarea electronică fără barieră eFlow. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "tii-annual-report-2025", "osm"],
+      "geometryRef": "western-parkway"
+    },
+    {
+      "id": "southern-cross-route",
+      "name": {
+        "en": "Southern Cross Route (Junction 11 – Junction 13)",
+        "ro": "Southern Cross Route (nodul 11 – nodul 13)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2001-08"
+      },
+      "lengthKm": 9,
+      "note": {
+        "en": "Junction 11 (N81 Tallaght Road) to Junction 13 (Ballinteer), with Junction 12 at Firhouse. TII gives 9 km; the mapped carriageway between the two junction ramps measures 7.49 km, and the published figure is kept.",
+        "ro": "De la nodul 11 (N81 Tallaght Road) la nodul 13 (Ballinteer), cu nodul 12 la Firhouse. TII indică 9 km; carosabilul cartografiat între rampele celor două noduri măsoară 7,49 km, iar cifra publicată este păstrată."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "osm"],
+      "geometryRef": "southern-cross-route"
+    },
+    {
+      "id": "south-eastern-motorway",
+      "name": {
+        "en": "South Eastern Motorway (Junction 13 – Junction 17)",
+        "ro": "South Eastern Motorway (nodul 13 – nodul 17)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001-10",
+        "opened": "2005-06"
+      },
+      "lengthKm": 10,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2001-10",
+          "sourceRef": "tii-decade-of-progress"
+        },
+        {
+          "kind": "opened",
+          "date": "2005-06",
+          "note": {
+            "en": "The M50 was formally opened in its entirety.",
+            "ro": "M50 a fost deschisă oficial în întregime."
+          },
+          "sourceRef": "tii-decade-of-progress"
+        }
+      ],
+      "note": {
+        "en": "Ballinteer (Junction 13) to the M11 at Shankill (Junction 17), with interchanges at Sandyford, Carrickmines and Cherrywood. Legal delays over the Carrickmines Castle archaeological site held up construction and delayed completion. The Wyattville interchange (M50/N11) opened in 2006.",
+        "ro": "De la Ballinteer (nodul 13) la M11 la Shankill (nodul 17), cu noduri la Sandyford, Carrickmines și Cherrywood. Întârzierile juridice legate de situl arheologic Carrickmines Castle au oprit lucrările și au întârziat finalizarea. Nodul Wyattville (M50/N11) a fost deschis în 2006."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "osm"],
+      "geometryRef": "south-eastern-motorway"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tii-decade-of-progress",
+      "title": "Transport Infrastructure Ireland: A Decade of Progress, chapter 3 (M50 Completion and Upgrade, pp. 64–66) and Appendix I",
+      "url": "https://www.tii.ie/media/hrroellt/a-decade-of-progress.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "Transport Infrastructure Ireland: Annual Report and Financial Statements 2025, note 10e (M50 Upgrade PPP: awarded September 2007, 35-year term, 24 km widened, completed 2010)",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: highway=motorway ref=M50 ways, Dublin (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

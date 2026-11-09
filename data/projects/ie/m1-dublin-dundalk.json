@@ -1,0 +1,253 @@
+{
+  "id": "ie-m1-dublin-dundalk",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "M1 Dublin – Dundalk – Border",
+    "ro": "M1 Dublin – Dundalk – Frontieră"
+  },
+  "description": {
+    "en": "The M1 runs 91 km from Dublin to the Border with Northern Ireland and is the first of Ireland's five inter-urban routes completed in full. It was built in stages, from the Dunleer Bypass (1993) and Balbriggan Bypass (1998) to the Dundalk–Border link, opened on 2 August 2007. The Dundalk Western Bypass was a PPP; its concessionaire also operates and maintains the existing motorway south to Gormanston and the tolling on the Drogheda Bypass. Each lot carries the scheme length published by TII. The sections drawn from OpenStreetMap for four of them (Lissenhall–Balbriggan, Balbriggan Bypass, Dunleer Bypass, Dunleer–Dundalk) measure less than that figure, and the published scheme lengths add up to more than the 91 km route. The Dundalk–Border lot covers the Republic's 9.4 km only; the other 4.6 km of that scheme is in County Armagh. The M50 to Dublin Airport length and the N2 Dunleer–Ardee link (2001) are not included.",
+    "ro": "M1 are 91 km de la Dublin până la frontiera cu Irlanda de Nord și este prima dintre cele cinci rute interurbane ale Irlandei finalizată integral. A fost construită pe etape, de la ocolitoarea Dunleer (1993) și ocolitoarea Balbriggan (1998) până la legătura Dundalk–frontieră, deschisă la 2 august 2007. Ocolitoarea de vest a orașului Dundalk a fost un proiect PPP; concesionarul ei operează și întreține și autostrada existentă spre sud, până la Gormanston, precum și taxarea pe ocolitoarea Drogheda. Fiecare lot poartă lungimea schemei publicată de TII. Secțiunile desenate după OpenStreetMap pentru patru dintre ele (Lissenhall–Balbriggan, ocolitoarea Balbriggan, ocolitoarea Dunleer, Dunleer–Dundalk) măsoară mai puțin decât cifra respectivă, iar lungimile publicate ale schemelor însumează mai mult decât cei 91 km ai rutei. Lotul Dundalk–frontieră cuprinde doar cei 9,4 km din Republică; ceilalți 4,6 km ai schemei se află în comitatul Armagh. Tronsonul M50 – aeroportul Dublin și legătura N2 Dunleer–Ardee (2001) nu sunt incluse."
+  },
+  "operator": "ie-transport-infrastructure-ireland",
+  "lots": [
+    {
+      "id": "cloghran-lissenhall",
+      "name": {
+        "en": "Cloghran – Lissenhall",
+        "ro": "Cloghran – Lissenhall"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2000-08",
+        "opened": "2003-06"
+      },
+      "lengthKm": 6.5,
+      "profile": {
+        "bridgeCount": 9,
+        "viaductKm": 0.32
+      },
+      "contractors": [
+        {
+          "name": "Ascon / Nuttal J.V.",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Employer: Fingal County Council. Nine bridges, including a 320 m elevated bridge over the Broadmeadow Estuary with a 6.3 m gap between the north and south decks. Interchanges at Cloghran and Lissenhall; the Drinan interchange was added in 2005. Opened on the same day as Lissenhall–Balbriggan.",
+        "ro": "Beneficiar: Fingal County Council. Nouă poduri, între care un pod ridicat de 320 m peste estuarul Broadmeadow, cu un gol de 6,3 m între tablierele nordic și sudic. Noduri la Cloghran și Lissenhall; nodul Drinan a fost adăugat în 2005. Deschis în aceeași zi cu Lissenhall–Balbriggan."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "osm-geometry"],
+      "geometryRef": "cloghran-lissenhall"
+    },
+    {
+      "id": "lissenhall-balbriggan",
+      "name": {
+        "en": "Lissenhall – Balbriggan",
+        "ro": "Lissenhall – Balbriggan"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2001-07",
+        "opened": "2003-06"
+      },
+      "lengthKm": 10,
+      "contractors": [
+        {
+          "name": "SIAC Construction",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Employer: Fingal County Council. The drawn section, cut at the Lissenhall and Balbriggan (South) interchanges, measures 8.4 km against the published 10 km.",
+        "ro": "Beneficiar: Fingal County Council. Secțiunea desenată, tăiată la nodurile Lissenhall și Balbriggan (Sud), măsoară 8,4 km față de cei 10 km publicați."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "osm-geometry"],
+      "geometryRef": "lissenhall-balbriggan"
+    },
+    {
+      "id": "balbriggan-bypass",
+      "name": {
+        "en": "Balbriggan Bypass",
+        "ro": "Ocolitoarea Balbriggan"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1998"
+      },
+      "lengthKm": 13,
+      "note": {
+        "en": "The published source gives only the length and the year (13 km, 1998), with no construction dates or contractor. The drawn section is the stretch OpenStreetMap names Balbriggan Bypass, from Balbriggan (South) to Gormanston, and measures 10.0 km against the published 13 km.",
+        "ro": "Sursa publicată dă doar lungimea și anul (13 km, 1998), fără date de construcție sau constructor. Secțiunea desenată este tronsonul numit în OpenStreetMap Balbriggan Bypass, de la Balbriggan (Sud) la Gormanston, și măsoară 10,0 km față de cei 13 km publicați."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "osm-geometry"],
+      "geometryRef": "balbriggan-bypass"
+    },
+    {
+      "id": "drogheda-bypass",
+      "name": {
+        "en": "Drogheda Bypass (Gormanston – Monasterboice)",
+        "ro": "Ocolitoarea Drogheda (Gormanston – Monasterboice)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2000",
+        "opened": "2003-06"
+      },
+      "lengthKm": 21.5,
+      "profile": {
+        "bridgeCount": 24,
+        "tolled": true
+      },
+      "contractors": [
+        {
+          "name": "SIAC Cleveland (C6)",
+          "role": "builder"
+        },
+        {
+          "name": "SIAC O'Rourke (C7)",
+          "role": "builder"
+        },
+        {
+          "name": "Uniform (C8)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Employer: Meath County Council. Construction began in spring 2000. Four interchanges (Gormanston, Drogheda South, Drogheda North, Monasterboice) and 24 bridges, including the 352.5 m cable-stayed Boyne Bridge, whose own contract was awarded in late 1999 and signed in April 2000. Toll plazas at Balgeen and Rathmullen; tolling between junctions 7 and 10 is operated under the Dundalk Western Bypass concession. The drawn section measures 20.6 km against the published 21.5 km.",
+        "ro": "Beneficiar: Meath County Council. Construcția a început în primăvara lui 2000. Patru noduri (Gormanston, Drogheda South, Drogheda North, Monasterboice) și 24 de poduri, între care podul hobanat Boyne de 352,5 m, al cărui contract propriu a fost atribuit la sfârșitul lui 1999 și semnat în aprilie 2000. Puncte de taxare la Balgeen și Rathmullen; taxarea între nodurile 7 și 10 este operată în cadrul concesiunii ocolitoarei de vest Dundalk. Secțiunea desenată măsoară 20,6 km față de cei 21,5 km publicați."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "tii-annual-report-2025", "tii-toll-locations", "osm-geometry"],
+      "geometryRef": "drogheda-bypass"
+    },
+    {
+      "id": "dunleer-bypass",
+      "name": {
+        "en": "Dunleer Bypass",
+        "ro": "Ocolitoarea Dunleer"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1993"
+      },
+      "lengthKm": 10,
+      "note": {
+        "en": "The published source gives only the length and the year (10 km, 1993), with no construction dates or contractor. The drawn section is the stretch OpenStreetMap names Dunleer Bypass, from Monasterboice to Dunleer (North), and measures 6.3 km against the published 10 km. It is one of the sections the Dundalk Western Bypass concessionaire operates and maintains.",
+        "ro": "Sursa publicată dă doar lungimea și anul (10 km, 1993), fără date de construcție sau constructor. Secțiunea desenată este tronsonul numit în OpenStreetMap Dunleer Bypass, de la Monasterboice la Dunleer (Nord), și măsoară 6,3 km față de cei 10 km publicați. Este una dintre secțiunile operate și întreținute de concesionarul ocolitoarei de vest Dundalk."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "tii-annual-report-2025", "osm-geometry"],
+      "geometryRef": "dunleer-bypass"
+    },
+    {
+      "id": "dunleer-dundalk",
+      "name": {
+        "en": "Dunleer – Dundalk",
+        "ro": "Dunleer – Dundalk"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2001"
+      },
+      "lengthKm": 17,
+      "contractors": [
+        {
+          "name": "Graham - Uniform J.V",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Employer: Louth County Council. Work had begun by 2000; no start date is given. The drawn section, from Dunleer (North) to Dundalk (South), measures 14.9 km against the published 17 km.",
+        "ro": "Beneficiar: Louth County Council. Lucrările începuseră până în 2000; nu se indică o dată de început. Secțiunea desenată, de la Dunleer (Nord) la Dundalk (Sud), măsoară 14,9 km față de cei 17 km publicați."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "tii-annual-report-2025", "osm-geometry"],
+      "geometryRef": "dunleer-dundalk"
+    },
+    {
+      "id": "dundalk-western-bypass",
+      "name": {
+        "en": "Dundalk Western Bypass",
+        "ro": "Ocolitoarea de vest Dundalk"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2004-02",
+        "constructionStart": "2004-02",
+        "opened": "2005-09"
+      },
+      "lengthKm": 11,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Toll concession awarded to the Celtic Roads Group (Dundalk) Ltd. consortium in February 2004, for a 30-year term.",
+            "ro": "Concesiune cu taxare atribuită consorțiului Celtic Roads Group (Dundalk) Ltd. în februarie 2004, pe 30 de ani."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Celtic Roads Group (Dundalk) Ltd.",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Employer: Louth County Council. Construction ran from February 2004 to September 2005; the date opened is that completion month. The scheme joins the Dunleer–Dundalk motorway to Ballymascanlan, with about 8 km of side roads and tie-ins. The contract also covers operation and maintenance of the existing motorway (about 42 km in TII's 2025 annual report, the Dunleer Bypass and the Dunleer–Dundalk motorway; 43 km between Dundalk and Gormanston in A Decade of Progress) and the tolling facilities between junctions 7 and 10. The drawn section measures 11.9 km.",
+        "ro": "Beneficiar: Louth County Council. Construcția s-a desfășurat din februarie 2004 până în septembrie 2005; data deschiderii este luna finalizării. Schema leagă autostrada Dunleer–Dundalk de Ballymascanlan, cu circa 8 km de drumuri laterale și racorduri. Contractul cuprinde și operarea și întreținerea autostrăzii existente (circa 42 km în raportul anual TII 2025, ocolitoarea Dunleer și autostrada Dunleer–Dundalk; 43 km între Dundalk și Gormanston în A Decade of Progress) și a instalațiilor de taxare între nodurile 7 și 10. Secțiunea desenată măsoară 11,9 km."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "tii-annual-report-2025", "osm-geometry"],
+      "geometryRef": "dundalk-western-bypass"
+    },
+    {
+      "id": "dundalk-border",
+      "name": {
+        "en": "Dundalk – Border",
+        "ro": "Dundalk – Frontieră"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2005-06",
+        "opened": "2007-08-02"
+      },
+      "lengthKm": 9.4,
+      "contractors": [
+        {
+          "name": "Northroute (SIAC Ferrovial J.V.)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Employer: Louth County Council. The cross-border scheme between the Dundalk Western Bypass and the Newry Bypass is 14 km: 9.4 km in County Louth, which is this lot, and 4.6 km of dual carriageway in County Armagh. It was managed jointly by the National Roads Authority, Louth County Council and Roads Service Northern Ireland, and opened three months ahead of schedule. The drawn section runs from Ballymascanlan to the Louth/Armagh boundary at the River Flurry and measures 9.1 km.",
+        "ro": "Beneficiar: Louth County Council. Schema transfrontalieră dintre ocolitoarea de vest Dundalk și ocolitoarea Newry are 14 km: 9,4 km în comitatul Louth, adică acest lot, și 4,6 km de drum cu benzi separate în comitatul Armagh. A fost gestionată în comun de National Roads Authority, Louth County Council și Roads Service Northern Ireland și a fost deschisă cu trei luni înainte de termen. Secțiunea desenată merge de la Ballymascanlan până la limita Louth/Armagh, pe râul Flurry, și măsoară 9,1 km."
+      },
+      "sourceRefs": ["tii-decade-of-progress", "osm-geometry"],
+      "geometryRef": "dundalk-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tii-decade-of-progress",
+      "title": "TII (National Roads Authority): A Decade of Progress, chapter 3 (M1 Dublin to Border) and Appendix I",
+      "url": "https://www.tii.ie/media/hrroellt/a-decade-of-progress.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "TII Annual Report and Financial Statements 2025, note 10e (M1 Dundalk Western Bypass)",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-toll-locations",
+      "title": "TII: Toll locations and charges (M1 Gormanston to Monasterboice toll road)",
+      "url": "https://www.tii.ie/en/roads-tolling/tolling-information/toll-locations-and-charges/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-geometry",
+      "title": "OpenStreetMap contributors: M1 and N1 way geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

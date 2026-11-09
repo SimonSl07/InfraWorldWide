@@ -1,0 +1,126 @@
+{
+  "id": "ie-limerick-tunnel",
+  "country": "ie",
+  "category": "tunnel",
+  "name": {
+    "en": "Limerick Tunnel and Southern Ring Road (N18)",
+    "ro": "Tunelul Limerick și drumul de centură sudic (N18)"
+  },
+  "description": {
+    "en": "Southern bypass of Limerick in two phases. Phase 1 (9.5 km of dual carriageway, 11 bridges) was completed in 2004. Phase 2 is a tolled public-private partnership (DirectRoute (Limerick) Ltd, 35-year concession awarded August 2006) running from the M7 Rosbrien interchange to the N18/M18 junction, with an immersed-tube tunnel under the River Shannon. It opened in July 2010.",
+    "ro": "Centura de sud a orașului Limerick, în două faze. Faza 1 (9,5 km de drum cu două benzi pe sens, 11 poduri) a fost finalizată în 2004. Faza 2 este un parteneriat public-privat cu taxă (DirectRoute (Limerick) Ltd, concesiune de 35 de ani atribuită în august 2006), de la nodul Rosbrien de pe M7 până la intersecția N18/M18, cu un tunel imersat sub râul Shannon. A fost deschisă în iulie 2010."
+  },
+  "operator": "ie-directroute-limerick",
+  "lots": [
+    {
+      "id": "phase-1-southern-ring-road",
+      "name": {
+        "en": "Southern Ring Road Phase 1 (Annacotty – Rosbrien)",
+        "ro": "Centura de sud, faza 1 (Annacotty – Rosbrien)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2004"
+      },
+      "lengthKm": 9.5,
+      "profile": {
+        "works": "greenfield",
+        "bridgeCount": 11
+      },
+      "note": {
+        "en": "The source gives 9.5 km of dual carriageway south of the city with 11 new bridges, completed in 2004; its appendix of schemes lists Phase 1 under 2005. The M7 joins this road at Annacotty. The endpoints are taken as Annacotty (M7 junction 28) and Rosbrien (junction 1), which the source does not state; the drawn line between them is 9.1 km.",
+        "ro": "Sursa indică 9,5 km de drum cu două benzi pe sens la sud de oraș, cu 11 poduri noi, finalizat în 2004; anexa cu lucrări listează faza 1 la anul 2005. M7 se conectează la acest drum la Annacotty. Capetele sunt considerate Annacotty (joncțiunea 28 de pe M7) și Rosbrien (joncțiunea 1), pe care sursa nu le precizează; linia desenată între ele măsoară 9,1 km."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "openstreetmap-limerick-tunnel"
+      ],
+      "geometryRef": "phase-1-southern-ring-road"
+    },
+    {
+      "id": "phase-2-limerick-tunnel",
+      "name": {
+        "en": "Southern Ring Road Phase 2 with Limerick Tunnel (Rosbrien – N18/M18)",
+        "ro": "Centura de sud, faza 2, cu tunelul Limerick (Rosbrien – N18/M18)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2006-08",
+        "constructionStart": "2006-08",
+        "opened": "2010-07"
+      },
+      "lengthKm": 10,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 0.675,
+        "bridgeCount": 10,
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2006-08",
+          "note": {
+            "en": "Toll concession awarded to the DirectRoute (Limerick) Ltd consortium; term 35 years.",
+            "ro": "Concesiunea de taxare atribuită consorțiului DirectRoute (Limerick) Ltd; durată 35 de ani."
+          },
+          "sourceRef": "tii-annual-report-2025"
+        },
+        {
+          "kind": "opened",
+          "date": "2010-07",
+          "sourceRef": "tii-annual-report-2025"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Toll concession; the project was financed through a combination of private and Exchequer funding.",
+            "ro": "Concesiune cu taxă; proiectul a fost finanțat din fonduri private și de la bugetul de stat."
+          }
+        },
+        {
+          "source": "national_budget"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "DirectRoute (Limerick) Ltd",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "About 10 km of new dual carriageway (the annual report adds associated link and side roads) from the M7 Rosbrien interchange to the N18/M18 junction, with 10 bridges. The immersed-tube tunnel under the Shannon is 675 m long, of which 500 m lie on the riverbed (five sections of 100 m and 20,000 tonnes each, cast in a dock on the north bank); the annual report gives approximately 0.9 km for the tunnel crossing, between Coonagh on the north bank and Bunlicky on the south bank. The sections were joined in December 2008. Tolled between junctions 2 and 4. The sources give the opening as June 2010 (Decade of Progress) and July 2010 (Annual Report 2025); July is used. Construction is recorded as commencing in August 2006, the month of the concession award. The drawn mainline measures 8.6 km, against the sourced figure of about 10 km. No cost is given in the sources.",
+        "ro": "Circa 10 km de drum nou cu două benzi pe sens (raportul anual adaugă drumuri de legătură și laterale) de la nodul Rosbrien de pe M7 până la intersecția N18/M18, cu 10 poduri. Tunelul imersat sub Shannon are 675 m, dintre care 500 m pe albia râului (cinci secțiuni de câte 100 m și 20.000 de tone, turnate într-un doc pe malul nordic); raportul anual indică circa 0,9 km pentru traversarea prin tunel, între Coonagh pe malul nordic și Bunlicky pe malul sudic. Secțiunile au fost unite în decembrie 2008. Cu taxă între joncțiunile 2 și 4. Sursele dau deschiderea în iunie 2010 (Decade of Progress) și iulie 2010 (Annual Report 2025); se folosește iulie. Construcția este înregistrată ca începută în august 2006, luna atribuirii concesiunii. Traseul principal desenat măsoară 8,6 km, față de cifra citată de circa 10 km. Sursele nu indică un cost."
+      },
+      "sourceRefs": [
+        "tii-decade-of-progress",
+        "tii-annual-report-2025",
+        "openstreetmap-limerick-tunnel"
+      ],
+      "geometryRef": "phase-2-limerick-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tii-decade-of-progress",
+      "title": "TII: A Decade of Progress (Limerick Tunnel, pp. 68–69; M7, p. 44; Appendix I)",
+      "url": "https://www.tii.ie/media/hrroellt/a-decade-of-progress.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tii-annual-report-2025",
+      "title": "TII Annual Report and Financial Statements 2025, note 10e (PPP schemes: N18 Limerick Tunnel)",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-limerick-tunnel",
+      "title": "OpenStreetMap contributors (ODbL): N18 and M7 Limerick Southern Ring Road geometry",
+      "url": "https://www.openstreetmap.org/way/62218799",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
