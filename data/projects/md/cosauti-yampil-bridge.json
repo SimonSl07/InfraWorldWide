@@ -1,0 +1,108 @@
+{
+  "id": "md-cosauti-yampil-bridge",
+  "country": "md",
+  "category": "bridge",
+  "name": {
+    "en": "Cosăuți–Yampil bridge over the Dniester",
+    "ro": "Podul Cosăuți–Yampil peste Nistru"
+  },
+  "description": {
+    "en": "Road bridge over the Dniester between Cosăuți (Soroca district, Moldova) and Yampil (Vinnytsia oblast, Ukraine), planned to replace a ferry crossing that has been closed since 2021. A joint project: Ukraine finances the bridge, Moldova builds the access roads on its side.",
+    "ro": "Pod rutier peste Nistru între Cosăuți (raionul Soroca, Republica Moldova) și Yampil (regiunea Vinnița, Ucraina), destinat să înlocuiască trecerea cu bacul, închisă din 2021. Proiect comun: Ucraina finanțează podul, Republica Moldova construiește drumurile de acces de pe teritoriul său."
+  },
+  "operator": "md-midr",
+  "lots": [
+    {
+      "id": "bridge",
+      "name": {
+        "en": "Cosăuți–Yampil bridge",
+        "ro": "Podul Cosăuți–Yampil"
+      },
+      "status": "planned",
+      "lengthKm": 0.552,
+      "events": [
+        {
+          "kind": "announced",
+          "date": "2023-06-12",
+          "note": {
+            "en": "Ukraine and Moldova sign the agreement on building the bridge, extending agreements reached in 2021.",
+            "ro": "Ucraina și Republica Moldova semnează acordul privind construirea podului, care prelungește acordurile din 2021."
+          },
+          "sourceRef": "ukrainska-pravda-agreement-2023"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Financed by Ukraine; Moldova builds the access roads and its checkpoint. In 2026 the Ukrainian government allocated UAH 383.8 million from the reserve fund for the temporary technological bridge.",
+            "ro": "Finanțat de Ucraina; Republica Moldova construiește drumurile de acces și punctul de trecere de pe teritoriul său. În 2026 guvernul Ucrainei a alocat 383,8 milioane UAH din fondul de rezervă pentru podul tehnologic temporar."
+          }
+        }
+      ],
+      "note": {
+        "en": "Joint Ukrainian–Moldovan project, mapped here as one lot. Length measured from OpenStreetMap geometry (the two mapped bridge ways, 0.55 km between the abutments); the 2023 agreement states a total bridge length of over 1,400 m, which the mapped segment does not match. The drawn segment is the structure itself between its two mapped ends. Autostrada is building a temporary technological bridge for the project, scheduled for completion by the end of 2026 (LIGA, 22 July 2026). On 17 September 2026 Autostrada announced it was suspending work on all its projects after the government halted capital-expenditure funding. The project cost was earlier estimated at UAH 3.4 billion (LIGA, July 2026); not recorded as a cost because no price year or scope is stated. No opening date is recorded.",
+        "ro": "Proiect comun ucraineano–moldovenesc, cartografiat aici ca un singur lot. Lungime măsurată din geometria OpenStreetMap (cele două tronsoane de pod cartografiate, 0,55 km între culei); acordul din 2023 indică o lungime totală a podului de peste 1.400 m, pe care segmentul cartografiat nu o reflectă. Segmentul desenat este structura propriu-zisă între cele două capete cartografiate. Autostrada construiește un pod tehnologic temporar pentru proiect, a cărui finalizare este programată până la sfârșitul lui 2026 (LIGA, 22 iulie 2026). La 17 septembrie 2026 Autostrada a anunțat suspendarea lucrărilor la toate proiectele sale după ce guvernul a oprit finanțarea cheltuielilor de capital. Costul proiectului a fost estimat anterior la 3,4 miliarde UAH (LIGA, iulie 2026); nu este înregistrat ca cost deoarece nu se indică anul prețurilor sau domeniul. Nu este înregistrată o dată de deschidere."
+      },
+      "contractors": [
+        {
+          "name": "Autostrada",
+          "role": "builder"
+        }
+      ],
+      "sourceRefs": [
+        "ukrainska-pravda-agreement-2023",
+        "liga-temporary-bridge-2026-07",
+        "liga-temporary-bridge-ua-2026-07",
+        "liga-autostrada-halt-2026-09",
+        "wikipedia-cosauti-yampil",
+        "osm-cosauti-yampil"
+      ],
+      "geometryRef": "bridge"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ukrainska-pravda-agreement-2023",
+      "title": "Ukrainska Pravda: Ukraine and Moldova sign agreement about building bridge over Dnister (2023-06-12)",
+      "url": "https://www.pravda.com.ua/eng/news/2023/06/12/7406470/",
+      "publisher": "Ukrainska Pravda",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "liga-temporary-bridge-2026-07",
+      "title": "LIGA.net: Autostrada provided an update on the progress of construction of the temporary bridge to Moldova (2026-07-22)",
+      "url": "https://biz.liga.net/en/transport/photo/autostrada-provided-an-update-on-the-progress-of-construction-of-the-temporary-bridge-to-moldova",
+      "publisher": "LIGA.net",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "liga-temporary-bridge-ua-2026-07",
+      "title": "LIGA.net: Замість обіцяного нового мосту через Дністер почали будувати тимчасову переправу (2026-07-17)",
+      "url": "https://biz.liga.net/ua/transport/news/zamist-obitsianoho-novoho-mostu-cherez-dnister-pochaly-buduvaty-tymchasovu-perepravu-foto",
+      "publisher": "LIGA.net",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "liga-autostrada-halt-2026-09",
+      "title": "LIGA.net: \"We've had enough.\" Avtostrada Halts Work on All Projects Due to a Funding Shortfall (2026-09-17)",
+      "url": "https://biz.liga.net/en/transport/news/weve-had-enough-avtostrada-halts-work-on-all-projects-due-to-a-funding-shortfall",
+      "publisher": "LIGA.net",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-cosauti-yampil",
+      "title": "Wikipedia: Cosăuți–Yampil Bridge (secondary; names Autostrada as builder)",
+      "url": "https://en.wikipedia.org/wiki/Cos%C4%83u%C8%9Bi%E2%80%93Yampil_Bridge",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-cosauti-yampil",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
