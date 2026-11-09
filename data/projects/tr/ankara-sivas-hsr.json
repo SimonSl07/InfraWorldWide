@@ -1,0 +1,90 @@
+{
+  "id": "tr-ankara-sivas-hsr",
+  "country": "tr",
+  "category": "railway",
+  "name": {
+    "en": "Ankara – Sivas high-speed railway",
+    "ro": "Calea ferată de mare viteză Ankara – Sivas"
+  },
+  "description": {
+    "en": "Double-track electrified high-speed line from Ankara via Kırıkkale, Yozgat and Yerköy to Sivas, built from 2008. The Presidency of Communications gives the distance as cut from 603 km to 405 km and the Ankara–Sivas journey from 12 hours to about 2 hours. Scheduled service began on 26 April 2023.",
+    "ro": "Linie de mare viteză electrificată, cu cale dublă, de la Ankara prin Kırıkkale, Yozgat și Yerköy la Sivas, construită din 2008. Prezidența pentru Comunicare indică reducerea distanței de la 603 km la 405 km și a duratei Ankara–Sivas de la 12 ore la circa 2 ore. Serviciul regulat a început la 26 aprilie 2023."
+  },
+  "operator": "tr-tcdd",
+  "lots": [
+    {
+      "id": "ankara-sivas",
+      "name": {
+        "en": "Ankara – Sivas",
+        "ro": "Ankara – Sivas"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2008",
+        "opened": "2023-04-26"
+      },
+      "lengthKm": 405,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 250,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2008",
+          "note": {
+            "en": "Construction began in 2008, with pauses in 2010 due to changes in the project.",
+            "ro": "Construcția a început în 2008, cu pauze în 2010 din cauza modificărilor de proiect."
+          },
+          "sourceRef": "wikipedia-en-ankara-sivas"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2023-02-15",
+          "note": {
+            "en": "Sivas–Kırıkkale opened as an evacuation service after the February 2023 earthquake.",
+            "ro": "Sivas–Kırıkkale a fost deschisă ca serviciu de evacuare după cutremurul din februarie 2023."
+          },
+          "sourceRef": "wikipedia-en-ankara-sivas"
+        },
+        {
+          "kind": "opened",
+          "date": "2023-04-26",
+          "sourceRef": "iletisim-ankara-sivas-anniversary"
+        }
+      ],
+      "note": {
+        "en": "Length is the 405 km given by the Presidency of Communications; English Wikipedia gives 406 km. Dates: 15 February 2023 was an evacuation run Sivas–Kırıkkale, 26 April 2023 the start of scheduled service. Contractors and costs are not stated on the pages consulted and are omitted. The drawn line ends at the existing Sivas station and follows the conventional Ankara–Kars line for the last kilometres into Sivas.",
+        "ro": "Lungimea este cea de 405 km indicată de Prezidența pentru Comunicare; Wikipedia în engleză indică 406 km. Date: 15 februarie 2023 a fost o cursă de evacuare Sivas–Kırıkkale, 26 aprilie 2023 începutul serviciului regulat. Constructorii și costurile nu sunt indicate în paginile consultate și sunt omise. Linia desenată se termină la gara existentă Sivas și urmează linia convențională Ankara–Kars pe ultimii kilometri spre Sivas."
+      },
+      "sourceRefs": [
+        "iletisim-ankara-sivas-anniversary",
+        "wikipedia-en-ankara-sivas",
+        "osm-ankara-sivas"
+      ],
+      "geometryRef": "ankara-sivas"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iletisim-ankara-sivas-anniversary",
+      "title": "İletişim Başkanlığı: Bakan Uraloğlu, Ankara–Sivas Yüksek Hızlı Tren Hattı'nın 1. yıl dönümü",
+      "url": "https://www.iletisim.gov.tr/turkce/yerel_basin/detay/ulastirma-ve-altyapi-bakani-uraloglu-hizmete-acilan-ankara-sivas-yuksek-hizli-tren-hattinin-1-yil-donumune-erismesinin-gururunu-yasadiklarini-belirtti",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-ankara-sivas",
+      "title": "Wikipedia: Ankara–Sivas high-speed railway",
+      "url": "https://en.wikipedia.org/wiki/Ankara%E2%80%93Sivas_high-speed_railway",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-ankara-sivas",
+      "title": "OpenStreetMap contributors (geometry of the Ankara–Sivas high-speed line, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

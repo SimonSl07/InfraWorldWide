@@ -1,0 +1,103 @@
+{
+  "id": "tr-ankara-kirikkale-delice",
+  "country": "tr",
+  "category": "highway",
+  "name": {
+    "en": "Ankara–Kırıkkale–Delice Motorway",
+    "ro": "Autostrada Ankara–Kırıkkale–Delice"
+  },
+  "description": {
+    "en": "Build-operate-transfer motorway of 120 km: 101 km of 2x3-lane motorway and 19 km of 2x2-lane connecting roads. It leaves the Ankara ring road between the Karapürçek and Samsun Road junctions at Kızılcaköy, passes south of Hasanoğlan and Yahşihan, crosses the Kızılırmak and runs south of Kırıkkale to the Kırıkkale–Yozgat state road. KGM reports construction under way and a target opening in 2028. The financing reached financial close on 8 October 2025.",
+    "ro": "Autostradă de 120 km în regim construiește-operează-transferă: 101 km de autostradă 2x3 benzi și 19 km de drumuri de legătură 2x2 benzi. Pornește de la centura Ankarei, între nodurile Karapürçek și Samsun Yolu, la Kızılcaköy, trece la sud de Hasanoğlan și Yahşihan, traversează Kızılırmak și ocolește Kırıkkale pe la sud, până la drumul național Kırıkkale–Yozgat. KGM raportează lucrări în curs și o țintă de deschidere în 2028. Finanțarea a atins închiderea financiară la 8 octombrie 2025."
+  },
+  "operator": "tr-kgm",
+  "lots": [
+    {
+      "id": "ankara-kirikkale-delice",
+      "name": {
+        "en": "Karapürçek (Ankara ring road) – Kırıkkale–Yozgat road",
+        "ro": "Karapürçek (centura Ankarei) – drumul Kırıkkale–Yozgat"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 101,
+      "cost": {
+        "estimated": {
+          "amount": 1391,
+          "currency": "EUR",
+          "scope": "total",
+          "confidence": "reported",
+          "note": "Investment value of EUR 1.391 billion as stated by the transport minister at the financial close ceremony on 8 October 2025; Daily Sabah gives a total investment of EUR 1.4 billion. The price year is not stated."
+        }
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build-operate-transfer. Debt financing of EUR 974 million (USD 1.13 billion) from Turkish banks reached financial close on 8 October 2025. This is financing, not construction cost.",
+            "ro": "Construiește-operează-transferă. Finanțarea prin credit de 974 de milioane EUR (1,13 miliarde USD) de la bănci turce a atins închiderea financiară la 8 octombrie 2025. Este finanțare, nu cost de construcție."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "FNS Otoyol Yatırım ve İşletme A.Ş.",
+          "role": "concessionaire"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-10-14",
+          "sourceRef": "kgm-faaliyet-2025"
+        }
+      ],
+      "geometryRef": "ankara-kirikkale-delice",
+      "sourceRefs": [
+        "kgm-faaliyet-2025",
+        "clifford-chance-fns-financing",
+        "dailysabah-yik-loan",
+        "yeniankara-financial-close",
+        "osm-yik"
+      ],
+      "note": {
+        "en": "KGM states the project as 120 km: 101 km of 2x3 motorway plus 19 km of 2x2 connecting roads. lengthKm is the 101 km main line; the connecting roads are not drawn. The KGM 2025 activity report records the implementation agreement as signed on 14 October 2024 and construction as continuing; the date is entered as an award event because the report gives no separate award date. The report puts expropriation at 44.83% complete over km 0+000–100+500. The minister gave a 3-year contract period at the financial close ceremony. No groundbreaking or construction start date is recorded, because the report passage carrying the 25 July 2025 groundbreaking date and the 6 October 2025 effective date reads as belonging to the Antalya–Alanya paragraph beside it.",
+        "ro": "KGM indică proiectul ca 120 km: 101 km de autostradă 2x3 plus 19 km de drumuri de legătură 2x2. lengthKm este magistrala de 101 km; drumurile de legătură nu sunt desenate. Raportul de activitate KGM 2025 consemnează acordul de implementare ca semnat la 14 octombrie 2024 și lucrările ca fiind în desfășurare; data este introdusă ca eveniment de atribuire, deoarece raportul nu dă o dată separată de atribuire. Raportul arată exproprierile finalizate în proporție de 44,83% pe km 0+000–100+500. Ministrul a indicat o perioadă contractuală de 3 ani la ceremonia de închidere financiară. Nu se înregistrează data începerii lucrărilor, deoarece pasajul din raport cu ceremonia de început din 25 iulie 2025 și intrarea în vigoare din 6 octombrie 2025 aparține paragrafului Antalya–Alanya alăturat."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "kgm-faaliyet-2025",
+      "title": "KGM 2025 Faaliyet Raporu, p. 128–129: Ankara – Kırıkkale – Delice Otoyolu Projesi (120 km, 101 km 2x3 + 19 km 2x2; uygulama sözleşmesi 14.10.2024; target 2028; kamulaştırma km 0+000–100+500)",
+      "url": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/MerkezBirimler/Kurumsal/FaaliyetRaporu/2025Faaliyet.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "clifford-chance-fns-financing",
+      "title": "Clifford Chance: advises lenders on the financing for the Ankara-Kırıkkale-Delice Motorway Project (FNS Otoyol Yatırım ve İşletme A.Ş., 120 km, BOT)",
+      "url": "https://www.cliffordchance.com/news/news/2025/11/clifford-chance-advises-lenders-on-the-financing-for-ankara.html",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "dailysabah-yik-loan",
+      "title": "Daily Sabah: Major highway project in central Türkiye secures $1.13B loan (EUR 974 million loan, total investment EUR 1.4 billion)",
+      "url": "https://www.dailysabah.com/business/transportation/major-highway-project-in-central-turkiye-secures-113b-loan/amp",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "yeniankara-financial-close",
+      "title": "Yeni Ankara: Bakan Uraloğlu Ankara-Kırıkkale-Delice Otoyolu finansal kapanış töreninde konuştu (8 October 2025; investment EUR 1.391 billion; 3-year contract period)",
+      "url": "https://www.yeniankara.com.tr/guncel/bakan-uraloglu-ankara-kirikkale-delice-otoyolu-finansal-kapanis-toreninde-konustu-132649",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-yik",
+      "title": "OpenStreetMap contributors: highway=construction ways of the Ankara-Kırıkkale-Delice Otoyolu (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1311111485",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

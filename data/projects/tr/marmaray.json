@@ -1,0 +1,204 @@
+{
+  "id": "tr-marmaray",
+  "country": "tr",
+  "city": "tr-istanbul",
+  "category": "railway",
+  "name": {
+    "en": "Marmaray (Halkalı – Gebze)",
+    "ro": "Marmaray (Halkalı – Gebze)"
+  },
+  "description": {
+    "en": "Commuter rail line of about 76 km through Istanbul, joining the European and Anatolian suburban lines under the Bosphorus. The 13.6 km Kazlıçeşme–Ayrılık Çeşmesi section, with an immersed-tube crossing, opened on 29 October 2013. The suburban lines were rebuilt from two tracks to three between Halkalı and Kazlıçeşme and between Ayrılık Çeşmesi and Gebze, about 63 km in all, and that section opened in March 2019.",
+    "ro": "Linie feroviară de navetiști de circa 76 km prin Istanbul, care leagă liniile suburbane de pe malul european și de pe cel anatolian pe sub Bosfor. Secțiunea Kazlıçeşme–Ayrılık Çeşmesi, de 13,6 km, cu traversare printr-un tunel imersat, a fost deschisă pe 29 octombrie 2013. Liniile suburbane au fost refăcute de la două la trei fire între Halkalı și Kazlıçeşme și între Ayrılık Çeşmesi și Gebze, circa 63 km în total, iar acea secțiune a fost deschisă în martie 2019."
+  },
+  "operator": "tr-uab-aygm",
+  "lots": [
+    {
+      "id": "bc1-bosphorus-tunnel",
+      "name": {
+        "en": "BC1: Kazlıçeşme – Ayrılık Çeşmesi (Bosphorus tunnel)",
+        "ro": "BC1: Kazlıçeşme – Ayrılık Çeşmesi (tunelul Bosfor)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2004-05",
+        "constructionStart": "2004-10",
+        "opened": "2013-10-29"
+      },
+      "lengthKm": 13.6,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 13.2,
+        "tracks": 2,
+        "stationCount": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2004-05",
+          "note": {
+            "en": "BC1 contract signed with the TGN joint venture.",
+            "ro": "Contractul BC1 a fost semnat cu asocierea TGN."
+          },
+          "sourceRef": "wikipedia-tr-marmaray"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2004-10",
+          "sourceRef": "wikipedia-tr-marmaray"
+        },
+        {
+          "kind": "opened",
+          "date": "2013-10-29",
+          "sourceRef": "aygm-marmaray"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "programme": "jica-loan",
+          "detail": {
+            "en": "Japan International Cooperation Agency had lent 111 billion yen by April 2006, for the whole Marmaray project.",
+            "ro": "Agenția Japoneză de Cooperare Internațională împrumutase 111 miliarde de yeni până în aprilie 2006, pentru întregul proiect Marmaray."
+          }
+        },
+        {
+          "source": "loan",
+          "programme": "eib-loan",
+          "detail": {
+            "en": "European Investment Bank had lent 1.05 billion euro by April 2006, for the whole Marmaray project.",
+            "ro": "Banca Europeană de Investiții împrumutase 1,05 miliarde de euro până în aprilie 2006, pentru întregul proiect Marmaray."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Taisei – Gama – Nurol (TGN)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Includes the immersed tube under the Bosphorus (1.4 km), 9.4 km of bored tunnels, 2.4 km of cut-and-cover tunnels and three new underground stations. The tunnel works were completed on 23 September 2008, and the line opened on 29 October 2013 after archaeological finds at the Yenikapı and Sirkeci sites. English Wikipedia gives May 2004 as the construction start and the Turkish article October 2004; the later date is used. The drawn centreline between the Kazlıçeşme and Ayrılık Çeşmesi stations measures 13.0 km, against 13.6 km stated by AYGM for the section including portals.",
+        "ro": "Cuprinde tubul imersat de sub Bosfor (1,4 km), 9,4 km de tuneluri forate, 2,4 km de tuneluri executate în șanț deschis și trei stații subterane noi. Lucrările la tunel au fost încheiate pe 23 septembrie 2008, iar linia a fost deschisă pe 29 octombrie 2013, după descoperirile arheologice de la Yenikapı și Sirkeci. Wikipedia în limba engleză indică mai 2004 ca început al lucrărilor, iar articolul în limba turcă octombrie 2004; este folosită data mai târzie. Axa desenată între stațiile Kazlıçeşme și Ayrılık Çeşmesi măsoară 13,0 km, față de 13,6 km indicați de AYGM pentru secțiune, cu portaluri."
+      },
+      "sourceRefs": [
+        "aygm-marmaray",
+        "aygm-gebze-halkali",
+        "wikipedia-en-marmaray",
+        "wikipedia-tr-marmaray",
+        "osm-marmaray"
+      ],
+      "geometryRef": "bc1-bosphorus-tunnel"
+    },
+    {
+      "id": "cr3-halkali-gebze-upgrade",
+      "name": {
+        "en": "CR3: Halkalı – Kazlıçeşme and Ayrılık Çeşmesi – Gebze suburban upgrade",
+        "ro": "CR3: modernizarea liniilor suburbane Halkalı – Kazlıçeşme și Ayrılık Çeşmesi – Gebze"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2011",
+        "opened": "2019-03-12"
+      },
+      "lengthKm": 63,
+      "profile": {
+        "works": "upgrade",
+        "tracks": 3
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011",
+          "note": {
+            "en": "Replacement contract awarded to OHL and Invensys Rail after the first CR1 contractor could not complete the work.",
+            "ro": "Contract de înlocuire atribuit OHL și Invensys Rail, după ce primul contractant CR1 nu a putut finaliza lucrările."
+          },
+          "sourceRef": "wikipedia-en-marmaray"
+        },
+        {
+          "kind": "opened",
+          "date": "2019-03-12",
+          "sourceRef": "wikipedia-en-marmaray"
+        }
+      ],
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 932.8,
+              "currency": "EUR",
+              "year": 2011
+            },
+            "date": "2011",
+            "note": "Value of the CR3 replacement contract as reported by Railway Gazette International (3 November 2011), via Wikipedia. VAT treatment not stated.",
+            "sourceRef": "wikipedia-en-marmaray"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "OHL – Invensys Rail",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 932.8,
+          "currency": "EUR",
+          "year": 2011,
+          "note": "As reported by Railway Gazette International (3 November 2011), via Wikipedia. VAT treatment not stated."
+        }
+      },
+      "note": {
+        "en": "Rebuilds the old suburban lines from two tracks to three, one of them used by high-speed trains, on the European side from Halkalı to Kazlıçeşme and on the Anatolian side from Ayrılık Çeşmesi to Gebze. The work was first let as CR1 to the AMD consortium (Alstom, Marubeni, Doğuş), which did not complete it, and was re-tendered as CR3 in early 2011. The old lines were closed for rebuilding in 2012 (Pendik–Gebze) and 2013 (Sirkeci–Halkalı and Haydarpaşa–Pendik). The line opened on 12 March 2019, the date of the opening ceremony; the AYGM page gives 13 March 2019 as the completion date. The drawn centreline measures 62.1 km against the 63 km stated. Gebze to Halkalı takes 115 minutes.",
+        "ro": "Reface vechile linii suburbane de la două la trei fire, dintre care unul folosit de trenurile de mare viteză, pe partea europeană de la Halkalı la Kazlıçeşme și pe partea anatoliană de la Ayrılık Çeşmesi la Gebze. Lucrarea a fost atribuită inițial ca CR1 consorțiului AMD (Alstom, Marubeni, Doğuş), care nu a finalizat-o, și a fost relicitată ca CR3 la începutul lui 2011. Vechile linii au fost închise pentru reconstrucție în 2012 (Pendik–Gebze) și 2013 (Sirkeci–Halkalı și Haydarpaşa–Pendik). Linia a fost deschisă pe 12 martie 2019, data ceremoniei de deschidere; pagina AYGM indică 13 martie 2019 ca dată a finalizării. Axa desenată măsoară 62,1 km, față de 63 km indicați. Călătoria Gebze–Halkalı durează 115 minute."
+      },
+      "sourceRefs": [
+        "aygm-gebze-halkali",
+        "wikipedia-en-marmaray",
+        "wikipedia-tr-marmaray",
+        "osm-marmaray"
+      ],
+      "geometryRef": "cr3-halkali-gebze-upgrade"
+    }
+  ],
+  "sources": [
+    {
+      "id": "aygm-marmaray",
+      "title": "AYGM: Marmaray (Tamamlanma Tarihi 29 Ekim 2013)",
+      "url": "https://aygm.uab.gov.tr/projeler/marmaray/",
+      "publisher": "Altyapı Yatırımları Genel Müdürlüğü",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "aygm-gebze-halkali",
+      "title": "AYGM: Gebze-Halkalı Banliyö Hatlarının İyileştirilmesi (29 Ekim 2013 tarihinde hizmete açılan 13,6 kilometrelik Marmaray hattı; Tamamlanma Tarihi 13 Mart 2019)",
+      "url": "https://aygm.uab.gov.tr/projeler/gebze-halkali-banliyo-hatlarinin-iyilestirilmesi/",
+      "publisher": "Altyapı Yatırımları Genel Müdürlüğü",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-marmaray",
+      "title": "Wikipedia: Marmaray (63 km upgraded; OHL and Invensys Rail contract worth €932.8 million; JICA 111 billion yen and EIB 1.05 billion euro by April 2006)",
+      "url": "https://en.wikipedia.org/wiki/Marmaray",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-tr-marmaray",
+      "title": "Vikipedi: Marmaray (BC1 sözleşmesi Mayıs 2004, TGN ortak girişimi; yapım işlerine Ekim 2004; 43 istasyon)",
+      "url": "https://tr.wikipedia.org/wiki/Marmaray",
+      "publisher": "Vikipedi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-marmaray",
+      "title": "OpenStreetMap contributors: route relation 9987139, Marmaray Gebze – Halkalı (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/9987139",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "tr-o6-kinali-canakkale",
+  "country": "tr",
+  "category": "highway",
+  "operator": "tr-cok-as",
+  "name": {
+    "en": "O-6 Kınalı–Tekirdağ–Çanakkale–Savaştepe Motorway (Kınalı–Çanakkale)",
+    "ro": "Autostrada O-6 Kınalı–Tekirdağ–Çanakkale–Savaştepe (Kınalı–Çanakkale)"
+  },
+  "description": {
+    "en": "Motorway from the O-3 at Kınalı in East Thrace to Çanakkale, crossing the Dardanelles on the 1915 Çanakkale Bridge. The Malkara–Çanakkale section (89 km of motorway plus 12 km of connector roads, bridge included) opened on 18 March 2022 as a build-operate-transfer concession held by ÇOK A.Ş. The Kınalı–Malkara section (107 km of motorway plus 20 km of connector roads) is under construction, with KGM targeting completion by the end of 2028. Lengths here are main-line kilometres; KGM's 101 km and 127 km totals include the connector roads. The Çanakkale–Savaştepe continuation is not covered: no source consulted gives its status.",
+    "ro": "Autostradă de la O-3 la Kınalı, în Tracia de Est, până la Çanakkale, care traversează strâmtoarea Dardanele pe Podul 1915 Çanakkale. Sectorul Malkara–Çanakkale (89 km de autostradă și 12 km de drumuri de legătură, podul inclus) a fost deschis la 18 martie 2022, în regim de concesiune construire-exploatare-transfer deținută de ÇOK A.Ş. Sectorul Kınalı–Malkara (107 km de autostradă și 20 km de drumuri de legătură) este în construcție, KGM țintind finalizarea până la sfârșitul lui 2028. Lungimile de aici sunt kilometri de traseu principal; totalurile KGM de 101 km și 127 km includ drumurile de legătură. Continuarea Çanakkale–Savaştepe nu este acoperită: nicio sursă consultată nu îi indică starea."
+  },
+  "lots": [
+    {
+      "id": "kinali-malkara",
+      "name": {
+        "en": "Kınalı – Malkara",
+        "ro": "Kınalı – Malkara"
+      },
+      "status": "under_construction",
+      "dates": {
+        "expectedOpening": "2028-12"
+      },
+      "lengthKm": 107,
+      "profile": {
+        "lanes": 6,
+        "tolled": true,
+        "bridgeCount": 20
+      },
+      "note": {
+        "en": "Starts at the Kınalı interchange of the O-3 and ends at km 106+840, where it joins the Malkara–Çanakkale section. KGM reports 107 km of 2x3 motorway plus 20 km of connector roads, 127 km in total; the lot length is the 107 km main line. The foundation was laid at a ceremony on 18 March 2025, and the 2025 report lists ground survey, design, expropriation, earthworks and structures as under way. The 2028 date is KGM's stated target. The 20 bridges (1,172 m in total) are those listed in the 2025 report. Length drawn from OpenStreetMap is 103.6 km, one carriageway.",
+        "ro": "Începe la nodul Kınalı de pe O-3 și se termină la km 106+840, unde se leagă de sectorul Malkara–Çanakkale. KGM raportează 107 km de autostradă 2x3 plus 20 km de drumuri de legătură, în total 127 km; lungimea lotului este traseul principal de 107 km. Piatra de temelie a fost pusă la o ceremonie din 18 martie 2025, iar raportul pe 2025 menționează studii geotehnice, proiectare, exproprieri, terasamente și lucrări de artă în desfășurare. Data de 2028 este ținta declarată de KGM. Cele 20 de poduri (1.172 m în total) sunt cele din raportul pe 2025. Lungimea trasată din OpenStreetMap este de 103,6 km, o singură cale de rulare."
+      },
+      "sourceRefs": [
+        "kgm-faaliyet-raporu-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "kinali-malkara"
+    },
+    {
+      "id": "malkara-canakkale",
+      "name": {
+        "en": "Malkara – Çanakkale (including the 1915 Çanakkale Bridge)",
+        "ro": "Malkara – Çanakkale (inclusiv Podul 1915 Çanakkale)"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-03-21",
+        "opened": "2022-03-18"
+      },
+      "lengthKm": 89,
+      "profile": {
+        "lanes": 6,
+        "tolled": true
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 10354.58,
+              "currency": "TRY",
+              "year": 2017,
+              "scope": "total",
+              "note": "Total investment amount ('Toplam Yatırım Tutarı') of the concession, 10,354,576,201.85 TRY at 2017 prices, for the Malkara–Çanakkale section including the 1915 Çanakkale Bridge."
+            },
+            "date": "2017-03-21",
+            "sourceRef": "1915canakkale-kunye"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 10354.58,
+          "currency": "TRY",
+          "year": 2017,
+          "scope": "total"
+        }
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2017-03-21",
+          "note": {
+            "en": "Implementation agreement signed, after the tender of 26 January 2017. It came into force on 16 March 2018. The groundbreaking ceremony of 18 March 2017 came before the signature.",
+            "ro": "Contractul de implementare a fost semnat, după licitația din 26 ianuarie 2017. A intrat în vigoare la 16 martie 2018. Ceremonia de începere a lucrărilor din 18 martie 2017 a precedat semnarea."
+          },
+          "sourceRef": "1915canakkale-kunye"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-03-18",
+          "sourceRef": "kgm-ppp-regional-directorate"
+        }
+      ],
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Build-operate-transfer concession with a term of 16 years, 2 months and 12 days. Loan agreements with 25 financial institutions from 10 countries were signed on 16 March 2018: EUR 2.265 billion over 15 years, five of them without repayment. The loan figure is financing, not construction cost, and is not comparable with the 2017 lira investment amount.",
+            "ro": "Concesiune construire-exploatare-transfer pe 16 ani, 2 luni și 12 zile. La 16 martie 2018 au fost semnate contracte de credit cu 25 de instituții financiare din 10 țări: 2,265 miliarde EUR pe 15 ani, dintre care cinci fără rambursare. Creditul reprezintă finanțare, nu cost de construcție, și nu este comparabil cu suma investiției în lire din 2017."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Çanakkale Otoyol ve Köprüsü İnşaat Yatırım ve İşletme A.Ş. (ÇOK A.Ş.)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "KGM reports 89 km of 2x3 motorway plus 12 km of connector roads, 101 km in total; the lot length is the 89 km main line, which includes the bridge. The section runs from km 106+840 south of Malkara to km 195+797 on the Asian side. The concessionaire ÇOK A.Ş. is owned by the investor firms DL E&C, Limak, SK ecoplant and Yapı Merkezi; the supervising consultant is the Tekfen–T Engineering joint venture. The concession company is not recorded as the builder. Length drawn from OpenStreetMap is 88.6 km, one carriageway. The 12 interchanges, 43 overpasses and 4 service areas listed on the operator's project page are not broken out. The 1915 Çanakkale Bridge is part of this lot, and the concession figure covers both. It is a suspension bridge across the Dardanelles between Sütlüce (Europe) and Şekerkaya near Lapseki (Asia), 2x3 lanes. KGM gives a main span of 2,023 m, 770 m side spans, a bridge length of 3,563 m and, with 365 m and 680 m approach viaducts, a total crossing of 4,608 m. The groundbreaking ceremony was held on 18 March 2017, before the agreement was signed. It opened with the section on 18 March 2022.",
+        "ro": "KGM raportează 89 km de autostradă 2x3 plus 12 km de drumuri de legătură, în total 101 km; lungimea lotului este traseul principal de 89 km, care include podul. Sectorul merge de la km 106+840, la sud de Malkara, până la km 195+797 pe malul asiatic. Concesionarul ÇOK A.Ş. este deținut de firmele investitoare DL E&C, Limak, SK ecoplant și Yapı Merkezi; consultantul de supervizare este asocierea Tekfen–T Engineering. Societatea concesionară nu este înregistrată drept constructor. Lungimea trasată din OpenStreetMap este de 88,6 km, o singură cale de rulare. Cele 12 noduri, 43 de pasaje superioare și 4 zone de servicii din pagina proiectului a operatorului nu sunt detaliate. Podul 1915 Çanakkale face parte din acest lot, iar suma concesiunii le acoperă pe amândouă. Este un pod suspendat peste Dardanele între Sütlüce (Europa) și Şekerkaya, lângă Lapseki (Asia), cu 2x3 benzi. KGM indică o deschidere principală de 2.023 m, deschideri laterale de 770 m, o lungime a podului de 3.563 m și, cu viaductele de acces de 365 m și 680 m, o traversare totală de 4.608 m. Ceremonia de începere a lucrărilor a avut loc la 18 martie 2017, înainte de semnarea contractului. A fost deschis odată cu sectorul, la 18 martie 2022."
+      },
+      "sourceRefs": [
+        "1915canakkale-kunye",
+        "1915canakkale-proje-bilgisi",
+        "1915canakkale-proje-finansmani",
+        "kgm-bridge-page",
+        "1915canakkale-zaman-tuneli",
+        "kgm-ppp-regional-directorate",
+        "kgm-faaliyet-raporu-2025",
+        "osm-contributors"
+      ],
+      "geometryRef": "malkara-canakkale"
+    }
+  ],
+  "sources": [
+    {
+      "id": "1915canakkale-kunye",
+      "title": "1915Çanakkale: Projenin Künyesi (tender 26/01/2017, agreement signed 21/03/2017, in force 16/03/2018, term 16 years 2 months 12 days, total investment TRY 10,354,576,201.85 (2017), investor firms)",
+      "url": "https://www.1915canakkale.com/hakkinda/projenin-kunyesi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "1915canakkale-proje-bilgisi",
+      "title": "1915Çanakkale: Proje Bilgisi (89 km motorway and 12 km connector roads, interchanges, structures)",
+      "url": "https://www.1915canakkale.com/hakkinda/proje-bilgisi",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "1915canakkale-proje-finansmani",
+      "title": "1915Çanakkale: Proje Finansmanı (EUR 2.265 billion loans signed 16 March 2018)",
+      "url": "https://www.1915canakkale.com/hakkinda/proje-finansmani",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "1915canakkale-zaman-tuneli",
+      "title": "1915Çanakkale: Zaman Tüneli (groundbreaking ceremony 18 March 2017)",
+      "url": "https://www.1915canakkale.com/zaman-tuneli",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "kgm-ppp-regional-directorate",
+      "title": "Karayolları Genel Müdürlüğü: Kamu Özel Sektör Ortaklığı Bölge Müdürlüğü (Malkara–Çanakkale 89 km motorway and 12 km connector roads, opened 18.03.2022)",
+      "url": "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Bolgeler/KamuOzel/KamuOzel.aspx",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "kgm-bridge-page",
+      "title": "Karayolları Genel Müdürlüğü: 1915 Çanakkale Köprüsü proje sayfası (2,023 m main span, 3,563 m bridge, 4,608 m with approach viaducts)",
+      "url": "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=148",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "kgm-faaliyet-raporu-2025",
+      "title": "Karayolları Genel Müdürlüğü: 2025 Faaliyet Raporu (Kınalı–Malkara 107 km plus 20 km connectors, target end 2028; Malkara–Çanakkale opened 18.03.2022)",
+      "url": "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/MerkezBirimler/Kurumsal/FaaliyetRaporu/2025Faaliyet.pdf",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors: route relation 11014852, Kınalı-Tekirdağ-Çanakkale-Balıkesir Otoyolu (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/11014852",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
