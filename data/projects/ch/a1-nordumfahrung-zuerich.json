@@ -1,0 +1,262 @@
+{
+  "id": "ch-a1-nordumfahrung-zuerich",
+  "country": "ch",
+  "category": "highway",
+  "name": {
+    "en": "A1 Nordumfahrung Zürich (Gubrist third tube and widening)",
+    "ro": "A1 Nordumfahrung Zürich (al treilea tub Gubrist și lărgire)"
+  },
+  "description": {
+    "en": "Widening of the A1/A4 northern bypass of Zürich between the Limmattalerkreuz and the Verzweigung Zürich Nord to three lanes per direction. The bypass carries more than 120,000 vehicles a day. The works comprise a third tube of the Gubrist tunnel, opened in 2023, the six-lane widening east of the tunnel finished in 2020, a 580 m cover at Katzensee, interchange changes at Affoltern and Weiningen, and renovation of the two 1985 tubes through early 2028. Lots cover the new and upgraded works, not the whole 1985 road. ASTRA's cost page is an image and could not be read, so only the Katzensee cover and the third tube carry a figure.",
+    "ro": "Lărgirea ocolitoarei nordice A1/A4 a Zürichului, între Limmattalerkreuz și Verzweigung Zürich Nord, la trei benzi pe sens. Ocolitoarea are peste 120.000 de vehicule pe zi. Lucrările includ al treilea tub al tunelului Gubrist, deschis în 2023, lărgirea la șase benzi la est de tunel, terminată în 2020, o acoperire de 580 m la Katzensee, modificări ale nodurilor Affoltern și Weiningen și renovarea celor două tuburi din 1985 până la începutul lui 2028. Loturile acoperă lucrările noi și de modernizare, nu întregul drum din 1985. Pagina ASTRA cu costurile este o imagine și nu a putut fi citită, deci doar acoperirea Katzensee și al treilea tub au o cifră."
+  },
+  "operator": "ch-astra",
+  "lots": [
+    {
+      "id": "trassee-gubrist-ost-zuerich-nord",
+      "name": {
+        "en": "Gubrist east portal – Zürich Nord (six-lane widening)",
+        "ro": "Portalul estic Gubrist – Zürich Nord (lărgire la șase benzi)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2016",
+        "opened": "2020"
+      },
+      "lengthKm": 6.79,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2016",
+          "sourceRef": "astra-projektablauf",
+          "note": {
+            "en": "Start of the 2016–2020 works period in ASTRA's schedule table; preparatory work 2015–2016.",
+            "ro": "Începutul perioadei de lucrări 2016–2020 din tabelul ASTRA; lucrări pregătitoare 2015–2016."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2020",
+          "sourceRef": "astra-projektablauf"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Eastbound carriageway from the Gubrist east portal (Regensdorf) to the Verzweigung Zürich Nord, on the existing A1/A4 opened in 1985. ASTRA's schedule table gives the works as years only (2016–2020), so the opening is recorded as 2020. It includes the Affoltern interchange rebuild, which ASTRA reports as done without a date, and the 580 m Katzensee cover, which is also its own lot.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Calea de rulare spre est de la portalul estic Gubrist (Regensdorf) până la Verzweigung Zürich Nord, pe A1/A4 existentă, deschisă în 1985. Tabelul ASTRA indică lucrările doar ca ani (2016–2020), deci deschiderea este înregistrată ca 2020. Include refacerea nodului Affoltern, raportată de ASTRA ca finalizată fără dată, și acoperirea Katzensee de 580 m, care este și lot separat."
+      },
+      "sourceRefs": [
+        "astra-overview",
+        "astra-projektablauf",
+        "astra-anschluesse",
+        "wikipedia-gubristtunnel",
+        "osm-geometry"
+      ],
+      "geometryRef": "trassee-gubrist-ost-zuerich-nord"
+    },
+    {
+      "id": "gubrist-dritte-roehre",
+      "name": {
+        "en": "Gubrist tunnel, third tube",
+        "ro": "Tunelul Gubrist, al treilea tub"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2016",
+        "opened": "2023-07-03"
+      },
+      "lengthKm": 3.41,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "outturn",
+            "date": "2023",
+            "money": {
+              "amount": 565,
+              "currency": "CHF",
+              "scope": "total",
+              "confidence": "reported",
+              "note": "Stated as about CHF 565 million for the third tube; price year not given."
+            },
+            "sourceRef": "wikipedia-gubristtunnel"
+          }
+        ]
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2016",
+          "sourceRef": "astra-projektablauf"
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2023-04-20",
+          "sourceRef": "astra-gubrist-3",
+          "note": {
+            "en": "First traffic on two lanes.",
+            "ro": "Primul trafic pe două benzi."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2023-07-03",
+          "sourceRef": "astra-gubrist-3",
+          "note": {
+            "en": "Official opening, all three lanes.",
+            "ro": "Deschiderea oficială, pe toate cele trei benzi."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Three-lane tube towards Bern and Basel, about 16 m excavation diameter, breakthrough 22 September 2020. ASTRA's schedule table lists preparatory work 2014–2015 and works 2016–2022; the Wikipedia (de) infobox gives November 2017 as start. Traffic first ran on 20 April 2023 on two lanes, and the tube was opened officially on all three lanes on 3 July 2023. The CHF 565 million is Wikipedia's figure (citing NZZ) and is not on the ASTRA pages. Published tunnel lengths vary (3.23 km to 3.31 km in Wikipedia); the drawn length is the whole mapped tube.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Tub cu trei benzi spre Berna și Basel, diametru de excavare de circa 16 m, străpungere la 22 septembrie 2020. Tabelul ASTRA indică lucrări pregătitoare 2014–2015 și lucrări 2016–2022; fișa Wikipedia (de) indică noiembrie 2017 ca început. Traficul a rulat prima dată la 20 aprilie 2023 pe două benzi, iar tubul a fost deschis oficial pe toate trei benzile la 3 iulie 2023. Cele 565 milioane CHF provin din Wikipedia (cu trimitere la NZZ) și nu apar pe paginile ASTRA. Lungimile publicate ale tunelului variază (3,23 km până la 3,31 km în Wikipedia); lungimea desenată este întregul tub cartografiat."
+      },
+      "sourceRefs": [
+        "astra-gubrist-3",
+        "astra-projektablauf",
+        "wikipedia-gubristtunnel",
+        "osm-geometry"
+      ],
+      "geometryRef": "gubrist-dritte-roehre"
+    },
+    {
+      "id": "gubrist-sanierung-roehren-1-2",
+      "name": {
+        "en": "Gubrist tunnel, renovation of tubes 1 and 2",
+        "ro": "Tunelul Gubrist, renovarea tuburilor 1 și 2"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2023",
+        "expectedOpening": "2028"
+      },
+      "lengthKm": 3.38,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2023",
+          "sourceRef": "astra-sanierung",
+          "note": {
+            "en": "Renovation of the second tube began after the third tube opened in April 2023.",
+            "ro": "Renovarea celui de-al doilea tub a început după deschiderea celui de-al treilea tub, în aprilie 2023."
+          }
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. The two 1985 tubes (two lanes each, towards St. Gallen) are renovated one after the other: lowered carriageway, new drainage and safety equipment. ASTRA gives the works as 2023 to early 2028. Its overview page says traffic will run through all three tubes from 2028 in the introduction and from 2027 in a later section. Wikipedia (de) reports the second tube's renovation completed at the end of November 2025, citing Tages-Anzeiger; ASTRA's pages do not say so. The tubes carry traffic throughout, so the lot is an upgrade of an existing road.",
+        "ro": "Lungime măsurată din geometria OpenStreetMap. Cele două tuburi din 1985 (două benzi fiecare, spre St. Gallen) sunt renovate pe rând: carosabil coborât, drenaj și echipamente de siguranță noi. ASTRA indică lucrările din 2023 până la începutul lui 2028. Pagina de prezentare spune că traficul va rula prin toate cele trei tuburi din 2028 în introducere și din 2027 într-o secțiune ulterioară. Wikipedia (de) raportează renovarea celui de-al doilea tub încheiată la sfârșitul lui noiembrie 2025, cu trimitere la Tages-Anzeiger; paginile ASTRA nu o spun. Tuburile rămân în trafic pe toată durata, deci lotul este o modernizare a unui drum existent."
+      },
+      "sourceRefs": [
+        "astra-overview",
+        "astra-sanierung",
+        "astra-projektablauf",
+        "wikipedia-gubristtunnel",
+        "osm-geometry"
+      ],
+      "geometryRef": "gubrist-sanierung-roehren-1-2"
+    },
+    {
+      "id": "katzensee-ueberdeckung",
+      "name": {
+        "en": "Katzensee cover",
+        "ro": "Acoperirea Katzensee"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2020"
+      },
+      "lengthKm": 0.58,
+      "cost": {
+        "estimated": {
+          "amount": 114,
+          "currency": "CHF",
+          "year": 2006,
+          "scope": "total",
+          "note": "Total cost of the cover at April 2006 price base: federal share CHF 74.1 million, canton of Zürich CHF 22.8 million, city of Zürich CHF 17.1 million."
+        }
+      },
+      "note": {
+        "en": "The A1 is covered over 580 m between Katzenseestrasse and Horensteinstrasse. ASTRA states the construction was completed in 2020 and gives no start date. The cover compensates the land taken by the six-lane widening and serves as a wildlife crossing. The CHF 114 million is ASTRA's total cost at April 2006 prices, not an outturn. The cover sits inside the Gubrist east portal – Zürich Nord lot, and the drawn line is the OpenStreetMap tunnel way (586 m).",
+        "ro": "A1 este acoperită pe 580 m între Katzenseestrasse și Horensteinstrasse. ASTRA indică lucrarea ca finalizată în 2020 și nu dă data începerii. Acoperirea compensează terenul ocupat de lărgirea la șase benzi și servește drept pasaj pentru animale sălbatice. Cele 114 milioane CHF sunt costul total ASTRA la prețurile din aprilie 2006, nu un cost final. Acoperirea se află în lotul portalul estic Gubrist – Zürich Nord, iar linia desenată este tronsonul de tunel din OpenStreetMap (586 m)."
+      },
+      "sourceRefs": [
+        "astra-katzensee",
+        "osm-geometry"
+      ],
+      "geometryRef": "katzensee-ueberdeckung"
+    },
+    {
+      "id": "weiningen-halbanschluss-ueberdeckung",
+      "name": {
+        "en": "Weiningen cover and half-junction",
+        "ro": "Acoperirea și semi-nodul Weiningen"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2021"
+      },
+      "lengthKm": 0.1,
+      "note": {
+        "en": "A 100 m cover extends the Gubrist tunnel towards the Limmattalerkreuz, and the Weiningen half-junction moves 200 m in the same direction. ASTRA's schedule table gives 2021–2027; the third-tube page says completion is planned for 2026. No opening date is recorded. The drawn line is a 100 m piece of the eastbound approach west of the existing portal, an approximation of the cover.",
+        "ro": "O acoperire de 100 m prelungește tunelul Gubrist spre Limmattalerkreuz, iar semi-nodul Weiningen se mută cu 200 m în aceeași direcție. Tabelul ASTRA indică 2021–2027; pagina despre al treilea tub spune că finalizarea este planificată pentru 2026. Nu se înregistrează o dată de deschidere. Linia desenată este un segment de 100 m din accesul spre est, la vest de portalul existent, o aproximare a acoperirii."
+      },
+      "sourceRefs": [
+        "astra-anschluesse",
+        "astra-gubrist-3",
+        "astra-projektablauf",
+        "osm-geometry"
+      ],
+      "geometryRef": "weiningen-halbanschluss-ueberdeckung"
+    }
+  ],
+  "sources": [
+    {
+      "id": "astra-overview",
+      "title": "A1 Ausbau Nordumfahrung Zürich",
+      "url": "https://www.astra.admin.ch/de/a1-ausbau-nordumfahrung-zuerich-de",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "astra-gubrist-3",
+      "title": "3. Röhre Gubristtunnel",
+      "url": "https://www.astra.admin.ch/de/a1-ausbau-nordumfahrung-zuerich-projekt-im-detail-3-roehre-gubristtunnel-de",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "astra-sanierung",
+      "title": "Sanierung der 1. und 2. Röhre",
+      "url": "https://www.astra.admin.ch/de/a1-ausbau-nordumfahrung-zuerich-projekt-im-detail-sanierung-der-1-und-2-roehre-de",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "astra-katzensee",
+      "title": "Überdeckung Katzensee",
+      "url": "https://www.astra.admin.ch/de/a1-ausbau-nordumfahrung-zuerich-projekt-im-detail-ueberdeckung-katzensee-de",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "astra-projektablauf",
+      "title": "Projektablauf (Termine Realisierung)",
+      "url": "https://www.astra.admin.ch/de/a1-ausbau-nordumfahrung-zuerich-projekt-im-detail-projektablauf-de",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "astra-anschluesse",
+      "title": "Anpassung der Anschlüsse",
+      "url": "https://www.astra.admin.ch/de/a1-ausbau-nordumfahrung-zuerich-projekt-im-detail-anpassung-der-anschluesse-de",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-gubristtunnel",
+      "title": "Wikipedia (de): Gubristtunnel",
+      "url": "https://de.wikipedia.org/wiki/Gubristtunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-geometry",
+      "title": "OpenStreetMap contributors (ODbL): A1/A4 Nordumfahrung Zürich ways",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

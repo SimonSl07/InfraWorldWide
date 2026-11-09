@@ -1,0 +1,45 @@
+{
+  "id": "is-fjardarheidargong",
+  "country": "is",
+  "category": "tunnel",
+  "name": { "en": "Fjarðarheiðargöng", "ro": "Tunelul Fjarðarheiðargöng" },
+  "description": {
+    "en": "Planned road tunnel of about 13.5 km under Fjarðarheiði on Route 93 between Egilsstaðir and Seyðisfjörður in eastern Iceland. It would replace the pass road, Iceland's highest mountain road to a town. The project is at environmental impact assessment stage with no construction contract.",
+    "ro": "Tunel rutier planificat de aproximativ 13,5 km sub Fjarðarheiði, pe drumul 93 între Egilsstaðir și Seyðisfjörður, în estul Islandei. Ar înlocui drumul de pe pasul montan, cel mai înalt drum de munte din Islanda care duce la o localitate. Proiectul este în etapa de evaluare a impactului asupra mediului, fără contract de execuție."
+  },
+  "operator": "is-vegagerdin",
+  "sources": [
+    {
+      "id": "vegagerdin-fjardarheidargong",
+      "title": "Vegagerðin: Fjarðarheiðargöng (Staða: Umhverfismat)",
+      "url": "https://www.vegagerdin.is/verkefnin/i-undirbuningi/fjardarheidargong-3",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-fjardarheidargong",
+      "title": "Wikipedia: Fjarðarheiðargöng",
+      "url": "https://en.wikipedia.org/wiki/Fjar%C3%B0arhei%C3%B0arg%C3%B6ng",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-fjardarheidargong",
+      "title": "OpenStreetMap contributors (ODbL): Gufufoss node 3101158567 and Route 93 way 7976466, anchors of the schematic line",
+      "url": "https://www.openstreetmap.org/node/3101158567",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lots": [
+    {
+      "id": "fjardarheidargong",
+      "name": { "en": "Fjarðarheiðargöng tunnel", "ro": "Tunelul Fjarðarheiðargöng" },
+      "status": "planned",
+      "lengthKm": 13.5,
+      "note": {
+        "en": "Vegagerðin lists the status as environmental impact assessment (Umhverfismat). Detailed design of the tunnel began in autumn 2021. The 13.5 km length is from a 2015 risk analysis for a 13.5 km tunnel; Wikipedia gives 13,300 m. The English Wikipedia article says the tunnel was delayed in the 2025 national transport plan and is now estimated for some time after 2040. No cost, contract or construction date is recorded. The line is schematic: the tunnel alignment is not mapped in OpenStreetMap, and it joins the Gufufoss waterfall (the Seyðisfjörður portal is proposed opposite it) to Route 93 near Egilsstaðir.",
+        "ro": "Vegagerðin indică starea ca evaluare a impactului asupra mediului (Umhverfismat). Proiectarea detaliată a tunelului a început în toamna anului 2021. Lungimea de 13,5 km provine dintr-o analiză de risc din 2015 pentru un tunel de 13,5 km; Wikipedia indică 13.300 m. Articolul Wikipedia în engleză menționează că tunelul a fost amânat în planul național de transport din 2025 și este estimat acum pentru o dată după 2040. Nu sunt înregistrate costul, contractul sau data începerii lucrărilor. Linia este schematică: traseul tunelului nu este cartografiat în OpenStreetMap și leagă cascada Gufufoss (lângă care este propus portalul dinspre Seyðisfjörður) de drumul 93 în apropiere de Egilsstaðir."
+      },
+      "sourceRefs": ["vegagerdin-fjardarheidargong", "wikipedia-fjardarheidargong", "osm-fjardarheidargong"],
+      "geometryRef": "fjardarheidargong"
+    }
+  ]
+}

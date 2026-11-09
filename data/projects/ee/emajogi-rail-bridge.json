@@ -1,0 +1,127 @@
+{
+  "id": "ee-emajogi-rail-bridge",
+  "country": "ee",
+  "category": "bridge",
+  "name": {
+    "en": "Emajõgi railway bridge, Tartu",
+    "ro": "Podul feroviar peste Emajõgi, Tartu"
+  },
+  "description": {
+    "en": "New railway bridge over the Emajõgi north of Tartu, built beside the 60-year-old Jänese bridge, with about 2.2 km of straightened track at Maramaa and Vorbuse. The old curved alignment limited trains to 100 km/h; the new one allows up to 135 km/h.",
+    "ro": "Pod feroviar nou peste Emajõgi la nord de Tartu, construit lângă podul Jänese vechi de peste 60 de ani, cu circa 2,2 km de cale îndreptată la Maramaa și Vorbuse. Traseul vechi, cu curbe, limita trenurile la 100 km/h; cel nou permite până la 135 km/h."
+  },
+  "operator": "ee-eesti-raudtee",
+  "lots": [
+    {
+      "id": "bridge-and-realignment",
+      "name": {
+        "en": "Emajõgi bridge and track realignment",
+        "ro": "Podul peste Emajõgi și îndreptarea căii"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-11-03",
+        "opened": "2021-08-26"
+      },
+      "lengthKm": 2.2,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 4.85,
+              "currency": "EUR",
+              "year": 2020,
+              "scope": "works",
+              "note": "Contract value as stated by Eesti Raudtee; VAT treatment not stated."
+            },
+            "date": "2020-11-03",
+            "sourceRef": "evr-news-223"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "AS TREV-2 Grupp",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 4.85,
+          "currency": "EUR",
+          "year": 2020,
+          "scope": "works",
+          "note": "VAT treatment not stated."
+        }
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2020-08-18",
+          "note": {
+            "en": "Tender for the new bridge and track realignment announced; bids due 29 September 2020.",
+            "ro": "Licitație anunțată pentru podul nou și îndreptarea căii; oferte până la 29 septembrie 2020."
+          },
+          "sourceRef": "evr-news-201"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-11-03",
+          "note": {
+            "en": "Contract signed with AS TREV-2 Grupp.",
+            "ro": "Contract semnat cu AS TREV-2 Grupp."
+          },
+          "sourceRef": "evr-news-223"
+        },
+        {
+          "kind": "opened",
+          "date": "2021-08-26",
+          "note": {
+            "en": "Trains moved to the new alignment and bridge after a 72-hour closure from 23 August 2021.",
+            "ro": "Trenurile au trecut pe traseul și podul nou după o închidere de 72 de ore începând cu 23 august 2021."
+          },
+          "sourceRef": "evr-news-3034"
+        }
+      ],
+      "note": {
+        "en": "New red steel bridge with a 70 m opening and a mass of about 350 tonnes, beside the old Jänese bridge, plus about 2.2 km of straightened track at Maramaa and Vorbuse. The opening date is the planned changeover stated by Eesti Raudtee on 19 August 2021; no later completion notice was read. Sits on the Tapa–Tartu line, whose 160 km/h upgrade is recorded separately. Drawn length 2.15 km (OpenStreetMap ways of the new alignment, bridge about 0.10 km).",
+        "ro": "Pod nou din oțel roșu cu o deschidere de 70 m și o masă de circa 350 t, lângă vechiul pod Jänese, plus circa 2,2 km de cale îndreptată la Maramaa și Vorbuse. Data deschiderii este trecerea planificată anunțată de Eesti Raudtee la 19 august 2021; nu a fost citită o notificare ulterioară de finalizare. Se află pe linia Tapa–Tartu, a cărei modernizare la 160 km/h este înregistrată separat. Lungime desenată 2,15 km (căi OpenStreetMap ale traseului nou, podul circa 0,10 km)."
+      },
+      "partOf": "ee-rail-160kmh-upgrades",
+      "sourceRefs": [
+        "evr-news-201",
+        "evr-news-223",
+        "evr-news-3034",
+        "osm-emajogi"
+      ],
+      "geometryRef": "bridge-and-realignment"
+    }
+  ],
+  "sources": [
+    {
+      "id": "evr-news-201",
+      "title": "Eesti Raudtee kuulutas välja Emajõe uue raudteesilla ja rööbastee õgvenduse hanke (18.08.2020)",
+      "url": "https://www.evr.ee/et/uudised/201-eesti-raudtee-kuulutas-vaelja-emajoe-uue-raudteesilla-ja-roeoebastee-ogvenduse-hanke",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-223",
+      "title": "Eesti Raudtee sõlmis lepingu Emajõe raudteesilla ja rööbastee õgvenduse ehitustööde läbiviimiseks (03.11.2020)",
+      "url": "https://www.evr.ee/et/uudised/223-eesti-raudtee-solmis-lepingu-emajoe-raudteesilla-ja-roeoebastee-ogvenduse-ehitusoeoede-laebiviimiseks",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "evr-news-3034",
+      "title": "Emajõe uuel raudteesillal hakkavad 26. augustist sõitma rongid (19.08.2021)",
+      "url": "https://www.evr.ee/et/uudised/3034-emajoe-uuel-raudteesillal-hakkavad-26-augustist-soitma-rongid",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-emajogi",
+      "title": "OpenStreetMap contributors: Tartu–Tallinn railway ways 934782077, 934782078, 934782079 (ODbL)",
+      "url": "https://www.openstreetmap.org/way/934782078",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

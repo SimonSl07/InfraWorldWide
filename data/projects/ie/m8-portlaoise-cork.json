@@ -1,0 +1,329 @@
+{
+  "id": "ie-m8-portlaoise-cork",
+  "country": "ie",
+  "category": "highway",
+  "name": {
+    "en": "M8 Portlaoise – Cork",
+    "ro": "M8 Portlaoise – Cork"
+  },
+  "description": {
+    "en": "The M8 motorway from the M7 interchange at Aghaboe, County Laois, south through Kilkenny, Tipperary and Cork to the Dunkettle interchange at Cork. TII gives the route as 150 km, built in seven sections between 2003 and 2010, with two bypasses (Cashel and Watergrasshill) completed first. Two parts were procured as tolled PPPs: Fermoy–Rathcormac (opened October 2006) and the M8 arm of the M7/M8 scheme (opened May 2010, the last link of the Dublin–Cork route). The Glanmire Bypass, which opened in 1992 and was later redesignated, completes the route into Cork. Lots follow the schemes as TII names them; Cashel–Mitchelstown and Cullahill–Cashel are shorter on the drawn line than in the TII text.",
+    "ro": "Autostrada M8 de la nodul cu M7 de la Aghaboe, comitatul Laois, spre sud prin Kilkenny, Tipperary și Cork până la nodul Dunkettle din Cork. TII indică traseul ca având 150 km, construit în șapte sectoare între 2003 și 2010, cu două ocolitoare (Cashel și Watergrasshill) finalizate primele. Două părți au fost achiziționate ca PPP cu taxare: Fermoy–Rathcormac (deschis în octombrie 2006) și ramura M8 a schemei M7/M8 (deschisă în mai 2010, ultima legătură a traseului Dublin–Cork). Ocolitoarea Glanmire, deschisă în 1992 și redenumită ulterior, completează traseul spre Cork. Loturile urmează schemele așa cum le numește TII; Cashel–Mitchelstown și Cullahill–Cashel sunt mai scurte pe linia desenată decât în textul TII."
+  },
+  "operator": "ie-transport-infrastructure-ireland",
+  "lots": [
+    {
+      "id": "portlaoise-cullahill",
+      "name": {
+        "en": "Aghaboe (M7/M8) – Cullahill",
+        "ro": "Aghaboe (M7/M8) – Cullahill"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2007-06",
+        "constructionStart": "2007-06",
+        "opened": "2010-05-28"
+      },
+      "lengthKm": 14,
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Toll concession awarded to the Celtic Roads Group (Portlaoise) consortium in June 2007 for 30 years, covering the whole 41 km M7/M8 scheme.",
+            "ro": "Concesiune cu taxare atribuită consorțiului Celtic Roads Group (Portlaoise) în iunie 2007, pentru 30 de ani, pentru întreaga schemă M7/M8 de 41 km."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Celtic Roads Group (Portlaoise) Ltd",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Portlaoise Joint Venture (PJV)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The M8 arm of the M7/M8 PPP: the interchange at Aghaboe (M7 junction 19), then 14 km south to Cullahill. The same contract also built the 27 km M7 section from Portlaoise to Castletown, which is not part of this lot. Construction began in June 2007 and the road opened on 28 May 2010, four months ahead of schedule. Wikipedia gives EUR 491 million to build the whole 41 km scheme; that figure is not split by arm and is not recorded here. Drawn length measures 14.4 km.",
+        "ro": "Ramura M8 a PPP-ului M7/M8: nodul de la Aghaboe (nodul 19 de pe M7), apoi 14 km spre sud până la Cullahill. Același contract a construit și sectorul M7 de 27 km de la Portlaoise la Castletown, care nu face parte din acest lot. Construcția a început în iunie 2007, iar drumul a fost deschis la 28 mai 2010, cu patru luni înainte de termen. Wikipedia indică 491 de milioane EUR pentru construcția întregii scheme de 41 km; cifra nu este împărțită pe ramuri și nu este înregistrată aici. Lungimea desenată măsoară 14,4 km."
+      },
+      "sourceRefs": [
+        "decade",
+        "ar2025",
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "portlaoise-cullahill"
+    },
+    {
+      "id": "cullahill-cashel",
+      "name": {
+        "en": "Cullahill – Cashel",
+        "ro": "Cullahill – Cashel"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-11",
+        "opened": "2008-12-08"
+      },
+      "lengthKm": 39.5,
+      "cost": {
+        "actual": {
+          "amount": 434,
+          "currency": "EUR",
+          "confidence": "reported",
+          "note": "Cost to construct as stated by Wikipedia; price year not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Roadbridge Sisk JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Four interchanges (Urlingford, Twomileborris, Horse and Jockey, Cashel). Opened seven months ahead of schedule, bypassing Johnstown, Urlingford, Littleton and Horse and Jockey. Wikipedia gives the start as October 2006 and the length as 40 km; the TII figures are used. Drawn length measures 38.1 km. The EUR 434 million is a secondary-source figure.",
+        "ro": "Patru noduri (Urlingford, Twomileborris, Horse and Jockey, Cashel). Deschis cu șapte luni înainte de termen, ocolind Johnstown, Urlingford, Littleton și Horse and Jockey. Wikipedia indică începutul în octombrie 2006 și lungimea de 40 km; sunt folosite cifrele TII. Lungimea desenată măsoară 38,1 km. Cifra de 434 de milioane EUR provine dintr-o sursă secundară."
+      },
+      "sourceRefs": [
+        "decade",
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "cullahill-cashel"
+    },
+    {
+      "id": "cashel-bypass",
+      "name": {
+        "en": "Cashel Bypass",
+        "ro": "Ocolitoarea Cashel"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003-05",
+        "opened": "2004-10"
+      },
+      "lengthKm": 6.7,
+      "cost": {
+        "actual": {
+          "amount": 48,
+          "currency": "EUR",
+          "confidence": "reported",
+          "note": "Cost as stated by Wikipedia; price year not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Roadbridge Ltd",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened as a dual carriageway of the N8 with roundabouts at both ends, and redesignated a motorway on 24 September 2008, when the neighbouring schemes joined it with interchanges. The sources disagree on the opening: the TII publication describes the Cashel bypass as completed in 2003 and lists it under 2005, Wikipedia gives October 2004. October 2004 is recorded.",
+        "ro": "Deschisă ca drum cu două benzi pe sens al N8, cu sensuri giratorii la capete, și redenumită autostradă la 24 septembrie 2008, când schemele vecine s-au racordat la ea prin noduri. Sursele diferă asupra deschiderii: publicația TII descrie ocolitoarea Cashel ca finalizată în 2003 și o listează la 2005, Wikipedia indică octombrie 2004. Este înregistrată data de octombrie 2004."
+      },
+      "sourceRefs": [
+        "decade",
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "cashel-bypass"
+    },
+    {
+      "id": "cashel-mitchelstown",
+      "name": {
+        "en": "Cashel – Mitchelstown",
+        "ro": "Cashel – Mitchelstown"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2006-03",
+        "opened": "2008-07-25"
+      },
+      "lengthKm": 41,
+      "contractors": [
+        {
+          "name": "Roadbridge Sisk JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Incorporates a bypass of Cahir on the N24 and bypasses New Inn, Skehenarinky and Kilbehenny. About 12 km between Cahir and Cashel opened as a dual carriageway in late 2007, about nine months before the full scheme (Wikipedia). TII gives 41 km and March 2006; Wikipedia gives 37 km and May 2006. The sourced 41 km is kept; the drawn line, from the south end of the Cashel Bypass to the Mitchelstown North interchange, measures 35.7 km.",
+        "ro": "Include o ocolitoare a orașului Cahir pe N24 și ocolește New Inn, Skehenarinky și Kilbehenny. Circa 12 km între Cahir și Cashel au fost deschiși ca drum cu două benzi pe sens la sfârșitul lui 2007, cu circa nouă luni înaintea întregii scheme (Wikipedia). TII indică 41 km și martie 2006; Wikipedia indică 37 km și mai 2006. Se păstrează cifra sursă de 41 km; linia desenată, de la capătul sudic al ocolitoarei Cashel până la nodul Mitchelstown Nord, măsoară 35,7 km."
+      },
+      "sourceRefs": [
+        "decade",
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "cashel-mitchelstown"
+    },
+    {
+      "id": "mitchelstown-fermoy",
+      "name": {
+        "en": "Mitchelstown – Fermoy",
+        "ro": "Mitchelstown – Fermoy"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2007-12",
+        "opened": "2009-05-25"
+      },
+      "lengthKm": 16,
+      "cost": {
+        "actual": {
+          "amount": 174,
+          "currency": "EUR",
+          "confidence": "reported",
+          "note": "Cost as stated by Wikipedia; price year not stated."
+        }
+      },
+      "contractors": [
+        {
+          "name": "Roadbridge Ltd",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Links the Fermoy Bypass to Carrigane, 5 km north of Mitchelstown, with interchanges at Carrigane, Ballybeg and Moorepark. It carried 16,000 vehicles a day once open. Drawn length measures 15.6 km, between the Mitchelstown North and Fermoy North interchanges.",
+        "ro": "Leagă ocolitoarea Fermoy de Carrigane, la 5 km nord de Mitchelstown, cu noduri la Carrigane, Ballybeg și Moorepark. După deschidere a preluat 16.000 de vehicule pe zi. Lungimea desenată măsoară 15,6 km, între nodurile Mitchelstown Nord și Fermoy Nord."
+      },
+      "sourceRefs": [
+        "decade",
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "mitchelstown-fermoy"
+    },
+    {
+      "id": "fermoy-rathcormac",
+      "name": {
+        "en": "Fermoy – Rathcormac Bypass",
+        "ro": "Ocolitoarea Fermoy – Rathcormac"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2004-06",
+        "constructionStart": "2004-06",
+        "opened": "2006-10"
+      },
+      "lengthKm": 17.5,
+      "profile": {
+        "tolled": true,
+        "viaductKm": 0.45,
+        "works": "greenfield"
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Toll concession awarded to the Direct Route (Fermoy) Ltd consortium in June 2004 for 30 years; tolled between junctions 14 and 17.",
+            "ro": "Concesiune cu taxare atribuită consorțiului Direct Route (Fermoy) Ltd în iunie 2004, pentru 30 de ani; taxare între nodurile 14 și 17."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Direct Route (Fermoy) Ltd",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Strabag",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Tolled PPP from the Moorepark interchange north of Fermoy to the Watergrasshill Bypass south of Rathcormac, with three interchanges (Rathcormac, Corrin, Moorepark) and a 450 m viaduct over the Blackwater. Delivered eight months ahead of schedule. Strabag is named in the TII publication as the builder of the viaduct only, so it is recorded here for that part. TII gives 18 km in one source and about 17.5 km in the concession description; 17.5 km is recorded. Drawn length measures 17.5 km.",
+        "ro": "PPP cu taxare de la nodul Moorepark, la nord de Fermoy, până la ocolitoarea Watergrasshill, la sud de Rathcormac, cu trei noduri (Rathcormac, Corrin, Moorepark) și un viaduct de 450 m peste Blackwater. Finalizat cu opt luni înainte de termen. Strabag este numit în publicația TII drept constructor doar al viaductului, deci este înregistrat aici pentru acea parte. TII indică 18 km într-o sursă și circa 17,5 km în descrierea concesiunii; este înregistrat 17,5 km. Lungimea desenată măsoară 17,5 km."
+      },
+      "sourceRefs": [
+        "decade",
+        "ar2025",
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "fermoy-rathcormac"
+    },
+    {
+      "id": "watergrasshill-bypass",
+      "name": {
+        "en": "Watergrasshill Bypass",
+        "ro": "Ocolitoarea Watergrasshill"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2003-09-12"
+      },
+      "lengthKm": 7,
+      "contractors": [
+        {
+          "name": "Bowen / Mowlem JV",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Opened as a grade-separated dual carriageway, replacing the old N8 through Watergrasshill and Sallybrook. Its northern junction was brought into the tolled Fermoy scheme in October 2006. The line named as the bypass in OpenStreetMap, from the Watergrasshill junction to just south of Killydonoghoe, measures 8.2 km against the 7 km given by Wikipedia.",
+        "ro": "Deschisă ca drum cu două benzi pe sens și noduri denivelate, înlocuind vechiul N8 prin Watergrasshill și Sallybrook. Nodul său nordic a fost inclus în schema cu taxare Fermoy în octombrie 2006. Linia denumită ocolitoare în OpenStreetMap, de la nodul Watergrasshill până la sud de Killydonoghoe, măsoară 8,2 km, față de 7 km indicați de Wikipedia."
+      },
+      "sourceRefs": [
+        "decade",
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "watergrasshill-bypass"
+    },
+    {
+      "id": "glanmire-bypass",
+      "name": {
+        "en": "Glanmire Bypass – Dunkettle",
+        "ro": "Ocolitoarea Glanmire – Dunkettle"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "1992-04-03"
+      },
+      "lengthKm": 6.3,
+      "note": {
+        "en": "Opened as a 6.3 km dual carriageway on 3 April 1992 and reclassified as a motorway in July 2009, becoming part of the M8 on 28 August 2009. It ends at the Dunkettle interchange in Cork. The TII 150 km figure for the route runs to Cork; the other lots here sum to about 142 km. Drawn length measures 5.9 km.",
+        "ro": "Deschisă ca drum cu două benzi pe sens de 6,3 km la 3 aprilie 1992 și reclasificată autostradă în iulie 2009, devenind parte a M8 la 28 august 2009. Se termină la nodul Dunkettle din Cork. Cifra TII de 150 km pentru traseu ajunge la Cork; celelalte loturi de aici însumează circa 142 km. Lungimea desenată măsoară 5,9 km."
+      },
+      "sourceRefs": [
+        "wiki-m8",
+        "osm"
+      ],
+      "geometryRef": "glanmire-bypass"
+    }
+  ],
+  "sources": [
+    {
+      "id": "decade",
+      "title": "Transport Infrastructure Ireland: A Decade of Progress, chapter 3 (M8 Dublin to Cork, pp. 50–55; appendix of completions)",
+      "url": "https://www.tii.ie/media/hrroellt/a-decade-of-progress.pdf",
+      "publisher": "Transport Infrastructure Ireland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ar2025",
+      "title": "Transport Infrastructure Ireland: Annual Report and Financial Statements 2025, note 10e (general description of PPP schemes: M7/M8 Portlaoise, N8 Rathcormac/Fermoy)",
+      "url": "https://cdn.tii.ie/tii-site/TII%20Annual%20Report_English_25_Final.pdf",
+      "publisher": "Transport Infrastructure Ireland",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wiki-m8",
+      "title": "Wikipedia: M8 motorway (Ireland)",
+      "url": "https://en.wikipedia.org/wiki/M8_motorway_(Ireland)",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap contributors: M8 motorway ways (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

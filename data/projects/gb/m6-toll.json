@@ -1,0 +1,175 @@
+{
+  "id": "gb-m6-toll",
+  "country": "gb",
+  "category": "highway",
+  "name": {
+    "en": "M6 Toll",
+    "ro": "M6 Toll"
+  },
+  "description": {
+    "en": "A 27-mile tolled motorway, also called the Midland Expressway or Birmingham Northern Relief Road, between M6 junction 3A and junction 11A. Midland Expressway Ltd holds a concession from the Department for Transport to build and operate it until 2053. A consortium of Carillion, Alfred McAlpine, Balfour Beatty and AMEC built it under a GBP 485m design and construct contract, and it opened in December 2003.",
+    "ro": "Autostradă cu taxă de 27 de mile, numită și Midland Expressway sau Birmingham Northern Relief Road, între nodurile M6 J3A și J11A. Midland Expressway Ltd deține o concesiune de la Department for Transport pentru construcția și exploatarea ei până în 2053. Un consorțiu format din Carillion, Alfred McAlpine, Balfour Beatty și AMEC a construit-o în baza unui contract de proiectare și execuție de 485 milioane GBP, iar ea a fost deschisă în decembrie 2003."
+  },
+  "operator": "gb-midland-expressway",
+  "lots": [
+    {
+      "id": "m6-toll",
+      "name": {
+        "en": "M6 Toll (M6 J3A – M6 J11A)",
+        "ro": "M6 Toll (M6 J3A – M6 J11A)"
+      },
+      "status": "opened",
+      "dates": {
+        "announced": "1989",
+        "tenderAwarded": "2000-09-29",
+        "constructionStart": "2000-11",
+        "opened": "2003-12-09"
+      },
+      "lengthKm": 43.45,
+      "contract": {
+        "totalMonths": 40,
+        "value": {
+          "amount": 485,
+          "currency": "GBP",
+          "year": 2000,
+          "scope": "works"
+        }
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 485,
+              "currency": "GBP",
+              "year": 2000,
+              "scope": "works"
+            },
+            "date": "2000-09-29",
+            "note": "Design and construct contract value.",
+            "sourceRef": "m6toll-project-history"
+          }
+        ]
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Privately financed: Midland Expressway Ltd holds a concession from the Department for Transport, pays for construction and recovers its costs from tolls. The concession runs to 2053, when the road returns to the government.",
+            "ro": "Finanțare privată: Midland Expressway Ltd deține o concesiune de la Department for Transport, plătește construcția și își recuperează costurile din taxe de drum. Concesiunea durează până în 2053, când drumul revine statului."
+          }
+        }
+      ],
+      "events": [
+        {
+          "kind": "announced",
+          "date": "1989",
+          "note": {
+            "en": "Government announced that the road would be built by the private sector, replacing a publicly funded scheme proposed in 1980.",
+            "ro": "Guvernul a anunțat că drumul va fi construit de sectorul privat, în locul unui proiect finanțat public propus în 1980."
+          },
+          "sourceRef": "m6toll-project-history"
+        },
+        {
+          "kind": "awarded",
+          "date": "1991",
+          "note": {
+            "en": "Midland Expressway Ltd announced as winner of the competition for the concession. The Concession Agreement with the government was signed in 1992.",
+            "ro": "Midland Expressway Ltd a fost anunțată câștigătoare a competiției pentru concesiune. Acordul de concesiune cu guvernul a fost semnat în 1992."
+          },
+          "sourceRef": "m6toll-project-history"
+        },
+        {
+          "kind": "litigation",
+          "date": "1997",
+          "note": {
+            "en": "Legal challenges by the Alliance against BNRR followed the Government's final go-ahead; they were cleared in 1999.",
+            "ro": "Contestațiile juridice ale Alliance against BNRR au urmat aprobării finale a Guvernului; ele au fost respinse în 1999."
+          },
+          "sourceRef": "m6toll-project-history"
+        },
+        {
+          "kind": "awarded",
+          "date": "2000-09-29",
+          "note": {
+            "en": "Midland Expressway signed the design and construct contract with CAMBBA (Carillion, Alfred McAlpine, Balfour Beatty, AMEC): GBP 485m, 40 months.",
+            "ro": "Midland Expressway a semnat contractul de proiectare și execuție cu CAMBBA (Carillion, Alfred McAlpine, Balfour Beatty, AMEC): 485 milioane GBP, 40 de luni."
+          },
+          "sourceRef": "m6toll-project-history"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2000-11",
+          "note": {
+            "en": "Initial site clearance and fencing started; major construction activity ran from April 2001 to December 2003.",
+            "ro": "Au început curățarea inițială a terenului și împrejmuirea; lucrările principale au durat din aprilie 2001 până în decembrie 2003."
+          },
+          "sourceRef": "m6toll-project-history"
+        },
+        {
+          "kind": "opened",
+          "date": "2003-12-09",
+          "note": {
+            "en": "The M6 Toll opened on 9 December 2003, against a contractual completion of January 2004.",
+            "ro": "M6 Toll a fost deschis la 9 decembrie 2003, față de finalizarea contractuală din ianuarie 2004."
+          },
+          "sourceRef": "m6toll-project-history"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Midland Expressway Ltd",
+          "role": "concessionaire"
+        },
+        {
+          "name": "CAMBBA (Carillion, Alfred McAlpine, Balfour Beatty, AMEC)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length is the 27 miles stated by Wikipedia, converted to kilometres. The carriageway runs from M6 junction 3A at Coleshill to M6 junction 11A, and shares the M42 for a short stretch near Dunton. Wikipedia, citing BBC News, records a partial opening for traffic entering from local junctions on 9 December 2003 and a full opening on 14 December 2003; the project's own history page gives 9 December. Wikipedia dates major construction to summer 2002, while the project's own factsheet gives April 2001; the factsheet is followed. The GBP 485m is the design and construct contract only, not the concessionaire's total outlay. Drawn geometry is one carriageway (northbound, with the last 1.3 km taken from the southbound carriageway) and measures about 42.1 km.",
+        "ro": "Lungimea este cele 27 de mile indicate de Wikipedia, convertite în kilometri. Traseul merge de la nodul M6 J3A de la Coleshill la nodul M6 J11A și folosește M42 pe un scurt tronson lângă Dunton. Wikipedia, citând BBC News, consemnează o deschidere parțială pentru traficul care intră din nodurile locale la 9 decembrie 2003 și una completă la 14 decembrie 2003; pagina de istoric a proiectului indică 9 decembrie. Wikipedia datează lucrările principale în vara lui 2002, în timp ce fișa proiectului indică aprilie 2001; se urmează fișa proiectului. Cei 485 de milioane GBP reprezintă doar contractul de proiectare și execuție, nu totalul investit de concesionar. Geometria desenată este un singur carosabil (spre nord, cu ultimii 1,3 km luați de pe carosabilul spre sud) și măsoară circa 42,1 km."
+      },
+      "sourceRefs": [
+        "m6toll-project-history",
+        "m6toll-what-is",
+        "wikipedia-m6-toll",
+        "osm-m6-toll"
+      ],
+      "geometryRef": "m6-toll"
+    }
+  ],
+  "cost": {
+    "amount": 1000,
+    "currency": "GBP",
+    "scope": "total",
+    "confidence": "reported",
+    "note": "Rounded figure: the operator says Midland Expressway Ltd invested GBP 1bn in construction. Price year not stated."
+  },
+  "sources": [
+    {
+      "id": "m6toll-project-history",
+      "title": "M6 Toll: Overview, project history and facts and figures (archived 11 February 2008; \"Contract Value (Design and Construct) £485m\"; \"2003 M6 Toll opens (9 December)\")",
+      "url": "https://web.archive.org/web/20080211200131/http://www.m6toll.co.uk/about/project.asp",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "m6toll-what-is",
+      "title": "M6toll: What is the M6toll (\"Midland Expressway Ltd was awarded the concession to build and manage the M6toll, investing £1bn in its construction\")",
+      "url": "https://www.m6toll.co.uk/about-us/what-is-the-m6toll/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-m6-toll",
+      "title": "Wikipedia: M6 Toll (\"27 mi of six-lane motorway\"; concession from the Department for Transport until 2053; fully opened 14 December 2003)",
+      "url": "https://en.wikipedia.org/wiki/M6_Toll",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-m6-toll",
+      "title": "OpenStreetMap contributors: M6 Toll ways, relation 12406293 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/12406293",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

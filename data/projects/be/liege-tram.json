@@ -1,0 +1,112 @@
+{
+  "id": "be-liege-tram",
+  "country": "be",
+  "city": "be-liege",
+  "category": "railway",
+  "name": {
+    "en": "Liège tram line 1 (Sclessin – Coronmeuse)",
+    "ro": "Linia 1 de tramvai din Liège (Sclessin – Coronmeuse)"
+  },
+  "description": {
+    "en": "Single tram line along the west bank of the Meuse from Sclessin to Coronmeuse via Liège-Guillemins and Place Saint-Lambert, with a branch over the Atlas bridge to the Bressoux depot. 11.7 km and 23 stops. Built, financed and maintained for 31 years by the Tram'Ardent consortium (CAF, Colas, DIF) under a public–private partnership and operated by TEC. Regular service began on 28 April 2025. Planned extensions to Herstal and Seraing were cancelled in August 2024.",
+    "ro": "O singură linie de tramvai pe malul vestic al Meusei, de la Sclessin la Coronmeuse, prin gara Liège-Guillemins și Place Saint-Lambert, cu o ramură peste podul Atlas spre depoul Bressoux. 11,7 km și 23 de stații. Construită, finanțată și întreținută timp de 31 de ani de consorțiul Tram'Ardent (CAF, Colas, DIF) printr-un parteneriat public–privat și operată de TEC. Serviciul regulat a început la 28 aprilie 2025. Extinderile planificate spre Herstal și Seraing au fost anulate în august 2024."
+  },
+  "operator": "be-tec",
+  "stationCount": 23,
+  "lots": [
+    {
+      "id": "line-1-sclessin-coronmeuse",
+      "name": {
+        "en": "Line 1: Sclessin – Coronmeuse, with Bressoux branch",
+        "ro": "Linia 1: Sclessin – Coronmeuse, cu ramura Bressoux"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2018-09-19",
+        "constructionStart": "2019",
+        "opened": "2025-04-28"
+      },
+      "lengthKm": 11.7,
+      "profile": {
+        "works": "greenfield",
+        "stationCount": 23
+      },
+      "cost": {
+        "estimated": {
+          "amount": 315,
+          "currency": "EUR",
+          "note": "Early plan figure for building Sclessin – Coronmeuse in a first stage (about 11 km, 21 stops), against €484 million for the whole line. Price year not stated. Not the contract cost."
+        }
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Public–private partnership: Tram'Ardent finances, designs and builds the line and maintains trams and infrastructure for 31 years",
+            "ro": "Parteneriat public–privat: Tram'Ardent finanțează, proiectează și construiește linia și întreține tramvaiele și infrastructura timp de 31 de ani"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Tram'Ardent",
+          "role": "concessionaire"
+        },
+        {
+          "name": "Colas",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2018-09-19",
+          "sourceRef": "wikipedia-en-trams-liege"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2019",
+          "sourceRef": "wikipedia-en-trams-liege"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-04-28",
+          "sourceRef": "wikipedia-en-trams-liege"
+        }
+      ],
+      "note": {
+        "en": "The 11.7 km figure is the line length given by Wikipedia (citing the project site letram.be); the 1.3 km Bressoux branch over the Atlas bridge, with two of the 23 stops, is described separately, and the sources do not say whether it is inside the 11.7 km. Drawn from OpenStreetMap, the main line measures about 9.6 km and the branch about 1.1 km. On 19 September 2018 the Opérateur de transport de Wallonie awarded the contract to Tram'Ardent (CAF supplies the Urbos trams, Colas builds the infrastructure, DIF provides financing). The French Wikipedia gives works as planned for May 2019 to October 2022; the English page says construction was under way by 2019. COVID-19 delayed the project by 2 years and 3 months and Wallonia paid Tram'Ardent €79 million in 2023 as compensation. Testing began on 31 October 2024, opening was set for 15 April 2025 and then moved to 28 April 2025 after technical faults in dry runs. Press reports put the total of construction, financing and maintenance above €1 billion; no construction-only cost is recorded. Extensions of 2.9 km to Herstal and 2.8 km to Seraing (€355 million budgeted in 2024) were cancelled in late August 2024 and replaced by priority bus lanes.",
+        "ro": "Cifra de 11,7 km este lungimea liniei dată de Wikipedia (care citează site-ul proiectului letram.be); ramura Bressoux de 1,3 km peste podul Atlas, cu două dintre cele 23 de stații, este descrisă separat, iar sursele nu spun dacă este inclusă în cei 11,7 km. Desenată după OpenStreetMap, linia principală măsoară circa 9,6 km, iar ramura circa 1,1 km. Pe 19 septembrie 2018, Opérateur de transport de Wallonie a atribuit contractul consorțiului Tram'Ardent (CAF furnizează tramvaiele Urbos, Colas construiește infrastructura, DIF asigură finanțarea). Wikipedia în franceză indică lucrările ca planificate pentru mai 2019 – octombrie 2022; pagina în engleză spune că construcția era în curs în 2019. COVID-19 a întârziat proiectul cu 2 ani și 3 luni, iar Valonia a plătit Tram'Ardent 79 de milioane de euro în 2023 drept compensație. Testele au început pe 31 octombrie 2024, deschiderea a fost fixată pentru 15 aprilie 2025, apoi mutată la 28 aprilie 2025 după defecțiuni tehnice la probe. Presa estimează totalul pentru construcție, finanțare și întreținere la peste 1 miliard de euro; nu este înregistrat un cost doar pentru construcție. Extinderile de 2,9 km spre Herstal și 2,8 km spre Seraing (355 de milioane de euro bugetate în 2024) au fost anulate la sfârșitul lui august 2024 și înlocuite cu benzi prioritare pentru autobuze."
+      },
+      "sourceRefs": [
+        "wikipedia-en-trams-liege",
+        "wikipedia-fr-tramway-liege",
+        "openstreetmap-liege-tram"
+      ],
+      "geometryRef": "line-1-sclessin-coronmeuse"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-en-trams-liege",
+      "title": "Wikipedia: Trams in Liège",
+      "url": "https://en.wikipedia.org/wiki/Trams_in_Li%C3%A8ge",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-fr-tramway-liege",
+      "title": "Wikipédia: Tramway de Liège",
+      "url": "https://fr.wikipedia.org/wiki/Tramway_de_Li%C3%A8ge",
+      "publisher": "Wikipédia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-liege-tram",
+      "title": "OpenStreetMap contributors: Tram T1 route relations 18173310 and 18173311 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/18173310",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

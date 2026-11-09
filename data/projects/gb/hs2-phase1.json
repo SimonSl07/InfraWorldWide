@@ -1,0 +1,315 @@
+{
+  "id": "gb-hs2-phase1",
+  "country": "gb",
+  "category": "railway",
+  "name": {
+    "en": "HS2 Phase 1: London Euston – Birmingham Curzon Street and Handsacre",
+    "ro": "HS2 Faza 1: London Euston – Birmingham Curzon Street și Handsacre"
+  },
+  "description": {
+    "en": "High-speed line under construction from London Euston via Old Oak Common to Birmingham Curzon Street, with a connection to the West Coast Main Line at Handsacre Junction. The DfT report of May 2026 gives an expected cost of GBP 87.7 to 102.7 billion in a mixed price base (GBP 70.9 to 82.2 billion in 2019 prices), with GBP 44.2 billion spent in nominal prices to the end of March 2026. The opening stage, Old Oak Common to Curzon Street, is expected between May 2036 and October 2039, and the full scheme between May 2040 and December 2043. Civil engineering is at least four years behind the original schedule. Lots follow the four main civils contracts let in 2020; the stations and the Washwood Heath depot are not separate lots.",
+    "ro": "Linie de mare viteză în construcție de la London Euston, prin Old Oak Common, până la Birmingham Curzon Street, cu legătură la West Coast Main Line la Handsacre Junction. Raportul DfT din mai 2026 indică un cost estimat de 87,7 – 102,7 miliarde GBP într-o bază de prețuri mixtă (70,9 – 82,2 miliarde GBP în prețuri 2019), cu 44,2 miliarde GBP cheltuite în prețuri nominale până la sfârșitul lunii martie 2026. Prima etapă, Old Oak Common – Curzon Street, este estimată între mai 2036 și octombrie 2039, iar schema completă între mai 2040 și decembrie 2043. Lucrările civile au cel puțin patru ani întârziere față de calendarul inițial. Loturile urmează cele patru contracte principale de lucrări civile atribuite în 2020; gările și depoul Washwood Heath nu sunt loturi separate."
+  },
+  "operator": "gb-hs2-ltd",
+  "cost": {
+    "amount": 82200,
+    "currency": "GBP",
+    "year": 2019,
+    "scope": "programme",
+    "confidence": "estimated",
+    "note": "Upper end of the GBP 70.9 to 82.2 billion range in a 2019 mixed price base for the whole programme (Euston to Handsacre). The same report gives GBP 87.7 to 102.7 billion in a mixed price base that includes the cash outturn to date."
+  },
+  "lots": [
+    {
+      "id": "s1-euston-old-oak-common",
+      "name": {
+        "en": "S1: Euston tunnels and approaches (Euston – Old Oak Common)",
+        "ro": "S1: Tuneluri și apropieri Euston (Euston – Old Oak Common)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-09-04",
+        "expectedOpening": "2043-12"
+      },
+      "lengthKm": 8.35,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 7.2,
+        "tracks": 2,
+        "maxSpeedKmh": 320
+      },
+      "contractors": [
+        {
+          "name": "SCS Railways (Skanska Construction UK, Costain, Strabag)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Euston to Old Oak Common, the first of two civils contracts held by SCS Railways. New Civil Engineer gives the two (Northolt Tunnels and Euston Tunnels and Approaches) a combined value of GBP 3.3 billion at notice to proceed in April 2020, so no value is recorded for this lot alone. Wikipedia gives the Euston tunnels as 4.5 miles (7.2 km). The DfT May 2026 report expects Euston to open between May 2040 and December 2043; December 2043 is recorded as the later end of that range. Euston station work was postponed in March 2023. The drawn line follows an older OpenStreetMap alignment and passes about 800 m from Old Oak Common station, where the lot is cut. Length measured from OpenStreetMap geometry.",
+        "ro": "De la Euston la Old Oak Common, primul dintre cele două contracte de lucrări civile ale SCS Railways. New Civil Engineer indică pentru cele două (Northolt Tunnels și Euston Tunnels and Approaches) o valoare însumată de 3,3 miliarde GBP la ordinul de începere din aprilie 2020, deci pentru acest lot nu se înregistrează o valoare separată. Wikipedia indică tunelurile Euston ca având 4,5 mile (7,2 km). Raportul DfT din mai 2026 estimează deschiderea la Euston între mai 2040 și decembrie 2043; decembrie 2043 este capătul târziu al intervalului. Lucrările la gara Euston au fost amânate în martie 2023. Linia trasată urmează un traseu mai vechi din OpenStreetMap și trece la circa 800 m de gara Old Oak Common, unde este tăiat lotul. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "dft-hs2-report-2026-05",
+        "nce-hs2-notice-to-proceed-2020",
+        "wikipedia-hs2",
+        "openstreetmap-hs2"
+      ],
+      "geometryRef": "s1-euston-old-oak-common"
+    },
+    {
+      "id": "s2-northolt-tunnels",
+      "name": {
+        "en": "S2: Northolt tunnels (Old Oak Common – West Ruislip)",
+        "ro": "S2: Tuneluri Northolt (Old Oak Common – West Ruislip)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-09-04",
+        "expectedOpening": "2039-10"
+      },
+      "lengthKm": 14.66,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 13.5,
+        "tracks": 2,
+        "maxSpeedKmh": 320
+      },
+      "contractors": [
+        {
+          "name": "SCS Railways (Skanska Construction UK, Costain, Strabag)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Old Oak Common to the West Ruislip portal, the second SCS Railways contract (combined value with S1 GBP 3.3 billion, see S1). Wikipedia gives the Northolt tunnels as 8.4 miles (13.5 km), driven by four tunnel boring machines and finished by June 2025. The DfT May 2026 report expects the opening stage, Old Oak Common to Birmingham Curzon Street, between May 2036 and October 2039; October 2039 is recorded as the later end. HS2 Ltd's own ambition is late 2037. Length measured from OpenStreetMap geometry.",
+        "ro": "De la Old Oak Common la portalul West Ruislip, al doilea contract SCS Railways (valoare însumată cu S1: 3,3 miliarde GBP, vezi S1). Wikipedia indică tunelurile Northolt ca având 8,4 mile (13,5 km), săpate cu patru utilaje de foraj și finalizate până în iunie 2025. Raportul DfT din mai 2026 estimează deschiderea primei etape, Old Oak Common – Birmingham Curzon Street, între mai 2036 și octombrie 2039; octombrie 2039 este capătul târziu. Ambiția HS2 Ltd este sfârșitul lui 2037. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "dft-hs2-report-2026-05",
+        "nce-hs2-notice-to-proceed-2020",
+        "wikipedia-hs2",
+        "openstreetmap-hs2"
+      ],
+      "geometryRef": "s2-northolt-tunnels"
+    },
+    {
+      "id": "c1-chiltern-tunnels-colne-valley",
+      "name": {
+        "en": "C1: Colne Valley Viaduct and Chiltern tunnel (West Ruislip – South Heath)",
+        "ro": "C1: Viaductul Colne Valley și tunelul Chiltern (West Ruislip – South Heath)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-09-04",
+        "expectedOpening": "2039-10"
+      },
+      "lengthKm": 23.82,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 1600,
+              "currency": "GBP",
+              "year": 2020,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Contract value reported by New Civil Engineer at notice to proceed; a target value, not an outturn."
+            },
+            "date": "2020-04-15",
+            "note": "Notice to proceed given on 15 April 2020.",
+            "sourceRef": "nce-hs2-notice-to-proceed-2020"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 15.8,
+        "tracks": 2,
+        "maxSpeedKmh": 320
+      },
+      "contractors": [
+        {
+          "name": "Align JV (Bouygues Travaux Publics, Sir Robert McAlpine, VolkerFitzpatrick)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 1600,
+          "currency": "GBP",
+          "year": 2020,
+          "scope": "works"
+        }
+      },
+      "note": {
+        "en": "West Ruislip portal to the north portal of the Chiltern tunnel near South Heath, including the Colne Valley Viaduct and the Chiltern tunnel. New Civil Engineer reports a GBP 1.6 billion contract awarded to Align JV at notice to proceed in April 2020; the figure is a target value and is not an outturn. Wikipedia gives the Chiltern tunnel as 9.8 miles (15.8 km). Opening: see S2. Length measured from OpenStreetMap geometry.",
+        "ro": "De la portalul West Ruislip până la portalul nordic al tunelului Chiltern, lângă South Heath, cu Viaductul Colne Valley și tunelul Chiltern. New Civil Engineer indică un contract de 1,6 miliarde GBP atribuit Align JV la ordinul de începere din aprilie 2020; cifra este o valoare-țintă, nu un cost final. Wikipedia indică tunelul Chiltern ca având 9,8 mile (15,8 km). Deschidere: vezi S2. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "dft-hs2-report-2026-05",
+        "nce-hs2-notice-to-proceed-2020",
+        "wikipedia-hs2",
+        "openstreetmap-hs2"
+      ],
+      "geometryRef": "c1-chiltern-tunnels-colne-valley"
+    },
+    {
+      "id": "c2-c3-chiltern-to-long-itchington-wood",
+      "name": {
+        "en": "C2 and C3: Chiltern north portal – Long Itchington Wood south portal",
+        "ro": "C2 și C3: portalul nordic Chiltern – portalul sudic Long Itchington Wood"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-09-04",
+        "expectedOpening": "2039-10"
+      },
+      "lengthKm": 78.84,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 2300,
+              "currency": "GBP",
+              "year": 2020,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Value of the two EKFB packages combined, reported by New Civil Engineer; a target value, not an outturn."
+            },
+            "date": "2020-04-15",
+            "note": "Notice to proceed given on 15 April 2020.",
+            "sourceRef": "nce-hs2-notice-to-proceed-2020"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "maxSpeedKmh": 320
+      },
+      "contractors": [
+        {
+          "name": "EKFB (Eiffage Génie Civil, Kier Infrastructure and Overseas, BAM Nuttall, Ferrovial Agroman)",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 2300,
+          "currency": "GBP",
+          "year": 2020,
+          "scope": "works"
+        }
+      },
+      "note": {
+        "en": "The two EKFB packages, C2 (Chiltern north portal to Brackley) and C3 (Brackley to the south portal of the Long Itchington Wood green tunnel), recorded as one lot because the Brackley boundary is not stated precisely enough to cut. New Civil Engineer reports GBP 2.3 billion of work for the two; the figure is a target value and is not an outturn. Opening: see S2. Length measured from OpenStreetMap geometry.",
+        "ro": "Cele două pachete EKFB, C2 (de la portalul nordic Chiltern la Brackley) și C3 (de la Brackley la portalul sudic al tunelului verde Long Itchington Wood), înregistrate ca un singur lot deoarece limita de la Brackley nu este indicată suficient de precis pentru a tăia traseul. New Civil Engineer indică lucrări de 2,3 miliarde GBP pentru cele două; cifra este o valoare-țintă, nu un cost final. Deschidere: vezi S2. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "dft-hs2-report-2026-05",
+        "nce-hs2-notice-to-proceed-2020",
+        "wikipedia-hs2",
+        "openstreetmap-hs2"
+      ],
+      "geometryRef": "c2-c3-chiltern-to-long-itchington-wood"
+    },
+    {
+      "id": "n1-long-itchington-delta-junction-spur",
+      "name": {
+        "en": "N1: Long Itchington Wood – Delta Junction and Birmingham Spur (Curzon Street)",
+        "ro": "N1: Long Itchington Wood – Delta Junction și ramura Birmingham (Curzon Street)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-09-04",
+        "expectedOpening": "2039-10"
+      },
+      "lengthKm": 51.51,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "maxSpeedKmh": 320
+      },
+      "contractors": [
+        {
+          "name": "BBV JV (Balfour Beatty, VINCI Construction Grands Projets, VINCI Construction UK, VINCI Construction Terrassement)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "From the Long Itchington Wood tunnel to Delta Junction near Coleshill, plus the Birmingham Spur from Delta Junction to Curzon Street, drawn as two lines. New Civil Engineer gives GBP 4.8 billion for the two BBV packages (this one and N2) combined at notice to proceed in April 2020, so no value is recorded for this lot alone. The DfT May 2026 report names a joint venture of Taylor Woodrow Infrastructure and Aureos Rail for the Washwood Heath rolling stock depot; the depot and the stations are not separate lots. Opening: see S2. Length measured from OpenStreetMap geometry.",
+        "ro": "De la tunelul Long Itchington Wood până la Delta Junction, lângă Coleshill, plus ramura Birmingham de la Delta Junction la Curzon Street, trasate ca două linii. New Civil Engineer indică 4,8 miliarde GBP pentru cele două pachete BBV (acesta și N2) la ordinul de începere din aprilie 2020, deci pentru acest lot nu se înregistrează o valoare separată. Raportul DfT din mai 2026 numește o asociere Taylor Woodrow Infrastructure și Aureos Rail pentru depoul de material rulant Washwood Heath; depoul și gările nu sunt loturi separate. Deschidere: vezi S2. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "dft-hs2-report-2026-05",
+        "nce-hs2-notice-to-proceed-2020",
+        "wikipedia-hs2",
+        "openstreetmap-hs2"
+      ],
+      "geometryRef": "n1-long-itchington-delta-junction-spur"
+    },
+    {
+      "id": "n2-delta-junction-handsacre",
+      "name": {
+        "en": "N2: Delta Junction – Handsacre Junction (West Coast Main Line connection)",
+        "ro": "N2: Delta Junction – Handsacre Junction (legătura cu West Coast Main Line)"
+      },
+      "status": "planned",
+      "dates": {
+        "expectedOpening": "2043-12"
+      },
+      "lengthKm": 27.42,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "maxSpeedKmh": 320
+      },
+      "contractors": [
+        {
+          "name": "BBV JV (Balfour Beatty, VINCI Construction Grands Projets, VINCI Construction UK, VINCI Construction Terrassement)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Delta Junction to the connection with the West Coast Main Line at Handsacre Junction, the second BBV package (combined value with N1 GBP 4.8 billion, see N1). Wikipedia reports that work between Birmingham and Handsacre was paused in early 2023 and deferred for four years in October 2025. The DfT May 2026 report still includes the Handsacre connection in the full scheme, expected to open between May 2040 and December 2043; December 2043 is recorded as the later end. Recorded as planned because no source seen states that construction is under way on this section. Wikipedia cites an 18 mile (29 km) connection. Length measured from OpenStreetMap geometry.",
+        "ro": "De la Delta Junction până la legătura cu West Coast Main Line la Handsacre Junction, al doilea pachet BBV (valoare însumată cu N1: 4,8 miliarde GBP, vezi N1). Wikipedia arată că lucrările dintre Birmingham și Handsacre au fost suspendate la începutul lui 2023 și amânate cu patru ani în octombrie 2025. Raportul DfT din mai 2026 include încă legătura Handsacre în schema completă, estimată să se deschidă între mai 2040 și decembrie 2043; decembrie 2043 este capătul târziu. Înregistrat ca planificat deoarece nicio sursă consultată nu arată că lucrările sunt în curs pe această secțiune. Wikipedia menționează o legătură de 18 mile (29 km). Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "dft-hs2-report-2026-05",
+        "nce-hs2-notice-to-proceed-2020",
+        "wikipedia-hs2",
+        "openstreetmap-hs2"
+      ],
+      "geometryRef": "n2-delta-junction-handsacre"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dft-hs2-report-2026-05",
+      "title": "HS2 6-monthly report to Parliament: May 2026",
+      "url": "https://www.gov.uk/government/speeches/hs2-6-monthly-report-to-parliament-may-2026",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "nce-hs2-notice-to-proceed-2020",
+      "title": "Four HS2 contractors given notice to proceed on £12bn package of work",
+      "url": "https://www.newcivilengineer.com/latest/four-hs2-contractors-given-notice-to-proceed-15-04-2020/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-hs2",
+      "title": "Wikipedia: High Speed 2",
+      "url": "https://en.wikipedia.org/wiki/High_Speed_2",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-hs2",
+      "title": "OpenStreetMap contributors (ODbL): HS2 Phase 1 route relation 1986960",
+      "url": "https://www.openstreetmap.org/relation/1986960",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

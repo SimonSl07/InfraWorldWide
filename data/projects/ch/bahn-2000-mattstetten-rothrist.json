@@ -1,0 +1,75 @@
+{
+  "id": "ch-bahn-2000-mattstetten-rothrist",
+  "country": "ch",
+  "category": "railway",
+  "name": {
+    "en": "Bahn 2000 new line Mattstetten–Rothrist",
+    "ro": "Linia nouă Bahn 2000 Mattstetten–Rothrist"
+  },
+  "description": {
+    "en": "Double-track new line between Mattstetten near Bern and Rothrist near Olten, built from 1996 to 2004 under the Bahn 2000 programme. It is 45.079 km long, electrified and operated at up to 200 km/h, and was opened on 12 December 2004. Together with the existing lines it brings journey times between Bern and Basel, Zürich and Luzern below one hour.",
+    "ro": "Linie nouă cu dublă cale între Mattstetten, lângă Berna, și Rothrist, lângă Olten, construită în 1996–2004 în cadrul programului Bahn 2000. Are 45,079 km, este electrificată și circulă cu până la 200 km/h; a fost deschisă la 12 decembrie 2004. Împreună cu liniile existente reduce sub o oră timpii de călătorie Berna–Basel și Zürich–Luzern."
+  },
+  "operator": "ch-sbb",
+  "lots": [
+    {
+      "id": "mattstetten-rothrist",
+      "name": {
+        "en": "Mattstetten – Rothrist new line",
+        "ro": "Linia nouă Mattstetten – Rothrist"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1996-04",
+        "opened": "2004-12-12"
+      },
+      "lengthKm": 45.079,
+      "profile": {
+        "works": "greenfield",
+        "maxSpeedKmh": 200,
+        "electrified": true,
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1996-04",
+          "sourceRef": "de-wikipedia-nbs-mattstetten-rothrist"
+        },
+        {
+          "kind": "opened",
+          "date": "2004-12-12",
+          "sourceRef": "de-wikipedia-nbs-mattstetten-rothrist"
+        }
+      ],
+      "note": {
+        "en": "Length, April 1996 construction start and 12 December 2004 opening are from German Wikipedia, a secondary source; the Federal Office of Transport (BAV) confirms the line and that it has cut journey times below one hour since 2004, but states no length or date. The BAV gives 5.4 billion CHF for the whole Bahn 2000 programme; no cost is recorded for this line. The line leaves the Bern–Olten route at Mattstetten (Äspli) and rejoins it at Rothrist West. The line drawn from OpenStreetMap geometry measures about 46.5 km, about 3% above the sourced length (end points chosen at the junctions near Mattstetten and Rothrist); the sourced length is kept.",
+        "ro": "Lungimea, începutul lucrărilor în aprilie 1996 și deschiderea la 12 decembrie 2004 provin din Wikipedia în limba germană, sursă secundară; Oficiul Federal al Transporturilor (BAV) confirmă linia și faptul că din 2004 timpii de călătorie au scăzut sub o oră, dar nu indică lungimea sau datele. BAV indică 5,4 miliarde CHF pentru întregul program Bahn 2000; pentru această linie nu este înregistrat niciun cost. Linia se desprinde de ruta Berna–Olten la Mattstetten (Äspli) și revine pe ea la Rothrist West. Linia desenată din geometria OpenStreetMap măsoară circa 46,5 km, cu aproximativ 3% peste lungimea din sursă (capetele alese la joncțiunile de lângă Mattstetten și Rothrist); lungimea din sursă a fost păstrată."
+      },
+      "sourceRefs": [
+        "de-wikipedia-nbs-mattstetten-rothrist",
+        "bav-bahn-2000"
+      ],
+      "geometryRef": "mattstetten-rothrist"
+    }
+  ],
+  "sources": [
+    {
+      "id": "de-wikipedia-nbs-mattstetten-rothrist",
+      "title": "Wikipedia: Neubaustrecke Mattstetten–Rothrist",
+      "url": "https://de.wikipedia.org/wiki/Neubaustrecke_Mattstetten%E2%80%93Rothrist",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "bav-bahn-2000",
+      "title": "Bundesamt für Verkehr BAV: Bahn 2000",
+      "url": "https://www.bav.admin.ch/de/bahn-2000",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "OpenStreetMap contributors (railway geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "id": "gb-thameslink",
+  "country": "gb",
+  "category": "railway",
+  "name": {
+    "en": "Thameslink Programme",
+    "ro": "Programul Thameslink"
+  },
+  "description": {
+    "en": "Network Rail works for the Department for Transport to upgrade the Thameslink route through central London for up to 24 trains per hour between St Pancras and Blackfriars and for 12-car trains. It was staged as Key Output 0 (March 2009), Key Output 1 (December 2011) and Key Output 2 (September 2020). The close-out report records a final cost of £4,914 million for Thameslink funding, with a further £309 million of works for other funding streams. The National Audit Office put the infrastructure budget at £5.5 billion in 2017 prices and the whole programme, including trains, at £7 billion in cash prices. The 18 September 2020 date marks the close of Key Output 2, not a new infrastructure opening. New routes began running in 2018. Only the works with their own track are drawn.",
+    "ro": "Lucrări ale Network Rail pentru Departamentul pentru Transport, de modernizare a rutei Thameslink prin centrul Londrei, pentru până la 24 de trenuri pe oră între St Pancras și Blackfriars și pentru trenuri de 12 vagoane. Au fost etapizate ca Key Output 0 (martie 2009), Key Output 1 (decembrie 2011) și Key Output 2 (septembrie 2020). Raportul de închidere consemnează un cost final de 4.914 milioane de lire din finanțarea Thameslink, plus alte 309 milioane de lire pentru lucrări din alte surse. Oficiul Național de Audit a estimat bugetul infrastructurii la 5,5 miliarde de lire la prețurile din 2017 și întregul program, cu trenuri cu tot, la 7 miliarde de lire la prețuri curente. Data de 18 septembrie 2020 marchează închiderea Key Output 2, nu o deschidere nouă de infrastructură. Rutele noi au început să circule în 2018. Sunt desenate doar lucrările cu cale proprie."
+  },
+  "operator": "gb-network-rail",
+  "cost": {
+    "amount": 4914,
+    "currency": "GBP",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Final cost of the Thameslink Programme from Thameslink funding, per the Network Rail close-out report, nominal. Excludes 309 million GBP of works delivered for other funding streams and the rolling stock. Price year not stated in the source."
+  },
+  "lots": [
+    {
+      "id": "canal-tunnels",
+      "name": {
+        "en": "Canal Tunnels (St Pancras – Belle Isle)",
+        "ro": "Tunelurile Canal (St Pancras – Belle Isle)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2018-02"
+      },
+      "lengthKm": 1.04,
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "Link between the Thameslink core at St Pancras and the East Coast Main Line. The tunnels were built between 2004 and 2006 with the St Pancras works for High Speed 1 and were fitted out and commissioned in Key Output 2, which opened Thameslink to destinations north of London. Opening is given as February 2018, when Cambridge and Peterborough services started; the exact date is not recorded here. Length measured from OpenStreetMap geometry.",
+        "ro": "Legătura dintre nucleul Thameslink de la St Pancras și East Coast Main Line. Tunelurile au fost construite între 2004 și 2006 odată cu lucrările de la St Pancras pentru High Speed 1, iar echiparea și punerea în funcțiune au avut loc în Key Output 2, care a deschis Thameslink spre destinații la nord de Londra. Deschiderea este dată ca februarie 2018, când au început serviciile spre Cambridge și Peterborough; data exactă nu este înregistrată aici. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-thameslink-programme",
+        "thameslink-close-out-report",
+        "openstreetmap"
+      ],
+      "geometryRef": "canal-tunnels"
+    },
+    {
+      "id": "blackfriars-station",
+      "name": {
+        "en": "Blackfriars station and Thames bridge platforms",
+        "ro": "Stația Blackfriars și peroanele de pe podul peste Tamisa"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2011-12"
+      },
+      "lengthKm": 0.37,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "note": {
+        "en": "Blackfriars was rebuilt for 12-car trains. The through platforms were extended along Blackfriars Railway Bridge and a new entrance on Bankside opened on 5 December 2011. Key Output 1 was completed in December 2011. The Underground station reopened on 20 February 2012. The drawn line covers the bridge and station between the south and north banks. Length measured from OpenStreetMap geometry.",
+        "ro": "Blackfriars a fost reconstruită pentru trenuri de 12 vagoane. Peroanele de tranzit au fost prelungite pe Blackfriars Railway Bridge, iar o nouă intrare pe Bankside s-a deschis pe 5 decembrie 2011. Key Output 1 a fost finalizat în decembrie 2011. Stația de metrou a fost redeschisă pe 20 februarie 2012. Linia desenată acoperă podul și stația între malul sudic și cel nordic. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-thameslink-programme",
+        "thameslink-close-out-report",
+        "openstreetmap"
+      ],
+      "geometryRef": "blackfriars-station"
+    },
+    {
+      "id": "borough-viaduct",
+      "name": {
+        "en": "Borough Market Viaduct (London Bridge – Blackfriars)",
+        "ro": "Viaductul Borough Market (London Bridge – Blackfriars)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-01"
+      },
+      "lengthKm": 1.41,
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "A new pair of tracks on a viaduct over Borough Market and Borough High Street, giving Thameslink trains a dedicated route to Blackfriars. The viaduct was completed in 2012 as part of Key Output 1 and came into use in January 2016. Building it required the demolition of 20 Grade II listed buildings. The drawn line follows the Thameslink track from the west end of London Bridge station to Blackfriars bridge, which is longer than the new viaduct itself. Length measured from OpenStreetMap geometry.",
+        "ro": "O nouă pereche de linii pe un viaduct peste Borough Market și Borough High Street, care oferă trenurilor Thameslink o rută dedicată spre Blackfriars. Viaductul a fost terminat în 2012 în cadrul Key Output 1 și a intrat în folosință în ianuarie 2016. Construirea lui a presupus demolarea a 20 de clădiri protejate de gradul II. Linia desenată urmează calea Thameslink de la capătul vestic al stației London Bridge până la podul Blackfriars, deci este mai lungă decât viaductul nou. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-thameslink-programme",
+        "thameslink-close-out-report",
+        "openstreetmap"
+      ],
+      "geometryRef": "borough-viaduct"
+    },
+    {
+      "id": "london-bridge-area",
+      "name": {
+        "en": "London Bridge station and eastern approach",
+        "ro": "Stația London Bridge și accesul dinspre est"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013",
+        "opened": "2018-05-20"
+      },
+      "lengthKm": 2.35,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "note": {
+        "en": "Rebuilding of London Bridge with three new through platforms, a new concourse and resignalling, carried out by the London Bridge Area Partnership of Network Rail, Costain, Siemens Rail Automation and Balfour Beatty Rail. Work started in 2013 and was completed in 2018. Thameslink through trains were diverted away from London Bridge from 5 January 2015 until 20 May 2018, which is used as the opening date. The National Audit Office recorded the phase two budget rising 18.0% from £2,629 million to £3,103 million (2017 prices), largely because of conditions found at London Bridge. The drawn line runs from the Bermondsey dive-under lot to the west end of the station. Length measured from OpenStreetMap geometry.",
+        "ro": "Reconstrucția stației London Bridge cu trei peroane noi de tranzit, un hol nou și resemnalizare, realizată de London Bridge Area Partnership dintre Network Rail, Costain, Siemens Rail Automation și Balfour Beatty Rail. Lucrările au început în 2013 și au fost finalizate în 2018. Trenurile Thameslink de tranzit au fost deviate de la London Bridge între 5 ianuarie 2015 și 20 mai 2018, dată folosită ca dată a deschiderii. Oficiul Național de Audit a consemnat o creștere cu 18,0% a bugetului fazei a doua, de la 2.629 la 3.103 milioane de lire (prețurile din 2017), în principal din cauza condițiilor găsite la London Bridge. Linia desenată merge de la lotul Bermondsey dive-under până la capătul vestic al stației. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-thameslink-programme",
+        "nao-update-thameslink",
+        "thameslink-close-out-report",
+        "openstreetmap"
+      ],
+      "geometryRef": "london-bridge-area",
+      "contractors": [
+        {
+          "name": "Costain",
+          "role": "builder"
+        },
+        {
+          "name": "Siemens Rail Automation",
+          "role": "builder"
+        },
+        {
+          "name": "Balfour Beatty Rail",
+          "role": "builder"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget",
+          "detail": {
+            "en": "Department for Transport, through the Thameslink Protocol Agreement with Network Rail",
+            "ro": "Departamentul pentru Transport, prin Acordul Protocol Thameslink cu Network Rail"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bermondsey-dive-under",
+      "name": {
+        "en": "Bermondsey dive-under",
+        "ro": "Pasajul denivelat Bermondsey"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-12"
+      },
+      "lengthKm": 0.94,
+      "profile": {
+        "works": "upgrade"
+      },
+      "note": {
+        "en": "A grade-separated junction east of London Bridge that lets Thameslink trains from the Brighton Main Line cross the Kent lines on a new bridge instead of at grade. The first new track was brought into use in the early hours of 27 December 2016, which is the opening date recorded; the flyover part opened later and the works were due to be completed in 2018. The sources give no chainage, so the drawn line is indicative: it follows the OpenStreetMap Thameslink track near South Bermondsey. Length measured from OpenStreetMap geometry.",
+        "ro": "Un nod denivelat la est de London Bridge, prin care trenurile Thameslink dinspre Brighton Main Line traversează liniile Kent pe un pod nou, în loc de intersecție la nivel. Prima linie nouă a fost pusă în funcțiune în primele ore ale zilei de 27 decembrie 2016, dată înregistrată ca deschidere; partea de pasaj a fost deschisă ulterior, iar lucrările trebuiau finalizate în 2018. Sursele nu dau kilometraj, deci linia desenată este orientativă: urmează calea Thameslink din OpenStreetMap lângă South Bermondsey. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "wikipedia-thameslink-programme",
+        "thameslink-close-out-report",
+        "openstreetmap"
+      ],
+      "geometryRef": "bermondsey-dive-under"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-thameslink-programme",
+      "title": "Wikipedia: Thameslink Programme",
+      "url": "https://en.wikipedia.org/wiki/Thameslink_Programme",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "nao-update-thameslink",
+      "title": "National Audit Office: Update on the Thameslink Programme (HC 413, 2017)",
+      "url": "https://www.nao.org.uk/reports/update-on-the-thameslink-programme/",
+      "publisher": "National Audit Office",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "thameslink-close-out-report",
+      "title": "Thameslink Programme: Key Output 2 Close Out Report (archived copy)",
+      "url": "https://web.archive.org/web/20210722160640/https://uhoun19qey9384ovv24t33c1-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/Thameslink-Close-Out-Report-1.pdf",
+      "publisher": "Network Rail / Thameslink Programme",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

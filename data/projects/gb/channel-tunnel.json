@@ -1,0 +1,131 @@
+{
+  "id": "gb-channel-tunnel",
+  "country": "gb",
+  "category": "tunnel",
+  "name": {
+    "en": "Channel Tunnel",
+    "ro": "Tunelul sub Canalul Mânecii"
+  },
+  "description": {
+    "en": "Fixed rail link between Folkestone in Kent and Coquelles in Pas-de-Calais: two single-track running tunnels with a service tunnel between them, 50.46 km long, of which 37.9 km is under the sea. It was financed privately and built by TransManche Link for the Eurotunnel concession. Work began in December 1987 and the tunnel was opened on 6 May 1994. It is drawn here once, along the south running tunnel, for its full length across the UK–France border; the French half is not a separate lot.",
+    "ro": "Legătură feroviară fixă între Folkestone (Kent) și Coquelles (Pas-de-Calais): două tuneluri de circulație cu o singură linie și un tunel de serviciu între ele, în lungime de 50,46 km, din care 37,9 km sub mare. A fost finanțat privat și construit de TransManche Link pentru concesiunea Eurotunnel. Lucrările au început în decembrie 1987, iar tunelul a fost inaugurat la 6 mai 1994. Este desenat o singură dată, pe tunelul de circulație sud, pe toată lungimea peste frontiera Regatul Unit–Franța; jumătatea franceză nu este un lot separat."
+  },
+  "operator": "gb-getlink",
+  "lots": [
+    {
+      "id": "channel-tunnel",
+      "name": {
+        "en": "Channel Tunnel (Folkestone – Coquelles)",
+        "ro": "Tunelul sub Canalul Mânecii (Folkestone – Coquelles)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "1987-12",
+        "opened": "1994-05-06"
+      },
+      "lengthKm": 50.46,
+      "cost": {
+        "estimated": {
+          "amount": 2600,
+          "currency": "GBP",
+          "year": 1985,
+          "scope": "total",
+          "note": "Total investment cost at 1985 prices before construction."
+        },
+        "actual": {
+          "amount": 4650,
+          "currency": "GBP",
+          "year": 1985,
+          "scope": "total",
+          "note": "Actual cost at completion in 1994, stated in 1985 prices."
+        }
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 50.46,
+        "tracks": 2,
+        "electrified": true
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "1987-12",
+          "note": {
+            "en": "Work began; boring of the UK service tunnel started on 15 December 1987 and of the French one on 28 February 1988.",
+            "ro": "Au început lucrările; forarea tunelului de serviciu pe partea britanică a început la 15 decembrie 1987, iar pe cea franceză la 28 februarie 1988."
+          },
+          "sourceRef": "getlink-history"
+        },
+        {
+          "kind": "opened",
+          "date": "1994-05-06",
+          "note": {
+            "en": "Official opening by Queen Elizabeth II and President Mitterrand. The first freight train ran on 1 June 1994 and Eurostar passenger services began on 14 November 1994.",
+            "ro": "Inaugurare oficială de către regina Elisabeta a II-a și președintele Mitterrand. Primul tren de marfă a circulat la 1 iunie 1994, iar serviciile de pasageri Eurostar au început la 14 noiembrie 1994."
+          },
+          "sourceRef": "wikipedia-channel-tunnel"
+        }
+      ],
+      "funding": [
+        {
+          "source": "other",
+          "detail": {
+            "en": "Privately financed by the concessionaire through equity, a share offer and bank loans.",
+            "ro": "Finanțat privat de concesionar prin capital, ofertă publică de acțiuni și credite bancare."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "TransManche Link",
+          "role": "builder"
+        },
+        {
+          "name": "Eurotunnel (Channel Tunnel Group / France–Manche)",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Length is the 50.46 km recorded for the whole tunnel between the Beussingue and Castle Hill portals, 9.3 km on land in the UK, 37.9 km under the sea and 3.3 km on land in France. Costs are in 1985 prices as stated by the source and are not restated; the 1985 figure predates the deflator series. The concession was awarded for 55 years from 1987 and extended to 65 years in 1993. Getlink (formerly Eurotunnel) now owns and operates the tunnel. Drawn along the south running tunnel from the OpenStreetMap geometry; the drawn length of 50.4 km is within 0.2% of the recorded figure.",
+        "ro": "Lungimea este cea de 50,46 km înregistrată pentru întregul tunel între portalurile Beussingue și Castle Hill: 9,3 km pe uscat în Regatul Unit, 37,9 km sub mare și 3,3 km pe uscat în Franța. Costurile sunt în prețuri din 1985, așa cum le indică sursa, și nu sunt reexprimate; cifra din 1985 este anterioară seriei de deflatori. Concesiunea a fost acordată pentru 55 de ani din 1987 și prelungită la 65 de ani în 1993. Getlink (fost Eurotunnel) deține și exploatează acum tunelul. Desenat pe tunelul de circulație sud după geometria OpenStreetMap; lungimea desenată de 50,4 km se abate cu sub 0,2% de cifra înregistrată."
+      },
+      "sourceRefs": [
+        "wikipedia-channel-tunnel",
+        "getlink-history",
+        "leshuttle-channel-tunnel",
+        "openstreetmap"
+      ],
+      "geometryRef": "channel-tunnel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-channel-tunnel",
+      "title": "Wikipedia: Channel Tunnel (length 50.46 km, 37.9 km undersea, work began 1 December 1987, first freight 1 June 1994, Eurostar 14 November 1994, cost at 1985 prices, 55-year concession extended to 65)",
+      "url": "https://en.wikipedia.org/wiki/Channel_Tunnel",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "getlink-history",
+      "title": "Getlink Group: History (UK service tunnel boring from 15 December 1987, French from 28 February 1988)",
+      "url": "https://www.getlinkgroup.com/en/our-group/history/",
+      "publisher": "Getlink",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "leshuttle-channel-tunnel",
+      "title": "LeShuttle: The Channel Tunnel (50.5 km long, officially opened on 6 May 1994)",
+      "url": "https://www.leshuttle.com/uk-en/discover/why-choose-leshuttle/build/the-channel-tunnel",
+      "publisher": "LeShuttle",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

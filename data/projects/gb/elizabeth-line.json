@@ -1,0 +1,281 @@
+{
+  "id": "gb-elizabeth-line",
+  "country": "gb",
+  "city": "gb-london",
+  "category": "railway",
+  "name": {
+    "en": "Elizabeth line (Crossrail), central section and branches",
+    "ro": "Linia Elizabeth (Crossrail), secțiunea centrală și ramurile"
+  },
+  "description": {
+    "en": "New tunnelled railway across London between Royal Oak, west of Paddington, and Abbey Wood and Pudding Mill Lane, built as Crossrail and named the Elizabeth line. Construction began on 15 May 2009. Trains from Paddington to Abbey Wood started on 24 May 2022, Bond Street station opened on 24 October 2022 and through services from Reading, Heathrow and Shenfield began on 6 November 2022. The National Audit Office recorded programme funding of £17.6 billion in December 2018, £2.8 billion more than the level announced in 2010; the estimated total cost was £18.9 billion by May 2022. The Reading, Heathrow and Shenfield approaches are existing Network Rail lines and are not drawn. Old Oak Common station is under construction with High Speed 2 and is not included.",
+    "ro": "Cale ferată nouă în tunel prin Londra, între Royal Oak, la vest de Paddington, și Abbey Wood și Pudding Mill Lane, construită ca Crossrail și numită linia Elizabeth. Construcția a început pe 15 mai 2009. Trenurile Paddington – Abbey Wood au circulat din 24 mai 2022, stația Bond Street s-a deschis pe 24 octombrie 2022, iar serviciile directe de la Reading, Heathrow și Shenfield au început pe 6 noiembrie 2022. Oficiul Național de Audit a consemnat o finanțare a programului de 17,6 miliarde de lire în decembrie 2018, cu 2,8 miliarde mai mult decât nivelul anunțat în 2010; costul total estimat a fost de 18,9 miliarde de lire până în mai 2022. Accesele dinspre Reading, Heathrow și Shenfield sunt linii existente ale Network Rail și nu sunt desenate. Stația Old Oak Common este în construcție odată cu High Speed 2 și nu este inclusă."
+  },
+  "operator": "gb-tfl",
+  "stationCount": 10,
+  "cost": {
+    "amount": 18900,
+    "currency": "GBP",
+    "scope": "programme",
+    "confidence": "reported",
+    "note": "Estimated total cost of the whole programme by May 2022, nominal. Price year not stated in the source."
+  },
+  "lots": [
+    {
+      "id": "central-paddington-whitechapel",
+      "name": {
+        "en": "Central section: Royal Oak portal – Paddington – Whitechapel",
+        "ro": "Secțiunea centrală: portalul Royal Oak – Paddington – Whitechapel"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2009-05-15",
+        "opened": "2022-05-24"
+      },
+      "lengthKm": 8.74,
+      "profile": {
+        "tracks": 2
+      },
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "Programme funding raised to £17.6 billion in December 2018, including more than £2 billion of government loans to TfL and the Greater London Authority",
+            "ro": "Finanțarea programului a fost ridicată la 17,6 miliarde de lire în decembrie 2018, inclusiv peste 2 miliarde de lire în împrumuturi guvernamentale către TfL și Greater London Authority"
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "BAM Nuttall – Ferrovial Agroman – Kier (BFK)",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2009-05-15",
+          "note": {
+            "en": "Piling began at the future Canary Wharf station.",
+            "ro": "Au început forajele pentru piloți la viitoarea stație Canary Wharf."
+          },
+          "sourceRef": "wikipedia-elizabeth-line"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-05-24",
+          "note": {
+            "en": "Elizabeth line services started between Paddington and Abbey Wood. Bond Street station was skipped and opened on 24 October 2022.",
+            "ro": "Serviciile liniei Elizabeth au început între Paddington și Abbey Wood. Stația Bond Street a fost sărită și s-a deschis pe 24 octombrie 2022."
+          },
+          "sourceRef": "wikipedia-elizabeth-line"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. Twin-bore tunnels from the Royal Oak portal to Farringdon form the Tunnels West contract (C300), awarded in late 2010 to BAM Nuttall, Ferrovial Agroman and Kier; the rest of the lot is covered by other contracts not recorded here. The central section was planned to open in December 2018; the NAO recorded in 2019 that Crossrail Ltd could not meet that date. Bond Street station was not ready on 24 May 2022 and opened on 24 October 2022, so it is part of this lot with its own later date. The 24 May 2022 date is from Wikipedia; TfL's 3 May 2022 release gives it as the planned date.",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap. Tunelurile gemene de la portalul Royal Oak la Farringdon formează contractul Tunnels West (C300), atribuit la sfârșitul lui 2010 consorțiului BAM Nuttall, Ferrovial Agroman și Kier; restul secțiunii este acoperit de alte contracte, care nu sunt înregistrate aici. Deschiderea secțiunii centrale era planificată pentru decembrie 2018; NAO a consemnat în 2019 că Crossrail Ltd nu putea respecta această dată. Stația Bond Street nu era gata pe 24 mai 2022 și s-a deschis pe 24 octombrie 2022, deci face parte din această secțiune, cu o dată ulterioară proprie. Data de 24 mai 2022 provine de la Wikipedia; comunicatul TfL din 3 mai 2022 o indică drept dată planificată."
+      },
+      "sourceRefs": [
+        "nao-completing-crossrail",
+        "tfl-open-24-may-2022",
+        "wikipedia-elizabeth-line",
+        "wikipedia-crossrail",
+        "osm-elizabeth-line"
+      ],
+      "geometryRef": "central-paddington-whitechapel"
+    },
+    {
+      "id": "whitechapel-pudding-mill-lane",
+      "name": {
+        "en": "Whitechapel – Pudding Mill Lane portal (Stratford branch)",
+        "ro": "Whitechapel – portalul Pudding Mill Lane (ramura Stratford)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-11-06"
+      },
+      "lengthKm": 4.41,
+      "profile": {
+        "tracks": 2
+      },
+      "contractors": [
+        {
+          "name": "Dragados – John Sisk & Son",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2022-11-06",
+          "note": {
+            "en": "Services from Shenfield began running through the central tunnels.",
+            "ro": "Serviciile dinspre Shenfield au început să circule prin tunelurile centrale."
+          },
+          "sourceRef": "wikipedia-elizabeth-line"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. East of Whitechapel the line splits: this lot is the north-eastern branch to the Pudding Mill Lane portal, where it joins the Great Eastern Main Line toward Stratford and Shenfield. Wikipedia lists a 2.72 km twin-bore tunnel from the Pudding Mill Lane portal to Stepney Green cavern. The Tunnels East contract (C305) covers three tunnel sections in east London, awarded to Dragados and John Sisk & Son in late 2010; only part of it lies in this lot. Tunnelling for the whole project began in May 2012 (TfL).",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap. La est de Whitechapel linia se desparte: această secțiune este ramura nord-estică până la portalul Pudding Mill Lane, unde se leagă de Great Eastern Main Line spre Stratford și Shenfield. Wikipedia indică un tunel cu două tuburi de 2,72 km de la portalul Pudding Mill Lane la caverna Stepney Green. Contractul Tunnels East (C305) acoperă trei secțiuni de tunel în estul Londrei, atribuit consorțiului Dragados și John Sisk & Son la sfârșitul lui 2010; doar o parte se află în această secțiune. Tunelarea întregului proiect a început în mai 2012 (TfL)."
+      },
+      "sourceRefs": [
+        "tfl-open-24-may-2022",
+        "wikipedia-elizabeth-line",
+        "wikipedia-crossrail",
+        "osm-elizabeth-line"
+      ],
+      "geometryRef": "whitechapel-pudding-mill-lane"
+    },
+    {
+      "id": "whitechapel-north-woolwich",
+      "name": {
+        "en": "Whitechapel – Canary Wharf – Custom House – North Woolwich portal",
+        "ro": "Whitechapel – Canary Wharf – Custom House – portalul North Woolwich"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-05-24"
+      },
+      "lengthKm": 9.23,
+      "profile": {
+        "tracks": 2
+      },
+      "contractors": [
+        {
+          "name": "Dragados – John Sisk & Son",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2022-05-24",
+          "sourceRef": "wikipedia-elizabeth-line"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. South-eastern branch from Whitechapel to the North Woolwich portal on the north bank of the Thames. Includes the Victoria Dock portal near Custom House and the former Connaught tunnel, which Wikipedia says received a £50 million investment to renovate and reuse. The Tunnels East contract (C305) covers three tunnel sections in east London, including the Limmo Peninsula to Victoria Dock section; only part of it lies in this lot.",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap. Ramura sud-estică de la Whitechapel până la portalul North Woolwich, pe malul nordic al Tamisei. Include portalul Victoria Dock de lângă Custom House și fostul tunel Connaught, pentru care Wikipedia indică o investiție de 50 de milioane de lire pentru renovare și reutilizare. Contractul Tunnels East (C305) acoperă trei secțiuni de tunel în estul Londrei, inclusiv secțiunea Limmo Peninsula – Victoria Dock; doar o parte se află în această secțiune."
+      },
+      "sourceRefs": [
+        "wikipedia-elizabeth-line",
+        "wikipedia-crossrail",
+        "osm-elizabeth-line"
+      ],
+      "geometryRef": "whitechapel-north-woolwich"
+    },
+    {
+      "id": "thames-tunnel-plumstead-north-woolwich",
+      "name": {
+        "en": "Thames tunnel: Plumstead – North Woolwich",
+        "ro": "Tunelul sub Tamisa: Plumstead – North Woolwich"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-05-24"
+      },
+      "lengthKm": 2.64,
+      "profile": {
+        "tracks": 2,
+        "tunnelKm": 2.64
+      },
+      "contractors": [
+        {
+          "name": "Hochtief – J. Murphy & Sons",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2011",
+          "note": {
+            "en": "Contract C310 awarded to Hochtief and J. Murphy & Sons.",
+            "ro": "Contractul C310 atribuit consorțiului Hochtief și J. Murphy & Sons."
+          },
+          "sourceRef": "wikipedia-crossrail"
+        },
+        {
+          "kind": "opened",
+          "date": "2022-05-24",
+          "sourceRef": "wikipedia-elizabeth-line"
+        }
+      ],
+      "note": {
+        "en": "Twin-bore tunnel under the Thames, contract C310, 2.64 km according to Wikipedia. Drawn between the tunnel-tagged ends in OpenStreetMap, which are 3.35 km apart because that stretch also contains Woolwich station and its approaches; the sourced length is kept. Opened with the rest of the Paddington – Abbey Wood section.",
+        "ro": "Tunel cu două tuburi sub Tamisa, contractul C310, 2,64 km potrivit Wikipedia. Desenat între capetele marcate ca tunel în OpenStreetMap, aflate la 3,35 km distanță deoarece acea porțiune include și stația Woolwich și accesele ei; lungimea din sursă este păstrată. S-a deschis odată cu restul secțiunii Paddington – Abbey Wood."
+      },
+      "sourceRefs": [
+        "wikipedia-crossrail",
+        "wikipedia-elizabeth-line",
+        "osm-elizabeth-line"
+      ],
+      "geometryRef": "thames-tunnel-plumstead-north-woolwich"
+    },
+    {
+      "id": "plumstead-abbey-wood",
+      "name": {
+        "en": "Plumstead portal – Abbey Wood",
+        "ro": "Portalul Plumstead – Abbey Wood"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-05-24"
+      },
+      "lengthKm": 1.5,
+      "profile": {
+        "tracks": 2
+      },
+      "events": [
+        {
+          "kind": "opened",
+          "date": "2022-05-24",
+          "sourceRef": "wikipedia-elizabeth-line"
+        }
+      ],
+      "note": {
+        "en": "Length measured from OpenStreetMap geometry. South-eastern end of the line, from the Plumstead portal to Abbey Wood station, where Elizabeth line trains terminate. Wikipedia describes the south-eastern branch as connecting with the North Kent Line.",
+        "ro": "Lungime măsurată pe geometria OpenStreetMap. Capătul sud-estic al liniei, de la portalul Plumstead la stația Abbey Wood, unde se termină trenurile liniei Elizabeth. Wikipedia descrie ramura sud-estică ca fiind legată de North Kent Line."
+      },
+      "sourceRefs": [
+        "wikipedia-elizabeth-line",
+        "osm-elizabeth-line"
+      ],
+      "geometryRef": "plumstead-abbey-wood"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nao-completing-crossrail",
+      "title": "National Audit Office: Completing Crossrail",
+      "url": "https://www.nao.org.uk/reports/completing-crossrail/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tfl-open-24-may-2022",
+      "title": "TfL press release: Elizabeth line to open on 24 May 2022 (3 May 2022)",
+      "url": "https://tfl-newsroom.prgloo.com/news/tfl-press-release-elizabeth-line-to-open-on-24-may-2022",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-elizabeth-line",
+      "title": "Wikipedia: Elizabeth line",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_line",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-crossrail",
+      "title": "Wikipedia: Crossrail",
+      "url": "https://en.wikipedia.org/wiki/Crossrail",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-elizabeth-line",
+      "title": "OpenStreetMap: Elizabeth line route relations 14773903 and 14773906 (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/14773906",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "is-vadlaheidargong",
+  "country": "is",
+  "category": "tunnel",
+  "operator": "is-vadlaheidargong-hf",
+  "name": {
+    "en": "Vaðlaheiðargöng (Route 1)",
+    "ro": "Vaðlaheiðargöng (Drumul 1)"
+  },
+  "description": {
+    "en": "7.5 km tolled road tunnel on the Ring Road (Route 1) under Vaðlaheiði, between Eyjafjörður near Akureyri and Fnjóskadalur. Opened to traffic on 21 December 2018.",
+    "ro": "Tunel rutier cu taxă de 7,5 km pe șoseaua circulară (Drumul 1), sub Vaðlaheiði, între Eyjafjörður, lângă Akureyri, și Fnjóskadalur. Deschis circulației la 21 decembrie 2018."
+  },
+  "lots": [
+    {
+      "id": "vadlaheidargong",
+      "name": {
+        "en": "Vaðlaheiðargöng",
+        "ro": "Vaðlaheiðargöng"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2013",
+        "opened": "2018-12-21"
+      },
+      "lengthKm": 7.5,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 9300,
+              "currency": "ISK",
+              "year": 2013,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "About 9.3 billion ISK: the October 2011 bid of about 8.8 billion ISK adjusted for construction-cost inflation by signing. VAT treatment is not stated."
+            },
+            "date": "2013-02-01",
+            "sourceRef": "vadlaheidi-sagan"
+          }
+        ]
+      },
+      "profile": {
+        "tunnelKm": 7.5,
+        "tolled": true
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2013-02-01",
+          "note": {
+            "en": "Contracts signed with ÍAV/Marti for the tunnel, after a 2011 tender.",
+            "ro": "Contracte semnate cu ÍAV/Marti pentru tunel, după o licitație din 2011."
+          },
+          "sourceRef": "vadlaheidi-sagan"
+        },
+        {
+          "kind": "opened",
+          "date": "2018-12-21",
+          "note": {
+            "en": "Opened to traffic. Tolls began on 2 January 2019.",
+            "ro": "Deschis circulației. Taxa a început la 2 ianuarie 2019."
+          },
+          "sourceRef": "vegagerdin-jardgong"
+        }
+      ],
+      "funding": [
+        {
+          "source": "loan",
+          "detail": {
+            "en": "State loan of up to 8.7 billion ISK at end-2011 prices, approved by Parliament on 14 June 2012; loan agreement signed in December 2012. The loan is a financing limit, not the outturn cost.",
+            "ro": "Împrumut de stat de până la 8,7 miliarde ISK la prețurile de la sfârșitul lui 2011, aprobat de Parlament la 14 iunie 2012; contractul de împrumut a fost semnat în decembrie 2012. Împrumutul este o limită de finanțare, nu costul final."
+          },
+          "sourceRef": "vadlaheidi-sagan"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "ÍAV/Marti (Ósafl)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Length 7,500 m per the Vegagerðin tunnel register, which gives construction 2013–2018, opened 21 December 2018 and inaugurated 12 January 2019. Breakthrough on 28 April 2017. In 2018 a conciliation committee awarded the contractor 1,379 million ISK at the contract price level, mainly for higher-than-expected geothermal heat; the client disputed the amount and reserved the right to go to court. Drawn OpenStreetMap length is 7.43 km.",
+        "ro": "Lungime de 7.500 m conform registrului de tuneluri Vegagerðin, care indică construcția 2013–2018, deschiderea la 21 decembrie 2018 și inaugurarea la 12 ianuarie 2019. Străpungerea a avut loc la 28 aprilie 2017. În 2018 o comisie de conciliere a acordat constructorului 1.379 milioane ISK la nivelul de preț al contractului, în principal pentru căldura geotermală mai mare decât se aștepta; beneficiarul a contestat suma și și-a rezervat dreptul de a merge în instanță. Lungimea desenată din OpenStreetMap este 7,43 km."
+      },
+      "sourceRefs": [
+        "vegagerdin-jardgong",
+        "vadlaheidi-sagan",
+        "osm-vadlaheidargong"
+      ],
+      "geometryRef": "vadlaheidargong"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vegagerdin-jardgong",
+      "title": "Vegagerðin: Jarðgöng (tunnel register)",
+      "url": "https://www.vegagerdin.is/samgongukerfid/vegakerfid/jardgong",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vadlaheidi-sagan",
+      "title": "Vaðlaheiðargöng hf.: Sagan",
+      "url": "https://www.vadlaheidi.is/is/sagan",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-vadlaheidargong",
+      "title": "OpenStreetMap contributors (ODbL): way 518354108, Vaðlaheiðargöng",
+      "url": "https://www.openstreetmap.org/way/518354108",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

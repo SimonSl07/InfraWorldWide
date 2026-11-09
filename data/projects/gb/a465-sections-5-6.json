@@ -1,0 +1,111 @@
+{
+  "id": "gb-a465-sections-5-6",
+  "country": "gb",
+  "category": "highway",
+  "name": {
+    "en": "A465 Heads of the Valleys, Sections 5 and 6 (Dowlais Top – Hirwaun)",
+    "ro": "A465 Heads of the Valleys, secțiunile 5 și 6 (Dowlais Top – Hirwaun)"
+  },
+  "description": {
+    "en": "Dualling of 17.7 km of the A465 between Dowlais Top, Merthyr Tydfil and Hirwaun in Wales, with 6 junctions and 32 new bridges. Future Valleys, a consortium including FCC, Roadbridge, Meridiam, Alun Griffiths and Atkins, was awarded the contract under the Welsh Government's revenue-funded Mutual Investment Model, the first project delivered that way. Main work started in May 2021 and the road officially re-opened on 30 May 2025.",
+    "ro": "Dublarea a 17,7 km din A465 între Dowlais Top, Merthyr Tydfil, și Hirwaun, în Țara Galilor, cu 6 noduri și 32 de poduri noi. Contractul a fost atribuit consorțiului Future Valleys, din care fac parte FCC, Roadbridge, Meridiam, Alun Griffiths și Atkins, în cadrul Modelului de investiții mutuale (MIM) al Guvernului Țării Galilor, finanțat din venituri, primul proiect livrat astfel. Lucrările principale au început în mai 2021, iar drumul a fost redeschis oficial la 30 mai 2025."
+  },
+  "operator": "gb-welsh-government",
+  "lots": [
+    {
+      "id": "dowlais-top-hirwaun",
+      "name": {
+        "en": "Dowlais Top – Hirwaun",
+        "ro": "Dowlais Top – Hirwaun"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2020-11",
+        "constructionStart": "2021-05",
+        "opened": "2025-05-30"
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-11",
+          "note": {
+            "en": "Written statement of 10 November 2020: the final contract has been awarded to Future Valleys.",
+            "ro": "Declarație scrisă din 10 noiembrie 2020: contractul final a fost atribuit Future Valleys."
+          },
+          "sourceRef": "gov-wales-contract-award-statement"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-05",
+          "sourceRef": "gov-wales-a465-sections-5-6"
+        },
+        {
+          "kind": "opened",
+          "date": "2025-05-30",
+          "note": {
+            "en": "Officially re-opened on 30 May 2025.",
+            "ro": "Redeschis oficial la 30 mai 2025."
+          },
+          "sourceRef": "gov-wales-a465-sections-5-6"
+        }
+      ],
+      "lengthKm": 17.7,
+      "cost": {
+        "estimated": {
+          "amount": 1400,
+          "currency": "GBP",
+          "scope": "total",
+          "note": "Figure given as the cost on the Welsh Government project page. The scheme is revenue-funded under the Mutual Investment Model, so this is not a stated capital outturn and no price year is given."
+        }
+      },
+      "profile": {
+        "bridgeCount": 32
+      },
+      "funding": [
+        {
+          "source": "ppp",
+          "detail": {
+            "en": "Welsh Government revenue-funded Mutual Investment Model, the first project delivered that way. Future Valleys was awarded the final contract in November 2020.",
+            "ro": "Modelul de investiții mutuale (MIM) al Guvernului Țării Galilor, finanțat din venituri, primul proiect livrat astfel. Contractul final a fost atribuit Future Valleys în noiembrie 2020."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Future Valleys",
+          "role": "concessionaire"
+        }
+      ],
+      "note": {
+        "en": "Length as stated by the Welsh Government (11 miles, 17.7 km); the drawn OpenStreetMap westbound carriageway measures about 17.8 km. An earlier statement described the scheme as an 18 km length. The A4059 work at Hirwaun is a separate scheme and is not included. The page does not give separate opening dates for sections 5 and 6, so they are recorded as one lot.",
+        "ro": "Lungime conform Guvernului Țării Galilor (11 mile, 17,7 km); sensul vest trasat din OpenStreetMap măsoară circa 17,8 km. O declarație anterioară descria proiectul ca având 18 km. Lucrările la A4059 de la Hirwaun sunt un proiect separat și nu sunt incluse. Pagina nu indică date de deschidere separate pentru secțiunile 5 și 6, deci sunt înregistrate ca un singur lot."
+      },
+      "sourceRefs": [
+        "gov-wales-a465-sections-5-6",
+        "gov-wales-contract-award-statement",
+        "openstreetmap-a465"
+      ],
+      "geometryRef": "dowlais-top-hirwaun"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gov-wales-a465-sections-5-6",
+      "title": "A465 section 5 and 6: Dowlais Top to Hirwaun",
+      "url": "https://www.gov.wales/a465-section-5-and-6-dowlais-top-hirwaun",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "gov-wales-contract-award-statement",
+      "title": "Written Statement: A465 Heads of the Valleys dualling, Sections 5 and 6 (Dowlais to Hirwaun) contract award",
+      "url": "https://www.gov.wales/written-statement-a465-heads-valleys-dualling-sections-5-6-dowlais-hirwaun-contract-award",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-a465",
+      "title": "OpenStreetMap contributors (ODbL): A465 Heads of the Valleys Road geometry",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

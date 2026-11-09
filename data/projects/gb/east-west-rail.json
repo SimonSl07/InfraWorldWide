@@ -1,0 +1,146 @@
+{
+  "id": "gb-east-west-rail",
+  "country": "gb",
+  "category": "railway",
+  "name": {
+    "en": "East West Rail (Oxford – Bletchley – Bedford)",
+    "ro": "East West Rail (Oxford – Bletchley – Bedford)"
+  },
+  "description": {
+    "en": "East West Rail reopens the Varsity Line between Oxford and Cambridge in stages. Oxford–Bicester was upgraded by Chiltern Railways and has carried passenger trains since 2015–2016. The rebuilt Bicester–Bletchley section was handed to Network Rail in December 2024 and has been used by freight since 2025, but has no scheduled passenger service yet. The Marston Vale line from Bletchley to Bedford is to be upgraded and electrified by the early 2030s. The Bedford–Cambridge section is planned on a new alignment, with Tempsford station construction by 2030; it has no fixed route or sourced length yet and is not drawn here.",
+    "ro": "East West Rail redeschide pe etape Varsity Line între Oxford și Cambridge. Secțiunea Oxford–Bicester a fost modernizată de Chiltern Railways și are trafic de călători din 2015–2016. Secțiunea reconstruită Bicester–Bletchley a fost predată Network Rail în decembrie 2024 și este folosită de trenuri de marfă din 2025, dar nu are încă serviciu regulat de călători. Linia Marston Vale, între Bletchley și Bedford, urmează să fie modernizată și electrificată până la începutul anilor 2030. Secțiunea Bedford–Cambridge este planificată pe un traseu nou, cu stația Tempsford în construcție până în 2030; nu are încă traseu stabilit sau lungime documentată și nu este desenată aici."
+  },
+  "operator": "gb-east-west-railway-company",
+  "lots": [
+    {
+      "id": "oxford-bicester",
+      "name": {
+        "en": "Oxford – Bicester Village",
+        "ro": "Oxford – Bicester Village"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2016-12-11"
+      },
+      "lengthKm": 18.9,
+      "profile": {
+        "works": "upgrade"
+      },
+      "events": [
+        {
+          "kind": "partial_opening",
+          "date": "2015-10-26",
+          "note": {
+            "en": "Chiltern Railways began service from Oxford Parkway to London Marylebone.",
+            "ro": "Chiltern Railways a început serviciul de la Oxford Parkway la London Marylebone."
+          },
+          "sourceRef": "wikipedia-east-west-rail"
+        },
+        {
+          "kind": "opened",
+          "date": "2016-12-11",
+          "note": {
+            "en": "Service extended from Oxford station to London Marylebone.",
+            "ro": "Serviciul a fost extins de la gara Oxford la London Marylebone."
+          },
+          "sourceRef": "wikipedia-east-west-rail"
+        }
+      ],
+      "note": {
+        "en": "Phase 1 of East West Rail, rebuilt as part of Chiltern Railways' Project Evergreen. East West Railway Company dates the upgrade to December 2016; Wikipedia records Oxford Parkway services from 26 October 2015 and Oxford station services from 11 December 2016. Length measured from OpenStreetMap geometry, Oxford station to Bicester Village station.",
+        "ro": "Faza 1 din East West Rail, reconstruită în cadrul proiectului Evergreen al Chiltern Railways. East West Railway Company datează modernizarea în decembrie 2016; Wikipedia indică servicii din Oxford Parkway din 26 octombrie 2015 și din gara Oxford din 11 decembrie 2016. Lungime măsurată pe geometria OpenStreetMap, de la gara Oxford la gara Bicester Village."
+      },
+      "sourceRefs": [
+        "ewr-project-overview",
+        "wikipedia-east-west-rail",
+        "osm-contributors"
+      ],
+      "geometryRef": "oxford-bicester"
+    },
+    {
+      "id": "bicester-bletchley",
+      "name": {
+        "en": "Bicester Village – Bletchley",
+        "ro": "Bicester Village – Bletchley"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2020-04"
+      },
+      "lengthKm": 34.6,
+      "profile": {
+        "works": "reconstruction"
+      },
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2020-04",
+          "note": {
+            "en": "Refurbishment of the Bletchley Flyover began.",
+            "ro": "A început refacerea viaductului Bletchley Flyover."
+          },
+          "sourceRef": "wikipedia-east-west-rail"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "East West Rail Alliance (VolkerRail – Atkins – Laing O'Rourke – Network Rail)",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "Track was completed on 7 March 2024 and the section was handed to Network Rail in December 2024. Chiltern Railways was appointed passenger operator in 2025 for Oxford–Milton Keynes services via Bicester Village, Winslow and Bletchley. The line was released to freight operators in early February 2025 and freight trains were using it by June 2025; Wikipedia records no scheduled passenger service yet. Kept as under construction because the section is not open to scheduled passengers and no passenger start date is recorded. Length measured from OpenStreetMap geometry.",
+        "ro": "Linia a fost finalizată la 7 martie 2024, iar secțiunea a fost predată Network Rail în decembrie 2024. Chiltern Railways a fost desemnat în 2025 operator de călători pentru serviciile Oxford–Milton Keynes prin Bicester Village, Winslow și Bletchley. Linia a fost deschisă operatorilor de marfă la începutul lui februarie 2025, iar trenurile de marfă o foloseau până în iunie 2025; Wikipedia nu consemnează încă niciun serviciu regulat de călători. Rămâne în construcție deoarece secțiunea nu este deschisă traficului regulat de călători și nu există o dată de începere înregistrată. Lungime măsurată pe geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "ewr-project-overview",
+        "wikipedia-east-west-rail",
+        "osm-contributors"
+      ],
+      "geometryRef": "bicester-bletchley"
+    },
+    {
+      "id": "bletchley-bedford",
+      "name": {
+        "en": "Bletchley – Bedford (Marston Vale line)",
+        "ro": "Bletchley – Bedford (linia Marston Vale)"
+      },
+      "status": "planned",
+      "lengthKm": 29.5,
+      "profile": {
+        "works": "upgrade",
+        "electrified": true
+      },
+      "note": {
+        "en": "East West Railway Company plans to upgrade and electrify the Marston Vale line by the early 2030s, with four modern accessible stations, a new station at Stewartby and an upgraded Bedford station by the mid-2030s. The existing Marston Vale line stays in service meanwhile. Length measured from OpenStreetMap geometry, Bletchley to Bedford station, with a short straight link of about 1.5 km where the OpenStreetMap track is not connected near Bedford.",
+        "ro": "East West Railway Company planifică modernizarea și electrificarea liniei Marston Vale până la începutul anilor 2030, cu patru stații moderne accesibile, o stație nouă la Stewartby și o gară Bedford modernizată până la mijlocul anilor 2030. Linia existentă Marston Vale rămâne în funcțiune între timp. Lungime măsurată pe geometria OpenStreetMap, de la Bletchley la gara Bedford, cu o legătură dreaptă scurtă de circa 1,5 km acolo unde traseul din OpenStreetMap nu este conectat lângă Bedford."
+      },
+      "sourceRefs": [
+        "ewr-project-overview",
+        "wikipedia-east-west-rail",
+        "osm-contributors"
+      ],
+      "geometryRef": "bletchley-bedford"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ewr-project-overview",
+      "title": "East West Railway Company: Project overview",
+      "url": "https://eastwestrail.co.uk/about-us/project-overview",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-east-west-rail",
+      "title": "Wikipedia: East West Rail",
+      "url": "https://en.wikipedia.org/wiki/East_West_Rail",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-contributors",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

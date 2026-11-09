@@ -1,0 +1,144 @@
+{
+  "id": "is-dyrafjardargong",
+  "country": "is",
+  "category": "tunnel",
+  "operator": "is-vegagerdin",
+  "name": {
+    "en": "Dýrafjarðargöng (Route 60)",
+    "ro": "Dýrafjarðargöng (Drumul 60)"
+  },
+  "description": {
+    "en": "New 13.7 km section of Vestfjarðavegur (Route 60) in the Westfjords between Mjólká in Arnarfjörður and the Dýrafjörður bridge, with a 5.6 km road tunnel. It shortened the route by 27.4 km.",
+    "ro": "Tronson nou de 13,7 km din Vestfjarðavegur (Drumul 60) în Fiordurile de Vest, între Mjólká din Arnarfjörður și podul din Dýrafjörður, cu un tunel rutier de 5,6 km. A scurtat traseul cu 27,4 km."
+  },
+  "lots": [
+    {
+      "id": "mjolka-dyrafjardarbru",
+      "name": {
+        "en": "Mjólká – Dýrafjarðarbrú, including the tunnel",
+        "ro": "Mjólká – Dýrafjarðarbrú, inclusiv tunelul"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2017-04-20",
+        "opened": "2020-10-25"
+      },
+      "lengthKm": 13.7,
+      "cost": {
+        "estimated": {
+          "amount": 9316.63,
+          "currency": "ISK",
+          "scope": "works",
+          "note": "Vegagerðin's estimated contractor cost at the January 2017 bid opening. VAT treatment and price year are not stated."
+        },
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 8687.21,
+              "currency": "ISK",
+              "year": 2017,
+              "scope": "works"
+            },
+            "date": "2017-04-20",
+            "note": "Winning bid of Metrostav and Suðurverk, 93.2% of the estimate. VAT treatment is not stated.",
+            "sourceRef": "vegagerdin-tender-dyrafjardargong"
+          }
+        ]
+      },
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 5.6
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2016-05",
+          "note": {
+            "en": "Prequalification advertised.",
+            "ro": "Preselecție anunțată."
+          },
+          "sourceRef": "vegagerdin-tender-dyrafjardargong"
+        },
+        {
+          "kind": "awarded",
+          "date": "2017-04-20",
+          "note": {
+            "en": "Contract concluded with Metrostav a.s. and Suðurverk hf.",
+            "ro": "Contract încheiat cu Metrostav a.s. și Suðurverk hf."
+          },
+          "sourceRef": "vegagerdin-tender-dyrafjardargong"
+        },
+        {
+          "kind": "opened",
+          "date": "2020-10-25",
+          "note": {
+            "en": "Tunnel opened to traffic.",
+            "ro": "Tunelul a fost deschis circulației."
+          },
+          "sourceRef": "vegagerdin-project-dyrafjardargong"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Metrostav a.s.",
+          "role": "builder"
+        },
+        {
+          "name": "Suðurverk hf.",
+          "role": "builder"
+        },
+        {
+          "name": "Vestfirskir verktakar ehf.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 8687.21,
+          "currency": "ISK",
+          "year": 2017,
+          "scope": "works",
+          "note": "Winning bid opened 24 January 2017; the tender page gives no separate contract sum."
+        }
+      },
+      "note": {
+        "en": "Vegagerðin gives the new road as 13.7 km in total and the tunnel as about 5.6 km; the tender described a 5.3 km tunnel and about 9.0 km of road outside it. Bridges were built by Vestfirskir verktakar ehf.; Metrostav and Suðurverk built the rest. Work began in 2017, no exact start date is given. The line is drawn from Mjólká to a point at 65.8585 N, 23.3140 W near the Dýrafjörður bridge; the exact end of the section is not identified in OSM. Tunnel opened 25 October 2020.",
+        "ro": "Vegagerðin indică drumul nou ca 13,7 km în total și tunelul ca aproximativ 5,6 km; licitația descria un tunel de 5,3 km și circa 9,0 km de drum în afara lui. Podurile au fost construite de Vestfirskir verktakar ehf.; Metrostav și Suðurverk au construit restul. Lucrările au început în 2017, fără o dată exactă. Linia este desenată de la Mjólká până la un punct la 65,8585 N, 23,3140 V, lângă podul din Dýrafjörður; capătul exact al tronsonului nu este identificat în OSM. Tunel deschis la 25 octombrie 2020."
+      },
+      "sourceRefs": [
+        "vegagerdin-project-dyrafjardargong",
+        "vegagerdin-tender-dyrafjardargong",
+        "vegagerdin-tunnel-register",
+        "osm-dyrafjardargong"
+      ],
+      "geometryRef": "mjolka-dyrafjardarbru"
+    }
+  ],
+  "sources": [
+    {
+      "id": "vegagerdin-project-dyrafjardargong",
+      "title": "Vegagerðin: Vestfjarðavegur, Dýrafjarðargöng",
+      "url": "https://www.vegagerdin.is/verkefnin/framkvaemdir/vestfjardarvegur-dyrafjardargong",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-tender-dyrafjardargong",
+      "title": "Vegagerðin: Útboð Dýrafjarðargöng (bid opening 24 January 2017)",
+      "url": "https://www.vegagerdin.is/verkefnin/utbod/dyrafjardargong",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "vegagerdin-tunnel-register",
+      "title": "Vegagerðin: Jarðgöng (tunnel register)",
+      "url": "https://www.vegagerdin.is/samgongukerfid/vegakerfid/jardgong",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-dyrafjardargong",
+      "title": "OpenStreetMap contributors (ODbL): Vestfjarðavegur ways, Overpass extract",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

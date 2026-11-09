@@ -1,0 +1,227 @@
+{
+  "id": "be-oosterweel",
+  "country": "be",
+  "category": "highway",
+  "name": {
+    "en": "Oosterweel Link (Antwerp Ring completion)",
+    "ro": "Oosterweelverbinding (închiderea inelului Antwerp)"
+  },
+  "description": {
+    "en": "Lantis is closing the northern side of the Antwerp Ring (R1) with a Scheldt tunnel from Linkeroever to the Oosterweel junction at Noordkasteel and canal tunnels under the Albert Canal to the existing Ring. Lantis gives the construction cost as EUR 10 billion at 2024 prices; the separate EUR 13.6 billion is an accounting value in 2034 that includes indexation, capitalised interest and a subordinated loan for external risks such as PFAS, not a construction cost. Lantis plans phased opening from the end of 2030 and completion of the whole link in 2033. Lots follow the three main works: the Scheldetunnel, the Oosterweel junction and the canal tunnels. The Linkeroever junction works (Antwerpen-West, Sint-Anna), the Merksem bypass and the sunken Ring between Groenendaallaan and Schijnpoort are not drawn as lots here.",
+    "ro": "Lantis închide latura nordică a inelului Antwerp (R1) cu un tunel sub Scheldt, de la Linkeroever la nodul Oosterweel de la Noordkasteel, și cu tuneluri sub canalul Albert până la inelul existent. Lantis indică un cost de construcție de 10 miliarde EUR la prețurile din 2024; suma separată de 13,6 miliarde EUR este o valoare contabilă în 2034, care include indexarea, dobânzile capitalizate și un împrumut subordonat pentru riscuri externe precum PFAS, nu un cost de construcție. Lantis planifică deschiderea etapizată de la sfârșitul lui 2030 și finalizarea întregii legături în 2033. Loturile urmează cele trei lucrări principale: Scheldetunnel, nodul Oosterweel și tunelurile de sub canal. Lucrările la nodurile Linkeroever (Antwerpen-West, Sint-Anna), bypass-ul Merksem și inelul coborât dintre Groenendaallaan și Schijnpoort nu sunt desenate aici ca loturi."
+  },
+  "operator": "be-lantis",
+  "cost": {
+    "amount": 10000,
+    "currency": "EUR",
+    "year": 2024,
+    "scope": "programme",
+    "note": "Construction cost of the whole Oosterweel Link at 2024 prices as stated by Lantis on 27 March 2026. The EUR 13.6 billion accounting value in 2034 and the EUR 27 billion theoretical interest sum are not construction costs."
+  },
+  "lots": [
+    {
+      "id": "scheldetunnel",
+      "name": {
+        "en": "Scheldetunnel (Linkeroever – Oosterweel junction)",
+        "ro": "Scheldetunnel (Linkeroever – nodul Oosterweel)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2020-06",
+        "expectedOpening": "2030"
+      },
+      "lengthKm": 1.8,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 1.8,
+        "lanes": 6
+      },
+      "contractors": [
+        {
+          "name": "TM COTU (BESIX, Stadsbader Contractors, DEME, Jan De Nul)",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2020-06",
+          "note": {
+            "en": "Lantis had chosen the contractors for the Scheldetunnel by June 2020; the building permit followed later.",
+            "ro": "Până în iunie 2020 Lantis alesese constructorii pentru Scheldetunnel; autorizația de construire a urmat ulterior."
+          },
+          "sourceRef": "wikipedia-nl-oosterweelverbinding"
+        }
+      ],
+      "note": {
+        "en": "Lantis gives the tunnel as 1.8 km with three lanes in each direction, an escape tube and a separate 6 m wide cycle tube. Eight immersed elements of 160 m were placed on the Scheldt bed in 2025. The last wall between the tunnel and the Oosterweel junction site was removed in October 2026. Cyclists can use the tunnel from 2028 and cars from 2030. The 2030 date is the year Lantis states for traffic, not a contract deadline. The drawn geometry measures 1.84 km (one carriageway from OpenStreetMap, including the approach ramp at Linkeroever). The construction start of this lot is not stated in the sources read; the project's first works date from March 2018.",
+        "ro": "Lantis indică tunelul la 1,8 km, cu trei benzi pe sens, un tub de evacuare și un tub separat pentru biciclete, lat de 6 m. Opt elemente imersate de câte 160 m au fost așezate pe fundul Scheldt în 2025. Ultimul perete dintre tunel și șantierul nodului Oosterweel a fost îndepărtat în octombrie 2026. Bicicliștii pot folosi tunelul din 2028, iar automobilele din 2030. Anul 2030 este cel indicat de Lantis pentru trafic, nu un termen contractual. Geometria desenată măsoară 1,84 km (o singură carosabilă din OpenStreetMap, cu rampa de acces de la Linkeroever). Începutul execuției acestui lot nu este indicat în sursele citite; primele lucrări ale proiectului datează din martie 2018."
+      },
+      "sourceRefs": [
+        "lantis-scheldetunnel",
+        "lantis-news-koning-filip",
+        "wikipedia-nl-oosterweelverbinding",
+        "openstreetmap-oosterweel",
+        "lantis-cost-news",
+        "lantis-het-project",
+        "lantis-linkeroever"
+      ],
+      "geometryRef": "scheldetunnel"
+    },
+    {
+      "id": "oosterweelknoop",
+      "name": {
+        "en": "Oosterweel junction (Noordkasteel)",
+        "ro": "Nodul Oosterweel (Noordkasteel)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "constructionStart": "2021-10-11"
+      },
+      "lengthKm": 0.59,
+      "profile": {
+        "works": "greenfield"
+      },
+      "contractors": [
+        {
+          "name": "Rinkoniên Oosterweelknoop (Artes Group, CIT Blaton, Stadsbader, Mobilis, Boskalis)",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2021-10-11",
+          "sourceRef": "wikipedia-nl-oosterweelverbinding"
+        }
+      ],
+      "note": {
+        "en": "Sunken junction at Noordkasteel, near the Oosterweel church, with ramps to the port and the north of the city; the carriageways lie up to 29 m below ground level and it is partly covered. It links the Scheldetunnel to the canal tunnels. Length measured from OpenStreetMap geometry: one carriageway between the Scheldetunnel portal and the start of the canal tunnels, which excludes the ramps. Lantis gives no length for the junction. The sources read give no opening date for this lot; Lantis plans phased opening from the end of 2030 and the whole link in 2033.",
+        "ro": "Nod coborât la Noordkasteel, lângă biserica Oosterweel, cu rampe spre port și spre nordul orașului; benzile se află până la 29 m sub nivelul solului, iar nodul este parțial acoperit. Leagă Scheldetunnel de tunelurile de sub canal. Length measured from OpenStreetMap geometry: o singură carosabilă între portalul Scheldetunnel și începutul tunelurilor de sub canal, fără rampe. Lantis nu indică o lungime pentru nod. Sursele citite nu dau o dată de deschidere pentru acest lot; Lantis planifică deschiderea etapizată de la sfârșitul lui 2030 și a întregii legături în 2033."
+      },
+      "sourceRefs": [
+        "lantis-oosterweelknooppunt",
+        "lantis-news-koning-filip",
+        "lantis-waar-werken-we-nu",
+        "wikipedia-nl-oosterweelverbinding",
+        "openstreetmap-oosterweel"
+      ],
+      "geometryRef": "oosterweelknoop"
+    },
+    {
+      "id": "kanaaltunnels",
+      "name": {
+        "en": "Kanaaltunnels (Oosterweel junction – Ring at Noorderlaan)",
+        "ro": "Kanaaltunnels (nodul Oosterweel – inelul la Noorderlaan)"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2021-09-23",
+        "constructionStart": "2021-10-18"
+      },
+      "lengthKm": 2.5,
+      "profile": {
+        "works": "greenfield",
+        "tunnelKm": 2.5
+      },
+      "contractors": [
+        {
+          "name": "TM Roco",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2021-09-23",
+          "note": {
+            "en": "Lantis signed the contract with the TM Roco consortium for the canal tunnels and the works on the sunken existing Ring (the Ringparken).",
+            "ro": "Lantis a semnat contractul cu consorțiul TM Roco pentru tunelurile de sub canal și lucrările la inelul existent coborât (Ringparken)."
+          },
+          "sourceRef": "wikipedia-nl-oosterweelverbinding"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2021-10-18",
+          "note": {
+            "en": "Preparatory works started at Merksem and Luchtbal; the date is the start of site works for this contract package, not of tunnelling.",
+            "ro": "Au început lucrările pregătitoare la Merksem și Luchtbal; data marchează începutul lucrărilor de șantier pentru acest pachet de contract, nu al săpării tunelurilor."
+          },
+          "sourceRef": "wikipedia-nl-oosterweelverbinding"
+        }
+      ],
+      "note": {
+        "en": "Four stacked tubes, two over two, start at the Amerikadok and run under the Albert Canal; at the Noorderlaan they split into a northern and a southern connection to the Ring. Lantis gives them as about 2.5 km long. The drawn geometry measures 3.01 km (one tube from OpenStreetMap, including open approaches), 20% above the Lantis figure; the sourced length is kept. The TM Roco contract also covers the sunken Ring, which is not drawn here. The sources read give no opening date for this lot; the construction start recorded is that of the preparatory works at Merksem and Luchtbal.",
+        "ro": "Patru tuburi suprapuse câte două pornesc de la Amerikadok și trec pe sub canalul Albert; la Noorderlaan se despart într-o legătură nordică și una sudică cu inelul. Lantis le indică la circa 2,5 km lungime. Geometria desenată măsoară 3,01 km (un singur tub din OpenStreetMap, cu rampele deschise), cu 20% peste cifra Lantis; lungimea din sursă este păstrată. Contractul TM Roco cuprinde și inelul coborât, care nu este desenat aici. Sursele citite nu dau o dată de deschidere pentru acest lot; începutul execuției înregistrat este cel al lucrărilor pregătitoare de la Merksem și Luchtbal."
+      },
+      "sourceRefs": [
+        "lantis-kanaaltunnels",
+        "wikipedia-nl-oosterweelverbinding",
+        "openstreetmap-oosterweel"
+      ],
+      "geometryRef": "kanaaltunnels"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lantis-cost-news",
+      "title": "Lantis: Bouwkosten Oosterweelverbinding blijven op 10 miljard euro (27 March 2026)",
+      "url": "https://www.oosterweelverbinding.be/nieuws/bouwkosten-oosterweelverbinding-blijven-op-10-miljard-euro",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "lantis-het-project",
+      "title": "Lantis: Het project (De Oosterweelverbinding)",
+      "url": "https://www.oosterweelverbinding.be/het-project",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "lantis-scheldetunnel",
+      "title": "Lantis: De Scheldetunnel",
+      "url": "https://www.oosterweelverbinding.be/het-project/toekomstbeeld/de-scheldetunnel",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "lantis-oosterweelknooppunt",
+      "title": "Lantis: Het Oosterweelknooppunt",
+      "url": "https://www.oosterweelverbinding.be/het-project/toekomstbeeld/het-oosterweelknooppunt",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "lantis-kanaaltunnels",
+      "title": "Lantis: Kanaaltunnels",
+      "url": "https://www.oosterweelverbinding.be/het-project/toekomstbeeld/kanaaltunnels",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "lantis-news-koning-filip",
+      "title": "Lantis: Koning Filip rijdt als eerste door werf Scheldetunnel in Antwerpen (21 October 2026)",
+      "url": "https://www.oosterweelverbinding.be/nieuws/koning-filip-rijdt-als-eerste-door-werf-scheldetunnel-antwerpen",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "lantis-waar-werken-we-nu",
+      "title": "Lantis: Waar werken we nu?",
+      "url": "https://www.oosterweelverbinding.be/waar-werken-we-nu",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "lantis-linkeroever",
+      "title": "Lantis: Linkeroever en Zwijndrecht",
+      "url": "https://www.oosterweelverbinding.be/het-project/toekomstbeeld/linkeroever-en-zwijndrecht",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-nl-oosterweelverbinding",
+      "title": "Wikipedia (nl): Oosterweelverbinding",
+      "url": "https://nl.wikipedia.org/wiki/Oosterweelverbinding",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-oosterweel",
+      "title": "OpenStreetMap contributors: Scheldetunnel, Oosterweel junction and Kanaaltunnels geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

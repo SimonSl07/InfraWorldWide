@@ -1,0 +1,90 @@
+{
+  "id": "ua-kyiv-podilskyi-bridge",
+  "country": "ua",
+  "city": "ua-kyiv",
+  "category": "bridge",
+  "name": {
+    "en": "Podilskyi Bridge Crossing, Kyiv",
+    "ro": "Podul Podilskyi, Kyiv"
+  },
+  "description": {
+    "en": "Two-level bridge crossing of the Dnipro and the Desenka in Kyiv, linking Podil with the Raiduzhnyi district. The upper level carries four lanes each way; the lower level is reserved for two tracks of the planned Podilsko-Vyhurivska metro line. The second phase, towards Voskresenka, is not built.",
+    "ro": "Pod rutier pe două niveluri peste Nipru și Desenka în Kyiv, care leagă Podil de cartierul Raiduzhnyi. Nivelul superior are patru benzi pe sens; nivelul inferior este rezervat pentru două linii ale viitoarei linii de metrou Podilsko-Vyhurivska. A doua fază, spre Voskresenka, nu este construită."
+  },
+  "lots": [
+    {
+      "id": "phase-1-road",
+      "name": {
+        "en": "Phase 1: Rybalskyi peninsula to Rusanivski Sady (road level)",
+        "ro": "Faza 1: peninsula Rybalskyi – Rusanivski Sady (nivel rutier)"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003-12-01",
+        "opened": "2025-08-23"
+      },
+      "lengthKm": 4.43,
+      "events": [
+        {
+          "kind": "construction_start",
+          "date": "2003-12-01",
+          "sourceRef": "uk-wikipedia-podilskyi-mostovyi-perekhid",
+          "note": {
+            "en": "Work began with the two-level flyover on Trukhaniv Island.",
+            "ro": "Lucrările au început cu estacada pe două niveluri de pe insula Trukhaniv."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2023-12-01",
+          "sourceRef": "uk-wikipedia-podilskyi-mostovyi-perekhid",
+          "note": {
+            "en": "Declared open for emergency and special vehicles and bus route 111 only.",
+            "ro": "Declarat deschis doar pentru vehicule de urgență și speciale și pentru autobuzul 111."
+          }
+        },
+        {
+          "kind": "partial_opening",
+          "date": "2024-12-01",
+          "sourceRef": "uk-wikipedia-podilskyi-mostovyi-perekhid",
+          "note": {
+            "en": "Opened to cars and public transport after a double tunnel under the railway embankment near Raiduzhnyi was completed.",
+            "ro": "Deschis pentru autoturisme și transport public după finalizarea unui tunel dublu sub rambleul feroviar de lângă Raiduzhnyi."
+          }
+        },
+        {
+          "kind": "opened",
+          "date": "2025-08-23",
+          "sourceRef": "uk-wikipedia-podilskyi-mostovyi-perekhid",
+          "note": {
+            "en": "All lanes opened in both directions, four per direction.",
+            "ro": "Toate benzile deschise în ambele sensuri, patru pe sens."
+          }
+        }
+      ],
+      "note": {
+        "en": "Phase 1 runs from pier 17 on the Rybalskyi peninsula to Rusanivski Sady near Tsentralna Sadova Street, 4.43 km, 35 m wide. The lower level is built for two metro tracks (stations Sudnobudivna, Trukhaniv Ostriv and Zatoka Desenka); the metro line itself is not built and is not counted here. The drawn line follows one carriageway of the main deck and is about 3.5 km, shorter than the sourced length, which may include ramps. No cost is recorded: the only sourced figure (UAH 5,066.1m, 2004) is for the whole crossing, not phase 1. The second phase, towards Voskresenka and open to freight, is not built and has no sourced length or date, so it is not recorded as a lot.",
+        "ro": "Faza 1 merge de la pilonul 17 de pe peninsula Rybalskyi până la Rusanivski Sady, lângă strada Tsentralna Sadova, 4,43 km, lățime 35 m. Nivelul inferior este construit pentru două linii de metrou (stațiile Sudnobudivna, Trukhaniv Ostriv și Zatoka Desenka); linia de metrou nu este construită și nu este numărată aici. Linia desenată urmează un singur sens al tablierului principal și are circa 3,5 km, mai puțin decât lungimea din sursă, care poate include rampele. Nu este înregistrat niciun cost: singura cifră din surse (5.066,1 mil. UAH, 2004) acoperă întregul pod, nu doar faza 1. A doua fază, spre Voskresenka și deschisă transportului de marfă, nu este construită și nu are lungime sau dată din surse, deci nu este înregistrată ca lot."
+      },
+      "sourceRefs": [
+        "uk-wikipedia-podilskyi-mostovyi-perekhid",
+        "openstreetmap-podilskyi-mostovyi-perekhid"
+      ],
+      "geometryRef": "phase-1-road"
+    }
+  ],
+  "sources": [
+    {
+      "id": "uk-wikipedia-podilskyi-mostovyi-perekhid",
+      "title": "Wikipedia (uk): Подільський мостовий перехід",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B4%D1%96%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D1%96%D0%B4",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap-podilskyi-mostovyi-perekhid",
+      "title": "OpenStreetMap contributors (ODbL): ways of Подільський мостовий перехід",
+      "url": "https://www.openstreetmap.org/way/835240851",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

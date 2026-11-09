@@ -1,0 +1,153 @@
+{
+  "id": "ee-t2-mao-imavere",
+  "country": "ee",
+  "category": "highway",
+  "name": {
+    "en": "T2 Tallinn–Tartu: Mäo – Imavere 2+2",
+    "ro": "T2 Tallinn–Tartu: Mäo – Imavere 2+2"
+  },
+  "description": {
+    "en": "Conversion of the single-carriageway T2 Tallinn–Tartu–Võru–Luhamaa road to 2+2 between Mäo and Imavere in Järva County, continuing the dual carriageway that now ends at km 85.8, plus the reconstruction of the Jüri interchange near Tallinn (km 12.0–13.0). Transpordiamet signed the Käsukonna–Imavere contract (km 99.1–107.1, about 8 km, including the Paia junction) with KMG OÜ and Infragreen OÜ for EUR 42.8 million excluding VAT, 95% co-financed by the Cohesion Fund. Mäo–Käsukonna (km 85.8–99.1) and the Jüri interchange are listed in the Transpordiamet 2026–2029 construction programme, Mäo–Käsukonna with partial funding only. Estonia has no motorways, so a 2+2 road of this class is recorded as a highway.",
+    "ro": "Transformarea drumului T2 Tallinn–Tartu–Võru–Luhamaa, cu o singură platformă, în drum 2+2 între Mäo și Imavere, în comitatul Järva, ca prelungire a drumului cu patru benzi care se oprește acum la km 85,8, plus reconstrucția nodului Jüri de lângă Tallinn (km 12,0–13,0). Transpordiamet a semnat contractul Käsukonna–Imavere (km 99,1–107,1, circa 8 km, inclusiv nodul Paia) cu KMG OÜ și Infragreen OÜ, pentru 42,8 milioane EUR fără TVA, cofinanțat în proporție de 95% din Fondul de Coeziune. Mäo–Käsukonna (km 85,8–99,1) și nodul Jüri figurează în programul de construcții 2026–2029 al Transpordiamet, Mäo–Käsukonna cu finanțare doar parțială. Estonia nu are autostrăzi, așa că un drum 2+2 de acest tip este înregistrat ca drum expres."
+  },
+  "operator": "ee-transpordiamet",
+  "lots": [
+    {
+      "id": "mao-kasukonna",
+      "name": {
+        "en": "Mäo – Käsukonna",
+        "ro": "Mäo – Käsukonna"
+      },
+      "status": "planned",
+      "lengthKm": 13.3,
+      "profile": {
+        "works": "upgrade",
+        "lanes": 4
+      },
+      "note": {
+        "en": "T2 km 85.8–99.1, 13.3 km, 2+2 road. The 2026–2029 construction programme marks work in 2027, 2028 and 2029 and flags the object as only partly funded after the state budget strategy (RES). No contract was found, so no dates or cost are recorded. Geometry follows the existing single carriageway from the end of the mapped dual carriageway near Valgma, cut at 13.3 km.",
+        "ro": "T2 km 85,8–99,1, 13,3 km, drum 2+2. Programul de construcții 2026–2029 marchează lucrări în 2027, 2028 și 2029 și semnalează obiectivul ca finanțat doar parțial după strategia bugetară de stat (RES). Nu a fost găsit niciun contract, deci nu se înregistrează date sau costuri. Geometria urmează drumul existent cu o singură platformă de la capătul drumului cu patru benzi cartografiat, lângă Valgma, tăiată la 13,3 km."
+      },
+      "sourceRefs": ["ee-transpordiamet-ehitusmeede-2026-2029", "openstreetmap"],
+      "geometryRef": "mao-kasukonna"
+    },
+    {
+      "id": "kasukonna-imavere",
+      "name": {
+        "en": "Käsukonna – Imavere (incl. Paia junction)",
+        "ro": "Käsukonna – Imavere (inclusiv nodul Paia)"
+      },
+      "status": "tendered",
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2026-07-24",
+          "note": {
+            "en": "Date of the Transpordiamet release announcing the signed contract. The signing date is not stated.",
+            "ro": "Data comunicatului Transpordiamet care anunță contractul semnat. Data semnării nu este indicată."
+          },
+          "sourceRef": "ee-transpordiamet-kmg-kasukonna-imavere"
+        }
+      ],
+      "lengthKm": 8,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 42.8,
+              "currency": "EUR",
+              "year": 2026,
+              "scope": "works",
+              "note": "Total contract value excluding VAT."
+            },
+            "date": "2026-07-24",
+            "note": "Dated to the release announcing the contract; the signing date is not stated.",
+            "sourceRef": "ee-transpordiamet-kmg-kasukonna-imavere"
+          }
+        ]
+      },
+      "profile": {
+        "works": "upgrade",
+        "lanes": 4
+      },
+      "funding": [
+        {
+          "source": "EU",
+          "programme": "eu-cohesion-fund",
+          "coFinancingRate": 0.95,
+          "detail": {
+            "en": "The project is co-financed by the EU Cohesion Fund at 95%.",
+            "ro": "Proiectul este cofinanțat din Fondul de Coeziune al UE în proporție de 95%."
+          }
+        }
+      ],
+      "contractors": [
+        {
+          "name": "KMG OÜ",
+          "role": "builder"
+        },
+        {
+          "name": "Infragreen OÜ",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "executionMonths": 30,
+        "value": {
+          "amount": 42.8,
+          "currency": "EUR",
+          "year": 2026,
+          "scope": "works",
+          "note": "Excluding VAT."
+        }
+      },
+      "note": {
+        "en": "T2 km 99.1–107.1, 8.0 km, including the Paia junction. Existing road rebuilt as a 2+2 road with collector roads, an ecoduct, two bridges over the Navesti river, three viaducts, small-game tunnels, a noise berm and noise walls. The release says works are planned to start in September 2026 with a 30-month construction period; no source confirming the start was found, so the lot stays tendered. KMG OÜ is the lead contractor and Infragreen OÜ the joint bidder. The EU projects register lists the same section as 7.6 km with an ERDF grant of EUR 38,947,369; the figures here follow the contract release. Geometry follows the existing road, cut 8.0 km after Käsukonna.",
+        "ro": "T2 km 99,1–107,1, 8,0 km, inclusiv nodul Paia. Drumul existent este reconstruit ca drum 2+2 cu drumuri colectoare, un ecoduct, două poduri peste râul Navesti, trei viaducte, tuneluri pentru vânat mic, un val antifonic și ziduri antifonice. Comunicatul indică începerea lucrărilor în septembrie 2026, cu o perioadă de construcție de 30 de luni; nu a fost găsită nicio sursă care să confirme startul, așa că lotul rămâne în stadiul de licitație atribuită. KMG OÜ este constructorul principal, iar Infragreen OÜ ofertantul asociat. Registrul proiectelor UE listează aceeași secțiune cu 7,6 km și o finanțare FEDR de 38.947.369 EUR; cifrele de aici urmează comunicatul despre contract. Geometria urmează drumul existent, tăiată la 8,0 km după Käsukonna."
+      },
+      "sourceRefs": [
+        "ee-transpordiamet-kmg-kasukonna-imavere",
+        "ee-transpordiamet-ehitusmeede-2026-2029",
+        "openstreetmap"
+      ],
+      "geometryRef": "kasukonna-imavere"
+    },
+    {
+      "id": "juri-interchange",
+      "name": {
+        "en": "Jüri interchange reconstruction",
+        "ro": "Reconstrucția nodului Jüri"
+      },
+      "status": "planned",
+      "lengthKm": 1,
+      "note": {
+        "en": "T2 km 12.0–13.0, 1.0 km, described as a crossing of 2+2 roads (T2 and the Tallinn ring road T11). The 2026–2029 construction programme marks work in 2028 and 2029. No contract, cost or funding source was found. Geometry is the T2 carriageway between the mapped Jüri junction nodes, about 1.1 km; its position against km 12.0–13.0 is not confirmed.",
+        "ro": "T2 km 12,0–13,0, 1,0 km, descris drept intersecție de drumuri 2+2 (T2 și șoseaua de centură Tallinn T11). Programul de construcții 2026–2029 marchează lucrări în 2028 și 2029. Nu a fost găsit niciun contract, cost sau sursă de finanțare. Geometria este o carosabilă a T2 între nodurile Jüri cartografiate, circa 1,1 km; poziția față de km 12,0–13,0 nu este confirmată."
+      },
+      "sourceRefs": ["ee-transpordiamet-ehitusmeede-2026-2029", "openstreetmap"],
+      "geometryRef": "juri-interchange"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ee-transpordiamet-kmg-kasukonna-imavere",
+      "title": "Transpordiamet: Transpordiamet ja KMG OÜ sõlmisid lepingu Käsukonna–Imavere 2+2 teelõigu ehitamiseks (release of 24 July 2026)",
+      "url": "https://transpordiamet.ee/uudised/transpordiamet-ja-kmg-ou-solmisid-lepingu-kasukonna-imavere-22-teeloigu-ehitamiseks",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ee-transpordiamet-ehitusmeede-2026-2029",
+      "title": "Transpordiamet: Ehitusobjektid aastatel 2026–2029 (2026–2029 ehitusmeetme objektide nimekiri, XLSX)",
+      "url": "https://transpordiamet.ee/sites/default/files/documents/2026-02/2026-2029%20ehitusmeetme%20objektide%20nimekiri.xlsx",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}

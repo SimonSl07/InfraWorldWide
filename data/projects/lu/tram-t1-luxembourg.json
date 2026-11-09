@@ -1,0 +1,222 @@
+{
+  "id": "lu-tram-t1-luxembourg",
+  "country": "lu",
+  "city": "lu-luxembourg",
+  "category": "railway",
+  "name": {
+    "en": "Luxembourg City tram line T1",
+    "ro": "Linia de tramvai T1 din orașul Luxemburg"
+  },
+  "description": {
+    "en": "Line T1 of the Luxtram network runs from Findel – Luxembourg Airport through Kirchberg, the Ville Haute, Gare centrale and Bonnevoie to Stadion in Cloche d'Or: 16 km with 24 stations, 3.6 km of it without overhead contact line, and 33 trams. Luxtram gives the project cost as €565 million, without a price year or scope. It opened in six sections between 10 December 2017 and 2 March 2025.",
+    "ro": "Linia T1 a rețelei Luxtram merge de la Findel – Aeroportul Luxemburg prin Kirchberg, Ville Haute, Gare centrale și Bonnevoie până la Stadion, în Cloche d'Or: 16 km cu 24 de stații, dintre care 3,6 km fără linie aeriană de contact, și 33 de tramvaie. Luxtram indică un cost al proiectului de 565 de milioane de euro, fără an de preț sau perimetru. A fost deschisă în șase secțiuni, între 10 decembrie 2017 și 2 martie 2025."
+  },
+  "operator": "lu-luxtram",
+  "stationCount": 24,
+  "lots": [
+    {
+      "id": "luxexpo-rout-breck-pafendall",
+      "name": {
+        "en": "Luxexpo – Rout Bréck–Pafendall",
+        "ro": "Luxexpo – Rout Bréck–Pafendall"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2017-12-10"
+      },
+      "lengthKm": 3.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true,
+        "stationCount": 8
+      },
+      "note": {
+        "en": "First section, opened on 10 December 2017 on the Kirchberg plateau with 8 stations (Luxtram). Depot construction began in January 2015 and the first tracks were laid in July 2016 (Wikipedia, citing Luxemburger Wort). English Wikipedia describes this phase as running from the depot to the Grand Duchess Charlotte Bridge. The Pfaffenthal-Kirchberg funicular opened the same day and is not part of this lot. Length measured from OpenStreetMap geometry.",
+        "ro": "Prima secțiune, deschisă la 10 decembrie 2017 pe platoul Kirchberg, cu 8 stații (Luxtram). Construcția depoului a început în ianuarie 2015, iar primele șine au fost montate în iulie 2016 (Wikipedia, cu trimitere la Luxemburger Wort). Wikipedia în engleză descrie această fază ca mergând de la depou până la Podul Marea Ducesă Charlotte. Funicularul Pfaffenthal-Kirchberg a fost deschis în aceeași zi și nu face parte din acest lot. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "luxtram-ligne",
+        "luxtram-chiffres",
+        "wikipedia-en-tram",
+        "osm-route-t1"
+      ],
+      "geometryRef": "luxexpo-rout-breck-pafendall"
+    },
+    {
+      "id": "rout-breck-etoile",
+      "name": {
+        "en": "Rout Bréck–Pafendall – Place de l'Étoile",
+        "ro": "Rout Bréck–Pafendall – Place de l'Étoile"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2018-07-27"
+      },
+      "lengthKm": 1.6,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true,
+        "stationCount": 3
+      },
+      "note": {
+        "en": "Opened on 27 July 2018 with three new stations: Théâtre, Faïencerie and Stäreplaz/Étoile (Luxtram). The line crosses the Grand Duchess Charlotte Bridge. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschisă la 27 iulie 2018, cu trei stații noi: Théâtre, Faïencerie și Stäreplaz/Étoile (Luxtram). Linia traversează Podul Marea Ducesă Charlotte. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "luxtram-ligne",
+        "luxtram-chiffres",
+        "wikipedia-en-tram",
+        "osm-route-t1"
+      ],
+      "geometryRef": "rout-breck-etoile"
+    },
+    {
+      "id": "etoile-gare-centrale",
+      "name": {
+        "en": "Place de l'Étoile – Gare centrale",
+        "ro": "Place de l'Étoile – Gara Centrală"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2020-12-13"
+      },
+      "lengthKm": 2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true,
+        "stationCount": 4
+      },
+      "note": {
+        "en": "Opened on 13 December 2020 with four stops: Hamilius, Place de Metz, Paräisser Plaz/Place de Paris and Gare centrale (Luxtram). The line crosses the Adolphe Bridge, which was widened and reinforced for the tramway (Wikipedia). Luxtram gives 3.6 km of the whole line as without overhead contact line, and Wikipedia places that gap between Rout Bréck–Pafendall and Gare centrale. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschisă la 13 decembrie 2020, cu patru stații: Hamilius, Place de Metz, Paräisser Plaz/Place de Paris și Gare centrale (Luxtram). Linia traversează Podul Adolphe, lărgit și consolidat pentru tramvai (Wikipedia). Luxtram indică 3,6 km din întreaga linie fără linie aeriană de contact, iar Wikipedia plasează acest tronson între Rout Bréck–Pafendall și Gare centrale. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "luxtram-ligne",
+        "luxtram-chiffres",
+        "wikipedia-en-tram",
+        "osm-route-t1"
+      ],
+      "geometryRef": "etoile-gare-centrale"
+    },
+    {
+      "id": "gare-centrale-lycee-bouneweg",
+      "name": {
+        "en": "Gare centrale – Lycée Bouneweg",
+        "ro": "Gara Centrală – Lycée Bouneweg"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2022-09-11"
+      },
+      "lengthKm": 1.3,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true,
+        "stationCount": 2
+      },
+      "note": {
+        "en": "Opened on 11 September 2022 with two stops: Leschte Steiwer/Dernier Sol and Lycée Bouneweg (Luxtram). English Wikipedia describes it as the extension from the central station to Bonnevoie. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschisă la 11 septembrie 2022, cu două stații: Leschte Steiwer/Dernier Sol și Lycée Bouneweg (Luxtram). Wikipedia în engleză o descrie ca prelungirea de la gara centrală până la Bonnevoie. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "luxtram-ligne",
+        "luxtram-chiffres",
+        "wikipedia-en-tram",
+        "osm-route-t1"
+      ],
+      "geometryRef": "gare-centrale-lycee-bouneweg"
+    },
+    {
+      "id": "lycee-bouneweg-stadion",
+      "name": {
+        "en": "Lycée Bouneweg – Stadion",
+        "ro": "Lycée Bouneweg – Stadion"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2024-07-07"
+      },
+      "lengthKm": 3.7,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true,
+        "stationCount": 5
+      },
+      "note": {
+        "en": "Opened on 7 July 2024 with five stops: Scillas, Howald Gare, Lycée Vauban, Waassertuerm and Stadion (Luxtram). Wikipedia describes it as the extension via Howald station to the Cloche d'Or business district and the national stadium. Length measured from OpenStreetMap geometry.",
+        "ro": "Deschisă la 7 iulie 2024, cu cinci stații: Scillas, Howald Gare, Lycée Vauban, Waassertuerm și Stadion (Luxtram). Wikipedia o descrie ca prelungirea prin gara Howald până în cartierul de afaceri Cloche d'Or și la stadionul național. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "luxtram-ligne",
+        "luxtram-chiffres",
+        "wikipedia-en-tram",
+        "osm-route-t1"
+      ],
+      "geometryRef": "lycee-bouneweg-stadion"
+    },
+    {
+      "id": "luxexpo-findel-airport",
+      "name": {
+        "en": "Luxexpo – Findel Airport",
+        "ro": "Luxexpo – Aeroportul Findel"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2025-03-02"
+      },
+      "lengthKm": 4.1,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 2,
+        "electrified": true,
+        "stationCount": 2
+      },
+      "note": {
+        "en": "Last section of T1, opened on 2 March 2025: Luxtram records that the stops Héienhaff P+R and Findel – Luxembourg Airport completed the line, giving a direct link between the tram and the airport. It runs from Luxexpo past the tram depot to the airport. Length measured from OpenStreetMap geometry.",
+        "ro": "Ultima secțiune a liniei T1, deschisă la 2 martie 2025: Luxtram menționează că stațiile Héienhaff P+R și Findel – Luxembourg Airport au completat linia, oferind o legătură directă între tramvai și aeroport. Merge de la Luxexpo, pe lângă depoul de tramvaie, până la aeroport. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "luxtram-ligne",
+        "luxtram-chiffres",
+        "wikipedia-en-tram",
+        "osm-route-t1"
+      ],
+      "geometryRef": "luxexpo-findel-airport"
+    }
+  ],
+  "sources": [
+    {
+      "id": "luxtram-ligne",
+      "title": "Luxtram: La ligne du tramway en service (24 stations, dates of the six openings)",
+      "url": "https://www.luxtram.lu/la-ligne/mise-en-service-du-premier-troncon/",
+      "publisher": "Luxtram S.A.",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "luxtram-chiffres",
+      "title": "Luxtram: Les chiffres du tram (16 km, 24 stations, 33 rames, 3.6 km sans ligne aérienne, 565 millions €)",
+      "url": "https://www.luxtram.lu/documentation/les-chiffres-du-tram-2/",
+      "publisher": "Luxtram S.A.",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-en-tram",
+      "title": "Wikipedia: Luxembourg City tramway",
+      "url": "https://en.wikipedia.org/wiki/Luxembourg_City_tramway",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-route-t1",
+      "title": "OpenStreetMap contributors: route relations T1 Findel – Luxembourg Airport => Stadion (7758418) and return (7758419), ODbL",
+      "url": "https://www.openstreetmap.org/relation/7758418",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
