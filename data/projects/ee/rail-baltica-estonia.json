@@ -1,0 +1,799 @@
+{
+  "id": "ee-rail-baltica-estonia",
+  "country": "ee",
+  "category": "railway",
+  "name": {
+    "en": "Rail Baltica Estonia main line (Ülemiste – Pärnu – Latvian border)",
+    "ro": "Linia principală Rail Baltica Estonia (Ülemiste – Pärnu – granița cu Letonia)"
+  },
+  "description": {
+    "en": "New 1,435 mm electrified main line from Ülemiste in Tallinn via Rapla and Pärnu to the Latvian border at Ikla, about 213 km in Estonia, first built as a single track. Nine contract packages from Ülemiste to Tootsi, 104 km in total, are in construction under separate contracts signed from January 2024 to March 2025. In May 2025 two alliance contracts covered track superstructure for Ülemiste–Pärnu, substructure for Tootsi–Pärnu and full design and construction for Pärnu–Ikla. Estonia has been allocated EUR 898.2 million of Connecting Europe Facility funds for 2014–2020 and 2021–2027. Sources give differing completion targets, from 2030 to 2034.",
+    "ro": "Linie principală nouă electrificată, cu ecartament de 1.435 mm, de la Ülemiste din Tallinn prin Rapla și Pärnu până la granița cu Letonia la Ikla, circa 213 km în Estonia, construită inițial cu o singură cale. Nouă pachete contractuale de la Ülemiste la Tootsi, 104 km în total, sunt în construcție prin contracte separate semnate între ianuarie 2024 și martie 2025. În mai 2025, două contracte de alianță au acoperit suprastructura căii Ülemiste–Pärnu, infrastructura Tootsi–Pärnu și proiectarea și construcția integrală Pärnu–Ikla. Estoniei i s-au alocat 898,2 milioane EUR din Mecanismul pentru Interconectarea Europei pentru 2014–2020 și 2021–2027. Sursele indică ținte de finalizare diferite, între 2030 și 2034."
+  },
+  "operator": "ee-rail-baltic-estonia",
+  "lots": [
+    {
+      "id": "ulemiste-soodevahe",
+      "name": {
+        "en": "Harjumaa I: Ülemiste – Soodevahe",
+        "ro": "Harjumaa I: Ülemiste – Soodevahe"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-01-05"
+      },
+      "lengthKm": 4.8,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 34.2,
+              "currency": "EUR",
+              "year": 2024
+            },
+            "date": "2024-01-05",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 34.2,
+          "currency": "EUR",
+          "year": 2024
+        }
+      },
+      "contractors": [
+        {
+          "name": "AS TREV-2 Grupp",
+          "role": "builder"
+        },
+        {
+          "name": "AllSpark OÜ",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-01-05",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "First main-line construction contract, signed 5 January 2024 for a 4.8 km section from Ülemiste to Soodevahe at EUR 34.2 million. Contract value as stated in the source; VAT treatment is not given. The OpenStreetMap line between Ülemiste and the Soodevahe junction measures about 10.6 km, longer than the 4.8 km contract section; the source does not give the section's exact start, so the sourced length is kept. The Ülemiste terminal itself is a separate project, and the Soodevahe interchange (package V, EUR 38.8 million, signed 31 July 2025) is not drawn as a lot.",
+        "ro": "Primul contract de construcție a liniei principale, semnat la 5 ianuarie 2024 pentru un tronson de 4,8 km între Ülemiste și Soodevahe, la 34,2 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Traseul OpenStreetMap dintre Ülemiste și joncțiunea Soodevahe măsoară circa 10,6 km, mai mult decât tronsonul contractual de 4,8 km; sursa nu indică începutul exact al tronsonului, așa că lungimea din sursă este păstrată. Terminalul Ülemiste este un proiect separat, iar nodul Soodevahe (pachetul V, 38,8 milioane EUR, semnat la 31 iulie 2025) nu este desenat ca lot."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "osm-odbl",
+        "rbe-rahastamine",
+        "en-wikipedia-rail-baltica"
+      ],
+      "geometryRef": "ulemiste-soodevahe"
+    },
+    {
+      "id": "soodevahe-kangru",
+      "name": {
+        "en": "Harjumaa II: Soodevahe – Kangru",
+        "ro": "Harjumaa II: Soodevahe – Kangru"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-09-11"
+      },
+      "lengthKm": 9.2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 70.8,
+              "currency": "EUR",
+              "year": 2024
+            },
+            "date": "2024-09-11",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 70.8,
+          "currency": "EUR",
+          "year": 2024
+        }
+      },
+      "contractors": [
+        {
+          "name": "OÜ Verston",
+          "role": "builder"
+        },
+        {
+          "name": "OÜ Järelpinge Inseneribüroo",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-09-11",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "9.2 km section between Soodevahe and Kangru, contract signed 11 September 2024 at EUR 70.8 million. Contract value as stated in the source; VAT treatment is not given. Cut points on the drawn line are placed by the sourced section lengths counted back from Tootsi.",
+        "ro": "Tronson de 9,2 km între Soodevahe și Kangru, contract semnat la 11 septembrie 2024, la 70,8 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Punctele de tăiere ale traseului desenat sunt stabilite după lungimile tronsoanelor din sursă, numărate înapoi de la Tootsi."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "osm-odbl"
+      ],
+      "geometryRef": "soodevahe-kangru"
+    },
+    {
+      "id": "kangru-saku",
+      "name": {
+        "en": "Harjumaa III: Kangru – Saku",
+        "ro": "Harjumaa III: Kangru – Saku"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-11-11"
+      },
+      "lengthKm": 8.65,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 67.2,
+              "currency": "EUR",
+              "year": 2024
+            },
+            "date": "2024-11-11",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 67.2,
+          "currency": "EUR",
+          "year": 2024
+        }
+      },
+      "contractors": [
+        {
+          "name": "INF Infra",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-11-11",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "8.65 km section between Kangru and Saku, contract signed 11 November 2024 at EUR 67.2 million. Contract value as stated in the source; VAT treatment is not given. The Kangru road interchange (T15) is a separate road lot.",
+        "ro": "Tronson de 8,65 km între Kangru și Saku, contract semnat la 11 noiembrie 2024, la 67,2 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Nodul rutier Kangru (T15) este un lot rutier separat."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "osm-odbl"
+      ],
+      "geometryRef": "kangru-saku"
+    },
+    {
+      "id": "saku-rapla-border",
+      "name": {
+        "en": "Harjumaa IV: Saku – Rapla county border",
+        "ro": "Harjumaa IV: Saku – limita județului Rapla"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-08-26",
+        "constructionStart": "2025-03"
+      },
+      "lengthKm": 10.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 59.87,
+              "currency": "EUR",
+              "year": 2024
+            },
+            "date": "2024-08-26",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 59.87,
+          "currency": "EUR",
+          "year": 2024
+        }
+      },
+      "contractors": [
+        {
+          "name": "Merko Ehitus Eesti AS",
+          "role": "builder"
+        },
+        {
+          "name": "GRK Eesti AS",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-08-26",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        },
+        {
+          "kind": "construction_start",
+          "date": "2025-03",
+          "note": {
+            "en": "Land clearing began.",
+            "ro": "Au început defrișările."
+          },
+          "sourceRef": "merko-saku-harju"
+        }
+      ],
+      "note": {
+        "en": "About 10.5 km from Saku to the Harju–Rapla county border, contract signed 26 August 2024 at EUR 59.87 million. Contract value as stated in the source; VAT treatment is not given. The contractor's page lists land clearing from March 2025 and says completed works are to be handed to the client in October 2028. It includes the Uus-Vääna and Vana-Vääna railway bridges, the Soo tee underpass, the Kiisa ecoduct, the Koosi cycle tunnel and the Saku halt and Kurtna station.",
+        "ro": "Circa 10,5 km de la Saku până la limita județelor Harju și Rapla, contract semnat la 26 august 2024, la 59,87 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Pagina constructorului indică defrișări din martie 2025 și predarea lucrărilor către beneficiar în octombrie 2028. Include podurile feroviare Uus-Vääna și Vana-Vääna, pasajul Soo tee, ecoductul Kiisa, tunelul pietonal Koosi, halta Saku și stația Kurtna."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "merko-saku-harju",
+        "osm-odbl"
+      ],
+      "geometryRef": "saku-rapla-border"
+    },
+    {
+      "id": "rapla-border-hagudi",
+      "name": {
+        "en": "Raplamaa I–II: Harju county border – Loone – Hagudi",
+        "ro": "Raplamaa I–II: limita județului Harju – Loone – Hagudi"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-02-21"
+      },
+      "lengthKm": 17,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 107,
+              "currency": "EUR",
+              "year": 2024
+            },
+            "date": "2024-02-21",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 107,
+          "currency": "EUR",
+          "year": 2024
+        }
+      },
+      "contractors": [
+        {
+          "name": "OÜ Verston",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-02-21",
+          "note": {
+            "en": "Main-line construction contracts signed.",
+            "ro": "Contracte de construcție a liniei principale semnate."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "Two packages in Rapla county, Harju border–Loone and Loone–Hagudi, together 17 km; the contracts were signed 21 February 2024 for EUR 107 million in total. Contract value as stated in the source; VAT treatment is not given. The two packages are drawn as one lot because the source gives only the combined length and value.",
+        "ro": "Două pachete în județul Rapla, limita Harju–Loone și Loone–Hagudi, împreună 17 km; contractele au fost semnate la 21 februarie 2024, în valoare totală de 107 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Cele două pachete sunt desenate ca un singur lot, deoarece sursa indică doar lungimea și valoarea însumate."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "osm-odbl"
+      ],
+      "geometryRef": "rapla-border-hagudi"
+    },
+    {
+      "id": "hagudi-alu",
+      "name": {
+        "en": "Raplamaa III: Hagudi – Alu",
+        "ro": "Raplamaa III: Hagudi – Alu"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-07-09"
+      },
+      "lengthKm": 7,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 30.59,
+              "currency": "EUR",
+              "year": 2024
+            },
+            "date": "2024-07-09",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 30.59,
+          "currency": "EUR",
+          "year": 2024
+        }
+      },
+      "contractors": [
+        {
+          "name": "AS Tariston",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-07-09",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "About 7 km section with two animal tunnels, one cycle tunnel and a slab across Hagudi bog; contract signed 9 July 2024 at EUR 30.59 million. Contract value as stated in the source; VAT treatment is not given. The contractor's page gives completion as autumn 2027, when work in Hagudi bog ends.",
+        "ro": "Tronson de circa 7 km cu două tunele pentru animale, un tunel pietonal și o placă peste mlaștina Hagudi; contract semnat la 9 iulie 2024, la 30,59 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Pagina constructorului indică finalizarea în toamna anului 2027, când se încheie lucrările din mlaștina Hagudi."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "tariston-hagudi-alu",
+        "osm-odbl"
+      ],
+      "geometryRef": "hagudi-alu"
+    },
+    {
+      "id": "alu-karpla",
+      "name": {
+        "en": "Raplamaa IV: Alu – Kärpla",
+        "ro": "Raplamaa IV: Alu – Kärpla"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2024-09-03"
+      },
+      "lengthKm": 17.2,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 87.8,
+              "currency": "EUR",
+              "year": 2024
+            },
+            "date": "2024-09-03",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 87.8,
+          "currency": "EUR",
+          "year": 2024
+        }
+      },
+      "contractors": [
+        {
+          "name": "OÜ Verston",
+          "role": "builder"
+        },
+        {
+          "name": "OÜ Järelpinge Inseneribüroo",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2024-09-03",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "17.2 km section in Rapla and Kehtna municipalities, contract signed 3 September 2024. The source gives the value as about EUR 87.8 million. Contract value as stated in the source; VAT treatment is not given.",
+        "ro": "Tronson de 17,2 km în comunele Rapla și Kehtna, contract semnat la 3 septembrie 2024. Sursa indică valoarea de circa 87,8 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "osm-odbl"
+      ],
+      "geometryRef": "alu-karpla"
+    },
+    {
+      "id": "karpla-selja",
+      "name": {
+        "en": "Raplamaa V: Kärpla – Selja",
+        "ro": "Raplamaa V: Kärpla – Selja"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-03-07"
+      },
+      "lengthKm": 14,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 67.6,
+              "currency": "EUR",
+              "year": 2025
+            },
+            "date": "2025-03-07",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 67.6,
+          "currency": "EUR",
+          "year": 2025
+        }
+      },
+      "contractors": [
+        {
+          "name": "AS TREV-2 Grupp",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-03-07",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "14 km section, contract signed 7 March 2025 at EUR 67.6 million. Contract value as stated in the source; VAT treatment is not given.",
+        "ro": "Tronson de 14 km, contract semnat la 7 martie 2025, la 67,6 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "osm-odbl"
+      ],
+      "geometryRef": "karpla-selja"
+    },
+    {
+      "id": "selja-tootsi",
+      "name": {
+        "en": "Pärnumaa I: Selja – Tootsi",
+        "ro": "Pärnumaa I: Selja – Tootsi"
+      },
+      "status": "under_construction",
+      "dates": {
+        "tenderAwarded": "2025-02-28"
+      },
+      "lengthKm": 15.824,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 62.3,
+              "currency": "EUR",
+              "year": 2025
+            },
+            "date": "2025-02-28",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 62.3,
+          "currency": "EUR",
+          "year": 2025
+        }
+      },
+      "contractors": [
+        {
+          "name": "AS Tariston",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-02-28",
+          "note": {
+            "en": "Main-line construction contract signed.",
+            "ro": "Contract de construcție a liniei principale semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "15.824 km section with three ecoducts (Kõnnu, Sohlu, Viluvere) and further structures; contract signed 28 February 2025 at EUR 62.3 million. Contract value as stated in the source; VAT treatment is not given. The contractor's page gives completion as 2028, with embankment fully built on five kilometres by the end of 2026 and ten kilometres by 2027.",
+        "ro": "Tronson de 15,824 km cu trei ecoducte (Kõnnu, Sohlu, Viluvere) și alte structuri; contract semnat la 28 februarie 2025, la 62,3 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Pagina constructorului indică finalizarea în 2028, cu rambleul complet pe cinci kilometri până la sfârșitul lui 2026 și pe zece kilometri până în 2027."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "rbe-ehituse-seis",
+        "tariston-selja-tootsi",
+        "en-wikipedia-rail-baltica",
+        "osm-odbl"
+      ],
+      "geometryRef": "selja-tootsi"
+    },
+    {
+      "id": "tootsi-parnu",
+      "name": {
+        "en": "Tootsi – Pärnu",
+        "ro": "Tootsi – Pärnu"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-05-16"
+      },
+      "lengthKm": 27.5,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-05-16",
+          "note": {
+            "en": "Alliance contract for substructure and superstructure signed.",
+            "ro": "Contract de alianță pentru infrastructură și suprastructură semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "Covered by the alliance contract signed 16 May 2025 with a consortium led by GRK and including Merko Ehitus: substructure and superstructure from Tootsi to Pärnu, plus track superstructure for the whole Ülemiste–Pärnu line. The source gives EUR 394 million for the whole first part, which also covers superstructure on lots above, so no lot value is recorded. Start of works is not stated in the sources read, so the lot is shown as tendered. Length measured from OpenStreetMap geometry; the cut at Pärnu is the point of the line nearest the city, as the terminal site is not given in the sources read.",
+        "ro": "Inclus în contractul de alianță semnat la 16 mai 2025 cu un consorțiu condus de GRK, din care face parte Merko Ehitus: infrastructură și suprastructură de la Tootsi la Pärnu, plus suprastructura căii pentru întreaga linie Ülemiste–Pärnu. Sursa indică 394 milioane EUR pentru întreaga primă parte, care acoperă și suprastructura loturilor de mai sus, deci nu se înregistrează valoare pe lot. Începerea lucrărilor nu este indicată în sursele citite, așa că lotul apare ca scos la licitație. Lungime măsurată din geometria OpenStreetMap; tăietura la Pärnu este punctul liniei cel mai apropiat de oraș, deoarece amplasarea terminalului nu este dată în sursele citite."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "err-alliance-contracts",
+        "osm-odbl"
+      ],
+      "geometryRef": "tootsi-parnu"
+    },
+    {
+      "id": "parnu-latvian-border",
+      "name": {
+        "en": "Pärnu – Latvian border (Ikla)",
+        "ro": "Pärnu – granița cu Letonia (Ikla)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2025-05-16"
+      },
+      "lengthKm": 64.3,
+      "profile": {
+        "works": "greenfield",
+        "tracks": 1
+      },
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "money": {
+              "amount": 332,
+              "currency": "EUR",
+              "year": 2025
+            },
+            "date": "2025-05-16",
+            "sourceRef": "et-wikipedia-rail-baltic"
+          }
+        ]
+      },
+      "contract": {
+        "value": {
+          "amount": 332,
+          "currency": "EUR",
+          "year": 2025
+        }
+      },
+      "contractors": [
+        {
+          "name": "Bouygues Travaux Public",
+          "role": "builder"
+        },
+        {
+          "name": "Budimex S.A.",
+          "role": "builder"
+        },
+        {
+          "name": "KMG Infra OÜ",
+          "role": "builder"
+        }
+      ],
+      "events": [
+        {
+          "kind": "awarded",
+          "date": "2025-05-16",
+          "note": {
+            "en": "Alliance contract for full design and construction signed.",
+            "ro": "Contract de alianță pentru proiectare și construcție integrală semnat."
+          },
+          "sourceRef": "et-wikipedia-rail-baltic"
+        }
+      ],
+      "note": {
+        "en": "Full design and construction from Pärnu south to Ikla by a consortium led by Bouygues, contract signed 16 May 2025 at EUR 332 million. Contract value as stated in the source; VAT treatment is not given. The line continues into Latvia; Latvia has no Rail Baltica file in this dataset. Start of works is not stated in the sources read, so the lot is shown as tendered. Length measured from OpenStreetMap geometry.",
+        "ro": "Proiectare și construcție integrală de la Pärnu spre sud până la Ikla, de un consorțiu condus de Bouygues, contract semnat la 16 mai 2025, la 332 milioane EUR. Valoarea contractului conform sursei; tratamentul TVA nu este precizat. Linia continuă în Letonia; în acest set de date nu există un fișier Rail Baltica pentru Letonia. Începerea lucrărilor nu este indicată în sursele citite, așa că lotul apare ca scos la licitație. Lungime măsurată din geometria OpenStreetMap."
+      },
+      "sourceRefs": [
+        "et-wikipedia-rail-baltic",
+        "err-alliance-contracts",
+        "osm-odbl"
+      ],
+      "geometryRef": "parnu-latvian-border"
+    }
+  ],
+  "sources": [
+    {
+      "id": "rbe-ehituse-seis",
+      "title": "Rail Baltic Estonia: Ehituse seis",
+      "url": "https://www.rbestonia.ee/ehituse-seis/",
+      "publisher": "Rail Baltic Estonia OÜ",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "rbe-rahastamine",
+      "title": "Rail Baltic Estonia: Rahastamine",
+      "url": "https://www.rbestonia.ee/rahastamine/",
+      "publisher": "Rail Baltic Estonia OÜ",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "et-wikipedia-rail-baltic",
+      "title": "Vikipeedia: Rail Baltic",
+      "url": "https://et.wikipedia.org/wiki/Rail_Baltic",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "en-wikipedia-rail-baltica",
+      "title": "Wikipedia: Rail Baltica",
+      "url": "https://en.wikipedia.org/wiki/Rail_Baltica",
+      "publisher": "Wikipedia",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "err-alliance-contracts",
+      "title": "ERR News: Rail Baltic Estonia signs country's largest-ever infrastructure contracts",
+      "url": "https://news.err.ee/1609697277/rail-baltic-estonia-signs-country-s-largest-ever-infrastructure-contracts",
+      "publisher": "ERR",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tariston-hagudi-alu",
+      "title": "Tariston: Rail Baltica Raplamaa põhitrassi III etapp, Hagudi–Alu",
+      "url": "https://www.tariston.ee/projekt/rail-baltica-raplamaa-pohitrassi-raudteetaristu-iii-etapi-ehitustood-loigul-hagudi-alu/",
+      "publisher": "Tariston AS",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "tariston-selja-tootsi",
+      "title": "Tariston: Rail Baltica Pärnumaa põhitrassi I etapp, Selja–Tootsi",
+      "url": "https://www.tariston.ee/projekt/rail-baltica-parnumaa-pohitrassi-raudteetaristu-i-etapi-ehitustood-loigul-selja-tootsi/",
+      "publisher": "Tariston AS",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "merko-saku-harju",
+      "title": "Merko: Rail Baltica Saku – Harju–Rapla county border",
+      "url": "https://merko.ee/saku-harju/",
+      "publisher": "Merko Ehitus",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-odbl",
+      "title": "OpenStreetMap contributors (geometry, ODbL)",
+      "url": "https://www.openstreetmap.org/copyright",
+      "publisher": "OpenStreetMap",
+      "retrievedOn": "2026-11-09"
+    }
+  ],
+  "lastVerified": "2026-11-09"
+}
