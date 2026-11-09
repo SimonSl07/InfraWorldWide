@@ -1,0 +1,109 @@
+{
+  "id": "ua-n31-dnipro-reshetylivka",
+  "country": "ua",
+  "category": "highway",
+  "name": {
+    "en": "N-31 Dnipro – Tsarychanka – Kobeliaky – Reshetylivka (Dnipropetrovsk oblast)",
+    "ro": "N-31 Dnipro – Țarîcianka – Kobeliaki – Reșetîlivka (regiunea Dnipropetrovsk)"
+  },
+  "description": {
+    "en": "New four-lane, first-category road on the N-31, 58.1 km in Dnipropetrovsk oblast, designed for up to 25,500 vehicles a day. The State Agency for Restoration reports 28.6 km built in 2017–2021 and works resumed in 2026 on a 29.5 km section. The Dnipropetrovsk part is drawn here as two lots: the built section from Dnipro and the 2026 section from the Dnipro–Donbas canal to the Poltava oblast boundary. The road continues in Poltava oblast, which is not covered here. No contract value is recorded: the sources found give no figure that can be tied to a single section.",
+    "ro": "Drum nou de prima categorie, cu patru benzi, pe N-31, cu 58,1 km în regiunea Dnipropetrovsk și un trafic proiectat de până la 25 500 de vehicule pe zi. Agenția de Stat pentru Reconstrucție raportează 28,6 km construiți în 2017–2021 și reluarea lucrărilor în 2026 pe un sector de 29,5 km. Partea din Dnipropetrovsk este desenată ca două loturi: sectorul construit dinspre Dnipro și sectorul din 2026, de la canalul Dnipro–Donbas până la limita regiunii Poltava. Drumul continuă în regiunea Poltava, care nu este acoperită aici. Nu se înregistrează nicio valoare de contract: sursele găsite nu dau o cifră care să poată fi legată de un singur sector."
+  },
+  "operator": "ua-agency-restoration",
+  "lots": [
+    {
+      "id": "dnipro-canal",
+      "name": {
+        "en": "Dnipro – Dnipro–Donbas canal (built section)",
+        "ro": "Dnipro – canalul Dnipro–Donbas (sector construit)"
+      },
+      "status": "opened",
+      "dates": {
+        "opened": "2021"
+      },
+      "lengthKm": 28.6,
+      "profile": {
+        "lanes": 4
+      },
+      "note": {
+        "en": "The Agency reports 28.6 km built in 2017–2021 with lighting, signs, barriers, noise screens, bus shelters and pavements. Its post does not say where the section lies; it is placed here between the Dnipro end and the Dnipro–Donbas canal because the 2026 section starts at the canal (Wikipedia), and the two lengths add to the 58.1 km oblast stretch. The Wikipedia article dates the start of the new road to May 2019 and the Petrykivka bypass opening to December 2020; the Agency gives 2017 as the start of the period. The opening year is the end of the Agency's building period. Traffic is reported to have continued on the old road alongside. The drawn line, from the junction with T-04-14 to the canal, is about 27.9 km.",
+        "ro": "Agenția raportează 28,6 km construiți în 2017–2021, cu iluminat, indicatoare, parapeți, ecrane fonice, stații de autobuz și trotuare. Postarea ei nu spune unde se află sectorul; aici este plasat între capătul dinspre Dnipro și canalul Dnipro–Donbas, deoarece sectorul din 2026 începe la canal (Wikipedia), iar cele două lungimi însumează cei 58,1 km din regiune. Articolul Wikipedia datează începutul drumului nou în mai 2019 și deschiderea ocolitoarei Petrikivka în decembrie 2020; Agenția indică 2017 ca început al perioadei. Anul deschiderii este sfârșitul perioadei de construcție indicate de Agenție. Se raportează că traficul a continuat pe drumul vechi, alăturat. Linia desenată, de la intersecția cu T-04-14 până la canal, are circa 27,9 km."
+      },
+      "sourceRefs": [
+        "restoration-gov-ua-n31",
+        "wikipedia-uk-n31",
+        "openstreetmap"
+      ],
+      "geometryRef": "dnipro-canal"
+    },
+    {
+      "id": "canal-poltava-boundary",
+      "name": {
+        "en": "Dnipro–Donbas canal – Poltava oblast boundary (2026 works)",
+        "ro": "Canalul Dnipro–Donbas – limita regiunii Poltava (lucrări 2026)"
+      },
+      "status": "under_construction",
+      "lengthKm": 29.5,
+      "profile": {
+        "lanes": 4
+      },
+      "events": [
+        {
+          "kind": "suspended",
+          "date": "2022",
+          "note": {
+            "en": "The full-scale invasion forced the project to pause.",
+            "ro": "Invazia la scară largă a obligat la oprirea proiectului."
+          },
+          "sourceRef": "restoration-gov-ua-n31"
+        },
+        {
+          "kind": "resumed",
+          "date": "2026",
+          "note": {
+            "en": "Works resumed on a 29.5 km section: earthworks, base courses and structures.",
+            "ro": "Lucrările au fost reluate pe un sector de 29,5 km: terasamente, straturi de bază și structuri."
+          },
+          "sourceRef": "restoration-gov-ua-n31"
+        }
+      ],
+      "contractors": [
+        {
+          "name": "Avtomahistral-Pivden",
+          "role": "builder"
+        }
+      ],
+      "note": {
+        "en": "The Agency gives 29.5 km; Wikipedia, citing the contractor's announcement of 5 June 2026, describes a 30 km section from the Dnipro–Donbas canal to the Poltava oblast boundary. The drawn line ends at the point where the mapped works meet the built road near the boundary.",
+        "ro": "Agenția indică 29,5 km; Wikipedia, citând anunțul constructorului din 5 iunie 2026, descrie un sector de 30 km de la canalul Dnipro–Donbas până la limita regiunii Poltava. Linia desenată se oprește unde lucrările cartografiate se întâlnesc cu drumul construit, lângă limită."
+      },
+      "sourceRefs": [
+        "restoration-gov-ua-n31",
+        "wikipedia-uk-n31",
+        "openstreetmap"
+      ],
+      "geometryRef": "canal-poltava-boundary"
+    }
+  ],
+  "sources": [
+    {
+      "id": "restoration-gov-ua-n31",
+      "title": "State Agency for Restoration and Development of Infrastructure of Ukraine: Будуємо сучасну чотирисмугову дорогу Н-31 на Дніпропетровщині (21 September 2026)",
+      "url": "https://restoration.gov.ua/blog/buduyemo-suchasnu-chotyrysmugovu-dorogu-n-31-na-dnipropetrovshhyni/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "wikipedia-uk-n31",
+      "title": "Wikipedia (uk): Автошлях Н 31",
+      "url": "https://uk.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D1%88%D0%BB%D1%8F%D1%85_%D0%9D_31",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "openstreetmap",
+      "title": "OpenStreetMap contributors (ODbL): ways with ref Н-31 and highway=construction, Dnipropetrovsk oblast",
+      "url": "https://www.openstreetmap.org/copyright",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
