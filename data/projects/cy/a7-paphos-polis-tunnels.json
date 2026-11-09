@@ -1,0 +1,156 @@
+{
+  "id": "cy-a7-paphos-polis-tunnels",
+  "country": "cy",
+  "category": "tunnel",
+  "name": {
+    "en": "A7 Paphos–Polis tunnels",
+    "ro": "Tunelurile A7 Paphos–Polis"
+  },
+  "description": {
+    "en": "Two bored tunnels of 720 m and 290 m on Phase A (Agia Marinouda–Stroumbi) of the A7 Paphos–Polis Chrysochous road, together with five valley viaducts totalling 1,500 m that are not drawn here. They sit inside the Phase A design-and-build contract signed with Intrakat on 13 May 2021, which was later terminated; the Public Works Department tendered completion of the works on 8 August 2025.",
+    "ro": "Două tuneluri forate de 720 m și 290 m pe Faza A (Agia Marinouda–Stroumbi) a drumului A7 Paphos–Polis Chrysochous, alături de cinci viaducte de vale însumând 1.500 m, care nu sunt desenate aici. Se află în contractul de proiectare și execuție al Fazei A semnat cu Intrakat la 13 mai 2021, reziliat ulterior; Departamentul Lucrărilor Publice a scos la licitație finalizarea lucrărilor la 8 august 2025."
+  },
+  "operator": "cy-pwd",
+  "lots": [
+    {
+      "id": "tunnel-1",
+      "name": {
+        "en": "Tunnel 1 (720 m, Phase A)",
+        "ro": "Tunelul 1 (720 m, Faza A)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2020-02-07"
+      },
+      "lengthKm": 0.72,
+      "profile": {
+        "tunnelKm": 0.72
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-05-23",
+          "note": {
+            "en": "Tender for the Phase A design-and-build contract.",
+            "ro": "Licitația pentru contractul de proiectare și execuție al Fazei A."
+          },
+          "sourceRef": "sigmalive-contract-signing"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-02-07",
+          "note": {
+            "en": "Awarded to the lowest bidder; the contract was signed on 13 May 2021.",
+            "ro": "Atribuit ofertantului cu cel mai mic preț; contractul a fost semnat la 13 mai 2021."
+          },
+          "sourceRef": "sigmalive-contract-signing"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2025-08-08",
+          "note": {
+            "en": "Public Works Department tender to complete the project after the first contract was terminated.",
+            "ro": "Licitația Departamentului Lucrărilor Publice pentru finalizarea proiectului, după rezilierea primului contract."
+          },
+          "sourceRef": "dialogos-paphos-polis"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "partOf": "cy-a7-paphos-polis",
+      "note": {
+        "en": "One of two bored tunnels on Phase A of the Paphos–Polis road. At the 2021 signing the chief executive of Intrakat put the two tunnels at about 900 m combined, against 720 m and 290 m given in the project presentation. The Phase A contract (EUR 72.979 million excluding VAT, works period 27 May 2021 to 26 November 2024) was terminated; no termination date is stated in the sources used. Drawn from OpenStreetMap, where one carriageway of the tunnel measures about 640 m and is tagged as under construction with an unconfirmed tunnel status; the stated figure is kept. No separate cost is recorded for the tunnel.",
+        "ro": "Unul dintre cele două tuneluri forate de pe Faza A a drumului Paphos–Polis. La semnarea din 2021, directorul general al Intrakat a indicat circa 900 m pentru cele două tuneluri împreună, față de 720 m și 290 m din prezentarea proiectului. Contractul Fazei A (72,979 milioane EUR fără TVA, perioadă de lucrări 27 mai 2021 – 26 noiembrie 2024) a fost reziliat; sursele folosite nu indică data rezilierii. Desenat din OpenStreetMap, unde un sens de circulație al tunelului măsoară circa 640 m și este etichetat ca fiind în construcție, cu statut de tunel neconfirmat; cifra indicată este păstrată. Pentru tunel nu este înregistrat un cost separat."
+      },
+      "sourceRefs": [
+        "sigmalive-contract-signing",
+        "dialogos-paphos-polis",
+        "osm-a7-paphos-polis"
+      ],
+      "geometryRef": "tunnel-1"
+    },
+    {
+      "id": "tunnel-2",
+      "name": {
+        "en": "Tunnel 2 (290 m, Phase A)",
+        "ro": "Tunelul 2 (290 m, Faza A)"
+      },
+      "status": "tendered",
+      "dates": {
+        "tenderAwarded": "2020-02-07"
+      },
+      "lengthKm": 0.29,
+      "profile": {
+        "tunnelKm": 0.29
+      },
+      "events": [
+        {
+          "kind": "tender_launched",
+          "date": "2019-05-23",
+          "note": {
+            "en": "Tender for the Phase A design-and-build contract.",
+            "ro": "Licitația pentru contractul de proiectare și execuție al Fazei A."
+          },
+          "sourceRef": "sigmalive-contract-signing"
+        },
+        {
+          "kind": "awarded",
+          "date": "2020-02-07",
+          "note": {
+            "en": "Awarded to the lowest bidder; the contract was signed on 13 May 2021.",
+            "ro": "Atribuit ofertantului cu cel mai mic preț; contractul a fost semnat la 13 mai 2021."
+          },
+          "sourceRef": "sigmalive-contract-signing"
+        },
+        {
+          "kind": "tender_launched",
+          "date": "2025-08-08",
+          "note": {
+            "en": "Public Works Department tender to complete the project after the first contract was terminated.",
+            "ro": "Licitația Departamentului Lucrărilor Publice pentru finalizarea proiectului, după rezilierea primului contract."
+          },
+          "sourceRef": "dialogos-paphos-polis"
+        }
+      ],
+      "funding": [
+        {
+          "source": "national_budget"
+        }
+      ],
+      "partOf": "cy-a7-paphos-polis",
+      "note": {
+        "en": "The second bored tunnel on Phase A, same contract as tunnel 1. Drawn from OpenStreetMap, where one carriageway measures about 230 m, shorter than the 290 m stated; the stated figure is kept.",
+        "ro": "Al doilea tunel forat de pe Faza A, în același contract ca tunelul 1. Desenat din OpenStreetMap, unde un sens de circulație măsoară circa 230 m, mai puțin decât cei 290 m indicați; cifra indicată este păstrată."
+      },
+      "sourceRefs": [
+        "sigmalive-contract-signing",
+        "dialogos-paphos-polis",
+        "osm-a7-paphos-polis"
+      ],
+      "geometryRef": "tunnel-2"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sigmalive-contract-signing",
+      "title": "Sigmalive: Υπογράφηκε το συμβόλαιο κατασκευής αυτοκινητόδρομου Πάφου-Πόλης Χρυσοχούς",
+      "url": "https://www.sigmalive.com/news/local/782991/ypografike-to-symvolaio-kataskevis-aftokinitodromou-pafoupolis-xrysoxous",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "dialogos-paphos-polis",
+      "title": "Dialogos: Αυτοκινητόδρομος Πάφου–Πόλης Χρυσοχούς, κόστος ολοκλήρωσης και εξέλιξη έργου",
+      "url": "https://dialogos.com.cy/aytokinitodromos-pafoy-polis-chrysochoys-kostos-oloklirosis-kai-exelixi-ergoy-ti-ypostirizoyn-ta-dimosia-erga/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-a7-paphos-polis",
+      "title": "OpenStreetMap contributors (ODbL): A7 Paphos–Polis Motorway, ways 1274588939 and 1381609185",
+      "url": "https://www.openstreetmap.org/way/1274588939",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}

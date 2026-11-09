@@ -1,0 +1,198 @@
+{
+  "id": "cy-a9-nicosia-troodos",
+  "country": "cy",
+  "category": "highway",
+  "name": {
+    "en": "A9 Nicosia – Troodos motorway (Nicosia – Evrychou)",
+    "ro": "Autostrada A9 Nicosia – Troodos (Nicosia – Evrychou)"
+  },
+  "description": {
+    "en": "Motorway from Nicosia towards the Troodos mountains, planned in four phases. Phases A (Nicosia – Kokkinotrimithia) and B (Kokkinotrimithia – Deneia) are open, Phase D (Astromeritis – Evrychou, 11.3 km) opened on 30 April 2026, and Phase C (Deneia – Astromeritis) is still to be built: the design-and-build tender KPS/19/2025/MK(A) closed in August 2026 with no winner. Phase C is therefore planned, not awarded. Only the Republic-controlled area is mapped. The 750 m viaduct on Phase D is recorded as its own project.",
+    "ro": "Autostradă de la Nicosia spre munții Troodos, planificată în patru faze. Fazele A (Nicosia – Kokkinotrimithia) și B (Kokkinotrimithia – Deneia) sunt deschise, Faza D (Astromeritis – Evrychou, 11,3 km) a fost deschisă la 30 aprilie 2026, iar Faza C (Deneia – Astromeritis) rămâne de construit: licitația de proiectare și execuție KPS/19/2025/MK(A) s-a încheiat în august 2026 fără câștigător. Faza C este deci planificată, nu atribuită. Este cartografiată doar zona controlată de Republică. Viaductul de 750 m de pe Faza D este înregistrat ca proiect separat."
+  },
+  "operator": "cy-pwd",
+  "lots": [
+    {
+      "id": "phase-a-nicosia-kokkinotrimithia",
+      "name": {
+        "en": "Phase A: Nicosia – Kokkinotrimithia",
+        "ro": "Faza A: Nicosia – Kokkinotrimithia"
+      },
+      "status": "opened",
+      "lengthKm": 8.36,
+      "note": {
+        "en": "Completed in the 1990s; the source gives no year, so the opened date 1990 only marks the start of that decade and is not an opening year. Part of the section is an urban four-lane road without a hard shoulder between Archangelou Avenue and Anthoupolis roundabout. Length measured from OpenStreetMap geometry, from the start of the mapped A9 relation to the Kokkinotrimithia interchange; the urban start in central Nicosia is not mapped as part of the route, so the real section may be longer. Cost not found in a source.",
+        "ro": "Finalizată în anii 1990; sursa nu indică anul, deci data deschiderii 1990 marchează doar începutul acelui deceniu și nu este un an de deschidere. O parte a sectorului este un drum urban cu patru benzi, fără bandă de urgență, între Bulevardul Archangelou și sensul giratoriu Anthoupolis. Lungime măsurată pe geometria OpenStreetMap, de la începutul relației A9 cartografiate până la nodul Kokkinotrimithia; începutul urban din centrul Nicosiei nu este cartografiat ca parte a rutei, deci sectorul real poate fi mai lung. Costul nu a fost găsit într-o sursă."
+      },
+      "sourceRefs": [
+        "wikipedia-a9-cyprus",
+        "osm-relation-a9"
+      ],
+      "geometryRef": "phase-a-nicosia-kokkinotrimithia",
+      "dates": {
+        "opened": "1990"
+      }
+    },
+    {
+      "id": "phase-b-kokkinotrimithia-deneia",
+      "name": {
+        "en": "Phase B: Kokkinotrimithia – Deneia",
+        "ro": "Faza B: Kokkinotrimithia – Deneia"
+      },
+      "status": "opened",
+      "dates": {
+        "constructionStart": "2003",
+        "opened": "2006"
+      },
+      "lengthKm": 5.27,
+      "note": {
+        "en": "Built between 2003 and 2006, with three grade-separated interchanges. It ends at a temporary junction in Deneia, where Phase C is to continue. The source gives the build period, so the start and end years are taken from it. Length measured from OpenStreetMap geometry. Cost not found in a source.",
+        "ro": "Construită între 2003 și 2006, cu trei noduri denivelate. Se termină la o intersecție provizorie în Deneia, unde urmează să continue Faza C. Sursa indică perioada de construcție, de unde provin anii de început și de sfârșit. Lungime măsurată pe geometria OpenStreetMap. Costul nu a fost găsit într-o sursă."
+      },
+      "sourceRefs": [
+        "wikipedia-a9-cyprus",
+        "osm-relation-a9"
+      ],
+      "geometryRef": "phase-b-kokkinotrimithia-deneia"
+    },
+    {
+      "id": "phase-c-deneia-astromeritis",
+      "name": {
+        "en": "Phase C: Deneia – Akaki – Astromeritis",
+        "ro": "Faza C: Deneia – Akaki – Astromeritis"
+      },
+      "status": "planned",
+      "lengthKm": 18,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "estimate",
+            "date": "2026-08-28",
+            "money": {
+              "amount": 138,
+              "currency": "EUR",
+              "scope": "works",
+              "confidence": "estimated",
+              "note": "Estimated contract amount in notice 598729-2026; Politis gives it as plus VAT."
+            },
+            "note": "Estimated amount of the design-and-build contract; the lot closed with no winner, so this is not an award.",
+            "sourceRef": "ted-598729-2026"
+          }
+        ]
+      },
+      "note": {
+        "en": "Design-and-build tender KPS/19/2025/MK(A), Deneia – Akaki – Astromeritis. The result notice (TED 598729-2026, issued 28 August 2026) records the lot as closed with no winner, so no contractor or award is recorded. The notice describes a four-lane motorway of about 18 km. Politis gives 19 km, an estimated 4.5 years of implementation and EUR 138 million plus VAT, in the 2027 state budget. Wikipedia describes the existing single carriageway after Phase B being upgraded to motorway standard, then a new alignment to the start of Phase D. The drawn line follows the A9 alignment mapped in OpenStreetMap as under construction (about 17.7 km); the 18 km figure is from the notice.",
+        "ro": "Licitație de proiectare și execuție KPS/19/2025/MK(A), Deneia – Akaki – Astromeritis. Notificarea de rezultat (TED 598729-2026, emisă la 28 august 2026) înregistrează lotul ca încheiat fără câștigător, deci nu se înregistrează contractant sau atribuire. Notificarea descrie o autostradă cu patru benzi de circa 18 km. Politis indică 19 km, o implementare estimată la 4,5 ani și 138 de milioane EUR plus TVA, în bugetul de stat pe 2027. Wikipedia descrie drumul existent cu o singură platformă de după Faza B ca fiind modernizat la standard de autostradă, apoi un traseu nou până la începutul Fazei D. Linia desenată urmează traseul A9 cartografiat în OpenStreetMap ca aflat în construcție (circa 17,7 km); cifra de 18 km provine din notificare."
+      },
+      "sourceRefs": [
+        "ted-598729-2026",
+        "politis-motorway-expansion",
+        "wikipedia-a9-cyprus"
+      ],
+      "geometryRef": "phase-c-deneia-astromeritis"
+    },
+    {
+      "id": "phase-d-astromeritis-evrychou",
+      "name": {
+        "en": "Phase D: Astromeritis – Evrychou",
+        "ro": "Faza D: Astromeritis – Evrychou"
+      },
+      "status": "opened",
+      "dates": {
+        "tenderAwarded": "2022-09-27",
+        "opened": "2026-04-30"
+      },
+      "lengthKm": 11.3,
+      "cost": {
+        "revisions": [
+          {
+            "kind": "award",
+            "date": "2022-09-27",
+            "money": {
+              "amount": 74.477,
+              "currency": "EUR",
+              "year": 2022,
+              "scope": "works",
+              "confidence": "reported",
+              "note": "Contract amount excluding VAT; the TED notice prints 74477.00, read as EUR 74.477 million in line with Wikipedia and Politis."
+            },
+            "sourceRef": "ted-537109-2022"
+          }
+        ]
+      },
+      "contractors": [
+        {
+          "name": "Cybarco–Pharmakas J.V.",
+          "role": "builder"
+        }
+      ],
+      "contract": {
+        "value": {
+          "amount": 74.477,
+          "currency": "EUR",
+          "year": 2022,
+          "scope": "works",
+          "confidence": "reported",
+          "note": "Excluding VAT."
+        },
+        "noticeReference": "2022/S 190-537109",
+        "noticeUrl": "https://ted.europa.eu/en/notice/537109-2022/xml"
+      },
+      "note": {
+        "en": "Contract KPS/47/2021/EA, four lanes, with a grade-separated interchange at Koutrafas, at-grade junctions at both ends and a 750 m viaduct. The contract was concluded on 27 September 2022. Sigmalive reports opening on Thursday 30 April 2026 at 17:00 and a total of EUR 88.63 million, which is the contract amount plus VAT. Politis says it opened \"last May\", which does not match the 30 April date in Sigmalive and Wikipedia. Construction is reported to have begun in 2022 but the source gives no month, so no construction start is recorded.",
+        "ro": "Contract KPS/47/2021/EA, patru benzi, cu un nod denivelat la Koutrafas, intersecții la nivel la ambele capete și un viaduct de 750 m. Contractul a fost încheiat la 27 septembrie 2022. Sigmalive raportează deschiderea joi, 30 aprilie 2026, la ora 17:00 și un total de 88,63 milioane EUR, adică valoarea contractului plus TVA. Politis spune că a fost deschisă „luna mai trecută”, ceea ce nu corespunde datei de 30 aprilie din Sigmalive și Wikipedia. Se raportează că lucrările au început în 2022, dar sursa nu indică luna, deci nu se înregistrează o dată de început."
+      },
+      "sourceRefs": [
+        "ted-537109-2022",
+        "sigmalive-astromeritis-evrychou",
+        "politis-motorway-expansion",
+        "wikipedia-a9-cyprus",
+        "osm-relation-a9"
+      ],
+      "geometryRef": "phase-d-astromeritis-evrychou"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wikipedia-a9-cyprus",
+      "title": "Wikipedia: A9 motorway (Cyprus)",
+      "url": "https://en.wikipedia.org/wiki/A9_motorway_(Cyprus)",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "sigmalive-astromeritis-evrychou",
+      "title": "Sigmalive English: Astromeritis–Evrychou highway opens this afternoon (30 April 2026)",
+      "url": "https://en.sigmalive.com/astromeritis-evrychou-highway-opens-this-afternoon/",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "politis-motorway-expansion",
+      "title": "Politis English: Cyprus motorway network gears up for expansion",
+      "url": "https://en.politis.com.cy/news/cy-news/1041270/cyprus-motorway-network-gears-up-for-expansion",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ted-537109-2022",
+      "title": "TED contract award notice 537109-2022: Astromeritis–Evrychou motorway, KPS/47/2021/EA",
+      "url": "https://ted.europa.eu/en/notice/537109-2022/xml",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "ted-598729-2026",
+      "title": "TED result notice 598729-2026: Deneia–Akaki–Astromeritis motorway, KPS/19/2025/MK(A), lot closed with no winner",
+      "url": "https://ted.europa.eu/en/notice/598729-2026/xml",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "id": "osm-relation-a9",
+      "title": "OpenStreetMap: relation 17737558, Nicosia - Troodos Motorway (ref A9)",
+      "url": "https://www.openstreetmap.org/relation/17737558",
+      "retrievedOn": "2026-11-09"
+    },
+    {
+      "title": "OpenStreetMap contributors: route geometry (ODbL)",
+      "url": "https://www.openstreetmap.org/",
+      "retrievedOn": "2026-11-09"
+    }
+  ]
+}
